@@ -1,11 +1,11 @@
 # EventLive Event Image Cache Report
 
-- generated_at: 2026-08-06T09:43:00.684Z
+- generated_at: 2026-08-09T07:37:49.933Z
 - events_file: dist/events.json
 - manifest: data/event_image_cache_manifest.json
 - image_dir: dist/assets/event-images
 - targets: 500
-- cached_total: 791
+- cached_total: 794
 - fetched: 0
 - reused: 497
 - rejected_removed: 0
@@ -19,6 +19,6 @@
 
 ## Failed
 
-- https://cdn.rfecc.sa/wp-content/uploads/mec/qr_898ea2449274454e42895b52b18c6f68.png — access-denied — HTTP 403 — retry after 2026-08-07T09:01:42.492Z
-- https://api.riyadh.sa/sites/default/files/styles/medium/public/2026-07/er%20%2859%29.jpg?itok=a33APdGm — source-returned-html — not-image text/html; charset=utf-8 — retry after 2026-08-07T09:01:42.492Z
-- https://s7g10.scene7.com/is/image/rcu/fei2:landscape-16x9?$Responsive$&fit=stretch&fmt=webp&wid=1920 — access-denied — HTTP 403 — retry after 2026-08-07T09:01:42.492Z
+- https://cdn.rfecc.sa/wp-content/uploads/mec/qr_898ea2449274454e42895b52b18c6f68.png — access-denied — HTTP 403 — retry after 2026-08-09T19:29:36.314Z
+- https://api.riyadh.sa/sites/default/files/styles/medium/public/2026-07/er%20%2859%29.jpg?itok=a33APdGm — source-returned-html — not-image text/html; charset=utf-8 — retry after 2026-08-09T19:29:36.314Z
+- https://s7g10.scene7.com/is/image/rcu/fei2:landscape-16x9?$Responsive$&fit=stretch&fmt=webp&wid=1920 — access-denied — HTTP 403 — retry after 2026-08-09T19:29:36.314Z

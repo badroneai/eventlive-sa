@@ -1,12 +1,12 @@
 {
   "schema": "eventlive.harvest-os-status.v1",
-  "generated_at": "2026-08-06T09:50:02.373Z",
+  "generated_at": "2026-08-09T07:43:51.420Z",
   "status": "NEEDS_WORK",
   "operating_rule": "Probe before new sources; sample before full harvest; Raw collection is not publication; discovery-only never auto-publishes.",
   "totals": {
     "sources": 88,
-    "candidates": 604,
-    "matched_candidates": 572,
+    "candidates": 596,
+    "matched_candidates": 564,
     "auto_publish_sources": 15,
     "candidate_only_sources": 12,
     "partnership_required_sources": 5,
@@ -14,8 +14,8 @@
     "manual_review_sources": 56,
     "collection_attempted": 21,
     "productive_sources": 21,
-    "collector_errors": 3,
-    "chronic_collector_errors": 3,
+    "collector_errors": 4,
+    "chronic_collector_errors": 4,
     "transient_collector_errors": 0
   },
   "policies": {
@@ -25,23 +25,24 @@
     "manual_review": 56
   },
   "candidates_by_gate": {
-    "catalog-review": 570,
+    "catalog-review": 562,
     "duplicate-review": 8,
     "source-evidence": 26
   },
   "funnel": {
-    "discovered_this_run": 315,
-    "candidate_queue": 604,
-    "evaluated_for_publish": 604,
-    "linked_existing": 560,
+    "discovered_this_run": 318,
+    "candidate_queue": 596,
+    "evaluated_for_publish": 596,
+    "linked_existing": 551,
     "published_new": 6,
-    "blocked": 38,
+    "blocked": 39,
     "secondary_promoted": 0,
     "secondary_still_blocked": 34
   },
   "blocked_reasons": {
     "possible duplicate requires review: exact-title-city-source-conflict": 6,
     "linked catalog row event-aseer-season was superseded by dedupe": 2,
+    "linked catalog row event-dakah was superseded by dedupe": 1,
     "publication gate source-evidence is not auto-publishable": 14,
     "unknown category requires review": 10,
     "possible duplicate already exists: event-saudi-industrial-series-2": 1,
@@ -54,21 +55,28 @@
     {
       "id": "moc-cultural-calendar",
       "note": "collector-error: fetch failed; fetch failed",
-      "error_streak": 18,
+      "error_streak": 20,
       "kind": "chronic",
       "attempted_this_run": false
     },
     {
       "id": "mos-events",
       "note": "collector-error: fetch failed",
-      "error_streak": 18,
+      "error_streak": 20,
       "kind": "chronic",
       "attempted_this_run": false
     },
     {
       "id": "moc-cultural-subportals",
       "note": "collector-error: fetch failed; fetch failed",
-      "error_streak": 18,
+      "error_streak": 20,
+      "kind": "chronic",
+      "attempted_this_run": false
+    },
+    {
+      "id": "monshaat-events",
+      "note": "collector-error: fetch failed; fetch failed",
+      "error_streak": 3,
       "kind": "chronic",
       "attempted_this_run": false
     }

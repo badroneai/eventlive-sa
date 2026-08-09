@@ -1,30 +1,30 @@
 # EventLive Harvest OS Status
 
-- Generated at: 2026-08-06T09:50:02.373Z
+- Generated at: 2026-08-09T07:43:51.420Z
 - Status: NEEDS_WORK
 - Operating rule: Probe before new sources; sample before full harvest; Raw collection is not publication; discovery-only never auto-publishes.
 
 ## Totals
 
 - Sources: 88
-- Candidates: 604
-- Matched candidates: 572
+- Candidates: 596
+- Matched candidates: 564
 - Auto-publish sources: 15
 - Candidate-only sources: 12
 - Partnership-required sources: 5
 - Productive sources / attempted: 21/21
-- Collector errors: 3 (chronic 3, transient 0)
+- Collector errors: 4 (chronic 4, transient 0)
 
 ## Publication Funnel
 
 | Stage | Count |
 | --- | --- |
-| discovered_this_run | 315 |
-| candidate_queue | 604 |
-| evaluated_for_publish | 604 |
-| linked_existing | 560 |
+| discovered_this_run | 318 |
+| candidate_queue | 596 |
+| evaluated_for_publish | 596 |
+| linked_existing | 551 |
 | published_new | 6 |
-| blocked | 38 |
+| blocked | 39 |
 | secondary_promoted | 0 |
 | secondary_still_blocked | 34 |
 
@@ -37,6 +37,7 @@
 | possible duplicate requires review: exact-title-city-source-conflict | 6 |
 | linked catalog row event-aseer-season was superseded by dedupe | 2 |
 | possible duplicate requires review: exact-title-city-venue-conflict | 2 |
+| linked catalog row event-dakah was superseded by dedupe | 1 |
 | possible duplicate already exists: event-saudi-industrial-series-2 | 1 |
 | possible duplicate already exists: event-leap-2026 | 1 |
 | linked catalog row event-feena-nehke-stand-up-comedy-by-john-achkar was superseded by dedupe | 1 |
@@ -46,9 +47,10 @@
 
 | Source | Kind | Failed runs in a row | Attempted this run | Reason |
 | --- | --- | --- | --- | --- |
-| moc-cultural-calendar | chronic | 18 | no | collector-error: fetch failed; fetch failed |
-| mos-events | chronic | 18 | no | collector-error: fetch failed |
-| moc-cultural-subportals | chronic | 18 | no | collector-error: fetch failed; fetch failed |
+| moc-cultural-calendar | chronic | 20 | no | collector-error: fetch failed; fetch failed |
+| mos-events | chronic | 20 | no | collector-error: fetch failed |
+| moc-cultural-subportals | chronic | 20 | no | collector-error: fetch failed; fetch failed |
+| monshaat-events | chronic | 3 | no | collector-error: fetch failed; fetch failed |
 
 | Source | Policy | Trust | Gate |
 | --- | --- | --- | --- |

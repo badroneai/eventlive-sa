@@ -1,7 +1,7 @@
 {
   "schema": "eventlive.source-browser-probe-checkpoint.v1",
-  "checkpointed_at": "2026-08-06T08:45:39.263Z",
-  "generated_at": "2026-08-06T08:45:27.816Z",
+  "checkpointed_at": "2026-08-07T13:57:05.329Z",
+  "generated_at": "2026-08-07T13:56:54.300Z",
   "source_registry": "data/source_registry.json",
   "output_dir": "data/raw/browser-probes",
   "sources_planned": 1,
@@ -20,7 +20,7 @@
   "sources": [
     {
       "id": "riyadh-city-events",
-      "probed_at": "2026-08-06T08:45:39.262Z",
+      "probed_at": "2026-08-07T13:57:05.328Z",
       "name": "Riyadh City Events",
       "priority": 51,
       "url": "https://riyadh.sa/en/events/all",
@@ -28,14 +28,14 @@
       "status": "ok",
       "http_status": 200,
       "navigation_error": "",
-      "duration_ms": 10973,
+      "duration_ms": 10575,
       "classification": "rendered-html-candidates",
       "next_action": "اكتب extractor مرن من DOM بعد الرندر أو حسن selector الحالي.",
       "title": "الموقع الرسمي لمدينة الرياض",
-      "text_bytes": 825,
-      "html_bytes": 155262,
-      "html_snapshot": "data/raw/browser-probes/riyadh-city-events-2026-08-06T08-45-27-816Z.html",
-      "screenshot": "data/raw/browser-probes/riyadh-city-events-2026-08-06T08-45-27-816Z.png",
+      "text_bytes": 822,
+      "html_bytes": 155259,
+      "html_snapshot": "data/raw/browser-probes/riyadh-city-events-2026-08-07T13-56-54-300Z.html",
+      "screenshot": "data/raw/browser-probes/riyadh-city-events-2026-08-07T13-56-54-300Z.png",
       "signals": {
         "has_next_data": false,
         "has_nuxt": false,

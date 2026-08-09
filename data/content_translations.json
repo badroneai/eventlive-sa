@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "generated_at": "2026-08-06T09:45:18.569Z",
+  "generated_at": "2026-08-09T07:39:59.937Z",
   "entries": {
     "1f91543d6769d9abda47f221ba86f9f9ebf27443": {
       "source": "Skill Development Initiative",
@@ -62906,13 +62906,589 @@
       "method": "argos-mt",
       "translated_at": "2026-08-06T09:04:38.394Z"
     },
+    "10487e40d98aea649b7966ee4c3966798ac95102": {
+      "source": "تقدم هذه الدورة فهماً أساسياً وعملياً لتقنيات المحاكاة الافتراضية ( Virtualization) والبنية التحتية السحابية، وكيف ساهمت هذه التقنيات في تطوير مراكز البيانات الحديثة. المصدر الرسمي: بوابة مهارات المستقبل.",
+      "source_lang": "ar",
+      "target_lang": "en",
+      "text": "This session provides a basic and practical understanding of virtual simulation techniques (Vrtualization) and cloud infrastructure, and how these techniques have contributed to the development of modern data centres. Official source: future skills portal.",
+      "method": "argos-mt",
+      "translated_at": "2026-08-06T12:02:49.721Z"
+    },
+    "bb5bcf0c030b87f5aea762a0f066b6f6cb5bd581": {
+      "source": "تقدم هذه الدورة فهماً أساسياً وعملياً لتقنيات المحاكاة الافتراضية ( Virtualization) والبنية التحتية السحابية، وكيف ساهمت هذه التقنيات في تطوير مراكز البيانات الحديثة. تركز الدورة على المفاهيم الأساسية لتشغيل وإدارة الموارد الافتراضية، وربطها ببيئات الحوسبة السحابية، دون الاعتماد على مزود خدمة محدد، مع الإشارة إلى منصات مثل VMware و Microsoft كنماذج تطبيقية",
+      "source_lang": "ar",
+      "target_lang": "en",
+      "text": "This session provides a basic and practical understanding of virtual simulation techniques (Vrtualization) and cloud infrastructure, and how these techniques have contributed to the development of modern data centres. The session focuses on basic concepts of operation and management of virtual resources, linking them to cloud computing environments, without relying on a specific service provider, with reference to platforms such as VMware and Microsoft as applied models",
+      "method": "argos-mt",
+      "translated_at": "2026-08-06T12:02:49.721Z"
+    },
+    "325326405d4c4ca600d1f906a4989822781bdd01": {
+      "source": "⁠Virtualization & Cloud Infrastructure Basics - الافتراضية والبنية التحتية السحابية | بوابة مهارات المستقبل",
+      "source_lang": "ar",
+      "target_lang": "en",
+      "text": "⁠Virtualization Cloud Infra Structure Basics - Virtual and cloud infrastructure",
+      "method": "argos-mt",
+      "translated_at": "2026-08-06T12:02:49.721Z"
+    },
+    "6e00cf05c5e2f73035e7bd9667e89b6bade1d72f": {
+      "source": "تبدأ 16-08-2026 إلى 18-08-2026 لمدة 12 ساعات",
+      "source_lang": "ar",
+      "target_lang": "en",
+      "text": "Starts 16-08-2026 to 18-08-2026 for 12 hours",
+      "method": "argos-mt",
+      "translated_at": "2026-08-06T12:02:49.721Z"
+    },
+    "95b676c86cf7bb9174c51656769b6891f936e602": {
+      "source": "أهداف ومخرجات الدورة .1 فهم مفهوم المحاكاة الافتراضية وأنواعها. .2 التمييز بين البنية التحتية التقليدية والسحابية. .3 إعداد وتشغيل بيئات افتراضية أساسية. .4 فهم مكونات البنية التحتية السحابية ( Compute, Storage, Network ) .5 التعرف على أفضل الممارسات في إدارة الموارد الافتراضية.",
+      "source_lang": "ar",
+      "target_lang": "en",
+      "text": "Objectives and outputs of the session 1 understand the concept and types of virtual simulation. 2 Discrimination between traditional and cloud infrastructure. 3. Preparation and operation of basic virtual environments. .4 Understanding the components of cloud infrastructure (compute, Storage, Network) .5 identifying best practices in the management of virtual resources.",
+      "method": "argos-mt",
+      "translated_at": "2026-08-06T12:02:49.721Z"
+    },
+    "e5b5d4831a5b05044eb01f36c3b005d3a3aa541b": {
+      "source": "مقدمة في المحاكاة الافتراضية: الفرق بين Physical و Virtual Infrastructure .2 أنواع المحاكاة الافتراضية: Server Virtualization, Desktop Virtualization, Network Virtualization .3 مكونات البيئة الافتراضية: also Hypervisor (Type 1 vs Type 2) and Virtual Machines (VMs) إدارة الموارد ( CPU, RAM, Storage",
+      "source_lang": "en",
+      "target_lang": "ar",
+      "text": "○ في سياق عمليات الإنقاذ: ترابط الهياكل الأساسية المادية والافتراضية(2).",
+      "method": "argos-mt",
+      "translated_at": "2026-08-06T12:02:49.721Z"
+    },
+    "b32435c52dac96b902cd45b1d9f58f7b1ced153b": {
+      "source": "مقدمة في الحوسبة السحابية : العلاقة بين Virtualization و and Cloud نماذج الخدمات ( IaaS, PaaS, SaaS ) .2 البنية التحتية السحابية : الحوسبة ,Compute لتخزين ,Storage الشبكات Networking .3 إدارة الموارد في السحابة: Scaling , High Availability , Load Balancing .",
+      "source_lang": "ar",
+      "target_lang": "en",
+      "text": "Introduction in cloud computing: relationship between Virtualization and Cloud service models (IaS, PaaS, SaaS) .2 cloud infrastructure: computing,Compute for storage, Storage Networking .3 Resource Management in cloud: Scaling, High Availability, Load Balancing.",
+      "method": "argos-mt",
+      "translated_at": "2026-08-06T12:02:49.721Z"
+    },
+    "dc13904dfa015f38be04c57205acc89d399d5b49": {
+      "source": "إدارة البيئات الافتراضية : إنشاء وإدارة Virtual Machines النسخ الاحتياطي و الاستعادة .2 الأمان في البيئات الافتراضية والسحابية .3 التهديدات الشائعة و أفضل ممارسات الحماي",
+      "source_lang": "ar",
+      "target_lang": "en",
+      "text": "Management of hypothetical environments: establishment and management of Virtual Machines, backup and restoration 2 safety in virtual and cloud environments .3 Common threats and best protective practices",
+      "method": "argos-mt",
+      "translated_at": "2026-08-06T12:02:49.721Z"
+    },
+    "86673861ef7595a293a8349debf34f092e5055f8": {
+      "source": "تعتبر هذه الدورة المدخل الأساسي لعالم البيانات، حيث تهدف إلى تمكين المشاركين من التعامل مع ( Relational Databases ) باستخدام لغة الاستعلام الهيكلية SQL. المصدر الرسمي: بوابة مهارات المستقبل.",
+      "source_lang": "ar",
+      "target_lang": "en",
+      "text": "This session is the key entry point of the data world, which aims to enable participants to deal with Relational Databases using SQL. Official source: future skills portal.",
+      "method": "argos-mt",
+      "translated_at": "2026-08-06T12:02:49.721Z"
+    },
+    "c3a568cee8832aa6bc7b3f6b305b7ba428254d36": {
+      "source": "تعتبر هذه الدورة المدخل الأساسي لعالم البيانات، حيث تهدف إلى تمكين المشاركين من التعامل مع ( Relational Databases ) باستخدام لغة الاستعلام الهيكلية SQL. سيتعلم المشارك كيفية استخراج البيانات، تحليلها، وإدارتها بفعالية، مما يساعد في اتخاذ قرارات مبنية على الأرقام والحقائق في بيئة العمل الرقمية الحديثة.",
+      "source_lang": "ar",
+      "target_lang": "en",
+      "text": "This session is the key entry point of the data world, which aims to enable participants to deal with Relational Databases using SQL. The participant will learn how to extract, analyse and manage data effectively, thereby helping to make decisions based on figures and facts in the modern digital working environment.",
+      "method": "argos-mt",
+      "translated_at": "2026-08-06T12:02:49.721Z"
+    },
+    "2dbd6b6dc89e6c42406ccf38bd17e2fb37e1648a": {
+      "source": "تبدأ 16-08-2026 إلى 20-08-2026 لمدة 20 ساعات",
+      "source_lang": "ar",
+      "target_lang": "en",
+      "text": "16-08-2026 to 20-08-2026 for 20 hours",
+      "method": "argos-mt",
+      "translated_at": "2026-08-06T12:02:49.721Z"
+    },
+    "ba8cfdcc1bac1f43720cb314278c782d76221f47": {
+      "source": "أهداف ومخرجات الدورة .1 فهم المفاهيم الأساسية لقواعد البيانات والجداول والعلاقات. .2 كتابة استعلامات SQL لاستخراج البيانات وتصفيتها بدقة عالية. .3 القدرة على دمج البيانات من عدة جداول ( Joins) للحصول على معلومات متكاملة. .4 استخدام الدوال الحسابية والمنطقية لتلخيص البيانات وإعداد التقارير. .5 التعامل مع عمليات إضافة وتعديل وحذف البيانات ( DML) بأمان .",
+      "source_lang": "ar",
+      "target_lang": "en",
+      "text": "Objectives and outputs of the session .1 Understanding basic concepts of databases, tables and relationships. .2 SQL information writing to extract and liquidate data with high accuracy. .3 Capacity to merge data from several tables ( Joins) to obtain integrated information. 4. Use of logistic and logic to summarize data and prepare reports. Deal with additions, modifications and deletions (DML) safely.",
+      "method": "argos-mt",
+      "translated_at": "2026-08-06T12:02:49.721Z"
+    },
+    "01ed405733d072a24189441fae950baa2180e679": {
+      "source": "ما هي قواعد البيانات؟ وما هي لغة SQL؟",
+      "source_lang": "ar",
+      "target_lang": "en",
+      "text": "What are the databases? What's SQL?",
+      "method": "argos-mt",
+      "translated_at": "2026-08-06T12:02:49.721Z"
+    },
+    "ea4619b4dd80451d9853f178dad44c4fd8321b89": {
+      "source": "تثبيت بيئة العمل والتعرف على واجهة إدارة قواعد البيانات.",
+      "source_lang": "ar",
+      "target_lang": "en",
+      "text": "Establish the working environment and identify the database management interface.",
+      "method": "argos-mt",
+      "translated_at": "2026-08-06T12:02:49.721Z"
+    },
+    "8d94f32459c261a599e4f8ee5a7c525d28f8410a": {
+      "source": "هيكلة الجداول وأنواع البيانات ( Strings, Numbers, Dates)",
+      "source_lang": "ar",
+      "target_lang": "en",
+      "text": "Strings, Numbers, Dates",
+      "method": "argos-mt",
+      "translated_at": "2026-08-06T12:02:49.721Z"
+    },
+    "39912cdb45dceeb7c96329a8dc046e971a7cde46": {
+      "source": "الأمر الأساسي SELECT وكيفية اختيار الأعمدة.",
+      "source_lang": "ar",
+      "target_lang": "en",
+      "text": "Basic SELECT and how to select the pillars.",
+      "method": "argos-mt",
+      "translated_at": "2026-08-06T12:02:49.721Z"
+    },
+    "bde31e6dd6d9ac373ea1bb9b0e945ca767c19087": {
+      "source": "تصفية البيانات باستخدام WHERE والمعاملات المنطقية ( AND, OR, NOT)",
+      "source_lang": "ar",
+      "target_lang": "en",
+      "text": "Liquidation of data using WHERE and logical transactions (when, OR, NOT)",
+      "method": "argos-mt",
+      "translated_at": "2026-08-06T12:02:49.721Z"
+    },
+    "e970139cb34fc182947680c9582fe9d8b8481e1c": {
+      "source": "ترتيب النتائج باستخدام ORDER BY وتحديد عدد السجلات.",
+      "source_lang": "ar",
+      "target_lang": "en",
+      "text": "Order the results using ORDER by specifying the number of records.",
+      "method": "argos-mt",
+      "translated_at": "2026-08-06T12:02:49.721Z"
+    },
+    "bc6e78f44bb0ded6314fd0fae2de1d7bf3d168c4": {
+      "source": "استخدام الدوال الحسابية .( SUM, AVG, COUNT, MIN, MAX)",
+      "source_lang": "ar",
+      "target_lang": "en",
+      "text": "SUM, AVG, COUNT, MIN, MAX)",
+      "method": "argos-mt",
+      "translated_at": "2026-08-06T12:02:49.722Z"
+    },
+    "c039dd31c5f51912ebe91464b4a88d1837abc1d6": {
+      "source": "تجميع البيانات باستخدام GROUP BY .",
+      "source_lang": "ar",
+      "target_lang": "en",
+      "text": "Compilation of data using group by",
+      "method": "argos-mt",
+      "translated_at": "2026-08-06T12:02:49.722Z"
+    },
+    "57c338721b82828af5029e7c7cbf8eb366519eb6": {
+      "source": "تصفية المجموعات باستخدام شرط HAVING .",
+      "source_lang": "ar",
+      "target_lang": "en",
+      "text": "Liquidation of groups using the HAVING requirement.",
+      "method": "argos-mt",
+      "translated_at": "2026-08-06T12:02:49.722Z"
+    },
+    "8d71bd6b866d00646f025f738d28bd2fdca0a6fa": {
+      "source": "مفهوم المفاتيح الأساسية Primary Key) ) والأجنبية ( ( Foreign Key",
+      "source_lang": "ar",
+      "target_lang": "en",
+      "text": "Primary Keys concept and foreign ( Foreign Key)",
+      "method": "argos-mt",
+      "translated_at": "2026-08-06T12:02:49.722Z"
+    },
+    "bcede28d018ade14f611fcf0312a3ca298bdd8ae": {
+      "source": "التعامل مع القيم المفقودة ( ( NULL",
+      "source_lang": "ar",
+      "target_lang": "en",
+      "text": "Deal with lost values (NULL)",
+      "method": "argos-mt",
+      "translated_at": "2026-08-06T12:02:49.722Z"
+    },
+    "cc1146ee51ebfa25a1050688b85f8b7c8484ca19": {
+      "source": "إضافة، تحديث، وحذف السجلات INSERT, UPDATE, DELETE ) )",
+      "source_lang": "ar",
+      "target_lang": "en",
+      "text": "Addendum, update, delete records INSERT, UPDATE, DELETE",
+      "method": "argos-mt",
+      "translated_at": "2026-08-06T12:02:49.722Z"
+    },
+    "50ec4fe7676322556c44f900c99c2b2f06adca49": {
+      "source": "أفضل الممارسات في كتابة كود SQL نظيف وفعال.",
+      "source_lang": "ar",
+      "target_lang": "en",
+      "text": "Best practices in writing SQL clean and effective.",
+      "method": "argos-mt",
+      "translated_at": "2026-08-06T12:02:49.722Z"
+    },
+    "e8ca8318d148d90acf598be5f0bed9f16f190179": {
+      "source": "مشروع ختامي: استخراج تقرير كامل من قاعدة بيانات واقعية.",
+      "source_lang": "ar",
+      "target_lang": "en",
+      "text": "Closing project: extraction of a full report from a realistic database.",
+      "method": "argos-mt",
+      "translated_at": "2026-08-06T12:02:49.722Z"
+    },
+    "060399506998c654126ae2b823ca50813e54e41f": {
+      "source": "CompTIA IT Fundamentals",
+      "source_lang": "en",
+      "target_lang": "ar",
+      "text": "أساسيات تكنولوجيا المعلومات",
+      "method": "argos-mt",
+      "translated_at": "2026-08-06T12:02:49.722Z"
+    },
+    "aff805dc38a5209ceba3adddc168189e2561da75": {
+      "source": "تعد هذه الدورة الجسر الأول للمبتدئين في عالم التقنية. المصدر الرسمي: بوابة مهارات المستقبل. CompTIA IT Fundamentals ضمن التقنية والابتكار في عن بعد. تبدأ الفعالية ١٦‏/٠٨‏/٢٠٢٦، ٩:٠٠ ص وتنتهي ١٨‏/٠٨‏/٢٠٢٦، ٦:٠٠ م حسب البيانات المتاحة. تعرض الصفحة وقت الفعالية وموقعها ومصدرها وروابط التقويم والاتجاهات عند توفرها. المصدر: Future Skills MCIT Catalogue.",
+      "source_lang": "ar",
+      "target_lang": "en",
+      "text": "This session is the first bridge for starters in the technical world. Official source: future skills portal. CompTIA IT Fundamentals within technology and remote innovation. Effectiveness begins 16/2026, 9:00 p.m. and ends 18/08/2026, 6:00 by available data. The page shall be presented at the time, location and source of effectiveness, calendar linkages and trends as they are available. Source: Future Skills MCIT Catalogue.",
+      "method": "argos-mt",
+      "translated_at": "2026-08-06T12:02:49.722Z"
+    },
+    "b48165c07b45752b427c897176315ac1ffc8ddc8": {
+      "source": "تعد هذه الدورة الجسر الأول للمبتدئين في عالم التقنية. تهدف إلى محو الأمية الرقمية وشرح المفاهيم الأساسية لتقنية المعلومات، بما في ذلك الأجهزة ( Hardware)، البرمجيات ( Software) والشبكات، والأمن السيبراني، وقواعد البيانات. إنها تهيئ المتدرب لفهم كيفية عمل الأنظمة وكيفية اتخاذ قرارات تقنية سليمة.",
+      "source_lang": "ar",
+      "target_lang": "en",
+      "text": "This session is the first bridge for starters in the technical world. The objective is to digital literacy and to explain basic concepts of information technology, including Hardware, Software, networks, cybersecurity and databases. It prepares the interns to understand how the systems work and how to make sound technical decisions.",
+      "method": "argos-mt",
+      "translated_at": "2026-08-06T12:02:49.722Z"
+    },
+    "6a9e3a5f1a8e3747c6ccec9f03867d61bec51067": {
+      "source": "CompTIA IT Fundamentals | بوابة مهارات المستقبل",
+      "source_lang": "en",
+      "target_lang": "ar",
+      "text": "أساسيات تكنولوجيا المعلومات والاتصالات",
+      "method": "argos-mt",
+      "translated_at": "2026-08-06T12:02:49.722Z"
+    },
+    "33ae2115ed9c82d3405c0de6f64b38395519c3f5": {
+      "source": "تبدأ 16-08-2026 إلى 18-08-2026 لمدة 20 ساعات",
+      "source_lang": "ar",
+      "target_lang": "en",
+      "text": "starts 16-08-2026 to 18-08-2026 for 20 hours",
+      "method": "argos-mt",
+      "translated_at": "2026-08-06T12:02:49.722Z"
+    },
+    "a9016cf372ee8afa777fae199f6ddee7e2b38305": {
+      "source": "أهداف ومخرجات الدورة .1 تحديد وفهم مكونات الكمبيوتر والأجهزة الطرفية المختلفة. .2 تثبيت وإعداد البرمجيات وفهم أنظمة التشغيل Windows, macOS, Linux) ) .3 إعداد اتصال بالشبكة اللاسلكية وفهم أساسيات الإنترنت. .4 تطبيق أفضل الممارسات للحماية من التهديدات الأمنية والبرمجيات الخبيثة. .5 التعرف على المفاهيم الأساسية للبرمجة وقواعد البيانات.",
+      "source_lang": "ar",
+      "target_lang": "en",
+      "text": "Targets and outputs of cycle .1 Identification and understanding of different computer components and terminals. .2 Confirmation, development of software and understanding of Windows, macOS, Linux) .3 Preparation of telecommunications and understanding of Internet fundamentals. Application of best practices to protect against security threats and malware. Recognition of basic concepts of programming and databases.",
+      "method": "argos-mt",
+      "translated_at": "2026-08-06T12:02:49.722Z"
+    },
+    "2824c313eac815baf80279fb877746d1b3c75902": {
+      "source": "اليوم الأول: البنية التحتية والعتاد .1 المفاهيم الأساسية للحوسبة والوحدات (بت، بايت). .2 أنواع الوصلات والكابلات USB, HDMI, Ethernet) ). .3 الأجزاء الداخلية للجهاز (المعالج، الذاكرة، التخزين). اليوم الثاني: البرمجيات والشبكات .1 أنواع أنظمة التشغيل والتطبيقات. .2 أساسيات الشبكات Wi-Fi, IP Address, Cloud Computing) ) .3 طرق التخزين ومشاركة الملفات. اليوم الثالث: الأمن وقواعد البيانات .1 أساسيات الأمن السيبراني (كلمات المرور، التشفير، النسخ الاحتياطي). .2 مدخل إلى لغات البرمجة والمنطق البرمجي. .3 أساسيات قواعد البيانات ( ( Data Types, Structures",
+      "source_lang": "ar",
+      "target_lang": "en",
+      "text": "Day 1: Infrastructure and gear 1 - Basic concepts of computerization and units (Bett, Bayt). 2 Types of links and cables USB, HDMI, Ethernet) Inner parts of the device (medicine, memory, storage). Day two: Software and network 1 types of operating and application systems. .2 Basic Wi-Fi, IP Address, Cloud Computing) .3 Storage methods and file participation. Day 3: Security and Database 1 - Cybersecurity fundamentals (transit words, encryption, backups). 2 input into programming languages and programming logic. Data Types, Structures",
+      "method": "argos-mt",
+      "translated_at": "2026-08-06T12:02:49.722Z"
+    },
+    "d1bb8122d21d911b6f9aee38f7cca7ed71d70ac0": {
+      "source": "الأجندة الرسمية لـLEAP 2026: 427 جلسة مكتملة الوقت ضمن 31 أغسطس إلى 3 سبتمبر 2026.",
+      "source_lang": "ar",
+      "target_lang": "en",
+      "text": "LLEAP 2026: 427 completed meetings within 31 August to 3 September 2026.",
+      "method": "argos-mt",
+      "translated_at": "2026-08-06T12:02:49.722Z"
+    },
+    "469efc62fb9e7883526617c18af6deddf5e39b01": {
+      "source": "427 جلسة بوقت بداية ونهاية",
+      "source_lang": "ar",
+      "target_lang": "en",
+      "text": "427 meetings at the beginning and end",
+      "method": "argos-mt",
+      "translated_at": "2026-08-06T12:02:49.722Z"
+    },
+    "f8188e2f71af4fd4b0660268f7a31ab11711633e": {
+      "source": "22 نوعًا برامجيًا",
+      "source_lang": "ar",
+      "target_lang": "en",
+      "text": "22 programming types",
+      "method": "argos-mt",
+      "translated_at": "2026-08-06T12:02:49.722Z"
+    },
+    "2aa3aec6f62aecac86a01985ee6000268598f78b": {
+      "source": "427 جلسة رسمية منشورة في أجندة LEAP 2026",
+      "source_lang": "ar",
+      "target_lang": "en",
+      "text": "427 formal meetings published in LEAP 2026",
+      "method": "argos-mt",
+      "translated_at": "2026-08-06T12:02:49.722Z"
+    },
+    "c3830e6cdbcf3b8d05618f1558258d8b6064ea02": {
+      "source": "22 نوعًا ومسارًا برامجيًا",
+      "source_lang": "ar",
+      "target_lang": "en",
+      "text": "22 types and programme paths",
+      "method": "argos-mt",
+      "translated_at": "2026-08-06T12:02:49.722Z"
+    },
+    "054fac4c3811d5394366232454e41e727c61b53c": {
+      "source": "Space Tech",
+      "source_lang": "en",
+      "target_lang": "ar",
+      "text": "تكنولوجيا الفضاء",
+      "method": "argos-mt",
+      "translated_at": "2026-08-06T12:02:49.722Z"
+    },
+    "bb648bee8f1876a8792962fc9380c6a3dff01555": {
+      "source": "Smart Cities",
+      "source_lang": "en",
+      "target_lang": "ar",
+      "text": "المدن الذكية",
+      "method": "argos-mt",
+      "translated_at": "2026-08-06T12:02:49.722Z"
+    },
+    "78b73e1509c7330fde8eb3acb95ad23ade88669e": {
+      "source": "Investor & Founder Track",
+      "source_lang": "en",
+      "target_lang": "ar",
+      "text": "مسار المستثمر",
+      "method": "argos-mt",
+      "translated_at": "2026-08-06T12:02:49.722Z"
+    },
+    "3b5109d40f406562b6dfdc59dae66a38e34db552": {
+      "source": "Sports Tech",
+      "source_lang": "en",
+      "target_lang": "ar",
+      "text": "الرياضة التقنية",
+      "method": "argos-mt",
+      "translated_at": "2026-08-06T12:02:49.722Z"
+    },
+    "5e328cb7e021d11d35f372d43338a6ee8b7cd5d2": {
+      "source": "DeepFest",
+      "source_lang": "en",
+      "target_lang": "ar",
+      "text": "أعمق",
+      "method": "argos-mt",
+      "translated_at": "2026-08-06T12:02:49.722Z"
+    },
+    "48ba03472adb7dce7f7b61847b7352919dfaed01": {
+      "source": "World Tech",
+      "source_lang": "en",
+      "target_lang": "ar",
+      "text": "التكنولوجيا العالمية",
+      "method": "argos-mt",
+      "translated_at": "2026-08-06T12:02:49.722Z"
+    },
+    "c90a6de46ef3b21b7f8dba1f3090ee2c1e0895b2": {
+      "source": "Code",
+      "source_lang": "en",
+      "target_lang": "ar",
+      "text": "المدونة",
+      "method": "argos-mt",
+      "translated_at": "2026-08-06T12:02:49.722Z"
+    },
+    "adc771f61fe71000f76c134bcfb812f488e73269": {
+      "source": "Health Tech",
+      "source_lang": "en",
+      "target_lang": "ar",
+      "text": "التكنولوجيا الصحية",
+      "method": "argos-mt",
+      "translated_at": "2026-08-06T12:02:49.722Z"
+    },
+    "7e84baaa244a671622290aeb77e7296e1b28b45e": {
+      "source": "Future of Work",
+      "source_lang": "en",
+      "target_lang": "ar",
+      "text": "مستقبل العمل",
+      "method": "argos-mt",
+      "translated_at": "2026-08-06T12:02:49.722Z"
+    },
+    "d9db318e4792853e5ba3796de06809fd9d672f88": {
+      "source": "Transportation Tech",
+      "source_lang": "en",
+      "target_lang": "ar",
+      "text": "تكنولوجيا النقل",
+      "method": "argos-mt",
+      "translated_at": "2026-08-06T12:02:49.722Z"
+    },
+    "4eed1d0bfda7e9c7575f947b995460b9eaaac4c9": {
+      "source": "Fintech & eCommerce",
+      "source_lang": "en",
+      "target_lang": "ar",
+      "text": "التجارة الإلكترونية",
+      "method": "argos-mt",
+      "translated_at": "2026-08-06T12:02:49.722Z"
+    },
+    "bb4f7895f5fc28a36c0a7178762571d17b95bc1b": {
+      "source": "Main Stage",
+      "source_lang": "en",
+      "target_lang": "ar",
+      "text": "المرحلة الرئيسية",
+      "method": "argos-mt",
+      "translated_at": "2026-08-06T12:02:49.722Z"
+    },
+    "4f3fbec8bb1bdaca22b1fc828dc2c92f79d36568": {
+      "source": "الأجندة الرسمية لـLEAP 2026: 420 جلسة مكتملة الوقت ضمن 31 أغسطس إلى 3 سبتمبر 2026.",
+      "source_lang": "ar",
+      "target_lang": "en",
+      "text": "LLEAP 2026: 420 completed meetings within 31 August to 3 September 2026.",
+      "method": "argos-mt",
+      "translated_at": "2026-08-06T15:02:12.703Z"
+    },
+    "1e83968d22ed0cc075e1fcb1036521f7ed910804": {
+      "source": "420 جلسة بوقت بداية ونهاية",
+      "source_lang": "ar",
+      "target_lang": "en",
+      "text": "420 meetings at the beginning and end",
+      "method": "argos-mt",
+      "translated_at": "2026-08-06T15:02:12.703Z"
+    },
+    "b8863cefc94d1738aa5a875996d588c17c67e12c": {
+      "source": "420 جلسة رسمية منشورة في أجندة LEAP 2026",
+      "source_lang": "ar",
+      "target_lang": "en",
+      "text": "420 formal meetings published in LEAP 2026",
+      "method": "argos-mt",
+      "translated_at": "2026-08-06T15:02:12.703Z"
+    },
+    "294eb6e22fc94fe5ebdbbd1bca2c8635d908494f": {
+      "source": "Hayy Explorers | As Told by The Land: Routes of Exchange",
+      "source_lang": "en",
+      "target_lang": "ar",
+      "text": "هيي اكسبلوررز | كما قال الأرض: طرق التبادل",
+      "method": "argos-mt",
+      "translated_at": "2026-08-07T00:36:56.838Z"
+    },
+    "ea175487bdcfdd60f6d70f34ac684710118e7404": {
+      "source": "الأجندة الرسمية لـLEAP 2026: 410 جلسة مكتملة الوقت ضمن 31 أغسطس إلى 3 سبتمبر 2026.",
+      "source_lang": "ar",
+      "target_lang": "en",
+      "text": "LLEAP 2026: 410 completed meetings within 31 August to 3 September 2026.",
+      "method": "argos-mt",
+      "translated_at": "2026-08-07T08:02:44.735Z"
+    },
+    "8e8c91d5ef2c5840f795aeb3204f32392e54c0a0": {
+      "source": "410 جلسة بوقت بداية ونهاية",
+      "source_lang": "ar",
+      "target_lang": "en",
+      "text": "410 meetings at the beginning and end",
+      "method": "argos-mt",
+      "translated_at": "2026-08-07T08:02:44.735Z"
+    },
+    "661ca973db2cc7cbdfd74736b9a176b2ca58790b": {
+      "source": "21 نوعًا برامجيًا",
+      "source_lang": "ar",
+      "target_lang": "en",
+      "text": "21 programme types",
+      "method": "argos-mt",
+      "translated_at": "2026-08-07T08:02:44.735Z"
+    },
+    "6198e127f533664b55936fea91d27536f9624961": {
+      "source": "410 جلسة رسمية منشورة في أجندة LEAP 2026",
+      "source_lang": "ar",
+      "target_lang": "en",
+      "text": "410 formal meetings published in LEAP 2026",
+      "method": "argos-mt",
+      "translated_at": "2026-08-07T08:02:44.735Z"
+    },
+    "6a461d1e835d2240eb06a4bad7f94983bf8ff8fa": {
+      "source": "21 نوعًا ومسارًا برامجيًا",
+      "source_lang": "ar",
+      "target_lang": "en",
+      "text": "21 types and pathways",
+      "method": "argos-mt",
+      "translated_at": "2026-08-07T08:02:44.736Z"
+    },
+    "27f3820375d4b5b709c5b988ca663c5f3e665c89": {
+      "source": "الأجندة الرسمية لـLEAP 2026: 418 جلسة مكتملة الوقت ضمن 31 أغسطس إلى 3 سبتمبر 2026.",
+      "source_lang": "ar",
+      "target_lang": "en",
+      "text": "LLEAP 2026: 418 full-time meetings within 31 August to 3 September 2026.",
+      "method": "argos-mt",
+      "translated_at": "2026-08-08T07:31:59.468Z"
+    },
+    "0166a741f56c2c878397829247b0f4cfe8dbd584": {
+      "source": "418 جلسة بوقت بداية ونهاية",
+      "source_lang": "ar",
+      "target_lang": "en",
+      "text": "418 meetings at the beginning and end",
+      "method": "argos-mt",
+      "translated_at": "2026-08-08T07:31:59.468Z"
+    },
+    "dcda997b36407a0ed962ce4401fe95ee89e28f75": {
+      "source": "418 جلسة رسمية منشورة في أجندة LEAP 2026",
+      "source_lang": "ar",
+      "target_lang": "en",
+      "text": "418 formal meetings published in the LEAP 2026 Committee",
+      "method": "argos-mt",
+      "translated_at": "2026-08-08T07:31:59.468Z"
+    },
+    "23ef82b861ecf593a3ecb59a3767caf125732826": {
+      "source": "Beyond Speed: Building the Next Gaming Experience in Saudi Arabia",
+      "source_lang": "en",
+      "target_lang": "ar",
+      "text": "ما بعد السرعة: بناء تجربة الألعاب القادمة في المملكة العربية السعودية",
+      "method": "argos-mt",
+      "translated_at": "2026-08-08T07:31:59.468Z"
+    },
+    "34829cbcc768aa7b50523b5d2f96b950f5b387e2": {
+      "source": "Saudi Gaming Founders Present Part 1...",
+      "source_lang": "en",
+      "target_lang": "ar",
+      "text": "مؤسسو الألعاب السعودية يقدمون الجزء الأول",
+      "method": "argos-mt",
+      "translated_at": "2026-08-08T07:31:59.468Z"
+    },
+    "9913084d19fa74d3b23e3174e11bfc642083bc86": {
+      "source": "When Worlds Come Alive: Designing Experiences That Think, Adapt and Respond",
+      "source_lang": "en",
+      "target_lang": "ar",
+      "text": "عندما يأتي العالم حيّاً: تصاميم التجارب التي تفكّر وتجد وتستجيب",
+      "method": "argos-mt",
+      "translated_at": "2026-08-08T07:31:59.468Z"
+    },
+    "639941b9e4e806e9bb83f25fe823d91495cfc50c": {
+      "source": "Level Up Saudi: Building the Future of Esports",
+      "source_lang": "en",
+      "target_lang": "ar",
+      "text": "المستوى الأعلى في المملكة العربية السعودية: بناء مستقبل الموانئ",
+      "method": "argos-mt",
+      "translated_at": "2026-08-08T07:31:59.468Z"
+    },
+    "cf6732351903e90e4e5417a5205f421fa59aecb3": {
+      "source": "Open Innovation Initiative",
+      "source_lang": "en",
+      "target_lang": "ar",
+      "text": "مبادرة الابتكارات المفتوحة",
+      "method": "argos-mt",
+      "translated_at": "2026-08-08T07:31:59.468Z"
+    },
+    "f32027e1dbf117233fc54509d31f32314a5c3acf": {
+      "source": "Future of Transportation - Expert Presentations",
+      "source_lang": "en",
+      "target_lang": "ar",
+      "text": "مستقبل النقل - عروض الخبراء",
+      "method": "argos-mt",
+      "translated_at": "2026-08-08T07:31:59.468Z"
+    },
+    "2e41b866ab6bf70e7fc33ab19215470f73ec8148": {
+      "source": "As part of Aseer Summer Season 2026, Mohamed Hamaki will perform a... Concert – Mohamed Hamaki ضمن السياحة والتجارب في عسير. تبدأ الفعالية ١٤‏/٠٨‏/٢٠٢٦، ٩:٠٠ ص وتنتهي ١٥‏/٠٨‏/٢٠٢٦، ٦:٠٠ م حسب البيانات المتاحة. تعرض الصفحة وقت الفعالية وموقعها ومصدرها وروابط التقويم والاتجاهات عند توفرها. المصدر: Discover Aseer Events.",
+      "source_lang": "ar",
+      "target_lang": "en",
+      "text": "As part of Aseer Summer Season 2026, Mohamed Hamaki will perform a... Concert – Mohamed Hamaki within tourism and experiments in Aseer. Effectiveness begins 14/80/2026, 9:00 p.m. and ends 15/08/2026, 6:00 by available data. The page shall be presented at the time, location and source of effectiveness, calendar linkages and trends as they are available. Source: Dis cover Aseer Events.",
+      "method": "argos-mt",
+      "translated_at": "2026-08-08T19:32:07.877Z"
+    },
+    "6f284a68fe3b23f96ed4ef436579d6ceb67a4bbe": {
+      "source": "١٤ أغسطس ٢٠٢٦ في ٠٩:٠٠ ص إلى ١٥ أغسطس ٢٠٢٦ في ٠٦:٠٠ م",
+      "source_lang": "ar",
+      "target_lang": "en",
+      "text": "14 August 2026 in 90:00 to 15 August 2026 at 60:00 m",
+      "method": "argos-mt",
+      "translated_at": "2026-08-08T19:32:07.877Z"
+    },
+    "1106eaed29b62a772153894c378cbdecf044c86e": {
+      "source": "النافذة الزمنية: ١٤ أغسطس ٢٠٢٦ في ٠٩:٠٠ ص إلى ١٥ أغسطس ٢٠٢٦ في ٠٦:٠٠ م",
+      "source_lang": "ar",
+      "target_lang": "en",
+      "text": "Time window: 14 August 2026 in 90:00 to 15 August 2026 at 60:00 m",
+      "method": "argos-mt",
+      "translated_at": "2026-08-08T19:32:07.877Z"
+    },
+    "60eabab591a031654bee8b84adfb9b8174c2092a": {
+      "source": "الموعد: ١٤ أغسطس ٢٠٢٦ في ٠٩:٠٠ ص إلى ١٥ أغسطس ٢٠٢٦ في ٠٦:٠٠ م",
+      "source_lang": "ar",
+      "target_lang": "en",
+      "text": "Date: 14 August 2026: 0:00 to 15 August 2026 at 60:00 m",
+      "method": "argos-mt",
+      "translated_at": "2026-08-08T19:32:07.877Z"
+    },
     "f9fd9a82ff57ac839e84b925ed378dd1cffef72a": {
       "source": "رابط المصدر: https://www.ithra.com/en/programme/2026/ithra-art-prize-exhibition",
       "source_lang": "en",
       "target_lang": "ar",
       "text": "رابط المصدر: https://www.ithra.com/en/programme/2026/ithra-art-prize-exhibition",
       "method": "identity-pass",
-      "translated_at": "2026-08-06T09:44:19.925Z"
+      "translated_at": "2026-08-09T07:39:11.274Z"
     },
     "e5bf69dbb253d75158edf227e66717f0d787d7b6": {
       "source": "رابط المصدر: https://www.ithra.com/en/programme/2026/ithra-members-tour",
@@ -62920,7 +63496,15 @@
       "target_lang": "ar",
       "text": "رابط المصدر: https://www.ithra.com/en/programme/2026/ithra-members-tour",
       "method": "identity-pass",
-      "translated_at": "2026-08-06T09:44:19.983Z"
+      "translated_at": "2026-08-09T07:39:11.320Z"
+    },
+    "79e7341d43934fc9d73291698d655ca1d169d5b4": {
+      "source": "رابط المصدر: https://discoveraseer.com/en/experiences/hfl-ghnayy-mhmd-hmaky",
+      "source_lang": "en",
+      "target_lang": "ar",
+      "text": "رابط المصدر: https://discoveraseer.com/en/experiences/hfl-ghnayy-mhmd-hmaky",
+      "method": "identity-pass",
+      "translated_at": "2026-08-09T07:39:11.344Z"
     },
     "2a6113b22f15f6f8a2ea57ae4dbfc6510910177a": {
       "source": "رابط المصدر: https://hayyjameel.org/whats-on/jameel-library-the-task-of-the-translator-research-lab/",
@@ -62928,7 +63512,7 @@
       "target_lang": "ar",
       "text": "رابط المصدر: https://hayyjameel.org/whats-on/jameel-library-the-task-of-the-translator-research-lab/",
       "method": "identity-pass",
-      "translated_at": "2026-08-06T09:44:20.028Z"
+      "translated_at": "2026-08-09T07:39:11.381Z"
     },
     "64feeeb760fe5e3ec36df788cc648e9ed5355d56": {
       "source": "رابط المصدر: https://www.ithra.com/en/programme/2026/manal-mohei-eldin-and-oriental-strokes",
@@ -62936,7 +63520,7 @@
       "target_lang": "ar",
       "text": "رابط المصدر: https://www.ithra.com/en/programme/2026/manal-mohei-eldin-and-oriental-strokes",
       "method": "identity-pass",
-      "translated_at": "2026-08-06T09:44:20.054Z"
+      "translated_at": "2026-08-09T07:39:11.401Z"
     },
     "75dedd58d76e15d3804757de631efc1b5ff36d4b": {
       "source": "رابط المصدر: https://kau.edu.sa/en/event/the-2nd-international-conference-of-sustainability-and-quality-of-life",
@@ -62944,7 +63528,7 @@
       "target_lang": "ar",
       "text": "رابط المصدر: https://kau.edu.sa/en/event/the-2nd-international-conference-of-sustainability-and-quality-of-life",
       "method": "identity-pass",
-      "translated_at": "2026-08-06T09:44:20.248Z"
+      "translated_at": "2026-08-09T07:39:11.554Z"
     },
     "4eccf1eec783f7cfc8bd1744cf0494337e6bea80": {
       "source": "رابط المصدر: https://www.chamber.org.sa/sites/Arabic/Events/ChamberEvents/Pages/ChamberEventDetails.aspx?ItemID=345",
@@ -62952,23 +63536,23 @@
       "target_lang": "ar",
       "text": "رابط المصدر: https://www.chamber.org.sa/sites/Arabic/Events/ChamberEvents/Pages/ChamberEventDetails.aspx?ItemID=345",
       "method": "identity-pass",
-      "translated_at": "2026-08-06T09:44:20.298Z"
+      "translated_at": "2026-08-09T07:39:11.602Z"
     },
     "0f156f2e12622bd48b939efe8b7b3a0e82560d40": {
       "source": "• البكالوريوس أو الماجستير، يتم التعيين على رتبة وكيل رقيب: للمرشحين والمرشحات الحاصلين على مؤهل البكالوريوس وأعلى من خلال الانتظام الكلي للتخصصات المطلوبة المعلن عنها وبتقدير لا يقل عن جيد جدا ومعدل لا يقل عن 75%، ويشترط معادلة الشهادات من وزارة التعليم العالي بالنسبة لخريجي الجامعات غير السعودية.",
       "source_lang": "ar",
       "target_lang": "en",
-      "text": "Bachelor &apos; s or master &apos; s ranks are appointed at the rank of Sergeant &apos; s agent: for candidates and candidates with Bachelor &apos; s qualification and higher through the total regularity of the required disciplines declared, at a rate not less than very good and at a rate of not less than 75%, and the equivalent of certificates is required from the Ministry of Higher Education for non-Saudi Arabian university graduates.",
+      "text": "Bachelor &apos; s or master &apos; s ranks are appointed at the rank of Sergeant &apos; s agent: for candidates and candidates with Bachelor &apos; s qualification and higher through the total regularity of the required disciplines declared, at a rate not less than very good and at a rate of at least 75%, and the equivalent of certificates from the Ministry of Higher Education is required for graduates of non-Saudi Arabian universities.",
       "method": "argos-mt",
-      "translated_at": "2026-08-06T09:45:18.569Z"
+      "translated_at": "2026-08-09T07:39:59.936Z"
     },
     "a51b885b46f09a80c33a80d4142845f8ba9d2abe": {
       "source": "دورة أو فعالية رسمية من جامعة أم القرى في مكة المكرمة. التسجيل والسداد لدبلوم المشارك (عن بعد) في إدارة الحشود لخارج مكة ضمن التعليم والتدريب في عن بعد. تبدأ الفعالية ٠٢‏/٠٨‏/٢٠٢٦، ٨:٣٨ م وتنتهي ٣٠‏/١٢‏/٢٠٢٦، ٦:٠٠ م حسب البيانات المتاحة. تعرض الصفحة وقت الفعالية وموقعها ومصدرها وروابط التقويم والاتجاهات عند توفرها. المصدر: Umm Al-Qura University Events Center.",
       "source_lang": "ar",
       "target_lang": "en",
-      "text": "Official session or effectiveness of Umm Al-Qura University in Makkkah. Recording and reimbursement of the participant &apos; s (remotely) diploma in crowd management outside of a distance education and training facility. Effectiveness begins 20/2026, 8:38 and ends 30/12/2026, 6:00 by available data. The page shall be presented at the time, location and source of effectiveness, calendar linkages and trends as they are available. Source: Umm Al-Qura University Events Center.",
+      "text": "Official session or effectiveness of Umm Al-Qura University in Makkkah. Recording and reimbursement of the participant &apos; s (remotely) diploma in crowd management outside a distance education and training facility. Effectiveness begins 20/2026, 8:38 and ends 30/12/2026, 6:00 by available data. The page presents the time, location and source of effectiveness, calendar linkages and trends when available. Source: Umm Al-Qura University Events Center.",
       "method": "argos-mt",
-      "translated_at": "2026-08-06T09:45:18.569Z"
+      "translated_at": "2026-08-09T07:39:59.936Z"
     },
     "d001ffbe3e9d97091a77a20af586f61fb6ccacee": {
       "source": "دورة أو فعالية رسمية من جامعة أم القرى في مكة المكرمة.",
@@ -62976,15 +63560,15 @@
       "target_lang": "en",
       "text": "Official session or effectiveness of Umm Al-Qura University in Makkkah.",
       "method": "argos-mt",
-      "translated_at": "2026-08-06T09:45:18.569Z"
+      "translated_at": "2026-08-09T07:39:59.936Z"
     },
     "876ca279c8fa2c473c1d8da0f666328dbab47205": {
       "source": "دورة أو فعالية رسمية من جامعة أم القرى في مكة المكرمة. التسجيل والسداد لدبلوم المتوسط (عن بعد) في التسويق التطبيقي مع الشركاء ضمن التعليم والتدريب في عن بعد. تبدأ الفعالية ٠٢‏/٠٨‏/٢٠٢٦، ٩:٠٠ م وتنتهي ٣٠‏/١٢‏/٢٠٢٦، ٦:٠٠ م حسب البيانات المتاحة. تعرض الصفحة وقت الفعالية وموقعها ومصدرها وروابط التقويم والاتجاهات عند توفرها. المصدر: Umm Al-Qura University Events Center.",
       "source_lang": "ar",
       "target_lang": "en",
-      "text": "Official session or effectiveness of Umm Al-Qura University in Makkkah. Recording and reimbursing of an average ( remote) diploma in applied marketing with partners in distance education and training. Effectiveness begins 20/2026, 9:00 and ends 30/12/2026, 6:00 by available data. The page shall be presented at the time, location and source of effectiveness, calendar linkages and trends as they are available. Source: Umm Al-Qura University Events Center.",
+      "text": "Official session or effectiveness of Umm Al-Qura University in Makkkah. Recording and reimbursing of an average (remote) diploma in applied marketing with partners in distance education and training. Effectiveness begins 20/2026, 9:00 and ends 30/12/2026, 6:00 by available data. The page presents the time, location and source of effectiveness, calendar linkages and trends when available. Source: Umm Al-Qura University Events Center.",
       "method": "argos-mt",
-      "translated_at": "2026-08-06T09:45:18.569Z"
+      "translated_at": "2026-08-09T07:39:59.936Z"
     },
     "8ebcc767e9740b7e9733fdf3ede5355a46a51c11": {
       "source": "فعالية معرض أو مؤتمر منشورة في تقويم واجهة الرياض للمعارض والمؤتمرات.",
@@ -62992,7 +63576,31 @@
       "target_lang": "en",
       "text": "Effectiveness of exhibit or conference in calendar of the Riyadh Front Exhibition Convention Center.",
       "method": "argos-mt",
-      "translated_at": "2026-08-06T09:45:18.569Z"
+      "translated_at": "2026-08-09T07:39:59.937Z"
+    },
+    "42433768c99d0559f1043839f36b1c4d97e69c33": {
+      "source": "الأجندة الرسمية لـLEAP 2026: 441 جلسة مكتملة الوقت ضمن 31 أغسطس إلى 3 سبتمبر 2026.",
+      "source_lang": "ar",
+      "target_lang": "en",
+      "text": "LLEAP 2026: 441 completed meetings within 31 August to 3 September 2026.",
+      "method": "argos-mt",
+      "translated_at": "2026-08-09T07:39:59.937Z"
+    },
+    "586d33d2e60f83dea7496f709263300a75a46bec": {
+      "source": "441 جلسة بوقت بداية ونهاية",
+      "source_lang": "ar",
+      "target_lang": "en",
+      "text": "441 meetings at the beginning and end",
+      "method": "argos-mt",
+      "translated_at": "2026-08-09T07:39:59.937Z"
+    },
+    "20a40a236579a1a219fc9f9320ad4681db3a4174": {
+      "source": "441 جلسة رسمية منشورة في أجندة LEAP 2026",
+      "source_lang": "ar",
+      "target_lang": "en",
+      "text": "441 formal meetings published in the LEAP 2026 Committee",
+      "method": "argos-mt",
+      "translated_at": "2026-08-09T07:39:59.937Z"
     },
     "5c6a9ff87c6cdb115664bc8a097d521eadf27f9f": {
       "source": "مركز الرياض للمعارض والمؤتمرات في ملهم",
@@ -63000,7 +63608,79 @@
       "target_lang": "en",
       "text": "The Riyadh International Convention Exhibition Center in Inspiration",
       "method": "argos-mt",
-      "translated_at": "2026-08-06T09:45:18.569Z"
+      "translated_at": "2026-08-09T07:39:59.937Z"
+    },
+    "ce277cfd1ad242d601c2a7c7ccc6e8ed794bbb39": {
+      "source": "Inside the Engine: What’s Driving Saudi’s Innovation Ecosystem",
+      "source_lang": "en",
+      "target_lang": "ar",
+      "text": "داخل المهندسين: ما الذي يوجه النظام الإيكولوجي السعودي للابتكار",
+      "method": "argos-mt",
+      "translated_at": "2026-08-09T07:39:59.937Z"
+    },
+    "a91008655fdc29652fa72927f9e28e1795fee5d6": {
+      "source": "The Business of Gaming: Where the Smart Money Is Going",
+      "source_lang": "en",
+      "target_lang": "ar",
+      "text": "أعمال القمار: أين يذهب المال الذكي",
+      "method": "argos-mt",
+      "translated_at": "2026-08-09T07:39:59.937Z"
+    },
+    "5fb60bad64162ba552aaa9366701a37c7fa4f768": {
+      "source": "Building Health Tech: How to Start and Where to Grow",
+      "source_lang": "en",
+      "target_lang": "ar",
+      "text": "تقنيات الصحة في مجال البناء: كيفية البدء وأين نزرع",
+      "method": "argos-mt",
+      "translated_at": "2026-08-09T07:39:59.937Z"
+    },
+    "f36c7f0640a4ae5b94fc06f812d1b56ad76e2924": {
+      "source": "Founder vs. Funder: Who Really Holds the Power?",
+      "source_lang": "en",
+      "target_lang": "ar",
+      "text": "مؤسس ضد من حقاً يحمل السلطة؟",
+      "method": "argos-mt",
+      "translated_at": "2026-08-09T07:39:59.937Z"
+    },
+    "5927d2f7a2571ab10e05485ee58b822ad6076990": {
+      "source": "Building the Next Generation of Deep Tech Startups",
+      "source_lang": "en",
+      "target_lang": "ar",
+      "text": "بناء الجيل القادم من مراحل التكنولوجيا العميقة",
+      "method": "argos-mt",
+      "translated_at": "2026-08-09T07:39:59.937Z"
+    },
+    "eb12283434281fbc51faa7988acaf34162ce293d": {
+      "source": "Founder Finance: Unlocking Growth Through Fintech",
+      "source_lang": "en",
+      "target_lang": "ar",
+      "text": "التمويل المؤسسي: تحرير النمو من خلال تكنولوجيا المعلومات",
+      "method": "argos-mt",
+      "translated_at": "2026-08-09T07:39:59.937Z"
+    },
+    "0a69c5746773d94fbf82762901bd68fecd1eee75": {
+      "source": "Beyond Equity: The Rise of Private Credit for Startups",
+      "source_lang": "en",
+      "target_lang": "ar",
+      "text": "ما بعد الإنصاف: ارتفاع الائتمان الخاص للبدء",
+      "method": "argos-mt",
+      "translated_at": "2026-08-09T07:39:59.937Z"
+    },
+    "a4b922f3cbf56ff138427d1ee4b050f0f3703284": {
+      "source": "Think AI Fabric",
+      "source_lang": "en",
+      "target_lang": "ar",
+      "text": "فكّرْ AI Fabric",
+      "method": "argos-mt",
+      "translated_at": "2026-08-09T07:39:59.937Z"
+    },
+    "860b17ab00700b19eac410ba582a0eef8c53175d": {
+      "source": "Deep Tech Meets Smart Capital: Funding Science Startups",
+      "source_lang": "en",
+      "target_lang": "ar",
+      "text": "رأس المال الذكي: تمويل بدء العلوم",
+      "method": "argos-mt",
+      "translated_at": "2026-08-09T07:39:59.937Z"
     }
   }
 }

@@ -1,10 +1,10 @@
 # EventLive Visit Saudi Image Identity Report
 
-- generated_at: 2026-08-06T09:40:21.145Z
-- pdf_crop_assignments: 56
-- verified: 55
+- generated_at: 2026-08-09T07:34:54.223Z
+- pdf_crop_assignments: 55
+- verified: 54
 - struck: 1
-- slots_seen_this_cycle: 60
+- slots_seen_this_cycle: 58
 
 ## Struck (fell back to generated cover)
 
@@ -59,7 +59,6 @@
 - عروض الفنون الادائية التقليدية (visit-saudi-summer-2026-p057-bottom-left.jpg)
 - صيف 2026 (visit-saudi-summer-2026-p058-bottom-right.jpg)
 - صيف وسمرة (visit-saudi-summer-2026-p012-top-left.jpg)
-- ضحكات الرياض (visit-saudi-summer-2026-p061-top-left.jpg)
 - أوركسترا Game of Thrones (visit-saudi-summer-2026-p061-bottom-left.jpg)
 - بطولة أبطال المملكة للشطرنج (visit-saudi-summer-2026-p062-top-right.jpg)
 - IN ACT - ACT IX (visit-saudi-summer-2026-p039-top-left.jpg)

@@ -1,8 +1,8 @@
 # Future Skills Program Enrichment Report
 
-- generated_at: 2026-08-06T09:40:34.132Z
-- targets: 14
-- enriched: 14
+- generated_at: 2026-08-09T07:35:04.442Z
+- targets: 17
+- enriched: 17
 - failed: 0
 
 ## Enriched
@@ -21,6 +21,9 @@
 - Machine Learning - التعلم الالي (13048) - outcomes=1, topics=5, requirements=4, metadata=8
 - GenAI for Data Analysis and Decision Support - الذكاء الاصطناعي التوليدي لتحليل البيانات ودعم اتخاذ القرار (13049) - outcomes=1, topics=2, requirements=4, metadata=8
 - CompTIA Cloud+ (13050) - outcomes=1, topics=19, requirements=4, metadata=8
+- Virtualization & Cloud Infrastructure Basics - الافتراضية والبنية التحتية السحابية (13051) - outcomes=1, topics=3, requirements=4, metadata=8
+- SQL Fundamentals (13052) - outcomes=1, topics=15, requirements=4, metadata=8
+- CompTIA IT Fundamentals (13053) - outcomes=1, topics=1, requirements=4, metadata=8
 
 ## Failed
 

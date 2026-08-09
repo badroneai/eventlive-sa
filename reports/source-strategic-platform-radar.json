@@ -1,6 +1,6 @@
 {
   "schema": "eventlive.source-strategic-platform-radar.v1",
-  "generated_at": "2026-08-06T08:33:36.049Z",
+  "generated_at": "2026-08-08T19:04:28.703Z",
   "policy": {
     "allowed_use": "official source evidence refresh, API-surface mapping, partnership prioritization, extractor backlog decisions",
     "disallowed_use": "direct catalog publication without official confirmation and duplicate review"
@@ -247,11 +247,11 @@
         {
           "url": "https://www.visitsaudi.com/bin/api/v3/events?locale=ar",
           "status": 200,
-          "bytes": 93964,
+          "bytes": 90763,
           "classification": "reachable",
           "summary": {
             "parse_ok": true,
-            "item_count": 28,
+            "item_count": 27,
             "sample_titles": [
               "معرض اللغة العربية للطفل",
               "معرض اللغة العربية 28",
@@ -265,11 +265,11 @@
         {
           "url": "https://www.visitsaudi.com/bin/api/v3/events?locale=en",
           "status": 200,
-          "bytes": 97330,
+          "bytes": 94059,
           "classification": "reachable",
           "summary": {
             "parse_ok": true,
-            "item_count": 28,
+            "item_count": 27,
             "sample_titles": [
               "Arabic Language Exhibition for kids",
               "Arabic Language Exhibition 28",
@@ -294,40 +294,40 @@
       "final_url": "https://webook.com/ar/explore",
       "via": "fetch",
       "content_type": "text/html",
-      "bytes": 5998,
+      "bytes": 5972,
       "title": "",
       "classification": "protected",
       "error": "",
       "page_hint_urls": [
         "https://apps.apple.com/sa/app/webook-com-fun-things-to-do/id6468667896",
         "https://play.google.com/store/apps/details?id=com.webook.android",
-        "https://wbk-assets.webook.com/0.7.1-1/assets/index-D1mOvBnn.js",
-        "https://wbk-assets.webook.com/0.7.1-1/assets/vendor-CWjaaAIG.js",
-        "https://wbk-assets.webook.com/0.7.1-1/assets/@wbk/hooks-CnU27MY5.js",
-        "https://wbk-assets.webook.com/0.7.1-1/assets/@wbk/logger-DfNVpG3P.js",
-        "https://wbk-assets.webook.com/0.7.1-1/assets/@wbk/api-CpL17AQg.js",
-        "https://wbk-assets.webook.com/0.7.1-1/assets/@wbk/config-CO411JtW.js",
-        "https://wbk-assets.webook.com/0.7.1-1/assets/@wbk/svg-CgRIWMJi.js",
-        "https://wbk-assets.webook.com/0.7.1-1/assets/react-hook-form-DcM0cogH.js",
-        "https://wbk-assets.webook.com/0.7.1-1/assets/@wbk/ui-CtMI278B.js",
-        "https://wbk-assets.webook.com/0.7.1-1/assets/@wbk/queue-C2X3a49J.js",
-        "https://wbk-assets.webook.com/0.7.1-1/assets/i18next-Ce0fiPMx.js",
-        "https://wbk-assets.webook.com/0.7.1-1/assets/i18next-http-backend-DLDZYsxI.js",
-        "https://wbk-assets.webook.com/0.7.1-1/assets/i18next-browser-languagedetector-Bv2FoO1s.js",
-        "https://wbk-assets.webook.com/0.7.1-1/assets/react-i18next-BcA2hS57.js",
-        "https://wbk-assets.webook.com/0.7.1-1/assets/@wbk/analytics-CZDnQtFX.js",
-        "https://wbk-assets.webook.com/0.7.1-1/assets/@wbk/currency-Ch9ap4rw.js",
-        "https://wbk-assets.webook.com/0.7.1-1/assets/@wbk/auth-CqJr_6eT.js",
-        "https://wbk-assets.webook.com/0.7.1-1/assets/@wbk/payment-DJdpX5zi.js",
-        "https://wbk-assets.webook.com/0.7.1-1/assets/@wbk/flights-BjL0reFO.js",
-        "https://wbk-assets.webook.com/0.7.1-1/assets/@wbk/hotels-DEPPSxo-.js",
-        "https://wbk-assets.webook.com/0.7.1-1/assets/@wbk/ticketing-CbKEALo-.js",
-        "https://wbk-assets.webook.com/0.7.1-1/assets/@smc/ads-Ch0vs5e2.js",
-        "https://wbk-assets.webook.com/0.7.1-1/assets/@wbk/contentful-BZFBakzO.js",
-        "https://wbk-assets.webook.com/0.7.1-1/assets/react-helmet-Ba2OUe2H.js",
-        "https://wbk-assets.webook.com/0.7.1-1/assets/@wbk/cruises-fcgw2hyW.js",
-        "https://wbk-assets.webook.com/0.7.1-1/assets/@wbk/auction-n3r1WMXO.js",
-        "https://webook.com/cdn-cgi/content?id=29MErNsENgv.PDyZQrKf1gXlk2KSKK9Wtzc_Le3x40s-1786005223.5437696-1.2.1.1-e8Tyoh1tdgjPBnQagPbFMM9T1xWxNeT2KOUXJG5IpWQ",
+        "https://wbk-assets.webook.com/0.7.11/assets/index-Cj989ayE.js",
+        "https://wbk-assets.webook.com/0.7.11/assets/vendor-CWjaaAIG.js",
+        "https://wbk-assets.webook.com/0.7.11/assets/@wbk/hooks-qc90xnGh.js",
+        "https://wbk-assets.webook.com/0.7.11/assets/@wbk/logger-DfNVpG3P.js",
+        "https://wbk-assets.webook.com/0.7.11/assets/@wbk/api-Dv__OP15.js",
+        "https://wbk-assets.webook.com/0.7.11/assets/@wbk/config-V13xFo0-.js",
+        "https://wbk-assets.webook.com/0.7.11/assets/@wbk/svg-BqMAvwLP.js",
+        "https://wbk-assets.webook.com/0.7.11/assets/react-hook-form-DcM0cogH.js",
+        "https://wbk-assets.webook.com/0.7.11/assets/@wbk/ui-oTuNuDST.js",
+        "https://wbk-assets.webook.com/0.7.11/assets/@wbk/queue-uM1U8Rjd.js",
+        "https://wbk-assets.webook.com/0.7.11/assets/i18next-Ce0fiPMx.js",
+        "https://wbk-assets.webook.com/0.7.11/assets/i18next-http-backend-DLDZYsxI.js",
+        "https://wbk-assets.webook.com/0.7.11/assets/i18next-browser-languagedetector-Bv2FoO1s.js",
+        "https://wbk-assets.webook.com/0.7.11/assets/react-i18next-BcA2hS57.js",
+        "https://wbk-assets.webook.com/0.7.11/assets/@wbk/analytics--5TuYbEx.js",
+        "https://wbk-assets.webook.com/0.7.11/assets/@wbk/currency-Bngm-eq6.js",
+        "https://wbk-assets.webook.com/0.7.11/assets/@wbk/auth-B3kiRluw.js",
+        "https://wbk-assets.webook.com/0.7.11/assets/@wbk/payment-DKUg_QOA.js",
+        "https://wbk-assets.webook.com/0.7.11/assets/@wbk/flights-z87SJf2E.js",
+        "https://wbk-assets.webook.com/0.7.11/assets/@wbk/hotels-Cf3SPnQE.js",
+        "https://wbk-assets.webook.com/0.7.11/assets/@wbk/ticketing-DtqdOK7n.js",
+        "https://wbk-assets.webook.com/0.7.11/assets/@smc/ads-McSQaaD8.js",
+        "https://wbk-assets.webook.com/0.7.11/assets/@wbk/contentful-s9hG5Eov.js",
+        "https://wbk-assets.webook.com/0.7.11/assets/react-helmet-Ba2OUe2H.js",
+        "https://wbk-assets.webook.com/0.7.11/assets/@wbk/cruises-BqzP3KO_.js",
+        "https://wbk-assets.webook.com/0.7.11/assets/@wbk/auction-BM_sqUtN.js",
+        "https://webook.com/cdn-cgi/content?id=5Iv89STRpN.hty8a7AWJFtK1yLM060xX6d6htHaMkPA-1786215876.5941544-1.2.1.1-fu8_RYSdiMYuiz6MKM0RVPHAcJ9dqwHLrGyltFAmUd8",
         "https://static.cloudflareinsights.com/beacon.min.js/v4513226cdae34746b4dedf0b4dfa099e1781791509496"
       ],
       "page_hint_words": [
@@ -335,16 +335,16 @@
       ],
       "asset_results": [
         {
-          "url": "https://wbk-assets.webook.com/0.7.1-1/assets/@wbk/api-CpL17AQg.js",
+          "url": "https://wbk-assets.webook.com/0.7.11/assets/@wbk/api-Dv__OP15.js",
           "status": 200,
-          "bytes": 90291,
+          "bytes": 91661,
           "classification": "reachable",
           "hint_urls": [
             "https://github.com/nadude/webook-frontend/blob/main/packages/api/README.md",
             "https://webook.com/shop",
             "https://www.recaptcha.net/recaptcha/api.js?render=${f.config.grecaptcha.v3Key}",
-            "https://wbk-assets.webook.com/organizations/$%7Br%7D/event-group/details",
             "https://wbk-assets.webook.com/event-tickets-prerequisite?event_id=${t}",
+            "https://wbk-assets.webook.com/organizations/$%7Br%7D/event-group/details",
             "https://wbk-assets.webook.com/event-marketing-fee?event_id=${t}&utm_wid=${r}&lang=${a}"
           ],
           "hint_words": [
@@ -357,9 +357,9 @@
           ]
         },
         {
-          "url": "https://wbk-assets.webook.com/0.7.1-1/assets/@wbk/ticketing-CbKEALo-.js",
+          "url": "https://wbk-assets.webook.com/0.7.11/assets/@wbk/ticketing-DtqdOK7n.js",
           "status": 200,
-          "bytes": 497815,
+          "bytes": 499686,
           "classification": "reachable",
           "hint_urls": [
             "https://github.com/nadude/webook-frontend/blob/main/packages/ticketing/README.md",
@@ -383,7 +383,7 @@
             "https://r2.webook.com/consent_diriyah_season.pdf",
             "https://itunes.apple.com/app/id6468667896?action=write-review",
             "https://resell.webook.com",
-            "https://wbk-assets.webook.com/$%7Bd%7D/events/$%7Bx.slug%7D/book",
+            "https://wbk-assets.webook.com/$%7Bd%7D/events/$%7Bf.slug%7D/book",
             "https://wbk-assets.webook.com/$%7Bd%7D/events/$%7Bv.slug%7D",
             "https://wbk-assets.webook.com/profile/bookings/$%7Bt.order_id%7D?order_type=event",
             "https://wbk-assets.webook.com/$%7Bn%7D/events/$%7Bt.event.slug%7D"
@@ -398,7 +398,7 @@
           ]
         },
         {
-          "url": "https://wbk-assets.webook.com/0.7.1-1/assets/@wbk/config-CO411JtW.js",
+          "url": "https://wbk-assets.webook.com/0.7.11/assets/@wbk/config-V13xFo0-.js",
           "status": 200,
           "bytes": 4687,
           "classification": "reachable",
