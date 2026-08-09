@@ -146,7 +146,10 @@ const REQUIRED_PAIRS = [
   ['owner:command-center', 'test:owner-command-center']
 ];
 
-const REQUIRED_UNPAIRED = ['test:sitemap', 'test:seo-content', 'audit:dependencies', 'test:analytics'];
+// test:search-indexability is unpaired by design: it reads dist/ directly (the
+// artifact the build just produced), not a committed report, so there is no
+// audit:* step whose freshness it depends on.
+const REQUIRED_UNPAIRED = ['test:sitemap', 'test:seo-content', 'test:search-indexability', 'audit:dependencies', 'test:analytics'];
 
 // Self-check: REQUIRED_PAIRS + REQUIRED_UNPAIRED above (which encode
 // pairing semantics the flat list alone doesn't) must describe exactly the

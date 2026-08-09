@@ -87,6 +87,11 @@ export function eventSearchSnapshot(event = {}) {
     verification_method: event.verification_method || '',
     image_url: event.image_url || '',
     image_alt: event.image_alt || '',
+    // Not an intrinsic event field: it is derived from whether ANOTHER event
+    // shares this (title, city). It belongs in the fingerprint anyway, because
+    // the rendered <title> changes when it changes and an incremental build
+    // would otherwise leave the older occurrence with a colliding title.
+    seo_title_qualifier: event.seo_title_qualifier || '',
     trust_tier: event.trust_tier || '',
     trust_label: event.trust_label || '',
     live_schedule_ready: Boolean(event.live_schedule_ready),

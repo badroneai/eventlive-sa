@@ -1,4 +1,5 @@
 import assert from 'node:assert/strict';
+import { canonicalEventPage } from './event-canonical-aliases.mjs';
 import fs from 'node:fs';
 import path from 'node:path';
 import vm from 'node:vm';
@@ -140,14 +141,20 @@ function inspect(file, locale, direction, canonical) {
 
 for (const route of registry.routes) {
   const relative = route.key;
-  const arCanonical = `https://eventme.live/${relative === 'index.html' ? '' : relative}`;
-  const enCanonical = `https://eventme.live/en/${relative === 'index.html' ? '' : relative}`;
+  // hreflang stays self-referential (this page's twin is this page in the other
+  // language), but a duplicate event record canonicalises to its primary on
+  // BOTH surfaces — see scripts/event-canonical-aliases.mjs.
+  const canonicalRelative = canonicalEventPage(relative) || relative;
+  const arCanonical = `https://eventme.live/${canonicalRelative === 'index.html' ? '' : canonicalRelative}`;
+  const enCanonical = `https://eventme.live/en/${canonicalRelative === 'index.html' ? '' : canonicalRelative}`;
+  const arSelf = `https://eventme.live/${relative === 'index.html' ? '' : relative}`;
+  const enSelf = `https://eventme.live/en/${relative === 'index.html' ? '' : relative}`;
   const ar = inspect(resolveUnicodePath(dist, relative), 'ar-SA', 'rtl', arCanonical);
   const en = inspect(resolveUnicodePath(path.join(dist, 'en'), relative), 'en-SA', 'ltr', enCanonical);
   assert.equal(ar.$('.language-switch').attr('href'), route['en-SA']);
   assert.equal(en.$('.language-switch').attr('href'), route['ar-SA']);
-  assert.equal(ar.$('link[hreflang="en-SA"]').attr('href'), enCanonical);
-  assert.equal(en.$('link[hreflang="ar-SA"]').attr('href'), arCanonical);
+  assert.equal(ar.$('link[hreflang="en-SA"]').attr('href'), enSelf);
+  assert.equal(en.$('link[hreflang="ar-SA"]').attr('href'), arSelf);
 
   if (/^events\/.+\.html$/u.test(relative)) {
     for (const [locale, page] of [['ar-SA', ar], ['en-SA', en]]) {
@@ -219,7 +226,12 @@ assert.ok(venueLeakChecked, "expected to find the Dhahran/Children's Museum venu
 
 const sitemap = fs.readFileSync(path.join(dist, 'sitemap.xml'), 'utf8');
 const locCount = [...sitemap.matchAll(/<loc>/g)].length;
-assert.equal(locCount, registry.routes.length * 2, 'sitemap must contain one Arabic and one English URL per route');
+// Routes and sitemap entries are no longer 1:1: a duplicate event record is a
+// real localized route (both surfaces exist and link to each other) that is
+// deliberately not submitted for indexing, because its canonical points at the
+// primary. Every OTHER route must still appear on both surfaces.
+const aliasRoutes = registry.routes.filter((route) => canonicalEventPage(route.key)).length;
+assert.equal(locCount, (registry.routes.length - aliasRoutes) * 2, 'sitemap must contain one Arabic and one English URL per submitted route');
 assert.equal([...sitemap.matchAll(/hreflang="en-SA"/g)].length, locCount, 'every sitemap URL needs an English alternate');
 assert.equal([...sitemap.matchAll(/hreflang="ar-SA"/g)].length, locCount, 'every sitemap URL needs an Arabic alternate');
 

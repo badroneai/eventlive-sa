@@ -3,6 +3,7 @@ import fs from 'node:fs';
 import path from 'node:path';
 import { OWNER_ONLY_PAGES } from './owner-only-pages.mjs';
 import { LEGACY_REDIRECT_PAGES } from './legacy-redirect-pages.mjs';
+import { EVENT_ALIAS_PAGES } from './event-canonical-aliases.mjs';
 
 const root = process.cwd();
 const distDir = path.join(root, 'dist');
@@ -32,9 +33,15 @@ function walkHtml(directory) {
 const legacyCategoryRedirectFiles = LEGACY_REDIRECT_PAGES;
 
 // WO-4: single source of truth for owner-only pages — scripts/owner-only-pages.mjs.
+// Duplicate event records canonicalise to their primary (see
+// scripts/event-canonical-aliases.mjs) and are deliberately kept out of the
+// sitemap for the same reason as the legacy stubs above: submitting a URL for
+// indexing while its own canonical points elsewhere is a contradiction Search
+// Console reports back as an error.
 const htmlFiles = walkHtml(distDir)
   .filter((file) => !OWNER_ONLY_PAGES.has(file))
   .filter((file) => !legacyCategoryRedirectFiles.has(file))
+  .filter((file) => !EVENT_ALIAS_PAGES.has(file.normalize('NFC').replace(/^en\//, '')))
   .sort();
 const sitemap = fs.readFileSync(sitemapPath, 'utf8');
 const urls = [...sitemap.matchAll(/<loc>([^<]+)<\/loc>/g)].map((match) => match[1].normalize('NFC'));
@@ -74,9 +81,13 @@ assert.doesNotMatch(sitemap, new RegExp(`/(?:${ownerOnlyNames})<`), 'sitemap mus
 assert.match(sitemap, /xmlns:image="http:\/\/www\.google\.com\/schemas\/sitemap-image\/1\.1"/, 'sitemap must include the Google image sitemap namespace');
 
 const imageBlocks = [...sitemap.matchAll(/<image:image>[\s\S]*?<\/image:image>/g)].map((match) => match[0]);
-assert.ok(imageBlocks.length >= events.length, 'sitemap must include an image block for every generated event page');
+assert.ok(imageBlocks.length >= events.length - EVENT_ALIAS_PAGES.size, 'sitemap must include an image block for every submitted event page');
 
-for (const event of events.slice(0, 24)) {
+// Duplicate records canonicalise to their primary and are intentionally not
+// submitted; sample from the events that ARE submitted.
+const submittedEvents = events.filter((event) => !EVENT_ALIAS_PAGES.has(`events/${event.file_slug}.html`.normalize('NFC')));
+assert.ok(submittedEvents.length >= events.length - EVENT_ALIAS_PAGES.size, 'only aliased duplicates may be missing from the sitemap');
+for (const event of submittedEvents.slice(0, 24)) {
   const eventUrl = `${siteUrl}/events/${event.file_slug}.html`;
   const eventUrlIndex = sitemap.indexOf(`<loc>${eventUrl}</loc>`);
   assert.ok(eventUrlIndex >= 0, `sitemap must include event page ${eventUrl}`);

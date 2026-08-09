@@ -7,8 +7,12 @@ import { CATEGORY_TAXONOMY, categoryDefinitionByKey } from './category-taxonomy.
 import { cityPlacesBySlug, loadCityPlacesFile } from './city-places-data.mjs';
 import { renderCityPlacesJsonLd, renderCityPlacesSection } from './city-places-render.mjs';
 import { PLACE_CATEGORIES } from './place-category-taxonomy.mjs';
-import { loadContentTranslations } from './content-translation-cache.mjs';
+import { CITY_NAME_REGISTRY } from './city-name-registry.mjs';
+import { loadContentTranslations, normalizeContentText } from './content-translation-cache.mjs';
 import { OWNER_ONLY_PAGES } from './owner-only-pages.mjs';
+import { buildTitleQualifiers, eventQualifierKey, withTitleQualifier } from './event-title-qualifier.mjs';
+import { englishSeoDescription, englishSeoTitle, withEnglishBrand } from './en-seo-descriptions.mjs';
+import { canonicalEventPage, EVENT_ALIAS_PAGES } from './event-canonical-aliases.mjs';
 
 const root = process.cwd();
 const distDir = path.join(root, 'dist');
@@ -59,6 +63,15 @@ for (const category of CATEGORY_TAXONOMY) exact[category.label_ar] = category.la
 // in case the chip label ever renders outside that override.
 for (const category of PLACE_CATEGORIES) exact[category.label_ar] = category.label_en;
 
+// City names come from the registry rather than from hand-copied dictionary
+// entries (Gate Governance rule #3). Six Qassim cities had no en-SA-static
+// entry, so their English landing pages shipped an Arabic <title> — "فعاليات
+// البدائع" — on the page an English searcher reaches for that city. Seeding
+// from the registry means a city added there is translated everywhere at once.
+for (const city of CITY_NAME_REGISTRY) {
+  if (city.ar && city.en && !exact[city.ar]) exact[city.ar] = city.en;
+}
+
 // City-profiles destination layer (EVENTME-CITY-PROFILES-BRIEF.md). Loaded
 // once; applyCityPlacesEnglishOverride() below looks up each city page's
 // slug here and, when an entry exists, fully replaces the AR-generated
@@ -68,10 +81,18 @@ for (const category of PLACE_CATEGORIES) exact[category.label_ar] = category.lab
 const cityPlacesData = loadCityPlacesFile();
 const cityPlacesMap = cityPlacesBySlug(cityPlacesData);
 const contentTranslations = loadContentTranslations();
+// This reads cache entries directly rather than through createContentTranslator(),
+// so it must apply the same normalization the translator does — otherwise an
+// entry whose text still carries source-fed entities ("the participant &apos;s
+// diploma") enters the dictionary escaped, gets escaped again on render, and
+// ships "&amp;apos;" into the English <title>.
 for (const entry of Object.values(contentTranslations.entries || {})) {
   if (!entry?.source || !entry?.text) continue;
-  if (entry.source_lang === 'en' && entry.target_lang === 'ar' && !exact[entry.text]) exact[entry.text] = entry.source;
-  else if (entry.source_lang === 'ar' && entry.target_lang === 'en' && !exact[entry.source]) exact[entry.source] = entry.text;
+  const source = normalizeContentText(entry.source);
+  const text = normalizeContentText(entry.text);
+  if (!source || !text) continue;
+  if (entry.source_lang === 'en' && entry.target_lang === 'ar' && !exact[text]) exact[text] = source;
+  else if (entry.source_lang === 'ar' && entry.target_lang === 'en' && !exact[source]) exact[source] = text;
 }
 // Single source of truth: scripts/owner-only-pages.mjs (see OWNER_ONLY_PAGES doc
 // comment there — do not reintroduce a locally hand-rolled list here).
@@ -82,6 +103,13 @@ const eventByPath = new Map(catalogEvents.map((event) => [String(event.detail_ur
 for (const event of catalogEvents) {
   event.title_en = event.title_original || exact[String(event.title || '').trim()] || event.title;
 }
+// Same rule, same complete catalog as the Arabic build (see
+// event-title-qualifier.mjs): a recurring event must not ship two pages with
+// one title on either language surface.
+const enTitleQualifiers = buildTitleQualifiers(catalogEvents, 'en-GB', (event) => {
+  const city = exact[event.city] || event.city_label || event.city || 'Saudi Arabia';
+  return `${event.title_en || event.title || ''} ${city}`.replace(/\s+/g, ' ').trim();
+});
 const runtimeScriptCache = new Map();
 
 // Generated covers (scripts/generate-site.mjs's fallbackCover()) bake the
@@ -925,6 +953,13 @@ function publicPathsFromSitemap() {
     const relative = (decodeURIComponent(match[1] || 'index.html').replace(/^\/+/, '') || 'index.html').normalize('NFC');
     if (relative.endsWith('.html') && !relative.startsWith('en/') && !ownerOnly.has(relative)) paths.push(relative);
   }
+  // Duplicate event records are kept out of sitemap.xml (they canonicalise to
+  // their primary) but they are still live pages a visitor can reach, and the
+  // Arabic page declares an English alternate. Localize them anyway — the
+  // sitemap decides what is SUBMITTED for indexing, not what exists.
+  for (const relative of EVENT_ALIAS_PAGES) {
+    if (resolveUnicodePath(relative)) paths.push(relative);
+  }
   return [...new Set(paths)];
 }
 
@@ -972,6 +1007,15 @@ function alternateLinks(relativePath) {
   return { arUrl, enUrl };
 }
 
+// hreflang stays self-referential (this Arabic page's English twin is still
+// THIS page under /en/), but the canonical must survive updateSeo(): a
+// duplicate event record points at its primary on both surfaces, and rewriting
+// it to self here would undo the consolidation renderEventDetail() applied.
+function canonicalUrls(relativePath) {
+  const primary = canonicalEventPage(relativePath);
+  return alternateLinks(primary || relativePath);
+}
+
 function injectLanguageSwitcher($, href, label, ariaLabel) {
   $('.language-switch').remove();
   const shortLabel = href.startsWith('/en') ? 'EN' : 'AR';
@@ -983,7 +1027,8 @@ function injectLanguageSwitcher($, href, label, ariaLabel) {
 
 function updateSeo($, relativePath, locale) {
   const { arUrl, enUrl } = alternateLinks(relativePath);
-  const canonical = locale === 'en-SA' ? enUrl : arUrl;
+  const canonicalPair = canonicalUrls(relativePath);
+  const canonical = locale === 'en-SA' ? canonicalPair.enUrl : canonicalPair.arUrl;
   $('link[rel="canonical"]').attr('href', canonical);
   $('link[rel="alternate"][hreflang]').remove();
   $('head').append(`<link rel="alternate" hreflang="ar-SA" href="${arUrl}" />`);
@@ -1205,27 +1250,79 @@ function translateJsonLd($) {
   });
 }
 
+// Mirrors isNonPlaceCityLabel()/arabicPlacePhrase() in generate-site.mjs: the
+// city slot sometimes holds a delivery mode, and "{title} in Online" is the
+// English half of the same defect as "{title} \u0641\u064a \u0639\u0646 \u0628\u0639\u062f".
+const NON_PLACE_CITY_LABELS_EN = /^(?:online|virtual|remote|\u0639\u0646 \u0628\u0639\u062f|\u0639\u0646 \u0628\u064f\u0639\u062f|\u0623\u0648\u0646\u0644\u0627\u064a\u0646|\u0627\u0648\u0646\u0644\u0627\u064a\u0646|\u0627\u0641\u062a\u0631\u0627\u0636\u064a|\u0627\u0641\u062a\u0631\u0627\u0636\u064a\u0629)$/i;
+
+function englishPlacePhrase(city = '') {
+  const label = String(city).trim();
+  if (!label) return '';
+  return NON_PLACE_CITY_LABELS_EN.test(label) ? 'online' : `in ${label}`;
+}
+
+// English counterpart of the Arabic event description built in
+// renderEventDetail() (generate-site.mjs). Before this existed every one of
+// the ~1,470 English event pages shipped the same boilerplate sentence, which
+// is a duplicate-content signal on half the site and leaves Google nothing
+// event-specific to use as a snippet.
+function englishEventDescription(event) {
+  const title = event.title_en || event.title || '';
+  const city = exact[event.city] || event.city_label || event.city || 'Saudi Arabia';
+  const rawVenue = event.venue ? (exact[event.venue] || event.venue) : '';
+  const venue = rawVenue ? (stripEmbeddedLabel(rawVenue) || rawVenue) : '';
+  const starts = formatEnglishEventDate(event.starts_at);
+  const ends = formatEnglishEventDate(event.ends_at);
+  const when = starts && ends ? ` from ${starts} to ${ends}` : (starts ? ` on ${starts}` : '');
+  const where = venue && venue !== city ? ` Venue: ${venue}.` : '';
+  return `${title} ${englishPlacePhrase(city)}${when}.${where} Check the official source and live schedule on EventLive.`
+    .replace(/\s+/g, ' ')
+    .trim();
+}
+
 function englishMeta($, relativePath) {
   const originalTitle = $('title').text().trim();
+  const originalDescription = $('meta[name="description"]').attr('content') || '';
   const event = eventByPath.get(relativePath);
   if (event) {
     // Event <title> tags are chrome+content composites ("{title} \u0641\u064a {city} |
     // EventLive\u2026") that no dictionary entry can match. Rebuild the chrome in
     // English; the title text follows the autonomous content pipeline.
     const city = exact[event.city] || event.city_label || event.city || 'Saudi Arabia';
-    $('title').text(`${event.title_en || event.title} in ${city} | EventLive Saudi Arabia`);
+    const fragment = `${event.title_en || event.title} ${englishPlacePhrase(city)}`.replace(/\s+/g, ' ').trim();
+    $('title').text(`${withTitleQualifier(fragment, enTitleQualifiers.get(eventQualifierKey(event)) || '')} | EventLive Saudi Arabia`);
   } else {
+    const authoredTitle = englishSeoTitle(originalTitle, translateMetaText);
     const translatedTitle = translateMetaText(originalTitle).replace(/\s+/g, ' ').trim();
-    $('title').text(/[\u0600-\u06ff]/.test(translatedTitle) ? `${originalTitle} | EventLive Saudi Arabia` : translatedTitle);
+    if (authoredTitle) $('title').text(authoredTitle);
+    // withEnglishBrand() rather than a bare append: the Arabic title already
+    // ends in "| EventLive", and stacking the English brand on top of it is
+    // what produced "\u2026 | EventLive | EventLive Saudi Arabia".
+    else $('title').text(withEnglishBrand(/[\u0600-\u06ff]/.test(translatedTitle) ? originalTitle : translatedTitle));
   }
   const generic = relativePath.startsWith('events/')
     ? 'Verified event timing, venue, directions, live status, and official source information on EventLive Saudi Arabia.'
     : 'Discover live events, exhibitions, conferences, workshops, and training programs across Saudi Arabia on EventLive.';
-  $('meta[name="description"]').attr('content', generic);
-  $('meta[property="og:description"]').attr('content', generic);
+  // Per-page description, in descending order of specificity: rebuilt from
+  // catalog data for event pages, translated from the Arabic page for
+  // everything else, and only then the shared boilerplate \u2014 which now exists
+  // solely as the fallback for a page whose Arabic description no dictionary
+  // entry could translate.
+  let description = generic;
+  if (event) {
+    const built = englishEventDescription(event);
+    if (built && !/^[\s.]*$/.test(built)) description = built;
+  } else {
+    const authored = englishSeoDescription(originalDescription, translateMetaText);
+    const translated = translateMetaText(originalDescription).replace(/\s+/g, ' ').trim();
+    if (authored) description = authored;
+    else if (translated && !/[\u0600-\u06ff]/.test(translated)) description = translated;
+  }
+  $('meta[name="description"]').attr('content', description);
+  $('meta[property="og:description"]').attr('content', description);
   $('meta[property="og:title"]').attr('content', $('title').text());
   $('meta[name="twitter:title"]').attr('content', $('title').text());
-  $('meta[name="twitter:description"]').attr('content', generic);
+  $('meta[name="twitter:description"]').attr('content', description);
   // Share-preview images: og:image/twitter:image content is an absolute
   // https://eventme.live/... URL (see baseHead() in generate-site.mjs), so
   // rewriteEnglishAssetUrls() never sees it (it skips absolute values).
