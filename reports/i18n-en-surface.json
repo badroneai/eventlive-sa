@@ -1,19 +1,19 @@
 {
   "schema": "eventlive.i18n-en-surface.v1",
-  "generated_at": "2026-08-10T08:24:28.102Z",
-  "pages_scanned": 1603,
-  "pages_with_arabic": 491,
+  "generated_at": "2026-08-10T14:06:53.752Z",
+  "pages_scanned": 1609,
+  "pages_with_arabic": 492,
   "template_regressions": [],
   "script_template_regressions": [],
   "style_template_regressions": [],
   "recurring_surface_debt": [
     {
       "text": "../assets/event-images/الشهادة-الدولية-للحاسب-والإنترنت-ic3-a46ba6d2eb.jpg",
-      "pages": 47,
+      "pages": 48,
       "example": "events/event-1-الترشح-للدبلوم-المتوسط-في-تكنولوجيا-التعدين-والمناجم-حضوري-بالتعاون-مع.html",
       "script": true
     }
   ],
   "recurring_total": 1,
-  "content_prose_lines": 2264
+  "content_prose_lines": 2269
 }

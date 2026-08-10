@@ -1,7 +1,7 @@
 # EventLive Official Single-Session Activation
-- Generated at: 2026-08-10T08:19:30.621Z
+- Generated at: 2026-08-10T14:01:23.935Z
 - Max duration hours: 8
-- Activated: 22
+- Activated: 25
 - Skipped long events: 6
 
 | Source | Event | Duration | Type |
@@ -27,4 +27,7 @@
 | Saudi Food and Drug Authority Events | آلية تقديم طلبات الحصول على ترخيص خدمات توكيد الجودة والقياسات الاشعاعية | 1h | official-online-workshop |
 | Saudi Food and Drug Authority Events | احتياطات الأمان عند استخدام مبيدات آفات الصحة العامة | 1h | official-online-workshop |
 | Saudi Food and Drug Authority Events | دور المواصفات القياسية في دعم عمليات التعقيم والتغليف ووضع المعلومات التعريفية للمصانع المحلية | 1h | official-online-workshop |
+| Saudi Universities and Technical Colleges | Boat Bash Cruise | 6h | official-community-session |
+| Saudi Universities and Technical Colleges | Register for the World Breastfeeding Week Awareness Lecture | 2h | official-community-session |
+| Saudi Universities and Technical Colleges | Summer Splash at South Beach | 4h | official-community-session |
 | Saudi Food and Drug Authority Events | دور الهيئة العامة للغذاء و الدواء في ضمان سلامة الاستخدام الامن لجهاز الماموجرام | 1h | official-online-workshop |

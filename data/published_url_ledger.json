@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "generated_at": "2026-08-10T08:22:54.018Z",
+  "generated_at": "2026-08-10T14:05:16.153Z",
   "events": {
     "event-skill-development-initiative": {
       "identity": "skill development initiative|riyadh|2021-07-14",
@@ -1128,7 +1128,7 @@
       "last_seen": "2026-08-10"
     },
     "event-hayy-arts-from-another-angel-explore-contemporary-art-with-alternative-e": {
-      "identity": "hayy arts | from another angel, explore contemporary art with alternative exhibition tours|jeddah|2026-08-12",
+      "identity": "hayy arts | from another angle, explore contemporary art with alternative exhibition tours|jeddah|2026-08-12",
       "first_seen": "2026-08-09",
       "last_seen": "2026-08-10"
     },
@@ -1155,6 +1155,11 @@
     "event-hayy-explorers-in-august-as-told-by-the-land-routes-of-exchange": {
       "identity": "hayy explorers in august | as told by the land: routes of exchange|jeddah|2026-08-13",
       "first_seen": "2026-08-09",
+      "last_seen": "2026-08-10"
+    },
+    "event-تفعيل-بيئة-تعلم-إلكترونية-تفاعلية-بنمط-غير-متزامن": {
+      "identity": "تفعيل بيئة تعلم إلكترونية تفاعلية– بنمط غير متزامن|makkah|2026-08-13",
+      "first_seen": "2026-08-10",
       "last_seen": "2026-08-10"
     },
     "event-unstable": {
@@ -1247,6 +1252,21 @@
       "first_seen": "2026-08-02",
       "last_seen": "2026-08-10"
     },
+    "event-buraydah-international-dates-carnival-activites": {
+      "identity": "buraydah international dates carnival activites|buraydah|2026-08-20",
+      "first_seen": "2026-08-10",
+      "last_seen": "2026-08-10"
+    },
+    "event-unaizah-international-dates-carnival": {
+      "identity": "unaizah international dates carnival|buraydah|2026-08-20",
+      "first_seen": "2026-08-10",
+      "last_seen": "2026-08-10"
+    },
+    "event-boat-bash-cruise": {
+      "identity": "boat bash cruise|thuwal|2026-08-21",
+      "first_seen": "2026-08-10",
+      "last_seen": "2026-08-10"
+    },
     "event-معسكر-تصميم-تجربة-المستخدم-ux-ui": {
       "identity": "معسكر تصميم تجربة المستخدم ux\\ui|riyadh|2026-08-23",
       "first_seen": "2026-07-11",
@@ -1280,6 +1300,16 @@
     "event-manal-mohei-eldin-and-oriental-strokes": {
       "identity": "manal mohei eldin and oriental strokes|dhahran|2026-08-26",
       "first_seen": "2026-08-06",
+      "last_seen": "2026-08-10"
+    },
+    "event-register-for-the-world-breastfeeding-week-awareness-lecture": {
+      "identity": "register for the world breastfeeding week awareness lecture|thuwal|2026-08-27",
+      "first_seen": "2026-08-10",
+      "last_seen": "2026-08-10"
+    },
+    "event-summer-splash-at-south-beach": {
+      "identity": "summer splash at south beach|thuwal|2026-08-29",
+      "first_seen": "2026-08-10",
       "last_seen": "2026-08-10"
     },
     "event-hrse-ksa": {

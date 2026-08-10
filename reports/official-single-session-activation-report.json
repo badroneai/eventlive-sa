@@ -1,8 +1,8 @@
 {
-  "generated_at": "2026-08-10T08:19:30.621Z",
+  "generated_at": "2026-08-10T14:01:23.935Z",
   "max_duration_hours": 8,
   "totals": {
-    "activated": 22,
+    "activated": 25,
     "skipped_long": 6
   },
   "activated": [
@@ -194,6 +194,33 @@
       "ends_at": "2026-08-19T11:00:00+03:00",
       "duration_hours": 1,
       "session_type": "official-online-workshop"
+    },
+    {
+      "id": "event-boat-bash-cruise",
+      "title": "Boat Bash Cruise",
+      "source_label": "Saudi Universities and Technical Colleges",
+      "starts_at": "2026-08-21T14:00:00+03:00",
+      "ends_at": "2026-08-21T20:00:00+03:00",
+      "duration_hours": 6,
+      "session_type": "official-community-session"
+    },
+    {
+      "id": "event-register-for-the-world-breastfeeding-week-awareness-lecture",
+      "title": "Register for the World Breastfeeding Week Awareness Lecture",
+      "source_label": "Saudi Universities and Technical Colleges",
+      "starts_at": "2026-08-27T13:00:00+03:00",
+      "ends_at": "2026-08-27T15:00:00+03:00",
+      "duration_hours": 2,
+      "session_type": "official-community-session"
+    },
+    {
+      "id": "event-summer-splash-at-south-beach",
+      "title": "Summer Splash at South Beach",
+      "source_label": "Saudi Universities and Technical Colleges",
+      "starts_at": "2026-08-29T14:00:00+03:00",
+      "ends_at": "2026-08-29T18:00:00+03:00",
+      "duration_hours": 4,
+      "session_type": "official-community-session"
     },
     {
       "id": "event-دور-الهيئة-العامة-للغذاء-و-الدواء-في-ضمان-سلامة-الاستخدام-الامن-لجهاز-ال",

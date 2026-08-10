@@ -1,32 +1,32 @@
 # EventLive Harvest OS Status
 
-- Generated at: 2026-08-10T08:27:42.584Z
+- Generated at: 2026-08-10T14:10:14.800Z
 - Status: NEEDS_WORK
 - Operating rule: Probe before new sources; sample before full harvest; Raw collection is not publication; discovery-only never auto-publishes.
 
 ## Totals
 
 - Sources: 88
-- Candidates: 596
-- Matched candidates: 565
+- Candidates: 602
+- Matched candidates: 571
 - Auto-publish sources: 15
 - Candidate-only sources: 12
 - Partnership-required sources: 5
-- Productive sources / attempted: 21/21
-- Collector errors: 4 (chronic 4, transient 0)
+- Productive sources / attempted: 21/24
+- Collector errors: 5 (chronic 4, transient 1)
 
 ## Publication Funnel
 
 | Stage | Count |
 | --- | --- |
-| discovered_this_run | 316 |
-| candidate_queue | 596 |
-| evaluated_for_publish | 596 |
+| discovered_this_run | 321 |
+| candidate_queue | 602 |
+| evaluated_for_publish | 602 |
 | linked_existing | 552 |
-| published_new | 6 |
+| published_new | 12 |
 | blocked | 38 |
 | secondary_promoted | 0 |
-| secondary_still_blocked | 33 |
+| secondary_still_blocked | 40 |
 
 ## Blocked Reasons
 
@@ -50,7 +50,8 @@
 | moc-cultural-calendar | chronic | 21 | no | collector-error: fetch failed; fetch failed |
 | mos-events | chronic | 21 | no | collector-error: fetch failed |
 | moc-cultural-subportals | chronic | 21 | no | collector-error: fetch failed; fetch failed |
-| monshaat-events | chronic | 4 | no | collector-error: fetch failed; fetch failed |
+| monshaat-events | chronic | 5 | yes | collector-error: fetch failed; fetch failed |
+| asharqia-chamber-events | transient | 1 | yes | fetch failed; page.goto: Timeout 30000ms exceeded. Call log:   - navigating to "https://www.chamber.org.sa/sites/Arabic/Events/ChamberEvents/Pages/AllChamberEvents.aspx", waiting until "domcontentload |
 
 | Source | Policy | Trust | Gate |
 | --- | --- | --- | --- |

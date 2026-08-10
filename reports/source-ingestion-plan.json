@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-10T08:20:27.480Z",
+  "generated_at": "2026-08-10T14:02:37.749Z",
   "source_registry": "data/source_registry.json",
   "source_collection_report": "reports/source-collection-report.json",
   "totals": {
@@ -114,7 +114,7 @@
       "cadence": "twice-weekly-extractor-probe",
       "score": 91,
       "has_active_collector": false,
-      "last_collection_status": "",
+      "last_collection_status": "ok",
       "last_extracted": 0,
       "last_probe_status": "",
       "last_probe_score": -23,
@@ -347,7 +347,7 @@
       "score": 140,
       "has_active_collector": true,
       "last_collection_status": "ok",
-      "last_extracted": 26,
+      "last_extracted": 28,
       "last_probe_status": "",
       "last_probe_score": 0,
       "last_probe_recommendation": "",
@@ -507,7 +507,7 @@
       "cadence": "daily",
       "score": 133,
       "has_active_collector": true,
-      "last_collection_status": "",
+      "last_collection_status": "error",
       "last_extracted": 0,
       "last_probe_status": "",
       "last_probe_score": 0,
@@ -738,12 +738,12 @@
       "score": 123,
       "has_active_collector": true,
       "last_collection_status": "ok",
-      "last_extracted": 15,
+      "last_extracted": 17,
       "last_probe_status": "",
       "last_probe_score": 0,
       "last_probe_recommendation": "",
       "last_probe_blocked_reason": "",
-      "known_candidates": 15,
+      "known_candidates": 17,
       "next_action": "Run in the 6-hour sync ring; keep dedupe and image enrichment active."
     },
     {
@@ -1335,13 +1335,13 @@
       "cadence": "monthly-evidence-check",
       "score": 54,
       "has_active_collector": false,
-      "last_collection_status": "",
-      "last_extracted": 0,
+      "last_collection_status": "ok",
+      "last_extracted": 4,
       "last_probe_status": 200,
       "last_probe_score": 36,
       "last_probe_recommendation": "probe-hidden-api-or-html-table",
       "last_probe_blocked_reason": "",
-      "known_candidates": 1,
+      "known_candidates": 4,
       "next_action": "Latest deep probe recommends probe-hidden-api-or-html-table; build only if future date-complete rows are visible."
     },
     {
@@ -1473,7 +1473,7 @@
       "cadence": "twice-weekly-extractor-probe",
       "score": 91,
       "has_active_collector": false,
-      "last_collection_status": "",
+      "last_collection_status": "ok",
       "last_extracted": 0,
       "last_probe_status": "",
       "last_probe_score": -23,
@@ -1657,14 +1657,14 @@
       "cadence": "daily",
       "score": 71,
       "has_active_collector": true,
-      "last_collection_status": "ok",
-      "last_extracted": 3,
+      "last_collection_status": "error",
+      "last_extracted": 0,
       "last_probe_status": "",
       "last_probe_score": 0,
       "last_probe_recommendation": "",
       "last_probe_blocked_reason": "",
       "known_candidates": 3,
-      "next_action": "Run in the 6-hour sync ring; keep dedupe and image enrichment active."
+      "next_action": "Run in the 6-hour sync ring; improve zero-yield extractors before widening."
     },
     {
       "id": "qassim-chamber-events",
@@ -2054,7 +2054,7 @@
       "last_probe_score": 0,
       "last_probe_recommendation": "",
       "last_probe_blocked_reason": "",
-      "known_candidates": 49,
+      "known_candidates": 50,
       "next_action": "Run in the 6-hour sync ring; keep dedupe and image enrichment active."
     },
     {

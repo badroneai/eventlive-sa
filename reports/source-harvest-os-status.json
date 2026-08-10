@@ -1,22 +1,22 @@
 {
   "schema": "eventlive.harvest-os-status.v1",
-  "generated_at": "2026-08-10T08:27:42.584Z",
+  "generated_at": "2026-08-10T14:10:14.800Z",
   "status": "NEEDS_WORK",
   "operating_rule": "Probe before new sources; sample before full harvest; Raw collection is not publication; discovery-only never auto-publishes.",
   "totals": {
     "sources": 88,
-    "candidates": 596,
-    "matched_candidates": 565,
+    "candidates": 602,
+    "matched_candidates": 571,
     "auto_publish_sources": 15,
     "candidate_only_sources": 12,
     "partnership_required_sources": 5,
     "blocked_or_closed_sources": 0,
     "manual_review_sources": 56,
-    "collection_attempted": 21,
+    "collection_attempted": 24,
     "productive_sources": 21,
-    "collector_errors": 4,
+    "collector_errors": 5,
     "chronic_collector_errors": 4,
-    "transient_collector_errors": 0
+    "transient_collector_errors": 1
   },
   "policies": {
     "partnership_required": 5,
@@ -25,19 +25,19 @@
     "manual_review": 56
   },
   "candidates_by_gate": {
-    "catalog-review": 563,
+    "catalog-review": 569,
     "duplicate-review": 8,
     "source-evidence": 25
   },
   "funnel": {
-    "discovered_this_run": 316,
-    "candidate_queue": 596,
-    "evaluated_for_publish": 596,
+    "discovered_this_run": 321,
+    "candidate_queue": 602,
+    "evaluated_for_publish": 602,
     "linked_existing": 552,
-    "published_new": 6,
+    "published_new": 12,
     "blocked": 38,
     "secondary_promoted": 0,
-    "secondary_still_blocked": 33
+    "secondary_still_blocked": 40
   },
   "blocked_reasons": {
     "possible duplicate requires review: exact-title-city-source-conflict": 6,
@@ -76,9 +76,16 @@
     {
       "id": "monshaat-events",
       "note": "collector-error: fetch failed; fetch failed",
-      "error_streak": 4,
+      "error_streak": 5,
       "kind": "chronic",
-      "attempted_this_run": false
+      "attempted_this_run": true
+    },
+    {
+      "id": "asharqia-chamber-events",
+      "note": "fetch failed; page.goto: Timeout 30000ms exceeded. Call log:   - navigating to \"https://www.chamber.org.sa/sites/Arabic/Events/ChamberEvents/Pages/AllChamberEvents.aspx\", waiting until \"domcontentload",
+      "error_streak": 1,
+      "kind": "transient",
+      "attempted_this_run": true
     }
   ],
   "sources": [
