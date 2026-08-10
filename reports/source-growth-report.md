@@ -1,6 +1,6 @@
 # EventLive Source Growth
 
-- generated_at: 2026-08-10T02:50:43.300Z
+- generated_at: 2026-08-10T08:20:26.405Z
 - status: healthy
 - public_events: 1477
 - public_delta: 0
@@ -8,10 +8,11 @@
 - new_ended_events: 0
 - published_new: 6
 - collector_errors: 0
-- no_growth_streak: 1
+- no_growth_streak: 2
 
 | Run | Public | Delta | New candidates | New ended | Published | Errors | Status |
 |---|---:|---:|---:|---:|---:|---:|---|
+| 2026-08-10T08:09:46.267Z | 1477 | 0 | 15 | 0 | 6 | 0 | healthy |
 | 2026-08-10T02:38:54.502Z | 1477 | 0 | 15 | 0 | 6 | 0 | healthy |
 | 2026-08-09T19:20:58.392Z | 1477 | 1 | 18 | 0 | 7 | 4 | degraded |
 | 2026-08-09T13:20:07.663Z | 1476 | 1 | 20 | 0 | 7 | 1 | degraded |
@@ -23,4 +24,3 @@
 | 2026-08-08T02:25:42.278Z | 1474 | 0 | 18 | 0 | 6 | 0 | degraded |
 | 2026-08-07T19:23:32.384Z | 1474 | 0 | 36 | 0 | 6 | 0 | degraded |
 | 2026-08-07T13:57:05.542Z | 1474 | 0 | 17 | 0 | 6 | 3 | degraded |
-| 2026-08-07T07:49:39.273Z | 1474 | 0 | 16 | 0 | 6 | 1 | degraded |

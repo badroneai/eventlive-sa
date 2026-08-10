@@ -1,6 +1,6 @@
 # EventLive Source Auto Publish Report
 
-- published_at: 2026-08-10T02:47:51.168Z
+- published_at: 2026-08-10T08:17:51.727Z
 - dry_run: false
 - include_partner: true
 - candidates_seen: 596
@@ -211,10 +211,10 @@
 | candidate-ithra-events-tinkering-stations-20260810-5a2c4c0e | linked-existing | event-tinkering-stations | already linked to catalog event |
 | candidate-ithra-events-bedayat-beginnings-of-saudi-art-movement-20260810-e0a239ef | linked-existing | event-bedayat-beginnings-of-saudi-art-movement | already linked to catalog event |
 | candidate-ithra-events-echoes-of-the-familiar-20260810-cc43c2bd | linked-existing | event-echoes-of-the-familiar | already linked to catalog event |
-| candidate-ithra-events-spot-of-inspiration-20260810-5bac584c | linked-existing | event-spot-of-inspiration | already linked to catalog event |
-| candidate-ithra-events-childrens-museum-story-time-20260810-ada8b9db | linked-existing | event-childrens-museum-story-time | already linked to catalog event |
 | candidate-ithra-events-paint-like-an-artist-20260810-a67d8ec3 | linked-existing | event-paint-like-an-artist | already linked to catalog event |
 | candidate-ithra-events-childrens-art-studio-20260810-2bf92d17 | linked-existing | event-childrens-art-studio | already linked to catalog event |
+| candidate-ithra-events-spot-of-inspiration-20260810-5bac584c | linked-existing | event-spot-of-inspiration | already linked to catalog event |
+| candidate-ithra-events-childrens-museum-story-time-20260810-ada8b9db | linked-existing | event-childrens-museum-story-time | already linked to catalog event |
 | candidate-ithra-events-emboss-printing-experience-20260810-2671d1ce | linked-existing | event-emboss-printing-experience | already linked to catalog event |
 | candidate-ithra-events-family-challenges-20260810-3726c868 | linked-existing | event-family-challenges | already linked to catalog event |
 | candidate-ithra-events-energy-lab-20260810-60155d60 | linked-existing | event-energy-lab | already linked to catalog event |
