@@ -1,44 +1,45 @@
 # EventLive Harvest OS Status
 
-- Generated at: 2026-08-10T14:10:14.800Z
+- Generated at: 2026-08-10T20:04:19.603Z
 - Status: NEEDS_WORK
 - Operating rule: Probe before new sources; sample before full harvest; Raw collection is not publication; discovery-only never auto-publishes.
 
 ## Totals
 
 - Sources: 88
-- Candidates: 602
-- Matched candidates: 571
+- Candidates: 598
+- Matched candidates: 568
 - Auto-publish sources: 15
 - Candidate-only sources: 12
 - Partnership-required sources: 5
-- Productive sources / attempted: 21/24
+- Productive sources / attempted: 20/27
 - Collector errors: 5 (chronic 4, transient 1)
 
 ## Publication Funnel
 
 | Stage | Count |
 | --- | --- |
-| discovered_this_run | 321 |
-| candidate_queue | 602 |
-| evaluated_for_publish | 602 |
-| linked_existing | 552 |
-| published_new | 12 |
+| discovered_this_run | 325 |
+| candidate_queue | 598 |
+| evaluated_for_publish | 598 |
+| linked_existing | 554 |
+| published_new | 6 |
 | blocked | 38 |
 | secondary_promoted | 0 |
-| secondary_still_blocked | 40 |
+| secondary_still_blocked | 33 |
 
 ## Blocked Reasons
 
 | Reason | Count |
 | --- | --- |
-| publication gate source-evidence is not auto-publishable | 13 |
+| publication gate source-evidence is not auto-publishable | 12 |
 | unknown category requires review | 10 |
 | possible duplicate requires review: exact-title-city-source-conflict | 6 |
 | linked catalog row event-aseer-season was superseded by dedupe | 2 |
 | possible duplicate requires review: exact-title-city-venue-conflict | 2 |
 | linked catalog row event-dakah was superseded by dedupe | 1 |
 | possible duplicate already exists: event-saudi-industrial-series-2 | 1 |
+| possible duplicate already exists: event-hvac-r-saudi-arabia | 1 |
 | possible duplicate already exists: event-leap-2026 | 1 |
 | linked catalog row event-feena-nehke-stand-up-comedy-by-john-achkar was superseded by dedupe | 1 |
 | linked catalog row event-music-festival-mdlbeast-soundstorm was superseded by dedupe | 1 |
@@ -47,11 +48,11 @@
 
 | Source | Kind | Failed runs in a row | Attempted this run | Reason |
 | --- | --- | --- | --- | --- |
-| moc-cultural-calendar | chronic | 21 | no | collector-error: fetch failed; fetch failed |
-| mos-events | chronic | 21 | no | collector-error: fetch failed |
-| moc-cultural-subportals | chronic | 21 | no | collector-error: fetch failed; fetch failed |
-| monshaat-events | chronic | 5 | yes | collector-error: fetch failed; fetch failed |
-| asharqia-chamber-events | transient | 1 | yes | fetch failed; page.goto: Timeout 30000ms exceeded. Call log:   - navigating to "https://www.chamber.org.sa/sites/Arabic/Events/ChamberEvents/Pages/AllChamberEvents.aspx", waiting until "domcontentload |
+| moc-cultural-calendar | chronic | 22 | yes | collector-error: fetch failed; fetch failed |
+| mos-events | chronic | 22 | yes | collector-error: fetch failed |
+| moc-cultural-subportals | chronic | 22 | yes | collector-error: fetch failed; fetch failed |
+| monshaat-events | chronic | 5 | no | collector-error: fetch failed; fetch failed |
+| saudi-space-agency-events | transient | 1 | yes | fetch failed |
 
 | Source | Policy | Trust | Gate |
 | --- | --- | --- | --- |

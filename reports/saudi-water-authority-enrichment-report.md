@@ -1,6 +1,6 @@
 # Saudi Water Authority Enrichment Report
 
-- generated_at: 2026-08-10T14:00:34.403Z
+- generated_at: 2026-08-10T19:54:48.700Z
 - targets: 7
 - candidates: 8
 - enriched: 7

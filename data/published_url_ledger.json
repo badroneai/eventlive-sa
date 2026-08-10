@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "generated_at": "2026-08-10T14:05:16.153Z",
+  "generated_at": "2026-08-10T19:59:17.588Z",
   "events": {
     "event-skill-development-initiative": {
       "identity": "skill development initiative|riyadh|2021-07-14",
@@ -1022,11 +1022,6 @@
       "first_seen": "2026-07-11",
       "last_seen": "2026-08-10"
     },
-    "event-1-الترشح-للدبلوم-المتوسط-في-تكنولوجيا-التعدين-والمناجم-حضوري-بالتعاون-مع": {
-      "identity": "1. الترشح للدبلوم المتوسط في تكنولوجيا التعدين والمناجم (حضوري) بالتعاون مع معهد الدراسات والخدمات الاستشارية بجامعة الإمام عبد الرحمن بن فيصل|makkah|2026-08-04",
-      "first_seen": "2026-08-04",
-      "last_seen": "2026-08-10"
-    },
     "event-tangram": {
       "identity": "tangram|dhahran|2026-08-04",
       "first_seen": "2026-07-11",
@@ -1040,11 +1035,6 @@
     "event-الترشح-للدبلوم-المتوسط-في-البرمجة-وعلوم-الحاسب-في-الجبيل-بالتعاون-مع-كلي": {
       "identity": "الترشح للدبلوم المتوسط في البرمجة وعلوم الحاسب في الجبيل بالتعاون مع كليات الفيحاء الأهلية|makkah|2026-08-05",
       "first_seen": "2026-08-04",
-      "last_seen": "2026-08-10"
-    },
-    "event-jameel-library-august-community-programmes": {
-      "identity": "jameel library | august community programmes|jeddah|2026-08-05",
-      "first_seen": "2026-07-27",
       "last_seen": "2026-08-10"
     },
     "event-الترشح-للدبلوم-المتوسط-في-التصميم-الجرافيكي-والوسائط-الرقمية-حضوري-بالتع": {
@@ -1069,11 +1059,6 @@
     },
     "event-machine-learning-التعلم-الالي": {
       "identity": "machine learning - التعلم الالي|online|2026-08-09",
-      "first_seen": "2026-08-01",
-      "last_seen": "2026-08-10"
-    },
-    "event-genai-for-data-analysis-and-decision-support-الذكاء-الاصطناعي-التوليدي-ل": {
-      "identity": "genai for data analysis and decision support - الذكاء الاصطناعي التوليدي لتحليل البيانات ودعم اتخاذ القرار|online|2026-08-09",
       "first_seen": "2026-08-01",
       "last_seen": "2026-08-10"
     },
@@ -1160,11 +1145,6 @@
     "event-تفعيل-بيئة-تعلم-إلكترونية-تفاعلية-بنمط-غير-متزامن": {
       "identity": "تفعيل بيئة تعلم إلكترونية تفاعلية– بنمط غير متزامن|makkah|2026-08-13",
       "first_seen": "2026-08-10",
-      "last_seen": "2026-08-10"
-    },
-    "event-unstable": {
-      "identity": "unstable|riyadh|2026-08-14",
-      "first_seen": "2026-07-11",
       "last_seen": "2026-08-10"
     },
     "event-concert-mohamed-hamaki": {
@@ -2737,6 +2717,11 @@
       "first_seen": "2026-07-16",
       "last_seen": "2026-08-10"
     },
+    "event-genai-for-data-analysis-and-decision-support-الذكاء-الاصطناعي-التوليدي-ل": {
+      "identity": "genai for data analysis and decision support - الذكاء الاصطناعي التوليدي لتحليل البيانات ودعم اتخاذ القرار|online|2026-08-09",
+      "first_seen": "2026-08-01",
+      "last_seen": "2026-08-10"
+    },
     "event-beast-house": {
       "identity": "beast house|riyadh|2026-08-07",
       "first_seen": "2026-07-11",
@@ -2745,6 +2730,11 @@
     "event-hussain-moheb-live-in-riyadh": {
       "identity": "hussain moheb live in riyadh|riyadh|2026-08-07",
       "first_seen": "2026-07-14",
+      "last_seen": "2026-08-10"
+    },
+    "event-unstable": {
+      "identity": "unstable|riyadh|2026-08-07",
+      "first_seen": "2026-07-11",
       "last_seen": "2026-08-10"
     },
     "event-التشكيل-الحر": {
@@ -2772,9 +2762,19 @@
       "first_seen": "2026-07-14",
       "last_seen": "2026-08-10"
     },
+    "event-jameel-library-august-community-programmes": {
+      "identity": "jameel library | august community programmes|jeddah|2026-08-05",
+      "first_seen": "2026-07-27",
+      "last_seen": "2026-08-10"
+    },
     "event-ورود-الشانيل": {
       "identity": "ورود الشانيل|online|2026-08-04",
       "first_seen": "2026-08-03",
+      "last_seen": "2026-08-10"
+    },
+    "event-1-الترشح-للدبلوم-المتوسط-في-تكنولوجيا-التعدين-والمناجم-حضوري-بالتعاون-مع": {
+      "identity": "1. الترشح للدبلوم المتوسط في تكنولوجيا التعدين والمناجم (حضوري) بالتعاون مع معهد الدراسات والخدمات الاستشارية بجامعة الإمام عبد الرحمن بن فيصل|makkah|2026-08-04",
+      "first_seen": "2026-08-04",
       "last_seen": "2026-08-10"
     },
     "event-the-almost-perfect-guide-to-event-management": {

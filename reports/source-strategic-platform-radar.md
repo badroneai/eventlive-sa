@@ -1,6 +1,6 @@
 # Strategic Platform Source Radar
 
-Generated at: 2026-08-09T19:07:22.559Z
+Generated at: 2026-08-10T19:27:21.362Z
 
 Policy: evidence refresh, API-surface mapping, and source strategy only. This radar does not auto-publish catalog events.
 
@@ -51,8 +51,8 @@ Policy: evidence refresh, API-surface mapping, and source strategy only. This ra
 - Project use: Keep in the 6-hour source ring; Arabic and English API payloads are reachable and useful for tourism-facing event discovery.
 - Title: تقويم السعودية | تابع العطلات والفعاليات المميزة - الموقع الرسمي للسياحة السعودية
 - Hint URLs: https://assets.adobedtm.com, https://connect.facebook.net/, https://tpc.googlesyndication.com, https://pagead2.googlesyndication.com, https://www.facebook.com, https://platform.twitter.com/, https://staticxx.facebook.com, https://scth.scene7.com
-  - API 200 https://www.visitsaudi.com/bin/api/v3/events?locale=ar: 27 items; معرض اللغة العربية للطفل, معرض اللغة العربية 28, كنوز غارقة, سمره, مهرجان صوت أبها SAF
-  - API 200 https://www.visitsaudi.com/bin/api/v3/events?locale=en: 27 items; Arabic Language Exhibition for kids, Arabic Language Exhibition 28, Sunken Treasures, Sammrah, Sound of Abha Fest (SAF)
+  - API 200 https://www.visitsaudi.com/bin/api/v3/events?locale=ar: 28 items; معرض اللغة العربية للطفل, معرض اللغة العربية 28, كنوز غارقة, سمره, مهرجان صوت أبها SAF
+  - API 200 https://www.visitsaudi.com/bin/api/v3/events?locale=en: 28 items; Arabic Language Exhibition for kids, Arabic Language Exhibition 28, Sunken Treasures, Sammrah, Sound of Abha Fest (SAF)
 
 ### webook Explore
 
@@ -61,10 +61,10 @@ Policy: evidence refresh, API-surface mapping, and source strategy only. This ra
 - Classification: protected (200, fetch)
 - Project use: Use for lead discovery, ticket-link corroboration, and duplicate checks; require official organizer or authority confirmation before promotion.
 - Title: -
-- Hint URLs: https://apps.apple.com/sa/app/webook-com-fun-things-to-do/id6468667896, https://play.google.com/store/apps/details?id=com.webook.android, https://wbk-assets.webook.com/0.7.11/assets/index-Cj989ayE.js, https://wbk-assets.webook.com/0.7.11/assets/vendor-CWjaaAIG.js, https://wbk-assets.webook.com/0.7.11/assets/@wbk/hooks-qc90xnGh.js, https://wbk-assets.webook.com/0.7.11/assets/@wbk/logger-DfNVpG3P.js, https://wbk-assets.webook.com/0.7.11/assets/@wbk/api-Dv__OP15.js, https://wbk-assets.webook.com/0.7.11/assets/@wbk/config-V13xFo0-.js
-  - Asset 200 api-Dv__OP15.js: https://github.com/nadude/webook-frontend/blob/main/packages/api/README.md, https://webook.com/shop, https://www.recaptcha.net/recaptcha/api.js?render=${f.config.grecaptcha.v3Key}, https://wbk-assets.webook.com/event-tickets-prerequisite?event_id=${t}, https://wbk-assets.webook.com/organizations/$%7Br%7D/event-group/details, https://wbk-assets.webook.com/event-marketing-fee?event_id=${t}&utm_wid=${r}&lang=${a}
-  - Asset 200 ticketing-DtqdOK7n.js: https://github.com/nadude/webook-frontend/blob/main/packages/ticketing/README.md, https://cdn-{region}.seatsio.net/chart.js, https://chart.seatcloud.com/v1.0/chart.js, https://wbk.zendesk.com/hc/${i}, https://wbk.zendesk.com/hc/${n}, https://wa.me/${o.replace(/\D/g,
-  - Asset 200 config-V13xFo0-.js: https://apps.apple.com/us/app/webook-com-fun-things-to-do/id6468667896, https://play.google.com/store/apps/details?id=com.webook.android, https://appgallery.huawei.com/app/C109536445, https://wbk.it/app
+- Hint URLs: https://apps.apple.com/sa/app/webook-com-fun-things-to-do/id6468667896, https://play.google.com/store/apps/details?id=com.webook.android, https://wbk-assets.webook.com/0.7.11/assets/index-Cq48ahUD.js, https://wbk-assets.webook.com/0.7.11/assets/vendor-CWjaaAIG.js, https://wbk-assets.webook.com/0.7.11/assets/@wbk/hooks-oQQMmTZr.js, https://wbk-assets.webook.com/0.7.11/assets/@wbk/logger-DfNVpG3P.js, https://wbk-assets.webook.com/0.7.11/assets/@wbk/api-Y3LEisSm.js, https://wbk-assets.webook.com/0.7.11/assets/@wbk/config-D4E_9Aya.js
+  - Asset 200 api-Y3LEisSm.js: https://github.com/nadude/webook-frontend/blob/main/packages/api/README.md, https://webook.com/shop, https://www.recaptcha.net/recaptcha/api.js?render=${f.config.grecaptcha.v3Key}, https://wbk-assets.webook.com/event-tickets-prerequisite?event_id=${t}, https://wbk-assets.webook.com/organizations/$%7Br%7D/event-group/details, https://wbk-assets.webook.com/event-marketing-fee?event_id=${t}&utm_wid=${r}&lang=${a}
+  - Asset 200 ticketing-BNxl326h.js: https://github.com/nadude/webook-frontend/blob/main/packages/ticketing/README.md, https://cdn-{region}.seatsio.net/chart.js, https://chart.seatcloud.com/v1.0/chart.js, https://wbk.zendesk.com/hc/${i}, https://wbk.zendesk.com/hc/${n}, https://wa.me/${o.replace(/\D/g,
+  - Asset 200 config-D4E_9Aya.js: https://apps.apple.com/us/app/webook-com-fun-things-to-do/id6468667896, https://play.google.com/store/apps/details?id=com.webook.android, https://appgallery.huawei.com/app/C109536445, https://wbk.it/app
 
 ### Enjoy Saudi
 

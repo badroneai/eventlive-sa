@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-10T13:49:51.024Z",
+  "generated_at": "2026-08-10T19:41:22.061Z",
   "source_registry": "data/source_registry.json",
   "collection_report": "reports/source-collection-report.json",
   "output_dir": "data/raw/browser-probes",
@@ -8,67 +8,19 @@
     "scope": "priority",
     "limit": 8,
     "probed_this_run": 0,
-    "fresh_results_available": 1,
+    "fresh_results_available": 0,
     "wait_ms": 4500,
     "timeout_ms": 30000,
     "failure_cooldown_hours": 72
   },
   "methodology": "Browser-level probe inspired by cafe platform work: classify fetchability, hydration payloads, network APIs, structured HTML, rendered DOM, and policy-protected lanes before writing extractors.",
   "totals": {
-    "probed": 1,
+    "probed": 0,
     "browser_network_api": 0,
     "browser_hydration_payload": 0,
     "rendered_html_candidates": 0,
     "blocked_or_protected": 0,
     "policy_skipped": 0
   },
-  "sources": [
-    {
-      "id": "saudi-space-agency-events",
-      "probed_at": "2026-08-10T02:38:54.290Z",
-      "name": "Saudi Space Agency Events",
-      "priority": 32,
-      "url": "https://ssa.gov.sa/APIGW/en/api/EventsSearch/SearchEvents",
-      "final_url": "https://ssa.gov.sa/APIGW/en/api/EventsSearch/SearchEvents",
-      "status": "ok",
-      "http_status": 405,
-      "navigation_error": "",
-      "duration_ms": 6912,
-      "classification": "empty-or-shell",
-      "next_action": "اعتبرها shell وابحث عن API أو مسار بديل قبل أي collector.",
-      "title": "",
-      "text_bytes": 536,
-      "html_bytes": 687,
-      "html_snapshot": "data/raw/browser-probes/saudi-space-agency-events-2026-08-10T02-38-46-773Z.html",
-      "screenshot": "data/raw/browser-probes/saudi-space-agency-events-2026-08-10T02-38-46-773Z.png",
-      "signals": {
-        "has_next_data": false,
-        "has_nuxt": false,
-        "has_json_ld": false,
-        "has_event_schema": false,
-        "date_snippets": [],
-        "event_like_links": []
-      },
-      "script_signals": {
-        "next_data_scripts": 0,
-        "nuxt_scripts": 0,
-        "json_ld_scripts": 0,
-        "large_inline_scripts": 0
-      },
-      "network_total": 1,
-      "network_endpoints": [],
-      "network_sample": [
-        {
-          "method": "GET",
-          "status": 405,
-          "url": "https://ssa.gov.sa/APIGW/en/api/EventsSearch/SearchEvents",
-          "content_type": "text/plain",
-          "resource_type": "document",
-          "request_post_data": "",
-          "response_shape": "text",
-          "preview": "Status Code: 405; Method Not Allowed"
-        }
-      ]
-    }
-  ]
+  "sources": []
 }
