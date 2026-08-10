@@ -1,32 +1,32 @@
 # EventLive Harvest OS Status
 
-- Generated at: 2026-08-09T19:44:23.119Z
+- Generated at: 2026-08-10T02:57:58.435Z
 - Status: NEEDS_WORK
 - Operating rule: Probe before new sources; sample before full harvest; Raw collection is not publication; discovery-only never auto-publishes.
 
 ## Totals
 
 - Sources: 88
-- Candidates: 597
-- Matched candidates: 566
+- Candidates: 596
+- Matched candidates: 565
 - Auto-publish sources: 15
 - Candidate-only sources: 12
 - Partnership-required sources: 5
-- Productive sources / attempted: 22/29
-- Collector errors: 5 (chronic 4, transient 1)
+- Productive sources / attempted: 21/24
+- Collector errors: 4 (chronic 4, transient 0)
 
 ## Publication Funnel
 
 | Stage | Count |
 | --- | --- |
-| discovered_this_run | 383 |
-| candidate_queue | 597 |
-| evaluated_for_publish | 597 |
+| discovered_this_run | 318 |
+| candidate_queue | 596 |
+| evaluated_for_publish | 596 |
 | linked_existing | 552 |
-| published_new | 7 |
+| published_new | 6 |
 | blocked | 38 |
 | secondary_promoted | 0 |
-| secondary_still_blocked | 35 |
+| secondary_still_blocked | 33 |
 
 ## Blocked Reasons
 
@@ -47,11 +47,10 @@
 
 | Source | Kind | Failed runs in a row | Attempted this run | Reason |
 | --- | --- | --- | --- | --- |
-| moc-cultural-calendar | chronic | 21 | yes | collector-error: fetch failed; fetch failed |
-| mos-events | chronic | 21 | yes | collector-error: fetch failed |
-| moc-cultural-subportals | chronic | 21 | yes | collector-error: fetch failed; fetch failed |
+| moc-cultural-calendar | chronic | 21 | no | collector-error: fetch failed; fetch failed |
+| mos-events | chronic | 21 | no | collector-error: fetch failed |
+| moc-cultural-subportals | chronic | 21 | no | collector-error: fetch failed; fetch failed |
 | monshaat-events | chronic | 4 | no | collector-error: fetch failed; fetch failed |
-| saudi-space-agency-events | transient | 1 | yes | fetch failed |
 
 | Source | Policy | Trust | Gate |
 | --- | --- | --- | --- |

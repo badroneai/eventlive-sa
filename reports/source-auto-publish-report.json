@@ -1,18 +1,18 @@
 {
-  "published_at": "2026-08-09T19:33:35.595Z",
+  "published_at": "2026-08-10T02:47:51.168Z",
   "dry_run": false,
   "include_partner": true,
   "source_candidates": "data/source_candidates.json",
   "events_catalog": "data/events_catalog.json",
-  "candidates_seen": 597,
+  "candidates_seen": 596,
   "totals": {
-    "candidates_seen": 597,
-    "published": 7,
+    "candidates_seen": 596,
+    "published": 6,
     "linked_existing": 552,
     "blocked": 38,
     "duplicate_review_alerts": 8,
     "category_fallback_alerts": 0,
-    "reconciled": 559
+    "reconciled": 558
   },
   "category_fallback_alerts": [],
   "duplicate_catalog_rows_removed": 0,
@@ -193,11 +193,6 @@
       "candidate_id": "candidate-visit-saudi-calendar-pdf-عروض-الفنون-الأدائية-التقليدية-20260706-4a38d19e",
       "event_id": "event-عروض-الفنون-الأدائية-التقليدية",
       "title": "عروض الفنون الأدائية التقليدية"
-    },
-    {
-      "candidate_id": "candidate-hayy-jameel-events-hayy-arts-from-another-angel-explore-contemporary-art-with-alternative-e-20260812-3abe9558",
-      "event_id": "event-hayy-arts-from-another-angel-explore-contemporary-art-with-alternative-e",
-      "title": "Hayy Arts | From Another Angel, explore contemporary art with alternative exhibition tours"
     }
   ],
   "linked_existing": [
@@ -511,12 +506,6 @@
       "candidate_id": "candidate-visit-saudi-calendar-pdf-منطقة-مشجعي-كأس-العالم-2026-في-فندق-كيمبتون-كافد-20260611-4a38d19e",
       "event_id": "event-world-cup-2026-fan-zone-at-kimpton-kafd",
       "title": "منطقة مشجعي كأس العالم 2026 في فندق كيمبتون كافد",
-      "reason": "already linked to catalog event"
-    },
-    {
-      "candidate_id": "candidate-riyadh-city-events-world-cup-2026-fan-zone-at-kimpton-kafd-20260611-5af6b715",
-      "event_id": "event-world-cup-2026-fan-zone-at-kimpton-kafd",
-      "title": "World Cup 2026 Fan Zone at Kimpton KAFD",
       "reason": "already linked to catalog event"
     },
     {
@@ -1462,6 +1451,12 @@
       "reason": "already linked to catalog event"
     },
     {
+      "candidate_id": "candidate-hayy-jameel-events-hayy-arts-from-another-angel-explore-contemporary-art-with-alternative-e-20260812-3abe9558",
+      "event_id": "event-hayy-arts-from-another-angel-explore-contemporary-art-with-alternative-e",
+      "title": "Hayy Arts | From Another Angel, explore contemporary art with alternative exhibition tours",
+      "reason": "already linked to catalog event"
+    },
+    {
       "candidate_id": "candidate-ithra-events-all-things-hedgehogs-20260812-952dc936",
       "event_id": "event-all-things-hedgehogs",
       "title": "All Things Hedgehogs",
@@ -1561,7 +1556,7 @@
       "candidate_id": "candidate-mdlbeast-events-unstable-20260814-5647df2e",
       "event_id": "event-unstable",
       "title": "Unstable",
-      "reason": "trusted duplicate linked to existing catalog event"
+      "reason": "already linked to catalog event"
     },
     {
       "candidate_id": "candidate-discover-aseer-events-concert-mohamed-hamaki-20260814-b2b9dfdb",
