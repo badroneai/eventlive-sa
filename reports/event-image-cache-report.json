@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-11T14:00:18.630Z",
+  "generated_at": "2026-08-11T19:58:51.838Z",
   "events_file": "dist/events.json",
   "manifest": "data/event_image_cache_manifest.json",
   "image_dir": "dist/assets/event-images",
@@ -9,7 +9,7 @@
     "fetched": 0,
     "reused": 497,
     "failed": 3,
-    "skipped_recent_failures": 3,
+    "skipped_recent_failures": 0,
     "remembered_failures": 6
   },
   "fetched": [],
@@ -522,7 +522,7 @@
     {
       "source_url": "https://uqu.edu.sa/assets/images/uqu-gate.jpeg",
       "file": "dist/assets/event-images/الشهادة-الدولية-للحاسب-والإنترنت-ic3-a46ba6d2eb.jpg",
-      "events": 53
+      "events": 54
     },
     {
       "source_url": "https://www.ithra.com/application/files/cache/thumbnails/5d9089ccc5309c4c20ca0c1099df3ab1.jpg",
@@ -705,11 +705,6 @@
       "events": 1
     },
     {
-      "source_url": "https://www.ithra.com/application/files/cache/thumbnails/c4dead970ab3d5a09db3eb2c1e888b8a.jpg",
-      "file": "dist/assets/event-images/أعضاء-الجولة-e68ad1c393.jpg",
-      "events": 1
-    },
-    {
       "source_url": "https://www.ithra.com/application/files/cache/thumbnails/5220b80aaa7e087afc6b0ee18cc23ba3.png",
       "file": "dist/assets/event-images/creative-character-design-f8b2d539d8.png",
       "events": 1
@@ -717,11 +712,6 @@
     {
       "source_url": "https://www.ithra.com/application/files/cache/thumbnails/23c2f82febdcbf4e7caf404feb7f3f5e.jpg",
       "file": "dist/assets/event-images/بطولة-إثراء-للشطرنج-cc14291494.jpg",
-      "events": 1
-    },
-    {
-      "source_url": "https://www.ithra.com/application/files/cache/thumbnails/5c8313b3714c56cee2cdb36d8c6247ab.jpg",
-      "file": "dist/assets/event-images/موكشا-6a8b1cb067.jpg",
       "events": 1
     },
     {
@@ -1965,6 +1955,16 @@
       "events": 1
     },
     {
+      "source_url": "https://www.ithra.com/application/files/cache/thumbnails/5c8313b3714c56cee2cdb36d8c6247ab.jpg",
+      "file": "dist/assets/event-images/موكشا-6a8b1cb067.jpg",
+      "events": 1
+    },
+    {
+      "source_url": "https://www.ithra.com/application/files/cache/thumbnails/c4dead970ab3d5a09db3eb2c1e888b8a.jpg",
+      "file": "dist/assets/event-images/أعضاء-الجولة-e68ad1c393.jpg",
+      "events": 1
+    },
+    {
       "source_url": "https://www.sfda.gov.sa/sites/default/files/2026-07/wr345.jpg",
       "file": "dist/assets/event-images/الاستخدام-الآمن-لأجهزة-الأشعة-والتصوير-الطبي-داخل-مرافق-الرعاية-الصحية-af021c2ccb.jpg",
       "events": 3
@@ -2502,58 +2502,32 @@
   ],
   "rejected_removed": [],
   "missing_removed": [],
-  "skipped_recent_failures": [
-    {
-      "source_url": "https://cdn.rfecc.sa/wp-content/uploads/mec/qr_898ea2449274454e42895b52b18c6f68.png",
-      "events": 1,
-      "reason": "HTTP 403",
-      "failure_kind": "access-denied",
-      "retry_after": "2026-08-11T19:56:32.243Z",
-      "skipped": true
-    },
-    {
-      "source_url": "https://api.riyadh.sa/sites/default/files/styles/medium/public/2026-07/er%20%2859%29.jpg?itok=a33APdGm",
-      "events": 1,
-      "reason": "not-image text/html; charset=utf-8",
-      "failure_kind": "source-returned-html",
-      "retry_after": "2026-08-11T19:56:32.243Z",
-      "skipped": true
-    },
-    {
-      "source_url": "https://s7g10.scene7.com/is/image/rcu/fei2:landscape-16x9?$Responsive$&fit=stretch&fmt=webp&wid=1920",
-      "events": 1,
-      "reason": "HTTP 403",
-      "failure_kind": "access-denied",
-      "retry_after": "2026-08-11T19:56:32.243Z",
-      "skipped": true
-    }
-  ],
+  "skipped_recent_failures": [],
   "failed": [
     {
       "source_url": "https://cdn.rfecc.sa/wp-content/uploads/mec/qr_898ea2449274454e42895b52b18c6f68.png",
       "events": 1,
       "reason": "HTTP 403",
       "failure_kind": "access-denied",
-      "retry_after": "2026-08-11T19:56:32.243Z",
-      "skipped": true
-    },
-    {
-      "source_url": "https://api.riyadh.sa/sites/default/files/styles/medium/public/2026-07/er%20%2859%29.jpg?itok=a33APdGm",
-      "events": 1,
-      "reason": "not-image text/html; charset=utf-8",
-      "failure_kind": "source-returned-html",
-      "retry_after": "2026-08-11T19:56:32.243Z",
-      "skipped": true
+      "retry_after": "2026-08-12T19:58:51.838Z"
     },
     {
       "source_url": "https://s7g10.scene7.com/is/image/rcu/fei2:landscape-16x9?$Responsive$&fit=stretch&fmt=webp&wid=1920",
       "events": 1,
       "reason": "HTTP 403",
       "failure_kind": "access-denied",
-      "retry_after": "2026-08-11T19:56:32.243Z",
-      "skipped": true
+      "retry_after": "2026-08-12T19:58:51.838Z"
+    },
+    {
+      "source_url": "https://api.riyadh.sa/sites/default/files/styles/medium/public/2026-07/er%20%2859%29.jpg?itok=a33APdGm",
+      "events": 1,
+      "reason": "not-image text/html; charset=utf-8",
+      "failure_kind": "source-returned-html",
+      "retry_after": "2026-08-12T19:58:51.838Z"
     }
   ],
-  "requires_rebuild": false,
-  "rebuild_reasons": []
+  "requires_rebuild": true,
+  "rebuild_reasons": [
+    "new-failures:3"
+  ]
 }

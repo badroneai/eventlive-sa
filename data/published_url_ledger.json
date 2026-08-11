@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "generated_at": "2026-08-11T14:02:46.411Z",
+  "generated_at": "2026-08-11T20:01:54.989Z",
   "events": {
     "event-skill-development-initiative": {
       "identity": "skill development initiative|riyadh|2021-07-14",
@@ -662,11 +662,6 @@
       "first_seen": "2026-07-11",
       "last_seen": "2026-08-11"
     },
-    "event-english-children-book-club-7-9": {
-      "identity": "english children book club (7-9)|dhahran|2026-07-14",
-      "first_seen": "2026-07-11",
-      "last_seen": "2026-08-11"
-    },
     "event-english-children-book-club-10-12": {
       "identity": "english children book club (10 - 12)|dhahran|2026-07-15",
       "first_seen": "2026-07-11",
@@ -1087,11 +1082,6 @@
       "first_seen": "2026-07-11",
       "last_seen": "2026-08-11"
     },
-    "event-ithra-members-tour": {
-      "identity": "ithra members tour|dhahran|2026-08-11",
-      "first_seen": "2026-08-04",
-      "last_seen": "2026-08-11"
-    },
     "event-creative-character-design": {
       "identity": "creative character design|dhahran|2026-08-11",
       "first_seen": "2026-07-11",
@@ -1099,11 +1089,6 @@
     },
     "event-ithra-chess-tournament": {
       "identity": "ithra chess tournament|dhahran|2026-08-11",
-      "first_seen": "2026-07-27",
-      "last_seen": "2026-08-11"
-    },
-    "event-moksha": {
-      "identity": "moksha|dhahran|2026-08-11",
       "first_seen": "2026-07-27",
       "last_seen": "2026-08-11"
     },
@@ -2407,6 +2392,11 @@
       "first_seen": "2026-08-04",
       "last_seen": "2026-08-11"
     },
+    "event-دبلوم-إدارة-المشاريع": {
+      "identity": "دبلوم إدارة المشاريع|makkah|2026-12-31",
+      "first_seen": "2026-08-11",
+      "last_seen": "2026-08-11"
+    },
     "event-الترشح-للدبلوم-المتوسط-في-المحاسبة-المالية-في-الجبيل-بالتعاون-مع-كليات-ا": {
       "identity": "الترشح للدبلوم المتوسط في المحاسبة المالية في الجبيل بالتعاون مع كليات الفيحاء الأهلية|makkah|2026-12-31",
       "first_seen": "2026-08-04",
@@ -2735,6 +2725,16 @@
     "event-space-debris-conference-2028": {
       "identity": "space debris conference 2028|riyadh|2028-02-15",
       "first_seen": "2026-08-06",
+      "last_seen": "2026-08-11"
+    },
+    "event-moksha": {
+      "identity": "moksha|dhahran|2026-08-11",
+      "first_seen": "2026-07-27",
+      "last_seen": "2026-08-11"
+    },
+    "event-ithra-members-tour": {
+      "identity": "ithra members tour|dhahran|2026-08-11",
+      "first_seen": "2026-08-04",
       "last_seen": "2026-08-11"
     },
     "event-الأجهزة-الطبية-الرقمية-التوعية-بالمتطلبات-التنظيمية-وأفضل-الممارسات": {
@@ -3239,6 +3239,11 @@
     },
     "event-semi-finals-join-the-celebration-at-the-fifa-fan-zone": {
       "identity": "semi-finals: join the celebration at the fifa fan zone|thuwal|2026-07-14",
+      "first_seen": "2026-07-11",
+      "last_seen": "2026-08-11"
+    },
+    "event-english-children-book-club-7-9": {
+      "identity": "english children book club (7-9)|dhahran|2026-07-14",
       "first_seen": "2026-07-11",
       "last_seen": "2026-08-11"
     },

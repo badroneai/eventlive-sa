@@ -1,18 +1,18 @@
 {
-  "published_at": "2026-08-11T13:56:09.755Z",
+  "published_at": "2026-08-11T19:55:32.962Z",
   "dry_run": false,
   "include_partner": true,
   "source_candidates": "data/source_candidates.json",
   "events_catalog": "data/events_catalog.json",
-  "candidates_seen": 602,
+  "candidates_seen": 601,
   "totals": {
-    "candidates_seen": 602,
-    "published": 6,
-    "linked_existing": 558,
+    "candidates_seen": 601,
+    "published": 7,
+    "linked_existing": 556,
     "blocked": 38,
     "duplicate_review_alerts": 8,
     "category_fallback_alerts": 0,
-    "reconciled": 564
+    "reconciled": 563
   },
   "category_fallback_alerts": [],
   "duplicate_catalog_rows_removed": 0,
@@ -193,6 +193,11 @@
       "candidate_id": "candidate-visit-saudi-calendar-pdf-عروض-الفنون-الأدائية-التقليدية-20260706-4a38d19e",
       "event_id": "event-عروض-الفنون-الأدائية-التقليدية",
       "title": "عروض الفنون الأدائية التقليدية"
+    },
+    {
+      "candidate_id": "candidate-umm-al-qura-events-دبلوم-إدارة-المشاريع-20261231-babac01b",
+      "event_id": "event-دبلوم-إدارة-المشاريع",
+      "title": "دبلوم إدارة المشاريع"
     }
   ],
   "linked_existing": [
@@ -1229,30 +1234,6 @@
       "reason": "already linked to catalog event"
     },
     {
-      "candidate_id": "candidate-ithra-events-ithra-art-prize-exhibition-20260811-83c2ab55",
-      "event_id": "event-ithra-art-prize-exhibition",
-      "title": "Ithra Art Prize Exhibition",
-      "reason": "already linked to catalog event"
-    },
-    {
-      "candidate_id": "candidate-ithra-events-printing-house-20260811-e56f4f89",
-      "event_id": "event-printing-house",
-      "title": "Printing House",
-      "reason": "already linked to catalog event"
-    },
-    {
-      "candidate_id": "candidate-ithra-events-tafasahu-make-room-20260811-562bc61d",
-      "event_id": "event-tafasahu-make-room",
-      "title": "Tafasahu: Make Room",
-      "reason": "already linked to catalog event"
-    },
-    {
-      "candidate_id": "candidate-ithra-events-tinkering-stations-20260811-5a2c4c0e",
-      "event_id": "event-tinkering-stations",
-      "title": "Tinkering Stations",
-      "reason": "already linked to catalog event"
-    },
-    {
       "candidate_id": "candidate-ithra-events-bedayat-beginnings-of-saudi-art-movement-20260811-e0a239ef",
       "event_id": "event-bedayat-beginnings-of-saudi-art-movement",
       "title": "Bedayat: Beginnings of Saudi Art Movement",
@@ -1262,72 +1243,6 @@
       "candidate_id": "candidate-ithra-events-echoes-of-the-familiar-20260811-cc43c2bd",
       "event_id": "event-echoes-of-the-familiar",
       "title": "Echoes of the Familiar",
-      "reason": "already linked to catalog event"
-    },
-    {
-      "candidate_id": "candidate-ithra-events-chess-hub-20260811-4919439a",
-      "event_id": "event-chess-hub",
-      "title": "Chess Hub",
-      "reason": "already linked to catalog event"
-    },
-    {
-      "candidate_id": "candidate-ithra-events-energy-lab-20260811-60155d60",
-      "event_id": "event-energy-lab",
-      "title": "Energy Lab",
-      "reason": "already linked to catalog event"
-    },
-    {
-      "candidate_id": "candidate-ithra-events-creative-character-design-20260811-afddf835",
-      "event_id": "event-creative-character-design",
-      "title": "Creative Character Design",
-      "reason": "already linked to catalog event"
-    },
-    {
-      "candidate_id": "candidate-ithra-events-platforms-manager-skills-20260811-62ec512d",
-      "event_id": "event-platforms-manager-skills",
-      "title": "Platforms Manager Skills",
-      "reason": "already linked to catalog event"
-    },
-    {
-      "candidate_id": "candidate-ithra-events-ithra-chess-tournament-20260811-49593879",
-      "event_id": "event-ithra-chess-tournament",
-      "title": "Ithra Chess Tournament",
-      "reason": "already linked to catalog event"
-    },
-    {
-      "candidate_id": "candidate-ithra-events-ithra-chess-tournament-ages-18-20260811-a1231c37",
-      "event_id": "event-ithra-chess-tournament",
-      "title": "Ithra Chess Tournament (Ages 18+)",
-      "reason": "already linked to catalog event"
-    },
-    {
-      "candidate_id": "candidate-ithra-events-nu-power-20260811-653464ac",
-      "event_id": "event-nu-power",
-      "title": "Nu-Power",
-      "reason": "already linked to catalog event"
-    },
-    {
-      "candidate_id": "candidate-ithra-events-english-children-book-club-7-9-20260811-fceb6af6",
-      "event_id": "event-english-children-book-club-7-9",
-      "title": "English Children Book Club (7-9)",
-      "reason": "already linked to catalog event"
-    },
-    {
-      "candidate_id": "candidate-ithra-events-ithra-short-play-contest-2026-20260811-11e2aa06",
-      "event_id": "event-ithra-short-play-contest-2026",
-      "title": "Ithra Short Play Contest 2026",
-      "reason": "already linked to catalog event"
-    },
-    {
-      "candidate_id": "candidate-ithra-events-spot-of-inspiration-20260811-5bac584c",
-      "event_id": "event-spot-of-inspiration",
-      "title": "Spot of Inspiration",
-      "reason": "already linked to catalog event"
-    },
-    {
-      "candidate_id": "candidate-ithra-events-childrens-museum-story-time-20260811-ada8b9db",
-      "event_id": "event-childrens-museum-story-time",
-      "title": "Children's Museum Story Time",
       "reason": "already linked to catalog event"
     },
     {
@@ -1355,9 +1270,63 @@
       "reason": "already linked to catalog event"
     },
     {
+      "candidate_id": "candidate-ithra-events-ithra-art-prize-exhibition-20260812-83c2ab55",
+      "event_id": "event-ithra-art-prize-exhibition",
+      "title": "Ithra Art Prize Exhibition",
+      "reason": "already linked to catalog event"
+    },
+    {
+      "candidate_id": "candidate-ithra-events-printing-house-20260812-e56f4f89",
+      "event_id": "event-printing-house",
+      "title": "Printing House",
+      "reason": "already linked to catalog event"
+    },
+    {
+      "candidate_id": "candidate-ithra-events-tafasahu-make-room-20260812-562bc61d",
+      "event_id": "event-tafasahu-make-room",
+      "title": "Tafasahu: Make Room",
+      "reason": "already linked to catalog event"
+    },
+    {
+      "candidate_id": "candidate-ithra-events-tinkering-stations-20260812-5a2c4c0e",
+      "event_id": "event-tinkering-stations",
+      "title": "Tinkering Stations",
+      "reason": "already linked to catalog event"
+    },
+    {
+      "candidate_id": "candidate-ithra-events-spot-of-inspiration-20260812-5bac584c",
+      "event_id": "event-spot-of-inspiration",
+      "title": "Spot of Inspiration",
+      "reason": "already linked to catalog event"
+    },
+    {
+      "candidate_id": "candidate-ithra-events-childrens-museum-story-time-20260812-ada8b9db",
+      "event_id": "event-childrens-museum-story-time",
+      "title": "Children's Museum Story Time",
+      "reason": "already linked to catalog event"
+    },
+    {
       "candidate_id": "candidate-ithra-events-emboss-printing-experience-20260812-2671d1ce",
       "event_id": "event-emboss-printing-experience",
       "title": "Emboss Printing Experience",
+      "reason": "already linked to catalog event"
+    },
+    {
+      "candidate_id": "candidate-ithra-events-energy-lab-20260812-60155d60",
+      "event_id": "event-energy-lab",
+      "title": "Energy Lab",
+      "reason": "already linked to catalog event"
+    },
+    {
+      "candidate_id": "candidate-ithra-events-creative-character-design-20260812-afddf835",
+      "event_id": "event-creative-character-design",
+      "title": "Creative Character Design",
+      "reason": "already linked to catalog event"
+    },
+    {
+      "candidate_id": "candidate-ithra-events-platforms-manager-skills-20260812-62ec512d",
+      "event_id": "event-platforms-manager-skills",
+      "title": "Platforms Manager Skills",
       "reason": "already linked to catalog event"
     },
     {
@@ -1379,6 +1348,12 @@
       "reason": "already linked to catalog event"
     },
     {
+      "candidate_id": "candidate-ithra-events-ithra-chess-tournament-20260812-49593879",
+      "event_id": "event-ithra-chess-tournament",
+      "title": "Ithra Chess Tournament",
+      "reason": "already linked to catalog event"
+    },
+    {
       "candidate_id": "candidate-ithra-events-english-children-book-club-10-12-20260812-efa3d7e3",
       "event_id": "event-english-children-book-club-10-12",
       "title": "English Children Book Club (10 - 12)",
@@ -1388,6 +1363,12 @@
       "candidate_id": "candidate-ithra-events-moksha-20260812-0d457878",
       "event_id": "event-moksha",
       "title": "Moksha",
+      "reason": "already linked to catalog event"
+    },
+    {
+      "candidate_id": "candidate-ithra-events-ithra-short-play-contest-2026-20260812-11e2aa06",
+      "event_id": "event-ithra-short-play-contest-2026",
+      "title": "Ithra Short Play Contest 2026",
       "reason": "already linked to catalog event"
     },
     {
@@ -1619,6 +1600,12 @@
       "reason": "already linked to catalog event"
     },
     {
+      "candidate_id": "candidate-ithra-events-chess-hub-20260818-4919439a",
+      "event_id": "event-chess-hub",
+      "title": "Chess Hub",
+      "reason": "already linked to catalog event"
+    },
+    {
       "candidate_id": "candidate-hayy-jameel-events-hayy-makers-introduction-to-photography-understanding-your-camera-20260818-d51ed26b",
       "event_id": "event-hayy-makers-introduction-to-photography-understanding-your-camera",
       "title": "Hayy Makers | Introduction to Photography: Understanding your Camera",
@@ -1694,7 +1681,7 @@
       "candidate_id": "candidate-visit-saudi-seasons-buraydah-international-dates-carnival-activites-20260820-a82ecd17",
       "event_id": "event-buraydah-international-dates-carnival-activites",
       "title": "Buraydah International Dates Carnival Activites",
-      "reason": "trusted duplicate linked to existing catalog event"
+      "reason": "already linked to catalog event"
     },
     {
       "candidate_id": "candidate-visit-saudi-seasons-unaizah-international-dates-carnival-20260820-612474e4",
@@ -1706,6 +1693,12 @@
       "candidate_id": "candidate-ithra-events-art-in-virtual-motion-20260820-3acf52ef",
       "event_id": "event-art-in-virtual-motion",
       "title": "Art in Virtual Motion",
+      "reason": "already linked to catalog event"
+    },
+    {
+      "candidate_id": "candidate-ithra-events-nu-power-20260820-653464ac",
+      "event_id": "event-nu-power",
+      "title": "Nu-Power",
       "reason": "already linked to catalog event"
     },
     {
@@ -3600,6 +3593,11 @@
       "reason": "unknown category requires review"
     },
     {
+      "candidate_id": "candidate-saudicon-events-مهرجان-شقراء-الأسياح-للتمور-بنسخته-الرابعة-20260816-54b751a0",
+      "title": "مهرجان شقراء الأسياح للتمور بنسخته الرابعة",
+      "reason": "publication gate source-evidence is not auto-publishable"
+    },
+    {
       "candidate_id": "candidate-eye-of-riyadh-events-sunaa-2026-20260818-e3819fa8",
       "title": "SUNAA 2026",
       "reason": "publication gate source-evidence is not auto-publishable"
@@ -3702,11 +3700,6 @@
       "candidate_id": "candidate-eventbrite-saudi-sucession-planning-program-20260903-d2b52d25",
       "title": "Sucession Planning Program",
       "reason": "unknown category requires review"
-    },
-    {
-      "candidate_id": "candidate-saudicon-events-المعرض-السعودي-للصناعة-الغذائية-2026-20260905-f6823643",
-      "title": "المعرض السعودي للصناعة الغذائية 2026",
-      "reason": "publication gate source-evidence is not auto-publishable"
     },
     {
       "candidate_id": "candidate-eventbrite-saudi-jeddah-fintech-week-2026-20260905-8e9a03b6",
