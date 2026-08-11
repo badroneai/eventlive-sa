@@ -1,6 +1,6 @@
 # EventLive Source Run State
 
-Generated at: 2026-08-11T07:55:43.533Z
+Generated at: 2026-08-11T14:00:19.492Z
 
 ## Operating Rule
 
@@ -9,13 +9,13 @@ Raw collection is not publication. Every source run preserves evidence, separate
 ## Totals
 
 - Sources: 88
-- Attempted this run: 22
-- Deferred by adaptive cadence: 26
+- Attempted this run: 23
+- Deferred by adaptive cadence: 25
 - Productive: 20
-- Zero-yield: 2
-- Collector errors: 0
+- Zero-yield: 1
+- Collector errors: 1
 - Persistent collector errors: 7
-- Probe blocked: 0
+- Probe blocked: 1
 - Auto-publish eligible source lanes: 12
 
 ## Stalled / Blocked Focus
@@ -143,7 +143,7 @@ Call log:
 | 82 | money2020-middle-east-agendas | extractor-backlog | not-attempted | 0 | no | Latest deep probe recommends build-jsonld-event-extractor; build only if future date-complete rows are visible. |
 | 83 | madinah-chamber-events | active-collector | zero-yield | 0 | no | Zero-yield for 21 runs; inspect dropped samples or reclassify cadence if the source is seasonal/archive-only. |
 | 84 | madinah-architecture-festival | active-collector | productive | 1 | no | Continue periodic collection; dedupe and auto-publish only through the candidate gate. |
-| 85 | hayy-jameel-events | active-collector | productive | 67 | no | Continue periodic collection; dedupe and auto-publish only through the candidate gate. |
+| 85 | hayy-jameel-events | active-collector | productive | 69 | no | Continue periodic collection; dedupe and auto-publish only through the candidate gate. |
 | 86 | informa-connect-saudi-events | venue-dedupe | productive | 6 | no | Continue periodic collection; dedupe and auto-publish only through the candidate gate. |
 | 87 | kau-events | venue-dedupe | zero-yield | 0 | no | no rows detected by extractor |
 | 88 | saudicon-events | discovery-only | productive | 14 | no | Continue periodic collection; dedupe and auto-publish only through the candidate gate. |

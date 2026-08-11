@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-11T07:51:41.517Z",
+  "generated_at": "2026-08-11T13:57:01.157Z",
   "catalog": "data/events_catalog.json",
   "source": "Visit Saudi Calendar",
   "totals": {
@@ -15,7 +15,7 @@
       "id": "event-arabic-language-exhibition-28",
       "title": "Arabic Language Exhibition 28",
       "source_method": "official-page-html",
-      "image_url": "https://scth.scene7.com/is/image/scth/arabic-language-exhibition-in-riyadh?wid=1920&hei=1080&fit=constrain&fmt=webp",
+      "image_url": "https://www.visitsaudi.com/content/dam/wvs/calendar/arabic-language-exhibition-in-riyadh.jpg",
       "fetched": true,
       "features": 7
     },
@@ -23,7 +23,7 @@
       "id": "event-arabic-language-exhibition-for-kids",
       "title": "Arabic Language Exhibition for kids",
       "source_method": "official-page-html",
-      "image_url": "https://scth.scene7.com/is/image/scth/arabic-language-exhibition-for-kids?wid=1920&hei=1080&fit=constrain&fmt=webp",
+      "image_url": "https://www.visitsaudi.com/content/dam/wvs/calendar/arabic-language-exhibition-for-kids.jpg",
       "fetched": true,
       "features": 7
     },
@@ -31,7 +31,7 @@
       "id": "event-sunken-treasures",
       "title": "Sunken Treasures",
       "source_method": "official-page-html",
-      "image_url": "https://scth.scene7.com/is/image/scth/sunken-treasuers?wid=1920&hei=1080&fit=constrain&fmt=webp",
+      "image_url": "https://www.visitsaudi.com/content/dam/wvs/calendar/sunken-treasuers.jpg",
       "fetched": true,
       "features": 7
     },
@@ -39,7 +39,7 @@
       "id": "event-kashtah",
       "title": "Kashtah",
       "source_method": "official-page-html",
-      "image_url": "https://scth.scene7.com/is/image/scth/kashtah?wid=1920&hei=1080&fit=constrain&fmt=webp",
+      "image_url": "https://www.visitsaudi.com/content/dam/wvs/calendar/kashtah.jpg",
       "fetched": true,
       "features": 7
     },
@@ -47,7 +47,7 @@
       "id": "event-okhtabotiya",
       "title": "Okhtabotiya",
       "source_method": "official-page-html",
-      "image_url": "https://scth.scene7.com/is/image/scth/okhtabotiya?wid=1920&hei=1080&fit=constrain&fmt=webp",
+      "image_url": "https://www.visitsaudi.com/content/dam/wvs/calendar/okhtabotiya.jpg",
       "fetched": true,
       "features": 7
     },
@@ -159,7 +159,7 @@
       "id": "event-international-falcon-breeders-auction",
       "title": "International Falcon Breeders Auction",
       "source_method": "official-page-html",
-      "image_url": "https://scth.scene7.com/is/image/scth/international-falcon-breeders-auction-in-riyadh?wid=1920&hei=1080&fit=constrain&fmt=webp",
+      "image_url": "https://www.visitsaudi.com/content/dam/wvs/calendar/international-falcon-breeders-auction-in-riyadh.jpg",
       "fetched": true,
       "features": 7
     },
@@ -175,7 +175,7 @@
       "id": "event-fibo-arabia-2026",
       "title": "FIBO Arabia 2026",
       "source_method": "official-page-html",
-      "image_url": "https://scth.scene7.com/is/image/scth/fibo-arabia?wid=1920&hei=1080&fit=constrain&fmt=webp",
+      "image_url": "https://www.visitsaudi.com/content/dam/wvs/calendar/fibo-arabia.jpg",
       "fetched": true,
       "features": 7
     },
@@ -191,7 +191,7 @@
       "id": "event-al-milwah-falcon-race",
       "title": "Al Milwah Falcon Race",
       "source_method": "official-page-html",
-      "image_url": "https://scth.scene7.com/is/image/scth/almelwah-racing?wid=1920&hei=1080&fit=constrain&fmt=webp",
+      "image_url": "https://www.visitsaudi.com/content/dam/wvs/calendar/almelwah-racing.jpg",
       "fetched": true,
       "features": 7
     },

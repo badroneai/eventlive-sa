@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "generated_at": "2026-08-11T07:58:10.790Z",
+  "generated_at": "2026-08-11T14:02:46.411Z",
   "events": {
     "event-skill-development-initiative": {
       "identity": "skill development initiative|riyadh|2021-07-14",
@@ -1140,6 +1140,11 @@
     "event-تفعيل-بيئة-تعلم-إلكترونية-تفاعلية-بنمط-غير-متزامن": {
       "identity": "تفعيل بيئة تعلم إلكترونية تفاعلية– بنمط غير متزامن|makkah|2026-08-13",
       "first_seen": "2026-08-10",
+      "last_seen": "2026-08-11"
+    },
+    "event-unstable": {
+      "identity": "unstable|riyadh|2026-08-14",
+      "first_seen": "2026-07-11",
       "last_seen": "2026-08-11"
     },
     "event-concert-mohamed-hamaki": {
@@ -2750,11 +2755,6 @@
     "event-hussain-moheb-live-in-riyadh": {
       "identity": "hussain moheb live in riyadh|riyadh|2026-08-07",
       "first_seen": "2026-07-14",
-      "last_seen": "2026-08-11"
-    },
-    "event-unstable": {
-      "identity": "unstable|riyadh|2026-08-07",
-      "first_seen": "2026-07-11",
       "last_seen": "2026-08-11"
     },
     "event-التشكيل-الحر": {

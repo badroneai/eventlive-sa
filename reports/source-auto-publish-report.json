@@ -1,18 +1,18 @@
 {
-  "published_at": "2026-08-11T07:50:46.153Z",
+  "published_at": "2026-08-11T13:56:09.755Z",
   "dry_run": false,
   "include_partner": true,
   "source_candidates": "data/source_candidates.json",
   "events_catalog": "data/events_catalog.json",
-  "candidates_seen": 601,
+  "candidates_seen": 602,
   "totals": {
-    "candidates_seen": 601,
-    "published": 10,
-    "linked_existing": 553,
+    "candidates_seen": 602,
+    "published": 6,
+    "linked_existing": 558,
     "blocked": 38,
     "duplicate_review_alerts": 8,
     "category_fallback_alerts": 0,
-    "reconciled": 563
+    "reconciled": 564
   },
   "category_fallback_alerts": [],
   "duplicate_catalog_rows_removed": 0,
@@ -193,26 +193,6 @@
       "candidate_id": "candidate-visit-saudi-calendar-pdf-عروض-الفنون-الأدائية-التقليدية-20260706-4a38d19e",
       "event_id": "event-عروض-الفنون-الأدائية-التقليدية",
       "title": "عروض الفنون الأدائية التقليدية"
-    },
-    {
-      "candidate_id": "candidate-ithra-events-ithra-members-tour-arabic-20260818-c4eda15f",
-      "event_id": "event-ithra-members-tour-arabic",
-      "title": "Ithra Members Tour (Arabic)"
-    },
-    {
-      "candidate_id": "candidate-ithra-events-clay-shaping-20260819-852b2ff5",
-      "event_id": "event-clay-shaping",
-      "title": "Clay Shaping"
-    },
-    {
-      "candidate_id": "candidate-ithra-events-art-in-virtual-motion-20260820-3acf52ef",
-      "event_id": "event-art-in-virtual-motion",
-      "title": "Art in Virtual Motion"
-    },
-    {
-      "candidate_id": "candidate-ithra-events-textured-painting-20260829-b0fc79b9",
-      "event_id": "event-textured-painting",
-      "title": "Textured Painting"
     }
   ],
   "linked_existing": [
@@ -1003,12 +983,6 @@
       "reason": "already linked to catalog event"
     },
     {
-      "candidate_id": "candidate-visit-saudi-seasons-buraydah-international-dates-carnival-20260801-24906534",
-      "event_id": "event-buraydah-dates-carnival",
-      "title": "Buraydah International Dates Carnival",
-      "reason": "already linked to catalog event"
-    },
-    {
       "candidate_id": "candidate-discover-aseer-events-summer-legacy-20260801-aaba4732",
       "event_id": "event-summer-legacy",
       "title": "Summer Legacy",
@@ -1024,6 +998,12 @@
       "candidate_id": "candidate-umm-al-qura-events-نموذج-التسجيل-والسداد-للدبلوم-المتوسط-في-البصريات-لخارج-مكة-20260801-70d68f2f",
       "event_id": "event-نموذج-التسجيل-والسداد-للدبلوم-المتوسط-في-البصريات-لخارج-مكة",
       "title": "نموذج التسجيل والسداد للدبلوم المتوسط في البصريات لخارج مكة",
+      "reason": "already linked to catalog event"
+    },
+    {
+      "candidate_id": "candidate-visit-saudi-seasons-buraydah-international-dates-carnival-20260801-24906534",
+      "event_id": "event-buraydah-dates-carnival",
+      "title": "Buraydah International Dates Carnival",
       "reason": "already linked to catalog event"
     },
     {
@@ -1285,24 +1265,6 @@
       "reason": "already linked to catalog event"
     },
     {
-      "candidate_id": "candidate-ithra-events-childrens-museum-story-time-20260811-ada8b9db",
-      "event_id": "event-childrens-museum-story-time",
-      "title": "Children's Museum Story Time",
-      "reason": "already linked to catalog event"
-    },
-    {
-      "candidate_id": "candidate-ithra-events-spot-of-inspiration-20260811-5bac584c",
-      "event_id": "event-spot-of-inspiration",
-      "title": "Spot of Inspiration",
-      "reason": "already linked to catalog event"
-    },
-    {
-      "candidate_id": "candidate-ithra-events-emboss-printing-experience-20260811-2671d1ce",
-      "event_id": "event-emboss-printing-experience",
-      "title": "Emboss Printing Experience",
-      "reason": "already linked to catalog event"
-    },
-    {
       "candidate_id": "candidate-ithra-events-chess-hub-20260811-4919439a",
       "event_id": "event-chess-hub",
       "title": "Chess Hub",
@@ -1357,6 +1319,18 @@
       "reason": "already linked to catalog event"
     },
     {
+      "candidate_id": "candidate-ithra-events-spot-of-inspiration-20260811-5bac584c",
+      "event_id": "event-spot-of-inspiration",
+      "title": "Spot of Inspiration",
+      "reason": "already linked to catalog event"
+    },
+    {
+      "candidate_id": "candidate-ithra-events-childrens-museum-story-time-20260811-ada8b9db",
+      "event_id": "event-childrens-museum-story-time",
+      "title": "Children's Museum Story Time",
+      "reason": "already linked to catalog event"
+    },
+    {
       "candidate_id": "candidate-sfda-events-الإدراج-في-خطوات-20260812-80dbadc1",
       "event_id": "event-الإدراج-في-خطوات",
       "title": "الإدراج في خطوات",
@@ -1378,6 +1352,12 @@
       "candidate_id": "candidate-hayy-jameel-events-hayy-arts-from-another-angle-explore-contemporary-art-with-alternative-e-20260812-3abe9558",
       "event_id": "event-hayy-arts-from-another-angel-explore-contemporary-art-with-alternative-e",
       "title": "Hayy Arts | From Another Angle, explore contemporary art with alternative exhibition tours",
+      "reason": "already linked to catalog event"
+    },
+    {
+      "candidate_id": "candidate-ithra-events-emboss-printing-experience-20260812-2671d1ce",
+      "event_id": "event-emboss-printing-experience",
+      "title": "Emboss Printing Experience",
       "reason": "already linked to catalog event"
     },
     {
@@ -1627,10 +1607,16 @@
       "reason": "already linked to catalog event"
     },
     {
+      "candidate_id": "candidate-ithra-events-ithra-members-tour-arabic-20260818-c4eda15f",
+      "event_id": "event-ithra-members-tour-arabic",
+      "title": "Ithra Members Tour (Arabic)",
+      "reason": "already linked to catalog event"
+    },
+    {
       "candidate_id": "candidate-ithra-events-ithra-members-tour-english-20260818-67fc89c0",
       "event_id": "event-ithra-members-tour-arabic",
       "title": "Ithra Members Tour (English)",
-      "reason": "trusted duplicate linked to existing catalog event"
+      "reason": "already linked to catalog event"
     },
     {
       "candidate_id": "candidate-hayy-jameel-events-hayy-makers-introduction-to-photography-understanding-your-camera-20260818-d51ed26b",
@@ -1642,7 +1628,7 @@
       "candidate_id": "candidate-ithra-events-water-challenges-20260818-eea51834",
       "event_id": "event-water-challenges",
       "title": "Water Challenges",
-      "reason": "trusted duplicate linked to existing catalog event"
+      "reason": "already linked to catalog event"
     },
     {
       "candidate_id": "candidate-sfda-events-دور-المواصفات-القياسية-في-دعم-عمليات-التعقيم-والتغليف-ووضع-المعلومات-الت-20260819-dd16cb51",
@@ -1660,6 +1646,12 @@
       "candidate_id": "candidate-ithra-events-energy-in-motion-20260819-e0404048",
       "event_id": "event-energy-in-motion",
       "title": "Energy in Motion",
+      "reason": "already linked to catalog event"
+    },
+    {
+      "candidate_id": "candidate-ithra-events-clay-shaping-20260819-852b2ff5",
+      "event_id": "event-clay-shaping",
+      "title": "Clay Shaping",
       "reason": "already linked to catalog event"
     },
     {
@@ -1699,9 +1691,21 @@
       "reason": "already linked to catalog event"
     },
     {
+      "candidate_id": "candidate-visit-saudi-seasons-buraydah-international-dates-carnival-activites-20260820-a82ecd17",
+      "event_id": "event-buraydah-international-dates-carnival-activites",
+      "title": "Buraydah International Dates Carnival Activites",
+      "reason": "trusted duplicate linked to existing catalog event"
+    },
+    {
       "candidate_id": "candidate-visit-saudi-seasons-unaizah-international-dates-carnival-20260820-612474e4",
       "event_id": "event-unaizah-international-dates-carnival",
       "title": "Unaizah International Dates Carnival",
+      "reason": "already linked to catalog event"
+    },
+    {
+      "candidate_id": "candidate-ithra-events-art-in-virtual-motion-20260820-3acf52ef",
+      "event_id": "event-art-in-virtual-motion",
+      "title": "Art in Virtual Motion",
       "reason": "already linked to catalog event"
     },
     {
@@ -1834,6 +1838,12 @@
       "candidate_id": "candidate-saudi-university-events-summer-splash-at-south-beach-20260829-6ccdbbf8",
       "event_id": "event-summer-splash-at-south-beach",
       "title": "Summer Splash at South Beach",
+      "reason": "already linked to catalog event"
+    },
+    {
+      "candidate_id": "candidate-ithra-events-textured-painting-20260829-b0fc79b9",
+      "event_id": "event-textured-painting",
+      "title": "Textured Painting",
       "reason": "already linked to catalog event"
     },
     {

@@ -1,32 +1,32 @@
 # EventLive Harvest OS Status
 
-- Generated at: 2026-08-11T08:03:07.979Z
+- Generated at: 2026-08-11T14:07:35.146Z
 - Status: NEEDS_WORK
 - Operating rule: Probe before new sources; sample before full harvest; Raw collection is not publication; discovery-only never auto-publishes.
 
 ## Totals
 
 - Sources: 88
-- Candidates: 601
-- Matched candidates: 571
+- Candidates: 602
+- Matched candidates: 572
 - Auto-publish sources: 15
 - Candidate-only sources: 12
 - Partnership-required sources: 5
-- Productive sources / attempted: 20/22
-- Collector errors: 4 (chronic 4, transient 0)
+- Productive sources / attempted: 20/23
+- Collector errors: 5 (chronic 4, transient 1)
 
 ## Publication Funnel
 
 | Stage | Count |
 | --- | --- |
-| discovered_this_run | 317 |
-| candidate_queue | 601 |
-| evaluated_for_publish | 601 |
-| linked_existing | 553 |
-| published_new | 10 |
+| discovered_this_run | 319 |
+| candidate_queue | 602 |
+| evaluated_for_publish | 602 |
+| linked_existing | 558 |
+| published_new | 6 |
 | blocked | 38 |
 | secondary_promoted | 0 |
-| secondary_still_blocked | 37 |
+| secondary_still_blocked | 34 |
 
 ## Blocked Reasons
 
@@ -52,6 +52,7 @@
 | mos-events | chronic | 22 | no | collector-error: fetch failed |
 | moc-cultural-subportals | chronic | 22 | no | collector-error: fetch failed; fetch failed |
 | monshaat-events | chronic | 5 | no | collector-error: fetch failed; fetch failed |
+| saudi-pro-league-fixtures | transient | 2 | yes | fetch failed |
 
 | Source | Policy | Trust | Gate |
 | --- | --- | --- | --- |

@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-11T07:55:43.681Z",
+  "generated_at": "2026-08-11T14:00:19.644Z",
   "files": {
     "registry": "data/source_registry.json",
     "candidates": "data/source_candidates.json",
@@ -11,25 +11,25 @@
   },
   "collection": {
     "basis": "source_collection_report_adaptive",
-    "collected_at": "2026-08-11T07:42:31.077Z",
+    "collected_at": "2026-08-11T13:48:21.204Z",
     "freshness": "fresh",
-    "discovered": 317,
-    "written": 601
+    "discovered": 319,
+    "written": 602
   },
   "sources": {
     "total": 88,
-    "attempted": 22,
-    "due": 22,
-    "deferred": 26,
+    "attempted": 23,
+    "due": 23,
+    "deferred": 25,
     "scheduled": 48,
     "runnable": 48,
     "collection_coverage_pct": 100,
-    "registry_collection_coverage_pct": 25,
+    "registry_collection_coverage_pct": 26,
     "scheduled_runnable_coverage_pct": 100,
     "healthy": 20,
     "zero_yield": 2,
-    "errors": 0,
-    "cadence_deferred": 26,
+    "errors": 1,
+    "cadence_deferred": 25,
     "not_collected": 40,
     "unattempted_high_priority": 3,
     "health": [
@@ -273,7 +273,7 @@
         "zero_yield_streak": 0,
         "last_attempted_at": null,
         "extracted": 17,
-        "candidates": 17,
+        "candidates": 18,
         "next_action": "استمر بالمراجعة والتكرار قبل النشر."
       },
       {
@@ -409,16 +409,13 @@
         "id": "saudi-pro-league-fixtures",
         "name": "Saudi Pro League Fixtures",
         "priority": 30,
-        "status": "deferred",
-        "historical_status": "collector-error",
-        "cadence_reason": "error-cooldown",
-        "next_due_at": "2026-08-11T08:32:28.692Z",
-        "error_streak": 1,
+        "status": "collection-error",
+        "error_streak": 0,
         "zero_yield_streak": 0,
-        "last_attempted_at": "2026-08-11T02:32:28.692Z",
+        "last_attempted_at": null,
         "extracted": 0,
         "candidates": 0,
-        "next_action": "مؤجل حتى 2026-08-11T08:32:28.692Z وفق الجدولة التكيفية."
+        "next_action": "fetch failed"
       },
       {
         "id": "neom-newsroom-events",
@@ -676,16 +673,13 @@
         "id": "riyadh-city-events",
         "name": "Riyadh City Events",
         "priority": 51,
-        "status": "deferred",
-        "historical_status": "probe-blocked",
-        "cadence_reason": "error-cooldown",
-        "next_due_at": "2026-08-11T08:32:28.692Z",
+        "status": "zero-yield",
         "error_streak": 0,
         "zero_yield_streak": 0,
-        "last_attempted_at": "2026-08-11T02:32:28.692Z",
+        "last_attempted_at": null,
         "extracted": 0,
         "candidates": 74,
-        "next_action": "مؤجل حتى 2026-08-11T08:32:28.692Z وفق الجدولة التكيفية."
+        "next_action": "No future date-complete candidates found by the conservative extractor."
       },
       {
         "id": "monshaat-academy-programs",
@@ -793,13 +787,16 @@
         "id": "qassim-chamber-events",
         "name": "Qassim Chamber Events",
         "priority": 60,
-        "status": "zero-yield",
+        "status": "deferred",
+        "historical_status": "zero-yield",
+        "cadence_reason": "zero-yield-cooldown",
+        "next_due_at": "2026-08-12T07:42:31.077Z",
         "error_streak": 0,
-        "zero_yield_streak": 0,
-        "last_attempted_at": null,
+        "zero_yield_streak": 7,
+        "last_attempted_at": "2026-08-11T07:42:31.077Z",
         "extracted": 0,
         "candidates": 0,
-        "next_action": "Recovered via live-browser-recovery official evidence. Primary page failed: HTTP 403. No future date-complete candidates found by the conservative extractor."
+        "next_action": "مؤجل حتى 2026-08-12T07:42:31.077Z وفق الجدولة التكيفية."
       },
       {
         "id": "abha-chamber-events",
@@ -856,13 +853,16 @@
         "id": "northern-borders-chamber-events",
         "name": "Northern Borders Chamber Events",
         "priority": 65,
-        "status": "zero-yield",
+        "status": "deferred",
+        "historical_status": "zero-yield",
+        "cadence_reason": "zero-yield-cooldown",
+        "next_due_at": "2026-08-14T07:42:31.077Z",
         "error_streak": 0,
-        "zero_yield_streak": 0,
-        "last_attempted_at": null,
+        "zero_yield_streak": 14,
+        "last_attempted_at": "2026-08-11T07:42:31.077Z",
         "extracted": 0,
         "candidates": 0,
-        "next_action": "No future date-complete candidates found by the conservative extractor."
+        "next_action": "مؤجل حتى 2026-08-14T07:42:31.077Z وفق الجدولة التكيفية."
       },
       {
         "id": "tabuk-chamber-events",
@@ -1118,7 +1118,7 @@
         "error_streak": 0,
         "zero_yield_streak": 0,
         "last_attempted_at": null,
-        "extracted": 67,
+        "extracted": 69,
         "candidates": 74,
         "next_action": "استمر بالمراجعة والتكرار قبل النشر."
       },
@@ -1141,16 +1141,13 @@
         "id": "kau-events",
         "name": "King Abdulaziz University Events",
         "priority": 87,
-        "status": "deferred",
-        "historical_status": "zero-yield",
-        "cadence_reason": "zero-yield-cooldown",
-        "next_due_at": "2026-08-11T08:32:28.692Z",
+        "status": "zero-yield",
         "error_streak": 0,
-        "zero_yield_streak": 1,
-        "last_attempted_at": "2026-08-11T02:32:28.692Z",
+        "zero_yield_streak": 0,
+        "last_attempted_at": null,
         "extracted": 0,
         "candidates": 2,
-        "next_action": "مؤجل حتى 2026-08-11T08:32:28.692Z وفق الجدولة التكيفية."
+        "next_action": "No future date-complete candidates found by the conservative extractor."
       },
       {
         "id": "saudicon-events",
@@ -1170,28 +1167,28 @@
     ]
   },
   "queue": {
-    "total": 601,
+    "total": 602,
     "ready_for_review": 8,
     "approved_for_catalog": 0,
-    "published_from_candidates": 568,
+    "published_from_candidates": 569,
     "actionable": 8,
     "stale_unpublished": 0,
     "duplicate_risk": 6,
     "needs_extraction": 0,
     "needs_evidence": 25,
     "by_review_status": {
-      "approved-for-catalog": 568,
+      "approved-for-catalog": 569,
       "ready-for-review": 8,
       "evidence-captured": 17,
       "new": 8
     },
     "by_publication_gate": {
-      "catalog-review": 568,
+      "catalog-review": 569,
       "duplicate-review": 8,
       "source-evidence": 25
     },
     "by_confidence": {
-      "official": 562,
+      "official": 563,
       "public-listing": 20,
       "verified-secondary": 11,
       "unverified": 8
@@ -1209,7 +1206,7 @@
       "Misk Hub Programs": 11,
       "Discover Aseer Events": 40,
       "Hayy Jameel What's On": 74,
-      "Visit Saudi Seasons": 17,
+      "Visit Saudi Seasons": 18,
       "Tuwaiq Academy Bootcamps and Programs": 37,
       "Eye of Riyadh Events": 6,
       "Saudicon Events": 14,
@@ -1343,7 +1340,7 @@
         "discovery_notes": "",
         "duplicate_risk": true,
         "matched_catalog_event_id": "event-in-act-act-x",
-        "days_to_start": 60,
+        "days_to_start": 59,
         "is_past": false,
         "is_actionable": true,
         "action": "راجع التكرار مع الكتالوج قبل أي اعتماد.",
@@ -1457,7 +1454,7 @@
         "discovery_notes": "",
         "duplicate_risk": false,
         "matched_catalog_event_id": "",
-        "days_to_start": 20,
+        "days_to_start": 19,
         "is_past": false,
         "is_actionable": false,
         "action": "دليل اكتشاف فقط؛ لا ينشر آلياً حتى يثبت من مصدر رسمي.",
@@ -1663,7 +1660,7 @@
         "discovery_notes": "saudi-location-signal, specific-venue, event-topic-fit",
         "duplicate_risk": false,
         "matched_catalog_event_id": "",
-        "days_to_start": 26,
+        "days_to_start": 25,
         "is_past": false,
         "is_actionable": false,
         "action": "دليل اكتشاف فقط؛ لا ينشر آلياً حتى يثبت من مصدر رسمي.",
@@ -1876,7 +1873,7 @@
         "discovery_notes": "",
         "duplicate_risk": false,
         "matched_catalog_event_id": "",
-        "days_to_start": 20,
+        "days_to_start": 19,
         "is_past": false,
         "is_actionable": false,
         "action": "دليل اكتشاف فقط؛ لا ينشر آلياً حتى يثبت من مصدر رسمي.",

@@ -1,25 +1,18 @@
 {
-  "generated_at": "2026-08-11T07:55:07.157Z",
+  "generated_at": "2026-08-11T14:00:18.630Z",
   "events_file": "dist/events.json",
   "manifest": "data/event_image_cache_manifest.json",
   "image_dir": "dist/assets/event-images",
   "totals": {
     "targets": 500,
     "cached_total": 800,
-    "fetched": 1,
-    "reused": 496,
+    "fetched": 0,
+    "reused": 497,
     "failed": 3,
     "skipped_recent_failures": 3,
     "remembered_failures": 6
   },
-  "fetched": [
-    {
-      "source_url": "https://www.ithra.com/application/files/cache/thumbnails/ad169f1ec2946d8577403914c762b084.png",
-      "file": "dist/assets/event-images/clay-shaping-845acbd7b3.png",
-      "bytes": 1200273,
-      "events": 1
-    }
-  ],
+  "fetched": [],
   "reused": [
     {
       "source_url": "https://music.moc.gov.sa/-/media/Project/Ministries/Moc/Events/Artboard1.png",
@@ -757,6 +750,11 @@
       "events": 1
     },
     {
+      "source_url": "https://www.datocms-assets.com/66357/1751801189-mdlbeast.png?auto=format&fit=max&w=1200",
+      "file": "dist/assets/event-images/unstable-ba5c599823.avif",
+      "events": 5
+    },
+    {
       "source_url": "https://discoveraseer.com/en/img/asset/YXNzZXRzL2V4cGVyaWVuY2UvaGFtYWtpLnBuZw/hamaki.png?w=1024&fm=webp&s=d6b46ce0f3e022e5bcced45dd222ed9e",
       "file": "dist/assets/event-images/concert-mohamed-hamaki-b5c7ae3ec4.webp",
       "events": 1
@@ -804,6 +802,11 @@
     {
       "source_url": "https://hayyjameel.org/wp-content/uploads/2026/07/DSC02728-1100x500.jpg",
       "file": "dist/assets/event-images/hayy-makers-introduction-to-photography-understanding-your-camera-4b6d52464c.jpg",
+      "events": 1
+    },
+    {
+      "source_url": "https://www.ithra.com/application/files/cache/thumbnails/ad169f1ec2946d8577403914c762b084.png",
+      "file": "dist/assets/event-images/clay-shaping-845acbd7b3.png",
       "events": 1
     },
     {
@@ -1365,11 +1368,6 @@
       "source_url": "https://static.wixstatic.com/media/708478_a08e284e0e2b4361addf88f967bb6b9f%7Emv2.png/v1/fit/w_2500,h_1330,al_c/708478_a08e284e0e2b4361addf88f967bb6b9f%7Emv2.png",
       "file": "dist/assets/event-images/cips-mena-procurement-and-supply-chain-futures-conference-and-awards-42e0ccbf3d.png",
       "events": 1
-    },
-    {
-      "source_url": "https://www.datocms-assets.com/66357/1751801189-mdlbeast.png?auto=format&fit=max&w=1200",
-      "file": "dist/assets/event-images/unstable-ba5c599823.avif",
-      "events": 5
     },
     {
       "source_url": "https://api.riyadh.sa/sites/default/files/styles/medium/public/2026-01/esports.jpg?itok=m-JCBfZQ",
@@ -2556,8 +2554,6 @@
       "skipped": true
     }
   ],
-  "requires_rebuild": true,
-  "rebuild_reasons": [
-    "fetched:1"
-  ]
+  "requires_rebuild": false,
+  "rebuild_reasons": []
 }
