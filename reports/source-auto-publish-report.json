@@ -1,18 +1,18 @@
 {
-  "published_at": "2026-08-11T02:43:48.345Z",
+  "published_at": "2026-08-11T07:50:46.153Z",
   "dry_run": false,
   "include_partner": true,
   "source_candidates": "data/source_candidates.json",
   "events_catalog": "data/events_catalog.json",
-  "candidates_seen": 597,
+  "candidates_seen": 601,
   "totals": {
-    "candidates_seen": 597,
-    "published": 7,
-    "linked_existing": 552,
+    "candidates_seen": 601,
+    "published": 10,
+    "linked_existing": 553,
     "blocked": 38,
     "duplicate_review_alerts": 8,
     "category_fallback_alerts": 0,
-    "reconciled": 559
+    "reconciled": 563
   },
   "category_fallback_alerts": [],
   "duplicate_catalog_rows_removed": 0,
@@ -195,9 +195,24 @@
       "title": "عروض الفنون الأدائية التقليدية"
     },
     {
-      "candidate_id": "candidate-misk-hub-events-development-media-from-message-to-impact-20260824-add557ec",
-      "event_id": "event-development-media-from-message-to-impact",
-      "title": "Development Media: From Message to Impact"
+      "candidate_id": "candidate-ithra-events-ithra-members-tour-arabic-20260818-c4eda15f",
+      "event_id": "event-ithra-members-tour-arabic",
+      "title": "Ithra Members Tour (Arabic)"
+    },
+    {
+      "candidate_id": "candidate-ithra-events-clay-shaping-20260819-852b2ff5",
+      "event_id": "event-clay-shaping",
+      "title": "Clay Shaping"
+    },
+    {
+      "candidate_id": "candidate-ithra-events-art-in-virtual-motion-20260820-3acf52ef",
+      "event_id": "event-art-in-virtual-motion",
+      "title": "Art in Virtual Motion"
+    },
+    {
+      "candidate_id": "candidate-ithra-events-textured-painting-20260829-b0fc79b9",
+      "event_id": "event-textured-painting",
+      "title": "Textured Painting"
     }
   ],
   "linked_existing": [
@@ -1234,12 +1249,6 @@
       "reason": "already linked to catalog event"
     },
     {
-      "candidate_id": "candidate-ithra-events-toddler-tuesday-20260811-1afead7d",
-      "event_id": "event-toddler-tuesday",
-      "title": "Toddler Tuesday",
-      "reason": "already linked to catalog event"
-    },
-    {
       "candidate_id": "candidate-ithra-events-ithra-art-prize-exhibition-20260811-83c2ab55",
       "event_id": "event-ithra-art-prize-exhibition",
       "title": "Ithra Art Prize Exhibition",
@@ -1276,45 +1285,15 @@
       "reason": "already linked to catalog event"
     },
     {
-      "candidate_id": "candidate-ithra-events-ithra-members-tour-20260811-5011b841",
-      "event_id": "event-ithra-members-tour",
-      "title": "Ithra Members Tour",
-      "reason": "already linked to catalog event"
-    },
-    {
-      "candidate_id": "candidate-ithra-events-ithra-members-tour-arabic-20260811-c4eda15f",
-      "event_id": "event-ithra-members-tour",
-      "title": "Ithra Members Tour (Arabic)",
-      "reason": "already linked to catalog event"
-    },
-    {
-      "candidate_id": "candidate-ithra-events-spot-of-inspiration-20260811-5bac584c",
-      "event_id": "event-spot-of-inspiration",
-      "title": "Spot of Inspiration",
-      "reason": "already linked to catalog event"
-    },
-    {
       "candidate_id": "candidate-ithra-events-childrens-museum-story-time-20260811-ada8b9db",
       "event_id": "event-childrens-museum-story-time",
       "title": "Children's Museum Story Time",
       "reason": "already linked to catalog event"
     },
     {
-      "candidate_id": "candidate-ithra-events-ithra-members-tour-english-20260811-67fc89c0",
-      "event_id": "event-ithra-members-tour",
-      "title": "Ithra Members Tour (English)",
-      "reason": "already linked to catalog event"
-    },
-    {
-      "candidate_id": "candidate-ithra-events-childrens-art-studio-20260811-2bf92d17",
-      "event_id": "event-childrens-art-studio",
-      "title": "Children's Art Studio",
-      "reason": "already linked to catalog event"
-    },
-    {
-      "candidate_id": "candidate-ithra-events-tangram-20260811-9a9db6cb",
-      "event_id": "event-tangram",
-      "title": "Tangram",
+      "candidate_id": "candidate-ithra-events-spot-of-inspiration-20260811-5bac584c",
+      "event_id": "event-spot-of-inspiration",
+      "title": "Spot of Inspiration",
       "reason": "already linked to catalog event"
     },
     {
@@ -1402,12 +1381,6 @@
       "reason": "already linked to catalog event"
     },
     {
-      "candidate_id": "candidate-ithra-events-all-things-hedgehogs-20260812-952dc936",
-      "event_id": "event-all-things-hedgehogs",
-      "title": "All Things Hedgehogs",
-      "reason": "already linked to catalog event"
-    },
-    {
       "candidate_id": "candidate-ithra-events-ithra-chess-tournament-ages-13-18-20260812-1baa0014",
       "event_id": "event-ithra-chess-tournament-ages-13-18",
       "title": "Ithra Chess Tournament (Ages 13 - 18)",
@@ -1468,21 +1441,9 @@
       "reason": "already linked to catalog event"
     },
     {
-      "candidate_id": "candidate-ithra-events-little-explorers-20260813-1cc1993f",
-      "event_id": "event-little-explorers",
-      "title": "Little Explorers",
-      "reason": "already linked to catalog event"
-    },
-    {
-      "candidate_id": "candidate-ithra-events-trivia-night-earth-quest-tic-tac-know-20260813-ef7080ff",
-      "event_id": "event-trivia-night-earth-quest-tic-tac-know",
-      "title": "Trivia Night - Earth Quest: Tic-Tac-Know",
-      "reason": "already linked to catalog event"
-    },
-    {
-      "candidate_id": "candidate-ithra-events-games-hub-20260813-fb83124c",
-      "event_id": "event-games-hub",
-      "title": "Games Hub",
+      "candidate_id": "candidate-ithra-events-tangram-20260813-9a9db6cb",
+      "event_id": "event-tangram",
+      "title": "Tangram",
       "reason": "already linked to catalog event"
     },
     {
@@ -1504,12 +1465,6 @@
       "reason": "already linked to catalog event"
     },
     {
-      "candidate_id": "candidate-ithra-events-museum-story-time-20260813-1104734c",
-      "event_id": "event-museum-story-time",
-      "title": "Museum Story Time",
-      "reason": "already linked to catalog event"
-    },
-    {
       "candidate_id": "candidate-mdlbeast-events-unstable-20260814-5647df2e",
       "event_id": "event-unstable",
       "title": "Unstable",
@@ -1519,12 +1474,6 @@
       "candidate_id": "candidate-discover-aseer-events-concert-mohamed-hamaki-20260814-b2b9dfdb",
       "event_id": "event-concert-mohamed-hamaki",
       "title": "Concert – Mohamed Hamaki",
-      "reason": "already linked to catalog event"
-    },
-    {
-      "candidate_id": "candidate-ithra-events-paint-like-an-artist-20260814-a67d8ec3",
-      "event_id": "event-paint-like-an-artist",
-      "title": "Paint Like an Artist",
       "reason": "already linked to catalog event"
     },
     {
@@ -1573,12 +1522,6 @@
       "candidate_id": "candidate-ithra-events-petals-and-pals-english-20260815-2b82ff28",
       "event_id": "event-petals-and-pals-english",
       "title": "Petals and Pals (English)",
-      "reason": "already linked to catalog event"
-    },
-    {
-      "candidate_id": "candidate-ithra-events-story-land-20260815-bb5dc01b",
-      "event_id": "event-story-land",
-      "title": "Story Land",
       "reason": "already linked to catalog event"
     },
     {
@@ -1648,6 +1591,18 @@
       "reason": "already linked to catalog event"
     },
     {
+      "candidate_id": "candidate-ithra-events-paint-like-an-artist-20260817-a67d8ec3",
+      "event_id": "event-paint-like-an-artist",
+      "title": "Paint Like an Artist",
+      "reason": "already linked to catalog event"
+    },
+    {
+      "candidate_id": "candidate-ithra-events-childrens-art-studio-20260817-2bf92d17",
+      "event_id": "event-childrens-art-studio",
+      "title": "Children's Art Studio",
+      "reason": "already linked to catalog event"
+    },
+    {
       "candidate_id": "candidate-ithra-events-children-story-time-20260817-f545fa69",
       "event_id": "event-children-story-time",
       "title": "Children Story Time",
@@ -1660,15 +1615,45 @@
       "reason": "already linked to catalog event"
     },
     {
+      "candidate_id": "candidate-ithra-events-toddler-tuesday-20260818-1afead7d",
+      "event_id": "event-toddler-tuesday",
+      "title": "Toddler Tuesday",
+      "reason": "already linked to catalog event"
+    },
+    {
+      "candidate_id": "candidate-ithra-events-ithra-members-tour-20260818-5011b841",
+      "event_id": "event-ithra-members-tour",
+      "title": "Ithra Members Tour",
+      "reason": "already linked to catalog event"
+    },
+    {
+      "candidate_id": "candidate-ithra-events-ithra-members-tour-english-20260818-67fc89c0",
+      "event_id": "event-ithra-members-tour-arabic",
+      "title": "Ithra Members Tour (English)",
+      "reason": "trusted duplicate linked to existing catalog event"
+    },
+    {
       "candidate_id": "candidate-hayy-jameel-events-hayy-makers-introduction-to-photography-understanding-your-camera-20260818-d51ed26b",
       "event_id": "event-hayy-makers-introduction-to-photography-understanding-your-camera",
       "title": "Hayy Makers | Introduction to Photography: Understanding your Camera",
       "reason": "already linked to catalog event"
     },
     {
+      "candidate_id": "candidate-ithra-events-water-challenges-20260818-eea51834",
+      "event_id": "event-water-challenges",
+      "title": "Water Challenges",
+      "reason": "trusted duplicate linked to existing catalog event"
+    },
+    {
       "candidate_id": "candidate-sfda-events-دور-المواصفات-القياسية-في-دعم-عمليات-التعقيم-والتغليف-ووضع-المعلومات-الت-20260819-dd16cb51",
       "event_id": "event-دور-المواصفات-القياسية-في-دعم-عمليات-التعقيم-والتغليف-ووضع-المعلومات-الت",
       "title": "دور المواصفات القياسية في دعم عمليات التعقيم والتغليف ووضع المعلومات التعريفية للمصانع المحلية",
+      "reason": "already linked to catalog event"
+    },
+    {
+      "candidate_id": "candidate-ithra-events-all-things-hedgehogs-20260819-952dc936",
+      "event_id": "event-all-things-hedgehogs",
+      "title": "All Things Hedgehogs",
       "reason": "already linked to catalog event"
     },
     {
@@ -1690,15 +1675,39 @@
       "reason": "already linked to catalog event"
     },
     {
+      "candidate_id": "candidate-ithra-events-little-explorers-20260820-1cc1993f",
+      "event_id": "event-little-explorers",
+      "title": "Little Explorers",
+      "reason": "already linked to catalog event"
+    },
+    {
+      "candidate_id": "candidate-ithra-events-trivia-night-earth-quest-tic-tac-know-20260820-ef7080ff",
+      "event_id": "event-trivia-night-earth-quest-tic-tac-know",
+      "title": "Trivia Night - Earth Quest: Tic-Tac-Know",
+      "reason": "already linked to catalog event"
+    },
+    {
       "candidate_id": "candidate-visit-saudi-seasons-buraydah-international-dates-carnival-activites-20260820-9a218560",
       "event_id": "event-buraydah-international-dates-carnival-activites",
       "title": "Buraydah International Dates Carnival Activites",
       "reason": "already linked to catalog event"
     },
     {
+      "candidate_id": "candidate-ithra-events-games-hub-20260820-fb83124c",
+      "event_id": "event-games-hub",
+      "title": "Games Hub",
+      "reason": "already linked to catalog event"
+    },
+    {
       "candidate_id": "candidate-visit-saudi-seasons-unaizah-international-dates-carnival-20260820-612474e4",
       "event_id": "event-unaizah-international-dates-carnival",
       "title": "Unaizah International Dates Carnival",
+      "reason": "already linked to catalog event"
+    },
+    {
+      "candidate_id": "candidate-ithra-events-museum-story-time-20260820-1104734c",
+      "event_id": "event-museum-story-time",
+      "title": "Museum Story Time",
       "reason": "already linked to catalog event"
     },
     {
@@ -1720,9 +1729,21 @@
       "reason": "already linked to catalog event"
     },
     {
+      "candidate_id": "candidate-ithra-events-story-land-20260822-bb5dc01b",
+      "event_id": "event-story-land",
+      "title": "Story Land",
+      "reason": "already linked to catalog event"
+    },
+    {
       "candidate_id": "candidate-hayy-jameel-events-hayy-makers-woodworking-course-level-2-with-ahmad-sofi-20260822-96b7ac24",
       "event_id": "event-hayy-makers",
       "title": "Hayy Makers | Woodworking Course (Level 2) with Ahmad Sofi",
+      "reason": "already linked to catalog event"
+    },
+    {
+      "candidate_id": "candidate-misk-hub-events-development-media-from-message-to-impact-20260822-add557ec",
+      "event_id": "event-development-media-from-message-to-impact",
+      "title": "Development Media: From Message to Impact",
       "reason": "already linked to catalog event"
     },
     {

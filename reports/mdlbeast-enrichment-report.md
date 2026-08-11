@@ -1,6 +1,6 @@
 # MDLBEAST Enrichment Report
 
-- generated_at: 2026-08-11T02:45:43.449Z
+- generated_at: 2026-08-11T07:52:09.564Z
 - targets: 5
 - candidates: 4
 - enriched: 5
@@ -10,8 +10,8 @@
 
 ## Enriched
 
-- Unstable - official-next-data - image=yes - features=7
 - Beast House - official-next-data - image=yes - features=7
+- Unstable - official-next-data - image=yes - features=7
 - A Thousand and One - official-next-data - image=yes - features=7
 - XP Music Futures 2026 - official-next-data - image=yes - features=7
 - SOUNDSTORM 26 - official-next-data - image=yes - features=8

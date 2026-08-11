@@ -1,13 +1,13 @@
 {
   "schema": "eventlive.source-final-build.v1",
-  "generated_at": "2026-08-11T02:48:00.018Z",
+  "generated_at": "2026-08-11T07:55:43.081Z",
   "image_cache_report": "reports/event-image-cache-report.json",
   "decision": "rebuilt",
-  "duration_ms": 9885,
+  "duration_ms": 12464,
   "exit_code": 0,
   "cache_totals": {
     "targets": 500,
-    "cached_total": 799,
+    "cached_total": 800,
     "fetched": 1,
     "reused": 496,
     "failed": 3,
