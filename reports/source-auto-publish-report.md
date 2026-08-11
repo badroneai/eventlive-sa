@@ -1,11 +1,11 @@
 # EventLive Source Auto Publish Report
 
-- published_at: 2026-08-10T19:53:18.547Z
+- published_at: 2026-08-11T02:43:48.345Z
 - dry_run: false
 - include_partner: true
-- candidates_seen: 598
-- published_new: 6
-- linked_existing: 554
+- candidates_seen: 597
+- published_new: 7
+- linked_existing: 552
 - blocked_remaining: 38
 - duplicate_review_alerts: 8
 
@@ -31,6 +31,7 @@
 | candidate-visit-saudi-calendar-pdf-مزرعة-التوت-الأسود-20260701-4a38d19e | published | event-مزرعة-التوت-الأسود | مزرعة التوت الأسود |
 | candidate-visit-saudi-calendar-pdf-الأخطبوطية-20260704-4a38d19e | published | event-الأخطبوطية | الأخطبوطية |
 | candidate-visit-saudi-calendar-pdf-عروض-الفنون-الأدائية-التقليدية-20260706-4a38d19e | published | event-عروض-الفنون-الأدائية-التقليدية | عروض الفنون الأدائية التقليدية |
+| candidate-misk-hub-events-development-media-from-message-to-impact-20260824-add557ec | published | event-development-media-from-message-to-impact | Development Media: From Message to Impact |
 | candidate-moc-cultural-subportals-skill-development-initiative-20210714-10f7dc2c | linked-existing | event-skill-development-initiative | already linked to catalog event |
 | candidate-moc-cultural-subportals-sitar-20220921-cda2e068 | linked-existing | event-sitar | already linked to catalog event |
 | candidate-moc-cultural-subportals-the-architecture-and-design-caf-20240427-046e2ec1 | linked-existing | event-the-architecture-and-design-caf | already linked to catalog event |
@@ -82,7 +83,6 @@
 | candidate-hayy-jameel-events-hayy-learning-recess-an-after-school-programme-for-teens-20260606-adba0792 | linked-existing | event-hayy-learning | already linked to catalog event |
 | candidate-visit-saudi-calendar-pdf-ساوث-ويست-الكاوبوي-20260607-4a38d19e | linked-existing | event-ساوث-ويست-الكاوبوي | already linked to catalog event |
 | candidate-discover-aseer-events-light-nights-20260607-35f3a49e | linked-existing | event-light-nights | already linked to catalog event |
-| candidate-visit-saudi-calendar-pdf-منطقة-مشجعي-كأس-العالم-2026-في-فندق-كيمبتون-كافد-20260611-4a38d19e | linked-existing | event-world-cup-2026-fan-zone-at-kimpton-kafd | already linked to catalog event |
 | candidate-visit-saudi-calendar-pdf-مهرجان-صوت-أبها-saf-20260615-4a38d19e | linked-existing | event-مهرجان-صوت-أبها-saf | already linked to catalog event |
 | candidate-visit-saudi-seasons-sound-of-abha-fest-saf-20260615-6209ec1e | linked-existing | event-sound-of-abha-fest-saf | already linked to catalog event |
 | candidate-visit-saudi-calendar-pdf-معرض-في-تتبّع-ذكريات-غامرة-20260618-4a38d19e | linked-existing | event-معرض-في-تتبّع-ذكريات-غامرة | already linked to catalog event |
@@ -137,7 +137,6 @@
 | candidate-hayy-jameel-events-hayy-explorers-as-told-by-the-land-20260702-09157ea4 | linked-existing | event-hayy-explorers | already linked to catalog event |
 | candidate-visit-saudi-seasons-mahabah-20260702-dd5fd13b | linked-existing | event-mahabah | already linked to catalog event |
 | candidate-visit-saudi-calendar-pdf-الاخطبوطية-20260704-4a38d19e | linked-existing | event-الأخطبوطية | trusted duplicate linked to existing catalog event |
-| candidate-riyadh-city-events-registration-for-international-research-competition-on-non-terrestrial-n-20260704-61ba0723 | linked-existing | event-registration-for-international-research-competition-on-non-terrestrial-n | already linked to catalog event |
 | candidate-visit-saudi-calendar-okhtabotiya-20260704-914f9dce | linked-existing | event-okhtabotiya | already linked to catalog event |
 | candidate-tuwaiq-academy-bootcamps-معسكر-التأهيل-لرخصة-الدرونز-وتحليل-البيانات-الفوتوغرامترية-20260705-60b7f94b | linked-existing | event-معسكر-التأهيل-لرخصة-الدرونز-وتحليل-البيانات-الفوتوغرامترية | already linked to catalog event |
 | candidate-visit-saudi-calendar-pdf-ورث-الفن-20260706-4a38d19e | linked-existing | event-ورث-الفن | already linked to catalog event |
@@ -203,8 +202,6 @@
 | candidate-future-skills-catalog-machine-learning-التعلم-الالي-20260809-13b057e2 | linked-existing | event-machine-learning-التعلم-الالي | already linked to catalog event |
 | candidate-future-skills-catalog-comptia-cloud-20260809-8946f510 | linked-existing | event-comptia-cloud | already linked to catalog event |
 | candidate-monshaat-events-لقاءات-أسبوع-الذكاء-الاصطناعي-9-13-أغسطس-2026-20260809-08845aeb | linked-existing | event-لقاءات-أسبوع-الذكاء-الاصطناعي-9-13-أغسطس-2026 | already linked to catalog event |
-| candidate-ithra-events-bedayat-beginnings-of-saudi-art-movement-20260810-e0a239ef | linked-existing | event-bedayat-beginnings-of-saudi-art-movement | already linked to catalog event |
-| candidate-ithra-events-echoes-of-the-familiar-20260810-cc43c2bd | linked-existing | event-echoes-of-the-familiar | already linked to catalog event |
 | candidate-hayy-jameel-events-hayy-makers-introduction-to-pottery-course-with-pharah-al-ghalib-august-20260810-f9fb1ca0 | linked-existing | event-hayy-makers-2 | already linked to catalog event |
 | candidate-visit-saudi-calendar-pdf-أوركسترا-game-of-thrones-20260811-4a38d19e | linked-existing | event-أوركسترا-game-of-thrones | already linked to catalog event |
 | candidate-ithra-events-toddler-tuesday-20260811-1afead7d | linked-existing | event-toddler-tuesday | already linked to catalog event |
@@ -212,6 +209,8 @@
 | candidate-ithra-events-printing-house-20260811-e56f4f89 | linked-existing | event-printing-house | already linked to catalog event |
 | candidate-ithra-events-tafasahu-make-room-20260811-562bc61d | linked-existing | event-tafasahu-make-room | already linked to catalog event |
 | candidate-ithra-events-tinkering-stations-20260811-5a2c4c0e | linked-existing | event-tinkering-stations | already linked to catalog event |
+| candidate-ithra-events-bedayat-beginnings-of-saudi-art-movement-20260811-e0a239ef | linked-existing | event-bedayat-beginnings-of-saudi-art-movement | already linked to catalog event |
+| candidate-ithra-events-echoes-of-the-familiar-20260811-cc43c2bd | linked-existing | event-echoes-of-the-familiar | already linked to catalog event |
 | candidate-ithra-events-ithra-members-tour-20260811-5011b841 | linked-existing | event-ithra-members-tour | already linked to catalog event |
 | candidate-ithra-events-ithra-members-tour-arabic-20260811-c4eda15f | linked-existing | event-ithra-members-tour | already linked to catalog event |
 | candidate-ithra-events-spot-of-inspiration-20260811-5bac584c | linked-existing | event-spot-of-inspiration | already linked to catalog event |

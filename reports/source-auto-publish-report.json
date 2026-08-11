@@ -1,18 +1,18 @@
 {
-  "published_at": "2026-08-10T19:53:18.547Z",
+  "published_at": "2026-08-11T02:43:48.345Z",
   "dry_run": false,
   "include_partner": true,
   "source_candidates": "data/source_candidates.json",
   "events_catalog": "data/events_catalog.json",
-  "candidates_seen": 598,
+  "candidates_seen": 597,
   "totals": {
-    "candidates_seen": 598,
-    "published": 6,
-    "linked_existing": 554,
+    "candidates_seen": 597,
+    "published": 7,
+    "linked_existing": 552,
     "blocked": 38,
     "duplicate_review_alerts": 8,
     "category_fallback_alerts": 0,
-    "reconciled": 560
+    "reconciled": 559
   },
   "category_fallback_alerts": [],
   "duplicate_catalog_rows_removed": 0,
@@ -193,6 +193,11 @@
       "candidate_id": "candidate-visit-saudi-calendar-pdf-عروض-الفنون-الأدائية-التقليدية-20260706-4a38d19e",
       "event_id": "event-عروض-الفنون-الأدائية-التقليدية",
       "title": "عروض الفنون الأدائية التقليدية"
+    },
+    {
+      "candidate_id": "candidate-misk-hub-events-development-media-from-message-to-impact-20260824-add557ec",
+      "event_id": "event-development-media-from-message-to-impact",
+      "title": "Development Media: From Message to Impact"
     }
   ],
   "linked_existing": [
@@ -500,12 +505,6 @@
       "candidate_id": "candidate-discover-aseer-events-light-nights-20260607-35f3a49e",
       "event_id": "event-light-nights",
       "title": "Light Nights",
-      "reason": "already linked to catalog event"
-    },
-    {
-      "candidate_id": "candidate-visit-saudi-calendar-pdf-منطقة-مشجعي-كأس-العالم-2026-في-فندق-كيمبتون-كافد-20260611-4a38d19e",
-      "event_id": "event-world-cup-2026-fan-zone-at-kimpton-kafd",
-      "title": "منطقة مشجعي كأس العالم 2026 في فندق كيمبتون كافد",
       "reason": "already linked to catalog event"
     },
     {
@@ -831,12 +830,6 @@
       "event_id": "event-الأخطبوطية",
       "title": "الاخطبوطية",
       "reason": "trusted duplicate linked to existing catalog event"
-    },
-    {
-      "candidate_id": "candidate-riyadh-city-events-registration-for-international-research-competition-on-non-terrestrial-n-20260704-61ba0723",
-      "event_id": "event-registration-for-international-research-competition-on-non-terrestrial-n",
-      "title": "Registration for International Research Competition on Non-Terrestrial Networks",
-      "reason": "already linked to catalog event"
     },
     {
       "candidate_id": "candidate-visit-saudi-calendar-okhtabotiya-20260704-914f9dce",
@@ -1229,18 +1222,6 @@
       "reason": "already linked to catalog event"
     },
     {
-      "candidate_id": "candidate-ithra-events-bedayat-beginnings-of-saudi-art-movement-20260810-e0a239ef",
-      "event_id": "event-bedayat-beginnings-of-saudi-art-movement",
-      "title": "Bedayat: Beginnings of Saudi Art Movement",
-      "reason": "already linked to catalog event"
-    },
-    {
-      "candidate_id": "candidate-ithra-events-echoes-of-the-familiar-20260810-cc43c2bd",
-      "event_id": "event-echoes-of-the-familiar",
-      "title": "Echoes of the Familiar",
-      "reason": "already linked to catalog event"
-    },
-    {
       "candidate_id": "candidate-hayy-jameel-events-hayy-makers-introduction-to-pottery-course-with-pharah-al-ghalib-august-20260810-f9fb1ca0",
       "event_id": "event-hayy-makers-2",
       "title": "Hayy Makers | Introduction to Pottery Course with Pharah Al-Ghalib, August",
@@ -1280,6 +1261,18 @@
       "candidate_id": "candidate-ithra-events-tinkering-stations-20260811-5a2c4c0e",
       "event_id": "event-tinkering-stations",
       "title": "Tinkering Stations",
+      "reason": "already linked to catalog event"
+    },
+    {
+      "candidate_id": "candidate-ithra-events-bedayat-beginnings-of-saudi-art-movement-20260811-e0a239ef",
+      "event_id": "event-bedayat-beginnings-of-saudi-art-movement",
+      "title": "Bedayat: Beginnings of Saudi Art Movement",
+      "reason": "already linked to catalog event"
+    },
+    {
+      "candidate_id": "candidate-ithra-events-echoes-of-the-familiar-20260811-cc43c2bd",
+      "event_id": "event-echoes-of-the-familiar",
+      "title": "Echoes of the Familiar",
       "reason": "already linked to catalog event"
     },
     {

@@ -1,18 +1,25 @@
 {
-  "generated_at": "2026-08-10T19:56:32.243Z",
+  "generated_at": "2026-08-11T02:47:49.644Z",
   "events_file": "dist/events.json",
   "manifest": "data/event_image_cache_manifest.json",
   "image_dir": "dist/assets/event-images",
   "totals": {
     "targets": 500,
-    "cached_total": 798,
-    "fetched": 0,
-    "reused": 497,
+    "cached_total": 799,
+    "fetched": 1,
+    "reused": 496,
     "failed": 3,
-    "skipped_recent_failures": 0,
+    "skipped_recent_failures": 3,
     "remembered_failures": 6
   },
-  "fetched": [],
+  "fetched": [
+    {
+      "source_url": "https://hub.misk.org.sa/media/r21hoj4t/9.png",
+      "file": "dist/assets/event-images/development-media-from-message-to-impact-f029255e73.png",
+      "bytes": 534469,
+      "events": 1
+    }
+  ],
   "reused": [
     {
       "source_url": "https://music.moc.gov.sa/-/media/Project/Ministries/Moc/Events/Artboard1.png",
@@ -347,11 +354,6 @@
     {
       "source_url": "https://scth.scene7.com/is/image/scth/combat-arena?wid=1400&hei=788&fit=constrain&fmt=webp",
       "file": "dist/assets/event-images/combat-arena-b158bf372a.webp",
-      "events": 1
-    },
-    {
-      "source_url": "https://api.riyadh.sa/sites/default/files/styles/medium/public/2026-07/NTN%202.png?itok=NcFLmn-3",
-      "file": "dist/assets/event-images/registration-for-international-research-competition-on-non-terrestrial-edd16ffe75.png",
       "events": 1
     },
     {
@@ -753,6 +755,11 @@
       "source_url": "https://hayyjameel.org/wp-content/uploads/2026/08/Screen-Shot-1448-02-26-at-2.37.08-PM-aspect-ratio-1942-910-1100x500.png",
       "file": "dist/assets/event-images/هاي-اكسبلوررز-في-شهر-آب-أغسطس-كما-قال-الأرض-طرق-التبادل-d16770589f.png",
       "events": 1
+    },
+    {
+      "source_url": "https://www.datocms-assets.com/66357/1751801189-mdlbeast.png?auto=format&fit=max&w=1200",
+      "file": "dist/assets/event-images/unstable-ba5c599823.avif",
+      "events": 5
     },
     {
       "source_url": "https://discoveraseer.com/en/img/asset/YXNzZXRzL2V4cGVyaWVuY2UvaGFtYWtpLnBuZw/hamaki.png?w=1024&fm=webp&s=d6b46ce0f3e022e5bcced45dd222ed9e",
@@ -1343,11 +1350,6 @@
       "source_url": "https://static.wixstatic.com/media/708478_a08e284e0e2b4361addf88f967bb6b9f%7Emv2.png/v1/fit/w_2500,h_1330,al_c/708478_a08e284e0e2b4361addf88f967bb6b9f%7Emv2.png",
       "file": "dist/assets/event-images/cips-mena-procurement-and-supply-chain-futures-conference-and-awards-42e0ccbf3d.png",
       "events": 1
-    },
-    {
-      "source_url": "https://www.datocms-assets.com/66357/1751801189-mdlbeast.png?auto=format&fit=max&w=1200",
-      "file": "dist/assets/event-images/unstable-ba5c599823.avif",
-      "events": 5
     },
     {
       "source_url": "https://api.riyadh.sa/sites/default/files/styles/medium/public/2026-01/esports.jpg?itok=m-JCBfZQ",
@@ -2465,6 +2467,11 @@
       "events": 1
     },
     {
+      "source_url": "https://api.riyadh.sa/sites/default/files/styles/medium/public/2026-07/NTN%202.png?itok=NcFLmn-3",
+      "file": "dist/assets/event-images/registration-for-international-research-competition-on-non-terrestrial-edd16ffe75.png",
+      "events": 1
+    },
+    {
       "source_url": "https://www.ithra.com/application/files/cache/thumbnails/57ced1047619d76eed02cbbfb34191f7.jpg",
       "file": "dist/assets/event-images/philosophy-for-everyone-a-journey-of-thought-from-young-to-old-1dc740ef9e.jpg",
       "events": 3
@@ -2493,41 +2500,64 @@
       "source_url": "https://www.ithra.com/application/files/cache/thumbnails/020d54be4c6194691645b3a8c40bd303.jpg",
       "file": "dist/assets/event-images/spotlight-on-korean-cinema-group-4-760a37b2aa.jpg",
       "events": 1
-    },
-    {
-      "source_url": "https://www.ithra.com/application/files/cache/thumbnails/d343871bd059c4dd50f887d50009539f.jpg",
-      "file": "dist/assets/event-images/documentary-competition-group-2-e0e9895316.jpg",
-      "events": 1
     }
   ],
   "rejected_removed": [],
   "missing_removed": [],
-  "skipped_recent_failures": [],
-  "failed": [
+  "skipped_recent_failures": [
     {
       "source_url": "https://cdn.rfecc.sa/wp-content/uploads/mec/qr_898ea2449274454e42895b52b18c6f68.png",
       "events": 1,
       "reason": "HTTP 403",
       "failure_kind": "access-denied",
-      "retry_after": "2026-08-11T19:56:32.243Z"
-    },
-    {
-      "source_url": "https://s7g10.scene7.com/is/image/rcu/fei2:landscape-16x9?$Responsive$&fit=stretch&fmt=webp&wid=1920",
-      "events": 1,
-      "reason": "HTTP 403",
-      "failure_kind": "access-denied",
-      "retry_after": "2026-08-11T19:56:32.243Z"
+      "retry_after": "2026-08-11T19:56:32.243Z",
+      "skipped": true
     },
     {
       "source_url": "https://api.riyadh.sa/sites/default/files/styles/medium/public/2026-07/er%20%2859%29.jpg?itok=a33APdGm",
       "events": 1,
       "reason": "not-image text/html; charset=utf-8",
       "failure_kind": "source-returned-html",
-      "retry_after": "2026-08-11T19:56:32.243Z"
+      "retry_after": "2026-08-11T19:56:32.243Z",
+      "skipped": true
+    },
+    {
+      "source_url": "https://s7g10.scene7.com/is/image/rcu/fei2:landscape-16x9?$Responsive$&fit=stretch&fmt=webp&wid=1920",
+      "events": 1,
+      "reason": "HTTP 403",
+      "failure_kind": "access-denied",
+      "retry_after": "2026-08-11T19:56:32.243Z",
+      "skipped": true
+    }
+  ],
+  "failed": [
+    {
+      "source_url": "https://cdn.rfecc.sa/wp-content/uploads/mec/qr_898ea2449274454e42895b52b18c6f68.png",
+      "events": 1,
+      "reason": "HTTP 403",
+      "failure_kind": "access-denied",
+      "retry_after": "2026-08-11T19:56:32.243Z",
+      "skipped": true
+    },
+    {
+      "source_url": "https://api.riyadh.sa/sites/default/files/styles/medium/public/2026-07/er%20%2859%29.jpg?itok=a33APdGm",
+      "events": 1,
+      "reason": "not-image text/html; charset=utf-8",
+      "failure_kind": "source-returned-html",
+      "retry_after": "2026-08-11T19:56:32.243Z",
+      "skipped": true
+    },
+    {
+      "source_url": "https://s7g10.scene7.com/is/image/rcu/fei2:landscape-16x9?$Responsive$&fit=stretch&fmt=webp&wid=1920",
+      "events": 1,
+      "reason": "HTTP 403",
+      "failure_kind": "access-denied",
+      "retry_after": "2026-08-11T19:56:32.243Z",
+      "skipped": true
     }
   ],
   "requires_rebuild": true,
   "rebuild_reasons": [
-    "new-failures:3"
+    "fetched:1"
   ]
 }

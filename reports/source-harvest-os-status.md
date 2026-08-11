@@ -1,32 +1,32 @@
 # EventLive Harvest OS Status
 
-- Generated at: 2026-08-10T20:04:19.603Z
+- Generated at: 2026-08-11T02:54:54.709Z
 - Status: NEEDS_WORK
 - Operating rule: Probe before new sources; sample before full harvest; Raw collection is not publication; discovery-only never auto-publishes.
 
 ## Totals
 
 - Sources: 88
-- Candidates: 598
-- Matched candidates: 568
+- Candidates: 597
+- Matched candidates: 567
 - Auto-publish sources: 15
 - Candidate-only sources: 12
 - Partnership-required sources: 5
-- Productive sources / attempted: 20/27
-- Collector errors: 5 (chronic 4, transient 1)
+- Productive sources / attempted: 23/32
+- Collector errors: 7 (chronic 4, transient 3)
 
 ## Publication Funnel
 
 | Stage | Count |
 | --- | --- |
-| discovered_this_run | 325 |
-| candidate_queue | 598 |
-| evaluated_for_publish | 598 |
-| linked_existing | 554 |
-| published_new | 6 |
+| discovered_this_run | 324 |
+| candidate_queue | 597 |
+| evaluated_for_publish | 597 |
+| linked_existing | 552 |
+| published_new | 7 |
 | blocked | 38 |
 | secondary_promoted | 0 |
-| secondary_still_blocked | 33 |
+| secondary_still_blocked | 34 |
 
 ## Blocked Reasons
 
@@ -48,11 +48,13 @@
 
 | Source | Kind | Failed runs in a row | Attempted this run | Reason |
 | --- | --- | --- | --- | --- |
-| moc-cultural-calendar | chronic | 22 | yes | collector-error: fetch failed; fetch failed |
-| mos-events | chronic | 22 | yes | collector-error: fetch failed |
-| moc-cultural-subportals | chronic | 22 | yes | collector-error: fetch failed; fetch failed |
+| moc-cultural-calendar | chronic | 22 | no | collector-error: fetch failed; fetch failed |
+| mos-events | chronic | 22 | no | collector-error: fetch failed |
+| moc-cultural-subportals | chronic | 22 | no | collector-error: fetch failed; fetch failed |
 | monshaat-events | chronic | 5 | no | collector-error: fetch failed; fetch failed |
-| saudi-space-agency-events | transient | 1 | yes | fetch failed |
+| saudi-space-agency-events | transient | 2 | yes | fetch failed |
+| asharqia-chamber-events | transient | 2 | yes | fetch failed; page.goto: Timeout 30000ms exceeded. Call log:   - navigating to "https://www.chamber.org.sa/sites/Arabic/Events/ChamberEvents/Pages/AllChamberEvents.aspx", waiting until "domcontentload |
+| saudi-pro-league-fixtures | transient | 1 | yes | fetch failed |
 
 | Source | Policy | Trust | Gate |
 | --- | --- | --- | --- |

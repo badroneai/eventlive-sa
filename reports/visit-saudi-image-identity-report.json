@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-10T19:53:20.739Z",
+  "generated_at": "2026-08-11T02:43:50.051Z",
   "catalog": "data/events_catalog.json",
   "candidates": "data/source_candidates.json",
   "manifest": "data/event_image_cache_manifest.json",
@@ -12,7 +12,7 @@
     "pdf_crop_assignments": 55,
     "verified": 54,
     "struck": 1,
-    "slots_seen_this_cycle": 58
+    "slots_seen_this_cycle": 57
   },
   "struck": [
     {
