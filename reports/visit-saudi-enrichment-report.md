@@ -1,12 +1,12 @@
 # Visit Saudi Calendar Enrichment Report
 
-- generated_at: 2026-08-12T08:05:40.905Z
+- generated_at: 2026-08-12T14:03:44.933Z
 - targets: 26
 - candidates: 16
 - enriched: 26
-- fetched: 26
+- fetched: 25
 - images: 24
-- fetch_failures: 0
+- fetch_failures: 1
 
 ## Enriched
 
@@ -26,7 +26,7 @@
 - Very Sary Night from Exit Thmanyah - official-page-html - image=yes - features=7
 - Saleh El Nawawy: Stand Up Comedy Show - official-page-html - image=yes - features=7
 - Rahma Riad at Vocally - official-page-html - image=yes - features=7
-- Stand-Up Comedy Night - official-page-html - image=yes - features=7
+- Stand-Up Comedy Night - approved-catalog-row - image=yes - features=6
 - Fill in the Blank in Jeddah - official-page-html - image=yes - features=7
 - International Falcon Breeders Auction - official-page-html - image=yes - features=7
 - Hussain Moheb Live in Riyadh - official-page-html - image=yes - features=7
@@ -39,4 +39,4 @@
 
 ## Fetch Failures
 
-- none
+- Stand-Up Comedy Night - HTTP 404

@@ -1,6 +1,6 @@
 # EventLive Source Ingestion Plan
 
-Generated at: 2026-08-12T08:08:14.812Z
+Generated at: 2026-08-12T14:06:27.567Z
 
 ## Executive Model
 
@@ -69,23 +69,23 @@ EventLive should not treat all registered sources equally. The operating model i
 | sdaia-academy-programs | - | 0 | - | Run in the 6-hour sync ring; improve zero-yield extractors before widening. |
 | misk-hub-events | ok | 1 | - | Run in the 6-hour sync ring; keep dedupe and image enrichment active. |
 | jcci-events-center | - | 0 | - | Run in the 6-hour sync ring; improve zero-yield extractors before widening. |
-| saudi-pro-league-fixtures | - | 0 | - | Run in the 6-hour sync ring; improve zero-yield extractors before widening. |
+| saudi-pro-league-fixtures | error | 0 | - | Run in the 6-hour sync ring; improve zero-yield extractors before widening. |
 | saudi-space-agency-events | ok | 1 | - | Run in the 6-hour sync ring; keep dedupe and image enrichment active. |
 | moc-cultural-subportals | - | 0 | - | Run in the 6-hour sync ring; improve zero-yield extractors before widening. |
 | discover-aseer-events | ok | 37 | - | Run in the 6-hour sync ring; keep dedupe and image enrichment active. |
 | saudi-water-authority-events | ok | 8 | - | Run in the 6-hour sync ring; keep dedupe and image enrichment active. |
-| sfda-events | ok | 7 | - | Run in the 6-hour sync ring; keep dedupe and image enrichment active. |
+| sfda-events | ok | 8 | - | Run in the 6-hour sync ring; keep dedupe and image enrichment active. |
 | sdaia-calendar-events | ok | 2 | - | Run in the 6-hour sync ring; keep dedupe and image enrichment active. |
 | makkah-chamber-events | - | 0 | - | Run in the 6-hour sync ring; improve zero-yield extractors before widening. |
 | scega-exhibitions-conferences | ok | 4 | - | Run in the 6-hour sync ring; keep dedupe and image enrichment active. |
 | asharqia-chamber-events | - | 0 | - | Run in the 6-hour sync ring; improve zero-yield extractors before widening. |
-| qassim-chamber-events | ok | 0 | - | Run in the 6-hour sync ring; improve zero-yield extractors before widening. |
+| qassim-chamber-events | - | 0 | - | Run in the 6-hour sync ring; improve zero-yield extractors before widening. |
 | abha-chamber-events | - | 0 | - | Run in the 6-hour sync ring; improve zero-yield extractors before widening. |
-| jazan-chamber-events | - | 0 | - | Run in the 6-hour sync ring; improve zero-yield extractors before widening. |
+| jazan-chamber-events | ok | 0 | - | Run in the 6-hour sync ring; improve zero-yield extractors before widening. |
 | umm-al-qura-events | ok | 7 | - | Run in the 6-hour sync ring; keep dedupe and image enrichment active. |
-| madinah-chamber-events | - | 0 | - | Run in the 6-hour sync ring; improve zero-yield extractors before widening. |
+| madinah-chamber-events | ok | 0 | - | Run in the 6-hour sync ring; improve zero-yield extractors before widening. |
 | madinah-architecture-festival | ok | 1 | - | Run in the 6-hour sync ring; keep dedupe and image enrichment active. |
-| hayy-jameel-events | ok | 67 | - | Run in the 6-hour sync ring; keep dedupe and image enrichment active. |
+| hayy-jameel-events | ok | 68 | - | Run in the 6-hour sync ring; keep dedupe and image enrichment active. |
 
 ## Full Source Plan
 

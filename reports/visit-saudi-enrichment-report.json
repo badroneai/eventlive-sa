@@ -1,14 +1,14 @@
 {
-  "generated_at": "2026-08-12T08:05:40.905Z",
+  "generated_at": "2026-08-12T14:03:44.933Z",
   "catalog": "data/events_catalog.json",
   "source": "Visit Saudi Calendar",
   "totals": {
     "targets": 26,
     "candidates": 16,
     "enriched": 26,
-    "fetched": 26,
+    "fetched": 25,
     "images": 24,
-    "fetch_failures": 0
+    "fetch_failures": 1
   },
   "enriched": [
     {
@@ -142,10 +142,10 @@
     {
       "id": "event-stand-up-comedy-night-2",
       "title": "Stand-Up Comedy Night",
-      "source_method": "official-page-html",
+      "source_method": "approved-catalog-row",
       "image_url": "https://scth.scene7.com/is/image/scth/stand-up-comedy-3-jeddah?wid=1920&hei=1080&fit=constrain&fmt=webp",
-      "fetched": true,
-      "features": 7
+      "fetched": false,
+      "features": 6
     },
     {
       "id": "event-fill-in-the-blank-in-jeddah",
@@ -220,5 +220,12 @@
       "features": 6
     }
   ],
-  "failed": []
+  "failed": [
+    {
+      "id": "event-stand-up-comedy-night-2",
+      "title": "Stand-Up Comedy Night",
+      "source_url": "https://www.visitsaudi.com/en/jeddah/events/stand-up-comedy-night-jeddah",
+      "reason": "HTTP 404"
+    }
+  ]
 }

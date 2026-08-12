@@ -1,21 +1,21 @@
 {
   "schema": "eventlive.harvest-os-status.v1",
-  "generated_at": "2026-08-12T08:15:50.539Z",
+  "generated_at": "2026-08-12T14:14:02.886Z",
   "status": "NEEDS_WORK",
   "operating_rule": "Probe before new sources; sample before full harvest; Raw collection is not publication; discovery-only never auto-publishes.",
   "totals": {
     "sources": 88,
-    "candidates": 601,
-    "matched_candidates": 571,
+    "candidates": 603,
+    "matched_candidates": 573,
     "auto_publish_sources": 15,
     "candidate_only_sources": 12,
     "partnership_required_sources": 5,
     "blocked_or_closed_sources": 0,
     "manual_review_sources": 56,
-    "collection_attempted": 22,
+    "collection_attempted": 26,
     "productive_sources": 21,
-    "collector_errors": 5,
-    "chronic_collector_errors": 5,
+    "collector_errors": 6,
+    "chronic_collector_errors": 6,
     "transient_collector_errors": 0
   },
   "policies": {
@@ -25,19 +25,19 @@
     "manual_review": 56
   },
   "candidates_by_gate": {
-    "catalog-review": 568,
+    "catalog-review": 570,
     "duplicate-review": 8,
     "source-evidence": 25
   },
   "funnel": {
-    "discovered_this_run": 317,
-    "candidate_queue": 601,
-    "evaluated_for_publish": 601,
+    "discovered_this_run": 319,
+    "candidate_queue": 603,
+    "evaluated_for_publish": 603,
     "linked_existing": 557,
-    "published_new": 6,
+    "published_new": 8,
     "blocked": 38,
-    "secondary_promoted": 0,
-    "secondary_still_blocked": 33
+    "secondary_promoted": 1,
+    "secondary_still_blocked": 34
   },
   "blocked_reasons": {
     "possible duplicate requires review: exact-title-city-source-conflict": 6,
@@ -80,6 +80,13 @@
       "error_streak": 6,
       "kind": "chronic",
       "attempted_this_run": false
+    },
+    {
+      "id": "saudi-pro-league-fixtures",
+      "note": "collector-error: fetch failed",
+      "error_streak": 3,
+      "kind": "chronic",
+      "attempted_this_run": true
     },
     {
       "id": "asharqia-chamber-events",

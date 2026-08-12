@@ -1,7 +1,7 @@
 # EventLive Official Single-Session Activation
-- Generated at: 2026-08-12T08:07:15.716Z
+- Generated at: 2026-08-12T14:05:11.414Z
 - Max duration hours: 8
-- Activated: 25
+- Activated: 26
 - Skipped long events: 6
 
 | Source | Event | Duration | Type |
@@ -30,4 +30,5 @@
 | Saudi Universities and Technical Colleges | Boat Bash Cruise | 6h | official-community-session |
 | Saudi Universities and Technical Colleges | Register for the World Breastfeeding Week Awareness Lecture | 2h | official-community-session |
 | Saudi Universities and Technical Colleges | Summer Splash at South Beach | 4h | official-community-session |
+| Saudi Food and Drug Authority Events | شرح وتوضيح إجراءات الاستيراد والتصدير وحرية البيع | 2h | official-online-workshop |
 | Saudi Food and Drug Authority Events | دور الهيئة العامة للغذاء و الدواء في ضمان سلامة الاستخدام الامن لجهاز الماموجرام | 1h | official-online-workshop |

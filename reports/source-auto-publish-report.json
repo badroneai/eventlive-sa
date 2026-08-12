@@ -1,18 +1,18 @@
 {
-  "published_at": "2026-08-12T08:04:46.735Z",
+  "published_at": "2026-08-12T14:02:55.249Z",
   "dry_run": false,
   "include_partner": true,
   "source_candidates": "data/source_candidates.json",
   "events_catalog": "data/events_catalog.json",
-  "candidates_seen": 601,
+  "candidates_seen": 603,
   "totals": {
-    "candidates_seen": 601,
-    "published": 6,
+    "candidates_seen": 603,
+    "published": 8,
     "linked_existing": 557,
     "blocked": 38,
     "duplicate_review_alerts": 8,
     "category_fallback_alerts": 0,
-    "reconciled": 563
+    "reconciled": 565
   },
   "category_fallback_alerts": [],
   "duplicate_catalog_rows_removed": 0,
@@ -193,6 +193,16 @@
       "candidate_id": "candidate-visit-saudi-calendar-pdf-عروض-الفنون-الأدائية-التقليدية-20260706-4a38d19e",
       "event_id": "event-عروض-الفنون-الأدائية-التقليدية",
       "title": "عروض الفنون الأدائية التقليدية"
+    },
+    {
+      "candidate_id": "candidate-sfda-events-شرح-وتوضيح-إجراءات-الاستيراد-والتصدير-وحرية-البيع-20260909-7d3f0aff",
+      "event_id": "event-شرح-وتوضيح-إجراءات-الاستيراد-والتصدير-وحرية-البيع",
+      "title": "شرح وتوضيح إجراءات الاستيراد والتصدير وحرية البيع"
+    },
+    {
+      "candidate_id": "candidate-misk-hub-programs-application-deadline-discover-your-path-20261130-1bbce22f",
+      "event_id": "event-application-deadline-discover-your-path",
+      "title": "Application deadline: Discover Your Path"
     }
   ],
   "linked_existing": [
@@ -1289,24 +1299,6 @@
       "reason": "already linked to catalog event"
     },
     {
-      "candidate_id": "candidate-ithra-events-spot-of-inspiration-20260812-5bac584c",
-      "event_id": "event-spot-of-inspiration",
-      "title": "Spot of Inspiration",
-      "reason": "already linked to catalog event"
-    },
-    {
-      "candidate_id": "candidate-ithra-events-childrens-museum-story-time-20260812-ada8b9db",
-      "event_id": "event-childrens-museum-story-time",
-      "title": "Children's Museum Story Time",
-      "reason": "already linked to catalog event"
-    },
-    {
-      "candidate_id": "candidate-ithra-events-emboss-printing-experience-20260812-2671d1ce",
-      "event_id": "event-emboss-printing-experience",
-      "title": "Emboss Printing Experience",
-      "reason": "already linked to catalog event"
-    },
-    {
       "candidate_id": "candidate-ithra-events-energy-lab-20260812-60155d60",
       "event_id": "event-energy-lab",
       "title": "Energy Lab",
@@ -1349,6 +1341,12 @@
       "reason": "already linked to catalog event"
     },
     {
+      "candidate_id": "candidate-ithra-events-emboss-printing-experience-20260812-2671d1ce",
+      "event_id": "event-emboss-printing-experience",
+      "title": "Emboss Printing Experience",
+      "reason": "already linked to catalog event"
+    },
+    {
       "candidate_id": "candidate-ithra-events-english-children-book-club-10-12-20260812-efa3d7e3",
       "event_id": "event-english-children-book-club-10-12",
       "title": "English Children Book Club (10 - 12)",
@@ -1370,6 +1368,18 @@
       "candidate_id": "candidate-ithra-events-your-book-in-a-minute-20260812-c8aab584",
       "event_id": "event-your-book-in-a-minute",
       "title": "Your Book in a Minute!",
+      "reason": "already linked to catalog event"
+    },
+    {
+      "candidate_id": "candidate-ithra-events-spot-of-inspiration-20260812-5bac584c",
+      "event_id": "event-spot-of-inspiration",
+      "title": "Spot of Inspiration",
+      "reason": "already linked to catalog event"
+    },
+    {
+      "candidate_id": "candidate-ithra-events-childrens-museum-story-time-20260812-ada8b9db",
+      "event_id": "event-childrens-museum-story-time",
+      "title": "Children's Museum Story Time",
       "reason": "already linked to catalog event"
     },
     {
