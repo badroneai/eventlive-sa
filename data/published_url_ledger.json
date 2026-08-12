@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "generated_at": "2026-08-12T03:04:12.565Z",
+  "generated_at": "2026-08-12T08:10:51.283Z",
   "events": {
     "event-skill-development-initiative": {
       "identity": "skill development initiative|riyadh|2021-07-14",
@@ -1095,11 +1095,6 @@
     "event-hayy-arts-from-another-angel-explore-contemporary-art-with-alternative-e": {
       "identity": "hayy arts | from another angle, explore contemporary art with alternative exhibition tours|jeddah|2026-08-12",
       "first_seen": "2026-08-09",
-      "last_seen": "2026-08-12"
-    },
-    "event-مسارات-تصنيع-الأجهزة-والمستلزمات-الطبية": {
-      "identity": "مسارات تصنيع الأجهزة والمستلزمات الطبية|online|2026-08-12",
-      "first_seen": "2026-08-02",
       "last_seen": "2026-08-12"
     },
     "event-الإدراج-في-خطوات": {
@@ -2725,6 +2720,11 @@
     "event-space-debris-conference-2028": {
       "identity": "space debris conference 2028|riyadh|2028-02-15",
       "first_seen": "2026-08-06",
+      "last_seen": "2026-08-12"
+    },
+    "event-مسارات-تصنيع-الأجهزة-والمستلزمات-الطبية": {
+      "identity": "مسارات تصنيع الأجهزة والمستلزمات الطبية|online|2026-08-12",
+      "first_seen": "2026-08-02",
       "last_seen": "2026-08-12"
     },
     "event-moksha": {

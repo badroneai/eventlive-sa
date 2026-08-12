@@ -1,6 +1,6 @@
 {
   "schema": "eventlive.harvest-os-status.v1",
-  "generated_at": "2026-08-12T03:09:06.208Z",
+  "generated_at": "2026-08-12T08:15:50.539Z",
   "status": "NEEDS_WORK",
   "operating_rule": "Probe before new sources; sample before full harvest; Raw collection is not publication; discovery-only never auto-publishes.",
   "totals": {
@@ -12,7 +12,7 @@
     "partnership_required_sources": 5,
     "blocked_or_closed_sources": 0,
     "manual_review_sources": 56,
-    "collection_attempted": 24,
+    "collection_attempted": 22,
     "productive_sources": 21,
     "collector_errors": 5,
     "chronic_collector_errors": 5,
@@ -30,7 +30,7 @@
     "source-evidence": 25
   },
   "funnel": {
-    "discovered_this_run": 315,
+    "discovered_this_run": 317,
     "candidate_queue": 601,
     "evaluated_for_publish": 601,
     "linked_existing": 557,
@@ -86,7 +86,7 @@
       "note": "fetch failed; page.goto: Timeout 30000ms exceeded. Call log:   - navigating to \"https://www.chamber.org.sa/sites/Arabic/Events/ChamberEvents/Pages/AllChamberEvents.aspx\", waiting until \"domcontentload",
       "error_streak": 3,
       "kind": "chronic",
-      "attempted_this_run": true
+      "attempted_this_run": false
     }
   ],
   "sources": [
