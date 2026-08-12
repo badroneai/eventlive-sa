@@ -1,11 +1,11 @@
 # EventLive Source Auto Publish Report
 
-- published_at: 2026-08-12T14:02:55.249Z
+- published_at: 2026-08-12T19:56:43.420Z
 - dry_run: false
 - include_partner: true
-- candidates_seen: 603
-- published_new: 8
-- linked_existing: 557
+- candidates_seen: 594
+- published_new: 6
+- linked_existing: 550
 - blocked_remaining: 38
 - duplicate_review_alerts: 8
 
@@ -31,8 +31,6 @@
 | candidate-visit-saudi-calendar-pdf-مزرعة-التوت-الأسود-20260701-4a38d19e | published | event-مزرعة-التوت-الأسود | مزرعة التوت الأسود |
 | candidate-visit-saudi-calendar-pdf-الأخطبوطية-20260704-4a38d19e | published | event-الأخطبوطية | الأخطبوطية |
 | candidate-visit-saudi-calendar-pdf-عروض-الفنون-الأدائية-التقليدية-20260706-4a38d19e | published | event-عروض-الفنون-الأدائية-التقليدية | عروض الفنون الأدائية التقليدية |
-| candidate-sfda-events-شرح-وتوضيح-إجراءات-الاستيراد-والتصدير-وحرية-البيع-20260909-7d3f0aff | published | event-شرح-وتوضيح-إجراءات-الاستيراد-والتصدير-وحرية-البيع | شرح وتوضيح إجراءات الاستيراد والتصدير وحرية البيع |
-| candidate-misk-hub-programs-application-deadline-discover-your-path-20261130-1bbce22f | published | event-application-deadline-discover-your-path | Application deadline: Discover Your Path |
 | candidate-moc-cultural-subportals-skill-development-initiative-20210714-10f7dc2c | linked-existing | event-skill-development-initiative | already linked to catalog event |
 | candidate-moc-cultural-subportals-sitar-20220921-cda2e068 | linked-existing | event-sitar | already linked to catalog event |
 | candidate-moc-cultural-subportals-the-architecture-and-design-caf-20240427-046e2ec1 | linked-existing | event-the-architecture-and-design-caf | already linked to catalog event |
@@ -195,47 +193,34 @@
 | candidate-umm-al-qura-events-التسجيل-والسداد-لدبلوم-المتوسط-عن-بعد-في-أمن-المعلومات-مع-الشركاء-20260802-1a84c3bc | linked-existing | event-التسجيل-والسداد-لدبلوم-المتوسط-عن-بعد-في-أمن-المعلومات-مع-الشركاء | already linked to catalog event |
 | candidate-umm-al-qura-events-التسجيل-والسداد-لدبلوم-المتوسط-عن-بعد-في-اللغة-الإنجليزية-المهنية-مع-الش-20260802-7ea2fdc6 | linked-existing | event-التسجيل-والسداد-لدبلوم-المتوسط-عن-بعد-في-اللغة-الإنجليزية-المهنية-مع-الش | already linked to catalog event |
 | candidate-misk-hub-programs-nonprofit-sector-skills-program-20260803-075740c9 | linked-existing | event-nonprofit-sector-skills-program | already linked to catalog event |
-| candidate-discover-aseer-events-the-dearest-country-20260803-b424a70f | linked-existing | event-the-dearest-country | already linked to catalog event |
 | candidate-umm-al-qura-events-الترشح-للدبلوم-المتوسط-في-البرمجة-وعلوم-الحاسب-في-الجبيل-بالتعاون-مع-كلي-20260805-5ba68667 | linked-existing | event-الترشح-للدبلوم-المتوسط-في-البرمجة-وعلوم-الحاسب-في-الجبيل-بالتعاون-مع-كلي | already linked to catalog event |
 | candidate-visit-saudi-calendar-international-falcon-breeders-auction-20260805-4b7cff1b | linked-existing | event-international-falcon-breeders-auction | already linked to catalog event |
 | candidate-discover-aseer-events-musical-concerts-20260807-169733ac | linked-existing | event-musical-concerts | already linked to catalog event |
 | candidate-tuwaiq-academy-bootcamps-معسكر-تطوير-تطبيقات-الويب-باستخدام-لغة-python-20260809-91d14378 | linked-existing | event-معسكر-تطوير-تطبيقات-الويب-باستخدام-لغة-python-2 | already linked to catalog event |
-| candidate-future-skills-catalog-machine-learning-التعلم-الالي-20260809-13b057e2 | linked-existing | event-machine-learning-التعلم-الالي | already linked to catalog event |
 | candidate-future-skills-catalog-comptia-cloud-20260809-8946f510 | linked-existing | event-comptia-cloud | already linked to catalog event |
 | candidate-monshaat-events-لقاءات-أسبوع-الذكاء-الاصطناعي-9-13-أغسطس-2026-20260809-08845aeb | linked-existing | event-لقاءات-أسبوع-الذكاء-الاصطناعي-9-13-أغسطس-2026 | already linked to catalog event |
-| candidate-hayy-jameel-events-hayy-makers-introduction-to-pottery-course-with-pharah-al-ghalib-august-20260810-f9fb1ca0 | linked-existing | event-hayy-makers-2 | already linked to catalog event |
 | candidate-visit-saudi-calendar-pdf-أوركسترا-game-of-thrones-20260811-4a38d19e | linked-existing | event-أوركسترا-game-of-thrones | already linked to catalog event |
-| candidate-sfda-events-الإدراج-في-خطوات-20260812-80dbadc1 | linked-existing | event-الإدراج-في-خطوات | already linked to catalog event |
-| candidate-sfda-events-مسارات-تصنيع-الأجهزة-والمستلزمات-الطبية-20260812-97c09c47 | linked-existing | event-مسارات-تصنيع-الأجهزة-والمستلزمات-الطبية | already linked to catalog event |
-| candidate-sfda-events-الإدراج-في-خطوات-20260812-5cd6efee | linked-existing | event-الإدراج-في-خطوات | already linked to catalog event |
 | candidate-hayy-jameel-events-hayy-arts-from-another-angle-explore-contemporary-art-with-alternative-e-20260812-3abe9558 | linked-existing | event-hayy-arts-from-another-angel-explore-contemporary-art-with-alternative-e | already linked to catalog event |
-| candidate-ithra-events-ithra-art-prize-exhibition-20260812-83c2ab55 | linked-existing | event-ithra-art-prize-exhibition | already linked to catalog event |
-| candidate-ithra-events-printing-house-20260812-e56f4f89 | linked-existing | event-printing-house | already linked to catalog event |
-| candidate-ithra-events-tafasahu-make-room-20260812-562bc61d | linked-existing | event-tafasahu-make-room | already linked to catalog event |
-| candidate-ithra-events-tinkering-stations-20260812-5a2c4c0e | linked-existing | event-tinkering-stations | already linked to catalog event |
 | candidate-ithra-events-bedayat-beginnings-of-saudi-art-movement-20260812-e0a239ef | linked-existing | event-bedayat-beginnings-of-saudi-art-movement | already linked to catalog event |
 | candidate-ithra-events-echoes-of-the-familiar-20260812-cc43c2bd | linked-existing | event-echoes-of-the-familiar | already linked to catalog event |
-| candidate-ithra-events-energy-lab-20260812-60155d60 | linked-existing | event-energy-lab | already linked to catalog event |
-| candidate-ithra-events-creative-character-design-20260812-afddf835 | linked-existing | event-creative-character-design | already linked to catalog event |
-| candidate-ithra-events-platforms-manager-skills-20260812-62ec512d | linked-existing | event-platforms-manager-skills | already linked to catalog event |
-| candidate-ithra-events-ithra-chess-tournament-ages-13-18-20260812-1baa0014 | linked-existing | event-ithra-chess-tournament-ages-13-18 | already linked to catalog event |
-| candidate-ithra-events-the-non-stop-spin-20260812-6cf89742 | linked-existing | event-the-non-stop-spin | already linked to catalog event |
-| candidate-ithra-events-storyteller-of-the-day-20260812-94528a46 | linked-existing | event-storyteller-of-the-day | already linked to catalog event |
-| candidate-ithra-events-ithra-chess-tournament-20260812-49593879 | linked-existing | event-ithra-chess-tournament | already linked to catalog event |
-| candidate-ithra-events-emboss-printing-experience-20260812-2671d1ce | linked-existing | event-emboss-printing-experience | already linked to catalog event |
-| candidate-ithra-events-english-children-book-club-10-12-20260812-efa3d7e3 | linked-existing | event-english-children-book-club-10-12 | already linked to catalog event |
-| candidate-ithra-events-moksha-20260812-0d457878 | linked-existing | event-moksha | already linked to catalog event |
-| candidate-ithra-events-ithra-short-play-contest-2026-20260812-11e2aa06 | linked-existing | event-ithra-short-play-contest-2026 | already linked to catalog event |
-| candidate-ithra-events-your-book-in-a-minute-20260812-c8aab584 | linked-existing | event-your-book-in-a-minute | already linked to catalog event |
-| candidate-ithra-events-spot-of-inspiration-20260812-5bac584c | linked-existing | event-spot-of-inspiration | already linked to catalog event |
-| candidate-ithra-events-childrens-museum-story-time-20260812-ada8b9db | linked-existing | event-childrens-museum-story-time | already linked to catalog event |
 | candidate-visit-saudi-calendar-pdf-بطولة-أبطال-المملكة-للشطرنج-20260813-4a38d19e | linked-existing | event-بطولة-أبطال-المملكة-للشطرنج | already linked to catalog event |
 | candidate-hayy-jameel-events-hayy-explorers-in-august-as-told-by-the-land-routes-of-exchange-20260813-9a00888f | linked-existing | event-hayy-explorers-in-august-as-told-by-the-land-routes-of-exchange | already linked to catalog event |
+| candidate-ithra-events-ithra-art-prize-exhibition-20260813-83c2ab55 | linked-existing | event-ithra-art-prize-exhibition | already linked to catalog event |
+| candidate-ithra-events-printing-house-20260813-e56f4f89 | linked-existing | event-printing-house | already linked to catalog event |
+| candidate-ithra-events-tafasahu-make-room-20260813-562bc61d | linked-existing | event-tafasahu-make-room | already linked to catalog event |
+| candidate-ithra-events-tinkering-stations-20260813-5a2c4c0e | linked-existing | event-tinkering-stations | already linked to catalog event |
+| candidate-ithra-events-spot-of-inspiration-20260813-5bac584c | linked-existing | event-spot-of-inspiration | already linked to catalog event |
+| candidate-ithra-events-childrens-museum-story-time-20260813-ada8b9db | linked-existing | event-childrens-museum-story-time | already linked to catalog event |
 | candidate-umm-al-qura-events-تفعيل-بيئة-تعلم-إلكترونية-تفاعلية-بنمط-غير-متزامن-20260813-68a97d75 | linked-existing | event-تفعيل-بيئة-تعلم-إلكترونية-تفاعلية-بنمط-غير-متزامن | already linked to catalog event |
 | candidate-ithra-events-family-challenges-20260813-3726c868 | linked-existing | event-family-challenges | already linked to catalog event |
 | candidate-ithra-events-tangram-20260813-9a9db6cb | linked-existing | event-tangram | already linked to catalog event |
+| candidate-ithra-events-emboss-printing-experience-20260813-2671d1ce | linked-existing | event-emboss-printing-experience | already linked to catalog event |
+| candidate-ithra-events-creative-character-design-20260813-afddf835 | linked-existing | event-creative-character-design | already linked to catalog event |
+| candidate-ithra-events-platforms-manager-skills-20260813-62ec512d | linked-existing | event-platforms-manager-skills | already linked to catalog event |
 | candidate-ithra-events-connect-and-create-20260813-d2514326 | linked-existing | event-connect-and-create | already linked to catalog event |
 | candidate-ithra-events-the-moral-of-the-story-20260813-bfa3f2a8 | linked-existing | event-the-moral-of-the-story | already linked to catalog event |
+| candidate-ithra-events-ithra-chess-tournament-20260813-49593879 | linked-existing | event-ithra-chess-tournament | already linked to catalog event |
+| candidate-ithra-events-ithra-short-play-contest-2026-20260813-11e2aa06 | linked-existing | event-ithra-short-play-contest-2026 | already linked to catalog event |
 | candidate-ithra-events-grand-art-space-20260813-e3acefbb | linked-existing | event-grand-art-space | already linked to catalog event |
 | candidate-mdlbeast-events-unstable-20260814-5647df2e | linked-existing | event-unstable | already linked to catalog event |
 | candidate-discover-aseer-events-concert-mohamed-hamaki-20260814-b2b9dfdb | linked-existing | event-concert-mohamed-hamaki | already linked to catalog event |
@@ -260,6 +245,7 @@
 | candidate-sfda-events-آلية-تقديم-طلبات-الحصول-على-ترخيص-خدمات-توكيد-الجودة-والقياسات-الاشعاعية-20260817-47d2fd92 | linked-existing | event-آلية-تقديم-طلبات-الحصول-على-ترخيص-خدمات-توكيد-الجودة-والقياسات-الاشعاعية | already linked to catalog event |
 | candidate-ithra-events-paint-like-an-artist-20260817-a67d8ec3 | linked-existing | event-paint-like-an-artist | already linked to catalog event |
 | candidate-ithra-events-childrens-art-studio-20260817-2bf92d17 | linked-existing | event-childrens-art-studio | already linked to catalog event |
+| candidate-ithra-events-energy-lab-20260817-60155d60 | linked-existing | event-energy-lab | already linked to catalog event |
 | candidate-ithra-events-children-story-time-20260817-f545fa69 | linked-existing | event-children-story-time | already linked to catalog event |
 | candidate-sfda-events-احتياطات-الأمان-عند-استخدام-مبيدات-آفات-الصحة-العامة-20260818-a459d8bf | linked-existing | event-احتياطات-الأمان-عند-استخدام-مبيدات-آفات-الصحة-العامة | already linked to catalog event |
 | candidate-ithra-events-toddler-tuesday-20260818-1afead7d | linked-existing | event-toddler-tuesday | already linked to catalog event |
@@ -273,7 +259,9 @@
 | candidate-ithra-events-all-things-hedgehogs-20260819-952dc936 | linked-existing | event-all-things-hedgehogs | already linked to catalog event |
 | candidate-ithra-events-energy-in-motion-20260819-e0404048 | linked-existing | event-energy-in-motion | already linked to catalog event |
 | candidate-ithra-events-clay-shaping-20260819-852b2ff5 | linked-existing | event-clay-shaping | already linked to catalog event |
+| candidate-ithra-events-storyteller-of-the-day-20260819-94528a46 | linked-existing | event-storyteller-of-the-day | already linked to catalog event |
 | candidate-ithra-events-youth-book-club-20260819-de163fbc | linked-existing | event-youth-book-club | already linked to catalog event |
+| candidate-ithra-events-your-book-in-a-minute-20260819-c8aab584 | linked-existing | event-your-book-in-a-minute | already linked to catalog event |
 | candidate-hayy-jameel-events-hayy-cinema-august-2026-20260820-0636e29a | linked-existing | event-hayy-cinema-august-2026 | already linked to catalog event |
 | candidate-ithra-events-little-explorers-20260820-1cc1993f | linked-existing | event-little-explorers | already linked to catalog event |
 | candidate-ithra-events-trivia-night-earth-quest-tic-tac-know-20260820-ef7080ff | linked-existing | event-trivia-night-earth-quest-tic-tac-know | already linked to catalog event |
@@ -285,6 +273,7 @@
 | candidate-ithra-events-nu-power-20260820-653464ac | linked-existing | event-nu-power | already linked to catalog event |
 | candidate-ithra-events-museum-story-time-20260820-1104734c | linked-existing | event-museum-story-time | already linked to catalog event |
 | candidate-saudi-university-events-boat-bash-cruise-20260821-8afa1fda | linked-existing | event-boat-bash-cruise | already linked to catalog event |
+| candidate-ithra-events-the-non-stop-spin-20260821-6cf89742 | linked-existing | event-the-non-stop-spin | already linked to catalog event |
 | candidate-ithra-events-1-2-3-lets-rhyme-20260822-4d37515a | linked-existing | event-1-2-3-lets-rhyme | already linked to catalog event |
 | candidate-ithra-events-unbox-your-story-20260822-5085a6f0 | linked-existing | event-unbox-your-story | already linked to catalog event |
 | candidate-ithra-events-story-land-20260822-bb5dc01b | linked-existing | event-story-land | already linked to catalog event |
@@ -352,6 +341,7 @@
 | candidate-dhahran-expo-calendar-static-equipment-engineering-maintenance-technical-conference-expo-state-20260908-18d15b29 | linked-existing | event-static-equipment-engineering-maintenance-technical-conference-expo-state | already linked to catalog event |
 | candidate-visit-saudi-calendar-fibo-arabia-2026-20260908-352ccf4e | linked-existing | event-fibo-arabia-2026 | already linked to catalog event |
 | candidate-riyadh-city-events-saudi-wood-expo-20260908-d1fa2ea0 | linked-existing | event-saudi-wood-expo | already linked to catalog event |
+| candidate-sfda-events-شرح-وتوضيح-إجراءات-الاستيراد-والتصدير-وحرية-البيع-20260909-7d3f0aff | linked-existing | event-شرح-وتوضيح-إجراءات-الاستيراد-والتصدير-وحرية-البيع | already linked to catalog event |
 | candidate-informa-connect-saudi-events-saudi-event-show-20260909-9bbda4e2 | linked-existing | event-saudi-event-show | already linked to catalog event |
 | candidate-visit-saudi-calendar-pdf-in-act-act-ix-20260911-4a38d19e | linked-existing | event-in-act-act-ix | already linked to catalog event |
 | candidate-tuwaiq-academy-bootcamps-معسكر-الذكاء-الاصطناعي-في-تطوير-تطبيقات-الويب-باستخدام-python-و-django-20260913-fde7cd36 | linked-existing | event-معسكر-الذكاء-الاصطناعي-في-تطوير-تطبيقات-الويب-باستخدام-python-و-django | already linked to catalog event |
@@ -483,6 +473,7 @@
 | candidate-experience-alula-events-fei-endurance-world-championship-2026-20261128-febe29ec | linked-existing | event-fei-endurance-world-championship-2026 | already linked to catalog event |
 | candidate-hayy-jameel-events-hayy-cinema-aflam-sudan-x-hayy-cinema-20261128-e942a21a | linked-existing | event-hayy-cinema-aflam-sudan-x-hayy-cinema | already linked to catalog event |
 | candidate-riyadh-city-events-global-logistics-forum-20261129-56ad24e8 | linked-existing | event-global-logistics-forum | already linked to catalog event |
+| candidate-misk-hub-programs-application-deadline-discover-your-path-20261130-1bbce22f | linked-existing | event-application-deadline-discover-your-path | already linked to catalog event |
 | candidate-informa-connect-saudi-events-saudi-intermobility-expo-20261130-00e0f2d5 | linked-existing | event-saudi-intermobility-expo | already linked to catalog event |
 | candidate-riyadh-city-events-industrial-transformation-saudi-arabia-20261130-12e8d203 | linked-existing | event-industrial-transformation-saudi-arabia | already linked to catalog event |
 | candidate-ithra-events-making-short-films-20261130-d9e14125 | linked-existing | event-making-short-films | already linked to catalog event |
@@ -599,6 +590,8 @@
 | candidate-eye-of-riyadh-events-esports-world-cup-20260706-13ed17c1 | blocked | event-esports-world-cup | possible duplicate requires review: exact-title-city-source-conflict |
 | candidate-saudicon-events-بطولة-كأس-العالم-للرياضات-الإلكترونية-20260706-c111699c | blocked | - | publication gate source-evidence is not auto-publishable |
 | candidate-eye-of-riyadh-events-oxford-future-of-real-estate-programme-20260805-7c9ee195 | blocked | - | unknown category requires review |
+| candidate-saudicon-events-موسم-التمور-في-أسواق-الربوة-بالرياض-20260815-20771c02 | blocked | - | publication gate source-evidence is not auto-publishable |
+| candidate-saudicon-events-موسم-التمور-في-أسواق-الربوة-20260815-0db17989 | blocked | - | publication gate source-evidence is not auto-publishable |
 | candidate-saudicon-events-مهرجان-شقراء-الأسياح-للتمور-بنسخته-الرابعة-20260816-54b751a0 | blocked | - | publication gate source-evidence is not auto-publishable |
 | candidate-eye-of-riyadh-events-sunaa-2026-20260818-e3819fa8 | blocked | - | publication gate source-evidence is not auto-publishable |
 | candidate-saudicon-events-معرض-صناع-للصناعات-الوطنية-2026-20260818-4f53e939 | blocked | - | publication gate source-evidence is not auto-publishable |
@@ -613,8 +606,6 @@
 | candidate-saudicon-events-ديب-فيست-2026-20260831-5b699748 | blocked | - | publication gate source-evidence is not auto-publishable |
 | candidate-saudicon-events-منتدى-الجوانب-القانونية-للاندماج-والاستحواذ-20260831-4cfc45d5 | blocked | - | publication gate source-evidence is not auto-publishable |
 | candidate-saudicon-events-ليب-2026-20260831-8612d635 | blocked | - | possible duplicate already exists: event-leap-2026 |
-| candidate-saudicon-events-قمة-مراكز-البيانات-والبنية-التحتية-السحابية-السعودية-2026-20260901-f89f6689 | blocked | - | publication gate source-evidence is not auto-publishable |
-| candidate-saudicon-events-قمة-ومعرض-الموارد-البشرية-السعودية-2026-20260901-7392143b | blocked | - | publication gate source-evidence is not auto-publishable |
 | candidate-eventbrite-saudi-smart-sustainable-building-intelligent-ecosystems-for-tomorrows-cities-20260901-e45c1490 | blocked | - | unknown category requires review |
 | candidate-eventbrite-saudi-family-office-investment-meeting-riyadh-registration-fee-usd-580-20260902-82923462 | blocked | - | unknown category requires review |
 | candidate-eventbrite-saudi-family-office-investment-riyadh-saudi-arabia-20260902-fc391e91 | blocked | - | unknown category requires review |

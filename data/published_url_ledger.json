@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "generated_at": "2026-08-12T14:09:05.226Z",
+  "generated_at": "2026-08-12T20:02:25.149Z",
   "events": {
     "event-skill-development-initiative": {
       "identity": "skill development initiative|riyadh|2021-07-14",
@@ -662,11 +662,6 @@
       "first_seen": "2026-07-11",
       "last_seen": "2026-08-12"
     },
-    "event-english-children-book-club-10-12": {
-      "identity": "english children book club (10 - 12)|dhahran|2026-07-15",
-      "first_seen": "2026-07-11",
-      "last_seen": "2026-08-12"
-    },
     "event-your-book-in-a-minute": {
       "identity": "your book in a minute!|dhahran|2026-07-15",
       "first_seen": "2026-07-11",
@@ -982,11 +977,6 @@
       "first_seen": "2026-07-11",
       "last_seen": "2026-08-12"
     },
-    "event-the-dearest-country": {
-      "identity": "the dearest country|aseer|2026-08-03",
-      "first_seen": "2026-07-27",
-      "last_seen": "2026-08-12"
-    },
     "event-ithra-art-prize-exhibition": {
       "identity": "ithra art prize exhibition|dhahran|2026-08-03",
       "first_seen": "2026-08-03",
@@ -1047,11 +1037,6 @@
       "first_seen": "2026-07-11",
       "last_seen": "2026-08-12"
     },
-    "event-machine-learning-التعلم-الالي": {
-      "identity": "machine learning - التعلم الالي|online|2026-08-09",
-      "first_seen": "2026-08-01",
-      "last_seen": "2026-08-12"
-    },
     "event-comptia-cloud": {
       "identity": "comptia cloud+|online|2026-08-09",
       "first_seen": "2026-08-01",
@@ -1095,11 +1080,6 @@
     "event-hayy-arts-from-another-angel-explore-contemporary-art-with-alternative-e": {
       "identity": "hayy arts | from another angle, explore contemporary art with alternative exhibition tours|jeddah|2026-08-12",
       "first_seen": "2026-08-09",
-      "last_seen": "2026-08-12"
-    },
-    "event-ithra-chess-tournament-ages-13-18": {
-      "identity": "ithra chess tournament (ages 13 - 18)|dhahran|2026-08-12",
-      "first_seen": "2026-07-27",
       "last_seen": "2026-08-12"
     },
     "event-بطولة-أبطال-المملكة-للشطرنج": {
@@ -2727,6 +2707,11 @@
       "first_seen": "2026-08-06",
       "last_seen": "2026-08-12"
     },
+    "event-ithra-chess-tournament-ages-13-18": {
+      "identity": "ithra chess tournament (ages 13 - 18)|dhahran|2026-08-12",
+      "first_seen": "2026-07-27",
+      "last_seen": "2026-08-12"
+    },
     "event-مسارات-تصنيع-الأجهزة-والمستلزمات-الطبية": {
       "identity": "مسارات تصنيع الأجهزة والمستلزمات الطبية|online|2026-08-12",
       "first_seen": "2026-08-02",
@@ -2750,6 +2735,11 @@
     "event-الأجهزة-الطبية-الرقمية-التوعية-بالمتطلبات-التنظيمية-وأفضل-الممارسات": {
       "identity": "الأجهزة الطبية الرقمية: التوعية بالمتطلبات التنظيمية وأفضل الممارسات|online|2026-08-10",
       "first_seen": "2026-07-16",
+      "last_seen": "2026-08-12"
+    },
+    "event-machine-learning-التعلم-الالي": {
+      "identity": "machine learning - التعلم الالي|online|2026-08-09",
+      "first_seen": "2026-08-01",
       "last_seen": "2026-08-12"
     },
     "event-genai-for-data-analysis-and-decision-support-الذكاء-الاصطناعي-التوليدي-ل": {
@@ -2815,6 +2805,11 @@
     "event-childrens-museum-free-monday": {
       "identity": "children's museum - free monday|dhahran|2026-08-03",
       "first_seen": "2026-07-11",
+      "last_seen": "2026-08-12"
+    },
+    "event-the-dearest-country": {
+      "identity": "the dearest country|aseer|2026-08-03",
+      "first_seen": "2026-07-27",
       "last_seen": "2026-08-12"
     },
     "event-cloud-storage-and-databases-fundamentals-أساسيات-التخزين-السحابي-وقواعد-": {
@@ -3224,6 +3219,11 @@
     },
     "event-بطولة-المملكة-للبلوت": {
       "identity": "بطولة المملكة للبلوت|riyadh|2026-07-16",
+      "first_seen": "2026-07-11",
+      "last_seen": "2026-08-12"
+    },
+    "event-english-children-book-club-10-12": {
+      "identity": "english children book club (10 - 12)|dhahran|2026-07-15",
       "first_seen": "2026-07-11",
       "last_seen": "2026-08-12"
     },

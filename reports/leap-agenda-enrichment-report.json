@@ -1,12 +1,12 @@
 {
-  "generated_at": "2026-08-12T14:04:39.912Z",
+  "generated_at": "2026-08-12T19:58:18.933Z",
   "agenda_url": "https://onegiantleap.com/our-2026-agenda?field_swapcard_session_day_value=all",
   "snapshot_path": "data/raw/source-snapshots/leap-2026-agenda-latest.html",
   "totals": {
     "catalog_targets": 1,
     "candidate_targets": 1,
-    "sessions": 482,
-    "rooms": 13,
+    "sessions": 483,
+    "rooms": 11,
     "tracks": 23
   },
   "fetch_error": ""

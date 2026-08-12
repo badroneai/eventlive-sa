@@ -1,228 +1,297 @@
 {
-  "generated_at": "2026-08-12T14:03:00.632Z",
+  "generated_at": "2026-08-12T19:56:47.705Z",
   "catalog": "data/events_catalog.json",
   "totals": {
     "targets": 36,
-    "enriched": 0,
-    "failed": 36
+    "enriched": 34,
+    "failed": 2
   },
-  "enriched": [],
-  "failed": [
+  "enriched": [
     {
       "id": "event-معسكر-التأهيل-لرخصة-الدرونز-وتحليل-البيانات-الفوتوغرامترية",
       "title": "معسكر التأهيل لرخصة الدرونز وتحليل البيانات الفوتوغرامترية",
       "slug": "b64Yy4yX",
-      "reason": "HTTP 403"
+      "goals": 9,
+      "features": 11,
+      "requirements": 8
     },
     {
       "id": "event-معسكر-هندسة-البرمجيات-الحديثة-وأنظمة-الذكاء-الاصطناعي",
       "title": "معسكر هندسة البرمجيات الحديثة وأنظمة الذكاء الاصطناعي",
       "slug": "JxeQGWnq",
-      "reason": "HTTP 403"
+      "goals": 17,
+      "features": 10,
+      "requirements": 5
     },
     {
       "id": "event-معسكر-هندسة-الدرونز-التطبيقي",
       "title": "معسكر هندسة الدرونز التطبيقي",
       "slug": "8K1e0nBW",
-      "reason": "HTTP 403"
+      "goals": 3,
+      "features": 5,
+      "requirements": 6
     },
     {
       "id": "event-معسكر-تطوير-البرمجيات-السحابية-الاحترافية-لسحابة-قوقل",
       "title": "معسكر تطوير البرمجيات السحابية الاحترافية لسحابة قوقل",
       "slug": "VY3lkzLD",
-      "reason": "HTTP 403"
+      "goals": 8,
+      "features": 6,
+      "requirements": 10
     },
     {
       "id": "event-معسكر-تطوير-تطبيقات-الويب-باستخدام-لغة-python",
       "title": "معسكر تطوير تطبيقات الويب باستخدام لغة Python (الفترة المسائية)",
       "slug": "4yOEV7Qq",
-      "reason": "HTTP 403"
-    },
-    {
-      "id": "event-معسكر-طويق-للقطاع-الأمني-تطوير-البرمجيات",
-      "title": "معسكر طويق للقطاع الأمني: تطوير البرمجيات",
-      "slug": "ayjde5d8",
-      "reason": "HTTP 403"
-    },
-    {
-      "id": "event-معسكر-طويق-للقطاع-الأمني-البنية-التحتية",
-      "title": "معسكر طويق للقطاع الأمني: البنية التحتية",
-      "slug": "0RQJe3nb",
-      "reason": "HTTP 403"
+      "goals": 12,
+      "features": 6,
+      "requirements": 11
     },
     {
       "id": "event-معسكر-تصميم-وتصنيع-الحلول-الهندسية",
       "title": "معسكر تصميم وتصنيع الحلول الهندسية",
       "slug": "y4JqX0k6",
-      "reason": "HTTP 403"
+      "goals": 6,
+      "features": 11,
+      "requirements": 6
     },
     {
       "id": "event-معسكر-تطوير-مواقع-الويب-باستخدام-java-ودمج-تقنيات-الذكاء-الاصطناعي",
       "title": "معسكر تطوير مواقع الويب باستخدام Java ودمج تقنيات الذكاء الاصطناعي",
       "slug": "B5R0wKJk",
-      "reason": "HTTP 403"
+      "goals": 10,
+      "features": 7,
+      "requirements": 8
     },
     {
       "id": "event-معسكر-أساسيات-هندسة-الميكاترونكس",
       "title": "معسكر أساسيات هندسة الميكاترونكس",
       "slug": "XmzqwoPy",
-      "reason": "HTTP 403"
+      "goals": 13,
+      "features": 22,
+      "requirements": 7
     },
     {
       "id": "event-معسكر-تطوير-الألعاب-والعوالم-الافتراضية-باستخدام-unreal-engine",
       "title": "معسكر تطوير الألعاب والعوالم الافتراضية باستخدام Unreal Engine",
       "slug": "KMVERlNP",
-      "reason": "HTTP 403"
+      "goals": 15,
+      "features": 9,
+      "requirements": 6
     },
     {
       "id": "event-معسكر-الأنظمة-الذاتية-للدرونز",
       "title": "معسكر الأنظمة الذاتية للدرونز",
       "slug": "bx7Vb7Xw",
-      "reason": "HTTP 403"
+      "goals": 8,
+      "features": 6,
+      "requirements": 6
     },
     {
       "id": "event-معسكر-تصميم-تجربة-المستخدم-ux-ui",
       "title": "معسكر تصميم تجربة المستخدم UX\\UI",
       "slug": "ZnwlyY5G",
-      "reason": "HTTP 403"
+      "goals": 8,
+      "features": 7,
+      "requirements": 9
     },
     {
       "id": "event-معسكر-اختبار-البرمجيات-والأتمتة",
       "title": "معسكر اختبار البرمجيات والأتمتة",
       "slug": "ORGldGgx",
-      "reason": "HTTP 403"
+      "goals": 6,
+      "features": 6,
+      "requirements": 7
     },
     {
       "id": "event-معسكر-أساسيات-الأمن-السيبراني",
       "title": "معسكر أساسيات الأمن السيبراني",
       "slug": "6VRQ2LNZ",
-      "reason": "HTTP 403"
+      "goals": 5,
+      "features": 6,
+      "requirements": 10
     },
     {
       "id": "event-معسكر-هندسة-تطبيقات-الذكاء-الاصطناعي-التوليدي-باستخدام-النماذج-اللغوية-ا",
       "title": "معسكر هندسة تطبيقات الذكاء الاصطناعي التوليدي باستخدام النماذج اللغوية الضخمة",
       "slug": "ab7DP73J",
-      "reason": "HTTP 403"
+      "goals": 8,
+      "features": 5,
+      "requirements": 8
     },
     {
       "id": "event-معسكر-بناء-وتطوير-نماذج-الذكاء-الاصطناعي",
       "title": "معسكر بناء وتطوير نماذج الذكاء الاصطناعي",
       "slug": "o4bVMP8V",
-      "reason": "HTTP 403"
+      "goals": 7,
+      "features": 6,
+      "requirements": 12
     },
     {
       "id": "event-دبلوم-الأمن-السيبراني-المتقدم",
       "title": "دبلوم الأمن السيبراني المتقدم",
       "slug": "VPwN7D0G",
-      "reason": "HTTP 403"
+      "goals": 8,
+      "features": 8,
+      "requirements": 7
     },
     {
       "id": "event-معسكر-إدارة-الحوكمة-والمخاطر-والامتثال-grc",
       "title": "معسكر إدارة الحوكمة والمخاطر والامتثال GRC",
       "slug": "aXzlnR2d",
-      "reason": "HTTP 403"
+      "goals": 7,
+      "features": 8,
+      "requirements": 4
     },
     {
       "id": "event-معسكر-الذكاء-الاصطناعي-في-تطوير-تطبيقات-الويب-باستخدام-python-و-django",
       "title": "معسكر الذكاء الاصطناعي في تطوير تطبيقات الويب باستخدام Python و Django",
       "slug": "64xLPxNn",
-      "reason": "HTTP 403"
+      "goals": 15,
+      "features": 7,
+      "requirements": 8
     },
     {
       "id": "event-معسكر-طويق-السيبراني-2",
       "title": "معسكر طويق السيبراني",
       "slug": "KEvAkjLJ",
-      "reason": "HTTP 403"
+      "goals": 3,
+      "features": 3,
+      "requirements": 8
     },
     {
       "id": "event-معسكر-حلول-الحوسبة-السحابية-aws-google-cloud",
       "title": "معسكر حلول الحوسبة السحابية: AWS & Google Cloud",
       "slug": "GJ1pvRq9",
-      "reason": "HTTP 403"
+      "goals": 5,
+      "features": 7,
+      "requirements": 8
     },
     {
       "id": "event-معسكر-الذكاء-الاصطناعي",
       "title": "معسكر الذكاء الاصطناعي",
       "slug": "bm82q1Pl",
-      "reason": "HTTP 403"
+      "goals": 7,
+      "features": 9,
+      "requirements": 8
     },
     {
       "id": "event-معسكر-علم-البيانات-والذكاء-الاصطناعي",
       "title": "معسكر علم البيانات والذكاء الاصطناعي",
       "slug": "eOnD1zRg",
-      "reason": "HTTP 403"
+      "goals": 8,
+      "features": 11,
+      "requirements": 11
     },
     {
       "id": "event-معسكر-الجرائم-السيبرانية-والتحقيق-الجنائي-الرقمي-المتقدم",
       "title": "معسكر الجرائم السيبرانية والتحقيق الجنائي الرقمي المتقدم",
       "slug": "qMyzrymE",
-      "reason": "HTTP 403"
+      "goals": 20,
+      "features": 12,
+      "requirements": 9
     },
     {
       "id": "event-معسكر-هندسة-الحوسبة-السحابية-المتقدمة-باستخدام-google-cloud",
       "title": "معسكر هندسة الحوسبة السحابية المتقدمة باستخدام Google Cloud",
       "slug": "VwromX8Z",
-      "reason": "HTTP 403"
+      "goals": 10,
+      "features": 6,
+      "requirements": 6
     },
     {
       "id": "event-معسكر-قيادة-التحول-بالذكاء-الاصطناعي",
       "title": "معسكر قيادة التحول بالذكاء الاصطناعي",
       "slug": "Y4B07n6q",
-      "reason": "HTTP 403"
+      "goals": 6,
+      "features": 5,
+      "requirements": 6
     },
     {
       "id": "event-معسكر-التقنيات-الناشئة-والعوالم-الافتراضية",
       "title": "معسكر التقنيات الناشئة والعوالم الافتراضية",
       "slug": "vxpqBnPg",
-      "reason": "HTTP 403"
+      "goals": 3,
+      "features": 12,
+      "requirements": 5
     },
     {
       "id": "event-معسكر-تصميم-وتصنيع-الدوائر-الإلكترونية",
       "title": "معسكر تصميم وتصنيع الدوائر الإلكترونية",
       "slug": "Qkx3OxvG",
-      "reason": "HTTP 403"
+      "goals": 13,
+      "features": 13,
+      "requirements": 7
     },
     {
       "id": "event-معسكر-الذكاء-الاصطناعي-للقادة",
       "title": "معسكر الذكاء الاصطناعي للقادة",
       "slug": "9L6Ey6VA",
-      "reason": "HTTP 403"
+      "goals": 6,
+      "features": 7,
+      "requirements": 4
     },
     {
       "id": "event-معسكر-هندسة-الحوسبة-السحابية-باستخدام-google-cloud",
       "title": "معسكر هندسة الحوسبة السحابية باستخدام Google Cloud",
       "slug": "v9JwMlMo",
-      "reason": "HTTP 403"
+      "goals": 10,
+      "features": 6,
+      "requirements": 7
     },
     {
       "id": "event-معسكر-الدرونز-عالية-الأداء",
       "title": "معسكر الدرونز عالية الأداء",
       "slug": "YxpVjpZg",
-      "reason": "HTTP 403"
+      "goals": 5,
+      "features": 6,
+      "requirements": 4
     },
     {
       "id": "event-معسكر-الاستراتيجية-في-عصر-الذكاء-الاصطناعي-والتحول-الرقمي",
       "title": "معسكر الاستراتيجية في عصر الذكاء الاصطناعي والتحول الرقمي",
       "slug": "EBx8WPWD",
-      "reason": "HTTP 403"
+      "goals": 5,
+      "features": 7,
+      "requirements": 7
     },
     {
       "id": "event-معسكر-تطوير-حلول-الذكاء-الاصطناعي",
       "title": "معسكر تطوير حلول الذكاء الاصطناعي",
       "slug": "bwWpE2KO",
-      "reason": "HTTP 403"
+      "goals": 10,
+      "features": 11,
+      "requirements": 12
     },
     {
       "id": "event-معسكر-تطوير-تطبيقات-الويب-باستخدام-لغة-python-2",
       "title": "معسكر تطوير تطبيقات الويب باستخدام لغة Python (الفترة الصباحية)",
       "slug": "8ROda7MD",
-      "reason": "HTTP 403"
+      "goals": 12,
+      "features": 6,
+      "requirements": 11
     },
     {
       "id": "event-معسكر-طويق-السيبراني",
       "title": "معسكر طويق السيبراني",
       "slug": "oA2ryDzB",
-      "reason": "HTTP 403"
+      "goals": 3,
+      "features": 3,
+      "requirements": 5
+    }
+  ],
+  "failed": [
+    {
+      "id": "event-معسكر-طويق-للقطاع-الأمني-تطوير-البرمجيات",
+      "title": "معسكر طويق للقطاع الأمني: تطوير البرمجيات",
+      "slug": "ayjde5d8",
+      "reason": "Unexpected end of JSON input"
+    },
+    {
+      "id": "event-معسكر-طويق-للقطاع-الأمني-البنية-التحتية",
+      "title": "معسكر طويق للقطاع الأمني: البنية التحتية",
+      "slug": "0RQJe3nb",
+      "reason": "Unexpected end of JSON input"
     }
   ]
 }

@@ -1,11 +1,11 @@
 {
-  "generated_at": "2026-08-12T14:05:07.786Z",
+  "generated_at": "2026-08-12T19:58:40.988Z",
   "totals": {
-    "targets": 10,
-    "enriched": 10,
-    "fetched": 3,
-    "images": 10,
-    "fetch_failures": 7
+    "targets": 6,
+    "enriched": 6,
+    "fetched": 0,
+    "images": 6,
+    "fetch_failures": 6
   },
   "enriched": [
     {
@@ -67,46 +67,6 @@
       "fetched": false,
       "image": true,
       "fetch_reason": "HTTP 404"
-    },
-    {
-      "id": "event-تجرييبية",
-      "title": "تجرييبية",
-      "source_label": "Umm Al-Qura University Events Center",
-      "source_method": "approved-source-row",
-      "source_url": "https://uqu.edu.sa/App/Events/41041",
-      "fetched": false,
-      "image": true,
-      "fetch_reason": "HTTP 404"
-    },
-    {
-      "id": "event-دبلوم-المتوسط-في-التكنولوجيا-المالية",
-      "title": "دبلوم المتوسط في التكنولوجيا المالية",
-      "source_label": "Umm Al-Qura University Events Center",
-      "source_method": "official-page-meta",
-      "source_url": "https://uqu.edu.sa/App/Events/41044",
-      "fetched": true,
-      "image": true,
-      "fetch_reason": ""
-    },
-    {
-      "id": "event-دبلوم-متوسط-في-أمن-المعلومات",
-      "title": "دبلوم متوسط في أمن المعلومات",
-      "source_label": "Umm Al-Qura University Events Center",
-      "source_method": "official-page-meta",
-      "source_url": "https://uqu.edu.sa/App/Events/41042",
-      "fetched": true,
-      "image": true,
-      "fetch_reason": ""
-    },
-    {
-      "id": "event-دبلوم-متوسط-في-إدارة-الموارد-البشرية",
-      "title": "دبلوم متوسط في إدارة الموارد البشرية",
-      "source_label": "Umm Al-Qura University Events Center",
-      "source_method": "official-page-meta",
-      "source_url": "https://uqu.edu.sa/App/Events/41043",
-      "fetched": true,
-      "image": true,
-      "fetch_reason": ""
     }
   ],
   "failed": [
@@ -144,12 +104,6 @@
       "id": "event-مزرعة-التوت-الأسود",
       "title": "مزرعة التوت الاسود",
       "source_url": "https://www.visitsaudi.com/content/dam/documents/saudi-calendar-ar.pdf",
-      "reason": "HTTP 404"
-    },
-    {
-      "id": "event-تجرييبية",
-      "title": "تجرييبية",
-      "source_url": "https://uqu.edu.sa/App/Events/41041",
       "reason": "HTTP 404"
     }
   ]

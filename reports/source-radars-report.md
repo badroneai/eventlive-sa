@@ -1,6 +1,6 @@
 # EventLive Source Radars
 
-Generated at: 2026-08-11T19:30:47.968Z
+Generated at: 2026-08-12T19:31:44.218Z
 
 ## Policy
 
@@ -23,4 +23,4 @@ Generated at: 2026-08-11T19:30:47.968Z
 | Radar | Status | Duration | Policy | Reports |
 | --- | --- | --- | --- | --- |
 | Official Multi-Session Agenda Radar | ok | 4s | source-evidence; agenda readiness; no auto-publish | reports/source-official-agenda-radar.json, reports/source-official-agenda-radar.md |
-| Strategic Platform Source Radar | ok | 15s | source-evidence; API-surface mapping; no auto-publish | reports/source-strategic-platform-radar.json, reports/source-strategic-platform-radar.md |
+| Strategic Platform Source Radar | ok | 14s | source-evidence; API-surface mapping; no auto-publish | reports/source-strategic-platform-radar.json, reports/source-strategic-platform-radar.md |

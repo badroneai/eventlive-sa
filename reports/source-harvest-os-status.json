@@ -1,19 +1,19 @@
 {
   "schema": "eventlive.harvest-os-status.v1",
-  "generated_at": "2026-08-12T14:14:02.886Z",
+  "generated_at": "2026-08-12T20:07:14.403Z",
   "status": "NEEDS_WORK",
   "operating_rule": "Probe before new sources; sample before full harvest; Raw collection is not publication; discovery-only never auto-publishes.",
   "totals": {
     "sources": 88,
-    "candidates": 603,
-    "matched_candidates": 573,
+    "candidates": 594,
+    "matched_candidates": 564,
     "auto_publish_sources": 15,
     "candidate_only_sources": 12,
     "partnership_required_sources": 5,
     "blocked_or_closed_sources": 0,
     "manual_review_sources": 56,
-    "collection_attempted": 26,
-    "productive_sources": 21,
+    "collection_attempted": 28,
+    "productive_sources": 22,
     "collector_errors": 6,
     "chronic_collector_errors": 6,
     "transient_collector_errors": 0
@@ -25,19 +25,19 @@
     "manual_review": 56
   },
   "candidates_by_gate": {
-    "catalog-review": 570,
+    "catalog-review": 561,
     "duplicate-review": 8,
     "source-evidence": 25
   },
   "funnel": {
-    "discovered_this_run": 319,
-    "candidate_queue": 603,
-    "evaluated_for_publish": 603,
-    "linked_existing": 557,
-    "published_new": 8,
+    "discovered_this_run": 325,
+    "candidate_queue": 594,
+    "evaluated_for_publish": 594,
+    "linked_existing": 550,
+    "published_new": 6,
     "blocked": 38,
-    "secondary_promoted": 1,
-    "secondary_still_blocked": 34
+    "secondary_promoted": 0,
+    "secondary_still_blocked": 33
   },
   "blocked_reasons": {
     "possible duplicate requires review: exact-title-city-source-conflict": 6,
@@ -56,41 +56,41 @@
     {
       "id": "moc-cultural-calendar",
       "note": "collector-error: fetch failed; fetch failed",
-      "error_streak": 23,
+      "error_streak": 24,
       "kind": "chronic",
-      "attempted_this_run": false
+      "attempted_this_run": true
     },
     {
       "id": "mos-events",
       "note": "collector-error: fetch failed",
-      "error_streak": 23,
+      "error_streak": 24,
       "kind": "chronic",
-      "attempted_this_run": false
+      "attempted_this_run": true
     },
     {
       "id": "moc-cultural-subportals",
       "note": "collector-error: fetch failed; fetch failed",
-      "error_streak": 23,
+      "error_streak": 24,
       "kind": "chronic",
-      "attempted_this_run": false
+      "attempted_this_run": true
     },
     {
       "id": "monshaat-events",
       "note": "collector-error: fetch failed; fetch failed",
-      "error_streak": 6,
+      "error_streak": 7,
       "kind": "chronic",
-      "attempted_this_run": false
+      "attempted_this_run": true
     },
     {
       "id": "saudi-pro-league-fixtures",
       "note": "collector-error: fetch failed",
       "error_streak": 3,
       "kind": "chronic",
-      "attempted_this_run": true
+      "attempted_this_run": false
     },
     {
       "id": "asharqia-chamber-events",
-      "note": "fetch failed; page.goto: Timeout 30000ms exceeded. Call log:   - navigating to \"https://www.chamber.org.sa/sites/Arabic/Events/ChamberEvents/Pages/AllChamberEvents.aspx\", waiting until \"domcontentload",
+      "note": "collector-error: fetch failed",
       "error_streak": 3,
       "kind": "chronic",
       "attempted_this_run": false

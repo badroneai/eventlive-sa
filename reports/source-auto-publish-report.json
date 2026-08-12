@@ -1,18 +1,18 @@
 {
-  "published_at": "2026-08-12T14:02:55.249Z",
+  "published_at": "2026-08-12T19:56:43.420Z",
   "dry_run": false,
   "include_partner": true,
   "source_candidates": "data/source_candidates.json",
   "events_catalog": "data/events_catalog.json",
-  "candidates_seen": 603,
+  "candidates_seen": 594,
   "totals": {
-    "candidates_seen": 603,
-    "published": 8,
-    "linked_existing": 557,
+    "candidates_seen": 594,
+    "published": 6,
+    "linked_existing": 550,
     "blocked": 38,
     "duplicate_review_alerts": 8,
     "category_fallback_alerts": 0,
-    "reconciled": 565
+    "reconciled": 556
   },
   "category_fallback_alerts": [],
   "duplicate_catalog_rows_removed": 0,
@@ -193,16 +193,6 @@
       "candidate_id": "candidate-visit-saudi-calendar-pdf-عروض-الفنون-الأدائية-التقليدية-20260706-4a38d19e",
       "event_id": "event-عروض-الفنون-الأدائية-التقليدية",
       "title": "عروض الفنون الأدائية التقليدية"
-    },
-    {
-      "candidate_id": "candidate-sfda-events-شرح-وتوضيح-إجراءات-الاستيراد-والتصدير-وحرية-البيع-20260909-7d3f0aff",
-      "event_id": "event-شرح-وتوضيح-إجراءات-الاستيراد-والتصدير-وحرية-البيع",
-      "title": "شرح وتوضيح إجراءات الاستيراد والتصدير وحرية البيع"
-    },
-    {
-      "candidate_id": "candidate-misk-hub-programs-application-deadline-discover-your-path-20261130-1bbce22f",
-      "event_id": "event-application-deadline-discover-your-path",
-      "title": "Application deadline: Discover Your Path"
     }
   ],
   "linked_existing": [
@@ -1179,12 +1169,6 @@
       "reason": "already linked to catalog event"
     },
     {
-      "candidate_id": "candidate-discover-aseer-events-the-dearest-country-20260803-b424a70f",
-      "event_id": "event-the-dearest-country",
-      "title": "The Dearest Country",
-      "reason": "already linked to catalog event"
-    },
-    {
       "candidate_id": "candidate-umm-al-qura-events-الترشح-للدبلوم-المتوسط-في-البرمجة-وعلوم-الحاسب-في-الجبيل-بالتعاون-مع-كلي-20260805-5ba68667",
       "event_id": "event-الترشح-للدبلوم-المتوسط-في-البرمجة-وعلوم-الحاسب-في-الجبيل-بالتعاون-مع-كلي",
       "title": "الترشح للدبلوم المتوسط في البرمجة وعلوم الحاسب في الجبيل بالتعاون مع كليات الفيحاء الأهلية",
@@ -1209,12 +1193,6 @@
       "reason": "already linked to catalog event"
     },
     {
-      "candidate_id": "candidate-future-skills-catalog-machine-learning-التعلم-الالي-20260809-13b057e2",
-      "event_id": "event-machine-learning-التعلم-الالي",
-      "title": "⁠Machine Learning - التعلم الالي",
-      "reason": "already linked to catalog event"
-    },
-    {
       "candidate_id": "candidate-future-skills-catalog-comptia-cloud-20260809-8946f510",
       "event_id": "event-comptia-cloud",
       "title": "⁠CompTIA Cloud+",
@@ -1227,63 +1205,15 @@
       "reason": "already linked to catalog event"
     },
     {
-      "candidate_id": "candidate-hayy-jameel-events-hayy-makers-introduction-to-pottery-course-with-pharah-al-ghalib-august-20260810-f9fb1ca0",
-      "event_id": "event-hayy-makers-2",
-      "title": "Hayy Makers | Introduction to Pottery Course with Pharah Al-Ghalib, August",
-      "reason": "already linked to catalog event"
-    },
-    {
       "candidate_id": "candidate-visit-saudi-calendar-pdf-أوركسترا-game-of-thrones-20260811-4a38d19e",
       "event_id": "event-أوركسترا-game-of-thrones",
       "title": "أوركسترا Game of Thrones",
       "reason": "already linked to catalog event"
     },
     {
-      "candidate_id": "candidate-sfda-events-الإدراج-في-خطوات-20260812-80dbadc1",
-      "event_id": "event-الإدراج-في-خطوات",
-      "title": "الإدراج في خطوات",
-      "reason": "already linked to catalog event"
-    },
-    {
-      "candidate_id": "candidate-sfda-events-مسارات-تصنيع-الأجهزة-والمستلزمات-الطبية-20260812-97c09c47",
-      "event_id": "event-مسارات-تصنيع-الأجهزة-والمستلزمات-الطبية",
-      "title": "مسارات تصنيع الأجهزة والمستلزمات الطبية",
-      "reason": "already linked to catalog event"
-    },
-    {
-      "candidate_id": "candidate-sfda-events-الإدراج-في-خطوات-20260812-5cd6efee",
-      "event_id": "event-الإدراج-في-خطوات",
-      "title": "الإدراج في خطوات",
-      "reason": "already linked to catalog event"
-    },
-    {
       "candidate_id": "candidate-hayy-jameel-events-hayy-arts-from-another-angle-explore-contemporary-art-with-alternative-e-20260812-3abe9558",
       "event_id": "event-hayy-arts-from-another-angel-explore-contemporary-art-with-alternative-e",
       "title": "Hayy Arts | From Another Angle, explore contemporary art with alternative exhibition tours",
-      "reason": "already linked to catalog event"
-    },
-    {
-      "candidate_id": "candidate-ithra-events-ithra-art-prize-exhibition-20260812-83c2ab55",
-      "event_id": "event-ithra-art-prize-exhibition",
-      "title": "Ithra Art Prize Exhibition",
-      "reason": "already linked to catalog event"
-    },
-    {
-      "candidate_id": "candidate-ithra-events-printing-house-20260812-e56f4f89",
-      "event_id": "event-printing-house",
-      "title": "Printing House",
-      "reason": "already linked to catalog event"
-    },
-    {
-      "candidate_id": "candidate-ithra-events-tafasahu-make-room-20260812-562bc61d",
-      "event_id": "event-tafasahu-make-room",
-      "title": "Tafasahu: Make Room",
-      "reason": "already linked to catalog event"
-    },
-    {
-      "candidate_id": "candidate-ithra-events-tinkering-stations-20260812-5a2c4c0e",
-      "event_id": "event-tinkering-stations",
-      "title": "Tinkering Stations",
       "reason": "already linked to catalog event"
     },
     {
@@ -1299,90 +1229,6 @@
       "reason": "already linked to catalog event"
     },
     {
-      "candidate_id": "candidate-ithra-events-energy-lab-20260812-60155d60",
-      "event_id": "event-energy-lab",
-      "title": "Energy Lab",
-      "reason": "already linked to catalog event"
-    },
-    {
-      "candidate_id": "candidate-ithra-events-creative-character-design-20260812-afddf835",
-      "event_id": "event-creative-character-design",
-      "title": "Creative Character Design",
-      "reason": "already linked to catalog event"
-    },
-    {
-      "candidate_id": "candidate-ithra-events-platforms-manager-skills-20260812-62ec512d",
-      "event_id": "event-platforms-manager-skills",
-      "title": "Platforms Manager Skills",
-      "reason": "already linked to catalog event"
-    },
-    {
-      "candidate_id": "candidate-ithra-events-ithra-chess-tournament-ages-13-18-20260812-1baa0014",
-      "event_id": "event-ithra-chess-tournament-ages-13-18",
-      "title": "Ithra Chess Tournament (Ages 13 - 18)",
-      "reason": "already linked to catalog event"
-    },
-    {
-      "candidate_id": "candidate-ithra-events-the-non-stop-spin-20260812-6cf89742",
-      "event_id": "event-the-non-stop-spin",
-      "title": "The Non-Stop Spin",
-      "reason": "already linked to catalog event"
-    },
-    {
-      "candidate_id": "candidate-ithra-events-storyteller-of-the-day-20260812-94528a46",
-      "event_id": "event-storyteller-of-the-day",
-      "title": "Storyteller of the Day",
-      "reason": "already linked to catalog event"
-    },
-    {
-      "candidate_id": "candidate-ithra-events-ithra-chess-tournament-20260812-49593879",
-      "event_id": "event-ithra-chess-tournament",
-      "title": "Ithra Chess Tournament",
-      "reason": "already linked to catalog event"
-    },
-    {
-      "candidate_id": "candidate-ithra-events-emboss-printing-experience-20260812-2671d1ce",
-      "event_id": "event-emboss-printing-experience",
-      "title": "Emboss Printing Experience",
-      "reason": "already linked to catalog event"
-    },
-    {
-      "candidate_id": "candidate-ithra-events-english-children-book-club-10-12-20260812-efa3d7e3",
-      "event_id": "event-english-children-book-club-10-12",
-      "title": "English Children Book Club (10 - 12)",
-      "reason": "already linked to catalog event"
-    },
-    {
-      "candidate_id": "candidate-ithra-events-moksha-20260812-0d457878",
-      "event_id": "event-moksha",
-      "title": "Moksha",
-      "reason": "already linked to catalog event"
-    },
-    {
-      "candidate_id": "candidate-ithra-events-ithra-short-play-contest-2026-20260812-11e2aa06",
-      "event_id": "event-ithra-short-play-contest-2026",
-      "title": "Ithra Short Play Contest 2026",
-      "reason": "already linked to catalog event"
-    },
-    {
-      "candidate_id": "candidate-ithra-events-your-book-in-a-minute-20260812-c8aab584",
-      "event_id": "event-your-book-in-a-minute",
-      "title": "Your Book in a Minute!",
-      "reason": "already linked to catalog event"
-    },
-    {
-      "candidate_id": "candidate-ithra-events-spot-of-inspiration-20260812-5bac584c",
-      "event_id": "event-spot-of-inspiration",
-      "title": "Spot of Inspiration",
-      "reason": "already linked to catalog event"
-    },
-    {
-      "candidate_id": "candidate-ithra-events-childrens-museum-story-time-20260812-ada8b9db",
-      "event_id": "event-childrens-museum-story-time",
-      "title": "Children's Museum Story Time",
-      "reason": "already linked to catalog event"
-    },
-    {
       "candidate_id": "candidate-visit-saudi-calendar-pdf-بطولة-أبطال-المملكة-للشطرنج-20260813-4a38d19e",
       "event_id": "event-بطولة-أبطال-المملكة-للشطرنج",
       "title": "بطولة أبطال المملكة للشطرنج",
@@ -1392,6 +1238,42 @@
       "candidate_id": "candidate-hayy-jameel-events-hayy-explorers-in-august-as-told-by-the-land-routes-of-exchange-20260813-9a00888f",
       "event_id": "event-hayy-explorers-in-august-as-told-by-the-land-routes-of-exchange",
       "title": "Hayy Explorers in August | As Told by the Land: Routes of Exchange",
+      "reason": "already linked to catalog event"
+    },
+    {
+      "candidate_id": "candidate-ithra-events-ithra-art-prize-exhibition-20260813-83c2ab55",
+      "event_id": "event-ithra-art-prize-exhibition",
+      "title": "Ithra Art Prize Exhibition",
+      "reason": "already linked to catalog event"
+    },
+    {
+      "candidate_id": "candidate-ithra-events-printing-house-20260813-e56f4f89",
+      "event_id": "event-printing-house",
+      "title": "Printing House",
+      "reason": "already linked to catalog event"
+    },
+    {
+      "candidate_id": "candidate-ithra-events-tafasahu-make-room-20260813-562bc61d",
+      "event_id": "event-tafasahu-make-room",
+      "title": "Tafasahu: Make Room",
+      "reason": "already linked to catalog event"
+    },
+    {
+      "candidate_id": "candidate-ithra-events-tinkering-stations-20260813-5a2c4c0e",
+      "event_id": "event-tinkering-stations",
+      "title": "Tinkering Stations",
+      "reason": "already linked to catalog event"
+    },
+    {
+      "candidate_id": "candidate-ithra-events-spot-of-inspiration-20260813-5bac584c",
+      "event_id": "event-spot-of-inspiration",
+      "title": "Spot of Inspiration",
+      "reason": "already linked to catalog event"
+    },
+    {
+      "candidate_id": "candidate-ithra-events-childrens-museum-story-time-20260813-ada8b9db",
+      "event_id": "event-childrens-museum-story-time",
+      "title": "Children's Museum Story Time",
       "reason": "already linked to catalog event"
     },
     {
@@ -1413,6 +1295,24 @@
       "reason": "already linked to catalog event"
     },
     {
+      "candidate_id": "candidate-ithra-events-emboss-printing-experience-20260813-2671d1ce",
+      "event_id": "event-emboss-printing-experience",
+      "title": "Emboss Printing Experience",
+      "reason": "already linked to catalog event"
+    },
+    {
+      "candidate_id": "candidate-ithra-events-creative-character-design-20260813-afddf835",
+      "event_id": "event-creative-character-design",
+      "title": "Creative Character Design",
+      "reason": "already linked to catalog event"
+    },
+    {
+      "candidate_id": "candidate-ithra-events-platforms-manager-skills-20260813-62ec512d",
+      "event_id": "event-platforms-manager-skills",
+      "title": "Platforms Manager Skills",
+      "reason": "already linked to catalog event"
+    },
+    {
       "candidate_id": "candidate-ithra-events-connect-and-create-20260813-d2514326",
       "event_id": "event-connect-and-create",
       "title": "Connect and Create!",
@@ -1422,6 +1322,18 @@
       "candidate_id": "candidate-ithra-events-the-moral-of-the-story-20260813-bfa3f2a8",
       "event_id": "event-the-moral-of-the-story",
       "title": "The Moral of the Story",
+      "reason": "already linked to catalog event"
+    },
+    {
+      "candidate_id": "candidate-ithra-events-ithra-chess-tournament-20260813-49593879",
+      "event_id": "event-ithra-chess-tournament",
+      "title": "Ithra Chess Tournament",
+      "reason": "already linked to catalog event"
+    },
+    {
+      "candidate_id": "candidate-ithra-events-ithra-short-play-contest-2026-20260813-11e2aa06",
+      "event_id": "event-ithra-short-play-contest-2026",
+      "title": "Ithra Short Play Contest 2026",
       "reason": "already linked to catalog event"
     },
     {
@@ -1569,6 +1481,12 @@
       "reason": "already linked to catalog event"
     },
     {
+      "candidate_id": "candidate-ithra-events-energy-lab-20260817-60155d60",
+      "event_id": "event-energy-lab",
+      "title": "Energy Lab",
+      "reason": "already linked to catalog event"
+    },
+    {
       "candidate_id": "candidate-ithra-events-children-story-time-20260817-f545fa69",
       "event_id": "event-children-story-time",
       "title": "Children Story Time",
@@ -1647,9 +1565,21 @@
       "reason": "already linked to catalog event"
     },
     {
+      "candidate_id": "candidate-ithra-events-storyteller-of-the-day-20260819-94528a46",
+      "event_id": "event-storyteller-of-the-day",
+      "title": "Storyteller of the Day",
+      "reason": "already linked to catalog event"
+    },
+    {
       "candidate_id": "candidate-ithra-events-youth-book-club-20260819-de163fbc",
       "event_id": "event-youth-book-club",
       "title": "Youth Book Club",
+      "reason": "already linked to catalog event"
+    },
+    {
+      "candidate_id": "candidate-ithra-events-your-book-in-a-minute-20260819-c8aab584",
+      "event_id": "event-your-book-in-a-minute",
+      "title": "Your Book in a Minute!",
       "reason": "already linked to catalog event"
     },
     {
@@ -1716,6 +1646,12 @@
       "candidate_id": "candidate-saudi-university-events-boat-bash-cruise-20260821-8afa1fda",
       "event_id": "event-boat-bash-cruise",
       "title": "Boat Bash Cruise",
+      "reason": "already linked to catalog event"
+    },
+    {
+      "candidate_id": "candidate-ithra-events-the-non-stop-spin-20260821-6cf89742",
+      "event_id": "event-the-non-stop-spin",
+      "title": "The Non-Stop Spin",
       "reason": "already linked to catalog event"
     },
     {
@@ -2118,6 +2054,12 @@
       "candidate_id": "candidate-riyadh-city-events-saudi-wood-expo-20260908-d1fa2ea0",
       "event_id": "event-saudi-wood-expo",
       "title": "Saudi Wood Expo",
+      "reason": "already linked to catalog event"
+    },
+    {
+      "candidate_id": "candidate-sfda-events-شرح-وتوضيح-إجراءات-الاستيراد-والتصدير-وحرية-البيع-20260909-7d3f0aff",
+      "event_id": "event-شرح-وتوضيح-إجراءات-الاستيراد-والتصدير-وحرية-البيع",
+      "title": "شرح وتوضيح إجراءات الاستيراد والتصدير وحرية البيع",
       "reason": "already linked to catalog event"
     },
     {
@@ -2907,6 +2849,12 @@
       "reason": "already linked to catalog event"
     },
     {
+      "candidate_id": "candidate-misk-hub-programs-application-deadline-discover-your-path-20261130-1bbce22f",
+      "event_id": "event-application-deadline-discover-your-path",
+      "title": "Application deadline: Discover Your Path",
+      "reason": "already linked to catalog event"
+    },
+    {
       "candidate_id": "candidate-informa-connect-saudi-events-saudi-intermobility-expo-20261130-00e0f2d5",
       "event_id": "event-saudi-intermobility-expo",
       "title": "Saudi Intermobility Expo",
@@ -3604,6 +3552,16 @@
       "reason": "unknown category requires review"
     },
     {
+      "candidate_id": "candidate-saudicon-events-موسم-التمور-في-أسواق-الربوة-بالرياض-20260815-20771c02",
+      "title": "موسم التمور في أسواق الربوة بالرياض",
+      "reason": "publication gate source-evidence is not auto-publishable"
+    },
+    {
+      "candidate_id": "candidate-saudicon-events-موسم-التمور-في-أسواق-الربوة-20260815-0db17989",
+      "title": "موسم التمور في أسواق الربوة",
+      "reason": "publication gate source-evidence is not auto-publishable"
+    },
+    {
       "candidate_id": "candidate-saudicon-events-مهرجان-شقراء-الأسياح-للتمور-بنسخته-الرابعة-20260816-54b751a0",
       "title": "مهرجان شقراء الأسياح للتمور بنسخته الرابعة",
       "reason": "publication gate source-evidence is not auto-publishable"
@@ -3676,16 +3634,6 @@
       "candidate_id": "candidate-saudicon-events-ليب-2026-20260831-8612d635",
       "title": "ليب 2026",
       "reason": "possible duplicate already exists: event-leap-2026"
-    },
-    {
-      "candidate_id": "candidate-saudicon-events-قمة-مراكز-البيانات-والبنية-التحتية-السحابية-السعودية-2026-20260901-f89f6689",
-      "title": "قمة مراكز البيانات والبنية التحتية السحابية السعودية 2026",
-      "reason": "publication gate source-evidence is not auto-publishable"
-    },
-    {
-      "candidate_id": "candidate-saudicon-events-قمة-ومعرض-الموارد-البشرية-السعودية-2026-20260901-7392143b",
-      "title": "قمة ومعرض الموارد البشرية السعودية 2026",
-      "reason": "publication gate source-evidence is not auto-publishable"
     },
     {
       "candidate_id": "candidate-eventbrite-saudi-smart-sustainable-building-intelligent-ecosystems-for-tomorrows-cities-20260901-e45c1490",

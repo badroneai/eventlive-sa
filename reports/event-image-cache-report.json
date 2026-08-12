@@ -1,25 +1,18 @@
 {
-  "generated_at": "2026-08-12T14:06:08.891Z",
+  "generated_at": "2026-08-12T19:59:39.455Z",
   "events_file": "dist/events.json",
   "manifest": "data/event_image_cache_manifest.json",
   "image_dir": "dist/assets/event-images",
   "totals": {
     "targets": 500,
     "cached_total": 801,
-    "fetched": 1,
-    "reused": 496,
+    "fetched": 0,
+    "reused": 497,
     "failed": 3,
-    "skipped_recent_failures": 3,
+    "skipped_recent_failures": 0,
     "remembered_failures": 6
   },
-  "fetched": [
-    {
-      "source_url": "https://www.sfda.gov.sa/sites/default/files/2026-08/%D9%88%D8%B1%D8%B4%20%D8%A7%D9%84%D8%B9%D9%85%D9%84%20.jpg",
-      "file": "dist/assets/event-images/شرح-وتوضيح-إجراءات-الاستيراد-والتصدير-وحرية-البيع-1889b3967c.jpg",
-      "bytes": 639041,
-      "events": 1
-    }
-  ],
+  "fetched": [],
   "reused": [
     {
       "source_url": "https://music.moc.gov.sa/-/media/Project/Ministries/Moc/Events/Artboard1.png",
@@ -447,11 +440,6 @@
       "events": 1
     },
     {
-      "source_url": "https://www.ithra.com/application/files/cache/thumbnails/85d5578f24bf5b2a9e720c84eec26adc.jpg",
-      "file": "dist/assets/event-images/english-children-book-club-7-9-5174b0b666.jpg",
-      "events": 4
-    },
-    {
       "source_url": "https://www.ithra.com/application/files/cache/thumbnails/1bfbc17fa9fc0e794418752ac39ebb8d.jpg",
       "file": "dist/assets/event-images/your-book-in-a-minute-5cc468c06d.jpg",
       "events": 1
@@ -545,6 +533,11 @@
       "source_url": "https://www.ithra.com/application/files/cache/thumbnails/388c96722ea7802636485fc7640da5a1.jpg",
       "file": "dist/assets/event-images/energy-in-motion-bba2390362.jpg",
       "events": 1
+    },
+    {
+      "source_url": "https://www.ithra.com/application/files/cache/thumbnails/85d5578f24bf5b2a9e720c84eec26adc.jpg",
+      "file": "dist/assets/event-images/english-children-book-club-7-9-5174b0b666.jpg",
+      "events": 4
     },
     {
       "source_url": "https://www.ithra.com/application/files/cache/thumbnails/5031b376aa4c8c1488517597db5bca86.jpg",
@@ -647,11 +640,6 @@
       "events": 1
     },
     {
-      "source_url": "https://discoveraseer.com/en/img/asset/YXNzZXRzL2V4cGVyaWVuY2UvYWdobC1ibGRfcGFnZS0wMDAxLmpwZw/aghl-bld_page-0001.jpg?w=1024&fm=webp&s=efb01a4f9be9734e9f14ca3e4f27adc0",
-      "file": "dist/assets/event-images/أغلى-وطن-a1dffa4a36.webp",
-      "events": 1
-    },
-    {
       "source_url": "https://www.ithra.com/application/files/cache/thumbnails/72323733814ab2d738b5416789d15bd1.jpg",
       "file": "dist/assets/event-images/ithra-art-prize-exhibition-05524875fd.jpg",
       "events": 1
@@ -724,11 +712,6 @@
     {
       "source_url": "https://hayyjameel.org/wp-content/uploads/2026/08/DSC00522-1100x500.jpg",
       "file": "dist/assets/event-images/hayy-arts-from-another-angel-explore-contemporary-art-with-alternative-b06bceee40.jpg",
-      "events": 1
-    },
-    {
-      "source_url": "https://www.ithra.com/application/files/cache/thumbnails/f2679c3d2bb7fcaa5db4cce650b92db8.jpg",
-      "file": "dist/assets/event-images/بطولة-إثراء-للشطرنج-13-18-عامًا-9eff72d3fb.jpg",
       "events": 1
     },
     {
@@ -1014,6 +997,11 @@
     {
       "source_url": "https://api.riyadh.sa/sites/default/files/styles/medium/public/2025-12/Wood%20Show%20m%20%281%29.png?itok=Pc6kv-K1",
       "file": "dist/assets/event-images/saudi-wood-expo-5d2c61e1bf.png",
+      "events": 1
+    },
+    {
+      "source_url": "https://www.sfda.gov.sa/sites/default/files/2026-08/%D9%88%D8%B1%D8%B4%20%D8%A7%D9%84%D8%B9%D9%85%D9%84%20.jpg",
+      "file": "dist/assets/event-images/شرح-وتوضيح-إجراءات-الاستيراد-والتصدير-وحرية-البيع-1889b3967c.jpg",
       "events": 1
     },
     {
@@ -1962,6 +1950,11 @@
       "events": 1
     },
     {
+      "source_url": "https://www.ithra.com/application/files/cache/thumbnails/f2679c3d2bb7fcaa5db4cce650b92db8.jpg",
+      "file": "dist/assets/event-images/بطولة-إثراء-للشطرنج-13-18-عامًا-9eff72d3fb.jpg",
+      "events": 1
+    },
+    {
       "source_url": "https://www.ithra.com/application/files/cache/thumbnails/5c8313b3714c56cee2cdb36d8c6247ab.jpg",
       "file": "dist/assets/event-images/موكشا-6a8b1cb067.jpg",
       "events": 1
@@ -1994,6 +1987,11 @@
     {
       "source_url": "https://www.ithra.com/application/files/cache/thumbnails/2a93a513735da824f0d28d0a8d24b99d.jpg",
       "file": "dist/assets/event-images/children-s-museum-free-monday-197cdfde54.jpg",
+      "events": 1
+    },
+    {
+      "source_url": "https://discoveraseer.com/en/img/asset/YXNzZXRzL2V4cGVyaWVuY2UvYWdobC1ibGRfcGFnZS0wMDAxLmpwZw/aghl-bld_page-0001.jpg?w=1024&fm=webp&s=efb01a4f9be9734e9f14ca3e4f27adc0",
+      "file": "dist/assets/event-images/أغلى-وطن-a1dffa4a36.webp",
       "events": 1
     },
     {
@@ -2504,60 +2502,32 @@
   ],
   "rejected_removed": [],
   "missing_removed": [],
-  "skipped_recent_failures": [
-    {
-      "source_url": "https://cdn.rfecc.sa/wp-content/uploads/mec/qr_898ea2449274454e42895b52b18c6f68.png",
-      "events": 1,
-      "reason": "HTTP 403",
-      "failure_kind": "access-denied",
-      "retry_after": "2026-08-12T19:58:51.838Z",
-      "skipped": true
-    },
-    {
-      "source_url": "https://api.riyadh.sa/sites/default/files/styles/medium/public/2026-07/er%20%2859%29.jpg?itok=a33APdGm",
-      "events": 1,
-      "reason": "not-image text/html; charset=utf-8",
-      "failure_kind": "source-returned-html",
-      "retry_after": "2026-08-12T19:58:51.838Z",
-      "skipped": true
-    },
-    {
-      "source_url": "https://s7g10.scene7.com/is/image/rcu/fei2:landscape-16x9?$Responsive$&fit=stretch&fmt=webp&wid=1920",
-      "events": 1,
-      "reason": "HTTP 403",
-      "failure_kind": "access-denied",
-      "retry_after": "2026-08-12T19:58:51.838Z",
-      "skipped": true
-    }
-  ],
+  "skipped_recent_failures": [],
   "failed": [
     {
       "source_url": "https://cdn.rfecc.sa/wp-content/uploads/mec/qr_898ea2449274454e42895b52b18c6f68.png",
       "events": 1,
       "reason": "HTTP 403",
       "failure_kind": "access-denied",
-      "retry_after": "2026-08-12T19:58:51.838Z",
-      "skipped": true
-    },
-    {
-      "source_url": "https://api.riyadh.sa/sites/default/files/styles/medium/public/2026-07/er%20%2859%29.jpg?itok=a33APdGm",
-      "events": 1,
-      "reason": "not-image text/html; charset=utf-8",
-      "failure_kind": "source-returned-html",
-      "retry_after": "2026-08-12T19:58:51.838Z",
-      "skipped": true
+      "retry_after": "2026-08-13T19:59:39.455Z"
     },
     {
       "source_url": "https://s7g10.scene7.com/is/image/rcu/fei2:landscape-16x9?$Responsive$&fit=stretch&fmt=webp&wid=1920",
       "events": 1,
       "reason": "HTTP 403",
       "failure_kind": "access-denied",
-      "retry_after": "2026-08-12T19:58:51.838Z",
-      "skipped": true
+      "retry_after": "2026-08-13T19:59:39.455Z"
+    },
+    {
+      "source_url": "https://api.riyadh.sa/sites/default/files/styles/medium/public/2026-07/er%20%2859%29.jpg?itok=a33APdGm",
+      "events": 1,
+      "reason": "not-image text/html; charset=utf-8",
+      "failure_kind": "source-returned-html",
+      "retry_after": "2026-08-13T19:59:39.455Z"
     }
   ],
   "requires_rebuild": true,
   "rebuild_reasons": [
-    "fetched:1"
+    "new-failures:3"
   ]
 }
