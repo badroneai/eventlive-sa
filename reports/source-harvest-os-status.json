@@ -1,6 +1,6 @@
 {
   "schema": "eventlive.harvest-os-status.v1",
-  "generated_at": "2026-08-11T20:07:06.847Z",
+  "generated_at": "2026-08-12T03:09:06.208Z",
   "status": "NEEDS_WORK",
   "operating_rule": "Probe before new sources; sample before full harvest; Raw collection is not publication; discovery-only never auto-publishes.",
   "totals": {
@@ -12,10 +12,10 @@
     "partnership_required_sources": 5,
     "blocked_or_closed_sources": 0,
     "manual_review_sources": 56,
-    "collection_attempted": 27,
+    "collection_attempted": 24,
     "productive_sources": 21,
-    "collector_errors": 4,
-    "chronic_collector_errors": 4,
+    "collector_errors": 5,
+    "chronic_collector_errors": 5,
     "transient_collector_errors": 0
   },
   "policies": {
@@ -30,14 +30,14 @@
     "source-evidence": 25
   },
   "funnel": {
-    "discovered_this_run": 331,
+    "discovered_this_run": 315,
     "candidate_queue": 601,
     "evaluated_for_publish": 601,
-    "linked_existing": 556,
-    "published_new": 7,
+    "linked_existing": 557,
+    "published_new": 6,
     "blocked": 38,
     "secondary_promoted": 0,
-    "secondary_still_blocked": 34
+    "secondary_still_blocked": 33
   },
   "blocked_reasons": {
     "possible duplicate requires review: exact-title-city-source-conflict": 6,
@@ -58,26 +58,33 @@
       "note": "collector-error: fetch failed; fetch failed",
       "error_streak": 23,
       "kind": "chronic",
-      "attempted_this_run": true
+      "attempted_this_run": false
     },
     {
       "id": "mos-events",
       "note": "collector-error: fetch failed",
       "error_streak": 23,
       "kind": "chronic",
-      "attempted_this_run": true
+      "attempted_this_run": false
     },
     {
       "id": "moc-cultural-subportals",
       "note": "collector-error: fetch failed; fetch failed",
       "error_streak": 23,
       "kind": "chronic",
-      "attempted_this_run": true
+      "attempted_this_run": false
     },
     {
       "id": "monshaat-events",
       "note": "collector-error: fetch failed; fetch failed",
       "error_streak": 6,
+      "kind": "chronic",
+      "attempted_this_run": false
+    },
+    {
+      "id": "asharqia-chamber-events",
+      "note": "fetch failed; page.goto: Timeout 30000ms exceeded. Call log:   - navigating to \"https://www.chamber.org.sa/sites/Arabic/Events/ChamberEvents/Pages/AllChamberEvents.aspx\", waiting until \"domcontentload",
+      "error_streak": 3,
       "kind": "chronic",
       "attempted_this_run": true
     }

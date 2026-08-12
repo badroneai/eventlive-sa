@@ -1,11 +1,11 @@
 # EventLive Source Auto Publish Report
 
-- published_at: 2026-08-11T19:55:32.962Z
+- published_at: 2026-08-12T02:57:59.150Z
 - dry_run: false
 - include_partner: true
 - candidates_seen: 601
-- published_new: 7
-- linked_existing: 556
+- published_new: 6
+- linked_existing: 557
 - blocked_remaining: 38
 - duplicate_review_alerts: 8
 
@@ -31,7 +31,6 @@
 | candidate-visit-saudi-calendar-pdf-مزرعة-التوت-الأسود-20260701-4a38d19e | published | event-مزرعة-التوت-الأسود | مزرعة التوت الأسود |
 | candidate-visit-saudi-calendar-pdf-الأخطبوطية-20260704-4a38d19e | published | event-الأخطبوطية | الأخطبوطية |
 | candidate-visit-saudi-calendar-pdf-عروض-الفنون-الأدائية-التقليدية-20260706-4a38d19e | published | event-عروض-الفنون-الأدائية-التقليدية | عروض الفنون الأدائية التقليدية |
-| candidate-umm-al-qura-events-دبلوم-إدارة-المشاريع-20261231-babac01b | published | event-دبلوم-إدارة-المشاريع | دبلوم إدارة المشاريع |
 | candidate-moc-cultural-subportals-skill-development-initiative-20210714-10f7dc2c | linked-existing | event-skill-development-initiative | already linked to catalog event |
 | candidate-moc-cultural-subportals-sitar-20220921-cda2e068 | linked-existing | event-sitar | already linked to catalog event |
 | candidate-moc-cultural-subportals-the-architecture-and-design-caf-20240427-046e2ec1 | linked-existing | event-the-architecture-and-design-caf | already linked to catalog event |
@@ -204,8 +203,6 @@
 | candidate-monshaat-events-لقاءات-أسبوع-الذكاء-الاصطناعي-9-13-أغسطس-2026-20260809-08845aeb | linked-existing | event-لقاءات-أسبوع-الذكاء-الاصطناعي-9-13-أغسطس-2026 | already linked to catalog event |
 | candidate-hayy-jameel-events-hayy-makers-introduction-to-pottery-course-with-pharah-al-ghalib-august-20260810-f9fb1ca0 | linked-existing | event-hayy-makers-2 | already linked to catalog event |
 | candidate-visit-saudi-calendar-pdf-أوركسترا-game-of-thrones-20260811-4a38d19e | linked-existing | event-أوركسترا-game-of-thrones | already linked to catalog event |
-| candidate-ithra-events-bedayat-beginnings-of-saudi-art-movement-20260811-e0a239ef | linked-existing | event-bedayat-beginnings-of-saudi-art-movement | already linked to catalog event |
-| candidate-ithra-events-echoes-of-the-familiar-20260811-cc43c2bd | linked-existing | event-echoes-of-the-familiar | already linked to catalog event |
 | candidate-sfda-events-الإدراج-في-خطوات-20260812-80dbadc1 | linked-existing | event-الإدراج-في-خطوات | already linked to catalog event |
 | candidate-sfda-events-مسارات-تصنيع-الأجهزة-والمستلزمات-الطبية-20260812-97c09c47 | linked-existing | event-مسارات-تصنيع-الأجهزة-والمستلزمات-الطبية | already linked to catalog event |
 | candidate-sfda-events-الإدراج-في-خطوات-20260812-5cd6efee | linked-existing | event-الإدراج-في-خطوات | already linked to catalog event |
@@ -214,6 +211,8 @@
 | candidate-ithra-events-printing-house-20260812-e56f4f89 | linked-existing | event-printing-house | already linked to catalog event |
 | candidate-ithra-events-tafasahu-make-room-20260812-562bc61d | linked-existing | event-tafasahu-make-room | already linked to catalog event |
 | candidate-ithra-events-tinkering-stations-20260812-5a2c4c0e | linked-existing | event-tinkering-stations | already linked to catalog event |
+| candidate-ithra-events-bedayat-beginnings-of-saudi-art-movement-20260812-e0a239ef | linked-existing | event-bedayat-beginnings-of-saudi-art-movement | already linked to catalog event |
+| candidate-ithra-events-echoes-of-the-familiar-20260812-cc43c2bd | linked-existing | event-echoes-of-the-familiar | already linked to catalog event |
 | candidate-ithra-events-spot-of-inspiration-20260812-5bac584c | linked-existing | event-spot-of-inspiration | already linked to catalog event |
 | candidate-ithra-events-childrens-museum-story-time-20260812-ada8b9db | linked-existing | event-childrens-museum-story-time | already linked to catalog event |
 | candidate-ithra-events-emboss-printing-experience-20260812-2671d1ce | linked-existing | event-emboss-printing-experience | already linked to catalog event |
@@ -524,6 +523,7 @@
 | candidate-riyadh-city-events-next-gen-iot-expo-20261221-dfb4907e | linked-existing | event-next-gen-iot-expo | already linked to catalog event |
 | candidate-asharqia-chamber-events-معرض-وظائف-2026-20261227-6ec9f54f | linked-existing | event-معرض-وظائف-2026 | already linked to catalog event |
 | candidate-umm-al-qura-events-الترشح-للدبلوم-المتوسط-في-أمن-المعلومات-في-الجبيل-بالتعاون-مع-كليات-الفي-20261231-c4b0ec06 | linked-existing | event-الترشح-للدبلوم-المتوسط-في-أمن-المعلومات-في-الجبيل-بالتعاون-مع-كليات-الفي | already linked to catalog event |
+| candidate-umm-al-qura-events-دبلوم-إدارة-المشاريع-20261231-babac01b | linked-existing | event-دبلوم-إدارة-المشاريع | already linked to catalog event |
 | candidate-umm-al-qura-events-الترشح-للدبلوم-المتوسط-في-المحاسبة-المالية-في-الجبيل-بالتعاون-مع-كليات-ا-20261231-93e5e6a0 | linked-existing | event-الترشح-للدبلوم-المتوسط-في-المحاسبة-المالية-في-الجبيل-بالتعاون-مع-كليات-ا | already linked to catalog event |
 | candidate-umm-al-qura-events-الترشح-للدبلوم-المتوسط-في-الإدارة-المكتبية-في-جازان-بالتعاون-مع-أكاديمية-20270101-91502b5d | linked-existing | event-دبلوم-الإدارة-المكتبية | already linked to catalog event |
 | candidate-umm-al-qura-events-رابط-التسجيل-والسداد-للدبلوم-المتوسط-في-المحاسبة-المالية-في-عنيزة-بالتعا-20270101-50a5e932 | linked-existing | event-رابط-التسجيل-والسداد-للدبلوم-المتوسط-في-المحاسبة-المالية-في-عنيزة-بالتعا | already linked to catalog event |
