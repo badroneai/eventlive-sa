@@ -1,22 +1,22 @@
 {
   "schema": "eventlive.harvest-os-status.v1",
-  "generated_at": "2026-08-13T14:15:10.761Z",
+  "generated_at": "2026-08-13T20:06:47.357Z",
   "status": "NEEDS_WORK",
   "operating_rule": "Probe before new sources; sample before full harvest; Raw collection is not publication; discovery-only never auto-publishes.",
   "totals": {
     "sources": 88,
-    "candidates": 595,
-    "matched_candidates": 565,
+    "candidates": 590,
+    "matched_candidates": 560,
     "auto_publish_sources": 15,
     "candidate_only_sources": 12,
     "partnership_required_sources": 5,
     "blocked_or_closed_sources": 0,
     "manual_review_sources": 56,
-    "collection_attempted": 24,
+    "collection_attempted": 20,
     "productive_sources": 19,
-    "collector_errors": 7,
+    "collector_errors": 5,
     "chronic_collector_errors": 5,
-    "transient_collector_errors": 2
+    "transient_collector_errors": 0
   },
   "policies": {
     "partnership_required": 5,
@@ -25,19 +25,19 @@
     "manual_review": 56
   },
   "candidates_by_gate": {
-    "catalog-review": 562,
+    "catalog-review": 557,
     "duplicate-review": 8,
     "source-evidence": 25
   },
   "funnel": {
-    "discovered_this_run": 293,
-    "candidate_queue": 595,
-    "evaluated_for_publish": 595,
-    "linked_existing": 550,
-    "published_new": 7,
+    "discovered_this_run": 290,
+    "candidate_queue": 590,
+    "evaluated_for_publish": 590,
+    "linked_existing": 546,
+    "published_new": 6,
     "blocked": 38,
     "secondary_promoted": 0,
-    "secondary_still_blocked": 34
+    "secondary_still_blocked": 33
   },
   "blocked_reasons": {
     "possible duplicate requires review: exact-title-city-source-conflict": 6,
@@ -62,7 +62,7 @@
     },
     {
       "id": "mos-events",
-      "note": "collector-error: fetch failed",
+      "note": "collector-error: HTTP 404",
       "error_streak": 24,
       "kind": "chronic",
       "attempted_this_run": false
@@ -86,21 +86,7 @@
       "note": "collector-error: fetch failed",
       "error_streak": 4,
       "kind": "chronic",
-      "attempted_this_run": true
-    },
-    {
-      "id": "tuwaiq-academy-bootcamps",
-      "note": "HTTP 403",
-      "error_streak": 1,
-      "kind": "transient",
-      "attempted_this_run": true
-    },
-    {
-      "id": "saudi-space-agency-events",
-      "note": "fetch failed",
-      "error_streak": 1,
-      "kind": "transient",
-      "attempted_this_run": true
+      "attempted_this_run": false
     }
   ],
   "sources": [

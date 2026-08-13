@@ -1,32 +1,32 @@
 # EventLive Harvest OS Status
 
-- Generated at: 2026-08-13T14:15:10.761Z
+- Generated at: 2026-08-13T20:06:47.357Z
 - Status: NEEDS_WORK
 - Operating rule: Probe before new sources; sample before full harvest; Raw collection is not publication; discovery-only never auto-publishes.
 
 ## Totals
 
 - Sources: 88
-- Candidates: 595
-- Matched candidates: 565
+- Candidates: 590
+- Matched candidates: 560
 - Auto-publish sources: 15
 - Candidate-only sources: 12
 - Partnership-required sources: 5
-- Productive sources / attempted: 19/24
-- Collector errors: 7 (chronic 5, transient 2)
+- Productive sources / attempted: 19/20
+- Collector errors: 5 (chronic 5, transient 0)
 
 ## Publication Funnel
 
 | Stage | Count |
 | --- | --- |
-| discovered_this_run | 293 |
-| candidate_queue | 595 |
-| evaluated_for_publish | 595 |
-| linked_existing | 550 |
-| published_new | 7 |
+| discovered_this_run | 290 |
+| candidate_queue | 590 |
+| evaluated_for_publish | 590 |
+| linked_existing | 546 |
+| published_new | 6 |
 | blocked | 38 |
 | secondary_promoted | 0 |
-| secondary_still_blocked | 34 |
+| secondary_still_blocked | 33 |
 
 ## Blocked Reasons
 
@@ -49,12 +49,10 @@
 | Source | Kind | Failed runs in a row | Attempted this run | Reason |
 | --- | --- | --- | --- | --- |
 | moc-cultural-calendar | chronic | 24 | no | collector-error: fetch failed; fetch failed |
-| mos-events | chronic | 24 | no | collector-error: fetch failed |
+| mos-events | chronic | 24 | no | collector-error: HTTP 404 |
 | moc-cultural-subportals | chronic | 24 | no | collector-error: fetch failed; fetch failed |
 | monshaat-events | chronic | 7 | no | collector-error: fetch failed; fetch failed |
-| saudi-pro-league-fixtures | chronic | 4 | yes | collector-error: fetch failed |
-| tuwaiq-academy-bootcamps | transient | 1 | yes | HTTP 403 |
-| saudi-space-agency-events | transient | 1 | yes | fetch failed |
+| saudi-pro-league-fixtures | chronic | 4 | no | collector-error: fetch failed |
 
 | Source | Policy | Trust | Gate |
 | --- | --- | --- | --- |

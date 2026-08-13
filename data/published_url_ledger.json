@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "generated_at": "2026-08-13T14:10:11.554Z",
+  "generated_at": "2026-08-13T20:01:25.263Z",
   "events": {
     "event-skill-development-initiative": {
       "identity": "skill development initiative|riyadh|2021-07-14",
@@ -370,11 +370,6 @@
     "event-kashtah": {
       "identity": "kashtah|aseer|2026-06-27",
       "first_seen": "2026-07-11",
-      "last_seen": "2026-08-13"
-    },
-    "event-al-reef-park": {
-      "identity": "al reef park|aseer|2026-06-30",
-      "first_seen": "2026-07-27",
       "last_seen": "2026-08-13"
     },
     "event-بيوني-الشرف": {
@@ -1037,23 +1032,8 @@
       "first_seen": "2026-07-11",
       "last_seen": "2026-08-13"
     },
-    "event-comptia-cloud": {
-      "identity": "comptia cloud+|online|2026-08-09",
-      "first_seen": "2026-08-01",
-      "last_seen": "2026-08-13"
-    },
-    "event-لقاءات-أسبوع-الذكاء-الاصطناعي-9-13-أغسطس-2026": {
-      "identity": "لقاءات أسبوع الذكاء الاصطناعي 9 – 13 أغسطس 2026|saudi arabia|2026-08-09",
-      "first_seen": "2026-08-05",
-      "last_seen": "2026-08-13"
-    },
     "event-معسكر-تطوير-مواقع-الويب-باستخدام-java-ودمج-تقنيات-الذكاء-الاصطناعي": {
       "identity": "معسكر تطوير مواقع الويب باستخدام java ودمج تقنيات الذكاء الاصطناعي|riyadh|2026-08-09",
-      "first_seen": "2026-07-11",
-      "last_seen": "2026-08-13"
-    },
-    "event-platforms-manager-skills": {
-      "identity": "platforms manager skills|dhahran|2026-08-10",
       "first_seen": "2026-07-11",
       "last_seen": "2026-08-13"
     },
@@ -1070,11 +1050,6 @@
     "event-creative-character-design": {
       "identity": "creative character design|dhahran|2026-08-11",
       "first_seen": "2026-07-11",
-      "last_seen": "2026-08-13"
-    },
-    "event-ithra-chess-tournament": {
-      "identity": "ithra chess tournament|dhahran|2026-08-11",
-      "first_seen": "2026-07-27",
       "last_seen": "2026-08-13"
     },
     "event-hayy-arts-from-another-angel-explore-contemporary-art-with-alternative-e": {
@@ -2732,9 +2707,19 @@
       "first_seen": "2026-07-27",
       "last_seen": "2026-08-13"
     },
+    "event-ithra-chess-tournament": {
+      "identity": "ithra chess tournament|dhahran|2026-08-11",
+      "first_seen": "2026-07-27",
+      "last_seen": "2026-08-13"
+    },
     "event-ithra-members-tour": {
       "identity": "ithra members tour|dhahran|2026-08-11",
       "first_seen": "2026-08-04",
+      "last_seen": "2026-08-13"
+    },
+    "event-platforms-manager-skills": {
+      "identity": "platforms manager skills|dhahran|2026-08-10",
+      "first_seen": "2026-07-11",
       "last_seen": "2026-08-13"
     },
     "event-الأجهزة-الطبية-الرقمية-التوعية-بالمتطلبات-التنظيمية-وأفضل-الممارسات": {
@@ -2750,6 +2735,16 @@
     "event-genai-for-data-analysis-and-decision-support-الذكاء-الاصطناعي-التوليدي-ل": {
       "identity": "genai for data analysis and decision support - الذكاء الاصطناعي التوليدي لتحليل البيانات ودعم اتخاذ القرار|online|2026-08-09",
       "first_seen": "2026-08-01",
+      "last_seen": "2026-08-13"
+    },
+    "event-comptia-cloud": {
+      "identity": "comptia cloud+|online|2026-08-09",
+      "first_seen": "2026-08-01",
+      "last_seen": "2026-08-13"
+    },
+    "event-لقاءات-أسبوع-الذكاء-الاصطناعي-9-13-أغسطس-2026": {
+      "identity": "لقاءات أسبوع الذكاء الاصطناعي 9 – 13 أغسطس 2026|saudi arabia|2026-08-09",
+      "first_seen": "2026-08-05",
       "last_seen": "2026-08-13"
     },
     "event-beast-house": {
@@ -3735,6 +3730,11 @@
     "ended-ithra-events-low-budget-films-opportunity-artistic-choice-or-a-phase-20260630-81be51e1": {
       "identity": "low-budget films – opportunity, artistic choice, or a phase?|dhahran|2026-06-30",
       "first_seen": "2026-07-11",
+      "last_seen": "2026-08-13"
+    },
+    "event-al-reef-park": {
+      "identity": "al reef park|aseer|2026-06-30",
+      "first_seen": "2026-07-27",
       "last_seen": "2026-08-13"
     },
     "ended-visit-saudi-calendar-pdf-attach-atelier-20260630-4a38d19e": {

@@ -1,6 +1,6 @@
 # EventLive Source Deep Probe
 
-Generated at: 2026-08-12T19:31:13.993Z
+Generated at: 2026-08-13T19:31:33.886Z
 
 ## Summary
 
@@ -20,18 +20,18 @@ Generated at: 2026-08-12T19:31:13.993Z
 | 31 | neom-newsroom-events | 200 | 68 | build-html-detail-extractor | 0 | 0 | 8 | Events |
 | 33 | cst-events-news | 200 | 58 | probe-hidden-api-or-html-table | 0 | 0 | 0 | Communications, Space & Technology Commission (CST) |
 | 38 | historic-jeddah-albalad | 200 | 58 | probe-hidden-api-or-html-table | 0 | 0 | 2 | جدة التاريخية |
+| 34 | visit-saudi-calendar-pdf | 200 | 48 | probe-hidden-api-or-html-table | 0 | 0 | 0 | - |
 | 66 | tabuk-chamber-events | 200 | 48 | probe-hidden-api-or-html-table | 0 | 0 | 0 | الغرفة التجارية بتبوك | TABUK CHAMBER |
 | 36 | sela-sea-expo | 200 | 46 | probe-hidden-api-or-html-table | 0 | 0 | 0 | Sela | Spectacular Everyday |
 | 42 | aseer-season-asda | 200 | 46 | probe-hidden-api-or-html-table | 0 | 0 | 0 | Aseer Development Authority | Qimam wa Shiyam Strategy |
-| 34 | visit-saudi-calendar-pdf | 404 | 38 | probe-hidden-api-or-html-table | 0 | 0 | 0 | Not Found - Visit Saudi Official Website |
 | 40 | diriyah-season | 200 | 36 | probe-hidden-api-or-html-table | 0 | 0 | 0 | Diriyah Season – Coming Soon |
 | 45 | saudi-university-events | 200 | 36 | probe-hidden-api-or-html-table | 0 | 0 | 2 | KAUST | A top research university in the Middle East |
-| 62 | baha-amanah-events | 200 | 23 | blocked-or-protected:bot-protection | 0 | 0 | 19 | فعاليات الباحة |
 | 18 | riyadh-season | 200 | -23 | blocked-or-protected:bot-protection | 0 | 0 | 0 | - |
 | 27 | enjoy-saudi-events | 403 | -23 | blocked-or-protected:http-403 | 0 | 0 | 0 | تعذر الوصول إلى الصفحة | Access Unavailable |
 | 41 | ricec-events | - | -23 | blocked-or-protected:fetch failed getaddrinfo EAI_AGAIN www.ricec.com TypeError: fetch failed | 0 | 0 | 0 | - |
-| 49 | saudi-contractors-authority-events | - | -23 | blocked-or-protected:fetch failed getaddrinfo ENOTFOUND www.sca.gov.sa TypeError: fetch failed | 0 | 0 | 0 | - |
 | 51 | riyadh-city-events | - | -23 | blocked-or-protected:fetch failed unable to verify the first certificate; if the root CA is installed locally, try running Node.js with --use-system-ca TypeError: fetch failed | 0 | 0 | 0 | - |
+| 74 | middle-east-banking-ai-summit | 200 | -23 | blocked-or-protected:bot-protection | 0 | 0 | 0 | Middle East Banking |
+| 75 | middle-east-enterprise-ai-summit | - | -23 | blocked-or-protected:fetch failed TypeError: fetch failed | 0 | 0 | 0 | - |
 | 24 | saudi-digital-academy | - | -35 | blocked-or-protected:fetch failed getaddrinfo ENOTFOUND sda.edu.sa TypeError: fetch failed | 0 | 0 | 0 | - |
 | 35 | qiddiya-events | 403 | -35 | blocked-or-protected:http-403 | 0 | 0 | 0 | Attention Required! | Cloudflare |
 | 43 | jeddah-season | - | -35 | blocked-or-protected:fetch failed getaddrinfo ENOTFOUND jeddahseason.sa TypeError: fetch failed | 0 | 0 | 0 | - |
@@ -44,5 +44,5 @@ Generated at: 2026-08-12T19:31:13.993Z
 - neom-newsroom-events: build-html-detail-extractor (score=68, gcal=0, structured=0, links=8)
 - cst-events-news: probe-hidden-api-or-html-table (score=58, gcal=0, structured=0, links=0)
 - historic-jeddah-albalad: probe-hidden-api-or-html-table (score=58, gcal=0, structured=0, links=2)
+- visit-saudi-calendar-pdf: probe-hidden-api-or-html-table (score=48, gcal=0, structured=0, links=0)
 - tabuk-chamber-events: probe-hidden-api-or-html-table (score=48, gcal=0, structured=0, links=0)
-- sela-sea-expo: probe-hidden-api-or-html-table (score=46, gcal=0, structured=0, links=0)

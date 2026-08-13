@@ -1,18 +1,18 @@
 {
-  "published_at": "2026-08-13T14:03:52.964Z",
+  "published_at": "2026-08-13T19:53:03.855Z",
   "dry_run": false,
   "include_partner": true,
   "source_candidates": "data/source_candidates.json",
   "events_catalog": "data/events_catalog.json",
-  "candidates_seen": 595,
+  "candidates_seen": 590,
   "totals": {
-    "candidates_seen": 595,
-    "published": 7,
-    "linked_existing": 550,
+    "candidates_seen": 590,
+    "published": 6,
+    "linked_existing": 546,
     "blocked": 38,
     "duplicate_review_alerts": 8,
     "category_fallback_alerts": 0,
-    "reconciled": 557
+    "reconciled": 552
   },
   "category_fallback_alerts": [],
   "duplicate_catalog_rows_removed": 0,
@@ -193,11 +193,6 @@
       "candidate_id": "candidate-visit-saudi-calendar-pdf-عروض-الفنون-الأدائية-التقليدية-20260706-4a38d19e",
       "event_id": "event-عروض-الفنون-الأدائية-التقليدية",
       "title": "عروض الفنون الأدائية التقليدية"
-    },
-    {
-      "candidate_id": "candidate-umm-al-qura-events-دورة-تدريبية-بعنوان-مهارات-الحوار-الفعال-والتعامل-مع-الاختلافات-20260830-15c5c437",
-      "event_id": "event-دورة-تدريبية-بعنوان-مهارات-الحوار-الفعال-والتعامل-مع-الاختلافات",
-      "title": "دورة تدريبية بعنوان (مهارات الحوار الفعال والتعامل مع الاختلافات)"
     }
   ],
   "linked_existing": [
@@ -631,12 +626,6 @@
       "candidate_id": "candidate-visit-saudi-calendar-kashtah-20260627-0fa92e11",
       "event_id": "event-kashtah",
       "title": "Kashtah",
-      "reason": "already linked to catalog event"
-    },
-    {
-      "candidate_id": "candidate-discover-aseer-events-al-reef-park-20260630-f748a9e3",
-      "event_id": "event-al-reef-park",
-      "title": "Al Reef Park",
       "reason": "already linked to catalog event"
     },
     {
@@ -1198,18 +1187,6 @@
       "reason": "already linked to catalog event"
     },
     {
-      "candidate_id": "candidate-future-skills-catalog-comptia-cloud-20260809-8946f510",
-      "event_id": "event-comptia-cloud",
-      "title": "⁠CompTIA Cloud+",
-      "reason": "already linked to catalog event"
-    },
-    {
-      "candidate_id": "candidate-monshaat-events-لقاءات-أسبوع-الذكاء-الاصطناعي-9-13-أغسطس-2026-20260809-08845aeb",
-      "event_id": "event-لقاءات-أسبوع-الذكاء-الاصطناعي-9-13-أغسطس-2026",
-      "title": "لقاءات أسبوع الذكاء الاصطناعي 9 – 13 أغسطس 2026",
-      "reason": "already linked to catalog event"
-    },
-    {
       "candidate_id": "candidate-visit-saudi-calendar-pdf-أوركسترا-game-of-thrones-20260811-4a38d19e",
       "event_id": "event-أوركسترا-game-of-thrones",
       "title": "أوركسترا Game of Thrones",
@@ -1234,24 +1211,6 @@
       "reason": "already linked to catalog event"
     },
     {
-      "candidate_id": "candidate-ithra-events-ithra-art-prize-exhibition-20260813-83c2ab55",
-      "event_id": "event-ithra-art-prize-exhibition",
-      "title": "Ithra Art Prize Exhibition",
-      "reason": "already linked to catalog event"
-    },
-    {
-      "candidate_id": "candidate-ithra-events-printing-house-20260813-e56f4f89",
-      "event_id": "event-printing-house",
-      "title": "Printing House",
-      "reason": "already linked to catalog event"
-    },
-    {
-      "candidate_id": "candidate-ithra-events-tafasahu-make-room-20260813-562bc61d",
-      "event_id": "event-tafasahu-make-room",
-      "title": "Tafasahu: Make Room",
-      "reason": "already linked to catalog event"
-    },
-    {
       "candidate_id": "candidate-ithra-events-bedayat-beginnings-of-saudi-art-movement-20260813-e0a239ef",
       "event_id": "event-bedayat-beginnings-of-saudi-art-movement",
       "title": "Bedayat: Beginnings of Saudi Art Movement",
@@ -1264,87 +1223,9 @@
       "reason": "already linked to catalog event"
     },
     {
-      "candidate_id": "candidate-ithra-events-tinkering-stations-20260813-5a2c4c0e",
-      "event_id": "event-tinkering-stations",
-      "title": "Tinkering Stations",
-      "reason": "already linked to catalog event"
-    },
-    {
       "candidate_id": "candidate-umm-al-qura-events-تفعيل-بيئة-تعلم-إلكترونية-تفاعلية-بنمط-غير-متزامن-20260813-68a97d75",
       "event_id": "event-تفعيل-بيئة-تعلم-إلكترونية-تفاعلية-بنمط-غير-متزامن",
       "title": "تفعيل بيئة تعلم إلكترونية تفاعلية– بنمط غير متزامن",
-      "reason": "already linked to catalog event"
-    },
-    {
-      "candidate_id": "candidate-ithra-events-creative-character-design-20260813-afddf835",
-      "event_id": "event-creative-character-design",
-      "title": "Creative Character Design",
-      "reason": "already linked to catalog event"
-    },
-    {
-      "candidate_id": "candidate-ithra-events-platforms-manager-skills-20260813-62ec512d",
-      "event_id": "event-platforms-manager-skills",
-      "title": "Platforms Manager Skills",
-      "reason": "already linked to catalog event"
-    },
-    {
-      "candidate_id": "candidate-ithra-events-connect-and-create-20260813-d2514326",
-      "event_id": "event-connect-and-create",
-      "title": "Connect and Create!",
-      "reason": "already linked to catalog event"
-    },
-    {
-      "candidate_id": "candidate-ithra-events-the-moral-of-the-story-20260813-bfa3f2a8",
-      "event_id": "event-the-moral-of-the-story",
-      "title": "The Moral of the Story",
-      "reason": "already linked to catalog event"
-    },
-    {
-      "candidate_id": "candidate-ithra-events-ithra-chess-tournament-20260813-49593879",
-      "event_id": "event-ithra-chess-tournament",
-      "title": "Ithra Chess Tournament",
-      "reason": "already linked to catalog event"
-    },
-    {
-      "candidate_id": "candidate-ithra-events-spot-of-inspiration-20260813-5bac584c",
-      "event_id": "event-spot-of-inspiration",
-      "title": "Spot of Inspiration",
-      "reason": "already linked to catalog event"
-    },
-    {
-      "candidate_id": "candidate-ithra-events-childrens-museum-story-time-20260813-ada8b9db",
-      "event_id": "event-childrens-museum-story-time",
-      "title": "Children's Museum Story Time",
-      "reason": "already linked to catalog event"
-    },
-    {
-      "candidate_id": "candidate-ithra-events-family-challenges-20260813-3726c868",
-      "event_id": "event-family-challenges",
-      "title": "Family Challenges",
-      "reason": "already linked to catalog event"
-    },
-    {
-      "candidate_id": "candidate-ithra-events-emboss-printing-experience-20260813-2671d1ce",
-      "event_id": "event-emboss-printing-experience",
-      "title": "Emboss Printing Experience",
-      "reason": "already linked to catalog event"
-    },
-    {
-      "candidate_id": "candidate-ithra-events-ithra-short-play-contest-2026-20260813-11e2aa06",
-      "event_id": "event-ithra-short-play-contest-2026",
-      "title": "Ithra Short Play Contest 2026",
-      "reason": "already linked to catalog event"
-    },
-    {
-      "candidate_id": "candidate-ithra-events-grand-art-space-20260813-e3acefbb",
-      "event_id": "event-grand-art-space",
-      "title": "Grand Art Space",
-      "reason": "already linked to catalog event"
-    },
-    {
-      "candidate_id": "candidate-ithra-events-tangram-20260813-9a9db6cb",
-      "event_id": "event-tangram",
-      "title": "Tangram",
       "reason": "already linked to catalog event"
     },
     {
@@ -1360,6 +1241,36 @@
       "reason": "already linked to catalog event"
     },
     {
+      "candidate_id": "candidate-ithra-events-printing-house-20260814-e56f4f89",
+      "event_id": "event-printing-house",
+      "title": "Printing House",
+      "reason": "already linked to catalog event"
+    },
+    {
+      "candidate_id": "candidate-ithra-events-tafasahu-make-room-20260814-562bc61d",
+      "event_id": "event-tafasahu-make-room",
+      "title": "Tafasahu: Make Room",
+      "reason": "already linked to catalog event"
+    },
+    {
+      "candidate_id": "candidate-ithra-events-ithra-art-prize-exhibition-20260814-83c2ab55",
+      "event_id": "event-ithra-art-prize-exhibition",
+      "title": "Ithra Art Prize Exhibition",
+      "reason": "already linked to catalog event"
+    },
+    {
+      "candidate_id": "candidate-ithra-events-tinkering-stations-20260814-5a2c4c0e",
+      "event_id": "event-tinkering-stations",
+      "title": "Tinkering Stations",
+      "reason": "already linked to catalog event"
+    },
+    {
+      "candidate_id": "candidate-ithra-events-creative-character-design-20260814-afddf835",
+      "event_id": "event-creative-character-design",
+      "title": "Creative Character Design",
+      "reason": "already linked to catalog event"
+    },
+    {
       "candidate_id": "candidate-ithra-events-survival-journey-20260814-4fd1e78d",
       "event_id": "event-survival-journey",
       "title": "Survival Journey",
@@ -1372,6 +1283,18 @@
       "reason": "already linked to catalog event"
     },
     {
+      "candidate_id": "candidate-ithra-events-spot-of-inspiration-20260814-5bac584c",
+      "event_id": "event-spot-of-inspiration",
+      "title": "Spot of Inspiration",
+      "reason": "already linked to catalog event"
+    },
+    {
+      "candidate_id": "candidate-ithra-events-childrens-museum-story-time-20260814-ada8b9db",
+      "event_id": "event-childrens-museum-story-time",
+      "title": "Children's Museum Story Time",
+      "reason": "already linked to catalog event"
+    },
+    {
       "candidate_id": "candidate-ithra-events-dots-on-letters-20260814-b8901d67",
       "event_id": "event-dots-on-letters",
       "title": "Dots on Letters",
@@ -1381,6 +1304,30 @@
       "candidate_id": "candidate-ithra-events-family-game-20260814-fff43c76",
       "event_id": "event-family-game",
       "title": "Family Game",
+      "reason": "already linked to catalog event"
+    },
+    {
+      "candidate_id": "candidate-ithra-events-emboss-printing-experience-20260814-2671d1ce",
+      "event_id": "event-emboss-printing-experience",
+      "title": "Emboss Printing Experience",
+      "reason": "already linked to catalog event"
+    },
+    {
+      "candidate_id": "candidate-ithra-events-family-challenges-20260814-3726c868",
+      "event_id": "event-family-challenges",
+      "title": "Family Challenges",
+      "reason": "already linked to catalog event"
+    },
+    {
+      "candidate_id": "candidate-ithra-events-ithra-short-play-contest-2026-20260814-11e2aa06",
+      "event_id": "event-ithra-short-play-contest-2026",
+      "title": "Ithra Short Play Contest 2026",
+      "reason": "already linked to catalog event"
+    },
+    {
+      "candidate_id": "candidate-ithra-events-grand-art-space-20260814-e3acefbb",
+      "event_id": "event-grand-art-space",
+      "title": "Grand Art Space",
       "reason": "already linked to catalog event"
     },
     {
@@ -1516,6 +1463,12 @@
       "reason": "already linked to catalog event"
     },
     {
+      "candidate_id": "candidate-ithra-events-tangram-20260818-9a9db6cb",
+      "event_id": "event-tangram",
+      "title": "Tangram",
+      "reason": "already linked to catalog event"
+    },
+    {
       "candidate_id": "candidate-ithra-events-chess-hub-20260818-4919439a",
       "event_id": "event-chess-hub",
       "title": "Chess Hub",
@@ -1618,6 +1571,12 @@
       "reason": "already linked to catalog event"
     },
     {
+      "candidate_id": "candidate-ithra-events-the-moral-of-the-story-20260820-bfa3f2a8",
+      "event_id": "event-the-moral-of-the-story",
+      "title": "The Moral of the Story",
+      "reason": "already linked to catalog event"
+    },
+    {
       "candidate_id": "candidate-ithra-events-museum-story-time-20260820-1104734c",
       "event_id": "event-museum-story-time",
       "title": "Museum Story Time",
@@ -1657,6 +1616,12 @@
       "candidate_id": "candidate-ithra-events-story-land-20260822-bb5dc01b",
       "event_id": "event-story-land",
       "title": "Story Land",
+      "reason": "already linked to catalog event"
+    },
+    {
+      "candidate_id": "candidate-ithra-events-connect-and-create-20260822-d2514326",
+      "event_id": "event-connect-and-create",
+      "title": "Connect and Create!",
       "reason": "already linked to catalog event"
     },
     {
@@ -1849,6 +1814,12 @@
       "candidate_id": "candidate-tuwaiq-academy-bootcamps-معسكر-هندسة-تطبيقات-الذكاء-الاصطناعي-التوليدي-باستخدام-النماذج-اللغوية-ا-20260830-d915c601",
       "event_id": "event-معسكر-هندسة-تطبيقات-الذكاء-الاصطناعي-التوليدي-باستخدام-النماذج-اللغوية-ا",
       "title": "معسكر هندسة تطبيقات الذكاء الاصطناعي التوليدي باستخدام النماذج اللغوية الضخمة",
+      "reason": "already linked to catalog event"
+    },
+    {
+      "candidate_id": "candidate-umm-al-qura-events-دورة-تدريبية-بعنوان-مهارات-الحوار-الفعال-والتعامل-مع-الاختلافات-20260830-15c5c437",
+      "event_id": "event-دورة-تدريبية-بعنوان-مهارات-الحوار-الفعال-والتعامل-مع-الاختلافات",
+      "title": "دورة تدريبية بعنوان (مهارات الحوار الفعال والتعامل مع الاختلافات)",
       "reason": "already linked to catalog event"
     },
     {

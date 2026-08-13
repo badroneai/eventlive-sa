@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-13T14:07:34.441Z",
+  "generated_at": "2026-08-13T19:57:04.542Z",
   "events_file": "dist/events.json",
   "manifest": "data/event_image_cache_manifest.json",
   "image_dir": "dist/assets/event-images",
@@ -242,11 +242,6 @@
     {
       "source_url": "https://scth.scene7.com/is/image/scth/kashtah?wid=1400&hei=788&fit=constrain&fmt=webp",
       "file": "dist/assets/event-images/kashtah-ba6ebb0c6b.webp",
-      "events": 1
-    },
-    {
-      "source_url": "https://discoveraseer.com/en/img/asset/YXNzZXRzL2V4cGVyaWVuY2Uvc3V0MDAzMjQuanBlZw/sut00324.jpeg?w=1024&fm=webp&s=ffb5a1689e550e34c3e36966f5557f04",
-      "file": "dist/assets/event-images/منتزه-الريف-abc22f4754.webp",
       "events": 1
     },
     {
@@ -680,18 +675,8 @@
       "events": 1
     },
     {
-      "source_url": "https://futureskills.mcit.gov.sa/sites/default/files/styles/medium/public/2026-08/%D9%84%D9%82%D8%B7%D8%A9%20%D8%A7%D9%84%D8%B4%D8%A7%D8%B4%D8%A9%202026-08-06%20144218.png?itok=mkC1-0ZB",
-      "file": "dist/assets/event-images/machine-learning-ضمن-102e8ba919.png",
-      "events": 15
-    },
-    {
       "source_url": "https://cdn.tuwaiq.edu.sa/initiatives_admin/images/hym412o4.xrm.webp",
       "file": "dist/assets/event-images/معسكر-تطوير-مواقع-الويب-باستخدام-java-ودمج-تقنيات-الذكاء-الاصطناعي-1a7ddcd5eb.webp",
-      "events": 1
-    },
-    {
-      "source_url": "https://www.ithra.com/application/files/cache/thumbnails/e5b8be6fa3a209657ca287b675a308b4.jpg",
-      "file": "dist/assets/event-images/platforms-manager-skills-4ccfdc9203.jpg",
       "events": 1
     },
     {
@@ -702,11 +687,6 @@
     {
       "source_url": "https://www.ithra.com/application/files/cache/thumbnails/5220b80aaa7e087afc6b0ee18cc23ba3.png",
       "file": "dist/assets/event-images/creative-character-design-f8b2d539d8.png",
-      "events": 1
-    },
-    {
-      "source_url": "https://www.ithra.com/application/files/cache/thumbnails/23c2f82febdcbf4e7caf404feb7f3f5e.jpg",
-      "file": "dist/assets/event-images/بطولة-إثراء-للشطرنج-cc14291494.jpg",
       "events": 1
     },
     {
@@ -743,6 +723,11 @@
       "source_url": "https://hayyjameel.org/wp-content/uploads/2026/07/DSC02026-scaled-aspect-ratio-2296-1300-1-1100x500.jpg",
       "file": "dist/assets/event-images/hayy-makers-woodworking-course-level-1-with-ahmad-sofi-cd2f60e754.jpg",
       "events": 1
+    },
+    {
+      "source_url": "https://futureskills.mcit.gov.sa/sites/default/files/styles/medium/public/2026-08/%D9%84%D9%82%D8%B7%D8%A9%20%D8%A7%D9%84%D8%B4%D8%A7%D8%B4%D8%A9%202026-08-06%20144218.png?itok=mkC1-0ZB",
+      "file": "dist/assets/event-images/machine-learning-ضمن-102e8ba919.png",
+      "events": 15
     },
     {
       "source_url": "https://static.uqu.edu.sa/assets/images/uqu-gate.jpeg",
@@ -1960,8 +1945,18 @@
       "events": 1
     },
     {
+      "source_url": "https://www.ithra.com/application/files/cache/thumbnails/23c2f82febdcbf4e7caf404feb7f3f5e.jpg",
+      "file": "dist/assets/event-images/بطولة-إثراء-للشطرنج-cc14291494.jpg",
+      "events": 1
+    },
+    {
       "source_url": "https://www.ithra.com/application/files/cache/thumbnails/c4dead970ab3d5a09db3eb2c1e888b8a.jpg",
       "file": "dist/assets/event-images/أعضاء-الجولة-e68ad1c393.jpg",
+      "events": 1
+    },
+    {
+      "source_url": "https://www.ithra.com/application/files/cache/thumbnails/e5b8be6fa3a209657ca287b675a308b4.jpg",
+      "file": "dist/assets/event-images/platforms-manager-skills-4ccfdc9203.jpg",
       "events": 1
     },
     {
@@ -2498,6 +2493,11 @@
       "source_url": "https://www.ithra.com/application/files/cache/thumbnails/57ced1047619d76eed02cbbfb34191f7.jpg",
       "file": "dist/assets/event-images/philosophy-for-everyone-a-journey-of-thought-from-young-to-old-1dc740ef9e.jpg",
       "events": 3
+    },
+    {
+      "source_url": "https://www.ithra.com/application/files/cache/thumbnails/9c5873773d4292a9e3ae3723253da66b.jpg",
+      "file": "dist/assets/event-images/documentary-competition-group-4-c5f1d56372.jpg",
+      "events": 1
     }
   ],
   "rejected_removed": [],

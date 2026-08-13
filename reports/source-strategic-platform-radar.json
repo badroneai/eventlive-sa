@@ -1,6 +1,6 @@
 {
   "schema": "eventlive.source-strategic-platform-radar.v1",
-  "generated_at": "2026-08-12T19:31:47.876Z",
+  "generated_at": "2026-08-13T19:32:10.144Z",
   "policy": {
     "allowed_use": "official source evidence refresh, API-surface mapping, partnership prioritization, extractor backlog decisions",
     "disallowed_use": "direct catalog publication without official confirmation and duplicate review"
@@ -246,7 +246,7 @@
         {
           "url": "https://www.visitsaudi.com/bin/api/v3/events?locale=ar",
           "status": 200,
-          "bytes": 89260,
+          "bytes": 89976,
           "classification": "reachable",
           "summary": {
             "parse_ok": true,
@@ -264,7 +264,7 @@
         {
           "url": "https://www.visitsaudi.com/bin/api/v3/events?locale=en",
           "status": 200,
-          "bytes": 92037,
+          "bytes": 92735,
           "classification": "reachable",
           "summary": {
             "parse_ok": true,
@@ -293,7 +293,7 @@
       "final_url": "https://webook.com/ar/explore",
       "via": "fetch",
       "content_type": "text/html",
-      "bytes": 5993,
+      "bytes": 5992,
       "title": "",
       "classification": "protected",
       "error": "",
@@ -326,7 +326,7 @@
         "https://wbk-assets.webook.com/0.7.22/assets/react-helmet-Ba2OUe2H.js",
         "https://wbk-assets.webook.com/0.7.22/assets/@wbk/cruises-CzNyhBbV.js",
         "https://wbk-assets.webook.com/0.7.22/assets/@wbk/auction-DLHDiin3.js",
-        "https://webook.com/cdn-cgi/content?id=uGkaRNEryi6YdtyMpYELdEFM3VmkcPFwJV4yxNZ6qik-1786563117.6475146-1.2.1.1-7cYwNNfGiFYEbeEy0IPvj8798L1.WMRChVE22FcIfSYeMoRjJ8n_npQsiJX7Qj8c",
+        "https://webook.com/cdn-cgi/content?id=YD_8hYH9WZklfk3fNdgsdy8qjItzb.SksDJoIIZB9jU-1786649541.584068-1.2.1.1-zSHOzCFvSsFlMTsxCQwpMPN84b_0y8RS7X68imOyuQ5nkOtk2WIlMZIr36QR17VS",
         "https://static.cloudflareinsights.com/beacon.min.js/v4513226cdae34746b4dedf0b4dfa099e1781791509496"
       ],
       "page_hint_words": [
