@@ -1,6 +1,6 @@
 {
   "schema": "eventlive.harvest-os-status.v1",
-  "generated_at": "2026-08-12T20:07:14.403Z",
+  "generated_at": "2026-08-13T03:23:46.712Z",
   "status": "NEEDS_WORK",
   "operating_rule": "Probe before new sources; sample before full harvest; Raw collection is not publication; discovery-only never auto-publishes.",
   "totals": {
@@ -12,10 +12,10 @@
     "partnership_required_sources": 5,
     "blocked_or_closed_sources": 0,
     "manual_review_sources": 56,
-    "collection_attempted": 28,
+    "collection_attempted": 25,
     "productive_sources": 22,
-    "collector_errors": 6,
-    "chronic_collector_errors": 6,
+    "collector_errors": 5,
+    "chronic_collector_errors": 5,
     "transient_collector_errors": 0
   },
   "policies": {
@@ -30,7 +30,7 @@
     "source-evidence": 25
   },
   "funnel": {
-    "discovered_this_run": 325,
+    "discovered_this_run": 313,
     "candidate_queue": 594,
     "evaluated_for_publish": 594,
     "linked_existing": 550,
@@ -58,38 +58,31 @@
       "note": "collector-error: fetch failed; fetch failed",
       "error_streak": 24,
       "kind": "chronic",
-      "attempted_this_run": true
+      "attempted_this_run": false
     },
     {
       "id": "mos-events",
       "note": "collector-error: fetch failed",
       "error_streak": 24,
       "kind": "chronic",
-      "attempted_this_run": true
+      "attempted_this_run": false
     },
     {
       "id": "moc-cultural-subportals",
       "note": "collector-error: fetch failed; fetch failed",
       "error_streak": 24,
       "kind": "chronic",
-      "attempted_this_run": true
+      "attempted_this_run": false
     },
     {
       "id": "monshaat-events",
       "note": "collector-error: fetch failed; fetch failed",
       "error_streak": 7,
       "kind": "chronic",
-      "attempted_this_run": true
-    },
-    {
-      "id": "saudi-pro-league-fixtures",
-      "note": "collector-error: fetch failed",
-      "error_streak": 3,
-      "kind": "chronic",
       "attempted_this_run": false
     },
     {
-      "id": "asharqia-chamber-events",
+      "id": "saudi-pro-league-fixtures",
       "note": "collector-error: fetch failed",
       "error_streak": 3,
       "kind": "chronic",

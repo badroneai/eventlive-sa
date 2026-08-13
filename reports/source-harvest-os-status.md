@@ -1,6 +1,6 @@
 # EventLive Harvest OS Status
 
-- Generated at: 2026-08-12T20:07:14.403Z
+- Generated at: 2026-08-13T03:23:46.712Z
 - Status: NEEDS_WORK
 - Operating rule: Probe before new sources; sample before full harvest; Raw collection is not publication; discovery-only never auto-publishes.
 
@@ -12,14 +12,14 @@
 - Auto-publish sources: 15
 - Candidate-only sources: 12
 - Partnership-required sources: 5
-- Productive sources / attempted: 22/28
-- Collector errors: 6 (chronic 6, transient 0)
+- Productive sources / attempted: 22/25
+- Collector errors: 5 (chronic 5, transient 0)
 
 ## Publication Funnel
 
 | Stage | Count |
 | --- | --- |
-| discovered_this_run | 325 |
+| discovered_this_run | 313 |
 | candidate_queue | 594 |
 | evaluated_for_publish | 594 |
 | linked_existing | 550 |
@@ -48,12 +48,11 @@
 
 | Source | Kind | Failed runs in a row | Attempted this run | Reason |
 | --- | --- | --- | --- | --- |
-| moc-cultural-calendar | chronic | 24 | yes | collector-error: fetch failed; fetch failed |
-| mos-events | chronic | 24 | yes | collector-error: fetch failed |
-| moc-cultural-subportals | chronic | 24 | yes | collector-error: fetch failed; fetch failed |
-| monshaat-events | chronic | 7 | yes | collector-error: fetch failed; fetch failed |
+| moc-cultural-calendar | chronic | 24 | no | collector-error: fetch failed; fetch failed |
+| mos-events | chronic | 24 | no | collector-error: fetch failed |
+| moc-cultural-subportals | chronic | 24 | no | collector-error: fetch failed; fetch failed |
+| monshaat-events | chronic | 7 | no | collector-error: fetch failed; fetch failed |
 | saudi-pro-league-fixtures | chronic | 3 | no | collector-error: fetch failed |
-| asharqia-chamber-events | chronic | 3 | no | collector-error: fetch failed |
 
 | Source | Policy | Trust | Gate |
 | --- | --- | --- | --- |
