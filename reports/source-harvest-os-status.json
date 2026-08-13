@@ -1,6 +1,6 @@
 {
   "schema": "eventlive.harvest-os-status.v1",
-  "generated_at": "2026-08-13T03:23:46.712Z",
+  "generated_at": "2026-08-13T08:16:21.403Z",
   "status": "NEEDS_WORK",
   "operating_rule": "Probe before new sources; sample before full harvest; Raw collection is not publication; discovery-only never auto-publishes.",
   "totals": {
@@ -12,7 +12,7 @@
     "partnership_required_sources": 5,
     "blocked_or_closed_sources": 0,
     "manual_review_sources": 56,
-    "collection_attempted": 25,
+    "collection_attempted": 23,
     "productive_sources": 22,
     "collector_errors": 5,
     "chronic_collector_errors": 5,

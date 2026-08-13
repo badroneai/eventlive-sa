@@ -1,6 +1,6 @@
 # EventLive Source Run State
 
-Generated at: 2026-08-13T03:16:13.072Z
+Generated at: 2026-08-13T08:09:08.592Z
 
 ## Operating Rule
 
@@ -9,13 +9,13 @@ Raw collection is not publication. Every source run preserves evidence, separate
 ## Totals
 
 - Sources: 88
-- Attempted this run: 25
-- Deferred by adaptive cadence: 23
+- Attempted this run: 23
+- Deferred by adaptive cadence: 25
 - Productive: 22
-- Zero-yield: 2
+- Zero-yield: 1
 - Collector errors: 0
 - Persistent collector errors: 5
-- Probe blocked: 1
+- Probe blocked: 0
 - Auto-publish eligible source lanes: 12
 
 ## Stalled / Blocked Focus
@@ -112,7 +112,7 @@ Call log:
 | 57 | ministry-commerce-events | evidence-monitor | evidence-monitor | 0 | no | Monitor for official event detail evidence before candidate promotion. |
 | 58 | evento-sa-events | discovery-only | discovery-only | 0 | no | Use only as discovery evidence; never publish directly. |
 | 59 | asharqia-chamber-events | active-collector | productive | 3 | no | Continue periodic collection; dedupe and auto-publish only through the candidate gate. |
-| 60 | qassim-chamber-events | active-collector | zero-yield | 0 | no | Zero-yield for 8 runs; inspect dropped samples or reclassify cadence if the source is seasonal/archive-only. |
+| 60 | qassim-chamber-events | active-collector | zero-yield | 0 | no | Zero-yield for 9 runs; inspect dropped samples or reclassify cadence if the source is seasonal/archive-only. |
 | 61 | abha-chamber-events | active-collector | zero-yield | 0 | no | Zero-yield for 69 runs; inspect dropped samples or reclassify cadence if the source is seasonal/archive-only. |
 | 62 | baha-amanah-events | extractor-backlog | not-attempted | 0 | no | Probe HTML/API shape, then decide whether an extractor is worth adding. |
 | 63 | baha-chamber-events | evidence-monitor | evidence-monitor | 0 | no | Monitor for official event detail evidence before candidate promotion. |
