@@ -1,32 +1,32 @@
 # EventLive Harvest OS Status
 
-- Generated at: 2026-08-13T08:16:21.403Z
+- Generated at: 2026-08-13T14:15:10.761Z
 - Status: NEEDS_WORK
 - Operating rule: Probe before new sources; sample before full harvest; Raw collection is not publication; discovery-only never auto-publishes.
 
 ## Totals
 
 - Sources: 88
-- Candidates: 594
-- Matched candidates: 564
+- Candidates: 595
+- Matched candidates: 565
 - Auto-publish sources: 15
 - Candidate-only sources: 12
 - Partnership-required sources: 5
-- Productive sources / attempted: 22/23
-- Collector errors: 5 (chronic 5, transient 0)
+- Productive sources / attempted: 19/24
+- Collector errors: 7 (chronic 5, transient 2)
 
 ## Publication Funnel
 
 | Stage | Count |
 | --- | --- |
-| discovered_this_run | 313 |
-| candidate_queue | 594 |
-| evaluated_for_publish | 594 |
+| discovered_this_run | 293 |
+| candidate_queue | 595 |
+| evaluated_for_publish | 595 |
 | linked_existing | 550 |
-| published_new | 6 |
+| published_new | 7 |
 | blocked | 38 |
 | secondary_promoted | 0 |
-| secondary_still_blocked | 33 |
+| secondary_still_blocked | 34 |
 
 ## Blocked Reasons
 
@@ -52,7 +52,9 @@
 | mos-events | chronic | 24 | no | collector-error: fetch failed |
 | moc-cultural-subportals | chronic | 24 | no | collector-error: fetch failed; fetch failed |
 | monshaat-events | chronic | 7 | no | collector-error: fetch failed; fetch failed |
-| saudi-pro-league-fixtures | chronic | 3 | no | collector-error: fetch failed |
+| saudi-pro-league-fixtures | chronic | 4 | yes | collector-error: fetch failed |
+| tuwaiq-academy-bootcamps | transient | 1 | yes | HTTP 403 |
+| saudi-space-agency-events | transient | 1 | yes | fetch failed |
 
 | Source | Policy | Trust | Gate |
 | --- | --- | --- | --- |

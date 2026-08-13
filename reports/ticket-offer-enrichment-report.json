@@ -1,10 +1,10 @@
 {
-  "checked_at": "2026-08-13T08:08:11.730Z",
+  "checked_at": "2026-08-13T14:06:35.717Z",
   "targets": 9,
-  "evidence_found": 7,
+  "evidence_found": 6,
   "changed": 0,
   "no_evidence": 2,
-  "failed": 0,
+  "failed": 1,
   "results": [
     {
       "id": "event-unstable",
@@ -57,11 +57,8 @@
       "id": "event-saudi-ai-week",
       "host": "informaconnect.com",
       "url": "https://informaconnect.com/saudi-ai-week/purchase/select-package/",
-      "status": "evidence",
-      "price_label": "525 USD",
-      "price": 525,
-      "price_currency": "USD",
-      "method": "informa-visible-package-price"
+      "status": "failed",
+      "reason": "HTTP 404"
     },
     {
       "id": "event-saudi-intermobility-expo",

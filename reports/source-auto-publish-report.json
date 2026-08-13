@@ -1,18 +1,18 @@
 {
-  "published_at": "2026-08-13T08:05:42.025Z",
+  "published_at": "2026-08-13T14:03:52.964Z",
   "dry_run": false,
   "include_partner": true,
   "source_candidates": "data/source_candidates.json",
   "events_catalog": "data/events_catalog.json",
-  "candidates_seen": 594,
+  "candidates_seen": 595,
   "totals": {
-    "candidates_seen": 594,
-    "published": 6,
+    "candidates_seen": 595,
+    "published": 7,
     "linked_existing": 550,
     "blocked": 38,
     "duplicate_review_alerts": 8,
     "category_fallback_alerts": 0,
-    "reconciled": 556
+    "reconciled": 557
   },
   "category_fallback_alerts": [],
   "duplicate_catalog_rows_removed": 0,
@@ -193,6 +193,11 @@
       "candidate_id": "candidate-visit-saudi-calendar-pdf-عروض-الفنون-الأدائية-التقليدية-20260706-4a38d19e",
       "event_id": "event-عروض-الفنون-الأدائية-التقليدية",
       "title": "عروض الفنون الأدائية التقليدية"
+    },
+    {
+      "candidate_id": "candidate-umm-al-qura-events-دورة-تدريبية-بعنوان-مهارات-الحوار-الفعال-والتعامل-مع-الاختلافات-20260830-15c5c437",
+      "event_id": "event-دورة-تدريبية-بعنوان-مهارات-الحوار-الفعال-والتعامل-مع-الاختلافات",
+      "title": "دورة تدريبية بعنوان (مهارات الحوار الفعال والتعامل مع الاختلافات)"
     }
   ],
   "linked_existing": [
@@ -1265,39 +1270,9 @@
       "reason": "already linked to catalog event"
     },
     {
-      "candidate_id": "candidate-ithra-events-spot-of-inspiration-20260813-5bac584c",
-      "event_id": "event-spot-of-inspiration",
-      "title": "Spot of Inspiration",
-      "reason": "already linked to catalog event"
-    },
-    {
-      "candidate_id": "candidate-ithra-events-childrens-museum-story-time-20260813-ada8b9db",
-      "event_id": "event-childrens-museum-story-time",
-      "title": "Children's Museum Story Time",
-      "reason": "already linked to catalog event"
-    },
-    {
       "candidate_id": "candidate-umm-al-qura-events-تفعيل-بيئة-تعلم-إلكترونية-تفاعلية-بنمط-غير-متزامن-20260813-68a97d75",
       "event_id": "event-تفعيل-بيئة-تعلم-إلكترونية-تفاعلية-بنمط-غير-متزامن",
       "title": "تفعيل بيئة تعلم إلكترونية تفاعلية– بنمط غير متزامن",
-      "reason": "already linked to catalog event"
-    },
-    {
-      "candidate_id": "candidate-ithra-events-family-challenges-20260813-3726c868",
-      "event_id": "event-family-challenges",
-      "title": "Family Challenges",
-      "reason": "already linked to catalog event"
-    },
-    {
-      "candidate_id": "candidate-ithra-events-tangram-20260813-9a9db6cb",
-      "event_id": "event-tangram",
-      "title": "Tangram",
-      "reason": "already linked to catalog event"
-    },
-    {
-      "candidate_id": "candidate-ithra-events-emboss-printing-experience-20260813-2671d1ce",
-      "event_id": "event-emboss-printing-experience",
-      "title": "Emboss Printing Experience",
       "reason": "already linked to catalog event"
     },
     {
@@ -1331,6 +1306,30 @@
       "reason": "already linked to catalog event"
     },
     {
+      "candidate_id": "candidate-ithra-events-spot-of-inspiration-20260813-5bac584c",
+      "event_id": "event-spot-of-inspiration",
+      "title": "Spot of Inspiration",
+      "reason": "already linked to catalog event"
+    },
+    {
+      "candidate_id": "candidate-ithra-events-childrens-museum-story-time-20260813-ada8b9db",
+      "event_id": "event-childrens-museum-story-time",
+      "title": "Children's Museum Story Time",
+      "reason": "already linked to catalog event"
+    },
+    {
+      "candidate_id": "candidate-ithra-events-family-challenges-20260813-3726c868",
+      "event_id": "event-family-challenges",
+      "title": "Family Challenges",
+      "reason": "already linked to catalog event"
+    },
+    {
+      "candidate_id": "candidate-ithra-events-emboss-printing-experience-20260813-2671d1ce",
+      "event_id": "event-emboss-printing-experience",
+      "title": "Emboss Printing Experience",
+      "reason": "already linked to catalog event"
+    },
+    {
       "candidate_id": "candidate-ithra-events-ithra-short-play-contest-2026-20260813-11e2aa06",
       "event_id": "event-ithra-short-play-contest-2026",
       "title": "Ithra Short Play Contest 2026",
@@ -1340,6 +1339,12 @@
       "candidate_id": "candidate-ithra-events-grand-art-space-20260813-e3acefbb",
       "event_id": "event-grand-art-space",
       "title": "Grand Art Space",
+      "reason": "already linked to catalog event"
+    },
+    {
+      "candidate_id": "candidate-ithra-events-tangram-20260813-9a9db6cb",
+      "event_id": "event-tangram",
+      "title": "Tangram",
       "reason": "already linked to catalog event"
     },
     {
@@ -1358,12 +1363,6 @@
       "candidate_id": "candidate-ithra-events-survival-journey-20260814-4fd1e78d",
       "event_id": "event-survival-journey",
       "title": "Survival Journey",
-      "reason": "already linked to catalog event"
-    },
-    {
-      "candidate_id": "candidate-ithra-events-open-art-space-20260814-40aac166",
-      "event_id": "event-open-art-space",
-      "title": "Open Art Space",
       "reason": "already linked to catalog event"
     },
     {
@@ -1466,12 +1465,6 @@
       "candidate_id": "candidate-sfda-events-آلية-تقديم-طلبات-الحصول-على-ترخيص-خدمات-توكيد-الجودة-والقياسات-الاشعاعية-20260817-47d2fd92",
       "event_id": "event-آلية-تقديم-طلبات-الحصول-على-ترخيص-خدمات-توكيد-الجودة-والقياسات-الاشعاعية",
       "title": "آلية تقديم طلبات الحصول على ترخيص خدمات توكيد الجودة والقياسات الاشعاعية",
-      "reason": "already linked to catalog event"
-    },
-    {
-      "candidate_id": "candidate-ithra-events-paint-like-an-artist-20260817-a67d8ec3",
-      "event_id": "event-paint-like-an-artist",
-      "title": "Paint Like an Artist",
       "reason": "already linked to catalog event"
     },
     {
@@ -1595,12 +1588,6 @@
       "reason": "already linked to catalog event"
     },
     {
-      "candidate_id": "candidate-ithra-events-trivia-night-earth-quest-tic-tac-know-20260820-ef7080ff",
-      "event_id": "event-trivia-night-earth-quest-tic-tac-know",
-      "title": "Trivia Night - Earth Quest: Tic-Tac-Know",
-      "reason": "already linked to catalog event"
-    },
-    {
       "candidate_id": "candidate-visit-saudi-seasons-buraydah-international-dates-carnival-activites-20260820-9a218560",
       "event_id": "event-buraydah-international-dates-carnival-activites",
       "title": "Buraydah International Dates Carnival Activites",
@@ -1625,12 +1612,6 @@
       "reason": "already linked to catalog event"
     },
     {
-      "candidate_id": "candidate-ithra-events-art-in-virtual-motion-20260820-3acf52ef",
-      "event_id": "event-art-in-virtual-motion",
-      "title": "Art in Virtual Motion",
-      "reason": "already linked to catalog event"
-    },
-    {
       "candidate_id": "candidate-ithra-events-nu-power-20260820-653464ac",
       "event_id": "event-nu-power",
       "title": "Nu-Power",
@@ -1646,6 +1627,12 @@
       "candidate_id": "candidate-saudi-university-events-boat-bash-cruise-20260821-8afa1fda",
       "event_id": "event-boat-bash-cruise",
       "title": "Boat Bash Cruise",
+      "reason": "already linked to catalog event"
+    },
+    {
+      "candidate_id": "candidate-ithra-events-paint-like-an-artist-20260821-a67d8ec3",
+      "event_id": "event-paint-like-an-artist",
+      "title": "Paint Like an Artist",
       "reason": "already linked to catalog event"
     },
     {
@@ -1682,6 +1669,12 @@
       "candidate_id": "candidate-misk-hub-events-development-media-from-message-to-impact-20260822-add557ec",
       "event_id": "event-development-media-from-message-to-impact",
       "title": "Development Media: From Message to Impact",
+      "reason": "already linked to catalog event"
+    },
+    {
+      "candidate_id": "candidate-umm-al-qura-events-الترشح-للدبلوم-المشارك-في-إدارة-المشاريع-بالرياض-20260823-babac01b",
+      "event_id": "event-دبلوم-إدارة-المشاريع",
+      "title": "الترشح للدبلوم المشارك في إدارة المشاريع بالرياض",
       "reason": "already linked to catalog event"
     },
     {
@@ -1766,6 +1759,24 @@
       "candidate_id": "candidate-saudi-university-events-register-for-the-world-breastfeeding-week-awareness-lecture-20260827-4a16087d",
       "event_id": "event-register-for-the-world-breastfeeding-week-awareness-lecture",
       "title": "Register for the World Breastfeeding Week Awareness Lecture",
+      "reason": "already linked to catalog event"
+    },
+    {
+      "candidate_id": "candidate-ithra-events-trivia-night-earth-quest-tic-tac-know-20260827-ef7080ff",
+      "event_id": "event-trivia-night-earth-quest-tic-tac-know",
+      "title": "Trivia Night - Earth Quest: Tic-Tac-Know",
+      "reason": "already linked to catalog event"
+    },
+    {
+      "candidate_id": "candidate-ithra-events-art-in-virtual-motion-20260827-3acf52ef",
+      "event_id": "event-art-in-virtual-motion",
+      "title": "Art in Virtual Motion",
+      "reason": "already linked to catalog event"
+    },
+    {
+      "candidate_id": "candidate-ithra-events-open-art-space-20260828-40aac166",
+      "event_id": "event-open-art-space",
+      "title": "Open Art Space",
       "reason": "already linked to catalog event"
     },
     {
@@ -3104,12 +3115,6 @@
       "candidate_id": "candidate-umm-al-qura-events-الترشح-للدبلوم-المتوسط-في-أمن-المعلومات-في-الجبيل-بالتعاون-مع-كليات-الفي-20261231-c4b0ec06",
       "event_id": "event-الترشح-للدبلوم-المتوسط-في-أمن-المعلومات-في-الجبيل-بالتعاون-مع-كليات-الفي",
       "title": "الترشح للدبلوم المتوسط في أمن المعلومات في الجبيل بالتعاون مع كليات الفيحاء الأهلية",
-      "reason": "already linked to catalog event"
-    },
-    {
-      "candidate_id": "candidate-umm-al-qura-events-الترشح-للدبلوم-المشارك-في-إدارة-المشاريع-بالرياض-20261231-babac01b",
-      "event_id": "event-دبلوم-إدارة-المشاريع",
-      "title": "الترشح للدبلوم المشارك في إدارة المشاريع بالرياض",
       "reason": "already linked to catalog event"
     },
     {

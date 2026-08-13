@@ -1,11 +1,11 @@
 {
-  "generated_at": "2026-08-13T08:07:46.997Z",
+  "generated_at": "2026-08-13T14:06:10.962Z",
   "totals": {
-    "targets": 6,
-    "enriched": 6,
-    "fetched": 0,
-    "images": 6,
-    "fetch_failures": 6
+    "targets": 10,
+    "enriched": 10,
+    "fetched": 3,
+    "images": 10,
+    "fetch_failures": 7
   },
   "enriched": [
     {
@@ -17,6 +17,16 @@
       "fetched": false,
       "image": true,
       "fetch_reason": "The operation was aborted due to timeout"
+    },
+    {
+      "id": "event-دورة-تدريبية-بعنوان-مهارات-الحوار-الفعال-والتعامل-مع-الاختلافات",
+      "title": "دورة تدريبية بعنوان (مهارات الحوار الفعال والتعامل مع الاختلافات)",
+      "source_label": "Umm Al-Qura University Events Center",
+      "source_method": "official-page-meta",
+      "source_url": "https://uqu.edu.sa/App/Events/41084",
+      "fetched": true,
+      "image": true,
+      "fetch_reason": ""
     },
     {
       "id": "event-سكة-الأطعمة",
@@ -67,6 +77,36 @@
       "fetched": false,
       "image": true,
       "fetch_reason": "The operation was aborted due to timeout"
+    },
+    {
+      "id": "event-hayy-cinema-international-cat-day-open-call",
+      "title": "Hayy Cinema | International Cat Day: Open Call",
+      "source_label": "Hayy Jameel What's On",
+      "source_method": "official-page-meta",
+      "source_url": "https://hayyjameel.org/whats-on/hayy-cinema-international-cat-day-open-call/",
+      "fetched": true,
+      "image": true,
+      "fetch_reason": ""
+    },
+    {
+      "id": "event-jameel-library-the-task-of-the-translator-research-lab",
+      "title": "Jameel Library | The Task of the Translator Research Lab",
+      "source_label": "Hayy Jameel What's On",
+      "source_method": "official-page-meta",
+      "source_url": "https://hayyjameel.org/whats-on/jameel-library-the-task-of-the-translator-research-lab/",
+      "fetched": true,
+      "image": true,
+      "fetch_reason": ""
+    },
+    {
+      "id": "event-space-debris-conference-2028",
+      "title": "Space Debris Conference 2028",
+      "source_label": "Saudi Space Agency Events",
+      "source_method": "approved-source-row",
+      "source_url": "https://ssa.gov.sa/en/events/spacedebris2028/",
+      "fetched": false,
+      "image": true,
+      "fetch_reason": "fetch failed"
     }
   ],
   "failed": [
@@ -105,6 +145,12 @@
       "title": "مزرعة التوت الاسود",
       "source_url": "https://www.visitsaudi.com/content/dam/documents/saudi-calendar-ar.pdf",
       "reason": "The operation was aborted due to timeout"
+    },
+    {
+      "id": "event-space-debris-conference-2028",
+      "title": "Space Debris Conference 2028",
+      "source_url": "https://ssa.gov.sa/en/events/spacedebris2028/",
+      "reason": "fetch failed"
     }
   ]
 }
