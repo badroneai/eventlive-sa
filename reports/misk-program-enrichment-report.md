@@ -1,6 +1,6 @@
 # Misk Program Enrichment Report
 
-- generated_at: 2026-08-13T19:54:36.440Z
+- generated_at: 2026-08-15T07:34:45.429Z
 - targets: 14
 - enriched: 14
 - failed: 0
@@ -9,7 +9,7 @@
 
 - Misk Local Traineeship Program - goals=1, features=1, requirements=3, registration_deadline=2026-11-30T18:00:00+03:00
 - 2030 Leaders - goals=1, features=3, requirements=0, registration_deadline=2026-07-15T18:00:00+03:00
-- Entrepreneur Leadership Excellence Program - goals=1, features=3, requirements=0, registration_deadline=2026-07-09T18:00:00+03:00
+- 500 - goals=1, features=3, requirements=0, registration_deadline=2026-07-09T18:00:00+03:00
 - Misk × Tuwaiq Immersive Program - goals=1, features=1, requirements=0, registration_deadline=2026-07-28T18:00:00+03:00
 - Nonprofit Sector Skills Program - goals=1, features=3, requirements=2, registration_deadline=2026-07-15T18:00:00+03:00
 - Misk X UNYO Youth Engagement Fellowship - goals=1, features=4, requirements=0, registration_deadline=2026-07-23T18:00:00+03:00

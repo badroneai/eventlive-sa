@@ -1,6 +1,6 @@
 # EventLive Official Agenda Radar
 
-Generated at: 2026-08-13T19:32:06.925Z
+Generated at: 2026-08-15T07:03:08.846Z
 
 Time scope: current-and-upcoming-only
 
@@ -15,7 +15,7 @@ This radar detects when first-party event pages expose a complete timed programm
 
 | Event | Status | HTTP | Complete time rows | Agenda cards | Policy |
 | --- | --- | ---: | ---: | ---: | --- |
-| LEAP 2026 | published-browser-extractor-active | 200 | 501 | 501 | public-browser-production-extractor |
+| LEAP 2026 | published-browser-extractor-active | 200 | 515 | 515 | public-browser-production-extractor |
 | Money20/20 Middle East 2026 | not-published | 404 | 1 | 0 | watch-until-published |
 | Future Investment Initiative 10th Edition | announced-no-timed-agenda | 200 | 0 | 0 | watch-until-timed-program |
 | Global AI Summit 2026 | watch | 200 | 0 | 0 | watch-official-event-page |

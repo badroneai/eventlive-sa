@@ -1,32 +1,32 @@
 {
-  "generated_at": "2026-08-13T19:55:54.578Z",
+  "generated_at": "2026-08-15T07:36:06.915Z",
   "totals": {
-    "targets": 7,
-    "enriched": 7,
-    "fetched": 5,
-    "images": 7,
-    "fetch_failures": 2
+    "targets": 10,
+    "enriched": 10,
+    "fetched": 2,
+    "images": 10,
+    "fetch_failures": 8
   },
   "enriched": [
     {
       "id": "event-الأخطبوطية",
       "title": "الاخطبوطية",
       "source_label": "Visit Saudi Summer Calendar PDF",
-      "source_method": "official-page-meta",
+      "source_method": "approved-source-row",
       "source_url": "https://www.visitsaudi.com/content/dam/documents/saudi-calendar-ar.pdf",
-      "fetched": true,
+      "fetched": false,
       "image": true,
-      "fetch_reason": ""
+      "fetch_reason": "The operation was aborted due to timeout"
     },
     {
       "id": "event-سكة-الأطعمة",
       "title": "سكة الاطعمة",
       "source_label": "Visit Saudi Summer Calendar PDF",
-      "source_method": "official-page-meta",
+      "source_method": "approved-source-row",
       "source_url": "https://www.visitsaudi.com/content/dam/documents/saudi-calendar-ar.pdf",
-      "fetched": true,
+      "fetched": false,
       "image": true,
-      "fetch_reason": ""
+      "fetch_reason": "The operation was aborted due to timeout"
     },
     {
       "id": "event-شارع-الفن-القرية-الأوروبية",
@@ -52,34 +52,76 @@
       "id": "event-قصور-وقاع-ابو-نقطة-المتحمي",
       "title": "قصور وقلاع ابو نقطة المتحمي",
       "source_label": "Visit Saudi Summer Calendar PDF",
-      "source_method": "official-page-meta",
+      "source_method": "approved-source-row",
       "source_url": "https://www.visitsaudi.com/content/dam/documents/saudi-calendar-ar.pdf",
-      "fetched": true,
+      "fetched": false,
       "image": true,
-      "fetch_reason": ""
+      "fetch_reason": "The operation was aborted due to timeout"
     },
     {
       "id": "event-مزرعة-التوت-الأسود",
       "title": "مزرعة التوت الاسود",
       "source_label": "Visit Saudi Summer Calendar PDF",
-      "source_method": "official-page-meta",
+      "source_method": "approved-source-row",
       "source_url": "https://www.visitsaudi.com/content/dam/documents/saudi-calendar-ar.pdf",
+      "fetched": false,
+      "image": true,
+      "fetch_reason": "The operation was aborted due to timeout"
+    },
+    {
+      "id": "event-hayy-makers-introduction-to-photography-understanding-your-camera",
+      "title": "Hayy Makers | Introduction to Photography: Understanding your Camera",
+      "source_label": "Hayy Jameel What's On",
+      "source_method": "official-page-meta",
+      "source_url": "https://hayyjameel.org/whats-on/hayy-makers-introduction-to-photography-understanding-your-camera/",
       "fetched": true,
       "image": true,
       "fetch_reason": ""
     },
     {
-      "id": "event-buraydah-dates-carnival",
-      "title": "Buraydah Dates Carnival",
-      "source_label": "Visit Saudi Seasons",
+      "id": "event-hayy-makers-woodworking-course-level-1-with-ahmad-sofi",
+      "title": "Hayy Makers | Woodworking Course (Level 1) with Ahmad Sofi",
+      "source_label": "Hayy Jameel What's On",
       "source_method": "official-page-meta",
-      "source_url": "https://www.visitsaudi.com/en/qassim/events/buraydah-dates-carnival",
+      "source_url": "https://hayyjameel.org/whats-on/hayy-makers-woodworking-course-level-1-with-ahmad-sofi-2/",
       "fetched": true,
       "image": true,
       "fetch_reason": ""
+    },
+    {
+      "id": "event-بلاتو",
+      "title": "بلاتو",
+      "source_label": "Visit Saudi Summer Calendar PDF",
+      "source_method": "approved-source-row",
+      "source_url": "https://www.visitsaudi.com/content/dam/documents/saudi-calendar-ar.pdf",
+      "fetched": false,
+      "image": true,
+      "fetch_reason": "The operation was aborted due to timeout"
+    },
+    {
+      "id": "event-منعً-في-لاحراج-عرض-ستاند-أب-كوميدي-من-عبدالرحمن-محمد-2",
+      "title": "منعً في للاحراج: عرض ستاند أب كوميدي من عبدالرحمن محمد",
+      "source_label": "Visit Saudi Summer Calendar PDF",
+      "source_method": "approved-source-row",
+      "source_url": "https://www.visitsaudi.com/content/dam/documents/saudi-calendar-ar.pdf",
+      "fetched": false,
+      "image": true,
+      "fetch_reason": "The operation was aborted due to timeout"
     }
   ],
   "failed": [
+    {
+      "id": "event-الأخطبوطية",
+      "title": "الاخطبوطية",
+      "source_url": "https://www.visitsaudi.com/content/dam/documents/saudi-calendar-ar.pdf",
+      "reason": "The operation was aborted due to timeout"
+    },
+    {
+      "id": "event-سكة-الأطعمة",
+      "title": "سكة الاطعمة",
+      "source_url": "https://www.visitsaudi.com/content/dam/documents/saudi-calendar-ar.pdf",
+      "reason": "The operation was aborted due to timeout"
+    },
     {
       "id": "event-شارع-الفن-القرية-الأوروبية",
       "title": "شارع الفن - القرية الاوروبية",
@@ -89,6 +131,30 @@
     {
       "id": "event-عروض-الفنون-الأدائية-التقليدية",
       "title": "عروض الفنون الادائية التقليدية",
+      "source_url": "https://www.visitsaudi.com/content/dam/documents/saudi-calendar-ar.pdf",
+      "reason": "The operation was aborted due to timeout"
+    },
+    {
+      "id": "event-قصور-وقاع-ابو-نقطة-المتحمي",
+      "title": "قصور وقلاع ابو نقطة المتحمي",
+      "source_url": "https://www.visitsaudi.com/content/dam/documents/saudi-calendar-ar.pdf",
+      "reason": "The operation was aborted due to timeout"
+    },
+    {
+      "id": "event-مزرعة-التوت-الأسود",
+      "title": "مزرعة التوت الاسود",
+      "source_url": "https://www.visitsaudi.com/content/dam/documents/saudi-calendar-ar.pdf",
+      "reason": "The operation was aborted due to timeout"
+    },
+    {
+      "id": "event-بلاتو",
+      "title": "بلاتو",
+      "source_url": "https://www.visitsaudi.com/content/dam/documents/saudi-calendar-ar.pdf",
+      "reason": "The operation was aborted due to timeout"
+    },
+    {
+      "id": "event-منعً-في-لاحراج-عرض-ستاند-أب-كوميدي-من-عبدالرحمن-محمد-2",
+      "title": "منعً في للاحراج: عرض ستاند أب كوميدي من عبدالرحمن محمد",
       "source_url": "https://www.visitsaudi.com/content/dam/documents/saudi-calendar-ar.pdf",
       "reason": "The operation was aborted due to timeout"
     }

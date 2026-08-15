@@ -1,6 +1,6 @@
 {
   "schema": "eventlive.source-strategic-platform-radar.v1",
-  "generated_at": "2026-08-13T19:32:10.144Z",
+  "generated_at": "2026-08-15T07:03:12.165Z",
   "policy": {
     "allowed_use": "official source evidence refresh, API-surface mapping, partnership prioritization, extractor backlog decisions",
     "disallowed_use": "direct catalog publication without official confirmation and duplicate review"
@@ -134,7 +134,7 @@
       "final_url": "https://nec.gov.sa/ar",
       "via": "fetch",
       "content_type": "text/html; charset=utf-8",
-      "bytes": 86283,
+      "bytes": 124093,
       "title": "المركز الوطني للفعاليات | المركز الوطني للفعاليات",
       "classification": "protected",
       "error": "",
@@ -146,15 +146,17 @@
         "https://enjz.nec.gov.sa/",
         "https://nec.gov.sa/ar/join-us/event-pioneer",
         "http://nec.sourcing.mn2.ariba.com/ad/selfRegistration/_c_/C2https://s1.mn2.ariba.com/Sourcing/Main/ad/loginPage/SSOActions?awsso_cc=cmVhbG06Ym1Wajthd3Nzb19ydTphSFIwY0hNNkx5OXpNUzV0YmpJdVlYSnBZbUV1WTI5dEwxTnZkWEpqYVc1bkwwMWhhVzR2WVdRdlpHVm1ZWFZzZEM5RWFYSmxZM1JCWTNScGIyNC9jbVZoYkcwOWJtVmo7YXdzc29fbHU6YUhSMGNITTZMeTl6TVM1dGJqSXVZWEpwWW1FdVkyOXRMMU52ZFhKamFXNW5MMDFoYVc0dllXUXZZMnhwWlc1MFRHOW5iM1YwTDFOVFQwRmpkR2x2Ym5NPTthd3Nzb19hcDpRVU5OO2F3c3NvX2FyaWQ6TVRjek9EQTJOREUyTmpRNU53PT07YXdzc29fa3U6YUhSMGNITTZMeTl6TVM1dGJqSXVZWEpwWW1FdVkyOXRMMU52ZFhKamFXNW5MMDFoYVc0dllXUXZZMnhwWlc1MFMyVmxjRUZzYVhabEwxTlRUMEZqZEdsdmJuTT07YXdzc29fZmw6TVE9PQ%3D%3D%3ARrUCV6K%2BXxtFtIJH7Rwdskb%2BHhc%3D&amp;awsso_ap=ACM&amp;realm=nec&amp;awsr=true",
+        "http://nec.sourcing.mn2.ariba.com/ad/selfRegistration/_c_/C2",
+        "https://laws.boe.gov.sa/BoeLaws/Laws/LawDetails/e73fd7d3-e812-477b-8112-ad3f00d16fd9/1",
+        "https://www.hrsd.gov.sa/knowledge-centre/decisions-and-regulations/regulation-and-procedures/0211202310#",
+        "https://eparticipation.my.gov.sa/",
+        "https://ncar.gov.sa/",
+        "https://www.vision2030.gov.sa/en",
         "https://twitter.com/nec_saudi?s=21",
         "https://www.instagram.com/nec.saudi/",
         "https://www.linkedin.com/company/events-center-sa/",
         "https://www.vision2030.gov.sa/ar/",
         "https://sdaia.gov.sa/ar/MediaCenter/Pages/ai-year.aspx",
-        "https://nec.gov.sa/ar\\",
-        "https://nec.gov.sa/en\\",
-        "https://nec.gov.sa/api/assets/2e5a88cf-8d48-43e2-9178-41c9e9ed8d4b\\",
-        "http://www.w3.org/2000/svg\\",
         "https://nec.gov.sa/ar/join-us/event-pioneer\\",
         "https://enjz.nec.gov.sa/\\",
         "http://nec.sourcing.mn2.ariba.com/ad/selfRegistration/_c_/C2https://s1.mn2.ariba.com/Sourcing/Main/ad/loginPage/SSOActions?awsso_cc=cmVhbG06Ym1Wajthd3Nzb19ydTphSFIwY0hNNkx5OXpNUzV0YmpJdVlYSnBZbUV1WTI5dEwxTnZkWEpqYVc1bkwwMWhhVzR2WVdRdlpHVm1ZWFZzZEM5RWFYSmxZM1JCWTNScGIyNC9jbVZoYkcwOWJtVmo7YXdzc29fbHU6YUhSMGNITTZMeTl6TVM1dGJqSXVZWEpwWW1FdVkyOXRMMU52ZFhKamFXNW5MMDFoYVc0dllXUXZZMnhwWlc1MFRHOW5iM1YwTDFOVFQwRmpkR2x2Ym5NPTthd3Nzb19hcDpRVU5OO2F3c3NvX2FyaWQ6TVRjek9EQTJOREUyTmpRNU53PT07YXdzc29fa3U6YUhSMGNITTZMeTl6TVM1dGJqSXVZWEpwWW1FdVkyOXRMMU52ZFhKamFXNW5MMDFoYVc0dllXUXZZMnhwWlc1MFMyVmxjRUZzYVhabEwxTlRUMEZqZEdsdmJuTT07YXdzc29fZmw6TVE9PQ%3D%3D%3ARrUCV6K%2BXxtFtIJH7Rwdskb%2BHhc%3D\\u0026awsso_ap=ACM\\u0026realm=nec\\u0026awsr=true\\",
@@ -165,9 +167,18 @@
         "https://www.gea.gov.sa/en/\\",
         "https://www.asda.gov.sa/\\",
         "https://www.dgda.gov.sa/home.aspx\\",
-        "https://static.cloudflareinsights.com/beacon.min.js/v4513226cdae34746b4dedf0b4dfa099e1781791509496",
-        "https://nec.gov.sa/ar/event-tech",
-        "https://nec.gov.sa/ar/event-tech/"
+        "https://www.hrsd.gov.sa/knowledge-centre/decisions-and-regulations/regulation-and-procedures/0211202310#\\",
+        "https://eparticipation.my.gov.sa/\\",
+        "https://ncar.gov.sa/\\",
+        "https://www.vision2030.gov.sa/en\\",
+        "http://nec.sourcing.mn2.ariba.com/ad/selfRegistration/_c_/C2\\",
+        "https://laws.boe.gov.sa/BoeLaws/Laws/LawDetails/e73fd7d3-e812-477b-8112-ad3f00d16fd9/1\\",
+        "http://www.w3.org/2000/svg\\",
+        "https://raqmi.dga.gov.sa/platforms/platforms/4b50c837-5b74-4f7e-c4a7-08dcfc01c363/platform-license\\\\\\",
+        "https://nec.gov.sa/ar\\",
+        "https://nec.gov.sa/en\\",
+        "https://nec.gov.sa/api/assets/2e5a88cf-8d48-43e2-9178-41c9e9ed8d4b\\",
+        "https://static.cloudflareinsights.com/beacon.min.js/v4513226cdae34746b4dedf0b4dfa099e1781791509496"
       ],
       "page_hint_words": [
         "api",
@@ -176,7 +187,7 @@
       ],
       "asset_results": [],
       "api_results": [],
-      "text_sample": "المركز الوطني للفعاليات | المركز الوطني للفعاليات قطاع واعد لفعاليات المملكة لقطاع فعاليات واعد، ومواسم سعودية استثنائية، وتقويم وطني مزدهر وجاذب! من نحن أُسّس مركز الفعاليات بقرار من مجلس الوزراء بتاريخ 15 رجب 1441 هـ الموافق 10 مارس 2020م، ومقره الرياض، وهو يهدف إلى تعزيز الفعاليات في المملكة، والارتقاء بالخدمات المقدمة في المجال، ودعم مواسم السعودية والتقويم الوطني والفعاليات الكبرى، بناءً على ما يصدر من أوامر وقرارات، وفقًا للتوجهات والرؤى التي تضعها لجنة الفعاليات كما يتمتع المركز بالشخصية…"
+      "text_sample": "المركز الوطني للفعاليات | المركز الوطني للفعاليات موقع حكومي مسجل لدي هيئة الحكومة الرقمية كيف تتحقق تواصل معنا البحث English قطاع واعد لفعاليات المملكة لقطاع فعاليات واعد، ومواسم سعودية استثنائية، وتقويم وطني مزدهر وجاذب! من نحن أُسّس مركز الفعاليات بقرار من مجلس الوزراء بتاريخ 15 رجب 1441 هـ الموافق 10 مارس 2020م، ومقره الرياض، وهو يهدف إلى تعزيز الفعاليات في المملكة، والارتقاء بالخدمات المقدمة في المجال، ودعم مواسم السعودية والتقويم الوطني والفعاليات الكبرى، بناءً على ما يصدر من أوامر وقرارا…"
     },
     {
       "id": "visit-saudi-calendar",
@@ -326,7 +337,7 @@
         "https://wbk-assets.webook.com/0.7.22/assets/react-helmet-Ba2OUe2H.js",
         "https://wbk-assets.webook.com/0.7.22/assets/@wbk/cruises-CzNyhBbV.js",
         "https://wbk-assets.webook.com/0.7.22/assets/@wbk/auction-DLHDiin3.js",
-        "https://webook.com/cdn-cgi/content?id=YD_8hYH9WZklfk3fNdgsdy8qjItzb.SksDJoIIZB9jU-1786649541.584068-1.2.1.1-zSHOzCFvSsFlMTsxCQwpMPN84b_0y8RS7X68imOyuQ5nkOtk2WIlMZIr36QR17VS",
+        "https://webook.com/cdn-cgi/content?id=9.e4_4TMC6DN5fZlAtbq9IOEJNDaQmQhEn9LrjSjeMY-1786777404.772449-1.2.1.1-18_5G7w6HN23Olqr_dDiDqDhYKy6l_6v4gy07MJSQxrzD.OlmIfADyIP.tM4rYkV",
         "https://static.cloudflareinsights.com/beacon.min.js/v4513226cdae34746b4dedf0b4dfa099e1781791509496"
       ],
       "page_hint_words": [

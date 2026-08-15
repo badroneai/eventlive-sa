@@ -1,18 +1,18 @@
 {
-  "published_at": "2026-08-13T19:53:03.855Z",
+  "published_at": "2026-08-15T07:32:32.101Z",
   "dry_run": false,
   "include_partner": true,
   "source_candidates": "data/source_candidates.json",
   "events_catalog": "data/events_catalog.json",
-  "candidates_seen": 590,
+  "candidates_seen": 589,
   "totals": {
-    "candidates_seen": 590,
+    "candidates_seen": 589,
     "published": 6,
-    "linked_existing": 546,
+    "linked_existing": 545,
     "blocked": 38,
     "duplicate_review_alerts": 8,
     "category_fallback_alerts": 0,
-    "reconciled": 552
+    "reconciled": 551
   },
   "category_fallback_alerts": [],
   "duplicate_catalog_rows_removed": 0,
@@ -1211,27 +1211,9 @@
       "reason": "already linked to catalog event"
     },
     {
-      "candidate_id": "candidate-ithra-events-bedayat-beginnings-of-saudi-art-movement-20260813-e0a239ef",
-      "event_id": "event-bedayat-beginnings-of-saudi-art-movement",
-      "title": "Bedayat: Beginnings of Saudi Art Movement",
-      "reason": "already linked to catalog event"
-    },
-    {
-      "candidate_id": "candidate-ithra-events-echoes-of-the-familiar-20260813-cc43c2bd",
-      "event_id": "event-echoes-of-the-familiar",
-      "title": "Echoes of the Familiar",
-      "reason": "already linked to catalog event"
-    },
-    {
       "candidate_id": "candidate-umm-al-qura-events-تفعيل-بيئة-تعلم-إلكترونية-تفاعلية-بنمط-غير-متزامن-20260813-68a97d75",
       "event_id": "event-تفعيل-بيئة-تعلم-إلكترونية-تفاعلية-بنمط-غير-متزامن",
       "title": "تفعيل بيئة تعلم إلكترونية تفاعلية– بنمط غير متزامن",
-      "reason": "already linked to catalog event"
-    },
-    {
-      "candidate_id": "candidate-mdlbeast-events-unstable-20260814-5647df2e",
-      "event_id": "event-unstable",
-      "title": "Unstable",
       "reason": "already linked to catalog event"
     },
     {
@@ -1241,99 +1223,45 @@
       "reason": "already linked to catalog event"
     },
     {
-      "candidate_id": "candidate-ithra-events-printing-house-20260814-e56f4f89",
-      "event_id": "event-printing-house",
-      "title": "Printing House",
+      "candidate_id": "candidate-hayy-jameel-events-hayy-cinema-a-godus-bros-retrospective-from-youtube-to-the-box-office-20260814-c4521792",
+      "event_id": "event-hayy-cinema-a-godus-bros-retrospective-from-youtube-to-the-box-office",
+      "title": "Hayy Cinema | A Godus Bros Retrospective: From YouTube to the Box Office",
       "reason": "already linked to catalog event"
     },
     {
-      "candidate_id": "candidate-ithra-events-tafasahu-make-room-20260814-562bc61d",
-      "event_id": "event-tafasahu-make-room",
-      "title": "Tafasahu: Make Room",
+      "candidate_id": "candidate-ithra-events-bedayat-beginnings-of-saudi-art-movement-20260815-e0a239ef",
+      "event_id": "event-bedayat-beginnings-of-saudi-art-movement",
+      "title": "Bedayat: Beginnings of Saudi Art Movement",
       "reason": "already linked to catalog event"
     },
     {
-      "candidate_id": "candidate-ithra-events-ithra-art-prize-exhibition-20260814-83c2ab55",
+      "candidate_id": "candidate-ithra-events-echoes-of-the-familiar-20260815-cc43c2bd",
+      "event_id": "event-echoes-of-the-familiar",
+      "title": "Echoes of the Familiar",
+      "reason": "already linked to catalog event"
+    },
+    {
+      "candidate_id": "candidate-ithra-events-ithra-art-prize-exhibition-20260815-83c2ab55",
       "event_id": "event-ithra-art-prize-exhibition",
       "title": "Ithra Art Prize Exhibition",
       "reason": "already linked to catalog event"
     },
     {
-      "candidate_id": "candidate-ithra-events-tinkering-stations-20260814-5a2c4c0e",
+      "candidate_id": "candidate-ithra-events-printing-house-20260815-e56f4f89",
+      "event_id": "event-printing-house",
+      "title": "Printing House",
+      "reason": "already linked to catalog event"
+    },
+    {
+      "candidate_id": "candidate-ithra-events-tafasahu-make-room-20260815-562bc61d",
+      "event_id": "event-tafasahu-make-room",
+      "title": "Tafasahu: Make Room",
+      "reason": "already linked to catalog event"
+    },
+    {
+      "candidate_id": "candidate-ithra-events-tinkering-stations-20260815-5a2c4c0e",
       "event_id": "event-tinkering-stations",
       "title": "Tinkering Stations",
-      "reason": "already linked to catalog event"
-    },
-    {
-      "candidate_id": "candidate-ithra-events-creative-character-design-20260814-afddf835",
-      "event_id": "event-creative-character-design",
-      "title": "Creative Character Design",
-      "reason": "already linked to catalog event"
-    },
-    {
-      "candidate_id": "candidate-ithra-events-survival-journey-20260814-4fd1e78d",
-      "event_id": "event-survival-journey",
-      "title": "Survival Journey",
-      "reason": "already linked to catalog event"
-    },
-    {
-      "candidate_id": "candidate-ithra-events-stories-from-ithras-library-20260814-4116de16",
-      "event_id": "event-stories-from-ithras-library",
-      "title": "Stories from Ithra's Library",
-      "reason": "already linked to catalog event"
-    },
-    {
-      "candidate_id": "candidate-ithra-events-spot-of-inspiration-20260814-5bac584c",
-      "event_id": "event-spot-of-inspiration",
-      "title": "Spot of Inspiration",
-      "reason": "already linked to catalog event"
-    },
-    {
-      "candidate_id": "candidate-ithra-events-childrens-museum-story-time-20260814-ada8b9db",
-      "event_id": "event-childrens-museum-story-time",
-      "title": "Children's Museum Story Time",
-      "reason": "already linked to catalog event"
-    },
-    {
-      "candidate_id": "candidate-ithra-events-dots-on-letters-20260814-b8901d67",
-      "event_id": "event-dots-on-letters",
-      "title": "Dots on Letters",
-      "reason": "already linked to catalog event"
-    },
-    {
-      "candidate_id": "candidate-ithra-events-family-game-20260814-fff43c76",
-      "event_id": "event-family-game",
-      "title": "Family Game",
-      "reason": "already linked to catalog event"
-    },
-    {
-      "candidate_id": "candidate-ithra-events-emboss-printing-experience-20260814-2671d1ce",
-      "event_id": "event-emboss-printing-experience",
-      "title": "Emboss Printing Experience",
-      "reason": "already linked to catalog event"
-    },
-    {
-      "candidate_id": "candidate-ithra-events-family-challenges-20260814-3726c868",
-      "event_id": "event-family-challenges",
-      "title": "Family Challenges",
-      "reason": "already linked to catalog event"
-    },
-    {
-      "candidate_id": "candidate-ithra-events-ithra-short-play-contest-2026-20260814-11e2aa06",
-      "event_id": "event-ithra-short-play-contest-2026",
-      "title": "Ithra Short Play Contest 2026",
-      "reason": "already linked to catalog event"
-    },
-    {
-      "candidate_id": "candidate-ithra-events-grand-art-space-20260814-e3acefbb",
-      "event_id": "event-grand-art-space",
-      "title": "Grand Art Space",
-      "reason": "already linked to catalog event"
-    },
-    {
-      "candidate_id": "candidate-hayy-jameel-events-hayy-cinema-a-godus-bros-retrospective-from-youtube-to-the-box-office-20260814-c4521792",
-      "event_id": "event-hayy-cinema-a-godus-bros-retrospective-from-youtube-to-the-box-office",
-      "title": "Hayy Cinema | A Godus Bros Retrospective: From YouTube to the Box Office",
       "reason": "already linked to catalog event"
     },
     {
@@ -1349,6 +1277,36 @@
       "reason": "already linked to catalog event"
     },
     {
+      "candidate_id": "candidate-ithra-events-spot-of-inspiration-20260815-5bac584c",
+      "event_id": "event-spot-of-inspiration",
+      "title": "Spot of Inspiration",
+      "reason": "already linked to catalog event"
+    },
+    {
+      "candidate_id": "candidate-ithra-events-childrens-museum-story-time-20260815-ada8b9db",
+      "event_id": "event-childrens-museum-story-time",
+      "title": "Children's Museum Story Time",
+      "reason": "already linked to catalog event"
+    },
+    {
+      "candidate_id": "candidate-ithra-events-emboss-printing-experience-20260815-2671d1ce",
+      "event_id": "event-emboss-printing-experience",
+      "title": "Emboss Printing Experience",
+      "reason": "already linked to catalog event"
+    },
+    {
+      "candidate_id": "candidate-ithra-events-family-challenges-20260815-3726c868",
+      "event_id": "event-family-challenges",
+      "title": "Family Challenges",
+      "reason": "already linked to catalog event"
+    },
+    {
+      "candidate_id": "candidate-ithra-events-creative-character-design-20260815-afddf835",
+      "event_id": "event-creative-character-design",
+      "title": "Creative Character Design",
+      "reason": "already linked to catalog event"
+    },
+    {
       "candidate_id": "candidate-ithra-events-swim-r-mission-20260815-f8a6c05c",
       "event_id": "event-swim-r-mission",
       "title": "SWIM-R Mission",
@@ -1361,9 +1319,21 @@
       "reason": "already linked to catalog event"
     },
     {
+      "candidate_id": "candidate-ithra-events-grand-art-space-20260815-e3acefbb",
+      "event_id": "event-grand-art-space",
+      "title": "Grand Art Space",
+      "reason": "already linked to catalog event"
+    },
+    {
       "candidate_id": "candidate-hayy-jameel-events-hayy-makers-woodworking-course-level-1-with-ahmad-sofi-20260815-2ba216a5",
       "event_id": "event-hayy-makers-woodworking-course-level-1-with-ahmad-sofi",
       "title": "Hayy Makers | Woodworking Course (Level 1) with Ahmad Sofi",
+      "reason": "already linked to catalog event"
+    },
+    {
+      "candidate_id": "candidate-ithra-events-ithra-short-play-contest-2026-20260815-11e2aa06",
+      "event_id": "event-ithra-short-play-contest-2026",
+      "title": "Ithra Short Play Contest 2026",
       "reason": "already linked to catalog event"
     },
     {
@@ -1430,6 +1400,12 @@
       "candidate_id": "candidate-ithra-events-children-story-time-20260817-f545fa69",
       "event_id": "event-children-story-time",
       "title": "Children Story Time",
+      "reason": "already linked to catalog event"
+    },
+    {
+      "candidate_id": "candidate-ithra-events-survival-journey-20260817-4fd1e78d",
+      "event_id": "event-survival-journey",
+      "title": "Survival Journey",
       "reason": "already linked to catalog event"
     },
     {
@@ -1598,6 +1574,24 @@
       "candidate_id": "candidate-ithra-events-the-non-stop-spin-20260821-6cf89742",
       "event_id": "event-the-non-stop-spin",
       "title": "The Non-Stop Spin",
+      "reason": "already linked to catalog event"
+    },
+    {
+      "candidate_id": "candidate-ithra-events-stories-from-ithras-library-20260821-4116de16",
+      "event_id": "event-stories-from-ithras-library",
+      "title": "Stories from Ithra's Library",
+      "reason": "already linked to catalog event"
+    },
+    {
+      "candidate_id": "candidate-ithra-events-dots-on-letters-20260821-b8901d67",
+      "event_id": "event-dots-on-letters",
+      "title": "Dots on Letters",
+      "reason": "already linked to catalog event"
+    },
+    {
+      "candidate_id": "candidate-ithra-events-family-game-20260821-fff43c76",
+      "event_id": "event-family-game",
+      "title": "Family Game",
       "reason": "already linked to catalog event"
     },
     {
@@ -3543,6 +3537,11 @@
       "reason": "publication gate source-evidence is not auto-publishable"
     },
     {
+      "candidate_id": "candidate-saudicon-events-مؤتمر-الأطراف-السابع-عشر-لاتفاقية-الأمم-المتحدة-لمكافحة-التصحر-cop17-20260817-8b6d444b",
+      "title": "مؤتمر الأطراف السابع عشر لاتفاقية الأمم المتحدة لمكافحة التصحر (COP17)",
+      "reason": "publication gate source-evidence is not auto-publishable"
+    },
+    {
       "candidate_id": "candidate-eye-of-riyadh-events-sunaa-2026-20260818-e3819fa8",
       "title": "SUNAA 2026",
       "reason": "publication gate source-evidence is not auto-publishable"
@@ -3605,11 +3604,6 @@
       "candidate_id": "candidate-saudicon-events-منتدى-الجوانب-القانونية-للاندماج-والاستحواذ-20260831-4cfc45d5",
       "title": "منتدى الجوانب القانونية للاندماج والاستحواذ",
       "reason": "publication gate source-evidence is not auto-publishable"
-    },
-    {
-      "candidate_id": "candidate-saudicon-events-ليب-2026-20260831-8612d635",
-      "title": "ليب 2026",
-      "reason": "possible duplicate already exists: event-leap-2026"
     },
     {
       "candidate_id": "candidate-eventbrite-saudi-smart-sustainable-building-intelligent-ecosystems-for-tomorrows-cities-20260901-e45c1490",

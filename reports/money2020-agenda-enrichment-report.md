@@ -1,6 +1,6 @@
 # Money20/20 Middle East Agenda Enrichment
 
-- generated_at: 2026-08-13T19:55:44.130Z
+- generated_at: 2026-08-15T07:35:55.559Z
 - time_scope: current-and-upcoming-only
 - ended_collection_enabled: false
 - 2025_official_sessions: 0
