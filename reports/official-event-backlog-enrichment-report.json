@@ -1,11 +1,11 @@
 {
-  "generated_at": "2026-08-15T13:11:21.957Z",
+  "generated_at": "2026-08-15T19:02:45.420Z",
   "totals": {
     "targets": 6,
     "enriched": 6,
-    "fetched": 4,
+    "fetched": 5,
     "images": 6,
-    "fetch_failures": 2
+    "fetch_failures": 1
   },
   "enriched": [
     {
@@ -32,11 +32,11 @@
       "id": "event-شارع-الفن-القرية-الأوروبية",
       "title": "شارع الفن - القرية الاوروبية",
       "source_label": "Visit Saudi Summer Calendar PDF",
-      "source_method": "approved-source-row",
+      "source_method": "official-page-meta",
       "source_url": "https://www.visitsaudi.com/content/dam/documents/saudi-calendar-ar.pdf",
-      "fetched": false,
+      "fetched": true,
       "image": true,
-      "fetch_reason": "The operation was aborted due to timeout"
+      "fetch_reason": ""
     },
     {
       "id": "event-عروض-الفنون-الأدائية-التقليدية",
@@ -70,12 +70,6 @@
     }
   ],
   "failed": [
-    {
-      "id": "event-شارع-الفن-القرية-الأوروبية",
-      "title": "شارع الفن - القرية الاوروبية",
-      "source_url": "https://www.visitsaudi.com/content/dam/documents/saudi-calendar-ar.pdf",
-      "reason": "The operation was aborted due to timeout"
-    },
     {
       "id": "event-مزرعة-التوت-الأسود",
       "title": "مزرعة التوت الاسود",

@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-15T13:12:45.306Z",
+  "generated_at": "2026-08-15T19:04:01.104Z",
   "events_file": "dist/events.json",
   "manifest": "data/event_image_cache_manifest.json",
   "image_dir": "dist/assets/event-images",
@@ -102,11 +102,6 @@
     {
       "source_url": "https://api.riyadh.sa/sites/default/files/styles/medium/public/2026-02/Screenshot%202026-02-26%20133648.png?itok=xy0_45S_",
       "file": "dist/assets/event-images/horses-and-equestrian-heritage-exhibition-7b885e70c4.png",
-      "events": 1
-    },
-    {
-      "source_url": "https://scth.scene7.com/is/image/scth/sunken-treasuers?wid=1400&hei=788&fit=constrain&fmt=webp",
-      "file": "dist/assets/event-images/sunken-treasures-ac2d0de6e5.webp",
       "events": 1
     },
     {
@@ -680,16 +675,6 @@
       "events": 1
     },
     {
-      "source_url": "https://www.ithra.com/application/files/cache/thumbnails/259c5639d719477c4dcba9d4e68d239b.jpg",
-      "file": "dist/assets/event-images/مسابقة-إثراء-للمسرحية-القصيرة-2026-0816f0aa41.jpg",
-      "events": 1
-    },
-    {
-      "source_url": "https://www.ithra.com/application/files/cache/thumbnails/5220b80aaa7e087afc6b0ee18cc23ba3.png",
-      "file": "dist/assets/event-images/creative-character-design-f8b2d539d8.png",
-      "events": 1
-    },
-    {
       "source_url": "https://hayyjameel.org/wp-content/uploads/2026/08/DSC00522-1100x500.jpg",
       "file": "dist/assets/event-images/hayy-arts-from-another-angel-explore-contemporary-art-with-alternative-b06bceee40.jpg",
       "events": 1
@@ -697,11 +682,6 @@
     {
       "source_url": "https://hayyjameel.org/wp-content/uploads/2026/08/Screen-Shot-1448-02-26-at-2.37.08-PM-aspect-ratio-1942-910-1100x500.png",
       "file": "dist/assets/event-images/هاي-اكسبلوررز-في-شهر-آب-أغسطس-كما-قال-الأرض-طرق-التبادل-d16770589f.png",
-      "events": 1
-    },
-    {
-      "source_url": "https://discoveraseer.com/en/img/asset/YXNzZXRzL2V4cGVyaWVuY2UvaGFtYWtpLnBuZw/hamaki.png?w=1024&fm=webp&s=d6b46ce0f3e022e5bcced45dd222ed9e",
-      "file": "dist/assets/event-images/concert-mohamed-hamaki-b5c7ae3ec4.webp",
       "events": 1
     },
     {
@@ -1935,6 +1915,11 @@
       "events": 1
     },
     {
+      "source_url": "https://discoveraseer.com/en/img/asset/YXNzZXRzL2V4cGVyaWVuY2UvaGFtYWtpLnBuZw/hamaki.png?w=1024&fm=webp&s=d6b46ce0f3e022e5bcced45dd222ed9e",
+      "file": "dist/assets/event-images/concert-mohamed-hamaki-b5c7ae3ec4.webp",
+      "events": 1
+    },
+    {
       "source_url": "https://www.ithra.com/application/files/cache/thumbnails/f2679c3d2bb7fcaa5db4cce650b92db8.jpg",
       "file": "dist/assets/event-images/بطولة-إثراء-للشطرنج-13-18-عامًا-9eff72d3fb.jpg",
       "events": 1
@@ -1950,8 +1935,18 @@
       "events": 1
     },
     {
+      "source_url": "https://www.ithra.com/application/files/cache/thumbnails/5220b80aaa7e087afc6b0ee18cc23ba3.png",
+      "file": "dist/assets/event-images/creative-character-design-f8b2d539d8.png",
+      "events": 1
+    },
+    {
       "source_url": "https://www.ithra.com/application/files/cache/thumbnails/c4dead970ab3d5a09db3eb2c1e888b8a.jpg",
       "file": "dist/assets/event-images/أعضاء-الجولة-e68ad1c393.jpg",
+      "events": 1
+    },
+    {
+      "source_url": "https://www.ithra.com/application/files/cache/thumbnails/259c5639d719477c4dcba9d4e68d239b.jpg",
+      "file": "dist/assets/event-images/مسابقة-إثراء-للمسرحية-القصيرة-2026-0816f0aa41.jpg",
       "events": 1
     },
     {
@@ -2497,6 +2492,11 @@
     {
       "source_url": "https://www.ithra.com/application/files/cache/thumbnails/9c5873773d4292a9e3ae3723253da66b.jpg",
       "file": "dist/assets/event-images/documentary-competition-group-4-c5f1d56372.jpg",
+      "events": 1
+    },
+    {
+      "source_url": "https://api.riyadh.sa/sites/default/files/styles/medium/public/2026-04/GyN7i2hWYAEFU3X.jpeg?itok=of7aIuP0",
+      "file": "dist/assets/event-images/prince-faisal-bin-fahd-art-exhibition-summer-2026-8216b3ee07.jpg",
       "events": 1
     }
   ],

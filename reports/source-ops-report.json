@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-15T13:12:46.374Z",
+  "generated_at": "2026-08-15T19:04:02.128Z",
   "files": {
     "registry": "data/source_registry.json",
     "candidates": "data/source_candidates.json",
@@ -11,25 +11,25 @@
   },
   "collection": {
     "basis": "source_collection_report_adaptive",
-    "collected_at": "2026-08-15T13:03:28.920Z",
+    "collected_at": "2026-08-15T18:51:37.461Z",
     "freshness": "fresh",
-    "discovered": 240,
-    "written": 588
+    "discovered": 234,
+    "written": 584
   },
   "sources": {
     "total": 88,
-    "attempted": 19,
-    "due": 19,
-    "deferred": 29,
+    "attempted": 24,
+    "due": 24,
+    "deferred": 24,
     "scheduled": 48,
     "runnable": 48,
     "collection_coverage_pct": 100,
-    "registry_collection_coverage_pct": 22,
+    "registry_collection_coverage_pct": 27,
     "scheduled_runnable_coverage_pct": 100,
-    "healthy": 19,
-    "zero_yield": 0,
-    "errors": 0,
-    "cadence_deferred": 29,
+    "healthy": 18,
+    "zero_yield": 5,
+    "errors": 1,
+    "cadence_deferred": 24,
     "not_collected": 40,
     "unattempted_high_priority": 3,
     "health": [
@@ -53,8 +53,8 @@
         "error_streak": 0,
         "zero_yield_streak": 0,
         "last_attempted_at": null,
-        "extracted": 28,
-        "candidates": 16,
+        "extracted": 27,
+        "candidates": 15,
         "next_action": "استمر بالمراجعة والتكرار قبل النشر."
       },
       {
@@ -326,8 +326,8 @@
         "error_streak": 0,
         "zero_yield_streak": 0,
         "last_attempted_at": null,
-        "extracted": 69,
-        "candidates": 71,
+        "extracted": 67,
+        "candidates": 69,
         "next_action": "استمر بالمراجعة والتكرار قبل النشر."
       },
       {
@@ -537,7 +537,7 @@
         "zero_yield_streak": 0,
         "last_attempted_at": null,
         "extracted": 35,
-        "candidates": 38,
+        "candidates": 37,
         "next_action": "استمر بالمراجعة والتكرار قبل النشر."
       },
       {
@@ -643,16 +643,13 @@
         "id": "sfda-events",
         "name": "Saudi Food and Drug Authority Events",
         "priority": 48,
-        "status": "deferred",
-        "historical_status": "zero-yield",
-        "cadence_reason": "zero-yield-cooldown",
-        "next_due_at": "2026-08-15T13:18:29.989Z",
+        "status": "zero-yield",
         "error_streak": 0,
-        "zero_yield_streak": 2,
-        "last_attempted_at": "2026-08-15T07:18:29.989Z",
+        "zero_yield_streak": 0,
+        "last_attempted_at": null,
         "extracted": 0,
         "candidates": 5,
-        "next_action": "مؤجل حتى 2026-08-15T13:18:29.989Z وفق الجدولة التكيفية."
+        "next_action": "No future date-complete candidates found by the conservative extractor."
       },
       {
         "id": "saudi-contractors-authority-events",
@@ -682,16 +679,13 @@
         "id": "riyadh-city-events",
         "name": "Riyadh City Events",
         "priority": 51,
-        "status": "deferred",
-        "historical_status": "probe-blocked",
-        "cadence_reason": "error-cooldown",
-        "next_due_at": "2026-08-15T13:18:29.989Z",
+        "status": "zero-yield",
         "error_streak": 0,
         "zero_yield_streak": 0,
-        "last_attempted_at": "2026-08-15T07:18:29.989Z",
+        "last_attempted_at": null,
         "extracted": 0,
         "candidates": 74,
-        "next_action": "مؤجل حتى 2026-08-15T13:18:29.989Z وفق الجدولة التكيفية."
+        "next_action": "No future date-complete candidates found by the conservative extractor."
       },
       {
         "id": "monshaat-academy-programs",
@@ -784,13 +778,13 @@
         "id": "asharqia-chamber-events",
         "name": "Asharqia Chamber Events",
         "priority": 59,
-        "status": "healthy",
+        "status": "collection-error",
         "error_streak": 0,
         "zero_yield_streak": 0,
         "last_attempted_at": null,
-        "extracted": 3,
+        "extracted": 0,
         "candidates": 3,
-        "next_action": "استمر بالمراجعة والتكرار قبل النشر."
+        "next_action": "fetch failed; page.goto: Timeout 30000ms exceeded.\nCall log:\n  - navigating to \"https://www.chamber.org.sa/sites/Arabic/Events/ChamberEvents/Pages/AllChamberEvents.aspx\", waiting until \"domcontentloaded\"\n"
       },
       {
         "id": "qassim-chamber-events",
@@ -877,31 +871,25 @@
         "id": "tabuk-chamber-events",
         "name": "Tabuk Chamber Events",
         "priority": 66,
-        "status": "deferred",
-        "historical_status": "zero-yield",
-        "cadence_reason": "zero-yield-cooldown",
-        "next_due_at": "2026-08-15T13:53:29.262Z",
+        "status": "zero-yield",
         "error_streak": 0,
-        "zero_yield_streak": 34,
-        "last_attempted_at": "2026-08-12T13:53:29.262Z",
+        "zero_yield_streak": 0,
+        "last_attempted_at": null,
         "extracted": 0,
         "candidates": 0,
-        "next_action": "مؤجل حتى 2026-08-15T13:53:29.262Z وفق الجدولة التكيفية."
+        "next_action": "No future date-complete candidates found by the conservative extractor."
       },
       {
         "id": "jazan-chamber-events",
         "name": "Jazan Chamber Events",
         "priority": 67,
-        "status": "deferred",
-        "historical_status": "zero-yield",
-        "cadence_reason": "zero-yield-cooldown",
-        "next_due_at": "2026-08-15T13:53:29.262Z",
+        "status": "zero-yield",
         "error_streak": 0,
-        "zero_yield_streak": 16,
-        "last_attempted_at": "2026-08-12T13:53:29.262Z",
+        "zero_yield_streak": 0,
+        "last_attempted_at": null,
         "extracted": 0,
         "candidates": 0,
-        "next_action": "مؤجل حتى 2026-08-15T13:53:29.262Z وفق الجدولة التكيفية."
+        "next_action": "No future date-complete candidates found by the conservative extractor."
       },
       {
         "id": "hail-chamber-events",
@@ -1096,16 +1084,13 @@
         "id": "madinah-chamber-events",
         "name": "Madinah Chamber Events",
         "priority": 83,
-        "status": "deferred",
-        "historical_status": "zero-yield",
-        "cadence_reason": "zero-yield-cooldown",
-        "next_due_at": "2026-08-15T13:53:29.262Z",
+        "status": "zero-yield",
         "error_streak": 0,
-        "zero_yield_streak": 22,
-        "last_attempted_at": "2026-08-12T13:53:29.262Z",
+        "zero_yield_streak": 0,
+        "last_attempted_at": null,
         "extracted": 0,
         "candidates": 0,
-        "next_action": "مؤجل حتى 2026-08-15T13:53:29.262Z وفق الجدولة التكيفية."
+        "next_action": "No future date-complete candidates found by the conservative extractor."
       },
       {
         "id": "madinah-architecture-festival",
@@ -1179,28 +1164,28 @@
     ]
   },
   "queue": {
-    "total": 588,
+    "total": 584,
     "ready_for_review": 8,
     "approved_for_catalog": 0,
-    "published_from_candidates": 555,
+    "published_from_candidates": 551,
     "actionable": 8,
     "stale_unpublished": 0,
     "duplicate_risk": 6,
     "needs_extraction": 0,
     "needs_evidence": 25,
     "by_review_status": {
-      "approved-for-catalog": 555,
+      "approved-for-catalog": 551,
       "ready-for-review": 8,
       "evidence-captured": 17,
       "new": 8
     },
     "by_publication_gate": {
-      "catalog-review": 555,
+      "catalog-review": 551,
       "duplicate-review": 8,
       "source-evidence": 25
     },
     "by_confidence": {
-      "official": 549,
+      "official": 545,
       "public-listing": 20,
       "verified-secondary": 11,
       "unverified": 8
@@ -1213,10 +1198,10 @@
     "by_source": {
       "Ministry of Culture Commission Calendars": 12,
       "Riyadh City Events": 74,
-      "Visit Saudi Calendar": 16,
+      "Visit Saudi Calendar": 15,
       "Visit Saudi Summer Calendar PDF": 65,
       "Misk Hub Programs": 12,
-      "Discover Aseer Events": 38,
+      "Discover Aseer Events": 37,
       "Hayy Jameel What's On": 73,
       "Visit Saudi Seasons": 18,
       "Tuwaiq Academy Bootcamps and Programs": 37,
@@ -1225,7 +1210,7 @@
       "Jouf University Summer Programs": 1,
       "Umm Al-Qura University Events Center": 52,
       "Monsha'at All Events": 1,
-      "Ithra Events": 71,
+      "Ithra Events": 69,
       "Future Skills MCIT Catalogue": 3,
       "Saudi Food and Drug Authority Events": 5,
       "Saudi Universities and Technical Colleges": 4,
@@ -1352,7 +1337,7 @@
         "discovery_notes": "",
         "duplicate_risk": true,
         "matched_catalog_event_id": "event-in-act-act-x",
-        "days_to_start": 56,
+        "days_to_start": 55,
         "is_past": false,
         "is_actionable": true,
         "action": "راجع التكرار مع الكتالوج قبل أي اعتماد.",

@@ -1,28 +1,28 @@
 # EventLive Harvest OS Status
 
-- Generated at: 2026-08-15T13:20:23.227Z
+- Generated at: 2026-08-15T19:11:28.576Z
 - Status: NEEDS_WORK
 - Operating rule: Probe before new sources; sample before full harvest; Raw collection is not publication; discovery-only never auto-publishes.
 
 ## Totals
 
 - Sources: 88
-- Candidates: 588
-- Matched candidates: 557
+- Candidates: 584
+- Matched candidates: 553
 - Auto-publish sources: 15
 - Candidate-only sources: 12
 - Partnership-required sources: 5
-- Productive sources / attempted: 19/19
-- Collector errors: 5 (chronic 5, transient 0)
+- Productive sources / attempted: 18/24
+- Collector errors: 6 (chronic 5, transient 1)
 
 ## Publication Funnel
 
 | Stage | Count |
 | --- | --- |
-| discovered_this_run | 240 |
-| candidate_queue | 588 |
-| evaluated_for_publish | 588 |
-| linked_existing | 544 |
+| discovered_this_run | 234 |
+| candidate_queue | 584 |
+| evaluated_for_publish | 584 |
+| linked_existing | 540 |
 | published_new | 6 |
 | blocked | 38 |
 | secondary_promoted | 0 |
@@ -52,6 +52,7 @@
 | moc-cultural-subportals | chronic | 25 | no | collector-error: fetch failed; fetch failed |
 | monshaat-events | chronic | 8 | no | collector-error: fetch failed; fetch failed |
 | saudi-pro-league-fixtures | chronic | 5 | no | collector-error: fetch failed |
+| asharqia-chamber-events | transient | 1 | yes | fetch failed; page.goto: Timeout 30000ms exceeded. Call log:   - navigating to "https://www.chamber.org.sa/sites/Arabic/Events/ChamberEvents/Pages/AllChamberEvents.aspx", waiting until "domcontentload |
 
 | Source | Policy | Trust | Gate |
 | --- | --- | --- | --- |

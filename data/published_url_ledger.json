@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "generated_at": "2026-08-15T13:15:20.915Z",
+  "generated_at": "2026-08-15T19:06:31.004Z",
   "events": {
     "event-skill-development-initiative": {
       "identity": "skill development initiative|riyadh|2021-07-14",
@@ -95,11 +95,6 @@
     "event-كنوز-غارقة": {
       "identity": "كنوز غارقة|jeddah|2026-02-25",
       "first_seen": "2026-07-18",
-      "last_seen": "2026-08-15"
-    },
-    "event-sunken-treasures": {
-      "identity": "sunken treasures|jeddah|2026-02-25",
-      "first_seen": "2026-07-14",
       "last_seen": "2026-08-15"
     },
     "event-سكة-الأطعمة": {
@@ -1037,18 +1032,8 @@
       "first_seen": "2026-07-11",
       "last_seen": "2026-08-15"
     },
-    "event-ithra-short-play-contest-2026": {
-      "identity": "ithra short play contest 2026|dhahran|2026-08-10",
-      "first_seen": "2026-07-27",
-      "last_seen": "2026-08-15"
-    },
     "event-أوركسترا-game-of-thrones": {
       "identity": "أوركسترا game of thrones|riyadh|2026-08-11",
-      "first_seen": "2026-07-11",
-      "last_seen": "2026-08-15"
-    },
-    "event-creative-character-design": {
-      "identity": "creative character design|dhahran|2026-08-11",
       "first_seen": "2026-07-11",
       "last_seen": "2026-08-15"
     },
@@ -1070,11 +1055,6 @@
     "event-تفعيل-بيئة-تعلم-إلكترونية-تفاعلية-بنمط-غير-متزامن": {
       "identity": "تفعيل بيئة تعلم إلكترونية تفاعلية– بنمط غير متزامن|makkah|2026-08-13",
       "first_seen": "2026-08-10",
-      "last_seen": "2026-08-15"
-    },
-    "event-concert-mohamed-hamaki": {
-      "identity": "concert – mohamed hamaki|aseer|2026-08-14",
-      "first_seen": "2026-08-08",
       "last_seen": "2026-08-15"
     },
     "event-hayy-cinema-a-godus-bros-retrospective-from-youtube-to-the-box-office": {
@@ -2682,6 +2662,11 @@
       "first_seen": "2026-07-27",
       "last_seen": "2026-08-15"
     },
+    "event-concert-mohamed-hamaki": {
+      "identity": "concert – mohamed hamaki|aseer|2026-08-14",
+      "first_seen": "2026-08-08",
+      "last_seen": "2026-08-15"
+    },
     "event-unstable": {
       "identity": "unstable|riyadh|2026-08-14",
       "first_seen": "2026-07-11",
@@ -2712,9 +2697,19 @@
       "first_seen": "2026-07-27",
       "last_seen": "2026-08-15"
     },
+    "event-creative-character-design": {
+      "identity": "creative character design|dhahran|2026-08-11",
+      "first_seen": "2026-07-11",
+      "last_seen": "2026-08-15"
+    },
     "event-ithra-members-tour": {
       "identity": "ithra members tour|dhahran|2026-08-11",
       "first_seen": "2026-08-04",
+      "last_seen": "2026-08-15"
+    },
+    "event-ithra-short-play-contest-2026": {
+      "identity": "ithra short play contest 2026|dhahran|2026-08-10",
+      "first_seen": "2026-07-27",
       "last_seen": "2026-08-15"
     },
     "event-platforms-manager-skills": {
@@ -4920,6 +4915,11 @@
     "ended-dhahran-expo-calendar-lamatna-expo-20260226-18d15b29": {
       "identity": "lamatna expo|dhahran|2026-02-26",
       "first_seen": "2026-07-11",
+      "last_seen": "2026-08-15"
+    },
+    "event-sunken-treasures": {
+      "identity": "sunken treasures|jeddah|2026-02-25",
+      "first_seen": "2026-07-14",
       "last_seen": "2026-08-15"
     },
     "ended-rfecc-whats-on-world-advanced-manufacturing-20260215-6fb40b0f": {
