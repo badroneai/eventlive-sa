@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "generated_at": "2026-08-15T07:40:14.046Z",
+  "generated_at": "2026-08-15T13:15:20.915Z",
   "events": {
     "event-skill-development-initiative": {
       "identity": "skill development initiative|riyadh|2021-07-14",
@@ -1079,11 +1079,6 @@
     },
     "event-hayy-cinema-a-godus-bros-retrospective-from-youtube-to-the-box-office": {
       "identity": "hayy cinema | a godus bros retrospective: from youtube to the box office|jeddah|2026-08-14",
-      "first_seen": "2026-07-27",
-      "last_seen": "2026-08-15"
-    },
-    "event-petals-and-pals-english": {
-      "identity": "petals and pals (english)|dhahran|2026-08-15",
       "first_seen": "2026-07-27",
       "last_seen": "2026-08-15"
     },
@@ -2680,6 +2675,11 @@
     "event-space-debris-conference-2028": {
       "identity": "space debris conference 2028|riyadh|2028-02-15",
       "first_seen": "2026-08-06",
+      "last_seen": "2026-08-15"
+    },
+    "event-petals-and-pals-english": {
+      "identity": "petals and pals (english)|dhahran|2026-08-15",
+      "first_seen": "2026-07-27",
       "last_seen": "2026-08-15"
     },
     "event-unstable": {

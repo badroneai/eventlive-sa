@@ -1,74 +1,16 @@
 {
   "schema": "eventlive.source-diagnostics-cadence.v1",
-  "generated_at": "2026-08-15T07:02:26.938Z",
+  "generated_at": "2026-08-15T13:03:28.434Z",
   "interval_hours": 24,
   "forced": false,
-  "due": true,
-  "status": "degraded",
+  "due": false,
+  "status": "skipped-fresh",
   "last_executed_at": "2026-08-15T07:02:26.938Z",
   "next_due_at": "2026-08-16T07:02:26.938Z",
   "totals": {
-    "commands": 3,
-    "ok": 2,
-    "failed": 1
+    "commands": 0,
+    "ok": 0,
+    "failed": 0
   },
-  "runs": [
-    {
-      "id": "source-probe",
-      "script": "sources:probe",
-      "started_at": "2026-08-15T07:02:26.938Z",
-      "ended_at": "2026-08-15T07:03:08.723Z",
-      "duration_ms": 41785,
-      "status": "ok",
-      "exit_code": 0,
-      "error": "",
-      "stdout_tail": [
-        "> eventlive@1.0.0 sources:probe",
-        "> node scripts/source-deep-probe.mjs",
-        "# EventLive Source Deep Probe",
-        "- Probed: 21",
-        "- Extractor-ready: 11",
-        "- Blocked/protected: 10",
-        "- Report: reports/source-deep-probe-report.md"
-      ],
-      "stderr_tail": []
-    },
-    {
-      "id": "source-radars",
-      "script": "sources:radars",
-      "started_at": "2026-08-15T07:03:08.723Z",
-      "ended_at": "2026-08-15T07:03:29.524Z",
-      "duration_ms": 20801,
-      "status": "ok",
-      "exit_code": 0,
-      "error": "",
-      "stdout_tail": [
-        "> eventlive@1.0.0 sources:radars",
-        "> node scripts/run-source-radars.mjs",
-        "# EventLive Source Radars",
-        "- Time scope: current-and-upcoming-only",
-        "- Discovery radars enabled: false",
-        "- Skipped by policy: 3",
-        "- OK: 2",
-        "- Failed: 0",
-        "- Report: reports/source-radars-report.md"
-      ],
-      "stderr_tail": []
-    },
-    {
-      "id": "source-yield",
-      "script": "sources:yield",
-      "started_at": "2026-08-15T07:03:29.524Z",
-      "ended_at": "2026-08-15T07:18:29.600Z",
-      "duration_ms": 900076,
-      "status": "timeout",
-      "exit_code": null,
-      "error": "spawnSync npm ETIMEDOUT",
-      "stdout_tail": [
-        "> eventlive@1.0.0 sources:yield",
-        "> node scripts/source-yield-report.mjs"
-      ],
-      "stderr_tail": []
-    }
-  ]
+  "runs": []
 }

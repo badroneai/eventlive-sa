@@ -1,18 +1,18 @@
 {
-  "published_at": "2026-08-15T07:32:32.101Z",
+  "published_at": "2026-08-15T13:08:19.218Z",
   "dry_run": false,
   "include_partner": true,
   "source_candidates": "data/source_candidates.json",
   "events_catalog": "data/events_catalog.json",
-  "candidates_seen": 589,
+  "candidates_seen": 588,
   "totals": {
-    "candidates_seen": 589,
+    "candidates_seen": 588,
     "published": 6,
-    "linked_existing": 545,
+    "linked_existing": 544,
     "blocked": 38,
     "duplicate_review_alerts": 8,
     "category_fallback_alerts": 0,
-    "reconciled": 551
+    "reconciled": 550
   },
   "category_fallback_alerts": [],
   "duplicate_catalog_rows_removed": 0,
@@ -1265,18 +1265,6 @@
       "reason": "already linked to catalog event"
     },
     {
-      "candidate_id": "candidate-ithra-events-toddler-saturday-20260815-739e1f00",
-      "event_id": "event-toddler-saturday",
-      "title": "Toddler Saturday",
-      "reason": "already linked to catalog event"
-    },
-    {
-      "candidate_id": "candidate-ithra-events-petals-and-pals-english-20260815-2b82ff28",
-      "event_id": "event-petals-and-pals-english",
-      "title": "Petals and Pals (English)",
-      "reason": "already linked to catalog event"
-    },
-    {
       "candidate_id": "candidate-ithra-events-spot-of-inspiration-20260815-5bac584c",
       "event_id": "event-spot-of-inspiration",
       "title": "Spot of Inspiration",
@@ -1289,21 +1277,15 @@
       "reason": "already linked to catalog event"
     },
     {
-      "candidate_id": "candidate-ithra-events-emboss-printing-experience-20260815-2671d1ce",
-      "event_id": "event-emboss-printing-experience",
-      "title": "Emboss Printing Experience",
+      "candidate_id": "candidate-ithra-events-creative-character-design-20260815-afddf835",
+      "event_id": "event-creative-character-design",
+      "title": "Creative Character Design",
       "reason": "already linked to catalog event"
     },
     {
       "candidate_id": "candidate-ithra-events-family-challenges-20260815-3726c868",
       "event_id": "event-family-challenges",
       "title": "Family Challenges",
-      "reason": "already linked to catalog event"
-    },
-    {
-      "candidate_id": "candidate-ithra-events-creative-character-design-20260815-afddf835",
-      "event_id": "event-creative-character-design",
-      "title": "Creative Character Design",
       "reason": "already linked to catalog event"
     },
     {
@@ -1322,6 +1304,12 @@
       "candidate_id": "candidate-ithra-events-grand-art-space-20260815-e3acefbb",
       "event_id": "event-grand-art-space",
       "title": "Grand Art Space",
+      "reason": "already linked to catalog event"
+    },
+    {
+      "candidate_id": "candidate-ithra-events-emboss-printing-experience-20260815-2671d1ce",
+      "event_id": "event-emboss-printing-experience",
+      "title": "Emboss Printing Experience",
       "reason": "already linked to catalog event"
     },
     {
@@ -1592,6 +1580,12 @@
       "candidate_id": "candidate-ithra-events-family-game-20260821-fff43c76",
       "event_id": "event-family-game",
       "title": "Family Game",
+      "reason": "already linked to catalog event"
+    },
+    {
+      "candidate_id": "candidate-ithra-events-toddler-saturday-20260822-739e1f00",
+      "event_id": "event-toddler-saturday",
+      "title": "Toddler Saturday",
       "reason": "already linked to catalog event"
     },
     {

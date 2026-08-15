@@ -1,22 +1,22 @@
 {
   "schema": "eventlive.harvest-os-status.v1",
-  "generated_at": "2026-08-15T07:44:30.794Z",
+  "generated_at": "2026-08-15T13:20:23.227Z",
   "status": "NEEDS_WORK",
   "operating_rule": "Probe before new sources; sample before full harvest; Raw collection is not publication; discovery-only never auto-publishes.",
   "totals": {
     "sources": 88,
-    "candidates": 589,
-    "matched_candidates": 558,
+    "candidates": 588,
+    "matched_candidates": 557,
     "auto_publish_sources": 15,
     "candidate_only_sources": 12,
     "partnership_required_sources": 5,
     "blocked_or_closed_sources": 0,
     "manual_review_sources": 56,
-    "collection_attempted": 34,
-    "productive_sources": 20,
-    "collector_errors": 7,
+    "collection_attempted": 19,
+    "productive_sources": 19,
+    "collector_errors": 5,
     "chronic_collector_errors": 5,
-    "transient_collector_errors": 2
+    "transient_collector_errors": 0
   },
   "policies": {
     "partnership_required": 5,
@@ -25,15 +25,15 @@
     "manual_review": 56
   },
   "candidates_by_gate": {
-    "catalog-review": 556,
+    "catalog-review": 555,
     "duplicate-review": 8,
     "source-evidence": 25
   },
   "funnel": {
-    "discovered_this_run": 301,
-    "candidate_queue": 589,
-    "evaluated_for_publish": 589,
-    "linked_existing": 545,
+    "discovered_this_run": 240,
+    "candidate_queue": 588,
+    "evaluated_for_publish": 588,
+    "linked_existing": 544,
     "published_new": 6,
     "blocked": 38,
     "secondary_promoted": 0,
@@ -57,49 +57,35 @@
       "note": "collector-error: fetch failed; fetch failed",
       "error_streak": 25,
       "kind": "chronic",
-      "attempted_this_run": true
+      "attempted_this_run": false
     },
     {
       "id": "mos-events",
       "note": "collector-error: fetch failed",
       "error_streak": 25,
       "kind": "chronic",
-      "attempted_this_run": true
+      "attempted_this_run": false
     },
     {
       "id": "moc-cultural-subportals",
       "note": "collector-error: fetch failed; fetch failed",
       "error_streak": 25,
       "kind": "chronic",
-      "attempted_this_run": true
+      "attempted_this_run": false
     },
     {
       "id": "monshaat-events",
       "note": "collector-error: fetch failed; fetch failed",
       "error_streak": 8,
       "kind": "chronic",
-      "attempted_this_run": true
+      "attempted_this_run": false
     },
     {
       "id": "saudi-pro-league-fixtures",
       "note": "collector-error: fetch failed",
       "error_streak": 5,
       "kind": "chronic",
-      "attempted_this_run": true
-    },
-    {
-      "id": "tuwaiq-academy-bootcamps",
-      "note": "HTTP 403",
-      "error_streak": 2,
-      "kind": "transient",
-      "attempted_this_run": true
-    },
-    {
-      "id": "saudi-space-agency-events",
-      "note": "fetch failed",
-      "error_streak": 2,
-      "kind": "transient",
-      "attempted_this_run": true
+      "attempted_this_run": false
     }
   ],
   "sources": [
