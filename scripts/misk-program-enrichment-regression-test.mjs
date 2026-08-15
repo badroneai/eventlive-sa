@@ -20,7 +20,8 @@ assert.ok(enrichedCatalog.length >= Math.min(5, miskCatalog.length), 'Misk offic
 
 for (const event of enrichedCatalog) {
   assert.ok(event.program_outline.official_description, `${event.id} must include official overview`);
-  assert.ok(event.program_outline.goals.length > 0 || event.program_outline.features.length > 0, `${event.id} must include outcomes or highlights`);
+  assert.ok(event.program_outline.goals.length > 0, `${event.id} must include outcomes or audience goals`);
+  assert.ok(event.program_outline.features.length > 0, `${event.id} must preserve highlights or verified metadata features`);
   assert.ok(event.program_outline.faqs.program_format || event.program_outline.faqs.language || event.program_outline.faqs.who_should_apply, `${event.id} must include program metadata`);
   assert.equal(event.live_schedule_ready, false, `${event.id} enrichment must not mark live_schedule_ready without timed sessions`);
 }

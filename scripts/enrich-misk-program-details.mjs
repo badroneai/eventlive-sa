@@ -223,6 +223,9 @@ function validRange(startsAt, endsAt) {
 }
 
 function applyProgram(event, details, fallback = {}) {
+  const previousOutline = event.program_outline && typeof event.program_outline === 'object'
+    ? event.program_outline
+    : {};
   if (details.title) event.title = details.title;
   if (validRange(details.starts_at, details.ends_at)) {
     event.starts_at = details.starts_at;
@@ -249,7 +252,13 @@ function applyProgram(event, details, fallback = {}) {
     registrationDeadline ? `Application close: ${registrationDeadline}` : ''
   ].filter(Boolean);
   const goals = compactItems(details.outcomes.length ? details.outcomes : details.audiences, 8, 420);
-  const features = compactItems(details.highlights.length ? details.highlights : metadataFeatures, 8, 420);
+  const freshFeatures = compactItems(details.highlights.length ? details.highlights : metadataFeatures, 8, 420);
+  // Misk occasionally returns the program overview while omitting both the
+  // highlights block and metadata grid. A partial refresh must not erase the
+  // last verified feature set and turn a published row structurally invalid.
+  const features = freshFeatures.length
+    ? freshFeatures
+    : compactItems(Array.isArray(previousOutline.features) ? previousOutline.features : [], 8, 420);
   const requirements = compactItems(details.requirements, 8, 420);
   event.program_outline = {
     provider: 'Misk Hub',
