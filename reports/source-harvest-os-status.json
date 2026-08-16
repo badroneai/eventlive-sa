@@ -1,6 +1,6 @@
 {
   "schema": "eventlive.harvest-os-status.v1",
-  "generated_at": "2026-08-16T02:18:04.430Z",
+  "generated_at": "2026-08-16T07:34:16.682Z",
   "status": "NEEDS_WORK",
   "operating_rule": "Probe before new sources; sample before full harvest; Raw collection is not publication; discovery-only never auto-publishes.",
   "totals": {
@@ -13,10 +13,10 @@
     "blocked_or_closed_sources": 0,
     "manual_review_sources": 56,
     "collection_attempted": 20,
-    "productive_sources": 19,
-    "collector_errors": 5,
+    "productive_sources": 18,
+    "collector_errors": 6,
     "chronic_collector_errors": 5,
-    "transient_collector_errors": 0
+    "transient_collector_errors": 1
   },
   "policies": {
     "partnership_required": 5,
@@ -30,14 +30,14 @@
     "source-evidence": 25
   },
   "funnel": {
-    "discovered_this_run": 238,
+    "discovered_this_run": 234,
     "candidate_queue": 581,
     "evaluated_for_publish": 581,
-    "linked_existing": 537,
-    "published_new": 6,
+    "linked_existing": 538,
+    "published_new": 5,
     "blocked": 38,
     "secondary_promoted": 0,
-    "secondary_still_blocked": 34
+    "secondary_still_blocked": 33
   },
   "blocked_reasons": {
     "possible duplicate requires review: exact-title-city-source-conflict": 6,
@@ -86,6 +86,13 @@
       "error_streak": 5,
       "kind": "chronic",
       "attempted_this_run": false
+    },
+    {
+      "id": "asharqia-chamber-events",
+      "note": "fetch failed; page.goto: Timeout 30000ms exceeded. Call log:   - navigating to \"https://www.chamber.org.sa/sites/Arabic/Events/ChamberEvents/Pages/AllChamberEvents.aspx\", waiting until \"domcontentload",
+      "error_streak": 1,
+      "kind": "transient",
+      "attempted_this_run": true
     }
   ],
   "sources": [

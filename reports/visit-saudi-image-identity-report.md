@@ -1,17 +1,14 @@
 # EventLive Visit Saudi Image Identity Report
 
-- generated_at: 2026-08-16T02:05:50.672Z
-- pdf_crop_assignments: 55
+- generated_at: 2026-08-16T07:22:34.551Z
+- pdf_crop_assignments: 52
 - verified: 51
-- struck: 4
+- struck: 1
 - slots_seen_this_cycle: 54
 
 ## Struck (fell back to generated cover)
 
-- كنوز غارقة (visit-saudi-summer-2026-p034-top-right.png) - slot-vacated - no dated card currently occupies page 34 top-right of https://www.visitsaudi.com/content/dam/documents/saudi-calendar-ar.pdf
-- سكة الاطعمة (visit-saudi-summer-2026-p053-top-right.jpg) - slot-vacated - no dated card currently occupies page 53 top-right of https://www.visitsaudi.com/content/dam/documents/saudi-calendar-ar.pdf
 - باتو (visit-saudi-summer-2026-p006-top-left.jpg) - identity-mismatch - page 6 top-left is now "بلاتو"
-- أوركسترا Game of Thrones (visit-saudi-summer-2026-p061-bottom-left.jpg) - slot-vacated - no dated card currently occupies page 61 bottom-left of https://www.visitsaudi.com/content/dam/documents/saudi-calendar-ar.pdf
 
 ## Verified
 

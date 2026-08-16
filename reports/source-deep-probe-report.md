@@ -1,6 +1,6 @@
 # EventLive Source Deep Probe
 
-Generated at: 2026-08-15T07:02:27.041Z
+Generated at: 2026-08-16T07:04:11.771Z
 
 ## Summary
 
@@ -25,13 +25,13 @@ Generated at: 2026-08-15T07:02:27.041Z
 | 42 | aseer-season-asda | 200 | 46 | probe-hidden-api-or-html-table | 0 | 0 | 0 | Aseer Development Authority | Qimam wa Shiyam Strategy |
 | 40 | diriyah-season | 200 | 36 | probe-hidden-api-or-html-table | 0 | 0 | 0 | Diriyah Season – Coming Soon |
 | 45 | saudi-university-events | 200 | 36 | probe-hidden-api-or-html-table | 0 | 0 | 2 | KAUST | A top research university in the Middle East |
-| 62 | baha-amanah-events | 200 | 23 | blocked-or-protected:bot-protection | 0 | 0 | 19 | فعاليات الباحة |
 | 18 | riyadh-season | 200 | -23 | blocked-or-protected:bot-protection | 0 | 0 | 0 | - |
 | 27 | enjoy-saudi-events | 403 | -23 | blocked-or-protected:http-403 | 0 | 0 | 0 | تعذر الوصول إلى الصفحة | Access Unavailable |
 | 34 | visit-saudi-calendar-pdf | - | -23 | blocked-or-protected:timeout | 0 | 0 | 0 | - |
 | 41 | ricec-events | - | -23 | blocked-or-protected:fetch failed getaddrinfo EAI_AGAIN www.ricec.com TypeError: fetch failed | 0 | 0 | 0 | - |
-| 49 | saudi-contractors-authority-events | - | -23 | blocked-or-protected:fetch failed getaddrinfo ENOTFOUND www.sca.gov.sa TypeError: fetch failed | 0 | 0 | 0 | - |
 | 51 | riyadh-city-events | - | -23 | blocked-or-protected:fetch failed unable to verify the first certificate; if the root CA is installed locally, try running Node.js with --use-system-ca TypeError: fetch failed | 0 | 0 | 0 | - |
+| 74 | middle-east-banking-ai-summit | 200 | -23 | blocked-or-protected:bot-protection | 0 | 0 | 0 | Middle East Banking |
+| 75 | middle-east-enterprise-ai-summit | 200 | -23 | blocked-or-protected:bot-protection | 0 | 0 | 0 | Middle East Enterprise |
 | 24 | saudi-digital-academy | - | -35 | blocked-or-protected:fetch failed getaddrinfo ENOTFOUND sda.edu.sa TypeError: fetch failed | 0 | 0 | 0 | - |
 | 35 | qiddiya-events | 403 | -35 | blocked-or-protected:http-403 | 0 | 0 | 0 | Attention Required! | Cloudflare |
 | 43 | jeddah-season | - | -35 | blocked-or-protected:fetch failed getaddrinfo ENOTFOUND jeddahseason.sa TypeError: fetch failed | 0 | 0 | 0 | - |

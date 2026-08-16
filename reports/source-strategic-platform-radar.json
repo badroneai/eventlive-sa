@@ -1,6 +1,6 @@
 {
   "schema": "eventlive.source-strategic-platform-radar.v1",
-  "generated_at": "2026-08-15T07:03:12.165Z",
+  "generated_at": "2026-08-16T07:04:56.985Z",
   "policy": {
     "allowed_use": "official source evidence refresh, API-surface mapping, partnership prioritization, extractor backlog decisions",
     "disallowed_use": "direct catalog publication without official confirmation and duplicate review"
@@ -257,7 +257,7 @@
         {
           "url": "https://www.visitsaudi.com/bin/api/v3/events?locale=ar",
           "status": 200,
-          "bytes": 89976,
+          "bytes": 89967,
           "classification": "reachable",
           "summary": {
             "parse_ok": true,
@@ -265,9 +265,9 @@
             "sample_titles": [
               "معرض اللغة العربية للطفل",
               "معرض اللغة العربية 28",
-              "كنوز غارقة",
               "سمره",
-              "مهرجان صوت أبها SAF"
+              "مهرجان صوت أبها SAF",
+              "شارع الفن - القرية الأوروبية"
             ]
           },
           "sample": "{\"code\":200,\"message\":\"success\",\"response\":{\"data\":[{\"type\":\"فعالية\",\"title\":\"معرض اللغة العربية للطفل\",\"freePaid\":\"free\",\"bannerImages\":[{\"fileReference\":\"/content/dam/wvs/calendar/arabic-language-exhibition-for-kids.jpg\",\"mobileImageReference\":\"/c…"
@@ -275,7 +275,7 @@
         {
           "url": "https://www.visitsaudi.com/bin/api/v3/events?locale=en",
           "status": 200,
-          "bytes": 92735,
+          "bytes": 92944,
           "classification": "reachable",
           "summary": {
             "parse_ok": true,
@@ -283,9 +283,9 @@
             "sample_titles": [
               "Arabic Language Exhibition for kids",
               "Arabic Language Exhibition 28",
-              "Sunken Treasures",
               "Sammrah",
-              "Sound of Abha Fest (SAF)"
+              "Sound of Abha Fest (SAF)",
+              "Europe Village- Art Street"
             ]
           },
           "sample": "{\"code\":200,\"message\":\"success\",\"response\":{\"data\":[{\"type\":\"EVENT\",\"title\":\"Arabic Language Exhibition for kids\",\"freePaid\":\"free\",\"bannerImages\":[{\"fileReference\":\"/content/dam/wvs/calendar/arabic-language-exhibition-for-kids.jpg\",\"mobileImageRefe…"
@@ -337,7 +337,7 @@
         "https://wbk-assets.webook.com/0.7.22/assets/react-helmet-Ba2OUe2H.js",
         "https://wbk-assets.webook.com/0.7.22/assets/@wbk/cruises-CzNyhBbV.js",
         "https://wbk-assets.webook.com/0.7.22/assets/@wbk/auction-DLHDiin3.js",
-        "https://webook.com/cdn-cgi/content?id=9.e4_4TMC6DN5fZlAtbq9IOEJNDaQmQhEn9LrjSjeMY-1786777404.772449-1.2.1.1-18_5G7w6HN23Olqr_dDiDqDhYKy6l_6v4gy07MJSQxrzD.OlmIfADyIP.tM4rYkV",
+        "https://webook.com/cdn-cgi/content?id=yL09vjtaPX__2QW63i6A1CVSmqW5rkRj4DntEtS1Nds-1786863907.895415-1.2.1.1-E8YGRSMuuVtp_YOvwJL4UX1uNrKjGgwpr97e2TTuoEdWsXhheGmPseXz9HEkw7Ft",
         "https://static.cloudflareinsights.com/beacon.min.js/v4513226cdae34746b4dedf0b4dfa099e1781791509496"
       ],
       "page_hint_words": [
