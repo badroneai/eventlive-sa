@@ -1,6 +1,6 @@
 {
   "schema": "eventlive.harvest-os-status.v1",
-  "generated_at": "2026-08-16T13:28:12.783Z",
+  "generated_at": "2026-08-16T19:10:15.167Z",
   "status": "NEEDS_WORK",
   "operating_rule": "Probe before new sources; sample before full harvest; Raw collection is not publication; discovery-only never auto-publishes.",
   "totals": {
@@ -12,11 +12,11 @@
     "partnership_required_sources": 5,
     "blocked_or_closed_sources": 0,
     "manual_review_sources": 56,
-    "collection_attempted": 31,
-    "productive_sources": 19,
-    "collector_errors": 7,
+    "collection_attempted": 19,
+    "productive_sources": 18,
+    "collector_errors": 8,
     "chronic_collector_errors": 7,
-    "transient_collector_errors": 0
+    "transient_collector_errors": 1
   },
   "policies": {
     "partnership_required": 5,
@@ -30,14 +30,14 @@
     "source-evidence": 25
   },
   "funnel": {
-    "discovered_this_run": 257,
+    "discovered_this_run": 244,
     "candidate_queue": 590,
     "evaluated_for_publish": 590,
-    "linked_existing": 538,
-    "published_new": 14,
+    "linked_existing": 545,
+    "published_new": 7,
     "blocked": 38,
     "secondary_promoted": 0,
-    "secondary_still_blocked": 42
+    "secondary_still_blocked": 35
   },
   "blocked_reasons": {
     "possible duplicate requires review: exact-title-city-source-conflict": 6,
@@ -57,48 +57,55 @@
       "note": "collector-error: fetch failed; fetch failed",
       "error_streak": 26,
       "kind": "chronic",
-      "attempted_this_run": true
+      "attempted_this_run": false
     },
     {
       "id": "mos-events",
       "note": "collector-error: fetch failed",
       "error_streak": 26,
       "kind": "chronic",
-      "attempted_this_run": true
+      "attempted_this_run": false
     },
     {
       "id": "moc-cultural-subportals",
       "note": "collector-error: fetch failed; fetch failed",
       "error_streak": 26,
       "kind": "chronic",
-      "attempted_this_run": true
+      "attempted_this_run": false
     },
     {
       "id": "monshaat-events",
       "note": "collector-error: fetch failed; fetch failed",
       "error_streak": 9,
       "kind": "chronic",
-      "attempted_this_run": true
+      "attempted_this_run": false
     },
     {
       "id": "saudi-pro-league-fixtures",
       "note": "collector-error: fetch failed",
       "error_streak": 6,
       "kind": "chronic",
-      "attempted_this_run": true
+      "attempted_this_run": false
     },
     {
       "id": "tuwaiq-academy-bootcamps",
       "note": "collector-error: HTTP 403",
       "error_streak": 3,
       "kind": "chronic",
-      "attempted_this_run": true
+      "attempted_this_run": false
     },
     {
       "id": "saudi-space-agency-events",
       "note": "fetch failed",
       "error_streak": 3,
       "kind": "chronic",
+      "attempted_this_run": false
+    },
+    {
+      "id": "asharqia-chamber-events",
+      "note": "fetch failed; page.goto: Timeout 30000ms exceeded. Call log:   - navigating to \"https://www.chamber.org.sa/sites/Arabic/Events/ChamberEvents/Pages/AllChamberEvents.aspx\", waiting until \"domcontentload",
+      "error_streak": 2,
+      "kind": "transient",
       "attempted_this_run": true
     }
   ],

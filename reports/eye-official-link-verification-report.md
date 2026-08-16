@@ -1,9 +1,9 @@
 # EventLive Eye of Riyadh Official Link Verification
 
-- Generated at: 2026-08-16T13:15:16.496Z
+- Generated at: 2026-08-16T18:57:01.092Z
 - Targets: 12
-- Confirmed: 4
-- Skipped: 2
+- Confirmed: 5
+- Skipped: 1
 - Failed: 6
 
 | Candidate | Status | Official URL | Reason |
@@ -18,5 +18,5 @@
 | Global Proptech Summit 2026 | failed | - | HTTP 403 |
 | Real Estate Supply Chain Forum | failed | - | HTTP 403 |
 | CIPS MENA Procurement and Supply Chain Futures conference and awards | confirmed | https://www.cipsmenaconferenceandawards.com/ | confirmed |
-| Real Estate Future Forum | skipped | https://www.therff.com/ | title-not-confirmed |
+| Real Estate Future Forum | confirmed | https://www.therff.com/ | confirmed |
 | Real Estate Excellence Award 2026 (REA 2026) | skipped | https://www.realestateexcellenceaward.com/apply | year-not-confirmed |

@@ -1,22 +1,28 @@
 {
-  "generated_at": "2026-08-16T13:19:54.263Z",
+  "generated_at": "2026-08-16T19:01:57.103Z",
   "events_file": "dist/events.json",
   "manifest": "data/event_image_cache_manifest.json",
   "image_dir": "dist/assets/event-images",
   "totals": {
     "targets": 500,
-    "cached_total": 803,
-    "fetched": 1,
-    "reused": 496,
+    "cached_total": 805,
+    "fetched": 2,
+    "reused": 495,
     "failed": 3,
-    "skipped_recent_failures": 0,
+    "skipped_recent_failures": 3,
     "remembered_failures": 7
   },
   "fetched": [
     {
-      "source_url": "https://hayyjameel.org/wp-content/uploads/2026/08/DSC08124-1100x500.jpg",
-      "file": "dist/assets/event-images/open-call-stellar-hayy-jameel-youth-ambassador-program-402b563bd4.jpg",
-      "bytes": 53887,
+      "source_url": "https://hayyjameel.org/wp-content/uploads/2026/08/Craftsweekend_Open-Call_Whatsonbanner3-1100x500.jpg",
+      "file": "dist/assets/event-images/hayy-makers-open-call-makers-matters-2cbe24e44d.jpg",
+      "bytes": 63598,
+      "events": 1
+    },
+    {
+      "source_url": "https://hayyjameel.org/wp-content/uploads/2026/03/com-1100x500.jpg",
+      "file": "dist/assets/event-images/community-garden-from-soil-to-seed-basics-to-growing-your-own-plants-w-2e7fd624f5.jpg",
+      "bytes": 84958,
       "events": 1
     }
   ],
@@ -587,6 +593,11 @@
       "events": 1
     },
     {
+      "source_url": "https://hayyjameel.org/wp-content/uploads/2026/08/DSC08124-1100x500.jpg",
+      "file": "dist/assets/event-images/open-call-stellar-hayy-jameel-youth-ambassador-program-402b563bd4.jpg",
+      "events": 1
+    },
+    {
       "source_url": "https://www.ithra.com/application/files/cache/thumbnails/01b5d57ab150c4fcccb439292ba92ac3.jpg",
       "file": "dist/assets/event-images/toddler-saturday-f5e0116f13.jpg",
       "events": 2
@@ -699,11 +710,6 @@
     {
       "source_url": "https://hayyjameel.org/wp-content/uploads/2025/08/Banner_GodusBros-2-1100x500.png",
       "file": "dist/assets/event-images/سينما-حي-استعادة-أفلام-godus-bros-من-يوتيوب-إلى-شباك-التذاكر-fa978492cc.png",
-      "events": 1
-    },
-    {
-      "source_url": "https://hayyjameel.org/wp-content/uploads/2026/07/DSC02026-scaled-aspect-ratio-2296-1300-1-1100x500.jpg",
-      "file": "dist/assets/event-images/hayy-makers-woodworking-course-level-1-with-ahmad-sofi-cd2f60e754.jpg",
       "events": 1
     },
     {
@@ -1922,6 +1928,11 @@
       "events": 1
     },
     {
+      "source_url": "https://hayyjameel.org/wp-content/uploads/2026/07/DSC02026-scaled-aspect-ratio-2296-1300-1-1100x500.jpg",
+      "file": "dist/assets/event-images/hayy-makers-woodworking-course-level-1-with-ahmad-sofi-cd2f60e754.jpg",
+      "events": 1
+    },
+    {
       "source_url": "https://www.ithra.com/application/files/cache/thumbnails/5e64a990ff5620379ed549c9c43a0dec.jpg",
       "file": "dist/assets/event-images/بتلات-وأصدقاء-بالإنجليزية-b5b9f5d67a.jpg",
       "events": 1
@@ -2490,47 +2501,64 @@
       "source_url": "https://scth.scene7.com/is/image/scth/curious-summer?wid=1400&hei=788&fit=constrain&fmt=webp",
       "file": "dist/assets/event-images/curious-summers-a466fcddad.webp",
       "events": 1
-    },
-    {
-      "source_url": "https://api.riyadh.sa/sites/default/files/styles/medium/public/2026-07/NTN%202.png?itok=NcFLmn-3",
-      "file": "dist/assets/event-images/registration-for-international-research-competition-on-non-terrestrial-edd16ffe75.png",
-      "events": 1
-    },
-    {
-      "source_url": "https://www.ithra.com/application/files/cache/thumbnails/57ced1047619d76eed02cbbfb34191f7.jpg",
-      "file": "dist/assets/event-images/philosophy-for-everyone-a-journey-of-thought-from-young-to-old-1dc740ef9e.jpg",
-      "events": 3
     }
   ],
   "rejected_removed": [],
   "missing_removed": [],
-  "skipped_recent_failures": [],
-  "failed": [
+  "skipped_recent_failures": [
     {
       "source_url": "https://cdn.rfecc.sa/wp-content/uploads/mec/qr_898ea2449274454e42895b52b18c6f68.png",
       "events": 1,
       "reason": "HTTP 403",
       "failure_kind": "access-denied",
-      "retry_after": "2026-08-17T13:19:54.263Z"
-    },
-    {
-      "source_url": "https://s7g10.scene7.com/is/image/rcu/fei2:landscape-16x9?$Responsive$&fit=stretch&fmt=webp&wid=1920",
-      "events": 1,
-      "reason": "HTTP 403",
-      "failure_kind": "access-denied",
-      "retry_after": "2026-08-17T13:19:54.263Z"
+      "retry_after": "2026-08-17T13:19:54.263Z",
+      "skipped": true
     },
     {
       "source_url": "https://api.riyadh.sa/sites/default/files/styles/medium/public/2026-07/er%20%2859%29.jpg?itok=a33APdGm",
       "events": 1,
       "reason": "not-image text/html; charset=utf-8",
       "failure_kind": "source-returned-html",
-      "retry_after": "2026-08-17T13:19:54.263Z"
+      "retry_after": "2026-08-17T13:19:54.263Z",
+      "skipped": true
+    },
+    {
+      "source_url": "https://s7g10.scene7.com/is/image/rcu/fei2:landscape-16x9?$Responsive$&fit=stretch&fmt=webp&wid=1920",
+      "events": 1,
+      "reason": "HTTP 403",
+      "failure_kind": "access-denied",
+      "retry_after": "2026-08-17T13:19:54.263Z",
+      "skipped": true
+    }
+  ],
+  "failed": [
+    {
+      "source_url": "https://cdn.rfecc.sa/wp-content/uploads/mec/qr_898ea2449274454e42895b52b18c6f68.png",
+      "events": 1,
+      "reason": "HTTP 403",
+      "failure_kind": "access-denied",
+      "retry_after": "2026-08-17T13:19:54.263Z",
+      "skipped": true
+    },
+    {
+      "source_url": "https://api.riyadh.sa/sites/default/files/styles/medium/public/2026-07/er%20%2859%29.jpg?itok=a33APdGm",
+      "events": 1,
+      "reason": "not-image text/html; charset=utf-8",
+      "failure_kind": "source-returned-html",
+      "retry_after": "2026-08-17T13:19:54.263Z",
+      "skipped": true
+    },
+    {
+      "source_url": "https://s7g10.scene7.com/is/image/rcu/fei2:landscape-16x9?$Responsive$&fit=stretch&fmt=webp&wid=1920",
+      "events": 1,
+      "reason": "HTTP 403",
+      "failure_kind": "access-denied",
+      "retry_after": "2026-08-17T13:19:54.263Z",
+      "skipped": true
     }
   ],
   "requires_rebuild": true,
   "rebuild_reasons": [
-    "fetched:1",
-    "new-failures:3"
+    "fetched:2"
   ]
 }

@@ -1,11 +1,11 @@
 # EventLive Source Auto Publish Report
 
-- published_at: 2026-08-16T13:15:28.745Z
+- published_at: 2026-08-16T18:57:08.640Z
 - dry_run: false
 - include_partner: true
 - candidates_seen: 590
-- published_new: 14
-- linked_existing: 538
+- published_new: 7
+- linked_existing: 545
 - blocked_remaining: 38
 - duplicate_review_alerts: 8
 
@@ -29,15 +29,8 @@
 | candidate-visit-saudi-calendar-pdf-مزرعة-التوت-الأسود-20260701-4a38d19e | published | event-مزرعة-التوت-الأسود | مزرعة التوت الأسود |
 | candidate-visit-saudi-calendar-pdf-الأخطبوطية-20260704-4a38d19e | published | event-الأخطبوطية | الأخطبوطية |
 | candidate-visit-saudi-calendar-pdf-عروض-الفنون-الأدائية-التقليدية-20260706-4a38d19e | published | event-عروض-الفنون-الأدائية-التقليدية | عروض الفنون الأدائية التقليدية |
-| candidate-visit-saudi-seasons-eishha-nights-20260709-60cdd01b | published | event-eishha-nights | Eishha Nights |
-| candidate-visit-saudi-seasons-merbaa-20260717-6b1829a1 | published | event-merbaa | Merba'a |
-| candidate-visit-saudi-seasons-qb-festival-20260727-b6a61496 | published | event-qb-festival | QB Festival |
-| candidate-hayy-jameel-events-open-call-stellar-hayy-jameel-youth-ambassador-program-20260801-6b642c74 | published | event-open-call-stellar-hayy-jameel-youth-ambassador-program | Open Call | Stellar × Hayy Jameel Youth Ambassador Program |
-| candidate-future-skills-catalog-aws-solutions-architect-associate-practical-20260823-0a5ca2c8 | published | event-aws-solutions-architect-associate-practical | ⁠AWS Solutions Architect – Associate Practical |
-| candidate-future-skills-catalog-comptia-network-20260823-ef21ac36 | published | event-comptia-network | ⁠CompTIA Network+ |
-| candidate-future-skills-catalog-power-bi-for-beginners-20260823-d96a7f80 | published | event-power-bi-for-beginners | ⁠Power BI for Beginners |
-| candidate-umm-al-qura-events-إنشاء-وإدارة-المقرر-في-blackboard-ultra-الفترة-الصباحية-20260824-5196a6ff | published | event-إنشاء-وإدارة-المقرر-في-blackboard-ultra-الفترة-الصباحية | إنشاء وإدارة المقرر في Blackboard Ultra – الفترة الصباحية |
-| candidate-visit-saudi-calendar-3a-ka3ba-20260918-fff5d3c3 | published | event-3a-ka3ba | 3a Ka3ba |
+| candidate-hayy-jameel-events-hayy-makers-open-call-makers-matters-20260816-4078f4a4 | published | event-hayy-makers-open-call-makers-matters | Hayy Makers | Open Call: Makers Matters |
+| candidate-hayy-jameel-events-community-garden-from-soil-to-seed-basics-to-growing-your-own-plants-wit-20260828-cf3d5071 | published | event-community-garden-from-soil-to-seed-basics-to-growing-your-own-plants-wit | Community Garden | From Soil to Seed: Basics to growing your own plants with Sara Alsayed |
 | candidate-moc-cultural-subportals-skill-development-initiative-20210714-10f7dc2c | linked-existing | event-skill-development-initiative | already linked to catalog event |
 | candidate-moc-cultural-subportals-sitar-20220921-cda2e068 | linked-existing | event-sitar | already linked to catalog event |
 | candidate-moc-cultural-subportals-the-architecture-and-design-caf-20240427-046e2ec1 | linked-existing | event-the-architecture-and-design-caf | already linked to catalog event |
@@ -149,6 +142,7 @@
 | candidate-riyadh-city-events-esports-world-cup-20260706-b4b860e9 | linked-existing | event-esports-world-cup | already linked to catalog event |
 | candidate-jouf-university-programs-البرنامج-الصيفي-بجامعة-الجوف-2026-20260708-fa67cacd | linked-existing | event-البرنامج-الصيفي-بجامعة-الجوف-2026 | already linked to catalog event |
 | candidate-discover-aseer-events-abo-noghta-historic-castles-historic-tabab-20260709-158faa74 | linked-existing | event-abo-noghta-historic-castles-historic-tabab | already linked to catalog event |
+| candidate-visit-saudi-seasons-eishha-nights-20260709-60cdd01b | linked-existing | event-eishha-nights | already linked to catalog event |
 | candidate-discover-aseer-events-kishtah-20260710-26597591 | linked-existing | event-kishtah | already linked to catalog event |
 | candidate-discover-aseer-events-bioni-al-sharaf-20260711-62339a98 | linked-existing | event-bioni-al-sharaf | already linked to catalog event |
 | candidate-visit-saudi-calendar-pdf-صيف-2026-20260712-4a38d19e | linked-existing | event-صيف-2026 | already linked to catalog event |
@@ -158,6 +152,7 @@
 | candidate-riyadh-city-events-saif-summer-program-20260712-c90d634d | linked-existing | event-saif-summer-program | already linked to catalog event |
 | candidate-tuwaiq-academy-bootcamps-معسكر-هندسة-الدرونز-التطبيقي-20260712-96b1c352 | linked-existing | event-معسكر-هندسة-الدرونز-التطبيقي | already linked to catalog event |
 | candidate-discover-aseer-events-shaaf-event-20260717-aaeb0284 | linked-existing | event-shaaf-event | already linked to catalog event |
+| candidate-visit-saudi-seasons-merbaa-20260717-6b1829a1 | linked-existing | event-merbaa | already linked to catalog event |
 | candidate-tuwaiq-academy-bootcamps-معسكر-تصميم-وتصنيع-الحلول-الهندسية-20260719-944bbe1b | linked-existing | event-معسكر-تصميم-وتصنيع-الحلول-الهندسية | already linked to catalog event |
 | candidate-tuwaiq-academy-bootcamps-معسكر-تطوير-تطبيقات-الويب-باستخدام-لغة-python-20260719-6297fa45 | linked-existing | event-معسكر-تطوير-تطبيقات-الويب-باستخدام-لغة-python | already linked to catalog event |
 | candidate-visit-saudi-calendar-pdf-صيف-وسمرة-20260721-4a38d19e | linked-existing | event-صيف-وسمرة | already linked to catalog event |
@@ -165,9 +160,10 @@
 | candidate-discover-aseer-events-al-yanfa-village-20260724-5be0c4c3 | linked-existing | event-al-yanfa-village | already linked to catalog event |
 | candidate-tuwaiq-academy-bootcamps-معسكر-تطوير-البرمجيات-السحابية-الاحترافية-لسحابة-قوقل-20260726-aa1669c2 | linked-existing | event-معسكر-تطوير-البرمجيات-السحابية-الاحترافية-لسحابة-قوقل | already linked to catalog event |
 | candidate-umm-al-qura-events-فرص-تعاقد-على-مشروع-بحثي-ممول-20260727-602b04ea | linked-existing | event-وظائف-بحثية-تجربة | already linked to catalog event |
+| candidate-visit-saudi-seasons-qb-festival-20260727-b6a61496 | linked-existing | event-qb-festival | already linked to catalog event |
 | candidate-visit-saudi-seasons-forest-wonder-20260729-d676d344 | linked-existing | event-forest-wonder | already linked to catalog event |
-| candidate-discover-aseer-events-summer-legacy-20260801-aaba4732 | linked-existing | event-summer-legacy | already linked to catalog event |
 | candidate-monshaat-events-لقاءات-شهر-أغسطس-2026م-20260801-7c7747a6 | linked-existing | event-لقاءات-شهر-أغسطس-2026م | already linked to catalog event |
+| candidate-hayy-jameel-events-open-call-stellar-hayy-jameel-youth-ambassador-program-20260801-6b642c74 | linked-existing | event-open-call-stellar-hayy-jameel-youth-ambassador-program | already linked to catalog event |
 | candidate-umm-al-qura-events-نموذج-التسجيل-والسداد-للدبلوم-المتوسط-في-البصريات-لخارج-مكة-20260801-70d68f2f | linked-existing | event-نموذج-التسجيل-والسداد-للدبلوم-المتوسط-في-البصريات-لخارج-مكة | already linked to catalog event |
 | candidate-visit-saudi-seasons-buraydah-international-dates-carnival-20260801-24906534 | linked-existing | event-buraydah-dates-carnival | already linked to catalog event |
 | candidate-umm-al-qura-events-الترشح-للدبلوم-المتوسط-تقنية-الطاقة-المتجددة-حضوري-بالتعاون-مع-معهد-الدر-20260801-919bab3f | linked-existing | event-الترشح-للدبلوم-المتوسط-تقنية-الطاقة-المتجددة-حضوري-بالتعاون-مع-معهد-الدر | already linked to catalog event |
@@ -206,7 +202,6 @@
 | candidate-hayy-jameel-events-hayy-explorers-in-august-as-told-by-the-land-routes-of-exchange-20260813-9a00888f | linked-existing | event-hayy-explorers-in-august-as-told-by-the-land-routes-of-exchange | already linked to catalog event |
 | candidate-umm-al-qura-events-تفعيل-بيئة-تعلم-إلكترونية-تفاعلية-بنمط-غير-متزامن-20260813-68a97d75 | linked-existing | event-تفعيل-بيئة-تعلم-إلكترونية-تفاعلية-بنمط-غير-متزامن | already linked to catalog event |
 | candidate-hayy-jameel-events-hayy-cinema-a-godus-bros-retrospective-from-youtube-to-the-box-office-20260814-c4521792 | linked-existing | event-hayy-cinema-a-godus-bros-retrospective-from-youtube-to-the-box-office | already linked to catalog event |
-| candidate-hayy-jameel-events-hayy-makers-woodworking-course-level-1-with-ahmad-sofi-20260815-2ba216a5 | linked-existing | event-hayy-makers-woodworking-course-level-1-with-ahmad-sofi | already linked to catalog event |
 | candidate-future-skills-catalog-virtualization-cloud-infrastructure-basics-الافتراضية-والبنية-التحتية-ال-20260816-6070e1ef | linked-existing | event-virtualization-cloud-infrastructure-basics-الافتراضية-والبنية-التحتية-ال | already linked to catalog event |
 | candidate-future-skills-catalog-sql-fundamentals-20260816-971d8196 | linked-existing | event-sql-fundamentals | already linked to catalog event |
 | candidate-future-skills-catalog-comptia-it-fundamentals-20260816-ffccc14e | linked-existing | event-comptia-it-fundamentals | already linked to catalog event |
@@ -271,6 +266,9 @@
 | candidate-hayy-jameel-events-hayy-makers-woodworking-course-level-2-with-ahmad-sofi-20260822-96b7ac24 | linked-existing | event-hayy-makers | already linked to catalog event |
 | candidate-misk-hub-events-development-media-from-message-to-impact-20260822-add557ec | linked-existing | event-development-media-from-message-to-impact | already linked to catalog event |
 | candidate-umm-al-qura-events-الترشح-للدبلوم-المشارك-في-إدارة-المشاريع-بالرياض-20260823-babac01b | linked-existing | event-دبلوم-إدارة-المشاريع | already linked to catalog event |
+| candidate-future-skills-catalog-aws-solutions-architect-associate-practical-20260823-0a5ca2c8 | linked-existing | event-aws-solutions-architect-associate-practical | already linked to catalog event |
+| candidate-future-skills-catalog-comptia-network-20260823-ef21ac36 | linked-existing | event-comptia-network | already linked to catalog event |
+| candidate-future-skills-catalog-power-bi-for-beginners-20260823-d96a7f80 | linked-existing | event-power-bi-for-beginners | already linked to catalog event |
 | candidate-tuwaiq-academy-bootcamps-معسكر-تصميم-تجربة-المستخدم-ux-ui-20260823-c81fc88f | linked-existing | event-معسكر-تصميم-تجربة-المستخدم-ux-ui | already linked to catalog event |
 | candidate-umm-al-qura-events-الترشح-للدبلوم-المتوسط-في-التحول-الرقمي-حضوري-بالتعاون-مع-معهد-الدراسات--20260823-4b67a4d5 | linked-existing | event-الترشح-للدبلوم-المتوسط-في-التحول-الرقمي-حضوري-بالتعاون-مع-معهد-الدراسات- | already linked to catalog event |
 | candidate-umm-al-qura-events-الترشح-للدبلوم-المتوسط-في-الإدارة-المكتبية-حضوري-بالتعاون-مع-معهد-الدراس-20260823-b047d321 | linked-existing | event-الترشح-للدبلوم-المتوسط-في-الإدارة-المكتبية-حضوري-بالتعاون-مع-معهد-الدراس | already linked to catalog event |
@@ -281,6 +279,7 @@
 | candidate-dhahran-expo-calendar-offshore-technology-innovation-technical-conference-expo-offshore-arabia-20260824-18d15b29 | linked-existing | event-offshore-technology-innovation-technical-conference-expo-offshore-arabia | already linked to catalog event |
 | candidate-hayy-jameel-events-jameel-library-open-call-the-task-of-the-translator-with-sarasija-subram-20260824-b5cef88a | linked-existing | event-jameel-library-open-call-the-task-of-the-translator-with-sarasija-subram | already linked to catalog event |
 | candidate-hayy-jameel-events-jameel-library-the-task-of-the-translator-research-lab-20260824-b6d73c1e | linked-existing | event-jameel-library-the-task-of-the-translator-research-lab | already linked to catalog event |
+| candidate-umm-al-qura-events-إنشاء-وإدارة-المقرر-في-blackboard-ultra-الفترة-الصباحية-20260824-5196a6ff | linked-existing | event-إنشاء-وإدارة-المقرر-في-blackboard-ultra-الفترة-الصباحية | already linked to catalog event |
 | candidate-eye-of-riyadh-events-smart-data-ai-summit-20260826-f9946ea8 | linked-existing | event-smart-data-ai-summit | already linked to catalog event |
 | candidate-ithra-events-arabic-children-book-club-10-12-20260826-39c903cc | linked-existing | event-arabic-children-book-club-10-12 | already linked to catalog event |
 | candidate-ithra-events-manal-mohei-eldin-and-oriental-strokes-20260826-fafd7f05 | linked-existing | event-manal-mohei-eldin-and-oriental-strokes | already linked to catalog event |
@@ -358,6 +357,7 @@
 | candidate-riyadh-city-events-kingdom-business-luxury-travel-congress-20260915-05a8e758 | linked-existing | event-kingdom-business-luxury-travel-congress | already linked to catalog event |
 | candidate-riyadh-city-events-smart-cities-saudi-expo-20260915-58456994 | linked-existing | event-smart-cities-saudi-expo | already linked to catalog event |
 | candidate-ithra-events-the-art-of-looking-at-art-20260915-70b4c472 | linked-existing | event-the-art-of-looking-at-art | already linked to catalog event |
+| candidate-visit-saudi-calendar-3a-ka3ba-20260918-fff5d3c3 | linked-existing | event-3a-ka3ba | already linked to catalog event |
 | candidate-dhahran-expo-calendar-gulf-steel-storage-tank-refinery-expo-20260920-18d15b29 | linked-existing | event-gulf-steel-storage-tank-refinery-expo | already linked to catalog event |
 | candidate-riyadh-city-events-facility-management-conference-exhibition-20260920-ed083b67 | linked-existing | event-facility-management-conference-exhibition | already linked to catalog event |
 | candidate-hayy-jameel-events-hayy-cinema-vhs-tape-replaced-2023-20260920-94c0458c | linked-existing | event-hayy-cinema-vhs-tape-replaced-2023 | already linked to catalog event |

@@ -1,5 +1,5 @@
 {
-  "published_at": "2026-08-16T13:15:28.745Z",
+  "published_at": "2026-08-16T18:57:08.640Z",
   "dry_run": false,
   "include_partner": true,
   "source_candidates": "data/source_candidates.json",
@@ -7,8 +7,8 @@
   "candidates_seen": 590,
   "totals": {
     "candidates_seen": 590,
-    "published": 14,
-    "linked_existing": 538,
+    "published": 7,
+    "linked_existing": 545,
     "blocked": 38,
     "duplicate_review_alerts": 8,
     "category_fallback_alerts": 0,
@@ -190,49 +190,14 @@
       "title": "عروض الفنون الأدائية التقليدية"
     },
     {
-      "candidate_id": "candidate-visit-saudi-seasons-eishha-nights-20260709-60cdd01b",
-      "event_id": "event-eishha-nights",
-      "title": "Eishha Nights"
+      "candidate_id": "candidate-hayy-jameel-events-hayy-makers-open-call-makers-matters-20260816-4078f4a4",
+      "event_id": "event-hayy-makers-open-call-makers-matters",
+      "title": "Hayy Makers | Open Call: Makers Matters"
     },
     {
-      "candidate_id": "candidate-visit-saudi-seasons-merbaa-20260717-6b1829a1",
-      "event_id": "event-merbaa",
-      "title": "Merba'a"
-    },
-    {
-      "candidate_id": "candidate-visit-saudi-seasons-qb-festival-20260727-b6a61496",
-      "event_id": "event-qb-festival",
-      "title": "QB Festival"
-    },
-    {
-      "candidate_id": "candidate-hayy-jameel-events-open-call-stellar-hayy-jameel-youth-ambassador-program-20260801-6b642c74",
-      "event_id": "event-open-call-stellar-hayy-jameel-youth-ambassador-program",
-      "title": "Open Call | Stellar × Hayy Jameel Youth Ambassador Program"
-    },
-    {
-      "candidate_id": "candidate-future-skills-catalog-aws-solutions-architect-associate-practical-20260823-0a5ca2c8",
-      "event_id": "event-aws-solutions-architect-associate-practical",
-      "title": "⁠AWS Solutions Architect – Associate Practical"
-    },
-    {
-      "candidate_id": "candidate-future-skills-catalog-comptia-network-20260823-ef21ac36",
-      "event_id": "event-comptia-network",
-      "title": "⁠CompTIA Network+"
-    },
-    {
-      "candidate_id": "candidate-future-skills-catalog-power-bi-for-beginners-20260823-d96a7f80",
-      "event_id": "event-power-bi-for-beginners",
-      "title": "⁠Power BI for Beginners"
-    },
-    {
-      "candidate_id": "candidate-umm-al-qura-events-إنشاء-وإدارة-المقرر-في-blackboard-ultra-الفترة-الصباحية-20260824-5196a6ff",
-      "event_id": "event-إنشاء-وإدارة-المقرر-في-blackboard-ultra-الفترة-الصباحية",
-      "title": "إنشاء وإدارة المقرر في Blackboard Ultra – الفترة الصباحية"
-    },
-    {
-      "candidate_id": "candidate-visit-saudi-calendar-3a-ka3ba-20260918-fff5d3c3",
-      "event_id": "event-3a-ka3ba",
-      "title": "3a Ka3ba"
+      "candidate_id": "candidate-hayy-jameel-events-community-garden-from-soil-to-seed-basics-to-growing-your-own-plants-wit-20260828-cf3d5071",
+      "event_id": "event-community-garden-from-soil-to-seed-basics-to-growing-your-own-plants-wit",
+      "title": "Community Garden | From Soil to Seed: Basics to growing your own plants with Sara Alsayed"
     }
   ],
   "linked_existing": [
@@ -903,6 +868,12 @@
       "reason": "already linked to catalog event"
     },
     {
+      "candidate_id": "candidate-visit-saudi-seasons-eishha-nights-20260709-60cdd01b",
+      "event_id": "event-eishha-nights",
+      "title": "Eishha Nights",
+      "reason": "already linked to catalog event"
+    },
+    {
       "candidate_id": "candidate-discover-aseer-events-kishtah-20260710-26597591",
       "event_id": "event-kishtah",
       "title": "Kishtah",
@@ -957,6 +928,12 @@
       "reason": "already linked to catalog event"
     },
     {
+      "candidate_id": "candidate-visit-saudi-seasons-merbaa-20260717-6b1829a1",
+      "event_id": "event-merbaa",
+      "title": "Merba'a",
+      "reason": "already linked to catalog event"
+    },
+    {
       "candidate_id": "candidate-tuwaiq-academy-bootcamps-معسكر-تصميم-وتصنيع-الحلول-الهندسية-20260719-944bbe1b",
       "event_id": "event-معسكر-تصميم-وتصنيع-الحلول-الهندسية",
       "title": "معسكر تصميم وتصنيع الحلول الهندسية",
@@ -999,21 +976,27 @@
       "reason": "already linked to catalog event"
     },
     {
+      "candidate_id": "candidate-visit-saudi-seasons-qb-festival-20260727-b6a61496",
+      "event_id": "event-qb-festival",
+      "title": "QB Festival",
+      "reason": "already linked to catalog event"
+    },
+    {
       "candidate_id": "candidate-visit-saudi-seasons-forest-wonder-20260729-d676d344",
       "event_id": "event-forest-wonder",
       "title": "Forest Wonder",
       "reason": "already linked to catalog event"
     },
     {
-      "candidate_id": "candidate-discover-aseer-events-summer-legacy-20260801-aaba4732",
-      "event_id": "event-summer-legacy",
-      "title": "Summer Legacy",
-      "reason": "already linked to catalog event"
-    },
-    {
       "candidate_id": "candidate-monshaat-events-لقاءات-شهر-أغسطس-2026م-20260801-7c7747a6",
       "event_id": "event-لقاءات-شهر-أغسطس-2026م",
       "title": "لقاءات شهر أغسطس 2026م",
+      "reason": "already linked to catalog event"
+    },
+    {
+      "candidate_id": "candidate-hayy-jameel-events-open-call-stellar-hayy-jameel-youth-ambassador-program-20260801-6b642c74",
+      "event_id": "event-open-call-stellar-hayy-jameel-youth-ambassador-program",
+      "title": "Open Call | Stellar × Hayy Jameel Youth Ambassador Program",
       "reason": "already linked to catalog event"
     },
     {
@@ -1242,12 +1225,6 @@
       "candidate_id": "candidate-hayy-jameel-events-hayy-cinema-a-godus-bros-retrospective-from-youtube-to-the-box-office-20260814-c4521792",
       "event_id": "event-hayy-cinema-a-godus-bros-retrospective-from-youtube-to-the-box-office",
       "title": "Hayy Cinema | A Godus Bros Retrospective: From YouTube to the Box Office",
-      "reason": "already linked to catalog event"
-    },
-    {
-      "candidate_id": "candidate-hayy-jameel-events-hayy-makers-woodworking-course-level-1-with-ahmad-sofi-20260815-2ba216a5",
-      "event_id": "event-hayy-makers-woodworking-course-level-1-with-ahmad-sofi",
-      "title": "Hayy Makers | Woodworking Course (Level 1) with Ahmad Sofi",
       "reason": "already linked to catalog event"
     },
     {
@@ -1635,6 +1612,24 @@
       "reason": "already linked to catalog event"
     },
     {
+      "candidate_id": "candidate-future-skills-catalog-aws-solutions-architect-associate-practical-20260823-0a5ca2c8",
+      "event_id": "event-aws-solutions-architect-associate-practical",
+      "title": "⁠AWS Solutions Architect – Associate Practical",
+      "reason": "already linked to catalog event"
+    },
+    {
+      "candidate_id": "candidate-future-skills-catalog-comptia-network-20260823-ef21ac36",
+      "event_id": "event-comptia-network",
+      "title": "⁠CompTIA Network+",
+      "reason": "already linked to catalog event"
+    },
+    {
+      "candidate_id": "candidate-future-skills-catalog-power-bi-for-beginners-20260823-d96a7f80",
+      "event_id": "event-power-bi-for-beginners",
+      "title": "⁠Power BI for Beginners",
+      "reason": "already linked to catalog event"
+    },
+    {
       "candidate_id": "candidate-tuwaiq-academy-bootcamps-معسكر-تصميم-تجربة-المستخدم-ux-ui-20260823-c81fc88f",
       "event_id": "event-معسكر-تصميم-تجربة-المستخدم-ux-ui",
       "title": "معسكر تصميم تجربة المستخدم UX\\UI",
@@ -1692,6 +1687,12 @@
       "candidate_id": "candidate-hayy-jameel-events-jameel-library-the-task-of-the-translator-research-lab-20260824-b6d73c1e",
       "event_id": "event-jameel-library-the-task-of-the-translator-research-lab",
       "title": "Jameel Library | The Task of the Translator Research Lab",
+      "reason": "already linked to catalog event"
+    },
+    {
+      "candidate_id": "candidate-umm-al-qura-events-إنشاء-وإدارة-المقرر-في-blackboard-ultra-الفترة-الصباحية-20260824-5196a6ff",
+      "event_id": "event-إنشاء-وإدارة-المقرر-في-blackboard-ultra-الفترة-الصباحية",
+      "title": "إنشاء وإدارة المقرر في Blackboard Ultra – الفترة الصباحية",
       "reason": "already linked to catalog event"
     },
     {
@@ -2154,6 +2155,12 @@
       "candidate_id": "candidate-ithra-events-the-art-of-looking-at-art-20260915-70b4c472",
       "event_id": "event-the-art-of-looking-at-art",
       "title": "The Art of Looking at Art",
+      "reason": "already linked to catalog event"
+    },
+    {
+      "candidate_id": "candidate-visit-saudi-calendar-3a-ka3ba-20260918-fff5d3c3",
+      "event_id": "event-3a-ka3ba",
+      "title": "3a Ka3ba",
       "reason": "already linked to catalog event"
     },
     {

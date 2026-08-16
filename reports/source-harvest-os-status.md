@@ -1,6 +1,6 @@
 # EventLive Harvest OS Status
 
-- Generated at: 2026-08-16T13:28:12.783Z
+- Generated at: 2026-08-16T19:10:15.167Z
 - Status: NEEDS_WORK
 - Operating rule: Probe before new sources; sample before full harvest; Raw collection is not publication; discovery-only never auto-publishes.
 
@@ -12,21 +12,21 @@
 - Auto-publish sources: 15
 - Candidate-only sources: 12
 - Partnership-required sources: 5
-- Productive sources / attempted: 19/31
-- Collector errors: 7 (chronic 7, transient 0)
+- Productive sources / attempted: 18/19
+- Collector errors: 8 (chronic 7, transient 1)
 
 ## Publication Funnel
 
 | Stage | Count |
 | --- | --- |
-| discovered_this_run | 257 |
+| discovered_this_run | 244 |
 | candidate_queue | 590 |
 | evaluated_for_publish | 590 |
-| linked_existing | 538 |
-| published_new | 14 |
+| linked_existing | 545 |
+| published_new | 7 |
 | blocked | 38 |
 | secondary_promoted | 0 |
-| secondary_still_blocked | 42 |
+| secondary_still_blocked | 35 |
 
 ## Blocked Reasons
 
@@ -47,13 +47,14 @@
 
 | Source | Kind | Failed runs in a row | Attempted this run | Reason |
 | --- | --- | --- | --- | --- |
-| moc-cultural-calendar | chronic | 26 | yes | collector-error: fetch failed; fetch failed |
-| mos-events | chronic | 26 | yes | collector-error: fetch failed |
-| moc-cultural-subportals | chronic | 26 | yes | collector-error: fetch failed; fetch failed |
-| monshaat-events | chronic | 9 | yes | collector-error: fetch failed; fetch failed |
-| saudi-pro-league-fixtures | chronic | 6 | yes | collector-error: fetch failed |
-| tuwaiq-academy-bootcamps | chronic | 3 | yes | collector-error: HTTP 403 |
-| saudi-space-agency-events | chronic | 3 | yes | fetch failed |
+| moc-cultural-calendar | chronic | 26 | no | collector-error: fetch failed; fetch failed |
+| mos-events | chronic | 26 | no | collector-error: fetch failed |
+| moc-cultural-subportals | chronic | 26 | no | collector-error: fetch failed; fetch failed |
+| monshaat-events | chronic | 9 | no | collector-error: fetch failed; fetch failed |
+| saudi-pro-league-fixtures | chronic | 6 | no | collector-error: fetch failed |
+| tuwaiq-academy-bootcamps | chronic | 3 | no | collector-error: HTTP 403 |
+| saudi-space-agency-events | chronic | 3 | no | fetch failed |
+| asharqia-chamber-events | transient | 2 | yes | fetch failed; page.goto: Timeout 30000ms exceeded. Call log:   - navigating to "https://www.chamber.org.sa/sites/Arabic/Events/ChamberEvents/Pages/AllChamberEvents.aspx", waiting until "domcontentload |
 
 | Source | Policy | Trust | Gate |
 | --- | --- | --- | --- |

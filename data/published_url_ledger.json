@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "generated_at": "2026-08-16T13:23:17.730Z",
+  "generated_at": "2026-08-16T19:05:11.434Z",
   "events": {
     "event-skill-development-initiative": {
       "identity": "skill development initiative|riyadh|2021-07-14",
@@ -1072,11 +1072,6 @@
       "first_seen": "2026-07-27",
       "last_seen": "2026-08-16"
     },
-    "event-hayy-makers-woodworking-course-level-1-with-ahmad-sofi": {
-      "identity": "hayy makers | woodworking course (level 1) with ahmad sofi|jeddah|2026-08-15",
-      "first_seen": "2026-07-30",
-      "last_seen": "2026-08-16"
-    },
     "event-virtualization-cloud-infrastructure-basics-الافتراضية-والبنية-التحتية-ال": {
       "identity": "virtualization & cloud infrastructure basics - الافتراضية والبنية التحتية السحابية|online|2026-08-16",
       "first_seen": "2026-08-06",
@@ -1090,6 +1085,11 @@
     "event-comptia-it-fundamentals": {
       "identity": "comptia it fundamentals|online|2026-08-16",
       "first_seen": "2026-08-06",
+      "last_seen": "2026-08-16"
+    },
+    "event-hayy-makers-open-call-makers-matters": {
+      "identity": "hayy makers | open call: makers matters|jeddah|2026-08-16",
+      "first_seen": "2026-08-16",
       "last_seen": "2026-08-16"
     },
     "event-دورة-اساسيات-المجهر-الالكتروني-الماسح-sem": {
@@ -1235,6 +1235,11 @@
     "event-register-for-the-world-breastfeeding-week-awareness-lecture": {
       "identity": "register for the world breastfeeding week awareness lecture|thuwal|2026-08-27",
       "first_seen": "2026-08-10",
+      "last_seen": "2026-08-16"
+    },
+    "event-community-garden-from-soil-to-seed-basics-to-growing-your-own-plants-wit": {
+      "identity": "community garden | from soil to seed: basics to growing your own plants with sara alsayed|jeddah|2026-08-28",
+      "first_seen": "2026-08-16",
       "last_seen": "2026-08-16"
     },
     "event-summer-splash-at-south-beach": {
@@ -2690,6 +2695,11 @@
     "event-space-debris-conference-2028": {
       "identity": "space debris conference 2028|riyadh|2028-02-15",
       "first_seen": "2026-08-06",
+      "last_seen": "2026-08-16"
+    },
+    "event-hayy-makers-woodworking-course-level-1-with-ahmad-sofi": {
+      "identity": "hayy makers | woodworking course (level 1) with ahmad sofi|jeddah|2026-08-15",
+      "first_seen": "2026-07-30",
       "last_seen": "2026-08-16"
     },
     "event-petals-and-pals-english": {
