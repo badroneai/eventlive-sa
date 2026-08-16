@@ -1,18 +1,18 @@
 {
-  "published_at": "2026-08-15T18:59:30.936Z",
+  "published_at": "2026-08-16T02:05:48.363Z",
   "dry_run": false,
   "include_partner": true,
   "source_candidates": "data/source_candidates.json",
   "events_catalog": "data/events_catalog.json",
-  "candidates_seen": 584,
+  "candidates_seen": 581,
   "totals": {
-    "candidates_seen": 584,
+    "candidates_seen": 581,
     "published": 6,
-    "linked_existing": 540,
+    "linked_existing": 537,
     "blocked": 38,
     "duplicate_review_alerts": 8,
     "category_fallback_alerts": 0,
-    "reconciled": 546
+    "reconciled": 543
   },
   "category_fallback_alerts": [],
   "duplicate_catalog_rows_removed": 0,
@@ -165,11 +165,6 @@
   ],
   "published": [
     {
-      "candidate_id": "candidate-visit-saudi-calendar-pdf-سكة-الأطعمة-20260304-4a38d19e",
-      "event_id": "event-سكة-الأطعمة",
-      "title": "سكة الأطعمة"
-    },
-    {
       "candidate_id": "candidate-visit-saudi-calendar-pdf-قصور-وقاع-ابو-نقطة-المتحمي-20260503-4a38d19e",
       "event_id": "event-قصور-وقاع-ابو-نقطة-المتحمي",
       "title": "قصور وقاع ابو نقطة المتحمي"
@@ -193,6 +188,11 @@
       "candidate_id": "candidate-visit-saudi-calendar-pdf-عروض-الفنون-الأدائية-التقليدية-20260706-4a38d19e",
       "event_id": "event-عروض-الفنون-الأدائية-التقليدية",
       "title": "عروض الفنون الأدائية التقليدية"
+    },
+    {
+      "candidate_id": "candidate-visit-saudi-seasons-forest-wonder-20260729-d676d344",
+      "event_id": "event-forest-wonder",
+      "title": "Forest Wonder"
     }
   ],
   "linked_existing": [
@@ -303,18 +303,6 @@
       "event_id": "event-horses-and-equestrian-heritage-exhibition",
       "title": "Horses and Equestrian Heritage Exhibition",
       "reason": "already linked to catalog event"
-    },
-    {
-      "candidate_id": "candidate-visit-saudi-calendar-pdf-كنوز-غارقة-20260225-4a38d19e",
-      "event_id": "event-كنوز-غارقة",
-      "title": "كنوز غارقة",
-      "reason": "already linked to catalog event"
-    },
-    {
-      "candidate_id": "candidate-visit-saudi-calendar-pdf-سكة-الاطعمة-20260304-4a38d19e",
-      "event_id": "event-سكة-الأطعمة",
-      "title": "سكة الاطعمة",
-      "reason": "trusted duplicate linked to existing catalog event"
     },
     {
       "candidate_id": "candidate-misk-hub-programs-misk-local-traineeship-program-20260401-200b6490",
@@ -1181,12 +1169,6 @@
       "reason": "already linked to catalog event"
     },
     {
-      "candidate_id": "candidate-visit-saudi-calendar-pdf-أوركسترا-game-of-thrones-20260811-4a38d19e",
-      "event_id": "event-أوركسترا-game-of-thrones",
-      "title": "أوركسترا Game of Thrones",
-      "reason": "already linked to catalog event"
-    },
-    {
       "candidate_id": "candidate-hayy-jameel-events-hayy-arts-from-another-angle-explore-contemporary-art-with-alternative-e-20260812-3abe9558",
       "event_id": "event-hayy-arts-from-another-angel-explore-contemporary-art-with-alternative-e",
       "title": "Hayy Arts | From Another Angle, explore contemporary art with alternative exhibition tours",
@@ -1214,30 +1196,6 @@
       "candidate_id": "candidate-hayy-jameel-events-hayy-cinema-a-godus-bros-retrospective-from-youtube-to-the-box-office-20260814-c4521792",
       "event_id": "event-hayy-cinema-a-godus-bros-retrospective-from-youtube-to-the-box-office",
       "title": "Hayy Cinema | A Godus Bros Retrospective: From YouTube to the Box Office",
-      "reason": "already linked to catalog event"
-    },
-    {
-      "candidate_id": "candidate-ithra-events-bedayat-beginnings-of-saudi-art-movement-20260815-e0a239ef",
-      "event_id": "event-bedayat-beginnings-of-saudi-art-movement",
-      "title": "Bedayat: Beginnings of Saudi Art Movement",
-      "reason": "already linked to catalog event"
-    },
-    {
-      "candidate_id": "candidate-ithra-events-echoes-of-the-familiar-20260815-cc43c2bd",
-      "event_id": "event-echoes-of-the-familiar",
-      "title": "Echoes of the Familiar",
-      "reason": "already linked to catalog event"
-    },
-    {
-      "candidate_id": "candidate-ithra-events-ithra-art-prize-exhibition-20260815-83c2ab55",
-      "event_id": "event-ithra-art-prize-exhibition",
-      "title": "Ithra Art Prize Exhibition",
-      "reason": "already linked to catalog event"
-    },
-    {
-      "candidate_id": "candidate-ithra-events-tafasahu-make-room-20260815-562bc61d",
-      "event_id": "event-tafasahu-make-room",
-      "title": "Tafasahu: Make Room",
       "reason": "already linked to catalog event"
     },
     {
@@ -1304,6 +1262,30 @@
       "candidate_id": "candidate-ithra-events-tinkering-stations-20260817-5a2c4c0e",
       "event_id": "event-tinkering-stations",
       "title": "Tinkering Stations",
+      "reason": "already linked to catalog event"
+    },
+    {
+      "candidate_id": "candidate-ithra-events-bedayat-beginnings-of-saudi-art-movement-20260817-e0a239ef",
+      "event_id": "event-bedayat-beginnings-of-saudi-art-movement",
+      "title": "Bedayat: Beginnings of Saudi Art Movement",
+      "reason": "already linked to catalog event"
+    },
+    {
+      "candidate_id": "candidate-ithra-events-echoes-of-the-familiar-20260817-cc43c2bd",
+      "event_id": "event-echoes-of-the-familiar",
+      "title": "Echoes of the Familiar",
+      "reason": "already linked to catalog event"
+    },
+    {
+      "candidate_id": "candidate-ithra-events-ithra-art-prize-exhibition-20260817-83c2ab55",
+      "event_id": "event-ithra-art-prize-exhibition",
+      "title": "Ithra Art Prize Exhibition",
+      "reason": "already linked to catalog event"
+    },
+    {
+      "candidate_id": "candidate-ithra-events-tafasahu-make-room-20260817-562bc61d",
+      "event_id": "event-tafasahu-make-room",
+      "title": "Tafasahu: Make Room",
       "reason": "already linked to catalog event"
     },
     {

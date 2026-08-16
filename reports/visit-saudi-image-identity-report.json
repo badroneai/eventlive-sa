@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-15T18:59:33.174Z",
+  "generated_at": "2026-08-16T02:05:50.672Z",
   "catalog": "data/events_catalog.json",
   "candidates": "data/source_candidates.json",
   "manifest": "data/event_image_cache_manifest.json",
@@ -10,11 +10,25 @@
   },
   "totals": {
     "pdf_crop_assignments": 55,
-    "verified": 54,
-    "struck": 1,
-    "slots_seen_this_cycle": 57
+    "verified": 51,
+    "struck": 4,
+    "slots_seen_this_cycle": 54
   },
   "struck": [
+    {
+      "id": "event-كنوز-غارقة",
+      "title": "كنوز غارقة",
+      "file": "visit-saudi-summer-2026-p034-top-right.png",
+      "reason": "slot-vacated",
+      "detail": "no dated card currently occupies page 34 top-right of https://www.visitsaudi.com/content/dam/documents/saudi-calendar-ar.pdf"
+    },
+    {
+      "id": "event-سكة-الأطعمة",
+      "title": "سكة الاطعمة",
+      "file": "visit-saudi-summer-2026-p053-top-right.jpg",
+      "reason": "slot-vacated",
+      "detail": "no dated card currently occupies page 53 top-right of https://www.visitsaudi.com/content/dam/documents/saudi-calendar-ar.pdf"
+    },
     {
       "id": "event-باتو",
       "title": "باتو",
@@ -23,27 +37,16 @@
       "detail": "page 6 top-left is now \"بلاتو\"",
       "matched_tokens": [],
       "ratio": 0
+    },
+    {
+      "id": "event-أوركسترا-game-of-thrones",
+      "title": "أوركسترا Game of Thrones",
+      "file": "visit-saudi-summer-2026-p061-bottom-left.jpg",
+      "reason": "slot-vacated",
+      "detail": "no dated card currently occupies page 61 bottom-left of https://www.visitsaudi.com/content/dam/documents/saudi-calendar-ar.pdf"
     }
   ],
   "verified": [
-    {
-      "id": "event-كنوز-غارقة",
-      "title": "كنوز غارقة",
-      "file": "visit-saudi-summer-2026-p034-top-right.png",
-      "matched_tokens": [
-        "كنوز",
-        "غارقه"
-      ]
-    },
-    {
-      "id": "event-سكة-الأطعمة",
-      "title": "سكة الاطعمة",
-      "file": "visit-saudi-summer-2026-p053-top-right.jpg",
-      "matched_tokens": [
-        "سكه",
-        "الاطعمه"
-      ]
-    },
     {
       "id": "event-سوق-الثلاثاء-الشعبي",
       "title": "سوق الثلاثاء الشعبي",
@@ -468,16 +471,6 @@
       "matched_tokens": [
         "صيف",
         "وسمره"
-      ]
-    },
-    {
-      "id": "event-أوركسترا-game-of-thrones",
-      "title": "أوركسترا Game of Thrones",
-      "file": "visit-saudi-summer-2026-p061-bottom-left.jpg",
-      "matched_tokens": [
-        "اوركسترا",
-        "game",
-        "thrones"
       ]
     },
     {

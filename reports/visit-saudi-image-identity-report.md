@@ -1,19 +1,20 @@
 # EventLive Visit Saudi Image Identity Report
 
-- generated_at: 2026-08-15T18:59:33.174Z
+- generated_at: 2026-08-16T02:05:50.672Z
 - pdf_crop_assignments: 55
-- verified: 54
-- struck: 1
-- slots_seen_this_cycle: 57
+- verified: 51
+- struck: 4
+- slots_seen_this_cycle: 54
 
 ## Struck (fell back to generated cover)
 
+- كنوز غارقة (visit-saudi-summer-2026-p034-top-right.png) - slot-vacated - no dated card currently occupies page 34 top-right of https://www.visitsaudi.com/content/dam/documents/saudi-calendar-ar.pdf
+- سكة الاطعمة (visit-saudi-summer-2026-p053-top-right.jpg) - slot-vacated - no dated card currently occupies page 53 top-right of https://www.visitsaudi.com/content/dam/documents/saudi-calendar-ar.pdf
 - باتو (visit-saudi-summer-2026-p006-top-left.jpg) - identity-mismatch - page 6 top-left is now "بلاتو"
+- أوركسترا Game of Thrones (visit-saudi-summer-2026-p061-bottom-left.jpg) - slot-vacated - no dated card currently occupies page 61 bottom-left of https://www.visitsaudi.com/content/dam/documents/saudi-calendar-ar.pdf
 
 ## Verified
 
-- كنوز غارقة (visit-saudi-summer-2026-p034-top-right.png)
-- سكة الاطعمة (visit-saudi-summer-2026-p053-top-right.jpg)
 - سوق الثلاثاء الشعبي (visit-saudi-summer-2026-p004-top-right.jpg)
 - قصور وقلاع ابو نقطة المتحمي (visit-saudi-summer-2026-p004-top-left.jpg)
 - صندوق أسامة من مخرج ثمانية (visit-saudi-summer-2026-p053-bottom-right.jpg)
@@ -59,7 +60,6 @@
 - عروض الفنون الادائية التقليدية (visit-saudi-summer-2026-p057-bottom-left.jpg)
 - صيف 2026 (visit-saudi-summer-2026-p058-bottom-right.jpg)
 - صيف وسمرة (visit-saudi-summer-2026-p012-top-left.jpg)
-- أوركسترا Game of Thrones (visit-saudi-summer-2026-p061-bottom-left.jpg)
 - بطولة أبطال المملكة للشطرنج (visit-saudi-summer-2026-p062-top-right.jpg)
 - IN ACT - ACT IX (visit-saudi-summer-2026-p039-top-left.jpg)
 - IN ACT - ACT X (visit-saudi-summer-2026-p062-top-left.jpg)
