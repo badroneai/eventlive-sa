@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "generated_at": "2026-08-16T07:29:21.193Z",
+  "generated_at": "2026-08-16T13:23:17.730Z",
   "events": {
     "event-skill-development-initiative": {
       "identity": "skill development initiative|riyadh|2021-07-14",
@@ -572,6 +572,11 @@
       "first_seen": "2026-07-11",
       "last_seen": "2026-08-16"
     },
+    "event-eishha-nights": {
+      "identity": "eishha nights|riyadh|2026-07-09",
+      "first_seen": "2026-08-16",
+      "last_seen": "2026-08-16"
+    },
     "event-echoes-of-the-familiar": {
       "identity": "echoes of the familiar|dhahran|2026-07-10",
       "first_seen": "2026-07-11",
@@ -652,6 +657,11 @@
       "first_seen": "2026-07-27",
       "last_seen": "2026-08-16"
     },
+    "event-merbaa": {
+      "identity": "merba'a|al baha|2026-07-17",
+      "first_seen": "2026-08-16",
+      "last_seen": "2026-08-16"
+    },
     "event-صيف-وسمرة": {
       "identity": "صيف وسمرة|aseer|2026-07-21",
       "first_seen": "2026-07-18",
@@ -720,6 +730,11 @@
     "event-emboss-printing-experience": {
       "identity": "emboss printing experience|dhahran|2026-07-27",
       "first_seen": "2026-07-27",
+      "last_seen": "2026-08-16"
+    },
+    "event-qb-festival": {
+      "identity": "qb festival|riyadh|2026-07-27",
+      "first_seen": "2026-08-16",
       "last_seen": "2026-08-16"
     },
     "event-وظائف-بحثية-تجربة": {
@@ -800,6 +815,11 @@
     "event-لقاءات-شهر-أغسطس-2026م": {
       "identity": "لقاءات شهر أغسطس 2026م|saudi arabia|2026-08-01",
       "first_seen": "2026-08-05",
+      "last_seen": "2026-08-16"
+    },
+    "event-open-call-stellar-hayy-jameel-youth-ambassador-program": {
+      "identity": "open call | stellar × hayy jameel youth ambassador program|jeddah|2026-08-01",
+      "first_seen": "2026-08-16",
       "last_seen": "2026-08-16"
     },
     "event-toddler-saturday": {
@@ -1152,6 +1172,21 @@
       "first_seen": "2026-08-10",
       "last_seen": "2026-08-16"
     },
+    "event-aws-solutions-architect-associate-practical": {
+      "identity": "aws solutions architect – associate practical|online|2026-08-23",
+      "first_seen": "2026-08-16",
+      "last_seen": "2026-08-16"
+    },
+    "event-comptia-network": {
+      "identity": "comptia network+|online|2026-08-23",
+      "first_seen": "2026-08-16",
+      "last_seen": "2026-08-16"
+    },
+    "event-power-bi-for-beginners": {
+      "identity": "power bi for beginners|online|2026-08-23",
+      "first_seen": "2026-08-16",
+      "last_seen": "2026-08-16"
+    },
     "event-معسكر-تصميم-تجربة-المستخدم-ux-ui": {
       "identity": "معسكر تصميم تجربة المستخدم ux\\ui|riyadh|2026-08-23",
       "first_seen": "2026-07-11",
@@ -1175,6 +1210,11 @@
     "event-jameel-library-the-task-of-the-translator-research-lab": {
       "identity": "jameel library | the task of the translator research lab|jeddah|2026-08-24",
       "first_seen": "2026-08-06",
+      "last_seen": "2026-08-16"
+    },
+    "event-إنشاء-وإدارة-المقرر-في-blackboard-ultra-الفترة-الصباحية": {
+      "identity": "إنشاء وإدارة المقرر في blackboard ultra – الفترة الصباحية|online|2026-08-24",
+      "first_seen": "2026-08-16",
       "last_seen": "2026-08-16"
     },
     "event-development-media-from-message-to-impact": {
@@ -1535,6 +1575,11 @@
     "event-the-art-of-looking-at-art": {
       "identity": "the art of looking at art|dhahran|2026-09-15",
       "first_seen": "2026-07-11",
+      "last_seen": "2026-08-16"
+    },
+    "event-3a-ka3ba": {
+      "identity": "3a ka3ba|riyadh|2026-09-18",
+      "first_seen": "2026-08-16",
       "last_seen": "2026-08-16"
     },
     "event-gulf-steel-storage-tank-refinery-expo": {

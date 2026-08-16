@@ -1,10 +1,10 @@
 # EventLive Source Auto Publish Report
 
-- published_at: 2026-08-16T07:22:32.273Z
+- published_at: 2026-08-16T13:15:28.745Z
 - dry_run: false
 - include_partner: true
-- candidates_seen: 581
-- published_new: 5
+- candidates_seen: 590
+- published_new: 14
 - linked_existing: 538
 - blocked_remaining: 38
 - duplicate_review_alerts: 8
@@ -29,6 +29,15 @@
 | candidate-visit-saudi-calendar-pdf-مزرعة-التوت-الأسود-20260701-4a38d19e | published | event-مزرعة-التوت-الأسود | مزرعة التوت الأسود |
 | candidate-visit-saudi-calendar-pdf-الأخطبوطية-20260704-4a38d19e | published | event-الأخطبوطية | الأخطبوطية |
 | candidate-visit-saudi-calendar-pdf-عروض-الفنون-الأدائية-التقليدية-20260706-4a38d19e | published | event-عروض-الفنون-الأدائية-التقليدية | عروض الفنون الأدائية التقليدية |
+| candidate-visit-saudi-seasons-eishha-nights-20260709-60cdd01b | published | event-eishha-nights | Eishha Nights |
+| candidate-visit-saudi-seasons-merbaa-20260717-6b1829a1 | published | event-merbaa | Merba'a |
+| candidate-visit-saudi-seasons-qb-festival-20260727-b6a61496 | published | event-qb-festival | QB Festival |
+| candidate-hayy-jameel-events-open-call-stellar-hayy-jameel-youth-ambassador-program-20260801-6b642c74 | published | event-open-call-stellar-hayy-jameel-youth-ambassador-program | Open Call | Stellar × Hayy Jameel Youth Ambassador Program |
+| candidate-future-skills-catalog-aws-solutions-architect-associate-practical-20260823-0a5ca2c8 | published | event-aws-solutions-architect-associate-practical | ⁠AWS Solutions Architect – Associate Practical |
+| candidate-future-skills-catalog-comptia-network-20260823-ef21ac36 | published | event-comptia-network | ⁠CompTIA Network+ |
+| candidate-future-skills-catalog-power-bi-for-beginners-20260823-d96a7f80 | published | event-power-bi-for-beginners | ⁠Power BI for Beginners |
+| candidate-umm-al-qura-events-إنشاء-وإدارة-المقرر-في-blackboard-ultra-الفترة-الصباحية-20260824-5196a6ff | published | event-إنشاء-وإدارة-المقرر-في-blackboard-ultra-الفترة-الصباحية | إنشاء وإدارة المقرر في Blackboard Ultra – الفترة الصباحية |
+| candidate-visit-saudi-calendar-3a-ka3ba-20260918-fff5d3c3 | published | event-3a-ka3ba | 3a Ka3ba |
 | candidate-moc-cultural-subportals-skill-development-initiative-20210714-10f7dc2c | linked-existing | event-skill-development-initiative | already linked to catalog event |
 | candidate-moc-cultural-subportals-sitar-20220921-cda2e068 | linked-existing | event-sitar | already linked to catalog event |
 | candidate-moc-cultural-subportals-the-architecture-and-design-caf-20240427-046e2ec1 | linked-existing | event-the-architecture-and-design-caf | already linked to catalog event |

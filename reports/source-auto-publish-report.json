@@ -1,18 +1,18 @@
 {
-  "published_at": "2026-08-16T07:22:32.273Z",
+  "published_at": "2026-08-16T13:15:28.745Z",
   "dry_run": false,
   "include_partner": true,
   "source_candidates": "data/source_candidates.json",
   "events_catalog": "data/events_catalog.json",
-  "candidates_seen": 581,
+  "candidates_seen": 590,
   "totals": {
-    "candidates_seen": 581,
-    "published": 5,
+    "candidates_seen": 590,
+    "published": 14,
     "linked_existing": 538,
     "blocked": 38,
     "duplicate_review_alerts": 8,
     "category_fallback_alerts": 0,
-    "reconciled": 543
+    "reconciled": 552
   },
   "category_fallback_alerts": [],
   "duplicate_catalog_rows_removed": 0,
@@ -188,6 +188,51 @@
       "candidate_id": "candidate-visit-saudi-calendar-pdf-عروض-الفنون-الأدائية-التقليدية-20260706-4a38d19e",
       "event_id": "event-عروض-الفنون-الأدائية-التقليدية",
       "title": "عروض الفنون الأدائية التقليدية"
+    },
+    {
+      "candidate_id": "candidate-visit-saudi-seasons-eishha-nights-20260709-60cdd01b",
+      "event_id": "event-eishha-nights",
+      "title": "Eishha Nights"
+    },
+    {
+      "candidate_id": "candidate-visit-saudi-seasons-merbaa-20260717-6b1829a1",
+      "event_id": "event-merbaa",
+      "title": "Merba'a"
+    },
+    {
+      "candidate_id": "candidate-visit-saudi-seasons-qb-festival-20260727-b6a61496",
+      "event_id": "event-qb-festival",
+      "title": "QB Festival"
+    },
+    {
+      "candidate_id": "candidate-hayy-jameel-events-open-call-stellar-hayy-jameel-youth-ambassador-program-20260801-6b642c74",
+      "event_id": "event-open-call-stellar-hayy-jameel-youth-ambassador-program",
+      "title": "Open Call | Stellar × Hayy Jameel Youth Ambassador Program"
+    },
+    {
+      "candidate_id": "candidate-future-skills-catalog-aws-solutions-architect-associate-practical-20260823-0a5ca2c8",
+      "event_id": "event-aws-solutions-architect-associate-practical",
+      "title": "⁠AWS Solutions Architect – Associate Practical"
+    },
+    {
+      "candidate_id": "candidate-future-skills-catalog-comptia-network-20260823-ef21ac36",
+      "event_id": "event-comptia-network",
+      "title": "⁠CompTIA Network+"
+    },
+    {
+      "candidate_id": "candidate-future-skills-catalog-power-bi-for-beginners-20260823-d96a7f80",
+      "event_id": "event-power-bi-for-beginners",
+      "title": "⁠Power BI for Beginners"
+    },
+    {
+      "candidate_id": "candidate-umm-al-qura-events-إنشاء-وإدارة-المقرر-في-blackboard-ultra-الفترة-الصباحية-20260824-5196a6ff",
+      "event_id": "event-إنشاء-وإدارة-المقرر-في-blackboard-ultra-الفترة-الصباحية",
+      "title": "إنشاء وإدارة المقرر في Blackboard Ultra – الفترة الصباحية"
+    },
+    {
+      "candidate_id": "candidate-visit-saudi-calendar-3a-ka3ba-20260918-fff5d3c3",
+      "event_id": "event-3a-ka3ba",
+      "title": "3a Ka3ba"
     }
   ],
   "linked_existing": [

@@ -1,8 +1,8 @@
 # Future Skills Program Enrichment Report
 
-- generated_at: 2026-08-16T07:22:37.882Z
-- targets: 17
-- enriched: 17
+- generated_at: 2026-08-16T13:15:35.077Z
+- targets: 20
+- enriched: 20
 - failed: 0
 
 ## Enriched
@@ -24,6 +24,9 @@
 - Virtualization & Cloud Infrastructure Basics - الافتراضية والبنية التحتية السحابية (13051) - outcomes=1, topics=3, requirements=4, metadata=8
 - SQL Fundamentals (13052) - outcomes=1, topics=15, requirements=4, metadata=8
 - CompTIA IT Fundamentals (13053) - outcomes=1, topics=1, requirements=4, metadata=8
+- AWS Solutions Architect – Associate Practical (13054) - outcomes=1, topics=1, requirements=4, metadata=8
+- CompTIA Network+ (13055) - outcomes=1, topics=1, requirements=4, metadata=8
+- Power BI for Beginners (13056) - outcomes=1, topics=1, requirements=4, metadata=8
 
 ## Failed
 

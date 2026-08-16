@@ -1,13 +1,13 @@
 {
-  "generated_at": "2026-08-16T07:24:33.011Z",
+  "generated_at": "2026-08-16T13:17:18.313Z",
   "catalog": "data/events_catalog.json",
   "source": "Visit Saudi Calendar",
   "totals": {
-    "targets": 26,
-    "candidates": 15,
-    "enriched": 26,
-    "fetched": 26,
-    "images": 24,
+    "targets": 27,
+    "candidates": 16,
+    "enriched": 27,
+    "fetched": 27,
+    "images": 25,
     "fetch_failures": 0
   },
   "enriched": [
@@ -176,6 +176,14 @@
       "title": "FIBO Arabia 2026",
       "source_method": "official-page-html",
       "image_url": "https://www.visitsaudi.com/content/dam/wvs/calendar/fibo-arabia.jpg",
+      "fetched": true,
+      "features": 7
+    },
+    {
+      "id": "event-3a-ka3ba",
+      "title": "3a Ka3ba",
+      "source_method": "official-page-html",
+      "image_url": "https://www.visitsaudi.com/content/dam/wvs/calendar/3a-ka3ba.jpg",
       "fetched": true,
       "features": 7
     },

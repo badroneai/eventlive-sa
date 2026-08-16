@@ -1,9 +1,9 @@
 {
-  "generated_at": "2026-08-16T07:22:37.882Z",
+  "generated_at": "2026-08-16T13:15:35.077Z",
   "catalog": "data/events_catalog.json",
   "totals": {
-    "targets": 17,
-    "enriched": 17,
+    "targets": 20,
+    "enriched": 20,
     "failed": 0
   },
   "enriched": [
@@ -155,6 +155,33 @@
       "id": "event-comptia-it-fundamentals",
       "title": "CompTIA IT Fundamentals",
       "group_id": "13053",
+      "goals": 1,
+      "features": 1,
+      "requirements": 4,
+      "metadata": 8
+    },
+    {
+      "id": "event-aws-solutions-architect-associate-practical",
+      "title": "AWS Solutions Architect – Associate Practical",
+      "group_id": "13054",
+      "goals": 1,
+      "features": 1,
+      "requirements": 4,
+      "metadata": 8
+    },
+    {
+      "id": "event-comptia-network",
+      "title": "CompTIA Network+",
+      "group_id": "13055",
+      "goals": 1,
+      "features": 1,
+      "requirements": 4,
+      "metadata": 8
+    },
+    {
+      "id": "event-power-bi-for-beginners",
+      "title": "Power BI for Beginners",
+      "group_id": "13056",
       "goals": 1,
       "features": 1,
       "requirements": 4,

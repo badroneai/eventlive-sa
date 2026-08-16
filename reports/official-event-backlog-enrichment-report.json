@@ -1,13 +1,63 @@
 {
-  "generated_at": "2026-08-16T07:25:40.873Z",
+  "generated_at": "2026-08-16T13:18:42.025Z",
   "totals": {
-    "targets": 5,
-    "enriched": 5,
-    "fetched": 3,
-    "images": 5,
-    "fetch_failures": 2
+    "targets": 10,
+    "enriched": 10,
+    "fetched": 5,
+    "images": 10,
+    "fetch_failures": 5
   },
   "enriched": [
+    {
+      "id": "event-eishha-nights",
+      "title": "Eishha Nights",
+      "source_label": "Visit Saudi Seasons",
+      "source_method": "official-page-meta",
+      "source_url": "https://www.visitsaudi.com/en/riyadh/events/eishha-nights",
+      "fetched": true,
+      "image": true,
+      "fetch_reason": ""
+    },
+    {
+      "id": "event-merbaa",
+      "title": "Merba'a",
+      "source_label": "Visit Saudi Seasons",
+      "source_method": "official-page-meta",
+      "source_url": "https://www.visitsaudi.com/en/al-baha/events/merbaa",
+      "fetched": true,
+      "image": true,
+      "fetch_reason": ""
+    },
+    {
+      "id": "event-open-call-stellar-hayy-jameel-youth-ambassador-program",
+      "title": "Open Call | Stellar × Hayy Jameel Youth Ambassador Program",
+      "source_label": "Hayy Jameel What's On",
+      "source_method": "official-page-meta",
+      "source_url": "https://hayyjameel.org/whats-on/stellar-x-hayy-jameel-youth-ambassador-program/",
+      "fetched": true,
+      "image": true,
+      "fetch_reason": ""
+    },
+    {
+      "id": "event-qb-festival",
+      "title": "QB Festival",
+      "source_label": "Visit Saudi Seasons",
+      "source_method": "official-page-meta",
+      "source_url": "https://www.visitsaudi.com/en/riyadh/events/qb-festival",
+      "fetched": true,
+      "image": true,
+      "fetch_reason": ""
+    },
+    {
+      "id": "event-إنشاء-وإدارة-المقرر-في-blackboard-ultra-الفترة-الصباحية",
+      "title": "إنشاء وإدارة المقرر في Blackboard Ultra – الفترة الصباحية",
+      "source_label": "Umm Al-Qura University Events Center",
+      "source_method": "official-page-meta",
+      "source_url": "https://uqu.edu.sa/App/Events/41085",
+      "fetched": true,
+      "image": true,
+      "fetch_reason": ""
+    },
     {
       "id": "event-الأخطبوطية",
       "title": "الاخطبوطية",
@@ -32,31 +82,31 @@
       "id": "event-عروض-الفنون-الأدائية-التقليدية",
       "title": "عروض الفنون الادائية التقليدية",
       "source_label": "Visit Saudi Summer Calendar PDF",
-      "source_method": "official-page-meta",
+      "source_method": "approved-source-row",
       "source_url": "https://www.visitsaudi.com/content/dam/documents/saudi-calendar-ar.pdf",
-      "fetched": true,
+      "fetched": false,
       "image": true,
-      "fetch_reason": ""
+      "fetch_reason": "The operation was aborted due to timeout"
     },
     {
       "id": "event-قصور-وقاع-ابو-نقطة-المتحمي",
       "title": "قصور وقلاع ابو نقطة المتحمي",
       "source_label": "Visit Saudi Summer Calendar PDF",
-      "source_method": "official-page-meta",
+      "source_method": "approved-source-row",
       "source_url": "https://www.visitsaudi.com/content/dam/documents/saudi-calendar-ar.pdf",
-      "fetched": true,
+      "fetched": false,
       "image": true,
-      "fetch_reason": ""
+      "fetch_reason": "The operation was aborted due to timeout"
     },
     {
       "id": "event-مزرعة-التوت-الأسود",
       "title": "مزرعة التوت الاسود",
       "source_label": "Visit Saudi Summer Calendar PDF",
-      "source_method": "official-page-meta",
+      "source_method": "approved-source-row",
       "source_url": "https://www.visitsaudi.com/content/dam/documents/saudi-calendar-ar.pdf",
-      "fetched": true,
+      "fetched": false,
       "image": true,
-      "fetch_reason": ""
+      "fetch_reason": "The operation was aborted due to timeout"
     }
   ],
   "failed": [
@@ -69,6 +119,24 @@
     {
       "id": "event-شارع-الفن-القرية-الأوروبية",
       "title": "شارع الفن - القرية الاوروبية",
+      "source_url": "https://www.visitsaudi.com/content/dam/documents/saudi-calendar-ar.pdf",
+      "reason": "The operation was aborted due to timeout"
+    },
+    {
+      "id": "event-عروض-الفنون-الأدائية-التقليدية",
+      "title": "عروض الفنون الادائية التقليدية",
+      "source_url": "https://www.visitsaudi.com/content/dam/documents/saudi-calendar-ar.pdf",
+      "reason": "The operation was aborted due to timeout"
+    },
+    {
+      "id": "event-قصور-وقاع-ابو-نقطة-المتحمي",
+      "title": "قصور وقلاع ابو نقطة المتحمي",
+      "source_url": "https://www.visitsaudi.com/content/dam/documents/saudi-calendar-ar.pdf",
+      "reason": "The operation was aborted due to timeout"
+    },
+    {
+      "id": "event-مزرعة-التوت-الأسود",
+      "title": "مزرعة التوت الاسود",
       "source_url": "https://www.visitsaudi.com/content/dam/documents/saudi-calendar-ar.pdf",
       "reason": "The operation was aborted due to timeout"
     }

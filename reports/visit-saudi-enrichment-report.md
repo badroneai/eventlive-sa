@@ -1,11 +1,11 @@
 # Visit Saudi Calendar Enrichment Report
 
-- generated_at: 2026-08-16T07:24:33.011Z
-- targets: 26
-- candidates: 15
-- enriched: 26
-- fetched: 26
-- images: 24
+- generated_at: 2026-08-16T13:17:18.313Z
+- targets: 27
+- candidates: 16
+- enriched: 27
+- fetched: 27
+- images: 25
 - fetch_failures: 0
 
 ## Enriched
@@ -31,6 +31,7 @@
 - International Falcon Breeders Auction - official-page-html - image=yes - features=7
 - Hussain Moheb Live in Riyadh - official-page-html - image=yes - features=7
 - FIBO Arabia 2026 - official-page-html - image=yes - features=7
+- 3a Ka3ba - official-page-html - image=yes - features=7
 - Saudi National Day - official-page-html - image=yes - features=7
 - Al Milwah Falcon Race - official-page-html - image=yes - features=7
 - Founding Day - official-page-html - image=yes - features=7

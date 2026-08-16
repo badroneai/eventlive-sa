@@ -1,6 +1,6 @@
 # EventLive Official Evidence Verification
 
-- generated_at: 2026-08-16T07:22:30.273Z
+- generated_at: 2026-08-16T13:15:24.105Z
 - entries: 3
 - verified_entries: 0
 - candidates_verified: 0
@@ -8,6 +8,6 @@
 
 | Entry | Status | Candidates | Note |
 |---|---|---:|---|
-| middle-east-banking-ai-summit-2026 | failed | 0 | Required official title/date/venue tokens did not all match. Fetch: fetch failed |
-| middle-east-enterprise-ai-summit-2026 | failed | 0 | Required official title/date/venue tokens did not all match. Fetch: fetch failed |
+| middle-east-banking-ai-summit-2026 | failed | 0 | Required official title/date/venue tokens did not all match. |
+| middle-east-enterprise-ai-summit-2026 | failed | 0 | Required official title/date/venue tokens did not all match. |
 | jeddah-fintech-week-2026 | radar | 0 | The current official bundle contains conflicting February, September, and October date/venue variants. Keep discovery evidence blocked until the first-party canonical fields agree. |
