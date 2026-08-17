@@ -1,19 +1,19 @@
 {
   "schema": "eventlive.i18n-en-surface.v1",
-  "generated_at": "2026-08-17T02:16:13.040Z",
-  "pages_scanned": 1659,
-  "pages_with_arabic": 516,
+  "generated_at": "2026-08-17T07:51:54.981Z",
+  "pages_scanned": 1663,
+  "pages_with_arabic": 513,
   "template_regressions": [],
   "script_template_regressions": [],
   "style_template_regressions": [],
   "recurring_surface_debt": [
     {
       "text": "../assets/event-images/الشهادة-الدولية-للحاسب-والإنترنت-ic3-a46ba6d2eb.jpg",
-      "pages": 50,
+      "pages": 53,
       "example": "events/event-أساسيات-الذكاء-الاصطناعي-من-azure.html",
       "script": true
     }
   ],
   "recurring_total": 1,
-  "content_prose_lines": 2427
+  "content_prose_lines": 2412
 }

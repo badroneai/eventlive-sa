@@ -1,10 +1,10 @@
 {
-  "generated_at": "2026-08-17T02:07:14.241Z",
+  "generated_at": "2026-08-17T07:44:41.882Z",
   "catalog": "data/events_catalog.json",
   "source": "Visit Saudi Calendar",
   "totals": {
     "targets": 29,
-    "candidates": 18,
+    "candidates": 19,
     "enriched": 29,
     "fetched": 29,
     "images": 27,
@@ -172,14 +172,6 @@
       "features": 7
     },
     {
-      "id": "event-this-is-michael",
-      "title": "This Is Michael",
-      "source_method": "official-page-html",
-      "image_url": "https://www.visitsaudi.com/content/dam/wvs/calendar/this-is-michael.jpg",
-      "fetched": true,
-      "features": 7
-    },
-    {
       "id": "event-spacetoon-memories-with-assem-sukkar",
       "title": "Spacetoon Memories with Assem Sukkar",
       "source_method": "official-page-html",
@@ -197,6 +189,14 @@
     },
     {
       "id": "event-3a-ka3ba",
+      "title": "3a Ka3ba",
+      "source_method": "official-page-html",
+      "image_url": "https://www.visitsaudi.com/content/dam/wvs/calendar/3a-ka3ba.jpg",
+      "fetched": true,
+      "features": 7
+    },
+    {
+      "id": "event-3a-ka3ba-2",
       "title": "3a Ka3ba",
       "source_method": "official-page-html",
       "image_url": "https://www.visitsaudi.com/content/dam/wvs/calendar/3a-ka3ba.jpg",

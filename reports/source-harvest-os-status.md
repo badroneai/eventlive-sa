@@ -1,32 +1,32 @@
 # EventLive Harvest OS Status
 
-- Generated at: 2026-08-17T02:19:32.186Z
+- Generated at: 2026-08-17T07:55:23.150Z
 - Status: NEEDS_WORK
 - Operating rule: Probe before new sources; sample before full harvest; Raw collection is not publication; discovery-only never auto-publishes.
 
 ## Totals
 
 - Sources: 88
-- Candidates: 627
-- Matched candidates: 594
+- Candidates: 629
+- Matched candidates: 599
 - Auto-publish sources: 15
 - Candidate-only sources: 12
 - Partnership-required sources: 5
-- Productive sources / attempted: 19/22
+- Productive sources / attempted: 17/18
 - Collector errors: 7 (chronic 7, transient 0)
 
 ## Publication Funnel
 
 | Stage | Count |
 | --- | --- |
-| discovered_this_run | 335 |
-| candidate_queue | 627 |
-| evaluated_for_publish | 627 |
-| linked_existing | 551 |
-| published_new | 36 |
-| blocked | 40 |
+| discovered_this_run | 225 |
+| candidate_queue | 629 |
+| evaluated_for_publish | 629 |
+| linked_existing | 581 |
+| published_new | 10 |
+| blocked | 38 |
 | secondary_promoted | 0 |
-| secondary_still_blocked | 71 |
+| secondary_still_blocked | 37 |
 
 ## Blocked Reasons
 
@@ -34,10 +34,11 @@
 | --- | --- |
 | publication gate source-evidence is not auto-publishable | 13 |
 | unknown category requires review | 10 |
-| possible duplicate requires review: exact-title-city-source-conflict | 8 |
+| possible duplicate requires review: exact-title-city-source-conflict | 5 |
 | linked catalog row event-aseer-season was superseded by dedupe | 2 |
 | possible duplicate requires review: exact-title-city-venue-conflict | 2 |
 | linked catalog row event-dakah was superseded by dedupe | 1 |
+| linked catalog row event-this-is-michael was superseded by dedupe | 1 |
 | possible duplicate already exists: event-saudi-industrial-series-2 | 1 |
 | possible duplicate already exists: event-hvac-r-saudi-arabia | 1 |
 | linked catalog row event-feena-nehke-stand-up-comedy-by-john-achkar was superseded by dedupe | 1 |

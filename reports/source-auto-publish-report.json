@@ -1,22 +1,28 @@
 {
-  "published_at": "2026-08-17T02:05:29.986Z",
+  "published_at": "2026-08-17T07:43:17.858Z",
   "dry_run": false,
   "include_partner": true,
   "source_candidates": "data/source_candidates.json",
   "events_catalog": "data/events_catalog.json",
-  "candidates_seen": 627,
+  "candidates_seen": 629,
   "totals": {
-    "candidates_seen": 627,
-    "published": 36,
-    "linked_existing": 551,
-    "blocked": 40,
-    "duplicate_review_alerts": 10,
+    "candidates_seen": 629,
+    "published": 10,
+    "linked_existing": 581,
+    "blocked": 38,
+    "duplicate_review_alerts": 7,
     "category_fallback_alerts": 0,
-    "reconciled": 587
+    "reconciled": 591
   },
   "category_fallback_alerts": [],
-  "duplicate_catalog_rows_removed": 0,
-  "duplicate_catalog_rows": [],
+  "duplicate_catalog_rows_removed": 1,
+  "duplicate_catalog_rows": [
+    {
+      "removed_event_id": "event-this-is-michael",
+      "kept_event_id": "event-عرض-this-is-michael-الموسيقي",
+      "reason": "action-url-semantic-match"
+    }
+  ],
   "canonical_event_ids_remapped": 0,
   "canonical_event_id_remaps": [],
   "duplicate_review_alerts": [
@@ -39,24 +45,6 @@
     },
     {
       "kind": "exact-title-city-source-conflict",
-      "candidate_id": "candidate-discover-aseer-events-sammrah-20260528-0784ea5b",
-      "possible_event_id": "event-sammrah",
-      "conflict_fields": [
-        "source",
-        "venue",
-        "date"
-      ],
-      "title_key": "sammrah",
-      "venue_key": "aseer region",
-      "candidate_source": "discoveraseer.com",
-      "existing_source": "visitsaudi.com",
-      "candidate_starts_at": "2026-05-28T09:00:00+03:00",
-      "existing_starts_at": "2026-06-01T16:00:00+03:00",
-      "date_gap_days": 0,
-      "start_date_drift_days": 4.292
-    },
-    {
-      "kind": "exact-title-city-source-conflict",
       "candidate_id": "candidate-visit-saudi-seasons-light-nights-20260607-c0fd1ee9",
       "possible_event_id": "event-light-nights",
       "conflict_fields": [
@@ -72,42 +60,6 @@
       "existing_starts_at": "2026-06-07T09:00:00+03:00",
       "date_gap_days": 0,
       "start_date_drift_days": 0.375
-    },
-    {
-      "kind": "exact-title-city-source-conflict",
-      "candidate_id": "candidate-discover-aseer-events-sound-of-abha-fest-saf-20260620-737104ee",
-      "possible_event_id": "event-sound-of-abha-fest-saf",
-      "conflict_fields": [
-        "source",
-        "venue",
-        "date"
-      ],
-      "title_key": "abha fest of saf sound",
-      "venue_key": "aseer region",
-      "candidate_source": "discoveraseer.com",
-      "existing_source": "visitsaudi.com",
-      "candidate_starts_at": "2026-06-20T09:00:00+03:00",
-      "existing_starts_at": "2026-06-15T17:00:00+03:00",
-      "date_gap_days": 0,
-      "start_date_drift_days": 4.667
-    },
-    {
-      "kind": "exact-title-city-source-conflict",
-      "candidate_id": "candidate-discover-aseer-events-mahabah-20260702-f59a5d12",
-      "possible_event_id": "event-mahabah",
-      "conflict_fields": [
-        "source",
-        "venue",
-        "date"
-      ],
-      "title_key": "mahabah",
-      "venue_key": "aseer region",
-      "candidate_source": "discoveraseer.com",
-      "existing_source": "visitsaudi.com",
-      "candidate_starts_at": "2026-07-02T09:00:00+03:00",
-      "existing_starts_at": "2026-07-02T16:00:00+03:00",
-      "date_gap_days": 0,
-      "start_date_drift_days": 0.292
     },
     {
       "kind": "exact-title-city-source-conflict",
@@ -200,24 +152,9 @@
   ],
   "published": [
     {
-      "candidate_id": "candidate-visit-saudi-calendar-pdf-أشجار-20260429-4a38d19e",
-      "event_id": "event-أشجار",
-      "title": "أشجار"
-    },
-    {
       "candidate_id": "candidate-visit-saudi-calendar-pdf-قصور-وقاع-ابو-نقطة-المتحمي-20260503-4a38d19e",
       "event_id": "event-قصور-وقاع-ابو-نقطة-المتحمي",
       "title": "قصور وقاع ابو نقطة المتحمي"
-    },
-    {
-      "candidate_id": "candidate-visit-saudi-calendar-pdf-ليالي-مضيئة-20260607-4a38d19e",
-      "event_id": "event-ليالي-مضيئة",
-      "title": "ليالي مضيئة"
-    },
-    {
-      "candidate_id": "candidate-visit-saudi-calendar-pdf-شارع-الفن-القرية-الريفية-20260624-4a38d19e",
-      "event_id": "event-شارع-الفن-القرية-الريفية",
-      "title": "شارع الفن - القرية الريفية"
     },
     {
       "candidate_id": "candidate-visit-saudi-calendar-pdf-شارع-الفن-القرية-الأوروبية-20260625-4a38d19e",
@@ -230,16 +167,6 @@
       "title": "مزرعة التوت الأسود"
     },
     {
-      "candidate_id": "candidate-visit-saudi-calendar-pdf-قرية-الاطاولة-التراثية-20260701-4a38d19e",
-      "event_id": "event-قرية-الاطاولة-التراثية",
-      "title": "قرية الاطاولة التراثية"
-    },
-    {
-      "candidate_id": "candidate-visit-saudi-calendar-pdf-فعالية-كومبات-أرينا-20260703-4a38d19e",
-      "event_id": "event-فعالية-كومبات-أرينا",
-      "title": "فعالية كومبات أرينا"
-    },
-    {
       "candidate_id": "candidate-visit-saudi-calendar-pdf-الأخطبوطية-20260704-4a38d19e",
       "event_id": "event-الأخطبوطية",
       "title": "الأخطبوطية"
@@ -250,134 +177,29 @@
       "title": "عروض الفنون الأدائية التقليدية"
     },
     {
-      "candidate_id": "candidate-visit-saudi-calendar-pdf-فعالية-ترحاب-20260722-4a38d19e",
-      "event_id": "event-فعالية-ترحاب",
-      "title": "فعالية ترحاب"
+      "candidate_id": "candidate-visit-saudi-seasons-athyah-summer-20260728-b9f6dffe",
+      "event_id": "event-athyah-summer",
+      "title": "Athyah Summer"
     },
     {
-      "candidate_id": "candidate-visit-saudi-calendar-pdf-شعف-20260722-4a38d19e",
-      "event_id": "event-شعف",
-      "title": "شعف"
+      "candidate_id": "candidate-umm-al-qura-events-المحتوى-التفاعلي-والتقييم-الإلكتروني-في-blackboard-ultra-الفترة-الصباحية-20260825-116c6b0a",
+      "event_id": "event-المحتوى-التفاعلي-والتقييم-الإلكتروني-في-blackboard-ultra-الفترة-الصباحية",
+      "title": "المحتوى التفاعلي والتقييم الإلكتروني في Blackboard Ultra – الفترة الصباحية"
     },
     {
-      "candidate_id": "candidate-visit-saudi-calendar-pdf-بسطة-القابل-20260722-4a38d19e",
-      "event_id": "event-بسطة-القابل",
-      "title": "بسطة القابل"
+      "candidate_id": "candidate-umm-al-qura-events-إنشاء-وإدارة-المقرر-في-blackboard-ultra-الفترة-المسائية-20260830-734dc88d",
+      "event_id": "event-إنشاء-وإدارة-المقرر-في-blackboard-ultra-الفترة-المسائية",
+      "title": "إنشاء وإدارة المقرر في Blackboard Ultra – الفترة المسائية"
     },
     {
-      "candidate_id": "candidate-visit-saudi-calendar-pdf-شابتر-26-20260723-4a38d19e",
-      "event_id": "event-شابتر-26",
-      "title": "شابتر 26"
+      "candidate_id": "candidate-umm-al-qura-events-المحتوى-التفاعلي-والتقييم-الإلكتروني-في-blackboard-ultra-الفترة-المسائية-20260831-e05798fa",
+      "event_id": "event-المحتوى-التفاعلي-والتقييم-الإلكتروني-في-blackboard-ultra-الفترة-المسائية",
+      "title": "المحتوى التفاعلي والتقييم الإلكتروني في Blackboard Ultra – الفترة المسائية"
     },
     {
-      "candidate_id": "candidate-visit-saudi-calendar-pdf-باتل-كارت-في-أبها-20260727-4a38d19e",
-      "event_id": "event-باتل-كارت-في-أبها",
-      "title": "باتل كارت في أبها"
-    },
-    {
-      "candidate_id": "candidate-visit-saudi-calendar-pdf-صيف-عذية-20260727-4a38d19e",
-      "event_id": "event-صيف-عذية",
-      "title": "صيف عذية"
-    },
-    {
-      "candidate_id": "candidate-visit-saudi-calendar-pdf-جولة-بقي-السريعة-الباحة-20260728-4a38d19e",
-      "event_id": "event-جولة-بقي-السريعة-الباحة",
-      "title": "جولة بقي السريعة الباحة"
-    },
-    {
-      "candidate_id": "candidate-visit-saudi-seasons-battlekart-in-abha-20260728-2f0baf90",
-      "event_id": "event-battlekart-in-abha",
-      "title": "BattleKart in Abha"
-    },
-    {
-      "candidate_id": "candidate-visit-saudi-seasons-shaaf-20260728-e926782e",
-      "event_id": "event-shaaf",
-      "title": "Shaaf"
-    },
-    {
-      "candidate_id": "candidate-visit-saudi-calendar-pdf-فعالية-القصبة-20260729-4a38d19e",
-      "event_id": "event-فعالية-القصبة",
-      "title": "فعالية القصبة"
-    },
-    {
-      "candidate_id": "candidate-visit-saudi-calendar-pdf-شاطئ-منتجع-القرية-في-جدة-20260805-4a38d19e",
-      "event_id": "event-شاطئ-منتجع-القرية-في-جدة",
-      "title": "شاطئ منتجع القرية في جدة"
-    },
-    {
-      "candidate_id": "candidate-visit-saudi-calendar-pdf-جولة-البقي-بين-جبال-الباحة-20260805-4a38d19e",
-      "event_id": "event-جولة-البقي-بين-جبال-الباحة",
-      "title": "جولة البقي بين جبال الباحة"
-    },
-    {
-      "candidate_id": "candidate-visit-saudi-calendar-pdf-مخيّم-النحالون-الصغار-الصيفي-20260816-4a38d19e",
-      "event_id": "event-مخيّم-النحالون-الصغار-الصيفي",
-      "title": "مخيّم النحالون الصغار الصيفي"
-    },
-    {
-      "candidate_id": "candidate-visit-saudi-calendar-pdf-صد-رد-عرض-ستاند-اب-كوميدي-من-أوس-النفيعي-20260820-4a38d19e",
-      "event_id": "event-صد-رد-عرض-ستاند-اب-كوميدي-من-أوس-النفيعي",
-      "title": "صد رد: عرض ستاند اب كوميدي من أوس النفيعي"
-    },
-    {
-      "candidate_id": "candidate-visit-saudi-calendar-pdf-ليلة-5x5-20260820-4a38d19e",
-      "event_id": "event-ليلة-5x5",
-      "title": "ليلة 5x5"
-    },
-    {
-      "candidate_id": "candidate-visit-saudi-calendar-pdf-عرض-this-is-michael-الموسيقي-20260821-4a38d19e",
-      "event_id": "event-عرض-this-is-michael-الموسيقي",
-      "title": "عرض This Is Michael الموسيقي"
-    },
-    {
-      "candidate_id": "candidate-visit-saudi-calendar-pdf-ليلة-ستانداب-كوميدي-في-جدة-20260821-4a38d19e",
-      "event_id": "event-ليلة-ستانداب-كوميدي-في-جدة",
-      "title": "ليلة ستانداب كوميدي في جدة"
-    },
-    {
-      "candidate_id": "candidate-visit-saudi-calendar-pdf-الخطة-c-مع-رضوان-الريمي-ليلة-كوميدية-طربية-20260821-4a38d19e",
-      "event_id": "event-الخطة-c-مع-رضوان-الريمي-ليلة-كوميدية-طربية",
-      "title": "الخطة C مع رضوان الريمي ليلة كوميدية طربية"
-    },
-    {
-      "candidate_id": "candidate-visit-saudi-calendar-this-is-michael-20260821-d8860a17",
-      "event_id": "event-this-is-michael",
-      "title": "This Is Michael"
-    },
-    {
-      "candidate_id": "candidate-visit-saudi-calendar-pdf-اوبن-مايك-للمواهب-20260826-4a38d19e",
-      "event_id": "event-اوبن-مايك-للمواهب",
-      "title": "اوبن مايك للمواهب"
-    },
-    {
-      "candidate_id": "candidate-visit-saudi-calendar-spacetoon-memories-with-assem-sukkar-20260903-e6578586",
-      "event_id": "event-spacetoon-memories-with-assem-sukkar",
-      "title": "Spacetoon Memories with Assem Sukkar"
-    },
-    {
-      "candidate_id": "candidate-visit-saudi-calendar-pdf-ستاند-أب-كوميدي-وعرض-تفاعلي-مع-صلاح-الدالي-20260904-4a38d19e",
-      "event_id": "event-ستاند-أب-كوميدي-وعرض-تفاعلي-مع-صلاح-الدالي",
-      "title": "ستاند أب كوميدي وعرض تفاعلي مع صلاح الدالي"
-    },
-    {
-      "candidate_id": "candidate-visit-saudi-calendar-pdf-سيرك-فونتانا-20260916-4a38d19e",
-      "event_id": "event-سيرك-فونتانا",
-      "title": "سيرك فونتانا"
-    },
-    {
-      "candidate_id": "candidate-visit-saudi-calendar-pdf-ذكريات-سبيستون-مع-الفنان-عاصم-سكر-20260918-4a38d19e",
-      "event_id": "event-ذكريات-سبيستون-مع-الفنان-عاصم-سكر",
-      "title": "ذكريات سبيستون مع الفنان عاصم سكر"
-    },
-    {
-      "candidate_id": "candidate-visit-saudi-calendar-pdf-فينا-نحكي؟-عرض-ستاند-أب-كوميدي-يقدمه-جون-أشقر-20261022-4a38d19e",
-      "event_id": "event-فينا-نحكي؟-عرض-ستاند-أب-كوميدي-يقدمه-جون-أشقر",
-      "title": "فينا نحكي؟ عرض ستاند أب كوميدي يقدمه جون أشقر"
-    },
-    {
-      "candidate_id": "candidate-visit-saudi-calendar-pdf-in-act-anniversary-act-xi-20261127-4a38d19e",
-      "event_id": "event-in-act-anniversary-act-xi-2",
-      "title": "IN ACT ANNIVERSARY - ACT XI"
+      "candidate_id": "candidate-visit-saudi-calendar-3a-ka3ba-20260919-7fe781e9",
+      "event_id": "event-3a-ka3ba-2",
+      "title": "3a Ka3ba"
     }
   ],
   "linked_existing": [
@@ -493,6 +315,12 @@
       "candidate_id": "candidate-misk-hub-programs-misk-local-traineeship-program-20260401-200b6490",
       "event_id": "event-misk-local-traineeship-program",
       "title": "Misk Local Traineeship Program",
+      "reason": "already linked to catalog event"
+    },
+    {
+      "candidate_id": "candidate-visit-saudi-calendar-pdf-أشجار-20260429-4a38d19e",
+      "event_id": "event-أشجار",
+      "title": "أشجار",
       "reason": "already linked to catalog event"
     },
     {
@@ -664,6 +492,12 @@
       "reason": "already linked to catalog event"
     },
     {
+      "candidate_id": "candidate-visit-saudi-calendar-pdf-ليالي-مضيئة-20260607-4a38d19e",
+      "event_id": "event-ليالي-مضيئة",
+      "title": "ليالي مضيئة",
+      "reason": "already linked to catalog event"
+    },
+    {
       "candidate_id": "candidate-discover-aseer-events-light-nights-20260607-35f3a49e",
       "event_id": "event-light-nights",
       "title": "Light Nights",
@@ -715,6 +549,12 @@
       "candidate_id": "candidate-visit-saudi-calendar-pdf-مزرعة-أعناب-20260624-4a38d19e",
       "event_id": "event-مزرعة-أعناب",
       "title": "مزرعة أعناب",
+      "reason": "already linked to catalog event"
+    },
+    {
+      "candidate_id": "candidate-visit-saudi-calendar-pdf-شارع-الفن-القرية-الريفية-20260624-4a38d19e",
+      "event_id": "event-شارع-الفن-القرية-الريفية",
+      "title": "شارع الفن - القرية الريفية",
       "reason": "already linked to catalog event"
     },
     {
@@ -874,6 +714,12 @@
       "reason": "already linked to catalog event"
     },
     {
+      "candidate_id": "candidate-visit-saudi-calendar-pdf-قرية-الاطاولة-التراثية-20260701-4a38d19e",
+      "event_id": "event-قرية-الاطاولة-التراثية",
+      "title": "قرية الاطاولة التراثية",
+      "reason": "already linked to catalog event"
+    },
+    {
       "candidate_id": "candidate-hayy-jameel-events-jameel-library-summer-reading-challenge-20260701-3a833686",
       "event_id": "event-jameel-library-summer-reading-challenge",
       "title": "Jameel Library | Summer Reading Challenge",
@@ -982,6 +828,12 @@
       "reason": "already linked to catalog event"
     },
     {
+      "candidate_id": "candidate-visit-saudi-calendar-pdf-فعالية-كومبات-أرينا-20260703-4a38d19e",
+      "event_id": "event-فعالية-كومبات-أرينا",
+      "title": "فعالية كومبات أرينا",
+      "reason": "already linked to catalog event"
+    },
+    {
       "candidate_id": "candidate-visit-saudi-calendar-pdf-الاخطبوطية-20260704-4a38d19e",
       "event_id": "event-الأخطبوطية",
       "title": "الاخطبوطية",
@@ -1045,7 +897,7 @@
       "candidate_id": "candidate-visit-saudi-calendar-pdf-ليالي-عيشها-20260709-4a38d19e",
       "event_id": "event-eishha-nights",
       "title": "ليالي عيشها",
-      "reason": "trusted duplicate linked to existing catalog event"
+      "reason": "already linked to catalog event"
     },
     {
       "candidate_id": "candidate-discover-aseer-events-abo-noghta-historic-castles-historic-tabab-20260709-158faa74",
@@ -1138,6 +990,30 @@
       "reason": "already linked to catalog event"
     },
     {
+      "candidate_id": "candidate-visit-saudi-calendar-pdf-فعالية-ترحاب-20260722-4a38d19e",
+      "event_id": "event-فعالية-ترحاب",
+      "title": "فعالية ترحاب",
+      "reason": "already linked to catalog event"
+    },
+    {
+      "candidate_id": "candidate-visit-saudi-calendar-pdf-شعف-20260722-4a38d19e",
+      "event_id": "event-شعف",
+      "title": "شعف",
+      "reason": "already linked to catalog event"
+    },
+    {
+      "candidate_id": "candidate-visit-saudi-calendar-pdf-بسطة-القابل-20260722-4a38d19e",
+      "event_id": "event-بسطة-القابل",
+      "title": "بسطة القابل",
+      "reason": "already linked to catalog event"
+    },
+    {
+      "candidate_id": "candidate-visit-saudi-calendar-pdf-شابتر-26-20260723-4a38d19e",
+      "event_id": "event-شابتر-26",
+      "title": "شابتر 26",
+      "reason": "already linked to catalog event"
+    },
+    {
       "candidate_id": "candidate-discover-aseer-events-nafas-20260724-e5d0fb05",
       "event_id": "event-nafas",
       "title": "Nafas",
@@ -1156,10 +1032,22 @@
       "reason": "already linked to catalog event"
     },
     {
+      "candidate_id": "candidate-visit-saudi-calendar-pdf-باتل-كارت-في-أبها-20260727-4a38d19e",
+      "event_id": "event-باتل-كارت-في-أبها",
+      "title": "باتل كارت في أبها",
+      "reason": "already linked to catalog event"
+    },
+    {
+      "candidate_id": "candidate-visit-saudi-calendar-pdf-صيف-عذية-20260727-4a38d19e",
+      "event_id": "event-صيف-عذية",
+      "title": "صيف عذية",
+      "reason": "already linked to catalog event"
+    },
+    {
       "candidate_id": "candidate-visit-saudi-calendar-pdf-مهرجان-كيو-بي-20260727-4a38d19e",
       "event_id": "event-qb-festival",
       "title": "مهرجان كيو بي",
-      "reason": "trusted duplicate linked to existing catalog event"
+      "reason": "already linked to catalog event"
     },
     {
       "candidate_id": "candidate-umm-al-qura-events-فرص-تعاقد-على-مشروع-بحثي-ممول-20260727-602b04ea",
@@ -1174,10 +1062,34 @@
       "reason": "already linked to catalog event"
     },
     {
+      "candidate_id": "candidate-visit-saudi-calendar-pdf-جولة-بقي-السريعة-الباحة-20260728-4a38d19e",
+      "event_id": "event-جولة-بقي-السريعة-الباحة",
+      "title": "جولة بقي السريعة الباحة",
+      "reason": "already linked to catalog event"
+    },
+    {
+      "candidate_id": "candidate-visit-saudi-seasons-battlekart-in-abha-20260728-2f0baf90",
+      "event_id": "event-battlekart-in-abha",
+      "title": "BattleKart in Abha",
+      "reason": "already linked to catalog event"
+    },
+    {
+      "candidate_id": "candidate-visit-saudi-seasons-shaaf-20260728-e926782e",
+      "event_id": "event-shaaf",
+      "title": "Shaaf",
+      "reason": "already linked to catalog event"
+    },
+    {
+      "candidate_id": "candidate-visit-saudi-calendar-pdf-فعالية-القصبة-20260729-4a38d19e",
+      "event_id": "event-فعالية-القصبة",
+      "title": "فعالية القصبة",
+      "reason": "already linked to catalog event"
+    },
+    {
       "candidate_id": "candidate-visit-saudi-calendar-pdf-غابة-العجائب-20260729-4a38d19e",
       "event_id": "event-forest-wonder",
       "title": "غابة العجائب",
-      "reason": "trusted duplicate linked to existing catalog event"
+      "reason": "already linked to catalog event"
     },
     {
       "candidate_id": "candidate-visit-saudi-seasons-forest-wonder-20260729-d676d344",
@@ -1372,6 +1284,18 @@
       "reason": "already linked to catalog event"
     },
     {
+      "candidate_id": "candidate-visit-saudi-calendar-pdf-شاطئ-منتجع-القرية-في-جدة-20260805-4a38d19e",
+      "event_id": "event-شاطئ-منتجع-القرية-في-جدة",
+      "title": "شاطئ منتجع القرية في جدة",
+      "reason": "already linked to catalog event"
+    },
+    {
+      "candidate_id": "candidate-visit-saudi-calendar-pdf-جولة-البقي-بين-جبال-الباحة-20260805-4a38d19e",
+      "event_id": "event-جولة-البقي-بين-جبال-الباحة",
+      "title": "جولة البقي بين جبال الباحة",
+      "reason": "already linked to catalog event"
+    },
+    {
       "candidate_id": "candidate-umm-al-qura-events-الترشح-للدبلوم-المتوسط-في-البرمجة-وعلوم-الحاسب-في-الجبيل-بالتعاون-مع-كلي-20260805-5ba68667",
       "event_id": "event-الترشح-للدبلوم-المتوسط-في-البرمجة-وعلوم-الحاسب-في-الجبيل-بالتعاون-مع-كلي",
       "title": "الترشح للدبلوم المتوسط في البرمجة وعلوم الحاسب في الجبيل بالتعاون مع كليات الفيحاء الأهلية",
@@ -1417,6 +1341,12 @@
       "candidate_id": "candidate-hayy-jameel-events-hayy-cinema-a-godus-bros-retrospective-from-youtube-to-the-box-office-20260814-c4521792",
       "event_id": "event-hayy-cinema-a-godus-bros-retrospective-from-youtube-to-the-box-office",
       "title": "Hayy Cinema | A Godus Bros Retrospective: From YouTube to the Box Office",
+      "reason": "already linked to catalog event"
+    },
+    {
+      "candidate_id": "candidate-visit-saudi-calendar-pdf-مخيّم-النحالون-الصغار-الصيفي-20260816-4a38d19e",
+      "event_id": "event-مخيّم-النحالون-الصغار-الصيفي",
+      "title": "مخيّم النحالون الصغار الصيفي",
       "reason": "already linked to catalog event"
     },
     {
@@ -1510,12 +1440,6 @@
       "reason": "already linked to catalog event"
     },
     {
-      "candidate_id": "candidate-ithra-events-spot-of-inspiration-20260817-5bac584c",
-      "event_id": "event-spot-of-inspiration",
-      "title": "Spot of Inspiration",
-      "reason": "already linked to catalog event"
-    },
-    {
       "candidate_id": "candidate-ithra-events-childrens-museum-story-time-20260817-ada8b9db",
       "event_id": "event-childrens-museum-story-time",
       "title": "Children's Museum Story Time",
@@ -1525,6 +1449,12 @@
       "candidate_id": "candidate-ithra-events-childrens-art-studio-20260817-2bf92d17",
       "event_id": "event-childrens-art-studio",
       "title": "Children's Art Studio",
+      "reason": "already linked to catalog event"
+    },
+    {
+      "candidate_id": "candidate-ithra-events-spot-of-inspiration-20260817-5bac584c",
+      "event_id": "event-spot-of-inspiration",
+      "title": "Spot of Inspiration",
       "reason": "already linked to catalog event"
     },
     {
@@ -1660,6 +1590,18 @@
       "reason": "already linked to catalog event"
     },
     {
+      "candidate_id": "candidate-visit-saudi-calendar-pdf-صد-رد-عرض-ستاند-اب-كوميدي-من-أوس-النفيعي-20260820-4a38d19e",
+      "event_id": "event-صد-رد-عرض-ستاند-اب-كوميدي-من-أوس-النفيعي",
+      "title": "صد رد: عرض ستاند اب كوميدي من أوس النفيعي",
+      "reason": "already linked to catalog event"
+    },
+    {
+      "candidate_id": "candidate-visit-saudi-calendar-pdf-ليلة-5x5-20260820-4a38d19e",
+      "event_id": "event-ليلة-5x5",
+      "title": "ليلة 5x5",
+      "reason": "already linked to catalog event"
+    },
+    {
       "candidate_id": "candidate-hayy-jameel-events-hayy-cinema-august-2026-20260820-0636e29a",
       "event_id": "event-hayy-cinema-august-2026",
       "title": "Hayy Cinema | August 2026",
@@ -1717,6 +1659,24 @@
       "candidate_id": "candidate-ithra-events-museum-story-time-20260820-1104734c",
       "event_id": "event-museum-story-time",
       "title": "Museum Story Time",
+      "reason": "already linked to catalog event"
+    },
+    {
+      "candidate_id": "candidate-visit-saudi-calendar-pdf-عرض-this-is-michael-الموسيقي-20260821-4a38d19e",
+      "event_id": "event-عرض-this-is-michael-الموسيقي",
+      "title": "عرض This Is Michael الموسيقي",
+      "reason": "already linked to catalog event"
+    },
+    {
+      "candidate_id": "candidate-visit-saudi-calendar-pdf-ليلة-ستانداب-كوميدي-في-جدة-20260821-4a38d19e",
+      "event_id": "event-ليلة-ستانداب-كوميدي-في-جدة",
+      "title": "ليلة ستانداب كوميدي في جدة",
+      "reason": "already linked to catalog event"
+    },
+    {
+      "candidate_id": "candidate-visit-saudi-calendar-pdf-الخطة-c-مع-رضوان-الريمي-ليلة-كوميدية-طربية-20260821-4a38d19e",
+      "event_id": "event-الخطة-c-مع-رضوان-الريمي-ليلة-كوميدية-طربية",
+      "title": "الخطة C مع رضوان الريمي ليلة كوميدية طربية",
       "reason": "already linked to catalog event"
     },
     {
@@ -1891,6 +1851,12 @@
       "candidate_id": "candidate-umm-al-qura-events-إنشاء-وإدارة-المقرر-في-blackboard-ultra-الفترة-الصباحية-20260824-5196a6ff",
       "event_id": "event-إنشاء-وإدارة-المقرر-في-blackboard-ultra-الفترة-الصباحية",
       "title": "إنشاء وإدارة المقرر في Blackboard Ultra – الفترة الصباحية",
+      "reason": "already linked to catalog event"
+    },
+    {
+      "candidate_id": "candidate-visit-saudi-calendar-pdf-اوبن-مايك-للمواهب-20260826-4a38d19e",
+      "event_id": "event-اوبن-مايك-للمواهب",
+      "title": "اوبن مايك للمواهب",
       "reason": "already linked to catalog event"
     },
     {
@@ -2110,10 +2076,22 @@
       "reason": "already linked to catalog event"
     },
     {
+      "candidate_id": "candidate-visit-saudi-calendar-spacetoon-memories-with-assem-sukkar-20260903-e6578586",
+      "event_id": "event-spacetoon-memories-with-assem-sukkar",
+      "title": "Spacetoon Memories with Assem Sukkar",
+      "reason": "already linked to catalog event"
+    },
+    {
       "candidate_id": "candidate-visit-saudi-calendar-pdf-حفلة-محمد-حماقي-20260904-4a38d19e",
       "event_id": "event-concert-mohamed-hamaki",
       "title": "حفلة محمد حماقي",
-      "reason": "trusted duplicate linked to existing catalog event"
+      "reason": "already linked to catalog event"
+    },
+    {
+      "candidate_id": "candidate-visit-saudi-calendar-pdf-ستاند-أب-كوميدي-وعرض-تفاعلي-مع-صلاح-الدالي-20260904-4a38d19e",
+      "event_id": "event-ستاند-أب-كوميدي-وعرض-تفاعلي-مع-صلاح-الدالي",
+      "title": "ستاند أب كوميدي وعرض تفاعلي مع صلاح الدالي",
+      "reason": "already linked to catalog event"
     },
     {
       "candidate_id": "candidate-misk-hub-programs-the-innovation-diwan-20260905-6f9de2e0",
@@ -2368,10 +2346,22 @@
       "reason": "already linked to catalog event"
     },
     {
+      "candidate_id": "candidate-visit-saudi-calendar-pdf-سيرك-فونتانا-20260916-4a38d19e",
+      "event_id": "event-سيرك-فونتانا",
+      "title": "سيرك فونتانا",
+      "reason": "already linked to catalog event"
+    },
+    {
+      "candidate_id": "candidate-visit-saudi-calendar-pdf-ذكريات-سبيستون-مع-الفنان-عاصم-سكر-20260918-4a38d19e",
+      "event_id": "event-ذكريات-سبيستون-مع-الفنان-عاصم-سكر",
+      "title": "ذكريات سبيستون مع الفنان عاصم سكر",
+      "reason": "already linked to catalog event"
+    },
+    {
       "candidate_id": "candidate-visit-saudi-calendar-pdf-ع-كعبا-20260918-4a38d19e",
       "event_id": "event-3a-ka3ba",
       "title": "ع كعبا",
-      "reason": "trusted duplicate linked to existing catalog event"
+      "reason": "already linked to catalog event"
     },
     {
       "candidate_id": "candidate-visit-saudi-calendar-3a-ka3ba-20260918-fff5d3c3",
@@ -2728,6 +2718,12 @@
       "reason": "already linked to catalog event"
     },
     {
+      "candidate_id": "candidate-visit-saudi-calendar-pdf-فينا-نحكي؟-عرض-ستاند-أب-كوميدي-يقدمه-جون-أشقر-20261022-4a38d19e",
+      "event_id": "event-فينا-نحكي؟-عرض-ستاند-أب-كوميدي-يقدمه-جون-أشقر",
+      "title": "فينا نحكي؟ عرض ستاند أب كوميدي يقدمه جون أشقر",
+      "reason": "already linked to catalog event"
+    },
+    {
       "candidate_id": "candidate-visit-saudi-calendar-pdf-فينا-نحكي؟-كوميديا-ستاند-أب-مع-جون-أشقر-20261023-4a38d19e",
       "event_id": "event-فينا-نحكي؟-كوميديا-ستاند-أب-مع-جون-أشقر",
       "title": "”فينا نحكي؟“ كوميديا ستاند أب مع جون أشقر",
@@ -3025,6 +3021,12 @@
       "candidate_id": "candidate-experience-alula-events-ancient-kingdoms-festival-20261126-a8081cef",
       "event_id": "event-ancient-kingdoms-festival",
       "title": "Ancient Kingdoms Festival",
+      "reason": "already linked to catalog event"
+    },
+    {
+      "candidate_id": "candidate-visit-saudi-calendar-pdf-in-act-anniversary-act-xi-20261127-4a38d19e",
+      "event_id": "event-in-act-anniversary-act-xi-2",
+      "title": "IN ACT ANNIVERSARY - ACT XI",
       "reason": "already linked to catalog event"
     },
     {
@@ -3697,25 +3699,11 @@
       "possible_event_id": "event-ashjar-farm"
     },
     {
-      "candidate_id": "candidate-discover-aseer-events-sammrah-20260528-0784ea5b",
-      "title": "sammrah",
-      "reason": "possible duplicate requires review: exact-title-city-source-conflict",
-      "kind": "exact-title-city-source-conflict",
-      "possible_event_id": "event-sammrah"
-    },
-    {
       "candidate_id": "candidate-visit-saudi-seasons-light-nights-20260607-c0fd1ee9",
       "title": "Light Nights",
       "reason": "possible duplicate requires review: exact-title-city-source-conflict",
       "kind": "exact-title-city-source-conflict",
       "possible_event_id": "event-light-nights"
-    },
-    {
-      "candidate_id": "candidate-discover-aseer-events-sound-of-abha-fest-saf-20260620-737104ee",
-      "title": "Sound of Abha Fest (SAF)",
-      "reason": "possible duplicate requires review: exact-title-city-source-conflict",
-      "kind": "exact-title-city-source-conflict",
-      "possible_event_id": "event-sound-of-abha-fest-saf"
     },
     {
       "candidate_id": "candidate-visit-saudi-calendar-aseer-season-20260625-2fc92ef9",
@@ -3731,13 +3719,6 @@
       "candidate_id": "candidate-discover-aseer-events-dakah-20260701-812de878",
       "title": "Dakah",
       "reason": "linked catalog row event-dakah was superseded by dedupe"
-    },
-    {
-      "candidate_id": "candidate-discover-aseer-events-mahabah-20260702-f59a5d12",
-      "title": "Mahabah",
-      "reason": "possible duplicate requires review: exact-title-city-source-conflict",
-      "kind": "exact-title-city-source-conflict",
-      "possible_event_id": "event-mahabah"
     },
     {
       "candidate_id": "candidate-eye-of-riyadh-events-esports-world-cup-20260706-13ed17c1",
@@ -3785,6 +3766,11 @@
       "candidate_id": "candidate-saudicon-events-معرض-صناع-للصناعات-الوطنية-2026-20260818-4f53e939",
       "title": "معرض صناع للصناعات الوطنية 2026",
       "reason": "publication gate source-evidence is not auto-publishable"
+    },
+    {
+      "candidate_id": "candidate-visit-saudi-calendar-this-is-michael-20260821-d8860a17",
+      "title": "This Is Michael",
+      "reason": "linked catalog row event-this-is-michael was superseded by dedupe"
     },
     {
       "candidate_id": "candidate-saudicon-events-ملتقى-شور-دلني-الشرقية-2026-20260825-b110f1b8",

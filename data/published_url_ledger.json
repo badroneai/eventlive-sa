@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "generated_at": "2026-08-17T02:14:35.803Z",
+  "generated_at": "2026-08-17T07:50:16.814Z",
   "events": {
     "event-skill-development-initiative": {
       "identity": "skill development initiative|riyadh|2021-07-14",
@@ -422,14 +422,14 @@
       "first_seen": "2026-07-18",
       "last_seen": "2026-08-17"
     },
-    "event-مزرعة-التوت-الأسود": {
-      "identity": "مزرعة التوت الاسود|aseer|2026-07-01",
-      "first_seen": "2026-07-18",
-      "last_seen": "2026-08-17"
-    },
     "event-قرية-الاطاولة-التراثية": {
       "identity": "قرية الاطاولة التراثية|taif|2026-07-01",
       "first_seen": "2026-08-17",
+      "last_seen": "2026-08-17"
+    },
+    "event-مزرعة-التوت-الأسود": {
+      "identity": "مزرعة التوت الاسود|aseer|2026-07-01",
+      "first_seen": "2026-07-18",
       "last_seen": "2026-08-17"
     },
     "event-jameel-library-summer-reading-challenge": {
@@ -814,6 +814,11 @@
     },
     "event-shaaf": {
       "identity": "shaaf|aseer|2026-07-28",
+      "first_seen": "2026-08-17",
+      "last_seen": "2026-08-17"
+    },
+    "event-athyah-summer": {
+      "identity": "athyah summer|aseer|2026-07-28",
       "first_seen": "2026-08-17",
       "last_seen": "2026-08-17"
     },
@@ -1282,11 +1287,6 @@
       "first_seen": "2026-08-10",
       "last_seen": "2026-08-17"
     },
-    "event-this-is-michael": {
-      "identity": "this is michael|jeddah|2026-08-21",
-      "first_seen": "2026-08-17",
-      "last_seen": "2026-08-17"
-    },
     "event-aws-solutions-architect-associate-practical": {
       "identity": "aws solutions architect – associate practical|online|2026-08-23",
       "first_seen": "2026-08-16",
@@ -1335,6 +1335,11 @@
     "event-development-media-from-message-to-impact": {
       "identity": "development media: from message to impact|saudi arabia|2026-08-24",
       "first_seen": "2026-08-11",
+      "last_seen": "2026-08-17"
+    },
+    "event-المحتوى-التفاعلي-والتقييم-الإلكتروني-في-blackboard-ultra-الفترة-الصباحية": {
+      "identity": "المحتوى التفاعلي والتقييم الإلكتروني في blackboard ultra – الفترة الصباحية|makkah|2026-08-25",
+      "first_seen": "2026-08-17",
       "last_seen": "2026-08-17"
     },
     "event-اوبن-مايك-للمواهب": {
@@ -1432,6 +1437,11 @@
       "first_seen": "2026-08-13",
       "last_seen": "2026-08-17"
     },
+    "event-إنشاء-وإدارة-المقرر-في-blackboard-ultra-الفترة-المسائية": {
+      "identity": "إنشاء وإدارة المقرر في blackboard ultra – الفترة المسائية|online|2026-08-30",
+      "first_seen": "2026-08-17",
+      "last_seen": "2026-08-17"
+    },
     "event-معسكر-أساسيات-الأمن-السيبراني": {
       "identity": "معسكر أساسيات الأمن السيبراني|riyadh|2026-08-30",
       "first_seen": "2026-07-11",
@@ -1440,6 +1450,11 @@
     "event-leap-2026": {
       "identity": "leap 2026|riyadh|2026-08-31",
       "first_seen": "2026-07-11",
+      "last_seen": "2026-08-17"
+    },
+    "event-المحتوى-التفاعلي-والتقييم-الإلكتروني-في-blackboard-ultra-الفترة-المسائية": {
+      "identity": "المحتوى التفاعلي والتقييم الإلكتروني في blackboard ultra – الفترة المسائية|makkah|2026-08-31",
+      "first_seen": "2026-08-17",
       "last_seen": "2026-08-17"
     },
     "event-misk-x-unyo-youth-engagement-fellowship": {
@@ -1725,6 +1740,11 @@
     "event-3a-ka3ba": {
       "identity": "3a ka3ba|riyadh|2026-09-18",
       "first_seen": "2026-08-16",
+      "last_seen": "2026-08-17"
+    },
+    "event-3a-ka3ba-2": {
+      "identity": "3a ka3ba|jeddah|2026-09-19",
+      "first_seen": "2026-08-17",
       "last_seen": "2026-08-17"
     },
     "event-gulf-steel-storage-tank-refinery-expo": {
@@ -7666,6 +7686,12 @@
       "identity": "ورشة عمل \"بعنوان مناقشة التحديات التي تواجه قطاع المقاولات بمنطقة المدينة المنورة\" بالتعاون مع مجلس المنطقة بامارة منطقة المدينة المنورة|madinah|2022-01-18",
       "first_seen": "2026-07-11",
       "last_seen": "2026-08-17"
+    },
+    "event-this-is-michael": {
+      "identity": "this is michael|jeddah|2026-08-21",
+      "first_seen": "2026-08-17",
+      "last_seen": "2026-08-17",
+      "retired_at": "2026-08-17"
     },
     "ended-ithra-events-textured-painting-20260627-b0fc79b9": {
       "identity": "textured painting|dhahran|2026-06-27",
