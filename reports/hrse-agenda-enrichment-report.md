@@ -1,6 +1,6 @@
 # HRSE KSA 2026 Agenda Enrichment
 
-- generated_at: 2026-08-16T19:00:32.670Z
+- generated_at: 2026-08-17T02:08:20.506Z
 - catalog_targets: 1
 - candidate_targets: 1
 - official_sessions: 102

@@ -1,22 +1,22 @@
 {
   "schema": "eventlive.harvest-os-status.v1",
-  "generated_at": "2026-08-16T19:10:15.167Z",
+  "generated_at": "2026-08-17T02:19:32.186Z",
   "status": "NEEDS_WORK",
   "operating_rule": "Probe before new sources; sample before full harvest; Raw collection is not publication; discovery-only never auto-publishes.",
   "totals": {
     "sources": 88,
-    "candidates": 590,
-    "matched_candidates": 559,
+    "candidates": 627,
+    "matched_candidates": 594,
     "auto_publish_sources": 15,
     "candidate_only_sources": 12,
     "partnership_required_sources": 5,
     "blocked_or_closed_sources": 0,
     "manual_review_sources": 56,
-    "collection_attempted": 19,
-    "productive_sources": 18,
-    "collector_errors": 8,
+    "collection_attempted": 22,
+    "productive_sources": 19,
+    "collector_errors": 7,
     "chronic_collector_errors": 7,
-    "transient_collector_errors": 1
+    "transient_collector_errors": 0
   },
   "policies": {
     "partnership_required": 5,
@@ -25,22 +25,22 @@
     "manual_review": 56
   },
   "candidates_by_gate": {
-    "catalog-review": 557,
-    "duplicate-review": 8,
+    "catalog-review": 592,
+    "duplicate-review": 10,
     "source-evidence": 25
   },
   "funnel": {
-    "discovered_this_run": 244,
-    "candidate_queue": 590,
-    "evaluated_for_publish": 590,
-    "linked_existing": 545,
-    "published_new": 7,
-    "blocked": 38,
+    "discovered_this_run": 335,
+    "candidate_queue": 627,
+    "evaluated_for_publish": 627,
+    "linked_existing": 551,
+    "published_new": 36,
+    "blocked": 40,
     "secondary_promoted": 0,
-    "secondary_still_blocked": 35
+    "secondary_still_blocked": 71
   },
   "blocked_reasons": {
-    "possible duplicate requires review: exact-title-city-source-conflict": 6,
+    "possible duplicate requires review: exact-title-city-source-conflict": 8,
     "linked catalog row event-aseer-season was superseded by dedupe": 2,
     "linked catalog row event-dakah was superseded by dedupe": 1,
     "publication gate source-evidence is not auto-publishable": 13,
@@ -100,13 +100,6 @@
       "error_streak": 3,
       "kind": "chronic",
       "attempted_this_run": false
-    },
-    {
-      "id": "asharqia-chamber-events",
-      "note": "fetch failed; page.goto: Timeout 30000ms exceeded. Call log:   - navigating to \"https://www.chamber.org.sa/sites/Arabic/Events/ChamberEvents/Pages/AllChamberEvents.aspx\", waiting until \"domcontentload",
-      "error_streak": 2,
-      "kind": "transient",
-      "attempted_this_run": true
     }
   ],
   "sources": [

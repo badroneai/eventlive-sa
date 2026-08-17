@@ -1,32 +1,32 @@
 # EventLive Harvest OS Status
 
-- Generated at: 2026-08-16T19:10:15.167Z
+- Generated at: 2026-08-17T02:19:32.186Z
 - Status: NEEDS_WORK
 - Operating rule: Probe before new sources; sample before full harvest; Raw collection is not publication; discovery-only never auto-publishes.
 
 ## Totals
 
 - Sources: 88
-- Candidates: 590
-- Matched candidates: 559
+- Candidates: 627
+- Matched candidates: 594
 - Auto-publish sources: 15
 - Candidate-only sources: 12
 - Partnership-required sources: 5
-- Productive sources / attempted: 18/19
-- Collector errors: 8 (chronic 7, transient 1)
+- Productive sources / attempted: 19/22
+- Collector errors: 7 (chronic 7, transient 0)
 
 ## Publication Funnel
 
 | Stage | Count |
 | --- | --- |
-| discovered_this_run | 244 |
-| candidate_queue | 590 |
-| evaluated_for_publish | 590 |
-| linked_existing | 545 |
-| published_new | 7 |
-| blocked | 38 |
+| discovered_this_run | 335 |
+| candidate_queue | 627 |
+| evaluated_for_publish | 627 |
+| linked_existing | 551 |
+| published_new | 36 |
+| blocked | 40 |
 | secondary_promoted | 0 |
-| secondary_still_blocked | 35 |
+| secondary_still_blocked | 71 |
 
 ## Blocked Reasons
 
@@ -34,7 +34,7 @@
 | --- | --- |
 | publication gate source-evidence is not auto-publishable | 13 |
 | unknown category requires review | 10 |
-| possible duplicate requires review: exact-title-city-source-conflict | 6 |
+| possible duplicate requires review: exact-title-city-source-conflict | 8 |
 | linked catalog row event-aseer-season was superseded by dedupe | 2 |
 | possible duplicate requires review: exact-title-city-venue-conflict | 2 |
 | linked catalog row event-dakah was superseded by dedupe | 1 |
@@ -54,7 +54,6 @@
 | saudi-pro-league-fixtures | chronic | 6 | no | collector-error: fetch failed |
 | tuwaiq-academy-bootcamps | chronic | 3 | no | collector-error: HTTP 403 |
 | saudi-space-agency-events | chronic | 3 | no | fetch failed |
-| asharqia-chamber-events | transient | 2 | yes | fetch failed; page.goto: Timeout 30000ms exceeded. Call log:   - navigating to "https://www.chamber.org.sa/sites/Arabic/Events/ChamberEvents/Pages/AllChamberEvents.aspx", waiting until "domcontentload |
 
 | Source | Policy | Trust | Gate |
 | --- | --- | --- | --- |

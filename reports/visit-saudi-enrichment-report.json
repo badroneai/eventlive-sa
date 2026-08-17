@@ -1,13 +1,13 @@
 {
-  "generated_at": "2026-08-16T18:58:53.791Z",
+  "generated_at": "2026-08-17T02:07:14.241Z",
   "catalog": "data/events_catalog.json",
   "source": "Visit Saudi Calendar",
   "totals": {
-    "targets": 27,
-    "candidates": 16,
-    "enriched": 27,
-    "fetched": 27,
-    "images": 25,
+    "targets": 29,
+    "candidates": 18,
+    "enriched": 29,
+    "fetched": 29,
+    "images": 27,
     "fetch_failures": 0
   },
   "enriched": [
@@ -168,6 +168,22 @@
       "title": "Hussain Moheb Live in Riyadh",
       "source_method": "official-page-html",
       "image_url": "https://scth.scene7.com/is/image/scth/hussain-moheb?wid=1920&hei=1080&fit=constrain&fmt=webp",
+      "fetched": true,
+      "features": 7
+    },
+    {
+      "id": "event-this-is-michael",
+      "title": "This Is Michael",
+      "source_method": "official-page-html",
+      "image_url": "https://www.visitsaudi.com/content/dam/wvs/calendar/this-is-michael.jpg",
+      "fetched": true,
+      "features": 7
+    },
+    {
+      "id": "event-spacetoon-memories-with-assem-sukkar",
+      "title": "Spacetoon Memories with Assem Sukkar",
+      "source_method": "official-page-html",
+      "image_url": "https://www.visitsaudi.com/content/dam/wvs/calendar/spacetoon-memories-with-assem-sukkar.jpg",
       "fetched": true,
       "features": 7
     },

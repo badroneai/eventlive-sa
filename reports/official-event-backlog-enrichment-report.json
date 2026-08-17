@@ -1,29 +1,49 @@
 {
-  "generated_at": "2026-08-16T19:00:39.422Z",
+  "generated_at": "2026-08-17T02:08:31.242Z",
   "totals": {
-    "targets": 9,
-    "enriched": 9,
-    "fetched": 7,
-    "images": 9,
-    "fetch_failures": 2
+    "targets": 50,
+    "enriched": 50,
+    "fetched": 25,
+    "images": 50,
+    "fetch_failures": 25
   },
   "enriched": [
     {
-      "id": "event-community-garden-from-soil-to-seed-basics-to-growing-your-own-plants-wit",
-      "title": "Community Garden | From Soil to Seed: Basics to growing your own plants with Sara Alsayed",
-      "source_label": "Hayy Jameel What's On",
+      "id": "event-battlekart-in-abha",
+      "title": "BattleKart in Abha",
+      "source_label": "Visit Saudi Seasons",
       "source_method": "official-page-meta",
-      "source_url": "https://hayyjameel.org/whats-on/community-garden-from-soil-to-seed-basics-to-growing-your-own-plants-with-sara-alsayed/",
+      "source_url": "https://www.visitsaudi.com/en/aseer/events/battlekart",
       "fetched": true,
       "image": true,
       "fetch_reason": ""
     },
     {
-      "id": "event-hayy-makers-open-call-makers-matters",
-      "title": "Hayy Makers | Open Call: Makers Matters",
-      "source_label": "Hayy Jameel What's On",
+      "id": "event-in-act-anniversary-act-xi-2",
+      "title": "IN ACT ANNIVERSARY - ACT XI",
+      "source_label": "Visit Saudi Summer Calendar PDF",
+      "source_method": "approved-source-row",
+      "source_url": "https://www.visitsaudi.com/content/dam/documents/saudi-calendar-ar.pdf",
+      "fetched": false,
+      "image": true,
+      "fetch_reason": "The operation was aborted due to timeout"
+    },
+    {
+      "id": "event-shaaf",
+      "title": "Shaaf",
+      "source_label": "Visit Saudi Seasons",
       "source_method": "official-page-meta",
-      "source_url": "https://hayyjameel.org/whats-on/hayy-makers-open-call-makers-matters/",
+      "source_url": "https://www.visitsaudi.com/en/aseer/events/shaaf",
+      "fetched": true,
+      "image": true,
+      "fetch_reason": ""
+    },
+    {
+      "id": "event-أشجار",
+      "title": "أشجار",
+      "source_label": "Visit Saudi Summer Calendar PDF",
+      "source_method": "official-page-meta",
+      "source_url": "https://www.visitsaudi.com/content/dam/documents/saudi-calendar-ar.pdf",
       "fetched": true,
       "image": true,
       "fetch_reason": ""
@@ -39,28 +59,278 @@
       "fetch_reason": ""
     },
     {
-      "id": "event-شارع-الفن-القرية-الأوروبية",
-      "title": "شارع الفن - القرية الاوروبية",
+      "id": "event-الخطة-c-مع-رضوان-الريمي-ليلة-كوميدية-طربية",
+      "title": "الخطة C مع رضوان الريمي ليلة كوميدية طربية",
+      "source_label": "Visit Saudi Summer Calendar PDF",
+      "source_method": "approved-source-row",
+      "source_url": "https://www.visitsaudi.com/content/dam/documents/saudi-calendar-ar.pdf",
+      "fetched": false,
+      "image": true,
+      "fetch_reason": "The operation was aborted due to timeout"
+    },
+    {
+      "id": "event-اوبن-مايك-للمواهب",
+      "title": "اوبن مايك للمواهب",
       "source_label": "Visit Saudi Summer Calendar PDF",
       "source_method": "official-page-meta",
       "source_url": "https://www.visitsaudi.com/content/dam/documents/saudi-calendar-ar.pdf",
       "fetched": true,
       "image": true,
       "fetch_reason": ""
+    },
+    {
+      "id": "event-باتل-كارت-في-أبها",
+      "title": "باتل كارت في أبها",
+      "source_label": "Visit Saudi Summer Calendar PDF",
+      "source_method": "official-page-meta",
+      "source_url": "https://www.visitsaudi.com/content/dam/documents/saudi-calendar-ar.pdf",
+      "fetched": true,
+      "image": true,
+      "fetch_reason": ""
+    },
+    {
+      "id": "event-بسطة-القابل",
+      "title": "بسطة القابل",
+      "source_label": "Visit Saudi Summer Calendar PDF",
+      "source_method": "approved-source-row",
+      "source_url": "https://www.visitsaudi.com/content/dam/documents/saudi-calendar-ar.pdf",
+      "fetched": false,
+      "image": true,
+      "fetch_reason": "fetch failed"
+    },
+    {
+      "id": "event-جولة-البقي-بين-جبال-الباحة",
+      "title": "جولة البقي بين جبال الباحة",
+      "source_label": "Visit Saudi Summer Calendar PDF",
+      "source_method": "official-page-meta",
+      "source_url": "https://www.visitsaudi.com/content/dam/documents/saudi-calendar-ar.pdf",
+      "fetched": true,
+      "image": true,
+      "fetch_reason": ""
+    },
+    {
+      "id": "event-جولة-بقي-السريعة-الباحة",
+      "title": "جولة بقي السريعة الباحة",
+      "source_label": "Visit Saudi Summer Calendar PDF",
+      "source_method": "approved-source-row",
+      "source_url": "https://www.visitsaudi.com/content/dam/documents/saudi-calendar-ar.pdf",
+      "fetched": false,
+      "image": true,
+      "fetch_reason": "The operation was aborted due to timeout"
+    },
+    {
+      "id": "event-ذكريات-سبيستون-مع-الفنان-عاصم-سكر",
+      "title": "ذكريات سبيستون مع الفنان عاصم سكر",
+      "source_label": "Visit Saudi Summer Calendar PDF",
+      "source_method": "official-page-meta",
+      "source_url": "https://www.visitsaudi.com/content/dam/documents/saudi-calendar-ar.pdf",
+      "fetched": true,
+      "image": true,
+      "fetch_reason": ""
+    },
+    {
+      "id": "event-ستاند-أب-كوميدي-وعرض-تفاعلي-مع-صلاح-الدالي",
+      "title": "ستاند أب كوميدي وعرض تفاعلي مع صلاح الدالي",
+      "source_label": "Visit Saudi Summer Calendar PDF",
+      "source_method": "approved-source-row",
+      "source_url": "https://www.visitsaudi.com/content/dam/documents/saudi-calendar-ar.pdf",
+      "fetched": false,
+      "image": true,
+      "fetch_reason": "The operation was aborted due to timeout"
+    },
+    {
+      "id": "event-سيرك-فونتانا",
+      "title": "سيرك فونتانا",
+      "source_label": "Visit Saudi Summer Calendar PDF",
+      "source_method": "approved-source-row",
+      "source_url": "https://www.visitsaudi.com/content/dam/documents/saudi-calendar-ar.pdf",
+      "fetched": false,
+      "image": true,
+      "fetch_reason": "The operation was aborted due to timeout"
+    },
+    {
+      "id": "event-شابتر-26",
+      "title": "شابتر 26",
+      "source_label": "Visit Saudi Summer Calendar PDF",
+      "source_method": "official-page-meta",
+      "source_url": "https://www.visitsaudi.com/content/dam/documents/saudi-calendar-ar.pdf",
+      "fetched": true,
+      "image": true,
+      "fetch_reason": ""
+    },
+    {
+      "id": "event-شارع-الفن-القرية-الأوروبية",
+      "title": "شارع الفن - القرية الاوروبية",
+      "source_label": "Visit Saudi Summer Calendar PDF",
+      "source_method": "approved-source-row",
+      "source_url": "https://www.visitsaudi.com/content/dam/documents/saudi-calendar-ar.pdf",
+      "fetched": false,
+      "image": true,
+      "fetch_reason": "The operation was aborted due to timeout"
+    },
+    {
+      "id": "event-شارع-الفن-القرية-الريفية",
+      "title": "شارع الفن - القرية الريفية",
+      "source_label": "Visit Saudi Summer Calendar PDF",
+      "source_method": "approved-source-row",
+      "source_url": "https://www.visitsaudi.com/content/dam/documents/saudi-calendar-ar.pdf",
+      "fetched": false,
+      "image": true,
+      "fetch_reason": "The operation was aborted due to timeout"
+    },
+    {
+      "id": "event-شاطئ-منتجع-القرية-في-جدة",
+      "title": "شاطئ منتجع القرية في جدة",
+      "source_label": "Visit Saudi Summer Calendar PDF",
+      "source_method": "approved-source-row",
+      "source_url": "https://www.visitsaudi.com/content/dam/documents/saudi-calendar-ar.pdf",
+      "fetched": false,
+      "image": true,
+      "fetch_reason": "The operation was aborted due to timeout"
+    },
+    {
+      "id": "event-شعف",
+      "title": "شعف",
+      "source_label": "Visit Saudi Summer Calendar PDF",
+      "source_method": "approved-source-row",
+      "source_url": "https://www.visitsaudi.com/content/dam/documents/saudi-calendar-ar.pdf",
+      "fetched": false,
+      "image": true,
+      "fetch_reason": "The operation was aborted due to timeout"
+    },
+    {
+      "id": "event-صد-رد-عرض-ستاند-اب-كوميدي-من-أوس-النفيعي",
+      "title": "صد رد: عرض ستاند اب كوميدي من أوس النفيعي",
+      "source_label": "Visit Saudi Summer Calendar PDF",
+      "source_method": "approved-source-row",
+      "source_url": "https://www.visitsaudi.com/content/dam/documents/saudi-calendar-ar.pdf",
+      "fetched": false,
+      "image": true,
+      "fetch_reason": "The operation was aborted due to timeout"
+    },
+    {
+      "id": "event-صيف-عذية",
+      "title": "صيف عذية",
+      "source_label": "Visit Saudi Summer Calendar PDF",
+      "source_method": "approved-source-row",
+      "source_url": "https://www.visitsaudi.com/content/dam/documents/saudi-calendar-ar.pdf",
+      "fetched": false,
+      "image": true,
+      "fetch_reason": "The operation was aborted due to timeout"
+    },
+    {
+      "id": "event-عرض-this-is-michael-الموسيقي",
+      "title": "عرض This Is Michael الموسيقي",
+      "source_label": "Visit Saudi Summer Calendar PDF",
+      "source_method": "approved-source-row",
+      "source_url": "https://www.visitsaudi.com/content/dam/documents/saudi-calendar-ar.pdf",
+      "fetched": false,
+      "image": true,
+      "fetch_reason": "The operation was aborted due to timeout"
     },
     {
       "id": "event-عروض-الفنون-الأدائية-التقليدية",
       "title": "عروض الفنون الادائية التقليدية",
       "source_label": "Visit Saudi Summer Calendar PDF",
-      "source_method": "official-page-meta",
+      "source_method": "approved-source-row",
       "source_url": "https://www.visitsaudi.com/content/dam/documents/saudi-calendar-ar.pdf",
-      "fetched": true,
+      "fetched": false,
       "image": true,
-      "fetch_reason": ""
+      "fetch_reason": "The operation was aborted due to timeout"
+    },
+    {
+      "id": "event-فعالية-القصبة",
+      "title": "فعالية القصبة",
+      "source_label": "Visit Saudi Summer Calendar PDF",
+      "source_method": "approved-source-row",
+      "source_url": "https://www.visitsaudi.com/content/dam/documents/saudi-calendar-ar.pdf",
+      "fetched": false,
+      "image": true,
+      "fetch_reason": "The operation was aborted due to timeout"
+    },
+    {
+      "id": "event-فعالية-ترحاب",
+      "title": "فعالية ترحاب",
+      "source_label": "Visit Saudi Summer Calendar PDF",
+      "source_method": "approved-source-row",
+      "source_url": "https://www.visitsaudi.com/content/dam/documents/saudi-calendar-ar.pdf",
+      "fetched": false,
+      "image": true,
+      "fetch_reason": "The operation was aborted due to timeout"
+    },
+    {
+      "id": "event-فعالية-كومبات-أرينا",
+      "title": "فعالية كومبات أرينا",
+      "source_label": "Visit Saudi Summer Calendar PDF",
+      "source_method": "approved-source-row",
+      "source_url": "https://www.visitsaudi.com/content/dam/documents/saudi-calendar-ar.pdf",
+      "fetched": false,
+      "image": true,
+      "fetch_reason": "The operation was aborted due to timeout"
+    },
+    {
+      "id": "event-فينا-نحكي؟-عرض-ستاند-أب-كوميدي-يقدمه-جون-أشقر",
+      "title": "فينا نحكي؟ عرض ستاند أب كوميدي يقدمه جون أشقر",
+      "source_label": "Visit Saudi Summer Calendar PDF",
+      "source_method": "approved-source-row",
+      "source_url": "https://www.visitsaudi.com/content/dam/documents/saudi-calendar-ar.pdf",
+      "fetched": false,
+      "image": true,
+      "fetch_reason": "The operation was aborted due to timeout"
+    },
+    {
+      "id": "event-قرية-الاطاولة-التراثية",
+      "title": "قرية الاطاولة التراثية",
+      "source_label": "Visit Saudi Summer Calendar PDF",
+      "source_method": "approved-source-row",
+      "source_url": "https://www.visitsaudi.com/content/dam/documents/saudi-calendar-ar.pdf",
+      "fetched": false,
+      "image": true,
+      "fetch_reason": "The operation was aborted due to timeout"
     },
     {
       "id": "event-قصور-وقاع-ابو-نقطة-المتحمي",
       "title": "قصور وقلاع ابو نقطة المتحمي",
+      "source_label": "Visit Saudi Summer Calendar PDF",
+      "source_method": "approved-source-row",
+      "source_url": "https://www.visitsaudi.com/content/dam/documents/saudi-calendar-ar.pdf",
+      "fetched": false,
+      "image": true,
+      "fetch_reason": "The operation was aborted due to timeout"
+    },
+    {
+      "id": "event-ليالي-مضيئة",
+      "title": "ليالي مضيئة",
+      "source_label": "Visit Saudi Summer Calendar PDF",
+      "source_method": "approved-source-row",
+      "source_url": "https://www.visitsaudi.com/content/dam/documents/saudi-calendar-ar.pdf",
+      "fetched": false,
+      "image": true,
+      "fetch_reason": "The operation was aborted due to timeout"
+    },
+    {
+      "id": "event-ليلة-5x5",
+      "title": "ليلة 5x5",
+      "source_label": "Visit Saudi Summer Calendar PDF",
+      "source_method": "approved-source-row",
+      "source_url": "https://www.visitsaudi.com/content/dam/documents/saudi-calendar-ar.pdf",
+      "fetched": false,
+      "image": true,
+      "fetch_reason": "The operation was aborted due to timeout"
+    },
+    {
+      "id": "event-ليلة-ستانداب-كوميدي-في-جدة",
+      "title": "ليلة ستانداب كوميدي في جدة",
+      "source_label": "Visit Saudi Summer Calendar PDF",
+      "source_method": "approved-source-row",
+      "source_url": "https://www.visitsaudi.com/content/dam/documents/saudi-calendar-ar.pdf",
+      "fetched": false,
+      "image": true,
+      "fetch_reason": "The operation was aborted due to timeout"
+    },
+    {
+      "id": "event-مخيّم-النحالون-الصغار-الصيفي",
+      "title": "مخيّم النحالون الصغار الصيفي",
       "source_label": "Visit Saudi Summer Calendar PDF",
       "source_method": "approved-source-row",
       "source_url": "https://www.visitsaudi.com/content/dam/documents/saudi-calendar-ar.pdf",
@@ -79,21 +349,161 @@
       "fetch_reason": "The operation was aborted due to timeout"
     },
     {
-      "id": "event-hayy-cinema-august-2026",
-      "title": "Hayy Cinema | August 2026",
+      "id": "event-hayy-arts-from-another-angel-explore-contemporary-art-with-alternative-e",
+      "title": "Hayy Arts | From Another Angle, explore contemporary art with alternative exhibition tours",
       "source_label": "Hayy Jameel What's On",
       "source_method": "official-page-meta",
-      "source_url": "https://hayyjameel.org/whats-on/hayy-cinema-august-2026/",
+      "source_url": "https://hayyjameel.org/whats-on/hayy-arts-from-another-angel-explore-contemporary-art-with-alternative-exhibition-tours/",
       "fetched": true,
       "image": true,
       "fetch_reason": ""
     },
     {
-      "id": "event-hayy-explorers-in-august-as-told-by-the-land-routes-of-exchange",
-      "title": "Hayy Explorers in August | As Told by the Land: Routes of Exchange",
-      "source_label": "Hayy Jameel What's On",
+      "id": "event-التسجيل-والسداد-لدبلوم-المشارك-حضوري-في-الإدارة-الفندقية-لخارج-مكة",
+      "title": "التسجيل والسداد لدبلوم المشارك (حضوري) في الإدارة الفندقية لخارج مكة",
+      "source_label": "Umm Al-Qura University Events Center",
       "source_method": "official-page-meta",
-      "source_url": "https://hayyjameel.org/whats-on/hayy-explorers-thematic-as-told-by-the-land-routes-of-exchange/",
+      "source_url": "https://uqu.edu.sa/App/Events/41057",
+      "fetched": true,
+      "image": true,
+      "fetch_reason": ""
+    },
+    {
+      "id": "event-التسجيل-والسداد-لدبلوم-المشارك-حضوري-في-الخدمة-الاجتماعية-في-رعاية-الأيت",
+      "title": "التسجيل والسداد لدبلوم المشارك (حضوري) في الخدمة الاجتماعية في رعاية الأيتام لخارج مكة",
+      "source_label": "Umm Al-Qura University Events Center",
+      "source_method": "official-page-meta",
+      "source_url": "https://uqu.edu.sa/App/Events/41056",
+      "fetched": true,
+      "image": true,
+      "fetch_reason": ""
+    },
+    {
+      "id": "event-التسجيل-والسداد-لدبلوم-المشارك-حضوري-في-مساعد-في-التربية-الخاصة-وإدارة-ا",
+      "title": "التسجيل والسداد لدبلوم المشارك (حضوري) في مساعد في التربية الخاصة وإدارة السلوك لخارج مكة",
+      "source_label": "Umm Al-Qura University Events Center",
+      "source_method": "official-page-meta",
+      "source_url": "https://uqu.edu.sa/App/Events/41058",
+      "fetched": true,
+      "image": true,
+      "fetch_reason": ""
+    },
+    {
+      "id": "event-التسجيل-والسداد-لدبلوم-المشارك-عن-بعد-في-إدارة-الحشود-لخارج-مكة",
+      "title": "التسجيل والسداد لدبلوم المشارك (عن بعد) في إدارة الحشود لخارج مكة",
+      "source_label": "Umm Al-Qura University Events Center",
+      "source_method": "official-page-meta",
+      "source_url": "https://uqu.edu.sa/App/Events/41060",
+      "fetched": true,
+      "image": true,
+      "fetch_reason": ""
+    },
+    {
+      "id": "event-التسجيل-والسداد-لدبلوم-المشارك-عن-بعد-في-إدارة-اللوجستيات-وسلاسل-الإمداد",
+      "title": "التسجيل والسداد لدبلوم المشارك (عن بعد) في إدارة اللوجستيات وسلاسل الإمداد لخارج مكة",
+      "source_label": "Umm Al-Qura University Events Center",
+      "source_method": "official-page-meta",
+      "source_url": "https://uqu.edu.sa/App/Events/41061",
+      "fetched": true,
+      "image": true,
+      "fetch_reason": ""
+    },
+    {
+      "id": "event-التسجيل-والسداد-لدبلوم-المشارك-عن-بعد-في-الإرشاد-السياحي-لخارج-مكة",
+      "title": "التسجيل والسداد لدبلوم المشارك (عن بعد) في الإرشاد السياحي لخارج مكة",
+      "source_label": "Umm Al-Qura University Events Center",
+      "source_method": "official-page-meta",
+      "source_url": "https://uqu.edu.sa/App/Events/41059",
+      "fetched": true,
+      "image": true,
+      "fetch_reason": ""
+    },
+    {
+      "id": "event-نموذج-التسجيل-والسداد-لدبلوم-المتوسط-في-إدارة-الموارد-البشرية-لخارج-مكة",
+      "title": "نموذج التسجيل والسداد لدبلوم المتوسط في إدارة الموارد البشرية لخارج مكة",
+      "source_label": "Umm Al-Qura University Events Center",
+      "source_method": "official-page-meta",
+      "source_url": "https://uqu.edu.sa/App/Events/41051",
+      "fetched": true,
+      "image": true,
+      "fetch_reason": ""
+    },
+    {
+      "id": "event-نموذج-التسجيل-والسداد-لدبلوم-المتوسط-في-الأنظمة-لخارج-مكة",
+      "title": "نموذج التسجيل والسداد لدبلوم المتوسط في الأنظمة لخارج مكة",
+      "source_label": "Umm Al-Qura University Events Center",
+      "source_method": "official-page-meta",
+      "source_url": "https://uqu.edu.sa/App/Events/41052",
+      "fetched": true,
+      "image": true,
+      "fetch_reason": ""
+    },
+    {
+      "id": "event-نموذج-التسجيل-والسداد-لدبلوم-المتوسط-في-البرمجة-وعلوم-الحاسب-الآلي-لخارج",
+      "title": "نموذج التسجيل والسداد لدبلوم المتوسط في البرمجة وعلوم الحاسب الآلي لخارج مكة",
+      "source_label": "Umm Al-Qura University Events Center",
+      "source_method": "official-page-meta",
+      "source_url": "https://uqu.edu.sa/App/Events/41049",
+      "fetched": true,
+      "image": true,
+      "fetch_reason": ""
+    },
+    {
+      "id": "event-نموذج-التسجيل-والسداد-لدبلوم-المتوسط-في-التصميم-الجرافيكي-والوسائط-الرقم",
+      "title": "نموذج التسجيل والسداد لدبلوم المتوسط في التصميم الجرافيكي والوسائط الرقمية لخارج مكة",
+      "source_label": "Umm Al-Qura University Events Center",
+      "source_method": "official-page-meta",
+      "source_url": "https://uqu.edu.sa/App/Events/41054",
+      "fetched": true,
+      "image": true,
+      "fetch_reason": ""
+    },
+    {
+      "id": "event-نموذج-التسجيل-والسداد-لدبلوم-المتوسط-في-التكنولوجيا-المالية-لخارج-مكة",
+      "title": "نموذج التسجيل والسداد لدبلوم المتوسط في التكنولوجيا المالية لخارج مكة",
+      "source_label": "Umm Al-Qura University Events Center",
+      "source_method": "official-page-meta",
+      "source_url": "https://uqu.edu.sa/App/Events/41053",
+      "fetched": true,
+      "image": true,
+      "fetch_reason": ""
+    },
+    {
+      "id": "event-نموذج-التسجيل-والسداد-لدبلوم-المتوسط-في-الصحة-والسلامة-المهنية-لخارج-مكة",
+      "title": "نموذج التسجيل والسداد لدبلوم المتوسط في الصحة والسلامة المهنية لخارج مكة",
+      "source_label": "Umm Al-Qura University Events Center",
+      "source_method": "official-page-meta",
+      "source_url": "https://uqu.edu.sa/App/Events/41055",
+      "fetched": true,
+      "image": true,
+      "fetch_reason": ""
+    },
+    {
+      "id": "event-نموذج-التسجيل-والسداد-لدبلوم-المتوسط-في-المحاسبة-المالية-لخارج-مكة",
+      "title": "نموذج التسجيل والسداد لدبلوم المتوسط في المحاسبة المالية لخارج مكة",
+      "source_label": "Umm Al-Qura University Events Center",
+      "source_method": "official-page-meta",
+      "source_url": "https://uqu.edu.sa/App/Events/41050",
+      "fetched": true,
+      "image": true,
+      "fetch_reason": ""
+    },
+    {
+      "id": "event-نموذج-التسجيل-والسداد-للدبلوم-المتوسط-في-البصريات-لخارج-مكة",
+      "title": "نموذج التسجيل والسداد للدبلوم المتوسط في البصريات لخارج مكة",
+      "source_label": "Umm Al-Qura University Events Center",
+      "source_method": "official-page-meta",
+      "source_url": "https://uqu.edu.sa/App/Events/41047",
+      "fetched": true,
+      "image": true,
+      "fetch_reason": ""
+    },
+    {
+      "id": "event-نموذج-التسجيل-والسداد-للدبلوم-المتوسط-في-جودة-وسلامة-الغذاء-لخارج-مكة",
+      "title": "نموذج التسجيل والسداد للدبلوم المتوسط في جودة وسلامة الغذاء لخارج مكة",
+      "source_label": "Umm Al-Qura University Events Center",
+      "source_method": "official-page-meta",
+      "source_url": "https://uqu.edu.sa/App/Events/41048",
       "fetched": true,
       "image": true,
       "fetch_reason": ""
@@ -101,8 +511,146 @@
   ],
   "failed": [
     {
+      "id": "event-in-act-anniversary-act-xi-2",
+      "title": "IN ACT ANNIVERSARY - ACT XI",
+      "source_url": "https://www.visitsaudi.com/content/dam/documents/saudi-calendar-ar.pdf",
+      "reason": "The operation was aborted due to timeout"
+    },
+    {
+      "id": "event-الخطة-c-مع-رضوان-الريمي-ليلة-كوميدية-طربية",
+      "title": "الخطة C مع رضوان الريمي ليلة كوميدية طربية",
+      "source_url": "https://www.visitsaudi.com/content/dam/documents/saudi-calendar-ar.pdf",
+      "reason": "The operation was aborted due to timeout"
+    },
+    {
+      "id": "event-بسطة-القابل",
+      "title": "بسطة القابل",
+      "source_url": "https://www.visitsaudi.com/content/dam/documents/saudi-calendar-ar.pdf",
+      "reason": "fetch failed"
+    },
+    {
+      "id": "event-جولة-بقي-السريعة-الباحة",
+      "title": "جولة بقي السريعة الباحة",
+      "source_url": "https://www.visitsaudi.com/content/dam/documents/saudi-calendar-ar.pdf",
+      "reason": "The operation was aborted due to timeout"
+    },
+    {
+      "id": "event-ستاند-أب-كوميدي-وعرض-تفاعلي-مع-صلاح-الدالي",
+      "title": "ستاند أب كوميدي وعرض تفاعلي مع صلاح الدالي",
+      "source_url": "https://www.visitsaudi.com/content/dam/documents/saudi-calendar-ar.pdf",
+      "reason": "The operation was aborted due to timeout"
+    },
+    {
+      "id": "event-سيرك-فونتانا",
+      "title": "سيرك فونتانا",
+      "source_url": "https://www.visitsaudi.com/content/dam/documents/saudi-calendar-ar.pdf",
+      "reason": "The operation was aborted due to timeout"
+    },
+    {
+      "id": "event-شارع-الفن-القرية-الأوروبية",
+      "title": "شارع الفن - القرية الاوروبية",
+      "source_url": "https://www.visitsaudi.com/content/dam/documents/saudi-calendar-ar.pdf",
+      "reason": "The operation was aborted due to timeout"
+    },
+    {
+      "id": "event-شارع-الفن-القرية-الريفية",
+      "title": "شارع الفن - القرية الريفية",
+      "source_url": "https://www.visitsaudi.com/content/dam/documents/saudi-calendar-ar.pdf",
+      "reason": "The operation was aborted due to timeout"
+    },
+    {
+      "id": "event-شاطئ-منتجع-القرية-في-جدة",
+      "title": "شاطئ منتجع القرية في جدة",
+      "source_url": "https://www.visitsaudi.com/content/dam/documents/saudi-calendar-ar.pdf",
+      "reason": "The operation was aborted due to timeout"
+    },
+    {
+      "id": "event-شعف",
+      "title": "شعف",
+      "source_url": "https://www.visitsaudi.com/content/dam/documents/saudi-calendar-ar.pdf",
+      "reason": "The operation was aborted due to timeout"
+    },
+    {
+      "id": "event-صد-رد-عرض-ستاند-اب-كوميدي-من-أوس-النفيعي",
+      "title": "صد رد: عرض ستاند اب كوميدي من أوس النفيعي",
+      "source_url": "https://www.visitsaudi.com/content/dam/documents/saudi-calendar-ar.pdf",
+      "reason": "The operation was aborted due to timeout"
+    },
+    {
+      "id": "event-صيف-عذية",
+      "title": "صيف عذية",
+      "source_url": "https://www.visitsaudi.com/content/dam/documents/saudi-calendar-ar.pdf",
+      "reason": "The operation was aborted due to timeout"
+    },
+    {
+      "id": "event-عرض-this-is-michael-الموسيقي",
+      "title": "عرض This Is Michael الموسيقي",
+      "source_url": "https://www.visitsaudi.com/content/dam/documents/saudi-calendar-ar.pdf",
+      "reason": "The operation was aborted due to timeout"
+    },
+    {
+      "id": "event-عروض-الفنون-الأدائية-التقليدية",
+      "title": "عروض الفنون الادائية التقليدية",
+      "source_url": "https://www.visitsaudi.com/content/dam/documents/saudi-calendar-ar.pdf",
+      "reason": "The operation was aborted due to timeout"
+    },
+    {
+      "id": "event-فعالية-القصبة",
+      "title": "فعالية القصبة",
+      "source_url": "https://www.visitsaudi.com/content/dam/documents/saudi-calendar-ar.pdf",
+      "reason": "The operation was aborted due to timeout"
+    },
+    {
+      "id": "event-فعالية-ترحاب",
+      "title": "فعالية ترحاب",
+      "source_url": "https://www.visitsaudi.com/content/dam/documents/saudi-calendar-ar.pdf",
+      "reason": "The operation was aborted due to timeout"
+    },
+    {
+      "id": "event-فعالية-كومبات-أرينا",
+      "title": "فعالية كومبات أرينا",
+      "source_url": "https://www.visitsaudi.com/content/dam/documents/saudi-calendar-ar.pdf",
+      "reason": "The operation was aborted due to timeout"
+    },
+    {
+      "id": "event-فينا-نحكي؟-عرض-ستاند-أب-كوميدي-يقدمه-جون-أشقر",
+      "title": "فينا نحكي؟ عرض ستاند أب كوميدي يقدمه جون أشقر",
+      "source_url": "https://www.visitsaudi.com/content/dam/documents/saudi-calendar-ar.pdf",
+      "reason": "The operation was aborted due to timeout"
+    },
+    {
+      "id": "event-قرية-الاطاولة-التراثية",
+      "title": "قرية الاطاولة التراثية",
+      "source_url": "https://www.visitsaudi.com/content/dam/documents/saudi-calendar-ar.pdf",
+      "reason": "The operation was aborted due to timeout"
+    },
+    {
       "id": "event-قصور-وقاع-ابو-نقطة-المتحمي",
       "title": "قصور وقلاع ابو نقطة المتحمي",
+      "source_url": "https://www.visitsaudi.com/content/dam/documents/saudi-calendar-ar.pdf",
+      "reason": "The operation was aborted due to timeout"
+    },
+    {
+      "id": "event-ليالي-مضيئة",
+      "title": "ليالي مضيئة",
+      "source_url": "https://www.visitsaudi.com/content/dam/documents/saudi-calendar-ar.pdf",
+      "reason": "The operation was aborted due to timeout"
+    },
+    {
+      "id": "event-ليلة-5x5",
+      "title": "ليلة 5x5",
+      "source_url": "https://www.visitsaudi.com/content/dam/documents/saudi-calendar-ar.pdf",
+      "reason": "The operation was aborted due to timeout"
+    },
+    {
+      "id": "event-ليلة-ستانداب-كوميدي-في-جدة",
+      "title": "ليلة ستانداب كوميدي في جدة",
+      "source_url": "https://www.visitsaudi.com/content/dam/documents/saudi-calendar-ar.pdf",
+      "reason": "The operation was aborted due to timeout"
+    },
+    {
+      "id": "event-مخيّم-النحالون-الصغار-الصيفي",
+      "title": "مخيّم النحالون الصغار الصيفي",
       "source_url": "https://www.visitsaudi.com/content/dam/documents/saudi-calendar-ar.pdf",
       "reason": "The operation was aborted due to timeout"
     },

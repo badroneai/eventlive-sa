@@ -1,17 +1,17 @@
 # EventLive Source Auto Publish Report
 
-- published_at: 2026-08-16T18:57:08.640Z
+- published_at: 2026-08-17T02:05:29.986Z
 - dry_run: false
 - include_partner: true
-- candidates_seen: 590
-- published_new: 7
-- linked_existing: 545
-- blocked_remaining: 38
-- duplicate_review_alerts: 8
+- candidates_seen: 627
+- published_new: 36
+- linked_existing: 551
+- blocked_remaining: 40
+- duplicate_review_alerts: 10
 
 ## Blocked summary
 
-- possible duplicate requires review: exact-title-city-source-conflict: 6
+- possible duplicate requires review: exact-title-city-source-conflict: 8
 - linked catalog row event-aseer-season was superseded by dedupe: 2
 - linked catalog row event-dakah was superseded by dedupe: 1
 - publication gate source-evidence is not auto-publishable: 13
@@ -24,13 +24,42 @@
 
 | Candidate | Status | Catalog event | Reason |
 |---|---|---|---|
+| candidate-visit-saudi-calendar-pdf-أشجار-20260429-4a38d19e | published | event-أشجار | أشجار |
 | candidate-visit-saudi-calendar-pdf-قصور-وقاع-ابو-نقطة-المتحمي-20260503-4a38d19e | published | event-قصور-وقاع-ابو-نقطة-المتحمي | قصور وقاع ابو نقطة المتحمي |
+| candidate-visit-saudi-calendar-pdf-ليالي-مضيئة-20260607-4a38d19e | published | event-ليالي-مضيئة | ليالي مضيئة |
+| candidate-visit-saudi-calendar-pdf-شارع-الفن-القرية-الريفية-20260624-4a38d19e | published | event-شارع-الفن-القرية-الريفية | شارع الفن - القرية الريفية |
 | candidate-visit-saudi-calendar-pdf-شارع-الفن-القرية-الأوروبية-20260625-4a38d19e | published | event-شارع-الفن-القرية-الأوروبية | شارع الفن - القرية الأوروبية |
 | candidate-visit-saudi-calendar-pdf-مزرعة-التوت-الأسود-20260701-4a38d19e | published | event-مزرعة-التوت-الأسود | مزرعة التوت الأسود |
+| candidate-visit-saudi-calendar-pdf-قرية-الاطاولة-التراثية-20260701-4a38d19e | published | event-قرية-الاطاولة-التراثية | قرية الاطاولة التراثية |
+| candidate-visit-saudi-calendar-pdf-فعالية-كومبات-أرينا-20260703-4a38d19e | published | event-فعالية-كومبات-أرينا | فعالية كومبات أرينا |
 | candidate-visit-saudi-calendar-pdf-الأخطبوطية-20260704-4a38d19e | published | event-الأخطبوطية | الأخطبوطية |
 | candidate-visit-saudi-calendar-pdf-عروض-الفنون-الأدائية-التقليدية-20260706-4a38d19e | published | event-عروض-الفنون-الأدائية-التقليدية | عروض الفنون الأدائية التقليدية |
-| candidate-hayy-jameel-events-hayy-makers-open-call-makers-matters-20260816-4078f4a4 | published | event-hayy-makers-open-call-makers-matters | Hayy Makers | Open Call: Makers Matters |
-| candidate-hayy-jameel-events-community-garden-from-soil-to-seed-basics-to-growing-your-own-plants-wit-20260828-cf3d5071 | published | event-community-garden-from-soil-to-seed-basics-to-growing-your-own-plants-wit | Community Garden | From Soil to Seed: Basics to growing your own plants with Sara Alsayed |
+| candidate-visit-saudi-calendar-pdf-فعالية-ترحاب-20260722-4a38d19e | published | event-فعالية-ترحاب | فعالية ترحاب |
+| candidate-visit-saudi-calendar-pdf-شعف-20260722-4a38d19e | published | event-شعف | شعف |
+| candidate-visit-saudi-calendar-pdf-بسطة-القابل-20260722-4a38d19e | published | event-بسطة-القابل | بسطة القابل |
+| candidate-visit-saudi-calendar-pdf-شابتر-26-20260723-4a38d19e | published | event-شابتر-26 | شابتر 26 |
+| candidate-visit-saudi-calendar-pdf-باتل-كارت-في-أبها-20260727-4a38d19e | published | event-باتل-كارت-في-أبها | باتل كارت في أبها |
+| candidate-visit-saudi-calendar-pdf-صيف-عذية-20260727-4a38d19e | published | event-صيف-عذية | صيف عذية |
+| candidate-visit-saudi-calendar-pdf-جولة-بقي-السريعة-الباحة-20260728-4a38d19e | published | event-جولة-بقي-السريعة-الباحة | جولة بقي السريعة الباحة |
+| candidate-visit-saudi-seasons-battlekart-in-abha-20260728-2f0baf90 | published | event-battlekart-in-abha | BattleKart in Abha |
+| candidate-visit-saudi-seasons-shaaf-20260728-e926782e | published | event-shaaf | Shaaf |
+| candidate-visit-saudi-calendar-pdf-فعالية-القصبة-20260729-4a38d19e | published | event-فعالية-القصبة | فعالية القصبة |
+| candidate-visit-saudi-calendar-pdf-شاطئ-منتجع-القرية-في-جدة-20260805-4a38d19e | published | event-شاطئ-منتجع-القرية-في-جدة | شاطئ منتجع القرية في جدة |
+| candidate-visit-saudi-calendar-pdf-جولة-البقي-بين-جبال-الباحة-20260805-4a38d19e | published | event-جولة-البقي-بين-جبال-الباحة | جولة البقي بين جبال الباحة |
+| candidate-visit-saudi-calendar-pdf-مخيّم-النحالون-الصغار-الصيفي-20260816-4a38d19e | published | event-مخيّم-النحالون-الصغار-الصيفي | مخيّم النحالون الصغار الصيفي |
+| candidate-visit-saudi-calendar-pdf-صد-رد-عرض-ستاند-اب-كوميدي-من-أوس-النفيعي-20260820-4a38d19e | published | event-صد-رد-عرض-ستاند-اب-كوميدي-من-أوس-النفيعي | صد رد: عرض ستاند اب كوميدي من أوس النفيعي |
+| candidate-visit-saudi-calendar-pdf-ليلة-5x5-20260820-4a38d19e | published | event-ليلة-5x5 | ليلة 5x5 |
+| candidate-visit-saudi-calendar-pdf-عرض-this-is-michael-الموسيقي-20260821-4a38d19e | published | event-عرض-this-is-michael-الموسيقي | عرض This Is Michael الموسيقي |
+| candidate-visit-saudi-calendar-pdf-ليلة-ستانداب-كوميدي-في-جدة-20260821-4a38d19e | published | event-ليلة-ستانداب-كوميدي-في-جدة | ليلة ستانداب كوميدي في جدة |
+| candidate-visit-saudi-calendar-pdf-الخطة-c-مع-رضوان-الريمي-ليلة-كوميدية-طربية-20260821-4a38d19e | published | event-الخطة-c-مع-رضوان-الريمي-ليلة-كوميدية-طربية | الخطة C مع رضوان الريمي ليلة كوميدية طربية |
+| candidate-visit-saudi-calendar-this-is-michael-20260821-d8860a17 | published | event-this-is-michael | This Is Michael |
+| candidate-visit-saudi-calendar-pdf-اوبن-مايك-للمواهب-20260826-4a38d19e | published | event-اوبن-مايك-للمواهب | اوبن مايك للمواهب |
+| candidate-visit-saudi-calendar-spacetoon-memories-with-assem-sukkar-20260903-e6578586 | published | event-spacetoon-memories-with-assem-sukkar | Spacetoon Memories with Assem Sukkar |
+| candidate-visit-saudi-calendar-pdf-ستاند-أب-كوميدي-وعرض-تفاعلي-مع-صلاح-الدالي-20260904-4a38d19e | published | event-ستاند-أب-كوميدي-وعرض-تفاعلي-مع-صلاح-الدالي | ستاند أب كوميدي وعرض تفاعلي مع صلاح الدالي |
+| candidate-visit-saudi-calendar-pdf-سيرك-فونتانا-20260916-4a38d19e | published | event-سيرك-فونتانا | سيرك فونتانا |
+| candidate-visit-saudi-calendar-pdf-ذكريات-سبيستون-مع-الفنان-عاصم-سكر-20260918-4a38d19e | published | event-ذكريات-سبيستون-مع-الفنان-عاصم-سكر | ذكريات سبيستون مع الفنان عاصم سكر |
+| candidate-visit-saudi-calendar-pdf-فينا-نحكي؟-عرض-ستاند-أب-كوميدي-يقدمه-جون-أشقر-20261022-4a38d19e | published | event-فينا-نحكي؟-عرض-ستاند-أب-كوميدي-يقدمه-جون-أشقر | فينا نحكي؟ عرض ستاند أب كوميدي يقدمه جون أشقر |
+| candidate-visit-saudi-calendar-pdf-in-act-anniversary-act-xi-20261127-4a38d19e | published | event-in-act-anniversary-act-xi-2 | IN ACT ANNIVERSARY - ACT XI |
 | candidate-moc-cultural-subportals-skill-development-initiative-20210714-10f7dc2c | linked-existing | event-skill-development-initiative | already linked to catalog event |
 | candidate-moc-cultural-subportals-sitar-20220921-cda2e068 | linked-existing | event-sitar | already linked to catalog event |
 | candidate-moc-cultural-subportals-the-architecture-and-design-caf-20240427-046e2ec1 | linked-existing | event-the-architecture-and-design-caf | already linked to catalog event |
@@ -141,6 +170,7 @@
 | candidate-visit-saudi-calendar-pdf-عروض-الفنون-الادائية-التقليدية-20260706-4a38d19e | linked-existing | event-عروض-الفنون-الأدائية-التقليدية | trusted duplicate linked to existing catalog event |
 | candidate-riyadh-city-events-esports-world-cup-20260706-b4b860e9 | linked-existing | event-esports-world-cup | already linked to catalog event |
 | candidate-jouf-university-programs-البرنامج-الصيفي-بجامعة-الجوف-2026-20260708-fa67cacd | linked-existing | event-البرنامج-الصيفي-بجامعة-الجوف-2026 | already linked to catalog event |
+| candidate-visit-saudi-calendar-pdf-ليالي-عيشها-20260709-4a38d19e | linked-existing | event-eishha-nights | trusted duplicate linked to existing catalog event |
 | candidate-discover-aseer-events-abo-noghta-historic-castles-historic-tabab-20260709-158faa74 | linked-existing | event-abo-noghta-historic-castles-historic-tabab | already linked to catalog event |
 | candidate-visit-saudi-seasons-eishha-nights-20260709-60cdd01b | linked-existing | event-eishha-nights | already linked to catalog event |
 | candidate-discover-aseer-events-kishtah-20260710-26597591 | linked-existing | event-kishtah | already linked to catalog event |
@@ -159,8 +189,10 @@
 | candidate-discover-aseer-events-nafas-20260724-e5d0fb05 | linked-existing | event-nafas | already linked to catalog event |
 | candidate-discover-aseer-events-al-yanfa-village-20260724-5be0c4c3 | linked-existing | event-al-yanfa-village | already linked to catalog event |
 | candidate-tuwaiq-academy-bootcamps-معسكر-تطوير-البرمجيات-السحابية-الاحترافية-لسحابة-قوقل-20260726-aa1669c2 | linked-existing | event-معسكر-تطوير-البرمجيات-السحابية-الاحترافية-لسحابة-قوقل | already linked to catalog event |
+| candidate-visit-saudi-calendar-pdf-مهرجان-كيو-بي-20260727-4a38d19e | linked-existing | event-qb-festival | trusted duplicate linked to existing catalog event |
 | candidate-umm-al-qura-events-فرص-تعاقد-على-مشروع-بحثي-ممول-20260727-602b04ea | linked-existing | event-وظائف-بحثية-تجربة | already linked to catalog event |
 | candidate-visit-saudi-seasons-qb-festival-20260727-b6a61496 | linked-existing | event-qb-festival | already linked to catalog event |
+| candidate-visit-saudi-calendar-pdf-غابة-العجائب-20260729-4a38d19e | linked-existing | event-forest-wonder | trusted duplicate linked to existing catalog event |
 | candidate-visit-saudi-seasons-forest-wonder-20260729-d676d344 | linked-existing | event-forest-wonder | already linked to catalog event |
 | candidate-monshaat-events-لقاءات-شهر-أغسطس-2026م-20260801-7c7747a6 | linked-existing | event-لقاءات-شهر-أغسطس-2026م | already linked to catalog event |
 | candidate-hayy-jameel-events-open-call-stellar-hayy-jameel-youth-ambassador-program-20260801-6b642c74 | linked-existing | event-open-call-stellar-hayy-jameel-youth-ambassador-program | already linked to catalog event |
@@ -198,13 +230,13 @@
 | candidate-discover-aseer-events-musical-concerts-20260807-169733ac | linked-existing | event-musical-concerts | already linked to catalog event |
 | candidate-tuwaiq-academy-bootcamps-معسكر-تطوير-تطبيقات-الويب-باستخدام-لغة-python-20260809-91d14378 | linked-existing | event-معسكر-تطوير-تطبيقات-الويب-باستخدام-لغة-python-2 | already linked to catalog event |
 | candidate-hayy-jameel-events-hayy-arts-from-another-angle-explore-contemporary-art-with-alternative-e-20260812-3abe9558 | linked-existing | event-hayy-arts-from-another-angel-explore-contemporary-art-with-alternative-e | already linked to catalog event |
-| candidate-visit-saudi-calendar-pdf-بطولة-أبطال-المملكة-للشطرنج-20260813-4a38d19e | linked-existing | event-بطولة-أبطال-المملكة-للشطرنج | already linked to catalog event |
 | candidate-hayy-jameel-events-hayy-explorers-in-august-as-told-by-the-land-routes-of-exchange-20260813-9a00888f | linked-existing | event-hayy-explorers-in-august-as-told-by-the-land-routes-of-exchange | already linked to catalog event |
 | candidate-umm-al-qura-events-تفعيل-بيئة-تعلم-إلكترونية-تفاعلية-بنمط-غير-متزامن-20260813-68a97d75 | linked-existing | event-تفعيل-بيئة-تعلم-إلكترونية-تفاعلية-بنمط-غير-متزامن | already linked to catalog event |
 | candidate-hayy-jameel-events-hayy-cinema-a-godus-bros-retrospective-from-youtube-to-the-box-office-20260814-c4521792 | linked-existing | event-hayy-cinema-a-godus-bros-retrospective-from-youtube-to-the-box-office | already linked to catalog event |
 | candidate-future-skills-catalog-virtualization-cloud-infrastructure-basics-الافتراضية-والبنية-التحتية-ال-20260816-6070e1ef | linked-existing | event-virtualization-cloud-infrastructure-basics-الافتراضية-والبنية-التحتية-ال | already linked to catalog event |
 | candidate-future-skills-catalog-sql-fundamentals-20260816-971d8196 | linked-existing | event-sql-fundamentals | already linked to catalog event |
 | candidate-future-skills-catalog-comptia-it-fundamentals-20260816-ffccc14e | linked-existing | event-comptia-it-fundamentals | already linked to catalog event |
+| candidate-hayy-jameel-events-hayy-makers-open-call-makers-matters-20260816-4078f4a4 | linked-existing | event-hayy-makers-open-call-makers-matters | already linked to catalog event |
 | candidate-umm-al-qura-events-دورة-اساسيات-المجهر-الالكتروني-الماسح-sem-20260816-84787696 | linked-existing | event-دورة-اساسيات-المجهر-الالكتروني-الماسح-sem | already linked to catalog event |
 | candidate-tuwaiq-academy-bootcamps-معسكر-أساسيات-هندسة-الميكاترونكس-20260816-54c2e27f | linked-existing | event-معسكر-أساسيات-هندسة-الميكاترونكس | already linked to catalog event |
 | candidate-umm-al-qura-events-فرص-تعاقد-على-مشروع-بحثي-ممول-٢-20260816-d12e1d10 | linked-existing | event-فرص-تعاقد-على-مشروع-بحثي-ممول-٢ | already linked to catalog event |
@@ -286,6 +318,7 @@
 | candidate-saudi-university-events-register-for-the-world-breastfeeding-week-awareness-lecture-20260827-4a16087d | linked-existing | event-register-for-the-world-breastfeeding-week-awareness-lecture | already linked to catalog event |
 | candidate-ithra-events-trivia-night-earth-quest-tic-tac-know-20260827-ef7080ff | linked-existing | event-trivia-night-earth-quest-tic-tac-know | already linked to catalog event |
 | candidate-ithra-events-art-in-virtual-motion-20260827-3acf52ef | linked-existing | event-art-in-virtual-motion | already linked to catalog event |
+| candidate-hayy-jameel-events-community-garden-from-soil-to-seed-basics-to-growing-your-own-plants-wit-20260828-cf3d5071 | linked-existing | event-community-garden-from-soil-to-seed-basics-to-growing-your-own-plants-wit | already linked to catalog event |
 | candidate-ithra-events-open-art-space-20260828-40aac166 | linked-existing | event-open-art-space | already linked to catalog event |
 | candidate-saudi-university-events-summer-splash-at-south-beach-20260829-6ccdbbf8 | linked-existing | event-summer-splash-at-south-beach | already linked to catalog event |
 | candidate-ithra-events-textured-painting-20260829-b0fc79b9 | linked-existing | event-textured-painting | already linked to catalog event |
@@ -315,6 +348,7 @@
 | candidate-ithra-events-ithra-readers-club-20260901-59a0cf0c | linked-existing | event-ithra-readers-club | already linked to catalog event |
 | candidate-dhahran-expo-calendar-arabian-and-international-industries-exhibition-20260902-18d15b29 | linked-existing | event-arabian-and-international-industries-exhibition | already linked to catalog event |
 | candidate-ithra-events-podcast-production-from-the-field-to-storytelling-20260902-f50aa266 | linked-existing | event-podcast-production-from-the-field-to-storytelling | already linked to catalog event |
+| candidate-visit-saudi-calendar-pdf-حفلة-محمد-حماقي-20260904-4a38d19e | linked-existing | event-concert-mohamed-hamaki | trusted duplicate linked to existing catalog event |
 | candidate-misk-hub-programs-the-innovation-diwan-20260905-6f9de2e0 | linked-existing | event-the-innovation-diwan | already linked to catalog event |
 | candidate-riyadh-city-events-saudi-food-manufacturing-show-20260905-470e03a4 | linked-existing | event-saudi-food-manufacturing-show | already linked to catalog event |
 | candidate-misk-hub-programs-misk-launchpad-20260906-9e767f23 | linked-existing | event-misk-launchpad | already linked to catalog event |
@@ -357,6 +391,7 @@
 | candidate-riyadh-city-events-kingdom-business-luxury-travel-congress-20260915-05a8e758 | linked-existing | event-kingdom-business-luxury-travel-congress | already linked to catalog event |
 | candidate-riyadh-city-events-smart-cities-saudi-expo-20260915-58456994 | linked-existing | event-smart-cities-saudi-expo | already linked to catalog event |
 | candidate-ithra-events-the-art-of-looking-at-art-20260915-70b4c472 | linked-existing | event-the-art-of-looking-at-art | already linked to catalog event |
+| candidate-visit-saudi-calendar-pdf-ع-كعبا-20260918-4a38d19e | linked-existing | event-3a-ka3ba | trusted duplicate linked to existing catalog event |
 | candidate-visit-saudi-calendar-3a-ka3ba-20260918-fff5d3c3 | linked-existing | event-3a-ka3ba | already linked to catalog event |
 | candidate-dhahran-expo-calendar-gulf-steel-storage-tank-refinery-expo-20260920-18d15b29 | linked-existing | event-gulf-steel-storage-tank-refinery-expo | already linked to catalog event |
 | candidate-riyadh-city-events-facility-management-conference-exhibition-20260920-ed083b67 | linked-existing | event-facility-management-conference-exhibition | already linked to catalog event |
@@ -576,7 +611,9 @@
 | candidate-qassim-university-events-استضافة-مؤتمر-ieee-mecom-2027-20271101-510cb4b1 | linked-existing | event-استضافة-مؤتمر-ieee-mecom-2027 | already linked to catalog event |
 | candidate-umm-al-qura-events-الترشح-للدبلوم-المتوسط-في-التحول-الرقمي-في-جازان-بالتعاون-مع-أكاديمية-غر-20271201-5cace3ad | linked-existing | event-دبلوم-التحول-الرقمي | already linked to catalog event |
 | candidate-saudi-space-agency-events-space-debris-conference-2028-20280215-03719f44 | linked-existing | event-space-debris-conference-2028 | already linked to catalog event |
+| candidate-visit-saudi-seasons-ashjar-farm-20260429-76bf7a0e | blocked | event-ashjar-farm | possible duplicate requires review: exact-title-city-source-conflict |
 | candidate-discover-aseer-events-sammrah-20260528-0784ea5b | blocked | event-sammrah | possible duplicate requires review: exact-title-city-source-conflict |
+| candidate-visit-saudi-seasons-light-nights-20260607-c0fd1ee9 | blocked | event-light-nights | possible duplicate requires review: exact-title-city-source-conflict |
 | candidate-discover-aseer-events-sound-of-abha-fest-saf-20260620-737104ee | blocked | event-sound-of-abha-fest-saf | possible duplicate requires review: exact-title-city-source-conflict |
 | candidate-visit-saudi-calendar-aseer-season-20260625-2fc92ef9 | blocked | - | linked catalog row event-aseer-season was superseded by dedupe |
 | candidate-discover-aseer-events-summer-season-2026-20260625-cf53fd7f | blocked | - | linked catalog row event-aseer-season was superseded by dedupe |

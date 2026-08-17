@@ -1,11 +1,11 @@
 # Visit Saudi Calendar Enrichment Report
 
-- generated_at: 2026-08-16T18:58:53.791Z
-- targets: 27
-- candidates: 16
-- enriched: 27
-- fetched: 27
-- images: 25
+- generated_at: 2026-08-17T02:07:14.241Z
+- targets: 29
+- candidates: 18
+- enriched: 29
+- fetched: 29
+- images: 27
 - fetch_failures: 0
 
 ## Enriched
@@ -30,6 +30,8 @@
 - Fill in the Blank in Jeddah - official-page-html - image=yes - features=7
 - International Falcon Breeders Auction - official-page-html - image=yes - features=7
 - Hussain Moheb Live in Riyadh - official-page-html - image=yes - features=7
+- This Is Michael - official-page-html - image=yes - features=7
+- Spacetoon Memories with Assem Sukkar - official-page-html - image=yes - features=7
 - FIBO Arabia 2026 - official-page-html - image=yes - features=7
 - 3a Ka3ba - official-page-html - image=yes - features=7
 - Saudi National Day - official-page-html - image=yes - features=7

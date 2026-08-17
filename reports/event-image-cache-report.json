@@ -1,31 +1,18 @@
 {
-  "generated_at": "2026-08-16T19:01:57.103Z",
+  "generated_at": "2026-08-17T02:10:57.519Z",
   "events_file": "dist/events.json",
   "manifest": "data/event_image_cache_manifest.json",
   "image_dir": "dist/assets/event-images",
   "totals": {
     "targets": 500,
     "cached_total": 805,
-    "fetched": 2,
-    "reused": 495,
+    "fetched": 0,
+    "reused": 497,
     "failed": 3,
     "skipped_recent_failures": 3,
-    "remembered_failures": 7
+    "remembered_failures": 9
   },
-  "fetched": [
-    {
-      "source_url": "https://hayyjameel.org/wp-content/uploads/2026/08/Craftsweekend_Open-Call_Whatsonbanner3-1100x500.jpg",
-      "file": "dist/assets/event-images/hayy-makers-open-call-makers-matters-2cbe24e44d.jpg",
-      "bytes": 63598,
-      "events": 1
-    },
-    {
-      "source_url": "https://hayyjameel.org/wp-content/uploads/2026/03/com-1100x500.jpg",
-      "file": "dist/assets/event-images/community-garden-from-soil-to-seed-basics-to-growing-your-own-plants-w-2e7fd624f5.jpg",
-      "bytes": 84958,
-      "events": 1
-    }
-  ],
+  "fetched": [],
   "reused": [
     {
       "source_url": "https://music.moc.gov.sa/-/media/Project/Ministries/Moc/Events/Artboard1.png",
@@ -380,7 +367,7 @@
     {
       "source_url": "https://www.visitsaudi.com/images/ornament-h-m1-24-8290.original.png",
       "file": "dist/assets/event-images/forest-wonder-499a88ca39.png",
-      "events": 4
+      "events": 6
     },
     {
       "source_url": "https://www.ithra.com/application/files/cache/thumbnails/36d13ecef91b05d955bc60b3c951d824.jpg",
@@ -718,6 +705,11 @@
       "events": 18
     },
     {
+      "source_url": "https://hayyjameel.org/wp-content/uploads/2026/08/Craftsweekend_Open-Call_Whatsonbanner3-1100x500.jpg",
+      "file": "dist/assets/event-images/hayy-makers-open-call-makers-matters-2cbe24e44d.jpg",
+      "events": 1
+    },
+    {
       "source_url": "https://static.uqu.edu.sa/assets/images/uqu-gate.jpeg",
       "file": "dist/assets/event-images/دورة-تحضير-البيئات-وتعريف-السلالات-البكتيرية-3157e8ad38.jpg",
       "events": 8
@@ -820,6 +812,11 @@
     {
       "source_url": "https://www.ithra.com/application/files/cache/thumbnails/73981ad8c56588325a6fae85d27ab60b.png",
       "file": "dist/assets/event-images/manal-mohei-eldin-and-oriental-strokes-d762e2f490.png",
+      "events": 1
+    },
+    {
+      "source_url": "https://hayyjameel.org/wp-content/uploads/2026/03/com-1100x500.jpg",
+      "file": "dist/assets/event-images/community-garden-from-soil-to-seed-basics-to-growing-your-own-plants-w-2e7fd624f5.jpg",
       "events": 1
     },
     {
@@ -2557,8 +2554,6 @@
       "skipped": true
     }
   ],
-  "requires_rebuild": true,
-  "rebuild_reasons": [
-    "fetched:2"
-  ]
+  "requires_rebuild": false,
+  "rebuild_reasons": []
 }
