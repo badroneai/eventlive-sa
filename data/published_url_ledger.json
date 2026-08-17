@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "generated_at": "2026-08-17T13:31:27.169Z",
+  "generated_at": "2026-08-17T19:15:38.087Z",
   "events": {
     "event-skill-development-initiative": {
       "identity": "skill development initiative|riyadh|2021-07-14",
@@ -1152,11 +1152,6 @@
       "first_seen": "2026-08-10",
       "last_seen": "2026-08-17"
     },
-    "event-hayy-cinema-a-godus-bros-retrospective-from-youtube-to-the-box-office": {
-      "identity": "hayy cinema | a godus bros retrospective: from youtube to the box office|jeddah|2026-08-14",
-      "first_seen": "2026-07-27",
-      "last_seen": "2026-08-17"
-    },
     "event-مخيّم-النحالون-الصغار-الصيفي": {
       "identity": "مخيّم النحالون الصغار الصيفي|riyadh|2026-08-16",
       "first_seen": "2026-08-17",
@@ -1280,6 +1275,11 @@
     "event-boat-bash-cruise": {
       "identity": "boat bash cruise|thuwal|2026-08-21",
       "first_seen": "2026-08-10",
+      "last_seen": "2026-08-17"
+    },
+    "event-beast-house": {
+      "identity": "beast house|riyadh|2026-08-21",
+      "first_seen": "2026-07-11",
       "last_seen": "2026-08-17"
     },
     "event-aws-solutions-architect-associate-practical": {
@@ -2887,6 +2887,11 @@
       "first_seen": "2026-07-27",
       "last_seen": "2026-08-17"
     },
+    "event-hayy-cinema-a-godus-bros-retrospective-from-youtube-to-the-box-office": {
+      "identity": "hayy cinema | a godus bros retrospective: from youtube to the box office|jeddah|2026-08-14",
+      "first_seen": "2026-07-27",
+      "last_seen": "2026-08-17"
+    },
     "event-concert-mohamed-hamaki": {
       "identity": "concert – mohamed hamaki|aseer|2026-08-14",
       "first_seen": "2026-08-08",
@@ -2975,11 +2980,6 @@
     "event-لقاءات-أسبوع-الذكاء-الاصطناعي-9-13-أغسطس-2026": {
       "identity": "لقاءات أسبوع الذكاء الاصطناعي 9 – 13 أغسطس 2026|saudi arabia|2026-08-09",
       "first_seen": "2026-08-05",
-      "last_seen": "2026-08-17"
-    },
-    "event-beast-house": {
-      "identity": "beast house|riyadh|2026-08-07",
-      "first_seen": "2026-07-11",
       "last_seen": "2026-08-17"
     },
     "event-hussain-moheb-live-in-riyadh": {
