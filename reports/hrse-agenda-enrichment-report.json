@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-17T07:45:45.637Z",
+  "generated_at": "2026-08-17T13:26:25.430Z",
   "event_url": "https://informaconnect.com/hrse-saudi/",
   "agenda_pages": [
     "https://informaconnect.com/hrse-saudi/agenda/1/",
@@ -21,20 +21,20 @@
     {
       "page": 3,
       "date": "2026-09-01",
-      "sessions": 53
+      "sessions": 52
     },
     {
       "page": 4,
       "date": "2026-09-02",
-      "sessions": 44
+      "sessions": 42
     }
   ],
   "totals": {
     "catalog_targets": 1,
     "candidate_targets": 1,
-    "sessions": 102,
+    "sessions": 99,
     "rooms": 9,
-    "speakers": 85
+    "speakers": 84
   },
   "fetch_error": ""
 }

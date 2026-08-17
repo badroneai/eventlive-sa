@@ -1,11 +1,11 @@
 # EventLive Source Auto Publish Report
 
-- published_at: 2026-08-17T07:43:17.858Z
+- published_at: 2026-08-17T13:23:21.051Z
 - dry_run: false
 - include_partner: true
-- candidates_seen: 629
-- published_new: 10
-- linked_existing: 581
+- candidates_seen: 631
+- published_new: 7
+- linked_existing: 586
 - blocked_remaining: 38
 - duplicate_review_alerts: 7
 
@@ -30,11 +30,8 @@
 | candidate-visit-saudi-calendar-pdf-مزرعة-التوت-الأسود-20260701-4a38d19e | published | event-مزرعة-التوت-الأسود | مزرعة التوت الأسود |
 | candidate-visit-saudi-calendar-pdf-الأخطبوطية-20260704-4a38d19e | published | event-الأخطبوطية | الأخطبوطية |
 | candidate-visit-saudi-calendar-pdf-عروض-الفنون-الأدائية-التقليدية-20260706-4a38d19e | published | event-عروض-الفنون-الأدائية-التقليدية | عروض الفنون الأدائية التقليدية |
-| candidate-visit-saudi-seasons-athyah-summer-20260728-b9f6dffe | published | event-athyah-summer | Athyah Summer |
-| candidate-umm-al-qura-events-المحتوى-التفاعلي-والتقييم-الإلكتروني-في-blackboard-ultra-الفترة-الصباحية-20260825-116c6b0a | published | event-المحتوى-التفاعلي-والتقييم-الإلكتروني-في-blackboard-ultra-الفترة-الصباحية | المحتوى التفاعلي والتقييم الإلكتروني في Blackboard Ultra – الفترة الصباحية |
-| candidate-umm-al-qura-events-إنشاء-وإدارة-المقرر-في-blackboard-ultra-الفترة-المسائية-20260830-734dc88d | published | event-إنشاء-وإدارة-المقرر-في-blackboard-ultra-الفترة-المسائية | إنشاء وإدارة المقرر في Blackboard Ultra – الفترة المسائية |
-| candidate-umm-al-qura-events-المحتوى-التفاعلي-والتقييم-الإلكتروني-في-blackboard-ultra-الفترة-المسائية-20260831-e05798fa | published | event-المحتوى-التفاعلي-والتقييم-الإلكتروني-في-blackboard-ultra-الفترة-المسائية | المحتوى التفاعلي والتقييم الإلكتروني في Blackboard Ultra – الفترة المسائية |
-| candidate-visit-saudi-calendar-3a-ka3ba-20260919-7fe781e9 | published | event-3a-ka3ba-2 | 3a Ka3ba |
+| candidate-umm-al-qura-events-الفصول-الافتراضية-عبر-blackboard-ultra-الفترة-الصباحية-20260826-1927687e | published | event-الفصول-الافتراضية-عبر-blackboard-ultra-الفترة-الصباحية | الفصول الافتراضية عبر Blackboard Ultra – الفترة الصباحية |
+| candidate-umm-al-qura-events-الفصول-الافتراضية-عبر-blackboard-ultra-الفترة-المسائية-20260901-d0426118 | published | event-الفصول-الافتراضية-عبر-blackboard-ultra-الفترة-المسائية | الفصول الافتراضية عبر Blackboard Ultra – الفترة المسائية |
 | candidate-moc-cultural-subportals-skill-development-initiative-20210714-10f7dc2c | linked-existing | event-skill-development-initiative | already linked to catalog event |
 | candidate-moc-cultural-subportals-sitar-20220921-cda2e068 | linked-existing | event-sitar | already linked to catalog event |
 | candidate-moc-cultural-subportals-the-architecture-and-design-caf-20240427-046e2ec1 | linked-existing | event-the-architecture-and-design-caf | already linked to catalog event |
@@ -181,6 +178,7 @@
 | candidate-visit-saudi-calendar-pdf-جولة-بقي-السريعة-الباحة-20260728-4a38d19e | linked-existing | event-جولة-بقي-السريعة-الباحة | already linked to catalog event |
 | candidate-visit-saudi-seasons-battlekart-in-abha-20260728-2f0baf90 | linked-existing | event-battlekart-in-abha | already linked to catalog event |
 | candidate-visit-saudi-seasons-shaaf-20260728-e926782e | linked-existing | event-shaaf | already linked to catalog event |
+| candidate-visit-saudi-seasons-athyah-summer-20260728-b9f6dffe | linked-existing | event-athyah-summer | already linked to catalog event |
 | candidate-visit-saudi-calendar-pdf-فعالية-القصبة-20260729-4a38d19e | linked-existing | event-فعالية-القصبة | already linked to catalog event |
 | candidate-visit-saudi-calendar-pdf-غابة-العجائب-20260729-4a38d19e | linked-existing | event-forest-wonder | already linked to catalog event |
 | candidate-visit-saudi-seasons-forest-wonder-20260729-d676d344 | linked-existing | event-forest-wonder | already linked to catalog event |
@@ -241,14 +239,14 @@
 | candidate-ithra-events-echoes-of-the-familiar-20260817-cc43c2bd | linked-existing | event-echoes-of-the-familiar | already linked to catalog event |
 | candidate-ithra-events-ithra-art-prize-exhibition-20260817-83c2ab55 | linked-existing | event-ithra-art-prize-exhibition | already linked to catalog event |
 | candidate-ithra-events-tafasahu-make-room-20260817-562bc61d | linked-existing | event-tafasahu-make-room | already linked to catalog event |
-| candidate-ithra-events-childrens-museum-story-time-20260817-ada8b9db | linked-existing | event-childrens-museum-story-time | already linked to catalog event |
 | candidate-ithra-events-childrens-art-studio-20260817-2bf92d17 | linked-existing | event-childrens-art-studio | already linked to catalog event |
-| candidate-ithra-events-spot-of-inspiration-20260817-5bac584c | linked-existing | event-spot-of-inspiration | already linked to catalog event |
-| candidate-ithra-events-emboss-printing-experience-20260817-2671d1ce | linked-existing | event-emboss-printing-experience | already linked to catalog event |
-| candidate-ithra-events-family-challenges-20260817-3726c868 | linked-existing | event-family-challenges | already linked to catalog event |
 | candidate-ithra-events-energy-lab-20260817-60155d60 | linked-existing | event-energy-lab | already linked to catalog event |
+| candidate-ithra-events-spot-of-inspiration-20260817-5bac584c | linked-existing | event-spot-of-inspiration | already linked to catalog event |
+| candidate-ithra-events-childrens-museum-story-time-20260817-ada8b9db | linked-existing | event-childrens-museum-story-time | already linked to catalog event |
+| candidate-ithra-events-family-challenges-20260817-3726c868 | linked-existing | event-family-challenges | already linked to catalog event |
 | candidate-ithra-events-children-story-time-20260817-f545fa69 | linked-existing | event-children-story-time | already linked to catalog event |
 | candidate-ithra-events-survival-journey-20260817-4fd1e78d | linked-existing | event-survival-journey | already linked to catalog event |
+| candidate-ithra-events-emboss-printing-experience-20260817-2671d1ce | linked-existing | event-emboss-printing-experience | already linked to catalog event |
 | candidate-sfda-events-احتياطات-الأمان-عند-استخدام-مبيدات-آفات-الصحة-العامة-20260818-a459d8bf | linked-existing | event-احتياطات-الأمان-عند-استخدام-مبيدات-آفات-الصحة-العامة | already linked to catalog event |
 | candidate-ithra-events-toddler-tuesday-20260818-1afead7d | linked-existing | event-toddler-tuesday | already linked to catalog event |
 | candidate-ithra-events-ithra-members-tour-20260818-5011b841 | linked-existing | event-ithra-members-tour | already linked to catalog event |
@@ -310,6 +308,7 @@
 | candidate-hayy-jameel-events-jameel-library-open-call-the-task-of-the-translator-with-sarasija-subram-20260824-b5cef88a | linked-existing | event-jameel-library-open-call-the-task-of-the-translator-with-sarasija-subram | already linked to catalog event |
 | candidate-hayy-jameel-events-jameel-library-the-task-of-the-translator-research-lab-20260824-b6d73c1e | linked-existing | event-jameel-library-the-task-of-the-translator-research-lab | already linked to catalog event |
 | candidate-umm-al-qura-events-إنشاء-وإدارة-المقرر-في-blackboard-ultra-الفترة-الصباحية-20260824-5196a6ff | linked-existing | event-إنشاء-وإدارة-المقرر-في-blackboard-ultra-الفترة-الصباحية | already linked to catalog event |
+| candidate-umm-al-qura-events-المحتوى-التفاعلي-والتقييم-الإلكتروني-في-blackboard-ultra-الفترة-الصباحية-20260825-116c6b0a | linked-existing | event-المحتوى-التفاعلي-والتقييم-الإلكتروني-في-blackboard-ultra-الفترة-الصباحية | already linked to catalog event |
 | candidate-visit-saudi-calendar-pdf-اوبن-مايك-للمواهب-20260826-4a38d19e | linked-existing | event-اوبن-مايك-للمواهب | already linked to catalog event |
 | candidate-eye-of-riyadh-events-smart-data-ai-summit-20260826-f9946ea8 | linked-existing | event-smart-data-ai-summit | already linked to catalog event |
 | candidate-ithra-events-arabic-children-book-club-10-12-20260826-39c903cc | linked-existing | event-arabic-children-book-club-10-12 | already linked to catalog event |
@@ -332,9 +331,11 @@
 | candidate-riyadh-city-events-saudi-entertainment-and-amusement-expo-20260830-9a81c6d8 | linked-existing | event-saudi-entertainment-and-amusement-expo | already linked to catalog event |
 | candidate-tuwaiq-academy-bootcamps-معسكر-هندسة-تطبيقات-الذكاء-الاصطناعي-التوليدي-باستخدام-النماذج-اللغوية-ا-20260830-d915c601 | linked-existing | event-معسكر-هندسة-تطبيقات-الذكاء-الاصطناعي-التوليدي-باستخدام-النماذج-اللغوية-ا | already linked to catalog event |
 | candidate-umm-al-qura-events-دورة-تدريبية-بعنوان-مهارات-الحوار-الفعال-والتعامل-مع-الاختلافات-20260830-15c5c437 | linked-existing | event-دورة-تدريبية-بعنوان-مهارات-الحوار-الفعال-والتعامل-مع-الاختلافات | already linked to catalog event |
+| candidate-umm-al-qura-events-إنشاء-وإدارة-المقرر-في-blackboard-ultra-الفترة-المسائية-20260830-734dc88d | linked-existing | event-إنشاء-وإدارة-المقرر-في-blackboard-ultra-الفترة-المسائية | already linked to catalog event |
 | candidate-tuwaiq-academy-bootcamps-معسكر-أساسيات-الأمن-السيبراني-20260830-da0b3686 | linked-existing | event-معسكر-أساسيات-الأمن-السيبراني | already linked to catalog event |
 | candidate-scega-exhibitions-conferences-ليب-26-20260831-57037ac3 | linked-existing | event-leap-2026 | already linked to catalog event |
 | candidate-visit-saudi-calendar-leap-2026-20260831-95d3166a | linked-existing | event-leap-2026 | already linked to catalog event |
+| candidate-umm-al-qura-events-المحتوى-التفاعلي-والتقييم-الإلكتروني-في-blackboard-ultra-الفترة-المسائية-20260831-e05798fa | linked-existing | event-المحتوى-التفاعلي-والتقييم-الإلكتروني-في-blackboard-ultra-الفترة-المسائية | already linked to catalog event |
 | candidate-ithra-events-idea-lab-societies-majlis-20260831-eeece087 | linked-existing | event-idea-lab-majlis | already linked to catalog event |
 | candidate-dhahran-expo-calendar-crafts-handicrafts-exhibition-20260901-18d15b29 | linked-existing | event-crafts-handicrafts-exhibition | already linked to catalog event |
 | candidate-misk-hub-programs-misk-x-unyo-youth-engagement-fellowship-20260901-2ab69839 | linked-existing | event-misk-x-unyo-youth-engagement-fellowship | already linked to catalog event |
@@ -396,6 +397,7 @@
 | candidate-visit-saudi-calendar-pdf-ذكريات-سبيستون-مع-الفنان-عاصم-سكر-20260918-4a38d19e | linked-existing | event-ذكريات-سبيستون-مع-الفنان-عاصم-سكر | already linked to catalog event |
 | candidate-visit-saudi-calendar-pdf-ع-كعبا-20260918-4a38d19e | linked-existing | event-3a-ka3ba | already linked to catalog event |
 | candidate-visit-saudi-calendar-3a-ka3ba-20260918-fff5d3c3 | linked-existing | event-3a-ka3ba | already linked to catalog event |
+| candidate-visit-saudi-calendar-3a-ka3ba-20260919-7fe781e9 | linked-existing | event-3a-ka3ba-2 | already linked to catalog event |
 | candidate-dhahran-expo-calendar-gulf-steel-storage-tank-refinery-expo-20260920-18d15b29 | linked-existing | event-gulf-steel-storage-tank-refinery-expo | already linked to catalog event |
 | candidate-riyadh-city-events-facility-management-conference-exhibition-20260920-ed083b67 | linked-existing | event-facility-management-conference-exhibition | already linked to catalog event |
 | candidate-hayy-jameel-events-hayy-cinema-vhs-tape-replaced-2023-20260920-94c0458c | linked-existing | event-hayy-cinema-vhs-tape-replaced-2023 | already linked to catalog event |
@@ -630,6 +632,7 @@
 | candidate-saudicon-events-مؤتمر-الأطراف-السابع-عشر-لاتفاقية-الأمم-المتحدة-لمكافحة-التصحر-cop17-20260817-8b6d444b | blocked | - | publication gate source-evidence is not auto-publishable |
 | candidate-eye-of-riyadh-events-sunaa-2026-20260818-e3819fa8 | blocked | - | publication gate source-evidence is not auto-publishable |
 | candidate-saudicon-events-معرض-صناع-للصناعات-الوطنية-2026-20260818-4f53e939 | blocked | - | publication gate source-evidence is not auto-publishable |
+| candidate-saudicon-events-معرض-اللومي-الحساوي-2026-20260819-691b1096 | blocked | - | publication gate source-evidence is not auto-publishable |
 | candidate-visit-saudi-calendar-this-is-michael-20260821-d8860a17 | blocked | - | linked catalog row event-this-is-michael was superseded by dedupe |
 | candidate-saudicon-events-ملتقى-شور-دلني-الشرقية-2026-20260825-b110f1b8 | blocked | - | publication gate source-evidence is not auto-publishable |
 | candidate-saudicon-events-قمة-البيانات-الذكية-والذكاء-الاصطناعي-20260826-83f848e3 | blocked | - | publication gate source-evidence is not auto-publishable |
@@ -639,7 +642,6 @@
 | candidate-saudicon-events-سلسلة-الصناعات-السعودية-20260830-edb83dcb | blocked | - | possible duplicate already exists: event-saudi-industrial-series-2 |
 | candidate-saudicon-events-معرض-hvac-r-saudi-arabia-20260830-59b37d22 | blocked | - | possible duplicate already exists: event-hvac-r-saudi-arabia |
 | candidate-saudicon-events-معرض-big-5-construct-saudi-2026-20260830-29f1e1d5 | blocked | - | publication gate source-evidence is not auto-publishable |
-| candidate-saudicon-events-ديب-فيست-2026-20260831-5b699748 | blocked | - | publication gate source-evidence is not auto-publishable |
 | candidate-saudicon-events-منتدى-الجوانب-القانونية-للاندماج-والاستحواذ-20260831-4cfc45d5 | blocked | - | publication gate source-evidence is not auto-publishable |
 | candidate-eventbrite-saudi-smart-sustainable-building-intelligent-ecosystems-for-tomorrows-cities-20260901-e45c1490 | blocked | - | unknown category requires review |
 | candidate-eventbrite-saudi-family-office-investment-meeting-riyadh-registration-fee-usd-580-20260902-82923462 | blocked | - | unknown category requires review |

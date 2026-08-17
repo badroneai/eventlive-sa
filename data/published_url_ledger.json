@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "generated_at": "2026-08-17T07:50:16.814Z",
+  "generated_at": "2026-08-17T13:31:27.169Z",
   "events": {
     "event-skill-development-initiative": {
       "identity": "skill development initiative|riyadh|2021-07-14",
@@ -1207,11 +1207,6 @@
       "first_seen": "2026-07-27",
       "last_seen": "2026-08-17"
     },
-    "event-آلية-تقديم-طلبات-الحصول-على-ترخيص-خدمات-توكيد-الجودة-والقياسات-الاشعاعية": {
-      "identity": "آلية تقديم طلبات الحصول على ترخيص خدمات توكيد الجودة والقياسات الاشعاعية|online|2026-08-17",
-      "first_seen": "2026-08-02",
-      "last_seen": "2026-08-17"
-    },
     "event-احتياطات-الأمان-عند-استخدام-مبيدات-آفات-الصحة-العامة": {
       "identity": "احتياطات الأمان عند استخدام مبيدات آفات الصحة العامة|online|2026-08-18",
       "first_seen": "2026-07-11",
@@ -1352,6 +1347,11 @@
       "first_seen": "2026-07-11",
       "last_seen": "2026-08-17"
     },
+    "event-الفصول-الافتراضية-عبر-blackboard-ultra-الفترة-الصباحية": {
+      "identity": "الفصول الافتراضية عبر blackboard ultra – الفترة الصباحية|online|2026-08-26",
+      "first_seen": "2026-08-17",
+      "last_seen": "2026-08-17"
+    },
     "event-manal-mohei-eldin-and-oriental-strokes": {
       "identity": "manal mohei eldin and oriental strokes|dhahran|2026-08-26",
       "first_seen": "2026-08-06",
@@ -1485,6 +1485,11 @@
     "event-saudi-woodshow": {
       "identity": "saudi woodshow|riyadh|2026-09-01",
       "first_seen": "2026-07-11",
+      "last_seen": "2026-08-17"
+    },
+    "event-الفصول-الافتراضية-عبر-blackboard-ultra-الفترة-المسائية": {
+      "identity": "الفصول الافتراضية عبر blackboard ultra – الفترة المسائية|online|2026-09-01",
+      "first_seen": "2026-08-17",
       "last_seen": "2026-08-17"
     },
     "event-معرض-الحرف-والأعمال-اليدوية-2026": {
@@ -2865,6 +2870,11 @@
     "event-space-debris-conference-2028": {
       "identity": "space debris conference 2028|riyadh|2028-02-15",
       "first_seen": "2026-08-06",
+      "last_seen": "2026-08-17"
+    },
+    "event-آلية-تقديم-طلبات-الحصول-على-ترخيص-خدمات-توكيد-الجودة-والقياسات-الاشعاعية": {
+      "identity": "آلية تقديم طلبات الحصول على ترخيص خدمات توكيد الجودة والقياسات الاشعاعية|online|2026-08-17",
+      "first_seen": "2026-08-02",
       "last_seen": "2026-08-17"
     },
     "event-hayy-makers-woodworking-course-level-1-with-ahmad-sofi": {

@@ -1,33 +1,13 @@
 {
-  "generated_at": "2026-08-17T07:45:55.060Z",
+  "generated_at": "2026-08-17T13:26:34.941Z",
   "totals": {
-    "targets": 14,
-    "enriched": 14,
-    "fetched": 13,
-    "images": 14,
-    "fetch_failures": 1
+    "targets": 7,
+    "enriched": 7,
+    "fetched": 2,
+    "images": 7,
+    "fetch_failures": 5
   },
   "enriched": [
-    {
-      "id": "event-athyah-summer",
-      "title": "Athyah Summer",
-      "source_label": "Visit Saudi Seasons",
-      "source_method": "official-page-meta",
-      "source_url": "https://www.visitsaudi.com/en/aseer/events/athyah-summer",
-      "fetched": true,
-      "image": true,
-      "fetch_reason": ""
-    },
-    {
-      "id": "event-إنشاء-وإدارة-المقرر-في-blackboard-ultra-الفترة-المسائية",
-      "title": "إنشاء وإدارة المقرر في Blackboard Ultra – الفترة المسائية",
-      "source_label": "Umm Al-Qura University Events Center",
-      "source_method": "official-page-meta",
-      "source_url": "https://uqu.edu.sa/App/Events/41086",
-      "fetched": true,
-      "image": true,
-      "fetch_reason": ""
-    },
     {
       "id": "event-الأخطبوطية",
       "title": "الاخطبوطية",
@@ -39,21 +19,21 @@
       "fetch_reason": "The operation was aborted due to timeout"
     },
     {
-      "id": "event-المحتوى-التفاعلي-والتقييم-الإلكتروني-في-blackboard-ultra-الفترة-الصباحية",
-      "title": "المحتوى التفاعلي والتقييم الإلكتروني في Blackboard Ultra – الفترة الصباحية",
+      "id": "event-الفصول-الافتراضية-عبر-blackboard-ultra-الفترة-الصباحية",
+      "title": "الفصول الافتراضية عبر Blackboard Ultra – الفترة الصباحية",
       "source_label": "Umm Al-Qura University Events Center",
       "source_method": "official-page-meta",
-      "source_url": "https://uqu.edu.sa/App/Events/41087",
+      "source_url": "https://uqu.edu.sa/App/Events/41089",
       "fetched": true,
       "image": true,
       "fetch_reason": ""
     },
     {
-      "id": "event-المحتوى-التفاعلي-والتقييم-الإلكتروني-في-blackboard-ultra-الفترة-المسائية",
-      "title": "المحتوى التفاعلي والتقييم الإلكتروني في Blackboard Ultra – الفترة المسائية",
+      "id": "event-الفصول-الافتراضية-عبر-blackboard-ultra-الفترة-المسائية",
+      "title": "الفصول الافتراضية عبر Blackboard Ultra – الفترة المسائية",
       "source_label": "Umm Al-Qura University Events Center",
       "source_method": "official-page-meta",
-      "source_url": "https://uqu.edu.sa/App/Events/41088",
+      "source_url": "https://uqu.edu.sa/App/Events/41090",
       "fetched": true,
       "image": true,
       "fetch_reason": ""
@@ -62,97 +42,71 @@
       "id": "event-شارع-الفن-القرية-الأوروبية",
       "title": "شارع الفن - القرية الاوروبية",
       "source_label": "Visit Saudi Summer Calendar PDF",
-      "source_method": "official-page-meta",
+      "source_method": "approved-source-row",
       "source_url": "https://www.visitsaudi.com/content/dam/documents/saudi-calendar-ar.pdf",
-      "fetched": true,
+      "fetched": false,
       "image": true,
-      "fetch_reason": ""
+      "fetch_reason": "The operation was aborted due to timeout"
     },
     {
       "id": "event-عروض-الفنون-الأدائية-التقليدية",
       "title": "عروض الفنون الادائية التقليدية",
       "source_label": "Visit Saudi Summer Calendar PDF",
-      "source_method": "official-page-meta",
+      "source_method": "approved-source-row",
       "source_url": "https://www.visitsaudi.com/content/dam/documents/saudi-calendar-ar.pdf",
-      "fetched": true,
+      "fetched": false,
       "image": true,
-      "fetch_reason": ""
+      "fetch_reason": "The operation was aborted due to timeout"
     },
     {
       "id": "event-قصور-وقاع-ابو-نقطة-المتحمي",
       "title": "قصور وقلاع ابو نقطة المتحمي",
       "source_label": "Visit Saudi Summer Calendar PDF",
-      "source_method": "official-page-meta",
+      "source_method": "approved-source-row",
       "source_url": "https://www.visitsaudi.com/content/dam/documents/saudi-calendar-ar.pdf",
-      "fetched": true,
+      "fetched": false,
       "image": true,
-      "fetch_reason": ""
+      "fetch_reason": "The operation was aborted due to timeout"
     },
     {
       "id": "event-مزرعة-التوت-الأسود",
       "title": "مزرعة التوت الاسود",
       "source_label": "Visit Saudi Summer Calendar PDF",
-      "source_method": "official-page-meta",
+      "source_method": "approved-source-row",
       "source_url": "https://www.visitsaudi.com/content/dam/documents/saudi-calendar-ar.pdf",
-      "fetched": true,
+      "fetched": false,
       "image": true,
-      "fetch_reason": ""
-    },
-    {
-      "id": "event-التسجيل-والسداد-لدبلوم-المتوسط-عن-بعد-في-أمن-المعلومات-مع-الشركاء",
-      "title": "التسجيل والسداد لدبلوم المتوسط (عن بعد) في أمن المعلومات مع الشركاء",
-      "source_label": "Umm Al-Qura University Events Center",
-      "source_method": "official-page-meta",
-      "source_url": "https://uqu.edu.sa/App/Events/41065",
-      "fetched": true,
-      "image": true,
-      "fetch_reason": ""
-    },
-    {
-      "id": "event-التسجيل-والسداد-لدبلوم-المتوسط-عن-بعد-في-التسويق-التطبيقي-مع-الشركاء",
-      "title": "التسجيل والسداد لدبلوم المتوسط (عن بعد) في التسويق التطبيقي مع الشركاء",
-      "source_label": "Umm Al-Qura University Events Center",
-      "source_method": "official-page-meta",
-      "source_url": "https://uqu.edu.sa/App/Events/41064",
-      "fetched": true,
-      "image": true,
-      "fetch_reason": ""
-    },
-    {
-      "id": "event-التسجيل-والسداد-لدبلوم-المتوسط-عن-بعد-في-اللغة-الإنجليزية-المهنية-مع-الش",
-      "title": "التسجيل والسداد لدبلوم المتوسط (عن بعد) في اللغة الإنجليزية المهنية مع الشركاء",
-      "source_label": "Umm Al-Qura University Events Center",
-      "source_method": "official-page-meta",
-      "source_url": "https://uqu.edu.sa/App/Events/41066",
-      "fetched": true,
-      "image": true,
-      "fetch_reason": ""
-    },
-    {
-      "id": "event-التسجيل-والسداد-لدبلوم-المشارك-عن-بعد-في-إدارة-المشاريع-مع-الشركاء",
-      "title": "التسجيل والسداد لدبلوم المشارك (عن بعد) في إدارة المشاريع مع الشركاء",
-      "source_label": "Umm Al-Qura University Events Center",
-      "source_method": "official-page-meta",
-      "source_url": "https://uqu.edu.sa/App/Events/41063",
-      "fetched": true,
-      "image": true,
-      "fetch_reason": ""
-    },
-    {
-      "id": "event-التسجيل-والسداد-لدبلوم-المشارك-عن-بعد-في-الابتكار-في-ريادة-الأعمال-مع-ال",
-      "title": "التسجيل والسداد لدبلوم المشارك (عن بعد) في الابتكار في ريادة الأعمال مع الشركاء",
-      "source_label": "Umm Al-Qura University Events Center",
-      "source_method": "official-page-meta",
-      "source_url": "https://uqu.edu.sa/App/Events/41062",
-      "fetched": true,
-      "image": true,
-      "fetch_reason": ""
+      "fetch_reason": "The operation was aborted due to timeout"
     }
   ],
   "failed": [
     {
       "id": "event-الأخطبوطية",
       "title": "الاخطبوطية",
+      "source_url": "https://www.visitsaudi.com/content/dam/documents/saudi-calendar-ar.pdf",
+      "reason": "The operation was aborted due to timeout"
+    },
+    {
+      "id": "event-شارع-الفن-القرية-الأوروبية",
+      "title": "شارع الفن - القرية الاوروبية",
+      "source_url": "https://www.visitsaudi.com/content/dam/documents/saudi-calendar-ar.pdf",
+      "reason": "The operation was aborted due to timeout"
+    },
+    {
+      "id": "event-عروض-الفنون-الأدائية-التقليدية",
+      "title": "عروض الفنون الادائية التقليدية",
+      "source_url": "https://www.visitsaudi.com/content/dam/documents/saudi-calendar-ar.pdf",
+      "reason": "The operation was aborted due to timeout"
+    },
+    {
+      "id": "event-قصور-وقاع-ابو-نقطة-المتحمي",
+      "title": "قصور وقلاع ابو نقطة المتحمي",
+      "source_url": "https://www.visitsaudi.com/content/dam/documents/saudi-calendar-ar.pdf",
+      "reason": "The operation was aborted due to timeout"
+    },
+    {
+      "id": "event-مزرعة-التوت-الأسود",
+      "title": "مزرعة التوت الاسود",
       "source_url": "https://www.visitsaudi.com/content/dam/documents/saudi-calendar-ar.pdf",
       "reason": "The operation was aborted due to timeout"
     }
