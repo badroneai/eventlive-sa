@@ -1,11 +1,38 @@
 {
-  "checked_at": "2026-08-18T07:18:44.983Z",
-  "targets": 8,
-  "evidence_found": 5,
+  "checked_at": "2026-08-18T13:46:16.490Z",
+  "targets": 9,
+  "evidence_found": 6,
   "changed": 0,
   "no_evidence": 2,
   "failed": 1,
   "results": [
+    {
+      "id": "event-beast-house",
+      "host": "nofomo.com",
+      "url": "https://nofomo.com/collections/beast-house",
+      "status": "no-evidence",
+      "reason": "no-explicit-public-price"
+    },
+    {
+      "id": "event-a-thousand-and-one",
+      "host": "nofomo.com",
+      "url": "https://nofomo.com/events/a-thousand-and-one-2026/cart",
+      "status": "evidence",
+      "price_label": "299 SAR",
+      "price": 299,
+      "price_currency": "SAR",
+      "method": "nofomo-visible-ticket-price"
+    },
+    {
+      "id": "event-soundstorm-26",
+      "host": "nofomo.com",
+      "url": "https://nofomo.com/events/soundstorm-26/cart",
+      "status": "evidence",
+      "price_label": "269 SAR",
+      "price": 269,
+      "price_currency": "SAR",
+      "method": "nofomo-visible-ticket-price"
+    },
     {
       "id": "event-12th-middle-east-banking-ai-analytics-summit-2026",
       "host": "eventbrite.com",
@@ -25,23 +52,6 @@
       "price": 0,
       "price_currency": "USD",
       "method": "eventbrite-json-ld"
-    },
-    {
-      "id": "event-a-thousand-and-one",
-      "host": "nofomo.com",
-      "url": "https://nofomo.com/events/a-thousand-and-one-2026/cart",
-      "status": "no-evidence",
-      "reason": "no-explicit-public-price"
-    },
-    {
-      "id": "event-soundstorm-26",
-      "host": "nofomo.com",
-      "url": "https://nofomo.com/events/soundstorm-26/cart",
-      "status": "evidence",
-      "price_label": "269 SAR",
-      "price": 269,
-      "price_currency": "SAR",
-      "method": "nofomo-visible-ticket-price"
     },
     {
       "id": "event-saudi-ai-week",

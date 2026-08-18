@@ -1,5 +1,5 @@
 {
-  "published_at": "2026-08-18T07:15:37.075Z",
+  "published_at": "2026-08-18T13:39:25.983Z",
   "dry_run": false,
   "include_partner": true,
   "source_candidates": "data/source_candidates.json",
@@ -7,8 +7,8 @@
   "candidates_seen": 630,
   "totals": {
     "candidates_seen": 630,
-    "published": 5,
-    "linked_existing": 587,
+    "published": 6,
+    "linked_existing": 586,
     "blocked": 38,
     "duplicate_review_alerts": 7,
     "category_fallback_alerts": 0,
@@ -169,6 +169,11 @@
       "candidate_id": "candidate-visit-saudi-calendar-pdf-عروض-الفنون-الأدائية-التقليدية-20260706-4a38d19e",
       "event_id": "event-عروض-الفنون-الأدائية-التقليدية",
       "title": "عروض الفنون الأدائية التقليدية"
+    },
+    {
+      "candidate_id": "candidate-ithra-events-ithra-members-tour-english-20260901-67fc89c0",
+      "event_id": "event-ithra-members-tour-english",
+      "title": "Ithra Members Tour (English)"
     }
   ],
   "linked_existing": [
@@ -1367,12 +1372,6 @@
       "reason": "already linked to catalog event"
     },
     {
-      "candidate_id": "candidate-ithra-events-toddler-tuesday-20260818-1afead7d",
-      "event_id": "event-toddler-tuesday",
-      "title": "Toddler Tuesday",
-      "reason": "already linked to catalog event"
-    },
-    {
       "candidate_id": "candidate-ithra-events-ithra-art-prize-exhibition-20260818-83c2ab55",
       "event_id": "event-ithra-art-prize-exhibition",
       "title": "Ithra Art Prize Exhibition",
@@ -1409,51 +1408,15 @@
       "reason": "already linked to catalog event"
     },
     {
-      "candidate_id": "candidate-ithra-events-ithra-members-tour-20260818-5011b841",
-      "event_id": "event-ithra-members-tour",
-      "title": "Ithra Members Tour",
-      "reason": "already linked to catalog event"
-    },
-    {
-      "candidate_id": "candidate-ithra-events-ithra-members-tour-arabic-20260818-c4eda15f",
-      "event_id": "event-ithra-members-tour-arabic",
-      "title": "Ithra Members Tour (Arabic)",
-      "reason": "already linked to catalog event"
-    },
-    {
-      "candidate_id": "candidate-ithra-events-childrens-museum-story-time-20260818-ada8b9db",
-      "event_id": "event-childrens-museum-story-time",
-      "title": "Children's Museum Story Time",
-      "reason": "already linked to catalog event"
-    },
-    {
-      "candidate_id": "candidate-ithra-events-ithra-members-tour-english-20260818-67fc89c0",
-      "event_id": "event-ithra-members-tour-arabic",
-      "title": "Ithra Members Tour (English)",
+      "candidate_id": "candidate-ithra-events-toddler-tuesday-20260818-1afead7d",
+      "event_id": "event-toddler-tuesday",
+      "title": "Toddler Tuesday",
       "reason": "already linked to catalog event"
     },
     {
       "candidate_id": "candidate-ithra-events-childrens-art-studio-20260818-2bf92d17",
       "event_id": "event-childrens-art-studio",
       "title": "Children's Art Studio",
-      "reason": "already linked to catalog event"
-    },
-    {
-      "candidate_id": "candidate-ithra-events-spot-of-inspiration-20260818-5bac584c",
-      "event_id": "event-spot-of-inspiration",
-      "title": "Spot of Inspiration",
-      "reason": "already linked to catalog event"
-    },
-    {
-      "candidate_id": "candidate-ithra-events-tangram-20260818-9a9db6cb",
-      "event_id": "event-tangram",
-      "title": "Tangram",
-      "reason": "already linked to catalog event"
-    },
-    {
-      "candidate_id": "candidate-ithra-events-emboss-printing-experience-20260818-2671d1ce",
-      "event_id": "event-emboss-printing-experience",
-      "title": "Emboss Printing Experience",
       "reason": "already linked to catalog event"
     },
     {
@@ -1466,6 +1429,18 @@
       "candidate_id": "candidate-ithra-events-energy-lab-20260818-60155d60",
       "event_id": "event-energy-lab",
       "title": "Energy Lab",
+      "reason": "already linked to catalog event"
+    },
+    {
+      "candidate_id": "candidate-ithra-events-spot-of-inspiration-20260818-5bac584c",
+      "event_id": "event-spot-of-inspiration",
+      "title": "Spot of Inspiration",
+      "reason": "already linked to catalog event"
+    },
+    {
+      "candidate_id": "candidate-ithra-events-childrens-museum-story-time-20260818-ada8b9db",
+      "event_id": "event-childrens-museum-story-time",
+      "title": "Children's Museum Story Time",
       "reason": "already linked to catalog event"
     },
     {
@@ -1487,9 +1462,21 @@
       "reason": "already linked to catalog event"
     },
     {
+      "candidate_id": "candidate-ithra-events-tangram-20260818-9a9db6cb",
+      "event_id": "event-tangram",
+      "title": "Tangram",
+      "reason": "already linked to catalog event"
+    },
+    {
       "candidate_id": "candidate-sfda-events-دور-المواصفات-القياسية-في-دعم-عمليات-التعقيم-والتغليف-ووضع-المعلومات-الت-20260819-dd16cb51",
       "event_id": "event-دور-المواصفات-القياسية-في-دعم-عمليات-التعقيم-والتغليف-ووضع-المعلومات-الت",
       "title": "دور المواصفات القياسية في دعم عمليات التعقيم والتغليف ووضع المعلومات التعريفية للمصانع المحلية",
+      "reason": "already linked to catalog event"
+    },
+    {
+      "candidate_id": "candidate-ithra-events-emboss-printing-experience-20260819-2671d1ce",
+      "event_id": "event-emboss-printing-experience",
+      "title": "Emboss Printing Experience",
       "reason": "already linked to catalog event"
     },
     {
@@ -2024,6 +2011,18 @@
       "candidate_id": "candidate-misk-hub-programs-misk-x-moyasar-traineeship-program-20260901-3bb265ea",
       "event_id": "event-misk-x-moyasar-traineeship-program",
       "title": "Misk x Moyasar Traineeship Program",
+      "reason": "already linked to catalog event"
+    },
+    {
+      "candidate_id": "candidate-ithra-events-ithra-members-tour-20260901-5011b841",
+      "event_id": "event-ithra-members-tour",
+      "title": "Ithra Members Tour",
+      "reason": "already linked to catalog event"
+    },
+    {
+      "candidate_id": "candidate-ithra-events-ithra-members-tour-arabic-20260901-c4eda15f",
+      "event_id": "event-ithra-members-tour-arabic",
+      "title": "Ithra Members Tour (Arabic)",
       "reason": "already linked to catalog event"
     },
     {
