@@ -1,6 +1,6 @@
 {
   "schema": "eventlive.eye-official-link-verification.v1",
-  "generated_at": "2026-08-18T13:39:13.457Z",
+  "generated_at": "2026-08-18T19:26:37.481Z",
   "dry_run": false,
   "totals": {
     "targets": 12,
@@ -134,15 +134,19 @@
       "status": "skipped",
       "official_url": "https://www.therff.com/",
       "confirmed": false,
-      "reason": "title-not-confirmed",
+      "reason": "year-not-confirmed",
       "title_tokens": [
         "real",
         "estate",
         "future"
       ],
-      "matched_title_tokens": [],
+      "matched_title_tokens": [
+        "real",
+        "estate",
+        "future"
+      ],
       "year_confirmed": false,
-      "month_confirmed": false
+      "month_confirmed": true
     },
     {
       "candidate_id": "candidate-eye-of-riyadh-events-real-estate-excellence-award-2026-rea-2026-20270126-5e55ea49",

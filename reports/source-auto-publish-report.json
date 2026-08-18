@@ -1,18 +1,18 @@
 {
-  "published_at": "2026-08-18T13:39:25.983Z",
+  "published_at": "2026-08-18T19:26:44.841Z",
   "dry_run": false,
   "include_partner": true,
   "source_candidates": "data/source_candidates.json",
   "events_catalog": "data/events_catalog.json",
-  "candidates_seen": 630,
+  "candidates_seen": 627,
   "totals": {
-    "candidates_seen": 630,
+    "candidates_seen": 627,
     "published": 6,
-    "linked_existing": 586,
+    "linked_existing": 583,
     "blocked": 38,
     "duplicate_review_alerts": 7,
     "category_fallback_alerts": 0,
-    "reconciled": 592
+    "reconciled": 589
   },
   "category_fallback_alerts": [],
   "duplicate_catalog_rows_removed": 0,
@@ -171,9 +171,9 @@
       "title": "عروض الفنون الأدائية التقليدية"
     },
     {
-      "candidate_id": "candidate-ithra-events-ithra-members-tour-english-20260901-67fc89c0",
-      "event_id": "event-ithra-members-tour-english",
-      "title": "Ithra Members Tour (English)"
+      "candidate_id": "candidate-asharqia-chamber-events-ملتقى-الذكاء-الاصطناعي-في-سوق-العمل-والتنمية-الاجتماعية-2026-20261014-e55860fa",
+      "event_id": "event-ملتقى-الذكاء-الاصطناعي-في-سوق-العمل-والتنمية-الاجتماعية-2026",
+      "title": "ملتقى الذكاء الاصطناعي في سوق العمل والتنمية الاجتماعية 2026"
     }
   ],
   "linked_existing": [
@@ -1318,33 +1318,15 @@
       "reason": "already linked to catalog event"
     },
     {
-      "candidate_id": "candidate-future-skills-catalog-virtualization-cloud-infrastructure-basics-الافتراضية-والبنية-التحتية-ال-20260816-6070e1ef",
-      "event_id": "event-virtualization-cloud-infrastructure-basics-الافتراضية-والبنية-التحتية-ال",
-      "title": "⁠Virtualization & Cloud Infrastructure Basics - الافتراضية والبنية التحتية السحابية",
-      "reason": "already linked to catalog event"
-    },
-    {
       "candidate_id": "candidate-future-skills-catalog-sql-fundamentals-20260816-971d8196",
       "event_id": "event-sql-fundamentals",
       "title": "⁠SQL Fundamentals",
       "reason": "already linked to catalog event"
     },
     {
-      "candidate_id": "candidate-future-skills-catalog-comptia-it-fundamentals-20260816-ffccc14e",
-      "event_id": "event-comptia-it-fundamentals",
-      "title": "CompTIA IT Fundamentals",
-      "reason": "already linked to catalog event"
-    },
-    {
       "candidate_id": "candidate-hayy-jameel-events-hayy-makers-open-call-makers-matters-20260816-4078f4a4",
       "event_id": "event-hayy-makers-open-call-makers-matters",
       "title": "Hayy Makers | Open Call: Makers Matters",
-      "reason": "already linked to catalog event"
-    },
-    {
-      "candidate_id": "candidate-umm-al-qura-events-دورة-اساسيات-المجهر-الالكتروني-الماسح-sem-20260816-84787696",
-      "event_id": "event-دورة-اساسيات-المجهر-الالكتروني-الماسح-sem",
-      "title": "دورة اساسيات المجهر الالكتروني الماسح SEM",
       "reason": "already linked to catalog event"
     },
     {
@@ -1366,36 +1348,6 @@
       "reason": "already linked to catalog event"
     },
     {
-      "candidate_id": "candidate-sfda-events-احتياطات-الأمان-عند-استخدام-مبيدات-آفات-الصحة-العامة-20260818-a459d8bf",
-      "event_id": "event-احتياطات-الأمان-عند-استخدام-مبيدات-آفات-الصحة-العامة",
-      "title": "احتياطات الأمان عند استخدام مبيدات آفات الصحة العامة",
-      "reason": "already linked to catalog event"
-    },
-    {
-      "candidate_id": "candidate-ithra-events-ithra-art-prize-exhibition-20260818-83c2ab55",
-      "event_id": "event-ithra-art-prize-exhibition",
-      "title": "Ithra Art Prize Exhibition",
-      "reason": "already linked to catalog event"
-    },
-    {
-      "candidate_id": "candidate-ithra-events-printing-house-20260818-e56f4f89",
-      "event_id": "event-printing-house",
-      "title": "Printing House",
-      "reason": "already linked to catalog event"
-    },
-    {
-      "candidate_id": "candidate-ithra-events-tafasahu-make-room-20260818-562bc61d",
-      "event_id": "event-tafasahu-make-room",
-      "title": "Tafasahu: Make Room",
-      "reason": "already linked to catalog event"
-    },
-    {
-      "candidate_id": "candidate-ithra-events-tinkering-stations-20260818-5a2c4c0e",
-      "event_id": "event-tinkering-stations",
-      "title": "Tinkering Stations",
-      "reason": "already linked to catalog event"
-    },
-    {
       "candidate_id": "candidate-ithra-events-bedayat-beginnings-of-saudi-art-movement-20260818-e0a239ef",
       "event_id": "event-bedayat-beginnings-of-saudi-art-movement",
       "title": "Bedayat: Beginnings of Saudi Art Movement",
@@ -1405,42 +1357,6 @@
       "candidate_id": "candidate-ithra-events-echoes-of-the-familiar-20260818-cc43c2bd",
       "event_id": "event-echoes-of-the-familiar",
       "title": "Echoes of the Familiar",
-      "reason": "already linked to catalog event"
-    },
-    {
-      "candidate_id": "candidate-ithra-events-toddler-tuesday-20260818-1afead7d",
-      "event_id": "event-toddler-tuesday",
-      "title": "Toddler Tuesday",
-      "reason": "already linked to catalog event"
-    },
-    {
-      "candidate_id": "candidate-ithra-events-childrens-art-studio-20260818-2bf92d17",
-      "event_id": "event-childrens-art-studio",
-      "title": "Children's Art Studio",
-      "reason": "already linked to catalog event"
-    },
-    {
-      "candidate_id": "candidate-ithra-events-chess-hub-20260818-4919439a",
-      "event_id": "event-chess-hub",
-      "title": "Chess Hub",
-      "reason": "already linked to catalog event"
-    },
-    {
-      "candidate_id": "candidate-ithra-events-energy-lab-20260818-60155d60",
-      "event_id": "event-energy-lab",
-      "title": "Energy Lab",
-      "reason": "already linked to catalog event"
-    },
-    {
-      "candidate_id": "candidate-ithra-events-spot-of-inspiration-20260818-5bac584c",
-      "event_id": "event-spot-of-inspiration",
-      "title": "Spot of Inspiration",
-      "reason": "already linked to catalog event"
-    },
-    {
-      "candidate_id": "candidate-ithra-events-childrens-museum-story-time-20260818-ada8b9db",
-      "event_id": "event-childrens-museum-story-time",
-      "title": "Children's Museum Story Time",
       "reason": "already linked to catalog event"
     },
     {
@@ -1456,21 +1372,51 @@
       "reason": "already linked to catalog event"
     },
     {
-      "candidate_id": "candidate-ithra-events-swim-r-mission-20260818-f8a6c05c",
-      "event_id": "event-swim-r-mission",
-      "title": "SWIM-R Mission",
-      "reason": "already linked to catalog event"
-    },
-    {
-      "candidate_id": "candidate-ithra-events-tangram-20260818-9a9db6cb",
-      "event_id": "event-tangram",
-      "title": "Tangram",
-      "reason": "already linked to catalog event"
-    },
-    {
       "candidate_id": "candidate-sfda-events-دور-المواصفات-القياسية-في-دعم-عمليات-التعقيم-والتغليف-ووضع-المعلومات-الت-20260819-dd16cb51",
       "event_id": "event-دور-المواصفات-القياسية-في-دعم-عمليات-التعقيم-والتغليف-ووضع-المعلومات-الت",
       "title": "دور المواصفات القياسية في دعم عمليات التعقيم والتغليف ووضع المعلومات التعريفية للمصانع المحلية",
+      "reason": "already linked to catalog event"
+    },
+    {
+      "candidate_id": "candidate-ithra-events-ithra-art-prize-exhibition-20260819-83c2ab55",
+      "event_id": "event-ithra-art-prize-exhibition",
+      "title": "Ithra Art Prize Exhibition",
+      "reason": "already linked to catalog event"
+    },
+    {
+      "candidate_id": "candidate-ithra-events-printing-house-20260819-e56f4f89",
+      "event_id": "event-printing-house",
+      "title": "Printing House",
+      "reason": "already linked to catalog event"
+    },
+    {
+      "candidate_id": "candidate-ithra-events-tafasahu-make-room-20260819-562bc61d",
+      "event_id": "event-tafasahu-make-room",
+      "title": "Tafasahu: Make Room",
+      "reason": "already linked to catalog event"
+    },
+    {
+      "candidate_id": "candidate-ithra-events-tinkering-stations-20260819-5a2c4c0e",
+      "event_id": "event-tinkering-stations",
+      "title": "Tinkering Stations",
+      "reason": "already linked to catalog event"
+    },
+    {
+      "candidate_id": "candidate-ithra-events-spot-of-inspiration-20260819-5bac584c",
+      "event_id": "event-spot-of-inspiration",
+      "title": "Spot of Inspiration",
+      "reason": "already linked to catalog event"
+    },
+    {
+      "candidate_id": "candidate-ithra-events-childrens-museum-story-time-20260819-ada8b9db",
+      "event_id": "event-childrens-museum-story-time",
+      "title": "Children's Museum Story Time",
+      "reason": "already linked to catalog event"
+    },
+    {
+      "candidate_id": "candidate-ithra-events-childrens-art-studio-20260819-2bf92d17",
+      "event_id": "event-childrens-art-studio",
+      "title": "Children's Art Studio",
       "reason": "already linked to catalog event"
     },
     {
@@ -1483,6 +1429,12 @@
       "candidate_id": "candidate-ithra-events-all-things-hedgehogs-20260819-952dc936",
       "event_id": "event-all-things-hedgehogs",
       "title": "All Things Hedgehogs",
+      "reason": "already linked to catalog event"
+    },
+    {
+      "candidate_id": "candidate-ithra-events-energy-lab-20260819-60155d60",
+      "event_id": "event-energy-lab",
+      "title": "Energy Lab",
       "reason": "already linked to catalog event"
     },
     {
@@ -1543,6 +1495,12 @@
       "candidate_id": "candidate-ithra-events-family-challenges-20260820-3726c868",
       "event_id": "event-family-challenges",
       "title": "Family Challenges",
+      "reason": "already linked to catalog event"
+    },
+    {
+      "candidate_id": "candidate-ithra-events-tangram-20260820-9a9db6cb",
+      "event_id": "event-tangram",
+      "title": "Tangram",
       "reason": "already linked to catalog event"
     },
     {
@@ -1804,9 +1762,21 @@
       "reason": "already linked to catalog event"
     },
     {
+      "candidate_id": "candidate-ithra-events-toddler-tuesday-20260825-1afead7d",
+      "event_id": "event-toddler-tuesday",
+      "title": "Toddler Tuesday",
+      "reason": "already linked to catalog event"
+    },
+    {
       "candidate_id": "candidate-umm-al-qura-events-المحتوى-التفاعلي-والتقييم-الإلكتروني-في-blackboard-ultra-الفترة-الصباحية-20260825-116c6b0a",
       "event_id": "event-المحتوى-التفاعلي-والتقييم-الإلكتروني-في-blackboard-ultra-الفترة-الصباحية",
       "title": "المحتوى التفاعلي والتقييم الإلكتروني في Blackboard Ultra – الفترة الصباحية",
+      "reason": "already linked to catalog event"
+    },
+    {
+      "candidate_id": "candidate-ithra-events-chess-hub-20260825-4919439a",
+      "event_id": "event-chess-hub",
+      "title": "Chess Hub",
       "reason": "already linked to catalog event"
     },
     {
@@ -1861,6 +1831,12 @@
       "candidate_id": "candidate-ithra-events-art-in-virtual-motion-20260827-3acf52ef",
       "event_id": "event-art-in-virtual-motion",
       "title": "Art in Virtual Motion",
+      "reason": "already linked to catalog event"
+    },
+    {
+      "candidate_id": "candidate-ithra-events-swim-r-mission-20260827-f8a6c05c",
+      "event_id": "event-swim-r-mission",
+      "title": "SWIM-R Mission",
       "reason": "already linked to catalog event"
     },
     {
@@ -2029,6 +2005,12 @@
       "candidate_id": "candidate-umm-al-qura-events-رابط-سداد-الزمالة-التطبيقية-في-الأنظمة-الوقفية-20260901-7703e69c",
       "event_id": "event-رابط-سداد-الزمالة-التطبيقية-في-الأنظمة-الوقفية",
       "title": "رابط سداد الزمالة التطبيقية في الأنظمة الوقفية",
+      "reason": "already linked to catalog event"
+    },
+    {
+      "candidate_id": "candidate-ithra-events-ithra-members-tour-english-20260901-67fc89c0",
+      "event_id": "event-ithra-members-tour-english",
+      "title": "Ithra Members Tour (English)",
       "reason": "already linked to catalog event"
     },
     {
@@ -2473,6 +2455,12 @@
       "candidate_id": "candidate-tuwaiq-academy-bootcamps-معسكر-التقنيات-الناشئة-والعوالم-الافتراضية-20260927-0647b188",
       "event_id": "event-معسكر-التقنيات-الناشئة-والعوالم-الافتراضية",
       "title": "معسكر التقنيات الناشئة والعوالم الافتراضية",
+      "reason": "already linked to catalog event"
+    },
+    {
+      "candidate_id": "candidate-asharqia-chamber-events-معرض-وظائف-2026-20260927-6ec9f54f",
+      "event_id": "event-معرض-وظائف-2026",
+      "title": "معرض وظائف 2026",
       "reason": "already linked to catalog event"
     },
     {
@@ -3100,15 +3088,15 @@
       "reason": "already linked to catalog event"
     },
     {
-      "candidate_id": "candidate-dhahran-expo-calendar-consumer-trade-fair-20261202-18d15b29",
-      "event_id": "event-consumer-trade-fair",
-      "title": "Consumer Trade Fair",
+      "candidate_id": "candidate-asharqia-chamber-events-حفل-الاستقبال-السنوي-لقطاع-الاعمال-2026م-20261201-afe11e68",
+      "event_id": "event-حفل-الاستقبال-السنوي-لقطاع-الاعمال-2026م",
+      "title": "حفل الاستقبال السنوي لقطاع الاعمال 2026م",
       "reason": "already linked to catalog event"
     },
     {
-      "candidate_id": "candidate-asharqia-chamber-events-حفل-الاستقبال-السنوي-لقطاع-الاعمال-2026م-20261202-afe11e68",
-      "event_id": "event-حفل-الاستقبال-السنوي-لقطاع-الاعمال-2026م",
-      "title": "حفل الاستقبال السنوي لقطاع الاعمال 2026م",
+      "candidate_id": "candidate-dhahran-expo-calendar-consumer-trade-fair-20261202-18d15b29",
+      "event_id": "event-consumer-trade-fair",
+      "title": "Consumer Trade Fair",
       "reason": "already linked to catalog event"
     },
     {
@@ -3295,12 +3283,6 @@
       "candidate_id": "candidate-riyadh-city-events-next-gen-iot-expo-20261221-dfb4907e",
       "event_id": "event-next-gen-iot-expo",
       "title": "Next-Gen IoT Expo",
-      "reason": "already linked to catalog event"
-    },
-    {
-      "candidate_id": "candidate-asharqia-chamber-events-معرض-وظائف-2026-20261227-6ec9f54f",
-      "event_id": "event-معرض-وظائف-2026",
-      "title": "معرض وظائف 2026",
       "reason": "already linked to catalog event"
     },
     {

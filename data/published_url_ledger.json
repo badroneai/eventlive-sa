@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "generated_at": "2026-08-18T13:50:30.558Z",
+  "generated_at": "2026-08-18T19:35:18.171Z",
   "events": {
     "event-skill-development-initiative": {
       "identity": "skill development initiative|riyadh|2021-07-14",
@@ -1152,29 +1152,14 @@
       "first_seen": "2026-08-17",
       "last_seen": "2026-08-18"
     },
-    "event-virtualization-cloud-infrastructure-basics-الافتراضية-والبنية-التحتية-ال": {
-      "identity": "virtualization & cloud infrastructure basics - الافتراضية والبنية التحتية السحابية|online|2026-08-16",
-      "first_seen": "2026-08-06",
-      "last_seen": "2026-08-18"
-    },
     "event-sql-fundamentals": {
       "identity": "sql fundamentals|online|2026-08-16",
-      "first_seen": "2026-08-06",
-      "last_seen": "2026-08-18"
-    },
-    "event-comptia-it-fundamentals": {
-      "identity": "comptia it fundamentals|online|2026-08-16",
       "first_seen": "2026-08-06",
       "last_seen": "2026-08-18"
     },
     "event-hayy-makers-open-call-makers-matters": {
       "identity": "hayy makers | open call: makers matters|jeddah|2026-08-16",
       "first_seen": "2026-08-16",
-      "last_seen": "2026-08-18"
-    },
-    "event-دورة-اساسيات-المجهر-الالكتروني-الماسح-sem": {
-      "identity": "دورة اساسيات المجهر الالكتروني الماسح sem|makkah|2026-08-16",
-      "first_seen": "2026-07-11",
       "last_seen": "2026-08-18"
     },
     "event-معسكر-أساسيات-هندسة-الميكاترونكس": {
@@ -1195,11 +1180,6 @@
     "event-شهادة-محترف-أعمال-معتمد-في-القيادة-الإدارية-cbp-ls": {
       "identity": "شهادة محترف أعمال معتمد في القيادة الإدارية (cbp-ls)|makkah|2026-08-16",
       "first_seen": "2026-07-27",
-      "last_seen": "2026-08-18"
-    },
-    "event-ithra-members-tour-arabic": {
-      "identity": "ithra members tour (arabic)|dhahran|2026-08-18",
-      "first_seen": "2026-08-11",
       "last_seen": "2026-08-18"
     },
     "event-hayy-makers-introduction-to-photography-understanding-your-camera": {
@@ -1990,6 +1970,11 @@
     "event-12th-middle-east-banking-ai-analytics-summit-2026": {
       "identity": "12th middle east banking ai & analytics summit 2026|riyadh|2026-10-14",
       "first_seen": "2026-07-11",
+      "last_seen": "2026-08-18"
+    },
+    "event-ملتقى-الذكاء-الاصطناعي-في-سوق-العمل-والتنمية-الاجتماعية-2026": {
+      "identity": "ملتقى الذكاء الاصطناعي في سوق العمل والتنمية الاجتماعية 2026|dammam|2026-10-14",
+      "first_seen": "2026-08-18",
       "last_seen": "2026-08-18"
     },
     "event-world-stadiums-and-arenas-summit": {
@@ -2877,9 +2862,29 @@
       "first_seen": "2026-07-11",
       "last_seen": "2026-08-18"
     },
+    "event-ithra-members-tour-arabic": {
+      "identity": "ithra members tour (arabic)|dhahran|2026-08-18",
+      "first_seen": "2026-08-11",
+      "last_seen": "2026-08-18"
+    },
     "event-آلية-تقديم-طلبات-الحصول-على-ترخيص-خدمات-توكيد-الجودة-والقياسات-الاشعاعية": {
       "identity": "آلية تقديم طلبات الحصول على ترخيص خدمات توكيد الجودة والقياسات الاشعاعية|online|2026-08-17",
       "first_seen": "2026-08-02",
+      "last_seen": "2026-08-18"
+    },
+    "event-دورة-اساسيات-المجهر-الالكتروني-الماسح-sem": {
+      "identity": "دورة اساسيات المجهر الالكتروني الماسح sem|makkah|2026-08-16",
+      "first_seen": "2026-07-11",
+      "last_seen": "2026-08-18"
+    },
+    "event-virtualization-cloud-infrastructure-basics-الافتراضية-والبنية-التحتية-ال": {
+      "identity": "virtualization & cloud infrastructure basics - الافتراضية والبنية التحتية السحابية|online|2026-08-16",
+      "first_seen": "2026-08-06",
+      "last_seen": "2026-08-18"
+    },
+    "event-comptia-it-fundamentals": {
+      "identity": "comptia it fundamentals|online|2026-08-16",
+      "first_seen": "2026-08-06",
       "last_seen": "2026-08-18"
     },
     "event-hayy-makers-woodworking-course-level-1-with-ahmad-sofi": {

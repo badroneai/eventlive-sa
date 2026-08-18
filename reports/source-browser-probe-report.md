@@ -1,11 +1,11 @@
 # EventLive Browser Source Probe
 
-Generated at: 2026-08-18T13:28:27.914Z
+Generated at: 2026-08-18T19:20:00.885Z
 
 ## Summary
 
 - Sources probed this run: 0
-- Fresh results available: 1
+- Fresh results available: 0
 - Browser network API: 0
 - Hydration payload: 0
 - Rendered HTML candidates: 0
@@ -16,7 +16,6 @@ Generated at: 2026-08-18T13:28:27.914Z
 
 | Priority | Source | Status | HTTP | Classification | Endpoints | Event links | Date snippets | Next action |
 |---:|---|---|---:|---|---:|---:|---:|---|
-| 39 | discover-aseer-events | ok | 404 | empty-or-shell | 0 | 0 | 0 | اعتبرها shell وابحث عن API أو مسار بديل قبل أي collector. |
 
 ## Endpoint Candidates
 

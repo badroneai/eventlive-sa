@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-18T13:46:16.111Z",
+  "generated_at": "2026-08-18T19:31:39.589Z",
   "max_duration_hours": 8,
   "totals": {
     "activated": 26,
@@ -133,15 +133,6 @@
       "session_type": "official-online-workshop"
     },
     {
-      "id": "event-beast-house",
-      "title": "Beast House",
-      "source_label": "MDLBEAST Events",
-      "starts_at": "2026-08-21T21:00:00+03:00",
-      "ends_at": "2026-08-22T03:00:00+03:00",
-      "duration_hours": 6,
-      "session_type": "official-entertainment-session"
-    },
-    {
       "id": "event-الأجهزة-الطبية-الرقمية-التوعية-بالمتطلبات-التنظيمية-وأفضل-الممارسات",
       "title": "الأجهزة الطبية الرقمية: التوعية بالمتطلبات التنظيمية وأفضل الممارسات",
       "source_label": "Saudi Food and Drug Authority Events",
@@ -203,6 +194,15 @@
       "ends_at": "2026-08-21T20:00:00+03:00",
       "duration_hours": 6,
       "session_type": "official-community-session"
+    },
+    {
+      "id": "event-beast-house",
+      "title": "Beast House",
+      "source_label": "MDLBEAST Events",
+      "starts_at": "2026-08-21T21:00:00+03:00",
+      "ends_at": "2026-08-22T03:00:00+03:00",
+      "duration_hours": 6,
+      "session_type": "official-entertainment-session"
     },
     {
       "id": "event-register-for-the-world-breastfeeding-week-awareness-lecture",
