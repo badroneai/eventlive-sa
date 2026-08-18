@@ -1,5 +1,5 @@
 {
-  "published_at": "2026-08-18T01:59:58.185Z",
+  "published_at": "2026-08-18T07:15:37.075Z",
   "dry_run": false,
   "include_partner": true,
   "source_candidates": "data/source_candidates.json",
@@ -7,8 +7,8 @@
   "candidates_seen": 630,
   "totals": {
     "candidates_seen": 630,
-    "published": 6,
-    "linked_existing": 586,
+    "published": 5,
+    "linked_existing": 587,
     "blocked": 38,
     "duplicate_review_alerts": 7,
     "category_fallback_alerts": 0,
@@ -169,11 +169,6 @@
       "candidate_id": "candidate-visit-saudi-calendar-pdf-عروض-الفنون-الأدائية-التقليدية-20260706-4a38d19e",
       "event_id": "event-عروض-الفنون-الأدائية-التقليدية",
       "title": "عروض الفنون الأدائية التقليدية"
-    },
-    {
-      "candidate_id": "candidate-mdlbeast-events-mdlbeast-radio-mixtape-20260820-129ba10b",
-      "event_id": "event-mdlbeast-radio-mixtape",
-      "title": "MDLBEAST Radio MixTape"
     }
   ],
   "linked_existing": [
@@ -1546,6 +1541,12 @@
       "reason": "already linked to catalog event"
     },
     {
+      "candidate_id": "candidate-mdlbeast-events-mdlbeast-radio-mixtape-20260820-129ba10b",
+      "event_id": "event-mdlbeast-radio-mixtape",
+      "title": "MDLBEAST Radio MixTape",
+      "reason": "already linked to catalog event"
+    },
+    {
       "candidate_id": "candidate-hayy-jameel-events-hayy-cinema-august-2026-20260820-0636e29a",
       "event_id": "event-hayy-cinema-august-2026",
       "title": "Hayy Cinema | August 2026",
@@ -1669,7 +1670,7 @@
       "candidate_id": "candidate-mdlbeast-events-beast-house-20260821-83049a2a",
       "event_id": "event-beast-house",
       "title": "Beast House",
-      "reason": "trusted duplicate linked to existing catalog event"
+      "reason": "already linked to catalog event"
     },
     {
       "candidate_id": "candidate-ithra-events-toddler-saturday-20260822-739e1f00",

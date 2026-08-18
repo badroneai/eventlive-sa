@@ -1,25 +1,18 @@
 {
-  "generated_at": "2026-08-18T02:04:03.977Z",
+  "generated_at": "2026-08-18T07:19:47.051Z",
   "events_file": "dist/events.json",
   "manifest": "data/event_image_cache_manifest.json",
   "image_dir": "dist/assets/event-images",
   "totals": {
     "targets": 500,
     "cached_total": 806,
-    "fetched": 1,
-    "reused": 495,
+    "fetched": 0,
+    "reused": 496,
     "failed": 4,
     "skipped_recent_failures": 4,
     "remembered_failures": 10
   },
-  "fetched": [
-    {
-      "source_url": "https://www.datocms-assets.com/66357/1738671266-mixtape-feb-4th-16-1.png?auto=format&fit=max&w=2048&q=90",
-      "file": "dist/assets/event-images/mdlbeast-radio-mixtape-b5ffbacbbc.avif",
-      "bytes": 135880,
-      "events": 1
-    }
-  ],
+  "fetched": [],
   "reused": [
     {
       "source_url": "https://music.moc.gov.sa/-/media/Project/Ministries/Moc/Events/Artboard1.png",
@@ -744,6 +737,11 @@
     {
       "source_url": "https://www.ithra.com/application/files/cache/thumbnails/ad169f1ec2946d8577403914c762b084.png",
       "file": "dist/assets/event-images/clay-shaping-845acbd7b3.png",
+      "events": 1
+    },
+    {
+      "source_url": "https://www.datocms-assets.com/66357/1738671266-mixtape-feb-4th-16-1.png?auto=format&fit=max&w=2048&q=90",
+      "file": "dist/assets/event-images/mdlbeast-radio-mixtape-b5ffbacbbc.avif",
       "events": 1
     },
     {
@@ -2567,8 +2565,6 @@
       "skipped": true
     }
   ],
-  "requires_rebuild": true,
-  "rebuild_reasons": [
-    "fetched:1"
-  ]
+  "requires_rebuild": false,
+  "rebuild_reasons": []
 }

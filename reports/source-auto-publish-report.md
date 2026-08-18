@@ -1,11 +1,11 @@
 # EventLive Source Auto Publish Report
 
-- published_at: 2026-08-18T01:59:58.185Z
+- published_at: 2026-08-18T07:15:37.075Z
 - dry_run: false
 - include_partner: true
 - candidates_seen: 630
-- published_new: 6
-- linked_existing: 586
+- published_new: 5
+- linked_existing: 587
 - blocked_remaining: 38
 - duplicate_review_alerts: 7
 
@@ -30,7 +30,6 @@
 | candidate-visit-saudi-calendar-pdf-مزرعة-التوت-الأسود-20260701-4a38d19e | published | event-مزرعة-التوت-الأسود | مزرعة التوت الأسود |
 | candidate-visit-saudi-calendar-pdf-الأخطبوطية-20260704-4a38d19e | published | event-الأخطبوطية | الأخطبوطية |
 | candidate-visit-saudi-calendar-pdf-عروض-الفنون-الأدائية-التقليدية-20260706-4a38d19e | published | event-عروض-الفنون-الأدائية-التقليدية | عروض الفنون الأدائية التقليدية |
-| candidate-mdlbeast-events-mdlbeast-radio-mixtape-20260820-129ba10b | published | event-mdlbeast-radio-mixtape | MDLBEAST Radio MixTape |
 | candidate-moc-cultural-subportals-skill-development-initiative-20210714-10f7dc2c | linked-existing | event-skill-development-initiative | already linked to catalog event |
 | candidate-moc-cultural-subportals-sitar-20220921-cda2e068 | linked-existing | event-sitar | already linked to catalog event |
 | candidate-moc-cultural-subportals-the-architecture-and-design-caf-20240427-046e2ec1 | linked-existing | event-the-architecture-and-design-caf | already linked to catalog event |
@@ -259,6 +258,7 @@
 | candidate-ithra-events-your-book-in-a-minute-20260819-c8aab584 | linked-existing | event-your-book-in-a-minute | already linked to catalog event |
 | candidate-visit-saudi-calendar-pdf-صد-رد-عرض-ستاند-اب-كوميدي-من-أوس-النفيعي-20260820-4a38d19e | linked-existing | event-صد-رد-عرض-ستاند-اب-كوميدي-من-أوس-النفيعي | already linked to catalog event |
 | candidate-visit-saudi-calendar-pdf-ليلة-5x5-20260820-4a38d19e | linked-existing | event-ليلة-5x5 | already linked to catalog event |
+| candidate-mdlbeast-events-mdlbeast-radio-mixtape-20260820-129ba10b | linked-existing | event-mdlbeast-radio-mixtape | already linked to catalog event |
 | candidate-hayy-jameel-events-hayy-cinema-august-2026-20260820-0636e29a | linked-existing | event-hayy-cinema-august-2026 | already linked to catalog event |
 | candidate-ithra-events-family-challenges-20260820-3726c868 | linked-existing | event-family-challenges | already linked to catalog event |
 | candidate-ithra-events-little-explorers-20260820-1cc1993f | linked-existing | event-little-explorers | already linked to catalog event |
@@ -279,7 +279,7 @@
 | candidate-ithra-events-stories-from-ithras-library-20260821-4116de16 | linked-existing | event-stories-from-ithras-library | already linked to catalog event |
 | candidate-ithra-events-dots-on-letters-20260821-b8901d67 | linked-existing | event-dots-on-letters | already linked to catalog event |
 | candidate-ithra-events-family-game-20260821-fff43c76 | linked-existing | event-family-game | already linked to catalog event |
-| candidate-mdlbeast-events-beast-house-20260821-83049a2a | linked-existing | event-beast-house | trusted duplicate linked to existing catalog event |
+| candidate-mdlbeast-events-beast-house-20260821-83049a2a | linked-existing | event-beast-house | already linked to catalog event |
 | candidate-ithra-events-toddler-saturday-20260822-739e1f00 | linked-existing | event-toddler-saturday | already linked to catalog event |
 | candidate-ithra-events-1-2-3-lets-rhyme-20260822-4d37515a | linked-existing | event-1-2-3-lets-rhyme | already linked to catalog event |
 | candidate-ithra-events-unbox-your-story-20260822-5085a6f0 | linked-existing | event-unbox-your-story | already linked to catalog event |
