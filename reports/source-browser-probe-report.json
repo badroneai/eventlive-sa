@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-17T19:02:51.821Z",
+  "generated_at": "2026-08-18T01:54:41.622Z",
   "source_registry": "data/source_registry.json",
   "collection_report": "reports/source-collection-report.json",
   "output_dir": "data/raw/browser-probes",
@@ -7,20 +7,57 @@
     "selected_ids": [],
     "scope": "priority",
     "limit": 8,
-    "probed_this_run": 0,
-    "fresh_results_available": 0,
+    "probed_this_run": 1,
+    "fresh_results_available": 1,
     "wait_ms": 4500,
     "timeout_ms": 30000,
     "failure_cooldown_hours": 72
   },
   "methodology": "Browser-level probe inspired by cafe platform work: classify fetchability, hydration payloads, network APIs, structured HTML, rendered DOM, and policy-protected lanes before writing extractors.",
   "totals": {
-    "probed": 0,
+    "probed": 1,
     "browser_network_api": 0,
     "browser_hydration_payload": 0,
     "rendered_html_candidates": 0,
     "blocked_or_protected": 0,
     "policy_skipped": 0
   },
-  "sources": []
+  "sources": [
+    {
+      "id": "discover-aseer-events",
+      "probed_at": "2026-08-18T01:54:49.200Z",
+      "name": "Discover Aseer Events",
+      "priority": 39,
+      "url": "https://discoveraseer.com/en/events",
+      "final_url": "https://discoveraseer.com/en/events",
+      "status": "ok",
+      "http_status": 404,
+      "navigation_error": "",
+      "duration_ms": 6969,
+      "classification": "empty-or-shell",
+      "next_action": "اعتبرها shell وابحث عن API أو مسار بديل قبل أي collector.",
+      "title": "404: This page could not be found.",
+      "text_bytes": 33,
+      "html_bytes": 7421,
+      "html_snapshot": "data/raw/browser-probes/discover-aseer-events-2026-08-18T01-54-41-622Z.html",
+      "screenshot": "data/raw/browser-probes/discover-aseer-events-2026-08-18T01-54-41-622Z.png",
+      "signals": {
+        "has_next_data": false,
+        "has_nuxt": false,
+        "has_json_ld": false,
+        "has_event_schema": false,
+        "date_snippets": [],
+        "event_like_links": []
+      },
+      "script_signals": {
+        "next_data_scripts": 0,
+        "nuxt_scripts": 0,
+        "json_ld_scripts": 0,
+        "large_inline_scripts": 1
+      },
+      "network_total": 0,
+      "network_endpoints": [],
+      "network_sample": []
+    }
+  ]
 }

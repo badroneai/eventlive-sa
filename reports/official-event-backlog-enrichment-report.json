@@ -1,224 +1,63 @@
 {
-  "generated_at": "2026-08-17T19:11:02.845Z",
+  "generated_at": "2026-08-18T02:02:58.020Z",
   "totals": {
-    "targets": 18,
-    "enriched": 18,
-    "fetched": 13,
-    "images": 15,
-    "fetch_failures": 5
+    "targets": 5,
+    "enriched": 5,
+    "fetched": 5,
+    "images": 5,
+    "fetch_failures": 0
   },
   "enriched": [
     {
       "id": "event-الأخطبوطية",
       "title": "الاخطبوطية",
       "source_label": "Visit Saudi Summer Calendar PDF",
-      "source_method": "approved-source-row",
+      "source_method": "official-page-meta",
       "source_url": "https://www.visitsaudi.com/content/dam/documents/saudi-calendar-ar.pdf",
-      "fetched": false,
+      "fetched": true,
       "image": true,
-      "fetch_reason": "The operation was aborted due to timeout"
+      "fetch_reason": ""
     },
     {
       "id": "event-شارع-الفن-القرية-الأوروبية",
       "title": "شارع الفن - القرية الاوروبية",
       "source_label": "Visit Saudi Summer Calendar PDF",
-      "source_method": "approved-source-row",
+      "source_method": "official-page-meta",
       "source_url": "https://www.visitsaudi.com/content/dam/documents/saudi-calendar-ar.pdf",
-      "fetched": false,
+      "fetched": true,
       "image": true,
-      "fetch_reason": "The operation was aborted due to timeout"
+      "fetch_reason": ""
     },
     {
       "id": "event-عروض-الفنون-الأدائية-التقليدية",
       "title": "عروض الفنون الادائية التقليدية",
       "source_label": "Visit Saudi Summer Calendar PDF",
-      "source_method": "approved-source-row",
+      "source_method": "official-page-meta",
       "source_url": "https://www.visitsaudi.com/content/dam/documents/saudi-calendar-ar.pdf",
-      "fetched": false,
+      "fetched": true,
       "image": true,
-      "fetch_reason": "The operation was aborted due to timeout"
+      "fetch_reason": ""
     },
     {
       "id": "event-قصور-وقاع-ابو-نقطة-المتحمي",
       "title": "قصور وقلاع ابو نقطة المتحمي",
       "source_label": "Visit Saudi Summer Calendar PDF",
-      "source_method": "approved-source-row",
+      "source_method": "official-page-meta",
       "source_url": "https://www.visitsaudi.com/content/dam/documents/saudi-calendar-ar.pdf",
-      "fetched": false,
+      "fetched": true,
       "image": true,
-      "fetch_reason": "The operation was aborted due to timeout"
+      "fetch_reason": ""
     },
     {
       "id": "event-مزرعة-التوت-الأسود",
       "title": "مزرعة التوت الاسود",
       "source_label": "Visit Saudi Summer Calendar PDF",
-      "source_method": "approved-source-row",
+      "source_method": "official-page-meta",
       "source_url": "https://www.visitsaudi.com/content/dam/documents/saudi-calendar-ar.pdf",
-      "fetched": false,
-      "image": true,
-      "fetch_reason": "The operation was aborted due to timeout"
-    },
-    {
-      "id": "event-boat-bash-cruise",
-      "title": "Boat Bash Cruise",
-      "source_label": "Saudi Universities and Technical Colleges",
-      "source_method": "official-page-meta",
-      "source_url": "https://kaustcentral-eventscalendar-userwebsite.cfapps.eu20.hana.ondemand.com/dashboard/event-details/531",
-      "fetched": true,
-      "image": false,
-      "fetch_reason": ""
-    },
-    {
-      "id": "event-buraydah-international-dates-carnival-activites",
-      "title": "Buraydah International Dates Carnival Activites",
-      "source_label": "Visit Saudi Seasons",
-      "source_method": "official-page-meta",
-      "source_url": "https://www.visitsaudi.com/en/qassim/events/buraydah-dates-carnival/buraydah-international-dates-carnival-activities",
-      "fetched": true,
-      "image": true,
-      "fetch_reason": ""
-    },
-    {
-      "id": "event-register-for-the-world-breastfeeding-week-awareness-lecture",
-      "title": "Register for the World Breastfeeding Week Awareness Lecture",
-      "source_label": "Saudi Universities and Technical Colleges",
-      "source_method": "official-page-meta",
-      "source_url": "https://kaustcentral-eventscalendar-userwebsite.cfapps.eu20.hana.ondemand.com/dashboard/event-details/527",
-      "fetched": true,
-      "image": false,
-      "fetch_reason": ""
-    },
-    {
-      "id": "event-summer-splash-at-south-beach",
-      "title": "Summer Splash at South Beach",
-      "source_label": "Saudi Universities and Technical Colleges",
-      "source_method": "official-page-meta",
-      "source_url": "https://kaustcentral-eventscalendar-userwebsite.cfapps.eu20.hana.ondemand.com/dashboard/event-details/530",
-      "fetched": true,
-      "image": false,
-      "fetch_reason": ""
-    },
-    {
-      "id": "event-unaizah-international-dates-carnival",
-      "title": "Unaizah International Dates Carnival",
-      "source_label": "Visit Saudi Seasons",
-      "source_method": "official-page-meta",
-      "source_url": "https://www.visitsaudi.com/en/qassim/events/unaizah-international-dates-carnival",
-      "fetched": true,
-      "image": true,
-      "fetch_reason": ""
-    },
-    {
-      "id": "event-التشكيل-الحر",
-      "title": "التشكيل الحر",
-      "source_label": "Umm Al-Qura University Events Center",
-      "source_method": "official-page-meta",
-      "source_url": "https://uqu.edu.sa/App/Events/41073",
-      "fetched": true,
-      "image": true,
-      "fetch_reason": ""
-    },
-    {
-      "id": "event-الكروشيه",
-      "title": "الكروشيه",
-      "source_label": "Umm Al-Qura University Events Center",
-      "source_method": "official-page-meta",
-      "source_url": "https://uqu.edu.sa/App/Events/41072",
-      "fetched": true,
-      "image": true,
-      "fetch_reason": ""
-    },
-    {
-      "id": "event-الميداليات-المطرزة",
-      "title": "الميداليات المطرزة",
-      "source_label": "Umm Al-Qura University Events Center",
-      "source_method": "official-page-meta",
-      "source_url": "https://uqu.edu.sa/App/Events/41071",
-      "fetched": true,
-      "image": true,
-      "fetch_reason": ""
-    },
-    {
-      "id": "event-تفعيل-بيئة-تعلم-إلكترونية-تفاعلية-بنمط-غير-متزامن",
-      "title": "تفعيل بيئة تعلم إلكترونية تفاعلية– بنمط غير متزامن",
-      "source_label": "Umm Al-Qura University Events Center",
-      "source_method": "official-page-meta",
-      "source_url": "https://uqu.edu.sa/App/Events/41082",
-      "fetched": true,
-      "image": true,
-      "fetch_reason": ""
-    },
-    {
-      "id": "event-رابط-التسجيل-والسداد-للدبلوم-المتوسط-في-المحاسبة-المالية-في-عنيزة-بالتعا",
-      "title": "رابط التسجيل والسداد للدبلوم المتوسط في المحاسبة المالية في عنيزة بالتعاون مع أكاديمية حمد عبدالرحمن الحنطي للتدريب العالي.",
-      "source_label": "Umm Al-Qura University Events Center",
-      "source_method": "official-page-meta",
-      "source_url": "https://uqu.edu.sa/App/Events/41067",
-      "fetched": true,
-      "image": true,
-      "fetch_reason": ""
-    },
-    {
-      "id": "event-رابط-التسجيل-والسداد-للدبلوم-المشارك-في-الإدارة-الفندقية-في-عنيزة-بالتعا",
-      "title": "رابط التسجيل والسداد للدبلوم المشارك في الإدارة الفندقية في عنيزة بالتعاون مع أكاديمية حمد عبدالرحمن الحنطي للتدريب العالي",
-      "source_label": "Umm Al-Qura University Events Center",
-      "source_method": "official-page-meta",
-      "source_url": "https://uqu.edu.sa/App/Events/41068",
-      "fetched": true,
-      "image": true,
-      "fetch_reason": ""
-    },
-    {
-      "id": "event-فرص-تعاقد-على-مشروع-بحثي-ممول-٢",
-      "title": "فرص تعاقد على مشروع بحثي ممول ٢",
-      "source_label": "Umm Al-Qura University Events Center",
-      "source_method": "official-page-meta",
-      "source_url": "https://uqu.edu.sa/App/Events/41069",
-      "fetched": true,
-      "image": true,
-      "fetch_reason": ""
-    },
-    {
-      "id": "event-ورود-الشانيل",
-      "title": "ورود الشانيل",
-      "source_label": "Umm Al-Qura University Events Center",
-      "source_method": "official-page-meta",
-      "source_url": "https://uqu.edu.sa/App/Events/41070",
       "fetched": true,
       "image": true,
       "fetch_reason": ""
     }
   ],
-  "failed": [
-    {
-      "id": "event-الأخطبوطية",
-      "title": "الاخطبوطية",
-      "source_url": "https://www.visitsaudi.com/content/dam/documents/saudi-calendar-ar.pdf",
-      "reason": "The operation was aborted due to timeout"
-    },
-    {
-      "id": "event-شارع-الفن-القرية-الأوروبية",
-      "title": "شارع الفن - القرية الاوروبية",
-      "source_url": "https://www.visitsaudi.com/content/dam/documents/saudi-calendar-ar.pdf",
-      "reason": "The operation was aborted due to timeout"
-    },
-    {
-      "id": "event-عروض-الفنون-الأدائية-التقليدية",
-      "title": "عروض الفنون الادائية التقليدية",
-      "source_url": "https://www.visitsaudi.com/content/dam/documents/saudi-calendar-ar.pdf",
-      "reason": "The operation was aborted due to timeout"
-    },
-    {
-      "id": "event-قصور-وقاع-ابو-نقطة-المتحمي",
-      "title": "قصور وقلاع ابو نقطة المتحمي",
-      "source_url": "https://www.visitsaudi.com/content/dam/documents/saudi-calendar-ar.pdf",
-      "reason": "The operation was aborted due to timeout"
-    },
-    {
-      "id": "event-مزرعة-التوت-الأسود",
-      "title": "مزرعة التوت الاسود",
-      "source_url": "https://www.visitsaudi.com/content/dam/documents/saudi-calendar-ar.pdf",
-      "reason": "The operation was aborted due to timeout"
-    }
-  ]
+  "failed": []
 }

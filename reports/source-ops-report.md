@@ -1,6 +1,6 @@
 # EventLive Source Ops Report
 
-- generated_at: 2026-08-17T19:12:22.185Z
+- generated_at: 2026-08-18T02:04:19.118Z
 - registry: data/source_registry.json
 - candidates: data/source_candidates.json
 - catalog: data/events_catalog.json
@@ -12,31 +12,31 @@
 
 - Sources in registry: 88
 - Runnable collector lanes: 48
-- Sources due now: 19
-- Sources attempted in latest collection: 19
-- Sources deferred by cadence: 29
+- Sources due now: 20
+- Sources attempted in latest collection: 20
+- Sources deferred by cadence: 28
 - Due-source coverage: 100%
 - Scheduled runnable coverage: 100%
-- Whole-registry attempted this run: 22%
-- Healthy sources: 17
-- Zero-yield sources: 1
+- Whole-registry attempted this run: 23%
+- Healthy sources: 18
+- Zero-yield sources: 2
 - High-priority unattempted sources: 3
-- Candidates: 629
+- Candidates: 630
 - Actionable candidates: 7
 - Ready for review: 7
 - Ready for catalog promotion: 0
-- Linked to catalog from candidates: 597
+- Linked to catalog from candidates: 598
 - Stale unpublished candidates: 0
 - Duplicate risk: 7
 - Recommendation: ابدأ بمراجعة التكرارات المحتملة قبل اعتماد أي مرشح جديد.
 
 ## Candidate Funnel
 
-- review_status.approved-for-catalog: 597
+- review_status.approved-for-catalog: 598
 - review_status.ready-for-review: 7
 - review_status.evidence-captured: 17
 - review_status.new: 8
-- publication_gate.catalog-review: 597
+- publication_gate.catalog-review: 598
 - publication_gate.duplicate-review: 7
 - publication_gate.source-evidence: 25
 - discovery_quality.strong-lead: 19
@@ -81,7 +81,7 @@
 | 5 | webook Explore | not-collected | 0 | 0 | أضف جامعاً محافظاً أو تحقق من قابلية القراءة العامة. |
 | 6 | Hala Yalla | not-collected | 0 | 0 | أضف جامعاً محافظاً أو تحقق من قابلية القراءة العامة. |
 | 7 | Experience AlUla Events | healthy | 5 | 9 | استمر بالمراجعة والتكرار قبل النشر. |
-| 8 | MDLBEAST Events | healthy | 3 | 3 | استمر بالمراجعة والتكرار قبل النشر. |
+| 8 | MDLBEAST Events | healthy | 5 | 5 | استمر بالمراجعة والتكرار قبل النشر. |
 | 9 | Monsha'at All Events | deferred | 0 | 1 | مؤجل حتى 2026-08-18T13:13:35.733Z وفق الجدولة التكيفية. |
 | 10 | Invest Saudi Events | healthy | 3 | 3 | استمر بالمراجعة والتكرار قبل النشر. |
 | 11 | RFECC What's On | healthy | 6 | 6 | استمر بالمراجعة والتكرار قبل النشر. |
@@ -107,12 +107,12 @@
 | 31 | NEOM Newsroom Events | not-collected | 0 | 0 | أضف جامعاً محافظاً أو تحقق من قابلية القراءة العامة. |
 | 32 | Saudi Space Agency Events | deferred | 0 | 1 | مؤجل حتى 2026-08-18T13:13:35.733Z وفق الجدولة التكيفية. |
 | 33 | CST Events and News | not-collected | 0 | 0 | أضف جامعاً محافظاً أو تحقق من قابلية القراءة العامة. |
-| 34 | Visit Saudi Summer Calendar PDF | deferred | 0 | 92 | مؤجل حتى 2026-08-17T19:13:35.733Z وفق الجدولة التكيفية. |
+| 34 | Visit Saudi Summer Calendar PDF | healthy | 81 | 92 | استمر بالمراجعة والتكرار قبل النشر. |
 | 35 | Qiddiya Events | not-collected | 0 | 0 | أضف جامعاً محافظاً أو تحقق من قابلية القراءة العامة. |
 | 36 | Sela and Saudi Entertainment Expo | not-collected | 0 | 0 | أضف جامعاً محافظاً أو تحقق من قابلية القراءة العامة. |
-| 37 | Ministry of Culture Commission Calendars | deferred | 0 | 12 | مؤجل حتى 2026-08-18T13:13:35.733Z وفق الجدولة التكيفية. |
+| 37 | Ministry of Culture Commission Calendars | deferred | 0 | 11 | مؤجل حتى 2026-08-18T13:13:35.733Z وفق الجدولة التكيفية. |
 | 38 | Visit AlBalad / Historic Jeddah | not-collected | 0 | 0 | أضف جامعاً محافظاً أو تحقق من قابلية القراءة العامة. |
-| 39 | Discover Aseer Events | zero-yield | 0 | 33 | Recovered via live-browser-recovery official evidence. Primary page failed: HTTP 404. No future date-complete candidates found by the conservative extractor. |
+| 39 | Discover Aseer Events | zero-yield | 0 | 33 | Recovered via browser-probe official evidence. No future date-complete candidates found by the conservative extractor. |
 | 40 | Diriyah Season | not-collected | 0 | 0 | أضف جامعاً محافظاً أو تحقق من قابلية القراءة العامة. |
 | 41 | Riyadh International Convention and Exhibition Center | not-collected | 0 | 0 | أضف جامعاً محافظاً أو تحقق من قابلية القراءة العامة. |
 | 42 | Aseer Season / Asir Development Authority | not-collected | 0 | 0 | أضف جامعاً محافظاً أو تحقق من قابلية القراءة العامة. |
@@ -124,7 +124,7 @@
 | 48 | Saudi Food and Drug Authority Events | deferred | 0 | 4 | مؤجل حتى 2026-08-18T01:58:45.210Z وفق الجدولة التكيفية. |
 | 49 | Saudi Contractors Authority Events | not-collected | 0 | 0 | أضف جامعاً محافظاً أو تحقق من قابلية القراءة العامة. |
 | 50 | Saudi Winter Events Calendar | not-collected | 0 | 0 | أضف جامعاً محافظاً أو تحقق من قابلية القراءة العامة. |
-| 51 | Riyadh City Events | deferred | 0 | 74 | مؤجل حتى 2026-08-17T19:13:35.733Z وفق الجدولة التكيفية. |
+| 51 | Riyadh City Events | zero-yield | 0 | 74 | No future date-complete candidates found by the conservative extractor. |
 | 52 | Monsha'at Academy Programs | not-collected | 0 | 0 | افتح مسار شراكة أو تغذية رسمية قبل الأتمتة. |
 | 53 | General Entertainment Authority Events | not-collected | 0 | 0 | أضف جامعاً محافظاً أو تحقق من قابلية القراءة العامة. |
 | 54 | SDAIA Calendar and Events | healthy | 2 | 2 | استمر بالمراجعة والتكرار قبل النشر. |
@@ -132,10 +132,7 @@
 | 56 | SCEGA ePortal Events | healthy | 4 | 4 | استمر بالمراجعة والتكرار قبل النشر. |
 | 57 | Ministry of Commerce Upcoming Events | not-collected | 0 | 0 | أضف جامعاً محافظاً أو تحقق من قابلية القراءة العامة. |
 | 58 | Evento | not-collected | 0 | 0 | أضف جامعاً محافظاً أو تحقق من قابلية القراءة العامة. |
-| 59 | Asharqia Chamber Events | collection-error | 0 | 3 | fetch failed; page.goto: Timeout 30000ms exceeded.
-Call log:
-  - navigating to "https://www.chamber.org.sa/sites/Arabic/Events/ChamberEvents/Pages/AllChamberEvents.aspx", waiting until "domcontentloaded"
- |
+| 59 | Asharqia Chamber Events | deferred | 0 | 3 | مؤجل حتى 2026-08-18T19:02:52.016Z وفق الجدولة التكيفية. |
 | 60 | Qassim Chamber Events | deferred | 0 | 0 | مؤجل حتى 2026-08-20T13:13:35.733Z وفق الجدولة التكيفية. |
 | 61 | Abha Chamber Events | deferred | 0 | 0 | مؤجل حتى 2026-08-18T02:32:28.692Z وفق الجدولة التكيفية. |
 | 62 | Baha Municipality Events | not-collected | 0 | 0 | أضف جامعاً محافظاً أو تحقق من قابلية القراءة العامة. |
