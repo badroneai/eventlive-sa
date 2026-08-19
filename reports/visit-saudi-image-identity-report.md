@@ -1,10 +1,10 @@
 # EventLive Visit Saudi Image Identity Report
 
-- generated_at: 2026-08-18T19:26:46.292Z
+- generated_at: 2026-08-19T02:20:33.560Z
 - pdf_crop_assignments: 78
-- verified: 72
-- struck: 6
-- slots_seen_this_cycle: 84
+- verified: 71
+- struck: 7
+- slots_seen_this_cycle: 83
 
 ## Struck (fell back to generated cover)
 
@@ -13,6 +13,7 @@
 - باتو (visit-saudi-summer-2026-p006-top-left.jpg) - identity-mismatch - page 6 top-left is now "بلاتو"
 - واحة عسيب (visit-saudi-summer-2026-p009-top-left.jpg) - identity-mismatch - page 9 top-left is now "شارع الفن - القرية الأوروبية"
 - بيوني الشرف (visit-saudi-summer-2026-p010-bottom-right.jpg) - identity-mismatch - page 10 bottom-right is now "مزرعة التوت الأسود"
+- مخيّم النحالون الصغار الصيفي (visit-saudi-summer-2026-p061-bottom-left.jpg) - slot-vacated - no dated card currently occupies page 61 bottom-left of https://www.visitsaudi.com/content/dam/documents/saudi-calendar-ar.pdf
 - ذكريات سبيستون مع الفنان عاصم سكر (visit-saudi-summer-2026-p062-bottom-left.jpg) - identity-mismatch - page 62 bottom-left is now "ENC 2026"
 
 ## Verified
@@ -73,7 +74,6 @@
 - فعالية القصبة (visit-saudi-summer-2026-p013-bottom-right.jpg)
 - شاطئ منتجع القرية في جدة (visit-saudi-summer-2026-p041-top-right.jpg)
 - جولة البقي بين جبال الباحة (visit-saudi-summer-2026-p072-bottom-left.jpg)
-- مخيّم النحالون الصغار الصيفي (visit-saudi-summer-2026-p061-bottom-left.jpg)
 - صد رد: عرض ستاند اب كوميدي من أوس النفيعي (visit-saudi-summer-2026-p042-top-left.jpg)
 - ليلة 5x5 (visit-saudi-summer-2026-p042-top-right.jpg)
 - عرض This Is Michael الموسيقي (visit-saudi-summer-2026-p042-bottom-left.jpg)

@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-18T19:26:46.292Z",
+  "generated_at": "2026-08-19T02:20:33.560Z",
   "catalog": "data/events_catalog.json",
   "candidates": "data/source_candidates.json",
   "manifest": "data/event_image_cache_manifest.json",
@@ -10,9 +10,9 @@
   },
   "totals": {
     "pdf_crop_assignments": 78,
-    "verified": 72,
-    "struck": 6,
-    "slots_seen_this_cycle": 84
+    "verified": 71,
+    "struck": 7,
+    "slots_seen_this_cycle": 83
   },
   "struck": [
     {
@@ -59,6 +59,13 @@
       "detail": "page 10 bottom-right is now \"مزرعة التوت الأسود\"",
       "matched_tokens": [],
       "ratio": 0
+    },
+    {
+      "id": "event-مخيّم-النحالون-الصغار-الصيفي",
+      "title": "مخيّم النحالون الصغار الصيفي",
+      "file": "visit-saudi-summer-2026-p061-bottom-left.jpg",
+      "reason": "slot-vacated",
+      "detail": "no dated card currently occupies page 61 bottom-left of https://www.visitsaudi.com/content/dam/documents/saudi-calendar-ar.pdf"
     },
     {
       "id": "event-ذكريات-سبيستون-مع-الفنان-عاصم-سكر",
@@ -601,17 +608,6 @@
         "بين",
         "جبال",
         "الباحه"
-      ]
-    },
-    {
-      "id": "event-مخيّم-النحالون-الصغار-الصيفي",
-      "title": "مخيّم النحالون الصغار الصيفي",
-      "file": "visit-saudi-summer-2026-p061-bottom-left.jpg",
-      "matched_tokens": [
-        "مخيم",
-        "النحالون",
-        "الصغار",
-        "الصيفي"
       ]
     },
     {

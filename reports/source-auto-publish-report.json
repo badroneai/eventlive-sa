@@ -1,5 +1,5 @@
 {
-  "published_at": "2026-08-18T19:26:44.841Z",
+  "published_at": "2026-08-19T02:20:31.014Z",
   "dry_run": false,
   "include_partner": true,
   "source_candidates": "data/source_candidates.json",
@@ -7,12 +7,12 @@
   "candidates_seen": 627,
   "totals": {
     "candidates_seen": 627,
-    "published": 6,
+    "published": 5,
     "linked_existing": 583,
-    "blocked": 38,
-    "duplicate_review_alerts": 7,
+    "blocked": 39,
+    "duplicate_review_alerts": 8,
     "category_fallback_alerts": 0,
-    "reconciled": 589
+    "reconciled": 588
   },
   "category_fallback_alerts": [],
   "duplicate_catalog_rows_removed": 0,
@@ -142,6 +142,24 @@
       "existing_starts_at": "2026-11-16T12:00:00+03:00",
       "date_gap_days": 0,
       "start_date_drift_days": 0.125
+    },
+    {
+      "kind": "exact-title-city-source-conflict",
+      "candidate_id": "candidate-visit-saudi-calendar-king-abdulaziz-falconry-festival-20261117-d56e3d7f",
+      "possible_event_id": "event-king-abdulaziz-falconry-festival",
+      "conflict_fields": [
+        "source",
+        "venue",
+        "date"
+      ],
+      "title_key": "abdulaziz falconry festival king",
+      "venue_key": "riyadh",
+      "candidate_source": "visitsaudi.com",
+      "existing_source": "riyadh.sa",
+      "candidate_starts_at": "2026-11-17T07:00:00+03:00",
+      "existing_starts_at": "2026-11-17T08:00:00+03:00",
+      "date_gap_days": 0,
+      "start_date_drift_days": 0.042
     }
   ],
   "published": [
@@ -169,11 +187,6 @@
       "candidate_id": "candidate-visit-saudi-calendar-pdf-عروض-الفنون-الأدائية-التقليدية-20260706-4a38d19e",
       "event_id": "event-عروض-الفنون-الأدائية-التقليدية",
       "title": "عروض الفنون الأدائية التقليدية"
-    },
-    {
-      "candidate_id": "candidate-asharqia-chamber-events-ملتقى-الذكاء-الاصطناعي-في-سوق-العمل-والتنمية-الاجتماعية-2026-20261014-e55860fa",
-      "event_id": "event-ملتقى-الذكاء-الاصطناعي-في-سوق-العمل-والتنمية-الاجتماعية-2026",
-      "title": "ملتقى الذكاء الاصطناعي في سوق العمل والتنمية الاجتماعية 2026"
     }
   ],
   "linked_existing": [
@@ -1312,12 +1325,6 @@
       "reason": "already linked to catalog event"
     },
     {
-      "candidate_id": "candidate-visit-saudi-calendar-pdf-مخيّم-النحالون-الصغار-الصيفي-20260816-4a38d19e",
-      "event_id": "event-مخيّم-النحالون-الصغار-الصيفي",
-      "title": "مخيّم النحالون الصغار الصيفي",
-      "reason": "already linked to catalog event"
-    },
-    {
       "candidate_id": "candidate-future-skills-catalog-sql-fundamentals-20260816-971d8196",
       "event_id": "event-sql-fundamentals",
       "title": "⁠SQL Fundamentals",
@@ -1345,18 +1352,6 @@
       "candidate_id": "candidate-tuwaiq-academy-bootcamps-معسكر-الأنظمة-الذاتية-للدرونز-20260816-5d8feea2",
       "event_id": "event-معسكر-الأنظمة-الذاتية-للدرونز",
       "title": "معسكر الأنظمة الذاتية للدرونز",
-      "reason": "already linked to catalog event"
-    },
-    {
-      "candidate_id": "candidate-ithra-events-bedayat-beginnings-of-saudi-art-movement-20260818-e0a239ef",
-      "event_id": "event-bedayat-beginnings-of-saudi-art-movement",
-      "title": "Bedayat: Beginnings of Saudi Art Movement",
-      "reason": "already linked to catalog event"
-    },
-    {
-      "candidate_id": "candidate-ithra-events-echoes-of-the-familiar-20260818-cc43c2bd",
-      "event_id": "event-echoes-of-the-familiar",
-      "title": "Echoes of the Familiar",
       "reason": "already linked to catalog event"
     },
     {
@@ -1399,6 +1394,18 @@
       "candidate_id": "candidate-ithra-events-tinkering-stations-20260819-5a2c4c0e",
       "event_id": "event-tinkering-stations",
       "title": "Tinkering Stations",
+      "reason": "already linked to catalog event"
+    },
+    {
+      "candidate_id": "candidate-ithra-events-bedayat-beginnings-of-saudi-art-movement-20260819-e0a239ef",
+      "event_id": "event-bedayat-beginnings-of-saudi-art-movement",
+      "title": "Bedayat: Beginnings of Saudi Art Movement",
+      "reason": "already linked to catalog event"
+    },
+    {
+      "candidate_id": "candidate-ithra-events-echoes-of-the-familiar-20260819-cc43c2bd",
+      "event_id": "event-echoes-of-the-familiar",
+      "title": "Echoes of the Familiar",
       "reason": "already linked to catalog event"
     },
     {
@@ -2668,6 +2675,12 @@
       "reason": "already linked to catalog event"
     },
     {
+      "candidate_id": "candidate-asharqia-chamber-events-ملتقى-الذكاء-الاصطناعي-في-سوق-العمل-والتنمية-الاجتماعية-2026-20261014-e55860fa",
+      "event_id": "event-ملتقى-الذكاء-الاصطناعي-في-سوق-العمل-والتنمية-الاجتماعية-2026",
+      "title": "ملتقى الذكاء الاصطناعي في سوق العمل والتنمية الاجتماعية 2026",
+      "reason": "already linked to catalog event"
+    },
+    {
       "candidate_id": "candidate-riyadh-city-events-world-stadiums-and-arenas-summit-20261014-358037bb",
       "event_id": "event-world-stadiums-and-arenas-summit",
       "title": "World Stadiums and Arenas Summit",
@@ -3865,6 +3878,13 @@
       "reason": "possible duplicate requires review: exact-title-city-venue-conflict",
       "kind": "exact-title-city-venue-conflict",
       "possible_event_id": "event-cityscape-global-2026"
+    },
+    {
+      "candidate_id": "candidate-visit-saudi-calendar-king-abdulaziz-falconry-festival-20261117-d56e3d7f",
+      "title": "King Abdulaziz Falconry Festival",
+      "reason": "possible duplicate requires review: exact-title-city-source-conflict",
+      "kind": "exact-title-city-source-conflict",
+      "possible_event_id": "event-king-abdulaziz-falconry-festival"
     },
     {
       "candidate_id": "candidate-eventbrite-saudi-family-offices-vcs-investment-summit-riyadh-invite-only-20261124-e6c951a4",

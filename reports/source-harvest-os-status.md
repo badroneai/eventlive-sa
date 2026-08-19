@@ -1,6 +1,6 @@
 # EventLive Harvest OS Status
 
-- Generated at: 2026-08-18T19:39:32.960Z
+- Generated at: 2026-08-19T02:33:16.194Z
 - Status: NEEDS_WORK
 - Operating rule: Probe before new sources; sample before full harvest; Raw collection is not publication; discovery-only never auto-publishes.
 
@@ -8,23 +8,23 @@
 
 - Sources: 88
 - Candidates: 627
-- Matched candidates: 597
+- Matched candidates: 596
 - Auto-publish sources: 15
 - Candidate-only sources: 12
 - Partnership-required sources: 5
-- Productive sources / attempted: 18/22
-- Collector errors: 7 (chronic 6, transient 1)
+- Productive sources / attempted: 20/22
+- Collector errors: 6 (chronic 6, transient 0)
 
 ## Publication Funnel
 
 | Stage | Count |
 | --- | --- |
-| discovered_this_run | 226 |
+| discovered_this_run | 309 |
 | candidate_queue | 627 |
 | evaluated_for_publish | 627 |
 | linked_existing | 583 |
-| published_new | 6 |
-| blocked | 38 |
+| published_new | 5 |
+| blocked | 39 |
 | secondary_promoted | 0 |
 | secondary_still_blocked | 33 |
 
@@ -34,7 +34,7 @@
 | --- | --- |
 | publication gate source-evidence is not auto-publishable | 13 |
 | unknown category requires review | 10 |
-| possible duplicate requires review: exact-title-city-source-conflict | 5 |
+| possible duplicate requires review: exact-title-city-source-conflict | 6 |
 | linked catalog row event-aseer-season was superseded by dedupe | 2 |
 | possible duplicate requires review: exact-title-city-venue-conflict | 2 |
 | linked catalog row event-dakah was superseded by dedupe | 1 |
@@ -54,7 +54,6 @@
 | monshaat-events | chronic | 11 | no | collector-error: fetch failed; fetch failed |
 | saudi-pro-league-fixtures | chronic | 8 | no | collector-error: fetch failed |
 | tuwaiq-academy-bootcamps | chronic | 5 | no | collector-error: HTTP 403 |
-| saudi-space-agency-events | transient | 1 | yes | fetch failed |
 
 | Source | Policy | Trust | Gate |
 | --- | --- | --- | --- |
