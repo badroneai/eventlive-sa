@@ -1,11 +1,11 @@
 # RFECC Enrichment Report
 
-- generated_at: 2026-08-19T02:23:17.438Z
-- targets: 6
-- candidates: 6
-- enriched: 6
-- fetched: 6
-- images: 6
+- generated_at: 2026-08-19T13:38:19.781Z
+- targets: 7
+- candidates: 7
+- enriched: 7
+- fetched: 7
+- images: 7
 - fetch_failures: 0
 
 ## Enriched
@@ -15,6 +15,7 @@
 - WTM Spotlight Riyadh - official-page-html-jsonld - image=yes - features=7
 - FIBO 2026 - official-page-html-jsonld - image=yes - features=7
 - Natrual Expo - official-page-html-jsonld - image=yes - features=7
+- Natural World Expo - official-page-html-jsonld - image=yes - features=7
 - China Homelife Saudi Arabia 2026 - official-page-html-jsonld - image=yes - features=7
 
 ## Fetch Failures

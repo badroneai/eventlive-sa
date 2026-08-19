@@ -1,13 +1,13 @@
 {
-  "generated_at": "2026-08-19T02:22:24.507Z",
+  "generated_at": "2026-08-19T13:37:31.114Z",
   "catalog": "data/events_catalog.json",
   "source": "Visit Saudi Calendar",
   "totals": {
-    "targets": 29,
+    "targets": 30,
     "candidates": 20,
-    "enriched": 29,
-    "fetched": 29,
-    "images": 27,
+    "enriched": 30,
+    "fetched": 30,
+    "images": 28,
     "fetch_failures": 0
   },
   "enriched": [
@@ -176,6 +176,14 @@
       "title": "Spacetoon Memories with Assem Sukkar",
       "source_method": "official-page-html",
       "image_url": "https://www.visitsaudi.com/content/dam/wvs/calendar/spacetoon-memories-with-assem-sukkar.jpg",
+      "fetched": true,
+      "features": 7
+    },
+    {
+      "id": "event-stand-up-comedy-and-interactive-show-with-salah-al-dali",
+      "title": "Stand-up Comedy and Interactive Show with Salah Al-Dali",
+      "source_method": "official-page-html",
+      "image_url": "https://www.visitsaudi.com/content/dam/wvs/calendar/stand-up-comedy-show-with-salah-al-dali.jpg",
       "fetched": true,
       "features": 7
     },

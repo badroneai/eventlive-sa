@@ -1,10 +1,10 @@
 # LEAP 2026 Agenda Enrichment
 
-- generated_at: 2026-08-19T02:23:20.987Z
+- generated_at: 2026-08-19T13:38:22.992Z
 - catalog_targets: 1
 - candidate_targets: 1
-- official_sessions: 553
-- rooms: 14
-- tracks: 27
+- official_sessions: 597
+- rooms: 16
+- tracks: 29
 - fetch_error: none
 - source: https://onegiantleap.com/our-2026-agenda?field_swapcard_session_day_value=all

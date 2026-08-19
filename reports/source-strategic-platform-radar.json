@@ -1,6 +1,6 @@
 {
   "schema": "eventlive.source-strategic-platform-radar.v1",
-  "generated_at": "2026-08-18T13:15:24.463Z",
+  "generated_at": "2026-08-19T13:16:17.499Z",
   "policy": {
     "allowed_use": "official source evidence refresh, API-surface mapping, partnership prioritization, extractor backlog decisions",
     "disallowed_use": "direct catalog publication without official confirmation and duplicate review"
@@ -60,7 +60,7 @@
       "page_hint_words": [],
       "asset_results": [
         {
-          "url": "https://eportal.scega.gov.sa/main-ZH4TE5U5.js",
+          "url": "https://eportal.scega.gov.sa/main-G5OFVIDW.js",
           "status": 200,
           "bytes": 224413,
           "classification": "reachable",
@@ -78,7 +78,7 @@
           ]
         },
         {
-          "url": "https://eportal.scega.gov.sa/chunk-OBQDSNNY.js",
+          "url": "https://eportal.scega.gov.sa/chunk-KLFHAT3V.js",
           "status": 200,
           "bytes": 402,
           "classification": "reachable",
@@ -86,7 +86,7 @@
           "hint_words": []
         },
         {
-          "url": "https://eportal.scega.gov.sa/chunk-MVLO2RCX.js",
+          "url": "https://eportal.scega.gov.sa/chunk-PXHEJGSU.js",
           "status": 200,
           "bytes": 897,
           "classification": "reachable",
@@ -94,7 +94,7 @@
           "hint_words": []
         },
         {
-          "url": "https://eportal.scega.gov.sa/chunk-YDMFIYLQ.js",
+          "url": "https://eportal.scega.gov.sa/chunk-GPO5YJB7.js",
           "status": 200,
           "bytes": 28495,
           "classification": "reachable",
@@ -104,7 +104,7 @@
           "hint_words": []
         },
         {
-          "url": "https://eportal.scega.gov.sa/chunk-ZXUGHW4U.js",
+          "url": "https://eportal.scega.gov.sa/chunk-JTYDMP5V.js",
           "status": 200,
           "bytes": 24936,
           "classification": "reachable",
@@ -134,7 +134,7 @@
       "final_url": "https://nec.gov.sa/ar",
       "via": "fetch",
       "content_type": "text/html; charset=utf-8",
-      "bytes": 123374,
+      "bytes": 123332,
       "title": "المركز الوطني للفعاليات | المركز الوطني للفعاليات",
       "classification": "protected",
       "error": "",
@@ -144,7 +144,6 @@
         "https://nec.gov.sa/media/2e5a88cf-8d48-43e2-9178-41c9e9ed8d4b",
         "http://www.w3.org/2000/svg",
         "https://enjz.nec.gov.sa/",
-        "https://nec.gov.sa/ar/join-us/event-pioneer",
         "http://nec.sourcing.mn2.ariba.com/ad/selfRegistration/_c_/C2https://s1.mn2.ariba.com/Sourcing/Main/ad/loginPage/SSOActions?awsso_cc=cmVhbG06Ym1Wajthd3Nzb19ydTphSFIwY0hNNkx5OXpNUzV0YmpJdVlYSnBZbUV1WTI5dEwxTnZkWEpqYVc1bkwwMWhhVzR2WVdRdlpHVm1ZWFZzZEM5RWFYSmxZM1JCWTNScGIyNC9jbVZoYkcwOWJtVmo7YXdzc29fbHU6YUhSMGNITTZMeTl6TVM1dGJqSXVZWEpwWW1FdVkyOXRMMU52ZFhKamFXNW5MMDFoYVc0dllXUXZZMnhwWlc1MFRHOW5iM1YwTDFOVFQwRmpkR2x2Ym5NPTthd3Nzb19hcDpRVU5OO2F3c3NvX2FyaWQ6TVRjek9EQTJOREUyTmpRNU53PT07YXdzc29fa3U6YUhSMGNITTZMeTl6TVM1dGJqSXVZWEpwWW1FdVkyOXRMMU52ZFhKamFXNW5MMDFoYVc0dllXUXZZMnhwWlc1MFMyVmxjRUZzYVhabEwxTlRUMEZqZEdsdmJuTT07YXdzc29fZmw6TVE9PQ%3D%3D%3ARrUCV6K%2BXxtFtIJH7Rwdskb%2BHhc%3D&amp;awsso_ap=ACM&amp;realm=nec&amp;awsr=true",
         "http://nec.sourcing.mn2.ariba.com/ad/selfRegistration/_c_/C2",
         "https://laws.boe.gov.sa/BoeLaws/Laws/LawDetails/e73fd7d3-e812-477b-8112-ad3f00d16fd9/1",
@@ -157,7 +156,6 @@
         "https://www.linkedin.com/company/events-center-sa/",
         "https://www.vision2030.gov.sa/ar/",
         "https://sdaia.gov.sa/ar/MediaCenter/Pages/ai-year.aspx",
-        "https://nec.gov.sa/ar/join-us/event-pioneer\\",
         "https://enjz.nec.gov.sa/\\",
         "http://nec.sourcing.mn2.ariba.com/ad/selfRegistration/_c_/C2https://s1.mn2.ariba.com/Sourcing/Main/ad/loginPage/SSOActions?awsso_cc=cmVhbG06Ym1Wajthd3Nzb19ydTphSFIwY0hNNkx5OXpNUzV0YmpJdVlYSnBZbUV1WTI5dEwxTnZkWEpqYVc1bkwwMWhhVzR2WVdRdlpHVm1ZWFZzZEM5RWFYSmxZM1JCWTNScGIyNC9jbVZoYkcwOWJtVmo7YXdzc29fbHU6YUhSMGNITTZMeTl6TVM1dGJqSXVZWEpwWW1FdVkyOXRMMU52ZFhKamFXNW5MMDFoYVc0dllXUXZZMnhwWlc1MFRHOW5iM1YwTDFOVFQwRmpkR2x2Ym5NPTthd3Nzb19hcDpRVU5OO2F3c3NvX2FyaWQ6TVRjek9EQTJOREUyTmpRNU53PT07YXdzc29fa3U6YUhSMGNITTZMeTl6TVM1dGJqSXVZWEpwWW1FdVkyOXRMMU52ZFhKamFXNW5MMDFoYVc0dllXUXZZMnhwWlc1MFMyVmxjRUZzYVhabEwxTlRUMEZqZEdsdmJuTT07YXdzc29fZmw6TVE9PQ%3D%3D%3ARrUCV6K%2BXxtFtIJH7Rwdskb%2BHhc%3D\\u0026awsso_ap=ACM\\u0026realm=nec\\u0026awsr=true\\",
         "https://www.scega.gov.sa/home\\",
@@ -178,7 +176,9 @@
         "https://nec.gov.sa/ar\\",
         "https://nec.gov.sa/en\\",
         "https://nec.gov.sa/media/2e5a88cf-8d48-43e2-9178-41c9e9ed8d4b\\",
-        "https://static.cloudflareinsights.com/beacon.min.js/v4513226cdae34746b4dedf0b4dfa099e1781791509496"
+        "https://static.cloudflareinsights.com/beacon.min.js/v4513226cdae34746b4dedf0b4dfa099e1781791509496",
+        "https://nec.gov.sa/ar/event-tech",
+        "https://nec.gov.sa/join-us/event-pioneer"
       ],
       "page_hint_words": [
         "event",
@@ -256,11 +256,11 @@
         {
           "url": "https://www.visitsaudi.com/bin/api/v3/events?locale=ar",
           "status": 200,
-          "bytes": 126419,
+          "bytes": 133303,
           "classification": "reachable",
           "summary": {
             "parse_ok": true,
-            "item_count": 40,
+            "item_count": 42,
             "sample_titles": [
               "معرض اللغة العربية للطفل",
               "معرض اللغة العربية 28",
@@ -274,11 +274,11 @@
         {
           "url": "https://www.visitsaudi.com/bin/api/v3/events?locale=en",
           "status": 200,
-          "bytes": 129045,
+          "bytes": 136912,
           "classification": "reachable",
           "summary": {
             "parse_ok": true,
-            "item_count": 40,
+            "item_count": 42,
             "sample_titles": [
               "Arabic Language Exhibition for kids",
               "Arabic Language Exhibition 28",
@@ -303,40 +303,40 @@
       "final_url": "https://webook.com/ar/explore",
       "via": "fetch",
       "content_type": "text/html",
-      "bytes": 5992,
+      "bytes": 5967,
       "title": "",
       "classification": "protected",
       "error": "",
       "page_hint_urls": [
         "https://apps.apple.com/sa/app/webook-com-fun-things-to-do/id6468667896",
         "https://play.google.com/store/apps/details?id=com.webook.android",
-        "https://wbk-assets.webook.com/0.7.23/assets/index-8Uf1Lump.js",
-        "https://wbk-assets.webook.com/0.7.23/assets/vendor-CWjaaAIG.js",
-        "https://wbk-assets.webook.com/0.7.23/assets/@wbk/hooks-DkER1QTy.js",
-        "https://wbk-assets.webook.com/0.7.23/assets/@wbk/logger-DfNVpG3P.js",
-        "https://wbk-assets.webook.com/0.7.23/assets/@wbk/api-BHbK_Rd5.js",
-        "https://wbk-assets.webook.com/0.7.23/assets/@wbk/config-DWqLPCWo.js",
-        "https://wbk-assets.webook.com/0.7.23/assets/@wbk/svg-CW5ISgyl.js",
-        "https://wbk-assets.webook.com/0.7.23/assets/react-hook-form-DcM0cogH.js",
-        "https://wbk-assets.webook.com/0.7.23/assets/@wbk/ui-WqAX2hVf.js",
-        "https://wbk-assets.webook.com/0.7.23/assets/@wbk/queue-BOLHhcuX.js",
-        "https://wbk-assets.webook.com/0.7.23/assets/i18next-Ce0fiPMx.js",
-        "https://wbk-assets.webook.com/0.7.23/assets/i18next-http-backend-DLDZYsxI.js",
-        "https://wbk-assets.webook.com/0.7.23/assets/i18next-browser-languagedetector-Bv2FoO1s.js",
-        "https://wbk-assets.webook.com/0.7.23/assets/react-i18next-BcA2hS57.js",
-        "https://wbk-assets.webook.com/0.7.23/assets/@wbk/analytics-Bxi10Ch2.js",
-        "https://wbk-assets.webook.com/0.7.23/assets/@wbk/currency-JCJWAo99.js",
-        "https://wbk-assets.webook.com/0.7.23/assets/@wbk/auth-BUfzHP5k.js",
-        "https://wbk-assets.webook.com/0.7.23/assets/@wbk/payment-CnZcGtWl.js",
-        "https://wbk-assets.webook.com/0.7.23/assets/@wbk/flights-D7799MQs.js",
-        "https://wbk-assets.webook.com/0.7.23/assets/@wbk/hotels-BAX0wIrL.js",
-        "https://wbk-assets.webook.com/0.7.23/assets/@wbk/ticketing-COdKINhg.js",
-        "https://wbk-assets.webook.com/0.7.23/assets/@smc/ads-Bs8YVscl.js",
-        "https://wbk-assets.webook.com/0.7.23/assets/@wbk/contentful-CFoqDxTB.js",
-        "https://wbk-assets.webook.com/0.7.23/assets/react-helmet-Ba2OUe2H.js",
-        "https://wbk-assets.webook.com/0.7.23/assets/@wbk/cruises-BQcG1XV9.js",
-        "https://wbk-assets.webook.com/0.7.23/assets/@wbk/auction-CKlcNmlI.js",
-        "https://webook.com/cdn-cgi/content?id=53eQ82x93U.ZvNk0ABxpjipNVixSgX48psyRWIWRLic-1787058934.739892-1.2.1.1-JUmR1YBoSS5GMRvd4PSB2Vh9CL11cM0GmO_ZGJpuWYl0oCLmSaQrogzE_0tDHfRT",
+        "https://wbk-assets.webook.com/0.7.3/assets/index-D2FSUPiQ.js",
+        "https://wbk-assets.webook.com/0.7.3/assets/vendor-CWjaaAIG.js",
+        "https://wbk-assets.webook.com/0.7.3/assets/@wbk/hooks-Dv4CVdJj.js",
+        "https://wbk-assets.webook.com/0.7.3/assets/@wbk/logger-DfNVpG3P.js",
+        "https://wbk-assets.webook.com/0.7.3/assets/@wbk/api-RUTXn3Qq.js",
+        "https://wbk-assets.webook.com/0.7.3/assets/@wbk/config-C0c9P0Xx.js",
+        "https://wbk-assets.webook.com/0.7.3/assets/@wbk/svg-yMgVP845.js",
+        "https://wbk-assets.webook.com/0.7.3/assets/react-hook-form-DcM0cogH.js",
+        "https://wbk-assets.webook.com/0.7.3/assets/@wbk/ui-4CKpuuWZ.js",
+        "https://wbk-assets.webook.com/0.7.3/assets/@wbk/queue-CSRvPqXp.js",
+        "https://wbk-assets.webook.com/0.7.3/assets/i18next-Ce0fiPMx.js",
+        "https://wbk-assets.webook.com/0.7.3/assets/i18next-http-backend-DLDZYsxI.js",
+        "https://wbk-assets.webook.com/0.7.3/assets/i18next-browser-languagedetector-Bv2FoO1s.js",
+        "https://wbk-assets.webook.com/0.7.3/assets/react-i18next-BcA2hS57.js",
+        "https://wbk-assets.webook.com/0.7.3/assets/@wbk/analytics-D8Bf-yKP.js",
+        "https://wbk-assets.webook.com/0.7.3/assets/@wbk/currency-D1tG86Yc.js",
+        "https://wbk-assets.webook.com/0.7.3/assets/@wbk/auth-neakD633.js",
+        "https://wbk-assets.webook.com/0.7.3/assets/@wbk/payment-C48NfD6O.js",
+        "https://wbk-assets.webook.com/0.7.3/assets/@wbk/flights-BjpSLdjK.js",
+        "https://wbk-assets.webook.com/0.7.3/assets/@wbk/hotels-B8E43CuC.js",
+        "https://wbk-assets.webook.com/0.7.3/assets/@wbk/ticketing-CJd-cJrt.js",
+        "https://wbk-assets.webook.com/0.7.3/assets/@smc/ads-BQ0JCXcG.js",
+        "https://wbk-assets.webook.com/0.7.3/assets/@wbk/contentful-tgcwLwB3.js",
+        "https://wbk-assets.webook.com/0.7.3/assets/react-helmet-Ba2OUe2H.js",
+        "https://wbk-assets.webook.com/0.7.3/assets/@wbk/cruises-C0pD-tBj.js",
+        "https://wbk-assets.webook.com/0.7.3/assets/@wbk/auction-zjOX6uwd.js",
+        "https://webook.com/cdn-cgi/content?id=nmRt3nzB8XtNj2lgX17SQhGmDT3q.KiOkb9enQULP8I-1787145385.7443814-1.2.1.1-Q1gWyzogV__S_LRIsUdO0le_jzZ7r5XyAjlMBmp5jlD0OLjOTMIc973N2eFtKyLg",
         "https://static.cloudflareinsights.com/beacon.min.js/v4513226cdae34746b4dedf0b4dfa099e1781791509496"
       ],
       "page_hint_words": [
@@ -344,9 +344,9 @@
       ],
       "asset_results": [
         {
-          "url": "https://wbk-assets.webook.com/0.7.23/assets/@wbk/api-BHbK_Rd5.js",
+          "url": "https://wbk-assets.webook.com/0.7.3/assets/@wbk/api-RUTXn3Qq.js",
           "status": 200,
-          "bytes": 96633,
+          "bytes": 97949,
           "classification": "reachable",
           "hint_urls": [
             "https://github.com/nadude/webook-frontend/blob/main/packages/api/README.md",
@@ -366,9 +366,9 @@
           ]
         },
         {
-          "url": "https://wbk-assets.webook.com/0.7.23/assets/@wbk/ticketing-COdKINhg.js",
+          "url": "https://wbk-assets.webook.com/0.7.3/assets/@wbk/ticketing-CJd-cJrt.js",
           "status": 200,
-          "bytes": 514283,
+          "bytes": 524776,
           "classification": "reachable",
           "hint_urls": [
             "https://github.com/nadude/webook-frontend/blob/main/packages/ticketing/README.md",
@@ -384,15 +384,15 @@
             "https://libs.3ddvapis.com/core/dvm/v1/v/es5/rel/{version}/dvm.js",
             "https://libs.3ddvapis.com/core/dvm/v1/v/es6/rel/{version}/dvm.js",
             "https://libs.3ddvapis.com/core/dvm/v1/v/esm/rel/{version}/dvm.mjs",
-            "https://wbk-assets-backup.s3.eu-west-1.amazonaws.com/flags/w80/${z.code.toLowerCase(",
+            "https://wbk-assets-backup.s3.eu-west-1.amazonaws.com/flags/w80/${U.code.toLowerCase(",
             "http://www.w3.org/2000/svg",
             "https://wbk-assets.s3.me-south-1.amazonaws.com/flags/w80/${j.code.toLowerCase(",
-            "https://wbk-assets-backup.s3.eu-west-1.amazonaws.com/flags/w80/${L.code.toLowerCase(",
+            "https://wbk-assets-backup.s3.eu-west-1.amazonaws.com/flags/w80/${O.code.toLowerCase(",
             "https://wbk-assets-backup.s3.eu-west-1.amazonaws.com/flags/w80/${W.code.toLowerCase(",
             "https://r2.webook.com/consent_diriyah_season.pdf",
             "https://itunes.apple.com/app/id6468667896?action=write-review",
             "https://wbk-assets.webook.com/$%7Bd%7D/events/$%7Bb.slug%7D/book",
-            "https://wbk-assets.webook.com/$%7Bd%7D/events/$%7Bk.slug%7D",
+            "https://wbk-assets.webook.com/$%7Bd%7D/events/$%7BN.slug%7D",
             "https://wbk-assets.webook.com/profile/bookings/$%7Bt.order_id%7D?order_type=event",
             "https://wbk-assets.webook.com/$%7Bn%7D/events/$%7Bt.event.slug%7D",
             "https://wbk-assets.webook.com/$%7Bi%7D/events/$%7Bt.event.slug%7D"
@@ -400,14 +400,14 @@
           "hint_words": [
             "api",
             "event",
+            "booking",
             "events",
             "ticket",
-            "booking",
             "calendar"
           ]
         },
         {
-          "url": "https://wbk-assets.webook.com/0.7.23/assets/@wbk/config-DWqLPCWo.js",
+          "url": "https://wbk-assets.webook.com/0.7.3/assets/@wbk/config-C0c9P0Xx.js",
           "status": 200,
           "bytes": 4687,
           "classification": "reachable",
@@ -486,7 +486,7 @@
       "final_url": "https://www.evento.sa/home",
       "via": "fetch",
       "content_type": "text/html",
-      "bytes": 70966,
+      "bytes": 74678,
       "title": "Evento | إيفينتو",
       "classification": "reachable",
       "error": "",
@@ -497,6 +497,13 @@
         "https://fonts.googleapis.com",
         "https://fonts.gstatic.com",
         "https://fonts.gstatic.com/s/tajawal/v12/Iura6YBj_oCad4k1nzSBC45I.woff2",
+        "https://fonts.gstatic.com/s/tajawal/v12/Iura6YBj_oCad4k1nzGBCw.woff2",
+        "https://fonts.gstatic.com/s/tajawal/v12/Iurf6YBj_oCad4k1l8KiHrRpiYlJ.woff2",
+        "https://fonts.gstatic.com/s/tajawal/v12/Iurf6YBj_oCad4k1l8KiHrFpiQ.woff2",
+        "https://fonts.gstatic.com/s/tajawal/v12/Iurf6YBj_oCad4k1l4qkHrRpiYlJ.woff2",
+        "https://fonts.gstatic.com/s/tajawal/v12/Iurf6YBj_oCad4k1l4qkHrFpiQ.woff2",
+        "https://fonts.gstatic.com/s/tajawal/v12/Iurf6YBj_oCad4k1l5anHrRpiYlJ.woff2",
+        "https://fonts.gstatic.com/s/tajawal/v12/Iurf6YBj_oCad4k1l5anHrFpiQ.woff2",
         "https://fonts.googleapis.com/css2?family=Tajawal:wght@500;700;800&display=optional",
         "https://fonts.gstatic.com/s/materialicons/v145/flUhRq6tzZclQEJ-Vdg-IuiaDsNc.woff2",
         "https://evento.sa/",
@@ -512,9 +519,9 @@
       ],
       "asset_results": [
         {
-          "url": "https://www.evento.sa/main.5ed70f1585c784c1.js",
+          "url": "https://www.evento.sa/main.dc44042483b5910f.js",
           "status": 200,
-          "bytes": 1264153,
+          "bytes": 1264159,
           "classification": "reachable",
           "hint_urls": [
             "https://evento.sa",

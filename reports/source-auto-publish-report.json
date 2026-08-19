@@ -1,18 +1,18 @@
 {
-  "published_at": "2026-08-19T02:20:31.014Z",
+  "published_at": "2026-08-19T13:35:27.937Z",
   "dry_run": false,
   "include_partner": true,
   "source_candidates": "data/source_candidates.json",
   "events_catalog": "data/events_catalog.json",
-  "candidates_seen": 627,
+  "candidates_seen": 632,
   "totals": {
-    "candidates_seen": 627,
-    "published": 5,
-    "linked_existing": 583,
+    "candidates_seen": 632,
+    "published": 9,
+    "linked_existing": 584,
     "blocked": 39,
     "duplicate_review_alerts": 8,
     "category_fallback_alerts": 0,
-    "reconciled": 588
+    "reconciled": 593
   },
   "category_fallback_alerts": [],
   "duplicate_catalog_rows_removed": 0,
@@ -145,7 +145,7 @@
     },
     {
       "kind": "exact-title-city-source-conflict",
-      "candidate_id": "candidate-visit-saudi-calendar-king-abdulaziz-falconry-festival-20261117-d56e3d7f",
+      "candidate_id": "candidate-visit-saudi-seasons-king-abdulaziz-falconry-festival-20261117-d56e3d7f",
       "possible_event_id": "event-king-abdulaziz-falconry-festival",
       "conflict_fields": [
         "source",
@@ -187,6 +187,26 @@
       "candidate_id": "candidate-visit-saudi-calendar-pdf-عروض-الفنون-الأدائية-التقليدية-20260706-4a38d19e",
       "event_id": "event-عروض-الفنون-الأدائية-التقليدية",
       "title": "عروض الفنون الأدائية التقليدية"
+    },
+    {
+      "candidate_id": "candidate-misk-hub-events-navigating-the-cyber-map-how-to-choose-your-specialization-build-a-corpo-20260825-3d712502",
+      "event_id": "event-navigating-the-cyber-map-how-to-choose-your-specialization-build-a-corpo",
+      "title": "Navigating the Cyber Map: How to Choose Your Specialization & Build a Corporate Career"
+    },
+    {
+      "candidate_id": "candidate-hayy-jameel-events-hayy-sounds-drumming-circle-with-saif-halal-20260829-e1fc9366",
+      "event_id": "event-hayy-sounds-drumming-circle-with-saif-halal",
+      "title": "Hayy Sounds | Drumming Circle with Saif Halal"
+    },
+    {
+      "candidate_id": "candidate-visit-saudi-calendar-stand-up-comedy-and-interactive-show-with-salah-al-dali-20260904-811b0078",
+      "event_id": "event-stand-up-comedy-and-interactive-show-with-salah-al-dali",
+      "title": "Stand-up Comedy and Interactive Show with Salah Al-Dali"
+    },
+    {
+      "candidate_id": "candidate-rfecc-whats-on-natural-world-expo-20261212-2c5b7d62",
+      "event_id": "event-natural-world-expo",
+      "title": "Natural World Expo"
     }
   ],
   "linked_existing": [
@@ -1409,27 +1429,9 @@
       "reason": "already linked to catalog event"
     },
     {
-      "candidate_id": "candidate-ithra-events-spot-of-inspiration-20260819-5bac584c",
-      "event_id": "event-spot-of-inspiration",
-      "title": "Spot of Inspiration",
-      "reason": "already linked to catalog event"
-    },
-    {
-      "candidate_id": "candidate-ithra-events-childrens-museum-story-time-20260819-ada8b9db",
-      "event_id": "event-childrens-museum-story-time",
-      "title": "Children's Museum Story Time",
-      "reason": "already linked to catalog event"
-    },
-    {
       "candidate_id": "candidate-ithra-events-childrens-art-studio-20260819-2bf92d17",
       "event_id": "event-childrens-art-studio",
       "title": "Children's Art Studio",
-      "reason": "already linked to catalog event"
-    },
-    {
-      "candidate_id": "candidate-ithra-events-emboss-printing-experience-20260819-2671d1ce",
-      "event_id": "event-emboss-printing-experience",
-      "title": "Emboss Printing Experience",
       "reason": "already linked to catalog event"
     },
     {
@@ -1442,6 +1444,18 @@
       "candidate_id": "candidate-ithra-events-energy-lab-20260819-60155d60",
       "event_id": "event-energy-lab",
       "title": "Energy Lab",
+      "reason": "already linked to catalog event"
+    },
+    {
+      "candidate_id": "candidate-ithra-events-spot-of-inspiration-20260819-5bac584c",
+      "event_id": "event-spot-of-inspiration",
+      "title": "Spot of Inspiration",
+      "reason": "already linked to catalog event"
+    },
+    {
+      "candidate_id": "candidate-ithra-events-childrens-museum-story-time-20260819-ada8b9db",
+      "event_id": "event-childrens-museum-story-time",
+      "title": "Children's Museum Story Time",
       "reason": "already linked to catalog event"
     },
     {
@@ -1460,6 +1474,12 @@
       "candidate_id": "candidate-ithra-events-storyteller-of-the-day-20260819-94528a46",
       "event_id": "event-storyteller-of-the-day",
       "title": "Storyteller of the Day",
+      "reason": "already linked to catalog event"
+    },
+    {
+      "candidate_id": "candidate-ithra-events-emboss-printing-experience-20260819-2671d1ce",
+      "event_id": "event-emboss-printing-experience",
+      "title": "Emboss Printing Experience",
       "reason": "already linked to catalog event"
     },
     {
@@ -1617,6 +1637,12 @@
       "event_id": "event-family-game",
       "title": "Family Game",
       "reason": "already linked to catalog event"
+    },
+    {
+      "candidate_id": "candidate-ithra-events-family-game-20260821-a30cabbd",
+      "event_id": "event-family-game",
+      "title": "Family Game",
+      "reason": "trusted duplicate linked to existing catalog event"
     },
     {
       "candidate_id": "candidate-mdlbeast-events-beast-house-20260821-83049a2a",
@@ -3880,7 +3906,7 @@
       "possible_event_id": "event-cityscape-global-2026"
     },
     {
-      "candidate_id": "candidate-visit-saudi-calendar-king-abdulaziz-falconry-festival-20261117-d56e3d7f",
+      "candidate_id": "candidate-visit-saudi-seasons-king-abdulaziz-falconry-festival-20261117-d56e3d7f",
       "title": "King Abdulaziz Falconry Festival",
       "reason": "possible duplicate requires review: exact-title-city-source-conflict",
       "kind": "exact-title-city-source-conflict",

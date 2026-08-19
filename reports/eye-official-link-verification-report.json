@@ -1,12 +1,12 @@
 {
   "schema": "eventlive.eye-official-link-verification.v1",
-  "generated_at": "2026-08-19T02:20:21.833Z",
+  "generated_at": "2026-08-19T13:34:56.391Z",
   "dry_run": false,
   "totals": {
     "targets": 12,
     "confirmed": 4,
-    "skipped": 2,
-    "failed": 6
+    "skipped": 1,
+    "failed": 7
   },
   "rows": [
     {
@@ -131,22 +131,8 @@
     {
       "candidate_id": "candidate-eye-of-riyadh-events-real-estate-future-forum-20270125-d058344d",
       "title": "Real Estate Future Forum",
-      "status": "skipped",
-      "official_url": "https://www.therff.com/",
-      "confirmed": false,
-      "reason": "year-not-confirmed",
-      "title_tokens": [
-        "real",
-        "estate",
-        "future"
-      ],
-      "matched_title_tokens": [
-        "real",
-        "estate",
-        "future"
-      ],
-      "year_confirmed": false,
-      "month_confirmed": true
+      "status": "failed",
+      "reason": "The operation was aborted due to timeout"
     },
     {
       "candidate_id": "candidate-eye-of-riyadh-events-real-estate-excellence-award-2026-rea-2026-20270126-5e55ea49",

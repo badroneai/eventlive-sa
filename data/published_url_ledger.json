@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "generated_at": "2026-08-19T02:28:05.564Z",
+  "generated_at": "2026-08-19T13:44:43.242Z",
   "events": {
     "event-skill-development-initiative": {
       "identity": "skill development initiative|riyadh|2021-07-14",
@@ -1182,11 +1182,6 @@
       "first_seen": "2026-07-30",
       "last_seen": "2026-08-19"
     },
-    "event-دور-المواصفات-القياسية-في-دعم-عمليات-التعقيم-والتغليف-ووضع-المعلومات-الت": {
-      "identity": "دور المواصفات القياسية في دعم عمليات التعقيم والتغليف ووضع المعلومات التعريفية للمصانع المحلية|online|2026-08-19",
-      "first_seen": "2026-08-02",
-      "last_seen": "2026-08-19"
-    },
     "event-clay-shaping": {
       "identity": "clay shaping|dhahran|2026-08-19",
       "first_seen": "2026-08-11",
@@ -1307,6 +1302,11 @@
       "first_seen": "2026-08-17",
       "last_seen": "2026-08-19"
     },
+    "event-navigating-the-cyber-map-how-to-choose-your-specialization-build-a-corpo": {
+      "identity": "navigating the cyber map: how to choose your specialization & build a corporate career|saudi arabia|2026-08-25",
+      "first_seen": "2026-08-19",
+      "last_seen": "2026-08-19"
+    },
     "event-اوبن-مايك-للمواهب": {
       "identity": "اوبن مايك للمواهب|riyadh|2026-08-26",
       "first_seen": "2026-08-17",
@@ -1335,6 +1335,11 @@
     "event-community-garden-from-soil-to-seed-basics-to-growing-your-own-plants-wit": {
       "identity": "community garden | from soil to seed: basics to growing your own plants with sara alsayed|jeddah|2026-08-28",
       "first_seen": "2026-08-16",
+      "last_seen": "2026-08-19"
+    },
+    "event-hayy-sounds-drumming-circle-with-saif-halal": {
+      "identity": "hayy sounds | drumming circle with saif halal|jeddah|2026-08-29",
+      "first_seen": "2026-08-19",
       "last_seen": "2026-08-19"
     },
     "event-summer-splash-at-south-beach": {
@@ -1490,6 +1495,11 @@
     "event-ستاند-أب-كوميدي-وعرض-تفاعلي-مع-صلاح-الدالي": {
       "identity": "ستاند أب كوميدي وعرض تفاعلي مع صلاح الدالي|jeddah|2026-09-04",
       "first_seen": "2026-08-17",
+      "last_seen": "2026-08-19"
+    },
+    "event-stand-up-comedy-and-interactive-show-with-salah-al-dali": {
+      "identity": "stand-up comedy and interactive show with salah al-dali|jeddah|2026-09-04",
+      "first_seen": "2026-08-19",
       "last_seen": "2026-08-19"
     },
     "event-the-innovation-diwan": {
@@ -2392,6 +2402,11 @@
       "first_seen": "2026-07-11",
       "last_seen": "2026-08-19"
     },
+    "event-natural-world-expo": {
+      "identity": "natural world expo|riyadh|2026-12-12",
+      "first_seen": "2026-08-19",
+      "last_seen": "2026-08-19"
+    },
     "event-asian-indoor-and-martial-arts-games": {
       "identity": "asian indoor and martial arts games|riyadh|2026-12-13",
       "first_seen": "2026-07-11",
@@ -2850,6 +2865,11 @@
     "event-space-debris-conference-2028": {
       "identity": "space debris conference 2028|riyadh|2028-02-15",
       "first_seen": "2026-08-06",
+      "last_seen": "2026-08-19"
+    },
+    "event-دور-المواصفات-القياسية-في-دعم-عمليات-التعقيم-والتغليف-ووضع-المعلومات-الت": {
+      "identity": "دور المواصفات القياسية في دعم عمليات التعقيم والتغليف ووضع المعلومات التعريفية للمصانع المحلية|online|2026-08-19",
+      "first_seen": "2026-08-02",
       "last_seen": "2026-08-19"
     },
     "event-احتياطات-الأمان-عند-استخدام-مبيدات-آفات-الصحة-العامة": {

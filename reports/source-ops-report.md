@@ -1,6 +1,6 @@
 # EventLive Source Ops Report
 
-- generated_at: 2026-08-19T02:25:06.658Z
+- generated_at: 2026-08-19T13:41:39.063Z
 - registry: data/source_registry.json
 - candidates: data/source_candidates.json
 - catalog: data/events_catalog.json
@@ -12,31 +12,31 @@
 
 - Sources in registry: 88
 - Runnable collector lanes: 48
-- Sources due now: 22
-- Sources attempted in latest collection: 22
-- Sources deferred by cadence: 26
+- Sources due now: 23
+- Sources attempted in latest collection: 23
+- Sources deferred by cadence: 25
 - Due-source coverage: 100%
 - Scheduled runnable coverage: 100%
-- Whole-registry attempted this run: 25%
-- Healthy sources: 20
-- Zero-yield sources: 2
+- Whole-registry attempted this run: 26%
+- Healthy sources: 19
+- Zero-yield sources: 3
 - High-priority unattempted sources: 3
-- Candidates: 627
+- Candidates: 632
 - Actionable candidates: 8
 - Ready for review: 8
 - Ready for catalog promotion: 0
-- Linked to catalog from candidates: 594
+- Linked to catalog from candidates: 599
 - Stale unpublished candidates: 0
 - Duplicate risk: 8
 - Recommendation: ابدأ بمراجعة التكرارات المحتملة قبل اعتماد أي مرشح جديد.
 
 ## Candidate Funnel
 
-- review_status.approved-for-catalog: 594
+- review_status.approved-for-catalog: 599
 - review_status.ready-for-review: 8
 - review_status.evidence-captured: 17
 - review_status.new: 8
-- publication_gate.catalog-review: 594
+- publication_gate.catalog-review: 599
 - publication_gate.duplicate-review: 8
 - publication_gate.source-evidence: 25
 - discovery_quality.strong-lead: 19
@@ -54,7 +54,7 @@
 | Saudi Industrial Series | Eye of Riyadh Events | ready-for-review/duplicate-review | راجع التكرار مع الكتالوج قبل أي اعتماد. |
 | IN ACT - ACT X | Visit Saudi Calendar | ready-for-review/duplicate-review | راجع التكرار مع الكتالوج قبل أي اعتماد. |
 | Cityscape Global 2026 | Invest Saudi Events | ready-for-review/duplicate-review | راجع التكرار مع الكتالوج قبل أي اعتماد. |
-| King Abdulaziz Falconry Festival | Visit Saudi Calendar | ready-for-review/duplicate-review | راجع التكرار مع الكتالوج قبل أي اعتماد. |
+| King Abdulaziz Falconry Festival | Visit Saudi Seasons | ready-for-review/duplicate-review | راجع التكرار مع الكتالوج قبل أي اعتماد. |
 
 ## Discovery Leads
 
@@ -76,7 +76,7 @@
 | Priority | Source | Status | Extracted | Candidates | Next action |
 |---:|---|---|---:|---:|---|
 | 1 | National Events Center / Saudi Events | not-collected | 0 | 0 | افتح مسار شراكة أو تغذية رسمية قبل الأتمتة. |
-| 2 | Visit Saudi Calendar | healthy | 41 | 20 | استمر بالمراجعة والتكرار قبل النشر. |
+| 2 | Visit Saudi Calendar | healthy | 42 | 20 | استمر بالمراجعة والتكرار قبل النشر. |
 | 3 | Ministry of Culture Cultural Calendar | deferred | 0 | 0 | مؤجل حتى 2026-08-19T13:28:28.100Z وفق الجدولة التكيفية. |
 | 4 | Ministry of Sport Events | deferred | 0 | 0 | مؤجل حتى 2026-08-19T13:28:28.100Z وفق الجدولة التكيفية. |
 | 5 | webook Explore | not-collected | 0 | 0 | أضف جامعاً محافظاً أو تحقق من قابلية القراءة العامة. |
@@ -85,7 +85,7 @@
 | 8 | MDLBEAST Events | healthy | 5 | 5 | استمر بالمراجعة والتكرار قبل النشر. |
 | 9 | Monsha'at All Events | deferred | 0 | 1 | مؤجل حتى 2026-08-19T13:28:28.100Z وفق الجدولة التكيفية. |
 | 10 | Invest Saudi Events | healthy | 3 | 3 | استمر بالمراجعة والتكرار قبل النشر. |
-| 11 | RFECC What's On | healthy | 6 | 6 | استمر بالمراجعة والتكرار قبل النشر. |
+| 11 | RFECC What's On | healthy | 7 | 7 | استمر بالمراجعة والتكرار قبل النشر. |
 | 12 | Eye of Riyadh Events | deferred | 0 | 6 | مؤجل حتى 2026-08-19T13:28:28.100Z وفق الجدولة التكيفية. |
 | 13 | 10times Saudi Arabia | not-collected | 0 | 0 | أضف جامعاً محافظاً أو تحقق من قابلية القراءة العامة. |
 | 14 | Eventbrite Saudi Arabia | deferred | 0 | 8 | مؤجل حتى 2026-08-19T13:28:28.100Z وفق الجدولة التكيفية. |
@@ -93,16 +93,16 @@
 | 16 | Tuwaiq Academy Bootcamps and Programs | deferred | 0 | 37 | مؤجل حتى 2026-08-19T13:28:28.100Z وفق الجدولة التكيفية. |
 | 17 | Future Skills MCIT Catalogue | healthy | 4 | 4 | استمر بالمراجعة والتكرار قبل النشر. |
 | 18 | Riyadh Season Official | not-collected | 0 | 0 | أضف جامعاً محافظاً أو تحقق من قابلية القراءة العامة. |
-| 19 | Visit Saudi Seasons | healthy | 26 | 27 | استمر بالمراجعة والتكرار قبل النشر. |
+| 19 | Visit Saudi Seasons | healthy | 27 | 28 | استمر بالمراجعة والتكرار قبل النشر. |
 | 20 | CODE MCIT Programs | deferred | 0 | 0 | مؤجل حتى 2026-08-25T07:09:41.633Z وفق الجدولة التكيفية. |
 | 21 | Misk Hub Programs | healthy | 5 | 12 | استمر بالمراجعة والتكرار قبل النشر. |
 | 22 | Dhahran Expo Calendar | healthy | 16 | 17 | استمر بالمراجعة والتكرار قبل النشر. |
-| 23 | Ithra Events | healthy | 65 | 69 | استمر بالمراجعة والتكرار قبل النشر. |
+| 23 | Ithra Events | healthy | 65 | 70 | استمر بالمراجعة والتكرار قبل النشر. |
 | 24 | Saudi Digital Academy | not-collected | 0 | 0 | أضف جامعاً محافظاً أو تحقق من قابلية القراءة العامة. |
-| 25 | SDAIA Academy Programs | deferred | 0 | 0 | مؤجل حتى 2026-08-19T07:16:31.258Z وفق الجدولة التكيفية. |
+| 25 | SDAIA Academy Programs | zero-yield | 0 | 0 | No future date-complete candidates found by the conservative extractor. |
 | 26 | Saudi Events App | not-collected | 0 | 0 | افتح مسار شراكة أو تغذية رسمية قبل الأتمتة. |
 | 27 | Enjoy Saudi Events | not-collected | 0 | 0 | أضف جامعاً محافظاً أو تحقق من قابلية القراءة العامة. |
-| 28 | Misk Hub Events | healthy | 2 | 1 | استمر بالمراجعة والتكرار قبل النشر. |
+| 28 | Misk Hub Events | healthy | 3 | 2 | استمر بالمراجعة والتكرار قبل النشر. |
 | 29 | Jeddah Chamber Exhibitions and Events Center | deferred | 0 | 0 | مؤجل حتى 2026-08-25T07:09:41.633Z وفق الجدولة التكيفية. |
 | 30 | Saudi Pro League Fixtures | deferred | 0 | 0 | مؤجل حتى 2026-08-19T13:28:28.100Z وفق الجدولة التكيفية. |
 | 31 | NEOM Newsroom Events | not-collected | 0 | 0 | أضف جامعاً محافظاً أو تحقق من قابلية القراءة العامة. |
@@ -113,7 +113,7 @@
 | 36 | Sela and Saudi Entertainment Expo | not-collected | 0 | 0 | أضف جامعاً محافظاً أو تحقق من قابلية القراءة العامة. |
 | 37 | Ministry of Culture Commission Calendars | deferred | 0 | 11 | مؤجل حتى 2026-08-19T13:28:28.100Z وفق الجدولة التكيفية. |
 | 38 | Visit AlBalad / Historic Jeddah | not-collected | 0 | 0 | أضف جامعاً محافظاً أو تحقق من قابلية القراءة العامة. |
-| 39 | Discover Aseer Events | zero-yield | 0 | 33 | Recovered via live-browser-recovery official evidence. Primary page failed: HTTP 404. No future date-complete candidates found by the conservative extractor. |
+| 39 | Discover Aseer Events | deferred | 0 | 33 | مؤجل حتى 2026-08-20T02:15:04.117Z وفق الجدولة التكيفية. |
 | 40 | Diriyah Season | not-collected | 0 | 0 | أضف جامعاً محافظاً أو تحقق من قابلية القراءة العامة. |
 | 41 | Riyadh International Convention and Exhibition Center | not-collected | 0 | 0 | أضف جامعاً محافظاً أو تحقق من قابلية القراءة العامة. |
 | 42 | Aseer Season / Asir Development Authority | not-collected | 0 | 0 | أضف جامعاً محافظاً أو تحقق من قابلية القراءة العامة. |
@@ -122,7 +122,7 @@
 | 45 | Saudi Universities and Technical Colleges | deferred | 0 | 4 | مؤجل حتى 2026-09-09T13:49:51.211Z وفق الجدولة التكيفية. |
 | 46 | ExpoFP and Eventseye Saudi Trade Shows | not-collected | 0 | 0 | أضف جامعاً محافظاً أو تحقق من قابلية القراءة العامة. |
 | 47 | Meetup and Facebook Events Saudi Arabia | not-collected | 0 | 0 | أضف جامعاً محافظاً أو تحقق من قابلية القراءة العامة. |
-| 48 | Saudi Food and Drug Authority Events | deferred | 0 | 3 | مؤجل حتى 2026-08-19T07:09:41.633Z وفق الجدولة التكيفية. |
+| 48 | Saudi Food and Drug Authority Events | zero-yield | 0 | 3 | No future date-complete candidates found by the conservative extractor. |
 | 49 | Saudi Contractors Authority Events | not-collected | 0 | 0 | أضف جامعاً محافظاً أو تحقق من قابلية القراءة العامة. |
 | 50 | Saudi Winter Events Calendar | not-collected | 0 | 0 | أضف جامعاً محافظاً أو تحقق من قابلية القراءة العامة. |
 | 51 | Riyadh City Events | zero-yield | 0 | 74 | No future date-complete candidates found by the conservative extractor. |
@@ -133,7 +133,10 @@
 | 56 | SCEGA ePortal Events | healthy | 4 | 4 | استمر بالمراجعة والتكرار قبل النشر. |
 | 57 | Ministry of Commerce Upcoming Events | not-collected | 0 | 0 | أضف جامعاً محافظاً أو تحقق من قابلية القراءة العامة. |
 | 58 | Evento | not-collected | 0 | 0 | أضف جامعاً محافظاً أو تحقق من قابلية القراءة العامة. |
-| 59 | Asharqia Chamber Events | healthy | 4 | 4 | استمر بالمراجعة والتكرار قبل النشر. |
+| 59 | Asharqia Chamber Events | collection-error | 0 | 4 | fetch failed; page.goto: Timeout 30000ms exceeded.
+Call log:
+  - navigating to "https://www.chamber.org.sa/sites/Arabic/Events/ChamberEvents/Pages/AllChamberEvents.aspx", waiting until "domcontentloaded"
+ |
 | 60 | Qassim Chamber Events | deferred | 0 | 0 | مؤجل حتى 2026-08-20T13:13:35.733Z وفق الجدولة التكيفية. |
 | 61 | Abha Chamber Events | deferred | 0 | 0 | مؤجل حتى 2026-08-25T07:09:41.633Z وفق الجدولة التكيفية. |
 | 62 | Baha Municipality Events | not-collected | 0 | 0 | أضف جامعاً محافظاً أو تحقق من قابلية القراءة العامة. |
@@ -159,7 +162,7 @@
 | 82 | Money20/20 Middle East Official Agendas | not-collected | 0 | 0 | أضف جامعاً محافظاً أو تحقق من قابلية القراءة العامة. |
 | 83 | Madinah Chamber Events | deferred | 0 | 0 | مؤجل حتى 2026-08-21T19:20:01.011Z وفق الجدولة التكيفية. |
 | 84 | Madinah International Architecture Festival | healthy | 1 | 1 | استمر بالمراجعة والتكرار قبل النشر. |
-| 85 | Hayy Jameel What's On | healthy | 21 | 74 | استمر بالمراجعة والتكرار قبل النشر. |
+| 85 | Hayy Jameel What's On | healthy | 22 | 75 | استمر بالمراجعة والتكرار قبل النشر. |
 | 86 | Informa Connect Saudi Event Portfolio | deferred | 0 | 6 | مؤجل حتى 2026-08-25T07:09:41.633Z وفق الجدولة التكيفية. |
 | 87 | King Abdulaziz University Events | deferred | 0 | 2 | مؤجل حتى 2026-08-19T13:28:28.100Z وفق الجدولة التكيفية. |
 | 88 | Saudicon Events | deferred | 0 | 14 | مؤجل حتى 2026-08-19T13:28:28.100Z وفق الجدولة التكيفية. |

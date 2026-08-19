@@ -1,13 +1,13 @@
 {
-  "generated_at": "2026-08-19T02:23:17.438Z",
+  "generated_at": "2026-08-19T13:38:19.781Z",
   "catalog": "data/events_catalog.json",
   "source": "RFECC What's On",
   "totals": {
-    "targets": 6,
-    "candidates": 6,
-    "enriched": 6,
-    "fetched": 6,
-    "images": 6,
+    "targets": 7,
+    "candidates": 7,
+    "enriched": 7,
+    "fetched": 7,
+    "images": 7,
     "fetch_failures": 0
   },
   "enriched": [
@@ -48,6 +48,14 @@
       "title": "Natrual Expo",
       "source_method": "official-page-html-jsonld",
       "image_url": "https://cdn.rfecc.sa/wp-content/uploads/2026/01/06123740/GqbqdoDWMAAm16R.jpg",
+      "fetched": true,
+      "features": 7
+    },
+    {
+      "id": "event-natural-world-expo",
+      "title": "Natural World Expo",
+      "source_method": "official-page-html-jsonld",
+      "image_url": "https://cdn.rfecc.sa/wp-content/uploads/2026/08/19122905/images.jpg",
       "fetched": true,
       "features": 7
     },

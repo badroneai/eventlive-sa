@@ -1,11 +1,11 @@
 {
-  "generated_at": "2026-08-19T02:24:11.105Z",
+  "generated_at": "2026-08-19T13:40:29.450Z",
   "source_ops_report": "reports/source-ops-report.json",
   "source_registry": "data/source_registry.json",
   "totals": {
     "leads_seen": 10,
     "tasks": 5,
-    "high_priority": 2
+    "high_priority": 3
   },
   "tasks": [
     {
@@ -17,7 +17,7 @@
       "discovery_quality": "strong-lead",
       "discovery_score": 70,
       "discovery_notes": "saudi-location-signal, specific-venue, event-topic-fit",
-      "resolver_priority": 119,
+      "resolver_priority": 132,
       "target_sources": [
         {
           "id": "informa-connect-saudi-events",
@@ -97,6 +97,99 @@
         {
           "query": "\"Family Office Investment Summit\" \"Riyadh\" tickets",
           "url": "https://www.google.com/search?q=%22Family%20Office%20Investment%20Summit%22%20%22Riyadh%22%20tickets"
+        }
+      ],
+      "next_action": "ابحث في المصادر الرسمية المستهدفة واربط lead بمصدر رسمي قبل أي نشر."
+    },
+    {
+      "lead_id": "candidate-eventbrite-saudi-family-office-investment-meeting-riyadh-registration-fee-usd-580-20260902-82923462",
+      "title": "Family Office Investment Meeting",
+      "city": "Riyadh",
+      "starts_at": "2026-09-02T09:00:00+03:00",
+      "source_label": "Eventbrite Saudi Arabia",
+      "discovery_quality": "strong-lead",
+      "discovery_score": 70,
+      "discovery_notes": "saudi-location-signal, specific-venue, event-topic-fit",
+      "resolver_priority": 122,
+      "target_sources": [
+        {
+          "id": "informa-connect-saudi-events",
+          "name": "Informa Connect Saudi Event Portfolio",
+          "url": "https://informaconnect.com/",
+          "domain": "informaconnect.com",
+          "trust_level": "official",
+          "source_type": "conference-organizer",
+          "score": 64
+        },
+        {
+          "id": "saudi-contractors-authority-events",
+          "name": "Saudi Contractors Authority Events",
+          "url": "https://www.sca.gov.sa/",
+          "domain": "sca.gov.sa",
+          "trust_level": "official",
+          "source_type": "government-calendar",
+          "score": 64
+        },
+        {
+          "id": "asharqia-chamber-events",
+          "name": "Asharqia Chamber Events",
+          "url": "https://www.chamber.org.sa/sites/Arabic/Events/ChamberEvents/Pages/AllChamberEvents.aspx",
+          "domain": "chamber.org.sa",
+          "trust_level": "official",
+          "source_type": "venue-calendar",
+          "score": 56
+        },
+        {
+          "id": "invest-saudi-events",
+          "name": "Invest Saudi Events",
+          "url": "https://www.investsaudi.sa/events",
+          "domain": "investsaudi.sa",
+          "trust_level": "official",
+          "source_type": "government-calendar",
+          "score": 56
+        },
+        {
+          "id": "jcci-events-center",
+          "name": "Jeddah Chamber Exhibitions and Events Center",
+          "url": "https://www.jcci.org.sa/en/المعارض-والفعاليات",
+          "domain": "jcci.org.sa",
+          "trust_level": "venue-official",
+          "source_type": "venue-calendar",
+          "score": 56
+        }
+      ],
+      "searches": [
+        {
+          "query": "site:informaconnect.com \"Family Office Investment Meeting\" \"Riyadh\"",
+          "url": "https://www.google.com/search?q=site%3Ainformaconnect.com%20%22Family%20Office%20Investment%20Meeting%22%20%22Riyadh%22"
+        },
+        {
+          "query": "site:sca.gov.sa \"Family Office Investment Meeting\" \"Riyadh\"",
+          "url": "https://www.google.com/search?q=site%3Asca.gov.sa%20%22Family%20Office%20Investment%20Meeting%22%20%22Riyadh%22"
+        },
+        {
+          "query": "site:chamber.org.sa \"Family Office Investment Meeting\" \"Riyadh\"",
+          "url": "https://www.google.com/search?q=site%3Achamber.org.sa%20%22Family%20Office%20Investment%20Meeting%22%20%22Riyadh%22"
+        },
+        {
+          "query": "site:investsaudi.sa \"Family Office Investment Meeting\" \"Riyadh\"",
+          "url": "https://www.google.com/search?q=site%3Ainvestsaudi.sa%20%22Family%20Office%20Investment%20Meeting%22%20%22Riyadh%22"
+        },
+        {
+          "query": "site:jcci.org.sa \"Family Office Investment Meeting\" \"Riyadh\"",
+          "url": "https://www.google.com/search?q=site%3Ajcci.org.sa%20%22Family%20Office%20Investment%20Meeting%22%20%22Riyadh%22"
+        },
+        {
+          "query": "\"Family Office Investment Meeting\" \"Riyadh\" official",
+          "url": "https://www.google.com/search?q=%22Family%20Office%20Investment%20Meeting%22%20%22Riyadh%22%20official"
+        },
+        {
+          "query": "\"Family Office Investment Meeting\" \"Riyadh\" organizer",
+          "url": "https://www.google.com/search?q=%22Family%20Office%20Investment%20Meeting%22%20%22Riyadh%22%20organizer"
+        },
+        {
+          "query": "\"Family Office Investment Meeting\" \"Riyadh\" tickets",
+          "url": "https://www.google.com/search?q=%22Family%20Office%20Investment%20Meeting%22%20%22Riyadh%22%20tickets"
         }
       ],
       "next_action": "ابحث في المصادر الرسمية المستهدفة واربط lead بمصدر رسمي قبل أي نشر."
@@ -190,99 +283,6 @@
         {
           "query": "\"Jeddah Fintech Week 2026\" \"Jeddah\" tickets",
           "url": "https://www.google.com/search?q=%22Jeddah%20Fintech%20Week%202026%22%20%22Jeddah%22%20tickets"
-        }
-      ],
-      "next_action": "ابحث في المصادر الرسمية المستهدفة واربط lead بمصدر رسمي قبل أي نشر."
-    },
-    {
-      "lead_id": "candidate-eventbrite-saudi-family-office-investment-meeting-riyadh-registration-fee-usd-580-20260902-82923462",
-      "title": "Family Office Investment Meeting",
-      "city": "Riyadh",
-      "starts_at": "2026-09-02T09:00:00+03:00",
-      "source_label": "Eventbrite Saudi Arabia",
-      "discovery_quality": "strong-lead",
-      "discovery_score": 70,
-      "discovery_notes": "saudi-location-signal, specific-venue, event-topic-fit",
-      "resolver_priority": 109,
-      "target_sources": [
-        {
-          "id": "informa-connect-saudi-events",
-          "name": "Informa Connect Saudi Event Portfolio",
-          "url": "https://informaconnect.com/",
-          "domain": "informaconnect.com",
-          "trust_level": "official",
-          "source_type": "conference-organizer",
-          "score": 64
-        },
-        {
-          "id": "saudi-contractors-authority-events",
-          "name": "Saudi Contractors Authority Events",
-          "url": "https://www.sca.gov.sa/",
-          "domain": "sca.gov.sa",
-          "trust_level": "official",
-          "source_type": "government-calendar",
-          "score": 64
-        },
-        {
-          "id": "asharqia-chamber-events",
-          "name": "Asharqia Chamber Events",
-          "url": "https://www.chamber.org.sa/sites/Arabic/Events/ChamberEvents/Pages/AllChamberEvents.aspx",
-          "domain": "chamber.org.sa",
-          "trust_level": "official",
-          "source_type": "venue-calendar",
-          "score": 56
-        },
-        {
-          "id": "invest-saudi-events",
-          "name": "Invest Saudi Events",
-          "url": "https://www.investsaudi.sa/events",
-          "domain": "investsaudi.sa",
-          "trust_level": "official",
-          "source_type": "government-calendar",
-          "score": 56
-        },
-        {
-          "id": "jcci-events-center",
-          "name": "Jeddah Chamber Exhibitions and Events Center",
-          "url": "https://www.jcci.org.sa/en/المعارض-والفعاليات",
-          "domain": "jcci.org.sa",
-          "trust_level": "venue-official",
-          "source_type": "venue-calendar",
-          "score": 56
-        }
-      ],
-      "searches": [
-        {
-          "query": "site:informaconnect.com \"Family Office Investment Meeting\" \"Riyadh\"",
-          "url": "https://www.google.com/search?q=site%3Ainformaconnect.com%20%22Family%20Office%20Investment%20Meeting%22%20%22Riyadh%22"
-        },
-        {
-          "query": "site:sca.gov.sa \"Family Office Investment Meeting\" \"Riyadh\"",
-          "url": "https://www.google.com/search?q=site%3Asca.gov.sa%20%22Family%20Office%20Investment%20Meeting%22%20%22Riyadh%22"
-        },
-        {
-          "query": "site:chamber.org.sa \"Family Office Investment Meeting\" \"Riyadh\"",
-          "url": "https://www.google.com/search?q=site%3Achamber.org.sa%20%22Family%20Office%20Investment%20Meeting%22%20%22Riyadh%22"
-        },
-        {
-          "query": "site:investsaudi.sa \"Family Office Investment Meeting\" \"Riyadh\"",
-          "url": "https://www.google.com/search?q=site%3Ainvestsaudi.sa%20%22Family%20Office%20Investment%20Meeting%22%20%22Riyadh%22"
-        },
-        {
-          "query": "site:jcci.org.sa \"Family Office Investment Meeting\" \"Riyadh\"",
-          "url": "https://www.google.com/search?q=site%3Ajcci.org.sa%20%22Family%20Office%20Investment%20Meeting%22%20%22Riyadh%22"
-        },
-        {
-          "query": "\"Family Office Investment Meeting\" \"Riyadh\" official",
-          "url": "https://www.google.com/search?q=%22Family%20Office%20Investment%20Meeting%22%20%22Riyadh%22%20official"
-        },
-        {
-          "query": "\"Family Office Investment Meeting\" \"Riyadh\" organizer",
-          "url": "https://www.google.com/search?q=%22Family%20Office%20Investment%20Meeting%22%20%22Riyadh%22%20organizer"
-        },
-        {
-          "query": "\"Family Office Investment Meeting\" \"Riyadh\" tickets",
-          "url": "https://www.google.com/search?q=%22Family%20Office%20Investment%20Meeting%22%20%22Riyadh%22%20tickets"
         }
       ],
       "next_action": "ابحث في المصادر الرسمية المستهدفة واربط lead بمصدر رسمي قبل أي نشر."

@@ -1,9 +1,9 @@
 # EventLive Visit Saudi Image Identity Report
 
-- generated_at: 2026-08-19T02:20:33.560Z
-- pdf_crop_assignments: 78
+- generated_at: 2026-08-19T13:35:30.435Z
+- pdf_crop_assignments: 77
 - verified: 71
-- struck: 7
+- struck: 6
 - slots_seen_this_cycle: 83
 
 ## Struck (fell back to generated cover)
@@ -13,7 +13,6 @@
 - باتو (visit-saudi-summer-2026-p006-top-left.jpg) - identity-mismatch - page 6 top-left is now "بلاتو"
 - واحة عسيب (visit-saudi-summer-2026-p009-top-left.jpg) - identity-mismatch - page 9 top-left is now "شارع الفن - القرية الأوروبية"
 - بيوني الشرف (visit-saudi-summer-2026-p010-bottom-right.jpg) - identity-mismatch - page 10 bottom-right is now "مزرعة التوت الأسود"
-- مخيّم النحالون الصغار الصيفي (visit-saudi-summer-2026-p061-bottom-left.jpg) - slot-vacated - no dated card currently occupies page 61 bottom-left of https://www.visitsaudi.com/content/dam/documents/saudi-calendar-ar.pdf
 - ذكريات سبيستون مع الفنان عاصم سكر (visit-saudi-summer-2026-p062-bottom-left.jpg) - identity-mismatch - page 62 bottom-left is now "ENC 2026"
 
 ## Verified

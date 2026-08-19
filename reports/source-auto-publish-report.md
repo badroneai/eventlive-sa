@@ -1,11 +1,11 @@
 # EventLive Source Auto Publish Report
 
-- published_at: 2026-08-19T02:20:31.014Z
+- published_at: 2026-08-19T13:35:27.937Z
 - dry_run: false
 - include_partner: true
-- candidates_seen: 627
-- published_new: 5
-- linked_existing: 583
+- candidates_seen: 632
+- published_new: 9
+- linked_existing: 584
 - blocked_remaining: 39
 - duplicate_review_alerts: 8
 
@@ -30,6 +30,10 @@
 | candidate-visit-saudi-calendar-pdf-مزرعة-التوت-الأسود-20260701-4a38d19e | published | event-مزرعة-التوت-الأسود | مزرعة التوت الأسود |
 | candidate-visit-saudi-calendar-pdf-الأخطبوطية-20260704-4a38d19e | published | event-الأخطبوطية | الأخطبوطية |
 | candidate-visit-saudi-calendar-pdf-عروض-الفنون-الأدائية-التقليدية-20260706-4a38d19e | published | event-عروض-الفنون-الأدائية-التقليدية | عروض الفنون الأدائية التقليدية |
+| candidate-misk-hub-events-navigating-the-cyber-map-how-to-choose-your-specialization-build-a-corpo-20260825-3d712502 | published | event-navigating-the-cyber-map-how-to-choose-your-specialization-build-a-corpo | Navigating the Cyber Map: How to Choose Your Specialization & Build a Corporate Career |
+| candidate-hayy-jameel-events-hayy-sounds-drumming-circle-with-saif-halal-20260829-e1fc9366 | published | event-hayy-sounds-drumming-circle-with-saif-halal | Hayy Sounds | Drumming Circle with Saif Halal |
+| candidate-visit-saudi-calendar-stand-up-comedy-and-interactive-show-with-salah-al-dali-20260904-811b0078 | published | event-stand-up-comedy-and-interactive-show-with-salah-al-dali | Stand-up Comedy and Interactive Show with Salah Al-Dali |
+| candidate-rfecc-whats-on-natural-world-expo-20261212-2c5b7d62 | published | event-natural-world-expo | Natural World Expo |
 | candidate-moc-cultural-subportals-skill-development-initiative-20210714-10f7dc2c | linked-existing | event-skill-development-initiative | already linked to catalog event |
 | candidate-moc-cultural-subportals-sitar-20220921-cda2e068 | linked-existing | event-sitar | already linked to catalog event |
 | candidate-moc-cultural-subportals-the-architecture-and-design-caf-20240427-046e2ec1 | linked-existing | event-the-architecture-and-design-caf | already linked to catalog event |
@@ -233,15 +237,15 @@
 | candidate-ithra-events-tinkering-stations-20260819-5a2c4c0e | linked-existing | event-tinkering-stations | already linked to catalog event |
 | candidate-ithra-events-bedayat-beginnings-of-saudi-art-movement-20260819-e0a239ef | linked-existing | event-bedayat-beginnings-of-saudi-art-movement | already linked to catalog event |
 | candidate-ithra-events-echoes-of-the-familiar-20260819-cc43c2bd | linked-existing | event-echoes-of-the-familiar | already linked to catalog event |
-| candidate-ithra-events-spot-of-inspiration-20260819-5bac584c | linked-existing | event-spot-of-inspiration | already linked to catalog event |
-| candidate-ithra-events-childrens-museum-story-time-20260819-ada8b9db | linked-existing | event-childrens-museum-story-time | already linked to catalog event |
 | candidate-ithra-events-childrens-art-studio-20260819-2bf92d17 | linked-existing | event-childrens-art-studio | already linked to catalog event |
-| candidate-ithra-events-emboss-printing-experience-20260819-2671d1ce | linked-existing | event-emboss-printing-experience | already linked to catalog event |
 | candidate-ithra-events-all-things-hedgehogs-20260819-952dc936 | linked-existing | event-all-things-hedgehogs | already linked to catalog event |
 | candidate-ithra-events-energy-lab-20260819-60155d60 | linked-existing | event-energy-lab | already linked to catalog event |
+| candidate-ithra-events-spot-of-inspiration-20260819-5bac584c | linked-existing | event-spot-of-inspiration | already linked to catalog event |
+| candidate-ithra-events-childrens-museum-story-time-20260819-ada8b9db | linked-existing | event-childrens-museum-story-time | already linked to catalog event |
 | candidate-ithra-events-energy-in-motion-20260819-e0404048 | linked-existing | event-energy-in-motion | already linked to catalog event |
 | candidate-ithra-events-clay-shaping-20260819-852b2ff5 | linked-existing | event-clay-shaping | already linked to catalog event |
 | candidate-ithra-events-storyteller-of-the-day-20260819-94528a46 | linked-existing | event-storyteller-of-the-day | already linked to catalog event |
+| candidate-ithra-events-emboss-printing-experience-20260819-2671d1ce | linked-existing | event-emboss-printing-experience | already linked to catalog event |
 | candidate-ithra-events-youth-book-club-20260819-de163fbc | linked-existing | event-youth-book-club | already linked to catalog event |
 | candidate-ithra-events-your-book-in-a-minute-20260819-c8aab584 | linked-existing | event-your-book-in-a-minute | already linked to catalog event |
 | candidate-visit-saudi-calendar-pdf-صد-رد-عرض-ستاند-اب-كوميدي-من-أوس-النفيعي-20260820-4a38d19e | linked-existing | event-صد-رد-عرض-ستاند-اب-كوميدي-من-أوس-النفيعي | already linked to catalog event |
@@ -268,6 +272,7 @@
 | candidate-ithra-events-stories-from-ithras-library-20260821-4116de16 | linked-existing | event-stories-from-ithras-library | already linked to catalog event |
 | candidate-ithra-events-dots-on-letters-20260821-b8901d67 | linked-existing | event-dots-on-letters | already linked to catalog event |
 | candidate-ithra-events-family-game-20260821-fff43c76 | linked-existing | event-family-game | already linked to catalog event |
+| candidate-ithra-events-family-game-20260821-a30cabbd | linked-existing | event-family-game | trusted duplicate linked to existing catalog event |
 | candidate-mdlbeast-events-beast-house-20260821-83049a2a | linked-existing | event-beast-house | already linked to catalog event |
 | candidate-ithra-events-toddler-saturday-20260822-739e1f00 | linked-existing | event-toddler-saturday | already linked to catalog event |
 | candidate-ithra-events-1-2-3-lets-rhyme-20260822-4d37515a | linked-existing | event-1-2-3-lets-rhyme | already linked to catalog event |
@@ -648,7 +653,7 @@
 | candidate-eventbrite-saudi-25th-wpc-energy-congress-20261011-5909609b | blocked | - | unknown category requires review |
 | candidate-visit-saudi-calendar-feena-nehke-stand-up-comedy-by-john-achkar-20261023-221bd8f2 | blocked | - | linked catalog row event-feena-nehke-stand-up-comedy-by-john-achkar was superseded by dedupe |
 | candidate-invest-saudi-events-cityscape-global-2026-20261116-13fbb297 | blocked | event-cityscape-global-2026 | possible duplicate requires review: exact-title-city-venue-conflict |
-| candidate-visit-saudi-calendar-king-abdulaziz-falconry-festival-20261117-d56e3d7f | blocked | event-king-abdulaziz-falconry-festival | possible duplicate requires review: exact-title-city-source-conflict |
+| candidate-visit-saudi-seasons-king-abdulaziz-falconry-festival-20261117-d56e3d7f | blocked | event-king-abdulaziz-falconry-festival | possible duplicate requires review: exact-title-city-source-conflict |
 | candidate-eventbrite-saudi-family-offices-vcs-investment-summit-riyadh-invite-only-20261124-e6c951a4 | blocked | - | unknown category requires review |
 | candidate-riyadh-city-events-music-festival-mdlbeast-soundstorm-20261203-04247702 | blocked | - | linked catalog row event-music-festival-mdlbeast-soundstorm was superseded by dedupe |
 | candidate-eye-of-riyadh-events-real-estate-excellence-award-2026-rea-2026-20270126-5e55ea49 | blocked | - | unknown category requires review |

@@ -1,32 +1,32 @@
 # EventLive Harvest OS Status
 
-- Generated at: 2026-08-19T02:33:16.194Z
+- Generated at: 2026-08-19T13:49:47.522Z
 - Status: NEEDS_WORK
 - Operating rule: Probe before new sources; sample before full harvest; Raw collection is not publication; discovery-only never auto-publishes.
 
 ## Totals
 
 - Sources: 88
-- Candidates: 627
-- Matched candidates: 596
+- Candidates: 632
+- Matched candidates: 601
 - Auto-publish sources: 15
 - Candidate-only sources: 12
 - Partnership-required sources: 5
-- Productive sources / attempted: 20/22
-- Collector errors: 6 (chronic 6, transient 0)
+- Productive sources / attempted: 19/23
+- Collector errors: 7 (chronic 6, transient 1)
 
 ## Publication Funnel
 
 | Stage | Count |
 | --- | --- |
-| discovered_this_run | 309 |
-| candidate_queue | 627 |
-| evaluated_for_publish | 627 |
-| linked_existing | 583 |
-| published_new | 5 |
+| discovered_this_run | 310 |
+| candidate_queue | 632 |
+| evaluated_for_publish | 632 |
+| linked_existing | 584 |
+| published_new | 9 |
 | blocked | 39 |
 | secondary_promoted | 0 |
-| secondary_still_blocked | 33 |
+| secondary_still_blocked | 38 |
 
 ## Blocked Reasons
 
@@ -54,6 +54,7 @@
 | monshaat-events | chronic | 11 | no | collector-error: fetch failed; fetch failed |
 | saudi-pro-league-fixtures | chronic | 8 | no | collector-error: fetch failed |
 | tuwaiq-academy-bootcamps | chronic | 5 | no | collector-error: HTTP 403 |
+| asharqia-chamber-events | transient | 1 | yes | fetch failed; page.goto: Timeout 30000ms exceeded. Call log:   - navigating to "https://www.chamber.org.sa/sites/Arabic/Events/ChamberEvents/Pages/AllChamberEvents.aspx", waiting until "domcontentload |
 
 | Source | Policy | Trust | Gate |
 | --- | --- | --- | --- |

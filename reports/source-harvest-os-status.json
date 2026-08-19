@@ -1,22 +1,22 @@
 {
   "schema": "eventlive.harvest-os-status.v1",
-  "generated_at": "2026-08-19T02:33:16.194Z",
+  "generated_at": "2026-08-19T13:49:47.522Z",
   "status": "NEEDS_WORK",
   "operating_rule": "Probe before new sources; sample before full harvest; Raw collection is not publication; discovery-only never auto-publishes.",
   "totals": {
     "sources": 88,
-    "candidates": 627,
-    "matched_candidates": 596,
+    "candidates": 632,
+    "matched_candidates": 601,
     "auto_publish_sources": 15,
     "candidate_only_sources": 12,
     "partnership_required_sources": 5,
     "blocked_or_closed_sources": 0,
     "manual_review_sources": 56,
-    "collection_attempted": 22,
-    "productive_sources": 20,
-    "collector_errors": 6,
+    "collection_attempted": 23,
+    "productive_sources": 19,
+    "collector_errors": 7,
     "chronic_collector_errors": 6,
-    "transient_collector_errors": 0
+    "transient_collector_errors": 1
   },
   "policies": {
     "partnership_required": 5,
@@ -25,19 +25,19 @@
     "manual_review": 56
   },
   "candidates_by_gate": {
-    "catalog-review": 594,
+    "catalog-review": 599,
     "duplicate-review": 8,
     "source-evidence": 25
   },
   "funnel": {
-    "discovered_this_run": 309,
-    "candidate_queue": 627,
-    "evaluated_for_publish": 627,
-    "linked_existing": 583,
-    "published_new": 5,
+    "discovered_this_run": 310,
+    "candidate_queue": 632,
+    "evaluated_for_publish": 632,
+    "linked_existing": 584,
+    "published_new": 9,
     "blocked": 39,
     "secondary_promoted": 0,
-    "secondary_still_blocked": 33
+    "secondary_still_blocked": 38
   },
   "blocked_reasons": {
     "possible duplicate requires review: exact-title-city-source-conflict": 6,
@@ -94,6 +94,13 @@
       "error_streak": 5,
       "kind": "chronic",
       "attempted_this_run": false
+    },
+    {
+      "id": "asharqia-chamber-events",
+      "note": "fetch failed; page.goto: Timeout 30000ms exceeded. Call log:   - navigating to \"https://www.chamber.org.sa/sites/Arabic/Events/ChamberEvents/Pages/AllChamberEvents.aspx\", waiting until \"domcontentload",
+      "error_streak": 1,
+      "kind": "transient",
+      "attempted_this_run": true
     }
   ],
   "sources": [
