@@ -1,18 +1,18 @@
 {
-  "published_at": "2026-08-20T07:17:15.385Z",
+  "published_at": "2026-08-20T13:36:47.818Z",
   "dry_run": false,
   "include_partner": true,
   "source_candidates": "data/source_candidates.json",
   "events_catalog": "data/events_catalog.json",
-  "candidates_seen": 625,
+  "candidates_seen": 626,
   "totals": {
-    "candidates_seen": 625,
-    "published": 6,
-    "linked_existing": 579,
+    "candidates_seen": 626,
+    "published": 5,
+    "linked_existing": 581,
     "blocked": 40,
     "duplicate_review_alerts": 8,
     "category_fallback_alerts": 0,
-    "reconciled": 585
+    "reconciled": 586
   },
   "category_fallback_alerts": [],
   "duplicate_catalog_rows_removed": 0,
@@ -187,11 +187,6 @@
       "candidate_id": "candidate-visit-saudi-calendar-pdf-عروض-الفنون-الأدائية-التقليدية-20260706-4a38d19e",
       "event_id": "event-عروض-الفنون-الأدائية-التقليدية",
       "title": "عروض الفنون الأدائية التقليدية"
-    },
-    {
-      "candidate_id": "candidate-ithra-events-letter-by-letter-20260904-df94a427",
-      "event_id": "event-letter-by-letter",
-      "title": "Letter by Letter"
     }
   ],
   "linked_existing": [
@@ -1402,45 +1397,15 @@
       "reason": "already linked to catalog event"
     },
     {
-      "candidate_id": "candidate-ithra-events-spot-of-inspiration-20260820-5bac584c",
-      "event_id": "event-spot-of-inspiration",
-      "title": "Spot of Inspiration",
-      "reason": "already linked to catalog event"
-    },
-    {
-      "candidate_id": "candidate-ithra-events-childrens-museum-story-time-20260820-ada8b9db",
-      "event_id": "event-childrens-museum-story-time",
-      "title": "Children's Museum Story Time",
+      "candidate_id": "candidate-ithra-events-little-explorers-20260820-1cc1993f",
+      "event_id": "event-little-explorers",
+      "title": "Little Explorers",
       "reason": "already linked to catalog event"
     },
     {
       "candidate_id": "candidate-ithra-events-childrens-art-studio-20260820-2bf92d17",
       "event_id": "event-childrens-art-studio",
       "title": "Children's Art Studio",
-      "reason": "already linked to catalog event"
-    },
-    {
-      "candidate_id": "candidate-ithra-events-family-challenges-20260820-3726c868",
-      "event_id": "event-family-challenges",
-      "title": "Family Challenges",
-      "reason": "already linked to catalog event"
-    },
-    {
-      "candidate_id": "candidate-ithra-events-tangram-20260820-9a9db6cb",
-      "event_id": "event-tangram",
-      "title": "Tangram",
-      "reason": "already linked to catalog event"
-    },
-    {
-      "candidate_id": "candidate-ithra-events-emboss-printing-experience-20260820-2671d1ce",
-      "event_id": "event-emboss-printing-experience",
-      "title": "Emboss Printing Experience",
-      "reason": "already linked to catalog event"
-    },
-    {
-      "candidate_id": "candidate-ithra-events-little-explorers-20260820-1cc1993f",
-      "event_id": "event-little-explorers",
-      "title": "Little Explorers",
       "reason": "already linked to catalog event"
     },
     {
@@ -1480,6 +1445,30 @@
       "reason": "already linked to catalog event"
     },
     {
+      "candidate_id": "candidate-ithra-events-spot-of-inspiration-20260820-5bac584c",
+      "event_id": "event-spot-of-inspiration",
+      "title": "Spot of Inspiration",
+      "reason": "already linked to catalog event"
+    },
+    {
+      "candidate_id": "candidate-ithra-events-childrens-museum-story-time-20260820-ada8b9db",
+      "event_id": "event-childrens-museum-story-time",
+      "title": "Children's Museum Story Time",
+      "reason": "already linked to catalog event"
+    },
+    {
+      "candidate_id": "candidate-ithra-events-family-challenges-20260820-3726c868",
+      "event_id": "event-family-challenges",
+      "title": "Family Challenges",
+      "reason": "already linked to catalog event"
+    },
+    {
+      "candidate_id": "candidate-ithra-events-emboss-printing-experience-20260820-2671d1ce",
+      "event_id": "event-emboss-printing-experience",
+      "title": "Emboss Printing Experience",
+      "reason": "already linked to catalog event"
+    },
+    {
       "candidate_id": "candidate-ithra-events-grand-art-space-20260820-e3acefbb",
       "event_id": "event-grand-art-space",
       "title": "Grand Art Space",
@@ -1489,6 +1478,12 @@
       "candidate_id": "candidate-ithra-events-museum-story-time-20260820-1104734c",
       "event_id": "event-museum-story-time",
       "title": "Museum Story Time",
+      "reason": "already linked to catalog event"
+    },
+    {
+      "candidate_id": "candidate-ithra-events-tangram-20260820-9a9db6cb",
+      "event_id": "event-tangram",
+      "title": "Tangram",
       "reason": "already linked to catalog event"
     },
     {
@@ -1810,10 +1805,16 @@
       "reason": "already linked to catalog event"
     },
     {
-      "candidate_id": "candidate-hayy-jameel-events-community-garden-from-soil-to-seed-basics-to-growing-your-own-plants-wit-20260828-cf3d5071",
+      "candidate_id": "candidate-hayy-jameel-events-community-garden-from-soil-to-seed-foundations-of-composting-with-sara-a-20260828-cf3d5071",
       "event_id": "event-community-garden-from-soil-to-seed-basics-to-growing-your-own-plants-wit",
-      "title": "Community Garden | From Soil to Seed: Basics to growing your own plants with Sara Alsayed",
+      "title": "Community Garden | From Soil to Seed: Foundations of Composting with Sara Alsayed",
       "reason": "already linked to catalog event"
+    },
+    {
+      "candidate_id": "candidate-hayy-jameel-events-hayy-markets-the-bakers-market-a-collaboration-between-aysh-academy-and--20260828-f70be1a2",
+      "event_id": "event-community-garden-from-soil-to-seed-basics-to-growing-your-own-plants-wit",
+      "title": "Hayy Markets | The Bakers Market: A Collaboration Between Aysh Academy and Art Jameel",
+      "reason": "trusted duplicate linked to existing catalog event"
     },
     {
       "candidate_id": "candidate-ithra-events-open-art-space-20260828-40aac166",
@@ -2047,6 +2048,12 @@
       "candidate_id": "candidate-visit-saudi-calendar-pdf-ستاند-أب-كوميدي-وعرض-تفاعلي-مع-صلاح-الدالي-20260904-4a38d19e",
       "event_id": "event-ستاند-أب-كوميدي-وعرض-تفاعلي-مع-صلاح-الدالي",
       "title": "ستاند أب كوميدي وعرض تفاعلي مع صلاح الدالي",
+      "reason": "already linked to catalog event"
+    },
+    {
+      "candidate_id": "candidate-ithra-events-letter-by-letter-20260904-df94a427",
+      "event_id": "event-letter-by-letter",
+      "title": "Letter by Letter",
       "reason": "already linked to catalog event"
     },
     {

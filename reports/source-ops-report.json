@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-20T07:22:04.365Z",
+  "generated_at": "2026-08-20T13:40:39.849Z",
   "files": {
     "registry": "data/source_registry.json",
     "candidates": "data/source_candidates.json",
@@ -11,25 +11,25 @@
   },
   "collection": {
     "basis": "source_collection_report_adaptive",
-    "collected_at": "2026-08-20T07:11:49.376Z",
+    "collected_at": "2026-08-20T13:29:12.764Z",
     "freshness": "fresh",
-    "discovered": 230,
-    "written": 625
+    "discovered": 298,
+    "written": 626
   },
   "sources": {
     "total": 88,
-    "attempted": 20,
-    "due": 20,
-    "deferred": 28,
+    "attempted": 23,
+    "due": 23,
+    "deferred": 25,
     "scheduled": 48,
     "runnable": 48,
     "collection_coverage_pct": 100,
-    "registry_collection_coverage_pct": 23,
+    "registry_collection_coverage_pct": 26,
     "scheduled_runnable_coverage_pct": 100,
     "healthy": 18,
-    "zero_yield": 2,
-    "errors": 0,
-    "cadence_deferred": 28,
+    "zero_yield": 3,
+    "errors": 2,
+    "cadence_deferred": 25,
     "not_collected": 40,
     "unattempted_high_priority": 3,
     "health": [
@@ -439,16 +439,13 @@
         "id": "saudi-space-agency-events",
         "name": "Saudi Space Agency Events",
         "priority": 32,
-        "status": "deferred",
-        "historical_status": "collector-error",
-        "cadence_reason": "error-cooldown",
-        "next_due_at": "2026-08-20T07:56:39.233Z",
-        "error_streak": 1,
+        "status": "healthy",
+        "error_streak": 0,
         "zero_yield_streak": 0,
-        "last_attempted_at": "2026-08-20T01:56:39.233Z",
-        "extracted": 0,
+        "last_attempted_at": null,
+        "extracted": 1,
         "candidates": 1,
-        "next_action": "مؤجل حتى 2026-08-20T07:56:39.233Z وفق الجدولة التكيفية."
+        "next_action": "استمر بالمراجعة والتكرار قبل النشر."
       },
       {
         "id": "cst-events-news",
@@ -466,16 +463,13 @@
         "id": "visit-saudi-calendar-pdf",
         "name": "Visit Saudi Summer Calendar PDF",
         "priority": 34,
-        "status": "deferred",
-        "historical_status": "probe-blocked",
-        "cadence_reason": "error-cooldown",
-        "next_due_at": "2026-08-20T07:56:39.233Z",
+        "status": "healthy",
         "error_streak": 0,
         "zero_yield_streak": 0,
-        "last_attempted_at": "2026-08-20T01:56:39.233Z",
-        "extracted": 0,
+        "last_attempted_at": null,
+        "extracted": 79,
         "candidates": 90,
-        "next_action": "مؤجل حتى 2026-08-20T07:56:39.233Z وفق الجدولة التكيفية."
+        "next_action": "استمر بالمراجعة والتكرار قبل النشر."
       },
       {
         "id": "qiddiya-events",
@@ -532,13 +526,16 @@
         "id": "discover-aseer-events",
         "name": "Discover Aseer Events",
         "priority": 39,
-        "status": "zero-yield",
+        "status": "deferred",
+        "historical_status": "zero-yield",
+        "cadence_reason": "zero-yield-cooldown",
+        "next_due_at": "2026-08-21T07:11:49.376Z",
         "error_streak": 0,
-        "zero_yield_streak": 0,
-        "last_attempted_at": null,
+        "zero_yield_streak": 5,
+        "last_attempted_at": "2026-08-20T07:11:49.376Z",
         "extracted": 0,
         "candidates": 32,
-        "next_action": "Recovered via live-browser-recovery official evidence. Primary page failed: HTTP 404. No future date-complete candidates found by the conservative extractor."
+        "next_action": "مؤجل حتى 2026-08-21T07:11:49.376Z وفق الجدولة التكيفية."
       },
       {
         "id": "diriyah-season",
@@ -643,16 +640,13 @@
         "id": "sfda-events",
         "name": "Saudi Food and Drug Authority Events",
         "priority": 48,
-        "status": "deferred",
-        "historical_status": "zero-yield",
-        "cadence_reason": "zero-yield-cooldown",
-        "next_due_at": "2026-08-20T13:27:16.989Z",
+        "status": "zero-yield",
         "error_streak": 0,
-        "zero_yield_streak": 6,
-        "last_attempted_at": "2026-08-19T13:27:16.989Z",
+        "zero_yield_streak": 0,
+        "last_attempted_at": null,
         "extracted": 0,
         "candidates": 2,
-        "next_action": "مؤجل حتى 2026-08-20T13:27:16.989Z وفق الجدولة التكيفية."
+        "next_action": "No future date-complete candidates found by the conservative extractor."
       },
       {
         "id": "saudi-contractors-authority-events",
@@ -682,16 +676,13 @@
         "id": "riyadh-city-events",
         "name": "Riyadh City Events",
         "priority": 51,
-        "status": "deferred",
-        "historical_status": "probe-blocked",
-        "cadence_reason": "error-cooldown",
-        "next_due_at": "2026-08-20T07:56:39.233Z",
+        "status": "zero-yield",
         "error_streak": 0,
         "zero_yield_streak": 0,
-        "last_attempted_at": "2026-08-20T01:56:39.233Z",
+        "last_attempted_at": null,
         "extracted": 0,
         "candidates": 74,
-        "next_action": "مؤجل حتى 2026-08-20T07:56:39.233Z وفق الجدولة التكيفية."
+        "next_action": "No future date-complete candidates found by the conservative extractor."
       },
       {
         "id": "monshaat-academy-programs",
@@ -784,28 +775,25 @@
         "id": "asharqia-chamber-events",
         "name": "Asharqia Chamber Events",
         "priority": 59,
-        "status": "healthy",
+        "status": "collection-error",
         "error_streak": 0,
         "zero_yield_streak": 0,
         "last_attempted_at": null,
-        "extracted": 4,
+        "extracted": 0,
         "candidates": 4,
-        "next_action": "استمر بالمراجعة والتكرار قبل النشر."
+        "next_action": "fetch failed; page.goto: Timeout 30000ms exceeded.\nCall log:\n  - navigating to \"https://www.chamber.org.sa/sites/Arabic/Events/ChamberEvents/Pages/AllChamberEvents.aspx\", waiting until \"domcontentloaded\"\n"
       },
       {
         "id": "qassim-chamber-events",
         "name": "Qassim Chamber Events",
         "priority": 60,
-        "status": "deferred",
-        "historical_status": "zero-yield",
-        "cadence_reason": "zero-yield-cooldown",
-        "next_due_at": "2026-08-20T13:13:35.733Z",
+        "status": "zero-yield",
         "error_streak": 0,
-        "zero_yield_streak": 12,
-        "last_attempted_at": "2026-08-17T13:13:35.733Z",
+        "zero_yield_streak": 0,
+        "last_attempted_at": null,
         "extracted": 0,
         "candidates": 0,
-        "next_action": "مؤجل حتى 2026-08-20T13:13:35.733Z وفق الجدولة التكيفية."
+        "next_action": "Recovered via live-browser-recovery official evidence. Primary page failed: HTTP 403. No future date-complete candidates found by the conservative extractor."
       },
       {
         "id": "abha-chamber-events",
@@ -943,13 +931,16 @@
         "id": "najran-municipality-summer-events",
         "name": "Najran Municipality Summer Events",
         "priority": 71,
-        "status": "zero-yield",
+        "status": "deferred",
+        "historical_status": "zero-yield",
+        "cadence_reason": "zero-yield-cooldown",
+        "next_due_at": "2026-08-23T07:11:49.376Z",
         "error_streak": 0,
-        "zero_yield_streak": 0,
-        "last_attempted_at": null,
+        "zero_yield_streak": 16,
+        "last_attempted_at": "2026-08-20T07:11:49.376Z",
         "extracted": 0,
         "candidates": 0,
-        "next_action": "No future date-complete candidates found by the conservative extractor."
+        "next_action": "مؤجل حتى 2026-08-23T07:11:49.376Z وفق الجدولة التكيفية."
       },
       {
         "id": "platinumlist-saudi-city-network",
@@ -1003,13 +994,13 @@
         "id": "umm-al-qura-events",
         "name": "Umm Al-Qura University Events Center",
         "priority": 76,
-        "status": "healthy",
+        "status": "collection-error",
         "error_streak": 0,
         "zero_yield_streak": 0,
         "last_attempted_at": null,
-        "extracted": 9,
+        "extracted": 0,
         "candidates": 56,
-        "next_action": "استمر بالمراجعة والتكرار قبل النشر."
+        "next_action": "The operation was aborted due to timeout; page.goto: Timeout 30000ms exceeded.\nCall log:\n  - navigating to \"https://uqu.edu.sa/App/Events\", waiting until \"domcontentloaded\"\n"
       },
       {
         "id": "leap-official-agendas",
@@ -1124,8 +1115,8 @@
         "error_streak": 0,
         "zero_yield_streak": 0,
         "last_attempted_at": null,
-        "extracted": 21,
-        "candidates": 74,
+        "extracted": 22,
+        "candidates": 75,
         "next_action": "استمر بالمراجعة والتكرار قبل النشر."
       },
       {
@@ -1176,28 +1167,28 @@
     ]
   },
   "queue": {
-    "total": 625,
+    "total": 626,
     "ready_for_review": 8,
     "approved_for_catalog": 0,
-    "published_from_candidates": 592,
+    "published_from_candidates": 593,
     "actionable": 8,
     "stale_unpublished": 0,
     "duplicate_risk": 8,
     "needs_extraction": 0,
     "needs_evidence": 25,
     "by_review_status": {
-      "approved-for-catalog": 592,
+      "approved-for-catalog": 593,
       "ready-for-review": 8,
       "evidence-captured": 17,
       "new": 8
     },
     "by_publication_gate": {
-      "catalog-review": 592,
+      "catalog-review": 593,
       "duplicate-review": 8,
       "source-evidence": 25
     },
     "by_confidence": {
-      "official": 586,
+      "official": 587,
       "public-listing": 20,
       "verified-secondary": 11,
       "unverified": 8
@@ -1215,7 +1206,7 @@
       "Visit Saudi Summer Calendar PDF": 90,
       "Discover Aseer Events": 32,
       "Visit Saudi Seasons": 28,
-      "Hayy Jameel What's On": 74,
+      "Hayy Jameel What's On": 75,
       "Tuwaiq Academy Bootcamps and Programs": 37,
       "Eye of Riyadh Events": 6,
       "Saudicon Events": 14,
@@ -1463,7 +1454,7 @@
         "discovery_notes": "",
         "duplicate_risk": false,
         "matched_catalog_event_id": "",
-        "days_to_start": 11,
+        "days_to_start": 10,
         "is_past": false,
         "is_actionable": false,
         "action": "دليل اكتشاف فقط؛ لا ينشر آلياً حتى يثبت من مصدر رسمي.",
@@ -1669,7 +1660,7 @@
         "discovery_notes": "saudi-location-signal, specific-venue, event-topic-fit",
         "duplicate_risk": false,
         "matched_catalog_event_id": "",
-        "days_to_start": 17,
+        "days_to_start": 16,
         "is_past": false,
         "is_actionable": false,
         "action": "دليل اكتشاف فقط؛ لا ينشر آلياً حتى يثبت من مصدر رسمي.",

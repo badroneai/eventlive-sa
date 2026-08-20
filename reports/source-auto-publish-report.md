@@ -1,11 +1,11 @@
 # EventLive Source Auto Publish Report
 
-- published_at: 2026-08-20T07:17:15.385Z
+- published_at: 2026-08-20T13:36:47.818Z
 - dry_run: false
 - include_partner: true
-- candidates_seen: 625
-- published_new: 6
-- linked_existing: 579
+- candidates_seen: 626
+- published_new: 5
+- linked_existing: 581
 - blocked_remaining: 40
 - duplicate_review_alerts: 8
 
@@ -31,7 +31,6 @@
 | candidate-visit-saudi-calendar-pdf-مزرعة-التوت-الأسود-20260701-4a38d19e | published | event-مزرعة-التوت-الأسود | مزرعة التوت الأسود |
 | candidate-visit-saudi-calendar-pdf-الأخطبوطية-20260704-4a38d19e | published | event-الأخطبوطية | الأخطبوطية |
 | candidate-visit-saudi-calendar-pdf-عروض-الفنون-الأدائية-التقليدية-20260706-4a38d19e | published | event-عروض-الفنون-الأدائية-التقليدية | عروض الفنون الأدائية التقليدية |
-| candidate-ithra-events-letter-by-letter-20260904-df94a427 | published | event-letter-by-letter | Letter by Letter |
 | candidate-moc-cultural-subportals-skill-development-initiative-20210714-10f7dc2c | linked-existing | event-skill-development-initiative | already linked to catalog event |
 | candidate-moc-cultural-subportals-sitar-20220921-cda2e068 | linked-existing | event-sitar | already linked to catalog event |
 | candidate-moc-cultural-subportals-the-architecture-and-design-caf-20240427-046e2ec1 | linked-existing | event-the-architecture-and-design-caf | already linked to catalog event |
@@ -233,21 +232,21 @@
 | candidate-ithra-events-printing-house-20260820-e56f4f89 | linked-existing | event-printing-house | already linked to catalog event |
 | candidate-ithra-events-tafasahu-make-room-20260820-562bc61d | linked-existing | event-tafasahu-make-room | already linked to catalog event |
 | candidate-ithra-events-tinkering-stations-20260820-5a2c4c0e | linked-existing | event-tinkering-stations | already linked to catalog event |
-| candidate-ithra-events-spot-of-inspiration-20260820-5bac584c | linked-existing | event-spot-of-inspiration | already linked to catalog event |
-| candidate-ithra-events-childrens-museum-story-time-20260820-ada8b9db | linked-existing | event-childrens-museum-story-time | already linked to catalog event |
-| candidate-ithra-events-childrens-art-studio-20260820-2bf92d17 | linked-existing | event-childrens-art-studio | already linked to catalog event |
-| candidate-ithra-events-family-challenges-20260820-3726c868 | linked-existing | event-family-challenges | already linked to catalog event |
-| candidate-ithra-events-tangram-20260820-9a9db6cb | linked-existing | event-tangram | already linked to catalog event |
-| candidate-ithra-events-emboss-printing-experience-20260820-2671d1ce | linked-existing | event-emboss-printing-experience | already linked to catalog event |
 | candidate-ithra-events-little-explorers-20260820-1cc1993f | linked-existing | event-little-explorers | already linked to catalog event |
+| candidate-ithra-events-childrens-art-studio-20260820-2bf92d17 | linked-existing | event-childrens-art-studio | already linked to catalog event |
 | candidate-visit-saudi-seasons-buraydah-international-dates-carnival-activites-20260820-9a218560 | linked-existing | event-buraydah-international-dates-carnival-activites | already linked to catalog event |
 | candidate-ithra-events-games-hub-20260820-fb83124c | linked-existing | event-games-hub | already linked to catalog event |
 | candidate-visit-saudi-seasons-buraydah-international-dates-carnival-activites-20260820-a82ecd17 | linked-existing | event-buraydah-international-dates-carnival-activites | already linked to catalog event |
 | candidate-visit-saudi-seasons-unaizah-international-dates-carnival-20260820-612474e4 | linked-existing | event-unaizah-international-dates-carnival | already linked to catalog event |
 | candidate-ithra-events-nu-power-20260820-653464ac | linked-existing | event-nu-power | already linked to catalog event |
 | candidate-ithra-events-the-moral-of-the-story-20260820-bfa3f2a8 | linked-existing | event-the-moral-of-the-story | already linked to catalog event |
+| candidate-ithra-events-spot-of-inspiration-20260820-5bac584c | linked-existing | event-spot-of-inspiration | already linked to catalog event |
+| candidate-ithra-events-childrens-museum-story-time-20260820-ada8b9db | linked-existing | event-childrens-museum-story-time | already linked to catalog event |
+| candidate-ithra-events-family-challenges-20260820-3726c868 | linked-existing | event-family-challenges | already linked to catalog event |
+| candidate-ithra-events-emboss-printing-experience-20260820-2671d1ce | linked-existing | event-emboss-printing-experience | already linked to catalog event |
 | candidate-ithra-events-grand-art-space-20260820-e3acefbb | linked-existing | event-grand-art-space | already linked to catalog event |
 | candidate-ithra-events-museum-story-time-20260820-1104734c | linked-existing | event-museum-story-time | already linked to catalog event |
+| candidate-ithra-events-tangram-20260820-9a9db6cb | linked-existing | event-tangram | already linked to catalog event |
 | candidate-visit-saudi-calendar-pdf-عرض-this-is-michael-الموسيقي-20260821-4a38d19e | linked-existing | event-عرض-this-is-michael-الموسيقي | already linked to catalog event |
 | candidate-visit-saudi-calendar-pdf-ليلة-ستانداب-كوميدي-في-جدة-20260821-4a38d19e | linked-existing | event-ليلة-ستانداب-كوميدي-في-جدة | already linked to catalog event |
 | candidate-visit-saudi-calendar-pdf-الخطة-c-مع-رضوان-الريمي-ليلة-كوميدية-طربية-20260821-4a38d19e | linked-existing | event-الخطة-c-مع-رضوان-الريمي-ليلة-كوميدية-طربية | already linked to catalog event |
@@ -301,7 +300,8 @@
 | candidate-ithra-events-trivia-night-earth-quest-tic-tac-know-20260827-ef7080ff | linked-existing | event-trivia-night-earth-quest-tic-tac-know | already linked to catalog event |
 | candidate-ithra-events-art-in-virtual-motion-20260827-3acf52ef | linked-existing | event-art-in-virtual-motion | already linked to catalog event |
 | candidate-ithra-events-swim-r-mission-20260827-f8a6c05c | linked-existing | event-swim-r-mission | already linked to catalog event |
-| candidate-hayy-jameel-events-community-garden-from-soil-to-seed-basics-to-growing-your-own-plants-wit-20260828-cf3d5071 | linked-existing | event-community-garden-from-soil-to-seed-basics-to-growing-your-own-plants-wit | already linked to catalog event |
+| candidate-hayy-jameel-events-community-garden-from-soil-to-seed-foundations-of-composting-with-sara-a-20260828-cf3d5071 | linked-existing | event-community-garden-from-soil-to-seed-basics-to-growing-your-own-plants-wit | already linked to catalog event |
+| candidate-hayy-jameel-events-hayy-markets-the-bakers-market-a-collaboration-between-aysh-academy-and--20260828-f70be1a2 | linked-existing | event-community-garden-from-soil-to-seed-basics-to-growing-your-own-plants-wit | trusted duplicate linked to existing catalog event |
 | candidate-ithra-events-open-art-space-20260828-40aac166 | linked-existing | event-open-art-space | already linked to catalog event |
 | candidate-hayy-jameel-events-hayy-sounds-drumming-circle-with-saif-halal-20260829-e1fc9366 | linked-existing | event-hayy-sounds-drumming-circle-with-saif-halal | already linked to catalog event |
 | candidate-saudi-university-events-summer-splash-at-south-beach-20260829-6ccdbbf8 | linked-existing | event-summer-splash-at-south-beach | already linked to catalog event |
@@ -341,6 +341,7 @@
 | candidate-visit-saudi-calendar-spacetoon-memories-with-assem-sukkar-20260903-e6578586 | linked-existing | event-spacetoon-memories-with-assem-sukkar | already linked to catalog event |
 | candidate-visit-saudi-calendar-pdf-حفلة-محمد-حماقي-20260904-4a38d19e | linked-existing | event-concert-mohamed-hamaki | already linked to catalog event |
 | candidate-visit-saudi-calendar-pdf-ستاند-أب-كوميدي-وعرض-تفاعلي-مع-صلاح-الدالي-20260904-4a38d19e | linked-existing | event-ستاند-أب-كوميدي-وعرض-تفاعلي-مع-صلاح-الدالي | already linked to catalog event |
+| candidate-ithra-events-letter-by-letter-20260904-df94a427 | linked-existing | event-letter-by-letter | already linked to catalog event |
 | candidate-misk-hub-programs-the-innovation-diwan-20260905-6f9de2e0 | linked-existing | event-the-innovation-diwan | already linked to catalog event |
 | candidate-riyadh-city-events-saudi-food-manufacturing-show-20260905-470e03a4 | linked-existing | event-saudi-food-manufacturing-show | already linked to catalog event |
 | candidate-misk-hub-programs-misk-launchpad-20260906-9e767f23 | linked-existing | event-misk-launchpad | already linked to catalog event |

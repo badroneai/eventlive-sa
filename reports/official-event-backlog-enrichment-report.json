@@ -1,23 +1,13 @@
 {
-  "generated_at": "2026-08-20T07:20:39.201Z",
+  "generated_at": "2026-08-20T13:39:42.190Z",
   "totals": {
-    "targets": 6,
-    "enriched": 6,
-    "fetched": 1,
-    "images": 6,
+    "targets": 5,
+    "enriched": 5,
+    "fetched": 0,
+    "images": 5,
     "fetch_failures": 5
   },
   "enriched": [
-    {
-      "id": "event-letter-by-letter",
-      "title": "Letter by Letter",
-      "source_label": "Ithra Events",
-      "source_method": "official-public-algolia-index",
-      "source_url": "https://www.ithra.com/en/programme/2024/letter-letter",
-      "fetched": true,
-      "image": true,
-      "fetch_reason": ""
-    },
     {
       "id": "event-الأخطبوطية",
       "title": "الاخطبوطية",
