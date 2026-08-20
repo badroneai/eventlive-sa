@@ -1,11 +1,11 @@
 {
-  "generated_at": "2026-08-20T02:09:43.394Z",
+  "generated_at": "2026-08-20T07:21:09.615Z",
   "source_ops_report": "reports/source-ops-report.json",
   "source_registry": "data/source_registry.json",
   "totals": {
     "leads_seen": 10,
     "tasks": 5,
-    "high_priority": 3
+    "high_priority": 4
   },
   "tasks": [
     {
@@ -195,6 +195,99 @@
       "next_action": "ابحث في المصادر الرسمية المستهدفة واربط lead بمصدر رسمي قبل أي نشر."
     },
     {
+      "lead_id": "candidate-eventbrite-saudi-sucession-planning-program-20260903-d2b52d25",
+      "title": "Sucession Planning Program",
+      "city": "Riyadh",
+      "starts_at": "2026-09-03T10:00:00+03:00",
+      "source_label": "Eventbrite Saudi Arabia",
+      "discovery_quality": "strong-lead",
+      "discovery_score": 70,
+      "discovery_notes": "saudi-location-signal, specific-venue, event-topic-fit",
+      "resolver_priority": 122,
+      "target_sources": [
+        {
+          "id": "code-mcit-programs",
+          "name": "CODE MCIT Programs",
+          "url": "https://code.mcit.gov.sa/en/our-programs",
+          "domain": "code.mcit.gov.sa",
+          "trust_level": "official",
+          "source_type": "government-calendar",
+          "score": 28
+        },
+        {
+          "id": "cst-events-news",
+          "name": "CST Events and News",
+          "url": "https://www.cst.gov.sa/en",
+          "domain": "cst.gov.sa",
+          "trust_level": "official",
+          "source_type": "government-calendar",
+          "score": 28
+        },
+        {
+          "id": "diriyah-season",
+          "name": "Diriyah Season",
+          "url": "https://diriyahseason.sa/en",
+          "domain": "diriyahseason.sa",
+          "trust_level": "official",
+          "source_type": "organizer-calendar",
+          "score": 28
+        },
+        {
+          "id": "enjoy-saudi-events",
+          "name": "Enjoy Saudi Events",
+          "url": "https://enjoy.sa/ar/",
+          "domain": "enjoy.sa",
+          "trust_level": "official",
+          "source_type": "government-calendar",
+          "score": 28
+        },
+        {
+          "id": "fii10-official-program",
+          "name": "FII 10th Edition Official Program",
+          "url": "https://fii-institute.org/conference/fii-10th-edition/",
+          "domain": "fii-institute.org",
+          "trust_level": "official",
+          "source_type": "conference-organizer",
+          "score": 28
+        }
+      ],
+      "searches": [
+        {
+          "query": "site:code.mcit.gov.sa \"Sucession Planning Program\" \"Riyadh\"",
+          "url": "https://www.google.com/search?q=site%3Acode.mcit.gov.sa%20%22Sucession%20Planning%20Program%22%20%22Riyadh%22"
+        },
+        {
+          "query": "site:cst.gov.sa \"Sucession Planning Program\" \"Riyadh\"",
+          "url": "https://www.google.com/search?q=site%3Acst.gov.sa%20%22Sucession%20Planning%20Program%22%20%22Riyadh%22"
+        },
+        {
+          "query": "site:diriyahseason.sa \"Sucession Planning Program\" \"Riyadh\"",
+          "url": "https://www.google.com/search?q=site%3Adiriyahseason.sa%20%22Sucession%20Planning%20Program%22%20%22Riyadh%22"
+        },
+        {
+          "query": "site:enjoy.sa \"Sucession Planning Program\" \"Riyadh\"",
+          "url": "https://www.google.com/search?q=site%3Aenjoy.sa%20%22Sucession%20Planning%20Program%22%20%22Riyadh%22"
+        },
+        {
+          "query": "site:fii-institute.org \"Sucession Planning Program\" \"Riyadh\"",
+          "url": "https://www.google.com/search?q=site%3Afii-institute.org%20%22Sucession%20Planning%20Program%22%20%22Riyadh%22"
+        },
+        {
+          "query": "\"Sucession Planning Program\" \"Riyadh\" official",
+          "url": "https://www.google.com/search?q=%22Sucession%20Planning%20Program%22%20%22Riyadh%22%20official"
+        },
+        {
+          "query": "\"Sucession Planning Program\" \"Riyadh\" organizer",
+          "url": "https://www.google.com/search?q=%22Sucession%20Planning%20Program%22%20%22Riyadh%22%20organizer"
+        },
+        {
+          "query": "\"Sucession Planning Program\" \"Riyadh\" tickets",
+          "url": "https://www.google.com/search?q=%22Sucession%20Planning%20Program%22%20%22Riyadh%22%20tickets"
+        }
+      ],
+      "next_action": "ابحث في المصادر الرسمية المستهدفة واربط lead بمصدر رسمي قبل أي نشر."
+    },
+    {
       "lead_id": "candidate-eventbrite-saudi-jeddah-fintech-week-2026-20260905-8e9a03b6",
       "title": "Jeddah Fintech Week 2026",
       "city": "Jeddah",
@@ -283,99 +376,6 @@
         {
           "query": "\"Jeddah Fintech Week 2026\" \"Jeddah\" tickets",
           "url": "https://www.google.com/search?q=%22Jeddah%20Fintech%20Week%202026%22%20%22Jeddah%22%20tickets"
-        }
-      ],
-      "next_action": "ابحث في المصادر الرسمية المستهدفة واربط lead بمصدر رسمي قبل أي نشر."
-    },
-    {
-      "lead_id": "candidate-eventbrite-saudi-sucession-planning-program-20260903-d2b52d25",
-      "title": "Sucession Planning Program",
-      "city": "Riyadh",
-      "starts_at": "2026-09-03T10:00:00+03:00",
-      "source_label": "Eventbrite Saudi Arabia",
-      "discovery_quality": "strong-lead",
-      "discovery_score": 70,
-      "discovery_notes": "saudi-location-signal, specific-venue, event-topic-fit",
-      "resolver_priority": 109,
-      "target_sources": [
-        {
-          "id": "code-mcit-programs",
-          "name": "CODE MCIT Programs",
-          "url": "https://code.mcit.gov.sa/en/our-programs",
-          "domain": "code.mcit.gov.sa",
-          "trust_level": "official",
-          "source_type": "government-calendar",
-          "score": 28
-        },
-        {
-          "id": "cst-events-news",
-          "name": "CST Events and News",
-          "url": "https://www.cst.gov.sa/en",
-          "domain": "cst.gov.sa",
-          "trust_level": "official",
-          "source_type": "government-calendar",
-          "score": 28
-        },
-        {
-          "id": "diriyah-season",
-          "name": "Diriyah Season",
-          "url": "https://diriyahseason.sa/en",
-          "domain": "diriyahseason.sa",
-          "trust_level": "official",
-          "source_type": "organizer-calendar",
-          "score": 28
-        },
-        {
-          "id": "enjoy-saudi-events",
-          "name": "Enjoy Saudi Events",
-          "url": "https://enjoy.sa/ar/",
-          "domain": "enjoy.sa",
-          "trust_level": "official",
-          "source_type": "government-calendar",
-          "score": 28
-        },
-        {
-          "id": "fii10-official-program",
-          "name": "FII 10th Edition Official Program",
-          "url": "https://fii-institute.org/conference/fii-10th-edition/",
-          "domain": "fii-institute.org",
-          "trust_level": "official",
-          "source_type": "conference-organizer",
-          "score": 28
-        }
-      ],
-      "searches": [
-        {
-          "query": "site:code.mcit.gov.sa \"Sucession Planning Program\" \"Riyadh\"",
-          "url": "https://www.google.com/search?q=site%3Acode.mcit.gov.sa%20%22Sucession%20Planning%20Program%22%20%22Riyadh%22"
-        },
-        {
-          "query": "site:cst.gov.sa \"Sucession Planning Program\" \"Riyadh\"",
-          "url": "https://www.google.com/search?q=site%3Acst.gov.sa%20%22Sucession%20Planning%20Program%22%20%22Riyadh%22"
-        },
-        {
-          "query": "site:diriyahseason.sa \"Sucession Planning Program\" \"Riyadh\"",
-          "url": "https://www.google.com/search?q=site%3Adiriyahseason.sa%20%22Sucession%20Planning%20Program%22%20%22Riyadh%22"
-        },
-        {
-          "query": "site:enjoy.sa \"Sucession Planning Program\" \"Riyadh\"",
-          "url": "https://www.google.com/search?q=site%3Aenjoy.sa%20%22Sucession%20Planning%20Program%22%20%22Riyadh%22"
-        },
-        {
-          "query": "site:fii-institute.org \"Sucession Planning Program\" \"Riyadh\"",
-          "url": "https://www.google.com/search?q=site%3Afii-institute.org%20%22Sucession%20Planning%20Program%22%20%22Riyadh%22"
-        },
-        {
-          "query": "\"Sucession Planning Program\" \"Riyadh\" official",
-          "url": "https://www.google.com/search?q=%22Sucession%20Planning%20Program%22%20%22Riyadh%22%20official"
-        },
-        {
-          "query": "\"Sucession Planning Program\" \"Riyadh\" organizer",
-          "url": "https://www.google.com/search?q=%22Sucession%20Planning%20Program%22%20%22Riyadh%22%20organizer"
-        },
-        {
-          "query": "\"Sucession Planning Program\" \"Riyadh\" tickets",
-          "url": "https://www.google.com/search?q=%22Sucession%20Planning%20Program%22%20%22Riyadh%22%20tickets"
         }
       ],
       "next_action": "ابحث في المصادر الرسمية المستهدفة واربط lead بمصدر رسمي قبل أي نشر."

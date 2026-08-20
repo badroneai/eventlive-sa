@@ -1,13 +1,23 @@
 {
-  "generated_at": "2026-08-20T02:09:00.930Z",
+  "generated_at": "2026-08-20T07:20:39.201Z",
   "totals": {
-    "targets": 20,
-    "enriched": 20,
-    "fetched": 12,
-    "images": 18,
-    "fetch_failures": 8
+    "targets": 6,
+    "enriched": 6,
+    "fetched": 1,
+    "images": 6,
+    "fetch_failures": 5
   },
   "enriched": [
+    {
+      "id": "event-letter-by-letter",
+      "title": "Letter by Letter",
+      "source_label": "Ithra Events",
+      "source_method": "official-public-algolia-index",
+      "source_url": "https://www.ithra.com/en/programme/2024/letter-letter",
+      "fetched": true,
+      "image": true,
+      "fetch_reason": ""
+    },
     {
       "id": "event-الأخطبوطية",
       "title": "الاخطبوطية",
@@ -57,156 +67,6 @@
       "fetched": false,
       "image": true,
       "fetch_reason": "The operation was aborted due to timeout"
-    },
-    {
-      "id": "event-hayy-cinema-hayy-explorers-at-the-cinema",
-      "title": "Hayy Cinema | Hayy Explorers At The Cinema",
-      "source_label": "Hayy Jameel What's On",
-      "source_method": "official-page-meta",
-      "source_url": "https://hayyjameel.org/whats-on/hayy-explorers-at-the-cinema/",
-      "fetched": true,
-      "image": true,
-      "fetch_reason": ""
-    },
-    {
-      "id": "event-hayy-cinema-panel-discussion-the-golden-palm-film-programme",
-      "title": "Hayy Cinema | Panel Discussion: The Golden Palm Film Programme",
-      "source_label": "Hayy Jameel What's On",
-      "source_method": "official-page-meta",
-      "source_url": "https://hayyjameel.org/whats-on/the-golden-palm-film-programme-i-panel-discussions/",
-      "fetched": true,
-      "image": true,
-      "fetch_reason": ""
-    },
-    {
-      "id": "event-honey-festival-2026",
-      "title": "Honey Festival 2026",
-      "source_label": "Visit Saudi Seasons",
-      "source_method": "official-page-meta",
-      "source_url": "https://www.visitsaudi.com/en/al-baha/events/honey-festival-2026",
-      "fetched": true,
-      "image": true,
-      "fetch_reason": ""
-    },
-    {
-      "id": "event-scenic-buggy-ride-at-gamra",
-      "title": "Scenic Buggy Ride at Gamra",
-      "source_label": "Visit Saudi Seasons",
-      "source_method": "official-page-meta",
-      "source_url": "https://www.visitsaudi.com/en/al-baha/events/scenic-buggy-ride-at-gamra",
-      "fetched": true,
-      "image": true,
-      "fetch_reason": ""
-    },
-    {
-      "id": "event-scenic-buggy-ride-with-picnic",
-      "title": "Scenic Buggy Ride with Picnic",
-      "source_label": "Visit Saudi Seasons",
-      "source_method": "official-page-meta",
-      "source_url": "https://www.visitsaudi.com/en/al-baha/events/scenic-buggy-ride-with-picnic",
-      "fetched": true,
-      "image": true,
-      "fetch_reason": ""
-    },
-    {
-      "id": "event-tour-of-al-baha",
-      "title": "Tour of Al Baha",
-      "source_label": "Visit Saudi Seasons",
-      "source_method": "official-page-meta",
-      "source_url": "https://www.visitsaudi.com/en/al-baha/events/tour-of-al-baha",
-      "fetched": true,
-      "image": true,
-      "fetch_reason": ""
-    },
-    {
-      "id": "event-دبلوم-إدارة-المرافق",
-      "title": "دبلوم إدارة المرافق",
-      "source_label": "Umm Al-Qura University Events Center",
-      "source_method": "official-page-meta",
-      "source_url": "https://uqu.edu.sa/App/Events/41036",
-      "fetched": true,
-      "image": true,
-      "fetch_reason": ""
-    },
-    {
-      "id": "event-دبلوم-الإدارة-المكتبية",
-      "title": "دبلوم الإدارة المكتبية",
-      "source_label": "Umm Al-Qura University Events Center",
-      "source_method": "official-page-meta",
-      "source_url": "https://uqu.edu.sa/App/Events/41037",
-      "fetched": true,
-      "image": true,
-      "fetch_reason": ""
-    },
-    {
-      "id": "event-دبلوم-التحول-الرقمي",
-      "title": "دبلوم التحول الرقمي",
-      "source_label": "Umm Al-Qura University Events Center",
-      "source_method": "official-page-meta",
-      "source_url": "https://uqu.edu.sa/App/Events/41038",
-      "fetched": true,
-      "image": true,
-      "fetch_reason": ""
-    },
-    {
-      "id": "event-لقاءات-أسبوع-الذكاء-الاصطناعي-9-13-أغسطس-2026",
-      "title": "لقاءات أسبوع الذكاء الاصطناعي 9 – 13 أغسطس 2026",
-      "source_label": "Monsha'at All Events",
-      "source_method": "approved-source-row",
-      "source_url": "http://www.monshaat.gov.sa/ar/node/499159",
-      "fetched": false,
-      "image": false,
-      "fetch_reason": "fetch failed"
-    },
-    {
-      "id": "event-لقاءات-شهر-أغسطس-2026م",
-      "title": "لقاءات شهر أغسطس 2026م",
-      "source_label": "Monsha'at All Events",
-      "source_method": "approved-source-row",
-      "source_url": "http://www.monshaat.gov.sa/ar/node/497399",
-      "fetched": false,
-      "image": false,
-      "fetch_reason": "fetch failed"
-    },
-    {
-      "id": "event-تجرييبية",
-      "title": "تجرييبية",
-      "source_label": "Umm Al-Qura University Events Center",
-      "source_method": "approved-source-row",
-      "source_url": "https://uqu.edu.sa/App/Events/41041",
-      "fetched": false,
-      "image": true,
-      "fetch_reason": "HTTP 404"
-    },
-    {
-      "id": "event-دبلوم-المتوسط-في-التكنولوجيا-المالية",
-      "title": "دبلوم المتوسط في التكنولوجيا المالية",
-      "source_label": "Umm Al-Qura University Events Center",
-      "source_method": "official-page-meta",
-      "source_url": "https://uqu.edu.sa/App/Events/41044",
-      "fetched": true,
-      "image": true,
-      "fetch_reason": ""
-    },
-    {
-      "id": "event-دبلوم-متوسط-في-أمن-المعلومات",
-      "title": "دبلوم متوسط في أمن المعلومات",
-      "source_label": "Umm Al-Qura University Events Center",
-      "source_method": "official-page-meta",
-      "source_url": "https://uqu.edu.sa/App/Events/41042",
-      "fetched": true,
-      "image": true,
-      "fetch_reason": ""
-    },
-    {
-      "id": "event-دبلوم-متوسط-في-إدارة-الموارد-البشرية",
-      "title": "دبلوم متوسط في إدارة الموارد البشرية",
-      "source_label": "Umm Al-Qura University Events Center",
-      "source_method": "official-page-meta",
-      "source_url": "https://uqu.edu.sa/App/Events/41043",
-      "fetched": true,
-      "image": true,
-      "fetch_reason": ""
     }
   ],
   "failed": [
@@ -239,24 +99,6 @@
       "title": "مزرعة التوت الاسود",
       "source_url": "https://www.visitsaudi.com/content/dam/documents/saudi-calendar-ar.pdf",
       "reason": "The operation was aborted due to timeout"
-    },
-    {
-      "id": "event-لقاءات-أسبوع-الذكاء-الاصطناعي-9-13-أغسطس-2026",
-      "title": "لقاءات أسبوع الذكاء الاصطناعي 9 – 13 أغسطس 2026",
-      "source_url": "http://www.monshaat.gov.sa/ar/node/499159",
-      "reason": "fetch failed"
-    },
-    {
-      "id": "event-لقاءات-شهر-أغسطس-2026م",
-      "title": "لقاءات شهر أغسطس 2026م",
-      "source_url": "http://www.monshaat.gov.sa/ar/node/497399",
-      "reason": "fetch failed"
-    },
-    {
-      "id": "event-تجرييبية",
-      "title": "تجرييبية",
-      "source_url": "https://uqu.edu.sa/App/Events/41041",
-      "reason": "HTTP 404"
     }
   ]
 }

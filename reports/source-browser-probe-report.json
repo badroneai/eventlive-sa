@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-20T01:56:06.890Z",
+  "generated_at": "2026-08-20T07:11:49.193Z",
   "source_registry": "data/source_registry.json",
   "collection_report": "reports/source-collection-report.json",
   "output_dir": "data/raw/browser-probes",
@@ -7,7 +7,7 @@
     "selected_ids": [],
     "scope": "priority",
     "limit": 8,
-    "probed_this_run": 2,
+    "probed_this_run": 0,
     "fresh_results_available": 2,
     "wait_ms": 4500,
     "timeout_ms": 30000,

@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-20T02:10:37.532Z",
+  "generated_at": "2026-08-20T07:22:03.356Z",
   "events_file": "dist/events.json",
   "manifest": "data/event_image_cache_manifest.json",
   "image_dir": "dist/assets/event-images",
@@ -9,7 +9,7 @@
     "fetched": 0,
     "reused": 497,
     "failed": 3,
-    "skipped_recent_failures": 0,
+    "skipped_recent_failures": 3,
     "remembered_failures": 10
   },
   "fetched": [],
@@ -662,7 +662,7 @@
     {
       "source_url": "https://www.ithra.com/application/files/cache/thumbnails/2fcd7911e5e79f6eeaedb4d9031f71b0.jpg",
       "file": "dist/assets/event-images/dots-on-letters-28119e3242.jpg",
-      "events": 1
+      "events": 2
     },
     {
       "source_url": "https://cdn.tuwaiq.edu.sa/initiatives_admin/images/hym412o4.xrm.webp",
@@ -2502,32 +2502,58 @@
   ],
   "rejected_removed": [],
   "missing_removed": [],
-  "skipped_recent_failures": [],
-  "failed": [
-    {
-      "source_url": "https://s7g10.scene7.com/is/image/rcu/fei2:landscape-16x9?$Responsive$&fit=stretch&fmt=webp&wid=1920",
-      "events": 1,
-      "reason": "HTTP 403",
-      "failure_kind": "access-denied",
-      "retry_after": "2026-08-21T02:10:37.532Z"
-    },
+  "skipped_recent_failures": [
     {
       "source_url": "https://cdn.rfecc.sa/wp-content/uploads/mec/qr_898ea2449274454e42895b52b18c6f68.png",
       "events": 1,
       "reason": "HTTP 403",
       "failure_kind": "access-denied",
-      "retry_after": "2026-08-21T02:10:37.532Z"
+      "retry_after": "2026-08-21T02:10:37.532Z",
+      "skipped": true
     },
     {
       "source_url": "https://api.riyadh.sa/sites/default/files/styles/medium/public/2026-07/er%20%2859%29.jpg?itok=a33APdGm",
       "events": 1,
       "reason": "not-image text/html; charset=utf-8",
       "failure_kind": "source-returned-html",
-      "retry_after": "2026-08-21T02:10:37.532Z"
+      "retry_after": "2026-08-21T02:10:37.532Z",
+      "skipped": true
+    },
+    {
+      "source_url": "https://s7g10.scene7.com/is/image/rcu/fei2:landscape-16x9?$Responsive$&fit=stretch&fmt=webp&wid=1920",
+      "events": 1,
+      "reason": "HTTP 403",
+      "failure_kind": "access-denied",
+      "retry_after": "2026-08-21T02:10:37.532Z",
+      "skipped": true
     }
   ],
-  "requires_rebuild": true,
-  "rebuild_reasons": [
-    "new-failures:3"
-  ]
+  "failed": [
+    {
+      "source_url": "https://cdn.rfecc.sa/wp-content/uploads/mec/qr_898ea2449274454e42895b52b18c6f68.png",
+      "events": 1,
+      "reason": "HTTP 403",
+      "failure_kind": "access-denied",
+      "retry_after": "2026-08-21T02:10:37.532Z",
+      "skipped": true
+    },
+    {
+      "source_url": "https://api.riyadh.sa/sites/default/files/styles/medium/public/2026-07/er%20%2859%29.jpg?itok=a33APdGm",
+      "events": 1,
+      "reason": "not-image text/html; charset=utf-8",
+      "failure_kind": "source-returned-html",
+      "retry_after": "2026-08-21T02:10:37.532Z",
+      "skipped": true
+    },
+    {
+      "source_url": "https://s7g10.scene7.com/is/image/rcu/fei2:landscape-16x9?$Responsive$&fit=stretch&fmt=webp&wid=1920",
+      "events": 1,
+      "reason": "HTTP 403",
+      "failure_kind": "access-denied",
+      "retry_after": "2026-08-21T02:10:37.532Z",
+      "skipped": true
+    }
+  ],
+  "requires_rebuild": false,
+  "rebuild_reasons": []
 }

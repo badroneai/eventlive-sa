@@ -1,32 +1,32 @@
 # EventLive Harvest OS Status
 
-- Generated at: 2026-08-20T02:18:57.035Z
+- Generated at: 2026-08-20T07:30:22.928Z
 - Status: NEEDS_WORK
 - Operating rule: Probe before new sources; sample before full harvest; Raw collection is not publication; discovery-only never auto-publishes.
 
 ## Totals
 
 - Sources: 88
-- Candidates: 624
-- Matched candidates: 593
+- Candidates: 625
+- Matched candidates: 594
 - Auto-publish sources: 15
 - Candidate-only sources: 12
 - Partnership-required sources: 5
-- Productive sources / attempted: 20/31
-- Collector errors: 7 (chronic 6, transient 1)
+- Productive sources / attempted: 18/20
+- Collector errors: 6 (chronic 6, transient 0)
 
 ## Publication Funnel
 
 | Stage | Count |
 | --- | --- |
-| discovered_this_run | 322 |
-| candidate_queue | 624 |
-| evaluated_for_publish | 624 |
+| discovered_this_run | 230 |
+| candidate_queue | 625 |
+| evaluated_for_publish | 625 |
 | linked_existing | 579 |
-| published_new | 5 |
+| published_new | 6 |
 | blocked | 40 |
 | secondary_promoted | 0 |
-| secondary_still_blocked | 33 |
+| secondary_still_blocked | 34 |
 
 ## Blocked Reasons
 
@@ -49,13 +49,12 @@
 
 | Source | Kind | Failed runs in a row | Attempted this run | Reason |
 | --- | --- | --- | --- | --- |
-| moc-cultural-calendar | chronic | 29 | yes | collector-error: fetch failed; fetch failed |
-| mos-events | chronic | 29 | yes | collector-error: fetch failed |
-| moc-cultural-subportals | chronic | 29 | yes | collector-error: fetch failed; fetch failed |
-| monshaat-events | chronic | 12 | yes | collector-error: fetch failed; fetch failed |
-| saudi-pro-league-fixtures | chronic | 9 | yes | collector-error: fetch failed |
-| tuwaiq-academy-bootcamps | chronic | 6 | yes | collector-error: HTTP 403 |
-| saudi-space-agency-events | transient | 1 | yes | fetch failed |
+| moc-cultural-calendar | chronic | 29 | no | collector-error: fetch failed; fetch failed |
+| mos-events | chronic | 29 | no | collector-error: fetch failed |
+| moc-cultural-subportals | chronic | 29 | no | collector-error: fetch failed; fetch failed |
+| monshaat-events | chronic | 12 | no | collector-error: fetch failed; fetch failed |
+| saudi-pro-league-fixtures | chronic | 9 | no | collector-error: fetch failed |
+| tuwaiq-academy-bootcamps | chronic | 6 | no | collector-error: HTTP 403 |
 
 | Source | Policy | Trust | Gate |
 | --- | --- | --- | --- |

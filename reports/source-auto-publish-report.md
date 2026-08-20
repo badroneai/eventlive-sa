@@ -1,10 +1,10 @@
 # EventLive Source Auto Publish Report
 
-- published_at: 2026-08-20T02:06:36.688Z
+- published_at: 2026-08-20T07:17:15.385Z
 - dry_run: false
 - include_partner: true
-- candidates_seen: 624
-- published_new: 5
+- candidates_seen: 625
+- published_new: 6
 - linked_existing: 579
 - blocked_remaining: 40
 - duplicate_review_alerts: 8
@@ -31,6 +31,7 @@
 | candidate-visit-saudi-calendar-pdf-مزرعة-التوت-الأسود-20260701-4a38d19e | published | event-مزرعة-التوت-الأسود | مزرعة التوت الأسود |
 | candidate-visit-saudi-calendar-pdf-الأخطبوطية-20260704-4a38d19e | published | event-الأخطبوطية | الأخطبوطية |
 | candidate-visit-saudi-calendar-pdf-عروض-الفنون-الأدائية-التقليدية-20260706-4a38d19e | published | event-عروض-الفنون-الأدائية-التقليدية | عروض الفنون الأدائية التقليدية |
+| candidate-ithra-events-letter-by-letter-20260904-df94a427 | published | event-letter-by-letter | Letter by Letter |
 | candidate-moc-cultural-subportals-skill-development-initiative-20210714-10f7dc2c | linked-existing | event-skill-development-initiative | already linked to catalog event |
 | candidate-moc-cultural-subportals-sitar-20220921-cda2e068 | linked-existing | event-sitar | already linked to catalog event |
 | candidate-moc-cultural-subportals-the-architecture-and-design-caf-20240427-046e2ec1 | linked-existing | event-the-architecture-and-design-caf | already linked to catalog event |
