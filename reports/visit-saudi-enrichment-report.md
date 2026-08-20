@@ -1,11 +1,11 @@
 # Visit Saudi Calendar Enrichment Report
 
-- generated_at: 2026-08-19T13:37:31.114Z
-- targets: 30
+- generated_at: 2026-08-20T02:07:35.664Z
+- targets: 29
 - candidates: 20
-- enriched: 30
-- fetched: 30
-- images: 28
+- enriched: 29
+- fetched: 29
+- images: 27
 - fetch_failures: 0
 
 ## Enriched
@@ -31,7 +31,6 @@
 - International Falcon Breeders Auction - official-page-html - image=yes - features=7
 - Hussain Moheb Live in Riyadh - official-page-html - image=yes - features=7
 - Spacetoon Memories with Assem Sukkar - official-page-html - image=yes - features=7
-- Stand-up Comedy and Interactive Show with Salah Al-Dali - official-page-html - image=yes - features=7
 - FIBO Arabia 2026 - official-page-html - image=yes - features=7
 - 3a Ka3ba - official-page-html - image=yes - features=7
 - 3a Ka3ba - official-page-html - image=yes - features=7

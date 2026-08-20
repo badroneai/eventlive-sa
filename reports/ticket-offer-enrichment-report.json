@@ -1,8 +1,8 @@
 {
-  "checked_at": "2026-08-19T13:40:26.387Z",
+  "checked_at": "2026-08-20T02:09:37.332Z",
   "targets": 9,
   "evidence_found": 6,
-  "changed": 0,
+  "changed": 1,
   "no_evidence": 2,
   "failed": 1,
   "results": [
@@ -18,8 +18,8 @@
       "host": "nofomo.com",
       "url": "https://nofomo.com/events/a-thousand-and-one-2026/cart",
       "status": "evidence",
-      "price_label": "299 SAR",
-      "price": 299,
+      "price_label": "499 SAR",
+      "price": 499,
       "price_currency": "SAR",
       "method": "nofomo-visible-ticket-price"
     },

@@ -1,37 +1,18 @@
 {
-  "generated_at": "2026-08-19T13:41:24.125Z",
+  "generated_at": "2026-08-20T02:10:37.532Z",
   "events_file": "dist/events.json",
   "manifest": "data/event_image_cache_manifest.json",
   "image_dir": "dist/assets/event-images",
   "totals": {
     "targets": 500,
     "cached_total": 810,
-    "fetched": 3,
-    "reused": 494,
+    "fetched": 0,
+    "reused": 497,
     "failed": 3,
-    "skipped_recent_failures": 3,
+    "skipped_recent_failures": 0,
     "remembered_failures": 10
   },
-  "fetched": [
-    {
-      "source_url": "https://hub.misk.org.sa/media/wddf0er3/stc-cs-workshop_hub-en.png",
-      "file": "dist/assets/event-images/navigating-the-cyber-map-how-to-choose-your-specialization-build-a-cor-29f604ab87.png",
-      "bytes": 487694,
-      "events": 1
-    },
-    {
-      "source_url": "https://hayyjameel.org/wp-content/uploads/2026/07/DSC01988-scaled-aspect-ratio-1710-911-1100x500.jpg",
-      "file": "dist/assets/event-images/hayy-sounds-drumming-circle-with-saif-halal-6e330c33e7.jpg",
-      "bytes": 76459,
-      "events": 1
-    },
-    {
-      "source_url": "https://cdn.rfecc.sa/wp-content/uploads/2026/08/19122905/images.jpg",
-      "file": "dist/assets/event-images/natural-world-expo-86faa99ab1.jpg",
-      "bytes": 12726,
-      "events": 1
-    }
-  ],
+  "fetched": [],
   "reused": [
     {
       "source_url": "https://music.moc.gov.sa/-/media/Project/Ministries/Moc/Events/Artboard1.png",
@@ -201,11 +182,6 @@
     {
       "source_url": "https://scth.scene7.com/is/image/scth/sound-of-abha-fest?wid=1400&hei=788&fit=constrain&fmt=webp",
       "file": "dist/assets/event-images/sound-of-abha-fest-saf-d4890e7b95.webp",
-      "events": 1
-    },
-    {
-      "source_url": "https://discoveraseer.com/en/img/asset/YXNzZXRzL2V4cGVyaWVuY2Uvc2hhYWFyLW1iZF9wYWdlLTAwMDEuanBn/shaaar-mbd_page-0001.jpg?w=1024&fm=webp&s=f019b3379374325affea949d3e1c1bce",
-      "file": "dist/assets/event-images/مهرجان-مبدأ-02cc9c6e51.webp",
       "events": 1
     },
     {
@@ -461,11 +437,6 @@
     {
       "source_url": "https://discoveraseer.com/en/img/asset/YXNzZXRzL2V4cGVyaWVuY2Uvc2F5Zi5qcGc/sayf.jpg?w=1024&fm=webp&s=5b9815aa9fcad62884cb22e83dcdff3b",
       "file": "dist/assets/event-images/التجمع-الصيفي-11f2d4b28b.webp",
-      "events": 1
-    },
-    {
-      "source_url": "https://www.ithra.com/application/files/cache/thumbnails/021dbae93d2b03cf4faffc8cb85e03d7.jpg",
-      "file": "dist/assets/event-images/youth-book-club-acf92e6dc3.jpg",
       "events": 1
     },
     {
@@ -734,26 +705,6 @@
       "events": 1
     },
     {
-      "source_url": "https://static.uqu.edu.sa/assets/images/uqu-gate.jpeg",
-      "file": "dist/assets/event-images/دورة-تحضير-البيئات-وتعريف-السلالات-البكتيرية-3157e8ad38.jpg",
-      "events": 8
-    },
-    {
-      "source_url": "https://hayyjameel.org/wp-content/uploads/2026/07/DSC02728-1100x500.jpg",
-      "file": "dist/assets/event-images/hayy-makers-introduction-to-photography-understanding-your-camera-4b6d52464c.jpg",
-      "events": 1
-    },
-    {
-      "source_url": "https://www.ithra.com/application/files/cache/thumbnails/ad169f1ec2946d8577403914c762b084.png",
-      "file": "dist/assets/event-images/clay-shaping-845acbd7b3.png",
-      "events": 1
-    },
-    {
-      "source_url": "https://www.datocms-assets.com/66357/1738671266-mixtape-feb-4th-16-1.png?auto=format&fit=max&w=2048&q=90",
-      "file": "dist/assets/event-images/mdlbeast-radio-mixtape-b5ffbacbbc.avif",
-      "events": 1
-    },
-    {
       "source_url": "https://hayyjameel.org/wp-content/uploads/2026/07/Mera_Still_10-scaled.png",
       "file": "dist/assets/event-images/hayy-cinema-august-2026-4ed02b2a44.png",
       "events": 1
@@ -809,6 +760,11 @@
       "events": 1
     },
     {
+      "source_url": "https://hub.misk.org.sa/media/wddf0er3/stc-cs-workshop_hub-en.png",
+      "file": "dist/assets/event-images/navigating-the-cyber-map-how-to-choose-your-specialization-build-a-cor-29f604ab87.png",
+      "events": 1
+    },
+    {
       "source_url": "https://saudi.smartdataseries.com/wp-content/uploads/2025/11/sdais-saudi.jpg",
       "file": "dist/assets/event-images/smart-data-ai-summit-1e2bce2056.jpg",
       "events": 1
@@ -821,6 +777,11 @@
     {
       "source_url": "https://hayyjameel.org/wp-content/uploads/2026/03/com-1100x500.jpg",
       "file": "dist/assets/event-images/community-garden-from-soil-to-seed-basics-to-growing-your-own-plants-w-2e7fd624f5.jpg",
+      "events": 1
+    },
+    {
+      "source_url": "https://hayyjameel.org/wp-content/uploads/2026/07/DSC01988-scaled-aspect-ratio-1710-911-1100x500.jpg",
+      "file": "dist/assets/event-images/hayy-sounds-drumming-circle-with-saif-halal-6e330c33e7.jpg",
       "events": 1
     },
     {
@@ -877,6 +838,11 @@
       "source_url": "https://www.eyeofriyadh.com/events/events_images/2025/07/11d6e748d9637.jpg",
       "file": "dist/assets/event-images/saudi-industrial-series-ad12d8e532.jpg",
       "events": 1
+    },
+    {
+      "source_url": "https://static.uqu.edu.sa/assets/images/uqu-gate.jpeg",
+      "file": "dist/assets/event-images/دورة-تحضير-البيئات-وتعريف-السلالات-البكتيرية-3157e8ad38.jpg",
+      "events": 8
     },
     {
       "source_url": "https://cdn.tuwaiq.edu.sa/initiatives_admin/images/4jaiuua2.tw3.webp",
@@ -1574,6 +1540,11 @@
       "events": 1
     },
     {
+      "source_url": "https://cdn.rfecc.sa/wp-content/uploads/2026/08/19122905/images.jpg",
+      "file": "dist/assets/event-images/natural-world-expo-86faa99ab1.jpg",
+      "events": 1
+    },
+    {
       "source_url": "https://api.riyadh.sa/sites/default/files/styles/medium/public/2026-05/_17853000324651174_3292621591780340508_n.jpg?itok=hfR_zSF3",
       "file": "dist/assets/event-images/asian-indoor-and-martial-arts-games-d949ca4683.jpg",
       "events": 1
@@ -1934,9 +1905,24 @@
       "events": 1
     },
     {
+      "source_url": "https://www.datocms-assets.com/66357/1738671266-mixtape-feb-4th-16-1.png?auto=format&fit=max&w=2048&q=90",
+      "file": "dist/assets/event-images/mdlbeast-radio-mixtape-b5ffbacbbc.avif",
+      "events": 1
+    },
+    {
+      "source_url": "https://www.ithra.com/application/files/cache/thumbnails/ad169f1ec2946d8577403914c762b084.png",
+      "file": "dist/assets/event-images/clay-shaping-845acbd7b3.png",
+      "events": 1
+    },
+    {
       "source_url": "https://www.sfda.gov.sa/sites/default/files/2026-07/%D9%88%D8%B1%D8%B4%D8%A9%20%D8%B9%D9%85%D9%84%20-%20%D8%A7%D8%B4%D8%AA%D8%B1%D8%A7%D8%B7%D8%A7%D8%AA%20%D8%A7%D9%84%D9%81%D8%B3%D8%AD%20v2.jpg",
       "file": "dist/assets/event-images/اشتراطات-الفسح-والتفتيش-للمنشآت-والمنتجات-الخاضعة-لرقابة-الهيئة-ومعالج-74390d74b4.jpg",
       "events": 4
+    },
+    {
+      "source_url": "https://hayyjameel.org/wp-content/uploads/2026/07/DSC02728-1100x500.jpg",
+      "file": "dist/assets/event-images/hayy-makers-introduction-to-photography-understanding-your-camera-4b6d52464c.jpg",
+      "events": 1
     },
     {
       "source_url": "https://hayyjameel.org/wp-content/uploads/2026/07/DSC02026-scaled-aspect-ratio-2296-1300-1-1100x500.jpg",
@@ -2136,6 +2122,11 @@
     {
       "source_url": "https://www.ithra.com/application/files/cache/thumbnails/7065e6e1e765661f4a44c78da1021235.jpg",
       "file": "dist/assets/event-images/take-a-closer-look-at-the-preparation-process-for-the-plays-competing-470ce0d879.jpg",
+      "events": 1
+    },
+    {
+      "source_url": "https://www.ithra.com/application/files/cache/thumbnails/021dbae93d2b03cf4faffc8cb85e03d7.jpg",
+      "file": "dist/assets/event-images/youth-book-club-acf92e6dc3.jpg",
       "events": 1
     },
     {
@@ -2502,64 +2493,41 @@
       "source_url": "https://www.najran.gov.sa/FTPImages/32104c6d-c4d3-4403-8f0b-c4193be13817-1448012122252680.png",
       "file": "dist/assets/event-images/مهرجان-صيف-نجران-2026-صيفنا-هايل-81fad8f140.png",
       "events": 1
+    },
+    {
+      "source_url": "https://tc.qcc.org.sa/storage/260/6a4649f72c2c4_%D8%A7%D9%95%D8%AF%D8%A7%D8%B1%D8%A9-%D8%A7%D9%84%D9%85%D9%88%D8%A7%D8%B1%D8%AF-%D8%A7%D9%84%D8%A8%D8%B4%D8%B1%D9%8A%D8%A9_%D8%A7%D9%84%D8%A7%D8%B9%D9%84%D8%A7%D9%86.jpg",
+      "file": "dist/assets/event-images/عمليات-إدارة-الموارد-البشرية-44fab3c9d8.jpg",
+      "events": 1
     }
   ],
   "rejected_removed": [],
   "missing_removed": [],
-  "skipped_recent_failures": [
-    {
-      "source_url": "https://cdn.rfecc.sa/wp-content/uploads/mec/qr_898ea2449274454e42895b52b18c6f68.png",
-      "events": 1,
-      "reason": "HTTP 403",
-      "failure_kind": "access-denied",
-      "retry_after": "2026-08-19T13:47:18.163Z",
-      "skipped": true
-    },
-    {
-      "source_url": "https://api.riyadh.sa/sites/default/files/styles/medium/public/2026-07/er%20%2859%29.jpg?itok=a33APdGm",
-      "events": 1,
-      "reason": "not-image text/html; charset=utf-8",
-      "failure_kind": "source-returned-html",
-      "retry_after": "2026-08-19T13:47:18.163Z",
-      "skipped": true
-    },
-    {
-      "source_url": "https://s7g10.scene7.com/is/image/rcu/fei2:landscape-16x9?$Responsive$&fit=stretch&fmt=webp&wid=1920",
-      "events": 1,
-      "reason": "HTTP 403",
-      "failure_kind": "access-denied",
-      "retry_after": "2026-08-19T13:47:18.163Z",
-      "skipped": true
-    }
-  ],
+  "skipped_recent_failures": [],
   "failed": [
     {
+      "source_url": "https://s7g10.scene7.com/is/image/rcu/fei2:landscape-16x9?$Responsive$&fit=stretch&fmt=webp&wid=1920",
+      "events": 1,
+      "reason": "HTTP 403",
+      "failure_kind": "access-denied",
+      "retry_after": "2026-08-21T02:10:37.532Z"
+    },
+    {
       "source_url": "https://cdn.rfecc.sa/wp-content/uploads/mec/qr_898ea2449274454e42895b52b18c6f68.png",
       "events": 1,
       "reason": "HTTP 403",
       "failure_kind": "access-denied",
-      "retry_after": "2026-08-19T13:47:18.163Z",
-      "skipped": true
+      "retry_after": "2026-08-21T02:10:37.532Z"
     },
     {
       "source_url": "https://api.riyadh.sa/sites/default/files/styles/medium/public/2026-07/er%20%2859%29.jpg?itok=a33APdGm",
       "events": 1,
       "reason": "not-image text/html; charset=utf-8",
       "failure_kind": "source-returned-html",
-      "retry_after": "2026-08-19T13:47:18.163Z",
-      "skipped": true
-    },
-    {
-      "source_url": "https://s7g10.scene7.com/is/image/rcu/fei2:landscape-16x9?$Responsive$&fit=stretch&fmt=webp&wid=1920",
-      "events": 1,
-      "reason": "HTTP 403",
-      "failure_kind": "access-denied",
-      "retry_after": "2026-08-19T13:47:18.163Z",
-      "skipped": true
+      "retry_after": "2026-08-21T02:10:37.532Z"
     }
   ],
   "requires_rebuild": true,
   "rebuild_reasons": [
-    "fetched:3"
+    "new-failures:3"
   ]
 }

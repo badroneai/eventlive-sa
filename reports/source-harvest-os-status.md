@@ -1,32 +1,32 @@
 # EventLive Harvest OS Status
 
-- Generated at: 2026-08-19T13:49:47.522Z
+- Generated at: 2026-08-20T02:18:57.035Z
 - Status: NEEDS_WORK
 - Operating rule: Probe before new sources; sample before full harvest; Raw collection is not publication; discovery-only never auto-publishes.
 
 ## Totals
 
 - Sources: 88
-- Candidates: 632
-- Matched candidates: 601
+- Candidates: 624
+- Matched candidates: 593
 - Auto-publish sources: 15
 - Candidate-only sources: 12
 - Partnership-required sources: 5
-- Productive sources / attempted: 19/23
+- Productive sources / attempted: 20/31
 - Collector errors: 7 (chronic 6, transient 1)
 
 ## Publication Funnel
 
 | Stage | Count |
 | --- | --- |
-| discovered_this_run | 310 |
-| candidate_queue | 632 |
-| evaluated_for_publish | 632 |
-| linked_existing | 584 |
-| published_new | 9 |
-| blocked | 39 |
+| discovered_this_run | 322 |
+| candidate_queue | 624 |
+| evaluated_for_publish | 624 |
+| linked_existing | 579 |
+| published_new | 5 |
+| blocked | 40 |
 | secondary_promoted | 0 |
-| secondary_still_blocked | 38 |
+| secondary_still_blocked | 33 |
 
 ## Blocked Reasons
 
@@ -39,8 +39,9 @@
 | possible duplicate requires review: exact-title-city-venue-conflict | 2 |
 | linked catalog row event-dakah was superseded by dedupe | 1 |
 | linked catalog row event-this-is-michael was superseded by dedupe | 1 |
-| possible duplicate already exists: event-saudi-industrial-series-2 | 1 |
 | possible duplicate already exists: event-hvac-r-saudi-arabia | 1 |
+| possible duplicate already exists: event-saudi-industrial-series-2 | 1 |
+| linked catalog row event-stand-up-comedy-and-interactive-show-with-salah-al-dali was superseded by dedupe | 1 |
 | linked catalog row event-feena-nehke-stand-up-comedy-by-john-achkar was superseded by dedupe | 1 |
 | linked catalog row event-music-festival-mdlbeast-soundstorm was superseded by dedupe | 1 |
 
@@ -48,13 +49,13 @@
 
 | Source | Kind | Failed runs in a row | Attempted this run | Reason |
 | --- | --- | --- | --- | --- |
-| moc-cultural-calendar | chronic | 28 | no | collector-error: fetch failed; fetch failed |
-| mos-events | chronic | 28 | no | collector-error: fetch failed |
-| moc-cultural-subportals | chronic | 28 | no | collector-error: fetch failed; fetch failed |
-| monshaat-events | chronic | 11 | no | collector-error: fetch failed; fetch failed |
-| saudi-pro-league-fixtures | chronic | 8 | no | collector-error: fetch failed |
-| tuwaiq-academy-bootcamps | chronic | 5 | no | collector-error: HTTP 403 |
-| asharqia-chamber-events | transient | 1 | yes | fetch failed; page.goto: Timeout 30000ms exceeded. Call log:   - navigating to "https://www.chamber.org.sa/sites/Arabic/Events/ChamberEvents/Pages/AllChamberEvents.aspx", waiting until "domcontentload |
+| moc-cultural-calendar | chronic | 29 | yes | collector-error: fetch failed; fetch failed |
+| mos-events | chronic | 29 | yes | collector-error: fetch failed |
+| moc-cultural-subportals | chronic | 29 | yes | collector-error: fetch failed; fetch failed |
+| monshaat-events | chronic | 12 | yes | collector-error: fetch failed; fetch failed |
+| saudi-pro-league-fixtures | chronic | 9 | yes | collector-error: fetch failed |
+| tuwaiq-academy-bootcamps | chronic | 6 | yes | collector-error: HTTP 403 |
+| saudi-space-agency-events | transient | 1 | yes | fetch failed |
 
 | Source | Policy | Trust | Gate |
 | --- | --- | --- | --- |

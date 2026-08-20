@@ -1,26 +1,268 @@
 {
   "schema": "eventlive.source-browser-probe-checkpoint.v1",
-  "checkpointed_at": "2026-08-19T13:27:16.776Z",
-  "generated_at": "2026-08-19T13:27:06.417Z",
+  "checkpointed_at": "2026-08-20T01:56:39.025Z",
+  "generated_at": "2026-08-20T01:56:06.890Z",
   "source_registry": "data/source_registry.json",
   "output_dir": "data/raw/browser-probes",
-  "sources_planned": 1,
-  "sources_completed": 1,
+  "sources_planned": 2,
+  "sources_completed": 2,
   "totals": {
-    "probed": 1,
-    "browser_network_api": 0,
+    "probed": 2,
+    "browser_network_api": 1,
     "browser_hydration_payload": 0,
     "rendered_html_candidates": 1,
     "blocked_or_protected": 0,
     "policy_skipped": 0
   },
   "completed_ids": [
+    "asharqia-chamber-events",
     "riyadh-city-events"
   ],
   "sources": [
     {
+      "id": "asharqia-chamber-events",
+      "probed_at": "2026-08-20T01:56:26.866Z",
+      "name": "Asharqia Chamber Events",
+      "priority": 59,
+      "url": "https://www.chamber.org.sa/sites/Arabic/Events/ChamberEvents/Pages/AllChamberEvents.aspx",
+      "final_url": "https://www.chamber.org.sa/sites/Arabic/Events/ChamberEvents/Pages/AllChamberEvents.aspx",
+      "status": "ok",
+      "http_status": 200,
+      "navigation_error": "",
+      "duration_ms": 18246,
+      "classification": "browser-network-api",
+      "next_action": "ثبت endpoint مرشحًا كجامع مباشر، ثم اكتب extractor من JSON مع اختبار انحدار.",
+      "title": "مناسبات الغرفة",
+      "text_bytes": 3313,
+      "html_bytes": 166300,
+      "html_snapshot": "data/raw/browser-probes/asharqia-chamber-events-2026-08-20T01-56-06-890Z.html",
+      "screenshot": "data/raw/browser-probes/asharqia-chamber-events-2026-08-20T01-56-06-890Z.png",
+      "signals": {
+        "has_next_data": false,
+        "has_nuxt": false,
+        "has_json_ld": false,
+        "has_event_schema": false,
+        "date_snippets": [
+          "4 06:30 PM - 06:30 PM التفاصيل ملتقى الممارسات الوقفية2024م 24/11/2024 - 24/11/2024 09:00 AM - 09:00 AM التفاصيل \"منتدى المر"
+        ],
+        "event_like_links": [
+          {
+            "text": "تسجيل الدخول",
+            "href": "https://www.chamber.org.sa/sites/Arabic/Events/ChamberEvents/_layouts/15/Authenticate.aspx?Source=%2Fsites%2FArabic%2FEvents%2FChamberEvents%2FPages%2FAllChamberEvents%2Easpx"
+          },
+          {
+            "text": "من نحن",
+            "href": "https://www.chamber.org.sa/sites/Arabic/Events/ChamberEvents/Pages/AllChamberEvents.aspx#"
+          },
+          {
+            "text": "خدمات الغرفة",
+            "href": "https://www.chamber.org.sa/sites/Arabic/Events/ChamberEvents/Pages/AllChamberEvents.aspx#"
+          },
+          {
+            "text": "المناسبات",
+            "href": "https://www.chamber.org.sa/sites/Arabic/Events/ChamberEvents/Pages/AllChamberEvents.aspx#"
+          },
+          {
+            "text": "المناسبات",
+            "href": "https://www.chamber.org.sa/sites/Arabic/Events/Pages/Home.aspx"
+          },
+          {
+            "text": "ارشيف المناسبات",
+            "href": "https://www.chamber.org.sa/sites/Arabic/Events/EventArchive/Pages/Home.aspx"
+          },
+          {
+            "text": "المركز الاعلامى",
+            "href": "https://www.chamber.org.sa/sites/Arabic/Events/ChamberEvents/Pages/AllChamberEvents.aspx#"
+          },
+          {
+            "text": "تواصل معنا",
+            "href": "https://www.chamber.org.sa/sites/Arabic/Events/ChamberEvents/Pages/AllChamberEvents.aspx#"
+          },
+          {
+            "text": "المناسبات",
+            "href": "https://www.chamber.org.sa/sites/Arabic/Events/Pages/Home.aspx"
+          },
+          {
+            "text": "التفاصيل",
+            "href": "https://www.chamber.org.sa/sites/Arabic/Events/ChamberEvents/Pages/ChamberEventDetails.aspx?ItemID=345"
+          },
+          {
+            "text": "التفاصيل",
+            "href": "https://www.chamber.org.sa/sites/Arabic/Events/ChamberEvents/Pages/ChamberEventDetails.aspx?ItemID=346"
+          },
+          {
+            "text": "التفاصيل",
+            "href": "https://www.chamber.org.sa/sites/Arabic/Events/ChamberEvents/Pages/ChamberEventDetails.aspx?ItemID=344"
+          },
+          {
+            "text": "التفاصيل",
+            "href": "https://www.chamber.org.sa/sites/Arabic/Events/ChamberEvents/Pages/ChamberEventDetails.aspx?ItemID=343"
+          },
+          {
+            "text": "التفاصيل",
+            "href": "https://www.chamber.org.sa/sites/Arabic/Events/ChamberEvents/Pages/ChamberEventDetails.aspx?ItemID=340"
+          },
+          {
+            "text": "التفاصيل",
+            "href": "https://www.chamber.org.sa/sites/Arabic/Events/ChamberEvents/Pages/ChamberEventDetails.aspx?ItemID=338"
+          },
+          {
+            "text": "التفاصيل",
+            "href": "https://www.chamber.org.sa/sites/Arabic/Events/ChamberEvents/Pages/ChamberEventDetails.aspx?ItemID=341"
+          },
+          {
+            "text": "التفاصيل",
+            "href": "https://www.chamber.org.sa/sites/Arabic/Events/ChamberEvents/Pages/ChamberEventDetails.aspx?ItemID=342"
+          },
+          {
+            "text": "التفاصيل",
+            "href": "https://www.chamber.org.sa/sites/Arabic/Events/ChamberEvents/Pages/ChamberEventDetails.aspx?ItemID=339"
+          },
+          {
+            "text": "التفاصيل",
+            "href": "https://www.chamber.org.sa/sites/Arabic/Events/ChamberEvents/Pages/ChamberEventDetails.aspx?ItemID=334"
+          },
+          {
+            "text": "التفاصيل",
+            "href": "https://www.chamber.org.sa/sites/Arabic/Events/ChamberEvents/Pages/ChamberEventDetails.aspx?ItemID=335"
+          }
+        ]
+      },
+      "script_signals": {
+        "next_data_scripts": 0,
+        "nuxt_scripts": 0,
+        "json_ld_scripts": 0,
+        "large_inline_scripts": 2
+      },
+      "network_total": 9,
+      "network_endpoints": [
+        {
+          "method": "GET",
+          "status": 200,
+          "url": "https://www.chamber.org.sa/sites/Arabic/Events/ChamberEvents/_api/Microsoft.SharePoint.Portal.SuiteNavData.GetSuiteNavData?v=2&Locale=ar-SA",
+          "content_type": "application/json",
+          "resource_type": "xhr",
+          "request_post_data": "",
+          "response_shape": "json-object:d",
+          "preview": "{\"d\":{\"GetSuiteNavData\":\"{\\\"CssUrl\\\":\\\"\\\\/_layouts\\\\/15\\\\/1025\\\\/styles\\\\/SuiteNav.css?rev=xIL7dTuBXVfEY6%2FjttQ%2BNA%3D%3DTAG0\\\",\\\"DoNotCache\\\":false,\\\"JsUrl\\\":\\\"\\\\/_layouts\\\\/15\\\\/SuiteNavStandalone.js?rev=bqDDbgRY1QsInq9NuqzNrw%3D%3DTAG0\\\",\\\"NavBarData\\\":{\\\"AboutMeLink\\\":null,\\\"ClientData\\\":\\\"{\\\\\\\"IsRTL\\\\\\\":true, \\\\\\\"IsFallbackShell\\\\\\\":true, \\\\\\\"ShowAppLauncherV3\\\\\\\":true}\\\",\\\"CurrentMainLinkElementID\\\":\\\"ShellSharepoint\\\",\\\"CurrentWorkloadHelpSubLinks\\\":[],\\\"CurrentWorkloadSettingsSubLinks\\\":[],\\\"CurrentWorkloadUserSubLinks\\\":[],\\\"HelpLink\\\":{\\\"Id\\\":\\\"HelpLink\\\",\\\"Text\\\":\\\"Help\\\",\\\"Title\\\":null,\\\"Url\\\":null},\\\"IsAuthenticated\\\":false,\\\"PinnedApps\\\":[],\\\"SignOutLink\\\":{\\\"Id\\\":\\\"ShellSignout\\\",\\\"Text\\\":null,\\\"Title\\\":null,\\\"Url\\\":null},\\\"StringsOverride\\\":null,\\\"UserDisplayName\\\":null,\\\"WorkloadLinks\\\":null},\\\"SPSuiteVersion\\\":2}\"}}"
+        },
+        {
+          "method": "GET",
+          "status": 200,
+          "url": "https://api-cdn.mypurecloud.ie/webdeployments/v1/deployments/bf04c4ac-89eb-4d7b-9061-14343d788e27/config.json",
+          "content_type": "application/json",
+          "resource_type": "xhr",
+          "request_post_data": "",
+          "response_shape": "json-object:id,version,headlessMode,languages,defaultLanguage,apiEndpoint,messenger,position",
+          "preview": "{\"id\":\"35941ef8-d3b4-4cac-b011-f0e5bf3d7569\",\"version\":\"4\",\"headlessMode\":{\"enabled\":false},\"languages\":[\"ar\"],\"defaultLanguage\":\"ar\",\"apiEndpoint\":\"https://api.mypurecloud.ie\",\"messenger\":{\"enabled\":true,\"apps\":{\"conversations\":{\"enabled\":true,\"messagingEndpoint\":\"wss://webmessaging.mypurecloud.ie\",\"showAgentTypingIndicator\":true,\"showUserTypingIndicator\":true,\"autoStart\":{\"enabled\":true},\"markdown\":{\"enabled\":true},\"conversationDisconnect\":{\"enabled\":false,\"type\":\"Send\"},\"conversationClear\":{\"enabled\":true},\"humanize\":{\"enabled\":false,\"bot\":{\"name\":\"\",\"avatarUrl\":\"\"}}}},\"styles\":{\"primaryColor\":\"#015599\"},\"launcherButton\":{\"visibility\":\"On\"},\"fileUpload\":{\"enableAttachments\":true,\"modes\":[{\"fileTypes\":[\"image/jpeg\",\"image/gif\",\"image/png\"],\"maxFileSizeKB\":10240}]},\"homeScreen\":{\"enabled\":false,\"logoUrl\":\"\"}},\"position\":{\"alignment\":\"Auto\",\"sideSpace\":20,\"bottomSpace\":12},\"customI18NLabels\":[],\"journeyEvents\":{\"enabled\":false},\"status\":\"Active\",\"cobrowse\":{\"enabled\":false,\"allowAgentControl\":true,\"allowAgentNavigation\":true,\"maskSelectors\":[],\"readonlySelectors\":[],\"channels\":[]},\"auth\":{\"enabled\":false,\"allowSessionUpgrade\":false}}"
+        },
+        {
+          "method": "GET",
+          "status": 200,
+          "url": "https://www.chamber.org.sa/sites/Arabic/Events/ChamberEvents/_api/SP.Web.GetContextWebThemeData?lcid=1025",
+          "content_type": "application/json",
+          "resource_type": "xhr",
+          "request_post_data": "",
+          "response_shape": "json-like-invalid",
+          "preview": "{\"d\":{\"GetContextWebThemeData\":\"{\\\"Version\\\":\\\"1\\\",\\\"ThemeCacheToken\\\":\\\"/sites/Arabic/Events/ChamberEvents::6:\\\",\\\"IsInverted\\\":false,\\\"IsDefault\\\":true,\\\"NoImageRecoloring\\\":true,\\\"BackgroundImageUri\\\":null,\\\"Palette\\\":{\\\"Colors\\\":{\\\"BodyText\\\":{\\\"DefaultColor\\\":{\\\"A\\\":255,\\\"R\\\":68,\\\"G\\\":68,\\\"B\\\":68}},\\\"SubtleBodyText\\\":{\\\"DefaultColor\\\":{\\\"A\\\":255,\\\"R\\\":119,\\\"G\\\":119,\\\"B\\\":119}},\\\"StrongBodyText\\\":{\\\"DefaultColor\\\":{\\\"A\\\":255,\\\"R\\\":38,\\\"G\\\":38,\\\"B\\\":38}},\\\"DisabledText\\\":{\\\"DefaultColor\\\":{\\\"A\\\":255,\\\"R\\\":177,\\\"G\\\":177,\\\"B\\\":177}},\\\"SiteTitle\\\":{\\\"DefaultColor\\\":{\\\"A\\\":255,\\\"R\\\":38,\\\"G\\\":38,\\\"B\\\":38}},\\\"WebPartHeading\\\":{\\\"DefaultColor\\\":{\\\"A\\\":255,\\\"R\\\":68,\\\"G\\\":68,\\\"B\\\":68}},\\\"ErrorText\\\":{\\\"DefaultColor\\\":{\\\"A\\\":255,\\\"R\\\":191,\\\"G\\\":0,\\\"B\\\":0}},\\\"AccentText\\\":{\\\"DefaultColor\\\":{\\\"A\\\":255,\\\"R\\\":0,\\\"G\\\":114,\\\"B\\\":198}},\\\"SearchURL\\\":{\\\"DefaultColor\\\":{\\\"A\\\":255,\\\"R\\\":51,\\\"G\\\":130,\\\"B\\\":0}},\\\"Hyperlink\\\":{\\\"DefaultColor\\\":{\\\"A\\\":255,\\\"R\\\":0,\\\"G\\\":114,\\\"B\\\":198}},\\\"Hyperlinkfollowed\\\":{\\\"DefaultColor\\\":{\\\"A\\\":255,\\\"R\\\":102,\\\"G\\\":51,\\\"B\\\":153}},\\\"HyperlinkActive\\\":{\\\"DefaultColor\\\":{\\\"A\\\":255,\\\"R\\\":0,\\\"G\\\":77,\\\"B\\\":133}},\\\"CommandLinks\\\":{\\\"DefaultColor\\\":{\\\"A\\\":255,\\\"R\\\":102,\\\"G\\\":102,\\\"B\\\":102}},\\\"CommandLinksSecondary\\\":{\\\"DefaultColor\\\":{\\\"A\\\":255,\\\"R\\\":38,\\\"G\\\":38,\\\"B\\\":38}},\\\"CommandLinksHover\\\":{\\\"DefaultColor\\\":{\\\"A\\\":255,\\\"R\\\":0,\\\"G\\\":114,\\\"B\\\":198}},\\\"CommandLinksPressed\\\":{\\\"DefaultColor\\\":{\\\"A\\\":255,\\\"R\\\":0,\\\"G\\\":77,\\\"B\\\":133}},\\\"CommandLinksDisabled\\\":{\\\"DefaultColor\\\":{\\\"A\\\":255,\\\"R\\\":177,\\\"G\\\":177,\\\"B\\\":177}},\\\"BackgroundOverlay\\\":{\\\"DefaultColor\\\":{\\\"A\\\":216,\\\"R\\\":255,\\\"G\\\":255,\\\"B\\\":255}},\\\"DisabledBackground\\\":{\\\"DefaultColor\\\":{\\\"A\\\":255,\\\"R\\\":253,\\\"G\\\":253,\\\"B\\\":253}},\\\"PageBackground\\\":{\\\"DefaultColor\\\":{\\\"A\\\":255,\\\"R\\\":255,\\\"G\\\":255,\\\"B\\\":255}},\\\"H"
+        }
+      ],
+      "network_sample": [
+        {
+          "method": "GET",
+          "status": 200,
+          "url": "https://api-cdn.mypurecloud.ie/webdeployments/v1/deployments/bf04c4ac-89eb-4d7b-9061-14343d788e27/domains.json",
+          "content_type": "application/json",
+          "resource_type": "xhr",
+          "request_post_data": "",
+          "response_shape": "json-object:allowAllDomains,allowedDomains",
+          "preview": "{\"allowAllDomains\":true,\"allowedDomains\":[]}"
+        },
+        {
+          "method": "GET",
+          "status": 200,
+          "url": "https://www.chamber.org.sa/sites/Arabic/Events/ChamberEvents/_api/Microsoft.SharePoint.Portal.SuiteNavData.GetSuiteNavData?v=2&Locale=ar-SA",
+          "content_type": "application/json",
+          "resource_type": "xhr",
+          "request_post_data": "",
+          "response_shape": "json-object:d",
+          "preview": "{\"d\":{\"GetSuiteNavData\":\"{\\\"CssUrl\\\":\\\"\\\\/_layouts\\\\/15\\\\/1025\\\\/styles\\\\/SuiteNav.css?rev=xIL7dTuBXVfEY6%2FjttQ%2BNA%3D%3DTAG0\\\",\\\"DoNotCache\\\":false,\\\"JsUrl\\\":\\\"\\\\/_layouts\\\\/15\\\\/SuiteNavStandalone.js?rev=bqDDbgRY1QsInq9NuqzNrw%3D%3DTAG0\\\",\\\"NavBarData\\\":{\\\"AboutMeLink\\\":null,\\\"ClientData\\\":\\\"{\\\\\\\"IsRTL\\\\\\\":true, \\\\\\\"IsFallbackShell\\\\\\\":true, \\\\\\\"ShowAppLauncherV3\\\\\\\":true}\\\",\\\"CurrentMainLinkElementID\\\":\\\"ShellSharepoint\\\",\\\"CurrentWorkloadHelpSubLinks\\\":[],\\\"CurrentWorkloadSettingsSubLinks\\\":[],\\\"CurrentWorkloadUserSubLinks\\\":[],\\\"HelpLink\\\":{\\\"Id\\\":\\\"HelpLink\\\",\\\"Text\\\":\\\"Help\\\",\\\"Title\\\":null,\\\"Url\\\":null},\\\"IsAuthenticated\\\":false,\\\"PinnedApps\\\":[],\\\"SignOutLink\\\":{\\\"Id\\\":\\\"ShellSignout\\\",\\\"Text\\\":null,\\\"Title\\\":null,\\\"Url\\\":null},\\\"StringsOverride\\\":null,\\\"UserDisplayName\\\":null,\\\"WorkloadLinks\\\":null},\\\"SPSuiteVersion\\\":2}\"}}"
+        },
+        {
+          "method": "GET",
+          "status": 200,
+          "url": "https://api-cdn.mypurecloud.ie/webdeployments/v1/deployments/bf04c4ac-89eb-4d7b-9061-14343d788e27/config.json",
+          "content_type": "application/json",
+          "resource_type": "xhr",
+          "request_post_data": "",
+          "response_shape": "json-object:id,version,headlessMode,languages,defaultLanguage,apiEndpoint,messenger,position",
+          "preview": "{\"id\":\"35941ef8-d3b4-4cac-b011-f0e5bf3d7569\",\"version\":\"4\",\"headlessMode\":{\"enabled\":false},\"languages\":[\"ar\"],\"defaultLanguage\":\"ar\",\"apiEndpoint\":\"https://api.mypurecloud.ie\",\"messenger\":{\"enabled\":true,\"apps\":{\"conversations\":{\"enabled\":true,\"messagingEndpoint\":\"wss://webmessaging.mypurecloud.ie\",\"showAgentTypingIndicator\":true,\"showUserTypingIndicator\":true,\"autoStart\":{\"enabled\":true},\"markdown\":{\"enabled\":true},\"conversationDisconnect\":{\"enabled\":false,\"type\":\"Send\"},\"conversationClear\":{\"enabled\":true},\"humanize\":{\"enabled\":false,\"bot\":{\"name\":\"\",\"avatarUrl\":\"\"}}}},\"styles\":{\"primaryColor\":\"#015599\"},\"launcherButton\":{\"visibility\":\"On\"},\"fileUpload\":{\"enableAttachments\":true,\"modes\":[{\"fileTypes\":[\"image/jpeg\",\"image/gif\",\"image/png\"],\"maxFileSizeKB\":10240}]},\"homeScreen\":{\"enabled\":false,\"logoUrl\":\"\"}},\"position\":{\"alignment\":\"Auto\",\"sideSpace\":20,\"bottomSpace\":12},\"customI18NLabels\":[],\"journeyEvents\":{\"enabled\":false},\"status\":\"Active\",\"cobrowse\":{\"enabled\":false,\"allowAgentControl\":true,\"allowAgentNavigation\":true,\"maskSelectors\":[],\"readonlySelectors\":[],\"channels\":[]},\"auth\":{\"enabled\":false,\"allowSessionUpgrade\":false}}"
+        },
+        {
+          "method": "POST",
+          "status": 200,
+          "url": "https://bam.eu01.nr-data.net/1/NRJS-63ad9662344bba3672e?a=538748657&sa=1&v=1.318.0&t=Unnamed%20Transaction&rst=575&ck=0&s=0&ref=https://apps.mypurecloud.ie/messenger/thirdparty-plugins.html&ptid=5b21c284fa19c3d2&af=err,spa,xhr,stn,ins&be=28&fe=525&dc=7&perf=%7B%22timing%22:%7B%22of%22:1787190973791,%22n%22:0,%22f%22:1,%22dn%22:1,%22dne%22:1,%22c%22:1,%22s%22:1,%22ce%22:1,%22rq%22:2,%22rp%22:29,%22rpe%22:30,%22di%22:36,%22ds%22:36,%22de%22:36,%22dc%22:552,%22l%22:552,%22le%22:554%7D,%22navigation%22:%7B%7D%7D",
+          "content_type": "application/json",
+          "resource_type": "xhr",
+          "request_post_data": "{\"ja\":{\"nrAgentProvider\":\"index-cannula-cli\",\"webdriverDetected\":true}}",
+          "response_shape": "json-object:stn,err,ins,spa,sr,srs,st,sts",
+          "preview": "{\"stn\":1,\"err\":1,\"ins\":1,\"spa\":1,\"sr\":0,\"srs\":0,\"st\":1,\"sts\":0,\"log\":2,\"logapi\":2,\"app\":{\"agents\":[{\"entityGuid\":\"NDYyMzExNHxCUk9XU0VSfEFQUExJQ0FUSU9OfDUzODc0ODY1Nw\"}],\"nrServerTime\":1787190974753}}"
+        },
+        {
+          "method": "GET",
+          "status": 200,
+          "url": "https://www.chamber.org.sa/sites/Arabic/Events/ChamberEvents/_api/SP.Web.GetContextWebThemeData?lcid=1025",
+          "content_type": "application/json",
+          "resource_type": "xhr",
+          "request_post_data": "",
+          "response_shape": "json-like-invalid",
+          "preview": "{\"d\":{\"GetContextWebThemeData\":\"{\\\"Version\\\":\\\"1\\\",\\\"ThemeCacheToken\\\":\\\"/sites/Arabic/Events/ChamberEvents::6:\\\",\\\"IsInverted\\\":false,\\\"IsDefault\\\":true,\\\"NoImageRecoloring\\\":true,\\\"BackgroundImageUri\\\":null,\\\"Palette\\\":{\\\"Colors\\\":{\\\"BodyText\\\":{\\\"DefaultColor\\\":{\\\"A\\\":255,\\\"R\\\":68,\\\"G\\\":68,\\\"B\\\":68}},\\\"SubtleBodyText\\\":{\\\"DefaultColor\\\":{\\\"A\\\":255,\\\"R\\\":119,\\\"G\\\":119,\\\"B\\\":119}},\\\"StrongBodyText\\\":{\\\"DefaultColor\\\":{\\\"A\\\":255,\\\"R\\\":38,\\\"G\\\":38,\\\"B\\\":38}},\\\"DisabledText\\\":{\\\"DefaultColor\\\":{\\\"A\\\":255,\\\"R\\\":177,\\\"G\\\":177,\\\"B\\\":177}},\\\"SiteTitle\\\":{\\\"DefaultColor\\\":{\\\"A\\\":255,\\\"R\\\":38,\\\"G\\\":38,\\\"B\\\":38}},\\\"WebPartHeading\\\":{\\\"DefaultColor\\\":{\\\"A\\\":255,\\\"R\\\":68,\\\"G\\\":68,\\\"B\\\":68}},\\\"ErrorText\\\":{\\\"DefaultColor\\\":{\\\"A\\\":255,\\\"R\\\":191,\\\"G\\\":0,\\\"B\\\":0}},\\\"AccentText\\\":{\\\"DefaultColor\\\":{\\\"A\\\":255,\\\"R\\\":0,\\\"G\\\":114,\\\"B\\\":198}},\\\"SearchURL\\\":{\\\"DefaultColor\\\":{\\\"A\\\":255,\\\"R\\\":51,\\\"G\\\":130,\\\"B\\\":0}},\\\"Hyperlink\\\":{\\\"DefaultColor\\\":{\\\"A\\\":255,\\\"R\\\":0,\\\"G\\\":114,\\\"B\\\":198}},\\\"Hyperlinkfollowed\\\":{\\\"DefaultColor\\\":{\\\"A\\\":255,\\\"R\\\":102,\\\"G\\\":51,\\\"B\\\":153}},\\\"HyperlinkActive\\\":{\\\"DefaultColor\\\":{\\\"A\\\":255,\\\"R\\\":0,\\\"G\\\":77,\\\"B\\\":133}},\\\"CommandLinks\\\":{\\\"DefaultColor\\\":{\\\"A\\\":255,\\\"R\\\":102,\\\"G\\\":102,\\\"B\\\":102}},\\\"CommandLinksSecondary\\\":{\\\"DefaultColor\\\":{\\\"A\\\":255,\\\"R\\\":38,\\\"G\\\":38,\\\"B\\\":38}},\\\"CommandLinksHover\\\":{\\\"DefaultColor\\\":{\\\"A\\\":255,\\\"R\\\":0,\\\"G\\\":114,\\\"B\\\":198}},\\\"CommandLinksPressed\\\":{\\\"DefaultColor\\\":{\\\"A\\\":255,\\\"R\\\":0,\\\"G\\\":77,\\\"B\\\":133}},\\\"CommandLinksDisabled\\\":{\\\"DefaultColor\\\":{\\\"A\\\":255,\\\"R\\\":177,\\\"G\\\":177,\\\"B\\\":177}},\\\"BackgroundOverlay\\\":{\\\"DefaultColor\\\":{\\\"A\\\":216,\\\"R\\\":255,\\\"G\\\":255,\\\"B\\\":255}},\\\"DisabledBackground\\\":{\\\"DefaultColor\\\":{\\\"A\\\":255,\\\"R\\\":253,\\\"G\\\":253,\\\"B\\\":253}},\\\"PageBackground\\\":{\\\"DefaultColor\\\":{\\\"A\\\":255,\\\"R\\\":255,\\\"G\\\":255,\\\"B\\\":255}},\\\"H"
+        },
+        {
+          "method": "GET",
+          "status": 200,
+          "url": "https://www.chamber.org.sa/sites/Arabic/_api/web/lists/getbytitle('footerNav')/items?$select=*&$orderby=order0%20asc",
+          "content_type": "application/json",
+          "resource_type": "xhr",
+          "request_post_data": "",
+          "response_shape": "json-like-invalid",
+          "preview": "{\"d\":{\"results\":[{\"__metadata\":{\"id\":\"7b76ea02-3843-4b8e-a6dd-b602fe188284\",\"uri\":\"https://www.chamber.org.sa/sites/Arabic/_api/Web/Lists(guid'2097882a-dc90-4bc9-bdce-4b61a7192f72')/Items(22)\",\"etag\":\"\\\"1\\\"\",\"type\":\"SP.Data.FooterNavListItem\"},\"FirstUniqueAncestorSecurableObject\":{\"__deferred\":{\"uri\":\"https://www.chamber.org.sa/sites/Arabic/_api/Web/Lists(guid'2097882a-dc90-4bc9-bdce-4b61a7192f72')/Items(22)/FirstUniqueAncestorSecurableObject\"}},\"RoleAssignments\":{\"__deferred\":{\"uri\":\"https://www.chamber.org.sa/sites/Arabic/_api/Web/Lists(guid'2097882a-dc90-4bc9-bdce-4b61a7192f72')/Items(22)/RoleAssignments\"}},\"Activities\":{\"__deferred\":{\"uri\":\"https://www.chamber.org.sa/sites/Arabic/_api/Web/Lists(guid'2097882a-dc90-4bc9-bdce-4b61a7192f72')/Items(22)/Activities\"}},\"AttachmentFiles\":{\"__deferred\":{\"uri\":\"https://www.chamber.org.sa/sites/Arabic/_api/Web/Lists(guid'2097882a-dc90-4bc9-bdce-4b61a7192f72')/Items(22)/AttachmentFiles\"}},\"ContentType\":{\"__deferred\":{\"uri\":\"https://www.chamber.org.sa/sites/Arabic/_api/Web/Lists(guid'2097882a-dc90-4bc9-bdce-4b61a7192f72')/Items(22)/ContentType\"}},\"GetDlpPolicyTip\":{\"__deferred\":{\"uri\":\"https://www.chamber.org.sa/sites/Arabic/_api/Web/Lists(guid'2097882a-dc90-4bc9-bdce-4b61a7192f72')/Items(22)/GetDlpPolicyTip\"}},\"FieldValuesAsHtml\":{\"__deferred\":{\"uri\":\"https://www.chamber.org.sa/sites/Arabic/_api/Web/Lists(guid'2097882a-dc90-4bc9-bdce-4b61a7192f72')/Items(22)/FieldValuesAsHtml\"}},\"FieldValuesAsText\":{\"__deferred\":{\"uri\":\"https://www.chamber.org.sa/sites/Arabic/_api/Web/Lists(guid'2097882a-dc90-4bc9-bdce-4b61a7192f72')/Items(22)/FieldValuesAsText\"}},\"FieldValuesForEdit\":{\"__deferred\":{\"uri\":\"https://www.chamber.org.sa/sites/Arabic/_api/Web/Lists(guid'2097882a-dc90-4bc9-bdce-4b61a7192f72')/Items(22)/FieldValuesForEdit\"}},\"File\":{\"_"
+        },
+        {
+          "method": "GET",
+          "status": 200,
+          "url": "https://www.chamber.org.sa/sites/Arabic/_api/web/lists/getbytitle('MainNav')/items?$select=*,Parent/Title,Parent/Id&$expand=Parent&$orderby=order0%20asc",
+          "content_type": "application/json",
+          "resource_type": "xhr",
+          "request_post_data": "",
+          "response_shape": "json-like-invalid",
+          "preview": "{\"d\":{\"results\":[{\"__metadata\":{\"id\":\"67db5ce4-63a4-45a1-a929-53a9f21c7987\",\"uri\":\"https://www.chamber.org.sa/sites/Arabic/_api/Web/Lists(guid'85a22833-1458-4663-b8b1-0e9e8c6ec640')/Items(29)\",\"etag\":\"\\\"2\\\"\",\"type\":\"SP.Data.MainNavListItem\"},\"FirstUniqueAncestorSecurableObject\":{\"__deferred\":{\"uri\":\"https://www.chamber.org.sa/sites/Arabic/_api/Web/Lists(guid'85a22833-1458-4663-b8b1-0e9e8c6ec640')/Items(29)/FirstUniqueAncestorSecurableObject\"}},\"RoleAssignments\":{\"__deferred\":{\"uri\":\"https://www.chamber.org.sa/sites/Arabic/_api/Web/Lists(guid'85a22833-1458-4663-b8b1-0e9e8c6ec640')/Items(29)/RoleAssignments\"}},\"Activities\":{\"__deferred\":{\"uri\":\"https://www.chamber.org.sa/sites/Arabic/_api/Web/Lists(guid'85a22833-1458-4663-b8b1-0e9e8c6ec640')/Items(29)/Activities\"}},\"AttachmentFiles\":{\"__deferred\":{\"uri\":\"https://www.chamber.org.sa/sites/Arabic/_api/Web/Lists(guid'85a22833-1458-4663-b8b1-0e9e8c6ec640')/Items(29)/AttachmentFiles\"}},\"ContentType\":{\"__deferred\":{\"uri\":\"https://www.chamber.org.sa/sites/Arabic/_api/Web/Lists(guid'85a22833-1458-4663-b8b1-0e9e8c6ec640')/Items(29)/ContentType\"}},\"GetDlpPolicyTip\":{\"__deferred\":{\"uri\":\"https://www.chamber.org.sa/sites/Arabic/_api/Web/Lists(guid'85a22833-1458-4663-b8b1-0e9e8c6ec640')/Items(29)/GetDlpPolicyTip\"}},\"FieldValuesAsHtml\":{\"__deferred\":{\"uri\":\"https://www.chamber.org.sa/sites/Arabic/_api/Web/Lists(guid'85a22833-1458-4663-b8b1-0e9e8c6ec640')/Items(29)/FieldValuesAsHtml\"}},\"FieldValuesAsText\":{\"__deferred\":{\"uri\":\"https://www.chamber.org.sa/sites/Arabic/_api/Web/Lists(guid'85a22833-1458-4663-b8b1-0e9e8c6ec640')/Items(29)/FieldValuesAsText\"}},\"FieldValuesForEdit\":{\"__deferred\":{\"uri\":\"https://www.chamber.org.sa/sites/Arabic/_api/Web/Lists(guid'85a22833-1458-4663-b8b1-0e9e8c6ec640')/Items(29)/FieldValuesForEdit\"}},\"File\":{\"__d"
+        },
+        {
+          "method": "GET",
+          "status": 400,
+          "url": "https://www.chamber.org.sa/sites/Arabic/Events/ChamberEvents/_api/web/getuserbyid(0)",
+          "content_type": "application/json",
+          "resource_type": "xhr",
+          "request_post_data": "",
+          "response_shape": "json-object:error",
+          "preview": "{\"error\":{\"code\":\"-2147024809, System.ArgumentException\",\"message\":{\"lang\":\"ar-SA\",\"value\":\"Value does not fall within the expected range.\"}}}"
+        },
+        {
+          "method": "GET",
+          "status": 200,
+          "url": "https://apps.mypurecloud.ie/messenger/i18n/ar.json",
+          "content_type": "application/json",
+          "resource_type": "xhr",
+          "request_post_data": "",
+          "response_shape": "json-like-invalid",
+          "preview": "{ \"language\": \"ar\", \"home\": { \"headerTitle\": \"مرحبًا\", \"headerSubTitle\": \"نحن هنا للمساعدة\", \"ariaHomeScreenOpenStatus\": \"تم فتح الشاشة الرئيسية\", \"ariaExpandMenu\": \"توسيع القائمة\" }, \"conversations\": { \"headerTitle\": \"راسلنا\", \"inputMessagePlaceholder\": \"أرسل رسالة...\", \"typeMessagePlaceholder\": \"اكتب رسالتك هنا\", \"startConversationMessage\": \"هذه بداية حديثك معنا. يرجى إرسال رسالة للبدء.\", \"autoStartConversationMessage\": \"هذه هي بداية محادثتك معنا.\", \"sessionExpirationWarningMessage\": \"يرجى العلم أن الجلسة ستنتهي بعد <%sessionMinutes%> دقيقة من عدم النشاط.\", \"notSignedInMessage\": \"أنت تعمل غير محدد الهوية.\", \"signedInMessage\": \"تم تسجيل دخولك.\", \"signedInMessageWithName\": \"تم تسجيل دخولك باسم <%username%>\", \"signedOutMessage\": \"لقد تم تسجيل خروجك من هذه الجلسة.\", \"agentDefaultName\": \"وكيل\", \"botDefaultName\": \"الروبوت\", \"customerDefaultName\": \"أنت\", \"cancelButton\": \"إلغاء الأمر\", \"closeButton\": \"إغلاق\", \"startConversationButtonTitle\": \"راسلنا\", \"continueConversationButtonTitle\": \"متابعة\", \"openConversationButtonTitle\": \"فتح\", \"startNewConversation\": \"بدء من جديد\", \"startConversationCardTitle\": \"بدء محادثة\", \"continueConversationCardTitle\": \"تابع المحادثة\", \"yourConversationCardTitle\": \"محادثتك\", \"yesButton\": \"نعم\", \"noButton\": \"لا\", \"okButton\": \"حسنًا\", \"sureButton\": \"نعم، أنا متأكد\", \"downloadButton\": \"تنزيل\", \"openInNewTabButton\": \"فتح في علامة تبويب جديدة\", \"signInButton\": \"تسجيل الدخول\", \"clearButton\": \"مسح\", \"previewFile\": \"انقر لمعاينة الملف\", \"pdfPreviewTitle\": \"معاينة PDF الخاص بـ Messenger\", \"textFilePreviewTitle\": \"معاينة ملف نصي خاص بـ Messenger\", \"disconnectMessage\": \"لقد انتهت محادثتك\", \"disconne"
+        }
+      ]
+    },
+    {
       "id": "riyadh-city-events",
-      "probed_at": "2026-08-19T13:27:16.775Z",
+      "probed_at": "2026-08-20T01:56:39.025Z",
       "name": "Riyadh City Events",
       "priority": 51,
       "url": "https://riyadh.sa/en/events/all",
@@ -28,14 +270,14 @@
       "status": "ok",
       "http_status": 200,
       "navigation_error": "",
-      "duration_ms": 9884,
+      "duration_ms": 12122,
       "classification": "rendered-html-candidates",
       "next_action": "اكتب extractor مرن من DOM بعد الرندر أو حسن selector الحالي.",
       "title": "الموقع الرسمي لمدينة الرياض",
-      "text_bytes": 826,
-      "html_bytes": 155263,
-      "html_snapshot": "data/raw/browser-probes/riyadh-city-events-2026-08-19T13-27-06-417Z.html",
-      "screenshot": "data/raw/browser-probes/riyadh-city-events-2026-08-19T13-27-06-417Z.png",
+      "text_bytes": 825,
+      "html_bytes": 155262,
+      "html_snapshot": "data/raw/browser-probes/riyadh-city-events-2026-08-20T01-56-06-890Z.html",
+      "screenshot": "data/raw/browser-probes/riyadh-city-events-2026-08-20T01-56-06-890Z.png",
       "signals": {
         "has_next_data": false,
         "has_nuxt": false,

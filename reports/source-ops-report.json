@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-19T13:41:39.063Z",
+  "generated_at": "2026-08-20T02:10:55.099Z",
   "files": {
     "registry": "data/source_registry.json",
     "candidates": "data/source_candidates.json",
@@ -11,25 +11,25 @@
   },
   "collection": {
     "basis": "source_collection_report_adaptive",
-    "collected_at": "2026-08-19T13:27:16.989Z",
+    "collected_at": "2026-08-20T01:56:39.233Z",
     "freshness": "fresh",
-    "discovered": 310,
-    "written": 632
+    "discovered": 322,
+    "written": 624
   },
   "sources": {
     "total": 88,
-    "attempted": 23,
-    "due": 23,
-    "deferred": 25,
+    "attempted": 31,
+    "due": 31,
+    "deferred": 17,
     "scheduled": 48,
     "runnable": 48,
     "collection_coverage_pct": 100,
-    "registry_collection_coverage_pct": 26,
+    "registry_collection_coverage_pct": 35,
     "scheduled_runnable_coverage_pct": 100,
-    "healthy": 19,
-    "zero_yield": 3,
-    "errors": 1,
-    "cadence_deferred": 25,
+    "healthy": 20,
+    "zero_yield": 2,
+    "errors": 9,
+    "cadence_deferred": 17,
     "not_collected": 40,
     "unattempted_high_priority": 3,
     "health": [
@@ -61,31 +61,25 @@
         "id": "moc-cultural-calendar",
         "name": "Ministry of Culture Cultural Calendar",
         "priority": 3,
-        "status": "deferred",
-        "historical_status": "collector-error",
-        "cadence_reason": "error-cooldown",
-        "next_due_at": "2026-08-19T13:28:28.100Z",
-        "error_streak": 28,
+        "status": "collection-error",
+        "error_streak": 0,
         "zero_yield_streak": 0,
-        "last_attempted_at": "2026-08-18T13:28:28.100Z",
+        "last_attempted_at": null,
         "extracted": 0,
         "candidates": 0,
-        "next_action": "مؤجل حتى 2026-08-19T13:28:28.100Z وفق الجدولة التكيفية."
+        "next_action": "fetch failed; fetch failed"
       },
       {
         "id": "mos-events",
         "name": "Ministry of Sport Events",
         "priority": 4,
-        "status": "deferred",
-        "historical_status": "collector-error",
-        "cadence_reason": "error-cooldown",
-        "next_due_at": "2026-08-19T13:28:28.100Z",
-        "error_streak": 28,
+        "status": "collection-error",
+        "error_streak": 0,
         "zero_yield_streak": 0,
-        "last_attempted_at": "2026-08-18T13:28:28.100Z",
+        "last_attempted_at": null,
         "extracted": 0,
         "candidates": 0,
-        "next_action": "مؤجل حتى 2026-08-19T13:28:28.100Z وفق الجدولة التكيفية."
+        "next_action": "fetch failed; page.goto: Timeout 30000ms exceeded.\nCall log:\n  - navigating to \"https://www.mos.gov.sa/en/media/events\", waiting until \"domcontentloaded\"\n"
       },
       {
         "id": "webook-explore",
@@ -131,24 +125,21 @@
         "error_streak": 0,
         "zero_yield_streak": 0,
         "last_attempted_at": null,
-        "extracted": 5,
-        "candidates": 5,
+        "extracted": 4,
+        "candidates": 4,
         "next_action": "استمر بالمراجعة والتكرار قبل النشر."
       },
       {
         "id": "monshaat-events",
         "name": "Monsha'at All Events",
         "priority": 9,
-        "status": "deferred",
-        "historical_status": "collector-error",
-        "cadence_reason": "error-cooldown",
-        "next_due_at": "2026-08-19T13:28:28.100Z",
-        "error_streak": 11,
+        "status": "collection-error",
+        "error_streak": 0,
         "zero_yield_streak": 0,
-        "last_attempted_at": "2026-08-18T13:28:28.100Z",
+        "last_attempted_at": null,
         "extracted": 0,
         "candidates": 1,
-        "next_action": "مؤجل حتى 2026-08-19T13:28:28.100Z وفق الجدولة التكيفية."
+        "next_action": "fetch failed; fetch failed"
       },
       {
         "id": "invest-saudi-events",
@@ -178,16 +169,13 @@
         "id": "eye-of-riyadh-events",
         "name": "Eye of Riyadh Events",
         "priority": 12,
-        "status": "deferred",
-        "historical_status": "discovery-only",
-        "cadence_reason": "discovery-daily",
-        "next_due_at": "2026-08-19T13:28:28.100Z",
+        "status": "collection-error",
         "error_streak": 0,
         "zero_yield_streak": 0,
-        "last_attempted_at": "2026-08-18T13:28:28.100Z",
+        "last_attempted_at": null,
         "extracted": 0,
         "candidates": 6,
-        "next_action": "مؤجل حتى 2026-08-19T13:28:28.100Z وفق الجدولة التكيفية."
+        "next_action": "Discovery-only source unavailable in this run: HTTP 403"
       },
       {
         "id": "ten-times-saudi",
@@ -205,16 +193,13 @@
         "id": "eventbrite-saudi",
         "name": "Eventbrite Saudi Arabia",
         "priority": 14,
-        "status": "deferred",
-        "historical_status": "discovery-only",
-        "cadence_reason": "discovery-daily",
-        "next_due_at": "2026-08-19T13:28:28.100Z",
+        "status": "collection-error",
         "error_streak": 0,
         "zero_yield_streak": 0,
-        "last_attempted_at": "2026-08-18T13:28:28.100Z",
+        "last_attempted_at": null,
         "extracted": 0,
         "candidates": 8,
-        "next_action": "مؤجل حتى 2026-08-19T13:28:28.100Z وفق الجدولة التكيفية."
+        "next_action": "Discovery-only source unavailable in this run: HTTP 405"
       },
       {
         "id": "platinumlist-jeddah",
@@ -232,16 +217,13 @@
         "id": "tuwaiq-academy-bootcamps",
         "name": "Tuwaiq Academy Bootcamps and Programs",
         "priority": 16,
-        "status": "deferred",
-        "historical_status": "collector-error",
-        "cadence_reason": "error-cooldown",
-        "next_due_at": "2026-08-19T13:28:28.100Z",
-        "error_streak": 5,
+        "status": "collection-error",
+        "error_streak": 0,
         "zero_yield_streak": 0,
-        "last_attempted_at": "2026-08-18T13:28:28.100Z",
+        "last_attempted_at": null,
         "extracted": 0,
         "candidates": 37,
-        "next_action": "مؤجل حتى 2026-08-19T13:28:28.100Z وفق الجدولة التكيفية."
+        "next_action": "HTTP 403"
       },
       {
         "id": "future-skills-catalog",
@@ -326,8 +308,8 @@
         "error_streak": 0,
         "zero_yield_streak": 0,
         "last_attempted_at": null,
-        "extracted": 65,
-        "candidates": 70,
+        "extracted": 64,
+        "candidates": 68,
         "next_action": "استمر بالمراجعة والتكرار قبل النشر."
       },
       {
@@ -346,13 +328,16 @@
         "id": "sdaia-academy-programs",
         "name": "SDAIA Academy Programs",
         "priority": 25,
-        "status": "zero-yield",
+        "status": "deferred",
+        "historical_status": "zero-yield",
+        "cadence_reason": "zero-yield-cooldown",
+        "next_due_at": "2026-08-22T13:27:16.989Z",
         "error_streak": 0,
-        "zero_yield_streak": 0,
-        "last_attempted_at": null,
+        "zero_yield_streak": 18,
+        "last_attempted_at": "2026-08-19T13:27:16.989Z",
         "extracted": 0,
         "candidates": 0,
-        "next_action": "No future date-complete candidates found by the conservative extractor."
+        "next_action": "مؤجل حتى 2026-08-22T13:27:16.989Z وفق الجدولة التكيفية."
       },
       {
         "id": "saudi-events-app",
@@ -409,16 +394,13 @@
         "id": "saudi-pro-league-fixtures",
         "name": "Saudi Pro League Fixtures",
         "priority": 30,
-        "status": "deferred",
-        "historical_status": "collector-error",
-        "cadence_reason": "error-cooldown",
-        "next_due_at": "2026-08-19T13:28:28.100Z",
-        "error_streak": 8,
+        "status": "collection-error",
+        "error_streak": 0,
         "zero_yield_streak": 0,
-        "last_attempted_at": "2026-08-18T13:28:28.100Z",
+        "last_attempted_at": null,
         "extracted": 0,
         "candidates": 0,
-        "next_action": "مؤجل حتى 2026-08-19T13:28:28.100Z وفق الجدولة التكيفية."
+        "next_action": "fetch failed"
       },
       {
         "id": "neom-newsroom-events",
@@ -436,13 +418,13 @@
         "id": "saudi-space-agency-events",
         "name": "Saudi Space Agency Events",
         "priority": 32,
-        "status": "healthy",
+        "status": "collection-error",
         "error_streak": 0,
         "zero_yield_streak": 0,
         "last_attempted_at": null,
-        "extracted": 1,
+        "extracted": 0,
         "candidates": 1,
-        "next_action": "استمر بالمراجعة والتكرار قبل النشر."
+        "next_action": "fetch failed"
       },
       {
         "id": "cst-events-news",
@@ -464,8 +446,8 @@
         "error_streak": 0,
         "zero_yield_streak": 0,
         "last_attempted_at": null,
-        "extracted": 80,
-        "candidates": 91,
+        "extracted": 79,
+        "candidates": 90,
         "next_action": "استمر بالمراجعة والتكرار قبل النشر."
       },
       {
@@ -496,16 +478,13 @@
         "id": "moc-cultural-subportals",
         "name": "Ministry of Culture Commission Calendars",
         "priority": 37,
-        "status": "deferred",
-        "historical_status": "collector-error",
-        "cadence_reason": "error-cooldown",
-        "next_due_at": "2026-08-19T13:28:28.100Z",
-        "error_streak": 28,
+        "status": "collection-error",
+        "error_streak": 0,
         "zero_yield_streak": 0,
-        "last_attempted_at": "2026-08-18T13:28:28.100Z",
+        "last_attempted_at": null,
         "extracted": 0,
         "candidates": 11,
-        "next_action": "مؤجل حتى 2026-08-19T13:28:28.100Z وفق الجدولة التكيفية."
+        "next_action": "fetch failed; fetch failed"
       },
       {
         "id": "historic-jeddah-albalad",
@@ -531,7 +510,7 @@
         "zero_yield_streak": 4,
         "last_attempted_at": "2026-08-19T02:15:04.117Z",
         "extracted": 0,
-        "candidates": 33,
+        "candidates": 32,
         "next_action": "مؤجل حتى 2026-08-20T02:15:04.117Z وفق الجدولة التكيفية."
       },
       {
@@ -637,13 +616,16 @@
         "id": "sfda-events",
         "name": "Saudi Food and Drug Authority Events",
         "priority": 48,
-        "status": "zero-yield",
+        "status": "deferred",
+        "historical_status": "zero-yield",
+        "cadence_reason": "zero-yield-cooldown",
+        "next_due_at": "2026-08-20T13:27:16.989Z",
         "error_streak": 0,
-        "zero_yield_streak": 0,
-        "last_attempted_at": null,
+        "zero_yield_streak": 6,
+        "last_attempted_at": "2026-08-19T13:27:16.989Z",
         "extracted": 0,
-        "candidates": 3,
-        "next_action": "No future date-complete candidates found by the conservative extractor."
+        "candidates": 2,
+        "next_action": "مؤجل حتى 2026-08-20T13:27:16.989Z وفق الجدولة التكيفية."
       },
       {
         "id": "saudi-contractors-authority-events",
@@ -772,13 +754,13 @@
         "id": "asharqia-chamber-events",
         "name": "Asharqia Chamber Events",
         "priority": 59,
-        "status": "collection-error",
+        "status": "healthy",
         "error_streak": 0,
         "zero_yield_streak": 0,
         "last_attempted_at": null,
-        "extracted": 0,
+        "extracted": 4,
         "candidates": 4,
-        "next_action": "fetch failed; page.goto: Timeout 30000ms exceeded.\nCall log:\n  - navigating to \"https://www.chamber.org.sa/sites/Arabic/Events/ChamberEvents/Pages/AllChamberEvents.aspx\", waiting until \"domcontentloaded\"\n"
+        "next_action": "استمر بالمراجعة والتكرار قبل النشر."
       },
       {
         "id": "qassim-chamber-events",
@@ -998,8 +980,8 @@
         "error_streak": 0,
         "zero_yield_streak": 0,
         "last_attempted_at": null,
-        "extracted": 10,
-        "candidates": 57,
+        "extracted": 9,
+        "candidates": 56,
         "next_action": "استمر بالمراجعة والتكرار قبل النشر."
       },
       {
@@ -1115,8 +1097,8 @@
         "error_streak": 0,
         "zero_yield_streak": 0,
         "last_attempted_at": null,
-        "extracted": 22,
-        "candidates": 75,
+        "extracted": 21,
+        "candidates": 74,
         "next_action": "استمر بالمراجعة والتكرار قبل النشر."
       },
       {
@@ -1138,57 +1120,51 @@
         "id": "kau-events",
         "name": "King Abdulaziz University Events",
         "priority": 87,
-        "status": "deferred",
-        "historical_status": "zero-yield",
-        "cadence_reason": "zero-yield-cooldown",
-        "next_due_at": "2026-08-19T13:28:28.100Z",
+        "status": "zero-yield",
         "error_streak": 0,
-        "zero_yield_streak": 8,
-        "last_attempted_at": "2026-08-18T13:28:28.100Z",
+        "zero_yield_streak": 0,
+        "last_attempted_at": null,
         "extracted": 0,
         "candidates": 2,
-        "next_action": "مؤجل حتى 2026-08-19T13:28:28.100Z وفق الجدولة التكيفية."
+        "next_action": "No future date-complete candidates found by the conservative extractor."
       },
       {
         "id": "saudicon-events",
         "name": "Saudicon Events",
         "priority": 88,
-        "status": "deferred",
-        "historical_status": "productive",
-        "cadence_reason": "discovery-daily",
-        "next_due_at": "2026-08-19T13:28:28.100Z",
+        "status": "healthy",
         "error_streak": 0,
         "zero_yield_streak": 0,
-        "last_attempted_at": "2026-08-18T13:28:28.100Z",
-        "extracted": 0,
+        "last_attempted_at": null,
+        "extracted": 14,
         "candidates": 14,
-        "next_action": "مؤجل حتى 2026-08-19T13:28:28.100Z وفق الجدولة التكيفية."
+        "next_action": "استمر بالمراجعة والتكرار قبل النشر."
       }
     ]
   },
   "queue": {
-    "total": 632,
+    "total": 624,
     "ready_for_review": 8,
     "approved_for_catalog": 0,
-    "published_from_candidates": 599,
+    "published_from_candidates": 591,
     "actionable": 8,
     "stale_unpublished": 0,
     "duplicate_risk": 8,
     "needs_extraction": 0,
     "needs_evidence": 25,
     "by_review_status": {
-      "approved-for-catalog": 599,
+      "approved-for-catalog": 591,
       "ready-for-review": 8,
       "evidence-captured": 17,
       "new": 8
     },
     "by_publication_gate": {
-      "catalog-review": 599,
+      "catalog-review": 591,
       "duplicate-review": 8,
       "source-evidence": 25
     },
     "by_confidence": {
-      "official": 593,
+      "official": 585,
       "public-listing": 20,
       "verified-secondary": 11,
       "unverified": 8
@@ -1203,21 +1179,20 @@
       "Riyadh City Events": 74,
       "Visit Saudi Calendar": 20,
       "Misk Hub Programs": 12,
-      "Visit Saudi Summer Calendar PDF": 91,
-      "Discover Aseer Events": 33,
+      "Visit Saudi Summer Calendar PDF": 90,
+      "Discover Aseer Events": 32,
       "Visit Saudi Seasons": 28,
-      "Hayy Jameel What's On": 75,
+      "Hayy Jameel What's On": 74,
       "Tuwaiq Academy Bootcamps and Programs": 37,
       "Eye of Riyadh Events": 6,
       "Saudicon Events": 14,
       "Jouf University Summer Programs": 1,
-      "Umm Al-Qura University Events Center": 57,
+      "Umm Al-Qura University Events Center": 56,
       "Monsha'at All Events": 1,
       "Future Skills MCIT Catalogue": 4,
-      "Ithra Events": 70,
-      "Saudi Food and Drug Authority Events": 3,
-      "MDLBEAST Events": 5,
+      "Ithra Events": 68,
       "Saudi Universities and Technical Colleges": 4,
+      "MDLBEAST Events": 4,
       "Misk Hub Events": 2,
       "Dhahran Expo Calendar": 17,
       "Tradepass Official": 1,
@@ -1228,6 +1203,7 @@
       "SCEGA ePortal Events": 4,
       "Asharqia Chamber Events": 4,
       "Eventbrite Saudi Arabia": 8,
+      "Saudi Food and Drug Authority Events": 2,
       "SDAIA Calendar and Events": 2,
       "Saudi Water Authority Events": 8,
       "Middle East Banking AI & Analytics Summit Official": 1,
@@ -1277,7 +1253,7 @@
         "discovery_notes": "",
         "duplicate_risk": true,
         "matched_catalog_event_id": "event-light-nights",
-        "days_to_start": -73,
+        "days_to_start": -74,
         "is_past": false,
         "is_actionable": true,
         "action": "راجع التكرار مع الكتالوج قبل أي اعتماد.",
@@ -1361,7 +1337,7 @@
         "discovery_notes": "",
         "duplicate_risk": true,
         "matched_catalog_event_id": "event-in-act-act-x",
-        "days_to_start": 52,
+        "days_to_start": 51,
         "is_past": false,
         "is_actionable": true,
         "action": "راجع التكرار مع الكتالوج قبل أي اعتماد.",
@@ -1440,7 +1416,7 @@
         }
       },
       {
-        "id": "candidate-saudicon-events-معرض-big-5-construct-saudi-2026-20260830-29f1e1d5",
+        "id": "candidate-saudicon-events-معرض-big-5-construct-saudi-2026-20260830-d7626786",
         "title": "معرض Big 5 Construct Saudi 2026",
         "source_label": "Saudicon Events",
         "city": "Riyadh",
@@ -1496,7 +1472,7 @@
         }
       },
       {
-        "id": "candidate-saudicon-events-قمة-البيانات-الذكية-والذكاء-الاصطناعي-20260826-83f848e3",
+        "id": "candidate-saudicon-events-قمة-البيانات-الذكية-والذكاء-الاصطناعي-20260826-62237c29",
         "title": "قمة البيانات الذكية والذكاء الاصطناعي",
         "source_label": "Saudicon Events",
         "city": "Riyadh",
@@ -1524,7 +1500,7 @@
         }
       },
       {
-        "id": "candidate-saudicon-events-بطولة-كأس-العالم-للرياضات-الإلكترونية-20260706-c111699c",
+        "id": "candidate-saudicon-events-بطولة-كأس-العالم-للرياضات-الإلكترونية-20260706-a37e1298",
         "title": "بطولة كأس العالم للرياضات الإلكترونية",
         "source_label": "Saudicon Events",
         "city": "Saudi Arabia",
@@ -1670,7 +1646,7 @@
     ],
     "archive_sample": [
       {
-        "id": "candidate-saudicon-events-بطولة-كأس-العالم-للرياضات-الإلكترونية-20260706-c111699c",
+        "id": "candidate-saudicon-events-بطولة-كأس-العالم-للرياضات-الإلكترونية-20260706-a37e1298",
         "title": "بطولة كأس العالم للرياضات الإلكترونية",
         "source_label": "Saudicon Events",
         "city": "Saudi Arabia",
@@ -1712,28 +1688,7 @@
         "rank": 7
       },
       {
-        "id": "candidate-saudicon-events-موسم-التمور-في-أسواق-الربوة-بالرياض-20260815-20771c02",
-        "title": "موسم التمور في أسواق الربوة بالرياض",
-        "source_label": "Saudicon Events",
-        "city": "Riyadh",
-        "starts_at": "2026-08-15T09:00:00+03:00",
-        "ends_at": "2026-09-28T17:00:00+03:00",
-        "review_status": "evidence-captured",
-        "publication_gate": "source-evidence",
-        "confidence": "public-listing",
-        "discovery_quality": "",
-        "discovery_score": 0,
-        "discovery_notes": "",
-        "duplicate_risk": false,
-        "matched_catalog_event_id": "",
-        "days_to_start": -4,
-        "is_past": false,
-        "is_actionable": false,
-        "action": "دليل اكتشاف فقط؛ لا ينشر آلياً حتى يثبت من مصدر رسمي.",
-        "rank": 7
-      },
-      {
-        "id": "candidate-saudicon-events-موسم-التمور-في-أسواق-الربوة-20260815-0db17989",
+        "id": "candidate-saudicon-events-موسم-التمور-في-أسواق-الربوة-20260815-960d6286",
         "title": "موسم التمور في أسواق الربوة",
         "source_label": "Saudicon Events",
         "city": "Riyadh",
@@ -1754,7 +1709,28 @@
         "rank": 7
       },
       {
-        "id": "candidate-saudicon-events-مهرجان-شقراء-الأسياح-للتمور-بنسخته-الرابعة-20260816-54b751a0",
+        "id": "candidate-saudicon-events-موسم-التمور-في-أسواق-الربوة-بالرياض-20260815-8bf91eca",
+        "title": "موسم التمور في أسواق الربوة بالرياض",
+        "source_label": "Saudicon Events",
+        "city": "Riyadh",
+        "starts_at": "2026-08-15T09:00:00+03:00",
+        "ends_at": "2026-09-28T17:00:00+03:00",
+        "review_status": "evidence-captured",
+        "publication_gate": "source-evidence",
+        "confidence": "public-listing",
+        "discovery_quality": "",
+        "discovery_score": 0,
+        "discovery_notes": "",
+        "duplicate_risk": false,
+        "matched_catalog_event_id": "",
+        "days_to_start": -4,
+        "is_past": false,
+        "is_actionable": false,
+        "action": "دليل اكتشاف فقط؛ لا ينشر آلياً حتى يثبت من مصدر رسمي.",
+        "rank": 7
+      },
+      {
+        "id": "candidate-saudicon-events-مهرجان-شقراء-الأسياح-للتمور-بنسخته-الرابعة-20260816-ddc44d1a",
         "title": "مهرجان شقراء الأسياح للتمور بنسخته الرابعة",
         "source_label": "Saudicon Events",
         "city": "Saudi Arabia",
@@ -1775,7 +1751,7 @@
         "rank": 7
       },
       {
-        "id": "candidate-saudicon-events-مؤتمر-الأطراف-السابع-عشر-لاتفاقية-الأمم-المتحدة-لمكافحة-التصحر-cop17-20260817-8b6d444b",
+        "id": "candidate-saudicon-events-مؤتمر-الأطراف-السابع-عشر-لاتفاقية-الأمم-المتحدة-لمكافحة-التصحر-cop17-20260817-24579064",
         "title": "مؤتمر الأطراف السابع عشر لاتفاقية الأمم المتحدة لمكافحة التصحر (COP17)",
         "source_label": "Saudicon Events",
         "city": "Saudi Arabia",
@@ -1817,7 +1793,7 @@
         "rank": 7
       },
       {
-        "id": "candidate-saudicon-events-معرض-صناع-للصناعات-الوطنية-2026-20260818-4f53e939",
+        "id": "candidate-saudicon-events-معرض-صناع-للصناعات-الوطنية-2026-20260818-a6d5bdec",
         "title": "معرض صناع للصناعات الوطنية 2026",
         "source_label": "Saudicon Events",
         "city": "Saudi Arabia",
@@ -1838,7 +1814,7 @@
         "rank": 7
       },
       {
-        "id": "candidate-saudicon-events-معرض-اللومي-الحساوي-2026-20260819-691b1096",
+        "id": "candidate-saudicon-events-معرض-اللومي-الحساوي-2026-20260819-2b7285d5",
         "title": "معرض اللومي الحساوي 2026",
         "source_label": "Saudicon Events",
         "city": "Saudi Arabia",
@@ -1859,7 +1835,7 @@
         "rank": 7
       },
       {
-        "id": "candidate-saudicon-events-ملتقى-شور-دلني-الشرقية-2026-20260825-b110f1b8",
+        "id": "candidate-saudicon-events-ملتقى-شور-دلني-الشرقية-2026-20260825-30a6c40c",
         "title": "ملتقى شور دلني - الشرقية 2026",
         "source_label": "Saudicon Events",
         "city": "Dammam",
