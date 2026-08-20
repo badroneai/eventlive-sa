@@ -1,10 +1,10 @@
 {
   "schema": "eventlive.eye-official-link-verification.v1",
-  "generated_at": "2026-08-20T13:36:40.141Z",
+  "generated_at": "2026-08-20T19:10:41.115Z",
   "dry_run": false,
   "totals": {
-    "targets": 12,
-    "confirmed": 4,
+    "targets": 11,
+    "confirmed": 3,
     "skipped": 2,
     "failed": 6
   },
@@ -12,12 +12,6 @@
     {
       "candidate_id": "candidate-eye-of-riyadh-events-oxford-future-of-real-estate-programme-20260805-7c9ee195",
       "title": "Oxford Future of Real Estate Programme",
-      "status": "failed",
-      "reason": "HTTP 403"
-    },
-    {
-      "candidate_id": "candidate-eye-of-riyadh-events-sunaa-2026-20260818-e3819fa8",
-      "title": "SUNAA 2026",
       "status": "failed",
       "reason": "HTTP 403"
     },
@@ -30,20 +24,8 @@
     {
       "candidate_id": "candidate-eye-of-riyadh-events-hrse-ksa-20260830-6945a87a",
       "title": "HRSE KSA",
-      "status": "confirmed",
-      "official_url": "https://informaconnect.com/hrse-saudi/",
-      "official_image_url": "https://knect365.imgix.net/uploads/Drive-business-growth-9027b25db46f6666b1fa03da26592367.png?auto=format&fit=max&w=400",
-      "organizer": "Informa",
-      "confirmed": true,
-      "reason": "confirmed",
-      "title_tokens": [
-        "hrse"
-      ],
-      "matched_title_tokens": [
-        "hrse"
-      ],
-      "year_confirmed": true,
-      "month_confirmed": true
+      "status": "failed",
+      "reason": "HTTP 403"
     },
     {
       "candidate_id": "candidate-eye-of-riyadh-events-big-5-construct-saudi-20260830-2238e3a0",
@@ -86,8 +68,20 @@
     {
       "candidate_id": "candidate-eye-of-riyadh-events-saudi-fm-clean-20260830-cbe48152",
       "title": "Saudi FM & Clean",
-      "status": "failed",
-      "reason": "HTTP 403"
+      "status": "confirmed",
+      "official_url": "https://www.big5constructsaudi.com/specialised-events/saudi-fm-clean-ksa/",
+      "official_image_url": "https://www.big5constructsaudi.com/wp-content/uploads/sites/7/2024/12/Saudi-FM.png",
+      "organizer": "dmg events",
+      "confirmed": true,
+      "reason": "confirmed",
+      "title_tokens": [
+        "clean"
+      ],
+      "matched_title_tokens": [
+        "clean"
+      ],
+      "year_confirmed": true,
+      "month_confirmed": true
     },
     {
       "candidate_id": "candidate-eye-of-riyadh-events-global-proptech-summit-2026-20261025-7c1d3001",
@@ -104,29 +98,8 @@
     {
       "candidate_id": "candidate-eye-of-riyadh-events-cips-mena-procurement-and-supply-chain-futures-conference-and-awards-20261028-18fb7207",
       "title": "CIPS MENA Procurement and Supply Chain Futures conference and awards",
-      "status": "confirmed",
-      "official_url": "https://www.cipsmenaconferenceandawards.com/",
-      "official_image_url": "https://static.wixstatic.com/media/708478_a08e284e0e2b4361addf88f967bb6b9f%7Emv2.png/v1/fit/w_2500,h_1330,al_c/708478_a08e284e0e2b4361addf88f967bb6b9f%7Emv2.png",
-      "organizer": "Eye of Riyadh",
-      "confirmed": true,
-      "reason": "confirmed",
-      "title_tokens": [
-        "cips",
-        "mena",
-        "procurement",
-        "supply",
-        "chain",
-        "futures"
-      ],
-      "matched_title_tokens": [
-        "cips",
-        "mena",
-        "procurement",
-        "supply",
-        "chain"
-      ],
-      "year_confirmed": true,
-      "month_confirmed": true
+      "status": "failed",
+      "reason": "HTTP 403"
     },
     {
       "candidate_id": "candidate-eye-of-riyadh-events-real-estate-future-forum-20270125-d058344d",

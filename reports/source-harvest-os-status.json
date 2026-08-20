@@ -1,22 +1,22 @@
 {
   "schema": "eventlive.harvest-os-status.v1",
-  "generated_at": "2026-08-20T13:48:19.966Z",
+  "generated_at": "2026-08-20T19:23:51.406Z",
   "status": "NEEDS_WORK",
   "operating_rule": "Probe before new sources; sample before full harvest; Raw collection is not publication; discovery-only never auto-publishes.",
   "totals": {
     "sources": 88,
-    "candidates": 626,
-    "matched_candidates": 595,
+    "candidates": 619,
+    "matched_candidates": 590,
     "auto_publish_sources": 15,
     "candidate_only_sources": 12,
     "partnership_required_sources": 5,
     "blocked_or_closed_sources": 0,
     "manual_review_sources": 56,
-    "collection_attempted": 23,
-    "productive_sources": 18,
-    "collector_errors": 8,
+    "collection_attempted": 17,
+    "productive_sources": 17,
+    "collector_errors": 6,
     "chronic_collector_errors": 6,
-    "transient_collector_errors": 2
+    "transient_collector_errors": 0
   },
   "policies": {
     "partnership_required": 5,
@@ -25,25 +25,25 @@
     "manual_review": 56
   },
   "candidates_by_gate": {
-    "catalog-review": 593,
+    "catalog-review": 588,
     "duplicate-review": 8,
-    "source-evidence": 25
+    "source-evidence": 23
   },
   "funnel": {
-    "discovered_this_run": 298,
-    "candidate_queue": 626,
-    "evaluated_for_publish": 626,
-    "linked_existing": 581,
+    "discovered_this_run": 218,
+    "candidate_queue": 619,
+    "evaluated_for_publish": 619,
+    "linked_existing": 576,
     "published_new": 5,
-    "blocked": 40,
+    "blocked": 38,
     "secondary_promoted": 0,
-    "secondary_still_blocked": 34
+    "secondary_still_blocked": 32
   },
   "blocked_reasons": {
     "possible duplicate requires review: exact-title-city-source-conflict": 6,
     "linked catalog row event-aseer-season was superseded by dedupe": 2,
     "linked catalog row event-dakah was superseded by dedupe": 1,
-    "publication gate source-evidence is not auto-publishable": 13,
+    "publication gate source-evidence is not auto-publishable": 11,
     "unknown category requires review": 10,
     "linked catalog row event-this-is-michael was superseded by dedupe": 1,
     "possible duplicate already exists: event-hvac-r-saudi-arabia": 1,
@@ -95,20 +95,6 @@
       "error_streak": 6,
       "kind": "chronic",
       "attempted_this_run": false
-    },
-    {
-      "id": "asharqia-chamber-events",
-      "note": "fetch failed; page.goto: Timeout 30000ms exceeded. Call log:   - navigating to \"https://www.chamber.org.sa/sites/Arabic/Events/ChamberEvents/Pages/AllChamberEvents.aspx\", waiting until \"domcontentload",
-      "error_streak": 1,
-      "kind": "transient",
-      "attempted_this_run": true
-    },
-    {
-      "id": "umm-al-qura-events",
-      "note": "The operation was aborted due to timeout; page.goto: Timeout 30000ms exceeded. Call log:   - navigating to \"https://uqu.edu.sa/App/Events\", waiting until \"domcontentloaded\" ",
-      "error_streak": 1,
-      "kind": "transient",
-      "attempted_this_run": true
     }
   ],
   "sources": [

@@ -1,38 +1,38 @@
 # EventLive Harvest OS Status
 
-- Generated at: 2026-08-20T13:48:19.966Z
+- Generated at: 2026-08-20T19:23:51.406Z
 - Status: NEEDS_WORK
 - Operating rule: Probe before new sources; sample before full harvest; Raw collection is not publication; discovery-only never auto-publishes.
 
 ## Totals
 
 - Sources: 88
-- Candidates: 626
-- Matched candidates: 595
+- Candidates: 619
+- Matched candidates: 590
 - Auto-publish sources: 15
 - Candidate-only sources: 12
 - Partnership-required sources: 5
-- Productive sources / attempted: 18/23
-- Collector errors: 8 (chronic 6, transient 2)
+- Productive sources / attempted: 17/17
+- Collector errors: 6 (chronic 6, transient 0)
 
 ## Publication Funnel
 
 | Stage | Count |
 | --- | --- |
-| discovered_this_run | 298 |
-| candidate_queue | 626 |
-| evaluated_for_publish | 626 |
-| linked_existing | 581 |
+| discovered_this_run | 218 |
+| candidate_queue | 619 |
+| evaluated_for_publish | 619 |
+| linked_existing | 576 |
 | published_new | 5 |
-| blocked | 40 |
+| blocked | 38 |
 | secondary_promoted | 0 |
-| secondary_still_blocked | 34 |
+| secondary_still_blocked | 32 |
 
 ## Blocked Reasons
 
 | Reason | Count |
 | --- | --- |
-| publication gate source-evidence is not auto-publishable | 13 |
+| publication gate source-evidence is not auto-publishable | 11 |
 | unknown category requires review | 10 |
 | possible duplicate requires review: exact-title-city-source-conflict | 6 |
 | linked catalog row event-aseer-season was superseded by dedupe | 2 |
@@ -55,8 +55,6 @@
 | monshaat-events | chronic | 12 | no | collector-error: fetch failed; fetch failed |
 | saudi-pro-league-fixtures | chronic | 9 | no | collector-error: fetch failed |
 | tuwaiq-academy-bootcamps | chronic | 6 | no | collector-error: HTTP 403 |
-| asharqia-chamber-events | transient | 1 | yes | fetch failed; page.goto: Timeout 30000ms exceeded. Call log:   - navigating to "https://www.chamber.org.sa/sites/Arabic/Events/ChamberEvents/Pages/AllChamberEvents.aspx", waiting until "domcontentload |
-| umm-al-qura-events | transient | 1 | yes | The operation was aborted due to timeout; page.goto: Timeout 30000ms exceeded. Call log:   - navigating to "https://uqu.edu.sa/App/Events", waiting until "domcontentloaded"  |
 
 | Source | Policy | Trust | Gate |
 | --- | --- | --- | --- |

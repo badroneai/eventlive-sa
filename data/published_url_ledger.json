@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "generated_at": "2026-08-20T13:43:44.685Z",
+  "generated_at": "2026-08-20T19:18:47.938Z",
   "events": {
     "event-skill-development-initiative": {
       "identity": "skill development initiative|riyadh|2021-07-14",
@@ -145,11 +145,6 @@
     "event-hayy-arts-red-wind-coral-worlds": {
       "identity": "hayy arts | red wind, coral worlds|jeddah|2026-05-20",
       "first_seen": "2026-07-11",
-      "last_seen": "2026-08-20"
-    },
-    "event-cowboy-town": {
-      "identity": "cowboy town|aseer|2026-05-20",
-      "first_seen": "2026-07-27",
       "last_seen": "2026-08-20"
     },
     "event-muftaha-district": {
@@ -542,11 +537,6 @@
       "first_seen": "2026-07-14",
       "last_seen": "2026-08-20"
     },
-    "event-معسكر-التأهيل-لرخصة-الدرونز-وتحليل-البيانات-الفوتوغرامترية": {
-      "identity": "معسكر التأهيل لرخصة الدرونز وتحليل البيانات الفوتوغرامترية|riyadh|2026-07-05",
-      "first_seen": "2026-07-11",
-      "last_seen": "2026-08-20"
-    },
     "event-ورث-الفن": {
       "identity": "ورث الفن|riyadh|2026-07-06",
       "first_seen": "2026-07-11",
@@ -700,11 +690,6 @@
     "event-شابتر-26": {
       "identity": "شابتر 26|riyadh|2026-07-23",
       "first_seen": "2026-08-17",
-      "last_seen": "2026-08-20"
-    },
-    "event-معسكر-تطوير-البرمجيات-السحابية-الاحترافية-لسحابة-قوقل": {
-      "identity": "معسكر تطوير البرمجيات السحابية الاحترافية لسحابة قوقل|riyadh|2026-07-26",
-      "first_seen": "2026-07-11",
       "last_seen": "2026-08-20"
     },
     "event-معسكر-تطوير-تطبيقات-الويب-باستخدام-لغة-python": {
@@ -1127,11 +1112,6 @@
       "first_seen": "2026-08-09",
       "last_seen": "2026-08-20"
     },
-    "event-sql-fundamentals": {
-      "identity": "sql fundamentals|online|2026-08-16",
-      "first_seen": "2026-08-06",
-      "last_seen": "2026-08-20"
-    },
     "event-hayy-makers-open-call-makers-matters": {
       "identity": "hayy makers | open call: makers matters|jeddah|2026-08-16",
       "first_seen": "2026-08-16",
@@ -1162,11 +1142,6 @@
       "first_seen": "2026-08-17",
       "last_seen": "2026-08-20"
     },
-    "event-hayy-cinema-august-2026": {
-      "identity": "hayy cinema | august 2026|jeddah|2026-08-20",
-      "first_seen": "2026-08-02",
-      "last_seen": "2026-08-20"
-    },
     "event-buraydah-international-dates-carnival-activites": {
       "identity": "buraydah international dates carnival activites|buraydah|2026-08-20",
       "first_seen": "2026-08-10",
@@ -1180,6 +1155,11 @@
     "event-art-in-virtual-motion": {
       "identity": "art in virtual motion|dhahran|2026-08-20",
       "first_seen": "2026-08-11",
+      "last_seen": "2026-08-20"
+    },
+    "event-unstable": {
+      "identity": "unstable|riyadh|2026-08-21",
+      "first_seen": "2026-07-11",
       "last_seen": "2026-08-20"
     },
     "event-عرض-this-is-michael-الموسيقي": {
@@ -2827,6 +2807,11 @@
       "first_seen": "2026-08-06",
       "last_seen": "2026-08-20"
     },
+    "event-hayy-cinema-august-2026": {
+      "identity": "hayy cinema | august 2026|jeddah|2026-08-20",
+      "first_seen": "2026-08-02",
+      "last_seen": "2026-08-20"
+    },
     "event-mdlbeast-radio-mixtape": {
       "identity": "mdlbeast radio mixtape|riyadh|2026-08-20",
       "first_seen": "2026-08-18",
@@ -2877,6 +2862,11 @@
       "first_seen": "2026-08-06",
       "last_seen": "2026-08-20"
     },
+    "event-sql-fundamentals": {
+      "identity": "sql fundamentals|online|2026-08-16",
+      "first_seen": "2026-08-06",
+      "last_seen": "2026-08-20"
+    },
     "event-comptia-it-fundamentals": {
       "identity": "comptia it fundamentals|online|2026-08-16",
       "first_seen": "2026-08-06",
@@ -2905,11 +2895,6 @@
     "event-concert-mohamed-hamaki": {
       "identity": "concert – mohamed hamaki|aseer|2026-08-14",
       "first_seen": "2026-08-08",
-      "last_seen": "2026-08-20"
-    },
-    "event-unstable": {
-      "identity": "unstable|riyadh|2026-08-14",
-      "first_seen": "2026-07-11",
       "last_seen": "2026-08-20"
     },
     "event-تفعيل-بيئة-تعلم-إلكترونية-تفاعلية-بنمط-غير-متزامن": {
@@ -3164,6 +3149,11 @@
     },
     "event-entrepreneur-leadership-excellence-program": {
       "identity": "500|saudi arabia|2026-07-27",
+      "first_seen": "2026-07-11",
+      "last_seen": "2026-08-20"
+    },
+    "event-معسكر-تطوير-البرمجيات-السحابية-الاحترافية-لسحابة-قوقل": {
+      "identity": "معسكر تطوير البرمجيات السحابية الاحترافية لسحابة قوقل|riyadh|2026-07-26",
       "first_seen": "2026-07-11",
       "last_seen": "2026-08-20"
     },
@@ -3860,6 +3850,11 @@
     "event-curious-summers": {
       "identity": "curious summers|riyadh|2026-07-06",
       "first_seen": "2026-07-14",
+      "last_seen": "2026-08-20"
+    },
+    "event-معسكر-التأهيل-لرخصة-الدرونز-وتحليل-البيانات-الفوتوغرامترية": {
+      "identity": "معسكر التأهيل لرخصة الدرونز وتحليل البيانات الفوتوغرامترية|riyadh|2026-07-05",
+      "first_seen": "2026-07-11",
       "last_seen": "2026-08-20"
     },
     "event-نسمة-في-الطائف": {
@@ -4645,6 +4640,11 @@
     "ended-ithra-events-the-participants-journey-of-the-ithras-short-play-contest-2026-20260520-488b85ed": {
       "identity": "the participants' journey of the ithra’s short play contest 2026|dhahran|2026-05-20",
       "first_seen": "2026-07-11",
+      "last_seen": "2026-08-20"
+    },
+    "event-cowboy-town": {
+      "identity": "cowboy town|aseer|2026-05-20",
+      "first_seen": "2026-07-27",
       "last_seen": "2026-08-20"
     },
     "ended-scega-exhibitions-conferences-معرض-المدارس-20260519-839e991b": {
