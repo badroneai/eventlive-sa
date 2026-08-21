@@ -1,6 +1,6 @@
 {
   "schema": "eventlive.harvest-os-status.v1",
-  "generated_at": "2026-08-21T07:30:30.386Z",
+  "generated_at": "2026-08-21T13:34:15.210Z",
   "status": "NEEDS_WORK",
   "operating_rule": "Probe before new sources; sample before full harvest; Raw collection is not publication; discovery-only never auto-publishes.",
   "totals": {
@@ -12,11 +12,11 @@
     "partnership_required_sources": 5,
     "blocked_or_closed_sources": 0,
     "manual_review_sources": 56,
-    "collection_attempted": 18,
-    "productive_sources": 17,
-    "collector_errors": 6,
+    "collection_attempted": 20,
+    "productive_sources": 18,
+    "collector_errors": 7,
     "chronic_collector_errors": 6,
-    "transient_collector_errors": 0
+    "transient_collector_errors": 1
   },
   "policies": {
     "partnership_required": 5,
@@ -30,7 +30,7 @@
     "source-evidence": 23
   },
   "funnel": {
-    "discovered_this_run": 227,
+    "discovered_this_run": 302,
     "candidate_queue": 617,
     "evaluated_for_publish": 617,
     "linked_existing": 574,
@@ -95,6 +95,13 @@
       "error_streak": 7,
       "kind": "chronic",
       "attempted_this_run": false
+    },
+    {
+      "id": "saudi-space-agency-events",
+      "note": "fetch failed",
+      "error_streak": 2,
+      "kind": "transient",
+      "attempted_this_run": true
     }
   ],
   "sources": [
