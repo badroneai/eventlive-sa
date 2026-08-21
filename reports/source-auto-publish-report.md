@@ -1,11 +1,11 @@
 # EventLive Source Auto Publish Report
 
-- published_at: 2026-08-20T19:10:48.454Z
+- published_at: 2026-08-21T02:13:52.307Z
 - dry_run: false
 - include_partner: true
-- candidates_seen: 619
+- candidates_seen: 617
 - published_new: 5
-- linked_existing: 576
+- linked_existing: 574
 - blocked_remaining: 38
 - duplicate_review_alerts: 8
 
@@ -76,7 +76,6 @@
 | candidate-discover-aseer-events-sky-village-20260602-b6965dea | linked-existing | event-sky-village | already linked to catalog event |
 | candidate-visit-saudi-calendar-pdf-معرض-قلب-البحر-20260604-4a38d19e | linked-existing | event-معرض-قلب-البحر | already linked to catalog event |
 | candidate-hayy-jameel-events-hayy-learning-recess-an-after-school-programme-for-teens-20260606-adba0792 | linked-existing | event-hayy-learning | already linked to catalog event |
-| candidate-visit-saudi-calendar-pdf-ساوث-ويست-الكاوبوي-20260607-4a38d19e | linked-existing | event-ساوث-ويست-الكاوبوي | already linked to catalog event |
 | candidate-visit-saudi-calendar-pdf-ليالي-مضيئة-20260607-4a38d19e | linked-existing | event-ليالي-مضيئة | already linked to catalog event |
 | candidate-discover-aseer-events-light-nights-20260607-35f3a49e | linked-existing | event-light-nights | already linked to catalog event |
 | candidate-visit-saudi-calendar-pdf-مهرجان-صوت-أبها-saf-20260615-4a38d19e | linked-existing | event-مهرجان-صوت-أبها-saf | already linked to catalog event |
@@ -218,19 +217,17 @@
 | candidate-umm-al-qura-events-فرص-تعاقد-على-مشروع-بحثي-ممول-٢-20260816-d12e1d10 | linked-existing | event-فرص-تعاقد-على-مشروع-بحثي-ممول-٢ | already linked to catalog event |
 | candidate-tuwaiq-academy-bootcamps-معسكر-الأنظمة-الذاتية-للدرونز-20260816-5d8feea2 | linked-existing | event-معسكر-الأنظمة-الذاتية-للدرونز | already linked to catalog event |
 | candidate-ithra-events-water-challenges-20260818-eea51834 | linked-existing | event-water-challenges | already linked to catalog event |
-| candidate-visit-saudi-calendar-pdf-صد-رد-عرض-ستاند-اب-كوميدي-من-أوس-النفيعي-20260820-4a38d19e | linked-existing | event-صد-رد-عرض-ستاند-اب-كوميدي-من-أوس-النفيعي | already linked to catalog event |
-| candidate-visit-saudi-calendar-pdf-ليلة-5x5-20260820-4a38d19e | linked-existing | event-ليلة-5x5 | already linked to catalog event |
-| candidate-ithra-events-bedayat-beginnings-of-saudi-art-movement-20260820-e0a239ef | linked-existing | event-bedayat-beginnings-of-saudi-art-movement | already linked to catalog event |
-| candidate-ithra-events-echoes-of-the-familiar-20260820-cc43c2bd | linked-existing | event-echoes-of-the-familiar | already linked to catalog event |
 | candidate-visit-saudi-seasons-buraydah-international-dates-carnival-activites-20260820-9a218560 | linked-existing | event-buraydah-international-dates-carnival-activites | already linked to catalog event |
 | candidate-visit-saudi-seasons-buraydah-international-dates-carnival-activites-20260820-a82ecd17 | linked-existing | event-buraydah-international-dates-carnival-activites | already linked to catalog event |
 | candidate-visit-saudi-seasons-unaizah-international-dates-carnival-20260820-612474e4 | linked-existing | event-unaizah-international-dates-carnival | already linked to catalog event |
 | candidate-visit-saudi-calendar-pdf-عرض-this-is-michael-الموسيقي-20260821-4a38d19e | linked-existing | event-عرض-this-is-michael-الموسيقي | already linked to catalog event |
 | candidate-visit-saudi-calendar-pdf-ليلة-ستانداب-كوميدي-في-جدة-20260821-4a38d19e | linked-existing | event-ليلة-ستانداب-كوميدي-في-جدة | already linked to catalog event |
 | candidate-visit-saudi-calendar-pdf-الخطة-c-مع-رضوان-الريمي-ليلة-كوميدية-طربية-20260821-4a38d19e | linked-existing | event-الخطة-c-مع-رضوان-الريمي-ليلة-كوميدية-طربية | already linked to catalog event |
-| candidate-mdlbeast-events-unstable-20260821-5647df2e | linked-existing | event-unstable | trusted duplicate linked to existing catalog event |
+| candidate-mdlbeast-events-unstable-20260821-5647df2e | linked-existing | event-unstable | already linked to catalog event |
 | candidate-ithra-events-printing-house-20260821-e56f4f89 | linked-existing | event-printing-house | already linked to catalog event |
 | candidate-ithra-events-tafasahu-make-room-20260821-562bc61d | linked-existing | event-tafasahu-make-room | already linked to catalog event |
+| candidate-ithra-events-bedayat-beginnings-of-saudi-art-movement-20260821-e0a239ef | linked-existing | event-bedayat-beginnings-of-saudi-art-movement | already linked to catalog event |
+| candidate-ithra-events-echoes-of-the-familiar-20260821-cc43c2bd | linked-existing | event-echoes-of-the-familiar | already linked to catalog event |
 | candidate-saudi-university-events-boat-bash-cruise-20260821-8afa1fda | linked-existing | event-boat-bash-cruise | already linked to catalog event |
 | candidate-ithra-events-paint-like-an-artist-20260821-a67d8ec3 | linked-existing | event-paint-like-an-artist | already linked to catalog event |
 | candidate-ithra-events-ithra-art-prize-exhibition-20260821-83c2ab55 | linked-existing | event-ithra-art-prize-exhibition | already linked to catalog event |
@@ -604,6 +601,7 @@
 | candidate-hayy-jameel-events-hayy-cinema-aflamna-20270720-4db4173f | linked-existing | event-hayy-cinema-aflamna | already linked to catalog event |
 | candidate-hayy-jameel-events-hayy-cinema-july-2026-20270720-0b9a2284 | linked-existing | event-hayy-cinema-2 | already linked to catalog event |
 | candidate-hayy-jameel-events-hayy-cinema-international-cat-day-open-call-20270804-5fb2cbe7 | linked-existing | event-hayy-cinema-international-cat-day-open-call | already linked to catalog event |
+| candidate-hayy-jameel-events-hayy-cinema-august-2026-20270820-0636e29a | linked-existing | event-hayy-cinema-august-2026 | trusted duplicate linked to existing catalog event |
 | candidate-qassim-university-events-استضافة-مؤتمر-ieee-mecom-2027-20271101-510cb4b1 | linked-existing | event-استضافة-مؤتمر-ieee-mecom-2027 | already linked to catalog event |
 | candidate-umm-al-qura-events-الترشح-للدبلوم-المتوسط-في-التحول-الرقمي-في-جازان-بالتعاون-مع-أكاديمية-غر-20271201-5cace3ad | linked-existing | event-دبلوم-التحول-الرقمي | already linked to catalog event |
 | candidate-saudi-space-agency-events-space-debris-conference-2028-20280215-03719f44 | linked-existing | event-space-debris-conference-2028 | already linked to catalog event |
@@ -629,7 +627,7 @@
 | candidate-saudicon-events-إتش-ڤي-إيه-سي-آر-إكسبو-السعودية-2026-20260830-04e5e1e3 | blocked | - | publication gate source-evidence is not auto-publishable |
 | candidate-saudicon-events-سلسلة-الصناعات-السعودية-20260830-4bf90e2f | blocked | - | possible duplicate already exists: event-saudi-industrial-series-2 |
 | candidate-saudicon-events-معرض-big-5-construct-saudi-2026-20260830-d7626786 | blocked | - | publication gate source-evidence is not auto-publishable |
-| candidate-saudicon-events-منتدى-الجوانب-القانونية-للاندماج-والاستحواذ-20260831-b0f90380 | blocked | - | publication gate source-evidence is not auto-publishable |
+| candidate-saudicon-events-ديب-فيست-2026-20260831-2bcf4bba | blocked | - | publication gate source-evidence is not auto-publishable |
 | candidate-eventbrite-saudi-smart-sustainable-building-intelligent-ecosystems-for-tomorrows-cities-20260901-e45c1490 | blocked | - | unknown category requires review |
 | candidate-eventbrite-saudi-family-office-investment-meeting-riyadh-registration-fee-usd-580-20260902-82923462 | blocked | - | unknown category requires review |
 | candidate-eventbrite-saudi-family-office-investment-riyadh-saudi-arabia-20260902-fc391e91 | blocked | - | unknown category requires review |

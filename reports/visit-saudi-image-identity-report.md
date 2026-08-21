@@ -1,18 +1,21 @@
 # EventLive Visit Saudi Image Identity Report
 
-- generated_at: 2026-08-20T19:10:51.042Z
+- generated_at: 2026-08-21T02:13:54.816Z
 - pdf_crop_assignments: 77
-- verified: 71
-- struck: 6
-- slots_seen_this_cycle: 83
+- verified: 68
+- struck: 9
+- slots_seen_this_cycle: 80
 
 ## Struck (fell back to generated cover)
 
 - سوق الثلاثاء الشعبي (visit-saudi-summer-2026-p004-top-left.jpg) - identity-mismatch - page 4 top-left is now "قصور وقاع ابو نقطة المتحمي"
 - كايف المزرعة (visit-saudi-summer-2026-p057-bottom-left.jpg) - identity-mismatch - page 57 bottom-left is now "عروض الفنون الأدائية التقليدية"
 - باتو (visit-saudi-summer-2026-p006-top-left.jpg) - identity-mismatch - page 6 top-left is now "بلاتو"
+- ساوث ويست (الكاوبوي) (visit-saudi-summer-2026-p007-top-left.jpg) - slot-vacated - no dated card currently occupies page 7 top-left of https://www.visitsaudi.com/content/dam/documents/saudi-calendar-ar.pdf
 - واحة عسيب (visit-saudi-summer-2026-p009-top-left.jpg) - identity-mismatch - page 9 top-left is now "شارع الفن - القرية الأوروبية"
 - بيوني الشرف (visit-saudi-summer-2026-p010-bottom-right.jpg) - identity-mismatch - page 10 bottom-right is now "مزرعة التوت الأسود"
+- صد رد: عرض ستاند اب كوميدي من أوس النفيعي (visit-saudi-summer-2026-p042-top-left.jpg) - slot-vacated - no dated card currently occupies page 42 top-left of https://www.visitsaudi.com/content/dam/documents/saudi-calendar-ar.pdf
+- ليلة 5x5 (visit-saudi-summer-2026-p042-top-right.jpg) - slot-vacated - no dated card currently occupies page 42 top-right of https://www.visitsaudi.com/content/dam/documents/saudi-calendar-ar.pdf
 - ذكريات سبيستون مع الفنان عاصم سكر (visit-saudi-summer-2026-p062-bottom-left.jpg) - identity-mismatch - page 62 bottom-left is now "ENC 2026"
 
 ## Verified
@@ -30,7 +33,6 @@
 - بلاتو (visit-saudi-summer-2026-p006-top-left.jpg)
 - سكاي فيلج (visit-saudi-summer-2026-p006-bottom-left.jpg)
 - معرض قلب البحر (visit-saudi-summer-2026-p040-top-left.png)
-- ساوث ويست (الكاوبوي) (visit-saudi-summer-2026-p007-top-left.jpg)
 - ليالي مضيئة (visit-saudi-summer-2026-p007-top-right.jpg)
 - مهرجان صوت أبها SAF (visit-saudi-summer-2026-p007-bottom-right.jpg)
 - معرض في تتبّع ذكريات غامرة (visit-saudi-summer-2026-p040-bottom-right.png)
@@ -73,8 +75,6 @@
 - فعالية القصبة (visit-saudi-summer-2026-p013-bottom-right.jpg)
 - شاطئ منتجع القرية في جدة (visit-saudi-summer-2026-p041-top-right.jpg)
 - جولة البقي بين جبال الباحة (visit-saudi-summer-2026-p072-bottom-left.jpg)
-- صد رد: عرض ستاند اب كوميدي من أوس النفيعي (visit-saudi-summer-2026-p042-top-left.jpg)
-- ليلة 5x5 (visit-saudi-summer-2026-p042-top-right.jpg)
 - عرض This Is Michael الموسيقي (visit-saudi-summer-2026-p042-bottom-left.jpg)
 - ليلة ستانداب كوميدي في جدة (visit-saudi-summer-2026-p042-bottom-right.jpg)
 - الخطة C مع رضوان الريمي ليلة كوميدية طربية (visit-saudi-summer-2026-p062-top-right.jpg)

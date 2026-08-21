@@ -1,10 +1,10 @@
 {
   "schema": "eventlive.source-secondary-verification.v1",
-  "generated_at": "2026-08-20T19:10:48.255Z",
+  "generated_at": "2026-08-21T02:13:52.118Z",
   "source_candidates": "data/source_candidates.json",
   "source_ops_report": "reports/source-ops-report.json",
   "totals": {
-    "candidates_seen": 619,
+    "candidates_seen": 617,
     "candidates_considered": 32,
     "promoted": 0,
     "official_evidence_promoted": 0,

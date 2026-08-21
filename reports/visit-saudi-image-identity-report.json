@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-20T19:10:51.042Z",
+  "generated_at": "2026-08-21T02:13:54.816Z",
   "catalog": "data/events_catalog.json",
   "candidates": "data/source_candidates.json",
   "manifest": "data/event_image_cache_manifest.json",
@@ -10,9 +10,9 @@
   },
   "totals": {
     "pdf_crop_assignments": 77,
-    "verified": 71,
-    "struck": 6,
-    "slots_seen_this_cycle": 83
+    "verified": 68,
+    "struck": 9,
+    "slots_seen_this_cycle": 80
   },
   "struck": [
     {
@@ -43,6 +43,13 @@
       "ratio": 0
     },
     {
+      "id": "event-ساوث-ويست-الكاوبوي",
+      "title": "ساوث ويست (الكاوبوي)",
+      "file": "visit-saudi-summer-2026-p007-top-left.jpg",
+      "reason": "slot-vacated",
+      "detail": "no dated card currently occupies page 7 top-left of https://www.visitsaudi.com/content/dam/documents/saudi-calendar-ar.pdf"
+    },
+    {
       "id": "event-واحة-عسيب",
       "title": "واحة عسيب",
       "file": "visit-saudi-summer-2026-p009-top-left.jpg",
@@ -59,6 +66,20 @@
       "detail": "page 10 bottom-right is now \"مزرعة التوت الأسود\"",
       "matched_tokens": [],
       "ratio": 0
+    },
+    {
+      "id": "event-صد-رد-عرض-ستاند-اب-كوميدي-من-أوس-النفيعي",
+      "title": "صد رد: عرض ستاند اب كوميدي من أوس النفيعي",
+      "file": "visit-saudi-summer-2026-p042-top-left.jpg",
+      "reason": "slot-vacated",
+      "detail": "no dated card currently occupies page 42 top-left of https://www.visitsaudi.com/content/dam/documents/saudi-calendar-ar.pdf"
+    },
+    {
+      "id": "event-ليلة-5x5",
+      "title": "ليلة 5x5",
+      "file": "visit-saudi-summer-2026-p042-top-right.jpg",
+      "reason": "slot-vacated",
+      "detail": "no dated card currently occupies page 42 top-right of https://www.visitsaudi.com/content/dam/documents/saudi-calendar-ar.pdf"
     },
     {
       "id": "event-ذكريات-سبيستون-مع-الفنان-عاصم-سكر",
@@ -190,16 +211,6 @@
         "معرض",
         "قلب",
         "البحر"
-      ]
-    },
-    {
-      "id": "event-ساوث-ويست-الكاوبوي",
-      "title": "ساوث ويست (الكاوبوي)",
-      "file": "visit-saudi-summer-2026-p007-top-left.jpg",
-      "matched_tokens": [
-        "ساوث",
-        "ويست",
-        "الكاوبوي"
       ]
     },
     {
@@ -601,27 +612,6 @@
         "بين",
         "جبال",
         "الباحه"
-      ]
-    },
-    {
-      "id": "event-صد-رد-عرض-ستاند-اب-كوميدي-من-أوس-النفيعي",
-      "title": "صد رد: عرض ستاند اب كوميدي من أوس النفيعي",
-      "file": "visit-saudi-summer-2026-p042-top-left.jpg",
-      "matched_tokens": [
-        "عرض",
-        "ستاند",
-        "كوميدي",
-        "اوس",
-        "النفيعي"
-      ]
-    },
-    {
-      "id": "event-ليلة-5x5",
-      "title": "ليلة 5x5",
-      "file": "visit-saudi-summer-2026-p042-top-right.jpg",
-      "matched_tokens": [
-        "ليله",
-        "5x5"
       ]
     },
     {
