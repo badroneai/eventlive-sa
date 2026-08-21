@@ -1,9 +1,9 @@
 # EventLive Visit Saudi Image Identity Report
 
-- generated_at: 2026-08-21T02:13:54.816Z
-- pdf_crop_assignments: 77
+- generated_at: 2026-08-21T07:17:35.211Z
+- pdf_crop_assignments: 74
 - verified: 68
-- struck: 9
+- struck: 6
 - slots_seen_this_cycle: 80
 
 ## Struck (fell back to generated cover)
@@ -11,11 +11,8 @@
 - سوق الثلاثاء الشعبي (visit-saudi-summer-2026-p004-top-left.jpg) - identity-mismatch - page 4 top-left is now "قصور وقاع ابو نقطة المتحمي"
 - كايف المزرعة (visit-saudi-summer-2026-p057-bottom-left.jpg) - identity-mismatch - page 57 bottom-left is now "عروض الفنون الأدائية التقليدية"
 - باتو (visit-saudi-summer-2026-p006-top-left.jpg) - identity-mismatch - page 6 top-left is now "بلاتو"
-- ساوث ويست (الكاوبوي) (visit-saudi-summer-2026-p007-top-left.jpg) - slot-vacated - no dated card currently occupies page 7 top-left of https://www.visitsaudi.com/content/dam/documents/saudi-calendar-ar.pdf
 - واحة عسيب (visit-saudi-summer-2026-p009-top-left.jpg) - identity-mismatch - page 9 top-left is now "شارع الفن - القرية الأوروبية"
 - بيوني الشرف (visit-saudi-summer-2026-p010-bottom-right.jpg) - identity-mismatch - page 10 bottom-right is now "مزرعة التوت الأسود"
-- صد رد: عرض ستاند اب كوميدي من أوس النفيعي (visit-saudi-summer-2026-p042-top-left.jpg) - slot-vacated - no dated card currently occupies page 42 top-left of https://www.visitsaudi.com/content/dam/documents/saudi-calendar-ar.pdf
-- ليلة 5x5 (visit-saudi-summer-2026-p042-top-right.jpg) - slot-vacated - no dated card currently occupies page 42 top-right of https://www.visitsaudi.com/content/dam/documents/saudi-calendar-ar.pdf
 - ذكريات سبيستون مع الفنان عاصم سكر (visit-saudi-summer-2026-p062-bottom-left.jpg) - identity-mismatch - page 62 bottom-left is now "ENC 2026"
 
 ## Verified

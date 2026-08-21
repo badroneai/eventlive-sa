@@ -1,5 +1,5 @@
 {
-  "published_at": "2026-08-21T02:13:52.307Z",
+  "published_at": "2026-08-21T07:17:32.634Z",
   "dry_run": false,
   "include_partner": true,
   "source_candidates": "data/source_candidates.json",
@@ -3614,7 +3614,7 @@
       "candidate_id": "candidate-hayy-jameel-events-hayy-cinema-august-2026-20270820-0636e29a",
       "event_id": "event-hayy-cinema-august-2026",
       "title": "Hayy Cinema | August 2026",
-      "reason": "trusted duplicate linked to existing catalog event"
+      "reason": "already linked to catalog event"
     },
     {
       "candidate_id": "candidate-qassim-university-events-استضافة-مؤتمر-ieee-mecom-2027-20271101-510cb4b1",
