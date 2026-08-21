@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-21T13:26:09.098Z",
+  "generated_at": "2026-08-21T19:22:14.043Z",
   "files": {
     "registry": "data/source_registry.json",
     "candidates": "data/source_candidates.json",
@@ -11,25 +11,25 @@
   },
   "collection": {
     "basis": "source_collection_report_adaptive",
-    "collected_at": "2026-08-21T13:16:11.519Z",
+    "collected_at": "2026-08-21T19:12:56.403Z",
     "freshness": "fresh",
-    "discovered": 302,
-    "written": 617
+    "discovered": 226,
+    "written": 615
   },
   "sources": {
     "total": 88,
-    "attempted": 20,
-    "due": 20,
-    "deferred": 28,
+    "attempted": 19,
+    "due": 19,
+    "deferred": 29,
     "scheduled": 48,
     "runnable": 48,
     "collection_coverage_pct": 100,
-    "registry_collection_coverage_pct": 23,
+    "registry_collection_coverage_pct": 22,
     "scheduled_runnable_coverage_pct": 100,
-    "healthy": 18,
-    "zero_yield": 1,
-    "errors": 1,
-    "cadence_deferred": 28,
+    "healthy": 17,
+    "zero_yield": 2,
+    "errors": 0,
+    "cadence_deferred": 29,
     "not_collected": 40,
     "unattempted_high_priority": 3,
     "health": [
@@ -439,13 +439,16 @@
         "id": "saudi-space-agency-events",
         "name": "Saudi Space Agency Events",
         "priority": 32,
-        "status": "collection-error",
-        "error_streak": 0,
+        "status": "deferred",
+        "historical_status": "collector-error",
+        "cadence_reason": "error-cooldown",
+        "next_due_at": "2026-08-22T13:16:11.519Z",
+        "error_streak": 2,
         "zero_yield_streak": 0,
-        "last_attempted_at": null,
+        "last_attempted_at": "2026-08-21T13:16:11.519Z",
         "extracted": 0,
         "candidates": 1,
-        "next_action": "fetch failed"
+        "next_action": "مؤجل حتى 2026-08-22T13:16:11.519Z وفق الجدولة التكيفية."
       },
       {
         "id": "cst-events-news",
@@ -463,13 +466,16 @@
         "id": "visit-saudi-calendar-pdf",
         "name": "Visit Saudi Summer Calendar PDF",
         "priority": 34,
-        "status": "healthy",
+        "status": "deferred",
+        "historical_status": "probe-blocked",
+        "cadence_reason": "error-cooldown",
+        "next_due_at": "2026-08-21T19:16:11.519Z",
         "error_streak": 0,
         "zero_yield_streak": 0,
-        "last_attempted_at": null,
-        "extracted": 76,
+        "last_attempted_at": "2026-08-21T13:16:11.519Z",
+        "extracted": 0,
         "candidates": 87,
-        "next_action": "استمر بالمراجعة والتكرار قبل النشر."
+        "next_action": "مؤجل حتى 2026-08-21T19:16:11.519Z وفق الجدولة التكيفية."
       },
       {
         "id": "qiddiya-events",
@@ -609,7 +615,7 @@
         "zero_yield_streak": 0,
         "last_attempted_at": "2026-08-10T13:49:51.211Z",
         "extracted": 0,
-        "candidates": 4,
+        "candidates": 3,
         "next_action": "مؤجل حتى 2026-09-09T13:49:51.211Z وفق الجدولة التكيفية."
       },
       {
@@ -640,16 +646,13 @@
         "id": "sfda-events",
         "name": "Saudi Food and Drug Authority Events",
         "priority": 48,
-        "status": "deferred",
-        "historical_status": "zero-yield",
-        "cadence_reason": "zero-yield-cooldown",
-        "next_due_at": "2026-08-21T13:29:12.764Z",
+        "status": "zero-yield",
         "error_streak": 0,
-        "zero_yield_streak": 7,
-        "last_attempted_at": "2026-08-20T13:29:12.764Z",
+        "zero_yield_streak": 0,
+        "last_attempted_at": null,
         "extracted": 0,
         "candidates": 2,
-        "next_action": "مؤجل حتى 2026-08-21T13:29:12.764Z وفق الجدولة التكيفية."
+        "next_action": "No future date-complete candidates found by the conservative extractor."
       },
       {
         "id": "saudi-contractors-authority-events",
@@ -679,13 +682,16 @@
         "id": "riyadh-city-events",
         "name": "Riyadh City Events",
         "priority": 51,
-        "status": "zero-yield",
+        "status": "deferred",
+        "historical_status": "probe-blocked",
+        "cadence_reason": "error-cooldown",
+        "next_due_at": "2026-08-21T19:16:11.519Z",
         "error_streak": 0,
         "zero_yield_streak": 0,
-        "last_attempted_at": null,
+        "last_attempted_at": "2026-08-21T13:16:11.519Z",
         "extracted": 0,
         "candidates": 74,
-        "next_action": "No future date-complete candidates found by the conservative extractor."
+        "next_action": "مؤجل حتى 2026-08-21T19:16:11.519Z وفق الجدولة التكيفية."
       },
       {
         "id": "monshaat-academy-programs",
@@ -859,16 +865,13 @@
         "id": "northern-borders-chamber-events",
         "name": "Northern Borders Chamber Events",
         "priority": 65,
-        "status": "deferred",
-        "historical_status": "zero-yield",
-        "cadence_reason": "zero-yield-cooldown",
-        "next_due_at": "2026-08-21T13:28:28.100Z",
+        "status": "zero-yield",
         "error_streak": 0,
-        "zero_yield_streak": 16,
-        "last_attempted_at": "2026-08-18T13:28:28.100Z",
+        "zero_yield_streak": 0,
+        "last_attempted_at": null,
         "extracted": 0,
         "candidates": 0,
-        "next_action": "مؤجل حتى 2026-08-21T13:28:28.100Z وفق الجدولة التكيفية."
+        "next_action": "No future date-complete candidates found by the conservative extractor."
       },
       {
         "id": "tabuk-chamber-events",
@@ -1007,8 +1010,8 @@
         "error_streak": 0,
         "zero_yield_streak": 0,
         "last_attempted_at": null,
-        "extracted": 9,
-        "candidates": 56,
+        "extracted": 8,
+        "candidates": 55,
         "next_action": "استمر بالمراجعة والتكرار قبل النشر."
       },
       {
@@ -1124,7 +1127,7 @@
         "error_streak": 0,
         "zero_yield_streak": 0,
         "last_attempted_at": null,
-        "extracted": 21,
+        "extracted": 22,
         "candidates": 75,
         "next_action": "استمر بالمراجعة والتكرار قبل النشر."
       },
@@ -1176,28 +1179,28 @@
     ]
   },
   "queue": {
-    "total": 617,
+    "total": 615,
     "ready_for_review": 8,
     "approved_for_catalog": 0,
-    "published_from_candidates": 586,
+    "published_from_candidates": 584,
     "actionable": 8,
     "stale_unpublished": 0,
     "duplicate_risk": 8,
     "needs_extraction": 0,
     "needs_evidence": 23,
     "by_review_status": {
-      "approved-for-catalog": 586,
+      "approved-for-catalog": 584,
       "ready-for-review": 8,
       "evidence-captured": 15,
       "new": 8
     },
     "by_publication_gate": {
-      "catalog-review": 586,
+      "catalog-review": 584,
       "duplicate-review": 8,
       "source-evidence": 23
     },
     "by_confidence": {
-      "official": 580,
+      "official": 578,
       "public-listing": 18,
       "verified-secondary": 11,
       "unverified": 8
@@ -1220,15 +1223,15 @@
       "Saudicon Events": 13,
       "Jouf University Summer Programs": 1,
       "Tuwaiq Academy Bootcamps and Programs": 34,
-      "Umm Al-Qura University Events Center": 56,
+      "Umm Al-Qura University Events Center": 55,
       "Monsha'at All Events": 1,
       "Ithra Events": 69,
       "MDLBEAST Events": 5,
-      "Saudi Universities and Technical Colleges": 4,
       "Misk Hub Events": 2,
       "Future Skills MCIT Catalogue": 3,
       "Dhahran Expo Calendar": 17,
       "Tradepass Official": 1,
+      "Saudi Universities and Technical Colleges": 3,
       "Informa Connect Saudi Event Portfolio": 6,
       "RFECC What's On": 7,
       "Informa Official": 1,
@@ -1370,7 +1373,7 @@
         "discovery_notes": "",
         "duplicate_risk": true,
         "matched_catalog_event_id": "event-in-act-act-x",
-        "days_to_start": 50,
+        "days_to_start": 49,
         "is_past": false,
         "is_actionable": true,
         "action": "راجع التكرار مع الكتالوج قبل أي اعتماد.",

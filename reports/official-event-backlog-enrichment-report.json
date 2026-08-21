@@ -1,63 +1,94 @@
 {
-  "generated_at": "2026-08-21T13:25:00.955Z",
+  "generated_at": "2026-08-21T19:21:01.620Z",
   "totals": {
     "targets": 5,
     "enriched": 5,
-    "fetched": 5,
+    "fetched": 0,
     "images": 5,
-    "fetch_failures": 0
+    "fetch_failures": 5
   },
   "enriched": [
     {
       "id": "event-الأخطبوطية",
       "title": "الاخطبوطية",
       "source_label": "Visit Saudi Summer Calendar PDF",
-      "source_method": "official-page-meta",
+      "source_method": "approved-source-row",
       "source_url": "https://www.visitsaudi.com/content/dam/documents/saudi-calendar-ar.pdf",
-      "fetched": true,
+      "fetched": false,
       "image": true,
-      "fetch_reason": ""
+      "fetch_reason": "The operation was aborted due to timeout"
     },
     {
       "id": "event-شارع-الفن-القرية-الأوروبية",
       "title": "شارع الفن - القرية الاوروبية",
       "source_label": "Visit Saudi Summer Calendar PDF",
-      "source_method": "official-page-meta",
+      "source_method": "approved-source-row",
       "source_url": "https://www.visitsaudi.com/content/dam/documents/saudi-calendar-ar.pdf",
-      "fetched": true,
+      "fetched": false,
       "image": true,
-      "fetch_reason": ""
+      "fetch_reason": "The operation was aborted due to timeout"
     },
     {
       "id": "event-عروض-الفنون-الأدائية-التقليدية",
       "title": "عروض الفنون الادائية التقليدية",
       "source_label": "Visit Saudi Summer Calendar PDF",
-      "source_method": "official-page-meta",
+      "source_method": "approved-source-row",
       "source_url": "https://www.visitsaudi.com/content/dam/documents/saudi-calendar-ar.pdf",
-      "fetched": true,
+      "fetched": false,
       "image": true,
-      "fetch_reason": ""
+      "fetch_reason": "The operation was aborted due to timeout"
     },
     {
       "id": "event-قصور-وقاع-ابو-نقطة-المتحمي",
       "title": "قصور وقلاع ابو نقطة المتحمي",
       "source_label": "Visit Saudi Summer Calendar PDF",
-      "source_method": "official-page-meta",
+      "source_method": "approved-source-row",
       "source_url": "https://www.visitsaudi.com/content/dam/documents/saudi-calendar-ar.pdf",
-      "fetched": true,
+      "fetched": false,
       "image": true,
-      "fetch_reason": ""
+      "fetch_reason": "The operation was aborted due to timeout"
     },
     {
       "id": "event-مزرعة-التوت-الأسود",
       "title": "مزرعة التوت الاسود",
       "source_label": "Visit Saudi Summer Calendar PDF",
-      "source_method": "official-page-meta",
+      "source_method": "approved-source-row",
       "source_url": "https://www.visitsaudi.com/content/dam/documents/saudi-calendar-ar.pdf",
-      "fetched": true,
+      "fetched": false,
       "image": true,
-      "fetch_reason": ""
+      "fetch_reason": "The operation was aborted due to timeout"
     }
   ],
-  "failed": []
+  "failed": [
+    {
+      "id": "event-الأخطبوطية",
+      "title": "الاخطبوطية",
+      "source_url": "https://www.visitsaudi.com/content/dam/documents/saudi-calendar-ar.pdf",
+      "reason": "The operation was aborted due to timeout"
+    },
+    {
+      "id": "event-شارع-الفن-القرية-الأوروبية",
+      "title": "شارع الفن - القرية الاوروبية",
+      "source_url": "https://www.visitsaudi.com/content/dam/documents/saudi-calendar-ar.pdf",
+      "reason": "The operation was aborted due to timeout"
+    },
+    {
+      "id": "event-عروض-الفنون-الأدائية-التقليدية",
+      "title": "عروض الفنون الادائية التقليدية",
+      "source_url": "https://www.visitsaudi.com/content/dam/documents/saudi-calendar-ar.pdf",
+      "reason": "The operation was aborted due to timeout"
+    },
+    {
+      "id": "event-قصور-وقاع-ابو-نقطة-المتحمي",
+      "title": "قصور وقلاع ابو نقطة المتحمي",
+      "source_url": "https://www.visitsaudi.com/content/dam/documents/saudi-calendar-ar.pdf",
+      "reason": "The operation was aborted due to timeout"
+    },
+    {
+      "id": "event-مزرعة-التوت-الأسود",
+      "title": "مزرعة التوت الاسود",
+      "source_url": "https://www.visitsaudi.com/content/dam/documents/saudi-calendar-ar.pdf",
+      "reason": "The operation was aborted due to timeout"
+    }
+  ]
 }

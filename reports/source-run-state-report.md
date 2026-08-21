@@ -1,6 +1,6 @@
 # EventLive Source Run State
 
-Generated at: 2026-08-21T13:26:08.954Z
+Generated at: 2026-08-21T19:22:13.889Z
 
 ## Operating Rule
 
@@ -9,13 +9,13 @@ Raw collection is not publication. Every source run preserves evidence, separate
 ## Totals
 
 - Sources: 88
-- Attempted this run: 20
-- Deferred by adaptive cadence: 28
+- Attempted this run: 19
+- Deferred by adaptive cadence: 29
 - Productive: 17
-- Zero-yield: 0
-- Collector errors: 1
+- Zero-yield: 2
+- Collector errors: 0
 - Persistent collector errors: 8
-- Probe blocked: 2
+- Probe blocked: 0
 - Auto-publish eligible source lanes: 12
 
 ## Stalled / Blocked Focus
@@ -103,7 +103,7 @@ Call log:
 | 45 | saudi-university-events | evidence-monitor | productive | 4 | no | Continue periodic collection; dedupe and auto-publish only through the candidate gate. |
 | 46 | expofp-eventseye-saudi | discovery-only | discovery-only | 0 | no | Use only as discovery evidence; never publish directly. |
 | 47 | meetup-facebook-saudi-events | discovery-only | discovery-only | 0 | no | Use only as discovery evidence; never publish directly. |
-| 48 | sfda-events | active-collector | zero-yield | 0 | no | Zero-yield for 7 runs; inspect dropped samples or reclassify cadence if the source is seasonal/archive-only. |
+| 48 | sfda-events | active-collector | zero-yield | 0 | no | Zero-yield for 8 runs; inspect dropped samples or reclassify cadence if the source is seasonal/archive-only. |
 | 49 | saudi-contractors-authority-events | extractor-backlog | not-attempted | 0 | no | Probe HTML/API shape, then decide whether an extractor is worth adding. |
 | 50 | saudi-winter-calendar-spa | evidence-monitor | evidence-monitor | 0 | no | Monitor for official event detail evidence before candidate promotion. |
 | 51 | riyadh-city-events | extractor-backlog | probe-blocked | 0 | no | Do not bypass protection; keep as blocked/partnership candidate: fetch failed unable to verify the first certificate; if the root CA is installed locally, try running Node.js with --use-system-ca TypeError: fetch failed |
@@ -123,7 +123,7 @@ Call log:
 | 62 | baha-amanah-events | extractor-backlog | not-attempted | 0 | no | Probe HTML/API shape, then decide whether an extractor is worth adding. |
 | 63 | baha-chamber-events | evidence-monitor | evidence-monitor | 0 | no | Monitor for official event detail evidence before candidate promotion. |
 | 64 | jouf-chamber-events | extractor-backlog | not-attempted | 0 | no | Latest deep probe recommends build-html-detail-extractor; build only if future date-complete rows are visible. |
-| 65 | northern-borders-chamber-events | extractor-backlog | zero-yield | 0 | no | Zero-yield for 16 runs; inspect dropped samples or reclassify cadence if the source is seasonal/archive-only. |
+| 65 | northern-borders-chamber-events | extractor-backlog | zero-yield | 0 | no | Zero-yield for 17 runs; inspect dropped samples or reclassify cadence if the source is seasonal/archive-only. |
 | 66 | tabuk-chamber-events | extractor-backlog | zero-yield | 0 | no | Zero-yield for 36 runs; inspect dropped samples or reclassify cadence if the source is seasonal/archive-only. |
 | 67 | jazan-chamber-events | active-collector | zero-yield | 0 | no | Zero-yield for 18 runs; inspect dropped samples or reclassify cadence if the source is seasonal/archive-only. |
 | 68 | hail-chamber-events | evidence-monitor | evidence-monitor | 0 | no | Monitor for official event detail evidence before candidate promotion. |
@@ -134,7 +134,7 @@ Call log:
 | 73 | my-gov-sa-events | partnership | partnership | 0 | no | Partnership/API lane; do not scrape protected or app-only data. |
 | 74 | middle-east-banking-ai-summit | extractor-backlog | not-attempted | 0 | no | Probe HTML/API shape, then decide whether an extractor is worth adding. |
 | 75 | middle-east-enterprise-ai-summit | extractor-backlog | probe-blocked | 0 | no | Do not bypass protection; keep as blocked/partnership candidate: bot-protection |
-| 76 | umm-al-qura-events | active-collector | productive | 9 | no | Continue periodic collection; dedupe and auto-publish only through the candidate gate. |
+| 76 | umm-al-qura-events | active-collector | productive | 8 | no | Continue periodic collection; dedupe and auto-publish only through the candidate gate. |
 | 77 | leap-official-agendas | extractor-backlog | probe-blocked | 0 | no | Do not bypass protection; keep as blocked/partnership candidate: http-403 |
 | 78 | fii10-official-program | extractor-backlog | not-attempted | 0 | no | Probe HTML/API shape, then decide whether an extractor is worth adding. |
 | 79 | cityscape-global-official-program | partnership | partnership | 0 | no | Partnership/API lane; do not scrape protected or app-only data. |
@@ -143,7 +143,7 @@ Call log:
 | 82 | money2020-middle-east-agendas | extractor-backlog | not-attempted | 0 | no | Latest deep probe recommends build-jsonld-event-extractor; build only if future date-complete rows are visible. |
 | 83 | madinah-chamber-events | active-collector | zero-yield | 0 | no | Zero-yield for 24 runs; inspect dropped samples or reclassify cadence if the source is seasonal/archive-only. |
 | 84 | madinah-architecture-festival | active-collector | productive | 1 | no | Continue periodic collection; dedupe and auto-publish only through the candidate gate. |
-| 85 | hayy-jameel-events | active-collector | productive | 21 | no | Continue periodic collection; dedupe and auto-publish only through the candidate gate. |
+| 85 | hayy-jameel-events | active-collector | productive | 22 | no | Continue periodic collection; dedupe and auto-publish only through the candidate gate. |
 | 86 | informa-connect-saudi-events | venue-dedupe | productive | 5 | no | Continue periodic collection; dedupe and auto-publish only through the candidate gate. |
 | 87 | kau-events | venue-dedupe | zero-yield | 0 | no | Zero-yield for 10 runs; inspect dropped samples or reclassify cadence if the source is seasonal/archive-only. |
 | 88 | saudicon-events | discovery-only | productive | 13 | no | Continue periodic collection; dedupe and auto-publish only through the candidate gate. |

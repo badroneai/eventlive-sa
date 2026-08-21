@@ -1,22 +1,22 @@
 {
   "schema": "eventlive.harvest-os-status.v1",
-  "generated_at": "2026-08-21T13:34:15.210Z",
+  "generated_at": "2026-08-21T19:30:11.651Z",
   "status": "NEEDS_WORK",
   "operating_rule": "Probe before new sources; sample before full harvest; Raw collection is not publication; discovery-only never auto-publishes.",
   "totals": {
     "sources": 88,
-    "candidates": 617,
-    "matched_candidates": 588,
+    "candidates": 615,
+    "matched_candidates": 586,
     "auto_publish_sources": 15,
     "candidate_only_sources": 12,
     "partnership_required_sources": 5,
     "blocked_or_closed_sources": 0,
     "manual_review_sources": 56,
-    "collection_attempted": 20,
-    "productive_sources": 18,
-    "collector_errors": 7,
+    "collection_attempted": 19,
+    "productive_sources": 17,
+    "collector_errors": 6,
     "chronic_collector_errors": 6,
-    "transient_collector_errors": 1
+    "transient_collector_errors": 0
   },
   "policies": {
     "partnership_required": 5,
@@ -25,15 +25,15 @@
     "manual_review": 56
   },
   "candidates_by_gate": {
-    "catalog-review": 586,
+    "catalog-review": 584,
     "duplicate-review": 8,
     "source-evidence": 23
   },
   "funnel": {
-    "discovered_this_run": 302,
-    "candidate_queue": 617,
-    "evaluated_for_publish": 617,
-    "linked_existing": 574,
+    "discovered_this_run": 226,
+    "candidate_queue": 615,
+    "evaluated_for_publish": 615,
+    "linked_existing": 572,
     "published_new": 5,
     "blocked": 38,
     "secondary_promoted": 0,
@@ -95,13 +95,6 @@
       "error_streak": 7,
       "kind": "chronic",
       "attempted_this_run": false
-    },
-    {
-      "id": "saudi-space-agency-events",
-      "note": "fetch failed",
-      "error_streak": 2,
-      "kind": "transient",
-      "attempted_this_run": true
     }
   ],
   "sources": [

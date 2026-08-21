@@ -1,28 +1,28 @@
 # EventLive Harvest OS Status
 
-- Generated at: 2026-08-21T13:34:15.210Z
+- Generated at: 2026-08-21T19:30:11.651Z
 - Status: NEEDS_WORK
 - Operating rule: Probe before new sources; sample before full harvest; Raw collection is not publication; discovery-only never auto-publishes.
 
 ## Totals
 
 - Sources: 88
-- Candidates: 617
-- Matched candidates: 588
+- Candidates: 615
+- Matched candidates: 586
 - Auto-publish sources: 15
 - Candidate-only sources: 12
 - Partnership-required sources: 5
-- Productive sources / attempted: 18/20
-- Collector errors: 7 (chronic 6, transient 1)
+- Productive sources / attempted: 17/19
+- Collector errors: 6 (chronic 6, transient 0)
 
 ## Publication Funnel
 
 | Stage | Count |
 | --- | --- |
-| discovered_this_run | 302 |
-| candidate_queue | 617 |
-| evaluated_for_publish | 617 |
-| linked_existing | 574 |
+| discovered_this_run | 226 |
+| candidate_queue | 615 |
+| evaluated_for_publish | 615 |
+| linked_existing | 572 |
 | published_new | 5 |
 | blocked | 38 |
 | secondary_promoted | 0 |
@@ -55,7 +55,6 @@
 | monshaat-events | chronic | 13 | no | collector-error: fetch failed; fetch failed |
 | saudi-pro-league-fixtures | chronic | 10 | no | collector-error: fetch failed |
 | tuwaiq-academy-bootcamps | chronic | 7 | no | collector-error: HTTP 403 |
-| saudi-space-agency-events | transient | 2 | yes | fetch failed |
 
 | Source | Policy | Trust | Gate |
 | --- | --- | --- | --- |
