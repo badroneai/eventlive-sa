@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "generated_at": "2026-08-23T07:19:05.704Z",
+  "generated_at": "2026-08-23T13:19:23.498Z",
   "events": {
     "event-skill-development-initiative": {
       "identity": "skill development initiative|riyadh|2021-07-14",
@@ -1197,6 +1197,11 @@
       "first_seen": "2026-08-16",
       "last_seen": "2026-08-23"
     },
+    "event-beast-house": {
+      "identity": "beast house|riyadh|2026-08-28",
+      "first_seen": "2026-07-11",
+      "last_seen": "2026-08-23"
+    },
     "event-hayy-sounds-drumming-circle-with-saif-halal": {
       "identity": "hayy sounds | drumming circle with saif halal|jeddah|2026-08-29",
       "first_seen": "2026-08-19",
@@ -1239,6 +1244,21 @@
     },
     "event-linux-administration": {
       "identity": "linux administration|online|2026-08-30",
+      "first_seen": "2026-08-23",
+      "last_seen": "2026-08-23"
+    },
+    "event-ccna": {
+      "identity": "ccna|online|2026-08-30",
+      "first_seen": "2026-08-23",
+      "last_seen": "2026-08-23"
+    },
+    "event-responsible-ai-ethics-and-ai-governance": {
+      "identity": "responsible ai, ethics and ai governance|online|2026-08-30",
+      "first_seen": "2026-08-23",
+      "last_seen": "2026-08-23"
+    },
+    "event-cloud-for-ai-big-data-machine-learning": {
+      "identity": "cloud for ai, big data & machine learning|online|2026-08-30",
       "first_seen": "2026-08-23",
       "last_seen": "2026-08-23"
     },
@@ -1300,6 +1320,11 @@
     "event-المحتوى-التفاعلي-والتقييم-الإلكتروني-في-blackboard-ultra-الفترة-المسائية": {
       "identity": "المحتوى التفاعلي والتقييم الإلكتروني في blackboard ultra – الفترة المسائية|makkah|2026-08-31",
       "first_seen": "2026-08-17",
+      "last_seen": "2026-08-23"
+    },
+    "event-open-art-space-2": {
+      "identity": "open art space|dhahran|2026-08-31",
+      "first_seen": "2026-08-23",
       "last_seen": "2026-08-23"
     },
     "event-misk-x-unyo-youth-engagement-fellowship": {
@@ -2775,11 +2800,6 @@
     "event-space-debris-conference-2028": {
       "identity": "space debris conference 2028|riyadh|2028-02-15",
       "first_seen": "2026-08-06",
-      "last_seen": "2026-08-23"
-    },
-    "event-beast-house": {
-      "identity": "beast house|riyadh|2026-08-21",
-      "first_seen": "2026-07-11",
       "last_seen": "2026-08-23"
     },
     "event-boat-bash-cruise": {

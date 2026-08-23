@@ -1,9 +1,9 @@
 {
-  "generated_at": "2026-08-23T07:11:10.286Z",
+  "generated_at": "2026-08-23T13:12:00.057Z",
   "catalog": "data/events_catalog.json",
   "totals": {
-    "targets": 21,
-    "enriched": 21,
+    "targets": 24,
+    "enriched": 24,
     "failed": 0
   },
   "enriched": [
@@ -191,6 +191,33 @@
       "id": "event-linux-administration",
       "title": "Linux Administration",
       "group_id": "13057",
+      "goals": 1,
+      "features": 1,
+      "requirements": 4,
+      "metadata": 8
+    },
+    {
+      "id": "event-ccna",
+      "title": "CCNA",
+      "group_id": "13058",
+      "goals": 1,
+      "features": 1,
+      "requirements": 4,
+      "metadata": 8
+    },
+    {
+      "id": "event-responsible-ai-ethics-and-ai-governance",
+      "title": "Responsible AI, Ethics and AI Governance",
+      "group_id": "13059",
+      "goals": 1,
+      "features": 1,
+      "requirements": 4,
+      "metadata": 8
+    },
+    {
+      "id": "event-cloud-for-ai-big-data-machine-learning",
+      "title": "Cloud for AI, Big Data & Machine Learning",
+      "group_id": "13060",
       "goals": 1,
       "features": 1,
       "requirements": 4,

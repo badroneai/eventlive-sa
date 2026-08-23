@@ -1,6 +1,6 @@
 # EventLive Source Ingestion Plan
 
-Generated at: 2026-08-23T07:16:02.774Z
+Generated at: 2026-08-23T13:16:08.228Z
 
 ## Executive Model
 
@@ -55,17 +55,17 @@ EventLive should not treat all registered sources equally. The operating model i
 | moc-cultural-calendar | - | 0 | - | Run in the 6-hour sync ring; improve zero-yield extractors before widening. |
 | mos-events | - | 0 | - | Run in the 6-hour sync ring; improve zero-yield extractors before widening. |
 | experience-alula-events | ok | 5 | - | Run in the 6-hour sync ring; keep dedupe and image enrichment active. |
-| mdlbeast-events | ok | 3 | - | Run in the 6-hour sync ring; keep dedupe and image enrichment active. |
+| mdlbeast-events | ok | 4 | - | Run in the 6-hour sync ring; keep dedupe and image enrichment active. |
 | monshaat-events | - | 0 | - | Run in the 6-hour sync ring; improve zero-yield extractors before widening. |
 | invest-saudi-events | ok | 3 | - | Run in the 6-hour sync ring; keep dedupe and image enrichment active. |
 | rfecc-whats-on | ok | 7 | - | Run in the 6-hour sync ring; keep dedupe and image enrichment active. |
 | tuwaiq-academy-bootcamps | - | 0 | - | Run in the 6-hour sync ring; improve zero-yield extractors before widening. |
-| future-skills-catalog | ok | 4 | - | Run in the 6-hour sync ring; keep dedupe and image enrichment active. |
+| future-skills-catalog | ok | 6 | - | Run in the 6-hour sync ring; keep dedupe and image enrichment active. |
 | visit-saudi-seasons | ok | 27 | - | Run in the 6-hour sync ring; keep dedupe and image enrichment active. |
 | code-mcit-programs | - | 0 | - | Run in the 6-hour sync ring; improve zero-yield extractors before widening. |
 | misk-hub-programs | ok | 5 | - | Run in the 6-hour sync ring; keep dedupe and image enrichment active. |
 | dhahran-expo-calendar | ok | 16 | - | Run in the 6-hour sync ring; keep dedupe and image enrichment active. |
-| ithra-events | ok | 65 | - | Run in the 6-hour sync ring; keep dedupe and image enrichment active. |
+| ithra-events | ok | 61 | - | Run in the 6-hour sync ring; keep dedupe and image enrichment active. |
 | sdaia-academy-programs | - | 0 | - | Run in the 6-hour sync ring; improve zero-yield extractors before widening. |
 | misk-hub-events | ok | 3 | - | Run in the 6-hour sync ring; keep dedupe and image enrichment active. |
 | jcci-events-center | - | 0 | - | Run in the 6-hour sync ring; improve zero-yield extractors before widening. |

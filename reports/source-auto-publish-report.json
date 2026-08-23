@@ -1,18 +1,18 @@
 {
-  "published_at": "2026-08-23T07:11:04.408Z",
+  "published_at": "2026-08-23T13:11:54.389Z",
   "dry_run": false,
   "include_partner": true,
   "source_candidates": "data/source_candidates.json",
   "events_catalog": "data/events_catalog.json",
-  "candidates_seen": 608,
+  "candidates_seen": 613,
   "totals": {
-    "candidates_seen": 608,
-    "published": 9,
-    "linked_existing": 563,
+    "candidates_seen": 613,
+    "published": 7,
+    "linked_existing": 570,
     "blocked": 36,
     "duplicate_review_alerts": 8,
     "category_fallback_alerts": 0,
-    "reconciled": 572
+    "reconciled": 577
   },
   "category_fallback_alerts": [],
   "duplicate_catalog_rows_removed": 0,
@@ -179,34 +179,24 @@
       "title": "مزرعة التوت الأسود"
     },
     {
-      "candidate_id": "candidate-umm-al-qura-events-ملتقى-المستجدين-تحت-شعار-اكتشف-تعلم-انطلق-20260824-96f1da74",
-      "event_id": "event-ملتقى-المستجدين-تحت-شعار-اكتشف-تعلم-انطلق",
-      "title": "ملتقى المستجدين تحت شعار (اكتشف - تعلم - انطلق)"
+      "candidate_id": "candidate-future-skills-catalog-ccna-20260830-38c8033f",
+      "event_id": "event-ccna",
+      "title": "CCNA"
     },
     {
-      "candidate_id": "candidate-umm-al-qura-events-أساسيات-التعلّم-الرقمي-للطلبة-عبر-البلاك-بورد-الترا-الفترة-الصباحية-20260825-0917cc38",
-      "event_id": "event-أساسيات-التعلّم-الرقمي-للطلبة-عبر-البلاك-بورد-الترا-الفترة-الصباحية",
-      "title": "أساسيات التعلّم الرقمي للطلبة عبر البلاك بورد الترا – الفترة الصباحية"
+      "candidate_id": "candidate-future-skills-catalog-responsible-ai-ethics-and-ai-governance-20260830-c389d1e0",
+      "event_id": "event-responsible-ai-ethics-and-ai-governance",
+      "title": "⁠Responsible AI, Ethics and AI Governance"
     },
     {
-      "candidate_id": "candidate-umm-al-qura-events-أساسيات-التعلّم-الرقمي-للطلبة-عبر-البلاك-بورد-الترا-الفترة-المسائية-20260825-b315c27c",
-      "event_id": "event-أساسيات-التعلّم-الرقمي-للطلبة-عبر-البلاك-بورد-الترا-الفترة-المسائية",
-      "title": "أساسيات التعلّم الرقمي للطلبة عبر البلاك بورد الترا – الفترة المسائية"
+      "candidate_id": "candidate-future-skills-catalog-cloud-for-ai-big-data-machine-learning-20260830-04d1f8e2",
+      "event_id": "event-cloud-for-ai-big-data-machine-learning",
+      "title": "⁠Cloud for AI, Big Data & Machine Learning"
     },
     {
-      "candidate_id": "candidate-umm-al-qura-events-الطالب-الفعّال-في-بيئة-البلاك-بورد-الترا-الفترة-الصباحيه-20260826-cf1161cd",
-      "event_id": "event-الطالب-الفعّال-في-بيئة-البلاك-بورد-الترا-الفترة-الصباحيه",
-      "title": "الطالب الفعّال في بيئة البلاك بورد الترا – الفترة الصباحيه"
-    },
-    {
-      "candidate_id": "candidate-umm-al-qura-events-الطالب-الفعّال-في-بيئة-البلاك-بورد-الترا-الفترة-المسائية-20260826-1a3ed42a",
-      "event_id": "event-الطالب-الفعّال-في-بيئة-البلاك-بورد-الترا-الفترة-المسائية",
-      "title": "الطالب الفعّال في بيئة البلاك بورد الترا – الفترة المسائية"
-    },
-    {
-      "candidate_id": "candidate-ithra-events-creative-writing-club-20260928-a7f18ce9",
-      "event_id": "event-creative-writing-club",
-      "title": "Creative Writing Club"
+      "candidate_id": "candidate-ithra-events-open-art-space-20260831-ac79cac6",
+      "event_id": "event-open-art-space-2",
+      "title": "Open Art Space"
     }
   ],
   "linked_existing": [
@@ -1411,6 +1401,12 @@
       "reason": "already linked to catalog event"
     },
     {
+      "candidate_id": "candidate-umm-al-qura-events-ملتقى-المستجدين-تحت-شعار-اكتشف-تعلم-انطلق-20260824-96f1da74",
+      "event_id": "event-ملتقى-المستجدين-تحت-شعار-اكتشف-تعلم-انطلق",
+      "title": "ملتقى المستجدين تحت شعار (اكتشف - تعلم - انطلق)",
+      "reason": "already linked to catalog event"
+    },
+    {
       "candidate_id": "candidate-umm-al-qura-events-إنشاء-وإدارة-المقرر-في-blackboard-ultra-الفترة-الصباحية-20260824-5196a6ff",
       "event_id": "event-إنشاء-وإدارة-المقرر-في-blackboard-ultra-الفترة-الصباحية",
       "title": "إنشاء وإدارة المقرر في Blackboard Ultra – الفترة الصباحية",
@@ -1429,12 +1425,6 @@
       "reason": "already linked to catalog event"
     },
     {
-      "candidate_id": "candidate-ithra-events-paint-like-an-artist-20260824-a67d8ec3",
-      "event_id": "event-paint-like-an-artist",
-      "title": "Paint Like an Artist",
-      "reason": "already linked to catalog event"
-    },
-    {
       "candidate_id": "candidate-ithra-events-childrens-art-studio-20260824-2bf92d17",
       "event_id": "event-childrens-art-studio",
       "title": "Children's Art Studio",
@@ -1450,6 +1440,12 @@
       "candidate_id": "candidate-ithra-events-family-challenges-20260824-3726c868",
       "event_id": "event-family-challenges",
       "title": "Family Challenges",
+      "reason": "already linked to catalog event"
+    },
+    {
+      "candidate_id": "candidate-ithra-events-paint-like-an-artist-20260824-a67d8ec3",
+      "event_id": "event-paint-like-an-artist",
+      "title": "Paint Like an Artist",
       "reason": "already linked to catalog event"
     },
     {
@@ -1477,9 +1473,21 @@
       "reason": "already linked to catalog event"
     },
     {
+      "candidate_id": "candidate-umm-al-qura-events-أساسيات-التعلّم-الرقمي-للطلبة-عبر-البلاك-بورد-الترا-الفترة-الصباحية-20260825-0917cc38",
+      "event_id": "event-أساسيات-التعلّم-الرقمي-للطلبة-عبر-البلاك-بورد-الترا-الفترة-الصباحية",
+      "title": "أساسيات التعلّم الرقمي للطلبة عبر البلاك بورد الترا – الفترة الصباحية",
+      "reason": "already linked to catalog event"
+    },
+    {
       "candidate_id": "candidate-umm-al-qura-events-المحتوى-التفاعلي-والتقييم-الإلكتروني-في-blackboard-ultra-الفترة-الصباحية-20260825-116c6b0a",
       "event_id": "event-المحتوى-التفاعلي-والتقييم-الإلكتروني-في-blackboard-ultra-الفترة-الصباحية",
       "title": "المحتوى التفاعلي والتقييم الإلكتروني في Blackboard Ultra – الفترة الصباحية",
+      "reason": "already linked to catalog event"
+    },
+    {
+      "candidate_id": "candidate-umm-al-qura-events-أساسيات-التعلّم-الرقمي-للطلبة-عبر-البلاك-بورد-الترا-الفترة-المسائية-20260825-b315c27c",
+      "event_id": "event-أساسيات-التعلّم-الرقمي-للطلبة-عبر-البلاك-بورد-الترا-الفترة-المسائية",
+      "title": "أساسيات التعلّم الرقمي للطلبة عبر البلاك بورد الترا – الفترة المسائية",
       "reason": "already linked to catalog event"
     },
     {
@@ -1501,12 +1509,6 @@
       "reason": "already linked to catalog event"
     },
     {
-      "candidate_id": "candidate-ithra-events-little-explorers-20260825-1cc1993f",
-      "event_id": "event-little-explorers",
-      "title": "Little Explorers",
-      "reason": "already linked to catalog event"
-    },
-    {
       "candidate_id": "candidate-ithra-events-connect-and-create-20260825-d2514326",
       "event_id": "event-connect-and-create",
       "title": "Connect and Create!",
@@ -1525,21 +1527,27 @@
       "reason": "already linked to catalog event"
     },
     {
+      "candidate_id": "candidate-umm-al-qura-events-الطالب-الفعّال-في-بيئة-البلاك-بورد-الترا-الفترة-الصباحيه-20260826-cf1161cd",
+      "event_id": "event-الطالب-الفعّال-في-بيئة-البلاك-بورد-الترا-الفترة-الصباحيه",
+      "title": "الطالب الفعّال في بيئة البلاك بورد الترا – الفترة الصباحيه",
+      "reason": "already linked to catalog event"
+    },
+    {
       "candidate_id": "candidate-umm-al-qura-events-الفصول-الافتراضية-عبر-blackboard-ultra-الفترة-الصباحية-20260826-1927687e",
       "event_id": "event-الفصول-الافتراضية-عبر-blackboard-ultra-الفترة-الصباحية",
       "title": "الفصول الافتراضية عبر Blackboard Ultra – الفترة الصباحية",
       "reason": "already linked to catalog event"
     },
     {
-      "candidate_id": "candidate-ithra-events-all-things-hedgehogs-20260826-952dc936",
-      "event_id": "event-all-things-hedgehogs",
-      "title": "All Things Hedgehogs",
+      "candidate_id": "candidate-umm-al-qura-events-الطالب-الفعّال-في-بيئة-البلاك-بورد-الترا-الفترة-المسائية-20260826-1a3ed42a",
+      "event_id": "event-الطالب-الفعّال-في-بيئة-البلاك-بورد-الترا-الفترة-المسائية",
+      "title": "الطالب الفعّال في بيئة البلاك بورد الترا – الفترة المسائية",
       "reason": "already linked to catalog event"
     },
     {
-      "candidate_id": "candidate-ithra-events-survival-journey-20260826-4fd1e78d",
-      "event_id": "event-survival-journey",
-      "title": "Survival Journey",
+      "candidate_id": "candidate-ithra-events-all-things-hedgehogs-20260826-952dc936",
+      "event_id": "event-all-things-hedgehogs",
+      "title": "All Things Hedgehogs",
       "reason": "already linked to catalog event"
     },
     {
@@ -1579,6 +1587,12 @@
       "reason": "already linked to catalog event"
     },
     {
+      "candidate_id": "candidate-ithra-events-little-explorers-20260827-1cc1993f",
+      "event_id": "event-little-explorers",
+      "title": "Little Explorers",
+      "reason": "already linked to catalog event"
+    },
+    {
       "candidate_id": "candidate-ithra-events-games-hub-20260827-fb83124c",
       "event_id": "event-games-hub",
       "title": "Games Hub",
@@ -1588,12 +1602,6 @@
       "candidate_id": "candidate-ithra-events-art-in-virtual-motion-20260827-3acf52ef",
       "event_id": "event-art-in-virtual-motion",
       "title": "Art in Virtual Motion",
-      "reason": "already linked to catalog event"
-    },
-    {
-      "candidate_id": "candidate-ithra-events-swim-r-mission-20260827-f8a6c05c",
-      "event_id": "event-swim-r-mission",
-      "title": "SWIM-R Mission",
       "reason": "already linked to catalog event"
     },
     {
@@ -1643,6 +1651,12 @@
       "event_id": "event-dots-on-letters",
       "title": "Dots on Letters",
       "reason": "already linked to catalog event"
+    },
+    {
+      "candidate_id": "candidate-mdlbeast-events-beast-house-20260828-83049a2a",
+      "event_id": "event-beast-house",
+      "title": "Beast House",
+      "reason": "trusted duplicate linked to existing catalog event"
     },
     {
       "candidate_id": "candidate-hayy-jameel-events-hayy-sounds-drumming-circle-with-saif-halal-20260829-e1fc9366",
@@ -1801,6 +1815,12 @@
       "reason": "already linked to catalog event"
     },
     {
+      "candidate_id": "candidate-ithra-events-swim-r-mission-20260831-f8a6c05c",
+      "event_id": "event-swim-r-mission",
+      "title": "SWIM-R Mission",
+      "reason": "already linked to catalog event"
+    },
+    {
       "candidate_id": "candidate-ithra-events-idea-lab-societies-majlis-20260831-eeece087",
       "event_id": "event-idea-lab-majlis",
       "title": "Idea Lab Societies' Majlis",
@@ -1876,6 +1896,12 @@
       "candidate_id": "candidate-asharqia-chamber-events-معرض-الحرف-والأعمال-اليدوية-2026-20260901-c083669f",
       "event_id": "event-معرض-الحرف-والأعمال-اليدوية-2026",
       "title": "معرض الحرف والأعمال اليدوية 2026",
+      "reason": "already linked to catalog event"
+    },
+    {
+      "candidate_id": "candidate-ithra-events-survival-journey-20260901-4fd1e78d",
+      "event_id": "event-survival-journey",
+      "title": "Survival Journey",
       "reason": "already linked to catalog event"
     },
     {
@@ -2338,6 +2364,12 @@
       "candidate_id": "candidate-riyadh-city-events-icegov-international-conference-on-electronic-governance-20260928-db0f9390",
       "event_id": "event-icegov-international-conference-on-electronic-governance",
       "title": "ICEGOV – International Conference on Electronic Governance",
+      "reason": "already linked to catalog event"
+    },
+    {
+      "candidate_id": "candidate-ithra-events-creative-writing-club-20260928-a7f18ce9",
+      "event_id": "event-creative-writing-club",
+      "title": "Creative Writing Club",
       "reason": "already linked to catalog event"
     },
     {

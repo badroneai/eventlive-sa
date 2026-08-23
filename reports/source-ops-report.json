@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-23T07:16:03.097Z",
+  "generated_at": "2026-08-23T13:16:08.542Z",
   "files": {
     "registry": "data/source_registry.json",
     "candidates": "data/source_candidates.json",
@@ -11,25 +11,25 @@
   },
   "collection": {
     "basis": "source_collection_report_adaptive",
-    "collected_at": "2026-08-23T07:06:39.920Z",
+    "collected_at": "2026-08-23T13:06:36.957Z",
     "freshness": "fresh",
-    "discovered": 228,
-    "written": 608
+    "discovered": 293,
+    "written": 613
   },
   "sources": {
     "total": 88,
-    "attempted": 18,
-    "due": 18,
-    "deferred": 30,
+    "attempted": 21,
+    "due": 21,
+    "deferred": 27,
     "scheduled": 48,
     "runnable": 48,
     "collection_coverage_pct": 100,
-    "registry_collection_coverage_pct": 20,
+    "registry_collection_coverage_pct": 24,
     "scheduled_runnable_coverage_pct": 100,
-    "healthy": 18,
-    "zero_yield": 0,
+    "healthy": 19,
+    "zero_yield": 2,
     "errors": 0,
-    "cadence_deferred": 30,
+    "cadence_deferred": 27,
     "not_collected": 40,
     "unattempted_high_priority": 3,
     "health": [
@@ -131,8 +131,8 @@
         "error_streak": 0,
         "zero_yield_streak": 0,
         "last_attempted_at": null,
-        "extracted": 3,
-        "candidates": 3,
+        "extracted": 4,
+        "candidates": 4,
         "next_action": "استمر بالمراجعة والتكرار قبل النشر."
       },
       {
@@ -251,8 +251,8 @@
         "error_streak": 0,
         "zero_yield_streak": 0,
         "last_attempted_at": null,
-        "extracted": 4,
-        "candidates": 4,
+        "extracted": 6,
+        "candidates": 7,
         "next_action": "استمر بالمراجعة والتكرار قبل النشر."
       },
       {
@@ -326,8 +326,8 @@
         "error_streak": 0,
         "zero_yield_streak": 0,
         "last_attempted_at": null,
-        "extracted": 65,
-        "candidates": 68,
+        "extracted": 61,
+        "candidates": 69,
         "next_action": "استمر بالمراجعة والتكرار قبل النشر."
       },
       {
@@ -466,16 +466,13 @@
         "id": "visit-saudi-calendar-pdf",
         "name": "Visit Saudi Summer Calendar PDF",
         "priority": 34,
-        "status": "deferred",
-        "historical_status": "probe-blocked",
-        "cadence_reason": "error-cooldown",
-        "next_due_at": "2026-08-23T08:14:24.310Z",
+        "status": "healthy",
         "error_streak": 0,
         "zero_yield_streak": 0,
-        "last_attempted_at": "2026-08-23T02:14:24.310Z",
-        "extracted": 0,
+        "last_attempted_at": null,
+        "extracted": 66,
         "candidates": 75,
-        "next_action": "مؤجل حتى 2026-08-23T08:14:24.310Z وفق الجدولة التكيفية."
+        "next_action": "استمر بالمراجعة والتكرار قبل النشر."
       },
       {
         "id": "qiddiya-events",
@@ -685,16 +682,13 @@
         "id": "riyadh-city-events",
         "name": "Riyadh City Events",
         "priority": 51,
-        "status": "deferred",
-        "historical_status": "probe-blocked",
-        "cadence_reason": "error-cooldown",
-        "next_due_at": "2026-08-23T08:14:24.310Z",
+        "status": "zero-yield",
         "error_streak": 0,
         "zero_yield_streak": 0,
-        "last_attempted_at": "2026-08-23T02:14:24.310Z",
+        "last_attempted_at": null,
         "extracted": 0,
         "candidates": 73,
-        "next_action": "مؤجل حتى 2026-08-23T08:14:24.310Z وفق الجدولة التكيفية."
+        "next_action": "No future date-complete candidates found by the conservative extractor."
       },
       {
         "id": "monshaat-academy-programs",
@@ -946,16 +940,13 @@
         "id": "najran-municipality-summer-events",
         "name": "Najran Municipality Summer Events",
         "priority": 71,
-        "status": "deferred",
-        "historical_status": "zero-yield",
-        "cadence_reason": "zero-yield-cooldown",
-        "next_due_at": "2026-08-23T07:11:49.376Z",
+        "status": "zero-yield",
         "error_streak": 0,
-        "zero_yield_streak": 16,
-        "last_attempted_at": "2026-08-20T07:11:49.376Z",
+        "zero_yield_streak": 0,
+        "last_attempted_at": null,
         "extracted": 0,
         "candidates": 0,
-        "next_action": "مؤجل حتى 2026-08-23T07:11:49.376Z وفق الجدولة التكيفية."
+        "next_action": "No future date-complete candidates found by the conservative extractor."
       },
       {
         "id": "platinumlist-saudi-city-network",
@@ -1182,28 +1173,28 @@
     ]
   },
   "queue": {
-    "total": 608,
+    "total": 613,
     "ready_for_review": 8,
     "approved_for_catalog": 0,
-    "published_from_candidates": 578,
+    "published_from_candidates": 583,
     "actionable": 8,
     "stale_unpublished": 0,
     "duplicate_risk": 8,
     "needs_extraction": 0,
     "needs_evidence": 22,
     "by_review_status": {
-      "approved-for-catalog": 578,
+      "approved-for-catalog": 583,
       "ready-for-review": 8,
       "evidence-captured": 14,
       "new": 8
     },
     "by_publication_gate": {
-      "catalog-review": 578,
+      "catalog-review": 583,
       "duplicate-review": 8,
       "source-evidence": 22
     },
     "by_confidence": {
-      "official": 572,
+      "official": 577,
       "public-listing": 17,
       "verified-secondary": 11,
       "unverified": 8
@@ -1228,12 +1219,13 @@
       "Tuwaiq Academy Bootcamps and Programs": 34,
       "Umm Al-Qura University Events Center": 67,
       "Monsha'at All Events": 1,
-      "Ithra Events": 68,
+      "Ithra Events": 69,
       "Misk Hub Events": 2,
-      "Future Skills MCIT Catalogue": 4,
+      "Future Skills MCIT Catalogue": 7,
       "Dhahran Expo Calendar": 17,
       "Tradepass Official": 1,
       "Saudi Universities and Technical Colleges": 3,
+      "MDLBEAST Events": 4,
       "Informa Connect Saudi Event Portfolio": 6,
       "RFECC What's On": 7,
       "Informa Official": 1,
@@ -1249,7 +1241,6 @@
       "Experience AlUla Events": 9,
       "Eye of Riyadh Official": 4,
       "Invest Saudi Events": 3,
-      "MDLBEAST Events": 3,
       "King Abdulaziz University Events": 2,
       "Madinah International Architecture Festival": 1,
       "Qassim University Events": 1,
@@ -1469,7 +1460,7 @@
         "discovery_notes": "",
         "duplicate_risk": false,
         "matched_catalog_event_id": "",
-        "days_to_start": 8,
+        "days_to_start": 7,
         "is_past": false,
         "is_actionable": false,
         "action": "دليل اكتشاف فقط؛ لا ينشر آلياً حتى يثبت من مصدر رسمي.",
@@ -1675,7 +1666,7 @@
         "discovery_notes": "saudi-location-signal, specific-venue, event-topic-fit",
         "duplicate_risk": false,
         "matched_catalog_event_id": "",
-        "days_to_start": 14,
+        "days_to_start": 13,
         "is_past": false,
         "is_actionable": false,
         "action": "دليل اكتشاف فقط؛ لا ينشر آلياً حتى يثبت من مصدر رسمي.",

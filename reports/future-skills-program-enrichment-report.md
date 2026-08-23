@@ -1,8 +1,8 @@
 # Future Skills Program Enrichment Report
 
-- generated_at: 2026-08-23T07:11:10.286Z
-- targets: 21
-- enriched: 21
+- generated_at: 2026-08-23T13:12:00.057Z
+- targets: 24
+- enriched: 24
 - failed: 0
 
 ## Enriched
@@ -28,6 +28,9 @@
 - CompTIA Network+ (13055) - outcomes=1, topics=1, requirements=4, metadata=8
 - Power BI for Beginners (13056) - outcomes=1, topics=1, requirements=4, metadata=8
 - Linux Administration (13057) - outcomes=1, topics=1, requirements=4, metadata=8
+- CCNA (13058) - outcomes=1, topics=1, requirements=4, metadata=8
+- Responsible AI, Ethics and AI Governance (13059) - outcomes=1, topics=1, requirements=4, metadata=8
+- Cloud for AI, Big Data & Machine Learning (13060) - outcomes=1, topics=1, requirements=4, metadata=8
 
 ## Failed
 

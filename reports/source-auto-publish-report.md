@@ -1,11 +1,11 @@
 # EventLive Source Auto Publish Report
 
-- published_at: 2026-08-23T07:11:04.408Z
+- published_at: 2026-08-23T13:11:54.389Z
 - dry_run: false
 - include_partner: true
-- candidates_seen: 608
-- published_new: 9
-- linked_existing: 563
+- candidates_seen: 613
+- published_new: 7
+- linked_existing: 570
 - blocked_remaining: 36
 - duplicate_review_alerts: 8
 
@@ -28,12 +28,10 @@
 | candidate-visit-saudi-calendar-pdf-قصور-وقاع-ابو-نقطة-المتحمي-20260503-4a38d19e | published | event-قصور-وقاع-ابو-نقطة-المتحمي | قصور وقاع ابو نقطة المتحمي |
 | candidate-visit-saudi-calendar-pdf-شارع-الفن-القرية-الأوروبية-20260625-4a38d19e | published | event-شارع-الفن-القرية-الأوروبية | شارع الفن - القرية الأوروبية |
 | candidate-visit-saudi-calendar-pdf-مزرعة-التوت-الأسود-20260701-4a38d19e | published | event-مزرعة-التوت-الأسود | مزرعة التوت الأسود |
-| candidate-umm-al-qura-events-ملتقى-المستجدين-تحت-شعار-اكتشف-تعلم-انطلق-20260824-96f1da74 | published | event-ملتقى-المستجدين-تحت-شعار-اكتشف-تعلم-انطلق | ملتقى المستجدين تحت شعار (اكتشف - تعلم - انطلق) |
-| candidate-umm-al-qura-events-أساسيات-التعلّم-الرقمي-للطلبة-عبر-البلاك-بورد-الترا-الفترة-الصباحية-20260825-0917cc38 | published | event-أساسيات-التعلّم-الرقمي-للطلبة-عبر-البلاك-بورد-الترا-الفترة-الصباحية | أساسيات التعلّم الرقمي للطلبة عبر البلاك بورد الترا – الفترة الصباحية |
-| candidate-umm-al-qura-events-أساسيات-التعلّم-الرقمي-للطلبة-عبر-البلاك-بورد-الترا-الفترة-المسائية-20260825-b315c27c | published | event-أساسيات-التعلّم-الرقمي-للطلبة-عبر-البلاك-بورد-الترا-الفترة-المسائية | أساسيات التعلّم الرقمي للطلبة عبر البلاك بورد الترا – الفترة المسائية |
-| candidate-umm-al-qura-events-الطالب-الفعّال-في-بيئة-البلاك-بورد-الترا-الفترة-الصباحيه-20260826-cf1161cd | published | event-الطالب-الفعّال-في-بيئة-البلاك-بورد-الترا-الفترة-الصباحيه | الطالب الفعّال في بيئة البلاك بورد الترا – الفترة الصباحيه |
-| candidate-umm-al-qura-events-الطالب-الفعّال-في-بيئة-البلاك-بورد-الترا-الفترة-المسائية-20260826-1a3ed42a | published | event-الطالب-الفعّال-في-بيئة-البلاك-بورد-الترا-الفترة-المسائية | الطالب الفعّال في بيئة البلاك بورد الترا – الفترة المسائية |
-| candidate-ithra-events-creative-writing-club-20260928-a7f18ce9 | published | event-creative-writing-club | Creative Writing Club |
+| candidate-future-skills-catalog-ccna-20260830-38c8033f | published | event-ccna | CCNA |
+| candidate-future-skills-catalog-responsible-ai-ethics-and-ai-governance-20260830-c389d1e0 | published | event-responsible-ai-ethics-and-ai-governance | ⁠Responsible AI, Ethics and AI Governance |
+| candidate-future-skills-catalog-cloud-for-ai-big-data-machine-learning-20260830-04d1f8e2 | published | event-cloud-for-ai-big-data-machine-learning | ⁠Cloud for AI, Big Data & Machine Learning |
+| candidate-ithra-events-open-art-space-20260831-ac79cac6 | published | event-open-art-space-2 | Open Art Space |
 | candidate-moc-cultural-subportals-skill-development-initiative-20210714-10f7dc2c | linked-existing | event-skill-development-initiative | already linked to catalog event |
 | candidate-moc-cultural-subportals-sitar-20220921-cda2e068 | linked-existing | event-sitar | already linked to catalog event |
 | candidate-moc-cultural-subportals-the-architecture-and-design-caf-20240427-046e2ec1 | linked-existing | event-the-architecture-and-design-caf | already linked to catalog event |
@@ -234,37 +232,40 @@
 | candidate-ithra-events-printing-house-20260824-e56f4f89 | linked-existing | event-printing-house | already linked to catalog event |
 | candidate-ithra-events-tafasahu-make-room-20260824-562bc61d | linked-existing | event-tafasahu-make-room | already linked to catalog event |
 | candidate-ithra-events-tinkering-stations-20260824-5a2c4c0e | linked-existing | event-tinkering-stations | already linked to catalog event |
+| candidate-umm-al-qura-events-ملتقى-المستجدين-تحت-شعار-اكتشف-تعلم-انطلق-20260824-96f1da74 | linked-existing | event-ملتقى-المستجدين-تحت-شعار-اكتشف-تعلم-انطلق | already linked to catalog event |
 | candidate-umm-al-qura-events-إنشاء-وإدارة-المقرر-في-blackboard-ultra-الفترة-الصباحية-20260824-5196a6ff | linked-existing | event-إنشاء-وإدارة-المقرر-في-blackboard-ultra-الفترة-الصباحية | already linked to catalog event |
 | candidate-ithra-events-spot-of-inspiration-20260824-5bac584c | linked-existing | event-spot-of-inspiration | already linked to catalog event |
 | candidate-ithra-events-childrens-museum-story-time-20260824-ada8b9db | linked-existing | event-childrens-museum-story-time | already linked to catalog event |
-| candidate-ithra-events-paint-like-an-artist-20260824-a67d8ec3 | linked-existing | event-paint-like-an-artist | already linked to catalog event |
 | candidate-ithra-events-childrens-art-studio-20260824-2bf92d17 | linked-existing | event-childrens-art-studio | already linked to catalog event |
 | candidate-ithra-events-emboss-printing-experience-20260824-2671d1ce | linked-existing | event-emboss-printing-experience | already linked to catalog event |
 | candidate-ithra-events-family-challenges-20260824-3726c868 | linked-existing | event-family-challenges | already linked to catalog event |
+| candidate-ithra-events-paint-like-an-artist-20260824-a67d8ec3 | linked-existing | event-paint-like-an-artist | already linked to catalog event |
 | candidate-ithra-events-energy-lab-20260824-60155d60 | linked-existing | event-energy-lab | already linked to catalog event |
 | candidate-ithra-events-children-story-time-20260824-f545fa69 | linked-existing | event-children-story-time | already linked to catalog event |
 | candidate-ithra-events-the-non-stop-spin-20260824-6cf89742 | linked-existing | event-the-non-stop-spin | already linked to catalog event |
 | candidate-ithra-events-toddler-tuesday-20260825-1afead7d | linked-existing | event-toddler-tuesday | already linked to catalog event |
+| candidate-umm-al-qura-events-أساسيات-التعلّم-الرقمي-للطلبة-عبر-البلاك-بورد-الترا-الفترة-الصباحية-20260825-0917cc38 | linked-existing | event-أساسيات-التعلّم-الرقمي-للطلبة-عبر-البلاك-بورد-الترا-الفترة-الصباحية | already linked to catalog event |
 | candidate-umm-al-qura-events-المحتوى-التفاعلي-والتقييم-الإلكتروني-في-blackboard-ultra-الفترة-الصباحية-20260825-116c6b0a | linked-existing | event-المحتوى-التفاعلي-والتقييم-الإلكتروني-في-blackboard-ultra-الفترة-الصباحية | already linked to catalog event |
+| candidate-umm-al-qura-events-أساسيات-التعلّم-الرقمي-للطلبة-عبر-البلاك-بورد-الترا-الفترة-المسائية-20260825-b315c27c | linked-existing | event-أساسيات-التعلّم-الرقمي-للطلبة-عبر-البلاك-بورد-الترا-الفترة-المسائية | already linked to catalog event |
 | candidate-misk-hub-events-navigating-the-cyber-map-how-to-choose-your-specialization-build-a-corpo-20260825-3d712502 | linked-existing | event-navigating-the-cyber-map-how-to-choose-your-specialization-build-a-corpo | already linked to catalog event |
 | candidate-ithra-events-tangram-20260825-9a9db6cb | linked-existing | event-tangram | already linked to catalog event |
 | candidate-ithra-events-chess-hub-20260825-4919439a | linked-existing | event-chess-hub | already linked to catalog event |
-| candidate-ithra-events-little-explorers-20260825-1cc1993f | linked-existing | event-little-explorers | already linked to catalog event |
 | candidate-ithra-events-connect-and-create-20260825-d2514326 | linked-existing | event-connect-and-create | already linked to catalog event |
 | candidate-visit-saudi-calendar-pdf-اوبن-مايك-للمواهب-20260826-4a38d19e | linked-existing | event-اوبن-مايك-للمواهب | already linked to catalog event |
 | candidate-eye-of-riyadh-events-smart-data-ai-summit-20260826-f9946ea8 | linked-existing | event-smart-data-ai-summit | already linked to catalog event |
+| candidate-umm-al-qura-events-الطالب-الفعّال-في-بيئة-البلاك-بورد-الترا-الفترة-الصباحيه-20260826-cf1161cd | linked-existing | event-الطالب-الفعّال-في-بيئة-البلاك-بورد-الترا-الفترة-الصباحيه | already linked to catalog event |
 | candidate-umm-al-qura-events-الفصول-الافتراضية-عبر-blackboard-ultra-الفترة-الصباحية-20260826-1927687e | linked-existing | event-الفصول-الافتراضية-عبر-blackboard-ultra-الفترة-الصباحية | already linked to catalog event |
+| candidate-umm-al-qura-events-الطالب-الفعّال-في-بيئة-البلاك-بورد-الترا-الفترة-المسائية-20260826-1a3ed42a | linked-existing | event-الطالب-الفعّال-في-بيئة-البلاك-بورد-الترا-الفترة-المسائية | already linked to catalog event |
 | candidate-ithra-events-all-things-hedgehogs-20260826-952dc936 | linked-existing | event-all-things-hedgehogs | already linked to catalog event |
-| candidate-ithra-events-survival-journey-20260826-4fd1e78d | linked-existing | event-survival-journey | already linked to catalog event |
 | candidate-ithra-events-storyteller-of-the-day-20260826-94528a46 | linked-existing | event-storyteller-of-the-day | already linked to catalog event |
 | candidate-ithra-events-arabic-children-book-club-10-12-20260826-39c903cc | linked-existing | event-arabic-children-book-club-10-12 | already linked to catalog event |
 | candidate-ithra-events-your-book-in-a-minute-20260826-c8aab584 | linked-existing | event-your-book-in-a-minute | already linked to catalog event |
 | candidate-ithra-events-manal-mohei-eldin-and-oriental-strokes-20260826-fafd7f05 | linked-existing | event-manal-mohei-eldin-and-oriental-strokes | already linked to catalog event |
 | candidate-saudi-university-events-register-for-the-world-breastfeeding-week-awareness-lecture-20260827-4a16087d | linked-existing | event-register-for-the-world-breastfeeding-week-awareness-lecture | already linked to catalog event |
 | candidate-ithra-events-trivia-night-earth-quest-tic-tac-know-20260827-ef7080ff | linked-existing | event-trivia-night-earth-quest-tic-tac-know | already linked to catalog event |
+| candidate-ithra-events-little-explorers-20260827-1cc1993f | linked-existing | event-little-explorers | already linked to catalog event |
 | candidate-ithra-events-games-hub-20260827-fb83124c | linked-existing | event-games-hub | already linked to catalog event |
 | candidate-ithra-events-art-in-virtual-motion-20260827-3acf52ef | linked-existing | event-art-in-virtual-motion | already linked to catalog event |
-| candidate-ithra-events-swim-r-mission-20260827-f8a6c05c | linked-existing | event-swim-r-mission | already linked to catalog event |
 | candidate-ithra-events-the-moral-of-the-story-20260827-bfa3f2a8 | linked-existing | event-the-moral-of-the-story | already linked to catalog event |
 | candidate-ithra-events-grand-art-space-20260827-e3acefbb | linked-existing | event-grand-art-space | already linked to catalog event |
 | candidate-ithra-events-museum-story-time-20260827-1104734c | linked-existing | event-museum-story-time | already linked to catalog event |
@@ -273,6 +274,7 @@
 | candidate-ithra-events-open-art-space-20260828-40aac166 | linked-existing | event-open-art-space | already linked to catalog event |
 | candidate-ithra-events-stories-from-ithras-library-20260828-4116de16 | linked-existing | event-stories-from-ithras-library | already linked to catalog event |
 | candidate-ithra-events-dots-on-letters-20260828-b8901d67 | linked-existing | event-dots-on-letters | already linked to catalog event |
+| candidate-mdlbeast-events-beast-house-20260828-83049a2a | linked-existing | event-beast-house | trusted duplicate linked to existing catalog event |
 | candidate-hayy-jameel-events-hayy-sounds-drumming-circle-with-saif-halal-20260829-e1fc9366 | linked-existing | event-hayy-sounds-drumming-circle-with-saif-halal | already linked to catalog event |
 | candidate-ithra-events-toddler-saturday-20260829-739e1f00 | linked-existing | event-toddler-saturday | already linked to catalog event |
 | candidate-ithra-events-story-land-20260829-bb5dc01b | linked-existing | event-story-land | already linked to catalog event |
@@ -299,6 +301,7 @@
 | candidate-visit-saudi-calendar-leap-2026-20260831-95d3166a | linked-existing | event-leap-2026 | already linked to catalog event |
 | candidate-umm-al-qura-events-الترشح-للدبلوم-المتوسط-التحول-الرقمي-حضوري-بالتعاون-مع-جمعية-الرياض-للتن-20260831-4affd02c | linked-existing | event-الترشح-للدبلوم-المتوسط-التحول-الرقمي-حضوري-بالتعاون-مع-جمعية-الرياض-للتن | already linked to catalog event |
 | candidate-umm-al-qura-events-المحتوى-التفاعلي-والتقييم-الإلكتروني-في-blackboard-ultra-الفترة-المسائية-20260831-e05798fa | linked-existing | event-المحتوى-التفاعلي-والتقييم-الإلكتروني-في-blackboard-ultra-الفترة-المسائية | already linked to catalog event |
+| candidate-ithra-events-swim-r-mission-20260831-f8a6c05c | linked-existing | event-swim-r-mission | already linked to catalog event |
 | candidate-ithra-events-idea-lab-societies-majlis-20260831-eeece087 | linked-existing | event-idea-lab-majlis | already linked to catalog event |
 | candidate-dhahran-expo-calendar-crafts-handicrafts-exhibition-20260901-18d15b29 | linked-existing | event-crafts-handicrafts-exhibition | already linked to catalog event |
 | candidate-misk-hub-programs-misk-x-unyo-youth-engagement-fellowship-20260901-2ab69839 | linked-existing | event-misk-x-unyo-youth-engagement-fellowship | already linked to catalog event |
@@ -312,6 +315,7 @@
 | candidate-scega-exhibitions-conferences-ملتقى-الأخشاب-الدولي-20260901-081bbfc0 | linked-existing | event-saudi-woodshow | already linked to catalog event |
 | candidate-umm-al-qura-events-الفصول-الافتراضية-عبر-blackboard-ultra-الفترة-المسائية-20260901-d0426118 | linked-existing | event-الفصول-الافتراضية-عبر-blackboard-ultra-الفترة-المسائية | already linked to catalog event |
 | candidate-asharqia-chamber-events-معرض-الحرف-والأعمال-اليدوية-2026-20260901-c083669f | linked-existing | event-معرض-الحرف-والأعمال-اليدوية-2026 | already linked to catalog event |
+| candidate-ithra-events-survival-journey-20260901-4fd1e78d | linked-existing | event-survival-journey | already linked to catalog event |
 | candidate-ithra-events-ithra-readers-club-20260901-59a0cf0c | linked-existing | event-ithra-readers-club | already linked to catalog event |
 | candidate-dhahran-expo-calendar-arabian-and-international-industries-exhibition-20260902-18d15b29 | linked-existing | event-arabian-and-international-industries-exhibition | already linked to catalog event |
 | candidate-ithra-events-podcast-production-from-the-field-to-storytelling-20260902-f50aa266 | linked-existing | event-podcast-production-from-the-field-to-storytelling | already linked to catalog event |
@@ -389,6 +393,7 @@
 | candidate-tuwaiq-academy-bootcamps-معسكر-تصميم-وتصنيع-الدوائر-الإلكترونية-20260927-2db6d0c7 | linked-existing | event-معسكر-تصميم-وتصنيع-الدوائر-الإلكترونية | already linked to catalog event |
 | candidate-tuwaiq-academy-bootcamps-معسكر-الذكاء-الاصطناعي-للقادة-20260927-91a5daba | linked-existing | event-معسكر-الذكاء-الاصطناعي-للقادة | already linked to catalog event |
 | candidate-riyadh-city-events-icegov-international-conference-on-electronic-governance-20260928-db0f9390 | linked-existing | event-icegov-international-conference-on-electronic-governance | already linked to catalog event |
+| candidate-ithra-events-creative-writing-club-20260928-a7f18ce9 | linked-existing | event-creative-writing-club | already linked to catalog event |
 | candidate-riyadh-city-events-e3-customer-experience-conference-20260929-a0c960ea | linked-existing | event-e3-customer-experience-conference | already linked to catalog event |
 | candidate-ithra-events-the-playful-art-of-critical-thinking-20260930-433638cb | linked-existing | event-the-playful-art-of-critical-thinking | already linked to catalog event |
 | candidate-riyadh-city-events-king-khaled-eye-specialist-hospital-and-research-center-2026-internation-20261001-c8c074ac | linked-existing | event-king-khaled-eye-specialist-hospital-and-research-center-2026-internation | already linked to catalog event |
