@@ -1,40 +1,40 @@
 # EventLive Harvest OS Status
 
-- Generated at: 2026-08-23T13:24:21.946Z
+- Generated at: 2026-08-23T19:09:53.192Z
 - Status: NEEDS_WORK
 - Operating rule: Probe before new sources; sample before full harvest; Raw collection is not publication; discovery-only never auto-publishes.
 
 ## Totals
 
 - Sources: 88
-- Candidates: 613
-- Matched candidates: 585
+- Candidates: 608
+- Matched candidates: 582
 - Auto-publish sources: 15
 - Candidate-only sources: 12
 - Partnership-required sources: 5
-- Productive sources / attempted: 19/21
-- Collector errors: 7 (chronic 7, transient 0)
+- Productive sources / attempted: 17/19
+- Collector errors: 8 (chronic 7, transient 1)
 
 ## Publication Funnel
 
 | Stage | Count |
 | --- | --- |
-| discovered_this_run | 293 |
-| candidate_queue | 613 |
-| evaluated_for_publish | 613 |
-| linked_existing | 570 |
-| published_new | 7 |
-| blocked | 36 |
+| discovered_this_run | 222 |
+| candidate_queue | 608 |
+| evaluated_for_publish | 608 |
+| linked_existing | 571 |
+| published_new | 3 |
+| blocked | 34 |
 | secondary_promoted | 0 |
-| secondary_still_blocked | 35 |
+| secondary_still_blocked | 28 |
 
 ## Blocked Reasons
 
 | Reason | Count |
 | --- | --- |
-| publication gate source-evidence is not auto-publishable | 10 |
 | unknown category requires review | 10 |
-| possible duplicate requires review: exact-title-city-source-conflict | 6 |
+| publication gate source-evidence is not auto-publishable | 9 |
+| possible duplicate requires review: exact-title-city-source-conflict | 5 |
 | linked catalog row event-aseer-season was superseded by dedupe | 2 |
 | possible duplicate requires review: exact-title-city-venue-conflict | 2 |
 | linked catalog row event-dakah was superseded by dedupe | 1 |
@@ -55,6 +55,7 @@
 | saudi-pro-league-fixtures | chronic | 11 | no | collector-error: fetch failed |
 | tuwaiq-academy-bootcamps | chronic | 8 | no | collector-error: HTTP 403 |
 | saudi-space-agency-events | chronic | 3 | no | collector-error: fetch failed |
+| asharqia-chamber-events | transient | 1 | yes | fetch failed; page.goto: Timeout 30000ms exceeded. Call log:   - navigating to "https://www.chamber.org.sa/sites/Arabic/Events/ChamberEvents/Pages/AllChamberEvents.aspx", waiting until "domcontentload |
 
 | Source | Policy | Trust | Gate |
 | --- | --- | --- | --- |

@@ -1,18 +1,18 @@
 {
-  "published_at": "2026-08-23T13:11:54.389Z",
+  "published_at": "2026-08-23T18:58:06.657Z",
   "dry_run": false,
   "include_partner": true,
   "source_candidates": "data/source_candidates.json",
   "events_catalog": "data/events_catalog.json",
-  "candidates_seen": 613,
+  "candidates_seen": 608,
   "totals": {
-    "candidates_seen": 613,
-    "published": 7,
-    "linked_existing": 570,
-    "blocked": 36,
-    "duplicate_review_alerts": 8,
+    "candidates_seen": 608,
+    "published": 3,
+    "linked_existing": 571,
+    "blocked": 34,
+    "duplicate_review_alerts": 7,
     "category_fallback_alerts": 0,
-    "reconciled": 577
+    "reconciled": 574
   },
   "category_fallback_alerts": [],
   "duplicate_catalog_rows_removed": 0,
@@ -54,24 +54,6 @@
       "existing_starts_at": "2026-06-07T09:00:00+03:00",
       "date_gap_days": 0,
       "start_date_drift_days": 0.375
-    },
-    {
-      "kind": "exact-title-city-source-conflict",
-      "candidate_id": "candidate-eye-of-riyadh-events-esports-world-cup-20260706-13ed17c1",
-      "possible_event_id": "event-esports-world-cup",
-      "conflict_fields": [
-        "source",
-        "venue",
-        "date"
-      ],
-      "title_key": "cup esports world",
-      "venue_key": "boulevard city riyadh riyadh",
-      "candidate_source": "eyeofriyadh.com",
-      "existing_source": "riyadh.sa",
-      "candidate_starts_at": "2026-07-06T09:00:00+03:00",
-      "existing_starts_at": "2026-07-06T17:00:00+03:00",
-      "date_gap_days": 0,
-      "start_date_drift_days": 0.333
     },
     {
       "kind": "exact-title-city-source-conflict",
@@ -177,26 +159,6 @@
       "candidate_id": "candidate-visit-saudi-calendar-pdf-مزرعة-التوت-الأسود-20260701-4a38d19e",
       "event_id": "event-مزرعة-التوت-الأسود",
       "title": "مزرعة التوت الأسود"
-    },
-    {
-      "candidate_id": "candidate-future-skills-catalog-ccna-20260830-38c8033f",
-      "event_id": "event-ccna",
-      "title": "CCNA"
-    },
-    {
-      "candidate_id": "candidate-future-skills-catalog-responsible-ai-ethics-and-ai-governance-20260830-c389d1e0",
-      "event_id": "event-responsible-ai-ethics-and-ai-governance",
-      "title": "⁠Responsible AI, Ethics and AI Governance"
-    },
-    {
-      "candidate_id": "candidate-future-skills-catalog-cloud-for-ai-big-data-machine-learning-20260830-04d1f8e2",
-      "event_id": "event-cloud-for-ai-big-data-machine-learning",
-      "title": "⁠Cloud for AI, Big Data & Machine Learning"
-    },
-    {
-      "candidate_id": "candidate-ithra-events-open-art-space-20260831-ac79cac6",
-      "event_id": "event-open-art-space-2",
-      "title": "Open Art Space"
     }
   ],
   "linked_existing": [
@@ -462,12 +424,6 @@
       "candidate_id": "candidate-visit-saudi-calendar-pdf-معرض-قلب-البحر-20260604-4a38d19e",
       "event_id": "event-معرض-قلب-البحر",
       "title": "معرض قلب البحر",
-      "reason": "already linked to catalog event"
-    },
-    {
-      "candidate_id": "candidate-hayy-jameel-events-hayy-learning-recess-an-after-school-programme-for-teens-20260606-adba0792",
-      "event_id": "event-hayy-learning",
-      "title": "Hayy Learning | Recess: An After-School Programme for Teens",
       "reason": "already linked to catalog event"
     },
     {
@@ -999,9 +955,9 @@
       "reason": "already linked to catalog event"
     },
     {
-      "candidate_id": "candidate-hayy-jameel-events-open-call-stellar-hayy-jameel-youth-ambassador-program-20260801-6b642c74",
+      "candidate_id": "candidate-hayy-jameel-events-open-call-stellar-hayy-jameel-youth-ambassador-programme-20260801-6b642c74",
       "event_id": "event-open-call-stellar-hayy-jameel-youth-ambassador-program",
-      "title": "Open Call | Stellar × Hayy Jameel Youth Ambassador Program",
+      "title": "Open Call | Stellar × Hayy Jameel Youth Ambassador Programme",
       "reason": "already linked to catalog event"
     },
     {
@@ -1032,12 +988,6 @@
       "candidate_id": "candidate-misk-hub-programs-misk-tuwaiq-immersive-program-20260802-99c8eec9",
       "event_id": "event-misk-tuwaiq-immersive-program",
       "title": "Misk × Tuwaiq Immersive Program",
-      "reason": "already linked to catalog event"
-    },
-    {
-      "candidate_id": "candidate-discover-aseer-events-shift-abha-2026-20260802-762c7d76",
-      "event_id": "event-shift-abha-2026",
-      "title": "Shift Abha 2026",
       "reason": "already linked to catalog event"
     },
     {
@@ -1272,12 +1222,6 @@
       "candidate_id": "candidate-hayy-jameel-events-hayy-makers-woodworking-course-level-2-with-ahmad-sofi-20260822-96b7ac24",
       "event_id": "event-hayy-makers",
       "title": "Hayy Makers | Woodworking Course (Level 2) with Ahmad Sofi",
-      "reason": "already linked to catalog event"
-    },
-    {
-      "candidate_id": "candidate-misk-hub-events-development-media-from-message-to-impact-20260822-add557ec",
-      "event_id": "event-development-media-from-message-to-impact",
-      "title": "Development Media: From Message to Impact",
       "reason": "already linked to catalog event"
     },
     {
@@ -1656,7 +1600,7 @@
       "candidate_id": "candidate-mdlbeast-events-beast-house-20260828-83049a2a",
       "event_id": "event-beast-house",
       "title": "Beast House",
-      "reason": "trusted duplicate linked to existing catalog event"
+      "reason": "already linked to catalog event"
     },
     {
       "candidate_id": "candidate-hayy-jameel-events-hayy-sounds-drumming-circle-with-saif-halal-20260829-e1fc9366",
@@ -1749,6 +1693,24 @@
       "reason": "already linked to catalog event"
     },
     {
+      "candidate_id": "candidate-future-skills-catalog-ccna-20260830-38c8033f",
+      "event_id": "event-ccna",
+      "title": "CCNA",
+      "reason": "already linked to catalog event"
+    },
+    {
+      "candidate_id": "candidate-future-skills-catalog-responsible-ai-ethics-and-ai-governance-20260830-c389d1e0",
+      "event_id": "event-responsible-ai-ethics-and-ai-governance",
+      "title": "⁠Responsible AI, Ethics and AI Governance",
+      "reason": "already linked to catalog event"
+    },
+    {
+      "candidate_id": "candidate-future-skills-catalog-cloud-for-ai-big-data-machine-learning-20260830-04d1f8e2",
+      "event_id": "event-cloud-for-ai-big-data-machine-learning",
+      "title": "⁠Cloud for AI, Big Data & Machine Learning",
+      "reason": "already linked to catalog event"
+    },
+    {
       "candidate_id": "candidate-riyadh-city-events-merath-middle-east-museums-heritage-expo-20260830-822a8145",
       "event_id": "event-merath-middle-east-museums-heritage-expo",
       "title": "Merath – Middle East Museums & Heritage Expo",
@@ -1812,6 +1774,12 @@
       "candidate_id": "candidate-umm-al-qura-events-المحتوى-التفاعلي-والتقييم-الإلكتروني-في-blackboard-ultra-الفترة-المسائية-20260831-e05798fa",
       "event_id": "event-المحتوى-التفاعلي-والتقييم-الإلكتروني-في-blackboard-ultra-الفترة-المسائية",
       "title": "المحتوى التفاعلي والتقييم الإلكتروني في Blackboard Ultra – الفترة المسائية",
+      "reason": "already linked to catalog event"
+    },
+    {
+      "candidate_id": "candidate-ithra-events-open-art-space-20260831-ac79cac6",
+      "event_id": "event-open-art-space-2",
+      "title": "Open Art Space",
       "reason": "already linked to catalog event"
     },
     {
@@ -3650,18 +3618,6 @@
       "candidate_id": "candidate-discover-aseer-events-dakah-20260701-812de878",
       "title": "Dakah",
       "reason": "linked catalog row event-dakah was superseded by dedupe"
-    },
-    {
-      "candidate_id": "candidate-eye-of-riyadh-events-esports-world-cup-20260706-13ed17c1",
-      "title": "Esports World Cup",
-      "reason": "possible duplicate requires review: exact-title-city-source-conflict",
-      "kind": "exact-title-city-source-conflict",
-      "possible_event_id": "event-esports-world-cup"
-    },
-    {
-      "candidate_id": "candidate-saudicon-events-بطولة-كأس-العالم-للرياضات-الإلكترونية-20260706-a37e1298",
-      "title": "بطولة كأس العالم للرياضات الإلكترونية",
-      "reason": "publication gate source-evidence is not auto-publishable"
     },
     {
       "candidate_id": "candidate-eye-of-riyadh-events-oxford-future-of-real-estate-programme-20260805-7c9ee195",

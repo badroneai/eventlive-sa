@@ -1,9 +1,9 @@
 # EventLive Official Resolver Report
 
-- generated_at: 2026-08-23T13:15:13.372Z
+- generated_at: 2026-08-23T19:01:44.751Z
 - source_ops_report: reports/source-ops-report.json
 - leads_seen: 10
-- resolver_tasks: 5
+- resolver_tasks: 6
 - high_priority: 4
 
 ## Resolver Tasks
@@ -15,6 +15,7 @@
 | 122 | Family Office Investment Meeting | Eventbrite Saudi Arabia | Riyadh | strong-lead/70 | informa-connect-saudi-events, saudi-contractors-authority-events, asharqia-chamber-events, invest-saudi-events, jcci-events-center | ابحث في المصادر الرسمية المستهدفة واربط lead بمصدر رسمي قبل أي نشر. |
 | 122 | Sucession Planning Program | Eventbrite Saudi Arabia | Riyadh | strong-lead/70 | code-mcit-programs, cst-events-news, diriyah-season, enjoy-saudi-events, fii10-official-program | ابحث في المصادر الرسمية المستهدفة واربط lead بمصدر رسمي قبل أي نشر. |
 | 97 | 25TH WPC Energy Congress | Eventbrite Saudi Arabia | Riyadh | strong-lead/70 | rfecc-whats-on, ricec-events, dhahran-expo-calendar, informa-connect-saudi-events, saudi-water-authority-events | ابحث في المصادر الرسمية المستهدفة واربط lead بمصدر رسمي قبل أي نشر. |
+| 97 | Smart & Sustainable: Building Intelligent Ecosystems for Tomorrow’s Cities | Eventbrite Saudi Arabia | Riyadh | watch-lead/60 | future-skills-catalog, informa-connect-saudi-events, saudi-digital-academy, sdaia-academy-programs, sdaia-calendar-events | ابحث في المصادر الرسمية المستهدفة واربط lead بمصدر رسمي قبل أي نشر. |
 
 ## Search Pack
 
@@ -72,4 +73,14 @@
 - ["25TH WPC Energy Congress" "Riyadh" official](https://www.google.com/search?q=%2225TH%20WPC%20Energy%20Congress%22%20%22Riyadh%22%20official)
 - ["25TH WPC Energy Congress" "Riyadh" organizer](https://www.google.com/search?q=%2225TH%20WPC%20Energy%20Congress%22%20%22Riyadh%22%20organizer)
 - ["25TH WPC Energy Congress" "Riyadh" tickets](https://www.google.com/search?q=%2225TH%20WPC%20Energy%20Congress%22%20%22Riyadh%22%20tickets)
+
+### Smart & Sustainable: Building Intelligent Ecosystems for Tomorrow’s Cities
+
+- [site:futureskills.mcit.gov.sa "Smart & Sustainable: Building Intelligent Ecosystems for Tomorrow’s Cities" "Riyadh"](https://www.google.com/search?q=site%3Afutureskills.mcit.gov.sa%20%22Smart%20%26%20Sustainable%3A%20Building%20Intelligent%20Ecosystems%20for%20Tomorrow%E2%80%99s%20Cities%22%20%22Riyadh%22)
+- [site:informaconnect.com "Smart & Sustainable: Building Intelligent Ecosystems for Tomorrow’s Cities" "Riyadh"](https://www.google.com/search?q=site%3Ainformaconnect.com%20%22Smart%20%26%20Sustainable%3A%20Building%20Intelligent%20Ecosystems%20for%20Tomorrow%E2%80%99s%20Cities%22%20%22Riyadh%22)
+- [site:sda.edu.sa "Smart & Sustainable: Building Intelligent Ecosystems for Tomorrow’s Cities" "Riyadh"](https://www.google.com/search?q=site%3Asda.edu.sa%20%22Smart%20%26%20Sustainable%3A%20Building%20Intelligent%20Ecosystems%20for%20Tomorrow%E2%80%99s%20Cities%22%20%22Riyadh%22)
+- [site:sdaia.gov.sa "Smart & Sustainable: Building Intelligent Ecosystems for Tomorrow’s Cities" "Riyadh"](https://www.google.com/search?q=site%3Asdaia.gov.sa%20%22Smart%20%26%20Sustainable%3A%20Building%20Intelligent%20Ecosystems%20for%20Tomorrow%E2%80%99s%20Cities%22%20%22Riyadh%22)
+- ["Smart & Sustainable: Building Intelligent Ecosystems for Tomorrow’s Cities" "Riyadh" official](https://www.google.com/search?q=%22Smart%20%26%20Sustainable%3A%20Building%20Intelligent%20Ecosystems%20for%20Tomorrow%E2%80%99s%20Cities%22%20%22Riyadh%22%20official)
+- ["Smart & Sustainable: Building Intelligent Ecosystems for Tomorrow’s Cities" "Riyadh" organizer](https://www.google.com/search?q=%22Smart%20%26%20Sustainable%3A%20Building%20Intelligent%20Ecosystems%20for%20Tomorrow%E2%80%99s%20Cities%22%20%22Riyadh%22%20organizer)
+- ["Smart & Sustainable: Building Intelligent Ecosystems for Tomorrow’s Cities" "Riyadh" tickets](https://www.google.com/search?q=%22Smart%20%26%20Sustainable%3A%20Building%20Intelligent%20Ecosystems%20for%20Tomorrow%E2%80%99s%20Cities%22%20%22Riyadh%22%20tickets)
 

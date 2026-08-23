@@ -1,22 +1,22 @@
 {
   "schema": "eventlive.harvest-os-status.v1",
-  "generated_at": "2026-08-23T13:24:21.946Z",
+  "generated_at": "2026-08-23T19:09:53.192Z",
   "status": "NEEDS_WORK",
   "operating_rule": "Probe before new sources; sample before full harvest; Raw collection is not publication; discovery-only never auto-publishes.",
   "totals": {
     "sources": 88,
-    "candidates": 613,
-    "matched_candidates": 585,
+    "candidates": 608,
+    "matched_candidates": 582,
     "auto_publish_sources": 15,
     "candidate_only_sources": 12,
     "partnership_required_sources": 5,
     "blocked_or_closed_sources": 0,
     "manual_review_sources": 56,
-    "collection_attempted": 21,
-    "productive_sources": 19,
-    "collector_errors": 7,
+    "collection_attempted": 19,
+    "productive_sources": 17,
+    "collector_errors": 8,
     "chronic_collector_errors": 7,
-    "transient_collector_errors": 0
+    "transient_collector_errors": 1
   },
   "policies": {
     "partnership_required": 5,
@@ -25,26 +25,26 @@
     "manual_review": 56
   },
   "candidates_by_gate": {
-    "catalog-review": 583,
-    "duplicate-review": 8,
-    "source-evidence": 22
+    "catalog-review": 580,
+    "duplicate-review": 7,
+    "source-evidence": 21
   },
   "funnel": {
-    "discovered_this_run": 293,
-    "candidate_queue": 613,
-    "evaluated_for_publish": 613,
-    "linked_existing": 570,
-    "published_new": 7,
-    "blocked": 36,
+    "discovered_this_run": 222,
+    "candidate_queue": 608,
+    "evaluated_for_publish": 608,
+    "linked_existing": 571,
+    "published_new": 3,
+    "blocked": 34,
     "secondary_promoted": 0,
-    "secondary_still_blocked": 35
+    "secondary_still_blocked": 28
   },
   "blocked_reasons": {
-    "possible duplicate requires review: exact-title-city-source-conflict": 6,
+    "possible duplicate requires review: exact-title-city-source-conflict": 5,
     "linked catalog row event-aseer-season was superseded by dedupe": 2,
     "linked catalog row event-dakah was superseded by dedupe": 1,
-    "publication gate source-evidence is not auto-publishable": 10,
     "unknown category requires review": 10,
+    "publication gate source-evidence is not auto-publishable": 9,
     "possible duplicate already exists: event-hvac-r-saudi-arabia": 1,
     "possible duplicate already exists: event-saudi-industrial-series-2": 1,
     "linked catalog row event-stand-up-comedy-and-interactive-show-with-salah-al-dali was superseded by dedupe": 1,
@@ -101,6 +101,13 @@
       "error_streak": 3,
       "kind": "chronic",
       "attempted_this_run": false
+    },
+    {
+      "id": "asharqia-chamber-events",
+      "note": "fetch failed; page.goto: Timeout 30000ms exceeded. Call log:   - navigating to \"https://www.chamber.org.sa/sites/Arabic/Events/ChamberEvents/Pages/AllChamberEvents.aspx\", waiting until \"domcontentload",
+      "error_streak": 1,
+      "kind": "transient",
+      "attempted_this_run": true
     }
   ],
   "sources": [

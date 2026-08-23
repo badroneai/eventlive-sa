@@ -1,10 +1,10 @@
 {
-  "generated_at": "2026-08-23T13:15:13.372Z",
+  "generated_at": "2026-08-23T19:01:44.751Z",
   "source_ops_report": "reports/source-ops-report.json",
   "source_registry": "data/source_registry.json",
   "totals": {
     "leads_seen": 10,
-    "tasks": 5,
+    "tasks": 6,
     "high_priority": 4
   },
   "tasks": [
@@ -469,6 +469,95 @@
         {
           "query": "\"25TH WPC Energy Congress\" \"Riyadh\" tickets",
           "url": "https://www.google.com/search?q=%2225TH%20WPC%20Energy%20Congress%22%20%22Riyadh%22%20tickets"
+        }
+      ],
+      "next_action": "ابحث في المصادر الرسمية المستهدفة واربط lead بمصدر رسمي قبل أي نشر."
+    },
+    {
+      "lead_id": "candidate-eventbrite-saudi-smart-sustainable-building-intelligent-ecosystems-for-tomorrows-cities-20260901-e45c1490",
+      "title": "Smart & Sustainable: Building Intelligent Ecosystems for Tomorrow’s Cities",
+      "city": "Riyadh",
+      "starts_at": "2026-09-01T19:00:00+03:00",
+      "source_label": "Eventbrite Saudi Arabia",
+      "discovery_quality": "watch-lead",
+      "discovery_score": 60,
+      "discovery_notes": "saudi-location-signal, specific-venue, event-topic-fit, non-saudi-eventbrite-domain",
+      "resolver_priority": 97,
+      "target_sources": [
+        {
+          "id": "future-skills-catalog",
+          "name": "Future Skills MCIT Catalogue",
+          "url": "https://futureskills.mcit.gov.sa/ar/catalogue/all?label=&field_main_tracks_target_id_verf=565&field_sub_tracks_target_id=All&field_training_course_level_target_id=All&field_related_skills_target_id=All&field_course_type_value=All&field_training_delivery_value=All&field_training_city_target_id=All&field_job_market_target_id=All",
+          "domain": "futureskills.mcit.gov.sa",
+          "trust_level": "official",
+          "source_type": "government-calendar",
+          "score": 48
+        },
+        {
+          "id": "informa-connect-saudi-events",
+          "name": "Informa Connect Saudi Event Portfolio",
+          "url": "https://informaconnect.com/",
+          "domain": "informaconnect.com",
+          "trust_level": "official",
+          "source_type": "conference-organizer",
+          "score": 48
+        },
+        {
+          "id": "saudi-digital-academy",
+          "name": "Saudi Digital Academy",
+          "url": "https://sda.edu.sa/ar",
+          "domain": "sda.edu.sa",
+          "trust_level": "official",
+          "source_type": "organizer-calendar",
+          "score": 48
+        },
+        {
+          "id": "sdaia-academy-programs",
+          "name": "SDAIA Academy Programs",
+          "url": "https://sdaia.gov.sa/en/Sectors/academy/bootcamps/Pages/default.aspx",
+          "domain": "sdaia.gov.sa",
+          "trust_level": "official",
+          "source_type": "government-calendar",
+          "score": 48
+        },
+        {
+          "id": "sdaia-calendar-events",
+          "name": "SDAIA Calendar and Events",
+          "url": "https://sdaia.gov.sa/en/MediaCenter/Events/Pages/default.aspx",
+          "domain": "sdaia.gov.sa",
+          "trust_level": "official",
+          "source_type": "government-calendar",
+          "score": 48
+        }
+      ],
+      "searches": [
+        {
+          "query": "site:futureskills.mcit.gov.sa \"Smart & Sustainable: Building Intelligent Ecosystems for Tomorrow’s Cities\" \"Riyadh\"",
+          "url": "https://www.google.com/search?q=site%3Afutureskills.mcit.gov.sa%20%22Smart%20%26%20Sustainable%3A%20Building%20Intelligent%20Ecosystems%20for%20Tomorrow%E2%80%99s%20Cities%22%20%22Riyadh%22"
+        },
+        {
+          "query": "site:informaconnect.com \"Smart & Sustainable: Building Intelligent Ecosystems for Tomorrow’s Cities\" \"Riyadh\"",
+          "url": "https://www.google.com/search?q=site%3Ainformaconnect.com%20%22Smart%20%26%20Sustainable%3A%20Building%20Intelligent%20Ecosystems%20for%20Tomorrow%E2%80%99s%20Cities%22%20%22Riyadh%22"
+        },
+        {
+          "query": "site:sda.edu.sa \"Smart & Sustainable: Building Intelligent Ecosystems for Tomorrow’s Cities\" \"Riyadh\"",
+          "url": "https://www.google.com/search?q=site%3Asda.edu.sa%20%22Smart%20%26%20Sustainable%3A%20Building%20Intelligent%20Ecosystems%20for%20Tomorrow%E2%80%99s%20Cities%22%20%22Riyadh%22"
+        },
+        {
+          "query": "site:sdaia.gov.sa \"Smart & Sustainable: Building Intelligent Ecosystems for Tomorrow’s Cities\" \"Riyadh\"",
+          "url": "https://www.google.com/search?q=site%3Asdaia.gov.sa%20%22Smart%20%26%20Sustainable%3A%20Building%20Intelligent%20Ecosystems%20for%20Tomorrow%E2%80%99s%20Cities%22%20%22Riyadh%22"
+        },
+        {
+          "query": "\"Smart & Sustainable: Building Intelligent Ecosystems for Tomorrow’s Cities\" \"Riyadh\" official",
+          "url": "https://www.google.com/search?q=%22Smart%20%26%20Sustainable%3A%20Building%20Intelligent%20Ecosystems%20for%20Tomorrow%E2%80%99s%20Cities%22%20%22Riyadh%22%20official"
+        },
+        {
+          "query": "\"Smart & Sustainable: Building Intelligent Ecosystems for Tomorrow’s Cities\" \"Riyadh\" organizer",
+          "url": "https://www.google.com/search?q=%22Smart%20%26%20Sustainable%3A%20Building%20Intelligent%20Ecosystems%20for%20Tomorrow%E2%80%99s%20Cities%22%20%22Riyadh%22%20organizer"
+        },
+        {
+          "query": "\"Smart & Sustainable: Building Intelligent Ecosystems for Tomorrow’s Cities\" \"Riyadh\" tickets",
+          "url": "https://www.google.com/search?q=%22Smart%20%26%20Sustainable%3A%20Building%20Intelligent%20Ecosystems%20for%20Tomorrow%E2%80%99s%20Cities%22%20%22Riyadh%22%20tickets"
         }
       ],
       "next_action": "ابحث في المصادر الرسمية المستهدفة واربط lead بمصدر رسمي قبل أي نشر."

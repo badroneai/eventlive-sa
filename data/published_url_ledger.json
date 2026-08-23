@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "generated_at": "2026-08-23T13:19:23.498Z",
+  "generated_at": "2026-08-23T19:05:31.179Z",
   "events": {
     "event-skill-development-initiative": {
       "identity": "skill development initiative|riyadh|2021-07-14",
@@ -224,11 +224,6 @@
     },
     "event-معرض-قلب-البحر": {
       "identity": "معرض قلب البحر|jeddah|2026-06-04",
-      "first_seen": "2026-07-11",
-      "last_seen": "2026-08-23"
-    },
-    "event-hayy-learning": {
-      "identity": "hayy learning | recess: an after-school programme for teens|jeddah|2026-06-06",
       "first_seen": "2026-07-11",
       "last_seen": "2026-08-23"
     },
@@ -512,11 +507,6 @@
       "first_seen": "2026-07-27",
       "last_seen": "2026-08-23"
     },
-    "event-esports-world-cup": {
-      "identity": "esports world cup|riyadh|2026-07-06",
-      "first_seen": "2026-07-11",
-      "last_seen": "2026-08-23"
-    },
     "event-البرنامج-الصيفي-بجامعة-الجوف-2026": {
       "identity": "البرنامج الصيفي بجامعة الجوف 2026|sakaka|2026-07-08",
       "first_seen": "2026-07-11",
@@ -798,7 +788,7 @@
       "last_seen": "2026-08-23"
     },
     "event-open-call-stellar-hayy-jameel-youth-ambassador-program": {
-      "identity": "open call | stellar × hayy jameel youth ambassador program|jeddah|2026-08-01",
+      "identity": "open call | stellar × hayy jameel youth ambassador programme|jeddah|2026-08-01",
       "first_seen": "2026-08-16",
       "last_seen": "2026-08-23"
     },
@@ -850,11 +840,6 @@
     "event-misk-tuwaiq-immersive-program": {
       "identity": "misk × tuwaiq immersive program|saudi arabia|2026-08-02",
       "first_seen": "2026-07-14",
-      "last_seen": "2026-08-23"
-    },
-    "event-shift-abha-2026": {
-      "identity": "shift abha 2026|aseer|2026-08-02",
-      "first_seen": "2026-08-04",
       "last_seen": "2026-08-23"
     },
     "event-نموذج-التسجيل-والسداد-للدبلوم-المتوسط-في-جودة-وسلامة-الغذاء-لخارج-مكة": {
@@ -1195,11 +1180,6 @@
     "event-community-garden-from-soil-to-seed-basics-to-growing-your-own-plants-wit": {
       "identity": "community garden | from soil to seed: foundations of composting with sara alsayed|jeddah|2026-08-28",
       "first_seen": "2026-08-16",
-      "last_seen": "2026-08-23"
-    },
-    "event-beast-house": {
-      "identity": "beast house|riyadh|2026-08-28",
-      "first_seen": "2026-07-11",
       "last_seen": "2026-08-23"
     },
     "event-hayy-sounds-drumming-circle-with-saif-halal": {
@@ -2802,6 +2782,11 @@
       "first_seen": "2026-08-06",
       "last_seen": "2026-08-23"
     },
+    "event-beast-house": {
+      "identity": "beast house|riyadh|2026-08-21",
+      "first_seen": "2026-07-11",
+      "last_seen": "2026-08-23"
+    },
     "event-boat-bash-cruise": {
       "identity": "boat bash cruise|thuwal|2026-08-21",
       "first_seen": "2026-08-10",
@@ -3085,6 +3070,11 @@
     "event-summer-career-guidance-courses": {
       "identity": "summer career guidance courses|jeddah|2026-08-02",
       "first_seen": "2026-08-03",
+      "last_seen": "2026-08-23"
+    },
+    "event-shift-abha-2026": {
+      "identity": "shift abha 2026|aseer|2026-08-02",
+      "first_seen": "2026-08-04",
       "last_seen": "2026-08-23"
     },
     "event-ضحكات-الرياض": {
@@ -3867,6 +3857,11 @@
       "first_seen": "2026-07-11",
       "last_seen": "2026-08-23"
     },
+    "event-esports-world-cup": {
+      "identity": "esports world cup|riyadh|2026-07-06",
+      "first_seen": "2026-07-11",
+      "last_seen": "2026-08-23"
+    },
     "event-عمليات-إدارة-الموارد-البشرية": {
       "identity": "عمليات إدارة الموارد البشرية|buraydah|2026-07-06",
       "first_seen": "2026-07-11",
@@ -4534,6 +4529,11 @@
     },
     "ended-visit-saudi-calendar-pdf-ساوث-ويست-الكاوبوي-20260607-4a38d19e": {
       "identity": "ساوث ويست (الكاوبوي)|aseer|2026-06-07",
+      "first_seen": "2026-07-11",
+      "last_seen": "2026-08-23"
+    },
+    "event-hayy-learning": {
+      "identity": "hayy learning | recess: an after-school programme for teens|jeddah|2026-06-06",
       "first_seen": "2026-07-11",
       "last_seen": "2026-08-23"
     },

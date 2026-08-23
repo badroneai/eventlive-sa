@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-23T13:15:09.562Z",
+  "generated_at": "2026-08-23T19:01:39.921Z",
   "max_duration_hours": 8,
   "totals": {
     "activated": 26,
@@ -196,15 +196,6 @@
       "session_type": "official-community-session"
     },
     {
-      "id": "event-beast-house",
-      "title": "Beast House",
-      "source_label": "MDLBEAST Events",
-      "starts_at": "2026-08-28T21:00:00+03:00",
-      "ends_at": "2026-08-29T03:00:00+03:00",
-      "duration_hours": 6,
-      "session_type": "official-entertainment-session"
-    },
-    {
       "id": "event-register-for-the-world-breastfeeding-week-awareness-lecture",
       "title": "Register for the World Breastfeeding Week Awareness Lecture",
       "source_label": "Saudi Universities and Technical Colleges",
@@ -212,6 +203,15 @@
       "ends_at": "2026-08-27T15:00:00+03:00",
       "duration_hours": 2,
       "session_type": "official-community-session"
+    },
+    {
+      "id": "event-beast-house",
+      "title": "Beast House",
+      "source_label": "MDLBEAST Events",
+      "starts_at": "2026-08-21T21:00:00+03:00",
+      "ends_at": "2026-08-22T03:00:00+03:00",
+      "duration_hours": 6,
+      "session_type": "official-entertainment-session"
     },
     {
       "id": "event-summer-splash-at-south-beach",

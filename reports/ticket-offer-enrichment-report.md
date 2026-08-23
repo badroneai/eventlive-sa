@@ -1,19 +1,18 @@
 # Ticket offer enrichment
 
-- Checked at: 2026-08-23T13:15:09.938Z
-- Targets: 9
+- Checked at: 2026-08-23T19:01:40.247Z
+- Targets: 8
 - Evidence found: 6
 - Catalog prices changed: 0
-- No evidence: 2
+- No evidence: 1
 - Failed safely: 1
 
 | Event | Host | Status | Lowest price | Evidence |
 |---|---|---|---:|---|
-| event-beast-house | nofomo.com | no-evidence | — | no-explicit-public-price |
-| event-a-thousand-and-one | nofomo.com | evidence | 299 SAR | nofomo-visible-ticket-price |
-| event-soundstorm-26 | nofomo.com | evidence | 269 SAR | nofomo-visible-ticket-price |
 | event-12th-middle-east-banking-ai-analytics-summit-2026 | eventbrite.com | evidence | free · 0 USD | eventbrite-json-ld |
 | event-15th-middle-east-enterprise-ai-analytics-summit | eventbrite.com | evidence | free · 0 USD | eventbrite-json-ld |
+| event-a-thousand-and-one | nofomo.com | evidence | 299 SAR | nofomo-visible-ticket-price |
+| event-soundstorm-26 | nofomo.com | evidence | 269 SAR | nofomo-visible-ticket-price |
 | event-saudi-ai-week | informaconnect.com | failed | — | HTTP 404 |
 | event-saudi-intermobility-expo | informaconnect.com | no-evidence | — | no-explicit-public-price |
 | event-education-investment-saudi | informaconnect.com | evidence | 499 USD | informa-visible-package-price |

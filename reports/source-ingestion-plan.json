@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-23T13:16:08.228Z",
+  "generated_at": "2026-08-23T19:02:29.317Z",
   "source_registry": "data/source_registry.json",
   "source_collection_report": "reports/source-collection-report.json",
   "totals": {
@@ -114,7 +114,7 @@
       "cadence": "twice-weekly-extractor-probe",
       "score": 91,
       "has_active_collector": false,
-      "last_collection_status": "ok",
+      "last_collection_status": "",
       "last_extracted": 0,
       "last_probe_status": "",
       "last_probe_score": -23,
@@ -298,8 +298,8 @@
       "cadence": "weekly-dedupe-check",
       "score": 50,
       "has_active_collector": false,
-      "last_collection_status": "ok",
-      "last_extracted": 66,
+      "last_collection_status": "",
+      "last_extracted": 0,
       "last_probe_status": "",
       "last_probe_score": -23,
       "last_probe_recommendation": "blocked-or-protected:timeout",
@@ -582,7 +582,7 @@
       "last_probe_score": 0,
       "last_probe_recommendation": "",
       "last_probe_blocked_reason": "",
-      "known_candidates": 5,
+      "known_candidates": 4,
       "next_action": "Use only to discover leads; require official confirmation before promotion."
     },
     {
@@ -945,12 +945,12 @@
       "score": 159,
       "has_active_collector": true,
       "last_collection_status": "ok",
-      "last_extracted": 3,
+      "last_extracted": 2,
       "last_probe_status": "",
       "last_probe_score": 0,
       "last_probe_recommendation": "",
       "last_probe_blocked_reason": "",
-      "known_candidates": 2,
+      "known_candidates": 1,
       "next_action": "Run in the 6-hour sync ring; keep dedupe and image enrichment active."
     },
     {
@@ -1082,8 +1082,8 @@
       "cadence": "weekly-dedupe-check",
       "score": 50,
       "has_active_collector": false,
-      "last_collection_status": "ok",
-      "last_extracted": 66,
+      "last_collection_status": "",
+      "last_extracted": 0,
       "last_probe_status": "",
       "last_probe_score": -23,
       "last_probe_recommendation": "blocked-or-protected:timeout",
@@ -1203,7 +1203,7 @@
       "last_probe_score": 0,
       "last_probe_recommendation": "",
       "last_probe_blocked_reason": "",
-      "known_candidates": 31,
+      "known_candidates": 30,
       "next_action": "Run in the 6-hour sync ring; improve zero-yield extractors before widening."
     },
     {
@@ -1473,7 +1473,7 @@
       "cadence": "twice-weekly-extractor-probe",
       "score": 91,
       "has_active_collector": false,
-      "last_collection_status": "ok",
+      "last_collection_status": "",
       "last_extracted": 0,
       "last_probe_status": "",
       "last_probe_score": -23,
@@ -1657,14 +1657,14 @@
       "cadence": "daily",
       "score": 71,
       "has_active_collector": true,
-      "last_collection_status": "ok",
-      "last_extracted": 4,
+      "last_collection_status": "error",
+      "last_extracted": 0,
       "last_probe_status": "",
       "last_probe_score": 0,
       "last_probe_recommendation": "",
       "last_probe_blocked_reason": "",
       "known_candidates": 4,
-      "next_action": "Run in the 6-hour sync ring; keep dedupe and image enrichment active."
+      "next_action": "Run in the 6-hour sync ring; improve zero-yield extractors before widening."
     },
     {
       "id": "qassim-chamber-events",
@@ -1680,7 +1680,7 @@
       "cadence": "daily",
       "score": 70,
       "has_active_collector": true,
-      "last_collection_status": "",
+      "last_collection_status": "ok",
       "last_extracted": 0,
       "last_probe_status": "",
       "last_probe_score": 0,
@@ -1933,7 +1933,7 @@
       "cadence": "weekly-dedupe-check",
       "score": 43,
       "has_active_collector": false,
-      "last_collection_status": "ok",
+      "last_collection_status": "",
       "last_extracted": 0,
       "last_probe_status": "",
       "last_probe_score": 0,
@@ -2261,7 +2261,7 @@
       "last_probe_score": 0,
       "last_probe_recommendation": "",
       "last_probe_blocked_reason": "",
-      "known_candidates": 74,
+      "known_candidates": 73,
       "next_action": "Run in the 6-hour sync ring; keep dedupe and image enrichment active."
     },
     {
@@ -2330,7 +2330,7 @@
       "last_probe_score": 0,
       "last_probe_recommendation": "",
       "last_probe_blocked_reason": "",
-      "known_candidates": 12,
+      "known_candidates": 11,
       "next_action": "Use only to discover leads; require official confirmation before promotion."
     }
   ]
