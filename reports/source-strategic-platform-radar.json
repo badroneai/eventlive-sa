@@ -1,6 +1,6 @@
 {
   "schema": "eventlive.source-strategic-platform-radar.v1",
-  "generated_at": "2026-08-21T19:02:28.340Z",
+  "generated_at": "2026-08-23T02:04:25.578Z",
   "policy": {
     "allowed_use": "official source evidence refresh, API-surface mapping, partnership prioritization, extractor backlog decisions",
     "disallowed_use": "direct catalog publication without official confirmation and duplicate review"
@@ -256,11 +256,11 @@
         {
           "url": "https://www.visitsaudi.com/bin/api/v3/events?locale=ar",
           "status": 200,
-          "bytes": 133303,
+          "bytes": 127156,
           "classification": "reachable",
           "summary": {
             "parse_ok": true,
-            "item_count": 42,
+            "item_count": 40,
             "sample_titles": [
               "معرض اللغة العربية للطفل",
               "معرض اللغة العربية 28",
@@ -274,11 +274,11 @@
         {
           "url": "https://www.visitsaudi.com/bin/api/v3/events?locale=en",
           "status": 200,
-          "bytes": 136912,
+          "bytes": 130685,
           "classification": "reachable",
           "summary": {
             "parse_ok": true,
-            "item_count": 42,
+            "item_count": 40,
             "sample_titles": [
               "Arabic Language Exhibition for kids",
               "Arabic Language Exhibition 28",
@@ -303,7 +303,7 @@
       "final_url": "https://webook.com/ar/explore",
       "via": "fetch",
       "content_type": "text/html",
-      "bytes": 5993,
+      "bytes": 5992,
       "title": "",
       "classification": "protected",
       "error": "",
@@ -336,7 +336,7 @@
         "https://wbk-assets.webook.com/0.7.31/assets/react-helmet-Ba2OUe2H.js",
         "https://wbk-assets.webook.com/0.7.31/assets/@wbk/cruises-BjQ8o0sO.js",
         "https://wbk-assets.webook.com/0.7.31/assets/@wbk/auction-CTDNyPNT.js",
-        "https://webook.com/cdn-cgi/content?id=53mz2WFpl9IQpxPLxpVuvm5Rke.VJPI.yccGhwxyA64-1787338958.5783014-1.2.1.1-zSTvlbDpVJ53UBUe.x0giIw8VteZMIGm15O0VzP6vD7aEMpP1CZbs.ep0HCYSyze",
+        "https://webook.com/cdn-cgi/content?id=mfOlshGplypulR6K7lnNn2OdOOXJKHbX7VTLhFL1osY-1787450677.860034-1.2.1.1-Tr2gYHB3fcTLxAa6X12SK98B31YBIJRXx10NF.llBVfYMjuf8G1kiPLzILry9AiR",
         "https://static.cloudflareinsights.com/beacon.min.js/v4513226cdae34746b4dedf0b4dfa099e1781791509496"
       ],
       "page_hint_words": [

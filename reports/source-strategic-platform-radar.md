@@ -1,6 +1,6 @@
 # Strategic Platform Source Radar
 
-Generated at: 2026-08-21T19:02:28.340Z
+Generated at: 2026-08-23T02:04:25.578Z
 
 Policy: evidence refresh, API-surface mapping, and source strategy only. This radar does not auto-publish catalog events.
 
@@ -51,8 +51,8 @@ Policy: evidence refresh, API-surface mapping, and source strategy only. This ra
 - Project use: Keep in the 6-hour source ring; Arabic and English API payloads are reachable and useful for tourism-facing event discovery.
 - Title: تقويم السعودية | تابع العطلات والفعاليات المميزة - الموقع الرسمي للسياحة السعودية
 - Hint URLs: https://www.googletagmanager.com, https://cdn.consentmanager.net, https://delivery.consentmanager.net, https://www.googletagmanager.com/gtm.js?id=, https://www.visitsaudi.com/images/SoundStorm-1.2e16d0ba.fill-1200x630.jpg, https://www.visitsaudi.com/ar/saudi-calendar, https://www.visitsaudi.com/ar, http://schema.org
-  - API 200 https://www.visitsaudi.com/bin/api/v3/events?locale=ar: 42 items; معرض اللغة العربية للطفل, معرض اللغة العربية 28, أشجار, سمره, ليالي مضيئة
-  - API 200 https://www.visitsaudi.com/bin/api/v3/events?locale=en: 42 items; Arabic Language Exhibition for kids, Arabic Language Exhibition 28, Ashjar Farm, Sammrah, Light Nights
+  - API 200 https://www.visitsaudi.com/bin/api/v3/events?locale=ar: 40 items; معرض اللغة العربية للطفل, معرض اللغة العربية 28, أشجار, سمره, ليالي مضيئة
+  - API 200 https://www.visitsaudi.com/bin/api/v3/events?locale=en: 40 items; Arabic Language Exhibition for kids, Arabic Language Exhibition 28, Ashjar Farm, Sammrah, Light Nights
 
 ### webook Explore
 

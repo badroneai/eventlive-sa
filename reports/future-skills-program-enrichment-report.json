@@ -1,9 +1,9 @@
 {
-  "generated_at": "2026-08-21T19:17:52.631Z",
+  "generated_at": "2026-08-23T02:27:27.068Z",
   "catalog": "data/events_catalog.json",
   "totals": {
-    "targets": 20,
-    "enriched": 20,
+    "targets": 21,
+    "enriched": 21,
     "failed": 0
   },
   "enriched": [
@@ -182,6 +182,15 @@
       "id": "event-power-bi-for-beginners",
       "title": "Power BI for Beginners",
       "group_id": "13056",
+      "goals": 1,
+      "features": 1,
+      "requirements": 4,
+      "metadata": 8
+    },
+    {
+      "id": "event-linux-administration",
+      "title": "Linux Administration",
+      "group_id": "13057",
       "goals": 1,
       "features": 1,
       "requirements": 4,

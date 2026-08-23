@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-21T19:12:56.223Z",
+  "generated_at": "2026-08-23T02:14:10.288Z",
   "source_registry": "data/source_registry.json",
   "collection_report": "reports/source-collection-report.json",
   "output_dir": "data/raw/browser-probes",
@@ -7,20 +7,122 @@
     "selected_ids": [],
     "scope": "priority",
     "limit": 8,
-    "probed_this_run": 0,
-    "fresh_results_available": 0,
+    "probed_this_run": 1,
+    "fresh_results_available": 1,
     "wait_ms": 4500,
     "timeout_ms": 30000,
     "failure_cooldown_hours": 72
   },
   "methodology": "Browser-level probe inspired by cafe platform work: classify fetchability, hydration payloads, network APIs, structured HTML, rendered DOM, and policy-protected lanes before writing extractors.",
   "totals": {
-    "probed": 0,
+    "probed": 1,
     "browser_network_api": 0,
     "browser_hydration_payload": 0,
-    "rendered_html_candidates": 0,
+    "rendered_html_candidates": 1,
     "blocked_or_protected": 0,
     "policy_skipped": 0
   },
-  "sources": []
+  "sources": [
+    {
+      "id": "sfda-events",
+      "probed_at": "2026-08-23T02:14:24.103Z",
+      "name": "Saudi Food and Drug Authority Events",
+      "priority": 48,
+      "url": "https://www.sfda.gov.sa/",
+      "final_url": "https://www.sfda.gov.sa/ar",
+      "status": "ok",
+      "http_status": 200,
+      "navigation_error": "",
+      "duration_ms": 11643,
+      "classification": "rendered-html-candidates",
+      "next_action": "اكتب extractor مرن من DOM بعد الرندر أو حسن selector الحالي.",
+      "title": "الهيئة العامة للغذاء والدواء",
+      "text_bytes": 13661,
+      "html_bytes": 145005,
+      "html_snapshot": "data/raw/browser-probes/sfda-events-2026-08-23T02-14-10-288Z.html",
+      "screenshot": "data/raw/browser-probes/sfda-events-2026-08-23T02-14-10-288Z.png",
+      "signals": {
+        "has_next_data": false,
+        "has_nuxt": false,
+        "has_json_ld": false,
+        "has_event_schema": false,
+        "date_snippets": [
+          "لتعزيز سلامة الغذاء والدواء... الفرد الممارس الصحي المستثمر الهيئة في أرقام عرض المزيد تعد إحصائيات الهيئة العامة للغذاء وال",
+          "العامة لبيعه مستحضرًا صيدلانيًا مغشوشًا 2025-05-08 \"الغذاء والدواء\" تعقد ورشة عمل حول دور مسؤول سلامة الغذاء في المنشآت الغذائية 2",
+          "025-05-11 الغذاء والدواء\" تنفّذ حملات رقابية موسعة على المصانع الغذائية استعدادًا لموسم الحج 202",
+          "5-05-10 الغذاء والدواء\" توافق على طلب تعيين مستحضر \"كفيتيليا\" كدواء واعد للوقاية من نوبات النز",
+          "يف لدى مرضى الهيموفيليا 2025-05-09 الشائعات و الحاسبات والتحذيرات الكل التحذيرات الحاسبات التفاعلية الشائعات حاسبة السلال ا",
+          "خطر الإصابة بالتهاب المفاصل الروماتويدي 2025-02-05 غذاء المزيد مقطع يحذر من اسخدام حليب مبخر لاحتوائه على مادة E407 (كاراجينان) مق",
+          "أضراراً صحية مثل التأثير على نفاذية.... 2024-12-25 غذاء المزيد ادعاءات غير صحيحة عن دواء يسبب الشلل او الوفاة الدماغية مقاطع صوتية",
+          "إلى الشلل أو الوفاة الدماغية أو الموت. 2024-09-27 دواء المزيد إدعاءات غير صحيحة عن مشروب الهندباء مشروب جذور الهندباء البديل الصح"
+        ],
+        "event_like_links": [
+          {
+            "text": "الفعاليات",
+            "href": "https://www.sfda.gov.sa/ar/events"
+          },
+          {
+            "text": "ورش العمل",
+            "href": "https://www.sfda.gov.sa/ar/workshop"
+          },
+          {
+            "text": "عرض الكل",
+            "href": "https://www.sfda.gov.sa/ar/events"
+          },
+          {
+            "text": "المزيد",
+            "href": "https://www.sfda.gov.sa/ar/events/%D9%85%D8%B9%D8%B1%D8%B6-%D8%A7%D9%84%D9%84%D9%82%D8%A7%D8%A1-%D8%A7%D9%84%D8%B3%D9%86%D9%88%D9%8A-%D9%84%D9%84%D8%AC%D9%85%D8%B9%D9%8A%D8%A9-%D8%A7%D9%84%D8%B5%D9%8A%D8%AF%D9%84%D9%8A%D8%A9-%D8%A7%D9%84%D8%B3%D8%B9%D9%88%D8%AF%D9%8A%D8%A9-%D8%B3%D9%8A%D9%81%D8%A7"
+          },
+          {
+            "text": "المزيد",
+            "href": "https://www.sfda.gov.sa/ar/events/%D9%85%D9%86%D8%AA%D8%AF%D9%89-%D9%85%D9%83%D8%A9-%D9%84%D9%84%D8%AD%D9%84%D8%A7%D9%84"
+          },
+          {
+            "text": "المزيد",
+            "href": "https://www.sfda.gov.sa/ar/events/%D9%85%D9%86%D8%AA%D8%AF%D9%89-%D8%B9%D8%A7%D9%84%D9%85-%D8%AA%D8%AC%D8%B1%D8%A8%D8%A9-%D8%A7%D9%84%D8%B9%D9%85%D9%8A%D9%84"
+          },
+          {
+            "text": "المزيد",
+            "href": "https://www.sfda.gov.sa/ar/events/%D9%85%D9%87%D8%B1%D8%AC%D8%A7%D9%86-%D8%A7%D9%84%D8%AA%D9%85%D9%88%D8%B1-%D8%A7%D9%84%D8%B9%D8%A7%D8%B4%D8%B1-%D9%81%D9%8A-%D9%85%D9%86%D8%B7%D9%82%D8%A9-%D8%A7%D9%84%D8%AC%D9%88%D9%81"
+          },
+          {
+            "text": "المزيد",
+            "href": "https://www.sfda.gov.sa/ar/events/%D9%84%D9%82%D8%A7%D8%A1-%D9%85%D9%81%D8%AA%D9%88%D8%AD-%D9%84%D9%85%D9%86%D8%A7%D9%82%D8%B4%D8%A9-%D8%A7%D9%84%D8%A3%D9%86%D8%B8%D9%85%D8%A9-%D8%A7%D9%84%D8%A7%D9%84%D9%83%D8%AA%D8%B1%D9%88%D9%86%D9%8A%D8%A9-%D9%84%D9%84%D8%B1%D9%82%D8%A7%D8%A8%D8%A9-%D8%B9%D9%84%D9%89-%D8%A7%D9%84%D8%BA%D8%B0%D8%A7%D8%A1-%D8%A7%D9%84%D9%85%D8%B3%D8%AA%D9%88%D8%B1%D8%AF"
+          },
+          {
+            "text": "المزيد",
+            "href": "https://www.sfda.gov.sa/ar/events/%D8%AD%D8%B6%D9%88%D8%B1-%D9%84%D9%82%D8%A7%D8%A1-%D8%A8%D8%B9%D9%86%D9%88%D8%A7%D9%86-%D8%AA%D9%82%D9%86%D9%8A%D9%86-%D8%A7%D8%B3%D8%AA%D8%AE%D8%AF%D8%A7%D9%85-%D8%A7%D9%84%D8%A3%D9%84%D9%88%D8%A7%D9%86-%D8%A7%D9%84%D8%A7%D8%B5%D8%B7%D9%86%D8%A7%D8%B9%D9%8A%D8%A9-%D9%81%D9%8A-%D8%A7%D9%84%D9%85%D9%86%D8%AA%D8%AC%D8%A7%D8%AA-%D8%A7%D9%84%D8%BA%D8%B0%D8%A7%D8%A6%D9%8A%D8%A9-%D9%85%D8%B9-%D9%85%D8%B5%D9%86%D8%B9%D9%8A-%D9%88%D9%85%D8%B3%D8%AA%D9%88%D8%B1%D8%AF%D9%8A"
+          },
+          {
+            "text": "المزيد",
+            "href": "https://www.sfda.gov.sa/ar/events/%D8%A7%D9%84%D9%85%D9%86%D8%AA%D8%AF%D9%89-%D8%A7%D9%84%D8%B9%D8%A7%D9%84%D9%85%D9%8A-%D9%84%D9%84%D8%A5%D9%86%D8%AA%D8%A7%D8%AC-%D8%A7%D9%84%D9%85%D8%B3%D8%AA%D8%AF%D8%A7%D9%85-%D9%81%D9%8A-%D9%82%D8%B7%D8%A7%D8%B9-%D8%A7%D9%84%D8%B5%D8%AD%D8%A9"
+          },
+          {
+            "text": "المزيد",
+            "href": "https://www.sfda.gov.sa/ar/events/%D8%A7%D9%84%D9%85%D8%A4%D8%AA%D9%85%D8%B1-%D8%A7%D9%84%D8%B3%D9%86%D9%88%D9%8A-%D9%84%D9%84%D8%AC%D9%85%D8%B9%D9%8A%D8%A9-%D8%A7%D9%84%D8%B5%D9%8A%D8%AF%D9%84%D9%8A%D8%A9-%D8%A7%D9%84%D8%B3%D8%B9%D9%88%D8%AF%D9%8A%D8%A9-%D8%B3%D9%8A%D9%81%D8%A7-21"
+          }
+        ]
+      },
+      "script_signals": {
+        "next_data_scripts": 0,
+        "nuxt_scripts": 0,
+        "json_ld_scripts": 0,
+        "large_inline_scripts": 0
+      },
+      "network_total": 1,
+      "network_endpoints": [],
+      "network_sample": [
+        {
+          "method": "GET",
+          "status": 200,
+          "url": "https://muneer.cx/api/v1/subscription/status/8e7f19c6-bd36-4d0f-8aaa-e55ec14c55dd/www.sfda.gov.sa?v=3.9.8",
+          "content_type": "application/json",
+          "resource_type": "fetch",
+          "request_post_data": "",
+          "response_shape": "json-like-invalid",
+          "preview": "{\"status\":\"success\",\"code\":200,\"message\":\"\",\"data\":{\"css\":\"https://muneer.cx/static/v3/css/muneer.min.css\",\"js\":\"https://muneer.cx/static/v3/js/muneer.min.js\",\"options\":{\"template\":\"aside\",\"alignLeft\":false,\"analytics\":true,\"ttsEngine\":\"\",\"alignRight\":false,\"colorizing\":true,\"fontSizing\":true,\"hideImages\":true,\"lineHeight\":true,\"monochrome\":true,\"muteSounds\":true,\"popupTools\":true,\"textColors\":true,\"whitelabel\":false,\"alignCenter\":false,\"closeButton\":true,\"popupScroll\":true,\"popupShadow\":true,\"readingMask\":true,\"titleColors\":true,\"usefulLinks\":true,\"alignJustify\":false,\"darkContrast\":false,\"dyslexiaFont\":true,\"highContrast\":true,\"invertColors\":false,\"popupOverlay\":true,\"readableFont\":true,\"readingGuide\":true,\"sidebarAlign\":\"right\",\"signLanguage\":false,\"textToSpeech\":true,\"themeDefault\":\"system\",\"closeAnywhere\":true,\"letterSpacing\":true,\"lightContrast\":false,\"lowSaturation\":true,\"smartContrast\":true,\"textAlignment\":true,\"textMagnifier\":true,\"themeSwitcher\":true,\"bigBlackCursor\":true,\"bigWhiteCursor\":true,\"buttonPosition\":\"bottom-left\",\"contentScaling\":true,\"highSaturation\":true,\"highlightFocus\":true,\"highlightHover\":true,\"highlightLinks\":true,\"popupAnimation\":\"fade\",\"popupDraggable\":true,\"showOpenButton\":true,\"stopAnimations\":true,\"ttsApiClientId\":\"\",\"analyticsSiteid\":122,\"easyOrientation\":true,\"googleTranslate\":true,\"highlightTitles\":true,\"profileEpilepsy\":true,\"virtualKeyboard\":true,\"voiceNavigation\":true,\"backgroundColors\":true,\"onlineDictionary\":true,\"profileBlindUsers\":true,\"profileColorblind\":true,\"buttonIconPosition\":\"before\",\"keyboardNavigation\":true,\"readableExperience\":true,\"supportedLanguages\":[\"ar\",\"en\"],\"profileAdhdFriendly\":true,\"voiceNavigationAuto\":false,\"buttonHoverAnimation\":\"none\",\"profileMotorImpaired\":true,\"accessibilityProfiles\":true,\"buttonTabulati"
+        }
+      ]
+    }
+  ]
 }

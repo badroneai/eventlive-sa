@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-21T19:22:12.996Z",
+  "generated_at": "2026-08-23T02:32:32.255Z",
   "events_file": "dist/events.json",
   "manifest": "data/event_image_cache_manifest.json",
   "image_dir": "dist/assets/event-images",
@@ -9,7 +9,7 @@
     "fetched": 0,
     "reused": 497,
     "failed": 3,
-    "skipped_recent_failures": 3,
+    "skipped_recent_failures": 0,
     "remembered_failures": 10
   },
   "fetched": [],
@@ -210,11 +210,6 @@
       "events": 1
     },
     {
-      "source_url": "https://api.riyadh.sa/sites/default/files/styles/medium/public/2026-06/%D9%85%D8%B4%D8%B1%D9%88%D8%B9%20%D9%85%D8%B1%D9%83%D8%B2%20%D8%A7%D9%84%D9%85%D9%84%D9%83%20%D8%B9%D8%A8%D8%AF%D8%A7%D9%84%D8%B9%D8%B2%D9%8A%D8%B2%20%D8%A7%D9%84%D8%AA%D8%A7%D8%B1%D9%8A%D8%AE%D9%8A7.jpg?itok=phFP2x9m",
-      "file": "dist/assets/event-images/summer-camp-at-the-national-museum-summer-wonders-553f661e8d.jpg",
-      "events": 1
-    },
-    {
       "source_url": "https://scth.scene7.com/is/image/scth/europe-village?wid=1400&hei=788&fit=constrain&fmt=webp",
       "file": "dist/assets/event-images/europe-village-art-street-1818757dc2.webp",
       "events": 1
@@ -222,11 +217,6 @@
     {
       "source_url": "https://scth.scene7.com/is/image/scth/kashtah?wid=1400&hei=788&fit=constrain&fmt=webp",
       "file": "dist/assets/event-images/kashtah-ba6ebb0c6b.webp",
-      "events": 1
-    },
-    {
-      "source_url": "https://hayyjameel.org/wp-content/uploads/2026/06/Untitled-1400-x-650-px-1-1100x500.png",
-      "file": "dist/assets/event-images/jameel-library-summer-reading-challenge-2ff280fa30.png",
       "events": 1
     },
     {
@@ -330,11 +320,6 @@
       "events": 1
     },
     {
-      "source_url": "https://scth.scene7.com/is/image/scth/okhtabotiya?wid=1400&hei=788&fit=constrain&fmt=webp",
-      "file": "dist/assets/event-images/okhtabotiya-0013765084.webp",
-      "events": 1
-    },
-    {
       "source_url": "https://api.riyadh.sa/sites/default/files/styles/medium/public/2026-01/Screenshot%202025-05-02%20110732.png?itok=Dh5mqTSv",
       "file": "dist/assets/event-images/esports-world-cup-82c085857f.png",
       "events": 1
@@ -362,16 +347,6 @@
     {
       "source_url": "https://discoveraseer.com/en/img/asset/YXNzZXRzL2V4cGVyaWVuY2Uva3NodGgucG5n/kshth.png?w=1024&fm=webp&s=a903e9e7554e7cf219359b245d62d50e",
       "file": "dist/assets/event-images/كشتة-ab3a550ce8.webp",
-      "events": 1
-    },
-    {
-      "source_url": "https://www.ithra.com/application/files/cache/thumbnails/71ccb8981524b13e856e38276f2c0cde.jpg",
-      "file": "dist/assets/event-images/1-2-3-let-s-rhyme-6df127aea1.jpg",
-      "events": 1
-    },
-    {
-      "source_url": "https://www.ithra.com/application/files/cache/thumbnails/4899ef6ead03a33b6ae9c2359ab2f195.jpg",
-      "file": "dist/assets/event-images/unbox-your-story-c6dc19b0cf.jpg",
       "events": 1
     },
     {
@@ -482,7 +457,7 @@
     {
       "source_url": "https://uqu.edu.sa/assets/images/uqu-gate.jpeg",
       "file": "dist/assets/event-images/الشهادة-الدولية-للحاسب-والإنترنت-ic3-a46ba6d2eb.jpg",
-      "events": 61
+      "events": 68
     },
     {
       "source_url": "https://www.ithra.com/application/files/cache/thumbnails/5d9089ccc5309c4c20ca0c1099df3ab1.jpg",
@@ -700,14 +675,9 @@
       "events": 1
     },
     {
-      "source_url": "https://www.datocms-assets.com/66357/1751801189-mdlbeast.png?auto=format&fit=max&w=1200",
-      "file": "dist/assets/event-images/unstable-ba5c599823.avif",
-      "events": 5
-    },
-    {
       "source_url": "https://futureskills.mcit.gov.sa/sites/default/files/styles/medium/public/2026-08/Power-BI-Microsoft-logo-768x432.png?itok=fsvU80eK",
       "file": "dist/assets/event-images/virtualization-cloud-infrastructure-basics-الافتراضية-والبنية-التحتية--cacaecee33.png",
-      "events": 18
+      "events": 19
     },
     {
       "source_url": "https://cdn.tuwaiq.edu.sa/initiatives_admin/images/2ejwj522.h15.webp",
@@ -1283,6 +1253,11 @@
       "source_url": "https://static.wixstatic.com/media/708478_a08e284e0e2b4361addf88f967bb6b9f%7Emv2.png/v1/fit/w_2500,h_1330,al_c/708478_a08e284e0e2b4361addf88f967bb6b9f%7Emv2.png",
       "file": "dist/assets/event-images/cips-mena-procurement-and-supply-chain-futures-conference-and-awards-42e0ccbf3d.png",
       "events": 1
+    },
+    {
+      "source_url": "https://www.datocms-assets.com/66357/1751801189-mdlbeast.png?auto=format&fit=max&w=1200",
+      "file": "dist/assets/event-images/unstable-ba5c599823.avif",
+      "events": 5
     },
     {
       "source_url": "https://api.riyadh.sa/sites/default/files/styles/medium/public/2026-01/esports.jpg?itok=m-JCBfZQ",
@@ -2295,6 +2270,11 @@
       "events": 1
     },
     {
+      "source_url": "https://www.ithra.com/application/files/cache/thumbnails/4899ef6ead03a33b6ae9c2359ab2f195.jpg",
+      "file": "dist/assets/event-images/unbox-your-story-c6dc19b0cf.jpg",
+      "events": 1
+    },
+    {
       "source_url": "https://www.ithra.com/application/files/cache/thumbnails/9cb3e48739ad64294e279bd3a23dadf7.jpg",
       "file": "dist/assets/event-images/kindergarten-under-the-palm-tree-english-fd59c1ee33.jpg",
       "events": 1
@@ -2357,6 +2337,11 @@
     {
       "source_url": "https://www.ithra.com/application/files/cache/thumbnails/8a1898d1a92796dc500bdfcf9d30f7b8.jpg",
       "file": "dist/assets/event-images/1-2-3-a-little-space-for-me-dc6823988c.jpg",
+      "events": 1
+    },
+    {
+      "source_url": "https://www.ithra.com/application/files/cache/thumbnails/71ccb8981524b13e856e38276f2c0cde.jpg",
+      "file": "dist/assets/event-images/1-2-3-let-s-rhyme-6df127aea1.jpg",
       "events": 1
     },
     {
@@ -2498,62 +2483,51 @@
       "source_url": "https://scth.scene7.com/is/image/scth/curious-summer?wid=1400&hei=788&fit=constrain&fmt=webp",
       "file": "dist/assets/event-images/curious-summers-a466fcddad.webp",
       "events": 1
+    },
+    {
+      "source_url": "https://cdn.tuwaiq.edu.sa/initiatives_admin/images/awj5ovgr.utk.webp",
+      "file": "dist/assets/event-images/معسكر-التأهيل-لرخصة-الدرونز-وتحليل-البيانات-الفوتوغرامترية-b03efbb17c.webp",
+      "events": 1
+    },
+    {
+      "source_url": "https://scth.scene7.com/is/image/scth/okhtabotiya?wid=1400&hei=788&fit=constrain&fmt=webp",
+      "file": "dist/assets/event-images/okhtabotiya-0013765084.webp",
+      "events": 1
+    },
+    {
+      "source_url": "https://api.riyadh.sa/sites/default/files/styles/medium/public/2026-07/NTN%202.png?itok=NcFLmn-3",
+      "file": "dist/assets/event-images/registration-for-international-research-competition-on-non-terrestrial-edd16ffe75.png",
+      "events": 1
     }
   ],
   "rejected_removed": [],
   "missing_removed": [],
-  "skipped_recent_failures": [
-    {
-      "source_url": "https://cdn.rfecc.sa/wp-content/uploads/mec/qr_898ea2449274454e42895b52b18c6f68.png",
-      "events": 1,
-      "reason": "HTTP 403",
-      "failure_kind": "access-denied",
-      "retry_after": "2026-08-22T02:18:12.768Z",
-      "skipped": true
-    },
-    {
-      "source_url": "https://api.riyadh.sa/sites/default/files/styles/medium/public/2026-07/er%20%2859%29.jpg?itok=a33APdGm",
-      "events": 1,
-      "reason": "not-image text/html; charset=utf-8",
-      "failure_kind": "source-returned-html",
-      "retry_after": "2026-08-22T02:18:12.768Z",
-      "skipped": true
-    },
-    {
-      "source_url": "https://s7g10.scene7.com/is/image/rcu/fei2:landscape-16x9?$Responsive$&fit=stretch&fmt=webp&wid=1920",
-      "events": 1,
-      "reason": "HTTP 403",
-      "failure_kind": "access-denied",
-      "retry_after": "2026-08-22T02:18:12.768Z",
-      "skipped": true
-    }
-  ],
+  "skipped_recent_failures": [],
   "failed": [
     {
+      "source_url": "https://s7g10.scene7.com/is/image/rcu/fei2:landscape-16x9?$Responsive$&fit=stretch&fmt=webp&wid=1920",
+      "events": 1,
+      "reason": "HTTP 403",
+      "failure_kind": "access-denied",
+      "retry_after": "2026-08-24T02:32:32.255Z"
+    },
+    {
       "source_url": "https://cdn.rfecc.sa/wp-content/uploads/mec/qr_898ea2449274454e42895b52b18c6f68.png",
       "events": 1,
       "reason": "HTTP 403",
       "failure_kind": "access-denied",
-      "retry_after": "2026-08-22T02:18:12.768Z",
-      "skipped": true
+      "retry_after": "2026-08-24T02:32:32.255Z"
     },
     {
       "source_url": "https://api.riyadh.sa/sites/default/files/styles/medium/public/2026-07/er%20%2859%29.jpg?itok=a33APdGm",
       "events": 1,
       "reason": "not-image text/html; charset=utf-8",
       "failure_kind": "source-returned-html",
-      "retry_after": "2026-08-22T02:18:12.768Z",
-      "skipped": true
-    },
-    {
-      "source_url": "https://s7g10.scene7.com/is/image/rcu/fei2:landscape-16x9?$Responsive$&fit=stretch&fmt=webp&wid=1920",
-      "events": 1,
-      "reason": "HTTP 403",
-      "failure_kind": "access-denied",
-      "retry_after": "2026-08-22T02:18:12.768Z",
-      "skipped": true
+      "retry_after": "2026-08-24T02:32:32.255Z"
     }
   ],
-  "requires_rebuild": false,
-  "rebuild_reasons": []
+  "requires_rebuild": true,
+  "rebuild_reasons": [
+    "new-failures:3"
+  ]
 }

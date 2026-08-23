@@ -1,21 +1,21 @@
 {
   "schema": "eventlive.harvest-os-status.v1",
-  "generated_at": "2026-08-21T19:30:11.651Z",
+  "generated_at": "2026-08-23T02:41:15.656Z",
   "status": "NEEDS_WORK",
   "operating_rule": "Probe before new sources; sample before full harvest; Raw collection is not publication; discovery-only never auto-publishes.",
   "totals": {
     "sources": 88,
-    "candidates": 615,
-    "matched_candidates": 586,
+    "candidates": 602,
+    "matched_candidates": 574,
     "auto_publish_sources": 15,
     "candidate_only_sources": 12,
     "partnership_required_sources": 5,
     "blocked_or_closed_sources": 0,
     "manual_review_sources": 56,
-    "collection_attempted": 19,
-    "productive_sources": 17,
-    "collector_errors": 6,
-    "chronic_collector_errors": 6,
+    "collection_attempted": 37,
+    "productive_sources": 20,
+    "collector_errors": 7,
+    "chronic_collector_errors": 7,
     "transient_collector_errors": 0
   },
   "policies": {
@@ -25,27 +25,26 @@
     "manual_review": 56
   },
   "candidates_by_gate": {
-    "catalog-review": 584,
+    "catalog-review": 572,
     "duplicate-review": 8,
-    "source-evidence": 23
+    "source-evidence": 22
   },
   "funnel": {
-    "discovered_this_run": 226,
-    "candidate_queue": 615,
-    "evaluated_for_publish": 615,
-    "linked_existing": 572,
-    "published_new": 5,
-    "blocked": 38,
+    "discovered_this_run": 305,
+    "candidate_queue": 602,
+    "evaluated_for_publish": 602,
+    "linked_existing": 555,
+    "published_new": 11,
+    "blocked": 36,
     "secondary_promoted": 0,
-    "secondary_still_blocked": 31
+    "secondary_still_blocked": 38
   },
   "blocked_reasons": {
     "possible duplicate requires review: exact-title-city-source-conflict": 6,
     "linked catalog row event-aseer-season was superseded by dedupe": 2,
     "linked catalog row event-dakah was superseded by dedupe": 1,
-    "publication gate source-evidence is not auto-publishable": 11,
+    "publication gate source-evidence is not auto-publishable": 10,
     "unknown category requires review": 10,
-    "linked catalog row event-this-is-michael was superseded by dedupe": 1,
     "possible duplicate already exists: event-hvac-r-saudi-arabia": 1,
     "possible duplicate already exists: event-saudi-industrial-series-2": 1,
     "linked catalog row event-stand-up-comedy-and-interactive-show-with-salah-al-dali was superseded by dedupe": 1,
@@ -57,44 +56,51 @@
     {
       "id": "moc-cultural-calendar",
       "note": "collector-error: fetch failed; fetch failed",
-      "error_streak": 30,
+      "error_streak": 31,
       "kind": "chronic",
-      "attempted_this_run": false
+      "attempted_this_run": true
     },
     {
       "id": "mos-events",
       "note": "collector-error: fetch failed",
-      "error_streak": 30,
+      "error_streak": 31,
       "kind": "chronic",
-      "attempted_this_run": false
+      "attempted_this_run": true
     },
     {
       "id": "moc-cultural-subportals",
       "note": "collector-error: fetch failed; fetch failed",
-      "error_streak": 30,
+      "error_streak": 31,
       "kind": "chronic",
-      "attempted_this_run": false
+      "attempted_this_run": true
     },
     {
       "id": "monshaat-events",
       "note": "collector-error: fetch failed; fetch failed",
-      "error_streak": 13,
+      "error_streak": 14,
       "kind": "chronic",
-      "attempted_this_run": false
+      "attempted_this_run": true
     },
     {
       "id": "saudi-pro-league-fixtures",
       "note": "collector-error: fetch failed",
-      "error_streak": 10,
+      "error_streak": 11,
       "kind": "chronic",
-      "attempted_this_run": false
+      "attempted_this_run": true
     },
     {
       "id": "tuwaiq-academy-bootcamps",
       "note": "collector-error: HTTP 403",
-      "error_streak": 7,
+      "error_streak": 8,
       "kind": "chronic",
-      "attempted_this_run": false
+      "attempted_this_run": true
+    },
+    {
+      "id": "saudi-space-agency-events",
+      "note": "collector-error: fetch failed",
+      "error_streak": 3,
+      "kind": "chronic",
+      "attempted_this_run": true
     }
   ],
   "sources": [

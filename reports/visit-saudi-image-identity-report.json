@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-21T19:17:49.655Z",
+  "generated_at": "2026-08-23T02:27:23.563Z",
   "catalog": "data/events_catalog.json",
   "candidates": "data/source_candidates.json",
   "manifest": "data/event_image_cache_manifest.json",
@@ -10,9 +10,9 @@
   },
   "totals": {
     "pdf_crop_assignments": 74,
-    "verified": 68,
-    "struck": 6,
-    "slots_seen_this_cycle": 80
+    "verified": 59,
+    "struck": 15,
+    "slots_seen_this_cycle": 69
   },
   "struck": [
     {
@@ -21,15 +21,6 @@
       "file": "visit-saudi-summer-2026-p004-top-left.jpg",
       "reason": "identity-mismatch",
       "detail": "page 4 top-left is now \"قصور وقاع ابو نقطة المتحمي\"",
-      "matched_tokens": [],
-      "ratio": 0
-    },
-    {
-      "id": "event-كايف-المزرعة",
-      "title": "كايف المزرعة",
-      "file": "visit-saudi-summer-2026-p057-bottom-left.jpg",
-      "reason": "identity-mismatch",
-      "detail": "page 57 bottom-left is now \"عروض الفنون الأدائية التقليدية\"",
       "matched_tokens": [],
       "ratio": 0
     },
@@ -59,6 +50,76 @@
       "detail": "page 10 bottom-right is now \"مزرعة التوت الأسود\"",
       "matched_tokens": [],
       "ratio": 0
+    },
+    {
+      "id": "event-الأخطبوطية",
+      "title": "الاخطبوطية",
+      "file": "visit-saudi-summer-2026-p058-bottom-left.jpg",
+      "reason": "slot-vacated",
+      "detail": "no dated card currently occupies page 58 bottom-left of https://www.visitsaudi.com/content/dam/documents/saudi-calendar-ar.pdf"
+    },
+    {
+      "id": "event-ورث-الفن",
+      "title": "ورث الفن",
+      "file": "visit-saudi-summer-2026-p059-bottom-left.jpg",
+      "reason": "slot-vacated",
+      "detail": "no dated card currently occupies page 59 bottom-left of https://www.visitsaudi.com/content/dam/documents/saudi-calendar-ar.pdf"
+    },
+    {
+      "id": "event-taste-of-the-world",
+      "title": "Taste of the World",
+      "file": "visit-saudi-summer-2026-p059-bottom-right.jpg",
+      "reason": "slot-vacated",
+      "detail": "no dated card currently occupies page 59 bottom-right of https://www.visitsaudi.com/content/dam/documents/saudi-calendar-ar.pdf"
+    },
+    {
+      "id": "event-مهرجان-المأكولات-الشعبية",
+      "title": "مهرجان المأكولات الشعبية",
+      "file": "visit-saudi-summer-2026-p059-top-right.jpg",
+      "reason": "slot-vacated",
+      "detail": "no dated card currently occupies page 59 top-right of https://www.visitsaudi.com/content/dam/documents/saudi-calendar-ar.pdf"
+    },
+    {
+      "id": "event-فعالية-رمي-السهام",
+      "title": "فعالية رمي السهام",
+      "file": "visit-saudi-summer-2026-p059-top-left.jpg",
+      "reason": "slot-vacated",
+      "detail": "no dated card currently occupies page 59 top-left of https://www.visitsaudi.com/content/dam/documents/saudi-calendar-ar.pdf"
+    },
+    {
+      "id": "event-عروض-الفنون-الأدائية-التقليدية",
+      "title": "عروض الفنون الادائية التقليدية",
+      "file": "visit-saudi-summer-2026-p058-top-right.jpg",
+      "reason": "slot-vacated",
+      "detail": "no dated card currently occupies page 58 top-right of https://www.visitsaudi.com/content/dam/documents/saudi-calendar-ar.pdf"
+    },
+    {
+      "id": "event-شابتر-26",
+      "title": "شابتر 26",
+      "file": "visit-saudi-summer-2026-p060-bottom-right.jpg",
+      "reason": "slot-vacated",
+      "detail": "no dated card currently occupies page 60 bottom-right of https://www.visitsaudi.com/content/dam/documents/saudi-calendar-ar.pdf"
+    },
+    {
+      "id": "event-عرض-this-is-michael-الموسيقي",
+      "title": "عرض This Is Michael الموسيقي",
+      "file": "visit-saudi-summer-2026-p042-bottom-left.jpg",
+      "reason": "slot-vacated",
+      "detail": "no dated card currently occupies page 42 bottom-left of https://www.visitsaudi.com/content/dam/documents/saudi-calendar-ar.pdf"
+    },
+    {
+      "id": "event-ليلة-ستانداب-كوميدي-في-جدة",
+      "title": "ليلة ستانداب كوميدي في جدة",
+      "file": "visit-saudi-summer-2026-p042-bottom-right.jpg",
+      "reason": "slot-vacated",
+      "detail": "no dated card currently occupies page 42 bottom-right of https://www.visitsaudi.com/content/dam/documents/saudi-calendar-ar.pdf"
+    },
+    {
+      "id": "event-الخطة-c-مع-رضوان-الريمي-ليلة-كوميدية-طربية",
+      "title": "الخطة C مع رضوان الريمي ليلة كوميدية طربية",
+      "file": "visit-saudi-summer-2026-p062-top-right.jpg",
+      "reason": "slot-vacated",
+      "detail": "no dated card currently occupies page 62 top-right of https://www.visitsaudi.com/content/dam/documents/saudi-calendar-ar.pdf"
     },
     {
       "id": "event-ذكريات-سبيستون-مع-الفنان-عاصم-سكر",
@@ -127,6 +188,15 @@
       "matched_tokens": [
         "مزرعه",
         "الليوان"
+      ]
+    },
+    {
+      "id": "event-كايف-المزرعة",
+      "title": "كايف المزرعة",
+      "file": "visit-saudi-summer-2026-p057-bottom-left.jpg",
+      "matched_tokens": [
+        "كايف",
+        "المزرعه"
       ]
     },
     {
@@ -422,64 +492,6 @@
       ]
     },
     {
-      "id": "event-الأخطبوطية",
-      "title": "الاخطبوطية",
-      "file": "visit-saudi-summer-2026-p058-bottom-left.jpg",
-      "matched_tokens": [
-        "الاخطبوطيه"
-      ]
-    },
-    {
-      "id": "event-ورث-الفن",
-      "title": "ورث الفن",
-      "file": "visit-saudi-summer-2026-p059-bottom-left.jpg",
-      "matched_tokens": [
-        "ورث",
-        "الفن"
-      ]
-    },
-    {
-      "id": "event-taste-of-the-world",
-      "title": "Taste of the World",
-      "file": "visit-saudi-summer-2026-p059-bottom-right.jpg",
-      "matched_tokens": [
-        "taste",
-        "the",
-        "world"
-      ]
-    },
-    {
-      "id": "event-مهرجان-المأكولات-الشعبية",
-      "title": "مهرجان المأكولات الشعبية",
-      "file": "visit-saudi-summer-2026-p059-top-right.jpg",
-      "matched_tokens": [
-        "مهرجان",
-        "الماكولات",
-        "الشعبيه"
-      ]
-    },
-    {
-      "id": "event-فعالية-رمي-السهام",
-      "title": "فعالية رمي السهام",
-      "file": "visit-saudi-summer-2026-p059-top-left.jpg",
-      "matched_tokens": [
-        "فعاليه",
-        "رمي",
-        "السهام"
-      ]
-    },
-    {
-      "id": "event-عروض-الفنون-الأدائية-التقليدية",
-      "title": "عروض الفنون الادائية التقليدية",
-      "file": "visit-saudi-summer-2026-p058-top-right.jpg",
-      "matched_tokens": [
-        "عروض",
-        "الفنون",
-        "الاداييه",
-        "التقليديه"
-      ]
-    },
-    {
       "id": "event-صيف-2026",
       "title": "صيف 2026",
       "file": "visit-saudi-summer-2026-p060-top-left.jpg",
@@ -521,14 +533,6 @@
       "matched_tokens": [
         "بسطه",
         "القابل"
-      ]
-    },
-    {
-      "id": "event-شابتر-26",
-      "title": "شابتر 26",
-      "file": "visit-saudi-summer-2026-p060-bottom-right.jpg",
-      "matched_tokens": [
-        "شابتر"
       ]
     },
     {
@@ -591,41 +595,6 @@
         "بين",
         "جبال",
         "الباحه"
-      ]
-    },
-    {
-      "id": "event-عرض-this-is-michael-الموسيقي",
-      "title": "عرض This Is Michael الموسيقي",
-      "file": "visit-saudi-summer-2026-p042-bottom-left.jpg",
-      "matched_tokens": [
-        "عرض",
-        "this",
-        "michael",
-        "الموسيقي"
-      ]
-    },
-    {
-      "id": "event-ليلة-ستانداب-كوميدي-في-جدة",
-      "title": "ليلة ستانداب كوميدي في جدة",
-      "file": "visit-saudi-summer-2026-p042-bottom-right.jpg",
-      "matched_tokens": [
-        "ليله",
-        "ستانداب",
-        "كوميدي",
-        "جده"
-      ]
-    },
-    {
-      "id": "event-الخطة-c-مع-رضوان-الريمي-ليلة-كوميدية-طربية",
-      "title": "الخطة C مع رضوان الريمي ليلة كوميدية طربية",
-      "file": "visit-saudi-summer-2026-p062-top-right.jpg",
-      "matched_tokens": [
-        "الخطه",
-        "رضوان",
-        "الريمي",
-        "ليله",
-        "كوميديه",
-        "طربيه"
       ]
     },
     {

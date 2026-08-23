@@ -1,8 +1,8 @@
 # Future Skills Program Enrichment Report
 
-- generated_at: 2026-08-21T19:17:52.631Z
-- targets: 20
-- enriched: 20
+- generated_at: 2026-08-23T02:27:27.068Z
+- targets: 21
+- enriched: 21
 - failed: 0
 
 ## Enriched
@@ -27,6 +27,7 @@
 - AWS Solutions Architect – Associate Practical (13054) - outcomes=1, topics=1, requirements=4, metadata=8
 - CompTIA Network+ (13055) - outcomes=1, topics=1, requirements=4, metadata=8
 - Power BI for Beginners (13056) - outcomes=1, topics=1, requirements=4, metadata=8
+- Linux Administration (13057) - outcomes=1, topics=1, requirements=4, metadata=8
 
 ## Failed
 

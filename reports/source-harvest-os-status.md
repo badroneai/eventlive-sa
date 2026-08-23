@@ -1,44 +1,43 @@
 # EventLive Harvest OS Status
 
-- Generated at: 2026-08-21T19:30:11.651Z
+- Generated at: 2026-08-23T02:41:15.656Z
 - Status: NEEDS_WORK
 - Operating rule: Probe before new sources; sample before full harvest; Raw collection is not publication; discovery-only never auto-publishes.
 
 ## Totals
 
 - Sources: 88
-- Candidates: 615
-- Matched candidates: 586
+- Candidates: 602
+- Matched candidates: 574
 - Auto-publish sources: 15
 - Candidate-only sources: 12
 - Partnership-required sources: 5
-- Productive sources / attempted: 17/19
-- Collector errors: 6 (chronic 6, transient 0)
+- Productive sources / attempted: 20/37
+- Collector errors: 7 (chronic 7, transient 0)
 
 ## Publication Funnel
 
 | Stage | Count |
 | --- | --- |
-| discovered_this_run | 226 |
-| candidate_queue | 615 |
-| evaluated_for_publish | 615 |
-| linked_existing | 572 |
-| published_new | 5 |
-| blocked | 38 |
+| discovered_this_run | 305 |
+| candidate_queue | 602 |
+| evaluated_for_publish | 602 |
+| linked_existing | 555 |
+| published_new | 11 |
+| blocked | 36 |
 | secondary_promoted | 0 |
-| secondary_still_blocked | 31 |
+| secondary_still_blocked | 38 |
 
 ## Blocked Reasons
 
 | Reason | Count |
 | --- | --- |
-| publication gate source-evidence is not auto-publishable | 11 |
+| publication gate source-evidence is not auto-publishable | 10 |
 | unknown category requires review | 10 |
 | possible duplicate requires review: exact-title-city-source-conflict | 6 |
 | linked catalog row event-aseer-season was superseded by dedupe | 2 |
 | possible duplicate requires review: exact-title-city-venue-conflict | 2 |
 | linked catalog row event-dakah was superseded by dedupe | 1 |
-| linked catalog row event-this-is-michael was superseded by dedupe | 1 |
 | possible duplicate already exists: event-hvac-r-saudi-arabia | 1 |
 | possible duplicate already exists: event-saudi-industrial-series-2 | 1 |
 | linked catalog row event-stand-up-comedy-and-interactive-show-with-salah-al-dali was superseded by dedupe | 1 |
@@ -49,12 +48,13 @@
 
 | Source | Kind | Failed runs in a row | Attempted this run | Reason |
 | --- | --- | --- | --- | --- |
-| moc-cultural-calendar | chronic | 30 | no | collector-error: fetch failed; fetch failed |
-| mos-events | chronic | 30 | no | collector-error: fetch failed |
-| moc-cultural-subportals | chronic | 30 | no | collector-error: fetch failed; fetch failed |
-| monshaat-events | chronic | 13 | no | collector-error: fetch failed; fetch failed |
-| saudi-pro-league-fixtures | chronic | 10 | no | collector-error: fetch failed |
-| tuwaiq-academy-bootcamps | chronic | 7 | no | collector-error: HTTP 403 |
+| moc-cultural-calendar | chronic | 31 | yes | collector-error: fetch failed; fetch failed |
+| mos-events | chronic | 31 | yes | collector-error: fetch failed |
+| moc-cultural-subportals | chronic | 31 | yes | collector-error: fetch failed; fetch failed |
+| monshaat-events | chronic | 14 | yes | collector-error: fetch failed; fetch failed |
+| saudi-pro-league-fixtures | chronic | 11 | yes | collector-error: fetch failed |
+| tuwaiq-academy-bootcamps | chronic | 8 | yes | collector-error: HTTP 403 |
+| saudi-space-agency-events | chronic | 3 | yes | collector-error: fetch failed |
 
 | Source | Policy | Trust | Gate |
 | --- | --- | --- | --- |
