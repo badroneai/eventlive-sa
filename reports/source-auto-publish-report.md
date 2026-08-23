@@ -1,11 +1,11 @@
 # EventLive Source Auto Publish Report
 
-- published_at: 2026-08-23T02:27:21.021Z
+- published_at: 2026-08-23T07:11:04.408Z
 - dry_run: false
 - include_partner: true
-- candidates_seen: 602
-- published_new: 11
-- linked_existing: 555
+- candidates_seen: 608
+- published_new: 9
+- linked_existing: 563
 - blocked_remaining: 36
 - duplicate_review_alerts: 8
 
@@ -28,14 +28,12 @@
 | candidate-visit-saudi-calendar-pdf-قصور-وقاع-ابو-نقطة-المتحمي-20260503-4a38d19e | published | event-قصور-وقاع-ابو-نقطة-المتحمي | قصور وقاع ابو نقطة المتحمي |
 | candidate-visit-saudi-calendar-pdf-شارع-الفن-القرية-الأوروبية-20260625-4a38d19e | published | event-شارع-الفن-القرية-الأوروبية | شارع الفن - القرية الأوروبية |
 | candidate-visit-saudi-calendar-pdf-مزرعة-التوت-الأسود-20260701-4a38d19e | published | event-مزرعة-التوت-الأسود | مزرعة التوت الأسود |
-| candidate-future-skills-catalog-linux-administration-20260830-253eef1e | published | event-linux-administration | ⁠Linux Administration |
-| candidate-umm-al-qura-events-الترشح-للدبلوم-المتوسط-التحول-الرقمي-حضوري-بالتعاون-مع-جمعية-الرياض-للتن-20260831-4affd02c | published | event-الترشح-للدبلوم-المتوسط-التحول-الرقمي-حضوري-بالتعاون-مع-جمعية-الرياض-للتن | الترشح للدبلوم المتوسط التحول الرقمي(حضوري) بالتعاون مع جمعية الرياض للتنمية والدراسات والخدمات الاستشارية |
-| candidate-umm-al-qura-events-الترشح-للدبلوم-المشارك-إدارة-المشاريع-حضوري-بالتعاون-مع-جمعية-الرياض-للت-20261120-ccc663ee | published | event-الترشح-للدبلوم-المشارك-إدارة-المشاريع-حضوري-بالتعاون-مع-جمعية-الرياض-للت | الترشح للدبلوم المشارك إدارة المشاريع (حضوري) بالتعاون مع جمعية الرياض للتنمية والدراسات والخدمات الاستشارية |
-| candidate-umm-al-qura-events-الترشح-للدبلوم-المتوسط-امن-المعلومات-حضوري-بالتعاون-مع-جمعية-الرياض-للتن-20261123-1b46965d | published | event-الترشح-للدبلوم-المتوسط-امن-المعلومات-حضوري-بالتعاون-مع-جمعية-الرياض-للتن | الترشح للدبلوم المتوسط امن المعلومات (حضوري) بالتعاون مع جمعية الرياض للتنمية والدراسات والخدمات الاستشارية |
-| candidate-umm-al-qura-events-الترشح-للدبلوم-المشارك-إدارة-الحشود-حضوري-بالتعاون-مع-جمعية-الرياض-للتنم-20261128-bdfe3080 | published | event-الترشح-للدبلوم-المشارك-إدارة-الحشود-حضوري-بالتعاون-مع-جمعية-الرياض-للتنم | الترشح للدبلوم المشارك إدارة الحشود (حضوري) بالتعاون مع جمعية الرياض للتنمية والدراسات والخدمات الاستشارية |
-| candidate-umm-al-qura-events-الترشح-للدبلوم-المتوسط-إدارة-اللوجستيات-وسلاسل-الإمداد-حضوري-بالتعاون-مع-20261130-361c7e56 | published | event-الترشح-للدبلوم-المتوسط-إدارة-اللوجستيات-وسلاسل-الإمداد-حضوري-بالتعاون-مع | الترشح للدبلوم المتوسط إدارة اللوجستيات وسلاسل الإمداد (حضوري) بالتعاون مع جمعية الرياض للتنمية والدراسات والخدمات الاستشارية |
-| candidate-umm-al-qura-events-الترشح-للدبلوم-المتوسط-إدارة-الموارد-البشرية-حضوري-بالتعاون-مع-جمعية-الر-20261201-52a01fe0 | published | event-الترشح-للدبلوم-المتوسط-إدارة-الموارد-البشرية-حضوري-بالتعاون-مع-جمعية-الر | الترشح للدبلوم المتوسط إدارة الموارد البشرية (حضوري) بالتعاون مع جمعية الرياض للتنمية والدراسات والخدمات الاستشارية |
-| candidate-umm-al-qura-events-الترشح-للدبلوم-المتوسط-تجربة-العميل-حضوري-بالتعاون-مع-جمعية-الرياض-للتنم-20261216-f306f86c | published | event-الترشح-للدبلوم-المتوسط-تجربة-العميل-حضوري-بالتعاون-مع-جمعية-الرياض-للتنم | الترشح للدبلوم المتوسط تجربة العميل(حضوري) بالتعاون مع جمعية الرياض للتنمية والدراسات والخدمات الاستشارية |
+| candidate-umm-al-qura-events-ملتقى-المستجدين-تحت-شعار-اكتشف-تعلم-انطلق-20260824-96f1da74 | published | event-ملتقى-المستجدين-تحت-شعار-اكتشف-تعلم-انطلق | ملتقى المستجدين تحت شعار (اكتشف - تعلم - انطلق) |
+| candidate-umm-al-qura-events-أساسيات-التعلّم-الرقمي-للطلبة-عبر-البلاك-بورد-الترا-الفترة-الصباحية-20260825-0917cc38 | published | event-أساسيات-التعلّم-الرقمي-للطلبة-عبر-البلاك-بورد-الترا-الفترة-الصباحية | أساسيات التعلّم الرقمي للطلبة عبر البلاك بورد الترا – الفترة الصباحية |
+| candidate-umm-al-qura-events-أساسيات-التعلّم-الرقمي-للطلبة-عبر-البلاك-بورد-الترا-الفترة-المسائية-20260825-b315c27c | published | event-أساسيات-التعلّم-الرقمي-للطلبة-عبر-البلاك-بورد-الترا-الفترة-المسائية | أساسيات التعلّم الرقمي للطلبة عبر البلاك بورد الترا – الفترة المسائية |
+| candidate-umm-al-qura-events-الطالب-الفعّال-في-بيئة-البلاك-بورد-الترا-الفترة-الصباحيه-20260826-cf1161cd | published | event-الطالب-الفعّال-في-بيئة-البلاك-بورد-الترا-الفترة-الصباحيه | الطالب الفعّال في بيئة البلاك بورد الترا – الفترة الصباحيه |
+| candidate-umm-al-qura-events-الطالب-الفعّال-في-بيئة-البلاك-بورد-الترا-الفترة-المسائية-20260826-1a3ed42a | published | event-الطالب-الفعّال-في-بيئة-البلاك-بورد-الترا-الفترة-المسائية | الطالب الفعّال في بيئة البلاك بورد الترا – الفترة المسائية |
+| candidate-ithra-events-creative-writing-club-20260928-a7f18ce9 | published | event-creative-writing-club | Creative Writing Club |
 | candidate-moc-cultural-subportals-skill-development-initiative-20210714-10f7dc2c | linked-existing | event-skill-development-initiative | already linked to catalog event |
 | candidate-moc-cultural-subportals-sitar-20220921-cda2e068 | linked-existing | event-sitar | already linked to catalog event |
 | candidate-moc-cultural-subportals-the-architecture-and-design-caf-20240427-046e2ec1 | linked-existing | event-the-architecture-and-design-caf | already linked to catalog event |
@@ -289,6 +287,7 @@
 | candidate-eye-of-riyadh-events-big-5-construct-saudi-20260830-2238e3a0 | linked-existing | event-big-5-construct-saudi | already linked to catalog event |
 | candidate-eye-of-riyadh-events-hvac-r-saudi-arabia-20260830-857b2f5b | linked-existing | event-hvac-r-saudi-arabia | already linked to catalog event |
 | candidate-eye-of-riyadh-events-saudi-fm-clean-20260830-cbe48152 | linked-existing | event-saudi-fm-clean | already linked to catalog event |
+| candidate-future-skills-catalog-linux-administration-20260830-253eef1e | linked-existing | event-linux-administration | already linked to catalog event |
 | candidate-riyadh-city-events-merath-middle-east-museums-heritage-expo-20260830-822a8145 | linked-existing | event-merath-middle-east-museums-heritage-expo | already linked to catalog event |
 | candidate-riyadh-city-events-saudi-light-and-sound-sls-expo-20260830-5ef5389b | linked-existing | event-saudi-light-and-sound-sls-expo | already linked to catalog event |
 | candidate-riyadh-city-events-saudi-entertainment-and-amusement-expo-20260830-9a81c6d8 | linked-existing | event-saudi-entertainment-and-amusement-expo | already linked to catalog event |
@@ -298,6 +297,7 @@
 | candidate-tuwaiq-academy-bootcamps-معسكر-أساسيات-الأمن-السيبراني-20260830-da0b3686 | linked-existing | event-معسكر-أساسيات-الأمن-السيبراني | already linked to catalog event |
 | candidate-scega-exhibitions-conferences-ليب-26-20260831-57037ac3 | linked-existing | event-leap-2026 | already linked to catalog event |
 | candidate-visit-saudi-calendar-leap-2026-20260831-95d3166a | linked-existing | event-leap-2026 | already linked to catalog event |
+| candidate-umm-al-qura-events-الترشح-للدبلوم-المتوسط-التحول-الرقمي-حضوري-بالتعاون-مع-جمعية-الرياض-للتن-20260831-4affd02c | linked-existing | event-الترشح-للدبلوم-المتوسط-التحول-الرقمي-حضوري-بالتعاون-مع-جمعية-الرياض-للتن | already linked to catalog event |
 | candidate-umm-al-qura-events-المحتوى-التفاعلي-والتقييم-الإلكتروني-في-blackboard-ultra-الفترة-المسائية-20260831-e05798fa | linked-existing | event-المحتوى-التفاعلي-والتقييم-الإلكتروني-في-blackboard-ultra-الفترة-المسائية | already linked to catalog event |
 | candidate-ithra-events-idea-lab-societies-majlis-20260831-eeece087 | linked-existing | event-idea-lab-majlis | already linked to catalog event |
 | candidate-dhahran-expo-calendar-crafts-handicrafts-exhibition-20260901-18d15b29 | linked-existing | event-crafts-handicrafts-exhibition | already linked to catalog event |
@@ -473,8 +473,10 @@
 | candidate-hayy-jameel-events-hayy-cinema-nour-shams-2021-20261120-0e2d9b94 | linked-existing | event-hayy-cinema-nour-shams-2021 | already linked to catalog event |
 | candidate-hayy-jameel-events-hayy-cinema-19b-2022-20261120-685132e9 | linked-existing | event-hayy-cinema-19b-2022 | already linked to catalog event |
 | candidate-hayy-jameel-events-hayy-cinema-x-rsh-street-art-festival-meet-the-crew-of-nour-shams-my-vib-20261120-9fd86cc1 | linked-existing | event-hayy-cinema-x-rsh-street-art-festival-meet-the-crew-of-nour-shams-my-vib | already linked to catalog event |
+| candidate-umm-al-qura-events-الترشح-للدبلوم-المشارك-إدارة-المشاريع-حضوري-بالتعاون-مع-جمعية-الرياض-للت-20261120-ccc663ee | linked-existing | event-الترشح-للدبلوم-المشارك-إدارة-المشاريع-حضوري-بالتعاون-مع-جمعية-الرياض-للت | already linked to catalog event |
 | candidate-misk-hub-programs-global-exposure-program-20261121-01bcd278 | linked-existing | event-global-exposure-program | already linked to catalog event |
 | candidate-riyadh-city-events-solar-storage-live-20261123-9b428053 | linked-existing | event-solar-storage-live | already linked to catalog event |
+| candidate-umm-al-qura-events-الترشح-للدبلوم-المتوسط-امن-المعلومات-حضوري-بالتعاون-مع-جمعية-الرياض-للتن-20261123-1b46965d | linked-existing | event-الترشح-للدبلوم-المتوسط-امن-المعلومات-حضوري-بالتعاون-مع-جمعية-الرياض-للتن | already linked to catalog event |
 | candidate-riyadh-city-events-general-aviation-airshow-aero-middle-east-x-sand-fun-20261124-517c200d | linked-existing | event-general-aviation-airshow-aero-middle-east-x-sand-fun | already linked to catalog event |
 | candidate-ithra-events-the-art-of-islamic-illumination-20261124-4d93707e | linked-existing | event-the-art-of-islamic-illumination | already linked to catalog event |
 | candidate-mdlbeast-events-xp-music-futures-2026-20261126-19e9b824 | linked-existing | event-xp-music-futures-2026 | already linked to catalog event |
@@ -482,15 +484,18 @@
 | candidate-visit-saudi-calendar-pdf-in-act-anniversary-act-xi-20261127-4a38d19e | linked-existing | event-in-act-anniversary-act-xi-2 | already linked to catalog event |
 | candidate-experience-alula-events-fei-endurance-world-championship-2026-20261128-febe29ec | linked-existing | event-fei-endurance-world-championship-2026 | already linked to catalog event |
 | candidate-hayy-jameel-events-hayy-cinema-aflam-sudan-x-hayy-cinema-20261128-e942a21a | linked-existing | event-hayy-cinema-aflam-sudan-x-hayy-cinema | already linked to catalog event |
+| candidate-umm-al-qura-events-الترشح-للدبلوم-المشارك-إدارة-الحشود-حضوري-بالتعاون-مع-جمعية-الرياض-للتنم-20261128-bdfe3080 | linked-existing | event-الترشح-للدبلوم-المشارك-إدارة-الحشود-حضوري-بالتعاون-مع-جمعية-الرياض-للتنم | already linked to catalog event |
 | candidate-riyadh-city-events-global-logistics-forum-20261129-56ad24e8 | linked-existing | event-global-logistics-forum | already linked to catalog event |
 | candidate-misk-hub-programs-application-deadline-discover-your-path-20261130-1bbce22f | linked-existing | event-application-deadline-discover-your-path | already linked to catalog event |
 | candidate-informa-connect-saudi-events-saudi-intermobility-expo-20261130-00e0f2d5 | linked-existing | event-saudi-intermobility-expo | already linked to catalog event |
 | candidate-riyadh-city-events-industrial-transformation-saudi-arabia-20261130-12e8d203 | linked-existing | event-industrial-transformation-saudi-arabia | already linked to catalog event |
 | candidate-ithra-events-making-short-films-20261130-d9e14125 | linked-existing | event-making-short-films | already linked to catalog event |
+| candidate-umm-al-qura-events-الترشح-للدبلوم-المتوسط-إدارة-اللوجستيات-وسلاسل-الإمداد-حضوري-بالتعاون-مع-20261130-361c7e56 | linked-existing | event-الترشح-للدبلوم-المتوسط-إدارة-اللوجستيات-وسلاسل-الإمداد-حضوري-بالتعاون-مع | already linked to catalog event |
 | candidate-dhahran-expo-calendar-business-sector-annual-reception-20261201-18d15b29 | linked-existing | event-business-sector-annual-reception | already linked to catalog event |
 | candidate-kau-events-future-frontiers-for-businesses-catalysts-for-growth-in-a-transformation-20261201-406b7779 | linked-existing | event-future-frontiers-for-businesses-catalysts-for-growth-in-a-transformation | already linked to catalog event |
 | candidate-saudi-water-authority-events-saudi-water-partnerships-company-forum-and-awards-ceremony-20261201-0e07fb1a | linked-existing | event-saudi-water-partnerships-company-forum-and-awards-ceremony | already linked to catalog event |
 | candidate-riyadh-city-events-information-security-event-black-hat-20261201-50466b49 | linked-existing | event-information-security-event-black-hat | already linked to catalog event |
+| candidate-umm-al-qura-events-الترشح-للدبلوم-المتوسط-إدارة-الموارد-البشرية-حضوري-بالتعاون-مع-جمعية-الر-20261201-52a01fe0 | linked-existing | event-الترشح-للدبلوم-المتوسط-إدارة-الموارد-البشرية-حضوري-بالتعاون-مع-جمعية-الر | already linked to catalog event |
 | candidate-asharqia-chamber-events-حفل-الاستقبال-السنوي-لقطاع-الاعمال-2026م-20261201-afe11e68 | linked-existing | event-حفل-الاستقبال-السنوي-لقطاع-الاعمال-2026م | already linked to catalog event |
 | candidate-dhahran-expo-calendar-consumer-trade-fair-20261202-18d15b29 | linked-existing | event-consumer-trade-fair | already linked to catalog event |
 | candidate-mdlbeast-events-soundstorm-26-20261203-3318b1dd | linked-existing | event-soundstorm-26 | already linked to catalog event |
@@ -513,6 +518,7 @@
 | candidate-riyadh-city-events-saudi-makes-future-ai-expo-20261214-72a6b408 | linked-existing | event-saudi-makes-future-ai-expo | already linked to catalog event |
 | candidate-ithra-events-content-creation-for-conversational-podcasts-20261214-80ecfed8 | linked-existing | event-content-creation-for-conversational-podcasts | already linked to catalog event |
 | candidate-misk-hub-programs-application-deadline-virtual-work-experience-data-analysis-at-stc-20261215-cd0206e7 | linked-existing | event-application-deadline-virtual-work-experience-data-analysis-at-stc | already linked to catalog event |
+| candidate-umm-al-qura-events-الترشح-للدبلوم-المتوسط-تجربة-العميل-حضوري-بالتعاون-مع-جمعية-الرياض-للتنم-20261216-f306f86c | linked-existing | event-الترشح-للدبلوم-المتوسط-تجربة-العميل-حضوري-بالتعاون-مع-جمعية-الرياض-للتنم | already linked to catalog event |
 | candidate-experience-alula-events-winter-at-tantora-20261217-fcb864a2 | linked-existing | event-winter-at-tantora | already linked to catalog event |
 | candidate-ithra-events-the-art-of-writing-a-novel-20261217-24b700fc | linked-existing | event-the-art-of-writing-a-novel | already linked to catalog event |
 | candidate-rfecc-whats-on-china-homelife-saudi-arabia-2026-20261220-f2ff78ec | linked-existing | event-china-homelife-saudi-arabia-2026 | already linked to catalog event |

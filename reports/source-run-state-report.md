@@ -1,6 +1,6 @@
 # EventLive Source Run State
 
-Generated at: 2026-08-23T02:32:50.397Z
+Generated at: 2026-08-23T07:16:02.946Z
 
 ## Operating Rule
 
@@ -9,13 +9,13 @@ Raw collection is not publication. Every source run preserves evidence, separate
 ## Totals
 
 - Sources: 88
-- Attempted this run: 37
-- Deferred by adaptive cadence: 11
-- Productive: 19
-- Zero-yield: 7
-- Collector errors: 7
+- Attempted this run: 18
+- Deferred by adaptive cadence: 30
+- Productive: 18
+- Zero-yield: 0
+- Collector errors: 0
 - Persistent collector errors: 7
-- Probe blocked: 2
+- Probe blocked: 0
 - Auto-publish eligible source lanes: 12
 
 ## Stalled / Blocked Focus
@@ -75,7 +75,7 @@ Call log:
 | 20 | code-mcit-programs | active-collector | zero-yield | 0 | yes | Zero-yield for 76 runs; inspect dropped samples or reclassify cadence if the source is seasonal/archive-only. |
 | 21 | misk-hub-programs | active-collector | productive | 5 | no | Continue periodic collection; dedupe and auto-publish only through the candidate gate. |
 | 22 | dhahran-expo-calendar | active-collector | productive | 16 | no | Continue periodic collection; dedupe and auto-publish only through the candidate gate. |
-| 23 | ithra-events | active-collector | productive | 64 | yes | Continue periodic collection; dedupe and auto-publish only through the candidate gate. |
+| 23 | ithra-events | active-collector | productive | 65 | yes | Continue periodic collection; dedupe and auto-publish only through the candidate gate. |
 | 24 | saudi-digital-academy | extractor-backlog | probe-blocked | 0 | no | Do not bypass protection; keep as blocked/partnership candidate: fetch failed getaddrinfo ENOTFOUND sda.edu.sa TypeError: fetch failed |
 | 25 | sdaia-academy-programs | active-collector | zero-yield | 0 | no | Zero-yield for 19 runs; inspect dropped samples or reclassify cadence if the source is seasonal/archive-only. |
 | 26 | saudi-events-app | partnership | partnership | 0 | no | Partnership/API lane; do not scrape protected or app-only data. |

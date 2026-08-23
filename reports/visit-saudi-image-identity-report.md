@@ -1,9 +1,9 @@
 # EventLive Visit Saudi Image Identity Report
 
-- generated_at: 2026-08-23T02:27:23.563Z
-- pdf_crop_assignments: 74
+- generated_at: 2026-08-23T07:11:06.973Z
+- pdf_crop_assignments: 64
 - verified: 59
-- struck: 15
+- struck: 5
 - slots_seen_this_cycle: 69
 
 ## Struck (fell back to generated cover)
@@ -12,16 +12,6 @@
 - باتو (visit-saudi-summer-2026-p006-top-left.jpg) - identity-mismatch - page 6 top-left is now "بلاتو"
 - واحة عسيب (visit-saudi-summer-2026-p009-top-left.jpg) - identity-mismatch - page 9 top-left is now "شارع الفن - القرية الأوروبية"
 - بيوني الشرف (visit-saudi-summer-2026-p010-bottom-right.jpg) - identity-mismatch - page 10 bottom-right is now "مزرعة التوت الأسود"
-- الاخطبوطية (visit-saudi-summer-2026-p058-bottom-left.jpg) - slot-vacated - no dated card currently occupies page 58 bottom-left of https://www.visitsaudi.com/content/dam/documents/saudi-calendar-ar.pdf
-- ورث الفن (visit-saudi-summer-2026-p059-bottom-left.jpg) - slot-vacated - no dated card currently occupies page 59 bottom-left of https://www.visitsaudi.com/content/dam/documents/saudi-calendar-ar.pdf
-- Taste of the World (visit-saudi-summer-2026-p059-bottom-right.jpg) - slot-vacated - no dated card currently occupies page 59 bottom-right of https://www.visitsaudi.com/content/dam/documents/saudi-calendar-ar.pdf
-- مهرجان المأكولات الشعبية (visit-saudi-summer-2026-p059-top-right.jpg) - slot-vacated - no dated card currently occupies page 59 top-right of https://www.visitsaudi.com/content/dam/documents/saudi-calendar-ar.pdf
-- فعالية رمي السهام (visit-saudi-summer-2026-p059-top-left.jpg) - slot-vacated - no dated card currently occupies page 59 top-left of https://www.visitsaudi.com/content/dam/documents/saudi-calendar-ar.pdf
-- عروض الفنون الادائية التقليدية (visit-saudi-summer-2026-p058-top-right.jpg) - slot-vacated - no dated card currently occupies page 58 top-right of https://www.visitsaudi.com/content/dam/documents/saudi-calendar-ar.pdf
-- شابتر 26 (visit-saudi-summer-2026-p060-bottom-right.jpg) - slot-vacated - no dated card currently occupies page 60 bottom-right of https://www.visitsaudi.com/content/dam/documents/saudi-calendar-ar.pdf
-- عرض This Is Michael الموسيقي (visit-saudi-summer-2026-p042-bottom-left.jpg) - slot-vacated - no dated card currently occupies page 42 bottom-left of https://www.visitsaudi.com/content/dam/documents/saudi-calendar-ar.pdf
-- ليلة ستانداب كوميدي في جدة (visit-saudi-summer-2026-p042-bottom-right.jpg) - slot-vacated - no dated card currently occupies page 42 bottom-right of https://www.visitsaudi.com/content/dam/documents/saudi-calendar-ar.pdf
-- الخطة C مع رضوان الريمي ليلة كوميدية طربية (visit-saudi-summer-2026-p062-top-right.jpg) - slot-vacated - no dated card currently occupies page 62 top-right of https://www.visitsaudi.com/content/dam/documents/saudi-calendar-ar.pdf
 - ذكريات سبيستون مع الفنان عاصم سكر (visit-saudi-summer-2026-p062-bottom-left.jpg) - identity-mismatch - page 62 bottom-left is now "ENC 2026"
 
 ## Verified

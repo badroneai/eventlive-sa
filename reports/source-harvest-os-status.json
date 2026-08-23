@@ -1,19 +1,19 @@
 {
   "schema": "eventlive.harvest-os-status.v1",
-  "generated_at": "2026-08-23T02:41:15.656Z",
+  "generated_at": "2026-08-23T07:24:10.668Z",
   "status": "NEEDS_WORK",
   "operating_rule": "Probe before new sources; sample before full harvest; Raw collection is not publication; discovery-only never auto-publishes.",
   "totals": {
     "sources": 88,
-    "candidates": 602,
-    "matched_candidates": 574,
+    "candidates": 608,
+    "matched_candidates": 580,
     "auto_publish_sources": 15,
     "candidate_only_sources": 12,
     "partnership_required_sources": 5,
     "blocked_or_closed_sources": 0,
     "manual_review_sources": 56,
-    "collection_attempted": 37,
-    "productive_sources": 20,
+    "collection_attempted": 18,
+    "productive_sources": 18,
     "collector_errors": 7,
     "chronic_collector_errors": 7,
     "transient_collector_errors": 0
@@ -25,19 +25,19 @@
     "manual_review": 56
   },
   "candidates_by_gate": {
-    "catalog-review": 572,
+    "catalog-review": 578,
     "duplicate-review": 8,
     "source-evidence": 22
   },
   "funnel": {
-    "discovered_this_run": 305,
-    "candidate_queue": 602,
-    "evaluated_for_publish": 602,
-    "linked_existing": 555,
-    "published_new": 11,
+    "discovered_this_run": 228,
+    "candidate_queue": 608,
+    "evaluated_for_publish": 608,
+    "linked_existing": 563,
+    "published_new": 9,
     "blocked": 36,
     "secondary_promoted": 0,
-    "secondary_still_blocked": 38
+    "secondary_still_blocked": 36
   },
   "blocked_reasons": {
     "possible duplicate requires review: exact-title-city-source-conflict": 6,
@@ -58,49 +58,49 @@
       "note": "collector-error: fetch failed; fetch failed",
       "error_streak": 31,
       "kind": "chronic",
-      "attempted_this_run": true
+      "attempted_this_run": false
     },
     {
       "id": "mos-events",
       "note": "collector-error: fetch failed",
       "error_streak": 31,
       "kind": "chronic",
-      "attempted_this_run": true
+      "attempted_this_run": false
     },
     {
       "id": "moc-cultural-subportals",
       "note": "collector-error: fetch failed; fetch failed",
       "error_streak": 31,
       "kind": "chronic",
-      "attempted_this_run": true
+      "attempted_this_run": false
     },
     {
       "id": "monshaat-events",
       "note": "collector-error: fetch failed; fetch failed",
       "error_streak": 14,
       "kind": "chronic",
-      "attempted_this_run": true
+      "attempted_this_run": false
     },
     {
       "id": "saudi-pro-league-fixtures",
       "note": "collector-error: fetch failed",
       "error_streak": 11,
       "kind": "chronic",
-      "attempted_this_run": true
+      "attempted_this_run": false
     },
     {
       "id": "tuwaiq-academy-bootcamps",
       "note": "collector-error: HTTP 403",
       "error_streak": 8,
       "kind": "chronic",
-      "attempted_this_run": true
+      "attempted_this_run": false
     },
     {
       "id": "saudi-space-agency-events",
       "note": "collector-error: fetch failed",
       "error_streak": 3,
       "kind": "chronic",
-      "attempted_this_run": true
+      "attempted_this_run": false
     }
   ],
   "sources": [

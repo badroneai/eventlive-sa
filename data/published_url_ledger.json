@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "generated_at": "2026-08-23T02:36:11.187Z",
+  "generated_at": "2026-08-23T07:19:05.704Z",
   "events": {
     "event-skill-development-initiative": {
       "identity": "skill development initiative|riyadh|2021-07-14",
@@ -1122,6 +1122,11 @@
       "first_seen": "2026-08-06",
       "last_seen": "2026-08-23"
     },
+    "event-ملتقى-المستجدين-تحت-شعار-اكتشف-تعلم-انطلق": {
+      "identity": "ملتقى المستجدين تحت شعار (اكتشف - تعلم - انطلق)|makkah|2026-08-24",
+      "first_seen": "2026-08-23",
+      "last_seen": "2026-08-23"
+    },
     "event-إنشاء-وإدارة-المقرر-في-blackboard-ultra-الفترة-الصباحية": {
       "identity": "إنشاء وإدارة المقرر في blackboard ultra – الفترة الصباحية|online|2026-08-24",
       "first_seen": "2026-08-16",
@@ -1132,9 +1137,19 @@
       "first_seen": "2026-08-11",
       "last_seen": "2026-08-23"
     },
+    "event-أساسيات-التعلّم-الرقمي-للطلبة-عبر-البلاك-بورد-الترا-الفترة-الصباحية": {
+      "identity": "أساسيات التعلّم الرقمي للطلبة عبر البلاك بورد الترا – الفترة الصباحية|online|2026-08-25",
+      "first_seen": "2026-08-23",
+      "last_seen": "2026-08-23"
+    },
     "event-المحتوى-التفاعلي-والتقييم-الإلكتروني-في-blackboard-ultra-الفترة-الصباحية": {
       "identity": "المحتوى التفاعلي والتقييم الإلكتروني في blackboard ultra – الفترة الصباحية|makkah|2026-08-25",
       "first_seen": "2026-08-17",
+      "last_seen": "2026-08-23"
+    },
+    "event-أساسيات-التعلّم-الرقمي-للطلبة-عبر-البلاك-بورد-الترا-الفترة-المسائية": {
+      "identity": "أساسيات التعلّم الرقمي للطلبة عبر البلاك بورد الترا – الفترة المسائية|online|2026-08-25",
+      "first_seen": "2026-08-23",
       "last_seen": "2026-08-23"
     },
     "event-navigating-the-cyber-map-how-to-choose-your-specialization-build-a-corpo": {
@@ -1152,9 +1167,19 @@
       "first_seen": "2026-07-11",
       "last_seen": "2026-08-23"
     },
+    "event-الطالب-الفعّال-في-بيئة-البلاك-بورد-الترا-الفترة-الصباحيه": {
+      "identity": "الطالب الفعّال في بيئة البلاك بورد الترا – الفترة الصباحيه|online|2026-08-26",
+      "first_seen": "2026-08-23",
+      "last_seen": "2026-08-23"
+    },
     "event-الفصول-الافتراضية-عبر-blackboard-ultra-الفترة-الصباحية": {
       "identity": "الفصول الافتراضية عبر blackboard ultra – الفترة الصباحية|online|2026-08-26",
       "first_seen": "2026-08-17",
+      "last_seen": "2026-08-23"
+    },
+    "event-الطالب-الفعّال-في-بيئة-البلاك-بورد-الترا-الفترة-المسائية": {
+      "identity": "الطالب الفعّال في بيئة البلاك بورد الترا – الفترة المسائية|online|2026-08-26",
+      "first_seen": "2026-08-23",
       "last_seen": "2026-08-23"
     },
     "event-manal-mohei-eldin-and-oriental-strokes": {
@@ -1675,6 +1700,11 @@
     "event-icegov-international-conference-on-electronic-governance": {
       "identity": "icegov – international conference on electronic governance|riyadh|2026-09-28",
       "first_seen": "2026-07-11",
+      "last_seen": "2026-08-23"
+    },
+    "event-creative-writing-club": {
+      "identity": "creative writing club|dhahran|2026-09-28",
+      "first_seen": "2026-08-23",
       "last_seen": "2026-08-23"
     },
     "event-e3-customer-experience-conference": {
@@ -4722,11 +4752,6 @@
       "first_seen": "2026-07-11",
       "last_seen": "2026-08-23"
     },
-    "ended-ithra-events-creative-writing-club-20260518-a7f18ce9": {
-      "identity": "creative writing club|dhahran|2026-05-18",
-      "first_seen": "2026-07-11",
-      "last_seen": "2026-08-23"
-    },
     "ended-scega-exhibitions-conferences-بيوتي-وورلد-الرياض-20260518-8e4611d9": {
       "identity": "بيوتي وورلد الرياض|riyadh|2026-05-18",
       "first_seen": "2026-07-11",
@@ -7766,6 +7791,12 @@
       "identity": "ورشة عمل \"بعنوان مناقشة التحديات التي تواجه قطاع المقاولات بمنطقة المدينة المنورة\" بالتعاون مع مجلس المنطقة بامارة منطقة المدينة المنورة|madinah|2022-01-18",
       "first_seen": "2026-07-11",
       "last_seen": "2026-08-23"
+    },
+    "ended-ithra-events-creative-writing-club-20260518-a7f18ce9": {
+      "identity": "creative writing club|dhahran|2026-05-18",
+      "first_seen": "2026-07-11",
+      "last_seen": "2026-08-23",
+      "retired_at": "2026-08-23"
     },
     "event-stand-up-comedy-and-interactive-show-with-salah-al-dali": {
       "identity": "stand-up comedy and interactive show with salah al-dali|jeddah|2026-09-04",

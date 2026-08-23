@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-23T02:32:32.255Z",
+  "generated_at": "2026-08-23T07:15:45.006Z",
   "events_file": "dist/events.json",
   "manifest": "data/event_image_cache_manifest.json",
   "image_dir": "dist/assets/event-images",
@@ -7,10 +7,10 @@
     "targets": 500,
     "cached_total": 810,
     "fetched": 0,
-    "reused": 497,
-    "failed": 3,
-    "skipped_recent_failures": 0,
-    "remembered_failures": 10
+    "reused": 496,
+    "failed": 4,
+    "skipped_recent_failures": 3,
+    "remembered_failures": 11
   },
   "fetched": [],
   "reused": [
@@ -457,7 +457,7 @@
     {
       "source_url": "https://uqu.edu.sa/assets/images/uqu-gate.jpeg",
       "file": "dist/assets/event-images/الشهادة-الدولية-للحاسب-والإنترنت-ic3-a46ba6d2eb.jpg",
-      "events": 68
+      "events": 73
     },
     {
       "source_url": "https://www.ithra.com/application/files/cache/thumbnails/5d9089ccc5309c4c20ca0c1099df3ab1.jpg",
@@ -673,11 +673,6 @@
       "source_url": "https://www.ithra.com/application/files/cache/thumbnails/9b23657ec4f2a966cf60f92728f44962.jpg",
       "file": "dist/assets/event-images/art-in-virtual-motion-906a3300d1.jpg",
       "events": 1
-    },
-    {
-      "source_url": "https://futureskills.mcit.gov.sa/sites/default/files/styles/medium/public/2026-08/Power-BI-Microsoft-logo-768x432.png?itok=fsvU80eK",
-      "file": "dist/assets/event-images/virtualization-cloud-infrastructure-basics-الافتراضية-والبنية-التحتية--cacaecee33.png",
-      "events": 19
     },
     {
       "source_url": "https://cdn.tuwaiq.edu.sa/initiatives_admin/images/2ejwj522.h15.webp",
@@ -1037,6 +1032,11 @@
     {
       "source_url": "https://api.riyadh.sa/sites/default/files/styles/medium/public/2026-05/PSU%20prince%20sultan%20university%20ppqntxnn6iahixiutnvo%20%281%29.jpeg?itok=9YqCIfMD",
       "file": "dist/assets/event-images/icegov-international-conference-on-electronic-governance-cc0af10a77.jpg",
+      "events": 1
+    },
+    {
+      "source_url": "https://www.ithra.com/application/files/cache/thumbnails/c47683fb579ecc7a50e89aca87fd3437.png",
+      "file": "dist/assets/event-images/creative-writing-club-211e3f3700.png",
       "events": 1
     },
     {
@@ -2493,41 +2493,71 @@
       "source_url": "https://scth.scene7.com/is/image/scth/okhtabotiya?wid=1400&hei=788&fit=constrain&fmt=webp",
       "file": "dist/assets/event-images/okhtabotiya-0013765084.webp",
       "events": 1
-    },
-    {
-      "source_url": "https://api.riyadh.sa/sites/default/files/styles/medium/public/2026-07/NTN%202.png?itok=NcFLmn-3",
-      "file": "dist/assets/event-images/registration-for-international-research-competition-on-non-terrestrial-edd16ffe75.png",
-      "events": 1
     }
   ],
   "rejected_removed": [],
   "missing_removed": [],
-  "skipped_recent_failures": [],
-  "failed": [
-    {
-      "source_url": "https://s7g10.scene7.com/is/image/rcu/fei2:landscape-16x9?$Responsive$&fit=stretch&fmt=webp&wid=1920",
-      "events": 1,
-      "reason": "HTTP 403",
-      "failure_kind": "access-denied",
-      "retry_after": "2026-08-24T02:32:32.255Z"
-    },
+  "skipped_recent_failures": [
     {
       "source_url": "https://cdn.rfecc.sa/wp-content/uploads/mec/qr_898ea2449274454e42895b52b18c6f68.png",
       "events": 1,
       "reason": "HTTP 403",
       "failure_kind": "access-denied",
-      "retry_after": "2026-08-24T02:32:32.255Z"
+      "retry_after": "2026-08-24T02:32:32.255Z",
+      "skipped": true
     },
     {
       "source_url": "https://api.riyadh.sa/sites/default/files/styles/medium/public/2026-07/er%20%2859%29.jpg?itok=a33APdGm",
       "events": 1,
       "reason": "not-image text/html; charset=utf-8",
       "failure_kind": "source-returned-html",
-      "retry_after": "2026-08-24T02:32:32.255Z"
+      "retry_after": "2026-08-24T02:32:32.255Z",
+      "skipped": true
+    },
+    {
+      "source_url": "https://s7g10.scene7.com/is/image/rcu/fei2:landscape-16x9?$Responsive$&fit=stretch&fmt=webp&wid=1920",
+      "events": 1,
+      "reason": "HTTP 403",
+      "failure_kind": "access-denied",
+      "retry_after": "2026-08-24T02:32:32.255Z",
+      "skipped": true
+    }
+  ],
+  "failed": [
+    {
+      "source_url": "https://cdn.rfecc.sa/wp-content/uploads/mec/qr_898ea2449274454e42895b52b18c6f68.png",
+      "events": 1,
+      "reason": "HTTP 403",
+      "failure_kind": "access-denied",
+      "retry_after": "2026-08-24T02:32:32.255Z",
+      "skipped": true
+    },
+    {
+      "source_url": "https://api.riyadh.sa/sites/default/files/styles/medium/public/2026-07/er%20%2859%29.jpg?itok=a33APdGm",
+      "events": 1,
+      "reason": "not-image text/html; charset=utf-8",
+      "failure_kind": "source-returned-html",
+      "retry_after": "2026-08-24T02:32:32.255Z",
+      "skipped": true
+    },
+    {
+      "source_url": "https://s7g10.scene7.com/is/image/rcu/fei2:landscape-16x9?$Responsive$&fit=stretch&fmt=webp&wid=1920",
+      "events": 1,
+      "reason": "HTTP 403",
+      "failure_kind": "access-denied",
+      "retry_after": "2026-08-24T02:32:32.255Z",
+      "skipped": true
+    },
+    {
+      "source_url": "https://futureskills.mcit.gov.sa/sites/default/files/styles/medium/public/2026-08/R.jpg?itok=DjAo5gc9",
+      "events": 19,
+      "reason": "HTTP 404",
+      "failure_kind": "not-found",
+      "retry_after": "2026-08-24T07:15:45.006Z"
     }
   ],
   "requires_rebuild": true,
   "rebuild_reasons": [
-    "new-failures:3"
+    "new-failures:1"
   ]
 }

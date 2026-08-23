@@ -1,18 +1,18 @@
 {
-  "published_at": "2026-08-23T02:27:21.021Z",
+  "published_at": "2026-08-23T07:11:04.408Z",
   "dry_run": false,
   "include_partner": true,
   "source_candidates": "data/source_candidates.json",
   "events_catalog": "data/events_catalog.json",
-  "candidates_seen": 602,
+  "candidates_seen": 608,
   "totals": {
-    "candidates_seen": 602,
-    "published": 11,
-    "linked_existing": 555,
+    "candidates_seen": 608,
+    "published": 9,
+    "linked_existing": 563,
     "blocked": 36,
     "duplicate_review_alerts": 8,
     "category_fallback_alerts": 0,
-    "reconciled": 566
+    "reconciled": 572
   },
   "category_fallback_alerts": [],
   "duplicate_catalog_rows_removed": 0,
@@ -179,44 +179,34 @@
       "title": "مزرعة التوت الأسود"
     },
     {
-      "candidate_id": "candidate-future-skills-catalog-linux-administration-20260830-253eef1e",
-      "event_id": "event-linux-administration",
-      "title": "⁠Linux Administration"
+      "candidate_id": "candidate-umm-al-qura-events-ملتقى-المستجدين-تحت-شعار-اكتشف-تعلم-انطلق-20260824-96f1da74",
+      "event_id": "event-ملتقى-المستجدين-تحت-شعار-اكتشف-تعلم-انطلق",
+      "title": "ملتقى المستجدين تحت شعار (اكتشف - تعلم - انطلق)"
     },
     {
-      "candidate_id": "candidate-umm-al-qura-events-الترشح-للدبلوم-المتوسط-التحول-الرقمي-حضوري-بالتعاون-مع-جمعية-الرياض-للتن-20260831-4affd02c",
-      "event_id": "event-الترشح-للدبلوم-المتوسط-التحول-الرقمي-حضوري-بالتعاون-مع-جمعية-الرياض-للتن",
-      "title": "الترشح للدبلوم المتوسط التحول الرقمي(حضوري) بالتعاون مع جمعية الرياض للتنمية والدراسات والخدمات الاستشارية"
+      "candidate_id": "candidate-umm-al-qura-events-أساسيات-التعلّم-الرقمي-للطلبة-عبر-البلاك-بورد-الترا-الفترة-الصباحية-20260825-0917cc38",
+      "event_id": "event-أساسيات-التعلّم-الرقمي-للطلبة-عبر-البلاك-بورد-الترا-الفترة-الصباحية",
+      "title": "أساسيات التعلّم الرقمي للطلبة عبر البلاك بورد الترا – الفترة الصباحية"
     },
     {
-      "candidate_id": "candidate-umm-al-qura-events-الترشح-للدبلوم-المشارك-إدارة-المشاريع-حضوري-بالتعاون-مع-جمعية-الرياض-للت-20261120-ccc663ee",
-      "event_id": "event-الترشح-للدبلوم-المشارك-إدارة-المشاريع-حضوري-بالتعاون-مع-جمعية-الرياض-للت",
-      "title": "الترشح للدبلوم المشارك إدارة المشاريع (حضوري) بالتعاون مع جمعية الرياض للتنمية والدراسات والخدمات الاستشارية"
+      "candidate_id": "candidate-umm-al-qura-events-أساسيات-التعلّم-الرقمي-للطلبة-عبر-البلاك-بورد-الترا-الفترة-المسائية-20260825-b315c27c",
+      "event_id": "event-أساسيات-التعلّم-الرقمي-للطلبة-عبر-البلاك-بورد-الترا-الفترة-المسائية",
+      "title": "أساسيات التعلّم الرقمي للطلبة عبر البلاك بورد الترا – الفترة المسائية"
     },
     {
-      "candidate_id": "candidate-umm-al-qura-events-الترشح-للدبلوم-المتوسط-امن-المعلومات-حضوري-بالتعاون-مع-جمعية-الرياض-للتن-20261123-1b46965d",
-      "event_id": "event-الترشح-للدبلوم-المتوسط-امن-المعلومات-حضوري-بالتعاون-مع-جمعية-الرياض-للتن",
-      "title": "الترشح للدبلوم المتوسط امن المعلومات (حضوري) بالتعاون مع جمعية الرياض للتنمية والدراسات والخدمات الاستشارية"
+      "candidate_id": "candidate-umm-al-qura-events-الطالب-الفعّال-في-بيئة-البلاك-بورد-الترا-الفترة-الصباحيه-20260826-cf1161cd",
+      "event_id": "event-الطالب-الفعّال-في-بيئة-البلاك-بورد-الترا-الفترة-الصباحيه",
+      "title": "الطالب الفعّال في بيئة البلاك بورد الترا – الفترة الصباحيه"
     },
     {
-      "candidate_id": "candidate-umm-al-qura-events-الترشح-للدبلوم-المشارك-إدارة-الحشود-حضوري-بالتعاون-مع-جمعية-الرياض-للتنم-20261128-bdfe3080",
-      "event_id": "event-الترشح-للدبلوم-المشارك-إدارة-الحشود-حضوري-بالتعاون-مع-جمعية-الرياض-للتنم",
-      "title": "الترشح للدبلوم المشارك إدارة الحشود (حضوري) بالتعاون مع جمعية الرياض للتنمية والدراسات والخدمات الاستشارية"
+      "candidate_id": "candidate-umm-al-qura-events-الطالب-الفعّال-في-بيئة-البلاك-بورد-الترا-الفترة-المسائية-20260826-1a3ed42a",
+      "event_id": "event-الطالب-الفعّال-في-بيئة-البلاك-بورد-الترا-الفترة-المسائية",
+      "title": "الطالب الفعّال في بيئة البلاك بورد الترا – الفترة المسائية"
     },
     {
-      "candidate_id": "candidate-umm-al-qura-events-الترشح-للدبلوم-المتوسط-إدارة-اللوجستيات-وسلاسل-الإمداد-حضوري-بالتعاون-مع-20261130-361c7e56",
-      "event_id": "event-الترشح-للدبلوم-المتوسط-إدارة-اللوجستيات-وسلاسل-الإمداد-حضوري-بالتعاون-مع",
-      "title": "الترشح للدبلوم المتوسط إدارة اللوجستيات وسلاسل الإمداد (حضوري) بالتعاون مع جمعية الرياض للتنمية والدراسات والخدمات الاستشارية"
-    },
-    {
-      "candidate_id": "candidate-umm-al-qura-events-الترشح-للدبلوم-المتوسط-إدارة-الموارد-البشرية-حضوري-بالتعاون-مع-جمعية-الر-20261201-52a01fe0",
-      "event_id": "event-الترشح-للدبلوم-المتوسط-إدارة-الموارد-البشرية-حضوري-بالتعاون-مع-جمعية-الر",
-      "title": "الترشح للدبلوم المتوسط إدارة الموارد البشرية (حضوري) بالتعاون مع جمعية الرياض للتنمية والدراسات والخدمات الاستشارية"
-    },
-    {
-      "candidate_id": "candidate-umm-al-qura-events-الترشح-للدبلوم-المتوسط-تجربة-العميل-حضوري-بالتعاون-مع-جمعية-الرياض-للتنم-20261216-f306f86c",
-      "event_id": "event-الترشح-للدبلوم-المتوسط-تجربة-العميل-حضوري-بالتعاون-مع-جمعية-الرياض-للتنم",
-      "title": "الترشح للدبلوم المتوسط تجربة العميل(حضوري) بالتعاون مع جمعية الرياض للتنمية والدراسات والخدمات الاستشارية"
+      "candidate_id": "candidate-ithra-events-creative-writing-club-20260928-a7f18ce9",
+      "event_id": "event-creative-writing-club",
+      "title": "Creative Writing Club"
     }
   ],
   "linked_existing": [
@@ -1739,6 +1729,12 @@
       "reason": "already linked to catalog event"
     },
     {
+      "candidate_id": "candidate-future-skills-catalog-linux-administration-20260830-253eef1e",
+      "event_id": "event-linux-administration",
+      "title": "⁠Linux Administration",
+      "reason": "already linked to catalog event"
+    },
+    {
       "candidate_id": "candidate-riyadh-city-events-merath-middle-east-museums-heritage-expo-20260830-822a8145",
       "event_id": "event-merath-middle-east-museums-heritage-expo",
       "title": "Merath – Middle East Museums & Heritage Expo",
@@ -1790,6 +1786,12 @@
       "candidate_id": "candidate-visit-saudi-calendar-leap-2026-20260831-95d3166a",
       "event_id": "event-leap-2026",
       "title": "LEAP 2026",
+      "reason": "already linked to catalog event"
+    },
+    {
+      "candidate_id": "candidate-umm-al-qura-events-الترشح-للدبلوم-المتوسط-التحول-الرقمي-حضوري-بالتعاون-مع-جمعية-الرياض-للتن-20260831-4affd02c",
+      "event_id": "event-الترشح-للدبلوم-المتوسط-التحول-الرقمي-حضوري-بالتعاون-مع-جمعية-الرياض-للتن",
+      "title": "الترشح للدبلوم المتوسط التحول الرقمي(حضوري) بالتعاون مع جمعية الرياض للتنمية والدراسات والخدمات الاستشارية",
       "reason": "already linked to catalog event"
     },
     {
@@ -2843,6 +2845,12 @@
       "reason": "already linked to catalog event"
     },
     {
+      "candidate_id": "candidate-umm-al-qura-events-الترشح-للدبلوم-المشارك-إدارة-المشاريع-حضوري-بالتعاون-مع-جمعية-الرياض-للت-20261120-ccc663ee",
+      "event_id": "event-الترشح-للدبلوم-المشارك-إدارة-المشاريع-حضوري-بالتعاون-مع-جمعية-الرياض-للت",
+      "title": "الترشح للدبلوم المشارك إدارة المشاريع (حضوري) بالتعاون مع جمعية الرياض للتنمية والدراسات والخدمات الاستشارية",
+      "reason": "already linked to catalog event"
+    },
+    {
       "candidate_id": "candidate-misk-hub-programs-global-exposure-program-20261121-01bcd278",
       "event_id": "event-global-exposure-program",
       "title": "Global Exposure Program",
@@ -2852,6 +2860,12 @@
       "candidate_id": "candidate-riyadh-city-events-solar-storage-live-20261123-9b428053",
       "event_id": "event-solar-storage-live",
       "title": "Solar & Storage Live",
+      "reason": "already linked to catalog event"
+    },
+    {
+      "candidate_id": "candidate-umm-al-qura-events-الترشح-للدبلوم-المتوسط-امن-المعلومات-حضوري-بالتعاون-مع-جمعية-الرياض-للتن-20261123-1b46965d",
+      "event_id": "event-الترشح-للدبلوم-المتوسط-امن-المعلومات-حضوري-بالتعاون-مع-جمعية-الرياض-للتن",
+      "title": "الترشح للدبلوم المتوسط امن المعلومات (حضوري) بالتعاون مع جمعية الرياض للتنمية والدراسات والخدمات الاستشارية",
       "reason": "already linked to catalog event"
     },
     {
@@ -2897,6 +2911,12 @@
       "reason": "already linked to catalog event"
     },
     {
+      "candidate_id": "candidate-umm-al-qura-events-الترشح-للدبلوم-المشارك-إدارة-الحشود-حضوري-بالتعاون-مع-جمعية-الرياض-للتنم-20261128-bdfe3080",
+      "event_id": "event-الترشح-للدبلوم-المشارك-إدارة-الحشود-حضوري-بالتعاون-مع-جمعية-الرياض-للتنم",
+      "title": "الترشح للدبلوم المشارك إدارة الحشود (حضوري) بالتعاون مع جمعية الرياض للتنمية والدراسات والخدمات الاستشارية",
+      "reason": "already linked to catalog event"
+    },
+    {
       "candidate_id": "candidate-riyadh-city-events-global-logistics-forum-20261129-56ad24e8",
       "event_id": "event-global-logistics-forum",
       "title": "Global Logistics Forum",
@@ -2927,6 +2947,12 @@
       "reason": "already linked to catalog event"
     },
     {
+      "candidate_id": "candidate-umm-al-qura-events-الترشح-للدبلوم-المتوسط-إدارة-اللوجستيات-وسلاسل-الإمداد-حضوري-بالتعاون-مع-20261130-361c7e56",
+      "event_id": "event-الترشح-للدبلوم-المتوسط-إدارة-اللوجستيات-وسلاسل-الإمداد-حضوري-بالتعاون-مع",
+      "title": "الترشح للدبلوم المتوسط إدارة اللوجستيات وسلاسل الإمداد (حضوري) بالتعاون مع جمعية الرياض للتنمية والدراسات والخدمات الاستشارية",
+      "reason": "already linked to catalog event"
+    },
+    {
       "candidate_id": "candidate-dhahran-expo-calendar-business-sector-annual-reception-20261201-18d15b29",
       "event_id": "event-business-sector-annual-reception",
       "title": "Business Sector Annual Reception",
@@ -2948,6 +2974,12 @@
       "candidate_id": "candidate-riyadh-city-events-information-security-event-black-hat-20261201-50466b49",
       "event_id": "event-information-security-event-black-hat",
       "title": "Information Security Event: Black Hat",
+      "reason": "already linked to catalog event"
+    },
+    {
+      "candidate_id": "candidate-umm-al-qura-events-الترشح-للدبلوم-المتوسط-إدارة-الموارد-البشرية-حضوري-بالتعاون-مع-جمعية-الر-20261201-52a01fe0",
+      "event_id": "event-الترشح-للدبلوم-المتوسط-إدارة-الموارد-البشرية-حضوري-بالتعاون-مع-جمعية-الر",
+      "title": "الترشح للدبلوم المتوسط إدارة الموارد البشرية (حضوري) بالتعاون مع جمعية الرياض للتنمية والدراسات والخدمات الاستشارية",
       "reason": "already linked to catalog event"
     },
     {
@@ -3080,6 +3112,12 @@
       "candidate_id": "candidate-misk-hub-programs-application-deadline-virtual-work-experience-data-analysis-at-stc-20261215-cd0206e7",
       "event_id": "event-application-deadline-virtual-work-experience-data-analysis-at-stc",
       "title": "Application deadline: Virtual Work Experience - Data analysis at STC",
+      "reason": "already linked to catalog event"
+    },
+    {
+      "candidate_id": "candidate-umm-al-qura-events-الترشح-للدبلوم-المتوسط-تجربة-العميل-حضوري-بالتعاون-مع-جمعية-الرياض-للتنم-20261216-f306f86c",
+      "event_id": "event-الترشح-للدبلوم-المتوسط-تجربة-العميل-حضوري-بالتعاون-مع-جمعية-الرياض-للتنم",
+      "title": "الترشح للدبلوم المتوسط تجربة العميل(حضوري) بالتعاون مع جمعية الرياض للتنمية والدراسات والخدمات الاستشارية",
       "reason": "already linked to catalog event"
     },
     {
