@@ -1,10 +1,10 @@
 {
-  "generated_at": "2026-08-23T19:01:44.751Z",
+  "generated_at": "2026-09-01T21:39:41.557Z",
   "source_ops_report": "reports/source-ops-report.json",
   "source_registry": "data/source_registry.json",
   "totals": {
     "leads_seen": 10,
-    "tasks": 6,
+    "tasks": 7,
     "high_priority": 4
   },
   "tasks": [
@@ -389,7 +389,7 @@
       "discovery_quality": "strong-lead",
       "discovery_score": 70,
       "discovery_notes": "saudi-location-signal, specific-venue, event-topic-fit",
-      "resolver_priority": 97,
+      "resolver_priority": 109,
       "target_sources": [
         {
           "id": "rfecc-whats-on",
@@ -474,10 +474,10 @@
       "next_action": "ابحث في المصادر الرسمية المستهدفة واربط lead بمصدر رسمي قبل أي نشر."
     },
     {
-      "lead_id": "candidate-eventbrite-saudi-smart-sustainable-building-intelligent-ecosystems-for-tomorrows-cities-20260901-e45c1490",
-      "title": "Smart & Sustainable: Building Intelligent Ecosystems for Tomorrow’s Cities",
+      "lead_id": "candidate-eventbrite-saudi-family-office-investment-riyadh-saudi-arabia-20260902-fc391e91",
+      "title": "Family Office Investment - Riyadh, Saudi Arabia",
       "city": "Riyadh",
-      "starts_at": "2026-09-01T19:00:00+03:00",
+      "starts_at": "2026-09-02T09:30:00+03:00",
       "source_label": "Eventbrite Saudi Arabia",
       "discovery_quality": "watch-lead",
       "discovery_score": 60,
@@ -485,14 +485,98 @@
       "resolver_priority": 97,
       "target_sources": [
         {
-          "id": "future-skills-catalog",
-          "name": "Future Skills MCIT Catalogue",
-          "url": "https://futureskills.mcit.gov.sa/ar/catalogue/all?label=&field_main_tracks_target_id_verf=565&field_sub_tracks_target_id=All&field_training_course_level_target_id=All&field_related_skills_target_id=All&field_course_type_value=All&field_training_delivery_value=All&field_training_city_target_id=All&field_job_market_target_id=All",
-          "domain": "futureskills.mcit.gov.sa",
+          "id": "informa-connect-saudi-events",
+          "name": "Informa Connect Saudi Event Portfolio",
+          "url": "https://informaconnect.com/",
+          "domain": "informaconnect.com",
+          "trust_level": "official",
+          "source_type": "conference-organizer",
+          "score": 74
+        },
+        {
+          "id": "invest-saudi-events",
+          "name": "Invest Saudi Events",
+          "url": "https://www.investsaudi.sa/events",
+          "domain": "investsaudi.sa",
           "trust_level": "official",
           "source_type": "government-calendar",
-          "score": 48
+          "score": 66
         },
+        {
+          "id": "jouf-chamber-events",
+          "name": "Jouf Chamber Events",
+          "url": "https://ajcci.org.sa/event/",
+          "domain": "ajcci.org.sa",
+          "trust_level": "official",
+          "source_type": "venue-calendar",
+          "score": 66
+        },
+        {
+          "id": "madinah-chamber-events",
+          "name": "Madinah Chamber Events",
+          "url": "https://www.mcci.org.sa/Event/events",
+          "domain": "mcci.org.sa",
+          "trust_level": "official",
+          "source_type": "venue-calendar",
+          "score": 66
+        },
+        {
+          "id": "monshaat-events",
+          "name": "Monsha'at All Events",
+          "url": "https://www.monshaat.gov.sa/en/events-list",
+          "domain": "monshaat.gov.sa",
+          "trust_level": "official",
+          "source_type": "government-calendar",
+          "score": 66
+        }
+      ],
+      "searches": [
+        {
+          "query": "site:informaconnect.com \"Family Office Investment - Riyadh, Saudi Arabia\" \"Riyadh\"",
+          "url": "https://www.google.com/search?q=site%3Ainformaconnect.com%20%22Family%20Office%20Investment%20-%20Riyadh%2C%20Saudi%20Arabia%22%20%22Riyadh%22"
+        },
+        {
+          "query": "site:investsaudi.sa \"Family Office Investment - Riyadh, Saudi Arabia\" \"Riyadh\"",
+          "url": "https://www.google.com/search?q=site%3Ainvestsaudi.sa%20%22Family%20Office%20Investment%20-%20Riyadh%2C%20Saudi%20Arabia%22%20%22Riyadh%22"
+        },
+        {
+          "query": "site:ajcci.org.sa \"Family Office Investment - Riyadh, Saudi Arabia\" \"Riyadh\"",
+          "url": "https://www.google.com/search?q=site%3Aajcci.org.sa%20%22Family%20Office%20Investment%20-%20Riyadh%2C%20Saudi%20Arabia%22%20%22Riyadh%22"
+        },
+        {
+          "query": "site:mcci.org.sa \"Family Office Investment - Riyadh, Saudi Arabia\" \"Riyadh\"",
+          "url": "https://www.google.com/search?q=site%3Amcci.org.sa%20%22Family%20Office%20Investment%20-%20Riyadh%2C%20Saudi%20Arabia%22%20%22Riyadh%22"
+        },
+        {
+          "query": "site:monshaat.gov.sa \"Family Office Investment - Riyadh, Saudi Arabia\" \"Riyadh\"",
+          "url": "https://www.google.com/search?q=site%3Amonshaat.gov.sa%20%22Family%20Office%20Investment%20-%20Riyadh%2C%20Saudi%20Arabia%22%20%22Riyadh%22"
+        },
+        {
+          "query": "\"Family Office Investment - Riyadh, Saudi Arabia\" \"Riyadh\" official",
+          "url": "https://www.google.com/search?q=%22Family%20Office%20Investment%20-%20Riyadh%2C%20Saudi%20Arabia%22%20%22Riyadh%22%20official"
+        },
+        {
+          "query": "\"Family Office Investment - Riyadh, Saudi Arabia\" \"Riyadh\" organizer",
+          "url": "https://www.google.com/search?q=%22Family%20Office%20Investment%20-%20Riyadh%2C%20Saudi%20Arabia%22%20%22Riyadh%22%20organizer"
+        },
+        {
+          "query": "\"Family Office Investment - Riyadh, Saudi Arabia\" \"Riyadh\" tickets",
+          "url": "https://www.google.com/search?q=%22Family%20Office%20Investment%20-%20Riyadh%2C%20Saudi%20Arabia%22%20%22Riyadh%22%20tickets"
+        }
+      ],
+      "next_action": "ابحث في المصادر الرسمية المستهدفة واربط lead بمصدر رسمي قبل أي نشر."
+    },
+    {
+      "lead_id": "candidate-eventbrite-saudi-family-offices-vcs-investment-summit-riyadh-invite-only-20261124-e6c951a4",
+      "title": "Family Offices & VCs Investment Summit Riyadh: Invite Only",
+      "city": "Riyadh",
+      "starts_at": "2026-11-24T09:30:00+03:00",
+      "source_label": "Eventbrite Saudi Arabia",
+      "discovery_quality": "watch-lead",
+      "discovery_score": 60,
+      "discovery_notes": "saudi-location-signal, specific-venue, event-topic-fit, non-saudi-eventbrite-domain",
+      "resolver_priority": 82,
+      "target_sources": [
         {
           "id": "informa-connect-saudi-events",
           "name": "Informa Connect Saudi Event Portfolio",
@@ -500,25 +584,25 @@
           "domain": "informaconnect.com",
           "trust_level": "official",
           "source_type": "conference-organizer",
-          "score": 48
+          "score": 112
         },
         {
-          "id": "saudi-digital-academy",
-          "name": "Saudi Digital Academy",
-          "url": "https://sda.edu.sa/ar",
-          "domain": "sda.edu.sa",
+          "id": "madinah-chamber-events",
+          "name": "Madinah Chamber Events",
+          "url": "https://www.mcci.org.sa/Event/events",
+          "domain": "mcci.org.sa",
           "trust_level": "official",
-          "source_type": "organizer-calendar",
-          "score": 48
+          "source_type": "venue-calendar",
+          "score": 104
         },
         {
-          "id": "sdaia-academy-programs",
-          "name": "SDAIA Academy Programs",
-          "url": "https://sdaia.gov.sa/en/Sectors/academy/bootcamps/Pages/default.aspx",
-          "domain": "sdaia.gov.sa",
-          "trust_level": "official",
-          "source_type": "government-calendar",
-          "score": 48
+          "id": "ricec-events",
+          "name": "Riyadh International Convention and Exhibition Center",
+          "url": "https://www.ricec.com/",
+          "domain": "ricec.com",
+          "trust_level": "venue-official",
+          "source_type": "venue-calendar",
+          "score": 102
         },
         {
           "id": "sdaia-calendar-events",
@@ -527,37 +611,50 @@
           "domain": "sdaia.gov.sa",
           "trust_level": "official",
           "source_type": "government-calendar",
-          "score": 48
+          "score": 102
+        },
+        {
+          "id": "asharqia-chamber-events",
+          "name": "Asharqia Chamber Events",
+          "url": "https://www.chamber.org.sa/sites/Arabic/Events/ChamberEvents/Pages/AllChamberEvents.aspx",
+          "domain": "chamber.org.sa",
+          "trust_level": "official",
+          "source_type": "venue-calendar",
+          "score": 94
         }
       ],
       "searches": [
         {
-          "query": "site:futureskills.mcit.gov.sa \"Smart & Sustainable: Building Intelligent Ecosystems for Tomorrow’s Cities\" \"Riyadh\"",
-          "url": "https://www.google.com/search?q=site%3Afutureskills.mcit.gov.sa%20%22Smart%20%26%20Sustainable%3A%20Building%20Intelligent%20Ecosystems%20for%20Tomorrow%E2%80%99s%20Cities%22%20%22Riyadh%22"
+          "query": "site:informaconnect.com \"Family Offices & VCs Investment Summit Riyadh: Invite Only\" \"Riyadh\"",
+          "url": "https://www.google.com/search?q=site%3Ainformaconnect.com%20%22Family%20Offices%20%26%20VCs%20Investment%20Summit%20Riyadh%3A%20Invite%20Only%22%20%22Riyadh%22"
         },
         {
-          "query": "site:informaconnect.com \"Smart & Sustainable: Building Intelligent Ecosystems for Tomorrow’s Cities\" \"Riyadh\"",
-          "url": "https://www.google.com/search?q=site%3Ainformaconnect.com%20%22Smart%20%26%20Sustainable%3A%20Building%20Intelligent%20Ecosystems%20for%20Tomorrow%E2%80%99s%20Cities%22%20%22Riyadh%22"
+          "query": "site:mcci.org.sa \"Family Offices & VCs Investment Summit Riyadh: Invite Only\" \"Riyadh\"",
+          "url": "https://www.google.com/search?q=site%3Amcci.org.sa%20%22Family%20Offices%20%26%20VCs%20Investment%20Summit%20Riyadh%3A%20Invite%20Only%22%20%22Riyadh%22"
         },
         {
-          "query": "site:sda.edu.sa \"Smart & Sustainable: Building Intelligent Ecosystems for Tomorrow’s Cities\" \"Riyadh\"",
-          "url": "https://www.google.com/search?q=site%3Asda.edu.sa%20%22Smart%20%26%20Sustainable%3A%20Building%20Intelligent%20Ecosystems%20for%20Tomorrow%E2%80%99s%20Cities%22%20%22Riyadh%22"
+          "query": "site:ricec.com \"Family Offices & VCs Investment Summit Riyadh: Invite Only\" \"Riyadh\"",
+          "url": "https://www.google.com/search?q=site%3Aricec.com%20%22Family%20Offices%20%26%20VCs%20Investment%20Summit%20Riyadh%3A%20Invite%20Only%22%20%22Riyadh%22"
         },
         {
-          "query": "site:sdaia.gov.sa \"Smart & Sustainable: Building Intelligent Ecosystems for Tomorrow’s Cities\" \"Riyadh\"",
-          "url": "https://www.google.com/search?q=site%3Asdaia.gov.sa%20%22Smart%20%26%20Sustainable%3A%20Building%20Intelligent%20Ecosystems%20for%20Tomorrow%E2%80%99s%20Cities%22%20%22Riyadh%22"
+          "query": "site:sdaia.gov.sa \"Family Offices & VCs Investment Summit Riyadh: Invite Only\" \"Riyadh\"",
+          "url": "https://www.google.com/search?q=site%3Asdaia.gov.sa%20%22Family%20Offices%20%26%20VCs%20Investment%20Summit%20Riyadh%3A%20Invite%20Only%22%20%22Riyadh%22"
         },
         {
-          "query": "\"Smart & Sustainable: Building Intelligent Ecosystems for Tomorrow’s Cities\" \"Riyadh\" official",
-          "url": "https://www.google.com/search?q=%22Smart%20%26%20Sustainable%3A%20Building%20Intelligent%20Ecosystems%20for%20Tomorrow%E2%80%99s%20Cities%22%20%22Riyadh%22%20official"
+          "query": "site:chamber.org.sa \"Family Offices & VCs Investment Summit Riyadh: Invite Only\" \"Riyadh\"",
+          "url": "https://www.google.com/search?q=site%3Achamber.org.sa%20%22Family%20Offices%20%26%20VCs%20Investment%20Summit%20Riyadh%3A%20Invite%20Only%22%20%22Riyadh%22"
         },
         {
-          "query": "\"Smart & Sustainable: Building Intelligent Ecosystems for Tomorrow’s Cities\" \"Riyadh\" organizer",
-          "url": "https://www.google.com/search?q=%22Smart%20%26%20Sustainable%3A%20Building%20Intelligent%20Ecosystems%20for%20Tomorrow%E2%80%99s%20Cities%22%20%22Riyadh%22%20organizer"
+          "query": "\"Family Offices & VCs Investment Summit Riyadh: Invite Only\" \"Riyadh\" official",
+          "url": "https://www.google.com/search?q=%22Family%20Offices%20%26%20VCs%20Investment%20Summit%20Riyadh%3A%20Invite%20Only%22%20%22Riyadh%22%20official"
         },
         {
-          "query": "\"Smart & Sustainable: Building Intelligent Ecosystems for Tomorrow’s Cities\" \"Riyadh\" tickets",
-          "url": "https://www.google.com/search?q=%22Smart%20%26%20Sustainable%3A%20Building%20Intelligent%20Ecosystems%20for%20Tomorrow%E2%80%99s%20Cities%22%20%22Riyadh%22%20tickets"
+          "query": "\"Family Offices & VCs Investment Summit Riyadh: Invite Only\" \"Riyadh\" organizer",
+          "url": "https://www.google.com/search?q=%22Family%20Offices%20%26%20VCs%20Investment%20Summit%20Riyadh%3A%20Invite%20Only%22%20%22Riyadh%22%20organizer"
+        },
+        {
+          "query": "\"Family Offices & VCs Investment Summit Riyadh: Invite Only\" \"Riyadh\" tickets",
+          "url": "https://www.google.com/search?q=%22Family%20Offices%20%26%20VCs%20Investment%20Summit%20Riyadh%3A%20Invite%20Only%22%20%22Riyadh%22%20tickets"
         }
       ],
       "next_action": "ابحث في المصادر الرسمية المستهدفة واربط lead بمصدر رسمي قبل أي نشر."

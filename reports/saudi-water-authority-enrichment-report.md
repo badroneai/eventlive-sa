@@ -1,6 +1,6 @@
 # Saudi Water Authority Enrichment Report
 
-- generated_at: 2026-08-23T19:00:45.008Z
+- generated_at: 2026-09-01T21:36:51.574Z
 - targets: 7
 - candidates: 8
 - enriched: 7
@@ -10,13 +10,13 @@
 
 ## Enriched
 
-- Global Infrastructure Expo - official-page-html - image=yes - features=8
-- World Conference on Desalination and Water Reuse - official-page-html - image=yes - features=8
-- Saudi Water Partnerships Company Forum and Awards Ceremony - official-page-html - image=yes - features=8
-- Global Prize for Innovation in Water - official-page-html - image=yes - features=8
-- The Global Water Sustainability Conference 2026 - official-page-html - image=yes - features=8
-- Foundation Day - official-page-html - image=yes - features=8
-- Saudi Flag Day - official-page-html - image=yes - features=8
+- Global Infrastructure Expo | Saudi Water Authority - official-page-html - image=yes - features=8
+- World Conference on Desalination and W… | Saudi Water Authority - official-page-html - image=yes - features=8
+- Saudi Water Partnerships Company Forum… | Saudi Water Authority - official-page-html - image=yes - features=8
+- Global Prize for Innovation in Water | Saudi Water Authority - official-page-html - image=yes - features=8
+- The Global Water Sustainability Confer… | Saudi Water Authority - official-page-html - image=yes - features=8
+- Foundation Day | Saudi Water Authority - official-page-html - image=yes - features=8
+- Saudi Flag Day | Saudi Water Authority - official-page-html - image=yes - features=8
 
 ## Fetch Failures
 

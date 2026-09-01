@@ -1,9 +1,9 @@
 {
-  "generated_at": "2026-08-23T18:59:51.501Z",
+  "generated_at": "2026-09-01T21:36:07.260Z",
   "catalog": "data/events_catalog.json",
   "totals": {
-    "targets": 14,
-    "enriched": 14,
+    "targets": 16,
+    "enriched": 16,
     "failed": 0
   },
   "enriched": [
@@ -96,6 +96,14 @@
       "registration_deadline": "2026-09-23T18:00:00+03:00"
     },
     {
+      "id": "event-misk-x-humain-traineeship-program-future-ai-builders",
+      "title": "Misk x HUMAIN Traineeship Program (Future AI Builders)",
+      "goals": 1,
+      "features": 1,
+      "requirements": 0,
+      "registration_deadline": "2026-09-15T18:00:00+03:00"
+    },
+    {
       "id": "event-global-exposure-program",
       "title": "Global Exposure Program",
       "goals": 1,
@@ -118,6 +126,14 @@
       "features": 4,
       "requirements": 0,
       "registration_deadline": "2026-12-15T18:00:00+03:00"
+    },
+    {
+      "id": "event-ipo-readiness-program",
+      "title": "IPO Readiness Program",
+      "goals": 1,
+      "features": 4,
+      "requirements": 0,
+      "registration_deadline": "2026-10-31T18:00:00+03:00"
     }
   ],
   "failed": []

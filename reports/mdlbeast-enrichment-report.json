@@ -1,10 +1,10 @@
 {
-  "generated_at": "2026-08-23T19:00:54.950Z",
+  "generated_at": "2026-09-01T21:36:59.605Z",
   "catalog": "data/events_catalog.json",
   "source": "MDLBEAST Events",
   "totals": {
     "targets": 6,
-    "candidates": 4,
+    "candidates": 6,
     "enriched": 6,
     "fetched": 6,
     "images": 6,
@@ -41,7 +41,7 @@
       "source_method": "official-next-data",
       "image_url": "https://www.datocms-assets.com/66357/1782304250-1001-v3-web.webp?auto=format&fit=max&w=2048&q=90",
       "fetched": true,
-      "features": 7
+      "features": 8
     },
     {
       "id": "event-xp-music-futures-2026",

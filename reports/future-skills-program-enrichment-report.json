@@ -1,10 +1,10 @@
 {
-  "generated_at": "2026-08-23T18:58:12.440Z",
+  "generated_at": "2026-09-01T21:35:12.970Z",
   "catalog": "data/events_catalog.json",
   "totals": {
-    "targets": 24,
-    "enriched": 24,
-    "failed": 0
+    "targets": 27,
+    "enriched": 26,
+    "failed": 1
   },
   "enriched": [
     {
@@ -188,15 +188,6 @@
       "metadata": 8
     },
     {
-      "id": "event-linux-administration",
-      "title": "Linux Administration",
-      "group_id": "13057",
-      "goals": 1,
-      "features": 1,
-      "requirements": 4,
-      "metadata": 8
-    },
-    {
       "id": "event-ccna",
       "title": "CCNA",
       "group_id": "13058",
@@ -222,7 +213,41 @@
       "features": 1,
       "requirements": 4,
       "metadata": 8
+    },
+    {
+      "id": "event-ccnp",
+      "title": "CCNP",
+      "group_id": "13061",
+      "goals": 1,
+      "features": 1,
+      "requirements": 4,
+      "metadata": 8
+    },
+    {
+      "id": "event-data-analysis-with-python",
+      "title": "Data Analysis with Python",
+      "group_id": "13062",
+      "goals": 1,
+      "features": 1,
+      "requirements": 4,
+      "metadata": 8
+    },
+    {
+      "id": "event-red-hat-certified-system-administrator-rhcsa",
+      "title": "Red Hat Certified System Administrator (RHCSA)",
+      "group_id": "13063",
+      "goals": 1,
+      "features": 1,
+      "requirements": 4,
+      "metadata": 8
     }
   ],
-  "failed": []
+  "failed": [
+    {
+      "id": "event-linux-administration",
+      "title": "Linux Administration",
+      "group_id": "13057",
+      "reason": "HTTP 404"
+    }
+  ]
 }

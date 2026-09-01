@@ -1,23 +1,17 @@
 {
   "schema": "eventlive.eye-official-link-verification.v1",
-  "generated_at": "2026-08-23T18:57:59.784Z",
+  "generated_at": "2026-09-01T21:34:58.045Z",
   "dry_run": false,
   "totals": {
-    "targets": 11,
+    "targets": 10,
     "confirmed": 3,
-    "skipped": 2,
+    "skipped": 1,
     "failed": 6
   },
   "rows": [
     {
       "candidate_id": "candidate-eye-of-riyadh-events-oxford-future-of-real-estate-programme-20260805-7c9ee195",
       "title": "Oxford Future of Real Estate Programme",
-      "status": "failed",
-      "reason": "HTTP 403"
-    },
-    {
-      "candidate_id": "candidate-eye-of-riyadh-events-smart-data-ai-summit-20260826-f9946ea8",
-      "title": "Smart Data & AI Summit",
       "status": "failed",
       "reason": "HTTP 403"
     },
@@ -30,22 +24,8 @@
     {
       "candidate_id": "candidate-eye-of-riyadh-events-big-5-construct-saudi-20260830-2238e3a0",
       "title": "Big 5 Construct Saudi",
-      "status": "confirmed",
-      "official_url": "https://www.big5constructsaudi.com/",
-      "official_image_url": "",
-      "organizer": "dmg events",
-      "confirmed": true,
-      "reason": "confirmed",
-      "title_tokens": [
-        "big",
-        "construct"
-      ],
-      "matched_title_tokens": [
-        "big",
-        "construct"
-      ],
-      "year_confirmed": true,
-      "month_confirmed": true
+      "status": "failed",
+      "reason": "HTTP 403"
     },
     {
       "candidate_id": "candidate-eye-of-riyadh-events-hvac-r-saudi-arabia-20260830-857b2f5b",
@@ -86,8 +66,22 @@
     {
       "candidate_id": "candidate-eye-of-riyadh-events-global-proptech-summit-2026-20261025-7c1d3001",
       "title": "Global Proptech Summit 2026",
-      "status": "failed",
-      "reason": "HTTP 403"
+      "status": "confirmed",
+      "official_url": "https://www.globalproptechsummit.com/",
+      "official_image_url": "https://static.wixstatic.com/media/708478_1854711612ca467293ee73543b1c06ff%7Emv2.png/v1/fit/w_2500,h_1330,al_c/708478_1854711612ca467293ee73543b1c06ff%7Emv2.png",
+      "organizer": "Eye of Riyadh",
+      "confirmed": true,
+      "reason": "confirmed",
+      "title_tokens": [
+        "global",
+        "proptech"
+      ],
+      "matched_title_tokens": [
+        "global",
+        "proptech"
+      ],
+      "year_confirmed": true,
+      "month_confirmed": true
     },
     {
       "candidate_id": "candidate-eye-of-riyadh-events-real-estate-supply-chain-forum-20261028-206f7fb8",
@@ -104,22 +98,8 @@
     {
       "candidate_id": "candidate-eye-of-riyadh-events-real-estate-future-forum-20270125-d058344d",
       "title": "Real Estate Future Forum",
-      "status": "skipped",
-      "official_url": "https://www.therff.com/",
-      "confirmed": false,
-      "reason": "year-not-confirmed",
-      "title_tokens": [
-        "real",
-        "estate",
-        "future"
-      ],
-      "matched_title_tokens": [
-        "real",
-        "estate",
-        "future"
-      ],
-      "year_confirmed": false,
-      "month_confirmed": true
+      "status": "failed",
+      "reason": "HTTP 403"
     },
     {
       "candidate_id": "candidate-eye-of-riyadh-events-real-estate-excellence-award-2026-rea-2026-20270126-5e55ea49",

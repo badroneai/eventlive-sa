@@ -1,45 +1,43 @@
 # EventLive Harvest OS Status
 
-- Generated at: 2026-08-23T19:09:53.192Z
+- Generated at: 2026-09-01T21:51:29.976Z
 - Status: NEEDS_WORK
 - Operating rule: Probe before new sources; sample before full harvest; Raw collection is not publication; discovery-only never auto-publishes.
 
 ## Totals
 
 - Sources: 88
-- Candidates: 608
-- Matched candidates: 582
+- Candidates: 510
+- Matched candidates: 489
 - Auto-publish sources: 15
 - Candidate-only sources: 12
 - Partnership-required sources: 5
-- Productive sources / attempted: 17/19
-- Collector errors: 8 (chronic 7, transient 1)
+- Productive sources / attempted: 23/47
+- Collector errors: 6 (chronic 6, transient 0)
 
 ## Publication Funnel
 
 | Stage | Count |
 | --- | --- |
-| discovered_this_run | 222 |
-| candidate_queue | 608 |
-| evaluated_for_publish | 608 |
-| linked_existing | 571 |
-| published_new | 3 |
-| blocked | 34 |
+| discovered_this_run | 252 |
+| candidate_queue | 510 |
+| evaluated_for_publish | 510 |
+| linked_existing | 449 |
+| published_new | 36 |
+| blocked | 25 |
 | secondary_promoted | 0 |
-| secondary_still_blocked | 28 |
+| secondary_still_blocked | 67 |
 
 ## Blocked Reasons
 
 | Reason | Count |
 | --- | --- |
-| unknown category requires review | 10 |
-| publication gate source-evidence is not auto-publishable | 9 |
-| possible duplicate requires review: exact-title-city-source-conflict | 5 |
-| linked catalog row event-aseer-season was superseded by dedupe | 2 |
+| unknown category requires review | 9 |
+| publication gate source-evidence is not auto-publishable | 6 |
+| possible duplicate requires review: exact-title-city-source-conflict | 2 |
+| possible duplicate requires review: fuzzy-title-venue-date-window | 2 |
 | possible duplicate requires review: exact-title-city-venue-conflict | 2 |
-| linked catalog row event-dakah was superseded by dedupe | 1 |
-| possible duplicate already exists: event-hvac-r-saudi-arabia | 1 |
-| possible duplicate already exists: event-saudi-industrial-series-2 | 1 |
+| possible duplicate already exists: event-leap-2026 | 1 |
 | linked catalog row event-stand-up-comedy-and-interactive-show-with-salah-al-dali was superseded by dedupe | 1 |
 | linked catalog row event-feena-nehke-stand-up-comedy-by-john-achkar was superseded by dedupe | 1 |
 | linked catalog row event-music-festival-mdlbeast-soundstorm was superseded by dedupe | 1 |
@@ -48,14 +46,12 @@
 
 | Source | Kind | Failed runs in a row | Attempted this run | Reason |
 | --- | --- | --- | --- | --- |
-| moc-cultural-calendar | chronic | 31 | no | collector-error: fetch failed; fetch failed |
-| mos-events | chronic | 31 | no | collector-error: fetch failed |
-| moc-cultural-subportals | chronic | 31 | no | collector-error: fetch failed; fetch failed |
-| monshaat-events | chronic | 14 | no | collector-error: fetch failed; fetch failed |
-| saudi-pro-league-fixtures | chronic | 11 | no | collector-error: fetch failed |
-| tuwaiq-academy-bootcamps | chronic | 8 | no | collector-error: HTTP 403 |
-| saudi-space-agency-events | chronic | 3 | no | collector-error: fetch failed |
-| asharqia-chamber-events | transient | 1 | yes | fetch failed; page.goto: Timeout 30000ms exceeded. Call log:   - navigating to "https://www.chamber.org.sa/sites/Arabic/Events/ChamberEvents/Pages/AllChamberEvents.aspx", waiting until "domcontentload |
+| moc-cultural-calendar | chronic | 32 | yes | collector-error: fetch failed; fetch failed |
+| mos-events | chronic | 32 | yes | collector-error: fetch failed |
+| moc-cultural-subportals | chronic | 32 | yes | collector-error: fetch failed; fetch failed |
+| monshaat-events | chronic | 15 | yes | collector-error: fetch failed; fetch failed |
+| saudi-pro-league-fixtures | chronic | 12 | yes | collector-error: fetch failed |
+| tuwaiq-academy-bootcamps | chronic | 9 | yes | collector-error: HTTP 403 |
 
 | Source | Policy | Trust | Gate |
 | --- | --- | --- | --- |

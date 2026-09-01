@@ -1,9 +1,9 @@
 {
-  "generated_at": "2026-08-23T19:01:39.921Z",
+  "generated_at": "2026-09-01T21:39:36.176Z",
   "max_duration_hours": 8,
   "totals": {
-    "activated": 26,
-    "skipped_long": 6
+    "activated": 27,
+    "skipped_long": 7
   },
   "activated": [
     {
@@ -196,6 +196,15 @@
       "session_type": "official-community-session"
     },
     {
+      "id": "event-beast-house",
+      "title": "Beast House",
+      "source_label": "MDLBEAST Events",
+      "starts_at": "2026-09-06T21:00:00+03:00",
+      "ends_at": "2026-09-07T03:00:00+03:00",
+      "duration_hours": 6,
+      "session_type": "official-entertainment-session"
+    },
+    {
       "id": "event-register-for-the-world-breastfeeding-week-awareness-lecture",
       "title": "Register for the World Breastfeeding Week Awareness Lecture",
       "source_label": "Saudi Universities and Technical Colleges",
@@ -205,15 +214,6 @@
       "session_type": "official-community-session"
     },
     {
-      "id": "event-beast-house",
-      "title": "Beast House",
-      "source_label": "MDLBEAST Events",
-      "starts_at": "2026-08-21T21:00:00+03:00",
-      "ends_at": "2026-08-22T03:00:00+03:00",
-      "duration_hours": 6,
-      "session_type": "official-entertainment-session"
-    },
-    {
       "id": "event-summer-splash-at-south-beach",
       "title": "Summer Splash at South Beach",
       "source_label": "Saudi Universities and Technical Colleges",
@@ -221,6 +221,15 @@
       "ends_at": "2026-08-29T18:00:00+03:00",
       "duration_hours": 4,
       "session_type": "official-community-session"
+    },
+    {
+      "id": "event-الحوكمة-والمخاطر-والامتثال",
+      "title": "الحوكمة والمخاطر والامتثال",
+      "source_label": "Qassim Chamber Events",
+      "starts_at": "2026-09-07T16:30:00+03:00",
+      "ends_at": "2026-09-07T18:30:00+03:00",
+      "duration_hours": 2,
+      "session_type": "official-business-workshop"
     },
     {
       "id": "event-شرح-وتوضيح-إجراءات-الاستيراد-والتصدير-وحرية-البيع",
@@ -247,6 +256,12 @@
       "title": "تقييم سلامة المنتج التجميلي وملف معلومات المنتج",
       "source_label": "Saudi Food and Drug Authority Events",
       "duration_hours": 28.5
+    },
+    {
+      "id": "event-mdlbeast-radio-mixtape",
+      "title": "MDLBEAST Radio MixTape",
+      "source_label": "MDLBEAST Events",
+      "duration_hours": 24
     },
     {
       "id": "event-unstable",
