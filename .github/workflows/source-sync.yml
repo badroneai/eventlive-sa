@@ -2,8 +2,33 @@ name: EventLive Source Sync
 
 on:
   schedule:
-    # Every 6 hours to keep current and upcoming Saudi events fresh for visitors.
-    - cron: "17 */6 * * *"
+    # Once a day at 02:17 UTC = 05:17 Riyadh (KSA is UTC+3 year-round, no DST).
+    #
+    # Was every 6 hours. Owner call 2026-09-02: four collections a day buy very
+    # little now that the source set is mature — measured over 128 runs, the
+    # productive sources are already visited on every run regardless of cadence
+    # (scripts/source-cadence-utils.mjs gives them interval 0), and the deferred
+    # ones wait on WALL-CLOCK cooldowns of 24/72/168 hours, so daily runs do not
+    # reduce anyone's coverage.
+    #
+    # Why this hour, from 120 measured runs:
+    #   * Runner contention. Median run duration by UTC hour: 02:xx = 22.3 min
+    #     (the quietest window with a real sample), against 31.5 min at 19:xx and
+    #     36 min at 16:xx/20:xx. Contention is not just slowness — a crowded
+    #     runner is what produced the false-red Lighthouse sample on 2026-09-02
+    #     (min_perf=67 against 100 for the same commit 41 minutes earlier).
+    #   * Coverage of the Saudi day. Saudi organisations publish during working
+    #     hours; a 05:17 run carries everything posted through the previous full
+    #     working day and evening, and the site is fresh before the next one
+    #     starts.
+    #   * Failure headroom. A run that fails at 05:17 leaves a whole working day
+    #     to notice and re-dispatch it. An evening failure sits overnight.
+    #
+    # The live board no longer depends on this interval: cards carry their own
+    # window and the page retires them at runtime (scripts/home-board-live.mjs),
+    # so a longer gap between publishes can no longer leave an ended event
+    # labelled "مباشر الآن".
+    - cron: "17 2 * * *"
   workflow_dispatch:
 
 permissions:

@@ -20,10 +20,13 @@ function indexOfDeployLine(pattern) {
   return index;
 }
 
-assert.match(workflow, /cron:\s*["']17 \*\/6 \* \* \*["']/, 'source sync must run every 6 hours');
+// Daily at 02:17 UTC = 05:17 Riyadh. The hour is load-bearing (quietest runner
+// window, full previous working day captured, a working day of headroom if the
+// run fails), so it is asserted rather than left to drift.
+assert.match(workflow, /cron:\s*["']17 2 \* \* \*["']/, 'source sync must run once daily at 02:17 UTC (05:17 Riyadh)');
 assert.match(workflow, /EVENTLIVE_SOURCE_COLLECT_ENDED_EVENTS:\s*["']false["']/, 'scheduled sync must explicitly disable ended-event collection');
 assert.match(workflow, /EVENTLIVE_SOURCE_ADAPTIVE_CADENCE:\s*["']true["']/, 'scheduled sync must defer repeatedly unproductive sources without disabling them');
-assert.match(workflow, /EVENTLIVE_SOURCE_DIAGNOSTICS_INTERVAL_HOURS:\s*["']24["']/, 'heavy diagnostics must run at most daily on the six-hour workflow');
+assert.match(workflow, /EVENTLIVE_SOURCE_DIAGNOSTICS_INTERVAL_HOURS:\s*["']24["']/, 'heavy diagnostics must stay on a daily interval');
 assert.match(workflow, /EVENTLIVE_INCLUDE_DISCOVERY_RADARS:\s*["']false["']/, 'discovery-only radars must stay off the production critical path');
 assert.match(workflow, /EVENTLIVE_SOURCE_FETCH_TIMEOUT_MS:\s*["']12000["']/, 'scheduled collectors must use a bounded direct-fetch timeout');
 assert.match(workflow, /EVENTLIVE_SOURCE_FETCH_ATTEMPTS:\s*["']2["']/, 'scheduled collectors must avoid three long retries per failed source');
