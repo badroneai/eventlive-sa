@@ -1,6 +1,6 @@
 # EventLive Source Run State
 
-Generated at: 2026-09-01T21:41:38.978Z
+Generated at: 2026-09-02T04:57:34.318Z
 
 ## Operating Rule
 
@@ -9,11 +9,11 @@ Raw collection is not publication. Every source run preserves evidence, separate
 ## Totals
 
 - Sources: 88
-- Attempted this run: 47
-- Deferred by adaptive cadence: 1
-- Productive: 23
-- Zero-yield: 15
-- Collector errors: 6
+- Attempted this run: 22
+- Deferred by adaptive cadence: 26
+- Productive: 19
+- Zero-yield: 2
+- Collector errors: 0
 - Persistent collector errors: 6
 - Probe blocked: 1
 - Auto-publish eligible source lanes: 12
@@ -51,7 +51,7 @@ Call log:
 | Priority | Source | Ring | Status | Extracted | Auto-publish lane | Next action |
 |---:|---|---|---|---:|---|---|
 | 1 | nec-saudi-events | partnership | partnership | 0 | no | Partnership/API lane; do not scrape protected or app-only data. |
-| 2 | visit-saudi-calendar | active-collector | productive | 30 | yes | Continue periodic collection; dedupe and auto-publish only through the candidate gate. |
+| 2 | visit-saudi-calendar | active-collector | productive | 29 | yes | Continue periodic collection; dedupe and auto-publish only through the candidate gate. |
 | 3 | moc-cultural-calendar | active-collector | collector-error | 0 | yes | Fix collector error: fetch failed; fetch failed |
 | 4 | mos-events | active-collector | collector-error | 0 | yes | Fix collector error: fetch failed; page.goto: Timeout 30000ms exceeded.
 Call log:
@@ -71,7 +71,7 @@ Call log:
 | 16 | tuwaiq-academy-bootcamps | active-collector | collector-error | 0 | yes | Fix collector error: HTTP 403 |
 | 17 | future-skills-catalog | active-collector | productive | 5 | yes | Continue periodic collection; dedupe and auto-publish only through the candidate gate. |
 | 18 | riyadh-season | extractor-backlog | probe-blocked | 0 | no | Do not bypass protection; keep as blocked/partnership candidate: bot-protection |
-| 19 | visit-saudi-seasons | active-collector | productive | 19 | no | Continue periodic collection; dedupe and auto-publish only through the candidate gate. |
+| 19 | visit-saudi-seasons | active-collector | productive | 18 | no | Continue periodic collection; dedupe and auto-publish only through the candidate gate. |
 | 20 | code-mcit-programs | active-collector | zero-yield | 0 | yes | Zero-yield for 77 runs; inspect dropped samples or reclassify cadence if the source is seasonal/archive-only. |
 | 21 | misk-hub-programs | active-collector | productive | 5 | no | Continue periodic collection; dedupe and auto-publish only through the candidate gate. |
 | 22 | dhahran-expo-calendar | active-collector | productive | 15 | no | Continue periodic collection; dedupe and auto-publish only through the candidate gate. |

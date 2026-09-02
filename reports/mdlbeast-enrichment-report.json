@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-01T21:36:59.605Z",
+  "generated_at": "2026-09-02T04:54:38.679Z",
   "catalog": "data/events_catalog.json",
   "source": "MDLBEAST Events",
   "totals": {
@@ -20,18 +20,18 @@
       "features": 6
     },
     {
-      "id": "event-unstable",
-      "title": "Unstable",
-      "source_method": "official-next-data",
-      "image_url": "https://www.datocms-assets.com/66357/1779102205-1.jpg?auto=format&fit=max&w=2048&q=90",
-      "fetched": true,
-      "features": 7
-    },
-    {
       "id": "event-beast-house",
       "title": "Beast House",
       "source_method": "official-next-data",
       "image_url": "https://www.datocms-assets.com/66357/1753608398-1-aug-event-banners-01.webp?auto=format&fit=max&w=2048&q=90",
+      "fetched": true,
+      "features": 7
+    },
+    {
+      "id": "event-unstable",
+      "title": "Unstable",
+      "source_method": "official-next-data",
+      "image_url": "https://www.datocms-assets.com/66357/1779102205-1.jpg?auto=format&fit=max&w=2048&q=90",
       "fetched": true,
       "features": 7
     },

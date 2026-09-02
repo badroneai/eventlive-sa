@@ -1,115 +1,18 @@
 {
-  "generated_at": "2026-09-01T21:40:37.804Z",
+  "generated_at": "2026-09-02T04:57:33.399Z",
   "events_file": "dist/events.json",
   "manifest": "data/event_image_cache_manifest.json",
   "image_dir": "dist/assets/event-images",
   "totals": {
     "targets": 500,
     "cached_total": 826,
-    "fetched": 16,
-    "reused": 480,
+    "fetched": 0,
+    "reused": 496,
     "failed": 4,
-    "skipped_recent_failures": 0,
+    "skipped_recent_failures": 4,
     "remembered_failures": 11
   },
-  "fetched": [
-    {
-      "source_url": "https://hayyjameel.org/wp-content/uploads/2026/01/Palestine-362025-scaled.jpg",
-      "file": "dist/assets/event-images/hayy-cinema-cinema-at-saha-second-edition-531d8668c4.jpg",
-      "bytes": 454737,
-      "events": 1
-    },
-    {
-      "source_url": "https://hayyjameel.org/wp-content/uploads/2026/08/DSC02407-scaled-e1787151826828-aspect-ratio-2274-1324-1100x500.jpg",
-      "file": "dist/assets/event-images/jameel-library-september-community-programmes-0b998e3f9f.jpg",
-      "bytes": 104624,
-      "events": 1
-    },
-    {
-      "source_url": "https://hayyjameel.org/wp-content/uploads/2026/08/7f40449f04e924e66b21593a67464100-1024x500.jpg",
-      "file": "dist/assets/event-images/azka-farmers-market-dates-edition-ef7d5decda.jpg",
-      "bytes": 58332,
-      "events": 1
-    },
-    {
-      "source_url": "https://tc.qcc.org.sa/storage/263/6a96afcb77aa8_%D8%A7%D9%84%D8%AD%D9%88%D9%83%D9%85%D8%A9-%D9%88%D8%A7%D9%84%D9%85%D8%AE%D8%A7%D8%B7%D8%B1.jpg",
-      "file": "dist/assets/event-images/الحوكمة-والمخاطر-والامتثال-d2d9325816.jpg",
-      "bytes": 731572,
-      "events": 1
-    },
-    {
-      "source_url": "https://futureskills.mcit.gov.sa/sites/default/files/styles/medium/public/2026-08/_prw_OI1im_9hx8Ct1e.jpg?itok=oJrLJ6U9",
-      "file": "dist/assets/event-images/ccna-6ebc1ffc09.jpg",
-      "bytes": 6594,
-      "events": 24
-    },
-    {
-      "source_url": "https://hayyjameel.org/wp-content/uploads/2026/08/DSC06466-scaled-aspect-ratio-0-0-1100x500.jpg",
-      "file": "dist/assets/event-images/hayy-makers-canvas-making-with-ahmad-sofi-b855b45c7d.jpg",
-      "bytes": 41240,
-      "events": 1
-    },
-    {
-      "source_url": "https://hayyjameel.org/wp-content/uploads/2026/08/IMG_5762-aspect-ratio-828-587-828x500.jpeg",
-      "file": "dist/assets/event-images/hayy-makers-jeddah-s-historic-houses-in-paper-with-norah-bahaj-27a41506d2.jpg",
-      "bytes": 59850,
-      "events": 1
-    },
-    {
-      "source_url": "https://www.ithra.com/application/files/cache/thumbnails/3cbc28db3f6ea2c884c3568c2c846ce0.png",
-      "file": "dist/assets/event-images/doors-all-around-us-arabic-273b0de850.png",
-      "bytes": 1559466,
-      "events": 2
-    },
-    {
-      "source_url": "https://www.ithra.com/application/files/cache/thumbnails/b8807b0b824f884251f87b72940e1785.jpg",
-      "file": "dist/assets/event-images/from-saudi-home-a149f799b3.jpg",
-      "bytes": 648333,
-      "events": 1
-    },
-    {
-      "source_url": "https://www.ithra.com/application/files/cache/thumbnails/fc67b5bf8e136084db8f05aa03bae956.jpg",
-      "file": "dist/assets/event-images/trolley-show-183c47f2c6.jpg",
-      "bytes": 248806,
-      "events": 1
-    },
-    {
-      "source_url": "https://www.ithra.com/application/files/cache/thumbnails/c8141ed00a545a6bce736a07578b62aa.png",
-      "file": "dist/assets/event-images/marine-missions-7f0a5d2d05.png",
-      "bytes": 2399449,
-      "events": 1
-    },
-    {
-      "source_url": "https://www.ithra.com/application/files/cache/thumbnails/3b24e0b54a59bac6029296c60312d679.png",
-      "file": "dist/assets/event-images/memory-trace-3efe567b72.png",
-      "bytes": 2258695,
-      "events": 1
-    },
-    {
-      "source_url": "https://www.ithra.com/application/files/cache/thumbnails/773b2064a8a4f850046cb7e641c7b5d8.png",
-      "file": "dist/assets/event-images/surrealism-art-in-saudi-arabia-72d5044be4.png",
-      "bytes": 1547668,
-      "events": 1
-    },
-    {
-      "source_url": "https://www.ithra.com/application/files/cache/thumbnails/7128c4e4ca9ecd19e993d1d9dfb54f38.png",
-      "file": "dist/assets/event-images/creative-leadership-and-the-making-of-cultural-products-be4da03d8f.png",
-      "bytes": 939373,
-      "events": 1
-    },
-    {
-      "source_url": "https://www.ithra.com/application/files/cache/thumbnails/c83fa61b8e15ce3d828534eaec80b54c.jpg",
-      "file": "dist/assets/event-images/botanical-manifestations-0c9f5bec87.jpg",
-      "bytes": 313518,
-      "events": 1
-    },
-    {
-      "source_url": "https://www.ithra.com/application/files/cache/thumbnails/674b96300a249dd9d1d3eeb5c1b82245.png",
-      "file": "dist/assets/event-images/family-game-within-five-seconds-7844419450.png",
-      "bytes": 1228988,
-      "events": 1
-    }
-  ],
+  "fetched": [],
   "reused": [
     {
       "source_url": "https://music.moc.gov.sa/-/media/Project/Ministries/Moc/Events/Artboard1.png",
@@ -184,6 +87,11 @@
     {
       "source_url": "https://music.moc.gov.sa/-/media/Project/Ministries/Commission/film/Film-acc/About-Accelerator/About-us.png",
       "file": "dist/assets/event-images/film-business-accelerator-175d809332.png",
+      "events": 1
+    },
+    {
+      "source_url": "https://hayyjameel.org/wp-content/uploads/2026/01/Palestine-362025-scaled.jpg",
+      "file": "dist/assets/event-images/hayy-cinema-cinema-at-saha-second-edition-531d8668c4.jpg",
       "events": 1
     },
     {
@@ -432,6 +340,11 @@
       "events": 1
     },
     {
+      "source_url": "https://futureskills.mcit.gov.sa/sites/default/files/styles/medium/public/2026-08/_prw_OI1im_9hx8Ct1e.jpg?itok=oJrLJ6U9",
+      "file": "dist/assets/event-images/ccna-6ebc1ffc09.jpg",
+      "events": 24
+    },
+    {
       "source_url": "https://static.uqu.edu.sa/assets/images/uqu-gate.jpeg",
       "file": "dist/assets/event-images/دورة-تحضير-البيئات-وتعريف-السلالات-البكتيرية-3157e8ad38.jpg",
       "events": 8
@@ -472,13 +385,43 @@
       "events": 1
     },
     {
+      "source_url": "https://www.ithra.com/application/files/cache/thumbnails/b8807b0b824f884251f87b72940e1785.jpg",
+      "file": "dist/assets/event-images/from-saudi-home-a149f799b3.jpg",
+      "events": 1
+    },
+    {
       "source_url": "https://www.ithra.com/application/files/cache/thumbnails/8d214c6ed8f45408bf725ff016fe5cba.jpg",
       "file": "dist/assets/event-images/podcast-production-from-the-field-to-storytelling-dc8bdf3914.jpg",
       "events": 1
     },
     {
+      "source_url": "https://www.ithra.com/application/files/cache/thumbnails/3b24e0b54a59bac6029296c60312d679.png",
+      "file": "dist/assets/event-images/memory-trace-3efe567b72.png",
+      "events": 1
+    },
+    {
+      "source_url": "https://www.ithra.com/application/files/cache/thumbnails/fc67b5bf8e136084db8f05aa03bae956.jpg",
+      "file": "dist/assets/event-images/trolley-show-183c47f2c6.jpg",
+      "events": 1
+    },
+    {
+      "source_url": "https://www.ithra.com/application/files/cache/thumbnails/c8141ed00a545a6bce736a07578b62aa.png",
+      "file": "dist/assets/event-images/marine-missions-7f0a5d2d05.png",
+      "events": 1
+    },
+    {
+      "source_url": "https://hayyjameel.org/wp-content/uploads/2026/08/7f40449f04e924e66b21593a67464100-1024x500.jpg",
+      "file": "dist/assets/event-images/azka-farmers-market-dates-edition-ef7d5decda.jpg",
+      "events": 1
+    },
+    {
       "source_url": "https://www.datocms-assets.com/66357/1738671266-mixtape-feb-4th-16-1.png?auto=format&fit=max&w=2048&q=90",
       "file": "dist/assets/event-images/mdlbeast-radio-mixtape-b5ffbacbbc.avif",
+      "events": 1
+    },
+    {
+      "source_url": "https://hayyjameel.org/wp-content/uploads/2026/08/DSC02407-scaled-e1787151826828-aspect-ratio-2274-1324-1100x500.jpg",
+      "file": "dist/assets/event-images/jameel-library-september-community-programmes-0b998e3f9f.jpg",
       "events": 1
     },
     {
@@ -490,6 +433,11 @@
       "source_url": "https://hub.misk.org.sa/media/duyhwegb/intagram.svg",
       "file": "dist/assets/event-images/the-innovation-diwan-f02f359761.svg",
       "events": 1
+    },
+    {
+      "source_url": "https://www.ithra.com/application/files/cache/thumbnails/3cbc28db3f6ea2c884c3568c2c846ce0.png",
+      "file": "dist/assets/event-images/doors-all-around-us-arabic-273b0de850.png",
+      "events": 2
     },
     {
       "source_url": "https://api.riyadh.sa/sites/default/files/styles/medium/public/2026-01/GxP8b3NaIAIaKWE.jpeg?itok=4qip45e1",
@@ -542,6 +490,11 @@
       "events": 1
     },
     {
+      "source_url": "https://tc.qcc.org.sa/storage/263/6a96afcb77aa8_%D8%A7%D9%84%D8%AD%D9%88%D9%83%D9%85%D8%A9-%D9%88%D8%A7%D9%84%D9%85%D8%AE%D8%A7%D8%B7%D8%B1.jpg",
+      "file": "dist/assets/event-images/الحوكمة-والمخاطر-والامتثال-d2d9325816.jpg",
+      "events": 1
+    },
+    {
       "source_url": "https://cdn.rfecc.sa/wp-content/uploads/2026/03/12031444/inter-aviation-Arabia-HP-PR-logo.png",
       "file": "dist/assets/event-images/inter-aviation-arabia-ad9ea7f3b0.png",
       "events": 1
@@ -564,6 +517,11 @@
     {
       "source_url": "https://api.riyadh.sa/sites/default/files/styles/medium/public/2025-12/Wood%20Show%20m%20%281%29.png?itok=Pc6kv-K1",
       "file": "dist/assets/event-images/saudi-wood-expo-5d2c61e1bf.png",
+      "events": 1
+    },
+    {
+      "source_url": "https://hayyjameel.org/wp-content/uploads/2026/08/DSC06466-scaled-aspect-ratio-0-0-1100x500.jpg",
+      "file": "dist/assets/event-images/hayy-makers-canvas-making-with-ahmad-sofi-b855b45c7d.jpg",
       "events": 1
     },
     {
@@ -657,6 +615,16 @@
       "events": 1
     },
     {
+      "source_url": "https://www.ithra.com/application/files/cache/thumbnails/773b2064a8a4f850046cb7e641c7b5d8.png",
+      "file": "dist/assets/event-images/surrealism-art-in-saudi-arabia-72d5044be4.png",
+      "events": 1
+    },
+    {
+      "source_url": "https://www.ithra.com/application/files/cache/thumbnails/7128c4e4ca9ecd19e993d1d9dfb54f38.png",
+      "file": "dist/assets/event-images/creative-leadership-and-the-making-of-cultural-products-be4da03d8f.png",
+      "events": 1
+    },
+    {
       "source_url": "https://api.riyadh.sa/sites/default/files/styles/medium/public/2025-12/Cover-Banner.png?itok=KT7YvNG-",
       "file": "dist/assets/event-images/facility-management-conference-exhibition-4d4d574dbb.png",
       "events": 1
@@ -697,6 +665,11 @@
       "events": 1
     },
     {
+      "source_url": "https://hayyjameel.org/wp-content/uploads/2026/08/IMG_5762-aspect-ratio-828-587-828x500.jpeg",
+      "file": "dist/assets/event-images/hayy-makers-jeddah-s-historic-houses-in-paper-with-norah-bahaj-27a41506d2.jpg",
+      "events": 1
+    },
+    {
       "source_url": "https://cdn.tuwaiq.edu.sa/initiatives_admin/images/b2hfxfcc.ekk.webp",
       "file": "dist/assets/event-images/معسكر-التقنيات-الناشئة-والعوالم-الافتراضية-8a64400615.webp",
       "events": 1
@@ -732,6 +705,11 @@
       "events": 1
     },
     {
+      "source_url": "https://www.ithra.com/application/files/cache/thumbnails/c83fa61b8e15ce3d828534eaec80b54c.jpg",
+      "file": "dist/assets/event-images/botanical-manifestations-0c9f5bec87.jpg",
+      "events": 1
+    },
+    {
       "source_url": "https://www.ithra.com/application/files/cache/thumbnails/1f863e71b2332867064fdab8fb85e7f3.jpg",
       "file": "dist/assets/event-images/the-playful-art-of-critical-thinking-0f43287ff4.jpg",
       "events": 1
@@ -754,6 +732,11 @@
     {
       "source_url": "https://scth.scene7.com/is/image/scth/saudi-falcons-auction?wid=1600&hei=900&fit=constrain&fmt=webp",
       "file": "dist/assets/event-images/saudi-falcons-club-auction-00c8106902.webp",
+      "events": 1
+    },
+    {
+      "source_url": "https://www.ithra.com/application/files/cache/thumbnails/674b96300a249dd9d1d3eeb5c1b82245.png",
+      "file": "dist/assets/event-images/family-game-within-five-seconds-7844419450.png",
       "events": 1
     },
     {
@@ -2514,40 +2497,74 @@
   ],
   "rejected_removed": [],
   "missing_removed": [],
-  "skipped_recent_failures": [],
-  "failed": [
-    {
-      "source_url": "https://cdn.rfecc.sa/wp-content/uploads/mec/qr_898ea2449274454e42895b52b18c6f68.png",
-      "events": 1,
-      "reason": "HTTP 403",
-      "failure_kind": "access-denied",
-      "retry_after": "2026-09-02T21:40:37.804Z"
-    },
+  "skipped_recent_failures": [
     {
       "source_url": "https://futureskills.mcit.gov.sa/sites/default/files/styles/medium/public/2026-08/R.jpg?itok=DjAo5gc9",
       "events": 1,
       "reason": "HTTP 404",
       "failure_kind": "not-found",
-      "retry_after": "2026-09-02T21:40:37.804Z"
+      "retry_after": "2026-09-02T21:40:37.804Z",
+      "skipped": true
+    },
+    {
+      "source_url": "https://cdn.rfecc.sa/wp-content/uploads/mec/qr_898ea2449274454e42895b52b18c6f68.png",
+      "events": 1,
+      "reason": "HTTP 403",
+      "failure_kind": "access-denied",
+      "retry_after": "2026-09-02T21:40:37.804Z",
+      "skipped": true
     },
     {
       "source_url": "https://api.riyadh.sa/sites/default/files/styles/medium/public/2026-07/er%20%2859%29.jpg?itok=a33APdGm",
       "events": 1,
       "reason": "not-image text/html; charset=utf-8",
       "failure_kind": "source-returned-html",
-      "retry_after": "2026-09-02T21:40:37.804Z"
+      "retry_after": "2026-09-02T21:40:37.804Z",
+      "skipped": true
     },
     {
       "source_url": "https://s7g10.scene7.com/is/image/rcu/fei2:landscape-16x9?$Responsive$&fit=stretch&fmt=webp&wid=1920",
       "events": 1,
       "reason": "HTTP 403",
       "failure_kind": "access-denied",
-      "retry_after": "2026-09-02T21:40:37.804Z"
+      "retry_after": "2026-09-02T21:40:37.804Z",
+      "skipped": true
     }
   ],
-  "requires_rebuild": true,
-  "rebuild_reasons": [
-    "fetched:16",
-    "new-failures:4"
-  ]
+  "failed": [
+    {
+      "source_url": "https://futureskills.mcit.gov.sa/sites/default/files/styles/medium/public/2026-08/R.jpg?itok=DjAo5gc9",
+      "events": 1,
+      "reason": "HTTP 404",
+      "failure_kind": "not-found",
+      "retry_after": "2026-09-02T21:40:37.804Z",
+      "skipped": true
+    },
+    {
+      "source_url": "https://cdn.rfecc.sa/wp-content/uploads/mec/qr_898ea2449274454e42895b52b18c6f68.png",
+      "events": 1,
+      "reason": "HTTP 403",
+      "failure_kind": "access-denied",
+      "retry_after": "2026-09-02T21:40:37.804Z",
+      "skipped": true
+    },
+    {
+      "source_url": "https://api.riyadh.sa/sites/default/files/styles/medium/public/2026-07/er%20%2859%29.jpg?itok=a33APdGm",
+      "events": 1,
+      "reason": "not-image text/html; charset=utf-8",
+      "failure_kind": "source-returned-html",
+      "retry_after": "2026-09-02T21:40:37.804Z",
+      "skipped": true
+    },
+    {
+      "source_url": "https://s7g10.scene7.com/is/image/rcu/fei2:landscape-16x9?$Responsive$&fit=stretch&fmt=webp&wid=1920",
+      "events": 1,
+      "reason": "HTTP 403",
+      "failure_kind": "access-denied",
+      "retry_after": "2026-09-02T21:40:37.804Z",
+      "skipped": true
+    }
+  ],
+  "requires_rebuild": false,
+  "rebuild_reasons": []
 }
