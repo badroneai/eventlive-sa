@@ -2,6 +2,7 @@ import fs from 'node:fs';
 import path from 'node:path';
 import { assignEventCategory, categoryLabels, normalizeEventCategoryMetadata } from './category-taxonomy.mjs';
 import { isRejectedImageAssetUrl } from './image-asset-utils.mjs';
+import { stripSourceAttribution, withSourceAttribution } from './source-attribution-utils.mjs';
 
 const root = process.cwd();
 const catalogPath = path.join(root, 'data', 'events_catalog.json');
@@ -212,7 +213,7 @@ function findCandidate(event, candidatesByEventId, candidatesByKey) {
 function applyMdlbeastDetails(event, candidate = {}, page = {}) {
   const sourceUrl = cleanText(event.source_url || event.evidence_url || candidate.source_url || candidate.evidence_url || '');
   const title = cleanText(page.title || candidate.title || event.title);
-  const officialDescription = cleanText(page.description || page.seo_description || candidate.summary || event.summary);
+  const officialDescription = stripSourceAttribution(cleanText(page.description || page.seo_description || candidate.summary || event.summary));
   const imageUrl = cleanText(page.image || event.image_url || candidate.image_url || '');
   const startsAt = page.starts_at || event.starts_at || candidate.starts_at;
   const endsAt = page.ends_at || event.ends_at || candidate.ends_at;
@@ -228,7 +229,7 @@ function applyMdlbeastDetails(event, candidate = {}, page = {}) {
   const categoryLabel = categoryLabels(event.category, event)?.ar;
   event.description = officialDescription;
   event.rich_summary = officialDescription;
-  event.summary = `${firstSentence(officialDescription)} المصدر الرسمي: MDLBEAST.`;
+  event.summary = withSourceAttribution(firstSentence(officialDescription), 'MDLBEAST');
   if (page.ticket_url) {
     event.ticket_url = page.ticket_url;
     event.registration_url = page.ticket_url;

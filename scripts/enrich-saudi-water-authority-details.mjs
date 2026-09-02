@@ -1,6 +1,7 @@
 import fs from 'node:fs';
 import path from 'node:path';
 import { assignEventCategory, categoryLabels, normalizeEventCategoryMetadata } from './category-taxonomy.mjs';
+import { stripSourceAttribution, withSourceAttribution } from './source-attribution-utils.mjs';
 
 const root = process.cwd();
 const catalogPath = path.join(root, 'data', 'events_catalog.json');
@@ -156,7 +157,7 @@ function findCandidate(event, candidatesByEventId, candidatesByKey) {
 function applySwaDetails(event, candidate = {}, page = {}) {
   const calendar = page.calendar || {};
   const title = cleanText(page.title || calendar.title || candidate.title || event.title);
-  const officialDescription = cleanText(page.description || calendar.details || candidate.summary || event.summary);
+  const officialDescription = stripSourceAttribution(cleanText(page.description || calendar.details || candidate.summary || event.summary));
   const organizer = cleanText(event.organizer || candidate.organizer || 'Saudi Water Authority');
   const venue = cleanText(calendar.location || event.venue || candidate.venue || event.city || candidate.city);
   const city = cleanText(event.city || candidate.city || venue);
@@ -191,7 +192,7 @@ function applySwaDetails(event, candidate = {}, page = {}) {
   const categoryLabel = categoryLabels(event.category, event)?.ar;
   event.description = officialDescription;
   event.rich_summary = officialDescription;
-  event.summary = `${firstSentence(officialDescription)} المصدر الرسمي: الهيئة السعودية للمياه.`;
+  event.summary = withSourceAttribution(firstSentence(officialDescription), 'الهيئة السعودية للمياه');
   event.image_url = imageUrl;
   event.image_source_url = sourceUrl || event.image_source_url || '';
   event.highlights = compactItems([

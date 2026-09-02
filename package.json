@@ -188,6 +188,7 @@
     "test:future-skills-program-enrichment": "node scripts/future-skills-program-enrichment-regression-test.mjs",
     "test:sfda-workshop-enrichment": "node scripts/sfda-workshop-enrichment-regression-test.mjs",
     "test:misk-program-enrichment": "node scripts/misk-program-enrichment-regression-test.mjs",
+    "test:source-attribution": "node scripts/source-attribution-regression-test.mjs",
     "test:dhahran-expo-enrichment": "node scripts/dhahran-expo-enrichment-regression-test.mjs",
     "test:visit-saudi-enrichment": "node scripts/visit-saudi-enrichment-regression-test.mjs",
     "test:swa-enrichment": "node scripts/saudi-water-authority-enrichment-regression-test.mjs",

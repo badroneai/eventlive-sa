@@ -1,5 +1,6 @@
 import fs from 'node:fs';
 import path from 'node:path';
+import { withSourceAttribution } from './source-attribution-utils.mjs';
 
 const root = process.cwd();
 const catalogPath = path.join(root, 'data', 'events_catalog.json');
@@ -141,7 +142,7 @@ function applyWorkshop(event, details) {
   if (officialDescription) {
     event.description = officialDescription;
     event.rich_summary = officialDescription;
-    event.summary = `${officialDescription}. المصدر الرسمي: الهيئة العامة للغذاء والدواء.`;
+    event.summary = withSourceAttribution(`${officialDescription}.`, 'الهيئة العامة للغذاء والدواء');
   }
   event.program_outline = {
     provider: 'Saudi Food and Drug Authority',

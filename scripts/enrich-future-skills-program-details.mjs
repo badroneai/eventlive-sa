@@ -1,5 +1,6 @@
 import fs from 'node:fs';
 import path from 'node:path';
+import { withSourceAttribution } from './source-attribution-utils.mjs';
 
 const root = process.cwd();
 const catalogPath = path.join(root, 'data', 'events_catalog.json');
@@ -164,7 +165,7 @@ function applyPage(event, html, groupId) {
   if (officialDescription) {
     event.description = officialDescription;
     event.rich_summary = officialDescription;
-    event.summary = `${firstSentence(officialDescription)} المصدر الرسمي: بوابة مهارات المستقبل.`;
+    event.summary = withSourceAttribution(firstSentence(officialDescription), 'بوابة مهارات المستقبل');
   }
   if (durationText) event.highlights = [...new Set([...(event.highlights || []), durationText])];
   if (imageUrl && !/styles\/medium\/public\/2026-07/i.test(imageUrl)) {

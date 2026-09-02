@@ -1,6 +1,7 @@
 import fs from 'node:fs';
 import path from 'node:path';
 import { assignEventCategory, categoryLabels, normalizeEventCategoryMetadata } from './category-taxonomy.mjs';
+import { stripSourceAttribution, withSourceAttribution } from './source-attribution-utils.mjs';
 
 const root = process.cwd();
 const catalogPath = path.join(root, 'data', 'events_catalog.json');
@@ -167,7 +168,7 @@ function applyVisitSaudiDetails(event, candidate = {}, page = {}) {
   assignEventCategory(event);
   const categoryLabel = categoryLabels(event.category, event)?.ar;
   const windowText = durationText(candidate.starts_at ? candidate : event);
-  const officialDescription = cleanText(candidate.summary || event.summary || page.metaDescription || firstSentence(page.bodyText));
+  const officialDescription = stripSourceAttribution(cleanText(candidate.summary || event.summary || page.metaDescription || firstSentence(page.bodyText)));
   const sourceUrl = cleanText(event.source_url || event.evidence_url || candidate.source_url || candidate.evidence_url || '');
   const chosenImage = chooseImage(page.images || [], event);
   const imageUrl = highResScene7(candidate.image_url || event.image_url || chosenImage);
@@ -182,7 +183,7 @@ function applyVisitSaudiDetails(event, candidate = {}, page = {}) {
 
   event.description = officialDescription || event.description || '';
   event.rich_summary = officialDescription || event.rich_summary || '';
-  if (officialDescription) event.summary = `${firstSentence(officialDescription)} المصدر الرسمي: Visit Saudi.`;
+  if (officialDescription) event.summary = withSourceAttribution(firstSentence(officialDescription), 'Visit Saudi');
   event.highlights = compactItems([
     ...(Array.isArray(event.highlights) ? event.highlights : []),
     `الموعد الرسمي: ${windowText}`,
