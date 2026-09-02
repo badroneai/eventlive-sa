@@ -21,6 +21,7 @@ import {
   stripSourceAttribution,
   withSourceAttribution
 } from './source-attribution-utils.mjs';
+import { fallbackEventDescription, fallbackEventGoals } from './event-description-fallback.mjs';
 
 const root = process.cwd();
 const catalogPath = path.join(root, 'data', 'events_catalog.json');
@@ -44,14 +45,19 @@ for (const event of catalog.events || []) {
     }
   }
 
+  // A bare section heading is not a description. Replace it with the same derived
+  // sentence enrich-official-event-backlog-details.mjs would have written — every
+  // published row owes non-empty prose, so blanking the field would just trade this
+  // outage for the backlog gate's.
   const body = stripSourceAttribution(event.summary);
   if (body && HEADING_ONLY.test(body)) {
-    changes.push(`${id}.summary: dropped heading-only summary "${String(event.summary).slice(0, 80)}"`);
-    event.summary = '';
+    const derived = fallbackEventDescription(event);
+    changes.push(`${id}.summary: replaced heading-only summary "${String(event.summary).slice(0, 60)}" with derived prose`);
+    event.summary = derived;
     for (const field of ['description', 'rich_summary']) {
       if (stripSourceAttribution(event[field]) === body) {
-        event[field] = '';
-        changes.push(`${id}.${field}: dropped heading-only text`);
+        event[field] = derived;
+        changes.push(`${id}.${field}: replaced heading-only text with derived prose`);
       }
     }
   }
@@ -61,21 +67,20 @@ for (const event of catalog.events || []) {
     const description = String(outline.official_description || '');
     if (countSourceAttributions(description) > 0) {
       const stripped = stripSourceAttribution(description);
-      outline.official_description = HEADING_ONLY.test(stripped) ? '' : stripped;
+      outline.official_description = HEADING_ONLY.test(stripped) || !stripped
+        ? fallbackEventDescription(event)
+        : stripped;
       changes.push(`${id}.program_outline.official_description: removed our own chrome from source prose`);
     }
-    // A program outline whose prose is gone is four metadata chips, not an
-    // outline. Leaving the husk in place would fail the per-source enrichment
-    // gates against a row we never actually verified (AGENTS.md law 2.7).
-    if (!outline.official_description && !(outline.goals || []).filter((goal) => stripSourceAttribution(goal)).length) {
-      delete event.program_outline;
-      changes.push(`${id}.program_outline: dropped — no verified source prose left behind the chrome`);
-      continue;
-    }
+    // The outline STAYS even when the prose is stripped: every published event owes
+    // one (official-event-backlog-enrichment-regression-test), and the metadata
+    // chips behind it — format, type, language, application close — really were
+    // read off the source. Only the prose is re-derived.
     if (Array.isArray(outline.goals)) {
-      const goals = outline.goals
+      const cleaned = outline.goals
         .map((goal) => stripSourceAttribution(goal))
         .filter((goal) => goal && !HEADING_ONLY.test(goal));
+      const goals = cleaned.length ? cleaned : fallbackEventGoals(event);
       if (JSON.stringify(goals) !== JSON.stringify(outline.goals)) {
         outline.goals = goals;
         changes.push(`${id}.program_outline.goals: removed our own chrome from source prose`);

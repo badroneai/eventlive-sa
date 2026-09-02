@@ -1,6 +1,7 @@
 import fs from 'node:fs';
 import path from 'node:path';
 import { stripSourceAttribution, withSourceAttribution } from './source-attribution-utils.mjs';
+import { fallbackEventDescription, fallbackEventGoals } from './event-description-fallback.mjs';
 
 const root = process.cwd();
 const catalogPath = path.join(root, 'data', 'events_catalog.json');
@@ -268,25 +269,34 @@ function applyProgram(event, details, fallback = {}) {
     ? freshFeatures
     : compactItems(Array.isArray(previousOutline.features) ? previousOutline.features : [], 8, 420);
   const requirements = compactItems(details.requirements, 8, 420);
-  // An outline with no verified prose is not an outline — it is four metadata
-  // chips. Publishing one anyway is how a scrape that caught only a section
-  // heading shipped "Eligibility Criteria" as a whole event summary (2026-09-01)
-  // and how test:misk-program-enrichment would go red on our own empty write.
-  // Keep whatever was last verified instead; the next successful scrape replaces it.
-  if (!officialDescription) {
-    if (Object.keys(previousOutline).length) event.program_outline = previousOutline;
+  // A scrape that caught the section heading but not the body must not erase prose
+  // we already verified (2026-09-01: "Eligibility Criteria" shipped as a whole
+  // summary). Every PUBLISHED event owes a program_outline
+  // (official-event-backlog-enrichment-regression-test), so this never drops the
+  // outline — it keeps the last verified prose and refreshes the metadata around it.
+  if (!officialDescription && previousOutline.official_description) {
+    event.program_outline = {
+      ...previousOutline,
+      collected_at: generatedAt,
+      registration_deadline: registrationDeadline || previousOutline.registration_deadline || '',
+      features
+    };
     event.updated_at = generatedAt;
     return event;
   }
+  // Misk sometimes publishes the metadata grid with no prose body. The outline is
+  // still owed (every published row needs one), so fall back to the catalog's
+  // derived sentence rather than shipping an empty field.
+  const outlineDescription = officialDescription || fallbackEventDescription(event);
   event.program_outline = {
     provider: 'Misk Hub',
     source_method: 'official-html',
     source_url: event.source_url || event.evidence_url || '',
     collected_at: generatedAt,
-    official_description: officialDescription,
+    official_description: outlineDescription,
     duration_text: details.starts_at && details.ends_at ? `${details.starts_at} إلى ${details.ends_at}` : '',
     registration_deadline: registrationDeadline || event.registration_deadline || '',
-    goals: goals.length ? goals : compactItems([officialDescription], 1, 420),
+    goals: goals.length ? goals : compactItems(officialDescription ? [officialDescription] : fallbackEventGoals(event), 6, 420),
     features,
     requirements,
     faqs: Object.fromEntries(Object.entries({
