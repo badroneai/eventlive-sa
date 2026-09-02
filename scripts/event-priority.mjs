@@ -83,6 +83,13 @@ export function isLiveMoment(event = {}, now = Date.now()) {
   const { start, end } = eventWindow(event);
   if (start === null) return false;
   const effectiveEnd = end === null ? start : end;
+  // NOTE: membership, not entitlement. This answers "is the event inside its
+  // window", which is what the board and the today section select on. Whether we
+  // may then SAY "مباشر الآن" about it is a separate question, answered by
+  // canClaimLiveNow() — a multi-day window cannot know the hour, so it stays on
+  // the board (it really is running these days) but is labelled honestly rather
+  // than removed. Removing it emptied the board entirely: on 2026-09-02 all 15
+  // cards were multi-day.
   return start <= now && effectiveEnd >= now;
 }
 

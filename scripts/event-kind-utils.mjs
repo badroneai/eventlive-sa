@@ -22,6 +22,36 @@ export function eventKindLabel(kind) {
   return kind === 'program' ? 'برنامج ممتد' : 'فعالية';
 }
 
+// A "مباشرة الآن" claim asserts something about THIS HOUR. That is only knowable
+// when the whole window is short enough that "started and not ended" implies
+// "open right now". A multi-day event is stored as ONE unbroken interval — there
+// is no daily band in the schema — so `start <= now <= end` is just as true at
+// 03:00 as at 15:00.
+//
+// Incident 2026-09-02 (owner report): leap-2026 is stored 2026-08-31T11:00 →
+// 2026-09-03T21:00, an 82-hour span, and its daily programme ends at 21:00. At
+// 23:00 on day two the site said "مباشرة الآن" for an event that had closed two
+// hours earlier. Every one of the 15 cards on the live board that night was a
+// multi-day window, so this was not an edge case — it was the whole board.
+//
+// The existing `program` kind already encoded this idea, but its threshold is 14
+// DAYS (PROGRAM_WINDOW_DAYS), so a three-day conference sailed through as a
+// "moment" and claimed the hour. 24 hours is the honest line: past it we know the
+// event is within its dates and we do NOT know it is open now, so the label says
+// exactly that.
+export const LIVE_CLAIM_MAX_WINDOW_HOURS = 24;
+const LIVE_CLAIM_MAX_WINDOW_MS = LIVE_CLAIM_MAX_WINDOW_HOURS * 60 * 60 * 1000;
+
+/**
+ * True when the window is short enough that "inside it" means "happening now".
+ * Kept as its own export so the client-side clock in generate-site.mjs and any
+ * future surface assert the SAME line instead of re-deriving it.
+ */
+export function canClaimLiveNow(startMs, endMs) {
+  if (!Number.isFinite(startMs) || !Number.isFinite(endMs)) return false;
+  return endMs - startMs <= LIVE_CLAIM_MAX_WINDOW_MS;
+}
+
 export function getEventStatus(startsAt, endsAt, now = Date.now(), kind = 'moment') {
   const start = new Date(startsAt).getTime();
   const end = new Date(endsAt).getTime();
@@ -31,6 +61,8 @@ export function getEventStatus(startsAt, endsAt, now = Date.now(), kind = 'momen
   if (now < start) return { key: 'upcoming', label: 'قادمة' };
   if (now >= start && now <= end) {
     if (kind === 'program') return { key: 'ongoing', label: 'برنامج جارٍ' };
+    // Within its dates, but the hour is not ours to assert.
+    if (!canClaimLiveNow(start, end)) return { key: 'ongoing', label: 'مستمرة هذه الأيام' };
     return { key: 'live', label: 'مباشرة الآن' };
   }
   return { key: 'ended', label: 'منتهية' };
