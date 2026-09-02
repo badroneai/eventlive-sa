@@ -212,6 +212,11 @@ jobs:
           npm run test:public-assets
           npm run test:owner-surface-isolation
           npm run test:first-glance-trust
+          # 2026-09-02: 23 public pages (the highest-intent SEO landing set) shipped
+          # data-runtime-status hooks with no script to drive them — chips that looked
+          # wired and were frozen at build time forever. Hooks without a driver is now
+          # a banned class on every page. Reads dist/ only, <1s.
+          npm run test:live-runtime-coverage
           npm run test:mobile-browsing
           npm run test:i18n-contract
           npm run test:i18n-site

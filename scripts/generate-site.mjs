@@ -5652,6 +5652,7 @@ ${header('./')}
   <section class="section"><div class="wrap"><article class="readiness"><h2>روابط متابعة مفيدة</h2><div class="activation-actions"><a class="cta" href="./today.html">انتقل للمنصة الحية</a>${page.related.map(([label, href]) => `<a class="cta" href="${escapeHtml(href)}">${escapeHtml(label)}</a>`).join('')}</div></article></div></section>
 </main>
 ${footer('./')}
+${liveRuntimeScript()}
 </body>
 </html>`;
     writeText(path.join(distDir, page.file), html);
