@@ -3,6 +3,7 @@ import fs from 'node:fs';
 import path from 'node:path';
 import { exists, readJson, root, writeJson } from './program-lifecycle-utils.mjs';
 import { representativeEventPath } from './audit-page-utils.mjs';
+import { ANALYTICS, TRACKED_EVENTS, analyticsDashboardStatus } from './analytics-config.mjs';
 
 const reportsDir = path.join(root, 'reports');
 const generatedAt = new Date().toISOString();
@@ -385,29 +386,17 @@ function buildHarvestStatus(state) {
 }
 
 function buildAnalyticsStatus() {
-  const provider = process.env.EVENTLIVE_ANALYTICS_PROVIDER || 'umami';
-  const domain = process.env.EVENTLIVE_ANALYTICS_DOMAIN || 'eventme.live';
-  const dashboardUrl = process.env.EVENTLIVE_ANALYTICS_DASHBOARD_URL || 'https://umami-ten-orpin.vercel.app';
-  const dashboardConfirmed = process.env.EVENTLIVE_ANALYTICS_CONFIRMED === 'true';
-  const dashboardStatus = dashboardConfirmed ? 'CONFIRMED' : 'NEEDS_PROVIDER_SETUP';
-  const dashboardLoginUrl = 'https://umami-ten-orpin.vercel.app/login';
-  const trackedEvents = [
-    'page_view',
-    'search_used',
-    'event_opened',
-    'city_filter_used',
-    'category_filter_used',
-    'audience_filter_used',
-    'calendar_downloaded',
-    'directions_clicked',
-    'source_clicked',
-    'live_screen_opened',
-    'saved_event',
-    'share_clicked',
-    'organizer_cta_clicked',
-    'this_week_opened',
-    'today_opened'
-  ];
+  // Provider identity comes from scripts/analytics-config.mjs — the same module
+  // that writes the <script> tag into every public page. It used to be a second
+  // copy of these defaults here, which is how the committed report kept saying
+  // "plausible" months after the 2026-08-06 switch to Umami.
+  const provider = ANALYTICS.provider;
+  const domain = ANALYTICS.domain;
+  const dashboardUrl = ANALYTICS.dashboardUrl;
+  const dashboardConfirmed = ANALYTICS.confirmed;
+  const dashboardStatus = analyticsDashboardStatus();
+  const dashboardLoginUrl = ANALYTICS.dashboardLoginUrl;
+  const trackedEvents = TRACKED_EVENTS;
   const ownerExcluded = ['sources.html', 'methodology.html', 'trust.html', 'events.json', 'source-health.html', 'candidates.html', 'resolver.html', 'owner-status.html', 'owner-status.json'];
   const report = {
     schema: 'eventlive.analytics-status.v1',

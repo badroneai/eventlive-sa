@@ -51,7 +51,12 @@ assert(analytics.privacy?.pii === false, 'analytics must not collect PII');
 assert(analytics.owner_excluded_paths?.includes('events.json'), 'owner/raw JSON exclusion missing');
 assert(analytics.tracked_events?.includes('directions_clicked'), 'directions event missing');
 assert(analytics.instrumentation_status === 'PASS', 'analytics instrumentation status missing');
-assert(['CONFIRMED', 'NEEDS_PROVIDER_SETUP'].includes(analytics.dashboard_status), 'analytics dashboard status missing');
+// Vocabulary corrected 2026-09-03. "NEEDS_PROVIDER_SETUP" told the owner the
+// provider was not set up — while Umami was installed, domain-locked and
+// collecting normally. The only thing missing was the owner signing in to READ
+// the numbers, which is what NEEDS_OWNER_LOGIN says. Still a closed set: an
+// empty or invented status must fail.
+assert(['ACTIVE', 'NEEDS_OWNER_LOGIN'].includes(analytics.dashboard_status), `analytics dashboard status must be ACTIVE or NEEDS_OWNER_LOGIN, got "${analytics.dashboard_status}"`);
 assert(typeof analytics.dashboard_setup_required === 'boolean', 'analytics dashboard setup flag missing');
 assert(/404/.test(analyticsMd), 'analytics owner note must explain Plausible 404');
 

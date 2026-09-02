@@ -22,17 +22,18 @@ import { normalizeSaudiCity } from './city-utils.mjs';
 import { CITY_NAME_REGISTRY, cityNameBySlug } from './city-name-registry.mjs';
 import { cityPlacesBySlug, loadCityPlacesFile } from './city-places-data.mjs';
 import { renderCityPlacesJsonLd, renderCityPlacesSection } from './city-places-render.mjs';
-import { LEGACY_CATEGORY_REDIRECTS, LEGACY_REDIRECT_PAGES } from './legacy-redirect-pages.mjs';
+import { LEGACY_CATEGORY_REDIRECTS, LEGACY_REDIRECT_PAGES, LEGACY_TOP_LEVEL_REDIRECTS } from './legacy-redirect-pages.mjs';
 import { createContentTranslator } from './content-translation-cache.mjs';
 import { ARABIC_DAYS_LABEL_JS, DURATION_LABEL_RUNTIME_JS } from './duration-label.mjs';
 import { eventDateRangeLabel, isMultiDayEvent } from './event-date-range.mjs';
 import { canonicalEventSlug, EVENT_ALIAS_PAGES } from './event-canonical-aliases.mjs';
 import { loadUrlLedger, reconcileUrlLedger, saveUrlLedger } from './published-url-ledger.mjs';
 import { buildTitleQualifiers, eventQualifierKey, withTitleQualifier } from './event-title-qualifier.mjs';
-import { canClaimLiveNow, classifyEventKind, eventKindLabel, getEventStatus, LIVE_CLAIM_MAX_WINDOW_HOURS } from './event-kind-utils.mjs';
+import { canClaimLiveNow, canClaimLiveNowFor, classifyEventKind, eventKindLabel, getEventStatus, LIVE_CLAIM_MAX_WINDOW_HOURS } from './event-kind-utils.mjs';
 import { decodeHtmlEntities } from './html-entities.mjs';
 import { compareAttendancePriority, isLiveMoment } from './event-priority.mjs';
 import { homeBoardLiveSection } from './home-board-live.mjs';
+import { ANALYTICS, TRACKED_EVENTS, analyticsDashboardStatus } from './analytics-config.mjs';
 import { homeCalendarStrip, remainingMonthDays, riyadhMonthEndExclusive } from './home-month-calendar.mjs';
 import {
   eventAccessIsFree,
@@ -1386,8 +1387,8 @@ function analyticsHeadSnippet() {
   // "visitor" — phantom Chicago/San Jose sessions appeared in the dashboard
   // within minutes of the first PR build. Local previews are excluded the
   // same way.
-  return `<!-- Privacy-friendly analytics by self-hosted Umami -->
-<script defer src="https://umami-ten-orpin.vercel.app/script.js" data-website-id="f68b920a-155f-4134-a7b1-88bbede979df" data-domains="eventme.live"></script>`;
+  return `<!-- Privacy-friendly analytics by self-hosted ${ANALYTICS.provider} -->
+<script defer src="${ANALYTICS.scriptUrl}" data-website-id="${ANALYTICS.websiteId}" data-domains="${ANALYTICS.domain}"></script>`;
 }
 
 function analyticsRuntimeScript() {
@@ -2958,6 +2959,42 @@ function writeLegacyCategoryRedirectPages(events) {
   }
 }
 
+// A dist-root page retired in favour of a live equivalent that already covers
+// the same search intent — same stub shape as writeLegacyCategoryRedirectPages
+// above (meta-refresh for the visitor, canonical for the crawler, out of the
+// sitemap via LEGACY_REDIRECT_PAGES), for pages living at dist/<slug>.html
+// instead of dist/categories/<slug>.html. First case, 2026-09-02: weekend.html
+// was a committed static file no generator wrote (see
+// scripts/legacy-redirect-pages.mjs's LEGACY_TOP_LEVEL_REDIRECTS comment for
+// the full history). Runs unconditionally on every build — including
+// incremental ones — the same as writeLegacyCategoryRedirectPages, so the
+// stub can never drift back into a frozen artifact.
+function writeLegacyTopLevelRedirectPages() {
+  for (const [staleFile, currentFile] of LEGACY_TOP_LEVEL_REDIRECTS) {
+    const targetPath = path.join(distDir, currentFile);
+    // Never emit a stub pointing at a page this build did not produce.
+    if (!fs.existsSync(targetPath)) continue;
+    const targetHref = `./${currentFile}`;
+    const canonical = `${siteUrl}/${currentFile}`;
+    const html = `<!doctype html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="utf-8" />
+<meta http-equiv="refresh" content="0; url=${escapeHtml(targetHref)}" />
+<link rel="manifest" href="./manifest.webmanifest">
+<link rel="canonical" href="${escapeHtml(canonical)}" />
+<title>هذه الصفحة انتقلت — ${platformName}</title>
+<meta name="description" content="${escapeHtml(`انتقل محتوى هذه الصفحة إلى نسختها الحية المحدثة باستمرار على ${platformName}.`)}" />
+</head>
+<body>
+<p>انتقلت هذه الصفحة إلى <a href="${escapeHtml(targetHref)}">نسختها الحالية</a>.</p>
+</body>
+</html>
+`;
+    writeText(path.join(distDir, staleFile), html);
+  }
+}
+
 // An event page whose slug changed while the event itself stayed published (see
 // scripts/published-url-ledger.mjs). Same stub shape as the category redirects
 // above: meta-refresh for the visitor, canonical for the crawler, out of the
@@ -3427,7 +3464,12 @@ function reconcileStaleEventRefs(events) {
 }
 
 function removeDeadEventLinks() {
-  const legacyPages = ['index.html', 'weekend.html'];
+  // weekend.html used to live here too, but it is now a redirect stub
+  // (writeLegacyTopLevelRedirectPages(), see scripts/legacy-redirect-pages.mjs)
+  // rewritten from scratch every build — it never carries stale event links to
+  // strip, and stripping it here would be wasted work overwritten seconds
+  // later anyway.
+  const legacyPages = ['index.html'];
   const targetExists = (slug, ext) => fs.existsSync(path.join(distDir, 'events', `${slug}.${ext}`));
   let removed = 0;
   for (const page of legacyPages) {
@@ -4307,17 +4349,23 @@ function writeOwnerStatusPage(events, seoDiscovery = {}) {
     platform: platformName,
     domain: platformDomain,
     intent: 'eventlive-owner-status',
+    // Provider identity comes from scripts/analytics-config.mjs, the same module
+    // that writes the <script> tag into every public page — NOT from the
+    // committed reports/analytics-status.json, which froze on 2026-07-10 saying
+    // "plausible" and sent the owner to a dashboard that 404s while Umami was
+    // collecting normally. Only genuinely observed fields still come from the
+    // report (GATES-GOVERNANCE.md §7).
     analytics: {
-      provider: analytics.provider || 'umami',
-      domain: analytics.domain || platformDomain,
+      provider: ANALYTICS.provider,
+      domain: ANALYTICS.domain,
       status: analytics.status || 'INSTRUMENTED',
       instrumentation_status: analytics.instrumentation_status || analytics.status || 'INSTRUMENTED',
-      dashboard_url: analytics.dashboard_url || 'https://umami-ten-orpin.vercel.app',
-      dashboard_login_url: analytics.dashboard_login_url || 'https://umami-ten-orpin.vercel.app/login',
-      dashboard_status: analytics.dashboard_status || 'NEEDS_PROVIDER_SETUP',
-      dashboard_setup_required: analytics.dashboard_setup_required !== false,
-      dashboard_note: analytics.dashboard_note || 'لوحة Umami ذاتية الاستضافة على Vercel المالك — سجّل الدخول بحساب المالك لعرضها.',
-      tracked_events: analytics.tracked_events || [],
+      dashboard_url: ANALYTICS.dashboardUrl,
+      dashboard_login_url: ANALYTICS.dashboardLoginUrl,
+      dashboard_status: analyticsDashboardStatus(),
+      dashboard_setup_required: !ANALYTICS.confirmed,
+      dashboard_note: `لوحة ${ANALYTICS.provider === 'umami' ? 'Umami ذاتية الاستضافة' : ANALYTICS.provider} — سجّل الدخول بحساب المالك لعرض أرقام الزوار.`,
+      tracked_events: TRACKED_EVENTS,
       privacy: analytics.privacy || { cookies: false, pii: false },
       note: 'هذه الصفحة تثبت أن التتبع مزروع في الصفحات العامة. أرقام الزوار الحقيقية تظهر بعد تفعيل لوحة مزود التحليلات للدومين.'
     },
@@ -6762,9 +6810,16 @@ function patchHomePage(events) {
     url: compactEventUrl(event),
     startsAt: event.starts_at || '',
     endsAt: event.ends_at || event.starts_at || '',
-    // Earns the hour only when the window is short enough to imply it.
-    liveNow: canClaimLiveNow(new Date(event.starts_at).getTime(), new Date(event.ends_at || event.starts_at).getTime())
-  }));
+    // Earns the hour only with BOTH a short window and a clock the source
+    // published — a fabricated 09:00–18:00 default is short but says nothing
+    // about the hour.
+    liveNow: canClaimLiveNowFor(event)
+  }))
+    // Entitled cards lead. The headline names the strongest TRUE claim about the
+    // set ("مباشر الآن · فعالية واحدة"), so the first card the visitor sees must
+    // be one the claim actually covers — otherwise the count reads as the board
+    // size and the headline looks wrong even though it is right.
+    .sort((a, b) => Number(b.liveNow) - Number(a.liveNow));
   let next = html
     .replace(/<script type="application\/ld\+json">[\s\S]*?<\/script>/, `<script type="application/ld+json">${JSON.stringify(itemList)}</script>`)
     .replace(/تصفح\s+\d+\s+فعالية/g, `تصفح ${events.length} فعالية`)
@@ -8123,6 +8178,10 @@ const deadEventLinksRemoved = incrementalBuild ? 0 : removeDeadEventLinks();
 externalizeTodayAttendancePage();
 const searchIntentPages = writeSearchIntentPages(events);
 const guidesIntentPatched = patchGuidesHubWithSearchIntentPages(searchIntentPages);
+// After writeSearchIntentPages(): a top-level redirect target (e.g.
+// saudi-events-weekend.html) must already exist on disk before its stub can
+// point at it.
+writeLegacyTopLevelRedirectPages();
 writeBrandIcon();
 writeServiceWorker();
 removeForbiddenArtifacts();

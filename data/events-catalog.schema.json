@@ -76,6 +76,11 @@
           "raw_category": { "type": "string", "minLength": 1 },
           "summary": { "type": "string" },
           "rich_summary": { "type": "string" },
+          "time_precision": {
+            "description": "How much of this event's clock came from the source. 'exact' and 'official-session-times' mean the source published the times; 'exact-start-estimated-end', 'date-only', 'date-only-defaulted' mean at least one end was written by a collector default; 'unknown' means we looked and could not tell. Required on published rows — a missing value means the publish path dropped the collectors' verdict, which is how the catalog once carried it on 0 of 866 events.",
+            "enum": ["exact", "official-session-times", "exact-start-estimated-end", "date-only", "date-only-defaulted", "day-range", "unknown"]
+          },
+          "date_precision": { "type": "string" },
           "description": { "type": "string" },
           "program_outline": {
             "type": "object",

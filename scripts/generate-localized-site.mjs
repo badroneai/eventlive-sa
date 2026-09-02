@@ -10,7 +10,7 @@ import { PLACE_CATEGORIES } from './place-category-taxonomy.mjs';
 import { CITY_NAME_REGISTRY } from './city-name-registry.mjs';
 import { loadContentTranslations, normalizeContentText } from './content-translation-cache.mjs';
 import { OWNER_ONLY_PAGES } from './owner-only-pages.mjs';
-import { LEGACY_REDIRECT_PAGES, legacyRedirectTarget } from './legacy-redirect-pages.mjs';
+import { LEGACY_REDIRECT_PAGES, LEGACY_TOP_LEVEL_REDIRECT_LABELS_EN, legacyRedirectTarget } from './legacy-redirect-pages.mjs';
 import { buildTitleQualifiers, eventQualifierKey, withTitleQualifier } from './event-title-qualifier.mjs';
 import { englishSeoDescription, englishSeoTitle, withEnglishBrand } from './en-seo-descriptions.mjs';
 import { canonicalEventPage, EVENT_ALIAS_PAGES } from './event-canonical-aliases.mjs';
@@ -1332,12 +1332,22 @@ function englishRedirectStubMeta(relativePath) {
   }
   const target = legacyRedirectTarget(normalized);
   const match = target.match(/^categories\/(.+)\.html$/u);
-  if (!match) return null;
-  const category = categoryDefinitionByKey(match[1]);
-  if (!category?.label_en) return null;
+  if (match) {
+    const category = categoryDefinitionByKey(match[1]);
+    if (!category?.label_en) return null;
+    return {
+      title: `${category.label_en} — EventLive Saudi Arabia`,
+      description: `This category was merged into ${category.label_en} on EventLive. Follow the current page for ${category.label_en} events across Saudi Arabia.`
+    };
+  }
+  // A dist-root redirect stub (LEGACY_TOP_LEVEL_REDIRECTS): same reasoning —
+  // the Arabic stub's body text has no dictionary entry, so author the EN
+  // <title>/<meta> directly instead of leaving the translator's fallback.
+  const label = LEGACY_TOP_LEVEL_REDIRECT_LABELS_EN.get(normalized);
+  if (!label) return null;
   return {
-    title: `${category.label_en} — EventLive Saudi Arabia`,
-    description: `This category was merged into ${category.label_en} on EventLive. Follow the current page for ${category.label_en} events across Saudi Arabia.`
+    title: `${label} — EventLive Saudi Arabia`,
+    description: `This page now lives at its live, continuously updated version on EventLive Saudi Arabia.`
   };
 }
 
