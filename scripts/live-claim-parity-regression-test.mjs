@@ -14,8 +14,11 @@ import fs from 'node:fs';
 import path from 'node:path';
 import {
   LIVE_CLAIM_MAX_WINDOW_HOURS,
+  SOURCED_TIME_PRECISION,
   canClaimLiveNow,
-  getEventStatus
+  canClaimLiveNowFor,
+  getEventStatus,
+  hasSourcedClock
 } from './event-kind-utils.mjs';
 
 const root = process.cwd();
@@ -60,6 +63,36 @@ assert.ok(
   'the multi-day guard must be checked BEFORE the live claim, or it never fires'
 );
 
+// ---------- 2b. a short window is necessary, never sufficient ----------
+// 36% of the published events short enough to claim the hour carried a literal
+// machine-written window (52 rows at exactly 09:00→18:00, 22 at 00:00→23:59).
+// They passed the duration test and asserted an hour no source ever published.
+const fabricated = { starts_at: '2026-09-02T09:00:00+03:00', ends_at: '2026-09-02T18:00:00+03:00', time_precision: 'date-only-defaulted' };
+const estimated = { starts_at: '2026-09-02T19:00:00+03:00', ends_at: '2026-09-02T21:00:00+03:00', time_precision: 'exact-start-estimated-end' };
+const sourced = { starts_at: '2026-09-02T19:00:00+03:00', ends_at: '2026-09-02T22:00:00+03:00', time_precision: 'exact' };
+const sessioned = { ...sourced, time_precision: 'official-session-times' };
+const unlabelled = { starts_at: '2026-09-02T19:00:00+03:00', ends_at: '2026-09-02T22:00:00+03:00' };
+assert.equal(canClaimLiveNowFor(fabricated), false, 'a fabricated 09:00-18:00 window must never claim the hour');
+assert.equal(canClaimLiveNowFor(estimated), false, 'an estimated end time must never claim the hour');
+assert.equal(canClaimLiveNowFor(sourced), true, 'a sourced clock in a short window earns the hour');
+assert.equal(canClaimLiveNowFor(sessioned), true, 'official session times earn the hour');
+assert.equal(canClaimLiveNowFor(unlabelled), false, 'a row with no precision verdict must not be trusted with the hour');
+assert.equal(hasSourcedClock({ time_precision: 'unknown' }), false, '"unknown" means we looked and could not tell — not trustworthy');
+assert.deepEqual([...SOURCED_TIME_PRECISION].sort(), ['exact', 'official-session-times'], 'the trusted set is a stated policy');
+
+// Every published row must carry a verdict at all: absent means the publish path
+// dropped it again, which is precisely how the catalog ended up with the field on
+// 0 of 866 rows while the collectors were computing it all along.
+const catalogRows = JSON.parse(fs.readFileSync(path.join(root, 'data', 'events_catalog.json'), 'utf8')).events || [];
+const missingVerdict = catalogRows
+  .filter((event) => event.approval_status === 'published' && !event.time_precision)
+  .map((event) => event.slug || event.id);
+assert.deepEqual(
+  missingVerdict.slice(0, 20),
+  [],
+  `${missingVerdict.length} published events carry no time_precision — the publish path is dropping the collectors' verdict again`
+);
+
 // ---------- 3. the corpus ----------
 // Nothing published may be labelled live while its window is longer than the
 // claim allows. This is what fails when a future source starts emitting
@@ -82,9 +115,10 @@ for (const event of events) {
 }
 assert.deepEqual(offenders, [], `these published events would claim "مباشرة الآن" on a window too long to know the hour:\n${offenders.join('\n')}`);
 
+const entitled = events.filter((event) => event.approval_status === 'published' && canClaimLiveNowFor(event)).length;
 const multiDay = events.filter((event) => {
   const start = new Date(event.starts_at).getTime();
   const end = new Date(event.ends_at || event.starts_at).getTime();
   return Number.isFinite(start) && Number.isFinite(end) && !canClaimLiveNow(start, end);
 }).length;
-console.log(`LIVE_CLAIM_PARITY_OK window_hours=${LIVE_CLAIM_MAX_WINDOW_HOURS} events=${events.length} multi_day_protected=${multiDay} false_claims=0`);
+console.log(`LIVE_CLAIM_PARITY_OK window_hours=${LIVE_CLAIM_MAX_WINDOW_HOURS} events=${events.length} multi_day_protected=${multiDay} entitled_to_the_hour=${entitled} false_claims=0`);

@@ -43,13 +43,45 @@ export const LIVE_CLAIM_MAX_WINDOW_HOURS = 24;
 const LIVE_CLAIM_MAX_WINDOW_MS = LIVE_CLAIM_MAX_WINDOW_HOURS * 60 * 60 * 1000;
 
 /**
+ * The precision verdicts under which the clock on an event came from the source
+ * rather than from us. Everything else — 'exact-start-estimated-end',
+ * 'date-only', 'date-only-defaulted', 'unknown', or a missing field — means at
+ * least one end of the window was invented by a collector default.
+ *
+ * Measured 2026-09-02: 36% of the published events whose window is short enough
+ * to claim the hour carry a literal machine-written window (52 rows at exactly
+ * 09:00→18:00, 22 at 00:00→23:59). Those passed the duration test and asserted
+ * an hour no source ever published. A short window is necessary for the claim;
+ * it was never sufficient.
+ */
+export const SOURCED_TIME_PRECISION = new Set(['exact', 'official-session-times']);
+
+export function hasSourcedClock(event = {}) {
+  return SOURCED_TIME_PRECISION.has(String(event?.time_precision || ''));
+}
+
+/**
  * True when the window is short enough that "inside it" means "happening now".
  * Kept as its own export so the client-side clock in generate-site.mjs and any
  * future surface assert the SAME line instead of re-deriving it.
+ *
+ * Duration only — the caller decides whether it also needs a sourced clock, so
+ * that surfaces which merely SELECT events (membership) can keep using the cheap
+ * test while surfaces that make a CLAIM about the hour use canClaimLiveNowFor().
  */
 export function canClaimLiveNow(startMs, endMs) {
   if (!Number.isFinite(startMs) || !Number.isFinite(endMs)) return false;
   return endMs - startMs <= LIVE_CLAIM_MAX_WINDOW_MS;
+}
+
+/**
+ * The full entitlement: a short window AND a clock the source actually published.
+ * This is what any "مباشر الآن" claim must pass.
+ */
+export function canClaimLiveNowFor(event = {}) {
+  const start = new Date(event?.starts_at || '').getTime();
+  const end = new Date(event?.ends_at || event?.starts_at || '').getTime();
+  return canClaimLiveNow(start, end) && hasSourcedClock(event);
 }
 
 export function getEventStatus(startsAt, endsAt, now = Date.now(), kind = 'moment') {

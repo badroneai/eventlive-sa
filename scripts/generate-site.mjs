@@ -29,7 +29,7 @@ import { eventDateRangeLabel, isMultiDayEvent } from './event-date-range.mjs';
 import { canonicalEventSlug, EVENT_ALIAS_PAGES } from './event-canonical-aliases.mjs';
 import { loadUrlLedger, reconcileUrlLedger, saveUrlLedger } from './published-url-ledger.mjs';
 import { buildTitleQualifiers, eventQualifierKey, withTitleQualifier } from './event-title-qualifier.mjs';
-import { canClaimLiveNow, classifyEventKind, eventKindLabel, getEventStatus, LIVE_CLAIM_MAX_WINDOW_HOURS } from './event-kind-utils.mjs';
+import { canClaimLiveNow, canClaimLiveNowFor, classifyEventKind, eventKindLabel, getEventStatus, LIVE_CLAIM_MAX_WINDOW_HOURS } from './event-kind-utils.mjs';
 import { decodeHtmlEntities } from './html-entities.mjs';
 import { compareAttendancePriority, isLiveMoment } from './event-priority.mjs';
 import { homeBoardLiveSection } from './home-board-live.mjs';
@@ -6735,9 +6735,16 @@ function patchHomePage(events) {
     url: compactEventUrl(event),
     startsAt: event.starts_at || '',
     endsAt: event.ends_at || event.starts_at || '',
-    // Earns the hour only when the window is short enough to imply it.
-    liveNow: canClaimLiveNow(new Date(event.starts_at).getTime(), new Date(event.ends_at || event.starts_at).getTime())
-  }));
+    // Earns the hour only with BOTH a short window and a clock the source
+    // published — a fabricated 09:00–18:00 default is short but says nothing
+    // about the hour.
+    liveNow: canClaimLiveNowFor(event)
+  }))
+    // Entitled cards lead. The headline names the strongest TRUE claim about the
+    // set ("مباشر الآن · فعالية واحدة"), so the first card the visitor sees must
+    // be one the claim actually covers — otherwise the count reads as the board
+    // size and the headline looks wrong even though it is right.
+    .sort((a, b) => Number(b.liveNow) - Number(a.liveNow));
   let next = html
     .replace(/<script type="application\/ld\+json">[\s\S]*?<\/script>/, `<script type="application/ld+json">${JSON.stringify(itemList)}</script>`)
     .replace(/تصفح\s+\d+\s+فعالية/g, `تصفح ${events.length} فعالية`)

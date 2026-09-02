@@ -745,6 +745,19 @@ function catalogEventFromCandidate(candidate, existingIds) {
     live_schedule_ready: liveScheduleReady,
     ...(liveScheduleReady ? { url: candidate.source_url || candidate.evidence_url || '' } : {}),
     source_file: candidate.raw_snapshot_path || '',
+    // The collectors already judge how much of each timestamp came from the
+    // source and how much they invented — 'exact', 'exact-start-estimated-end',
+    // 'date-only', 'date-only-defaulted', 'official-session-times', 'unknown'.
+    // This allowlist dropped both fields, so the published catalog carried the
+    // judgement on 0 of 866 rows and every surface had to treat a fabricated
+    // 09:00–18:00 default exactly like a sourced clock. That is the difference
+    // between "we know it ends at 21:00" and "we guessed 18:00", and the site was
+    // asserting both with the same confidence (owner report 2026-09-02).
+    // 'unknown' is written when a collector offers nothing: absent means the
+    // pipeline forgot, unknown means it looked and could not tell — the two must
+    // stay distinguishable (AGENTS.md law 2.6).
+    time_precision: candidate.time_precision || 'unknown',
+    ...(candidate.date_precision ? { date_precision: candidate.date_precision } : {}),
     tags: Array.isArray(candidate.tags) ? candidate.tags.slice(0, 10) : [],
     audiences: classifyAudiences(candidate)
   };
