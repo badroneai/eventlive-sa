@@ -45,8 +45,12 @@ const launchPages = [
   'today-events.html',
   'today.html',
   'trust.html',
-  'updates.html',
-  'weekend.html'
+  'updates.html'
+  // weekend.html is deliberately absent: it is now a redirect stub
+  // (LEGACY_TOP_LEVEL_REDIRECTS in scripts/legacy-redirect-pages.mjs) that
+  // forwards to saudi-events-weekend.html, the same treatment legacy category
+  // redirect stubs already get — they are excluded from the sitemap and from
+  // this "launched page" quality list, not evaluated as first-class content.
 ];
 // WO-4: single source of truth — scripts/owner-only-pages.mjs. Pages in
 // this set are exempt from the sitemap-presence check below (they must NOT

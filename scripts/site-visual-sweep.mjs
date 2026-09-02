@@ -34,7 +34,11 @@ const pages = [
   { id: 'signage', path: `/signage.html?event=${encodeURIComponent(representativeId)}`, required: ['لافتة QR للفعالية'] },
   { id: 'this-week', path: '/this-week.html', required: ['هذا الأسبوع'] },
   { id: 'this-month', path: '/this-month.html', required: ['فعاليات هذا الشهر'] },
-  { id: 'weekend', path: '/weekend.html', required: ['الويكند'] },
+  // weekend.html is now a redirect stub (LEGACY_TOP_LEVEL_REDIRECTS in
+  // scripts/legacy-redirect-pages.mjs) that forwards to
+  // saudi-events-weekend.html — check the live page directly rather than a
+  // meta-refresh stub with no visible content of its own.
+  { id: 'weekend', path: '/saudi-events-weekend.html', required: ['الويكند'] },
   { id: 'cities', path: '/cities.html', required: ['فعاليات مدن السعودية'] },
   { id: 'categories', path: '/categories.html', required: ['تصنيفات فعاليات السعودية'] },
   { id: 'audiences', path: '/audiences.html', required: ['فعاليات حسب الجمهور'] },
