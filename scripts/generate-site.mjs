@@ -22,7 +22,7 @@ import { normalizeSaudiCity } from './city-utils.mjs';
 import { CITY_NAME_REGISTRY, cityNameBySlug } from './city-name-registry.mjs';
 import { cityPlacesBySlug, loadCityPlacesFile } from './city-places-data.mjs';
 import { renderCityPlacesJsonLd, renderCityPlacesSection } from './city-places-render.mjs';
-import { LEGACY_CATEGORY_REDIRECTS, LEGACY_REDIRECT_PAGES } from './legacy-redirect-pages.mjs';
+import { LEGACY_CATEGORY_REDIRECTS, LEGACY_REDIRECT_PAGES, LEGACY_TOP_LEVEL_REDIRECTS } from './legacy-redirect-pages.mjs';
 import { createContentTranslator } from './content-translation-cache.mjs';
 import { ARABIC_DAYS_LABEL_JS, DURATION_LABEL_RUNTIME_JS } from './duration-label.mjs';
 import { eventDateRangeLabel, isMultiDayEvent } from './event-date-range.mjs';
@@ -2926,6 +2926,42 @@ function writeLegacyCategoryRedirectPages(events) {
   }
 }
 
+// A dist-root page retired in favour of a live equivalent that already covers
+// the same search intent — same stub shape as writeLegacyCategoryRedirectPages
+// above (meta-refresh for the visitor, canonical for the crawler, out of the
+// sitemap via LEGACY_REDIRECT_PAGES), for pages living at dist/<slug>.html
+// instead of dist/categories/<slug>.html. First case, 2026-09-02: weekend.html
+// was a committed static file no generator wrote (see
+// scripts/legacy-redirect-pages.mjs's LEGACY_TOP_LEVEL_REDIRECTS comment for
+// the full history). Runs unconditionally on every build — including
+// incremental ones — the same as writeLegacyCategoryRedirectPages, so the
+// stub can never drift back into a frozen artifact.
+function writeLegacyTopLevelRedirectPages() {
+  for (const [staleFile, currentFile] of LEGACY_TOP_LEVEL_REDIRECTS) {
+    const targetPath = path.join(distDir, currentFile);
+    // Never emit a stub pointing at a page this build did not produce.
+    if (!fs.existsSync(targetPath)) continue;
+    const targetHref = `./${currentFile}`;
+    const canonical = `${siteUrl}/${currentFile}`;
+    const html = `<!doctype html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="utf-8" />
+<meta http-equiv="refresh" content="0; url=${escapeHtml(targetHref)}" />
+<link rel="manifest" href="./manifest.webmanifest">
+<link rel="canonical" href="${escapeHtml(canonical)}" />
+<title>هذه الصفحة انتقلت — ${platformName}</title>
+<meta name="description" content="${escapeHtml(`انتقل محتوى هذه الصفحة إلى نسختها الحية المحدثة باستمرار على ${platformName}.`)}" />
+</head>
+<body>
+<p>انتقلت هذه الصفحة إلى <a href="${escapeHtml(targetHref)}">نسختها الحالية</a>.</p>
+</body>
+</html>
+`;
+    writeText(path.join(distDir, staleFile), html);
+  }
+}
+
 // An event page whose slug changed while the event itself stayed published (see
 // scripts/published-url-ledger.mjs). Same stub shape as the category redirects
 // above: meta-refresh for the visitor, canonical for the crawler, out of the
@@ -3395,7 +3431,12 @@ function reconcileStaleEventRefs(events) {
 }
 
 function removeDeadEventLinks() {
-  const legacyPages = ['index.html', 'weekend.html'];
+  // weekend.html used to live here too, but it is now a redirect stub
+  // (writeLegacyTopLevelRedirectPages(), see scripts/legacy-redirect-pages.mjs)
+  // rewritten from scratch every build — it never carries stale event links to
+  // strip, and stripping it here would be wasted work overwritten seconds
+  // later anyway.
+  const legacyPages = ['index.html'];
   const targetExists = (slug, ext) => fs.existsSync(path.join(distDir, 'events', `${slug}.${ext}`));
   let removed = 0;
   for (const page of legacyPages) {
@@ -8089,6 +8130,10 @@ const deadEventLinksRemoved = incrementalBuild ? 0 : removeDeadEventLinks();
 externalizeTodayAttendancePage();
 const searchIntentPages = writeSearchIntentPages(events);
 const guidesIntentPatched = patchGuidesHubWithSearchIntentPages(searchIntentPages);
+// After writeSearchIntentPages(): a top-level redirect target (e.g.
+// saudi-events-weekend.html) must already exist on disk before its stub can
+// point at it.
+writeLegacyTopLevelRedirectPages();
 writeBrandIcon();
 writeServiceWorker();
 removeForbiddenArtifacts();

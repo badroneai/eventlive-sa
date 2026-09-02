@@ -229,6 +229,14 @@ jobs:
           npm run test:ai-search-readiness
           npm run test:event-kind
           npm run test:city-search
+          # 2026-09-02: dist/weekend.html shipped linked from the site-wide nav
+          # and listed in sitemap.xml, but no generator wrote it — a frozen
+          # static file from an older generator survived every rebuild since
+          # dist/ is never wiped between builds (AGENTS.md law 5). Class ban,
+          # not a weekend.html-specific check: any dist-root page that is
+          # linked or sitemapped but wasn't touched by THIS build is a frozen
+          # artifact. See scripts/generator-coverage-regression-test.mjs.
+          npm run test:generator-coverage
 
       - name: Site gates CI battery (gates previously wired into no CI battery, ~35s)
         # Root cause: these 30 launch:site-gates checks (test:home-data through

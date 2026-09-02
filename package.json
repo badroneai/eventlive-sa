@@ -118,6 +118,7 @@
     "i18n:merge": "node scripts/merge-content-translations.mjs",
     "translate:catalog": "node scripts/translate-catalog.mjs",
     "test:sitemap": "node scripts/sitemap-coverage-regression-test.mjs",
+    "test:generator-coverage": "node scripts/generator-coverage-regression-test.mjs",
     "test:cities-index": "node scripts/cities-index-regression-test.mjs",
     "test:city-places": "node scripts/city-places-regression-test.mjs",
     "test:categories-index": "node scripts/categories-index-regression-test.mjs",

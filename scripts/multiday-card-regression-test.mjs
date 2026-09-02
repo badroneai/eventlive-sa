@@ -439,20 +439,26 @@ async function runBrowserFixtures(browser, viewport) {
   return results;
 }
 
-// WO-7b: weekend.html is a legacy/frozen page (see removeDeadEventLinks's
-// `legacyPages` list in scripts/generate-site.mjs) — its cards are static
-// HTML with no data-event-* attributes and no live JS renderer, so
-// neither the static sweep nor route-mocking can exercise it with real
-// multi-day data (as of this build it carries zero multi-day cards).
-// Inject a synthetic card using the exact markup/classes homeEventCard
-// would produce (.date-tab.date-tab-range, scoped via
-// ".event-cover .date-tab" in this file's own <style>) to prove the
-// mechanism renders visibly here too, per the coordinator's explicit
-// fallback instruction.
+// WO-7b (retargeted 2026-09-02): this originally rode on dist/weekend.html,
+// which was a legacy/frozen page (see removeDeadEventLinks's `legacyPages`
+// list in scripts/generate-site.mjs) with static cards carrying no
+// data-event-* attributes and no live JS renderer — neither the static sweep
+// nor route-mocking could exercise it with real multi-day data. weekend.html
+// is now a redirect stub (LEGACY_TOP_LEVEL_REDIRECTS in
+// scripts/legacy-redirect-pages.mjs) that forwards to
+// saudi-events-weekend.html and carries no page chrome of its own, so this
+// check moved to saudi-events-weekend.html — the live "weekend" page,
+// generated fresh every build, which still carries the global brandCss (see
+// scripts/generate-site.mjs's WO-7b comment: ".date-tab" scoping applies to
+// every current and future page automatically). Inject a synthetic card
+// using the exact markup/classes homeEventCard would produce
+// (.date-tab.date-tab-range, scoped via ".event-cover .date-tab" in this
+// file's own <style>) to prove the mechanism renders visibly here too, per
+// the coordinator's explicit fallback instruction.
 async function runWeekendSyntheticCheck(browser, viewport) {
   const context = await browser.newContext({ viewport: { width: viewport.width, height: viewport.height } });
   const page = await context.newPage();
-  await page.goto(`http://127.0.0.1:${port}/weekend.html`, { waitUntil: 'domcontentloaded' });
+  await page.goto(`http://127.0.0.1:${port}/saudi-events-weekend.html`, { waitUntil: 'domcontentloaded' });
   const result = await page.evaluate(() => {
     const article = document.createElement('article');
     article.className = 'event-card';
@@ -475,8 +481,8 @@ async function runWeekendSyntheticCheck(browser, viewport) {
     return { visible, nums, txt };
   });
   await context.close();
-  assert.ok(result.visible, `weekend.html synthetic date-tab-range check @ ${viewport.label}: element not visible (the .event-cover .date-tab CSS scoping must still apply on this page)`);
-  assert.ok(result.nums >= 2, `weekend.html synthetic date-tab-range check @ ${viewport.label}: expected >=2 day numbers, got ${result.nums} (text: "${result.txt}")`);
+  assert.ok(result.visible, `saudi-events-weekend.html synthetic date-tab-range check @ ${viewport.label}: element not visible (the .event-cover .date-tab CSS scoping must still apply on this page)`);
+  assert.ok(result.nums >= 2, `saudi-events-weekend.html synthetic date-tab-range check @ ${viewport.label}: expected >=2 day numbers, got ${result.nums} (text: "${result.txt}")`);
 }
 
 // WO-7b: real-page visibility sweep — navigate to actual built pages (not
@@ -571,5 +577,5 @@ assert.equal(
 assert.ok(totalRealCardsSeen > 0, 'the real-page visibility audit found zero multi-day cards across both viewports — the catalog snapshot must include at least one to exercise this gate');
 
 console.log(`[multiday-card] visibility audit (360px + 1280px): ${totalRealCardsSeen} real multi-day cards checked across ${REAL_AUDIT_PAGES.length} pages, 0 failures`);
-console.log('[multiday-card] synthetic-fixture + visibility coverage passed for events.html, today.html, my-events.html, and weekend.html (synthetic)');
+console.log('[multiday-card] synthetic-fixture + visibility coverage passed for events.html, today.html, my-events.html, and saudi-events-weekend.html (synthetic)');
 console.log(`[multiday-card] all checks passed: ${staticSummary.arCardsSeen + staticSummary.enCardsSeen} cards swept, ${staticSummary.arMultiDayCardsSeen + staticSummary.enMultiDayCardsSeen} multi-day, 0 failures`);
