@@ -1401,6 +1401,33 @@ function analyticsRuntimeScript() {
     return;
   }
 
+  // Automated clients are not an audience. Read on 2026-09-03: of 532 recorded
+  // visitors over 90 days only 25% were in Saudi Arabia, the top pages were
+  // /print.html, /signage.html and /share.html — utility pages no visitor lands
+  // on deliberately — and a single 16-20 August burst carried 400+ a day before
+  // falling straight back. Median visit duration over the window was 1 second.
+  // That is a crawl, and it drowns the ~24 real weekly visitors who arrive from
+  // organic search, which is the number worth steering by.
+  //
+  // Only unambiguous automation is excluded: navigator.webdriver is set by every
+  // WebDriver-controlled browser and never by a human one, and the headless
+  // Chrome user-agent names itself. Plain HTTP scrapers never execute this file
+  // at all, so nothing here can suppress a real visitor. Deliberately no
+  // heuristics on screen size, plugins or timing — those misfire on accessibility
+  // tools, old devices and slow connections, and a lost real visitor costs more
+  // than a counted bot.
+  var isAutomated = false;
+  try {
+    isAutomated = navigator.webdriver === true
+      || /\\b(Headless|Electron\\/)/i.test(navigator.userAgent || '');
+  } catch (error) {
+    isAutomated = false;
+  }
+  if (isAutomated) {
+    window.eventLiveTrack = function () {};
+    return;
+  }
+
   function clean(value) {
     return String(value || '').replace(/\\s+/g, ' ').trim().slice(0, 160);
   }
