@@ -28,7 +28,10 @@ assert.match(workflow, /EVENTLIVE_INCLUDE_DISCOVERY_RADARS:\s*["']false["']/, 'd
 assert.match(workflow, /EVENTLIVE_SOURCE_FETCH_TIMEOUT_MS:\s*["']12000["']/, 'scheduled collectors must use a bounded direct-fetch timeout');
 assert.match(workflow, /EVENTLIVE_SOURCE_FETCH_ATTEMPTS:\s*["']2["']/, 'scheduled collectors must avoid three long retries per failed source');
 assert.match(workflow, /EVENTLIVE_BROWSER_FAILURE_COOLDOWN_MS:\s*["']259200000["']/, 'failed browser probes must cool down for 72 hours');
-assert.match(workflow, /uses:\s*actions\/cache@v4/, 'scheduled sync must retain downloaded event images between runs');
+// Any major. The invariant is that the sync CACHES event images between runs —
+// pinning the matcher to @v4 made a routine runtime upgrade look like a broken
+// gate (AGENTS.md law 2.3: matchers assert invariants, not wording).
+assert.match(workflow, /uses:\s*actions\/cache@v\d+/, 'scheduled sync must retain downloaded event images between runs');
 assert.match(workflow, /path:\s*dist\/assets\/event-images/, 'the workflow image cache must restore the public event-image directory');
 assert.match(workflow, /eventlive-event-images-\$\{\{ runner\.os \}\}/, 'the workflow image cache must use a stable EventLive key prefix');
 assert.match(deployWorkflow, /name:\s*Restore event image cache/, 'code deployments must restore source images before rebuilding the public site');

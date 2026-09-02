@@ -41,10 +41,10 @@ jobs:
       EVENTLIVE_MAX_CRITICAL_SOURCE_ERRORS: "0"
     steps:
       - name: Checkout
-        uses: actions/checkout@v4
+        uses: actions/checkout@v5
 
       - name: Setup Node
-        uses: actions/setup-node@v4
+        uses: actions/setup-node@v5
         with:
           node-version: 24
           cache: npm
@@ -53,7 +53,7 @@ jobs:
         run: npm ci || npm install
 
       - name: Restore event image cache
-        uses: actions/cache@v4
+        uses: actions/cache@v5
         with:
           path: dist/assets/event-images
           key: eventlive-event-images-${{ runner.os }}-${{ hashFiles('data/event_image_cache_manifest.json') }}
@@ -61,7 +61,7 @@ jobs:
             eventlive-event-images-${{ runner.os }}-
 
       - name: Restore incremental site cache
-        uses: actions/cache@v4
+        uses: actions/cache@v5
         with:
           path: |
             dist/events
@@ -111,12 +111,12 @@ jobs:
         run: npm run sources:sync
 
       - name: Setup Python for autonomous content translation
-        uses: actions/setup-python@v5
+        uses: actions/setup-python@v6
         with:
           python-version: '3.12'
 
       - name: Cache Argos translation models
-        uses: actions/cache@v4
+        uses: actions/cache@v5
         with:
           path: ~/.local/share/argos-translate
           # v2: the v1 cache was created from a run whose pending backlog was
@@ -359,7 +359,7 @@ jobs:
 
       - name: Upload source sync evidence
         if: always()
-        uses: actions/upload-artifact@v4
+        uses: actions/upload-artifact@v6
         with:
           name: eventme-source-sync-${{ github.run_id }}
           retention-days: 14
@@ -389,16 +389,16 @@ jobs:
             dist/**
 
       - name: Setup Pages
-        uses: actions/configure-pages@v5
+        uses: actions/configure-pages@v6
 
       - name: Upload Pages artifact
-        uses: actions/upload-pages-artifact@v3
+        uses: actions/upload-pages-artifact@v5
         with:
           path: ./dist
 
       - name: Deploy to GitHub Pages
         id: deployment
-        uses: actions/deploy-pages@v4
+        uses: actions/deploy-pages@v5
 
       - name: Notify search engines about changed URLs
         continue-on-error: true
@@ -407,7 +407,7 @@ jobs:
       - name: Upload IndexNow submission receipt
         if: always()
         continue-on-error: true
-        uses: actions/upload-artifact@v4
+        uses: actions/upload-artifact@v6
         with:
           name: eventme-indexnow-receipt-${{ github.run_id }}
           retention-days: 14

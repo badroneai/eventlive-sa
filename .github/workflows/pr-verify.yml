@@ -40,10 +40,10 @@ jobs:
       EVENTLIVE_PUBLIC_BASE_URL: https://eventme.live/
     steps:
       - name: Checkout
-        uses: actions/checkout@v4
+        uses: actions/checkout@v5
 
       - name: Setup Node
-        uses: actions/setup-node@v4
+        uses: actions/setup-node@v5
         with:
           node-version: 24
           cache: npm
@@ -52,7 +52,7 @@ jobs:
         run: npm ci || npm install
 
       - name: Restore event image cache
-        uses: actions/cache@v4
+        uses: actions/cache@v5
         with:
           path: dist/assets/event-images
           key: eventlive-event-images-${{ runner.os }}-${{ hashFiles('data/event_image_cache_manifest.json') }}
