@@ -237,6 +237,17 @@ jobs:
           npm run test:public-assets
           npm run test:owner-surface-isolation
           npm run test:first-glance-trust
+          # 2026-09-02: 23 public pages (the highest-intent SEO landing set) shipped
+          # data-runtime-status hooks with no script to drive them — chips that looked
+          # wired and were frozen at build time forever. Hooks without a driver is now
+          # a banned class on every page. Reads dist/ only, <1s.
+          npm run test:live-runtime-coverage
+          # 2026-09-02 owner report: a multi-day event is stored as ONE unbroken
+          # window, so "start <= now <= end" was as true at 23:00 as at 15:00 and the
+          # site claimed the hour two hours after the day had closed. The claim now
+          # has to be earned, and this holds the build rule and the client rule to
+          # the same line. Fixture + catalog only, <1s.
+          npm run test:live-claim-parity
           npm run test:mobile-browsing
           npm run test:i18n-contract
           npm run test:i18n-site

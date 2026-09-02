@@ -46,8 +46,20 @@ export function liveCountLabel(count = 0) {
  * index carries the `hidden` attribute — the runtime carousel script only
  * toggles this attribute, it never builds card markup from scratch.
  */
-export function homeBoardLiveCard({ title, meta, url } = {}, index = 0) {
-  return `<article class="board-live-card" data-index="${index}"${index === 0 ? '' : ' hidden'}>
+export function homeBoardLiveCard({ title, meta, url, startsAt, endsAt, liveNow } = {}, index = 0) {
+  // data-start / data-end let the runtime drop a card whose window has closed.
+  // Without them the board is only as truthful as the last build: an event that
+  // ended at noon keeps claiming "مباشر الآن" until the next publish. That is the
+  // exact class the first-glance trust gate bans (owner mandate 2026-07-27), and
+  // the longer the gap between publishes, the longer the lie stands.
+  const window = [
+    startsAt ? ` data-start="${escapeHtml(startsAt)}"` : '',
+    endsAt ? ` data-end="${escapeHtml(endsAt)}"` : '',
+    // Whether THIS card may claim the hour, decided once by canClaimLiveNow()
+    // upstream so the runtime clock never has to re-derive the policy.
+    ` data-live-claim="${liveNow ? '1' : '0'}"`
+  ].join('');
+  return `<article class="board-live-card" data-index="${index}"${window}${index === 0 ? '' : ' hidden'}>
               <h2>${escapeHtml(title)}</h2>
               <div class="b-meta">${escapeHtml(meta)}</div>
               <div class="board-actions">
@@ -92,8 +104,23 @@ export function homeBoardLiveNav(count) {
  * single build-time switch between the 0-live fallback board (#boardSingle,
  * untouched by this module) and the carousel.
  */
+/**
+ * The board's headline is a CLAIM, so it must describe what it is actually
+ * looking at. "مباشر الآن" asserts this hour; a multi-day card cannot support
+ * that (see canClaimLiveNow in event-kind-utils.mjs), so when nothing on the
+ * board earns the hour the headline states the weaker, true thing instead.
+ * Owner report 2026-09-02: every card on the board that night was multi-day, so
+ * the old unconditional "مباشر الآن" was wrong for all fifteen of them.
+ */
+export function homeBoardLiveHeadline(liveNowCount = 0, total = 0) {
+  return liveNowCount > 0
+    ? `مباشر الآن · ${liveCountLabel(liveNowCount)}`
+    : `تجري هذه الأيام · ${liveCountLabel(total)}`;
+}
+
 export function homeBoardLiveSection(cards = []) {
   const count = cards.length;
+  const liveNowCount = cards.filter((card) => card && card.liveNow).length;
   const cardsHtml = cards.map((card, index) => homeBoardLiveCard(card, index)).join('\n              ');
   // `data-live-count` is the build's own record of how many live events it
   // decided on. Without it the trust gate had to RE-derive that number from the
@@ -103,8 +130,8 @@ export function homeBoardLiveSection(cards = []) {
   // build red. That race froze deploy.yml from 2026-08-15 to 2026-09-02. The
   // count is emitted here so the gate can assert build-internal agreement
   // instead of guessing (AGENTS.md law 2.5: build output is time-dependent).
-  return `<section class="board-live" id="boardLive" data-live-count="${count}"${count > 0 ? '' : ' hidden'}>
-          <div class="board-label" id="boardLiveBadge"><span class="live-dot"></span>مباشر الآن · ${liveCountLabel(count)}</div>
+  return `<section class="board-live" id="boardLive" data-live-count="${count}" data-live-now="${liveNowCount}"${count > 0 ? '' : ' hidden'}>
+          <div class="board-label" id="boardLiveBadge"><span class="live-dot"></span>${homeBoardLiveHeadline(liveNowCount, count)}</div>
           <div class="board-live-track" id="boardLiveTrack" aria-live="polite" aria-atomic="true">
               ${cardsHtml}
           </div>

@@ -29,7 +29,7 @@ import { eventDateRangeLabel, isMultiDayEvent } from './event-date-range.mjs';
 import { canonicalEventSlug, EVENT_ALIAS_PAGES } from './event-canonical-aliases.mjs';
 import { loadUrlLedger, reconcileUrlLedger, saveUrlLedger } from './published-url-ledger.mjs';
 import { buildTitleQualifiers, eventQualifierKey, withTitleQualifier } from './event-title-qualifier.mjs';
-import { classifyEventKind, eventKindLabel, getEventStatus } from './event-kind-utils.mjs';
+import { canClaimLiveNow, classifyEventKind, eventKindLabel, getEventStatus, LIVE_CLAIM_MAX_WINDOW_HOURS } from './event-kind-utils.mjs';
 import { decodeHtmlEntities } from './html-entities.mjs';
 import { compareAttendancePriority, isLiveMoment } from './event-priority.mjs';
 import { homeBoardLiveSection } from './home-board-live.mjs';
@@ -1594,6 +1594,11 @@ function liveRuntimeScript() {
     if (now < start) return { key: 'upcoming', label: 'قادمة', note: 'يبدأ بعد ' + remaining(start - now) };
     if (end && now <= end) {
       if (kind === 'program') return { key: 'ongoing', label: 'برنامج جارٍ', note: 'نافذة البرنامج مفتوحة، ينتهي بعد ' + remaining(end - now) };
+      // Same line as canClaimLiveNow() in scripts/event-kind-utils.mjs. A window
+      // longer than this has dark hours the data cannot describe, so the label
+      // must not assert the hour. Interpolated from the shared constant on
+      // purpose — a hardcoded number here is what test:live-claim-parity bans.
+      if (end - start > ${LIVE_CLAIM_MAX_WINDOW_HOURS} * 3600000) return { key: 'ongoing', label: 'مستمرة هذه الأيام', note: 'مستمرة حتى ' + remaining(end - now) };
       return { key: 'live', label: 'مباشرة الآن', note: 'ينتهي بعد ' + remaining(end - now) };
     }
     return { key: 'ended', label: 'منتهية', note: 'انتهت منذ ' + remaining(now - (end || start)) };
@@ -5652,6 +5657,7 @@ ${header('./')}
   <section class="section"><div class="wrap"><article class="readiness"><h2>روابط متابعة مفيدة</h2><div class="activation-actions"><a class="cta" href="./today.html">انتقل للمنصة الحية</a>${page.related.map(([label, href]) => `<a class="cta" href="${escapeHtml(href)}">${escapeHtml(label)}</a>`).join('')}</div></article></div></section>
 </main>
 ${footer('./')}
+${liveRuntimeScript()}
 </body>
 </html>`;
     writeText(path.join(distDir, page.file), html);
@@ -6726,7 +6732,11 @@ function patchHomePage(events) {
   const liveBoardCards = liveEvents.map((event) => ({
     title: event.title,
     meta: `${event.city_label || cityLabel(event.city)} · حتى ${formatDate(event.ends_at || event.starts_at)}`,
-    url: compactEventUrl(event)
+    url: compactEventUrl(event),
+    startsAt: event.starts_at || '',
+    endsAt: event.ends_at || event.starts_at || '',
+    // Earns the hour only when the window is short enough to imply it.
+    liveNow: canClaimLiveNow(new Date(event.starts_at).getTime(), new Date(event.ends_at || event.starts_at).getTime())
   }));
   let next = html
     .replace(/<script type="application\/ld\+json">[\s\S]*?<\/script>/, `<script type="application/ld+json">${JSON.stringify(itemList)}</script>`)

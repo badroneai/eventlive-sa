@@ -1,7 +1,7 @@
 import assert from 'node:assert/strict';
 import fs from 'node:fs';
 import path from 'node:path';
-import { homeBoardLiveSection, liveCountLabel } from './home-board-live.mjs';
+import { homeBoardLiveHeadline, homeBoardLiveSection, liveCountLabel } from './home-board-live.mjs';
 
 // First-glance trust gate (owner mandate 2026-07-27): a new visitor must never
 // see a dead live element. Every check here failed silently in production at
@@ -101,7 +101,61 @@ assert.equal(
     `${boardLiveCards.length} static .board-live-card element(s) — the homepage board must render ` +
     'EVERY live event, not one pinned entry (the WO-1 incident: the client script kept only the first)'
 );
-const expectedBadge = `مباشر الآن · ${liveCountLabel(builtLiveCount)}`;
+// Every card must carry the window the runtime prunes on. A card without
+// data-end can never be dropped, so it would keep claiming "مباشر الآن" forever
+// — the pruning pass would silently no-op and nobody would know.
+const cardWindows = [...indexHtml.matchAll(/<article class="board-live-card"[^>]*>/g)].map((match) => match[0]);
+const withoutWindow = cardWindows.filter((tag) => !/data-end="[^"]+"/.test(tag));
+assert.equal(
+  withoutWindow.length,
+  0,
+  `${withoutWindow.length} live-board card(s) ship without a data-end window, so the runtime can never retire them`
+);
+assert.match(
+  indexHtml,
+  /liveBoardClock/,
+  'the homepage must ship the runtime clock that retires live cards whose window has closed between publishes'
+);
+// Continuity is the invariant, not the mere presence of the code. A one-shot pass
+// fixes the first paint and then lies for as long as the tab stays open — which is
+// exactly the reported failure (a page open across 21:00 still reading "مباشر
+// الآن" at 23:00). Both wake-ups are required: the timer for an idle tab, the
+// visibility handler for a device returning from sleep.
+assert.match(indexHtml, /setInterval\(sync, \d+\)/, 'the live board clock must re-decide on a timer, not once at load');
+assert.match(indexHtml, /visibilitychange/, 'the live board clock must re-decide when the tab returns from the background');
+// The headline is a claim about the hour; only cards the build marked as entitled
+// may be counted under it.
+assert.match(indexHtml, /data-live-claim="[01]"/, 'each live card must record whether it may claim the hour');
+assert.match(indexHtml, /card\.getAttribute\('data-live-claim'\) === '1'/, 'the clock must count only entitled cards under "مباشر الآن"');
+// The client mirrors liveCountLabel() in its own copy; keep the two in step.
+const clientLabel = indexHtml.match(/function countLabel\(n\) \{[\s\S]*?\n\s*\}/)?.[0];
+assert.ok(clientLabel, 'the runtime pass must carry its own Arabic count label');
+for (const [count, expected] of [[1, 'فعالية واحدة'], [2, 'فعاليتان'], [7, '7 فعاليات'], [14, '14 فعالية']]) {
+  assert.equal(liveCountLabel(count), expected, `liveCountLabel(${count}) contract`);
+  const branch = count === 1 ? "n === 1" : count === 2 ? "n === 2" : count <= 10 ? "n >= 3 && n <= 10" : "return n + ' فعالية'";
+  assert.ok(clientLabel.includes(branch), `the client count label must keep the ${branch} branch in step with liveCountLabel()`);
+}
+
+const liveNowMatch = indexHtml.match(/data-live-now="(\d+)"/);
+assert.ok(liveNowMatch, 'the live board must record how many of its cards may claim the hour (data-live-now)');
+const builtLiveNow = Number(liveNowMatch[1]);
+assert.ok(
+  builtLiveNow <= builtLiveCount,
+  `data-live-now (${builtLiveNow}) cannot exceed the number of cards on the board (${builtLiveCount})`
+);
+// Read the flag off the CARD TAGS only. A bare /data-live-claim="1"/ sweep also
+// matches the attribute quoted inside the runtime script's own comments, which is
+// how this assertion first went red against a correct build.
+const claimFlags = cardWindows
+  .map((tag) => tag.match(/data-live-claim="([01])"/)?.[1])
+  .filter((flag) => flag !== undefined);
+assert.equal(claimFlags.length, cardWindows.length, 'every live-board card must record whether it may claim the hour');
+assert.equal(
+  claimFlags.filter((flag) => flag === '1').length,
+  builtLiveNow,
+  'data-live-now must equal the number of cards actually flagged as entitled to the hour'
+);
+const expectedBadge = homeBoardLiveHeadline(builtLiveNow, builtLiveCount);
 assert.ok(
   indexHtml.includes(`id="boardLiveBadge"><span class="live-dot"></span>${expectedBadge}`),
   `homepage badge must read "${expectedBadge}" (grammatically correct Arabic count agreement) for ` +
@@ -126,19 +180,23 @@ if (liveMoments.length !== builtLiveCount) {
     { title: 'Synthetic Live Three', meta: 'الظهران · حتى ١٢:٠٠ ص', url: './events/synthetic-three.html' }
   ];
   const html = homeBoardLiveSection(synthetic);
-  const cards = [...html.matchAll(/<article class="board-live-card" data-index="(\d+)"( hidden)?>/g)];
+  // Tolerant of the window/claim attributes sitting between data-index and the
+  // close — this matcher asserts the card contract, not the attribute order.
+  const cards = [...html.matchAll(/<article class="board-live-card" data-index="(\d+)"[^>]*?( hidden)?>/g)];
   assert.equal(cards.length, 3, 'homeBoardLiveSection must render one static card per live event');
   assert.equal(cards[0][2], undefined, 'the first synthetic card must be visible (no hidden attribute)');
   assert.equal(cards[1][2], ' hidden', 'the second synthetic card must carry the hidden attribute');
   assert.equal(cards[2][2], ' hidden', 'the third synthetic card must carry the hidden attribute');
-  assert.match(html, new RegExp(`مباشر الآن · ${liveCountLabel(3)}`), 'the badge must reflect the synthetic live count (3-10 bucket: "N فعاليات")');
+  assert.match(html, new RegExp(`تجري هذه الأيام · ${liveCountLabel(3)}`), 'a board of un-entitled cards must not claim the hour');
+  const entitled = homeBoardLiveSection(synthetic.map((card) => ({ ...card, liveNow: true })));
+  assert.match(entitled, new RegExp(`مباشر الآن · ${liveCountLabel(3)}`), 'a board of entitled cards must claim the hour with the 3-10 plural');
   assert.match(html, /board-live-prev/, 'nav arrows must render when more than one live card is present');
   assert.match(html, /board-live-dot/, 'dot indicators must render when more than one live card is present');
   const single = homeBoardLiveSection([synthetic[0]]);
   assert.doesNotMatch(single, /board-live-prev/, 'nav must be omitted entirely for a single live card — nothing to navigate between');
   const empty = homeBoardLiveSection([]);
-  assert.match(empty, /<section class="board-live" id="boardLive" data-live-count="0" hidden>/, 'zero live events must render the section hidden and record a zero count');
-  assert.match(html, /<section class="board-live" id="boardLive" data-live-count="3">/, 'the section must record the live count the build decided on');
+  assert.match(empty, /<section class="board-live" id="boardLive" data-live-count="0" data-live-now="0" hidden>/, 'zero live events must render the section hidden and record a zero count');
+  assert.match(html, /<section class="board-live" id="boardLive" data-live-count="3" data-live-now="0">/, 'the section must record both the card count and how many may claim the hour');
 }
 
 // PM review of PR #32: `${count} فعاليات` for every count is wrong Arabic
@@ -156,7 +214,10 @@ if (liveMoments.length !== builtLiveCount) {
     const cards = Array.from({ length: count }, (_, index) => ({
       title: `Bucket Test Event ${index + 1}`,
       meta: 'الرياض · حتى ١٠:٠٠ م',
-      url: `./events/bucket-test-${index + 1}.html`
+      url: `./events/bucket-test-${index + 1}.html`,
+      // The Arabic plural contract belongs to the count, not to the claim, so this
+      // block exercises entitled cards and keeps asserting the "مباشر الآن" wording.
+      liveNow: true
     }));
     const sectionHtml = homeBoardLiveSection(cards);
     assert.ok(

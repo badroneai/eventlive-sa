@@ -113,6 +113,8 @@
     "test:site-design-coverage": "node scripts/site-design-coverage-regression-test.mjs",
     "test:public-assets": "node scripts/public-asset-links-regression-test.mjs",
     "test:first-glance-trust": "node scripts/first-glance-trust-regression-test.mjs",
+    "test:live-runtime-coverage": "node scripts/live-runtime-coverage-regression-test.mjs",
+    "test:live-claim-parity": "node scripts/live-claim-parity-regression-test.mjs",
     "i18n:pending": "node scripts/list-pending-content-translations.mjs",
     "i18n:merge": "node scripts/merge-content-translations.mjs",
     "translate:catalog": "node scripts/translate-catalog.mjs",
