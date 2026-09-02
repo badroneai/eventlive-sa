@@ -6726,7 +6726,9 @@ function patchHomePage(events) {
   const liveBoardCards = liveEvents.map((event) => ({
     title: event.title,
     meta: `${event.city_label || cityLabel(event.city)} · حتى ${formatDate(event.ends_at || event.starts_at)}`,
-    url: compactEventUrl(event)
+    url: compactEventUrl(event),
+    startsAt: event.starts_at || '',
+    endsAt: event.ends_at || event.starts_at || ''
   }));
   let next = html
     .replace(/<script type="application\/ld\+json">[\s\S]*?<\/script>/, `<script type="application/ld+json">${JSON.stringify(itemList)}</script>`)

@@ -46,8 +46,17 @@ export function liveCountLabel(count = 0) {
  * index carries the `hidden` attribute — the runtime carousel script only
  * toggles this attribute, it never builds card markup from scratch.
  */
-export function homeBoardLiveCard({ title, meta, url } = {}, index = 0) {
-  return `<article class="board-live-card" data-index="${index}"${index === 0 ? '' : ' hidden'}>
+export function homeBoardLiveCard({ title, meta, url, startsAt, endsAt } = {}, index = 0) {
+  // data-start / data-end let the runtime drop a card whose window has closed.
+  // Without them the board is only as truthful as the last build: an event that
+  // ended at noon keeps claiming "مباشر الآن" until the next publish. That is the
+  // exact class the first-glance trust gate bans (owner mandate 2026-07-27), and
+  // the longer the gap between publishes, the longer the lie stands.
+  const window = [
+    startsAt ? ` data-start="${escapeHtml(startsAt)}"` : '',
+    endsAt ? ` data-end="${escapeHtml(endsAt)}"` : ''
+  ].join('');
+  return `<article class="board-live-card" data-index="${index}"${window}${index === 0 ? '' : ' hidden'}>
               <h2>${escapeHtml(title)}</h2>
               <div class="b-meta">${escapeHtml(meta)}</div>
               <div class="board-actions">
