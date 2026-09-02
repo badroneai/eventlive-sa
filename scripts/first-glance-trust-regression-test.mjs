@@ -81,24 +81,37 @@ for (const [block, start, end] of cardBlocks) {
 //    board's client script picked only the FIRST live entry via
 //    `if (... && !live) live = ev`, so a second simultaneous live event was
 //    silently dropped from view).
+//    Both assertions below read the BUILD's own numbers — `data-live-count` and
+//    the cards it emitted — so they hold at every count and never consult a
+//    clock. The previous version re-derived the expected count from the embedded
+//    ticker using Date.now() at TEST time: a different array (ticker is capped at
+//    120 rows) read minutes after the build, so one event crossing its start or
+//    end boundary in between turned a correct build red. That race is what froze
+//    deploy.yml from 2026-08-15 to 2026-09-02 — a gate red for a reason that was
+//    not a defect teaches people to ignore it, same end state as a gate that lies
+//    green (AGENTS.md laws 2.5 and 2.6).
 const boardLiveCards = [...indexHtml.matchAll(/<article class="board-live-card" data-index="\d+"/g)];
-if (liveMoments.length >= 2) {
-  assert.ok(
-    boardLiveCards.length >= 2,
-    `catalog has ${liveMoments.length} live moments at build time but dist/index.html only ` +
-      `carries ${boardLiveCards.length} static .board-live-card element(s) — the homepage ` +
-      'board must render every live event, not one pinned entry'
-  );
-  const expectedBadge = `مباشر الآن · ${liveCountLabel(liveMoments.length)}`;
-  assert.ok(
-    indexHtml.includes(`id="boardLiveBadge"><span class="live-dot"></span>${expectedBadge}`),
-    `homepage badge must read "${expectedBadge}" (grammatically correct Arabic count agreement) for ` +
-      `${liveMoments.length} live moments`
-  );
-} else {
-  console.log(`WO-1 note: the live catalog had ${liveMoments.length} live moment(s) at build ` +
-    'time (<2), so the multi-card rule cannot be exercised against the real build. Exercising ' +
-    'the static-injection mechanism directly against a synthetic fixture instead.');
+const liveCountMatch = indexHtml.match(/id="boardLive" data-live-count="(\d+)"/);
+assert.ok(liveCountMatch, 'the live board must record the live count the build decided on (data-live-count)');
+const builtLiveCount = Number(liveCountMatch[1]);
+assert.equal(
+  boardLiveCards.length,
+  builtLiveCount,
+  `the build found ${builtLiveCount} live event(s) but dist/index.html carries ` +
+    `${boardLiveCards.length} static .board-live-card element(s) — the homepage board must render ` +
+    'EVERY live event, not one pinned entry (the WO-1 incident: the client script kept only the first)'
+);
+const expectedBadge = `مباشر الآن · ${liveCountLabel(builtLiveCount)}`;
+assert.ok(
+  indexHtml.includes(`id="boardLiveBadge"><span class="live-dot"></span>${expectedBadge}`),
+  `homepage badge must read "${expectedBadge}" (grammatically correct Arabic count agreement) for ` +
+    `${builtLiveCount} live moments`
+);
+// The ticker is read at test time, so it legitimately disagrees with the build by
+// however many events crossed a boundary since. Report the drift, never fail on it.
+if (liveMoments.length !== builtLiveCount) {
+  console.log(`WO-1 note: ticker shows ${liveMoments.length} live moment(s) at test time vs ` +
+    `${builtLiveCount} at build time — normal boundary drift, not a defect.`);
 }
 
 // The mechanism itself (scripts/home-board-live.mjs, the only production
@@ -124,7 +137,8 @@ if (liveMoments.length >= 2) {
   const single = homeBoardLiveSection([synthetic[0]]);
   assert.doesNotMatch(single, /board-live-prev/, 'nav must be omitted entirely for a single live card — nothing to navigate between');
   const empty = homeBoardLiveSection([]);
-  assert.match(empty, /<section class="board-live" id="boardLive" hidden>/, 'zero live events must render the section hidden');
+  assert.match(empty, /<section class="board-live" id="boardLive" data-live-count="0" hidden>/, 'zero live events must render the section hidden and record a zero count');
+  assert.match(html, /<section class="board-live" id="boardLive" data-live-count="3">/, 'the section must record the live count the build decided on');
 }
 
 // PM review of PR #32: `${count} فعاليات` for every count is wrong Arabic
