@@ -101,6 +101,30 @@ assert.equal(
     `${boardLiveCards.length} static .board-live-card element(s) — the homepage board must render ` +
     'EVERY live event, not one pinned entry (the WO-1 incident: the client script kept only the first)'
 );
+// Every card must carry the window the runtime prunes on. A card without
+// data-end can never be dropped, so it would keep claiming "مباشر الآن" forever
+// — the pruning pass would silently no-op and nobody would know.
+const cardWindows = [...indexHtml.matchAll(/<article class="board-live-card"[^>]*>/g)].map((match) => match[0]);
+const withoutWindow = cardWindows.filter((tag) => !/data-end="[^"]+"/.test(tag));
+assert.equal(
+  withoutWindow.length,
+  0,
+  `${withoutWindow.length} live-board card(s) ship without a data-end window, so the runtime can never retire them`
+);
+assert.match(
+  indexHtml,
+  /pruneEndedLiveCards/,
+  'the homepage must ship the runtime pass that retires live cards whose window has closed between publishes'
+);
+// The client mirrors liveCountLabel() in its own copy; keep the two in step.
+const clientLabel = indexHtml.match(/function countLabel\(n\) \{[\s\S]*?\n\s*\}/)?.[0];
+assert.ok(clientLabel, 'the runtime pass must carry its own Arabic count label');
+for (const [count, expected] of [[1, 'فعالية واحدة'], [2, 'فعاليتان'], [7, '7 فعاليات'], [14, '14 فعالية']]) {
+  assert.equal(liveCountLabel(count), expected, `liveCountLabel(${count}) contract`);
+  const branch = count === 1 ? "n === 1" : count === 2 ? "n === 2" : count <= 10 ? "n >= 3 && n <= 10" : "return n + ' فعالية'";
+  assert.ok(clientLabel.includes(branch), `the client count label must keep the ${branch} branch in step with liveCountLabel()`);
+}
+
 const expectedBadge = `مباشر الآن · ${liveCountLabel(builtLiveCount)}`;
 assert.ok(
   indexHtml.includes(`id="boardLiveBadge"><span class="live-dot"></span>${expectedBadge}`),
