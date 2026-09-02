@@ -69,6 +69,32 @@ assert(
   `these events are declared but no code path emits them: ${undeliverable.join(', ')} — a declared-but-unfired event is a wish list, not a measurement`
 );
 
+// Automated clients must be excluded before anything is sent. Read on
+// 2026-09-03: only 25% of 532 recorded 90-day visitors were in Saudi Arabia, the
+// top three pages were /print.html, /signage.html and /share.html — utility pages
+// nobody lands on deliberately — and a single 16-20 August burst carried 400+ a
+// day at a 1-second median visit. Counting that as audience buries the ~24 real
+// weekly visitors arriving from organic search, which is the number worth
+// steering by.
+//
+// Asserted as the two unambiguous signals rather than as wording: navigator
+// .webdriver is set by every WebDriver-controlled browser and never by a human
+// one, and headless Chrome names itself in its user-agent. Deliberately nothing
+// heuristic — screen size, plugins and timing misfire on accessibility tools, old
+// devices and slow connections, and losing a real visitor costs more than
+// counting a bot. Proven in a real browser across three shapes: webdriver with a
+// headless UA, webdriver with a spoofed real UA, and a genuine browser — only the
+// third emits.
+for (const page of publicPages) {
+  const html = read(page);
+  assert(/navigator\.webdriver === true/.test(html), `${page} must refuse to report WebDriver-controlled clients`);
+  assert(/Headless/.test(html), `${page} must refuse to report self-identified headless browsers`);
+  assert(
+    html.indexOf('isAutomated') < html.indexOf("eventLiveTrack('page_view'"),
+    `${page} must decide on automation BEFORE the first page_view fires, or the guard reports the very visit it exists to suppress`
+  );
+}
+
 // The owner page must name the provider the pages actually load. It once said
 // "plausible" with a dashboard link that 404s, for eight weeks, while Umami was
 // collecting normally — because owner-status.html rendered from a report frozen
