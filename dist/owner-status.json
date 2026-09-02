@@ -1,21 +1,22 @@
 {
-  "generated_at": "2026-07-10T13:44:09.626Z",
+  "generated_at": "2026-09-02T22:34:11.836Z",
   "platform": "EventLive",
   "domain": "eventme.live",
   "intent": "eventlive-owner-status",
   "analytics": {
-    "provider": "plausible",
+    "provider": "umami",
     "domain": "eventme.live",
     "status": "PASS",
     "instrumentation_status": "PASS",
-    "dashboard_url": "https://plausible.io/eventme.live",
-    "dashboard_login_url": "https://plausible.io/login?return_to=%2Feventme.live",
-    "dashboard_status": "NEEDS_PROVIDER_SETUP",
+    "dashboard_url": "https://umami-ten-orpin.vercel.app",
+    "dashboard_login_url": "https://umami-ten-orpin.vercel.app/login",
+    "dashboard_status": "NEEDS_OWNER_LOGIN",
     "dashboard_setup_required": true,
-    "dashboard_note": "إذا ظهرت صفحة 404 في Plausible فهذا يعني غالبا أن موقع eventme.live لم يضف بعد داخل Plausible أو أنك لست داخل حساب مالك اللوحة. التتبع مزروع في الموقع، لكن أرقام الزيارات تحتاج تفعيل اللوحة من مزود التحليلات.",
+    "dashboard_note": "لوحة Umami ذاتية الاستضافة — سجّل الدخول بحساب المالك لعرض أرقام الزوار.",
     "tracked_events": [
       "page_view",
       "search_used",
+      "saved_event",
       "event_opened",
       "city_filter_used",
       "category_filter_used",
@@ -24,11 +25,12 @@
       "directions_clicked",
       "source_clicked",
       "live_screen_opened",
-      "saved_event",
       "share_clicked",
       "organizer_cta_clicked",
       "this_week_opened",
-      "today_opened"
+      "today_opened",
+      "attendance_mode_saved",
+      "attendance_mode_removed"
     ],
     "privacy": {
       "cookies": false,
@@ -37,37 +39,93 @@
     },
     "note": "هذه الصفحة تثبت أن التتبع مزروع في الصفحات العامة. أرقام الزوار الحقيقية تظهر بعد تفعيل لوحة مزود التحليلات للدومين."
   },
+  "search_visibility": {
+    "technical_status": "READY_FOR_CRAWL",
+    "google_search_console_status": "VERIFIED",
+    "google_search_console_property": "https://eventme.live/",
+    "google_search_console_property_type": "url-prefix",
+    "google_search_console_verification_method": "html-tag",
+    "google_search_console_verified_at": "2026-07-11T21:04:11Z",
+    "google_sitemap_status": "SUCCESS",
+    "google_sitemap_submitted_at": "2026-07-11T21:05:40Z",
+    "google_sitemap_last_read_at": "2026-07-11T21:05:40Z",
+    "google_sitemap_discovered_pages": 2558,
+    "google_url_inspection_requests": [
+      {
+        "url": "https://eventme.live/",
+        "requested_at": "2026-07-11T21:24:16Z",
+        "status": "REQUESTED"
+      }
+    ],
+    "sitemap_url": "https://eventme.live/sitemap.xml",
+    "robots_url": "https://eventme.live/robots.txt",
+    "indexnow_status": "AUTOMATED_AFTER_DEPLOY",
+    "changed_events": 0,
+    "unchanged_events": 1602,
+    "removed_events": 0,
+    "indexnow_urls_queued": 0,
+    "event_schema_pages": 3204,
+    "locales": [
+      "ar-SA",
+      "en-SA"
+    ],
+    "links": {
+      "google_search_console": "https://search.google.com/search-console?resource_id=https%3A%2F%2Feventme.live%2F",
+      "bing_webmaster": "https://www.bing.com/webmasters/home?siteUrl=https%3A%2F%2Feventme.live%2F",
+      "rich_results_test": "https://search.google.com/test/rich-results?url=https%3A%2F%2Feventme.live%2F",
+      "pagespeed": "https://pagespeed.web.dev/analysis?url=https%3A%2F%2Feventme.live%2F"
+    }
+  },
   "source_sync": {
-    "last_run_at": "2026-07-10T12:11:24.460Z",
-    "registered_sources": 85,
-    "attempted_sources": 45,
-    "productive_sources": 30,
+    "last_run_at": "2026-09-02T11:43:10.801Z",
+    "registered_sources": 88,
+    "attempted_sources": 22,
+    "due_sources": 22,
+    "deferred_sources": 26,
+    "runnable_sources": 48,
+    "productive_sources": 19,
     "collector_errors": 0,
-    "zero_yield": 13,
-    "candidates_seen": 406,
-    "published_new": 0,
-    "linked_existing": 385,
-    "blocked_remaining": 21,
+    "persistent_collector_errors": 6,
+    "zero_yield": 2,
+    "diagnostics_status": "skipped-fresh",
+    "diagnostics_next_due_at": "2026-09-02T21:08:22.196Z",
+    "candidates_seen": 517,
+    "published_new": 6,
+    "linked_existing": 486,
+    "blocked_remaining": 25,
     "secondary_promoted": 0,
-    "secondary_still_blocked": 21,
+    "secondary_still_blocked": 31,
+    "growth_status": "healthy",
+    "public_delta": 6,
+    "catalog_delta": 6,
+    "no_growth_streak": 0,
+    "new_active_candidates": 27,
+    "new_ended_events": 0,
+    "lost_published_output": false,
     "blocked_reasons": {
-      "possible duplicate already exists: event-esports-world-cup": 1,
-      "publication gate source-evidence is not auto-publishable": 18,
-      "possible duplicate already exists: event-saudi-wood-expo-2026": 1,
-      "possible duplicate already exists: event-saudi-industrial-series-2": 1
+      "possible duplicate requires review: exact-title-city-source-conflict": 2,
+      "unknown category requires review": 9,
+      "publication gate source-evidence is not auto-publishable": 6,
+      "possible duplicate already exists: event-leap-2026": 1,
+      "linked catalog row event-stand-up-comedy-and-interactive-show-with-salah-al-dali was superseded by dedupe": 1,
+      "possible duplicate requires review: fuzzy-title-venue-date-window": 2,
+      "possible duplicate requires review: exact-title-city-venue-conflict": 2,
+      "linked catalog row event-feena-nehke-stand-up-comedy-by-john-achkar was superseded by dedupe": 1,
+      "linked catalog row event-music-festival-mdlbeast-soundstorm was superseded by dedupe": 1
     },
     "collector_error_sources": []
   },
   "catalog": {
-    "public_events": 1118,
-    "live_ready": 241,
-    "ended_events": 752,
-    "upcoming_or_ongoing": 366
+    "public_events": 1602,
+    "live_ready": 298,
+    "ended_events": 1160,
+    "upcoming_or_ongoing": 442
   },
   "links": {
-    "analytics_dashboard": "https://plausible.io/eventme.live",
+    "analytics_dashboard": "https://umami-ten-orpin.vercel.app",
     "source_health": "./source-health.html",
     "source_coverage": "./source-coverage-gaps.html",
+    "search_growth": "./owner-search-growth.html",
     "events_json": "./events.json"
   }
 }

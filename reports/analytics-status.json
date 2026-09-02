@@ -1,13 +1,13 @@
 {
   "schema": "eventlive.analytics-status.v1",
-  "generated_at": "2026-07-10T03:56:00.073Z",
+  "generated_at": "2026-09-02T22:34:02.138Z",
   "status": "PASS",
   "instrumentation_status": "PASS",
-  "provider": "plausible",
+  "provider": "umami",
   "domain": "eventme.live",
-  "dashboard_url": "https://plausible.io/eventme.live",
-  "dashboard_login_url": "https://plausible.io/login?return_to=%2Feventme.live",
-  "dashboard_status": "NEEDS_PROVIDER_SETUP",
+  "dashboard_url": "https://umami-ten-orpin.vercel.app",
+  "dashboard_login_url": "https://umami-ten-orpin.vercel.app/login",
+  "dashboard_status": "NEEDS_OWNER_LOGIN",
   "dashboard_setup_required": true,
   "dashboard_note": "إذا ظهرت صفحة 404 في Plausible فهذا يعني غالبا أن موقع eventme.live لم يضف بعد داخل Plausible أو أنك لست داخل حساب مالك اللوحة. التتبع مزروع في الموقع، لكن أرقام الزيارات تحتاج تفعيل اللوحة من مزود التحليلات.",
   "privacy": {
@@ -18,6 +18,7 @@
   "tracked_events": [
     "page_view",
     "search_used",
+    "saved_event",
     "event_opened",
     "city_filter_used",
     "category_filter_used",
@@ -26,11 +27,12 @@
     "directions_clicked",
     "source_clicked",
     "live_screen_opened",
-    "saved_event",
     "share_clicked",
     "organizer_cta_clicked",
     "this_week_opened",
-    "today_opened"
+    "today_opened",
+    "attendance_mode_saved",
+    "attendance_mode_removed"
   ],
   "owner_excluded_paths": [
     "sources.html",

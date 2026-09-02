@@ -1,12 +1,12 @@
 # EventLive Analytics Status
 
-- Generated at: 2026-07-10T03:56:00.073Z
+- Generated at: 2026-09-02T22:34:02.138Z
 - Status: PASS
 - Instrumentation status: PASS
-- Provider: plausible
+- Provider: umami
 - Domain: eventme.live
-- Dashboard: https://plausible.io/eventme.live
-- Dashboard status: NEEDS_PROVIDER_SETUP
+- Dashboard: https://umami-ten-orpin.vercel.app
+- Dashboard status: NEEDS_OWNER_LOGIN
 - Dashboard setup required: yes
 - Cookies: no
 - PII: no
@@ -14,12 +14,13 @@
 ## Dashboard Activation Note
 
 - إذا ظهرت صفحة 404 في Plausible فهذا يعني غالبا أن موقع eventme.live لم يضف بعد داخل Plausible أو أنك لست داخل حساب مالك اللوحة. التتبع مزروع في الموقع، لكن أرقام الزيارات تحتاج تفعيل اللوحة من مزود التحليلات.
-- Login/setup link: https://plausible.io/login?return_to=%2Feventme.live
+- Login/setup link: https://umami-ten-orpin.vercel.app/login
 
 ## Tracked Events
 
 - `page_view`
 - `search_used`
+- `saved_event`
 - `event_opened`
 - `city_filter_used`
 - `category_filter_used`
@@ -28,11 +29,12 @@
 - `directions_clicked`
 - `source_clicked`
 - `live_screen_opened`
-- `saved_event`
 - `share_clicked`
 - `organizer_cta_clicked`
 - `this_week_opened`
 - `today_opened`
+- `attendance_mode_saved`
+- `attendance_mode_removed`
 
 ## Owner-Excluded Paths
 

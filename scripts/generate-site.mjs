@@ -33,6 +33,7 @@ import { canClaimLiveNow, classifyEventKind, eventKindLabel, getEventStatus, LIV
 import { decodeHtmlEntities } from './html-entities.mjs';
 import { compareAttendancePriority, isLiveMoment } from './event-priority.mjs';
 import { homeBoardLiveSection } from './home-board-live.mjs';
+import { ANALYTICS, TRACKED_EVENTS, analyticsDashboardStatus } from './analytics-config.mjs';
 import { homeCalendarStrip, remainingMonthDays, riyadhMonthEndExclusive } from './home-month-calendar.mjs';
 import {
   eventAccessIsFree,
@@ -1386,8 +1387,8 @@ function analyticsHeadSnippet() {
   // "visitor" — phantom Chicago/San Jose sessions appeared in the dashboard
   // within minutes of the first PR build. Local previews are excluded the
   // same way.
-  return `<!-- Privacy-friendly analytics by self-hosted Umami -->
-<script defer src="https://umami-ten-orpin.vercel.app/script.js" data-website-id="f68b920a-155f-4134-a7b1-88bbede979df" data-domains="eventme.live"></script>`;
+  return `<!-- Privacy-friendly analytics by self-hosted ${ANALYTICS.provider} -->
+<script defer src="${ANALYTICS.scriptUrl}" data-website-id="${ANALYTICS.websiteId}" data-domains="${ANALYTICS.domain}"></script>`;
 }
 
 function analyticsRuntimeScript() {
@@ -4280,17 +4281,23 @@ function writeOwnerStatusPage(events, seoDiscovery = {}) {
     platform: platformName,
     domain: platformDomain,
     intent: 'eventlive-owner-status',
+    // Provider identity comes from scripts/analytics-config.mjs, the same module
+    // that writes the <script> tag into every public page — NOT from the
+    // committed reports/analytics-status.json, which froze on 2026-07-10 saying
+    // "plausible" and sent the owner to a dashboard that 404s while Umami was
+    // collecting normally. Only genuinely observed fields still come from the
+    // report (GATES-GOVERNANCE.md §7).
     analytics: {
-      provider: analytics.provider || 'umami',
-      domain: analytics.domain || platformDomain,
+      provider: ANALYTICS.provider,
+      domain: ANALYTICS.domain,
       status: analytics.status || 'INSTRUMENTED',
       instrumentation_status: analytics.instrumentation_status || analytics.status || 'INSTRUMENTED',
-      dashboard_url: analytics.dashboard_url || 'https://umami-ten-orpin.vercel.app',
-      dashboard_login_url: analytics.dashboard_login_url || 'https://umami-ten-orpin.vercel.app/login',
-      dashboard_status: analytics.dashboard_status || 'NEEDS_PROVIDER_SETUP',
-      dashboard_setup_required: analytics.dashboard_setup_required !== false,
-      dashboard_note: analytics.dashboard_note || 'لوحة Umami ذاتية الاستضافة على Vercel المالك — سجّل الدخول بحساب المالك لعرضها.',
-      tracked_events: analytics.tracked_events || [],
+      dashboard_url: ANALYTICS.dashboardUrl,
+      dashboard_login_url: ANALYTICS.dashboardLoginUrl,
+      dashboard_status: analyticsDashboardStatus(),
+      dashboard_setup_required: !ANALYTICS.confirmed,
+      dashboard_note: `لوحة ${ANALYTICS.provider === 'umami' ? 'Umami ذاتية الاستضافة' : ANALYTICS.provider} — سجّل الدخول بحساب المالك لعرض أرقام الزوار.`,
+      tracked_events: TRACKED_EVENTS,
       privacy: analytics.privacy || { cookies: false, pii: false },
       note: 'هذه الصفحة تثبت أن التتبع مزروع في الصفحات العامة. أرقام الزوار الحقيقية تظهر بعد تفعيل لوحة مزود التحليلات للدومين.'
     },
