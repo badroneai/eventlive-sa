@@ -1,5 +1,5 @@
 # EventLive Official Single-Session Activation
-- Generated at: 2026-09-01T21:39:36.176Z
+- Generated at: 2026-09-02T04:56:32.221Z
 - Max duration hours: 8
 - Activated: 27
 - Skipped long events: 7
@@ -27,9 +27,9 @@
 | Saudi Food and Drug Authority Events | احتياطات الأمان عند استخدام مبيدات آفات الصحة العامة | 1h | official-online-workshop |
 | Saudi Food and Drug Authority Events | دور المواصفات القياسية في دعم عمليات التعقيم والتغليف ووضع المعلومات التعريفية للمصانع المحلية | 1h | official-online-workshop |
 | Saudi Universities and Technical Colleges | Boat Bash Cruise | 6h | official-community-session |
-| MDLBEAST Events | Beast House | 6h | official-entertainment-session |
 | Saudi Universities and Technical Colleges | Register for the World Breastfeeding Week Awareness Lecture | 2h | official-community-session |
 | Saudi Universities and Technical Colleges | Summer Splash at South Beach | 4h | official-community-session |
+| MDLBEAST Events | Beast House | 6h | official-entertainment-session |
 | Qassim Chamber Events | الحوكمة والمخاطر والامتثال | 2h | official-business-workshop |
 | Saudi Food and Drug Authority Events | شرح وتوضيح إجراءات الاستيراد والتصدير وحرية البيع | 2h | official-online-workshop |
 | Saudi Food and Drug Authority Events | دور الهيئة العامة للغذاء و الدواء في ضمان سلامة الاستخدام الامن لجهاز الماموجرام | 1h | official-online-workshop |

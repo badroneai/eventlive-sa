@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-01T21:19:48.581Z",
+  "generated_at": "2026-09-02T04:44:41.273Z",
   "source_registry": "data/source_registry.json",
   "collection_report": "reports/source-collection-report.json",
   "output_dir": "data/raw/browser-probes",
@@ -7,22 +7,290 @@
     "selected_ids": [],
     "scope": "priority",
     "limit": 8,
-    "probed_this_run": 2,
-    "fresh_results_available": 2,
+    "probed_this_run": 3,
+    "fresh_results_available": 5,
     "wait_ms": 4500,
     "timeout_ms": 30000,
     "failure_cooldown_hours": 72
   },
   "methodology": "Browser-level probe inspired by cafe platform work: classify fetchability, hydration payloads, network APIs, structured HTML, rendered DOM, and policy-protected lanes before writing extractors.",
   "totals": {
-    "probed": 2,
-    "browser_network_api": 1,
+    "probed": 5,
+    "browser_network_api": 2,
     "browser_hydration_payload": 0,
-    "rendered_html_candidates": 1,
+    "rendered_html_candidates": 3,
     "blocked_or_protected": 0,
     "policy_skipped": 0
   },
   "sources": [
+    {
+      "id": "misk-hub-events",
+      "probed_at": "2026-09-02T04:44:53.029Z",
+      "name": "Misk Hub Events",
+      "priority": 28,
+      "url": "https://hub.misk.org.sa/en/events/",
+      "final_url": "https://hub.misk.org.sa/en/events/",
+      "status": "ok",
+      "http_status": 200,
+      "navigation_error": "",
+      "duration_ms": 11175,
+      "classification": "browser-network-api",
+      "next_action": "ثبت endpoint مرشحًا كجامع مباشر، ثم اكتب extractor من JSON مع اختبار انحدار.",
+      "title": "Misk Hub Events",
+      "text_bytes": 2676,
+      "html_bytes": 249296,
+      "html_snapshot": "data/raw/browser-probes/misk-hub-events-2026-09-02T04-44-41-273Z.html",
+      "screenshot": "data/raw/browser-probes/misk-hub-events-2026-09-02T04-44-41-273Z.png",
+      "signals": {
+        "has_next_data": false,
+        "has_nuxt": false,
+        "has_json_ld": false,
+        "has_event_schema": false,
+        "date_snippets": [
+          "Insights العربية Sign in Skills Online 25 Aug 2026 Navigating the Cyber Map: How to Choose Your Specialization & Build a Corporate",
+          "osing on 25th August 2026 Skills Online 26 Aug 2026 How to Choose Your Career Path and Keep Up with Labor Market Changes Through Mi",
+          "eep Up with Labor Market Changes Arabic 26 Aug 2026 7:00 pm : 8:00 pm More Details Hybrid This event has Passed Navigating the Cybe",
+          "Build a Corporate Career English,Arabic 25 Aug 2026 1:00 pm : 2:00 pm More Details Online This event has Passed Development Media:",
+          "From Message to Impact Al Baha Arabic 22 - 23 Aug 2026 6:00 pm : 10:00 pm More Details Online This event has Passed Cybersecurity",
+          "in the Workplace Arabic 01 Jul 2026 7:00 pm : 8:00 pm More Details Online This event has Passed Enhancing Efficienc",
+          "ce Using Artificial Intelligence Arabic 08 May 2026 9:00 pm : 10:00 pm More Details Online This event has Passed How to Choose Your",
+          "eep Up with Labor Market Changes Arabic 08 May 2026 8:00 pm : 9:00 pm More Details Online This event has Passed Workforce Skills in"
+        ],
+        "event_like_links": [
+          {
+            "text": "Programs",
+            "href": "https://hub.misk.org.sa/en/programs/"
+          },
+          {
+            "text": "Events",
+            "href": "https://hub.misk.org.sa/en/events/"
+          },
+          {
+            "text": "العربية",
+            "href": "https://hub.misk.org.sa/ar/events/"
+          },
+          {
+            "text": "Sign in",
+            "href": "https://hub.misk.org.sa/en/events/#"
+          },
+          {
+            "text": "Programs",
+            "href": "https://hub.misk.org.sa/en/programs/"
+          },
+          {
+            "text": "Events",
+            "href": "https://hub.misk.org.sa/en/events/"
+          },
+          {
+            "text": "العربية",
+            "href": "https://hub.misk.org.sa/ar/events/"
+          },
+          {
+            "text": "Skills",
+            "href": "https://hub.misk.org.sa/events/?category=Skills#event"
+          },
+          {
+            "text": "Share",
+            "href": "https://hub.misk.org.sa/en/events/#"
+          },
+          {
+            "text": "",
+            "href": "https://hub.misk.org.sa/en/events/#"
+          },
+          {
+            "text": "Skills",
+            "href": "https://hub.misk.org.sa/events/?category=Skills#event"
+          },
+          {
+            "text": "Share",
+            "href": "https://hub.misk.org.sa/en/events/#"
+          },
+          {
+            "text": "",
+            "href": "https://hub.misk.org.sa/en/events/#"
+          },
+          {
+            "text": "Skills",
+            "href": "https://hub.misk.org.sa/events/?category=Skills#event"
+          },
+          {
+            "text": "Share",
+            "href": "https://hub.misk.org.sa/en/events/#"
+          },
+          {
+            "text": "",
+            "href": "https://hub.misk.org.sa/en/events/#"
+          },
+          {
+            "text": "Skills",
+            "href": "https://hub.misk.org.sa/events/?category=Skills#event"
+          },
+          {
+            "text": "Share",
+            "href": "https://hub.misk.org.sa/en/events/#"
+          },
+          {
+            "text": "",
+            "href": "https://hub.misk.org.sa/en/events/#"
+          },
+          {
+            "text": "Skills",
+            "href": "https://hub.misk.org.sa/events/?category=Skills#event"
+          }
+        ]
+      },
+      "script_signals": {
+        "next_data_scripts": 0,
+        "nuxt_scripts": 0,
+        "json_ld_scripts": 0,
+        "large_inline_scripts": 5
+      },
+      "network_total": 4,
+      "network_endpoints": [
+        {
+          "method": "POST",
+          "status": 200,
+          "url": "https://hub.misk.org.sa/api/events/RenderLazyLoadAllEventsOfSeries",
+          "content_type": "application/json",
+          "resource_type": "xhr",
+          "request_post_data": "{\"SkipCount\":0,\"CurrentCulture\":\"en-US\",\"CategoryId\":0,\"OrderBy\":\"\",\"EventTypeFilters\":[],\"LanguageFilters\":[],\"StatusFilters\":[],\"FromDate\":null,\"ToDate\":null,\"LocationId\":null,\"CurrentPageId\":\"4411\"}",
+          "response_shape": "json-like-invalid",
+          "preview": "{\"nextSkippedValue\":8,\"stringObjectValues\":\"<div class=\\\"article-outer v3\\\"><div class=\\\" time-label\\\"><span>Online</span></div><div class=\\\"article-img\\\"><a href=\\\"/events/skills/building-your-future-career-in-al-bahas-tourism-secto/\\\"><img src=\\\"/media/auzpxspl/albaha-en.png\\\" alt=\\\"logo\\\"></a></div><div class=\\\"article-content\\\"><div class=\\\"article-text-wrapper\\\"><div class=\\\"body-text-3 mgbx1 color-peach font-weight-200\\\" style=\\\"white-space:nowrap;\\\"><span class=\\\"color-peach mgafx1\\\"><i class=\\\"fas fa-circle\\\"></i></span>This event has Passed</div><div class=\\\"article-title\\\"><div class=\\\"article-title-inner 6 red\\\"><a href=/events/skills/building-your-future-career-in-al-bahas-tourism-secto/><b>How to Choose Your Career Path and Keep Up with Labor Market Changes</b></a></div></div><div class=\\\"item-list\\\"><ul><li><i class=\\\"far fa-dxh-format font-weight-200\\\"></i><span>Arabic</span></li><li><i class=\\\"far fa-calendar font-weight-200\\\"></i><span>26 Aug 2026</span></li><li><i class=\\\"far fa-clock font-weight-200\\\"></i><span>7:00 pm : 8:00 pm</span></li></ul></div></div><div class=\\\"bottom-links-wrapper pdtx2 align-items-center event-item-card-wrapper\\\"><div class=\\\"card-btn-state-login d-none btn-bar-wrapper alone pdafx2\\\"><a href=\\\"/events/skills/building-your-future-career-in-al-bahas-tourism-secto/\\\" class=\\\"card-btn-state-login d-none btn small light-turquoise\\\">More Details\\n</a></div><div class=\\\"card-btn-state-logout d-none w-100 btn-bar-wrapper pdafx2 alone\\\"><a href=\\\"/events/skills/building-your-future-career-in-al-bahas-tourism-secto/\\\" class=\\\"card-btn-state-logout d-none btn small w-100 light-turquoise\\\">More Details\\n</a></div><div class=\\\"icon-link\\\"><a href=\\\"javascript:;\\\" data-recombee-id=\\\"9763\\\" data-id=\\\"9763\\\" class=\\\"btn-icon js-apply-no"
+        },
+        {
+          "method": "POST",
+          "status": 200,
+          "url": "https://mpc-prod-24-s6uit34pua-uw.a.run.app/events?cee=no",
+          "content_type": "application/json",
+          "resource_type": "fetch",
+          "request_post_data": "{\"event_name\":\"PageView\",\"smart_setup\":{\"auto_web_details_data\":\"{\\\"event_name\\\":[{\\\"rid\\\":\\\"1692585345173908\\\",\\\"v\\\":[\\\"Share\\\",\\\"العربية\\\",\\\"Misk Track\\\",\\\"Skills\\\",\\\"Filter By\\\"]}],\\\"entity_name\\\":[{\\\"rid\\\":\\\"1773866003567137\\\",\\\"v\\\":[\\\"Misk Tracks\\\"]}],\\\"page_title\\\":[{\\\"rid\\\":\\\"1070733532120362\\\",\\\"v\\\":[\\\"Misk Hub Events\\\"]}],\\\"page_url\\\":[{\\\"rid\\\":\\\"2118980492387472\\\",\\\"v\\\":[\\\"Misk Tracks\\\"]}],\\\"page_keywords\\\":[{\\\"rid\\\":\\\"1541635753943012\\\",\\\"v\\\":[\\\"Misk Foundation, Misk Hub, Misk Events\\\"]}],\\\"page_type\\\":[{\\\"rid\\\":\\\"1795460491468843\\\",\\\"v\\\":[\\\"Misk Tracks \\\\nPrograms\\\\nEvents\\\\nInsights\\\\nالعربية\\\\nSign in\\\"]}],\\\"page_description\\\":[{\\\"rid\\\":\\\"1275965654555185\\\",\\\"v\\\":[\\\"Stay up to date with Misk's latest events! Register to attend and participate in upcoming conferences, webinars, forums, and more\\\"]}],\\\"currencies_accepted\\\":[{\\\"rid\\\":\\\"1085300450538377\\\",\\\"v\\\":[\\\"Misk Tracks\\\"]}]}\",\"is_auto_web_details\":true},\"event_id\":\"ob3_plugin-set_a17ad91b163252feb775a739b800f39def19cbd3bd3975f2cef37ed628365916\",\"fb.pixel_id\":\"1038245586939616\",\"website_context\":{\"location\":\"https://hub.misk.org.sa/en/events/\",\"referrer\":\"\",\"isInIFrame\":false},\"fb.fbp\":\"fb.2.1788324285805.166725817",
+          "response_shape": "empty",
+          "preview": ""
+        },
+        {
+          "method": "POST",
+          "status": 200,
+          "url": "https://client-rapi-us-west.recombee.com/misk-hub-prod/recomms/users/19edb9bf4d034db4b11727d2cee48f0f/items/?frontend_timestamp=1788324285&frontend_sign=cd81a4c3b3ee1368c2348e0d234863f5f4d522a3",
+          "content_type": "application/json",
+          "resource_type": "xhr",
+          "request_post_data": "{\"count\":5,\"scenario\":\"Hero-Events-Listing-Anonymous\",\"returnProperties\":true,\"cascadeCreate\":true}",
+          "response_shape": "json-object:recommId,recomms,numberNextRecommsCalls",
+          "preview": "{\"recommId\": \"c3d23a370f3152e6082be76dd0dfcb69\", \"recomms\": [], \"numberNextRecommsCalls\": 0}"
+        }
+      ],
+      "network_sample": [
+        {
+          "method": "POST",
+          "status": 200,
+          "url": "https://hub.misk.org.sa/api/events/RenderLazyLoadAllEventsOfSeries",
+          "content_type": "application/json",
+          "resource_type": "xhr",
+          "request_post_data": "{\"SkipCount\":0,\"CurrentCulture\":\"en-US\",\"CategoryId\":0,\"OrderBy\":\"\",\"EventTypeFilters\":[],\"LanguageFilters\":[],\"StatusFilters\":[],\"FromDate\":null,\"ToDate\":null,\"LocationId\":null,\"CurrentPageId\":\"4411\"}",
+          "response_shape": "json-like-invalid",
+          "preview": "{\"nextSkippedValue\":8,\"stringObjectValues\":\"<div class=\\\"article-outer v3\\\"><div class=\\\" time-label\\\"><span>Online</span></div><div class=\\\"article-img\\\"><a href=\\\"/events/skills/building-your-future-career-in-al-bahas-tourism-secto/\\\"><img src=\\\"/media/auzpxspl/albaha-en.png\\\" alt=\\\"logo\\\"></a></div><div class=\\\"article-content\\\"><div class=\\\"article-text-wrapper\\\"><div class=\\\"body-text-3 mgbx1 color-peach font-weight-200\\\" style=\\\"white-space:nowrap;\\\"><span class=\\\"color-peach mgafx1\\\"><i class=\\\"fas fa-circle\\\"></i></span>This event has Passed</div><div class=\\\"article-title\\\"><div class=\\\"article-title-inner 6 red\\\"><a href=/events/skills/building-your-future-career-in-al-bahas-tourism-secto/><b>How to Choose Your Career Path and Keep Up with Labor Market Changes</b></a></div></div><div class=\\\"item-list\\\"><ul><li><i class=\\\"far fa-dxh-format font-weight-200\\\"></i><span>Arabic</span></li><li><i class=\\\"far fa-calendar font-weight-200\\\"></i><span>26 Aug 2026</span></li><li><i class=\\\"far fa-clock font-weight-200\\\"></i><span>7:00 pm : 8:00 pm</span></li></ul></div></div><div class=\\\"bottom-links-wrapper pdtx2 align-items-center event-item-card-wrapper\\\"><div class=\\\"card-btn-state-login d-none btn-bar-wrapper alone pdafx2\\\"><a href=\\\"/events/skills/building-your-future-career-in-al-bahas-tourism-secto/\\\" class=\\\"card-btn-state-login d-none btn small light-turquoise\\\">More Details\\n</a></div><div class=\\\"card-btn-state-logout d-none w-100 btn-bar-wrapper pdafx2 alone\\\"><a href=\\\"/events/skills/building-your-future-career-in-al-bahas-tourism-secto/\\\" class=\\\"card-btn-state-logout d-none btn small w-100 light-turquoise\\\">More Details\\n</a></div><div class=\\\"icon-link\\\"><a href=\\\"javascript:;\\\" data-recombee-id=\\\"9763\\\" data-id=\\\"9763\\\" class=\\\"btn-icon js-apply-no"
+        },
+        {
+          "method": "POST",
+          "status": 200,
+          "url": "https://mpc-prod-24-s6uit34pua-uw.a.run.app/events?cee=no",
+          "content_type": "application/json",
+          "resource_type": "fetch",
+          "request_post_data": "{\"event_name\":\"PageView\",\"smart_setup\":{\"auto_web_details_data\":\"{\\\"event_name\\\":[{\\\"rid\\\":\\\"1692585345173908\\\",\\\"v\\\":[\\\"Share\\\",\\\"العربية\\\",\\\"Misk Track\\\",\\\"Skills\\\",\\\"Filter By\\\"]}],\\\"entity_name\\\":[{\\\"rid\\\":\\\"1773866003567137\\\",\\\"v\\\":[\\\"Misk Tracks\\\"]}],\\\"page_title\\\":[{\\\"rid\\\":\\\"1070733532120362\\\",\\\"v\\\":[\\\"Misk Hub Events\\\"]}],\\\"page_url\\\":[{\\\"rid\\\":\\\"2118980492387472\\\",\\\"v\\\":[\\\"Misk Tracks\\\"]}],\\\"page_keywords\\\":[{\\\"rid\\\":\\\"1541635753943012\\\",\\\"v\\\":[\\\"Misk Foundation, Misk Hub, Misk Events\\\"]}],\\\"page_type\\\":[{\\\"rid\\\":\\\"1795460491468843\\\",\\\"v\\\":[\\\"Misk Tracks \\\\nPrograms\\\\nEvents\\\\nInsights\\\\nالعربية\\\\nSign in\\\"]}],\\\"page_description\\\":[{\\\"rid\\\":\\\"1275965654555185\\\",\\\"v\\\":[\\\"Stay up to date with Misk's latest events! Register to attend and participate in upcoming conferences, webinars, forums, and more\\\"]}],\\\"currencies_accepted\\\":[{\\\"rid\\\":\\\"1085300450538377\\\",\\\"v\\\":[\\\"Misk Tracks\\\"]}]}\",\"is_auto_web_details\":true},\"event_id\":\"ob3_plugin-set_a17ad91b163252feb775a739b800f39def19cbd3bd3975f2cef37ed628365916\",\"fb.pixel_id\":\"1038245586939616\",\"website_context\":{\"location\":\"https://hub.misk.org.sa/en/events/\",\"referrer\":\"\",\"isInIFrame\":false},\"fb.fbp\":\"fb.2.1788324285805.166725817",
+          "response_shape": "empty",
+          "preview": ""
+        },
+        {
+          "method": "POST",
+          "status": 200,
+          "url": "https://client-rapi-us-west.recombee.com/misk-hub-prod/recomms/users/19edb9bf4d034db4b11727d2cee48f0f/items/?frontend_timestamp=1788324285&frontend_sign=cd81a4c3b3ee1368c2348e0d234863f5f4d522a3",
+          "content_type": "application/json",
+          "resource_type": "xhr",
+          "request_post_data": "{\"count\":5,\"scenario\":\"Hero-Events-Listing-Anonymous\",\"returnProperties\":true,\"cascadeCreate\":true}",
+          "response_shape": "json-object:recommId,recomms,numberNextRecommsCalls",
+          "preview": "{\"recommId\": \"c3d23a370f3152e6082be76dd0dfcb69\", \"recomms\": [], \"numberNextRecommsCalls\": 0}"
+        },
+        {
+          "method": "POST",
+          "status": 200,
+          "url": "https://mpc-prod-24-s6uit34pua-uw.a.run.app/events?cee=no",
+          "content_type": "application/json",
+          "resource_type": "fetch",
+          "request_post_data": "{\"event_name\":\"PageView\",\"smart_setup\":{\"auto_web_details_data\":\"{\\\"event_name\\\":[{\\\"rid\\\":\\\"1692585345173908\\\",\\\"v\\\":[\\\"Share\\\",\\\"العربية\\\",\\\"Misk Track\\\",\\\"Skills\\\",\\\"Filter By\\\"]}],\\\"entity_name\\\":[{\\\"rid\\\":\\\"1773866003567137\\\",\\\"v\\\":[\\\"Misk Tracks\\\"]}],\\\"page_title\\\":[{\\\"rid\\\":\\\"1070733532120362\\\",\\\"v\\\":[\\\"Misk Hub Events\\\"]}],\\\"page_url\\\":[{\\\"rid\\\":\\\"2118980492387472\\\",\\\"v\\\":[\\\"Misk Tracks\\\"]}],\\\"page_keywords\\\":[{\\\"rid\\\":\\\"1541635753943012\\\",\\\"v\\\":[\\\"Misk Foundation, Misk Hub, Misk Events\\\"]}],\\\"page_type\\\":[{\\\"rid\\\":\\\"1795460491468843\\\",\\\"v\\\":[\\\"Misk Tracks \\\\nPrograms\\\\nEvents\\\\nInsights\\\\nالعربية\\\\nSign in\\\"]}],\\\"page_description\\\":[{\\\"rid\\\":\\\"1275965654555185\\\",\\\"v\\\":[\\\"Stay up to date with Misk's latest events! Register to attend and participate in upcoming conferences, webinars, forums, and more\\\"]}],\\\"currencies_accepted\\\":[{\\\"rid\\\":\\\"1085300450538377\\\",\\\"v\\\":[\\\"Misk Tracks\\\"]}]}\",\"is_auto_web_details\":true},\"event_id\":\"ob3_plugin-set_e61d3936c0d6e7e8e26f63a3df996e05ae3cba1ea55abebc2c5b68fab47889d2\",\"fb.pixel_id\":\"1038245586939616\",\"website_context\":{\"location\":\"https://hub.misk.org.sa/en/events/\",\"referrer\":\"\",\"isInIFrame\":false},\"fb.fbp\":\"fb.2.1788324285805.166725817",
+          "response_shape": "empty",
+          "preview": ""
+        }
+      ]
+    },
+    {
+      "id": "riyadh-city-events",
+      "probed_at": "2026-09-02T04:45:05.290Z",
+      "name": "Riyadh City Events",
+      "priority": 51,
+      "url": "https://riyadh.sa/en/events/all",
+      "final_url": "https://riyadh.sa/en/events/all",
+      "status": "ok",
+      "http_status": 200,
+      "navigation_error": "",
+      "duration_ms": 12213,
+      "classification": "rendered-html-candidates",
+      "next_action": "اكتب extractor مرن من DOM بعد الرندر أو حسن selector الحالي.",
+      "title": "الموقع الرسمي لمدينة الرياض",
+      "text_bytes": 828,
+      "html_bytes": 155265,
+      "html_snapshot": "data/raw/browser-probes/riyadh-city-events-2026-09-02T04-44-41-273Z.html",
+      "screenshot": "data/raw/browser-probes/riyadh-city-events-2026-09-02T04-44-41-273Z.png",
+      "signals": {
+        "has_next_data": false,
+        "has_nuxt": false,
+        "has_json_ld": false,
+        "has_event_schema": false,
+        "date_snippets": [],
+        "event_like_links": [
+          {
+            "text": "",
+            "href": "https://riyadh.sa/en/events/all"
+          },
+          {
+            "text": "All Events",
+            "href": "https://riyadh.sa/en/events/all"
+          },
+          {
+            "text": "events.title",
+            "href": "https://riyadh.sa/en/events"
+          }
+        ]
+      },
+      "script_signals": {
+        "next_data_scripts": 0,
+        "nuxt_scripts": 0,
+        "json_ld_scripts": 0,
+        "large_inline_scripts": 0
+      },
+      "network_total": 2,
+      "network_endpoints": [],
+      "network_sample": [
+        {
+          "method": "GET",
+          "status": 200,
+          "url": "https://riyadh.sa/assets/i18n/ar.json",
+          "content_type": "application/json",
+          "resource_type": "xhr",
+          "request_post_data": "",
+          "response_shape": "json-like-invalid",
+          "preview": "{ \"lang\": \"ar\", \"main\": { \"title\": \"مدينة الرياض\" }, \"lastUpdated\": { \"label\": \"تاريخ آخر تعديل\", \"timezone\": \"بتوقيت السعودية\" }, \"cookies\": { \"title\": \"ملفات تعريف الارتباط\", \"consentIntro\": \"هذا الموقع يستخدم ملفات تعريف الارتباط الخاصة للتأكد من سهولة الاستخدام وضمان تحسين تجربتك أثناء التصفح. من خلال الاستمرار في تصفح هذا الموقع، فإنك تقر بقبول استخدام ملفات تعريف الارتباط.\", \"privacyPolicy\": \"سياسة الخصوصية\", \"accept\": \"قبول\", \"reject\": \"رفض\", \"manageLink\": \"إدارة ملفات تعريف الارتباط\", \"manageTitle\": \"إدارة ملفات تعريف الارتباط\", \"thanksTitle\": \"ملفات تعريف الارتباط\", \"intro\": \"عند زيارة أي موقع على الويب، قد يخزّن هذا الأخير المعلومات على المستعرض أو يستردها على شكل ملفات تعريف ارتباط على الأغلب. وقد تكون هذه المعلومات عنك أو عن تفضيلاتك أو عن جهازك أو قد يتم استخدامها ليعمل الموقع كما تتوقع. لا تعرّف المعلومات عنك عادةً مباشرةً، ولكنها قد تمنحك تجربة ويب أكثر تخصيصًا. يمكنك اختيار عدم السماح ببعض أنواع ملفات تعريف الارتباط. انقر فوق عناوين الفئات المختلفة لمعرفة المزيد وتغيير إعداداتنا الافتراضية. ومع ذلك، يجب أن تعرف أن حظر بعض أنواع ملفات تعريف الارتباط قد يؤثر في تجربتك على الموقع وفي الخدمات التي يمكننا تقديمها.\", \"necessary\": \"ملفات تعريف الارتباط هذه ضرورية للغاية (نشطة دائماً)\", \"performance\": \"ملفات تعريف الارتباط الخاصة بالأداء\", \"functional\": \"ملفات تعريف الارتباط الوظيفية\", \"targeting\": \"ملفات تعريف الارتباط المُستهدفة\", \"confirm\": \"تأكيد خياراتي\", \"rejectAll\": \"رفض الكل\", \"thanksMessage\": \"شكرًا! تم تسجيل استجابتك بنجاح. إذا كنت ترغب في تعديل الإجابة أو تغييرها، يمكنك الرجوع عبر الضغط على زر تراجع.\", \"undo\": \"تراجع\", \"close\": \"إغلاق\" }, \"fileUploader\": { \"hint\": \"الحد الأقصى لحجم الملف المسموح به هو {{size}} ميجابايت، وصيغ الملفات المدعومة تشمل {{"
+        },
+        {
+          "method": "GET",
+          "status": 200,
+          "url": "https://riyadh.sa/assets/i18n/en.json",
+          "content_type": "application/json",
+          "resource_type": "xhr",
+          "request_post_data": "",
+          "response_shape": "json-like-invalid",
+          "preview": "{ \"lang\": \"en\", \"main\": { \"title\": \"Riyadh City\" }, \"lastUpdated\": { \"label\": \"Last Modified Date\", \"timezone\": \"Saudi Arabia Time\" }, \"cookies\": { \"title\": \"Cookies\", \"consentIntro\": \"This site uses its own cookies to ensure ease of use and to improve your experience while browsing. By continuing to browse this site, you acknowledge and accept the use of cookies.\", \"privacyPolicy\": \"Privacy Policy\", \"accept\": \"Accept\", \"reject\": \"Reject\", \"manageLink\": \"Manage Cookies\", \"manageTitle\": \"Manage Cookies\", \"thanksTitle\": \"Cookies\", \"intro\": \"Whenever you visit a website, it may store or retrieve information on your browser, mostly in the form of cookies. This information might be about you, your preferences, or your device, and is mostly used to make the site work as you expect it to. The information does not usually identify you directly, but it can give you a more personalized web experience. You can choose not to allow some types of cookies. Click on the different category headings to find out more and change our default settings. However, you should know that blocking some types of cookies may impact your experience of the site and the services we are able to offer.\", \"necessary\": \"These cookies are strictly necessary (always active)\", \"performance\": \"Performance cookies\", \"functional\": \"Functional cookies\", \"targeting\": \"Targeting cookies\", \"confirm\": \"Confirm my choices\", \"rejectAll\": \"Reject all\", \"thanksMessage\": \"Thank you! Your response has been recorded successfully. If you would like to edit or change your answer, you can go back by clicking the undo button.\", \"undo\": \"Undo\", \"close\": \"Close\" }, \"fileUploader\": { \"hint\": \"Maximum file size allowed is {{size}}"
+        }
+      ]
+    },
     {
       "id": "asharqia-chamber-events",
       "probed_at": "2026-09-01T21:20:06.102Z",
@@ -390,6 +658,163 @@
       "network_total": 0,
       "network_endpoints": [],
       "network_sample": []
+    },
+    {
+      "id": "jouf-university-programs",
+      "probed_at": "2026-09-02T04:45:21.148Z",
+      "name": "Jouf University Summer Programs",
+      "priority": 81,
+      "url": "https://ju.edu.sa/ar",
+      "final_url": "https://ju.edu.sa/ar",
+      "status": "ok",
+      "http_status": 200,
+      "navigation_error": "",
+      "duration_ms": 15814,
+      "classification": "rendered-html-candidates",
+      "next_action": "اكتب extractor مرن من DOM بعد الرندر أو حسن selector الحالي.",
+      "title": "جامعة الجوف | الرئيسية",
+      "text_bytes": 211566,
+      "html_bytes": 1783704,
+      "html_snapshot": "data/raw/browser-probes/jouf-university-programs-2026-09-02T04-44-41-273Z.html",
+      "screenshot": "data/raw/browser-probes/jouf-university-programs-2026-09-02T04-44-41-273Z.png",
+      "signals": {
+        "has_next_data": false,
+        "has_nuxt": false,
+        "has_json_ld": false,
+        "has_event_schema": false,
+        "date_snippets": [
+          "خبار والإعلانات أخبار إعلانات الصورة 18 أبريل, 2024 شاركت الجامعة في معرض جنيف الدولي للاختراعات في نسخته 49 والذي انطلقت أعم",
+          "من خلال جناحها ال اقرأ المزيد الصورة 18 أبريل, 2024 ضمن مبادرة هيئة تنمية البحث والتطوير والابتكار؛ لدعم المختبرات البحثية با",
+          "والتطوير والابتكار اقرأ المزيد الصورة 1 سبتمبر, 2026 استقبل سعادة رئيس جامعة الجوف الأستاذ الدكتور محمد بن عبدالله الشايع، عمي",
+          "ام الجامعي 1447هـ اقرأ المزيد الصورة 31 أغسطس, 2026 استقبل سعادة رئيس جامعة الجوف الأستاذ الدكتور محمد بن عبدالله الشايع، عمي",
+          "ام الجامعي ١٤٤٧هـ اقرأ المزيد الصورة 30 أغسطس, 2026 برعاية وتشريف وحضور سعادة رئيس جامعة الجوف الأستاذ الدكتور محمد بن عبدالل",
+          "ت شعار \"جامعتك وج اقرأ المزيد الصورة 30 أغسطس, 2026 التقى سعادة رئيس جامعة الجوف الأستاذ الدكتور محمد بن عبدالله الشايع، عددً",
+          "لأكاديمية والاجتم اقرأ المزيد الصورة 27 أغسطس, 2026 دشّن صاحب السمو الملكي الأمير فيصل بن نواف بن عبدالعزيز، أمير منطقة الجوف",
+          "وسعادة رئيس الجامعة أ.د. اقرأ المزيد 27 أغسطس, 2026 التقى معالي وزير التعليم، رئيس مجلس شؤون الجامعات يوسف بن عبدالله البنيان"
+        ],
+        "event_like_links": [
+          {
+            "text": "دليل البرامج",
+            "href": "https://ju.edu.sa/ar/programs"
+          },
+          {
+            "text": "التقويم الأكاديمي",
+            "href": "https://ju.edu.sa/ar/academic-calendar"
+          },
+          {
+            "text": "الفعاليات",
+            "href": "https://ju.edu.sa/ar/events-calendar"
+          },
+          {
+            "text": "دليل البرامج",
+            "href": "https://ju.edu.sa/ar/programs"
+          },
+          {
+            "text": "التقويم الأكاديمي",
+            "href": "https://ju.edu.sa/ar/academic-calendar"
+          },
+          {
+            "text": "الفعاليات",
+            "href": "https://ju.edu.sa/ar/events-calendar"
+          },
+          {
+            "text": "اقرأ المزيد",
+            "href": "https://ju.edu.sa/ar/week-four-jouf-university-summer-program-2026"
+          },
+          {
+            "text": "اقرأ المزيد",
+            "href": "https://ju.edu.sa/ar/university%E2%80%99s-2026-summer-program"
+          },
+          {
+            "text": "اقرأ المزيد",
+            "href": "https://ju.edu.sa/ar/program-professional-volunteering"
+          },
+          {
+            "text": "اقرأ المزيد",
+            "href": "https://ju.edu.sa/ar/annual-training-program"
+          },
+          {
+            "text": "اقرأ المزيد",
+            "href": "https://ju.edu.sa/ar/intellectual-awareness-workshop"
+          },
+          {
+            "text": "اقرأ المزيد",
+            "href": "https://ju.edu.sa/ar/training-program-support-institutional-development"
+          },
+          {
+            "text": "اقرأ المزيد",
+            "href": "https://ju.edu.sa/ar/university-council-convened-its-seventh-session"
+          },
+          {
+            "text": "اقرأ المزيد",
+            "href": "https://ju.edu.sa/ar/college-pharmacy-organizes-training-course"
+          },
+          {
+            "text": "اقرأ المزيد",
+            "href": "https://ju.edu.sa/ar/secretarial-work-office-management-workshop"
+          },
+          {
+            "text": "اقرأ المزيد",
+            "href": "https://ju.edu.sa/ar/jouf-university-concludes-summer-student-activities-program"
+          },
+          {
+            "text": "اقرأ المزيد",
+            "href": "https://ju.edu.sa/ar/jouf-university-launches-1447-orientation-programs"
+          },
+          {
+            "text": "اقرأ المزيد",
+            "href": "https://ju.edu.sa/ar/jouf-university-holds-saudi-ardah-dance-workshop"
+          },
+          {
+            "text": "اقرأ المزيد",
+            "href": "https://ju.edu.sa/ar/he-president-jouf-university-launches-ai-course"
+          },
+          {
+            "text": "اقرأ المزيد",
+            "href": "https://ju.edu.sa/ar/jouf-university-organizes-awareness-workshop-titled-how-protect-yourself-drowning-conjunction-world"
+          }
+        ]
+      },
+      "script_signals": {
+        "next_data_scripts": 0,
+        "nuxt_scripts": 0,
+        "json_ld_scripts": 0,
+        "large_inline_scripts": 1
+      },
+      "network_total": 3,
+      "network_endpoints": [],
+      "network_sample": [
+        {
+          "method": "POST",
+          "status": 200,
+          "url": "https://freeada.skynettechnologies.com/api/widget-settings",
+          "content_type": "application/json",
+          "resource_type": "xhr",
+          "request_post_data": "------WebKitFormBoundaryECjw0mBDQGkIclZI Content-Disposition: form-data; name=\"website_url\" ju.edu.sa ------WebKitFormBoundaryECjw0mBDQGkIclZI--",
+          "response_shape": "json-like-invalid",
+          "preview": "{\"Data\":{\"id\":3230,\"widget_position\":\"top_left\",\"widget_color_code\":\"#1b8354\",\"widget_text_color\":null,\"is_widget_text_color\":0,\"widget_icon_type\":\"aioa-icon-type-1\",\"widget_hide_icon_type\":\"aioa-hide-icon-type-34\",\"widget_icon_size\":\"aioa-default-icon\",\"widget_position_top\":null,\"widget_position_right\":0,\"widget_position_bottom\":0,\"widget_position_left\":null,\"widget_icon_size_custom\":20,\"is_widget_custom_position\":0,\"is_widget_custom_size\":0,\"is_mobile_position\":0,\"widget_position_mobile\":\"bottom_right\",\"widget_position_top_mobile\":null,\"widget_position_right_mobile\":\"0\",\"widget_position_bottom_mobile\":\"0\",\"widget_position_left_mobile\":null,\"is_widget_custom_position_mobile\":0,\"widget_position_vertical_center_offset_mobile\":\"0\",\"widget_position_horizontal_center_offset_mobile\":\"0\",\"is_widget_movable\":0,\"is_mobile_icon\":0,\"widget_icon_size_mobile\":null,\"is_widget_custom_size_mobile\":0,\"is_scan_plan_purchased\":1,\"widget_icon_size_custom_mobile\":null,\"adobe_key\":null,\"payment_step\":1,\"created_at\":\"2024-09-15T05:30:26.000000Z\",\"updated_at\":\"2026-08-31T11:29:35.000000Z\",\"is_widget_check\":0,\"user_id\":3164,\"partner_adon_disabled_id\":null,\"brand_logo\":null,\"widget_size\":1,\"statement_link\":null,\"ga_key\":null,\"is_free_widget\":0,\"default_language\":\"ar\",\"default_voice\":\"ar-XA-Chirp3-HD-Achernar\",\"temporary_domain\":null,\"domain\":\"ju.edu.sa\",\"current_adon_ids\":null,\"report_problem_link\":null,\"widget_position_vertical_center_offset\":\"0\",\"widget_position_horizontal_center_offset\":\"0\",\"custom_trigger_id\":null,\"is_custom_trigger\":0,\"mobile_visibility\":1,\"is_sound_disabled\":0,\"no_required_eu\":1,\"widget_leave_page\":0,\"default_lang_enable\":0,\"live_site_translate\":0,\"dashboard_link\":null,\"is_custome_branding\":false,\"is_white_label\":false,\"user_package_detail\":[{\"id\":2,\"name\":\"Small Site\",\"s"
+        },
+        {
+          "method": "GET",
+          "status": 200,
+          "url": "https://www.skynettechnologies.com/accessibility/lang-node/ar.json",
+          "content_type": "application/json",
+          "resource_type": "fetch",
+          "request_post_data": "",
+          "response_shape": "json-like-invalid",
+          "preview": "{ \"select_language\": \"اختار اللغة\", \"screen_reader_alert_text\": \"الرجاء تحديد نص لتمكين قارئ الشاشة\", \"hide_ada_tool\": \"أغلق قائمة تفضيلات الوصول\", \"accessibility_preferences\": \"تفضيلات الوصول\", \"reset\": \"إعادة ضبط\", \"reset_preferences\": \"اعادة التعيين للتفضيلات\", \"choose_language\": \"اختر لغة الواجهة\", \"accessibility_statement\": \"بيان إمكانية الوصول\", \"report_problem\": \"الإبلاغ عن مشكلة\", \"solution_by\": \"حل الوصول إلى الويب من خلال\", \"default\": \"إفتراضي\", \"user_preferences\": \"خيارات المستخدم\", \"show_accessibility_preferences\": \"إظهار تفضيلات الوصول\", \"choose_interface_language\": \"اختر لغة الواجهة\", \"close_accessibility_language\": \"إغلاق النافذة المنبثقة للغة\", \"close_accessibility_statement\": \"إغلاق بيان إمكانية الوصول المنبثق\", \"hide_interface\": \"واجهة اخفاء\", \"close_accessibility_hide_interface_popup\": \"إغلاق إمكانية الوصول إخفاء الواجهة المنبثقة\", \"hide_accessibility_interface\": \"إخفاء واجهة الوصول؟\", \"hide-content\": \"يرجى ملاحظة ما يلي: إذا اخترت إخفاء واجهة الوصول ، فلن تتمكن من رؤيتها بعد الآن ، إلا إذا قمت بمسح محفوظات الاستعراض والبيانات. هل أنت متأكد من رغبتك في إخفاء الواجهة؟\", \"accept\": \"قبول\", \"cancel\": \"يلغي\", \"adjust_background_colors\": \"خلفية\", \"background\": \"خلفية\", \"background_color\": \"خلفية\", \"text_color\": \"لون النص\", \"title_color\": \"لون العنوان\", \"change_title_color_to_blue\": \"تغيير لون العنوان إلى اللون الأزرق\", \"change_title_color_to_purple\": \"تغيير لون العنوان إلى اللون الأرجواني\", \"change_title_color_to_red\": \"تغيير لون العنوان إلى الأحمر\", \"change_title_color_to_orange\": \"تغيير لون العنوان إلى اللون البرتقالي\", \"change_title_color_to_teal\": \"تغيير لون العنوان إلى البط البري\", \"change_title_color_to_green\": \"تغيير لون"
+        },
+        {
+          "method": "POST",
+          "status": 200,
+          "url": "https://ada.skynettechnologies.us/api/for-widget-combine-data",
+          "content_type": "application/json",
+          "resource_type": "fetch",
+          "request_post_data": "------WebKitFormBoundaryFsULX5kPRg3MzVnG Content-Disposition: form-data; name=\"offset\" 0 ------WebKitFormBoundaryFsULX5kPRg3MzVnG Content-Disposition: form-data; name=\"limit\" 6000 ------WebKitFormBoundaryFsULX5kPRg3MzVnG Content-Disposition: form-data; name=\"page_url\" https://ju.edu.sa/ar ------WebKitFormBoundaryFsULX5kPRg3MzVnG Content-Disposition: form-data; name=\"u\" https%3A%2F%2Fju.edu.sa%2Far ------WebKitFormBoundaryFsULX5kPRg3MzVnG Content-Disposition: form-data; name=\"t\" %D8%AC%D8%A7%D9%85%D8%B9%D8%A9%20%D8%A7%D9%84%D8%AC%D9%88%D9%81%20%7C%20%D8%A7%D9%84%D8%B1%D8%A6%D9%8A%D8%B3%D9%8A%D8%A9 ------WebKitFormBoundaryFsULX5kPRg3MzVnG--",
+          "response_shape": "json-object:Data,dashboard_link,total_record,wid,page_id",
+          "preview": "{\"Data\":[],\"dashboard_link\":\"\",\"total_record\":0,\"wid\":3230,\"page_id\":0}"
+        }
+      ]
     }
   ]
 }

@@ -1,18 +1,18 @@
 {
-  "published_at": "2026-09-01T21:35:06.518Z",
+  "published_at": "2026-09-02T04:51:13.078Z",
   "dry_run": false,
   "include_partner": true,
   "source_candidates": "data/source_candidates.json",
   "events_catalog": "data/events_catalog.json",
-  "candidates_seen": 510,
+  "candidates_seen": 509,
   "totals": {
-    "candidates_seen": 510,
-    "published": 36,
-    "linked_existing": 449,
+    "candidates_seen": 509,
+    "published": 0,
+    "linked_existing": 484,
     "blocked": 25,
     "duplicate_review_alerts": 6,
     "category_fallback_alerts": 0,
-    "reconciled": 485
+    "reconciled": 484
   },
   "category_fallback_alerts": [],
   "duplicate_catalog_rows_removed": 0,
@@ -124,188 +124,7 @@
       "start_date_drift_days": 0.042
     }
   ],
-  "published": [
-    {
-      "candidate_id": "candidate-hayy-jameel-events-hayy-cinema-cinema-at-saha-second-edition-20260122-101dd36d",
-      "event_id": "event-hayy-cinema-cinema-at-saha-second-edition",
-      "title": "Hayy Cinema | Cinema at Saha: Second Edition"
-    },
-    {
-      "candidate_id": "candidate-visit-saudi-seasons-experience-taif-horse-racing-season-2026-20260724-ad03c789",
-      "event_id": "event-experience-taif-horse-racing-season-2026",
-      "title": "Experience Taif Horse Racing Season 2026"
-    },
-    {
-      "candidate_id": "candidate-ithra-events-ithra-museum-free-wednesday-20260902-3145f812",
-      "event_id": "event-ithra-museum-free-wednesday",
-      "title": "Ithra Museum – Free Wednesday"
-    },
-    {
-      "candidate_id": "candidate-ithra-events-rehlaat-exhibit-20260902-b9d1c3e5",
-      "event_id": "event-rehlaat-exhibit",
-      "title": "Rehlaat Exhibit"
-    },
-    {
-      "candidate_id": "candidate-umm-al-qura-events-ورشة-تعريفية-بوابتي-الأكاديمية-20260902-6f845a46",
-      "event_id": "event-ورشة-تعريفية-بوابتي-الأكاديمية",
-      "title": "ورشة تعريفية: بوابتي الأكاديمية"
-    },
-    {
-      "candidate_id": "candidate-ithra-events-from-saudi-home-20260902-e97ae151",
-      "event_id": "event-from-saudi-home",
-      "title": "From Saudi Home"
-    },
-    {
-      "candidate_id": "candidate-ithra-events-memory-trace-20260902-517c34b6",
-      "event_id": "event-memory-trace",
-      "title": "Memory Trace"
-    },
-    {
-      "candidate_id": "candidate-ithra-events-trolley-show-20260902-56b483e3",
-      "event_id": "event-trolley-show",
-      "title": "Trolley Show"
-    },
-    {
-      "candidate_id": "candidate-umm-al-qura-events-دورة-تدريبية-بعنوان-من-انت؟-سبيلك-لمعرفة-نفسك-ووجهتك-20260902-49f1f887",
-      "event_id": "event-دورة-تدريبية-بعنوان-من-انت؟-سبيلك-لمعرفة-نفسك-ووجهتك",
-      "title": "دورة تدريبية بعنوان (من انت؟ سبيلك لمعرفة نفسك ووجهتك)"
-    },
-    {
-      "candidate_id": "candidate-ithra-events-marine-missions-20260903-5739b78e",
-      "event_id": "event-marine-missions",
-      "title": "Marine Missions"
-    },
-    {
-      "candidate_id": "candidate-hayy-jameel-events-azka-farmers-market-dates-edition-20260903-e7df2792",
-      "event_id": "event-azka-farmers-market-dates-edition",
-      "title": "Azka Farmers Market: Dates Edition"
-    },
-    {
-      "candidate_id": "candidate-hayy-jameel-events-jameel-library-september-community-programmes-20260904-c19b9e0a",
-      "event_id": "event-jameel-library-september-community-programmes",
-      "title": "Jameel Library | September Community Programmes"
-    },
-    {
-      "candidate_id": "candidate-ithra-events-doors-all-around-us-arabic-20260905-3e763e7b",
-      "event_id": "event-doors-all-around-us-arabic",
-      "title": "Doors all around us (Arabic)"
-    },
-    {
-      "candidate_id": "candidate-future-skills-catalog-ccnp-20260906-6db9f02c",
-      "event_id": "event-ccnp",
-      "title": "⁠CCNP"
-    },
-    {
-      "candidate_id": "candidate-future-skills-catalog-data-analysis-with-python-20260906-5bccdae9",
-      "event_id": "event-data-analysis-with-python",
-      "title": "⁠Data Analysis with Python"
-    },
-    {
-      "candidate_id": "candidate-future-skills-catalog-red-hat-certified-system-administrator-rhcsa-20260906-ef58faa1",
-      "event_id": "event-red-hat-certified-system-administrator-rhcsa",
-      "title": "⁠Red Hat Certified System Administrator (RHCSA)"
-    },
-    {
-      "candidate_id": "candidate-umm-al-qura-events-دورة-تدريبية-بعنوان-الوعي-الأمني-الرقمي-للطالب-الجامعي-20260907-12cae357",
-      "event_id": "event-دورة-تدريبية-بعنوان-الوعي-الأمني-الرقمي-للطالب-الجامعي",
-      "title": "دورة تدريبية بعنوان (الوعي الأمني الرقمي للطالب الجامعي)"
-    },
-    {
-      "candidate_id": "candidate-qassim-chamber-events-الحوكمة-والمخاطر-والامتثال-20260907-8a206379",
-      "event_id": "event-الحوكمة-والمخاطر-والامتثال",
-      "title": "الحوكمة والمخاطر والامتثال"
-    },
-    {
-      "candidate_id": "candidate-umm-al-qura-events-دورة-تدريبية-بعنوان-السيرة-الذاتية-والتسويق-الشخصي-20260907-0661b216",
-      "event_id": "event-دورة-تدريبية-بعنوان-السيرة-الذاتية-والتسويق-الشخصي",
-      "title": "دورة تدريبية بعنوان (السيرة الذاتية والتسويق الشخصي)"
-    },
-    {
-      "candidate_id": "candidate-umm-al-qura-events-دورة-تدريبية-بعنوان-المرونة-النفسية-في-التعامل-مع-التحديات-20260908-9ec17130",
-      "event_id": "event-دورة-تدريبية-بعنوان-المرونة-النفسية-في-التعامل-مع-التحديات",
-      "title": "دورة تدريبية بعنوان (المرونة النفسية في التعامل مع التحديات)"
-    },
-    {
-      "candidate_id": "candidate-umm-al-qura-events-دورة-تدريبية-بعنوان-قيم-الوسطية-والاعتدال-20260908-67215109",
-      "event_id": "event-دورة-تدريبية-بعنوان-قيم-الوسطية-والاعتدال",
-      "title": "دورة تدريبية بعنوان (قيم الوسطية والاعتدال)"
-    },
-    {
-      "candidate_id": "candidate-hayy-jameel-events-hayy-makers-canvas-making-with-ahmad-sofi-20260909-b9c0126b",
-      "event_id": "event-hayy-makers-canvas-making-with-ahmad-sofi",
-      "title": "Hayy Makers | Canvas Making with Ahmad Sofi"
-    },
-    {
-      "candidate_id": "candidate-umm-al-qura-events-دورة-تدريبية-بعنوان-فن-إدارة-الوقت-20260909-6191d51c",
-      "event_id": "event-دورة-تدريبية-بعنوان-فن-إدارة-الوقت",
-      "title": "دورة تدريبية بعنوان (فن إدارة الوقت)"
-    },
-    {
-      "candidate_id": "candidate-umm-al-qura-events-دورة-تدريبية-بعنوان-مهارات-الاستذكار-الفعال-والخرائط-الذهنية-20260909-9775bf95",
-      "event_id": "event-دورة-تدريبية-بعنوان-مهارات-الاستذكار-الفعال-والخرائط-الذهنية",
-      "title": "دورة تدريبية بعنوان (مهارات الاستذكار الفعال والخرائط الذهنية)"
-    },
-    {
-      "candidate_id": "candidate-ithra-events-textured-painting-20260914-6c43b391",
-      "event_id": "event-textured-painting-2",
-      "title": "Textured Painting"
-    },
-    {
-      "candidate_id": "candidate-qassim-university-events-مختبر-الخدمات-الرقمية-3-20260915-ffca28df",
-      "event_id": "event-مختبر-الخدمات-الرقمية-3",
-      "title": "مختبر الخدمات الرقمية 3"
-    },
-    {
-      "candidate_id": "candidate-ithra-events-surrealism-art-in-saudi-arabia-20260915-264b7478",
-      "event_id": "event-surrealism-art-in-saudi-arabia",
-      "title": "Surrealism Art in Saudi Arabia"
-    },
-    {
-      "candidate_id": "candidate-ithra-events-doors-all-around-us-english-20260919-b5458999",
-      "event_id": "event-doors-all-around-us-english",
-      "title": "Doors All Around Us (English)"
-    },
-    {
-      "candidate_id": "candidate-ithra-events-creative-leadership-and-the-making-of-cultural-products-20260919-8d9fdc9f",
-      "event_id": "event-creative-leadership-and-the-making-of-cultural-products",
-      "title": "Creative Leadership and the Making of Cultural Products"
-    },
-    {
-      "candidate_id": "candidate-hayy-jameel-events-hayy-makers-jeddahs-historic-houses-in-paper-with-norah-bahaj-20260923-641e0bae",
-      "event_id": "event-hayy-makers-jeddahs-historic-houses-in-paper-with-norah-bahaj",
-      "title": "Hayy Makers | Jeddah’s Historic Houses in Paper With Norah Bahaj"
-    },
-    {
-      "candidate_id": "candidate-ithra-events-botanical-manifestations-20260929-e8112fc3",
-      "event_id": "event-botanical-manifestations",
-      "title": "Botanical Manifestations"
-    },
-    {
-      "candidate_id": "candidate-ithra-events-family-game-within-five-seconds-20261002-fe7ee898",
-      "event_id": "event-family-game-within-five-seconds",
-      "title": "Family Game within Five Seconds"
-    },
-    {
-      "candidate_id": "candidate-misk-hub-programs-misk-x-humain-traineeship-program-future-ai-builders-20261115-cb22e8d1",
-      "event_id": "event-misk-x-humain-traineeship-program-future-ai-builders",
-      "title": "Misk x HUMAIN Traineeship Program (Future AI Builders)"
-    },
-    {
-      "candidate_id": "candidate-umm-al-qura-events-برنامج-محلل-power-bi-20261115-ed05da84",
-      "event_id": "event-برنامج-محلل-power-bi",
-      "title": "برنامج محلل Power BI"
-    },
-    {
-      "candidate_id": "candidate-umm-al-qura-events-شهادة-محترف-أعمال-معتمد-في-القيادة-الإدارية-cbp-ls-20261115-053fca42",
-      "event_id": "event-شهادة-محترف-أعمال-معتمد-في-القيادة-الإدارية-cbp-ls-2",
-      "title": "شهادة محترف أعمال معتمد في القيادة الإدارية (CBP-LS)"
-    },
-    {
-      "candidate_id": "candidate-misk-hub-programs-ipo-readiness-program-20261220-a03d586a",
-      "event_id": "event-ipo-readiness-program",
-      "title": "IPO Readiness Program"
-    }
-  ],
+  "published": [],
   "linked_existing": [
     {
       "candidate_id": "candidate-moc-cultural-subportals-skill-development-initiative-20210714-10f7dc2c",
@@ -395,6 +214,12 @@
       "candidate_id": "candidate-moc-cultural-subportals-film-business-accelerator-20260119-254dca29",
       "event_id": "event-film-business-accelerator",
       "title": "Film Business Accelerator",
+      "reason": "already linked to catalog event"
+    },
+    {
+      "candidate_id": "candidate-hayy-jameel-events-hayy-cinema-cinema-at-saha-second-edition-20260122-101dd36d",
+      "event_id": "event-hayy-cinema-cinema-at-saha-second-edition",
+      "title": "Hayy Cinema | Cinema at Saha: Second Edition",
       "reason": "already linked to catalog event"
     },
     {
@@ -554,12 +379,6 @@
       "reason": "already linked to catalog event"
     },
     {
-      "candidate_id": "candidate-visit-saudi-seasons-combat-arena-20260701-41ce2073",
-      "event_id": "event-combat-arena",
-      "title": "Combat Arena",
-      "reason": "already linked to catalog event"
-    },
-    {
       "candidate_id": "candidate-visit-saudi-seasons-al-balad-cinema-20260701-6c7f85e1",
       "event_id": "event-al-balad-cinema",
       "title": "Al Balad Cinema",
@@ -647,6 +466,12 @@
       "candidate_id": "candidate-visit-saudi-calendar-pdf-بسطة-القابل-20260722-4a38d19e",
       "event_id": "event-بسطة-القابل",
       "title": "بسطة القابل",
+      "reason": "already linked to catalog event"
+    },
+    {
+      "candidate_id": "candidate-visit-saudi-seasons-experience-taif-horse-racing-season-2026-20260724-ad03c789",
+      "event_id": "event-experience-taif-horse-racing-season-2026",
+      "title": "Experience Taif Horse Racing Season 2026",
       "reason": "already linked to catalog event"
     },
     {
@@ -1094,6 +919,18 @@
       "reason": "already linked to catalog event"
     },
     {
+      "candidate_id": "candidate-ithra-events-ithra-museum-free-wednesday-20260902-3145f812",
+      "event_id": "event-ithra-museum-free-wednesday",
+      "title": "Ithra Museum – Free Wednesday",
+      "reason": "already linked to catalog event"
+    },
+    {
+      "candidate_id": "candidate-ithra-events-rehlaat-exhibit-20260902-b9d1c3e5",
+      "event_id": "event-rehlaat-exhibit",
+      "title": "Rehlaat Exhibit",
+      "reason": "already linked to catalog event"
+    },
+    {
       "candidate_id": "candidate-ithra-events-tafasahu-make-room-20260902-562bc61d",
       "event_id": "event-tafasahu-make-room",
       "title": "Tafasahu: Make Room",
@@ -1106,15 +943,33 @@
       "reason": "already linked to catalog event"
     },
     {
+      "candidate_id": "candidate-umm-al-qura-events-ورشة-تعريفية-بوابتي-الأكاديمية-20260902-6f845a46",
+      "event_id": "event-ورشة-تعريفية-بوابتي-الأكاديمية",
+      "title": "ورشة تعريفية: بوابتي الأكاديمية",
+      "reason": "already linked to catalog event"
+    },
+    {
       "candidate_id": "candidate-ithra-events-childrens-art-studio-20260902-2bf92d17",
       "event_id": "event-childrens-art-studio",
       "title": "Children's Art Studio",
       "reason": "already linked to catalog event"
     },
     {
+      "candidate_id": "candidate-ithra-events-from-saudi-home-20260902-e97ae151",
+      "event_id": "event-from-saudi-home",
+      "title": "From Saudi Home",
+      "reason": "already linked to catalog event"
+    },
+    {
       "candidate_id": "candidate-ithra-events-podcast-production-from-the-field-to-storytelling-20260902-f50aa266",
       "event_id": "event-podcast-production-from-the-field-to-storytelling",
       "title": "Podcast Production: From the Field to Storytelling",
+      "reason": "already linked to catalog event"
+    },
+    {
+      "candidate_id": "candidate-ithra-events-memory-trace-20260902-517c34b6",
+      "event_id": "event-memory-trace",
+      "title": "Memory Trace",
       "reason": "already linked to catalog event"
     },
     {
@@ -1133,12 +988,24 @@
       "candidate_id": "candidate-ithra-events-arabic-children-book-club-7-9-20260902-810c285f",
       "event_id": "event-arabic-children-book-club-7-9",
       "title": "Arabic Children Book Club (7 - 9)",
-      "reason": "trusted duplicate linked to existing catalog event"
+      "reason": "already linked to catalog event"
+    },
+    {
+      "candidate_id": "candidate-ithra-events-trolley-show-20260902-56b483e3",
+      "event_id": "event-trolley-show",
+      "title": "Trolley Show",
+      "reason": "already linked to catalog event"
     },
     {
       "candidate_id": "candidate-ithra-events-museum-story-time-20260902-1104734c",
       "event_id": "event-museum-story-time",
       "title": "Museum Story Time",
+      "reason": "already linked to catalog event"
+    },
+    {
+      "candidate_id": "candidate-umm-al-qura-events-دورة-تدريبية-بعنوان-من-انت؟-سبيلك-لمعرفة-نفسك-ووجهتك-20260902-49f1f887",
+      "event_id": "event-دورة-تدريبية-بعنوان-من-انت؟-سبيلك-لمعرفة-نفسك-ووجهتك",
+      "title": "دورة تدريبية بعنوان (من انت؟ سبيلك لمعرفة نفسك ووجهتك)",
       "reason": "already linked to catalog event"
     },
     {
@@ -1160,9 +1027,21 @@
       "reason": "already linked to catalog event"
     },
     {
+      "candidate_id": "candidate-ithra-events-marine-missions-20260903-5739b78e",
+      "event_id": "event-marine-missions",
+      "title": "Marine Missions",
+      "reason": "already linked to catalog event"
+    },
+    {
       "candidate_id": "candidate-ithra-events-the-moral-of-the-story-20260903-bfa3f2a8",
       "event_id": "event-the-moral-of-the-story",
       "title": "The Moral of the Story",
+      "reason": "already linked to catalog event"
+    },
+    {
+      "candidate_id": "candidate-hayy-jameel-events-azka-farmers-market-dates-edition-20260903-e7df2792",
+      "event_id": "event-azka-farmers-market-dates-edition",
+      "title": "Azka Farmers Market: Dates Edition",
       "reason": "already linked to catalog event"
     },
     {
@@ -1187,7 +1066,13 @@
       "candidate_id": "candidate-mdlbeast-events-mdlbeast-radio-mixtape-20260904-129ba10b",
       "event_id": "event-mdlbeast-radio-mixtape",
       "title": "MDLBEAST Radio MixTape",
-      "reason": "trusted duplicate linked to existing catalog event"
+      "reason": "already linked to catalog event"
+    },
+    {
+      "candidate_id": "candidate-hayy-jameel-events-jameel-library-september-community-programmes-20260904-c19b9e0a",
+      "event_id": "event-jameel-library-september-community-programmes",
+      "title": "Jameel Library | September Community Programmes",
+      "reason": "already linked to catalog event"
     },
     {
       "candidate_id": "candidate-ithra-events-stories-from-ithras-library-20260904-4116de16",
@@ -1232,6 +1117,12 @@
       "reason": "already linked to catalog event"
     },
     {
+      "candidate_id": "candidate-ithra-events-doors-all-around-us-arabic-20260905-3e763e7b",
+      "event_id": "event-doors-all-around-us-arabic",
+      "title": "Doors all around us (Arabic)",
+      "reason": "already linked to catalog event"
+    },
+    {
       "candidate_id": "candidate-riyadh-city-events-saudi-food-manufacturing-show-20260905-470e03a4",
       "event_id": "event-saudi-food-manufacturing-show",
       "title": "Saudi Food Manufacturing show",
@@ -1253,6 +1144,24 @@
       "candidate_id": "candidate-misk-hub-programs-misk-launchpad-20260906-9e767f23",
       "event_id": "event-misk-launchpad",
       "title": "Misk Launchpad",
+      "reason": "already linked to catalog event"
+    },
+    {
+      "candidate_id": "candidate-future-skills-catalog-ccnp-20260906-6db9f02c",
+      "event_id": "event-ccnp",
+      "title": "⁠CCNP",
+      "reason": "already linked to catalog event"
+    },
+    {
+      "candidate_id": "candidate-future-skills-catalog-data-analysis-with-python-20260906-5bccdae9",
+      "event_id": "event-data-analysis-with-python",
+      "title": "⁠Data Analysis with Python",
+      "reason": "already linked to catalog event"
+    },
+    {
+      "candidate_id": "candidate-future-skills-catalog-red-hat-certified-system-administrator-rhcsa-20260906-ef58faa1",
+      "event_id": "event-red-hat-certified-system-administrator-rhcsa",
+      "title": "⁠Red Hat Certified System Administrator (RHCSA)",
       "reason": "already linked to catalog event"
     },
     {
@@ -1331,12 +1240,18 @@
       "candidate_id": "candidate-ithra-events-childrens-museum-free-monday-20260907-15ad7731",
       "event_id": "event-childrens-museum-free-monday",
       "title": "Children's Museum - Free Monday",
-      "reason": "trusted duplicate linked to existing catalog event"
+      "reason": "already linked to catalog event"
     },
     {
       "candidate_id": "candidate-ithra-events-paint-like-an-artist-20260907-a67d8ec3",
       "event_id": "event-paint-like-an-artist",
       "title": "Paint Like an Artist",
+      "reason": "already linked to catalog event"
+    },
+    {
+      "candidate_id": "candidate-umm-al-qura-events-دورة-تدريبية-بعنوان-الوعي-الأمني-الرقمي-للطالب-الجامعي-20260907-12cae357",
+      "event_id": "event-دورة-تدريبية-بعنوان-الوعي-الأمني-الرقمي-للطالب-الجامعي",
+      "title": "دورة تدريبية بعنوان (الوعي الأمني الرقمي للطالب الجامعي)",
       "reason": "already linked to catalog event"
     },
     {
@@ -1346,9 +1261,21 @@
       "reason": "already linked to catalog event"
     },
     {
+      "candidate_id": "candidate-qassim-chamber-events-الحوكمة-والمخاطر-والامتثال-20260907-8a206379",
+      "event_id": "event-الحوكمة-والمخاطر-والامتثال",
+      "title": "الحوكمة والمخاطر والامتثال",
+      "reason": "already linked to catalog event"
+    },
+    {
       "candidate_id": "candidate-ithra-events-children-story-time-20260907-f545fa69",
       "event_id": "event-children-story-time",
       "title": "Children Story Time",
+      "reason": "already linked to catalog event"
+    },
+    {
+      "candidate_id": "candidate-umm-al-qura-events-دورة-تدريبية-بعنوان-السيرة-الذاتية-والتسويق-الشخصي-20260907-0661b216",
+      "event_id": "event-دورة-تدريبية-بعنوان-السيرة-الذاتية-والتسويق-الشخصي",
+      "title": "دورة تدريبية بعنوان (السيرة الذاتية والتسويق الشخصي)",
       "reason": "already linked to catalog event"
     },
     {
@@ -1385,7 +1312,7 @@
       "candidate_id": "candidate-ithra-events-on-this-carpet-20260908-2972e041",
       "event_id": "event-on-this-carpet",
       "title": "On This Carpet",
-      "reason": "trusted duplicate linked to existing catalog event"
+      "reason": "already linked to catalog event"
     },
     {
       "candidate_id": "candidate-riyadh-city-events-saudi-wood-expo-20260908-d1fa2ea0",
@@ -1400,15 +1327,33 @@
       "reason": "already linked to catalog event"
     },
     {
+      "candidate_id": "candidate-umm-al-qura-events-دورة-تدريبية-بعنوان-المرونة-النفسية-في-التعامل-مع-التحديات-20260908-9ec17130",
+      "event_id": "event-دورة-تدريبية-بعنوان-المرونة-النفسية-في-التعامل-مع-التحديات",
+      "title": "دورة تدريبية بعنوان (المرونة النفسية في التعامل مع التحديات)",
+      "reason": "already linked to catalog event"
+    },
+    {
       "candidate_id": "candidate-ithra-events-english-children-book-club-7-9-20260908-fceb6af6",
       "event_id": "event-english-children-book-club-7-9",
       "title": "English Children Book Club (7-9)",
-      "reason": "trusted duplicate linked to existing catalog event"
+      "reason": "already linked to catalog event"
+    },
+    {
+      "candidate_id": "candidate-umm-al-qura-events-دورة-تدريبية-بعنوان-قيم-الوسطية-والاعتدال-20260908-67215109",
+      "event_id": "event-دورة-تدريبية-بعنوان-قيم-الوسطية-والاعتدال",
+      "title": "دورة تدريبية بعنوان (قيم الوسطية والاعتدال)",
+      "reason": "already linked to catalog event"
     },
     {
       "candidate_id": "candidate-sfda-events-شرح-وتوضيح-إجراءات-الاستيراد-والتصدير-وحرية-البيع-20260909-7d3f0aff",
       "event_id": "event-شرح-وتوضيح-إجراءات-الاستيراد-والتصدير-وحرية-البيع",
       "title": "شرح وتوضيح إجراءات الاستيراد والتصدير وحرية البيع",
+      "reason": "already linked to catalog event"
+    },
+    {
+      "candidate_id": "candidate-hayy-jameel-events-hayy-makers-canvas-making-with-ahmad-sofi-20260909-b9c0126b",
+      "event_id": "event-hayy-makers-canvas-making-with-ahmad-sofi",
+      "title": "Hayy Makers | Canvas Making with Ahmad Sofi",
       "reason": "already linked to catalog event"
     },
     {
@@ -1418,10 +1363,22 @@
       "reason": "already linked to catalog event"
     },
     {
+      "candidate_id": "candidate-umm-al-qura-events-دورة-تدريبية-بعنوان-فن-إدارة-الوقت-20260909-6191d51c",
+      "event_id": "event-دورة-تدريبية-بعنوان-فن-إدارة-الوقت",
+      "title": "دورة تدريبية بعنوان (فن إدارة الوقت)",
+      "reason": "already linked to catalog event"
+    },
+    {
       "candidate_id": "candidate-ithra-events-english-children-book-club-10-12-20260909-efa3d7e3",
       "event_id": "event-english-children-book-club-10-12",
       "title": "English Children Book Club (10 - 12)",
-      "reason": "trusted duplicate linked to existing catalog event"
+      "reason": "already linked to catalog event"
+    },
+    {
+      "candidate_id": "candidate-umm-al-qura-events-دورة-تدريبية-بعنوان-مهارات-الاستذكار-الفعال-والخرائط-الذهنية-20260909-9775bf95",
+      "event_id": "event-دورة-تدريبية-بعنوان-مهارات-الاستذكار-الفعال-والخرائط-الذهنية",
+      "title": "دورة تدريبية بعنوان (مهارات الاستذكار الفعال والخرائط الذهنية)",
+      "reason": "already linked to catalog event"
     },
     {
       "candidate_id": "candidate-ithra-events-energy-in-motion-20260910-e0404048",
@@ -1451,7 +1408,7 @@
       "candidate_id": "candidate-ithra-events-unbox-your-story-20260912-5085a6f0",
       "event_id": "event-unbox-your-story",
       "title": "Unbox Your Story",
-      "reason": "trusted duplicate linked to existing catalog event"
+      "reason": "already linked to catalog event"
     },
     {
       "candidate_id": "candidate-tuwaiq-academy-bootcamps-معسكر-الذكاء-الاصطناعي-في-تطوير-تطبيقات-الويب-باستخدام-python-و-django-20260913-fde7cd36",
@@ -1526,6 +1483,12 @@
       "reason": "already linked to catalog event"
     },
     {
+      "candidate_id": "candidate-ithra-events-textured-painting-20260914-6c43b391",
+      "event_id": "event-textured-painting-2",
+      "title": "Textured Painting",
+      "reason": "already linked to catalog event"
+    },
+    {
       "candidate_id": "candidate-ithra-events-hobby-with-expert-translation-20260914-b6ea26ca",
       "event_id": "event-hobby-with-expert-translation",
       "title": "Hobby with Expert: Translation",
@@ -1556,6 +1519,12 @@
       "reason": "already linked to catalog event"
     },
     {
+      "candidate_id": "candidate-qassim-university-events-مختبر-الخدمات-الرقمية-3-20260915-ffca28df",
+      "event_id": "event-مختبر-الخدمات-الرقمية-3",
+      "title": "مختبر الخدمات الرقمية 3",
+      "reason": "already linked to catalog event"
+    },
+    {
       "candidate_id": "candidate-riyadh-city-events-smart-cities-saudi-expo-20260915-58456994",
       "event_id": "event-smart-cities-saudi-expo",
       "title": "Smart Cities Saudi Expo",
@@ -1568,6 +1537,12 @@
       "reason": "already linked to catalog event"
     },
     {
+      "candidate_id": "candidate-ithra-events-surrealism-art-in-saudi-arabia-20260915-264b7478",
+      "event_id": "event-surrealism-art-in-saudi-arabia",
+      "title": "Surrealism Art in Saudi Arabia",
+      "reason": "already linked to catalog event"
+    },
+    {
       "candidate_id": "candidate-visit-saudi-calendar-pdf-سيرك-فونتانا-20260916-4a38d19e",
       "event_id": "event-سيرك-فونتانا",
       "title": "سيرك فونتانا",
@@ -1577,7 +1552,7 @@
       "candidate_id": "candidate-ithra-events-youth-book-club-20260916-de163fbc",
       "event_id": "event-youth-book-club",
       "title": "Youth Book Club",
-      "reason": "trusted duplicate linked to existing catalog event"
+      "reason": "already linked to catalog event"
     },
     {
       "candidate_id": "candidate-visit-saudi-calendar-pdf-ذكريات-سبيستون-مع-الفنان-عاصم-سكر-20260918-4a38d19e",
@@ -1595,12 +1570,24 @@
       "candidate_id": "candidate-mdlbeast-events-unstable-20260918-5647df2e",
       "event_id": "event-unstable",
       "title": "Unstable",
-      "reason": "trusted duplicate linked to existing catalog event"
+      "reason": "already linked to catalog event"
     },
     {
       "candidate_id": "candidate-visit-saudi-calendar-3a-ka3ba-20260918-fff5d3c3",
       "event_id": "event-3a-ka3ba",
       "title": "3a Ka3ba",
+      "reason": "already linked to catalog event"
+    },
+    {
+      "candidate_id": "candidate-ithra-events-doors-all-around-us-english-20260919-b5458999",
+      "event_id": "event-doors-all-around-us-english",
+      "title": "Doors All Around Us (English)",
+      "reason": "already linked to catalog event"
+    },
+    {
+      "candidate_id": "candidate-ithra-events-creative-leadership-and-the-making-of-cultural-products-20260919-8d9fdc9f",
+      "event_id": "event-creative-leadership-and-the-making-of-cultural-products",
+      "title": "Creative Leadership and the Making of Cultural Products",
       "reason": "already linked to catalog event"
     },
     {
@@ -1676,6 +1663,12 @@
       "reason": "already linked to catalog event"
     },
     {
+      "candidate_id": "candidate-hayy-jameel-events-hayy-makers-jeddahs-historic-houses-in-paper-with-norah-bahaj-20260923-641e0bae",
+      "event_id": "event-hayy-makers-jeddahs-historic-houses-in-paper-with-norah-bahaj",
+      "title": "Hayy Makers | Jeddah’s Historic Houses in Paper With Norah Bahaj",
+      "reason": "already linked to catalog event"
+    },
+    {
       "candidate_id": "candidate-dhahran-expo-calendar-the-egyptian-products-exhibition-20260924-18d15b29",
       "event_id": "event-the-egyptian-products-exhibition",
       "title": "The Egyptian Products Exhibition",
@@ -1748,6 +1741,12 @@
       "reason": "already linked to catalog event"
     },
     {
+      "candidate_id": "candidate-ithra-events-botanical-manifestations-20260929-e8112fc3",
+      "event_id": "event-botanical-manifestations",
+      "title": "Botanical Manifestations",
+      "reason": "already linked to catalog event"
+    },
+    {
       "candidate_id": "candidate-ithra-events-the-playful-art-of-critical-thinking-20260930-433638cb",
       "event_id": "event-the-playful-art-of-critical-thinking",
       "title": "The Playful Art Of Critical Thinking",
@@ -1781,6 +1780,12 @@
       "candidate_id": "candidate-visit-saudi-seasons-saudi-falcons-club-auction-20261001-4e016ab8",
       "event_id": "event-saudi-falcons-club-auction",
       "title": "Saudi Falcons Club Auction",
+      "reason": "already linked to catalog event"
+    },
+    {
+      "candidate_id": "candidate-ithra-events-family-game-within-five-seconds-20261002-fe7ee898",
+      "event_id": "event-family-game-within-five-seconds",
+      "title": "Family Game within Five Seconds",
       "reason": "already linked to catalog event"
     },
     {
@@ -2204,6 +2209,24 @@
       "reason": "already linked to catalog event"
     },
     {
+      "candidate_id": "candidate-misk-hub-programs-misk-x-humain-traineeship-program-future-ai-builders-20261115-cb22e8d1",
+      "event_id": "event-misk-x-humain-traineeship-program-future-ai-builders",
+      "title": "Misk x HUMAIN Traineeship Program (Future AI Builders)",
+      "reason": "already linked to catalog event"
+    },
+    {
+      "candidate_id": "candidate-umm-al-qura-events-برنامج-محلل-power-bi-20261115-ed05da84",
+      "event_id": "event-برنامج-محلل-power-bi",
+      "title": "برنامج محلل Power BI",
+      "reason": "already linked to catalog event"
+    },
+    {
+      "candidate_id": "candidate-umm-al-qura-events-شهادة-محترف-أعمال-معتمد-في-القيادة-الإدارية-cbp-ls-20261115-053fca42",
+      "event_id": "event-شهادة-محترف-أعمال-معتمد-في-القيادة-الإدارية-cbp-ls-2",
+      "title": "شهادة محترف أعمال معتمد في القيادة الإدارية (CBP-LS)",
+      "reason": "already linked to catalog event"
+    },
+    {
       "candidate_id": "candidate-riyadh-city-events-intersec-saudi-arabia-20261116-fb165cc3",
       "event_id": "event-intersec-saudi-arabia",
       "title": "Intersec Saudi Arabia",
@@ -2597,6 +2620,12 @@
       "candidate_id": "candidate-hayy-jameel-events-hayy-cinema-aflamna-20261220-6a9439e4",
       "event_id": "event-hayy-cinema-aflamna-2",
       "title": "Hayy Cinema | AFLAMNA",
+      "reason": "already linked to catalog event"
+    },
+    {
+      "candidate_id": "candidate-misk-hub-programs-ipo-readiness-program-20261220-a03d586a",
+      "event_id": "event-ipo-readiness-program",
+      "title": "IPO Readiness Program",
       "reason": "already linked to catalog event"
     },
     {

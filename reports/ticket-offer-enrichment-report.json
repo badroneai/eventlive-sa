@@ -1,22 +1,22 @@
 {
-  "checked_at": "2026-09-01T21:39:36.559Z",
+  "checked_at": "2026-09-02T04:56:32.601Z",
   "targets": 10,
   "evidence_found": 7,
-  "changed": 1,
+  "changed": 0,
   "no_evidence": 3,
   "failed": 0,
   "results": [
     {
-      "id": "event-unstable",
+      "id": "event-beast-house",
       "host": "nofomo.com",
-      "url": "https://nofomo.com/collections/unstable",
+      "url": "https://nofomo.com/collections/beast-house",
       "status": "no-evidence",
       "reason": "no-explicit-public-price"
     },
     {
-      "id": "event-beast-house",
+      "id": "event-unstable",
       "host": "nofomo.com",
-      "url": "https://nofomo.com/collections/beast-house",
+      "url": "https://nofomo.com/collections/unstable",
       "status": "no-evidence",
       "reason": "no-explicit-public-price"
     },
