@@ -50,6 +50,10 @@ function sessionId(event = {}) {
     .replace(/^-+|-+$/g, '');
 }
 
+function activationUrl(event = {}) {
+  return cleanText(event.url || event.source_url || event.evidence_url || event.registration_url || event.ticket_url || '');
+}
+
 function isActivatable(event = {}) {
   const sourceType = allowedSources.get(event.source_label);
   const hours = durationHours(event);
@@ -60,6 +64,15 @@ function isActivatable(event = {}) {
     return type && type !== 'attendance-window' && !type.startsWith('official-');
   })) return false;
   if (!event.starts_at || !event.ends_at || hours <= 0 || hours > maxDurationHours) return false;
+  // A live-ready row owes a url — validate-data.mjs rejects the catalog outright
+  // over `live_schedule_ready=true requires url`, and that rejection sits in the
+  // collector step, BEFORE the deploy. One row activated without a resolvable
+  // link froze publishing for six consecutive runs (2026-08-26 → 2026-08-30,
+  // runs 33008969497 → 33310307179). activate() used to set live_schedule_ready
+  // first and resolve the url after, so an event with no link of any kind was
+  // committed to a state the schema forbids. Decide it here instead, while
+  // declining is still free.
+  if (!activationUrl(event)) return false;
   return ['approved-source', 'organizer-confirmed', 'official', 'partner'].includes(event.source_confidence || event.confidence || '');
 }
 
@@ -79,7 +92,7 @@ function activate(event = {}) {
   event.tracks_count = 1;
   event.rooms_count = room ? 1 : 0;
   event.live_schedule_ready = true;
-  event.url = cleanText(event.url || event.source_url || event.evidence_url || event.registration_url || event.ticket_url || '');
+  event.url = activationUrl(event);
   event.updated_at = generatedAt;
   event.highlights = [
     ...new Set([

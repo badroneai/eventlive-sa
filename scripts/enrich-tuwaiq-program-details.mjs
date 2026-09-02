@@ -1,5 +1,6 @@
 import fs from 'node:fs';
 import path from 'node:path';
+import { stripSourceAttribution, withSourceAttribution } from './source-attribution-utils.mjs';
 
 const root = process.cwd();
 const catalogPath = path.join(root, 'data', 'events_catalog.json');
@@ -76,9 +77,9 @@ function applyCourse(event, course, slug) {
   };
 
   event.description = officialDescription || event.description || '';
-  event.rich_summary = officialDescription || event.rich_summary || event.summary || '';
+  event.rich_summary = officialDescription || event.rich_summary || stripSourceAttribution(event.summary) || '';
   const concise = firstSentence(officialDescription);
-  if (concise) event.summary = `${concise} المصدر الرسمي: أكاديمية طويق.`;
+  if (concise) event.summary = withSourceAttribution(concise, 'أكاديمية طويق');
   if (course.locationName) {
     event.venue = course.locationName;
     event.venue_address = course.locationName;

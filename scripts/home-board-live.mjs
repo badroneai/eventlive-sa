@@ -95,7 +95,15 @@ export function homeBoardLiveNav(count) {
 export function homeBoardLiveSection(cards = []) {
   const count = cards.length;
   const cardsHtml = cards.map((card, index) => homeBoardLiveCard(card, index)).join('\n              ');
-  return `<section class="board-live" id="boardLive"${count > 0 ? '' : ' hidden'}>
+  // `data-live-count` is the build's own record of how many live events it
+  // decided on. Without it the trust gate had to RE-derive that number from the
+  // embedded ticker at test time — a different array (ticker is capped at 120
+  // rows) read against a different clock (minutes after the build) — so an event
+  // crossing its start or end boundary between build and test turned a correct
+  // build red. That race froze deploy.yml from 2026-08-15 to 2026-09-02. The
+  // count is emitted here so the gate can assert build-internal agreement
+  // instead of guessing (AGENTS.md law 2.5: build output is time-dependent).
+  return `<section class="board-live" id="boardLive" data-live-count="${count}"${count > 0 ? '' : ' hidden'}>
           <div class="board-label" id="boardLiveBadge"><span class="live-dot"></span>مباشر الآن · ${liveCountLabel(count)}</div>
           <div class="board-live-track" id="boardLiveTrack" aria-live="polite" aria-atomic="true">
               ${cardsHtml}

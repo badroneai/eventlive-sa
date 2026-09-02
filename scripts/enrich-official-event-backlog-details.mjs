@@ -4,6 +4,7 @@ import { selectBacklogTargets } from './backlog-target-utils.mjs';
 import { highResImage, isStillImage, preferredEventImage } from './backlog-image-utils.mjs';
 import { assignEventCategory, categoryLabels, normalizeEventCategoryMetadata } from './category-taxonomy.mjs';
 import { isRejectedImageAssetUrl } from './image-asset-utils.mjs';
+import { eventMode, fallbackEventDescription, fallbackEventGoals } from './event-description-fallback.mjs';
 
 const root = process.cwd();
 const catalogPath = path.join(root, 'data', 'events_catalog.json');
@@ -104,15 +105,6 @@ function providerName(event = {}) {
   return cleanText(event.source_label || event.organizer || 'EventLive Source');
 }
 
-function eventMode(event = {}) {
-  const category = `${event.category || ''} ${event.tags?.join?.(' ') || ''} ${event.title || ''}`.toLowerCase();
-  if (/bootcamp|course|training|workshop|دورة|تدريب|معسكر|ورشة/i.test(category)) return 'برنامج تدريبي';
-  if (/festival|season|fan zone|families|entertainment|موسم|ترفيه|عائلات/i.test(category)) return 'تجربة حضور';
-  if (/forum|summit|conference|ملتقى|قمة|مؤتمر/i.test(category)) return 'ملتقى أو مؤتمر';
-  if (/exhibition|expo|auction|معرض|مزاد/i.test(category)) return 'معرض أو فعالية قطاعية';
-  return 'فعالية';
-}
-
 function attendanceGuidance(event = {}) {
   const mode = eventMode(event);
   if (mode === 'برنامج تدريبي') return 'تحقق من متطلبات التسجيل والحضور من صفحة المصدر قبل بدء البرنامج.';
@@ -156,7 +148,7 @@ function applyBacklogOutline(event, page = {}) {
     event.rich_summary ||
     event.description ||
     event.summary ||
-    `${event.title} فعالية منشورة من ${provider} ضمن كتالوج EventLive.`
+    fallbackEventDescription(event, provider)
   );
   const imageUrl = preferredEventImage(page.image, event.image_url || event.original_image_url || '');
   const method = page.source_method || (page.ok ? 'official-page-meta' : (url ? 'approved-source-row' : 'eventlive-internal-seed'));
@@ -188,11 +180,7 @@ function applyBacklogOutline(event, page = {}) {
     official_description: officialDescription,
     duration_text: windowText,
     registration_deadline: cleanText(event.registration_deadline || ''),
-    goals: compactItems([
-      `تقديم ${eventMode(event)} موثقة من مصدرها ضمن EventLive.`,
-      'توضيح الموعد والمدينة والموقع قبل قرار الحضور.',
-      'إثراء بطاقة الفعالية لتكون مفيدة للمستخدم والذكاءات ومحركات البحث.'
-    ], 6, 260),
+    goals: compactItems(fallbackEventGoals(event), 6, 260),
     features: compactItems([
       `الفعالية: ${event.title}`,
       windowText ? `النافذة الزمنية: ${windowText}` : '',

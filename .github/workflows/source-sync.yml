@@ -179,6 +179,11 @@ jobs:
           npm run test:future-skills-program-enrichment
           npm run test:sfda-workshop-enrichment
           npm run test:misk-program-enrichment
+          # 2026-09-01: an enrichment writer read back its own generated summary and
+          # re-appended the attribution sentence every run, welding Arabic chrome onto
+          # English source prose until test:en-surface-sweep blocked the publish for
+          # three days. Fixture-based, catalog-only, <1s.
+          npm run test:source-attribution
           npm run test:dhahran-expo-enrichment
           npm run test:visit-saudi-enrichment
           npm run test:swa-enrichment

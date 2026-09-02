@@ -1,5 +1,7 @@
 import fs from 'node:fs';
 import path from 'node:path';
+import { stripSourceAttribution, withSourceAttribution } from './source-attribution-utils.mjs';
+import { fallbackEventDescription, fallbackEventGoals } from './event-description-fallback.mjs';
 
 const root = process.cwd();
 const catalogPath = path.join(root, 'data', 'events_catalog.json');
@@ -162,7 +164,11 @@ function parseCandidateDeadline(candidate = {}) {
 function stripMiskPageChrome(text = '') {
   let cleaned = String(text || '').replace(/\s+/g, ' ').trim();
   cleaned = cleaned.replace(/^[\s\S]*?Notify Me\s*Loading\.{0,3}\s*/i, '');
-  cleaned = cleaned.replace(/^Program Details\s+/i, '');
+  // Section headings Misk renders above the prose. When a scrape catches the
+  // heading but not the body, the heading alone must not become the description
+  // (2026-09-01: "Eligibility Criteria" shipped as the whole summary of
+  // misk-x-unyo-youth-engagement-fellowship).
+  cleaned = cleaned.replace(/^(?:Program Details|Program Overview|Eligibility Criteria|Application criteria|Who Should Apply\??|Program Highlights|Program Outcomes)\s+/i, '');
   return cleaned.trim();
 }
 
@@ -237,13 +243,16 @@ function applyProgram(event, details, fallback = {}) {
   const fallbackDeadline = parseCandidateDeadline(fallback);
   const registrationDeadline = details.registration_deadline || fallbackDeadline;
   if (registrationDeadline) event.registration_deadline = registrationDeadline;
+  // `event.summary` is a value THIS writer generated on a previous run. It is only
+  // safe as a fallback once the attribution sentence is stripped back off, otherwise
+  // the suffix is re-appended to itself every run (see source-attribution-utils.mjs).
   const officialDescription = [details.overview, details.description, event.summary]
-    .map((value) => stripMiskPageChrome(value))
+    .map((value) => stripSourceAttribution(stripMiskPageChrome(value)))
     .find((value) => value && value.length > 40) || '';
   if (officialDescription) {
     event.description = officialDescription;
     event.rich_summary = officialDescription;
-    event.summary = `${firstSentence(officialDescription)} المصدر الرسمي: Misk Hub.`;
+    event.summary = withSourceAttribution(firstSentence(officialDescription), 'Misk Hub');
   }
   const metadataFeatures = [
     details.format ? `Program format: ${details.format}` : '',
@@ -260,15 +269,34 @@ function applyProgram(event, details, fallback = {}) {
     ? freshFeatures
     : compactItems(Array.isArray(previousOutline.features) ? previousOutline.features : [], 8, 420);
   const requirements = compactItems(details.requirements, 8, 420);
+  // A scrape that caught the section heading but not the body must not erase prose
+  // we already verified (2026-09-01: "Eligibility Criteria" shipped as a whole
+  // summary). Every PUBLISHED event owes a program_outline
+  // (official-event-backlog-enrichment-regression-test), so this never drops the
+  // outline — it keeps the last verified prose and refreshes the metadata around it.
+  if (!officialDescription && previousOutline.official_description) {
+    event.program_outline = {
+      ...previousOutline,
+      collected_at: generatedAt,
+      registration_deadline: registrationDeadline || previousOutline.registration_deadline || '',
+      features
+    };
+    event.updated_at = generatedAt;
+    return event;
+  }
+  // Misk sometimes publishes the metadata grid with no prose body. The outline is
+  // still owed (every published row needs one), so fall back to the catalog's
+  // derived sentence rather than shipping an empty field.
+  const outlineDescription = officialDescription || fallbackEventDescription(event);
   event.program_outline = {
     provider: 'Misk Hub',
     source_method: 'official-html',
     source_url: event.source_url || event.evidence_url || '',
     collected_at: generatedAt,
-    official_description: officialDescription,
+    official_description: outlineDescription,
     duration_text: details.starts_at && details.ends_at ? `${details.starts_at} إلى ${details.ends_at}` : '',
     registration_deadline: registrationDeadline || event.registration_deadline || '',
-    goals: goals.length ? goals : compactItems([officialDescription], 1, 420),
+    goals: goals.length ? goals : compactItems(officialDescription ? [officialDescription] : fallbackEventGoals(event), 6, 420),
     features,
     requirements,
     faqs: Object.fromEntries(Object.entries({

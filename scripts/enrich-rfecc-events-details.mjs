@@ -1,6 +1,7 @@
 import fs from 'node:fs';
 import path from 'node:path';
 import { assignEventCategory, categoryLabels, normalizeEventCategoryMetadata } from './category-taxonomy.mjs';
+import { stripSourceAttribution, withSourceAttribution } from './source-attribution-utils.mjs';
 
 const root = process.cwd();
 const catalogPath = path.join(root, 'data', 'events_catalog.json');
@@ -171,7 +172,7 @@ function applyRfeccDetails(event, candidate = {}, page = {}) {
     event.source_url = sourceUrl;
     event.evidence_url = event.evidence_url || sourceUrl;
   }
-  const officialDescription = cleanText(page.description || candidate.summary || event.summary || `Official listing for ${officialTitle} at ${venue}.`);
+  const officialDescription = stripSourceAttribution(cleanText(page.description || candidate.summary || event.summary || `Official listing for ${officialTitle} at ${venue}.`));
 
   if (officialTitle) event.title = officialTitle;
   event.image_url = imageUrl;
@@ -182,7 +183,7 @@ function applyRfeccDetails(event, candidate = {}, page = {}) {
   const categoryLabel = categoryLabels(event.category, event)?.ar;
   event.description = officialDescription;
   event.rich_summary = officialDescription;
-  event.summary = `${officialDescription} المصدر الرسمي: واجهة الرياض للمعارض والمؤتمرات.`;
+  event.summary = withSourceAttribution(officialDescription, 'واجهة الرياض للمعارض والمؤتمرات');
   if (imageUrl) {
     event.original_image_url = event.original_image_url || imageUrl;
     event.image_alt = event.image_alt || `${event.title} - RFECC`;

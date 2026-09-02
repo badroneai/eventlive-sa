@@ -55,11 +55,25 @@ const semanticKey = (event) => [
   normalizeArabicSearch(event.source_label || event.organizer)
 ].join('|');
 const collectedChamberKeys = [...new Set(endedEvents.filter(isChamberDetail).map(semanticKey))].sort();
-const publicChamberKeys = [...new Set(events.filter(isChamberDetail).map(semanticKey))].sort();
+const publicChamberKeys = new Set(events.filter(isChamberDetail).map(semanticKey));
+// SUBSET, not equality. `source_ended_events.json` records only circulars that have
+// ENDED, while the public feed carries live and upcoming ones too — so the two sets
+// coincide exactly only while every Madinah circular happens to be in the past. On
+// 2026-08-31 the chamber published a workshop dated 2026-09-01 and this equality
+// went red for four consecutive runs (33323362370 → 33400355073), freezing the
+// publish, over a future-dated event that was not a defect at all. What the WO
+// actually bought is the direction below: a distinct circular the collector
+// recorded must never be silently swallowed by the dedupe pass (or, per AGENTS.md
+// law 10, quietly lose its published page). The other half of the intent — exact
+// duplicates STAY deduplicated — is the duplicate-group assertion at the top of
+// this file, which already covers the whole public feed.
+const missingChamberKeys = collectedChamberKeys.filter((key) => !publicChamberKeys.has(key));
 assert.deepEqual(
-  publicChamberKeys,
-  collectedChamberKeys,
-  'Madinah Chamber detail pages must remain distinct while exact duplicate circulars stay deduplicated'
+  missingChamberKeys,
+  [],
+  'Madinah Chamber detail pages must remain distinct while exact duplicate circulars stay deduplicated — ' +
+    'these collected circulars have no public page left'
 );
+const notYetEnded = [...publicChamberKeys].filter((key) => !collectedChamberKeys.includes(key)).length;
 
-console.log(`PUBLIC_DEDUPE_TEST_OK events=${events.length} catalog_published=${publicCatalogEvents.length} duplicate_groups=0 near_duplicate_pairs=0 saudi_industrial_records=1`);
+console.log(`PUBLIC_DEDUPE_TEST_OK events=${events.length} catalog_published=${publicCatalogEvents.length} duplicate_groups=0 near_duplicate_pairs=0 saudi_industrial_records=1 chamber_collected=${collectedChamberKeys.length} chamber_public=${publicChamberKeys.size} chamber_not_yet_ended=${notYetEnded}`);
