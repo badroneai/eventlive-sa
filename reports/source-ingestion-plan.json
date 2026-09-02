@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-02T04:57:34.147Z",
+  "generated_at": "2026-09-02T11:43:10.665Z",
   "source_registry": "data/source_registry.json",
   "source_collection_report": "reports/source-collection-report.json",
   "totals": {
@@ -830,12 +830,12 @@
       "score": 119,
       "has_active_collector": true,
       "last_collection_status": "ok",
-      "last_extracted": 65,
+      "last_extracted": 71,
       "last_probe_status": "",
       "last_probe_score": 0,
       "last_probe_recommendation": "",
       "last_probe_blocked_reason": "",
-      "known_candidates": 67,
+      "known_candidates": 73,
       "next_action": "Run in the 6-hour sync ring; keep dedupe and image enrichment active."
     },
     {
@@ -2049,12 +2049,12 @@
       "score": 66,
       "has_active_collector": true,
       "last_collection_status": "ok",
-      "last_extracted": 10,
+      "last_extracted": 9,
       "last_probe_status": "",
       "last_probe_score": 0,
       "last_probe_recommendation": "",
       "last_probe_blocked_reason": "",
-      "known_candidates": 62,
+      "known_candidates": 64,
       "next_action": "Run in the 6-hour sync ring; keep dedupe and image enrichment active."
     },
     {
@@ -2256,7 +2256,7 @@
       "score": 63,
       "has_active_collector": true,
       "last_collection_status": "ok",
-      "last_extracted": 17,
+      "last_extracted": 18,
       "last_probe_status": "",
       "last_probe_score": 0,
       "last_probe_recommendation": "",

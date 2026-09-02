@@ -1,11 +1,11 @@
 # EventLive Source Auto Publish Report
 
-- published_at: 2026-09-02T04:51:13.078Z
+- published_at: 2026-09-02T11:35:56.080Z
 - dry_run: false
 - include_partner: true
-- candidates_seen: 509
-- published_new: 0
-- linked_existing: 484
+- candidates_seen: 517
+- published_new: 6
+- linked_existing: 486
 - blocked_remaining: 25
 - duplicate_review_alerts: 6
 
@@ -23,6 +23,12 @@
 
 | Candidate | Status | Catalog event | Reason |
 |---|---|---|---|
+| candidate-umm-al-qura-events-ملتقى-المستجدين-1448هـ-بقسم-الفيزياء-20260902-01ad0bf0 | published | event-ملتقى-المستجدين-1448هـ-بقسم-الفيزياء | ملتقى المستجدين 1448هـ بقسم الفيزياء |
+| candidate-umm-al-qura-events-نشاط-بعنوان-نعود-بشغف-وطموح-20260902-811c1baf | published | event-نشاط-بعنوان-نعود-بشغف-وطموح | نشاط بعنوان نعود بشغف وطموح |
+| candidate-umm-al-qura-events-برنامج-تطوير-القيادات-الأكاديمية-عن-بعد-20260906-b3fd6622 | published | event-برنامج-تطوير-القيادات-الأكاديمية-عن-بعد | برنامج تطوير القيادات الأكاديمية عن بعد |
+| candidate-ithra-events-adventure-around-the-kingdom-20260929-0217cd1b | published | event-adventure-around-the-kingdom | Adventure Around the Kingdom |
+| candidate-ithra-events-treasure-hunt-20260929-3984a48b | published | event-treasure-hunt | Treasure Hunt |
+| candidate-ithra-events-global-impact-challenge-20261116-90b38a3c | published | event-global-impact-challenge | Global Impact Challenge |
 | candidate-moc-cultural-subportals-skill-development-initiative-20210714-10f7dc2c | linked-existing | event-skill-development-initiative | already linked to catalog event |
 | candidate-moc-cultural-subportals-sitar-20220921-cda2e068 | linked-existing | event-sitar | already linked to catalog event |
 | candidate-moc-cultural-subportals-the-architecture-and-design-caf-20240427-046e2ec1 | linked-existing | event-the-architecture-and-design-caf | already linked to catalog event |
@@ -159,9 +165,8 @@
 | candidate-ithra-events-rehlaat-exhibit-20260902-b9d1c3e5 | linked-existing | event-rehlaat-exhibit | already linked to catalog event |
 | candidate-ithra-events-tafasahu-make-room-20260902-562bc61d | linked-existing | event-tafasahu-make-room | already linked to catalog event |
 | candidate-ithra-events-tinkering-stations-20260902-5a2c4c0e | linked-existing | event-tinkering-stations | already linked to catalog event |
-| candidate-umm-al-qura-events-ورشة-تعريفية-بوابتي-الأكاديمية-20260902-6f845a46 | linked-existing | event-ورشة-تعريفية-بوابتي-الأكاديمية | already linked to catalog event |
-| candidate-ithra-events-childrens-art-studio-20260902-2bf92d17 | linked-existing | event-childrens-art-studio | already linked to catalog event |
 | candidate-ithra-events-from-saudi-home-20260902-e97ae151 | linked-existing | event-from-saudi-home | already linked to catalog event |
+| candidate-ithra-events-childrens-art-studio-20260902-2bf92d17 | linked-existing | event-childrens-art-studio | already linked to catalog event |
 | candidate-ithra-events-podcast-production-from-the-field-to-storytelling-20260902-f50aa266 | linked-existing | event-podcast-production-from-the-field-to-storytelling | already linked to catalog event |
 | candidate-ithra-events-memory-trace-20260902-517c34b6 | linked-existing | event-memory-trace | already linked to catalog event |
 | candidate-ithra-events-nu-power-20260902-653464ac | linked-existing | event-nu-power | already linked to catalog event |
@@ -188,6 +193,7 @@
 | candidate-ithra-events-family-game-20260904-a30cabbd | linked-existing | event-family-game | already linked to catalog event |
 | candidate-ithra-events-games-hub-20260904-fb83124c | linked-existing | event-games-hub | already linked to catalog event |
 | candidate-misk-hub-programs-the-innovation-diwan-20260905-6f9de2e0 | linked-existing | event-the-innovation-diwan | already linked to catalog event |
+| candidate-ithra-events-toddler-saturday-20260905-739e1f00 | linked-existing | event-toddler-saturday | trusted duplicate linked to existing catalog event |
 | candidate-ithra-events-doors-all-around-us-arabic-20260905-3e763e7b | linked-existing | event-doors-all-around-us-arabic | already linked to catalog event |
 | candidate-riyadh-city-events-saudi-food-manufacturing-show-20260905-470e03a4 | linked-existing | event-saudi-food-manufacturing-show | already linked to catalog event |
 | candidate-ithra-events-story-land-20260905-bb5dc01b | linked-existing | event-story-land | already linked to catalog event |
@@ -219,6 +225,7 @@
 | candidate-rfecc-whats-on-fibo-2026-20260908-f3d2b4f2 | linked-existing | event-fibo-2026 | already linked to catalog event |
 | candidate-rfecc-whats-on-wtm-spotlight-riyadh-20260908-3b46af1d | linked-existing | event-wtm-spotlight-riyadh | already linked to catalog event |
 | candidate-dhahran-expo-calendar-static-equipment-engineering-maintenance-technical-conference-expo-state-20260908-18d15b29 | linked-existing | event-static-equipment-engineering-maintenance-technical-conference-expo-state | already linked to catalog event |
+| candidate-ithra-events-toddler-tuesday-20260908-1afead7d | linked-existing | event-toddler-tuesday | trusted duplicate linked to existing catalog event |
 | candidate-visit-saudi-calendar-fibo-arabia-2026-20260908-352ccf4e | linked-existing | event-fibo-arabia-2026 | already linked to catalog event |
 | candidate-ithra-events-on-this-carpet-20260908-2972e041 | linked-existing | event-on-this-carpet | already linked to catalog event |
 | candidate-riyadh-city-events-saudi-wood-expo-20260908-d1fa2ea0 | linked-existing | event-saudi-wood-expo | already linked to catalog event |
@@ -377,6 +384,7 @@
 | candidate-riyadh-city-events-cityscape-global-20261116-2ffc5b25 | linked-existing | event-cityscape-global | already linked to catalog event |
 | candidate-riyadh-city-events-saudi-elenex-20261116-586bfadf | linked-existing | event-saudi-elenex | already linked to catalog event |
 | candidate-riyadh-city-events-foodex-saudi-20261116-23bffbf3 | linked-existing | event-foodex-saudi | already linked to catalog event |
+| candidate-ithra-events-visual-communication-challenge-20261116-6613dbcf | linked-existing | event-global-impact-challenge | trusted duplicate linked to existing catalog event |
 | candidate-riyadh-city-events-king-abdulaziz-falconry-festival-20261117-8da1dabe | linked-existing | event-king-abdulaziz-falconry-festival | already linked to catalog event |
 | candidate-hayy-jameel-events-hayy-cinema-my-vibe-2023-20261120-665b1c9f | linked-existing | event-hayy-cinema-my-vibe-2023 | already linked to catalog event |
 | candidate-hayy-jameel-events-hayy-cinema-nour-shams-2021-20261120-0e2d9b94 | linked-existing | event-hayy-cinema-nour-shams-2021 | already linked to catalog event |

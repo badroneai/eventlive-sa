@@ -1,18 +1,18 @@
 {
-  "published_at": "2026-09-02T04:51:13.078Z",
+  "published_at": "2026-09-02T11:35:56.080Z",
   "dry_run": false,
   "include_partner": true,
   "source_candidates": "data/source_candidates.json",
   "events_catalog": "data/events_catalog.json",
-  "candidates_seen": 509,
+  "candidates_seen": 517,
   "totals": {
-    "candidates_seen": 509,
-    "published": 0,
-    "linked_existing": 484,
+    "candidates_seen": 517,
+    "published": 6,
+    "linked_existing": 486,
     "blocked": 25,
     "duplicate_review_alerts": 6,
     "category_fallback_alerts": 0,
-    "reconciled": 484
+    "reconciled": 492
   },
   "category_fallback_alerts": [],
   "duplicate_catalog_rows_removed": 0,
@@ -124,7 +124,38 @@
       "start_date_drift_days": 0.042
     }
   ],
-  "published": [],
+  "published": [
+    {
+      "candidate_id": "candidate-umm-al-qura-events-ملتقى-المستجدين-1448هـ-بقسم-الفيزياء-20260902-01ad0bf0",
+      "event_id": "event-ملتقى-المستجدين-1448هـ-بقسم-الفيزياء",
+      "title": "ملتقى المستجدين 1448هـ بقسم الفيزياء"
+    },
+    {
+      "candidate_id": "candidate-umm-al-qura-events-نشاط-بعنوان-نعود-بشغف-وطموح-20260902-811c1baf",
+      "event_id": "event-نشاط-بعنوان-نعود-بشغف-وطموح",
+      "title": "نشاط بعنوان نعود بشغف وطموح"
+    },
+    {
+      "candidate_id": "candidate-umm-al-qura-events-برنامج-تطوير-القيادات-الأكاديمية-عن-بعد-20260906-b3fd6622",
+      "event_id": "event-برنامج-تطوير-القيادات-الأكاديمية-عن-بعد",
+      "title": "برنامج تطوير القيادات الأكاديمية عن بعد"
+    },
+    {
+      "candidate_id": "candidate-ithra-events-adventure-around-the-kingdom-20260929-0217cd1b",
+      "event_id": "event-adventure-around-the-kingdom",
+      "title": "Adventure Around the Kingdom"
+    },
+    {
+      "candidate_id": "candidate-ithra-events-treasure-hunt-20260929-3984a48b",
+      "event_id": "event-treasure-hunt",
+      "title": "Treasure Hunt"
+    },
+    {
+      "candidate_id": "candidate-ithra-events-global-impact-challenge-20261116-90b38a3c",
+      "event_id": "event-global-impact-challenge",
+      "title": "Global Impact Challenge"
+    }
+  ],
   "linked_existing": [
     {
       "candidate_id": "candidate-moc-cultural-subportals-skill-development-initiative-20210714-10f7dc2c",
@@ -943,21 +974,15 @@
       "reason": "already linked to catalog event"
     },
     {
-      "candidate_id": "candidate-umm-al-qura-events-ورشة-تعريفية-بوابتي-الأكاديمية-20260902-6f845a46",
-      "event_id": "event-ورشة-تعريفية-بوابتي-الأكاديمية",
-      "title": "ورشة تعريفية: بوابتي الأكاديمية",
+      "candidate_id": "candidate-ithra-events-from-saudi-home-20260902-e97ae151",
+      "event_id": "event-from-saudi-home",
+      "title": "From Saudi Home",
       "reason": "already linked to catalog event"
     },
     {
       "candidate_id": "candidate-ithra-events-childrens-art-studio-20260902-2bf92d17",
       "event_id": "event-childrens-art-studio",
       "title": "Children's Art Studio",
-      "reason": "already linked to catalog event"
-    },
-    {
-      "candidate_id": "candidate-ithra-events-from-saudi-home-20260902-e97ae151",
-      "event_id": "event-from-saudi-home",
-      "title": "From Saudi Home",
       "reason": "already linked to catalog event"
     },
     {
@@ -1115,6 +1140,12 @@
       "event_id": "event-the-innovation-diwan",
       "title": "The Innovation Diwan",
       "reason": "already linked to catalog event"
+    },
+    {
+      "candidate_id": "candidate-ithra-events-toddler-saturday-20260905-739e1f00",
+      "event_id": "event-toddler-saturday",
+      "title": "Toddler Saturday",
+      "reason": "trusted duplicate linked to existing catalog event"
     },
     {
       "candidate_id": "candidate-ithra-events-doors-all-around-us-arabic-20260905-3e763e7b",
@@ -1301,6 +1332,12 @@
       "event_id": "event-static-equipment-engineering-maintenance-technical-conference-expo-state",
       "title": "Static Equipment Engineering & Maintenance Technical Conference & Expo - STATEC Arabia",
       "reason": "already linked to catalog event"
+    },
+    {
+      "candidate_id": "candidate-ithra-events-toddler-tuesday-20260908-1afead7d",
+      "event_id": "event-toddler-tuesday",
+      "title": "Toddler Tuesday",
+      "reason": "trusted duplicate linked to existing catalog event"
     },
     {
       "candidate_id": "candidate-visit-saudi-calendar-fibo-arabia-2026-20260908-352ccf4e",
@@ -2249,6 +2286,12 @@
       "event_id": "event-foodex-saudi",
       "title": "Foodex Saudi",
       "reason": "already linked to catalog event"
+    },
+    {
+      "candidate_id": "candidate-ithra-events-visual-communication-challenge-20261116-6613dbcf",
+      "event_id": "event-global-impact-challenge",
+      "title": "Visual Communication Challenge",
+      "reason": "trusted duplicate linked to existing catalog event"
     },
     {
       "candidate_id": "candidate-riyadh-city-events-king-abdulaziz-falconry-festival-20261117-8da1dabe",

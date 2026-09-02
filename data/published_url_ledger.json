@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "generated_at": "2026-09-02T05:00:55.901Z",
+  "generated_at": "2026-09-02T11:48:32.591Z",
   "events": {
     "event-skill-development-initiative": {
       "identity": "skill development initiative|riyadh|2021-07-14",
@@ -632,9 +632,14 @@
       "first_seen": "2026-09-01",
       "last_seen": "2026-09-02"
     },
-    "event-ورشة-تعريفية-بوابتي-الأكاديمية": {
-      "identity": "ورشة تعريفية: بوابتي الأكاديمية|makkah|2026-09-02",
-      "first_seen": "2026-09-01",
+    "event-ملتقى-المستجدين-1448هـ-بقسم-الفيزياء": {
+      "identity": "ملتقى المستجدين 1448هـ بقسم الفيزياء|makkah|2026-09-02",
+      "first_seen": "2026-09-02",
+      "last_seen": "2026-09-02"
+    },
+    "event-نشاط-بعنوان-نعود-بشغف-وطموح": {
+      "identity": "نشاط بعنوان نعود بشغف وطموح|makkah|2026-09-02",
+      "first_seen": "2026-09-02",
       "last_seen": "2026-09-02"
     },
     "event-from-saudi-home": {
@@ -730,6 +735,11 @@
     "event-red-hat-certified-system-administrator-rhcsa": {
       "identity": "red hat certified system administrator (rhcsa)|online|2026-09-06",
       "first_seen": "2026-09-01",
+      "last_seen": "2026-09-02"
+    },
+    "event-برنامج-تطوير-القيادات-الأكاديمية-عن-بعد": {
+      "identity": "برنامج تطوير القيادات الأكاديمية عن بعد|online|2026-09-06",
+      "first_seen": "2026-09-02",
       "last_seen": "2026-09-02"
     },
     "event-الشهادة-الدولية-للحاسب-والإنترنت-ic3": {
@@ -1135,6 +1145,16 @@
     "event-e3-customer-experience-conference": {
       "identity": "e3 customer experience conference|riyadh|2026-09-29",
       "first_seen": "2026-07-11",
+      "last_seen": "2026-09-02"
+    },
+    "event-adventure-around-the-kingdom": {
+      "identity": "adventure around the kingdom|dhahran|2026-09-29",
+      "first_seen": "2026-09-02",
+      "last_seen": "2026-09-02"
+    },
+    "event-treasure-hunt": {
+      "identity": "treasure hunt|dhahran|2026-09-29",
+      "first_seen": "2026-09-02",
       "last_seen": "2026-09-02"
     },
     "event-botanical-manifestations": {
@@ -1545,6 +1565,11 @@
     "event-foodex-saudi": {
       "identity": "foodex saudi|riyadh|2026-11-16",
       "first_seen": "2026-07-11",
+      "last_seen": "2026-09-02"
+    },
+    "event-global-impact-challenge": {
+      "identity": "global impact challenge|dhahran|2026-11-16",
+      "first_seen": "2026-09-02",
       "last_seen": "2026-09-02"
     },
     "event-king-abdulaziz-falconry-festival": {
@@ -2230,6 +2255,11 @@
     "event-space-debris-conference-2028": {
       "identity": "space debris conference 2028|riyadh|2028-02-15",
       "first_seen": "2026-08-06",
+      "last_seen": "2026-09-02"
+    },
+    "event-ورشة-تعريفية-بوابتي-الأكاديمية": {
+      "identity": "ورشة تعريفية: بوابتي الأكاديمية|makkah|2026-09-02",
+      "first_seen": "2026-09-01",
       "last_seen": "2026-09-02"
     },
     "event-الفصول-الافتراضية-عبر-blackboard-ultra-الفترة-المسائية": {

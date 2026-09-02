@@ -1,18 +1,37 @@
 {
-  "generated_at": "2026-09-02T04:57:33.399Z",
+  "generated_at": "2026-09-02T11:42:35.409Z",
   "events_file": "dist/events.json",
   "manifest": "data/event_image_cache_manifest.json",
   "image_dir": "dist/assets/event-images",
   "totals": {
     "targets": 500,
-    "cached_total": 826,
-    "fetched": 0,
-    "reused": 496,
+    "cached_total": 829,
+    "fetched": 3,
+    "reused": 493,
     "failed": 4,
     "skipped_recent_failures": 4,
     "remembered_failures": 11
   },
-  "fetched": [],
+  "fetched": [
+    {
+      "source_url": "https://www.ithra.com/application/files/cache/thumbnails/ea177199ee8a928c55aaa359740ff51b.jpg",
+      "file": "dist/assets/event-images/treasure-hunt-0ea8b3ad45.jpg",
+      "bytes": 219455,
+      "events": 1
+    },
+    {
+      "source_url": "https://www.ithra.com/application/files/cache/thumbnails/36b7ced72fad4052ec4ab7117bd56b55.jpg",
+      "file": "dist/assets/event-images/global-impact-challenge-0ca764d000.jpg",
+      "bytes": 322206,
+      "events": 1
+    },
+    {
+      "source_url": "https://www.ithra.com/application/files/cache/thumbnails/abacadd8f4efd6725035d14b969a9359.png",
+      "file": "dist/assets/event-images/adventure-around-the-kingdom-b6b607165c.png",
+      "bytes": 1282988,
+      "events": 1
+    }
+  ],
   "reused": [
     {
       "source_url": "https://music.moc.gov.sa/-/media/Project/Ministries/Moc/Events/Artboard1.png",
@@ -232,7 +251,7 @@
     {
       "source_url": "https://uqu.edu.sa/assets/images/uqu-gate.jpeg",
       "file": "dist/assets/event-images/الشهادة-الدولية-للحاسب-والإنترنت-ic3-a46ba6d2eb.jpg",
-      "events": 83
+      "events": 86
     },
     {
       "source_url": "https://scth.scene7.com/is/image/scth/buraydah-dates-carnival-qassim?wid=1400&hei=788&fit=constrain&fmt=webp",
@@ -2478,21 +2497,6 @@
       "source_url": "https://api.riyadh.sa/sites/default/files/styles/medium/public/2026-04/GyN7i2hWYAEFU3X.jpeg?itok=of7aIuP0",
       "file": "dist/assets/event-images/prince-faisal-bin-fahd-art-exhibition-summer-2026-8216b3ee07.jpg",
       "events": 1
-    },
-    {
-      "source_url": "https://www.ithra.com/application/files/cache/thumbnails/560bafb34a47c331b1dc9ad85fc108c9.jpg",
-      "file": "dist/assets/event-images/baab-d957b34587.jpg",
-      "events": 1
-    },
-    {
-      "source_url": "https://hayyjameel.org/wp-content/uploads/2026/06/DSC00760-1-1100x500.jpg",
-      "file": "dist/assets/event-images/مكتبة-جميل-برامج-يوليو-المجتمعية-f1cbae3928.jpg",
-      "events": 1
-    },
-    {
-      "source_url": "https://hayyjameel.org/wp-content/uploads/2026/06/Untitled-1400-x-650-px-1-1100x500.png",
-      "file": "dist/assets/event-images/jameel-library-summer-reading-challenge-2ff280fa30.png",
-      "events": 1
     }
   ],
   "rejected_removed": [],
@@ -2565,6 +2569,8 @@
       "skipped": true
     }
   ],
-  "requires_rebuild": false,
-  "rebuild_reasons": []
+  "requires_rebuild": true,
+  "rebuild_reasons": [
+    "fetched:3"
+  ]
 }

@@ -1,18 +1,20 @@
 {
   "schema": "eventlive.source-final-build.v1",
-  "generated_at": "2026-09-02T04:57:33.867Z",
+  "generated_at": "2026-09-02T11:43:10.446Z",
   "image_cache_report": "reports/event-image-cache-report.json",
-  "decision": "skipped-no-image-change",
-  "duration_ms": 1,
+  "decision": "rebuilt",
+  "duration_ms": 10563,
   "exit_code": 0,
   "cache_totals": {
     "targets": 500,
-    "cached_total": 826,
-    "fetched": 0,
-    "reused": 496,
+    "cached_total": 829,
+    "fetched": 3,
+    "reused": 493,
     "failed": 4,
     "skipped_recent_failures": 4,
     "remembered_failures": 11
   },
-  "reasons": []
+  "reasons": [
+    "fetched:3"
+  ]
 }

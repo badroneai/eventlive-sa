@@ -1,12 +1,12 @@
 {
   "schema": "eventlive.harvest-os-status.v1",
-  "generated_at": "2026-09-02T05:06:05.829Z",
+  "generated_at": "2026-09-02T11:53:49.744Z",
   "status": "NEEDS_WORK",
   "operating_rule": "Probe before new sources; sample before full harvest; Raw collection is not publication; discovery-only never auto-publishes.",
   "totals": {
     "sources": 88,
-    "candidates": 509,
-    "matched_candidates": 488,
+    "candidates": 517,
+    "matched_candidates": 496,
     "auto_publish_sources": 15,
     "candidate_only_sources": 12,
     "partnership_required_sources": 5,
@@ -25,19 +25,19 @@
     "manual_review": 56
   },
   "candidates_by_gate": {
-    "catalog-review": 487,
+    "catalog-review": 495,
     "duplicate-review": 6,
     "source-evidence": 16
   },
   "funnel": {
-    "discovered_this_run": 204,
-    "candidate_queue": 509,
-    "evaluated_for_publish": 509,
-    "linked_existing": 484,
-    "published_new": 0,
+    "discovered_this_run": 210,
+    "candidate_queue": 517,
+    "evaluated_for_publish": 517,
+    "linked_existing": 486,
+    "published_new": 6,
     "blocked": 25,
     "secondary_promoted": 0,
-    "secondary_still_blocked": 22
+    "secondary_still_blocked": 31
   },
   "blocked_reasons": {
     "possible duplicate requires review: exact-title-city-source-conflict": 2,
