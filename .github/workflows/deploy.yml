@@ -21,10 +21,10 @@ jobs:
       EVENTLIVE_PUBLIC_BASE_URL: https://eventme.live/
     steps:
       - name: Checkout
-        uses: actions/checkout@v4
+        uses: actions/checkout@v5
 
       - name: Setup Node
-        uses: actions/setup-node@v4
+        uses: actions/setup-node@v5
         with:
           node-version: 24
           cache: npm
@@ -33,7 +33,7 @@ jobs:
         run: npm ci || npm install
 
       - name: Restore event image cache
-        uses: actions/cache@v4
+        uses: actions/cache@v5
         with:
           path: dist/assets/event-images
           key: eventlive-event-images-${{ runner.os }}-${{ hashFiles('data/event_image_cache_manifest.json') }}
@@ -59,7 +59,7 @@ jobs:
         run: npm run test:release-verdict-schema-suite
 
       - name: Restore schema suite runtime history cache
-        uses: actions/cache/restore@v4
+        uses: actions/cache/restore@v5
         with:
           path: ops/schema-suite-runtime-history.json
           key: schema-suite-history-${{ github.ref_name }}-${{ github.run_id }}
@@ -75,7 +75,7 @@ jobs:
 
       - name: Save schema suite runtime history cache
         if: always()
-        uses: actions/cache/save@v4
+        uses: actions/cache/save@v5
         with:
           path: ops/schema-suite-runtime-history.json
           key: schema-suite-history-${{ github.ref_name }}-${{ github.run_id }}
@@ -219,7 +219,7 @@ jobs:
           } >> "$GITHUB_STEP_SUMMARY"
 
       - name: Upload CI evidence bundle
-        uses: actions/upload-artifact@v4
+        uses: actions/upload-artifact@v6
         with:
           name: ci-evidence-${{ github.run_id }}
           retention-days: 14
@@ -232,7 +232,7 @@ jobs:
             ops/schema-suite-runtime-history.json
 
       - name: Upload search discovery payload
-        uses: actions/upload-artifact@v4
+        uses: actions/upload-artifact@v6
         with:
           name: eventlive-search-discovery-${{ github.run_id }}
           retention-days: 2
@@ -254,10 +254,10 @@ jobs:
           echo "- Schema regression consecutive: ${{ steps.schema_regression_summary.outputs.schema_regression_consecutive || 'n/a' }}" >> $GITHUB_STEP_SUMMARY
 
       - name: Setup Pages
-        uses: actions/configure-pages@v5
+        uses: actions/configure-pages@v6
 
       - name: Upload artifact
-        uses: actions/upload-pages-artifact@v3
+        uses: actions/upload-pages-artifact@v5
         with:
           path: ./dist
 
@@ -270,7 +270,7 @@ jobs:
     steps:
       - name: Deploy to GitHub Pages
         id: deployment
-        uses: actions/deploy-pages@v4
+        uses: actions/deploy-pages@v5
 
   verify-release:
     runs-on: ubuntu-latest
@@ -279,10 +279,10 @@ jobs:
       EVENTLIVE_PUBLIC_BASE_URL: https://eventme.live/
     steps:
       - name: Checkout
-        uses: actions/checkout@v4
+        uses: actions/checkout@v5
 
       - name: Setup Node
-        uses: actions/setup-node@v4
+        uses: actions/setup-node@v5
         with:
           node-version: 24
           cache: npm
@@ -291,7 +291,7 @@ jobs:
         run: npm ci || npm install
 
       - name: Download search discovery payload
-        uses: actions/download-artifact@v4
+        uses: actions/download-artifact@v7
         with:
           name: eventlive-search-discovery-${{ github.run_id }}
           path: .
@@ -301,7 +301,7 @@ jobs:
         run: npm run seo:indexnow:all
 
       - name: Restore schema suite runtime history cache
-        uses: actions/cache/restore@v4
+        uses: actions/cache/restore@v5
         with:
           path: ops/schema-suite-runtime-history.json
           key: schema-suite-history-${{ github.ref_name }}-${{ github.run_id }}
@@ -320,7 +320,7 @@ jobs:
 
       - name: Save schema suite runtime history cache
         if: always()
-        uses: actions/cache/save@v4
+        uses: actions/cache/save@v5
         with:
           path: ops/schema-suite-runtime-history.json
           key: schema-suite-history-${{ github.ref_name }}-${{ github.run_id }}
@@ -473,7 +473,7 @@ jobs:
 
       - name: Upload release verification evidence
         if: always()
-        uses: actions/upload-artifact@v4
+        uses: actions/upload-artifact@v6
         with:
           name: release-verification-${{ github.run_id }}
           retention-days: 14
