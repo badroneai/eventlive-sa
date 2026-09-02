@@ -9,6 +9,7 @@ function check(name, actual, expected) {
   console.log(`${ok ? 'PASS' : 'FAIL'} - ${name}`);
 }
 
+const HOUR = 60 * 60 * 1000;
 const DAY = 24 * 60 * 60 * 1000;
 const now = Date.parse('2026-07-04T20:00:00+03:00');
 const iso = (ms) => new Date(ms).toISOString();
@@ -28,8 +29,24 @@ check('invalid dates => moment default',
   classifyEventKind({ starts_at: '', ends_at: '' }), 'moment');
 
 // 2) الحالة حسب النوع
-check('moment in-window => live',
-  getEventStatus(iso(now - DAY), iso(now + DAY), now, 'moment').key, 'live');
+// A window we can actually read the hour off: short enough that "inside it"
+// means "open now".
+check('short moment in-window => live',
+  getEventStatus(iso(now - 2 * HOUR), iso(now + 2 * HOUR), now, 'moment').key, 'live');
+check('exactly 24h in-window => live (boundary)',
+  getEventStatus(iso(now - 12 * HOUR), iso(now + 12 * HOUR), now, 'moment').key, 'live');
+// This fixture used to assert `live` for a 48-hour window, which is the defect the
+// owner reported on 2026-09-02: a multi-day event is one unbroken interval with no
+// daily band, so "inside the window" is equally true at 03:00 and the site claimed
+// "مباشرة الآن" two hours after the day had closed. Past 24h the honest answer is
+// that the event is within its dates and we do not know the hour.
+check('48h window in-window => ongoing, NOT live',
+  getEventStatus(iso(now - DAY), iso(now + DAY), now, 'moment').key, 'ongoing');
+check('48h window carries the honest label',
+  getEventStatus(iso(now - DAY), iso(now + DAY), now, 'moment').label, 'مستمرة هذه الأيام');
+check('3-day conference at 03:00 => ongoing, NOT live',
+  getEventStatus('2026-08-31T11:00:00+03:00', '2026-09-03T21:00:00+03:00',
+    new Date('2026-09-02T03:00:00+03:00').getTime(), 'moment').key, 'ongoing');
 check('program in-window => ongoing (NOT live)',
   getEventStatus(iso(now - 30 * DAY), iso(now + 60 * DAY), now, 'program').key, 'ongoing');
 check('program before window => upcoming',
