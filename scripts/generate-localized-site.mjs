@@ -1303,7 +1303,7 @@ function englishPlacePhrase(city = '') {
 // the ~1,470 English event pages shipped the same boilerplate sentence, which
 // is a duplicate-content signal on half the site and leaves Google nothing
 // event-specific to use as a snippet.
-function englishEventDescription(event) {
+function englishEventDescription(event, ended = eventHasEnded(event)) {
   const title = event.title_en || event.title || '';
   const city = exact[event.city] || event.city_label || event.city || 'Saudi Arabia';
   const rawVenue = event.venue ? (exact[event.venue] || event.venue) : '';
@@ -1315,7 +1315,6 @@ function englishEventDescription(event) {
   // Mirrors the Arabic side: a page about an event that already happened must
   // say so in the snippet. 72% of event pages are archives and none of them
   // admitted it (measured 2026-09-03).
-  const ended = eventHasEnded(event);
   const lead = ended ? 'Past event. ' : '';
   const tail = ended
     ? 'Archived from the official source on EventLive.'
@@ -1325,11 +1324,26 @@ function englishEventDescription(event) {
     .trim();
 }
 
-/** True when the event's own window has closed. */
+/**
+ * True when the event has actually finished — its own window OR its last session,
+ * whichever is later. Mirrors effectiveEventEnd() in generate-site.mjs.
+ *
+ * ends_at alone is not enough: 30 events carry a parent window months behind
+ * their own schedule (chess-hub closes 2026-08-25 while 13 sessions run to
+ * 2026-12-29), and reading it alone made the English title announce a live
+ * recurring event as finished while the Arabic twin, already fixed, did not.
+ * event.status is likewise derived from the stale window, so a future session
+ * outranks it.
+ */
 export function eventHasEnded(event = {}) {
-  if (event?.status === 'ended') return true;
-  const end = new Date(event?.ends_at || event?.starts_at || '').getTime();
-  return Number.isFinite(end) && end < Date.now();
+  const own = new Date(event?.ends_at || event?.starts_at || '').getTime();
+  let latest = Number.isFinite(own) ? own : -Infinity;
+  for (const session of Array.isArray(event?.sessions) ? event.sessions : []) {
+    const at = new Date(session?.ends_at || session?.starts_at || '').getTime();
+    if (Number.isFinite(at) && at > latest) latest = at;
+  }
+  if (!Number.isFinite(latest)) return false;
+  return latest < Date.now();
 }
 
 /**
@@ -1351,9 +1365,20 @@ function englishArchiveMonth(value) {
  * carries "— منتهية <شهر سنة>", but that composite has no dictionary entry, so
  * the English twin shipped a title that reads as a live event.
  */
-export function englishEventTitle(rawTitle, event) {
-  const base = String(rawTitle || '').replace(/\s*\|\s*EventLive Saudi Arabia\s*$/u, '').trim();
-  if (!eventHasEnded(event)) return `${base} | EventLive Saudi Arabia`;
+export function englishEventTitle(rawTitle, event, arabicTitle = '') {
+  // Derived from the ARABIC title, not re-decided here. The Arabic side already
+  // resolves "has this finished?" against the event's own window AND its last
+  // session (effectiveEventEnd in generate-site.mjs); the localiser's catalog view
+  // has no sessions, so a second copy of the rule got 30 recurring events wrong —
+  // announcing an event as finished in English while its Arabic twin, correctly,
+  // did not. One source of truth, translated.
+  const arabicMarker = String(arabicTitle || rawTitle || '').match(/—\s*منتهية\s*([^|]*)/u);
+  const base = String(rawTitle || '')
+    .replace(/—\s*منتهية[^|]*/u, '')
+    .replace(/\s*\|\s*EventLive( Saudi Arabia)?\s*$/u, '')
+    .replace(/\s+/g, ' ')
+    .trim();
+  if (!arabicMarker) return `${base} | EventLive Saudi Arabia`;
   const month = englishArchiveMonth(event?.ends_at || event?.starts_at);
   const marker = month ? `— Ended ${month}` : '— Ended';
   return `${base} ${marker} | EventLive Saudi Arabia`;
@@ -1396,6 +1421,7 @@ function englishRedirectStubMeta(relativePath) {
 function englishMeta($, relativePath) {
   const originalTitle = $('title').text().trim();
   const originalDescription = $('meta[name="description"]').attr('content') || '';
+
   const stubMeta = englishRedirectStubMeta(relativePath);
   if (stubMeta) {
     $('title').text(stubMeta.title);
@@ -1433,7 +1459,9 @@ function englishMeta($, relativePath) {
   // entry could translate.
   let description = generic;
   if (event) {
-    const built = englishEventDescription(event);
+    // Same single source of truth as the title: the Arabic page already resolved
+    // "has this finished?" against the event's window AND its last session.
+    const built = englishEventDescription(event, /—\s*منتهية/u.test(originalTitle));
     if (built && !/^[\s.]*$/.test(built)) description = built;
   } else {
     const authored = englishSeoDescription(originalDescription, translateMetaText);
@@ -1444,7 +1472,7 @@ function englishMeta($, relativePath) {
   if (event) {
     // The Arabic title carries "— منتهية <شهر سنة>" for archived events; that
     // composite cannot be dictionary-translated, so rebuild the marker here.
-    $('title').text(englishEventTitle($('title').text(), event));
+    $('title').text(englishEventTitle($('title').text(), event, originalTitle));
   }
   $('meta[name="description"]').attr('content', description);
   $('meta[property="og:description"]').attr('content', description);

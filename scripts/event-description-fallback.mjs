@@ -24,10 +24,24 @@ export function fallbackEventDescription(event = {}, provider = '') {
   return `${title} فعالية منشورة من ${source} ضمن كتالوج EventLive.`;
 }
 
+/**
+ * What a reader gets from this page, in the reader's terms.
+ *
+ * The third line used to read "إثراء بطاقة الفعالية لتكون مفيدة للمستخدم
+ * والذكاءات ومحركات البحث" — the page telling its own visitor that it exists to
+ * be useful to search engines. It shipped as visible body copy on 692 event
+ * pages. Whatever it did for rankings, it said out loud that the content was
+ * written for machines, which is the opposite of what Google's own
+ * helpful-content guidance asks and the opposite of what a visitor wants to read.
+ *
+ * These lines are deliberately about the visitor's decision — go or not, when,
+ * where, and whether the source can be checked — because that is the only reason
+ * anyone opens an event page.
+ */
 export function fallbackEventGoals(event = {}) {
   return [
-    `تقديم ${eventMode(event)} موثقة من مصدرها ضمن EventLive.`,
+    `تقديم ${eventMode(event)} موثقة من مصدرها الرسمي.`,
     'توضيح الموعد والمدينة والموقع قبل قرار الحضور.',
-    'إثراء بطاقة الفعالية لتكون مفيدة للمستخدم والذكاءات ومحركات البحث.'
+    'ربط الفعالية برابط مصدرها ليتحقق الزائر بنفسه.'
   ];
 }

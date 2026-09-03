@@ -203,7 +203,10 @@ function applyVisitSaudiDetails(event, candidate = {}, page = {}) {
     goals: compactItems([
       'تقديم بطاقة حضور موثقة من Visit Saudi للفعاليات والمواسم الوطنية.',
       'توضيح الموعد والموقع والتصنيف قبل انتقال الزائر إلى الفعالية.',
-      'رفع جودة صفحة الفعالية لمحركات البحث والذكاءات عبر وصف وصورة ومصدر رسمي.'
+      // Was: "رفع جودة صفحة الفعالية لمحركات البحث والذكاءات" — visible body copy
+      // telling the visitor the page exists to serve search engines. Replaced with
+      // what the reader actually gets (see event-description-fallback.mjs).
+      'إرفاق وصف وصورة ورابط المصدر الرسمي ليتحقق الزائر بنفسه.'
     ], 6, 240),
     features: compactItems([
       `الفعالية: ${cleanText(event.title)}`,

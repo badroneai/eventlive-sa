@@ -2263,7 +2263,7 @@ function renderEventSessions(event, sessionsTitle, sessionsNote) {
     const day = String(start).slice(0, 10);
     const search = normalizeArabicSearch([session.title, session.session_title, session.speaker, session.room, session.track].filter(Boolean).join(' '));
     const sourceLink = session.source_url ? `<a class="session-source" href="${escapeHtml(safeHref(session.source_url))}" rel="noopener noreferrer">المصدر الرسمي</a>` : '';
-    return `<article class="session" id="${escapeHtml(sessionAnchor(session, index))}" data-session-item data-day="${escapeHtml(day)}" data-room="${escapeHtml(session.room || '')}" data-search="${escapeHtml(search)}" data-start="${escapeHtml(start)}" data-end="${escapeHtml(end)}"><div class="session-top"><div><b>${escapeHtml(session.title || session.session_title || 'جلسة')}</b>${session.speaker ? `<p class="session-speaker">${escapeHtml(session.speaker)}</p>` : ''}</div><time class="session-time" datetime="${escapeHtml(start)}">من ${escapeHtml(formatSessionTime(start))} إلى ${escapeHtml(formatSessionTime(end))}</time></div><div class="meta">${session.room ? `<span class="chip">${escapeHtml(session.room)}</span>` : ''}${session.track ? `<span class="chip">${escapeHtml(session.track)}</span>` : ''}<span class="session-status" data-session-status>قادمة</span>${sourceLink}</div></article>`;
+    return `<article class="session" id="${escapeHtml(sessionAnchor(session, index))}" data-session-item data-day="${escapeHtml(day)}" data-room="${escapeHtml(session.room || '')}" data-search="${escapeHtml(search)}" data-start="${escapeHtml(start)}" data-end="${escapeHtml(end)}"><div class="session-top"><div><b>${escapeHtml(session.title || session.session_title || 'جلسة')}</b>${session.speaker ? `<p class="session-speaker">${escapeHtml(session.speaker)}</p>` : ''}</div><time class="session-time" datetime="${escapeHtml(start)}">من ${escapeHtml(formatSessionTime(start))} إلى ${escapeHtml(formatSessionTime(end))}</time></div><div class="meta">${session.room ? `<span class="chip">${escapeHtml(session.room)}</span>` : ''}${session.track ? `<span class="chip">${escapeHtml(session.track)}</span>` : ''}<span class="session-status" data-session-status>${escapeHtml(staticSessionStatus(start, end))}</span>${sourceLink}</div></article>`;
   }).join('');
   return `<section class="section" data-event-agenda data-section="schedule"><div class="wrap"><div class="agenda-head"><div><span class="eyebrow">برنامج موثق</span><h2>${sessionsTitle}</h2></div>${detailed ? `<p>${agendaSummary}</p>` : ''}</div>${sessionsNote}${toolbar}<div class="timeline">${timeline}</div></div></section>`;
 }
@@ -2407,6 +2407,51 @@ function archiveMonthLabel(value) {
   }
 }
 
+// The server-rendered default for a session chip used to be the literal word
+// "قادمة" — upcoming — on every session of every event, including 1,175 pages
+// whose event finished months ago. The client's updateStatus() corrects it a
+// moment after load, so the contradiction was invisible to anyone who looked with
+// JavaScript on; it is what a crawler reads first and what a no-JS visitor keeps.
+// A page titled "— منتهية يناير ٢٠٢٥" was announcing an upcoming session.
+//
+// Same rule as the homepage live board: the static fallback must already be true,
+// and the runtime clock refines it rather than repairing it. The wording matches
+// the client's own branches exactly (see sessionAgendaScript) so the text does not
+// flicker between two vocabularies on load.
+function staticSessionStatus(startsAt, endsAt) {
+  const start = dateValue(startsAt)?.getTime();
+  const end = dateValue(endsAt)?.getTime() ?? start;
+  const now = Date.now();
+  if (!Number.isFinite(start)) return 'قادمة';
+  if (Number.isFinite(end) && end < now) return 'انتهت';
+  if (start <= now && (!Number.isFinite(end) || end >= now)) return 'تجري الآن';
+  return 'قادمة';
+}
+
+/**
+ * The last moment this event is still running: its own ends_at, or the end of its
+ * latest session if the schedule outlives the parent window. Returns Infinity when
+ * nothing is parseable, so an unreadable date never gets called finished.
+ */
+/** The effective end as an ISO string, for structured data. */
+function effectiveEventEndIso(event = {}) {
+  const at = effectiveEventEnd(event);
+  if (!Number.isFinite(at)) return event.ends_at;
+  const own = dateValue(event.ends_at)?.getTime();
+  return at === own ? event.ends_at : new Date(at).toISOString();
+}
+
+function effectiveEventEnd(event = {}) {
+  const own = dateValue(event.ends_at || event.starts_at)?.getTime() ?? -Infinity;
+  const sessions = Array.isArray(event.sessions) ? event.sessions : [];
+  let latest = own;
+  for (const session of sessions) {
+    const at = dateValue(session?.ends_at || session?.starts_at)?.getTime();
+    if (Number.isFinite(at) && at > latest) latest = at;
+  }
+  return Number.isFinite(latest) ? latest : Infinity;
+}
+
 function renderEventDetail(event) {
   const relative = '../';
   const city = cityLabel(event.city);
@@ -2423,7 +2468,17 @@ function renderEventDetail(event) {
   // The page body already said `فعالية مكتملة محفوظة`. It simply never reached
   // the snippet. Saying it there costs nothing and is the same rule this repo
   // applies everywhere else: a surface may not claim a state it is not in.
-  const ended = event.status === 'ended' || (dateValue(event.ends_at)?.getTime() ?? Infinity) < Date.now();
+  // An event's real end is the later of its own window and its last session. 60
+  // pages had a parent endDate months behind their own schedule — chess-hub closed
+  // on 2026-08-25 while its sessions run to 2026-12-29 — so labelling them from
+  // ends_at alone announced a live, recurring event as finished. Found because the
+  // session chips disagreed with the title, which is exactly what a self-check is
+  // supposed to catch.
+  // A future session is proof the event has not finished, and it outranks a stale
+  // parent status: event.status comes from getEventStatus(starts_at, ends_at),
+  // which cannot see the schedule. chess-hub is stamped 'ended' from a window that
+  // closed 2026-08-25 while 13 sessions run to 2026-12-29.
+  const ended = effectiveEventEnd(event) < Date.now();
   const monthYear = archiveMonthLabel(event.ends_at || event.starts_at);
   const statusPrefix = ended ? 'فعالية منتهية. ' : '';
   const venuePhrase = event.venue && String(event.venue).trim() !== String(city).trim() ? `الموقع: ${event.venue}. ` : '';
@@ -2492,8 +2547,13 @@ function renderEventDetail(event) {
     '@type': 'Event',
     name: event.title,
     startDate: event.starts_at,
-    endDate: event.ends_at,
-    eventStatus: event.status === 'ended' ? 'https://schema.org/EventCompleted' : 'https://schema.org/EventScheduled',
+    // The event runs until its LAST SESSION, not until a parent window that can be
+    // months behind its own schedule. on-this-carpet declared endDate 2026-07-25
+    // to Google while the page listed sessions through 2026-09-29, and stamped
+    // itself EventCompleted alongside them. Structured data that contradicts the
+    // page it describes is worse than none: it is what Google reads first.
+    endDate: effectiveEventEndIso(event),
+    eventStatus: effectiveEventEnd(event) < Date.now() ? 'https://schema.org/EventCompleted' : 'https://schema.org/EventScheduled',
     eventAttendanceMode: online ? 'https://schema.org/OnlineEventAttendanceMode' : 'https://schema.org/OfflineEventAttendanceMode',
     location: eventLocationJsonLd(event, canonical),
     organizer: organizerJsonLdForEvent(event),
