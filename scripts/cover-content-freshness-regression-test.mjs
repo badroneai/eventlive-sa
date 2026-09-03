@@ -109,7 +109,7 @@ function writeCatalog(value) {
 function rebuildArabicSite() {
   execFileSync(process.execPath, ['scripts/generate-site.mjs'], {
     cwd: root,
-    env: { ...process.env, EVENTLIVE_INCREMENTAL_BUILD: 'false', EVENTLIVE_FORCE_SEO_REFRESH: 'true' },
+    env: { ...process.env, EVENTLIVE_INCREMENTAL_BUILD: 'false', EVENTLIVE_FORCE_SEO_REFRESH: 'true', EVENTLIVE_SEO_STATE_PATH: '.eventlive-cache/seo-state-test.json' },
     stdio: 'ignore'
   });
 }
