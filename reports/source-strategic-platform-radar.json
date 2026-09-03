@@ -1,6 +1,6 @@
 {
   "schema": "eventlive.source-strategic-platform-radar.v1",
-  "generated_at": "2026-09-01T21:08:59.089Z",
+  "generated_at": "2026-09-03T04:14:32.812Z",
   "policy": {
     "allowed_use": "official source evidence refresh, API-surface mapping, partnership prioritization, extractor backlog decisions",
     "disallowed_use": "direct catalog publication without official confirmation and duplicate review"
@@ -134,7 +134,7 @@
       "final_url": "https://nec.gov.sa/ar",
       "via": "fetch",
       "content_type": "text/html; charset=utf-8",
-      "bytes": 140625,
+      "bytes": 140781,
       "title": "المركز الوطني للفعاليات",
       "classification": "protected",
       "error": "",
@@ -145,11 +145,11 @@
         "http://www.w3.org/2000/svg",
         "https://enjz.nec.gov.sa/",
         "http://nec.sourcing.mn2.ariba.com/ad/selfRegistration/_c_/C2https://s1.mn2.ariba.com/Sourcing/Main/ad/loginPage/SSOActions?awsso_cc=cmVhbG06Ym1Wajthd3Nzb19ydTphSFIwY0hNNkx5OXpNUzV0YmpJdVlYSnBZbUV1WTI5dEwxTnZkWEpqYVc1bkwwMWhhVzR2WVdRdlpHVm1ZWFZzZEM5RWFYSmxZM1JCWTNScGIyNC9jbVZoYkcwOWJtVmo7YXdzc29fbHU6YUhSMGNITTZMeTl6TVM1dGJqSXVZWEpwWW1FdVkyOXRMMU52ZFhKamFXNW5MMDFoYVc0dllXUXZZMnhwWlc1MFRHOW5iM1YwTDFOVFQwRmpkR2x2Ym5NPTthd3Nzb19hcDpRVU5OO2F3c3NvX2FyaWQ6TVRjek9EQTJOREUyTmpRNU53PT07YXdzc29fa3U6YUhSMGNITTZMeTl6TVM1dGJqSXVZWEpwWW1FdVkyOXRMMU52ZFhKamFXNW5MMDFoYVc0dllXUXZZMnhwWlc1MFMyVmxjRUZzYVhabEwxTlRUMEZqZEdsdmJuTT07YXdzc29fZmw6TVE9PQ%3D%3D%3ARrUCV6K%2BXxtFtIJH7Rwdskb%2BHhc%3D&amp;awsso_ap=ACM&amp;realm=nec&amp;awsr=true",
+        "https://laws.boe.gov.sa/BoeLaws/Laws/LawDetails/e73fd7d3-e812-477b-8112-ad3f00d16fd9/1",
         "https://www.hrsd.gov.sa/knowledge-centre/decisions-and-regulations/regulation-and-procedures/0211202310#",
         "https://eparticipation.my.gov.sa/",
         "https://ncar.gov.sa/",
         "https://www.vision2030.gov.sa/ar/",
-        "https://laws.boe.gov.sa/BoeLaws/Laws/LawDetails/e73fd7d3-e812-477b-8112-ad3f00d16fd9/1",
         "http://nec.sourcing.mn2.ariba.com/ad/selfRegistration/_c_/C2",
         "https://x.com/nec_saudi",
         "https://www.instagram.com/nec.saudi/",
@@ -166,11 +166,11 @@
         "https://www.asda.gov.sa/ar\\",
         "https://www.dgda.gov.sa/ar\\",
         "https://raqmi.dga.gov.sa/platforms/platforms/4b50c837-5b74-4f7e-c4a7-08dcfc01c363/platform-license\\\\\\",
+        "https://laws.boe.gov.sa/BoeLaws/Laws/LawDetails/e73fd7d3-e812-477b-8112-ad3f00d16fd9/1\\",
         "https://www.hrsd.gov.sa/knowledge-centre/decisions-and-regulations/regulation-and-procedures/0211202310#\\",
         "https://eparticipation.my.gov.sa/\\",
         "https://ncar.gov.sa/\\",
         "https://www.vision2030.gov.sa/ar/\\",
-        "https://laws.boe.gov.sa/BoeLaws/Laws/LawDetails/e73fd7d3-e812-477b-8112-ad3f00d16fd9/1\\",
         "http://nec.sourcing.mn2.ariba.com/ad/selfRegistration/_c_/C2\\",
         "https://ehsan.sa/\\",
         "https://nec.gov.sa/ar\\",
@@ -256,17 +256,17 @@
         {
           "url": "https://www.visitsaudi.com/bin/api/v3/events?locale=ar",
           "status": 200,
-          "bytes": 97801,
+          "bytes": 91698,
           "classification": "reachable",
           "summary": {
             "parse_ok": true,
-            "item_count": 30,
+            "item_count": 28,
             "sample_titles": [
               "معرض اللغة العربية للطفل",
               "معرض اللغة العربية 28",
               "أشجار",
               "مهرجان صوت أبها SAF",
-              "كومبات أرينا"
+              "عربات الجاذبية في قمرة"
             ]
           },
           "sample": "{\"code\":200,\"message\":\"success\",\"response\":{\"data\":[{\"type\":\"فعالية\",\"title\":\"معرض اللغة العربية للطفل\",\"freePaid\":\"free\",\"bannerImages\":[{\"fileReference\":\"/content/dam/wvs/calendar/arabic-language-exhibition-for-kids.jpg\",\"mobileImageReference\":\"/c…"
@@ -274,17 +274,17 @@
         {
           "url": "https://www.visitsaudi.com/bin/api/v3/events?locale=en",
           "status": 200,
-          "bytes": 100885,
+          "bytes": 94569,
           "classification": "reachable",
           "summary": {
             "parse_ok": true,
-            "item_count": 30,
+            "item_count": 28,
             "sample_titles": [
               "Arabic Language Exhibition for kids",
               "Arabic Language Exhibition 28",
               "Ashjar Farm",
               "Sound of Abha Fest (SAF)",
-              "Combat Arena"
+              "Gravity Carts at Gamra"
             ]
           },
           "sample": "{\"code\":200,\"message\":\"success\",\"response\":{\"data\":[{\"type\":\"EVENT\",\"title\":\"Arabic Language Exhibition for kids\",\"freePaid\":\"free\",\"bannerImages\":[{\"fileReference\":\"/content/dam/wvs/calendar/arabic-language-exhibition-for-kids.jpg\",\"mobileImageRefe…"
@@ -336,7 +336,7 @@
         "https://wbk-assets.webook.com/0.7.42/assets/react-helmet-Ba2OUe2H.js",
         "https://wbk-assets.webook.com/0.7.42/assets/@wbk/cruises-D06itExQ.js",
         "https://wbk-assets.webook.com/0.7.42/assets/@wbk/auction-CXktqnS7.js",
-        "https://webook.com/cdn-cgi/content?id=oZAj5BSsc0._XgYNbymBOgakC8mTqNayaudfkvKYEIo-1788296948.9540231-1.2.1.1-raHTVh5OowAZYG.JSj6We9kLhJiTqHQVhhHsPj.bG18xXSFi0LE67yYztO5tpxVQ",
+        "https://webook.com/cdn-cgi/content?id=GjpaspS6zs9PIUVmHms4ehuulTZ9FOX0WZs5nAfIdH4-1788408881.7770662-1.2.1.1-5vfTJ3_VVbgvpBu6ZiGk6HQ.Iwe1D4g0lo78PuQVcP.TjX0olhK8qKL1g.VzsGeB",
         "https://static.cloudflareinsights.com/beacon.min.js/v3d52b47920f24c319d37e2661827c42b1787588026925"
       ],
       "page_hint_words": [

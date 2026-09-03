@@ -1,12 +1,12 @@
 {
   "schema": "eventlive.eye-official-link-verification.v1",
-  "generated_at": "2026-09-02T11:35:44.201Z",
+  "generated_at": "2026-09-03T04:37:32.108Z",
   "dry_run": false,
   "totals": {
-    "targets": 10,
-    "confirmed": 3,
-    "skipped": 1,
-    "failed": 6
+    "targets": 6,
+    "confirmed": 1,
+    "skipped": 2,
+    "failed": 3
   },
   "rows": [
     {
@@ -16,72 +16,10 @@
       "reason": "HTTP 403"
     },
     {
-      "candidate_id": "candidate-eye-of-riyadh-events-hrse-ksa-20260830-6945a87a",
-      "title": "HRSE KSA",
-      "status": "failed",
-      "reason": "HTTP 403"
-    },
-    {
-      "candidate_id": "candidate-eye-of-riyadh-events-big-5-construct-saudi-20260830-2238e3a0",
-      "title": "Big 5 Construct Saudi",
-      "status": "failed",
-      "reason": "HTTP 403"
-    },
-    {
-      "candidate_id": "candidate-eye-of-riyadh-events-hvac-r-saudi-arabia-20260830-857b2f5b",
-      "title": "HVAC R Saudi Arabia",
-      "status": "confirmed",
-      "official_url": "https://www.big5constructsaudi.com/specialised-events/hvacr-ksa/",
-      "official_image_url": "",
-      "organizer": "dmg events",
-      "confirmed": true,
-      "reason": "confirmed",
-      "title_tokens": [
-        "hvac"
-      ],
-      "matched_title_tokens": [
-        "hvac"
-      ],
-      "year_confirmed": true,
-      "month_confirmed": true
-    },
-    {
-      "candidate_id": "candidate-eye-of-riyadh-events-saudi-fm-clean-20260830-cbe48152",
-      "title": "Saudi FM & Clean",
-      "status": "confirmed",
-      "official_url": "https://www.big5constructsaudi.com/specialised-events/saudi-fm-clean-ksa/",
-      "official_image_url": "https://www.big5constructsaudi.com/wp-content/uploads/sites/7/2024/12/Saudi-FM.png",
-      "organizer": "dmg events",
-      "confirmed": true,
-      "reason": "confirmed",
-      "title_tokens": [
-        "clean"
-      ],
-      "matched_title_tokens": [
-        "clean"
-      ],
-      "year_confirmed": true,
-      "month_confirmed": true
-    },
-    {
       "candidate_id": "candidate-eye-of-riyadh-events-global-proptech-summit-2026-20261025-7c1d3001",
       "title": "Global Proptech Summit 2026",
-      "status": "confirmed",
-      "official_url": "https://www.globalproptechsummit.com/",
-      "official_image_url": "https://static.wixstatic.com/media/708478_1854711612ca467293ee73543b1c06ff%7Emv2.png/v1/fit/w_2500,h_1330,al_c/708478_1854711612ca467293ee73543b1c06ff%7Emv2.png",
-      "organizer": "Eye of Riyadh",
-      "confirmed": true,
-      "reason": "confirmed",
-      "title_tokens": [
-        "global",
-        "proptech"
-      ],
-      "matched_title_tokens": [
-        "global",
-        "proptech"
-      ],
-      "year_confirmed": true,
-      "month_confirmed": true
+      "status": "failed",
+      "reason": "HTTP 403"
     },
     {
       "candidate_id": "candidate-eye-of-riyadh-events-real-estate-supply-chain-forum-20261028-206f7fb8",
@@ -92,14 +30,49 @@
     {
       "candidate_id": "candidate-eye-of-riyadh-events-cips-mena-procurement-and-supply-chain-futures-conference-and-awards-20261028-18fb7207",
       "title": "CIPS MENA Procurement and Supply Chain Futures conference and awards",
-      "status": "failed",
-      "reason": "HTTP 403"
+      "status": "confirmed",
+      "official_url": "https://www.cipsmenaconferenceandawards.com/",
+      "official_image_url": "https://static.wixstatic.com/media/708478_a08e284e0e2b4361addf88f967bb6b9f%7Emv2.png/v1/fit/w_2500,h_1330,al_c/708478_a08e284e0e2b4361addf88f967bb6b9f%7Emv2.png",
+      "organizer": "Eye of Riyadh",
+      "confirmed": true,
+      "reason": "confirmed",
+      "title_tokens": [
+        "cips",
+        "mena",
+        "procurement",
+        "supply",
+        "chain",
+        "futures"
+      ],
+      "matched_title_tokens": [
+        "cips",
+        "mena",
+        "procurement",
+        "supply",
+        "chain"
+      ],
+      "year_confirmed": true,
+      "month_confirmed": true
     },
     {
       "candidate_id": "candidate-eye-of-riyadh-events-real-estate-future-forum-20270125-d058344d",
       "title": "Real Estate Future Forum",
-      "status": "failed",
-      "reason": "HTTP 403"
+      "status": "skipped",
+      "official_url": "https://www.therff.com/",
+      "confirmed": false,
+      "reason": "year-not-confirmed",
+      "title_tokens": [
+        "real",
+        "estate",
+        "future"
+      ],
+      "matched_title_tokens": [
+        "real",
+        "estate",
+        "future"
+      ],
+      "year_confirmed": false,
+      "month_confirmed": true
     },
     {
       "candidate_id": "candidate-eye-of-riyadh-events-real-estate-excellence-award-2026-rea-2026-20270126-5e55ea49",

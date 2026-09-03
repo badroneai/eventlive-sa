@@ -1,39 +1,39 @@
 # EventLive Harvest OS Status
 
-- Generated at: 2026-09-02T11:53:49.744Z
+- Generated at: 2026-09-03T04:54:48.601Z
 - Status: NEEDS_WORK
 - Operating rule: Probe before new sources; sample before full harvest; Raw collection is not publication; discovery-only never auto-publishes.
 
 ## Totals
 
 - Sources: 88
-- Candidates: 517
-- Matched candidates: 496
+- Candidates: 507
+- Matched candidates: 492
 - Auto-publish sources: 15
 - Candidate-only sources: 12
 - Partnership-required sources: 5
-- Productive sources / attempted: 19/22
-- Collector errors: 6 (chronic 6, transient 0)
+- Productive sources / attempted: 20/31
+- Collector errors: 6 (chronic 5, transient 1)
 
 ## Publication Funnel
 
 | Stage | Count |
 | --- | --- |
-| discovered_this_run | 210 |
-| candidate_queue | 517 |
-| evaluated_for_publish | 517 |
-| linked_existing | 486 |
+| discovered_this_run | 209 |
+| candidate_queue | 507 |
+| evaluated_for_publish | 507 |
+| linked_existing | 482 |
 | published_new | 6 |
-| blocked | 25 |
+| blocked | 19 |
 | secondary_promoted | 0 |
-| secondary_still_blocked | 31 |
+| secondary_still_blocked | 22 |
 
 ## Blocked Reasons
 
 | Reason | Count |
 | --- | --- |
-| unknown category requires review | 9 |
-| publication gate source-evidence is not auto-publishable | 6 |
+| unknown category requires review | 6 |
+| publication gate source-evidence is not auto-publishable | 3 |
 | possible duplicate requires review: exact-title-city-source-conflict | 2 |
 | possible duplicate requires review: fuzzy-title-venue-date-window | 2 |
 | possible duplicate requires review: exact-title-city-venue-conflict | 2 |
@@ -46,12 +46,12 @@
 
 | Source | Kind | Failed runs in a row | Attempted this run | Reason |
 | --- | --- | --- | --- | --- |
-| moc-cultural-calendar | chronic | 32 | no | collector-error: fetch failed; fetch failed |
-| mos-events | chronic | 32 | no | collector-error: fetch failed |
-| moc-cultural-subportals | chronic | 32 | no | collector-error: fetch failed; fetch failed |
-| monshaat-events | chronic | 15 | no | collector-error: fetch failed; fetch failed |
-| saudi-pro-league-fixtures | chronic | 12 | no | collector-error: fetch failed |
-| tuwaiq-academy-bootcamps | chronic | 9 | no | collector-error: HTTP 403 |
+| moc-cultural-calendar | chronic | 33 | yes | collector-error: fetch failed; fetch failed |
+| mos-events | chronic | 33 | yes | collector-error: fetch failed |
+| moc-cultural-subportals | chronic | 33 | yes | collector-error: fetch failed; fetch failed |
+| saudi-pro-league-fixtures | chronic | 13 | yes | collector-error: fetch failed |
+| tuwaiq-academy-bootcamps | chronic | 10 | yes | collector-error: HTTP 403 |
+| asharqia-chamber-events | transient | 1 | yes | fetch failed; page.goto: Timeout 30000ms exceeded. Call log:   - navigating to "https://www.chamber.org.sa/sites/Arabic/Events/ChamberEvents/Pages/AllChamberEvents.aspx", waiting until "domcontentload |
 
 | Source | Policy | Trust | Gate |
 | --- | --- | --- | --- |

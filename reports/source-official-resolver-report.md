@@ -1,9 +1,9 @@
 # EventLive Official Resolver Report
 
-- generated_at: 2026-09-02T11:41:47.720Z
+- generated_at: 2026-09-03T04:43:21.513Z
 - source_ops_report: reports/source-ops-report.json
-- leads_seen: 10
-- resolver_tasks: 7
+- leads_seen: 9
+- resolver_tasks: 4
 - high_priority: 2
 
 ## Resolver Tasks
@@ -13,10 +13,7 @@
 | 132 | Jeddah Fintech Week 2026 | Eventbrite Saudi Arabia | Jeddah | strong-lead/70 | informa-connect-saudi-events, abha-chamber-events, baha-chamber-events, future-skills-catalog, hail-chamber-events | ابحث في المصادر الرسمية المستهدفة واربط lead بمصدر رسمي قبل أي نشر. |
 | 122 | Sucession Planning Program | Eventbrite Saudi Arabia | Riyadh | strong-lead/70 | code-mcit-programs, cst-events-news, diriyah-season, enjoy-saudi-events, fii10-official-program | ابحث في المصادر الرسمية المستهدفة واربط lead بمصدر رسمي قبل أي نشر. |
 | 109 | 25TH WPC Energy Congress | Eventbrite Saudi Arabia | Riyadh | strong-lead/70 | rfecc-whats-on, ricec-events, dhahran-expo-calendar, informa-connect-saudi-events, saudi-water-authority-events | ابحث في المصادر الرسمية المستهدفة واربط lead بمصدر رسمي قبل أي نشر. |
-| 107 | Family Office Investment Summit | Eventbrite Saudi Arabia | Riyadh | strong-lead/70 | informa-connect-saudi-events, ricec-events, asharqia-chamber-events, dhahran-expo-calendar, jcci-events-center | ابحث في المصادر الرسمية المستهدفة واربط lead بمصدر رسمي قبل أي نشر. |
-| 97 | Family Office Investment Meeting | Eventbrite Saudi Arabia | Riyadh | strong-lead/70 | informa-connect-saudi-events, saudi-contractors-authority-events, asharqia-chamber-events, invest-saudi-events, jcci-events-center | ابحث في المصادر الرسمية المستهدفة واربط lead بمصدر رسمي قبل أي نشر. |
 | 82 | Family Offices & VCs Investment Summit Riyadh: Invite Only | Eventbrite Saudi Arabia | Riyadh | watch-lead/60 | informa-connect-saudi-events, madinah-chamber-events, ricec-events, sdaia-calendar-events, asharqia-chamber-events | ابحث في المصادر الرسمية المستهدفة واربط lead بمصدر رسمي قبل أي نشر. |
-| 72 | Family Office Investment - Riyadh, Saudi Arabia | Eventbrite Saudi Arabia | Riyadh | watch-lead/60 | informa-connect-saudi-events, invest-saudi-events, jouf-chamber-events, madinah-chamber-events, monshaat-events | ابحث في المصادر الرسمية المستهدفة واربط lead بمصدر رسمي قبل أي نشر. |
 
 ## Search Pack
 
@@ -53,28 +50,6 @@
 - ["25TH WPC Energy Congress" "Riyadh" organizer](https://www.google.com/search?q=%2225TH%20WPC%20Energy%20Congress%22%20%22Riyadh%22%20organizer)
 - ["25TH WPC Energy Congress" "Riyadh" tickets](https://www.google.com/search?q=%2225TH%20WPC%20Energy%20Congress%22%20%22Riyadh%22%20tickets)
 
-### Family Office Investment Summit
-
-- [site:informaconnect.com "Family Office Investment Summit" "Riyadh"](https://www.google.com/search?q=site%3Ainformaconnect.com%20%22Family%20Office%20Investment%20Summit%22%20%22Riyadh%22)
-- [site:ricec.com "Family Office Investment Summit" "Riyadh"](https://www.google.com/search?q=site%3Aricec.com%20%22Family%20Office%20Investment%20Summit%22%20%22Riyadh%22)
-- [site:chamber.org.sa "Family Office Investment Summit" "Riyadh"](https://www.google.com/search?q=site%3Achamber.org.sa%20%22Family%20Office%20Investment%20Summit%22%20%22Riyadh%22)
-- [site:dhahranexpo.com.sa "Family Office Investment Summit" "Riyadh"](https://www.google.com/search?q=site%3Adhahranexpo.com.sa%20%22Family%20Office%20Investment%20Summit%22%20%22Riyadh%22)
-- [site:jcci.org.sa "Family Office Investment Summit" "Riyadh"](https://www.google.com/search?q=site%3Ajcci.org.sa%20%22Family%20Office%20Investment%20Summit%22%20%22Riyadh%22)
-- ["Family Office Investment Summit" "Riyadh" official](https://www.google.com/search?q=%22Family%20Office%20Investment%20Summit%22%20%22Riyadh%22%20official)
-- ["Family Office Investment Summit" "Riyadh" organizer](https://www.google.com/search?q=%22Family%20Office%20Investment%20Summit%22%20%22Riyadh%22%20organizer)
-- ["Family Office Investment Summit" "Riyadh" tickets](https://www.google.com/search?q=%22Family%20Office%20Investment%20Summit%22%20%22Riyadh%22%20tickets)
-
-### Family Office Investment Meeting
-
-- [site:informaconnect.com "Family Office Investment Meeting" "Riyadh"](https://www.google.com/search?q=site%3Ainformaconnect.com%20%22Family%20Office%20Investment%20Meeting%22%20%22Riyadh%22)
-- [site:sca.gov.sa "Family Office Investment Meeting" "Riyadh"](https://www.google.com/search?q=site%3Asca.gov.sa%20%22Family%20Office%20Investment%20Meeting%22%20%22Riyadh%22)
-- [site:chamber.org.sa "Family Office Investment Meeting" "Riyadh"](https://www.google.com/search?q=site%3Achamber.org.sa%20%22Family%20Office%20Investment%20Meeting%22%20%22Riyadh%22)
-- [site:investsaudi.sa "Family Office Investment Meeting" "Riyadh"](https://www.google.com/search?q=site%3Ainvestsaudi.sa%20%22Family%20Office%20Investment%20Meeting%22%20%22Riyadh%22)
-- [site:jcci.org.sa "Family Office Investment Meeting" "Riyadh"](https://www.google.com/search?q=site%3Ajcci.org.sa%20%22Family%20Office%20Investment%20Meeting%22%20%22Riyadh%22)
-- ["Family Office Investment Meeting" "Riyadh" official](https://www.google.com/search?q=%22Family%20Office%20Investment%20Meeting%22%20%22Riyadh%22%20official)
-- ["Family Office Investment Meeting" "Riyadh" organizer](https://www.google.com/search?q=%22Family%20Office%20Investment%20Meeting%22%20%22Riyadh%22%20organizer)
-- ["Family Office Investment Meeting" "Riyadh" tickets](https://www.google.com/search?q=%22Family%20Office%20Investment%20Meeting%22%20%22Riyadh%22%20tickets)
-
 ### Family Offices & VCs Investment Summit Riyadh: Invite Only
 
 - [site:informaconnect.com "Family Offices & VCs Investment Summit Riyadh: Invite Only" "Riyadh"](https://www.google.com/search?q=site%3Ainformaconnect.com%20%22Family%20Offices%20%26%20VCs%20Investment%20Summit%20Riyadh%3A%20Invite%20Only%22%20%22Riyadh%22)
@@ -85,15 +60,4 @@
 - ["Family Offices & VCs Investment Summit Riyadh: Invite Only" "Riyadh" official](https://www.google.com/search?q=%22Family%20Offices%20%26%20VCs%20Investment%20Summit%20Riyadh%3A%20Invite%20Only%22%20%22Riyadh%22%20official)
 - ["Family Offices & VCs Investment Summit Riyadh: Invite Only" "Riyadh" organizer](https://www.google.com/search?q=%22Family%20Offices%20%26%20VCs%20Investment%20Summit%20Riyadh%3A%20Invite%20Only%22%20%22Riyadh%22%20organizer)
 - ["Family Offices & VCs Investment Summit Riyadh: Invite Only" "Riyadh" tickets](https://www.google.com/search?q=%22Family%20Offices%20%26%20VCs%20Investment%20Summit%20Riyadh%3A%20Invite%20Only%22%20%22Riyadh%22%20tickets)
-
-### Family Office Investment - Riyadh, Saudi Arabia
-
-- [site:informaconnect.com "Family Office Investment - Riyadh, Saudi Arabia" "Riyadh"](https://www.google.com/search?q=site%3Ainformaconnect.com%20%22Family%20Office%20Investment%20-%20Riyadh%2C%20Saudi%20Arabia%22%20%22Riyadh%22)
-- [site:investsaudi.sa "Family Office Investment - Riyadh, Saudi Arabia" "Riyadh"](https://www.google.com/search?q=site%3Ainvestsaudi.sa%20%22Family%20Office%20Investment%20-%20Riyadh%2C%20Saudi%20Arabia%22%20%22Riyadh%22)
-- [site:ajcci.org.sa "Family Office Investment - Riyadh, Saudi Arabia" "Riyadh"](https://www.google.com/search?q=site%3Aajcci.org.sa%20%22Family%20Office%20Investment%20-%20Riyadh%2C%20Saudi%20Arabia%22%20%22Riyadh%22)
-- [site:mcci.org.sa "Family Office Investment - Riyadh, Saudi Arabia" "Riyadh"](https://www.google.com/search?q=site%3Amcci.org.sa%20%22Family%20Office%20Investment%20-%20Riyadh%2C%20Saudi%20Arabia%22%20%22Riyadh%22)
-- [site:monshaat.gov.sa "Family Office Investment - Riyadh, Saudi Arabia" "Riyadh"](https://www.google.com/search?q=site%3Amonshaat.gov.sa%20%22Family%20Office%20Investment%20-%20Riyadh%2C%20Saudi%20Arabia%22%20%22Riyadh%22)
-- ["Family Office Investment - Riyadh, Saudi Arabia" "Riyadh" official](https://www.google.com/search?q=%22Family%20Office%20Investment%20-%20Riyadh%2C%20Saudi%20Arabia%22%20%22Riyadh%22%20official)
-- ["Family Office Investment - Riyadh, Saudi Arabia" "Riyadh" organizer](https://www.google.com/search?q=%22Family%20Office%20Investment%20-%20Riyadh%2C%20Saudi%20Arabia%22%20%22Riyadh%22%20organizer)
-- ["Family Office Investment - Riyadh, Saudi Arabia" "Riyadh" tickets](https://www.google.com/search?q=%22Family%20Office%20Investment%20-%20Riyadh%2C%20Saudi%20Arabia%22%20%22Riyadh%22%20tickets)
 

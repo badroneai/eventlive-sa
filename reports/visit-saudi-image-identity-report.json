@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-02T11:35:57.879Z",
+  "generated_at": "2026-09-03T04:37:40.169Z",
   "catalog": "data/events_catalog.json",
   "candidates": "data/source_candidates.json",
   "manifest": "data/event_image_cache_manifest.json",
@@ -10,11 +10,18 @@
   },
   "totals": {
     "pdf_crop_assignments": 30,
-    "verified": 29,
-    "struck": 1,
-    "slots_seen_this_cycle": 33
+    "verified": 28,
+    "struck": 2,
+    "slots_seen_this_cycle": 32
   },
   "struck": [
+    {
+      "id": "event-فعالية-القصبة",
+      "title": "فعالية القصبة",
+      "file": "visit-saudi-summer-2026-p013-bottom-right.jpg",
+      "reason": "slot-vacated",
+      "detail": "no dated card currently occupies page 13 bottom-right of https://www.visitsaudi.com/content/dam/documents/saudi-calendar-ar.pdf"
+    },
     {
       "id": "event-ذكريات-سبيستون-مع-الفنان-عاصم-سكر",
       "title": "ذكريات سبيستون مع الفنان عاصم سكر",
@@ -192,15 +199,6 @@
         "بقي",
         "السريعه",
         "الباحه"
-      ]
-    },
-    {
-      "id": "event-فعالية-القصبة",
-      "title": "فعالية القصبة",
-      "file": "visit-saudi-summer-2026-p013-bottom-right.jpg",
-      "matched_tokens": [
-        "فعاليه",
-        "القصبه"
       ]
     },
     {
