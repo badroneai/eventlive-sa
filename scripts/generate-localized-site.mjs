@@ -10,6 +10,7 @@ import { PLACE_CATEGORIES } from './place-category-taxonomy.mjs';
 import { CITY_NAME_REGISTRY } from './city-name-registry.mjs';
 import { loadContentTranslations, normalizeContentText } from './content-translation-cache.mjs';
 import { OWNER_ONLY_PAGES } from './owner-only-pages.mjs';
+import { NOINDEX_PUBLIC_PAGES } from './noindex-public-pages.mjs';
 import { LEGACY_REDIRECT_PAGES, LEGACY_TOP_LEVEL_REDIRECT_LABELS_EN, legacyRedirectTarget } from './legacy-redirect-pages.mjs';
 import { buildTitleQualifiers, eventQualifierKey, withTitleQualifier } from './event-title-qualifier.mjs';
 import { englishSeoDescription, englishSeoTitle, withEnglishBrand } from './en-seo-descriptions.mjs';
@@ -178,6 +179,11 @@ const runtimeLiteralMap = {
   'تصفية وترتيب (': 'Filter and sort (',
   'تعذر تحميل ملف الفعاليات. حاول تحديث الصفحة.': 'Could not load the events file. Refresh the page and try again.',
   '<div class="empty">لم نستطع تحميل كتالوج الفعاليات الآن.<br /><br /></div>': '<div class="empty">The event catalog could not be loaded right now.<br /><br /></div>',
+  // Shown when events-catalog.json cannot be fetched. The page keeps its
+  // server-rendered rows in that case, so these say "partial", never "empty".
+  'تعذّر تحميل الكتالوج الكامل — هذه أقرب الفعاليات القادمة.': 'The full catalog could not be loaded — these are the nearest upcoming events.',
+  'تعذّر تحميل الكتالوج الكامل — الأعداد غير متاحة الآن. القائمة أدناه أقرب الفعاليات القادمة.': 'The full catalog could not be loaded — counts are unavailable. The list below shows the nearest upcoming events.',
+  'تعذّر تحميل الكتالوج الكامل — تُعرض أقرب الفعاليات القادمة دون فرز أو تصفية.': 'The full catalog could not be loaded — the nearest upcoming events are shown without sorting or filtering.',
   '<div class="empty">لا توجد أولويات حالية.<br /><br /><a href="./">استعراض الفعاليات</a></div>': '<div class="empty">No current priorities.<br /><br /><a href="./">Browse events</a></div>',
   '<div class="empty">لا توجد فعاليات قادمة في الكتالوج الآن.<br /><br /><a href="./">عودة للفعاليات</a></div>': '<div class="empty">No upcoming events in the catalog right now.<br /><br /><a href="./">Back to events</a></div>',
   '<div class="empty">لا توجد فعاليات في هذا العرض.<br /><br /><a href="./">استعراض الفعاليات</a></div>': '<div class="empty">No events in this view.<br /><br /><a href="./">Browse events</a></div>',
@@ -962,7 +968,8 @@ function publicPathsFromSitemap() {
   //  - duplicate event records (they canonicalise to their primary)
   //  - retired category slugs (redirect stubs)
   //  - renamed event slugs (redirect stubs, from the published-URL ledger)
-  for (const relative of [...EVENT_ALIAS_PAGES, ...LEGACY_REDIRECT_PAGES, ...movedEventPages.keys()]) {
+  //  - public pages held out of the sitemap for noindex (venue display screen)
+  for (const relative of [...NOINDEX_PUBLIC_PAGES, ...EVENT_ALIAS_PAGES, ...LEGACY_REDIRECT_PAGES, ...movedEventPages.keys()]) {
     if (resolveUnicodePath(relative)) paths.push(relative);
   }
   return [...new Set(paths)];

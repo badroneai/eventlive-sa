@@ -186,6 +186,8 @@ jobs:
           # all of them. Rebuilding every page and declaring every page modified are
           # different things. Pure fixture, <1s.
           npm run test:sitemap-freshness
+          npm run test:crawler-visible-content
+          npm run test:singleton-injection
           npm run test:scega-events-extractor
           npm run test:informa-saudi-portfolio
           npm run test:scega-canonical-alias
