@@ -43,6 +43,7 @@ import {
 } from './event-structured-data-utils.mjs';
 import { isLikelyImageAssetUrl, isRejectedImageAssetUrl, isSourcePageLikeImageUrl } from './image-asset-utils.mjs';
 import { OWNER_ONLY_PAGES, ownerOnlyLinkRegex } from './owner-only-pages.mjs';
+import { NOINDEX_PUBLIC_PAGES } from './noindex-public-pages.mjs';
 import { riyadhDateKey } from './riyadh-date-utils.mjs';
 import { buildIndexNowDelta, mergeIndexNowBatchUrls, reconcileSeoPageState } from './seo-discovery-utils.mjs';
 import { coordinatesQuery, resolveVenueLocation } from './venue-location-utils.mjs';
@@ -1551,6 +1552,15 @@ function hideOwnerOnlyPublicLinks(html) {
     next = next.replace(/<span class="grp">[^<]*<\/span>\s*(?=<span class="grp">|<\/div>)/g, '');
   } while (next !== before);
   return next;
+}
+
+// Public and reachable, but not search content — see noindex-public-pages.mjs.
+// Kept separate from isOwnerOnlyPage because the two differ on `follow`: an
+// owner page is cut out of the link graph entirely, a display screen stays in it.
+function isNoindexPublicPage(filePath) {
+  const relativePath = path.relative(distDir, filePath).replace(/\\/g, '/');
+  const pageName = path.basename(String(filePath));
+  return NOINDEX_PUBLIC_PAGES.has(relativePath.replace(/^en\//, '')) || NOINDEX_PUBLIC_PAGES.has(pageName);
 }
 
 function isOwnerOnlyPage(filePath) {
@@ -7099,7 +7109,51 @@ function patchEventsBrowsePage(events) {
       'const liveReadyCount = events.filter((event) => event.agenda_ready).length;'
     );
 
+  // The catalog hub shipped an EMPTY #eventGrid and filled it from
+  // ./events-catalog.json — a file robots.txt disallows for every user-agent
+  // including *. So the one page whose entire job is listing events rendered zero
+  // event links for a crawler, and 234 words of chrome for anyone with JavaScript
+  // off. Measured 2026-09-03: 0 static event links on the page, while 1,146 of
+  // 1,603 event pages had no inbound internal link at all.
+  //
+  // Google's own guidance is not to block a resource a page needs to render, but
+  // the fix here is progressive enhancement rather than a robots change: render
+  // the list server-side, and let the existing script replace it with the
+  // filterable version. Then the page works for a crawler, for a no-JS visitor,
+  // and for everyone else, and no policy has to be relaxed.
+  //
+  // Nearest UPCOMING first, then still-running programs. Sorting the whole set
+  // by start date put rolling multi-year programs (start 2021, 2022) at the top
+  // of the catalog, which reads as a stale listing and contradicts the page's own
+  // "nearest upcoming events" wording.
+  const nowMs = Date.now();
+  const startMs = (event) => dateValue(event.starts_at)?.getTime() ?? Infinity;
+  const endMs = (event) => dateValue(event.ends_at || event.starts_at)?.getTime() ?? Infinity;
+  const unfinished = events.filter((event) => !Number.isFinite(endMs(event)) || endMs(event) >= nowMs);
+  const upcoming = unfinished.filter((event) => startMs(event) >= nowMs).sort((a, b) => startMs(a) - startMs(b));
+  const running = unfinished.filter((event) => startMs(event) < nowMs).sort((a, b) => endMs(a) - endMs(b));
+  const staticRows = [...upcoming, ...running].slice(0, 60);
+  const staticGrid = staticRows.map((event) => {
+    const href = `./events/${event.file_slug}.html`;
+    // Date only. formatDate appends a time, and for the many records whose
+    // time_precision is not exact that time is 12:00 ص / 3:00 ص — a clock this
+    // site never had. The same false precision the detail pages were cleared of.
+    const when = dateValue(event.starts_at)
+      ? new Intl.DateTimeFormat('ar-SA', { dateStyle: 'medium', timeZone: 'Asia/Riyadh' }).format(dateValue(event.starts_at))
+      : '';
+    const where = event.city_label || cityLabel(event.city);
+    return `<article class="card"><div class="card-body"><h2 class="title"><a href="${escapeHtml(href)}" dir="auto">${escapeHtml(event.title)}</a></h2><div class="meta"><span class="chip">${escapeHtml(where)}</span>${when ? `<span class="chip">${escapeHtml(when)}</span>` : ''}</div></div></article>`;
+  }).join('');
+
   next = next
+    .replace(
+      // Match the section with ANY body, not just an empty one: dist/ is tracked
+      // source, so the previous build's rows are already inside it. An
+      // empty-only pattern injected once and then never matched again, freezing
+      // the hub on the day it first ran.
+      /<section class="grid" id="eventGrid"([^>]*)>[\s\S]*?<\/section>/,
+      `<section class="grid" id="eventGrid"$1>${staticGrid}</section>`
+    )
     .replace('<input id="eventSearch" type="search"', '<input id="eventSearch" aria-label="بحث في الفعاليات" type="search"')
     .replace('<select id="cityFilter">', '<select id="cityFilter" aria-label="تصفية حسب المدينة">')
     .replace('<select id="categoryFilter">', '<select id="categoryFilter" aria-label="تصفية حسب التصنيف">')
@@ -7627,6 +7681,9 @@ function writeSitemap(events = []) {
   const sitemapPaths = [...new Set(htmlFiles(distDir)
     .map((file) => file.replace(/\\/g, '/').normalize('NFC'))
     .filter((file) => !OWNER_ONLY_PAGES.has(file))
+    // Public, reachable, but not search content — see noindex-public-pages.mjs.
+    // A sitemap entry for a page that declares noindex is a self-contradiction.
+    .filter((file) => !NOINDEX_PUBLIC_PAGES.has(file))
     // Legacy category redirect stubs (see writeLegacyCategoryRedirectPages)
     // must never be offered to crawlers as a first-class page — their own
     // <link rel="canonical"> already points crawlers at the real page.
@@ -7920,18 +7977,18 @@ function enhanceSeoHead(html, filePath) {
 
   let next = html;
   const ownerOnly = isOwnerOnlyPage(filePath);
+  // Three states, not two. `noindex,follow` keeps the page in the link graph
+  // while withdrawing a claim it cannot honour: its body is fetched at runtime
+  // from a robots-disallowed file, so a crawler sees an empty shell.
+  const robots = ownerOnly
+    ? '<meta name="robots" content="noindex,nofollow" />'
+    : isNoindexPublicPage(filePath)
+      ? '<meta name="robots" content="noindex,follow" />'
+      : '<meta name="robots" content="index,follow,max-image-preview:large,max-snippet:-1,max-video-preview:-1" />';
   const hasRobots = /<meta\b[^>]*name=["']robots["'][^>]*>/i.test(next);
-  if (!hasRobots) {
-    const robots = ownerOnly
-      ? '<meta name="robots" content="noindex,nofollow" />'
-      : '<meta name="robots" content="index,follow,max-image-preview:large,max-snippet:-1,max-video-preview:-1" />';
-    next = next.replace(/(<link\b[^>]*rel=["']canonical["'][^>]*>)/i, `$1\n  ${robots}`);
-  } else {
-    const robots = ownerOnly
-      ? '<meta name="robots" content="noindex,nofollow" />'
-      : '<meta name="robots" content="index,follow,max-image-preview:large,max-snippet:-1,max-video-preview:-1" />';
-    next = next.replace(/<meta\b[^>]*name=["']robots["'][^>]*>/i, robots);
-  }
+  next = hasRobots
+    ? next.replace(/<meta\b[^>]*name=["']robots["'][^>]*>/i, robots)
+    : next.replace(/(<link\b[^>]*rel=["']canonical["'][^>]*>)/i, `$1\n  ${robots}`);
 
   // A legacy redirect stub is not a language alternate of anything: its
   // canonical is another page's URL, so injecting hreflang here declares a
@@ -8192,7 +8249,14 @@ function decorateBrandHtml(html, filePath) {
   next = normalizeInternalHomeLinks(next);
   next = next.replace(/<style id="eventlive-brand-pulse">[\s\S]*?<\/style>/g, '');
   next = next.replace(/<script defer(?:="")? data-domain="eventme\.live" src="https:\/\/plausible\.io\/js\/script\.tagged-events\.js"><\/script>/g, '');
-  next = next.replace(/<!-- Privacy-friendly analytics by (?:Plausible|self-hosted Umami) -->\s*/g, '');
+  // Provider-agnostic on purpose. The previous form spelled the vendor out
+  // ("self-hosted Umami") while analyticsHeadSnippet emits ANALYTICS.provider
+  // verbatim ("umami", lowercase). One letter apart, so the strip never matched
+  // what the append wrote and dist/en/index.html grew a copy of this comment on
+  // every build: 0 -> 1 -> 4 across git history. That is the SAME defect the
+  // comment three lines below already records for the Plausible tag; naming the
+  // vendor in the matcher is what keeps reintroducing it.
+  next = next.replace(/<!-- Privacy-friendly analytics by [^>]*-->\s*/gi, '');
   // Match BOTH the authored attribute form (async) and the DOM-serialized form
   // (async="") — matching only the authored form let one duplicate Plausible
   // tag survive every incremental rebuild until index.html carried 13 copies.

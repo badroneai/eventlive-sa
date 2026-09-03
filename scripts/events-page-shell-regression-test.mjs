@@ -24,7 +24,13 @@ assert.ok(jsonBytes > htmlBytes, 'events.json should carry the event payload ins
 assert.ok(catalogBytes < jsonBytes * 0.35, `events-catalog.json should omit heavy detail/session payloads, got ${catalogBytes} of ${jsonBytes} bytes`);
 assert.match(html, /const eventsFeedUrl = '\.\/events-catalog\.json'/, 'events.html must load the compact external catalog feed');
 assert.doesNotMatch(html, /const events = \[\{/, 'events.html must not inline the full event catalog');
-assert.match(html, /تعذر تحميل ملف الفعاليات/, 'events.html must include a friendly feed-load failure message');
+// The failure message must describe a PARTIAL catalog, not a missing one: the
+// page now ships the nearest upcoming events server-rendered, so the rows stay
+// on screen when the fetch fails. Saying "could not load the events" over a
+// visible list — or wiping the list to match the message — is the defect
+// scripts/crawler-visible-content-regression-test.mjs exists to prevent.
+assert.match(html, /تعذّر تحميل الكتالوج الكامل/, 'events.html must include a friendly partial-catalog failure message');
+assert.doesNotMatch(html, /catch[\s\S]{0,600}?grid\.innerHTML\s*=\s*'<div class="empty"/, 'the fetch failure branch must not erase the server-rendered rows');
 assert.match(html, /function applyInitialSearchQuery\(\)/, 'events.html must support query-string search bootstrapping');
 assert.match(html, /new URLSearchParams\(window\.location\.search\)/, 'events.html must read q/search/query URL parameters');
 assert.match(html, /params\.get\('q'\).*params\.get\('search'\).*params\.get\('query'\)/s, 'events.html must accept q, search, and query parameters');

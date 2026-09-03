@@ -1265,6 +1265,7 @@ html[lang^="en"] [lang="ar"]{font-family:"IBM Plex Sans Arabic",Tahoma,Arial,san
     };
     const savedEventsKey = 'eventlive-saved-events';
 
+    let catalogUnavailable = false;
     async function loadEvents() {
       try {
         const response = await fetch(eventsFeedUrl, { cache:'no-store' });
@@ -1272,9 +1273,15 @@ html[lang^="en"] [lang="ar"]{font-family:"IBM Plex Sans Arabic",Tahoma,Arial,san
         const envelope = await response.json();
         events = Array.isArray(envelope.events) ? envelope.events : [];
       } catch (error) {
-        controls.summary.textContent = 'تعذر تحميل ملف الفعاليات. حاول تحديث الصفحة.';
-        controls.grid.innerHTML = '<div class="empty">لم نستطع تحميل كتالوج الفعاليات الآن.<br /><br /></div>';
+        // The grid arrives server-rendered with the nearest upcoming events (see
+        // patchEventsBrowsePage in scripts/generate-site.mjs). Wiping it here left
+        // a crawler — and anyone whose fetch fails — looking at an empty catalog:
+        // robots.txt disallows events-catalog.json for every user-agent, so this
+        // branch is exactly what Googlebot runs, every time. Enhancement may not
+        // destroy what the server already rendered.
+        controls.summary.textContent = 'تعذّر تحميل الكتالوج الكامل — هذه أقرب الفعاليات القادمة.';
         events = [];
+        catalogUnavailable = true;
       }
       return events;
     }
@@ -1566,6 +1573,12 @@ html[lang^="en"] [lang="ar"]{font-family:"IBM Plex Sans Arabic",Tahoma,Arial,san
       const mainEvent = liveRows[0] || nextReady || upcomingRows[0] || ongoingRows[0] || null;
       const nextEvent = upcomingRows.find((event) => !mainEvent || event.id !== mainEvent.id) || upcomingRows[0] || null;
       const activationEvent = actionableRows.find((event) => event.id !== mainEvent?.id && event.id !== nextEvent?.id) || actionableRows[0] || null;
+      if (catalogUnavailable) {
+        // Zeros here would be a lie: the catalog failed to load, it is not empty.
+        controls.statusSummary.textContent = 'تعذّر تحميل الكتالوج الكامل — الأعداد غير متاحة الآن. القائمة أدناه أقرب الفعاليات القادمة.';
+        controls.statusBoard.innerHTML = '';
+        return;
+      }
       controls.statusSummary.textContent = events.length + ' فعالية في الكتالوج | ' +
         liveRows.length + ' مباشرة الآن | ' +
         upcomingRows.length + ' قادمة | ' +
@@ -1669,13 +1682,19 @@ html[lang^="en"] [lang="ar"]{font-family:"IBM Plex Sans Arabic",Tahoma,Arial,san
       const rows = sortCatalogRows(filteredRows);
       const visibleRows = rows.slice(0, visibleLimit);
 
-      controls.summary.textContent = 'يعرض ' + visibleRows.length + ' من ' + rows.length + ' نتيجة مطابقة، من أصل ' + events.length + ' فعالية في الكتالوج';
+      // Without the catalog, rows is empty but the server-rendered list is on
+      // screen — reporting "0 of 0" would contradict what the visitor can see.
+      controls.summary.textContent = catalogUnavailable
+        ? 'تعذّر تحميل الكتالوج الكامل — تُعرض أقرب الفعاليات القادمة دون فرز أو تصفية.'
+        : 'يعرض ' + visibleRows.length + ' من ' + rows.length + ' نتيجة مطابقة، من أصل ' + events.length + ' فعالية في الكتالوج';
       if (controls.loadMore) {
         controls.loadMore.hidden = visibleRows.length >= rows.length;
         controls.loadMore.textContent = 'عرض المزيد (' + Math.min(pageSize, rows.length - visibleRows.length) + ')';
       }
       if (!rows.length) {
-        controls.grid.innerHTML = '<div class="empty">لا توجد فعاليات مطابقة الآن.<br /><br /><a href="./event.html">فتح الجدول التجريبي الحي</a></div>';
+        // Same rule: when the catalog never loaded, the server-rendered list is
+        // the only content this page has. Do not replace it with "no events".
+        if (!catalogUnavailable) controls.grid.innerHTML = '<div class="empty">لا توجد فعاليات مطابقة الآن.<br /><br /><a href="./event.html">فتح الجدول التجريبي الحي</a></div>';
         if (controls.loadMore) controls.loadMore.hidden = true;
         return;
       }

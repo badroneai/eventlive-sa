@@ -1,6 +1,7 @@
 import fs from 'node:fs';
 import path from 'node:path';
 import { OWNER_ONLY_PAGES } from './owner-only-pages.mjs';
+import { NOINDEX_PUBLIC_PAGES } from './noindex-public-pages.mjs';
 
 const root = process.cwd();
 const distDir = path.join(root, 'dist');
@@ -154,12 +155,19 @@ const forbiddenPublicContent = walkPublicTextFiles(distDir)
 const requiredFiles = ['sitemap.xml', 'robots.txt', 'manifest.webmanifest', 'sw.js', 'events.json', 'cities.json', 'categories.json', 'audiences.json', 'methodology.json', 'organizer-intake.json', 'this-month.json', 'source-coverage-gaps.json', 'regions.json'];
 const missingRequiredFiles = requiredFiles.filter((relativePath) => !fs.existsSync(path.join(distDir, relativePath)));
 const sitemap = fs.existsSync(path.join(distDir, 'sitemap.xml')) ? readDist('sitemap.xml') : '';
+const inSitemap = (relativePath) => sitemap.includes(`https://eventme.live/${relativePath === 'index.html' ? '' : relativePath}`);
+// Three page classes, three sitemap expectations:
+//   owner-only          -> must be absent (already enforced below)
+//   noindex-but-public  -> must be absent too; it is a launch page that must
+//                          keep working, but it declares noindex, and a sitemap
+//                          entry would contradict the page's own tag
+//   everything else     -> must be present
 const sitemapMissing = launchPages
-  .filter((relativePath) => !OWNER_ONLY_PAGES.has(relativePath))
-  .filter((relativePath) => !sitemap.includes(`https://eventme.live/${relativePath === 'index.html' ? '' : relativePath}`));
+  .filter((relativePath) => !OWNER_ONLY_PAGES.has(relativePath) && !NOINDEX_PUBLIC_PAGES.has(relativePath))
+  .filter((relativePath) => !inSitemap(relativePath));
 const sitemapLeaked = launchPages
-  .filter((relativePath) => OWNER_ONLY_PAGES.has(relativePath))
-  .filter((relativePath) => sitemap.includes(`https://eventme.live/${relativePath === 'index.html' ? '' : relativePath}`));
+  .filter((relativePath) => OWNER_ONLY_PAGES.has(relativePath) || NOINDEX_PUBLIC_PAGES.has(relativePath))
+  .filter(inSitemap);
 
 const failedPages = pageChecks.filter((check) => !check.ok);
 const ok = failedPages.length === 0 && forbidden.length === 0 && forbiddenPublicContent.length === 0 && missingRequiredFiles.length === 0 && sitemapMissing.length === 0 && sitemapLeaked.length === 0;

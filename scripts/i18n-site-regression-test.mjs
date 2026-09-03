@@ -13,6 +13,8 @@ import path from 'node:path';
 import vm from 'node:vm';
 import { load } from 'cheerio';
 
+import { NOINDEX_PUBLIC_PAGES } from './noindex-public-pages.mjs';
+
 const root = process.cwd();
 const dist = path.join(root, 'dist');
 const routeFile = path.join(dist, 'locale-routes.json');
@@ -251,8 +253,14 @@ const locCount = [...sitemap.matchAll(/<loc>/g)].length;
 // real localized route (both surfaces exist and link to each other) that is
 // deliberately not submitted for indexing, because its canonical points at the
 // primary. Every OTHER route must still appear on both surfaces.
-const aliasRoutes = registry.routes.filter((route) => canonicalEventPage(route.key) || redirectTargetFor(route.key)).length;
-assert.equal(locCount, (registry.routes.length - aliasRoutes) * 2, 'sitemap must contain one Arabic and one English URL per submitted route');
+// The same exception, second class: a page that is public and localized on both
+// surfaces but withdrawn from indexing because a crawler cannot see its content
+// (its body is fetched from a robots-disallowed file). Its English copy must
+// keep existing — deleting it would kill a published URL — so it is a real
+// route that is deliberately not submitted. See scripts/noindex-public-pages.mjs.
+const unsubmittedRoutes = registry.routes.filter((route) =>
+  canonicalEventPage(route.key) || redirectTargetFor(route.key) || NOINDEX_PUBLIC_PAGES.has(route.key)).length;
+assert.equal(locCount, (registry.routes.length - unsubmittedRoutes) * 2, 'sitemap must contain one Arabic and one English URL per submitted route');
 assert.equal([...sitemap.matchAll(/hreflang="en-SA"/g)].length, locCount, 'every sitemap URL needs an English alternate');
 assert.equal([...sitemap.matchAll(/hreflang="ar-SA"/g)].length, locCount, 'every sitemap URL needs an Arabic alternate');
 
