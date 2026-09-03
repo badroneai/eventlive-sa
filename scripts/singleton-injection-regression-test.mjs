@@ -52,6 +52,32 @@ for (const file of htmlFiles(dist)) {
   }
 }
 
+// The same defect can also arrive as pure whitespace. Three strip/append pairs
+// removed a block but left the newline the append had written, so every page
+// gained blank lines on every build: dist/events.html measured 2984 -> 2987 ->
+// 2990 lines, and the gap in index.html's <head> had reached 633 lines.
+// No marker is duplicated in that case — only the space between them grows.
+//
+// Baseline after the fix, measured across two full build cycles: the longest run
+// anywhere is 3 consecutive newlines (2 blank lines), in about.html. The ceiling
+// below leaves one line of headroom, so a pair that drifts apart again trips this
+// within a build or two — chronic-intolerant, transient-tolerant.
+const MAX_CONSECUTIVE_NEWLINES = 4;
+const blankRuns = [];
+for (const file of htmlFiles(dist)) {
+  const html = fs.readFileSync(file, 'utf8');
+  let longest = 0;
+  for (const run of html.match(/\n[ \t]*(?:\n[ \t]*)+/g) || []) {
+    longest = Math.max(longest, run.split('\n').length - 1);
+  }
+  if (longest > MAX_CONSECUTIVE_NEWLINES) blankRuns.push(`${path.relative(dist, file)}: run of ${longest} newlines`);
+}
+assert.deepEqual(
+  blankRuns.slice(0, 20),
+  [],
+  `blank-line runs are accumulating (${blankRuns.length} pages) — a strip no longer matches the whitespace its append writes:\n  ${blankRuns.slice(0, 20).join('\n  ')}`
+);
+
 assert.ok(scanned > 1000, `expected the full built site, scanned only ${scanned} pages`);
 assert.deepEqual(
   offenders.slice(0, 40),
@@ -59,4 +85,4 @@ assert.deepEqual(
   `duplicated single-injection markers (${offenders.length} total) — a strip pattern has drifted from what the append writes:\n  ${offenders.slice(0, 40).join('\n  ')}`
 );
 
-console.log(`SINGLETON_INJECTION_OK pages=${scanned} markers=${SINGLETONS.length}`);
+console.log(`SINGLETON_INJECTION_OK pages=${scanned} markers=${SINGLETONS.length} max_blank_run=${MAX_CONSECUTIVE_NEWLINES}`);

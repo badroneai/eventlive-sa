@@ -149,6 +149,44 @@ export function reconcileSeoPageState(events = [], previousState = {}, modifiedA
   };
 }
 
+// Event pages are fingerprinted from their DATA (eventSearchSnapshot above),
+// which works because an event page is a rendering of one record. Every other
+// page — the home page, the hubs, the guides, the city, category and
+// search-intent pages — has no such record, so writeSitemap fell back to the
+// build instant and declared all 105 of them modified on every single build.
+//
+// <lastmod> is a claim Google acts on only "if it's consistently and verifiably
+// accurate" (developers.google.com/search/docs/crawling-indexing/sitemaps/
+// build-sitemap). A page that says "modified today" every day teaches a crawler
+// to ignore the field — including on the pages that genuinely did change.
+//
+// So these are fingerprinted by their RENDERED OUTPUT instead, with the
+// timestamps the build writes into them masked out first; see
+// stampStaticPageFreshness in generate-site.mjs for why the masking is not
+// optional.
+export function reconcileStaticPageState(hashes = new Map(), previousState = {}, modifiedAt = new Date().toISOString()) {
+  const previousPages = previousState?.static_pages && typeof previousState.static_pages === 'object'
+    ? previousState.static_pages
+    : {};
+  const nextEntries = [];
+  const changedPaths = [];
+
+  for (const [relativePath, fingerprint] of hashes) {
+    const key = String(relativePath || '').trim();
+    if (!key || !fingerprint) continue;
+    const previous = previousPages[key];
+    const unchanged = previous?.fingerprint === fingerprint && previous?.modified_at;
+    nextEntries.push([key, { fingerprint, modified_at: unchanged ? previous.modified_at : modifiedAt }]);
+    if (!unchanged) changedPaths.push(key);
+  }
+
+  nextEntries.sort(([left], [right]) => left.localeCompare(right));
+  return {
+    staticPages: Object.fromEntries(nextEntries),
+    changedPaths: changedPaths.sort()
+  };
+}
+
 function normalizeRelativePath(value = '') {
   const clean = String(value || '').trim().replace(/^https?:\/\/eventme\.live\/?/i, '').replace(/^\.\//, '').replace(/^\/+/, '');
   return clean.replace(/#.*$/, '').replace(/\?.*$/, '');
