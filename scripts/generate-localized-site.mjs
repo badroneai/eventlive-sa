@@ -1312,9 +1312,51 @@ function englishEventDescription(event) {
   const ends = formatEnglishEventDate(event.ends_at);
   const when = starts && ends ? ` from ${starts} to ${ends}` : (starts ? ` on ${starts}` : '');
   const where = venue && venue !== city ? ` Venue: ${venue}.` : '';
-  return `${title} ${englishPlacePhrase(city)}${when}.${where} Check the official source and live schedule on EventLive.`
+  // Mirrors the Arabic side: a page about an event that already happened must
+  // say so in the snippet. 72% of event pages are archives and none of them
+  // admitted it (measured 2026-09-03).
+  const ended = eventHasEnded(event);
+  const lead = ended ? 'Past event. ' : '';
+  const tail = ended
+    ? 'Archived from the official source on EventLive.'
+    : 'Check the official source and live schedule on EventLive.';
+  return `${lead}${title} ${englishPlacePhrase(city)}${when}.${where} ${tail}`
     .replace(/\s+/g, ' ')
     .trim();
+}
+
+/** True when the event's own window has closed. */
+export function eventHasEnded(event = {}) {
+  if (event?.status === 'ended') return true;
+  const end = new Date(event?.ends_at || event?.starts_at || '').getTime();
+  return Number.isFinite(end) && end < Date.now();
+}
+
+/**
+ * "December 2025" — the edition an archived page is about, so an English
+ * searcher can tell which year's event this is without opening the page.
+ */
+function englishArchiveMonth(value) {
+  const date = new Date(value || '');
+  if (Number.isNaN(date.getTime())) return '';
+  try {
+    return new Intl.DateTimeFormat('en-GB', { month: 'long', year: 'numeric', timeZone: 'Asia/Riyadh' }).format(date);
+  } catch {
+    return '';
+  }
+}
+
+/**
+ * Append the archive marker to an English event title. The Arabic title already
+ * carries "— منتهية <شهر سنة>", but that composite has no dictionary entry, so
+ * the English twin shipped a title that reads as a live event.
+ */
+export function englishEventTitle(rawTitle, event) {
+  const base = String(rawTitle || '').replace(/\s*\|\s*EventLive Saudi Arabia\s*$/u, '').trim();
+  if (!eventHasEnded(event)) return `${base} | EventLive Saudi Arabia`;
+  const month = englishArchiveMonth(event?.ends_at || event?.starts_at);
+  const marker = month ? `— Ended ${month}` : '— Ended';
+  return `${base} ${marker} | EventLive Saudi Arabia`;
 }
 
 // A category redirect stub's Arabic title is "{label_ar} — EventLive", built by
@@ -1398,6 +1440,11 @@ function englishMeta($, relativePath) {
     const translated = translateMetaText(originalDescription).replace(/\s+/g, ' ').trim();
     if (authored) description = authored;
     else if (translated && !/[\u0600-\u06ff]/.test(translated)) description = translated;
+  }
+  if (event) {
+    // The Arabic title carries "— منتهية <شهر سنة>" for archived events; that
+    // composite cannot be dictionary-translated, so rebuild the marker here.
+    $('title').text(englishEventTitle($('title').text(), event));
   }
   $('meta[name="description"]').attr('content', description);
   $('meta[property="og:description"]').attr('content', description);

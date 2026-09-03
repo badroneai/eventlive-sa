@@ -115,6 +115,7 @@
     "test:first-glance-trust": "node scripts/first-glance-trust-regression-test.mjs",
     "test:live-runtime-coverage": "node scripts/live-runtime-coverage-regression-test.mjs",
     "test:live-claim-parity": "node scripts/live-claim-parity-regression-test.mjs",
+    "test:snippet-honesty": "node scripts/snippet-honesty-regression-test.mjs",
     "test:internal-linking": "node scripts/internal-linking-regression-test.mjs",
     "i18n:pending": "node scripts/list-pending-content-translations.mjs",
     "i18n:merge": "node scripts/merge-content-translations.mjs",

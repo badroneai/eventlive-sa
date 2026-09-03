@@ -2395,12 +2395,43 @@ function relatedEventsHtml(event, allEvents, relative) {
   <section class="section" data-section="related"><div class="wrap"><article class="readiness" aria-label="فعاليات ذات صلة"><span>قادمة الآن</span><h2>فعاليات ذات صلة</h2><p>فعاليات قادمة قريبة من هذه في المدينة أو التصنيف.</p>${items ? `<ul class="related-events">${items}</ul>` : ''}${editionsHtml}<div class="meta"><a class="cta" href="${escapeHtml(`${relative}events.html`)}">تصفح كل الفعاليات</a></div></article></div></section>`;
 }
 
+// "ديسمبر ٢٠٢٥" — the edition an archived page is about, so a searcher can tell at
+// a glance which year's edition they are looking at without opening the page.
+function archiveMonthLabel(value) {
+  const date = dateValue(value);
+  if (!date) return '';
+  try {
+    return new Intl.DateTimeFormat('ar-SA', { month: 'long', year: 'numeric', timeZone: 'Asia/Riyadh' }).format(date);
+  } catch {
+    return '';
+  }
+}
+
 function renderEventDetail(event) {
   const relative = '../';
   const city = cityLabel(event.city);
   const placePhrase = arabicPlacePhrase(city);
-  const description = `${event.title} ${placePhrase} من ${formatDate(event.starts_at)} إلى ${formatDate(event.ends_at)}. ${event.venue ? `الموقع: ${event.venue}. ` : ''}تحقق من المصدر والجدول الحي عبر EventLive.`;
-  const seoTitle = `${withTitleQualifier(`${event.title} ${placePhrase}`, event.seo_title_qualifier)} | EventLive`;
+  // A snippet must say what the page IS. Measured 2026-09-03: 1,160 of 1,602 event
+  // pages (72%) describe an event that has already finished, and NOT ONE of them
+  // said so in its title or meta description — the only two things a searcher
+  // reads. Google served them 34,600 impressions and got 444 clicks (1.3%). A
+  // searcher scanning a result that reads like a live event, then seeing a 2025
+  // date inside it, does not click; and Google's own title guidance names an
+  // "obsolete date" as a reason it discards an author's title outright
+  // (developers.google.com/search/docs/appearance/title-link).
+  //
+  // The page body already said `فعالية مكتملة محفوظة`. It simply never reached
+  // the snippet. Saying it there costs nothing and is the same rule this repo
+  // applies everywhere else: a surface may not claim a state it is not in.
+  const ended = event.status === 'ended' || (dateValue(event.ends_at)?.getTime() ?? Infinity) < Date.now();
+  const monthYear = archiveMonthLabel(event.ends_at || event.starts_at);
+  const statusPrefix = ended ? 'فعالية منتهية. ' : '';
+  const venuePhrase = event.venue && String(event.venue).trim() !== String(city).trim() ? `الموقع: ${event.venue}. ` : '';
+  const description = `${statusPrefix}${event.title} ${placePhrase} من ${formatDate(event.starts_at)} إلى ${formatDate(event.ends_at)}. ${venuePhrase}${ended ? 'أرشيف موثق من المصدر الرسمي عبر EventLive.' : 'تحقق من المصدر والجدول الحي عبر EventLive.'}`;
+  const titleCore = withTitleQualifier(`${event.title} ${placePhrase}`, event.seo_title_qualifier);
+  const seoTitle = ended
+    ? `${titleCore} — منتهية${monthYear ? ` ${monthYear}` : ''} | EventLive`
+    : `${titleCore} | EventLive`;
   // A duplicate record (see event-canonical-aliases.mjs) keeps its page but
   // hands its indexing signal to the primary, so the two stop competing.
   const canonicalSlug = canonicalEventSlug(event.file_slug) || event.file_slug;
