@@ -383,11 +383,27 @@ function writeJson(relativePath, value) {
 }
 
 function prepareSeoDiscovery(events) {
-  const statePath = path.join(root, 'data', 'seo_page_state.json');
+  // The canonical state — one row per page, {fingerprint, modified_at} — is what
+  // gives every sitemap URL its <lastmod>. It is overridable so a REGRESSION TEST
+  // can rebuild the site without writing to it.
+  //
+  // Four tests spawn a full build with EVENTLIVE_FORCE_SEO_REFRESH=true, in the
+  // real working directory, to get a deterministic result; two of them
+  // (test:i18n-contract, test:event-page-reorg) sit in the blocking Regression
+  // checks block, which runs AFTER the publish build and BEFORE the persist step.
+  // Force-refresh discards the previous state and stamps every row with that
+  // instant, and the result was then committed as the new truth. A test may not
+  // rewrite the state of the corpus it is measuring.
+  const statePath = process.env.EVENTLIVE_SEO_STATE_PATH
+    ? path.resolve(root, process.env.EVENTLIVE_SEO_STATE_PATH)
+    : path.join(root, 'data', 'seo_page_state.json');
   const previousState = !forceSeoRefresh && fs.existsSync(statePath)
     ? JSON.parse(fs.readFileSync(statePath, 'utf8'))
     : { version: 1, pages: {} };
   const reconciled = reconcileSeoPageState(events, previousState, buildAt);
+  // An overridden path may point somewhere that does not exist yet on a fresh
+  // checkout — the cache directory is created further down, too late for this.
+  fs.mkdirSync(path.dirname(statePath), { recursive: true });
   fs.writeFileSync(statePath, `${JSON.stringify(reconciled.state, null, 2)}\n`, 'utf8');
 
   const currentUrls = buildIndexNowDelta({

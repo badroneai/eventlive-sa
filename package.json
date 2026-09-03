@@ -81,6 +81,7 @@
     "test:source-extractors": "node scripts/source-extractor-regression-test.mjs && node scripts/kau-aseer-source-regression-test.mjs",
     "test:kau-aseer-sources": "node scripts/kau-aseer-source-regression-test.mjs",
     "test:incremental-build": "node scripts/incremental-build-regression-test.mjs",
+    "test:sitemap-freshness": "node scripts/sitemap-freshness-regression-test.mjs",
     "test:scega-events-extractor": "node scripts/scega-events-extractor-regression-test.mjs",
     "test:informa-saudi-portfolio": "node scripts/informa-saudi-portfolio-regression-test.mjs",
     "test:scega-canonical-alias": "node scripts/scega-canonical-alias-regression-test.mjs",

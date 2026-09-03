@@ -258,7 +258,7 @@ function buildSweepEvent() {
     const build = spawnSync(process.execPath, [generatorPath], {
       cwd: fixtureRoot,
       encoding: 'utf8',
-      env: { ...process.env, EVENTLIVE_INCREMENTAL_BUILD: 'false', EVENTLIVE_FORCE_SEO_REFRESH: 'true' }
+      env: { ...process.env, EVENTLIVE_INCREMENTAL_BUILD: 'false', EVENTLIVE_FORCE_SEO_REFRESH: 'true', EVENTLIVE_SEO_STATE_PATH: '.eventlive-cache/seo-state-test.json' }
     });
     if (build.status !== 0) {
       console.error(build.stdout || '');

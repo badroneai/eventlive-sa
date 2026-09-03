@@ -120,7 +120,7 @@ try {
     env: {
       ...process.env,
       EVENTLIVE_INCREMENTAL_BUILD: 'false',
-      EVENTLIVE_FORCE_SEO_REFRESH: 'true'
+      EVENTLIVE_FORCE_SEO_REFRESH: 'true', EVENTLIVE_SEO_STATE_PATH: '.eventlive-cache/seo-state-test.json'
     }
   });
   if (build.status !== 0) {
