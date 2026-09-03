@@ -2319,6 +2319,82 @@ function stickyCtaVisibilityScript(event) {
 </script>`;
 }
 
+
+// Every event page linked to exactly zero other event pages. Measured 2026-09-03:
+// of 1,603 Arabic event pages, 1,146 (71%) had no inbound internal link at all —
+// a crawler could reach them only from the sitemap, and a visitor could not reach
+// them from another event at all. City and category hubs cap at 19 links each and
+// events.html renders its list from a JSON file that robots.txt disallows, so it
+// contributes none.
+//
+// This block is the fix, and it pays twice. It ends the orphaning with anchor text
+// that is the event's own name — which Google's link guidance asks for, and which
+// it also reads when choosing a title link. And because 72% of indexed pages are
+// archives that still draw impressions (one dead page alone drew 1,135 in three
+// months), pointing them at what is actually on now turns traffic that currently
+// dead-ends into a live event.
+//
+// Selection is deliberately narrow-to-broad so the links stay genuinely related:
+// another edition of the same event first, then same city AND category, then same
+// city, then same category. Only events that have not finished are offered — an
+// archive linking to another archive helps nobody.
+function relatedEventsHtml(event, allEvents, relative) {
+  const now = Date.now();
+  const isOpen = (row) => {
+    if (row.status === 'ended') return false;
+    const end = dateValue(row.ends_at || row.starts_at)?.getTime();
+    return !Number.isFinite(end) || end >= now;
+  };
+  const key = (row) => String(row.file_slug || row.id || '');
+  const self = key(event);
+  const sameTitle = (row) => normalizeArabicSearch(row.title) === normalizeArabicSearch(event.title);
+  const pool = allEvents.filter((row) => key(row) !== self && isOpen(row) && row.approval_status === 'published');
+  const tiers = [
+    pool.filter(sameTitle),
+    pool.filter((row) => !sameTitle(row) && row.city === event.city && row.category === event.category),
+    pool.filter((row) => !sameTitle(row) && row.city === event.city && row.category !== event.category),
+    pool.filter((row) => !sameTitle(row) && row.city !== event.city && row.category === event.category)
+  ];
+  const picked = [];
+  const seen = new Set();
+  for (const tier of tiers) {
+    const sorted = [...tier].sort((a, b) => (dateValue(a.starts_at)?.getTime() ?? Infinity) - (dateValue(b.starts_at)?.getTime() ?? Infinity));
+    for (const row of sorted) {
+      if (picked.length >= 6) break;
+      const id = key(row);
+      if (seen.has(id)) continue;
+      seen.add(id);
+      picked.push(row);
+    }
+    if (picked.length >= 6) break;
+  }
+  // Other editions of the SAME event, whatever their status. Only 12 titles in the
+  // catalog recur today, but for those the previous year IS the thing a searcher
+  // wants — "معرض الحرف والاعمال اليدوية 2026" is a real winning query — and the
+  // link is useful in both directions.
+  const editions = allEvents
+    .filter((row) => key(row) !== self && row.approval_status === 'published' && sameTitle(row))
+    .sort((a, b) => (dateValue(b.starts_at)?.getTime() ?? 0) - (dateValue(a.starts_at)?.getTime() ?? 0))
+    .slice(0, 4);
+  const editionsHtml = editions.length
+    ? `<h3>نسخ أخرى من الفعالية</h3><ul class="related-events">${editions.map((row) => {
+      const when = formatDate(row.starts_at);
+      return `<li><a href="${escapeHtml(`${relative}events/${row.file_slug}.html`)}"><b dir="auto">${escapeHtml(row.title)}</b><span class="muted">${when ? ` — ${escapeHtml(when)}` : ''}</span></a></li>`;
+    }).join('')}</ul>`
+    : '';
+  if (!picked.length && !editions.length) return '';
+  const items = picked.map((row) => {
+    const when = formatDate(row.starts_at);
+    const where = cityLabel(row.city);
+    // City and date sit in their own text nodes: generate-localized-site.mjs
+    // translates by exact node match, so a composite "— الرياض · <date>" node
+    // would ship an Arabic city name on the English page.
+    return `<li><a href="${escapeHtml(`${relative}events/${row.file_slug}.html`)}"><b dir="auto">${escapeHtml(row.title)}</b><span class="muted"> — </span><span class="muted">${escapeHtml(where)}</span>${when ? `<span class="muted"> · </span><span class="muted">${escapeHtml(when)}</span>` : ''}</a></li>`;
+  }).join('');
+  return `
+  <section class="section" data-section="related"><div class="wrap"><article class="readiness" aria-label="فعاليات ذات صلة"><span>قادمة الآن</span><h2>فعاليات ذات صلة</h2><p>فعاليات قادمة قريبة من هذه في المدينة أو التصنيف.</p>${items ? `<ul class="related-events">${items}</ul>` : ''}${editionsHtml}<div class="meta"><a class="cta" href="${escapeHtml(`${relative}events.html`)}">تصفح كل الفعاليات</a></div></article></div></section>`;
+}
+
 // "ديسمبر ٢٠٢٥" — the edition an archived page is about, so a searcher can tell at
 // a glance which year's edition they are looking at without opening the page.
 function archiveMonthLabel(value) {
@@ -2445,6 +2521,7 @@ ${header(relative)}
   ${sessions}
   ${programOutline}
   <section class="section" data-section="practical"><div class="wrap"><article class="readiness attendance-summary event-practical" aria-label="معلومات عملية"><span class="attendance-kicker">ما تحتاجه قبل الذهاب</span><h2>معلومات عملية</h2><p>معلومات عملية مرتبطة بالمصدر لمساعدتك قبل الوصول وأثناء الفعالية.</p>${attendanceFacts(event)}${practicalFacts}${eventPracticalActionsHtml(event, relative)}</article></div></section>
+  ${relatedEventsHtml(event, events, relative)}
   <section class="section" data-section="source"><div class="wrap"><article class="readiness" aria-label="المصدر والتحديث"><span>من المصدر الرسمي</span><h2>المصدر والتحديث</h2><p>آخر تحديث: ${escapeHtml(formatDate(lastUpdated))}</p>${mtNote}<div class="meta">${eventSourceLinkActionHtml(event)}</div></article></div></section>
   ${renderFaqSection(eventFaq, 'ما يحتاجه الزائر بسرعة')}
 </main>
