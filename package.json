@@ -84,6 +84,7 @@
     "test:sitemap-freshness": "node scripts/sitemap-freshness-regression-test.mjs",
     "test:crawler-visible-content": "node scripts/crawler-visible-content-regression-test.mjs",
     "test:singleton-injection": "node scripts/singleton-injection-regression-test.mjs",
+    "test:sync-freshness-watchdog": "node scripts/sync-freshness-watchdog-regression-test.mjs",
     "test:scega-events-extractor": "node scripts/scega-events-extractor-regression-test.mjs",
     "test:informa-saudi-portfolio": "node scripts/informa-saudi-portfolio-regression-test.mjs",
     "test:scega-canonical-alias": "node scripts/scega-canonical-alias-regression-test.mjs",

@@ -1,0 +1,76 @@
+# The daily cadence made one run a single point of failure, and nothing on this
+# repo measures whether the catalog is still being refreshed.
+#
+# Two facts, both measured on this repo's own run history (2026-08-25 .. 09-03):
+#
+#   1. GitHub delays these scheduled runs by a median of 3h14m and by as much as
+#      5h52m. The "05:17 Riyadh" in source-sync.yml describes when the run is
+#      REQUESTED, never when it happens.
+#   2. Only 4 of the last 30 scheduled runs succeeded. The longest gap between two
+#      successful syncs was 26h30m — and that is with every slot firing. One failed
+#      run under a daily cadence means the site serves a stale catalog for two full
+#      days, which is exactly the shape of the outages this project has already had.
+#
+# Uptime and stability checks answer "is the site up", not "is the site current".
+# This answers the second question, and it is the only thing that does.
+name: EventLive Sync Freshness Watchdog
+
+on:
+  schedule:
+    # Spread through the day, deliberately away from source-sync's own slot so a
+    # catch-up never queues behind the run it is checking for.
+    - cron: '43 11 * * *'
+    - cron: '43 19 * * *'
+  workflow_dispatch:
+
+permissions:
+  actions: write
+  contents: read
+
+jobs:
+  freshness:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check how long since the catalog was last refreshed
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GH_REPO: ${{ github.repository }}
+        run: |
+          set -euo pipefail
+
+          # 26h: one daily slot plus the worst observed scheduling delay (5h52m),
+          # rounded up. Below this, a late run is normal and nothing should happen.
+          CATCHUP_HOURS=26
+          # 40h: a whole slot has now been missed AND the catch-up did not rescue
+          # it. This is a real incident, so the run goes red and the failure mail
+          # that this repo already sends is the alarm.
+          ALARM_HOURS=40
+
+          LAST=$(gh run list --workflow "EventLive Source Sync" --status success --limit 1 --json updatedAt --jq '.[0].updatedAt // empty')
+          if [ -z "$LAST" ]; then
+            echo "::error::SYNC_FRESHNESS_NO_SUCCESSFUL_RUN no successful EventLive Source Sync run found at all."
+            exit 1
+          fi
+
+          AGE_MIN=$(( ( $(date -u +%s) - $(date -u -d "$LAST" +%s) ) / 60 ))
+          echo "SYNC_FRESHNESS last_success=$LAST age_minutes=$AGE_MIN catchup_after=$((CATCHUP_HOURS*60)) alarm_after=$((ALARM_HOURS*60))"
+
+          if [ "$AGE_MIN" -lt $((CATCHUP_HOURS*60)) ]; then
+            echo "SYNC_FRESHNESS_OK the catalog was refreshed $((AGE_MIN/60))h $((AGE_MIN%60))m ago."
+            exit 0
+          fi
+
+          # Do not stack a catch-up on top of a run that is already going. The sync's
+          # own concurrency group would queue it, and a queued duplicate is noise.
+          RUNNING=$(gh run list --workflow "EventLive Source Sync" --limit 5 --json status --jq '[.[] | select(.status != "completed")] | length')
+          if [ "$RUNNING" -gt 0 ]; then
+            echo "SYNC_FRESHNESS_WAITING a sync is already running; not dispatching a catch-up."
+          else
+            echo "SYNC_FRESHNESS_CATCHUP dispatching EventLive Source Sync after $((AGE_MIN/60))h $((AGE_MIN%60))m without a successful run."
+            gh workflow run source-sync.yml --ref "${{ github.ref_name }}"
+          fi
+
+          if [ "$AGE_MIN" -ge $((ALARM_HOURS*60)) ]; then
+            echo "::error::SYNC_FRESHNESS_STALE the catalog has not been refreshed for $((AGE_MIN/60))h $((AGE_MIN%60))m (alarm threshold ${ALARM_HOURS}h). A catch-up run was dispatched above; if it also fails, eventme.live is serving an increasingly stale catalog and the cause is in the Source Sync log, not here."
+            exit 1
+          fi
