@@ -1,110 +1,110 @@
 # EventLive Official Event Backlog Enrichment
-- Generated at: 2026-09-03T04:41:32.357Z
+- Generated at: 2026-09-03T07:24:18.205Z
 - Targets: 100
 - Enriched: 100
-- Fetched: 26
-- Images: 93
-- Fetch failures: 74
+- Fetched: 81
+- Images: 98
+- Fetch failures: 19
 
 | Source | Event | Method | Image | Fetch |
 |---|---|---:|---:|---:|
-| Hayy Jameel What's On | Hayy Explorers in September | As Told by the Land: Constructed Worlds | official-page-meta | yes | yes |
-| Hayy Jameel What's On | Hayy Sounds | Listening Session: Rotations of Bismillah with Atiyyah Khan and Huda Tayob | official-page-meta | yes | yes |
-| Hayy Jameel What's On | Hayy Sounds | Listening Stations, Part of the Exhibition ‘Red Wind, Coral Worlds’ | official-page-meta | yes | yes |
-| Hayy Jameel What's On | Recess Showcase: Time Reflected on Water | official-page-meta | yes | yes |
-| Monsha'at All Events | لقاءات شهر سبتمبر 2026م | official-page-meta | no | yes |
-| Monsha'at All Events | لقاءات شهر سبتمبر (المغلقة) 2026م | approved-source-row | no | fetch failed |
-| Discover Aseer Events | "Blackberry Farm " | approved-source-row | yes | HTTP 404 |
-| Visit Saudi Seasons | Combat Arena | official-page-meta | yes | yes |
-| Discover Aseer Events | Cowboy Town | approved-source-row | yes | HTTP 404 |
-| Informa Connect Saudi Event Portfolio | Education Investment Saudi | official-page-meta | yes | yes |
-| Riyadh City Events | Esports Nations Cup | approved-source-row | yes | fetch failed |
-| Riyadh City Events | Foodex Saudi | approved-source-row | yes | fetch failed |
-| Riyadh City Events | Future Projects Forum | approved-source-row | yes | fetch failed |
-| Riyadh City Events | General Aviation Airshow — AERO Middle East x Sand & Fun | approved-source-row | yes | fetch failed |
-| Riyadh City Events | Global CSR Forum | approved-source-row | yes | fetch failed |
-| Riyadh City Events | Global Forum on the Ethics of AI (GFEAI) | approved-source-row | yes | fetch failed |
-| Riyadh City Events | Global Health Exhibition | approved-source-row | yes | fetch failed |
-| Riyadh City Events | Global Logistics Forum | approved-source-row | yes | fetch failed |
-| Riyadh City Events | Global Space Connectivity and Sustainability Events | approved-source-row | yes | fetch failed |
-| Riyadh City Events | Human Capability Initiative Conference | approved-source-row | yes | fetch failed |
-| Riyadh City Events | ICEGOV – International Conference on Electronic Governance | approved-source-row | yes | fetch failed |
-| Riyadh City Events | Industrial Transformation Saudi Arabia | approved-source-row | yes | fetch failed |
-| Riyadh City Events | Information Security Event: Black Hat | approved-source-row | yes | fetch failed |
-| Riyadh City Events | Intersec Saudi Arabia | approved-source-row | yes | fetch failed |
-| Riyadh City Events | Jewels of the World – Autumn Edition | approved-source-row | yes | fetch failed |
-| Riyadh City Events | King Abdulaziz Falconry Festival | approved-source-row | yes | fetch failed |
-| Riyadh City Events | King Khaled Eye Specialist Hospital and Research Center 2026 International Conference | approved-source-row | yes | fetch failed |
-| Discover Aseer Events | Mabdaa Festival | approved-source-row | yes | HTTP 404 |
-| Discover Aseer Events | MARNIS | approved-source-row | yes | HTTP 404 |
-| Discover Aseer Events | Mdmak | approved-source-row | yes | HTTP 404 |
-| Riyadh City Events | Melwah Falcon Racing | approved-source-row | yes | fetch failed |
-| Riyadh City Events | Metal & Steel Exhibition / FABEX | approved-source-row | yes | fetch failed |
-| Riyadh City Events | MIPIM Middle East | approved-source-row | yes | fetch failed |
-| Riyadh City Events | Misk Global Forum | approved-source-row | yes | fetch failed |
-| Discover Aseer Events | Muftaha District | approved-source-row | yes | HTTP 404 |
-| Discover Aseer Events | Musical concerts | approved-source-row | yes | HTTP 404 |
-| Discover Aseer Events | Nafas | approved-source-row | yes | HTTP 404 |
-| Riyadh City Events | New Global Sport Conference | approved-source-row | yes | fetch failed |
-| Riyadh City Events | Next-Gen IoT Expo | approved-source-row | yes | fetch failed |
-| Discover Aseer Events | Perfumes week | approved-source-row | yes | HTTP 404 |
-| Riyadh City Events | Pet & Vet Expo | approved-source-row | yes | fetch failed |
-| Discover Aseer Events | PLATO | approved-source-row | yes | HTTP 404 |
-| Discover Aseer Events | Qusoor Abu Sarah | approved-source-row | yes | HTTP 404 |
-| Discover Aseer Events | Qusoor Al Asabila | approved-source-row | yes | HTTP 404 |
-| Discover Aseer Events | Rekaib Farm | approved-source-row | yes | HTTP 404 |
-| Discover Aseer Events | Rural Village- Art Street | approved-source-row | yes | HTTP 404 |
-| Discover Aseer Events | sair2 | approved-source-row | yes | HTTP 404 |
-| Visit Saudi Seasons | Sammrah | official-page-meta | yes | yes |
-| Riyadh City Events | Saudi Agriculture | approved-source-row | yes | fetch failed |
-| Informa Connect Saudi Event Portfolio | Saudi AI Week | official-page-meta | yes | yes |
-| Riyadh City Events | Saudi Build | approved-source-row | yes | fetch failed |
-| Riyadh City Events | Saudi Drone Exhibition SADEX | approved-source-row | yes | fetch failed |
-| Riyadh City Events | Saudi Elenex | approved-source-row | yes | fetch failed |
-| Informa Connect Saudi Event Portfolio | Saudi Event Show | official-page-meta | yes | yes |
-| Riyadh City Events | Saudi Falcons & Hunting Exhibition | approved-source-row | yes | fetch failed |
-| Informa Connect Saudi Event Portfolio | Saudi Intermobility Expo | official-page-meta | yes | yes |
-| Riyadh City Events | Saudi Lifestyle Week | approved-source-row | yes | fetch failed |
-| Riyadh City Events | Saudi Makes Future AI Expo | approved-source-row | yes | fetch failed |
-| Riyadh City Events | Saudi Procurement Conference | approved-source-row | yes | fetch failed |
-| Riyadh City Events | Saudi Statistics Forum | approved-source-row | yes | fetch failed |
-| Riyadh City Events | Seamless Saudi Arabia | approved-source-row | yes | fetch failed |
-| Discover Aseer Events | Sky Village | approved-source-row | yes | HTTP 404 |
-| Riyadh City Events | Solar & Storage Live | approved-source-row | yes | fetch failed |
-| Visit Saudi Seasons | Sound of Abha Fest (SAF) | official-page-meta | yes | yes |
-| Discover Aseer Events | Summer Legacy | approved-source-row | yes | HTTP 404 |
-| Informa Connect Saudi Event Portfolio | SuperReturn Saudi Arabia | official-page-meta | yes | yes |
-| Riyadh City Events | World Stadiums and Arenas Summit | approved-source-row | yes | fetch failed |
-| Riyadh City Events | WPC Energy Congress | approved-source-row | yes | fetch failed |
-| Visit Saudi Summer Calendar PDF | أمازونيا فان زون | approved-source-row | no | The operation was aborted due to timeout |
-| Visit Saudi Summer Calendar PDF | ارياش | approved-source-row | yes | The operation was aborted due to timeout |
-| Visit Saudi Summer Calendar PDF | باتو | approved-source-row | yes | The operation was aborted due to timeout |
-| Visit Saudi Summer Calendar PDF | تيفو فان زون | approved-source-row | yes | The operation was aborted due to timeout |
-| Visit Saudi Summer Calendar PDF | حديقة مطار ابها الدولي | approved-source-row | yes | The operation was aborted due to timeout |
-| Asharqia Chamber Events | حفل الاستقبال السنوي لقطاع الاعمال 2026م | approved-source-row | no | fetch failed |
-| Visit Saudi Summer Calendar PDF | ساوث ويست (الكاوبوي) | approved-source-row | yes | The operation was aborted due to timeout |
-| Visit Saudi Summer Calendar PDF | سمره | official-page-meta | yes | yes |
-| Visit Saudi Summer Calendar PDF | صيف وِرث 2026 | official-page-meta | yes | yes |
-| Visit Saudi Summer Calendar PDF | صيف وسمرة | official-page-meta | yes | yes |
-| Visit Saudi Summer Calendar PDF | عرض ستاند أب كوميدي مع شاكر الشريف | official-page-meta | yes | yes |
-| Visit Saudi Summer Calendar PDF | ”فينا نحكي؟“ كوميديا ستاند أب مع جون أشقر | official-page-meta | yes | yes |
-| Visit Saudi Summer Calendar PDF | كايف المزرعة | approved-source-row | yes | The operation was aborted due to timeout |
-| Visit Saudi Summer Calendar PDF | ليالي المباريات في أكت 1 | approved-source-row | yes | The operation was aborted due to timeout |
-| Visit Saudi Summer Calendar PDF | ليالي المباريات في ذا هب | approved-source-row | no | The operation was aborted due to timeout |
-| Visit Saudi Summer Calendar PDF | ليالي المونديال | approved-source-row | yes | The operation was aborted due to timeout |
-| Visit Saudi Summer Calendar PDF | ليلة ستاند أب كوميدي | official-page-meta | yes | yes |
-| Asharqia Chamber Events | ملتقى الذكاء الاصطناعي في سوق العمل والتنمية الاجتماعية 2026 | approved-source-row | no | fetch failed |
-| Madinah International Architecture Festival | مهرجان المدينة المنورة الدولي للعمارة 2026 | official-page-meta | yes | yes |
-| Visit Saudi Summer Calendar PDF | مهرجان صوت أبها SAF | approved-source-row | yes | The operation was aborted due to timeout |
-| Najran Municipality Summer Events | مهرجان صيف نجران 2026 «صيفنا هايل» | approved-source-row | yes | fetch failed |
-| Visit Saudi Summer Calendar PDF | مهرجان لحن المملكة | approved-source-row | yes | The operation was aborted due to timeout |
-| Visit Saudi Summer Calendar PDF | ورث الفن | official-page-meta | yes | yes |
-| Umm Al-Qura University Events Center | دبلوم إدارة المشاريع | official-page-meta | yes | yes |
-| Visit Saudi Summer Calendar PDF | مارنيز | approved-source-row | yes | The operation was aborted due to timeout |
-| Visit Saudi Summer Calendar PDF | مدماك | official-page-meta | yes | yes |
-| Visit Saudi Summer Calendar PDF | منتجع الوادي | official-page-meta | yes | yes |
-| Visit Saudi Summer Calendar PDF | منعً في لاحراج: عرض ستاند أب كوميدي من عبدالرحمن محمد | approved-source-row | yes | The operation was aborted due to timeout |
-| Visit Saudi Seasons | Al Balad Cinema | official-page-meta | yes | yes |
-| Riyadh City Events | Cityscape Global | approved-source-row | yes | fetch failed |
-| Riyadh City Events | Future Investment Initiative | approved-source-row | yes | fetch failed |
-| SDAIA Calendar and Events | Global AI Summit | official-page-meta | no | yes |
+| Ithra Events | STEM Xpert Club | official-public-algolia-index | yes | yes |
+| SDAIA Calendar and Events | Global Forum on the Ethics of AI | official-page-meta | no | yes |
+| Riyadh City Events | Global PropTech Summit | approved-source-row | yes | fetch failed |
+| Visit Saudi Seasons | Gravity Carts at Gamra | official-page-meta | yes | yes |
+| Hayy Jameel What's On | Hayy Cinema | 19B (2022) | official-page-meta | yes | yes |
+| Hayy Jameel What's On | Hayy Cinema | A first step in... | official-page-meta | yes | yes |
+| Hayy Jameel What's On | Hayy Cinema | A Road to Mecca (2008) | official-page-meta | yes | yes |
+| Hayy Jameel What's On | Hayy Cinema | Aflam Sudan x Hayy Cinema | official-page-meta | yes | yes |
+| Hayy Jameel What's On | Hayy Cinema | AFLAMNA | official-page-meta | yes | yes |
+| Hayy Jameel What's On | Hayy Cinema | AFLAMNA | official-page-meta | yes | yes |
+| Hayy Jameel What's On | Hayy Cinema | After the Storm (2016) | official-page-meta | yes | yes |
+| Hayy Jameel What's On | Hayy Cinema | April 2026 | official-page-meta | yes | yes |
+| Hayy Jameel What's On | Hayy Cinema | 'At the Edge of Land' Screening and Q&A with Artist Hira Nabi | official-page-meta | yes | yes |
+| Hayy Jameel What's On | Hayy Cinema | Batiment 5 (2023) | official-page-meta | yes | yes |
+| Hayy Jameel What's On | Hayy Cinema | Becoming Iphigenia | official-page-meta | yes | yes |
+| Hayy Jameel What's On | Hayy Cinema | City of God (2002) | official-page-meta | yes | yes |
+| Hayy Jameel What's On | Hayy Cinema | COFFEE! (2023) | official-page-meta | yes | yes |
+| Hayy Jameel What's On | Hayy Cinema | Dirty, Difficult, Dangerous (2022) | official-page-meta | yes | yes |
+| Hayy Jameel What's On | Hayy Cinema | Dounia and the Princess of Aleppo (2022) | official-page-meta | yes | yes |
+| Hayy Jameel What's On | Hayy Cinema | FISHy (2023) | official-page-meta | yes | yes |
+| Hayy Jameel What's On | Hayy Cinema | Harka (2022) | official-page-meta | yes | yes |
+| Hayy Jameel What's On | Hayy Cinema | Hayy Classics: An Experience from Jeddah's Past | official-page-meta | yes | yes |
+| Hayy Jameel What's On | Hayy Cinema | Honeyland (2019) | official-page-meta | yes | yes |
+| Hayy Jameel What's On | Hayy Cinema | Howl's Moving Castle (2004) | official-page-meta | yes | yes |
+| Hayy Jameel What's On | Hayy Cinema | If Only I Could Hibernate (2023) | official-page-meta | yes | yes |
+| Hayy Jameel What's On | Hayy Cinema | June 2026: A Matter of Life and Death, The Stories, You Will Die at Twenty and more! | official-page-meta | yes | yes |
+| Hayy Jameel What's On | Hayy Cinema | Laila and Matchstick (2022) | official-page-meta | yes | yes |
+| Hayy Jameel What's On | Hayy Cinema | Like Father, Like Son (2013) | official-page-meta | yes | yes |
+| Hayy Jameel What's On | Hayy Cinema | March & April 2026 | official-page-meta | yes | yes |
+| Hayy Jameel What's On | Hayy Cinema | May 2026: Goodfellas, Sink, Spring Came On Laughing and more! | official-page-meta | yes | yes |
+| Hayy Jameel What's On | Hayy Cinema | Memories from the North | official-page-meta | yes | yes |
+| Hayy Jameel What's On | Hayy Cinema | My Lost Country (2022) | official-page-meta | yes | yes |
+| Hayy Jameel What's On | Hayy Cinema | My Vibe (2023) | official-page-meta | yes | yes |
+| Hayy Jameel What's On | Hayy Cinema | Nour Shams (2021) | official-page-meta | yes | yes |
+| Hayy Jameel What's On | Hayy Cinema | Open Call: In Short: Film Programme | official-page-meta | yes | yes |
+| Hayy Jameel What's On | Hayy Cinema | Othman (2022) | official-page-meta | yes | yes |
+| Hayy Jameel What's On | Hayy Cinema | Our Little Sister (2015) | official-page-meta | yes | yes |
+| Hayy Jameel What's On | Hayy Cinema | Panel Discussion | The Way We See Us | official-page-meta | yes | yes |
+| Hayy Jameel What's On | Hayy Cinema | Ramadan Film Nights | official-page-meta | yes | yes |
+| Hayy Jameel What's On | Hayy Cinema | Raven Song (2022) | official-page-meta | yes | yes |
+| Hayy Jameel What's On | Hayy Cinema | Saleeg (2023) | official-page-meta | yes | yes |
+| Hayy Jameel What's On | Hayy Cinema | Saleem (2024) | official-page-meta | yes | yes |
+| Hayy Jameel What's On | Hayy Cinema | Souad (2020) | official-page-meta | yes | yes |
+| Hayy Jameel What's On | Hayy Cinema | Spirited Away (2001) | official-page-meta | yes | yes |
+| Hayy Jameel What's On | Hayy Cinema | The Boy and the Heron (2023) | official-page-meta | yes | yes |
+| Hayy Jameel What's On | Hayy Cinema | The Golden Palm Film Programme: The Best of the Saudi Film Festival | official-page-meta | yes | yes |
+| Hayy Jameel What's On | Hayy Cinema | The Journey (2021) | official-page-meta | yes | yes |
+| Hayy Jameel What's On | Hayy Cinema | The King's Poem (2023) | official-page-meta | yes | yes |
+| Hayy Jameel What's On | Hayy Cinema | The Menace From Above (2023) | official-page-meta | yes | yes |
+| Hayy Jameel What's On | Hayy Cinema | The Third Murder (2017) | official-page-meta | yes | yes |
+| Hayy Jameel What's On | Hayy Cinema | VHS Tape Replaced (2023) | official-page-meta | yes | yes |
+| Hayy Jameel What's On | Hayy Cinema | Victory of Youth "Intisar Al Shabab" (1941) | official-page-meta | yes | yes |
+| Hayy Jameel What's On | Hayy Cinema | Yallah, Yallah, Beenah | official-page-meta | yes | yes |
+| Hayy Jameel What's On | Hayy Cinema | Youssef Chahine Retrospective: Adieu Bonaparte (1985) | official-page-meta | yes | yes |
+| Hayy Jameel What's On | Hayy Cinema | Youssef Chahine Retrospective: Alexandria Again and Forever (1989) | official-page-meta | yes | yes |
+| Hayy Jameel What's On | Hayy Cinema | Youssef Chahine Retrospective: Alexandria, Why? (1979) | official-page-meta | yes | yes |
+| Hayy Jameel What's On | Hayy Cinema | Youssef Chahine Retrospective: Return of the Prodigal Son (1976) | official-page-meta | yes | yes |
+| Hayy Jameel What's On | Hayy Sounds | Drumming Circle with Saif Halal | official-page-meta | yes | yes |
+| Hayy Jameel What's On | Jameel Library | Open Call: The Task of the Translator with Sarasija Subramanian | official-page-meta | yes | yes |
+| Riyadh City Events | NALA Narrative Forum | approved-source-row | yes | fetch failed |
+| Misk Hub Events | Navigating the Cyber Map: How to Choose Your Specialization & Build a Corporate Career | official-page-meta | yes | yes |
+| Visit Saudi Seasons | SAIF 2026 | official-page-meta | yes | yes |
+| Visit Saudi Seasons | Saudi International Falcons & Hunting Exhibition | official-page-meta | yes | yes |
+| Riyadh City Events | Saudi Wood Expo | approved-source-row | yes | fetch failed |
+| Discover Aseer Events | Shift Abha 2026 | approved-source-row | yes | HTTP 404 |
+| Visit Saudi Seasons | Sprint Trail Buggy Ride Gamra | official-page-meta | yes | yes |
+| Discover Aseer Events | The Dearest Country | approved-source-row | yes | HTTP 404 |
+| Discover Aseer Events | The Summer Gathering | approved-source-row | yes | HTTP 404 |
+| Discover Aseer Events | Veranda | approved-source-row | yes | HTTP 404 |
+| Visit Saudi Summer Calendar PDF | ألف وواحد | official-page-meta | yes | yes |
+| Qassim University Events | استضافة مؤتمر IEEE MECOM 2027 | official-page-meta | yes | yes |
+| Umm Al-Qura University Events Center | الترشح للدبلوم المتوسط تقنية الطاقة المتجددة (حضوري) بالتعاون مع معهد الدراسات والخدمات الاستشارية بجامعة الإمام عبد الرحمن بن فيصل | official-page-meta | yes | yes |
+| Umm Al-Qura University Events Center | الترشح للدبلوم المتوسط في أمن المعلومات في الجبيل بالتعاون مع كليات الفيحاء الأهلية | approved-source-row | yes | HTTP 404 |
+| Umm Al-Qura University Events Center | الترشح للدبلوم المتوسط في الإدارة المكتبية (حضوري) بالتعاون مع معهد الدراسات والخدمات الاستشارية بجامعة الإمام عبد الرحمن بن فيصل | official-page-meta | yes | yes |
+| Umm Al-Qura University Events Center | الترشح للدبلوم المتوسط في البرمجة وعلوم الحاسب في الجبيل بالتعاون مع كليات الفيحاء الأهلية | approved-source-row | yes | HTTP 404 |
+| Umm Al-Qura University Events Center | الترشح للدبلوم المتوسط في التحول الرقمي (حضوري) بالتعاون مع معهد الدراسات والخدمات الاستشارية بجامعة الإمام عبد الرحمن بن فيصل | official-page-meta | yes | yes |
+| Umm Al-Qura University Events Center | الترشح للدبلوم المتوسط في التصميم الجرافيكي والوسائط الرقمية (حضوري) بالتعاون مع معهد الدراسات والخدمات الاستشارية بجامعة الإمام عبد الرحمن بن فيصل | official-page-meta | yes | yes |
+| Umm Al-Qura University Events Center | الترشح للدبلوم المتوسط في المحاسبة المالية في الجبيل بالتعاون مع كليات الفيحاء الأهلية | approved-source-row | yes | HTTP 404 |
+| Qassim University Events | انطلاق المعسكر التدريبي الثالث من برنامج حاضنة ابتكار 5 في جامعة القصيم | approved-source-row | yes | HTTP 404 |
+| Visit Saudi Summer Calendar PDF | حفلة أحام | official-page-meta | no | yes |
+| Umm Al-Qura University Events Center | شهادة أخصائي تكنولوجيا الحاسب الآلي (CBP-CT) | official-page-meta | yes | yes |
+| Umm Al-Qura University Events Center | شهادة محترف أعمال معتمد في القيادة الإدارية (CBP-LS) | official-page-meta | yes | yes |
+| Visit Saudi Summer Calendar PDF | صيف 2026 | approved-source-row | yes | The operation was aborted due to timeout |
+| Visit Saudi Summer Calendar PDF | كنوز غارقة | approved-source-row | yes | The operation was aborted due to timeout |
+| Visit Saudi Summer Calendar PDF | منطقة مشجعي كوكاكوا في حي جاكس | official-page-meta | yes | yes |
+| Visit Saudi Summer Calendar PDF | مهابة | approved-source-row | yes | The operation was aborted due to timeout |
+| Visit Saudi Summer Calendar PDF | مهرجان مبدى | approved-source-row | yes | The operation was aborted due to timeout |
+| Visit Saudi Summer Calendar PDF | نادي ستورم في العماريه | approved-source-row | yes | The operation was aborted due to timeout |
+| Visit Saudi Summer Calendar PDF | نسمة في الطائف | official-page-meta | yes | yes |
+| Visit Saudi Summer Calendar PDF | نفس | approved-source-row | yes | The operation was aborted due to timeout |
+| Visit Saudi Summer Calendar PDF | واحة عسيب | approved-source-row | yes | The operation was aborted due to timeout |
+| Umm Al-Qura University Events Center | وظائف بحثية - تجربة | official-page-meta | yes | yes |
+| Hayy Jameel What's On | Hayy Cinema | Hayy Explorers At The Cinema | official-page-meta | yes | yes |
+| Hayy Jameel What's On | Hayy Cinema | Panel Discussion: The Golden Palm Film Programme | official-page-meta | yes | yes |
+| Visit Saudi Seasons | Honey Festival 2026 | official-page-meta | yes | yes |
+| Visit Saudi Seasons | Scenic Buggy Ride at Gamra | official-page-meta | yes | yes |
+| Visit Saudi Seasons | Scenic Buggy Ride with Picnic | official-page-meta | yes | yes |
+| Visit Saudi Seasons | Tour of Al Baha | official-page-meta | yes | yes |
+| Umm Al-Qura University Events Center | تجرييبية | approved-source-row | yes | HTTP 404 |
+| Umm Al-Qura University Events Center | دبلوم إدارة المرافق | official-page-meta | yes | yes |

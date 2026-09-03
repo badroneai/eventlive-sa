@@ -1,15 +1,15 @@
 {
-  "generated_at": "2026-09-03T04:45:01.549Z",
+  "generated_at": "2026-09-03T07:27:13.489Z",
   "events_file": "dist/events.json",
   "manifest": "data/event_image_cache_manifest.json",
   "image_dir": "dist/assets/event-images",
   "totals": {
     "targets": 500,
-    "cached_total": 834,
-    "fetched": 8,
-    "reused": 489,
+    "cached_total": 835,
+    "fetched": 9,
+    "reused": 488,
     "failed": 3,
-    "skipped_recent_failures": 0,
+    "skipped_recent_failures": 3,
     "remembered_failures": 10
   },
   "fetched": [
@@ -20,20 +20,20 @@
       "events": 1
     },
     {
-      "source_url": "https://hayyjameel.org/wp-content/uploads/2026/09/BY-DENSEN-MAGAISA-aspect-ratio-1181-597-1100x500.jpg",
-      "file": "dist/assets/event-images/hayy-sounds-listening-session-rotations-of-bismillah-with-atiyyah-khan-d3ff0d7b42.jpg",
-      "bytes": 70686,
-      "events": 1
-    },
-    {
       "source_url": "https://hayyjameel.org/wp-content/uploads/2026/09/DSC02202-1100x500.jpg",
-      "file": "dist/assets/event-images/recess-showcase-time-reflected-on-water-2a57673831.jpg",
+      "file": "dist/assets/event-images/العرض-تضخم-الوقت-على-المياه-2a57673831.jpg",
       "bytes": 106325,
       "events": 1
     },
     {
+      "source_url": "https://hayyjameel.org/wp-content/uploads/2026/09/BY-DENSEN-MAGAISA-aspect-ratio-1181-597-1100x500.jpg",
+      "file": "dist/assets/event-images/هاي-تبدو-جلسة-الاستماع-روتاتب-بيزيلا-مع-أتيياه-خان-و-هودا-تايوب-d3ff0d7b42.jpg",
+      "bytes": 70686,
+      "events": 1
+    },
+    {
       "source_url": "https://hayyjameel.org/wp-content/uploads/2026/09/Screenshot-2026-09-02-at-4.31.00-PM-aspect-ratio-2006-1467-1100x500.png",
-      "file": "dist/assets/event-images/hayy-explorers-in-september-as-told-by-the-land-constructed-worlds-3bdc6e269f.png",
+      "file": "dist/assets/event-images/هاي-اكسبلوررز-في-أيلول-سبتمبر-3bdc6e269f.png",
       "bytes": 703080,
       "events": 1
     },
@@ -44,15 +44,21 @@
       "events": 1
     },
     {
+      "source_url": "https://www.ithra.com/application/files/cache/thumbnails/ea177199ee8a928c55aaa359740ff51b.jpg",
+      "file": "dist/assets/event-images/treasure-hunt-0ea8b3ad45.jpg",
+      "bytes": 219455,
+      "events": 1
+    },
+    {
       "source_url": "https://www.ithra.com/application/files/cache/thumbnails/abacadd8f4efd6725035d14b969a9359.png",
       "file": "dist/assets/event-images/المغامرة-حول-المملكة-b6b607165c.png",
       "bytes": 1282988,
       "events": 1
     },
     {
-      "source_url": "https://www.ithra.com/application/files/cache/thumbnails/ea177199ee8a928c55aaa359740ff51b.jpg",
-      "file": "dist/assets/event-images/treasure-hunt-0ea8b3ad45.jpg",
-      "bytes": 219455,
+      "source_url": "https://www.ithra.com/application/files/cache/thumbnails/559679d939ffe744e2cf38b67288d1a3.png",
+      "file": "dist/assets/event-images/stem-xpert-club-ce65407468.png",
+      "bytes": 1228046,
       "events": 1
     },
     {
@@ -2502,15 +2508,40 @@
       "source_url": "https://scth.scene7.com/is/image/scth/combat-arena?wid=1400&hei=788&fit=constrain&fmt=webp",
       "file": "dist/assets/event-images/combat-arena-b158bf372a.webp",
       "events": 1
-    },
-    {
-      "source_url": "https://www.ithra.com/application/files/cache/thumbnails/57ced1047619d76eed02cbbfb34191f7.jpg",
-      "file": "dist/assets/event-images/philosophy-for-everyone-a-journey-of-thought-from-young-to-old-1dc740ef9e.jpg",
-      "events": 3
     }
   ],
   "rejected_removed": [],
   "missing_removed": [
+    {
+      "source_url": "https://hayyjameel.org/wp-content/uploads/2026/09/DSC08824-scaled-aspect-ratio-2560-1370-1100x500.jpg",
+      "file": "dist/assets/event-images/hayy-sounds-listening-stations-part-of-the-exhibition-red-wind-coral-w-d8652cf218.jpg",
+      "reason": "cached-file-missing"
+    },
+    {
+      "source_url": "https://hayyjameel.org/wp-content/uploads/2026/09/BY-DENSEN-MAGAISA-aspect-ratio-1181-597-1100x500.jpg",
+      "file": "dist/assets/event-images/hayy-sounds-listening-session-rotations-of-bismillah-with-atiyyah-khan-d3ff0d7b42.jpg",
+      "reason": "cached-file-missing"
+    },
+    {
+      "source_url": "https://hayyjameel.org/wp-content/uploads/2026/09/DSC02202-1100x500.jpg",
+      "file": "dist/assets/event-images/recess-showcase-time-reflected-on-water-2a57673831.jpg",
+      "reason": "cached-file-missing"
+    },
+    {
+      "source_url": "https://hayyjameel.org/wp-content/uploads/2026/09/Screenshot-2026-09-02-at-4.31.00-PM-aspect-ratio-2006-1467-1100x500.png",
+      "file": "dist/assets/event-images/hayy-explorers-in-september-as-told-by-the-land-constructed-worlds-3bdc6e269f.png",
+      "reason": "cached-file-missing"
+    },
+    {
+      "source_url": "https://futureskills.mcit.gov.sa/sites/default/files/styles/medium/public/2026-08/R.jpg?itok=DjAo5gc9",
+      "file": "dist/assets/event-images/linux-administration-1889a50ad6.jpg",
+      "reason": "cached-file-missing"
+    },
+    {
+      "source_url": "https://www.ithra.com/application/files/cache/thumbnails/abacadd8f4efd6725035d14b969a9359.png",
+      "file": "dist/assets/event-images/المغامرة-حول-المملكة-b6b607165c.png",
+      "reason": "cached-file-missing"
+    },
     {
       "source_url": "https://www.ithra.com/application/files/cache/thumbnails/ea177199ee8a928c55aaa359740ff51b.jpg",
       "file": "dist/assets/event-images/treasure-hunt-0ea8b3ad45.jpg",
@@ -2520,41 +2551,63 @@
       "source_url": "https://www.ithra.com/application/files/cache/thumbnails/36b7ced72fad4052ec4ab7117bd56b55.jpg",
       "file": "dist/assets/event-images/global-impact-challenge-0ca764d000.jpg",
       "reason": "cached-file-missing"
-    },
-    {
-      "source_url": "https://www.ithra.com/application/files/cache/thumbnails/abacadd8f4efd6725035d14b969a9359.png",
-      "file": "dist/assets/event-images/adventure-around-the-kingdom-b6b607165c.png",
-      "reason": "cached-file-missing"
     }
   ],
-  "skipped_recent_failures": [],
-  "failed": [
+  "skipped_recent_failures": [
     {
       "source_url": "https://cdn.rfecc.sa/wp-content/uploads/mec/qr_898ea2449274454e42895b52b18c6f68.png",
       "events": 1,
       "reason": "HTTP 403",
       "failure_kind": "access-denied",
-      "retry_after": "2026-09-04T04:45:01.549Z"
-    },
-    {
-      "source_url": "https://s7g10.scene7.com/is/image/rcu/fei2:landscape-16x9?$Responsive$&fit=stretch&fmt=webp&wid=1920",
-      "events": 1,
-      "reason": "HTTP 403",
-      "failure_kind": "access-denied",
-      "retry_after": "2026-09-04T04:45:01.549Z"
+      "retry_after": "2026-09-04T04:45:01.549Z",
+      "skipped": true
     },
     {
       "source_url": "https://api.riyadh.sa/sites/default/files/styles/medium/public/2026-07/er%20%2859%29.jpg?itok=a33APdGm",
       "events": 1,
       "reason": "not-image text/html; charset=utf-8",
       "failure_kind": "source-returned-html",
-      "retry_after": "2026-09-04T04:45:01.549Z"
+      "retry_after": "2026-09-04T04:45:01.549Z",
+      "skipped": true
+    },
+    {
+      "source_url": "https://s7g10.scene7.com/is/image/rcu/fei2:landscape-16x9?$Responsive$&fit=stretch&fmt=webp&wid=1920",
+      "events": 1,
+      "reason": "HTTP 403",
+      "failure_kind": "access-denied",
+      "retry_after": "2026-09-04T04:45:01.549Z",
+      "skipped": true
+    }
+  ],
+  "failed": [
+    {
+      "source_url": "https://cdn.rfecc.sa/wp-content/uploads/mec/qr_898ea2449274454e42895b52b18c6f68.png",
+      "events": 1,
+      "reason": "HTTP 403",
+      "failure_kind": "access-denied",
+      "retry_after": "2026-09-04T04:45:01.549Z",
+      "skipped": true
+    },
+    {
+      "source_url": "https://api.riyadh.sa/sites/default/files/styles/medium/public/2026-07/er%20%2859%29.jpg?itok=a33APdGm",
+      "events": 1,
+      "reason": "not-image text/html; charset=utf-8",
+      "failure_kind": "source-returned-html",
+      "retry_after": "2026-09-04T04:45:01.549Z",
+      "skipped": true
+    },
+    {
+      "source_url": "https://s7g10.scene7.com/is/image/rcu/fei2:landscape-16x9?$Responsive$&fit=stretch&fmt=webp&wid=1920",
+      "events": 1,
+      "reason": "HTTP 403",
+      "failure_kind": "access-denied",
+      "retry_after": "2026-09-04T04:45:01.549Z",
+      "skipped": true
     }
   ],
   "requires_rebuild": true,
   "rebuild_reasons": [
-    "fetched:8",
-    "missing-removed:3",
-    "new-failures:3"
+    "fetched:9",
+    "missing-removed:8"
   ]
 }

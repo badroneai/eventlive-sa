@@ -1,14 +1,13 @@
 # EventLive Visit Saudi Image Identity Report
 
-- generated_at: 2026-09-03T04:37:40.169Z
-- pdf_crop_assignments: 30
+- generated_at: 2026-09-03T07:21:23.563Z
+- pdf_crop_assignments: 29
 - verified: 28
-- struck: 2
+- struck: 1
 - slots_seen_this_cycle: 32
 
 ## Struck (fell back to generated cover)
 
-- فعالية القصبة (visit-saudi-summer-2026-p013-bottom-right.jpg) - slot-vacated - no dated card currently occupies page 13 bottom-right of https://www.visitsaudi.com/content/dam/documents/saudi-calendar-ar.pdf
 - ذكريات سبيستون مع الفنان عاصم سكر (visit-saudi-summer-2026-p062-bottom-left.jpg) - identity-mismatch - page 62 bottom-left is now "ENC 2026"
 
 ## Verified

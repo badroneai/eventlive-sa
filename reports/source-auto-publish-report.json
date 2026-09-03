@@ -1,18 +1,18 @@
 {
-  "published_at": "2026-09-03T04:37:37.337Z",
+  "published_at": "2026-09-03T07:21:20.725Z",
   "dry_run": false,
   "include_partner": true,
   "source_candidates": "data/source_candidates.json",
   "events_catalog": "data/events_catalog.json",
-  "candidates_seen": 507,
+  "candidates_seen": 508,
   "totals": {
-    "candidates_seen": 507,
-    "published": 6,
-    "linked_existing": 482,
+    "candidates_seen": 508,
+    "published": 1,
+    "linked_existing": 488,
     "blocked": 19,
     "duplicate_review_alerts": 6,
     "category_fallback_alerts": 0,
-    "reconciled": 488
+    "reconciled": 489
   },
   "category_fallback_alerts": [],
   "duplicate_catalog_rows_removed": 0,
@@ -126,34 +126,9 @@
   ],
   "published": [
     {
-      "candidate_id": "candidate-monshaat-events-لقاءات-شهر-سبتمبر-المغلقة-2026م-20260901-8dd17ffa",
-      "event_id": "event-لقاءات-شهر-سبتمبر-المغلقة-2026م",
-      "title": "لقاءات شهر سبتمبر (المغلقة) 2026م"
-    },
-    {
-      "candidate_id": "candidate-monshaat-events-لقاءات-شهر-سبتمبر-2026م-20260901-4ab4bb1e",
-      "event_id": "event-لقاءات-شهر-سبتمبر-2026م",
-      "title": "لقاءات شهر سبتمبر 2026م"
-    },
-    {
-      "candidate_id": "candidate-hayy-jameel-events-hayy-explorers-in-september-as-told-by-the-land-constructed-worlds-20260910-5d727028",
-      "event_id": "event-hayy-explorers-in-september-as-told-by-the-land-constructed-worlds",
-      "title": "Hayy Explorers in September | As Told by the Land: Constructed Worlds"
-    },
-    {
-      "candidate_id": "candidate-hayy-jameel-events-recess-showcase-time-reflected-on-water-20260912-7a95a5fa",
-      "event_id": "event-recess-showcase-time-reflected-on-water",
-      "title": "Recess Showcase: Time Reflected on Water"
-    },
-    {
-      "candidate_id": "candidate-hayy-jameel-events-hayy-sounds-listening-stations-part-of-the-exhibition-red-wind-coral-wor-20260920-c9c76984",
-      "event_id": "event-hayy-sounds-listening-stations-part-of-the-exhibition-red-wind-coral-wor",
-      "title": "Hayy Sounds | Listening Stations, Part of the Exhibition ‘Red Wind, Coral Worlds’"
-    },
-    {
-      "candidate_id": "candidate-hayy-jameel-events-hayy-sounds-listening-session-rotations-of-bismillah-with-atiyyah-khan-a-20260924-073d2543",
-      "event_id": "event-hayy-sounds-listening-session-rotations-of-bismillah-with-atiyyah-khan-a",
-      "title": "Hayy Sounds | Listening Session: Rotations of Bismillah with Atiyyah Khan and Huda Tayob"
+      "candidate_id": "candidate-ithra-events-stem-xpert-club-20261006-28ee60b9",
+      "event_id": "event-stem-xpert-club",
+      "title": "STEM Xpert Club"
     }
   ],
   "linked_existing": [
@@ -854,6 +829,18 @@
       "reason": "already linked to catalog event"
     },
     {
+      "candidate_id": "candidate-monshaat-events-لقاءات-شهر-سبتمبر-المغلقة-2026م-20260901-8dd17ffa",
+      "event_id": "event-لقاءات-شهر-سبتمبر-المغلقة-2026م",
+      "title": "لقاءات شهر سبتمبر (المغلقة) 2026م",
+      "reason": "already linked to catalog event"
+    },
+    {
+      "candidate_id": "candidate-monshaat-events-لقاءات-شهر-سبتمبر-2026م-20260901-4ab4bb1e",
+      "event_id": "event-لقاءات-شهر-سبتمبر-2026م",
+      "title": "لقاءات شهر سبتمبر 2026م",
+      "reason": "already linked to catalog event"
+    },
+    {
       "candidate_id": "candidate-umm-al-qura-events-رابط-سداد-الزمالة-التطبيقية-في-الأنظمة-الوقفية-20260901-7703e69c",
       "event_id": "event-رابط-سداد-الزمالة-التطبيقية-في-الأنظمة-الوقفية",
       "title": "رابط سداد الزمالة التطبيقية في الأنظمة الوقفية",
@@ -1358,6 +1345,12 @@
       "reason": "already linked to catalog event"
     },
     {
+      "candidate_id": "candidate-hayy-jameel-events-hayy-explorers-in-september-as-told-by-the-land-constructed-worlds-20260910-5d727028",
+      "event_id": "event-hayy-explorers-in-september-as-told-by-the-land-constructed-worlds",
+      "title": "Hayy Explorers in September | As Told by the Land: Constructed Worlds",
+      "reason": "already linked to catalog event"
+    },
+    {
       "candidate_id": "candidate-ithra-events-energy-in-motion-20260910-e0404048",
       "event_id": "event-energy-in-motion",
       "title": "Energy in Motion",
@@ -1373,6 +1366,12 @@
       "candidate_id": "candidate-ithra-events-survival-journey-20260911-4fd1e78d",
       "event_id": "event-survival-journey",
       "title": "Survival Journey",
+      "reason": "already linked to catalog event"
+    },
+    {
+      "candidate_id": "candidate-hayy-jameel-events-recess-showcase-time-reflected-on-water-20260912-7a95a5fa",
+      "event_id": "event-recess-showcase-time-reflected-on-water",
+      "title": "Recess Showcase: Time Reflected on Water",
       "reason": "already linked to catalog event"
     },
     {
@@ -1616,6 +1615,12 @@
       "reason": "already linked to catalog event"
     },
     {
+      "candidate_id": "candidate-hayy-jameel-events-hayy-sounds-listening-stations-part-of-the-exhibition-red-wind-coral-wor-20260920-c9c76984",
+      "event_id": "event-hayy-sounds-listening-stations-part-of-the-exhibition-red-wind-coral-wor",
+      "title": "Hayy Sounds | Listening Stations, Part of the Exhibition ‘Red Wind, Coral Worlds’",
+      "reason": "already linked to catalog event"
+    },
+    {
       "candidate_id": "candidate-tuwaiq-academy-bootcamps-معسكر-هندسة-الحوسبة-السحابية-المتقدمة-باستخدام-google-cloud-20260920-c1ed5d59",
       "event_id": "event-معسكر-هندسة-الحوسبة-السحابية-المتقدمة-باستخدام-google-cloud",
       "title": "معسكر هندسة الحوسبة السحابية المتقدمة باستخدام Google Cloud",
@@ -1655,6 +1660,12 @@
       "candidate_id": "candidate-dhahran-expo-calendar-the-egyptian-products-exhibition-20260924-18d15b29",
       "event_id": "event-the-egyptian-products-exhibition",
       "title": "The Egyptian Products Exhibition",
+      "reason": "already linked to catalog event"
+    },
+    {
+      "candidate_id": "candidate-hayy-jameel-events-hayy-sounds-listening-session-rotations-of-bismillah-with-atiyyah-khan-a-20260924-073d2543",
+      "event_id": "event-hayy-sounds-listening-session-rotations-of-bismillah-with-atiyyah-khan-a",
+      "title": "Hayy Sounds | Listening Session: Rotations of Bismillah with Atiyyah Khan and Huda Tayob",
       "reason": "already linked to catalog event"
     },
     {

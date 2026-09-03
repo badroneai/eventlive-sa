@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "generated_at": "2026-09-03T04:49:33.213Z",
+  "generated_at": "2026-09-03T07:31:41.375Z",
   "events": {
     "event-skill-development-initiative": {
       "identity": "skill development initiative|riyadh|2021-07-14",
@@ -1240,6 +1240,11 @@
     "event-how-to-edit-fictional-texts": {
       "identity": "how to edit fictional texts|dhahran|2026-10-06",
       "first_seen": "2026-07-11",
+      "last_seen": "2026-09-03"
+    },
+    "event-stem-xpert-club": {
+      "identity": "stem xpert club|dhahran|2026-10-06",
+      "first_seen": "2026-09-03",
       "last_seen": "2026-09-03"
     },
     "event-cfo-leadership-summit": {

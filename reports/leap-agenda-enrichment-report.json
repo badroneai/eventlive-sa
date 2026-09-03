@@ -1,13 +1,13 @@
 {
-  "generated_at": "2026-09-03T04:40:22.353Z",
+  "generated_at": "2026-09-03T07:23:26.729Z",
   "agenda_url": "https://onegiantleap.com/our-2026-agenda?field_swapcard_session_day_value=all",
-  "snapshot_path": "",
+  "snapshot_path": "data/raw/source-snapshots/leap-2026-agenda-latest.html",
   "totals": {
     "catalog_targets": 1,
     "candidate_targets": 1,
-    "sessions": 0,
-    "rooms": 0,
-    "tracks": 0
+    "sessions": 821,
+    "rooms": 19,
+    "tracks": 28
   },
-  "fetch_error": "page.goto: Timeout 60000ms exceeded.\nCall log:\n  - navigating to \"https://onegiantleap.com/our-2026-agenda?field_swapcard_session_day_value=all\", waiting until \"domcontentloaded\"\n"
+  "fetch_error": ""
 }

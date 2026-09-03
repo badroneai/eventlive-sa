@@ -1,11 +1,11 @@
 # EventLive Source Auto Publish Report
 
-- published_at: 2026-09-03T04:37:37.337Z
+- published_at: 2026-09-03T07:21:20.725Z
 - dry_run: false
 - include_partner: true
-- candidates_seen: 507
-- published_new: 6
-- linked_existing: 482
+- candidates_seen: 508
+- published_new: 1
+- linked_existing: 488
 - blocked_remaining: 19
 - duplicate_review_alerts: 6
 
@@ -23,12 +23,7 @@
 
 | Candidate | Status | Catalog event | Reason |
 |---|---|---|---|
-| candidate-monshaat-events-لقاءات-شهر-سبتمبر-المغلقة-2026م-20260901-8dd17ffa | published | event-لقاءات-شهر-سبتمبر-المغلقة-2026م | لقاءات شهر سبتمبر (المغلقة) 2026م |
-| candidate-monshaat-events-لقاءات-شهر-سبتمبر-2026م-20260901-4ab4bb1e | published | event-لقاءات-شهر-سبتمبر-2026م | لقاءات شهر سبتمبر 2026م |
-| candidate-hayy-jameel-events-hayy-explorers-in-september-as-told-by-the-land-constructed-worlds-20260910-5d727028 | published | event-hayy-explorers-in-september-as-told-by-the-land-constructed-worlds | Hayy Explorers in September | As Told by the Land: Constructed Worlds |
-| candidate-hayy-jameel-events-recess-showcase-time-reflected-on-water-20260912-7a95a5fa | published | event-recess-showcase-time-reflected-on-water | Recess Showcase: Time Reflected on Water |
-| candidate-hayy-jameel-events-hayy-sounds-listening-stations-part-of-the-exhibition-red-wind-coral-wor-20260920-c9c76984 | published | event-hayy-sounds-listening-stations-part-of-the-exhibition-red-wind-coral-wor | Hayy Sounds | Listening Stations, Part of the Exhibition ‘Red Wind, Coral Worlds’ |
-| candidate-hayy-jameel-events-hayy-sounds-listening-session-rotations-of-bismillah-with-atiyyah-khan-a-20260924-073d2543 | published | event-hayy-sounds-listening-session-rotations-of-bismillah-with-atiyyah-khan-a | Hayy Sounds | Listening Session: Rotations of Bismillah with Atiyyah Khan and Huda Tayob |
+| candidate-ithra-events-stem-xpert-club-20261006-28ee60b9 | published | event-stem-xpert-club | STEM Xpert Club |
 | candidate-moc-cultural-subportals-skill-development-initiative-20210714-10f7dc2c | linked-existing | event-skill-development-initiative | already linked to catalog event |
 | candidate-moc-cultural-subportals-sitar-20220921-cda2e068 | linked-existing | event-sitar | already linked to catalog event |
 | candidate-moc-cultural-subportals-the-architecture-and-design-caf-20240427-046e2ec1 | linked-existing | event-the-architecture-and-design-caf | already linked to catalog event |
@@ -145,6 +140,8 @@
 | candidate-misk-hub-programs-misk-x-unyo-youth-engagement-fellowship-20260901-2ab69839 | linked-existing | event-misk-x-unyo-youth-engagement-fellowship | already linked to catalog event |
 | candidate-misk-hub-programs-misk-x-tamara-associate-fraud-investigator-20260901-fd2718eb | linked-existing | event-misk-x-tamara-associate-fraud-investigator | already linked to catalog event |
 | candidate-misk-hub-programs-misk-x-moyasar-traineeship-program-20260901-3bb265ea | linked-existing | event-misk-x-moyasar-traineeship-program | already linked to catalog event |
+| candidate-monshaat-events-لقاءات-شهر-سبتمبر-المغلقة-2026م-20260901-8dd17ffa | linked-existing | event-لقاءات-شهر-سبتمبر-المغلقة-2026م | already linked to catalog event |
+| candidate-monshaat-events-لقاءات-شهر-سبتمبر-2026م-20260901-4ab4bb1e | linked-existing | event-لقاءات-شهر-سبتمبر-2026م | already linked to catalog event |
 | candidate-umm-al-qura-events-رابط-سداد-الزمالة-التطبيقية-في-الأنظمة-الوقفية-20260901-7703e69c | linked-existing | event-رابط-سداد-الزمالة-التطبيقية-في-الأنظمة-الوقفية | already linked to catalog event |
 | candidate-riyadh-city-events-saudi-woodshow-20260901-f62d44d7 | linked-existing | event-saudi-woodshow | already linked to catalog event |
 | candidate-scega-exhibitions-conferences-ملتقى-الأخشاب-الدولي-20260901-081bbfc0 | linked-existing | event-saudi-woodshow | already linked to catalog event |
@@ -229,9 +226,11 @@
 | candidate-ithra-events-storyteller-of-the-day-20260909-94528a46 | linked-existing | event-storyteller-of-the-day | already linked to catalog event |
 | candidate-ithra-events-english-children-book-club-10-12-20260909-efa3d7e3 | linked-existing | event-english-children-book-club-10-12 | already linked to catalog event |
 | candidate-umm-al-qura-events-دورة-تدريبية-بعنوان-مهارات-الاستذكار-الفعال-والخرائط-الذهنية-20260909-9775bf95 | linked-existing | event-دورة-تدريبية-بعنوان-مهارات-الاستذكار-الفعال-والخرائط-الذهنية | already linked to catalog event |
+| candidate-hayy-jameel-events-hayy-explorers-in-september-as-told-by-the-land-constructed-worlds-20260910-5d727028 | linked-existing | event-hayy-explorers-in-september-as-told-by-the-land-constructed-worlds | already linked to catalog event |
 | candidate-ithra-events-energy-in-motion-20260910-e0404048 | linked-existing | event-energy-in-motion | already linked to catalog event |
 | candidate-visit-saudi-calendar-pdf-in-act-act-ix-20260911-4a38d19e | linked-existing | event-in-act-act-ix | already linked to catalog event |
 | candidate-ithra-events-survival-journey-20260911-4fd1e78d | linked-existing | event-survival-journey | already linked to catalog event |
+| candidate-hayy-jameel-events-recess-showcase-time-reflected-on-water-20260912-7a95a5fa | linked-existing | event-recess-showcase-time-reflected-on-water | already linked to catalog event |
 | candidate-ithra-events-1-2-3-lets-rhyme-20260912-4d37515a | linked-existing | event-1-2-3-lets-rhyme | already linked to catalog event |
 | candidate-ithra-events-unbox-your-story-20260912-5085a6f0 | linked-existing | event-unbox-your-story | already linked to catalog event |
 | candidate-ithra-events-nu-power-20260912-653464ac | linked-existing | event-nu-power | already linked to catalog event |
@@ -272,6 +271,7 @@
 | candidate-hayy-jameel-events-hayy-cinema-othman-2022-20260920-ec608ec2 | linked-existing | event-hayy-cinema-othman-2022 | already linked to catalog event |
 | candidate-tuwaiq-academy-bootcamps-معسكر-علم-البيانات-والذكاء-الاصطناعي-20260920-3a71a485 | linked-existing | event-معسكر-علم-البيانات-والذكاء-الاصطناعي | already linked to catalog event |
 | candidate-tuwaiq-academy-bootcamps-معسكر-الجرائم-السيبرانية-والتحقيق-الجنائي-الرقمي-المتقدم-20260920-6e2c36f8 | linked-existing | event-معسكر-الجرائم-السيبرانية-والتحقيق-الجنائي-الرقمي-المتقدم | already linked to catalog event |
+| candidate-hayy-jameel-events-hayy-sounds-listening-stations-part-of-the-exhibition-red-wind-coral-wor-20260920-c9c76984 | linked-existing | event-hayy-sounds-listening-stations-part-of-the-exhibition-red-wind-coral-wor | already linked to catalog event |
 | candidate-tuwaiq-academy-bootcamps-معسكر-هندسة-الحوسبة-السحابية-المتقدمة-باستخدام-google-cloud-20260920-c1ed5d59 | linked-existing | event-معسكر-هندسة-الحوسبة-السحابية-المتقدمة-باستخدام-google-cloud | already linked to catalog event |
 | candidate-tuwaiq-academy-bootcamps-معسكر-قيادة-التحول-بالذكاء-الاصطناعي-20260921-d4b1787c | linked-existing | event-معسكر-قيادة-التحول-بالذكاء-الاصطناعي | already linked to catalog event |
 | candidate-saudi-water-authority-events-saudi-national-day-20260923-df5b5c2a | linked-existing | event-saudi-national-day | already linked to catalog event |
@@ -279,6 +279,7 @@
 | candidate-dhahran-expo-calendar-music-concerts-national-day-20260923-18d15b29 | linked-existing | event-music-concerts-national-day | already linked to catalog event |
 | candidate-hayy-jameel-events-hayy-makers-jeddahs-historic-houses-in-paper-with-norah-bahaj-20260923-641e0bae | linked-existing | event-hayy-makers-jeddahs-historic-houses-in-paper-with-norah-bahaj | already linked to catalog event |
 | candidate-dhahran-expo-calendar-the-egyptian-products-exhibition-20260924-18d15b29 | linked-existing | event-the-egyptian-products-exhibition | already linked to catalog event |
+| candidate-hayy-jameel-events-hayy-sounds-listening-session-rotations-of-bismillah-with-atiyyah-khan-a-20260924-073d2543 | linked-existing | event-hayy-sounds-listening-session-rotations-of-bismillah-with-atiyyah-khan-a | already linked to catalog event |
 | candidate-dhahran-expo-calendar-wadaef-exhibition-20260927-18d15b29 | linked-existing | event-wadaef-exhibition | already linked to catalog event |
 | candidate-dhahran-expo-calendar-rotating-equipment-event-20260927-18d15b29 | linked-existing | event-rotating-equipment-event | already linked to catalog event |
 | candidate-riyadh-city-events-the-saudi-food-show-20260927-368d6055 | linked-existing | event-the-saudi-food-show | already linked to catalog event |
