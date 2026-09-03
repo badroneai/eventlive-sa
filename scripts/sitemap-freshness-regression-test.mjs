@@ -19,6 +19,7 @@ import assert from 'node:assert/strict';
 import fs from 'node:fs';
 import path from 'node:path';
 import { reconcileSeoPageState, reconcileStaticPageState } from './seo-discovery-utils.mjs';
+import { maskFreshnessClaims } from './freshness-claim-utils.mjs';
 
 const root = process.cwd();
 
@@ -84,8 +85,9 @@ assert.deepEqual(thirdStatic.changedPaths, ['guides.html'], 'only the changed pa
 // value. This is asserted on the source because it is the one way this mechanism
 // fails silently — it would still run, and still restamp everything, forever.
 const generator = fs.readFileSync(path.join(root, 'scripts', 'generate-site.mjs'), 'utf8');
-const maskFn = generator.slice(generator.indexOf('function maskFreshnessClaims'), generator.indexOf('function applyFreshnessClaims'));
-const applyFn = generator.slice(generator.indexOf('function applyFreshnessClaims'), generator.indexOf('function stampStaticPageFreshness'));
+const claimUtils = fs.readFileSync(path.join(root, 'scripts', 'freshness-claim-utils.mjs'), 'utf8');
+const maskFn = claimUtils.slice(claimUtils.indexOf('export function maskFreshnessClaims'), claimUtils.indexOf('export function applyFreshnessClaims'));
+const applyFn = claimUtils.slice(claimUtils.indexOf('export function applyFreshnessClaims'));
 for (const group of ['FRESHNESS_CLAIM_PATTERNS', 'FRESHNESS_DISPLAY_PATTERNS']) {
   assert.ok(applyFn.includes(group), `${group} must be rewritten with the reconciled date`);
   assert.ok(maskFn.includes(group), `${group} is rewritten by applyFreshnessClaims but not masked before hashing — the fingerprint would depend on its own output`);
@@ -101,6 +103,95 @@ assert.match(
   /static_pages:\s*carriedStaticPages/,
   'prepareSeoDiscovery must carry static_pages through when it writes the state file'
 );
+// ...and must read it from the FILE. previousState is deliberately empty under
+// EVENTLIVE_FORCE_SEO_REFRESH, so carrying THAT through wiped the output
+// fingerprints along with the record fingerprints. Measured before the fix: a
+// forced refresh restamped all 1,699 pages. The two maps answer different
+// questions and a force refresh has no business discarding the second.
+assert.match(
+  prepare,
+  /carriedStaticPages[\s\S]{0,400}JSON\.parse\(fs\.readFileSync\(statePath/,
+  'static_pages must be carried from the state file on disk, not from the (possibly emptied) previousState'
+);
+
+// The pass must cover EVERY page in the sitemap, event pages included. Their
+// record fingerprint cannot answer "did this page's output change", and
+// run-smart-build discards those fingerprints on a template change — which is
+// almost every deploy — so all 3,188 event URLs shipped one identical <lastmod>.
+const stamp = generator.slice(generator.indexOf('function stampPageFreshness'), generator.indexOf('function writeHtmlChangeManifest'));
+assert.ok(stamp.length > 500, 'stampPageFreshness must exist — it is what makes every <lastmod> on this site true');
+assert.doesNotMatch(
+  stamp,
+  /startsWith\('events\/'\)/,
+  'event pages must not be excluded from output-based freshness'
+);
+assert.match(stamp, /startsWith\('en\/'\)/, 'English pages inherit their date from the Arabic node the localiser clones');
+
+// ---------- behavioural: every claim shape must be neutralised by masking ----------
+// The source-level check above catches an ASYMMETRIC edit — a claim rewritten but
+// not masked. It cannot catch a SYMMETRIC one: delete a pattern from both lists and
+// that check still passes, while the page keeps an unmasked timestamp, its
+// fingerprint moves on every forced refresh, and every page is restamped forever.
+// That hole was real: the event pages write «آخر تحديث» as a sentence, the
+// search-intent pages as a labelled signal, and only the second shape was covered.
+//
+// Nor can it be caught by scanning a normal build's output, because most of these
+// claims carry a STABLE date there — they only turn into the build instant on a
+// forced refresh, which is what runs on almost every deploy.
+//
+// So the property is asserted directly and independently of any build mode: change
+// the value inside a claim, and the masked form of the page must not change. The
+// list below is deliberately a second, independent enumeration — a test that
+// imports the list it is checking cannot detect a deletion from it.
+const CLAIM_SHAPES = [
+  { label: 'og:updated_time meta', pattern: /(<meta property="og:updated_time" content=")([^"]*)(")/ },
+  { label: 'JSON-LD dateModified', pattern: /("dateModified":")([^"]*)(")/ },
+  { label: 'search-intent «آخر تحديث» signal', pattern: /(<span>آخر تحديث<\/span><b>)([^<]*)(<\/b>)/ },
+  { label: 'event-page «آخر تحديث» sentence', pattern: /(آخر تحديث: )([^<]*)(<)/ },
+  { label: 'footer «آخر بناء» stamp', pattern: /(آخر بناء: )([^<]*)(<)/ },
+  { label: 'home «آخر مزامنة» stamp', pattern: /(آخر مزامنة: )([^<]*)(<)/ }
+];
+
+const distDir = path.join(root, 'dist');
+if (fs.existsSync(path.join(distDir, 'sitemap.xml'))) {
+  const pages = [];
+  for (const match of fs.readFileSync(path.join(distDir, 'sitemap.xml'), 'utf8').matchAll(/<loc>([^<]+)<\/loc>/g)) {
+    const relative = decodeURIComponent(match[1].replace('https://eventme.live/', '')).normalize('NFC') || 'index.html';
+    if (relative.startsWith('en/')) continue;
+    const file = path.join(distDir, relative);
+    if (fs.existsSync(file)) pages.push(file);
+  }
+  // Non-event pages first: the sitemap is sorted, so `events/` fills the front and
+  // an arbitrary head-slice missed the search-intent pages entirely — the gate then
+  // reported their claim shape as "gone from the site" when it was simply unread.
+  pages.sort((left, right) => Number(left.includes(`${path.sep}events${path.sep}`)) - Number(right.includes(`${path.sep}events${path.sep}`)));
+  pages.length = Math.min(pages.length, 400);
+  assert.ok(pages.length > 50, 'expected a built site to check the freshness claims against');
+
+  const unmasked = [];
+  const missing = [];
+  for (const { label, pattern } of CLAIM_SHAPES) {
+    const carrier = pages.find((file) => pattern.test(fs.readFileSync(file, 'utf8')));
+    if (!carrier) { missing.push(label); continue; }
+    const html = fs.readFileSync(carrier, 'utf8');
+    const altered = html.replace(pattern, '$1SENTINEL-VALUE$3');
+    assert.notEqual(altered, html, `${label}: the sentinel substitution did nothing, so this shape proves nothing`);
+    if (maskFreshnessClaims(altered) !== maskFreshnessClaims(html)) {
+      unmasked.push(`${label} (e.g. ${path.relative(distDir, carrier)})`);
+    }
+  }
+
+  assert.deepEqual(
+    unmasked,
+    [],
+    `these freshness claims survive masking, so the page fingerprint depends on the timestamp the build writes into it:\n  ${unmasked.join('\n  ')}`
+  );
+  assert.deepEqual(
+    missing,
+    [],
+    `these claim shapes no longer appear anywhere in the built site — either the markup changed and the masking is now aimed at nothing, or the list is stale:\n  ${missing.join('\n  ')}`
+  );
+}
 
 // ---------- 3. no test may write the production state ----------
 // Five regression tests spawn a real build with EVENTLIVE_FORCE_SEO_REFRESH=true

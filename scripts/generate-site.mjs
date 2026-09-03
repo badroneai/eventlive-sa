@@ -46,6 +46,7 @@ import { OWNER_ONLY_PAGES, ownerOnlyLinkRegex } from './owner-only-pages.mjs';
 import { NOINDEX_PUBLIC_PAGES } from './noindex-public-pages.mjs';
 import { riyadhDateKey } from './riyadh-date-utils.mjs';
 import { buildIndexNowDelta, mergeIndexNowBatchUrls, reconcileSeoPageState, reconcileStaticPageState } from './seo-discovery-utils.mjs';
+import { applyFreshnessClaims, maskFreshnessClaims } from './freshness-claim-utils.mjs';
 import { coordinatesQuery, resolveVenueLocation } from './venue-location-utils.mjs';
 
 const root = process.cwd();
@@ -413,13 +414,27 @@ function prepareSeoDiscovery(events) {
   // checkout — the cache directory is created further down, too late for this.
   fs.mkdirSync(path.dirname(statePath), { recursive: true });
   // Carry static_pages through. This pass owns `pages` (event records) and runs
-  // early; stampStaticPageFreshness owns `static_pages` and runs at the very end,
+  // early; stampPageFreshness owns `static_pages` and runs at the very end,
   // after the decoration pass. Writing reconciled.state verbatim here wiped the
   // static map on every build, so every static page looked new to the pass that
   // was supposed to prove it was not.
-  const carriedStaticPages = previousState?.static_pages && typeof previousState.static_pages === 'object'
-    ? previousState.static_pages
-    : {};
+  // Read from the FILE, not from previousState: under EVENTLIVE_FORCE_SEO_REFRESH
+  // previousState is deliberately empty, and carrying that emptiness through wiped
+  // the output fingerprints too. The two maps answer different questions —
+  // `pages` is "did the event RECORD change" (what to re-render, what to send to
+  // IndexNow), `static_pages` is "did the page's OUTPUT change" (what to claim as
+  // its modification date) — and a force refresh has no business discarding the
+  // second. Measured before this line was fixed: a forced refresh restamped all
+  // 1,699 pages, which is exactly the false claim this mechanism exists to end.
+  let carriedStaticPages = {};
+  try {
+    if (fs.existsSync(statePath)) {
+      const onDisk = JSON.parse(fs.readFileSync(statePath, 'utf8'));
+      if (onDisk?.static_pages && typeof onDisk.static_pages === 'object') carriedStaticPages = onDisk.static_pages;
+    }
+  } catch {
+    carriedStaticPages = {};
+  }
   fs.writeFileSync(statePath, `${JSON.stringify({ ...reconciled.state, static_pages: carriedStaticPages }, null, 2)}\n`, 'utf8');
 
   const currentUrls = buildIndexNowDelta({
@@ -507,45 +522,7 @@ function snapshotArabicHtmlHashes() {
 // re-render everything, and discarding these hashes would destroy the only
 // evidence of which pages the re-render actually changed. A template change that
 // alters a page's output moves its date through the hash comparison by itself.
-const FRESHNESS_CLAIM_PATTERNS = [
-  /(<meta property="og:updated_time" content=")([^"]*)(")/g,
-  /("dateModified":")([^"]*)(")/g
-];
-
-// A fourth claim, and the only one a human reads: the search-intent pages print
-// «آخر تحديث» with the build instant. Unlike «آخر بناء» / «آخر مزامنة», this one
-// says the PAGE was updated, so it is corrected rather than merely masked — it
-// gets the same honest date as the other three, formatted for display.
-const FRESHNESS_DISPLAY_PATTERNS = [
-  /(<span>آخر تحديث<\/span><b>)([^<]*)(<\/b>)/g
-];
-
-// Masked for fingerprinting, never rewritten: «آخر بناء» and «آخر مزامنة» are
-// statements about the BUILD and the COLLECTION RUN, both true every time, not
-// claims about the page's content. They stay visible and keep changing — they
-// just must not make an otherwise-identical page look modified. Between two
-// builds a minute apart these two stamps were the ONLY difference on 14 pages.
-const BUILD_STAMP_PATTERNS = [
-  /(آخر بناء: )([^<]*)/g,
-  /(آخر مزامنة: )([^<]*)/g
-];
-
-function maskFreshnessClaims(html = '') {
-  return [...FRESHNESS_CLAIM_PATTERNS, ...FRESHNESS_DISPLAY_PATTERNS]
-    .reduce((value, pattern) => value.replace(pattern, '$1<masked>$3'), html)
-    .replace(BUILD_STAMP_PATTERNS[0], '$1<masked>')
-    .replace(BUILD_STAMP_PATTERNS[1], '$1<masked>');
-}
-
-function applyFreshnessClaims(html = '', isoDate = buildAt) {
-  const display = escapeHtml(formatDate(isoDate));
-  return FRESHNESS_DISPLAY_PATTERNS.reduce(
-    (value, pattern) => value.replace(pattern, `$1${display}$3`),
-    FRESHNESS_CLAIM_PATTERNS.reduce((value, pattern) => value.replace(pattern, `$1${isoDate}$3`), html)
-  );
-}
-
-function stampStaticPageFreshness() {
+function stampPageFreshness() {
   const sitemapPath = path.join(distDir, 'sitemap.xml');
   if (!fs.existsSync(sitemapPath)) return { stamped: 0, unchanged: 0 };
 
@@ -570,7 +547,17 @@ function stampStaticPageFreshness() {
   const hashes = new Map();
   for (const match of xml.matchAll(/<loc>([^<]+)<\/loc>/g)) {
     const relative = relativeForLoc(match[1]);
-    if (relative.startsWith('events/') || relative.startsWith('en/')) continue;
+    // Event pages are included too. Their DATA fingerprint decides what gets
+    // re-rendered and what IndexNow is told, which is right for those jobs, but it
+    // cannot answer "did this page's output change" — and a template change makes
+    // run-smart-build discard the data fingerprints entirely, so every event page
+    // was restamped on almost every deploy. Measured on the live sitemap the day
+    // this was written: 3,188 event URLs carrying one single <lastmod>. The output
+    // hash answers the question directly and needs no build-mode signal at all.
+    //
+    // en/ is excluded because the localiser clones each Arabic <url> node, lastmod
+    // included, and generates the English page from the Arabic one.
+    if (relative.startsWith('en/')) continue;
     const filePath = path.join(distDir, relative);
     if (!fs.existsSync(filePath)) continue;
     const html = fs.readFileSync(filePath, 'utf8');
@@ -583,7 +570,7 @@ function stampStaticPageFreshness() {
   for (const [relative, { filePath, html }] of sources) {
     const row = reconciled.staticPages[relative];
     if (!row) continue;
-    const next = applyFreshnessClaims(html, row.modified_at);
+    const next = applyFreshnessClaims(html, row.modified_at, escapeHtml(formatDate(row.modified_at)));
     if (next !== html) fs.writeFileSync(filePath, next, 'utf8');
   }
 
@@ -8611,7 +8598,7 @@ const patched = walkFiles(distDir)
   })
   .filter(patchFile);
 hideOwnerOnlyManifestShortcuts();
-const staticLastmod = stampStaticPageFreshness();
+const pageFreshness = stampPageFreshness();
 const changeManifest = writeHtmlChangeManifest(initialArabicHtmlHashes, {
   event_details_rendered: eventDetailsToRender.length,
   event_details_reused: events.length - eventDetailsToRender.length,
@@ -8623,7 +8610,7 @@ const report = [
   '- Mode: data-driven catalog + static brand refresh',
   `- Public domain: ${platformDomain}`,
   `- Events generated: ${events.length}`,
-  `- Static pages restamped in sitemap: ${staticLastmod.stamped} (unchanged, date preserved: ${staticLastmod.unchanged})`,
+  `- Pages restamped in sitemap: ${pageFreshness.stamped} (unchanged, date preserved: ${pageFreshness.unchanged})`,
   `- Draft/sample records excluded: ${events.excludedDraftLikeRecords || 0}`,
   `- Event detail pages: ${events.length}`,
   `- Build strategy: ${incrementalBuild ? 'incremental' : 'full'}`,
