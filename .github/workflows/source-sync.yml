@@ -248,6 +248,11 @@ jobs:
           # has to be earned, and this holds the build rule and the client rule to
           # the same line. Fixture + catalog only, <1s.
           npm run test:live-claim-parity
+          # 2026-09-03: 1,160 of 1,602 event pages (72%) described an event that had
+          # already finished and NOT ONE said so in its <title> — 34,600 Google
+          # impressions returned 444 clicks. A snippet may not claim a state the page
+          # is not in. Reads dist/ only, <2s.
+          npm run test:snippet-honesty
           npm run test:mobile-browsing
           npm run test:i18n-contract
           npm run test:i18n-site
