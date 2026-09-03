@@ -45,7 +45,7 @@ import { isLikelyImageAssetUrl, isRejectedImageAssetUrl, isSourcePageLikeImageUr
 import { OWNER_ONLY_PAGES, ownerOnlyLinkRegex } from './owner-only-pages.mjs';
 import { NOINDEX_PUBLIC_PAGES } from './noindex-public-pages.mjs';
 import { riyadhDateKey } from './riyadh-date-utils.mjs';
-import { buildIndexNowDelta, mergeIndexNowBatchUrls, reconcileSeoPageState } from './seo-discovery-utils.mjs';
+import { buildIndexNowDelta, mergeIndexNowBatchUrls, reconcileSeoPageState, reconcileStaticPageState } from './seo-discovery-utils.mjs';
 import { coordinatesQuery, resolveVenueLocation } from './venue-location-utils.mjs';
 
 const root = process.cwd();
@@ -383,6 +383,15 @@ function writeJson(relativePath, value) {
   writeText(path.join(distDir, relativePath), `${JSON.stringify(value, null, 2)}\n`);
 }
 
+// Both stamping passes must agree on where the state lives, including the
+// EVENTLIVE_SEO_STATE_PATH override the regression tests rely on to avoid
+// rewriting the corpus they measure.
+function seoStatePath() {
+  return process.env.EVENTLIVE_SEO_STATE_PATH
+    ? path.resolve(root, process.env.EVENTLIVE_SEO_STATE_PATH)
+    : path.join(root, 'data', 'seo_page_state.json');
+}
+
 function prepareSeoDiscovery(events) {
   // The canonical state — one row per page, {fingerprint, modified_at} — is what
   // gives every sitemap URL its <lastmod>. It is overridable so a REGRESSION TEST
@@ -395,9 +404,7 @@ function prepareSeoDiscovery(events) {
   // Force-refresh discards the previous state and stamps every row with that
   // instant, and the result was then committed as the new truth. A test may not
   // rewrite the state of the corpus it is measuring.
-  const statePath = process.env.EVENTLIVE_SEO_STATE_PATH
-    ? path.resolve(root, process.env.EVENTLIVE_SEO_STATE_PATH)
-    : path.join(root, 'data', 'seo_page_state.json');
+  const statePath = seoStatePath();
   const previousState = !forceSeoRefresh && fs.existsSync(statePath)
     ? JSON.parse(fs.readFileSync(statePath, 'utf8'))
     : { version: 1, pages: {} };
@@ -405,7 +412,15 @@ function prepareSeoDiscovery(events) {
   // An overridden path may point somewhere that does not exist yet on a fresh
   // checkout — the cache directory is created further down, too late for this.
   fs.mkdirSync(path.dirname(statePath), { recursive: true });
-  fs.writeFileSync(statePath, `${JSON.stringify(reconciled.state, null, 2)}\n`, 'utf8');
+  // Carry static_pages through. This pass owns `pages` (event records) and runs
+  // early; stampStaticPageFreshness owns `static_pages` and runs at the very end,
+  // after the decoration pass. Writing reconciled.state verbatim here wiped the
+  // static map on every build, so every static page looked new to the pass that
+  // was supposed to prove it was not.
+  const carriedStaticPages = previousState?.static_pages && typeof previousState.static_pages === 'object'
+    ? previousState.static_pages
+    : {};
+  fs.writeFileSync(statePath, `${JSON.stringify({ ...reconciled.state, static_pages: carriedStaticPages }, null, 2)}\n`, 'utf8');
 
   const currentUrls = buildIndexNowDelta({
     changedEvents: reconciled.changedEvents,
@@ -463,8 +478,131 @@ function snapshotArabicHtmlHashes() {
   return rows;
 }
 
-function writeHtmlChangeManifest(before, metadata = {}) {
-  const after = snapshotArabicHtmlHashes();
+// Every static page carried THREE claims about its own freshness, and all three
+// said "modified at this build instant":
+//   1. <meta property="og:updated_time">
+//   2. JSON-LD "dateModified" — the one Google actually reads
+//   3. its <lastmod> row in sitemap.xml
+// Measured by building twice with no input change: those timestamps were the
+// ONLY difference between the two renderings of every static page. The site was
+// telling crawlers that 105 pages change several times a day, every day, when
+// nothing about them had changed at all. <lastmod> is a claim Google acts on
+// only "if it's consistently and verifiably accurate"
+// (developers.google.com/search/docs/crawling-indexing/sitemaps/build-sitemap);
+// a page that cries freshness daily teaches a crawler to discount the field —
+// including on the pages that genuinely did change.
+//
+// Event pages are already honest: they carry event.seo_modified_at, stamped from
+// a fingerprint of the event record. This pass gives every OTHER page the same
+// treatment, fingerprinting what it actually has: its own rendered output.
+//
+// The three timestamps are masked out before hashing. Without that the hash
+// would be self-referential — the field feeds the hash, the hash sets the field,
+// and nothing ever converges.
+//
+// Runs after the decoration pass (that pass is what makes a page final) and
+// before the change manifest, so the manifest sees the true final bytes.
+//
+// Deliberately NOT reset by EVENTLIVE_FORCE_SEO_REFRESH: force-refresh exists to
+// re-render everything, and discarding these hashes would destroy the only
+// evidence of which pages the re-render actually changed. A template change that
+// alters a page's output moves its date through the hash comparison by itself.
+const FRESHNESS_CLAIM_PATTERNS = [
+  /(<meta property="og:updated_time" content=")([^"]*)(")/g,
+  /("dateModified":")([^"]*)(")/g
+];
+
+// A fourth claim, and the only one a human reads: the search-intent pages print
+// «آخر تحديث» with the build instant. Unlike «آخر بناء» / «آخر مزامنة», this one
+// says the PAGE was updated, so it is corrected rather than merely masked — it
+// gets the same honest date as the other three, formatted for display.
+const FRESHNESS_DISPLAY_PATTERNS = [
+  /(<span>آخر تحديث<\/span><b>)([^<]*)(<\/b>)/g
+];
+
+// Masked for fingerprinting, never rewritten: «آخر بناء» and «آخر مزامنة» are
+// statements about the BUILD and the COLLECTION RUN, both true every time, not
+// claims about the page's content. They stay visible and keep changing — they
+// just must not make an otherwise-identical page look modified. Between two
+// builds a minute apart these two stamps were the ONLY difference on 14 pages.
+const BUILD_STAMP_PATTERNS = [
+  /(آخر بناء: )([^<]*)/g,
+  /(آخر مزامنة: )([^<]*)/g
+];
+
+function maskFreshnessClaims(html = '') {
+  return [...FRESHNESS_CLAIM_PATTERNS, ...FRESHNESS_DISPLAY_PATTERNS]
+    .reduce((value, pattern) => value.replace(pattern, '$1<masked>$3'), html)
+    .replace(BUILD_STAMP_PATTERNS[0], '$1<masked>')
+    .replace(BUILD_STAMP_PATTERNS[1], '$1<masked>');
+}
+
+function applyFreshnessClaims(html = '', isoDate = buildAt) {
+  const display = escapeHtml(formatDate(isoDate));
+  return FRESHNESS_DISPLAY_PATTERNS.reduce(
+    (value, pattern) => value.replace(pattern, `$1${display}$3`),
+    FRESHNESS_CLAIM_PATTERNS.reduce((value, pattern) => value.replace(pattern, `$1${isoDate}$3`), html)
+  );
+}
+
+function stampStaticPageFreshness() {
+  const sitemapPath = path.join(distDir, 'sitemap.xml');
+  if (!fs.existsSync(sitemapPath)) return { stamped: 0, unchanged: 0 };
+
+  const statePath = seoStatePath();
+  let state = { version: 1, pages: {} };
+  try {
+    if (fs.existsSync(statePath)) state = JSON.parse(fs.readFileSync(statePath, 'utf8'));
+  } catch {
+    state = { version: 1, pages: {} };
+  }
+
+  const xml = fs.readFileSync(sitemapPath, 'utf8');
+  // The sitemap decides eligibility, so this cannot drift from what writeSitemap
+  // decided: owner-only pages, redirect stubs, alias pages and noindex pages are
+  // already absent from it.
+  const relativeForLoc = (loc) => {
+    const clean = decodeURIComponent(String(loc).replace(`${siteUrl}/`, '')).normalize('NFC');
+    return clean === '' ? 'index.html' : clean;
+  };
+
+  const sources = new Map();
+  const hashes = new Map();
+  for (const match of xml.matchAll(/<loc>([^<]+)<\/loc>/g)) {
+    const relative = relativeForLoc(match[1]);
+    if (relative.startsWith('events/') || relative.startsWith('en/')) continue;
+    const filePath = path.join(distDir, relative);
+    if (!fs.existsSync(filePath)) continue;
+    const html = fs.readFileSync(filePath, 'utf8');
+    sources.set(relative, { filePath, html });
+    hashes.set(relative, crypto.createHash('sha256').update(maskFreshnessClaims(html)).digest('hex'));
+  }
+
+  const reconciled = reconcileStaticPageState(hashes, state, buildAt);
+
+  for (const [relative, { filePath, html }] of sources) {
+    const row = reconciled.staticPages[relative];
+    if (!row) continue;
+    const next = applyFreshnessClaims(html, row.modified_at);
+    if (next !== html) fs.writeFileSync(filePath, next, 'utf8');
+  }
+
+  const nextXml = xml.replace(
+    /<loc>([^<]+)<\/loc><lastmod>([^<]+)<\/lastmod>/g,
+    (whole, loc) => {
+      const row = reconciled.staticPages[relativeForLoc(loc)];
+      return row ? `<loc>${loc}</loc><lastmod>${row.modified_at.slice(0, 10)}</lastmod>` : whole;
+    }
+  );
+  if (nextXml !== xml) fs.writeFileSync(sitemapPath, nextXml, 'utf8');
+
+  fs.mkdirSync(path.dirname(statePath), { recursive: true });
+  fs.writeFileSync(statePath, `${JSON.stringify({ ...state, static_pages: reconciled.staticPages }, null, 2)}\n`, 'utf8');
+
+  return { stamped: reconciled.changedPaths.length, unchanged: hashes.size - reconciled.changedPaths.length };
+}
+
+function writeHtmlChangeManifest(before, metadata = {}, after = snapshotArabicHtmlHashes()) {
   const changed = [...after]
     .filter(([relativePath, hash]) => before.get(relativePath) !== hash)
     .map(([relativePath]) => relativePath)
@@ -6842,7 +6980,10 @@ function enhanceHomeRuntime(html, events) {
     }
     return block.replace(/(<div class="card-foot">)/, `${liveTime}\n          $1`);
   });
-  next = next.replace(/<script id="eventlive-runtime-clock">[\s\S]*?<\/script>/g, '');
+  // \s* for the same reason as the strips in decorateBrandHtml: the append below
+  // ends with \n</body>, so a strip that stops at </script> leaves that newline
+  // behind and the page gains one blank line per build, forever.
+  next = next.replace(/<script id="eventlive-runtime-clock">[\s\S]*?<\/script>\s*/g, '');
   return next.replace(/<\/body>/i, `<script id="eventlive-runtime-clock">${liveRuntimeScript().replace(/^<script>|<\/script>$/g, '')}</script>\n</body>`);
 }
 
@@ -7173,7 +7314,11 @@ function patchEventsBrowsePage(events) {
   next = next
     .replace(/\n    function applyInitialSearchQuery\(\) \{[\s\S]*?\n    \}\n(?=\s*loadEvents\(\)\.then)/, '\n')
     .replace(/setupFilters\(\);\n\s*applyInitialSearchQuery\(\);/g, 'setupFilters();')
-    .replace(/\n    loadEvents\(\)\.then\(\(\) => \{/, `${initialSearchBlock}\n    loadEvents().then(() => {`)
+    // \n\s* rather than \n: the strip above leaves its own newline behind, and this
+    // re-insert added another, so events.html gained one blank line per build and
+    // the gap here had reached ~250 lines. Swallowing the whitespace makes the
+    // pair idempotent and collapses what already accumulated.
+    .replace(/\n\s*loadEvents\(\)\.then\(\(\) => \{/, `${initialSearchBlock}\n    loadEvents().then(() => {`)
     .replace(/setupFilters\(\);/, 'setupFilters();\n      applyInitialSearchQuery();');
 
   next = enhanceHomeRuntime(next, events);
@@ -7559,7 +7704,7 @@ body[data-screen-mode="event-screen"] .screen .qr-panel { display:none !importan
   let next = html
     .replace(/const fallbackToday = \{[\s\S]*?\};\n\s*const controls =/, `const fallbackToday = ${scriptValue(screenFallback)};\n    const controls =`)
     .replace(/"dateModified":"[^"]+"/g, `"dateModified":"${buildAt}"`)
-    .replace(/<style id="eventlive-screen-fit">[\s\S]*?<\/style>/g, '')
+    .replace(/<style id="eventlive-screen-fit">[\s\S]*?<\/style>\s*/g, '')
     .replace(/<\/head>/i, `  ${screenFitCss}\n</head>`)
     .replace(/\n\s*const screenParams = new URLSearchParams\(window\.location\.search\);[\s\S]*?\n\s*function renderQueueItem\(event\) \{/, '\n    function renderQueueItem(event) {')
     .replace(/\n\s*document\.body\.dataset\.screenMode = data\.mode \|\| 'platform';[\s\S]*?if \(screenQrPanel\) screenQrPanel\.hidden = data\.mode === 'event-screen';/g, '')
@@ -8247,8 +8392,14 @@ function decorateBrandHtml(html, filePath) {
   next = injectGoogleSiteVerification(next, filePath);
   next = normalizePublicHeadIcons(next, filePath);
   next = normalizeInternalHomeLinks(next);
-  next = next.replace(/<style id="eventlive-brand-pulse">[\s\S]*?<\/style>/g, '');
-  next = next.replace(/<script defer(?:="")? data-domain="eventme\.live" src="https:\/\/plausible\.io\/js\/script\.tagged-events\.js"><\/script>/g, '');
+  // Each of the three strips below re-appends its block further down. Without
+  // the trailing \s* they left the block's own newline behind, so dist/events.html
+  // grew exactly three blank lines per build — measured 2984 -> 2987 -> 2990, and
+  // the gap in its <head> had already reached 104 lines. Same defect family as the
+  // analytics comment that reached 4 copies, and as the Plausible tag that reached
+  // 13: a strip that does not match everything the append wrote.
+  next = next.replace(/<style id="eventlive-brand-pulse">[\s\S]*?<\/style>\s*/g, '');
+  next = next.replace(/<script defer(?:="")? data-domain="eventme\.live" src="https:\/\/plausible\.io\/js\/script\.tagged-events\.js"><\/script>\s*/g, '');
   // Provider-agnostic on purpose. The previous form spelled the vendor out
   // ("self-hosted Umami") while analyticsHeadSnippet emits ANALYTICS.provider
   // verbatim ("umami", lowercase). One letter apart, so the strip never matched
@@ -8263,7 +8414,18 @@ function decorateBrandHtml(html, filePath) {
   next = next.replace(/<script async(?:="")? src="https:\/\/plausible\.io\/js\/pa-[^"]+\.js"><\/script>\s*/g, '');
   next = next.replace(/<script>\s*window\.plausible=window\.plausible\|\|function\(\)\{[\s\S]*?plausible\.init\(\)\s*<\/script>\s*/g, '');
   next = next.replace(/<script defer(?:="")? src="https:\/\/umami-ten-orpin\.vercel\.app\/script\.js"[^>]*><\/script>\s*/g, '');
-  next = next.replace(/<script id="eventlive-analytics-runtime">[\s\S]*?<\/script>/g, '');
+  next = next.replace(/<script id="eventlive-analytics-runtime">[\s\S]*?<\/script>\s*/g, '');
+  // Heals the runs already accumulated in the tracked dist/*.html files — index.html
+  // had reached a 633-line blank gap, events.html 580. The strips above no longer
+  // grow them, but nothing else would ever collapse what is already committed, and
+  // scripts/singleton-injection-regression-test.mjs bans the class outright, which
+  // it can only do once the existing runs are gone.
+  //
+  // Skipped entirely on the two pages carrying <pre>/<textarea>, where a blank line
+  // is content rather than formatting.
+  if (!/<(?:pre|textarea)\b/i.test(next)) {
+    next = next.replace(/\n[ \t]*(?:\n[ \t]*)+/g, '\n');
+  }
   next = next.replace(/<\/head>/i, `  ${brandCss}\n</head>`);
   if (!isOwnerOnlyPage(filePath)) {
     next = next.replace(/<\/head>/i, `  ${analyticsHeadSnippet()}\n</head>`);
@@ -8449,6 +8611,7 @@ const patched = walkFiles(distDir)
   })
   .filter(patchFile);
 hideOwnerOnlyManifestShortcuts();
+const staticLastmod = stampStaticPageFreshness();
 const changeManifest = writeHtmlChangeManifest(initialArabicHtmlHashes, {
   event_details_rendered: eventDetailsToRender.length,
   event_details_reused: events.length - eventDetailsToRender.length,
@@ -8460,6 +8623,7 @@ const report = [
   '- Mode: data-driven catalog + static brand refresh',
   `- Public domain: ${platformDomain}`,
   `- Events generated: ${events.length}`,
+  `- Static pages restamped in sitemap: ${staticLastmod.stamped} (unchanged, date preserved: ${staticLastmod.unchanged})`,
   `- Draft/sample records excluded: ${events.excludedDraftLikeRecords || 0}`,
   `- Event detail pages: ${events.length}`,
   `- Build strategy: ${incrementalBuild ? 'incremental' : 'full'}`,

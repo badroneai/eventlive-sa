@@ -18,7 +18,7 @@
 import assert from 'node:assert/strict';
 import fs from 'node:fs';
 import path from 'node:path';
-import { reconcileSeoPageState } from './seo-discovery-utils.mjs';
+import { reconcileSeoPageState, reconcileStaticPageState } from './seo-discovery-utils.mjs';
 
 const root = process.cwd();
 
@@ -46,25 +46,61 @@ const third = reconcileSeoPageState(edited, second.state, now);
 assert.equal(third.state.pages['event-changed'].modified_at, now, 'a genuinely changed page must take the new date');
 assert.equal(third.state.pages['event-stable'].modified_at, older, 'and its neighbour must be left alone');
 
-// ---------- 2. the open question, recorded rather than forced ----------
-// run-smart-build.mjs deliberately couples `build-template-changed` to a full SEO
-// refresh, and scripts/incremental-build-regression-test.mjs:69 gates that
-// coupling. The reasoning is sound in itself: a template change really does alter
-// the rendered HTML of every page, and Google counts an update to content,
-// structured data or links as significant.
+// ---------- 2. non-event pages, fingerprinted by their rendered output ----------
+// Event pages are fingerprinted from their record. Every OTHER page — the home
+// page, the hubs, the guides, the city, category and search-intent pages — had no
+// record, so writeSitemap fell back to the build instant and declared all 105 of
+// them modified on every build, several times a day, forever.
 //
-// The problem is frequency, not principle. templateInputs includes package.json,
-// package-lock.json and locales/en-SA-static.json, so wiring a gate or bumping a
-// dependency marks the template as changed — which in this repo is close to daily.
-// A "one-time" refresh therefore fires on almost every deploy, and the result is
-// 3,388 sitemap URLs carrying one identical <lastmod>, which is exactly the
-// verifiably-inaccurate case Google says it discounts.
+// It was worse than the sitemap: the build stamped the current instant into FOUR
+// claims on each of those pages — og:updated_time, JSON-LD dateModified, the
+// visible «آخر تحديث» line, and <lastmod>. Built twice with no input change,
+// those timestamps were the ONLY difference between the two renderings.
 //
-// Deliberately NOT changed here. The honest fix is to restamp only pages whose
-// RENDERED OUTPUT actually changed — computable, since the incremental build
-// already caches per-page artifacts — not to sever a coupling that an earlier
-// decision put in on purpose. Recorded so the next person meets the evidence
-// instead of rediscovering it.
+// reconcileStaticPageState fingerprints the rendered HTML with the claims masked
+// out (unmasked, the field feeds the hash and the hash sets the field, and nothing
+// converges). Measured after the fix, over repeated builds with no input change:
+// 104-105 of 105 pages keep their date, against 0 of 105 before.
+const hashesA = new Map([['index.html', 'aaa'], ['guides.html', 'bbb']]);
+const firstStatic = reconcileStaticPageState(hashesA, {}, older);
+assert.equal(firstStatic.staticPages['index.html'].modified_at, older, 'a first sighting takes the build instant');
+
+const secondStatic = reconcileStaticPageState(hashesA, { static_pages: firstStatic.staticPages }, now);
+assert.equal(
+  secondStatic.staticPages['index.html'].modified_at,
+  older,
+  'a page whose rendered output is byte-identical must keep its date'
+);
+assert.deepEqual(secondStatic.changedPaths, [], 'and must not be reported as changed');
+
+const hashesB = new Map([['index.html', 'aaa'], ['guides.html', 'CHANGED']]);
+const thirdStatic = reconcileStaticPageState(hashesB, { static_pages: secondStatic.staticPages }, now);
+assert.equal(thirdStatic.staticPages['guides.html'].modified_at, now, 'a page whose output changed must take the new date');
+assert.equal(thirdStatic.staticPages['index.html'].modified_at, older, 'and its neighbour must be left alone');
+assert.deepEqual(thirdStatic.changedPaths, ['guides.html'], 'only the changed page is reported');
+
+// Every claim the build REWRITES must also be masked before hashing. Miss one and
+// the pass never converges: the value it writes changes the hash that decides the
+// value. This is asserted on the source because it is the one way this mechanism
+// fails silently — it would still run, and still restamp everything, forever.
+const generator = fs.readFileSync(path.join(root, 'scripts', 'generate-site.mjs'), 'utf8');
+const maskFn = generator.slice(generator.indexOf('function maskFreshnessClaims'), generator.indexOf('function applyFreshnessClaims'));
+const applyFn = generator.slice(generator.indexOf('function applyFreshnessClaims'), generator.indexOf('function stampStaticPageFreshness'));
+for (const group of ['FRESHNESS_CLAIM_PATTERNS', 'FRESHNESS_DISPLAY_PATTERNS']) {
+  assert.ok(applyFn.includes(group), `${group} must be rewritten with the reconciled date`);
+  assert.ok(maskFn.includes(group), `${group} is rewritten by applyFreshnessClaims but not masked before hashing — the fingerprint would depend on its own output`);
+}
+
+// The early pass must not wipe the late pass's map. prepareSeoDiscovery writes the
+// state file long before the pages are final; writing its own object verbatim
+// dropped static_pages on every build, so every static page looked new to the pass
+// meant to prove it was not.
+const prepare = generator.slice(generator.indexOf('function prepareSeoDiscovery'), generator.indexOf('function prepareSeoDiscovery') + 3000);
+assert.match(
+  prepare,
+  /static_pages:\s*carriedStaticPages/,
+  'prepareSeoDiscovery must carry static_pages through when it writes the state file'
+);
 
 // ---------- 3. no test may write the production state ----------
 // Five regression tests spawn a real build with EVENTLIVE_FORCE_SEO_REFRESH=true
@@ -84,4 +120,4 @@ assert.deepEqual(
   'these scripts force an SEO refresh without redirecting the state file, so they overwrite data/seo_page_state.json'
 );
 
-console.log('SITEMAP_FRESHNESS_OK unchanged_pages_keep_their_date=yes template_coupling=documented test_isolation=yes');
+console.log('SITEMAP_FRESHNESS_OK unchanged_pages_keep_their_date=yes static_pages=rendered-output-fingerprint test_isolation=yes');
