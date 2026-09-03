@@ -2,6 +2,7 @@ import assert from 'node:assert/strict';
 import fs from 'node:fs';
 import path from 'node:path';
 import { OWNER_ONLY_PAGES } from './owner-only-pages.mjs';
+import { NOINDEX_PUBLIC_PAGES } from './noindex-public-pages.mjs';
 import { isRedirectStubPath } from './published-url-ledger.mjs';
 import { EVENT_ALIAS_PAGES } from './event-canonical-aliases.mjs';
 
@@ -42,6 +43,10 @@ const htmlFiles = walkHtml(distDir)
   .filter((file) => !OWNER_ONLY_PAGES.has(file))
   .filter((file) => !isRedirectStubPath(file))
   .filter((file) => !EVENT_ALIAS_PAGES.has(file.normalize('NFC').replace(/^en\//, '')))
+  // Same contradiction, third source: a page that declares noindex must not be
+  // submitted for indexing. Both surfaces are excluded — the English copy still
+  // exists and stays linked, it is simply not offered to a crawler.
+  .filter((file) => !NOINDEX_PUBLIC_PAGES.has(file.normalize('NFC').replace(/^en\//, '')))
   .sort();
 const sitemap = fs.readFileSync(sitemapPath, 'utf8');
 const urls = [...sitemap.matchAll(/<loc>([^<]+)<\/loc>/g)].map((match) => match[1].normalize('NFC'));
