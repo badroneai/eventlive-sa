@@ -248,6 +248,10 @@ jobs:
           # has to be earned, and this holds the build rule and the client rule to
           # the same line. Fixture + catalog only, <1s.
           npm run test:live-claim-parity
+          # 2026-09-03: every event page linked to ZERO other event pages, leaving
+          # 1,146 of 1,603 (71%) with no inbound internal link at all. Reads dist/
+          # only, <2s.
+          npm run test:internal-linking
           npm run test:mobile-browsing
           npm run test:i18n-contract
           npm run test:i18n-site
