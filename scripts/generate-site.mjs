@@ -2072,6 +2072,12 @@ function eventPublicJson(event = {}, canonical = '', schemaImage = '') {
     trust_tier: event.trust_tier,
     trust_label: event.trust_label,
     verified_at: event.verified_at,
+    // The RECORD date, deliberately, not the page's output date. Since PR #114
+    // <lastmod>, og:updated_time and dateModified all answer "did this page's
+    // rendered output change", which is the crawler's question. A JSON feed is
+    // read by something that wants the other answer — "did this event's
+    // information change" — and that is what this field has always carried.
+    // The two now differ on a template change; that is not drift.
     page_modified_at: event.seo_modified_at,
     verification_method: event.verification_method,
     freshness_hours: event.freshness_hours,
