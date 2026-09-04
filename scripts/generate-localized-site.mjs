@@ -9,6 +9,7 @@ import { renderCityPlacesJsonLd, renderCityPlacesSection } from './city-places-r
 import { PLACE_CATEGORIES } from './place-category-taxonomy.mjs';
 import { CITY_NAME_REGISTRY } from './city-name-registry.mjs';
 import { loadContentTranslations, normalizeContentText } from './content-translation-cache.mjs';
+import { decodeHtmlEntities } from './html-entities.mjs';
 import { OWNER_ONLY_PAGES } from './owner-only-pages.mjs';
 import { NOINDEX_PUBLIC_PAGES } from './noindex-public-pages.mjs';
 import { LEGACY_REDIRECT_PAGES, LEGACY_TOP_LEVEL_REDIRECT_LABELS_EN, legacyRedirectTarget } from './legacy-redirect-pages.mjs';
@@ -1475,6 +1476,77 @@ function englishMeta($, relativePath) {
     const translated = translateMetaText(originalDescription).replace(/\s+/g, ' ').trim();
     if (authored) description = authored;
     else if (translated && !/[\u0600-\u06ff]/.test(translated)) description = translated;
+
+    // The <title> goes through englishSeoTitle, which knows the facet templates;
+    // the visible <h1> was left to the plain dictionary, which holds only the few
+    // phrases someone entered by hand. Measured live 2026-09-04: 37 of the 39
+    // English city pages carried an Arabic <h1> («فعاليات أبها») directly above a
+    // correct English <title> ("Events in Abha | EventLive Saudi Arabia"). Jeddah
+    // and Riyadh were English only because those two phrases happen to be in the
+    // dictionary.
+    //
+    // Pages whose <h1> is already English are left alone, including those two —
+    // their "Jeddah events" phrasing differs from "Events in Jeddah", and
+    // rewriting correct copy for the sake of uniformity is churn, not a fix.
+    const englishTitle = $('title').text().replace(/\s*\|\s*EventLive Saudi Arabia$/u, '').replace(/\s+/g, ' ').trim();
+    if (englishTitle && !/[\u0600-\u06ff]/.test(englishTitle)) {
+      $('h1').each((_, element) => {
+        const node = $(element);
+        const text = node.text().replace(/\s+/g, ' ').trim();
+        if (text && /[\u0600-\u06ff]/.test(text)) node.text(englishTitle);
+      });
+    }
+
+    // The visible lead — the first line under the H1 — is the same sentence as the
+    // meta description without its SEO padding, but it reached the page through
+    // the plain dictionary, which has no entry for a COMPOSED facet sentence
+    // ("<label> in Saudi Arabia, with event time…"). Measured on the live site:
+    // 61 of 62 English city, category and audience pages opened in Arabic and 0
+    // opened in English, while each one's own meta description already carried the
+    // correct English of that exact sentence.
+    //
+    // Two candidate keys, tried in order, because each rescues what the other
+    // cannot:
+    //
+    //   1. the text as rendered. By this point the body dictionary has translated
+    //      the LABEL inside the sentence — «فعاليات Abha القادمة…» — which is what
+    //      lets the facet template capture an English label. translateMetaText
+    //      cannot translate a bare city name, so this is the only key that works
+    //      for the 39 city pages.
+    //   2. the sentence from the Arabic twin. That same pass can also swap one
+    //      word inside authored prose and leave the rest Arabic —
+    //      /en/saudi-events-weekend.html shipped «فعاليات Friday والسبت», which
+    //      matches no key at all. The pristine Arabic still matches its authored
+    //      entry.
+    //
+    // englishSeoDescription is reused rather than reimplemented: it already knows
+    // the facet templates and the authored pages, and it already refuses to emit a
+    // sentence whose label failed to translate, which would put Arabic inside an
+    // English line.
+    const arabicTwinPath = path.join(distDir, relativePath);
+    let arabicLeads = [];
+    if (fs.existsSync(arabicTwinPath)) {
+      arabicLeads = [...fs.readFileSync(arabicTwinPath, 'utf8').matchAll(/class="lead"[^>]*>([^<]*)</g)]
+        .map((match) => decodeHtmlEntities(match[1]).replace(/\s+/g, ' ').trim());
+    }
+    const leadNodes = $('.lead').toArray();
+    // The twin is only consulted when the two surfaces agree on shape; otherwise
+    // the safe move is to change nothing rather than put one page's sentence on
+    // another page.
+    const twinAligned = arabicLeads.length === leadNodes.length;
+    leadNodes.forEach((element, index) => {
+      const node = $(element);
+      const rendered = node.text().replace(/\s+/g, ' ').trim();
+      if (!rendered || !/[\u0600-\u06ff]/.test(rendered)) return;
+      for (const candidate of twinAligned ? [rendered, arabicLeads[index]] : [rendered]) {
+        if (!candidate) continue;
+        const english = englishSeoDescription(candidate, translateMetaText);
+        if (english && !/[\u0600-\u06ff]/.test(english)) {
+          node.text(english);
+          return;
+        }
+      }
+    });
   }
   if (event) {
     // The Arabic title carries "— منتهية <شهر سنة>" for archived events; that
@@ -1531,7 +1603,26 @@ function prepareEnglish(html, relativePath) {
   updateSeo($, relativePath, 'en-SA');
   $('#eventlive-language-runtime').remove();
   $('body').append(languageRuntime('en-SA'));
-  return $.html();
+  return translateSourceAttributionLabels($.html());
+}
+
+// The source-attribution suffix is appended to an event's summary by the Arabic
+// pipeline (see scripts/source-attribution-utils.mjs) and travels with the text
+// wherever that summary is reused. 295 English pages carry the translated
+// "Official source:" — the dictionary owns the phrase — but 10 did not, because on
+// those the label sits INSIDE a mixed node the dictionary pass cannot match: an
+// English summary ending in an Arabic suffix, an <li> that composes the label with
+// a URL, and screen.html's baked today.json payload, which is data rather than
+// markup.
+//
+// Applied to the serialized page rather than to text nodes for exactly that
+// reason: these two labels must not appear on an English page in ANY position,
+// and both are unambiguous — an Arabic phrase with spaces cannot occur inside a
+// URL, an identifier or a class name, so a plain string replacement is safe.
+function translateSourceAttributionLabels(html = '') {
+  return html
+    .replace(/رابط المصدر الرسمي:/g, 'Official source link:')
+    .replace(/المصدر الرسمي:/g, 'Official source:');
 }
 
 function translateCatalog() {
