@@ -16,6 +16,7 @@
 import { spawnSync } from 'node:child_process';
 import fs from 'node:fs';
 import path from 'node:path';
+import { decideAuditOutcome } from './npm-audit-outcome.mjs';
 
 const reportPath = path.join(process.cwd(), 'reports', 'npm-audit-production.json');
 fs.mkdirSync(path.dirname(reportPath), { recursive: true });
@@ -39,14 +40,39 @@ try {
 }
 
 const manifestDependencies = JSON.parse(fs.readFileSync(path.join(process.cwd(), 'package.json'), 'utf8')).dependencies || {};
-const vulns = Object.values(report.vulnerabilities || {});
-const direct = vulns.filter((item) => item.severity && item.severity !== 'info');
-const totals = report.metadata?.vulnerabilities || {};
-const counted = ['critical', 'high', 'moderate', 'low'].map((level) => `${level}=${totals[level] ?? 0}`).join(' ');
+const outcome = decideAuditOutcome({ exitCode, report });
+const direct = outcome.vulnerable;
+const counted = outcome.counted;
 
-if (exitCode === 0 && direct.length === 0) {
+if (outcome.status === 'ok') {
   console.log(`NPM_AUDIT_PRODUCTION_OK ${counted}`);
   process.exit(0);
+}
+
+if (outcome.status === 'not-evaluated') {
+  // One retry, then a distinct verdict. A registry blip is transient; a broken
+  // audit is chronic, and only the second deserves to stop a human.
+  const retry = spawnSync('npm', ['audit', '--omit=dev', '--json'], { encoding: 'utf8', maxBuffer: 32 * 1024 * 1024 });
+  let retryReport = null;
+  try {
+    retryReport = JSON.parse(retry.stdout || '');
+  } catch {
+    retryReport = null;
+  }
+  if (retry.stdout) fs.writeFileSync(reportPath, retry.stdout, 'utf8');
+  const second = decideAuditOutcome({ exitCode: retry.status === null ? 1 : retry.status, report: retryReport });
+  if (second.status === 'ok') {
+    console.log(`NPM_AUDIT_PRODUCTION_OK ${second.counted} retried=1`);
+    process.exit(0);
+  }
+  if (second.status === 'not-evaluated') {
+    console.error(`NPM_AUDIT_PRODUCTION_NOT_EVALUATED npm audit exited ${retry.status} twice while reporting no advisories (${second.counted}) — this is the audit failing to run, not a clean tree.`);
+    if (retry.stderr) console.error(retry.stderr.trim().split('\n').slice(0, 5).join('\n'));
+    console.error('::error::NPM_AUDIT_PRODUCTION_NOT_EVALUATED the production dependency audit could not be completed, so nothing was checked. Do not read this as "no vulnerabilities": read the npm error above.');
+    process.exit(1);
+  }
+  // The retry found real advisories after all — fall through and report them.
+  report = retryReport;
 }
 
 console.error(`NPM_AUDIT_PRODUCTION_FAIL ${counted}`);
