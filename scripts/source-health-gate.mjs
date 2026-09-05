@@ -79,7 +79,20 @@ if (fs.existsSync(growthPath)) {
     const current = growth.current || {};
     growthStatus = current.status || 'unknown';
     if (current.lost_published_output === true || growthStatus === 'critical-persistence-gap') {
-      fail(`published output was not preserved: public_delta=${current.public_delta} published_new=${current.published_new}`);
+      // The counts alone were undiagnosable. This gate blocked publishing on
+      // three consecutive runs on 2026-09-04 saying only
+      // "public_delta=5 published_new=6", and the ids it had already computed
+      // were sitting unprinted in its own input file. A gate that fires and
+      // cannot say what is wrong costs the same attention as a false alarm.
+      const missing = Array.isArray(current.missing_published_ids) ? current.missing_published_ids : [];
+      const collapsed = Array.isArray(current.collapsed_published_ids) ? current.collapsed_published_ids : [];
+      const detail = missing.length
+        ? `\n  did not reach dist/events.json:\n    ${missing.join('\n    ')}`
+        : '\n  (no ids recorded — the ledger flagged the run without naming a record, which is itself a bug)';
+      const context = collapsed.length
+        ? `\n  collapsed onto a primary and therefore NOT counted as lost:\n    ${collapsed.map((row) => `${row.id} → ${row.collapsed_onto || '?'} (${row.reason})`).join('\n    ')}`
+        : '';
+      fail(`published output was not preserved: public_delta=${current.public_delta} published_new=${current.published_new}${detail}${context}`);
     }
   } catch (error) {
     if (String(error?.message || '').startsWith('published output was not preserved')) throw error;

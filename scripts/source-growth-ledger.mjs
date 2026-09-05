@@ -1,5 +1,6 @@
 import fs from 'node:fs';
 import path from 'node:path';
+import { classifyPublishedOutput } from './published-output-persistence.mjs';
 import { ensureDir, exists, readJson, rel, root, writeJson } from './program-lifecycle-utils.mjs';
 
 const statePath = path.join(root, process.env.EVENTLIVE_SOURCE_GROWTH_STATE_FILE || 'data/source_growth_state.json');
@@ -67,7 +68,37 @@ function normalizeId(value = '') {
 // run -- e.g. a stale leftover from an earlier cycle because auto-publish
 // didn't rerun this cycle -- skip the check rather than false-alarm on
 // data that was never trying to describe this run).
-function checkPublishedOutputPersisted({ collection, publish, publicEvents }) {
+// Not every id absent from dist/events.json was lost. The build drops records on
+// purpose and, since it started recording them, says which and why:
+//
+//   duplicate-id / duplicate-semantic / duplicate-source-identity
+//       collapsed onto a named primary — the event IS published, under that
+//       primary. Measured on one ordinary build: 23 of 26 drops.
+//   not-public-launch-record
+//       the build refuses to publish it at all. That is a genuine contradiction
+//       — auto-publish said publish, the build said no — and still alarms, now
+//       with the reason attached instead of a bare count.
+//
+// Before this, all three were indistinguishable from "vanished", and the health
+// gate blocked publishing on all of them. It blocked three consecutive runs on
+// 2026-09-04, and the log could not name a single id.
+function loadBuildExclusions(root) {
+  const file = path.join(root, 'reports', 'build-record-exclusions.json');
+  const byId = new Map();
+  if (!fs.existsSync(file)) return byId;
+  try {
+    const parsed = JSON.parse(fs.readFileSync(file, 'utf8'));
+    for (const row of Array.isArray(parsed?.excluded) ? parsed.excluded : []) {
+      if (row?.id) byId.set(normalizeId(row.id), row);
+      if (row?.slug) byId.set(normalizeId(row.slug), row);
+    }
+  } catch {
+    return new Map();
+  }
+  return byId;
+}
+
+function checkPublishedOutputPersisted({ collection, publish, publicEvents, buildExclusions = new Map() }) {
   const publishedIds = [...new Set(
     (Array.isArray(publish?.published) ? publish.published : [])
       .map((item) => item?.event_id)
@@ -98,10 +129,11 @@ function checkPublishedOutputPersisted({ collection, publish, publicEvents }) {
     (Array.isArray(publicEvents?.events) ? publicEvents.events : [])
       .map((event) => normalizeId(event?.id))
   );
-  const missingPublishedIds = publishedIds.filter((id) => !distIds.has(normalizeId(id)));
+  const classified = classifyPublishedOutput({ publishedIds, distIds, buildExclusions });
   return {
-    lostPublishedOutput: missingPublishedIds.length > 0,
-    missingPublishedIds,
+    lostPublishedOutput: classified.lost,
+    missingPublishedIds: classified.missing,
+    collapsedPublishedIds: classified.collapsed,
     publishReportCorrelated,
     publishedIdsChecked: publishedIds.length
   };
@@ -109,7 +141,7 @@ function checkPublishedOutputPersisted({ collection, publish, publicEvents }) {
 
 function buildGrowthRun({ generatedAt, catalog, ended, publicEvents, collection, publish, runState }) {
   const sourceRows = Array.isArray(collection?.sources) ? collection.sources : [];
-  const persistence = checkPublishedOutputPersisted({ collection, publish, publicEvents });
+  const persistence = checkPublishedOutputPersisted({ collection, publish, publicEvents, buildExclusions: loadBuildExclusions(process.cwd()) });
   return {
     run_id: collection?.collected_at || publish?.published_at || generatedAt,
     generated_at: generatedAt,
@@ -132,6 +164,7 @@ function buildGrowthRun({ generatedAt, catalog, ended, publicEvents, collection,
     // appendGrowthRun afterward -- it can never be recomputed from delta
     // math alone once this row is historical.
     lost_published_output: persistence.lostPublishedOutput,
+    collapsed_published_ids: persistence.collapsedPublishedIds || [],
     missing_published_ids: persistence.missingPublishedIds,
     published_ids_checked: persistence.publishedIdsChecked,
     publish_report_correlated: persistence.publishReportCorrelated
