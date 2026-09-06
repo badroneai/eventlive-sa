@@ -431,7 +431,10 @@ jobs:
         uses: actions/upload-artifact@v6
         with:
           name: eventme-source-sync-${{ github.run_id }}
-          retention-days: 14
+          # Keep operational evidence briefly. The deployable site is uploaded
+          # separately by upload-pages-artifact below, so retaining another
+          # copy here multiplies storage on every six-hour sync.
+          retention-days: 3
           if-no-files-found: warn
           path: |
             reports/source-*.md
@@ -455,7 +458,6 @@ jobs:
             data/event_image_cache_manifest.json
             .eventlive-cache/indexnow-delta.json
             reports/production-pipeline-health.json
-            dist/**
 
       - name: Setup Pages
         uses: actions/configure-pages@v6
