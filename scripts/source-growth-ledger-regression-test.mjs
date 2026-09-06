@@ -112,7 +112,15 @@ lossHistory = appendGrowthRun(lossHistory, runWithPublish({
   publishedEventIds: [droppedId]
 }));
 assert.equal(lossHistory.at(-1).lost_published_output, true, 'requirement (b): a published id absent from output is genuinely lost');
-assert.deepEqual(lossHistory.at(-1).missing_published_ids, [droppedId], 'missing ids are surfaced for diagnosability');
+// The id now carries WHY it is missing. On 2026-09-04 this gate blocked three
+// consecutive syncs saying only "public_delta=5 published_new=6", and the bare id
+// this assertion protected was never printed anywhere either. Absence has three
+// meanings — collapsed onto a primary, refused by the build, or genuinely gone —
+// and only the third is a loss. The requirement is still that the id is surfaced;
+// it is now surfaced with the answer attached.
+assert.equal(lossHistory.at(-1).missing_published_ids.length, 1, 'missing ids are surfaced for diagnosability');
+assert.match(lossHistory.at(-1).missing_published_ids[0], new RegExp(`^${droppedId}\\b`), 'the id itself must lead the line');
+assert.match(lossHistory.at(-1).missing_published_ids[0], /build recorded no exclusion/, 'and must say the build offered no reason, which is what makes it a loss');
 assert.equal(lossHistory.at(-1).status, 'critical-persistence-gap', 'requirement (b): the real alarm still fires');
 
 // (c) stale/mismatched publish report: published_at PREDATES this run's own

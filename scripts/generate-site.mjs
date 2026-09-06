@@ -1313,13 +1313,23 @@ function buildEvents() {
   const seenIds = new Set();
   const seenSemantic = new Set();
   const seenSourceIdentity = new Set();
+  // key -> id of the record that claimed it, so a collapse can name its primary.
+  const keptByKey = new Map();
   const events = [];
   let excludedDraftLikeRecords = 0;
   const excludedPublicSlugs = includeDemoEvent ? [] : ['demo-event'];
+  // Every record this loop drops, and why. The dedupe below used to `continue`
+  // in silence, so a record could be present in the catalog, absent from
+  // dist/events.json, and nothing anywhere said which one or why. That silence
+  // is what made SOURCE_HEALTH_FAIL undiagnosable: the gate could say a
+  // published event had not survived the build, but neither it nor the build
+  // could name the event.
+  const recordExclusions = [];
   for (const [raw, sourceGroup] of rawEvents) {
     if (!isPublicLaunchRecord(raw, sourceGroup)) {
       excludedDraftLikeRecords += 1;
       excludedPublicSlugs.push(raw.file_slug || raw.slug || raw.id || slugify(raw.title || 'event'));
+      recordExclusions.push({ id: raw.id || '', slug: raw.file_slug || raw.slug || '', title: raw.title || '', reason: 'not-public-launch-record', source_group: sourceGroup });
       continue;
     }
     const event = normalizeEvent(raw, sourceGroup, previousLookup);
@@ -1349,10 +1359,36 @@ function buildEvents() {
     } catch {
       sourceIdentityKey = '';
     }
-    if (seenIds.has(idKey) || seenSemantic.has(semanticKey) || (sourceIdentityKey && seenSourceIdentity.has(sourceIdentityKey))) continue;
+    // A collapsed duplicate is REPRESENTED by the record already kept, not lost.
+    // Recording which key collapsed it, and onto what, is what lets the growth
+    // ledger tell "this event is published under its primary" apart from "this
+    // event disappeared".
+    const duplicateOf = seenIds.has(idKey)
+      ? { reason: 'duplicate-id', key: idKey }
+      : seenSemantic.has(semanticKey)
+        ? { reason: 'duplicate-semantic', key: semanticKey }
+        : (sourceIdentityKey && seenSourceIdentity.has(sourceIdentityKey))
+          ? { reason: 'duplicate-source-identity', key: sourceIdentityKey }
+          : null;
+    if (duplicateOf) {
+      recordExclusions.push({
+        id: event.id || '',
+        slug: event.file_slug || '',
+        title: event.title || '',
+        reason: duplicateOf.reason,
+        collapsed_onto: keptByKey.get(duplicateOf.key) || '',
+        source_group: sourceGroup
+      });
+      continue;
+    }
     seenIds.add(idKey);
     seenSemantic.add(semanticKey);
-    if (sourceIdentityKey) seenSourceIdentity.add(sourceIdentityKey);
+    keptByKey.set(idKey, event.id || event.file_slug || '');
+    keptByKey.set(semanticKey, event.id || event.file_slug || '');
+    if (sourceIdentityKey) {
+      seenSourceIdentity.add(sourceIdentityKey);
+      keptByKey.set(sourceIdentityKey, event.id || event.file_slug || '');
+    }
     const translationOptions = { trackPending: event.status !== 'ended' && sourceGroup !== 'ended' };
     const proseSummary = contentTranslator.localizeEventProse(event, 'ar', translationOptions);
     event.content_translated = proseSummary.translationApplied;
@@ -1408,6 +1444,7 @@ function buildEvents() {
     return a.status === 'ended' ? bTime - aTime : aTime - bTime;
   });
   sortedEvents.excludedDraftLikeRecords = excludedDraftLikeRecords;
+  sortedEvents.recordExclusions = recordExclusions;
   sortedEvents.excludedPublicSlugs = excludedPublicSlugs;
   return sortedEvents;
 }
@@ -8591,6 +8628,17 @@ removeForbiddenArtifacts();
 writeSitemap(events);
 writeAiSearchFiles(events);
 fs.mkdirSync(path.join(root, 'reports'), { recursive: true });
+// Written for scripts/source-growth-ledger.mjs, which asks "did the events this
+// cycle published survive into dist/events.json". Until this file existed the
+// only possible answer was "no", with no way to tell a record that was collapsed
+// onto its own primary from one that genuinely vanished — and a run that cannot
+// tell those apart blocks publishing on both.
+fs.writeFileSync(path.join(root, 'reports', 'build-record-exclusions.json'), `${JSON.stringify({
+  schema: 'eventlive.build-record-exclusions.v1',
+  generated_at: buildAt,
+  total: events.recordExclusions?.length || 0,
+  excluded: events.recordExclusions || []
+}, null, 2)}\n`, 'utf8');
 fs.writeFileSync(path.join(root, 'reports', 'content-translation-pending.json'), `${JSON.stringify({ generated_at: new Date().toISOString(), pending: contentTranslator.pending() }, null, 2)}\n`, 'utf8');
 
 const patched = walkFiles(distDir)
