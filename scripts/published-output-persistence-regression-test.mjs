@@ -50,6 +50,50 @@ const vanished = classifyPublishedOutput({ publishedIds, distIds });
 assert.equal(vanished.lost, true);
 assert.match(vanished.missing[0], /build recorded no exclusion/);
 
+// ---------- escalation by scale ----------
+// One record that never reached dist/events.json held 1,118 events and 3,296
+// pages off the site for 69 hours, across six runs, because this gate blocked on
+// any loss at all. It now blocks only when NOTHING published survived — a broken
+// output path — and reports a partial loss at full volume while the rest of the
+// catalog still reaches its readers.
+const partial = classifyPublishedOutput({
+  publishedIds: ['kept-one', 'gone-one'],
+  distIds: new Set(['kept-one'])
+});
+assert.equal(partial.severity, 'partial');
+assert.equal(partial.blocking, false, 'a partial loss must not freeze the site');
+assert.equal(partial.lost, true, 'but it is still a loss, and still reported');
+
+const total = classifyPublishedOutput({ publishedIds: ['gone-one', 'gone-two'], distIds: new Set() });
+assert.equal(total.severity, 'total');
+assert.equal(total.blocking, true, 'nothing surviving is a broken output path and must block the publish');
+
+assert.equal(classifyPublishedOutput({ publishedIds: ['kept-one'], distIds: new Set(['kept-one']) }).severity, 'none');
+// A collapse is not a loss, so it cannot make a run "total" either.
+assert.equal(
+  classifyPublishedOutput({
+    publishedIds: ['gone-one'],
+    distIds: new Set(),
+    buildExclusions: new Map([['gone-one', { reason: 'duplicate-semantic', collapsed_onto: 'kept-one' }]])
+  }).severity,
+  'none',
+  'a cycle whose only absence is a collapse has lost nothing'
+);
+
+const healthGate = fs.readFileSync(path.join(process.cwd(), 'scripts', 'source-health-gate.mjs'), 'utf8');
+assert.match(healthGate, /persistence_severity/, 'the gate must read the severity, not just the boolean');
+assert.match(healthGate, /SOURCE_HEALTH_NONBLOCKING_FINDING/, 'a partial loss must be reported at full volume');
+assert.match(healthGate, /source-health-nonblocking-finding\.txt/, 'and must leave a marker the run verdict can act on');
+
+const syncWorkflow = fs.readFileSync(path.join(process.cwd(), '.github', 'workflows', 'source-sync.yml'), 'utf8');
+const verdictBlock = syncWorkflow.slice(syncWorkflow.indexOf('source-health-nonblocking-finding.txt'));
+assert.ok(verdictBlock.length > 0, 'the run verdict must consult the marker');
+assert.match(
+  verdictBlock,
+  /exit 1/,
+  'a published-but-lossy run must still end RED — publishing anyway and going green would hide the defect entirely'
+);
+
 // ---------- the two halves must stay connected ----------
 const root = process.cwd();
 const generator = fs.readFileSync(path.join(root, 'scripts', 'generate-site.mjs'), 'utf8');

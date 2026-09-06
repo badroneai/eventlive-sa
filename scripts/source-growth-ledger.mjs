@@ -132,6 +132,7 @@ function checkPublishedOutputPersisted({ collection, publish, publicEvents, buil
   const classified = classifyPublishedOutput({ publishedIds, distIds, buildExclusions });
   return {
     lostPublishedOutput: classified.lost,
+    persistenceSeverity: classified.severity,
     missingPublishedIds: classified.missing,
     collapsedPublishedIds: classified.collapsed,
     publishReportCorrelated,
@@ -165,6 +166,7 @@ function buildGrowthRun({ generatedAt, catalog, ended, publicEvents, collection,
     // math alone once this row is historical.
     lost_published_output: persistence.lostPublishedOutput,
     collapsed_published_ids: persistence.collapsedPublishedIds || [],
+    persistence_severity: persistence.persistenceSeverity || 'none',
     missing_published_ids: persistence.missingPublishedIds,
     published_ids_checked: persistence.publishedIdsChecked,
     publish_report_correlated: persistence.publishReportCorrelated
