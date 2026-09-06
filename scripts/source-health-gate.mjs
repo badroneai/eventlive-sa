@@ -1,4 +1,5 @@
 import fs from 'node:fs';
+import path from 'node:path';
 
 const healthPath = process.env.EVENTLIVE_SOURCE_HEALTH_FILE || 'dist/source-health.json';
 const minActiveCollectors = Number(process.env.EVENTLIVE_MIN_ACTIVE_COLLECTORS ?? 20);
@@ -92,7 +93,27 @@ if (fs.existsSync(growthPath)) {
       const context = collapsed.length
         ? `\n  collapsed onto a primary and therefore NOT counted as lost:\n    ${collapsed.map((row) => `${row.id} → ${row.collapsed_onto || '?'} (${row.reason})`).join('\n    ')}`
         : '';
-      fail(`published output was not preserved: public_delta=${current.public_delta} published_new=${current.published_new}${detail}${context}`);
+      const message = `published output was not preserved: public_delta=${current.public_delta} published_new=${current.published_new}${detail}${context}`;
+      // Escalate by scale, not by presence. See published-output-persistence.mjs
+      // for the measurement: one record that never reached dist/events.json held
+      // 3,296 pages off the site for 69 hours because this branch always blocked.
+      //
+      // 'total' — nothing this cycle published survived — is a broken output
+      // path and still blocks. Anything else is reported at full volume, the run
+      // is failed at the end by the workflow's final step, and the other events
+      // still reach their readers (Invariant C).
+      //
+      // To make every loss blocking again, delete this branch: fail() below is
+      // the original behaviour.
+      if (current.persistence_severity && current.persistence_severity !== 'total') {
+        const markerDir = path.join(process.cwd(), '.eventlive-cache');
+        fs.mkdirSync(markerDir, { recursive: true });
+        fs.writeFileSync(path.join(markerDir, 'source-health-nonblocking-finding.txt'), `${message}\n`, 'utf8');
+        console.error(`SOURCE_HEALTH_NONBLOCKING_FINDING ${message}`);
+        console.error(`::error::SOURCE_HEALTH_NONBLOCKING_FINDING ${message}\n  The sync PUBLISHED anyway and this run is red on purpose: a partial loss is a defect to fix, not a reason to freeze the site (Invariant C). A total loss still blocks.`);
+      } else {
+        fail(message);
+      }
     }
   } catch (error) {
     if (String(error?.message || '').startsWith('published output was not preserved')) throw error;

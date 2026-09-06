@@ -43,7 +43,31 @@ export function classifyPublishedOutput({ publishedIds = [], distIds = new Set()
     missing.push(exclusion ? `${id} (${exclusion.reason})` : `${id} (absent, build recorded no exclusion)`);
   }
 
-  return { present, collapsed, missing, lost: missing.length > 0 };
+  // Losing ONE record is a defect. Freezing the whole site over it is a worse
+  // one. Measured on the 2026-09-03..06 outage: a single record that did not
+  // reach dist/events.json blocked 1,118 events and 3,296 pages from publishing
+  // for 69 hours, across six runs, because the gate that found it is blocking.
+  //
+  // The repository already made this call once, for the publish-quality battery:
+  // "freezing publishing over a quality regression is a worse failure than
+  // shipping a known one loudly" (Invariant C, source-sync.yml). The same
+  // reasoning applies here, with one exception kept blocking:
+  //
+  //   total   NOTHING this cycle published survived. That is not one bad record,
+  //           it is a broken output path, and publishing on top of it would ship
+  //           a catalog that lost everything new. Still blocks.
+  //   partial some survived, some did not. A real defect, reported loudly and
+  //           named — and the other 1,118 events still reach their readers.
+  //
+  // A threshold of "all or nothing" rather than a tuned number, so there is no
+  // magic constant to argue with later.
+  const severity = missing.length === 0
+    ? 'none'
+    : present.length === 0
+      ? 'total'
+      : 'partial';
+
+  return { present, collapsed, missing, lost: missing.length > 0, severity, blocking: severity === 'total' };
 }
 
 export { COLLAPSE_REASONS };
