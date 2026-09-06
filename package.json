@@ -88,6 +88,7 @@
     "test:english-surface-lead": "node scripts/english-surface-lead-regression-test.mjs",
     "test:npm-audit-outcome": "node scripts/npm-audit-outcome-regression-test.mjs",
     "test:published-output-persistence": "node scripts/published-output-persistence-regression-test.mjs",
+    "test:catalog-content-match": "node scripts/catalog-content-match-regression-test.mjs",
     "test:scega-events-extractor": "node scripts/scega-events-extractor-regression-test.mjs",
     "test:informa-saudi-portfolio": "node scripts/informa-saudi-portfolio-regression-test.mjs",
     "test:scega-canonical-alias": "node scripts/scega-canonical-alias-regression-test.mjs",
