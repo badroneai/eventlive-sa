@@ -1,4 +1,5 @@
 import assert from 'node:assert/strict';
+import { buildCatalogContentMatcher } from './catalog-content-match.mjs';
 import fs from 'node:fs';
 import path from 'node:path';
 import { parse } from 'acorn';
@@ -231,30 +232,11 @@ for (const filePath of pages) {
 // course titles). A string is CONTENT, not chrome, when it contains a
 // catalog event id/file_slug/image filename or matches a catalog title.
 const catalogEventsForSweep = JSON.parse(fs.readFileSync(path.join(root, 'dist', 'events.json'), 'utf8')).events || [];
-const catalogSlugParts = [];
-const catalogTitleSet = new Set();
-for (const ev of catalogEventsForSweep) {
-  if (ev.file_slug) catalogSlugParts.push(String(ev.file_slug));
-  if (ev.id) catalogSlugParts.push(String(ev.id));
-  if (ev.image_url) catalogSlugParts.push(String(ev.image_url).split('/').pop());
-  if (ev.title) catalogTitleSet.add(String(ev.title).trim());
-  if (ev.title_original) catalogTitleSet.add(String(ev.title_original).trim());
-}
-function isCatalogContent(text) {
-  const t = String(text).trim();
-  if (catalogTitleSet.has(t)) return true;
-  for (const part of catalogSlugParts) {
-    if (!part || part.length < 8) continue;
-    // Either direction: the flagged text may carry a slug inside a URL, or
-    // be a TRUNCATED/prefix-stripped fragment of a slug (screen.html bakes
-    // slug fragments like "ضحكات-الرياض" without the "event-" prefix).
-    if (t.includes(part) || (t.length >= 8 && part.includes(t))) return true;
-  }
-  for (const title of catalogTitleSet) {
-    if (title && title.length >= 12 && t.includes(title)) return true;
-  }
-  return false;
-}
+// The rule lives in scripts/catalog-content-match.mjs so it can be tested against
+// the exact strings that have defeated it — an event summary carrying the Arabic
+// source attribution (2026-09-04) and an image alt composed from a four-character
+// title (2026-09-06) — without running a build.
+const isCatalogContent = buildCatalogContentMatcher(catalogEventsForSweep);
 
 const templateHits = [];
 const scriptTemplateHits = [];
