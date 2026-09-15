@@ -1,8 +1,8 @@
 # EventLive Official Single-Session Activation
-- Generated at: 2026-09-03T07:25:26.517Z
+- Generated at: 2026-09-15T16:19:04.272Z
 - Max duration hours: 8
-- Activated: 27
-- Skipped long events: 7
+- Activated: 38
+- Skipped long events: 12
 
 | Source | Event | Duration | Type |
 |---|---|---:|---|
@@ -32,4 +32,15 @@
 | MDLBEAST Events | Beast House | 6h | official-entertainment-session |
 | Qassim Chamber Events | الحوكمة والمخاطر والامتثال | 2h | official-business-workshop |
 | Saudi Food and Drug Authority Events | شرح وتوضيح إجراءات الاستيراد والتصدير وحرية البيع | 2h | official-online-workshop |
+| Saudi Universities and Technical Colleges | World First Aid Day: Visit the KAUST Health Awareness Booth | 3h | official-community-session |
+| Saudi Universities and Technical Colleges | Transforming Desert Soils for Greening, Food Security, and Carbon Capture | 1h | official-community-session |
+| Saudi Universities and Technical Colleges | BioBooths 2026 – Discover KAUST Biodiversity | 3h | official-community-session |
+| Saudi Universities and Technical Colleges | Saudi Government Structure and Decision Making Processes | 2h | official-community-session |
+| Saudi Universities and Technical Colleges | Discover Saudi Arabia: Culture, Heritage & Jeddah | 2h | official-community-session |
+| Saudi Universities and Technical Colleges | Pool Party | 4h | official-community-session |
+| Saudi Universities and Technical Colleges | Saudi National Day Celebration at the University | 1.5h | official-community-session |
 | Saudi Food and Drug Authority Events | دور الهيئة العامة للغذاء و الدواء في ضمان سلامة الاستخدام الامن لجهاز الماموجرام | 1h | official-online-workshop |
+| Saudi Universities and Technical Colleges | PSE Dean’s Distinguished Speaker Seminar | 1h | official-community-session |
+| Qassim Chamber Events | الاستثمار والابتكار | 2h | official-business-workshop |
+| Qassim Chamber Events | التقنيات المستقبلية | 2h | official-business-workshop |
+| Qassim Chamber Events | رأس المال البشري | 2h | official-business-workshop |

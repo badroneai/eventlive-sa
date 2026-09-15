@@ -1,7 +1,7 @@
 # EventLive Conditional Final Build
 
-- generated_at: 2026-09-03T07:27:51.225Z
+- generated_at: 2026-09-15T16:23:39.451Z
 - decision: rebuilt
-- duration_ms: 14217
+- duration_ms: 47711
 - exit_code: 0
-- reasons: fetched:9, missing-removed:8
+- reasons: fetched:42, missing-removed:9, new-failures:3

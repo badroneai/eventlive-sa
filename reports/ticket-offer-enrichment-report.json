@@ -1,10 +1,10 @@
 {
-  "checked_at": "2026-09-03T07:25:26.903Z",
-  "targets": 10,
-  "evidence_found": 7,
+  "checked_at": "2026-09-15T16:19:04.657Z",
+  "targets": 11,
+  "evidence_found": 5,
   "changed": 0,
-  "no_evidence": 3,
-  "failed": 0,
+  "no_evidence": 5,
+  "failed": 1,
   "results": [
     {
       "id": "event-beast-house",
@@ -24,11 +24,8 @@
       "id": "event-a-thousand-and-one",
       "host": "nofomo.com",
       "url": "https://nofomo.com/events/a-thousand-and-one-2026/cart",
-      "status": "evidence",
-      "price_label": "299 SAR",
-      "price": 299,
-      "price_currency": "SAR",
-      "method": "nofomo-visible-ticket-price"
+      "status": "no-evidence",
+      "reason": "no-explicit-public-price"
     },
     {
       "id": "event-soundstorm-26",
@@ -64,11 +61,8 @@
       "id": "event-saudi-ai-week",
       "host": "informaconnect.com",
       "url": "https://informaconnect.com/saudi-ai-week/purchase/select-package/",
-      "status": "evidence",
-      "price_label": "625 USD",
-      "price": 625,
-      "price_currency": "USD",
-      "method": "informa-visible-package-price"
+      "status": "failed",
+      "reason": "HTTP 404"
     },
     {
       "id": "event-saudi-intermobility-expo",
@@ -96,6 +90,13 @@
       "price": 1199,
       "price_currency": "USD",
       "method": "informa-visible-package-price"
+    },
+    {
+      "id": "event-hrse-ksa-hr-summit-expo",
+      "host": "informaconnect.com",
+      "url": "https://informaconnect.com/hrse-saudi/hotel-map/",
+      "status": "no-evidence",
+      "reason": "no-explicit-public-price"
     }
   ]
 }

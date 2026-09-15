@@ -1,22 +1,22 @@
 {
   "schema": "eventlive.harvest-os-status.v1",
-  "generated_at": "2026-09-03T07:37:01.801Z",
+  "generated_at": "2026-09-15T16:34:49.094Z",
   "status": "NEEDS_WORK",
   "operating_rule": "Probe before new sources; sample before full harvest; Raw collection is not publication; discovery-only never auto-publishes.",
   "totals": {
     "sources": 88,
-    "candidates": 508,
-    "matched_candidates": 493,
+    "candidates": 530,
+    "matched_candidates": 518,
     "auto_publish_sources": 15,
     "candidate_only_sources": 12,
     "partnership_required_sources": 5,
     "blocked_or_closed_sources": 0,
     "manual_review_sources": 56,
-    "collection_attempted": 19,
-    "productive_sources": 19,
-    "collector_errors": 5,
+    "collection_attempted": 48,
+    "productive_sources": 22,
+    "collector_errors": 7,
     "chronic_collector_errors": 5,
-    "transient_collector_errors": 0
+    "transient_collector_errors": 2
   },
   "policies": {
     "partnership_required": 5,
@@ -25,26 +25,24 @@
     "manual_review": 56
   },
   "candidates_by_gate": {
-    "catalog-review": 492,
+    "catalog-review": 518,
     "duplicate-review": 6,
-    "source-evidence": 10
+    "source-evidence": 6
   },
   "funnel": {
-    "discovered_this_run": 207,
-    "candidate_queue": 508,
-    "evaluated_for_publish": 508,
-    "linked_existing": 488,
-    "published_new": 1,
-    "blocked": 19,
-    "secondary_promoted": 0,
-    "secondary_still_blocked": 17
+    "discovered_this_run": 274,
+    "candidate_queue": 530,
+    "evaluated_for_publish": 530,
+    "linked_existing": 442,
+    "published_new": 74,
+    "blocked": 14,
+    "secondary_promoted": 1,
+    "secondary_still_blocked": 97
   },
   "blocked_reasons": {
     "possible duplicate requires review: exact-title-city-source-conflict": 2,
-    "unknown category requires review": 6,
-    "publication gate source-evidence is not auto-publishable": 3,
-    "possible duplicate already exists: event-leap-2026": 1,
-    "linked catalog row event-stand-up-comedy-and-interactive-show-with-salah-al-dali was superseded by dedupe": 1,
+    "publication gate source-evidence is not auto-publishable": 2,
+    "unknown category requires review": 4,
     "possible duplicate requires review: fuzzy-title-venue-date-window": 2,
     "possible duplicate requires review: exact-title-city-venue-conflict": 2,
     "linked catalog row event-feena-nehke-stand-up-comedy-by-john-achkar was superseded by dedupe": 1,
@@ -54,37 +52,51 @@
     {
       "id": "moc-cultural-calendar",
       "note": "collector-error: fetch failed; fetch failed",
-      "error_streak": 33,
+      "error_streak": 34,
       "kind": "chronic",
-      "attempted_this_run": false
+      "attempted_this_run": true
     },
     {
       "id": "mos-events",
       "note": "collector-error: fetch failed",
-      "error_streak": 33,
+      "error_streak": 34,
       "kind": "chronic",
-      "attempted_this_run": false
+      "attempted_this_run": true
     },
     {
       "id": "moc-cultural-subportals",
       "note": "collector-error: fetch failed; fetch failed",
-      "error_streak": 33,
+      "error_streak": 34,
       "kind": "chronic",
-      "attempted_this_run": false
+      "attempted_this_run": true
     },
     {
       "id": "saudi-pro-league-fixtures",
       "note": "collector-error: fetch failed",
-      "error_streak": 13,
+      "error_streak": 14,
       "kind": "chronic",
-      "attempted_this_run": false
+      "attempted_this_run": true
     },
     {
       "id": "tuwaiq-academy-bootcamps",
       "note": "collector-error: HTTP 403",
-      "error_streak": 10,
+      "error_streak": 11,
       "kind": "chronic",
-      "attempted_this_run": false
+      "attempted_this_run": true
+    },
+    {
+      "id": "asharqia-chamber-events",
+      "note": "fetch failed; page.goto: Timeout 30000ms exceeded. Call log:   - navigating to \"https://www.chamber.org.sa/sites/Arabic/Events/ChamberEvents/Pages/AllChamberEvents.aspx\", waiting until \"domcontentload",
+      "error_streak": 2,
+      "kind": "transient",
+      "attempted_this_run": true
+    },
+    {
+      "id": "monshaat-events",
+      "note": "fetch failed; fetch failed",
+      "error_streak": 1,
+      "kind": "transient",
+      "attempted_this_run": true
     }
   ],
   "sources": [

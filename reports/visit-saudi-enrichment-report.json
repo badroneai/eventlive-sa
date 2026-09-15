@@ -1,13 +1,13 @@
 {
-  "generated_at": "2026-09-03T07:22:38.709Z",
+  "generated_at": "2026-09-15T16:15:45.730Z",
   "catalog": "data/events_catalog.json",
   "source": "Visit Saudi Calendar",
   "totals": {
-    "targets": 29,
-    "candidates": 15,
-    "enriched": 29,
-    "fetched": 29,
-    "images": 27,
+    "targets": 44,
+    "candidates": 28,
+    "enriched": 44,
+    "fetched": 44,
+    "images": 42,
     "fetch_failures": 0
   },
   "enriched": [
@@ -143,7 +143,7 @@
       "id": "event-stand-up-comedy-night-2",
       "title": "Stand-Up Comedy Night",
       "source_method": "official-page-html",
-      "image_url": "https://scth.scene7.com/is/image/scth/stand-up-comedy-3-jeddah?wid=1920&hei=1080&fit=constrain&fmt=webp",
+      "image_url": "https://www.visitsaudi.com/content/dam/wvs/calendar/stand-up-comedy-night-jeddah.jpg",
       "fetched": true,
       "features": 7
     },
@@ -151,7 +151,7 @@
       "id": "event-fill-in-the-blank-in-jeddah",
       "title": "Fill in the Blank in Jeddah",
       "source_method": "official-page-html",
-      "image_url": "https://scth.scene7.com/is/image/scth/fill-in-the-blank-in-jeddah?wid=1920&hei=1080&fit=constrain&fmt=webp",
+      "image_url": "https://www.visitsaudi.com/content/dam/wvs/calendar/fill-in-the-blank-in-jeddah.jpeg",
       "fetched": true,
       "features": 7
     },
@@ -188,10 +188,74 @@
       "features": 7
     },
     {
+      "id": "event-khaled-abdel-aziz-live-in-jeddah",
+      "title": "Khaled Abdel Aziz Live in Jeddah",
+      "source_method": "official-page-html",
+      "image_url": "https://www.visitsaudi.com/content/dam/wvs/calendar/khaled-abdel-aziz-live-in-jeddah.jpg",
+      "fetched": true,
+      "features": 7
+    },
+    {
+      "id": "event-5x5-night",
+      "title": "5x5 Night",
+      "source_method": "official-page-html",
+      "image_url": "https://www.visitsaudi.com/content/dam/wvs/5x5-night.jpg",
+      "fetched": true,
+      "features": 7
+    },
+    {
+      "id": "event-amr-diab-concert",
+      "title": "Amr Diab Concert",
+      "source_method": "official-page-html",
+      "image_url": "https://www.visitsaudi.com/content/dam/wvs/calendar/amr-diab-concert.jpg",
+      "fetched": true,
+      "features": 7
+    },
+    {
+      "id": "event-tarek-alarabi-and-his-children-in-riyadh",
+      "title": "Tarek Alarabi and His Children in Riyadh",
+      "source_method": "official-page-html",
+      "image_url": "https://www.visitsaudi.com/content/dam/wvs/calendar/tarek-alarabi-and-his-children.jpg",
+      "fetched": true,
+      "features": 7
+    },
+    {
       "id": "event-3a-ka3ba",
       "title": "3a Ka3ba",
       "source_method": "official-page-html",
       "image_url": "https://www.visitsaudi.com/content/dam/wvs/calendar/3a-ka3ba.jpg",
+      "fetched": true,
+      "features": 7
+    },
+    {
+      "id": "event-sad-rad-a-stand-up-comedy-show-by-aws-alnefaie-in-taif",
+      "title": "Sad Rad: A Stand-Up Comedy Show by Aws Alnefaie in Taif",
+      "source_method": "official-page-html",
+      "image_url": "https://www.visitsaudi.com/content/dam/wvs/calendar/sad-rad.jpg",
+      "fetched": true,
+      "features": 7
+    },
+    {
+      "id": "event-a-night-of-qudud-and-muwashahat",
+      "title": "A Night of Qudud and Muwashahat",
+      "source_method": "official-page-html",
+      "image_url": "https://www.visitsaudi.com/content/dam/wvs/calendar/a-night-of-qudud-and-muwashahat.jpg",
+      "fetched": true,
+      "features": 7
+    },
+    {
+      "id": "event-talal-alshikhe-live-in-jeddah",
+      "title": "Talal Alshikhe live in Jeddah",
+      "source_method": "official-page-html",
+      "image_url": "https://www.visitsaudi.com/content/dam/wvs/calendar/talal-alshikhe-live-in-jeddah.jpg",
+      "fetched": true,
+      "features": 7
+    },
+    {
+      "id": "event-rasha-rizk-live-in-jeddah",
+      "title": "Rasha Rizk Live in Jeddah",
+      "source_method": "official-page-html",
+      "image_url": "https://www.visitsaudi.com/content/dam/wvs/calendar/rasha-rizk-live-in-jeddah.jpg",
       "fetched": true,
       "features": 7
     },
@@ -212,10 +276,66 @@
       "features": 7
     },
     {
+      "id": "event-takwat-shaker",
+      "title": "Takwat Shaker",
+      "source_method": "official-page-html",
+      "image_url": "https://www.visitsaudi.com/content/dam/wvs/calendar/takwat-shaker.jpg",
+      "fetched": true,
+      "features": 7
+    },
+    {
+      "id": "event-khaled-jwad-live-in-jeddah",
+      "title": "Khaled Jwad Live in Jeddah",
+      "source_method": "official-page-html",
+      "image_url": "https://www.visitsaudi.com/content/dam/wvs/calendar/khaled-jwad-live-in-jeddah.jpg",
+      "fetched": true,
+      "features": 7
+    },
+    {
+      "id": "event-tony-abou-jaoude-live-in-riyadh",
+      "title": "Tony Abou Jaoude Live in Riyadh",
+      "source_method": "official-page-html",
+      "image_url": "https://www.visitsaudi.com/content/dam/wvs/calendar/tony-abou-jaoude-live-in-riyadh.jpg",
+      "fetched": true,
+      "features": 7
+    },
+    {
+      "id": "event-tony-abou-jaoude-live-in-jeddah",
+      "title": "Tony Abou Jaoude Live in Jeddah",
+      "source_method": "official-page-html",
+      "image_url": "https://www.visitsaudi.com/content/dam/wvs/calendar/tony-abou-jaoude-live-in-riyadh.jpg",
+      "fetched": true,
+      "features": 7
+    },
+    {
       "id": "event-al-milwah-falcon-race",
       "title": "Al Milwah Falcon Race",
       "source_method": "official-page-html",
       "image_url": "https://www.visitsaudi.com/content/dam/wvs/calendar/almelwah-racing.jpg",
+      "fetched": true,
+      "features": 7
+    },
+    {
+      "id": "event-alaa-el-sheikh-live-in-riyadh",
+      "title": "Alaa El Sheikh Live in Riyadh",
+      "source_method": "official-page-html",
+      "image_url": "https://www.visitsaudi.com/content/dam/wvs/calendar/alaa-el-sheikh-live-in-jeddah.jpg",
+      "fetched": true,
+      "features": 7
+    },
+    {
+      "id": "event-alaa-el-sheikh-live-in-jeddah",
+      "title": "Alaa El Sheikh Live in Jeddah",
+      "source_method": "official-page-html",
+      "image_url": "https://www.visitsaudi.com/content/dam/wvs/calendar/alaa-el-sheikh-live-in-jeddah.jpg",
+      "fetched": true,
+      "features": 7
+    },
+    {
+      "id": "event-the-innovation-driven-water-sustainability-conference",
+      "title": "The Innovation Driven Water Sustainability Conference",
+      "source_method": "official-page-html",
+      "image_url": "https://www.visitsaudi.com/content/dam/wvs/calendar/the-global-water-sustainability-conference.jpg",
       "fetched": true,
       "features": 7
     },

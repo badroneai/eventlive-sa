@@ -1,8 +1,8 @@
 # Future Skills Program Enrichment Report
 
-- generated_at: 2026-09-03T07:21:26.591Z
-- targets: 27
-- enriched: 23
+- generated_at: 2026-09-15T16:13:39.785Z
+- targets: 28
+- enriched: 24
 - failed: 4
 
 ## Enriched
@@ -30,6 +30,7 @@
 - CCNP (13061) - outcomes=1, topics=1, requirements=4, metadata=8
 - Data Analysis with Python (13062) - outcomes=1, topics=1, requirements=4, metadata=8
 - Red Hat Certified System Administrator (RHCSA) (13063) - outcomes=1, topics=1, requirements=4, metadata=8
+- Data Science Foundations (13066) - outcomes=1, topics=1, requirements=4, metadata=8
 
 ## Failed
 

@@ -1,9 +1,9 @@
 {
-  "generated_at": "2026-09-03T07:21:26.591Z",
+  "generated_at": "2026-09-15T16:13:39.785Z",
   "catalog": "data/events_catalog.json",
   "totals": {
-    "targets": 27,
-    "enriched": 23,
+    "targets": 28,
+    "enriched": 24,
     "failed": 4
   },
   "enriched": [
@@ -209,6 +209,15 @@
       "id": "event-red-hat-certified-system-administrator-rhcsa",
       "title": "Red Hat Certified System Administrator (RHCSA)",
       "group_id": "13063",
+      "goals": 1,
+      "features": 1,
+      "requirements": 4,
+      "metadata": 8
+    },
+    {
+      "id": "event-data-science-foundations",
+      "title": "Data Science Foundations",
+      "group_id": "13066",
       "goals": 1,
       "features": 1,
       "requirements": 4,

@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-03T07:21:23.563Z",
+  "generated_at": "2026-09-15T16:13:36.452Z",
   "catalog": "data/events_catalog.json",
   "candidates": "data/source_candidates.json",
   "manifest": "data/event_image_cache_manifest.json",
@@ -10,11 +10,25 @@
   },
   "totals": {
     "pdf_crop_assignments": 29,
-    "verified": 28,
-    "struck": 1,
-    "slots_seen_this_cycle": 32
+    "verified": 26,
+    "struck": 3,
+    "slots_seen_this_cycle": 27
   },
   "struck": [
+    {
+      "id": "event-ستاند-أب-كوميدي-وعرض-تفاعلي-مع-صلاح-الدالي",
+      "title": "ستاند أب كوميدي وعرض تفاعلي مع صلاح الدالي",
+      "file": "visit-saudi-summer-2026-p043-top-right.jpg",
+      "reason": "slot-vacated",
+      "detail": "no dated card currently occupies page 43 top-right of https://www.visitsaudi.com/content/dam/documents/saudi-calendar-ar.pdf"
+    },
+    {
+      "id": "event-in-act-act-ix",
+      "title": "IN ACT - ACT IX",
+      "file": "visit-saudi-summer-2026-p043-top-left.jpg",
+      "reason": "slot-vacated",
+      "detail": "no dated card currently occupies page 43 top-left of https://www.visitsaudi.com/content/dam/documents/saudi-calendar-ar.pdf"
+    },
     {
       "id": "event-ذكريات-سبيستون-مع-الفنان-عاصم-سكر",
       "title": "ذكريات سبيستون مع الفنان عاصم سكر",
@@ -204,27 +218,6 @@
         "بين",
         "جبال",
         "الباحه"
-      ]
-    },
-    {
-      "id": "event-ستاند-أب-كوميدي-وعرض-تفاعلي-مع-صلاح-الدالي",
-      "title": "ستاند أب كوميدي وعرض تفاعلي مع صلاح الدالي",
-      "file": "visit-saudi-summer-2026-p043-top-right.jpg",
-      "matched_tokens": [
-        "ستاند",
-        "كوميدي",
-        "وعرض",
-        "تفاعلي",
-        "صلاح",
-        "الدالي"
-      ]
-    },
-    {
-      "id": "event-in-act-act-ix",
-      "title": "IN ACT - ACT IX",
-      "file": "visit-saudi-summer-2026-p043-top-left.jpg",
-      "matched_tokens": [
-        "act"
       ]
     },
     {

@@ -1,13 +1,15 @@
 # EventLive Visit Saudi Image Identity Report
 
-- generated_at: 2026-09-03T07:21:23.563Z
+- generated_at: 2026-09-15T16:13:36.452Z
 - pdf_crop_assignments: 29
-- verified: 28
-- struck: 1
-- slots_seen_this_cycle: 32
+- verified: 26
+- struck: 3
+- slots_seen_this_cycle: 27
 
 ## Struck (fell back to generated cover)
 
+- ستاند أب كوميدي وعرض تفاعلي مع صلاح الدالي (visit-saudi-summer-2026-p043-top-right.jpg) - slot-vacated - no dated card currently occupies page 43 top-right of https://www.visitsaudi.com/content/dam/documents/saudi-calendar-ar.pdf
+- IN ACT - ACT IX (visit-saudi-summer-2026-p043-top-left.jpg) - slot-vacated - no dated card currently occupies page 43 top-left of https://www.visitsaudi.com/content/dam/documents/saudi-calendar-ar.pdf
 - ذكريات سبيستون مع الفنان عاصم سكر (visit-saudi-summer-2026-p062-bottom-left.jpg) - identity-mismatch - page 62 bottom-left is now "ENC 2026"
 
 ## Verified
@@ -31,8 +33,6 @@
 - بسطة القابل (visit-saudi-summer-2026-p012-bottom-right.jpg)
 - جولة بقي السريعة الباحة (visit-saudi-summer-2026-p072-bottom-right.jpg)
 - جولة البقي بين جبال الباحة (visit-saudi-summer-2026-p072-bottom-left.jpg)
-- ستاند أب كوميدي وعرض تفاعلي مع صلاح الدالي (visit-saudi-summer-2026-p043-top-right.jpg)
-- IN ACT - ACT IX (visit-saudi-summer-2026-p043-top-left.jpg)
 - سيرك فونتانا (visit-saudi-summer-2026-p062-bottom-right.jpg)
 - IN ACT - ACT X (visit-saudi-summer-2026-p063-top-left.jpg)
 - فينا نحكي؟ عرض ستاند أب كوميدي يقدمه جون أشقر (visit-saudi-summer-2026-p063-bottom-right.jpg)

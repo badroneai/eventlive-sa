@@ -1,11 +1,11 @@
 # Visit Saudi Calendar Enrichment Report
 
-- generated_at: 2026-09-03T07:22:38.709Z
-- targets: 29
-- candidates: 15
-- enriched: 29
-- fetched: 29
-- images: 27
+- generated_at: 2026-09-15T16:15:45.730Z
+- targets: 44
+- candidates: 28
+- enriched: 44
+- fetched: 44
+- images: 42
 - fetch_failures: 0
 
 ## Enriched
@@ -32,10 +32,25 @@
 - Hussain Moheb Live in Riyadh - official-page-html - image=yes - features=7
 - Spacetoon Memories with Assem Sukkar - official-page-html - image=yes - features=7
 - FIBO Arabia 2026 - official-page-html - image=yes - features=7
+- Khaled Abdel Aziz Live in Jeddah - official-page-html - image=yes - features=7
+- 5x5 Night - official-page-html - image=yes - features=7
+- Amr Diab Concert - official-page-html - image=yes - features=7
+- Tarek Alarabi and His Children in Riyadh - official-page-html - image=yes - features=7
 - 3a Ka3ba - official-page-html - image=yes - features=7
+- Sad Rad: A Stand-Up Comedy Show by Aws Alnefaie in Taif - official-page-html - image=yes - features=7
+- A Night of Qudud and Muwashahat - official-page-html - image=yes - features=7
+- Talal Alshikhe live in Jeddah - official-page-html - image=yes - features=7
+- Rasha Rizk Live in Jeddah - official-page-html - image=yes - features=7
 - 3a Ka3ba - official-page-html - image=yes - features=7
 - Saudi National Day - official-page-html - image=yes - features=7
+- Takwat Shaker - official-page-html - image=yes - features=7
+- Khaled Jwad Live in Jeddah - official-page-html - image=yes - features=7
+- Tony Abou Jaoude Live in Riyadh - official-page-html - image=yes - features=7
+- Tony Abou Jaoude Live in Jeddah - official-page-html - image=yes - features=7
 - Al Milwah Falcon Race - official-page-html - image=yes - features=7
+- Alaa El Sheikh Live in Riyadh - official-page-html - image=yes - features=7
+- Alaa El Sheikh Live in Jeddah - official-page-html - image=yes - features=7
+- The Innovation Driven Water Sustainability Conference - official-page-html - image=yes - features=7
 - Founding Day - official-page-html - image=yes - features=7
 - Eid Al-Fitr - official-page-html - image=no - features=6
 - Eid Al-Adha - official-page-html - image=no - features=6
