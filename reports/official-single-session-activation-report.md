@@ -1,5 +1,5 @@
 # EventLive Official Single-Session Activation
-- Generated at: 2026-09-15T16:19:04.272Z
+- Generated at: 2026-09-16T08:04:38.028Z
 - Max duration hours: 8
 - Activated: 38
 - Skipped long events: 12
@@ -29,13 +29,13 @@
 | Saudi Universities and Technical Colleges | Boat Bash Cruise | 6h | official-community-session |
 | Saudi Universities and Technical Colleges | Register for the World Breastfeeding Week Awareness Lecture | 2h | official-community-session |
 | Saudi Universities and Technical Colleges | Summer Splash at South Beach | 4h | official-community-session |
-| MDLBEAST Events | Beast House | 6h | official-entertainment-session |
 | Qassim Chamber Events | الحوكمة والمخاطر والامتثال | 2h | official-business-workshop |
 | Saudi Food and Drug Authority Events | شرح وتوضيح إجراءات الاستيراد والتصدير وحرية البيع | 2h | official-online-workshop |
 | Saudi Universities and Technical Colleges | World First Aid Day: Visit the KAUST Health Awareness Booth | 3h | official-community-session |
 | Saudi Universities and Technical Colleges | Transforming Desert Soils for Greening, Food Security, and Carbon Capture | 1h | official-community-session |
 | Saudi Universities and Technical Colleges | BioBooths 2026 – Discover KAUST Biodiversity | 3h | official-community-session |
 | Saudi Universities and Technical Colleges | Saudi Government Structure and Decision Making Processes | 2h | official-community-session |
+| MDLBEAST Events | Beast House | 6h | official-entertainment-session |
 | Saudi Universities and Technical Colleges | Discover Saudi Arabia: Culture, Heritage & Jeddah | 2h | official-community-session |
 | Saudi Universities and Technical Colleges | Pool Party | 4h | official-community-session |
 | Saudi Universities and Technical Colleges | Saudi National Day Celebration at the University | 1.5h | official-community-session |

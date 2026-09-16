@@ -1,15 +1,16 @@
 # EventLive Visit Saudi Image Identity Report
 
-- generated_at: 2026-09-15T16:13:36.452Z
-- pdf_crop_assignments: 29
-- verified: 26
-- struck: 3
-- slots_seen_this_cycle: 27
+- generated_at: 2026-09-16T07:56:51.194Z
+- pdf_crop_assignments: 27
+- verified: 23
+- struck: 4
+- slots_seen_this_cycle: 25
 
 ## Struck (fell back to generated cover)
 
-- ستاند أب كوميدي وعرض تفاعلي مع صلاح الدالي (visit-saudi-summer-2026-p043-top-right.jpg) - slot-vacated - no dated card currently occupies page 43 top-right of https://www.visitsaudi.com/content/dam/documents/saudi-calendar-ar.pdf
-- IN ACT - ACT IX (visit-saudi-summer-2026-p043-top-left.jpg) - slot-vacated - no dated card currently occupies page 43 top-left of https://www.visitsaudi.com/content/dam/documents/saudi-calendar-ar.pdf
+- سمره (visit-saudi-summer-2026-p005-bottom-right.jpg) - slot-vacated - no dated card currently occupies page 5 bottom-right of https://www.visitsaudi.com/content/dam/documents/saudi-calendar-ar.pdf
+- مهرجان صوت أبها SAF (visit-saudi-summer-2026-p007-bottom-right.jpg) - slot-vacated - no dated card currently occupies page 7 bottom-right of https://www.visitsaudi.com/content/dam/documents/saudi-calendar-ar.pdf
+- مهرجان مبدى (visit-saudi-summer-2026-p007-bottom-right.jpg) - slot-vacated - no dated card currently occupies page 7 bottom-right of https://www.visitsaudi.com/content/dam/documents/saudi-calendar-ar.pdf
 - ذكريات سبيستون مع الفنان عاصم سكر (visit-saudi-summer-2026-p062-bottom-left.jpg) - identity-mismatch - page 62 bottom-left is now "ENC 2026"
 
 ## Verified
@@ -18,13 +19,10 @@
 - سوق الثلاثاء الشعبي (visit-saudi-summer-2026-p004-top-left.jpg)
 - صندوق أسامة من مخرج ثمانية (visit-saudi-summer-2026-p057-bottom-right.jpg)
 - كايف المزرعة (visit-saudi-summer-2026-p057-bottom-left.jpg)
-- سمره (visit-saudi-summer-2026-p005-bottom-right.jpg)
 - مزرعة ركايب (visit-saudi-summer-2026-p006-bottom-right.jpg)
 - معرض قلب البحر (visit-saudi-summer-2026-p040-top-left.png)
-- مهرجان صوت أبها SAF (visit-saudi-summer-2026-p007-bottom-right.jpg)
 - معرض في تتبّع ذكريات غامرة (visit-saudi-summer-2026-p040-bottom-right.png)
 - نادي ستورم في العماريه (visit-saudi-summer-2026-p058-top-left.jpg)
-- مهرجان مبدى (visit-saudi-summer-2026-p007-bottom-right.jpg)
 - واحة عسيب (visit-saudi-summer-2026-p009-top-left.jpg)
 - بيوني الشرف (visit-saudi-summer-2026-p010-bottom-right.jpg)
 - مهابة (visit-saudi-summer-2026-p011-bottom-left.png)
