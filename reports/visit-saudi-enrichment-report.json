@@ -1,13 +1,13 @@
 {
-  "generated_at": "2026-09-16T07:59:08.880Z",
+  "generated_at": "2026-09-17T08:12:00.129Z",
   "catalog": "data/events_catalog.json",
   "source": "Visit Saudi Calendar",
   "totals": {
-    "targets": 44,
-    "candidates": 28,
-    "enriched": 44,
-    "fetched": 44,
-    "images": 42,
+    "targets": 47,
+    "candidates": 31,
+    "enriched": 47,
+    "fetched": 47,
+    "images": 45,
     "fetch_failures": 0
   },
   "enriched": [
@@ -284,6 +284,14 @@
       "features": 7
     },
     {
+      "id": "event-faia-younan-in-jeddah",
+      "title": "Faia Younan in Jeddah",
+      "source_method": "official-page-html",
+      "image_url": "https://www.visitsaudi.com/content/dam/wvs/calendar/faia-younan-in-jeddah.jpg",
+      "fetched": true,
+      "features": 7
+    },
+    {
       "id": "event-khaled-jwad-live-in-jeddah",
       "title": "Khaled Jwad Live in Jeddah",
       "source_method": "official-page-html",
@@ -328,6 +336,22 @@
       "title": "Alaa El Sheikh Live in Jeddah",
       "source_method": "official-page-html",
       "image_url": "https://www.visitsaudi.com/content/dam/wvs/calendar/alaa-el-sheikh-live-in-jeddah.jpg",
+      "fetched": true,
+      "features": 7
+    },
+    {
+      "id": "event-uci-urban-cycling-world-championships",
+      "title": "UCI URBAN CYCLING WORLD CHAMPIONSHIPS",
+      "source_method": "official-page-html",
+      "image_url": "https://www.visitsaudi.com/content/dam/wvs/calendar/uci-urban-cycling-world-championships.jpg",
+      "fetched": true,
+      "features": 7
+    },
+    {
+      "id": "event-wagef-nemr-live-comedy-show-in-jeddah",
+      "title": "Wagef! Nemr Live Comedy Show in Jeddah",
+      "source_method": "official-page-html",
+      "image_url": "https://www.visitsaudi.com/content/dam/wvs/calendar/wagef-nemr-live-comedy-show-in-jeddah.jpg",
       "fetched": true,
       "features": 7
     },

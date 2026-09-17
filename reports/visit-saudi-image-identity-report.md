@@ -1,16 +1,13 @@
 # EventLive Visit Saudi Image Identity Report
 
-- generated_at: 2026-09-16T07:56:51.194Z
-- pdf_crop_assignments: 27
+- generated_at: 2026-09-17T08:09:50.496Z
+- pdf_crop_assignments: 24
 - verified: 23
-- struck: 4
+- struck: 1
 - slots_seen_this_cycle: 25
 
 ## Struck (fell back to generated cover)
 
-- سمره (visit-saudi-summer-2026-p005-bottom-right.jpg) - slot-vacated - no dated card currently occupies page 5 bottom-right of https://www.visitsaudi.com/content/dam/documents/saudi-calendar-ar.pdf
-- مهرجان صوت أبها SAF (visit-saudi-summer-2026-p007-bottom-right.jpg) - slot-vacated - no dated card currently occupies page 7 bottom-right of https://www.visitsaudi.com/content/dam/documents/saudi-calendar-ar.pdf
-- مهرجان مبدى (visit-saudi-summer-2026-p007-bottom-right.jpg) - slot-vacated - no dated card currently occupies page 7 bottom-right of https://www.visitsaudi.com/content/dam/documents/saudi-calendar-ar.pdf
 - ذكريات سبيستون مع الفنان عاصم سكر (visit-saudi-summer-2026-p062-bottom-left.jpg) - identity-mismatch - page 62 bottom-left is now "ENC 2026"
 
 ## Verified

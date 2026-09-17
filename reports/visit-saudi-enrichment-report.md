@@ -1,11 +1,11 @@
 # Visit Saudi Calendar Enrichment Report
 
-- generated_at: 2026-09-16T07:59:08.880Z
-- targets: 44
-- candidates: 28
-- enriched: 44
-- fetched: 44
-- images: 42
+- generated_at: 2026-09-17T08:12:00.129Z
+- targets: 47
+- candidates: 31
+- enriched: 47
+- fetched: 47
+- images: 45
 - fetch_failures: 0
 
 ## Enriched
@@ -44,12 +44,15 @@
 - 3a Ka3ba - official-page-html - image=yes - features=7
 - Saudi National Day - official-page-html - image=yes - features=7
 - Takwat Shaker - official-page-html - image=yes - features=7
+- Faia Younan in Jeddah - official-page-html - image=yes - features=7
 - Khaled Jwad Live in Jeddah - official-page-html - image=yes - features=7
 - Tony Abou Jaoude Live in Riyadh - official-page-html - image=yes - features=7
 - Tony Abou Jaoude Live in Jeddah - official-page-html - image=yes - features=7
 - Al Milwah Falcon Race - official-page-html - image=yes - features=7
 - Alaa El Sheikh Live in Riyadh - official-page-html - image=yes - features=7
 - Alaa El Sheikh Live in Jeddah - official-page-html - image=yes - features=7
+- UCI URBAN CYCLING WORLD CHAMPIONSHIPS - official-page-html - image=yes - features=7
+- Wagef! Nemr Live Comedy Show in Jeddah - official-page-html - image=yes - features=7
 - The Innovation Driven Water Sustainability Conference - official-page-html - image=yes - features=7
 - Founding Day - official-page-html - image=yes - features=7
 - Eid Al-Fitr - official-page-html - image=no - features=6

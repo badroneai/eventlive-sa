@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-16T07:56:51.194Z",
+  "generated_at": "2026-09-17T08:09:50.496Z",
   "catalog": "data/events_catalog.json",
   "candidates": "data/source_candidates.json",
   "manifest": "data/event_image_cache_manifest.json",
@@ -9,33 +9,12 @@
     "min_intersection": 2
   },
   "totals": {
-    "pdf_crop_assignments": 27,
+    "pdf_crop_assignments": 24,
     "verified": 23,
-    "struck": 4,
+    "struck": 1,
     "slots_seen_this_cycle": 25
   },
   "struck": [
-    {
-      "id": "event-سمره",
-      "title": "سمره",
-      "file": "visit-saudi-summer-2026-p005-bottom-right.jpg",
-      "reason": "slot-vacated",
-      "detail": "no dated card currently occupies page 5 bottom-right of https://www.visitsaudi.com/content/dam/documents/saudi-calendar-ar.pdf"
-    },
-    {
-      "id": "event-مهرجان-صوت-أبها-saf",
-      "title": "مهرجان صوت أبها SAF",
-      "file": "visit-saudi-summer-2026-p007-bottom-right.jpg",
-      "reason": "slot-vacated",
-      "detail": "no dated card currently occupies page 7 bottom-right of https://www.visitsaudi.com/content/dam/documents/saudi-calendar-ar.pdf"
-    },
-    {
-      "id": "event-مهرجان-مبدى",
-      "title": "مهرجان مبدى",
-      "file": "visit-saudi-summer-2026-p007-bottom-right.jpg",
-      "reason": "slot-vacated",
-      "detail": "no dated card currently occupies page 7 bottom-right of https://www.visitsaudi.com/content/dam/documents/saudi-calendar-ar.pdf"
-    },
     {
       "id": "event-ذكريات-سبيستون-مع-الفنان-عاصم-سكر",
       "title": "ذكريات سبيستون مع الفنان عاصم سكر",

@@ -1,41 +1,42 @@
 # EventLive Harvest OS Status
 
-- Generated at: 2026-09-16T08:18:12.476Z
+- Generated at: 2026-09-17T08:25:47.438Z
 - Status: NEEDS_WORK
 - Operating rule: Probe before new sources; sample before full harvest; Raw collection is not publication; discovery-only never auto-publishes.
 
 ## Totals
 
 - Sources: 88
-- Candidates: 527
-- Matched candidates: 515
+- Candidates: 545
+- Matched candidates: 513
 - Auto-publish sources: 15
 - Candidate-only sources: 12
 - Partnership-required sources: 5
-- Productive sources / attempted: 17/20
-- Collector errors: 6 (chronic 5, transient 1)
+- Productive sources / attempted: 18/32
+- Collector errors: 7 (chronic 6, transient 1)
 
 ## Publication Funnel
 
 | Stage | Count |
 | --- | --- |
-| discovered_this_run | 222 |
-| candidate_queue | 527 |
-| evaluated_for_publish | 527 |
-| linked_existing | 510 |
-| published_new | 3 |
-| blocked | 14 |
+| discovered_this_run | 257 |
+| candidate_queue | 545 |
+| evaluated_for_publish | 545 |
+| linked_existing | 496 |
+| published_new | 13 |
+| blocked | 36 |
 | secondary_promoted | 0 |
-| secondary_still_blocked | 15 |
+| secondary_still_blocked | 46 |
 
 ## Blocked Reasons
 
 | Reason | Count |
 | --- | --- |
+| publication gate source-evidence is not auto-publishable | 22 |
 | unknown category requires review | 4 |
 | possible duplicate requires review: exact-title-city-source-conflict | 2 |
-| publication gate source-evidence is not auto-publishable | 2 |
 | possible duplicate requires review: fuzzy-title-venue-date-window | 2 |
+| possible duplicate already exists: event-melwah-falcon-racing | 2 |
 | possible duplicate requires review: exact-title-city-venue-conflict | 2 |
 | linked catalog row event-feena-nehke-stand-up-comedy-by-john-achkar was superseded by dedupe | 1 |
 | linked catalog row event-music-festival-mdlbeast-soundstorm was superseded by dedupe | 1 |
@@ -44,12 +45,13 @@
 
 | Source | Kind | Failed runs in a row | Attempted this run | Reason |
 | --- | --- | --- | --- | --- |
-| moc-cultural-calendar | chronic | 34 | no | collector-error: fetch failed; fetch failed |
-| mos-events | chronic | 34 | no | collector-error: fetch failed |
-| moc-cultural-subportals | chronic | 34 | no | collector-error: fetch failed; fetch failed |
-| saudi-pro-league-fixtures | chronic | 14 | no | collector-error: fetch failed |
-| tuwaiq-academy-bootcamps | chronic | 11 | no | collector-error: HTTP 403 |
-| monshaat-events | transient | 2 | yes | fetch failed; fetch failed |
+| moc-cultural-calendar | chronic | 35 | yes | collector-error: fetch failed; fetch failed |
+| mos-events | chronic | 35 | yes | collector-error: fetch failed |
+| moc-cultural-subportals | chronic | 35 | yes | collector-error: fetch failed; fetch failed |
+| saudi-pro-league-fixtures | chronic | 15 | yes | collector-error: fetch failed |
+| tuwaiq-academy-bootcamps | chronic | 12 | yes | collector-error: HTTP 403 |
+| monshaat-events | chronic | 3 | yes | collector-error: fetch failed; fetch failed |
+| future-skills-catalog | transient | 1 | yes | The operation was aborted due to timeout; page.goto: Timeout 30000ms exceeded. Call log:   - navigating to "https://futureskills.mcit.gov.sa/ar/catalogue/all?label=&field_main_tracks_target_id_verf=56 |
 
 | Source | Policy | Trust | Gate |
 | --- | --- | --- | --- |

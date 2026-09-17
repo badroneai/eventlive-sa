@@ -1,21 +1,21 @@
 {
   "schema": "eventlive.harvest-os-status.v1",
-  "generated_at": "2026-09-16T08:18:12.476Z",
+  "generated_at": "2026-09-17T08:25:47.438Z",
   "status": "NEEDS_WORK",
   "operating_rule": "Probe before new sources; sample before full harvest; Raw collection is not publication; discovery-only never auto-publishes.",
   "totals": {
     "sources": 88,
-    "candidates": 527,
-    "matched_candidates": 515,
+    "candidates": 545,
+    "matched_candidates": 513,
     "auto_publish_sources": 15,
     "candidate_only_sources": 12,
     "partnership_required_sources": 5,
     "blocked_or_closed_sources": 0,
     "manual_review_sources": 56,
-    "collection_attempted": 20,
-    "productive_sources": 17,
-    "collector_errors": 6,
-    "chronic_collector_errors": 5,
+    "collection_attempted": 32,
+    "productive_sources": 18,
+    "collector_errors": 7,
+    "chronic_collector_errors": 6,
     "transient_collector_errors": 1
   },
   "policies": {
@@ -25,25 +25,26 @@
     "manual_review": 56
   },
   "candidates_by_gate": {
-    "catalog-review": 515,
+    "catalog-review": 511,
     "duplicate-review": 6,
-    "source-evidence": 6
+    "source-evidence": 28
   },
   "funnel": {
-    "discovered_this_run": 222,
-    "candidate_queue": 527,
-    "evaluated_for_publish": 527,
-    "linked_existing": 510,
-    "published_new": 3,
-    "blocked": 14,
+    "discovered_this_run": 257,
+    "candidate_queue": 545,
+    "evaluated_for_publish": 545,
+    "linked_existing": 496,
+    "published_new": 13,
+    "blocked": 36,
     "secondary_promoted": 0,
-    "secondary_still_blocked": 15
+    "secondary_still_blocked": 46
   },
   "blocked_reasons": {
     "possible duplicate requires review: exact-title-city-source-conflict": 2,
-    "publication gate source-evidence is not auto-publishable": 2,
     "unknown category requires review": 4,
+    "publication gate source-evidence is not auto-publishable": 22,
     "possible duplicate requires review: fuzzy-title-venue-date-window": 2,
+    "possible duplicate already exists: event-melwah-falcon-racing": 2,
     "possible duplicate requires review: exact-title-city-venue-conflict": 2,
     "linked catalog row event-feena-nehke-stand-up-comedy-by-john-achkar was superseded by dedupe": 1,
     "linked catalog row event-music-festival-mdlbeast-soundstorm was superseded by dedupe": 1
@@ -52,42 +53,49 @@
     {
       "id": "moc-cultural-calendar",
       "note": "collector-error: fetch failed; fetch failed",
-      "error_streak": 34,
+      "error_streak": 35,
       "kind": "chronic",
-      "attempted_this_run": false
+      "attempted_this_run": true
     },
     {
       "id": "mos-events",
       "note": "collector-error: fetch failed",
-      "error_streak": 34,
+      "error_streak": 35,
       "kind": "chronic",
-      "attempted_this_run": false
+      "attempted_this_run": true
     },
     {
       "id": "moc-cultural-subportals",
       "note": "collector-error: fetch failed; fetch failed",
-      "error_streak": 34,
+      "error_streak": 35,
       "kind": "chronic",
-      "attempted_this_run": false
+      "attempted_this_run": true
     },
     {
       "id": "saudi-pro-league-fixtures",
       "note": "collector-error: fetch failed",
-      "error_streak": 14,
+      "error_streak": 15,
       "kind": "chronic",
-      "attempted_this_run": false
+      "attempted_this_run": true
     },
     {
       "id": "tuwaiq-academy-bootcamps",
       "note": "collector-error: HTTP 403",
-      "error_streak": 11,
+      "error_streak": 12,
       "kind": "chronic",
-      "attempted_this_run": false
+      "attempted_this_run": true
     },
     {
       "id": "monshaat-events",
-      "note": "fetch failed; fetch failed",
-      "error_streak": 2,
+      "note": "collector-error: fetch failed; fetch failed",
+      "error_streak": 3,
+      "kind": "chronic",
+      "attempted_this_run": true
+    },
+    {
+      "id": "future-skills-catalog",
+      "note": "The operation was aborted due to timeout; page.goto: Timeout 30000ms exceeded. Call log:   - navigating to \"https://futureskills.mcit.gov.sa/ar/catalogue/all?label=&field_main_tracks_target_id_verf=56",
+      "error_streak": 1,
       "kind": "transient",
       "attempted_this_run": true
     }
