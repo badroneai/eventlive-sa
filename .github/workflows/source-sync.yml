@@ -164,6 +164,7 @@ jobs:
           npm run test:validation
           npm run test:csv
           npm run test:source-auto-publish
+          npm run test:session-window
           npm run test:source-auto-publish-semantic
           npm run test:source-auto-publish-fuzzy-dedupe
           npm run test:source-growth

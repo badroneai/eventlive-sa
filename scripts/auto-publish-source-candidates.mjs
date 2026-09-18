@@ -12,6 +12,7 @@ import {
 } from './event-dedupe-utils.mjs';
 import { distinctiveTitleTokens, passesImageIdentityGate } from './image-identity-gate.mjs';
 import { isLiveScheduleReady, liveReadySessionCount } from './live-ready-utils.mjs';
+import { reconcileCatalogSessionWindows, reconcileSessionWindow } from './event-session-window.mjs';
 import { ensureDir, exists, readJson, rel, root, writeJson } from './program-lifecycle-utils.mjs';
 
 const candidatesPath = process.env.EVENTLIVE_SOURCE_CANDIDATES_FILE
@@ -696,6 +697,11 @@ function mergeMissingCandidateEnrichment(existing = {}, candidate = {}) {
     existing.sessions = candidateSessions;
     existing.sessions_count = liveReadySessionCount({ sessions: candidateSessions });
     existing.live_schedule_ready = candidateScheduleReady;
+    // 2026-09-19: the sessions just rolled forward; the window must follow them. Before this line
+    // starts_at/ends_at were only refreshed while hasPreciseLiveSchedule() was still false, so a
+    // row froze on the sync that first granted its live schedule (96 Ithra rows, 33 shown as
+    // «منتهية» with future sessions). See scripts/event-session-window.mjs.
+    reconcileSessionWindow(existing);
     if (candidateScheduleReady && !existing.url) existing.url = candidate.source_url || candidate.evidence_url || '';
     if (!candidateScheduleReady) delete existing.url;
   }
@@ -1073,6 +1079,14 @@ function main() {
     if (canonicalIdMap.has(row.event_id)) row.event_id = canonicalIdMap.get(row.event_id);
   }
 
+  // Belt for rows no candidate touched this run (and the one-time heal of the frozen rows):
+  // every row's public window must contain its own official sessions.
+  const sessionWindowChanges = reconcileCatalogSessionWindows(catalogEvents);
+  for (const change of sessionWindowChanges) {
+    const row = catalogEvents.find((event) => event.id === change.event_id);
+    if (row) row.updated_at = publishedAt;
+  }
+
   const report = {
     published_at: publishedAt,
     dry_run: dryRun,
@@ -1087,8 +1101,10 @@ function main() {
       blocked: blocked.length,
       duplicate_review_alerts: duplicateReviewAlerts.length,
       category_fallback_alerts: categoryFallbackAlerts.length,
-      reconciled: published.length + linkedExisting.length
+      reconciled: published.length + linkedExisting.length,
+      session_windows_reconciled: sessionWindowChanges.length
     },
+    session_window_changes: sessionWindowChanges,
     category_fallback_alerts: categoryFallbackAlerts,
     duplicate_catalog_rows_removed: dedupedCatalog.removed.length
       + semanticDedupedCatalog.removed.length
