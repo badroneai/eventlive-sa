@@ -4686,7 +4686,16 @@ function extractHayyJameelDateRangeFromMonthDayMatrix(text = '', fallbackYear = 
   // "July 20", then inferYear() pushed it to next year → 40 of 93 Hayy rows advertised 2027 for
   // 2026 screenings). When the page states its year (URL slug / trailing year after a day list
   // such as "July 1, 2, 3, 12 2026") that year wins over the assume-next-year guess.
-  const yearFor = (yearText, month, day) => Number(yearText || explicitYear || inferYear(month, day) || fallbackYear);
+  // 2026-09-19: a screening list writes its year once and then stops — "6 December 2022, 8pm |
+  // 17 December, 8pm | 24 December, 8pm". Reading each token independently gave the year-less
+  // ones inferYear()'s guess of a future year, so a December 2022 retrospective came out as a
+  // 2022→2026 window and three of them are live right now dated 2026-12-20. A year stated
+  // earlier in the same list is inherited by the tokens that follow it, the way a reader does.
+  let inheritedYear = null;
+  const yearFor = (yearText, month, day) => {
+    if (yearText) { inheritedYear = Number(yearText); return inheritedYear; }
+    return Number(inheritedYear || explicitYear || inferYear(month, day) || fallbackYear);
+  };
   const dayListPattern = /([A-Za-z]{3,9})\s+((?:\d{1,2}(?!\d)\s*,\s*)+\d{1,2}(?!\d))\s+(20\d{2})(?!\d)/gi;
   for (const match of [...normalized.matchAll(dayListPattern)]) {
     const month = monthIndex(match[1]);
