@@ -59,17 +59,25 @@ const nav = (inner) => `<nav class="uk-background-default side-nav uk-hidden@m">
   assert.equal(twoMonths.ends_at.slice(0, 10), '2026-04-30', 'a "March & April" heading spans both months');
 }
 
-// 2. data
+// 2. data — the catalog AND the candidate pool. The pool is a second store of the same dates:
+//    auto-publish re-applies a matched candidate's window to its catalog row on every sync, and
+//    a source that is not re-collected that run keeps its old candidates. Healing only the catalog
+//    let the 2027 windows come straight back on the next sync (run 35425674234, 2026-09-19).
 {
+  const slugYearViolations = (rows, label) => {
+    const violations = [];
+    for (const row of rows) {
+      if (row.source_label !== source.name) continue;
+      const match = String(row.source_url || '').match(/(?:^|[^\d])(20\d{2})(?!\d)/);
+      if (!match) continue;
+      const year = match[1];
+      if (String(row.starts_at).slice(0, 4) !== year && String(row.ends_at).slice(0, 4) !== year) violations.push(`${label} ${row.id} slug=${year} starts_at=${String(row.starts_at).slice(0, 10)}`);
+    }
+    return violations;
+  };
   const events = JSON.parse(fs.readFileSync(path.join(root, 'data', 'events_catalog.json'), 'utf8')).events || [];
-  const violations = [];
-  for (const event of events) {
-    if (event.source_label !== source.name) continue;
-    const match = String(event.source_url || '').match(/(?:^|[^\d])(20\d{2})(?!\d)/);
-    if (!match) continue;
-    const year = match[1];
-    if (event.starts_at.slice(0, 4) !== year && event.ends_at.slice(0, 4) !== year) violations.push(`${event.id} slug=${year} starts_at=${event.starts_at.slice(0, 10)}`);
-  }
+  const candidates = JSON.parse(fs.readFileSync(path.join(root, 'data', 'source_candidates.json'), 'utf8')).candidates || [];
+  const violations = [...slugYearViolations(events, 'catalog'), ...slugYearViolations(candidates, 'candidate')];
   assert.equal(violations.length, 0, `Hayy rows whose slug year contradicts their window (run node scripts/heal-hayy-jameel-year-shift.mjs):\n${violations.join('\n')}`);
-  console.log(`HAYY_YEAR_INTEGRITY_OK hayy_rows=${events.filter((event) => event.source_label === source.name).length}`);
+  console.log(`HAYY_YEAR_INTEGRITY_OK hayy_rows=${events.filter((event) => event.source_label === source.name).length} hayy_candidates=${candidates.filter((row) => row.source_label === source.name).length}`);
 }
