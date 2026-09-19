@@ -142,6 +142,38 @@ if (fs.existsSync(distEventsPath) && fs.existsSync(distAudiencesPath) && fs.exis
   check('Built Arabic Language Exhibition must not be tagged sports', !byId.get('event-arabic-language-exhibition-28')?.audiences?.includes('sports'), `got ${byId.get('event-arabic-language-exhibition-28')?.audiences?.join(', ')}`);
 }
 
+// 2026-09-19 — word boundaries. `/art/` had none, so "Sm-art Data & AI Summit", "Saudi AI Week"
+// (artifici-al), "Cityscape Global" (sm-art), "Web Summit" (st-art-up), "Quarter-Finals: FIFA"
+// (qu-art-er) and "Pool Party" (P-art-y) all landed on the creatives audience page; `/فن/` is two
+// letters, so a hotel-management diploma qualified through الإدارة الفند-قية. And JavaScript's \b
+// is ASCII-only, so the obvious repair — /\bفن\b/ — matches nothing at all. Both directions are
+// asserted here: the false ones must go, and the real ones must stay.
+{
+  const creativesOf = (event) => classifyAudiences({ ...event, audiences: undefined });
+  const mustNot = [
+    ['artificial ≠ art', { title: 'Global AI Summit', summary: 'A summit on artificial intelligence.', category: 'technology-innovation' }],
+    ['smart ≠ art', { title: 'Cityscape Global 2026', summary: 'Smart city real estate exhibition.', category: 'exhibitions-conferences' }],
+    ['startup ≠ art', { title: 'Web Summit', summary: 'A gathering for startups and investors.', category: 'business-entrepreneurship' }],
+    ['quarter ≠ art', { title: 'Quarter-Finals at the Fan Zone', summary: 'Football screening.', category: 'sports-outdoors' }],
+    ['party ≠ art', { title: 'Pool Party', summary: 'A summer pool party.', category: 'family-entertainment' }],
+    ['فندقية ≠ فن', { title: 'دبلوم الإدارة الفندقية', summary: 'برنامج في الإدارة الفندقية.', category: 'education-training' }],
+    ['designed ≠ design', { title: 'Ruh Space', summary: 'Designed for football enthusiasts, the venue offers live screenings.', category: 'sports-outdoors' }]
+  ];
+  for (const [label, event] of mustNot) {
+    check(`creatives must not fire on ${label}`, !creativesOf(event).includes('creatives'), `got ${creativesOf(event).join(', ')}`);
+  }
+  const mustFire = [
+    ['شارع الفن', { title: 'شارع الفن - القرية الريفية', summary: 'شارع للفنون.', category: 'tourism-experiences' }],
+    ['معرض الحرف', { title: 'معرض الحرف والأعمال اليدوية', summary: 'معرض للحرف اليدوية.', category: 'exhibitions-conferences' }],
+    ['والثقافة with a comma', { title: 'مهابة', summary: 'تجربة تجمع بين الطبيعة، والثقافة، والترفيه.', category: 'sports-outdoors' }],
+    ['موسيقية', { title: 'مهرجان لحن المملكة', summary: 'فعالية موسيقية نوعية.', category: 'culture-arts' }],
+    ['plain art', { title: 'Hayy Arts | Red Wind', summary: 'A contemporary art exhibition.', category: 'culture-arts' }]
+  ];
+  for (const [label, event] of mustFire) {
+    check(`creatives must still fire on ${label}`, creativesOf(event).includes('creatives'), `got ${creativesOf(event).join(', ')}`);
+  }
+}
+
 if (failures.length) {
   console.error(`\n${failures.length} audience regression failure(s):`);
   for (const failure of failures) console.error(` - ${failure}`);
