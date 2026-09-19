@@ -135,6 +135,16 @@ jobs:
           EVENTLIVE_KSA_EGRESS_PROXY: ${{ secrets.EVENTLIVE_KSA_EGRESS_PROXY }}
         run: npm run sources:sync
 
+      - name: Second-opinion quality report (never blocking, no-op without the key)
+        # Reports; never writes catalog data and never fails the run. Dormant until
+        # TYPESAFE_API_KEY exists as a repository secret — see scripts/jev-quality-reporter.mjs
+        # for what three waves of measurement said this model may and may not be trusted with.
+        continue-on-error: true
+        env:
+          TYPESAFE_API_KEY: ${{ secrets.TYPESAFE_API_KEY }}
+          EVENTLIVE_JEV_MAX_CALLS: 60
+        run: npm run quality:jev-report
+
       - name: Setup Python for autonomous content translation
         uses: actions/setup-python@v6
         with:
@@ -167,6 +177,7 @@ jobs:
           npm run test:session-window
           npm run test:hayy-year-integrity
           npm run test:non-event-publication
+          npm run test:jev-quality-reporter
           npm run test:source-auto-publish-semantic
           npm run test:source-auto-publish-fuzzy-dedupe
           npm run test:source-growth
