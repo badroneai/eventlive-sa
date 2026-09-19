@@ -1,6 +1,7 @@
 import assert from 'node:assert/strict';
 import fs from 'node:fs';
 import path from 'node:path';
+import { loadBuildRecordExclusions } from './published-output-persistence.mjs';
 
 // This gate asserts POST-ENRICHMENT catalog state, so run order matters: on a
 // fresh checkout it reads whatever the committed catalog last carried, which
@@ -60,7 +61,16 @@ assert.ok(
 );
 
 const distEnriched = distEvents.filter((event) => event.program_outline?.provider === 'Saudi Food and Drug Authority');
-assert.ok(distEnriched.length >= enrichedCatalog.length, 'build must carry SFDA program outlines into dist/events.json');
+// The catalog and dist/events.json are NOT one-to-one: the build collapses duplicates onto a
+// primary and refuses non-public rows, and records every such drop in
+// reports/build-record-exclusions.json. Rows it recorded as dropped are excused by id; anything
+// else missing still fails and names the row (class fix 2026-09-19, three sync outages).
+const buildExclusions = loadBuildRecordExclusions(root, fs, path);
+const excusedEnriched = enrichedCatalog.filter((event) => buildExclusions.has(String(event.id || '').normalize('NFC')));
+assert.ok(
+  distEnriched.length >= enrichedCatalog.length - excusedEnriched.length,
+  `build must carry SFDA program outlines into dist/events.json: ${distEnriched.length} in dist, ${enrichedCatalog.length} enriched in the catalog, ${excusedEnriched.length} recorded as dropped by the build (${excusedEnriched.map((event) => `${event.id}:${buildExclusions.get(String(event.id).normalize('NFC'))?.reason}`).join(', ') || 'none'})`
+);
 
 const sample = distEnriched[0];
 const detailPath = path.join(root, 'dist', String(sample.detail_url || '').replace(/^\.\//, ''));

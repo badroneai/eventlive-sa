@@ -1,6 +1,7 @@
 import assert from 'node:assert/strict';
 import fs from 'node:fs';
 import path from 'node:path';
+import { loadBuildRecordExclusions } from './published-output-persistence.mjs';
 
 const root = process.cwd();
 const catalogPath = path.join(root, 'data', 'events_catalog.json');
@@ -29,7 +30,16 @@ const imageRichRows = enrichedCatalog.filter((event) => /scene7\.com\/is\/image\
 assert.ok(imageRichRows.length >= 5, 'Visit Saudi enrichment must preserve or discover high quality official Scene7 images');
 
 const distEnriched = distEvents.filter((event) => event.program_outline?.provider === 'Visit Saudi Calendar');
-assert.ok(distEnriched.length >= enrichedCatalog.length, 'build must carry Visit Saudi program outlines into dist/events.json');
+// The catalog and dist/events.json are NOT one-to-one: the build collapses duplicates onto a
+// primary and refuses non-public rows, and records every such drop in
+// reports/build-record-exclusions.json. Rows it recorded as dropped are excused by id; anything
+// else missing still fails and names the row (class fix 2026-09-19, three sync outages).
+const buildExclusions = loadBuildRecordExclusions(root, fs, path);
+const excusedEnriched = enrichedCatalog.filter((event) => buildExclusions.has(String(event.id || '').normalize('NFC')));
+assert.ok(
+  distEnriched.length >= enrichedCatalog.length - excusedEnriched.length,
+  `build must carry Visit Saudi program outlines into dist/events.json: ${distEnriched.length} in dist, ${enrichedCatalog.length} enriched in the catalog, ${excusedEnriched.length} recorded as dropped by the build (${excusedEnriched.map((event) => `${event.id}:${buildExclusions.get(String(event.id).normalize('NFC'))?.reason}`).join(', ') || 'none'})`
+);
 
 const sample = distEnriched.find((event) => event.id === 'event-leap-2026') || distEnriched[0];
 const detailPath = path.join(root, 'dist', String(sample.detail_url || '').replace(/^\.\//, ''));
