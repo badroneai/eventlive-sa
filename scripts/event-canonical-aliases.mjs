@@ -63,7 +63,37 @@ export const EVENT_CANONICAL_ALIASES = new Map([
   ['event-global-ai-summit-gain', 'event-global-ai-summit'],
   // Same PDF, same season, same village — one row drops the hamza and lands
   // in Taif; Al Atawlah is in Al Baha.
-  ['event-قرية-الاطاولة-التراثية', 'event-قرية-الأطاولة-التراثية']
+  ['event-قرية-الاطاولة-التراثية', 'event-قرية-الأطاولة-التراثية'],
+
+  // 2026-09-19 — cross-script pairs, found by wave 2 of the Event Quality Lab. Wave 1's blocker
+  // keyed on canonical title tokens, and an Arabic title shares ZERO tokens with its English
+  // twin, so this whole class was invisible to it: 560 cross-script candidates (same city,
+  // overlapping window, opposite script) were judged, 41 came back >= 0.7, and every one below
+  // was then confirmed by hand as the same name transliterated or translated. Eight look-alikes
+  // in the same confidence band were rejected on inspection (ارياش/MARNIS, مارنيز/ARYASH,
+  // مدماك/Dakah in Abha, and the two crossed Art Street villages), which is the measurement:
+  // cross-script judgement is materially weaker than same-script, so hand confirmation is not
+  // optional here. Same shape as the entries above: the PDF row keeps its page and points
+  // <link rel="canonical"> at the first-party record.
+  ['event-صيف-وسمرة', 'event-the-summer-gathering'],
+  ['event-شارع-الفن-القرية-الأوروبية', 'event-europe-village-art-street'],
+  ['event-مزرعة-ركايب', 'event-rekaib-farm'],
+  ['event-مهرجان-مبدى', 'event-mabdaa-festival'],
+  ['event-نفس', 'event-nafas'],
+  ['event-الأخطبوطية', 'event-okhtabotiya'],
+  ['event-شارع-الفن-القرية-الريفية', 'event-rural-village-art-street'],
+  ['event-مدماك', 'event-mdmak'],
+  ['event-مزرعة-التوت-الأسود', 'event-blackberry-farm'],
+  ['event-ارياش', 'event-aryash'],
+  ['event-مارنيز', 'event-marnis'],
+  ['event-مهابة', 'event-mahabah'],
+  ['event-أشجار', 'event-ashjar-farm'],
+  ['event-باتو', 'event-plato'],
+  ['event-صيف-وِرث-2026', 'event-summer-legacy'],
+  ['event-ليالي-مضيئة', 'event-light-nights'],
+  ['event-باتل-كارت-في-أبها', 'event-battlekart-in-abha'],
+  ['event-صيف-عذية', 'event-athyah-summer'],
+  ['event-معرض-الحرف-والأعمال-اليدوية-2026', 'event-crafts-handicrafts-exhibition']
 ]);
 
 /** dist-relative page paths (Arabic surface) of every aliased duplicate. */
