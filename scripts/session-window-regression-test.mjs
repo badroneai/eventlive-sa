@@ -144,3 +144,20 @@ const root = process.cwd();
   assert.equal(violations.length, 0, `catalog rows whose ends_at precedes an official session (run node scripts/heal-session-windows.mjs):\n${violations.slice(0, 20).map((v) => `${v.event_id} ends_at=${v.ends_at} latest_session=${v.latest_official_session_end}`).join('\n')}`);
   console.log(`SESSION_WINDOW_OK events=${events.length} with_official_sessions=${events.filter((event) => (event.sessions || []).some((session) => String(session.session_type || '').startsWith('official-'))).length}`);
 }
+
+// 4. built surface (belt): no public card may say «منتهية» while an official session is still ahead.
+//    Reads dist/events.json when a build exists (pr-verify and source-sync build before the gates);
+//    reports "not checked" otherwise instead of passing silently.
+{
+  const distEvents = path.join(root, 'dist', 'events.json');
+  if (!fs.existsSync(distEvents)) {
+    console.log('SESSION_WINDOW_BUILT_SURFACE not checked (dist/events.json absent — run npm run build first)');
+  } else {
+    const now = Date.now();
+    const built = JSON.parse(fs.readFileSync(distEvents, 'utf8')).events || [];
+    const contradictions = built.filter((event) => event.status === 'ended'
+      && (event.sessions || []).some((session) => String(session.session_type || '').startsWith('official-') && Date.parse(session.starts_at || '') > now));
+    assert.equal(contradictions.length, 0, `built cards marked ended while official sessions are still ahead:\n${contradictions.slice(0, 20).map((event) => event.id).join('\n')}`);
+    console.log(`SESSION_WINDOW_BUILT_SURFACE_OK built_events=${built.length}`);
+  }
+}
