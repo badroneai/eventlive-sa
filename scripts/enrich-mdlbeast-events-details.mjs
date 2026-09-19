@@ -215,12 +215,28 @@ function applyMdlbeastDetails(event, candidate = {}, page = {}) {
   const title = cleanText(page.title || candidate.title || event.title);
   const officialDescription = stripSourceAttribution(cleanText(page.description || page.seo_description || candidate.summary || event.summary));
   const imageUrl = cleanText(page.image || event.image_url || candidate.image_url || '');
-  const startsAt = page.starts_at || event.starts_at || candidate.starts_at;
-  const endsAt = page.ends_at || event.ends_at || candidate.ends_at;
+  // 2026-09-19 (sync run 35434118725): the page yielded an end without a start, the row kept its
+  // own start, and the merged window came out inverted (17 Sep 21:00 → 11 Sep 03:00) — validate
+  // then blocked the whole publish. A page window is adopted only as a chronological PAIR; any
+  // half-pair or inverted pair falls back to the row's own window, and an inverted fallback is
+  // left untouched rather than written.
+  const isChronological = (start, end) => {
+    const startMs = Date.parse(start || '');
+    const endMs = Date.parse(end || '');
+    return Number.isFinite(startMs) && Number.isFinite(endMs) && endMs > startMs;
+  };
+  const pageWindow = isChronological(page.starts_at, page.ends_at) ? { starts_at: page.starts_at, ends_at: page.ends_at } : null;
+  const fallbackWindow = isChronological(event.starts_at, event.ends_at)
+    ? { starts_at: event.starts_at, ends_at: event.ends_at }
+    : (isChronological(candidate.starts_at, candidate.ends_at) ? { starts_at: candidate.starts_at, ends_at: candidate.ends_at } : null);
+  if (page.starts_at || page.ends_at) {
+    if (!pageWindow) console.log(`MDLBEAST_WINDOW_REJECTED ${event.id} page=${page.starts_at || '-'}→${page.ends_at || '-'} kept=${fallbackWindow ? `${fallbackWindow.starts_at}→${fallbackWindow.ends_at}` : 'none'}`);
+  }
+  const window = pageWindow || fallbackWindow;
   if (title) event.title = title;
-  if (startsAt && endsAt) {
-    event.starts_at = startsAt;
-    event.ends_at = endsAt;
+  if (window) {
+    event.starts_at = window.starts_at;
+    event.ends_at = window.ends_at;
   }
   event.city = cleanText(page.city || event.city || candidate.city || 'Riyadh');
   event.venue = cleanText(event.venue || candidate.venue || page.city || 'Riyadh');
