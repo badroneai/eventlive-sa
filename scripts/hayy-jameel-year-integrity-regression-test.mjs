@@ -59,6 +59,17 @@ const nav = (inner) => `<nav class="uk-background-default side-nav uk-hidden@m">
   assert.equal(twoMonths.ends_at.slice(0, 10), '2026-04-30', 'a "March & April" heading spans both months');
 }
 
+// 1d. a screening list states its year once: "6 December 2022, 8pm | 17 December, 8pm". Reading
+//     each token independently gave the year-less ones a guessed FUTURE year, which is how three
+//     December 2022 retrospectives came to sit on the live site dated 2026-12-20.
+{
+  const html = `<html><body>${nav('<h1>Hayy Cinema | Alexandria Why (1979)</h1><p>Screening Schedule: 6 December 2022, 8pm | 17 December, 8pm | 24 December, 8pm | 31 December, 8pm</p>')}</body></html>`;
+  const listing = extractHayyJameelListingFromDetail(html, 'https://hayyjameel.org/whats-on/alexandria-why/', source);
+  assert.ok(listing, 'a schedule-list page must yield a listing');
+  assert.equal(listing.starts_at.slice(0, 10), '2022-12-06', 'the stated year opens the window');
+  assert.equal(listing.ends_at.slice(0, 10), '2022-12-31', 'the year-less dates that follow inherit it — never a guessed future year');
+}
+
 // 2. data — the catalog AND the candidate pool. The pool is a second store of the same dates:
 //    auto-publish re-applies a matched candidate's window to its catalog row on every sync, and
 //    a source that is not re-collected that run keeps its old candidates. Healing only the catalog
