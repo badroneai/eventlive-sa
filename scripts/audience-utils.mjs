@@ -15,6 +15,20 @@ export const AUDIENCE_TAXONOMY = [
 
 const AUDIENCE_SLUGS = new Set(AUDIENCE_TAXONOMY.map((audience) => audience.slug));
 
+// JavaScript's \b is ASCII-only: it never fires next to an Arabic letter, so /\bفن\b/ matches
+// nothing useful while plain /فن/ matches inside فندقية. An Arabic word here means: the stem,
+// optionally carrying the clitic prefixes a Saudi source actually writes (ال، وال، بال، لل، و، ب،
+// ل), and no OTHER Arabic letter on either side of it.
+// \p{Script=Arabic}, not a \u0600-\u06FF range: that range swallows the Arabic comma (U+060C) and
+// the other shared punctuation, so "والثقافة،" read as if a letter followed the word and the
+// lookahead failed on every phrase that ends in a comma.
+const AR_LETTER = '\\p{Script=Arabic}';
+const AR_PREFIX = '(?:و?ال|بال|لل|و|ب|ل)?';
+function arabicWord(stem, suffix = '') {
+  return new RegExp(`(?<![${AR_LETTER}])${AR_PREFIX}${stem}${suffix}(?![${AR_LETTER}])`, 'u');
+}
+
+
 const ARABIC_DIACRITICS = /[\u064b-\u065f\u0670]/g;
 const GENERIC_SOURCE_TAGS = new Set([
   'tourism',
@@ -134,10 +148,22 @@ const RULES = [
   },
   {
     slug: 'creatives',
+    // 2026-09-19: `/art/` had no word boundary and `/فن/` is two letters, so this rule fired on
+    // "Sm-art Data & AI Summit", "Saudi AI Week" (artifici-al), "Cityscape Global" (sm-art),
+    // "Web Summit" (st-art-up), "Quarter-Finals: FIFA" (qu-art-er), "Pool Party" (P-art-y), and
+    // on a hotel-management diploma because الإدارة الفند-قية contains فن. Nineteen rows carried
+    // the "creatives" audience with no art or culture signal anywhere in them, which puts a
+    // robotics mission and an AI summit on the arts audience page.
     patterns: [
-      /فنون/, /فن/, /تصميم/, /سينما/, /مسرح/, /موسيقي/, /ابداع/, /ثقاف/,
-      /ادب/, /اثراء/, /حرف/, /معرض فني/, /art/, /design/, /cinema/, /theater/,
-      /music/, /creative/, /\bculture\b/, /literature/, /ithra/, /mdlbeast/
+      // Written in the NORMALISED alphabet this module matches against: normalizeAudienceText
+      // folds ة→ه, ى→ي, إأآا→ا and strips diacritics, so a pattern containing ة or إ can never fire.
+      arabicWord('فن', '(?:ون|يه|ي|ين|ان|انين)?'), arabicWord('تصميم', '(?:ات)?'),
+      arabicWord('سينما', '(?:ئي|ئيه)?'), arabicWord('مسرح', '(?:ي|يه|يات)?'),
+      arabicWord('موسيق', '(?:ي|يه|يين)?'), arabicWord('ابداع', '(?:ي|يه)?'),
+      arabicWord('ثقاف', '(?:ه|ي|يه)?'), arabicWord('ادب', '(?:ي|يه|اء)?'),
+      arabicWord('حرف', '(?:ه|ي|يه|يين|يات)?'), /اثراء/, /معرض فني/,
+      /\bart\b/, /\barts\b/, /artwork/, /artist/, /\bdesigns?\b/, /designer/, /cinema/, /theat(?:er|re)/, /\bmusic/,
+      /\bcreative\b|\bcreatives\b|\bcreativity\b/, /\bculture\b/, /literature/, /ithra/, /mdlbeast/
     ]
   },
   {
