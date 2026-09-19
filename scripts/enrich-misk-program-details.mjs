@@ -2,6 +2,7 @@ import fs from 'node:fs';
 import path from 'node:path';
 import { stripSourceAttribution, withSourceAttribution } from './source-attribution-utils.mjs';
 import { fallbackEventDescription, fallbackEventGoals } from './event-description-fallback.mjs';
+import { specificProgramTitle } from './misk-program-title.mjs';
 
 const root = process.cwd();
 const catalogPath = path.join(root, 'data', 'events_catalog.json');
@@ -181,7 +182,8 @@ function firstSentence(text = '') {
 
 function extractMiskDetails(html) {
   const text = cleanText(html);
-  const title = metaContent(html, 'og:title') || cleanText(html.match(/<title\b[\s\S]*?<\/title>/i)?.[0] || '').replace(/\s*\|\s*Misk.*$/i, '');
+  const metaTitle = metaContent(html, 'og:title') || cleanText(html.match(/<title\b[\s\S]*?<\/title>/i)?.[0] || '').replace(/\s*\|\s*Misk.*$/i, '');
+  const title = specificProgramTitle(text, metaTitle) || metaTitle;
   const description = metaContent(html, 'description') || metaContent(html, 'og:description');
   const dateRange = parseDateRange(text);
   const overview = textBetween(text, 'Program Overview', ['Who Should Apply?', 'Program Highlights', 'Program Outcomes', 'Application criteria', 'Application Process'])

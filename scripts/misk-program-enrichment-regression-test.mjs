@@ -1,5 +1,6 @@
 import assert from 'node:assert/strict';
 import { loadBuildRecordExclusions } from './published-output-persistence.mjs';
+import { specificProgramTitle } from './misk-program-title.mjs';
 import fs from 'node:fs';
 import path from 'node:path';
 
@@ -42,6 +43,32 @@ assert.ok(
   withGoals.length / enrichedCatalog.length >= 0.8,
   `Misk outcome/audience coverage collapsed: ${withGoals.length}/${enrichedCatalog.length} rows carry goals (floor 80%)`
 );
+
+// Identity: Misk serves the SAME og:title on distinct programme pages (/skills/discover-your-path/
+// and /skills/nahj/ both say "Discover Your Path Program"). Adopting it blindly gave two rows one
+// identity, test:public-dedupe blocked the publish, and the sync could not ship (2026-09-19).
+// The qualifier must be recovered from the page's own body, and never invented.
+{
+  const metaTitle = 'Discover Your Path Program';
+  const nahjBody = 'Misk Skills Programs Discover Your Path (in collaboration with Nahj Association) Program Overview Apply Now';
+  assert.equal(specificProgramTitle(nahjBody, metaTitle), 'Discover Your Path (in collaboration with Nahj Association)', 'the qualifier stated in the page body must be recovered');
+  assert.equal(specificProgramTitle('Discover Your Path Program Program Overview Apply Now', metaTitle), '', 'a page without a qualifier keeps its meta title');
+  assert.equal(specificProgramTitle('Discover Your Path (x)', metaTitle), '', 'a shorter match must never replace the meta title');
+  assert.equal(specificProgramTitle('anything at all', ''), '', 'no meta title, no invention');
+}
+
+// No two published Misk rows may share a normalized title + city + start date: that is the exact
+// shape test:public-dedupe blocks catalog-wide, caught here at the source that produced it.
+{
+  const identity = (event) => `${String(event.title || '').toLowerCase().replace(/\s+/g, ' ').trim()}|${event.city}|${String(event.starts_at).slice(0, 10)}`;
+  const byIdentity = new Map();
+  for (const event of miskCatalog) {
+    const key = identity(event);
+    byIdentity.set(key, [...(byIdentity.get(key) || []), event.id]);
+  }
+  const collisions = [...byIdentity.entries()].filter(([, ids]) => ids.length > 1);
+  assert.equal(collisions.length, 0, `Misk rows sharing one public identity:\n${collisions.map(([key, ids]) => `${key} => ${ids.join(', ')}`).join('\n')}`);
+}
 
 const distEnriched = distEvents.filter((event) => event.program_outline?.provider === 'Misk Hub');
 
