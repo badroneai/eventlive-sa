@@ -13,6 +13,7 @@ import {
 import { distinctiveTitleTokens, passesImageIdentityGate } from './image-identity-gate.mjs';
 import { isLiveScheduleReady, liveReadySessionCount } from './live-ready-utils.mjs';
 import { reconcileCatalogSessionWindows, reconcileSessionWindow } from './event-session-window.mjs';
+import { nonEventReason } from './non-event-record.mjs';
 import { ensureDir, exists, readJson, rel, root, writeJson } from './program-lifecycle-utils.mjs';
 
 const candidatesPath = process.env.EVENTLIVE_SOURCE_CANDIDATES_FILE
@@ -779,6 +780,13 @@ function autoPublishBlocker(candidate, catalogByMatch, catalogByLooseMatch, cata
   if (!candidate.source_url || !candidate.source_label || !candidate.source_owner) return 'missing source identity';
   if (!candidate.evidence_url && !candidate.raw_snapshot_path) return 'missing evidence';
   if (isPast(candidate)) return 'candidate already ended';
+  // Wave 2 of the Event Quality Lab (2026-09-19): a typed classification of every public upcoming
+  // row found 109 of 372 were not attendable events. Three families are unambiguous and are
+  // refused here so no NEW one is ever published — admission/registration notices, standing
+  // institutional initiatives, and calls for submissions. See scripts/non-event-record.mjs. Rows
+  // already live are untouched: unpublishing one is an owner decision.
+  const nonEvent = nonEventReason(candidate);
+  if (nonEvent) return `not an attendable event: ${nonEvent}`;
   if (candidate.review_status === 'rejected' || candidate.publication_gate === 'blocked') return 'candidate is blocked';
   if (['source-evidence', 'extraction'].includes(candidate.publication_gate)) {
     return `publication gate ${candidate.publication_gate} is not auto-publishable`;
