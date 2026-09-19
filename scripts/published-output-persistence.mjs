@@ -18,6 +18,27 @@
 // 40-minute pipeline.
 const COLLAPSE_REASONS = new Set(['duplicate-id', 'duplicate-semantic', 'duplicate-source-identity']);
 
+// Shared with any gate that compares catalog rows against dist/events.json. The
+// two are NOT one-to-one: the build collapses duplicates and refuses non-public
+// records, and until it started recording that, every such gate read a legitimate
+// drop as a missing row. scripts/misk-program-enrichment-regression-test.mjs hit
+// exactly this and blocked a publish.
+export function loadBuildRecordExclusions(root, fs, path) {
+  const file = path.join(root, 'reports', 'build-record-exclusions.json');
+  const byId = new Map();
+  if (!fs.existsSync(file)) return byId;
+  try {
+    const parsed = JSON.parse(fs.readFileSync(file, 'utf8'));
+    for (const row of Array.isArray(parsed?.excluded) ? parsed.excluded : []) {
+      if (row?.id) byId.set(normalizePublishedId(row.id), row);
+      if (row?.slug) byId.set(normalizePublishedId(row.slug), row);
+    }
+  } catch {
+    return new Map();
+  }
+  return byId;
+}
+
 export function normalizePublishedId(value) {
   return String(value || '').normalize('NFC');
 }

@@ -1,6 +1,6 @@
 import fs from 'node:fs';
 import path from 'node:path';
-import { classifyPublishedOutput } from './published-output-persistence.mjs';
+import { classifyPublishedOutput, loadBuildRecordExclusions } from './published-output-persistence.mjs';
 import { ensureDir, exists, readJson, rel, root, writeJson } from './program-lifecycle-utils.mjs';
 
 const statePath = path.join(root, process.env.EVENTLIVE_SOURCE_GROWTH_STATE_FILE || 'data/source_growth_state.json');
@@ -82,22 +82,6 @@ function normalizeId(value = '') {
 // Before this, all three were indistinguishable from "vanished", and the health
 // gate blocked publishing on all of them. It blocked three consecutive runs on
 // 2026-09-04, and the log could not name a single id.
-function loadBuildExclusions(root) {
-  const file = path.join(root, 'reports', 'build-record-exclusions.json');
-  const byId = new Map();
-  if (!fs.existsSync(file)) return byId;
-  try {
-    const parsed = JSON.parse(fs.readFileSync(file, 'utf8'));
-    for (const row of Array.isArray(parsed?.excluded) ? parsed.excluded : []) {
-      if (row?.id) byId.set(normalizeId(row.id), row);
-      if (row?.slug) byId.set(normalizeId(row.slug), row);
-    }
-  } catch {
-    return new Map();
-  }
-  return byId;
-}
-
 function checkPublishedOutputPersisted({ collection, publish, publicEvents, buildExclusions = new Map() }) {
   const publishedIds = [...new Set(
     (Array.isArray(publish?.published) ? publish.published : [])
@@ -142,7 +126,7 @@ function checkPublishedOutputPersisted({ collection, publish, publicEvents, buil
 
 function buildGrowthRun({ generatedAt, catalog, ended, publicEvents, collection, publish, runState }) {
   const sourceRows = Array.isArray(collection?.sources) ? collection.sources : [];
-  const persistence = checkPublishedOutputPersisted({ collection, publish, publicEvents, buildExclusions: loadBuildExclusions(process.cwd()) });
+  const persistence = checkPublishedOutputPersisted({ collection, publish, publicEvents, buildExclusions: loadBuildRecordExclusions(process.cwd(), fs, path) });
   return {
     run_id: collection?.collected_at || publish?.published_at || generatedAt,
     generated_at: generatedAt,
