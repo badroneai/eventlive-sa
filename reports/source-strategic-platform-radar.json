@@ -1,6 +1,6 @@
 {
   "schema": "eventlive.source-strategic-platform-radar.v1",
-  "generated_at": "2026-09-17T07:47:16.426Z",
+  "generated_at": "2026-09-19T13:20:01.600Z",
   "policy": {
     "allowed_use": "official source evidence refresh, API-surface mapping, partnership prioritization, extractor backlog decisions",
     "disallowed_use": "direct catalog publication without official confirmation and duplicate review"
@@ -23,7 +23,7 @@
       "final_url": "https://eportal.scega.gov.sa/home",
       "via": "fetch",
       "content_type": "text/html",
-      "bytes": 30558,
+      "bytes": 30700,
       "title": "الهيئه العامه للمعارض و المؤتمرات",
       "classification": "reachable",
       "error": "",
@@ -60,9 +60,9 @@
       "page_hint_words": [],
       "asset_results": [
         {
-          "url": "https://eportal.scega.gov.sa/main-XTDMN5LS.js",
+          "url": "https://eportal.scega.gov.sa/main-CN6PDNTE.js",
           "status": 200,
-          "bytes": 225008,
+          "bytes": 225494,
           "classification": "reachable",
           "hint_urls": [
             "http://www.w3.org/2000/svg",
@@ -78,7 +78,7 @@
           ]
         },
         {
-          "url": "https://eportal.scega.gov.sa/chunk-KLFHAT3V.js",
+          "url": "https://eportal.scega.gov.sa/chunk-4G4A4TT5.js",
           "status": 200,
           "bytes": 402,
           "classification": "reachable",
@@ -86,7 +86,7 @@
           "hint_words": []
         },
         {
-          "url": "https://eportal.scega.gov.sa/chunk-NHLQMEFB.js",
+          "url": "https://eportal.scega.gov.sa/chunk-6THGNAUG.js",
           "status": 200,
           "bytes": 897,
           "classification": "reachable",
@@ -94,9 +94,9 @@
           "hint_words": []
         },
         {
-          "url": "https://eportal.scega.gov.sa/chunk-O5BQ7TOM.js",
+          "url": "https://eportal.scega.gov.sa/chunk-I3NA5QEP.js",
           "status": 200,
-          "bytes": 28495,
+          "bytes": 28496,
           "classification": "reachable",
           "hint_urls": [
             "http://www.w3.org/2000/svg"
@@ -104,9 +104,9 @@
           "hint_words": []
         },
         {
-          "url": "https://eportal.scega.gov.sa/chunk-I375MRUB.js",
+          "url": "https://eportal.scega.gov.sa/chunk-C5BRCPMK.js",
           "status": 200,
-          "bytes": 24936,
+          "bytes": 24937,
           "classification": "reachable",
           "hint_urls": [],
           "hint_words": []
@@ -134,7 +134,7 @@
       "final_url": "https://nec.gov.sa/ar",
       "via": "fetch",
       "content_type": "text/html; charset=utf-8",
-      "bytes": 145930,
+      "bytes": 159266,
       "title": "المركز الوطني للفعاليات",
       "classification": "protected",
       "error": "",
@@ -146,11 +146,11 @@
         "https://enjz.nec.gov.sa/",
         "http://nec.sourcing.mn2.ariba.com/ad/selfRegistration/_c_/C2https://s1.mn2.ariba.com/Sourcing/Main/ad/loginPage/SSOActions?awsso_cc=cmVhbG06Ym1Wajthd3Nzb19ydTphSFIwY0hNNkx5OXpNUzV0YmpJdVlYSnBZbUV1WTI5dEwxTnZkWEpqYVc1bkwwMWhhVzR2WVdRdlpHVm1ZWFZzZEM5RWFYSmxZM1JCWTNScGIyNC9jbVZoYkcwOWJtVmo7YXdzc29fbHU6YUhSMGNITTZMeTl6TVM1dGJqSXVZWEpwWW1FdVkyOXRMMU52ZFhKamFXNW5MMDFoYVc0dllXUXZZMnhwWlc1MFRHOW5iM1YwTDFOVFQwRmpkR2x2Ym5NPTthd3Nzb19hcDpRVU5OO2F3c3NvX2FyaWQ6TVRjek9EQTJOREUyTmpRNU53PT07YXdzc29fa3U6YUhSMGNITTZMeTl6TVM1dGJqSXVZWEpwWW1FdVkyOXRMMU52ZFhKamFXNW5MMDFoYVc0dllXUXZZMnhwWlc1MFMyVmxjRUZzYVhabEwxTlRUMEZqZEdsdmJuTT07YXdzc29fZmw6TVE9PQ%3D%3D%3ARrUCV6K%2BXxtFtIJH7Rwdskb%2BHhc%3D&amp;awsso_ap=ACM&amp;realm=nec&amp;awsr=true",
         "https://laws.boe.gov.sa/BoeLaws/Laws/LawDetails/e73fd7d3-e812-477b-8112-ad3f00d16fd9/1",
-        "http://nec.sourcing.mn2.ariba.com/ad/selfRegistration/_c_/C2",
         "https://www.hrsd.gov.sa/knowledge-centre/decisions-and-regulations/regulation-and-procedures/0211202310#",
         "https://eparticipation.my.gov.sa/",
         "https://ncar.gov.sa/",
         "https://www.vision2030.gov.sa/ar/",
+        "http://nec.sourcing.mn2.ariba.com/ad/selfRegistration/_c_/C2",
         "https://x.com/nec_saudi",
         "https://www.instagram.com/nec.saudi/",
         "https://www.linkedin.com/company/events-center-sa/",
@@ -158,6 +158,7 @@
         "http://www.w3.org/2000/svg\\",
         "https://enjz.nec.gov.sa/\\",
         "http://nec.sourcing.mn2.ariba.com/ad/selfRegistration/_c_/C2https://s1.mn2.ariba.com/Sourcing/Main/ad/loginPage/SSOActions?awsso_cc=cmVhbG06Ym1Wajthd3Nzb19ydTphSFIwY0hNNkx5OXpNUzV0YmpJdVlYSnBZbUV1WTI5dEwxTnZkWEpqYVc1bkwwMWhhVzR2WVdRdlpHVm1ZWFZzZEM5RWFYSmxZM1JCWTNScGIyNC9jbVZoYkcwOWJtVmo7YXdzc29fbHU6YUhSMGNITTZMeTl6TVM1dGJqSXVZWEpwWW1FdVkyOXRMMU52ZFhKamFXNW5MMDFoYVc0dllXUXZZMnhwWlc1MFRHOW5iM1YwTDFOVFQwRmpkR2x2Ym5NPTthd3Nzb19hcDpRVU5OO2F3c3NvX2FyaWQ6TVRjek9EQTJOREUyTmpRNU53PT07YXdzc29fa3U6YUhSMGNITTZMeTl6TVM1dGJqSXVZWEpwWW1FdVkyOXRMMU52ZFhKamFXNW5MMDFoYVc0dllXUXZZMnhwWlc1MFMyVmxjRUZzYVhabEwxTlRUMEZqZEdsdmJuTT07YXdzc29fZmw6TVE9PQ%3D%3D%3ARrUCV6K%2BXxtFtIJH7Rwdskb%2BHhc%3D\\u0026awsso_ap=ACM\\u0026realm=nec\\u0026awsr=true\\",
+        "https://www.youtube.com/watch?v=j2hR24Hv2NE\\",
         "https://www.scega.gov.sa/home\\",
         "https://mt.gov.sa/ar\\",
         "https://www.mos.gov.sa/ar/\\",
@@ -167,18 +168,17 @@
         "https://www.dgda.gov.sa/ar\\",
         "https://raqmi.dga.gov.sa/platforms/platforms/4b50c837-5b74-4f7e-c4a7-08dcfc01c363/platform-license\\\\\\",
         "https://laws.boe.gov.sa/BoeLaws/Laws/LawDetails/e73fd7d3-e812-477b-8112-ad3f00d16fd9/1\\",
-        "http://nec.sourcing.mn2.ariba.com/ad/selfRegistration/_c_/C2\\",
         "https://www.hrsd.gov.sa/knowledge-centre/decisions-and-regulations/regulation-and-procedures/0211202310#\\",
         "https://eparticipation.my.gov.sa/\\",
         "https://ncar.gov.sa/\\",
         "https://www.vision2030.gov.sa/ar/\\",
+        "http://nec.sourcing.mn2.ariba.com/ad/selfRegistration/_c_/C2\\",
         "https://ehsan.sa/\\",
         "https://nec.gov.sa/ar\\",
         "https://nec.gov.sa/en\\",
         "https://nec.gov.sa/media/2e5a88cf-8d48-43e2-9178-41c9e9ed8d4b/about-introduction.webp\\",
         "https://static.cloudflareinsights.com/beacon.min.js/v31edd6df95cf4e85bb4c19e7a9bdbcba1788362987495",
-        "https://nec.gov.sa/ar/event-tech",
-        "https://nec.gov.sa/ar/join-us/event-pioneer"
+        "https://nec.gov.sa/ar/event-tech"
       ],
       "page_hint_words": [
         "event",
@@ -186,7 +186,7 @@
       ],
       "asset_results": [],
       "api_results": [],
-      "text_sample": "المركز الوطني للفعاليات موقع حكومي مسجل لدي هيئة الحكومة الرقمية كيف تتحقق EN تواصل معنا قطاع واعد لفعاليات المملكة لقطاع فعاليات واعد، ومواسم سعودية استثنائية، وتقويم وطني مزدهر وجاذب! من نحن أُسّس مركز الفعاليات بقرار من مجلس الوزراء بتاريخ 15 رجب 1441 هـ الموافق 10 مارس 2020م، ومقره الرياض، وهو يهدف إلى تعزيز الفعاليات في المملكة، والارتقاء بالخدمات المقدمة في المجال، ودعم مواسم السعودية والتقويم الوطني والفعاليات الكبرى، بناءً على ما يصدر من أوامر وقرارات، وفقًا للتوجهات والرؤى التي تضعها ل…"
+      "text_sample": "المركز الوطني للفعاليات موقع حكومي مسجل لدي هيئة الحكومة الرقمية كيف تتحقق تسجيل الدخول EN تواصل معنا عِزّنا الحلم من القيم الملهمة في الثقافة السعودية، فهو يعكس تطلعات أبناء الوطن نحو مستقبلٍ طموح ومزدهر، ويقوم على الإيمان بتحويل الأفكار والطموحات إلى واقع من خلال العمل الجاد والتخطيط المستمر، وهو ما تجسده مسيرة التنمية في المملكة ورؤية السعودية 2030. وقد عبّر صاحب السمو الملكي الأمير محمد بن سلمان بن عبدالعزيز آل سعود، ولي العهد رئيس مجلس الوزراء، عن هذا الحلم الكبير بقوله في منتدى الاستثمار …"
     },
     {
       "id": "visit-saudi-calendar",
@@ -256,11 +256,11 @@
         {
           "url": "https://www.visitsaudi.com/bin/api/v3/events?locale=ar",
           "status": 200,
-          "bytes": 149354,
+          "bytes": 114580,
           "classification": "reachable",
           "summary": {
             "parse_ok": true,
-            "item_count": 46,
+            "item_count": 35,
             "sample_titles": [
               "معرض اللغة العربية للطفل",
               "معرض اللغة العربية 28",
@@ -274,11 +274,11 @@
         {
           "url": "https://www.visitsaudi.com/bin/api/v3/events?locale=en",
           "status": 200,
-          "bytes": 155434,
+          "bytes": 119564,
           "classification": "reachable",
           "summary": {
             "parse_ok": true,
-            "item_count": 46,
+            "item_count": 35,
             "sample_titles": [
               "Arabic Language Exhibition for kids",
               "Arabic Language Exhibition 28",
@@ -303,7 +303,7 @@
       "final_url": "https://webook.com/ar/explore",
       "via": "fetch",
       "content_type": "text/html",
-      "bytes": 7662,
+      "bytes": 7661,
       "title": "",
       "classification": "protected",
       "error": "",

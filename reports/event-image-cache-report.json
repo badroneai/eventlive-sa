@@ -1,31 +1,18 @@
 {
-  "generated_at": "2026-09-17T08:16:23.773Z",
+  "generated_at": "2026-09-19T14:02:19.263Z",
   "events_file": "dist/events.json",
   "manifest": "data/event_image_cache_manifest.json",
   "image_dir": "dist/assets/event-images",
   "totals": {
     "targets": 500,
     "cached_total": 870,
-    "fetched": 2,
-    "reused": 495,
+    "fetched": 0,
+    "reused": 497,
     "failed": 3,
     "skipped_recent_failures": 0,
     "remembered_failures": 25
   },
-  "fetched": [
-    {
-      "source_url": "https://www.ithra.com/application/files/cache/thumbnails/c5bcffda74db61b2a895be9a093e3659.jpg",
-      "file": "dist/assets/event-images/open-studio-silkscreen-b57b2ba65d.jpg",
-      "bytes": 244227,
-      "events": 1
-    },
-    {
-      "source_url": "https://www.ithra.com/application/files/cache/thumbnails/4a24eceeef876cef96bdee8dcd0b841e.jpg",
-      "file": "dist/assets/event-images/bridge-to-the-chinese-language-335c7d2dbd.jpg",
-      "bytes": 285269,
-      "events": 1
-    }
-  ],
+  "fetched": [],
   "reused": [
     {
       "source_url": "https://music.moc.gov.sa/-/media/Project/Ministries/Moc/Events/Artboard1.png",
@@ -193,6 +180,26 @@
       "events": 1
     },
     {
+      "source_url": "https://www.ithra.com/application/files/cache/thumbnails/71ccb8981524b13e856e38276f2c0cde.jpg",
+      "file": "dist/assets/event-images/1-2-3-let-s-rhyme-6df127aea1.jpg",
+      "events": 1
+    },
+    {
+      "source_url": "https://www.ithra.com/application/files/cache/thumbnails/b3d6e2a8839c4f5f1fd761ce0128b3f0.jpg",
+      "file": "dist/assets/event-images/on-this-carpet-fd659c9065.jpg",
+      "events": 1
+    },
+    {
+      "source_url": "https://www.ithra.com/application/files/cache/thumbnails/4899ef6ead03a33b6ae9c2359ab2f195.jpg",
+      "file": "dist/assets/event-images/unbox-your-story-c6dc19b0cf.jpg",
+      "events": 1
+    },
+    {
+      "source_url": "https://www.ithra.com/application/files/cache/thumbnails/00a340b39fdc9a81673ac198e27e48ab.jpg",
+      "file": "dist/assets/event-images/storyteller-of-the-day-d9b6d7c21c.jpg",
+      "events": 1
+    },
+    {
       "source_url": "https://www.ithra.com/application/files/cache/thumbnails/180f76cd89a868b3d6b42608dffecd7a.png",
       "file": "dist/assets/event-images/museum-story-time-1f3a195fe9.png",
       "events": 1
@@ -200,6 +207,16 @@
     {
       "source_url": "https://www.ithra.com/application/files/cache/thumbnails/68a12e07a6da5cc989dd7fbd73d03107.jpg",
       "file": "dist/assets/event-images/bedayat-beginnings-of-saudi-art-movement-5815006859.jpg",
+      "events": 1
+    },
+    {
+      "source_url": "https://www.ithra.com/application/files/cache/thumbnails/85d5578f24bf5b2a9e720c84eec26adc.jpg",
+      "file": "dist/assets/event-images/english-children-book-club-7-9-5174b0b666.jpg",
+      "events": 4
+    },
+    {
+      "source_url": "https://www.ithra.com/application/files/cache/thumbnails/1bfbc17fa9fc0e794418752ac39ebb8d.jpg",
+      "file": "dist/assets/event-images/your-book-in-a-minute-5cc468c06d.jpg",
       "events": 1
     },
     {
@@ -213,6 +230,11 @@
       "events": 1
     },
     {
+      "source_url": "https://www.ithra.com/application/files/cache/thumbnails/021dbae93d2b03cf4faffc8cb85e03d7.jpg",
+      "file": "dist/assets/event-images/youth-book-club-acf92e6dc3.jpg",
+      "events": 1
+    },
+    {
       "source_url": "https://www.visitsaudi.com/images/ornament-h-m1-24-8290.original.png",
       "file": "dist/assets/event-images/forest-wonder-499a88ca39.png",
       "events": 14
@@ -223,6 +245,86 @@
       "events": 1
     },
     {
+      "source_url": "https://www.ithra.com/application/files/cache/thumbnails/34a91e4e84d3e4a79a05114daaabbfcb.jpg",
+      "file": "dist/assets/event-images/tinkering-stations-1fefe4f4f1.jpg",
+      "events": 1
+    },
+    {
+      "source_url": "https://www.ithra.com/application/files/cache/thumbnails/51465f52b41f834e2e54c5a1bec652c8.jpg",
+      "file": "dist/assets/event-images/دار-الطباعة-f048e29300.jpg",
+      "events": 1
+    },
+    {
+      "source_url": "https://www.ithra.com/application/files/cache/thumbnails/4dc402fa30dd57d68581aa05f1ce5c0f.jpg",
+      "file": "dist/assets/event-images/spot-of-inspiration-0f891a4330.jpg",
+      "events": 1
+    },
+    {
+      "source_url": "https://www.ithra.com/application/files/cache/thumbnails/df659f937227e0e3b989ee5698288e94.jpg",
+      "file": "dist/assets/event-images/children-s-museum-story-time-0b7f442de4.jpg",
+      "events": 1
+    },
+    {
+      "source_url": "https://www.ithra.com/application/files/cache/thumbnails/c106a0c8f6497e29241fc97f368d2be4.jpg",
+      "file": "dist/assets/event-images/children-s-art-studio-4f842a30bc.jpg",
+      "events": 1
+    },
+    {
+      "source_url": "https://www.ithra.com/application/files/cache/thumbnails/a21934b0416a6f32d59a3124407ca98b.jpg",
+      "file": "dist/assets/event-images/survival-journey-cf5b8c030f.jpg",
+      "events": 1
+    },
+    {
+      "source_url": "https://www.ithra.com/application/files/cache/thumbnails/5d9089ccc5309c4c20ca0c1099df3ab1.jpg",
+      "file": "dist/assets/event-images/chess-hub-3cbbdfff18.jpg",
+      "events": 1
+    },
+    {
+      "source_url": "https://www.ithra.com/application/files/cache/thumbnails/388c96722ea7802636485fc7640da5a1.jpg",
+      "file": "dist/assets/event-images/energy-in-motion-bba2390362.jpg",
+      "events": 1
+    },
+    {
+      "source_url": "https://www.ithra.com/application/files/cache/thumbnails/5031b376aa4c8c1488517597db5bca86.jpg",
+      "file": "dist/assets/event-images/family-challenges-e3db77fbac.jpg",
+      "events": 1
+    },
+    {
+      "source_url": "https://www.ithra.com/application/files/cache/thumbnails/d8565b5e78b2d0761347e3169962c3c5.jpg",
+      "file": "dist/assets/event-images/games-hub-9ae2a7e0d7.jpg",
+      "events": 1
+    },
+    {
+      "source_url": "https://www.ithra.com/application/files/cache/thumbnails/65968408a9d3f0c694f39a86ea6e3a9c.jpg",
+      "file": "dist/assets/event-images/nu-power-30a035f1b7.jpg",
+      "events": 1
+    },
+    {
+      "source_url": "https://www.ithra.com/application/files/cache/thumbnails/0e6478ba150972b2c8690feb03167d72.jpg",
+      "file": "dist/assets/event-images/the-moral-of-the-story-a19cde13da.jpg",
+      "events": 1
+    },
+    {
+      "source_url": "https://www.ithra.com/application/files/cache/thumbnails/3028e58e79c097efe11df08b7a04a1b6.png",
+      "file": "dist/assets/event-images/grand-art-space-9d738f462b.png",
+      "events": 1
+    },
+    {
+      "source_url": "https://www.ithra.com/application/files/cache/thumbnails/54557d2e58629050eaeb37d4f43e3623.jpg",
+      "file": "dist/assets/event-images/stories-from-ithra-s-library-a855c19f5b.jpg",
+      "events": 1
+    },
+    {
+      "source_url": "https://www.ithra.com/application/files/cache/thumbnails/01b5d57ab150c4fcccb439292ba92ac3.jpg",
+      "file": "dist/assets/event-images/toddler-saturday-f5e0116f13.jpg",
+      "events": 2
+    },
+    {
+      "source_url": "https://www.ithra.com/application/files/cache/thumbnails/fc8166cf5cfe3b9fc68c32ee5f97245a.jpg",
+      "file": "dist/assets/event-images/story-land-836edf7fa9.jpg",
+      "events": 1
+    },
+    {
       "source_url": "https://uqu.edu.sa/assets/images/uqu-gate.jpeg",
       "file": "dist/assets/event-images/الشهادة-الدولية-للحاسب-والإنترنت-ic3-a46ba6d2eb.jpg",
       "events": 94
@@ -230,6 +332,11 @@
     {
       "source_url": "https://scth.scene7.com/is/image/scth/buraydah-dates-carnival-qassim?wid=1400&hei=788&fit=constrain&fmt=webp",
       "file": "dist/assets/event-images/buraydah-dates-carnival-cb98c8964c.webp",
+      "events": 1
+    },
+    {
+      "source_url": "https://www.ithra.com/application/files/cache/thumbnails/6519ce3982b405e399c3a7313853a2bf.jpg",
+      "file": "dist/assets/event-images/workshop-at-the-library-264921ca4b.jpg",
       "events": 1
     },
     {
@@ -248,8 +355,23 @@
       "events": 1
     },
     {
+      "source_url": "https://www.ithra.com/application/files/cache/thumbnails/2a93a513735da824f0d28d0a8d24b99d.jpg",
+      "file": "dist/assets/event-images/children-s-museum-free-monday-197cdfde54.jpg",
+      "events": 1
+    },
+    {
       "source_url": "https://www.ithra.com/application/files/cache/thumbnails/72323733814ab2d738b5416789d15bd1.jpg",
       "file": "dist/assets/event-images/ithra-art-prize-exhibition-05524875fd.jpg",
+      "events": 1
+    },
+    {
+      "source_url": "https://www.ithra.com/application/files/cache/thumbnails/520804fd4caae096d74b7963ab6c3119.jpg",
+      "file": "dist/assets/event-images/paint-like-an-artist-4ea915212b.jpg",
+      "events": 1
+    },
+    {
+      "source_url": "https://www.ithra.com/application/files/cache/thumbnails/d9066fa3a95acb81e626150dc55fbeb7.jpg",
+      "file": "dist/assets/event-images/وقت-قصص-الأطفال-450371399c.jpg",
       "events": 1
     },
     {
@@ -258,8 +380,18 @@
       "events": 1
     },
     {
+      "source_url": "https://www.ithra.com/application/files/cache/thumbnails/88b13d1d2de978df78f18c8d6c7c1d7b.jpg",
+      "file": "dist/assets/event-images/little-explorers-7671ac0b7f.jpg",
+      "events": 1
+    },
+    {
       "source_url": "https://cdn.tuwaiq.edu.sa/initiatives_admin/images/hym412o4.xrm.webp",
       "file": "dist/assets/event-images/معسكر-تطوير-مواقع-الويب-باستخدام-java-ودمج-تقنيات-الذكاء-الاصطناعي-1a7ddcd5eb.webp",
+      "events": 1
+    },
+    {
+      "source_url": "https://www.ithra.com/application/files/cache/thumbnails/c4dead970ab3d5a09db3eb2c1e888b8a.jpg",
+      "file": "dist/assets/event-images/أعضاء-الجولة-e68ad1c393.jpg",
       "events": 1
     },
     {
@@ -408,11 +540,6 @@
       "events": 1
     },
     {
-      "source_url": "https://api.riyadh.sa/sites/default/files/styles/medium/public/2026-01/GAIN.jpg?itok=pcTvnIls",
-      "file": "dist/assets/event-images/global-ai-summit-gain-b83a8ce082.jpg",
-      "events": 1
-    },
-    {
       "source_url": "https://www.ithra.com/application/files/cache/thumbnails/ede25c9dc810397fce8527375c8f75bf.jpg",
       "file": "dist/assets/event-images/aramcorama-exhibit-bc852ac4b4.jpg",
       "events": 1
@@ -420,11 +547,6 @@
     {
       "source_url": "https://www.ithra.com/application/files/cache/thumbnails/b9dab29976790617352fa739f30a9172.jpg",
       "file": "dist/assets/event-images/in-praise-of-the-artisan-f673088221.jpg",
-      "events": 1
-    },
-    {
-      "source_url": "https://api.riyadh.sa/sites/default/files/styles/medium/public/2025-12/1%20G0_DaNaXUAABPHj.jpeg?itok=mWh47hzQ",
-      "file": "dist/assets/event-images/smart-cities-saudi-expo-f6371708aa.jpg",
       "events": 1
     },
     {
@@ -473,19 +595,9 @@
       "events": 1
     },
     {
-      "source_url": "https://www.datocms-assets.com/66357/1751801189-mdlbeast.png?auto=format&fit=max&w=1200",
-      "file": "dist/assets/event-images/unstable-ba5c599823.avif",
-      "events": 5
-    },
-    {
-      "source_url": "https://www.visitsaudi.com/content/dam/wvs/5x5-night.jpg",
-      "file": "dist/assets/event-images/5x5-ليلة-fc6f9022e5.jpg",
+      "source_url": "https://www.ithra.com/application/files/cache/thumbnails/c5bcffda74db61b2a895be9a093e3659.jpg",
+      "file": "dist/assets/event-images/open-studio-silkscreen-b57b2ba65d.jpg",
       "events": 1
-    },
-    {
-      "source_url": "https://www.ithra.com/application/files/cache/thumbnails/3cbc28db3f6ea2c884c3568c2c846ce0.png",
-      "file": "dist/assets/event-images/doors-all-around-us-arabic-273b0de850.png",
-      "events": 2
     },
     {
       "source_url": "https://www.ithra.com/application/files/cache/thumbnails/3ab50f4dd0110da0a3c6e5a14f08fb8e.jpg",
@@ -656,6 +768,11 @@
       "source_url": "https://hayyjameel.org/wp-content/uploads/2026/06/DSC07665-scaled-e1781701744946-1100x500.jpg",
       "file": "dist/assets/event-images/hayy-markets-the-bakers-market-saudi-national-day-edition-7f94bf67f2.jpg",
       "events": 1
+    },
+    {
+      "source_url": "https://www.datocms-assets.com/66357/1751801189-mdlbeast.png?auto=format&fit=max&w=1200",
+      "file": "dist/assets/event-images/unstable-ba5c599823.avif",
+      "events": 5
     },
     {
       "source_url": "https://cdn.tuwaiq.edu.sa/initiatives_admin/images/b2hfxfcc.ekk.webp",
@@ -1143,6 +1260,11 @@
       "events": 1
     },
     {
+      "source_url": "https://www.ithra.com/application/files/cache/thumbnails/4a24eceeef876cef96bdee8dcd0b841e.jpg",
+      "file": "dist/assets/event-images/bridge-to-the-chinese-language-335c7d2dbd.jpg",
+      "events": 1
+    },
+    {
       "source_url": "https://swa-cdn.swa.gov.sa/Events/de29a012e4fd4f33bae4d98c28e9d8e2_2026_06_04_11_43_33_780.jpg",
       "file": "dist/assets/event-images/saudi-water-partnerships-company-forum-and-awards-ceremony-5e9d653040.jpg",
       "events": 1
@@ -1293,16 +1415,6 @@
       "events": 1
     },
     {
-      "source_url": "https://hayyjameel.org/wp-content/uploads/2023/12/IOICH-Still-2-1100x500.jpg",
-      "file": "dist/assets/event-images/سينما-حي-لو-استطعت-السُبات-2023-a9fbbb5a60.jpg",
-      "events": 1
-    },
-    {
-      "source_url": "https://hayyjameel.org/wp-content/uploads/2023/12/04-BATIMENT-5-de-Ladj-Ly-%C2%A9-2023-Srab-Films-Lyly-Films-France-2-Cinema-Panache-Productions-La-Compagnie-Cinematographique-aspect-ratio-1920-797-1100x500.jpg",
-      "file": "dist/assets/event-images/سينما-حي-باتيمنت-5-2023-1aec859a17.jpg",
-      "events": 1
-    },
-    {
       "source_url": "https://s7g10.scene7.com/is/image/rcu/dsc3483t-dekstop-hero-2880x1620?wid=1600&hei=900&fit=constrain&fmt=webp",
       "file": "dist/assets/event-images/alula-trail-race-d7eef6fe8b.webp",
       "events": 1
@@ -1348,46 +1460,6 @@
       "events": 1
     },
     {
-      "source_url": "https://hayyjameel.org/wp-content/uploads/2023/12/ATEOL-Still-3-1100x500.jpg",
-      "file": "dist/assets/event-images/حي-سينما-عرض-فيلم-على-حافة-الأرض-وجلسة-نقاش-مع-الفنانة-هيرا-نبي-fbb62642fc.jpg",
-      "events": 1
-    },
-    {
-      "source_url": "https://hayyjameel.org/wp-content/uploads/2023/02/lasoupedefranzy_02.jpg",
-      "file": "dist/assets/event-images/هاي-سينما-هيي-اكسبلورر-في-السينما-3fa9c6623b.jpg",
-      "events": 1
-    },
-    {
-      "source_url": "https://hayyjameel.org/wp-content/uploads/2024/01/SALEEG-Still-2-aspect-ratio-1920-1034-1100x500.png",
-      "file": "dist/assets/event-images/سينما-حي-صليق-2023-43be881dcd.png",
-      "events": 1
-    },
-    {
-      "source_url": "https://hayyjameel.org/wp-content/uploads/2024/01/FISHY-Still-4-1100x500.png",
-      "file": "dist/assets/event-images/سينما-حي-fishy-2023-f211d8f8cd.png",
-      "events": 1
-    },
-    {
-      "source_url": "https://hayyjameel.org/wp-content/uploads/2024/01/COFFEE-Still-6-aspect-ratio-0-0-1100x500.png",
-      "file": "dist/assets/event-images/سينما-حي-قهوة-2023-bc20b324e8.png",
-      "events": 1
-    },
-    {
-      "source_url": "https://hayyjameel.org/wp-content/uploads/2024/01/THE-MENACE-FROM-ABOVE-Still-3-1100x500.png",
-      "file": "dist/assets/event-images/سينما-حي-الخطر-القادم-من-الأعلى-2023-2e1a6fc2d4.png",
-      "events": 1
-    },
-    {
-      "source_url": "https://hayyjameel.org/wp-content/uploads/2024/01/Shot_108-1100x500.png",
-      "file": "dist/assets/event-images/سينما-حي-سليم-2024-f2ed4d2e6f.png",
-      "events": 1
-    },
-    {
-      "source_url": "https://hayyjameel.org/wp-content/uploads/2024/02/CITY-OF-GOD-70-x-100_Feb22-scaled-aspect-ratio-0-0-scaled.jpg",
-      "file": "dist/assets/event-images/سينما-حي-مدينة-الرب-2002-baebf95da5.jpg",
-      "events": 1
-    },
-    {
       "source_url": "https://swa-cdn.swa.gov.sa/Events/8ca9c4254c334d8d90c85b0c4f5f275c_2026_05_25_08_13_47_482.jpg",
       "file": "dist/assets/event-images/foundation-day-4fc69bec98.jpg",
       "events": 1
@@ -1403,133 +1475,8 @@
       "events": 1
     },
     {
-      "source_url": "https://hayyjameel.org/wp-content/uploads/2023/02/Landscape-6-1100x500.jpg",
-      "file": "dist/assets/event-images/سينما-حي-الرحلة-2021-8090117a0e.jpg",
-      "events": 1
-    },
-    {
-      "source_url": "https://hayyjameel.org/wp-content/uploads/2023/02/Landscape-3-1100x500.jpg",
-      "file": "dist/assets/event-images/سينما-حي-أختنا-الصغيرة-2015-ed7c327879.jpg",
-      "events": 1
-    },
-    {
-      "source_url": "https://hayyjameel.org/wp-content/uploads/2023/02/Landscape-4-1080x500.jpg",
-      "file": "dist/assets/event-images/سينما-حي-الجريمة-الثالثة-2017-dbe94ca148.jpg",
-      "events": 1
-    },
-    {
-      "source_url": "https://hayyjameel.org/wp-content/uploads/2023/02/Landscape-2-aspect-ratio-1264-690-1100x500.jpg",
-      "file": "dist/assets/event-images/سينما-حي-بعد-العاصفة-2016-48fb151638.jpg",
-      "events": 1
-    },
-    {
-      "source_url": "https://hayyjameel.org/wp-content/uploads/2023/02/landscape-1100x500.jpg",
-      "file": "dist/assets/event-images/حي-سينما-مثل-الأب-مثل-الابن-2013-bb103d37c9.jpg",
-      "events": 1
-    },
-    {
-      "source_url": "https://hayyjameel.org/wp-content/uploads/2024/03/MV5BNDdmNzYxNDEtNjU0Zi00MTk1LThjNTUtZGE5MjVhNGM0MDZmXkEyXkFqcGdeQXVyMTMxMTIwMTE0._V1_-1100x500.jpg",
-      "file": "dist/assets/event-images/سينما-حي-ليالي-أفلام-رمضان-6d6a5f7f1c.jpg",
-      "events": 1
-    },
-    {
-      "source_url": "https://hayyjameel.org/wp-content/uploads/2026/03/Sirat-1-scaled-1-1100x500.jpg",
-      "file": "dist/assets/event-images/سينما-حي-مارس-وأبريل-2026-5c61dbdcc1.jpg",
-      "events": 1
-    },
-    {
-      "source_url": "https://hayyjameel.org/wp-content/uploads/2026/03/5-Sirat_@QuimVives-1100x500.jpg",
-      "file": "dist/assets/event-images/سينما-حي-أبريل-2026-20076331ab.jpg",
-      "events": 1
-    },
-    {
       "source_url": "https://api.riyadh.sa/sites/default/files/styles/medium/public/2026-02/Screen%20Shot%202026-02-12%20at%205.37.39%20AM.png?itok=_tkBxXOE",
       "file": "dist/assets/event-images/human-capability-initiative-conference-15d668bd41.png",
-      "events": 1
-    },
-    {
-      "source_url": "https://hayyjameel.org/wp-content/uploads/2024/04/laila-poster.jpg",
-      "file": "dist/assets/event-images/سينما-حي-ليلى-وعود-الثقاب-2022-06c12b0741.jpg",
-      "events": 1
-    },
-    {
-      "source_url": "https://hayyjameel.org/wp-content/uploads/2024/04/DDD-Final-Poster-2-copy-scaled.jpg",
-      "file": "dist/assets/event-images/حي-سينما-قذر،-صعب،-خطير-2022-edb030eeb8.jpg",
-      "events": 1
-    },
-    {
-      "source_url": "https://hayyjameel.org/wp-content/uploads/2026/04/YOS09511-1100x500.jpg",
-      "file": "dist/assets/event-images/سينما-حي-دعوة-مفتوحة-برنامج-in-short-السينمائي-670c039a88.jpg",
-      "events": 1
-    },
-    {
-      "source_url": "https://hayyjameel.org/wp-content/uploads/2023/05/Muhammad-Asad-1024x537-1-1024x500.jpg",
-      "file": "dist/assets/event-images/سينما-حي-طريق-إلى-مكة-2008-465d5229f0.jpg",
-      "events": 1
-    },
-    {
-      "source_url": "https://hayyjameel.org/wp-content/uploads/2023/03/DOUNIA_6-1100x500.jpg",
-      "file": "dist/assets/event-images/سينما-حي-دنيا-وأميرة-حلب-2022-1b7f76b1cd.jpg",
-      "events": 1
-    },
-    {
-      "source_url": "https://hayyjameel.org/wp-content/uploads/2023/03/ravensong-still-aspect-ratio-669-379.jpg",
-      "file": "dist/assets/event-images/سينما-حي-أغنية-الغراب-2022-9c7c7ff8ed.jpg",
-      "events": 1
-    },
-    {
-      "source_url": "https://hayyjameel.org/wp-content/uploads/2026/04/Still-photo-1100x500.jpeg",
-      "file": "dist/assets/event-images/سينما-حي-مايو-2026-goodfellas،-وsink،-وspring-came-on-laughing،-والمزي-5c04d3a454.jpg",
-      "events": 1
-    },
-    {
-      "source_url": "https://hayyjameel.org/wp-content/uploads/2024/05/IMG_0110-2-scaled-aspect-ratio-1920-1993-1-1100x500.jpg",
-      "file": "dist/assets/event-images/سينما-حي-خطوة-أولى-في-f25f62838f.jpg",
-      "events": 1
-    },
-    {
-      "source_url": "https://hayyjameel.org/wp-content/uploads/2023/05/Becoming-Iphigenia-image.jpg",
-      "file": "dist/assets/event-images/سينما-حي-أن-تصبحي-إفيجينيا-b3eda6aa48.jpg",
-      "events": 1
-    },
-    {
-      "source_url": "https://hayyjameel.org/wp-content/uploads/2023/05/Memories-from-the-North-image.jpg",
-      "file": "dist/assets/event-images/سينما-حي-ذكريات-من-الشمال-00d69b8126.jpg",
-      "events": 1
-    },
-    {
-      "source_url": "https://hayyjameel.org/wp-content/uploads/2023/05/YYB-Poster-V1-10112022-scaled.jpg",
-      "file": "dist/assets/event-images/سينما-حي-يلا-يلا-بينا-b87030305a.jpg",
-      "events": 1
-    },
-    {
-      "source_url": "https://hayyjameel.org/wp-content/uploads/2023/05/The-kings-poem-image-1000x500.png",
-      "file": "dist/assets/event-images/سينما-حي-قصيدة-الملك-2023-6bb68d042d.png",
-      "events": 1
-    },
-    {
-      "source_url": "https://hayyjameel.org/wp-content/uploads/2023/06/Hayy-Cinema-at-Hayy-Jameel-Jeddah.-Courtesy-of-Art-Jameel.-Photography-by-Mohamed-Alaskandrani-1100x500.jpg",
-      "file": "dist/assets/event-images/سينما-حي-جلسة-نقاشية-الطريقة-التي-نرى-بها-أنفسنا-8dfe654612.jpg",
-      "events": 1
-    },
-    {
-      "source_url": "https://hayyjameel.org/wp-content/uploads/2023/06/My-lost-country-image-1-aspect-ratio-0-0-1100x500.jpg",
-      "file": "dist/assets/event-images/سينما-حي-بلادي-الضائعة-2022-cf34f4d46b.jpg",
-      "events": 1
-    },
-    {
-      "source_url": "https://hayyjameel.org/wp-content/uploads/2023/03/HONEYLAND_filmstill02-1100x500.jpg",
-      "file": "dist/assets/event-images/حي-سينما-أرض-العسل-2019-b17bc97928.jpg",
-      "events": 1
-    },
-    {
-      "source_url": "https://hayyjameel.org/wp-content/uploads/2026/05/40-1269-1100x500.jpg",
-      "file": "dist/assets/event-images/سينما-حي-يونيو-2026-a-matter-of-life-and-death،-وthe-stories،-وyou-wil-7b09408c3e.jpg",
-      "events": 1
-    },
-    {
-      "source_url": "https://hayyjameel.org/wp-content/uploads/2026/06/Typeform-Banner-aspect-ratio-0-0-1100x500.png",
-      "file": "dist/assets/event-images/hayy-cinema-kef-hayyak-3rd-edition-screenings-and-awards-ceremony-3919f3029b.png",
       "events": 1
     },
     {
@@ -1538,28 +1485,28 @@
       "events": 2
     },
     {
-      "source_url": "https://hayyjameel.org/wp-content/uploads/2026/06/08-aspect-ratio-0-0-1100x500.jpeg",
-      "file": "dist/assets/event-images/hayy-cinema-july-2026-1ce63d8c81.jpg",
-      "events": 1
-    },
-    {
-      "source_url": "https://hayyjameel.org/wp-content/uploads/2023/07/When-red-blooms-aspect-ratio-669-367.jpg",
-      "file": "dist/assets/event-images/سينما-حي-أفلامنا-6a3d75ad62.jpg",
-      "events": 1
-    },
-    {
-      "source_url": "https://hayyjameel.org/wp-content/uploads/2026/07/DSC01859-1100x500.jpg",
-      "file": "dist/assets/event-images/hayy-cinema-international-cat-day-open-call-1c5bd9fc74.jpg",
-      "events": 1
-    },
-    {
-      "source_url": "https://hayyjameel.org/wp-content/uploads/2026/07/Mera_Still_10-scaled.png",
-      "file": "dist/assets/event-images/hayy-cinema-august-2026-4ed02b2a44.png",
-      "events": 1
-    },
-    {
       "source_url": "https://ssa.gov.sa/media/3j2f0xpa/sdc2028.webp?width=1400&height=788&rnd=134303158965830000",
       "file": "dist/assets/event-images/مؤتمر-الحطام-الفضائي-2028-ed926e1bba.webp",
+      "events": 1
+    },
+    {
+      "source_url": "https://www.ithra.com/application/files/cache/thumbnails/3cbc28db3f6ea2c884c3568c2c846ce0.png",
+      "file": "dist/assets/event-images/doors-all-around-us-arabic-273b0de850.png",
+      "events": 2
+    },
+    {
+      "source_url": "https://www.visitsaudi.com/content/dam/wvs/5x5-night.jpg",
+      "file": "dist/assets/event-images/5x5-ليلة-fc6f9022e5.jpg",
+      "events": 1
+    },
+    {
+      "source_url": "https://api.riyadh.sa/sites/default/files/styles/medium/public/2025-12/1%20G0_DaNaXUAABPHj.jpeg?itok=mWh47hzQ",
+      "file": "dist/assets/event-images/smart-cities-saudi-expo-f6371708aa.jpg",
+      "events": 1
+    },
+    {
+      "source_url": "https://api.riyadh.sa/sites/default/files/styles/medium/public/2026-01/GAIN.jpg?itok=pcTvnIls",
+      "file": "dist/assets/event-images/global-ai-summit-gain-b83a8ce082.jpg",
       "events": 1
     },
     {
@@ -1878,11 +1825,6 @@
       "events": 1
     },
     {
-      "source_url": "https://www.ithra.com/application/files/cache/thumbnails/c4dead970ab3d5a09db3eb2c1e888b8a.jpg",
-      "file": "dist/assets/event-images/أعضاء-الجولة-e68ad1c393.jpg",
-      "events": 1
-    },
-    {
       "source_url": "https://www.ithra.com/application/files/cache/thumbnails/259c5639d719477c4dcba9d4e68d239b.jpg",
       "file": "dist/assets/event-images/مسابقة-إثراء-للمسرحية-القصيرة-2026-0816f0aa41.jpg",
       "events": 1
@@ -1903,16 +1845,6 @@
       "events": 1
     },
     {
-      "source_url": "https://www.ithra.com/application/files/cache/thumbnails/88b13d1d2de978df78f18c8d6c7c1d7b.jpg",
-      "file": "dist/assets/event-images/little-explorers-7671ac0b7f.jpg",
-      "events": 1
-    },
-    {
-      "source_url": "https://www.ithra.com/application/files/cache/thumbnails/85d5578f24bf5b2a9e720c84eec26adc.jpg",
-      "file": "dist/assets/event-images/english-children-book-club-7-9-5174b0b666.jpg",
-      "events": 4
-    },
-    {
       "source_url": "https://scth.scene7.com/is/image/scth/international-falcon-breeders-auction-in-riyadh?wid=1920&hei=1080&fit=constrain&fmt=webp",
       "file": "dist/assets/event-images/international-falcon-breeders-auction-40c948e3c1.webp",
       "events": 1
@@ -1928,28 +1860,13 @@
       "events": 1
     },
     {
-      "source_url": "https://www.ithra.com/application/files/cache/thumbnails/01b5d57ab150c4fcccb439292ba92ac3.jpg",
-      "file": "dist/assets/event-images/toddler-saturday-f5e0116f13.jpg",
-      "events": 2
-    },
-    {
-      "source_url": "https://www.ithra.com/application/files/cache/thumbnails/d9066fa3a95acb81e626150dc55fbeb7.jpg",
-      "file": "dist/assets/event-images/وقت-قصص-الأطفال-450371399c.jpg",
+      "source_url": "https://hayyjameel.org/wp-content/uploads/2026/07/DSC01859-1100x500.jpg",
+      "file": "dist/assets/event-images/hayy-cinema-international-cat-day-open-call-1c5bd9fc74.jpg",
       "events": 1
     },
     {
       "source_url": "https://www.ithra.com/application/files/cache/thumbnails/44c29a424fe8b0284cf1d63032466fa6.jpg",
       "file": "dist/assets/event-images/the-almost-perfect-guide-to-event-management-4d1c29907d.jpg",
-      "events": 1
-    },
-    {
-      "source_url": "https://www.ithra.com/application/files/cache/thumbnails/520804fd4caae096d74b7963ab6c3119.jpg",
-      "file": "dist/assets/event-images/paint-like-an-artist-4ea915212b.jpg",
-      "events": 1
-    },
-    {
-      "source_url": "https://www.ithra.com/application/files/cache/thumbnails/2a93a513735da824f0d28d0a8d24b99d.jpg",
-      "file": "dist/assets/event-images/children-s-museum-free-monday-197cdfde54.jpg",
       "events": 1
     },
     {
@@ -1978,16 +1895,6 @@
       "events": 1
     },
     {
-      "source_url": "https://www.ithra.com/application/files/cache/thumbnails/6519ce3982b405e399c3a7313853a2bf.jpg",
-      "file": "dist/assets/event-images/workshop-at-the-library-264921ca4b.jpg",
-      "events": 1
-    },
-    {
-      "source_url": "https://www.ithra.com/application/files/cache/thumbnails/fc8166cf5cfe3b9fc68c32ee5f97245a.jpg",
-      "file": "dist/assets/event-images/story-land-836edf7fa9.jpg",
-      "events": 1
-    },
-    {
       "source_url": "https://www.ithra.com/application/files/cache/thumbnails/27476bc77687c51a534d83a6f4c2fed2.jpg",
       "file": "dist/assets/event-images/بتلات-ورفاق-بالعربية-5878a28e89.jpg",
       "events": 1
@@ -1998,13 +1905,13 @@
       "events": 1
     },
     {
-      "source_url": "https://www.ithra.com/application/files/cache/thumbnails/0831e607b81b99046024c689736852e7.jpg",
-      "file": "dist/assets/event-images/family-game-4d2847f9c7.jpg",
+      "source_url": "https://hayyjameel.org/wp-content/uploads/2026/07/Mera_Still_10-scaled.png",
+      "file": "dist/assets/event-images/hayy-cinema-august-2026-4ed02b2a44.png",
       "events": 1
     },
     {
-      "source_url": "https://www.ithra.com/application/files/cache/thumbnails/54557d2e58629050eaeb37d4f43e3623.jpg",
-      "file": "dist/assets/event-images/stories-from-ithra-s-library-a855c19f5b.jpg",
+      "source_url": "https://www.ithra.com/application/files/cache/thumbnails/0831e607b81b99046024c689736852e7.jpg",
+      "file": "dist/assets/event-images/family-game-4d2847f9c7.jpg",
       "events": 1
     },
     {
@@ -2018,33 +1925,8 @@
       "events": 1
     },
     {
-      "source_url": "https://www.ithra.com/application/files/cache/thumbnails/3028e58e79c097efe11df08b7a04a1b6.png",
-      "file": "dist/assets/event-images/grand-art-space-9d738f462b.png",
-      "events": 1
-    },
-    {
-      "source_url": "https://www.ithra.com/application/files/cache/thumbnails/65968408a9d3f0c694f39a86ea6e3a9c.jpg",
-      "file": "dist/assets/event-images/nu-power-30a035f1b7.jpg",
-      "events": 1
-    },
-    {
-      "source_url": "https://www.ithra.com/application/files/cache/thumbnails/0e6478ba150972b2c8690feb03167d72.jpg",
-      "file": "dist/assets/event-images/the-moral-of-the-story-a19cde13da.jpg",
-      "events": 1
-    },
-    {
-      "source_url": "https://www.ithra.com/application/files/cache/thumbnails/d8565b5e78b2d0761347e3169962c3c5.jpg",
-      "file": "dist/assets/event-images/games-hub-9ae2a7e0d7.jpg",
-      "events": 1
-    },
-    {
       "source_url": "https://www.ithra.com/application/files/cache/thumbnails/3c0e886119ed7d6dc6e96bff14dbcb78.jpg",
       "file": "dist/assets/event-images/trivia-night-earth-quest-tic-tac-know-c5700ded56.jpg",
-      "events": 1
-    },
-    {
-      "source_url": "https://www.ithra.com/application/files/cache/thumbnails/5031b376aa4c8c1488517597db5bca86.jpg",
-      "file": "dist/assets/event-images/family-challenges-e3db77fbac.jpg",
       "events": 1
     },
     {
@@ -2058,11 +1940,6 @@
       "events": 1
     },
     {
-      "source_url": "https://www.ithra.com/application/files/cache/thumbnails/388c96722ea7802636485fc7640da5a1.jpg",
-      "file": "dist/assets/event-images/energy-in-motion-bba2390362.jpg",
-      "events": 1
-    },
-    {
       "source_url": "https://www.ithra.com/application/files/cache/thumbnails/a1d6397472149e5f86f6e4d63682ca94.jpg",
       "file": "dist/assets/event-images/الفن-في-الحياة-اليومية-d36fc1f92e.jpg",
       "events": 1
@@ -2070,11 +1947,6 @@
     {
       "source_url": "https://www.ithra.com/application/files/cache/thumbnails/80f522efd4107e277b60a5b14d414771.jpg",
       "file": "dist/assets/event-images/swim-r-mission-3b2e3d2c10.jpg",
-      "events": 1
-    },
-    {
-      "source_url": "https://www.ithra.com/application/files/cache/thumbnails/5d9089ccc5309c4c20ca0c1099df3ab1.jpg",
-      "file": "dist/assets/event-images/chess-hub-3cbbdfff18.jpg",
       "events": 1
     },
     {
@@ -2093,43 +1965,13 @@
       "events": 1
     },
     {
-      "source_url": "https://www.ithra.com/application/files/cache/thumbnails/a21934b0416a6f32d59a3124407ca98b.jpg",
-      "file": "dist/assets/event-images/survival-journey-cf5b8c030f.jpg",
-      "events": 1
-    },
-    {
       "source_url": "https://www.ithra.com/application/files/cache/thumbnails/f63629974556fd3642fc133c437a45df.jpg",
       "file": "dist/assets/event-images/energy-lab-bae21e6134.jpg",
       "events": 1
     },
     {
-      "source_url": "https://www.ithra.com/application/files/cache/thumbnails/c106a0c8f6497e29241fc97f368d2be4.jpg",
-      "file": "dist/assets/event-images/children-s-art-studio-4f842a30bc.jpg",
-      "events": 1
-    },
-    {
-      "source_url": "https://www.ithra.com/application/files/cache/thumbnails/df659f937227e0e3b989ee5698288e94.jpg",
-      "file": "dist/assets/event-images/children-s-museum-story-time-0b7f442de4.jpg",
-      "events": 1
-    },
-    {
-      "source_url": "https://www.ithra.com/application/files/cache/thumbnails/4dc402fa30dd57d68581aa05f1ce5c0f.jpg",
-      "file": "dist/assets/event-images/spot-of-inspiration-0f891a4330.jpg",
-      "events": 1
-    },
-    {
       "source_url": "https://hub.misk.org.sa/media/eoxb5tmh/ec-founder-leadership-excellence_en.png",
       "file": "dist/assets/event-images/entrepreneur-leadership-excellence-program-01356b9cea.png",
-      "events": 1
-    },
-    {
-      "source_url": "https://www.ithra.com/application/files/cache/thumbnails/34a91e4e84d3e4a79a05114daaabbfcb.jpg",
-      "file": "dist/assets/event-images/tinkering-stations-1fefe4f4f1.jpg",
-      "events": 1
-    },
-    {
-      "source_url": "https://www.ithra.com/application/files/cache/thumbnails/51465f52b41f834e2e54c5a1bec652c8.jpg",
-      "file": "dist/assets/event-images/دار-الطباعة-f048e29300.jpg",
       "events": 1
     },
     {
@@ -2210,11 +2052,6 @@
     {
       "source_url": "https://www.ithra.com/application/files/cache/thumbnails/7065e6e1e765661f4a44c78da1021235.jpg",
       "file": "dist/assets/event-images/take-a-closer-look-at-the-preparation-process-for-the-plays-competing-470ce0d879.jpg",
-      "events": 1
-    },
-    {
-      "source_url": "https://www.ithra.com/application/files/cache/thumbnails/021dbae93d2b03cf4faffc8cb85e03d7.jpg",
-      "file": "dist/assets/event-images/youth-book-club-acf92e6dc3.jpg",
       "events": 1
     },
     {
@@ -2318,11 +2155,6 @@
       "events": 1
     },
     {
-      "source_url": "https://www.ithra.com/application/files/cache/thumbnails/1bfbc17fa9fc0e794418752ac39ebb8d.jpg",
-      "file": "dist/assets/event-images/your-book-in-a-minute-5cc468c06d.jpg",
-      "events": 1
-    },
-    {
       "source_url": "https://www.ithra.com/application/files/cache/thumbnails/d9bf7aded9306f8c7266477951ef3d49.jpg",
       "file": "dist/assets/event-images/kinusaiga-art-a47d48296f.jpg",
       "events": 1
@@ -2418,16 +2250,6 @@
       "events": 1
     },
     {
-      "source_url": "https://www.ithra.com/application/files/cache/thumbnails/00a340b39fdc9a81673ac198e27e48ab.jpg",
-      "file": "dist/assets/event-images/storyteller-of-the-day-d9b6d7c21c.jpg",
-      "events": 1
-    },
-    {
-      "source_url": "https://www.ithra.com/application/files/cache/thumbnails/4899ef6ead03a33b6ae9c2359ab2f195.jpg",
-      "file": "dist/assets/event-images/unbox-your-story-c6dc19b0cf.jpg",
-      "events": 1
-    },
-    {
       "source_url": "https://www.ithra.com/application/files/cache/thumbnails/9cb3e48739ad64294e279bd3a23dadf7.jpg",
       "file": "dist/assets/event-images/kindergarten-under-the-palm-tree-english-fd59c1ee33.jpg",
       "events": 1
@@ -2455,11 +2277,6 @@
     {
       "source_url": "https://www.ithra.com/application/files/cache/thumbnails/83206b9ea769d26e304387df26624b55.jpg",
       "file": "dist/assets/event-images/my-neighbor-totoro-3f9c84f638.jpg",
-      "events": 1
-    },
-    {
-      "source_url": "https://www.ithra.com/application/files/cache/thumbnails/b3d6e2a8839c4f5f1fd761ce0128b3f0.jpg",
-      "file": "dist/assets/event-images/on-this-carpet-fd659c9065.jpg",
       "events": 1
     },
     {
@@ -2493,13 +2310,193 @@
       "events": 1
     },
     {
-      "source_url": "https://www.ithra.com/application/files/cache/thumbnails/71ccb8981524b13e856e38276f2c0cde.jpg",
-      "file": "dist/assets/event-images/1-2-3-let-s-rhyme-6df127aea1.jpg",
+      "source_url": "https://www.ithra.com/application/files/cache/thumbnails/1ea1870b2f6153f6a1e226f49fe9feab.jpg",
+      "file": "dist/assets/event-images/a-home-i-imagine-5e16f1cd67.jpg",
       "events": 1
     },
     {
-      "source_url": "https://www.ithra.com/application/files/cache/thumbnails/1ea1870b2f6153f6a1e226f49fe9feab.jpg",
-      "file": "dist/assets/event-images/a-home-i-imagine-5e16f1cd67.jpg",
+      "source_url": "https://www.ithra.com/application/files/cache/thumbnails/775569abc4a041215f586cc4f44c4654.jpg",
+      "file": "dist/assets/event-images/around-the-table-3dc22ec4fd.jpg",
+      "events": 1
+    },
+    {
+      "source_url": "https://www.ithra.com/application/files/cache/thumbnails/f279f19d391539955198b39f74896310.png",
+      "file": "dist/assets/event-images/balloon-shapes-lab-e6aeaa9b76.png",
+      "events": 1
+    },
+    {
+      "source_url": "https://www.ithra.com/application/files/cache/thumbnails/8bce8bd63e14116e5dc17f5a86ed2877.png",
+      "file": "dist/assets/event-images/built-by-nature-e568863602.png",
+      "events": 1
+    },
+    {
+      "source_url": "https://www.ithra.com/application/files/cache/thumbnails/e08ca4205d41622630357f6c5878f72d.jpg",
+      "file": "dist/assets/event-images/children-s-caf-64db4fa0b5.jpg",
+      "events": 1
+    },
+    {
+      "source_url": "https://www.ithra.com/application/files/cache/thumbnails/d79cc04c29ddcbceb1de3c5f975aacdc.jpg",
+      "file": "dist/assets/event-images/draw-your-story-2b055b7555.jpg",
+      "events": 1
+    },
+    {
+      "source_url": "https://www.ithra.com/application/files/cache/thumbnails/14bf35f728afe868b4f7e3f9050bc293.png",
+      "file": "dist/assets/event-images/hidden-home-bingo-4e1c787eba.png",
+      "events": 1
+    },
+    {
+      "source_url": "https://www.ithra.com/application/files/cache/thumbnails/90315b54b65df8250bf15fb42b84a5fc.png",
+      "file": "dist/assets/event-images/insightful-spaces-41a67e2ec3.png",
+      "events": 1
+    },
+    {
+      "source_url": "https://www.ithra.com/application/files/cache/thumbnails/1bb6f3a71fd24385c1d24e98fa775448.jpg",
+      "file": "dist/assets/event-images/interactive-exhibit-b92db5e9ce.jpg",
+      "events": 1
+    },
+    {
+      "source_url": "https://www.ithra.com/application/files/cache/thumbnails/6a63a21825e182f3eb25f41eee38e5f6.jpg",
+      "file": "dist/assets/event-images/let-s-decorate-51787d1ab9.jpg",
+      "events": 1
+    },
+    {
+      "source_url": "https://www.ithra.com/application/files/cache/thumbnails/ed0558c94b7411c8e8af752920055c32.jpg",
+      "file": "dist/assets/event-images/mic-moments-2d5d5eb34b.jpg",
+      "events": 1
+    },
+    {
+      "source_url": "https://www.ithra.com/application/files/cache/thumbnails/971a6ad7cc87bddac843cc9dc8caf394.png",
+      "file": "dist/assets/event-images/mirror-or-window-c02fc96abd.png",
+      "events": 1
+    },
+    {
+      "source_url": "https://www.ithra.com/application/files/cache/thumbnails/a9a5a6fb390c4581eef2b544a5b8df21.png",
+      "file": "dist/assets/event-images/my-family-bouquet-7c214dd7c1.png",
+      "events": 1
+    },
+    {
+      "source_url": "https://www.ithra.com/application/files/cache/thumbnails/03aa1f59a54ddc4fe66f74a791e57f6e.png",
+      "file": "dist/assets/event-images/our-place-on-earth-7fa922f9be.png",
+      "events": 1
+    },
+    {
+      "source_url": "https://www.ithra.com/application/files/cache/thumbnails/835b32e24287c9341427be196d022bb6.jpg",
+      "file": "dist/assets/event-images/painted-faces-9cd48f66a6.jpg",
+      "events": 1
+    },
+    {
+      "source_url": "https://www.ithra.com/application/files/cache/thumbnails/1003733fc99194c8db0c789ce5d7f134.jpg",
+      "file": "dist/assets/event-images/treasures-in-every-home-fe7cbb1c84.jpg",
+      "events": 1
+    },
+    {
+      "source_url": "https://www.ithra.com/application/files/cache/thumbnails/451bbba7a5290a4a84cdbd45e4fbf487.png",
+      "file": "dist/assets/event-images/where-we-belong-41594f1263.png",
+      "events": 1
+    },
+    {
+      "source_url": "https://www.ithra.com/application/files/cache/thumbnails/c8d49ffba4df7361602a59e087351495.jpg",
+      "file": "dist/assets/event-images/who-lived-here-c6e588dd84.jpg",
+      "events": 1
+    },
+    {
+      "source_url": "https://www.ithra.com/application/files/cache/thumbnails/74d8bb602fafe981b723140aa8d77236.jpg",
+      "file": "dist/assets/event-images/zoom-in-21ef7b083b.jpg",
+      "events": 1
+    },
+    {
+      "source_url": "https://www.ithra.com/application/files/cache/thumbnails/46e6e4160b7aa59719d88308bd919faa.png",
+      "file": "dist/assets/event-images/puppet-world-3863736de8.png",
+      "events": 1
+    },
+    {
+      "source_url": "https://www.ithra.com/application/files/cache/thumbnails/7b355c6af030a76b742b41484d8a084e.jpg",
+      "file": "dist/assets/event-images/beaded-plant-suncatcher-29904eadb8.jpg",
+      "events": 1
+    },
+    {
+      "source_url": "https://www.ithra.com/application/files/cache/thumbnails/4d3708b09af44a312ade4fd065b26f22.png",
+      "file": "dist/assets/event-images/leap-then-look-bf84521a1f.png",
+      "events": 1
+    },
+    {
+      "source_url": "https://www.ithra.com/application/files/cache/thumbnails/bd79089afb4fcca102702b4924e6c7bc.jpg",
+      "file": "dist/assets/event-images/build-play-together-a47cb14c8a.jpg",
+      "events": 1
+    },
+    {
+      "source_url": "https://discoveraseer.com/en/img/asset/YXNzZXRzL2V4cGVyaWVuY2Uva3NodGgucG5n/kshth.png?w=1024&fm=webp&s=a903e9e7554e7cf219359b245d62d50e",
+      "file": "dist/assets/event-images/كشتة-ab3a550ce8.webp",
+      "events": 1
+    },
+    {
+      "source_url": "https://ju.edu.sa/sites/default/files/2026-07/5U5A0337-2.jpg.webp",
+      "file": "dist/assets/event-images/البرنامج-الصيفي-بجامعة-الجوف-2026-892e067a8d.webp",
+      "events": 1
+    },
+    {
+      "source_url": "https://tabukchamber.sa/storage/984/shaaar-alghrf-altgary-03.jpg",
+      "file": "dist/assets/event-images/ورشة-عمل-لسيدات-الأعمال-قواعد-المستفيد-الحقيقي-ومتطلبات-الامتثال-58c550bab7.jpg",
+      "events": 1
+    },
+    {
+      "source_url": "https://www.najran.gov.sa/FTPImages/32104c6d-c4d3-4403-8f0b-c4193be13817-1448012122252680.png",
+      "file": "dist/assets/event-images/مهرجان-صيف-نجران-2026-صيفنا-هايل-81fad8f140.png",
+      "events": 1
+    },
+    {
+      "source_url": "https://api.riyadh.sa/sites/default/files/styles/medium/public/2026-01/Screenshot%202025-05-02%20110732.png?itok=Dh5mqTSv",
+      "file": "dist/assets/event-images/esports-world-cup-82c085857f.png",
+      "events": 1
+    },
+    {
+      "source_url": "https://tc.qcc.org.sa/storage/260/6a4649f72c2c4_%D8%A7%D9%95%D8%AF%D8%A7%D8%B1%D8%A9-%D8%A7%D9%84%D9%85%D9%88%D8%A7%D8%B1%D8%AF-%D8%A7%D9%84%D8%A8%D8%B4%D8%B1%D9%8A%D8%A9_%D8%A7%D9%84%D8%A7%D8%B9%D9%84%D8%A7%D9%86.jpg",
+      "file": "dist/assets/event-images/عمليات-إدارة-الموارد-البشرية-44fab3c9d8.jpg",
+      "events": 1
+    },
+    {
+      "source_url": "https://www.ithra.com/application/files/cache/thumbnails/ffd391d6ab1a31514641bf1e5723a1c6.jpg",
+      "file": "dist/assets/event-images/free-monday-children-s-festival-at-the-children-museum-833a2c24ca.jpg",
+      "events": 1
+    },
+    {
+      "source_url": "https://scth.scene7.com/is/image/scth/curious-summer?wid=1400&hei=788&fit=constrain&fmt=webp",
+      "file": "dist/assets/event-images/curious-summers-a466fcddad.webp",
+      "events": 1
+    },
+    {
+      "source_url": "https://cdn.tuwaiq.edu.sa/initiatives_admin/images/awj5ovgr.utk.webp",
+      "file": "dist/assets/event-images/معسكر-التأهيل-لرخصة-الدرونز-وتحليل-البيانات-الفوتوغرامترية-b03efbb17c.webp",
+      "events": 1
+    },
+    {
+      "source_url": "https://scth.scene7.com/is/image/scth/okhtabotiya?wid=1400&hei=788&fit=constrain&fmt=webp",
+      "file": "dist/assets/event-images/okhtabotiya-0013765084.webp",
+      "events": 1
+    },
+    {
+      "source_url": "https://discoveraseer.com/en/img/asset/YXNzZXRzL2V4cGVyaWVuY2UvZHc4dzEyNTAuanBlZw/dw8w1250.jpeg?w=1024&fm=webp&s=e845b36cd3e878a1a1d7cec306a2e3f8",
+      "file": "dist/assets/event-images/حفلات-موسيقية-53b2281d16.webp",
+      "events": 1
+    },
+    {
+      "source_url": "https://api.riyadh.sa/sites/default/files/styles/medium/public/2026-07/NTN%202.png?itok=NcFLmn-3",
+      "file": "dist/assets/event-images/registration-for-international-research-competition-on-non-terrestrial-edd16ffe75.png",
+      "events": 1
+    },
+    {
+      "source_url": "https://scth.scene7.com/is/image/scth/combat-arena?wid=1400&hei=788&fit=constrain&fmt=webp",
+      "file": "dist/assets/event-images/combat-arena-b158bf372a.webp",
+      "events": 1
+    },
+    {
+      "source_url": "https://www.ithra.com/application/files/cache/thumbnails/57ced1047619d76eed02cbbfb34191f7.jpg",
+      "file": "dist/assets/event-images/philosophy-for-everyone-a-journey-of-thought-from-young-to-old-1dc740ef9e.jpg",
+      "events": 3
+    },
+    {
+      "source_url": "https://www.ithra.com/application/files/cache/thumbnails/9c5873773d4292a9e3ae3723253da66b.jpg",
+      "file": "dist/assets/event-images/documentary-competition-group-4-c5f1d56372.jpg",
       "events": 1
     }
   ],
@@ -2508,30 +2505,29 @@
   "skipped_recent_failures": [],
   "failed": [
     {
-      "source_url": "https://s7g10.scene7.com/is/image/rcu/fei2:landscape-16x9?$Responsive$&fit=stretch&fmt=webp&wid=1920",
-      "events": 1,
-      "reason": "HTTP 403",
-      "failure_kind": "access-denied",
-      "retry_after": "2026-09-18T08:16:23.773Z"
-    },
-    {
       "source_url": "https://cdn.rfecc.sa/wp-content/uploads/mec/qr_898ea2449274454e42895b52b18c6f68.png",
       "events": 1,
       "reason": "HTTP 403",
       "failure_kind": "access-denied",
-      "retry_after": "2026-09-18T08:16:23.773Z"
+      "retry_after": "2026-09-20T14:02:19.263Z"
+    },
+    {
+      "source_url": "https://s7g10.scene7.com/is/image/rcu/fei2:landscape-16x9?$Responsive$&fit=stretch&fmt=webp&wid=1920",
+      "events": 1,
+      "reason": "HTTP 403",
+      "failure_kind": "access-denied",
+      "retry_after": "2026-09-20T14:02:19.263Z"
     },
     {
       "source_url": "https://api.riyadh.sa/sites/default/files/styles/medium/public/2026-07/er%20%2859%29.jpg?itok=a33APdGm",
       "events": 1,
       "reason": "not-image text/html; charset=utf-8",
       "failure_kind": "source-returned-html",
-      "retry_after": "2026-09-18T08:16:23.773Z"
+      "retry_after": "2026-09-20T14:02:19.263Z"
     }
   ],
   "requires_rebuild": true,
   "rebuild_reasons": [
-    "fetched:2",
     "new-failures:3"
   ]
 }

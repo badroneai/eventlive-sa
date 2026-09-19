@@ -1,22 +1,15 @@
 {
-  "checked_at": "2026-09-17T08:14:48.045Z",
-  "targets": 11,
+  "checked_at": "2026-09-19T14:00:28.207Z",
+  "targets": 10,
   "evidence_found": 5,
-  "changed": 0,
-  "no_evidence": 5,
+  "changed": 1,
+  "no_evidence": 4,
   "failed": 1,
   "results": [
     {
       "id": "event-beast-house",
       "host": "nofomo.com",
       "url": "https://nofomo.com/collections/beast-house",
-      "status": "no-evidence",
-      "reason": "no-explicit-public-price"
-    },
-    {
-      "id": "event-unstable",
-      "host": "nofomo.com",
-      "url": "https://nofomo.com/collections/unstable",
       "status": "no-evidence",
       "reason": "no-explicit-public-price"
     },
@@ -76,8 +69,8 @@
       "host": "informaconnect.com",
       "url": "https://informaconnect.com/education-investment-saudi.com/purchase/select-package/",
       "status": "evidence",
-      "price_label": "499 USD",
-      "price": 499,
+      "price_label": "659 USD",
+      "price": 659,
       "price_currency": "USD",
       "method": "informa-visible-package-price"
     },

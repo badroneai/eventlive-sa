@@ -1,416 +1,212 @@
 {
   "schema": "eventlive.source-browser-probe-checkpoint.v1",
-  "checkpointed_at": "2026-09-17T07:59:25.865Z",
-  "generated_at": "2026-09-17T07:59:03.289Z",
+  "checkpointed_at": "2026-09-19T13:41:05.436Z",
+  "generated_at": "2026-09-19T13:31:42.172Z",
   "source_registry": "data/source_registry.json",
   "output_dir": "data/raw/browser-probes",
-  "sources_planned": 2,
-  "sources_completed": 2,
+  "sources_planned": 8,
+  "sources_completed": 8,
   "totals": {
-    "probed": 2,
-    "browser_network_api": 1,
+    "probed": 8,
+    "browser_network_api": 0,
     "browser_hydration_payload": 0,
-    "rendered_html_candidates": 1,
+    "rendered_html_candidates": 2,
     "blocked_or_protected": 0,
     "policy_skipped": 0
   },
   "completed_ids": [
-    "saudi-water-authority-events",
-    "riyadh-city-events"
+    "moc-cultural-calendar",
+    "mos-events",
+    "monshaat-events",
+    "tuwaiq-academy-bootcamps",
+    "future-skills-catalog",
+    "saudi-pro-league-fixtures",
+    "moc-cultural-subportals",
+    "eye-of-riyadh-events"
   ],
   "sources": [
     {
-      "id": "saudi-water-authority-events",
-      "probed_at": "2026-09-17T07:59:15.185Z",
-      "name": "Saudi Water Authority Events",
-      "priority": 44,
-      "url": "https://www.swa.gov.sa/en/events",
-      "final_url": "https://www.swa.gov.sa/en/events",
-      "status": "ok",
-      "http_status": 200,
-      "navigation_error": "",
-      "duration_ms": 11519,
-      "classification": "browser-network-api",
-      "next_action": "ثبت endpoint مرشحًا كجامع مباشر، ثم اكتب extractor من JSON مع اختبار انحدار.",
-      "title": "Events Calendar | SWA",
-      "text_bytes": 2558,
-      "html_bytes": 239551,
-      "html_snapshot": "data/raw/browser-probes/saudi-water-authority-events-2026-09-17T07-59-03-289Z.html",
-      "screenshot": "data/raw/browser-probes/saudi-water-authority-events-2026-09-17T07-59-03-289Z.png",
+      "id": "moc-cultural-calendar",
+      "probed_at": "2026-09-19T13:33:55.810Z",
+      "name": "Ministry of Culture Cultural Calendar",
+      "priority": 3,
+      "url": "https://www.moc.gov.sa/en/Modules/Pages/Cultural-Calendar",
+      "final_url": "chrome-error://chromewebdata/",
+      "status": "error",
+      "http_status": 0,
+      "navigation_error": "page.goto: Timeout 30000ms exceeded.\nCall log:\n  - navigating to \"https://www.moc.gov.sa/en/Modules/Pages/Cultural-Calendar\", waiting until \"domcontentloaded\"\n",
+      "duration_ms": 133188,
+      "classification": "empty-or-shell",
+      "next_action": "اعتبرها shell وابحث عن API أو مسار بديل قبل أي collector.",
+      "title": "",
+      "text_bytes": 0,
+      "html_bytes": 0,
+      "html_snapshot": "data/raw/browser-probes/moc-cultural-calendar-2026-09-19T13-31-42-172Z.html",
+      "screenshot": "",
       "signals": {
         "has_next_data": false,
         "has_nuxt": false,
         "has_json_ld": false,
         "has_event_schema": false,
-        "date_snippets": [
-          "nt Global Prize for Innovation in Water 2026-12-14 - 2026-12-14 Global Awards Ceremony Jeddah – The Ritz-Carlton Upcoming Show Det",
-          "al Water Sustainability Conference 2026 2026-12-14 - 2026-12-16 Global Conference Jeddah-The Ritz-Carlton Upcoming Show Details Ex",
-          "ships Company Forum and Awards Ceremony 2026-12-01 - 2026-12-01 Local party Fairmont - Riyadh Upcoming Show Details Export to Cale",
-          "ndar Saudi National Day 2026-09-23 - 2026-09-24 National celebration Riyadh Upcoming Show Details Export to Calendar Saudi Flag",
-          "Day 2027-03-11 - 2027-03-12 National Celebration Riyadh Upcoming Show Details Export to Calendar Foundation Day 2027",
-          "-02-22 - 2027-02-23 National Celebration Riyadh Upcoming Show Details Export to Calendar World Conference on",
-          "Desalination and Water Reuse 2026-11-01 - 2026-11-05 Global conference Riyadh Upcoming Show Details Export to Calendar",
-          "Global Infrastructure Expo 2026-09-15 - 2026-09-17 Global Conference Riyadh Intl. Convention & Exhibition Center Ongoing Show Deta"
-        ],
-        "event_like_links": [
-          {
-            "text": "Events Calendar",
-            "href": "https://www.swa.gov.sa/en/events"
-          },
-          {
-            "text": "العربية",
-            "href": "https://www.swa.gov.sa/ar/events"
-          },
-          {
-            "text": "Share on Twitter/X - opens in a new tab",
-            "href": "https://twitter.com/intent/tweet?url=https%3A%2F%2Fwww.swa.gov.sa%2Fen%2Fevents"
-          },
-          {
-            "text": "Share on Facebook - opens in a new tab",
-            "href": "https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fwww.swa.gov.sa%2Fen%2Fevents"
-          },
-          {
-            "text": "Share on WhatsApp - opens in a new tab",
-            "href": "https://api.whatsapp.com/send?text=https%3A%2F%2Fwww.swa.gov.sa%2Fen%2Fevents"
-          },
-          {
-            "text": "Show Details",
-            "href": "https://www.swa.gov.sa/en/events/Event-639167725551054643"
-          },
-          {
-            "text": "Show Details",
-            "href": "https://www.swa.gov.sa/en/events/Event-639166882740331066"
-          },
-          {
-            "text": "Show Details",
-            "href": "https://www.swa.gov.sa/en/events/Event-639161702137808713"
-          },
-          {
-            "text": "Show Details",
-            "href": "https://www.swa.gov.sa/en/events/Event-639153024443263826"
-          },
-          {
-            "text": "Show Details",
-            "href": "https://www.swa.gov.sa/en/events/Event-639152942884779740"
-          },
-          {
-            "text": "Show Details",
-            "href": "https://www.swa.gov.sa/en/events/Event-639152936274801348"
-          },
-          {
-            "text": "Show Details",
-            "href": "https://www.swa.gov.sa/en/events/Event-639152055712272031"
-          },
-          {
-            "text": "Show Details",
-            "href": "https://www.swa.gov.sa/en/events/Event-639148593206554999"
-          },
-          {
-            "text": "Show Details",
-            "href": "https://www.swa.gov.sa/en/events/Event-639148555832355516"
-          }
-        ]
+        "date_snippets": [],
+        "event_like_links": []
       },
       "script_signals": {
         "next_data_scripts": 0,
         "nuxt_scripts": 0,
         "json_ld_scripts": 0,
-        "large_inline_scripts": 1
+        "large_inline_scripts": 0
       },
-      "network_total": 19,
-      "network_endpoints": [
-        {
-          "method": "POST",
-          "status": 200,
-          "url": "https://e-services-api.swa.gov.sa/api/PageVisitsCount?url=https%3A%2F%2Fwww.swa.gov.sa%2Fen%2Fevents&pageTitle=Events%20Calendar%20%7C%20SWA",
-          "content_type": "",
-          "resource_type": "fetch",
-          "request_post_data": "{}",
-          "response_shape": "empty",
-          "preview": ""
-        },
-        {
-          "method": "GET",
-          "status": 200,
-          "url": "https://e-services-api.swa.gov.sa/api/EvaluationPage/evaluation-counts?fullUrl=https://www.swa.gov.sa/en/events",
-          "content_type": "application/json",
-          "resource_type": "fetch",
-          "request_post_data": "",
-          "response_shape": "json-object:totalEvaluations,yesCount,latestPageUpdate",
-          "preview": "{\"totalEvaluations\":0,\"yesCount\":0,\"latestPageUpdate\":null}"
-        },
-        {
-          "method": "GET",
-          "status": 200,
-          "url": "https://e-services-api.swa.gov.sa/api/event/published",
-          "content_type": "application/json",
-          "resource_type": "fetch",
-          "request_post_data": "",
-          "response_shape": "json-like-invalid",
-          "preview": "[{\"id\":33,\"slug\":\"Event-639167725551054643\",\"titleAr\":\"جائزة الابتكار العالمية في المياه\",\"titleEn\":\"Global Prize for Innovation in Water\",\"typeAr\":\"حفل جوائز عالمي للمياه\",\"typeEn\":\"Global Awards Ceremony\",\"descriptionAr\":\"<p class=\\\"ql-align-right ql-direction-rtl\\\">تُقام جائزة الابتكار العالمية في المياه بتنظيم من الهيئة السعودية للمياه، لتجمع نخبة من المبتكرين والباحثين ورواد الأعمال والخبراء من مختلف أنحاء العالم. وتهدف الجائزة إلى تسريع تبني الحلول المبتكرة التي تسهم في مواجهة التحديات المائية العالمية وتعزيز استدامة الموارد المائية. وتشمل الجائزة فئات متنوعة تغطي تقنيات إنتاج المياه، وإعادة الاستخدام، والاقتصاد الدائري، وكفاءة استهلاك المياه، والتحول الرقمي والإدارة الذكية للمياه، بما يعزز دور المملكة كمركز عالمي للابتكار في قطاع المياه.</p><p><br></p>\",\"descriptionEn\":\"<p>The Global Water Innovation Award (GPIW) is run by the Saudi Water Authority and brings together a top bunch of innovators, researchers, entrepreneurs, and experts from all over the world. The award is all about speeding up the use of smart solutions to tackle global water problems and support sustainable water resources. It covers different areas like water production tech, reuse, the circular economy, water efficiency, digital changes, and smart water management, showing off the Kingdom's role as a global hotspot for water innovation.</p>\",\"externalLink\":\"https://gpiw.net/ar\",\"locationAr\":\"جدة – الريتز كارلتون\",\"locationEn\":\"Jeddah – The Ritz-Carlton\",\"status\":1,\"creationDate\":\"2026-06-11T11:02:35.1914662\",\"startDate\":\"2026-12-14T09:00:00\",\"endDate\":\"2026-12-14T16:00:00\",\"publishDate\":\"2026-06-11T11:07:03.7317518\",\"mainImage\":{\"id\":68265,\"fileName\":\"شعار 6.png\",\"objectKey\":\"Events/a4ae75a0b5914231a232796f3b7fd47a_2026_06_11_11_02_35_109.png\",\"fileUrl\":\"https://swa-cdn.swa.gov.sa/Events/a4ae75"
-        },
-        {
-          "method": "GET",
-          "status": 200,
-          "url": "https://e-services-api.swa.gov.sa/api/PageVisitsCount?url=https%3A%2F%2Fwww.swa.gov.sa%2Fen%2Fevents",
-          "content_type": "application/json",
-          "resource_type": "fetch",
-          "request_post_data": "",
-          "response_shape": "json-object:id,url,pageTitle,totalCount,todayCount,lastUpdated",
-          "preview": "{\"id\":4547,\"url\":\"https://www.swa.gov.sa/en/events\",\"pageTitle\":\"Events Calendar | SWA\",\"totalCount\":700,\"todayCount\":4,\"lastUpdated\":\"2026-09-17T07:59:07.4831015\"}"
-        },
-        {
-          "method": "GET",
-          "status": 200,
-          "url": "https://cdn77.api.userway.org/api/img-dscr/v2/0UYGxnoXJv/3624675/Mzv57s4G8iSPKW7I/alts.json?dto=%7B%22sorted%22%3A%5B%7B%22src%22%3A%22https%3A%2F%2Fwww.swa.gov.sa%2Fassets%2Fimages%2Flogos%2Fswa-logo-dark.svg%22%2C%22alt%22%3A%22SWA%22%2C%22dir%22%3A%22RO%22%7D%2C%7B%22src%22%3A%22https%3A%2F%2Fwww.swa.gov.sa%2Fassets%2Fsvg%2FGov_Logo.svg%22%2C%22alt%22%3A%22Gov_Logo%22%2C%22dir%22%3A%22RO%22%7D%2C%7B%22src%22%3A%22https%3A%2F%2Fwww.swa.gov.sa%2Fassets%2Fsvg%2Fhttps.svg%22%2C%22alt%22%3A%22https%22%2C%22dir%22%3A%22RO%22%7D%2C%7B%22src%22%3A%22https%3A%2F%2Fwww.swa.gov.sa%2Fassets%2Fsvg%2Fksa-flag.svg%22%2C%22alt%22%3A%22flag%22%2C%22dir%22%3A%22RO%22%7D%2C%7B%22src%22%3A%22https%3A%2F%2Fwww.swa.gov.sa%2Fassets%2Fsvg%2Flink-04.svg%22%2C%22alt%22%3A%22link%22%2C%22dir%22%3A%22RO%22%7D%5D%2C%22tier%22%3A%22PAID_QUOTA_TIER%22%2C%22pageUrl%22%3A%22https%3A%2F%2Fwww.swa.gov.sa%2Fen%2Fevents%22%7D",
-          "content_type": "application/json",
-          "resource_type": "fetch",
-          "request_post_data": "",
-          "response_shape": "json-object:payload,payloadType",
-          "preview": "{\"payload\":{\"missingAlts\":[{\"src\":\"https://www.swa.gov.sa/assets/images/logos/swa-logo-dark.svg\",\"alt\":null,\"approved\":false,\"decorative\":false,\"metadata\":{\"skippedForReadOnly\":true,\"foundCachedResponse\":true}},{\"src\":\"https://www.swa.gov.sa/assets/svg/Gov_Logo.svg\",\"alt\":null,\"approved\":false,\"decorative\":false,\"metadata\":{\"skippedForReadOnly\":true,\"foundCachedResponse\":true}},{\"src\":\"https://www.swa.gov.sa/assets/svg/https.svg\",\"alt\":null,\"approved\":false,\"decorative\":false,\"metadata\":{\"skippedForReadOnly\":true,\"foundCachedResponse\":true}},{\"src\":\"https://www.swa.gov.sa/assets/svg/ksa-flag.svg\",\"alt\":null,\"approved\":false,\"decorative\":false,\"metadata\":{\"skippedForReadOnly\":true,\"foundCachedResponse\":true}},{\"src\":\"https://www.swa.gov.sa/assets/svg/link-04.svg\",\"alt\":null,\"approved\":false,\"decorative\":false,\"metadata\":{\"skippedForReadOnly\":true,\"foundCachedResponse\":true}}]},\"payloadType\":\"MissingAltsDto\"}"
-        },
-        {
-          "method": "POST",
-          "status": 200,
-          "url": "https://api.userway.org/api/br-links/v0/pdf-links",
-          "content_type": "application/json",
-          "resource_type": "xhr",
-          "request_post_data": "{\"userId\":426018,\"siteId\":3624675,\"page\":\"/en/events\",\"fullPage\":\"https://www.swa.gov.sa/en/events\",\"links\":[\"https://swa-cdn.swa.gov.sa/Reports/SWA_Brand_Guideline.pdf\"]}",
-          "response_shape": "json-object:statuses",
-          "preview": "{\"statuses\":[1]}"
-        },
-        {
-          "method": "GET",
-          "status": 200,
-          "url": "https://cdn77.api.userway.org/api/img-dscr/v2/0UYGxnoXJv/3624675/Mzv57s4G8iSPKW7I/alts.json?dto=%7B%22sorted%22%3A%5B%7B%22src%22%3A%22https%3A%2F%2Fswa-cdn.swa.gov.sa%2FEvents%2F36decb99545d4da5bfb6b09fb000691b_2026_05_25_10_48_20_766.jpg%22%2C%22alt%22%3A%22Saudi%20National%20Day%22%2C%22dir%22%3A%22RO%22%7D%2C%7B%22src%22%3A%22https%3A%2F%2Fswa-cdn.swa.gov.sa%2FEvents%2F8ca9c4254c334d8d90c85b0c4f5f275c_2026_05_25_08_13_47_482.jpg%22%2C%22alt%22%3A%22Foundation%20Day%22%2C%22dir%22%3A%22RO%22%7D%2C%7B%22src%22%3A%22https%3A%2F%2Fswa-cdn.swa.gov.sa%2FEvents%2F9535a79c349840bf8c92eeefcc04f2e5_2026_05_20_06_33_03_235.png%22%2C%22alt%22%3A%22Saudi%20Water%20Week%22%2C%22dir%22%3A%22RO%22%7D%2C%7B%22src%22%3A%22https%3A%2F%2Fswa-cdn.swa.gov.sa%2FEvents%2Fa8b384622a1d4281b64b6fd75c82bd5e_2026_05_25_07_44_38_769.jpg%22%2C%22alt%22%3A%22World%20Conference%20on%20Desalination%20and%20Water%20Reuse%22%2C%22dir%22%3A%22RO%22%7D%2C%7B%22src%22%3A%22https%3A%2F%2Fswa-cdn.swa.gov.sa%2FEvents%2Fb4fed1f10c414a39a5c49cd9fda6a63d_2026_05_20_07_35_20_655.png%22%2C%22alt%22%3A%22Global%20Infrastructure%20Expo%22%2C%22dir%22%3A%22RO%22%7D%2C%7B%22src%22%3A%22https%3A%2F%2Fswa-cdn.swa.gov.sa%2FEvents%2Ff168ba04d30d4fec96ca03600421bd99_2026_05_25_08_24_48_478.png%22%2C%22alt%22%3A%22Saudi%20Flag%20Day%22%2C%22dir%22%3A%22RO%22%7D%2C%7B%22src%22%3A%22https%3A%2F%2Fwww.swa.gov.sa%2Fassets%2Fimages%2Fevents-calendar%2FTrailing%2520icon.svg%22%2C%22alt%22%3A%22%22%2C%22dir%22%3A%22RO%22%7D%5D%2C%22tier%22%3A%22PAID_QUOTA_TIER%22%2C%22pageUrl%22%3A%22https%3A%2F%2Fwww.swa.gov.sa%2Fen%2Fevents%22%7D",
-          "content_type": "application/json",
-          "resource_type": "fetch",
-          "request_post_data": "",
-          "response_shape": "json-object:payload,payloadType",
-          "preview": "{\"payload\":{\"missingAlts\":[{\"src\":\"https://swa-cdn.swa.gov.sa/Events/36decb99545d4da5bfb6b09fb000691b_2026_05_25_10_48_20_766.jpg\",\"alt\":null,\"approved\":false,\"decorative\":false,\"metadata\":{\"skippedForReadOnly\":true,\"foundCachedResponse\":true}},{\"src\":\"https://swa-cdn.swa.gov.sa/Events/8ca9c4254c334d8d90c85b0c4f5f275c_2026_05_25_08_13_47_482.jpg\",\"alt\":null,\"approved\":false,\"decorative\":false,\"metadata\":{\"skippedForReadOnly\":true,\"foundCachedResponse\":true}},{\"src\":\"https://swa-cdn.swa.gov.sa/Events/9535a79c349840bf8c92eeefcc04f2e5_2026_05_20_06_33_03_235.png\",\"alt\":null,\"approved\":false,\"decorative\":false,\"metadata\":{\"skippedForReadOnly\":true,\"foundCachedResponse\":true}},{\"src\":\"https://swa-cdn.swa.gov.sa/Events/a8b384622a1d4281b64b6fd75c82bd5e_2026_05_25_07_44_38_769.jpg\",\"alt\":null,\"approved\":false,\"decorative\":false,\"metadata\":{\"skippedForReadOnly\":true,\"foundCachedResponse\":true}},{\"src\":\"https://swa-cdn.swa.gov.sa/Events/b4fed1f10c414a39a5c49cd9fda6a63d_2026_05_20_07_35_20_655.png\",\"alt\":null,\"approved\":false,\"decorative\":false,\"metadata\":{\"skippedForReadOnly\":true,\"foundCachedResponse\":true}},{\"src\":\"https://swa-cdn.swa.gov.sa/Events/f168ba04d30d4fec96ca03600421bd99_2026_05_25_08_24_48_478.png\",\"alt\":null,\"approved\":false,\"decorative\":false,\"metadata\":{\"skippedForReadOnly\":true,\"foundCachedResponse\":true}},{\"src\":\"https://www.swa.gov.sa/assets/images/events-calendar/Trailing%20icon.svg\",\"alt\":null,\"approved\":false,\"decorative\":false,\"metadata\":{\"skippedForReadOnly\":true,\"foundCachedResponse\":true}}]},\"payloadType\":\"MissingAltsDto\"}"
-        },
-        {
-          "method": "GET",
-          "status": 200,
-          "url": "https://api.userway.org/api/a11y-data/v0/page/https%3A%2F%2Fwww.swa.gov.sa%2Fen%2Fevents/DESKTOP/WIDGET_ON/status",
-          "content_type": "application/json",
-          "resource_type": "fetch",
-          "request_post_data": "",
-          "response_shape": "json-object:payload,payloadType",
-          "preview": "{\"payload\":{\"status\":\"CONTRIB_PRESENT\"},\"payloadType\":\"PageContribStatusDto\"}"
-        }
-      ],
+      "network_total": 0,
+      "network_endpoints": [],
+      "network_sample": []
+    },
+    {
+      "id": "mos-events",
+      "probed_at": "2026-09-19T13:36:10.973Z",
+      "name": "Ministry of Sport Events",
+      "priority": 4,
+      "url": "https://www.mos.gov.sa/en/media/events",
+      "final_url": "chrome-error://chromewebdata/",
+      "status": "error",
+      "http_status": 0,
+      "navigation_error": "page.goto: Timeout 30000ms exceeded.\nCall log:\n  - navigating to \"https://www.mos.gov.sa/en/media/events\", waiting until \"domcontentloaded\"\n",
+      "duration_ms": 135124,
+      "classification": "empty-or-shell",
+      "next_action": "اعتبرها shell وابحث عن API أو مسار بديل قبل أي collector.",
+      "title": "",
+      "text_bytes": 0,
+      "html_bytes": 0,
+      "html_snapshot": "data/raw/browser-probes/mos-events-2026-09-19T13-31-42-172Z.html",
+      "screenshot": "",
+      "signals": {
+        "has_next_data": false,
+        "has_nuxt": false,
+        "has_json_ld": false,
+        "has_event_schema": false,
+        "date_snippets": [],
+        "event_like_links": []
+      },
+      "script_signals": {
+        "next_data_scripts": 0,
+        "nuxt_scripts": 0,
+        "json_ld_scripts": 0,
+        "large_inline_scripts": 0
+      },
+      "network_total": 0,
+      "network_endpoints": [],
+      "network_sample": []
+    },
+    {
+      "id": "monshaat-events",
+      "probed_at": "2026-09-19T13:38:26.148Z",
+      "name": "Monsha'at All Events",
+      "priority": 9,
+      "url": "https://www.monshaat.gov.sa/en/events-list",
+      "final_url": "chrome-error://chromewebdata/",
+      "status": "error",
+      "http_status": 0,
+      "navigation_error": "page.goto: Timeout 30000ms exceeded.\nCall log:\n  - navigating to \"https://www.monshaat.gov.sa/en/events-list\", waiting until \"domcontentloaded\"\n",
+      "duration_ms": 135134,
+      "classification": "empty-or-shell",
+      "next_action": "اعتبرها shell وابحث عن API أو مسار بديل قبل أي collector.",
+      "title": "",
+      "text_bytes": 0,
+      "html_bytes": 0,
+      "html_snapshot": "data/raw/browser-probes/monshaat-events-2026-09-19T13-31-42-172Z.html",
+      "screenshot": "",
+      "signals": {
+        "has_next_data": false,
+        "has_nuxt": false,
+        "has_json_ld": false,
+        "has_event_schema": false,
+        "date_snippets": [],
+        "event_like_links": []
+      },
+      "script_signals": {
+        "next_data_scripts": 0,
+        "nuxt_scripts": 0,
+        "json_ld_scripts": 0,
+        "large_inline_scripts": 0
+      },
+      "network_total": 0,
+      "network_endpoints": [],
+      "network_sample": []
+    },
+    {
+      "id": "tuwaiq-academy-bootcamps",
+      "probed_at": "2026-09-19T13:38:31.729Z",
+      "name": "Tuwaiq Academy Bootcamps and Programs",
+      "priority": 16,
+      "url": "https://tuwaiq.edu.sa/api/GetInitiativePublishesShorten/12/1?category=ac41152d-f228-8af4-8406-e0cda6df6c35&type=NORMAL",
+      "final_url": "https://tuwaiq.edu.sa/api/GetInitiativePublishesShorten/12/1?category=ac41152d-f228-8af4-8406-e0cda6df6c35&type=NORMAL",
+      "status": "ok",
+      "http_status": 200,
+      "navigation_error": "",
+      "duration_ms": 5544,
+      "classification": "browser-structured-html",
+      "next_action": "اكتب extractor من JSON-LD أو structured scripts مع fallback للبطاقات.",
+      "title": "",
+      "text_bytes": 10617,
+      "html_bytes": 10780,
+      "html_snapshot": "data/raw/browser-probes/tuwaiq-academy-bootcamps-2026-09-19T13-31-42-172Z.html",
+      "screenshot": "data/raw/browser-probes/tuwaiq-academy-bootcamps-2026-09-19T13-31-42-172Z.png",
+      "signals": {
+        "has_next_data": false,
+        "has_nuxt": false,
+        "has_json_ld": false,
+        "has_event_schema": true,
+        "date_snippets": [
+          "يات فن تصميم الشخصيات 3D \",\"startDate\":\"2026-10-04T16:00:00+03:00\",\"endDate\":\"2026-12-24T20:00:00+03:00\",\"autoCloseRegistration\":f",
+          "nStartDate\":null,\"registrationEndDate\":\"2026-09-20T12:00:00+03:00\",\"requireProfileCompletion\":true,\"isMergePublish\":false,\"isPaid\"",
+          "سحابة وتعلم الآلة على AWS\",\"startDate\":\"2026-10-04T18:00:00+03:00\",\"endDate\":\"2026-11-12T22:00:00+03:00\",\"autoCloseRegistration\":f",
+          "nStartDate\":null,\"registrationEndDate\":\"2026-09-20T12:00:00+03:00\",\"requireProfileCompletion\":true,\"isMergePublish\":true,\"isPaid\":",
+          "عسكر الدرونز عالية الأداء\",\"startDate\":\"2026-10-04T18:00:00+03:00\",\"endDate\":\"2026-11-05T21:00:00+03:00\",\"autoCloseRegistration\":f",
+          "nStartDate\":null,\"registrationEndDate\":\"2026-09-20T12:00:00+03:00\",\"requireProfileCompletion\":true,\"isMergePublish\":true,\"isPaid\":",
+          "لبيرتون - المسار التأسيسي\",\"startDate\":\"2026-10-11T09:00:00+03:00\",\"endDate\":\"2027-07-20T21:00:00+03:00\",\"autoCloseRegistration\":f",
+          "nStartDate\":null,\"registrationEndDate\":\"2026-10-04T12:00:00+03:00\",\"requireProfileCompletion\":true,\"isMergePublish\":false,\"isPaid\""
+        ],
+        "event_like_links": []
+      },
+      "script_signals": {
+        "next_data_scripts": 0,
+        "nuxt_scripts": 0,
+        "json_ld_scripts": 0,
+        "large_inline_scripts": 0
+      },
+      "network_total": 1,
+      "network_endpoints": [],
       "network_sample": [
         {
-          "method": "POST",
-          "status": 200,
-          "url": "https://api.userway.org/api/v1/tunings/0UYGxnoXJv",
-          "content_type": "application/json",
-          "resource_type": "fetch",
-          "request_post_data": "{\"s\":{},\"o\":\"https://www.swa.gov.sa\",\"uid\":\"6a898669-4c7f-4840-b9d4-2650c35284e7\",\"v\":\"2026-09-01-10-22-26\",\"wl\":\"full\",\"c\":\"\"}",
-          "response_shape": "json-object:code,data,checksum",
-          "preview": "{\"code\":200,\"data\":{\"tunings\":{\"widget_language\":null,\"widget_icon_type\":null,\"widget_position\":null,\"widget_icon_size\":\"large\",\"widget_color\":\"#1B8354\",\"widget_no_follow\":true,\"widget_sounds\":true,\"screenReaderVersion\":\"v2\",\"site_name\":\"swa.gov.sa\",\"isLAUser\":false,\"widget_no_report\":true,\"dynamic_alpine_images_processing\":true,\"new_manage\":true},\"services\":{\"siteId\":3624675,\"userId\":426018,\"noManage\":false,\"noLogo\":false,\"WHITE_LABEL\":{\"is_enabled\":true,\"is_renewable\":false,\"hide_report\":true,\"hide_manage\":true,\"hide_logo\":true,\"hide_asterisk\":true,\"hide_donate\":true,\"accessibility_report\":true},\"paidAi\":true},\"remediation\":{},\"remediationV2\":{\"strategy\":\"AUTO\",\"consolidated\":\"https://cdn.userway.org/remediations/consolidated/3624675/UoQUIswMA6jLs8h9.json\",\"version\":0},\"imageAlt\":{\"version\":\"ALTS_V2\",\"resourceHash\":\"Mzv57s4G8iSPKW7I\",\"tier\":\"PAID_QUOTA_TIER\",\"quota\":5000,\"usage\":5000,\"state\":\"ALTS_ON\",\"missingAlts\":[]},\"widgetCustomLanguages\":[]},\"checksum\":\"fbb0f7090873a86fd4ebddc7e47cf958dff5c41f9ffe056e47681c57865f528b\"}"
-        },
-        {
           "method": "GET",
           "status": 200,
-          "url": "https://cdn.userway.org/widgetapp/2026-09-01-10-22-26/locales/en.json",
+          "url": "https://tuwaiq.edu.sa/api/GetInitiativePublishesShorten/12/1?category=ac41152d-f228-8af4-8406-e0cda6df6c35&type=NORMAL",
           "content_type": "application/json",
-          "resource_type": "xhr",
-          "request_post_data": "",
-          "response_shape": "json-object:widget,skip_links",
-          "preview": "{\"widget\":{\"html_lst_title\":\"Translations Menu\",\"html_title\":\"Accessibility Menu\",\"text_icon_small\":\"Accessibility\",\"text_icon_large\":\"Accessibility</br>Menu\",\"new_tab\":\"opens in a new tab\",\"new_tab_substring\":\"new tab\",\"new_window_substring\":\"new window\",\"broken_links\":{\"target_site_not_available\":\"target website may not be available\"}},\"skip_links\":{\"open_accessibility_nav\":\"Open the Accessible Navigation Menu\",\"open_accessibility_menu\":\"Open the accessibility menu\",\"skip\":\"Skip to main content\",\"enable_visually_impaired\":\"Enable accessibility for low vision\",\"disable_visually_impaired\":\"Disable accessibility for low vision\",\"title\":\"Quick Accessibility Options\"}}"
-        },
-        {
-          "method": "POST",
-          "status": 200,
-          "url": "https://e-services-api.swa.gov.sa/api/PageVisitsCount?url=https%3A%2F%2Fwww.swa.gov.sa%2Fen%2Fevents&pageTitle=Events%20Calendar%20%7C%20SWA",
-          "content_type": "",
-          "resource_type": "fetch",
-          "request_post_data": "{}",
-          "response_shape": "empty",
-          "preview": ""
-        },
-        {
-          "method": "GET",
-          "status": 200,
-          "url": "https://cdn.userway.org/remediations/consolidated/3624675/UoQUIswMA6jLs8h9.json",
-          "content_type": "application/json",
-          "resource_type": "xhr",
+          "resource_type": "document",
           "request_post_data": "",
           "response_shape": "json-like-invalid",
-          "preview": "{\"MissingAlts\":[{\"src\":\"https://b.tile.openstreetmap.org/6/42/28.png\",\"alt\":\"Map showing coastal area near Oman, with labeled regions and water.\",\"approved\":false,\"decorative\":false},{\"src\":\"https://b.tile.openstreetmap.org/6/38/26.png\",\"alt\":\"A map showing parts of Israel and Jordan, with labeled cities and regions.\",\"approved\":false,\"decorative\":false},{\"src\":\"https://a.tile.openstreetmap.org/6/42/27.png\",\"alt\":\"Map showing coastal regions and cities in Oman and the surrounding area.\",\"approved\":false,\"decorative\":false},{\"src\":\"https://a.tile.openstreetmap.org/6/40/26.png\",\"alt\":\"Map showing the borders of Kuwait and southern Iraq, with labeled regions in Arabic.\",\"approved\":false,\"decorative\":false},{\"src\":\"https://b.tile.openstreetmap.org/6/39/28.png\",\"alt\":\"A detailed map of southwestern Saudi Arabia, highlighting regions like Al-Baha and Asir, with coastal features along the Red Sea.\",\"approved\":false,\"decorative\":false},{\"src\":\"https://a.tile.openstreetmap.org/6/39/27.png\",\"alt\":\"A map showing various regions and roads in Saudi Arabia, including Al-Qassim and Al-Madinah.\",\"approved\":false,\"decorative\":false},{\"src\":\"https://b.tile.openstreetmap.org/6/41/26.png\",\"alt\":\"A detailed map of a region in Iran, highlighting geographical features and administrative boundaries.\",\"approved\":false,\"decorative\":false},{\"src\":\"https://a.tile.openstreetmap.org/6/41/28.png\",\"alt\":\"A map showing regions with Arabic labels, including محافظة ظفار and محافظة المهرة, with a coastal area visible.\",\"approved\":false,\"decorative\":false},{\"src\":\"https://c.tile.openstreetmap.org/6/38/27.png\",\"alt\":\"Map showing the Red Sea with coastal areas labeled in Arabic, including locations like Yanbu.\",\"approved\":false,\"decorative\":false},{\"src\":\"https://b.tile.openstreetmap.org/6/40/27.png\",\"alt\":\""
-        },
-        {
-          "method": "GET",
-          "status": 200,
-          "url": "https://e-services-api.swa.gov.sa/api/EvaluationPage/reasons",
-          "content_type": "application/json",
-          "resource_type": "fetch",
-          "request_post_data": "",
-          "response_shape": "json-array:10",
-          "preview": "[{\"id\":17,\"nameAr\":\"كانت مفيدة\",\"nameEn\":\"It was helpful\",\"showForYes\":true},{\"id\":18,\"nameAr\":\"الإجابات كانت مرتبطة\",\"nameEn\":\"The answers were relevant\",\"showForYes\":true},{\"id\":19,\"nameAr\":\"مكتوبة بشكل جيد\",\"nameEn\":\"Well written\",\"showForYes\":true},{\"id\":20,\"nameAr\":\"التصميم جعله من السهل قراءته\",\"nameEn\":\"Design made it easy to read\",\"showForYes\":true},{\"id\":21,\"nameAr\":\"أخرى\",\"nameEn\":\"Other\",\"showForYes\":true},{\"id\":22,\"nameAr\":\"توجد مشكلة تقنية\",\"nameEn\":\"There is a technical issue\",\"showForYes\":false},{\"id\":23,\"nameAr\":\"لم أستطع إيجاد إجابة ذات صلة\",\"nameEn\":\"Couldn't find a relevant answer\",\"showForYes\":false},{\"id\":24,\"nameAr\":\"مكتوبة بشكل سيء\",\"nameEn\":\"Poorly written\",\"showForYes\":false},{\"id\":25,\"nameAr\":\"التصميم جعله من الصعب قراءته\",\"nameEn\":\"Design made it hard to read\",\"showForYes\":false},{\"id\":26,\"nameAr\":\"أخرى\",\"nameEn\":\"Other\",\"showForYes\":false}]"
-        },
-        {
-          "method": "GET",
-          "status": 200,
-          "url": "https://e-services-api.swa.gov.sa/api/EvaluationPage/evaluation-counts?fullUrl=https://www.swa.gov.sa/en/events",
-          "content_type": "application/json",
-          "resource_type": "fetch",
-          "request_post_data": "",
-          "response_shape": "json-object:totalEvaluations,yesCount,latestPageUpdate",
-          "preview": "{\"totalEvaluations\":0,\"yesCount\":0,\"latestPageUpdate\":null}"
-        },
-        {
-          "method": "GET",
-          "status": 200,
-          "url": "https://e-services-api.swa.gov.sa/api/event/published",
-          "content_type": "application/json",
-          "resource_type": "fetch",
-          "request_post_data": "",
-          "response_shape": "json-like-invalid",
-          "preview": "[{\"id\":33,\"slug\":\"Event-639167725551054643\",\"titleAr\":\"جائزة الابتكار العالمية في المياه\",\"titleEn\":\"Global Prize for Innovation in Water\",\"typeAr\":\"حفل جوائز عالمي للمياه\",\"typeEn\":\"Global Awards Ceremony\",\"descriptionAr\":\"<p class=\\\"ql-align-right ql-direction-rtl\\\">تُقام جائزة الابتكار العالمية في المياه بتنظيم من الهيئة السعودية للمياه، لتجمع نخبة من المبتكرين والباحثين ورواد الأعمال والخبراء من مختلف أنحاء العالم. وتهدف الجائزة إلى تسريع تبني الحلول المبتكرة التي تسهم في مواجهة التحديات المائية العالمية وتعزيز استدامة الموارد المائية. وتشمل الجائزة فئات متنوعة تغطي تقنيات إنتاج المياه، وإعادة الاستخدام، والاقتصاد الدائري، وكفاءة استهلاك المياه، والتحول الرقمي والإدارة الذكية للمياه، بما يعزز دور المملكة كمركز عالمي للابتكار في قطاع المياه.</p><p><br></p>\",\"descriptionEn\":\"<p>The Global Water Innovation Award (GPIW) is run by the Saudi Water Authority and brings together a top bunch of innovators, researchers, entrepreneurs, and experts from all over the world. The award is all about speeding up the use of smart solutions to tackle global water problems and support sustainable water resources. It covers different areas like water production tech, reuse, the circular economy, water efficiency, digital changes, and smart water management, showing off the Kingdom's role as a global hotspot for water innovation.</p>\",\"externalLink\":\"https://gpiw.net/ar\",\"locationAr\":\"جدة – الريتز كارلتون\",\"locationEn\":\"Jeddah – The Ritz-Carlton\",\"status\":1,\"creationDate\":\"2026-06-11T11:02:35.1914662\",\"startDate\":\"2026-12-14T09:00:00\",\"endDate\":\"2026-12-14T16:00:00\",\"publishDate\":\"2026-06-11T11:07:03.7317518\",\"mainImage\":{\"id\":68265,\"fileName\":\"شعار 6.png\",\"objectKey\":\"Events/a4ae75a0b5914231a232796f3b7fd47a_2026_06_11_11_02_35_109.png\",\"fileUrl\":\"https://swa-cdn.swa.gov.sa/Events/a4ae75"
-        },
-        {
-          "method": "GET",
-          "status": 200,
-          "url": "https://cdn.userway.org/remediations/consolidated/3624675/UoQUIswMA6jLs8h9.json",
-          "content_type": "application/json",
-          "resource_type": "fetch",
-          "request_post_data": "",
-          "response_shape": "json-like-invalid",
-          "preview": "{\"MissingAlts\":[{\"src\":\"https://b.tile.openstreetmap.org/6/42/28.png\",\"alt\":\"Map showing coastal area near Oman, with labeled regions and water.\",\"approved\":false,\"decorative\":false},{\"src\":\"https://b.tile.openstreetmap.org/6/38/26.png\",\"alt\":\"A map showing parts of Israel and Jordan, with labeled cities and regions.\",\"approved\":false,\"decorative\":false},{\"src\":\"https://a.tile.openstreetmap.org/6/42/27.png\",\"alt\":\"Map showing coastal regions and cities in Oman and the surrounding area.\",\"approved\":false,\"decorative\":false},{\"src\":\"https://a.tile.openstreetmap.org/6/40/26.png\",\"alt\":\"Map showing the borders of Kuwait and southern Iraq, with labeled regions in Arabic.\",\"approved\":false,\"decorative\":false},{\"src\":\"https://b.tile.openstreetmap.org/6/39/28.png\",\"alt\":\"A detailed map of southwestern Saudi Arabia, highlighting regions like Al-Baha and Asir, with coastal features along the Red Sea.\",\"approved\":false,\"decorative\":false},{\"src\":\"https://a.tile.openstreetmap.org/6/39/27.png\",\"alt\":\"A map showing various regions and roads in Saudi Arabia, including Al-Qassim and Al-Madinah.\",\"approved\":false,\"decorative\":false},{\"src\":\"https://b.tile.openstreetmap.org/6/41/26.png\",\"alt\":\"A detailed map of a region in Iran, highlighting geographical features and administrative boundaries.\",\"approved\":false,\"decorative\":false},{\"src\":\"https://a.tile.openstreetmap.org/6/41/28.png\",\"alt\":\"A map showing regions with Arabic labels, including محافظة ظفار and محافظة المهرة, with a coastal area visible.\",\"approved\":false,\"decorative\":false},{\"src\":\"https://c.tile.openstreetmap.org/6/38/27.png\",\"alt\":\"Map showing the Red Sea with coastal areas labeled in Arabic, including locations like Yanbu.\",\"approved\":false,\"decorative\":false},{\"src\":\"https://b.tile.openstreetmap.org/6/40/27.png\",\"alt\":\""
-        },
-        {
-          "method": "GET",
-          "status": 200,
-          "url": "https://e-services-api.swa.gov.sa/api/PageVisitsCount?url=https%3A%2F%2Fwww.swa.gov.sa%2Fen%2Fevents",
-          "content_type": "application/json",
-          "resource_type": "fetch",
-          "request_post_data": "",
-          "response_shape": "json-object:id,url,pageTitle,totalCount,todayCount,lastUpdated",
-          "preview": "{\"id\":4547,\"url\":\"https://www.swa.gov.sa/en/events\",\"pageTitle\":\"Events Calendar | SWA\",\"totalCount\":700,\"todayCount\":4,\"lastUpdated\":\"2026-09-17T07:59:07.4831015\"}"
-        },
-        {
-          "method": "GET",
-          "status": 200,
-          "url": "https://cdn77.api.userway.org/api/img-dscr/v2/0UYGxnoXJv/3624675/Mzv57s4G8iSPKW7I/alts.json?dto=%7B%22sorted%22%3A%5B%7B%22src%22%3A%22https%3A%2F%2Fwww.swa.gov.sa%2Fassets%2Fimages%2Flogos%2Fswa-logo-dark.svg%22%2C%22alt%22%3A%22SWA%22%2C%22dir%22%3A%22RO%22%7D%2C%7B%22src%22%3A%22https%3A%2F%2Fwww.swa.gov.sa%2Fassets%2Fsvg%2FGov_Logo.svg%22%2C%22alt%22%3A%22Gov_Logo%22%2C%22dir%22%3A%22RO%22%7D%2C%7B%22src%22%3A%22https%3A%2F%2Fwww.swa.gov.sa%2Fassets%2Fsvg%2Fhttps.svg%22%2C%22alt%22%3A%22https%22%2C%22dir%22%3A%22RO%22%7D%2C%7B%22src%22%3A%22https%3A%2F%2Fwww.swa.gov.sa%2Fassets%2Fsvg%2Fksa-flag.svg%22%2C%22alt%22%3A%22flag%22%2C%22dir%22%3A%22RO%22%7D%2C%7B%22src%22%3A%22https%3A%2F%2Fwww.swa.gov.sa%2Fassets%2Fsvg%2Flink-04.svg%22%2C%22alt%22%3A%22link%22%2C%22dir%22%3A%22RO%22%7D%5D%2C%22tier%22%3A%22PAID_QUOTA_TIER%22%2C%22pageUrl%22%3A%22https%3A%2F%2Fwww.swa.gov.sa%2Fen%2Fevents%22%7D",
-          "content_type": "application/json",
-          "resource_type": "fetch",
-          "request_post_data": "",
-          "response_shape": "json-object:payload,payloadType",
-          "preview": "{\"payload\":{\"missingAlts\":[{\"src\":\"https://www.swa.gov.sa/assets/images/logos/swa-logo-dark.svg\",\"alt\":null,\"approved\":false,\"decorative\":false,\"metadata\":{\"skippedForReadOnly\":true,\"foundCachedResponse\":true}},{\"src\":\"https://www.swa.gov.sa/assets/svg/Gov_Logo.svg\",\"alt\":null,\"approved\":false,\"decorative\":false,\"metadata\":{\"skippedForReadOnly\":true,\"foundCachedResponse\":true}},{\"src\":\"https://www.swa.gov.sa/assets/svg/https.svg\",\"alt\":null,\"approved\":false,\"decorative\":false,\"metadata\":{\"skippedForReadOnly\":true,\"foundCachedResponse\":true}},{\"src\":\"https://www.swa.gov.sa/assets/svg/ksa-flag.svg\",\"alt\":null,\"approved\":false,\"decorative\":false,\"metadata\":{\"skippedForReadOnly\":true,\"foundCachedResponse\":true}},{\"src\":\"https://www.swa.gov.sa/assets/svg/link-04.svg\",\"alt\":null,\"approved\":false,\"decorative\":false,\"metadata\":{\"skippedForReadOnly\":true,\"foundCachedResponse\":true}}]},\"payloadType\":\"MissingAltsDto\"}"
-        },
-        {
-          "method": "GET",
-          "status": 200,
-          "url": "https://api.hams.ai/v1/ai-agents/ebef8147-7a18-4eb9-a7ce-f26fce904c44/widget-config",
-          "content_type": "application/json",
-          "resource_type": "fetch",
-          "request_post_data": "",
-          "response_shape": "json-object:ai_agent_id,config,created,entity_id,id,presigned_urls,updated",
-          "preview": "{\"ai_agent_id\":\"ebef8147-7a18-4eb9-a7ce-f26fce904c44\",\"config\":{\"agentName\":\"\",\"description\":\"Online\",\"environment\":\"staging\",\"icon_id\":null,\"language\":\"en\",\"main_color\":\"#1B8354\",\"modality\":\"CHAT\",\"position\":\"right\",\"public_key\":\"pk_A6j_KmQ8p1_kKtIh8WXNzZ4ZAbqxuPCgH2xgsEQJnJU\",\"site_key\":\"\",\"title\":\"Help & Support\",\"ui_style\":\"dga\",\"widget_padding\":{\"bottom\":16,\"horizontal\":16},\"widget_title\":\"Help & Support\"},\"created\":\"2026-04-07T10:17:56.058573\",\"entity_id\":\"3f38e208-9579-48c9-ad2a-97bfb62ce6c7\",\"id\":\"70455907-319f-4f8e-9a55-6072a47fac63\",\"presigned_urls\":{},\"updated\":\"2026-04-07T10:17:56.058575\"}"
-        },
-        {
-          "method": "GET",
-          "status": 200,
-          "url": "https://api.userway.org/api/br-links/v0/links/3624675",
-          "content_type": "application/json",
-          "resource_type": "fetch",
-          "request_post_data": "",
-          "response_shape": "json-object:thisPageItems,totalNumber,lastPageIndex,pageItemType",
-          "preview": "{\"thisPageItems\":[{\"href\":\"https://eservices.swa.gov.sa/ComplaintEscalationRequest\"},{\"href\":\"https://sts.swcc.gov.sa/adfs/ls/\"},{\"href\":\"https://eservices.swa.gov.sa/ComplaintInquiryRequest\"}],\"totalNumber\":3,\"lastPageIndex\":1,\"pageItemType\":\"BrokenLinkHref\"}"
-        },
-        {
-          "method": "POST",
-          "status": 200,
-          "url": "https://api.userway.org/api/br-links/v0/pdf-links",
-          "content_type": "application/json",
-          "resource_type": "xhr",
-          "request_post_data": "{\"userId\":426018,\"siteId\":3624675,\"page\":\"/en/events\",\"fullPage\":\"https://www.swa.gov.sa/en/events\",\"links\":[\"https://swa-cdn.swa.gov.sa/Reports/SWA_Brand_Guideline.pdf\"]}",
-          "response_shape": "json-object:statuses",
-          "preview": "{\"statuses\":[1]}"
-        },
-        {
-          "method": "GET",
-          "status": 200,
-          "url": "https://api.userway.org/api/br-links/v0/links/3624675",
-          "content_type": "application/json",
-          "resource_type": "fetch",
-          "request_post_data": "",
-          "response_shape": "json-object:thisPageItems,totalNumber,lastPageIndex,pageItemType",
-          "preview": "{\"thisPageItems\":[{\"href\":\"https://eservices.swa.gov.sa/ComplaintEscalationRequest\"},{\"href\":\"https://sts.swcc.gov.sa/adfs/ls/\"},{\"href\":\"https://eservices.swa.gov.sa/ComplaintInquiryRequest\"}],\"totalNumber\":3,\"lastPageIndex\":1,\"pageItemType\":\"BrokenLinkHref\"}"
-        },
-        {
-          "method": "GET",
-          "status": 200,
-          "url": "https://cdn77.api.userway.org/api/img-dscr/v2/0UYGxnoXJv/3624675/Mzv57s4G8iSPKW7I/alts.json?dto=%7B%22sorted%22%3A%5B%7B%22src%22%3A%22https%3A%2F%2Fswa-cdn.swa.gov.sa%2FEvents%2F36decb99545d4da5bfb6b09fb000691b_2026_05_25_10_48_20_766.jpg%22%2C%22alt%22%3A%22Saudi%20National%20Day%22%2C%22dir%22%3A%22RO%22%7D%2C%7B%22src%22%3A%22https%3A%2F%2Fswa-cdn.swa.gov.sa%2FEvents%2F8ca9c4254c334d8d90c85b0c4f5f275c_2026_05_25_08_13_47_482.jpg%22%2C%22alt%22%3A%22Foundation%20Day%22%2C%22dir%22%3A%22RO%22%7D%2C%7B%22src%22%3A%22https%3A%2F%2Fswa-cdn.swa.gov.sa%2FEvents%2F9535a79c349840bf8c92eeefcc04f2e5_2026_05_20_06_33_03_235.png%22%2C%22alt%22%3A%22Saudi%20Water%20Week%22%2C%22dir%22%3A%22RO%22%7D%2C%7B%22src%22%3A%22https%3A%2F%2Fswa-cdn.swa.gov.sa%2FEvents%2Fa8b384622a1d4281b64b6fd75c82bd5e_2026_05_25_07_44_38_769.jpg%22%2C%22alt%22%3A%22World%20Conference%20on%20Desalination%20and%20Water%20Reuse%22%2C%22dir%22%3A%22RO%22%7D%2C%7B%22src%22%3A%22https%3A%2F%2Fswa-cdn.swa.gov.sa%2FEvents%2Fb4fed1f10c414a39a5c49cd9fda6a63d_2026_05_20_07_35_20_655.png%22%2C%22alt%22%3A%22Global%20Infrastructure%20Expo%22%2C%22dir%22%3A%22RO%22%7D%2C%7B%22src%22%3A%22https%3A%2F%2Fswa-cdn.swa.gov.sa%2FEvents%2Ff168ba04d30d4fec96ca03600421bd99_2026_05_25_08_24_48_478.png%22%2C%22alt%22%3A%22Saudi%20Flag%20Day%22%2C%22dir%22%3A%22RO%22%7D%2C%7B%22src%22%3A%22https%3A%2F%2Fwww.swa.gov.sa%2Fassets%2Fimages%2Fevents-calendar%2FTrailing%2520icon.svg%22%2C%22alt%22%3A%22%22%2C%22dir%22%3A%22RO%22%7D%5D%2C%22tier%22%3A%22PAID_QUOTA_TIER%22%2C%22pageUrl%22%3A%22https%3A%2F%2Fwww.swa.gov.sa%2Fen%2Fevents%22%7D",
-          "content_type": "application/json",
-          "resource_type": "fetch",
-          "request_post_data": "",
-          "response_shape": "json-object:payload,payloadType",
-          "preview": "{\"payload\":{\"missingAlts\":[{\"src\":\"https://swa-cdn.swa.gov.sa/Events/36decb99545d4da5bfb6b09fb000691b_2026_05_25_10_48_20_766.jpg\",\"alt\":null,\"approved\":false,\"decorative\":false,\"metadata\":{\"skippedForReadOnly\":true,\"foundCachedResponse\":true}},{\"src\":\"https://swa-cdn.swa.gov.sa/Events/8ca9c4254c334d8d90c85b0c4f5f275c_2026_05_25_08_13_47_482.jpg\",\"alt\":null,\"approved\":false,\"decorative\":false,\"metadata\":{\"skippedForReadOnly\":true,\"foundCachedResponse\":true}},{\"src\":\"https://swa-cdn.swa.gov.sa/Events/9535a79c349840bf8c92eeefcc04f2e5_2026_05_20_06_33_03_235.png\",\"alt\":null,\"approved\":false,\"decorative\":false,\"metadata\":{\"skippedForReadOnly\":true,\"foundCachedResponse\":true}},{\"src\":\"https://swa-cdn.swa.gov.sa/Events/a8b384622a1d4281b64b6fd75c82bd5e_2026_05_25_07_44_38_769.jpg\",\"alt\":null,\"approved\":false,\"decorative\":false,\"metadata\":{\"skippedForReadOnly\":true,\"foundCachedResponse\":true}},{\"src\":\"https://swa-cdn.swa.gov.sa/Events/b4fed1f10c414a39a5c49cd9fda6a63d_2026_05_20_07_35_20_655.png\",\"alt\":null,\"approved\":false,\"decorative\":false,\"metadata\":{\"skippedForReadOnly\":true,\"foundCachedResponse\":true}},{\"src\":\"https://swa-cdn.swa.gov.sa/Events/f168ba04d30d4fec96ca03600421bd99_2026_05_25_08_24_48_478.png\",\"alt\":null,\"approved\":false,\"decorative\":false,\"metadata\":{\"skippedForReadOnly\":true,\"foundCachedResponse\":true}},{\"src\":\"https://www.swa.gov.sa/assets/images/events-calendar/Trailing%20icon.svg\",\"alt\":null,\"approved\":false,\"decorative\":false,\"metadata\":{\"skippedForReadOnly\":true,\"foundCachedResponse\":true}}]},\"payloadType\":\"MissingAltsDto\"}"
-        },
-        {
-          "method": "GET",
-          "status": 200,
-          "url": "https://api.userway.org/api/br-links/v0/links/3624675",
-          "content_type": "application/json",
-          "resource_type": "fetch",
-          "request_post_data": "",
-          "response_shape": "json-object:thisPageItems,totalNumber,lastPageIndex,pageItemType",
-          "preview": "{\"thisPageItems\":[{\"href\":\"https://eservices.swa.gov.sa/ComplaintEscalationRequest\"},{\"href\":\"https://sts.swcc.gov.sa/adfs/ls/\"},{\"href\":\"https://eservices.swa.gov.sa/ComplaintInquiryRequest\"}],\"totalNumber\":3,\"lastPageIndex\":1,\"pageItemType\":\"BrokenLinkHref\"}"
-        },
-        {
-          "method": "GET",
-          "status": 200,
-          "url": "https://api.userway.org/api/a11y-data/v0/page/https%3A%2F%2Fwww.swa.gov.sa%2Fen%2Fevents/DESKTOP/WIDGET_ON/status",
-          "content_type": "application/json",
-          "resource_type": "fetch",
-          "request_post_data": "",
-          "response_shape": "json-object:payload,payloadType",
-          "preview": "{\"payload\":{\"status\":\"CONTRIB_PRESENT\"},\"payloadType\":\"PageContribStatusDto\"}"
-        },
-        {
-          "method": "GET",
-          "status": 200,
-          "url": "https://api.userway.org/api/br-links/v0/contribute/3624675",
-          "content_type": "application/json",
-          "resource_type": "fetch",
-          "request_post_data": "",
-          "response_shape": "json-object:payload,payloadType",
-          "preview": "{\"payload\":\"PRESENT\",\"payloadType\":\"ContribStatus\"}"
-        },
-        {
-          "method": "GET",
-          "status": 200,
-          "url": "https://api.userway.org/api/br-links/v0/links/3624675",
-          "content_type": "application/json",
-          "resource_type": "fetch",
-          "request_post_data": "",
-          "response_shape": "json-object:thisPageItems,totalNumber,lastPageIndex,pageItemType",
-          "preview": "{\"thisPageItems\":[{\"href\":\"https://eservices.swa.gov.sa/ComplaintEscalationRequest\"},{\"href\":\"https://sts.swcc.gov.sa/adfs/ls/\"},{\"href\":\"https://eservices.swa.gov.sa/ComplaintInquiryRequest\"}],\"totalNumber\":3,\"lastPageIndex\":1,\"pageItemType\":\"BrokenLinkHref\"}"
+          "preview": "{\"pagination\":{\"offset\":0,\"limit\":12,\"total\":164,\"totalPages\":14},\"data\":[{\"id\":\"ec58d045-8991-4f45-9b7e-b36a792029f6\",\"academyTypeId\":null,\"academyType\":null,\"title\":\"معسكر تقنيات فن تصميم الشخصيات 3D \",\"startDate\":\"2026-10-04T16:00:00+03:00\",\"endDate\":\"2026-12-24T20:00:00+03:00\",\"autoCloseRegistration\":false,\"isOpen\":true,\"isRegistrationOpen\":true,\"isRegistrationClosed\":false,\"logo\":null,\"outerImage\":\"images/a0yjf4zb.esg.jpeg\",\"initiativeAgeName\":\"كبار\",\"initiativeCategoryName\":\"معسكر\",\"initiativeScopeImage\":\"images/mgpdsgmm.alx.png\",\"initiativeScopeName\":\"تطوير البرمجيات والتطبيقات\",\"locationName\":\"الرياض - المقر الرئيسي\",\"slug\":\"kx9ya9Kd\",\"registrationStartDate\":null,\"registrationEndDate\":\"2026-09-20T12:00:00+03:00\",\"requireProfileCompletion\":true,\"isMergePublish\":false,\"isPaid\":false,\"price\":null,\"includesEmployees\":false,\"vat\":null,\"priceWithoutVat\":null},{\"id\":\"22a4de12-1695-4ad6-a614-054957432522\",\"academyTypeId\":null,\"academyType\":null,\"title\":\"معسكر هندسة السحابة وتعلم الآلة على AWS\",\"startDate\":\"2026-10-04T18:00:00+03:00\",\"endDate\":\"2026-11-12T22:00:00+03:00\",\"autoCloseRegistration\":false,\"isOpen\":true,\"isRegistrationOpen\":true,\"isRegistrationClosed\":false,\"logo\":null,\"outerImage\":\"images/i1uzgsxd.ypc.jpg\",\"initiativeAgeName\":\"كبار\",\"initiativeCategoryName\":\"معسكر\",\"initiativeScopeImage\":\"images/pxhazeai.5tg.png\",\"initiativeScopeName\":\"علم البيانات والذكاء الاصطناعي\",\"locationName\":\"الرياض - المقر الرئيسي\",\"slug\":\"W5wR9Vn4\",\"registrationStartDate\":null,\"registrationEndDate\":\"2026-09-20T12:00:00+03:00\",\"requireProfileCompletion\":true,\"isMergePublish\":true,\"isPaid\":false,\"price\":0.00,\"includesEmployees\":false,\"vat\":0.00,\"priceWithoutVat\":0.00},{\"id\":\"ab704dbd-075f-46a5-853b-f2080d33f256\",\"academyTypeId\":null,\"academyType\":null,\"title\":\"معسكر الدرونز عالية الأدا"
         }
       ]
     },
     {
-      "id": "riyadh-city-events",
-      "probed_at": "2026-09-17T07:59:25.864Z",
-      "name": "Riyadh City Events",
-      "priority": 51,
-      "url": "https://riyadh.sa/en/events/all",
-      "final_url": "https://riyadh.sa/en/events/all",
+      "id": "future-skills-catalog",
+      "probed_at": "2026-09-19T13:38:43.732Z",
+      "name": "Future Skills MCIT Catalogue",
+      "priority": 17,
+      "url": "https://futureskills.mcit.gov.sa/ar/catalogue/all?label=&field_main_tracks_target_id_verf=565&field_sub_tracks_target_id=All&field_training_course_level_target_id=All&field_related_skills_target_id=All&field_course_type_value=All&field_training_delivery_value=All&field_training_city_target_id=All&field_job_market_target_id=All",
+      "final_url": "https://futureskills.mcit.gov.sa/ar/catalogue/all?label=&field_main_tracks_target_id_verf=565&field_sub_tracks_target_id=All&field_training_course_level_target_id=All&field_related_skills_target_id=All&field_course_type_value=All&field_training_delivery_value=All&field_training_city_target_id=All&field_job_market_target_id=All",
       "status": "ok",
       "http_status": 200,
       "navigation_error": "",
-      "duration_ms": 10629,
+      "duration_ms": 11962,
       "classification": "rendered-html-candidates",
       "next_action": "اكتب extractor مرن من DOM بعد الرندر أو حسن selector الحالي.",
-      "title": "الموقع الرسمي لمدينة الرياض",
-      "text_bytes": 829,
-      "html_bytes": 155266,
-      "html_snapshot": "data/raw/browser-probes/riyadh-city-events-2026-09-17T07-59-03-289Z.html",
-      "screenshot": "data/raw/browser-probes/riyadh-city-events-2026-09-17T07-59-03-289Z.png",
+      "title": "التدريب | بوابة مهارات المستقبل",
+      "text_bytes": 10762,
+      "html_bytes": 86461,
+      "html_snapshot": "data/raw/browser-probes/future-skills-catalog-2026-09-19T13-31-42-172Z.html",
+      "screenshot": "data/raw/browser-probes/future-skills-catalog-2026-09-19T13-31-42-172Z.png",
       "signals": {
         "has_next_data": false,
         "has_nuxt": false,
@@ -419,16 +215,84 @@
         "date_snippets": [],
         "event_like_links": [
           {
+            "text": "تجاوز إلى المحتوى الرئيسي",
+            "href": "https://futureskills.mcit.gov.sa/ar/catalogue/all?label=&field_main_tracks_target_id_verf=565&field_sub_tracks_target_id=All&field_training_course_level_target_id=All&field_related_skills_target_id=All&field_course_type_value=All&field_training_delivery_value=All&field_training_city_target_id=All&field_job_market_target_id=All#main-content"
+          },
+          {
+            "text": "English",
+            "href": "https://futureskills.mcit.gov.sa/en/catalogue/all?label=&field_main_tracks_target_id_verf=565&field_sub_tracks_target_id=All&field_training_course_level_target_id=All&field_related_skills_target_id=All&field_course_type_value=All&field_training_delivery_value=All&field_training_city_target_id=All&field_job_market_target_id=All"
+          },
+          {
             "text": "",
-            "href": "https://riyadh.sa/en/events/all"
+            "href": "https://futureskills.mcit.gov.sa/ar/catalogue/all?label=&field_main_tracks_target_id_verf=565&field_sub_tracks_target_id=All&field_training_course_level_target_id=All&field_related_skills_target_id=All&field_course_type_value=All&field_training_delivery_value=All&field_training_city_target_id=All&field_job_market_target_id=All#"
           },
           {
-            "text": "All Events",
-            "href": "https://riyadh.sa/en/events/all"
+            "text": "عن الوزارة",
+            "href": "https://futureskills.mcit.gov.sa/ar/catalogue/all?label=&field_main_tracks_target_id_verf=565&field_sub_tracks_target_id=All&field_training_course_level_target_id=All&field_related_skills_target_id=All&field_course_type_value=All&field_training_delivery_value=All&field_training_city_target_id=All&field_job_market_target_id=All#"
           },
           {
-            "text": "events.title",
-            "href": "https://riyadh.sa/en/events"
+            "text": "مجتمع رقمي",
+            "href": "https://futureskills.mcit.gov.sa/ar/catalogue/all?label=&field_main_tracks_target_id_verf=565&field_sub_tracks_target_id=All&field_training_course_level_target_id=All&field_related_skills_target_id=All&field_course_type_value=All&field_training_delivery_value=All&field_training_city_target_id=All&field_job_market_target_id=All#"
+          },
+          {
+            "text": "مهارات المستقبل",
+            "href": "https://futureskills.mcit.gov.sa/ar/catalogue/all?label=&field_main_tracks_target_id_verf=565&field_sub_tracks_target_id=All&field_training_course_level_target_id=All&field_related_skills_target_id=All&field_course_type_value=All&field_training_delivery_value=All&field_training_city_target_id=All&field_job_market_target_id=All#"
+          },
+          {
+            "text": "الأعمال والاستثمار",
+            "href": "https://futureskills.mcit.gov.sa/ar/catalogue/all?label=&field_main_tracks_target_id_verf=565&field_sub_tracks_target_id=All&field_training_course_level_target_id=All&field_related_skills_target_id=All&field_course_type_value=All&field_training_delivery_value=All&field_training_city_target_id=All&field_job_market_target_id=All#"
+          },
+          {
+            "text": "المركز الإعلامي",
+            "href": "https://futureskills.mcit.gov.sa/ar/catalogue/all?label=&field_main_tracks_target_id_verf=565&field_sub_tracks_target_id=All&field_training_course_level_target_id=All&field_related_skills_target_id=All&field_course_type_value=All&field_training_delivery_value=All&field_training_city_target_id=All&field_job_market_target_id=All#"
+          },
+          {
+            "text": "الفعاليات",
+            "href": "https://www.mcit.gov.sa/ar/events"
+          },
+          {
+            "text": "",
+            "href": "https://futureskills.mcit.gov.sa/ar/catalogue/all?label=&field_main_tracks_target_id_verf=565&field_sub_tracks_target_id=All&field_training_course_level_target_id=All&field_related_skills_target_id=All&field_course_type_value=All&field_training_delivery_value=All&field_training_city_target_id=All&field_job_market_target_id=All#"
+          },
+          {
+            "text": "",
+            "href": "https://futureskills.mcit.gov.sa/ar/catalogue/all?label=&field_main_tracks_target_id_verf=565&field_sub_tracks_target_id=All&field_training_course_level_target_id=All&field_related_skills_target_id=All&field_course_type_value=All&field_training_delivery_value=All&field_training_city_target_id=All&field_job_market_target_id=All#"
+          },
+          {
+            "text": "البرنامج المتخصص في العمل الحر",
+            "href": "http://futureskills.mcit.gov.sa/ar/node/20481"
+          },
+          {
+            "text": "معسكرات مهارات المستقبل",
+            "href": "http://futureskills.mcit.gov.sa/ar/node/17349"
+          },
+          {
+            "text": "مستوى متوسط\n⁠Data Preparation & Cleaning Essentials\n دورة معرفية\n تفاعلية مباشرة\n تبدأ 13-09-2026 إلى 15-09-2026 لمدة 12",
+            "href": "https://futureskills.mcit.gov.sa/ar/group/13064"
+          },
+          {
+            "text": "مستوى متوسط\n⁠Cloud Security and Compliance Fundamentals\n دورة معرفية\n تفاعلية مباشرة\n تبدأ 13-09-2026 إلى 15-09-2026 لمد",
+            "href": "https://futureskills.mcit.gov.sa/ar/group/13065"
+          },
+          {
+            "text": "مستوى متوسط\n⁠Data Science Foundations\n دورة معرفية\n تفاعلية مباشرة\n تبدأ 13-09-2026 إلى 16-09-2026 لمدة 16 ساعات",
+            "href": "https://futureskills.mcit.gov.sa/ar/group/13066"
+          },
+          {
+            "text": "مستوى متوسط\n⁠CCNP\n دورة معرفية\n تفاعلية مباشرة\n تبدأ 06-09-2026 إلى 10-09-2026 لمدة 20 ساعات",
+            "href": "https://futureskills.mcit.gov.sa/ar/group/13061"
+          },
+          {
+            "text": "مستوى متوسط\n⁠Data Analysis with Python\n دورة معرفية\n تفاعلية مباشرة\n تبدأ 06-09-2026 إلى 09-09-2026 لمدة 16 ساعات",
+            "href": "https://futureskills.mcit.gov.sa/ar/group/13062"
+          },
+          {
+            "text": "مستوى متوسط\n⁠Red Hat Certified System Administrator (RHCSA)\n دورة معرفية\n تفاعلية مباشرة\n تبدأ 06-09-2026 إلى 10-09-2026",
+            "href": "https://futureskills.mcit.gov.sa/ar/group/13063"
+          },
+          {
+            "text": "مستوى متوسط\nCCNA\n دورة معرفية\n تفاعلية مباشرة\n تبدأ 30-08-2026 إلى 03-09-2026 لمدة 20 ساعات",
+            "href": "https://futureskills.mcit.gov.sa/ar/group/13058"
           }
         ]
       },
@@ -438,28 +302,257 @@
         "json_ld_scripts": 0,
         "large_inline_scripts": 0
       },
-      "network_total": 2,
+      "network_total": 1,
       "network_endpoints": [],
       "network_sample": [
         {
           "method": "GET",
           "status": 200,
-          "url": "https://riyadh.sa/assets/i18n/ar.json",
+          "url": "https://futureskills.mcit.gov.sa/ar/api2/cities?field_aldwlt_target_id=672",
           "content_type": "application/json",
           "resource_type": "xhr",
           "request_post_data": "",
           "response_shape": "json-like-invalid",
-          "preview": "{ \"lang\": \"ar\", \"main\": { \"title\": \"مدينة الرياض\" }, \"lastUpdated\": { \"label\": \"تاريخ آخر تعديل\", \"timezone\": \"بتوقيت السعودية\" }, \"cookies\": { \"title\": \"ملفات تعريف الارتباط\", \"consentIntro\": \"هذا الموقع يستخدم ملفات تعريف الارتباط الخاصة للتأكد من سهولة الاستخدام وضمان تحسين تجربتك أثناء التصفح. من خلال الاستمرار في تصفح هذا الموقع، فإنك تقر بقبول استخدام ملفات تعريف الارتباط.\", \"privacyPolicy\": \"سياسة الخصوصية\", \"accept\": \"قبول\", \"reject\": \"رفض\", \"manageLink\": \"إدارة ملفات تعريف الارتباط\", \"manageTitle\": \"إدارة ملفات تعريف الارتباط\", \"thanksTitle\": \"ملفات تعريف الارتباط\", \"intro\": \"عند زيارة أي موقع على الويب، قد يخزّن هذا الأخير المعلومات على المستعرض أو يستردها على شكل ملفات تعريف ارتباط على الأغلب. وقد تكون هذه المعلومات عنك أو عن تفضيلاتك أو عن جهازك أو قد يتم استخدامها ليعمل الموقع كما تتوقع. لا تعرّف المعلومات عنك عادةً مباشرةً، ولكنها قد تمنحك تجربة ويب أكثر تخصيصًا. يمكنك اختيار عدم السماح ببعض أنواع ملفات تعريف الارتباط. انقر فوق عناوين الفئات المختلفة لمعرفة المزيد وتغيير إعداداتنا الافتراضية. ومع ذلك، يجب أن تعرف أن حظر بعض أنواع ملفات تعريف الارتباط قد يؤثر في تجربتك على الموقع وفي الخدمات التي يمكننا تقديمها.\", \"necessary\": \"ملفات تعريف الارتباط هذه ضرورية للغاية (نشطة دائماً)\", \"performance\": \"ملفات تعريف الارتباط الخاصة بالأداء\", \"functional\": \"ملفات تعريف الارتباط الوظيفية\", \"targeting\": \"ملفات تعريف الارتباط المُستهدفة\", \"confirm\": \"تأكيد خياراتي\", \"rejectAll\": \"رفض الكل\", \"thanksMessage\": \"شكرًا! تم تسجيل استجابتك بنجاح. إذا كنت ترغب في تعديل الإجابة أو تغييرها، يمكنك الرجوع عبر الضغط على زر تراجع.\", \"undo\": \"تراجع\", \"close\": \"إغلاق\" }, \"fileUploader\": { \"hint\": \"الحد الأقصى لحجم الملف المسموح به هو {{size}} ميجابايت، وصيغ الملفات المدعومة تشمل {{"
+          "preview": "[{\"tid_1\":\"68\",\"name\":\"\\u0627\\u0644\\u0631\\u064a\\u0627\\u0636\"},{\"tid_1\":\"69\",\"name\":\"\\u0627\\u0644\\u062f\\u0645\\u0627\\u0645\"},{\"tid_1\":\"70\",\"name\":\"\\u062c\\u062f\\u0629\"},{\"tid_1\":\"71\",\"name\":\"\\u0623\\u0628\\u0647\\u0627\"},{\"tid_1\":\"171\",\"name\":\"\\u0627\\u0644\\u062c\\u0628\\u064a\\u0644\"},{\"tid_1\":\"172\",\"name\":\"\\u0627\\u0644\\u0628\\u0627\\u062d\\u0629\"},{\"tid_1\":\"176\",\"name\":\"\\u0627\\u0644\\u0637\\u0627\\u0626\\u0641\"},{\"tid_1\":\"177\",\"name\":\"\\u0627\\u0644\\u0638\\u0647\\u0631\\u0627\\u0646\"},{\"tid_1\":\"182\",\"name\":\"\\u0627\\u0644\\u0645\\u0628\\u0631\\u0632\"},{\"tid_1\":\"183\",\"name\":\"\\u0627\\u0644\\u0645\\u062f\\u064a\\u0646\\u0629 \\u0627\\u0644\\u0645\\u0646\\u0648\\u0631\\u0629\"},{\"tid_1\":\"187\",\"name\":\"\\u062a\\u0628\\u0648\\u0643\"},{\"tid_1\":\"191\",\"name\":\"\\u0631\\u0641\\u062d\\u0627\\u0621\"},{\"tid_1\":\"192\",\"name\":\"\\u0633\\u0643\\u0627\\u0643\\u0627\"},{\"tid_1\":\"194\",\"name\":\"\\u0642\\u0644\\u0639\\u0629 \\u0628\\u064a\\u0634\\u0629\"},{\"tid_1\":\"196\",\"name\":\"\\u0646\\u062c\\u0631\\u0627\\u0646\"},{\"tid_1\":\"197\",\"name\":\"\\u062d\\u0627\\u0626\\u0644\"},{\"tid_1\":\"198\",\"name\":\"\\u064a\\u0646\\u0628\\u0639\"},{\"tid_1\":\"5042\",\"name\":\"\\u0627\\u0644\\u0623\\u062d\\u0633\\u0627\\u0621\"},{\"tid_1\":\"7319\",\"name\":\"\\u0639\\u0633\\u064a\\u0631\"},{\"tid_1\":\"10545\",\"name\":\"\\u0645\\u0643\\u0629 \\u0627\\u0644\\u0645\\u0643\\u0631\\u0645\\u0629\"},{\"tid_1\":\"10635\",\"name\":\"\\u0627\\u0644\\u062d\\u0644\\u0629\"},{\"tid_1\":\"10638\",\"name\":\"\\u0627\\u0644\\u062e\\u0631\\u062c\"},{\"tid_1\":\"10641\",\"name\":\"\\u0627\\u0644\\u0633\\u0644\\u064a\\u0644\"},{\"tid_1\":\"10647\",\"name\":\"\\u0627\\u0644\\u0642\\u0631\\u064a\\u0627\\u062a\"},{\"tid_1\":\"10650\",\"name\":\"\\u0627\\u0644\\u0642\\u0637\\u064a\\u0641\"},{\"tid_1\":\"10653\",\"name\":\"\\u0627\\u0644\\u0642\\u0646\\u0641\\u0630\\u0629\"},{\"tid_1\":\"10656\",\"name\":\"\\u0627\\u0644\\u0642\\u0648\\u064a\\u0639\\u064a\\u0629\"},{\"tid_1\":\"10659\",\"name\":\"\\u0627\\u0644\\u0647\\u0641\\u0648\\u0641\"},{\"tid_1\":\"10662\",\"name\":\"\\u062"
+        }
+      ]
+    },
+    {
+      "id": "saudi-pro-league-fixtures",
+      "probed_at": "2026-09-19T13:38:44.125Z",
+      "name": "Saudi Pro League Fixtures",
+      "priority": 30,
+      "url": "https://api.saudi-pro-league.pulselive.com/football/fixtures?comps=215&compSeasons=859&pageSize=100&statuses=C,U,L&sort=asc",
+      "final_url": "chrome-error://chromewebdata/",
+      "status": "error",
+      "http_status": 0,
+      "navigation_error": "page.goto: net::ERR_NAME_NOT_RESOLVED at https://api.saudi-pro-league.pulselive.com/football/fixtures?comps=215&compSeasons=859&pageSize=100&statuses=C,U,L&sort=asc\nCall log:\n  - navigating to \"https://api.saudi-pro-league.pulselive.com/football/fixtures?comps=215&compSeasons=859&pageSize=100&statuses=C,U,L&sort=asc\", waiting until \"domcontentloaded\"\n",
+      "duration_ms": 341,
+      "classification": "empty-or-shell",
+      "next_action": "اعتبرها shell وابحث عن API أو مسار بديل قبل أي collector.",
+      "title": "",
+      "text_bytes": 0,
+      "html_bytes": 0,
+      "html_snapshot": "data/raw/browser-probes/saudi-pro-league-fixtures-2026-09-19T13-31-42-172Z.html",
+      "screenshot": "",
+      "signals": {
+        "has_next_data": false,
+        "has_nuxt": false,
+        "has_json_ld": false,
+        "has_event_schema": false,
+        "date_snippets": [],
+        "event_like_links": []
+      },
+      "script_signals": {
+        "next_data_scripts": 0,
+        "nuxt_scripts": 0,
+        "json_ld_scripts": 0,
+        "large_inline_scripts": 0
+      },
+      "network_total": 0,
+      "network_endpoints": [],
+      "network_sample": []
+    },
+    {
+      "id": "moc-cultural-subportals",
+      "probed_at": "2026-09-19T13:40:57.695Z",
+      "name": "Ministry of Culture Commission Calendars",
+      "priority": 37,
+      "url": "https://music.moc.gov.sa/Cultural-Calendar",
+      "final_url": "chrome-error://chromewebdata/",
+      "status": "error",
+      "http_status": 0,
+      "navigation_error": "page.goto: Timeout 30000ms exceeded.\nCall log:\n  - navigating to \"https://music.moc.gov.sa/Cultural-Calendar\", waiting until \"domcontentloaded\"\n",
+      "duration_ms": 133533,
+      "classification": "empty-or-shell",
+      "next_action": "اعتبرها shell وابحث عن API أو مسار بديل قبل أي collector.",
+      "title": "",
+      "text_bytes": 0,
+      "html_bytes": 0,
+      "html_snapshot": "data/raw/browser-probes/moc-cultural-subportals-2026-09-19T13-31-42-172Z.html",
+      "screenshot": "",
+      "signals": {
+        "has_next_data": false,
+        "has_nuxt": false,
+        "has_json_ld": false,
+        "has_event_schema": false,
+        "date_snippets": [],
+        "event_like_links": []
+      },
+      "script_signals": {
+        "next_data_scripts": 0,
+        "nuxt_scripts": 0,
+        "json_ld_scripts": 0,
+        "large_inline_scripts": 0
+      },
+      "network_total": 0,
+      "network_endpoints": [],
+      "network_sample": []
+    },
+    {
+      "id": "eye-of-riyadh-events",
+      "probed_at": "2026-09-19T13:41:05.436Z",
+      "name": "Eye of Riyadh Events",
+      "priority": 12,
+      "url": "https://www.eyeofriyadh.com/events/",
+      "final_url": "https://www.eyeofriyadh.com/events/",
+      "status": "ok",
+      "http_status": 200,
+      "navigation_error": "",
+      "duration_ms": 7703,
+      "classification": "rendered-html-candidates",
+      "next_action": "اكتب extractor مرن من DOM بعد الرندر أو حسن selector الحالي.",
+      "title": "Events | Exhibitions |Festivals | Seminars Riyadh Saudi Arabia",
+      "text_bytes": 6428,
+      "html_bytes": 145076,
+      "html_snapshot": "data/raw/browser-probes/eye-of-riyadh-events-2026-09-19T13-31-42-172Z.html",
+      "screenshot": "data/raw/browser-probes/eye-of-riyadh-events-2026-09-19T13-31-42-172Z.png",
+      "signals": {
+        "has_next_data": false,
+        "has_nuxt": false,
+        "has_json_ld": false,
+        "has_event_schema": false,
+        "date_snippets": [
+          "6 Rabi' II 1448 - 19 September 2026 Sign In/Sign Up Advertise with us Sign-up for newsletter HOME NEWS EVENTS BUSIN",
+          "hatsApp X LinkedIn Facebook Email Share 25 - 27 Jan, 2027 Real Estate Future Forum Four Seasons Hotel , Riyadh | Forum The Real Est",
+          "must evolve, embracing... More Details 25 - 26 Oct, 2026 Global Proptech Summit 2026 Mandarin Oriental Al Faisaliah , Riyadh | Sum",
+          "platform that convenes... More Details 28 - 29 Oct, 2026 Real Estate Supply Chain Forum Mandarin Oriental Al Faisaliah , Riyadh |",
+          "tform driving strategic... More Details 28 - 29 Oct, 2026 CIPS MENA Procurement and Supply Chain Futures conference and awards Mand",
+          "is the region’s leading... More Details 19 - 21 Sep, 2026 Global Project Management Forum (GPMF) 2026 Fairmont Hotel , Riyadh | For",
+          "nt that unites industry... More Details 20 - 22 Sep, 2026 The International facility Management Forum and Conference Riyadh Interna",
+          "Day Riyadh | Festival ... More Details 24 - 27 Sep, 2026 4th SAUDI FASHIONTEX EXPO Jeddah International Exhibition & Convention Ce"
+        ],
+        "event_like_links": [
+          {
+            "text": "EVENTS",
+            "href": "https://www.eyeofriyadh.com/events/"
+          },
+          {
+            "text": "عربي",
+            "href": "https://www.eyeofriyadh.com/ar/events/"
+          },
+          {
+            "text": "Award",
+            "href": "https://www.eyeofriyadh.com/events/?fcat=15"
+          },
+          {
+            "text": "Ceremony",
+            "href": "https://www.eyeofriyadh.com/events/?fcat=21"
+          },
+          {
+            "text": "Championship",
+            "href": "https://www.eyeofriyadh.com/events/?fcat=13"
+          },
+          {
+            "text": "Conference",
+            "href": "https://www.eyeofriyadh.com/events/?fcat=1"
+          },
+          {
+            "text": "Congress",
+            "href": "https://www.eyeofriyadh.com/events/?fcat=28"
+          },
+          {
+            "text": "Exhibition",
+            "href": "https://www.eyeofriyadh.com/events/?fcat=2"
+          },
+          {
+            "text": "Festival",
+            "href": "https://www.eyeofriyadh.com/events/?fcat=5"
+          },
+          {
+            "text": "Forum",
+            "href": "https://www.eyeofriyadh.com/events/?fcat=3"
+          },
+          {
+            "text": "Initiative",
+            "href": "https://www.eyeofriyadh.com/events/?fcat=20"
+          },
+          {
+            "text": "Professional Development Programme",
+            "href": "https://www.eyeofriyadh.com/events/?fcat=32"
+          },
+          {
+            "text": "Show",
+            "href": "https://www.eyeofriyadh.com/events/?fcat=24"
+          },
+          {
+            "text": "Summit",
+            "href": "https://www.eyeofriyadh.com/events/?fcat=4"
+          },
+          {
+            "text": "AWARD",
+            "href": "https://www.eyeofriyadh.com/events/?fcat=15"
+          },
+          {
+            "text": "CEREMONY",
+            "href": "https://www.eyeofriyadh.com/events/?fcat=21"
+          },
+          {
+            "text": "CHAMPIONSHIP",
+            "href": "https://www.eyeofriyadh.com/events/?fcat=13"
+          },
+          {
+            "text": "CONFERENCE",
+            "href": "https://www.eyeofriyadh.com/events/?fcat=1"
+          },
+          {
+            "text": "CONGRESS",
+            "href": "https://www.eyeofriyadh.com/events/?fcat=28"
+          },
+          {
+            "text": "EXHIBITION",
+            "href": "https://www.eyeofriyadh.com/events/?fcat=2"
+          }
+        ]
+      },
+      "script_signals": {
+        "next_data_scripts": 0,
+        "nuxt_scripts": 0,
+        "json_ld_scripts": 0,
+        "large_inline_scripts": 0
+      },
+      "network_total": 4,
+      "network_endpoints": [],
+      "network_sample": [
+        {
+          "method": "GET",
+          "status": 200,
+          "url": "https://ep1.adtrafficquality.google/getconfig/sodar?sv=200&tid=gpt&tv=m202609140101&st=env&sjk=1950199255513841",
+          "content_type": "application/json",
+          "resource_type": "xhr",
+          "request_post_data": "",
+          "response_shape": "json-like-invalid",
+          "preview": "{\"sodar_query_id\":\"6pCuaqeHIfzuieYPqc6psAY\",\"injector_basename\":\"sodar2\",\"bg_hash_basename\":\"dVU7YC_IHNLAuo73oEax7kJe6zOZtQfbD4RBB6EqV-Y\",\"bg_binary\":\"DoU+BCZ4NGZBfIN/jMJieYl3Q5wuZKByhqiqFG1olHufFBClWYkw5T4LNM3A+gyQn0Ag5ucuOgPsZY7N7Iwy9EqVfn9DmzAPz5Era+HFDjkEBAF9EDglfVaH+lYvXrsSw5JRNT9dSvD4u0ZU594NCBLECy8/76KqMjVOLRDX/Ao3APdMLnLMwCTPiasU58Vj0Z1q7HxqqQkijDCBupEFMIqhFcg25XPgZkMlzjz7wixc5NkA3lUk6PXga6eX+N6D6Xe613luYkj4IfS6Kenyl4KwFvf8jSTSWqkfdZO6Ua4Mt1N4Z9kyAm6Is30ZpcVZRL5AfBfrE2XcSTyd3A8mtb4F3CctiHhKkiOeOQ7G4q4/i65LdLqoxxqoukDRv9/iga7Ah2ne+5OpRJziasKpnlnyvtSXDdlB/kTyUxIQjCRcigGutC6e81cnmeY1Idi3s9v81pPKNgGTLwi9qv96HLzpkjCerSCn2nQk0UoDxbwz20oNoOuT1+4FF0dgvVILKiYRj625ogadlmZsJlLTuIONH6y5fOa5FOzvo4wxJbNJ6sTmkTS4M4Qt/u5NDm8cOgNIWCn1d3L2szeSr2ZFfZao/dVgzlGvAjL0M8M9Sd/mwdwX/ePru36ai2ua6+PaPDCNW2vbCTZ1PLkzOhv52Z+0G/ZpGQSquZD7TKIJAdp0a1oG/ExZvGR/dxhNZNOKE0FIkA/UItWGUeHEhYg7+Tt9eiL00xbojVhp18YSFCtul66chhgD2Nacqfy8TgmY/+FupyEspOCmqvoAFaY5GSZ2TVRDWJlDAALJRarloV0q1dE2KCcZuTsAFNnhxH6YyH9+vUqejoHLBglhdTbttZrEisCSVCfAwp/AGkKH5gNECb985FcNSIMyAn5dGSfFDIpGgX9uVsM9d/jXacmOXaYDbKXE+zY1LHlBmzfkzE87TIM+YowN30mfRQmQSN0wKgk/XWVM3gJHVFYgmdELjca7+QonaJWi/1Jrujr0UDXxVyd87XR71MgWv9u0Z4tErb0tGeagHyYIC5zsnvLt4AtYlZHpR1mDWYi7QsJZGzY5ddA1gj1nDutu2AHWaeOGg7jnzl1Q7yD5vZ20t0/91Q/yT36PeWTbgyOmFP5opIFd+fjbX/uodXcW3drqFxjakU5hJ9K5zqGPPNliR61Lpsss2a8A0TG9y0eQIrm/C8iEbCeYf5HPYB+K4Ax2Z7q5Jvuu8l+paX8x2KC4Ha4OjV6OjpT1r/by7zGRswb9w9f35XvFkgaBe9ThA/+1+6ZA5MCIK5qqBNcfyZu1UIxETaVP9wPseQt5PW8wO7THupLcNQSW7kNtH8w5r5leCCLyL9REvb55fOfNoqiLE3V+cXG8QmxLbpWGXAzIsPjHFYRxkD0q4hKeQzv2YFpO0yniIDs/3+HhokNALpgSY4bEmxjUoqSv9Qk/RtFQUyk+Fuwe7XUakKW+S1PSMp2Ty1Hg0Cuzb0C1QgXafadVSxDZrw0H9g2B62Er1oGGqjMexChY6kf7B6W3c4tH+sOiCtAphenjawzYdodiiBSRiajbGq9beQJ5xsl7bgApN3EcO9ZbDDu+193FuFzuMvhfmN8/OGn4sTHfZDHLSuUHfalv1KgxAC6Iw+9YN8373frI73KPoWPzK"
         },
         {
           "method": "GET",
           "status": 200,
-          "url": "https://riyadh.sa/assets/i18n/en.json",
+          "url": "https://bootstrap.smartsuppchat.com/widget/2509ea3487b655fdefb67761d4610393011e3a91.json",
+          "content_type": "application/json",
+          "resource_type": "xhr",
+          "request_post_data": "",
+          "response_shape": "json-object:aiRatingEnabled,allowedDomains,buttonStyle,color,color2,colorGradient,consentModeEnabled,crossDomainEnabled",
+          "preview": "{\"aiRatingEnabled\":false,\"allowedDomains\":[],\"buttonStyle\":\"greeting\",\"color\":\"#f5a623\",\"color2\":null,\"colorGradient\":true,\"consentModeEnabled\":false,\"crossDomainEnabled\":false,\"customBrandingEnabled\":false,\"customBrandingLink\":\"\",\"customBrandingText\":\"\",\"emailControl\":true,\"features\":{\"api\":false,\"customize\":false,\"ga\":false,\"groups\":false,\"rating\":false,\"whiteLabel\":false},\"googleAnalyticsEnabled\":false,\"googleAnalyticsManual\":false,\"googleAnalyticsMeasurementIds\":[],\"groupSelectEnabled\":false,\"headerStyle\":\"standard\",\"hideOfflineChat\":false,\"hideWidget\":false,\"host\":\"websocket-visitors.smartsupp.com\",\"internalAnalyticsEnabled\":false,\"isBlocked\":false,\"lang\":\"en\",\"mobilePopupsEnabled\":false,\"nameControl\":true,\"numberControl\":false,\"openOnTrigger\":false,\"orientation\":\"right\",\"packageName\":\"free\",\"popupTextareaEnabled\":false,\"privacyNoticeCheckRequired\":false,\"privacyNoticeEnabled\":true,\"privacyNoticeUrl\":\"\",\"ratingEnabled\":false,\"requireLogin\":false,\"translates\":{\"en\":{\"topBar.online.hello\":\"Eyeofriyadh\"}},\"urlCardsEnabled\":true,\"widgetVersion\":3,\"hasInternalApi\":false,\"config\":{},\"browserLang\":\"ar\",\"widgetTrackerUrl\":\"https://widget-tracker.smartsupp.com\",\"translationsBaseUrl\":\"https://translations.smartsuppcdn.com\",\"widgetTrackerEnabled\":false}"
+        },
+        {
+          "method": "GET",
+          "status": 200,
+          "url": "https://widget-v3.smartsuppcdn.com/manifest.json",
           "content_type": "application/json",
           "resource_type": "xhr",
           "request_post_data": "",
           "response_shape": "json-like-invalid",
-          "preview": "{ \"lang\": \"en\", \"main\": { \"title\": \"Riyadh City\" }, \"lastUpdated\": { \"label\": \"Last Modified Date\", \"timezone\": \"Saudi Arabia Time\" }, \"cookies\": { \"title\": \"Cookies\", \"consentIntro\": \"This site uses its own cookies to ensure ease of use and to improve your experience while browsing. By continuing to browse this site, you acknowledge and accept the use of cookies.\", \"privacyPolicy\": \"Privacy Policy\", \"accept\": \"Accept\", \"reject\": \"Reject\", \"manageLink\": \"Manage Cookies\", \"manageTitle\": \"Manage Cookies\", \"thanksTitle\": \"Cookies\", \"intro\": \"Whenever you visit a website, it may store or retrieve information on your browser, mostly in the form of cookies. This information might be about you, your preferences, or your device, and is mostly used to make the site work as you expect it to. The information does not usually identify you directly, but it can give you a more personalized web experience. You can choose not to allow some types of cookies. Click on the different category headings to find out more and change our default settings. However, you should know that blocking some types of cookies may impact your experience of the site and the services we are able to offer.\", \"necessary\": \"These cookies are strictly necessary (always active)\", \"performance\": \"Performance cookies\", \"functional\": \"Functional cookies\", \"targeting\": \"Targeting cookies\", \"confirm\": \"Confirm my choices\", \"rejectAll\": \"Reject all\", \"thanksMessage\": \"Thank you! Your response has been recorded successfully. If you would like to edit or change your answer, you can go back by clicking the undo button.\", \"undo\": \"Undo\", \"close\": \"Close\" }, \"fileUploader\": { \"hint\": \"Maximum file size allowed is {{size}}"
+          "preview": "{ \"_WidgetMessengerInput-vaZu9XiV.js\": { \"file\": \"assets/WidgetMessengerInput-vaZu9XiV.js\", \"name\": \"WidgetMessengerInput\", \"imports\": [ \"_shared-DKOWJlLK.js\" ], \"dynamicImports\": [ \"node_modules/.pnpm/emoji-mart@5.6.0/node_modules/emoji-mart/dist/module.js\" ] }, \"_shared-DKOWJlLK.js\": { \"file\": \"assets/shared-DKOWJlLK.js\", \"name\": \"IconButton\", \"dynamicImports\": [ \"node_modules/.pnpm/@thumbmarkjs+thumbmarkjs@1.9.0/node_modules/@thumbmarkjs/thumbmarkjs/dist/thumbmark.esm.js\" ] }, \"node_modules/.pnpm/@thumbmarkjs+thumbmarkjs@1.9.0/node_modules/@thumbmarkjs/thumbmarkjs/dist/thumbmark.esm.js\": { \"file\": \"assets/thumbmark.esm-CP4CU0yL.js\", \"name\": \"thumbmark.esm\", \"src\": \"node_modules/.pnpm/@thumbmarkjs+thumbmarkjs@1.9.0/node_modules/@thumbmarkjs/thumbmarkjs/dist/thumbmark.esm.js\", \"isDynamicEntry\": true }, \"node_modules/.pnpm/emoji-mart@5.6.0/node_modules/emoji-mart/dist/module.js\": { \"file\": \"assets/module-DD5nvVD3.js\", \"name\": \"module\", \"src\": \"node_modules/.pnpm/emoji-mart@5.6.0/node_modules/emoji-mart/dist/module.js\", \"isDynamicEntry\": true }, \"src/frames/messenger/WidgetMessenger.svelte\": { \"file\": \"assets/WidgetMessenger-CXtrqQj6.js\", \"name\": \"WidgetMessenger\", \"src\": \"src/frames/messenger/WidgetMessenger.svelte\", \"isDynamicEntry\": true, \"imports\": [ \"_shared-DKOWJlLK.js\", \"_WidgetMessengerInput-vaZu9XiV.js\", \"src/main.ts\" ] }, \"src/frames/popup/WidgetPopup.svelte\": { \"file\": \"assets/WidgetPopup-DZYwFDWS.js\", \"name\": \"WidgetPopup\", \"src\": \"src/frames/popup/WidgetPopup.svelte\", \"isDynamicEntry\": true, \"imports\": [ \"_shared-DKOWJlLK.js\", \"_WidgetMessengerInput-vaZu9XiV.js\" ] },"
+        },
+        {
+          "method": "GET",
+          "status": 200,
+          "url": "https://translations.smartsuppcdn.com/api/v1/widget/translations/lang/en/defaults",
+          "content_type": "application/json",
+          "resource_type": "fetch",
+          "request_post_data": "",
+          "response_shape": "json-like-invalid",
+          "preview": "{\"agentRating.all.placeholder\":\"Leave us feedback\",\"agentRating.bad.formText\":\"So sorry 😓 What went wrong?\",\"agentRating.good.formText\":\"Thanks 🤩 What was so great?\",\"agentRating.normal.formText\":\"Thanks 👍 How can we improve?\",\"agentTransfer.defaultText\":\"Agent\",\"agentTransfer.joined\":\"joined the chat\",\"agentTransfer.left\":\"left\",\"agentTransfer.redirected\":\"is your new agent\",\"ariaLabel.agentAvatar\":\"Agent avatar\",\"ariaLabel.card\":\"Product card\",\"ariaLabel.chatContent\":\"Chat content\",\"ariaLabel.chatbotAvatar\":\"Chatbot avatar\",\"ariaLabel.drawer.content\":\"Drawer content\",\"ariaLabel.drawer.overlay\":\"Drawer overlay\",\"ariaLabel.inlineEmojiPicker.description\":\"Showing {count} emojis\",\"ariaLabel.inlineEmojiPicker.label\":\"Emoji suggestions\",\"ariaLabel.left\":\"Left\",\"ariaLabel.openChat\":\"Open Smartsupp chat\",\"ariaLabel.popup\":\"Smartsupp chat popup\",\"ariaLabel.rateChat.bad\":\"Rate chat negativelly\",\"ariaLabel.rateChat.good\":\"Rate chat positively\",\"ariaLabel.rateChat.neutral\":\"Rate chat neutrally\",\"ariaLabel.removeAttachment\":\"Remove attachment\",\"ariaLabel.right\":\"Right\",\"ariaLabel.scrollDown\":\"Scroll down\",\"ariaLabel.success\":\"Success\",\"ariaLabel.uploading\":\"Uploading...\",\"ariaLabel.widgetBranding\":\"Smartsupp branding\",\"authForm.acceptTerms\":\"I agree with privacy policy\",\"authForm.button.send\":\"Send message\",\"authForm.description\":\"We’ll use your contact info only if all the operators are busy at the moment and cannot immediately reply.\",\"authForm.greeting\":\"👋 Please introduce yourself\",\"authForm.group\":\"Choose a group\",\"authForm.label.email\":\"E-mail\",\"authForm.label.group\":\"Group\",\"authForm.label.name\":\"Name\",\"authForm.label.phone\":\"Phone\",\"authForm.submit.error\":\"Authentication failed\",\"authForm.submit.success\":\"Authentication was successful\",\"authForm.yourEmail\":\"Your email\""
         }
       ]
     }

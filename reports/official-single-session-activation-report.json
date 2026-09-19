@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-17T08:14:47.690Z",
+  "generated_at": "2026-09-19T14:00:27.820Z",
   "max_duration_hours": 8,
   "totals": {
     "activated": 38,
@@ -271,8 +271,8 @@
       "id": "event-beast-house",
       "title": "Beast House",
       "source_label": "MDLBEAST Events",
-      "starts_at": "2026-09-17T21:00:00+03:00",
-      "ends_at": "2026-09-18T03:00:00+03:00",
+      "starts_at": "2026-09-24T21:00:00+03:00",
+      "ends_at": "2026-09-25T03:00:00+03:00",
       "duration_hours": 6,
       "session_type": "official-entertainment-session"
     },

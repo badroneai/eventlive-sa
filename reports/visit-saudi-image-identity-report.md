@@ -1,14 +1,14 @@
 # EventLive Visit Saudi Image Identity Report
 
-- generated_at: 2026-09-17T08:09:50.496Z
-- pdf_crop_assignments: 24
+- generated_at: 2026-09-19T13:53:49.376Z
+- pdf_crop_assignments: 23
 - verified: 23
-- struck: 1
-- slots_seen_this_cycle: 25
+- struck: 0
+- slots_seen_this_cycle: 24
 
 ## Struck (fell back to generated cover)
 
-- ذكريات سبيستون مع الفنان عاصم سكر (visit-saudi-summer-2026-p062-bottom-left.jpg) - identity-mismatch - page 62 bottom-left is now "ENC 2026"
+- none
 
 ## Verified
 
