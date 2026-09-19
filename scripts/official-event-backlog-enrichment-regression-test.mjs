@@ -1,6 +1,7 @@
 import assert from 'node:assert/strict';
 import fs from 'node:fs';
 import path from 'node:path';
+import { loadBuildRecordExclusions } from './published-output-persistence.mjs';
 
 const root = process.cwd();
 const catalogPath = process.env.EVENTLIVE_EVENTS_CATALOG_FILE
@@ -120,9 +121,17 @@ const publicIdentity = (event) => [
 const distById = new Map(distEvents.map((event) => [event.id, event]));
 const distByIdentity = new Map(distEvents.map((event) => [publicIdentity(event), event]));
 
+// The catalog and dist/events.json are NOT one-to-one: the build collapses duplicates onto a
+// primary and refuses non-public rows, and records every such drop in
+// reports/build-record-exclusions.json. A row the build recorded as dropped is excused by id;
+// anything else missing still fails and names the row (class fix 2026-09-19: this exact
+// assertion turned sync run 35431434502 red on a row the build had collapsed).
+const buildExclusions = loadBuildRecordExclusions(root, fs, path);
+let excusedByBuild = 0;
 for (const event of published) {
   const publicEvent = distById.get(event.id) || distByIdentity.get(publicIdentity(event));
-  assert.ok(publicEvent, `${event.id} must have a public representative in dist/events.json`);
+  if (!publicEvent && buildExclusions.has(String(event.id || '').normalize('NFC'))) { excusedByBuild++; continue; }
+  assert.ok(publicEvent, `${event.id} must have a public representative in dist/events.json (build recorded no exclusion for it)`);
   assert.ok(publicEvent.program_outline, `${event.id} public representative must retain program_outline`);
 }
 
@@ -132,4 +141,4 @@ if (fs.existsSync(reportPath)) {
   assert.equal(report.totals.fetch_failures, report.failed.length, 'backlog report failure total must match rows');
 }
 
-console.log(`official-event-backlog-enrichment-regression-test: ok published=${published.length}`);
+console.log(`official-event-backlog-enrichment-regression-test: ok published=${published.length} excused_by_build=${excusedByBuild}`);

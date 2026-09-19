@@ -1,6 +1,7 @@
 import assert from 'node:assert/strict';
 import fs from 'node:fs';
 import path from 'node:path';
+import { loadBuildRecordExclusions } from './published-output-persistence.mjs';
 
 const root = process.cwd();
 const catalogPath = path.join(root, 'data', 'events_catalog.json');
@@ -36,7 +37,16 @@ const soundstorm = enrichedCatalog.find((event) => event.id === 'event-soundstor
 assert.ok(soundstorm?.ticket_url?.includes('nofomo.com'), 'Soundstorm must carry the official ticket CTA when published on MDLBEAST');
 
 const distEnriched = distEvents.filter((event) => event.program_outline?.provider === 'MDLBEAST');
-assert.ok(distEnriched.length >= enrichedCatalog.length, 'build must carry MDLBEAST program outlines into dist/events.json');
+// The catalog and dist/events.json are NOT one-to-one: the build collapses duplicates onto a
+// primary and refuses non-public rows, and records every such drop in
+// reports/build-record-exclusions.json. Rows it recorded as dropped are excused by id; anything
+// else missing still fails and names the row (class fix 2026-09-19, three sync outages).
+const buildExclusions = loadBuildRecordExclusions(root, fs, path);
+const excusedEnriched = enrichedCatalog.filter((event) => buildExclusions.has(String(event.id || '').normalize('NFC')));
+assert.ok(
+  distEnriched.length >= enrichedCatalog.length - excusedEnriched.length,
+  `build must carry MDLBEAST program outlines into dist/events.json: ${distEnriched.length} in dist, ${enrichedCatalog.length} enriched in the catalog, ${excusedEnriched.length} recorded as dropped by the build (${excusedEnriched.map((event) => `${event.id}:${buildExclusions.get(String(event.id).normalize('NFC'))?.reason}`).join(', ') || 'none'})`
+);
 assert.ok(distEnriched.some((event) => event.category_label === 'الترفيه والعائلات'), 'MDLBEAST music category must render as the canonical Arabic entertainment label');
 
 const sample = distEnriched.find((event) => event.id === 'event-soundstorm-26') || distEnriched[0];
