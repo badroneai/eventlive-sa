@@ -4566,7 +4566,7 @@ function parseHayyJameelDateRange(value) {
       ends_at: dateWithTime(endYear, endMonth, endDay, '18:00:00')
     };
   }
-  const singleMonthDayMatch = text.match(/([A-Za-z]{3,9})\s+(\d{1,2})(?:,\s*(20\d{2}))?(?!\s*-\s*[A-Za-z]{3,9}\s+\d{1,2})/i);
+  const singleMonthDayMatch = text.match(/([A-Za-z]{3,9})\s+(\d{1,2})(?!\d)(?:,\s*(20\d{2}))?(?!\s*-\s*[A-Za-z]{3,9}\s+\d{1,2})/i);
   if (singleMonthDayMatch) {
     const month = monthIndex(singleMonthDayMatch[1]);
     const day = Number(singleMonthDayMatch[2]);
@@ -4676,20 +4676,40 @@ function extractHayyJameelSideNav(html = '') {
   return html.match(/<nav[^>]*\bside-nav\b[^>]*>[\s\S]*?<\/nav>/i)?.[0] || '';
 }
 
-function extractHayyJameelDateRangeFromMonthDayMatrix(text = '', fallbackYear = now.getUTCFullYear()) {
+function extractHayyJameelDateRangeFromMonthDayMatrix(text = '', fallbackYear = now.getUTCFullYear(), { explicitYear = null } = {}) {
   const parsedDates = [];
   const parsedKeys = new Set();
   const normalized = stripTags(String(text))
     .replace(/\s+/g, ' ')
     .trim();
+  // 2026-09-19: a day must never be the first two digits of a year ("July 2026" was parsed as
+  // "July 20", then inferYear() pushed it to next year → 40 of 93 Hayy rows advertised 2027 for
+  // 2026 screenings). When the page states its year (URL slug / trailing year after a day list
+  // such as "July 1, 2, 3, 12 2026") that year wins over the assume-next-year guess.
+  const yearFor = (yearText, month, day) => Number(yearText || explicitYear || inferYear(month, day) || fallbackYear);
+  const dayListPattern = /([A-Za-z]{3,9})\s+((?:\d{1,2}(?!\d)\s*,\s*)+\d{1,2}(?!\d))\s+(20\d{2})(?!\d)/gi;
+  for (const match of [...normalized.matchAll(dayListPattern)]) {
+    const month = monthIndex(match[1]);
+    if (!Number.isInteger(month)) continue;
+    const year = Number(match[3]);
+    for (const dayText of match[2].split(/\s*,\s*/)) {
+      const day = Number(dayText);
+      if (!Number.isInteger(day) || day < 1 || day > 31) continue;
+      const key = `${year}-${month + 1}-${day}`;
+      if (parsedKeys.has(key)) continue;
+      parsedKeys.add(key);
+      parsedDates.push({ year, month, day });
+    }
+  }
+  const remaining = normalized.replace(dayListPattern, ' ');
 
-  const dayMonthPattern = /([A-Za-z]{3,9}|[\u0600-\u06ff]+)\s+(\d{1,2})(?:\s*(20\d{2}))?(?:\s*-\s*([A-Za-z]{3,9}|[\u0600-\u06ff]+)\s+(\d{1,2})(?:\s*(20\d{2}))?)?/gi;
-  for (const match of [...normalized.matchAll(dayMonthPattern)]) {
+  const dayMonthPattern = /([A-Za-z]{3,9}|[\u0600-\u06ff]+)\s+(\d{1,2})(?!\d)(?:,?\s*(20\d{2})(?!\d))?(?:\s*-\s*([A-Za-z]{3,9}|[\u0600-\u06ff]+)\s+(\d{1,2})(?!\d)(?:,?\s*(20\d{2})(?!\d))?)?/gi;
+  for (const match of [...remaining.matchAll(dayMonthPattern)]) {
     const [, monthText, dayText, yearText] = match;
     const month = monthIndex(monthText);
     const day = Number(dayText);
     if (!Number.isInteger(month) || !Number.isInteger(day)) continue;
-    const year = Number(yearText || inferYear(month, day) || fallbackYear);
+    const year = yearFor(yearText, month, day);
     const key = `${year}-${month + 1}-${day}`;
     if (!parsedKeys.has(key)) {
       parsedKeys.add(key);
@@ -4713,13 +4733,13 @@ function extractHayyJameelDateRangeFromMonthDayMatrix(text = '', fallbackYear = 
     }
   }
 
-  const monthDayPattern = /(\d{1,2})(?:\s+(?:-|to)\s*)?([A-Za-z]{3,9}|[\u0600-\u06ff]+)(?:\s*(20\d{2}))?/gi;
-  for (const match of [...normalized.matchAll(monthDayPattern)]) {
+  const monthDayPattern = /(?<!\d)(\d{1,2})(?!\d)(?:\s+(?:-|to)\s*|\s+)?([A-Za-z]{3,9}|[\u0600-\u06ff]+)(?:,?\s*(20\d{2})(?!\d))?/gi;
+  for (const match of [...remaining.matchAll(monthDayPattern)]) {
     const [, dayText, monthText, yearText] = match;
     const day = Number(dayText);
     const month = monthIndex(monthText);
     if (!Number.isInteger(month) || !Number.isInteger(day)) continue;
-    const year = Number(yearText || inferYear(month, day) || fallbackYear);
+    const year = yearFor(yearText, month, day);
     const key = `${year}-${month + 1}-${day}`;
     if (parsedKeys.has(key)) continue;
     parsedKeys.add(key);
@@ -4740,7 +4760,9 @@ function extractHayyJameelDateRangeFromMonthDayMatrix(text = '', fallbackYear = 
   return formatHayyJameelMonthDayRange(first, last);
 }
 
-function extractHayyJameelDateTextFromDetail(detailHtml = '') {
+function extractHayyJameelDateTextFromDetail(detailHtml = '', detailUrl = '') {
+  // A year in the page's own slug (…/hayy-cinema-july-2026/) is the page's statement of its year.
+  const urlYear = Number((String(detailUrl || '').match(/(?:^|[^\d])(20\d{2})(?!\d)/) || [])[1]) || null;
   const detailSection = extractHayyJameelSideNav(detailHtml);
   const detailsSource = stripTags(detailSection || detailHtml)
     .replace(/\s+/g, ' ')
@@ -4777,15 +4799,15 @@ function extractHayyJameelDateTextFromDetail(detailHtml = '') {
     const matrixRange = formatHayyJameelMonthDayRange(start, end);
     return matrixRange;
   }
-  const matrixMatch = extractHayyJameelDateRangeFromMonthDayMatrix(fallbackText, now.getUTCFullYear());
+  const matrixMatch = extractHayyJameelDateRangeFromMonthDayMatrix(fallbackText, now.getUTCFullYear(), { explicitYear: urlYear });
   if (matrixMatch) {
     return matrixMatch;
   }
   const scheduleMatches = [...detailSection.matchAll(/(?:Day\s*\d+:\s*)?(?:Monday|Tuesday|Wednesday|Thursday|Friday|Saturday|Sunday)\s*,?\s*([A-Za-z]{3,9}|[\u0600-\u06ff]+)\s+(\d{1,2})(?:\s*,?\s*(20\d{2}))?/gi)]
     .map(([, monthText, dayText, yearText]) => {
       const day = Number(dayText);
-      const year = Number(yearText || inferYear(monthIndex(monthText), day));
       const month = monthIndex(monthText);
+      const year = Number(yearText || urlYear || inferYear(month, day));
       if (!Number.isInteger(day) || !Number.isInteger(month) || !Number.isInteger(year)) return null;
       return { day, month, year };
     }).filter(Boolean);
@@ -4794,9 +4816,13 @@ function extractHayyJameelDateTextFromDetail(detailHtml = '') {
     const end = scheduleMatches[scheduleMatches.length - 1];
     return formatHayyJameelMonthDayRange(start, end);
   }
-  const singleMatch = fallbackText.match(/[A-Za-z]{3,9}\s+\d{1,2},?\s+\d{4}/i);
+  const singleMatch = fallbackText.match(/[A-Za-z]{3,9}\s+\d{1,2}(?!\d),?\s+\d{4}/i);
   if (singleMatch?.[0]) return singleMatch[0];
-  return fallbackMatch?.[0] ? fallbackMatch[0] : '';
+  if (fallbackMatch?.[0]) return fallbackMatch[0];
+  const bodyText = stripTags(String(detailHtml).replace(/<(script|style)[\s\S]*?<\/\1>/gi, ' ')).replace(/\s+/g, ' ');
+  const bodyDayLists = bodyText.match(/[A-Za-z]{3,9}\s+(?:\d{1,2}(?!\d)\s*,\s*)+\d{1,2}(?!\d)\s+20\d{2}(?!\d)/gi);
+  if (bodyDayLists?.length) return extractHayyJameelDateRangeFromMonthDayMatrix(bodyDayLists.join(' '), now.getUTCFullYear(), { explicitYear: urlYear });
+  return '';
 }
 
 function extractHayyJameelListingFromDetail(detailHtml, detailUrl, source) {
@@ -4811,7 +4837,30 @@ function extractHayyJameelListingFromDetail(detailHtml, detailUrl, source) {
   const title = titleSource.replace(/\s*\|\s*Hayy Jameel\s*$/i, '').trim();
   if (!title) return null;
   const dateText = extractHayyJameelDateTextFromDetail(detailHtml, detailUrl);
-  const dates = parseHayyJameelDateRange(dateText) || parseEnglishDateRange(dateText);
+  let dates = parseHayyJameelDateRange(dateText) || parseEnglishDateRange(dateText);
+  let datePrecision = null;
+  if (!dates) {
+    // 2026-09-19: monthly programme pages ("Hayy Cinema | May 2026") sometimes carry no day list at
+    // all. The heading's own month + year is the page's statement of its window, so publish it as
+    // an official month window (same precision label the Visit Saudi collector uses) instead of
+    // returning null — and never as a guessed day inside a guessed year.
+    const heading = `${title} ${String(detailUrl || '')}`;
+    const monthYear = heading.match(/\b(January|February|March|April|May|June|July|August|September|October|November|December)\b[\s&|-]*(?:(?:January|February|March|April|May|June|July|August|September|October|November|December)[\s&|-]*)?(20\d{2})(?!\d)/i);
+    if (monthYear) {
+      const startMonth = monthIndex(monthYear[1]);
+      const secondMonth = heading.match(/&\s*(January|February|March|April|May|June|July|August|September|October|November|December)\b/i);
+      const endMonth = secondMonth ? monthIndex(secondMonth[1]) : startMonth;
+      const year = Number(monthYear[2]);
+      if (Number.isInteger(startMonth) && Number.isInteger(endMonth)) {
+        const lastDay = new Date(Date.UTC(year, endMonth + 1, 0)).getUTCDate();
+        dates = {
+          starts_at: dateWithTime(year, startMonth, 1),
+          ends_at: dateWithTime(year, endMonth, lastDay, '18:00:00')
+        };
+        datePrecision = 'official-month-window';
+      }
+    }
+  }
   if (!dates) {
     return null;
   }
@@ -4825,7 +4874,8 @@ function extractHayyJameelListingFromDetail(detailHtml, detailUrl, source) {
     city: 'Jeddah',
     venue: 'Hayy Jameel',
     category: 'culture arts',
-    raw_date_text: dateText,
+    raw_date_text: dateText || (datePrecision ? `${title} (month window from heading)` : ''),
+    ...(datePrecision ? { date_precision: datePrecision, time_precision: 'date-only-defaulted' } : {}),
     ...dates
   };
 }
@@ -6759,6 +6809,7 @@ export {
   extractMadinahArchitectureFestival,
   extractHayyJameelCards,
   extractHayyJameelDetail,
+  extractHayyJameelListingFromDetail,
   extractHayyJameelEvents,
   extractSaudiconEvents,
   baseCandidate,
