@@ -1,4 +1,5 @@
 import assert from 'node:assert/strict';
+import { loadBuildRecordExclusions } from './published-output-persistence.mjs';
 import fs from 'node:fs';
 import path from 'node:path';
 
@@ -43,7 +44,23 @@ assert.ok(
 );
 
 const distEnriched = distEvents.filter((event) => event.program_outline?.provider === 'Misk Hub');
-assert.ok(distEnriched.length >= enrichedCatalog.length, 'build must carry Misk program outlines into dist/events.json');
+
+// The catalog and dist/events.json are NOT one-to-one. The build collapses
+// duplicates onto a primary and refuses non-public records; a Misk-enriched row
+// that lands on either path is represented in the output, not missing from it.
+// This assertion did not know that, and on 2026-09-06 it blocked the publish
+// after a collapse — while the site was already three days stale from a
+// different gate making the same assumption.
+//
+// Rows the build recorded as dropped are excused by id; anything else missing is
+// still a failure, and now says which row.
+const buildExclusions = loadBuildRecordExclusions(root, fs, path);
+const excused = enrichedCatalog.filter((event) => buildExclusions.has(String(event.id || '').normalize('NFC')));
+const expectedInDist = enrichedCatalog.length - excused.length;
+assert.ok(
+  distEnriched.length >= expectedInDist,
+  `build must carry Misk program outlines into dist/events.json: ${distEnriched.length} in dist, ${enrichedCatalog.length} enriched in the catalog, ${excused.length} recorded as dropped by the build (${excused.map((event) => `${event.id}:${buildExclusions.get(String(event.id).normalize('NFC'))?.reason}`).join(', ') || 'none'})`
+);
 
 const sample = distEnriched[0];
 const detailPath = path.join(root, 'dist', String(sample.detail_url || '').replace(/^\.\//, ''));
