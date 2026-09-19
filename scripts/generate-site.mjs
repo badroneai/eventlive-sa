@@ -19,6 +19,7 @@ const contentTranslator = createContentTranslator();
 const contentProseStats = { events: 0, translated: 0, leaks: 0, eventsWithLeaks: 0 };
 const coverEnStats = { generated: 0, written: 0, arFallback: 0 };
 import { normalizeSaudiCity } from './city-utils.mjs';
+import { latestOfficialSessionEnd } from './event-session-window.mjs';
 import { CITY_NAME_REGISTRY, cityNameBySlug } from './city-name-registry.mjs';
 import { cityPlacesBySlug, loadCityPlacesFile } from './city-places-data.mjs';
 import { renderCityPlacesJsonLd, renderCityPlacesSection } from './city-places-render.mjs';
@@ -1155,9 +1156,18 @@ function normalizeEvent(raw, sourceGroup, previousLookup) {
   const categoryDefinitionRecord = categoryDefinitionByKey(category);
   const catSlug = categorySlug(category, normalizedCategory);
   const kind = classifyEventKind({ ...raw, event_kind: raw.event_kind || previous.event_kind });
+  // 2026-09-19: the card-level status must not contradict the row's own official sessions. The
+  // detail page already judged "ended" session-aware (effectiveEventEnd, chess-hub fix) while
+  // every card, listing and JSON-LD eventStatus read ends_at alone — 33 live programmes showed
+  // «منتهية» with sessions still ahead (#120). The write path now keeps ends_at in step; this is
+  // the belt for any row that reaches the build with a stale window.
+  const latestSessionEnd = latestOfficialSessionEnd(raw);
+  const statusEndsAt = latestSessionEnd && latestSessionEnd.at > new Date(raw.ends_at).getTime()
+    ? latestSessionEnd.value
+    : raw.ends_at;
   const status = sourceGroup === 'ended'
     ? { key: 'ended', label: 'منتهية' }
-    : getEventStatus(raw.starts_at, raw.ends_at, Date.now(), kind);
+    : getEventStatus(raw.starts_at, statusEndsAt, Date.now(), kind);
   const audiences = classifyAudiences({ ...previous, ...raw });
   const rawSessions = detailedSessionsFrom(raw.sessions);
   const previousSessions = detailedSessionsFrom(previous.sessions);
