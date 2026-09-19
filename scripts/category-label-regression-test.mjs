@@ -5,6 +5,7 @@ import { load } from 'cheerio';
 import {
   CATEGORY_KEYS,
   CATEGORY_TAXONOMY,
+  categoryDefinition,
   canonicalCategorySlug,
   normalizeCategoryAlias,
   normalizeEventCategory,
@@ -12,6 +13,25 @@ import {
 } from './category-taxonomy.mjs';
 
 const root = process.cwd();
+
+// 2026-09-19 — the fallback is not a category. Visit Saudi labels the same rows "/ Friends" as
+// often as "/ Families", and only the Families spellings were listed, so 27 live rows — 12 comedy
+// shows, 9 concerts, 3 sports, 3 entertainment — fell through to the community-occasions fallback
+// and were filed next to national days and honouring ceremonies. Nobody browsing comedy could
+// find them. A raw_category that matches no alias is a gap in the taxonomy, not a community
+// occasion, so the unmapped set is a ratchet: it may shrink, never grow.
+{
+  const catalogEvents = JSON.parse(fs.readFileSync(path.join(process.cwd(), 'data', 'events_catalog.json'), 'utf8')).events || [];
+  const unmapped = catalogEvents.filter((event) => !categoryDefinition(event.raw_category, event));
+  const labels = [...new Set(unmapped.map((event) => String(event.raw_category)))].sort();
+  const baseline = Number(process.env.EVENTLIVE_UNMAPPED_CATEGORY_BASELINE || 2);
+  assert.ok(
+    unmapped.length <= baseline,
+    `raw_category labels matching no alias grew from ${baseline} to ${unmapped.length}: ${labels.join(', ')}`
+  );
+  console.log(`UNMAPPED_CATEGORY_OK ${unmapped.length}/${baseline}${labels.length ? ` (${labels.join(', ')})` : ''}`);
+}
+
 const readJson = (relativePath) => JSON.parse(fs.readFileSync(path.join(root, relativePath), 'utf8'));
 const MINIMUM_CATALOG_EVENTS = 490;
 

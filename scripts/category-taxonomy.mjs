@@ -10,7 +10,7 @@ export const CATEGORY_TAXONOMY = Object.freeze([
     label_ar: 'المعارض والمؤتمرات',
     label_en: 'Exhibitions & Conferences',
     aliases: [
-      'Exhibitions & Conferences', 'exhibition', 'Exhibition / Families', 'conference', 'Forum', 'Summit',
+      'Exhibitions & Conferences', 'exhibition', 'Exhibition / Families', 'conference', 'Conferences', 'Forum', 'Summit',
       'venue event', 'مؤتمرات وملتقيات', 'auction', 'career fair', 'لقاء', 'لقاء حواري', 'ملتقى', 'منتدى',
       'مؤتمر', 'ندوة'
     ]
@@ -21,7 +21,13 @@ export const CATEGORY_TAXONOMY = Object.freeze([
     label_en: 'Entertainment & Family',
     aliases: [
       'family', 'entertainment', 'festival', 'Concerts & Shows / Families', 'Entertainment / Families',
-      'Comedy Show / Families', 'Family & Kids', 'Festivals & Celebrations', 'entertainment families',
+      'Comedy Show / Families',
+      // 2026-09-19: Visit Saudi labels the same rows '/ Friends' as often as '/ Families'. Only the
+      // Families spellings were listed, so 27 live rows — 12 comedy shows, 9 concerts, 3 sports and
+      // 3 entertainment — fell through to the community-occasions fallback and were filed next to
+      // national days and honouring ceremonies. Nobody browsing comedy could find them.
+      'Comedy Show / Friends', 'Concerts & Shows / Friends', 'Entertainment / Friends',
+      'Friends / Entertainment', 'Farmers Market / Families', 'Family & Kids', 'Festivals & Celebrations', 'entertainment families',
       'families', 'Immersive Experience', 'music', 'فعالية فوانيس'
     ]
   },
@@ -31,7 +37,8 @@ export const CATEGORY_TAXONOMY = Object.freeze([
     label_en: 'Culture & Arts',
     aliases: [
       'culture', 'culture and arts', 'cultural initiative', 'performance', 'Culture & Community', 'Film',
-      'Culture & History / Families', 'culture arts', 'architecture design festival', 'ثقافة وإبداع'
+      'Culture & History / Families',
+      'Cinema / Families', 'culture arts', 'architecture design festival', 'ثقافة وإبداع'
     ]
   },
   {
@@ -40,7 +47,7 @@ export const CATEGORY_TAXONOMY = Object.freeze([
     label_en: 'Education & Training',
     aliases: [
       'learning', 'skills program', 'education training', 'workshop', 'summer program', 'application deadline',
-      'university event', 'Workshop, Explorers Thematic', 'academic event', 'training', 'Skills', 'دورة تدريبية',
+      'university event', 'public university event', 'Workshop, Explorers Thematic', 'academic event', 'training', 'Skills', 'دورة تدريبية',
       'ورش عمل', 'ورشة عمل'
     ]
   },
@@ -55,7 +62,7 @@ export const CATEGORY_TAXONOMY = Object.freeze([
       'الاتصالات وتقنية المعلومات', 'معسكر - أنظمة الشبكات', 'معسكر - الأمن السيبراني',
       'معسكر - الحوسبة السحابية', 'معسكر - تطوير البرمجيات والتطبيقات',
       'معسكر - علم البيانات والذكاء الاصطناعي', 'معسكر - هندسة البرمجيات',
-      'معسكر - هندسة الميكاترونكس'
+      'معسكر - هندسة الميكاترونكس', 'معسكر - البرامج التنفيذية'
     ]
   },
   {
@@ -63,7 +70,8 @@ export const CATEGORY_TAXONOMY = Object.freeze([
     label_ar: 'الرياضة والمغامرات',
     label_en: 'Sports & Outdoors',
     aliases: [
-      'sports', 'Entertainment & Sports', 'sports and community', 'Sports / Families', 'Adventure / Families',
+      'sports', 'Entertainment & Sports', 'sports and community', 'Sports / Families',
+      'Sports / Friends', 'Adventure / Families',
       'football match', 'sports championship'
     ]
   },
