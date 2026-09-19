@@ -43,7 +43,27 @@ export const EVENT_CANONICAL_ALIASES = new Map([
   ['ended-visit-saudi-calendar-pdf-ساوث-ويست-الكاوبوي-20260607-4a38d19e', 'event-ساوث-ويست-الكاوبوي'],
   ['ended-visit-saudi-calendar-pdf-كايف-المزرعة-20260524-4a38d19e', 'event-كايف-المزرعة'],
   // Same PDF, same date, same event — one row misspells "الأبطال".
-  ['ended-visit-saudi-calendar-pdf-wwe-ليلة-اابطال-20260627-4a38d19e', 'ended-visit-saudi-calendar-pdf-wwe-ليلة-الأبطال-20260627-4a38d19e']
+  ['ended-visit-saudi-calendar-pdf-wwe-ليلة-اابطال-20260627-4a38d19e', 'ended-visit-saudi-calendar-pdf-wwe-ليلة-الأبطال-20260627-4a38d19e'],
+
+  // 2026-09-19 — cross-source pairs found by the Event Quality Lab (semantic
+  // duplicate judgement over 222 candidate pairs, each of these then confirmed
+  // by hand from both records' city, dates, venue and source). They survive
+  // buildEvents()'s dedupe because the titles differ by an edition suffix
+  // ("Cityscape Global" / "Cityscape Global 2026"), an acronym ("(GAIN)",
+  // "(GFEAI)", "(FII 10)"), a brand word ("FIBO" / "FIBO Arabia") or a
+  // CMS leftover ("Duplicate of …"). Primary = the organiser's own or the
+  // more specific source/venue; the aggregator row becomes the alias.
+  ['event-cityscape-global', 'event-cityscape-global-2026'],
+  ['event-future-investment-initiative', 'event-future-investment-initiative-fii-10'],
+  ['event-duplicate-of-cloud-computing-essentials-أساسيات-الحوسبة-السحابية', 'event-cloud-computing-essentials-أساسيات-الحوسبة-السحابية'],
+  ['event-fibo-arabia-2026', 'event-fibo-2026'],
+  ['event-global-forum-on-the-ethics-of-ai-gfeai', 'event-global-forum-on-the-ethics-of-ai'],
+  ['event-global-proptech-summit', 'event-global-proptech-summit-2026'],
+  ['event-saudi-international-falcons-hunting-exhibition', 'event-saudi-falcons-hunting-exhibition'],
+  ['event-global-ai-summit-gain', 'event-global-ai-summit'],
+  // Same PDF, same season, same village — one row drops the hamza and lands
+  // in Taif; Al Atawlah is in Al Baha.
+  ['event-قرية-الاطاولة-التراثية', 'event-قرية-الأطاولة-التراثية']
 ]);
 
 /** dist-relative page paths (Arabic surface) of every aliased duplicate. */
