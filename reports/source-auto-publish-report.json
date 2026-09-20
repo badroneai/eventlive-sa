@@ -1,18 +1,18 @@
 {
-  "published_at": "2026-09-19T13:53:46.030Z",
+  "published_at": "2026-09-20T07:55:25.099Z",
   "dry_run": false,
   "include_partner": true,
   "source_candidates": "data/source_candidates.json",
   "events_catalog": "data/events_catalog.json",
-  "candidates_seen": 480,
+  "candidates_seen": 457,
   "totals": {
-    "candidates_seen": 480,
-    "published": 1,
-    "linked_existing": 443,
+    "candidates_seen": 457,
+    "published": 2,
+    "linked_existing": 419,
     "blocked": 36,
     "duplicate_review_alerts": 6,
     "category_fallback_alerts": 0,
-    "reconciled": 444,
+    "reconciled": 421,
     "session_windows_reconciled": 0
   },
   "session_window_changes": [],
@@ -128,9 +128,14 @@
   ],
   "published": [
     {
-      "candidate_id": "candidate-misk-hub-programs-application-deadline-discover-your-path-in-collaboration-with-nahj-assoc-20261130-46d41c09",
-      "event_id": "event-application-deadline-discover-your-path-in-collaboration-with-nahj-assoc",
-      "title": "Application deadline: Discover Your Path (in collaboration with Nahj Association)"
+      "candidate_id": "candidate-umm-al-qura-events-الارشاد-الأكاديمي-ومهارات-دعم-الطلبة-20260920-cca82743",
+      "event_id": "event-الارشاد-الأكاديمي-ومهارات-دعم-الطلبة",
+      "title": "الارشاد الأكاديمي ومهارات دعم الطلبة"
+    },
+    {
+      "candidate_id": "candidate-umm-al-qura-events-دورة-تدريبية-بعنوان-إدارة-الجودة-9001-20260922-63429459",
+      "event_id": "event-دورة-تدريبية-بعنوان-إدارة-الجودة-9001",
+      "title": "دورة تدريبية بعنوان إدارة الجودة 9001"
     }
   ],
   "linked_existing": [
@@ -837,192 +842,6 @@
       "reason": "already linked to catalog event"
     },
     {
-      "candidate_id": "candidate-ithra-events-games-hub-20260917-fb83124c",
-      "event_id": "event-games-hub",
-      "title": "Games Hub",
-      "reason": "already linked to catalog event"
-    },
-    {
-      "candidate_id": "candidate-saudi-university-events-3v3-basketball-tournament-20260918-d5c33880",
-      "event_id": "event-3v3-basketball-tournament",
-      "title": "3v3 Basketball Tournament",
-      "reason": "already linked to catalog event"
-    },
-    {
-      "candidate_id": "candidate-ithra-events-aramcorama-exhibit-20260919-854df5c1",
-      "event_id": "event-aramcorama-exhibit",
-      "title": "Aramcorama Exhibit",
-      "reason": "already linked to catalog event"
-    },
-    {
-      "candidate_id": "candidate-ithra-events-bedayat-beginnings-of-saudi-art-movement-20260919-e0a239ef",
-      "event_id": "event-bedayat-beginnings-of-saudi-art-movement",
-      "title": "Bedayat: Beginnings of Saudi Art Movement",
-      "reason": "already linked to catalog event"
-    },
-    {
-      "candidate_id": "candidate-ithra-events-echoes-of-the-familiar-20260919-cc43c2bd",
-      "event_id": "event-echoes-of-the-familiar",
-      "title": "Echoes of the Familiar",
-      "reason": "already linked to catalog event"
-    },
-    {
-      "candidate_id": "candidate-ithra-events-in-praise-of-the-artisan-20260919-14781307",
-      "event_id": "event-in-praise-of-the-artisan",
-      "title": "In Praise of the Artisan",
-      "reason": "already linked to catalog event"
-    },
-    {
-      "candidate_id": "candidate-ithra-events-ithra-art-prize-exhibition-20260919-83c2ab55",
-      "event_id": "event-ithra-art-prize-exhibition",
-      "title": "Ithra Art Prize Exhibition",
-      "reason": "already linked to catalog event"
-    },
-    {
-      "candidate_id": "candidate-ithra-events-printing-house-20260919-e56f4f89",
-      "event_id": "event-printing-house",
-      "title": "Printing House",
-      "reason": "already linked to catalog event"
-    },
-    {
-      "candidate_id": "candidate-ithra-events-rehlaat-exhibit-20260919-b9d1c3e5",
-      "event_id": "event-rehlaat-exhibit",
-      "title": "Rehlaat Exhibit",
-      "reason": "already linked to catalog event"
-    },
-    {
-      "candidate_id": "candidate-ithra-events-tafasahu-make-room-20260919-562bc61d",
-      "event_id": "event-tafasahu-make-room",
-      "title": "Tafasahu: Make Room",
-      "reason": "already linked to catalog event"
-    },
-    {
-      "candidate_id": "candidate-ithra-events-tinkering-stations-20260919-5a2c4c0e",
-      "event_id": "event-tinkering-stations",
-      "title": "Tinkering Stations",
-      "reason": "already linked to catalog event"
-    },
-    {
-      "candidate_id": "candidate-ithra-events-childrens-art-studio-20260919-2bf92d17",
-      "event_id": "event-childrens-art-studio",
-      "title": "Children's Art Studio",
-      "reason": "already linked to catalog event"
-    },
-    {
-      "candidate_id": "candidate-ithra-events-open-studio-3d-printer-20260919-95155c11",
-      "event_id": "event-open-studio-3d-printer",
-      "title": "Open Studio: 3D printer",
-      "reason": "already linked to catalog event"
-    },
-    {
-      "candidate_id": "candidate-ithra-events-open-studio-dtf-printer-and-oven-for-textiles-20260919-9bf85740",
-      "event_id": "event-open-studio-dtf-printer-and-oven-for-textiles",
-      "title": "Open Studio: DTF Printer and oven for Textiles",
-      "reason": "already linked to catalog event"
-    },
-    {
-      "candidate_id": "candidate-ithra-events-open-studio-letterpress-printing-machine-20260919-08813ddd",
-      "event_id": "event-open-studio-letterpress-printing-machine",
-      "title": "Open Studio: Letterpress Printing Machine",
-      "reason": "already linked to catalog event"
-    },
-    {
-      "candidate_id": "candidate-ithra-events-open-studio-silkscreen-20260919-06cda456",
-      "event_id": "event-open-studio-silkscreen",
-      "title": "Open Studio: Silkscreen",
-      "reason": "already linked to catalog event"
-    },
-    {
-      "candidate_id": "candidate-ithra-events-childrens-museum-story-time-20260919-ada8b9db",
-      "event_id": "event-childrens-museum-story-time",
-      "title": "Children's Museum Story Time",
-      "reason": "already linked to catalog event"
-    },
-    {
-      "candidate_id": "candidate-ithra-events-the-art-of-looking-at-art-20260919-70b4c472",
-      "event_id": "event-the-art-of-looking-at-art",
-      "title": "The Art of Looking at Art",
-      "reason": "already linked to catalog event"
-    },
-    {
-      "candidate_id": "candidate-ithra-events-workshop-at-the-library-20260919-7db9eb13",
-      "event_id": "event-workshop-at-the-library",
-      "title": "Workshop at the Library",
-      "reason": "already linked to catalog event"
-    },
-    {
-      "candidate_id": "candidate-ithra-events-family-challenges-20260919-3726c868",
-      "event_id": "event-family-challenges",
-      "title": "Family Challenges",
-      "reason": "already linked to catalog event"
-    },
-    {
-      "candidate_id": "candidate-ithra-events-imagination-oasis-20260919-104f8079",
-      "event_id": "event-imagination-oasis",
-      "title": "Imagination Oasis",
-      "reason": "already linked to catalog event"
-    },
-    {
-      "candidate_id": "candidate-ithra-events-ithra-members-tour-20260919-5011b841",
-      "event_id": "event-ithra-members-tour",
-      "title": "Ithra Members Tour",
-      "reason": "already linked to catalog event"
-    },
-    {
-      "candidate_id": "candidate-ithra-events-ithra-public-tour-arabic-20260919-011084c2",
-      "event_id": "event-ithra-public-tour-arabic",
-      "title": "Ithra Public Tour (Arabic)",
-      "reason": "already linked to catalog event"
-    },
-    {
-      "candidate_id": "candidate-ithra-events-creative-leadership-and-the-making-of-cultural-products-20260919-8d9fdc9f",
-      "event_id": "event-creative-leadership-and-the-making-of-cultural-products",
-      "title": "Creative Leadership and the Making of Cultural Products",
-      "reason": "already linked to catalog event"
-    },
-    {
-      "candidate_id": "candidate-ithra-events-trolley-show-20260919-56b483e3",
-      "event_id": "event-trolley-show",
-      "title": "Trolley Show",
-      "reason": "already linked to catalog event"
-    },
-    {
-      "candidate_id": "candidate-visit-saudi-calendar-rasha-rizk-live-in-jeddah-20260919-54d15938",
-      "event_id": "event-rasha-rizk-live-in-jeddah",
-      "title": "Rasha Rizk Live in Jeddah",
-      "reason": "already linked to catalog event"
-    },
-    {
-      "candidate_id": "candidate-ithra-events-museum-story-time-20260919-1104734c",
-      "event_id": "event-museum-story-time",
-      "title": "Museum Story Time",
-      "reason": "already linked to catalog event"
-    },
-    {
-      "candidate_id": "candidate-ithra-events-spot-of-inspiration-20260919-5bac584c",
-      "event_id": "event-spot-of-inspiration",
-      "title": "Spot of Inspiration",
-      "reason": "already linked to catalog event"
-    },
-    {
-      "candidate_id": "candidate-ithra-events-ithra-public-tour-english-20260919-bda2ffd1",
-      "event_id": "event-ithra-public-tour-english",
-      "title": "Ithra Public Tour (English)",
-      "reason": "already linked to catalog event"
-    },
-    {
-      "candidate_id": "candidate-visit-saudi-calendar-3a-ka3ba-20260919-7fe781e9",
-      "event_id": "event-3a-ka3ba-2",
-      "title": "3a Ka3ba",
-      "reason": "already linked to catalog event"
-    },
-    {
-      "candidate_id": "candidate-visit-saudi-calendar-fill-in-the-blank-in-jeddah-20260919-17c10389",
-      "event_id": "event-fill-in-the-blank-in-jeddah",
-      "title": "Fill in the Blank in Jeddah",
-      "reason": "already linked to catalog event"
-    },
-    {
       "candidate_id": "candidate-dhahran-expo-calendar-gulf-steel-storage-tank-refinery-expo-20260920-18d15b29",
       "event_id": "event-gulf-steel-storage-tank-refinery-expo",
       "title": "Gulf Steel, Storage Tank & Refinery Expo",
@@ -1032,18 +851,6 @@
       "candidate_id": "candidate-riyadh-city-events-facility-management-conference-exhibition-20260920-ed083b67",
       "event_id": "event-facility-management-conference-exhibition",
       "title": "Facility Management Conference & Exhibition",
-      "reason": "already linked to catalog event"
-    },
-    {
-      "candidate_id": "candidate-hayy-jameel-events-hayy-cinema-vhs-tape-replaced-2023-20260920-94c0458c",
-      "event_id": "event-hayy-cinema-vhs-tape-replaced-2023",
-      "title": "Hayy Cinema | VHS Tape Replaced (2023)",
-      "reason": "already linked to catalog event"
-    },
-    {
-      "candidate_id": "candidate-hayy-jameel-events-hayy-cinema-othman-2022-20260920-ec608ec2",
-      "event_id": "event-hayy-cinema-othman-2022",
-      "title": "Hayy Cinema | Othman (2022)",
       "reason": "already linked to catalog event"
     },
     {
@@ -1068,6 +875,84 @@
       "candidate_id": "candidate-tuwaiq-academy-bootcamps-معسكر-هندسة-الحوسبة-السحابية-المتقدمة-باستخدام-google-cloud-20260920-c1ed5d59",
       "event_id": "event-معسكر-هندسة-الحوسبة-السحابية-المتقدمة-باستخدام-google-cloud",
       "title": "معسكر هندسة الحوسبة السحابية المتقدمة باستخدام Google Cloud",
+      "reason": "already linked to catalog event"
+    },
+    {
+      "candidate_id": "candidate-ithra-events-aramcorama-exhibit-20260921-854df5c1",
+      "event_id": "event-aramcorama-exhibit",
+      "title": "Aramcorama Exhibit",
+      "reason": "already linked to catalog event"
+    },
+    {
+      "candidate_id": "candidate-ithra-events-bedayat-beginnings-of-saudi-art-movement-20260921-e0a239ef",
+      "event_id": "event-bedayat-beginnings-of-saudi-art-movement",
+      "title": "Bedayat: Beginnings of Saudi Art Movement",
+      "reason": "already linked to catalog event"
+    },
+    {
+      "candidate_id": "candidate-ithra-events-echoes-of-the-familiar-20260921-cc43c2bd",
+      "event_id": "event-echoes-of-the-familiar",
+      "title": "Echoes of the Familiar",
+      "reason": "already linked to catalog event"
+    },
+    {
+      "candidate_id": "candidate-ithra-events-in-praise-of-the-artisan-20260921-14781307",
+      "event_id": "event-in-praise-of-the-artisan",
+      "title": "In Praise of the Artisan",
+      "reason": "already linked to catalog event"
+    },
+    {
+      "candidate_id": "candidate-ithra-events-ithra-art-prize-exhibition-20260921-83c2ab55",
+      "event_id": "event-ithra-art-prize-exhibition",
+      "title": "Ithra Art Prize Exhibition",
+      "reason": "already linked to catalog event"
+    },
+    {
+      "candidate_id": "candidate-ithra-events-rehlaat-exhibit-20260921-b9d1c3e5",
+      "event_id": "event-rehlaat-exhibit",
+      "title": "Rehlaat Exhibit",
+      "reason": "already linked to catalog event"
+    },
+    {
+      "candidate_id": "candidate-ithra-events-tafasahu-make-room-20260921-562bc61d",
+      "event_id": "event-tafasahu-make-room",
+      "title": "Tafasahu: Make Room",
+      "reason": "already linked to catalog event"
+    },
+    {
+      "candidate_id": "candidate-ithra-events-tinkering-stations-20260921-5a2c4c0e",
+      "event_id": "event-tinkering-stations",
+      "title": "Tinkering Stations",
+      "reason": "already linked to catalog event"
+    },
+    {
+      "candidate_id": "candidate-ithra-events-ithra-public-tour-arabic-20260921-011084c2",
+      "event_id": "event-ithra-public-tour-arabic",
+      "title": "Ithra Public Tour (Arabic)",
+      "reason": "already linked to catalog event"
+    },
+    {
+      "candidate_id": "candidate-ithra-events-spot-of-inspiration-20260921-5bac584c",
+      "event_id": "event-spot-of-inspiration",
+      "title": "Spot of Inspiration",
+      "reason": "already linked to catalog event"
+    },
+    {
+      "candidate_id": "candidate-ithra-events-childrens-museum-story-time-20260921-ada8b9db",
+      "event_id": "event-childrens-museum-story-time",
+      "title": "Children's Museum Story Time",
+      "reason": "already linked to catalog event"
+    },
+    {
+      "candidate_id": "candidate-ithra-events-ithra-public-tour-english-20260921-bda2ffd1",
+      "event_id": "event-ithra-public-tour-english",
+      "title": "Ithra Public Tour (English)",
+      "reason": "already linked to catalog event"
+    },
+    {
+      "candidate_id": "candidate-ithra-events-childrens-art-studio-20260921-2bf92d17",
+      "event_id": "event-childrens-art-studio",
+      "title": "Children's Art Studio",
       "reason": "already linked to catalog event"
     },
     {
@@ -1101,6 +986,12 @@
       "reason": "already linked to catalog event"
     },
     {
+      "candidate_id": "candidate-ithra-events-imagination-oasis-20260921-104f8079",
+      "event_id": "event-imagination-oasis",
+      "title": "Imagination Oasis",
+      "reason": "already linked to catalog event"
+    },
+    {
       "candidate_id": "candidate-saudi-university-events-discover-saudi-arabia-culture-heritage-jeddah-20260921-f02edfdc",
       "event_id": "event-discover-saudi-arabia-culture-heritage-jeddah",
       "title": "Discover Saudi Arabia: Culture, Heritage & Jeddah",
@@ -1110,6 +1001,12 @@
       "candidate_id": "candidate-tuwaiq-academy-bootcamps-معسكر-قيادة-التحول-بالذكاء-الاصطناعي-20260921-d4b1787c",
       "event_id": "event-معسكر-قيادة-التحول-بالذكاء-الاصطناعي",
       "title": "معسكر قيادة التحول بالذكاء الاصطناعي",
+      "reason": "already linked to catalog event"
+    },
+    {
+      "candidate_id": "candidate-ithra-events-trolley-show-20260921-56b483e3",
+      "event_id": "event-trolley-show",
+      "title": "Trolley Show",
       "reason": "already linked to catalog event"
     },
     {
@@ -1293,6 +1190,12 @@
       "reason": "already linked to catalog event"
     },
     {
+      "candidate_id": "candidate-ithra-events-museum-story-time-20260924-1104734c",
+      "event_id": "event-museum-story-time",
+      "title": "Museum Story Time",
+      "reason": "already linked to catalog event"
+    },
+    {
       "candidate_id": "candidate-mdlbeast-events-beast-house-20260924-83049a2a",
       "event_id": "event-beast-house",
       "title": "Beast House",
@@ -1401,6 +1304,36 @@
       "reason": "already linked to catalog event"
     },
     {
+      "candidate_id": "candidate-ithra-events-open-studio-3d-printer-20260928-95155c11",
+      "event_id": "event-open-studio-3d-printer",
+      "title": "Open Studio: 3D printer",
+      "reason": "already linked to catalog event"
+    },
+    {
+      "candidate_id": "candidate-ithra-events-open-studio-dtf-printer-and-oven-for-textiles-20260928-9bf85740",
+      "event_id": "event-open-studio-dtf-printer-and-oven-for-textiles",
+      "title": "Open Studio: DTF Printer and oven for Textiles",
+      "reason": "already linked to catalog event"
+    },
+    {
+      "candidate_id": "candidate-ithra-events-open-studio-letterpress-printing-machine-20260928-08813ddd",
+      "event_id": "event-open-studio-letterpress-printing-machine",
+      "title": "Open Studio: Letterpress Printing Machine",
+      "reason": "already linked to catalog event"
+    },
+    {
+      "candidate_id": "candidate-ithra-events-open-studio-silkscreen-20260928-06cda456",
+      "event_id": "event-open-studio-silkscreen",
+      "title": "Open Studio: Silkscreen",
+      "reason": "already linked to catalog event"
+    },
+    {
+      "candidate_id": "candidate-ithra-events-printing-house-20260928-e56f4f89",
+      "event_id": "event-printing-house",
+      "title": "Printing House",
+      "reason": "already linked to catalog event"
+    },
+    {
       "candidate_id": "candidate-riyadh-city-events-icegov-international-conference-on-electronic-governance-20260928-db0f9390",
       "event_id": "event-icegov-international-conference-on-electronic-governance",
       "title": "ICEGOV – International Conference on Electronic Governance",
@@ -1434,6 +1367,12 @@
       "candidate_id": "candidate-riyadh-city-events-e3-customer-experience-conference-20260929-a0c960ea",
       "event_id": "event-e3-customer-experience-conference",
       "title": "E3 Customer Experience Conference",
+      "reason": "already linked to catalog event"
+    },
+    {
+      "candidate_id": "candidate-ithra-events-family-challenges-20260929-3726c868",
+      "event_id": "event-family-challenges",
+      "title": "Family Challenges",
       "reason": "already linked to catalog event"
     },
     {
@@ -1596,6 +1535,12 @@
       "candidate_id": "candidate-ithra-events-wind-energy-20261003-03067c4b",
       "event_id": "event-wind-energy",
       "title": "Wind Energy",
+      "reason": "already linked to catalog event"
+    },
+    {
+      "candidate_id": "candidate-ithra-events-workshop-at-the-library-20261003-7db9eb13",
+      "event_id": "event-workshop-at-the-library",
+      "title": "Workshop at the Library",
       "reason": "already linked to catalog event"
     },
     {
@@ -1881,18 +1826,6 @@
       "reason": "already linked to catalog event"
     },
     {
-      "candidate_id": "candidate-hayy-jameel-events-hayy-cinema-harka-2022-20261020-23779a2d",
-      "event_id": "event-hayy-cinema-harka-2022",
-      "title": "Hayy Cinema | Harka (2022)",
-      "reason": "already linked to catalog event"
-    },
-    {
-      "candidate_id": "candidate-hayy-jameel-events-hayy-cinema-souad-2020-20261020-b2d82efc",
-      "event_id": "event-hayy-cinema-souad-2020",
-      "title": "Hayy Cinema | Souad (2020)",
-      "reason": "already linked to catalog event"
-    },
-    {
       "candidate_id": "candidate-riyadh-city-events-mipim-middle-east-20261020-02b71699",
       "event_id": "event-mipim-middle-east",
       "title": "MIPIM Middle East",
@@ -2151,12 +2084,6 @@
       "reason": "already linked to catalog event"
     },
     {
-      "candidate_id": "candidate-hayy-jameel-events-hayy-cinema-panel-discussion-the-golden-palm-film-programme-20261113-93241e84",
-      "event_id": "event-hayy-cinema-panel-discussion-the-golden-palm-film-programme",
-      "title": "Hayy Cinema | Panel Discussion: The Golden Palm Film Programme",
-      "reason": "already linked to catalog event"
-    },
-    {
       "candidate_id": "candidate-kau-events-the-2nd-international-conference-of-sustainability-and-quality-of-life-20261115-1d73f330",
       "event_id": "event-the-2nd-international-conference-of-sustainability-and-quality-of-life",
       "title": "The 2nd International Conference of Sustainability and Quality of Life",
@@ -2220,30 +2147,6 @@
       "candidate_id": "candidate-riyadh-city-events-king-abdulaziz-falconry-festival-20261117-8da1dabe",
       "event_id": "event-king-abdulaziz-falconry-festival",
       "title": "King Abdulaziz Falconry Festival",
-      "reason": "already linked to catalog event"
-    },
-    {
-      "candidate_id": "candidate-hayy-jameel-events-hayy-cinema-my-vibe-2023-20261120-665b1c9f",
-      "event_id": "event-hayy-cinema-my-vibe-2023",
-      "title": "Hayy Cinema | My Vibe (2023)",
-      "reason": "already linked to catalog event"
-    },
-    {
-      "candidate_id": "candidate-hayy-jameel-events-hayy-cinema-nour-shams-2021-20261120-0e2d9b94",
-      "event_id": "event-hayy-cinema-nour-shams-2021",
-      "title": "Hayy Cinema | Nour Shams (2021)",
-      "reason": "already linked to catalog event"
-    },
-    {
-      "candidate_id": "candidate-hayy-jameel-events-hayy-cinema-19b-2022-20261120-685132e9",
-      "event_id": "event-hayy-cinema-19b-2022",
-      "title": "Hayy Cinema | 19B (2022)",
-      "reason": "already linked to catalog event"
-    },
-    {
-      "candidate_id": "candidate-hayy-jameel-events-hayy-cinema-x-rsh-street-art-festival-meet-the-crew-of-nour-shams-my-vib-20261120-9fd86cc1",
-      "event_id": "event-hayy-cinema-x-rsh-street-art-festival-meet-the-crew-of-nour-shams-my-vib",
-      "title": "Hayy Cinema x RSH Street Art Festival | Meet the Crew of 'Nour Shams' & 'My Vibe' (Screenings + Q&A)",
       "reason": "already linked to catalog event"
     },
     {
@@ -2328,6 +2231,12 @@
       "candidate_id": "candidate-misk-hub-programs-application-deadline-discover-your-path-20261130-1bbce22f",
       "event_id": "event-application-deadline-discover-your-path",
       "title": "Application deadline: Discover Your Path",
+      "reason": "already linked to catalog event"
+    },
+    {
+      "candidate_id": "candidate-misk-hub-programs-application-deadline-discover-your-path-in-collaboration-with-nahj-assoc-20261130-46d41c09",
+      "event_id": "event-application-deadline-discover-your-path-in-collaboration-with-nahj-assoc",
+      "title": "Application deadline: Discover Your Path (in collaboration with Nahj Association)",
       "reason": "already linked to catalog event"
     },
     {
@@ -2562,54 +2471,6 @@
       "candidate_id": "candidate-rfecc-whats-on-china-homelife-saudi-arabia-2026-20261220-f2ff78ec",
       "event_id": "event-china-homelife-saudi-arabia-2026",
       "title": "China Homelife Saudi Arabia 2026",
-      "reason": "already linked to catalog event"
-    },
-    {
-      "candidate_id": "candidate-hayy-jameel-events-hayy-cinema-youssef-chahine-retrospective-return-of-the-prodigal-son-197-20261220-81969ae5",
-      "event_id": "event-hayy-cinema-youssef-chahine-retrospective-return-of-the-prodigal-son-197",
-      "title": "Hayy Cinema | Youssef Chahine Retrospective: Return of the Prodigal Son (1976)",
-      "reason": "already linked to catalog event"
-    },
-    {
-      "candidate_id": "candidate-hayy-jameel-events-hayy-cinema-youssef-chahine-retrospective-adieu-bonaparte-1985-20261220-1003d420",
-      "event_id": "event-hayy-cinema-youssef-chahine-retrospective-adieu-bonaparte-1985",
-      "title": "Hayy Cinema | Youssef Chahine Retrospective: Adieu Bonaparte (1985)",
-      "reason": "already linked to catalog event"
-    },
-    {
-      "candidate_id": "candidate-hayy-jameel-events-hayy-cinema-youssef-chahine-retrospective-alexandria-again-and-forever-1-20261220-5195e0bc",
-      "event_id": "event-hayy-cinema-youssef-chahine-retrospective-alexandria-again-and-forever-1",
-      "title": "Hayy Cinema | Youssef Chahine Retrospective: Alexandria Again and Forever (1989)",
-      "reason": "already linked to catalog event"
-    },
-    {
-      "candidate_id": "candidate-hayy-jameel-events-hayy-cinema-youssef-chahine-retrospective-alexandria-why-1979-20261220-3d6a538a",
-      "event_id": "event-hayy-cinema-youssef-chahine-retrospective-alexandria-why-1979",
-      "title": "Hayy Cinema | Youssef Chahine Retrospective: Alexandria, Why? (1979)",
-      "reason": "already linked to catalog event"
-    },
-    {
-      "candidate_id": "candidate-hayy-jameel-events-hayy-cinema-howls-moving-castle-2004-20261220-6b717263",
-      "event_id": "event-hayy-cinema-howls-moving-castle-2004",
-      "title": "Hayy Cinema | Howl's Moving Castle (2004)",
-      "reason": "already linked to catalog event"
-    },
-    {
-      "candidate_id": "candidate-hayy-jameel-events-hayy-cinema-the-boy-and-the-heron-2023-20261220-3f8c4280",
-      "event_id": "event-hayy-cinema-the-boy-and-the-heron-2023",
-      "title": "Hayy Cinema | The Boy and the Heron (2023)",
-      "reason": "already linked to catalog event"
-    },
-    {
-      "candidate_id": "candidate-hayy-jameel-events-hayy-cinema-spirited-away-2001-20261220-102669e4",
-      "event_id": "event-hayy-cinema-spirited-away-2001",
-      "title": "Hayy Cinema | Spirited Away (2001)",
-      "reason": "already linked to catalog event"
-    },
-    {
-      "candidate_id": "candidate-hayy-jameel-events-hayy-cinema-aflamna-20261220-6a9439e4",
-      "event_id": "event-hayy-cinema-aflamna-2",
-      "title": "Hayy Cinema | AFLAMNA",
       "reason": "already linked to catalog event"
     },
     {

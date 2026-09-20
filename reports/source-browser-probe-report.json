@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-19T13:31:42.172Z",
+  "generated_at": "2026-09-20T07:48:02.572Z",
   "source_registry": "data/source_registry.json",
   "collection_report": "reports/source-collection-report.json",
   "output_dir": "data/raw/browser-probes",
@@ -7,18 +7,18 @@
     "selected_ids": [],
     "scope": "priority",
     "limit": 8,
-    "probed_this_run": 8,
-    "fresh_results_available": 8,
+    "probed_this_run": 4,
+    "fresh_results_available": 9,
     "wait_ms": 4500,
     "timeout_ms": 30000,
     "failure_cooldown_hours": 72
   },
   "methodology": "Browser-level probe inspired by cafe platform work: classify fetchability, hydration payloads, network APIs, structured HTML, rendered DOM, and policy-protected lanes before writing extractors.",
   "totals": {
-    "probed": 8,
-    "browser_network_api": 0,
+    "probed": 9,
+    "browser_network_api": 1,
     "browser_hydration_payload": 0,
-    "rendered_html_candidates": 2,
+    "rendered_html_candidates": 3,
     "blocked_or_protected": 0,
     "policy_skipped": 0
   },
@@ -132,231 +132,8 @@
       "network_sample": []
     },
     {
-      "id": "eye-of-riyadh-events",
-      "probed_at": "2026-09-19T13:41:05.436Z",
-      "name": "Eye of Riyadh Events",
-      "priority": 12,
-      "url": "https://www.eyeofriyadh.com/events/",
-      "final_url": "https://www.eyeofriyadh.com/events/",
-      "status": "ok",
-      "http_status": 200,
-      "navigation_error": "",
-      "duration_ms": 7703,
-      "classification": "rendered-html-candidates",
-      "next_action": "اكتب extractor مرن من DOM بعد الرندر أو حسن selector الحالي.",
-      "title": "Events | Exhibitions |Festivals | Seminars Riyadh Saudi Arabia",
-      "text_bytes": 6428,
-      "html_bytes": 145076,
-      "html_snapshot": "data/raw/browser-probes/eye-of-riyadh-events-2026-09-19T13-31-42-172Z.html",
-      "screenshot": "data/raw/browser-probes/eye-of-riyadh-events-2026-09-19T13-31-42-172Z.png",
-      "signals": {
-        "has_next_data": false,
-        "has_nuxt": false,
-        "has_json_ld": false,
-        "has_event_schema": false,
-        "date_snippets": [
-          "6 Rabi' II 1448 - 19 September 2026 Sign In/Sign Up Advertise with us Sign-up for newsletter HOME NEWS EVENTS BUSIN",
-          "hatsApp X LinkedIn Facebook Email Share 25 - 27 Jan, 2027 Real Estate Future Forum Four Seasons Hotel , Riyadh | Forum The Real Est",
-          "must evolve, embracing... More Details 25 - 26 Oct, 2026 Global Proptech Summit 2026 Mandarin Oriental Al Faisaliah , Riyadh | Sum",
-          "platform that convenes... More Details 28 - 29 Oct, 2026 Real Estate Supply Chain Forum Mandarin Oriental Al Faisaliah , Riyadh |",
-          "tform driving strategic... More Details 28 - 29 Oct, 2026 CIPS MENA Procurement and Supply Chain Futures conference and awards Mand",
-          "is the region’s leading... More Details 19 - 21 Sep, 2026 Global Project Management Forum (GPMF) 2026 Fairmont Hotel , Riyadh | For",
-          "nt that unites industry... More Details 20 - 22 Sep, 2026 The International facility Management Forum and Conference Riyadh Interna",
-          "Day Riyadh | Festival ... More Details 24 - 27 Sep, 2026 4th SAUDI FASHIONTEX EXPO Jeddah International Exhibition & Convention Ce"
-        ],
-        "event_like_links": [
-          {
-            "text": "EVENTS",
-            "href": "https://www.eyeofriyadh.com/events/"
-          },
-          {
-            "text": "عربي",
-            "href": "https://www.eyeofriyadh.com/ar/events/"
-          },
-          {
-            "text": "Award",
-            "href": "https://www.eyeofriyadh.com/events/?fcat=15"
-          },
-          {
-            "text": "Ceremony",
-            "href": "https://www.eyeofriyadh.com/events/?fcat=21"
-          },
-          {
-            "text": "Championship",
-            "href": "https://www.eyeofriyadh.com/events/?fcat=13"
-          },
-          {
-            "text": "Conference",
-            "href": "https://www.eyeofriyadh.com/events/?fcat=1"
-          },
-          {
-            "text": "Congress",
-            "href": "https://www.eyeofriyadh.com/events/?fcat=28"
-          },
-          {
-            "text": "Exhibition",
-            "href": "https://www.eyeofriyadh.com/events/?fcat=2"
-          },
-          {
-            "text": "Festival",
-            "href": "https://www.eyeofriyadh.com/events/?fcat=5"
-          },
-          {
-            "text": "Forum",
-            "href": "https://www.eyeofriyadh.com/events/?fcat=3"
-          },
-          {
-            "text": "Initiative",
-            "href": "https://www.eyeofriyadh.com/events/?fcat=20"
-          },
-          {
-            "text": "Professional Development Programme",
-            "href": "https://www.eyeofriyadh.com/events/?fcat=32"
-          },
-          {
-            "text": "Show",
-            "href": "https://www.eyeofriyadh.com/events/?fcat=24"
-          },
-          {
-            "text": "Summit",
-            "href": "https://www.eyeofriyadh.com/events/?fcat=4"
-          },
-          {
-            "text": "AWARD",
-            "href": "https://www.eyeofriyadh.com/events/?fcat=15"
-          },
-          {
-            "text": "CEREMONY",
-            "href": "https://www.eyeofriyadh.com/events/?fcat=21"
-          },
-          {
-            "text": "CHAMPIONSHIP",
-            "href": "https://www.eyeofriyadh.com/events/?fcat=13"
-          },
-          {
-            "text": "CONFERENCE",
-            "href": "https://www.eyeofriyadh.com/events/?fcat=1"
-          },
-          {
-            "text": "CONGRESS",
-            "href": "https://www.eyeofriyadh.com/events/?fcat=28"
-          },
-          {
-            "text": "EXHIBITION",
-            "href": "https://www.eyeofriyadh.com/events/?fcat=2"
-          }
-        ]
-      },
-      "script_signals": {
-        "next_data_scripts": 0,
-        "nuxt_scripts": 0,
-        "json_ld_scripts": 0,
-        "large_inline_scripts": 0
-      },
-      "network_total": 4,
-      "network_endpoints": [],
-      "network_sample": [
-        {
-          "method": "GET",
-          "status": 200,
-          "url": "https://ep1.adtrafficquality.google/getconfig/sodar?sv=200&tid=gpt&tv=m202609140101&st=env&sjk=1950199255513841",
-          "content_type": "application/json",
-          "resource_type": "xhr",
-          "request_post_data": "",
-          "response_shape": "json-like-invalid",
-          "preview": "{\"sodar_query_id\":\"6pCuaqeHIfzuieYPqc6psAY\",\"injector_basename\":\"sodar2\",\"bg_hash_basename\":\"dVU7YC_IHNLAuo73oEax7kJe6zOZtQfbD4RBB6EqV-Y\",\"bg_binary\":\"DoU+BCZ4NGZBfIN/jMJieYl3Q5wuZKByhqiqFG1olHufFBClWYkw5T4LNM3A+gyQn0Ag5ucuOgPsZY7N7Iwy9EqVfn9DmzAPz5Era+HFDjkEBAF9EDglfVaH+lYvXrsSw5JRNT9dSvD4u0ZU594NCBLECy8/76KqMjVOLRDX/Ao3APdMLnLMwCTPiasU58Vj0Z1q7HxqqQkijDCBupEFMIqhFcg25XPgZkMlzjz7wixc5NkA3lUk6PXga6eX+N6D6Xe613luYkj4IfS6Kenyl4KwFvf8jSTSWqkfdZO6Ua4Mt1N4Z9kyAm6Is30ZpcVZRL5AfBfrE2XcSTyd3A8mtb4F3CctiHhKkiOeOQ7G4q4/i65LdLqoxxqoukDRv9/iga7Ah2ne+5OpRJziasKpnlnyvtSXDdlB/kTyUxIQjCRcigGutC6e81cnmeY1Idi3s9v81pPKNgGTLwi9qv96HLzpkjCerSCn2nQk0UoDxbwz20oNoOuT1+4FF0dgvVILKiYRj625ogadlmZsJlLTuIONH6y5fOa5FOzvo4wxJbNJ6sTmkTS4M4Qt/u5NDm8cOgNIWCn1d3L2szeSr2ZFfZao/dVgzlGvAjL0M8M9Sd/mwdwX/ePru36ai2ua6+PaPDCNW2vbCTZ1PLkzOhv52Z+0G/ZpGQSquZD7TKIJAdp0a1oG/ExZvGR/dxhNZNOKE0FIkA/UItWGUeHEhYg7+Tt9eiL00xbojVhp18YSFCtul66chhgD2Nacqfy8TgmY/+FupyEspOCmqvoAFaY5GSZ2TVRDWJlDAALJRarloV0q1dE2KCcZuTsAFNnhxH6YyH9+vUqejoHLBglhdTbttZrEisCSVCfAwp/AGkKH5gNECb985FcNSIMyAn5dGSfFDIpGgX9uVsM9d/jXacmOXaYDbKXE+zY1LHlBmzfkzE87TIM+YowN30mfRQmQSN0wKgk/XWVM3gJHVFYgmdELjca7+QonaJWi/1Jrujr0UDXxVyd87XR71MgWv9u0Z4tErb0tGeagHyYIC5zsnvLt4AtYlZHpR1mDWYi7QsJZGzY5ddA1gj1nDutu2AHWaeOGg7jnzl1Q7yD5vZ20t0/91Q/yT36PeWTbgyOmFP5opIFd+fjbX/uodXcW3drqFxjakU5hJ9K5zqGPPNliR61Lpsss2a8A0TG9y0eQIrm/C8iEbCeYf5HPYB+K4Ax2Z7q5Jvuu8l+paX8x2KC4Ha4OjV6OjpT1r/by7zGRswb9w9f35XvFkgaBe9ThA/+1+6ZA5MCIK5qqBNcfyZu1UIxETaVP9wPseQt5PW8wO7THupLcNQSW7kNtH8w5r5leCCLyL9REvb55fOfNoqiLE3V+cXG8QmxLbpWGXAzIsPjHFYRxkD0q4hKeQzv2YFpO0yniIDs/3+HhokNALpgSY4bEmxjUoqSv9Qk/RtFQUyk+Fuwe7XUakKW+S1PSMp2Ty1Hg0Cuzb0C1QgXafadVSxDZrw0H9g2B62Er1oGGqjMexChY6kf7B6W3c4tH+sOiCtAphenjawzYdodiiBSRiajbGq9beQJ5xsl7bgApN3EcO9ZbDDu+193FuFzuMvhfmN8/OGn4sTHfZDHLSuUHfalv1KgxAC6Iw+9YN8373frI73KPoWPzK"
-        },
-        {
-          "method": "GET",
-          "status": 200,
-          "url": "https://bootstrap.smartsuppchat.com/widget/2509ea3487b655fdefb67761d4610393011e3a91.json",
-          "content_type": "application/json",
-          "resource_type": "xhr",
-          "request_post_data": "",
-          "response_shape": "json-object:aiRatingEnabled,allowedDomains,buttonStyle,color,color2,colorGradient,consentModeEnabled,crossDomainEnabled",
-          "preview": "{\"aiRatingEnabled\":false,\"allowedDomains\":[],\"buttonStyle\":\"greeting\",\"color\":\"#f5a623\",\"color2\":null,\"colorGradient\":true,\"consentModeEnabled\":false,\"crossDomainEnabled\":false,\"customBrandingEnabled\":false,\"customBrandingLink\":\"\",\"customBrandingText\":\"\",\"emailControl\":true,\"features\":{\"api\":false,\"customize\":false,\"ga\":false,\"groups\":false,\"rating\":false,\"whiteLabel\":false},\"googleAnalyticsEnabled\":false,\"googleAnalyticsManual\":false,\"googleAnalyticsMeasurementIds\":[],\"groupSelectEnabled\":false,\"headerStyle\":\"standard\",\"hideOfflineChat\":false,\"hideWidget\":false,\"host\":\"websocket-visitors.smartsupp.com\",\"internalAnalyticsEnabled\":false,\"isBlocked\":false,\"lang\":\"en\",\"mobilePopupsEnabled\":false,\"nameControl\":true,\"numberControl\":false,\"openOnTrigger\":false,\"orientation\":\"right\",\"packageName\":\"free\",\"popupTextareaEnabled\":false,\"privacyNoticeCheckRequired\":false,\"privacyNoticeEnabled\":true,\"privacyNoticeUrl\":\"\",\"ratingEnabled\":false,\"requireLogin\":false,\"translates\":{\"en\":{\"topBar.online.hello\":\"Eyeofriyadh\"}},\"urlCardsEnabled\":true,\"widgetVersion\":3,\"hasInternalApi\":false,\"config\":{},\"browserLang\":\"ar\",\"widgetTrackerUrl\":\"https://widget-tracker.smartsupp.com\",\"translationsBaseUrl\":\"https://translations.smartsuppcdn.com\",\"widgetTrackerEnabled\":false}"
-        },
-        {
-          "method": "GET",
-          "status": 200,
-          "url": "https://widget-v3.smartsuppcdn.com/manifest.json",
-          "content_type": "application/json",
-          "resource_type": "xhr",
-          "request_post_data": "",
-          "response_shape": "json-like-invalid",
-          "preview": "{ \"_WidgetMessengerInput-vaZu9XiV.js\": { \"file\": \"assets/WidgetMessengerInput-vaZu9XiV.js\", \"name\": \"WidgetMessengerInput\", \"imports\": [ \"_shared-DKOWJlLK.js\" ], \"dynamicImports\": [ \"node_modules/.pnpm/emoji-mart@5.6.0/node_modules/emoji-mart/dist/module.js\" ] }, \"_shared-DKOWJlLK.js\": { \"file\": \"assets/shared-DKOWJlLK.js\", \"name\": \"IconButton\", \"dynamicImports\": [ \"node_modules/.pnpm/@thumbmarkjs+thumbmarkjs@1.9.0/node_modules/@thumbmarkjs/thumbmarkjs/dist/thumbmark.esm.js\" ] }, \"node_modules/.pnpm/@thumbmarkjs+thumbmarkjs@1.9.0/node_modules/@thumbmarkjs/thumbmarkjs/dist/thumbmark.esm.js\": { \"file\": \"assets/thumbmark.esm-CP4CU0yL.js\", \"name\": \"thumbmark.esm\", \"src\": \"node_modules/.pnpm/@thumbmarkjs+thumbmarkjs@1.9.0/node_modules/@thumbmarkjs/thumbmarkjs/dist/thumbmark.esm.js\", \"isDynamicEntry\": true }, \"node_modules/.pnpm/emoji-mart@5.6.0/node_modules/emoji-mart/dist/module.js\": { \"file\": \"assets/module-DD5nvVD3.js\", \"name\": \"module\", \"src\": \"node_modules/.pnpm/emoji-mart@5.6.0/node_modules/emoji-mart/dist/module.js\", \"isDynamicEntry\": true }, \"src/frames/messenger/WidgetMessenger.svelte\": { \"file\": \"assets/WidgetMessenger-CXtrqQj6.js\", \"name\": \"WidgetMessenger\", \"src\": \"src/frames/messenger/WidgetMessenger.svelte\", \"isDynamicEntry\": true, \"imports\": [ \"_shared-DKOWJlLK.js\", \"_WidgetMessengerInput-vaZu9XiV.js\", \"src/main.ts\" ] }, \"src/frames/popup/WidgetPopup.svelte\": { \"file\": \"assets/WidgetPopup-DZYwFDWS.js\", \"name\": \"WidgetPopup\", \"src\": \"src/frames/popup/WidgetPopup.svelte\", \"isDynamicEntry\": true, \"imports\": [ \"_shared-DKOWJlLK.js\", \"_WidgetMessengerInput-vaZu9XiV.js\" ] },"
-        },
-        {
-          "method": "GET",
-          "status": 200,
-          "url": "https://translations.smartsuppcdn.com/api/v1/widget/translations/lang/en/defaults",
-          "content_type": "application/json",
-          "resource_type": "fetch",
-          "request_post_data": "",
-          "response_shape": "json-like-invalid",
-          "preview": "{\"agentRating.all.placeholder\":\"Leave us feedback\",\"agentRating.bad.formText\":\"So sorry 😓 What went wrong?\",\"agentRating.good.formText\":\"Thanks 🤩 What was so great?\",\"agentRating.normal.formText\":\"Thanks 👍 How can we improve?\",\"agentTransfer.defaultText\":\"Agent\",\"agentTransfer.joined\":\"joined the chat\",\"agentTransfer.left\":\"left\",\"agentTransfer.redirected\":\"is your new agent\",\"ariaLabel.agentAvatar\":\"Agent avatar\",\"ariaLabel.card\":\"Product card\",\"ariaLabel.chatContent\":\"Chat content\",\"ariaLabel.chatbotAvatar\":\"Chatbot avatar\",\"ariaLabel.drawer.content\":\"Drawer content\",\"ariaLabel.drawer.overlay\":\"Drawer overlay\",\"ariaLabel.inlineEmojiPicker.description\":\"Showing {count} emojis\",\"ariaLabel.inlineEmojiPicker.label\":\"Emoji suggestions\",\"ariaLabel.left\":\"Left\",\"ariaLabel.openChat\":\"Open Smartsupp chat\",\"ariaLabel.popup\":\"Smartsupp chat popup\",\"ariaLabel.rateChat.bad\":\"Rate chat negativelly\",\"ariaLabel.rateChat.good\":\"Rate chat positively\",\"ariaLabel.rateChat.neutral\":\"Rate chat neutrally\",\"ariaLabel.removeAttachment\":\"Remove attachment\",\"ariaLabel.right\":\"Right\",\"ariaLabel.scrollDown\":\"Scroll down\",\"ariaLabel.success\":\"Success\",\"ariaLabel.uploading\":\"Uploading...\",\"ariaLabel.widgetBranding\":\"Smartsupp branding\",\"authForm.acceptTerms\":\"I agree with privacy policy\",\"authForm.button.send\":\"Send message\",\"authForm.description\":\"We’ll use your contact info only if all the operators are busy at the moment and cannot immediately reply.\",\"authForm.greeting\":\"👋 Please introduce yourself\",\"authForm.group\":\"Choose a group\",\"authForm.label.email\":\"E-mail\",\"authForm.label.group\":\"Group\",\"authForm.label.name\":\"Name\",\"authForm.label.phone\":\"Phone\",\"authForm.submit.error\":\"Authentication failed\",\"authForm.submit.success\":\"Authentication was successful\",\"authForm.yourEmail\":\"Your email\""
-        }
-      ]
-    },
-    {
-      "id": "tuwaiq-academy-bootcamps",
-      "probed_at": "2026-09-19T13:38:31.729Z",
-      "name": "Tuwaiq Academy Bootcamps and Programs",
-      "priority": 16,
-      "url": "https://tuwaiq.edu.sa/api/GetInitiativePublishesShorten/12/1?category=ac41152d-f228-8af4-8406-e0cda6df6c35&type=NORMAL",
-      "final_url": "https://tuwaiq.edu.sa/api/GetInitiativePublishesShorten/12/1?category=ac41152d-f228-8af4-8406-e0cda6df6c35&type=NORMAL",
-      "status": "ok",
-      "http_status": 200,
-      "navigation_error": "",
-      "duration_ms": 5544,
-      "classification": "browser-structured-html",
-      "next_action": "اكتب extractor من JSON-LD أو structured scripts مع fallback للبطاقات.",
-      "title": "",
-      "text_bytes": 10617,
-      "html_bytes": 10780,
-      "html_snapshot": "data/raw/browser-probes/tuwaiq-academy-bootcamps-2026-09-19T13-31-42-172Z.html",
-      "screenshot": "data/raw/browser-probes/tuwaiq-academy-bootcamps-2026-09-19T13-31-42-172Z.png",
-      "signals": {
-        "has_next_data": false,
-        "has_nuxt": false,
-        "has_json_ld": false,
-        "has_event_schema": true,
-        "date_snippets": [
-          "يات فن تصميم الشخصيات 3D \",\"startDate\":\"2026-10-04T16:00:00+03:00\",\"endDate\":\"2026-12-24T20:00:00+03:00\",\"autoCloseRegistration\":f",
-          "nStartDate\":null,\"registrationEndDate\":\"2026-09-20T12:00:00+03:00\",\"requireProfileCompletion\":true,\"isMergePublish\":false,\"isPaid\"",
-          "سحابة وتعلم الآلة على AWS\",\"startDate\":\"2026-10-04T18:00:00+03:00\",\"endDate\":\"2026-11-12T22:00:00+03:00\",\"autoCloseRegistration\":f",
-          "nStartDate\":null,\"registrationEndDate\":\"2026-09-20T12:00:00+03:00\",\"requireProfileCompletion\":true,\"isMergePublish\":true,\"isPaid\":",
-          "عسكر الدرونز عالية الأداء\",\"startDate\":\"2026-10-04T18:00:00+03:00\",\"endDate\":\"2026-11-05T21:00:00+03:00\",\"autoCloseRegistration\":f",
-          "nStartDate\":null,\"registrationEndDate\":\"2026-09-20T12:00:00+03:00\",\"requireProfileCompletion\":true,\"isMergePublish\":true,\"isPaid\":",
-          "لبيرتون - المسار التأسيسي\",\"startDate\":\"2026-10-11T09:00:00+03:00\",\"endDate\":\"2027-07-20T21:00:00+03:00\",\"autoCloseRegistration\":f",
-          "nStartDate\":null,\"registrationEndDate\":\"2026-10-04T12:00:00+03:00\",\"requireProfileCompletion\":true,\"isMergePublish\":false,\"isPaid\""
-        ],
-        "event_like_links": []
-      },
-      "script_signals": {
-        "next_data_scripts": 0,
-        "nuxt_scripts": 0,
-        "json_ld_scripts": 0,
-        "large_inline_scripts": 0
-      },
-      "network_total": 1,
-      "network_endpoints": [],
-      "network_sample": [
-        {
-          "method": "GET",
-          "status": 200,
-          "url": "https://tuwaiq.edu.sa/api/GetInitiativePublishesShorten/12/1?category=ac41152d-f228-8af4-8406-e0cda6df6c35&type=NORMAL",
-          "content_type": "application/json",
-          "resource_type": "document",
-          "request_post_data": "",
-          "response_shape": "json-like-invalid",
-          "preview": "{\"pagination\":{\"offset\":0,\"limit\":12,\"total\":164,\"totalPages\":14},\"data\":[{\"id\":\"ec58d045-8991-4f45-9b7e-b36a792029f6\",\"academyTypeId\":null,\"academyType\":null,\"title\":\"معسكر تقنيات فن تصميم الشخصيات 3D \",\"startDate\":\"2026-10-04T16:00:00+03:00\",\"endDate\":\"2026-12-24T20:00:00+03:00\",\"autoCloseRegistration\":false,\"isOpen\":true,\"isRegistrationOpen\":true,\"isRegistrationClosed\":false,\"logo\":null,\"outerImage\":\"images/a0yjf4zb.esg.jpeg\",\"initiativeAgeName\":\"كبار\",\"initiativeCategoryName\":\"معسكر\",\"initiativeScopeImage\":\"images/mgpdsgmm.alx.png\",\"initiativeScopeName\":\"تطوير البرمجيات والتطبيقات\",\"locationName\":\"الرياض - المقر الرئيسي\",\"slug\":\"kx9ya9Kd\",\"registrationStartDate\":null,\"registrationEndDate\":\"2026-09-20T12:00:00+03:00\",\"requireProfileCompletion\":true,\"isMergePublish\":false,\"isPaid\":false,\"price\":null,\"includesEmployees\":false,\"vat\":null,\"priceWithoutVat\":null},{\"id\":\"22a4de12-1695-4ad6-a614-054957432522\",\"academyTypeId\":null,\"academyType\":null,\"title\":\"معسكر هندسة السحابة وتعلم الآلة على AWS\",\"startDate\":\"2026-10-04T18:00:00+03:00\",\"endDate\":\"2026-11-12T22:00:00+03:00\",\"autoCloseRegistration\":false,\"isOpen\":true,\"isRegistrationOpen\":true,\"isRegistrationClosed\":false,\"logo\":null,\"outerImage\":\"images/i1uzgsxd.ypc.jpg\",\"initiativeAgeName\":\"كبار\",\"initiativeCategoryName\":\"معسكر\",\"initiativeScopeImage\":\"images/pxhazeai.5tg.png\",\"initiativeScopeName\":\"علم البيانات والذكاء الاصطناعي\",\"locationName\":\"الرياض - المقر الرئيسي\",\"slug\":\"W5wR9Vn4\",\"registrationStartDate\":null,\"registrationEndDate\":\"2026-09-20T12:00:00+03:00\",\"requireProfileCompletion\":true,\"isMergePublish\":true,\"isPaid\":false,\"price\":0.00,\"includesEmployees\":false,\"vat\":0.00,\"priceWithoutVat\":0.00},{\"id\":\"ab704dbd-075f-46a5-853b-f2080d33f256\",\"academyTypeId\":null,\"academyType\":null,\"title\":\"معسكر الدرونز عالية الأدا"
-        }
-      ]
-    },
-    {
       "id": "future-skills-catalog",
-      "probed_at": "2026-09-19T13:38:43.732Z",
+      "probed_at": "2026-09-20T07:48:15.727Z",
       "name": "Future Skills MCIT Catalogue",
       "priority": 17,
       "url": "https://futureskills.mcit.gov.sa/ar/catalogue/all?label=&field_main_tracks_target_id_verf=565&field_sub_tracks_target_id=All&field_training_course_level_target_id=All&field_related_skills_target_id=All&field_course_type_value=All&field_training_delivery_value=All&field_training_city_target_id=All&field_job_market_target_id=All",
@@ -364,14 +141,14 @@
       "status": "ok",
       "http_status": 200,
       "navigation_error": "",
-      "duration_ms": 11962,
+      "duration_ms": 12274,
       "classification": "rendered-html-candidates",
       "next_action": "اكتب extractor مرن من DOM بعد الرندر أو حسن selector الحالي.",
       "title": "التدريب | بوابة مهارات المستقبل",
       "text_bytes": 10762,
       "html_bytes": 86461,
-      "html_snapshot": "data/raw/browser-probes/future-skills-catalog-2026-09-19T13-31-42-172Z.html",
-      "screenshot": "data/raw/browser-probes/future-skills-catalog-2026-09-19T13-31-42-172Z.png",
+      "html_snapshot": "data/raw/browser-probes/future-skills-catalog-2026-09-20T07-48-02-572Z.html",
+      "screenshot": "data/raw/browser-probes/future-skills-catalog-2026-09-20T07-48-02-572Z.png",
       "signals": {
         "has_next_data": false,
         "has_nuxt": false,
@@ -553,6 +330,331 @@
       "network_total": 0,
       "network_endpoints": [],
       "network_sample": []
+    },
+    {
+      "id": "riyadh-city-events",
+      "probed_at": "2026-09-20T07:48:28.766Z",
+      "name": "Riyadh City Events",
+      "priority": 51,
+      "url": "https://riyadh.sa/en/events/all",
+      "final_url": "https://riyadh.sa/en/events/all",
+      "status": "ok",
+      "http_status": 200,
+      "navigation_error": "",
+      "duration_ms": 12994,
+      "classification": "rendered-html-candidates",
+      "next_action": "اكتب extractor مرن من DOM بعد الرندر أو حسن selector الحالي.",
+      "title": "الموقع الرسمي لمدينة الرياض",
+      "text_bytes": 827,
+      "html_bytes": 155264,
+      "html_snapshot": "data/raw/browser-probes/riyadh-city-events-2026-09-20T07-48-02-572Z.html",
+      "screenshot": "data/raw/browser-probes/riyadh-city-events-2026-09-20T07-48-02-572Z.png",
+      "signals": {
+        "has_next_data": false,
+        "has_nuxt": false,
+        "has_json_ld": false,
+        "has_event_schema": false,
+        "date_snippets": [],
+        "event_like_links": [
+          {
+            "text": "",
+            "href": "https://riyadh.sa/en/events/all"
+          },
+          {
+            "text": "All Events",
+            "href": "https://riyadh.sa/en/events/all"
+          },
+          {
+            "text": "events.title",
+            "href": "https://riyadh.sa/en/events"
+          }
+        ]
+      },
+      "script_signals": {
+        "next_data_scripts": 0,
+        "nuxt_scripts": 0,
+        "json_ld_scripts": 0,
+        "large_inline_scripts": 0
+      },
+      "network_total": 2,
+      "network_endpoints": [],
+      "network_sample": [
+        {
+          "method": "GET",
+          "status": 200,
+          "url": "https://riyadh.sa/assets/i18n/ar.json",
+          "content_type": "application/json",
+          "resource_type": "xhr",
+          "request_post_data": "",
+          "response_shape": "json-like-invalid",
+          "preview": "{ \"lang\": \"ar\", \"main\": { \"title\": \"مدينة الرياض\" }, \"lastUpdated\": { \"label\": \"تاريخ آخر تعديل\", \"timezone\": \"بتوقيت السعودية\" }, \"cookies\": { \"title\": \"ملفات تعريف الارتباط\", \"consentIntro\": \"هذا الموقع يستخدم ملفات تعريف الارتباط الخاصة للتأكد من سهولة الاستخدام وضمان تحسين تجربتك أثناء التصفح. من خلال الاستمرار في تصفح هذا الموقع، فإنك تقر بقبول استخدام ملفات تعريف الارتباط.\", \"privacyPolicy\": \"سياسة الخصوصية\", \"accept\": \"قبول\", \"reject\": \"رفض\", \"manageLink\": \"إدارة ملفات تعريف الارتباط\", \"manageTitle\": \"إدارة ملفات تعريف الارتباط\", \"thanksTitle\": \"ملفات تعريف الارتباط\", \"intro\": \"عند زيارة أي موقع على الويب، قد يخزّن هذا الأخير المعلومات على المستعرض أو يستردها على شكل ملفات تعريف ارتباط على الأغلب. وقد تكون هذه المعلومات عنك أو عن تفضيلاتك أو عن جهازك أو قد يتم استخدامها ليعمل الموقع كما تتوقع. لا تعرّف المعلومات عنك عادةً مباشرةً، ولكنها قد تمنحك تجربة ويب أكثر تخصيصًا. يمكنك اختيار عدم السماح ببعض أنواع ملفات تعريف الارتباط. انقر فوق عناوين الفئات المختلفة لمعرفة المزيد وتغيير إعداداتنا الافتراضية. ومع ذلك، يجب أن تعرف أن حظر بعض أنواع ملفات تعريف الارتباط قد يؤثر في تجربتك على الموقع وفي الخدمات التي يمكننا تقديمها.\", \"necessary\": \"ملفات تعريف الارتباط هذه ضرورية للغاية (نشطة دائماً)\", \"performance\": \"ملفات تعريف الارتباط الخاصة بالأداء\", \"functional\": \"ملفات تعريف الارتباط الوظيفية\", \"targeting\": \"ملفات تعريف الارتباط المُستهدفة\", \"confirm\": \"تأكيد خياراتي\", \"rejectAll\": \"رفض الكل\", \"thanksMessage\": \"شكرًا! تم تسجيل استجابتك بنجاح. إذا كنت ترغب في تعديل الإجابة أو تغييرها، يمكنك الرجوع عبر الضغط على زر تراجع.\", \"undo\": \"تراجع\", \"close\": \"إغلاق\" }, \"fileUploader\": { \"hint\": \"الحد الأقصى لحجم الملف المسموح به هو {{size}} ميجابايت، وصيغ الملفات المدعومة تشمل {{"
+        },
+        {
+          "method": "GET",
+          "status": 200,
+          "url": "https://riyadh.sa/assets/i18n/en.json",
+          "content_type": "application/json",
+          "resource_type": "xhr",
+          "request_post_data": "",
+          "response_shape": "json-like-invalid",
+          "preview": "{ \"lang\": \"en\", \"main\": { \"title\": \"Riyadh City\" }, \"lastUpdated\": { \"label\": \"Last Modified Date\", \"timezone\": \"Saudi Arabia Time\" }, \"cookies\": { \"title\": \"Cookies\", \"consentIntro\": \"This site uses its own cookies to ensure ease of use and to improve your experience while browsing. By continuing to browse this site, you acknowledge and accept the use of cookies.\", \"privacyPolicy\": \"Privacy Policy\", \"accept\": \"Accept\", \"reject\": \"Reject\", \"manageLink\": \"Manage Cookies\", \"manageTitle\": \"Manage Cookies\", \"thanksTitle\": \"Cookies\", \"intro\": \"Whenever you visit a website, it may store or retrieve information on your browser, mostly in the form of cookies. This information might be about you, your preferences, or your device, and is mostly used to make the site work as you expect it to. The information does not usually identify you directly, but it can give you a more personalized web experience. You can choose not to allow some types of cookies. Click on the different category headings to find out more and change our default settings. However, you should know that blocking some types of cookies may impact your experience of the site and the services we are able to offer.\", \"necessary\": \"These cookies are strictly necessary (always active)\", \"performance\": \"Performance cookies\", \"functional\": \"Functional cookies\", \"targeting\": \"Targeting cookies\", \"confirm\": \"Confirm my choices\", \"rejectAll\": \"Reject all\", \"thanksMessage\": \"Thank you! Your response has been recorded successfully. If you would like to edit or change your answer, you can go back by clicking the undo button.\", \"undo\": \"Undo\", \"close\": \"Close\" }, \"fileUploader\": { \"hint\": \"Maximum file size allowed is {{size}}"
+        }
+      ]
+    },
+    {
+      "id": "sdaia-calendar-events",
+      "probed_at": "2026-09-20T07:48:40.309Z",
+      "name": "SDAIA Calendar and Events",
+      "priority": 54,
+      "url": "https://sdaia.gov.sa/en/MediaCenter/Events/Pages/default.aspx",
+      "final_url": "https://sdaia.gov.sa/en/MediaCenter/Events/Pages/default.aspx",
+      "status": "ok",
+      "http_status": 200,
+      "navigation_error": "",
+      "duration_ms": 11476,
+      "classification": "browser-network-api",
+      "next_action": "ثبت endpoint مرشحًا كجامع مباشر، ثم اكتب extractor من JSON مع اختبار انحدار.",
+      "title": "SDAIA | SDAIA Calendar & Events",
+      "text_bytes": 3042,
+      "html_bytes": 143079,
+      "html_snapshot": "data/raw/browser-probes/sdaia-calendar-events-2026-09-20T07-48-02-572Z.html",
+      "screenshot": "data/raw/browser-probes/sdaia-calendar-events-2026-09-20T07-48-02-572Z.png",
+      "signals": {
+        "has_next_data": false,
+        "has_nuxt": false,
+        "has_json_ld": false,
+        "has_event_schema": false,
+        "date_snippets": [],
+        "event_like_links": [
+          {
+            "text": "AI Scholarship Program",
+            "href": "https://sdaia.gov.sa/en/Sectors/academy/Pages/ScholarshipProgram.aspx"
+          },
+          {
+            "text": "Cooperative Training Program",
+            "href": "https://sdaia.gov.sa/en/Sectors/BuildingCapacity/Pages/CooperativeTraining.aspx"
+          },
+          {
+            "text": "Free Software and Services",
+            "href": "https://sdaia.gov.sa/en/Services/Pages/FreeServicesAndPrograms.aspx"
+          },
+          {
+            "text": "Calendar and Events",
+            "href": "https://sdaia.gov.sa/en/MediaCenter/Events/Pages/default.aspx"
+          },
+          {
+            "text": "Search",
+            "href": "https://sdaia.gov.sa/en/MediaCenter/Events/Pages/default.aspx#"
+          },
+          {
+            "text": "",
+            "href": "https://sdaia.gov.sa/en/MediaCenter/Events/Pages/default.aspx#ctl00_PlaceHolderBanner_ContentMap_SkipLink"
+          },
+          {
+            "text": "Show Events",
+            "href": "https://sdaia.gov.sa/en/MediaCenter/Events/Pages/default.aspx#"
+          },
+          {
+            "text": "Show Calendar",
+            "href": "https://sdaia.gov.sa/en/MediaCenter/Events/Pages/default.aspx#"
+          },
+          {
+            "text": "Organizer\n\n1/28/2026 - 1/29/2026\n\nInternational Conference on Data and AI Capacity Building (ICAN)\n\nOrganizer: SDAIA\n\nTa",
+            "href": "https://sdaia.gov.sa/en/MediaCenter/Events/Pages/EventsDetails.aspx?EventID=121"
+          },
+          {
+            "text": "Hosting\n\n9/14/2026 - 9/17/2026\n\nGlobal Forum on the Ethics of AI\n\nOrganizer: UNESCO\n\nTags:\n\nartificial intelligence",
+            "href": "https://sdaia.gov.sa/en/MediaCenter/Events/Pages/EventsDetails.aspx?EventID=122"
+          },
+          {
+            "text": "Yes",
+            "href": "https://sdaia.gov.sa/en/MediaCenter/Events/Pages/default.aspx#pills-first"
+          },
+          {
+            "text": "No",
+            "href": "https://sdaia.gov.sa/en/MediaCenter/Events/Pages/default.aspx#pills-second"
+          },
+          {
+            "text": "Privacy Policy",
+            "href": "https://sdaia.gov.sa/en/MediaCenter/Events/Pages/default.aspx#"
+          },
+          {
+            "text": "Manage Preferences",
+            "href": "https://sdaia.gov.sa/en/MediaCenter/Events/Pages/default.aspx#"
+          },
+          {
+            "text": "",
+            "href": "https://sdaia.gov.sa/en/MediaCenter/Events/Pages/default.aspx#?"
+          }
+        ]
+      },
+      "script_signals": {
+        "next_data_scripts": 0,
+        "nuxt_scripts": 0,
+        "json_ld_scripts": 0,
+        "large_inline_scripts": 1
+      },
+      "network_total": 3,
+      "network_endpoints": [
+        {
+          "method": "GET",
+          "status": 200,
+          "url": "https://sdaia.gov.sa/sdaiaapi/api/feedback/getbypageurl?pageURL=/en/mediacenter/events/pages/default.aspx&_=1789890512657",
+          "content_type": "application/json",
+          "resource_type": "xhr",
+          "request_post_data": "",
+          "response_shape": "json-object:Message,Status,ErrorCode,ErrorMessage,Notifications",
+          "preview": "{\"Message\":{\"Title\":\"/en/mediacenter/events/pages/default.aspx\",\"PageId\":\"/en/mediacenter/events/pages/default.aspx\",\"YesCount\":\"0\",\"NoCount\":\"0\",\"TotalCount\":\"0\"},\"Status\":true,\"ErrorCode\":0,\"ErrorMessage\":null,\"Notifications\":null}"
+        }
+      ],
+      "network_sample": [
+        {
+          "method": "GET",
+          "status": 200,
+          "url": "https://sdaia.gov.sa/sdaiaformapi/api/user/GetNafathInfo?_=1789890512656",
+          "content_type": "text/html",
+          "resource_type": "xhr",
+          "request_post_data": "",
+          "response_shape": "html",
+          "preview": "<html><head><title>Request Rejected</title></head><body>The requested URL was rejected. Please consult with your administrator.<br><br>Your support ID is: 7032172520195120115<br><br><a href='javascript:history.back();'>[Go Back]</a></body></html>"
+        },
+        {
+          "method": "GET",
+          "status": 200,
+          "url": "https://sdaia.gov.sa/sdaiaapi/api/home/geteninternalpagenavdata?_=1789890512655",
+          "content_type": "application/json",
+          "resource_type": "xhr",
+          "request_post_data": "",
+          "response_shape": "json-like-invalid",
+          "preview": "{\"Data\":{\"menu\":[{\"id\":1,\"title\":\"Home\",\"url\":\"/en/default.aspx\",\"hasChild\":\"false\",\"itemSort\":\"1\",\"layout\":null,\"show\":\"true\",\"level2\":[],\"error\":false},{\"id\":2,\"title\":\"SDAIA\",\"url\":\"/en/SDAIA/Pages/default.aspx\",\"hasChild\":\"true\",\"itemSort\":\"2\",\"layout\":\"Grid\",\"show\":\"true\",\"level2\":[{\"id\":1,\"title\":\"About SDAIA\",\"url\":\"/en/SDAIA/about/Pages/default.aspx\",\"menuLevel1\":\"SDAIA\",\"itemSort\":\"1\",\"icon\":\"fal fa-buildings\",\"level3\":[{\"title\":\"About SDAIA\",\"url\":\"/en/SDAIA/about/Pages/About.aspx\",\"itemSort\":\"1\",\"icon\":\"fal fa-buildings\",\"topmenuLevel1\":\"SDAIA\",\"show\":\"true\",\"iconType\":\"Icon\"},{\"title\":\"Board of Directors\",\"url\":\"/en/SDAIA/about/Pages/directorsBoard.aspx\",\"itemSort\":\"2\",\"icon\":\"fal fa-id-card\",\"topmenuLevel1\":\"SDAIA\",\"show\":\"true\",\"iconType\":\"Icon\"},{\"title\":\"Organizational Structure\",\"url\":\"/en/SDAIA/about/Pages/organizationalStructure.aspx\",\"itemSort\":\"3\",\"icon\":\"fal fa-diagram-project\",\"topmenuLevel1\":\"SDAIA\",\"show\":\"true\",\"iconType\":\"Icon\"},{\"title\":\"Budget and Spending\",\"url\":\"/en/SDAIA/about/Pages/Budget.aspx\",\"itemSort\":\"4\",\"icon\":\"fal fa-coins\",\"topmenuLevel1\":\"SDAIA\",\"show\":\"true\",\"iconType\":\"Icon\"},{\"title\":\"Competitions and Purchases\",\"url\":\"/en/SDAIA/about/Pages/CompetitionsAndPurchases.aspx\",\"itemSort\":\"5\",\"icon\":\"fal fa-flag-checkered\",\"topmenuLevel1\":\"SDAIA\",\"show\":\"true\",\"iconType\":\"Icon\"},{\"title\":\"Achievements\",\"url\":\"/en/SDAIA/about/Pages/Achievements.aspx\",\"itemSort\":\"6\",\"icon\":\"fal fa-ballot-check\",\"topmenuLevel1\":\"SDAIA\",\"show\":\"true\",\"iconType\":\"Icon\"},{\"title\":\"Laws and Regulations\",\"url\":\"/en/SDAIA/about/Pages/RegulationsAndPolicies.aspx\",\"itemSort\":\"7\",\"icon\":\"fal fa-clipboard-check\",\"topmenuLevel1\":\"SDAIA\",\"show\":\"true\",\"iconType\":\"Icon\"},{\"title\":\"Artificial Intelligence\",\"url\":\"/en/SDAIA/about/Pages/AboutAI.aspx\",\"itemSort\":\"8\",\"i"
+        },
+        {
+          "method": "GET",
+          "status": 200,
+          "url": "https://sdaia.gov.sa/sdaiaapi/api/feedback/getbypageurl?pageURL=/en/mediacenter/events/pages/default.aspx&_=1789890512657",
+          "content_type": "application/json",
+          "resource_type": "xhr",
+          "request_post_data": "",
+          "response_shape": "json-object:Message,Status,ErrorCode,ErrorMessage,Notifications",
+          "preview": "{\"Message\":{\"Title\":\"/en/mediacenter/events/pages/default.aspx\",\"PageId\":\"/en/mediacenter/events/pages/default.aspx\",\"YesCount\":\"0\",\"NoCount\":\"0\",\"TotalCount\":\"0\"},\"Status\":true,\"ErrorCode\":0,\"ErrorMessage\":null,\"Notifications\":null}"
+        }
+      ]
+    },
+    {
+      "id": "umm-al-qura-events",
+      "probed_at": "2026-09-20T07:48:48.142Z",
+      "name": "Umm Al-Qura University Events Center",
+      "priority": 76,
+      "url": "https://uqu.edu.sa/App/Events",
+      "final_url": "https://uqu.edu.sa/App/Events",
+      "status": "ok",
+      "http_status": 200,
+      "navigation_error": "",
+      "duration_ms": 7789,
+      "classification": "rendered-html-candidates",
+      "next_action": "اكتب extractor مرن من DOM بعد الرندر أو حسن selector الحالي.",
+      "title": "مركز الأحداث والفعاليات | جامعة أم القرى",
+      "text_bytes": 2664,
+      "html_bytes": 633581,
+      "html_snapshot": "data/raw/browser-probes/umm-al-qura-events-2026-09-20T07-48-02-572Z.html",
+      "screenshot": "data/raw/browser-probes/umm-al-qura-events-2026-09-20T07-48-02-572Z.png",
+      "signals": {
+        "has_next_data": false,
+        "has_nuxt": false,
+        "has_json_ld": false,
+        "has_event_schema": false,
+        "date_snippets": [
+          "ت دورة تدريبية بعنوان إدارة الجودة 9001 2026-09-20 09:35:54 الارشاد الأكاديمي ومهارات دعم الطلبة 2026-09-20 06:21:49 قيادة التغير",
+          "والتطوير لرأس المال البشري 2026-09-17 11:03:56 الخطة الاستراتيجية للجامعة ودور عضو هيئة التدريس في تحقيقها 2026-09-17",
+          "تدريس في الاستجابة الآمنة وإحالة الطالب 2026-09-16 20:10:15 اللقاء التعريفي بخدمات عمادة شؤون الطلاب 2026-09-16 09:59:04 الألوان ن",
+          "افذة نحو الصحة النفسية وجودة الحياة 2026-09-16 09:59:00 الدليل التنظيمي ووثيقة حقوق وواجبات عضو هيئة التدريس 2026-09-16 06:27:",
+          "07 دورة أساسيات مكافحة العدوى (BCSL) 2026-09-15 10:22:26 استراتيجيات التعليم الجامعي 2026-09-15 06:21:17 الأحداث والفعاليات الت",
+          "قويم الأكاديمي بعد 3 أيام الأربعاء 23 سبتمبر إلى الخميس 24 سبتمبر اجازة اليوم الوطني جميع الدرجات إجازات بعد 21 يوم الأحد 11",
+          "أكتوبر إلى الخميس 22 أكتوبر الاختبارات النصفية البكالوريوس وما دونها عام الآن الأحد 30 أغسطس إلى السبت 31 أ"
+        ],
+        "event_like_links": [
+          {
+            "text": "English",
+            "href": "https://uqu.edu.sa/en/App/Events"
+          },
+          {
+            "text": "English",
+            "href": "https://uqu.edu.sa/en/App/Events"
+          },
+          {
+            "text": "دورة تدريبية بعنوان إدارة الجودة 9001",
+            "href": "https://uqu.edu.sa/App/Events/41152"
+          },
+          {
+            "text": "الارشاد الأكاديمي ومهارات دعم الطلبة",
+            "href": "https://uqu.edu.sa/App/Events/41151"
+          },
+          {
+            "text": "قيادة التغير والتطوير لرأس المال البشري",
+            "href": "https://uqu.edu.sa/App/Events/41150"
+          },
+          {
+            "text": "الخطة الاستراتيجية للجامعة ودور عضو هيئة التدريس في تحقيقها",
+            "href": "https://uqu.edu.sa/App/Events/41149"
+          },
+          {
+            "text": "حين نلاحظ القلق: دور عضو هيئة التدريس في الاستجابة الآمنة وإحالة الطالب",
+            "href": "https://uqu.edu.sa/App/Events/41148"
+          },
+          {
+            "text": "اللقاء التعريفي بخدمات عمادة شؤون الطلاب",
+            "href": "https://uqu.edu.sa/App/Events/41146"
+          },
+          {
+            "text": "الألوان نافذة نحو الصحة النفسية وجودة الحياة",
+            "href": "https://uqu.edu.sa/App/Events/41145"
+          },
+          {
+            "text": "الدليل التنظيمي ووثيقة حقوق وواجبات عضو هيئة التدريس",
+            "href": "https://uqu.edu.sa/App/Events/41144"
+          },
+          {
+            "text": "دورة أساسيات مكافحة العدوى (BCSL)",
+            "href": "https://uqu.edu.sa/App/Events/41143"
+          },
+          {
+            "text": "استراتيجيات التعليم الجامعي",
+            "href": "https://uqu.edu.sa/App/Events/41142"
+          },
+          {
+            "text": "English",
+            "href": "https://uqu.edu.sa/en/App/Events"
+          },
+          {
+            "text": "",
+            "href": "https://uqu.edu.sa/App/Events"
+          },
+          {
+            "text": "",
+            "href": "https://uqu.edu.sa/App/Events"
+          }
+        ]
+      },
+      "script_signals": {
+        "next_data_scripts": 0,
+        "nuxt_scripts": 0,
+        "json_ld_scripts": 0,
+        "large_inline_scripts": 0
+      },
+      "network_total": 1,
+      "network_endpoints": [],
+      "network_sample": [
+        {
+          "method": "GET",
+          "status": 200,
+          "url": "https://muneer.cx/api/v1/subscription/status/ff0b2582-0e20-43c6-be34-bfbd666f75a4/uqu.edu.sa?v=3.9.8",
+          "content_type": "application/json",
+          "resource_type": "fetch",
+          "request_post_data": "",
+          "response_shape": "json-like-invalid",
+          "preview": "{\"status\":\"success\",\"code\":200,\"message\":\"\",\"data\":{\"css\":\"https://muneer.cx/static/v3/css/muneer.min.css\",\"js\":\"https://muneer.cx/static/v3/js/muneer.min.js\",\"options\":{\"template\":\"aside\",\"alignLeft\":false,\"analytics\":true,\"alignRight\":false,\"colorizing\":true,\"fontSizing\":true,\"hideImages\":true,\"lineHeight\":true,\"monochrome\":true,\"muteSounds\":true,\"popupTools\":true,\"textColors\":true,\"whitelabel\":false,\"alignCenter\":false,\"closeButton\":true,\"popupScroll\":true,\"popupShadow\":true,\"readingMask\":true,\"titleColors\":true,\"usefulLinks\":true,\"alignJustify\":false,\"darkContrast\":false,\"dyslexiaFont\":true,\"highContrast\":true,\"invertColors\":false,\"popupOverlay\":true,\"readableFont\":true,\"readingGuide\":true,\"sidebarAlign\":\"left\",\"textToSpeech\":true,\"themeDefault\":\"system\",\"closeAnywhere\":true,\"letterSpacing\":true,\"lightContrast\":false,\"lowSaturation\":true,\"smartContrast\":true,\"textAlignment\":true,\"textMagnifier\":true,\"themeSwitcher\":true,\"bigBlackCursor\":true,\"bigWhiteCursor\":true,\"buttonPosition\":\"bottom-right\",\"contentScaling\":true,\"highSaturation\":true,\"highlightFocus\":true,\"highlightHover\":true,\"highlightLinks\":true,\"popupAnimation\":\"fade\",\"popupDraggable\":true,\"showOpenButton\":true,\"stopAnimations\":true,\"analyticsSiteid\":85,\"easyOrientation\":true,\"googleTranslate\":true,\"highlightTitles\":true,\"profileEpilepsy\":true,\"virtualKeyboard\":true,\"voiceNavigation\":true,\"backgroundColors\":true,\"onlineDictionary\":true,\"profileBlindUsers\":true,\"profileColorblind\":true,\"buttonIconPosition\":\"before\",\"keyboardNavigation\":true,\"readableExperience\":true,\"supportedLanguages\":[\"ar\",\"en\"],\"profileAdhdFriendly\":true,\"voiceNavigationAuto\":false,\"buttonHoverAnimation\":\"none\",\"profileMotorImpaired\":true,\"accessibilityProfiles\":true,\"buttonTabulationIndex\":0,\"accessibilityStatement\":true,\"buttonEntranceA"
+        }
+      ]
     }
   ]
 }
