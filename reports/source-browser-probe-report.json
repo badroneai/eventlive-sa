@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-20T07:48:02.572Z",
+  "generated_at": "2026-09-21T08:16:12.423Z",
   "source_registry": "data/source_registry.json",
   "collection_report": "reports/source-collection-report.json",
   "output_dir": "data/raw/browser-probes",
@@ -18,7 +18,7 @@
     "probed": 9,
     "browser_network_api": 1,
     "browser_hydration_payload": 0,
-    "rendered_html_candidates": 3,
+    "rendered_html_candidates": 2,
     "blocked_or_protected": 0,
     "policy_skipped": 0
   },
@@ -133,7 +133,7 @@
     },
     {
       "id": "future-skills-catalog",
-      "probed_at": "2026-09-20T07:48:15.727Z",
+      "probed_at": "2026-09-21T08:16:34.837Z",
       "name": "Future Skills MCIT Catalogue",
       "priority": 17,
       "url": "https://futureskills.mcit.gov.sa/ar/catalogue/all?label=&field_main_tracks_target_id_verf=565&field_sub_tracks_target_id=All&field_training_course_level_target_id=All&field_related_skills_target_id=All&field_course_type_value=All&field_training_delivery_value=All&field_training_city_target_id=All&field_job_market_target_id=All",
@@ -141,14 +141,14 @@
       "status": "ok",
       "http_status": 200,
       "navigation_error": "",
-      "duration_ms": 12274,
+      "duration_ms": 16114,
       "classification": "rendered-html-candidates",
       "next_action": "اكتب extractor مرن من DOM بعد الرندر أو حسن selector الحالي.",
       "title": "التدريب | بوابة مهارات المستقبل",
       "text_bytes": 10762,
       "html_bytes": 86461,
-      "html_snapshot": "data/raw/browser-probes/future-skills-catalog-2026-09-20T07-48-02-572Z.html",
-      "screenshot": "data/raw/browser-probes/future-skills-catalog-2026-09-20T07-48-02-572Z.png",
+      "html_snapshot": "data/raw/browser-probes/future-skills-catalog-2026-09-21T08-16-12-423Z.html",
+      "screenshot": "data/raw/browser-probes/future-skills-catalog-2026-09-21T08-16-12-423Z.png",
       "signals": {
         "has_next_data": false,
         "has_nuxt": false,
@@ -296,6 +296,53 @@
       "network_sample": []
     },
     {
+      "id": "saudi-space-agency-events",
+      "probed_at": "2026-09-21T08:16:18.697Z",
+      "name": "Saudi Space Agency Events",
+      "priority": 32,
+      "url": "https://ssa.gov.sa/APIGW/en/api/EventsSearch/SearchEvents",
+      "final_url": "https://ssa.gov.sa/APIGW/en/api/EventsSearch/SearchEvents",
+      "status": "ok",
+      "http_status": 405,
+      "navigation_error": "",
+      "duration_ms": 5958,
+      "classification": "empty-or-shell",
+      "next_action": "اعتبرها shell وابحث عن API أو مسار بديل قبل أي collector.",
+      "title": "",
+      "text_bytes": 536,
+      "html_bytes": 687,
+      "html_snapshot": "data/raw/browser-probes/saudi-space-agency-events-2026-09-21T08-16-12-423Z.html",
+      "screenshot": "data/raw/browser-probes/saudi-space-agency-events-2026-09-21T08-16-12-423Z.png",
+      "signals": {
+        "has_next_data": false,
+        "has_nuxt": false,
+        "has_json_ld": false,
+        "has_event_schema": false,
+        "date_snippets": [],
+        "event_like_links": []
+      },
+      "script_signals": {
+        "next_data_scripts": 0,
+        "nuxt_scripts": 0,
+        "json_ld_scripts": 0,
+        "large_inline_scripts": 0
+      },
+      "network_total": 1,
+      "network_endpoints": [],
+      "network_sample": [
+        {
+          "method": "GET",
+          "status": 405,
+          "url": "https://ssa.gov.sa/APIGW/en/api/EventsSearch/SearchEvents",
+          "content_type": "text/plain",
+          "resource_type": "document",
+          "request_post_data": "",
+          "response_shape": "text",
+          "preview": "Status Code: 405; Method Not Allowed"
+        }
+      ]
+    },
+    {
       "id": "moc-cultural-subportals",
       "probed_at": "2026-09-19T13:40:57.695Z",
       "name": "Ministry of Culture Commission Calendars",
@@ -333,7 +380,7 @@
     },
     {
       "id": "riyadh-city-events",
-      "probed_at": "2026-09-20T07:48:28.766Z",
+      "probed_at": "2026-09-21T08:16:46.524Z",
       "name": "Riyadh City Events",
       "priority": 51,
       "url": "https://riyadh.sa/en/events/all",
@@ -341,14 +388,14 @@
       "status": "ok",
       "http_status": 200,
       "navigation_error": "",
-      "duration_ms": 12994,
+      "duration_ms": 11660,
       "classification": "rendered-html-candidates",
       "next_action": "اكتب extractor مرن من DOM بعد الرندر أو حسن selector الحالي.",
       "title": "الموقع الرسمي لمدينة الرياض",
       "text_bytes": 827,
       "html_bytes": 155264,
-      "html_snapshot": "data/raw/browser-probes/riyadh-city-events-2026-09-20T07-48-02-572Z.html",
-      "screenshot": "data/raw/browser-probes/riyadh-city-events-2026-09-20T07-48-02-572Z.png",
+      "html_snapshot": "data/raw/browser-probes/riyadh-city-events-2026-09-21T08-16-12-423Z.html",
+      "screenshot": "data/raw/browser-probes/riyadh-city-events-2026-09-21T08-16-12-423Z.png",
       "signals": {
         "has_next_data": false,
         "has_nuxt": false,
@@ -403,7 +450,7 @@
     },
     {
       "id": "sdaia-calendar-events",
-      "probed_at": "2026-09-20T07:48:40.309Z",
+      "probed_at": "2026-09-21T08:16:56.631Z",
       "name": "SDAIA Calendar and Events",
       "priority": 54,
       "url": "https://sdaia.gov.sa/en/MediaCenter/Events/Pages/default.aspx",
@@ -411,14 +458,14 @@
       "status": "ok",
       "http_status": 200,
       "navigation_error": "",
-      "duration_ms": 11476,
+      "duration_ms": 10083,
       "classification": "browser-network-api",
       "next_action": "ثبت endpoint مرشحًا كجامع مباشر، ثم اكتب extractor من JSON مع اختبار انحدار.",
       "title": "SDAIA | SDAIA Calendar & Events",
       "text_bytes": 3042,
       "html_bytes": 143079,
-      "html_snapshot": "data/raw/browser-probes/sdaia-calendar-events-2026-09-20T07-48-02-572Z.html",
-      "screenshot": "data/raw/browser-probes/sdaia-calendar-events-2026-09-20T07-48-02-572Z.png",
+      "html_snapshot": "data/raw/browser-probes/sdaia-calendar-events-2026-09-21T08-16-12-423Z.html",
+      "screenshot": "data/raw/browser-probes/sdaia-calendar-events-2026-09-21T08-16-12-423Z.png",
       "signals": {
         "has_next_data": false,
         "has_nuxt": false,
@@ -499,7 +546,7 @@
         {
           "method": "GET",
           "status": 200,
-          "url": "https://sdaia.gov.sa/sdaiaapi/api/feedback/getbypageurl?pageURL=/en/mediacenter/events/pages/default.aspx&_=1789890512657",
+          "url": "https://sdaia.gov.sa/sdaiaapi/api/feedback/getbypageurl?pageURL=/en/mediacenter/events/pages/default.aspx&_=1789978609386",
           "content_type": "application/json",
           "resource_type": "xhr",
           "request_post_data": "",
@@ -511,17 +558,17 @@
         {
           "method": "GET",
           "status": 200,
-          "url": "https://sdaia.gov.sa/sdaiaformapi/api/user/GetNafathInfo?_=1789890512656",
+          "url": "https://sdaia.gov.sa/sdaiaformapi/api/user/GetNafathInfo?_=1789978609385",
           "content_type": "text/html",
           "resource_type": "xhr",
           "request_post_data": "",
           "response_shape": "html",
-          "preview": "<html><head><title>Request Rejected</title></head><body>The requested URL was rejected. Please consult with your administrator.<br><br>Your support ID is: 7032172520195120115<br><br><a href='javascript:history.back();'>[Go Back]</a></body></html>"
+          "preview": "<html><head><title>Request Rejected</title></head><body>The requested URL was rejected. Please consult with your administrator.<br><br>Your support ID is: 7032172520222972659<br><br><a href='javascript:history.back();'>[Go Back]</a></body></html>"
         },
         {
           "method": "GET",
           "status": 200,
-          "url": "https://sdaia.gov.sa/sdaiaapi/api/home/geteninternalpagenavdata?_=1789890512655",
+          "url": "https://sdaia.gov.sa/sdaiaapi/api/home/geteninternalpagenavdata?_=1789978609384",
           "content_type": "application/json",
           "resource_type": "xhr",
           "request_post_data": "",
@@ -531,128 +578,12 @@
         {
           "method": "GET",
           "status": 200,
-          "url": "https://sdaia.gov.sa/sdaiaapi/api/feedback/getbypageurl?pageURL=/en/mediacenter/events/pages/default.aspx&_=1789890512657",
+          "url": "https://sdaia.gov.sa/sdaiaapi/api/feedback/getbypageurl?pageURL=/en/mediacenter/events/pages/default.aspx&_=1789978609386",
           "content_type": "application/json",
           "resource_type": "xhr",
           "request_post_data": "",
           "response_shape": "json-object:Message,Status,ErrorCode,ErrorMessage,Notifications",
           "preview": "{\"Message\":{\"Title\":\"/en/mediacenter/events/pages/default.aspx\",\"PageId\":\"/en/mediacenter/events/pages/default.aspx\",\"YesCount\":\"0\",\"NoCount\":\"0\",\"TotalCount\":\"0\"},\"Status\":true,\"ErrorCode\":0,\"ErrorMessage\":null,\"Notifications\":null}"
-        }
-      ]
-    },
-    {
-      "id": "umm-al-qura-events",
-      "probed_at": "2026-09-20T07:48:48.142Z",
-      "name": "Umm Al-Qura University Events Center",
-      "priority": 76,
-      "url": "https://uqu.edu.sa/App/Events",
-      "final_url": "https://uqu.edu.sa/App/Events",
-      "status": "ok",
-      "http_status": 200,
-      "navigation_error": "",
-      "duration_ms": 7789,
-      "classification": "rendered-html-candidates",
-      "next_action": "اكتب extractor مرن من DOM بعد الرندر أو حسن selector الحالي.",
-      "title": "مركز الأحداث والفعاليات | جامعة أم القرى",
-      "text_bytes": 2664,
-      "html_bytes": 633581,
-      "html_snapshot": "data/raw/browser-probes/umm-al-qura-events-2026-09-20T07-48-02-572Z.html",
-      "screenshot": "data/raw/browser-probes/umm-al-qura-events-2026-09-20T07-48-02-572Z.png",
-      "signals": {
-        "has_next_data": false,
-        "has_nuxt": false,
-        "has_json_ld": false,
-        "has_event_schema": false,
-        "date_snippets": [
-          "ت دورة تدريبية بعنوان إدارة الجودة 9001 2026-09-20 09:35:54 الارشاد الأكاديمي ومهارات دعم الطلبة 2026-09-20 06:21:49 قيادة التغير",
-          "والتطوير لرأس المال البشري 2026-09-17 11:03:56 الخطة الاستراتيجية للجامعة ودور عضو هيئة التدريس في تحقيقها 2026-09-17",
-          "تدريس في الاستجابة الآمنة وإحالة الطالب 2026-09-16 20:10:15 اللقاء التعريفي بخدمات عمادة شؤون الطلاب 2026-09-16 09:59:04 الألوان ن",
-          "افذة نحو الصحة النفسية وجودة الحياة 2026-09-16 09:59:00 الدليل التنظيمي ووثيقة حقوق وواجبات عضو هيئة التدريس 2026-09-16 06:27:",
-          "07 دورة أساسيات مكافحة العدوى (BCSL) 2026-09-15 10:22:26 استراتيجيات التعليم الجامعي 2026-09-15 06:21:17 الأحداث والفعاليات الت",
-          "قويم الأكاديمي بعد 3 أيام الأربعاء 23 سبتمبر إلى الخميس 24 سبتمبر اجازة اليوم الوطني جميع الدرجات إجازات بعد 21 يوم الأحد 11",
-          "أكتوبر إلى الخميس 22 أكتوبر الاختبارات النصفية البكالوريوس وما دونها عام الآن الأحد 30 أغسطس إلى السبت 31 أ"
-        ],
-        "event_like_links": [
-          {
-            "text": "English",
-            "href": "https://uqu.edu.sa/en/App/Events"
-          },
-          {
-            "text": "English",
-            "href": "https://uqu.edu.sa/en/App/Events"
-          },
-          {
-            "text": "دورة تدريبية بعنوان إدارة الجودة 9001",
-            "href": "https://uqu.edu.sa/App/Events/41152"
-          },
-          {
-            "text": "الارشاد الأكاديمي ومهارات دعم الطلبة",
-            "href": "https://uqu.edu.sa/App/Events/41151"
-          },
-          {
-            "text": "قيادة التغير والتطوير لرأس المال البشري",
-            "href": "https://uqu.edu.sa/App/Events/41150"
-          },
-          {
-            "text": "الخطة الاستراتيجية للجامعة ودور عضو هيئة التدريس في تحقيقها",
-            "href": "https://uqu.edu.sa/App/Events/41149"
-          },
-          {
-            "text": "حين نلاحظ القلق: دور عضو هيئة التدريس في الاستجابة الآمنة وإحالة الطالب",
-            "href": "https://uqu.edu.sa/App/Events/41148"
-          },
-          {
-            "text": "اللقاء التعريفي بخدمات عمادة شؤون الطلاب",
-            "href": "https://uqu.edu.sa/App/Events/41146"
-          },
-          {
-            "text": "الألوان نافذة نحو الصحة النفسية وجودة الحياة",
-            "href": "https://uqu.edu.sa/App/Events/41145"
-          },
-          {
-            "text": "الدليل التنظيمي ووثيقة حقوق وواجبات عضو هيئة التدريس",
-            "href": "https://uqu.edu.sa/App/Events/41144"
-          },
-          {
-            "text": "دورة أساسيات مكافحة العدوى (BCSL)",
-            "href": "https://uqu.edu.sa/App/Events/41143"
-          },
-          {
-            "text": "استراتيجيات التعليم الجامعي",
-            "href": "https://uqu.edu.sa/App/Events/41142"
-          },
-          {
-            "text": "English",
-            "href": "https://uqu.edu.sa/en/App/Events"
-          },
-          {
-            "text": "",
-            "href": "https://uqu.edu.sa/App/Events"
-          },
-          {
-            "text": "",
-            "href": "https://uqu.edu.sa/App/Events"
-          }
-        ]
-      },
-      "script_signals": {
-        "next_data_scripts": 0,
-        "nuxt_scripts": 0,
-        "json_ld_scripts": 0,
-        "large_inline_scripts": 0
-      },
-      "network_total": 1,
-      "network_endpoints": [],
-      "network_sample": [
-        {
-          "method": "GET",
-          "status": 200,
-          "url": "https://muneer.cx/api/v1/subscription/status/ff0b2582-0e20-43c6-be34-bfbd666f75a4/uqu.edu.sa?v=3.9.8",
-          "content_type": "application/json",
-          "resource_type": "fetch",
-          "request_post_data": "",
-          "response_shape": "json-like-invalid",
-          "preview": "{\"status\":\"success\",\"code\":200,\"message\":\"\",\"data\":{\"css\":\"https://muneer.cx/static/v3/css/muneer.min.css\",\"js\":\"https://muneer.cx/static/v3/js/muneer.min.js\",\"options\":{\"template\":\"aside\",\"alignLeft\":false,\"analytics\":true,\"alignRight\":false,\"colorizing\":true,\"fontSizing\":true,\"hideImages\":true,\"lineHeight\":true,\"monochrome\":true,\"muteSounds\":true,\"popupTools\":true,\"textColors\":true,\"whitelabel\":false,\"alignCenter\":false,\"closeButton\":true,\"popupScroll\":true,\"popupShadow\":true,\"readingMask\":true,\"titleColors\":true,\"usefulLinks\":true,\"alignJustify\":false,\"darkContrast\":false,\"dyslexiaFont\":true,\"highContrast\":true,\"invertColors\":false,\"popupOverlay\":true,\"readableFont\":true,\"readingGuide\":true,\"sidebarAlign\":\"left\",\"textToSpeech\":true,\"themeDefault\":\"system\",\"closeAnywhere\":true,\"letterSpacing\":true,\"lightContrast\":false,\"lowSaturation\":true,\"smartContrast\":true,\"textAlignment\":true,\"textMagnifier\":true,\"themeSwitcher\":true,\"bigBlackCursor\":true,\"bigWhiteCursor\":true,\"buttonPosition\":\"bottom-right\",\"contentScaling\":true,\"highSaturation\":true,\"highlightFocus\":true,\"highlightHover\":true,\"highlightLinks\":true,\"popupAnimation\":\"fade\",\"popupDraggable\":true,\"showOpenButton\":true,\"stopAnimations\":true,\"analyticsSiteid\":85,\"easyOrientation\":true,\"googleTranslate\":true,\"highlightTitles\":true,\"profileEpilepsy\":true,\"virtualKeyboard\":true,\"voiceNavigation\":true,\"backgroundColors\":true,\"onlineDictionary\":true,\"profileBlindUsers\":true,\"profileColorblind\":true,\"buttonIconPosition\":\"before\",\"keyboardNavigation\":true,\"readableExperience\":true,\"supportedLanguages\":[\"ar\",\"en\"],\"profileAdhdFriendly\":true,\"voiceNavigationAuto\":false,\"buttonHoverAnimation\":\"none\",\"profileMotorImpaired\":true,\"accessibilityProfiles\":true,\"buttonTabulationIndex\":0,\"accessibilityStatement\":true,\"buttonEntranceA"
         }
       ]
     }

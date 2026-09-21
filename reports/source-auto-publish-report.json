@@ -1,15 +1,15 @@
 {
-  "published_at": "2026-09-20T07:55:25.099Z",
+  "published_at": "2026-09-21T08:24:55.273Z",
   "dry_run": false,
   "include_partner": true,
   "source_candidates": "data/source_candidates.json",
   "events_catalog": "data/events_catalog.json",
-  "candidates_seen": 457,
+  "candidates_seen": 460,
   "totals": {
-    "candidates_seen": 457,
-    "published": 2,
-    "linked_existing": 419,
-    "blocked": 36,
+    "candidates_seen": 460,
+    "published": 3,
+    "linked_existing": 418,
+    "blocked": 39,
     "duplicate_review_alerts": 6,
     "category_fallback_alerts": 0,
     "reconciled": 421,
@@ -128,14 +128,19 @@
   ],
   "published": [
     {
-      "candidate_id": "candidate-umm-al-qura-events-الارشاد-الأكاديمي-ومهارات-دعم-الطلبة-20260920-cca82743",
-      "event_id": "event-الارشاد-الأكاديمي-ومهارات-دعم-الطلبة",
-      "title": "الارشاد الأكاديمي ومهارات دعم الطلبة"
+      "candidate_id": "candidate-umm-al-qura-events-فاعلية-التدريس-استراتيجيات-التعلم-النشط-وتوظيف-التقنية-20260921-7ac55b31",
+      "event_id": "event-فاعلية-التدريس-استراتيجيات-التعلم-النشط-وتوظيف-التقنية",
+      "title": "فاعلية التدريس : استراتيجيات التعلم النشط وتوظيف التقنية"
     },
     {
-      "candidate_id": "candidate-umm-al-qura-events-دورة-تدريبية-بعنوان-إدارة-الجودة-9001-20260922-63429459",
-      "event_id": "event-دورة-تدريبية-بعنوان-إدارة-الجودة-9001",
-      "title": "دورة تدريبية بعنوان إدارة الجودة 9001"
+      "candidate_id": "candidate-ithra-events-an-experience-with-an-artist-20261002-1395e478",
+      "event_id": "event-an-experience-with-an-artist",
+      "title": "An Experience with an Artist"
+    },
+    {
+      "candidate_id": "candidate-ithra-events-jinayah-podcast-20261010-47998b3d",
+      "event_id": "event-jinayah-podcast",
+      "title": "Jinayah Podcast"
     }
   ],
   "linked_existing": [
@@ -413,12 +418,6 @@
       "candidate_id": "candidate-tuwaiq-academy-bootcamps-معسكر-تطوير-تطبيقات-الويب-باستخدام-لغة-python-20260719-6297fa45",
       "event_id": "event-معسكر-تطوير-تطبيقات-الويب-باستخدام-لغة-python",
       "title": "معسكر تطوير تطبيقات الويب باستخدام لغة Python",
-      "reason": "already linked to catalog event"
-    },
-    {
-      "candidate_id": "candidate-visit-saudi-calendar-pdf-صيف-وسمرة-20260721-4a38d19e",
-      "event_id": "event-صيف-وسمرة",
-      "title": "صيف وسمرة",
       "reason": "already linked to catalog event"
     },
     {
@@ -866,12 +865,6 @@
       "reason": "already linked to catalog event"
     },
     {
-      "candidate_id": "candidate-hayy-jameel-events-hayy-sounds-listening-stations-part-of-the-exhibition-red-wind-coral-wor-20260920-c9c76984",
-      "event_id": "event-hayy-sounds-listening-stations-part-of-the-exhibition-red-wind-coral-wor",
-      "title": "Hayy Sounds | Listening Stations, Part of the Exhibition ‘Red Wind, Coral Worlds’",
-      "reason": "already linked to catalog event"
-    },
-    {
       "candidate_id": "candidate-tuwaiq-academy-bootcamps-معسكر-هندسة-الحوسبة-السحابية-المتقدمة-باستخدام-google-cloud-20260920-c1ed5d59",
       "event_id": "event-معسكر-هندسة-الحوسبة-السحابية-المتقدمة-باستخدام-google-cloud",
       "title": "معسكر هندسة الحوسبة السحابية المتقدمة باستخدام Google Cloud",
@@ -932,18 +925,6 @@
       "reason": "already linked to catalog event"
     },
     {
-      "candidate_id": "candidate-ithra-events-spot-of-inspiration-20260921-5bac584c",
-      "event_id": "event-spot-of-inspiration",
-      "title": "Spot of Inspiration",
-      "reason": "already linked to catalog event"
-    },
-    {
-      "candidate_id": "candidate-ithra-events-childrens-museum-story-time-20260921-ada8b9db",
-      "event_id": "event-childrens-museum-story-time",
-      "title": "Children's Museum Story Time",
-      "reason": "already linked to catalog event"
-    },
-    {
       "candidate_id": "candidate-ithra-events-ithra-public-tour-english-20260921-bda2ffd1",
       "event_id": "event-ithra-public-tour-english",
       "title": "Ithra Public Tour (English)",
@@ -953,6 +934,12 @@
       "candidate_id": "candidate-ithra-events-childrens-art-studio-20260921-2bf92d17",
       "event_id": "event-childrens-art-studio",
       "title": "Children's Art Studio",
+      "reason": "already linked to catalog event"
+    },
+    {
+      "candidate_id": "candidate-ithra-events-childrens-museum-story-time-20260921-ada8b9db",
+      "event_id": "event-childrens-museum-story-time",
+      "title": "Children's Museum Story Time",
       "reason": "already linked to catalog event"
     },
     {
@@ -971,6 +958,12 @@
       "candidate_id": "candidate-ithra-events-trivia-night-energy-memory-20260921-0b124a27",
       "event_id": "event-trivia-night-energy-memory",
       "title": "Trivia Night - Energy Memory",
+      "reason": "already linked to catalog event"
+    },
+    {
+      "candidate_id": "candidate-ithra-events-spot-of-inspiration-20260921-5bac584c",
+      "event_id": "event-spot-of-inspiration",
+      "title": "Spot of Inspiration",
       "reason": "already linked to catalog event"
     },
     {
@@ -1061,6 +1054,12 @@
       "candidate_id": "candidate-ithra-events-throw-those-squashes-away-and-carry-me-20260922-45750673",
       "event_id": "event-throw-those-squashes-away-and-carry-me",
       "title": "Throw Those Squashes Away and Carry Me!",
+      "reason": "already linked to catalog event"
+    },
+    {
+      "candidate_id": "candidate-umm-al-qura-events-دورة-تدريبية-بعنوان-إدارة-الجودة-9001-20260922-63429459",
+      "event_id": "event-دورة-تدريبية-بعنوان-إدارة-الجودة-9001",
+      "title": "دورة تدريبية بعنوان إدارة الجودة 9001",
       "reason": "already linked to catalog event"
     },
     {
@@ -2845,6 +2844,21 @@
     {
       "candidate_id": "candidate-saudicon-events-bauma-2027-20270508-1b9b1ef4",
       "title": "bauma 沙特阿拉伯工程机械展 2027",
+      "reason": "publication gate source-evidence is not auto-publishable"
+    },
+    {
+      "candidate_id": "candidate-saudicon-events-aero-middle-east-x-sand-fun-2027-20271207-b4e68a90",
+      "title": "AERO Middle East x Sand & Fun 2027",
+      "reason": "publication gate source-evidence is not auto-publishable"
+    },
+    {
+      "candidate_id": "candidate-saudicon-events-معرض-الطيران-العام-2027-20271207-b3bf79e1",
+      "title": "معرض الطيران العام 2027",
+      "reason": "publication gate source-evidence is not auto-publishable"
+    },
+    {
+      "candidate_id": "candidate-saudicon-events-2027-20271207-c7ae3246",
+      "title": "中东航空展 × 沙漠欢乐节2027",
       "reason": "publication gate source-evidence is not auto-publishable"
     }
   ]

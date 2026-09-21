@@ -1,22 +1,22 @@
 {
   "schema": "eventlive.harvest-os-status.v1",
-  "generated_at": "2026-09-20T08:13:49.659Z",
+  "generated_at": "2026-09-21T08:42:28.799Z",
   "status": "NEEDS_WORK",
   "operating_rule": "Probe before new sources; sample before full harvest; Raw collection is not publication; discovery-only never auto-publishes.",
   "totals": {
     "sources": 88,
-    "candidates": 457,
+    "candidates": 460,
     "matched_candidates": 425,
     "auto_publish_sources": 15,
     "candidate_only_sources": 12,
     "partnership_required_sources": 5,
     "blocked_or_closed_sources": 0,
     "manual_review_sources": 56,
-    "collection_attempted": 19,
-    "productive_sources": 15,
-    "collector_errors": 7,
+    "collection_attempted": 31,
+    "productive_sources": 17,
+    "collector_errors": 6,
     "chronic_collector_errors": 6,
-    "transient_collector_errors": 1
+    "transient_collector_errors": 0
   },
   "policies": {
     "partnership_required": 5,
@@ -27,22 +27,22 @@
   "candidates_by_gate": {
     "catalog-review": 423,
     "duplicate-review": 6,
-    "source-evidence": 28
+    "source-evidence": 31
   },
   "funnel": {
-    "discovered_this_run": 199,
-    "candidate_queue": 457,
-    "evaluated_for_publish": 457,
-    "linked_existing": 419,
-    "published_new": 2,
-    "blocked": 36,
+    "discovered_this_run": 227,
+    "candidate_queue": 460,
+    "evaluated_for_publish": 460,
+    "linked_existing": 418,
+    "published_new": 3,
+    "blocked": 39,
     "secondary_promoted": 0,
-    "secondary_still_blocked": 36
+    "secondary_still_blocked": 40
   },
   "blocked_reasons": {
     "possible duplicate requires review: exact-title-city-source-conflict": 2,
     "unknown category requires review": 4,
-    "publication gate source-evidence is not auto-publishable": 22,
+    "publication gate source-evidence is not auto-publishable": 25,
     "possible duplicate requires review: fuzzy-title-venue-date-window": 2,
     "possible duplicate already exists: event-melwah-falcon-racing": 2,
     "possible duplicate requires review: exact-title-city-venue-conflict": 2,
@@ -53,50 +53,43 @@
     {
       "id": "moc-cultural-calendar",
       "note": "collector-error: fetch failed; fetch failed",
-      "error_streak": 36,
+      "error_streak": 37,
       "kind": "chronic",
-      "attempted_this_run": false
+      "attempted_this_run": true
     },
     {
       "id": "mos-events",
-      "note": "collector-error: fetch failed",
-      "error_streak": 36,
+      "note": "collector-error: fetch failed; live browser recovery deferred by recent failed probe cooldown",
+      "error_streak": 37,
       "kind": "chronic",
-      "attempted_this_run": false
+      "attempted_this_run": true
     },
     {
       "id": "moc-cultural-subportals",
       "note": "collector-error: fetch failed; fetch failed",
-      "error_streak": 36,
+      "error_streak": 37,
       "kind": "chronic",
-      "attempted_this_run": false
+      "attempted_this_run": true
     },
     {
       "id": "saudi-pro-league-fixtures",
       "note": "collector-error: fetch failed",
-      "error_streak": 16,
+      "error_streak": 17,
       "kind": "chronic",
-      "attempted_this_run": false
+      "attempted_this_run": true
     },
     {
       "id": "tuwaiq-academy-bootcamps",
       "note": "collector-error: HTTP 403",
-      "error_streak": 13,
+      "error_streak": 14,
       "kind": "chronic",
-      "attempted_this_run": false
+      "attempted_this_run": true
     },
     {
       "id": "monshaat-events",
       "note": "collector-error: fetch failed; fetch failed",
-      "error_streak": 4,
+      "error_streak": 5,
       "kind": "chronic",
-      "attempted_this_run": false
-    },
-    {
-      "id": "saudi-space-agency-events",
-      "note": "fetch failed",
-      "error_streak": 1,
-      "kind": "transient",
       "attempted_this_run": true
     }
   ],

@@ -1,14 +1,14 @@
 # EventLive Visit Saudi Image Identity Report
 
-- generated_at: 2026-09-20T07:55:28.460Z
+- generated_at: 2026-09-21T08:24:57.440Z
 - pdf_crop_assignments: 23
-- verified: 23
-- struck: 0
-- slots_seen_this_cycle: 24
+- verified: 22
+- struck: 1
+- slots_seen_this_cycle: 23
 
 ## Struck (fell back to generated cover)
 
-- none
+- صيف وسمرة (visit-saudi-summer-2026-p012-top-right.jpg) - slot-vacated - no dated card currently occupies page 12 top-right of https://www.visitsaudi.com/content/dam/documents/saudi-calendar-ar.pdf
 
 ## Verified
 
@@ -23,7 +23,6 @@
 - واحة عسيب (visit-saudi-summer-2026-p009-top-left.jpg)
 - بيوني الشرف (visit-saudi-summer-2026-p010-bottom-right.jpg)
 - مهابة (visit-saudi-summer-2026-p011-bottom-left.png)
-- صيف وسمرة (visit-saudi-summer-2026-p012-top-right.jpg)
 - شعف (visit-saudi-summer-2026-p012-top-left.jpg)
 - بسطة القابل (visit-saudi-summer-2026-p012-bottom-right.jpg)
 - جولة بقي السريعة الباحة (visit-saudi-summer-2026-p072-bottom-right.jpg)

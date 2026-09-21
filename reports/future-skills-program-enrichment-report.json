@@ -1,10 +1,10 @@
 {
-  "generated_at": "2026-09-20T07:55:33.129Z",
+  "generated_at": "2026-09-21T08:25:01.970Z",
   "catalog": "data/events_catalog.json",
   "totals": {
     "targets": 28,
-    "enriched": 27,
-    "failed": 1
+    "enriched": 26,
+    "failed": 2
   },
   "enriched": [
     {
@@ -23,15 +23,6 @@
       "goals": 5,
       "features": 15,
       "requirements": 5,
-      "metadata": 8
-    },
-    {
-      "id": "event-security-operations-threat-detection-incident-response-عمليات-الأمن-السي",
-      "title": "Security Operations, Threat Detection & Incident Response - عمليات الأمن السيبراني، واكتشاف التهديدات، والاستجابة للحوادث",
-      "group_id": "13040",
-      "goals": 1,
-      "features": 3,
-      "requirements": 4,
       "metadata": 8
     },
     {
@@ -252,6 +243,12 @@
     }
   ],
   "failed": [
+    {
+      "id": "event-security-operations-threat-detection-incident-response-عمليات-الأمن-السي",
+      "title": "Security Operations, Threat Detection & Incident Response - عمليات الأمن السيبراني، واكتشاف التهديدات، والاستجابة للحوادث",
+      "group_id": "13040",
+      "reason": "HTTP 403"
+    },
     {
       "id": "event-linux-administration",
       "title": "Linux Administration",
