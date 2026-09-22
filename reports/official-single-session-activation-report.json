@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-22T07:59:15.788Z",
+  "generated_at": "2026-09-22T16:22:46.267Z",
   "max_duration_hours": 8,
   "totals": {
     "activated": 38,
@@ -381,12 +381,6 @@
       "duration_hours": 47.98
     },
     {
-      "id": "event-unstable",
-      "title": "Unstable",
-      "source_label": "MDLBEAST Events",
-      "duration_hours": 24
-    },
-    {
       "id": "event-3v3-basketball-tournament",
       "title": "3v3 Basketball Tournament",
       "source_label": "Saudi Universities and Technical Colleges",
@@ -397,6 +391,12 @@
       "title": "Join the KAUST Blood Donation Campaign",
       "source_label": "Saudi Universities and Technical Colleges",
       "duration_hours": 100
+    },
+    {
+      "id": "event-unstable",
+      "title": "Unstable",
+      "source_label": "MDLBEAST Events",
+      "duration_hours": 24
     },
     {
       "id": "event-kaust-workshop-on-ai-enabled-microwave-sensing-and-communication",

@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "generated_at": "2026-09-22T08:04:10.899Z",
+  "generated_at": "2026-09-22T16:28:44.571Z",
   "events": {
     "event-skill-development-initiative": {
       "identity": "skill development initiative|riyadh|2021-07-14",
@@ -607,6 +607,11 @@
       "first_seen": "2026-07-11",
       "last_seen": "2026-09-22"
     },
+    "event-تجربة-شاطئ-قالو": {
+      "identity": "تجربة شاطئ قالو|aseer|2026-08-25",
+      "first_seen": "2026-09-22",
+      "last_seen": "2026-09-22"
+    },
     "event-galu-beach-experience": {
       "identity": "galu beach experience|jeddah|2026-08-25",
       "first_seen": "2026-09-15",
@@ -672,6 +677,11 @@
       "first_seen": "2026-09-01",
       "last_seen": "2026-09-22"
     },
+    "event-استمرارية-26": {
+      "identity": "استمرارية 26|riyadh|2026-09-03",
+      "first_seen": "2026-09-22",
+      "last_seen": "2026-09-22"
+    },
     "event-continuum-26-diriyah-art-futures-emerging-new-media-artists-programme": {
       "identity": "continuum '26 diriyah art futures emerging new media artists programme|diriyah|2026-09-03",
       "first_seen": "2026-09-17",
@@ -720,6 +730,11 @@
     "event-معسكر-إدارة-الحوكمة-والمخاطر-والامتثال-grc": {
       "identity": "معسكر إدارة الحوكمة والمخاطر والامتثال grc|riyadh|2026-09-06",
       "first_seen": "2026-07-11",
+      "last_seen": "2026-09-22"
+    },
+    "event-الدوري-السعودي-للرياضات-الالكترونية-القتالية": {
+      "identity": "الدوري السعودي للرياضات الالكترونية القتالية|riyadh|2026-09-10",
+      "first_seen": "2026-09-22",
       "last_seen": "2026-09-22"
     },
     "event-hayy-explorers-in-september-as-told-by-the-land-constructed-worlds": {
@@ -822,19 +837,14 @@
       "first_seen": "2026-09-17",
       "last_seen": "2026-09-22"
     },
+    "event-دوري-الملوك-mena": {
+      "identity": "دوري الملوك mena|riyadh|2026-09-18",
+      "first_seen": "2026-09-22",
+      "last_seen": "2026-09-22"
+    },
     "event-wind-energy": {
       "identity": "wind energy|dhahran|2026-09-19",
       "first_seen": "2026-09-15",
-      "last_seen": "2026-09-22"
-    },
-    "event-gulf-steel-storage-tank-refinery-expo": {
-      "identity": "gulf steel, storage tank & refinery expo|dhahran|2026-09-20",
-      "first_seen": "2026-07-11",
-      "last_seen": "2026-09-22"
-    },
-    "event-facility-management-conference-exhibition": {
-      "identity": "facility management conference & exhibition|riyadh|2026-09-20",
-      "first_seen": "2026-07-11",
       "last_seen": "2026-09-22"
     },
     "event-معسكر-علم-البيانات-والذكاء-الاصطناعي": {
@@ -900,6 +910,11 @@
     "event-new-saudi-voices": {
       "identity": "new saudi voices|dhahran|2026-09-22",
       "first_seen": "2026-09-15",
+      "last_seen": "2026-09-22"
+    },
+    "event-كأس-الخليج": {
+      "identity": "كأس الخليج|aseer|2026-09-23",
+      "first_seen": "2026-09-22",
       "last_seen": "2026-09-22"
     },
     "event-saudi-national-day": {
@@ -972,6 +987,11 @@
       "first_seen": "2026-09-15",
       "last_seen": "2026-09-22"
     },
+    "event-تكوة-شاكر": {
+      "identity": "تكوة شاكر|aseer|2026-09-24",
+      "first_seen": "2026-09-22",
+      "last_seen": "2026-09-22"
+    },
     "event-the-egyptian-products-exhibition": {
       "identity": "the egyptian products exhibition|dhahran|2026-09-24",
       "first_seen": "2026-07-11",
@@ -997,9 +1017,44 @@
       "first_seen": "2026-09-15",
       "last_seen": "2026-09-22"
     },
+    "event-frequency-room-pre-launch-series-varoo-all-night-long": {
+      "identity": "frequency room: pre-launch series — varoo - all night long|aseer|2026-09-25",
+      "first_seen": "2026-09-22",
+      "last_seen": "2026-09-22"
+    },
+    "event-ليلة-جاز-في-جدة-مع-فايا-يونان": {
+      "identity": "ليلة جاز في جدة مع فايا يونان|aseer|2026-09-25",
+      "first_seen": "2026-09-22",
+      "last_seen": "2026-09-22"
+    },
+    "event-مهرجان-الكوميديا-مع-محمد-حلمي-في-six-flags-مدينة-القدية": {
+      "identity": "مهرجان الكوميديا مع محمد حلمي في six flags مدينة القدية|riyadh|2026-09-25",
+      "first_seen": "2026-09-22",
+      "last_seen": "2026-09-22"
+    },
+    "event-جلسة-طق": {
+      "identity": "جلسة طق|riyadh|2026-09-25",
+      "first_seen": "2026-09-22",
+      "last_seen": "2026-09-22"
+    },
+    "event-حفل-عايض-في-فوكالي-الرياض": {
+      "identity": "حفل عايض في فوكالي الرياض|riyadh|2026-09-25",
+      "first_seen": "2026-09-22",
+      "last_seen": "2026-09-22"
+    },
     "event-faia-younan-in-jeddah": {
       "identity": "faia younan in jeddah|jeddah|2026-09-25",
       "first_seen": "2026-09-17",
+      "last_seen": "2026-09-22"
+    },
+    "event-خالد-جواد-ايف-في-جدة": {
+      "identity": "خالد جواد ايف في جدة|aseer|2026-09-26",
+      "first_seen": "2026-09-22",
+      "last_seen": "2026-09-22"
+    },
+    "event-صالح-النواوي،-سيف-زغموري،-عبدا-صبيح-،-طلال-الشيخي-في-six-flags": {
+      "identity": "صالح النواوي، سيف زغموري، عبدا صبيح ، طلال الشيخي في six flags|riyadh|2026-09-26",
+      "first_seen": "2026-09-22",
       "last_seen": "2026-09-22"
     },
     "event-pool-party": {
@@ -1025,6 +1080,11 @@
     "event-rotating-equipment-event": {
       "identity": "rotating equipment event|dhahran|2026-09-27",
       "first_seen": "2026-07-29",
+      "last_seen": "2026-09-22"
+    },
+    "event-introduction-to-apis-and-web-services": {
+      "identity": "introduction to apis and web services|online|2026-09-27",
+      "first_seen": "2026-09-22",
       "last_seen": "2026-09-22"
     },
     "event-معسكر-التقنيات-الناشئة-والعوالم-الافتراضية": {
@@ -1102,6 +1162,11 @@
       "first_seen": "2026-07-11",
       "last_seen": "2026-09-22"
     },
+    "event-طوني-أبو-جودة-في-الرياض": {
+      "identity": "طوني أبو جودة في الرياض|riyadh|2026-10-01",
+      "first_seen": "2026-09-22",
+      "last_seen": "2026-09-22"
+    },
     "event-king-khaled-eye-specialist-hospital-and-research-center-2026-internation": {
       "identity": "king khaled eye specialist hospital and research center 2026 international conference|riyadh|2026-10-01",
       "first_seen": "2026-07-11",
@@ -1125,6 +1190,11 @@
     "event-tony-abou-jaoude-live-in-riyadh": {
       "identity": "tony abou jaoude live in riyadh|riyadh|2026-10-01",
       "first_seen": "2026-09-15",
+      "last_seen": "2026-09-22"
+    },
+    "event-بي-إف-إل-مينا-11-نصف-النهائي-في-الرياض": {
+      "identity": "بي إف إل مينا 11 - نصف النهائي في الرياض|riyadh|2026-10-02",
+      "first_seen": "2026-09-22",
       "last_seen": "2026-09-22"
     },
     "event-pfl-mena-11-semi-finals-in-riyadh": {
@@ -1312,6 +1382,11 @@
       "first_seen": "2026-09-15",
       "last_seen": "2026-09-22"
     },
+    "event-عرض-علاء-الشيخ-في-الرياض": {
+      "identity": "عرض علاء الشيخ في الرياض|riyadh|2026-10-15",
+      "first_seen": "2026-09-22",
+      "last_seen": "2026-09-22"
+    },
     "event-15th-middle-east-enterprise-ai-analytics-summit": {
       "identity": "15th middle east enterprise ai & analytics summit|riyadh|2026-10-15",
       "first_seen": "2026-07-11",
@@ -1320,6 +1395,11 @@
     "event-alaa-el-sheikh-live-in-riyadh": {
       "identity": "alaa el sheikh live in riyadh|riyadh|2026-10-15",
       "first_seen": "2026-09-15",
+      "last_seen": "2026-09-22"
+    },
+    "event-عرض-علاء-الشيخ-في-جدة": {
+      "identity": "عرض علاء الشيخ في جدة|saudi arabia|2026-10-16",
+      "first_seen": "2026-09-22",
       "last_seen": "2026-09-22"
     },
     "event-alaa-el-sheikh-live-in-jeddah": {
@@ -1342,6 +1422,11 @@
       "first_seen": "2026-07-11",
       "last_seen": "2026-09-22"
     },
+    "event-six-kings-slam": {
+      "identity": "six kings slam|riyadh|2026-10-21",
+      "first_seen": "2026-09-22",
+      "last_seen": "2026-09-22"
+    },
     "event-immersive-introduction-to-arabic-writing-and-type-design": {
       "identity": "immersive introduction to arabic writing and type design|dhahran|2026-10-21",
       "first_seen": "2026-07-11",
@@ -1352,9 +1437,19 @@
       "first_seen": "2026-08-17",
       "last_seen": "2026-09-22"
     },
+    "event-لحد-يدري-عرض-ستاند-اب-كوميدي-من-أسامة-بازيد": {
+      "identity": "لحد يدري: عرض ستاند اب كوميدي من أسامة بازيد|saudi arabia|2026-10-22",
+      "first_seen": "2026-09-22",
+      "last_seen": "2026-09-22"
+    },
     "event-فينا-نحكي؟-كوميديا-ستاند-أب-مع-جون-أشقر": {
       "identity": "”فينا نحكي؟“ كوميديا ستاند أب مع جون أشقر|jeddah|2026-10-23",
       "first_seen": "2026-07-18",
+      "last_seen": "2026-09-22"
+    },
+    "event-لحد-يدري-عرض-ستاند-اب-كوميدي-من-أسامة-بازيد-2": {
+      "identity": "لحد يدري: عرض ستاند اب كوميدي من أسامة بازيد|jeddah|2026-10-23",
+      "first_seen": "2026-09-22",
       "last_seen": "2026-09-22"
     },
     "event-alula-wellness-festival": {
@@ -1422,6 +1517,11 @@
       "first_seen": "2026-07-18",
       "last_seen": "2026-09-22"
     },
+    "event-حفل-ماريلين-نعمان-الموسيقي": {
+      "identity": "حفل ماريلين نعمان الموسيقي|riyadh|2026-10-29",
+      "first_seen": "2026-09-22",
+      "last_seen": "2026-09-22"
+    },
     "event-new-global-sport-conference": {
       "identity": "new global sport conference|riyadh|2026-10-30",
       "first_seen": "2026-07-11",
@@ -1467,6 +1567,11 @@
       "first_seen": "2026-07-11",
       "last_seen": "2026-09-22"
     },
+    "event-مهرجان-سماء-العا": {
+      "identity": "مهرجان سماء العا|al baha|2026-11-06",
+      "first_seen": "2026-09-22",
+      "last_seen": "2026-09-22"
+    },
     "event-alula-skies-festival": {
       "identity": "alula skies festival|alula|2026-11-06",
       "first_seen": "2026-07-11",
@@ -1475,6 +1580,11 @@
     "event-wagef-nemr-live-comedy-show-in-riyadh": {
       "identity": "wagef! nemr live comedy show in riyadh|riyadh|2026-11-06",
       "first_seen": "2026-09-17",
+      "last_seen": "2026-09-22"
+    },
+    "event-وقف-عرض-نمر-الكوميدي-مباشر-في-جدة": {
+      "identity": "وقف! عرض نمر الكوميدي مباشر في جدة|saudi arabia|2026-11-07",
+      "first_seen": "2026-09-22",
       "last_seen": "2026-09-22"
     },
     "event-hayy-cinema-the-golden-palm-film-programme-the-best-of-the-saudi-film-fe": {
@@ -2080,6 +2190,16 @@
     "event-الارشاد-الأكاديمي-ومهارات-دعم-الطلبة": {
       "identity": "الارشاد الأكاديمي ومهارات دعم الطلبة|online|2026-09-20",
       "first_seen": "2026-09-20",
+      "last_seen": "2026-09-22"
+    },
+    "event-gulf-steel-storage-tank-refinery-expo": {
+      "identity": "gulf steel, storage tank & refinery expo|dhahran|2026-09-20",
+      "first_seen": "2026-07-11",
+      "last_seen": "2026-09-22"
+    },
+    "event-facility-management-conference-exhibition": {
+      "identity": "facility management conference & exhibition|riyadh|2026-09-20",
+      "first_seen": "2026-07-11",
       "last_seen": "2026-09-22"
     },
     "event-3a-ka3ba-2": {

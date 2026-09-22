@@ -1,8 +1,8 @@
 # Future Skills Program Enrichment Report
 
-- generated_at: 2026-09-22T07:54:32.344Z
-- targets: 28
-- enriched: 27
+- generated_at: 2026-09-22T16:16:13.429Z
+- targets: 29
+- enriched: 28
 - failed: 1
 
 ## Enriched
@@ -34,6 +34,7 @@
 - Data Analysis with Python (13062) - outcomes=1, topics=1, requirements=4, metadata=8
 - Red Hat Certified System Administrator (RHCSA) (13063) - outcomes=1, topics=1, requirements=4, metadata=8
 - Data Science Foundations (13066) - outcomes=1, topics=1, requirements=4, metadata=8
+- Introduction to APIs and Web Services (13067) - outcomes=1, topics=1, requirements=4, metadata=8
 
 ## Failed
 

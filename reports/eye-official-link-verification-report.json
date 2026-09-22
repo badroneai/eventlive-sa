@@ -1,20 +1,14 @@
 {
   "schema": "eventlive.eye-official-link-verification.v1",
-  "generated_at": "2026-09-22T07:54:20.387Z",
+  "generated_at": "2026-09-22T16:15:58.854Z",
   "dry_run": false,
   "totals": {
-    "targets": 6,
-    "confirmed": 1,
-    "skipped": 2,
-    "failed": 3
+    "targets": 5,
+    "confirmed": 0,
+    "skipped": 0,
+    "failed": 5
   },
   "rows": [
-    {
-      "candidate_id": "candidate-eye-of-riyadh-events-oxford-future-of-real-estate-programme-20260805-7c9ee195",
-      "title": "Oxford Future of Real Estate Programme",
-      "status": "failed",
-      "reason": "HTTP 403"
-    },
     {
       "candidate_id": "candidate-eye-of-riyadh-events-global-proptech-summit-2026-20261025-7c1d3001",
       "title": "Global Proptech Summit 2026",
@@ -30,71 +24,20 @@
     {
       "candidate_id": "candidate-eye-of-riyadh-events-cips-mena-procurement-and-supply-chain-futures-conference-and-awards-20261028-18fb7207",
       "title": "CIPS MENA Procurement and Supply Chain Futures conference and awards",
-      "status": "confirmed",
-      "official_url": "https://www.cipsmenaconferenceandawards.com/",
-      "official_image_url": "https://static.wixstatic.com/media/708478_a08e284e0e2b4361addf88f967bb6b9f%7Emv2.png/v1/fit/w_2500,h_1330,al_c/708478_a08e284e0e2b4361addf88f967bb6b9f%7Emv2.png",
-      "organizer": "Eye of Riyadh",
-      "confirmed": true,
-      "reason": "confirmed",
-      "title_tokens": [
-        "cips",
-        "mena",
-        "procurement",
-        "supply",
-        "chain",
-        "futures"
-      ],
-      "matched_title_tokens": [
-        "cips",
-        "mena",
-        "procurement",
-        "supply",
-        "chain"
-      ],
-      "year_confirmed": true,
-      "month_confirmed": true
+      "status": "failed",
+      "reason": "HTTP 403"
     },
     {
       "candidate_id": "candidate-eye-of-riyadh-events-real-estate-future-forum-20270125-d058344d",
       "title": "Real Estate Future Forum",
-      "status": "skipped",
-      "official_url": "https://www.therff.com/",
-      "confirmed": false,
-      "reason": "year-not-confirmed",
-      "title_tokens": [
-        "real",
-        "estate",
-        "future"
-      ],
-      "matched_title_tokens": [
-        "real",
-        "estate",
-        "future"
-      ],
-      "year_confirmed": false,
-      "month_confirmed": true
+      "status": "failed",
+      "reason": "HTTP 403"
     },
     {
       "candidate_id": "candidate-eye-of-riyadh-events-real-estate-excellence-award-2026-rea-2026-20270126-5e55ea49",
       "title": "Real Estate Excellence Award 2026 (REA 2026)",
-      "status": "skipped",
-      "official_url": "https://www.realestateexcellenceaward.com/apply",
-      "confirmed": false,
-      "reason": "year-not-confirmed",
-      "title_tokens": [
-        "real",
-        "estate",
-        "excellence",
-        "rea"
-      ],
-      "matched_title_tokens": [
-        "real",
-        "estate",
-        "excellence",
-        "rea"
-      ],
-      "year_confirmed": false,
-      "month_confirmed": false
+      "status": "failed",
+      "reason": "HTTP 403"
     }
   ]
 }

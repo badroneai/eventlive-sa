@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-22T07:54:29.196Z",
+  "generated_at": "2026-09-22T16:16:08.038Z",
   "catalog": "data/events_catalog.json",
   "candidates": "data/source_candidates.json",
   "manifest": "data/event_image_cache_manifest.json",
@@ -9,132 +9,165 @@
     "min_intersection": 2
   },
   "totals": {
-    "pdf_crop_assignments": 22,
-    "verified": 22,
-    "struck": 0,
-    "slots_seen_this_cycle": 23
+    "pdf_crop_assignments": 46,
+    "verified": 27,
+    "struck": 19,
+    "slots_seen_this_cycle": 47
   },
-  "struck": [],
-  "verified": [
+  "struck": [
     {
       "id": "event-أشجار",
       "title": "أشجار",
       "file": "visit-saudi-summer-2026-p004-top-right.jpg",
-      "matched_tokens": [
-        "اشجار"
-      ]
+      "reason": "identity-mismatch",
+      "detail": "page 4 top-right is now \"معرض قلب البحر\"",
+      "matched_tokens": [],
+      "ratio": 0
     },
     {
       "id": "event-سوق-الثلاثاء-الشعبي",
       "title": "سوق الثلاثاء الشعبي",
       "file": "visit-saudi-summer-2026-p004-top-left.jpg",
-      "matched_tokens": [
-        "سوق",
-        "الثلاثاء",
-        "الشعبي"
-      ]
+      "reason": "identity-mismatch",
+      "detail": "page 4 top-left is now \"معرض في تتبّع ذكريات غامرة\"",
+      "matched_tokens": [],
+      "ratio": 0
     },
     {
       "id": "event-صندوق-أسامة-من-مخرج-ثمانية",
       "title": "صندوق أسامة من مخرج ثمانية",
       "file": "visit-saudi-summer-2026-p057-bottom-right.jpg",
-      "matched_tokens": [
-        "صندوق",
-        "اسامه",
-        "مخرج",
-        "ثمانيه"
-      ]
+      "reason": "slot-vacated",
+      "detail": "no dated card currently occupies page 57 bottom-right of https://www.visitsaudi.com/content/dam/documents/saudi-calendar-ar.pdf"
     },
     {
       "id": "event-كايف-المزرعة",
       "title": "كايف المزرعة",
       "file": "visit-saudi-summer-2026-p057-bottom-left.jpg",
-      "matched_tokens": [
-        "كايف",
-        "المزرعه"
-      ]
+      "reason": "slot-vacated",
+      "detail": "no dated card currently occupies page 57 bottom-left of https://www.visitsaudi.com/content/dam/documents/saudi-calendar-ar.pdf"
     },
     {
       "id": "event-مزرعة-ركايب",
       "title": "مزرعة ركايب",
       "file": "visit-saudi-summer-2026-p006-bottom-right.jpg",
-      "matched_tokens": [
-        "مزرعه",
-        "ركايب"
-      ]
+      "reason": "slot-vacated",
+      "detail": "no dated card currently occupies page 6 bottom-right of https://www.visitsaudi.com/content/dam/documents/saudi-calendar-ar.pdf"
     },
     {
       "id": "event-معرض-قلب-البحر",
       "title": "معرض قلب البحر",
       "file": "visit-saudi-summer-2026-p040-top-left.png",
-      "matched_tokens": [
-        "معرض",
-        "قلب",
-        "البحر"
-      ]
+      "reason": "slot-vacated",
+      "detail": "no dated card currently occupies page 40 top-left of https://www.visitsaudi.com/content/dam/documents/saudi-calendar-ar.pdf"
     },
     {
       "id": "event-معرض-في-تتبّع-ذكريات-غامرة",
       "title": "معرض في تتبّع ذكريات غامرة",
       "file": "visit-saudi-summer-2026-p040-bottom-right.png",
-      "matched_tokens": [
-        "معرض",
-        "تتبع",
-        "ذكريات",
-        "غامره"
-      ]
+      "reason": "slot-vacated",
+      "detail": "no dated card currently occupies page 40 bottom-right of https://www.visitsaudi.com/content/dam/documents/saudi-calendar-ar.pdf"
     },
     {
       "id": "event-نادي-ستورم-في-العماريه",
       "title": "نادي ستورم في العماريه",
       "file": "visit-saudi-summer-2026-p058-top-left.jpg",
-      "matched_tokens": [
-        "نادي",
-        "ستورم",
-        "العماريه"
-      ]
+      "reason": "slot-vacated",
+      "detail": "no dated card currently occupies page 58 top-left of https://www.visitsaudi.com/content/dam/documents/saudi-calendar-ar.pdf"
     },
     {
       "id": "event-واحة-عسيب",
       "title": "واحة عسيب",
       "file": "visit-saudi-summer-2026-p009-top-left.jpg",
-      "matched_tokens": [
-        "واحه",
-        "عسيب"
-      ]
+      "reason": "slot-vacated",
+      "detail": "no dated card currently occupies page 9 top-left of https://www.visitsaudi.com/content/dam/documents/saudi-calendar-ar.pdf"
     },
     {
       "id": "event-بيوني-الشرف",
       "title": "بيوني الشرف",
       "file": "visit-saudi-summer-2026-p010-bottom-right.jpg",
-      "matched_tokens": [
-        "بيوني",
-        "الشرف"
-      ]
+      "reason": "slot-vacated",
+      "detail": "no dated card currently occupies page 10 bottom-right of https://www.visitsaudi.com/content/dam/documents/saudi-calendar-ar.pdf"
     },
     {
       "id": "event-مهابة",
       "title": "مهابة",
       "file": "visit-saudi-summer-2026-p011-bottom-left.png",
-      "matched_tokens": [
-        "مهابه"
-      ]
+      "reason": "slot-vacated",
+      "detail": "no dated card currently occupies page 11 bottom-left of https://www.visitsaudi.com/content/dam/documents/saudi-calendar-ar.pdf"
     },
     {
       "id": "event-شعف",
       "title": "شعف",
       "file": "visit-saudi-summer-2026-p012-top-left.jpg",
-      "matched_tokens": [
-        "شعف"
-      ]
+      "reason": "slot-vacated",
+      "detail": "no dated card currently occupies page 12 top-left of https://www.visitsaudi.com/content/dam/documents/saudi-calendar-ar.pdf"
     },
     {
       "id": "event-بسطة-القابل",
       "title": "بسطة القابل",
       "file": "visit-saudi-summer-2026-p012-bottom-right.jpg",
+      "reason": "slot-vacated",
+      "detail": "no dated card currently occupies page 12 bottom-right of https://www.visitsaudi.com/content/dam/documents/saudi-calendar-ar.pdf"
+    },
+    {
+      "id": "event-سيرك-فونتانا",
+      "title": "سيرك فونتانا",
+      "file": "visit-saudi-summer-2026-p062-bottom-right.jpg",
+      "reason": "identity-mismatch",
+      "detail": "page 62 bottom-right is now \"عرض علاء الشيخ في الرياض\"",
+      "matched_tokens": [],
+      "ratio": 0
+    },
+    {
+      "id": "event-in-act-act-x",
+      "title": "IN ACT - ACT X",
+      "file": "visit-saudi-summer-2026-p063-top-left.jpg",
+      "reason": "identity-mismatch",
+      "detail": "page 63 top-left is now \"حفل ماريلين نعمان الموسيقي\"",
+      "matched_tokens": [],
+      "ratio": 0
+    },
+    {
+      "id": "event-فينا-نحكي؟-عرض-ستاند-أب-كوميدي-يقدمه-جون-أشقر",
+      "title": "فينا نحكي؟ عرض ستاند أب كوميدي يقدمه جون أشقر",
+      "file": "visit-saudi-summer-2026-p063-bottom-right.jpg",
+      "reason": "identity-mismatch",
+      "detail": "page 63 bottom-right is now \"ENC 2026\"",
+      "matched_tokens": [],
+      "ratio": 0
+    },
+    {
+      "id": "event-فينا-نحكي؟-كوميديا-ستاند-أب-مع-جون-أشقر",
+      "title": "”فينا نحكي؟“ كوميديا ستاند أب مع جون أشقر",
+      "file": "visit-saudi-summer-2026-p043-bottom-left.jpg",
+      "reason": "slot-vacated",
+      "detail": "no dated card currently occupies page 43 bottom-left of https://www.visitsaudi.com/content/dam/documents/saudi-calendar-ar.pdf"
+    },
+    {
+      "id": "event-ألف-وواحد",
+      "title": "ألف وواحد",
+      "file": "visit-saudi-summer-2026-p063-bottom-left.jpg",
+      "reason": "identity-mismatch",
+      "detail": "page 63 bottom-left is now \"وقف! عرض نمر الكوميدي المباشر في الرياض\"",
+      "matched_tokens": [],
+      "ratio": 0
+    },
+    {
+      "id": "event-in-act-anniversary-act-xi-2",
+      "title": "IN ACT ANNIVERSARY - ACT XI",
+      "file": "visit-saudi-summer-2026-p044-top-right.jpg",
+      "reason": "slot-vacated",
+      "detail": "no dated card currently occupies page 44 top-right of https://www.visitsaudi.com/content/dam/documents/saudi-calendar-ar.pdf"
+    }
+  ],
+  "verified": [
+    {
+      "id": "event-الأخطبوطية",
+      "title": "الاخطبوطية",
+      "file": "visit-saudi-summer-2026-p052-top-right.jpg",
       "matched_tokens": [
-        "بسطه",
-        "القابل"
+        "الاخطبوطيه"
       ]
     },
     {
@@ -161,72 +194,273 @@
       ]
     },
     {
-      "id": "event-سيرك-فونتانا",
-      "title": "سيرك فونتانا",
+      "id": "event-تجربة-شاطئ-قالو",
+      "title": "تجربة شاطئ قالو",
+      "file": "visit-saudi-summer-2026-p004-bottom-left.jpg",
+      "matched_tokens": [
+        "تجربه",
+        "شاطي",
+        "قالو"
+      ]
+    },
+    {
+      "id": "event-استمرارية-26",
+      "title": "استمرارية 26",
+      "file": "visit-saudi-summer-2026-p052-top-left.jpg",
+      "matched_tokens": [
+        "استمراريه"
+      ]
+    },
+    {
+      "id": "event-الدوري-السعودي-للرياضات-الالكترونية-القتالية",
+      "title": "الدوري السعودي للرياضات الالكترونية القتالية",
+      "file": "visit-saudi-summer-2026-p052-bottom-right.jpg",
+      "matched_tokens": [
+        "الدوري",
+        "السعودي",
+        "للرياضات",
+        "الالكترونيه",
+        "القتاليه"
+      ]
+    },
+    {
+      "id": "event-دوري-الملوك-mena",
+      "title": "دوري الملوك MENA",
+      "file": "visit-saudi-summer-2026-p053-top-right.jpg",
+      "matched_tokens": [
+        "دوري",
+        "الملوك",
+        "mena"
+      ]
+    },
+    {
+      "id": "event-كأس-الخليج",
+      "title": "كأس الخليج",
+      "file": "visit-saudi-summer-2026-p007-bottom-right.jpg",
+      "matched_tokens": [
+        "كاس",
+        "الخليج"
+      ]
+    },
+    {
+      "id": "event-تكوة-شاكر",
+      "title": "تكوة شاكر",
+      "file": "visit-saudi-summer-2026-p007-bottom-left.jpg",
+      "matched_tokens": [
+        "تكوه",
+        "شاكر"
+      ]
+    },
+    {
+      "id": "event-frequency-room-pre-launch-series-varoo-all-night-long",
+      "title": "Frequency Room: Pre-Launch Series — Varoo - All night long",
+      "file": "visit-saudi-summer-2026-p008-top-left.jpg",
+      "matched_tokens": [
+        "frequency",
+        "room",
+        "pre",
+        "launch",
+        "series",
+        "varoo",
+        "all",
+        "night",
+        "long"
+      ]
+    },
+    {
+      "id": "event-ليلة-جاز-في-جدة-مع-فايا-يونان",
+      "title": "ليلة جاز في جدة مع فايا يونان",
+      "file": "visit-saudi-summer-2026-p008-top-right.jpg",
+      "matched_tokens": [
+        "ليله",
+        "جاز",
+        "جده",
+        "فايا",
+        "يونان"
+      ]
+    },
+    {
+      "id": "event-مهرجان-الكوميديا-مع-محمد-حلمي-في-six-flags-مدينة-القدية",
+      "title": "مهرجان الكوميديا مع محمد حلمي في Six Flags مدينة القدية",
+      "file": "visit-saudi-summer-2026-p054-top-right.jpg",
+      "matched_tokens": [
+        "مهرجان",
+        "الكوميديا",
+        "محمد",
+        "حلمي",
+        "six",
+        "flags",
+        "مدينه",
+        "القديه"
+      ]
+    },
+    {
+      "id": "event-جلسة-طق",
+      "title": "جلسة طق",
+      "file": "visit-saudi-summer-2026-p054-bottom-right.jpg",
+      "matched_tokens": [
+        "جلسه"
+      ]
+    },
+    {
+      "id": "event-حفل-عايض-في-فوكالي-الرياض",
+      "title": "حفل عايض في فوكالي الرياض",
+      "file": "visit-saudi-summer-2026-p055-top-right.jpg",
+      "matched_tokens": [
+        "حفل",
+        "عايض",
+        "فوكالي",
+        "الرياض"
+      ]
+    },
+    {
+      "id": "event-خالد-جواد-ايف-في-جدة",
+      "title": "خالد جواد ايف في جدة",
+      "file": "visit-saudi-summer-2026-p008-bottom-right.jpg",
+      "matched_tokens": [
+        "خالد",
+        "جواد",
+        "ايف",
+        "جده"
+      ]
+    },
+    {
+      "id": "event-صالح-النواوي،-سيف-زغموري،-عبدا-صبيح-،-طلال-الشيخي-في-six-flags",
+      "title": "صالح النواوي، سيف زغموري، عبدا صبيح ، طلال الشيخي في Six Flags",
+      "file": "visit-saudi-summer-2026-p055-top-left.jpg",
+      "matched_tokens": [
+        "صالح",
+        "النواوي",
+        "سيف",
+        "زغموري",
+        "عبدا",
+        "صبيح",
+        "طلال",
+        "الشيخي",
+        "six",
+        "flags"
+      ]
+    },
+    {
+      "id": "event-طوني-أبو-جودة-في-الرياض",
+      "title": "طوني أبو جودة في الرياض",
+      "file": "visit-saudi-summer-2026-p061-bottom-left.jpg",
+      "matched_tokens": [
+        "طوني",
+        "ابو",
+        "جوده",
+        "الرياض"
+      ]
+    },
+    {
+      "id": "event-بي-إف-إل-مينا-11-نصف-النهائي-في-الرياض",
+      "title": "بي إف إل مينا 11 - نصف النهائي في الرياض",
+      "file": "visit-saudi-summer-2026-p062-top-right.jpg",
+      "matched_tokens": [
+        "مينا",
+        "نصف",
+        "النهايي",
+        "الرياض"
+      ]
+    },
+    {
+      "id": "event-عرض-علاء-الشيخ-في-الرياض",
+      "title": "عرض علاء الشيخ في الرياض",
       "file": "visit-saudi-summer-2026-p062-bottom-right.jpg",
       "matched_tokens": [
-        "سيرك",
-        "فونتانا"
+        "عرض",
+        "علاء",
+        "الشيخ",
+        "الرياض"
       ]
     },
     {
-      "id": "event-in-act-act-x",
-      "title": "IN ACT - ACT X",
-      "file": "visit-saudi-summer-2026-p063-top-left.jpg",
+      "id": "event-عرض-علاء-الشيخ-في-جدة",
+      "title": "عرض علاء الشيخ في جدة",
+      "file": "visit-saudi-summer-2026-p021-top-right.jpg",
       "matched_tokens": [
-        "act"
+        "عرض",
+        "علاء",
+        "الشيخ",
+        "جده"
       ]
     },
     {
-      "id": "event-فينا-نحكي؟-عرض-ستاند-أب-كوميدي-يقدمه-جون-أشقر",
-      "title": "فينا نحكي؟ عرض ستاند أب كوميدي يقدمه جون أشقر",
-      "file": "visit-saudi-summer-2026-p063-bottom-right.jpg",
+      "id": "event-six-kings-slam",
+      "title": "Six Kings Slam",
+      "file": "visit-saudi-summer-2026-p062-bottom-left.jpg",
       "matched_tokens": [
-        "فينا",
-        "نحكي",
+        "six",
+        "kings",
+        "slam"
+      ]
+    },
+    {
+      "id": "event-لحد-يدري-عرض-ستاند-اب-كوميدي-من-أسامة-بازيد",
+      "title": "لحد يدري: عرض ستاند اب كوميدي من أسامة بازيد",
+      "file": "visit-saudi-summer-2026-p021-top-left.jpg",
+      "matched_tokens": [
+        "لحد",
+        "يدري",
         "عرض",
         "ستاند",
         "كوميدي",
-        "يقدمه",
-        "جون",
-        "اشقر"
+        "اسامه",
+        "بازيد"
       ]
     },
     {
-      "id": "event-فينا-نحكي؟-كوميديا-ستاند-أب-مع-جون-أشقر",
-      "title": "”فينا نحكي؟“ كوميديا ستاند أب مع جون أشقر",
-      "file": "visit-saudi-summer-2026-p043-bottom-left.jpg",
+      "id": "event-لحد-يدري-عرض-ستاند-اب-كوميدي-من-أسامة-بازيد-2",
+      "title": "لحد يدري: عرض ستاند اب كوميدي من أسامة بازيد",
+      "file": "visit-saudi-summer-2026-p037-bottom-left.jpg",
       "matched_tokens": [
-        "فينا",
-        "نحكي",
-        "كوميديا",
+        "لحد",
+        "يدري",
+        "عرض",
         "ستاند",
-        "جون",
-        "اشقر"
+        "كوميدي",
+        "اسامه",
+        "بازيد"
       ]
     },
     {
-      "id": "event-ألف-وواحد",
-      "title": "ألف وواحد",
-      "file": "visit-saudi-summer-2026-p063-bottom-left.jpg",
+      "id": "event-حفل-ماريلين-نعمان-الموسيقي",
+      "title": "حفل ماريلين نعمان الموسيقي",
+      "file": "visit-saudi-summer-2026-p063-top-left.jpg",
       "matched_tokens": [
-        "الف",
-        "وواحد"
+        "حفل",
+        "ماريلين",
+        "نعمان",
+        "الموسيقي"
+      ]
+    },
+    {
+      "id": "event-مهرجان-سماء-العا",
+      "title": "مهرجان سماء العا",
+      "file": "visit-saudi-summer-2026-p066-top-right.jpg",
+      "matched_tokens": [
+        "مهرجان",
+        "سماء",
+        "العا"
+      ]
+    },
+    {
+      "id": "event-وقف-عرض-نمر-الكوميدي-مباشر-في-جدة",
+      "title": "وقف! عرض نمر الكوميدي مباشر في جدة",
+      "file": "visit-saudi-summer-2026-p021-bottom-left.jpg",
+      "matched_tokens": [
+        "وقف",
+        "عرض",
+        "نمر",
+        "الكوميدي",
+        "مباشر",
+        "جده"
       ]
     },
     {
       "id": "event-in-act-anniversary-act-xi",
       "title": "IN ACT ANNIVERSARY - ACT XI",
       "file": "visit-saudi-summer-2026-p039-bottom-left.jpg",
-      "matched_tokens": [
-        "act",
-        "anniversary"
-      ]
-    },
-    {
-      "id": "event-in-act-anniversary-act-xi-2",
-      "title": "IN ACT ANNIVERSARY - ACT XI",
-      "file": "visit-saudi-summer-2026-p044-top-right.jpg",
       "matched_tokens": [
         "act",
         "anniversary"

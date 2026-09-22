@@ -1,10 +1,10 @@
 {
-  "generated_at": "2026-09-22T07:56:20.285Z",
+  "generated_at": "2026-09-22T16:18:11.327Z",
   "catalog": "data/events_catalog.json",
   "source": "Dhahran Expo Calendar",
   "totals": {
     "targets": 18,
-    "candidates": 15,
+    "candidates": 14,
     "enriched": 18,
     "skipped": 0
   },

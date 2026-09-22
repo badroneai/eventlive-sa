@@ -1,9 +1,9 @@
 {
-  "generated_at": "2026-09-22T07:54:32.344Z",
+  "generated_at": "2026-09-22T16:16:13.429Z",
   "catalog": "data/events_catalog.json",
   "totals": {
-    "targets": 28,
-    "enriched": 27,
+    "targets": 29,
+    "enriched": 28,
     "failed": 1
   },
   "enriched": [
@@ -245,6 +245,15 @@
       "id": "event-data-science-foundations",
       "title": "Data Science Foundations",
       "group_id": "13066",
+      "goals": 1,
+      "features": 1,
+      "requirements": 4,
+      "metadata": 8
+    },
+    {
+      "id": "event-introduction-to-apis-and-web-services",
+      "title": "Introduction to APIs and Web Services",
+      "group_id": "13067",
       "goals": 1,
       "features": 1,
       "requirements": 4,

@@ -1,22 +1,22 @@
 {
   "schema": "eventlive.harvest-os-status.v1",
-  "generated_at": "2026-09-22T08:10:03.595Z",
+  "generated_at": "2026-09-22T16:33:44.028Z",
   "status": "NEEDS_WORK",
   "operating_rule": "Probe before new sources; sample before full harvest; Raw collection is not publication; discovery-only never auto-publishes.",
   "totals": {
     "sources": 88,
-    "candidates": 454,
-    "matched_candidates": 419,
+    "candidates": 478,
+    "matched_candidates": 444,
     "auto_publish_sources": 15,
     "candidate_only_sources": 12,
     "partnership_required_sources": 5,
     "blocked_or_closed_sources": 0,
     "manual_review_sources": 56,
-    "collection_attempted": 17,
-    "productive_sources": 15,
-    "collector_errors": 7,
+    "collection_attempted": 47,
+    "productive_sources": 21,
+    "collector_errors": 6,
     "chronic_collector_errors": 6,
-    "transient_collector_errors": 1
+    "transient_collector_errors": 0
   },
   "policies": {
     "partnership_required": 5,
@@ -25,27 +25,28 @@
     "manual_review": 56
   },
   "candidates_by_gate": {
-    "catalog-review": 417,
+    "catalog-review": 442,
     "duplicate-review": 6,
-    "source-evidence": 31
+    "source-evidence": 30
   },
   "funnel": {
-    "discovered_this_run": 194,
-    "candidate_queue": 454,
-    "evaluated_for_publish": 454,
-    "linked_existing": 414,
-    "published_new": 1,
+    "discovered_this_run": 275,
+    "candidate_queue": 478,
+    "evaluated_for_publish": 478,
+    "linked_existing": 415,
+    "published_new": 24,
     "blocked": 39,
     "secondary_promoted": 0,
-    "secondary_still_blocked": 39
+    "secondary_still_blocked": 62
   },
   "blocked_reasons": {
     "possible duplicate requires review: exact-title-city-source-conflict": 2,
-    "unknown category requires review": 4,
     "publication gate source-evidence is not auto-publishable": 25,
+    "possible duplicate already exists: event-facility-management-conference-exhibition": 1,
     "possible duplicate requires review: fuzzy-title-venue-date-window": 2,
     "possible duplicate already exists: event-melwah-falcon-racing": 2,
     "possible duplicate requires review: exact-title-city-venue-conflict": 2,
+    "unknown category requires review": 3,
     "linked catalog row event-feena-nehke-stand-up-comedy-by-john-achkar was superseded by dedupe": 1,
     "linked catalog row event-music-festival-mdlbeast-soundstorm was superseded by dedupe": 1
   },
@@ -53,50 +54,43 @@
     {
       "id": "moc-cultural-calendar",
       "note": "collector-error: fetch failed; fetch failed",
-      "error_streak": 37,
+      "error_streak": 38,
       "kind": "chronic",
-      "attempted_this_run": false
+      "attempted_this_run": true
     },
     {
       "id": "mos-events",
-      "note": "collector-error: fetch failed; live browser recovery deferred by recent failed probe cooldown",
-      "error_streak": 37,
+      "note": "collector-error: fetch failed",
+      "error_streak": 38,
       "kind": "chronic",
-      "attempted_this_run": false
+      "attempted_this_run": true
     },
     {
       "id": "moc-cultural-subportals",
       "note": "collector-error: fetch failed; fetch failed",
-      "error_streak": 37,
+      "error_streak": 38,
       "kind": "chronic",
-      "attempted_this_run": false
+      "attempted_this_run": true
     },
     {
       "id": "saudi-pro-league-fixtures",
       "note": "collector-error: fetch failed",
-      "error_streak": 17,
+      "error_streak": 18,
       "kind": "chronic",
-      "attempted_this_run": false
+      "attempted_this_run": true
     },
     {
       "id": "tuwaiq-academy-bootcamps",
       "note": "collector-error: HTTP 403",
-      "error_streak": 14,
+      "error_streak": 15,
       "kind": "chronic",
-      "attempted_this_run": false
+      "attempted_this_run": true
     },
     {
       "id": "monshaat-events",
       "note": "collector-error: fetch failed; fetch failed",
-      "error_streak": 5,
+      "error_streak": 6,
       "kind": "chronic",
-      "attempted_this_run": false
-    },
-    {
-      "id": "asharqia-chamber-events",
-      "note": "fetch failed; page.goto: Timeout 30000ms exceeded. Call log:   - navigating to \"https://www.chamber.org.sa/sites/Arabic/Events/ChamberEvents/Pages/AllChamberEvents.aspx\", waiting until \"domcontentload",
-      "error_streak": 1,
-      "kind": "transient",
       "attempted_this_run": true
     }
   ],
