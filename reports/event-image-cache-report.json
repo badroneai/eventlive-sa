@@ -1,37 +1,18 @@
 {
-  "generated_at": "2026-09-21T08:31:50.637Z",
+  "generated_at": "2026-09-22T08:01:04.350Z",
   "events_file": "dist/events.json",
   "manifest": "data/event_image_cache_manifest.json",
   "image_dir": "dist/assets/event-images",
   "totals": {
     "targets": 500,
     "cached_total": 873,
-    "fetched": 3,
-    "reused": 494,
+    "fetched": 0,
+    "reused": 497,
     "failed": 3,
-    "skipped_recent_failures": 0,
-    "remembered_failures": 25
+    "skipped_recent_failures": 3,
+    "remembered_failures": 26
   },
-  "fetched": [
-    {
-      "source_url": "https://hayyjameel.org/wp-content/uploads/2026/09/Photo-by-Reza-Khota-1100x500.jpg",
-      "file": "dist/assets/event-images/هاي-تبدو-جلسة-الاستماع-روتاتب-بيزيلا-مع-أتيياه-خان-و-هودا-تايوب-06153024c7.jpg",
-      "bytes": 96541,
-      "events": 1
-    },
-    {
-      "source_url": "https://www.ithra.com/application/files/cache/thumbnails/5c595252d2af2e0b0cd47e3052049c40.jpg",
-      "file": "dist/assets/event-images/an-experience-with-an-artist-88d777a7f2.jpg",
-      "bytes": 233161,
-      "events": 1
-    },
-    {
-      "source_url": "https://www.ithra.com/application/files/cache/thumbnails/03aa29a008d9d56c3d155fb84ab52397.jpg",
-      "file": "dist/assets/event-images/jinayah-podcast-e269f65c72.jpg",
-      "bytes": 224430,
-      "events": 1
-    }
-  ],
+  "fetched": [],
   "reused": [
     {
       "source_url": "https://music.moc.gov.sa/-/media/Project/Ministries/Moc/Events/Artboard1.png",
@@ -739,6 +720,11 @@
       "events": 1
     },
     {
+      "source_url": "https://hayyjameel.org/wp-content/uploads/2026/09/Photo-by-Reza-Khota-1100x500.jpg",
+      "file": "dist/assets/event-images/هاي-تبدو-جلسة-الاستماع-روتاتب-بيزيلا-مع-أتيياه-خان-و-هودا-تايوب-06153024c7.jpg",
+      "events": 1
+    },
+    {
       "source_url": "https://hayyjameel.org/wp-content/uploads/2026/06/DSC07665-scaled-e1781701744946-1100x500.jpg",
       "file": "dist/assets/event-images/hayy-markets-the-bakers-market-saudi-national-day-edition-7f94bf67f2.jpg",
       "events": 1
@@ -829,6 +815,11 @@
       "events": 1
     },
     {
+      "source_url": "https://www.ithra.com/application/files/cache/thumbnails/5c595252d2af2e0b0cd47e3052049c40.jpg",
+      "file": "dist/assets/event-images/an-experience-with-an-artist-88d777a7f2.jpg",
+      "events": 1
+    },
+    {
       "source_url": "https://www.ithra.com/application/files/cache/thumbnails/674b96300a249dd9d1d3eeb5c1b82245.png",
       "file": "dist/assets/event-images/family-game-within-five-seconds-7844419450.png",
       "events": 1
@@ -906,6 +897,11 @@
     {
       "source_url": "https://api.riyadh.sa/sites/default/files/styles/medium/public/2025-12/erter%20%2817%29.jpg?itok=GJOsde_n",
       "file": "dist/assets/event-images/saudi-procurement-conference-004e3ad949.jpg",
+      "events": 1
+    },
+    {
+      "source_url": "https://www.ithra.com/application/files/cache/thumbnails/03aa29a008d9d56c3d155fb84ab52397.jpg",
+      "file": "dist/assets/event-images/jinayah-podcast-e269f65c72.jpg",
       "events": 1
     },
     {
@@ -2505,41 +2501,59 @@
     }
   ],
   "rejected_removed": [],
-  "missing_removed": [
-    {
-      "source_url": "https://hayyjameel.org/wp-content/uploads/2026/09/Photo-by-Reza-Khota-1100x500.jpg",
-      "file": "dist/assets/event-images/هاي-تبدو-جلسة-الاستماع-روتاتب-بيزيلا-مع-أتيياه-خان-و-هودا-تايوب-06153024c7.jpg",
-      "reason": "cached-file-missing"
-    }
-  ],
-  "skipped_recent_failures": [],
-  "failed": [
+  "missing_removed": [],
+  "skipped_recent_failures": [
     {
       "source_url": "https://s7g10.scene7.com/is/image/rcu/fei2:landscape-16x9?$Responsive$&fit=stretch&fmt=webp&wid=1920",
       "events": 1,
       "reason": "HTTP 403",
       "failure_kind": "access-denied",
-      "retry_after": "2026-09-22T08:31:50.637Z"
-    },
-    {
-      "source_url": "https://cdn.rfecc.sa/wp-content/uploads/mec/qr_898ea2449274454e42895b52b18c6f68.png",
-      "events": 1,
-      "reason": "HTTP 403",
-      "failure_kind": "access-denied",
-      "retry_after": "2026-09-22T08:31:50.637Z"
+      "retry_after": "2026-09-22T08:31:50.637Z",
+      "skipped": true
     },
     {
       "source_url": "https://api.riyadh.sa/sites/default/files/styles/medium/public/2026-07/er%20%2859%29.jpg?itok=a33APdGm",
       "events": 1,
       "reason": "not-image text/html; charset=utf-8",
       "failure_kind": "source-returned-html",
-      "retry_after": "2026-09-22T08:31:50.637Z"
+      "retry_after": "2026-09-22T08:31:50.637Z",
+      "skipped": true
+    },
+    {
+      "source_url": "https://cdn.rfecc.sa/wp-content/uploads/mec/qr_898ea2449274454e42895b52b18c6f68.png",
+      "events": 1,
+      "reason": "HTTP 403",
+      "failure_kind": "access-denied",
+      "retry_after": "2026-09-22T08:31:50.637Z",
+      "skipped": true
     }
   ],
-  "requires_rebuild": true,
-  "rebuild_reasons": [
-    "fetched:3",
-    "missing-removed:1",
-    "new-failures:3"
-  ]
+  "failed": [
+    {
+      "source_url": "https://s7g10.scene7.com/is/image/rcu/fei2:landscape-16x9?$Responsive$&fit=stretch&fmt=webp&wid=1920",
+      "events": 1,
+      "reason": "HTTP 403",
+      "failure_kind": "access-denied",
+      "retry_after": "2026-09-22T08:31:50.637Z",
+      "skipped": true
+    },
+    {
+      "source_url": "https://api.riyadh.sa/sites/default/files/styles/medium/public/2026-07/er%20%2859%29.jpg?itok=a33APdGm",
+      "events": 1,
+      "reason": "not-image text/html; charset=utf-8",
+      "failure_kind": "source-returned-html",
+      "retry_after": "2026-09-22T08:31:50.637Z",
+      "skipped": true
+    },
+    {
+      "source_url": "https://cdn.rfecc.sa/wp-content/uploads/mec/qr_898ea2449274454e42895b52b18c6f68.png",
+      "events": 1,
+      "reason": "HTTP 403",
+      "failure_kind": "access-denied",
+      "retry_after": "2026-09-22T08:31:50.637Z",
+      "skipped": true
+    }
+  ],
+  "requires_rebuild": false,
+  "rebuild_reasons": []
 }

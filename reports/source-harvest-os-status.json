@@ -1,22 +1,22 @@
 {
   "schema": "eventlive.harvest-os-status.v1",
-  "generated_at": "2026-09-21T08:42:28.799Z",
+  "generated_at": "2026-09-22T08:10:03.595Z",
   "status": "NEEDS_WORK",
   "operating_rule": "Probe before new sources; sample before full harvest; Raw collection is not publication; discovery-only never auto-publishes.",
   "totals": {
     "sources": 88,
-    "candidates": 460,
-    "matched_candidates": 425,
+    "candidates": 454,
+    "matched_candidates": 419,
     "auto_publish_sources": 15,
     "candidate_only_sources": 12,
     "partnership_required_sources": 5,
     "blocked_or_closed_sources": 0,
     "manual_review_sources": 56,
-    "collection_attempted": 31,
-    "productive_sources": 17,
-    "collector_errors": 6,
+    "collection_attempted": 17,
+    "productive_sources": 15,
+    "collector_errors": 7,
     "chronic_collector_errors": 6,
-    "transient_collector_errors": 0
+    "transient_collector_errors": 1
   },
   "policies": {
     "partnership_required": 5,
@@ -25,19 +25,19 @@
     "manual_review": 56
   },
   "candidates_by_gate": {
-    "catalog-review": 423,
+    "catalog-review": 417,
     "duplicate-review": 6,
     "source-evidence": 31
   },
   "funnel": {
-    "discovered_this_run": 227,
-    "candidate_queue": 460,
-    "evaluated_for_publish": 460,
-    "linked_existing": 418,
-    "published_new": 3,
+    "discovered_this_run": 194,
+    "candidate_queue": 454,
+    "evaluated_for_publish": 454,
+    "linked_existing": 414,
+    "published_new": 1,
     "blocked": 39,
     "secondary_promoted": 0,
-    "secondary_still_blocked": 40
+    "secondary_still_blocked": 39
   },
   "blocked_reasons": {
     "possible duplicate requires review: exact-title-city-source-conflict": 2,
@@ -55,41 +55,48 @@
       "note": "collector-error: fetch failed; fetch failed",
       "error_streak": 37,
       "kind": "chronic",
-      "attempted_this_run": true
+      "attempted_this_run": false
     },
     {
       "id": "mos-events",
       "note": "collector-error: fetch failed; live browser recovery deferred by recent failed probe cooldown",
       "error_streak": 37,
       "kind": "chronic",
-      "attempted_this_run": true
+      "attempted_this_run": false
     },
     {
       "id": "moc-cultural-subportals",
       "note": "collector-error: fetch failed; fetch failed",
       "error_streak": 37,
       "kind": "chronic",
-      "attempted_this_run": true
+      "attempted_this_run": false
     },
     {
       "id": "saudi-pro-league-fixtures",
       "note": "collector-error: fetch failed",
       "error_streak": 17,
       "kind": "chronic",
-      "attempted_this_run": true
+      "attempted_this_run": false
     },
     {
       "id": "tuwaiq-academy-bootcamps",
       "note": "collector-error: HTTP 403",
       "error_streak": 14,
       "kind": "chronic",
-      "attempted_this_run": true
+      "attempted_this_run": false
     },
     {
       "id": "monshaat-events",
       "note": "collector-error: fetch failed; fetch failed",
       "error_streak": 5,
       "kind": "chronic",
+      "attempted_this_run": false
+    },
+    {
+      "id": "asharqia-chamber-events",
+      "note": "fetch failed; page.goto: Timeout 30000ms exceeded. Call log:   - navigating to \"https://www.chamber.org.sa/sites/Arabic/Events/ChamberEvents/Pages/AllChamberEvents.aspx\", waiting until \"domcontentload",
+      "error_streak": 1,
+      "kind": "transient",
       "attempted_this_run": true
     }
   ],

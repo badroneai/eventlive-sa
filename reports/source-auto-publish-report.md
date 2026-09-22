@@ -1,11 +1,11 @@
 # EventLive Source Auto Publish Report
 
-- published_at: 2026-09-21T08:24:55.273Z
+- published_at: 2026-09-22T07:54:25.823Z
 - dry_run: false
 - include_partner: true
-- candidates_seen: 460
-- published_new: 3
-- linked_existing: 418
+- candidates_seen: 454
+- published_new: 1
+- linked_existing: 414
 - blocked_remaining: 39
 - duplicate_review_alerts: 6
 
@@ -22,9 +22,7 @@
 
 | Candidate | Status | Catalog event | Reason |
 |---|---|---|---|
-| candidate-umm-al-qura-events-فاعلية-التدريس-استراتيجيات-التعلم-النشط-وتوظيف-التقنية-20260921-7ac55b31 | published | event-فاعلية-التدريس-استراتيجيات-التعلم-النشط-وتوظيف-التقنية | فاعلية التدريس : استراتيجيات التعلم النشط وتوظيف التقنية |
-| candidate-ithra-events-an-experience-with-an-artist-20261002-1395e478 | published | event-an-experience-with-an-artist | An Experience with an Artist |
-| candidate-ithra-events-jinayah-podcast-20261010-47998b3d | published | event-jinayah-podcast | Jinayah Podcast |
+| candidate-visit-saudi-calendar-saudi-falcon-cup-20261221-dd540f33 | published | event-saudi-falcon-cup | Saudi Falcon Cup |
 | candidate-moc-cultural-subportals-skill-development-initiative-20210714-10f7dc2c | linked-existing | event-skill-development-initiative | already linked to catalog event |
 | candidate-moc-cultural-subportals-sitar-20220921-cda2e068 | linked-existing | event-sitar | already linked to catalog event |
 | candidate-moc-cultural-subportals-the-architecture-and-design-caf-20240427-046e2ec1 | linked-existing | event-the-architecture-and-design-caf | already linked to catalog event |
@@ -146,36 +144,21 @@
 | candidate-tuwaiq-academy-bootcamps-معسكر-علم-البيانات-والذكاء-الاصطناعي-20260920-3a71a485 | linked-existing | event-معسكر-علم-البيانات-والذكاء-الاصطناعي | already linked to catalog event |
 | candidate-tuwaiq-academy-bootcamps-معسكر-الجرائم-السيبرانية-والتحقيق-الجنائي-الرقمي-المتقدم-20260920-6e2c36f8 | linked-existing | event-معسكر-الجرائم-السيبرانية-والتحقيق-الجنائي-الرقمي-المتقدم | already linked to catalog event |
 | candidate-tuwaiq-academy-bootcamps-معسكر-هندسة-الحوسبة-السحابية-المتقدمة-باستخدام-google-cloud-20260920-c1ed5d59 | linked-existing | event-معسكر-هندسة-الحوسبة-السحابية-المتقدمة-باستخدام-google-cloud | already linked to catalog event |
-| candidate-ithra-events-aramcorama-exhibit-20260921-854df5c1 | linked-existing | event-aramcorama-exhibit | already linked to catalog event |
-| candidate-ithra-events-bedayat-beginnings-of-saudi-art-movement-20260921-e0a239ef | linked-existing | event-bedayat-beginnings-of-saudi-art-movement | already linked to catalog event |
-| candidate-ithra-events-echoes-of-the-familiar-20260921-cc43c2bd | linked-existing | event-echoes-of-the-familiar | already linked to catalog event |
-| candidate-ithra-events-in-praise-of-the-artisan-20260921-14781307 | linked-existing | event-in-praise-of-the-artisan | already linked to catalog event |
-| candidate-ithra-events-ithra-art-prize-exhibition-20260921-83c2ab55 | linked-existing | event-ithra-art-prize-exhibition | already linked to catalog event |
-| candidate-ithra-events-rehlaat-exhibit-20260921-b9d1c3e5 | linked-existing | event-rehlaat-exhibit | already linked to catalog event |
-| candidate-ithra-events-tafasahu-make-room-20260921-562bc61d | linked-existing | event-tafasahu-make-room | already linked to catalog event |
-| candidate-ithra-events-tinkering-stations-20260921-5a2c4c0e | linked-existing | event-tinkering-stations | already linked to catalog event |
-| candidate-ithra-events-ithra-public-tour-arabic-20260921-011084c2 | linked-existing | event-ithra-public-tour-arabic | already linked to catalog event |
-| candidate-ithra-events-ithra-public-tour-english-20260921-bda2ffd1 | linked-existing | event-ithra-public-tour-english | already linked to catalog event |
-| candidate-ithra-events-childrens-art-studio-20260921-2bf92d17 | linked-existing | event-childrens-art-studio | already linked to catalog event |
-| candidate-ithra-events-childrens-museum-story-time-20260921-ada8b9db | linked-existing | event-childrens-museum-story-time | already linked to catalog event |
-| candidate-ithra-events-paint-like-an-artist-20260921-a67d8ec3 | linked-existing | event-paint-like-an-artist | already linked to catalog event |
-| candidate-saudi-university-events-discover-saudi-arabia-culture-heritage-jeddah-20260921-fe30be57 | linked-existing | event-discover-saudi-arabia-culture-heritage-jeddah | already linked to catalog event |
-| candidate-ithra-events-trivia-night-energy-memory-20260921-0b124a27 | linked-existing | event-trivia-night-energy-memory | already linked to catalog event |
-| candidate-ithra-events-spot-of-inspiration-20260921-5bac584c | linked-existing | event-spot-of-inspiration | already linked to catalog event |
-| candidate-ithra-events-children-story-time-20260921-f545fa69 | linked-existing | event-children-story-time | already linked to catalog event |
-| candidate-ithra-events-marine-missions-20260921-5739b78e | linked-existing | event-marine-missions | already linked to catalog event |
-| candidate-ithra-events-imagination-oasis-20260921-104f8079 | linked-existing | event-imagination-oasis | already linked to catalog event |
-| candidate-saudi-university-events-discover-saudi-arabia-culture-heritage-jeddah-20260921-f02edfdc | linked-existing | event-discover-saudi-arabia-culture-heritage-jeddah | already linked to catalog event |
 | candidate-tuwaiq-academy-bootcamps-معسكر-قيادة-التحول-بالذكاء-الاصطناعي-20260921-d4b1787c | linked-existing | event-معسكر-قيادة-التحول-بالذكاء-الاصطناعي | already linked to catalog event |
-| candidate-ithra-events-trolley-show-20260921-56b483e3 | linked-existing | event-trolley-show | already linked to catalog event |
-| candidate-umm-al-qura-events-حين-نلاحظ-القلق-دور-عضو-هيئة-التدريس-في-الاستجابة-الآمنة-وإحالة-الطالب-20260921-619ca20d | linked-existing | event-حين-نلاحظ-القلق-دور-عضو-هيئة-التدريس-في-الاستجابة-الآمنة-وإحالة-الطالب | already linked to catalog event |
 | candidate-ithra-events-the-wall-of-our-generations-20260922-055a957d | linked-existing | event-the-wall-of-our-generations | already linked to catalog event |
 | candidate-ithra-events-toddler-tuesday-20260922-1afead7d | linked-existing | event-toddler-tuesday | already linked to catalog event |
+| candidate-ithra-events-echoes-of-the-familiar-20260922-cc43c2bd | linked-existing | event-echoes-of-the-familiar | already linked to catalog event |
+| candidate-ithra-events-ithra-art-prize-exhibition-20260922-83c2ab55 | linked-existing | event-ithra-art-prize-exhibition | already linked to catalog event |
+| candidate-ithra-events-tafasahu-make-room-20260922-562bc61d | linked-existing | event-tafasahu-make-room | already linked to catalog event |
+| candidate-ithra-events-tinkering-stations-20260922-5a2c4c0e | linked-existing | event-tinkering-stations | already linked to catalog event |
+| candidate-ithra-events-childrens-art-studio-20260922-2bf92d17 | linked-existing | event-childrens-art-studio | already linked to catalog event |
+| candidate-ithra-events-childrens-museum-story-time-20260922-ada8b9db | linked-existing | event-childrens-museum-story-time | already linked to catalog event |
 | candidate-ithra-events-on-this-carpet-20260922-2972e041 | linked-existing | event-on-this-carpet | already linked to catalog event |
 | candidate-ithra-events-move-with-pride-20260922-12b04bb0 | linked-existing | event-move-with-pride | already linked to catalog event |
 | candidate-ithra-events-chess-hub-20260922-4919439a | linked-existing | event-chess-hub | already linked to catalog event |
 | candidate-ithra-events-think-like-the-crowd-20260922-bc88c088 | linked-existing | event-think-like-the-crowd | already linked to catalog event |
 | candidate-ithra-events-the-impossible-challenge-20260922-d1228002 | linked-existing | event-the-impossible-challenge | already linked to catalog event |
+| candidate-ithra-events-imagination-oasis-20260922-104f8079 | linked-existing | event-imagination-oasis | already linked to catalog event |
 | candidate-ithra-events-throw-those-squashes-away-and-carry-me-20260922-45750673 | linked-existing | event-throw-those-squashes-away-and-carry-me | already linked to catalog event |
 | candidate-umm-al-qura-events-دورة-تدريبية-بعنوان-إدارة-الجودة-9001-20260922-63429459 | linked-existing | event-دورة-تدريبية-بعنوان-إدارة-الجودة-9001 | already linked to catalog event |
 | candidate-ithra-events-destination-20260922-e2d0a53b | linked-existing | event-destination | already linked to catalog event |
@@ -224,10 +207,17 @@
 | candidate-ithra-events-open-studio-silkscreen-20260928-06cda456 | linked-existing | event-open-studio-silkscreen | already linked to catalog event |
 | candidate-ithra-events-printing-house-20260928-e56f4f89 | linked-existing | event-printing-house | already linked to catalog event |
 | candidate-riyadh-city-events-icegov-international-conference-on-electronic-governance-20260928-db0f9390 | linked-existing | event-icegov-international-conference-on-electronic-governance | already linked to catalog event |
+| candidate-ithra-events-ithra-public-tour-arabic-20260928-011084c2 | linked-existing | event-ithra-public-tour-arabic | already linked to catalog event |
+| candidate-ithra-events-spot-of-inspiration-20260928-5bac584c | linked-existing | event-spot-of-inspiration | already linked to catalog event |
+| candidate-ithra-events-ithra-public-tour-english-20260928-bda2ffd1 | linked-existing | event-ithra-public-tour-english | already linked to catalog event |
+| candidate-ithra-events-paint-like-an-artist-20260928-a67d8ec3 | linked-existing | event-paint-like-an-artist | already linked to catalog event |
+| candidate-ithra-events-trivia-night-energy-memory-20260928-0b124a27 | linked-existing | event-trivia-night-energy-memory | already linked to catalog event |
 | candidate-ithra-events-creative-writing-club-20260928-a7f18ce9 | linked-existing | event-creative-writing-club | already linked to catalog event |
 | candidate-ithra-events-energy-in-motion-20260928-e0404048 | linked-existing | event-energy-in-motion | already linked to catalog event |
 | candidate-ithra-events-open-art-space-20260928-ac79cac6 | linked-existing | event-open-art-space-2 | already linked to catalog event |
 | candidate-ithra-events-ithras-kids-community-20260928-5aadcf19 | linked-existing | event-ithras-kids-community | already linked to catalog event |
+| candidate-ithra-events-children-story-time-20260928-f545fa69 | linked-existing | event-children-story-time | already linked to catalog event |
+| candidate-ithra-events-trolley-show-20260928-56b483e3 | linked-existing | event-trolley-show | already linked to catalog event |
 | candidate-riyadh-city-events-e3-customer-experience-conference-20260929-a0c960ea | linked-existing | event-e3-customer-experience-conference | already linked to catalog event |
 | candidate-ithra-events-family-challenges-20260929-3726c868 | linked-existing | event-family-challenges | already linked to catalog event |
 | candidate-ithra-events-adventure-around-the-kingdom-20260929-0217cd1b | linked-existing | event-adventure-around-the-kingdom | already linked to catalog event |
@@ -244,15 +234,18 @@
 | candidate-ithra-events-arabic-children-book-club-10-12-20260930-39c903cc | linked-existing | event-arabic-children-book-club-10-12 | already linked to catalog event |
 | candidate-ithra-events-childrens-book-club-20260930-944c464f | linked-existing | event-childrens-book-club | already linked to catalog event |
 | candidate-ithra-events-your-book-in-a-minute-20260930-c8aab584 | linked-existing | event-your-book-in-a-minute | already linked to catalog event |
+| candidate-mdlbeast-events-unstable-20261001-5647df2e | linked-existing | event-unstable | trusted duplicate linked to existing catalog event |
 | candidate-riyadh-city-events-king-khaled-eye-specialist-hospital-and-research-center-2026-internation-20261001-c8c074ac | linked-existing | event-king-khaled-eye-specialist-hospital-and-research-center-2026-internation | already linked to catalog event |
 | candidate-visit-saudi-seasons-saudi-international-falcons-hunting-exhibition-20261001-a4f29b73 | linked-existing | event-saudi-international-falcons-hunting-exhibition | already linked to catalog event |
 | candidate-riyadh-city-events-saudi-falcons-hunting-exhibition-20261001-03de0f81 | linked-existing | event-saudi-falcons-hunting-exhibition | already linked to catalog event |
 | candidate-ithra-events-little-explorers-20261001-1cc1993f | linked-existing | event-little-explorers | already linked to catalog event |
 | candidate-ithra-events-the-moral-of-the-story-20261001-bfa3f2a8 | linked-existing | event-the-moral-of-the-story | already linked to catalog event |
+| candidate-ithra-events-marine-missions-20261001-5739b78e | linked-existing | event-marine-missions | already linked to catalog event |
 | candidate-visit-saudi-seasons-saudi-falcons-club-auction-20261001-4e016ab8 | linked-existing | event-saudi-falcons-club-auction | already linked to catalog event |
 | candidate-visit-saudi-calendar-tony-abou-jaoude-live-in-riyadh-20261001-559eba2b | linked-existing | event-tony-abou-jaoude-live-in-riyadh | already linked to catalog event |
 | candidate-visit-saudi-seasons-pfl-mena-11-semi-finals-in-riyadh-20261002-98507861 | linked-existing | event-pfl-mena-11-semi-finals-in-riyadh | already linked to catalog event |
 | candidate-ithra-events-stories-from-ithras-library-20261002-4116de16 | linked-existing | event-stories-from-ithras-library | already linked to catalog event |
+| candidate-ithra-events-an-experience-with-an-artist-20261002-1395e478 | linked-existing | event-an-experience-with-an-artist | already linked to catalog event |
 | candidate-ithra-events-family-game-within-five-seconds-20261002-fe7ee898 | linked-existing | event-family-game-within-five-seconds | already linked to catalog event |
 | candidate-ithra-events-family-game-20261002-a30cabbd | linked-existing | event-family-game | already linked to catalog event |
 | candidate-visit-saudi-calendar-tony-abou-jaoude-live-in-jeddah-20261002-ed69f858 | linked-existing | event-tony-abou-jaoude-live-in-jeddah | already linked to catalog event |
@@ -283,6 +276,7 @@
 | candidate-ithra-events-arabic-children-book-club-7-9-20261007-810c285f | linked-existing | event-arabic-children-book-club-7-9 | already linked to catalog event |
 | candidate-visit-saudi-calendar-pdf-in-act-act-x-20261009-4a38d19e | linked-existing | event-in-act-act-x | already linked to catalog event |
 | candidate-ithra-events-1-2-3-lets-rhyme-20261010-4d37515a | linked-existing | event-1-2-3-lets-rhyme | already linked to catalog event |
+| candidate-ithra-events-jinayah-podcast-20261010-47998b3d | linked-existing | event-jinayah-podcast | already linked to catalog event |
 | candidate-ithra-events-unbox-your-story-20261010-5085a6f0 | linked-existing | event-unbox-your-story | already linked to catalog event |
 | candidate-riyadh-city-events-wpc-energy-congress-20261011-1602e535 | linked-existing | event-wpc-energy-congress | already linked to catalog event |
 | candidate-riyadh-city-events-metal-steel-exhibition-fabex-20261011-5c36f064 | linked-existing | event-metal-steel-exhibition-fabex | already linked to catalog event |

@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-21T08:24:57.440Z",
+  "generated_at": "2026-09-22T07:54:29.196Z",
   "catalog": "data/events_catalog.json",
   "candidates": "data/source_candidates.json",
   "manifest": "data/event_image_cache_manifest.json",
@@ -9,20 +9,12 @@
     "min_intersection": 2
   },
   "totals": {
-    "pdf_crop_assignments": 23,
+    "pdf_crop_assignments": 22,
     "verified": 22,
-    "struck": 1,
+    "struck": 0,
     "slots_seen_this_cycle": 23
   },
-  "struck": [
-    {
-      "id": "event-صيف-وسمرة",
-      "title": "صيف وسمرة",
-      "file": "visit-saudi-summer-2026-p012-top-right.jpg",
-      "reason": "slot-vacated",
-      "detail": "no dated card currently occupies page 12 top-right of https://www.visitsaudi.com/content/dam/documents/saudi-calendar-ar.pdf"
-    }
-  ],
+  "struck": [],
   "verified": [
     {
       "id": "event-أشجار",

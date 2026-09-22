@@ -1,13 +1,13 @@
 {
-  "generated_at": "2026-09-21T08:26:51.009Z",
+  "generated_at": "2026-09-22T07:56:20.575Z",
   "catalog": "data/events_catalog.json",
   "source": "Visit Saudi Calendar",
   "totals": {
-    "targets": 47,
-    "candidates": 19,
-    "enriched": 47,
-    "fetched": 47,
-    "images": 45,
+    "targets": 48,
+    "candidates": 20,
+    "enriched": 48,
+    "fetched": 48,
+    "images": 46,
     "fetch_failures": 0
   },
   "enriched": [
@@ -360,6 +360,14 @@
       "title": "The Innovation Driven Water Sustainability Conference",
       "source_method": "official-page-html",
       "image_url": "https://www.visitsaudi.com/content/dam/wvs/calendar/the-global-water-sustainability-conference.jpg",
+      "fetched": true,
+      "features": 7
+    },
+    {
+      "id": "event-saudi-falcon-cup",
+      "title": "Saudi Falcon Cup",
+      "source_method": "official-page-html",
+      "image_url": "https://www.visitsaudi.com/content/dam/wvs/calendar/saudi-falcon-cup-new.jpg",
       "fetched": true,
       "features": 7
     },

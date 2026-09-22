@@ -1,15 +1,12 @@
 # EventLive Cadenced Source Diagnostics
 
-- generated_at: 2026-09-21T08:02:21.965Z
-- status: ok
+- generated_at: 2026-09-22T07:47:01.277Z
+- status: skipped-fresh
 - interval_hours: 24
 - last_executed_at: 2026-09-21T08:02:21.965Z
 - next_due_at: 2026-09-22T08:02:21.965Z
-- commands_run: 3
+- commands_run: 0
 - failures: 0
 
 | Diagnostic | Status | Duration |
 |---|---|---:|
-| source-probe | ok | 47s |
-| source-radars | ok | 39s |
-| source-yield | ok | 744s |

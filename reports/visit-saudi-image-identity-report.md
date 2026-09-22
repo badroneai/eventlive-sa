@@ -1,14 +1,14 @@
 # EventLive Visit Saudi Image Identity Report
 
-- generated_at: 2026-09-21T08:24:57.440Z
-- pdf_crop_assignments: 23
+- generated_at: 2026-09-22T07:54:29.196Z
+- pdf_crop_assignments: 22
 - verified: 22
-- struck: 1
+- struck: 0
 - slots_seen_this_cycle: 23
 
 ## Struck (fell back to generated cover)
 
-- صيف وسمرة (visit-saudi-summer-2026-p012-top-right.jpg) - slot-vacated - no dated card currently occupies page 12 top-right of https://www.visitsaudi.com/content/dam/documents/saudi-calendar-ar.pdf
+- none
 
 ## Verified
 

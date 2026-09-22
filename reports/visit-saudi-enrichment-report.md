@@ -1,11 +1,11 @@
 # Visit Saudi Calendar Enrichment Report
 
-- generated_at: 2026-09-21T08:26:51.009Z
-- targets: 47
-- candidates: 19
-- enriched: 47
-- fetched: 47
-- images: 45
+- generated_at: 2026-09-22T07:56:20.575Z
+- targets: 48
+- candidates: 20
+- enriched: 48
+- fetched: 48
+- images: 46
 - fetch_failures: 0
 
 ## Enriched
@@ -54,6 +54,7 @@
 - UCI URBAN CYCLING WORLD CHAMPIONSHIPS - official-page-html - image=yes - features=7
 - Wagef! Nemr Live Comedy Show in Jeddah - official-page-html - image=yes - features=7
 - The Innovation Driven Water Sustainability Conference - official-page-html - image=yes - features=7
+- Saudi Falcon Cup - official-page-html - image=yes - features=7
 - Founding Day - official-page-html - image=yes - features=7
 - Eid Al-Fitr - official-page-html - image=no - features=6
 - Eid Al-Adha - official-page-html - image=no - features=6

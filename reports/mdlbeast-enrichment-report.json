@@ -1,10 +1,10 @@
 {
-  "generated_at": "2026-09-21T08:28:08.648Z",
+  "generated_at": "2026-09-22T07:57:34.694Z",
   "catalog": "data/events_catalog.json",
   "source": "MDLBEAST Events",
   "totals": {
     "targets": 6,
-    "candidates": 4,
+    "candidates": 5,
     "enriched": 6,
     "fetched": 6,
     "images": 6,
@@ -20,18 +20,18 @@
       "features": 6
     },
     {
-      "id": "event-beast-house",
-      "title": "Beast House",
-      "source_method": "official-next-data",
-      "image_url": "https://www.datocms-assets.com/66357/1753608398-1-aug-event-banners-01.webp?auto=format&fit=max&w=2048&q=90",
-      "fetched": true,
-      "features": 7
-    },
-    {
       "id": "event-unstable",
       "title": "Unstable",
       "source_method": "official-next-data",
       "image_url": "https://www.datocms-assets.com/66357/1779102205-1.jpg?auto=format&fit=max&w=2048&q=90",
+      "fetched": true,
+      "features": 7
+    },
+    {
+      "id": "event-beast-house",
+      "title": "Beast House",
+      "source_method": "official-next-data",
+      "image_url": "https://www.datocms-assets.com/66357/1753608398-1-aug-event-banners-01.webp?auto=format&fit=max&w=2048&q=90",
       "fetched": true,
       "features": 7
     },

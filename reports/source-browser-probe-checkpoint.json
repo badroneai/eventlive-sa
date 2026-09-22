@@ -1,204 +1,26 @@
 {
   "schema": "eventlive.source-browser-probe-checkpoint.v1",
-  "checkpointed_at": "2026-09-21T08:16:56.632Z",
-  "generated_at": "2026-09-21T08:16:12.423Z",
+  "checkpointed_at": "2026-09-22T07:47:14.402Z",
+  "generated_at": "2026-09-22T07:47:01.577Z",
   "source_registry": "data/source_registry.json",
   "output_dir": "data/raw/browser-probes",
-  "sources_planned": 4,
-  "sources_completed": 4,
+  "sources_planned": 1,
+  "sources_completed": 1,
   "totals": {
-    "probed": 4,
-    "browser_network_api": 1,
+    "probed": 1,
+    "browser_network_api": 0,
     "browser_hydration_payload": 0,
-    "rendered_html_candidates": 2,
+    "rendered_html_candidates": 1,
     "blocked_or_protected": 0,
     "policy_skipped": 0
   },
   "completed_ids": [
-    "saudi-space-agency-events",
-    "future-skills-catalog",
-    "riyadh-city-events",
-    "sdaia-calendar-events"
+    "riyadh-city-events"
   ],
   "sources": [
     {
-      "id": "saudi-space-agency-events",
-      "probed_at": "2026-09-21T08:16:18.697Z",
-      "name": "Saudi Space Agency Events",
-      "priority": 32,
-      "url": "https://ssa.gov.sa/APIGW/en/api/EventsSearch/SearchEvents",
-      "final_url": "https://ssa.gov.sa/APIGW/en/api/EventsSearch/SearchEvents",
-      "status": "ok",
-      "http_status": 405,
-      "navigation_error": "",
-      "duration_ms": 5958,
-      "classification": "empty-or-shell",
-      "next_action": "اعتبرها shell وابحث عن API أو مسار بديل قبل أي collector.",
-      "title": "",
-      "text_bytes": 536,
-      "html_bytes": 687,
-      "html_snapshot": "data/raw/browser-probes/saudi-space-agency-events-2026-09-21T08-16-12-423Z.html",
-      "screenshot": "data/raw/browser-probes/saudi-space-agency-events-2026-09-21T08-16-12-423Z.png",
-      "signals": {
-        "has_next_data": false,
-        "has_nuxt": false,
-        "has_json_ld": false,
-        "has_event_schema": false,
-        "date_snippets": [],
-        "event_like_links": []
-      },
-      "script_signals": {
-        "next_data_scripts": 0,
-        "nuxt_scripts": 0,
-        "json_ld_scripts": 0,
-        "large_inline_scripts": 0
-      },
-      "network_total": 1,
-      "network_endpoints": [],
-      "network_sample": [
-        {
-          "method": "GET",
-          "status": 405,
-          "url": "https://ssa.gov.sa/APIGW/en/api/EventsSearch/SearchEvents",
-          "content_type": "text/plain",
-          "resource_type": "document",
-          "request_post_data": "",
-          "response_shape": "text",
-          "preview": "Status Code: 405; Method Not Allowed"
-        }
-      ]
-    },
-    {
-      "id": "future-skills-catalog",
-      "probed_at": "2026-09-21T08:16:34.837Z",
-      "name": "Future Skills MCIT Catalogue",
-      "priority": 17,
-      "url": "https://futureskills.mcit.gov.sa/ar/catalogue/all?label=&field_main_tracks_target_id_verf=565&field_sub_tracks_target_id=All&field_training_course_level_target_id=All&field_related_skills_target_id=All&field_course_type_value=All&field_training_delivery_value=All&field_training_city_target_id=All&field_job_market_target_id=All",
-      "final_url": "https://futureskills.mcit.gov.sa/ar/catalogue/all?label=&field_main_tracks_target_id_verf=565&field_sub_tracks_target_id=All&field_training_course_level_target_id=All&field_related_skills_target_id=All&field_course_type_value=All&field_training_delivery_value=All&field_training_city_target_id=All&field_job_market_target_id=All",
-      "status": "ok",
-      "http_status": 200,
-      "navigation_error": "",
-      "duration_ms": 16114,
-      "classification": "rendered-html-candidates",
-      "next_action": "اكتب extractor مرن من DOM بعد الرندر أو حسن selector الحالي.",
-      "title": "التدريب | بوابة مهارات المستقبل",
-      "text_bytes": 10762,
-      "html_bytes": 86461,
-      "html_snapshot": "data/raw/browser-probes/future-skills-catalog-2026-09-21T08-16-12-423Z.html",
-      "screenshot": "data/raw/browser-probes/future-skills-catalog-2026-09-21T08-16-12-423Z.png",
-      "signals": {
-        "has_next_data": false,
-        "has_nuxt": false,
-        "has_json_ld": false,
-        "has_event_schema": false,
-        "date_snippets": [],
-        "event_like_links": [
-          {
-            "text": "تجاوز إلى المحتوى الرئيسي",
-            "href": "https://futureskills.mcit.gov.sa/ar/catalogue/all?label=&field_main_tracks_target_id_verf=565&field_sub_tracks_target_id=All&field_training_course_level_target_id=All&field_related_skills_target_id=All&field_course_type_value=All&field_training_delivery_value=All&field_training_city_target_id=All&field_job_market_target_id=All#main-content"
-          },
-          {
-            "text": "English",
-            "href": "https://futureskills.mcit.gov.sa/en/catalogue/all?label=&field_main_tracks_target_id_verf=565&field_sub_tracks_target_id=All&field_training_course_level_target_id=All&field_related_skills_target_id=All&field_course_type_value=All&field_training_delivery_value=All&field_training_city_target_id=All&field_job_market_target_id=All"
-          },
-          {
-            "text": "",
-            "href": "https://futureskills.mcit.gov.sa/ar/catalogue/all?label=&field_main_tracks_target_id_verf=565&field_sub_tracks_target_id=All&field_training_course_level_target_id=All&field_related_skills_target_id=All&field_course_type_value=All&field_training_delivery_value=All&field_training_city_target_id=All&field_job_market_target_id=All#"
-          },
-          {
-            "text": "عن الوزارة",
-            "href": "https://futureskills.mcit.gov.sa/ar/catalogue/all?label=&field_main_tracks_target_id_verf=565&field_sub_tracks_target_id=All&field_training_course_level_target_id=All&field_related_skills_target_id=All&field_course_type_value=All&field_training_delivery_value=All&field_training_city_target_id=All&field_job_market_target_id=All#"
-          },
-          {
-            "text": "مجتمع رقمي",
-            "href": "https://futureskills.mcit.gov.sa/ar/catalogue/all?label=&field_main_tracks_target_id_verf=565&field_sub_tracks_target_id=All&field_training_course_level_target_id=All&field_related_skills_target_id=All&field_course_type_value=All&field_training_delivery_value=All&field_training_city_target_id=All&field_job_market_target_id=All#"
-          },
-          {
-            "text": "مهارات المستقبل",
-            "href": "https://futureskills.mcit.gov.sa/ar/catalogue/all?label=&field_main_tracks_target_id_verf=565&field_sub_tracks_target_id=All&field_training_course_level_target_id=All&field_related_skills_target_id=All&field_course_type_value=All&field_training_delivery_value=All&field_training_city_target_id=All&field_job_market_target_id=All#"
-          },
-          {
-            "text": "الأعمال والاستثمار",
-            "href": "https://futureskills.mcit.gov.sa/ar/catalogue/all?label=&field_main_tracks_target_id_verf=565&field_sub_tracks_target_id=All&field_training_course_level_target_id=All&field_related_skills_target_id=All&field_course_type_value=All&field_training_delivery_value=All&field_training_city_target_id=All&field_job_market_target_id=All#"
-          },
-          {
-            "text": "المركز الإعلامي",
-            "href": "https://futureskills.mcit.gov.sa/ar/catalogue/all?label=&field_main_tracks_target_id_verf=565&field_sub_tracks_target_id=All&field_training_course_level_target_id=All&field_related_skills_target_id=All&field_course_type_value=All&field_training_delivery_value=All&field_training_city_target_id=All&field_job_market_target_id=All#"
-          },
-          {
-            "text": "الفعاليات",
-            "href": "https://www.mcit.gov.sa/ar/events"
-          },
-          {
-            "text": "",
-            "href": "https://futureskills.mcit.gov.sa/ar/catalogue/all?label=&field_main_tracks_target_id_verf=565&field_sub_tracks_target_id=All&field_training_course_level_target_id=All&field_related_skills_target_id=All&field_course_type_value=All&field_training_delivery_value=All&field_training_city_target_id=All&field_job_market_target_id=All#"
-          },
-          {
-            "text": "",
-            "href": "https://futureskills.mcit.gov.sa/ar/catalogue/all?label=&field_main_tracks_target_id_verf=565&field_sub_tracks_target_id=All&field_training_course_level_target_id=All&field_related_skills_target_id=All&field_course_type_value=All&field_training_delivery_value=All&field_training_city_target_id=All&field_job_market_target_id=All#"
-          },
-          {
-            "text": "البرنامج المتخصص في العمل الحر",
-            "href": "http://futureskills.mcit.gov.sa/ar/node/20481"
-          },
-          {
-            "text": "معسكرات مهارات المستقبل",
-            "href": "http://futureskills.mcit.gov.sa/ar/node/17349"
-          },
-          {
-            "text": "مستوى متوسط\n⁠Data Preparation & Cleaning Essentials\n دورة معرفية\n تفاعلية مباشرة\n تبدأ 13-09-2026 إلى 15-09-2026 لمدة 12",
-            "href": "https://futureskills.mcit.gov.sa/ar/group/13064"
-          },
-          {
-            "text": "مستوى متوسط\n⁠Cloud Security and Compliance Fundamentals\n دورة معرفية\n تفاعلية مباشرة\n تبدأ 13-09-2026 إلى 15-09-2026 لمد",
-            "href": "https://futureskills.mcit.gov.sa/ar/group/13065"
-          },
-          {
-            "text": "مستوى متوسط\n⁠Data Science Foundations\n دورة معرفية\n تفاعلية مباشرة\n تبدأ 13-09-2026 إلى 16-09-2026 لمدة 16 ساعات",
-            "href": "https://futureskills.mcit.gov.sa/ar/group/13066"
-          },
-          {
-            "text": "مستوى متوسط\n⁠CCNP\n دورة معرفية\n تفاعلية مباشرة\n تبدأ 06-09-2026 إلى 10-09-2026 لمدة 20 ساعات",
-            "href": "https://futureskills.mcit.gov.sa/ar/group/13061"
-          },
-          {
-            "text": "مستوى متوسط\n⁠Data Analysis with Python\n دورة معرفية\n تفاعلية مباشرة\n تبدأ 06-09-2026 إلى 09-09-2026 لمدة 16 ساعات",
-            "href": "https://futureskills.mcit.gov.sa/ar/group/13062"
-          },
-          {
-            "text": "مستوى متوسط\n⁠Red Hat Certified System Administrator (RHCSA)\n دورة معرفية\n تفاعلية مباشرة\n تبدأ 06-09-2026 إلى 10-09-2026",
-            "href": "https://futureskills.mcit.gov.sa/ar/group/13063"
-          },
-          {
-            "text": "مستوى متوسط\nCCNA\n دورة معرفية\n تفاعلية مباشرة\n تبدأ 30-08-2026 إلى 03-09-2026 لمدة 20 ساعات",
-            "href": "https://futureskills.mcit.gov.sa/ar/group/13058"
-          }
-        ]
-      },
-      "script_signals": {
-        "next_data_scripts": 0,
-        "nuxt_scripts": 0,
-        "json_ld_scripts": 0,
-        "large_inline_scripts": 0
-      },
-      "network_total": 1,
-      "network_endpoints": [],
-      "network_sample": [
-        {
-          "method": "GET",
-          "status": 200,
-          "url": "https://futureskills.mcit.gov.sa/ar/api2/cities?field_aldwlt_target_id=672",
-          "content_type": "application/json",
-          "resource_type": "xhr",
-          "request_post_data": "",
-          "response_shape": "json-like-invalid",
-          "preview": "[{\"tid_1\":\"68\",\"name\":\"\\u0627\\u0644\\u0631\\u064a\\u0627\\u0636\"},{\"tid_1\":\"69\",\"name\":\"\\u0627\\u0644\\u062f\\u0645\\u0627\\u0645\"},{\"tid_1\":\"70\",\"name\":\"\\u062c\\u062f\\u0629\"},{\"tid_1\":\"71\",\"name\":\"\\u0623\\u0628\\u0647\\u0627\"},{\"tid_1\":\"171\",\"name\":\"\\u0627\\u0644\\u062c\\u0628\\u064a\\u0644\"},{\"tid_1\":\"172\",\"name\":\"\\u0627\\u0644\\u0628\\u0627\\u062d\\u0629\"},{\"tid_1\":\"176\",\"name\":\"\\u0627\\u0644\\u0637\\u0627\\u0626\\u0641\"},{\"tid_1\":\"177\",\"name\":\"\\u0627\\u0644\\u0638\\u0647\\u0631\\u0627\\u0646\"},{\"tid_1\":\"182\",\"name\":\"\\u0627\\u0644\\u0645\\u0628\\u0631\\u0632\"},{\"tid_1\":\"183\",\"name\":\"\\u0627\\u0644\\u0645\\u062f\\u064a\\u0646\\u0629 \\u0627\\u0644\\u0645\\u0646\\u0648\\u0631\\u0629\"},{\"tid_1\":\"187\",\"name\":\"\\u062a\\u0628\\u0648\\u0643\"},{\"tid_1\":\"191\",\"name\":\"\\u0631\\u0641\\u062d\\u0627\\u0621\"},{\"tid_1\":\"192\",\"name\":\"\\u0633\\u0643\\u0627\\u0643\\u0627\"},{\"tid_1\":\"194\",\"name\":\"\\u0642\\u0644\\u0639\\u0629 \\u0628\\u064a\\u0634\\u0629\"},{\"tid_1\":\"196\",\"name\":\"\\u0646\\u062c\\u0631\\u0627\\u0646\"},{\"tid_1\":\"197\",\"name\":\"\\u062d\\u0627\\u0626\\u0644\"},{\"tid_1\":\"198\",\"name\":\"\\u064a\\u0646\\u0628\\u0639\"},{\"tid_1\":\"5042\",\"name\":\"\\u0627\\u0644\\u0623\\u062d\\u0633\\u0627\\u0621\"},{\"tid_1\":\"7319\",\"name\":\"\\u0639\\u0633\\u064a\\u0631\"},{\"tid_1\":\"10545\",\"name\":\"\\u0645\\u0643\\u0629 \\u0627\\u0644\\u0645\\u0643\\u0631\\u0645\\u0629\"},{\"tid_1\":\"10635\",\"name\":\"\\u0627\\u0644\\u062d\\u0644\\u0629\"},{\"tid_1\":\"10638\",\"name\":\"\\u0627\\u0644\\u062e\\u0631\\u062c\"},{\"tid_1\":\"10641\",\"name\":\"\\u0627\\u0644\\u0633\\u0644\\u064a\\u0644\"},{\"tid_1\":\"10647\",\"name\":\"\\u0627\\u0644\\u0642\\u0631\\u064a\\u0627\\u062a\"},{\"tid_1\":\"10650\",\"name\":\"\\u0627\\u0644\\u0642\\u0637\\u064a\\u0641\"},{\"tid_1\":\"10653\",\"name\":\"\\u0627\\u0644\\u0642\\u0646\\u0641\\u0630\\u0629\"},{\"tid_1\":\"10656\",\"name\":\"\\u0627\\u0644\\u0642\\u0648\\u064a\\u0639\\u064a\\u0629\"},{\"tid_1\":\"10659\",\"name\":\"\\u0627\\u0644\\u0647\\u0641\\u0648\\u0641\"},{\"tid_1\":\"10662\",\"name\":\"\\u062"
-        }
-      ]
-    },
-    {
       "id": "riyadh-city-events",
-      "probed_at": "2026-09-21T08:16:46.524Z",
+      "probed_at": "2026-09-22T07:47:14.401Z",
       "name": "Riyadh City Events",
       "priority": 51,
       "url": "https://riyadh.sa/en/events/all",
@@ -206,14 +28,14 @@
       "status": "ok",
       "http_status": 200,
       "navigation_error": "",
-      "duration_ms": 11660,
+      "duration_ms": 10536,
       "classification": "rendered-html-candidates",
       "next_action": "اكتب extractor مرن من DOM بعد الرندر أو حسن selector الحالي.",
       "title": "الموقع الرسمي لمدينة الرياض",
-      "text_bytes": 827,
-      "html_bytes": 155264,
-      "html_snapshot": "data/raw/browser-probes/riyadh-city-events-2026-09-21T08-16-12-423Z.html",
-      "screenshot": "data/raw/browser-probes/riyadh-city-events-2026-09-21T08-16-12-423Z.png",
+      "text_bytes": 828,
+      "html_bytes": 155265,
+      "html_snapshot": "data/raw/browser-probes/riyadh-city-events-2026-09-22T07-47-01-577Z.html",
+      "screenshot": "data/raw/browser-probes/riyadh-city-events-2026-09-22T07-47-01-577Z.png",
       "signals": {
         "has_next_data": false,
         "has_nuxt": false,
@@ -263,145 +85,6 @@
           "request_post_data": "",
           "response_shape": "json-like-invalid",
           "preview": "{ \"lang\": \"en\", \"main\": { \"title\": \"Riyadh City\" }, \"lastUpdated\": { \"label\": \"Last Modified Date\", \"timezone\": \"Saudi Arabia Time\" }, \"cookies\": { \"title\": \"Cookies\", \"consentIntro\": \"This site uses its own cookies to ensure ease of use and to improve your experience while browsing. By continuing to browse this site, you acknowledge and accept the use of cookies.\", \"privacyPolicy\": \"Privacy Policy\", \"accept\": \"Accept\", \"reject\": \"Reject\", \"manageLink\": \"Manage Cookies\", \"manageTitle\": \"Manage Cookies\", \"thanksTitle\": \"Cookies\", \"intro\": \"Whenever you visit a website, it may store or retrieve information on your browser, mostly in the form of cookies. This information might be about you, your preferences, or your device, and is mostly used to make the site work as you expect it to. The information does not usually identify you directly, but it can give you a more personalized web experience. You can choose not to allow some types of cookies. Click on the different category headings to find out more and change our default settings. However, you should know that blocking some types of cookies may impact your experience of the site and the services we are able to offer.\", \"necessary\": \"These cookies are strictly necessary (always active)\", \"performance\": \"Performance cookies\", \"functional\": \"Functional cookies\", \"targeting\": \"Targeting cookies\", \"confirm\": \"Confirm my choices\", \"rejectAll\": \"Reject all\", \"thanksMessage\": \"Thank you! Your response has been recorded successfully. If you would like to edit or change your answer, you can go back by clicking the undo button.\", \"undo\": \"Undo\", \"close\": \"Close\" }, \"fileUploader\": { \"hint\": \"Maximum file size allowed is {{size}}"
-        }
-      ]
-    },
-    {
-      "id": "sdaia-calendar-events",
-      "probed_at": "2026-09-21T08:16:56.631Z",
-      "name": "SDAIA Calendar and Events",
-      "priority": 54,
-      "url": "https://sdaia.gov.sa/en/MediaCenter/Events/Pages/default.aspx",
-      "final_url": "https://sdaia.gov.sa/en/MediaCenter/Events/Pages/default.aspx",
-      "status": "ok",
-      "http_status": 200,
-      "navigation_error": "",
-      "duration_ms": 10083,
-      "classification": "browser-network-api",
-      "next_action": "ثبت endpoint مرشحًا كجامع مباشر، ثم اكتب extractor من JSON مع اختبار انحدار.",
-      "title": "SDAIA | SDAIA Calendar & Events",
-      "text_bytes": 3042,
-      "html_bytes": 143079,
-      "html_snapshot": "data/raw/browser-probes/sdaia-calendar-events-2026-09-21T08-16-12-423Z.html",
-      "screenshot": "data/raw/browser-probes/sdaia-calendar-events-2026-09-21T08-16-12-423Z.png",
-      "signals": {
-        "has_next_data": false,
-        "has_nuxt": false,
-        "has_json_ld": false,
-        "has_event_schema": false,
-        "date_snippets": [],
-        "event_like_links": [
-          {
-            "text": "AI Scholarship Program",
-            "href": "https://sdaia.gov.sa/en/Sectors/academy/Pages/ScholarshipProgram.aspx"
-          },
-          {
-            "text": "Cooperative Training Program",
-            "href": "https://sdaia.gov.sa/en/Sectors/BuildingCapacity/Pages/CooperativeTraining.aspx"
-          },
-          {
-            "text": "Free Software and Services",
-            "href": "https://sdaia.gov.sa/en/Services/Pages/FreeServicesAndPrograms.aspx"
-          },
-          {
-            "text": "Calendar and Events",
-            "href": "https://sdaia.gov.sa/en/MediaCenter/Events/Pages/default.aspx"
-          },
-          {
-            "text": "Search",
-            "href": "https://sdaia.gov.sa/en/MediaCenter/Events/Pages/default.aspx#"
-          },
-          {
-            "text": "",
-            "href": "https://sdaia.gov.sa/en/MediaCenter/Events/Pages/default.aspx#ctl00_PlaceHolderBanner_ContentMap_SkipLink"
-          },
-          {
-            "text": "Show Events",
-            "href": "https://sdaia.gov.sa/en/MediaCenter/Events/Pages/default.aspx#"
-          },
-          {
-            "text": "Show Calendar",
-            "href": "https://sdaia.gov.sa/en/MediaCenter/Events/Pages/default.aspx#"
-          },
-          {
-            "text": "Organizer\n\n1/28/2026 - 1/29/2026\n\nInternational Conference on Data and AI Capacity Building (ICAN)\n\nOrganizer: SDAIA\n\nTa",
-            "href": "https://sdaia.gov.sa/en/MediaCenter/Events/Pages/EventsDetails.aspx?EventID=121"
-          },
-          {
-            "text": "Hosting\n\n9/14/2026 - 9/17/2026\n\nGlobal Forum on the Ethics of AI\n\nOrganizer: UNESCO\n\nTags:\n\nartificial intelligence",
-            "href": "https://sdaia.gov.sa/en/MediaCenter/Events/Pages/EventsDetails.aspx?EventID=122"
-          },
-          {
-            "text": "Yes",
-            "href": "https://sdaia.gov.sa/en/MediaCenter/Events/Pages/default.aspx#pills-first"
-          },
-          {
-            "text": "No",
-            "href": "https://sdaia.gov.sa/en/MediaCenter/Events/Pages/default.aspx#pills-second"
-          },
-          {
-            "text": "Privacy Policy",
-            "href": "https://sdaia.gov.sa/en/MediaCenter/Events/Pages/default.aspx#"
-          },
-          {
-            "text": "Manage Preferences",
-            "href": "https://sdaia.gov.sa/en/MediaCenter/Events/Pages/default.aspx#"
-          },
-          {
-            "text": "",
-            "href": "https://sdaia.gov.sa/en/MediaCenter/Events/Pages/default.aspx#?"
-          }
-        ]
-      },
-      "script_signals": {
-        "next_data_scripts": 0,
-        "nuxt_scripts": 0,
-        "json_ld_scripts": 0,
-        "large_inline_scripts": 1
-      },
-      "network_total": 3,
-      "network_endpoints": [
-        {
-          "method": "GET",
-          "status": 200,
-          "url": "https://sdaia.gov.sa/sdaiaapi/api/feedback/getbypageurl?pageURL=/en/mediacenter/events/pages/default.aspx&_=1789978609386",
-          "content_type": "application/json",
-          "resource_type": "xhr",
-          "request_post_data": "",
-          "response_shape": "json-object:Message,Status,ErrorCode,ErrorMessage,Notifications",
-          "preview": "{\"Message\":{\"Title\":\"/en/mediacenter/events/pages/default.aspx\",\"PageId\":\"/en/mediacenter/events/pages/default.aspx\",\"YesCount\":\"0\",\"NoCount\":\"0\",\"TotalCount\":\"0\"},\"Status\":true,\"ErrorCode\":0,\"ErrorMessage\":null,\"Notifications\":null}"
-        }
-      ],
-      "network_sample": [
-        {
-          "method": "GET",
-          "status": 200,
-          "url": "https://sdaia.gov.sa/sdaiaformapi/api/user/GetNafathInfo?_=1789978609385",
-          "content_type": "text/html",
-          "resource_type": "xhr",
-          "request_post_data": "",
-          "response_shape": "html",
-          "preview": "<html><head><title>Request Rejected</title></head><body>The requested URL was rejected. Please consult with your administrator.<br><br>Your support ID is: 7032172520222972659<br><br><a href='javascript:history.back();'>[Go Back]</a></body></html>"
-        },
-        {
-          "method": "GET",
-          "status": 200,
-          "url": "https://sdaia.gov.sa/sdaiaapi/api/home/geteninternalpagenavdata?_=1789978609384",
-          "content_type": "application/json",
-          "resource_type": "xhr",
-          "request_post_data": "",
-          "response_shape": "json-like-invalid",
-          "preview": "{\"Data\":{\"menu\":[{\"id\":1,\"title\":\"Home\",\"url\":\"/en/default.aspx\",\"hasChild\":\"false\",\"itemSort\":\"1\",\"layout\":null,\"show\":\"true\",\"level2\":[],\"error\":false},{\"id\":2,\"title\":\"SDAIA\",\"url\":\"/en/SDAIA/Pages/default.aspx\",\"hasChild\":\"true\",\"itemSort\":\"2\",\"layout\":\"Grid\",\"show\":\"true\",\"level2\":[{\"id\":1,\"title\":\"About SDAIA\",\"url\":\"/en/SDAIA/about/Pages/default.aspx\",\"menuLevel1\":\"SDAIA\",\"itemSort\":\"1\",\"icon\":\"fal fa-buildings\",\"level3\":[{\"title\":\"About SDAIA\",\"url\":\"/en/SDAIA/about/Pages/About.aspx\",\"itemSort\":\"1\",\"icon\":\"fal fa-buildings\",\"topmenuLevel1\":\"SDAIA\",\"show\":\"true\",\"iconType\":\"Icon\"},{\"title\":\"Board of Directors\",\"url\":\"/en/SDAIA/about/Pages/directorsBoard.aspx\",\"itemSort\":\"2\",\"icon\":\"fal fa-id-card\",\"topmenuLevel1\":\"SDAIA\",\"show\":\"true\",\"iconType\":\"Icon\"},{\"title\":\"Organizational Structure\",\"url\":\"/en/SDAIA/about/Pages/organizationalStructure.aspx\",\"itemSort\":\"3\",\"icon\":\"fal fa-diagram-project\",\"topmenuLevel1\":\"SDAIA\",\"show\":\"true\",\"iconType\":\"Icon\"},{\"title\":\"Budget and Spending\",\"url\":\"/en/SDAIA/about/Pages/Budget.aspx\",\"itemSort\":\"4\",\"icon\":\"fal fa-coins\",\"topmenuLevel1\":\"SDAIA\",\"show\":\"true\",\"iconType\":\"Icon\"},{\"title\":\"Competitions and Purchases\",\"url\":\"/en/SDAIA/about/Pages/CompetitionsAndPurchases.aspx\",\"itemSort\":\"5\",\"icon\":\"fal fa-flag-checkered\",\"topmenuLevel1\":\"SDAIA\",\"show\":\"true\",\"iconType\":\"Icon\"},{\"title\":\"Achievements\",\"url\":\"/en/SDAIA/about/Pages/Achievements.aspx\",\"itemSort\":\"6\",\"icon\":\"fal fa-ballot-check\",\"topmenuLevel1\":\"SDAIA\",\"show\":\"true\",\"iconType\":\"Icon\"},{\"title\":\"Laws and Regulations\",\"url\":\"/en/SDAIA/about/Pages/RegulationsAndPolicies.aspx\",\"itemSort\":\"7\",\"icon\":\"fal fa-clipboard-check\",\"topmenuLevel1\":\"SDAIA\",\"show\":\"true\",\"iconType\":\"Icon\"},{\"title\":\"Artificial Intelligence\",\"url\":\"/en/SDAIA/about/Pages/AboutAI.aspx\",\"itemSort\":\"8\",\"i"
-        },
-        {
-          "method": "GET",
-          "status": 200,
-          "url": "https://sdaia.gov.sa/sdaiaapi/api/feedback/getbypageurl?pageURL=/en/mediacenter/events/pages/default.aspx&_=1789978609386",
-          "content_type": "application/json",
-          "resource_type": "xhr",
-          "request_post_data": "",
-          "response_shape": "json-object:Message,Status,ErrorCode,ErrorMessage,Notifications",
-          "preview": "{\"Message\":{\"Title\":\"/en/mediacenter/events/pages/default.aspx\",\"PageId\":\"/en/mediacenter/events/pages/default.aspx\",\"YesCount\":\"0\",\"NoCount\":\"0\",\"TotalCount\":\"0\"},\"Status\":true,\"ErrorCode\":0,\"ErrorMessage\":null,\"Notifications\":null}"
         }
       ]
     }
