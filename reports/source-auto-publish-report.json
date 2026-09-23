@@ -1,15 +1,15 @@
 {
-  "published_at": "2026-09-22T16:16:05.214Z",
+  "published_at": "2026-09-23T07:56:31.535Z",
   "dry_run": false,
   "include_partner": true,
   "source_candidates": "data/source_candidates.json",
   "events_catalog": "data/events_catalog.json",
-  "candidates_seen": 478,
+  "candidates_seen": 477,
   "totals": {
-    "candidates_seen": 478,
-    "published": 24,
-    "linked_existing": 415,
-    "blocked": 39,
+    "candidates_seen": 477,
+    "published": 1,
+    "linked_existing": 438,
+    "blocked": 38,
     "duplicate_review_alerts": 6,
     "category_fallback_alerts": 0,
     "reconciled": 439,
@@ -128,124 +128,9 @@
   ],
   "published": [
     {
-      "candidate_id": "candidate-visit-saudi-calendar-pdf-تجربة-شاطئ-قالو-20260825-4a38d19e",
-      "event_id": "event-تجربة-شاطئ-قالو",
-      "title": "تجربة شاطئ قالو"
-    },
-    {
-      "candidate_id": "candidate-visit-saudi-calendar-pdf-استمرارية-26-20260903-4a38d19e",
-      "event_id": "event-استمرارية-26",
-      "title": "استمرارية 26"
-    },
-    {
-      "candidate_id": "candidate-visit-saudi-calendar-pdf-الدوري-السعودي-للرياضات-الالكترونية-القتالية-20260910-4a38d19e",
-      "event_id": "event-الدوري-السعودي-للرياضات-الالكترونية-القتالية",
-      "title": "الدوري السعودي للرياضات الالكترونية القتالية"
-    },
-    {
-      "candidate_id": "candidate-visit-saudi-calendar-pdf-دوري-الملوك-mena-20260918-4a38d19e",
-      "event_id": "event-دوري-الملوك-mena",
-      "title": "دوري الملوك MENA"
-    },
-    {
-      "candidate_id": "candidate-visit-saudi-calendar-pdf-كأس-الخليج-20260923-4a38d19e",
-      "event_id": "event-كأس-الخليج",
-      "title": "كأس الخليج"
-    },
-    {
-      "candidate_id": "candidate-visit-saudi-calendar-pdf-تكوة-شاكر-20260924-4a38d19e",
-      "event_id": "event-تكوة-شاكر",
-      "title": "تكوة شاكر"
-    },
-    {
-      "candidate_id": "candidate-visit-saudi-calendar-pdf-frequency-room-pre-launch-series-varoo-all-night-long-20260925-4a38d19e",
-      "event_id": "event-frequency-room-pre-launch-series-varoo-all-night-long",
-      "title": "Frequency Room: Pre-Launch Series — Varoo - All night long"
-    },
-    {
-      "candidate_id": "candidate-visit-saudi-calendar-pdf-ليلة-جاز-في-جدة-مع-فايا-يونان-20260925-4a38d19e",
-      "event_id": "event-ليلة-جاز-في-جدة-مع-فايا-يونان",
-      "title": "ليلة جاز في جدة مع فايا يونان"
-    },
-    {
-      "candidate_id": "candidate-visit-saudi-calendar-pdf-مهرجان-الكوميديا-مع-محمد-حلمي-في-six-flags-مدينة-القدية-20260925-4a38d19e",
-      "event_id": "event-مهرجان-الكوميديا-مع-محمد-حلمي-في-six-flags-مدينة-القدية",
-      "title": "مهرجان الكوميديا مع محمد حلمي في Six Flags مدينة القدية"
-    },
-    {
-      "candidate_id": "candidate-visit-saudi-calendar-pdf-جلسة-طق-20260925-4a38d19e",
-      "event_id": "event-جلسة-طق",
-      "title": "جلسة طق"
-    },
-    {
-      "candidate_id": "candidate-visit-saudi-calendar-pdf-حفل-عايض-في-فوكالي-الرياض-20260925-4a38d19e",
-      "event_id": "event-حفل-عايض-في-فوكالي-الرياض",
-      "title": "حفل عايض في فوكالي الرياض"
-    },
-    {
-      "candidate_id": "candidate-visit-saudi-calendar-pdf-خالد-جواد-ايف-في-جدة-20260926-4a38d19e",
-      "event_id": "event-خالد-جواد-ايف-في-جدة",
-      "title": "خالد جواد ايف في جدة"
-    },
-    {
-      "candidate_id": "candidate-visit-saudi-calendar-pdf-صالح-النواوي،-سيف-زغموري،-عبدا-صبيح-،-طلال-الشيخي-في-six-flags-20260926-4a38d19e",
-      "event_id": "event-صالح-النواوي،-سيف-زغموري،-عبدا-صبيح-،-طلال-الشيخي-في-six-flags",
-      "title": "صالح النواوي، سيف زغموري، عبدا صبيح ، طلال الشيخي في Six Flags"
-    },
-    {
-      "candidate_id": "candidate-future-skills-catalog-introduction-to-apis-and-web-services-20260927-a69aa1c2",
-      "event_id": "event-introduction-to-apis-and-web-services",
-      "title": "Introduction to APIs and Web Services"
-    },
-    {
-      "candidate_id": "candidate-visit-saudi-calendar-pdf-طوني-أبو-جودة-في-الرياض-20261001-4a38d19e",
-      "event_id": "event-طوني-أبو-جودة-في-الرياض",
-      "title": "طوني أبو جودة في الرياض"
-    },
-    {
-      "candidate_id": "candidate-visit-saudi-calendar-pdf-بي-إف-إل-مينا-11-نصف-النهائي-في-الرياض-20261002-4a38d19e",
-      "event_id": "event-بي-إف-إل-مينا-11-نصف-النهائي-في-الرياض",
-      "title": "بي إف إل مينا 11 - نصف النهائي في الرياض"
-    },
-    {
-      "candidate_id": "candidate-visit-saudi-calendar-pdf-عرض-علاء-الشيخ-في-الرياض-20261015-4a38d19e",
-      "event_id": "event-عرض-علاء-الشيخ-في-الرياض",
-      "title": "عرض علاء الشيخ في الرياض"
-    },
-    {
-      "candidate_id": "candidate-visit-saudi-calendar-pdf-عرض-علاء-الشيخ-في-جدة-20261016-4a38d19e",
-      "event_id": "event-عرض-علاء-الشيخ-في-جدة",
-      "title": "عرض علاء الشيخ في جدة"
-    },
-    {
-      "candidate_id": "candidate-visit-saudi-calendar-pdf-six-kings-slam-20261021-4a38d19e",
-      "event_id": "event-six-kings-slam",
-      "title": "Six Kings Slam"
-    },
-    {
-      "candidate_id": "candidate-visit-saudi-calendar-pdf-لحد-يدري-عرض-ستاند-اب-كوميدي-من-أسامة-بازيد-20261022-4a38d19e",
-      "event_id": "event-لحد-يدري-عرض-ستاند-اب-كوميدي-من-أسامة-بازيد",
-      "title": "لحد يدري: عرض ستاند اب كوميدي من أسامة بازيد"
-    },
-    {
-      "candidate_id": "candidate-visit-saudi-calendar-pdf-لحد-يدري-عرض-ستاند-اب-كوميدي-من-أسامة-بازيد-20261023-4a38d19e",
-      "event_id": "event-لحد-يدري-عرض-ستاند-اب-كوميدي-من-أسامة-بازيد-2",
-      "title": "لحد يدري: عرض ستاند اب كوميدي من أسامة بازيد"
-    },
-    {
-      "candidate_id": "candidate-visit-saudi-calendar-pdf-حفل-ماريلين-نعمان-الموسيقي-20261029-4a38d19e",
-      "event_id": "event-حفل-ماريلين-نعمان-الموسيقي",
-      "title": "حفل ماريلين نعمان الموسيقي"
-    },
-    {
-      "candidate_id": "candidate-visit-saudi-calendar-pdf-مهرجان-سماء-العا-20261106-4a38d19e",
-      "event_id": "event-مهرجان-سماء-العا",
-      "title": "مهرجان سماء العا"
-    },
-    {
-      "candidate_id": "candidate-visit-saudi-calendar-pdf-وقف-عرض-نمر-الكوميدي-مباشر-في-جدة-20261107-4a38d19e",
-      "event_id": "event-وقف-عرض-نمر-الكوميدي-مباشر-في-جدة",
-      "title": "وقف! عرض نمر الكوميدي مباشر في جدة"
+      "candidate_id": "candidate-experience-alula-events-qissa-bi-qissa-swap-a-story-20260924-a2d33a9a",
+      "event_id": "event-qissa-bi-qissa-swap-a-story",
+      "title": "Qissa bi Qissa (Swap a Story)"
     }
   ],
   "linked_existing": [
@@ -499,7 +384,7 @@
       "candidate_id": "candidate-visit-saudi-calendar-pdf-الاخطبوطية-20260704-4a38d19e",
       "event_id": "event-الأخطبوطية",
       "title": "الاخطبوطية",
-      "reason": "trusted duplicate linked to existing catalog event"
+      "reason": "already linked to catalog event"
     },
     {
       "candidate_id": "candidate-discover-aseer-events-bioni-al-sharaf-20260711-62339a98",
@@ -802,6 +687,12 @@
       "reason": "already linked to catalog event"
     },
     {
+      "candidate_id": "candidate-visit-saudi-calendar-pdf-تجربة-شاطئ-قالو-20260825-4a38d19e",
+      "event_id": "event-تجربة-شاطئ-قالو",
+      "title": "تجربة شاطئ قالو",
+      "reason": "already linked to catalog event"
+    },
+    {
       "candidate_id": "candidate-visit-saudi-seasons-galu-beach-experience-20260825-f9cef88d",
       "event_id": "event-galu-beach-experience",
       "title": "GALU Beach Experience",
@@ -856,6 +747,12 @@
       "reason": "already linked to catalog event"
     },
     {
+      "candidate_id": "candidate-visit-saudi-calendar-pdf-استمرارية-26-20260903-4a38d19e",
+      "event_id": "event-استمرارية-26",
+      "title": "استمرارية 26",
+      "reason": "already linked to catalog event"
+    },
+    {
       "candidate_id": "candidate-visit-saudi-seasons-continuum-26-diriyah-art-futures-emerging-new-media-artists-programme-20260903-6492b0e9",
       "event_id": "event-continuum-26-diriyah-art-futures-emerging-new-media-artists-programme",
       "title": "Continuum '26 Diriyah Art Futures Emerging New Media Artists Programme",
@@ -895,6 +792,12 @@
       "candidate_id": "candidate-tuwaiq-academy-bootcamps-دبلوم-الأمن-السيبراني-المتقدم-20260906-23af5636",
       "event_id": "event-دبلوم-الأمن-السيبراني-المتقدم",
       "title": "دبلوم الأمن السيبراني المتقدم",
+      "reason": "already linked to catalog event"
+    },
+    {
+      "candidate_id": "candidate-visit-saudi-calendar-pdf-الدوري-السعودي-للرياضات-الالكترونية-القتالية-20260910-4a38d19e",
+      "event_id": "event-الدوري-السعودي-للرياضات-الالكترونية-القتالية",
+      "title": "الدوري السعودي للرياضات الالكترونية القتالية",
       "reason": "already linked to catalog event"
     },
     {
@@ -952,6 +855,12 @@
       "reason": "already linked to catalog event"
     },
     {
+      "candidate_id": "candidate-visit-saudi-calendar-pdf-دوري-الملوك-mena-20260918-4a38d19e",
+      "event_id": "event-دوري-الملوك-mena",
+      "title": "دوري الملوك MENA",
+      "reason": "already linked to catalog event"
+    },
+    {
       "candidate_id": "candidate-tuwaiq-academy-bootcamps-معسكر-علم-البيانات-والذكاء-الاصطناعي-20260920-3a71a485",
       "event_id": "event-معسكر-علم-البيانات-والذكاء-الاصطناعي",
       "title": "معسكر علم البيانات والذكاء الاصطناعي",
@@ -982,93 +891,9 @@
       "reason": "already linked to catalog event"
     },
     {
-      "candidate_id": "candidate-ithra-events-echoes-of-the-familiar-20260922-cc43c2bd",
-      "event_id": "event-echoes-of-the-familiar",
-      "title": "Echoes of the Familiar",
-      "reason": "already linked to catalog event"
-    },
-    {
-      "candidate_id": "candidate-ithra-events-ithra-art-prize-exhibition-20260922-83c2ab55",
-      "event_id": "event-ithra-art-prize-exhibition",
-      "title": "Ithra Art Prize Exhibition",
-      "reason": "already linked to catalog event"
-    },
-    {
-      "candidate_id": "candidate-ithra-events-tafasahu-make-room-20260922-562bc61d",
-      "event_id": "event-tafasahu-make-room",
-      "title": "Tafasahu: Make Room",
-      "reason": "already linked to catalog event"
-    },
-    {
-      "candidate_id": "candidate-ithra-events-tinkering-stations-20260922-5a2c4c0e",
-      "event_id": "event-tinkering-stations",
-      "title": "Tinkering Stations",
-      "reason": "already linked to catalog event"
-    },
-    {
-      "candidate_id": "candidate-ithra-events-move-with-pride-20260922-12b04bb0",
-      "event_id": "event-move-with-pride",
-      "title": "Move with Pride",
-      "reason": "already linked to catalog event"
-    },
-    {
-      "candidate_id": "candidate-ithra-events-chess-hub-20260922-4919439a",
-      "event_id": "event-chess-hub",
-      "title": "Chess Hub",
-      "reason": "already linked to catalog event"
-    },
-    {
-      "candidate_id": "candidate-ithra-events-think-like-the-crowd-20260922-bc88c088",
-      "event_id": "event-think-like-the-crowd",
-      "title": "Think Like the Crowd",
-      "reason": "already linked to catalog event"
-    },
-    {
-      "candidate_id": "candidate-ithra-events-the-impossible-challenge-20260922-d1228002",
-      "event_id": "event-the-impossible-challenge",
-      "title": "The Impossible Challenge",
-      "reason": "already linked to catalog event"
-    },
-    {
-      "candidate_id": "candidate-ithra-events-imagination-oasis-20260922-104f8079",
-      "event_id": "event-imagination-oasis",
-      "title": "Imagination Oasis",
-      "reason": "already linked to catalog event"
-    },
-    {
-      "candidate_id": "candidate-umm-al-qura-events-دورة-تدريبية-بعنوان-إدارة-الجودة-9001-20260922-63429459",
-      "event_id": "event-دورة-تدريبية-بعنوان-إدارة-الجودة-9001",
-      "title": "دورة تدريبية بعنوان إدارة الجودة 9001",
-      "reason": "already linked to catalog event"
-    },
-    {
-      "candidate_id": "candidate-ithra-events-destination-20260922-e2d0a53b",
-      "event_id": "event-destination",
-      "title": "Destination",
-      "reason": "already linked to catalog event"
-    },
-    {
-      "candidate_id": "candidate-ithra-events-on-this-carpet-20260922-2972e041",
-      "event_id": "event-on-this-carpet",
-      "title": "On This Carpet",
-      "reason": "already linked to catalog event"
-    },
-    {
-      "candidate_id": "candidate-ithra-events-childrens-museum-story-time-20260922-ada8b9db",
-      "event_id": "event-childrens-museum-story-time",
-      "title": "Children's Museum Story Time",
-      "reason": "already linked to catalog event"
-    },
-    {
-      "candidate_id": "candidate-ithra-events-the-nameless-knight-20260922-0c66859e",
-      "event_id": "event-the-nameless-knight",
-      "title": "The Nameless Knight",
-      "reason": "already linked to catalog event"
-    },
-    {
-      "candidate_id": "candidate-ithra-events-new-saudi-voices-20260922-b848fa25",
-      "event_id": "event-new-saudi-voices",
-      "title": "New Saudi Voices",
+      "candidate_id": "candidate-visit-saudi-calendar-pdf-كأس-الخليج-20260923-4a38d19e",
+      "event_id": "event-كأس-الخليج",
+      "title": "كأس الخليج",
       "reason": "already linked to catalog event"
     },
     {
@@ -1087,6 +912,24 @@
       "candidate_id": "candidate-dhahran-expo-calendar-music-concerts-national-day-20260923-18d15b29",
       "event_id": "event-music-concerts-national-day",
       "title": "Music Concerts National Day",
+      "reason": "already linked to catalog event"
+    },
+    {
+      "candidate_id": "candidate-ithra-events-echoes-of-the-familiar-20260923-cc43c2bd",
+      "event_id": "event-echoes-of-the-familiar",
+      "title": "Echoes of the Familiar",
+      "reason": "already linked to catalog event"
+    },
+    {
+      "candidate_id": "candidate-ithra-events-ithra-art-prize-exhibition-20260923-83c2ab55",
+      "event_id": "event-ithra-art-prize-exhibition",
+      "title": "Ithra Art Prize Exhibition",
+      "reason": "already linked to catalog event"
+    },
+    {
+      "candidate_id": "candidate-ithra-events-tafasahu-make-room-20260923-562bc61d",
+      "event_id": "event-tafasahu-make-room",
+      "title": "Tafasahu: Make Room",
       "reason": "already linked to catalog event"
     },
     {
@@ -1144,9 +987,33 @@
       "reason": "already linked to catalog event"
     },
     {
+      "candidate_id": "candidate-ithra-events-move-with-pride-20260923-12b04bb0",
+      "event_id": "event-move-with-pride",
+      "title": "Move with Pride",
+      "reason": "already linked to catalog event"
+    },
+    {
       "candidate_id": "candidate-ithra-events-saudi-calligraphy-workshop-20260923-5cf2e0fe",
       "event_id": "event-saudi-calligraphy-workshop",
       "title": "Saudi Calligraphy Workshop",
+      "reason": "already linked to catalog event"
+    },
+    {
+      "candidate_id": "candidate-ithra-events-think-like-the-crowd-20260923-bc88c088",
+      "event_id": "event-think-like-the-crowd",
+      "title": "Think Like the Crowd",
+      "reason": "already linked to catalog event"
+    },
+    {
+      "candidate_id": "candidate-ithra-events-imagination-oasis-20260923-104f8079",
+      "event_id": "event-imagination-oasis",
+      "title": "Imagination Oasis",
+      "reason": "already linked to catalog event"
+    },
+    {
+      "candidate_id": "candidate-ithra-events-the-impossible-challenge-20260923-d1228002",
+      "event_id": "event-the-impossible-challenge",
+      "title": "The Impossible Challenge",
       "reason": "already linked to catalog event"
     },
     {
@@ -1165,6 +1032,30 @@
       "candidate_id": "candidate-ithra-events-sing-along-for-saudi-20260923-0febb788",
       "event_id": "event-sing-along-for-saudi",
       "title": "Sing-Along for Saudi",
+      "reason": "already linked to catalog event"
+    },
+    {
+      "candidate_id": "candidate-ithra-events-destination-20260923-e2d0a53b",
+      "event_id": "event-destination",
+      "title": "Destination",
+      "reason": "already linked to catalog event"
+    },
+    {
+      "candidate_id": "candidate-ithra-events-the-nameless-knight-20260923-0c66859e",
+      "event_id": "event-the-nameless-knight",
+      "title": "The Nameless Knight",
+      "reason": "already linked to catalog event"
+    },
+    {
+      "candidate_id": "candidate-ithra-events-new-saudi-voices-20260923-b848fa25",
+      "event_id": "event-new-saudi-voices",
+      "title": "New Saudi Voices",
+      "reason": "already linked to catalog event"
+    },
+    {
+      "candidate_id": "candidate-visit-saudi-calendar-pdf-تكوة-شاكر-20260924-4a38d19e",
+      "event_id": "event-تكوة-شاكر",
+      "title": "تكوة شاكر",
       "reason": "already linked to catalog event"
     },
     {
@@ -1204,6 +1095,36 @@
       "reason": "already linked to catalog event"
     },
     {
+      "candidate_id": "candidate-visit-saudi-calendar-pdf-frequency-room-pre-launch-series-varoo-all-night-long-20260925-4a38d19e",
+      "event_id": "event-frequency-room-pre-launch-series-varoo-all-night-long",
+      "title": "Frequency Room: Pre-Launch Series — Varoo - All night long",
+      "reason": "already linked to catalog event"
+    },
+    {
+      "candidate_id": "candidate-visit-saudi-calendar-pdf-ليلة-جاز-في-جدة-مع-فايا-يونان-20260925-4a38d19e",
+      "event_id": "event-ليلة-جاز-في-جدة-مع-فايا-يونان",
+      "title": "ليلة جاز في جدة مع فايا يونان",
+      "reason": "already linked to catalog event"
+    },
+    {
+      "candidate_id": "candidate-visit-saudi-calendar-pdf-مهرجان-الكوميديا-مع-محمد-حلمي-في-six-flags-مدينة-القدية-20260925-4a38d19e",
+      "event_id": "event-مهرجان-الكوميديا-مع-محمد-حلمي-في-six-flags-مدينة-القدية",
+      "title": "مهرجان الكوميديا مع محمد حلمي في Six Flags مدينة القدية",
+      "reason": "already linked to catalog event"
+    },
+    {
+      "candidate_id": "candidate-visit-saudi-calendar-pdf-جلسة-طق-20260925-4a38d19e",
+      "event_id": "event-جلسة-طق",
+      "title": "جلسة طق",
+      "reason": "already linked to catalog event"
+    },
+    {
+      "candidate_id": "candidate-visit-saudi-calendar-pdf-حفل-عايض-في-فوكالي-الرياض-20260925-4a38d19e",
+      "event_id": "event-حفل-عايض-في-فوكالي-الرياض",
+      "title": "حفل عايض في فوكالي الرياض",
+      "reason": "already linked to catalog event"
+    },
+    {
       "candidate_id": "candidate-ithra-events-letter-by-letter-20260925-df94a427",
       "event_id": "event-letter-by-letter",
       "title": "Letter by Letter",
@@ -1213,6 +1134,18 @@
       "candidate_id": "candidate-visit-saudi-calendar-faia-younan-in-jeddah-20260925-6e157617",
       "event_id": "event-faia-younan-in-jeddah",
       "title": "Faia Younan in Jeddah",
+      "reason": "already linked to catalog event"
+    },
+    {
+      "candidate_id": "candidate-visit-saudi-calendar-pdf-خالد-جواد-ايف-في-جدة-20260926-4a38d19e",
+      "event_id": "event-خالد-جواد-ايف-في-جدة",
+      "title": "خالد جواد ايف في جدة",
+      "reason": "already linked to catalog event"
+    },
+    {
+      "candidate_id": "candidate-visit-saudi-calendar-pdf-صالح-النواوي،-سيف-زغموري،-عبدا-صبيح-،-طلال-الشيخي-في-six-flags-20260926-4a38d19e",
+      "event_id": "event-صالح-النواوي،-سيف-زغموري،-عبدا-صبيح-،-طلال-الشيخي-في-six-flags",
+      "title": "صالح النواوي، سيف زغموري، عبدا صبيح ، طلال الشيخي في Six Flags",
       "reason": "already linked to catalog event"
     },
     {
@@ -1255,6 +1188,12 @@
       "candidate_id": "candidate-dhahran-expo-calendar-rotating-equipment-event-20260927-18d15b29",
       "event_id": "event-rotating-equipment-event",
       "title": "Rotating Equipment Event",
+      "reason": "already linked to catalog event"
+    },
+    {
+      "candidate_id": "candidate-future-skills-catalog-introduction-to-apis-and-web-services-20260927-a69aa1c2",
+      "event_id": "event-introduction-to-apis-and-web-services",
+      "title": "Introduction to APIs and Web Services",
       "reason": "already linked to catalog event"
     },
     {
@@ -1330,6 +1269,12 @@
       "reason": "already linked to catalog event"
     },
     {
+      "candidate_id": "candidate-ithra-events-tinkering-stations-20260928-5a2c4c0e",
+      "event_id": "event-tinkering-stations",
+      "title": "Tinkering Stations",
+      "reason": "already linked to catalog event"
+    },
+    {
       "candidate_id": "candidate-riyadh-city-events-icegov-international-conference-on-electronic-governance-20260928-db0f9390",
       "event_id": "event-icegov-international-conference-on-electronic-governance",
       "title": "ICEGOV – International Conference on Electronic Governance",
@@ -1345,6 +1290,12 @@
       "candidate_id": "candidate-ithra-events-spot-of-inspiration-20260928-5bac584c",
       "event_id": "event-spot-of-inspiration",
       "title": "Spot of Inspiration",
+      "reason": "already linked to catalog event"
+    },
+    {
+      "candidate_id": "candidate-ithra-events-childrens-museum-story-time-20260928-ada8b9db",
+      "event_id": "event-childrens-museum-story-time",
+      "title": "Children's Museum Story Time",
       "reason": "already linked to catalog event"
     },
     {
@@ -1411,6 +1362,12 @@
       "candidate_id": "candidate-ithra-events-toddler-tuesday-20260929-1afead7d",
       "event_id": "event-toddler-tuesday",
       "title": "Toddler Tuesday",
+      "reason": "already linked to catalog event"
+    },
+    {
+      "candidate_id": "candidate-ithra-events-on-this-carpet-20260929-2972e041",
+      "event_id": "event-on-this-carpet",
+      "title": "On This Carpet",
       "reason": "already linked to catalog event"
     },
     {
@@ -1516,6 +1473,12 @@
       "reason": "already linked to catalog event"
     },
     {
+      "candidate_id": "candidate-visit-saudi-calendar-pdf-طوني-أبو-جودة-في-الرياض-20261001-4a38d19e",
+      "event_id": "event-طوني-أبو-جودة-في-الرياض",
+      "title": "طوني أبو جودة في الرياض",
+      "reason": "already linked to catalog event"
+    },
+    {
       "candidate_id": "candidate-riyadh-city-events-king-khaled-eye-specialist-hospital-and-research-center-2026-internation-20261001-c8c074ac",
       "event_id": "event-king-khaled-eye-specialist-hospital-and-research-center-2026-internation",
       "title": "King Khaled Eye Specialist Hospital and Research Center 2026 International Conference",
@@ -1561,6 +1524,12 @@
       "candidate_id": "candidate-visit-saudi-calendar-tony-abou-jaoude-live-in-riyadh-20261001-559eba2b",
       "event_id": "event-tony-abou-jaoude-live-in-riyadh",
       "title": "Tony Abou Jaoude Live in Riyadh",
+      "reason": "already linked to catalog event"
+    },
+    {
+      "candidate_id": "candidate-visit-saudi-calendar-pdf-بي-إف-إل-مينا-11-نصف-النهائي-في-الرياض-20261002-4a38d19e",
+      "event_id": "event-بي-إف-إل-مينا-11-نصف-النهائي-في-الرياض",
+      "title": "بي إف إل مينا 11 - نصف النهائي في الرياض",
       "reason": "already linked to catalog event"
     },
     {
@@ -1870,6 +1839,12 @@
       "reason": "already linked to catalog event"
     },
     {
+      "candidate_id": "candidate-visit-saudi-calendar-pdf-عرض-علاء-الشيخ-في-الرياض-20261015-4a38d19e",
+      "event_id": "event-عرض-علاء-الشيخ-في-الرياض",
+      "title": "عرض علاء الشيخ في الرياض",
+      "reason": "already linked to catalog event"
+    },
+    {
       "candidate_id": "candidate-eventbrite-saudi-15th-middle-east-enterprise-ai-analytics-summit-20261015-e0aad1e6",
       "event_id": "event-15th-middle-east-enterprise-ai-analytics-summit",
       "title": "15th Middle East Enterprise AI & Analytics Summit",
@@ -1879,6 +1854,12 @@
       "candidate_id": "candidate-visit-saudi-calendar-alaa-el-sheikh-live-in-riyadh-20261015-9e1b33d3",
       "event_id": "event-alaa-el-sheikh-live-in-riyadh",
       "title": "Alaa El Sheikh Live in Riyadh",
+      "reason": "already linked to catalog event"
+    },
+    {
+      "candidate_id": "candidate-visit-saudi-calendar-pdf-عرض-علاء-الشيخ-في-جدة-20261016-4a38d19e",
+      "event_id": "event-عرض-علاء-الشيخ-في-جدة",
+      "title": "عرض علاء الشيخ في جدة",
       "reason": "already linked to catalog event"
     },
     {
@@ -1906,6 +1887,12 @@
       "reason": "already linked to catalog event"
     },
     {
+      "candidate_id": "candidate-visit-saudi-calendar-pdf-six-kings-slam-20261021-4a38d19e",
+      "event_id": "event-six-kings-slam",
+      "title": "Six Kings Slam",
+      "reason": "already linked to catalog event"
+    },
+    {
       "candidate_id": "candidate-ithra-events-immersive-introduction-to-arabic-writing-and-type-design-20261021-3708788d",
       "event_id": "event-immersive-introduction-to-arabic-writing-and-type-design",
       "title": "Immersive Introduction to Arabic Writing and Type Design",
@@ -1924,9 +1911,21 @@
       "reason": "already linked to catalog event"
     },
     {
+      "candidate_id": "candidate-visit-saudi-calendar-pdf-لحد-يدري-عرض-ستاند-اب-كوميدي-من-أسامة-بازيد-20261022-4a38d19e",
+      "event_id": "event-لحد-يدري-عرض-ستاند-اب-كوميدي-من-أسامة-بازيد",
+      "title": "لحد يدري: عرض ستاند اب كوميدي من أسامة بازيد",
+      "reason": "already linked to catalog event"
+    },
+    {
       "candidate_id": "candidate-visit-saudi-calendar-pdf-فينا-نحكي؟-كوميديا-ستاند-أب-مع-جون-أشقر-20261023-4a38d19e",
       "event_id": "event-فينا-نحكي؟-كوميديا-ستاند-أب-مع-جون-أشقر",
       "title": "”فينا نحكي؟“ كوميديا ستاند أب مع جون أشقر",
+      "reason": "already linked to catalog event"
+    },
+    {
+      "candidate_id": "candidate-visit-saudi-calendar-pdf-لحد-يدري-عرض-ستاند-اب-كوميدي-من-أسامة-بازيد-20261023-4a38d19e",
+      "event_id": "event-لحد-يدري-عرض-ستاند-اب-كوميدي-من-أسامة-بازيد-2",
+      "title": "لحد يدري: عرض ستاند اب كوميدي من أسامة بازيد",
       "reason": "already linked to catalog event"
     },
     {
@@ -1978,6 +1977,12 @@
       "reason": "already linked to catalog event"
     },
     {
+      "candidate_id": "candidate-ithra-events-chess-hub-20261027-4919439a",
+      "event_id": "event-chess-hub",
+      "title": "Chess Hub",
+      "reason": "already linked to catalog event"
+    },
+    {
       "candidate_id": "candidate-eye-of-riyadh-events-real-estate-supply-chain-forum-20261028-206f7fb8",
       "event_id": "event-real-estate-supply-chain-forum",
       "title": "Real Estate Supply Chain Forum",
@@ -1999,6 +2004,12 @@
       "candidate_id": "candidate-visit-saudi-calendar-pdf-ألف-وواحد-20261029-4a38d19e",
       "event_id": "event-ألف-وواحد",
       "title": "ألف وواحد",
+      "reason": "already linked to catalog event"
+    },
+    {
+      "candidate_id": "candidate-visit-saudi-calendar-pdf-حفل-ماريلين-نعمان-الموسيقي-20261029-4a38d19e",
+      "event_id": "event-حفل-ماريلين-نعمان-الموسيقي",
+      "title": "حفل ماريلين نعمان الموسيقي",
       "reason": "already linked to catalog event"
     },
     {
@@ -2065,7 +2076,13 @@
       "candidate_id": "candidate-visit-saudi-calendar-pdf-وقف-عرض-نمر-الكوميدي-المباشر-في-الرياض-20261106-4a38d19e",
       "event_id": "event-wagef-nemr-live-comedy-show-in-riyadh",
       "title": "وقف! عرض نمر الكوميدي المباشر في الرياض",
-      "reason": "trusted duplicate linked to existing catalog event"
+      "reason": "already linked to catalog event"
+    },
+    {
+      "candidate_id": "candidate-visit-saudi-calendar-pdf-مهرجان-سماء-العا-20261106-4a38d19e",
+      "event_id": "event-مهرجان-سماء-العا",
+      "title": "مهرجان سماء العا",
+      "reason": "already linked to catalog event"
     },
     {
       "candidate_id": "candidate-experience-alula-events-alula-skies-festival-20261106-c03f831c",
@@ -2083,6 +2100,12 @@
       "candidate_id": "candidate-visit-saudi-seasons-wagef-nemr-live-comedy-show-in-riyadh-20261106-38ef833b",
       "event_id": "event-wagef-nemr-live-comedy-show-in-riyadh",
       "title": "Wagef! Nemr Live Comedy Show in Riyadh",
+      "reason": "already linked to catalog event"
+    },
+    {
+      "candidate_id": "candidate-visit-saudi-calendar-pdf-وقف-عرض-نمر-الكوميدي-مباشر-في-جدة-20261107-4a38d19e",
+      "event_id": "event-وقف-عرض-نمر-الكوميدي-مباشر-في-جدة",
+      "title": "وقف! عرض نمر الكوميدي مباشر في جدة",
       "reason": "already linked to catalog event"
     },
     {
@@ -2762,11 +2785,6 @@
       "candidate_id": "candidate-saudicon-events-b25011548992-20260815-487b8176",
       "title": "沙特拉布瓦市场的椰枣季节",
       "reason": "publication gate source-evidence is not auto-publishable"
-    },
-    {
-      "candidate_id": "candidate-riyadh-city-events-facility-management-conference-exhibition-20260920-ed083b67",
-      "title": "Facility Management Conference & Exhibition",
-      "reason": "possible duplicate already exists: event-facility-management-conference-exhibition"
     },
     {
       "candidate_id": "candidate-dhahran-expo-calendar-the-egyptian-products-exhibition-20260921-18d15b29",

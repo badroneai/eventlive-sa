@@ -1,32 +1,32 @@
 # EventLive Harvest OS Status
 
-- Generated at: 2026-09-22T16:33:44.028Z
+- Generated at: 2026-09-23T08:12:30.114Z
 - Status: NEEDS_WORK
 - Operating rule: Probe before new sources; sample before full harvest; Raw collection is not publication; discovery-only never auto-publishes.
 
 ## Totals
 
 - Sources: 88
-- Candidates: 478
-- Matched candidates: 444
+- Candidates: 477
+- Matched candidates: 443
 - Auto-publish sources: 15
 - Candidate-only sources: 12
 - Partnership-required sources: 5
-- Productive sources / attempted: 21/47
+- Productive sources / attempted: 17/19
 - Collector errors: 6 (chronic 6, transient 0)
 
 ## Publication Funnel
 
 | Stage | Count |
 | --- | --- |
-| discovered_this_run | 275 |
-| candidate_queue | 478 |
-| evaluated_for_publish | 478 |
-| linked_existing | 415 |
-| published_new | 24 |
-| blocked | 39 |
+| discovered_this_run | 242 |
+| candidate_queue | 477 |
+| evaluated_for_publish | 477 |
+| linked_existing | 438 |
+| published_new | 1 |
+| blocked | 38 |
 | secondary_promoted | 0 |
-| secondary_still_blocked | 62 |
+| secondary_still_blocked | 37 |
 
 ## Blocked Reasons
 
@@ -38,7 +38,6 @@
 | possible duplicate requires review: fuzzy-title-venue-date-window | 2 |
 | possible duplicate already exists: event-melwah-falcon-racing | 2 |
 | possible duplicate requires review: exact-title-city-venue-conflict | 2 |
-| possible duplicate already exists: event-facility-management-conference-exhibition | 1 |
 | linked catalog row event-feena-nehke-stand-up-comedy-by-john-achkar was superseded by dedupe | 1 |
 | linked catalog row event-music-festival-mdlbeast-soundstorm was superseded by dedupe | 1 |
 
@@ -46,12 +45,12 @@
 
 | Source | Kind | Failed runs in a row | Attempted this run | Reason |
 | --- | --- | --- | --- | --- |
-| moc-cultural-calendar | chronic | 38 | yes | collector-error: fetch failed; fetch failed |
-| mos-events | chronic | 38 | yes | collector-error: fetch failed |
-| moc-cultural-subportals | chronic | 38 | yes | collector-error: fetch failed; fetch failed |
-| saudi-pro-league-fixtures | chronic | 18 | yes | collector-error: fetch failed |
-| tuwaiq-academy-bootcamps | chronic | 15 | yes | collector-error: HTTP 403 |
-| monshaat-events | chronic | 6 | yes | collector-error: fetch failed; fetch failed |
+| moc-cultural-calendar | chronic | 38 | no | collector-error: fetch failed; fetch failed |
+| mos-events | chronic | 38 | no | collector-error: fetch failed |
+| moc-cultural-subportals | chronic | 38 | no | collector-error: fetch failed; fetch failed |
+| saudi-pro-league-fixtures | chronic | 18 | no | collector-error: fetch failed |
+| tuwaiq-academy-bootcamps | chronic | 15 | no | collector-error: HTTP 403 |
+| monshaat-events | chronic | 6 | no | collector-error: fetch failed; fetch failed |
 
 | Source | Policy | Trust | Gate |
 | --- | --- | --- | --- |
