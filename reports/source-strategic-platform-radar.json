@@ -1,13 +1,13 @@
 {
   "schema": "eventlive.source-strategic-platform-radar.v1",
-  "generated_at": "2026-09-22T15:46:00.199Z",
+  "generated_at": "2026-09-24T07:40:48.143Z",
   "policy": {
     "allowed_use": "official source evidence refresh, API-surface mapping, partnership prioritization, extractor backlog decisions",
     "disallowed_use": "direct catalog publication without official confirmation and duplicate review"
   },
   "totals": {
     "platforms": 8,
-    "reachable": 3,
+    "reachable": 2,
     "protected": 4,
     "active_collectors": 1
   },
@@ -19,109 +19,19 @@
       "url": "https://eportal.scega.gov.sa/home",
       "decision": "official-monitor",
       "project_use": "Track as a high-value official source for exhibitions and conferences; do not auto-publish until event-detail extraction is verified.",
-      "status": 200,
+      "status": 0,
       "final_url": "https://eportal.scega.gov.sa/home",
-      "via": "fetch",
-      "content_type": "text/html",
-      "bytes": 30700,
-      "title": "الهيئه العامه للمعارض و المؤتمرات",
-      "classification": "reachable",
-      "error": "",
-      "page_hint_urls": [
-        "https://fonts.gstatic.com/s/ibmplexsansarabic/v15/Qw3MZRtWPQCuHme67tEYUIx3Kh0PHR9N6YNe7PKzeflA.woff2",
-        "https://fonts.gstatic.com/s/ibmplexsansarabic/v15/Qw3MZRtWPQCuHme67tEYUIx3Kh0PHR9N6YNe7PqzeflA.woff2",
-        "https://fonts.gstatic.com/s/ibmplexsansarabic/v15/Qw3MZRtWPQCuHme67tEYUIx3Kh0PHR9N6YNe7PmzeflA.woff2",
-        "https://fonts.gstatic.com/s/ibmplexsansarabic/v15/Qw3MZRtWPQCuHme67tEYUIx3Kh0PHR9N6YNe7PezeQ.woff2",
-        "https://fonts.gstatic.com/s/ibmplexsansarabic/v15/Qw3NZRtWPQCuHme67tEYUIx3Kh0PHR9N6YPy_eCRXMR5Kw.woff2",
-        "https://fonts.gstatic.com/s/ibmplexsansarabic/v15/Qw3NZRtWPQCuHme67tEYUIx3Kh0PHR9N6YPy_eCZXMR5Kw.woff2",
-        "https://fonts.gstatic.com/s/ibmplexsansarabic/v15/Qw3NZRtWPQCuHme67tEYUIx3Kh0PHR9N6YPy_eCaXMR5Kw.woff2",
-        "https://fonts.gstatic.com/s/ibmplexsansarabic/v15/Qw3NZRtWPQCuHme67tEYUIx3Kh0PHR9N6YPy_eCUXMQ.woff2",
-        "https://fonts.gstatic.com/s/ibmplexsansarabic/v15/Qw3NZRtWPQCuHme67tEYUIx3Kh0PHR9N6YOW_uCRXMR5Kw.woff2",
-        "https://fonts.gstatic.com/s/ibmplexsansarabic/v15/Qw3NZRtWPQCuHme67tEYUIx3Kh0PHR9N6YOW_uCZXMR5Kw.woff2",
-        "https://fonts.gstatic.com/s/ibmplexsansarabic/v15/Qw3NZRtWPQCuHme67tEYUIx3Kh0PHR9N6YOW_uCaXMR5Kw.woff2",
-        "https://fonts.gstatic.com/s/ibmplexsansarabic/v15/Qw3NZRtWPQCuHme67tEYUIx3Kh0PHR9N6YOW_uCUXMQ.woff2",
-        "https://fonts.gstatic.com/s/ibmplexsansarabic/v15/Qw3CZRtWPQCuHme67tEYUIx3Kh0PHR9N6Ys43PWrfQ.woff2",
-        "https://fonts.gstatic.com/s/ibmplexsansarabic/v15/Qw3CZRtWPQCuHme67tEYUIx3Kh0PHR9N6Ysw3PWrfQ.woff2",
-        "https://fonts.gstatic.com/s/ibmplexsansarabic/v15/Qw3CZRtWPQCuHme67tEYUIx3Kh0PHR9N6Ysz3PWrfQ.woff2",
-        "https://fonts.gstatic.com/s/ibmplexsansarabic/v15/Qw3CZRtWPQCuHme67tEYUIx3Kh0PHR9N6Ys93PU.woff2",
-        "https://fonts.gstatic.com/s/ibmplexsansarabic/v15/Qw3NZRtWPQCuHme67tEYUIx3Kh0PHR9N6YPO_-CRXMR5Kw.woff2",
-        "https://fonts.gstatic.com/s/ibmplexsansarabic/v15/Qw3NZRtWPQCuHme67tEYUIx3Kh0PHR9N6YPO_-CZXMR5Kw.woff2",
-        "https://fonts.gstatic.com/s/ibmplexsansarabic/v15/Qw3NZRtWPQCuHme67tEYUIx3Kh0PHR9N6YPO_-CaXMR5Kw.woff2",
-        "https://fonts.gstatic.com/s/ibmplexsansarabic/v15/Qw3NZRtWPQCuHme67tEYUIx3Kh0PHR9N6YPO_-CUXMQ.woff2",
-        "https://fonts.gstatic.com/s/ibmplexsansarabic/v15/Qw3NZRtWPQCuHme67tEYUIx3Kh0PHR9N6YPi-OCRXMR5Kw.woff2",
-        "https://fonts.gstatic.com/s/ibmplexsansarabic/v15/Qw3NZRtWPQCuHme67tEYUIx3Kh0PHR9N6YPi-OCZXMR5Kw.woff2",
-        "https://fonts.gstatic.com/s/ibmplexsansarabic/v15/Qw3NZRtWPQCuHme67tEYUIx3Kh0PHR9N6YPi-OCaXMR5Kw.woff2",
-        "https://fonts.gstatic.com/s/ibmplexsansarabic/v15/Qw3NZRtWPQCuHme67tEYUIx3Kh0PHR9N6YPi-OCUXMQ.woff2",
-        "https://fonts.gstatic.com/s/ibmplexsansarabic/v15/Qw3NZRtWPQCuHme67tEYUIx3Kh0PHR9N6YOG-eCRXMR5Kw.woff2",
-        "https://fonts.gstatic.com/s/ibmplexsansarabic/v15/Qw3NZRtWPQCuHme67tEYUIx3Kh0PHR9N6YOG-eCZXMR5Kw.woff2",
-        "https://fonts.gstatic.com/s/ibmplexsansarabic/v15/Qw3NZRtWPQCuHme67tEYUIx3Kh0PHR9N6YOG-eCaXMR5Kw.woff2",
-        "https://fonts.gstatic.com/s/ibmplexsansarabic/v15/Qw3NZRtWPQCuHme67tEYUIx3Kh0PHR9N6YOG-eCUXMQ.woff2"
-      ],
+      "via": "curl",
+      "content_type": "",
+      "bytes": 0,
+      "title": "",
+      "classification": "fetch-error",
+      "error": "fetch failed",
+      "page_hint_urls": [],
       "page_hint_words": [],
-      "asset_results": [
-        {
-          "url": "https://eportal.scega.gov.sa/main-CN6PDNTE.js",
-          "status": 200,
-          "bytes": 225494,
-          "classification": "reachable",
-          "hint_urls": [
-            "http://www.w3.org/2000/svg",
-            "https://www.scega.gov.sa/ar/InformationCenter/Surveys/Pages/07102025.aspx",
-            "https://eservices.scega.gov.sa/login",
-            "https://raqmi.dga.gov.sa/platforms/DigitalStamp/ShowCertificate/672",
-            "http://https://sdaia.gov.sa/ar/default.aspx",
-            "https://eportal.scega.gov.sa/h-events-list"
-          ],
-          "hint_words": [
-            "events",
-            "event"
-          ]
-        },
-        {
-          "url": "https://eportal.scega.gov.sa/chunk-4G4A4TT5.js",
-          "status": 200,
-          "bytes": 402,
-          "classification": "reachable",
-          "hint_urls": [],
-          "hint_words": []
-        },
-        {
-          "url": "https://eportal.scega.gov.sa/chunk-6THGNAUG.js",
-          "status": 200,
-          "bytes": 897,
-          "classification": "reachable",
-          "hint_urls": [],
-          "hint_words": []
-        },
-        {
-          "url": "https://eportal.scega.gov.sa/chunk-I3NA5QEP.js",
-          "status": 200,
-          "bytes": 28496,
-          "classification": "reachable",
-          "hint_urls": [
-            "http://www.w3.org/2000/svg"
-          ],
-          "hint_words": []
-        },
-        {
-          "url": "https://eportal.scega.gov.sa/chunk-C5BRCPMK.js",
-          "status": 200,
-          "bytes": 24937,
-          "classification": "reachable",
-          "hint_urls": [],
-          "hint_words": []
-        },
-        {
-          "url": "https://eportal.scega.gov.sa/chunk-AJKCJFIT.js",
-          "status": 200,
-          "bytes": 67,
-          "classification": "reachable",
-          "hint_urls": [],
-          "hint_words": []
-        }
-      ],
+      "asset_results": [],
       "api_results": [],
-      "text_sample": "الهيئه العامه للمعارض و المؤتمرات"
+      "text_sample": ""
     },
     {
       "id": "nec-saudi-events",

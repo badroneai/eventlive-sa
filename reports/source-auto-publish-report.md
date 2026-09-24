@@ -1,11 +1,11 @@
 # EventLive Source Auto Publish Report
 
-- published_at: 2026-09-23T07:56:31.535Z
+- published_at: 2026-09-24T08:03:39.758Z
 - dry_run: false
 - include_partner: true
-- candidates_seen: 477
-- published_new: 1
-- linked_existing: 438
+- candidates_seen: 474
+- published_new: 2
+- linked_existing: 434
 - blocked_remaining: 38
 - duplicate_review_alerts: 6
 
@@ -22,7 +22,8 @@
 
 | Candidate | Status | Catalog event | Reason |
 |---|---|---|---|
-| candidate-experience-alula-events-qissa-bi-qissa-swap-a-story-20260924-a2d33a9a | published | event-qissa-bi-qissa-swap-a-story | Qissa bi Qissa (Swap a Story) |
+| candidate-experience-alula-events-alula-skyrise-20261106-5ea2fbfc | published | event-alula-skyrise | AlUla Skyrise |
+| candidate-experience-alula-events-tethered-hot-air-balloon-experience-20261106-0acea3e2 | published | event-tethered-hot-air-balloon-experience | Tethered Hot Air Balloon Experience |
 | candidate-moc-cultural-subportals-skill-development-initiative-20210714-10f7dc2c | linked-existing | event-skill-development-initiative | already linked to catalog event |
 | candidate-moc-cultural-subportals-sitar-20220921-cda2e068 | linked-existing | event-sitar | already linked to catalog event |
 | candidate-moc-cultural-subportals-the-architecture-and-design-caf-20240427-046e2ec1 | linked-existing | event-the-architecture-and-design-caf | already linked to catalog event |
@@ -150,38 +151,34 @@
 | candidate-tuwaiq-academy-bootcamps-معسكر-قيادة-التحول-بالذكاء-الاصطناعي-20260921-d4b1787c | linked-existing | event-معسكر-قيادة-التحول-بالذكاء-الاصطناعي | already linked to catalog event |
 | candidate-ithra-events-the-wall-of-our-generations-20260922-055a957d | linked-existing | event-the-wall-of-our-generations | already linked to catalog event |
 | candidate-visit-saudi-calendar-pdf-كأس-الخليج-20260923-4a38d19e | linked-existing | event-كأس-الخليج | already linked to catalog event |
-| candidate-saudi-water-authority-events-saudi-national-day-20260923-df5b5c2a | linked-existing | event-saudi-national-day | already linked to catalog event |
-| candidate-visit-saudi-calendar-saudi-national-day-20260923-a8235fde | linked-existing | event-saudi-national-day | already linked to catalog event |
-| candidate-dhahran-expo-calendar-music-concerts-national-day-20260923-18d15b29 | linked-existing | event-music-concerts-national-day | already linked to catalog event |
-| candidate-ithra-events-echoes-of-the-familiar-20260923-cc43c2bd | linked-existing | event-echoes-of-the-familiar | already linked to catalog event |
-| candidate-ithra-events-ithra-art-prize-exhibition-20260923-83c2ab55 | linked-existing | event-ithra-art-prize-exhibition | already linked to catalog event |
-| candidate-ithra-events-tafasahu-make-room-20260923-562bc61d | linked-existing | event-tafasahu-make-room | already linked to catalog event |
-| candidate-hayy-jameel-events-hayy-makers-jeddahs-historic-houses-in-paper-with-norah-bahaj-20260923-641e0bae | linked-existing | event-hayy-makers-jeddahs-historic-houses-in-paper-with-norah-bahaj | already linked to catalog event |
-| candidate-hayy-jameel-events-hayy-makers-the-art-of-jeddahs-mangoor-with-mohammed-saad-al-emara-20260923-4a12c4bc | linked-existing | event-hayy-makers-the-art-of-jeddahs-mangoor-with-mohammed-saad-al-emara | already linked to catalog event |
-| candidate-ithra-events-deep-unknown-20260923-4a0e8645 | linked-existing | event-deep-unknown | already linked to catalog event |
-| candidate-ithra-events-energy-beat-20260923-207858a8 | linked-existing | event-energy-beat | already linked to catalog event |
-| candidate-ithra-events-green-seasons-20260923-b323e61e | linked-existing | event-green-seasons | already linked to catalog event |
-| candidate-ithra-events-inspired-by-our-roots-20260923-cdb6cc0c | linked-existing | event-inspired-by-our-roots | already linked to catalog event |
-| candidate-ithra-events-power-grid-20260923-2de7c883 | linked-existing | event-power-grid | already linked to catalog event |
-| candidate-ithra-events-the-colors-of-energy-20260923-d43ffc3a | linked-existing | event-the-colors-of-energy | already linked to catalog event |
-| candidate-ithra-events-unlock-the-exhibit-20260923-2513e8ec | linked-existing | event-unlock-the-exhibit | already linked to catalog event |
-| candidate-ithra-events-move-with-pride-20260923-12b04bb0 | linked-existing | event-move-with-pride | already linked to catalog event |
-| candidate-ithra-events-saudi-calligraphy-workshop-20260923-5cf2e0fe | linked-existing | event-saudi-calligraphy-workshop | already linked to catalog event |
-| candidate-ithra-events-think-like-the-crowd-20260923-bc88c088 | linked-existing | event-think-like-the-crowd | already linked to catalog event |
-| candidate-ithra-events-imagination-oasis-20260923-104f8079 | linked-existing | event-imagination-oasis | already linked to catalog event |
-| candidate-ithra-events-the-impossible-challenge-20260923-d1228002 | linked-existing | event-the-impossible-challenge | already linked to catalog event |
-| candidate-ithra-events-military-parade-20260923-a5d58708 | linked-existing | event-military-parade | already linked to catalog event |
-| candidate-ithra-events-throw-those-squashes-away-and-carry-me-20260923-45750673 | linked-existing | event-throw-those-squashes-away-and-carry-me | already linked to catalog event |
 | candidate-ithra-events-sing-along-for-saudi-20260923-0febb788 | linked-existing | event-sing-along-for-saudi | already linked to catalog event |
-| candidate-ithra-events-destination-20260923-e2d0a53b | linked-existing | event-destination | already linked to catalog event |
-| candidate-ithra-events-the-nameless-knight-20260923-0c66859e | linked-existing | event-the-nameless-knight | already linked to catalog event |
-| candidate-ithra-events-new-saudi-voices-20260923-b848fa25 | linked-existing | event-new-saudi-voices | already linked to catalog event |
 | candidate-visit-saudi-calendar-pdf-تكوة-شاكر-20260924-4a38d19e | linked-existing | event-تكوة-شاكر | already linked to catalog event |
 | candidate-dhahran-expo-calendar-the-egyptian-products-exhibition-20260924-18d15b29 | linked-existing | event-the-egyptian-products-exhibition | already linked to catalog event |
 | candidate-hayy-jameel-events-hayy-sounds-listening-session-rotations-of-bismillah-with-atiyyah-khan-a-20260924-073d2543 | linked-existing | event-hayy-sounds-listening-session-rotations-of-bismillah-with-atiyyah-khan-a | already linked to catalog event |
 | candidate-hayy-jameel-events-hayy-markets-the-bakers-market-saudi-national-day-edition-20260924-fb960f51 | linked-existing | event-hayy-markets-the-bakers-market-saudi-national-day-edition | already linked to catalog event |
+| candidate-experience-alula-events-qissa-bi-qissa-swap-a-story-20260924-a2d33a9a | linked-existing | event-qissa-bi-qissa-swap-a-story | already linked to catalog event |
+| candidate-ithra-events-echoes-of-the-familiar-20260924-cc43c2bd | linked-existing | event-echoes-of-the-familiar | already linked to catalog event |
+| candidate-ithra-events-ithra-art-prize-exhibition-20260924-83c2ab55 | linked-existing | event-ithra-art-prize-exhibition | already linked to catalog event |
+| candidate-ithra-events-tafasahu-make-room-20260924-562bc61d | linked-existing | event-tafasahu-make-room | already linked to catalog event |
+| candidate-ithra-events-deep-unknown-20260924-4a0e8645 | linked-existing | event-deep-unknown | already linked to catalog event |
+| candidate-ithra-events-energy-beat-20260924-207858a8 | linked-existing | event-energy-beat | already linked to catalog event |
+| candidate-ithra-events-green-seasons-20260924-b323e61e | linked-existing | event-green-seasons | already linked to catalog event |
+| candidate-ithra-events-inspired-by-our-roots-20260924-cdb6cc0c | linked-existing | event-inspired-by-our-roots | already linked to catalog event |
+| candidate-ithra-events-move-with-pride-20260924-12b04bb0 | linked-existing | event-move-with-pride | already linked to catalog event |
+| candidate-ithra-events-power-grid-20260924-2de7c883 | linked-existing | event-power-grid | already linked to catalog event |
+| candidate-ithra-events-the-colors-of-energy-20260924-d43ffc3a | linked-existing | event-the-colors-of-energy | already linked to catalog event |
+| candidate-ithra-events-unlock-the-exhibit-20260924-2513e8ec | linked-existing | event-unlock-the-exhibit | already linked to catalog event |
+| candidate-ithra-events-saudi-calligraphy-workshop-20260924-5cf2e0fe | linked-existing | event-saudi-calligraphy-workshop | already linked to catalog event |
+| candidate-ithra-events-think-like-the-crowd-20260924-bc88c088 | linked-existing | event-think-like-the-crowd | already linked to catalog event |
+| candidate-ithra-events-imagination-oasis-20260924-104f8079 | linked-existing | event-imagination-oasis | already linked to catalog event |
+| candidate-ithra-events-military-parade-20260924-a5d58708 | linked-existing | event-military-parade | already linked to catalog event |
+| candidate-ithra-events-the-impossible-challenge-20260924-d1228002 | linked-existing | event-the-impossible-challenge | already linked to catalog event |
+| candidate-ithra-events-throw-those-squashes-away-and-carry-me-20260924-45750673 | linked-existing | event-throw-those-squashes-away-and-carry-me | already linked to catalog event |
+| candidate-ithra-events-destination-20260924-e2d0a53b | linked-existing | event-destination | already linked to catalog event |
 | candidate-ithra-events-museum-story-time-20260924-1104734c | linked-existing | event-museum-story-time | already linked to catalog event |
+| candidate-ithra-events-the-nameless-knight-20260924-0c66859e | linked-existing | event-the-nameless-knight | already linked to catalog event |
 | candidate-mdlbeast-events-beast-house-20260924-83049a2a | linked-existing | event-beast-house | already linked to catalog event |
+| candidate-ithra-events-new-saudi-voices-20260924-b848fa25 | linked-existing | event-new-saudi-voices | already linked to catalog event |
 | candidate-visit-saudi-calendar-takwat-shaker-20260924-c3332133 | linked-existing | event-takwat-shaker | already linked to catalog event |
 | candidate-visit-saudi-calendar-pdf-frequency-room-pre-launch-series-varoo-all-night-long-20260925-4a38d19e | linked-existing | event-frequency-room-pre-launch-series-varoo-all-night-long | already linked to catalog event |
 | candidate-visit-saudi-calendar-pdf-ليلة-جاز-في-جدة-مع-فايا-يونان-20260925-4a38d19e | linked-existing | event-ليلة-جاز-في-جدة-مع-فايا-يونان | already linked to catalog event |

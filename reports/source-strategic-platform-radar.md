@@ -1,6 +1,6 @@
 # Strategic Platform Source Radar
 
-Generated at: 2026-09-22T15:46:00.199Z
+Generated at: 2026-09-24T07:40:48.143Z
 
 Policy: evidence refresh, API-surface mapping, and source strategy only. This radar does not auto-publish catalog events.
 
@@ -8,7 +8,7 @@ Policy: evidence refresh, API-surface mapping, and source strategy only. This ra
 
 | Platform | Role | Reachability | HTTP | Decision | Title |
 | --- | --- | --- | --- | --- | --- |
-| SCEGA ePortal | Regulatory-market analyst for exhibitions and conferences | reachable | 200 | official-monitor | الهيئه العامه للمعارض و المؤتمرات |
+| SCEGA ePortal | Regulatory-market analyst for exhibitions and conferences | fetch-error | 0 | official-monitor | - |
 | National Events Center | Partnership and national-calendar access lead | protected | 200 | partnership-api | المركز الوطني للفعاليات |
 | Visit Saudi Calendar | Production source operator | reachable | 200 | active-collector | تقويم السعودية \| تابع العطلات والفعاليات المميزة - الموقع الرسمي للسياحة السعودية |
 | webook Explore | Ticketing-marketplace intelligence analyst | protected | 200 | candidate-discovery | - |
@@ -23,16 +23,10 @@ Policy: evidence refresh, API-surface mapping, and source strategy only. This ra
 
 - Role lens: Regulatory-market analyst for exhibitions and conferences
 - Decision: official-monitor
-- Classification: reachable (200, fetch)
+- Classification: fetch-error (0, curl)
 - Project use: Track as a high-value official source for exhibitions and conferences; do not auto-publish until event-detail extraction is verified.
-- Title: الهيئه العامه للمعارض و المؤتمرات
-- Hint URLs: https://fonts.gstatic.com/s/ibmplexsansarabic/v15/Qw3MZRtWPQCuHme67tEYUIx3Kh0PHR9N6YNe7PKzeflA.woff2, https://fonts.gstatic.com/s/ibmplexsansarabic/v15/Qw3MZRtWPQCuHme67tEYUIx3Kh0PHR9N6YNe7PqzeflA.woff2, https://fonts.gstatic.com/s/ibmplexsansarabic/v15/Qw3MZRtWPQCuHme67tEYUIx3Kh0PHR9N6YNe7PmzeflA.woff2, https://fonts.gstatic.com/s/ibmplexsansarabic/v15/Qw3MZRtWPQCuHme67tEYUIx3Kh0PHR9N6YNe7PezeQ.woff2, https://fonts.gstatic.com/s/ibmplexsansarabic/v15/Qw3NZRtWPQCuHme67tEYUIx3Kh0PHR9N6YPy_eCRXMR5Kw.woff2, https://fonts.gstatic.com/s/ibmplexsansarabic/v15/Qw3NZRtWPQCuHme67tEYUIx3Kh0PHR9N6YPy_eCZXMR5Kw.woff2, https://fonts.gstatic.com/s/ibmplexsansarabic/v15/Qw3NZRtWPQCuHme67tEYUIx3Kh0PHR9N6YPy_eCaXMR5Kw.woff2, https://fonts.gstatic.com/s/ibmplexsansarabic/v15/Qw3NZRtWPQCuHme67tEYUIx3Kh0PHR9N6YPy_eCUXMQ.woff2
-  - Asset 200 main-CN6PDNTE.js: http://www.w3.org/2000/svg, https://www.scega.gov.sa/ar/InformationCenter/Surveys/Pages/07102025.aspx, https://eservices.scega.gov.sa/login, https://raqmi.dga.gov.sa/platforms/DigitalStamp/ShowCertificate/672, http://https://sdaia.gov.sa/ar/default.aspx, https://eportal.scega.gov.sa/h-events-list
-  - Asset 200 chunk-4G4A4TT5.js: no URL hints
-  - Asset 200 chunk-6THGNAUG.js: no URL hints
-  - Asset 200 chunk-I3NA5QEP.js: http://www.w3.org/2000/svg
-  - Asset 200 chunk-C5BRCPMK.js: no URL hints
-  - Asset 200 chunk-AJKCJFIT.js: no URL hints
+- Title: -
+- Hint URLs: -
 
 ### National Events Center
 

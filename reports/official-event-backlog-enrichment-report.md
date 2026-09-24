@@ -1,11 +1,110 @@
 # EventLive Official Event Backlog Enrichment
-- Generated at: 2026-09-23T08:01:09.364Z
-- Targets: 1
-- Enriched: 1
-- Fetched: 1
-- Images: 1
-- Fetch failures: 0
+- Generated at: 2026-09-24T08:07:57.031Z
+- Targets: 100
+- Enriched: 100
+- Fetched: 82
+- Images: 95
+- Fetch failures: 18
 
 | Source | Event | Method | Image | Fetch |
 |---|---|---:|---:|---:|
-| Experience AlUla Events | Qissa bi Qissa (Swap a Story) | official-page-meta | yes | yes |
+| Experience AlUla Events | AlUla Skyrise | official-page-meta | yes | yes |
+| Experience AlUla Events | Tethered Hot Air Balloon Experience | official-page-meta | yes | yes |
+| Middle East Banking AI & Analytics Summit Official | 12th Middle East Banking AI & Analytics Summit 2026 | official-page-meta | no | yes |
+| Middle East Enterprise AI & Analytics Summit Official | 15th Middle East Enterprise AI & Analytics Summit | approved-source-row | no | fetch failed |
+| Riyadh City Events | 24th ERRA Annual Conference | approved-source-row | yes | fetch failed |
+| Riyadh City Events | 6th United Nations World Data Forum 2026 | approved-source-row | yes | fetch failed |
+| Discover Aseer Events | Aanab Farm | approved-source-row | yes | HTTP 404 |
+| Discover Aseer Events | Abha International Airport Park | approved-source-row | yes | HTTP 404 |
+| Ministry of Culture Commission Calendars | Academic Excellence in Architecture and Design Education | approved-source-row | yes | fetch failed |
+| Riyadh City Events | AFC Asian Cup Saudi Arabia 2027™ Tickets | approved-source-row | yes | fetch failed |
+| Visit Saudi Seasons | Athyah Summer | official-page-meta | yes | yes |
+| Hayy Jameel What's On | Azka Farmers Market: Dates Edition | official-page-meta | yes | yes |
+| Visit Saudi Seasons | BattleKart in Abha | official-page-meta | yes | yes |
+| Saudi Universities and Technical Colleges | Boat Bash Cruise | official-page-meta | no | yes |
+| Visit Saudi Seasons | Buraydah International Dates Carnival Activites | official-page-meta | yes | yes |
+| Visit Saudi Seasons | Experience Taif Horse Racing Season 2026 | official-page-meta | yes | yes |
+| Hayy Jameel What's On | Hayy Arts | From Another Angle, explore contemporary art with alternative exhibition tours | official-page-meta | yes | yes |
+| Hayy Jameel What's On | Hayy Cinema | Cinema at Saha: Second Edition | official-page-meta | yes | yes |
+| Hayy Jameel What's On | Hayy Makers | Canvas Making with Ahmad Sofi | official-page-meta | yes | yes |
+| Hayy Jameel What's On | Hayy Makers | Jeddah’s Historic Houses in Paper With Norah Bahaj | official-page-meta | yes | yes |
+| Visit Saudi Summer Calendar PDF | IN ACT ANNIVERSARY - ACT XI | approved-source-row | yes | The operation was aborted due to timeout |
+| Hayy Jameel What's On | Jameel Library | September Community Programmes | official-page-meta | yes | yes |
+| Saudi Universities and Technical Colleges | Register for the World Breastfeeding Week Awareness Lecture | official-page-meta | no | yes |
+| Visit Saudi Seasons | Shaaf | official-page-meta | yes | yes |
+| Saudi Universities and Technical Colleges | Summer Splash at South Beach | official-page-meta | no | yes |
+| Visit Saudi Seasons | Unaizah International Dates Carnival | official-page-meta | yes | yes |
+| Visit Saudi Summer Calendar PDF | أشجار | approved-source-row | yes | The operation was aborted due to timeout |
+| Umm Al-Qura University Events Center | إنشاء وإدارة المقرر في Blackboard Ultra – الفترة المسائية | official-page-meta | yes | yes |
+| Umm Al-Qura University Events Center | الألوان نافذة نحو الصحة النفسية وجودة الحياة | official-page-meta | yes | yes |
+| Umm Al-Qura University Events Center | التسجيل والسداد لدبلوم المتوسط (عن بعد) في أمن المعلومات مع الشركاء | official-page-meta | yes | yes |
+| Umm Al-Qura University Events Center | التسجيل والسداد لدبلوم المتوسط (عن بعد) في التسويق التطبيقي مع الشركاء | official-page-meta | yes | yes |
+| Umm Al-Qura University Events Center | التسجيل والسداد لدبلوم المتوسط (عن بعد) في اللغة الإنجليزية المهنية مع الشركاء | official-page-meta | yes | yes |
+| Umm Al-Qura University Events Center | التسجيل والسداد لدبلوم المشارك (حضوري) في الإدارة الفندقية لخارج مكة | official-page-meta | yes | yes |
+| Umm Al-Qura University Events Center | التسجيل والسداد لدبلوم المشارك (حضوري) في الخدمة الاجتماعية في رعاية الأيتام لخارج مكة | official-page-meta | yes | yes |
+| Umm Al-Qura University Events Center | التسجيل والسداد لدبلوم المشارك (حضوري) في مساعد في التربية الخاصة وإدارة السلوك لخارج مكة | official-page-meta | yes | yes |
+| Umm Al-Qura University Events Center | التسجيل والسداد لدبلوم المشارك (عن بعد) في إدارة الحشود لخارج مكة | official-page-meta | yes | yes |
+| Umm Al-Qura University Events Center | التسجيل والسداد لدبلوم المشارك (عن بعد) في إدارة اللوجستيات وسلاسل الإمداد لخارج مكة | official-page-meta | yes | yes |
+| Umm Al-Qura University Events Center | التسجيل والسداد لدبلوم المشارك (عن بعد) في إدارة المشاريع مع الشركاء | official-page-meta | yes | yes |
+| Umm Al-Qura University Events Center | التسجيل والسداد لدبلوم المشارك (عن بعد) في الإرشاد السياحي لخارج مكة | official-page-meta | yes | yes |
+| Umm Al-Qura University Events Center | التسجيل والسداد لدبلوم المشارك (عن بعد) في الابتكار في ريادة الأعمال مع الشركاء | official-page-meta | yes | yes |
+| Umm Al-Qura University Events Center | التشكيل الحر | official-page-meta | yes | yes |
+| Qassim Chamber Events | الحوكمة والمخاطر والامتثال | approved-source-row | yes | HTTP 403 |
+| Visit Saudi Summer Calendar PDF | الخطة C مع رضوان الريمي ليلة كوميدية طربية | approved-source-row | yes | The operation was aborted due to timeout |
+| Umm Al-Qura University Events Center | الدليل التنظيمي ووثيقة حقوق وواجبات عضو هيئة التدريس | official-page-meta | yes | yes |
+| Umm Al-Qura University Events Center | الفصول الافتراضية عبر Blackboard Ultra – الفترة الصباحية | official-page-meta | yes | yes |
+| Umm Al-Qura University Events Center | الفصول الافتراضية عبر Blackboard Ultra – الفترة المسائية | official-page-meta | yes | yes |
+| Umm Al-Qura University Events Center | الكروشيه | official-page-meta | yes | yes |
+| Umm Al-Qura University Events Center | اللقاء التعريفي بخدمات عمادة شؤون الطلاب | official-page-meta | yes | yes |
+| Umm Al-Qura University Events Center | المحتوى التفاعلي والتقييم الإلكتروني في Blackboard Ultra – الفترة الصباحية | official-page-meta | yes | yes |
+| Umm Al-Qura University Events Center | المحتوى التفاعلي والتقييم الإلكتروني في Blackboard Ultra – الفترة المسائية | official-page-meta | yes | yes |
+| Umm Al-Qura University Events Center | الميداليات المطرزة | official-page-meta | yes | yes |
+| Visit Saudi Summer Calendar PDF | اوبن مايك للمواهب | official-page-meta | yes | yes |
+| Visit Saudi Summer Calendar PDF | باتل كارت في أبها | approved-source-row | yes | The operation was aborted due to timeout |
+| Umm Al-Qura University Events Center | برنامج محلل Power BI | official-page-meta | yes | yes |
+| Visit Saudi Summer Calendar PDF | بسطة القابل | official-page-meta | yes | yes |
+| Umm Al-Qura University Events Center | تفعيل بيئة تعلم إلكترونية تفاعلية– بنمط غير متزامن | official-page-meta | yes | yes |
+| Visit Saudi Summer Calendar PDF | جولة البقي بين جبال الباحة | official-page-meta | yes | yes |
+| Visit Saudi Summer Calendar PDF | جولة بقي السريعة الباحة | approved-source-row | yes | The operation was aborted due to timeout |
+| Umm Al-Qura University Events Center | دورة تدريبية بعنوان (السيرة الذاتية والتسويق الشخصي) | official-page-meta | yes | yes |
+| Umm Al-Qura University Events Center | دورة تدريبية بعنوان (المرونة النفسية في التعامل مع التحديات) | official-page-meta | yes | yes |
+| Umm Al-Qura University Events Center | دورة تدريبية بعنوان (الوعي الأمني الرقمي للطالب الجامعي) | official-page-meta | yes | yes |
+| Umm Al-Qura University Events Center | دورة تدريبية بعنوان (فن إدارة الوقت) | official-page-meta | yes | yes |
+| Umm Al-Qura University Events Center | دورة تدريبية بعنوان (قيم الوسطية والاعتدال) | official-page-meta | yes | yes |
+| Umm Al-Qura University Events Center | دورة تدريبية بعنوان (من انت؟ سبيلك لمعرفة نفسك ووجهتك) | official-page-meta | yes | yes |
+| Umm Al-Qura University Events Center | دورة تدريبية بعنوان (مهارات الاستذكار الفعال والخرائط الذهنية) | official-page-meta | yes | yes |
+| Visit Saudi Summer Calendar PDF | ذكريات سبيستون مع الفنان عاصم سكر | official-page-meta | yes | yes |
+| Umm Al-Qura University Events Center | رابط التسجيل والسداد للدبلوم المتوسط في المحاسبة المالية في عنيزة بالتعاون مع أكاديمية حمد عبدالرحمن الحنطي للتدريب العالي. | official-page-meta | yes | yes |
+| Umm Al-Qura University Events Center | رابط التسجيل والسداد للدبلوم المشارك في الإدارة الفندقية في عنيزة بالتعاون مع أكاديمية حمد عبدالرحمن الحنطي للتدريب العالي | official-page-meta | yes | yes |
+| Visit Saudi Summer Calendar PDF | ستاند أب كوميدي وعرض تفاعلي مع صلاح الدالي | official-page-meta | yes | yes |
+| Visit Saudi Summer Calendar PDF | سيرك فونتانا | official-page-meta | yes | yes |
+| Visit Saudi Summer Calendar PDF | شابتر 26 | approved-source-row | yes | The operation was aborted due to timeout |
+| Visit Saudi Summer Calendar PDF | شارع الفن - القرية الريفية | approved-source-row | yes | The operation was aborted due to timeout |
+| Visit Saudi Summer Calendar PDF | شاطئ منتجع القرية في جدة | official-page-meta | yes | yes |
+| Visit Saudi Summer Calendar PDF | شعف | official-page-meta | yes | yes |
+| Umm Al-Qura University Events Center | شهادة محترف أعمال معتمد في القيادة الإدارية (CBP-LS) | official-page-meta | yes | yes |
+| Visit Saudi Summer Calendar PDF | صد رد: عرض ستاند اب كوميدي من أوس النفيعي | approved-source-row | yes | The operation was aborted due to timeout |
+| Visit Saudi Summer Calendar PDF | صيف عذية | approved-source-row | yes | The operation was aborted due to timeout |
+| Visit Saudi Summer Calendar PDF | عرض This Is Michael الموسيقي | official-page-meta | yes | yes |
+| Umm Al-Qura University Events Center | فرص تعاقد على مشروع بحثي ممول ٢ | official-page-meta | yes | yes |
+| Visit Saudi Summer Calendar PDF | فعالية القصبة | official-page-meta | yes | yes |
+| Visit Saudi Summer Calendar PDF | فعالية ترحاب | official-page-meta | yes | yes |
+| Visit Saudi Summer Calendar PDF | فعالية كومبات أرينا | official-page-meta | yes | yes |
+| Visit Saudi Summer Calendar PDF | فينا نحكي؟ عرض ستاند أب كوميدي يقدمه جون أشقر | official-page-meta | yes | yes |
+| Visit Saudi Summer Calendar PDF | قرية الاطاولة التراثية | official-page-meta | yes | yes |
+| Visit Saudi Summer Calendar PDF | قصور وقلاع ابو نقطة المتحمي | official-page-meta | yes | yes |
+| Visit Saudi Summer Calendar PDF | ليالي مضيئة | official-page-meta | yes | yes |
+| Visit Saudi Summer Calendar PDF | ليلة 5x5 | approved-source-row | yes | The operation was aborted due to timeout |
+| Visit Saudi Summer Calendar PDF | ليلة ستانداب كوميدي في جدة | official-page-meta | yes | yes |
+| Qassim University Events | مختبر الخدمات الرقمية 3 | official-page-meta | yes | yes |
+| Visit Saudi Summer Calendar PDF | مخيّم النحالون الصغار الصيفي | official-page-meta | yes | yes |
+| Visit Saudi Summer Calendar PDF | مزرعة التوت الاسود | official-page-meta | yes | yes |
+| Umm Al-Qura University Events Center | نموذج التسجيل والسداد لدبلوم المتوسط في إدارة الموارد البشرية لخارج مكة | official-page-meta | yes | yes |
+| Umm Al-Qura University Events Center | نموذج التسجيل والسداد لدبلوم المتوسط في الأنظمة لخارج مكة | official-page-meta | yes | yes |
+| Umm Al-Qura University Events Center | نموذج التسجيل والسداد لدبلوم المتوسط في البرمجة وعلوم الحاسب الآلي لخارج مكة | official-page-meta | yes | yes |
+| Umm Al-Qura University Events Center | نموذج التسجيل والسداد لدبلوم المتوسط في التصميم الجرافيكي والوسائط الرقمية لخارج مكة | official-page-meta | yes | yes |
+| Umm Al-Qura University Events Center | نموذج التسجيل والسداد لدبلوم المتوسط في التكنولوجيا المالية لخارج مكة | official-page-meta | yes | yes |
+| Umm Al-Qura University Events Center | نموذج التسجيل والسداد لدبلوم المتوسط في الصحة والسلامة المهنية لخارج مكة | official-page-meta | yes | yes |
+| Umm Al-Qura University Events Center | نموذج التسجيل والسداد لدبلوم المتوسط في المحاسبة المالية لخارج مكة | official-page-meta | yes | yes |
+| Umm Al-Qura University Events Center | نموذج التسجيل والسداد للدبلوم المتوسط في البصريات لخارج مكة | official-page-meta | yes | yes |
+| Umm Al-Qura University Events Center | نموذج التسجيل والسداد للدبلوم المتوسط في جودة وسلامة الغذاء لخارج مكة | official-page-meta | yes | yes |

@@ -1,22 +1,28 @@
 {
-  "generated_at": "2026-09-23T08:03:06.116Z",
+  "generated_at": "2026-09-24T08:11:13.559Z",
   "events_file": "dist/events.json",
   "manifest": "data/event_image_cache_manifest.json",
   "image_dir": "dist/assets/event-images",
   "totals": {
     "targets": 500,
-    "cached_total": 874,
-    "fetched": 1,
-    "reused": 496,
+    "cached_total": 876,
+    "fetched": 2,
+    "reused": 495,
     "failed": 3,
-    "skipped_recent_failures": 3,
+    "skipped_recent_failures": 0,
     "remembered_failures": 26
   },
   "fetched": [
     {
-      "source_url": "https://s7g10.scene7.com/is/image/rcu/qissa-bi-qissa?$Responsive$&fit=stretch&fmt=webp&wid=1920",
-      "file": "dist/assets/event-images/qissa-bi-qissa-swap-a-story-564948c71f.webp",
-      "bytes": 204120,
+      "source_url": "https://s7g10.scene7.com/is/image/rcu/0016_Hot_Air_Balloon-Desktop-Hero-2880x1620-1?$Responsive$&fit=stretch&fmt=webp&wid=1920",
+      "file": "dist/assets/event-images/alula-skyrise-3a1496e75f.webp",
+      "bytes": 62234,
+      "events": 1
+    },
+    {
+      "source_url": "https://s7g10.scene7.com/is/image/rcu/Meta-Summit-Day-Three-22-4-25-01-Hero-Desktop-2880x1620?$Responsive$&fit=stretch&fmt=webp&wid=1920",
+      "file": "dist/assets/event-images/tethered-hot-air-balloon-experience-5c52d6b582.webp",
+      "bytes": 121350,
       "events": 1
     }
   ],
@@ -652,21 +658,6 @@
       "events": 1
     },
     {
-      "source_url": "https://scth.scene7.com/is/image/scth/saudi-national-day-new?wid=1920&hei=1080&fit=constrain&fmt=webp",
-      "file": "dist/assets/event-images/saudi-national-day-3f78cd3279.webp",
-      "events": 1
-    },
-    {
-      "source_url": "https://hayyjameel.org/wp-content/uploads/2026/08/IMG_5762-aspect-ratio-828-587-828x500.jpeg",
-      "file": "dist/assets/event-images/hayy-makers-jeddah-s-historic-houses-in-paper-with-norah-bahaj-27a41506d2.jpg",
-      "events": 1
-    },
-    {
-      "source_url": "https://hayyjameel.org/wp-content/uploads/2026/09/IMG_4299-2-1100x500.jpeg",
-      "file": "dist/assets/event-images/hayy-makers-the-art-of-jeddah-s-mangoor-with-mohammed-saad-al-emara-c0e08e044a.jpg",
-      "events": 1
-    },
-    {
       "source_url": "https://www.ithra.com/application/files/cache/thumbnails/ed57a8160094b58fb3e47c62c1c5b23f.png",
       "file": "dist/assets/event-images/مجهول-6c6a1d920f.png",
       "events": 1
@@ -729,6 +720,11 @@
     {
       "source_url": "https://hayyjameel.org/wp-content/uploads/2026/06/DSC07665-scaled-e1781701744946-1100x500.jpg",
       "file": "dist/assets/event-images/hayy-markets-the-bakers-market-saudi-national-day-edition-7f94bf67f2.jpg",
+      "events": 1
+    },
+    {
+      "source_url": "https://s7g10.scene7.com/is/image/rcu/qissa-bi-qissa?$Responsive$&fit=stretch&fmt=webp&wid=1920",
+      "file": "dist/assets/event-images/qissa-bi-qissa-swap-a-story-564948c71f.webp",
       "events": 1
     },
     {
@@ -1389,6 +1385,21 @@
     {
       "source_url": "https://ssa.gov.sa/media/3j2f0xpa/sdc2028.webp?width=1400&height=788&rnd=134303158965830000",
       "file": "dist/assets/event-images/مؤتمر-الحطام-الفضائي-2028-ed926e1bba.webp",
+      "events": 1
+    },
+    {
+      "source_url": "https://hayyjameel.org/wp-content/uploads/2026/08/IMG_5762-aspect-ratio-828-587-828x500.jpeg",
+      "file": "dist/assets/event-images/hayy-makers-jeddah-s-historic-houses-in-paper-with-norah-bahaj-27a41506d2.jpg",
+      "events": 1
+    },
+    {
+      "source_url": "https://hayyjameel.org/wp-content/uploads/2026/09/IMG_4299-2-1100x500.jpeg",
+      "file": "dist/assets/event-images/hayy-makers-the-art-of-jeddah-s-mangoor-with-mohammed-saad-al-emara-c0e08e044a.jpg",
+      "events": 1
+    },
+    {
+      "source_url": "https://scth.scene7.com/is/image/scth/saudi-national-day-new?wid=1920&hei=1080&fit=constrain&fmt=webp",
+      "file": "dist/assets/event-images/saudi-national-day-3f78cd3279.webp",
       "events": 1
     },
     {
@@ -2490,74 +2501,37 @@
       "source_url": "https://dmmo-website-asda.oss-me-central-1.aliyuncs.com/assets/global/homeplaybtn.png",
       "file": "dist/assets/event-images/مخيم-مغامرات-حُساك-b107eccd49.png",
       "events": 1
-    },
-    {
-      "source_url": "https://discoveraseer.com/en/img/asset/YXNzZXRzL2V4cGVyaWVuY2Uvc2hhYWFyLXN5ci0ucG5n/shaaar-syr-.png?w=1024&fm=webp&s=242c2ab4507655c8b8aa0b7b8d2a4e2d",
-      "file": "dist/assets/event-images/السلم٢-d5e6cbfa58.webp",
-      "events": 1
-    },
-    {
-      "source_url": "https://discoveraseer.com/en/img/asset/YXNzZXRzL2V4cGVyaWVuY2UvZHNjMDIyNjctKDEpLmpwZWc/dsc02267-%281%29.jpeg?w=1024&fm=webp&s=3f48fc1a92781dae61ff7a7e116510b1",
-      "file": "dist/assets/event-images/مزرعة-بلاكبيري-1aab341486.webp",
-      "events": 1
     }
   ],
   "rejected_removed": [],
   "missing_removed": [],
-  "skipped_recent_failures": [
-    {
-      "source_url": "https://s7g10.scene7.com/is/image/rcu/fei2:landscape-16x9?$Responsive$&fit=stretch&fmt=webp&wid=1920",
-      "events": 1,
-      "reason": "HTTP 403",
-      "failure_kind": "access-denied",
-      "retry_after": "2026-09-23T16:24:21.817Z",
-      "skipped": true
-    },
-    {
-      "source_url": "https://api.riyadh.sa/sites/default/files/styles/medium/public/2026-07/er%20%2859%29.jpg?itok=a33APdGm",
-      "events": 1,
-      "reason": "not-image text/html; charset=utf-8",
-      "failure_kind": "source-returned-html",
-      "retry_after": "2026-09-23T16:24:21.817Z",
-      "skipped": true
-    },
-    {
-      "source_url": "https://cdn.rfecc.sa/wp-content/uploads/mec/qr_898ea2449274454e42895b52b18c6f68.png",
-      "events": 1,
-      "reason": "HTTP 403",
-      "failure_kind": "access-denied",
-      "retry_after": "2026-09-23T16:24:21.817Z",
-      "skipped": true
-    }
-  ],
+  "skipped_recent_failures": [],
   "failed": [
     {
       "source_url": "https://s7g10.scene7.com/is/image/rcu/fei2:landscape-16x9?$Responsive$&fit=stretch&fmt=webp&wid=1920",
       "events": 1,
       "reason": "HTTP 403",
       "failure_kind": "access-denied",
-      "retry_after": "2026-09-23T16:24:21.817Z",
-      "skipped": true
-    },
-    {
-      "source_url": "https://api.riyadh.sa/sites/default/files/styles/medium/public/2026-07/er%20%2859%29.jpg?itok=a33APdGm",
-      "events": 1,
-      "reason": "not-image text/html; charset=utf-8",
-      "failure_kind": "source-returned-html",
-      "retry_after": "2026-09-23T16:24:21.817Z",
-      "skipped": true
+      "retry_after": "2026-09-25T08:11:13.559Z"
     },
     {
       "source_url": "https://cdn.rfecc.sa/wp-content/uploads/mec/qr_898ea2449274454e42895b52b18c6f68.png",
       "events": 1,
       "reason": "HTTP 403",
       "failure_kind": "access-denied",
-      "retry_after": "2026-09-23T16:24:21.817Z",
-      "skipped": true
+      "retry_after": "2026-09-25T08:11:13.559Z"
+    },
+    {
+      "source_url": "https://api.riyadh.sa/sites/default/files/styles/medium/public/2026-07/er%20%2859%29.jpg?itok=a33APdGm",
+      "events": 1,
+      "reason": "not-image text/html; charset=utf-8",
+      "failure_kind": "source-returned-html",
+      "retry_after": "2026-09-25T08:11:13.559Z"
     }
   ],
   "requires_rebuild": true,
   "rebuild_reasons": [
-    "fetched:1"
+    "fetched:2",
+    "new-failures:3"
   ]
 }

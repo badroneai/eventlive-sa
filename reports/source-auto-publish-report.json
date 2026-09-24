@@ -1,18 +1,18 @@
 {
-  "published_at": "2026-09-23T07:56:31.535Z",
+  "published_at": "2026-09-24T08:03:39.758Z",
   "dry_run": false,
   "include_partner": true,
   "source_candidates": "data/source_candidates.json",
   "events_catalog": "data/events_catalog.json",
-  "candidates_seen": 477,
+  "candidates_seen": 474,
   "totals": {
-    "candidates_seen": 477,
-    "published": 1,
-    "linked_existing": 438,
+    "candidates_seen": 474,
+    "published": 2,
+    "linked_existing": 434,
     "blocked": 38,
     "duplicate_review_alerts": 6,
     "category_fallback_alerts": 0,
-    "reconciled": 439,
+    "reconciled": 436,
     "session_windows_reconciled": 0
   },
   "session_window_changes": [],
@@ -128,9 +128,14 @@
   ],
   "published": [
     {
-      "candidate_id": "candidate-experience-alula-events-qissa-bi-qissa-swap-a-story-20260924-a2d33a9a",
-      "event_id": "event-qissa-bi-qissa-swap-a-story",
-      "title": "Qissa bi Qissa (Swap a Story)"
+      "candidate_id": "candidate-experience-alula-events-alula-skyrise-20261106-5ea2fbfc",
+      "event_id": "event-alula-skyrise",
+      "title": "AlUla Skyrise"
+    },
+    {
+      "candidate_id": "candidate-experience-alula-events-tethered-hot-air-balloon-experience-20261106-0acea3e2",
+      "event_id": "event-tethered-hot-air-balloon-experience",
+      "title": "Tethered Hot Air Balloon Experience"
     }
   ],
   "linked_existing": [
@@ -897,159 +902,9 @@
       "reason": "already linked to catalog event"
     },
     {
-      "candidate_id": "candidate-saudi-water-authority-events-saudi-national-day-20260923-df5b5c2a",
-      "event_id": "event-saudi-national-day",
-      "title": "Saudi National Day",
-      "reason": "already linked to catalog event"
-    },
-    {
-      "candidate_id": "candidate-visit-saudi-calendar-saudi-national-day-20260923-a8235fde",
-      "event_id": "event-saudi-national-day",
-      "title": "Saudi National Day",
-      "reason": "already linked to catalog event"
-    },
-    {
-      "candidate_id": "candidate-dhahran-expo-calendar-music-concerts-national-day-20260923-18d15b29",
-      "event_id": "event-music-concerts-national-day",
-      "title": "Music Concerts National Day",
-      "reason": "already linked to catalog event"
-    },
-    {
-      "candidate_id": "candidate-ithra-events-echoes-of-the-familiar-20260923-cc43c2bd",
-      "event_id": "event-echoes-of-the-familiar",
-      "title": "Echoes of the Familiar",
-      "reason": "already linked to catalog event"
-    },
-    {
-      "candidate_id": "candidate-ithra-events-ithra-art-prize-exhibition-20260923-83c2ab55",
-      "event_id": "event-ithra-art-prize-exhibition",
-      "title": "Ithra Art Prize Exhibition",
-      "reason": "already linked to catalog event"
-    },
-    {
-      "candidate_id": "candidate-ithra-events-tafasahu-make-room-20260923-562bc61d",
-      "event_id": "event-tafasahu-make-room",
-      "title": "Tafasahu: Make Room",
-      "reason": "already linked to catalog event"
-    },
-    {
-      "candidate_id": "candidate-hayy-jameel-events-hayy-makers-jeddahs-historic-houses-in-paper-with-norah-bahaj-20260923-641e0bae",
-      "event_id": "event-hayy-makers-jeddahs-historic-houses-in-paper-with-norah-bahaj",
-      "title": "Hayy Makers | Jeddah’s Historic Houses in Paper With Norah Bahaj",
-      "reason": "already linked to catalog event"
-    },
-    {
-      "candidate_id": "candidate-hayy-jameel-events-hayy-makers-the-art-of-jeddahs-mangoor-with-mohammed-saad-al-emara-20260923-4a12c4bc",
-      "event_id": "event-hayy-makers-the-art-of-jeddahs-mangoor-with-mohammed-saad-al-emara",
-      "title": "Hayy Makers | The Art of Jeddah’s Mangoor With Mohammed Saad Al Emara",
-      "reason": "already linked to catalog event"
-    },
-    {
-      "candidate_id": "candidate-ithra-events-deep-unknown-20260923-4a0e8645",
-      "event_id": "event-deep-unknown",
-      "title": "Deep Unknown",
-      "reason": "already linked to catalog event"
-    },
-    {
-      "candidate_id": "candidate-ithra-events-energy-beat-20260923-207858a8",
-      "event_id": "event-energy-beat",
-      "title": "Energy Beat",
-      "reason": "already linked to catalog event"
-    },
-    {
-      "candidate_id": "candidate-ithra-events-green-seasons-20260923-b323e61e",
-      "event_id": "event-green-seasons",
-      "title": "Green Seasons",
-      "reason": "already linked to catalog event"
-    },
-    {
-      "candidate_id": "candidate-ithra-events-inspired-by-our-roots-20260923-cdb6cc0c",
-      "event_id": "event-inspired-by-our-roots",
-      "title": "Inspired by Our Roots",
-      "reason": "already linked to catalog event"
-    },
-    {
-      "candidate_id": "candidate-ithra-events-power-grid-20260923-2de7c883",
-      "event_id": "event-power-grid",
-      "title": "Power Grid",
-      "reason": "already linked to catalog event"
-    },
-    {
-      "candidate_id": "candidate-ithra-events-the-colors-of-energy-20260923-d43ffc3a",
-      "event_id": "event-the-colors-of-energy",
-      "title": "The Colors of Energy",
-      "reason": "already linked to catalog event"
-    },
-    {
-      "candidate_id": "candidate-ithra-events-unlock-the-exhibit-20260923-2513e8ec",
-      "event_id": "event-unlock-the-exhibit",
-      "title": "Unlock the Exhibit",
-      "reason": "already linked to catalog event"
-    },
-    {
-      "candidate_id": "candidate-ithra-events-move-with-pride-20260923-12b04bb0",
-      "event_id": "event-move-with-pride",
-      "title": "Move with Pride",
-      "reason": "already linked to catalog event"
-    },
-    {
-      "candidate_id": "candidate-ithra-events-saudi-calligraphy-workshop-20260923-5cf2e0fe",
-      "event_id": "event-saudi-calligraphy-workshop",
-      "title": "Saudi Calligraphy Workshop",
-      "reason": "already linked to catalog event"
-    },
-    {
-      "candidate_id": "candidate-ithra-events-think-like-the-crowd-20260923-bc88c088",
-      "event_id": "event-think-like-the-crowd",
-      "title": "Think Like the Crowd",
-      "reason": "already linked to catalog event"
-    },
-    {
-      "candidate_id": "candidate-ithra-events-imagination-oasis-20260923-104f8079",
-      "event_id": "event-imagination-oasis",
-      "title": "Imagination Oasis",
-      "reason": "already linked to catalog event"
-    },
-    {
-      "candidate_id": "candidate-ithra-events-the-impossible-challenge-20260923-d1228002",
-      "event_id": "event-the-impossible-challenge",
-      "title": "The Impossible Challenge",
-      "reason": "already linked to catalog event"
-    },
-    {
-      "candidate_id": "candidate-ithra-events-military-parade-20260923-a5d58708",
-      "event_id": "event-military-parade",
-      "title": "Military Parade",
-      "reason": "already linked to catalog event"
-    },
-    {
-      "candidate_id": "candidate-ithra-events-throw-those-squashes-away-and-carry-me-20260923-45750673",
-      "event_id": "event-throw-those-squashes-away-and-carry-me",
-      "title": "Throw Those Squashes Away and Carry Me!",
-      "reason": "already linked to catalog event"
-    },
-    {
       "candidate_id": "candidate-ithra-events-sing-along-for-saudi-20260923-0febb788",
       "event_id": "event-sing-along-for-saudi",
       "title": "Sing-Along for Saudi",
-      "reason": "already linked to catalog event"
-    },
-    {
-      "candidate_id": "candidate-ithra-events-destination-20260923-e2d0a53b",
-      "event_id": "event-destination",
-      "title": "Destination",
-      "reason": "already linked to catalog event"
-    },
-    {
-      "candidate_id": "candidate-ithra-events-the-nameless-knight-20260923-0c66859e",
-      "event_id": "event-the-nameless-knight",
-      "title": "The Nameless Knight",
-      "reason": "already linked to catalog event"
-    },
-    {
-      "candidate_id": "candidate-ithra-events-new-saudi-voices-20260923-b848fa25",
-      "event_id": "event-new-saudi-voices",
-      "title": "New Saudi Voices",
       "reason": "already linked to catalog event"
     },
     {
@@ -1077,15 +932,141 @@
       "reason": "already linked to catalog event"
     },
     {
+      "candidate_id": "candidate-experience-alula-events-qissa-bi-qissa-swap-a-story-20260924-a2d33a9a",
+      "event_id": "event-qissa-bi-qissa-swap-a-story",
+      "title": "Qissa bi Qissa (Swap a Story)",
+      "reason": "already linked to catalog event"
+    },
+    {
+      "candidate_id": "candidate-ithra-events-echoes-of-the-familiar-20260924-cc43c2bd",
+      "event_id": "event-echoes-of-the-familiar",
+      "title": "Echoes of the Familiar",
+      "reason": "already linked to catalog event"
+    },
+    {
+      "candidate_id": "candidate-ithra-events-ithra-art-prize-exhibition-20260924-83c2ab55",
+      "event_id": "event-ithra-art-prize-exhibition",
+      "title": "Ithra Art Prize Exhibition",
+      "reason": "already linked to catalog event"
+    },
+    {
+      "candidate_id": "candidate-ithra-events-tafasahu-make-room-20260924-562bc61d",
+      "event_id": "event-tafasahu-make-room",
+      "title": "Tafasahu: Make Room",
+      "reason": "already linked to catalog event"
+    },
+    {
+      "candidate_id": "candidate-ithra-events-deep-unknown-20260924-4a0e8645",
+      "event_id": "event-deep-unknown",
+      "title": "Deep Unknown",
+      "reason": "already linked to catalog event"
+    },
+    {
+      "candidate_id": "candidate-ithra-events-energy-beat-20260924-207858a8",
+      "event_id": "event-energy-beat",
+      "title": "Energy Beat",
+      "reason": "already linked to catalog event"
+    },
+    {
+      "candidate_id": "candidate-ithra-events-green-seasons-20260924-b323e61e",
+      "event_id": "event-green-seasons",
+      "title": "Green Seasons",
+      "reason": "already linked to catalog event"
+    },
+    {
+      "candidate_id": "candidate-ithra-events-inspired-by-our-roots-20260924-cdb6cc0c",
+      "event_id": "event-inspired-by-our-roots",
+      "title": "Inspired by Our Roots",
+      "reason": "already linked to catalog event"
+    },
+    {
+      "candidate_id": "candidate-ithra-events-move-with-pride-20260924-12b04bb0",
+      "event_id": "event-move-with-pride",
+      "title": "Move with Pride",
+      "reason": "already linked to catalog event"
+    },
+    {
+      "candidate_id": "candidate-ithra-events-power-grid-20260924-2de7c883",
+      "event_id": "event-power-grid",
+      "title": "Power Grid",
+      "reason": "already linked to catalog event"
+    },
+    {
+      "candidate_id": "candidate-ithra-events-the-colors-of-energy-20260924-d43ffc3a",
+      "event_id": "event-the-colors-of-energy",
+      "title": "The Colors of Energy",
+      "reason": "already linked to catalog event"
+    },
+    {
+      "candidate_id": "candidate-ithra-events-unlock-the-exhibit-20260924-2513e8ec",
+      "event_id": "event-unlock-the-exhibit",
+      "title": "Unlock the Exhibit",
+      "reason": "already linked to catalog event"
+    },
+    {
+      "candidate_id": "candidate-ithra-events-saudi-calligraphy-workshop-20260924-5cf2e0fe",
+      "event_id": "event-saudi-calligraphy-workshop",
+      "title": "Saudi Calligraphy Workshop",
+      "reason": "already linked to catalog event"
+    },
+    {
+      "candidate_id": "candidate-ithra-events-think-like-the-crowd-20260924-bc88c088",
+      "event_id": "event-think-like-the-crowd",
+      "title": "Think Like the Crowd",
+      "reason": "already linked to catalog event"
+    },
+    {
+      "candidate_id": "candidate-ithra-events-imagination-oasis-20260924-104f8079",
+      "event_id": "event-imagination-oasis",
+      "title": "Imagination Oasis",
+      "reason": "already linked to catalog event"
+    },
+    {
+      "candidate_id": "candidate-ithra-events-military-parade-20260924-a5d58708",
+      "event_id": "event-military-parade",
+      "title": "Military Parade",
+      "reason": "already linked to catalog event"
+    },
+    {
+      "candidate_id": "candidate-ithra-events-the-impossible-challenge-20260924-d1228002",
+      "event_id": "event-the-impossible-challenge",
+      "title": "The Impossible Challenge",
+      "reason": "already linked to catalog event"
+    },
+    {
+      "candidate_id": "candidate-ithra-events-throw-those-squashes-away-and-carry-me-20260924-45750673",
+      "event_id": "event-throw-those-squashes-away-and-carry-me",
+      "title": "Throw Those Squashes Away and Carry Me!",
+      "reason": "already linked to catalog event"
+    },
+    {
+      "candidate_id": "candidate-ithra-events-destination-20260924-e2d0a53b",
+      "event_id": "event-destination",
+      "title": "Destination",
+      "reason": "already linked to catalog event"
+    },
+    {
       "candidate_id": "candidate-ithra-events-museum-story-time-20260924-1104734c",
       "event_id": "event-museum-story-time",
       "title": "Museum Story Time",
       "reason": "already linked to catalog event"
     },
     {
+      "candidate_id": "candidate-ithra-events-the-nameless-knight-20260924-0c66859e",
+      "event_id": "event-the-nameless-knight",
+      "title": "The Nameless Knight",
+      "reason": "already linked to catalog event"
+    },
+    {
       "candidate_id": "candidate-mdlbeast-events-beast-house-20260924-83049a2a",
       "event_id": "event-beast-house",
       "title": "Beast House",
+      "reason": "already linked to catalog event"
+    },
+    {
+      "candidate_id": "candidate-ithra-events-new-saudi-voices-20260924-b848fa25",
+      "event_id": "event-new-saudi-voices",
+      "title": "New Saudi Voices",
       "reason": "already linked to catalog event"
     },
     {
