@@ -1,11 +1,11 @@
 {
-  "generated_at": "2026-09-24T08:11:13.559Z",
+  "generated_at": "2026-09-25T23:32:36.714Z",
   "events_file": "dist/events.json",
   "manifest": "data/event_image_cache_manifest.json",
   "image_dir": "dist/assets/event-images",
   "totals": {
     "targets": 500,
-    "cached_total": 876,
+    "cached_total": 878,
     "fetched": 2,
     "reused": 495,
     "failed": 3,
@@ -14,15 +14,15 @@
   },
   "fetched": [
     {
-      "source_url": "https://s7g10.scene7.com/is/image/rcu/0016_Hot_Air_Balloon-Desktop-Hero-2880x1620-1?$Responsive$&fit=stretch&fmt=webp&wid=1920",
-      "file": "dist/assets/event-images/alula-skyrise-3a1496e75f.webp",
-      "bytes": 62234,
+      "source_url": "https://hayyjameel.org/wp-content/uploads/2026/09/202609_MWYM_Banner_Final-1100x500.png",
+      "file": "dist/assets/event-images/hayy-arts-made-with-your-magic-jeddah-82a26aa4d6.png",
+      "bytes": 989077,
       "events": 1
     },
     {
-      "source_url": "https://s7g10.scene7.com/is/image/rcu/Meta-Summit-Day-Three-22-4-25-01-Hero-Desktop-2880x1620?$Responsive$&fit=stretch&fmt=webp&wid=1920",
-      "file": "dist/assets/event-images/tethered-hot-air-balloon-experience-5c52d6b582.webp",
-      "bytes": 121350,
+      "source_url": "https://hayyjameel.org/wp-content/uploads/2026/09/2018-03-16-14-55-23-2_orig-1100x500.jpg",
+      "file": "dist/assets/event-images/hayy-makers-introduction-to-silkscreen-printing-with-ziad-yousef-3eaf1375e4.jpg",
+      "bytes": 182738,
       "events": 1
     }
   ],
@@ -243,11 +243,6 @@
       "events": 1
     },
     {
-      "source_url": "https://www.visitsaudi.com/images/ornament-h-m1-24-8290.original.png",
-      "file": "dist/assets/event-images/forest-wonder-499a88ca39.png",
-      "events": 14
-    },
-    {
       "source_url": "https://cdn.tuwaiq.edu.sa/initiatives_admin/images/emzgfcby.aiz.webp",
       "file": "dist/assets/event-images/معسكر-تطوير-تطبيقات-الويب-باستخدام-لغة-python-8b9b4fc037.webp",
       "events": 1
@@ -286,6 +281,11 @@
       "source_url": "https://www.ithra.com/application/files/cache/thumbnails/5d9089ccc5309c4c20ca0c1099df3ab1.jpg",
       "file": "dist/assets/event-images/chess-hub-3cbbdfff18.jpg",
       "events": 1
+    },
+    {
+      "source_url": "https://www.visitsaudi.com/images/ornament-h-m1-24-8290.original.png",
+      "file": "dist/assets/event-images/forest-wonder-499a88ca39.png",
+      "events": 14
     },
     {
       "source_url": "https://www.ithra.com/application/files/cache/thumbnails/388c96722ea7802636485fc7640da5a1.jpg",
@@ -463,11 +463,6 @@
       "events": 1
     },
     {
-      "source_url": "https://hayyjameel.org/wp-content/uploads/2026/08/DSC02407-scaled-e1787151826828-aspect-ratio-2274-1324-1100x500.jpg",
-      "file": "dist/assets/event-images/jameel-library-september-community-programmes-0b998e3f9f.jpg",
-      "events": 1
-    },
-    {
       "source_url": "https://www.ithra.com/application/files/cache/thumbnails/2fcd7911e5e79f6eeaedb4d9031f71b0.jpg",
       "file": "dist/assets/event-images/dots-on-letters-28119e3242.jpg",
       "events": 2
@@ -618,18 +613,8 @@
       "events": 1
     },
     {
-      "source_url": "https://www.ithra.com/application/files/cache/thumbnails/9f638759ab723bf1b1d20ca18f235791.png",
-      "file": "dist/assets/event-images/حائط-جيلنا-20ec70725d.png",
-      "events": 1
-    },
-    {
       "source_url": "https://www.ithra.com/application/files/cache/thumbnails/dd9d446375f768a797daf7a6f82fb41b.png",
       "file": "dist/assets/event-images/تحرك-مع-بريدي-553e379ea0.png",
-      "events": 1
-    },
-    {
-      "source_url": "https://www.ithra.com/application/files/cache/thumbnails/9d3175ea3a83d83e2234111d6f27a478.png",
-      "file": "dist/assets/event-images/فكر-مثل-الحشد-e4ea13d620.png",
       "events": 1
     },
     {
@@ -693,11 +678,6 @@
       "events": 1
     },
     {
-      "source_url": "https://www.ithra.com/application/files/cache/thumbnails/1c1ed3a6e38f179efafaaf7a3305f1fe.png",
-      "file": "dist/assets/event-images/حلقة-العمل-العربية-السعودية-0eba016bd4.png",
-      "events": 1
-    },
-    {
       "source_url": "https://www.ithra.com/application/files/cache/thumbnails/16624d8908b9a37d4e0d4b24d7b39674.png",
       "file": "dist/assets/event-images/الموكب-العسكري-125e3b6194.png",
       "events": 1
@@ -713,11 +693,6 @@
       "events": 15
     },
     {
-      "source_url": "https://hayyjameel.org/wp-content/uploads/2026/09/Photo-by-Reza-Khota-1100x500.jpg",
-      "file": "dist/assets/event-images/هاي-تبدو-جلسة-الاستماع-روتاتب-بيزيلا-مع-أتيياه-خان-و-هودا-تايوب-06153024c7.jpg",
-      "events": 1
-    },
-    {
       "source_url": "https://hayyjameel.org/wp-content/uploads/2026/06/DSC07665-scaled-e1781701744946-1100x500.jpg",
       "file": "dist/assets/event-images/hayy-markets-the-bakers-market-saudi-national-day-edition-7f94bf67f2.jpg",
       "events": 1
@@ -726,11 +701,6 @@
       "source_url": "https://s7g10.scene7.com/is/image/rcu/qissa-bi-qissa?$Responsive$&fit=stretch&fmt=webp&wid=1920",
       "file": "dist/assets/event-images/qissa-bi-qissa-swap-a-story-564948c71f.webp",
       "events": 1
-    },
-    {
-      "source_url": "https://www.datocms-assets.com/66357/1751801189-mdlbeast.png?auto=format&fit=max&w=1200",
-      "file": "dist/assets/event-images/unstable-ba5c599823.avif",
-      "events": 5
     },
     {
       "source_url": "https://futureskills.mcit.gov.sa/sites/default/files/styles/medium/public/2026-08/_prw_OI1im_9hx8Ct1e.jpg?itok=oJrLJ6U9",
@@ -796,6 +766,11 @@
       "source_url": "https://www.ithra.com/application/files/cache/thumbnails/a4f9633071c5836e06209e3221c8d55b.jpg",
       "file": "dist/assets/event-images/نادي-الكتاب-للأطفال-2800783266.jpg",
       "events": 1
+    },
+    {
+      "source_url": "https://www.datocms-assets.com/66357/1751801189-mdlbeast.png?auto=format&fit=max&w=1200",
+      "file": "dist/assets/event-images/unstable-ba5c599823.avif",
+      "events": 5
     },
     {
       "source_url": "https://api.riyadh.sa/sites/default/files/styles/medium/public/2026-05/BG-KKESH-01-scaled.jpg?itok=TyhrDOfg",
@@ -1055,6 +1030,16 @@
     {
       "source_url": "https://s7g10.scene7.com/is/image/rcu/0016_Hot_Air_Balloon-Desktop-Hero-2880x1620?wid=1600&hei=900&fit=constrain&fmt=webp",
       "file": "dist/assets/event-images/alula-skies-festival-00c3b24f91.webp",
+      "events": 1
+    },
+    {
+      "source_url": "https://s7g10.scene7.com/is/image/rcu/0016_Hot_Air_Balloon-Desktop-Hero-2880x1620-1?$Responsive$&fit=stretch&fmt=webp&wid=1920",
+      "file": "dist/assets/event-images/alula-skyrise-3a1496e75f.webp",
+      "events": 1
+    },
+    {
+      "source_url": "https://s7g10.scene7.com/is/image/rcu/Meta-Summit-Day-Three-22-4-25-01-Hero-Desktop-2880x1620?$Responsive$&fit=stretch&fmt=webp&wid=1920",
+      "file": "dist/assets/event-images/tethered-hot-air-balloon-experience-5c52d6b582.webp",
       "events": 1
     },
     {
@@ -1388,6 +1373,16 @@
       "events": 1
     },
     {
+      "source_url": "https://hayyjameel.org/wp-content/uploads/2026/09/Photo-by-Reza-Khota-1100x500.jpg",
+      "file": "dist/assets/event-images/هاي-تبدو-جلسة-الاستماع-روتاتب-بيزيلا-مع-أتيياه-خان-و-هودا-تايوب-06153024c7.jpg",
+      "events": 1
+    },
+    {
+      "source_url": "https://www.ithra.com/application/files/cache/thumbnails/1c1ed3a6e38f179efafaaf7a3305f1fe.png",
+      "file": "dist/assets/event-images/حلقة-العمل-العربية-السعودية-0eba016bd4.png",
+      "events": 1
+    },
+    {
       "source_url": "https://hayyjameel.org/wp-content/uploads/2026/08/IMG_5762-aspect-ratio-828-587-828x500.jpeg",
       "file": "dist/assets/event-images/hayy-makers-jeddah-s-historic-houses-in-paper-with-norah-bahaj-27a41506d2.jpg",
       "events": 1
@@ -1400,6 +1395,16 @@
     {
       "source_url": "https://scth.scene7.com/is/image/scth/saudi-national-day-new?wid=1920&hei=1080&fit=constrain&fmt=webp",
       "file": "dist/assets/event-images/saudi-national-day-3f78cd3279.webp",
+      "events": 1
+    },
+    {
+      "source_url": "https://www.ithra.com/application/files/cache/thumbnails/9d3175ea3a83d83e2234111d6f27a478.png",
+      "file": "dist/assets/event-images/فكر-مثل-الحشد-e4ea13d620.png",
+      "events": 1
+    },
+    {
+      "source_url": "https://www.ithra.com/application/files/cache/thumbnails/9f638759ab723bf1b1d20ca18f235791.png",
+      "file": "dist/assets/event-images/حائط-جيلنا-20ec70725d.png",
       "events": 1
     },
     {
@@ -1545,6 +1550,11 @@
     {
       "source_url": "https://api.riyadh.sa/sites/default/files/styles/medium/public/2026-01/GxP8b3NaIAIaKWE.jpeg?itok=4qip45e1",
       "file": "dist/assets/event-images/saudi-food-manufacturing-show-d1f5873cb5.jpg",
+      "events": 1
+    },
+    {
+      "source_url": "https://hayyjameel.org/wp-content/uploads/2026/08/DSC02407-scaled-e1787151826828-aspect-ratio-2274-1324-1100x500.jpg",
+      "file": "dist/assets/event-images/jameel-library-september-community-programmes-0b998e3f9f.jpg",
       "events": 1
     },
     {
@@ -2491,16 +2501,6 @@
       "source_url": "https://discoveraseer.com/en/img/asset/YXNzZXRzL2V4cGVyaWVuY2UvZGppXzA4MTItZW5oYW5jZWQtbnItKDEpLmpwZWc/dji_0812-enhanced-nr-%281%29.jpeg?w=1024&fm=webp&s=b2e697eaa06bcd7fb5b0a48a99255bfa",
       "file": "dist/assets/event-images/نفَس-d4fdeb01d9.webp",
       "events": 1
-    },
-    {
-      "source_url": "https://discoveraseer.com/en/img/asset/YXNzZXRzL2V4cGVyaWVuY2UvbW50Z2FhLWFsb2FkeS05LmpwZWc/mntgaa-aloady-9.jpeg?w=1024&fm=webp&s=3eb9e2fa555285d003f6023ca81dac83",
-      "file": "dist/assets/event-images/منتجع-الوادي-9aab1000ed.webp",
-      "events": 1
-    },
-    {
-      "source_url": "https://dmmo-website-asda.oss-me-central-1.aliyuncs.com/assets/global/homeplaybtn.png",
-      "file": "dist/assets/event-images/مخيم-مغامرات-حُساك-b107eccd49.png",
-      "events": 1
     }
   ],
   "rejected_removed": [],
@@ -2512,21 +2512,21 @@
       "events": 1,
       "reason": "HTTP 403",
       "failure_kind": "access-denied",
-      "retry_after": "2026-09-25T08:11:13.559Z"
+      "retry_after": "2026-09-26T23:32:36.714Z"
     },
     {
       "source_url": "https://cdn.rfecc.sa/wp-content/uploads/mec/qr_898ea2449274454e42895b52b18c6f68.png",
       "events": 1,
       "reason": "HTTP 403",
       "failure_kind": "access-denied",
-      "retry_after": "2026-09-25T08:11:13.559Z"
+      "retry_after": "2026-09-26T23:32:36.714Z"
     },
     {
       "source_url": "https://api.riyadh.sa/sites/default/files/styles/medium/public/2026-07/er%20%2859%29.jpg?itok=a33APdGm",
       "events": 1,
       "reason": "not-image text/html; charset=utf-8",
       "failure_kind": "source-returned-html",
-      "retry_after": "2026-09-25T08:11:13.559Z"
+      "retry_after": "2026-09-26T23:32:36.714Z"
     }
   ],
   "requires_rebuild": true,

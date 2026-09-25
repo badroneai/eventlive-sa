@@ -1,13 +1,20 @@
 # EventLive Visit Saudi Image Identity Report
 
-- generated_at: 2026-09-24T08:03:41.774Z
+- generated_at: 2026-09-25T23:25:50.996Z
 - pdf_crop_assignments: 46
-- verified: 45
-- struck: 1
-- slots_seen_this_cycle: 47
+- verified: 38
+- struck: 8
+- slots_seen_this_cycle: 40
 
 ## Struck (fell back to generated cover)
 
+- نادي ستورم في العماريه (visit-saudi-summer-2026-p051-bottom-left.jpg) - slot-vacated - no dated card currently occupies page 51 bottom-left of https://www.visitsaudi.com/content/dam/documents/saudi-calendar-ar.pdf
+- تكوة شاكر (visit-saudi-summer-2026-p007-bottom-left.jpg) - slot-vacated - no dated card currently occupies page 7 bottom-left of https://www.visitsaudi.com/content/dam/documents/saudi-calendar-ar.pdf
+- Frequency Room: Pre-Launch Series — Varoo - All night long (visit-saudi-summer-2026-p008-top-left.jpg) - slot-vacated - no dated card currently occupies page 8 top-left of https://www.visitsaudi.com/content/dam/documents/saudi-calendar-ar.pdf
+- ليلة جاز في جدة مع فايا يونان (visit-saudi-summer-2026-p008-top-right.jpg) - slot-vacated - no dated card currently occupies page 8 top-right of https://www.visitsaudi.com/content/dam/documents/saudi-calendar-ar.pdf
+- مهرجان الكوميديا مع محمد حلمي في Six Flags مدينة القدية (visit-saudi-summer-2026-p054-top-right.jpg) - slot-vacated - no dated card currently occupies page 54 top-right of https://www.visitsaudi.com/content/dam/documents/saudi-calendar-ar.pdf
+- جلسة طق (visit-saudi-summer-2026-p054-bottom-right.jpg) - slot-vacated - no dated card currently occupies page 54 bottom-right of https://www.visitsaudi.com/content/dam/documents/saudi-calendar-ar.pdf
+- حفل عايض في فوكالي الرياض (visit-saudi-summer-2026-p055-top-right.jpg) - slot-vacated - no dated card currently occupies page 55 top-right of https://www.visitsaudi.com/content/dam/documents/saudi-calendar-ar.pdf
 - ألف وواحد (visit-saudi-summer-2026-p063-bottom-left.jpg) - identity-mismatch - page 63 bottom-left is now "وقف! عرض نمر الكوميدي المباشر في الرياض"
 
 ## Verified
@@ -19,7 +26,6 @@
 - مزرعة ركايب (visit-saudi-summer-2026-p024-bottom-right.jpg)
 - معرض قلب البحر (visit-saudi-summer-2026-p004-top-right.png)
 - معرض في تتبّع ذكريات غامرة (visit-saudi-summer-2026-p004-top-left.png)
-- نادي ستورم في العماريه (visit-saudi-summer-2026-p051-bottom-left.jpg)
 - واحة عسيب (visit-saudi-summer-2026-p024-bottom-left.jpg)
 - بيوني الشرف (visit-saudi-summer-2026-p025-top-right.jpg)
 - مهابة (visit-saudi-summer-2026-p025-top-left.png)
@@ -34,12 +40,6 @@
 - سيرك فونتانا (visit-saudi-summer-2026-p052-bottom-left.jpg)
 - دوري الملوك MENA (visit-saudi-summer-2026-p053-top-right.jpg)
 - كأس الخليج (visit-saudi-summer-2026-p007-bottom-right.jpg)
-- تكوة شاكر (visit-saudi-summer-2026-p007-bottom-left.jpg)
-- Frequency Room: Pre-Launch Series — Varoo - All night long (visit-saudi-summer-2026-p008-top-left.jpg)
-- ليلة جاز في جدة مع فايا يونان (visit-saudi-summer-2026-p008-top-right.jpg)
-- مهرجان الكوميديا مع محمد حلمي في Six Flags مدينة القدية (visit-saudi-summer-2026-p054-top-right.jpg)
-- جلسة طق (visit-saudi-summer-2026-p054-bottom-right.jpg)
-- حفل عايض في فوكالي الرياض (visit-saudi-summer-2026-p055-top-right.jpg)
 - خالد جواد ايف في جدة (visit-saudi-summer-2026-p008-bottom-right.jpg)
 - صالح النواوي، سيف زغموري، عبدا صبيح ، طلال الشيخي في Six Flags (visit-saudi-summer-2026-p055-top-left.jpg)
 - طوني أبو جودة في الرياض (visit-saudi-summer-2026-p061-bottom-left.jpg)

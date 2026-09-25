@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-24T08:03:41.774Z",
+  "generated_at": "2026-09-25T23:25:50.996Z",
   "catalog": "data/events_catalog.json",
   "candidates": "data/source_candidates.json",
   "manifest": "data/event_image_cache_manifest.json",
@@ -10,11 +10,60 @@
   },
   "totals": {
     "pdf_crop_assignments": 46,
-    "verified": 45,
-    "struck": 1,
-    "slots_seen_this_cycle": 47
+    "verified": 38,
+    "struck": 8,
+    "slots_seen_this_cycle": 40
   },
   "struck": [
+    {
+      "id": "event-نادي-ستورم-في-العماريه",
+      "title": "نادي ستورم في العماريه",
+      "file": "visit-saudi-summer-2026-p051-bottom-left.jpg",
+      "reason": "slot-vacated",
+      "detail": "no dated card currently occupies page 51 bottom-left of https://www.visitsaudi.com/content/dam/documents/saudi-calendar-ar.pdf"
+    },
+    {
+      "id": "event-تكوة-شاكر",
+      "title": "تكوة شاكر",
+      "file": "visit-saudi-summer-2026-p007-bottom-left.jpg",
+      "reason": "slot-vacated",
+      "detail": "no dated card currently occupies page 7 bottom-left of https://www.visitsaudi.com/content/dam/documents/saudi-calendar-ar.pdf"
+    },
+    {
+      "id": "event-frequency-room-pre-launch-series-varoo-all-night-long",
+      "title": "Frequency Room: Pre-Launch Series — Varoo - All night long",
+      "file": "visit-saudi-summer-2026-p008-top-left.jpg",
+      "reason": "slot-vacated",
+      "detail": "no dated card currently occupies page 8 top-left of https://www.visitsaudi.com/content/dam/documents/saudi-calendar-ar.pdf"
+    },
+    {
+      "id": "event-ليلة-جاز-في-جدة-مع-فايا-يونان",
+      "title": "ليلة جاز في جدة مع فايا يونان",
+      "file": "visit-saudi-summer-2026-p008-top-right.jpg",
+      "reason": "slot-vacated",
+      "detail": "no dated card currently occupies page 8 top-right of https://www.visitsaudi.com/content/dam/documents/saudi-calendar-ar.pdf"
+    },
+    {
+      "id": "event-مهرجان-الكوميديا-مع-محمد-حلمي-في-six-flags-مدينة-القدية",
+      "title": "مهرجان الكوميديا مع محمد حلمي في Six Flags مدينة القدية",
+      "file": "visit-saudi-summer-2026-p054-top-right.jpg",
+      "reason": "slot-vacated",
+      "detail": "no dated card currently occupies page 54 top-right of https://www.visitsaudi.com/content/dam/documents/saudi-calendar-ar.pdf"
+    },
+    {
+      "id": "event-جلسة-طق",
+      "title": "جلسة طق",
+      "file": "visit-saudi-summer-2026-p054-bottom-right.jpg",
+      "reason": "slot-vacated",
+      "detail": "no dated card currently occupies page 54 bottom-right of https://www.visitsaudi.com/content/dam/documents/saudi-calendar-ar.pdf"
+    },
+    {
+      "id": "event-حفل-عايض-في-فوكالي-الرياض",
+      "title": "حفل عايض في فوكالي الرياض",
+      "file": "visit-saudi-summer-2026-p055-top-right.jpg",
+      "reason": "slot-vacated",
+      "detail": "no dated card currently occupies page 55 top-right of https://www.visitsaudi.com/content/dam/documents/saudi-calendar-ar.pdf"
+    },
     {
       "id": "event-ألف-وواحد",
       "title": "ألف وواحد",
@@ -92,16 +141,6 @@
         "تتبع",
         "ذكريات",
         "غامره"
-      ]
-    },
-    {
-      "id": "event-نادي-ستورم-في-العماريه",
-      "title": "نادي ستورم في العماريه",
-      "file": "visit-saudi-summer-2026-p051-bottom-left.jpg",
-      "matched_tokens": [
-        "نادي",
-        "ستورم",
-        "العماريه"
       ]
     },
     {
@@ -234,77 +273,6 @@
       "matched_tokens": [
         "كاس",
         "الخليج"
-      ]
-    },
-    {
-      "id": "event-تكوة-شاكر",
-      "title": "تكوة شاكر",
-      "file": "visit-saudi-summer-2026-p007-bottom-left.jpg",
-      "matched_tokens": [
-        "تكوه",
-        "شاكر"
-      ]
-    },
-    {
-      "id": "event-frequency-room-pre-launch-series-varoo-all-night-long",
-      "title": "Frequency Room: Pre-Launch Series — Varoo - All night long",
-      "file": "visit-saudi-summer-2026-p008-top-left.jpg",
-      "matched_tokens": [
-        "frequency",
-        "room",
-        "pre",
-        "launch",
-        "series",
-        "varoo",
-        "all",
-        "night",
-        "long"
-      ]
-    },
-    {
-      "id": "event-ليلة-جاز-في-جدة-مع-فايا-يونان",
-      "title": "ليلة جاز في جدة مع فايا يونان",
-      "file": "visit-saudi-summer-2026-p008-top-right.jpg",
-      "matched_tokens": [
-        "ليله",
-        "جاز",
-        "جده",
-        "فايا",
-        "يونان"
-      ]
-    },
-    {
-      "id": "event-مهرجان-الكوميديا-مع-محمد-حلمي-في-six-flags-مدينة-القدية",
-      "title": "مهرجان الكوميديا مع محمد حلمي في Six Flags مدينة القدية",
-      "file": "visit-saudi-summer-2026-p054-top-right.jpg",
-      "matched_tokens": [
-        "مهرجان",
-        "الكوميديا",
-        "محمد",
-        "حلمي",
-        "six",
-        "flags",
-        "مدينه",
-        "القديه"
-      ]
-    },
-    {
-      "id": "event-جلسة-طق",
-      "title": "جلسة طق",
-      "file": "visit-saudi-summer-2026-p054-bottom-right.jpg",
-      "matched_tokens": [
-        "جلسه"
-      ]
-    },
-    {
-      "id": "event-حفل-عايض-في-فوكالي-الرياض",
-      "title": "حفل عايض في فوكالي الرياض",
-      "file": "visit-saudi-summer-2026-p055-top-right.jpg",
-      "matched_tokens": [
-        "حفل",
-        "عايض",
-        "فوكالي",
-        "الرياض"
       ]
     },
     {

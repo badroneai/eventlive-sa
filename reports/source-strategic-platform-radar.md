@@ -1,6 +1,6 @@
 # Strategic Platform Source Radar
 
-Generated at: 2026-09-24T07:40:48.143Z
+Generated at: 2026-09-25T22:49:08.023Z
 
 Policy: evidence refresh, API-surface mapping, and source strategy only. This radar does not auto-publish catalog events.
 
@@ -8,7 +8,7 @@ Policy: evidence refresh, API-surface mapping, and source strategy only. This ra
 
 | Platform | Role | Reachability | HTTP | Decision | Title |
 | --- | --- | --- | --- | --- | --- |
-| SCEGA ePortal | Regulatory-market analyst for exhibitions and conferences | fetch-error | 0 | official-monitor | - |
+| SCEGA ePortal | Regulatory-market analyst for exhibitions and conferences | reachable | 200 | official-monitor | الهيئه العامه للمعارض و المؤتمرات |
 | National Events Center | Partnership and national-calendar access lead | protected | 200 | partnership-api | المركز الوطني للفعاليات |
 | Visit Saudi Calendar | Production source operator | reachable | 200 | active-collector | تقويم السعودية \| تابع العطلات والفعاليات المميزة - الموقع الرسمي للسياحة السعودية |
 | webook Explore | Ticketing-marketplace intelligence analyst | protected | 200 | candidate-discovery | - |
@@ -23,10 +23,16 @@ Policy: evidence refresh, API-surface mapping, and source strategy only. This ra
 
 - Role lens: Regulatory-market analyst for exhibitions and conferences
 - Decision: official-monitor
-- Classification: fetch-error (0, curl)
+- Classification: reachable (200, fetch)
 - Project use: Track as a high-value official source for exhibitions and conferences; do not auto-publish until event-detail extraction is verified.
-- Title: -
-- Hint URLs: -
+- Title: الهيئه العامه للمعارض و المؤتمرات
+- Hint URLs: https://fonts.gstatic.com/s/ibmplexsansarabic/v15/Qw3MZRtWPQCuHme67tEYUIx3Kh0PHR9N6YNe7PKzeflA.woff2, https://fonts.gstatic.com/s/ibmplexsansarabic/v15/Qw3MZRtWPQCuHme67tEYUIx3Kh0PHR9N6YNe7PqzeflA.woff2, https://fonts.gstatic.com/s/ibmplexsansarabic/v15/Qw3MZRtWPQCuHme67tEYUIx3Kh0PHR9N6YNe7PmzeflA.woff2, https://fonts.gstatic.com/s/ibmplexsansarabic/v15/Qw3MZRtWPQCuHme67tEYUIx3Kh0PHR9N6YNe7PezeQ.woff2, https://fonts.gstatic.com/s/ibmplexsansarabic/v15/Qw3NZRtWPQCuHme67tEYUIx3Kh0PHR9N6YPy_eCRXMR5Kw.woff2, https://fonts.gstatic.com/s/ibmplexsansarabic/v15/Qw3NZRtWPQCuHme67tEYUIx3Kh0PHR9N6YPy_eCZXMR5Kw.woff2, https://fonts.gstatic.com/s/ibmplexsansarabic/v15/Qw3NZRtWPQCuHme67tEYUIx3Kh0PHR9N6YPy_eCaXMR5Kw.woff2, https://fonts.gstatic.com/s/ibmplexsansarabic/v15/Qw3NZRtWPQCuHme67tEYUIx3Kh0PHR9N6YPy_eCUXMQ.woff2
+  - Asset 200 main-CN6PDNTE.js: http://www.w3.org/2000/svg, https://www.scega.gov.sa/ar/InformationCenter/Surveys/Pages/07102025.aspx, https://eservices.scega.gov.sa/login, https://raqmi.dga.gov.sa/platforms/DigitalStamp/ShowCertificate/672, http://https://sdaia.gov.sa/ar/default.aspx, https://eportal.scega.gov.sa/h-events-list
+  - Asset 200 chunk-4G4A4TT5.js: no URL hints
+  - Asset 200 chunk-6THGNAUG.js: no URL hints
+  - Asset 200 chunk-I3NA5QEP.js: http://www.w3.org/2000/svg
+  - Asset 200 chunk-C5BRCPMK.js: no URL hints
+  - Asset 200 chunk-AJKCJFIT.js: no URL hints
 
 ### National Events Center
 
@@ -45,8 +51,8 @@ Policy: evidence refresh, API-surface mapping, and source strategy only. This ra
 - Project use: Keep in the 6-hour source ring; Arabic and English API payloads are reachable and useful for tourism-facing event discovery.
 - Title: تقويم السعودية | تابع العطلات والفعاليات المميزة - الموقع الرسمي للسياحة السعودية
 - Hint URLs: https://www.googletagmanager.com, https://cdn.consentmanager.net, https://delivery.consentmanager.net, https://www.googletagmanager.com/gtm.js?id=, https://www.visitsaudi.com/images/SoundStorm-1.2e16d0ba.fill-1200x630.jpg, https://www.visitsaudi.com/ar/saudi-calendar, https://www.visitsaudi.com/ar, http://schema.org
-  - API 200 https://www.visitsaudi.com/bin/api/v3/events?locale=ar: 33 items; معرض اللغة العربية للطفل, معرض اللغة العربية 28, أشجار, عربات الجاذبية في قمرة, جولة بقي السريعة قمرة
-  - API 200 https://www.visitsaudi.com/bin/api/v3/events?locale=en: 33 items; Arabic Language Exhibition for kids, Arabic Language Exhibition 28, Ashjar Farm, Gravity Carts at Gamra, Sprint Trail Buggy Ride Gamra
+  - API 200 https://www.visitsaudi.com/bin/api/v3/events?locale=ar: 30 items; معرض اللغة العربية للطفل, معرض اللغة العربية 28, أشجار, عربات الجاذبية في قمرة, جولة بقي السريعة قمرة
+  - API 200 https://www.visitsaudi.com/bin/api/v3/events?locale=en: 30 items; Arabic Language Exhibition for kids, Arabic Language Exhibition 28, Ashjar Farm, Gravity Carts at Gamra, Sprint Trail Buggy Ride Gamra
 
 ### webook Explore
 
