@@ -1,5 +1,5 @@
 # EventLive Official Single-Session Activation
-- Generated at: 2026-09-25T23:30:39.941Z
+- Generated at: 2026-09-26T08:00:57.311Z
 - Max duration hours: 8
 - Activated: 38
 - Skipped long events: 12
@@ -36,9 +36,9 @@
 | Saudi Universities and Technical Colleges | BioBooths 2026 – Discover KAUST Biodiversity | 3h | official-community-session |
 | Saudi Universities and Technical Colleges | Saudi Government Structure and Decision Making Processes | 2h | official-community-session |
 | Saudi Universities and Technical Colleges | Discover Saudi Arabia: Culture, Heritage & Jeddah | 2h | official-community-session |
-| MDLBEAST Events | Beast House | 6h | official-entertainment-session |
 | Saudi Universities and Technical Colleges | Pool Party | 4h | official-community-session |
 | Saudi Universities and Technical Colleges | Saudi National Day Celebration at the University | 1.5h | official-community-session |
+| MDLBEAST Events | Beast House | 6h | official-entertainment-session |
 | Saudi Food and Drug Authority Events | دور الهيئة العامة للغذاء و الدواء في ضمان سلامة الاستخدام الامن لجهاز الماموجرام | 1h | official-online-workshop |
 | Saudi Universities and Technical Colleges | PSE Dean’s Distinguished Speaker Seminar | 1h | official-community-session |
 | Qassim Chamber Events | الاستثمار والابتكار | 2h | official-business-workshop |

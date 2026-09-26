@@ -1,11 +1,11 @@
 # EventLive Source Auto Publish Report
 
-- published_at: 2026-09-25T23:25:47.622Z
+- published_at: 2026-09-26T07:56:05.414Z
 - dry_run: false
 - include_partner: true
 - candidates_seen: 461
-- published_new: 2
-- linked_existing: 421
+- published_new: 0
+- linked_existing: 423
 - blocked_remaining: 38
 - duplicate_review_alerts: 6
 
@@ -22,8 +22,6 @@
 
 | Candidate | Status | Catalog event | Reason |
 |---|---|---|---|
-| candidate-hayy-jameel-events-hayy-makers-introduction-to-silkscreen-printing-with-ziad-yousef-20261004-399fc724 | published | event-hayy-makers-introduction-to-silkscreen-printing-with-ziad-yousef | Hayy Makers | Introduction to Silkscreen Printing With Ziad Yousef |
-| candidate-hayy-jameel-events-hayy-arts-made-with-your-magic-jeddah-20261125-fb5181fc | published | event-hayy-arts-made-with-your-magic-jeddah | Hayy Arts | Made With Your Magic - Jeddah |
 | candidate-moc-cultural-subportals-skill-development-initiative-20210714-10f7dc2c | linked-existing | event-skill-development-initiative | already linked to catalog event |
 | candidate-moc-cultural-subportals-sitar-20220921-cda2e068 | linked-existing | event-sitar | already linked to catalog event |
 | candidate-moc-cultural-subportals-the-architecture-and-design-caf-20240427-046e2ec1 | linked-existing | event-the-architecture-and-design-caf | already linked to catalog event |
@@ -253,6 +251,7 @@
 | candidate-umm-al-qura-events-برنامج-محترف-الحوكمة-وإدارة-المخاطر-والامتثال-grcp-20261004-c75f1d3f | linked-existing | event-دورة-محترف-الحوكمة-وإدارة-المخاطر-والامتثال-grcp | already linked to catalog event |
 | candidate-umm-al-qura-events-شهادة-محترف-الأعمال-المعتمد-في-تحفيز-الموظفين-cbp-em-20261004-f37b5615 | linked-existing | event-شهادة-محترف-الأعمال-المعتمد-في-تحفيز-الموظفين-cbp-em | already linked to catalog event |
 | candidate-tuwaiq-academy-bootcamps-معسكر-الدرونز-عالية-الأداء-20261004-c428ead9 | linked-existing | event-معسكر-الدرونز-عالية-الأداء | already linked to catalog event |
+| candidate-hayy-jameel-events-hayy-makers-introduction-to-silkscreen-printing-with-ziad-yousef-20261004-399fc724 | linked-existing | event-hayy-makers-introduction-to-silkscreen-printing-with-ziad-yousef | already linked to catalog event |
 | candidate-visit-saudi-calendar-al-milwah-falcon-race-20261004-1e16b7f0 | linked-existing | event-al-milwah-falcon-race | already linked to catalog event |
 | candidate-sfda-events-دور-الهيئة-العامة-للغذاء-و-الدواء-في-ضمان-سلامة-الاستخدام-الامن-لجهاز-ال-20261005-34d08b48 | linked-existing | event-دور-الهيئة-العامة-للغذاء-و-الدواء-في-ضمان-سلامة-الاستخدام-الامن-لجهاز-ال | already linked to catalog event |
 | candidate-ithra-events-childrens-museum-free-monday-20261005-15ad7731 | linked-existing | event-childrens-museum-free-monday | already linked to catalog event |
@@ -366,6 +365,7 @@
 | candidate-umm-al-qura-events-الترشح-للدبلوم-المتوسط-امن-المعلومات-حضوري-بالتعاون-مع-جمعية-الرياض-للتن-20261123-1b46965d | linked-existing | event-الترشح-للدبلوم-المتوسط-امن-المعلومات-حضوري-بالتعاون-مع-جمعية-الرياض-للتن | already linked to catalog event |
 | candidate-riyadh-city-events-general-aviation-airshow-aero-middle-east-x-sand-fun-20261124-517c200d | linked-existing | event-general-aviation-airshow-aero-middle-east-x-sand-fun | already linked to catalog event |
 | candidate-ithra-events-the-art-of-islamic-illumination-20261124-4d93707e | linked-existing | event-the-art-of-islamic-illumination | already linked to catalog event |
+| candidate-hayy-jameel-events-hayy-arts-made-with-your-magic-jeddah-20261125-fb5181fc | linked-existing | event-hayy-arts-made-with-your-magic-jeddah | already linked to catalog event |
 | candidate-mdlbeast-events-xp-music-futures-2026-20261126-19e9b824 | linked-existing | event-xp-music-futures-2026 | already linked to catalog event |
 | candidate-experience-alula-events-ancient-kingdoms-festival-20261126-a8081cef | linked-existing | event-ancient-kingdoms-festival | already linked to catalog event |
 | candidate-visit-saudi-calendar-pdf-in-act-anniversary-act-xi-20261127-4a38d19e | linked-existing | event-in-act-anniversary-act-xi-2 | already linked to catalog event |

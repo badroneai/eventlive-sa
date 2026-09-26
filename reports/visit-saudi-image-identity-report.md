@@ -1,20 +1,13 @@
 # EventLive Visit Saudi Image Identity Report
 
-- generated_at: 2026-09-25T23:25:50.996Z
-- pdf_crop_assignments: 46
+- generated_at: 2026-09-26T07:56:08.834Z
+- pdf_crop_assignments: 39
 - verified: 38
-- struck: 8
+- struck: 1
 - slots_seen_this_cycle: 40
 
 ## Struck (fell back to generated cover)
 
-- نادي ستورم في العماريه (visit-saudi-summer-2026-p051-bottom-left.jpg) - slot-vacated - no dated card currently occupies page 51 bottom-left of https://www.visitsaudi.com/content/dam/documents/saudi-calendar-ar.pdf
-- تكوة شاكر (visit-saudi-summer-2026-p007-bottom-left.jpg) - slot-vacated - no dated card currently occupies page 7 bottom-left of https://www.visitsaudi.com/content/dam/documents/saudi-calendar-ar.pdf
-- Frequency Room: Pre-Launch Series — Varoo - All night long (visit-saudi-summer-2026-p008-top-left.jpg) - slot-vacated - no dated card currently occupies page 8 top-left of https://www.visitsaudi.com/content/dam/documents/saudi-calendar-ar.pdf
-- ليلة جاز في جدة مع فايا يونان (visit-saudi-summer-2026-p008-top-right.jpg) - slot-vacated - no dated card currently occupies page 8 top-right of https://www.visitsaudi.com/content/dam/documents/saudi-calendar-ar.pdf
-- مهرجان الكوميديا مع محمد حلمي في Six Flags مدينة القدية (visit-saudi-summer-2026-p054-top-right.jpg) - slot-vacated - no dated card currently occupies page 54 top-right of https://www.visitsaudi.com/content/dam/documents/saudi-calendar-ar.pdf
-- جلسة طق (visit-saudi-summer-2026-p054-bottom-right.jpg) - slot-vacated - no dated card currently occupies page 54 bottom-right of https://www.visitsaudi.com/content/dam/documents/saudi-calendar-ar.pdf
-- حفل عايض في فوكالي الرياض (visit-saudi-summer-2026-p055-top-right.jpg) - slot-vacated - no dated card currently occupies page 55 top-right of https://www.visitsaudi.com/content/dam/documents/saudi-calendar-ar.pdf
 - ألف وواحد (visit-saudi-summer-2026-p063-bottom-left.jpg) - identity-mismatch - page 63 bottom-left is now "وقف! عرض نمر الكوميدي المباشر في الرياض"
 
 ## Verified

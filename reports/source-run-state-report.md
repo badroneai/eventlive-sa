@@ -1,6 +1,6 @@
 # EventLive Source Run State
 
-Generated at: 2026-09-25T23:33:33.213Z
+Generated at: 2026-09-26T08:02:59.609Z
 
 ## Operating Rule
 
@@ -9,11 +9,11 @@ Raw collection is not publication. Every source run preserves evidence, separate
 ## Totals
 
 - Sources: 88
-- Attempted this run: 41
-- Deferred by adaptive cadence: 7
-- Productive: 16
-- Zero-yield: 14
-- Collector errors: 7
+- Attempted this run: 17
+- Deferred by adaptive cadence: 31
+- Productive: 15
+- Zero-yield: 0
+- Collector errors: 0
 - Persistent collector errors: 7
 - Probe blocked: 2
 - Auto-publish eligible source lanes: 12

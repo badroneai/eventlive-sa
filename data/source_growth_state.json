@@ -1,30 +1,7 @@
 {
   "schema": "eventlive.source-growth-state.v1",
-  "generated_at": "2026-09-25T23:32:36.284Z",
+  "generated_at": "2026-09-26T08:02:58.284Z",
   "runs": [
-    {
-      "run_id": "2026-07-29T07:32:32.590Z",
-      "generated_at": "2026-07-29T09:07:54.881Z",
-      "collected_at": "2026-07-29T07:32:32.590Z",
-      "catalog_active_rows": 658,
-      "catalog_ended_rows": 762,
-      "public_events": 1118,
-      "candidates_discovered": 320,
-      "new_active_candidates": 20,
-      "new_ended_events": 0,
-      "published_new": 0,
-      "linked_existing": 519,
-      "blocked_remaining": 40,
-      "sources_attempted": 19,
-      "productive_sources": 19,
-      "collector_errors": 0,
-      "public_delta": null,
-      "catalog_delta": null,
-      "no_growth_streak": 0,
-      "lost_published_output": false,
-      "status": "baseline",
-      "measurement_integrity": "poisoned-frozen-gauge-wo9"
-    },
     {
       "run_id": "2026-07-29T09:07:55.651Z",
       "generated_at": "2026-07-29T14:31:09.835Z",
@@ -41,9 +18,9 @@
       "sources_attempted": 19,
       "productive_sources": 19,
       "collector_errors": 0,
-      "public_delta": 0,
-      "catalog_delta": 4,
-      "no_growth_streak": 1,
+      "public_delta": null,
+      "catalog_delta": null,
+      "no_growth_streak": 0,
       "lost_published_output": true,
       "status": "critical-persistence-gap",
       "measurement_integrity": "poisoned-frozen-gauge-wo9"
@@ -66,7 +43,7 @@
       "collector_errors": 0,
       "public_delta": 0,
       "catalog_delta": 4,
-      "no_growth_streak": 2,
+      "no_growth_streak": 1,
       "lost_published_output": true,
       "status": "critical-persistence-gap",
       "measurement_integrity": "poisoned-frozen-gauge-wo9"
@@ -89,7 +66,7 @@
       "collector_errors": 5,
       "public_delta": 0,
       "catalog_delta": 0,
-      "no_growth_streak": 3,
+      "no_growth_streak": 2,
       "lost_published_output": false,
       "status": "degraded",
       "measurement_integrity": "poisoned-frozen-gauge-wo9"
@@ -112,9 +89,9 @@
       "collector_errors": 0,
       "public_delta": 0,
       "catalog_delta": 0,
-      "no_growth_streak": 4,
+      "no_growth_streak": 3,
       "lost_published_output": false,
-      "status": "degraded",
+      "status": "healthy",
       "measurement_integrity": "poisoned-frozen-gauge-wo9"
     },
     {
@@ -135,7 +112,7 @@
       "collector_errors": 0,
       "public_delta": 0,
       "catalog_delta": 0,
-      "no_growth_streak": 5,
+      "no_growth_streak": 4,
       "lost_published_output": false,
       "status": "degraded",
       "measurement_integrity": "poisoned-frozen-gauge-wo9"
@@ -158,7 +135,7 @@
       "collector_errors": 0,
       "public_delta": 0,
       "catalog_delta": 3,
-      "no_growth_streak": 6,
+      "no_growth_streak": 5,
       "lost_published_output": true,
       "status": "critical-persistence-gap",
       "measurement_integrity": "poisoned-frozen-gauge-wo9"
@@ -181,7 +158,7 @@
       "collector_errors": 6,
       "public_delta": 0,
       "catalog_delta": 2,
-      "no_growth_streak": 7,
+      "no_growth_streak": 6,
       "lost_published_output": true,
       "status": "critical-persistence-gap",
       "measurement_integrity": "poisoned-frozen-gauge-wo9"
@@ -204,7 +181,7 @@
       "collector_errors": 1,
       "public_delta": 0,
       "catalog_delta": 0,
-      "no_growth_streak": 8,
+      "no_growth_streak": 7,
       "lost_published_output": false,
       "status": "degraded",
       "measurement_integrity": "poisoned-frozen-gauge-wo9"
@@ -227,7 +204,7 @@
       "collector_errors": 0,
       "public_delta": 0,
       "catalog_delta": 0,
-      "no_growth_streak": 9,
+      "no_growth_streak": 8,
       "lost_published_output": false,
       "status": "degraded",
       "measurement_integrity": "poisoned-frozen-gauge-wo9"
@@ -250,7 +227,7 @@
       "collector_errors": 0,
       "public_delta": 0,
       "catalog_delta": 0,
-      "no_growth_streak": 10,
+      "no_growth_streak": 9,
       "lost_published_output": false,
       "status": "degraded",
       "measurement_integrity": "poisoned-frozen-gauge-wo9"
@@ -273,7 +250,7 @@
       "collector_errors": 1,
       "public_delta": 0,
       "catalog_delta": 0,
-      "no_growth_streak": 11,
+      "no_growth_streak": 10,
       "lost_published_output": false,
       "status": "degraded",
       "measurement_integrity": "poisoned-frozen-gauge-wo9"
@@ -296,7 +273,7 @@
       "collector_errors": 0,
       "public_delta": 0,
       "catalog_delta": 0,
-      "no_growth_streak": 12,
+      "no_growth_streak": 11,
       "lost_published_output": false,
       "status": "degraded",
       "measurement_integrity": "ok"
@@ -3098,6 +3075,34 @@
       "catalog_delta": 2,
       "no_growth_streak": 0,
       "status": "degraded"
+    },
+    {
+      "run_id": "2026-09-26T07:49:17.852Z",
+      "generated_at": "2026-09-26T08:02:58.284Z",
+      "collected_at": "2026-09-26T07:49:17.852Z",
+      "catalog_active_rows": 999,
+      "catalog_ended_rows": 762,
+      "public_events": 1731,
+      "candidates_discovered": 225,
+      "new_active_candidates": 16,
+      "new_ended_events": 0,
+      "published_new": 0,
+      "linked_existing": 423,
+      "blocked_remaining": 38,
+      "sources_attempted": 17,
+      "productive_sources": 15,
+      "collector_errors": 0,
+      "lost_published_output": false,
+      "collapsed_published_ids": [],
+      "persistence_severity": "none",
+      "missing_published_ids": [],
+      "published_ids_checked": 0,
+      "publish_report_correlated": true,
+      "measurement_integrity": "ok",
+      "public_delta": 0,
+      "catalog_delta": 0,
+      "no_growth_streak": 1,
+      "status": "healthy"
     }
   ]
 }

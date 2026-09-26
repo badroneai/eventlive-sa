@@ -1,5 +1,5 @@
 {
-  "published_at": "2026-09-25T23:25:47.622Z",
+  "published_at": "2026-09-26T07:56:05.414Z",
   "dry_run": false,
   "include_partner": true,
   "source_candidates": "data/source_candidates.json",
@@ -7,8 +7,8 @@
   "candidates_seen": 461,
   "totals": {
     "candidates_seen": 461,
-    "published": 2,
-    "linked_existing": 421,
+    "published": 0,
+    "linked_existing": 423,
     "blocked": 38,
     "duplicate_review_alerts": 6,
     "category_fallback_alerts": 0,
@@ -126,18 +126,7 @@
       "start_date_drift_days": 0.042
     }
   ],
-  "published": [
-    {
-      "candidate_id": "candidate-hayy-jameel-events-hayy-makers-introduction-to-silkscreen-printing-with-ziad-yousef-20261004-399fc724",
-      "event_id": "event-hayy-makers-introduction-to-silkscreen-printing-with-ziad-yousef",
-      "title": "Hayy Makers | Introduction to Silkscreen Printing With Ziad Yousef"
-    },
-    {
-      "candidate_id": "candidate-hayy-jameel-events-hayy-arts-made-with-your-magic-jeddah-20261125-fb5181fc",
-      "event_id": "event-hayy-arts-made-with-your-magic-jeddah",
-      "title": "Hayy Arts | Made With Your Magic - Jeddah"
-    }
-  ],
+  "published": [],
   "linked_existing": [
     {
       "candidate_id": "candidate-moc-cultural-subportals-skill-development-initiative-20210714-10f7dc2c",
@@ -1514,6 +1503,12 @@
       "reason": "already linked to catalog event"
     },
     {
+      "candidate_id": "candidate-hayy-jameel-events-hayy-makers-introduction-to-silkscreen-printing-with-ziad-yousef-20261004-399fc724",
+      "event_id": "event-hayy-makers-introduction-to-silkscreen-printing-with-ziad-yousef",
+      "title": "Hayy Makers | Introduction to Silkscreen Printing With Ziad Yousef",
+      "reason": "already linked to catalog event"
+    },
+    {
       "candidate_id": "candidate-visit-saudi-calendar-al-milwah-falcon-race-20261004-1e16b7f0",
       "event_id": "event-al-milwah-falcon-race",
       "title": "Al Milwah Falcon Race",
@@ -2189,6 +2184,12 @@
       "candidate_id": "candidate-ithra-events-the-art-of-islamic-illumination-20261124-4d93707e",
       "event_id": "event-the-art-of-islamic-illumination",
       "title": "The Art of Islamic Illumination",
+      "reason": "already linked to catalog event"
+    },
+    {
+      "candidate_id": "candidate-hayy-jameel-events-hayy-arts-made-with-your-magic-jeddah-20261125-fb5181fc",
+      "event_id": "event-hayy-arts-made-with-your-magic-jeddah",
+      "title": "Hayy Arts | Made With Your Magic - Jeddah",
       "reason": "already linked to catalog event"
     },
     {

@@ -1,6 +1,6 @@
 # MDLBEAST Enrichment Report
 
-- generated_at: 2026-09-25T23:29:05.537Z
+- generated_at: 2026-09-26T07:59:49.271Z
 - targets: 6
 - candidates: 5
 - enriched: 6
@@ -11,8 +11,8 @@
 ## Enriched
 
 - MDLBEAST Radio MixTape - official-next-data - image=yes - features=6
-- Beast House - official-next-data - image=yes - features=7
 - Unstable - official-next-data - image=yes - features=7
+- Beast House - official-next-data - image=yes - features=7
 - MDLBEAST | Home of Soundstorm, XP & Music in the Middle East - official-next-data - image=yes - features=5
 - MDLBEAST | Home of Soundstorm, XP & Music in the Middle East - official-next-data - image=yes - features=5
 - SOUNDSTORM 26 - official-next-data - image=yes - features=8
