@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-26T07:56:08.834Z",
+  "generated_at": "2026-09-27T08:38:57.527Z",
   "catalog": "data/events_catalog.json",
   "candidates": "data/source_candidates.json",
   "manifest": "data/event_image_cache_manifest.json",
@@ -10,11 +10,25 @@
   },
   "totals": {
     "pdf_crop_assignments": 39,
-    "verified": 38,
-    "struck": 1,
-    "slots_seen_this_cycle": 40
+    "verified": 36,
+    "struck": 3,
+    "slots_seen_this_cycle": 38
   },
   "struck": [
+    {
+      "id": "event-خالد-جواد-ايف-في-جدة",
+      "title": "خالد جواد ايف في جدة",
+      "file": "visit-saudi-summer-2026-p008-bottom-right.jpg",
+      "reason": "slot-vacated",
+      "detail": "no dated card currently occupies page 8 bottom-right of https://www.visitsaudi.com/content/dam/documents/saudi-calendar-ar.pdf"
+    },
+    {
+      "id": "event-صالح-النواوي،-سيف-زغموري،-عبدا-صبيح-،-طلال-الشيخي-في-six-flags",
+      "title": "صالح النواوي، سيف زغموري، عبدا صبيح ، طلال الشيخي في Six Flags",
+      "file": "visit-saudi-summer-2026-p055-top-left.jpg",
+      "reason": "slot-vacated",
+      "detail": "no dated card currently occupies page 55 top-left of https://www.visitsaudi.com/content/dam/documents/saudi-calendar-ar.pdf"
+    },
     {
       "id": "event-ألف-وواحد",
       "title": "ألف وواحد",
@@ -224,34 +238,6 @@
       "matched_tokens": [
         "كاس",
         "الخليج"
-      ]
-    },
-    {
-      "id": "event-خالد-جواد-ايف-في-جدة",
-      "title": "خالد جواد ايف في جدة",
-      "file": "visit-saudi-summer-2026-p008-bottom-right.jpg",
-      "matched_tokens": [
-        "خالد",
-        "جواد",
-        "ايف",
-        "جده"
-      ]
-    },
-    {
-      "id": "event-صالح-النواوي،-سيف-زغموري،-عبدا-صبيح-،-طلال-الشيخي-في-six-flags",
-      "title": "صالح النواوي، سيف زغموري، عبدا صبيح ، طلال الشيخي في Six Flags",
-      "file": "visit-saudi-summer-2026-p055-top-left.jpg",
-      "matched_tokens": [
-        "صالح",
-        "النواوي",
-        "سيف",
-        "زغموري",
-        "عبدا",
-        "صبيح",
-        "طلال",
-        "الشيخي",
-        "six",
-        "flags"
       ]
     },
     {

@@ -1,46 +1,1278 @@
 {
-  "generated_at": "2026-09-26T08:00:46.505Z",
+  "generated_at": "2026-09-27T08:43:20.486Z",
   "totals": {
-    "targets": 2,
-    "enriched": 2,
-    "fetched": 0,
-    "images": 0,
-    "fetch_failures": 2
+    "targets": 100,
+    "enriched": 100,
+    "fetched": 56,
+    "images": 94,
+    "fetch_failures": 44
   },
   "enriched": [
     {
-      "id": "event-ملتقى-الممارسات-الوقفية-في-نسخته-الخامسة-تحت-عنوان-التشريعات-المحفزة-لنم",
-      "title": "ملتقى الممارسات الوقفية في نسخته الخامسة تحت عنوان (التشريعات المحفزة لنمو الأوقاف وصرفها)",
-      "source_label": "Asharqia Chamber Events",
+      "id": "event-أساسيات-الأمن-السيبراني-في-البيئة-الجامعية",
+      "title": "أساسيات الأمن السيبراني في البيئة الجامعية",
+      "source_label": "Umm Al-Qura University Events Center",
+      "source_method": "official-page-meta",
+      "source_url": "https://uqu.edu.sa/App/Events/41157",
+      "fetched": true,
+      "image": true,
+      "fetch_reason": ""
+    },
+    {
+      "id": "event-دعوة-لحضور-فعاليات-الاحتفال-باليوم-الوطني-السعودي-ال96-بكلية-الإدارة-وال",
+      "title": "دعوة لحضور فعاليات الاحتفال باليوم الوطني السعودي ال96 بكلية الإدارة والاقتصاد",
+      "source_label": "Umm Al-Qura University Events Center",
+      "source_method": "official-page-meta",
+      "source_url": "https://uqu.edu.sa/App/Events/41156",
+      "fetched": true,
+      "image": true,
+      "fetch_reason": ""
+    },
+    {
+      "id": "event-قراءة-تاريخية-في-الأنظمة-السعودية",
+      "title": "قراءة تاريخية في الأنظمة السعودية",
+      "source_label": "Umm Al-Qura University Events Center",
+      "source_method": "official-page-meta",
+      "source_url": "https://uqu.edu.sa/App/Events/41154",
+      "fetched": true,
+      "image": true,
+      "fetch_reason": ""
+    },
+    {
+      "id": "event-1-الترشح-للدبلوم-المتوسط-في-تكنولوجيا-التعدين-والمناجم-حضوري-بالتعاون-مع",
+      "title": "1. الترشح للدبلوم المتوسط في تكنولوجيا التعدين والمناجم (حضوري) بالتعاون مع معهد الدراسات والخدمات الاستشارية بجامعة الإمام عبد الرحمن بن فيصل",
+      "source_label": "Umm Al-Qura University Events Center",
+      "source_method": "official-page-meta",
+      "source_url": "https://uqu.edu.sa/App/Events/41074",
+      "fetched": true,
+      "image": true,
+      "fetch_reason": ""
+    },
+    {
+      "id": "event-abo-noghta-historic-castles-historic-tabab",
+      "title": "\"Abo Noghta Historic Castles - Historic Tabab \"",
+      "source_label": "Discover Aseer Events",
       "source_method": "approved-source-row",
-      "source_url": "https://www.chamber.org.sa/sites/Arabic/Events/ChamberEvents/Pages/ChamberEventDetails.aspx?ItemID=348",
+      "source_url": "https://discoveraseer.com/en/experiences/ksor-oklaaa-abonkt",
+      "fetched": false,
+      "image": true,
+      "fetch_reason": "HTTP 404"
+    },
+    {
+      "id": "event-adventure-camp-husaak",
+      "title": "Adventure camp-Husaak",
+      "source_label": "Discover Aseer Events",
+      "source_method": "approved-source-row",
+      "source_url": "https://discoveraseer.com/en/experiences/mkhym-almghamrat-hosak",
+      "fetched": false,
+      "image": true,
+      "fetch_reason": "HTTP 404"
+    },
+    {
+      "id": "event-al-balad-cinema",
+      "title": "Al Balad Cinema",
+      "source_label": "Visit Saudi Seasons",
+      "source_method": "official-page-meta",
+      "source_url": "https://www.visitsaudi.com/en/al-baha/events/al-balad-cinema",
+      "fetched": true,
+      "image": true,
+      "fetch_reason": ""
+    },
+    {
+      "id": "event-al-reef-park",
+      "title": "Al Reef Park",
+      "source_label": "Discover Aseer Events",
+      "source_method": "approved-source-row",
+      "source_url": "https://discoveraseer.com/en/experiences/alrif",
+      "fetched": false,
+      "image": true,
+      "fetch_reason": "HTTP 404"
+    },
+    {
+      "id": "event-al-wadi-resort",
+      "title": "Al Wadi Resort",
+      "source_label": "Discover Aseer Events",
+      "source_method": "approved-source-row",
+      "source_url": "https://discoveraseer.com/en/experiences/alwadi2026",
+      "fetched": false,
+      "image": true,
+      "fetch_reason": "HTTP 404"
+    },
+    {
+      "id": "event-al-yanfa-village",
+      "title": "Al Yanfa Village",
+      "source_label": "Discover Aseer Events",
+      "source_method": "approved-source-row",
+      "source_url": "https://discoveraseer.com/en/experiences/kry-al-ynfaa",
+      "fetched": false,
+      "image": true,
+      "fetch_reason": "HTTP 404"
+    },
+    {
+      "id": "event-alliwan-farm",
+      "title": "AlLiwan Farm",
+      "source_label": "Discover Aseer Events",
+      "source_method": "approved-source-row",
+      "source_url": "https://discoveraseer.com/en/experiences/mzraah-allyoan",
+      "fetched": false,
+      "image": true,
+      "fetch_reason": "HTTP 404"
+    },
+    {
+      "id": "event-alula-trail-race",
+      "title": "AlUla Trail Race",
+      "source_label": "Experience AlUla Events",
+      "source_method": "official-page-meta",
+      "source_url": "https://www.experiencealula.com/en/whats-on/events/alula-trail-race",
+      "fetched": true,
+      "image": true,
+      "fetch_reason": ""
+    },
+    {
+      "id": "event-alula-wellness-festival",
+      "title": "AlUla Wellness Festival",
+      "source_label": "Experience AlUla Events",
+      "source_method": "official-page-meta",
+      "source_url": "https://www.experiencealula.com/en/whats-on/festivals/alula-wellness-festival",
+      "fetched": true,
+      "image": true,
+      "fetch_reason": ""
+    },
+    {
+      "id": "event-ancient-kingdoms-festival",
+      "title": "Ancient Kingdoms Festival",
+      "source_label": "Experience AlUla Events",
+      "source_method": "official-page-meta",
+      "source_url": "https://www.experiencealula.com/en/whats-on/festivals/ancient-kingdoms-festival",
+      "fetched": true,
+      "image": true,
+      "fetch_reason": ""
+    },
+    {
+      "id": "event-aryash",
+      "title": "ARYASH",
+      "source_label": "Discover Aseer Events",
+      "source_method": "approved-source-row",
+      "source_url": "https://discoveraseer.com/en/experiences/arysh",
+      "fetched": false,
+      "image": true,
+      "fetch_reason": "HTTP 404"
+    },
+    {
+      "id": "event-asian-indoor-and-martial-arts-games",
+      "title": "Asian Indoor and Martial Arts Games",
+      "source_label": "Riyadh City Events",
+      "source_method": "approved-source-row",
+      "source_url": "https://riyadh.sa/en/moment/events/item/event/30990",
+      "fetched": false,
+      "image": true,
+      "fetch_reason": "fetch failed"
+    },
+    {
+      "id": "event-asib-oasis",
+      "title": "Asib Oasis",
+      "source_label": "Discover Aseer Events",
+      "source_method": "approved-source-row",
+      "source_url": "https://discoveraseer.com/en/experiences/asib",
+      "fetched": false,
+      "image": true,
+      "fetch_reason": "HTTP 404"
+    },
+    {
+      "id": "event-big-5-construct-saudi",
+      "title": "Big 5 Construct Saudi",
+      "source_label": "dmg events Official",
+      "source_method": "official-page-meta",
+      "source_url": "https://www.big5constructsaudi.com/",
+      "fetched": true,
+      "image": true,
+      "fetch_reason": ""
+    },
+    {
+      "id": "event-bio-middle-east-biome",
+      "title": "BIO Middle East (BIOME)",
+      "source_label": "Riyadh City Events",
+      "source_method": "approved-source-row",
+      "source_url": "https://riyadh.sa/en/moment/events/item/event/31002",
+      "fetched": false,
+      "image": true,
+      "fetch_reason": "fetch failed"
+    },
+    {
+      "id": "event-bioni-al-sharaf",
+      "title": "Bioni Al sharaf",
+      "source_label": "Discover Aseer Events",
+      "source_method": "approved-source-row",
+      "source_url": "https://discoveraseer.com/en/experiences/bioni",
+      "fetched": false,
+      "image": true,
+      "fetch_reason": "HTTP 404"
+    },
+    {
+      "id": "event-build-your-house-exhibition",
+      "title": "Build Your House exhibition",
+      "source_label": "Riyadh City Events",
+      "source_method": "approved-source-row",
+      "source_url": "https://riyadh.sa/en/moment/events/item/event/30946",
+      "fetched": false,
+      "image": true,
+      "fetch_reason": "fetch failed"
+    },
+    {
+      "id": "event-cat-show",
+      "title": "Cat Show",
+      "source_label": "Riyadh City Events",
+      "source_method": "approved-source-row",
+      "source_url": "https://riyadh.sa/en/moment/events/item/event/31009",
+      "fetched": false,
+      "image": true,
+      "fetch_reason": "fetch failed"
+    },
+    {
+      "id": "event-cfo-leadership-summit",
+      "title": "CFO Leadership Summit",
+      "source_label": "Riyadh City Events",
+      "source_method": "approved-source-row",
+      "source_url": "https://riyadh.sa/en/moment/events/item/event/30714",
+      "fetched": false,
+      "image": true,
+      "fetch_reason": "fetch failed"
+    },
+    {
+      "id": "event-cips-mena-procurement-and-supply-chain-futures-conference-and-awards",
+      "title": "CIPS MENA Procurement and Supply Chain Futures conference and awards",
+      "source_label": "Eye of Riyadh Official",
+      "source_method": "official-page-meta",
+      "source_url": "https://www.cipsmenaconferenceandawards.com/",
+      "fetched": true,
+      "image": true,
+      "fetch_reason": ""
+    },
+    {
+      "id": "event-cphi-middle-east",
+      "title": "CPHI Middle East",
+      "source_label": "Riyadh City Events",
+      "source_method": "approved-source-row",
+      "source_url": "https://riyadh.sa/en/moment/events/item/event/29305",
+      "fetched": false,
+      "image": true,
+      "fetch_reason": "fetch failed"
+    },
+    {
+      "id": "event-e3-customer-experience-conference",
+      "title": "E3 Customer Experience Conference",
+      "source_label": "Riyadh City Events",
+      "source_method": "approved-source-row",
+      "source_url": "https://riyadh.sa/en/moment/events/item/event/29987",
+      "fetched": false,
+      "image": true,
+      "fetch_reason": "fetch failed"
+    },
+    {
+      "id": "event-global-proptech-summit-2026",
+      "title": "Global Proptech Summit 2026",
+      "source_label": "Eye of Riyadh Official",
+      "source_method": "official-page-meta",
+      "source_url": "https://globalproptechsummit.com/",
+      "fetched": true,
+      "image": true,
+      "fetch_reason": ""
+    },
+    {
+      "id": "event-hayy-arts",
+      "title": "Hayy Arts | Global Positioning System",
+      "source_label": "Hayy Jameel What's On",
+      "source_method": "official-page-meta",
+      "source_url": "https://hayyjameel.org/whats-on/hayy-arts-global-positioning-system/",
+      "fetched": true,
+      "image": true,
+      "fetch_reason": ""
+    },
+    {
+      "id": "event-hayy-arts-red-wind-coral-worlds",
+      "title": "Hayy Arts | Red Wind, Coral Worlds",
+      "source_label": "Hayy Jameel What's On",
+      "source_method": "official-page-meta",
+      "source_url": "https://hayyjameel.org/whats-on/hayy-arts-red-wind-coral-worlds/",
+      "fetched": true,
+      "image": true,
+      "fetch_reason": ""
+    },
+    {
+      "id": "event-hayy-cinema",
+      "title": "Hayy Cinema | \"Kef Hayyak?\" 3rd Edition Screenings and Awards Ceremony",
+      "source_label": "Hayy Jameel What's On",
+      "source_method": "official-page-meta",
+      "source_url": "https://hayyjameel.org/whats-on/hayy-cinema-kef-hayyak-short-documentary-competition-3rd-edition/",
+      "fetched": true,
+      "image": true,
+      "fetch_reason": ""
+    },
+    {
+      "id": "event-hayy-cinema-2",
+      "title": "Hayy Cinema | July 2026",
+      "source_label": "Hayy Jameel What's On",
+      "source_method": "official-page-meta",
+      "source_url": "https://hayyjameel.org/whats-on/hayy-cinema-july-2026/",
+      "fetched": true,
+      "image": true,
+      "fetch_reason": ""
+    },
+    {
+      "id": "event-hayy-cinema-3",
+      "title": "Hayy Cinema | In Short: Film Programme — Summer Edition",
+      "source_label": "Hayy Jameel What's On",
+      "source_method": "official-page-meta",
+      "source_url": "https://hayyjameel.org/whats-on/hayy-cinema-inshort2026/",
+      "fetched": true,
+      "image": true,
+      "fetch_reason": ""
+    },
+    {
+      "id": "event-hayy-cinema-a-godus-bros-retrospective-from-youtube-to-the-box-office",
+      "title": "Hayy Cinema | A Godus Bros Retrospective: From YouTube to the Box Office",
+      "source_label": "Hayy Jameel What's On",
+      "source_method": "official-page-meta",
+      "source_url": "https://hayyjameel.org/whats-on/godus-brothers-retrospective-hayycinema/",
+      "fetched": true,
+      "image": true,
+      "fetch_reason": ""
+    },
+    {
+      "id": "event-hayy-explorers",
+      "title": "Hayy Explorers | As Told by The Land",
+      "source_label": "Hayy Jameel What's On",
+      "source_method": "official-page-meta",
+      "source_url": "https://hayyjameel.org/whats-on/explorers-thematic-as-told-by-the-land/",
+      "fetched": true,
+      "image": true,
+      "fetch_reason": ""
+    },
+    {
+      "id": "event-hayy-learning",
+      "title": "Hayy Learning | Recess: An After-School Programme for Teens",
+      "source_label": "Hayy Jameel What's On",
+      "source_method": "official-page-meta",
+      "source_url": "https://hayyjameel.org/whats-on/recess2026/",
+      "fetched": true,
+      "image": true,
+      "fetch_reason": ""
+    },
+    {
+      "id": "event-hayy-makers",
+      "title": "Hayy Makers | Woodworking Course (Level 2) with Ahmad Sofi",
+      "source_label": "Hayy Jameel What's On",
+      "source_method": "official-page-meta",
+      "source_url": "https://hayyjameel.org/whats-on/__trashed-4/",
+      "fetched": true,
+      "image": true,
+      "fetch_reason": ""
+    },
+    {
+      "id": "event-hayy-makers-2",
+      "title": "Hayy Makers | Introduction to Pottery Course with Pharah Al-Ghalib",
+      "source_label": "Hayy Jameel What's On",
+      "source_method": "official-page-meta",
+      "source_url": "https://hayyjameel.org/whats-on/hayy-makers-introduction-to-pottery-course-with-pharah-al-ghalib-3/",
+      "fetched": true,
+      "image": true,
+      "fetch_reason": ""
+    },
+    {
+      "id": "event-hvac-r-saudi-arabia",
+      "title": "HVAC R Saudi Arabia",
+      "source_label": "dmg events Official",
+      "source_method": "official-page-meta",
+      "source_url": "https://www.big5constructsaudi.com/specialised-events/hvacr-ksa/",
+      "fetched": true,
+      "image": true,
+      "fetch_reason": ""
+    },
+    {
+      "id": "event-in-act-act-ix",
+      "title": "IN ACT - ACT IX",
+      "source_label": "Visit Saudi Summer Calendar PDF",
+      "source_method": "approved-source-row",
+      "source_url": "https://www.visitsaudi.com/content/dam/documents/saudi-calendar-ar.pdf",
+      "fetched": false,
+      "image": true,
+      "fetch_reason": "The operation was aborted due to timeout"
+    },
+    {
+      "id": "event-in-act-act-x",
+      "title": "IN ACT - ACT X",
+      "source_label": "Visit Saudi Summer Calendar PDF",
+      "source_method": "official-page-meta",
+      "source_url": "https://www.visitsaudi.com/content/dam/documents/saudi-calendar-ar.pdf",
+      "fetched": true,
+      "image": true,
+      "fetch_reason": ""
+    },
+    {
+      "id": "event-in-act-anniversary-act-xi",
+      "title": "IN ACT ANNIVERSARY - ACT XI",
+      "source_label": "Visit Saudi Summer Calendar PDF",
+      "source_method": "approved-source-row",
+      "source_url": "https://www.visitsaudi.com/content/dam/documents/saudi-calendar-ar.pdf",
+      "fetched": false,
+      "image": true,
+      "fetch_reason": "The operation was aborted due to timeout"
+    },
+    {
+      "id": "event-jameel-library",
+      "title": "Jameel Library | July Community Programmes",
+      "source_label": "Hayy Jameel What's On",
+      "source_method": "official-page-meta",
+      "source_url": "https://hayyjameel.org/whats-on/jameel-library-july-community-programmes/",
+      "fetched": true,
+      "image": true,
+      "fetch_reason": ""
+    },
+    {
+      "id": "event-jameel-library-summer-reading-challenge",
+      "title": "Jameel Library | Summer Reading Challenge",
+      "source_label": "Hayy Jameel What's On",
+      "source_method": "official-page-meta",
+      "source_url": "https://hayyjameel.org/whats-on/jameel-library-summer-reading-challenge/",
+      "fetched": true,
+      "image": true,
+      "fetch_reason": ""
+    },
+    {
+      "id": "event-real-estate-future-forum",
+      "title": "Real Estate Future Forum",
+      "source_label": "Eye of Riyadh Official",
+      "source_method": "official-page-meta",
+      "source_url": "https://www.therff.com/",
+      "fetched": true,
+      "image": true,
+      "fetch_reason": ""
+    },
+    {
+      "id": "event-real-estate-supply-chain-forum",
+      "title": "Real Estate Supply Chain Forum",
+      "source_label": "Eye of Riyadh Official",
+      "source_method": "official-page-meta",
+      "source_url": "https://www.rscforum.com/",
+      "fetched": true,
+      "image": true,
+      "fetch_reason": ""
+    },
+    {
+      "id": "event-saudi-fm-clean",
+      "title": "Saudi FM & Clean",
+      "source_label": "dmg events Official",
+      "source_method": "approved-source-row",
+      "source_url": "https://www.big5constructsaudi.com/specialised-events/saudi-fm-clean-ksa/",
+      "fetched": false,
+      "image": true,
+      "fetch_reason": "HTTP 404"
+    },
+    {
+      "id": "event-ultra-gobi-alula",
+      "title": "Ultra Gobi AlUla",
+      "source_label": "Experience AlUla Events",
+      "source_method": "official-page-meta",
+      "source_url": "https://www.experiencealula.com/en/whats-on/events/ultra-gobi-alula",
+      "fetched": true,
+      "image": true,
+      "fetch_reason": ""
+    },
+    {
+      "id": "event-winter-at-tantora",
+      "title": "Winter at Tantora",
+      "source_label": "Experience AlUla Events",
+      "source_method": "official-page-meta",
+      "source_url": "https://www.experiencealula.com/en/whats-on/festivals/winter-at-tantora",
+      "fetched": true,
+      "image": true,
+      "fetch_reason": ""
+    },
+    {
+      "id": "event-world-cup-2026-fan-zone-at-kimpton-kafd",
+      "title": "World Cup 2026 Fan Zone at Kimpton KAFD",
+      "source_label": "Riyadh City Events",
+      "source_method": "approved-source-row",
+      "source_url": "https://riyadh.sa/en/moment/events/item/event/31091",
+      "fetched": false,
+      "image": true,
+      "fetch_reason": "fetch failed"
+    },
+    {
+      "id": "event-wrth-summer-art-craft-program",
+      "title": "Wrth Summer Art & Craft Program",
+      "source_label": "Riyadh City Events",
+      "source_method": "approved-source-row",
+      "source_url": "https://riyadh.sa/en/moment/events/item/event/31181",
+      "fetched": false,
+      "image": true,
+      "fetch_reason": "fetch failed"
+    },
+    {
+      "id": "event-أسبوع-العطور",
+      "title": "أسبوع العطور",
+      "source_label": "Visit Saudi Summer Calendar PDF",
+      "source_method": "approved-source-row",
+      "source_url": "https://www.visitsaudi.com/content/dam/documents/saudi-calendar-ar.pdf",
+      "fetched": false,
+      "image": true,
+      "fetch_reason": "The operation was aborted due to timeout"
+    },
+    {
+      "id": "event-أسبوع-العقار-والمقاولات-12-16-يوليو-2026م",
+      "title": "أسبوع العقار والمقاولات 12- 16 يوليو 2026م",
+      "source_label": "Monsha'at All Events",
+      "source_method": "approved-source-row",
+      "source_url": "http://www.monshaat.gov.sa/ar/node/489022",
       "fetched": false,
       "image": false,
       "fetch_reason": "fetch failed"
     },
     {
-      "id": "event-منتدى-المرأة-الاقتصادي-2026م-بعنوان-من-التمكين-إلى-التأثير-الاقتصادي",
-      "title": "منتدى المرأة الاقتصادي 2026م بعنوان: من التمكين إلى التأثير الاقتصادي",
-      "source_label": "Asharqia Chamber Events",
+      "id": "event-أوركسترا-game-of-thrones",
+      "title": "أوركسترا Game of Thrones",
+      "source_label": "Visit Saudi Summer Calendar PDF",
+      "source_method": "official-page-meta",
+      "source_url": "https://www.visitsaudi.com/content/dam/documents/saudi-calendar-ar.pdf",
+      "fetched": true,
+      "image": true,
+      "fetch_reason": ""
+    },
+    {
+      "id": "event-أوركسترا-harry-potter",
+      "title": "أوركسترا Harry Potter",
+      "source_label": "Visit Saudi Summer Calendar PDF",
+      "source_method": "official-page-meta",
+      "source_url": "https://www.visitsaudi.com/content/dam/documents/saudi-calendar-ar.pdf",
+      "fetched": true,
+      "image": true,
+      "fetch_reason": ""
+    },
+    {
+      "id": "event-الأسبوع-الصيني",
+      "title": "الأسبوع الصيني",
+      "source_label": "Visit Saudi Summer Calendar PDF",
+      "source_method": "official-page-meta",
+      "source_url": "https://www.visitsaudi.com/content/dam/documents/saudi-calendar-ar.pdf",
+      "fetched": true,
+      "image": true,
+      "fetch_reason": ""
+    },
+    {
+      "id": "event-البرنامج-الصيفي-بجامعة-الجوف-2026",
+      "title": "البرنامج الصيفي بجامعة الجوف 2026",
+      "source_label": "Jouf University Summer Programs",
+      "source_method": "official-page-meta",
+      "source_url": "https://ju.edu.sa/ar/university%E2%80%99s-2026-summer-program",
+      "fetched": true,
+      "image": true,
+      "fetch_reason": ""
+    },
+    {
+      "id": "event-الحفلات-الغنائية",
+      "title": "الحفلات الغنائية",
+      "source_label": "Visit Saudi Summer Calendar PDF",
       "source_method": "approved-source-row",
-      "source_url": "https://www.chamber.org.sa/sites/Arabic/Events/ChamberEvents/Pages/ChamberEventDetails.aspx?ItemID=347",
+      "source_url": "https://www.visitsaudi.com/content/dam/documents/saudi-calendar-ar.pdf",
+      "fetched": false,
+      "image": true,
+      "fetch_reason": "The operation was aborted due to timeout"
+    },
+    {
+      "id": "event-اليوم-العالمي-لآيس-كريم-بالتعاون-مع-كلمشي",
+      "title": "اليوم العالمي لآيس كريم بالتعاون مع كلمشي",
+      "source_label": "Visit Saudi Summer Calendar PDF",
+      "source_method": "approved-source-row",
+      "source_url": "https://www.visitsaudi.com/content/dam/documents/saudi-calendar-ar.pdf",
+      "fetched": false,
+      "image": true,
+      "fetch_reason": "The operation was aborted due to timeout"
+    },
+    {
+      "id": "event-انطلاق-النادي-الصيفي-التاسع-لجامعة-القصيم",
+      "title": "انطلاق النادي الصيفي التاسع لجامعة القصيم",
+      "source_label": "Qassim University Events",
+      "source_method": "official-page-meta",
+      "source_url": "https://www.qu.edu.sa/events/%D8%A7%D9%86%D8%B7%D9%84%D8%A7%D9%82-%D8%A7%D9%84%D9%86%D8%A7%D8%AF%D9%8A-%D8%A7%D9%84%D8%B5%D9%8A%D9%81%D9%8A-%D8%A7%D9%84%D8%AA%D8%A7%D8%B3%D8%B9-%D9%84%D8%AC%D8%A7%D9%85%D8%B9%D8%A9-%D8%A7%D9%84/",
+      "fetched": true,
+      "image": true,
+      "fetch_reason": ""
+    },
+    {
+      "id": "event-برنامج-تطوير-القيادات-الأكاديمية-عن-بعد",
+      "title": "برنامج تطوير القيادات الأكاديمية عن بعد",
+      "source_label": "Umm Al-Qura University Events Center",
+      "source_method": "official-page-meta",
+      "source_url": "https://uqu.edu.sa/App/Events/41127",
+      "fetched": true,
+      "image": true,
+      "fetch_reason": ""
+    },
+    {
+      "id": "event-برندة",
+      "title": "برندة",
+      "source_label": "Visit Saudi Summer Calendar PDF",
+      "source_method": "approved-source-row",
+      "source_url": "https://www.visitsaudi.com/content/dam/documents/saudi-calendar-ar.pdf",
+      "fetched": false,
+      "image": true,
+      "fetch_reason": "The operation was aborted due to timeout"
+    },
+    {
+      "id": "event-بطولة-أبطال-المملكة-للشطرنج",
+      "title": "بطولة أبطال المملكة للشطرنج",
+      "source_label": "Visit Saudi Summer Calendar PDF",
+      "source_method": "official-page-meta",
+      "source_url": "https://www.visitsaudi.com/content/dam/documents/saudi-calendar-ar.pdf",
+      "fetched": true,
+      "image": true,
+      "fetch_reason": ""
+    },
+    {
+      "id": "event-بطولة-المملكة-للبلوت",
+      "title": "بطولة المملكة للبلوت",
+      "source_label": "Visit Saudi Summer Calendar PDF",
+      "source_method": "official-page-meta",
+      "source_url": "https://www.visitsaudi.com/content/dam/documents/saudi-calendar-ar.pdf",
+      "fetched": true,
+      "image": true,
+      "fetch_reason": ""
+    },
+    {
+      "id": "event-بوابة-المونديال-كأس-العالم-في-جدة",
+      "title": "بوابة المونديال – كأس العالم في جدة",
+      "source_label": "Visit Saudi Summer Calendar PDF",
+      "source_method": "approved-source-row",
+      "source_url": "https://www.visitsaudi.com/content/dam/documents/saudi-calendar-ar.pdf",
+      "fetched": false,
+      "image": true,
+      "fetch_reason": "The operation was aborted due to timeout"
+    },
+    {
+      "id": "event-بيوني-الشرف",
+      "title": "بيوني الشرف",
+      "source_label": "Visit Saudi Summer Calendar PDF",
+      "source_method": "official-page-meta",
+      "source_url": "https://www.visitsaudi.com/content/dam/documents/saudi-calendar-ar.pdf",
+      "fetched": true,
+      "image": true,
+      "fetch_reason": ""
+    },
+    {
+      "id": "event-جدة-بروميناد-fan-zone",
+      "title": "جدة بروميناد Fan Zone",
+      "source_label": "Visit Saudi Summer Calendar PDF",
+      "source_method": "approved-source-row",
+      "source_url": "https://www.visitsaudi.com/content/dam/documents/saudi-calendar-ar.pdf",
+      "fetched": false,
+      "image": false,
+      "fetch_reason": "The operation was aborted due to timeout"
+    },
+    {
+      "id": "event-دورة-اساسيات-المجهر-الالكتروني-الماسح-sem",
+      "title": "دورة اساسيات المجهر الالكتروني الماسح SEM",
+      "source_label": "Umm Al-Qura University Events Center",
+      "source_method": "official-page-meta",
+      "source_url": "https://uqu.edu.sa/App/Events/41009",
+      "fetched": true,
+      "image": true,
+      "fetch_reason": ""
+    },
+    {
+      "id": "event-دورة-الفحوصات-المكروبيولوجية-لمياه-الشرب-الأسس-العلمية-والتطبيقات-البحثي",
+      "title": "دورة الفحوصات المكروبيولوجية لمياه الشرب: الأسس العلمية والتطبيقات البحثية",
+      "source_label": "Umm Al-Qura University Events Center",
+      "source_method": "official-page-meta",
+      "source_url": "https://uqu.edu.sa/App/Events/41006",
+      "fetched": true,
+      "image": true,
+      "fetch_reason": ""
+    },
+    {
+      "id": "event-دورة-تحضير-البيئات-وتعريف-السلالات-البكتيرية",
+      "title": "دورة تحضير البيئات وتعريف السلالات البكتيرية",
+      "source_label": "Umm Al-Qura University Events Center",
+      "source_method": "official-page-meta",
+      "source_url": "https://uqu.edu.sa/App/Events/41007",
+      "fetched": true,
+      "image": true,
+      "fetch_reason": ""
+    },
+    {
+      "id": "event-دورة-تقنية-pcr-بالمعامل-الحيوية-الجزيئية",
+      "title": "دورة تقنية PCR بالمعامل الحيوية الجزيئية",
+      "source_label": "Umm Al-Qura University Events Center",
+      "source_method": "official-page-meta",
+      "source_url": "https://uqu.edu.sa/App/Events/41008",
+      "fetched": true,
+      "image": true,
+      "fetch_reason": ""
+    },
+    {
+      "id": "event-سكاي-فيلج",
+      "title": "سكاي فيلج",
+      "source_label": "Visit Saudi Summer Calendar PDF",
+      "source_method": "approved-source-row",
+      "source_url": "https://www.visitsaudi.com/content/dam/documents/saudi-calendar-ar.pdf",
+      "fetched": false,
+      "image": true,
+      "fetch_reason": "The operation was aborted due to timeout"
+    },
+    {
+      "id": "event-سوق-الثلاثاء-الشعبي",
+      "title": "سوق الثلاثاء الشعبي",
+      "source_label": "Visit Saudi Summer Calendar PDF",
+      "source_method": "official-page-meta",
+      "source_url": "https://www.visitsaudi.com/content/dam/documents/saudi-calendar-ar.pdf",
+      "fetched": true,
+      "image": true,
+      "fetch_reason": ""
+    },
+    {
+      "id": "event-شهادة-محترف-الأعمال-المعتمد-في-السكرتارية-التنفيذيةcbp-es",
+      "title": "شهادة محترف الأعمال المعتمد في السكرتارية التنفيذيةCBP-ES",
+      "source_label": "Umm Al-Qura University Events Center",
+      "source_method": "official-page-meta",
+      "source_url": "https://uqu.edu.sa/App/Events/41034",
+      "fetched": true,
+      "image": true,
+      "fetch_reason": ""
+    },
+    {
+      "id": "event-شهادة-محترف-الأعمال-المعتمد-في-تحفيز-الموظفين-cbp-em",
+      "title": "شهادة محترف الأعمال المعتمد في تحفيز الموظفين CBP-EM",
+      "source_label": "Umm Al-Qura University Events Center",
+      "source_method": "official-page-meta",
+      "source_url": "https://uqu.edu.sa/App/Events/41033",
+      "fetched": true,
+      "image": true,
+      "fetch_reason": ""
+    },
+    {
+      "id": "event-شهادة-مساعد-معتمد-في-إدارة-المشاريع-capm",
+      "title": "شهادة مساعد معتمد في إدارة المشاريع CAPM",
+      "source_label": "Umm Al-Qura University Events Center",
+      "source_method": "official-page-meta",
+      "source_url": "https://uqu.edu.sa/App/Events/41031",
+      "fetched": true,
+      "image": true,
+      "fetch_reason": ""
+    },
+    {
+      "id": "event-صندوق-أسامة-من-مخرج-ثمانية",
+      "title": "صندوق أسامة من مخرج ثمانية",
+      "source_label": "Visit Saudi Summer Calendar PDF",
+      "source_method": "approved-source-row",
+      "source_url": "https://www.visitsaudi.com/content/dam/documents/saudi-calendar-ar.pdf",
+      "fetched": false,
+      "image": true,
+      "fetch_reason": "The operation was aborted due to timeout"
+    },
+    {
+      "id": "event-صيف-غابة-رغدان-في-الباحة-2026",
+      "title": "صيف غابة رغدان في الباحة 2026",
+      "source_label": "Visit Saudi Summer Calendar PDF",
+      "source_method": "approved-source-row",
+      "source_url": "https://www.visitsaudi.com/content/dam/documents/saudi-calendar-ar.pdf",
+      "fetched": false,
+      "image": true,
+      "fetch_reason": "The operation was aborted due to timeout"
+    },
+    {
+      "id": "event-ضحكات-الرياض",
+      "title": "ضحكات الرياض",
+      "source_label": "Visit Saudi Summer Calendar PDF",
+      "source_method": "approved-source-row",
+      "source_url": "https://www.visitsaudi.com/content/dam/documents/saudi-calendar-ar.pdf",
+      "fetched": false,
+      "image": true,
+      "fetch_reason": "The operation was aborted due to timeout"
+    },
+    {
+      "id": "event-عمر-الجمل-حفلة-ستاند-أب-كوميدي",
+      "title": "عمر الجمل - حفلة ستاند أب كوميدي",
+      "source_label": "Visit Saudi Summer Calendar PDF",
+      "source_method": "approved-source-row",
+      "source_url": "https://www.visitsaudi.com/content/dam/documents/saudi-calendar-ar.pdf",
+      "fetched": false,
+      "image": true,
+      "fetch_reason": "The operation was aborted due to timeout"
+    },
+    {
+      "id": "event-عمليات-إدارة-الموارد-البشرية",
+      "title": "عمليات إدارة الموارد البشرية",
+      "source_label": "Qassim Chamber Events",
+      "source_method": "approved-source-row",
+      "source_url": "https://tc.qcc.org.sa/events/204",
+      "fetched": false,
+      "image": true,
+      "fetch_reason": "HTTP 403"
+    },
+    {
+      "id": "event-عيشوا-المونديال-مع-بنش-مارك-عبادي-الجوهر-أرينا",
+      "title": "عيشوا المونديال مع بنش مارك - عبادي الجوهر أرينا",
+      "source_label": "Visit Saudi Summer Calendar PDF",
+      "source_method": "official-page-meta",
+      "source_url": "https://www.visitsaudi.com/content/dam/documents/saudi-calendar-ar.pdf",
+      "fetched": true,
+      "image": true,
+      "fetch_reason": ""
+    },
+    {
+      "id": "event-فعالية-رمي-السهام",
+      "title": "فعالية رمي السهام",
+      "source_label": "Visit Saudi Summer Calendar PDF",
+      "source_method": "official-page-meta",
+      "source_url": "https://www.visitsaudi.com/content/dam/documents/saudi-calendar-ar.pdf",
+      "fetched": true,
+      "image": true,
+      "fetch_reason": ""
+    },
+    {
+      "id": "event-فعالية-سيّر",
+      "title": "فعالية سيّر",
+      "source_label": "Visit Saudi Summer Calendar PDF",
+      "source_method": "official-page-meta",
+      "source_url": "https://www.visitsaudi.com/content/dam/documents/saudi-calendar-ar.pdf",
+      "fetched": true,
+      "image": true,
+      "fetch_reason": ""
+    },
+    {
+      "id": "event-قرية-آل-ينفع",
+      "title": "قرية آل ينفع",
+      "source_label": "Visit Saudi Summer Calendar PDF",
+      "source_method": "approved-source-row",
+      "source_url": "https://www.visitsaudi.com/content/dam/documents/saudi-calendar-ar.pdf",
+      "fetched": false,
+      "image": true,
+      "fetch_reason": "terminated"
+    },
+    {
+      "id": "event-قرية-الأطاولة-التراثية",
+      "title": "قرية الأطاولة التراثية",
+      "source_label": "Visit Saudi Summer Calendar PDF",
+      "source_method": "official-page-meta",
+      "source_url": "https://www.visitsaudi.com/content/dam/documents/saudi-calendar-ar.pdf",
+      "fetched": true,
+      "image": true,
+      "fetch_reason": ""
+    },
+    {
+      "id": "event-قرية-الموسى-التراثية",
+      "title": "قرية الموسى التراثية",
+      "source_label": "Visit Saudi Summer Calendar PDF",
+      "source_method": "approved-source-row",
+      "source_url": "https://www.visitsaudi.com/content/dam/documents/saudi-calendar-ar.pdf",
+      "fetched": false,
+      "image": true,
+      "fetch_reason": "The operation was aborted due to timeout"
+    },
+    {
+      "id": "event-قصور-العسابلة",
+      "title": "قصور العسابلة",
+      "source_label": "Visit Saudi Summer Calendar PDF",
+      "source_method": "approved-source-row",
+      "source_url": "https://www.visitsaudi.com/content/dam/documents/saudi-calendar-ar.pdf",
+      "fetched": false,
+      "image": true,
+      "fetch_reason": "The operation was aborted due to timeout"
+    },
+    {
+      "id": "event-لقاءات-مراكز-دعم-المنشآت",
+      "title": "لقاءات مراكز دعم المنشآت",
+      "source_label": "Monsha'at All Events",
+      "source_method": "approved-source-row",
+      "source_url": "http://www.monshaat.gov.sa/ar/node/487334",
       "fetched": false,
       "image": false,
       "fetch_reason": "fetch failed"
+    },
+    {
+      "id": "event-لقاءات-مراكز-دعم-المنشآت-شهر-يوليو-2026م-مغلقة",
+      "title": "لقاءات مراكز دعم المنشآت - شهر يوليو 2026م (مغلقة)",
+      "source_label": "Monsha'at All Events",
+      "source_method": "approved-source-row",
+      "source_url": "http://www.monshaat.gov.sa/ar/node/487360",
+      "fetched": false,
+      "image": false,
+      "fetch_reason": "fetch failed"
+    },
+    {
+      "id": "event-متطلبات-نظام-إدارة-المرافق-iso-41001-للمنشآت-الصغيرة-والمتوسطة",
+      "title": "متطلبات نظام إدارة المرافق ISO 41001 للمنشآت الصغيرة والمتوسطة",
+      "source_label": "Jazan Chamber Events",
+      "source_method": "approved-source-row",
+      "source_url": "https://events.jazancci.org.sa/ar/events/mttlbat-nzam-idarh-almrafq-iso-41001-llmnshat-alsghyrh-walmtwsth-",
+      "fetched": false,
+      "image": true,
+      "fetch_reason": "fetch failed"
+    },
+    {
+      "id": "event-مزرعة-أعناب",
+      "title": "مزرعة أعناب",
+      "source_label": "Visit Saudi Summer Calendar PDF",
+      "source_method": "approved-source-row",
+      "source_url": "https://www.visitsaudi.com/content/dam/documents/saudi-calendar-ar.pdf",
+      "fetched": false,
+      "image": true,
+      "fetch_reason": "The operation was aborted due to timeout"
+    },
+    {
+      "id": "event-مزرعة-الليوان",
+      "title": "مزرعة الليوان",
+      "source_label": "Visit Saudi Summer Calendar PDF",
+      "source_method": "official-page-meta",
+      "source_url": "https://www.visitsaudi.com/content/dam/documents/saudi-calendar-ar.pdf",
+      "fetched": true,
+      "image": true,
+      "fetch_reason": ""
+    },
+    {
+      "id": "event-مزرعة-ركايب",
+      "title": "مزرعة ركايب",
+      "source_label": "Visit Saudi Summer Calendar PDF",
+      "source_method": "official-page-meta",
+      "source_url": "https://www.visitsaudi.com/content/dam/documents/saudi-calendar-ar.pdf",
+      "fetched": true,
+      "image": true,
+      "fetch_reason": ""
+    },
+    {
+      "id": "event-معرض-الحرف-والأعمال-اليدوية-2026",
+      "title": "معرض الحرف والأعمال اليدوية 2026",
+      "source_label": "Asharqia Chamber Events",
+      "source_method": "official-page-meta",
+      "source_url": "https://www.chamber.org.sa/sites/Arabic/Events/ChamberEvents/Pages/ChamberEventDetails.aspx?ItemID=343",
+      "fetched": true,
+      "image": false,
+      "fetch_reason": ""
+    },
+    {
+      "id": "event-معرض-الصيف-للفنون",
+      "title": "معرض الصيف للفنون",
+      "source_label": "Visit Saudi Summer Calendar PDF",
+      "source_method": "official-page-meta",
+      "source_url": "https://www.visitsaudi.com/content/dam/documents/saudi-calendar-ar.pdf",
+      "fetched": true,
+      "image": true,
+      "fetch_reason": ""
+    },
+    {
+      "id": "event-معرض-في-تتبّع-ذكريات-غامرة",
+      "title": "معرض في تتبّع ذكريات غامرة",
+      "source_label": "Visit Saudi Summer Calendar PDF",
+      "source_method": "approved-source-row",
+      "source_url": "https://www.visitsaudi.com/content/dam/documents/saudi-calendar-ar.pdf",
+      "fetched": false,
+      "image": true,
+      "fetch_reason": "The operation was aborted due to timeout"
+    },
+    {
+      "id": "event-معرض-قلب-البحر",
+      "title": "معرض قلب البحر",
+      "source_label": "Visit Saudi Summer Calendar PDF",
+      "source_method": "approved-source-row",
+      "source_url": "https://www.visitsaudi.com/content/dam/documents/saudi-calendar-ar.pdf",
+      "fetched": false,
+      "image": true,
+      "fetch_reason": "The operation was aborted due to timeout"
+    },
+    {
+      "id": "event-معرض-وظائف-2026",
+      "title": "معرض وظائف 2026",
+      "source_label": "Asharqia Chamber Events",
+      "source_method": "official-page-meta",
+      "source_url": "https://www.chamber.org.sa/sites/Arabic/Events/ChamberEvents/Pages/ChamberEventDetails.aspx?ItemID=344",
+      "fetched": true,
+      "image": false,
+      "fetch_reason": ""
+    },
+    {
+      "id": "event-ملتقى-المستجدين-1448هـ-بقسم-الفيزياء",
+      "title": "ملتقى المستجدين 1448هـ بقسم الفيزياء",
+      "source_label": "Umm Al-Qura University Events Center",
+      "source_method": "official-page-meta",
+      "source_url": "https://uqu.edu.sa/App/Events/41125",
+      "fetched": true,
+      "image": true,
+      "fetch_reason": ""
+    },
+    {
+      "id": "event-منطقة-مشجعي-كأس-العالم-2026",
+      "title": "منطقة مشجعي كأس العالم 2026",
+      "source_label": "Visit Saudi Summer Calendar PDF",
+      "source_method": "approved-source-row",
+      "source_url": "https://www.visitsaudi.com/content/dam/documents/saudi-calendar-ar.pdf",
+      "fetched": false,
+      "image": true,
+      "fetch_reason": "The operation was aborted due to timeout"
     }
   ],
   "failed": [
     {
-      "id": "event-ملتقى-الممارسات-الوقفية-في-نسخته-الخامسة-تحت-عنوان-التشريعات-المحفزة-لنم",
-      "title": "ملتقى الممارسات الوقفية في نسخته الخامسة تحت عنوان (التشريعات المحفزة لنمو الأوقاف وصرفها)",
-      "source_url": "https://www.chamber.org.sa/sites/Arabic/Events/ChamberEvents/Pages/ChamberEventDetails.aspx?ItemID=348",
+      "id": "event-abo-noghta-historic-castles-historic-tabab",
+      "title": "\"Abo Noghta Historic Castles - Historic Tabab \"",
+      "source_url": "https://discoveraseer.com/en/experiences/ksor-oklaaa-abonkt",
+      "reason": "HTTP 404"
+    },
+    {
+      "id": "event-adventure-camp-husaak",
+      "title": "Adventure camp-Husaak",
+      "source_url": "https://discoveraseer.com/en/experiences/mkhym-almghamrat-hosak",
+      "reason": "HTTP 404"
+    },
+    {
+      "id": "event-al-reef-park",
+      "title": "Al Reef Park",
+      "source_url": "https://discoveraseer.com/en/experiences/alrif",
+      "reason": "HTTP 404"
+    },
+    {
+      "id": "event-al-wadi-resort",
+      "title": "Al Wadi Resort",
+      "source_url": "https://discoveraseer.com/en/experiences/alwadi2026",
+      "reason": "HTTP 404"
+    },
+    {
+      "id": "event-al-yanfa-village",
+      "title": "Al Yanfa Village",
+      "source_url": "https://discoveraseer.com/en/experiences/kry-al-ynfaa",
+      "reason": "HTTP 404"
+    },
+    {
+      "id": "event-alliwan-farm",
+      "title": "AlLiwan Farm",
+      "source_url": "https://discoveraseer.com/en/experiences/mzraah-allyoan",
+      "reason": "HTTP 404"
+    },
+    {
+      "id": "event-aryash",
+      "title": "ARYASH",
+      "source_url": "https://discoveraseer.com/en/experiences/arysh",
+      "reason": "HTTP 404"
+    },
+    {
+      "id": "event-asian-indoor-and-martial-arts-games",
+      "title": "Asian Indoor and Martial Arts Games",
+      "source_url": "https://riyadh.sa/en/moment/events/item/event/30990",
       "reason": "fetch failed"
     },
     {
-      "id": "event-منتدى-المرأة-الاقتصادي-2026م-بعنوان-من-التمكين-إلى-التأثير-الاقتصادي",
-      "title": "منتدى المرأة الاقتصادي 2026م بعنوان: من التمكين إلى التأثير الاقتصادي",
-      "source_url": "https://www.chamber.org.sa/sites/Arabic/Events/ChamberEvents/Pages/ChamberEventDetails.aspx?ItemID=347",
+      "id": "event-asib-oasis",
+      "title": "Asib Oasis",
+      "source_url": "https://discoveraseer.com/en/experiences/asib",
+      "reason": "HTTP 404"
+    },
+    {
+      "id": "event-bio-middle-east-biome",
+      "title": "BIO Middle East (BIOME)",
+      "source_url": "https://riyadh.sa/en/moment/events/item/event/31002",
       "reason": "fetch failed"
+    },
+    {
+      "id": "event-bioni-al-sharaf",
+      "title": "Bioni Al sharaf",
+      "source_url": "https://discoveraseer.com/en/experiences/bioni",
+      "reason": "HTTP 404"
+    },
+    {
+      "id": "event-build-your-house-exhibition",
+      "title": "Build Your House exhibition",
+      "source_url": "https://riyadh.sa/en/moment/events/item/event/30946",
+      "reason": "fetch failed"
+    },
+    {
+      "id": "event-cat-show",
+      "title": "Cat Show",
+      "source_url": "https://riyadh.sa/en/moment/events/item/event/31009",
+      "reason": "fetch failed"
+    },
+    {
+      "id": "event-cfo-leadership-summit",
+      "title": "CFO Leadership Summit",
+      "source_url": "https://riyadh.sa/en/moment/events/item/event/30714",
+      "reason": "fetch failed"
+    },
+    {
+      "id": "event-cphi-middle-east",
+      "title": "CPHI Middle East",
+      "source_url": "https://riyadh.sa/en/moment/events/item/event/29305",
+      "reason": "fetch failed"
+    },
+    {
+      "id": "event-e3-customer-experience-conference",
+      "title": "E3 Customer Experience Conference",
+      "source_url": "https://riyadh.sa/en/moment/events/item/event/29987",
+      "reason": "fetch failed"
+    },
+    {
+      "id": "event-in-act-act-ix",
+      "title": "IN ACT - ACT IX",
+      "source_url": "https://www.visitsaudi.com/content/dam/documents/saudi-calendar-ar.pdf",
+      "reason": "The operation was aborted due to timeout"
+    },
+    {
+      "id": "event-in-act-anniversary-act-xi",
+      "title": "IN ACT ANNIVERSARY - ACT XI",
+      "source_url": "https://www.visitsaudi.com/content/dam/documents/saudi-calendar-ar.pdf",
+      "reason": "The operation was aborted due to timeout"
+    },
+    {
+      "id": "event-saudi-fm-clean",
+      "title": "Saudi FM & Clean",
+      "source_url": "https://www.big5constructsaudi.com/specialised-events/saudi-fm-clean-ksa/",
+      "reason": "HTTP 404"
+    },
+    {
+      "id": "event-world-cup-2026-fan-zone-at-kimpton-kafd",
+      "title": "World Cup 2026 Fan Zone at Kimpton KAFD",
+      "source_url": "https://riyadh.sa/en/moment/events/item/event/31091",
+      "reason": "fetch failed"
+    },
+    {
+      "id": "event-wrth-summer-art-craft-program",
+      "title": "Wrth Summer Art & Craft Program",
+      "source_url": "https://riyadh.sa/en/moment/events/item/event/31181",
+      "reason": "fetch failed"
+    },
+    {
+      "id": "event-أسبوع-العطور",
+      "title": "أسبوع العطور",
+      "source_url": "https://www.visitsaudi.com/content/dam/documents/saudi-calendar-ar.pdf",
+      "reason": "The operation was aborted due to timeout"
+    },
+    {
+      "id": "event-أسبوع-العقار-والمقاولات-12-16-يوليو-2026م",
+      "title": "أسبوع العقار والمقاولات 12- 16 يوليو 2026م",
+      "source_url": "http://www.monshaat.gov.sa/ar/node/489022",
+      "reason": "fetch failed"
+    },
+    {
+      "id": "event-الحفلات-الغنائية",
+      "title": "الحفلات الغنائية",
+      "source_url": "https://www.visitsaudi.com/content/dam/documents/saudi-calendar-ar.pdf",
+      "reason": "The operation was aborted due to timeout"
+    },
+    {
+      "id": "event-اليوم-العالمي-لآيس-كريم-بالتعاون-مع-كلمشي",
+      "title": "اليوم العالمي لآيس كريم بالتعاون مع كلمشي",
+      "source_url": "https://www.visitsaudi.com/content/dam/documents/saudi-calendar-ar.pdf",
+      "reason": "The operation was aborted due to timeout"
+    },
+    {
+      "id": "event-برندة",
+      "title": "برندة",
+      "source_url": "https://www.visitsaudi.com/content/dam/documents/saudi-calendar-ar.pdf",
+      "reason": "The operation was aborted due to timeout"
+    },
+    {
+      "id": "event-بوابة-المونديال-كأس-العالم-في-جدة",
+      "title": "بوابة المونديال – كأس العالم في جدة",
+      "source_url": "https://www.visitsaudi.com/content/dam/documents/saudi-calendar-ar.pdf",
+      "reason": "The operation was aborted due to timeout"
+    },
+    {
+      "id": "event-جدة-بروميناد-fan-zone",
+      "title": "جدة بروميناد Fan Zone",
+      "source_url": "https://www.visitsaudi.com/content/dam/documents/saudi-calendar-ar.pdf",
+      "reason": "The operation was aborted due to timeout"
+    },
+    {
+      "id": "event-سكاي-فيلج",
+      "title": "سكاي فيلج",
+      "source_url": "https://www.visitsaudi.com/content/dam/documents/saudi-calendar-ar.pdf",
+      "reason": "The operation was aborted due to timeout"
+    },
+    {
+      "id": "event-صندوق-أسامة-من-مخرج-ثمانية",
+      "title": "صندوق أسامة من مخرج ثمانية",
+      "source_url": "https://www.visitsaudi.com/content/dam/documents/saudi-calendar-ar.pdf",
+      "reason": "The operation was aborted due to timeout"
+    },
+    {
+      "id": "event-صيف-غابة-رغدان-في-الباحة-2026",
+      "title": "صيف غابة رغدان في الباحة 2026",
+      "source_url": "https://www.visitsaudi.com/content/dam/documents/saudi-calendar-ar.pdf",
+      "reason": "The operation was aborted due to timeout"
+    },
+    {
+      "id": "event-ضحكات-الرياض",
+      "title": "ضحكات الرياض",
+      "source_url": "https://www.visitsaudi.com/content/dam/documents/saudi-calendar-ar.pdf",
+      "reason": "The operation was aborted due to timeout"
+    },
+    {
+      "id": "event-عمر-الجمل-حفلة-ستاند-أب-كوميدي",
+      "title": "عمر الجمل - حفلة ستاند أب كوميدي",
+      "source_url": "https://www.visitsaudi.com/content/dam/documents/saudi-calendar-ar.pdf",
+      "reason": "The operation was aborted due to timeout"
+    },
+    {
+      "id": "event-عمليات-إدارة-الموارد-البشرية",
+      "title": "عمليات إدارة الموارد البشرية",
+      "source_url": "https://tc.qcc.org.sa/events/204",
+      "reason": "HTTP 403"
+    },
+    {
+      "id": "event-قرية-آل-ينفع",
+      "title": "قرية آل ينفع",
+      "source_url": "https://www.visitsaudi.com/content/dam/documents/saudi-calendar-ar.pdf",
+      "reason": "terminated"
+    },
+    {
+      "id": "event-قرية-الموسى-التراثية",
+      "title": "قرية الموسى التراثية",
+      "source_url": "https://www.visitsaudi.com/content/dam/documents/saudi-calendar-ar.pdf",
+      "reason": "The operation was aborted due to timeout"
+    },
+    {
+      "id": "event-قصور-العسابلة",
+      "title": "قصور العسابلة",
+      "source_url": "https://www.visitsaudi.com/content/dam/documents/saudi-calendar-ar.pdf",
+      "reason": "The operation was aborted due to timeout"
+    },
+    {
+      "id": "event-لقاءات-مراكز-دعم-المنشآت",
+      "title": "لقاءات مراكز دعم المنشآت",
+      "source_url": "http://www.monshaat.gov.sa/ar/node/487334",
+      "reason": "fetch failed"
+    },
+    {
+      "id": "event-لقاءات-مراكز-دعم-المنشآت-شهر-يوليو-2026م-مغلقة",
+      "title": "لقاءات مراكز دعم المنشآت - شهر يوليو 2026م (مغلقة)",
+      "source_url": "http://www.monshaat.gov.sa/ar/node/487360",
+      "reason": "fetch failed"
+    },
+    {
+      "id": "event-متطلبات-نظام-إدارة-المرافق-iso-41001-للمنشآت-الصغيرة-والمتوسطة",
+      "title": "متطلبات نظام إدارة المرافق ISO 41001 للمنشآت الصغيرة والمتوسطة",
+      "source_url": "https://events.jazancci.org.sa/ar/events/mttlbat-nzam-idarh-almrafq-iso-41001-llmnshat-alsghyrh-walmtwsth-",
+      "reason": "fetch failed"
+    },
+    {
+      "id": "event-مزرعة-أعناب",
+      "title": "مزرعة أعناب",
+      "source_url": "https://www.visitsaudi.com/content/dam/documents/saudi-calendar-ar.pdf",
+      "reason": "The operation was aborted due to timeout"
+    },
+    {
+      "id": "event-معرض-في-تتبّع-ذكريات-غامرة",
+      "title": "معرض في تتبّع ذكريات غامرة",
+      "source_url": "https://www.visitsaudi.com/content/dam/documents/saudi-calendar-ar.pdf",
+      "reason": "The operation was aborted due to timeout"
+    },
+    {
+      "id": "event-معرض-قلب-البحر",
+      "title": "معرض قلب البحر",
+      "source_url": "https://www.visitsaudi.com/content/dam/documents/saudi-calendar-ar.pdf",
+      "reason": "The operation was aborted due to timeout"
+    },
+    {
+      "id": "event-منطقة-مشجعي-كأس-العالم-2026",
+      "title": "منطقة مشجعي كأس العالم 2026",
+      "source_url": "https://www.visitsaudi.com/content/dam/documents/saudi-calendar-ar.pdf",
+      "reason": "The operation was aborted due to timeout"
     }
   ]
 }

@@ -1,13 +1,15 @@
 # EventLive Visit Saudi Image Identity Report
 
-- generated_at: 2026-09-26T07:56:08.834Z
+- generated_at: 2026-09-27T08:38:57.527Z
 - pdf_crop_assignments: 39
-- verified: 38
-- struck: 1
-- slots_seen_this_cycle: 40
+- verified: 36
+- struck: 3
+- slots_seen_this_cycle: 38
 
 ## Struck (fell back to generated cover)
 
+- خالد جواد ايف في جدة (visit-saudi-summer-2026-p008-bottom-right.jpg) - slot-vacated - no dated card currently occupies page 8 bottom-right of https://www.visitsaudi.com/content/dam/documents/saudi-calendar-ar.pdf
+- صالح النواوي، سيف زغموري، عبدا صبيح ، طلال الشيخي في Six Flags (visit-saudi-summer-2026-p055-top-left.jpg) - slot-vacated - no dated card currently occupies page 55 top-left of https://www.visitsaudi.com/content/dam/documents/saudi-calendar-ar.pdf
 - ألف وواحد (visit-saudi-summer-2026-p063-bottom-left.jpg) - identity-mismatch - page 63 bottom-left is now "وقف! عرض نمر الكوميدي المباشر في الرياض"
 
 ## Verified
@@ -33,8 +35,6 @@
 - سيرك فونتانا (visit-saudi-summer-2026-p052-bottom-left.jpg)
 - دوري الملوك MENA (visit-saudi-summer-2026-p053-top-right.jpg)
 - كأس الخليج (visit-saudi-summer-2026-p007-bottom-right.jpg)
-- خالد جواد ايف في جدة (visit-saudi-summer-2026-p008-bottom-right.jpg)
-- صالح النواوي، سيف زغموري، عبدا صبيح ، طلال الشيخي في Six Flags (visit-saudi-summer-2026-p055-top-left.jpg)
 - طوني أبو جودة في الرياض (visit-saudi-summer-2026-p061-bottom-left.jpg)
 - بي إف إل مينا 11 - نصف النهائي في الرياض (visit-saudi-summer-2026-p062-top-right.jpg)
 - IN ACT - ACT X (visit-saudi-summer-2026-p062-top-left.jpg)

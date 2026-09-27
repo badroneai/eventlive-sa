@@ -1,6 +1,6 @@
 {
   "schema": "eventlive.source-strategic-platform-radar.v1",
-  "generated_at": "2026-09-25T22:49:08.023Z",
+  "generated_at": "2026-09-27T08:19:01.603Z",
   "policy": {
     "allowed_use": "official source evidence refresh, API-surface mapping, partnership prioritization, extractor backlog decisions",
     "disallowed_use": "direct catalog publication without official confirmation and duplicate review"
@@ -256,11 +256,11 @@
         {
           "url": "https://www.visitsaudi.com/bin/api/v3/events?locale=ar",
           "status": 200,
-          "bytes": 99408,
+          "bytes": 96236,
           "classification": "reachable",
           "summary": {
             "parse_ok": true,
-            "item_count": 30,
+            "item_count": 29,
             "sample_titles": [
               "معرض اللغة العربية للطفل",
               "معرض اللغة العربية 28",
@@ -274,11 +274,11 @@
         {
           "url": "https://www.visitsaudi.com/bin/api/v3/events?locale=en",
           "status": 200,
-          "bytes": 103450,
+          "bytes": 100214,
           "classification": "reachable",
           "summary": {
             "parse_ok": true,
-            "item_count": 30,
+            "item_count": 29,
             "sample_titles": [
               "Arabic Language Exhibition for kids",
               "Arabic Language Exhibition 28",

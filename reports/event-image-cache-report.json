@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-26T08:02:58.717Z",
+  "generated_at": "2026-09-27T08:47:49.957Z",
   "events_file": "dist/events.json",
   "manifest": "data/event_image_cache_manifest.json",
   "image_dir": "dist/assets/event-images",
@@ -9,7 +9,7 @@
     "fetched": 0,
     "reused": 497,
     "failed": 3,
-    "skipped_recent_failures": 3,
+    "skipped_recent_failures": 0,
     "remembered_failures": 26
   },
   "fetched": [],
@@ -22,11 +22,6 @@
     {
       "source_url": "https://music.moc.gov.sa/-/media/Project/Ministries/Moc/Events/TPA-events/jjjjj.png",
       "file": "dist/assets/event-images/sitar-7eda68541c.png",
-      "events": 1
-    },
-    {
-      "source_url": "https://music.moc.gov.sa/-/media/Project/Ministries/Moc/Events/ADC-events/test32.png",
-      "file": "dist/assets/event-images/the-architecture-and-design-caf-adeabf4e32.png",
       "events": 1
     },
     {
@@ -317,7 +312,7 @@
     {
       "source_url": "https://uqu.edu.sa/assets/images/uqu-gate.jpeg",
       "file": "dist/assets/event-images/الشهادة-الدولية-للحاسب-والإنترنت-ic3-a46ba6d2eb.jpg",
-      "events": 97
+      "events": 100
     },
     {
       "source_url": "https://scth.scene7.com/is/image/scth/buraydah-dates-carnival-qassim?wid=1400&hei=788&fit=constrain&fmt=webp",
@@ -600,89 +595,9 @@
       "events": 1
     },
     {
-      "source_url": "https://www.ithra.com/application/files/cache/thumbnails/dd9d446375f768a797daf7a6f82fb41b.png",
-      "file": "dist/assets/event-images/تحرك-مع-بريدي-553e379ea0.png",
-      "events": 1
-    },
-    {
-      "source_url": "https://www.ithra.com/application/files/cache/thumbnails/20ead83b88059f947d00a3e1e483293d.png",
-      "file": "dist/assets/event-images/تحدي-مستحيل-bf3a2a7a16.png",
-      "events": 1
-    },
-    {
-      "source_url": "https://www.ithra.com/application/files/cache/thumbnails/f8bc7c6ad735d50dc47358a64cdf5692.png",
-      "file": "dist/assets/event-images/ارمي-تلك-السكاكين-بعيداً-و-احملني-34ac8132a0.png",
-      "events": 1
-    },
-    {
-      "source_url": "https://www.ithra.com/application/files/cache/thumbnails/827f262cf8f0f4e073043a46e163fcb0.png",
-      "file": "dist/assets/event-images/الوجهة-56fc262ed3.png",
-      "events": 1
-    },
-    {
-      "source_url": "https://www.ithra.com/application/files/cache/thumbnails/e170d04e057f9c11bc84319f58e0e549.png",
-      "file": "dist/assets/event-images/الفارس-عديم-الاسم-1965dbb875.png",
-      "events": 1
-    },
-    {
-      "source_url": "https://www.ithra.com/application/files/cache/thumbnails/6531fbab4f228797fa58b5c9440cba0f.png",
-      "file": "dist/assets/event-images/الأصوات-السعودية-الجديدة-e6ad1d417f.png",
-      "events": 1
-    },
-    {
-      "source_url": "https://www.ithra.com/application/files/cache/thumbnails/ed57a8160094b58fb3e47c62c1c5b23f.png",
-      "file": "dist/assets/event-images/مجهول-6c6a1d920f.png",
-      "events": 1
-    },
-    {
-      "source_url": "https://www.ithra.com/application/files/cache/thumbnails/b0c6840a1555ad3d9c5d287e22a84d16.png",
-      "file": "dist/assets/event-images/الطاقة-c4a749b1c7.png",
-      "events": 1
-    },
-    {
-      "source_url": "https://www.ithra.com/application/files/cache/thumbnails/0e44cd0bcffa044675c1264110ab002f.png",
-      "file": "dist/assets/event-images/green-seasons-24be630cc4.png",
-      "events": 1
-    },
-    {
-      "source_url": "https://www.ithra.com/application/files/cache/thumbnails/435dae709d5ba78a2ff1b36d0c1531d1.png",
-      "file": "dist/assets/event-images/ملهم-من-رووتنا-a38041a760.png",
-      "events": 1
-    },
-    {
-      "source_url": "https://www.ithra.com/application/files/cache/thumbnails/4884b5806bb5c6cfe506e2af8d95bc40.png",
-      "file": "dist/assets/event-images/power-grid-03830233d5.png",
-      "events": 1
-    },
-    {
-      "source_url": "https://www.ithra.com/application/files/cache/thumbnails/d46b6c3b4f67a60cb0123830e546297a.png",
-      "file": "dist/assets/event-images/ألوان-الطاقة-b451d0afb3.png",
-      "events": 1
-    },
-    {
-      "source_url": "https://www.ithra.com/application/files/cache/thumbnails/23904597be8da2c948fed03878533c5c.png",
-      "file": "dist/assets/event-images/إفتح-المسابقة-1c8789d512.png",
-      "events": 1
-    },
-    {
-      "source_url": "https://www.ithra.com/application/files/cache/thumbnails/16624d8908b9a37d4e0d4b24d7b39674.png",
-      "file": "dist/assets/event-images/الموكب-العسكري-125e3b6194.png",
-      "events": 1
-    },
-    {
-      "source_url": "https://www.ithra.com/application/files/cache/thumbnails/216e7c15e13f139bae21393c3fdd0594.png",
-      "file": "dist/assets/event-images/sing-along-for-saudi-0aca6744ce.png",
-      "events": 1
-    },
-    {
       "source_url": "https://dhahranexpo.com.sa/userfiles/clients/G3_24052026142116.jpg",
       "file": "dist/assets/event-images/offshore-technology-innovation-technical-conference-expo-offshore-arab-46911ebc89.jpg",
       "events": 15
-    },
-    {
-      "source_url": "https://hayyjameel.org/wp-content/uploads/2026/06/DSC07665-scaled-e1781701744946-1100x500.jpg",
-      "file": "dist/assets/event-images/hayy-markets-the-bakers-market-saudi-national-day-edition-7f94bf67f2.jpg",
-      "events": 1
     },
     {
       "source_url": "https://s7g10.scene7.com/is/image/rcu/qissa-bi-qissa?$Responsive$&fit=stretch&fmt=webp&wid=1920",
@@ -1375,8 +1290,58 @@
       "events": 1
     },
     {
+      "source_url": "https://hayyjameel.org/wp-content/uploads/2026/06/DSC07665-scaled-e1781701744946-1100x500.jpg",
+      "file": "dist/assets/event-images/hayy-markets-the-bakers-market-saudi-national-day-edition-7f94bf67f2.jpg",
+      "events": 1
+    },
+    {
+      "source_url": "https://www.ithra.com/application/files/cache/thumbnails/216e7c15e13f139bae21393c3fdd0594.png",
+      "file": "dist/assets/event-images/sing-along-for-saudi-0aca6744ce.png",
+      "events": 1
+    },
+    {
+      "source_url": "https://www.ithra.com/application/files/cache/thumbnails/16624d8908b9a37d4e0d4b24d7b39674.png",
+      "file": "dist/assets/event-images/الموكب-العسكري-125e3b6194.png",
+      "events": 1
+    },
+    {
       "source_url": "https://www.ithra.com/application/files/cache/thumbnails/1c1ed3a6e38f179efafaaf7a3305f1fe.png",
       "file": "dist/assets/event-images/حلقة-العمل-العربية-السعودية-0eba016bd4.png",
+      "events": 1
+    },
+    {
+      "source_url": "https://www.ithra.com/application/files/cache/thumbnails/ed57a8160094b58fb3e47c62c1c5b23f.png",
+      "file": "dist/assets/event-images/مجهول-6c6a1d920f.png",
+      "events": 1
+    },
+    {
+      "source_url": "https://www.ithra.com/application/files/cache/thumbnails/b0c6840a1555ad3d9c5d287e22a84d16.png",
+      "file": "dist/assets/event-images/الطاقة-c4a749b1c7.png",
+      "events": 1
+    },
+    {
+      "source_url": "https://www.ithra.com/application/files/cache/thumbnails/0e44cd0bcffa044675c1264110ab002f.png",
+      "file": "dist/assets/event-images/green-seasons-24be630cc4.png",
+      "events": 1
+    },
+    {
+      "source_url": "https://www.ithra.com/application/files/cache/thumbnails/435dae709d5ba78a2ff1b36d0c1531d1.png",
+      "file": "dist/assets/event-images/ملهم-من-رووتنا-a38041a760.png",
+      "events": 1
+    },
+    {
+      "source_url": "https://www.ithra.com/application/files/cache/thumbnails/4884b5806bb5c6cfe506e2af8d95bc40.png",
+      "file": "dist/assets/event-images/power-grid-03830233d5.png",
+      "events": 1
+    },
+    {
+      "source_url": "https://www.ithra.com/application/files/cache/thumbnails/d46b6c3b4f67a60cb0123830e546297a.png",
+      "file": "dist/assets/event-images/ألوان-الطاقة-b451d0afb3.png",
+      "events": 1
+    },
+    {
+      "source_url": "https://www.ithra.com/application/files/cache/thumbnails/23904597be8da2c948fed03878533c5c.png",
+      "file": "dist/assets/event-images/إفتح-المسابقة-1c8789d512.png",
       "events": 1
     },
     {
@@ -1395,8 +1360,38 @@
       "events": 1
     },
     {
+      "source_url": "https://www.ithra.com/application/files/cache/thumbnails/6531fbab4f228797fa58b5c9440cba0f.png",
+      "file": "dist/assets/event-images/الأصوات-السعودية-الجديدة-e6ad1d417f.png",
+      "events": 1
+    },
+    {
+      "source_url": "https://www.ithra.com/application/files/cache/thumbnails/e170d04e057f9c11bc84319f58e0e549.png",
+      "file": "dist/assets/event-images/الفارس-عديم-الاسم-1965dbb875.png",
+      "events": 1
+    },
+    {
+      "source_url": "https://www.ithra.com/application/files/cache/thumbnails/827f262cf8f0f4e073043a46e163fcb0.png",
+      "file": "dist/assets/event-images/الوجهة-56fc262ed3.png",
+      "events": 1
+    },
+    {
+      "source_url": "https://www.ithra.com/application/files/cache/thumbnails/f8bc7c6ad735d50dc47358a64cdf5692.png",
+      "file": "dist/assets/event-images/ارمي-تلك-السكاكين-بعيداً-و-احملني-34ac8132a0.png",
+      "events": 1
+    },
+    {
+      "source_url": "https://www.ithra.com/application/files/cache/thumbnails/20ead83b88059f947d00a3e1e483293d.png",
+      "file": "dist/assets/event-images/تحدي-مستحيل-bf3a2a7a16.png",
+      "events": 1
+    },
+    {
       "source_url": "https://www.ithra.com/application/files/cache/thumbnails/9d3175ea3a83d83e2234111d6f27a478.png",
       "file": "dist/assets/event-images/فكر-مثل-الحشد-e4ea13d620.png",
+      "events": 1
+    },
+    {
+      "source_url": "https://www.ithra.com/application/files/cache/thumbnails/dd9d446375f768a797daf7a6f82fb41b.png",
+      "file": "dist/assets/event-images/تحرك-مع-بريدي-553e379ea0.png",
       "events": 1
     },
     {
@@ -2498,62 +2493,41 @@
       "source_url": "https://discoveraseer.com/en/img/asset/YXNzZXRzL2V4cGVyaWVuY2UvZGppXzA4MTItZW5oYW5jZWQtbnItKDEpLmpwZWc/dji_0812-enhanced-nr-%281%29.jpeg?w=1024&fm=webp&s=b2e697eaa06bcd7fb5b0a48a99255bfa",
       "file": "dist/assets/event-images/نفَس-d4fdeb01d9.webp",
       "events": 1
+    },
+    {
+      "source_url": "https://discoveraseer.com/en/img/asset/YXNzZXRzL2V4cGVyaWVuY2UvbW50Z2FhLWFsb2FkeS05LmpwZWc/mntgaa-aloady-9.jpeg?w=1024&fm=webp&s=3eb9e2fa555285d003f6023ca81dac83",
+      "file": "dist/assets/event-images/منتجع-الوادي-9aab1000ed.webp",
+      "events": 1
     }
   ],
   "rejected_removed": [],
   "missing_removed": [],
-  "skipped_recent_failures": [
-    {
-      "source_url": "https://s7g10.scene7.com/is/image/rcu/fei2:landscape-16x9?$Responsive$&fit=stretch&fmt=webp&wid=1920",
-      "events": 1,
-      "reason": "HTTP 403",
-      "failure_kind": "access-denied",
-      "retry_after": "2026-09-26T23:32:36.714Z",
-      "skipped": true
-    },
-    {
-      "source_url": "https://api.riyadh.sa/sites/default/files/styles/medium/public/2026-07/er%20%2859%29.jpg?itok=a33APdGm",
-      "events": 1,
-      "reason": "not-image text/html; charset=utf-8",
-      "failure_kind": "source-returned-html",
-      "retry_after": "2026-09-26T23:32:36.714Z",
-      "skipped": true
-    },
-    {
-      "source_url": "https://cdn.rfecc.sa/wp-content/uploads/mec/qr_898ea2449274454e42895b52b18c6f68.png",
-      "events": 1,
-      "reason": "HTTP 403",
-      "failure_kind": "access-denied",
-      "retry_after": "2026-09-26T23:32:36.714Z",
-      "skipped": true
-    }
-  ],
+  "skipped_recent_failures": [],
   "failed": [
     {
+      "source_url": "https://cdn.rfecc.sa/wp-content/uploads/mec/qr_898ea2449274454e42895b52b18c6f68.png",
+      "events": 1,
+      "reason": "HTTP 403",
+      "failure_kind": "access-denied",
+      "retry_after": "2026-09-28T08:47:49.957Z"
+    },
+    {
       "source_url": "https://s7g10.scene7.com/is/image/rcu/fei2:landscape-16x9?$Responsive$&fit=stretch&fmt=webp&wid=1920",
       "events": 1,
       "reason": "HTTP 403",
       "failure_kind": "access-denied",
-      "retry_after": "2026-09-26T23:32:36.714Z",
-      "skipped": true
+      "retry_after": "2026-09-28T08:47:49.957Z"
     },
     {
       "source_url": "https://api.riyadh.sa/sites/default/files/styles/medium/public/2026-07/er%20%2859%29.jpg?itok=a33APdGm",
       "events": 1,
       "reason": "not-image text/html; charset=utf-8",
       "failure_kind": "source-returned-html",
-      "retry_after": "2026-09-26T23:32:36.714Z",
-      "skipped": true
-    },
-    {
-      "source_url": "https://cdn.rfecc.sa/wp-content/uploads/mec/qr_898ea2449274454e42895b52b18c6f68.png",
-      "events": 1,
-      "reason": "HTTP 403",
-      "failure_kind": "access-denied",
-      "retry_after": "2026-09-26T23:32:36.714Z",
-      "skipped": true
+      "retry_after": "2026-09-28T08:47:49.957Z"
     }
   ],
-  "requires_rebuild": false,
-  "rebuild_reasons": []
+  "requires_rebuild": true,
+  "rebuild_reasons": [
+    "new-failures:3"
+  ]
 }
