@@ -1,18 +1,18 @@
 {
-  "published_at": "2026-09-27T08:38:54.075Z",
+  "published_at": "2026-09-28T09:12:59.308Z",
   "dry_run": false,
   "include_partner": true,
   "source_candidates": "data/source_candidates.json",
   "events_catalog": "data/events_catalog.json",
-  "candidates_seen": 441,
+  "candidates_seen": 444,
   "totals": {
-    "candidates_seen": 441,
-    "published": 3,
-    "linked_existing": 400,
-    "blocked": 38,
-    "duplicate_review_alerts": 6,
+    "candidates_seen": 444,
+    "published": 8,
+    "linked_existing": 399,
+    "blocked": 37,
+    "duplicate_review_alerts": 5,
     "category_fallback_alerts": 0,
-    "reconciled": 403,
+    "reconciled": 407,
     "session_windows_reconciled": 0
   },
   "session_window_changes": [],
@@ -22,23 +22,6 @@
   "canonical_event_ids_remapped": 0,
   "canonical_event_id_remaps": [],
   "duplicate_review_alerts": [
-    {
-      "kind": "exact-title-city-source-conflict",
-      "candidate_id": "candidate-visit-saudi-seasons-ashjar-farm-20260429-76bf7a0e",
-      "possible_event_id": "event-ashjar-farm",
-      "conflict_fields": [
-        "source",
-        "venue"
-      ],
-      "title_key": "ashjar farm",
-      "venue_key": "aseer",
-      "candidate_source": "visitsaudi.com",
-      "existing_source": "discoveraseer.com",
-      "candidate_starts_at": "2026-04-29T09:00:00+03:00",
-      "existing_starts_at": "2026-04-29T09:00:00+03:00",
-      "date_gap_days": 0,
-      "start_date_drift_days": 0
-    },
     {
       "kind": "fuzzy-title-venue-date-window",
       "candidate_id": "candidate-dhahran-expo-calendar-the-egyptian-products-exhibition-20260921-18d15b29",
@@ -128,19 +111,44 @@
   ],
   "published": [
     {
-      "candidate_id": "candidate-umm-al-qura-events-دعوة-لحضور-فعاليات-الاحتفال-باليوم-الوطني-السعودي-ال96-بكلية-الإدارة-وال-20260927-dc02dbcf",
-      "event_id": "event-دعوة-لحضور-فعاليات-الاحتفال-باليوم-الوطني-السعودي-ال96-بكلية-الإدارة-وال",
-      "title": "دعوة لحضور فعاليات الاحتفال باليوم الوطني السعودي ال96 بكلية الإدارة والاقتصاد"
+      "candidate_id": "candidate-umm-al-qura-events-الذكاء-الاصطناعي-التوليدي-في-التعليم-تطبيقات-واخلاقيات-20260928-ff4d2ecf",
+      "event_id": "event-الذكاء-الاصطناعي-التوليدي-في-التعليم-تطبيقات-واخلاقيات",
+      "title": "الذكاء الاصطناعي التوليدي في التعليم-تطبيقات واخلاقيات"
     },
     {
-      "candidate_id": "candidate-umm-al-qura-events-قراءة-تاريخية-في-الأنظمة-السعودية-20260927-ba043cdf",
-      "event_id": "event-قراءة-تاريخية-في-الأنظمة-السعودية",
-      "title": "قراءة تاريخية في الأنظمة السعودية"
+      "candidate_id": "candidate-umm-al-qura-events-دورة-تدريبية-بعنوان-الابتكار-باستخدام-الذكاء-الاصطناعي-20260928-58e9536d",
+      "event_id": "event-دورة-تدريبية-بعنوان-الابتكار-باستخدام-الذكاء-الاصطناعي",
+      "title": "دورة تدريبية بعنوان (الابتكار باستخدام الذكاء الاصطناعي)"
     },
     {
-      "candidate_id": "candidate-umm-al-qura-events-أساسيات-الأمن-السيبراني-في-البيئة-الجامعية-20260927-2be16141",
-      "event_id": "event-أساسيات-الأمن-السيبراني-في-البيئة-الجامعية",
-      "title": "أساسيات الأمن السيبراني في البيئة الجامعية"
+      "candidate_id": "candidate-umm-al-qura-events-ورشة-عمل-بعنوان-من-سؤال-إلى-اكتشاف-ابدأ-رحلتك-البحثية-20260930-ea06a1e0",
+      "event_id": "event-ورشة-عمل-بعنوان-من-سؤال-إلى-اكتشاف-ابدأ-رحلتك-البحثية",
+      "title": "ورشة عمل بعنوان من سؤال إلى اكتشاف ابدأ رحلتك البحثية"
+    },
+    {
+      "candidate_id": "candidate-ithra-events-mom-through-my-eyes-arabic-20261003-e414ead2",
+      "event_id": "event-mom-through-my-eyes-arabic",
+      "title": "Mom through my eyes (Arabic)"
+    },
+    {
+      "candidate_id": "candidate-ithra-events-mom-through-my-eyes-english-20261017-bf73d1ec",
+      "event_id": "event-mom-through-my-eyes-english",
+      "title": "Mom Through My Eyes (English)"
+    },
+    {
+      "candidate_id": "candidate-experience-alula-events-stargazing-at-alula-fort-20261106-f035d3c8",
+      "event_id": "event-stargazing-at-alula-fort",
+      "title": "Stargazing at AlUla Fort"
+    },
+    {
+      "candidate_id": "candidate-experience-alula-events-sunset-stillness-meditation-sound-immersion-20261114-7f9f2765",
+      "event_id": "event-sunset-stillness-meditation-sound-immersion",
+      "title": "Sunset Stillness: Meditation & Sound Immersion"
+    },
+    {
+      "candidate_id": "candidate-experience-alula-events-leonid-meteor-shower-at-jabal-ikmah-20261115-642f6c68",
+      "event_id": "event-leonid-meteor-shower-at-jabal-ikmah",
+      "title": "Leonid Meteor Shower at Jabal Ikmah"
     }
   ],
   "linked_existing": [
@@ -238,18 +246,6 @@
       "candidate_id": "candidate-misk-hub-programs-misk-local-traineeship-program-20260401-200b6490",
       "event_id": "event-misk-local-traineeship-program",
       "title": "Misk Local Traineeship Program",
-      "reason": "already linked to catalog event"
-    },
-    {
-      "candidate_id": "candidate-visit-saudi-calendar-pdf-أشجار-20260429-4a38d19e",
-      "event_id": "event-أشجار",
-      "title": "أشجار",
-      "reason": "already linked to catalog event"
-    },
-    {
-      "candidate_id": "candidate-discover-aseer-events-ashjar-farm-20260429-04044263",
-      "event_id": "event-ashjar-farm",
-      "title": "Ashjar Farm",
       "reason": "already linked to catalog event"
     },
     {
@@ -781,12 +777,6 @@
       "reason": "already linked to catalog event"
     },
     {
-      "candidate_id": "candidate-visit-saudi-calendar-pdf-الدوري-السعودي-للرياضات-الالكترونية-القتالية-20260910-4a38d19e",
-      "event_id": "event-الدوري-السعودي-للرياضات-الالكترونية-القتالية",
-      "title": "الدوري السعودي للرياضات الالكترونية القتالية",
-      "reason": "already linked to catalog event"
-    },
-    {
       "candidate_id": "candidate-hayy-jameel-events-hayy-explorers-as-told-by-the-land-constructed-worlds-20260910-5d727028",
       "event_id": "event-hayy-explorers-in-september-as-told-by-the-land-constructed-worlds",
       "title": "Hayy Explorers | As Told by the Land: Constructed Worlds",
@@ -913,6 +903,18 @@
       "reason": "already linked to catalog event"
     },
     {
+      "candidate_id": "candidate-umm-al-qura-events-دعوة-لحضور-فعاليات-الاحتفال-باليوم-الوطني-السعودي-ال96-بكلية-الإدارة-وال-20260927-dc02dbcf",
+      "event_id": "event-دعوة-لحضور-فعاليات-الاحتفال-باليوم-الوطني-السعودي-ال96-بكلية-الإدارة-وال",
+      "title": "دعوة لحضور فعاليات الاحتفال باليوم الوطني السعودي ال96 بكلية الإدارة والاقتصاد",
+      "reason": "already linked to catalog event"
+    },
+    {
+      "candidate_id": "candidate-umm-al-qura-events-فعاليات-الكلية-لمناسبة-اليوم-الوطني-96-20260927-ba043cdf",
+      "event_id": "event-قراءة-تاريخية-في-الأنظمة-السعودية",
+      "title": "فعاليات الكلية لمناسبة اليوم الوطني 96",
+      "reason": "already linked to catalog event"
+    },
+    {
       "candidate_id": "candidate-riyadh-city-events-the-saudi-food-show-20260927-368d6055",
       "event_id": "event-the-saudi-food-show",
       "title": "The Saudi Food Show",
@@ -955,30 +957,6 @@
       "reason": "already linked to catalog event"
     },
     {
-      "candidate_id": "candidate-ithra-events-open-studio-3d-printer-20260928-95155c11",
-      "event_id": "event-open-studio-3d-printer",
-      "title": "Open Studio: 3D printer",
-      "reason": "already linked to catalog event"
-    },
-    {
-      "candidate_id": "candidate-ithra-events-open-studio-dtf-printer-and-oven-for-textiles-20260928-9bf85740",
-      "event_id": "event-open-studio-dtf-printer-and-oven-for-textiles",
-      "title": "Open Studio: DTF Printer and oven for Textiles",
-      "reason": "already linked to catalog event"
-    },
-    {
-      "candidate_id": "candidate-ithra-events-open-studio-letterpress-printing-machine-20260928-08813ddd",
-      "event_id": "event-open-studio-letterpress-printing-machine",
-      "title": "Open Studio: Letterpress Printing Machine",
-      "reason": "already linked to catalog event"
-    },
-    {
-      "candidate_id": "candidate-ithra-events-open-studio-silkscreen-20260928-06cda456",
-      "event_id": "event-open-studio-silkscreen",
-      "title": "Open Studio: Silkscreen",
-      "reason": "already linked to catalog event"
-    },
-    {
       "candidate_id": "candidate-ithra-events-printing-house-20260928-e56f4f89",
       "event_id": "event-printing-house",
       "title": "Printing House",
@@ -1003,27 +981,39 @@
       "reason": "already linked to catalog event"
     },
     {
-      "candidate_id": "candidate-ithra-events-ithra-public-tour-arabic-20260928-011084c2",
-      "event_id": "event-ithra-public-tour-arabic",
-      "title": "Ithra Public Tour (Arabic)",
+      "candidate_id": "candidate-ithra-events-open-studio-3d-printer-20260928-95155c11",
+      "event_id": "event-open-studio-3d-printer",
+      "title": "Open Studio: 3D printer",
       "reason": "already linked to catalog event"
     },
     {
-      "candidate_id": "candidate-ithra-events-spot-of-inspiration-20260928-5bac584c",
-      "event_id": "event-spot-of-inspiration",
-      "title": "Spot of Inspiration",
+      "candidate_id": "candidate-ithra-events-open-studio-dtf-printer-and-oven-for-textiles-20260928-9bf85740",
+      "event_id": "event-open-studio-dtf-printer-and-oven-for-textiles",
+      "title": "Open Studio: DTF Printer and oven for Textiles",
       "reason": "already linked to catalog event"
     },
     {
-      "candidate_id": "candidate-ithra-events-childrens-museum-story-time-20260928-ada8b9db",
-      "event_id": "event-childrens-museum-story-time",
-      "title": "Children's Museum Story Time",
+      "candidate_id": "candidate-ithra-events-open-studio-letterpress-printing-machine-20260928-08813ddd",
+      "event_id": "event-open-studio-letterpress-printing-machine",
+      "title": "Open Studio: Letterpress Printing Machine",
+      "reason": "already linked to catalog event"
+    },
+    {
+      "candidate_id": "candidate-ithra-events-open-studio-silkscreen-20260928-06cda456",
+      "event_id": "event-open-studio-silkscreen",
+      "title": "Open Studio: Silkscreen",
       "reason": "already linked to catalog event"
     },
     {
       "candidate_id": "candidate-ithra-events-ithra-public-tour-english-20260928-bda2ffd1",
       "event_id": "event-ithra-public-tour-english",
       "title": "Ithra Public Tour (English)",
+      "reason": "already linked to catalog event"
+    },
+    {
+      "candidate_id": "candidate-ithra-events-spot-of-inspiration-20260928-5bac584c",
+      "event_id": "event-spot-of-inspiration",
+      "title": "Spot of Inspiration",
       "reason": "already linked to catalog event"
     },
     {
@@ -1042,6 +1032,18 @@
       "candidate_id": "candidate-ithra-events-ithra-art-prize-exhibition-20260928-83c2ab55",
       "event_id": "event-ithra-art-prize-exhibition",
       "title": "Ithra Art Prize Exhibition",
+      "reason": "already linked to catalog event"
+    },
+    {
+      "candidate_id": "candidate-ithra-events-childrens-museum-story-time-20260928-ada8b9db",
+      "event_id": "event-childrens-museum-story-time",
+      "title": "Children's Museum Story Time",
+      "reason": "already linked to catalog event"
+    },
+    {
+      "candidate_id": "candidate-ithra-events-ithra-public-tour-arabic-20260928-011084c2",
+      "event_id": "event-ithra-public-tour-arabic",
+      "title": "Ithra Public Tour (Arabic)",
       "reason": "already linked to catalog event"
     },
     {
@@ -2546,13 +2548,6 @@
     }
   ],
   "blocked": [
-    {
-      "candidate_id": "candidate-visit-saudi-seasons-ashjar-farm-20260429-76bf7a0e",
-      "title": "Ashjar Farm",
-      "reason": "possible duplicate requires review: exact-title-city-source-conflict",
-      "kind": "exact-title-city-source-conflict",
-      "possible_event_id": "event-ashjar-farm"
-    },
     {
       "candidate_id": "candidate-saudicon-events-موسم-التمور-في-أسواق-الربوة-20260815-a20368c7",
       "title": "موسم التمور في أسواق الربوة",

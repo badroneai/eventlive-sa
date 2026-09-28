@@ -1,14 +1,14 @@
 # EventLive Harvest OS Status
 
-- Generated at: 2026-09-27T08:57:23.243Z
+- Generated at: 2026-09-28T09:31:41.983Z
 - Status: NEEDS_WORK
 - Operating rule: Probe before new sources; sample before full harvest; Raw collection is not publication; discovery-only never auto-publishes.
 
 ## Totals
 
 - Sources: 88
-- Candidates: 441
-- Matched candidates: 407
+- Candidates: 444
+- Matched candidates: 411
 - Auto-publish sources: 15
 - Candidate-only sources: 12
 - Partnership-required sources: 5
@@ -19,14 +19,14 @@
 
 | Stage | Count |
 | --- | --- |
-| discovered_this_run | 239 |
-| candidate_queue | 441 |
-| evaluated_for_publish | 441 |
-| linked_existing | 400 |
-| published_new | 3 |
-| blocked | 38 |
+| discovered_this_run | 236 |
+| candidate_queue | 444 |
+| evaluated_for_publish | 444 |
+| linked_existing | 399 |
+| published_new | 8 |
+| blocked | 37 |
 | secondary_promoted | 0 |
-| secondary_still_blocked | 39 |
+| secondary_still_blocked | 43 |
 
 ## Blocked Reasons
 
@@ -34,24 +34,24 @@
 | --- | --- |
 | publication gate source-evidence is not auto-publishable | 25 |
 | unknown category requires review | 3 |
-| possible duplicate requires review: exact-title-city-source-conflict | 2 |
 | possible duplicate requires review: fuzzy-title-venue-date-window | 2 |
 | possible duplicate already exists: event-melwah-falcon-racing | 2 |
 | possible duplicate requires review: exact-title-city-venue-conflict | 2 |
 | linked catalog row event-feena-nehke-stand-up-comedy-by-john-achkar was superseded by dedupe | 1 |
+| possible duplicate requires review: exact-title-city-source-conflict | 1 |
 | linked catalog row event-music-festival-mdlbeast-soundstorm was superseded by dedupe | 1 |
 
 ## Collector Errors
 
 | Source | Kind | Failed runs in a row | Attempted this run | Reason |
 | --- | --- | --- | --- | --- |
-| moc-cultural-calendar | chronic | 41 | yes | collector-error: fetch failed; fetch failed |
-| mos-events | chronic | 41 | yes | collector-error: fetch failed; live browser recovery deferred by recent failed probe cooldown |
-| moc-cultural-subportals | chronic | 41 | yes | collector-error: fetch failed; fetch failed |
-| saudi-pro-league-fixtures | chronic | 21 | yes | collector-error: fetch failed |
-| tuwaiq-academy-bootcamps | chronic | 18 | yes | collector-error: HTTP 403 |
-| monshaat-events | chronic | 9 | yes | collector-error: fetch failed; fetch failed |
-| future-skills-catalog | transient | 1 | yes | The operation was aborted due to timeout; page.goto: Timeout 30000ms exceeded. Call log:   - navigating to "https://futureskills.mcit.gov.sa/ar/catalogue/all?label=&field_main_tracks_target_id_verf=56 |
+| moc-cultural-calendar | chronic | 42 | yes | collector-error: fetch failed; fetch failed |
+| mos-events | chronic | 42 | yes | collector-error: fetch failed; live browser recovery deferred by recent failed probe cooldown |
+| moc-cultural-subportals | chronic | 42 | yes | collector-error: fetch failed; fetch failed |
+| saudi-pro-league-fixtures | chronic | 22 | yes | collector-error: fetch failed |
+| tuwaiq-academy-bootcamps | chronic | 19 | yes | collector-error: HTTP 403 |
+| monshaat-events | chronic | 10 | yes | collector-error: fetch failed; fetch failed |
+| asharqia-chamber-events | transient | 1 | yes | fetch failed; live browser recovery deferred by recent failed probe cooldown |
 
 | Source | Policy | Trust | Gate |
 | --- | --- | --- | --- |

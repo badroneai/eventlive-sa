@@ -1,6 +1,6 @@
 {
   "schema": "eventlive.source-strategic-platform-radar.v1",
-  "generated_at": "2026-09-27T08:19:01.603Z",
+  "generated_at": "2026-09-28T08:47:49.013Z",
   "policy": {
     "allowed_use": "official source evidence refresh, API-surface mapping, partnership prioritization, extractor backlog decisions",
     "disallowed_use": "direct catalog publication without official confirmation and duplicate review"
@@ -134,7 +134,7 @@
       "final_url": "https://nec.gov.sa/ar",
       "via": "fetch",
       "content_type": "text/html; charset=utf-8",
-      "bytes": 159690,
+      "bytes": 155483,
       "title": "المركز الوطني للفعاليات",
       "classification": "protected",
       "error": "",
@@ -158,7 +158,6 @@
         "http://www.w3.org/2000/svg\\",
         "https://enjz.nec.gov.sa/\\",
         "http://nec.sourcing.mn2.ariba.com/ad/selfRegistration/_c_/C2https://s1.mn2.ariba.com/Sourcing/Main/ad/loginPage/SSOActions?awsso_cc=cmVhbG06Ym1Wajthd3Nzb19ydTphSFIwY0hNNkx5OXpNUzV0YmpJdVlYSnBZbUV1WTI5dEwxTnZkWEpqYVc1bkwwMWhhVzR2WVdRdlpHVm1ZWFZzZEM5RWFYSmxZM1JCWTNScGIyNC9jbVZoYkcwOWJtVmo7YXdzc29fbHU6YUhSMGNITTZMeTl6TVM1dGJqSXVZWEpwWW1FdVkyOXRMMU52ZFhKamFXNW5MMDFoYVc0dllXUXZZMnhwWlc1MFRHOW5iM1YwTDFOVFQwRmpkR2x2Ym5NPTthd3Nzb19hcDpRVU5OO2F3c3NvX2FyaWQ6TVRjek9EQTJOREUyTmpRNU53PT07YXdzc29fa3U6YUhSMGNITTZMeTl6TVM1dGJqSXVZWEpwWW1FdVkyOXRMMU52ZFhKamFXNW5MMDFoYVc0dllXUXZZMnhwWlc1MFMyVmxjRUZzYVhabEwxTlRUMEZqZEdsdmJuTT07YXdzc29fZmw6TVE9PQ%3D%3D%3ARrUCV6K%2BXxtFtIJH7Rwdskb%2BHhc%3D\\u0026awsso_ap=ACM\\u0026realm=nec\\u0026awsr=true\\",
-        "https://www.youtube.com/watch?v=j2hR24Hv2NE\\",
         "https://www.scega.gov.sa/home\\",
         "https://mt.gov.sa/ar\\",
         "https://www.mos.gov.sa/ar/\\",
@@ -178,7 +177,8 @@
         "https://nec.gov.sa/en\\",
         "https://nec.gov.sa/media/2e5a88cf-8d48-43e2-9178-41c9e9ed8d4b/about-introduction.webp\\",
         "https://static.cloudflareinsights.com/beacon.min.js/v31edd6df95cf4e85bb4c19e7a9bdbcba1788362987495",
-        "https://nec.gov.sa/ar/event-tech"
+        "https://nec.gov.sa/ar/event-tech",
+        "https://nec.gov.sa/ar/join-us/event-pioneer"
       ],
       "page_hint_words": [
         "event",
@@ -256,17 +256,17 @@
         {
           "url": "https://www.visitsaudi.com/bin/api/v3/events?locale=ar",
           "status": 200,
-          "bytes": 96236,
+          "bytes": 93369,
           "classification": "reachable",
           "summary": {
             "parse_ok": true,
-            "item_count": 29,
+            "item_count": 28,
             "sample_titles": [
               "معرض اللغة العربية للطفل",
               "معرض اللغة العربية 28",
-              "أشجار",
               "عربات الجاذبية في قمرة",
-              "جولة بقي السريعة قمرة"
+              "جولة بقي السريعة قمرة",
+              "جولة البقي بين جبال الباحة"
             ]
           },
           "sample": "{\"code\":200,\"message\":\"success\",\"response\":{\"data\":[{\"type\":\"فعالية\",\"title\":\"معرض اللغة العربية للطفل\",\"freePaid\":\"free\",\"bannerImages\":[{\"fileReference\":\"/content/dam/wvs/calendar/arabic-language-exhibition-for-kids.jpg\",\"mobileImageReference\":\"/c…"
@@ -274,17 +274,17 @@
         {
           "url": "https://www.visitsaudi.com/bin/api/v3/events?locale=en",
           "status": 200,
-          "bytes": 100214,
+          "bytes": 97193,
           "classification": "reachable",
           "summary": {
             "parse_ok": true,
-            "item_count": 29,
+            "item_count": 28,
             "sample_titles": [
               "Arabic Language Exhibition for kids",
               "Arabic Language Exhibition 28",
-              "Ashjar Farm",
               "Gravity Carts at Gamra",
-              "Sprint Trail Buggy Ride Gamra"
+              "Sprint Trail Buggy Ride Gamra",
+              "Scenic Buggy Ride at Gamra"
             ]
           },
           "sample": "{\"code\":200,\"message\":\"success\",\"response\":{\"data\":[{\"type\":\"EVENT\",\"title\":\"Arabic Language Exhibition for kids\",\"freePaid\":\"free\",\"bannerImages\":[{\"fileReference\":\"/content/dam/wvs/calendar/arabic-language-exhibition-for-kids.jpg\",\"mobileImageRefe…"
@@ -315,31 +315,31 @@
         "https://images.cmscloud.ai",
         "https://apps.apple.com/sa/app/webook-com-fun-things-to-do/id6468667896",
         "https://play.google.com/store/apps/details?id=com.webook.android",
-        "https://wbk-assets.webook.com/0.7.8/assets/index-CriLyxpO.js",
+        "https://wbk-assets.webook.com/0.7.8/assets/index-DodJr_wq.js",
         "https://wbk-assets.webook.com/0.7.8/assets/vendor-Cc9w-i99.js",
-        "https://wbk-assets.webook.com/0.7.8/assets/@wbk/hooks-BlLlWTp9.js",
+        "https://wbk-assets.webook.com/0.7.8/assets/@wbk/hooks-CHhsh1kr.js",
         "https://wbk-assets.webook.com/0.7.8/assets/@wbk/logger-DfNVpG3P.js",
-        "https://wbk-assets.webook.com/0.7.8/assets/@wbk/config-CNzyBjC_.js",
-        "https://wbk-assets.webook.com/0.7.8/assets/@wbk/api-BgBdL-BO.js",
-        "https://wbk-assets.webook.com/0.7.8/assets/@wbk/svg-HUfKeBgT.js",
+        "https://wbk-assets.webook.com/0.7.8/assets/@wbk/config-YIftTg9J.js",
+        "https://wbk-assets.webook.com/0.7.8/assets/@wbk/api-r7xCU-t0.js",
+        "https://wbk-assets.webook.com/0.7.8/assets/@wbk/svg-Cz0fjzBq.js",
         "https://wbk-assets.webook.com/0.7.8/assets/react-hook-form-D_m77UuM.js",
-        "https://wbk-assets.webook.com/0.7.8/assets/@wbk/ui-Bq7l3oiK.js",
-        "https://wbk-assets.webook.com/0.7.8/assets/@wbk/queue-DaHNt4dN.js",
+        "https://wbk-assets.webook.com/0.7.8/assets/@wbk/ui-DJ8z8Kxw.js",
+        "https://wbk-assets.webook.com/0.7.8/assets/@wbk/queue-mE_0YkeG.js",
         "https://wbk-assets.webook.com/0.7.8/assets/i18next-Ce0fiPMx.js",
         "https://wbk-assets.webook.com/0.7.8/assets/i18next-http-backend-C2uFdLra.js",
         "https://wbk-assets.webook.com/0.7.8/assets/i18next-browser-languagedetector-Bv2FoO1s.js",
         "https://wbk-assets.webook.com/0.7.8/assets/react-i18next-Dxy0wzdl.js",
         "https://wbk-assets.webook.com/0.7.8/assets/react-helmet-BcOPeyN0.js",
-        "https://wbk-assets.webook.com/0.7.8/assets/@wbk/analytics-DE0c17Pa.js",
-        "https://wbk-assets.webook.com/0.7.8/assets/@wbk/currency-B7PYjEev.js",
-        "https://wbk-assets.webook.com/0.7.8/assets/@wbk/auth-AbxUcDmb.js",
-        "https://wbk-assets.webook.com/0.7.8/assets/@wbk/payment-CMegBHo6.js",
-        "https://wbk-assets.webook.com/0.7.8/assets/@wbk/flights-zxddM6AH.js",
-        "https://wbk-assets.webook.com/0.7.8/assets/@wbk/hotels-5c6KxmYL.js",
-        "https://wbk-assets.webook.com/0.7.8/assets/@wbk/ticketing-BIN3h7yH.js",
-        "https://wbk-assets.webook.com/0.7.8/assets/@smc/ads-x_0QwEKi.js",
-        "https://wbk-assets.webook.com/0.7.8/assets/@wbk/contentful-9uMqmgoA.js",
-        "https://wbk-assets.webook.com/0.7.8/assets/@wbk/auction-BYo4kjve.js",
+        "https://wbk-assets.webook.com/0.7.8/assets/@wbk/analytics-BZuuTNF9.js",
+        "https://wbk-assets.webook.com/0.7.8/assets/@wbk/currency-63TNhOrA.js",
+        "https://wbk-assets.webook.com/0.7.8/assets/@wbk/auth-CP9t3ZsB.js",
+        "https://wbk-assets.webook.com/0.7.8/assets/@wbk/payment-CzcjFYZO.js",
+        "https://wbk-assets.webook.com/0.7.8/assets/@wbk/flights-B1T77Bcp.js",
+        "https://wbk-assets.webook.com/0.7.8/assets/@wbk/hotels-DKT4yBr-.js",
+        "https://wbk-assets.webook.com/0.7.8/assets/@wbk/ticketing-xeR-xmsj.js",
+        "https://wbk-assets.webook.com/0.7.8/assets/@smc/ads-CP6XpSSd.js",
+        "https://wbk-assets.webook.com/0.7.8/assets/@wbk/contentful-DIKKy870.js",
+        "https://wbk-assets.webook.com/0.7.8/assets/@wbk/auction-C7cuah7j.js",
         "https://wbk-assets.webook.com/0.7.8/locales/en/common.json",
         "https://wbk-assets.webook.com/0.7.8/locales/en/home.json",
         "https://wbk-assets.webook.com/0.7.8/locales/en/ui_common.json",
@@ -354,17 +354,17 @@
       ],
       "asset_results": [
         {
-          "url": "https://wbk-assets.webook.com/0.7.8/assets/@wbk/api-BgBdL-BO.js",
+          "url": "https://wbk-assets.webook.com/0.7.8/assets/@wbk/api-r7xCU-t0.js",
           "status": 200,
-          "bytes": 96027,
+          "bytes": 97731,
           "classification": "reachable",
           "hint_urls": [
             "https://github.com/nadude/webook-frontend/blob/main/packages/api/README.md",
             "https://webook.com/shop",
-            "https://wbk-assets.webook.com/eatapp/availability?event_id=${e}&date=${a}&lang=${r}",
+            "https://wbk-assets.webook.com/eatapp/availability?event_id=${e}&date=${r}&lang=${a}",
+            "https://wbk-assets.webook.com/organizations/$%7Br%7D/event-group/details",
             "https://wbk-assets.webook.com/event-tickets-prerequisite?event_id=${e}",
-            "https://wbk-assets.webook.com/organizations/$%7Ba%7D/event-group/details",
-            "https://wbk-assets.webook.com/event-marketing-fee?event_id=${e}&utm_wid=${a}&lang=${r}"
+            "https://wbk-assets.webook.com/event-marketing-fee?event_id=${e}&utm_wid=${r}&lang=${a}"
           ],
           "hint_words": [
             "api",
@@ -376,7 +376,7 @@
           ]
         },
         {
-          "url": "https://wbk-assets.webook.com/0.7.8/assets/@wbk/ticketing-BIN3h7yH.js",
+          "url": "https://wbk-assets.webook.com/0.7.8/assets/@wbk/ticketing-xeR-xmsj.js",
           "status": 200,
           "bytes": 535357,
           "classification": "reachable",
@@ -414,7 +414,7 @@
           ]
         },
         {
-          "url": "https://wbk-assets.webook.com/0.7.8/assets/@wbk/config-CNzyBjC_.js",
+          "url": "https://wbk-assets.webook.com/0.7.8/assets/@wbk/config-YIftTg9J.js",
           "status": 200,
           "bytes": 12530,
           "classification": "reachable",

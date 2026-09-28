@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-27T08:38:57.527Z",
+  "generated_at": "2026-09-28T09:13:02.960Z",
   "catalog": "data/events_catalog.json",
   "candidates": "data/source_candidates.json",
   "manifest": "data/event_image_cache_manifest.json",
@@ -9,25 +9,25 @@
     "min_intersection": 2
   },
   "totals": {
-    "pdf_crop_assignments": 39,
-    "verified": 36,
+    "pdf_crop_assignments": 37,
+    "verified": 34,
     "struck": 3,
-    "slots_seen_this_cycle": 38
+    "slots_seen_this_cycle": 36
   },
   "struck": [
     {
-      "id": "event-خالد-جواد-ايف-في-جدة",
-      "title": "خالد جواد ايف في جدة",
-      "file": "visit-saudi-summer-2026-p008-bottom-right.jpg",
+      "id": "event-أشجار",
+      "title": "أشجار",
+      "file": "visit-saudi-summer-2026-p024-top-right.jpg",
       "reason": "slot-vacated",
-      "detail": "no dated card currently occupies page 8 bottom-right of https://www.visitsaudi.com/content/dam/documents/saudi-calendar-ar.pdf"
+      "detail": "no dated card currently occupies page 24 top-right of https://www.visitsaudi.com/content/dam/documents/saudi-calendar-ar.pdf"
     },
     {
-      "id": "event-صالح-النواوي،-سيف-زغموري،-عبدا-صبيح-،-طلال-الشيخي-في-six-flags",
-      "title": "صالح النواوي، سيف زغموري، عبدا صبيح ، طلال الشيخي في Six Flags",
-      "file": "visit-saudi-summer-2026-p055-top-left.jpg",
+      "id": "event-الدوري-السعودي-للرياضات-الالكترونية-القتالية",
+      "title": "الدوري السعودي للرياضات الالكترونية القتالية",
+      "file": "visit-saudi-summer-2026-p052-bottom-right.jpg",
       "reason": "slot-vacated",
-      "detail": "no dated card currently occupies page 55 top-left of https://www.visitsaudi.com/content/dam/documents/saudi-calendar-ar.pdf"
+      "detail": "no dated card currently occupies page 52 bottom-right of https://www.visitsaudi.com/content/dam/documents/saudi-calendar-ar.pdf"
     },
     {
       "id": "event-ألف-وواحد",
@@ -40,14 +40,6 @@
     }
   ],
   "verified": [
-    {
-      "id": "event-أشجار",
-      "title": "أشجار",
-      "file": "visit-saudi-summer-2026-p024-top-right.jpg",
-      "matched_tokens": [
-        "اشجار"
-      ]
-    },
     {
       "id": "event-سوق-الثلاثاء-الشعبي",
       "title": "سوق الثلاثاء الشعبي",
@@ -198,18 +190,6 @@
       "file": "visit-saudi-summer-2026-p052-top-left.jpg",
       "matched_tokens": [
         "استمراريه"
-      ]
-    },
-    {
-      "id": "event-الدوري-السعودي-للرياضات-الالكترونية-القتالية",
-      "title": "الدوري السعودي للرياضات الالكترونية القتالية",
-      "file": "visit-saudi-summer-2026-p052-bottom-right.jpg",
-      "matched_tokens": [
-        "الدوري",
-        "السعودي",
-        "للرياضات",
-        "الالكترونيه",
-        "القتاليه"
       ]
     },
     {

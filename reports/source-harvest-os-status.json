@@ -1,12 +1,12 @@
 {
   "schema": "eventlive.harvest-os-status.v1",
-  "generated_at": "2026-09-27T08:57:23.243Z",
+  "generated_at": "2026-09-28T09:31:41.983Z",
   "status": "NEEDS_WORK",
   "operating_rule": "Probe before new sources; sample before full harvest; Raw collection is not publication; discovery-only never auto-publishes.",
   "totals": {
     "sources": 88,
-    "candidates": 441,
-    "matched_candidates": 407,
+    "candidates": 444,
+    "matched_candidates": 411,
     "auto_publish_sources": 15,
     "candidate_only_sources": 12,
     "partnership_required_sources": 5,
@@ -25,76 +25,76 @@
     "manual_review": 56
   },
   "candidates_by_gate": {
-    "catalog-review": 405,
-    "duplicate-review": 6,
-    "source-evidence": 30
+    "catalog-review": 409,
+    "source-evidence": 30,
+    "duplicate-review": 5
   },
   "funnel": {
-    "discovered_this_run": 239,
-    "candidate_queue": 441,
-    "evaluated_for_publish": 441,
-    "linked_existing": 400,
-    "published_new": 3,
-    "blocked": 38,
+    "discovered_this_run": 236,
+    "candidate_queue": 444,
+    "evaluated_for_publish": 444,
+    "linked_existing": 399,
+    "published_new": 8,
+    "blocked": 37,
     "secondary_promoted": 0,
-    "secondary_still_blocked": 39
+    "secondary_still_blocked": 43
   },
   "blocked_reasons": {
-    "possible duplicate requires review: exact-title-city-source-conflict": 2,
     "publication gate source-evidence is not auto-publishable": 25,
     "possible duplicate requires review: fuzzy-title-venue-date-window": 2,
     "possible duplicate already exists: event-melwah-falcon-racing": 2,
     "possible duplicate requires review: exact-title-city-venue-conflict": 2,
     "unknown category requires review": 3,
     "linked catalog row event-feena-nehke-stand-up-comedy-by-john-achkar was superseded by dedupe": 1,
+    "possible duplicate requires review: exact-title-city-source-conflict": 1,
     "linked catalog row event-music-festival-mdlbeast-soundstorm was superseded by dedupe": 1
   },
   "collector_error_sources": [
     {
       "id": "moc-cultural-calendar",
       "note": "collector-error: fetch failed; fetch failed",
-      "error_streak": 41,
+      "error_streak": 42,
       "kind": "chronic",
       "attempted_this_run": true
     },
     {
       "id": "mos-events",
       "note": "collector-error: fetch failed; live browser recovery deferred by recent failed probe cooldown",
-      "error_streak": 41,
+      "error_streak": 42,
       "kind": "chronic",
       "attempted_this_run": true
     },
     {
       "id": "moc-cultural-subportals",
       "note": "collector-error: fetch failed; fetch failed",
-      "error_streak": 41,
+      "error_streak": 42,
       "kind": "chronic",
       "attempted_this_run": true
     },
     {
       "id": "saudi-pro-league-fixtures",
       "note": "collector-error: fetch failed",
-      "error_streak": 21,
+      "error_streak": 22,
       "kind": "chronic",
       "attempted_this_run": true
     },
     {
       "id": "tuwaiq-academy-bootcamps",
       "note": "collector-error: HTTP 403",
-      "error_streak": 18,
+      "error_streak": 19,
       "kind": "chronic",
       "attempted_this_run": true
     },
     {
       "id": "monshaat-events",
       "note": "collector-error: fetch failed; fetch failed",
-      "error_streak": 9,
+      "error_streak": 10,
       "kind": "chronic",
       "attempted_this_run": true
     },
     {
-      "id": "future-skills-catalog",
-      "note": "The operation was aborted due to timeout; page.goto: Timeout 30000ms exceeded. Call log:   - navigating to \"https://futureskills.mcit.gov.sa/ar/catalogue/all?label=&field_main_tracks_target_id_verf=56",
+      "id": "asharqia-chamber-events",
+      "note": "fetch failed; live browser recovery deferred by recent failed probe cooldown",
       "error_streak": 1,
       "kind": "transient",
       "attempted_this_run": true

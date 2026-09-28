@@ -1,18 +1,25 @@
 {
-  "generated_at": "2026-09-27T08:47:49.957Z",
+  "generated_at": "2026-09-28T09:21:04.326Z",
   "events_file": "dist/events.json",
   "manifest": "data/event_image_cache_manifest.json",
   "image_dir": "dist/assets/event-images",
   "totals": {
     "targets": 500,
-    "cached_total": 878,
-    "fetched": 0,
-    "reused": 497,
-    "failed": 3,
+    "cached_total": 879,
+    "fetched": 1,
+    "reused": 493,
+    "failed": 6,
     "skipped_recent_failures": 0,
-    "remembered_failures": 26
+    "remembered_failures": 29
   },
-  "fetched": [],
+  "fetched": [
+    {
+      "source_url": "https://www.ithra.com/application/files/cache/thumbnails/883ef249dfbc9ec53aed24a31039d3fb.png",
+      "file": "dist/assets/event-images/mom-through-my-eyes-arabic-fc09dfd70b.png",
+      "bytes": 1501348,
+      "events": 2
+    }
+  ],
   "reused": [
     {
       "source_url": "https://music.moc.gov.sa/-/media/Project/Ministries/Moc/Events/Artboard1.png",
@@ -92,11 +99,6 @@
     {
       "source_url": "https://hub.misk.org.sa/media/pqpeputs/local_550x340-1.png",
       "file": "dist/assets/event-images/misk-local-traineeship-program-493c69ca91.png",
-      "events": 1
-    },
-    {
-      "source_url": "https://discoveraseer.com/en/img/asset/YXNzZXRzL2V4cGVyaWVuY2UvYXNoZ2FyLmpwZWc/ashgar.jpeg?w=1024&fm=webp&s=311321290751594df736714caeb6542c",
-      "file": "dist/assets/event-images/مزرعة-أشجار-42418c6ecc.webp",
       "events": 1
     },
     {
@@ -312,7 +314,7 @@
     {
       "source_url": "https://uqu.edu.sa/assets/images/uqu-gate.jpeg",
       "file": "dist/assets/event-images/الشهادة-الدولية-للحاسب-والإنترنت-ic3-a46ba6d2eb.jpg",
-      "events": 100
+      "events": 103
     },
     {
       "source_url": "https://scth.scene7.com/is/image/scth/buraydah-dates-carnival-qassim?wid=1400&hei=788&fit=constrain&fmt=webp",
@@ -2483,21 +2485,6 @@
       "source_url": "https://discoveraseer.com/en/img/asset/YXNzZXRzL2V4cGVyaWVuY2UvMTUuanBlZw/15.jpeg?w=1024&fm=webp&s=6434f206e446a241e9f2866f2423678b",
       "file": "dist/assets/event-images/أرياش-6c397fa7e8.webp",
       "events": 1
-    },
-    {
-      "source_url": "https://discoveraseer.com/en/img/asset/YXNzZXRzL2V4cGVyaWVuY2UvZHNjMDg3MDAuanBlZw/dsc08700.jpeg?w=1024&fm=webp&s=2002b00f8cf76eeac7ae394f41741b56",
-      "file": "dist/assets/event-images/مارنس-9b1049b01b.webp",
-      "events": 1
-    },
-    {
-      "source_url": "https://discoveraseer.com/en/img/asset/YXNzZXRzL2V4cGVyaWVuY2UvZGppXzA4MTItZW5oYW5jZWQtbnItKDEpLmpwZWc/dji_0812-enhanced-nr-%281%29.jpeg?w=1024&fm=webp&s=b2e697eaa06bcd7fb5b0a48a99255bfa",
-      "file": "dist/assets/event-images/نفَس-d4fdeb01d9.webp",
-      "events": 1
-    },
-    {
-      "source_url": "https://discoveraseer.com/en/img/asset/YXNzZXRzL2V4cGVyaWVuY2UvbW50Z2FhLWFsb2FkeS05LmpwZWc/mntgaa-aloady-9.jpeg?w=1024&fm=webp&s=3eb9e2fa555285d003f6023ca81dac83",
-      "file": "dist/assets/event-images/منتجع-الوادي-9aab1000ed.webp",
-      "events": 1
     }
   ],
   "rejected_removed": [],
@@ -2505,29 +2492,51 @@
   "skipped_recent_failures": [],
   "failed": [
     {
+      "source_url": "https://s7g10.scene7.com/is/image/rcu/leonid-meteor-shower-at-jabal-ikmah:landscape-16x9?$Responsive$&fit=stretch&fmt=webp&wid=1920",
+      "events": 1,
+      "reason": "HTTP 403",
+      "failure_kind": "access-denied",
+      "retry_after": "2026-09-29T09:21:04.326Z"
+    },
+    {
+      "source_url": "https://s7g10.scene7.com/is/image/rcu/sunset-stillness-meditation-sound-immersion:landscape-16x9?$Responsive$&fit=stretch&fmt=webp&wid=1920",
+      "events": 1,
+      "reason": "HTTP 403",
+      "failure_kind": "access-denied",
+      "retry_after": "2026-09-29T09:21:04.326Z"
+    },
+    {
+      "source_url": "https://s7g10.scene7.com/is/image/rcu/stargazing-at-alula-fort:landscape-16x9?$Responsive$&fit=stretch&fmt=webp&wid=1920",
+      "events": 1,
+      "reason": "HTTP 403",
+      "failure_kind": "access-denied",
+      "retry_after": "2026-09-29T09:21:04.326Z"
+    },
+    {
       "source_url": "https://cdn.rfecc.sa/wp-content/uploads/mec/qr_898ea2449274454e42895b52b18c6f68.png",
       "events": 1,
       "reason": "HTTP 403",
       "failure_kind": "access-denied",
-      "retry_after": "2026-09-28T08:47:49.957Z"
+      "retry_after": "2026-09-29T09:21:04.326Z"
     },
     {
       "source_url": "https://s7g10.scene7.com/is/image/rcu/fei2:landscape-16x9?$Responsive$&fit=stretch&fmt=webp&wid=1920",
       "events": 1,
       "reason": "HTTP 403",
       "failure_kind": "access-denied",
-      "retry_after": "2026-09-28T08:47:49.957Z"
+      "retry_after": "2026-09-29T09:21:04.326Z"
     },
     {
       "source_url": "https://api.riyadh.sa/sites/default/files/styles/medium/public/2026-07/er%20%2859%29.jpg?itok=a33APdGm",
       "events": 1,
       "reason": "not-image text/html; charset=utf-8",
       "failure_kind": "source-returned-html",
-      "retry_after": "2026-09-28T08:47:49.957Z"
+      "retry_after": "2026-09-29T09:21:04.326Z"
     }
   ],
   "requires_rebuild": true,
   "rebuild_reasons": [
-    "new-failures:3"
+    "fetched:1",
+    "new-failures:6"
   ]
 }

@@ -1,20 +1,19 @@
 # EventLive Visit Saudi Image Identity Report
 
-- generated_at: 2026-09-27T08:38:57.527Z
-- pdf_crop_assignments: 39
-- verified: 36
+- generated_at: 2026-09-28T09:13:02.960Z
+- pdf_crop_assignments: 37
+- verified: 34
 - struck: 3
-- slots_seen_this_cycle: 38
+- slots_seen_this_cycle: 36
 
 ## Struck (fell back to generated cover)
 
-- خالد جواد ايف في جدة (visit-saudi-summer-2026-p008-bottom-right.jpg) - slot-vacated - no dated card currently occupies page 8 bottom-right of https://www.visitsaudi.com/content/dam/documents/saudi-calendar-ar.pdf
-- صالح النواوي، سيف زغموري، عبدا صبيح ، طلال الشيخي في Six Flags (visit-saudi-summer-2026-p055-top-left.jpg) - slot-vacated - no dated card currently occupies page 55 top-left of https://www.visitsaudi.com/content/dam/documents/saudi-calendar-ar.pdf
+- أشجار (visit-saudi-summer-2026-p024-top-right.jpg) - slot-vacated - no dated card currently occupies page 24 top-right of https://www.visitsaudi.com/content/dam/documents/saudi-calendar-ar.pdf
+- الدوري السعودي للرياضات الالكترونية القتالية (visit-saudi-summer-2026-p052-bottom-right.jpg) - slot-vacated - no dated card currently occupies page 52 bottom-right of https://www.visitsaudi.com/content/dam/documents/saudi-calendar-ar.pdf
 - ألف وواحد (visit-saudi-summer-2026-p063-bottom-left.jpg) - identity-mismatch - page 63 bottom-left is now "وقف! عرض نمر الكوميدي المباشر في الرياض"
 
 ## Verified
 
-- أشجار (visit-saudi-summer-2026-p024-top-right.jpg)
 - سوق الثلاثاء الشعبي (visit-saudi-summer-2026-p024-top-left.jpg)
 - صندوق أسامة من مخرج ثمانية (visit-saudi-summer-2026-p051-top-left.jpg)
 - كايف المزرعة (visit-saudi-summer-2026-p051-bottom-right.jpg)
@@ -31,7 +30,6 @@
 - جولة البقي بين جبال الباحة (visit-saudi-summer-2026-p072-bottom-left.jpg)
 - تجربة شاطئ قالو (visit-saudi-summer-2026-p004-bottom-left.jpg)
 - استمرارية 26 (visit-saudi-summer-2026-p052-top-left.jpg)
-- الدوري السعودي للرياضات الالكترونية القتالية (visit-saudi-summer-2026-p052-bottom-right.jpg)
 - سيرك فونتانا (visit-saudi-summer-2026-p052-bottom-left.jpg)
 - دوري الملوك MENA (visit-saudi-summer-2026-p053-top-right.jpg)
 - كأس الخليج (visit-saudi-summer-2026-p007-bottom-right.jpg)

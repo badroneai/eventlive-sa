@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-27T08:30:15.973Z",
+  "generated_at": "2026-09-28T09:00:45.944Z",
   "source_registry": "data/source_registry.json",
   "collection_report": "reports/source-collection-report.json",
   "output_dir": "data/raw/browser-probes",
@@ -7,18 +7,18 @@
     "selected_ids": [],
     "scope": "priority",
     "limit": 8,
-    "probed_this_run": 1,
-    "fresh_results_available": 7,
+    "probed_this_run": 8,
+    "fresh_results_available": 14,
     "wait_ms": 4500,
     "timeout_ms": 30000,
     "failure_cooldown_hours": 72
   },
   "methodology": "Browser-level probe inspired by cafe platform work: classify fetchability, hydration payloads, network APIs, structured HTML, rendered DOM, and policy-protected lanes before writing extractors.",
   "totals": {
-    "probed": 7,
-    "browser_network_api": 0,
+    "probed": 14,
+    "browser_network_api": 3,
     "browser_hydration_payload": 0,
-    "rendered_html_candidates": 1,
+    "rendered_html_candidates": 2,
     "blocked_or_protected": 0,
     "policy_skipped": 0
   },
@@ -132,6 +132,530 @@
       "network_sample": []
     },
     {
+      "id": "eye-of-riyadh-events",
+      "probed_at": "2026-09-28T09:02:15.314Z",
+      "name": "Eye of Riyadh Events",
+      "priority": 12,
+      "url": "https://www.eyeofriyadh.com/events/",
+      "final_url": "https://www.eyeofriyadh.com/events/",
+      "status": "ok",
+      "http_status": 200,
+      "navigation_error": "",
+      "duration_ms": 12323,
+      "classification": "rendered-html-candidates",
+      "next_action": "اكتب extractor مرن من DOM بعد الرندر أو حسن selector الحالي.",
+      "title": "Events | Exhibitions |Festivals | Seminars Riyadh Saudi Arabia",
+      "text_bytes": 6363,
+      "html_bytes": 143730,
+      "html_snapshot": "data/raw/browser-probes/eye-of-riyadh-events-2026-09-28T09-00-45-944Z.html",
+      "screenshot": "data/raw/browser-probes/eye-of-riyadh-events-2026-09-28T09-00-45-944Z.png",
+      "signals": {
+        "has_next_data": false,
+        "has_nuxt": false,
+        "has_json_ld": false,
+        "has_event_schema": false,
+        "date_snippets": [
+          "15 Rabi' II 1448 - 28 September 2026 Sign In/Sign Up Advertise with us Sign-up for newsletter HOME NEWS EVENTS BUSIN",
+          "hatsApp X LinkedIn Facebook Email Share 25 - 27 Jan, 2027 Real Estate Future Forum Four Seasons Hotel , Riyadh | Forum The Real Est",
+          "must evolve, embracing... More Details 25 - 26 Oct, 2026 Global Proptech Summit 2026 Mandarin Oriental Al Faisaliah , Riyadh | Sum",
+          "platform that convenes... More Details 28 - 29 Oct, 2026 Real Estate Supply Chain Forum Mandarin Oriental Al Faisaliah , Riyadh |",
+          "tform driving strategic... More Details 28 - 29 Oct, 2026 CIPS MENA Procurement and Supply Chain Futures conference and awards Mand",
+          "is the region’s leading... More Details 27 - 29 Sep, 2026 Saudi Food Manufacturing 2026 Jeddah Superdome , Jeddah | Exhibition Unde",
+          "of Industry and Mineral... More Details 27 - 29 Sep, 2026 The Saudi Food Show JEDDAH SUPERDOME , Jeddah | Exhibition The Saudifood",
+          "with its move to Jeddah... More Details 28 - 30 Sep, 2026 Saudi Mega Projects 2026 The Venue by ROSHN Group , Riyadh | Summit Saudi"
+        ],
+        "event_like_links": [
+          {
+            "text": "EVENTS",
+            "href": "https://www.eyeofriyadh.com/events/"
+          },
+          {
+            "text": "عربي",
+            "href": "https://www.eyeofriyadh.com/ar/events/"
+          },
+          {
+            "text": "Award",
+            "href": "https://www.eyeofriyadh.com/events/?fcat=15"
+          },
+          {
+            "text": "Ceremony",
+            "href": "https://www.eyeofriyadh.com/events/?fcat=21"
+          },
+          {
+            "text": "Championship",
+            "href": "https://www.eyeofriyadh.com/events/?fcat=13"
+          },
+          {
+            "text": "Conference",
+            "href": "https://www.eyeofriyadh.com/events/?fcat=1"
+          },
+          {
+            "text": "Congress",
+            "href": "https://www.eyeofriyadh.com/events/?fcat=28"
+          },
+          {
+            "text": "Exhibition",
+            "href": "https://www.eyeofriyadh.com/events/?fcat=2"
+          },
+          {
+            "text": "Festival",
+            "href": "https://www.eyeofriyadh.com/events/?fcat=5"
+          },
+          {
+            "text": "Forum",
+            "href": "https://www.eyeofriyadh.com/events/?fcat=3"
+          },
+          {
+            "text": "Initiative",
+            "href": "https://www.eyeofriyadh.com/events/?fcat=20"
+          },
+          {
+            "text": "Professional Development Programme",
+            "href": "https://www.eyeofriyadh.com/events/?fcat=32"
+          },
+          {
+            "text": "Show",
+            "href": "https://www.eyeofriyadh.com/events/?fcat=24"
+          },
+          {
+            "text": "Summit",
+            "href": "https://www.eyeofriyadh.com/events/?fcat=4"
+          },
+          {
+            "text": "AWARD",
+            "href": "https://www.eyeofriyadh.com/events/?fcat=15"
+          },
+          {
+            "text": "CEREMONY",
+            "href": "https://www.eyeofriyadh.com/events/?fcat=21"
+          },
+          {
+            "text": "CHAMPIONSHIP",
+            "href": "https://www.eyeofriyadh.com/events/?fcat=13"
+          },
+          {
+            "text": "CONFERENCE",
+            "href": "https://www.eyeofriyadh.com/events/?fcat=1"
+          },
+          {
+            "text": "CONGRESS",
+            "href": "https://www.eyeofriyadh.com/events/?fcat=28"
+          },
+          {
+            "text": "EXHIBITION",
+            "href": "https://www.eyeofriyadh.com/events/?fcat=2"
+          }
+        ]
+      },
+      "script_signals": {
+        "next_data_scripts": 0,
+        "nuxt_scripts": 0,
+        "json_ld_scripts": 0,
+        "large_inline_scripts": 0
+      },
+      "network_total": 4,
+      "network_endpoints": [],
+      "network_sample": [
+        {
+          "method": "GET",
+          "status": 200,
+          "url": "https://ep1.adtrafficquality.google/getconfig/sodar?sv=200&tid=gpt&tv=m202609210101&st=env&sjk=2464715920137243",
+          "content_type": "application/json",
+          "resource_type": "xhr",
+          "request_post_data": "",
+          "response_shape": "json-like-invalid",
+          "preview": "{\"sodar_query_id\":\"Cy26arrkLvr5kPIPz6CJsAo\",\"injector_basename\":\"sodar2\",\"bg_hash_basename\":\"mes-_ZKhL5_mlQmTjLOVqbYcKU0oERAlAiMrM2gaUEQ\",\"bg_binary\":\"AoF3OBlwtOcafb8Ht7WTy2GiGJVM18PvWTOtmh4kAXpuCznyunV7xGzx2wtdylN2QfapIz7T1mxqPmKXXZhxxoMvmt5SbB1m17+hKWVfpsk/CrVkKiqxYHSY7X3ovJnthyO/iGZyI2Jj2FXCKbaqAVSqq6hEpNgOKTNIp7TfNfbfWfox4kfe90LAyRN1WeAqZw/zPais30TWEUXwuHmpkdq0Mz4vXJgAbejk5FVfsKkuSj5jq8v4PgM8nWtT1UFq197T+ZsuRG6p76QynTUYDMMdDR4ZGlTMTR8bE+u8DSXe5ymvBrPk1RpFyht/av8huFg1stD06TMfGCuMJRYeaHbXMiXqv1TEmctDpoxJopo5Hew8TCVtMMmKqhESrlPFC6IWF+IsMfZ0QoREeyq0Pu7gYR/bdkn2pzzC99rYOrKKIIc8r7LxufQbxPgKhhgEqhpDGFy9ytE3HUxDVStb1dGHMcDtmadKIrg/f9sY7wGcftF3I0hqcCZ87oP02Eh9aUkQqe5CVZ3dq/7rzSPdci1AXvmL9Qp3iL9KI39fIeKTfhvGUE0f5YvXLE+43zohfoBNb8YYXUT7kGntSil2aRsDWicZ5TVGr+nCSN7sgP0PdbZZppH/19kly4s0VI7OFITb2kpf3hGPaTaoA0XvG3gTfoQiak20XtPM2zjWBbcKs5k5Jm597Qhfv9CewIQJsVBCBQoRar7lTCL/CaTbYxolCLgGXVWPxPfG5wZPKiQEHYjjX4Gs80ciivgN9zJowWyAgNRyE4XlUZixDUDmrFYh0ghuK4ero2eO8xkkSnd2VTqxXkQ6qMxGKZo2MGWrLLwVAbAdSZimgSiVX92o9T5+0Ge+Ncmws23+RYvndgUVNqPjECXGvSKLeA1cWi3A1zOq0+47Ywh0sjeJxtq5uq0I+0Cb9SAHrykfyusvvc5kktzOYqWsHzoAyAEt65c9i2NNi5IFjQMNuGguEvCF9ua/1z7554KxEjqiU+Gagm+P0gXuKJ0TVYauyC5TACwEJNxcUCBvd3pXF9nezRw/5gL08w4F0abRZ5JMPSkv20ZVEssj2qii6/YWz2TA28juPb4d1cI869vCy96zspyh7e1Fvlmu916xNKxYyjsglPayITUmzWjxzbL/FPOmBHawxj1in+L7IzZGP6uoYbbS5f8MsI4R6S9IscUlSxk2tNebbcWKpC68XvyRlOuZ2ddEhm+vMu3vf6lwo4voeanPNHL34S6gy7Fq3XvSjLl1X6bVdskqYaVAHa41wryNKR3b1iTL1VGwmGjoI9khNO7bxXYv5vSuPbLaMgdeueCDrQ0THvWHY32EGIB9c6X9ePjDu03mtLFDi1O4In2vRmp79+wezuoZSfv43vvPJsF9kc1sW9vqVvMLnHFe+eJfqO4yne8rZF4A9VJ+GJNoE7t2lxCn7DY6SWpnzx3qJOdQYEC2GSa7Ujt3bv6ZJPqg4xOLgLn8uCh4QZXqeVpLyPMG7X7QF0D6e9i9NpJI2lIFcexFrZagDsWI8vjD3RTNTRYUILDDmgghTkiK1LV/nd7Xk0b8A1KaAGbZEOuBOonkaQQpFOorLZGxLKEfCUeAGweVwQO1aAg73hzWGoyJ3MxRrtV7kWSYIzkDgEkNnwfAUHyiU+HkY"
+        },
+        {
+          "method": "GET",
+          "status": 200,
+          "url": "https://bootstrap.smartsuppchat.com/widget/2509ea3487b655fdefb67761d4610393011e3a91.json",
+          "content_type": "application/json",
+          "resource_type": "xhr",
+          "request_post_data": "",
+          "response_shape": "json-object:aiRatingEnabled,allowedDomains,buttonStyle,color,color2,colorGradient,consentModeEnabled,crossDomainEnabled",
+          "preview": "{\"aiRatingEnabled\":false,\"allowedDomains\":[],\"buttonStyle\":\"greeting\",\"color\":\"#f5a623\",\"color2\":null,\"colorGradient\":true,\"consentModeEnabled\":false,\"crossDomainEnabled\":false,\"customBrandingEnabled\":false,\"customBrandingLink\":\"\",\"customBrandingText\":\"\",\"emailControl\":true,\"features\":{\"api\":false,\"customize\":false,\"ga\":false,\"groups\":false,\"rating\":false,\"whiteLabel\":false},\"googleAnalyticsEnabled\":false,\"googleAnalyticsManual\":false,\"googleAnalyticsMeasurementIds\":[],\"groupSelectEnabled\":false,\"headerStyle\":\"standard\",\"hideOfflineChat\":false,\"hideWidget\":false,\"host\":\"websocket-visitors.smartsupp.com\",\"internalAnalyticsEnabled\":false,\"isBlocked\":false,\"lang\":\"en\",\"mobilePopupsEnabled\":false,\"nameControl\":true,\"numberControl\":false,\"openOnTrigger\":false,\"orientation\":\"right\",\"packageName\":\"free\",\"popupTextareaEnabled\":false,\"privacyNoticeCheckRequired\":false,\"privacyNoticeEnabled\":true,\"privacyNoticeUrl\":\"\",\"ratingEnabled\":false,\"requireLogin\":false,\"translates\":{\"en\":{\"topBar.online.hello\":\"Eyeofriyadh\"}},\"urlCardsEnabled\":true,\"widgetVersion\":3,\"hasInternalApi\":false,\"config\":{},\"browserLang\":\"ar\",\"widgetTrackerUrl\":\"https://widget-tracker.smartsupp.com\",\"translationsBaseUrl\":\"https://translations.smartsuppcdn.com\",\"widgetTrackerEnabled\":false}"
+        },
+        {
+          "method": "GET",
+          "status": 200,
+          "url": "https://widget-v3.smartsuppcdn.com/manifest.json",
+          "content_type": "application/json",
+          "resource_type": "xhr",
+          "request_post_data": "",
+          "response_shape": "json-like-invalid",
+          "preview": "{ \"_WidgetMessengerInput-B6HgtRrM.js\": { \"file\": \"assets/WidgetMessengerInput-B6HgtRrM.js\", \"name\": \"WidgetMessengerInput\", \"imports\": [ \"_shared-C4Ptsyox.js\" ], \"dynamicImports\": [ \"node_modules/.pnpm/emoji-mart@5.6.0/node_modules/emoji-mart/dist/module.js\" ] }, \"_shared-C4Ptsyox.js\": { \"file\": \"assets/shared-C4Ptsyox.js\", \"name\": \"IconButton\", \"dynamicImports\": [ \"node_modules/.pnpm/@thumbmarkjs+thumbmarkjs@1.9.0/node_modules/@thumbmarkjs/thumbmarkjs/dist/thumbmark.esm.js\" ] }, \"node_modules/.pnpm/@thumbmarkjs+thumbmarkjs@1.9.0/node_modules/@thumbmarkjs/thumbmarkjs/dist/thumbmark.esm.js\": { \"file\": \"assets/thumbmark.esm-CP4CU0yL.js\", \"name\": \"thumbmark.esm\", \"src\": \"node_modules/.pnpm/@thumbmarkjs+thumbmarkjs@1.9.0/node_modules/@thumbmarkjs/thumbmarkjs/dist/thumbmark.esm.js\", \"isDynamicEntry\": true }, \"node_modules/.pnpm/emoji-mart@5.6.0/node_modules/emoji-mart/dist/module.js\": { \"file\": \"assets/module-DD5nvVD3.js\", \"name\": \"module\", \"src\": \"node_modules/.pnpm/emoji-mart@5.6.0/node_modules/emoji-mart/dist/module.js\", \"isDynamicEntry\": true }, \"src/frames/messenger/WidgetMessenger.svelte\": { \"file\": \"assets/WidgetMessenger-Dh01C8DW.js\", \"name\": \"WidgetMessenger\", \"src\": \"src/frames/messenger/WidgetMessenger.svelte\", \"isDynamicEntry\": true, \"imports\": [ \"_shared-C4Ptsyox.js\", \"_WidgetMessengerInput-B6HgtRrM.js\", \"src/main.ts\" ] }, \"src/frames/popup/WidgetPopup.svelte\": { \"file\": \"assets/WidgetPopup-D8ThpTcT.js\", \"name\": \"WidgetPopup\", \"src\": \"src/frames/popup/WidgetPopup.svelte\", \"isDynamicEntry\": true, \"imports\": [ \"_shared-C4Ptsyox.js\", \"_WidgetMessengerInput-B6HgtRrM.js\" ] },"
+        },
+        {
+          "method": "GET",
+          "status": 200,
+          "url": "https://translations.smartsuppcdn.com/api/v1/widget/translations/lang/en/defaults",
+          "content_type": "application/json",
+          "resource_type": "fetch",
+          "request_post_data": "",
+          "response_shape": "json-like-invalid",
+          "preview": "{\"agentRating.all.placeholder\":\"Leave us feedback\",\"agentRating.bad.formText\":\"So sorry 😓 What went wrong?\",\"agentRating.good.formText\":\"Thanks 🤩 What was so great?\",\"agentRating.normal.formText\":\"Thanks 👍 How can we improve?\",\"agentTransfer.defaultText\":\"Agent\",\"agentTransfer.joined\":\"joined the chat\",\"agentTransfer.left\":\"left\",\"agentTransfer.redirected\":\"is your new agent\",\"ariaLabel.agentAvatar\":\"Agent avatar\",\"ariaLabel.card\":\"Product card\",\"ariaLabel.chatContent\":\"Chat content\",\"ariaLabel.chatbotAvatar\":\"Chatbot avatar\",\"ariaLabel.drawer.content\":\"Drawer content\",\"ariaLabel.drawer.overlay\":\"Drawer overlay\",\"ariaLabel.inlineEmojiPicker.description\":\"Showing {count} emojis\",\"ariaLabel.inlineEmojiPicker.label\":\"Emoji suggestions\",\"ariaLabel.left\":\"Left\",\"ariaLabel.openChat\":\"Open Smartsupp chat\",\"ariaLabel.popup\":\"Smartsupp chat popup\",\"ariaLabel.rateChat.bad\":\"Rate chat negativelly\",\"ariaLabel.rateChat.good\":\"Rate chat positively\",\"ariaLabel.rateChat.neutral\":\"Rate chat neutrally\",\"ariaLabel.removeAttachment\":\"Remove attachment\",\"ariaLabel.right\":\"Right\",\"ariaLabel.scrollDown\":\"Scroll down\",\"ariaLabel.success\":\"Success\",\"ariaLabel.uploading\":\"Uploading...\",\"ariaLabel.widgetBranding\":\"Smartsupp branding\",\"authForm.acceptTerms\":\"I agree with privacy policy\",\"authForm.button.send\":\"Send message\",\"authForm.description\":\"We’ll use your contact info only if all the operators are busy at the moment and cannot immediately reply.\",\"authForm.greeting\":\"👋 Please introduce yourself\",\"authForm.group\":\"Choose a group\",\"authForm.label.email\":\"E-mail\",\"authForm.label.group\":\"Group\",\"authForm.label.name\":\"Name\",\"authForm.label.phone\":\"Phone\",\"authForm.submit.error\":\"Authentication failed\",\"authForm.submit.success\":\"Authentication was successful\",\"authForm.yourEmail\":\"Your email\""
+        }
+      ]
+    },
+    {
+      "id": "eventbrite-saudi",
+      "probed_at": "2026-09-28T09:02:21.099Z",
+      "name": "Eventbrite Saudi Arabia",
+      "priority": 14,
+      "url": "https://www.eventbrite.com/d/saudi-arabia/events/",
+      "final_url": "https://www.eventbrite.com/d/saudi-arabia/events/",
+      "status": "ok",
+      "http_status": 405,
+      "navigation_error": "",
+      "duration_ms": 5739,
+      "classification": "rendered-text-review",
+      "next_action": "راجع الصفحة يدويًا وحدد هل هي مصدر أدلة أم صفحة تعريفية فقط.",
+      "title": "Human Verification",
+      "text_bytes": 354,
+      "html_bytes": 9981,
+      "html_snapshot": "data/raw/browser-probes/eventbrite-saudi-2026-09-28T09-00-45-944Z.html",
+      "screenshot": "data/raw/browser-probes/eventbrite-saudi-2026-09-28T09-00-45-944Z.png",
+      "signals": {
+        "has_next_data": false,
+        "has_nuxt": false,
+        "has_json_ld": false,
+        "has_event_schema": false,
+        "date_snippets": [],
+        "event_like_links": []
+      },
+      "script_signals": {
+        "next_data_scripts": 0,
+        "nuxt_scripts": 0,
+        "json_ld_scripts": 0,
+        "large_inline_scripts": 0
+      },
+      "network_total": 3,
+      "network_endpoints": [],
+      "network_sample": [
+        {
+          "method": "POST",
+          "status": 200,
+          "url": "https://0af0bdf40465.fb743aad.us-west-1.token.awswaf.com/0af0bdf40465/e3e3fa888aeb/63e329aa85c9/mp_verify",
+          "content_type": "application/json",
+          "resource_type": "fetch",
+          "request_post_data": "------WebKitFormBoundarypMil6KgyKeifyRvo Content-Disposition: form-data; name=\"solution_metadata\" {\"challenge\":{\"input\":\"89d6527c-5c0f-4df5-bda7-cd8bcf728c58:EwoA2fVp+gY9EwAA:RbxlcfFpGs6nLzJkl2gehOyfbf0bNwP3A6Vr5jvfgH7PXRqAlJJ8NqHJ97CUUzc7Ubb202KAj2pDwv5vvYKsPUMFRQ3LHH5CR1AXn9DmbkruCjG1N18ONLHjBYwHEekUAfjSWwOmsbeEaxVsVTiT32WFkwCtlGTlNUAwAI28+xbrFLoB7OwSWwB6Z3krei06FeEz/fAgLMlUbfGV6KMWz++nArF9Twvqs4wkP/B0hhkZpC7PC4z+dNhDbfIoIzkjp6QUyKjrORjWlZQwO5LlXwWAwKT/O7aiDWluu9sJmvrhhtcZpjf0+Eed71uG0nsshDxXN7OR0zrJbRXE3B4X+cCMmw==\",\"hmac\":\"\",\"region\":\"us-west-1\"},\"solution\":null,\"signals\":[{\"name\":\"Zoey\",\"value\":{\"Present\":\"8JoV5qzR8dUYrOhf::c50f2b4a211c0feefb04eef28597fbd6152153bf7596f154ac7d41e6301c5c4d3d5ccde7da0fa1f14c2ef7a2b8c37154a8904be955a3c44bc9521644192d15a624668095b3175e5a6a64eb49ea023e959d77f883425c6d5a1aa21565448287d4e990ffd454bc9881cfce672cb530005358d9f8d6fc9b9703ac6c5890b4977b06373a799181c74da7b76b3e3907efabb3f43f57430f2c24400b9b4f09e6818f66a13a5849f21c51a0752cfc658089f30c71b769f598f4564c078a5a170dd65daf4479f6c0d43c5b479d63438d113410e16583fba8ffd7f4e01b1168f1a9628f3e24ddfb8de3d29f250e406c0da4a9299228b552ee63c62b850d5a43ca498879a5f75298f42ec65852aa833b63cf2c0ce97a47b7a9054a1134f23",
+          "response_shape": "json-object:token,inputs",
+          "preview": "{\"token\":\"c2cc2dbd-240b-4840-92e7-49630954814a:EwoAvOFpyHcLRQAA:l6Ro2KakkN+9oQega2Az/PB9CUsrqYtIl2WVeyicUsvagZMsausL0r0LtooooIXjiPDUzbqW+3/p9wLyRUu/ihARhgrII7UqzFyNW12hDZir9Ri5xDL+5PxV20+guMpTYG+ZkgUxphqKV+pIEnYgJajC1cOWwKgls6Mk9fF6X5d5ak6xKRXtXlBgmltwrZHuErYRp4d4NJIV3W87tmh0ErQNVGCVQMSYhDm6RU/0qEzmZVei96+mYBa4uuhYHWVpiqqwNZwzCNZrpM1mG/XGUMsdzDordOG4Ltj/t7zqoeQePtyC+KdwhdjztQ==\",\"inputs\":null}"
+        },
+        {
+          "method": "POST",
+          "status": 200,
+          "url": "https://0af0bdf40465.fb743aad.us-west-1.token.awswaf.com/0af0bdf40465/e3e3fa888aeb/63e329aa85c9/telemetry",
+          "content_type": "application/json",
+          "resource_type": "fetch",
+          "request_post_data": "{\"existing_token\":\"c2cc2dbd-240b-4840-92e7-49630954814a:EwoAvOFpyHcLRQAA:l6Ro2KakkN+9oQega2Az/PB9CUsrqYtIl2WVeyicUsvagZMsausL0r0LtooooIXjiPDUzbqW+3/p9wLyRUu/ihARhgrII7UqzFyNW12hDZir9Ri5xDL+5PxV20+guMpTYG+ZkgUxphqKV+pIEnYgJajC1cOWwKgls6Mk9fF6X5d5ak6xKRXtXlBgmltwrZHuErYRp4d4NJIV3W87tmh0ErQNVGCVQMSYhDm6RU/0qEzmZVei96+mYBa4uuhYHWVpiqqwNZwzCNZrpM1mG/XGUMsdzDordOG4Ltj/t7zqoeQePtyC+KdwhdjztQ==\",\"awswaf_session_storage\":\"null\",\"client\":\"Browser\",\"signals\":[{\"name\":\"Zoey\",\"value\":{\"Present\":\"bO7UYxuiATRutraC::6653e6fb245933a7f665fb92c98d668192edb282aaac2b9b67d421d986aee7a46b794562f15706a52a31ec772f8172c2255127d982268682e624964bb60a0597e3efb267cb76c268f8e382165396e78be1a6bba8f8d217d131b0fe981846daff5edfd6a0a404baac65588438ae3be4ead604ac699f2e18dcdf77b12f557d2ab0bfe7b31f2d24d84dcba39e30bb64f3defba06ca80440e0c2ff90458e8b6194958c87f03a710f8df0732a734d1aad917ee2fe370b61f8b644a61c0ef969aa079c6e48a2c88df4ae3d95f7379703d8e364c6f89de60fb1ad35c6d11fe9a7ce9fbdf856ba4446914a755b4b40353257751cd07d06a20cd01109886c38a8715605b15879c203f9\"}}],\"checksum\":\"4B44DE2E\",\"metrics\":[{\"name\":\"12\",\"value\":0.19999999995343387,\"unit\":\"2\"},{\"name\":\"200\",\"value\":0,\"unit\":\"2\"},{\"name\":\"201\",\"value\":0,\"unit\":\"2\"},{\"name\":\"",
+          "response_shape": "json-object:token,next_interval,awswaf_session_storage",
+          "preview": "{\"token\":\"c2cc2dbd-240b-4840-92e7-49630954814a:EwoAidBpyHT2RAAA:YrLaNbn6YDnjTIGj+XEwdhWFW0HsD40+Qpg1YVIx1CXvOSg9irC5NBlsCTckSA1OmjuSBVQUARf+dc7YRYbe95cAazrYJLLPY1LBbitmvTSnoE/ZcN4vWpy+QswgObGgdxgkNFSE4eT9Dps1VYSDxc+doWOx4i/wJStZ3cbfRIdOKIUIyxi1Q5EyRxemZ/Vi4rlQH2SY5EYaNi8seiHJh0rZqGJZSeDNGuj3NkpAeSfC2bkHu6jFpdizxUX2OixhMvISvulY/mapYrOKc3qFrd75qZM9I4bbZTLh45CavIiy34dMXPDysDxARiI2wJES7ZTv+JH50z8bITuF2H0nzZcxL+xn+MPpvnoTVRIjVQAVMQ==\",\"next_interval\":100,\"awswaf_session_storage\":\"c2cc2dbd-240b-4840-92e7-49630954814a:EwoAidBpyHX2RAAA:Yf8FC8FhbPha0OPu5RVcReTmPMueNX381U0FVOVNsbpOVJDdHAx4j/aLDFAhqzUPtyPG0AqEZsxUfUYMszNnJwPPo6JHCfmjCqjysazDJ8mX/35Mdj7QEaSaIijw7/QbDjUS0wuEhGpXi5XgUUC/S9iZC2DQiAH4yS22AZYetP/GRJgiy4mWJedRaQ3BEOPFiPwsioMpIRQJvh2aX8U/zFFpQAfJtj8OpkIQk/R5JpkkDX+g1WM21PyQ+Bm+l0Yx1dc4UMHIajJeXHhxE7x78nk3KC34ScwRFjUQ0cr3Gvv5Jv2/zlCDa4e/qK2fKkdwyAghgE58WsJcz9AcXzabHLEsCkWUPxnghtymJ1l2ouOCQB5prPX2fKTj+AI8EqCVas+Zr5VafgN/UeQ36akRDfI2U53r40MpaLeRA7xdow==\"}"
+        },
+        {
+          "method": "POST",
+          "status": 200,
+          "url": "https://0af0bdf40465.fb743aad.us-west-1.token.awswaf.com/0af0bdf40465/e3e3fa888aeb/63e329aa85c9/telemetry",
+          "content_type": "application/json",
+          "resource_type": "fetch",
+          "request_post_data": "{\"existing_token\":\"c2cc2dbd-240b-4840-92e7-49630954814a:EwoAidBpyHT2RAAA:YrLaNbn6YDnjTIGj+XEwdhWFW0HsD40+Qpg1YVIx1CXvOSg9irC5NBlsCTckSA1OmjuSBVQUARf+dc7YRYbe95cAazrYJLLPY1LBbitmvTSnoE/ZcN4vWpy+QswgObGgdxgkNFSE4eT9Dps1VYSDxc+doWOx4i/wJStZ3cbfRIdOKIUIyxi1Q5EyRxemZ/Vi4rlQH2SY5EYaNi8seiHJh0rZqGJZSeDNGuj3NkpAeSfC2bkHu6jFpdizxUX2OixhMvISvulY/mapYrOKc3qFrd75qZM9I4bbZTLh45CavIiy34dMXPDysDxARiI2wJES7ZTv+JH50z8bITuF2H0nzZcxL+xn+MPpvnoTVRIjVQAVMQ==\",\"awswaf_session_storage\":\"c2cc2dbd-240b-4840-92e7-49630954814a:EwoAidBpyHX2RAAA:Yf8FC8FhbPha0OPu5RVcReTmPMueNX381U0FVOVNsbpOVJDdHAx4j/aLDFAhqzUPtyPG0AqEZsxUfUYMszNnJwPPo6JHCfmjCqjysazDJ8mX/35Mdj7QEaSaIijw7/QbDjUS0wuEhGpXi5XgUUC/S9iZC2DQiAH4yS22AZYetP/GRJgiy4mWJedRaQ3BEOPFiPwsioMpIRQJvh2aX8U/zFFpQAfJtj8OpkIQk/R5JpkkDX+g1WM21PyQ+Bm+l0Yx1dc4UMHIajJeXHhxE7x78nk3KC34ScwRFjUQ0cr3Gvv5Jv2/zlCDa4e/qK2fKkdwyAghgE58WsJcz9AcXzabHLEsCkWUPxnghtymJ1l2ouOCQB5prPX2fKTj+AI8EqCVas+Zr5VafgN/UeQ36akRDfI2U53r40MpaLeRA7xdow==\",\"client\":\"Browser\",\"signals\":[{\"name\":\"Zoey\",\"value\":{\"Present\":\"0bBI3npK+QgWnfvA::055c88c627fd0d4a43dee718cad97a98b50f1c4a075f217316375c0bf36faceee01712a37c24ec6dc82df9c84e9a72a4919a83b5a176dbc06e00462280ab536d908cbbaf91d0f5936f7155ca9dedf0f615b8",
+          "response_shape": "json-object:token,next_interval,awswaf_session_storage",
+          "preview": "{\"token\":\"c2cc2dbd-240b-4840-92e7-49630954814a:EwoAkElp85AfRQAA:EY/kIf7UOnYlB5UuBB7Yzd2XKut3G2/kvgmFmVBtkNfGRbag4PzrB95lRNTMpdy+Or9GdQsCv/XkFGT3jNl5QD78WqwHNMOYMFO5nXaZEeeSyVpVg93eFqwAo5HldjHwm93DTiC/f/sMWj1GStMuUfFvVUYGyJDQD/jMm/pJM0+8yF+xXYs0AJOJ5JG1jZ5U/1p+tM6qBSG+ndDHfV6+T34558AdOOO017YWKBuYHgkqlO9NP8OC7S+UmBLdCKwuzMeI71TxSgDg/KaCMxYnp+hzhLHWMZVTDqaMRqBvRRw3sWDGwYxFj1rRQRBSeVvhDx9r1PaSpCeRSOU12lznwjLOG3rm4FaQ0SzfCGJTuL9YhA==\",\"next_interval\":200,\"awswaf_session_storage\":\"c2cc2dbd-240b-4840-92e7-49630954814a:EwoAkElp85EfRQAA:N/8nFu0IbwtZQxlI4gc19v/8Et9xzk6/8wiiRKlVMW/8L2CK3G2Vxs/R44SdbE5z8/DlaFDd6L389/XJYqrm8AmobcGs51FrXRXbfZI/0HH9xWxSGY6nlU1x8ygvmeYd39WnUj7NMnO/LTghOMjx+7sgReMw4W8BMqp6jfAqJjkM7LgWThSYaEEljfvpN5l4ozH0bjOUe5CZBilup7C7vfOjSrRkZqkK59I0tQSq4qOL55DlRO5yD2fHfs01UpWvqtkRiUHPPAUvLWEqMCnZCqPq0FsFaWWYD9Chb7hOcKcJluhFl3BfyhoOuiQ7SKfFst/Os0FE4heexYJSxXfN5w5ISUBOwfFwI3VHTuxcK2ba7xueP4ICB+3q5hRza+ZvM3nzWNWU2R/SIaDVUbYnVBIES1nIFSczR7Hgq2ELPLyhAT1vaUxrEkcUFveuaKI3rkaMvpsXu71lCLEbAsyuzNo4o42WsLTWXR83zsRzg7EJZ3KcCDCRkhw0s05RhmGiKw==\"}"
+        }
+      ]
+    },
+    {
+      "id": "tuwaiq-academy-bootcamps",
+      "probed_at": "2026-09-28T09:00:52.790Z",
+      "name": "Tuwaiq Academy Bootcamps and Programs",
+      "priority": 16,
+      "url": "https://tuwaiq.edu.sa/api/GetInitiativePublishesShorten/12/1?category=ac41152d-f228-8af4-8406-e0cda6df6c35&type=NORMAL",
+      "final_url": "https://tuwaiq.edu.sa/api/GetInitiativePublishesShorten/12/1?category=ac41152d-f228-8af4-8406-e0cda6df6c35&type=NORMAL",
+      "status": "ok",
+      "http_status": 200,
+      "navigation_error": "",
+      "duration_ms": 6352,
+      "classification": "browser-structured-html",
+      "next_action": "اكتب extractor من JSON-LD أو structured scripts مع fallback للبطاقات.",
+      "title": "",
+      "text_bytes": 10642,
+      "html_bytes": 10805,
+      "html_snapshot": "data/raw/browser-probes/tuwaiq-academy-bootcamps-2026-09-28T09-00-45-944Z.html",
+      "screenshot": "data/raw/browser-probes/tuwaiq-academy-bootcamps-2026-09-28T09-00-45-944Z.png",
+      "signals": {
+        "has_next_data": false,
+        "has_nuxt": false,
+        "has_json_ld": false,
+        "has_event_schema": true,
+        "date_snippets": [
+          "يات فن تصميم الشخصيات 3D \",\"startDate\":\"2026-10-04T16:00:00+03:00\",\"endDate\":\"2026-12-24T20:00:00+03:00\",\"autoCloseRegistration\":f",
+          "nStartDate\":null,\"registrationEndDate\":\"2026-09-20T12:00:00+03:00\",\"requireProfileCompletion\":true,\"isMergePublish\":false,\"isPaid\"",
+          "لبيرتون - المسار التأسيسي\",\"startDate\":\"2026-10-11T09:00:00+03:00\",\"endDate\":\"2027-07-20T21:00:00+03:00\",\"autoCloseRegistration\":f",
+          "nStartDate\":null,\"registrationEndDate\":\"2026-10-04T12:00:00+03:00\",\"requireProfileCompletion\":true,\"isMergePublish\":false,\"isPaid\"",
+          "سحابة وتعلم الآلة على AWS\",\"startDate\":\"2026-10-11T18:00:00+03:00\",\"endDate\":\"2026-11-19T22:00:00+03:00\",\"autoCloseRegistration\":f",
+          "nStartDate\":null,\"registrationEndDate\":\"2026-09-27T12:00:00+03:00\",\"requireProfileCompletion\":true,\"isMergePublish\":true,\"isPaid\":",
+          "وير حلول الذكاء الاصطناعي\",\"startDate\":\"2026-10-25T10:00:00+03:00\",\"endDate\":\"2027-01-14T15:00:00+03:00\",\"autoCloseRegistration\":f",
+          "nStartDate\":null,\"registrationEndDate\":\"2026-10-04T12:00:00+03:00\",\"requireProfileCompletion\":true,\"isMergePublish\":true,\"isPaid\":"
+        ],
+        "event_like_links": []
+      },
+      "script_signals": {
+        "next_data_scripts": 0,
+        "nuxt_scripts": 0,
+        "json_ld_scripts": 0,
+        "large_inline_scripts": 0
+      },
+      "network_total": 1,
+      "network_endpoints": [],
+      "network_sample": [
+        {
+          "method": "GET",
+          "status": 200,
+          "url": "https://tuwaiq.edu.sa/api/GetInitiativePublishesShorten/12/1?category=ac41152d-f228-8af4-8406-e0cda6df6c35&type=NORMAL",
+          "content_type": "application/json",
+          "resource_type": "document",
+          "request_post_data": "",
+          "response_shape": "json-like-invalid",
+          "preview": "{\"pagination\":{\"offset\":0,\"limit\":12,\"total\":163,\"totalPages\":14},\"data\":[{\"id\":\"ec58d045-8991-4f45-9b7e-b36a792029f6\",\"academyTypeId\":null,\"academyType\":null,\"title\":\"معسكر تقنيات فن تصميم الشخصيات 3D \",\"startDate\":\"2026-10-04T16:00:00+03:00\",\"endDate\":\"2026-12-24T20:00:00+03:00\",\"autoCloseRegistration\":false,\"isOpen\":true,\"isRegistrationOpen\":true,\"isRegistrationClosed\":false,\"logo\":null,\"outerImage\":\"images/a0yjf4zb.esg.jpeg\",\"initiativeAgeName\":\"كبار\",\"initiativeCategoryName\":\"معسكر\",\"initiativeScopeImage\":\"images/mgpdsgmm.alx.png\",\"initiativeScopeName\":\"تطوير البرمجيات والتطبيقات\",\"locationName\":\"الرياض - المقر الرئيسي\",\"slug\":\"kx9ya9Kd\",\"registrationStartDate\":null,\"registrationEndDate\":\"2026-09-20T12:00:00+03:00\",\"requireProfileCompletion\":true,\"isMergePublish\":false,\"isPaid\":false,\"price\":null,\"includesEmployees\":false,\"vat\":null,\"priceWithoutVat\":null},{\"id\":\"8f9a7880-45cf-4af1-bccb-69ec27201e64\",\"academyTypeId\":null,\"academyType\":null,\"title\":\"معسكر هولبيرتون - المسار التأسيسي\",\"startDate\":\"2026-10-11T09:00:00+03:00\",\"endDate\":\"2027-07-20T21:00:00+03:00\",\"autoCloseRegistration\":false,\"isOpen\":true,\"isRegistrationOpen\":true,\"isRegistrationClosed\":false,\"logo\":null,\"outerImage\":\"images/cyeacv0v.of1.jpg\",\"initiativeAgeName\":\"كبار\",\"initiativeCategoryName\":\"معسكر\",\"initiativeScopeImage\":\"images/t0ib4qly.bms.png\",\"initiativeScopeName\":\"هندسة البرمجيات\",\"locationName\":\"الرياض - المقر الرئيسي\",\"slug\":\"y52P6jer\",\"registrationStartDate\":null,\"registrationEndDate\":\"2026-10-04T12:00:00+03:00\",\"requireProfileCompletion\":true,\"isMergePublish\":false,\"isPaid\":false,\"price\":0.00,\"includesEmployees\":false,\"vat\":0.00,\"priceWithoutVat\":0.00},{\"id\":\"22a4de12-1695-4ad6-a614-054957432522\",\"academyTypeId\":null,\"academyType\":null,\"title\":\"معسكر هندسة السحابة وتعلم الآلة على AWS\",\"sta"
+        }
+      ]
+    },
+    {
+      "id": "future-skills-catalog",
+      "probed_at": "2026-09-28T09:02:02.950Z",
+      "name": "Future Skills MCIT Catalogue",
+      "priority": 17,
+      "url": "https://futureskills.mcit.gov.sa/ar/catalogue/all?label=&field_main_tracks_target_id_verf=565&field_sub_tracks_target_id=All&field_training_course_level_target_id=All&field_related_skills_target_id=All&field_course_type_value=All&field_training_delivery_value=All&field_training_city_target_id=All&field_job_market_target_id=All",
+      "final_url": "https://futureskills.mcit.gov.sa/ar/catalogue/all?label=&field_main_tracks_target_id_verf=565&field_sub_tracks_target_id=All&field_training_course_level_target_id=All&field_related_skills_target_id=All&field_course_type_value=All&field_training_delivery_value=All&field_training_city_target_id=All&field_job_market_target_id=All",
+      "status": "error",
+      "http_status": 0,
+      "navigation_error": "page.goto: Timeout 30000ms exceeded.\nCall log:\n  - navigating to \"https://futureskills.mcit.gov.sa/ar/catalogue/all?label=&field_main_tracks_target_id_verf=565&field_sub_tracks_target_id=All&field_training_course_level_target_id=All&field_related_skills_target_id=All&field_course_type_value=All&field_training_delivery_value=All&field_training_city_target_id=All&field_job_market_target_id=All\", waiting until \"domcontentloaded\"\n",
+      "duration_ms": 70118,
+      "classification": "empty-or-shell",
+      "next_action": "اعتبرها shell وابحث عن API أو مسار بديل قبل أي collector.",
+      "title": "التدريب | بوابة مهارات المستقبل",
+      "text_bytes": 0,
+      "html_bytes": 0,
+      "html_snapshot": "data/raw/browser-probes/future-skills-catalog-2026-09-28T09-00-45-944Z.html",
+      "screenshot": "",
+      "signals": {
+        "has_next_data": false,
+        "has_nuxt": false,
+        "has_json_ld": false,
+        "has_event_schema": false,
+        "date_snippets": [],
+        "event_like_links": []
+      },
+      "script_signals": {
+        "next_data_scripts": 0,
+        "nuxt_scripts": 0,
+        "json_ld_scripts": 0,
+        "large_inline_scripts": 0
+      },
+      "network_total": 0,
+      "network_endpoints": [],
+      "network_sample": []
+    },
+    {
+      "id": "misk-hub-events",
+      "probed_at": "2026-09-28T09:02:32.851Z",
+      "name": "Misk Hub Events",
+      "priority": 28,
+      "url": "https://hub.misk.org.sa/en/events/",
+      "final_url": "https://hub.misk.org.sa/en/events/",
+      "status": "ok",
+      "http_status": 200,
+      "navigation_error": "",
+      "duration_ms": 11715,
+      "classification": "browser-network-api",
+      "next_action": "ثبت endpoint مرشحًا كجامع مباشر، ثم اكتب extractor من JSON مع اختبار انحدار.",
+      "title": "Misk Hub Events",
+      "text_bytes": 2622,
+      "html_bytes": 252951,
+      "html_snapshot": "data/raw/browser-probes/misk-hub-events-2026-09-28T09-00-45-944Z.html",
+      "screenshot": "data/raw/browser-probes/misk-hub-events-2026-09-28T09-00-45-944Z.png",
+      "signals": {
+        "has_next_data": false,
+        "has_nuxt": false,
+        "has_json_ld": false,
+        "has_event_schema": false,
+        "date_snippets": [
+          "Insights العربية Sign in Skills Offline 14 Sep 2026 Finance Fundamentals An interactive workshop designed to simplify the fundament",
+          "ng on 14th September 2026 Skills Online 25 Aug 2026 Navigating the Cyber Map: How to Choose Your Specialization & Build a Corporate",
+          "sed Finance Fundamentals English,Arabic 14 Sep 2026 4:00 pm : 7:00 pm More Details Online This event has Passed How to Choose Your",
+          "eep Up with Labor Market Changes Arabic 26 Aug 2026 7:00 pm : 8:00 pm More Details Hybrid This event has Passed Navigating the Cybe",
+          "Build a Corporate Career English,Arabic 25 Aug 2026 1:00 pm : 2:00 pm More Details Online This event has Passed Development Media:",
+          "From Message to Impact Al Baha Arabic 22 - 23 Aug 2026 6:00 pm : 10:00 pm More Details Online This event has Passed Cybersecurity",
+          "in the Workplace Arabic 01 Jul 2026 7:00 pm : 8:00 pm More Details Online This event has Passed Enhancing Efficienc",
+          "ce Using Artificial Intelligence Arabic 08 May 2026 9:00 pm : 10:00 pm More Details Online This event has Passed How to Choose Your"
+        ],
+        "event_like_links": [
+          {
+            "text": "Programs",
+            "href": "https://hub.misk.org.sa/en/programs/"
+          },
+          {
+            "text": "Events",
+            "href": "https://hub.misk.org.sa/en/events/"
+          },
+          {
+            "text": "العربية",
+            "href": "https://hub.misk.org.sa/ar/events/"
+          },
+          {
+            "text": "Sign in",
+            "href": "https://hub.misk.org.sa/en/events/#"
+          },
+          {
+            "text": "Programs",
+            "href": "https://hub.misk.org.sa/en/programs/"
+          },
+          {
+            "text": "Events",
+            "href": "https://hub.misk.org.sa/en/events/"
+          },
+          {
+            "text": "العربية",
+            "href": "https://hub.misk.org.sa/ar/events/"
+          },
+          {
+            "text": "Skills",
+            "href": "https://hub.misk.org.sa/events/?category=Skills#event"
+          },
+          {
+            "text": "Share",
+            "href": "https://hub.misk.org.sa/en/events/#"
+          },
+          {
+            "text": "",
+            "href": "https://hub.misk.org.sa/en/events/#"
+          },
+          {
+            "text": "Skills",
+            "href": "https://hub.misk.org.sa/events/?category=Skills#event"
+          },
+          {
+            "text": "Share",
+            "href": "https://hub.misk.org.sa/en/events/#"
+          },
+          {
+            "text": "",
+            "href": "https://hub.misk.org.sa/en/events/#"
+          },
+          {
+            "text": "Skills",
+            "href": "https://hub.misk.org.sa/events/?category=Skills#event"
+          },
+          {
+            "text": "Share",
+            "href": "https://hub.misk.org.sa/en/events/#"
+          },
+          {
+            "text": "",
+            "href": "https://hub.misk.org.sa/en/events/#"
+          },
+          {
+            "text": "Skills",
+            "href": "https://hub.misk.org.sa/events/?category=Skills#event"
+          },
+          {
+            "text": "Share",
+            "href": "https://hub.misk.org.sa/en/events/#"
+          },
+          {
+            "text": "",
+            "href": "https://hub.misk.org.sa/en/events/#"
+          },
+          {
+            "text": "Skills",
+            "href": "https://hub.misk.org.sa/events/?category=Skills#event"
+          }
+        ]
+      },
+      "script_signals": {
+        "next_data_scripts": 0,
+        "nuxt_scripts": 0,
+        "json_ld_scripts": 0,
+        "large_inline_scripts": 5
+      },
+      "network_total": 4,
+      "network_endpoints": [
+        {
+          "method": "POST",
+          "status": 200,
+          "url": "https://hub.misk.org.sa/api/events/RenderLazyLoadAllEventsOfSeries",
+          "content_type": "application/json",
+          "resource_type": "xhr",
+          "request_post_data": "{\"SkipCount\":0,\"CurrentCulture\":\"en-US\",\"CategoryId\":0,\"OrderBy\":\"\",\"EventTypeFilters\":[],\"LanguageFilters\":[],\"StatusFilters\":[],\"FromDate\":null,\"ToDate\":null,\"LocationId\":null,\"CurrentPageId\":\"4411\"}",
+          "response_shape": "json-like-invalid",
+          "preview": "{\"nextSkippedValue\":8,\"stringObjectValues\":\"<div class=\\\"article-outer v3\\\"><div class=\\\" time-label\\\"><span>Hybrid</span></div><div class=\\\"article-img\\\"><a href=\\\"/events/skills/finance-fundamentals/\\\"><img src=\\\"/media/kmkhxedd/finance-fundamentals_hub-en.png\\\" alt=\\\"logo\\\"></a></div><div class=\\\"article-content\\\"><div class=\\\"article-text-wrapper\\\"><div class=\\\"body-text-3 mgbx1 color-peach font-weight-200\\\" style=\\\"white-space:nowrap;\\\"><span class=\\\"color-peach mgafx1\\\"><i class=\\\"fas fa-circle\\\"></i></span>This event has Passed</div><div class=\\\"article-title\\\"><div class=\\\"article-title-inner 6 red\\\"><a href=/events/skills/finance-fundamentals/><b>Finance Fundamentals</b></a></div></div><div class=\\\"item-list\\\"><ul><li><i class=\\\"far fa-dxh-format font-weight-200\\\"></i><span>English,Arabic</span></li><li><i class=\\\"far fa-calendar font-weight-200\\\"></i><span>14 Sep 2026</span></li><li><i class=\\\"far fa-clock font-weight-200\\\"></i><span>4:00 pm : 7:00 pm</span></li></ul></div></div><div class=\\\"bottom-links-wrapper pdtx2 align-items-center event-item-card-wrapper\\\"><div class=\\\"card-btn-state-login d-none btn-bar-wrapper alone pdafx2\\\"><a href=\\\"/events/skills/finance-fundamentals/\\\" class=\\\"card-btn-state-login d-none btn small light-turquoise\\\">More Details\\n</a></div><div class=\\\"card-btn-state-logout d-none w-100 btn-bar-wrapper pdafx2 alone\\\"><a href=\\\"/events/skills/finance-fundamentals/\\\" class=\\\"card-btn-state-logout d-none btn small w-100 light-turquoise\\\">More Details\\n</a></div><div class=\\\"icon-link\\\"><a href=\\\"javascript:;\\\" data-recombee-id=\\\"9788\\\" data-id=\\\"9788\\\" class=\\\"btn-icon js-apply-now-show-sign-in btnBookmarkEventLogout\\\"><i class=\\\"far fa-bookmark\\\"></i></a><a id=\\\"\\\" href=\\\"javascript:;\\\" data-recombee-id=\\\"9788\\\" data-id=\\\"9788\\\" c"
+        },
+        {
+          "method": "POST",
+          "status": 200,
+          "url": "https://mpc-prod-24-s6uit34pua-uw.a.run.app/events?cee=no",
+          "content_type": "application/json",
+          "resource_type": "fetch",
+          "request_post_data": "{\"event_name\":\"PageView\",\"smart_setup\":{\"auto_web_details_data\":\"{\\\"entity_brand\\\":[{\\\"rid\\\":\\\"28393245976984225\\\",\\\"v\\\":[\\\"Misk\\\"]}],\\\"publisher\\\":[{\\\"rid\\\":\\\"2201446097395897\\\",\\\"v\\\":[\\\"Misk Skills\\\"]}],\\\"entity_name\\\":[{\\\"rid\\\":\\\"1437055995209396\\\",\\\"v\\\":[\\\"Misk Hub Events\\\"]}],\\\"currencies_accepted\\\":[{\\\"rid\\\":\\\"1857089388987865\\\",\\\"v\\\":[\\\"Misk Tracks\\\"]},{\\\"rid\\\":\\\"1409529427210095\\\",\\\"v\\\":[\\\"Finance Fundamentals\\\",\\\"Navigating the Cyber Map: How to Choose Your Specialization & Build a Corporate Career\\\",\\\"How to Choose Your Career Path and Keep Up with Labor Market Changes\\\",\\\"Development Media: From Message to Impact\\\",\\\"Cybersecurity in the Workplace\\\"]}],\\\"page_title\\\":[{\\\"rid\\\":\\\"1772292867248702\\\",\\\"v\\\":[\\\"Misk Hub Events\\\"]}],\\\"page_keywords\\\":[{\\\"rid\\\":\\\"1973203990015325\\\",\\\"v\\\":[\\\"Misk Foundation, Misk Hub, Misk Events\\\"]}],\\\"page_url\\\":[{\\\"rid\\\":\\\"1616622633528020\\\",\\\"v\\\":[\\\"Misk Tracks\\\"]}],\\\"author\\\":[{\\\"rid\\\":\\\"1097200099392293\\\",\\\"v\\\":[\\\"Misk Skills\\\"]}]}\",\"is_auto_web_details\":true},\"event_id\":\"ob3_plugin-set_4ac6d147bbc77a2ad62d9bb04ab08ab6fddef658261e2689c1ad423b6022c501\",\"fb.pixel_id\":\"1038245586939616\",\"website_context\":{\"location\":\"https://hub.misk.org.sa/e",
+          "response_shape": "empty",
+          "preview": ""
+        },
+        {
+          "method": "POST",
+          "status": 200,
+          "url": "https://client-rapi-us-west.recombee.com/misk-hub-prod/recomms/users/4cfa7b0f6d16497a992b76362ae306a7/items/?frontend_timestamp=1790586145&frontend_sign=dcda0bc425e8bbd80966bac8ddb177c94115d9c0",
+          "content_type": "application/json",
+          "resource_type": "xhr",
+          "request_post_data": "{\"count\":5,\"scenario\":\"Hero-Events-Listing-Anonymous\",\"returnProperties\":true,\"cascadeCreate\":true}",
+          "response_shape": "json-object:recommId,recomms,numberNextRecommsCalls",
+          "preview": "{\"recommId\": \"3a69c4066e98b8fe484094786cbf34ae\", \"recomms\": [], \"numberNextRecommsCalls\": 0}"
+        }
+      ],
+      "network_sample": [
+        {
+          "method": "POST",
+          "status": 200,
+          "url": "https://hub.misk.org.sa/api/events/RenderLazyLoadAllEventsOfSeries",
+          "content_type": "application/json",
+          "resource_type": "xhr",
+          "request_post_data": "{\"SkipCount\":0,\"CurrentCulture\":\"en-US\",\"CategoryId\":0,\"OrderBy\":\"\",\"EventTypeFilters\":[],\"LanguageFilters\":[],\"StatusFilters\":[],\"FromDate\":null,\"ToDate\":null,\"LocationId\":null,\"CurrentPageId\":\"4411\"}",
+          "response_shape": "json-like-invalid",
+          "preview": "{\"nextSkippedValue\":8,\"stringObjectValues\":\"<div class=\\\"article-outer v3\\\"><div class=\\\" time-label\\\"><span>Hybrid</span></div><div class=\\\"article-img\\\"><a href=\\\"/events/skills/finance-fundamentals/\\\"><img src=\\\"/media/kmkhxedd/finance-fundamentals_hub-en.png\\\" alt=\\\"logo\\\"></a></div><div class=\\\"article-content\\\"><div class=\\\"article-text-wrapper\\\"><div class=\\\"body-text-3 mgbx1 color-peach font-weight-200\\\" style=\\\"white-space:nowrap;\\\"><span class=\\\"color-peach mgafx1\\\"><i class=\\\"fas fa-circle\\\"></i></span>This event has Passed</div><div class=\\\"article-title\\\"><div class=\\\"article-title-inner 6 red\\\"><a href=/events/skills/finance-fundamentals/><b>Finance Fundamentals</b></a></div></div><div class=\\\"item-list\\\"><ul><li><i class=\\\"far fa-dxh-format font-weight-200\\\"></i><span>English,Arabic</span></li><li><i class=\\\"far fa-calendar font-weight-200\\\"></i><span>14 Sep 2026</span></li><li><i class=\\\"far fa-clock font-weight-200\\\"></i><span>4:00 pm : 7:00 pm</span></li></ul></div></div><div class=\\\"bottom-links-wrapper pdtx2 align-items-center event-item-card-wrapper\\\"><div class=\\\"card-btn-state-login d-none btn-bar-wrapper alone pdafx2\\\"><a href=\\\"/events/skills/finance-fundamentals/\\\" class=\\\"card-btn-state-login d-none btn small light-turquoise\\\">More Details\\n</a></div><div class=\\\"card-btn-state-logout d-none w-100 btn-bar-wrapper pdafx2 alone\\\"><a href=\\\"/events/skills/finance-fundamentals/\\\" class=\\\"card-btn-state-logout d-none btn small w-100 light-turquoise\\\">More Details\\n</a></div><div class=\\\"icon-link\\\"><a href=\\\"javascript:;\\\" data-recombee-id=\\\"9788\\\" data-id=\\\"9788\\\" class=\\\"btn-icon js-apply-now-show-sign-in btnBookmarkEventLogout\\\"><i class=\\\"far fa-bookmark\\\"></i></a><a id=\\\"\\\" href=\\\"javascript:;\\\" data-recombee-id=\\\"9788\\\" data-id=\\\"9788\\\" c"
+        },
+        {
+          "method": "POST",
+          "status": 200,
+          "url": "https://mpc-prod-24-s6uit34pua-uw.a.run.app/events?cee=no",
+          "content_type": "application/json",
+          "resource_type": "fetch",
+          "request_post_data": "{\"event_name\":\"PageView\",\"smart_setup\":{\"auto_web_details_data\":\"{\\\"entity_brand\\\":[{\\\"rid\\\":\\\"28393245976984225\\\",\\\"v\\\":[\\\"Misk\\\"]}],\\\"publisher\\\":[{\\\"rid\\\":\\\"2201446097395897\\\",\\\"v\\\":[\\\"Misk Skills\\\"]}],\\\"entity_name\\\":[{\\\"rid\\\":\\\"1437055995209396\\\",\\\"v\\\":[\\\"Misk Hub Events\\\"]}],\\\"currencies_accepted\\\":[{\\\"rid\\\":\\\"1857089388987865\\\",\\\"v\\\":[\\\"Misk Tracks\\\"]},{\\\"rid\\\":\\\"1409529427210095\\\",\\\"v\\\":[\\\"Finance Fundamentals\\\",\\\"Navigating the Cyber Map: How to Choose Your Specialization & Build a Corporate Career\\\",\\\"How to Choose Your Career Path and Keep Up with Labor Market Changes\\\",\\\"Development Media: From Message to Impact\\\",\\\"Cybersecurity in the Workplace\\\"]}],\\\"page_title\\\":[{\\\"rid\\\":\\\"1772292867248702\\\",\\\"v\\\":[\\\"Misk Hub Events\\\"]}],\\\"page_keywords\\\":[{\\\"rid\\\":\\\"1973203990015325\\\",\\\"v\\\":[\\\"Misk Foundation, Misk Hub, Misk Events\\\"]}],\\\"page_url\\\":[{\\\"rid\\\":\\\"1616622633528020\\\",\\\"v\\\":[\\\"Misk Tracks\\\"]}],\\\"author\\\":[{\\\"rid\\\":\\\"1097200099392293\\\",\\\"v\\\":[\\\"Misk Skills\\\"]}]}\",\"is_auto_web_details\":true},\"event_id\":\"ob3_plugin-set_4ac6d147bbc77a2ad62d9bb04ab08ab6fddef658261e2689c1ad423b6022c501\",\"fb.pixel_id\":\"1038245586939616\",\"website_context\":{\"location\":\"https://hub.misk.org.sa/e",
+          "response_shape": "empty",
+          "preview": ""
+        },
+        {
+          "method": "POST",
+          "status": 200,
+          "url": "https://client-rapi-us-west.recombee.com/misk-hub-prod/recomms/users/4cfa7b0f6d16497a992b76362ae306a7/items/?frontend_timestamp=1790586145&frontend_sign=dcda0bc425e8bbd80966bac8ddb177c94115d9c0",
+          "content_type": "application/json",
+          "resource_type": "xhr",
+          "request_post_data": "{\"count\":5,\"scenario\":\"Hero-Events-Listing-Anonymous\",\"returnProperties\":true,\"cascadeCreate\":true}",
+          "response_shape": "json-object:recommId,recomms,numberNextRecommsCalls",
+          "preview": "{\"recommId\": \"3a69c4066e98b8fe484094786cbf34ae\", \"recomms\": [], \"numberNextRecommsCalls\": 0}"
+        },
+        {
+          "method": "POST",
+          "status": 200,
+          "url": "https://mpc-prod-24-s6uit34pua-uw.a.run.app/events?cee=no",
+          "content_type": "application/json",
+          "resource_type": "fetch",
+          "request_post_data": "{\"event_name\":\"PageView\",\"smart_setup\":{\"auto_web_details_data\":\"{\\\"entity_brand\\\":[{\\\"rid\\\":\\\"28393245976984225\\\",\\\"v\\\":[\\\"Misk\\\"]}],\\\"publisher\\\":[{\\\"rid\\\":\\\"2201446097395897\\\",\\\"v\\\":[\\\"Misk Skills\\\"]}],\\\"entity_name\\\":[{\\\"rid\\\":\\\"1437055995209396\\\",\\\"v\\\":[\\\"Misk Hub Events\\\"]}],\\\"currencies_accepted\\\":[{\\\"rid\\\":\\\"1857089388987865\\\",\\\"v\\\":[\\\"Misk Tracks\\\"]},{\\\"rid\\\":\\\"1409529427210095\\\",\\\"v\\\":[\\\"Finance Fundamentals\\\",\\\"Navigating the Cyber Map: How to Choose Your Specialization & Build a Corporate Career\\\",\\\"How to Choose Your Career Path and Keep Up with Labor Market Changes\\\",\\\"Development Media: From Message to Impact\\\",\\\"Cybersecurity in the Workplace\\\"]}],\\\"page_title\\\":[{\\\"rid\\\":\\\"1772292867248702\\\",\\\"v\\\":[\\\"Misk Hub Events\\\"]}],\\\"page_keywords\\\":[{\\\"rid\\\":\\\"1973203990015325\\\",\\\"v\\\":[\\\"Misk Foundation, Misk Hub, Misk Events\\\"]}],\\\"page_url\\\":[{\\\"rid\\\":\\\"1616622633528020\\\",\\\"v\\\":[\\\"Misk Tracks\\\"]}],\\\"author\\\":[{\\\"rid\\\":\\\"1097200099392293\\\",\\\"v\\\":[\\\"Misk Skills\\\"]}]}\",\"is_auto_web_details\":true},\"event_id\":\"ob3_plugin-set_0e3936912056aa08f5f2b37be42fef03f57c046dd1b76b33e8fe080e1432c4fc\",\"fb.pixel_id\":\"1038245586939616\",\"website_context\":{\"location\":\"https://hub.misk.org.sa/e",
+          "response_shape": "empty",
+          "preview": ""
+        }
+      ]
+    },
+    {
       "id": "saudi-pro-league-fixtures",
       "probed_at": "2026-09-25T23:08:01.328Z",
       "name": "Saudi Pro League Fixtures",
@@ -204,8 +728,402 @@
       "network_sample": []
     },
     {
+      "id": "saudi-water-authority-events",
+      "probed_at": "2026-09-28T09:02:45.383Z",
+      "name": "Saudi Water Authority Events",
+      "priority": 44,
+      "url": "https://www.swa.gov.sa/en/events",
+      "final_url": "https://www.swa.gov.sa/en/events",
+      "status": "ok",
+      "http_status": 200,
+      "navigation_error": "",
+      "duration_ms": 12484,
+      "classification": "browser-network-api",
+      "next_action": "ثبت endpoint مرشحًا كجامع مباشر، ثم اكتب extractor من JSON مع اختبار انحدار.",
+      "title": "Events Calendar | SWA",
+      "text_bytes": 2561,
+      "html_bytes": 240596,
+      "html_snapshot": "data/raw/browser-probes/saudi-water-authority-events-2026-09-28T09-00-45-944Z.html",
+      "screenshot": "data/raw/browser-probes/saudi-water-authority-events-2026-09-28T09-00-45-944Z.png",
+      "signals": {
+        "has_next_data": false,
+        "has_nuxt": false,
+        "has_json_ld": false,
+        "has_event_schema": false,
+        "date_snippets": [
+          "nt Global Prize for Innovation in Water 2026-12-14 - 2026-12-14 Global Awards Ceremony Jeddah – The Ritz-Carlton Upcoming Show Det",
+          "al Water Sustainability Conference 2026 2026-12-14 - 2026-12-16 Global Conference Jeddah-The Ritz-Carlton Upcoming Show Details Ex",
+          "ships Company Forum and Awards Ceremony 2026-12-01 - 2026-12-01 Local party Fairmont - Riyadh Upcoming Show Details Export to Cale",
+          "ndar Saudi National Day 2026-09-23 - 2026-09-24 National celebration Riyadh Completed Show Details Export to Calendar Saudi Fla",
+          "g Day 2027-03-11 - 2027-03-12 National Celebration Riyadh Upcoming Show Details Export to Calendar Foundation Day 2027",
+          "-02-22 - 2027-02-23 National Celebration Riyadh Upcoming Show Details Export to Calendar World Conference on",
+          "Desalination and Water Reuse 2026-11-01 - 2026-11-05 Global conference Riyadh Upcoming Show Details Export to Calendar",
+          "Global Infrastructure Expo 2026-09-15 - 2026-09-17 Global Conference Riyadh Intl. Convention & Exhibition Center Completed Show De"
+        ],
+        "event_like_links": [
+          {
+            "text": "Events Calendar",
+            "href": "https://www.swa.gov.sa/en/events"
+          },
+          {
+            "text": "العربية",
+            "href": "https://www.swa.gov.sa/ar/events"
+          },
+          {
+            "text": "Share on Twitter/X - opens in a new tab",
+            "href": "https://twitter.com/intent/tweet?url=https%3A%2F%2Fwww.swa.gov.sa%2Fen%2Fevents"
+          },
+          {
+            "text": "Share on Facebook - opens in a new tab",
+            "href": "https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fwww.swa.gov.sa%2Fen%2Fevents"
+          },
+          {
+            "text": "Share on WhatsApp - opens in a new tab",
+            "href": "https://api.whatsapp.com/send?text=https%3A%2F%2Fwww.swa.gov.sa%2Fen%2Fevents"
+          },
+          {
+            "text": "Show Details",
+            "href": "https://www.swa.gov.sa/en/events/Event-639167725551054643"
+          },
+          {
+            "text": "Show Details",
+            "href": "https://www.swa.gov.sa/en/events/Event-639166882740331066"
+          },
+          {
+            "text": "Show Details",
+            "href": "https://www.swa.gov.sa/en/events/Event-639161702137808713"
+          },
+          {
+            "text": "Show Details",
+            "href": "https://www.swa.gov.sa/en/events/Event-639153024443263826"
+          },
+          {
+            "text": "Show Details",
+            "href": "https://www.swa.gov.sa/en/events/Event-639152942884779740"
+          },
+          {
+            "text": "Show Details",
+            "href": "https://www.swa.gov.sa/en/events/Event-639152936274801348"
+          },
+          {
+            "text": "Show Details",
+            "href": "https://www.swa.gov.sa/en/events/Event-639152055712272031"
+          },
+          {
+            "text": "Show Details",
+            "href": "https://www.swa.gov.sa/en/events/Event-639148593206554999"
+          },
+          {
+            "text": "Show Details",
+            "href": "https://www.swa.gov.sa/en/events/Event-639148555832355516"
+          }
+        ]
+      },
+      "script_signals": {
+        "next_data_scripts": 0,
+        "nuxt_scripts": 0,
+        "json_ld_scripts": 0,
+        "large_inline_scripts": 1
+      },
+      "network_total": 20,
+      "network_endpoints": [
+        {
+          "method": "GET",
+          "status": 200,
+          "url": "https://e-services-api.swa.gov.sa/api/EvaluationPage/evaluation-counts?fullUrl=https://www.swa.gov.sa/en/events",
+          "content_type": "application/json",
+          "resource_type": "fetch",
+          "request_post_data": "",
+          "response_shape": "json-object:totalEvaluations,yesCount,latestPageUpdate",
+          "preview": "{\"totalEvaluations\":0,\"yesCount\":0,\"latestPageUpdate\":null}"
+        },
+        {
+          "method": "POST",
+          "status": 200,
+          "url": "https://e-services-api.swa.gov.sa/api/PageVisitsCount?url=https%3A%2F%2Fwww.swa.gov.sa%2Fen%2Fevents&pageTitle=Events%20Calendar%20%7C%20SWA",
+          "content_type": "",
+          "resource_type": "fetch",
+          "request_post_data": "{}",
+          "response_shape": "empty",
+          "preview": ""
+        },
+        {
+          "method": "GET",
+          "status": 200,
+          "url": "https://e-services-api.swa.gov.sa/api/event/published",
+          "content_type": "application/json",
+          "resource_type": "fetch",
+          "request_post_data": "",
+          "response_shape": "json-like-invalid",
+          "preview": "[{\"id\":33,\"slug\":\"Event-639167725551054643\",\"titleAr\":\"جائزة الابتكار العالمية في المياه\",\"titleEn\":\"Global Prize for Innovation in Water\",\"typeAr\":\"حفل جوائز عالمي للمياه\",\"typeEn\":\"Global Awards Ceremony\",\"descriptionAr\":\"<p class=\\\"ql-align-right ql-direction-rtl\\\">تُقام جائزة الابتكار العالمية في المياه بتنظيم من الهيئة السعودية للمياه، لتجمع نخبة من المبتكرين والباحثين ورواد الأعمال والخبراء من مختلف أنحاء العالم. وتهدف الجائزة إلى تسريع تبني الحلول المبتكرة التي تسهم في مواجهة التحديات المائية العالمية وتعزيز استدامة الموارد المائية. وتشمل الجائزة فئات متنوعة تغطي تقنيات إنتاج المياه، وإعادة الاستخدام، والاقتصاد الدائري، وكفاءة استهلاك المياه، والتحول الرقمي والإدارة الذكية للمياه، بما يعزز دور المملكة كمركز عالمي للابتكار في قطاع المياه.</p><p><br></p>\",\"descriptionEn\":\"<p>The Global Water Innovation Award (GPIW) is run by the Saudi Water Authority and brings together a top bunch of innovators, researchers, entrepreneurs, and experts from all over the world. The award is all about speeding up the use of smart solutions to tackle global water problems and support sustainable water resources. It covers different areas like water production tech, reuse, the circular economy, water efficiency, digital changes, and smart water management, showing off the Kingdom's role as a global hotspot for water innovation.</p>\",\"externalLink\":\"https://gpiw.net/ar\",\"locationAr\":\"جدة – الريتز كارلتون\",\"locationEn\":\"Jeddah – The Ritz-Carlton\",\"status\":1,\"creationDate\":\"2026-06-11T11:02:35.1914662\",\"startDate\":\"2026-12-14T09:00:00\",\"endDate\":\"2026-12-14T16:00:00\",\"publishDate\":\"2026-06-11T11:07:03.7317518\",\"mainImage\":{\"id\":68265,\"fileName\":\"شعار 6.png\",\"objectKey\":\"Events/a4ae75a0b5914231a232796f3b7fd47a_2026_06_11_11_02_35_109.png\",\"fileUrl\":\"https://swa-cdn.swa.gov.sa/Events/a4ae75"
+        },
+        {
+          "method": "GET",
+          "status": 200,
+          "url": "https://e-services-api.swa.gov.sa/api/PageVisitsCount?url=https%3A%2F%2Fwww.swa.gov.sa%2Fen%2Fevents",
+          "content_type": "application/json",
+          "resource_type": "fetch",
+          "request_post_data": "",
+          "response_shape": "json-object:id,url,pageTitle,totalCount,todayCount,lastUpdated",
+          "preview": "{\"id\":4547,\"url\":\"https://www.swa.gov.sa/en/events\",\"pageTitle\":\"Events Calendar | SWA\",\"totalCount\":752,\"todayCount\":2,\"lastUpdated\":\"2026-09-28T09:02:37.9418524\"}"
+        },
+        {
+          "method": "GET",
+          "status": 200,
+          "url": "https://cdn77.api.userway.org/api/img-dscr/v2/0UYGxnoXJv/3624675/Mzv57s4G8iSPKW7I/alts.json?dto=%7B%22sorted%22%3A%5B%7B%22src%22%3A%22https%3A%2F%2Fwww.swa.gov.sa%2Fassets%2Fimages%2Flogos%2Fswa-logo-dark.svg%22%2C%22alt%22%3A%22SWA%22%2C%22dir%22%3A%22RO%22%7D%2C%7B%22src%22%3A%22https%3A%2F%2Fwww.swa.gov.sa%2Fassets%2Fsvg%2FGov_Logo.svg%22%2C%22alt%22%3A%22Gov_Logo%22%2C%22dir%22%3A%22RO%22%7D%2C%7B%22src%22%3A%22https%3A%2F%2Fwww.swa.gov.sa%2Fassets%2Fsvg%2Fhttps.svg%22%2C%22alt%22%3A%22https%22%2C%22dir%22%3A%22RO%22%7D%2C%7B%22src%22%3A%22https%3A%2F%2Fwww.swa.gov.sa%2Fassets%2Fsvg%2Fksa-flag.svg%22%2C%22alt%22%3A%22flag%22%2C%22dir%22%3A%22RO%22%7D%2C%7B%22src%22%3A%22https%3A%2F%2Fwww.swa.gov.sa%2Fassets%2Fsvg%2Flink-04.svg%22%2C%22alt%22%3A%22link%22%2C%22dir%22%3A%22RO%22%7D%5D%2C%22tier%22%3A%22PAID_QUOTA_TIER%22%2C%22pageUrl%22%3A%22https%3A%2F%2Fwww.swa.gov.sa%2Fen%2Fevents%22%7D",
+          "content_type": "application/json",
+          "resource_type": "fetch",
+          "request_post_data": "",
+          "response_shape": "json-object:payload,payloadType",
+          "preview": "{\"payload\":{\"missingAlts\":[{\"src\":\"https://www.swa.gov.sa/assets/images/logos/swa-logo-dark.svg\",\"alt\":null,\"approved\":false,\"decorative\":false,\"metadata\":{\"skippedForReadOnly\":true,\"foundCachedResponse\":true}},{\"src\":\"https://www.swa.gov.sa/assets/svg/Gov_Logo.svg\",\"alt\":null,\"approved\":false,\"decorative\":false,\"metadata\":{\"skippedForReadOnly\":true,\"foundCachedResponse\":true}},{\"src\":\"https://www.swa.gov.sa/assets/svg/https.svg\",\"alt\":null,\"approved\":false,\"decorative\":false,\"metadata\":{\"skippedForReadOnly\":true,\"foundCachedResponse\":true}},{\"src\":\"https://www.swa.gov.sa/assets/svg/ksa-flag.svg\",\"alt\":null,\"approved\":false,\"decorative\":false,\"metadata\":{\"skippedForReadOnly\":true,\"foundCachedResponse\":true}},{\"src\":\"https://www.swa.gov.sa/assets/svg/link-04.svg\",\"alt\":null,\"approved\":false,\"decorative\":false,\"metadata\":{\"skippedForReadOnly\":true,\"foundCachedResponse\":true}}]},\"payloadType\":\"MissingAltsDto\"}"
+        },
+        {
+          "method": "POST",
+          "status": 200,
+          "url": "https://api.userway.org/api/br-links/v0/pdf-links",
+          "content_type": "application/json",
+          "resource_type": "xhr",
+          "request_post_data": "{\"userId\":426018,\"siteId\":3624675,\"page\":\"/en/events\",\"fullPage\":\"https://www.swa.gov.sa/en/events\",\"links\":[\"https://swa-cdn.swa.gov.sa/Reports/SWA_Brand_Guideline.pdf\"]}",
+          "response_shape": "json-object:statuses",
+          "preview": "{\"statuses\":[1]}"
+        },
+        {
+          "method": "GET",
+          "status": 200,
+          "url": "https://cdn77.api.userway.org/api/img-dscr/v2/0UYGxnoXJv/3624675/Mzv57s4G8iSPKW7I/alts.json?dto=%7B%22sorted%22%3A%5B%7B%22src%22%3A%22https%3A%2F%2Fswa-cdn.swa.gov.sa%2FEvents%2F36decb99545d4da5bfb6b09fb000691b_2026_05_25_10_48_20_766.jpg%22%2C%22alt%22%3A%22Saudi%20National%20Day%22%2C%22dir%22%3A%22RO%22%7D%2C%7B%22src%22%3A%22https%3A%2F%2Fswa-cdn.swa.gov.sa%2FEvents%2F8ca9c4254c334d8d90c85b0c4f5f275c_2026_05_25_08_13_47_482.jpg%22%2C%22alt%22%3A%22Foundation%20Day%22%2C%22dir%22%3A%22RO%22%7D%2C%7B%22src%22%3A%22https%3A%2F%2Fswa-cdn.swa.gov.sa%2FEvents%2F9535a79c349840bf8c92eeefcc04f2e5_2026_05_20_06_33_03_235.png%22%2C%22alt%22%3A%22Saudi%20Water%20Week%22%2C%22dir%22%3A%22RO%22%7D%2C%7B%22src%22%3A%22https%3A%2F%2Fswa-cdn.swa.gov.sa%2FEvents%2Fa8b384622a1d4281b64b6fd75c82bd5e_2026_05_25_07_44_38_769.jpg%22%2C%22alt%22%3A%22World%20Conference%20on%20Desalination%20and%20Water%20Reuse%22%2C%22dir%22%3A%22RO%22%7D%2C%7B%22src%22%3A%22https%3A%2F%2Fswa-cdn.swa.gov.sa%2FEvents%2Fb4fed1f10c414a39a5c49cd9fda6a63d_2026_05_20_07_35_20_655.png%22%2C%22alt%22%3A%22Global%20Infrastructure%20Expo%22%2C%22dir%22%3A%22RO%22%7D%2C%7B%22src%22%3A%22https%3A%2F%2Fswa-cdn.swa.gov.sa%2FEvents%2Ff168ba04d30d4fec96ca03600421bd99_2026_05_25_08_24_48_478.png%22%2C%22alt%22%3A%22Saudi%20Flag%20Day%22%2C%22dir%22%3A%22RO%22%7D%2C%7B%22src%22%3A%22https%3A%2F%2Fwww.swa.gov.sa%2Fassets%2Fimages%2Fevents-calendar%2FTrailing%2520icon.svg%22%2C%22alt%22%3A%22%22%2C%22dir%22%3A%22RO%22%7D%5D%2C%22tier%22%3A%22PAID_QUOTA_TIER%22%2C%22pageUrl%22%3A%22https%3A%2F%2Fwww.swa.gov.sa%2Fen%2Fevents%22%7D",
+          "content_type": "application/json",
+          "resource_type": "fetch",
+          "request_post_data": "",
+          "response_shape": "json-object:payload,payloadType",
+          "preview": "{\"payload\":{\"missingAlts\":[{\"src\":\"https://swa-cdn.swa.gov.sa/Events/36decb99545d4da5bfb6b09fb000691b_2026_05_25_10_48_20_766.jpg\",\"alt\":null,\"approved\":false,\"decorative\":false,\"metadata\":{\"skippedForReadOnly\":true,\"foundCachedResponse\":true}},{\"src\":\"https://swa-cdn.swa.gov.sa/Events/8ca9c4254c334d8d90c85b0c4f5f275c_2026_05_25_08_13_47_482.jpg\",\"alt\":null,\"approved\":false,\"decorative\":false,\"metadata\":{\"skippedForReadOnly\":true}},{\"src\":\"https://swa-cdn.swa.gov.sa/Events/9535a79c349840bf8c92eeefcc04f2e5_2026_05_20_06_33_03_235.png\",\"alt\":null,\"approved\":false,\"decorative\":false,\"metadata\":{\"skippedForReadOnly\":true}},{\"src\":\"https://swa-cdn.swa.gov.sa/Events/a8b384622a1d4281b64b6fd75c82bd5e_2026_05_25_07_44_38_769.jpg\",\"alt\":null,\"approved\":false,\"decorative\":false,\"metadata\":{\"skippedForReadOnly\":true}},{\"src\":\"https://swa-cdn.swa.gov.sa/Events/b4fed1f10c414a39a5c49cd9fda6a63d_2026_05_20_07_35_20_655.png\",\"alt\":null,\"approved\":false,\"decorative\":false,\"metadata\":{\"skippedForReadOnly\":true}},{\"src\":\"https://swa-cdn.swa.gov.sa/Events/f168ba04d30d4fec96ca03600421bd99_2026_05_25_08_24_48_478.png\",\"alt\":null,\"approved\":false,\"decorative\":false,\"metadata\":{\"skippedForReadOnly\":true,\"foundCachedResponse\":true}},{\"src\":\"https://www.swa.gov.sa/assets/images/events-calendar/Trailing%20icon.svg\",\"alt\":null,\"approved\":false,\"decorative\":false,\"metadata\":{\"skippedForReadOnly\":true,\"foundCachedResponse\":true}}]},\"payloadType\":\"MissingAltsDto\"}"
+        },
+        {
+          "method": "GET",
+          "status": 200,
+          "url": "https://api.userway.org/api/a11y-data/v0/page/https%3A%2F%2Fwww.swa.gov.sa%2Fen%2Fevents/DESKTOP/WIDGET_ON/status",
+          "content_type": "application/json",
+          "resource_type": "fetch",
+          "request_post_data": "",
+          "response_shape": "json-object:payload,payloadType",
+          "preview": "{\"payload\":{\"status\":\"CONTRIB_MISSING\"},\"payloadType\":\"PageContribStatusDto\"}"
+        },
+        {
+          "method": "PUT",
+          "status": 200,
+          "url": "https://api.userway.org/api/a11y-data/v0/page/https%3A%2F%2Fwww.swa.gov.sa%2Fen%2Fevents/DESKTOP/contrib",
+          "content_type": "application/json",
+          "resource_type": "xhr",
+          "request_post_data": "{\"accountId\":\"0UYGxnoXJv\",\"viewWidth\":1280,\"viewHeight\":720,\"clientTz\":\"0\",\"uwWidget\":{\"uwFreeWidget\":\"WIDGET_ON\",\"uwAiWidget\":\"WIDGET_ON\"},\"rulesStats\":{\"R_1\":21,\"R_44\":4,\"R_50\":1},\"accScore\":{\"beforeRemediation\":93.98581560283688,\"afterRemediation\":93.98581560283688}}",
+          "response_shape": "json-object:payload,payloadType",
+          "preview": "{\"payload\":{\"status\":\"CONTRIB_PRESENT\"},\"payloadType\":\"PageContribStatusDto\"}"
+        }
+      ],
+      "network_sample": [
+        {
+          "method": "POST",
+          "status": 200,
+          "url": "https://api.userway.org/api/v1/tunings/0UYGxnoXJv",
+          "content_type": "application/json",
+          "resource_type": "fetch",
+          "request_post_data": "{\"s\":{},\"o\":\"https://www.swa.gov.sa\",\"uid\":\"745e7395-754c-49eb-8311-b24fdb74c5e1\",\"v\":\"2026-09-01-10-22-26\",\"wl\":\"full\",\"c\":\"\"}",
+          "response_shape": "json-object:code,data,checksum",
+          "preview": "{\"code\":200,\"data\":{\"tunings\":{\"widget_language\":null,\"widget_icon_type\":null,\"widget_position\":null,\"widget_icon_size\":\"large\",\"widget_color\":\"#1B8354\",\"widget_no_follow\":true,\"widget_sounds\":true,\"screenReaderVersion\":\"v2\",\"site_name\":\"swa.gov.sa\",\"isLAUser\":false,\"widget_no_report\":true,\"dynamic_alpine_images_processing\":true,\"new_manage\":true},\"services\":{\"siteId\":3624675,\"userId\":426018,\"noManage\":false,\"noLogo\":false,\"WHITE_LABEL\":{\"is_enabled\":true,\"is_renewable\":false,\"hide_report\":true,\"hide_manage\":true,\"hide_logo\":true,\"hide_asterisk\":true,\"hide_donate\":true,\"accessibility_report\":true},\"paidAi\":true},\"remediation\":{},\"remediationV2\":{\"strategy\":\"AUTO\",\"consolidated\":\"https://cdn.userway.org/remediations/consolidated/3624675/UoQUIswMA6jLs8h9.json\",\"version\":0},\"imageAlt\":{\"version\":\"ALTS_V2\",\"resourceHash\":\"Mzv57s4G8iSPKW7I\",\"tier\":\"PAID_QUOTA_TIER\",\"quota\":5000,\"usage\":5000,\"state\":\"ALTS_ON\",\"missingAlts\":[]},\"widgetCustomLanguages\":[]},\"checksum\":\"fbb0f7090873a86fd4ebddc7e47cf958dff5c41f9ffe056e47681c57865f528b\"}"
+        },
+        {
+          "method": "GET",
+          "status": 200,
+          "url": "https://cdn.userway.org/widgetapp/2026-09-01-10-22-26/locales/en.json",
+          "content_type": "application/json",
+          "resource_type": "xhr",
+          "request_post_data": "",
+          "response_shape": "json-object:widget,skip_links",
+          "preview": "{\"widget\":{\"html_lst_title\":\"Translations Menu\",\"html_title\":\"Accessibility Menu\",\"text_icon_small\":\"Accessibility\",\"text_icon_large\":\"Accessibility</br>Menu\",\"new_tab\":\"opens in a new tab\",\"new_tab_substring\":\"new tab\",\"new_window_substring\":\"new window\",\"broken_links\":{\"target_site_not_available\":\"target website may not be available\"}},\"skip_links\":{\"open_accessibility_nav\":\"Open the Accessible Navigation Menu\",\"open_accessibility_menu\":\"Open the accessibility menu\",\"skip\":\"Skip to main content\",\"enable_visually_impaired\":\"Enable accessibility for low vision\",\"disable_visually_impaired\":\"Disable accessibility for low vision\",\"title\":\"Quick Accessibility Options\"}}"
+        },
+        {
+          "method": "GET",
+          "status": 200,
+          "url": "https://cdn.userway.org/remediations/consolidated/3624675/UoQUIswMA6jLs8h9.json",
+          "content_type": "application/json",
+          "resource_type": "xhr",
+          "request_post_data": "",
+          "response_shape": "json-like-invalid",
+          "preview": "{\"MissingAlts\":[{\"src\":\"https://b.tile.openstreetmap.org/6/42/28.png\",\"alt\":\"Map showing coastal area near Oman, with labeled regions and water.\",\"approved\":false,\"decorative\":false},{\"src\":\"https://b.tile.openstreetmap.org/6/38/26.png\",\"alt\":\"A map showing parts of Israel and Jordan, with labeled cities and regions.\",\"approved\":false,\"decorative\":false},{\"src\":\"https://a.tile.openstreetmap.org/6/42/27.png\",\"alt\":\"Map showing coastal regions and cities in Oman and the surrounding area.\",\"approved\":false,\"decorative\":false},{\"src\":\"https://a.tile.openstreetmap.org/6/40/26.png\",\"alt\":\"Map showing the borders of Kuwait and southern Iraq, with labeled regions in Arabic.\",\"approved\":false,\"decorative\":false},{\"src\":\"https://b.tile.openstreetmap.org/6/39/28.png\",\"alt\":\"A detailed map of southwestern Saudi Arabia, highlighting regions like Al-Baha and Asir, with coastal features along the Red Sea.\",\"approved\":false,\"decorative\":false},{\"src\":\"https://a.tile.openstreetmap.org/6/39/27.png\",\"alt\":\"A map showing various regions and roads in Saudi Arabia, including Al-Qassim and Al-Madinah.\",\"approved\":false,\"decorative\":false},{\"src\":\"https://b.tile.openstreetmap.org/6/41/26.png\",\"alt\":\"A detailed map of a region in Iran, highlighting geographical features and administrative boundaries.\",\"approved\":false,\"decorative\":false},{\"src\":\"https://a.tile.openstreetmap.org/6/41/28.png\",\"alt\":\"A map showing regions with Arabic labels, including محافظة ظفار and محافظة المهرة, with a coastal area visible.\",\"approved\":false,\"decorative\":false},{\"src\":\"https://c.tile.openstreetmap.org/6/38/27.png\",\"alt\":\"Map showing the Red Sea with coastal areas labeled in Arabic, including locations like Yanbu.\",\"approved\":false,\"decorative\":false},{\"src\":\"https://b.tile.openstreetmap.org/6/40/27.png\",\"alt\":\""
+        },
+        {
+          "method": "GET",
+          "status": 200,
+          "url": "https://cdn.userway.org/remediations/consolidated/3624675/UoQUIswMA6jLs8h9.json",
+          "content_type": "application/json",
+          "resource_type": "fetch",
+          "request_post_data": "",
+          "response_shape": "json-like-invalid",
+          "preview": "{\"MissingAlts\":[{\"src\":\"https://b.tile.openstreetmap.org/6/42/28.png\",\"alt\":\"Map showing coastal area near Oman, with labeled regions and water.\",\"approved\":false,\"decorative\":false},{\"src\":\"https://b.tile.openstreetmap.org/6/38/26.png\",\"alt\":\"A map showing parts of Israel and Jordan, with labeled cities and regions.\",\"approved\":false,\"decorative\":false},{\"src\":\"https://a.tile.openstreetmap.org/6/42/27.png\",\"alt\":\"Map showing coastal regions and cities in Oman and the surrounding area.\",\"approved\":false,\"decorative\":false},{\"src\":\"https://a.tile.openstreetmap.org/6/40/26.png\",\"alt\":\"Map showing the borders of Kuwait and southern Iraq, with labeled regions in Arabic.\",\"approved\":false,\"decorative\":false},{\"src\":\"https://b.tile.openstreetmap.org/6/39/28.png\",\"alt\":\"A detailed map of southwestern Saudi Arabia, highlighting regions like Al-Baha and Asir, with coastal features along the Red Sea.\",\"approved\":false,\"decorative\":false},{\"src\":\"https://a.tile.openstreetmap.org/6/39/27.png\",\"alt\":\"A map showing various regions and roads in Saudi Arabia, including Al-Qassim and Al-Madinah.\",\"approved\":false,\"decorative\":false},{\"src\":\"https://b.tile.openstreetmap.org/6/41/26.png\",\"alt\":\"A detailed map of a region in Iran, highlighting geographical features and administrative boundaries.\",\"approved\":false,\"decorative\":false},{\"src\":\"https://a.tile.openstreetmap.org/6/41/28.png\",\"alt\":\"A map showing regions with Arabic labels, including محافظة ظفار and محافظة المهرة, with a coastal area visible.\",\"approved\":false,\"decorative\":false},{\"src\":\"https://c.tile.openstreetmap.org/6/38/27.png\",\"alt\":\"Map showing the Red Sea with coastal areas labeled in Arabic, including locations like Yanbu.\",\"approved\":false,\"decorative\":false},{\"src\":\"https://b.tile.openstreetmap.org/6/40/27.png\",\"alt\":\""
+        },
+        {
+          "method": "GET",
+          "status": 200,
+          "url": "https://e-services-api.swa.gov.sa/api/EvaluationPage/reasons",
+          "content_type": "application/json",
+          "resource_type": "fetch",
+          "request_post_data": "",
+          "response_shape": "json-array:10",
+          "preview": "[{\"id\":17,\"nameAr\":\"كانت مفيدة\",\"nameEn\":\"It was helpful\",\"showForYes\":true},{\"id\":18,\"nameAr\":\"الإجابات كانت مرتبطة\",\"nameEn\":\"The answers were relevant\",\"showForYes\":true},{\"id\":19,\"nameAr\":\"مكتوبة بشكل جيد\",\"nameEn\":\"Well written\",\"showForYes\":true},{\"id\":20,\"nameAr\":\"التصميم جعله من السهل قراءته\",\"nameEn\":\"Design made it easy to read\",\"showForYes\":true},{\"id\":21,\"nameAr\":\"أخرى\",\"nameEn\":\"Other\",\"showForYes\":true},{\"id\":22,\"nameAr\":\"توجد مشكلة تقنية\",\"nameEn\":\"There is a technical issue\",\"showForYes\":false},{\"id\":23,\"nameAr\":\"لم أستطع إيجاد إجابة ذات صلة\",\"nameEn\":\"Couldn't find a relevant answer\",\"showForYes\":false},{\"id\":24,\"nameAr\":\"مكتوبة بشكل سيء\",\"nameEn\":\"Poorly written\",\"showForYes\":false},{\"id\":25,\"nameAr\":\"التصميم جعله من الصعب قراءته\",\"nameEn\":\"Design made it hard to read\",\"showForYes\":false},{\"id\":26,\"nameAr\":\"أخرى\",\"nameEn\":\"Other\",\"showForYes\":false}]"
+        },
+        {
+          "method": "GET",
+          "status": 200,
+          "url": "https://e-services-api.swa.gov.sa/api/EvaluationPage/evaluation-counts?fullUrl=https://www.swa.gov.sa/en/events",
+          "content_type": "application/json",
+          "resource_type": "fetch",
+          "request_post_data": "",
+          "response_shape": "json-object:totalEvaluations,yesCount,latestPageUpdate",
+          "preview": "{\"totalEvaluations\":0,\"yesCount\":0,\"latestPageUpdate\":null}"
+        },
+        {
+          "method": "POST",
+          "status": 200,
+          "url": "https://e-services-api.swa.gov.sa/api/PageVisitsCount?url=https%3A%2F%2Fwww.swa.gov.sa%2Fen%2Fevents&pageTitle=Events%20Calendar%20%7C%20SWA",
+          "content_type": "",
+          "resource_type": "fetch",
+          "request_post_data": "{}",
+          "response_shape": "empty",
+          "preview": ""
+        },
+        {
+          "method": "GET",
+          "status": 200,
+          "url": "https://e-services-api.swa.gov.sa/api/event/published",
+          "content_type": "application/json",
+          "resource_type": "fetch",
+          "request_post_data": "",
+          "response_shape": "json-like-invalid",
+          "preview": "[{\"id\":33,\"slug\":\"Event-639167725551054643\",\"titleAr\":\"جائزة الابتكار العالمية في المياه\",\"titleEn\":\"Global Prize for Innovation in Water\",\"typeAr\":\"حفل جوائز عالمي للمياه\",\"typeEn\":\"Global Awards Ceremony\",\"descriptionAr\":\"<p class=\\\"ql-align-right ql-direction-rtl\\\">تُقام جائزة الابتكار العالمية في المياه بتنظيم من الهيئة السعودية للمياه، لتجمع نخبة من المبتكرين والباحثين ورواد الأعمال والخبراء من مختلف أنحاء العالم. وتهدف الجائزة إلى تسريع تبني الحلول المبتكرة التي تسهم في مواجهة التحديات المائية العالمية وتعزيز استدامة الموارد المائية. وتشمل الجائزة فئات متنوعة تغطي تقنيات إنتاج المياه، وإعادة الاستخدام، والاقتصاد الدائري، وكفاءة استهلاك المياه، والتحول الرقمي والإدارة الذكية للمياه، بما يعزز دور المملكة كمركز عالمي للابتكار في قطاع المياه.</p><p><br></p>\",\"descriptionEn\":\"<p>The Global Water Innovation Award (GPIW) is run by the Saudi Water Authority and brings together a top bunch of innovators, researchers, entrepreneurs, and experts from all over the world. The award is all about speeding up the use of smart solutions to tackle global water problems and support sustainable water resources. It covers different areas like water production tech, reuse, the circular economy, water efficiency, digital changes, and smart water management, showing off the Kingdom's role as a global hotspot for water innovation.</p>\",\"externalLink\":\"https://gpiw.net/ar\",\"locationAr\":\"جدة – الريتز كارلتون\",\"locationEn\":\"Jeddah – The Ritz-Carlton\",\"status\":1,\"creationDate\":\"2026-06-11T11:02:35.1914662\",\"startDate\":\"2026-12-14T09:00:00\",\"endDate\":\"2026-12-14T16:00:00\",\"publishDate\":\"2026-06-11T11:07:03.7317518\",\"mainImage\":{\"id\":68265,\"fileName\":\"شعار 6.png\",\"objectKey\":\"Events/a4ae75a0b5914231a232796f3b7fd47a_2026_06_11_11_02_35_109.png\",\"fileUrl\":\"https://swa-cdn.swa.gov.sa/Events/a4ae75"
+        },
+        {
+          "method": "GET",
+          "status": 200,
+          "url": "https://e-services-api.swa.gov.sa/api/PageVisitsCount?url=https%3A%2F%2Fwww.swa.gov.sa%2Fen%2Fevents",
+          "content_type": "application/json",
+          "resource_type": "fetch",
+          "request_post_data": "",
+          "response_shape": "json-object:id,url,pageTitle,totalCount,todayCount,lastUpdated",
+          "preview": "{\"id\":4547,\"url\":\"https://www.swa.gov.sa/en/events\",\"pageTitle\":\"Events Calendar | SWA\",\"totalCount\":752,\"todayCount\":2,\"lastUpdated\":\"2026-09-28T09:02:37.9418524\"}"
+        },
+        {
+          "method": "GET",
+          "status": 200,
+          "url": "https://api.hams.ai/v1/ai-agents/ebef8147-7a18-4eb9-a7ce-f26fce904c44/widget-config",
+          "content_type": "application/json",
+          "resource_type": "fetch",
+          "request_post_data": "",
+          "response_shape": "json-object:ai_agent_id,config,created,entity_id,id,presigned_urls,updated",
+          "preview": "{\"ai_agent_id\":\"ebef8147-7a18-4eb9-a7ce-f26fce904c44\",\"config\":{\"agentName\":\"\",\"description\":\"Online\",\"environment\":\"staging\",\"icon_id\":null,\"language\":\"en\",\"main_color\":\"#1B8354\",\"modality\":\"CHAT\",\"position\":\"right\",\"public_key\":\"pk_A6j_KmQ8p1_kKtIh8WXNzZ4ZAbqxuPCgH2xgsEQJnJU\",\"site_key\":\"\",\"title\":\"Help & Support\",\"ui_style\":\"dga\",\"widget_padding\":{\"bottom\":16,\"horizontal\":16},\"widget_title\":\"Help & Support\"},\"created\":\"2026-04-07T10:17:56.058573\",\"entity_id\":\"3f38e208-9579-48c9-ad2a-97bfb62ce6c7\",\"id\":\"70455907-319f-4f8e-9a55-6072a47fac63\",\"presigned_urls\":{},\"updated\":\"2026-04-07T10:17:56.058575\"}"
+        },
+        {
+          "method": "GET",
+          "status": 200,
+          "url": "https://cdn77.api.userway.org/api/img-dscr/v2/0UYGxnoXJv/3624675/Mzv57s4G8iSPKW7I/alts.json?dto=%7B%22sorted%22%3A%5B%7B%22src%22%3A%22https%3A%2F%2Fwww.swa.gov.sa%2Fassets%2Fimages%2Flogos%2Fswa-logo-dark.svg%22%2C%22alt%22%3A%22SWA%22%2C%22dir%22%3A%22RO%22%7D%2C%7B%22src%22%3A%22https%3A%2F%2Fwww.swa.gov.sa%2Fassets%2Fsvg%2FGov_Logo.svg%22%2C%22alt%22%3A%22Gov_Logo%22%2C%22dir%22%3A%22RO%22%7D%2C%7B%22src%22%3A%22https%3A%2F%2Fwww.swa.gov.sa%2Fassets%2Fsvg%2Fhttps.svg%22%2C%22alt%22%3A%22https%22%2C%22dir%22%3A%22RO%22%7D%2C%7B%22src%22%3A%22https%3A%2F%2Fwww.swa.gov.sa%2Fassets%2Fsvg%2Fksa-flag.svg%22%2C%22alt%22%3A%22flag%22%2C%22dir%22%3A%22RO%22%7D%2C%7B%22src%22%3A%22https%3A%2F%2Fwww.swa.gov.sa%2Fassets%2Fsvg%2Flink-04.svg%22%2C%22alt%22%3A%22link%22%2C%22dir%22%3A%22RO%22%7D%5D%2C%22tier%22%3A%22PAID_QUOTA_TIER%22%2C%22pageUrl%22%3A%22https%3A%2F%2Fwww.swa.gov.sa%2Fen%2Fevents%22%7D",
+          "content_type": "application/json",
+          "resource_type": "fetch",
+          "request_post_data": "",
+          "response_shape": "json-object:payload,payloadType",
+          "preview": "{\"payload\":{\"missingAlts\":[{\"src\":\"https://www.swa.gov.sa/assets/images/logos/swa-logo-dark.svg\",\"alt\":null,\"approved\":false,\"decorative\":false,\"metadata\":{\"skippedForReadOnly\":true,\"foundCachedResponse\":true}},{\"src\":\"https://www.swa.gov.sa/assets/svg/Gov_Logo.svg\",\"alt\":null,\"approved\":false,\"decorative\":false,\"metadata\":{\"skippedForReadOnly\":true,\"foundCachedResponse\":true}},{\"src\":\"https://www.swa.gov.sa/assets/svg/https.svg\",\"alt\":null,\"approved\":false,\"decorative\":false,\"metadata\":{\"skippedForReadOnly\":true,\"foundCachedResponse\":true}},{\"src\":\"https://www.swa.gov.sa/assets/svg/ksa-flag.svg\",\"alt\":null,\"approved\":false,\"decorative\":false,\"metadata\":{\"skippedForReadOnly\":true,\"foundCachedResponse\":true}},{\"src\":\"https://www.swa.gov.sa/assets/svg/link-04.svg\",\"alt\":null,\"approved\":false,\"decorative\":false,\"metadata\":{\"skippedForReadOnly\":true,\"foundCachedResponse\":true}}]},\"payloadType\":\"MissingAltsDto\"}"
+        },
+        {
+          "method": "GET",
+          "status": 200,
+          "url": "https://api.userway.org/api/br-links/v0/links/3624675",
+          "content_type": "application/json",
+          "resource_type": "fetch",
+          "request_post_data": "",
+          "response_shape": "json-object:thisPageItems,totalNumber,lastPageIndex,pageItemType",
+          "preview": "{\"thisPageItems\":[{\"href\":\"https://eservices.swa.gov.sa/ComplaintEscalationRequest\"},{\"href\":\"https://sts.swcc.gov.sa/adfs/ls/\"},{\"href\":\"https://eservices.swa.gov.sa/ComplaintInquiryRequest\"}],\"totalNumber\":3,\"lastPageIndex\":1,\"pageItemType\":\"BrokenLinkHref\"}"
+        },
+        {
+          "method": "POST",
+          "status": 200,
+          "url": "https://api.userway.org/api/br-links/v0/pdf-links",
+          "content_type": "application/json",
+          "resource_type": "xhr",
+          "request_post_data": "{\"userId\":426018,\"siteId\":3624675,\"page\":\"/en/events\",\"fullPage\":\"https://www.swa.gov.sa/en/events\",\"links\":[\"https://swa-cdn.swa.gov.sa/Reports/SWA_Brand_Guideline.pdf\"]}",
+          "response_shape": "json-object:statuses",
+          "preview": "{\"statuses\":[1]}"
+        },
+        {
+          "method": "GET",
+          "status": 200,
+          "url": "https://api.userway.org/api/br-links/v0/links/3624675",
+          "content_type": "application/json",
+          "resource_type": "fetch",
+          "request_post_data": "",
+          "response_shape": "json-object:thisPageItems,totalNumber,lastPageIndex,pageItemType",
+          "preview": "{\"thisPageItems\":[{\"href\":\"https://eservices.swa.gov.sa/ComplaintEscalationRequest\"},{\"href\":\"https://sts.swcc.gov.sa/adfs/ls/\"},{\"href\":\"https://eservices.swa.gov.sa/ComplaintInquiryRequest\"}],\"totalNumber\":3,\"lastPageIndex\":1,\"pageItemType\":\"BrokenLinkHref\"}"
+        },
+        {
+          "method": "GET",
+          "status": 200,
+          "url": "https://cdn77.api.userway.org/api/img-dscr/v2/0UYGxnoXJv/3624675/Mzv57s4G8iSPKW7I/alts.json?dto=%7B%22sorted%22%3A%5B%7B%22src%22%3A%22https%3A%2F%2Fswa-cdn.swa.gov.sa%2FEvents%2F36decb99545d4da5bfb6b09fb000691b_2026_05_25_10_48_20_766.jpg%22%2C%22alt%22%3A%22Saudi%20National%20Day%22%2C%22dir%22%3A%22RO%22%7D%2C%7B%22src%22%3A%22https%3A%2F%2Fswa-cdn.swa.gov.sa%2FEvents%2F8ca9c4254c334d8d90c85b0c4f5f275c_2026_05_25_08_13_47_482.jpg%22%2C%22alt%22%3A%22Foundation%20Day%22%2C%22dir%22%3A%22RO%22%7D%2C%7B%22src%22%3A%22https%3A%2F%2Fswa-cdn.swa.gov.sa%2FEvents%2F9535a79c349840bf8c92eeefcc04f2e5_2026_05_20_06_33_03_235.png%22%2C%22alt%22%3A%22Saudi%20Water%20Week%22%2C%22dir%22%3A%22RO%22%7D%2C%7B%22src%22%3A%22https%3A%2F%2Fswa-cdn.swa.gov.sa%2FEvents%2Fa8b384622a1d4281b64b6fd75c82bd5e_2026_05_25_07_44_38_769.jpg%22%2C%22alt%22%3A%22World%20Conference%20on%20Desalination%20and%20Water%20Reuse%22%2C%22dir%22%3A%22RO%22%7D%2C%7B%22src%22%3A%22https%3A%2F%2Fswa-cdn.swa.gov.sa%2FEvents%2Fb4fed1f10c414a39a5c49cd9fda6a63d_2026_05_20_07_35_20_655.png%22%2C%22alt%22%3A%22Global%20Infrastructure%20Expo%22%2C%22dir%22%3A%22RO%22%7D%2C%7B%22src%22%3A%22https%3A%2F%2Fswa-cdn.swa.gov.sa%2FEvents%2Ff168ba04d30d4fec96ca03600421bd99_2026_05_25_08_24_48_478.png%22%2C%22alt%22%3A%22Saudi%20Flag%20Day%22%2C%22dir%22%3A%22RO%22%7D%2C%7B%22src%22%3A%22https%3A%2F%2Fwww.swa.gov.sa%2Fassets%2Fimages%2Fevents-calendar%2FTrailing%2520icon.svg%22%2C%22alt%22%3A%22%22%2C%22dir%22%3A%22RO%22%7D%5D%2C%22tier%22%3A%22PAID_QUOTA_TIER%22%2C%22pageUrl%22%3A%22https%3A%2F%2Fwww.swa.gov.sa%2Fen%2Fevents%22%7D",
+          "content_type": "application/json",
+          "resource_type": "fetch",
+          "request_post_data": "",
+          "response_shape": "json-object:payload,payloadType",
+          "preview": "{\"payload\":{\"missingAlts\":[{\"src\":\"https://swa-cdn.swa.gov.sa/Events/36decb99545d4da5bfb6b09fb000691b_2026_05_25_10_48_20_766.jpg\",\"alt\":null,\"approved\":false,\"decorative\":false,\"metadata\":{\"skippedForReadOnly\":true,\"foundCachedResponse\":true}},{\"src\":\"https://swa-cdn.swa.gov.sa/Events/8ca9c4254c334d8d90c85b0c4f5f275c_2026_05_25_08_13_47_482.jpg\",\"alt\":null,\"approved\":false,\"decorative\":false,\"metadata\":{\"skippedForReadOnly\":true}},{\"src\":\"https://swa-cdn.swa.gov.sa/Events/9535a79c349840bf8c92eeefcc04f2e5_2026_05_20_06_33_03_235.png\",\"alt\":null,\"approved\":false,\"decorative\":false,\"metadata\":{\"skippedForReadOnly\":true}},{\"src\":\"https://swa-cdn.swa.gov.sa/Events/a8b384622a1d4281b64b6fd75c82bd5e_2026_05_25_07_44_38_769.jpg\",\"alt\":null,\"approved\":false,\"decorative\":false,\"metadata\":{\"skippedForReadOnly\":true}},{\"src\":\"https://swa-cdn.swa.gov.sa/Events/b4fed1f10c414a39a5c49cd9fda6a63d_2026_05_20_07_35_20_655.png\",\"alt\":null,\"approved\":false,\"decorative\":false,\"metadata\":{\"skippedForReadOnly\":true}},{\"src\":\"https://swa-cdn.swa.gov.sa/Events/f168ba04d30d4fec96ca03600421bd99_2026_05_25_08_24_48_478.png\",\"alt\":null,\"approved\":false,\"decorative\":false,\"metadata\":{\"skippedForReadOnly\":true,\"foundCachedResponse\":true}},{\"src\":\"https://www.swa.gov.sa/assets/images/events-calendar/Trailing%20icon.svg\",\"alt\":null,\"approved\":false,\"decorative\":false,\"metadata\":{\"skippedForReadOnly\":true,\"foundCachedResponse\":true}}]},\"payloadType\":\"MissingAltsDto\"}"
+        },
+        {
+          "method": "GET",
+          "status": 200,
+          "url": "https://api.userway.org/api/br-links/v0/links/3624675",
+          "content_type": "application/json",
+          "resource_type": "fetch",
+          "request_post_data": "",
+          "response_shape": "json-object:thisPageItems,totalNumber,lastPageIndex,pageItemType",
+          "preview": "{\"thisPageItems\":[{\"href\":\"https://eservices.swa.gov.sa/ComplaintEscalationRequest\"},{\"href\":\"https://sts.swcc.gov.sa/adfs/ls/\"},{\"href\":\"https://eservices.swa.gov.sa/ComplaintInquiryRequest\"}],\"totalNumber\":3,\"lastPageIndex\":1,\"pageItemType\":\"BrokenLinkHref\"}"
+        },
+        {
+          "method": "GET",
+          "status": 200,
+          "url": "https://api.userway.org/api/a11y-data/v0/page/https%3A%2F%2Fwww.swa.gov.sa%2Fen%2Fevents/DESKTOP/WIDGET_ON/status",
+          "content_type": "application/json",
+          "resource_type": "fetch",
+          "request_post_data": "",
+          "response_shape": "json-object:payload,payloadType",
+          "preview": "{\"payload\":{\"status\":\"CONTRIB_MISSING\"},\"payloadType\":\"PageContribStatusDto\"}"
+        },
+        {
+          "method": "PUT",
+          "status": 200,
+          "url": "https://api.userway.org/api/a11y-data/v0/page/https%3A%2F%2Fwww.swa.gov.sa%2Fen%2Fevents/DESKTOP/contrib",
+          "content_type": "application/json",
+          "resource_type": "xhr",
+          "request_post_data": "{\"accountId\":\"0UYGxnoXJv\",\"viewWidth\":1280,\"viewHeight\":720,\"clientTz\":\"0\",\"uwWidget\":{\"uwFreeWidget\":\"WIDGET_ON\",\"uwAiWidget\":\"WIDGET_ON\"},\"rulesStats\":{\"R_1\":21,\"R_44\":4,\"R_50\":1},\"accScore\":{\"beforeRemediation\":93.98581560283688,\"afterRemediation\":93.98581560283688}}",
+          "response_shape": "json-object:payload,payloadType",
+          "preview": "{\"payload\":{\"status\":\"CONTRIB_PRESENT\"},\"payloadType\":\"PageContribStatusDto\"}"
+        },
+        {
+          "method": "GET",
+          "status": 200,
+          "url": "https://api.userway.org/api/br-links/v0/contribute/3624675",
+          "content_type": "application/json",
+          "resource_type": "fetch",
+          "request_post_data": "",
+          "response_shape": "json-object:payload,payloadType",
+          "preview": "{\"payload\":\"PRESENT\",\"payloadType\":\"ContribStatus\"}"
+        },
+        {
+          "method": "GET",
+          "status": 200,
+          "url": "https://api.userway.org/api/br-links/v0/links/3624675",
+          "content_type": "application/json",
+          "resource_type": "fetch",
+          "request_post_data": "",
+          "response_shape": "json-object:thisPageItems,totalNumber,lastPageIndex,pageItemType",
+          "preview": "{\"thisPageItems\":[{\"href\":\"https://eservices.swa.gov.sa/ComplaintEscalationRequest\"},{\"href\":\"https://sts.swcc.gov.sa/adfs/ls/\"},{\"href\":\"https://eservices.swa.gov.sa/ComplaintInquiryRequest\"}],\"totalNumber\":3,\"lastPageIndex\":1,\"pageItemType\":\"BrokenLinkHref\"}"
+        }
+      ]
+    },
+    {
       "id": "riyadh-city-events",
-      "probed_at": "2026-09-27T08:30:27.063Z",
+      "probed_at": "2026-09-28T09:02:58.499Z",
       "name": "Riyadh City Events",
       "priority": 51,
       "url": "https://riyadh.sa/en/events/all",
@@ -213,14 +1131,14 @@
       "status": "ok",
       "http_status": 200,
       "navigation_error": "",
-      "duration_ms": 10633,
+      "duration_ms": 13065,
       "classification": "rendered-html-candidates",
       "next_action": "اكتب extractor مرن من DOM بعد الرندر أو حسن selector الحالي.",
       "title": "الموقع الرسمي لمدينة الرياض",
       "text_bytes": 827,
       "html_bytes": 155815,
-      "html_snapshot": "data/raw/browser-probes/riyadh-city-events-2026-09-27T08-30-15-973Z.html",
-      "screenshot": "data/raw/browser-probes/riyadh-city-events-2026-09-27T08-30-15-973Z.png",
+      "html_snapshot": "data/raw/browser-probes/riyadh-city-events-2026-09-28T09-00-45-944Z.html",
+      "screenshot": "data/raw/browser-probes/riyadh-city-events-2026-09-28T09-00-45-944Z.png",
       "signals": {
         "has_next_data": false,
         "has_nuxt": false,
@@ -270,6 +1188,145 @@
           "request_post_data": "",
           "response_shape": "json-like-invalid",
           "preview": "{ \"lang\": \"en\", \"main\": { \"title\": \"Riyadh City\" }, \"lastUpdated\": { \"label\": \"Last Modified Date\", \"timezone\": \"Saudi Arabia Time\" }, \"cookies\": { \"title\": \"Cookies\", \"consentIntro\": \"This site uses its own cookies to ensure ease of use and to improve your experience while browsing. By continuing to browse this site, you acknowledge and accept the use of cookies.\", \"privacyPolicy\": \"Privacy Policy\", \"accept\": \"Accept\", \"reject\": \"Reject\", \"manageLink\": \"Manage Cookies\", \"manageTitle\": \"Manage Cookies\", \"thanksTitle\": \"Cookies\", \"intro\": \"Whenever you visit a website, it may store or retrieve information on your browser, mostly in the form of cookies. This information might be about you, your preferences, or your device, and is mostly used to make the site work as you expect it to. The information does not usually identify you directly, but it can give you a more personalized web experience. You can choose not to allow some types of cookies. Click on the different category headings to find out more and change our default settings. However, you should know that blocking some types of cookies may impact your experience of the site and the services we are able to offer.\", \"necessary\": \"These cookies are strictly necessary (always active)\", \"performance\": \"Performance cookies\", \"functional\": \"Functional cookies\", \"targeting\": \"Targeting cookies\", \"confirm\": \"Confirm my choices\", \"rejectAll\": \"Reject all\", \"thanksMessage\": \"Thank you! Your response has been recorded successfully. If you would like to edit or change your answer, you can go back by clicking the undo button.\", \"undo\": \"Undo\", \"close\": \"Close\" }, \"fileUploader\": { \"hint\": \"Maximum"
+        }
+      ]
+    },
+    {
+      "id": "sdaia-calendar-events",
+      "probed_at": "2026-09-28T09:03:12.992Z",
+      "name": "SDAIA Calendar and Events",
+      "priority": 54,
+      "url": "https://sdaia.gov.sa/en/MediaCenter/Events/Pages/default.aspx",
+      "final_url": "https://sdaia.gov.sa/en/MediaCenter/Events/Pages/default.aspx",
+      "status": "ok",
+      "http_status": 200,
+      "navigation_error": "",
+      "duration_ms": 14449,
+      "classification": "browser-network-api",
+      "next_action": "ثبت endpoint مرشحًا كجامع مباشر، ثم اكتب extractor من JSON مع اختبار انحدار.",
+      "title": "SDAIA | SDAIA Calendar & Events",
+      "text_bytes": 3042,
+      "html_bytes": 143069,
+      "html_snapshot": "data/raw/browser-probes/sdaia-calendar-events-2026-09-28T09-00-45-944Z.html",
+      "screenshot": "data/raw/browser-probes/sdaia-calendar-events-2026-09-28T09-00-45-944Z.png",
+      "signals": {
+        "has_next_data": false,
+        "has_nuxt": false,
+        "has_json_ld": false,
+        "has_event_schema": false,
+        "date_snippets": [],
+        "event_like_links": [
+          {
+            "text": "AI Scholarship Program",
+            "href": "https://sdaia.gov.sa/en/Sectors/academy/Pages/ScholarshipProgram.aspx"
+          },
+          {
+            "text": "Cooperative Training Program",
+            "href": "https://sdaia.gov.sa/en/Sectors/BuildingCapacity/Pages/CooperativeTraining.aspx"
+          },
+          {
+            "text": "Free Software and Services",
+            "href": "https://sdaia.gov.sa/en/Services/Pages/FreeServicesAndPrograms.aspx"
+          },
+          {
+            "text": "Calendar and Events",
+            "href": "https://sdaia.gov.sa/en/MediaCenter/Events/Pages/default.aspx"
+          },
+          {
+            "text": "Search",
+            "href": "https://sdaia.gov.sa/en/MediaCenter/Events/Pages/default.aspx#"
+          },
+          {
+            "text": "",
+            "href": "https://sdaia.gov.sa/en/MediaCenter/Events/Pages/default.aspx#ctl00_PlaceHolderBanner_ContentMap_SkipLink"
+          },
+          {
+            "text": "Show Events",
+            "href": "https://sdaia.gov.sa/en/MediaCenter/Events/Pages/default.aspx#"
+          },
+          {
+            "text": "Show Calendar",
+            "href": "https://sdaia.gov.sa/en/MediaCenter/Events/Pages/default.aspx#"
+          },
+          {
+            "text": "Organizer\n\n1/28/2026 - 1/29/2026\n\nInternational Conference on Data and AI Capacity Building (ICAN)\n\nOrganizer: SDAIA\n\nTa",
+            "href": "https://sdaia.gov.sa/en/MediaCenter/Events/Pages/EventsDetails.aspx?EventID=121"
+          },
+          {
+            "text": "Hosting\n\n9/14/2026 - 9/17/2026\n\nGlobal Forum on the Ethics of AI\n\nOrganizer: UNESCO\n\nTags:\n\nartificial intelligence",
+            "href": "https://sdaia.gov.sa/en/MediaCenter/Events/Pages/EventsDetails.aspx?EventID=122"
+          },
+          {
+            "text": "Yes",
+            "href": "https://sdaia.gov.sa/en/MediaCenter/Events/Pages/default.aspx#pills-first"
+          },
+          {
+            "text": "No",
+            "href": "https://sdaia.gov.sa/en/MediaCenter/Events/Pages/default.aspx#pills-second"
+          },
+          {
+            "text": "Privacy Policy",
+            "href": "https://sdaia.gov.sa/en/MediaCenter/Events/Pages/default.aspx#"
+          },
+          {
+            "text": "Manage Preferences",
+            "href": "https://sdaia.gov.sa/en/MediaCenter/Events/Pages/default.aspx#"
+          },
+          {
+            "text": "",
+            "href": "https://sdaia.gov.sa/en/MediaCenter/Events/Pages/default.aspx#?"
+          }
+        ]
+      },
+      "script_signals": {
+        "next_data_scripts": 0,
+        "nuxt_scripts": 0,
+        "json_ld_scripts": 0,
+        "large_inline_scripts": 1
+      },
+      "network_total": 3,
+      "network_endpoints": [
+        {
+          "method": "GET",
+          "status": 200,
+          "url": "https://sdaia.gov.sa/sdaiaapi/api/feedback/getbypageurl?pageURL=/en/mediacenter/events/pages/default.aspx&_=1790586185438",
+          "content_type": "application/json",
+          "resource_type": "xhr",
+          "request_post_data": "",
+          "response_shape": "json-object:Message,Status,ErrorCode,ErrorMessage,Notifications",
+          "preview": "{\"Message\":{\"Title\":\"/en/mediacenter/events/pages/default.aspx\",\"PageId\":\"/en/mediacenter/events/pages/default.aspx\",\"YesCount\":\"0\",\"NoCount\":\"0\",\"TotalCount\":\"0\"},\"Status\":true,\"ErrorCode\":0,\"ErrorMessage\":null,\"Notifications\":null}"
+        }
+      ],
+      "network_sample": [
+        {
+          "method": "GET",
+          "status": 200,
+          "url": "https://sdaia.gov.sa/sdaiaformapi/api/user/GetNafathInfo?_=1790586185437",
+          "content_type": "text/html",
+          "resource_type": "xhr",
+          "request_post_data": "",
+          "response_shape": "html",
+          "preview": "<html><head><title>Request Rejected</title></head><body>The requested URL was rejected. Please consult with your administrator.<br><br>Your support ID is: 4939852453129673811<br><br><a href='javascript:history.back();'>[Go Back]</a></body></html>"
+        },
+        {
+          "method": "GET",
+          "status": 200,
+          "url": "https://sdaia.gov.sa/sdaiaapi/api/home/geteninternalpagenavdata?_=1790586185436",
+          "content_type": "application/json",
+          "resource_type": "xhr",
+          "request_post_data": "",
+          "response_shape": "json-like-invalid",
+          "preview": "{\"Data\":{\"menu\":[{\"id\":1,\"title\":\"Home\",\"url\":\"/en/default.aspx\",\"hasChild\":\"false\",\"itemSort\":\"1\",\"layout\":null,\"show\":\"true\",\"level2\":[],\"error\":false},{\"id\":2,\"title\":\"SDAIA\",\"url\":\"/en/SDAIA/Pages/default.aspx\",\"hasChild\":\"true\",\"itemSort\":\"2\",\"layout\":\"Grid\",\"show\":\"true\",\"level2\":[{\"id\":1,\"title\":\"About SDAIA\",\"url\":\"/en/SDAIA/about/Pages/default.aspx\",\"menuLevel1\":\"SDAIA\",\"itemSort\":\"1\",\"icon\":\"fal fa-buildings\",\"level3\":[{\"title\":\"About SDAIA\",\"url\":\"/en/SDAIA/about/Pages/About.aspx\",\"itemSort\":\"1\",\"icon\":\"fal fa-buildings\",\"topmenuLevel1\":\"SDAIA\",\"show\":\"true\",\"iconType\":\"Icon\"},{\"title\":\"Board of Directors\",\"url\":\"/en/SDAIA/about/Pages/directorsBoard.aspx\",\"itemSort\":\"2\",\"icon\":\"fal fa-id-card\",\"topmenuLevel1\":\"SDAIA\",\"show\":\"true\",\"iconType\":\"Icon\"},{\"title\":\"Organizational Structure\",\"url\":\"/en/SDAIA/about/Pages/organizationalStructure.aspx\",\"itemSort\":\"3\",\"icon\":\"fal fa-diagram-project\",\"topmenuLevel1\":\"SDAIA\",\"show\":\"true\",\"iconType\":\"Icon\"},{\"title\":\"Budget and Spending\",\"url\":\"/en/SDAIA/about/Pages/Budget.aspx\",\"itemSort\":\"4\",\"icon\":\"fal fa-coins\",\"topmenuLevel1\":\"SDAIA\",\"show\":\"true\",\"iconType\":\"Icon\"},{\"title\":\"Competitions and Purchases\",\"url\":\"/en/SDAIA/about/Pages/CompetitionsAndPurchases.aspx\",\"itemSort\":\"5\",\"icon\":\"fal fa-flag-checkered\",\"topmenuLevel1\":\"SDAIA\",\"show\":\"true\",\"iconType\":\"Icon\"},{\"title\":\"Achievements\",\"url\":\"/en/SDAIA/about/Pages/Achievements.aspx\",\"itemSort\":\"6\",\"icon\":\"fal fa-ballot-check\",\"topmenuLevel1\":\"SDAIA\",\"show\":\"true\",\"iconType\":\"Icon\"},{\"title\":\"Laws and Regulations\",\"url\":\"/en/SDAIA/about/Pages/RegulationsAndPolicies.aspx\",\"itemSort\":\"7\",\"icon\":\"fal fa-clipboard-check\",\"topmenuLevel1\":\"SDAIA\",\"show\":\"true\",\"iconType\":\"Icon\"},{\"title\":\"Artificial Intelligence\",\"url\":\"/en/SDAIA/about/Pages/AboutAI.aspx\",\"itemSort\":\"8\",\"i"
+        },
+        {
+          "method": "GET",
+          "status": 200,
+          "url": "https://sdaia.gov.sa/sdaiaapi/api/feedback/getbypageurl?pageURL=/en/mediacenter/events/pages/default.aspx&_=1790586185438",
+          "content_type": "application/json",
+          "resource_type": "xhr",
+          "request_post_data": "",
+          "response_shape": "json-object:Message,Status,ErrorCode,ErrorMessage,Notifications",
+          "preview": "{\"Message\":{\"Title\":\"/en/mediacenter/events/pages/default.aspx\",\"PageId\":\"/en/mediacenter/events/pages/default.aspx\",\"YesCount\":\"0\",\"NoCount\":\"0\",\"TotalCount\":\"0\"},\"Status\":true,\"ErrorCode\":0,\"ErrorMessage\":null,\"Notifications\":null}"
         }
       ]
     },
