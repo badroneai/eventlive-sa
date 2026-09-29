@@ -1,18 +1,18 @@
 {
-  "published_at": "2026-09-28T09:12:59.308Z",
+  "published_at": "2026-09-29T08:53:08.391Z",
   "dry_run": false,
   "include_partner": true,
   "source_candidates": "data/source_candidates.json",
   "events_catalog": "data/events_catalog.json",
-  "candidates_seen": 444,
+  "candidates_seen": 445,
   "totals": {
-    "candidates_seen": 444,
-    "published": 8,
-    "linked_existing": 399,
-    "blocked": 37,
+    "candidates_seen": 445,
+    "published": 6,
+    "linked_existing": 405,
+    "blocked": 34,
     "duplicate_review_alerts": 5,
     "category_fallback_alerts": 0,
-    "reconciled": 407,
+    "reconciled": 411,
     "session_windows_reconciled": 0
   },
   "session_window_changes": [],
@@ -111,44 +111,34 @@
   ],
   "published": [
     {
-      "candidate_id": "candidate-umm-al-qura-events-الذكاء-الاصطناعي-التوليدي-في-التعليم-تطبيقات-واخلاقيات-20260928-ff4d2ecf",
-      "event_id": "event-الذكاء-الاصطناعي-التوليدي-في-التعليم-تطبيقات-واخلاقيات",
-      "title": "الذكاء الاصطناعي التوليدي في التعليم-تطبيقات واخلاقيات"
+      "candidate_id": "candidate-umm-al-qura-events-استراتيجيات-التقويم-وبناء-الاختبارات-وجداول-المواصفات-20260929-64e2840d",
+      "event_id": "event-استراتيجيات-التقويم-وبناء-الاختبارات-وجداول-المواصفات",
+      "title": "استراتيجيات التقويم وبناء الاختبارات وجداول المواصفات"
     },
     {
-      "candidate_id": "candidate-umm-al-qura-events-دورة-تدريبية-بعنوان-الابتكار-باستخدام-الذكاء-الاصطناعي-20260928-58e9536d",
-      "event_id": "event-دورة-تدريبية-بعنوان-الابتكار-باستخدام-الذكاء-الاصطناعي",
-      "title": "دورة تدريبية بعنوان (الابتكار باستخدام الذكاء الاصطناعي)"
+      "candidate_id": "candidate-umm-al-qura-events-برنامج-خوارزميـة-التأثيـر-20260930-961d13f4",
+      "event_id": "event-برنامج-خوارزميـة-التأثيـر",
+      "title": "برنامج خوارزميـة التأثيـر"
     },
     {
-      "candidate_id": "candidate-umm-al-qura-events-ورشة-عمل-بعنوان-من-سؤال-إلى-اكتشاف-ابدأ-رحلتك-البحثية-20260930-ea06a1e0",
-      "event_id": "event-ورشة-عمل-بعنوان-من-سؤال-إلى-اكتشاف-ابدأ-رحلتك-البحثية",
-      "title": "ورشة عمل بعنوان من سؤال إلى اكتشاف ابدأ رحلتك البحثية"
+      "candidate_id": "candidate-umm-al-qura-events-الفصول-الافتراضية-عبر-blackboard-ultra-20260930-b44dfba8",
+      "event_id": "event-الفصول-الافتراضية-عبر-blackboard-ultra",
+      "title": "الفصول الافتراضية عبر Blackboard ultra"
     },
     {
-      "candidate_id": "candidate-ithra-events-mom-through-my-eyes-arabic-20261003-e414ead2",
-      "event_id": "event-mom-through-my-eyes-arabic",
-      "title": "Mom through my eyes (Arabic)"
+      "candidate_id": "candidate-umm-al-qura-events-تخطيط-المقرر-وبناء-ملف-المقرر-20260930-f1a0d964",
+      "event_id": "event-تخطيط-المقرر-وبناء-ملف-المقرر",
+      "title": "تخطيط المقرر وبناء ملف المقرر"
     },
     {
-      "candidate_id": "candidate-ithra-events-mom-through-my-eyes-english-20261017-bf73d1ec",
-      "event_id": "event-mom-through-my-eyes-english",
-      "title": "Mom Through My Eyes (English)"
+      "candidate_id": "candidate-hayy-jameel-events-azka-farmers-market-coffee-edition-20261001-fa777dd9",
+      "event_id": "event-azka-farmers-market-coffee-edition",
+      "title": "Azka Farmers Market: Coffee Edition"
     },
     {
-      "candidate_id": "candidate-experience-alula-events-stargazing-at-alula-fort-20261106-f035d3c8",
-      "event_id": "event-stargazing-at-alula-fort",
-      "title": "Stargazing at AlUla Fort"
-    },
-    {
-      "candidate_id": "candidate-experience-alula-events-sunset-stillness-meditation-sound-immersion-20261114-7f9f2765",
-      "event_id": "event-sunset-stillness-meditation-sound-immersion",
-      "title": "Sunset Stillness: Meditation & Sound Immersion"
-    },
-    {
-      "candidate_id": "candidate-experience-alula-events-leonid-meteor-shower-at-jabal-ikmah-20261115-642f6c68",
-      "event_id": "event-leonid-meteor-shower-at-jabal-ikmah",
-      "title": "Leonid Meteor Shower at Jabal Ikmah"
+      "candidate_id": "candidate-hayy-jameel-events-hayy-matsuri-saudi-celebrates-japan-20270109-9ea4087f",
+      "event_id": "event-hayy-matsuri-saudi-celebrates-japan",
+      "title": "Hayy Matsuri: Saudi Celebrates Japan"
     }
   ],
   "linked_existing": [
@@ -909,12 +899,6 @@
       "reason": "already linked to catalog event"
     },
     {
-      "candidate_id": "candidate-umm-al-qura-events-فعاليات-الكلية-لمناسبة-اليوم-الوطني-96-20260927-ba043cdf",
-      "event_id": "event-قراءة-تاريخية-في-الأنظمة-السعودية",
-      "title": "فعاليات الكلية لمناسبة اليوم الوطني 96",
-      "reason": "already linked to catalog event"
-    },
-    {
       "candidate_id": "candidate-riyadh-city-events-the-saudi-food-show-20260927-368d6055",
       "event_id": "event-the-saudi-food-show",
       "title": "The Saudi Food Show",
@@ -957,135 +941,9 @@
       "reason": "already linked to catalog event"
     },
     {
-      "candidate_id": "candidate-ithra-events-printing-house-20260928-e56f4f89",
-      "event_id": "event-printing-house",
-      "title": "Printing House",
-      "reason": "already linked to catalog event"
-    },
-    {
-      "candidate_id": "candidate-ithra-events-tinkering-stations-20260928-5a2c4c0e",
-      "event_id": "event-tinkering-stations",
-      "title": "Tinkering Stations",
-      "reason": "already linked to catalog event"
-    },
-    {
-      "candidate_id": "candidate-ithra-events-tafasahu-make-room-20260928-562bc61d",
-      "event_id": "event-tafasahu-make-room",
-      "title": "Tafasahu: Make Room",
-      "reason": "already linked to catalog event"
-    },
-    {
       "candidate_id": "candidate-riyadh-city-events-icegov-international-conference-on-electronic-governance-20260928-db0f9390",
       "event_id": "event-icegov-international-conference-on-electronic-governance",
       "title": "ICEGOV – International Conference on Electronic Governance",
-      "reason": "already linked to catalog event"
-    },
-    {
-      "candidate_id": "candidate-ithra-events-open-studio-3d-printer-20260928-95155c11",
-      "event_id": "event-open-studio-3d-printer",
-      "title": "Open Studio: 3D printer",
-      "reason": "already linked to catalog event"
-    },
-    {
-      "candidate_id": "candidate-ithra-events-open-studio-dtf-printer-and-oven-for-textiles-20260928-9bf85740",
-      "event_id": "event-open-studio-dtf-printer-and-oven-for-textiles",
-      "title": "Open Studio: DTF Printer and oven for Textiles",
-      "reason": "already linked to catalog event"
-    },
-    {
-      "candidate_id": "candidate-ithra-events-open-studio-letterpress-printing-machine-20260928-08813ddd",
-      "event_id": "event-open-studio-letterpress-printing-machine",
-      "title": "Open Studio: Letterpress Printing Machine",
-      "reason": "already linked to catalog event"
-    },
-    {
-      "candidate_id": "candidate-ithra-events-open-studio-silkscreen-20260928-06cda456",
-      "event_id": "event-open-studio-silkscreen",
-      "title": "Open Studio: Silkscreen",
-      "reason": "already linked to catalog event"
-    },
-    {
-      "candidate_id": "candidate-ithra-events-ithra-public-tour-english-20260928-bda2ffd1",
-      "event_id": "event-ithra-public-tour-english",
-      "title": "Ithra Public Tour (English)",
-      "reason": "already linked to catalog event"
-    },
-    {
-      "candidate_id": "candidate-ithra-events-spot-of-inspiration-20260928-5bac584c",
-      "event_id": "event-spot-of-inspiration",
-      "title": "Spot of Inspiration",
-      "reason": "already linked to catalog event"
-    },
-    {
-      "candidate_id": "candidate-ithra-events-paint-like-an-artist-20260928-a67d8ec3",
-      "event_id": "event-paint-like-an-artist",
-      "title": "Paint Like an Artist",
-      "reason": "already linked to catalog event"
-    },
-    {
-      "candidate_id": "candidate-ithra-events-trivia-night-energy-memory-20260928-0b124a27",
-      "event_id": "event-trivia-night-energy-memory",
-      "title": "Trivia Night - Energy Memory",
-      "reason": "already linked to catalog event"
-    },
-    {
-      "candidate_id": "candidate-ithra-events-ithra-art-prize-exhibition-20260928-83c2ab55",
-      "event_id": "event-ithra-art-prize-exhibition",
-      "title": "Ithra Art Prize Exhibition",
-      "reason": "already linked to catalog event"
-    },
-    {
-      "candidate_id": "candidate-ithra-events-childrens-museum-story-time-20260928-ada8b9db",
-      "event_id": "event-childrens-museum-story-time",
-      "title": "Children's Museum Story Time",
-      "reason": "already linked to catalog event"
-    },
-    {
-      "candidate_id": "candidate-ithra-events-ithra-public-tour-arabic-20260928-011084c2",
-      "event_id": "event-ithra-public-tour-arabic",
-      "title": "Ithra Public Tour (Arabic)",
-      "reason": "already linked to catalog event"
-    },
-    {
-      "candidate_id": "candidate-ithra-events-creative-writing-club-20260928-a7f18ce9",
-      "event_id": "event-creative-writing-club",
-      "title": "Creative Writing Club",
-      "reason": "already linked to catalog event"
-    },
-    {
-      "candidate_id": "candidate-ithra-events-energy-in-motion-20260928-e0404048",
-      "event_id": "event-energy-in-motion",
-      "title": "Energy in Motion",
-      "reason": "already linked to catalog event"
-    },
-    {
-      "candidate_id": "candidate-ithra-events-open-art-space-20260928-ac79cac6",
-      "event_id": "event-open-art-space-2",
-      "title": "Open Art Space",
-      "reason": "already linked to catalog event"
-    },
-    {
-      "candidate_id": "candidate-ithra-events-ithras-kids-community-20260928-5aadcf19",
-      "event_id": "event-ithras-kids-community",
-      "title": "Ithra’s Kids Community",
-      "reason": "already linked to catalog event"
-    },
-    {
-      "candidate_id": "candidate-ithra-events-children-story-time-20260928-f545fa69",
-      "event_id": "event-children-story-time",
-      "title": "Children Story Time",
-      "reason": "already linked to catalog event"
-    },
-    {
-      "candidate_id": "candidate-ithra-events-imagination-oasis-20260928-104f8079",
-      "event_id": "event-imagination-oasis",
-      "title": "Imagination Oasis",
-      "reason": "already linked to catalog event"
-    },
-    {
-      "candidate_id": "candidate-ithra-events-trolley-show-20260928-56b483e3",
-      "event_id": "event-trolley-show",
-      "title": "Trolley Show",
       "reason": "already linked to catalog event"
     },
     {
@@ -1101,10 +959,82 @@
       "reason": "already linked to catalog event"
     },
     {
-      "candidate_id": "candidate-ithra-events-on-this-carpet-20260929-2972e041",
-      "event_id": "event-on-this-carpet",
-      "title": "On This Carpet",
+      "candidate_id": "candidate-ithra-events-bedayat-beginnings-of-saudi-art-movement-20260929-e0a239ef",
+      "event_id": "event-bedayat-beginnings-of-saudi-art-movement",
+      "title": "Bedayat: Beginnings of Saudi Art Movement",
+      "reason": "trusted duplicate linked to existing catalog event"
+    },
+    {
+      "candidate_id": "candidate-ithra-events-ithra-art-prize-exhibition-20260929-83c2ab55",
+      "event_id": "event-ithra-art-prize-exhibition",
+      "title": "Ithra Art Prize Exhibition",
       "reason": "already linked to catalog event"
+    },
+    {
+      "candidate_id": "candidate-ithra-events-printing-house-20260929-e56f4f89",
+      "event_id": "event-printing-house",
+      "title": "Printing House",
+      "reason": "already linked to catalog event"
+    },
+    {
+      "candidate_id": "candidate-ithra-events-tafasahu-make-room-20260929-562bc61d",
+      "event_id": "event-tafasahu-make-room",
+      "title": "Tafasahu: Make Room",
+      "reason": "already linked to catalog event"
+    },
+    {
+      "candidate_id": "candidate-ithra-events-tinkering-stations-20260929-5a2c4c0e",
+      "event_id": "event-tinkering-stations",
+      "title": "Tinkering Stations",
+      "reason": "already linked to catalog event"
+    },
+    {
+      "candidate_id": "candidate-ithra-events-open-studio-3d-printer-20260929-95155c11",
+      "event_id": "event-open-studio-3d-printer",
+      "title": "Open Studio: 3D printer",
+      "reason": "already linked to catalog event"
+    },
+    {
+      "candidate_id": "candidate-ithra-events-open-studio-dtf-printer-and-oven-for-textiles-20260929-9bf85740",
+      "event_id": "event-open-studio-dtf-printer-and-oven-for-textiles",
+      "title": "Open Studio: DTF Printer and oven for Textiles",
+      "reason": "already linked to catalog event"
+    },
+    {
+      "candidate_id": "candidate-ithra-events-open-studio-letterpress-printing-machine-20260929-08813ddd",
+      "event_id": "event-open-studio-letterpress-printing-machine",
+      "title": "Open Studio: Letterpress Printing Machine",
+      "reason": "already linked to catalog event"
+    },
+    {
+      "candidate_id": "candidate-ithra-events-open-studio-silkscreen-20260929-06cda456",
+      "event_id": "event-open-studio-silkscreen",
+      "title": "Open Studio: Silkscreen",
+      "reason": "already linked to catalog event"
+    },
+    {
+      "candidate_id": "candidate-ithra-events-ithra-public-tour-english-20260929-bda2ffd1",
+      "event_id": "event-ithra-public-tour-english",
+      "title": "Ithra Public Tour (English)",
+      "reason": "already linked to catalog event"
+    },
+    {
+      "candidate_id": "candidate-ithra-events-spot-of-inspiration-20260929-5bac584c",
+      "event_id": "event-spot-of-inspiration",
+      "title": "Spot of Inspiration",
+      "reason": "already linked to catalog event"
+    },
+    {
+      "candidate_id": "candidate-ithra-events-childrens-museum-story-time-20260929-ada8b9db",
+      "event_id": "event-childrens-museum-story-time",
+      "title": "Children's Museum Story Time",
+      "reason": "already linked to catalog event"
+    },
+    {
+      "candidate_id": "candidate-ithra-events-emboss-printing-experience-20260929-2671d1ce",
+      "event_id": "event-emboss-printing-experience",
+      "title": "Emboss Printing Experience",
+      "reason": "trusted duplicate linked to existing catalog event"
     },
     {
       "candidate_id": "candidate-ithra-events-family-challenges-20260929-3726c868",
@@ -1125,6 +1055,12 @@
       "reason": "already linked to catalog event"
     },
     {
+      "candidate_id": "candidate-ithra-events-trivia-night-energy-memory-20260929-0b124a27",
+      "event_id": "event-trivia-night-energy-memory",
+      "title": "Trivia Night - Energy Memory",
+      "reason": "already linked to catalog event"
+    },
+    {
       "candidate_id": "candidate-ithra-events-botanical-manifestations-20260929-e8112fc3",
       "event_id": "event-botanical-manifestations",
       "title": "Botanical Manifestations",
@@ -1134,6 +1070,18 @@
       "candidate_id": "candidate-ithra-events-survival-journey-20260929-4fd1e78d",
       "event_id": "event-survival-journey",
       "title": "Survival Journey",
+      "reason": "already linked to catalog event"
+    },
+    {
+      "candidate_id": "candidate-ithra-events-imagination-oasis-20260929-104f8079",
+      "event_id": "event-imagination-oasis",
+      "title": "Imagination Oasis",
+      "reason": "already linked to catalog event"
+    },
+    {
+      "candidate_id": "candidate-ithra-events-ithra-public-tour-arabic-20260929-011084c2",
+      "event_id": "event-ithra-public-tour-arabic",
+      "title": "Ithra Public Tour (Arabic)",
       "reason": "already linked to catalog event"
     },
     {
@@ -1185,6 +1133,12 @@
       "reason": "already linked to catalog event"
     },
     {
+      "candidate_id": "candidate-ithra-events-ithras-kids-community-20260930-5aadcf19",
+      "event_id": "event-ithras-kids-community",
+      "title": "Ithra’s Kids Community",
+      "reason": "already linked to catalog event"
+    },
+    {
       "candidate_id": "candidate-ithra-events-arabic-children-book-club-10-12-20260930-39c903cc",
       "event_id": "event-arabic-children-book-club-10-12",
       "title": "Arabic Children Book Club (10-12)",
@@ -1194,6 +1148,18 @@
       "candidate_id": "candidate-ithra-events-childrens-book-club-20260930-944c464f",
       "event_id": "event-childrens-book-club",
       "title": "Children's Book Club",
+      "reason": "already linked to catalog event"
+    },
+    {
+      "candidate_id": "candidate-umm-al-qura-events-ورشة-عمل-بعنوان-من-سؤال-إلى-اكتشاف-ابدأ-رحلتك-البحثية-20260930-ea06a1e0",
+      "event_id": "event-ورشة-عمل-بعنوان-من-سؤال-إلى-اكتشاف-ابدأ-رحلتك-البحثية",
+      "title": "ورشة عمل بعنوان من سؤال إلى اكتشاف ابدأ رحلتك البحثية",
+      "reason": "already linked to catalog event"
+    },
+    {
+      "candidate_id": "candidate-ithra-events-trolley-show-20260930-56b483e3",
+      "event_id": "event-trolley-show",
+      "title": "Trolley Show",
       "reason": "already linked to catalog event"
     },
     {
@@ -1227,6 +1193,12 @@
       "reason": "already linked to catalog event"
     },
     {
+      "candidate_id": "candidate-ithra-events-on-this-carpet-20261001-2972e041",
+      "event_id": "event-on-this-carpet",
+      "title": "On This Carpet",
+      "reason": "already linked to catalog event"
+    },
+    {
       "candidate_id": "candidate-riyadh-city-events-saudi-falcons-hunting-exhibition-20261001-03de0f81",
       "event_id": "event-saudi-falcons-hunting-exhibition",
       "title": "Saudi Falcons & Hunting Exhibition",
@@ -1237,6 +1209,12 @@
       "event_id": "event-little-explorers",
       "title": "Little Explorers",
       "reason": "already linked to catalog event"
+    },
+    {
+      "candidate_id": "candidate-ithra-events-games-hub-20261001-fb83124c",
+      "event_id": "event-games-hub",
+      "title": "Games Hub",
+      "reason": "trusted duplicate linked to existing catalog event"
     },
     {
       "candidate_id": "candidate-ithra-events-the-moral-of-the-story-20261001-bfa3f2a8",
@@ -1320,6 +1298,12 @@
       "candidate_id": "candidate-ithra-events-toddler-saturday-20261003-739e1f00",
       "event_id": "event-toddler-saturday",
       "title": "Toddler Saturday",
+      "reason": "already linked to catalog event"
+    },
+    {
+      "candidate_id": "candidate-ithra-events-mom-through-my-eyes-arabic-20261003-e414ead2",
+      "event_id": "event-mom-through-my-eyes-arabic",
+      "title": "Mom through my eyes (Arabic)",
       "reason": "already linked to catalog event"
     },
     {
@@ -1425,6 +1409,18 @@
       "reason": "already linked to catalog event"
     },
     {
+      "candidate_id": "candidate-ithra-events-children-story-time-20261005-f545fa69",
+      "event_id": "event-children-story-time",
+      "title": "Children Story Time",
+      "reason": "already linked to catalog event"
+    },
+    {
+      "candidate_id": "candidate-ithra-events-creative-writing-club-20261005-a7f18ce9",
+      "event_id": "event-creative-writing-club",
+      "title": "Creative Writing Club",
+      "reason": "already linked to catalog event"
+    },
+    {
       "candidate_id": "candidate-tuwaiq-academy-bootcamps-معسكر-الاستراتيجية-في-عصر-الذكاء-الاصطناعي-والتحول-الرقمي-20261005-c1f05c69",
       "event_id": "event-معسكر-الاستراتيجية-في-عصر-الذكاء-الاصطناعي-والتحول-الرقمي",
       "title": "معسكر الاستراتيجية في عصر الذكاء الاصطناعي والتحول الرقمي",
@@ -1476,6 +1472,12 @@
       "candidate_id": "candidate-ithra-events-arabic-children-book-club-7-9-20261007-810c285f",
       "event_id": "event-arabic-children-book-club-7-9",
       "title": "Arabic Children Book Club (7 - 9)",
+      "reason": "already linked to catalog event"
+    },
+    {
+      "candidate_id": "candidate-ithra-events-energy-in-motion-20261008-e0404048",
+      "event_id": "event-energy-in-motion",
+      "title": "Energy in Motion",
       "reason": "already linked to catalog event"
     },
     {
@@ -1626,6 +1628,12 @@
       "candidate_id": "candidate-visit-saudi-calendar-alaa-el-sheikh-live-in-jeddah-20261016-6b4c2b50",
       "event_id": "event-alaa-el-sheikh-live-in-jeddah",
       "title": "Alaa El Sheikh Live in Jeddah",
+      "reason": "already linked to catalog event"
+    },
+    {
+      "candidate_id": "candidate-ithra-events-mom-through-my-eyes-english-20261017-bf73d1ec",
+      "event_id": "event-mom-through-my-eyes-english",
+      "title": "Mom Through My Eyes (English)",
       "reason": "already linked to catalog event"
     },
     {
@@ -1869,6 +1877,12 @@
       "reason": "already linked to catalog event"
     },
     {
+      "candidate_id": "candidate-experience-alula-events-stargazing-at-alula-fort-20261106-f035d3c8",
+      "event_id": "event-stargazing-at-alula-fort",
+      "title": "Stargazing at AlUla Fort",
+      "reason": "already linked to catalog event"
+    },
+    {
       "candidate_id": "candidate-ithra-events-letter-by-letter-20261106-df94a427",
       "event_id": "event-letter-by-letter",
       "title": "Letter by Letter",
@@ -1965,6 +1979,12 @@
       "reason": "already linked to catalog event"
     },
     {
+      "candidate_id": "candidate-experience-alula-events-sunset-stillness-meditation-sound-immersion-20261114-7f9f2765",
+      "event_id": "event-sunset-stillness-meditation-sound-immersion",
+      "title": "Sunset Stillness: Meditation & Sound Immersion",
+      "reason": "already linked to catalog event"
+    },
+    {
       "candidate_id": "candidate-kau-events-the-2nd-international-conference-of-sustainability-and-quality-of-life-20261115-1d73f330",
       "event_id": "event-the-2nd-international-conference-of-sustainability-and-quality-of-life",
       "title": "The 2nd International Conference of Sustainability and Quality of Life",
@@ -1974,6 +1994,12 @@
       "candidate_id": "candidate-asharqia-chamber-events-ملتقى-الممارسات-الوقفية-في-نسخته-الخامسة-تحت-عنوان-التشريعات-المحفزة-لنم-20261115-2b8f0aef",
       "event_id": "event-ملتقى-الممارسات-الوقفية-في-نسخته-الخامسة-تحت-عنوان-التشريعات-المحفزة-لنم",
       "title": "ملتقى الممارسات الوقفية في نسخته الخامسة تحت عنوان (التشريعات المحفزة لنمو الأوقاف وصرفها)",
+      "reason": "already linked to catalog event"
+    },
+    {
+      "candidate_id": "candidate-experience-alula-events-leonid-meteor-shower-at-jabal-ikmah-20261115-642f6c68",
+      "event_id": "event-leonid-meteor-shower-at-jabal-ikmah",
+      "title": "Leonid Meteor Shower at Jabal Ikmah",
       "reason": "already linked to catalog event"
     },
     {
@@ -2548,21 +2574,6 @@
     }
   ],
   "blocked": [
-    {
-      "candidate_id": "candidate-saudicon-events-موسم-التمور-في-أسواق-الربوة-20260815-a20368c7",
-      "title": "موسم التمور في أسواق الربوة",
-      "reason": "publication gate source-evidence is not auto-publishable"
-    },
-    {
-      "candidate_id": "candidate-saudicon-events-date-season-at-al-rabwah-markets-20260815-481179b8",
-      "title": "Date season at Al-Rabwah Markets",
-      "reason": "publication gate source-evidence is not auto-publishable"
-    },
-    {
-      "candidate_id": "candidate-saudicon-events-b25011548992-20260815-487b8176",
-      "title": "沙特拉布瓦市场的椰枣季节",
-      "reason": "publication gate source-evidence is not auto-publishable"
-    },
     {
       "candidate_id": "candidate-dhahran-expo-calendar-the-egyptian-products-exhibition-20260921-18d15b29",
       "title": "The Egyptian Products Exhibition",

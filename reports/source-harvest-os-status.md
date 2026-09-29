@@ -1,38 +1,38 @@
 # EventLive Harvest OS Status
 
-- Generated at: 2026-09-28T09:31:41.983Z
+- Generated at: 2026-09-29T09:11:50.555Z
 - Status: NEEDS_WORK
 - Operating rule: Probe before new sources; sample before full harvest; Raw collection is not publication; discovery-only never auto-publishes.
 
 ## Totals
 
 - Sources: 88
-- Candidates: 444
-- Matched candidates: 411
+- Candidates: 445
+- Matched candidates: 415
 - Auto-publish sources: 15
 - Candidate-only sources: 12
 - Partnership-required sources: 5
-- Productive sources / attempted: 18/32
+- Productive sources / attempted: 17/28
 - Collector errors: 7 (chronic 6, transient 1)
 
 ## Publication Funnel
 
 | Stage | Count |
 | --- | --- |
-| discovered_this_run | 236 |
-| candidate_queue | 444 |
-| evaluated_for_publish | 444 |
-| linked_existing | 399 |
-| published_new | 8 |
-| blocked | 37 |
+| discovered_this_run | 213 |
+| candidate_queue | 445 |
+| evaluated_for_publish | 445 |
+| linked_existing | 405 |
+| published_new | 6 |
+| blocked | 34 |
 | secondary_promoted | 0 |
-| secondary_still_blocked | 43 |
+| secondary_still_blocked | 41 |
 
 ## Blocked Reasons
 
 | Reason | Count |
 | --- | --- |
-| publication gate source-evidence is not auto-publishable | 25 |
+| publication gate source-evidence is not auto-publishable | 22 |
 | unknown category requires review | 3 |
 | possible duplicate requires review: fuzzy-title-venue-date-window | 2 |
 | possible duplicate already exists: event-melwah-falcon-racing | 2 |
@@ -45,13 +45,13 @@
 
 | Source | Kind | Failed runs in a row | Attempted this run | Reason |
 | --- | --- | --- | --- | --- |
-| moc-cultural-calendar | chronic | 42 | yes | collector-error: fetch failed; fetch failed |
-| mos-events | chronic | 42 | yes | collector-error: fetch failed; live browser recovery deferred by recent failed probe cooldown |
-| moc-cultural-subportals | chronic | 42 | yes | collector-error: fetch failed; fetch failed |
-| saudi-pro-league-fixtures | chronic | 22 | yes | collector-error: fetch failed |
-| tuwaiq-academy-bootcamps | chronic | 19 | yes | collector-error: HTTP 403 |
-| monshaat-events | chronic | 10 | yes | collector-error: fetch failed; fetch failed |
-| asharqia-chamber-events | transient | 1 | yes | fetch failed; live browser recovery deferred by recent failed probe cooldown |
+| moc-cultural-calendar | chronic | 42 | no | collector-error: fetch failed; fetch failed |
+| mos-events | chronic | 42 | no | collector-error: fetch failed; live browser recovery deferred by recent failed probe cooldown |
+| moc-cultural-subportals | chronic | 42 | no | collector-error: fetch failed; fetch failed |
+| saudi-pro-league-fixtures | chronic | 22 | no | collector-error: fetch failed |
+| tuwaiq-academy-bootcamps | chronic | 19 | no | collector-error: HTTP 403 |
+| monshaat-events | chronic | 10 | no | collector-error: fetch failed; fetch failed |
+| asharqia-chamber-events | transient | 2 | yes | fetch failed; live browser recovery deferred by recent failed probe cooldown |
 
 | Source | Policy | Trust | Gate |
 | --- | --- | --- | --- |

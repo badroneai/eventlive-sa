@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-28T09:13:02.960Z",
+  "generated_at": "2026-09-29T08:53:11.652Z",
   "catalog": "data/events_catalog.json",
   "candidates": "data/source_candidates.json",
   "manifest": "data/event_image_cache_manifest.json",
@@ -9,26 +9,12 @@
     "min_intersection": 2
   },
   "totals": {
-    "pdf_crop_assignments": 37,
+    "pdf_crop_assignments": 35,
     "verified": 34,
-    "struck": 3,
+    "struck": 1,
     "slots_seen_this_cycle": 36
   },
   "struck": [
-    {
-      "id": "event-أشجار",
-      "title": "أشجار",
-      "file": "visit-saudi-summer-2026-p024-top-right.jpg",
-      "reason": "slot-vacated",
-      "detail": "no dated card currently occupies page 24 top-right of https://www.visitsaudi.com/content/dam/documents/saudi-calendar-ar.pdf"
-    },
-    {
-      "id": "event-الدوري-السعودي-للرياضات-الالكترونية-القتالية",
-      "title": "الدوري السعودي للرياضات الالكترونية القتالية",
-      "file": "visit-saudi-summer-2026-p052-bottom-right.jpg",
-      "reason": "slot-vacated",
-      "detail": "no dated card currently occupies page 52 bottom-right of https://www.visitsaudi.com/content/dam/documents/saudi-calendar-ar.pdf"
-    },
     {
       "id": "event-ألف-وواحد",
       "title": "ألف وواحد",

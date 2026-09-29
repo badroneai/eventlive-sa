@@ -1,23 +1,29 @@
 {
-  "generated_at": "2026-09-28T09:21:04.326Z",
+  "generated_at": "2026-09-29T09:01:40.891Z",
   "events_file": "dist/events.json",
   "manifest": "data/event_image_cache_manifest.json",
   "image_dir": "dist/assets/event-images",
   "totals": {
     "targets": 500,
-    "cached_total": 879,
-    "fetched": 1,
-    "reused": 493,
+    "cached_total": 881,
+    "fetched": 2,
+    "reused": 492,
     "failed": 6,
-    "skipped_recent_failures": 0,
+    "skipped_recent_failures": 6,
     "remembered_failures": 29
   },
   "fetched": [
     {
-      "source_url": "https://www.ithra.com/application/files/cache/thumbnails/883ef249dfbc9ec53aed24a31039d3fb.png",
-      "file": "dist/assets/event-images/mom-through-my-eyes-arabic-fc09dfd70b.png",
-      "bytes": 1501348,
-      "events": 2
+      "source_url": "https://hayyjameel.org/wp-content/uploads/2026/09/coffee-edition-1100x500.jpg",
+      "file": "dist/assets/event-images/azka-farmers-market-coffee-edition-399e805bc0.jpg",
+      "bytes": 132831,
+      "events": 1
+    },
+    {
+      "source_url": "https://hayyjameel.org/wp-content/uploads/2024/12/HayyMatsuri_Banner-1100x500.png",
+      "file": "dist/assets/event-images/hayy-matsuri-saudi-celebrates-japan-1b57edc11a.png",
+      "bytes": 185008,
+      "events": 1
     }
   ],
   "reused": [
@@ -262,6 +268,11 @@
       "events": 1
     },
     {
+      "source_url": "https://www.ithra.com/application/files/cache/thumbnails/0ea6501d38dd241243aaa62d5b93a922.jpg",
+      "file": "dist/assets/event-images/تجربة-الطباعة-البارزة-d3c8504289.jpg",
+      "events": 1
+    },
+    {
       "source_url": "https://www.ithra.com/application/files/cache/thumbnails/5d9089ccc5309c4c20ca0c1099df3ab1.jpg",
       "file": "dist/assets/event-images/chess-hub-3cbbdfff18.jpg",
       "events": 1
@@ -279,6 +290,11 @@
     {
       "source_url": "https://www.ithra.com/application/files/cache/thumbnails/5031b376aa4c8c1488517597db5bca86.jpg",
       "file": "dist/assets/event-images/family-challenges-e3db77fbac.jpg",
+      "events": 1
+    },
+    {
+      "source_url": "https://www.ithra.com/application/files/cache/thumbnails/d8565b5e78b2d0761347e3169962c3c5.jpg",
+      "file": "dist/assets/event-images/games-hub-9ae2a7e0d7.jpg",
       "events": 1
     },
     {
@@ -314,7 +330,7 @@
     {
       "source_url": "https://uqu.edu.sa/assets/images/uqu-gate.jpeg",
       "file": "dist/assets/event-images/الشهادة-الدولية-للحاسب-والإنترنت-ic3-a46ba6d2eb.jpg",
-      "events": 103
+      "events": 107
     },
     {
       "source_url": "https://scth.scene7.com/is/image/scth/buraydah-dates-carnival-qassim?wid=1400&hei=788&fit=constrain&fmt=webp",
@@ -349,11 +365,6 @@
     {
       "source_url": "https://www.ithra.com/application/files/cache/thumbnails/72323733814ab2d738b5416789d15bd1.jpg",
       "file": "dist/assets/event-images/ithra-art-prize-exhibition-05524875fd.jpg",
-      "events": 1
-    },
-    {
-      "source_url": "https://www.ithra.com/application/files/cache/thumbnails/520804fd4caae096d74b7963ab6c3119.jpg",
-      "file": "dist/assets/event-images/paint-like-an-artist-4ea915212b.jpg",
       "events": 1
     },
     {
@@ -410,11 +421,6 @@
       "source_url": "https://cdn.tuwaiq.edu.sa/initiatives_admin/images/4jaiuua2.tw3.webp",
       "file": "dist/assets/event-images/معسكر-أساسيات-الأمن-السيبراني-bff0c3d784.webp",
       "events": 1
-    },
-    {
-      "source_url": "https://www.ithra.com/application/files/cache/thumbnails/6157f51c92a2893ce920bbd5ca35f797.jpg",
-      "file": "dist/assets/event-images/open-art-space-4910232c8c.jpg",
-      "events": 2
     },
     {
       "source_url": "https://static.uqu.edu.sa/assets/images/uqu-gate.jpeg",
@@ -705,6 +711,11 @@
       "source_url": "https://www.ithra.com/application/files/cache/thumbnails/674b96300a249dd9d1d3eeb5c1b82245.png",
       "file": "dist/assets/event-images/family-game-within-five-seconds-7844419450.png",
       "events": 1
+    },
+    {
+      "source_url": "https://www.ithra.com/application/files/cache/thumbnails/883ef249dfbc9ec53aed24a31039d3fb.png",
+      "file": "dist/assets/event-images/mom-through-my-eyes-arabic-fc09dfd70b.png",
+      "events": 2
     },
     {
       "source_url": "https://hub.misk.org.sa/media/ovkjtk3x/artificial-intelligence.png",
@@ -1582,6 +1593,11 @@
       "events": 2
     },
     {
+      "source_url": "https://www.ithra.com/application/files/cache/thumbnails/6157f51c92a2893ce920bbd5ca35f797.jpg",
+      "file": "dist/assets/event-images/open-art-space-4910232c8c.jpg",
+      "events": 2
+    },
+    {
       "source_url": "https://scth.scene7.com/is/image/scth/leap-event-in-riyadh?wid=1920&hei=1080&fit=constrain&fmt=webp",
       "file": "dist/assets/event-images/leap-2026-00c83b2b08.webp",
       "events": 1
@@ -1807,6 +1823,11 @@
       "events": 1
     },
     {
+      "source_url": "https://www.ithra.com/application/files/cache/thumbnails/520804fd4caae096d74b7963ab6c3119.jpg",
+      "file": "dist/assets/event-images/paint-like-an-artist-4ea915212b.jpg",
+      "events": 1
+    },
+    {
       "source_url": "https://discoveraseer.com/en/img/asset/YXNzZXRzL2V4cGVyaWVuY2UvYWdobC1ibGRfcGFnZS0wMDAxLmpwZw/aghl-bld_page-0001.jpg?w=1024&fm=webp&s=efb01a4f9be9734e9f14ca3e4f27adc0",
       "file": "dist/assets/event-images/أغلى-وطن-a1dffa4a36.webp",
       "events": 1
@@ -1862,11 +1883,6 @@
       "events": 1
     },
     {
-      "source_url": "https://www.ithra.com/application/files/cache/thumbnails/d8565b5e78b2d0761347e3169962c3c5.jpg",
-      "file": "dist/assets/event-images/games-hub-9ae2a7e0d7.jpg",
-      "events": 1
-    },
-    {
       "source_url": "https://www.ithra.com/application/files/cache/thumbnails/3c0e886119ed7d6dc6e96bff14dbcb78.jpg",
       "file": "dist/assets/event-images/trivia-night-earth-quest-tic-tac-know-c5700ded56.jpg",
       "events": 1
@@ -1899,11 +1915,6 @@
     {
       "source_url": "https://www.ithra.com/application/files/cache/thumbnails/60534c243269321c0665c696e8594e0f.jpg",
       "file": "dist/assets/event-images/idea-lab-majlis-940e781716.jpg",
-      "events": 1
-    },
-    {
-      "source_url": "https://www.ithra.com/application/files/cache/thumbnails/0ea6501d38dd241243aaa62d5b93a922.jpg",
-      "file": "dist/assets/event-images/تجربة-الطباعة-البارزة-d3c8504289.jpg",
       "events": 1
     },
     {
@@ -2475,68 +2486,112 @@
       "source_url": "https://hayyjameel.org/wp-content/uploads/2026/06/Untitled-1400-x-650-px-1-1100x500.png",
       "file": "dist/assets/event-images/jameel-library-summer-reading-challenge-2ff280fa30.png",
       "events": 1
-    },
-    {
-      "source_url": "https://discoveraseer.com/en/img/asset/YXNzZXRzL2V4cGVyaWVuY2UvMW1kbWFrLmpwZw/1mdmak.jpg?w=1024&fm=webp&s=66441f59583fe6eb3608d2053f580cd3",
-      "file": "dist/assets/event-images/مدمك-cd7354717c.webp",
-      "events": 1
-    },
-    {
-      "source_url": "https://discoveraseer.com/en/img/asset/YXNzZXRzL2V4cGVyaWVuY2UvMTUuanBlZw/15.jpeg?w=1024&fm=webp&s=6434f206e446a241e9f2866f2423678b",
-      "file": "dist/assets/event-images/أرياش-6c397fa7e8.webp",
-      "events": 1
     }
   ],
   "rejected_removed": [],
   "missing_removed": [],
-  "skipped_recent_failures": [],
-  "failed": [
+  "skipped_recent_failures": [
     {
-      "source_url": "https://s7g10.scene7.com/is/image/rcu/leonid-meteor-shower-at-jabal-ikmah:landscape-16x9?$Responsive$&fit=stretch&fmt=webp&wid=1920",
+      "source_url": "https://s7g10.scene7.com/is/image/rcu/stargazing-at-alula-fort:landscape-16x9?$Responsive$&fit=stretch&fmt=webp&wid=1920",
       "events": 1,
       "reason": "HTTP 403",
       "failure_kind": "access-denied",
-      "retry_after": "2026-09-29T09:21:04.326Z"
+      "retry_after": "2026-09-29T09:21:04.326Z",
+      "skipped": true
     },
     {
       "source_url": "https://s7g10.scene7.com/is/image/rcu/sunset-stillness-meditation-sound-immersion:landscape-16x9?$Responsive$&fit=stretch&fmt=webp&wid=1920",
       "events": 1,
       "reason": "HTTP 403",
       "failure_kind": "access-denied",
-      "retry_after": "2026-09-29T09:21:04.326Z"
+      "retry_after": "2026-09-29T09:21:04.326Z",
+      "skipped": true
     },
     {
-      "source_url": "https://s7g10.scene7.com/is/image/rcu/stargazing-at-alula-fort:landscape-16x9?$Responsive$&fit=stretch&fmt=webp&wid=1920",
+      "source_url": "https://s7g10.scene7.com/is/image/rcu/leonid-meteor-shower-at-jabal-ikmah:landscape-16x9?$Responsive$&fit=stretch&fmt=webp&wid=1920",
       "events": 1,
       "reason": "HTTP 403",
       "failure_kind": "access-denied",
-      "retry_after": "2026-09-29T09:21:04.326Z"
-    },
-    {
-      "source_url": "https://cdn.rfecc.sa/wp-content/uploads/mec/qr_898ea2449274454e42895b52b18c6f68.png",
-      "events": 1,
-      "reason": "HTTP 403",
-      "failure_kind": "access-denied",
-      "retry_after": "2026-09-29T09:21:04.326Z"
+      "retry_after": "2026-09-29T09:21:04.326Z",
+      "skipped": true
     },
     {
       "source_url": "https://s7g10.scene7.com/is/image/rcu/fei2:landscape-16x9?$Responsive$&fit=stretch&fmt=webp&wid=1920",
       "events": 1,
       "reason": "HTTP 403",
       "failure_kind": "access-denied",
-      "retry_after": "2026-09-29T09:21:04.326Z"
+      "retry_after": "2026-09-29T09:21:04.326Z",
+      "skipped": true
     },
     {
       "source_url": "https://api.riyadh.sa/sites/default/files/styles/medium/public/2026-07/er%20%2859%29.jpg?itok=a33APdGm",
       "events": 1,
       "reason": "not-image text/html; charset=utf-8",
       "failure_kind": "source-returned-html",
-      "retry_after": "2026-09-29T09:21:04.326Z"
+      "retry_after": "2026-09-29T09:21:04.326Z",
+      "skipped": true
+    },
+    {
+      "source_url": "https://cdn.rfecc.sa/wp-content/uploads/mec/qr_898ea2449274454e42895b52b18c6f68.png",
+      "events": 1,
+      "reason": "HTTP 403",
+      "failure_kind": "access-denied",
+      "retry_after": "2026-09-29T09:21:04.326Z",
+      "skipped": true
+    }
+  ],
+  "failed": [
+    {
+      "source_url": "https://s7g10.scene7.com/is/image/rcu/stargazing-at-alula-fort:landscape-16x9?$Responsive$&fit=stretch&fmt=webp&wid=1920",
+      "events": 1,
+      "reason": "HTTP 403",
+      "failure_kind": "access-denied",
+      "retry_after": "2026-09-29T09:21:04.326Z",
+      "skipped": true
+    },
+    {
+      "source_url": "https://s7g10.scene7.com/is/image/rcu/sunset-stillness-meditation-sound-immersion:landscape-16x9?$Responsive$&fit=stretch&fmt=webp&wid=1920",
+      "events": 1,
+      "reason": "HTTP 403",
+      "failure_kind": "access-denied",
+      "retry_after": "2026-09-29T09:21:04.326Z",
+      "skipped": true
+    },
+    {
+      "source_url": "https://s7g10.scene7.com/is/image/rcu/leonid-meteor-shower-at-jabal-ikmah:landscape-16x9?$Responsive$&fit=stretch&fmt=webp&wid=1920",
+      "events": 1,
+      "reason": "HTTP 403",
+      "failure_kind": "access-denied",
+      "retry_after": "2026-09-29T09:21:04.326Z",
+      "skipped": true
+    },
+    {
+      "source_url": "https://s7g10.scene7.com/is/image/rcu/fei2:landscape-16x9?$Responsive$&fit=stretch&fmt=webp&wid=1920",
+      "events": 1,
+      "reason": "HTTP 403",
+      "failure_kind": "access-denied",
+      "retry_after": "2026-09-29T09:21:04.326Z",
+      "skipped": true
+    },
+    {
+      "source_url": "https://api.riyadh.sa/sites/default/files/styles/medium/public/2026-07/er%20%2859%29.jpg?itok=a33APdGm",
+      "events": 1,
+      "reason": "not-image text/html; charset=utf-8",
+      "failure_kind": "source-returned-html",
+      "retry_after": "2026-09-29T09:21:04.326Z",
+      "skipped": true
+    },
+    {
+      "source_url": "https://cdn.rfecc.sa/wp-content/uploads/mec/qr_898ea2449274454e42895b52b18c6f68.png",
+      "events": 1,
+      "reason": "HTTP 403",
+      "failure_kind": "access-denied",
+      "retry_after": "2026-09-29T09:21:04.326Z",
+      "skipped": true
     }
   ],
   "requires_rebuild": true,
   "rebuild_reasons": [
-    "fetched:1",
-    "new-failures:6"
+    "fetched:2"
   ]
 }

@@ -1,15 +1,13 @@
 # EventLive Visit Saudi Image Identity Report
 
-- generated_at: 2026-09-28T09:13:02.960Z
-- pdf_crop_assignments: 37
+- generated_at: 2026-09-29T08:53:11.652Z
+- pdf_crop_assignments: 35
 - verified: 34
-- struck: 3
+- struck: 1
 - slots_seen_this_cycle: 36
 
 ## Struck (fell back to generated cover)
 
-- أشجار (visit-saudi-summer-2026-p024-top-right.jpg) - slot-vacated - no dated card currently occupies page 24 top-right of https://www.visitsaudi.com/content/dam/documents/saudi-calendar-ar.pdf
-- الدوري السعودي للرياضات الالكترونية القتالية (visit-saudi-summer-2026-p052-bottom-right.jpg) - slot-vacated - no dated card currently occupies page 52 bottom-right of https://www.visitsaudi.com/content/dam/documents/saudi-calendar-ar.pdf
 - ألف وواحد (visit-saudi-summer-2026-p063-bottom-left.jpg) - identity-mismatch - page 63 bottom-left is now "وقف! عرض نمر الكوميدي المباشر في الرياض"
 
 ## Verified
