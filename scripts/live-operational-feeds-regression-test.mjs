@@ -133,6 +133,14 @@ try {
   assert.match(fs.readFileSync(path.join(snapshotFixture, 'dist', PUBLIC_SOURCE_SNAPSHOTS[0][1]), 'utf8'), /"id":"new"/);
   fs.writeFileSync(path.join(snapshotFixture, PUBLIC_SOURCE_SNAPSHOTS[0][0]), 'invalid JSON');
   assert.throws(() => syncPublicSourceSnapshots(snapshotFixture), SyntaxError);
+  fs.writeFileSync(path.join(snapshotFixture, PUBLIC_SOURCE_SNAPSHOTS[0][0]), '{}');
+  const [missingInput, staleOutput] = PUBLIC_SOURCE_SNAPSHOTS[2];
+  fs.rmSync(path.join(snapshotFixture, missingInput));
+  syncPublicSourceSnapshots(snapshotFixture);
+  assert.equal(fs.existsSync(path.join(snapshotFixture, 'dist', staleOutput)), false,
+    'missing optional evidence must remove its stale endpoint, not fabricate a fresh snapshot');
+  assert.ok(fs.existsSync(path.join(snapshotFixture, 'dist', PUBLIC_SOURCE_SNAPSHOTS[0][1])),
+    'available evidence must still publish when a different snapshot is unavailable');
 } finally {
   fs.rmSync(snapshotFixture, { recursive: true, force: true });
 }
