@@ -1,6 +1,6 @@
 # Misk Program Enrichment Report
 
-- generated_at: 2026-09-29T08:55:18.553Z
+- generated_at: 2026-09-30T10:44:58.913Z
 - targets: 18
 - enriched: 18
 - failed: 0
@@ -17,7 +17,7 @@
 - The Innovation Diwan - goals=1, features=4, requirements=1, registration_deadline=2026-09-16T18:00:00+03:00
 - Misk Launchpad - goals=1, features=4, requirements=6, registration_deadline=2026-08-08T18:00:00+03:00
 - Samsung Innovation Campus AI Program - goals=1, features=1, requirements=0, registration_deadline=2026-09-23T18:00:00+03:00
-- Nonprofit Sector Skills Program - goals=1, features=2, requirements=2, registration_deadline=2026-09-30T18:00:00+03:00
+- Nonprofit Sector Skills Program - goals=1, features=2, requirements=2, registration_deadline=2026-10-01T18:00:00+03:00
 - Global Exposure Program - goals=1, features=4, requirements=0, registration_deadline=2026-09-30T18:00:00+03:00
 - Discover Your Path Program - goals=1, features=4, requirements=0, registration_deadline=2026-11-30T18:00:00+03:00
 - Discover Your Path (in collaboration with Nahj Association) - goals=1, features=4, requirements=0, registration_deadline=2026-11-30T18:00:00+03:00

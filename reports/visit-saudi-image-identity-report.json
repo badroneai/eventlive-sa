@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-29T08:53:11.652Z",
+  "generated_at": "2026-09-30T10:43:17.566Z",
   "catalog": "data/events_catalog.json",
   "candidates": "data/source_candidates.json",
   "manifest": "data/event_image_cache_manifest.json",
@@ -10,11 +10,25 @@
   },
   "totals": {
     "pdf_crop_assignments": 35,
-    "verified": 34,
-    "struck": 1,
-    "slots_seen_this_cycle": 36
+    "verified": 32,
+    "struck": 3,
+    "slots_seen_this_cycle": 34
   },
   "struck": [
+    {
+      "id": "event-جولة-بقي-السريعة-الباحة",
+      "title": "جولة بقي السريعة الباحة",
+      "file": "visit-saudi-summer-2026-p072-bottom-right.jpg",
+      "reason": "slot-vacated",
+      "detail": "no dated card currently occupies page 72 bottom-right of https://www.visitsaudi.com/content/dam/documents/saudi-calendar-ar.pdf"
+    },
+    {
+      "id": "event-جولة-البقي-بين-جبال-الباحة",
+      "title": "جولة البقي بين جبال الباحة",
+      "file": "visit-saudi-summer-2026-p072-bottom-left.jpg",
+      "reason": "slot-vacated",
+      "detail": "no dated card currently occupies page 72 bottom-left of https://www.visitsaudi.com/content/dam/documents/saudi-calendar-ar.pdf"
+    },
     {
       "id": "event-ألف-وواحد",
       "title": "ألف وواحد",
@@ -135,29 +149,6 @@
       "matched_tokens": [
         "بسطه",
         "القابل"
-      ]
-    },
-    {
-      "id": "event-جولة-بقي-السريعة-الباحة",
-      "title": "جولة بقي السريعة الباحة",
-      "file": "visit-saudi-summer-2026-p072-bottom-right.jpg",
-      "matched_tokens": [
-        "جوله",
-        "بقي",
-        "السريعه",
-        "الباحه"
-      ]
-    },
-    {
-      "id": "event-جولة-البقي-بين-جبال-الباحة",
-      "title": "جولة البقي بين جبال الباحة",
-      "file": "visit-saudi-summer-2026-p072-bottom-left.jpg",
-      "matched_tokens": [
-        "جوله",
-        "البقي",
-        "بين",
-        "جبال",
-        "الباحه"
       ]
     },
     {

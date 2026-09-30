@@ -1,32 +1,32 @@
 # EventLive Harvest OS Status
 
-- Generated at: 2026-09-29T09:11:50.555Z
+- Generated at: 2026-09-30T11:01:30.303Z
 - Status: NEEDS_WORK
 - Operating rule: Probe before new sources; sample before full harvest; Raw collection is not publication; discovery-only never auto-publishes.
 
 ## Totals
 
 - Sources: 88
-- Candidates: 445
-- Matched candidates: 415
+- Candidates: 433
+- Matched candidates: 403
 - Auto-publish sources: 15
 - Candidate-only sources: 12
 - Partnership-required sources: 5
-- Productive sources / attempted: 17/28
-- Collector errors: 7 (chronic 6, transient 1)
+- Productive sources / attempted: 20/36
+- Collector errors: 7 (chronic 7, transient 0)
 
 ## Publication Funnel
 
 | Stage | Count |
 | --- | --- |
-| discovered_this_run | 213 |
-| candidate_queue | 445 |
-| evaluated_for_publish | 445 |
-| linked_existing | 405 |
-| published_new | 6 |
+| discovered_this_run | 233 |
+| candidate_queue | 433 |
+| evaluated_for_publish | 433 |
+| linked_existing | 395 |
+| published_new | 4 |
 | blocked | 34 |
 | secondary_promoted | 0 |
-| secondary_still_blocked | 41 |
+| secondary_still_blocked | 36 |
 
 ## Blocked Reasons
 
@@ -45,13 +45,13 @@
 
 | Source | Kind | Failed runs in a row | Attempted this run | Reason |
 | --- | --- | --- | --- | --- |
-| moc-cultural-calendar | chronic | 42 | no | collector-error: fetch failed; fetch failed |
-| mos-events | chronic | 42 | no | collector-error: fetch failed; live browser recovery deferred by recent failed probe cooldown |
-| moc-cultural-subportals | chronic | 42 | no | collector-error: fetch failed; fetch failed |
-| saudi-pro-league-fixtures | chronic | 22 | no | collector-error: fetch failed |
-| tuwaiq-academy-bootcamps | chronic | 19 | no | collector-error: HTTP 403 |
-| monshaat-events | chronic | 10 | no | collector-error: fetch failed; fetch failed |
-| asharqia-chamber-events | transient | 2 | yes | fetch failed; live browser recovery deferred by recent failed probe cooldown |
+| moc-cultural-calendar | chronic | 43 | yes | collector-error: fetch failed; fetch failed |
+| mos-events | chronic | 43 | yes | collector-error: fetch failed |
+| moc-cultural-subportals | chronic | 43 | yes | collector-error: fetch failed; fetch failed |
+| saudi-pro-league-fixtures | chronic | 23 | yes | collector-error: fetch failed |
+| tuwaiq-academy-bootcamps | chronic | 20 | yes | collector-error: HTTP 403 |
+| monshaat-events | chronic | 11 | yes | collector-error: fetch failed; fetch failed |
+| asharqia-chamber-events | chronic | 3 | yes | collector-error: fetch failed; live browser recovery deferred by recent failed probe cooldown |
 
 | Source | Policy | Trust | Gate |
 | --- | --- | --- | --- |

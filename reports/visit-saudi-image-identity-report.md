@@ -1,13 +1,15 @@
 # EventLive Visit Saudi Image Identity Report
 
-- generated_at: 2026-09-29T08:53:11.652Z
+- generated_at: 2026-09-30T10:43:17.566Z
 - pdf_crop_assignments: 35
-- verified: 34
-- struck: 1
-- slots_seen_this_cycle: 36
+- verified: 32
+- struck: 3
+- slots_seen_this_cycle: 34
 
 ## Struck (fell back to generated cover)
 
+- جولة بقي السريعة الباحة (visit-saudi-summer-2026-p072-bottom-right.jpg) - slot-vacated - no dated card currently occupies page 72 bottom-right of https://www.visitsaudi.com/content/dam/documents/saudi-calendar-ar.pdf
+- جولة البقي بين جبال الباحة (visit-saudi-summer-2026-p072-bottom-left.jpg) - slot-vacated - no dated card currently occupies page 72 bottom-left of https://www.visitsaudi.com/content/dam/documents/saudi-calendar-ar.pdf
 - ألف وواحد (visit-saudi-summer-2026-p063-bottom-left.jpg) - identity-mismatch - page 63 bottom-left is now "وقف! عرض نمر الكوميدي المباشر في الرياض"
 
 ## Verified
@@ -24,8 +26,6 @@
 - الاخطبوطية (visit-saudi-summer-2026-p052-top-right.jpg)
 - شعف (visit-saudi-summer-2026-p025-bottom-left.jpg)
 - بسطة القابل (visit-saudi-summer-2026-p026-top-right.jpg)
-- جولة بقي السريعة الباحة (visit-saudi-summer-2026-p072-bottom-right.jpg)
-- جولة البقي بين جبال الباحة (visit-saudi-summer-2026-p072-bottom-left.jpg)
 - تجربة شاطئ قالو (visit-saudi-summer-2026-p004-bottom-left.jpg)
 - استمرارية 26 (visit-saudi-summer-2026-p052-top-left.jpg)
 - سيرك فونتانا (visit-saudi-summer-2026-p052-bottom-left.jpg)

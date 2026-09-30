@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-29T08:55:18.553Z",
+  "generated_at": "2026-09-30T10:44:58.913Z",
   "catalog": "data/events_catalog.json",
   "totals": {
     "targets": 18,
@@ -93,7 +93,7 @@
       "goals": 1,
       "features": 2,
       "requirements": 2,
-      "registration_deadline": "2026-09-30T18:00:00+03:00"
+      "registration_deadline": "2026-10-01T18:00:00+03:00"
     },
     {
       "id": "event-global-exposure-program",

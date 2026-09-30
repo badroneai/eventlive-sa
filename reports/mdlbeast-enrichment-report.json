@@ -1,14 +1,15 @@
 {
-  "generated_at": "2026-09-29T08:56:48.286Z",
+  "generated_at": "2026-09-30T10:46:21.039Z",
   "catalog": "data/events_catalog.json",
   "source": "MDLBEAST Events",
   "totals": {
     "targets": 6,
     "candidates": 5,
-    "enriched": 6,
-    "fetched": 6,
-    "images": 6,
-    "fetch_failures": 0
+    "enriched": 3,
+    "fetched": 3,
+    "images": 3,
+    "fetch_failures": 3,
+    "enrichment_failures": 0
   },
   "enriched": [
     {
@@ -34,31 +35,29 @@
       "image_url": "https://www.datocms-assets.com/66357/1753608398-1-aug-event-banners-01.webp?auto=format&fit=max&w=2048&q=90",
       "fetched": true,
       "features": 7
-    },
+    }
+  ],
+  "failed": [
     {
       "id": "event-a-thousand-and-one",
       "title": "MDLBEAST | Home of Soundstorm, XP & Music in the Middle East",
-      "source_method": "official-next-data",
-      "image_url": "https://www.datocms-assets.com/66357/1779098389-80-lowres.jpg?auto=format&fit=max&w=2048&q=90",
-      "fetched": true,
-      "features": 5
+      "source_url": "https://mdlbeast.com/events/a-thousand-and-one-2026",
+      "stage": "fetch",
+      "reason": "No MDLBEAST event data found"
     },
     {
       "id": "event-xp-music-futures-2026",
       "title": "MDLBEAST | Home of Soundstorm, XP & Music in the Middle East",
-      "source_method": "official-next-data",
-      "image_url": "https://www.datocms-assets.com/66357/1779098389-80-lowres.jpg?auto=format&fit=max&w=2048&q=90",
-      "fetched": true,
-      "features": 5
+      "source_url": "https://mdlbeast.com/events/xp-music-futures-2026",
+      "stage": "fetch",
+      "reason": "No MDLBEAST event data found"
     },
     {
       "id": "event-soundstorm-26",
       "title": "SOUNDSTORM 26",
-      "source_method": "official-next-data",
-      "image_url": "https://www.datocms-assets.com/66357/1779098389-80-lowres.jpg?auto=format&fit=max&w=2048&q=90",
-      "fetched": true,
-      "features": 8
+      "source_url": "https://mdlbeast.com/events/soundstorm-26",
+      "stage": "fetch",
+      "reason": "HTTP 404"
     }
-  ],
-  "failed": []
+  ]
 }

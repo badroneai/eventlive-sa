@@ -1,6 +1,6 @@
 # Real Estate Future Forum Agenda Enrichment
 
-- generated_at: 2026-09-29T08:58:11.157Z
+- generated_at: 2026-09-30T10:47:24.029Z
 - time_scope: current-and-upcoming-only
 - status: skipped-historical-source
 - existing ended event data was preserved without a network request

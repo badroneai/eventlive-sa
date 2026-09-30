@@ -1,22 +1,22 @@
 # MDLBEAST Enrichment Report
 
-- generated_at: 2026-09-29T08:56:48.286Z
+- generated_at: 2026-09-30T10:46:21.039Z
 - targets: 6
 - candidates: 5
-- enriched: 6
-- fetched: 6
-- images: 6
-- fetch_failures: 0
+- enriched: 3
+- fetched: 3
+- images: 3
+- fetch_failures: 3
+- enrichment_failures: 0
 
 ## Enriched
 
 - MDLBEAST Radio MixTape - official-next-data - image=yes - features=6
 - Unstable - official-next-data - image=yes - features=7
 - Beast House - official-next-data - image=yes - features=7
-- MDLBEAST | Home of Soundstorm, XP & Music in the Middle East - official-next-data - image=yes - features=5
-- MDLBEAST | Home of Soundstorm, XP & Music in the Middle East - official-next-data - image=yes - features=5
-- SOUNDSTORM 26 - official-next-data - image=yes - features=8
 
-## Fetch Failures
+## Failures (previous outline preserved; new rows use calendar fallback)
 
-- none
+- MDLBEAST | Home of Soundstorm, XP & Music in the Middle East - No MDLBEAST event data found
+- MDLBEAST | Home of Soundstorm, XP & Music in the Middle East - No MDLBEAST event data found
+- SOUNDSTORM 26 - HTTP 404

@@ -1,22 +1,22 @@
 {
   "schema": "eventlive.harvest-os-status.v1",
-  "generated_at": "2026-09-29T09:11:50.555Z",
+  "generated_at": "2026-09-30T11:01:30.303Z",
   "status": "NEEDS_WORK",
   "operating_rule": "Probe before new sources; sample before full harvest; Raw collection is not publication; discovery-only never auto-publishes.",
   "totals": {
     "sources": 88,
-    "candidates": 445,
-    "matched_candidates": 415,
+    "candidates": 433,
+    "matched_candidates": 403,
     "auto_publish_sources": 15,
     "candidate_only_sources": 12,
     "partnership_required_sources": 5,
     "blocked_or_closed_sources": 0,
     "manual_review_sources": 56,
-    "collection_attempted": 28,
-    "productive_sources": 17,
+    "collection_attempted": 36,
+    "productive_sources": 20,
     "collector_errors": 7,
-    "chronic_collector_errors": 6,
-    "transient_collector_errors": 1
+    "chronic_collector_errors": 7,
+    "transient_collector_errors": 0
   },
   "policies": {
     "partnership_required": 5,
@@ -25,19 +25,19 @@
     "manual_review": 56
   },
   "candidates_by_gate": {
-    "catalog-review": 413,
+    "catalog-review": 401,
     "duplicate-review": 5,
     "source-evidence": 27
   },
   "funnel": {
-    "discovered_this_run": 213,
-    "candidate_queue": 445,
-    "evaluated_for_publish": 445,
-    "linked_existing": 405,
-    "published_new": 6,
+    "discovered_this_run": 233,
+    "candidate_queue": 433,
+    "evaluated_for_publish": 433,
+    "linked_existing": 395,
+    "published_new": 4,
     "blocked": 34,
     "secondary_promoted": 0,
-    "secondary_still_blocked": 41
+    "secondary_still_blocked": 36
   },
   "blocked_reasons": {
     "possible duplicate requires review: fuzzy-title-venue-date-window": 2,
@@ -53,50 +53,50 @@
     {
       "id": "moc-cultural-calendar",
       "note": "collector-error: fetch failed; fetch failed",
-      "error_streak": 42,
+      "error_streak": 43,
       "kind": "chronic",
-      "attempted_this_run": false
+      "attempted_this_run": true
     },
     {
       "id": "mos-events",
-      "note": "collector-error: fetch failed; live browser recovery deferred by recent failed probe cooldown",
-      "error_streak": 42,
+      "note": "collector-error: fetch failed",
+      "error_streak": 43,
       "kind": "chronic",
-      "attempted_this_run": false
+      "attempted_this_run": true
     },
     {
       "id": "moc-cultural-subportals",
       "note": "collector-error: fetch failed; fetch failed",
-      "error_streak": 42,
+      "error_streak": 43,
       "kind": "chronic",
-      "attempted_this_run": false
+      "attempted_this_run": true
     },
     {
       "id": "saudi-pro-league-fixtures",
       "note": "collector-error: fetch failed",
-      "error_streak": 22,
+      "error_streak": 23,
       "kind": "chronic",
-      "attempted_this_run": false
+      "attempted_this_run": true
     },
     {
       "id": "tuwaiq-academy-bootcamps",
       "note": "collector-error: HTTP 403",
-      "error_streak": 19,
+      "error_streak": 20,
       "kind": "chronic",
-      "attempted_this_run": false
+      "attempted_this_run": true
     },
     {
       "id": "monshaat-events",
       "note": "collector-error: fetch failed; fetch failed",
-      "error_streak": 10,
+      "error_streak": 11,
       "kind": "chronic",
-      "attempted_this_run": false
+      "attempted_this_run": true
     },
     {
       "id": "asharqia-chamber-events",
-      "note": "fetch failed; live browser recovery deferred by recent failed probe cooldown",
-      "error_streak": 2,
-      "kind": "transient",
+      "note": "collector-error: fetch failed; live browser recovery deferred by recent failed probe cooldown",
+      "error_streak": 3,
+      "kind": "chronic",
       "attempted_this_run": true
     }
   ],

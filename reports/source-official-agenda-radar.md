@@ -1,6 +1,6 @@
 # EventLive Official Agenda Radar
 
-Generated at: 2026-09-28T08:47:31.181Z
+Generated at: 2026-09-30T10:20:36.644Z
 
 Time scope: current-and-upcoming-only
 
@@ -28,6 +28,6 @@ This radar detects when first-party event pages expose a complete timed programm
 | Big 5 Construct Saudi 2026 | announced-no-timed-agenda | 200 | 1 | 0 | watch-until-timed-program |
 | HVAC R Saudi Arabia 2026 | announced-no-timed-agenda | 200 | 1 | 0 | watch-shared-event-agenda |
 | Saudi FM & Clean 2026 | announced-no-timed-agenda | 200 | 1 | 0 | watch-shared-event-agenda |
-| Global Proptech Summit 2026 | watch | 200 | 0 | 72 | watch-homepage-until-2026-agenda-replaces-historical-pdf |
+| Global Proptech Summit 2026 | watch | 200 | 0 | 70 | watch-homepage-until-2026-agenda-replaces-historical-pdf |
 | Real Estate Supply Chain Forum 2026 | announced-no-timed-agenda | 200 | 0 | 6 | watch-until-timed-program |
 | CIPS MENA Conference and Awards 2026 | announced-no-timed-agenda | 200 | 0 | 48 | reject-placeholder-until-official-program |
