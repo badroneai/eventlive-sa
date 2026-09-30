@@ -1,14 +1,11 @@
 import fs from 'node:fs';
 import path from 'node:path';
+import { pathToFileURL } from 'node:url';
 import { assignEventCategory, categoryLabels, normalizeEventCategoryMetadata } from './category-taxonomy.mjs';
 import { isRejectedImageAssetUrl } from './image-asset-utils.mjs';
 import { stripSourceAttribution, withSourceAttribution } from './source-attribution-utils.mjs';
 
 const root = process.cwd();
-const catalogPath = path.join(root, 'data', 'events_catalog.json');
-const candidatesPath = path.join(root, 'data', 'source_candidates.json');
-const reportJsonPath = path.join(root, 'reports', 'mdlbeast-enrichment-report.json');
-const reportMdPath = path.join(root, 'reports', 'mdlbeast-enrichment-report.md');
 const generatedAt = new Date().toISOString();
 const timeoutMs = Math.max(3000, Number(process.env.EVENTLIVE_MDLBEAST_TIMEOUT_MS || 20000));
 const limit = Math.max(1, Number(process.env.EVENTLIVE_MDLBEAST_LIMIT || 50));
@@ -159,7 +156,7 @@ function seoDescription(event = {}) {
 
 function sectionDescriptions(event = {}) {
   const sections = Array.isArray(event.sections) ? event.sections : [];
-  return compactItems(sections.map((section) => richTextToText(section.contentDescription || section.countdownDescription || section.contentTitle)), 8, 520);
+  return compactItems(sections.map((section) => richTextToText(section?.contentDescription || section?.countdownDescription || section?.contentTitle)), 8, 520);
 }
 
 async function fetchMdlbeastPage(url) {
@@ -200,7 +197,10 @@ async function fetchMdlbeastPage(url) {
     ticket_url: cleanText(event.config?.navigationCta?.url || ''),
     ticket_label: cleanText(event.config?.navigationCta?.title || ''),
     slug: cleanText(event.slug || ''),
-    fetched: Boolean(event.title || nextData)
+    // Next.js also embeds __NEXT_DATA__ on error and generic pages. Require
+    // an event identity and event-shaped content before replacing verified data.
+    fetched: Boolean(cleanText(event.title || event.header?.[0]?.title || event.header?.title) &&
+      ((event.config && typeof event.config === 'object') || Array.isArray(event.sections) || event.slug))
   };
 }
 
@@ -210,10 +210,12 @@ function findCandidate(event, candidatesByEventId, candidatesByKey) {
   return candidatesByKey.get(key) || {};
 }
 
-function applyMdlbeastDetails(event, candidate = {}, page = {}) {
+export function applyMdlbeastDetails(event, candidate = {}, page = {}) {
+  page = page && typeof page === 'object' ? page : {};
+  const sections = Array.isArray(page.sections) ? page.sections.filter((item) => typeof item === 'string') : [];
   const sourceUrl = cleanText(event.source_url || event.evidence_url || candidate.source_url || candidate.evidence_url || '');
   const title = cleanText(page.title || candidate.title || event.title);
-  const officialDescription = stripSourceAttribution(cleanText(page.description || page.seo_description || candidate.summary || event.summary));
+  const officialDescription = stripSourceAttribution(cleanText(page.description || page.seo_description || event.description || event.rich_summary || event.program_outline?.official_description || event.summary || candidate.summary));
   const imageUrl = cleanText(page.image || event.image_url || candidate.image_url || '');
   // 2026-09-19 (sync run 35434118725): the page yielded an end without a start, the row kept its
   // own start, and the merged window came out inverted (17 Sep 21:00 → 11 Sep 03:00) — validate
@@ -286,14 +288,14 @@ function applyMdlbeastDetails(event, candidate = {}, page = {}) {
       `المنظم: MDLBEAST`,
       page.ticket_url ? `رابط الحجز: ${page.ticket_url}` : '',
       imageUrl ? `الصورة الرسمية: ${imageUrl}` : '',
-      ...page.sections
+      ...sections
     ], 8, 320),
     requirements: compactItems([
       'راجع صفحة MDLBEAST الرسمية قبل الحضور لاحتمال تحديث التذاكر أو ساعات التشغيل.',
       'استخدم EventLive لمتابعة العد التنازلي وحالة الفعالية عند اقتراب الموعد.'
     ], 4, 260),
     faqs: Object.fromEntries(Object.entries({
-      source_scope: 'MDLBEAST official event page from Next.js data',
+      source_scope: page.fetched ? 'MDLBEAST official event page from Next.js data' : 'Approved MDLBEAST calendar row; official page unavailable',
       organizer: 'MDLBEAST',
       city: event.city,
       category: categoryLabel,
@@ -308,82 +310,117 @@ function applyMdlbeastDetails(event, candidate = {}, page = {}) {
   return { imageUrl, fetched: Boolean(page.fetched), sourceMethod: event.program_outline.source_method };
 }
 
-const catalog = readJson(catalogPath, { events: [] });
-const candidates = readJson(candidatesPath, { candidates: [] }).candidates || [];
-const events = Array.isArray(catalog.events) ? catalog.events : [];
-const mdlbeastCandidates = candidates.filter((candidate) => candidate.source_label === 'MDLBEAST Events');
-const candidatesByEventId = new Map(mdlbeastCandidates.map((candidate) => [candidate.matched_catalog_event_id, candidate]));
-const candidatesByKey = new Map(mdlbeastCandidates.map((candidate) => [`${cleanText(candidate.title).toLowerCase()}|${candidate.starts_at || ''}`, candidate]));
-const targets = events.filter((event) => event.source_label === 'MDLBEAST Events').slice(0, limit);
+export async function runMdlbeastEnrichment({ rootDir = root, fetchPage = fetchMdlbeastPage } = {}) {
+  const catalogPath = path.join(rootDir, 'data', 'events_catalog.json');
+  const candidatesPath = path.join(rootDir, 'data', 'source_candidates.json');
+  const reportJsonPath = path.join(rootDir, 'reports', 'mdlbeast-enrichment-report.json');
+  const reportMdPath = path.join(rootDir, 'reports', 'mdlbeast-enrichment-report.md');
+  const catalog = readJson(catalogPath, { events: [] });
+  const candidates = readJson(candidatesPath, { candidates: [] }).candidates || [];
+  const events = Array.isArray(catalog.events) ? catalog.events : [];
+  const mdlbeastCandidates = candidates.filter((candidate) => candidate.source_label === 'MDLBEAST Events');
+  const candidatesByEventId = new Map(mdlbeastCandidates.map((candidate) => [candidate.matched_catalog_event_id, candidate]));
+  const candidatesByKey = new Map(mdlbeastCandidates.map((candidate) => [`${cleanText(candidate.title).toLowerCase()}|${candidate.starts_at || ''}`, candidate]));
+  const targets = events.filter((event) => event.source_label === 'MDLBEAST Events').slice(0, limit);
 
-const enriched = [];
-const failed = [];
+  const enriched = [];
+  const failed = [];
 
-for (const event of targets) {
-  const candidate = findCandidate(event, candidatesByEventId, candidatesByKey);
-  let page = {};
-  try {
-    if (event.source_url || candidate.source_url) page = await fetchMdlbeastPage(event.source_url || candidate.source_url);
-  } catch (error) {
-    failed.push({ id: event.id, title: event.title, source_url: event.source_url, reason: String(error.message || error) });
+  for (const event of targets) {
+    const candidate = findCandidate(event, candidatesByEventId, candidatesByKey);
+    const sourceUrl = cleanText(event.source_url || event.evidence_url || candidate.source_url || candidate.evidence_url);
+    const enrich = (page) => {
+      // Commit only after enrichment succeeds; partial writes never escape a row.
+      const updated = structuredClone(event);
+      const result = applyMdlbeastDetails(updated, candidate, page);
+      Object.assign(event, updated);
+      enriched.push({
+        id: event.id,
+        title: event.title,
+        source_method: result.sourceMethod,
+        image_url: result.imageUrl || '',
+        fetched: result.fetched,
+        features: event.program_outline.features.length
+      });
+    };
+    let stage = 'fetch';
+    try {
+      if (!sourceUrl) throw new Error('Missing MDLBEAST source URL');
+      const page = await fetchPage(sourceUrl);
+      if (!page || typeof page !== 'object' || !page.fetched) throw new Error('No MDLBEAST event data found');
+      stage = 'apply';
+      enrich(page);
+    } catch (error) {
+      failed.push({ id: event.id, title: event.title, source_url: sourceUrl, stage, reason: String(error.message || error) });
+      // Never replace a previously collected outline during an outage. A newly
+      // approved row can still receive the calendar fallback without pretending
+      // its official page was fetched; keep the original fetch error in the report.
+      if (stage === 'fetch' && !event.program_outline) {
+        try {
+          enrich({});
+        } catch (fallbackError) {
+          failed.push({ id: event.id, title: event.title, source_url: sourceUrl, stage: 'apply', reason: String(fallbackError.message || fallbackError) });
+        }
+      }
+    }
   }
-  const result = applyMdlbeastDetails(event, candidate, page);
-  enriched.push({
-    id: event.id,
-    title: event.title,
-    source_method: result.sourceMethod,
-    image_url: result.imageUrl || '',
-    fetched: result.fetched,
-    features: event.program_outline.features.length
-  });
+
+  catalog.generated_for = catalog.generated_for || 'EventLive Saudi events catalog';
+  catalog.notes = catalog.notes || 'Auto-published official and approved-source Saudi events.';
+  writeJson(catalogPath, catalog);
+
+  const report = {
+    generated_at: generatedAt,
+    catalog: path.relative(rootDir, catalogPath),
+    source: 'MDLBEAST Events',
+    totals: {
+      targets: targets.length,
+      candidates: mdlbeastCandidates.length,
+      enriched: enriched.length,
+      fetched: enriched.filter((item) => item.fetched).length,
+      images: enriched.filter((item) => item.image_url).length,
+      fetch_failures: failed.filter((item) => item.stage === 'fetch').length,
+      enrichment_failures: failed.filter((item) => item.stage === 'apply').length
+    },
+    enriched,
+    failed
+  };
+  writeJson(reportJsonPath, report);
+  fs.writeFileSync(reportMdPath, [
+    '# MDLBEAST Enrichment Report',
+    '',
+    `- generated_at: ${generatedAt}`,
+    `- targets: ${report.totals.targets}`,
+    `- candidates: ${report.totals.candidates}`,
+    `- enriched: ${report.totals.enriched}`,
+    `- fetched: ${report.totals.fetched}`,
+    `- images: ${report.totals.images}`,
+    `- fetch_failures: ${report.totals.fetch_failures}`,
+    `- enrichment_failures: ${report.totals.enrichment_failures}`,
+    '',
+    '## Enriched',
+    '',
+    ...(enriched.length
+      ? enriched.map((item) => `- ${item.title} - ${item.source_method} - image=${item.image_url ? 'yes' : 'no'} - features=${item.features}`)
+      : ['- none']),
+    '',
+    '## Failures (previous outline preserved; new rows use calendar fallback)',
+    '',
+    ...(failed.length ? failed.map((item) => `- ${item.title} - ${item.reason}`) : ['- none'])
+  ].join('\n') + '\n', 'utf8');
+
+  console.log('# EventLive MDLBEAST Enrichment');
+  console.log(`- Targets: ${report.totals.targets}`);
+  console.log(`- Enriched: ${report.totals.enriched}`);
+  console.log(`- Fetched: ${report.totals.fetched}`);
+  console.log(`- Images: ${report.totals.images}`);
+  console.log(`- Fetch failures: ${report.totals.fetch_failures}`);
+  console.log(`- Enrichment failures: ${report.totals.enrichment_failures}`);
+  console.log(`- Report: ${path.relative(rootDir, reportMdPath)}`);
+
+  return report;
 }
 
-catalog.generated_for = catalog.generated_for || 'EventLive Saudi events catalog';
-catalog.notes = catalog.notes || 'Auto-published official and approved-source Saudi events.';
-writeJson(catalogPath, catalog);
-
-const report = {
-  generated_at: generatedAt,
-  catalog: path.relative(root, catalogPath),
-  source: 'MDLBEAST Events',
-  totals: {
-    targets: targets.length,
-    candidates: mdlbeastCandidates.length,
-    enriched: enriched.length,
-    fetched: enriched.filter((item) => item.fetched).length,
-    images: enriched.filter((item) => item.image_url).length,
-    fetch_failures: failed.length
-  },
-  enriched,
-  failed
-};
-writeJson(reportJsonPath, report);
-fs.writeFileSync(reportMdPath, [
-  '# MDLBEAST Enrichment Report',
-  '',
-  `- generated_at: ${generatedAt}`,
-  `- targets: ${report.totals.targets}`,
-  `- candidates: ${report.totals.candidates}`,
-  `- enriched: ${report.totals.enriched}`,
-  `- fetched: ${report.totals.fetched}`,
-  `- images: ${report.totals.images}`,
-  `- fetch_failures: ${report.totals.fetch_failures}`,
-  '',
-  '## Enriched',
-  '',
-  ...(enriched.length
-    ? enriched.map((item) => `- ${item.title} - ${item.source_method} - image=${item.image_url ? 'yes' : 'no'} - features=${item.features}`)
-    : ['- none']),
-  '',
-  '## Fetch Failures',
-  '',
-  ...(failed.length ? failed.map((item) => `- ${item.title} - ${item.reason}`) : ['- none'])
-].join('\n') + '\n', 'utf8');
-
-console.log('# EventLive MDLBEAST Enrichment');
-console.log(`- Targets: ${report.totals.targets}`);
-console.log(`- Enriched: ${report.totals.enriched}`);
-console.log(`- Fetched: ${report.totals.fetched}`);
-console.log(`- Images: ${report.totals.images}`);
-console.log(`- Fetch failures: ${report.totals.fetch_failures}`);
-console.log(`- Report: ${path.relative(root, reportMdPath)}`);
+if (process.argv[1] && import.meta.url === pathToFileURL(path.resolve(process.argv[1])).href) {
+  await runMdlbeastEnrichment();
+}

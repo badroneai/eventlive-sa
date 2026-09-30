@@ -304,7 +304,7 @@
     "cheerio": "^1.1.2",
     "intl-messageformat": "^10.7.18",
     "qrcode": "^1.5.4",
-    "undici": "^7.29.0"
+    "undici": "^7.29.1"
   },
   "devDependencies": {
     "axe-core": "^4.12.1",
