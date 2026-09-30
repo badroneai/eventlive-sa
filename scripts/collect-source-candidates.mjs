@@ -14,6 +14,7 @@ import { selectSourcesByCadence } from './source-cadence-utils.mjs';
 import { parseVisitSaudiSummerPdfXml, visitSaudiPdfBufferToXml } from './visit-saudi-summer-pdf-utils.mjs';
 import { ksaEgressDispatcher } from './ksa-egress.mjs';
 import { looksLikeBotChallenge } from './bot-challenge-detection.mjs';
+import { sourceErrorMessage } from './source-error-utils.mjs';
 
 const sourceRegistryPath = process.env.EVENTLIVE_SOURCE_REGISTRY_FILE
   ? path.join(root, process.env.EVENTLIVE_SOURCE_REGISTRY_FILE)
@@ -6505,7 +6506,7 @@ async function loadSourceExtraction(source, extractor, options = {}) {
 
   if (primaryResult) return primaryResult;
   if (fallbackResult) return fallbackResult;
-  const reasons = [primaryError?.message, fallbackError?.message].filter(Boolean).join('; ');
+  const reasons = [sourceErrorMessage(primaryError), sourceErrorMessage(fallbackError)].filter(Boolean).join('; ');
   throw new Error(reasons || 'source extraction failed');
 }
 
@@ -6693,17 +6694,17 @@ async function main() {
       const existingEndedKeys = new Set(existingEndedEvents.map((item) => candidateMergeKey(item)));
       summary.ended_new = endedEvents.filter((item) => !existingEndedKeys.has(candidateMergeKey(item))).length;
       if (summary.fetch_mode !== 'direct') {
-        const primaryNote = extraction.primary_error ? ` Primary page failed: ${extraction.primary_error.message}.` : '';
+        const primaryNote = extraction.primary_error ? ` Primary page failed: ${sourceErrorMessage(extraction.primary_error)}.` : '';
         summary.note = `Recovered via ${summary.fetch_mode} official evidence.${primaryNote}`;
       }
       if (!candidates.length) summary.note = `${summary.note ? `${summary.note} ` : ''}No future date-complete candidates found by the conservative extractor.`;
     } catch (error) {
       if (isDiscoveryOnlySource(source)) {
         summary.status = 'skipped';
-        summary.note = `Discovery-only source unavailable in this run: ${error.message}`;
+        summary.note = `Discovery-only source unavailable in this run: ${sourceErrorMessage(error)}`;
       } else {
         summary.status = 'error';
-        summary.note = error.message;
+        summary.note = sourceErrorMessage(error);
       }
     }
     summary.duration_ms = Date.now() - sourceStartedAt;

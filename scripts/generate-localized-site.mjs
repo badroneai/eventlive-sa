@@ -16,6 +16,7 @@ import { LEGACY_REDIRECT_PAGES, LEGACY_TOP_LEVEL_REDIRECT_LABELS_EN, legacyRedir
 import { buildTitleQualifiers, eventQualifierKey, withTitleQualifier } from './event-title-qualifier.mjs';
 import { englishSeoDescription, englishSeoTitle, withEnglishBrand } from './en-seo-descriptions.mjs';
 import { canonicalEventPage, EVENT_ALIAS_PAGES } from './event-canonical-aliases.mjs';
+import { hasSourcedClock } from './event-kind-utils.mjs';
 
 const root = process.cwd();
 const distDir = path.join(root, 'dist');
@@ -771,11 +772,14 @@ function insightsMarkup() {
   <section class="section"><div class="wrap"><div class="insight-note"><h2>How these numbers are calculated</h2><p>Counts come directly from EventLive public pages at build time. Active includes upcoming, ongoing, and live records. Completed events remain normal historical pages with their original dates. Internal candidates and blocked records are excluded.</p><p><a href="/saudi-events-insights.json">Open the JSON dataset</a> · <a href="./events.html">Browse all events</a></p></div></div></section>`;
 }
 
-function formatEnglishEventDate(value) {
+function formatEnglishEventDate(event, value = event.starts_at) {
   if (!value) return '';
   const date = new Date(value);
   if (Number.isNaN(date.getTime())) return '';
-  return new Intl.DateTimeFormat('en-GB', { timeZone: 'Asia/Riyadh', day: '2-digit', month: '2-digit', year: 'numeric', hour: 'numeric', minute: '2-digit', hour12: true }).format(date);
+  return new Intl.DateTimeFormat('en-GB', {
+    timeZone: 'Asia/Riyadh', day: '2-digit', month: '2-digit', year: 'numeric',
+    ...(hasSourcedClock(event) ? { hour: 'numeric', minute: '2-digit', hour12: true } : {})
+  }).format(date);
 }
 
 // The event FAQ is template chrome with embedded content (title, dates,
@@ -797,7 +801,7 @@ function englishEventFaq(event) {
   return [
     {
       question: `When does ${title} start?`,
-      answer: `${title} starts on ${formatEnglishEventDate(event.starts_at)} and ends on ${formatEnglishEventDate(event.ends_at)}, Saudi time.`
+      answer: `${title} starts on ${formatEnglishEventDate(event, event.starts_at)} and ends on ${formatEnglishEventDate(event, event.ends_at)}, Saudi time.`
     },
     {
       question: `Where does ${title} take place?`,
@@ -1316,8 +1320,8 @@ function englishEventDescription(event, ended = eventHasEnded(event)) {
   const city = exact[event.city] || event.city_label || event.city || 'Saudi Arabia';
   const rawVenue = event.venue ? (exact[event.venue] || event.venue) : '';
   const venue = rawVenue ? (stripEmbeddedLabel(rawVenue) || rawVenue) : '';
-  const starts = formatEnglishEventDate(event.starts_at);
-  const ends = formatEnglishEventDate(event.ends_at);
+  const starts = formatEnglishEventDate(event, event.starts_at);
+  const ends = formatEnglishEventDate(event, event.ends_at);
   const when = starts && ends ? ` from ${starts} to ${ends}` : (starts ? ` on ${starts}` : '');
   const where = venue && venue !== city ? ` Venue: ${venue}.` : '';
   // Mirrors the Arabic side: a page about an event that already happened must

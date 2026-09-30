@@ -1,3 +1,4 @@
+import { syncPublicSourceSnapshots } from './public-source-snapshots.mjs';
 import crypto from 'node:crypto';
 import fs from 'node:fs';
 import path from 'node:path';
@@ -28,9 +29,10 @@ import { createContentTranslator } from './content-translation-cache.mjs';
 import { ARABIC_DAYS_LABEL_JS, DURATION_LABEL_RUNTIME_JS } from './duration-label.mjs';
 import { eventDateRangeLabel, isMultiDayEvent } from './event-date-range.mjs';
 import { canonicalEventSlug, EVENT_ALIAS_PAGES } from './event-canonical-aliases.mjs';
+import { collapseCuratedPublicDuplicates } from './curated-public-duplicates.mjs';
 import { loadUrlLedger, reconcileUrlLedger, saveUrlLedger } from './published-url-ledger.mjs';
 import { buildTitleQualifiers, eventQualifierKey, withTitleQualifier } from './event-title-qualifier.mjs';
-import { canClaimLiveNow, canClaimLiveNowFor, classifyEventKind, eventKindLabel, getEventStatus, LIVE_CLAIM_MAX_WINDOW_HOURS } from './event-kind-utils.mjs';
+import { canClaimLiveNow, canClaimLiveNowFor, classifyEventKind, eventKindLabel, getEventRuntime, LIVE_CLAIM_MAX_WINDOW_HOURS } from './event-kind-utils.mjs';
 import { decodeHtmlEntities } from './html-entities.mjs';
 import { compareAttendancePriority, isLiveMoment } from './event-priority.mjs';
 import { homeBoardLiveSection } from './home-board-live.mjs';
@@ -46,6 +48,7 @@ import { isLikelyImageAssetUrl, isRejectedImageAssetUrl, isSourcePageLikeImageUr
 import { OWNER_ONLY_PAGES, ownerOnlyLinkRegex } from './owner-only-pages.mjs';
 import { NOINDEX_PUBLIC_PAGES } from './noindex-public-pages.mjs';
 import { riyadhDateKey } from './riyadh-date-utils.mjs';
+import { hasSourcedClock, SOURCED_TIME_PRECISION } from './event-kind-utils.mjs';
 import { buildIndexNowDelta, mergeIndexNowBatchUrls, reconcileSeoPageState, reconcileStaticPageState } from './seo-discovery-utils.mjs';
 import { applyFreshnessClaims, maskFreshnessClaims } from './freshness-claim-utils.mjs';
 import { coordinatesQuery, resolveVenueLocation } from './venue-location-utils.mjs';
@@ -694,6 +697,13 @@ function formatDate(value) {
   }).format(date);
 }
 
+function formatEventDate(event, value = event.starts_at) {
+  if (hasSourcedClock(event)) return formatDate(value);
+  const date = dateValue(value);
+  if (!date) return 'لم يحدد الوقت';
+  return new Intl.DateTimeFormat('ar-SA', { dateStyle: 'medium', timeZone: 'Asia/Riyadh' }).format(date);
+}
+
 function absoluteUrl(relativePath = '') {
   return `${siteUrl}/${String(relativePath).replace(/^\.\//, '')}`;
 }
@@ -1034,7 +1044,7 @@ function enrichEventSummary(summary, event) {
   const parts = [
     clean,
     `${event.title} ضمن ${event.category_label || 'فعاليات السعودية'} في ${event.city_label || cityLabel(event.city)}.`,
-    `تبدأ الفعالية ${formatDate(event.starts_at)} وتنتهي ${formatDate(event.ends_at)} حسب البيانات المتاحة.`,
+    `تبدأ الفعالية ${formatEventDate(event, event.starts_at)} وتنتهي ${formatEventDate(event, event.ends_at)} حسب البيانات المتاحة.`,
     event.live_schedule_ready
       ? 'تتوفر لها صفحة جدول حي تساعد الزائر على متابعة الحالة والوقت أثناء الحضور.'
       : 'تعرض الصفحة وقت الفعالية وموقعها ومصدرها وروابط التقويم والاتجاهات عند توفرها.',
@@ -1167,7 +1177,7 @@ function normalizeEvent(raw, sourceGroup, previousLookup) {
     : raw.ends_at;
   const status = sourceGroup === 'ended'
     ? { key: 'ended', label: 'منتهية' }
-    : getEventStatus(raw.starts_at, statusEndsAt, Date.now(), kind);
+    : getEventRuntime({ ...raw, starts_at: raw.starts_at || previous.starts_at, ends_at: statusEndsAt || previous.ends_at, event_kind: kind }, Date.now()).status;
   const audiences = classifyAudiences({ ...previous, ...raw });
   const rawSessions = detailedSessionsFrom(raw.sessions);
   const previousSessions = detailedSessionsFrom(previous.sessions);
@@ -1203,7 +1213,8 @@ function normalizeEvent(raw, sourceGroup, previousLookup) {
     category_label_en: categoryDefinitionRecord.label_en,
     summary: raw.summary || previous.summary || 'تفاصيل الفعالية محفوظة من مصدرها المعتمد ليستخدمها الزائر قبل وأثناء وبعد وقت الفعالية.',
     starts_at: raw.starts_at || previous.starts_at,
-    ends_at: raw.ends_at || previous.ends_at,
+    ends_at: statusEndsAt || previous.ends_at,
+    time_precision: raw.time_precision || 'unknown',
     updated_at: raw.updated_at || raw.collected_at || previous.updated_at || buildAt,
     sessions,
     sessions_count: Math.max(Number(raw.sessions_count ?? previous.sessions_count ?? 0), sessions.length),
@@ -1401,6 +1412,9 @@ function buildEvents() {
     }
     const translationOptions = { trackPending: event.status !== 'ended' && sourceGroup !== 'ended' };
     const proseSummary = contentTranslator.localizeEventProse(event, 'ar', translationOptions);
+    // Translation can shorten a previously sufficient summary. Enforce the
+    // same metadata-backed writer contract on the text that will be rendered.
+    event.summary = enrichEventSummary(event.summary, event);
     event.content_translated = proseSummary.translationApplied;
     event.content_machine_translated = proseSummary.machineApplied;
     if (event.status !== 'ended') {
@@ -1742,7 +1756,21 @@ function isOwnerOnlyPage(filePath) {
 }
 
 function runtimeAttrs(event) {
-  return `data-start="${escapeHtml(event.starts_at || '')}" data-end="${escapeHtml(event.ends_at || event.starts_at || '')}" data-kind="${escapeHtml(event.event_kind || 'moment')}"`;
+  return `data-start="${escapeHtml(event.starts_at || '')}" data-end="${escapeHtml(event.ends_at || event.starts_at || '')}" data-kind="${escapeHtml(event.event_kind || 'moment')}" data-time-precision="${escapeHtml(event.time_precision || 'unknown')}"`;
+}
+
+function clockPrecisionRuntimeScript() {
+  return `
+  ${riyadhDateKey.toString()}
+  function hasRuntimeClock(precision) {
+    return ${JSON.stringify([...SOURCED_TIME_PRECISION])}.indexOf(precision || '') !== -1;
+  }
+  function runtimeDate(value) {
+    var date = new Date(value);
+    return Number.isFinite(date.getTime())
+      ? new Intl.DateTimeFormat('ar-SA', { dateStyle: 'medium', timeZone: 'Asia/Riyadh' }).format(date)
+      : '';
+  }`;
 }
 
 function liveRuntimeScript() {
@@ -1782,7 +1810,12 @@ function liveRuntimeScript() {
       var card = cards[i];
       var start = t(card.getAttribute('data-event-start'));
       var end = t(card.getAttribute('data-event-end')) || start;
-      var isAllowed = Number.isFinite(start) && inTemporalWindow(start, end, now, windowHours);
+      var clockEl = card.querySelector('[data-live-time], [data-runtime-status]');
+      var isAllowed = Number.isFinite(start) && (clockEl && hasRuntimeClock(clockEl.dataset.timePrecision)
+        ? inTemporalWindow(start, end, now, windowHours)
+        : riyadhDateKey(end) >= riyadhDateKey(now)
+          && riyadhDateKey(start) >= riyadhDateKey(now - windowHours * 3600000)
+          && riyadhDateKey(start) <= riyadhDateKey(now + windowHours * 3600000));
       if (!isAllowed) {
         card.remove();
         continue;
@@ -1801,6 +1834,7 @@ function liveRuntimeScript() {
     }
   }
   ${DURATION_LABEL_RUNTIME_JS}
+  ${clockPrecisionRuntimeScript()}
   function remaining(ms) {
     var value = Math.max(0, ms || 0);
     var day = Math.floor(value / 86400000);
@@ -1816,7 +1850,16 @@ function liveRuntimeScript() {
     var end = t(el.dataset.end) || start;
     var kind = el.dataset.kind || 'moment';
     var now = Date.now();
-    if (!start) return { key: 'draft', label: 'وقت غير مؤكد', note: 'وقت غير مؤكد' };
+    if (!Number.isFinite(start) || !Number.isFinite(end) || end < start) return { key: 'draft', label: 'وقت غير مؤكد', note: 'وقت غير مؤكد' };
+    // A collector's fallback hour is not an observed clock. Compare Riyadh
+    // calendar days instead, including the whole last day, and never count
+    // down to (or declare the end of) that invented hour.
+    if (!hasRuntimeClock(el.dataset.timePrecision)) {
+      var today = riyadhDateKey(now), firstDay = riyadhDateKey(start), lastDay = riyadhDateKey(end);
+      if (today < firstDay) return { key: 'upcoming', label: 'قادمة', note: (firstDay === lastDay ? 'تبدأ في ' + runtimeDate(start) : 'من ' + runtimeDate(start) + ' إلى ' + runtimeDate(end)) + ' · وقت غير مؤكد' };
+      if (today > lastDay) return { key: 'ended', label: 'منتهية', note: 'انتهت في ' + runtimeDate(end) + ' · وقت غير مؤكد' };
+      return { key: 'ongoing', label: kind === 'program' ? 'برنامج جارٍ' : 'مستمرة هذه الأيام', note: 'ضمن أيام الفعالية حتى ' + runtimeDate(end) + ' · وقت غير مؤكد' };
+    }
     if (now < start) return { key: 'upcoming', label: 'قادمة', note: 'يبدأ بعد ' + remaining(start - now) };
     if (end && now <= end) {
       if (kind === 'program') return { key: 'ongoing', label: 'برنامج جارٍ', note: 'نافذة البرنامج مفتوحة، ينتهي بعد ' + remaining(end - now) };
@@ -1845,7 +1888,7 @@ function liveRuntimeScript() {
       // per-minute ticking. Leave it alone while still upcoming; the
       // moment the event's own state flips to live/ended this stops
       // applying and the normal countdown/continuation text takes over.
-      if (el.hasAttribute('data-static-until-live') && state.key === 'upcoming') return;
+      if (el.hasAttribute('data-static-until-live') && state.key === 'upcoming' && hasRuntimeClock(el.dataset.timePrecision)) return;
       el.textContent = state.note;
     });
     document.querySelectorAll('[data-runtime-status]').forEach(function (el) {
@@ -1986,7 +2029,7 @@ function eventCard(event, prefix = './') {
   // only replaces the bare start-date chip while the event is still
   // current/ongoing or upcoming — never both shown at once.
   const multiDay = event.status !== 'ended' && isMultiDayEvent(event);
-  const dateChip = multiDay ? eventDateRangeLabel(event, formatShortDate) : formatDate(event.starts_at);
+  const dateChip = multiDay ? eventDateRangeLabel(event, formatShortDate) : formatEventDate(event, event.starts_at);
   // WO-7b point B: mark the multi-day date chip with the same "date-tab"
   // token homeEventCard's cover badge uses — this page's stylesheet
   // (pageCss) has no .date-tab rule at all, so the class carries zero
@@ -2133,6 +2176,8 @@ function eventPublicJson(event = {}, canonical = '', schemaImage = '') {
     venue_address: event.venue_address,
     starts_at: event.starts_at,
     ends_at: event.ends_at,
+    time_precision: event.time_precision || 'unknown',
+    ...(event.date_precision ? { date_precision: event.date_precision } : {}),
     status: event.status,
     status_label: event.status_label,
     event_kind: event.event_kind,
@@ -2393,7 +2438,7 @@ function eventFaqItems(event) {
   return [
     {
       question: `متى تبدأ ${event.title}؟`,
-      answer: `تبدأ ${event.title} في ${formatDate(event.starts_at)} وتنتهي في ${formatDate(event.ends_at)} بتوقيت السعودية.`
+      answer: `تبدأ ${event.title} في ${formatEventDate(event, event.starts_at)} وتنتهي في ${formatEventDate(event, event.ends_at)} بتوقيت السعودية.`
     },
     {
       question: `أين تقام ${event.title}؟`,
@@ -2582,13 +2627,13 @@ function relatedEventsHtml(event, allEvents, relative) {
     .slice(0, 4);
   const editionsHtml = editions.length
     ? `<h3>نسخ أخرى من الفعالية</h3><ul class="related-events">${editions.map((row) => {
-      const when = formatDate(row.starts_at);
+      const when = formatEventDate(row, row.starts_at);
       return `<li><a href="${escapeHtml(`${relative}events/${row.file_slug}.html`)}"><b dir="auto">${escapeHtml(row.title)}</b><span class="muted">${when ? ` — ${escapeHtml(when)}` : ''}</span></a></li>`;
     }).join('')}</ul>`
     : '';
   if (!picked.length && !editions.length) return '';
   const items = picked.map((row) => {
-    const when = formatDate(row.starts_at);
+    const when = formatEventDate(row, row.starts_at);
     const where = cityLabel(row.city);
     // City and date sit in their own text nodes: generate-localized-site.mjs
     // translates by exact node match, so a composite "— الرياض · <date>" node
@@ -2679,21 +2724,21 @@ function renderEventDetail(event) {
   // session chips disagreed with the title, which is exactly what a self-check is
   // supposed to catch.
   // A future session is proof the event has not finished, and it outranks a stale
-  // parent status: event.status comes from getEventStatus(starts_at, ends_at),
+  // parent status: event.status comes from the precision-aware getEventRuntime,
   // which cannot see the schedule. chess-hub is stamped 'ended' from a window that
   // closed 2026-08-25 while 13 sessions run to 2026-12-29.
   const ended = effectiveEventEnd(event) < Date.now();
   const monthYear = archiveMonthLabel(event.ends_at || event.starts_at);
   const statusPrefix = ended ? 'فعالية منتهية. ' : '';
   const venuePhrase = event.venue && String(event.venue).trim() !== String(city).trim() ? `الموقع: ${event.venue}. ` : '';
-  const description = `${statusPrefix}${event.title} ${placePhrase} من ${formatDate(event.starts_at)} إلى ${formatDate(event.ends_at)}. ${venuePhrase}${ended ? 'أرشيف موثق من المصدر الرسمي عبر EventLive.' : 'تحقق من المصدر والجدول الحي عبر EventLive.'}`;
+  const description = `${statusPrefix}${event.title} ${placePhrase} من ${formatEventDate(event, event.starts_at)} إلى ${formatEventDate(event, event.ends_at)}. ${venuePhrase}${ended ? 'أرشيف موثق من المصدر الرسمي عبر EventLive.' : 'تحقق من المصدر والجدول الحي عبر EventLive.'}`;
   const titleCore = withTitleQualifier(`${event.title} ${placePhrase}`, event.seo_title_qualifier);
   const seoTitle = ended
     ? `${titleCore} — منتهية${monthYear ? ` ${monthYear}` : ''} | EventLive`
     : `${titleCore} | EventLive`;
   // A duplicate record (see event-canonical-aliases.mjs) keeps its page but
   // hands its indexing signal to the primary, so the two stop competing.
-  const canonicalSlug = canonicalEventSlug(event.file_slug) || event.file_slug;
+  const canonicalSlug = curatedDuplicates.redirects.get(event.file_slug) || canonicalEventSlug(event.file_slug) || event.file_slug;
   const canonical = absoluteUrl(`events/${canonicalSlug}.html`);
   const image = event.image_url.startsWith('/') ? `${relative}${event.image_url.slice(1)}` : event.image_url;
   const schemaImage = publicAssetUrl(event.image_url);
@@ -2780,7 +2825,7 @@ function renderEventDetail(event) {
 ${header(relative)}
 <main>
   ${eventBreadcrumbHtml(event, relative)}
-  <section class="hero event-hero" data-section="hero"><div class="wrap event-hero-in"><div class="event-hero-main"><span class="eyebrow"><span class="live-dot"></span><span data-runtime-status ${runtimeAttrs(event)}>${escapeHtml(event.status_label)}</span> · ${escapeHtml(event.event_kind_label)}</span><h1>${escapeHtml(event.title)}</h1><p class="event-hero-line">${escapeHtml(cityLabel(event.city))} · ${escapeHtml(formatDate(event.starts_at))}</p>${endedNote}<div class="event-hero-ctas">${eventPrimaryActionHtml(event, 'hero-cta-primary')}${eventSaveActionHtml(event, 'hero-cta-secondary')}</div>${eventSaveStatusHtml(event)}</div><div class="event-hero-media"><img class="cover" src="${escapeHtml(image)}" alt="${escapeHtml(event.image_alt || event.title)}" /></div></div></section>
+  <section class="hero event-hero" data-section="hero"><div class="wrap event-hero-in"><div class="event-hero-main"><span class="eyebrow"><span class="live-dot"></span><span data-runtime-status ${runtimeAttrs(event)}>${escapeHtml(event.status_label)}</span> · ${escapeHtml(event.event_kind_label)}</span><h1>${escapeHtml(event.title)}</h1><p class="event-hero-line">${escapeHtml(cityLabel(event.city))} · ${escapeHtml(formatEventDate(event, event.starts_at))}</p>${endedNote}<div class="event-hero-ctas">${eventPrimaryActionHtml(event, 'hero-cta-primary')}${eventSaveActionHtml(event, 'hero-cta-secondary')}</div>${eventSaveStatusHtml(event)}</div><div class="event-hero-media"><img class="cover" src="${escapeHtml(image)}" alt="${escapeHtml(event.image_alt || event.title)}" /></div></div></section>
   ${eventNowStripHtml(event)}
   ${sessions}
   ${programOutline}
@@ -6166,6 +6211,7 @@ function homeTickerEvent(event) {
     e: event.ends_at,
     u: compactEventUrl(event),
     k: event.event_kind,
+    p: event.time_precision || 'unknown',
     r: event.live_schedule_ready ? 1 : 0
   };
 }
@@ -7044,22 +7090,91 @@ ${content}
     </section>`;
 }
 
-// WO-1 mobile-nav follow-up: the live board carousel's rotation script
-// (showCard/manualStep/startAuto) lives directly in the committed
-// dist/index.html shell — it is hand-ported there, not re-templated on
-// every build (see the WO-1 comment on the `liveEvents` const above and the
-// dist/index.html shell's own "All markup is already in the DOM..." comment
-// above initBoardLiveCarousel()). The board markup itself (including the
-// new compact "N/total" counter from scripts/home-board-live.mjs) IS
-// re-templated every build via the literal .replace() below, but the JS
-// that keeps the counter's "N" in sync with the active card needs its own
-// literal-string patch here, following the same idiom as the two
-// .replace() calls in patchHomePage. Built-output guard: if the committed
-// shell's showCard() text ever drifts from the string matched below, this
-// becomes a silent no-op (html === unchanged) — scripts/mobile-browsing-
-// regression-test.mjs's `.board-live-count` assertions are what catch that
-// drift, the same way scripts/event-priority-regression-test.mjs already
-// guards the two older literal-string patches.
+function patchHomeTickerClockRuntime(html) {
+  // The homepage is a retained shell. Replace its clock as one versioned,
+  // idempotent block so rebuilding cannot leave the old precision-blind code.
+  const replacement = `/* eventlive-home-precision-clock:start */
+      ${clockPrecisionRuntimeScript()}
+      function pickFocus(now) {
+        var live = null, next = null, ongoing = null;
+        for (var i = 0; i < ticker.length; i += 1) {
+          var ev = ticker[i];
+          var s = new Date(ev.s).getTime(), e = new Date(ev.e || ev.s).getTime();
+          if (!Number.isFinite(s) || !Number.isFinite(e) || e < s) continue;
+          var sourced = hasRuntimeClock(ev.p);
+          var today = riyadhDateKey(now), firstDay = riyadhDateKey(s), lastDay = riyadhDateKey(e);
+          var active = sourced ? now >= s && now <= e : today >= firstDay && today <= lastDay;
+          if (active && sourced && ev.k !== 'program' && e - s <= ${LIVE_CLAIM_MAX_WINDOW_HOURS} * 3600000 && !live) live = ev;
+          if ((sourced ? s > now : firstDay > today) && (!next || s < new Date(next.s).getTime())) next = ev;
+          if (active && !ongoing) ongoing = ev;
+        }
+        return { live: live, next: next, ongoing: ongoing };
+      }
+      function two(n) { return n < 10 ? '0' + n : String(n); }
+      function tick() {
+        // The existing carousel owns its visible board; resume this clock when
+        // that carousel hands back to the single-event surface.
+        if (boardSingle && boardSingle.hidden) return;
+        var now = Date.now();
+        var f = pickFocus(now);
+        var ev = f.live || f.next || f.ongoing;
+        var sourced = ev && hasRuntimeClock(ev.p);
+        var target = sourced && (f.live || f.next) ? new Date(f.live ? ev.e : ev.s).getTime() : null;
+        if (ev) {
+          boardTitle.textContent = ev.t;
+          try {
+            var options = { dateStyle: 'short', timeZone: 'Asia/Riyadh' };
+            if (sourced && (f.live || f.next)) options.timeStyle = 'short';
+            var until = !!f.live || !f.next;
+            var metaWhen = new Intl.DateTimeFormat('ar-SA', options).format(new Date(until ? ev.e || ev.s : ev.s));
+            boardMeta.textContent = ev.c + ' · ' + (until ? 'حتى ' : '') + metaWhen + (sourced ? '' : ' · وقت غير مؤكد');
+          } catch (metaError) {
+            boardMeta.textContent = ev.c + (sourced ? '' : ' · وقت غير مؤكد');
+          }
+          boardCta.href = ev.u;
+          if (f.live) {
+            boardLabel.innerHTML = '<span class="live-dot"></span>يحدث الآن — ينتهي خلال';
+            boardCta.textContent = 'افتح الجدول الحي';
+          } else if (f.next) {
+            boardLabel.textContent = sourced ? 'أقرب فعالية — تبدأ خلال' : 'أقرب فعالية · وقت غير مؤكد';
+            boardCta.textContent = ev.r ? 'افتح الجدول الحي' : 'التفاصيل والتذكير';
+          } else {
+            boardLabel.textContent = 'مستمرة هذه الأيام';
+            boardCta.textContent = 'التفاصيل والتذكير';
+          }
+        } else {
+          boardLabel.textContent = 'لا توجد فعالية قادمة';
+          boardTitle.textContent = 'استعرض الكتالوج';
+          boardMeta.textContent = '';
+          boardCta.href = './events.html';
+          boardCta.textContent = 'استعرض الكتالوج';
+        }
+        var boardCountdownBox = document.getElementById('boardCountdown');
+        if (Number.isFinite(target)) {
+          if (boardCountdownBox) boardCountdownBox.style.display = '';
+          var ms = Math.max(0, target - now);
+          var d = Math.floor(ms / 86400000);
+          var h = Math.floor(ms % 86400000 / 3600000);
+          var m = Math.floor(ms % 3600000 / 60000);
+          var s = Math.floor(ms % 60000 / 1000);
+          cdD.textContent = String(d); cdH.textContent = two(h); cdM.textContent = two(m); cdS.textContent = two(s);
+        } else {
+          if (boardCountdownBox) boardCountdownBox.style.display = 'none';
+          cdD.textContent = cdH.textContent = cdM.textContent = cdS.textContent = '';
+        }
+      }
+      tick();
+      setInterval(tick, 1000);
+      /* eventlive-home-precision-clock:end */`;
+  const previous = /\/\* eventlive-home-precision-clock:start \*\/[\s\S]*?\/\* eventlive-home-precision-clock:end \*\//;
+  if (previous.test(html)) return html.replace(previous, () => replacement);
+  return html.replace(/function pickFocus\(now\)\s*\{[\s\S]*?setInterval\(tick,\s*1000\);/, () => replacement);
+}
+
+// WO-1: the carousel JS lives in the retained homepage shell. Its counter
+// tail therefore needs an idempotent patch alongside the regenerated markup.
+// Built-output checks in mobile-browsing-regression-test and
+// event-priority-regression-test catch a shell change that makes this no-op.
 function patchBoardLiveCounterRuntime(html) {
   const oldShowCardTail = `        dots.forEach(function (dot, i) {
             var isActive = i === activeIndex;
@@ -7181,7 +7296,7 @@ function patchHomePage(events) {
   // shaping, so resolve those display strings here first.
   const liveBoardCards = liveEvents.map((event) => ({
     title: event.title,
-    meta: `${event.city_label || cityLabel(event.city)} · حتى ${formatDate(event.ends_at || event.starts_at)}`,
+    meta: `${event.city_label || cityLabel(event.city)} · حتى ${formatEventDate(event, event.ends_at || event.starts_at)}`,
     url: compactEventUrl(event),
     startsAt: event.starts_at || '',
     endsAt: event.ends_at || event.starts_at || '',
@@ -7195,7 +7310,15 @@ function patchHomePage(events) {
     // be one the claim actually covers — otherwise the count reads as the board
     // size and the headline looks wrong even though it is right.
     .sort((a, b) => Number(b.liveNow) - Number(a.liveNow));
+  const ongoingPrograms = upcoming.filter((event) => event.event_kind === 'program'
+    && Date.parse(event.starts_at) <= now && Date.parse(event.ends_at) >= now).slice(0, 5);
+  const ongoingStrip = `<section class="ongoing-strip" aria-label="برامج ممتدة جارية"${ongoingPrograms.length ? '' : ' hidden'}>
+      <h2>برامج ممتدة نوافذها مفتوحة الآن</h2>
+      <p>برامج وتدريب طويل المدى يمكنك الالتحاق به ضمن نافذته — ليست فعاليات لحظية.</p>
+      <div class="ongoing-list">${ongoingPrograms.map((event) => `<a href="${escapeHtml(compactEventUrl(event))}">${escapeHtml(event.title)}<span class="om">${escapeHtml(cityLabel(event.city))} · حتى ${escapeHtml(formatShortDate(event.ends_at))}</span></a>`).join('')}</div>
+    </section>`;
   let next = html
+    .replace(/<section class="ongoing-strip"[^>]*>[\s\S]*?<\/section>/, ongoingStrip)
     .replace(/<script type="application\/ld\+json">[\s\S]*?<\/script>/, `<script type="application/ld+json">${JSON.stringify(itemList)}</script>`)
     .replace(/تصفح\s+\d+\s+فعالية/g, `تصفح ${events.length} فعالية`)
     .replace(/<div class="board-stats">[\s\S]*?<\/div>/, `<div class="board-stats">
@@ -7214,11 +7337,12 @@ function patchHomePage(events) {
   if (nextEvent) {
     next = next
       .replace(/(<h2 id="boardTitle">)[\s\S]*?(<\/h2>)/, `$1${escapeHtml(nextEvent.title)}$2`)
-      .replace(/(<div class="b-meta" id="boardMeta">)[\s\S]*?(<\/div>)/, `$1${escapeHtml(`${nextEvent.city_label || cityLabel(nextEvent.city)} · ${formatDate(nextEvent.starts_at)}`)}$2`)
+      .replace(/(<div class="b-meta" id="boardMeta">)[\s\S]*?(<\/div>)/, `$1${escapeHtml(`${nextEvent.city_label || cityLabel(nextEvent.city)} · ${formatEventDate(nextEvent, nextEvent.starts_at)}`)}$2`)
       .replace(/(<a class="primary" id="boardCta" href=")[^"]*(")/, `$1${escapeHtml(compactEventUrl(nextEvent))}$2`);
   }
   next = hideOwnerOnlyPublicLinks(enhanceHomeRuntime(next, events));
   next = patchBoardLiveCounterRuntime(next);
+  next = patchHomeTickerClockRuntime(next);
   if (next !== html) fs.writeFileSync(indexPath, next, 'utf8');
   return next !== html;
 }
@@ -8566,7 +8690,11 @@ function writeBrandIcon() {
   writeText(path.join(distDir, `${key}.txt`), `${key}\n`);
 }
 
-const events = buildEvents();
+const curatedDuplicates = collapseCuratedPublicDuplicates(
+  buildEvents(),
+  readJson('data/events_catalog.json', { events: [] }).events || []
+);
+const events = curatedDuplicates.events;
 // Stamp title qualifiers BEFORE prepareSeoDiscovery(): the qualifier is part of
 // eventSearchSnapshot(), so an event that only just became a duplicate (because
 // a second occurrence was ingested) changes fingerprint and gets re-rendered on
@@ -8576,7 +8704,7 @@ for (const event of events) event.seo_title_qualifier = titleQualifiers.get(even
 // Which published URLs died, and which merely moved (see published-url-ledger.mjs).
 // Reconciled BEFORE the artifact removal below so the removal can be told which
 // of the slugs it is about to delete still have a live event behind them.
-const urlLedger = reconcileUrlLedger(events, loadUrlLedger(), buildAt);
+const urlLedger = reconcileUrlLedger(events, loadUrlLedger(), buildAt, curatedDuplicates.redirects);
 const seoDiscovery = prepareSeoDiscovery(events);
 const deletedEventArtifacts = removeDeletedEventArtifacts(seoDiscovery.removed_event_slugs);
 const changedEventSlugs = new Set(seoDiscovery.changed_event_slugs);
@@ -8587,7 +8715,30 @@ writeCatalogFiles(events);
 writeMethodologyPage(events);
 writeOrganizerIntakePage();
 for (const event of eventDetailsToRender) renderEventDetail(event);
-writeIcs(events, eventDetailsToRender);
+// Keep established per-event JSON/calendar URLs for reviewed aliases. The
+// HTML is replaced by the guarded canonical redirect below.
+for (const alias of curatedDuplicates.retainedAliases) renderEventDetail(alias);
+// Related choices depend on OTHER records and the clock, not just this event's
+// SEO fingerprint. Refresh reused pages too; the HTML change manifest carries
+// these changes into the English build without restamping unchanged pages.
+if (incrementalBuild) {
+  const renderedSlugs = new Set(eventDetailsToRender.map((event) => event.file_slug));
+  for (const event of events) {
+    if (renderedSlugs.has(event.file_slug)) continue;
+    const filePath = path.join(eventsDir, `${event.file_slug}.html`);
+    const previous = fs.readFileSync(filePath, 'utf8');
+    const related = relatedEventsHtml(event, events, '../').trim();
+    const section = /<section\b[^>]*data-section="related"[^>]*>[\s\S]*?<\/section>/;
+    const next = section.test(previous)
+      ? previous.replace(section, related)
+      : related ? previous.replace('</main>', `${related}\n</main>`) : previous;
+    if (next !== previous) {
+      fs.writeFileSync(filePath, next, 'utf8');
+      changedEventSlugs.add(event.file_slug);
+    }
+  }
+}
+writeIcs(events, [...eventDetailsToRender, ...curatedDuplicates.retainedAliases]);
 writeSubscriptionFeeds(events);
 writeFacetPages(events);
 writeLegacyCategoryRedirectPages(events);
@@ -8661,6 +8812,9 @@ const patched = walkFiles(distDir)
     return true;
   })
   .filter(patchFile);
+// Operational snapshots are evidence, not event feeds: copy after generic
+// catalog pruning/branding so null fields and source wording remain intact.
+syncPublicSourceSnapshots(root);
 hideOwnerOnlyManifestShortcuts();
 const pageFreshness = stampPageFreshness();
 const changeManifest = writeHtmlChangeManifest(initialArabicHtmlHashes, {

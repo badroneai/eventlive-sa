@@ -101,3 +101,14 @@ assert.equal(itemList.numberOfItems, upcoming.length, 'home ItemList JSON-LD mus
 assert.ok(itemList.itemListElement.every((item) => String(item.url || '').startsWith('https://eventme.live/')), 'home ItemList URLs must be canonical');
 
 console.log('home-page-data-regression-test: ok');
+
+const ongoingStrip = html.match(/<section class="ongoing-strip"[^>]*>[\s\S]*?<\/section>/)?.[0] || '';
+assert.ok(ongoingStrip, 'home must keep an ongoing-program strip that can be refreshed');
+const ongoingLinks = [...ongoingStrip.matchAll(/href="\.\/events\/([^"#]+)\.html"/g)].map((match) => match[1]);
+const bySlug = new Map(events.map((event) => [event.file_slug, event]));
+for (const slug of ongoingLinks) {
+  const event = bySlug.get(slug);
+  assert.ok(event && event.event_kind === 'program' && Date.parse(event.starts_at) <= now && Date.parse(event.ends_at) >= now,
+    `${slug}: ongoing-program strip must only offer current program windows`);
+}
+assert.equal(ongoingLinks.length, Math.min(5, upcoming.filter((event) => event.event_kind === 'program' && Date.parse(event.starts_at) <= now && Date.parse(event.ends_at) >= now).length), 'ongoing strip must refresh its membership from current events');

@@ -59,7 +59,10 @@ export const EVENT_CANONICAL_ALIASES = new Map([
   ['event-fibo-arabia-2026', 'event-fibo-2026'],
   ['event-global-forum-on-the-ethics-of-ai-gfeai', 'event-global-forum-on-the-ethics-of-ai'],
   ['event-global-proptech-summit', 'event-global-proptech-summit-2026'],
-  ['event-saudi-international-falcons-hunting-exhibition', 'event-saudi-falcons-hunting-exhibition'],
+  // 2026-09-30: the Falcons Exhibition pair moved to the exact, reversible
+  // guards in curated-public-duplicates.mjs (alongside PFL MENA 11). Their
+  // active redirects carry canonicals. Keeping unconditional aliases here
+  // would hide a restored page when its primary disappears or facts change.
   ['event-global-ai-summit-gain', 'event-global-ai-summit'],
   // Same PDF, same season, same village — one row drops the hamza and lands
   // in Taif; Al Atawlah is in Al Baha.

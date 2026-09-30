@@ -1,4 +1,5 @@
 import assert from 'node:assert/strict';
+import './source-error-regression-test.mjs';
 import fs from 'node:fs';
 import path from 'node:path';
 import { fileURLToPath } from 'node:url';

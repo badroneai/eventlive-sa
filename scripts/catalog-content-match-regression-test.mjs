@@ -17,7 +17,7 @@
 import assert from 'node:assert/strict';
 import fs from 'node:fs';
 import path from 'node:path';
-import { buildCatalogContentMatcher, normalizeForMatch } from './catalog-content-match.mjs';
+import { buildCatalogContentMatcher, normalizeForMatch, isImageResourceLiteral } from './catalog-content-match.mjs';
 
 const events = [
   {
@@ -129,3 +129,10 @@ if (fs.existsSync(distPath)) {
 } else {
   console.log('CATALOG_CONTENT_MATCH_OK cases=11 live_events=not-built');
 }
+
+const imageResource = '../assets/event-images/الشهادة-الدولية-للحاسب-والإنترنت-ic3-a46ba6d2eb.jpg';
+assert.equal(isImageResourceLiteral(imageResource, 'image_url'), true);
+assert.equal(isImageResourceLiteral(imageResource, 'image_alt'), false, 'accessible image labels remain visible language');
+assert.equal(isImageResourceLiteral(imageResource, null), false, 'standalone literals remain checked');
+assert.equal(isImageResourceLiteral('صورة الفعالية', 'image_url'), false, 'Arabic prose must not be hidden by a property name');
+assert.equal(isImageResourceLiteral(`${imageResource} نص عربي`, 'image_url'), false, 'mixed resource and prose remains checked');

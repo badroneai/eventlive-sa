@@ -191,7 +191,16 @@ export function classifyAudiences(event = {}) {
   const explicit = normalizeAudiences(event.audiences);
   const text = eventText(event);
   const matches = RULES
-    .filter((rule) => hasAny(text, rule.patterns))
+    .filter((rule) => {
+      // Distribution channels and children's reading skills describe how an
+      // event is presented, not a technology or vocational target audience.
+      const audienceText = rule.slug === 'tech'
+        ? text.replace(/\bbroadcast (?:on|via) (?:television channels and )?digital platforms?\b/g, '')
+        : rule.slug === 'skilled-trades'
+          ? text.replace(/\b(?:linguistic|social|conversational|reading|communication)(?:\s+(?:and\s+)?(?:linguistic|social|conversational|reading|communication))*\s+skills\b/g, '')
+          : text;
+      return hasAny(audienceText, rule.patterns);
+    })
     .map((rule) => rule.slug);
   const unique = [...new Set(matches)];
   if (explicit.length) {

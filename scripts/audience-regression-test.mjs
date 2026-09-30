@@ -119,6 +119,19 @@ check('Arabic normalization removes hamza variants',
 
 check('Audience label exists', audienceLabel('tech') === 'تقنيون');
 
+lacksAudience('A falcon auction broadcast on digital platforms is not a tech event', {
+  title: 'Saudi Falcons Club Auction', summary: 'Falcons are showcased in live bidding. The event is broadcast on television channels and digital platforms.',
+  category: 'Exhibition / Families', audiences: ['tech', 'families']
+}, 'tech');
+
+lacksAudience('Children reading social and conversational skills are not skilled trades', {
+  title: "Children's Book Club", summary: 'Let children read and develop their linguistic, social and conversational skills.',
+  category: 'family-entertainment', audiences: ['skilled-trades', 'families', 'creatives']
+}, 'skilled-trades');
+hasAudience('Vocational technical skills remain classified', { title: 'Technical skills and equipment maintenance workshop' }, 'skilled-trades');
+hasAudience('Digital platform development remains classified', { title: 'Building digital platforms' }, 'tech');
+hasAudience('Digital technology remains classified', { title: 'Digital transformation and cloud software' }, 'tech');
+
 const distEventsPath = path.join(process.cwd(), 'dist', 'events.json');
 const distAudiencesPath = path.join(process.cwd(), 'dist', 'audiences.json');
 const sitemapPath = path.join(process.cwd(), 'dist', 'sitemap.xml');

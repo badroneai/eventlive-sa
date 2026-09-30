@@ -4,6 +4,7 @@ import path from 'node:path';
 import { pathToFileURL } from 'node:url';
 import { chromium } from 'playwright';
 import { representativeEventPath } from './audit-page-utils.mjs';
+import './runtime-time-precision-regression-test.mjs';
 
 const root = process.cwd();
 const distDir = path.join(root, 'dist');
@@ -35,6 +36,7 @@ function assertLiveTimeElements(relativePath, html) {
     assert.match(element, /data-start="[^"]+"/, `${relativePath} live time element must carry data-start`);
     assert.match(element, /data-end="[^"]+"/, `${relativePath} live time element must carry data-end`);
     assert.match(element, /data-kind="[^"]+"/, `${relativePath} live time element must carry data-kind`);
+    assert.match(element, /data-time-precision="[^"]+"/, `${relativePath} live time element must carry its source precision verdict`);
   }
 }
 
@@ -43,10 +45,10 @@ assertRuntimeScript('index.html', home);
 const staticHomeRelativeTimes = [...home.matchAll(/<div class="card-when"(?![^>]*data-live-time)[^>]*>\s*(?:يبدأ بعد|ينتهي بعد|انتهت منذ)[\s\S]*?<\/div>/g)];
 assert.deepEqual(staticHomeRelativeTimes, [], 'home cards must not keep build-time relative timing without data-live-time');
 assertLiveTimeElements('index.html', home);
-const firstHomeStart = home.match(/<[^>]+class="card-when"[^>]+data-start="([^"]+)"/i)?.[1]
-  || home.match(/<[^>]+data-start="([^"]+)"[^>]+class="card-when"/i)?.[1];
-assert.ok(firstHomeStart && Number.isFinite(Date.parse(firstHomeStart)), 'home must expose a valid first event start for the runtime clock browser test');
-const browserTestNow = Date.parse(firstHomeStart) - (60 * 60 * 1000);
+// The first real card may legitimately be date-only and should NOT change when
+// two hours pass. Test clock transitions with explicit source-precision fixtures
+// instead of demanding a countdown from whichever external event leads today.
+const browserTestNow = Date.parse('2026-10-01T08:00:00+03:00');
 
 for (const page of requiredPages.slice(1)) {
   const html = readDist(page);
@@ -65,13 +67,25 @@ try {
   }, browserTestNow);
   await page.goto(pathToFileURL(path.join(distDir, 'index.html')).href);
   await page.waitForFunction(() => window.EventLiveRuntimeClock && document.querySelector('.card-when[data-live-time]')?.textContent?.trim());
-  const before = await page.locator('.card-when[data-live-time]').first().textContent();
+  await page.evaluate(() => {
+    for (const precision of ['exact', 'unknown']) {
+      const node = document.createElement('div');
+      node.id = `runtime-fixture-${precision}`;
+      node.setAttribute('data-live-time', '');
+      Object.assign(node.dataset, { start: '2026-10-01T09:00:00+03:00', end: '2026-10-01T18:00:00+03:00', kind: 'moment', timePrecision: precision });
+      document.body.append(node);
+    }
+    window.EventLiveRuntimeClock.update();
+  });
+  const before = await page.locator('#runtime-fixture-exact').textContent();
+  const unknownBefore = await page.locator('#runtime-fixture-unknown').textContent();
   await page.evaluate(() => {
     window.__eventliveFakeNow += 2 * 60 * 60 * 1000;
     window.EventLiveRuntimeClock.update();
   });
-  const after = await page.locator('.card-when[data-live-time]').first().textContent();
+  const after = await page.locator('#runtime-fixture-exact').textContent();
   assert.notEqual(after, before, 'home live card timing must change when browser time advances');
+  assert.equal(await page.locator('#runtime-fixture-unknown').textContent(), unknownBefore, 'an unknown clock must not count down across fabricated hours');
 } finally {
   await browser.close();
 }

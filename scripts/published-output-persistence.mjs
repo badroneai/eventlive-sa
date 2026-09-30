@@ -16,7 +16,7 @@
 // and the failure message could not name a single record. Kept in its own module
 // so the classification can be tested without a build, a network call, or a
 // 40-minute pipeline.
-const COLLAPSE_REASONS = new Set(['duplicate-id', 'duplicate-semantic', 'duplicate-source-identity']);
+const COLLAPSE_REASONS = new Set(['duplicate-id', 'duplicate-semantic', 'duplicate-source-identity', 'duplicate-curated-alias']);
 
 // Shared with any gate that compares catalog rows against dist/events.json. The
 // two are NOT one-to-one: the build collapses duplicates and refuses non-public
@@ -55,7 +55,9 @@ export function classifyPublishedOutput({ publishedIds = [], distIds = new Set()
       continue;
     }
     const exclusion = buildExclusions.get(id);
-    if (exclusion && COLLAPSE_REASONS.has(exclusion.reason)) {
+    const curatedPrimarySurvives = exclusion?.reason !== 'duplicate-curated-alias'
+      || (exclusion.collapsed_onto && distIds.has(normalizePublishedId(exclusion.collapsed_onto)));
+    if (exclusion && COLLAPSE_REASONS.has(exclusion.reason) && curatedPrimarySurvives) {
       collapsed.push({ id, reason: exclusion.reason, collapsed_onto: exclusion.collapsed_onto || '' });
       continue;
     }

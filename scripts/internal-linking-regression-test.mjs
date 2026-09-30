@@ -27,6 +27,9 @@ const withoutSection = [];
 const withoutLinks = [];
 const genericAnchors = [];
 const inbound = new Map();
+const currentEvents = JSON.parse(fs.readFileSync(path.join(root, 'dist', 'events.json'), 'utf8')).events || [];
+const currentBySlug = new Map(currentEvents.map((event) => [event.file_slug, event]));
+const referenceMs = Date.now();
 
 for (const name of pages) {
   const html = fs.readFileSync(path.join(dir, name), 'utf8');
@@ -35,6 +38,14 @@ for (const name of pages) {
   const parts = html.split('data-section="related"');
   if (parts.length < 2) { withoutSection.push(name); continue; }
   const block = parts[1].split('</section>')[0];
+  // Other editions intentionally include archives, but the first list is the
+  // current recommendation list and must never advertise an expired event.
+  const currentList = block.split('<h3>')[0];
+  for (const match of currentList.matchAll(/href="\.\.\/events\/([^"#]+)\.html"/g)) {
+    const event = currentBySlug.get(match[1]);
+    assert.ok(event && event.status !== 'ended' && Date.parse(event.ends_at || event.starts_at) >= referenceMs,
+      `${name}: related current recommendation ${match[1]} must not be expired`);
+  }
   const links = [...block.matchAll(/href="\.\.\/events\/([^"]+)\.html"/g)].map((match) => match[1]);
   if (!links.length) { withoutLinks.push(name); continue; }
   for (const target of links) inbound.set(target, (inbound.get(target) || 0) + 1);
