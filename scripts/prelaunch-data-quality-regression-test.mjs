@@ -1,7 +1,7 @@
 import assert from 'node:assert/strict';
 import fs from 'node:fs';
 import path from 'node:path';
-import { getEventStatus } from './event-kind-utils.mjs';
+import { canClaimLiveNowFor, getEventRuntime } from './event-kind-utils.mjs';
 import { containsInternalProse } from './internal-prose-utils.mjs';
 
 const root = process.cwd();
@@ -58,7 +58,7 @@ function isDraftLikePublicRecord(event) {
 
 function expectedStatus(event) {
   if (event.catalog_group === 'ended' || String(event.id || '').startsWith('ended-')) return 'ended';
-  return getEventStatus(event.starts_at, event.ends_at, generatedAt, event.event_kind).key;
+  return getEventRuntime(event, generatedAt).status.key;
 }
 
 const checks = {
@@ -84,6 +84,7 @@ const checks = {
     Array.isArray(event.tags) ? event.tags.join(' ') : ''
   ].filter(Boolean).join(' '))),
   status_mismatches: events.filter((event) => event.status !== expectedStatus(event)),
+  unearned_live_status: events.filter((event) => (event.status === 'live' || event.status_label === 'مباشرة الآن') && !canClaimLiveNowFor(event)),
   // Internal publish-policy prose leak (see scripts/internal-prose-utils.mjs and
   // scripts/heal-internal-prose-summaries.mjs): a collector once wrote its own reviewer
   // rationale ("retained as source evidence, not auto-published") straight into a visitor
@@ -157,7 +158,7 @@ fs.writeFileSync(reportMdPath, [
   '',
   '| Check | Failures |',
   '|---|---:|',
-  ...['bad_category_labels', 'bad_city_labels', 'external_images', 'missing_or_short_summaries', 'weak_upcoming_summaries', 'draft_like_public_records', 'draft_like_public_artifact_refs', 'missing_unexplained_sources', 'misleading_sports_audience', 'status_mismatches', 'internal_prose_summaries', 'weak_meta_descriptions']
+  ...['bad_category_labels', 'bad_city_labels', 'external_images', 'missing_or_short_summaries', 'weak_upcoming_summaries', 'draft_like_public_records', 'draft_like_public_artifact_refs', 'missing_unexplained_sources', 'misleading_sports_audience', 'status_mismatches', 'unearned_live_status', 'internal_prose_summaries', 'weak_meta_descriptions']
     .map((key) => `| ${key} | ${report.failure_counts[key] || 0} |`),
   ''
 ].join('\n'), 'utf8');

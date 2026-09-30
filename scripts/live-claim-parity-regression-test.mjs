@@ -10,6 +10,7 @@
 // cards on the live board that night were multi-day windows.
 
 import assert from 'node:assert/strict';
+import './runtime-time-precision-regression-test.mjs';
 import fs from 'node:fs';
 import path from 'node:path';
 import {
@@ -18,6 +19,7 @@ import {
   canClaimLiveNow,
   canClaimLiveNowFor,
   getEventStatus,
+  getEventRuntime,
   hasSourcedClock
 } from './event-kind-utils.mjs';
 
@@ -105,15 +107,17 @@ for (const event of events) {
   const start = new Date(event.starts_at).getTime();
   const end = new Date(event.ends_at || event.starts_at).getTime();
   if (!Number.isFinite(start) || !Number.isFinite(end)) continue;
-  // Probe the rule across the whole window, including the small hours.
-  for (let at = start; at <= end; at += 6 * HOUR) {
-    if (getEventStatus(event.starts_at, event.ends_at, at, 'moment').key === 'live' && !canClaimLiveNow(start, end)) {
+  // Probe each window at its boundaries and representative interior points.
+  // Calendar-day transitions and every precision verdict are exhaustively
+  // exercised by the deterministic runtime fixtures imported above.
+  for (const at of [start, Math.min(end, start + 6 * HOUR), (start + end) / 2, end]) {
+    if (getEventRuntime(event, at).status.key === 'live' && !canClaimLiveNowFor(event)) {
       offenders.push(`${event.slug || event.id} (${((end - start) / HOUR).toFixed(0)}h window)`);
       break;
     }
   }
 }
-assert.deepEqual(offenders, [], `these published events would claim "مباشرة الآن" on a window too long to know the hour:\n${offenders.join('\n')}`);
+assert.deepEqual(offenders, [], `these published events would claim "مباشرة الآن" without a short, sourced clock:\n${offenders.join('\n')}`);
 
 const entitled = events.filter((event) => event.approval_status === 'published' && canClaimLiveNowFor(event)).length;
 const multiDay = events.filter((event) => {

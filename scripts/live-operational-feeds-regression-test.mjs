@@ -1,3 +1,5 @@
+import os from 'node:os';
+import { PUBLIC_SOURCE_SNAPSHOTS, syncPublicSourceSnapshots } from './public-source-snapshots.mjs';
 import assert from 'node:assert/strict';
 import fs from 'node:fs';
 import path from 'node:path';
@@ -106,6 +108,41 @@ for (const event of activation.events) {
 
 for (const asset of ['./today.json', './live-status.json', './activation.json']) {
   assert.ok(serviceWorker.includes(JSON.stringify(asset)), `${asset} must be precached`);
+}
+
+
+
+// Compare bytes rather than trusting a rewritten generated_at timestamp.
+for (const [input, output] of PUBLIC_SOURCE_SNAPSHOTS) {
+  assert.equal(readText(output), fs.readFileSync(path.join(root, input), 'utf8'), `${output} must match its current authoritative input`);
+}
+const snapshotFixture = fs.mkdtempSync(path.join(os.tmpdir(), 'eventlive-public-snapshots-'));
+try {
+  for (const [input, output] of PUBLIC_SOURCE_SNAPSHOTS) {
+    fs.mkdirSync(path.dirname(path.join(snapshotFixture, input)), { recursive: true });
+    fs.mkdirSync(path.join(snapshotFixture, 'dist'), { recursive: true });
+    fs.writeFileSync(path.join(snapshotFixture, input), input.endsWith('.json') ? '{"generated_at":"2026-07-05","sources":[]}' : 'original report');
+    fs.writeFileSync(path.join(snapshotFixture, 'dist', output), 'stale');
+  }
+  syncPublicSourceSnapshots(snapshotFixture);
+  for (const [input, output] of PUBLIC_SOURCE_SNAPSHOTS) {
+    assert.equal(fs.readFileSync(path.join(snapshotFixture, 'dist', output), 'utf8'), fs.readFileSync(path.join(snapshotFixture, input), 'utf8'));
+  }
+  fs.writeFileSync(path.join(snapshotFixture, PUBLIC_SOURCE_SNAPSHOTS[0][0]), '{"generated_at":"2026-09-30","sources":[{"id":"new"}]}');
+  syncPublicSourceSnapshots(snapshotFixture);
+  assert.match(fs.readFileSync(path.join(snapshotFixture, 'dist', PUBLIC_SOURCE_SNAPSHOTS[0][1]), 'utf8'), /"id":"new"/);
+  fs.writeFileSync(path.join(snapshotFixture, PUBLIC_SOURCE_SNAPSHOTS[0][0]), 'invalid JSON');
+  assert.throws(() => syncPublicSourceSnapshots(snapshotFixture), SyntaxError);
+  fs.writeFileSync(path.join(snapshotFixture, PUBLIC_SOURCE_SNAPSHOTS[0][0]), '{}');
+  const [missingInput, staleOutput] = PUBLIC_SOURCE_SNAPSHOTS[2];
+  fs.rmSync(path.join(snapshotFixture, missingInput));
+  syncPublicSourceSnapshots(snapshotFixture);
+  assert.equal(fs.existsSync(path.join(snapshotFixture, 'dist', staleOutput)), false,
+    'missing optional evidence must remove its stale endpoint, not fabricate a fresh snapshot');
+  assert.ok(fs.existsSync(path.join(snapshotFixture, 'dist', PUBLIC_SOURCE_SNAPSHOTS[0][1])),
+    'available evidence must still publish when a different snapshot is unavailable');
+} finally {
+  fs.rmSync(snapshotFixture, { recursive: true, force: true });
 }
 
 console.log(`live-operational-feeds-regression-test: ok events=${publicEvents.length} active=${activeEvents.length} activation=${expectedActivation}`);

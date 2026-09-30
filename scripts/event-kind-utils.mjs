@@ -2,6 +2,7 @@
 // "moment": فعالية لحظية محدودة الوقت (مؤتمر، حفل، معرض) — تستحق "مباشرة الآن" والعد التنازلي.
 // "program": برنامج/نافذة ممتدة (تدريب، معسكر، موسم طويل) — داخل نافذته يكون "برنامج جارٍ" (ongoing)
 // حتى لا يزاحم الفعاليات اللحظية في أسطح "الآن".
+import { riyadhDateKey } from './riyadh-date-utils.mjs';
 
 const DAY_MS = 24 * 60 * 60 * 1000;
 
@@ -100,8 +101,28 @@ export function getEventStatus(startsAt, endsAt, now = Date.now(), kind = 'momen
   return { key: 'ended', label: 'منتهية' };
 }
 
-export function getEventRuntime(event, now = Date.now()) {
-  const kind = classifyEventKind(event);
-  const status = getEventStatus(event.starts_at || event.event_start, event.ends_at || event.event_end, now, kind);
+export function getEventRuntime(event = {}, now = Date.now()) {
+  const startsAt = event.starts_at || event.event_start;
+  const endsAt = event.ends_at || event.event_end || startsAt;
+  const kind = classifyEventKind({ ...event, starts_at: startsAt, ends_at: endsAt });
+  const start = new Date(startsAt || '').getTime();
+  const end = new Date(endsAt || '').getTime();
+  let status;
+  if (!Number.isFinite(start) || !Number.isFinite(end) || end < start || !Number.isFinite(Number(now))) {
+    status = { key: 'draft', label: 'وقت غير مؤكد' };
+  } else if (hasSourcedClock(event)) {
+    status = getEventStatus(startsAt, endsAt, now, kind);
+  } else {
+    // Unsourced hours only encode dates. Keep the whole last Riyadh day and
+    // never let a collector's 09:00/18:00 default earn an hourly live claim.
+    const today = riyadhDateKey(now);
+    const firstDay = riyadhDateKey(start);
+    const lastDay = riyadhDateKey(end);
+    status = today < firstDay
+      ? { key: 'upcoming', label: 'قادمة' }
+      : today > lastDay
+        ? { key: 'ended', label: 'منتهية' }
+        : { key: 'ongoing', label: kind === 'program' ? 'برنامج جارٍ' : 'مستمرة هذه الأيام' };
+  }
   return { kind, kind_label: eventKindLabel(kind), status };
 }

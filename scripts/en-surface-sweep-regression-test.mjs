@@ -1,5 +1,5 @@
 import assert from 'node:assert/strict';
-import { buildCatalogContentMatcher } from './catalog-content-match.mjs';
+import { buildCatalogContentMatcher, isImageResourceLiteral } from './catalog-content-match.mjs';
 import fs from 'node:fs';
 import path from 'node:path';
 import { parse } from 'acorn';
@@ -132,16 +132,18 @@ function extractScriptLiterals(html) {
     } catch {
       continue; // malformed/unparseable inline script is not this gate's concern
     }
-    const visit = (node) => {
+    const visit = (node, parent = null) => {
       if (!node || typeof node !== 'object') return;
       if (node.type === 'Literal' && typeof node.value === 'string') {
         const value = node.value.trim();
-        if (value.length >= 2 && ARABIC_LETTERS.test(value)) literals.add(value);
+        const propertyName = parent?.type === 'Property' && parent.value === node
+          ? parent.key?.name || parent.key?.value : null;
+        if (value.length >= 2 && ARABIC_LETTERS.test(value) && !isImageResourceLiteral(value, propertyName)) literals.add(value);
       }
       for (const [key, value] of Object.entries(node)) {
         if (key === 'start' || key === 'end') continue;
-        if (Array.isArray(value)) value.forEach(visit);
-        else if (value && typeof value === 'object') visit(value);
+        if (Array.isArray(value)) value.forEach((child) => visit(child, node));
+        else if (value && typeof value === 'object') visit(value, node);
       }
     };
     visit(ast);

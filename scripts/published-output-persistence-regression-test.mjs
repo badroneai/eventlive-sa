@@ -11,8 +11,10 @@
 // reported a number instead of a name.
 
 import assert from 'node:assert/strict';
+import './curated-public-duplicates-regression-test.mjs';
 import fs from 'node:fs';
 import path from 'node:path';
+import { load } from 'cheerio';
 import { classifyPublishedOutput, COLLAPSE_REASONS } from './published-output-persistence.mjs';
 
 const distIds = new Set(['kept-one']);
@@ -33,6 +35,23 @@ for (const reason of COLLAPSE_REASONS) {
   assert.equal(collapsed.lost, false, `${reason} means published under a primary, not lost`);
   assert.equal(collapsed.collapsed[0].collapsed_onto, 'kept-one', 'the primary must be named, not merely counted');
 }
+
+for (const collapsed_onto of ['', 'missing-primary']) {
+  const lostCuratedAlias = classifyPublishedOutput({
+    publishedIds: ['gone-one'],
+    distIds,
+    buildExclusions: new Map([['gone-one', { reason: 'duplicate-curated-alias', collapsed_onto }]])
+  });
+  assert.equal(lostCuratedAlias.lost, true, 'a curated alias is represented only when its named primary survives');
+  assert.equal(lostCuratedAlias.collapsed.length, 0);
+}
+const representedCuratedAlias = classifyPublishedOutput({
+  publishedIds: ['gone-one'],
+  distIds,
+  buildExclusions: new Map([['gone-one', { reason: 'duplicate-curated-alias', collapsed_onto: 'kept-one' }]])
+});
+assert.equal(representedCuratedAlias.lost, false, 'a curated alias with a surviving exact primary is represented');
+assert.equal(representedCuratedAlias.collapsed[0]?.collapsed_onto, 'kept-one');
 
 // The build refused to publish it: auto-publish and the build disagree. Real, and
 // it must still stop the run — with the reason attached.
@@ -127,6 +146,49 @@ if (fs.existsSync(exclusionsPath)) {
     assert.ok(row.reason, 'every dropped record must carry a reason');
     if (COLLAPSE_REASONS.has(row.reason)) {
       assert.ok(row.collapsed_onto, `${row.id || row.slug}: a collapse must name the record it collapsed onto`);
+    }
+  }
+  // Guarded discovery consolidation must not strand a previously published
+  // URL or discard its original evidence/clock-precision metadata. This reads
+  // only the pairs this build actually consolidated, never an expected source
+  // volume or a fixed assumption that upstream facts remain unchanged.
+  const curatedRows = parsed.excluded.filter((row) => row.reason === 'duplicate-curated-alias');
+  if (curatedRows.length) {
+    const publicRows = JSON.parse(fs.readFileSync(path.join(root, 'dist', 'events.json'), 'utf8')).events || [];
+    const publicById = new Map(publicRows.map((row) => [row.id, row]));
+    const catalogRows = JSON.parse(fs.readFileSync(path.join(root, 'data', 'events_catalog.json'), 'utf8')).events || [];
+    const catalogById = new Map(catalogRows.map((row) => [row.id, row]));
+    for (const row of curatedRows) {
+      const primary = publicById.get(row.collapsed_onto);
+      const original = catalogById.get(row.id);
+      assert.ok(primary, `${row.id}: consolidated primary must survive in public output`);
+      assert.ok(original, `${row.id}: original source record must remain in the catalog`);
+      assert.equal(original.approval_status, 'published', `${row.id}: consolidation must not unpublish the original source record`);
+      assert.equal(publicById.has(row.id), false, `${row.id}: duplicate must be absent from discovery`);
+      const primarySlug = primary.file_slug || primary.id;
+      for (const languagePrefix of ['', 'en/']) {
+        const target = `https://eventme.live/${languagePrefix}events/${primarySlug}.html`;
+        const aliasPath = path.join(root, 'dist', languagePrefix, 'events', `${row.slug}.html`);
+        const primaryPath = path.join(root, 'dist', languagePrefix, 'events', `${primarySlug}.html`);
+        assert.ok(fs.existsSync(primaryPath), `${row.id}: ${languagePrefix || 'Arabic '}redirect target must exist`);
+        assert.ok(fs.existsSync(aliasPath), `${row.id}: old ${languagePrefix || 'Arabic '}detail URL must still resolve`);
+        const $ = load(fs.readFileSync(aliasPath, 'utf8'));
+        assert.equal($('link[rel="canonical"]').attr('href'), target, `${row.id}: redirect canonical must target its corresponding-language primary`);
+        const refresh = $('meta[http-equiv]').filter((_, element) => String($(element).attr('http-equiv')).toLowerCase() === 'refresh').attr('content') || '';
+        const destination = refresh.match(/^\s*0\s*;\s*url\s*=\s*(.+?)\s*$/i)?.[1]?.replace(/^["']|["']$/g, '');
+        assert.ok(destination, `${row.id}: old detail URL must carry an immediate redirect`);
+        assert.equal(new URL(destination, `https://eventme.live/${languagePrefix}events/${row.slug}.html`).href, target);
+      }
+      const jsonPath = path.join(root, 'dist', 'events', `${row.slug}.json`);
+      assert.ok(fs.existsSync(jsonPath), `${row.id}: original per-event JSON URL must remain available`);
+      const retained = JSON.parse(fs.readFileSync(jsonPath, 'utf8'));
+      for (const field of ['id', 'source_url', 'evidence_url', 'starts_at', 'ends_at', 'time_precision']) {
+        assert.equal(retained[field], original[field], `${row.id}: retained JSON must preserve original ${field}`);
+      }
+      const icsPath = path.join(root, 'dist', 'events', `${row.slug}.ics`);
+      assert.ok(fs.existsSync(icsPath), `${row.id}: original per-event calendar URL must remain available`);
+      const calendar = fs.readFileSync(icsPath, 'utf8');
+      assert.ok(calendar.includes('BEGIN:VCALENDAR') && calendar.includes(`UID:${row.id}@eventme.live`), `${row.id}: compatibility calendar must retain the original event identity`);
     }
   }
   console.log(`PUBLISHED_OUTPUT_PERSISTENCE_OK classified=4 build_exclusions=${parsed.total}`);

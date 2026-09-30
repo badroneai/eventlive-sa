@@ -1,3 +1,4 @@
+import { syncPublicSourceSnapshots } from './public-source-snapshots.mjs';
 import fs from 'node:fs';
 import path from 'node:path';
 import { exists, readJson, rel, root, writeJson } from './program-lifecycle-utils.mjs';
@@ -651,6 +652,7 @@ function main() {
 
   writeJson(reportJsonPath, report);
   writePublicSourceHealth(report, promotionReport, collectionReport);
+  syncPublicSourceSnapshots(root);
   writeMarkdown(report);
   fs.writeFileSync(reportHtmlPath, renderHtml(report), 'utf8');
 

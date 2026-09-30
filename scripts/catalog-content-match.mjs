@@ -83,3 +83,10 @@ export function buildCatalogContentMatcher(events = []) {
     return false;
   };
 }
+
+// Resource values are not rendered language. Apply this ONLY to a JavaScript
+// object property carrying an image URL, never to DOM text or accessible labels.
+export function isImageResourceLiteral(value, propertyName) {
+  return ['image_url', 'image'].includes(propertyName)
+    && /^(?:\.\.\/|\.\/|\/)?assets\/event-(?:images|covers)\/[^\s?#]+\.(?:jpe?g|png|webp|avif|gif|svg)$/iu.test(String(value));
+}

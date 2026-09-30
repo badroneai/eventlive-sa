@@ -69,10 +69,12 @@ export function saveUrlLedger(state, generatedAt = new Date().toISOString()) {
  * @param {Array<object>} events every event in this build
  * @param {object} previous the ledger as last committed
  * @param {string} buildAt ISO timestamp for this build
+ * @param {Map<string,string>} curatedAliases reviewed, identity-guarded aliases
+ *   removed only from public discovery; their source records remain published
  * @returns {{state: object, moved: Map<string,string>, retired: string[]}}
  *   `moved` maps an old slug to the slug that now carries the same event.
  */
-export function reconcileUrlLedger(events = [], previous = { events: {} }, buildAt = new Date().toISOString()) {
+export function reconcileUrlLedger(events = [], previous = { events: {} }, buildAt = new Date().toISOString(), curatedAliases = new Map()) {
   const previousEvents = previous?.events && typeof previous.events === 'object' ? previous.events : {};
   const day = buildAt.slice(0, 10);
 
@@ -107,7 +109,10 @@ export function reconcileUrlLedger(events = [], previous = { events: {} }, build
   for (const [slug, entry] of Object.entries(previousEvents)) {
     if (liveBySlug.has(slug)) continue;
     const identity = entry.identity || '';
-    const target = identity ? liveByIdentity.get(identity) : undefined;
+    const reviewedTarget = curatedAliases.get(slug);
+    const target = reviewedTarget && liveBySlug.has(reviewedTarget)
+      ? reviewedTarget
+      : identity ? liveByIdentity.get(identity) : undefined;
     if (target && target !== slug) {
       moved.set(slug, target);
       nextEvents[slug] = { ...entry, last_seen: entry.last_seen || day, moved_to: target, moved_at: entry.moved_at || day };
@@ -122,6 +127,21 @@ export function reconcileUrlLedger(events = [], previous = { events: {} }, build
     }
     retired.push(slug);
     nextEvents[slug] = { ...entry, moved_to: undefined, retired_at: entry.retired_at || day };
+  }
+
+  // A first build can consolidate a reviewed pair before the old URL has a
+  // ledger entry. Preserve that URL too; the mapping came from exact guards,
+  // never title similarity. A live alias or missing primary cannot redirect.
+  for (const [slug, target] of curatedAliases) {
+    if (liveBySlug.has(slug) || !liveBySlug.has(target) || slug === target || moved.has(slug)) continue;
+    moved.set(slug, target);
+    nextEvents[slug] = {
+      ...(previousEvents[slug] || {}),
+      first_seen: previousEvents[slug]?.first_seen || day,
+      last_seen: previousEvents[slug]?.last_seen || day,
+      moved_to: target,
+      moved_at: previousEvents[slug]?.moved_at || day
+    };
   }
 
   return { state: { version: 1, events: nextEvents }, moved, retired: retired.sort() };
