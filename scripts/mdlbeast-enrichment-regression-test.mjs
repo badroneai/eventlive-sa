@@ -1,3 +1,4 @@
+import './mdlbeast-fallback-regression-test.mjs';
 import assert from 'node:assert/strict';
 import fs from 'node:fs';
 import path from 'node:path';
@@ -59,7 +60,7 @@ assert.ok(html.includes('MDLBEAST'), 'event detail page must include MDLBEAST pr
 if (fs.existsSync(reportPath)) {
   const report = JSON.parse(fs.readFileSync(reportPath, 'utf8'));
   assert.equal(report.totals.enriched, report.enriched.length, 'MDLBEAST enrichment report totals must match rows');
-  assert.equal(report.totals.fetch_failures, report.failed.length, 'MDLBEAST enrichment failure totals must match rows');
+  assert.equal((report.totals.fetch_failures || 0) + (report.totals.enrichment_failures || 0), report.failed.length, 'MDLBEAST enrichment failure totals must match rows');
 }
 
 console.log(`mdlbeast-enrichment-regression-test: ok enriched=${enrichedCatalog.length}`);
