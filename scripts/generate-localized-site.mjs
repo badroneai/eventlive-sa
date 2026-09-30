@@ -16,7 +16,7 @@ import { LEGACY_REDIRECT_PAGES, LEGACY_TOP_LEVEL_REDIRECT_LABELS_EN, legacyRedir
 import { buildTitleQualifiers, eventQualifierKey, withTitleQualifier } from './event-title-qualifier.mjs';
 import { englishSeoDescription, englishSeoTitle, withEnglishBrand } from './en-seo-descriptions.mjs';
 import { canonicalEventPage, EVENT_ALIAS_PAGES } from './event-canonical-aliases.mjs';
-import { hasSourcedClock } from './event-kind-utils.mjs';
+import { getEventRuntime, hasSourcedClock } from './event-kind-utils.mjs';
 
 const root = process.cwd();
 const distDir = path.join(root, 'dist');
@@ -1347,7 +1347,7 @@ function englishEventDescription(event, ended = eventHasEnded(event)) {
  * event.status is likewise derived from the stale window, so a future session
  * outranks it.
  */
-export function eventHasEnded(event = {}) {
+export function eventHasEnded(event = {}, now = Date.now()) {
   const own = new Date(event?.ends_at || event?.starts_at || '').getTime();
   let latest = Number.isFinite(own) ? own : -Infinity;
   for (const session of Array.isArray(event?.sessions) ? event.sessions : []) {
@@ -1355,7 +1355,9 @@ export function eventHasEnded(event = {}) {
     if (Number.isFinite(at) && at > latest) latest = at;
   }
   if (!Number.isFinite(latest)) return false;
-  return latest < Date.now();
+  // Match the runtime's precision verdict: unknown/defaulted end clocks stay
+  // ongoing through the last Riyadh day; sourced clocks retain exact expiry.
+  return getEventRuntime({ ...event, ends_at: new Date(latest).toISOString() }, now).status.key === 'ended';
 }
 
 /**

@@ -5,6 +5,7 @@ import { pathToFileURL } from 'node:url';
 import { chromium } from 'playwright';
 import { representativeEventPath } from './audit-page-utils.mjs';
 import './runtime-time-precision-regression-test.mjs';
+import './directory-time-precision-regression-test.mjs';
 
 const root = process.cwd();
 const distDir = path.join(root, 'dist');

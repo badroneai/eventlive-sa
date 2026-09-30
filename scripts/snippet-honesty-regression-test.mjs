@@ -17,6 +17,8 @@
 import assert from 'node:assert/strict';
 import fs from 'node:fs';
 import path from 'node:path';
+import { getEventRuntime } from './event-kind-utils.mjs';
+import { assertEventSeoStatus } from './seo-time-precision-regression-test.mjs';
 
 const root = process.cwd();
 const now = Date.now();
@@ -42,7 +44,10 @@ for (const locale of LOCALES) {
     checked += 1;
     const title = html.match(/<title>([^<]*)/)?.[1] || '';
     const description = html.match(/<meta name="description" content="([^"]*)/)?.[1] || '';
-    const isPast = new Date(endDate).getTime() < now;
+    const startDate = html.match(/"startDate":\s*"([^"]+)"/)?.[1];
+    const precision = html.match(/data-time-precision="([^"]*)"/)?.[1];
+    const isPast = getEventRuntime({ starts_at: startDate, ends_at: endDate, time_precision: precision }, now).status.key === 'ended';
+    assertEventSeoStatus(html, isPast, locale.label, `${locale.label}/${name}`);
     // The TITLE specifically, not merely the description. The title is what a
     // searcher reads first, and an out-of-date title is the exact condition
     // Google names when it discards an author's title and writes its own.
