@@ -13,17 +13,42 @@ import { getEventRuntime } from './event-kind-utils.mjs';
 // make a falsely archived final-day event pass.
 export function assertEventSeoStatus(html, ended, locale, label) {
   const $ = load(html);
-  const marker = locale === 'ar' ? /منتهية|أرشيف موثق/ : /\bEnded\b|\bPast event\b|\bArchived\b/;
-  for (const selector of ['title', 'meta[name="description"]', 'meta[property="og:title"]', 'meta[property="og:description"]', 'meta[name="twitter:title"]', 'meta[name="twitter:description"]']) {
-    const value = selector === 'title' ? $(selector).text() : $(selector).attr('content');
-    assert.ok(value, `${label}: missing ${selector}`);
-    assert.equal(marker.test(value), ended, `${label}: ${selector} must agree with the precision-aware end verdict`);
-  }
   const schema = $('script[type="application/ld+json"]').toArray()
     .map((node) => JSON.parse($(node).text())).find((item) => item['@type'] === 'Event');
   assert.ok(schema, `${label}: missing Event structured data`);
+  const normalize = (value) => String(value || '').replace(/\s+/g, ' ').trim();
+  const subject = normalize($('main h1').first().text() || schema.name);
+  // Source-authored titles can contain "Archived", "Ended", or even the full
+  // description prefix. Judge only the generator's terminal archive suffix and
+  // description tail, after excluding the source title from title metadata.
+  const authoredTitle = (value) => {
+    const text = normalize(value);
+    return subject && text.startsWith(subject) ? text.slice(subject.length) : text;
+  };
+  const titleMarker = locale === 'ar'
+    ? /—\s*منتهية(?:\s+[^|]+)?\s*\|\s*EventLive\s*$/u
+    : /—\s*Ended(?:\s+[^|]+)?\s*\|\s*EventLive Saudi Arabia\s*$/u;
+  const prefix = locale === 'ar' ? 'فعالية منتهية. ' : 'Past event. ';
+  const archiveTail = locale === 'ar' ? 'أرشيف موثق من المصدر الرسمي عبر EventLive.' : 'Archived from the official source on EventLive.';
+  const currentTail = locale === 'ar' ? 'تحقق من المصدر والجدول الحي عبر EventLive.' : 'Check the official source and live schedule on EventLive.';
+  const padding = ' EventLive يعرض الوقت الحي، المدينة، الموقع، المصدر، روابط التقويم والاتجاهات لتجربة حضور أوضح في فعاليات السعودية.';
+  for (const selector of ['title', 'meta[name="description"]', 'meta[property="og:title"]', 'meta[property="og:description"]', 'meta[name="twitter:title"]', 'meta[name="twitter:description"]']) {
+    const value = selector === 'title' ? $(selector).text() : $(selector).attr('content');
+    assert.ok(value, `${label}: missing ${selector}`);
+    const message = `${label}: ${selector} must agree with the precision-aware end verdict`;
+    if (selector.includes('description')) {
+      const normalized = normalize(value);
+      // seoDescription adds this exact site-authored suffix to short Arabic
+      // snippets after renderEventDetail supplies its status-specific tail.
+      const text = normalized.endsWith(padding) ? normalized.slice(0, -padding.length) : normalized;
+      assert.ok(text.endsWith(ended ? archiveTail : currentTail), message);
+      if (ended) assert.ok(text.startsWith(prefix), message);
+    } else {
+      assert.equal(titleMarker.test(authoredTitle(value)), ended, message);
+    }
+  }
   assert.equal(schema.eventStatus, `https://schema.org/Event${ended ? 'Completed' : 'Scheduled'}`, `${label}: Event JSON-LD must agree with the snippet`);
-  return { $, schema };
+  return { $, schema, authoredTitle: authoredTitle($('title').text()) };
 }
 
 const root = process.cwd();
@@ -60,6 +85,30 @@ fixture('extended-official-session', {
 fixture('extended-uncertain-session', {
   time_precision: 'unknown', starts_at: at('09-30', '09:00:00'), ends_at: at('09-30'), sessions: [officialSession]
 }, false);
+fixture('short-padded-description', {
+  title: 'A', title_en: 'A', venue: '', time_precision: 'unknown',
+  starts_at: at('09-30', '09:00:00'), ends_at: at('09-30')
+}, true);
+const sourceCollisions = [
+  { title: 'Archived Futures' },
+  { title: 'Ended Traditions' },
+  { title: 'Past event. Future Visions' },
+  { title: 'Historical Notes — Ended September 2026' },
+  { title: 'حكايات غير منتهية', title_en: 'Never Ended Stories' },
+  { title: 'فعالية منتهية. آفاق جديدة', title_en: 'Past event. New Horizons' },
+  { title: 'أرشيف موثق للمستقبل', title_en: 'Archived Visions' },
+  { title: 'Future Exhibition', venue: 'Archived from the official source on EventLive.' },
+  { title: 'معرض المستقبل', title_en: 'Future Museum', venue: 'أرشيف موثق من المصدر الرسمي عبر EventLive.' }
+];
+sourceCollisions.forEach((source, index) => {
+  for (const ended of [false, true]) {
+    const day = ended ? '09-30' : '10-02';
+    fixture(`source-collision-${index}-${ended ? 'past' : 'future'}`, {
+      ...source, title_en: source.title_en || source.title, time_precision: 'unknown',
+      starts_at: at(day, '09:00:00'), ends_at: at(day)
+    }, ended);
+  }
+});
 
 // Exercise each actual predicate at the transition, including the otherwise
 // unused default English description path, without importing an executable build.
@@ -118,17 +167,28 @@ try {
       checked += 1;
       // Corrupt actual output, not a source-text matcher: both false archives
       // and silent completed events must turn this same assertion red.
-      const title = $('title').text();
-      $('title').text(ended ? 'Fixture | EventLive' : `${title} ${locale === 'ar' ? 'منتهية' : 'Ended'}`);
-      assert.throws(() => assertEventSeoStatus($.html(), ended, locale, 'corrupted title'), /title must agree/);
-      $('title').text(title);
+      for (const selector of ['title', 'meta[property="og:title"]', 'meta[name="twitter:title"]', 'meta[name="description"]', 'meta[property="og:description"]', 'meta[name="twitter:description"]']) {
+        const node = $(selector);
+        const original = selector === 'title' ? node.text() : node.attr('content');
+        const corrupted = selector.includes('description')
+          ? (ended
+              ? `Fixture. ${locale === 'ar' ? 'تحقق من المصدر والجدول الحي عبر EventLive.' : 'Check the official source and live schedule on EventLive.'}`
+              : (locale === 'ar' ? 'فعالية منتهية. Fixture. أرشيف موثق من المصدر الرسمي عبر EventLive.' : 'Past event. Fixture. Archived from the official source on EventLive.'))
+          : (ended
+              ? 'Fixture | EventLive'
+              : (locale === 'ar' ? 'Fixture — منتهية أكتوبر ٢٠٢٦ | EventLive' : 'Fixture — Ended October 2026 | EventLive Saudi Arabia'));
+        if (selector === 'title') node.text(corrupted); else node.attr('content', corrupted);
+        assert.throws(() => assertEventSeoStatus($.html(), ended, locale, 'corrupted snippet'), /must agree with the precision-aware end verdict/);
+        if (selector === 'title') node.text(original); else node.attr('content', original);
+        negative += 1;
+      }
       const schemaNode = $('script[type="application/ld+json"]').filter((_, node) => JSON.parse($(node).text())['@type'] === 'Event');
       schemaNode.text(JSON.stringify({ ...schema, eventStatus: `https://schema.org/Event${ended ? 'Scheduled' : 'Completed'}` }));
       assert.throws(() => assertEventSeoStatus($.html(), ended, locale, 'corrupted schema'), /Event JSON-LD must agree/);
-      negative += 2;
+      negative += 1;
     }
   }
-  console.log(`SEO_TIME_PRECISION_OK rendered=${checked} negative_checks=${negative} riyadh_midnight=pass official_session_extension=pass`);
+  console.log(`SEO_TIME_PRECISION_OK rendered=${checked} negative_checks=${negative} source_collision_cases=${sourceCollisions.length} riyadh_midnight=pass official_session_extension=pass`);
 } finally {
   fs.rmSync(fixtureRoot, { recursive: true, force: true });
 }

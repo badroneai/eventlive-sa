@@ -24,16 +24,15 @@ const root = process.cwd();
 const now = Date.now();
 
 const LOCALES = [
-  { dir: path.join(root, 'dist', 'events'), label: 'ar', marker: /منتهية/, live: /تحقق من المصدر/ },
-  { dir: path.join(root, 'dist', 'en', 'events'), label: 'en', marker: /\bEnded\b|\bPast event\b/, live: /Check the official source/ }
+  { dir: path.join(root, 'dist', 'events'), label: 'ar' },
+  { dir: path.join(root, 'dist', 'en', 'events'), label: 'en' }
 ];
 
 let checkedTotal = 0;
 let endedTotal = 0;
+const archivedArabicTitles = [];
 for (const locale of LOCALES) {
   assert.equal(fs.existsSync(locale.dir), true, `${locale.dir} must exist; run npm run build first`);
-  const silent = [];
-  const mislabelled = [];
   let ended = 0;
   let checked = 0;
   for (const name of fs.readdirSync(locale.dir)) {
@@ -42,48 +41,28 @@ for (const locale of LOCALES) {
     const endDate = html.match(/"endDate":\s*"([^"]+)"/)?.[1];
     if (!endDate) continue;
     checked += 1;
-    const title = html.match(/<title>([^<]*)/)?.[1] || '';
-    const description = html.match(/<meta name="description" content="([^"]*)/)?.[1] || '';
     const startDate = html.match(/"startDate":\s*"([^"]+)"/)?.[1];
     const precision = html.match(/data-time-precision="([^"]*)"/)?.[1];
     const isPast = getEventRuntime({ starts_at: startDate, ends_at: endDate, time_precision: precision }, now).status.key === 'ended';
-    assertEventSeoStatus(html, isPast, locale.label, `${locale.label}/${name}`);
+    const { authoredTitle } = assertEventSeoStatus(html, isPast, locale.label, `${locale.label}/${name}`);
     // The TITLE specifically, not merely the description. The title is what a
     // searcher reads first, and an out-of-date title is the exact condition
     // Google names when it discards an author's title and writes its own.
-    const declaresInTitle = locale.marker.test(title);
-    const declares = declaresInTitle || locale.marker.test(description);
     if (isPast) {
       ended += 1;
-      if (!declaresInTitle) silent.push(name);
-    } else if (declares) {
-      // The reverse lie: an upcoming event announced as finished.
-      mislabelled.push(name);
+      if (locale.label === 'ar') archivedArabicTitles.push(authoredTitle);
     }
   }
   assert.ok(checked > 0, `${locale.label}: no event pages carried an endDate — the check would pass vacuously`);
-  assert.deepEqual(
-    silent.slice(0, 15),
-    [],
-    `${locale.label}: ${silent.length} page(s) describe a finished event without saying so in the <title>`
-  );
-  assert.deepEqual(
-    mislabelled.slice(0, 15),
-    [],
-    `${locale.label}: ${mislabelled.length} page(s) announce an UPCOMING event as finished`
-  );
   checkedTotal += checked;
   endedTotal += ended;
 }
 
 // The archive marker has to carry the edition, or "ended" tells a searcher
 // nothing about which year's event they are looking at.
-const arSample = fs.readdirSync(LOCALES[0].dir)
-  .filter((name) => name.endsWith('.html'))
-  .map((name) => fs.readFileSync(path.join(LOCALES[0].dir, name), 'utf8'))
-  .filter((html) => /منتهية/.test(html.match(/<title>([^<]*)/)?.[1] || ''));
+const arSample = archivedArabicTitles;
 assert.ok(arSample.length > 0, 'expected at least one archived Arabic event page');
-const withMonth = arSample.filter((html) => /منتهية\s+\S+\s+[٠-٩0-9]{4}/.test(html.match(/<title>([^<]*)/)?.[1] || ''));
+const withMonth = arSample.filter((title) => /—\s*منتهية\s+\S+\s+[٠-٩0-9]{4}/.test(title));
 assert.ok(
   withMonth.length / arSample.length >= 0.9,
   `only ${withMonth.length}/${arSample.length} archived titles name the edition month and year`
