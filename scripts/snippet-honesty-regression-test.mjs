@@ -22,6 +22,8 @@ import { assertEventSeoStatus } from './seo-time-precision-regression-test.mjs';
 
 const root = process.cwd();
 const now = Date.now();
+const sourceByFile = new Map(JSON.parse(fs.readFileSync(path.join(root, 'dist', 'events-catalog.json'), 'utf8')).events
+  .map((event) => [path.basename(event.detail_url || '').normalize('NFC'), event]));
 
 const LOCALES = [
   { dir: path.join(root, 'dist', 'events'), label: 'ar' },
@@ -44,7 +46,7 @@ for (const locale of LOCALES) {
     const startDate = html.match(/"startDate":\s*"([^"]+)"/)?.[1];
     const precision = html.match(/data-time-precision="([^"]*)"/)?.[1];
     const isPast = getEventRuntime({ starts_at: startDate, ends_at: endDate, time_precision: precision }, now).status.key === 'ended';
-    const { authoredTitle } = assertEventSeoStatus(html, isPast, locale.label, `${locale.label}/${name}`);
+    const { authoredTitle } = assertEventSeoStatus(html, isPast, locale.label, `${locale.label}/${name}`, sourceByFile.get(name.normalize('NFC')));
     // The TITLE specifically, not merely the description. The title is what a
     // searcher reads first, and an out-of-date title is the exact condition
     // Google names when it discards an author's title and writes its own.

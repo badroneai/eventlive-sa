@@ -11,13 +11,16 @@ import { getEventRuntime } from './event-kind-utils.mjs';
 // This checker is also used by the corpus gate. Fixtures supply their expected
 // verdict independently, so neither a generator regression nor a bad oracle can
 // make a falsely archived final-day event pass.
-export function assertEventSeoStatus(html, ended, locale, label) {
+export function assertEventSeoStatus(html, ended, locale, label, source = {}) {
   const $ = load(html);
   const schema = $('script[type="application/ld+json"]').toArray()
     .map((node) => JSON.parse($(node).text())).find((item) => item['@type'] === 'Event');
   assert.ok(schema, `${label}: missing Event structured data`);
   const normalize = (value) => String(value || '').replace(/\s+/g, ' ').trim();
   const subject = normalize($('main h1').first().text() || schema.name);
+  // English descriptions may use title_original while the heading uses a
+  // translated variant. Both must come from the actual event, never its snippet.
+  const subjects = [...new Set([subject, source.title, source.title_original, source.title_en].map(normalize).filter(Boolean))];
   // Source-authored titles can contain "Archived", "Ended", or even the full
   // description prefix. Judge only the generator's terminal archive suffix and
   // description tail, after excluding the source title from title metadata.
@@ -42,7 +45,11 @@ export function assertEventSeoStatus(html, ended, locale, label) {
       // snippets after renderEventDetail supplies its status-specific tail.
       const text = normalized.endsWith(padding) ? normalized.slice(0, -padding.length) : normalized;
       assert.ok(text.endsWith(ended ? archiveTail : currentTail), message);
-      if (ended) assert.ok(text.startsWith(prefix), message);
+      const expectedPrefix = ended ? prefix : '';
+      assert.ok(text.startsWith(expectedPrefix), message);
+      const content = text.slice(expectedPrefix.length);
+      const placeOrDate = locale === 'ar' ? /^(?:في\s|عن بعد(?:\s|\.)|من\s)/u : /^(?:in\s|online(?:\s|\.)|from\s|on\s)/u;
+      assert.ok(subjects.some((name) => content.startsWith(`${name} `) && placeOrDate.test(content.slice(name.length + 1))), message);
     } else {
       assert.equal(titleMarker.test(authoredTitle(value)), ended, message);
     }
@@ -93,9 +100,11 @@ const sourceCollisions = [
   { title: 'Archived Futures' },
   { title: 'Ended Traditions' },
   { title: 'Past event. Future Visions' },
+  { title: 'Past event.' },
   { title: 'Historical Notes — Ended September 2026' },
   { title: 'حكايات غير منتهية', title_en: 'Never Ended Stories' },
   { title: 'فعالية منتهية. آفاق جديدة', title_en: 'Past event. New Horizons' },
+  { title: 'فعالية منتهية.', title_en: 'Past event.' },
   { title: 'أرشيف موثق للمستقبل', title_en: 'Archived Visions' },
   { title: 'Future Exhibition', venue: 'Archived from the official source on EventLive.' },
   { title: 'معرض المستقبل', title_en: 'Future Museum', venue: 'أرشيف موثق من المصدر الرسمي عبر EventLive.' }
@@ -162,7 +171,7 @@ try {
   for (const { event, ended } of fixtures) {
     for (const locale of ['ar', 'en']) {
       const html = fs.readFileSync(path.join(fixtureRoot, 'dist', ...(locale === 'en' ? ['en'] : []), 'events', `${event.id}.html`), 'utf8');
-      const { $, schema } = assertEventSeoStatus(html, ended, locale, `${locale}/${event.id}`);
+      const { $, schema } = assertEventSeoStatus(html, ended, locale, `${locale}/${event.id}`, event);
       if (event.sessions) assert.equal(Date.parse(schema.endDate), Date.parse(officialSession.ends_at), 'the latest official session still extends structured data');
       checked += 1;
       // Corrupt actual output, not a source-text matcher: both false archives
@@ -178,13 +187,20 @@ try {
               ? 'Fixture | EventLive'
               : (locale === 'ar' ? 'Fixture — منتهية أكتوبر ٢٠٢٦ | EventLive' : 'Fixture — Ended October 2026 | EventLive Saudi Arabia'));
         if (selector === 'title') node.text(corrupted); else node.attr('content', corrupted);
-        assert.throws(() => assertEventSeoStatus($.html(), ended, locale, 'corrupted snippet'), /must agree with the precision-aware end verdict/);
+        assert.throws(() => assertEventSeoStatus($.html(), ended, locale, 'corrupted snippet', event), /must agree with the precision-aware end verdict/);
         if (selector === 'title') node.text(original); else node.attr('content', original);
         negative += 1;
+        if (selector.includes('description')) {
+          const prefix = locale === 'ar' ? 'فعالية منتهية. ' : 'Past event. ';
+          node.attr('content', ended ? original.slice(prefix.length) : `${prefix}${original}`);
+          assert.throws(() => assertEventSeoStatus($.html(), ended, locale, 'corrupted description prefix', event), /must agree with the precision-aware end verdict/);
+          node.attr('content', original);
+          negative += 1;
+        }
       }
       const schemaNode = $('script[type="application/ld+json"]').filter((_, node) => JSON.parse($(node).text())['@type'] === 'Event');
       schemaNode.text(JSON.stringify({ ...schema, eventStatus: `https://schema.org/Event${ended ? 'Scheduled' : 'Completed'}` }));
-      assert.throws(() => assertEventSeoStatus($.html(), ended, locale, 'corrupted schema'), /Event JSON-LD must agree/);
+      assert.throws(() => assertEventSeoStatus($.html(), ended, locale, 'corrupted schema', event), /Event JSON-LD must agree/);
       negative += 1;
     }
   }
