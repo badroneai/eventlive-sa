@@ -1,3 +1,5 @@
+import './home-program-precision-regression-test.mjs';
+import { getEventRuntime } from './event-kind-utils.mjs';
 import assert from 'node:assert/strict';
 import fs from 'node:fs';
 import path from 'node:path';
@@ -108,7 +110,7 @@ const ongoingLinks = [...ongoingStrip.matchAll(/href="\.\/events\/([^"#]+)\.html
 const bySlug = new Map(events.map((event) => [event.file_slug, event]));
 for (const slug of ongoingLinks) {
   const event = bySlug.get(slug);
-  assert.ok(event && event.event_kind === 'program' && Date.parse(event.starts_at) <= now && Date.parse(event.ends_at) >= now,
+  assert.ok(event && event.event_kind === 'program' && getEventRuntime(event, now).status.key === 'ongoing',
     `${slug}: ongoing-program strip must only offer current program windows`);
 }
-assert.equal(ongoingLinks.length, Math.min(5, upcoming.filter((event) => event.event_kind === 'program' && Date.parse(event.starts_at) <= now && Date.parse(event.ends_at) >= now).length), 'ongoing strip must refresh its membership from current events');
+assert.equal(ongoingLinks.length, Math.min(5, upcoming.filter((event) => event.event_kind === 'program' && getEventRuntime(event, now).status.key === 'ongoing').length), 'ongoing strip must refresh its membership from current events');

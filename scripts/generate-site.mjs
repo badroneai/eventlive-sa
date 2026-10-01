@@ -2701,6 +2701,12 @@ function effectiveEventEnd(event = {}) {
   return Number.isFinite(latest) ? latest : Infinity;
 }
 
+function eventHasEnded(event = {}, now = Date.now()) {
+  // A defaulted hour is only a date: retain the final Riyadh day, including
+  // when a later official session extends an outdated parent window.
+  return getEventRuntime({ ...event, ends_at: effectiveEventEndIso(event) }, now).status.key === 'ended';
+}
+
 function renderEventDetail(event) {
   const relative = '../';
   const city = cityLabel(event.city);
@@ -2727,7 +2733,7 @@ function renderEventDetail(event) {
   // parent status: event.status comes from the precision-aware getEventRuntime,
   // which cannot see the schedule. chess-hub is stamped 'ended' from a window that
   // closed 2026-08-25 while 13 sessions run to 2026-12-29.
-  const ended = effectiveEventEnd(event) < Date.now();
+  const ended = eventHasEnded(event);
   const monthYear = archiveMonthLabel(event.ends_at || event.starts_at);
   const statusPrefix = ended ? 'فعالية منتهية. ' : '';
   const venuePhrase = event.venue && String(event.venue).trim() !== String(city).trim() ? `الموقع: ${event.venue}. ` : '';
@@ -2802,7 +2808,7 @@ function renderEventDetail(event) {
     // itself EventCompleted alongside them. Structured data that contradicts the
     // page it describes is worse than none: it is what Google reads first.
     endDate: effectiveEventEndIso(event),
-    eventStatus: effectiveEventEnd(event) < Date.now() ? 'https://schema.org/EventCompleted' : 'https://schema.org/EventScheduled',
+    eventStatus: ended ? 'https://schema.org/EventCompleted' : 'https://schema.org/EventScheduled',
     eventAttendanceMode: online ? 'https://schema.org/OnlineEventAttendanceMode' : 'https://schema.org/OfflineEventAttendanceMode',
     location: eventLocationJsonLd(event, canonical),
     organizer: organizerJsonLdForEvent(event),
@@ -3483,6 +3489,9 @@ function cityDirectoryRows(events) {
       row.next_event = {
         title: event.title,
         starts_at: event.starts_at,
+        ends_at: event.ends_at,
+        event_kind: event.event_kind,
+        time_precision: event.time_precision || 'unknown',
         status: event.status,
         url: event.detail_url
       };
@@ -3521,7 +3530,7 @@ function cityDirectoryRows(events) {
 
 function cityDirectoryCard(row) {
   const nextLine = row.next_event
-    ? `<p><strong>الأقرب:</strong> <a href="${escapeHtml(row.next_event.url)}">${escapeHtml(row.next_event.title)}</a><br><span data-live-time data-start="${escapeHtml(row.next_event.starts_at)}" data-end="${escapeHtml(row.next_event.starts_at)}" data-kind="moment">${escapeHtml(staticWhenText({ starts_at: row.next_event.starts_at }))}</span></p>`
+    ? `<p><strong>الأقرب:</strong> <a href="${escapeHtml(row.next_event.url)}">${escapeHtml(row.next_event.title)}</a><br><span data-live-time ${runtimeAttrs(row.next_event)}>${escapeHtml(staticWhenText(row.next_event))}</span></p>`
     : '<p><strong>الأقرب:</strong> لا توجد فعالية قادمة مؤكدة حتى الآن.</p>';
   // A places-only city (zero events) never gets its own feeds/city-<slug>.*
   // bundle (writeSubscriptionFeeds() only ever writes city feeds from the
@@ -3610,6 +3619,9 @@ function categoryDirectoryRows(events) {
       row.next_event = {
         title: event.title,
         starts_at: event.starts_at,
+        ends_at: event.ends_at,
+        event_kind: event.event_kind,
+        time_precision: event.time_precision || 'unknown',
         status: event.status,
         url: event.detail_url
       };
@@ -3630,7 +3642,7 @@ function categoryDirectoryRows(events) {
 
 function categoryDirectoryCard(row) {
   const nextLine = row.next_event
-    ? `<p><strong>الأقرب:</strong> <a href="${escapeHtml(row.next_event.url)}">${escapeHtml(row.next_event.title)}</a><br><span data-live-time data-start="${escapeHtml(row.next_event.starts_at)}" data-end="${escapeHtml(row.next_event.starts_at)}" data-kind="moment">${escapeHtml(staticWhenText({ starts_at: row.next_event.starts_at }))}</span></p>`
+    ? `<p><strong>الأقرب:</strong> <a href="${escapeHtml(row.next_event.url)}">${escapeHtml(row.next_event.title)}</a><br><span data-live-time ${runtimeAttrs(row.next_event)}>${escapeHtml(staticWhenText(row.next_event))}</span></p>`
     : '<p><strong>الأقرب:</strong> لا توجد فعالية قادمة مؤكدة حتى الآن.</p>';
   return `<article class="activation-card"><h2><a href="${escapeHtml(row.url)}">${escapeHtml(row.label)}</a></h2><div class="signals"><div class="signal-check good"><b>${row.upcoming_or_active}</b><span>قادمة/نشطة</span></div><div class="signal-check ${row.live_ready ? 'good' : 'warn'}"><b>${row.live_ready}</b><span>جداول حية</span></div><div class="signal-check good"><b>${row.cities_count}</b><span>مدن</span></div><div class="signal-check good"><b>${row.sources_count}</b><span>مصادر</span></div></div>${nextLine}<p><strong>الجمهور:</strong> ${escapeHtml(row.audiences.slice(0, 4).join('، ') || 'عموم الجمهور')}</p><div class="activation-actions"><a class="cta" href="${escapeHtml(row.url)}">فتح التصنيف</a><a class="cta" href="./feeds/category-${escapeHtml(row.slug)}.ics">تقويم التصنيف</a></div></article>`;
 }
@@ -3750,6 +3762,9 @@ function audienceDirectoryRows(events) {
         row.next_event = {
           title: event.title,
           starts_at: event.starts_at,
+          ends_at: event.ends_at,
+          event_kind: event.event_kind,
+          time_precision: event.time_precision || 'unknown',
           status: event.status,
           url: event.detail_url
         };
@@ -3779,7 +3794,7 @@ function audienceDirectoryRows(events) {
 
 function audienceDirectoryCard(row) {
   const nextLine = row.next_event
-    ? `<p><strong>الأقرب:</strong> <a href="${escapeHtml(row.next_event.url)}">${escapeHtml(row.next_event.title)}</a><br><span data-live-time data-start="${escapeHtml(row.next_event.starts_at)}" data-end="${escapeHtml(row.next_event.starts_at)}" data-kind="moment">${escapeHtml(staticWhenText({ starts_at: row.next_event.starts_at }))}</span></p>`
+    ? `<p><strong>الأقرب:</strong> <a href="${escapeHtml(row.next_event.url)}">${escapeHtml(row.next_event.title)}</a><br><span data-live-time ${runtimeAttrs(row.next_event)}>${escapeHtml(staticWhenText(row.next_event))}</span></p>`
     : '<p><strong>الأقرب:</strong> لا توجد فعالية قادمة مؤكدة حتى الآن.</p>';
   const categoriesLine = row.categories.length
     ? row.categories.slice(0, 4).join('، ')
@@ -7311,7 +7326,7 @@ function patchHomePage(events) {
     // size and the headline looks wrong even though it is right.
     .sort((a, b) => Number(b.liveNow) - Number(a.liveNow));
   const ongoingPrograms = upcoming.filter((event) => event.event_kind === 'program'
-    && Date.parse(event.starts_at) <= now && Date.parse(event.ends_at) >= now).slice(0, 5);
+    && getEventRuntime(event, now).status.key === 'ongoing').slice(0, 5);
   const ongoingStrip = `<section class="ongoing-strip" aria-label="برامج ممتدة جارية"${ongoingPrograms.length ? '' : ' hidden'}>
       <h2>برامج ممتدة نوافذها مفتوحة الآن</h2>
       <p>برامج وتدريب طويل المدى يمكنك الالتحاق به ضمن نافذته — ليست فعاليات لحظية.</p>
