@@ -1,19 +1,24 @@
 {
   "schema": "eventlive.i18n-en-surface.v1",
-  "generated_at": "2026-09-30T10:58:09.001Z",
-  "pages_scanned": 1878,
-  "pages_with_arabic": 434,
+  "generated_at": "2026-10-01T09:28:03.892Z",
+  "pages_scanned": 1879,
+  "pages_with_arabic": 472,
   "template_regressions": [],
   "script_template_regressions": [],
   "style_template_regressions": [],
   "recurring_surface_debt": [
     {
+      "text": "شعف",
+      "pages": 63,
+      "example": "categories/tourism-experiences.html"
+    },
+    {
       "text": "../assets/event-images/الشهادة-الدولية-للحاسب-والإنترنت-ic3-a46ba6d2eb.jpg",
-      "pages": 51,
+      "pages": 49,
       "example": "events/event-الترشح-للدبلوم-المتوسط-إدارة-اللوجستيات-وسلاسل-الإمداد-حضوري-بالتعاون-مع.html",
       "script": true
     }
   ],
-  "recurring_total": 1,
-  "content_prose_lines": 2135
+  "recurring_total": 2,
+  "content_prose_lines": 2099
 }

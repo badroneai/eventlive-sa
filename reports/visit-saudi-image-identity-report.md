@@ -1,15 +1,16 @@
 # EventLive Visit Saudi Image Identity Report
 
-- generated_at: 2026-09-30T10:43:17.566Z
-- pdf_crop_assignments: 35
-- verified: 32
-- struck: 3
-- slots_seen_this_cycle: 34
+- generated_at: 2026-10-01T09:09:48.145Z
+- pdf_crop_assignments: 33
+- verified: 29
+- struck: 4
+- slots_seen_this_cycle: 31
 
 ## Struck (fell back to generated cover)
 
-- جولة بقي السريعة الباحة (visit-saudi-summer-2026-p072-bottom-right.jpg) - slot-vacated - no dated card currently occupies page 72 bottom-right of https://www.visitsaudi.com/content/dam/documents/saudi-calendar-ar.pdf
-- جولة البقي بين جبال الباحة (visit-saudi-summer-2026-p072-bottom-left.jpg) - slot-vacated - no dated card currently occupies page 72 bottom-left of https://www.visitsaudi.com/content/dam/documents/saudi-calendar-ar.pdf
+- مزرعة ركايب (visit-saudi-summer-2026-p024-bottom-right.jpg) - slot-vacated - no dated card currently occupies page 24 bottom-right of https://www.visitsaudi.com/content/dam/documents/saudi-calendar-ar.pdf
+- واحة عسيب (visit-saudi-summer-2026-p024-bottom-left.jpg) - slot-vacated - no dated card currently occupies page 24 bottom-left of https://www.visitsaudi.com/content/dam/documents/saudi-calendar-ar.pdf
+- مهابة (visit-saudi-summer-2026-p025-top-left.png) - slot-vacated - no dated card currently occupies page 25 top-left of https://www.visitsaudi.com/content/dam/documents/saudi-calendar-ar.pdf
 - ألف وواحد (visit-saudi-summer-2026-p063-bottom-left.jpg) - identity-mismatch - page 63 bottom-left is now "وقف! عرض نمر الكوميدي المباشر في الرياض"
 
 ## Verified
@@ -17,12 +18,9 @@
 - سوق الثلاثاء الشعبي (visit-saudi-summer-2026-p024-top-left.jpg)
 - صندوق أسامة من مخرج ثمانية (visit-saudi-summer-2026-p051-top-left.jpg)
 - كايف المزرعة (visit-saudi-summer-2026-p051-bottom-right.jpg)
-- مزرعة ركايب (visit-saudi-summer-2026-p024-bottom-right.jpg)
 - معرض قلب البحر (visit-saudi-summer-2026-p004-top-right.png)
 - معرض في تتبّع ذكريات غامرة (visit-saudi-summer-2026-p004-top-left.png)
-- واحة عسيب (visit-saudi-summer-2026-p024-bottom-left.jpg)
 - بيوني الشرف (visit-saudi-summer-2026-p025-top-right.jpg)
-- مهابة (visit-saudi-summer-2026-p025-top-left.png)
 - الاخطبوطية (visit-saudi-summer-2026-p052-top-right.jpg)
 - شعف (visit-saudi-summer-2026-p025-bottom-left.jpg)
 - بسطة القابل (visit-saudi-summer-2026-p026-top-right.jpg)
