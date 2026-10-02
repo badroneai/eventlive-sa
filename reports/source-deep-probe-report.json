@@ -1,13 +1,13 @@
 {
-  "generated_at": "2026-09-30T10:19:53.564Z",
+  "generated_at": "2026-10-02T08:38:15.727Z",
   "registry": "data/source_registry.json",
   "source_ingestion_plan": "reports/source-ingestion-plan.json",
   "probe_limit": 28,
   "timeout_ms": 12000,
   "totals": {
     "probed": 21,
-    "extractor_ready": 11,
-    "blocked": 10,
+    "extractor_ready": 12,
+    "blocked": 9,
     "partnership": 0,
     "watch": 0
   },
@@ -37,14 +37,48 @@
         "date_snippets": [
           "14-16 September",
           "Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0], j=d.cr",
-          "Date\": \"2025-09-15\", \"endDate\": \"2025-09-17\", \"eventStatus\": \"https://sc",
-          "2025-09-17",
-          "2025-09-15",
-          "2025-09-17"
+          "Date\": \"2027-09-14\", \"endDate\": \"2027-09-16\", \"eventStatus\": \"https://sc",
+          "2027-09-16",
+          "2027-09-14",
+          "2027-09-16"
         ]
       },
       "extraction_score": 98,
       "recommendation": "build-jsonld-event-extractor"
+    },
+    {
+      "id": "baha-amanah-events",
+      "name": "Baha Municipality Events",
+      "priority": 62,
+      "url": "https://baha.gov.sa/ar/Events",
+      "trust_level": "official",
+      "fetch_method": "html-listing",
+      "candidate_gate": "extraction",
+      "intake_policy": "official-feed-preferred",
+      "signals": {
+        "http_ok": true,
+        "status": 200,
+        "final_url": "https://baha.gov.sa/ar/Events",
+        "content_type": "text/html; charset=utf-8",
+        "bytes": 208350,
+        "title": "&#x641;&#x639;&#x627;&#x644;&#x64A;&#x627;&#x62A; &#x627;&#x644;&#x628;&#x627;&#x62D;&#x629; | &#x623;&#x645;&#x627;&#x646;&#x629; &#x645;&#x646;&#x637;&#x642;&#x629; &#x627;&#x644;&#x628;&#x627;&#x62D;&#x629;",
+        "blocked_reason": "",
+        "structured_scripts": 0,
+        "structured_events": 0,
+        "google_calendar_links": 0,
+        "event_detail_links": 22,
+        "json_or_api_hints": 14,
+        "date_snippets": [
+          "datetimepicker/4.17.47/css/bootstrap-datetimepicker.min.css\" as=\"style\"",
+          "datetimepicker/4.17.47/css/bootstrap-datetimepicker.min.css\" rel=\"stylesheet\">",
+          "calendar-alt\">",
+          "date-span\">",
+          "02 Oct 2027",
+          "dated Row -->"
+        ]
+      },
+      "extraction_score": 78,
+      "recommendation": "build-html-detail-extractor"
     },
     {
       "id": "jouf-chamber-events",
@@ -162,7 +196,7 @@
         "status": 200,
         "final_url": "https://www.cst.gov.sa/en",
         "content_type": "text/html; charset=utf-8",
-        "bytes": 946580,
+        "bytes": 1328954,
         "title": "Communications, Space & Technology Commission (CST)",
         "blocked_reason": "",
         "structured_scripts": 2,
@@ -230,7 +264,7 @@
         "status": 200,
         "final_url": "https://www.tabukchamber.sa/",
         "content_type": "text/html; charset=UTF-8",
-        "bytes": 111138,
+        "bytes": 112375,
         "title": "الغرفة التجارية بتبوك | TABUK CHAMBER",
         "blocked_reason": "",
         "structured_scripts": 0,
@@ -239,7 +273,7 @@
         "event_detail_links": 0,
         "json_or_api_hints": 0,
         "date_snippets": [
-          "2025-11-22",
+          "2026-11-27",
           "2025-11-22",
           "2025-11-22",
           "2025-11-22",
@@ -298,7 +332,7 @@
         "status": 200,
         "final_url": "https://www.asda.gov.sa/en",
         "content_type": "text/html; charset=utf-8",
-        "bytes": 229942,
+        "bytes": 229329,
         "title": "Aseer Development Authority | Qimam wa Shiyam Strategy",
         "blocked_reason": "",
         "structured_scripts": 0,
@@ -366,7 +400,7 @@
         "status": 200,
         "final_url": "https://www.kaust.edu.sa/en/",
         "content_type": "text/html; charset=utf-8",
-        "bytes": 84234,
+        "bytes": 84232,
         "title": "KAUST | A top research university in the Middle East",
         "blocked_reason": "",
         "structured_scripts": 0,
@@ -495,6 +529,33 @@
       "recommendation": "blocked-or-protected:fetch failed getaddrinfo EAI_AGAIN www.ricec.com TypeError: fetch failed"
     },
     {
+      "id": "saudi-contractors-authority-events",
+      "name": "Saudi Contractors Authority Events",
+      "priority": 49,
+      "url": "https://www.sca.gov.sa/",
+      "trust_level": "official",
+      "fetch_method": "html-listing",
+      "candidate_gate": "extraction",
+      "intake_policy": "monitor-public",
+      "signals": {
+        "http_ok": false,
+        "status": 0,
+        "final_url": "https://www.sca.gov.sa/",
+        "content_type": "",
+        "bytes": 0,
+        "title": "",
+        "blocked_reason": "fetch failed getaddrinfo ENOTFOUND www.sca.gov.sa TypeError: fetch failed",
+        "structured_scripts": 0,
+        "structured_events": 0,
+        "google_calendar_links": 0,
+        "event_detail_links": 0,
+        "json_or_api_hints": 0,
+        "date_snippets": []
+      },
+      "extraction_score": -23,
+      "recommendation": "blocked-or-protected:fetch failed getaddrinfo ENOTFOUND www.sca.gov.sa TypeError: fetch failed"
+    },
+    {
       "id": "riyadh-city-events",
       "name": "Riyadh City Events",
       "priority": 51,
@@ -520,64 +581,6 @@
       },
       "extraction_score": -23,
       "recommendation": "blocked-or-protected:fetch failed unable to verify the first certificate; if the root CA is installed locally, try running Node.js with --use-system-ca TypeError: fetch failed"
-    },
-    {
-      "id": "middle-east-banking-ai-summit",
-      "name": "Middle East Banking AI & Analytics Summit Official",
-      "priority": 74,
-      "url": "https://mebankingai.com/sa/",
-      "trust_level": "official",
-      "fetch_method": "html-listing",
-      "candidate_gate": "human-review",
-      "intake_policy": "official-feed-preferred",
-      "signals": {
-        "http_ok": true,
-        "status": 200,
-        "final_url": "https://mebankingai.com/sa/",
-        "content_type": "text/html",
-        "bytes": 2305,
-        "title": "Middle East Banking",
-        "blocked_reason": "bot-protection",
-        "structured_scripts": 0,
-        "structured_events": 0,
-        "google_calendar_links": 0,
-        "event_detail_links": 0,
-        "json_or_api_hints": 1,
-        "date_snippets": [
-          "Date(); (function(){ var s1=document.createElement(\"script\"),s0=document.getElements"
-        ]
-      },
-      "extraction_score": -23,
-      "recommendation": "blocked-or-protected:bot-protection"
-    },
-    {
-      "id": "middle-east-enterprise-ai-summit",
-      "name": "Middle East Enterprise AI & Analytics Summit Official",
-      "priority": 75,
-      "url": "https://meenterpriseai.com/sa/",
-      "trust_level": "official",
-      "fetch_method": "html-listing",
-      "candidate_gate": "human-review",
-      "intake_policy": "official-feed-preferred",
-      "signals": {
-        "http_ok": true,
-        "status": 200,
-        "final_url": "https://meenterpriseai.com/sa/",
-        "content_type": "text/html",
-        "bytes": 1996,
-        "title": "Middle East Enterprise",
-        "blocked_reason": "bot-protection",
-        "structured_scripts": 0,
-        "structured_events": 0,
-        "google_calendar_links": 0,
-        "event_detail_links": 0,
-        "json_or_api_hints": 1,
-        "date_snippets": [
-          "Date(); (function(){ var s1=document.createElement(\"script\"),s0=document.getElements"
-        ]
-      },
-      "extraction_score": -23,
-      "recommendation": "blocked-or-protected:bot-protection"
     },
     {
       "id": "saudi-digital-academy",
@@ -620,7 +623,7 @@
         "status": 403,
         "final_url": "https://qiddiya.com/",
         "content_type": "text/html; charset=UTF-8",
-        "bytes": 5846,
+        "bytes": 5845,
         "title": "Attention Required! | Cloudflare",
         "blocked_reason": "http-403",
         "structured_scripts": 0,
@@ -668,6 +671,11 @@
       "reason": "score=98, gcal=0, structured=2, links=1"
     },
     {
+      "id": "baha-amanah-events",
+      "recommendation": "build-html-detail-extractor",
+      "reason": "score=78, gcal=0, structured=0, links=22"
+    },
+    {
       "id": "jouf-chamber-events",
       "recommendation": "build-html-detail-extractor",
       "reason": "score=78, gcal=0, structured=0, links=26"
@@ -696,11 +704,6 @@
       "id": "tabuk-chamber-events",
       "recommendation": "probe-hidden-api-or-html-table",
       "reason": "score=48, gcal=0, structured=0, links=0"
-    },
-    {
-      "id": "sela-sea-expo",
-      "recommendation": "probe-hidden-api-or-html-table",
-      "reason": "score=46, gcal=0, structured=0, links=0"
     }
   ]
 }

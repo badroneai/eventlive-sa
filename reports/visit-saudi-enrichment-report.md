@@ -1,11 +1,11 @@
 # Visit Saudi Calendar Enrichment Report
 
-- generated_at: 2026-10-01T09:11:32.060Z
-- targets: 48
+- generated_at: 2026-10-02T09:09:04.691Z
+- targets: 49
 - candidates: 16
-- enriched: 48
-- fetched: 48
-- images: 46
+- enriched: 49
+- fetched: 49
+- images: 47
 - fetch_failures: 0
 
 ## Enriched
@@ -55,6 +55,7 @@
 - Wagef! Nemr Live Comedy Show in Jeddah - official-page-html - image=yes - features=7
 - The Innovation Driven Water Sustainability Conference - official-page-html - image=yes - features=7
 - Saudi Falcon Cup - official-page-html - image=yes - features=7
+- IN ACT - ACT XII - NEW YEAR'S EVE - official-page-html - image=yes - features=7
 - Founding Day - official-page-html - image=yes - features=7
 - Eid Al-Fitr - official-page-html - image=no - features=6
 - Eid Al-Adha - official-page-html - image=no - features=6

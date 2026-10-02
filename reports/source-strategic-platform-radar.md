@@ -1,6 +1,6 @@
 # Strategic Platform Source Radar
 
-Generated at: 2026-09-30T10:21:01.011Z
+Generated at: 2026-10-02T08:39:21.138Z
 
 Policy: evidence refresh, API-surface mapping, and source strategy only. This radar does not auto-publish catalog events.
 
@@ -27,12 +27,12 @@ Policy: evidence refresh, API-surface mapping, and source strategy only. This ra
 - Project use: Track as a high-value official source for exhibitions and conferences; do not auto-publish until event-detail extraction is verified.
 - Title: الهيئه العامه للمعارض و المؤتمرات
 - Hint URLs: https://fonts.gstatic.com/s/ibmplexsansarabic/v15/Qw3MZRtWPQCuHme67tEYUIx3Kh0PHR9N6YNe7PKzeflA.woff2, https://fonts.gstatic.com/s/ibmplexsansarabic/v15/Qw3MZRtWPQCuHme67tEYUIx3Kh0PHR9N6YNe7PqzeflA.woff2, https://fonts.gstatic.com/s/ibmplexsansarabic/v15/Qw3MZRtWPQCuHme67tEYUIx3Kh0PHR9N6YNe7PmzeflA.woff2, https://fonts.gstatic.com/s/ibmplexsansarabic/v15/Qw3MZRtWPQCuHme67tEYUIx3Kh0PHR9N6YNe7PezeQ.woff2, https://fonts.gstatic.com/s/ibmplexsansarabic/v15/Qw3NZRtWPQCuHme67tEYUIx3Kh0PHR9N6YPy_eCRXMR5Kw.woff2, https://fonts.gstatic.com/s/ibmplexsansarabic/v15/Qw3NZRtWPQCuHme67tEYUIx3Kh0PHR9N6YPy_eCZXMR5Kw.woff2, https://fonts.gstatic.com/s/ibmplexsansarabic/v15/Qw3NZRtWPQCuHme67tEYUIx3Kh0PHR9N6YPy_eCaXMR5Kw.woff2, https://fonts.gstatic.com/s/ibmplexsansarabic/v15/Qw3NZRtWPQCuHme67tEYUIx3Kh0PHR9N6YPy_eCUXMQ.woff2
-  - Asset 200 main-6KC3MTOI.js: http://www.w3.org/2000/svg, https://www.scega.gov.sa/ar/InformationCenter/Surveys/Pages/07102025.aspx, https://eservices.scega.gov.sa/login, https://raqmi.dga.gov.sa/platforms/DigitalStamp/ShowCertificate/672, http://https://sdaia.gov.sa/ar/default.aspx, https://eportal.scega.gov.sa/h-events-list
+  - Asset 200 main-5UTPO6SR.js: http://www.w3.org/2000/svg, https://eservices.scega.gov.sa/login, https://raqmi.dga.gov.sa/platforms/DigitalStamp/ShowCertificate/672, http://https://sdaia.gov.sa/ar/default.aspx, https://eportal.scega.gov.sa/h-events-list
   - Asset 200 chunk-4G4A4TT5.js: no URL hints
   - Asset 200 chunk-FOF4BJ54.js: no URL hints
   - Asset 200 chunk-L5L4U5HC.js: no URL hints
   - Asset 200 chunk-I3NA5QEP.js: http://www.w3.org/2000/svg
-  - Asset 200 chunk-WY3NREMW.js: no URL hints
+  - Asset 200 chunk-RUT2MLWP.js: no URL hints
 
 ### National Events Center
 
@@ -51,8 +51,8 @@ Policy: evidence refresh, API-surface mapping, and source strategy only. This ra
 - Project use: Keep in the 6-hour source ring; Arabic and English API payloads are reachable and useful for tourism-facing event discovery.
 - Title: تقويم السعودية | تابع العطلات والفعاليات المميزة - الموقع الرسمي للسياحة السعودية
 - Hint URLs: https://www.googletagmanager.com, https://cdn.consentmanager.net, https://delivery.consentmanager.net, https://www.googletagmanager.com/gtm.js?id=, https://www.clarity.ms/tag/, https://www.visitsaudi.com/images/SoundStorm-1.2e16d0ba.fill-1200x630.jpg, https://www.visitsaudi.com/ar/saudi-calendar, https://www.visitsaudi.com/ar
-  - API 200 https://www.visitsaudi.com/bin/api/v3/events?locale=ar: 28 items; معرض اللغة العربية للطفل, معرض اللغة العربية 28, عربات الجاذبية في قمرة, جولة بقي السريعة قمرة, جولة البقي بين جبال الباحة
-  - API 200 https://www.visitsaudi.com/bin/api/v3/events?locale=en: 28 items; Arabic Language Exhibition for kids, Arabic Language Exhibition 28, Gravity Carts at Gamra, Sprint Trail Buggy Ride Gamra, Scenic Buggy Ride at Gamra
+  - API 200 https://www.visitsaudi.com/bin/api/v3/events?locale=ar: 22 items; معرض اللغة العربية للطفل, معرض اللغة العربية 28, كرنفال بريدة الدولي للتمور, تجربة شاطئ قالو, «استمرارية 26» برنامج الفنانين الناشئين في فنون الوسائط الجديدة بمركز الدرعية لفنون المستقبل
+  - API 200 https://www.visitsaudi.com/bin/api/v3/events?locale=en: 22 items; Arabic Language Exhibition for kids, Arabic Language Exhibition 28, Buraydah International Dates Carnival, GALU Beach Experience, Continuum '26 Diriyah Art Futures Emerging New Media Artists Programme
 
 ### webook Explore
 
@@ -61,10 +61,10 @@ Policy: evidence refresh, API-surface mapping, and source strategy only. This ra
 - Classification: protected (200, fetch)
 - Project use: Use for lead discovery, ticket-link corroboration, and duplicate checks; require official organizer or authority confirmation before promotion.
 - Title: -
-- Hint URLs: https://wbk-assets.webook.com, https://api.webook.com, https://cdn.webook.com, https://geolocation.webook.com, https://images.cmscloud.ai, https://apps.apple.com/sa/app/webook-com-fun-things-to-do/id6468667896, https://play.google.com/store/apps/details?id=com.webook.android, https://wbk-assets.webook.com/0.7.8.2/assets/index-7NGKmODX.js
-  - Asset 200 api-B_C68cQG.js: https://github.com/nadude/webook-frontend/blob/main/packages/api/README.md, https://webook.com/shop, https://wbk-assets.webook.com/eatapp/availability?event_id=${e}&date=${r}&lang=${a}, https://wbk-assets.webook.com/organizations/$%7Br%7D/event-group/details, https://wbk-assets.webook.com/event-tickets-prerequisite?event_id=${e}, https://wbk-assets.webook.com/event-marketing-fee?event_id=${e}&utm_wid=${r}&lang=${a}
-  - Asset 200 ticketing-B4DPWKiG.js: https://github.com/nadude/webook-frontend/blob/main/packages/ticketing/README.md, https://cdn-{region}.seatsio.net/chart.js, https://chart.seatcloud.com/v1.0/chart.js, https://wbk.zendesk.com/hc/${i}, https://wbk.zendesk.com/hc/${n}, https://wa.me/${c.replace(/\D/g,
-  - Asset 200 config-C4Lfc-qw.js: https://github.com/nadude/webook-frontend/blob/main/packages/api/README.md, https://www.recaptcha.net/recaptcha/api.js?render=${t}, https://static.geetest.com/v4/gt4.js, https://apps.apple.com/us/app/webook-com-fun-things-to-do/id6468667896, https://play.google.com/store/apps/details?id=com.webook.android, https://appgallery.huawei.com/app/C109536445
+- Hint URLs: https://wbk-assets.webook.com, https://api.webook.com, https://cdn.webook.com, https://geolocation.webook.com, https://images.cmscloud.ai, https://apps.apple.com/sa/app/webook-com-fun-things-to-do/id6468667896, https://play.google.com/store/apps/details?id=com.webook.android, https://wbk-assets.webook.com/0.7.8.2/assets/index-DZ2Htu0z.js
+  - Asset 200 api-DFKMxA3e.js: https://github.com/nadude/webook-frontend/blob/main/packages/api/README.md, https://webook.com/shop, https://wbk-assets.webook.com/eatapp/availability?event_id=${e}&date=${r}&lang=${a}, https://wbk-assets.webook.com/event-tickets-prerequisite?event_id=${e}, https://wbk-assets.webook.com/organizations/$%7Br%7D/event-group/details, https://wbk-assets.webook.com/event-marketing-fee?event_id=${e}&utm_wid=${r}&lang=${a}
+  - Asset 200 ticketing-Og7zkUfp.js: https://github.com/nadude/webook-frontend/blob/main/packages/ticketing/README.md, https://cdn-{region}.seatsio.net/chart.js, https://chart.seatcloud.com/v1.0/chart.js, https://wbk.zendesk.com/hc/${i}, https://wbk.zendesk.com/hc/${n}, https://wa.me/${c.replace(/\D/g,
+  - Asset 200 config-DuwrGB8a.js: https://github.com/nadude/webook-frontend/blob/main/packages/api/README.md, https://www.recaptcha.net/recaptcha/api.js?render=${t}, https://static.geetest.com/v4/gt4.js, https://apps.apple.com/us/app/webook-com-fun-things-to-do/id6468667896, https://play.google.com/store/apps/details?id=com.webook.android, https://appgallery.huawei.com/app/C109536445
 
 ### Enjoy Saudi
 

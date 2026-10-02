@@ -1,18 +1,24 @@
 {
-  "generated_at": "2026-10-01T09:18:11.522Z",
+  "generated_at": "2026-10-02T09:13:43.992Z",
   "events_file": "dist/events.json",
   "manifest": "data/event_image_cache_manifest.json",
   "image_dir": "dist/assets/event-images",
   "totals": {
     "targets": 500,
-    "cached_total": 885,
-    "fetched": 6,
-    "reused": 488,
+    "cached_total": 888,
+    "fetched": 9,
+    "reused": 485,
     "failed": 6,
-    "skipped_recent_failures": 6,
-    "remembered_failures": 29
+    "skipped_recent_failures": 0,
+    "remembered_failures": 30
   },
   "fetched": [
+    {
+      "source_url": "https://hayyjameel.org/wp-content/uploads/2026/09/Artist1-Ustad-Abdul-Aziz-1100x500.jpg",
+      "file": "dist/assets/event-images/hayy-cinema-x-hayy-arts-between-destinations-short-films-artist-discus-4a5dd900a3.jpg",
+      "bytes": 102486,
+      "events": 1
+    },
     {
       "source_url": "https://hayyjameel.org/wp-content/uploads/2026/09/annie-spratt-HB-Kf9WLy_0-unsplash-scaled-aspect-ratio-2560-1349-1-1100x500.jpg",
       "file": "dist/assets/event-images/هاي-ماكرز-ليلة-مبتكرة-6b61cb62fa.jpg",
@@ -26,9 +32,21 @@
       "events": 1
     },
     {
-      "source_url": "https://hayyjameel.org/wp-content/uploads/2026/09/DSC02834-1-scaled-aspect-ratio-2560-1471-1100x500.jpg",
-      "file": "dist/assets/event-images/هاي-ماكرز-2ebb5c6137.jpg",
-      "bytes": 103009,
+      "source_url": "https://hayyjameel.org/wp-content/uploads/2026/09/IMG-6538-scaled-aspect-ratio-1688-783-1100x500.jpg",
+      "file": "dist/assets/event-images/hayy-makers-open-day-plastic-cap-mural-90f0ee58f1.jpg",
+      "bytes": 158861,
+      "events": 1
+    },
+    {
+      "source_url": "https://hayyjameel.org/wp-content/uploads/2026/09/la-traversee-1-1-2560x-q85-1100x500.jpg",
+      "file": "dist/assets/event-images/hayy-cinema-october-2026-a771c51824.jpg",
+      "bytes": 99998,
+      "events": 1
+    },
+    {
+      "source_url": "https://hayyjameel.org/wp-content/uploads/2026/09/3-scaled-aspect-ratio-2538-1280-1100x500.png",
+      "file": "dist/assets/event-images/هاي-يبدو-ريد-ويند-،-ندوة-سونيك-ريسيدوس-الموسيقية-dd89e5c3e6.png",
+      "bytes": 868432,
       "events": 1
     },
     {
@@ -38,9 +56,9 @@
       "events": 1
     },
     {
-      "source_url": "https://hayyjameel.org/wp-content/uploads/2026/09/3-scaled-aspect-ratio-2538-1280-1100x500.png",
-      "file": "dist/assets/event-images/hayy-sounds-red-wind-sonic-residues-music-symposium-dd89e5c3e6.png",
-      "bytes": 868432,
+      "source_url": "https://hayyjameel.org/wp-content/uploads/2026/09/DSC02834-1-scaled-aspect-ratio-2560-1471-1100x500.jpg",
+      "file": "dist/assets/event-images/هاي-ماكرز-2ebb5c6137.jpg",
+      "bytes": 103009,
       "events": 1
     },
     {
@@ -147,18 +165,8 @@
       "events": 1
     },
     {
-      "source_url": "https://discoveraseer.com/en/img/asset/YXNzZXRzL2V4cGVyaWVuY2UvZHNjMDc5MTEtZW5oYW5jZWQtbnIuanBlZw/dsc07911-enhanced-nr.jpeg?w=1024&fm=webp&s=8e80d1339a4cd8cacaa3f4b70ad29005",
-      "file": "dist/assets/event-images/بيوني-الشرف-423206a13c.webp",
-      "events": 1
-    },
-    {
       "source_url": "https://discoveraseer.com/en/img/asset/YXNzZXRzL2V4cGVyaWVuY2UvYWFhbmFiMi5wbmc/aaanab2.png?w=1024&fm=webp&s=b6db6587e3887e3b27e4b467711abff4",
       "file": "dist/assets/event-images/مزرعة-أعناب-8fb35d796f.webp",
-      "events": 1
-    },
-    {
-      "source_url": "https://hayyjameel.org/wp-content/uploads/2026/07/202607_HE_Monthly_Programme_Banners-04-1100x500.png",
-      "file": "dist/assets/event-images/hayy-explorers-as-told-by-the-land-traces-memory-5eec82d686.png",
       "events": 1
     },
     {
@@ -262,11 +270,6 @@
       "events": 1
     },
     {
-      "source_url": "https://www.visitsaudi.com/images/ornament-h-m1-24-8290.original.png",
-      "file": "dist/assets/event-images/forest-wonder-499a88ca39.png",
-      "events": 14
-    },
-    {
       "source_url": "https://www.ithra.com/application/files/cache/thumbnails/388c96722ea7802636485fc7640da5a1.jpg",
       "file": "dist/assets/event-images/energy-in-motion-bba2390362.jpg",
       "events": 1
@@ -314,7 +317,7 @@
     {
       "source_url": "https://uqu.edu.sa/assets/images/uqu-gate.jpeg",
       "file": "dist/assets/event-images/الشهادة-الدولية-للحاسب-والإنترنت-ic3-a46ba6d2eb.jpg",
-      "events": 108
+      "events": 109
     },
     {
       "source_url": "https://scth.scene7.com/is/image/scth/buraydah-dates-carnival-qassim?wid=1400&hei=788&fit=constrain&fmt=webp",
@@ -329,11 +332,6 @@
     {
       "source_url": "https://cdn.tuwaiq.edu.sa/initiatives_admin/images/4ilqvrk1.uuc.webp",
       "file": "dist/assets/event-images/معسكر-طويق-للقطاع-الأمني-تطوير-البرمجيات-4ae6ec31c9.webp",
-      "events": 1
-    },
-    {
-      "source_url": "https://cdn.tuwaiq.edu.sa/initiatives_admin/images/p5imxiwx.1ub.webp",
-      "file": "dist/assets/event-images/معسكر-طويق-للقطاع-الأمني-البنية-التحتية-19aa89653a.webp",
       "events": 1
     },
     {
@@ -382,6 +380,11 @@
       "events": 1
     },
     {
+      "source_url": "https://hayyjameel.org/wp-content/uploads/2026/07/DSC02026-scaled-aspect-ratio-2296-1300-1-1100x500.jpg",
+      "file": "dist/assets/event-images/hayy-makers-woodworking-course-level-1-with-ahmad-sofi-cd2f60e754.jpg",
+      "events": 1
+    },
+    {
       "source_url": "https://cdn.tuwaiq.edu.sa/initiatives_admin/images/1tllcxdg.n5m.jpg",
       "file": "dist/assets/event-images/معسكر-أساسيات-هندسة-الميكاترونكس-83d2c7f296.jpg",
       "events": 1
@@ -405,6 +408,11 @@
       "source_url": "https://cdn.tuwaiq.edu.sa/initiatives_admin/images/kkmcxyvk.wju.webp",
       "file": "dist/assets/event-images/معسكر-اختبار-البرمجيات-والأتمتة-b3b8f8afec.webp",
       "events": 1
+    },
+    {
+      "source_url": "https://www.visitsaudi.com/images/ornament-h-m1-24-8290.original.png",
+      "file": "dist/assets/event-images/forest-wonder-499a88ca39.png",
+      "events": 14
     },
     {
       "source_url": "https://cdn.tuwaiq.edu.sa/initiatives_admin/images/4jaiuua2.tw3.webp",
@@ -474,11 +482,6 @@
     {
       "source_url": "https://cdn.tuwaiq.edu.sa/initiatives_admin/images/nadcywdn.tl5.webp",
       "file": "dist/assets/event-images/معسكر-إدارة-الحوكمة-والمخاطر-والامتثال-grc-88592b3651.webp",
-      "events": 1
-    },
-    {
-      "source_url": "https://hayyjameel.org/wp-content/uploads/2026/09/Screenshot-2026-09-02-at-4.31.00-PM-aspect-ratio-2006-1467-1100x500.png",
-      "file": "dist/assets/event-images/هاي-اكسبلوررز-كما-تولدت-الأرض-العالم-المبني-3bdc6e269f.png",
       "events": 1
     },
     {
@@ -557,11 +560,6 @@
       "events": 1
     },
     {
-      "source_url": "https://futureskills.mcit.gov.sa/sites/default/files/styles/medium/public/2026-08/_prw_OI1im_9hx8Ct1e.jpg?itok=oJrLJ6U9",
-      "file": "dist/assets/event-images/ccna-6ebc1ffc09.jpg",
-      "events": 26
-    },
-    {
       "source_url": "https://cdn.tuwaiq.edu.sa/initiatives_admin/images/b2hfxfcc.ekk.webp",
       "file": "dist/assets/event-images/معسكر-التقنيات-الناشئة-والعوالم-الافتراضية-8a64400615.webp",
       "events": 1
@@ -574,11 +572,6 @@
     {
       "source_url": "https://cdn.tuwaiq.edu.sa/initiatives_admin/images/pt5zczhp.r5m.jpg",
       "file": "dist/assets/event-images/معسكر-الذكاء-الاصطناعي-للقادة-5aa7c4fcbe.jpg",
-      "events": 1
-    },
-    {
-      "source_url": "https://api.riyadh.sa/sites/default/files/styles/medium/public/2026-05/PSU%20prince%20sultan%20university%20ppqntxnn6iahixiutnvo%20%281%29.jpeg?itok=9YqCIfMD",
-      "file": "dist/assets/event-images/icegov-international-conference-on-electronic-governance-cc0af10a77.jpg",
       "events": 1
     },
     {
@@ -1237,9 +1230,19 @@
       "events": 1
     },
     {
+      "source_url": "https://api.riyadh.sa/sites/default/files/styles/medium/public/2026-05/PSU%20prince%20sultan%20university%20ppqntxnn6iahixiutnvo%20%281%29.jpeg?itok=9YqCIfMD",
+      "file": "dist/assets/event-images/icegov-international-conference-on-electronic-governance-cc0af10a77.jpg",
+      "events": 1
+    },
+    {
       "source_url": "https://api.riyadh.sa/sites/default/files/styles/medium/public/2026-01/F%20Gu_yE-xWIAAqBvu.jpeg?itok=tEBuPjK9",
       "file": "dist/assets/event-images/the-saudi-food-show-05498df4f1.jpg",
       "events": 1
+    },
+    {
+      "source_url": "https://futureskills.mcit.gov.sa/sites/default/files/styles/medium/public/2026-08/_prw_OI1im_9hx8Ct1e.jpg?itok=oJrLJ6U9",
+      "file": "dist/assets/event-images/ccna-6ebc1ffc09.jpg",
+      "events": 26
     },
     {
       "source_url": "https://hayyjameel.org/wp-content/uploads/2026/09/Photo-by-Reza-Khota-1100x500.jpg",
@@ -1474,6 +1477,11 @@
     {
       "source_url": "https://api.riyadh.sa/sites/default/files/styles/medium/public/2025-12/hospitality%20GzwL_uhXIAE-ADv.jpeg?itok=mEuQUu0G",
       "file": "dist/assets/event-images/hotel-hospitality-expo-91b835ceaf.jpg",
+      "events": 1
+    },
+    {
+      "source_url": "https://hayyjameel.org/wp-content/uploads/2026/09/Screenshot-2026-09-02-at-4.31.00-PM-aspect-ratio-2006-1467-1100x500.png",
+      "file": "dist/assets/event-images/هاي-اكسبلوررز-كما-تولدت-الأرض-العالم-المبني-3bdc6e269f.png",
       "events": 1
     },
     {
@@ -1712,11 +1720,6 @@
       "events": 1
     },
     {
-      "source_url": "https://hayyjameel.org/wp-content/uploads/2026/07/DSC02026-scaled-aspect-ratio-2296-1300-1-1100x500.jpg",
-      "file": "dist/assets/event-images/hayy-makers-woodworking-course-level-1-with-ahmad-sofi-cd2f60e754.jpg",
-      "events": 1
-    },
-    {
       "source_url": "https://www.ithra.com/application/files/cache/thumbnails/5e64a990ff5620379ed549c9c43a0dec.jpg",
       "file": "dist/assets/event-images/بتلات-وأصدقاء-بالإنجليزية-b5b9f5d67a.jpg",
       "events": 1
@@ -1809,6 +1812,11 @@
     {
       "source_url": "https://discoveraseer.com/en/img/asset/YXNzZXRzL2V4cGVyaWVuY2UvYWdobC1ibGRfcGFnZS0wMDAxLmpwZw/aghl-bld_page-0001.jpg?w=1024&fm=webp&s=efb01a4f9be9734e9f14ca3e4f27adc0",
       "file": "dist/assets/event-images/أغلى-وطن-a1dffa4a36.webp",
+      "events": 1
+    },
+    {
+      "source_url": "https://cdn.tuwaiq.edu.sa/initiatives_admin/images/p5imxiwx.1ub.webp",
+      "file": "dist/assets/event-images/معسكر-طويق-للقطاع-الأمني-البنية-التحتية-19aa89653a.webp",
       "events": 1
     },
     {
@@ -2442,6 +2450,11 @@
       "events": 1
     },
     {
+      "source_url": "https://hayyjameel.org/wp-content/uploads/2026/07/202607_HE_Monthly_Programme_Banners-04-1100x500.png",
+      "file": "dist/assets/event-images/hayy-explorers-as-told-by-the-land-traces-memory-5eec82d686.png",
+      "events": 1
+    },
+    {
       "source_url": "https://www.ithra.com/application/files/cache/thumbnails/9c5873773d4292a9e3ae3723253da66b.jpg",
       "file": "dist/assets/event-images/documentary-competition-group-4-c5f1d56372.jpg",
       "events": 1
@@ -2480,33 +2493,23 @@
       "source_url": "https://hayyjameel.org/wp-content/uploads/2026/06/Untitled-1400-x-650-px-1-1100x500.png",
       "file": "dist/assets/event-images/jameel-library-summer-reading-challenge-2ff280fa30.png",
       "events": 1
-    },
-    {
-      "source_url": "https://discoveraseer.com/en/img/asset/YXNzZXRzL2V4cGVyaWVuY2UvMW1kbWFrLmpwZw/1mdmak.jpg?w=1024&fm=webp&s=66441f59583fe6eb3608d2053f580cd3",
-      "file": "dist/assets/event-images/مدمك-cd7354717c.webp",
-      "events": 1
-    },
-    {
-      "source_url": "https://discoveraseer.com/en/img/asset/YXNzZXRzL2V4cGVyaWVuY2UvMTUuanBlZw/15.jpeg?w=1024&fm=webp&s=6434f206e446a241e9f2866f2423678b",
-      "file": "dist/assets/event-images/أرياش-6c397fa7e8.webp",
-      "events": 1
     }
   ],
   "rejected_removed": [],
   "missing_removed": [
+    {
+      "source_url": "https://hayyjameel.org/wp-content/uploads/2026/09/annie-spratt-HB-Kf9WLy_0-unsplash-scaled-aspect-ratio-2560-1349-1-1100x500.jpg",
+      "file": "dist/assets/event-images/هاي-ماكرز-ليلة-مبتكرة-6b61cb62fa.jpg",
+      "reason": "cached-file-missing"
+    },
     {
       "source_url": "https://hayyjameel.org/wp-content/uploads/2026/09/coffee-edition-1100x500.jpg",
       "file": "dist/assets/event-images/azka-farmers-market-coffee-edition-399e805bc0.jpg",
       "reason": "cached-file-missing"
     },
     {
-      "source_url": "https://hayyjameel.org/wp-content/uploads/2026/09/annie-spratt-HB-Kf9WLy_0-unsplash-scaled-aspect-ratio-2560-1349-1-1100x500.jpg",
-      "file": "dist/assets/event-images/hayy-makers-creative-night-create-in-pink-6b61cb62fa.jpg",
-      "reason": "cached-file-missing"
-    },
-    {
       "source_url": "https://hayyjameel.org/wp-content/uploads/2026/09/DSC02834-1-scaled-aspect-ratio-2560-1471-1100x500.jpg",
-      "file": "dist/assets/event-images/hayy-makers-creative-nights-2ebb5c6137.jpg",
+      "file": "dist/assets/event-images/هاي-ماكرز-2ebb5c6137.jpg",
       "reason": "cached-file-missing"
     },
     {
@@ -2515,114 +2518,65 @@
       "reason": "cached-file-missing"
     },
     {
+      "source_url": "https://hayyjameel.org/wp-content/uploads/2026/09/3-scaled-aspect-ratio-2538-1280-1100x500.png",
+      "file": "dist/assets/event-images/hayy-sounds-red-wind-sonic-residues-music-symposium-dd89e5c3e6.png",
+      "reason": "cached-file-missing"
+    },
+    {
       "source_url": "https://www.ithra.com/application/files/cache/thumbnails/e62a5dbedd618e4c73eba84cf1f7d03b.png",
-      "file": "dist/assets/event-images/bridges-to-the-spanish-language-daf5c5cc26.png",
+      "file": "dist/assets/event-images/الجسور-إلى-اللغة-الإسبانية-daf5c5cc26.png",
       "reason": "cached-file-missing"
     }
   ],
-  "skipped_recent_failures": [
-    {
-      "source_url": "https://s7g10.scene7.com/is/image/rcu/stargazing-at-alula-fort:landscape-16x9?$Responsive$&fit=stretch&fmt=webp&wid=1920",
-      "events": 1,
-      "reason": "HTTP 403",
-      "failure_kind": "access-denied",
-      "retry_after": "2026-10-01T10:51:43.336Z",
-      "skipped": true
-    },
-    {
-      "source_url": "https://s7g10.scene7.com/is/image/rcu/sunset-stillness-meditation-sound-immersion:landscape-16x9?$Responsive$&fit=stretch&fmt=webp&wid=1920",
-      "events": 1,
-      "reason": "HTTP 403",
-      "failure_kind": "access-denied",
-      "retry_after": "2026-10-01T10:51:43.336Z",
-      "skipped": true
-    },
-    {
-      "source_url": "https://s7g10.scene7.com/is/image/rcu/leonid-meteor-shower-at-jabal-ikmah:landscape-16x9?$Responsive$&fit=stretch&fmt=webp&wid=1920",
-      "events": 1,
-      "reason": "HTTP 403",
-      "failure_kind": "access-denied",
-      "retry_after": "2026-10-01T10:51:43.336Z",
-      "skipped": true
-    },
-    {
-      "source_url": "https://s7g10.scene7.com/is/image/rcu/fei2:landscape-16x9?$Responsive$&fit=stretch&fmt=webp&wid=1920",
-      "events": 1,
-      "reason": "HTTP 403",
-      "failure_kind": "access-denied",
-      "retry_after": "2026-10-01T10:51:43.336Z",
-      "skipped": true
-    },
-    {
-      "source_url": "https://api.riyadh.sa/sites/default/files/styles/medium/public/2026-07/er%20%2859%29.jpg?itok=a33APdGm",
-      "events": 1,
-      "reason": "not-image text/html; charset=utf-8",
-      "failure_kind": "source-returned-html",
-      "retry_after": "2026-10-01T10:51:43.336Z",
-      "skipped": true
-    },
-    {
-      "source_url": "https://cdn.rfecc.sa/wp-content/uploads/mec/qr_898ea2449274454e42895b52b18c6f68.png",
-      "events": 1,
-      "reason": "HTTP 403",
-      "failure_kind": "access-denied",
-      "retry_after": "2026-10-01T10:51:43.336Z",
-      "skipped": true
-    }
-  ],
+  "skipped_recent_failures": [],
   "failed": [
     {
-      "source_url": "https://s7g10.scene7.com/is/image/rcu/stargazing-at-alula-fort:landscape-16x9?$Responsive$&fit=stretch&fmt=webp&wid=1920",
-      "events": 1,
-      "reason": "HTTP 403",
-      "failure_kind": "access-denied",
-      "retry_after": "2026-10-01T10:51:43.336Z",
-      "skipped": true
-    },
-    {
       "source_url": "https://s7g10.scene7.com/is/image/rcu/sunset-stillness-meditation-sound-immersion:landscape-16x9?$Responsive$&fit=stretch&fmt=webp&wid=1920",
       "events": 1,
       "reason": "HTTP 403",
       "failure_kind": "access-denied",
-      "retry_after": "2026-10-01T10:51:43.336Z",
-      "skipped": true
+      "retry_after": "2026-10-03T09:13:43.992Z"
+    },
+    {
+      "source_url": "https://s7g10.scene7.com/is/image/rcu/stargazing-at-alula-fort:landscape-16x9?$Responsive$&fit=stretch&fmt=webp&wid=1920",
+      "events": 1,
+      "reason": "HTTP 403",
+      "failure_kind": "access-denied",
+      "retry_after": "2026-10-03T09:13:43.992Z"
     },
     {
       "source_url": "https://s7g10.scene7.com/is/image/rcu/leonid-meteor-shower-at-jabal-ikmah:landscape-16x9?$Responsive$&fit=stretch&fmt=webp&wid=1920",
       "events": 1,
       "reason": "HTTP 403",
       "failure_kind": "access-denied",
-      "retry_after": "2026-10-01T10:51:43.336Z",
-      "skipped": true
+      "retry_after": "2026-10-03T09:13:43.992Z"
     },
     {
       "source_url": "https://s7g10.scene7.com/is/image/rcu/fei2:landscape-16x9?$Responsive$&fit=stretch&fmt=webp&wid=1920",
       "events": 1,
       "reason": "HTTP 403",
       "failure_kind": "access-denied",
-      "retry_after": "2026-10-01T10:51:43.336Z",
-      "skipped": true
-    },
-    {
-      "source_url": "https://api.riyadh.sa/sites/default/files/styles/medium/public/2026-07/er%20%2859%29.jpg?itok=a33APdGm",
-      "events": 1,
-      "reason": "not-image text/html; charset=utf-8",
-      "failure_kind": "source-returned-html",
-      "retry_after": "2026-10-01T10:51:43.336Z",
-      "skipped": true
+      "retry_after": "2026-10-03T09:13:43.992Z"
     },
     {
       "source_url": "https://cdn.rfecc.sa/wp-content/uploads/mec/qr_898ea2449274454e42895b52b18c6f68.png",
       "events": 1,
       "reason": "HTTP 403",
       "failure_kind": "access-denied",
-      "retry_after": "2026-10-01T10:51:43.336Z",
-      "skipped": true
+      "retry_after": "2026-10-03T09:13:43.992Z"
+    },
+    {
+      "source_url": "https://api.riyadh.sa/sites/default/files/styles/medium/public/2026-07/er%20%2859%29.jpg?itok=a33APdGm",
+      "events": 1,
+      "reason": "not-image text/html; charset=utf-8",
+      "failure_kind": "source-returned-html",
+      "retry_after": "2026-10-03T09:13:43.992Z"
     }
   ],
   "requires_rebuild": true,
   "rebuild_reasons": [
-    "fetched:6",
-    "missing-removed:5"
+    "fetched:9",
+    "missing-removed:6",
+    "new-failures:6"
   ]
 }

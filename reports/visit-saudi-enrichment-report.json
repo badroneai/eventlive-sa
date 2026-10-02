@@ -1,13 +1,13 @@
 {
-  "generated_at": "2026-10-01T09:11:32.060Z",
+  "generated_at": "2026-10-02T09:09:04.691Z",
   "catalog": "data/events_catalog.json",
   "source": "Visit Saudi Calendar",
   "totals": {
-    "targets": 48,
+    "targets": 49,
     "candidates": 16,
-    "enriched": 48,
-    "fetched": 48,
-    "images": 46,
+    "enriched": 49,
+    "fetched": 49,
+    "images": 47,
     "fetch_failures": 0
   },
   "enriched": [
@@ -368,6 +368,14 @@
       "title": "Saudi Falcon Cup",
       "source_method": "official-page-html",
       "image_url": "https://www.visitsaudi.com/content/dam/wvs/calendar/saudi-falcon-cup-new.jpg",
+      "fetched": true,
+      "features": 7
+    },
+    {
+      "id": "event-in-act-act-xii-new-years-eve",
+      "title": "IN ACT - ACT XII - NEW YEAR'S EVE",
+      "source_method": "official-page-html",
+      "image_url": "https://www.visitsaudi.com/content/dam/wvs/calendar/in-act-act-xii-new-year.jpg",
       "fetched": true,
       "features": 7
     },

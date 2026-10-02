@@ -1,17 +1,12 @@
 {
   "schema": "eventlive.i18n-en-surface.v1",
-  "generated_at": "2026-10-01T09:28:03.892Z",
-  "pages_scanned": 1879,
-  "pages_with_arabic": 472,
+  "generated_at": "2026-10-02T09:22:47.545Z",
+  "pages_scanned": 1884,
+  "pages_with_arabic": 418,
   "template_regressions": [],
   "script_template_regressions": [],
   "style_template_regressions": [],
   "recurring_surface_debt": [
-    {
-      "text": "شعف",
-      "pages": 63,
-      "example": "categories/tourism-experiences.html"
-    },
     {
       "text": "../assets/event-images/الشهادة-الدولية-للحاسب-والإنترنت-ic3-a46ba6d2eb.jpg",
       "pages": 49,
@@ -19,6 +14,6 @@
       "script": true
     }
   ],
-  "recurring_total": 2,
-  "content_prose_lines": 2099
+  "recurring_total": 1,
+  "content_prose_lines": 2080
 }

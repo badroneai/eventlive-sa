@@ -1,16 +1,16 @@
 # EventLive Visit Saudi Image Identity Report
 
-- generated_at: 2026-10-01T09:09:48.145Z
-- pdf_crop_assignments: 33
-- verified: 29
+- generated_at: 2026-10-02T09:07:24.097Z
+- pdf_crop_assignments: 30
+- verified: 26
 - struck: 4
-- slots_seen_this_cycle: 31
+- slots_seen_this_cycle: 28
 
 ## Struck (fell back to generated cover)
 
-- مزرعة ركايب (visit-saudi-summer-2026-p024-bottom-right.jpg) - slot-vacated - no dated card currently occupies page 24 bottom-right of https://www.visitsaudi.com/content/dam/documents/saudi-calendar-ar.pdf
-- واحة عسيب (visit-saudi-summer-2026-p024-bottom-left.jpg) - slot-vacated - no dated card currently occupies page 24 bottom-left of https://www.visitsaudi.com/content/dam/documents/saudi-calendar-ar.pdf
-- مهابة (visit-saudi-summer-2026-p025-top-left.png) - slot-vacated - no dated card currently occupies page 25 top-left of https://www.visitsaudi.com/content/dam/documents/saudi-calendar-ar.pdf
+- بيوني الشرف (visit-saudi-summer-2026-p025-top-right.jpg) - slot-vacated - no dated card currently occupies page 25 top-right of https://www.visitsaudi.com/content/dam/documents/saudi-calendar-ar.pdf
+- شعف (visit-saudi-summer-2026-p025-bottom-left.jpg) - slot-vacated - no dated card currently occupies page 25 bottom-left of https://www.visitsaudi.com/content/dam/documents/saudi-calendar-ar.pdf
+- طوني أبو جودة في الرياض (visit-saudi-summer-2026-p061-bottom-left.jpg) - slot-vacated - no dated card currently occupies page 61 bottom-left of https://www.visitsaudi.com/content/dam/documents/saudi-calendar-ar.pdf
 - ألف وواحد (visit-saudi-summer-2026-p063-bottom-left.jpg) - identity-mismatch - page 63 bottom-left is now "وقف! عرض نمر الكوميدي المباشر في الرياض"
 
 ## Verified
@@ -20,16 +20,13 @@
 - كايف المزرعة (visit-saudi-summer-2026-p051-bottom-right.jpg)
 - معرض قلب البحر (visit-saudi-summer-2026-p004-top-right.png)
 - معرض في تتبّع ذكريات غامرة (visit-saudi-summer-2026-p004-top-left.png)
-- بيوني الشرف (visit-saudi-summer-2026-p025-top-right.jpg)
 - الاخطبوطية (visit-saudi-summer-2026-p052-top-right.jpg)
-- شعف (visit-saudi-summer-2026-p025-bottom-left.jpg)
 - بسطة القابل (visit-saudi-summer-2026-p026-top-right.jpg)
 - تجربة شاطئ قالو (visit-saudi-summer-2026-p004-bottom-left.jpg)
 - استمرارية 26 (visit-saudi-summer-2026-p052-top-left.jpg)
 - سيرك فونتانا (visit-saudi-summer-2026-p052-bottom-left.jpg)
 - دوري الملوك MENA (visit-saudi-summer-2026-p053-top-right.jpg)
 - كأس الخليج (visit-saudi-summer-2026-p007-bottom-right.jpg)
-- طوني أبو جودة في الرياض (visit-saudi-summer-2026-p061-bottom-left.jpg)
 - بي إف إل مينا 11 - نصف النهائي في الرياض (visit-saudi-summer-2026-p062-top-right.jpg)
 - IN ACT - ACT X (visit-saudi-summer-2026-p062-top-left.jpg)
 - عرض علاء الشيخ في الرياض (visit-saudi-summer-2026-p062-bottom-right.jpg)

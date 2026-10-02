@@ -1,18 +1,18 @@
 {
-  "published_at": "2026-10-01T09:09:44.555Z",
+  "published_at": "2026-10-02T09:07:20.519Z",
   "dry_run": false,
   "include_partner": true,
   "source_candidates": "data/source_candidates.json",
   "events_catalog": "data/events_catalog.json",
-  "candidates_seen": 414,
+  "candidates_seen": 406,
   "totals": {
-    "candidates_seen": 414,
-    "published": 1,
-    "linked_existing": 381,
+    "candidates_seen": 406,
+    "published": 5,
+    "linked_existing": 369,
     "blocked": 32,
     "duplicate_review_alerts": 3,
     "category_fallback_alerts": 0,
-    "reconciled": 382,
+    "reconciled": 374,
     "session_windows_reconciled": 0
   },
   "session_window_changes": [],
@@ -77,9 +77,29 @@
   ],
   "published": [
     {
-      "candidate_id": "candidate-hayy-jameel-events-hayy-sounds-red-wind-sonic-residues-music-symposium-20261022-47469fb3",
-      "event_id": "event-hayy-sounds-red-wind-sonic-residues-music-symposium",
-      "title": "Hayy Sounds | Red Wind, Sonic Residues Music Symposium"
+      "candidate_id": "candidate-umm-al-qura-events-ورشة-تدريبية-بعنوان-فكرتك-البحثية-من-أين-تبدأ؟-20261005-b7f83349",
+      "event_id": "event-ورشة-تدريبية-بعنوان-فكرتك-البحثية-من-أين-تبدأ؟",
+      "title": "ورشة تدريبية بعنوان (فكرتك البحثية.. من أين تبدأ؟)"
+    },
+    {
+      "candidate_id": "candidate-hayy-jameel-events-hayy-cinema-october-2026-20261007-84cc2d26",
+      "event_id": "event-hayy-cinema-october-2026",
+      "title": "Hayy Cinema | October 2026"
+    },
+    {
+      "candidate_id": "candidate-hayy-jameel-events-hayy-cinema-x-hayy-arts-between-destinations-short-films-artist-discussi-20261008-34c6b40c",
+      "event_id": "event-hayy-cinema-x-hayy-arts-between-destinations-short-films-artist-discussi",
+      "title": "Hayy Cinema x Hayy Arts | Between Destinations: Short Films & Artist Discussion"
+    },
+    {
+      "candidate_id": "candidate-hayy-jameel-events-hayy-makers-open-day-plastic-cap-mural-20261028-4cfad9e6",
+      "event_id": "event-hayy-makers-open-day-plastic-cap-mural",
+      "title": "Hayy Makers | Open Day: Plastic Cap Mural"
+    },
+    {
+      "candidate_id": "candidate-visit-saudi-calendar-in-act-act-xii-new-years-eve-20261231-2421333f",
+      "event_id": "event-in-act-act-xii-new-years-eve",
+      "title": "IN ACT - ACT XII - NEW YEAR'S EVE"
     }
   ],
   "linked_existing": [
@@ -228,33 +248,15 @@
       "reason": "already linked to catalog event"
     },
     {
-      "candidate_id": "candidate-visit-saudi-calendar-pdf-بيوني-الشرف-20260701-4a38d19e",
-      "event_id": "event-بيوني-الشرف",
-      "title": "بيوني الشرف",
-      "reason": "already linked to catalog event"
-    },
-    {
       "candidate_id": "candidate-discover-aseer-events-aanab-farm-20260701-12941803",
       "event_id": "event-aanab-farm",
       "title": "Aanab Farm",
       "reason": "already linked to catalog event"
     },
     {
-      "candidate_id": "candidate-hayy-jameel-events-hayy-explorers-as-told-by-the-land-20260702-09157ea4",
-      "event_id": "event-hayy-explorers",
-      "title": "Hayy Explorers | As Told by The Land",
-      "reason": "already linked to catalog event"
-    },
-    {
       "candidate_id": "candidate-visit-saudi-calendar-pdf-الاخطبوطية-20260704-4a38d19e",
       "event_id": "event-الأخطبوطية",
       "title": "الاخطبوطية",
-      "reason": "already linked to catalog event"
-    },
-    {
-      "candidate_id": "candidate-discover-aseer-events-bioni-al-sharaf-20260711-62339a98",
-      "event_id": "event-bioni-al-sharaf",
-      "title": "Bioni Al sharaf",
       "reason": "already linked to catalog event"
     },
     {
@@ -282,12 +284,6 @@
       "reason": "already linked to catalog event"
     },
     {
-      "candidate_id": "candidate-visit-saudi-calendar-pdf-شعف-20260722-4a38d19e",
-      "event_id": "event-شعف",
-      "title": "شعف",
-      "reason": "already linked to catalog event"
-    },
-    {
       "candidate_id": "candidate-visit-saudi-calendar-pdf-بسطة-القابل-20260722-4a38d19e",
       "event_id": "event-بسطة-القابل",
       "title": "بسطة القابل",
@@ -309,12 +305,6 @@
       "candidate_id": "candidate-tuwaiq-academy-bootcamps-معسكر-طويق-للقطاع-الأمني-تطوير-البرمجيات-20260802-9bb9ff4b",
       "event_id": "event-معسكر-طويق-للقطاع-الأمني-تطوير-البرمجيات",
       "title": "معسكر طويق للقطاع الأمني: تطوير البرمجيات",
-      "reason": "already linked to catalog event"
-    },
-    {
-      "candidate_id": "candidate-tuwaiq-academy-bootcamps-معسكر-طويق-للقطاع-الأمني-البنية-التحتية-20260802-2aaabcfd",
-      "event_id": "event-معسكر-طويق-للقطاع-الأمني-البنية-التحتية",
-      "title": "معسكر طويق للقطاع الأمني: البنية التحتية",
       "reason": "already linked to catalog event"
     },
     {
@@ -618,12 +608,6 @@
       "reason": "already linked to catalog event"
     },
     {
-      "candidate_id": "candidate-hayy-jameel-events-hayy-explorers-as-told-by-the-land-constructed-worlds-20260910-5d727028",
-      "event_id": "event-hayy-explorers-in-september-as-told-by-the-land-constructed-worlds",
-      "title": "Hayy Explorers | As Told by the Land: Constructed Worlds",
-      "reason": "already linked to catalog event"
-    },
-    {
       "candidate_id": "candidate-hayy-jameel-events-hayy-explorers-recess-showcase-time-reflected-on-water-20260912-7a95a5fa",
       "event_id": "event-recess-showcase-time-reflected-on-water",
       "title": "Hayy Explorers | Recess Showcase: Time Reflected on Water",
@@ -714,27 +698,9 @@
       "reason": "already linked to catalog event"
     },
     {
-      "candidate_id": "candidate-future-skills-catalog-introduction-to-apis-and-web-services-20260927-a69aa1c2",
-      "event_id": "event-introduction-to-apis-and-web-services",
-      "title": "Introduction to APIs and Web Services",
-      "reason": "already linked to catalog event"
-    },
-    {
-      "candidate_id": "candidate-umm-al-qura-events-شهادة-محترف-الأعمال-المعتمد-في-إدارة-الفعاليات-والحشود-cbp-ecm-20260927-c05f2fad",
-      "event_id": "event-شهادة-محترف-الأعمال-المعتمد-في-إدارة-الفعاليات-والحشود-cbp-ecm",
-      "title": "شهادة محترف الأعمال المعتمد في إدارة الفعاليات والحشود CBP-ECM",
-      "reason": "already linked to catalog event"
-    },
-    {
       "candidate_id": "candidate-tuwaiq-academy-bootcamps-معسكر-التقنيات-الناشئة-والعوالم-الافتراضية-20260927-0647b188",
       "event_id": "event-معسكر-التقنيات-الناشئة-والعوالم-الافتراضية",
       "title": "معسكر التقنيات الناشئة والعوالم الافتراضية",
-      "reason": "already linked to catalog event"
-    },
-    {
-      "candidate_id": "candidate-saudi-university-events-join-the-kaust-blood-donation-campaign-20260927-599f6ce4",
-      "event_id": "event-join-the-kaust-blood-donation-campaign",
-      "title": "Join the KAUST Blood Donation Campaign",
       "reason": "already linked to catalog event"
     },
     {
@@ -750,27 +716,9 @@
       "reason": "already linked to catalog event"
     },
     {
-      "candidate_id": "candidate-riyadh-city-events-icegov-international-conference-on-electronic-governance-20260928-db0f9390",
-      "event_id": "event-icegov-international-conference-on-electronic-governance",
-      "title": "ICEGOV – International Conference on Electronic Governance",
-      "reason": "already linked to catalog event"
-    },
-    {
       "candidate_id": "candidate-umm-al-qura-events-قسم-الفيزياء-يشارك-في-حفل-الكلية-الجامعية-بالليث-بمناسبة-اليوم-الوطني-ال-20260930-b86b21b9",
       "event_id": "event-قسم-الفيزياء-يشارك-في-حفل-الكلية-الجامعية-بالليث-بمناسبة-اليوم-الوطني-ال",
       "title": "قسم الفيزياء يشارك في حفل الكلية الجامعية بالليث بمناسبة اليوم الوطني السعودي الـ96",
-      "reason": "already linked to catalog event"
-    },
-    {
-      "candidate_id": "candidate-mdlbeast-events-unstable-20261001-5647df2e",
-      "event_id": "event-unstable",
-      "title": "Unstable",
-      "reason": "already linked to catalog event"
-    },
-    {
-      "candidate_id": "candidate-visit-saudi-calendar-pdf-طوني-أبو-جودة-في-الرياض-20261001-4a38d19e",
-      "event_id": "event-طوني-أبو-جودة-في-الرياض",
-      "title": "طوني أبو جودة في الرياض",
       "reason": "already linked to catalog event"
     },
     {
@@ -786,81 +734,9 @@
       "reason": "already linked to catalog event"
     },
     {
-      "candidate_id": "candidate-ithra-events-tinkering-stations-20261001-5a2c4c0e",
-      "event_id": "event-tinkering-stations",
-      "title": "Tinkering Stations",
-      "reason": "already linked to catalog event"
-    },
-    {
-      "candidate_id": "candidate-ithra-events-bedayat-beginnings-of-saudi-art-movement-20261001-e0a239ef",
-      "event_id": "event-bedayat-beginnings-of-saudi-art-movement",
-      "title": "Bedayat: Beginnings of Saudi Art Movement",
-      "reason": "already linked to catalog event"
-    },
-    {
-      "candidate_id": "candidate-ithra-events-ithra-art-prize-exhibition-20261001-83c2ab55",
-      "event_id": "event-ithra-art-prize-exhibition",
-      "title": "Ithra Art Prize Exhibition",
-      "reason": "already linked to catalog event"
-    },
-    {
-      "candidate_id": "candidate-ithra-events-printing-house-20261001-e56f4f89",
-      "event_id": "event-printing-house",
-      "title": "Printing House",
-      "reason": "already linked to catalog event"
-    },
-    {
-      "candidate_id": "candidate-ithra-events-tafasahu-make-room-20261001-562bc61d",
-      "event_id": "event-tafasahu-make-room",
-      "title": "Tafasahu: Make Room",
-      "reason": "already linked to catalog event"
-    },
-    {
-      "candidate_id": "candidate-ithra-events-grand-art-space-20261001-e3acefbb",
-      "event_id": "event-grand-art-space",
-      "title": "Grand Art Space",
-      "reason": "trusted duplicate linked to existing catalog event"
-    },
-    {
-      "candidate_id": "candidate-ithra-events-spot-of-inspiration-20261001-5bac584c",
-      "event_id": "event-spot-of-inspiration",
-      "title": "Spot of Inspiration",
-      "reason": "already linked to catalog event"
-    },
-    {
-      "candidate_id": "candidate-ithra-events-childrens-art-studio-20261001-2bf92d17",
-      "event_id": "event-childrens-art-studio",
-      "title": "Children's Art Studio",
-      "reason": "already linked to catalog event"
-    },
-    {
       "candidate_id": "candidate-visit-saudi-seasons-saudi-international-falcons-hunting-exhibition-20261001-a4f29b73",
       "event_id": "event-saudi-international-falcons-hunting-exhibition",
       "title": "Saudi International Falcons & Hunting Exhibition",
-      "reason": "already linked to catalog event"
-    },
-    {
-      "candidate_id": "candidate-ithra-events-on-this-carpet-20261001-2972e041",
-      "event_id": "event-on-this-carpet",
-      "title": "On This Carpet",
-      "reason": "already linked to catalog event"
-    },
-    {
-      "candidate_id": "candidate-ithra-events-emboss-printing-experience-20261001-2671d1ce",
-      "event_id": "event-emboss-printing-experience",
-      "title": "Emboss Printing Experience",
-      "reason": "already linked to catalog event"
-    },
-    {
-      "candidate_id": "candidate-ithra-events-family-challenges-20261001-3726c868",
-      "event_id": "event-family-challenges",
-      "title": "Family Challenges",
-      "reason": "already linked to catalog event"
-    },
-    {
-      "candidate_id": "candidate-ithra-events-childrens-museum-story-time-20261001-ada8b9db",
-      "event_id": "event-childrens-museum-story-time",
-      "title": "Children's Museum Story Time",
       "reason": "already linked to catalog event"
     },
     {
@@ -870,93 +746,39 @@
       "reason": "already linked to catalog event"
     },
     {
-      "candidate_id": "candidate-ithra-events-little-explorers-20261001-1cc1993f",
-      "event_id": "event-little-explorers",
-      "title": "Little Explorers",
-      "reason": "already linked to catalog event"
-    },
-    {
-      "candidate_id": "candidate-ithra-events-adventure-around-the-kingdom-20261001-0217cd1b",
-      "event_id": "event-adventure-around-the-kingdom",
-      "title": "Adventure Around the Kingdom",
-      "reason": "already linked to catalog event"
-    },
-    {
-      "candidate_id": "candidate-ithra-events-treasure-hunt-20261001-3984a48b",
-      "event_id": "event-treasure-hunt",
-      "title": "Treasure Hunt",
-      "reason": "already linked to catalog event"
-    },
-    {
-      "candidate_id": "candidate-ithra-events-trivia-night-energy-memory-20261001-0b124a27",
-      "event_id": "event-trivia-night-energy-memory",
-      "title": "Trivia Night - Energy Memory",
-      "reason": "already linked to catalog event"
-    },
-    {
-      "candidate_id": "candidate-ithra-events-games-hub-20261001-fb83124c",
-      "event_id": "event-games-hub",
-      "title": "Games Hub",
-      "reason": "already linked to catalog event"
-    },
-    {
-      "candidate_id": "candidate-ithra-events-the-playful-art-of-critical-thinking-20261001-433638cb",
-      "event_id": "event-the-playful-art-of-critical-thinking",
-      "title": "The Playful Art Of Critical Thinking",
-      "reason": "already linked to catalog event"
-    },
-    {
-      "candidate_id": "candidate-ithra-events-the-moral-of-the-story-20261001-bfa3f2a8",
-      "event_id": "event-the-moral-of-the-story",
-      "title": "The Moral of the Story",
-      "reason": "already linked to catalog event"
-    },
-    {
-      "candidate_id": "candidate-ithra-events-marine-missions-20261001-5739b78e",
-      "event_id": "event-marine-missions",
-      "title": "Marine Missions",
-      "reason": "already linked to catalog event"
-    },
-    {
-      "candidate_id": "candidate-ithra-events-imagination-oasis-20261001-104f8079",
-      "event_id": "event-imagination-oasis",
-      "title": "Imagination Oasis",
-      "reason": "already linked to catalog event"
-    },
-    {
-      "candidate_id": "candidate-hayy-jameel-events-hayy-makers-creative-nights-20261001-741ef67e",
-      "event_id": "event-hayy-makers-creative-nights",
-      "title": "Hayy Makers | Creative Nights",
-      "reason": "already linked to catalog event"
-    },
-    {
       "candidate_id": "candidate-visit-saudi-seasons-saudi-falcons-club-auction-20261001-4e016ab8",
       "event_id": "event-saudi-falcons-club-auction",
       "title": "Saudi Falcons Club Auction",
       "reason": "already linked to catalog event"
     },
     {
-      "candidate_id": "candidate-ithra-events-museum-story-time-20261001-1104734c",
-      "event_id": "event-museum-story-time",
-      "title": "Museum Story Time",
-      "reason": "already linked to catalog event"
-    },
-    {
-      "candidate_id": "candidate-visit-saudi-calendar-tony-abou-jaoude-live-in-riyadh-20261001-559eba2b",
-      "event_id": "event-tony-abou-jaoude-live-in-riyadh",
-      "title": "Tony Abou Jaoude Live in Riyadh",
-      "reason": "already linked to catalog event"
-    },
-    {
-      "candidate_id": "candidate-mdlbeast-events-beast-house-20261001-83049a2a",
-      "event_id": "event-beast-house",
-      "title": "Beast House",
-      "reason": "already linked to catalog event"
-    },
-    {
       "candidate_id": "candidate-visit-saudi-calendar-pdf-بي-إف-إل-مينا-11-نصف-النهائي-في-الرياض-20261002-4a38d19e",
       "event_id": "event-بي-إف-إل-مينا-11-نصف-النهائي-في-الرياض",
       "title": "بي إف إل مينا 11 - نصف النهائي في الرياض",
+      "reason": "already linked to catalog event"
+    },
+    {
+      "candidate_id": "candidate-ithra-events-bedayat-beginnings-of-saudi-art-movement-20261002-e0a239ef",
+      "event_id": "event-bedayat-beginnings-of-saudi-art-movement",
+      "title": "Bedayat: Beginnings of Saudi Art Movement",
+      "reason": "already linked to catalog event"
+    },
+    {
+      "candidate_id": "candidate-ithra-events-printing-house-20261002-e56f4f89",
+      "event_id": "event-printing-house",
+      "title": "Printing House",
+      "reason": "already linked to catalog event"
+    },
+    {
+      "candidate_id": "candidate-ithra-events-tafasahu-make-room-20261002-562bc61d",
+      "event_id": "event-tafasahu-make-room",
+      "title": "Tafasahu: Make Room",
+      "reason": "already linked to catalog event"
+    },
+    {
+      "candidate_id": "candidate-ithra-events-tinkering-stations-20261002-5a2c4c0e",
+      "event_id": "event-tinkering-stations",
+      "title": "Tinkering Stations",
       "reason": "already linked to catalog event"
     },
     {
@@ -969,7 +791,49 @@
       "candidate_id": "candidate-ithra-events-paint-like-an-artist-20261002-a67d8ec3",
       "event_id": "event-paint-like-an-artist",
       "title": "Paint Like an Artist",
-      "reason": "trusted duplicate linked to existing catalog event"
+      "reason": "already linked to catalog event"
+    },
+    {
+      "candidate_id": "candidate-ithra-events-adventure-around-the-kingdom-20261002-0217cd1b",
+      "event_id": "event-adventure-around-the-kingdom",
+      "title": "Adventure Around the Kingdom",
+      "reason": "already linked to catalog event"
+    },
+    {
+      "candidate_id": "candidate-ithra-events-ithra-art-prize-exhibition-20261002-83c2ab55",
+      "event_id": "event-ithra-art-prize-exhibition",
+      "title": "Ithra Art Prize Exhibition",
+      "reason": "already linked to catalog event"
+    },
+    {
+      "candidate_id": "candidate-ithra-events-treasure-hunt-20261002-3984a48b",
+      "event_id": "event-treasure-hunt",
+      "title": "Treasure Hunt",
+      "reason": "already linked to catalog event"
+    },
+    {
+      "candidate_id": "candidate-ithra-events-trivia-night-energy-memory-20261002-0b124a27",
+      "event_id": "event-trivia-night-energy-memory",
+      "title": "Trivia Night - Energy Memory",
+      "reason": "already linked to catalog event"
+    },
+    {
+      "candidate_id": "candidate-ithra-events-childrens-art-studio-20261002-2bf92d17",
+      "event_id": "event-childrens-art-studio",
+      "title": "Children's Art Studio",
+      "reason": "already linked to catalog event"
+    },
+    {
+      "candidate_id": "candidate-ithra-events-games-hub-20261002-fb83124c",
+      "event_id": "event-games-hub",
+      "title": "Games Hub",
+      "reason": "already linked to catalog event"
+    },
+    {
+      "candidate_id": "candidate-ithra-events-the-playful-art-of-critical-thinking-20261002-433638cb",
+      "event_id": "event-the-playful-art-of-critical-thinking",
+      "title": "The Playful Art Of Critical Thinking",
+      "reason": "already linked to catalog event"
     },
     {
       "candidate_id": "candidate-ithra-events-stories-from-ithras-library-20261002-4116de16",
@@ -981,6 +845,30 @@
       "candidate_id": "candidate-ithra-events-an-experience-with-an-artist-20261002-1395e478",
       "event_id": "event-an-experience-with-an-artist",
       "title": "An Experience with an Artist",
+      "reason": "already linked to catalog event"
+    },
+    {
+      "candidate_id": "candidate-ithra-events-imagination-oasis-20261002-104f8079",
+      "event_id": "event-imagination-oasis",
+      "title": "Imagination Oasis",
+      "reason": "already linked to catalog event"
+    },
+    {
+      "candidate_id": "candidate-ithra-events-marine-missions-20261002-5739b78e",
+      "event_id": "event-marine-missions",
+      "title": "Marine Missions",
+      "reason": "already linked to catalog event"
+    },
+    {
+      "candidate_id": "candidate-ithra-events-spot-of-inspiration-20261002-5bac584c",
+      "event_id": "event-spot-of-inspiration",
+      "title": "Spot of Inspiration",
+      "reason": "already linked to catalog event"
+    },
+    {
+      "candidate_id": "candidate-ithra-events-childrens-museum-story-time-20261002-ada8b9db",
+      "event_id": "event-childrens-museum-story-time",
+      "title": "Children's Museum Story Time",
       "reason": "already linked to catalog event"
     },
     {
@@ -999,6 +887,24 @@
       "candidate_id": "candidate-ithra-events-family-game-20261002-a30cabbd",
       "event_id": "event-family-game",
       "title": "Family Game",
+      "reason": "already linked to catalog event"
+    },
+    {
+      "candidate_id": "candidate-ithra-events-emboss-printing-experience-20261002-2671d1ce",
+      "event_id": "event-emboss-printing-experience",
+      "title": "Emboss Printing Experience",
+      "reason": "already linked to catalog event"
+    },
+    {
+      "candidate_id": "candidate-ithra-events-family-challenges-20261002-3726c868",
+      "event_id": "event-family-challenges",
+      "title": "Family Challenges",
+      "reason": "already linked to catalog event"
+    },
+    {
+      "candidate_id": "candidate-ithra-events-museum-story-time-20261002-1104734c",
+      "event_id": "event-museum-story-time",
+      "title": "Museum Story Time",
       "reason": "already linked to catalog event"
     },
     {
@@ -1086,6 +992,12 @@
       "reason": "already linked to catalog event"
     },
     {
+      "candidate_id": "candidate-hayy-jameel-events-hayy-makers-introduction-to-pottery-course-with-pharah-al-ghalib-20261004-3f18bab0",
+      "event_id": "event-hayy-makers-2",
+      "title": "Hayy Makers | Introduction to Pottery Course with Pharah Al-Ghalib",
+      "reason": "trusted duplicate linked to existing catalog event"
+    },
+    {
       "candidate_id": "candidate-tuwaiq-academy-bootcamps-معسكر-الدرونز-عالية-الأداء-20261004-c428ead9",
       "event_id": "event-معسكر-الدرونز-عالية-الأداء",
       "title": "معسكر الدرونز عالية الأداء",
@@ -1158,6 +1070,12 @@
       "reason": "already linked to catalog event"
     },
     {
+      "candidate_id": "candidate-ithra-events-bridges-to-the-spanish-language-20261005-4dfe9de2",
+      "event_id": "event-bridges-to-the-spanish-language",
+      "title": "Bridges to the Spanish Language",
+      "reason": "already linked to catalog event"
+    },
+    {
       "candidate_id": "candidate-saudi-university-events-pse-deans-distinguished-speaker-seminar-20261006-8a410e31",
       "event_id": "event-pse-deans-distinguished-speaker-seminar",
       "title": "PSE Dean’s Distinguished Speaker Seminar",
@@ -1212,6 +1130,18 @@
       "reason": "already linked to catalog event"
     },
     {
+      "candidate_id": "candidate-ithra-events-on-this-carpet-20261008-2972e041",
+      "event_id": "event-on-this-carpet",
+      "title": "On This Carpet",
+      "reason": "already linked to catalog event"
+    },
+    {
+      "candidate_id": "candidate-ithra-events-little-explorers-20261008-1cc1993f",
+      "event_id": "event-little-explorers",
+      "title": "Little Explorers",
+      "reason": "already linked to catalog event"
+    },
+    {
       "candidate_id": "candidate-ithra-events-energy-in-motion-20261008-e0404048",
       "event_id": "event-energy-in-motion",
       "title": "Energy in Motion",
@@ -1224,6 +1154,12 @@
       "reason": "already linked to catalog event"
     },
     {
+      "candidate_id": "candidate-ithra-events-the-moral-of-the-story-20261008-bfa3f2a8",
+      "event_id": "event-the-moral-of-the-story",
+      "title": "The Moral of the Story",
+      "reason": "already linked to catalog event"
+    },
+    {
       "candidate_id": "candidate-visit-saudi-calendar-pdf-in-act-act-x-20261009-4a38d19e",
       "event_id": "event-in-act-act-x",
       "title": "IN ACT - ACT X",
@@ -1233,6 +1169,12 @@
       "candidate_id": "candidate-ithra-events-survival-journey-20261009-4fd1e78d",
       "event_id": "event-survival-journey",
       "title": "Survival Journey",
+      "reason": "already linked to catalog event"
+    },
+    {
+      "candidate_id": "candidate-ithra-events-grand-art-space-20261009-e3acefbb",
+      "event_id": "event-grand-art-space",
+      "title": "Grand Art Space",
       "reason": "already linked to catalog event"
     },
     {
@@ -1258,6 +1200,12 @@
       "event_id": "event-nu-power",
       "title": "Nu-Power",
       "reason": "already linked to catalog event"
+    },
+    {
+      "candidate_id": "candidate-hayy-jameel-events-hayy-makers-woodworking-course-level-1-with-ahmad-sofi-20261010-fe162909",
+      "event_id": "event-hayy-makers-woodworking-course-level-1-with-ahmad-sofi",
+      "title": "Hayy Makers | Woodworking Course (Level 1) with Ahmad Sofi",
+      "reason": "trusted duplicate linked to existing catalog event"
     },
     {
       "candidate_id": "candidate-riyadh-city-events-wpc-energy-congress-20261011-1602e535",
@@ -1311,19 +1259,13 @@
       "candidate_id": "candidate-ithra-events-open-art-space-20261012-ac79cac6",
       "event_id": "event-open-art-space-2",
       "title": "Open Art Space",
-      "reason": "trusted duplicate linked to existing catalog event"
-    },
-    {
-      "candidate_id": "candidate-ithra-events-bridges-to-the-spanish-language-20261012-4dfe9de2",
-      "event_id": "event-bridges-to-the-spanish-language",
-      "title": "Bridges to the Spanish Language",
       "reason": "already linked to catalog event"
     },
     {
       "candidate_id": "candidate-ithra-events-toddler-tuesday-20261013-1afead7d",
       "event_id": "event-toddler-tuesday",
       "title": "Toddler Tuesday",
-      "reason": "trusted duplicate linked to existing catalog event"
+      "reason": "already linked to catalog event"
     },
     {
       "candidate_id": "candidate-qassim-chamber-events-التقنيات-المستقبلية-20261013-73236fca",
@@ -1461,6 +1403,12 @@
       "candidate_id": "candidate-visit-saudi-calendar-pdf-لحد-يدري-عرض-ستاند-اب-كوميدي-من-أسامة-بازيد-20261022-4a38d19e",
       "event_id": "event-لحد-يدري-عرض-ستاند-اب-كوميدي-من-أسامة-بازيد",
       "title": "لحد يدري: عرض ستاند اب كوميدي من أسامة بازيد",
+      "reason": "already linked to catalog event"
+    },
+    {
+      "candidate_id": "candidate-hayy-jameel-events-hayy-sounds-red-wind-sonic-residues-music-symposium-20261022-47469fb3",
+      "event_id": "event-hayy-sounds-red-wind-sonic-residues-music-symposium",
+      "title": "Hayy Sounds | Red Wind, Sonic Residues Music Symposium",
       "reason": "already linked to catalog event"
     },
     {
