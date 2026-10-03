@@ -1,26 +1,514 @@
 {
   "schema": "eventlive.source-browser-probe-checkpoint.v1",
-  "checkpointed_at": "2026-10-02T08:51:29.353Z",
-  "generated_at": "2026-10-02T08:51:18.963Z",
+  "checkpointed_at": "2026-10-03T08:15:24.945Z",
+  "generated_at": "2026-10-03T08:14:40.511Z",
   "source_registry": "data/source_registry.json",
   "output_dir": "data/raw/browser-probes",
-  "sources_planned": 1,
-  "sources_completed": 1,
+  "sources_planned": 3,
+  "sources_completed": 3,
   "totals": {
-    "probed": 1,
-    "browser_network_api": 0,
+    "probed": 3,
+    "browser_network_api": 1,
     "browser_hydration_payload": 0,
-    "rendered_html_candidates": 1,
+    "rendered_html_candidates": 2,
     "blocked_or_protected": 0,
     "policy_skipped": 0
   },
   "completed_ids": [
+    "mdlbeast-events",
+    "future-skills-catalog",
     "riyadh-city-events"
   ],
   "sources": [
     {
+      "id": "mdlbeast-events",
+      "probed_at": "2026-10-03T08:14:52.991Z",
+      "name": "MDLBEAST Events",
+      "priority": 8,
+      "url": "https://mdlbeast.com/events",
+      "final_url": "https://mdlbeast.com/events",
+      "status": "ok",
+      "http_status": 200,
+      "navigation_error": "",
+      "duration_ms": 10906,
+      "classification": "browser-network-api",
+      "next_action": "ثبت endpoint مرشحًا كجامع مباشر، ثم اكتب extractor من JSON مع اختبار انحدار.",
+      "title": "MDLBEAST Events Calendar - Discover Now | MDLBEAST",
+      "text_bytes": 2883,
+      "html_bytes": 387961,
+      "html_snapshot": "data/raw/browser-probes/mdlbeast-events-2026-10-03T08-14-40-511Z.html",
+      "screenshot": "data/raw/browser-probes/mdlbeast-events-2026-10-03T08-14-40-511Z.png",
+      "signals": {
+        "has_next_data": true,
+        "has_nuxt": false,
+        "has_json_ld": false,
+        "has_event_schema": false,
+        "date_snippets": [
+          "e, discover, and dance. PAST EVENTS THU 01 OCT 2026 BEAST HOUSE In Riyadh THU 01 OCT 2026 - FRI 02 OCT 2026 UNSTABLE In Riyadh FRI",
+          "04 SEP 2026 - SAT 05 SEP 2026 MDLBEAST RADIO MIXTAPE In Riyadh THU 05 FEB 2026 - FRI 06 FEB 2026 BALAD BEAST",
+          "2026 In Jeddah THU 11 DEC 2025 - SAT 13 DEC 2025 SOUNDSTORM 25 In Riyadh THU 04 DEC 2025 - SAT 06 DEC 2025 XP MUSIC FUTURES 2025",
+          "In Riyadh THU 25 SEP 2025 - FRI 26 SEP 2025 AZIMUTH 2025 In Alula THU 25 SEP 2025 - FRI 26 SEP 2025 BALAD SOCIAL In Jeddah",
+          "MON 04 AUG 2025 BEAST HOUSE PRESENTS GHOSTLY KISSES In Riyadh FRI 18 JUL 2025 - THU 07 AUG 2025",
+          "AFT_R In Riyadh THU 17 JUL 2025 - FRI 08 AUG 2025 ONYX ARENA In Jeddah FRI 23 MAY 2025 MDLBEAST PRESENTS: GUNS N' ROSES In Riyadh",
+          "SAT 17 MAY 2025 - SUN 18 MAY 2025 HOUSE BLEND In Riyadh THU 24 APR 2025 - FRI 25 APR 2025 A THOUSAND AND ONE 2025",
+          "In Riyadh FRI 18 APR 2025 - SUN 20 APR 2025 FORMULA 1 STC SAUDI ARABIAN GRAND PRIX 2025 In Jeddah FRI 04 APR 2025 MOJA In J"
+        ],
+        "event_like_links": [
+          {
+            "text": "THU 01 OCT 2026\n\nBEAST HOUSE\n\nIn Riyadh",
+            "href": "https://mdlbeast.com/events/beast-house"
+          },
+          {
+            "text": "THU 01 OCT 2026 - FRI 02 OCT 2026\n\nUNSTABLE\n\nIn Riyadh",
+            "href": "https://mdlbeast.com/events/unstable"
+          },
+          {
+            "text": "FRI 04 SEP 2026 - SAT 05 SEP 2026\n\nMDLBEAST RADIO MIXTAPE\n\nIn Riyadh",
+            "href": "https://mdlbeast.com/events/mdlbeast-radio-mixtape"
+          },
+          {
+            "text": "THU 05 FEB 2026 - FRI 06 FEB 2026\n\nBALAD BEAST 2026\n\nIn Jeddah",
+            "href": "https://mdlbeast.com/events/balad-beast-2026"
+          },
+          {
+            "text": "THU 11 DEC 2025 - SAT 13 DEC 2025\n\nSOUNDSTORM 25 \n\nIn Riyadh",
+            "href": "https://mdlbeast.com/events/soundstorm-25"
+          },
+          {
+            "text": "THU 04 DEC 2025 - SAT 06 DEC 2025\n\nXP MUSIC FUTURES 2025\n\nIn Riyadh",
+            "href": "https://mdlbeast.com/events/xp-music-futures-25"
+          },
+          {
+            "text": "THU 25 SEP 2025 - FRI 26 SEP 2025\n\nAZIMUTH 2025\n\nIn Alula",
+            "href": "https://mdlbeast.com/events/azimuth-2025"
+          },
+          {
+            "text": "THU 25 SEP 2025 - FRI 26 SEP 2025\n\nBALAD SOCIAL\n\nIn Jeddah",
+            "href": "https://mdlbeast.com/events/balad-social"
+          },
+          {
+            "text": "MON 04 AUG 2025\n\nBEAST HOUSE PRESENTS GHOSTLY KISSES \n\nIn Riyadh",
+            "href": "https://mdlbeast.com/events/beast-house-presents-ghostly-kisses"
+          },
+          {
+            "text": "FRI 18 JUL 2025 - THU 07 AUG 2025\n\nAFT_R\n\nIn Riyadh",
+            "href": "https://mdlbeast.com/events/aft-r"
+          },
+          {
+            "text": "THU 17 JUL 2025 - FRI 08 AUG 2025\n\nONYX ARENA \n\nIn Jeddah",
+            "href": "https://mdlbeast.com/events/onyx-arena"
+          },
+          {
+            "text": "FRI 23 MAY 2025\n\nMDLBEAST PRESENTS: GUNS N' ROSES\n\nIn Riyadh",
+            "href": "https://mdlbeast.com/events/mdlbeast-presents-guns-n-roses"
+          },
+          {
+            "text": "SAT 17 MAY 2025 - SUN 18 MAY 2025\n\nHOUSE BLEND\n\nIn Riyadh",
+            "href": "https://mdlbeast.com/events/house-blend"
+          },
+          {
+            "text": "THU 24 APR 2025 - FRI 25 APR 2025\n\nA THOUSAND AND ONE 2025\n\nIn Riyadh",
+            "href": "https://mdlbeast.com/events/a-thousand-and-one-2025"
+          },
+          {
+            "text": "FRI 18 APR 2025 - SUN 20 APR 2025\n\nFORMULA 1 STC SAUDI ARABIAN GRAND PRIX 2025\n\nIn Jeddah",
+            "href": "https://mdlbeast.com/events/formula-1-stc-saudi-arabian-grand-prix-2025"
+          },
+          {
+            "text": "FRI 04 APR 2025\n\nMOJA\n\nIn Jeddah",
+            "href": "https://mdlbeast.com/events/moja"
+          },
+          {
+            "text": "FRI 04 APR 2025\n\nMDLBEAST PRESENTS: KEINEMUSIK\n\nIn AlUla",
+            "href": "https://mdlbeast.com/events/mdlbeast-presents-keinemusik"
+          },
+          {
+            "text": "FRI 21 FEB 2025 - SUN 23 FEB 2025\n\nKOKUB\n\nIn Al Ula",
+            "href": "https://mdlbeast.com/events/kokub"
+          },
+          {
+            "text": "THU 30 JAN 2025 - FRI 31 JAN 2025\n\nBALAD BEAST 2025\n\nIn Jeddah",
+            "href": "https://mdlbeast.com/events/balad-beast-2025"
+          },
+          {
+            "text": "THU 12 DEC 2024 - SAT 14 DEC 2024\n\nSOUNDSTORM 24\n\nIn Riyadh",
+            "href": "https://mdlbeast.com/events/soundstorm-2024"
+          }
+        ]
+      },
+      "script_signals": {
+        "next_data_scripts": 1,
+        "nuxt_scripts": 0,
+        "json_ld_scripts": 0,
+        "large_inline_scripts": 2
+      },
+      "network_total": 17,
+      "network_endpoints": [
+        {
+          "method": "GET",
+          "status": 200,
+          "url": "https://ara.paa-reporting-advertising.amazon/aat?pid=ee49cad3-31b1-422d-ae49-b96ef7139d3f&event=PageView&currencyCode=SAR&ts=1791015283304&eventSource=amzn.js&uuid=40d0376c-6344-440e-b520-24ff792b2e37",
+          "content_type": "application/json",
+          "resource_type": "fetch",
+          "request_post_data": "",
+          "response_shape": "json-object:",
+          "preview": "{}"
+        },
+        {
+          "method": "GET",
+          "status": 200,
+          "url": "https://ara.paa-reporting-advertising.amazon/aat?pid=03be6e9f-5eab-4882-89fd-5120fc72e9bc&event=PageView&currencyCode=SAR&ts=1791015283304&eventSource=amzn.js&uuid=697c77b9-e466-42fb-a972-6db7b1d58690",
+          "content_type": "application/json",
+          "resource_type": "fetch",
+          "request_post_data": "",
+          "response_shape": "json-object:",
+          "preview": "{}"
+        },
+        {
+          "method": "GET",
+          "status": 200,
+          "url": "https://mc.yango.com/watch/3/1?wmode=7&page-url=https%3A%2F%2Fmdlbeast.com%2Fevents&page-ref&charset=utf-8&browser-info=pv%3A1%3Avf%3A37xk0fgslry1wqf7aktfs70g0rmlch%3Afu%3A0%3Aen%3Autf-8%3Ala%3Aen-US%3Av%3A2660%3Acn%3A2%3Adp%3A0%3Als%3A1589876246990%3Ahid%3A386827248%3Az%3A0%3Ai%3A20261003081444%3Aet%3A1791015284%3Ac%3A1%3Arn%3A972293323%3Arqn%3A1%3Au%3A1791015284383654530%3Aw%3A1280x720%3As%3A1280x720x24%3Ask%3A1%3Afp%3A252%3Ast%3A1791015284&t=clc%280-0-0%29rqnt%281%29ti%281%29&redirnss=1",
+          "content_type": "application/json",
+          "resource_type": "fetch",
+          "request_post_data": "",
+          "response_shape": "json-object:settings,userData",
+          "preview": "{\"settings\":{\"sbp\": {\"a\":\"K4Ntw342I+7CMCV2NM13TBEP3a46m9TzK+xI2RWHzjbMa6H/pcqXgQ9K8vFhXvJO\", \"b\":\"DqQZnt1nxFCNg+FGYtTQRbcmh7c32sblyYqzC/fo6BxHBTFopNsilwUuYQLO9py6\"},\"eu\":2,\"region\":\"US\",\"nss\":1,\"hittoken\":\"1791015284_840b43db2bba1af55e06cf3c98a4d8879b4ff9b8e5f8623141708db6b6c384b3\",\"wstoken\":\"11173.-YuHwd5D5v_KotiTtVU1SDhfrNdprvEMR9CpSbPiuQSDUC-cuD3EaBDPJYgJb0d0goshZZxFfTZ0Vs_c5k4NE0jte-XdhqJj7nTeo9FB5dg,.HAggUXfLM7fSlXWXI6lIaqew6N0,\",\"ev\":{\"pvt\":1791015284},\"hidv2\":\"5805987485091102900\",\"ymclid\":\"5805987485091102900\"},\"userData\":{}}"
+        },
+        {
+          "method": "POST",
+          "status": 200,
+          "url": "https://api2.amplitude.com/2/httpapi",
+          "content_type": "application/json",
+          "resource_type": "fetch",
+          "request_post_data": "{\"api_key\":\"4c54f2e557cac3cb97e522bf23719c5f\",\"events\":[{\"device_id\":\"d0ba6b34-cc4e-402a-982e-6acad12b1b38\",\"session_id\":1791015283769,\"time\":1791015283773,\"platform\":\"Web\",\"language\":\"en-US\",\"ip\":\"$remote\",\"insert_id\":\"a72fa408-1316-4c4e-8e3c-53e86297ace9\",\"event_type\":\"$identify\",\"user_properties\":{\"$setOnce\":{\"initial_utm_campaign\":\"EMPTY\",\"initial_utm_content\":\"EMPTY\",\"initial_utm_id\":\"EMPTY\",\"initial_utm_medium\":\"EMPTY\",\"initial_utm_source\":\"EMPTY\",\"initial_utm_term\":\"EMPTY\",\"initial_referrer\":\"EMPTY\",\"initial_referring_domain\":\"EMPTY\",\"initial_dclid\":\"EMPTY\",\"initial_gbraid\":\"EMPTY\",\"initial_gclid\":\"EMPTY\",\"initial_fbclid\":\"EMPTY\",\"initial_ko_click_id\":\"EMPTY\",\"initial_li_fat_id\":\"EMPTY\",\"initial_msclkid\":\"EMPTY\",\"initial_rtd_cid\":\"EMPTY\",\"initial_ttclid\":\"EMPTY\",\"initial_twclid\":\"EMPTY\",\"initial_wbraid\":\"EMPTY\"},\"$unset\":{\"utm_campaign\":\"-\",\"utm_content\":\"-\",\"utm_id\":\"-\",\"utm_medium\":\"-\",\"utm_source\":\"-\",\"utm_term\":\"-\",\"referrer\":\"-\",\"referring_domain\":\"-\",\"dclid\":\"-\",\"gbraid\":\"-\",\"gclid\":\"-\",\"fbclid\":\"-\",\"ko_click_id\":\"-\",\"li_fat_id\":\"-\",\"msclkid\":\"-\",\"rtd_cid\":\"-\",\"ttclid\":\"-\",\"twclid\":\"-\",\"wbraid\":\"-\"}},\"event_id\":0,\"library\":\"amplitude-ts-gtm/3.7.12\",\"user_agent\":\"Mozill",
+          "response_shape": "json-object:code,server_upload_time,payload_size_bytes,events_ingested",
+          "preview": "{\"code\":200,\"server_upload_time\":1791015284865,\"payload_size_bytes\":3069,\"events_ingested\":4}"
+        },
+        {
+          "method": "POST",
+          "status": 200,
+          "url": "https://sdk-03.moengage.com/v2/device/add?os=web&os_platform=Mozilla%2F5.0%20(Macintosh%3B%20Intel%20Mac%20OS%20X%2010_15_7)%20AppleWebKit%2F537.36%20(KHTML%2C%20like%20Gecko)%20Chrome%2F126.0.0.0%20Safari%2F537.36&is_incognito=false&app_id=3WOD3GUG7RZZTC54VS32NHA9&os_ver=macOS%2010_15_7&sdk_ver=2.80.00&model=Google%20Chrome&app_ver=1.0&device_ts=1791015285047&device_tz_offset=0&unique_id=8468cc3a-8a40-4841-95a9-1f5377065f99&device_tz=0&device_unique_id=1d82ea83-0ab2-44c3-b20e-51e9e9eff8bc&subscription_type=vapid&vapid_public=BIMX6knQZH09MR1LpNsQphAFim64pGleF3612U1Kw5umn36SvUZS3hQ8zhjFYKzpsTMxTUhR7KLbZBoPjfPe7Z8&environment=sdk-03.moengage.com&url=https%3A%2F%2Fmdlbeast.com%2Fevents",
+          "content_type": "application/json",
+          "resource_type": "xhr",
+          "request_post_data": "null",
+          "response_shape": "json-object:status,message",
+          "preview": "{\"status\":\"success\",\"message\":\"Your request has been accepted and will be processed soon.\"}"
+        },
+        {
+          "method": "GET",
+          "status": 200,
+          "url": "https://mc.yango.com/watch/100422118?wmode=7&page-url=https%3A%2F%2Fmdlbeast.com%2Fevents&charset=utf-8&uah=chu%0A%22HeadlessChrome%22%3Bv%3D%22149%22%2C%22Chromium%22%3Bv%3D%22149%22%2C%22Not)A%3BBrand%22%3Bv%3D%2224%22%0Acha%0Ax86%0Achb%0A64%0Achf%0A149.0.7827.55%0Achl%0A%22HeadlessChrome%22%3Bv%3D%22149.0.7827.55%22%2C%22Chromium%22%3Bv%3D%22149.0.7827.55%22%2C%22Not)A%3BBrand%22%3Bv%3D%2224.0.0.0%22%0Achm%0A%3F0%0Achp%0AmacOS%0Achv%0A10_15_7&browser-info=pv%3A1%3Avf%3A37xk0fgslry1wqf7aktfs70g0rmlch%3Afu%3A0%3Aen%3Autf-8%3Ala%3Aen-US%3Av%3A2660%3Acn%3A1%3Adp%3A0%3Als%3A591796202215%3Ahid%3A386827248%3Az%3A0%3Ai%3A20261003081444%3Aet%3A1791015284%3Ac%3A1%3Arn%3A275224347%3Arqn%3A1%3Au%3A1791015284383654530%3Aw%3A1280x720%3As%3A1280x720x24%3Ask%3A1%3Afp%3A252%3Arqnl%3A1%3Ast%3A1791015286%3At%3AMDLBEAST%20Events%20Calendar%20-%20Discover%20Now%20%7C%20MDLBEAST&t=clt(1026)clc(0-0-0)rqnt(1)ti(1)",
+          "content_type": "application/json",
+          "resource_type": "fetch",
+          "request_post_data": "",
+          "response_shape": "json-object:settings,userData",
+          "preview": "{\"settings\":{\"auto_goals\":1,\"button_goals\":0,\"c_recp\":\"1.00000\",\"form_goals\":1,\"pcs\":\"1\",\"webvisor\":{\"ad_recp\":\"1.00000\",\"arch_type\":\"none\",\"date\":\"2026-08-03 20:21:22\",\"forms\":1,\"recp\":\"1.00000\"},\"sbp\": {\"a\":\"AheWej6MAh9kd+SrfHqDZ4c5C3ltXQKKzY+1wwaq3KhW9fNaM2Y72b/+0vPrKZgu\", \"b\":\"SbihdwEQQHPvgR8N1V9vorzBvAloutHAP179zQNK4zRrywCdpwQunjqdxsyQGQmj\"},\"eu\":2,\"region\":\"US\",\"hittoken\":\"1791015286_6440d0815a7b31a45abcc6ec14a7be173d39d6e62fef135d614eca7d6bb715d0\",\"cf\":1,\"mcf\":1,\"wstoken\":\"11173.9IeZoPrHjzs49Vp4PiSaAWRKw0HabhcfZLvQ69CCyEbKwI15ZEBrTbXuvIUbgAssvn2yZN0k68xlKFX_Zqg2ZudyZJr5YWGNFz-oBj0GCZM,.GjX7LL1-44rKCaNnOXTCRzx0zE0,\",\"ev\":{\"pvt\":1791015286},\"hidv2\":\"5805987858233688230\",\"ymclid\":\"5805987858233688230\"},\"userData\":{}}"
+        }
+      ],
+      "network_sample": [
+        {
+          "method": "POST",
+          "status": 200,
+          "url": "https://o1202670.ingest.sentry.io/api/6328050/envelope/?sentry_version=7&sentry_key=9ddf6cb0d9fd4ef3a6553edafdab3482&sentry_client=sentry.javascript.nextjs%2F8.51.0",
+          "content_type": "application/json",
+          "resource_type": "fetch",
+          "request_post_data": "{\"sent_at\":\"2026-10-03T08:14:42.363Z\",\"sdk\":{\"name\":\"sentry.javascript.nextjs\",\"version\":\"8.51.0\"}} {\"type\":\"session\"} {\"sid\":\"cebe320a67904e7aa992025c01ad7202\",\"init\":true,\"started\":\"2026-10-03T08:14:42.363Z\",\"timestamp\":\"2026-10-03T08:14:42.363Z\",\"status\":\"ok\",\"errors\":0,\"attrs\":{\"release\":\"mdlbeast-frontend-nextjs@2.43.0\",\"environment\":\"production\",\"user_agent\":\"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36\"}}",
+          "response_shape": "json-object:",
+          "preview": "{}"
+        },
+        {
+          "method": "GET",
+          "status": 200,
+          "url": "https://api.ipdata.co/?api-key=c7e0aa1f6999025389c01b86d7d2f281eb10fe9aa7f183632d000cc0",
+          "content_type": "application/json",
+          "resource_type": "fetch",
+          "request_post_data": "",
+          "response_shape": "json-object:ip,is_eu,city,region,region_code,region_type,country_name,country_code",
+          "preview": "{ \"ip\": \"172.184.210.166\", \"is_eu\": false, \"city\": \"San Jose\", \"region\": \"California\", \"region_code\": \"CA\", \"region_type\": \"state\", \"country_name\": \"United States\", \"country_code\": \"US\", \"continent_name\": \"North America\", \"continent_code\": \"NA\", \"latitude\": 37.33938980102539, \"longitude\": -121.89495849609375, \"postal\": \"95141\", \"calling_code\": \"1\", \"flag\": \"https://ipdata.co/flags/us.png\", \"emoji_flag\": \"🇺🇸\", \"emoji_unicode\": \"U+1F1FA U+1F1F8\", \"asn\": { \"asn\": \"AS8075\", \"name\": \"Microsoft Corporation\", \"domain\": \"microsoft.com\", \"route\": \"172.160.0.0/11\", \"type\": \"hosting\" }, \"languages\": [ { \"name\": \"English\", \"native\": \"English\", \"code\": \"en\" } ], \"currency\": { \"name\": \"US Dollar\", \"code\": \"USD\", \"symbol\": \"$\", \"native\": \"$\", \"plural\": \"US dollars\" }, \"time_zone\": { \"name\": \"America/Los_Angeles\", \"abbr\": \"PDT\", \"offset\": \"-0700\", \"is_dst\": true, \"current_time\": \"2026-10-03T08:14:42-07:00\" }, \"threat\": { \"is_tor\": false, \"is_icloud_relay\": false, \"is_proxy\": false, \"is_datacenter\": true, \"is_anonymous\": false, \"is_known_attacker\": false, \"is_known_abuser\": false, \"is_threat\": false, \"is_bogon\": false, \"blocklists\": [] }, \"count\": \"829\" }"
+        },
+        {
+          "method": "GET",
+          "status": 200,
+          "url": "https://mdlbeast.com/_next/data/m0RVCB6Xmjfj78jX68_TJ/en.json",
+          "content_type": "application/json",
+          "resource_type": "fetch",
+          "request_post_data": "",
+          "response_shape": "json-like-invalid",
+          "preview": "{\"pageProps\":{\"seoTags\":[{\"attributes\":null,\"content\":\"MDLBEAST | Home of Soundstorm, XP & Music in the Middle East\",\"tag\":\"title\"},{\"attributes\":{\"property\":\"og:title\",\"content\":\"MDLBEAST | Home of Soundstorm, XP & Music in the Middle East\"},\"content\":null,\"tag\":\"meta\"},{\"attributes\":{\"name\":\"twitter:title\",\"content\":\"MDLBEAST | Home of Soundstorm, XP & Music in the Middle East\"},\"content\":null,\"tag\":\"meta\"},{\"attributes\":{\"name\":\"description\",\"content\":\"Explore music in the Middle East from the region's music platform. Uncover Soundstorm festival - the loudest music festival in Riyadh, XP Music Futures & more. \"},\"content\":null,\"tag\":\"meta\"},{\"attributes\":{\"property\":\"og:description\",\"content\":\"Explore music in the Middle East from the region's music platform. Uncover Soundstorm festival - the loudest music festival in Riyadh, XP Music Futures & more. \"},\"content\":null,\"tag\":\"meta\"},{\"attributes\":{\"name\":\"twitter:description\",\"content\":\"Explore music in the Middle East from the region's music platform. Uncover Soundstorm festival - the loudest music festival in Riyadh, XP Music Futures & more. \"},\"content\":null,\"tag\":\"meta\"},{\"attributes\":{\"property\":\"og:image\",\"content\":\"https://www.datocms-assets.com/66357/1751801189-mdlbeast.png?auto=format&fit=max&w=1200\"},\"content\":null,\"tag\":\"meta\"},{\"attributes\":{\"property\":\"og:image:width\",\"content\":\"1200\"},\"content\":null,\"tag\":\"meta\"},{\"attributes\":{\"property\":\"og:image:height\",\"content\":\"630\"},\"content\":null,\"tag\":\"meta\"},{\"attributes\":{\"name\":\"twitter:image\",\"content\":\"https://www.datocms-assets.com/66357/1751801189-mdlbeast.png?auto=format&fit=max&w=1200\"},\"content\":null,\"tag\":\"meta\"},{\"attributes\":{\"property\":\"og:locale\",\"content\":\"en\"},\"content\":null,\"tag\":\"meta\"},{\"attributes\":{\"property\":\"og:type\",\"content\":\"website\"},"
+        },
+        {
+          "method": "GET",
+          "status": 200,
+          "url": "https://mdlbeast.com/_next/data/m0RVCB6Xmjfj78jX68_TJ/en/newsroom.json",
+          "content_type": "application/json",
+          "resource_type": "fetch",
+          "request_post_data": "",
+          "response_shape": "json-like-invalid",
+          "preview": "{\"pageProps\":{\"homeData\":{\"title\":\"Newsroom\",\"slug\":\"newsroom\",\"header\":{\"__typename\":\"NewsRoomHomePageHeaderRecord\",\"id\":\"XWROG8Q8TrOJRNiLPbCxKQ\",\"amountOfHeadlines\":10,\"intervalTimerSeconds\":3,\"includeTags\":[],\"readMoreLinkText\":\"Read more\"},\"mdlbeastPillars\":[{\"__typename\":\"NewsRoomArticleCategoryRecord\",\"id\":\"RIbi0SZvSSikJkeSiDGhSw\",\"title\":\"Soundstorm\",\"image\":{\"id\":\"AEsxkQdxQW-6ubkZ84PHlg\",\"mimeType\":\"image/jpeg\",\"video\":null,\"url\":\"https://www.datocms-assets.com/66357/1775652017-pillar-1.jpg\",\"alt\":null,\"title\":null,\"blurUpThumb\":\"data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAoHBwgHBgoICAgLCgoLGhgUDhYNDikVIR0dHR0lHSIdGBomJS8jHB0oHRUWJTUlKC0vMjIyGSI4PTcwPCsxMi8BCgsLDg0OHBAQHDspIh0vOy8vPDs7OzsvLy8vLzUvLy8vLzs1Mi8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vL//AABEIABEAGAMBIgACEQEDEQH/xAAaAAACAgMAAAAAAAAAAAAAAAAABgMFAQIH/8QAJBAAAQMCBQUBAAAAAAAAAAAAAAECAwQRBQYiYZESEzEyMwf/xAAXAQEAAwAAAAAAAAAAAAAAAAACAAME/8QAGREAAwEBAQAAAAAAAAAAAAAAAAECAzER/9oADAMBAAIRAxEAPwDlTcIxSZl0geqE8WW8ZlZpp32LmgzmsUCo+JLpsWNN+g9DFTspwRpGjPOGhRny9i1OmumfbYBhr88z1PrCnBgalAqJ9FCL5vNo/CgBUyZk8QAA0Cun/9k=\"},\"newsRoomTag\":{\"id\":\"Kfk0B2qfQU-WHIZXydR_Xw\",\"name\":\"Soundstorm\",\"slug\":\"soundstorm\"}},{\"__typename\":\"NewsRoomArticleCategoryRecord\",\"id\":\"B5QTRiCFTBeTO_0yZdNTew\",\"title\":\"Balad Beast\",\"image\":{\"id\":\"e3LJ2TLBQ0O9n1bskl3b0Q\",\"mimeType\":\"image/jpeg\",\"video\":null,\"url\":\"https://www.datocms-assets.com/66357/1775652018-pillar-2.jpg\",\"alt\":null,\"title\":null,\"blurUpThumb\":\"data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAoHBwgHBgoICAgXCgoLFRgZDg0VGR0VDQ4NFxUdHRYTIhYaHysjHR0oHRYWJDUlKC0vMjIyGSI4PTcwPCsxMi8BCgsLDg0OHBAQHDsoIig7Ozs7Ozs7Ozs7Ly8vLy8vLy8vLzsvOzsvLy8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vL//AABEIAA4AGAMBIgACEQEDEQH/xAAZAAABBQAAAAAAAAAAAAAAAAAEAAIDBQf/xAAcEAABBAMBAAAAAAAAAAAAAAACAAMEEQESIQX/xAAWAQ"
+        },
+        {
+          "method": "GET",
+          "status": 200,
+          "url": "https://mdlbeast.com/_next/data/m0RVCB6Xmjfj78jX68_TJ/en/search.json",
+          "content_type": "application/json",
+          "resource_type": "fetch",
+          "request_post_data": "",
+          "response_shape": "json-object:pageProps,__N_SSG",
+          "preview": "{\"pageProps\":{\"dehydratedState\":{\"mutations\":[],\"queries\":[{\"state\":{\"data\":{\"globalConfig\":{\"privacyPolicy\":{\"id\":\"18205418\",\"title\":\"Privacy policy\",\"isExternal\":false,\"url\":\"\",\"page\":[{\"entity\":\"PageCustomTextRecord\",\"slug\":\"privacy\",\"collection\":null}],\"icon\":null},\"cookiesPolicy\":{\"id\":\"CMoIHPjDR5y8fCatFJgdWA\",\"title\":\"Cookies Policy\",\"isExternal\":false,\"url\":\"\",\"page\":[{\"entity\":\"PageCustomTextRecord\",\"slug\":\"cookies-policy\",\"collection\":null}],\"icon\":null},\"legal\":{\"id\":\"18205454\",\"title\":\"Terms & Conditions\",\"isExternal\":false,\"url\":\"\",\"page\":[{\"entity\":\"PageCustomTextRecord\",\"slug\":\"terms-and-conditions\",\"collection\":null}],\"icon\":null}},\"_site\":{\"globalSeo\":{\"titleSuffix\":\" | MDLBEAST\"}}},\"dataUpdateCount\":1,\"dataUpdatedAt\":1791010223231,\"error\":null,\"errorUpdateCount\":0,\"errorUpdatedAt\":0,\"fetchFailureCount\":0,\"fetchFailureReason\":null,\"fetchMeta\":null,\"isInvalidated\":false,\"status\":\"success\",\"fetchStatus\":\"idle\"},\"queryKey\":[\"global\",\"config\",{\"locale\":\"en\"}],\"queryHash\":\"[\\\"global\\\",\\\"config\\\",{\\\"locale\\\":\\\"en\\\"}]\",\"meta\":{\"dehydrate\":true,\"preview\":false}},{\"state\":{\"data\":{\"id\":\"BKwepKzOTiiZtVUfaL9sSQ\",\"name\":\"MDLBEAST Radio\",\"streamUrl\":\"https://s4.radio.co/s4d58c285a/listen\"},\"dataUpdateCount\":1,\"dataUpdatedAt\":1791010223231,\"error\":null,\"errorUpdateCount\":0,\"errorUpdatedAt\":0,\"fetchFailureCount\":0,\"fetchFailureReason\":null,\"fetchMeta\":null,\"isInvalidated\":false,\"status\":\"success\",\"fetchStatus\":\"idle\"},\"queryKey\":[\"radio\",\"station\",{\"locale\":\"en\"}],\"queryHash\":\"[\\\"radio\\\",\\\"station\\\",{\\\"locale\\\":\\\"en\\\"}]\",\"meta\":{\"dehydrate\":true,\"preview\":false}}]}},\"__N_SSG\":true}"
+        },
+        {
+          "method": "GET",
+          "status": 200,
+          "url": "https://mdlbeast.com/_next/data/m0RVCB6Xmjfj78jX68_TJ/en/account/login.json",
+          "content_type": "application/json",
+          "resource_type": "fetch",
+          "request_post_data": "",
+          "response_shape": "json-object:pageProps,__N_SSG",
+          "preview": "{\"pageProps\":{\"dehydratedState\":{\"mutations\":[],\"queries\":[{\"state\":{\"data\":{\"globalConfig\":{\"privacyPolicy\":{\"id\":\"18205418\",\"title\":\"Privacy policy\",\"isExternal\":false,\"url\":\"\",\"page\":[{\"entity\":\"PageCustomTextRecord\",\"slug\":\"privacy\",\"collection\":null}],\"icon\":null},\"cookiesPolicy\":{\"id\":\"CMoIHPjDR5y8fCatFJgdWA\",\"title\":\"Cookies Policy\",\"isExternal\":false,\"url\":\"\",\"page\":[{\"entity\":\"PageCustomTextRecord\",\"slug\":\"cookies-policy\",\"collection\":null}],\"icon\":null},\"legal\":{\"id\":\"18205454\",\"title\":\"Terms & Conditions\",\"isExternal\":false,\"url\":\"\",\"page\":[{\"entity\":\"PageCustomTextRecord\",\"slug\":\"terms-and-conditions\",\"collection\":null}],\"icon\":null}},\"_site\":{\"globalSeo\":{\"titleSuffix\":\" | MDLBEAST\"}}},\"dataUpdateCount\":1,\"dataUpdatedAt\":1791009926376,\"error\":null,\"errorUpdateCount\":0,\"errorUpdatedAt\":0,\"fetchFailureCount\":0,\"fetchFailureReason\":null,\"fetchMeta\":null,\"isInvalidated\":false,\"status\":\"success\",\"fetchStatus\":\"idle\"},\"queryKey\":[\"global\",\"config\",{\"locale\":\"en\"}],\"queryHash\":\"[\\\"global\\\",\\\"config\\\",{\\\"locale\\\":\\\"en\\\"}]\",\"meta\":{\"dehydrate\":true,\"preview\":false}},{\"state\":{\"data\":{\"id\":\"BKwepKzOTiiZtVUfaL9sSQ\",\"name\":\"MDLBEAST Radio\",\"streamUrl\":\"https://s4.radio.co/s4d58c285a/listen\"},\"dataUpdateCount\":1,\"dataUpdatedAt\":1791009926381,\"error\":null,\"errorUpdateCount\":0,\"errorUpdatedAt\":0,\"fetchFailureCount\":0,\"fetchFailureReason\":null,\"fetchMeta\":null,\"isInvalidated\":false,\"status\":\"success\",\"fetchStatus\":\"idle\"},\"queryKey\":[\"radio\",\"station\",{\"locale\":\"en\"}],\"queryHash\":\"[\\\"radio\\\",\\\"station\\\",{\\\"locale\\\":\\\"en\\\"}]\",\"meta\":{\"dehydrate\":true,\"preview\":false}}]},\"theme\":\"account\",\"layoutType\":\"Account\",\"tealium\":{\"moduleName\":\"miscellaneous\",\"pageType\":\"regular\"}},\"__N_SSG\":true}"
+        },
+        {
+          "method": "GET",
+          "status": 200,
+          "url": "https://mdlbeast.com/_next/data/m0RVCB6Xmjfj78jX68_TJ/en/privacy.json?pages=privacy",
+          "content_type": "application/json",
+          "resource_type": "fetch",
+          "request_post_data": "",
+          "response_shape": "json-like-invalid",
+          "preview": "{\"pageProps\":{\"customPageType\":\"text\",\"pageCustomText\":{\"pageCustomText\":{\"seoTags\":[{\"attributes\":null,\"content\":\"Privacy Policy | MDLBEAST\",\"tag\":\"title\"},{\"attributes\":{\"property\":\"og:title\",\"content\":\"Privacy Policy\"},\"content\":null,\"tag\":\"meta\"},{\"attributes\":{\"name\":\"twitter:title\",\"content\":\"Privacy Policy\"},\"content\":null,\"tag\":\"meta\"},{\"attributes\":{\"name\":\"description\",\"content\":\"This Privacy Notice explains how MDLBEAST LLC and its affiliated entities (referred to as “ MDLBEAST ”, “ we ”, “ us ”, or “ our ”) collect, use, store, and protect your personal data when you visit...\"},\"content\":null,\"tag\":\"meta\"},{\"attributes\":{\"property\":\"og:description\",\"content\":\"This Privacy Notice explains how MDLBEAST LLC and its affiliated entities (referred to as “ MDLBEAST ”, “ we ”, “ us ”, or “ our ”) collect, use, store, and protect your personal data when you visit...\"},\"content\":null,\"tag\":\"meta\"},{\"attributes\":{\"name\":\"twitter:description\",\"content\":\"This Privacy Notice explains how MDLBEAST LLC and its affiliated entities (referred to as “ MDLBEAST ”, “ we ”, “ us ”, or “ our ”) collect, use, store, and protect your personal data when you visit...\"},\"content\":null,\"tag\":\"meta\"},{\"attributes\":{\"property\":\"og:image\",\"content\":\"https://www.datocms-assets.com/66357/1751801189-mdlbeast.png?auto=format&fit=max&w=1200\"},\"content\":null,\"tag\":\"meta\"},{\"attributes\":{\"property\":\"og:image:width\",\"content\":\"1200\"},\"content\":null,\"tag\":\"meta\"},{\"attributes\":{\"property\":\"og:image:height\",\"content\":\"630\"},\"content\":null,\"tag\":\"meta\"},{\"attributes\":{\"name\":\"twitter:image\",\"content\":\"https://www.datocms-assets.com/66357/1751801189-mdlbeast.png?auto=format&fit=max&w=1200\"},\"content\":null,\"tag\":\"meta\"},{\"attributes\":{\"property\":\"og:locale\",\"content\":\"en\"},\"content\":null,\"tag\":\"meta\""
+        },
+        {
+          "method": "GET",
+          "status": 200,
+          "url": "https://c.amazon-adsystem.com/aat/allowlist/allowlist.json",
+          "content_type": "application/json",
+          "resource_type": "fetch",
+          "request_post_data": "",
+          "response_shape": "json-object:allowlisted",
+          "preview": "{\"allowlisted\":[\"ead7b209-8f99-4bb2-89ad-e7a4d07e9e6b\",\"61aed6d8-205f-44a4-b34e-9666d2c5ab2c\",\"6b5de594-9d46-4b37-a058-eeaaaf58c1f7\",\"520a8c3a-1712-4858-bb47-13ae76b81202\",\"d90af1c6-69a5-437c-9e87-03505fd7f545\",\"bee86bbc-096d-4407-8269-edf63f6b8eab\"]}"
+        },
+        {
+          "method": "GET",
+          "status": 200,
+          "url": "https://ara.paa-reporting-advertising.amazon/aat?pid=ee49cad3-31b1-422d-ae49-b96ef7139d3f&event=PageView&currencyCode=SAR&ts=1791015283304&eventSource=amzn.js&uuid=40d0376c-6344-440e-b520-24ff792b2e37",
+          "content_type": "application/json",
+          "resource_type": "fetch",
+          "request_post_data": "",
+          "response_shape": "json-object:",
+          "preview": "{}"
+        },
+        {
+          "method": "GET",
+          "status": 200,
+          "url": "https://ara.paa-reporting-advertising.amazon/aat?pid=03be6e9f-5eab-4882-89fd-5120fc72e9bc&event=PageView&currencyCode=SAR&ts=1791015283304&eventSource=amzn.js&uuid=697c77b9-e466-42fb-a972-6db7b1d58690",
+          "content_type": "application/json",
+          "resource_type": "fetch",
+          "request_post_data": "",
+          "response_shape": "json-object:",
+          "preview": "{}"
+        },
+        {
+          "method": "POST",
+          "status": 200,
+          "url": "https://sdk-03.moengage.com/v3/sdkconfig/web/3WOD3GUG7RZZTC54VS32NHA9",
+          "content_type": "application/json",
+          "resource_type": "xhr",
+          "request_post_data": "{\"query_params\":{\"unique_id\":null}}",
+          "response_shape": "json-object:s_log,s_e_b_e,a_s,c_s,c_w_p_e,b_d,m_i_e,lp_t",
+          "preview": "{\"s_log\":\"allowed\",\"s_e_b_e\":\"allowed\",\"a_s\":\"allowed\",\"c_s\":\"blocked\",\"c_w_p_e\":\"allowed\",\"b_d\":\"blocked\",\"m_i_e\":\"blocked\",\"lp_t\":\"blocked\",\"b_e\":[\"aravia_login_success\"],\"w_e\":[\"MOE_PUSH_PERMISSION_STATE_ALLOWED\",\"MOE_PUSH_PERMISSION_STATE_BLOCKED\"],\"a_c_i_s\":\"blocked\",\"u_i_s\":[\"uid\"],\"ac_s\":\"blocked\",\"e_b_c\":15,\"s_b_a\":[],\"p_e_c_c_d\":900,\"p_e_m_a_s_i\":300,\"p_f_t\":30,\"s_i_d\":1800,\"src_ext\":[],\"a_c_d_s_i\":3,\"u_a_c_t\":43200,\"cr_c_t\":5184000}"
+        },
+        {
+          "method": "GET",
+          "status": 200,
+          "url": "https://mc.yango.com/watch/3/1?wmode=7&page-url=https%3A%2F%2Fmdlbeast.com%2Fevents&page-ref&charset=utf-8&browser-info=pv%3A1%3Avf%3A37xk0fgslry1wqf7aktfs70g0rmlch%3Afu%3A0%3Aen%3Autf-8%3Ala%3Aen-US%3Av%3A2660%3Acn%3A2%3Adp%3A0%3Als%3A1589876246990%3Ahid%3A386827248%3Az%3A0%3Ai%3A20261003081444%3Aet%3A1791015284%3Ac%3A1%3Arn%3A972293323%3Arqn%3A1%3Au%3A1791015284383654530%3Aw%3A1280x720%3As%3A1280x720x24%3Ask%3A1%3Afp%3A252%3Ast%3A1791015284&t=clc%280-0-0%29rqnt%281%29ti%281%29&redirnss=1",
+          "content_type": "application/json",
+          "resource_type": "fetch",
+          "request_post_data": "",
+          "response_shape": "json-object:settings,userData",
+          "preview": "{\"settings\":{\"sbp\": {\"a\":\"K4Ntw342I+7CMCV2NM13TBEP3a46m9TzK+xI2RWHzjbMa6H/pcqXgQ9K8vFhXvJO\", \"b\":\"DqQZnt1nxFCNg+FGYtTQRbcmh7c32sblyYqzC/fo6BxHBTFopNsilwUuYQLO9py6\"},\"eu\":2,\"region\":\"US\",\"nss\":1,\"hittoken\":\"1791015284_840b43db2bba1af55e06cf3c98a4d8879b4ff9b8e5f8623141708db6b6c384b3\",\"wstoken\":\"11173.-YuHwd5D5v_KotiTtVU1SDhfrNdprvEMR9CpSbPiuQSDUC-cuD3EaBDPJYgJb0d0goshZZxFfTZ0Vs_c5k4NE0jte-XdhqJj7nTeo9FB5dg,.HAggUXfLM7fSlXWXI6lIaqew6N0,\",\"ev\":{\"pvt\":1791015284},\"hidv2\":\"5805987485091102900\",\"ymclid\":\"5805987485091102900\"},\"userData\":{}}"
+        },
+        {
+          "method": "POST",
+          "status": 200,
+          "url": "https://api2.amplitude.com/2/httpapi",
+          "content_type": "application/json",
+          "resource_type": "fetch",
+          "request_post_data": "{\"api_key\":\"4c54f2e557cac3cb97e522bf23719c5f\",\"events\":[{\"device_id\":\"d0ba6b34-cc4e-402a-982e-6acad12b1b38\",\"session_id\":1791015283769,\"time\":1791015283773,\"platform\":\"Web\",\"language\":\"en-US\",\"ip\":\"$remote\",\"insert_id\":\"a72fa408-1316-4c4e-8e3c-53e86297ace9\",\"event_type\":\"$identify\",\"user_properties\":{\"$setOnce\":{\"initial_utm_campaign\":\"EMPTY\",\"initial_utm_content\":\"EMPTY\",\"initial_utm_id\":\"EMPTY\",\"initial_utm_medium\":\"EMPTY\",\"initial_utm_source\":\"EMPTY\",\"initial_utm_term\":\"EMPTY\",\"initial_referrer\":\"EMPTY\",\"initial_referring_domain\":\"EMPTY\",\"initial_dclid\":\"EMPTY\",\"initial_gbraid\":\"EMPTY\",\"initial_gclid\":\"EMPTY\",\"initial_fbclid\":\"EMPTY\",\"initial_ko_click_id\":\"EMPTY\",\"initial_li_fat_id\":\"EMPTY\",\"initial_msclkid\":\"EMPTY\",\"initial_rtd_cid\":\"EMPTY\",\"initial_ttclid\":\"EMPTY\",\"initial_twclid\":\"EMPTY\",\"initial_wbraid\":\"EMPTY\"},\"$unset\":{\"utm_campaign\":\"-\",\"utm_content\":\"-\",\"utm_id\":\"-\",\"utm_medium\":\"-\",\"utm_source\":\"-\",\"utm_term\":\"-\",\"referrer\":\"-\",\"referring_domain\":\"-\",\"dclid\":\"-\",\"gbraid\":\"-\",\"gclid\":\"-\",\"fbclid\":\"-\",\"ko_click_id\":\"-\",\"li_fat_id\":\"-\",\"msclkid\":\"-\",\"rtd_cid\":\"-\",\"ttclid\":\"-\",\"twclid\":\"-\",\"wbraid\":\"-\"}},\"event_id\":0,\"library\":\"amplitude-ts-gtm/3.7.12\",\"user_agent\":\"Mozill",
+          "response_shape": "json-object:code,server_upload_time,payload_size_bytes,events_ingested",
+          "preview": "{\"code\":200,\"server_upload_time\":1791015284865,\"payload_size_bytes\":3069,\"events_ingested\":4}"
+        },
+        {
+          "method": "GET",
+          "status": 200,
+          "url": "https://sdk-03.moengage.com/v2/websdksettings?app_id=3WOD3GUG7RZZTC54VS32NHA9",
+          "content_type": "application/json",
+          "resource_type": "xhr",
+          "request_post_data": "",
+          "response_shape": "json-like-invalid",
+          "preview": "{\"webData\": {\"sub_billing\": false, \"domain_level_storage\": false, \"show_overlay\": false, \"load_time\": 0, \"prompt_again\": 0, \"opt_in_type\": \"self-handled\", \"is_enabled\": false, \"opt_in_preview\": {\"mobile\": {\"nudge\": {\"title\": {\"text_color\": \"#FFFFFF\", \"text\": \"This website would like to send you awesome updates and offers!\"}, \"background_color\": \"#000000\", \"icon\": \"https://www.moengage.com/wp-content/uploads/2019/07/moengage-logo.png\", \"alt_text\": \"\"}, \"allow_button\": {\"text_color\": \"#FFFFFF\", \"text\": \"Allow\", \"background_color\": \"#000000\"}, \"dismiss_button\": {\"text_color\": \"#FFFFFF\", \"text\": \"Don't Allow\", \"background_color\": \"#000000\"}, \"logo\": {\"logo_url\": \"https://app-cdn.moengage.com/images/brand/logo_full_white.png\", \"logo_color\": \"#FFFFFF\", \"alt_text\": \"Powered By MoEngage\"}}, \"web\": {\"banner\": {\"title\": {\"text_color\": \"#FFFFFF\", \"text\": \"This website would like to send you awesome updates and offers!\"}, \"body\": {\"text_color\": \"#FFFFFF\", \"text\": \"Notifications can be turned off anytime from browser settings\"}, \"background_color\": \"#000000\", \"icon\": \"https://www.moengage.com/wp-content/uploads/2019/07/moengage-logo.png\", \"alt_text\": \"\"}, \"allow_button\": {\"text_color\": \"#FFFFFF\", \"text\": \"Allow\", \"background_color\": \"#000000\"}, \"dismiss_button\": {\"text_color\": \"#FFFFFF\", \"text\": \"Don't Allow\", \"background_color\": \"#000000\"}, \"logo\": {\"logo_url\": \"https://app-cdn.moengage.com/images/brand/logo_full_white.png\", \"logo_color\": \"#FFFFFF\", \"alt_text\": \"Powered By MoEngage\"}}}, \"overlay\": {\"opera\": {\"mobile\": {\"title\": \"Opera Mobile Preview\", \"text\": \"Tap on Allow button to receive notifications\"}, \"desktop\": {\"title\": \"Opera Desktop Preview\", \"text\": \"Click on Allow button to receive notifications\"}}, \"chrome\": {\"mobile\": {\"title\": \"Chrome Mobile Preview\", \"text\": \"Tap on"
+        },
+        {
+          "method": "POST",
+          "status": 200,
+          "url": "https://sdk-03.moengage.com/v2/device/add?os=web&os_platform=Mozilla%2F5.0%20(Macintosh%3B%20Intel%20Mac%20OS%20X%2010_15_7)%20AppleWebKit%2F537.36%20(KHTML%2C%20like%20Gecko)%20Chrome%2F126.0.0.0%20Safari%2F537.36&is_incognito=false&app_id=3WOD3GUG7RZZTC54VS32NHA9&os_ver=macOS%2010_15_7&sdk_ver=2.80.00&model=Google%20Chrome&app_ver=1.0&device_ts=1791015285047&device_tz_offset=0&unique_id=8468cc3a-8a40-4841-95a9-1f5377065f99&device_tz=0&device_unique_id=1d82ea83-0ab2-44c3-b20e-51e9e9eff8bc&subscription_type=vapid&vapid_public=BIMX6knQZH09MR1LpNsQphAFim64pGleF3612U1Kw5umn36SvUZS3hQ8zhjFYKzpsTMxTUhR7KLbZBoPjfPe7Z8&environment=sdk-03.moengage.com&url=https%3A%2F%2Fmdlbeast.com%2Fevents",
+          "content_type": "application/json",
+          "resource_type": "xhr",
+          "request_post_data": "null",
+          "response_shape": "json-object:status,message",
+          "preview": "{\"status\":\"success\",\"message\":\"Your request has been accepted and will be processed soon.\"}"
+        },
+        {
+          "method": "GET",
+          "status": 200,
+          "url": "https://mc.yango.com/watch/100422118?wmode=7&page-url=https%3A%2F%2Fmdlbeast.com%2Fevents&charset=utf-8&uah=chu%0A%22HeadlessChrome%22%3Bv%3D%22149%22%2C%22Chromium%22%3Bv%3D%22149%22%2C%22Not)A%3BBrand%22%3Bv%3D%2224%22%0Acha%0Ax86%0Achb%0A64%0Achf%0A149.0.7827.55%0Achl%0A%22HeadlessChrome%22%3Bv%3D%22149.0.7827.55%22%2C%22Chromium%22%3Bv%3D%22149.0.7827.55%22%2C%22Not)A%3BBrand%22%3Bv%3D%2224.0.0.0%22%0Achm%0A%3F0%0Achp%0AmacOS%0Achv%0A10_15_7&browser-info=pv%3A1%3Avf%3A37xk0fgslry1wqf7aktfs70g0rmlch%3Afu%3A0%3Aen%3Autf-8%3Ala%3Aen-US%3Av%3A2660%3Acn%3A1%3Adp%3A0%3Als%3A591796202215%3Ahid%3A386827248%3Az%3A0%3Ai%3A20261003081444%3Aet%3A1791015284%3Ac%3A1%3Arn%3A275224347%3Arqn%3A1%3Au%3A1791015284383654530%3Aw%3A1280x720%3As%3A1280x720x24%3Ask%3A1%3Afp%3A252%3Arqnl%3A1%3Ast%3A1791015286%3At%3AMDLBEAST%20Events%20Calendar%20-%20Discover%20Now%20%7C%20MDLBEAST&t=clt(1026)clc(0-0-0)rqnt(1)ti(1)",
+          "content_type": "application/json",
+          "resource_type": "fetch",
+          "request_post_data": "",
+          "response_shape": "json-object:settings,userData",
+          "preview": "{\"settings\":{\"auto_goals\":1,\"button_goals\":0,\"c_recp\":\"1.00000\",\"form_goals\":1,\"pcs\":\"1\",\"webvisor\":{\"ad_recp\":\"1.00000\",\"arch_type\":\"none\",\"date\":\"2026-08-03 20:21:22\",\"forms\":1,\"recp\":\"1.00000\"},\"sbp\": {\"a\":\"AheWej6MAh9kd+SrfHqDZ4c5C3ltXQKKzY+1wwaq3KhW9fNaM2Y72b/+0vPrKZgu\", \"b\":\"SbihdwEQQHPvgR8N1V9vorzBvAloutHAP179zQNK4zRrywCdpwQunjqdxsyQGQmj\"},\"eu\":2,\"region\":\"US\",\"hittoken\":\"1791015286_6440d0815a7b31a45abcc6ec14a7be173d39d6e62fef135d614eca7d6bb715d0\",\"cf\":1,\"mcf\":1,\"wstoken\":\"11173.9IeZoPrHjzs49Vp4PiSaAWRKw0HabhcfZLvQ69CCyEbKwI15ZEBrTbXuvIUbgAssvn2yZN0k68xlKFX_Zqg2ZudyZJr5YWGNFz-oBj0GCZM,.GjX7LL1-44rKCaNnOXTCRzx0zE0,\",\"ev\":{\"pvt\":1791015286},\"hidv2\":\"5805987858233688230\",\"ymclid\":\"5805987858233688230\"},\"userData\":{}}"
+        },
+        {
+          "method": "POST",
+          "status": 200,
+          "url": "https://sdk-03.moengage.com/v3/campaigns/inapp/live?sdk_ver=2.80.00&unique_id=8468cc3a-8a40-4841-95a9-1f5377065f99&os=web",
+          "content_type": "application/json",
+          "resource_type": "xhr",
+          "request_post_data": "{\"identifiers\":{},\"campaign_ids\":[],\"user_session_attributes\":{\"USER_TYPE\":\"New\",\"DAY_OF_THE_WEEK\":\"Saturday\",\"TIME_OF_THE_DAY\":\"08\"}}",
+          "response_shape": "json-object:campaigns,min_delay_btw_inapps,sync_interval,fc_settings",
+          "preview": "{\"campaigns\":[],\"min_delay_btw_inapps\":900,\"sync_interval\":900,\"fc_settings\":{}}"
+        }
+      ]
+    },
+    {
+      "id": "future-skills-catalog",
+      "probed_at": "2026-10-03T08:15:11.940Z",
+      "name": "Future Skills MCIT Catalogue",
+      "priority": 17,
+      "url": "https://futureskills.mcit.gov.sa/ar/catalogue/all?label=&field_main_tracks_target_id_verf=565&field_sub_tracks_target_id=All&field_training_course_level_target_id=All&field_related_skills_target_id=All&field_course_type_value=All&field_training_delivery_value=All&field_training_city_target_id=All&field_job_market_target_id=All",
+      "final_url": "https://futureskills.mcit.gov.sa/ar/catalogue/all?label=&field_main_tracks_target_id_verf=565&field_sub_tracks_target_id=All&field_training_course_level_target_id=All&field_related_skills_target_id=All&field_course_type_value=All&field_training_delivery_value=All&field_training_city_target_id=All&field_job_market_target_id=All",
+      "status": "ok",
+      "http_status": 200,
+      "navigation_error": "",
+      "duration_ms": 18895,
+      "classification": "rendered-html-candidates",
+      "next_action": "اكتب extractor مرن من DOM بعد الرندر أو حسن selector الحالي.",
+      "title": "التدريب | بوابة مهارات المستقبل",
+      "text_bytes": 10774,
+      "html_bytes": 86593,
+      "html_snapshot": "data/raw/browser-probes/future-skills-catalog-2026-10-03T08-14-40-511Z.html",
+      "screenshot": "data/raw/browser-probes/future-skills-catalog-2026-10-03T08-14-40-511Z.png",
+      "signals": {
+        "has_next_data": false,
+        "has_nuxt": false,
+        "has_json_ld": false,
+        "has_event_schema": false,
+        "date_snippets": [],
+        "event_like_links": [
+          {
+            "text": "تجاوز إلى المحتوى الرئيسي",
+            "href": "https://futureskills.mcit.gov.sa/ar/catalogue/all?label=&field_main_tracks_target_id_verf=565&field_sub_tracks_target_id=All&field_training_course_level_target_id=All&field_related_skills_target_id=All&field_course_type_value=All&field_training_delivery_value=All&field_training_city_target_id=All&field_job_market_target_id=All#main-content"
+          },
+          {
+            "text": "English",
+            "href": "https://futureskills.mcit.gov.sa/en/catalogue/all?label=&field_main_tracks_target_id_verf=565&field_sub_tracks_target_id=All&field_training_course_level_target_id=All&field_related_skills_target_id=All&field_course_type_value=All&field_training_delivery_value=All&field_training_city_target_id=All&field_job_market_target_id=All"
+          },
+          {
+            "text": "",
+            "href": "https://futureskills.mcit.gov.sa/ar/catalogue/all?label=&field_main_tracks_target_id_verf=565&field_sub_tracks_target_id=All&field_training_course_level_target_id=All&field_related_skills_target_id=All&field_course_type_value=All&field_training_delivery_value=All&field_training_city_target_id=All&field_job_market_target_id=All#"
+          },
+          {
+            "text": "عن الوزارة",
+            "href": "https://futureskills.mcit.gov.sa/ar/catalogue/all?label=&field_main_tracks_target_id_verf=565&field_sub_tracks_target_id=All&field_training_course_level_target_id=All&field_related_skills_target_id=All&field_course_type_value=All&field_training_delivery_value=All&field_training_city_target_id=All&field_job_market_target_id=All#"
+          },
+          {
+            "text": "مجتمع رقمي",
+            "href": "https://futureskills.mcit.gov.sa/ar/catalogue/all?label=&field_main_tracks_target_id_verf=565&field_sub_tracks_target_id=All&field_training_course_level_target_id=All&field_related_skills_target_id=All&field_course_type_value=All&field_training_delivery_value=All&field_training_city_target_id=All&field_job_market_target_id=All#"
+          },
+          {
+            "text": "مهارات المستقبل",
+            "href": "https://futureskills.mcit.gov.sa/ar/catalogue/all?label=&field_main_tracks_target_id_verf=565&field_sub_tracks_target_id=All&field_training_course_level_target_id=All&field_related_skills_target_id=All&field_course_type_value=All&field_training_delivery_value=All&field_training_city_target_id=All&field_job_market_target_id=All#"
+          },
+          {
+            "text": "الأعمال والاستثمار",
+            "href": "https://futureskills.mcit.gov.sa/ar/catalogue/all?label=&field_main_tracks_target_id_verf=565&field_sub_tracks_target_id=All&field_training_course_level_target_id=All&field_related_skills_target_id=All&field_course_type_value=All&field_training_delivery_value=All&field_training_city_target_id=All&field_job_market_target_id=All#"
+          },
+          {
+            "text": "المركز الإعلامي",
+            "href": "https://futureskills.mcit.gov.sa/ar/catalogue/all?label=&field_main_tracks_target_id_verf=565&field_sub_tracks_target_id=All&field_training_course_level_target_id=All&field_related_skills_target_id=All&field_course_type_value=All&field_training_delivery_value=All&field_training_city_target_id=All&field_job_market_target_id=All#"
+          },
+          {
+            "text": "الفعاليات",
+            "href": "https://www.mcit.gov.sa/ar/events"
+          },
+          {
+            "text": "",
+            "href": "https://futureskills.mcit.gov.sa/ar/catalogue/all?label=&field_main_tracks_target_id_verf=565&field_sub_tracks_target_id=All&field_training_course_level_target_id=All&field_related_skills_target_id=All&field_course_type_value=All&field_training_delivery_value=All&field_training_city_target_id=All&field_job_market_target_id=All#"
+          },
+          {
+            "text": "",
+            "href": "https://futureskills.mcit.gov.sa/ar/catalogue/all?label=&field_main_tracks_target_id_verf=565&field_sub_tracks_target_id=All&field_training_course_level_target_id=All&field_related_skills_target_id=All&field_course_type_value=All&field_training_delivery_value=All&field_training_city_target_id=All&field_job_market_target_id=All#"
+          },
+          {
+            "text": "البرنامج المتخصص في العمل الحر",
+            "href": "http://futureskills.mcit.gov.sa/ar/node/20481"
+          },
+          {
+            "text": "معسكرات مهارات المستقبل",
+            "href": "http://futureskills.mcit.gov.sa/ar/node/17349"
+          },
+          {
+            "text": "مستوى متوسط\nIntroduction to APIs and Web Services\n دورة معرفية\n تفاعلية مباشرة\n تبدأ 27-09-2026 إلى 01-10-2026 لمدة 20 س",
+            "href": "https://futureskills.mcit.gov.sa/ar/group/13067"
+          },
+          {
+            "text": "مستوى متوسط\n⁠Data Preparation & Cleaning Essentials\n دورة معرفية\n تفاعلية مباشرة\n تبدأ 13-09-2026 إلى 15-09-2026 لمدة 12",
+            "href": "https://futureskills.mcit.gov.sa/ar/group/13064"
+          },
+          {
+            "text": "مستوى متوسط\n⁠Cloud Security and Compliance Fundamentals\n دورة معرفية\n تفاعلية مباشرة\n تبدأ 13-09-2026 إلى 15-09-2026 لمد",
+            "href": "https://futureskills.mcit.gov.sa/ar/group/13065"
+          },
+          {
+            "text": "مستوى متوسط\n⁠Data Science Foundations\n دورة معرفية\n تفاعلية مباشرة\n تبدأ 13-09-2026 إلى 16-09-2026 لمدة 16 ساعات",
+            "href": "https://futureskills.mcit.gov.sa/ar/group/13066"
+          },
+          {
+            "text": "مستوى متوسط\n⁠CCNP\n دورة معرفية\n تفاعلية مباشرة\n تبدأ 06-09-2026 إلى 10-09-2026 لمدة 20 ساعات",
+            "href": "https://futureskills.mcit.gov.sa/ar/group/13061"
+          },
+          {
+            "text": "مستوى متوسط\n⁠Data Analysis with Python\n دورة معرفية\n تفاعلية مباشرة\n تبدأ 06-09-2026 إلى 09-09-2026 لمدة 16 ساعات",
+            "href": "https://futureskills.mcit.gov.sa/ar/group/13062"
+          },
+          {
+            "text": "مستوى متوسط\n⁠Red Hat Certified System Administrator (RHCSA)\n دورة معرفية\n تفاعلية مباشرة\n تبدأ 06-09-2026 إلى 10-09-2026",
+            "href": "https://futureskills.mcit.gov.sa/ar/group/13063"
+          }
+        ]
+      },
+      "script_signals": {
+        "next_data_scripts": 0,
+        "nuxt_scripts": 0,
+        "json_ld_scripts": 0,
+        "large_inline_scripts": 0
+      },
+      "network_total": 1,
+      "network_endpoints": [],
+      "network_sample": [
+        {
+          "method": "GET",
+          "status": 200,
+          "url": "https://futureskills.mcit.gov.sa/ar/api2/cities?field_aldwlt_target_id=672",
+          "content_type": "application/json",
+          "resource_type": "xhr",
+          "request_post_data": "",
+          "response_shape": "json-like-invalid",
+          "preview": "[{\"tid_1\":\"68\",\"name\":\"\\u0627\\u0644\\u0631\\u064a\\u0627\\u0636\"},{\"tid_1\":\"69\",\"name\":\"\\u0627\\u0644\\u062f\\u0645\\u0627\\u0645\"},{\"tid_1\":\"70\",\"name\":\"\\u062c\\u062f\\u0629\"},{\"tid_1\":\"71\",\"name\":\"\\u0623\\u0628\\u0647\\u0627\"},{\"tid_1\":\"171\",\"name\":\"\\u0627\\u0644\\u062c\\u0628\\u064a\\u0644\"},{\"tid_1\":\"172\",\"name\":\"\\u0627\\u0644\\u0628\\u0627\\u062d\\u0629\"},{\"tid_1\":\"176\",\"name\":\"\\u0627\\u0644\\u0637\\u0627\\u0626\\u0641\"},{\"tid_1\":\"177\",\"name\":\"\\u0627\\u0644\\u0638\\u0647\\u0631\\u0627\\u0646\"},{\"tid_1\":\"182\",\"name\":\"\\u0627\\u0644\\u0645\\u0628\\u0631\\u0632\"},{\"tid_1\":\"183\",\"name\":\"\\u0627\\u0644\\u0645\\u062f\\u064a\\u0646\\u0629 \\u0627\\u0644\\u0645\\u0646\\u0648\\u0631\\u0629\"},{\"tid_1\":\"187\",\"name\":\"\\u062a\\u0628\\u0648\\u0643\"},{\"tid_1\":\"191\",\"name\":\"\\u0631\\u0641\\u062d\\u0627\\u0621\"},{\"tid_1\":\"192\",\"name\":\"\\u0633\\u0643\\u0627\\u0643\\u0627\"},{\"tid_1\":\"194\",\"name\":\"\\u0642\\u0644\\u0639\\u0629 \\u0628\\u064a\\u0634\\u0629\"},{\"tid_1\":\"196\",\"name\":\"\\u0646\\u062c\\u0631\\u0627\\u0646\"},{\"tid_1\":\"197\",\"name\":\"\\u062d\\u0627\\u0626\\u0644\"},{\"tid_1\":\"198\",\"name\":\"\\u064a\\u0646\\u0628\\u0639\"},{\"tid_1\":\"5042\",\"name\":\"\\u0627\\u0644\\u0623\\u062d\\u0633\\u0627\\u0621\"},{\"tid_1\":\"7319\",\"name\":\"\\u0639\\u0633\\u064a\\u0631\"},{\"tid_1\":\"10545\",\"name\":\"\\u0645\\u0643\\u0629 \\u0627\\u0644\\u0645\\u0643\\u0631\\u0645\\u0629\"},{\"tid_1\":\"10635\",\"name\":\"\\u0627\\u0644\\u062d\\u0644\\u0629\"},{\"tid_1\":\"10638\",\"name\":\"\\u0627\\u0644\\u062e\\u0631\\u062c\"},{\"tid_1\":\"10641\",\"name\":\"\\u0627\\u0644\\u0633\\u0644\\u064a\\u0644\"},{\"tid_1\":\"10647\",\"name\":\"\\u0627\\u0644\\u0642\\u0631\\u064a\\u0627\\u062a\"},{\"tid_1\":\"10650\",\"name\":\"\\u0627\\u0644\\u0642\\u0637\\u064a\\u0641\"},{\"tid_1\":\"10653\",\"name\":\"\\u0627\\u0644\\u0642\\u0646\\u0641\\u0630\\u0629\"},{\"tid_1\":\"10656\",\"name\":\"\\u0627\\u0644\\u0642\\u0648\\u064a\\u0639\\u064a\\u0629\"},{\"tid_1\":\"10659\",\"name\":\"\\u0627\\u0644\\u0647\\u0641\\u0648\\u0641\"},{\"tid_1\":\"10662\",\"name\":\"\\u062"
+        }
+      ]
+    },
+    {
       "id": "riyadh-city-events",
-      "probed_at": "2026-10-02T08:51:29.352Z",
+      "probed_at": "2026-10-03T08:15:24.945Z",
       "name": "Riyadh City Events",
       "priority": 51,
       "url": "https://riyadh.sa/en/events/all",
@@ -28,14 +516,14 @@
       "status": "ok",
       "http_status": 200,
       "navigation_error": "",
-      "duration_ms": 9936,
+      "duration_ms": 12965,
       "classification": "rendered-html-candidates",
       "next_action": "اكتب extractor مرن من DOM بعد الرندر أو حسن selector الحالي.",
       "title": "الموقع الرسمي لمدينة الرياض",
-      "text_bytes": 824,
-      "html_bytes": 155261,
-      "html_snapshot": "data/raw/browser-probes/riyadh-city-events-2026-10-02T08-51-18-963Z.html",
-      "screenshot": "data/raw/browser-probes/riyadh-city-events-2026-10-02T08-51-18-963Z.png",
+      "text_bytes": 826,
+      "html_bytes": 155263,
+      "html_snapshot": "data/raw/browser-probes/riyadh-city-events-2026-10-03T08-14-40-511Z.html",
+      "screenshot": "data/raw/browser-probes/riyadh-city-events-2026-10-03T08-14-40-511Z.png",
       "signals": {
         "has_next_data": false,
         "has_nuxt": false,

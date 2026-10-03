@@ -1,73 +1,18 @@
 {
-  "generated_at": "2026-10-02T09:13:43.992Z",
+  "generated_at": "2026-10-03T08:32:10.277Z",
   "events_file": "dist/events.json",
   "manifest": "data/event_image_cache_manifest.json",
   "image_dir": "dist/assets/event-images",
   "totals": {
     "targets": 500,
     "cached_total": 888,
-    "fetched": 9,
-    "reused": 485,
+    "fetched": 0,
+    "reused": 494,
     "failed": 6,
-    "skipped_recent_failures": 0,
+    "skipped_recent_failures": 6,
     "remembered_failures": 30
   },
-  "fetched": [
-    {
-      "source_url": "https://hayyjameel.org/wp-content/uploads/2026/09/Artist1-Ustad-Abdul-Aziz-1100x500.jpg",
-      "file": "dist/assets/event-images/hayy-cinema-x-hayy-arts-between-destinations-short-films-artist-discus-4a5dd900a3.jpg",
-      "bytes": 102486,
-      "events": 1
-    },
-    {
-      "source_url": "https://hayyjameel.org/wp-content/uploads/2026/09/annie-spratt-HB-Kf9WLy_0-unsplash-scaled-aspect-ratio-2560-1349-1-1100x500.jpg",
-      "file": "dist/assets/event-images/هاي-ماكرز-ليلة-مبتكرة-6b61cb62fa.jpg",
-      "bytes": 27129,
-      "events": 1
-    },
-    {
-      "source_url": "https://hayyjameel.org/wp-content/uploads/2026/09/coffee-edition-1100x500.jpg",
-      "file": "dist/assets/event-images/azka-farmers-market-coffee-edition-399e805bc0.jpg",
-      "bytes": 132831,
-      "events": 1
-    },
-    {
-      "source_url": "https://hayyjameel.org/wp-content/uploads/2026/09/IMG-6538-scaled-aspect-ratio-1688-783-1100x500.jpg",
-      "file": "dist/assets/event-images/hayy-makers-open-day-plastic-cap-mural-90f0ee58f1.jpg",
-      "bytes": 158861,
-      "events": 1
-    },
-    {
-      "source_url": "https://hayyjameel.org/wp-content/uploads/2026/09/la-traversee-1-1-2560x-q85-1100x500.jpg",
-      "file": "dist/assets/event-images/hayy-cinema-october-2026-a771c51824.jpg",
-      "bytes": 99998,
-      "events": 1
-    },
-    {
-      "source_url": "https://hayyjameel.org/wp-content/uploads/2026/09/3-scaled-aspect-ratio-2538-1280-1100x500.png",
-      "file": "dist/assets/event-images/هاي-يبدو-ريد-ويند-،-ندوة-سونيك-ريسيدوس-الموسيقية-dd89e5c3e6.png",
-      "bytes": 868432,
-      "events": 1
-    },
-    {
-      "source_url": "https://hayyjameel.org/wp-content/uploads/2024/12/HayyMatsuri_Banner-1100x500.png",
-      "file": "dist/assets/event-images/هاي-ماتسوري-سيليبارات-السعودية-اليابان-1b57edc11a.png",
-      "bytes": 185008,
-      "events": 1
-    },
-    {
-      "source_url": "https://hayyjameel.org/wp-content/uploads/2026/09/DSC02834-1-scaled-aspect-ratio-2560-1471-1100x500.jpg",
-      "file": "dist/assets/event-images/هاي-ماكرز-2ebb5c6137.jpg",
-      "bytes": 103009,
-      "events": 1
-    },
-    {
-      "source_url": "https://www.ithra.com/application/files/cache/thumbnails/e62a5dbedd618e4c73eba84cf1f7d03b.png",
-      "file": "dist/assets/event-images/الجسور-إلى-اللغة-الإسبانية-daf5c5cc26.png",
-      "bytes": 1225035,
-      "events": 1
-    }
-  ],
+  "fetched": [],
   "reused": [
     {
       "source_url": "https://music.moc.gov.sa/-/media/Project/Ministries/Moc/Events/Artboard1.png",
@@ -600,13 +545,13 @@
       "events": 1
     },
     {
-      "source_url": "https://www.datocms-assets.com/66357/1751801189-mdlbeast.png?auto=format&fit=max&w=1200",
-      "file": "dist/assets/event-images/unstable-ba5c599823.avif",
-      "events": 5
-    },
-    {
       "source_url": "https://api.riyadh.sa/sites/default/files/styles/medium/public/2026-05/BG-KKESH-01-scaled.jpg?itok=TyhrDOfg",
       "file": "dist/assets/event-images/king-khaled-eye-specialist-hospital-and-research-center-2026-internati-245613e9b7.jpg",
+      "events": 1
+    },
+    {
+      "source_url": "https://hayyjameel.org/wp-content/uploads/2026/09/coffee-edition-1100x500.jpg",
+      "file": "dist/assets/event-images/azka-farmers-market-coffee-edition-399e805bc0.jpg",
       "events": 1
     },
     {
@@ -620,19 +565,9 @@
       "events": 1
     },
     {
-      "source_url": "https://www.ithra.com/application/files/cache/thumbnails/5c595252d2af2e0b0cd47e3052049c40.jpg",
-      "file": "dist/assets/event-images/an-experience-with-an-artist-88d777a7f2.jpg",
-      "events": 1
-    },
-    {
       "source_url": "https://www.ithra.com/application/files/cache/thumbnails/674b96300a249dd9d1d3eeb5c1b82245.png",
       "file": "dist/assets/event-images/family-game-within-five-seconds-7844419450.png",
       "events": 1
-    },
-    {
-      "source_url": "https://www.ithra.com/application/files/cache/thumbnails/883ef249dfbc9ec53aed24a31039d3fb.png",
-      "file": "dist/assets/event-images/mom-through-my-eyes-arabic-fc09dfd70b.png",
-      "events": 2
     },
     {
       "source_url": "https://hub.misk.org.sa/media/ovkjtk3x/artificial-intelligence.png",
@@ -715,6 +650,16 @@
       "events": 1
     },
     {
+      "source_url": "https://hayyjameel.org/wp-content/uploads/2026/09/la-traversee-1-1-2560x-q85-1100x500.jpg",
+      "file": "dist/assets/event-images/hayy-cinema-october-2026-a771c51824.jpg",
+      "events": 1
+    },
+    {
+      "source_url": "https://hayyjameel.org/wp-content/uploads/2026/09/Artist1-Ustad-Abdul-Aziz-1100x500.jpg",
+      "file": "dist/assets/event-images/hayy-cinema-x-hayy-arts-between-destinations-short-films-artist-discus-4a5dd900a3.jpg",
+      "events": 1
+    },
+    {
       "source_url": "https://www.ithra.com/application/files/cache/thumbnails/03aa29a008d9d56c3d155fb84ab52397.jpg",
       "file": "dist/assets/event-images/jinayah-podcast-e269f65c72.jpg",
       "events": 1
@@ -750,6 +695,11 @@
       "events": 1
     },
     {
+      "source_url": "https://www.ithra.com/application/files/cache/thumbnails/e62a5dbedd618e4c73eba84cf1f7d03b.png",
+      "file": "dist/assets/event-images/الجسور-إلى-اللغة-الإسبانية-daf5c5cc26.png",
+      "events": 1
+    },
+    {
       "source_url": "https://mebankingai.com/whatsapp.png",
       "file": "dist/assets/event-images/12th-middle-east-banking-ai-analytics-summit-2026-bc988c16fd.png",
       "events": 1
@@ -765,6 +715,11 @@
       "events": 1
     },
     {
+      "source_url": "https://www.ithra.com/application/files/cache/thumbnails/883ef249dfbc9ec53aed24a31039d3fb.png",
+      "file": "dist/assets/event-images/mom-through-my-eyes-arabic-fc09dfd70b.png",
+      "events": 2
+    },
+    {
       "source_url": "https://api.riyadh.sa/sites/default/files/styles/medium/public/2025-12/agriculture%20%282%29.jpg?itok=-A4P3sDu",
       "file": "dist/assets/event-images/saudi-agriculture-d9a5ea421d.jpg",
       "events": 1
@@ -777,6 +732,16 @@
     {
       "source_url": "https://www.ithra.com/application/files/cache/thumbnails/fd743dc190d99ded6708dfc96b3a1d68.jpg",
       "file": "dist/assets/event-images/immersive-introduction-to-arabic-writing-and-type-design-1c7ab6de8f.jpg",
+      "events": 1
+    },
+    {
+      "source_url": "https://hayyjameel.org/wp-content/uploads/2026/09/3-scaled-aspect-ratio-2538-1280-1100x500.png",
+      "file": "dist/assets/event-images/هاي-يبدو-ريد-ويند-،-ندوة-سونيك-ريسيدوس-الموسيقية-dd89e5c3e6.png",
+      "events": 1
+    },
+    {
+      "source_url": "https://hayyjameel.org/wp-content/uploads/2026/09/annie-spratt-HB-Kf9WLy_0-unsplash-scaled-aspect-ratio-2560-1349-1-1100x500.jpg",
+      "file": "dist/assets/event-images/هاي-ماكرز-ليلة-مبتكرة-6b61cb62fa.jpg",
       "events": 1
     },
     {
@@ -833,6 +798,16 @@
       "source_url": "https://static.wixstatic.com/media/708478_a08e284e0e2b4361addf88f967bb6b9f%7Emv2.png/v1/fit/w_2500,h_1330,al_c/708478_a08e284e0e2b4361addf88f967bb6b9f%7Emv2.png",
       "file": "dist/assets/event-images/cips-mena-procurement-and-supply-chain-futures-conference-and-awards-42e0ccbf3d.png",
       "events": 1
+    },
+    {
+      "source_url": "https://hayyjameel.org/wp-content/uploads/2026/09/IMG-6538-scaled-aspect-ratio-1688-783-1100x500.jpg",
+      "file": "dist/assets/event-images/hayy-makers-open-day-plastic-cap-mural-90f0ee58f1.jpg",
+      "events": 1
+    },
+    {
+      "source_url": "https://www.datocms-assets.com/66357/1751801189-mdlbeast.png?auto=format&fit=max&w=1200",
+      "file": "dist/assets/event-images/unstable-ba5c599823.avif",
+      "events": 5
     },
     {
       "source_url": "https://api.riyadh.sa/sites/default/files/styles/medium/public/2026-01/esports.jpg?itok=m-JCBfZQ",
@@ -1135,6 +1110,11 @@
       "events": 1
     },
     {
+      "source_url": "https://hayyjameel.org/wp-content/uploads/2024/12/HayyMatsuri_Banner-1100x500.png",
+      "file": "dist/assets/event-images/هاي-ماتسوري-سيليبارات-السعودية-اليابان-1b57edc11a.png",
+      "events": 1
+    },
+    {
       "source_url": "https://s7g10.scene7.com/is/image/rcu/Ultra-Gobi-Hegra-Sange-Hero-Picture:landscape-16x9?wid=1600&hei=900&fit=constrain&fmt=webp",
       "file": "dist/assets/event-images/ultra-gobi-alula-7a91d7ee71.webp",
       "events": 1
@@ -1217,6 +1197,16 @@
     {
       "source_url": "https://ssa.gov.sa/media/3j2f0xpa/sdc2028.webp?width=1400&height=788&rnd=134303158965830000",
       "file": "dist/assets/event-images/مؤتمر-الحطام-الفضائي-2028-ed926e1bba.webp",
+      "events": 1
+    },
+    {
+      "source_url": "https://www.ithra.com/application/files/cache/thumbnails/5c595252d2af2e0b0cd47e3052049c40.jpg",
+      "file": "dist/assets/event-images/an-experience-with-an-artist-88d777a7f2.jpg",
+      "events": 1
+    },
+    {
+      "source_url": "https://hayyjameel.org/wp-content/uploads/2026/09/DSC02834-1-scaled-aspect-ratio-2560-1471-1100x500.jpg",
+      "file": "dist/assets/event-images/هاي-ماكرز-2ebb5c6137.jpg",
       "events": 1
     },
     {
@@ -2496,87 +2486,107 @@
     }
   ],
   "rejected_removed": [],
-  "missing_removed": [
-    {
-      "source_url": "https://hayyjameel.org/wp-content/uploads/2026/09/annie-spratt-HB-Kf9WLy_0-unsplash-scaled-aspect-ratio-2560-1349-1-1100x500.jpg",
-      "file": "dist/assets/event-images/هاي-ماكرز-ليلة-مبتكرة-6b61cb62fa.jpg",
-      "reason": "cached-file-missing"
-    },
-    {
-      "source_url": "https://hayyjameel.org/wp-content/uploads/2026/09/coffee-edition-1100x500.jpg",
-      "file": "dist/assets/event-images/azka-farmers-market-coffee-edition-399e805bc0.jpg",
-      "reason": "cached-file-missing"
-    },
-    {
-      "source_url": "https://hayyjameel.org/wp-content/uploads/2026/09/DSC02834-1-scaled-aspect-ratio-2560-1471-1100x500.jpg",
-      "file": "dist/assets/event-images/هاي-ماكرز-2ebb5c6137.jpg",
-      "reason": "cached-file-missing"
-    },
-    {
-      "source_url": "https://hayyjameel.org/wp-content/uploads/2024/12/HayyMatsuri_Banner-1100x500.png",
-      "file": "dist/assets/event-images/هاي-ماتسوري-سيليبارات-السعودية-اليابان-1b57edc11a.png",
-      "reason": "cached-file-missing"
-    },
-    {
-      "source_url": "https://hayyjameel.org/wp-content/uploads/2026/09/3-scaled-aspect-ratio-2538-1280-1100x500.png",
-      "file": "dist/assets/event-images/hayy-sounds-red-wind-sonic-residues-music-symposium-dd89e5c3e6.png",
-      "reason": "cached-file-missing"
-    },
-    {
-      "source_url": "https://www.ithra.com/application/files/cache/thumbnails/e62a5dbedd618e4c73eba84cf1f7d03b.png",
-      "file": "dist/assets/event-images/الجسور-إلى-اللغة-الإسبانية-daf5c5cc26.png",
-      "reason": "cached-file-missing"
-    }
-  ],
-  "skipped_recent_failures": [],
-  "failed": [
-    {
-      "source_url": "https://s7g10.scene7.com/is/image/rcu/sunset-stillness-meditation-sound-immersion:landscape-16x9?$Responsive$&fit=stretch&fmt=webp&wid=1920",
-      "events": 1,
-      "reason": "HTTP 403",
-      "failure_kind": "access-denied",
-      "retry_after": "2026-10-03T09:13:43.992Z"
-    },
+  "missing_removed": [],
+  "skipped_recent_failures": [
     {
       "source_url": "https://s7g10.scene7.com/is/image/rcu/stargazing-at-alula-fort:landscape-16x9?$Responsive$&fit=stretch&fmt=webp&wid=1920",
       "events": 1,
       "reason": "HTTP 403",
       "failure_kind": "access-denied",
-      "retry_after": "2026-10-03T09:13:43.992Z"
+      "retry_after": "2026-10-03T09:13:43.992Z",
+      "skipped": true
+    },
+    {
+      "source_url": "https://s7g10.scene7.com/is/image/rcu/sunset-stillness-meditation-sound-immersion:landscape-16x9?$Responsive$&fit=stretch&fmt=webp&wid=1920",
+      "events": 1,
+      "reason": "HTTP 403",
+      "failure_kind": "access-denied",
+      "retry_after": "2026-10-03T09:13:43.992Z",
+      "skipped": true
     },
     {
       "source_url": "https://s7g10.scene7.com/is/image/rcu/leonid-meteor-shower-at-jabal-ikmah:landscape-16x9?$Responsive$&fit=stretch&fmt=webp&wid=1920",
       "events": 1,
       "reason": "HTTP 403",
       "failure_kind": "access-denied",
-      "retry_after": "2026-10-03T09:13:43.992Z"
+      "retry_after": "2026-10-03T09:13:43.992Z",
+      "skipped": true
     },
     {
       "source_url": "https://s7g10.scene7.com/is/image/rcu/fei2:landscape-16x9?$Responsive$&fit=stretch&fmt=webp&wid=1920",
       "events": 1,
       "reason": "HTTP 403",
       "failure_kind": "access-denied",
-      "retry_after": "2026-10-03T09:13:43.992Z"
-    },
-    {
-      "source_url": "https://cdn.rfecc.sa/wp-content/uploads/mec/qr_898ea2449274454e42895b52b18c6f68.png",
-      "events": 1,
-      "reason": "HTTP 403",
-      "failure_kind": "access-denied",
-      "retry_after": "2026-10-03T09:13:43.992Z"
+      "retry_after": "2026-10-03T09:13:43.992Z",
+      "skipped": true
     },
     {
       "source_url": "https://api.riyadh.sa/sites/default/files/styles/medium/public/2026-07/er%20%2859%29.jpg?itok=a33APdGm",
       "events": 1,
       "reason": "not-image text/html; charset=utf-8",
       "failure_kind": "source-returned-html",
-      "retry_after": "2026-10-03T09:13:43.992Z"
+      "retry_after": "2026-10-03T09:13:43.992Z",
+      "skipped": true
+    },
+    {
+      "source_url": "https://cdn.rfecc.sa/wp-content/uploads/mec/qr_898ea2449274454e42895b52b18c6f68.png",
+      "events": 1,
+      "reason": "HTTP 403",
+      "failure_kind": "access-denied",
+      "retry_after": "2026-10-03T09:13:43.992Z",
+      "skipped": true
     }
   ],
-  "requires_rebuild": true,
-  "rebuild_reasons": [
-    "fetched:9",
-    "missing-removed:6",
-    "new-failures:6"
-  ]
+  "failed": [
+    {
+      "source_url": "https://s7g10.scene7.com/is/image/rcu/stargazing-at-alula-fort:landscape-16x9?$Responsive$&fit=stretch&fmt=webp&wid=1920",
+      "events": 1,
+      "reason": "HTTP 403",
+      "failure_kind": "access-denied",
+      "retry_after": "2026-10-03T09:13:43.992Z",
+      "skipped": true
+    },
+    {
+      "source_url": "https://s7g10.scene7.com/is/image/rcu/sunset-stillness-meditation-sound-immersion:landscape-16x9?$Responsive$&fit=stretch&fmt=webp&wid=1920",
+      "events": 1,
+      "reason": "HTTP 403",
+      "failure_kind": "access-denied",
+      "retry_after": "2026-10-03T09:13:43.992Z",
+      "skipped": true
+    },
+    {
+      "source_url": "https://s7g10.scene7.com/is/image/rcu/leonid-meteor-shower-at-jabal-ikmah:landscape-16x9?$Responsive$&fit=stretch&fmt=webp&wid=1920",
+      "events": 1,
+      "reason": "HTTP 403",
+      "failure_kind": "access-denied",
+      "retry_after": "2026-10-03T09:13:43.992Z",
+      "skipped": true
+    },
+    {
+      "source_url": "https://s7g10.scene7.com/is/image/rcu/fei2:landscape-16x9?$Responsive$&fit=stretch&fmt=webp&wid=1920",
+      "events": 1,
+      "reason": "HTTP 403",
+      "failure_kind": "access-denied",
+      "retry_after": "2026-10-03T09:13:43.992Z",
+      "skipped": true
+    },
+    {
+      "source_url": "https://api.riyadh.sa/sites/default/files/styles/medium/public/2026-07/er%20%2859%29.jpg?itok=a33APdGm",
+      "events": 1,
+      "reason": "not-image text/html; charset=utf-8",
+      "failure_kind": "source-returned-html",
+      "retry_after": "2026-10-03T09:13:43.992Z",
+      "skipped": true
+    },
+    {
+      "source_url": "https://cdn.rfecc.sa/wp-content/uploads/mec/qr_898ea2449274454e42895b52b18c6f68.png",
+      "events": 1,
+      "reason": "HTTP 403",
+      "failure_kind": "access-denied",
+      "retry_after": "2026-10-03T09:13:43.992Z",
+      "skipped": true
+    }
+  ],
+  "requires_rebuild": false,
+  "rebuild_reasons": []
 }

@@ -1,16 +1,14 @@
 # EventLive Visit Saudi Image Identity Report
 
-- generated_at: 2026-10-02T09:07:24.097Z
-- pdf_crop_assignments: 30
-- verified: 26
-- struck: 4
-- slots_seen_this_cycle: 28
+- generated_at: 2026-10-03T08:24:36.346Z
+- pdf_crop_assignments: 27
+- verified: 25
+- struck: 2
+- slots_seen_this_cycle: 27
 
 ## Struck (fell back to generated cover)
 
-- بيوني الشرف (visit-saudi-summer-2026-p025-top-right.jpg) - slot-vacated - no dated card currently occupies page 25 top-right of https://www.visitsaudi.com/content/dam/documents/saudi-calendar-ar.pdf
-- شعف (visit-saudi-summer-2026-p025-bottom-left.jpg) - slot-vacated - no dated card currently occupies page 25 bottom-left of https://www.visitsaudi.com/content/dam/documents/saudi-calendar-ar.pdf
-- طوني أبو جودة في الرياض (visit-saudi-summer-2026-p061-bottom-left.jpg) - slot-vacated - no dated card currently occupies page 61 bottom-left of https://www.visitsaudi.com/content/dam/documents/saudi-calendar-ar.pdf
+- بي إف إل مينا 11 - نصف النهائي في الرياض (visit-saudi-summer-2026-p062-top-right.jpg) - slot-vacated - no dated card currently occupies page 62 top-right of https://www.visitsaudi.com/content/dam/documents/saudi-calendar-ar.pdf
 - ألف وواحد (visit-saudi-summer-2026-p063-bottom-left.jpg) - identity-mismatch - page 63 bottom-left is now "وقف! عرض نمر الكوميدي المباشر في الرياض"
 
 ## Verified
@@ -27,7 +25,6 @@
 - سيرك فونتانا (visit-saudi-summer-2026-p052-bottom-left.jpg)
 - دوري الملوك MENA (visit-saudi-summer-2026-p053-top-right.jpg)
 - كأس الخليج (visit-saudi-summer-2026-p007-bottom-right.jpg)
-- بي إف إل مينا 11 - نصف النهائي في الرياض (visit-saudi-summer-2026-p062-top-right.jpg)
 - IN ACT - ACT X (visit-saudi-summer-2026-p062-top-left.jpg)
 - عرض علاء الشيخ في الرياض (visit-saudi-summer-2026-p062-bottom-right.jpg)
 - عرض علاء الشيخ في جدة (visit-saudi-summer-2026-p021-top-right.jpg)
