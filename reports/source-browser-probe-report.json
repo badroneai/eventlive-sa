@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-03T08:14:40.511Z",
+  "generated_at": "2026-10-04T08:44:11.871Z",
   "source_registry": "data/source_registry.json",
   "collection_report": "reports/source-collection-report.json",
   "output_dir": "data/raw/browser-probes",
@@ -25,7 +25,7 @@
   "sources": [
     {
       "id": "mdlbeast-events",
-      "probed_at": "2026-10-03T08:14:52.991Z",
+      "probed_at": "2026-10-04T08:44:22.189Z",
       "name": "MDLBEAST Events",
       "priority": 8,
       "url": "https://mdlbeast.com/events",
@@ -33,36 +33,40 @@
       "status": "ok",
       "http_status": 200,
       "navigation_error": "",
-      "duration_ms": 10906,
+      "duration_ms": 9852,
       "classification": "browser-network-api",
       "next_action": "ثبت endpoint مرشحًا كجامع مباشر، ثم اكتب extractor من JSON مع اختبار انحدار.",
       "title": "MDLBEAST Events Calendar - Discover Now | MDLBEAST",
-      "text_bytes": 2883,
-      "html_bytes": 387961,
-      "html_snapshot": "data/raw/browser-probes/mdlbeast-events-2026-10-03T08-14-40-511Z.html",
-      "screenshot": "data/raw/browser-probes/mdlbeast-events-2026-10-03T08-14-40-511Z.png",
+      "text_bytes": 2898,
+      "html_bytes": 393209,
+      "html_snapshot": "data/raw/browser-probes/mdlbeast-events-2026-10-04T08-44-11-871Z.html",
+      "screenshot": "data/raw/browser-probes/mdlbeast-events-2026-10-04T08-44-11-871Z.png",
       "signals": {
         "has_next_data": true,
         "has_nuxt": false,
         "has_json_ld": false,
         "has_event_schema": false,
         "date_snippets": [
-          "e, discover, and dance. PAST EVENTS THU 01 OCT 2026 BEAST HOUSE In Riyadh THU 01 OCT 2026 - FRI 02 OCT 2026 UNSTABLE In Riyadh FRI",
-          "04 SEP 2026 - SAT 05 SEP 2026 MDLBEAST RADIO MIXTAPE In Riyadh THU 05 FEB 2026 - FRI 06 FEB 2026 BALAD BEAST",
-          "2026 In Jeddah THU 11 DEC 2025 - SAT 13 DEC 2025 SOUNDSTORM 25 In Riyadh THU 04 DEC 2025 - SAT 06 DEC 2025 XP MUSIC FUTURES 2025",
-          "In Riyadh THU 25 SEP 2025 - FRI 26 SEP 2025 AZIMUTH 2025 In Alula THU 25 SEP 2025 - FRI 26 SEP 2025 BALAD SOCIAL In Jeddah",
-          "MON 04 AUG 2025 BEAST HOUSE PRESENTS GHOSTLY KISSES In Riyadh FRI 18 JUL 2025 - THU 07 AUG 2025",
+          "OCT UNSTABLE In Riyadh PAST EVENTS FRI 04 SEP 2026 - SAT 05 SEP 2026 MDLBEAST RADIO MIXTAPE In Riyadh THU 05 FEB 2026 - FRI 06 FEB",
+          "2026 BALAD BEAST 2026 In Jeddah THU 11 DEC 2025 - SAT 13 DEC 2025 SOUNDSTORM 25 In Riyadh THU 04 DEC 2025 - SAT 06 DEC 2025 XP",
+          "MUSIC FUTURES 2025 In Riyadh THU 25 SEP 2025 - FRI 26 SEP 2025 AZIMUTH 2025 In Alula THU 25 SEP 2025 - FRI 26 SEP 2025 BALAD",
+          "SOCIAL In Jeddah MON 04 AUG 2025 BEAST HOUSE PRESENTS GHOSTLY KISSES In Riyadh FRI 18 JUL 2025 - THU 07 AUG 2025",
           "AFT_R In Riyadh THU 17 JUL 2025 - FRI 08 AUG 2025 ONYX ARENA In Jeddah FRI 23 MAY 2025 MDLBEAST PRESENTS: GUNS N' ROSES In Riyadh",
           "SAT 17 MAY 2025 - SUN 18 MAY 2025 HOUSE BLEND In Riyadh THU 24 APR 2025 - FRI 25 APR 2025 A THOUSAND AND ONE 2025",
-          "In Riyadh FRI 18 APR 2025 - SUN 20 APR 2025 FORMULA 1 STC SAUDI ARABIAN GRAND PRIX 2025 In Jeddah FRI 04 APR 2025 MOJA In J"
+          "In Riyadh FRI 18 APR 2025 - SUN 20 APR 2025 FORMULA 1 STC SAUDI ARABIAN GRAND PRIX 2025 In Jeddah FRI 04 APR 2025 MOJA In J",
+          "eddah FRI 04 APR 2025 MDLBEAST PRESENTS: KEINEMUSIK In AlUla FRI 21 FEB 2025 - SUN 23 FEB 2025 KOKUB"
         ],
         "event_like_links": [
           {
-            "text": "THU 01 OCT 2026\n\nBEAST HOUSE\n\nIn Riyadh",
+            "text": "EXPLORE FULL CALENDAR",
+            "href": "https://mdlbeast.com/events/calendar"
+          },
+          {
+            "text": "THU 08 OCT\n\nBEAST HOUSE\n\nIn Riyadh",
             "href": "https://mdlbeast.com/events/beast-house"
           },
           {
-            "text": "THU 01 OCT 2026 - FRI 02 OCT 2026\n\nUNSTABLE\n\nIn Riyadh",
+            "text": "FRI 23 OCT - SAT 24 OCT\n\nUNSTABLE\n\nIn Riyadh",
             "href": "https://mdlbeast.com/events/unstable"
           },
           {
@@ -132,10 +136,6 @@
           {
             "text": "THU 30 JAN 2025 - FRI 31 JAN 2025\n\nBALAD BEAST 2025\n\nIn Jeddah",
             "href": "https://mdlbeast.com/events/balad-beast-2025"
-          },
-          {
-            "text": "THU 12 DEC 2024 - SAT 14 DEC 2024\n\nSOUNDSTORM 24\n\nIn Riyadh",
-            "href": "https://mdlbeast.com/events/soundstorm-2024"
           }
         ]
       },
@@ -145,52 +145,52 @@
         "json_ld_scripts": 0,
         "large_inline_scripts": 2
       },
-      "network_total": 17,
+      "network_total": 18,
       "network_endpoints": [
         {
           "method": "GET",
           "status": 200,
-          "url": "https://ara.paa-reporting-advertising.amazon/aat?pid=ee49cad3-31b1-422d-ae49-b96ef7139d3f&event=PageView&currencyCode=SAR&ts=1791015283304&eventSource=amzn.js&uuid=40d0376c-6344-440e-b520-24ff792b2e37",
+          "url": "https://mdlbeast.com/_next/data/m0RVCB6Xmjfj78jX68_TJ/en/events/calendar.json",
           "content_type": "application/json",
           "resource_type": "fetch",
           "request_post_data": "",
-          "response_shape": "json-object:",
-          "preview": "{}"
+          "response_shape": "json-like-invalid",
+          "preview": "{\"pageProps\":{\"events\":[{\"title\":\"Beast House\",\"slug\":\"beast-house\",\"id\":\"LrwF27BJQwSahu3U7WDIkQ\",\"startDatetime\":\"2026-10-08T18:00:00+00:00\",\"endDatetime\":\"2026-10-09T00:00:00+00:00\",\"timezone\":\"Asia/Riyadh\",\"colorAccent\":{\"hex\":\"#FF00FF\"},\"city\":\"Riyadh\",\"logo\":{\"id\":\"VUU7VMF5SVi1EkkGOcz_qw\",\"mimeType\":\"image/webp\",\"url\":\"https://www.datocms-assets.com/66357/1703668968-beast-house-logo-06.webp\",\"alt\":null,\"title\":null,\"blurUpThumb\":\"data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAMAAADXqc3KAAABIFBMVEX//vz//vz//vz//vz//vz//vz//vz//vz//vz//vz//vz//vz//vz//vz//vz//vz//vz//vz//vz//vz//vz//vz//vz//vz//vz//vz//vz//vz//vz//vz//vz//vz//vz//vz//vz//vz//vz//vz//vz//vz//vz//vz//vz//vz//vz//vz//vz//vz//vz//vz//vz//vz//vz//vz//vz//vz//vz//vz//vz//vz//vz//vz//vz//vz//vz//vz//vz//vz//vz//vz//vz//vz//vz//vz//vz//vz//vz//vz//vz//vz//vz//vz//vz//vz//vz//vz//vz//vz//vz//vz//vz//vz//vz//vz//vz//vz0lQLDAAAAYHRSTlMAAQIDBAUGBwgJCgsMDQ4PEBESExQVFhcYGRobHB0eHyAhIyQlJykqKywtLi8wMTM0Njc4Oj0+P0BBQkRHSElKTlBRUlRWV1tdX2BhYmRmaGprb3BxdHV3eHp7fH2Bg4Th5xvkAAAA70lEQVR42pWS627CMAyFHedWCt1g7/+GE4JWvaV2nLVQaBGdtJ1fjr8ktk9iDhRgFqLII9Ym0CMGgWceolnysMoDGPhFfwIOmTeAKjLkrnkD9lR4pOCv8gryr+POY+ydu/YrgMXpeMgNsrPWVu00gtEJ0O4+P4o8typaTEnZIAlMNu63+yzzmR+BWD+QqDgCnDwape4au5uL0xQGR0QGFBEPIfS3q6YeAiuNShxwaOtqLn4zr2ERYaNiW5eXbj1H+GbeW0VteeHXAeXMvYehrtKbVyU5oGbL3Y6BNm1PEdL/HkppkOWI0XH5PYDPhf4B7qtwzckK/QEAAAAASUVORK5CYII=\"},\"cover\":{\"id\":\"QjpOfbhoTkKfAnCuPCh_zA\",\"mimeType\":\"image/webp\",\"url\":\"https://www.datocms-assets.com/66357/1753608398-1-aug-event-banners-01.webp\",\"alt\":null,\"title\":null,\"blurUpThumb\":\"data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAoHBwgHBhYICAgLFgoODA0VDQ0NDigSDg0NFxUZGBYTFhUdHy0jGh0oHSEWJDUlKC0vMjIyGSI4PTcwPCsxMi8BCgsLDg0OHA0QHDsoIh4vLy8vLzsvOy8vNS8vLy8vLy8vLzs7Ly8vLy8vLy8vLy8vLy8"
         },
         {
           "method": "GET",
           "status": 200,
-          "url": "https://ara.paa-reporting-advertising.amazon/aat?pid=03be6e9f-5eab-4882-89fd-5120fc72e9bc&event=PageView&currencyCode=SAR&ts=1791015283304&eventSource=amzn.js&uuid=697c77b9-e466-42fb-a972-6db7b1d58690",
-          "content_type": "application/json",
-          "resource_type": "fetch",
-          "request_post_data": "",
-          "response_shape": "json-object:",
-          "preview": "{}"
-        },
-        {
-          "method": "GET",
-          "status": 200,
-          "url": "https://mc.yango.com/watch/3/1?wmode=7&page-url=https%3A%2F%2Fmdlbeast.com%2Fevents&page-ref&charset=utf-8&browser-info=pv%3A1%3Avf%3A37xk0fgslry1wqf7aktfs70g0rmlch%3Afu%3A0%3Aen%3Autf-8%3Ala%3Aen-US%3Av%3A2660%3Acn%3A2%3Adp%3A0%3Als%3A1589876246990%3Ahid%3A386827248%3Az%3A0%3Ai%3A20261003081444%3Aet%3A1791015284%3Ac%3A1%3Arn%3A972293323%3Arqn%3A1%3Au%3A1791015284383654530%3Aw%3A1280x720%3As%3A1280x720x24%3Ask%3A1%3Afp%3A252%3Ast%3A1791015284&t=clc%280-0-0%29rqnt%281%29ti%281%29&redirnss=1",
+          "url": "https://mc.yango.com/watch/3/1?wmode=7&page-url=https%3A%2F%2Fmdlbeast.com%2Fevents&page-ref&charset=utf-8&browser-info=pv%3A1%3Avf%3A37xk0fgslry1wqf7aktfs70g0rmlch%3Afu%3A0%3Aen%3Autf-8%3Ala%3Aen-US%3Av%3A2660%3Acn%3A2%3Adp%3A0%3Als%3A1504282654565%3Ahid%3A361739810%3Az%3A0%3Ai%3A20261004084414%3Aet%3A1791103454%3Ac%3A1%3Arn%3A66719695%3Arqn%3A1%3Au%3A1791103454910481117%3Aw%3A1280x720%3As%3A1280x720x24%3Ask%3A1%3Afp%3A316%3Ast%3A1791103454&t=clc%280-0-0%29rqnt%281%29ti%281%29&redirnss=1",
           "content_type": "application/json",
           "resource_type": "fetch",
           "request_post_data": "",
           "response_shape": "json-object:settings,userData",
-          "preview": "{\"settings\":{\"sbp\": {\"a\":\"K4Ntw342I+7CMCV2NM13TBEP3a46m9TzK+xI2RWHzjbMa6H/pcqXgQ9K8vFhXvJO\", \"b\":\"DqQZnt1nxFCNg+FGYtTQRbcmh7c32sblyYqzC/fo6BxHBTFopNsilwUuYQLO9py6\"},\"eu\":2,\"region\":\"US\",\"nss\":1,\"hittoken\":\"1791015284_840b43db2bba1af55e06cf3c98a4d8879b4ff9b8e5f8623141708db6b6c384b3\",\"wstoken\":\"11173.-YuHwd5D5v_KotiTtVU1SDhfrNdprvEMR9CpSbPiuQSDUC-cuD3EaBDPJYgJb0d0goshZZxFfTZ0Vs_c5k4NE0jte-XdhqJj7nTeo9FB5dg,.HAggUXfLM7fSlXWXI6lIaqew6N0,\",\"ev\":{\"pvt\":1791015284},\"hidv2\":\"5805987485091102900\",\"ymclid\":\"5805987485091102900\"},\"userData\":{}}"
+          "preview": "{\"settings\":{\"sbp\": {\"a\":\"S+orXYnDaU1WefAt64W7SgKjacX3CfnUQ6bzrG5hMNin8eduuvzTyonBjBW22ysD\", \"b\":\"RR/wcodVvV0Xjv4ggZh3GmEhJF4nMc1tsXavDLlxn3R+4/TIF5FmnqCPdUwrAHwG\"},\"eu\":2,\"region\":\"US\",\"nss\":1,\"hittoken\":\"1791103454_9d5ed2fd6ae0b406a13b87c074931c9bd1c3ce63e35c4eebe8db2af21b2f9f9b\",\"wstoken\":\"11174.gUHiNGDziuWhsCV7VZwLFlGtqFbSC5MnhQOiUe7D7IwYbOwZWvpqvx3rRKb8LinQfepFBt862TysEDY1Ri6gADABkF9W7_lUfHv0lIaStuU,.VeSr4oQrE_yRqo09Ed2OIkUesKM,\",\"ev\":{\"pvt\":1791103454},\"hidv2\":\"5829100737940684910\",\"ymclid\":\"5829100737940684910\"},\"userData\":{}}"
         },
         {
-          "method": "POST",
+          "method": "GET",
           "status": 200,
-          "url": "https://api2.amplitude.com/2/httpapi",
+          "url": "https://ara.paa-reporting-advertising.amazon/aat?pid=03be6e9f-5eab-4882-89fd-5120fc72e9bc&event=PageView&currencyCode=SAR&ts=1791103453596&eventSource=amzn.js&uuid=80ab631b-0beb-488c-912a-c48778032ec0",
           "content_type": "application/json",
           "resource_type": "fetch",
-          "request_post_data": "{\"api_key\":\"4c54f2e557cac3cb97e522bf23719c5f\",\"events\":[{\"device_id\":\"d0ba6b34-cc4e-402a-982e-6acad12b1b38\",\"session_id\":1791015283769,\"time\":1791015283773,\"platform\":\"Web\",\"language\":\"en-US\",\"ip\":\"$remote\",\"insert_id\":\"a72fa408-1316-4c4e-8e3c-53e86297ace9\",\"event_type\":\"$identify\",\"user_properties\":{\"$setOnce\":{\"initial_utm_campaign\":\"EMPTY\",\"initial_utm_content\":\"EMPTY\",\"initial_utm_id\":\"EMPTY\",\"initial_utm_medium\":\"EMPTY\",\"initial_utm_source\":\"EMPTY\",\"initial_utm_term\":\"EMPTY\",\"initial_referrer\":\"EMPTY\",\"initial_referring_domain\":\"EMPTY\",\"initial_dclid\":\"EMPTY\",\"initial_gbraid\":\"EMPTY\",\"initial_gclid\":\"EMPTY\",\"initial_fbclid\":\"EMPTY\",\"initial_ko_click_id\":\"EMPTY\",\"initial_li_fat_id\":\"EMPTY\",\"initial_msclkid\":\"EMPTY\",\"initial_rtd_cid\":\"EMPTY\",\"initial_ttclid\":\"EMPTY\",\"initial_twclid\":\"EMPTY\",\"initial_wbraid\":\"EMPTY\"},\"$unset\":{\"utm_campaign\":\"-\",\"utm_content\":\"-\",\"utm_id\":\"-\",\"utm_medium\":\"-\",\"utm_source\":\"-\",\"utm_term\":\"-\",\"referrer\":\"-\",\"referring_domain\":\"-\",\"dclid\":\"-\",\"gbraid\":\"-\",\"gclid\":\"-\",\"fbclid\":\"-\",\"ko_click_id\":\"-\",\"li_fat_id\":\"-\",\"msclkid\":\"-\",\"rtd_cid\":\"-\",\"ttclid\":\"-\",\"twclid\":\"-\",\"wbraid\":\"-\"}},\"event_id\":0,\"library\":\"amplitude-ts-gtm/3.7.12\",\"user_agent\":\"Mozill",
-          "response_shape": "json-object:code,server_upload_time,payload_size_bytes,events_ingested",
-          "preview": "{\"code\":200,\"server_upload_time\":1791015284865,\"payload_size_bytes\":3069,\"events_ingested\":4}"
+          "request_post_data": "",
+          "response_shape": "json-object:",
+          "preview": "{}"
+        },
+        {
+          "method": "GET",
+          "status": 200,
+          "url": "https://ara.paa-reporting-advertising.amazon/aat?pid=ee49cad3-31b1-422d-ae49-b96ef7139d3f&event=PageView&currencyCode=SAR&ts=1791103453596&eventSource=amzn.js&uuid=d0775243-076f-438d-b49d-a8b5e3804e87",
+          "content_type": "application/json",
+          "resource_type": "fetch",
+          "request_post_data": "",
+          "response_shape": "json-object:",
+          "preview": "{}"
         },
         {
           "method": "POST",
           "status": 200,
-          "url": "https://sdk-03.moengage.com/v2/device/add?os=web&os_platform=Mozilla%2F5.0%20(Macintosh%3B%20Intel%20Mac%20OS%20X%2010_15_7)%20AppleWebKit%2F537.36%20(KHTML%2C%20like%20Gecko)%20Chrome%2F126.0.0.0%20Safari%2F537.36&is_incognito=false&app_id=3WOD3GUG7RZZTC54VS32NHA9&os_ver=macOS%2010_15_7&sdk_ver=2.80.00&model=Google%20Chrome&app_ver=1.0&device_ts=1791015285047&device_tz_offset=0&unique_id=8468cc3a-8a40-4841-95a9-1f5377065f99&device_tz=0&device_unique_id=1d82ea83-0ab2-44c3-b20e-51e9e9eff8bc&subscription_type=vapid&vapid_public=BIMX6knQZH09MR1LpNsQphAFim64pGleF3612U1Kw5umn36SvUZS3hQ8zhjFYKzpsTMxTUhR7KLbZBoPjfPe7Z8&environment=sdk-03.moengage.com&url=https%3A%2F%2Fmdlbeast.com%2Fevents",
+          "url": "https://sdk-03.moengage.com/v2/device/add?os=web&os_platform=Mozilla%2F5.0%20(Macintosh%3B%20Intel%20Mac%20OS%20X%2010_15_7)%20AppleWebKit%2F537.36%20(KHTML%2C%20like%20Gecko)%20Chrome%2F126.0.0.0%20Safari%2F537.36&is_incognito=false&app_id=3WOD3GUG7RZZTC54VS32NHA9&os_ver=macOS%2010_15_7&sdk_ver=2.80.00&model=Google%20Chrome&app_ver=1.0&device_ts=1791103454870&device_tz_offset=0&unique_id=68bfaf2e-c255-477f-b6ea-efbabe346378&device_tz=0&device_unique_id=7badfaaa-32a4-418e-adbf-77a2f58ca6af&subscription_type=vapid&vapid_public=BIMX6knQZH09MR1LpNsQphAFim64pGleF3612U1Kw5umn36SvUZS3hQ8zhjFYKzpsTMxTUhR7KLbZBoPjfPe7Z8&environment=sdk-03.moengage.com&url=https%3A%2F%2Fmdlbeast.com%2Fevents",
           "content_type": "application/json",
           "resource_type": "xhr",
           "request_post_data": "null",
@@ -198,14 +198,24 @@
           "preview": "{\"status\":\"success\",\"message\":\"Your request has been accepted and will be processed soon.\"}"
         },
         {
+          "method": "POST",
+          "status": 200,
+          "url": "https://api2.amplitude.com/2/httpapi",
+          "content_type": "application/json",
+          "resource_type": "fetch",
+          "request_post_data": "{\"api_key\":\"4c54f2e557cac3cb97e522bf23719c5f\",\"events\":[{\"device_id\":\"b18ff551-2d53-4ea8-a788-b05216fd5eb0\",\"session_id\":1791103454044,\"time\":1791103454047,\"platform\":\"Web\",\"language\":\"en-US\",\"ip\":\"$remote\",\"insert_id\":\"79c790ff-2e0d-4c63-9cd7-7b5c4f35939d\",\"event_type\":\"$identify\",\"user_properties\":{\"$setOnce\":{\"initial_utm_campaign\":\"EMPTY\",\"initial_utm_content\":\"EMPTY\",\"initial_utm_id\":\"EMPTY\",\"initial_utm_medium\":\"EMPTY\",\"initial_utm_source\":\"EMPTY\",\"initial_utm_term\":\"EMPTY\",\"initial_referrer\":\"EMPTY\",\"initial_referring_domain\":\"EMPTY\",\"initial_dclid\":\"EMPTY\",\"initial_gbraid\":\"EMPTY\",\"initial_gclid\":\"EMPTY\",\"initial_fbclid\":\"EMPTY\",\"initial_ko_click_id\":\"EMPTY\",\"initial_li_fat_id\":\"EMPTY\",\"initial_msclkid\":\"EMPTY\",\"initial_rtd_cid\":\"EMPTY\",\"initial_ttclid\":\"EMPTY\",\"initial_twclid\":\"EMPTY\",\"initial_wbraid\":\"EMPTY\"},\"$unset\":{\"utm_campaign\":\"-\",\"utm_content\":\"-\",\"utm_id\":\"-\",\"utm_medium\":\"-\",\"utm_source\":\"-\",\"utm_term\":\"-\",\"referrer\":\"-\",\"referring_domain\":\"-\",\"dclid\":\"-\",\"gbraid\":\"-\",\"gclid\":\"-\",\"fbclid\":\"-\",\"ko_click_id\":\"-\",\"li_fat_id\":\"-\",\"msclkid\":\"-\",\"rtd_cid\":\"-\",\"ttclid\":\"-\",\"twclid\":\"-\",\"wbraid\":\"-\"}},\"event_id\":0,\"library\":\"amplitude-ts-gtm/3.7.12\",\"user_agent\":\"Mozill",
+          "response_shape": "json-object:code,server_upload_time,payload_size_bytes,events_ingested",
+          "preview": "{\"code\":200,\"server_upload_time\":1791103455273,\"payload_size_bytes\":3069,\"events_ingested\":4}"
+        },
+        {
           "method": "GET",
           "status": 200,
-          "url": "https://mc.yango.com/watch/100422118?wmode=7&page-url=https%3A%2F%2Fmdlbeast.com%2Fevents&charset=utf-8&uah=chu%0A%22HeadlessChrome%22%3Bv%3D%22149%22%2C%22Chromium%22%3Bv%3D%22149%22%2C%22Not)A%3BBrand%22%3Bv%3D%2224%22%0Acha%0Ax86%0Achb%0A64%0Achf%0A149.0.7827.55%0Achl%0A%22HeadlessChrome%22%3Bv%3D%22149.0.7827.55%22%2C%22Chromium%22%3Bv%3D%22149.0.7827.55%22%2C%22Not)A%3BBrand%22%3Bv%3D%2224.0.0.0%22%0Achm%0A%3F0%0Achp%0AmacOS%0Achv%0A10_15_7&browser-info=pv%3A1%3Avf%3A37xk0fgslry1wqf7aktfs70g0rmlch%3Afu%3A0%3Aen%3Autf-8%3Ala%3Aen-US%3Av%3A2660%3Acn%3A1%3Adp%3A0%3Als%3A591796202215%3Ahid%3A386827248%3Az%3A0%3Ai%3A20261003081444%3Aet%3A1791015284%3Ac%3A1%3Arn%3A275224347%3Arqn%3A1%3Au%3A1791015284383654530%3Aw%3A1280x720%3As%3A1280x720x24%3Ask%3A1%3Afp%3A252%3Arqnl%3A1%3Ast%3A1791015286%3At%3AMDLBEAST%20Events%20Calendar%20-%20Discover%20Now%20%7C%20MDLBEAST&t=clt(1026)clc(0-0-0)rqnt(1)ti(1)",
+          "url": "https://mc.yango.com/watch/100422118?wmode=7&page-url=https%3A%2F%2Fmdlbeast.com%2Fevents&charset=utf-8&uah=chu%0A%22HeadlessChrome%22%3Bv%3D%22149%22%2C%22Chromium%22%3Bv%3D%22149%22%2C%22Not)A%3BBrand%22%3Bv%3D%2224%22%0Acha%0Ax86%0Achb%0A64%0Achf%0A149.0.7827.55%0Achl%0A%22HeadlessChrome%22%3Bv%3D%22149.0.7827.55%22%2C%22Chromium%22%3Bv%3D%22149.0.7827.55%22%2C%22Not)A%3BBrand%22%3Bv%3D%2224.0.0.0%22%0Achm%0A%3F0%0Achp%0AmacOS%0Achv%0A10_15_7&browser-info=pv%3A1%3Avf%3A37xk0fgslry1wqf7aktfs70g0rmlch%3Afu%3A0%3Aen%3Autf-8%3Ala%3Aen-US%3Av%3A2660%3Acn%3A1%3Adp%3A0%3Als%3A415587123181%3Ahid%3A361739810%3Az%3A0%3Ai%3A20261004084414%3Aet%3A1791103454%3Ac%3A1%3Arn%3A257055714%3Arqn%3A1%3Au%3A1791103454910481117%3Aw%3A1280x720%3As%3A1280x720x24%3Ask%3A1%3Afp%3A316%3Arqnl%3A1%3Ast%3A1791103456%3At%3AMDLBEAST%20Events%20Calendar%20-%20Discover%20Now%20%7C%20MDLBEAST&t=clt(834)clc(0-0-0)rqnt(1)ti(1)",
           "content_type": "application/json",
           "resource_type": "fetch",
           "request_post_data": "",
           "response_shape": "json-object:settings,userData",
-          "preview": "{\"settings\":{\"auto_goals\":1,\"button_goals\":0,\"c_recp\":\"1.00000\",\"form_goals\":1,\"pcs\":\"1\",\"webvisor\":{\"ad_recp\":\"1.00000\",\"arch_type\":\"none\",\"date\":\"2026-08-03 20:21:22\",\"forms\":1,\"recp\":\"1.00000\"},\"sbp\": {\"a\":\"AheWej6MAh9kd+SrfHqDZ4c5C3ltXQKKzY+1wwaq3KhW9fNaM2Y72b/+0vPrKZgu\", \"b\":\"SbihdwEQQHPvgR8N1V9vorzBvAloutHAP179zQNK4zRrywCdpwQunjqdxsyQGQmj\"},\"eu\":2,\"region\":\"US\",\"hittoken\":\"1791015286_6440d0815a7b31a45abcc6ec14a7be173d39d6e62fef135d614eca7d6bb715d0\",\"cf\":1,\"mcf\":1,\"wstoken\":\"11173.9IeZoPrHjzs49Vp4PiSaAWRKw0HabhcfZLvQ69CCyEbKwI15ZEBrTbXuvIUbgAssvn2yZN0k68xlKFX_Zqg2ZudyZJr5YWGNFz-oBj0GCZM,.GjX7LL1-44rKCaNnOXTCRzx0zE0,\",\"ev\":{\"pvt\":1791015286},\"hidv2\":\"5805987858233688230\",\"ymclid\":\"5805987858233688230\"},\"userData\":{}}"
+          "preview": "{\"settings\":{\"auto_goals\":1,\"button_goals\":0,\"c_recp\":\"1.00000\",\"form_goals\":1,\"pcs\":\"1\",\"webvisor\":{\"ad_recp\":\"1.00000\",\"arch_type\":\"none\",\"date\":\"2026-08-03 20:21:22\",\"forms\":1,\"recp\":\"1.00000\"},\"sbp\": {\"a\":\"SYZBB8IDRNMG73M+Bg3AdfXXhHiYpNeP6QrbAnISjA3NJvt6ha5FDRRAhbOop8s+\", \"b\":\"PKz7KfEEsVQr8+NHnQgVT7wArnqsX9YUyzaJEqjicv1OcoJHTYThLb9SZnT0axQI\"},\"eu\":2,\"region\":\"US\",\"hittoken\":\"1791103455_0cb4c63860dd20a0a117bcfb867b38ad7c14a0d937e5c8e8abf582b0bf6307c6\",\"cf\":1,\"mcf\":1,\"wstoken\":\"11174.Un35H0C6r47f1jNzNabxtrTn4xRA5p-PW0nL_WOYG4v1cbv4mXpjIYqqRfe5J9UzOFRXehoOvID7lMjLircVnLoZCnKWPOzXOpRGDz9p_NA,.nXKGHfSORDKx98hUWaM4-OGXu3A,\",\"ev\":{\"pvt\":1791103455},\"hidv2\":\"5829101052683354443\",\"ymclid\":\"5829101052683354443\"},\"userData\":{}}"
         }
       ],
       "network_sample": [
@@ -215,19 +225,9 @@
           "url": "https://o1202670.ingest.sentry.io/api/6328050/envelope/?sentry_version=7&sentry_key=9ddf6cb0d9fd4ef3a6553edafdab3482&sentry_client=sentry.javascript.nextjs%2F8.51.0",
           "content_type": "application/json",
           "resource_type": "fetch",
-          "request_post_data": "{\"sent_at\":\"2026-10-03T08:14:42.363Z\",\"sdk\":{\"name\":\"sentry.javascript.nextjs\",\"version\":\"8.51.0\"}} {\"type\":\"session\"} {\"sid\":\"cebe320a67904e7aa992025c01ad7202\",\"init\":true,\"started\":\"2026-10-03T08:14:42.363Z\",\"timestamp\":\"2026-10-03T08:14:42.363Z\",\"status\":\"ok\",\"errors\":0,\"attrs\":{\"release\":\"mdlbeast-frontend-nextjs@2.43.0\",\"environment\":\"production\",\"user_agent\":\"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36\"}}",
+          "request_post_data": "{\"sent_at\":\"2026-10-04T08:44:12.682Z\",\"sdk\":{\"name\":\"sentry.javascript.nextjs\",\"version\":\"8.51.0\"}} {\"type\":\"session\"} {\"sid\":\"2bb299110b2a446fbb8a63b5279fce10\",\"init\":true,\"started\":\"2026-10-04T08:44:12.682Z\",\"timestamp\":\"2026-10-04T08:44:12.682Z\",\"status\":\"ok\",\"errors\":0,\"attrs\":{\"release\":\"mdlbeast-frontend-nextjs@2.43.0\",\"environment\":\"production\",\"user_agent\":\"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36\"}}",
           "response_shape": "json-object:",
           "preview": "{}"
-        },
-        {
-          "method": "GET",
-          "status": 200,
-          "url": "https://api.ipdata.co/?api-key=c7e0aa1f6999025389c01b86d7d2f281eb10fe9aa7f183632d000cc0",
-          "content_type": "application/json",
-          "resource_type": "fetch",
-          "request_post_data": "",
-          "response_shape": "json-object:ip,is_eu,city,region,region_code,region_type,country_name,country_code",
-          "preview": "{ \"ip\": \"172.184.210.166\", \"is_eu\": false, \"city\": \"San Jose\", \"region\": \"California\", \"region_code\": \"CA\", \"region_type\": \"state\", \"country_name\": \"United States\", \"country_code\": \"US\", \"continent_name\": \"North America\", \"continent_code\": \"NA\", \"latitude\": 37.33938980102539, \"longitude\": -121.89495849609375, \"postal\": \"95141\", \"calling_code\": \"1\", \"flag\": \"https://ipdata.co/flags/us.png\", \"emoji_flag\": \"🇺🇸\", \"emoji_unicode\": \"U+1F1FA U+1F1F8\", \"asn\": { \"asn\": \"AS8075\", \"name\": \"Microsoft Corporation\", \"domain\": \"microsoft.com\", \"route\": \"172.160.0.0/11\", \"type\": \"hosting\" }, \"languages\": [ { \"name\": \"English\", \"native\": \"English\", \"code\": \"en\" } ], \"currency\": { \"name\": \"US Dollar\", \"code\": \"USD\", \"symbol\": \"$\", \"native\": \"$\", \"plural\": \"US dollars\" }, \"time_zone\": { \"name\": \"America/Los_Angeles\", \"abbr\": \"PDT\", \"offset\": \"-0700\", \"is_dst\": true, \"current_time\": \"2026-10-03T08:14:42-07:00\" }, \"threat\": { \"is_tor\": false, \"is_icloud_relay\": false, \"is_proxy\": false, \"is_datacenter\": true, \"is_anonymous\": false, \"is_known_attacker\": false, \"is_known_abuser\": false, \"is_threat\": false, \"is_bogon\": false, \"blocklists\": [] }, \"count\": \"829\" }"
         },
         {
           "method": "GET",
@@ -257,7 +257,7 @@
           "resource_type": "fetch",
           "request_post_data": "",
           "response_shape": "json-object:pageProps,__N_SSG",
-          "preview": "{\"pageProps\":{\"dehydratedState\":{\"mutations\":[],\"queries\":[{\"state\":{\"data\":{\"globalConfig\":{\"privacyPolicy\":{\"id\":\"18205418\",\"title\":\"Privacy policy\",\"isExternal\":false,\"url\":\"\",\"page\":[{\"entity\":\"PageCustomTextRecord\",\"slug\":\"privacy\",\"collection\":null}],\"icon\":null},\"cookiesPolicy\":{\"id\":\"CMoIHPjDR5y8fCatFJgdWA\",\"title\":\"Cookies Policy\",\"isExternal\":false,\"url\":\"\",\"page\":[{\"entity\":\"PageCustomTextRecord\",\"slug\":\"cookies-policy\",\"collection\":null}],\"icon\":null},\"legal\":{\"id\":\"18205454\",\"title\":\"Terms & Conditions\",\"isExternal\":false,\"url\":\"\",\"page\":[{\"entity\":\"PageCustomTextRecord\",\"slug\":\"terms-and-conditions\",\"collection\":null}],\"icon\":null}},\"_site\":{\"globalSeo\":{\"titleSuffix\":\" | MDLBEAST\"}}},\"dataUpdateCount\":1,\"dataUpdatedAt\":1791010223231,\"error\":null,\"errorUpdateCount\":0,\"errorUpdatedAt\":0,\"fetchFailureCount\":0,\"fetchFailureReason\":null,\"fetchMeta\":null,\"isInvalidated\":false,\"status\":\"success\",\"fetchStatus\":\"idle\"},\"queryKey\":[\"global\",\"config\",{\"locale\":\"en\"}],\"queryHash\":\"[\\\"global\\\",\\\"config\\\",{\\\"locale\\\":\\\"en\\\"}]\",\"meta\":{\"dehydrate\":true,\"preview\":false}},{\"state\":{\"data\":{\"id\":\"BKwepKzOTiiZtVUfaL9sSQ\",\"name\":\"MDLBEAST Radio\",\"streamUrl\":\"https://s4.radio.co/s4d58c285a/listen\"},\"dataUpdateCount\":1,\"dataUpdatedAt\":1791010223231,\"error\":null,\"errorUpdateCount\":0,\"errorUpdatedAt\":0,\"fetchFailureCount\":0,\"fetchFailureReason\":null,\"fetchMeta\":null,\"isInvalidated\":false,\"status\":\"success\",\"fetchStatus\":\"idle\"},\"queryKey\":[\"radio\",\"station\",{\"locale\":\"en\"}],\"queryHash\":\"[\\\"radio\\\",\\\"station\\\",{\\\"locale\\\":\\\"en\\\"}]\",\"meta\":{\"dehydrate\":true,\"preview\":false}}]}},\"__N_SSG\":true}"
+          "preview": "{\"pageProps\":{\"dehydratedState\":{\"mutations\":[],\"queries\":[{\"state\":{\"data\":{\"globalConfig\":{\"privacyPolicy\":{\"id\":\"18205418\",\"title\":\"Privacy policy\",\"isExternal\":false,\"url\":\"\",\"page\":[{\"entity\":\"PageCustomTextRecord\",\"slug\":\"privacy\",\"collection\":null}],\"icon\":null},\"cookiesPolicy\":{\"id\":\"CMoIHPjDR5y8fCatFJgdWA\",\"title\":\"Cookies Policy\",\"isExternal\":false,\"url\":\"\",\"page\":[{\"entity\":\"PageCustomTextRecord\",\"slug\":\"cookies-policy\",\"collection\":null}],\"icon\":null},\"legal\":{\"id\":\"18205454\",\"title\":\"Terms & Conditions\",\"isExternal\":false,\"url\":\"\",\"page\":[{\"entity\":\"PageCustomTextRecord\",\"slug\":\"terms-and-conditions\",\"collection\":null}],\"icon\":null}},\"_site\":{\"globalSeo\":{\"titleSuffix\":\" | MDLBEAST\"}}},\"dataUpdateCount\":1,\"dataUpdatedAt\":1791096660920,\"error\":null,\"errorUpdateCount\":0,\"errorUpdatedAt\":0,\"fetchFailureCount\":0,\"fetchFailureReason\":null,\"fetchMeta\":null,\"isInvalidated\":false,\"status\":\"success\",\"fetchStatus\":\"idle\"},\"queryKey\":[\"global\",\"config\",{\"locale\":\"en\"}],\"queryHash\":\"[\\\"global\\\",\\\"config\\\",{\\\"locale\\\":\\\"en\\\"}]\",\"meta\":{\"dehydrate\":true,\"preview\":false}},{\"state\":{\"data\":{\"id\":\"BKwepKzOTiiZtVUfaL9sSQ\",\"name\":\"MDLBEAST Radio\",\"streamUrl\":\"https://s4.radio.co/s4d58c285a/listen\"},\"dataUpdateCount\":1,\"dataUpdatedAt\":1791096660896,\"error\":null,\"errorUpdateCount\":0,\"errorUpdatedAt\":0,\"fetchFailureCount\":0,\"fetchFailureReason\":null,\"fetchMeta\":null,\"isInvalidated\":false,\"status\":\"success\",\"fetchStatus\":\"idle\"},\"queryKey\":[\"radio\",\"station\",{\"locale\":\"en\"}],\"queryHash\":\"[\\\"radio\\\",\\\"station\\\",{\\\"locale\\\":\\\"en\\\"}]\",\"meta\":{\"dehydrate\":true,\"preview\":false}}]}},\"__N_SSG\":true}"
         },
         {
           "method": "GET",
@@ -267,7 +267,17 @@
           "resource_type": "fetch",
           "request_post_data": "",
           "response_shape": "json-object:pageProps,__N_SSG",
-          "preview": "{\"pageProps\":{\"dehydratedState\":{\"mutations\":[],\"queries\":[{\"state\":{\"data\":{\"globalConfig\":{\"privacyPolicy\":{\"id\":\"18205418\",\"title\":\"Privacy policy\",\"isExternal\":false,\"url\":\"\",\"page\":[{\"entity\":\"PageCustomTextRecord\",\"slug\":\"privacy\",\"collection\":null}],\"icon\":null},\"cookiesPolicy\":{\"id\":\"CMoIHPjDR5y8fCatFJgdWA\",\"title\":\"Cookies Policy\",\"isExternal\":false,\"url\":\"\",\"page\":[{\"entity\":\"PageCustomTextRecord\",\"slug\":\"cookies-policy\",\"collection\":null}],\"icon\":null},\"legal\":{\"id\":\"18205454\",\"title\":\"Terms & Conditions\",\"isExternal\":false,\"url\":\"\",\"page\":[{\"entity\":\"PageCustomTextRecord\",\"slug\":\"terms-and-conditions\",\"collection\":null}],\"icon\":null}},\"_site\":{\"globalSeo\":{\"titleSuffix\":\" | MDLBEAST\"}}},\"dataUpdateCount\":1,\"dataUpdatedAt\":1791009926376,\"error\":null,\"errorUpdateCount\":0,\"errorUpdatedAt\":0,\"fetchFailureCount\":0,\"fetchFailureReason\":null,\"fetchMeta\":null,\"isInvalidated\":false,\"status\":\"success\",\"fetchStatus\":\"idle\"},\"queryKey\":[\"global\",\"config\",{\"locale\":\"en\"}],\"queryHash\":\"[\\\"global\\\",\\\"config\\\",{\\\"locale\\\":\\\"en\\\"}]\",\"meta\":{\"dehydrate\":true,\"preview\":false}},{\"state\":{\"data\":{\"id\":\"BKwepKzOTiiZtVUfaL9sSQ\",\"name\":\"MDLBEAST Radio\",\"streamUrl\":\"https://s4.radio.co/s4d58c285a/listen\"},\"dataUpdateCount\":1,\"dataUpdatedAt\":1791009926381,\"error\":null,\"errorUpdateCount\":0,\"errorUpdatedAt\":0,\"fetchFailureCount\":0,\"fetchFailureReason\":null,\"fetchMeta\":null,\"isInvalidated\":false,\"status\":\"success\",\"fetchStatus\":\"idle\"},\"queryKey\":[\"radio\",\"station\",{\"locale\":\"en\"}],\"queryHash\":\"[\\\"radio\\\",\\\"station\\\",{\\\"locale\\\":\\\"en\\\"}]\",\"meta\":{\"dehydrate\":true,\"preview\":false}}]},\"theme\":\"account\",\"layoutType\":\"Account\",\"tealium\":{\"moduleName\":\"miscellaneous\",\"pageType\":\"regular\"}},\"__N_SSG\":true}"
+          "preview": "{\"pageProps\":{\"dehydratedState\":{\"mutations\":[],\"queries\":[{\"state\":{\"data\":{\"globalConfig\":{\"privacyPolicy\":{\"id\":\"18205418\",\"title\":\"Privacy policy\",\"isExternal\":false,\"url\":\"\",\"page\":[{\"entity\":\"PageCustomTextRecord\",\"slug\":\"privacy\",\"collection\":null}],\"icon\":null},\"cookiesPolicy\":{\"id\":\"CMoIHPjDR5y8fCatFJgdWA\",\"title\":\"Cookies Policy\",\"isExternal\":false,\"url\":\"\",\"page\":[{\"entity\":\"PageCustomTextRecord\",\"slug\":\"cookies-policy\",\"collection\":null}],\"icon\":null},\"legal\":{\"id\":\"18205454\",\"title\":\"Terms & Conditions\",\"isExternal\":false,\"url\":\"\",\"page\":[{\"entity\":\"PageCustomTextRecord\",\"slug\":\"terms-and-conditions\",\"collection\":null}],\"icon\":null}},\"_site\":{\"globalSeo\":{\"titleSuffix\":\" | MDLBEAST\"}}},\"dataUpdateCount\":1,\"dataUpdatedAt\":1791097046088,\"error\":null,\"errorUpdateCount\":0,\"errorUpdatedAt\":0,\"fetchFailureCount\":0,\"fetchFailureReason\":null,\"fetchMeta\":null,\"isInvalidated\":false,\"status\":\"success\",\"fetchStatus\":\"idle\"},\"queryKey\":[\"global\",\"config\",{\"locale\":\"en\"}],\"queryHash\":\"[\\\"global\\\",\\\"config\\\",{\\\"locale\\\":\\\"en\\\"}]\",\"meta\":{\"dehydrate\":true,\"preview\":false}},{\"state\":{\"data\":{\"id\":\"BKwepKzOTiiZtVUfaL9sSQ\",\"name\":\"MDLBEAST Radio\",\"streamUrl\":\"https://s4.radio.co/s4d58c285a/listen\"},\"dataUpdateCount\":1,\"dataUpdatedAt\":1791097046088,\"error\":null,\"errorUpdateCount\":0,\"errorUpdatedAt\":0,\"fetchFailureCount\":0,\"fetchFailureReason\":null,\"fetchMeta\":null,\"isInvalidated\":false,\"status\":\"success\",\"fetchStatus\":\"idle\"},\"queryKey\":[\"radio\",\"station\",{\"locale\":\"en\"}],\"queryHash\":\"[\\\"radio\\\",\\\"station\\\",{\\\"locale\\\":\\\"en\\\"}]\",\"meta\":{\"dehydrate\":true,\"preview\":false}}]},\"theme\":\"account\",\"layoutType\":\"Account\",\"tealium\":{\"moduleName\":\"miscellaneous\",\"pageType\":\"regular\"}},\"__N_SSG\":true}"
+        },
+        {
+          "method": "GET",
+          "status": 200,
+          "url": "https://mdlbeast.com/_next/data/m0RVCB6Xmjfj78jX68_TJ/en/events/calendar.json",
+          "content_type": "application/json",
+          "resource_type": "fetch",
+          "request_post_data": "",
+          "response_shape": "json-like-invalid",
+          "preview": "{\"pageProps\":{\"events\":[{\"title\":\"Beast House\",\"slug\":\"beast-house\",\"id\":\"LrwF27BJQwSahu3U7WDIkQ\",\"startDatetime\":\"2026-10-08T18:00:00+00:00\",\"endDatetime\":\"2026-10-09T00:00:00+00:00\",\"timezone\":\"Asia/Riyadh\",\"colorAccent\":{\"hex\":\"#FF00FF\"},\"city\":\"Riyadh\",\"logo\":{\"id\":\"VUU7VMF5SVi1EkkGOcz_qw\",\"mimeType\":\"image/webp\",\"url\":\"https://www.datocms-assets.com/66357/1703668968-beast-house-logo-06.webp\",\"alt\":null,\"title\":null,\"blurUpThumb\":\"data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAMAAADXqc3KAAABIFBMVEX//vz//vz//vz//vz//vz//vz//vz//vz//vz//vz//vz//vz//vz//vz//vz//vz//vz//vz//vz//vz//vz//vz//vz//vz//vz//vz//vz//vz//vz//vz//vz//vz//vz//vz//vz//vz//vz//vz//vz//vz//vz//vz//vz//vz//vz//vz//vz//vz//vz//vz//vz//vz//vz//vz//vz//vz//vz//vz//vz//vz//vz//vz//vz//vz//vz//vz//vz//vz//vz//vz//vz//vz//vz//vz//vz//vz//vz//vz//vz//vz//vz//vz//vz//vz//vz//vz//vz//vz//vz//vz//vz//vz//vz//vz//vz//vz0lQLDAAAAYHRSTlMAAQIDBAUGBwgJCgsMDQ4PEBESExQVFhcYGRobHB0eHyAhIyQlJykqKywtLi8wMTM0Njc4Oj0+P0BBQkRHSElKTlBRUlRWV1tdX2BhYmRmaGprb3BxdHV3eHp7fH2Bg4Th5xvkAAAA70lEQVR42pWS627CMAyFHedWCt1g7/+GE4JWvaV2nLVQaBGdtJ1fjr8ktk9iDhRgFqLII9Ym0CMGgWceolnysMoDGPhFfwIOmTeAKjLkrnkD9lR4pOCv8gryr+POY+ydu/YrgMXpeMgNsrPWVu00gtEJ0O4+P4o8typaTEnZIAlMNu63+yzzmR+BWD+QqDgCnDwape4au5uL0xQGR0QGFBEPIfS3q6YeAiuNShxwaOtqLn4zr2ERYaNiW5eXbj1H+GbeW0VteeHXAeXMvYehrtKbVyU5oGbL3Y6BNm1PEdL/HkppkOWI0XH5PYDPhf4B7qtwzckK/QEAAAAASUVORK5CYII=\"},\"cover\":{\"id\":\"QjpOfbhoTkKfAnCuPCh_zA\",\"mimeType\":\"image/webp\",\"url\":\"https://www.datocms-assets.com/66357/1753608398-1-aug-event-banners-01.webp\",\"alt\":null,\"title\":null,\"blurUpThumb\":\"data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAoHBwgHBhYICAgLFgoODA0VDQ0NDigSDg0NFxUZGBYTFhUdHy0jGh0oHSEWJDUlKC0vMjIyGSI4PTcwPCsxMi8BCgsLDg0OHA0QHDsoIh4vLy8vLzsvOy8vNS8vLy8vLy8vLzs7Ly8vLy8vLy8vLy8vLy8"
         },
         {
           "method": "GET",
@@ -282,6 +292,16 @@
         {
           "method": "GET",
           "status": 200,
+          "url": "https://api.ipdata.co/?api-key=c7e0aa1f6999025389c01b86d7d2f281eb10fe9aa7f183632d000cc0",
+          "content_type": "application/json",
+          "resource_type": "fetch",
+          "request_post_data": "",
+          "response_shape": "json-object:ip,is_eu,city,region,region_code,region_type,country_name,country_code",
+          "preview": "{ \"ip\": \"64.236.201.49\", \"is_eu\": false, \"city\": \"Chicago\", \"region\": \"Illinois\", \"region_code\": \"IL\", \"region_type\": \"state\", \"country_name\": \"United States\", \"country_code\": \"US\", \"continent_name\": \"North America\", \"continent_code\": \"NA\", \"latitude\": 41.85002899169922, \"longitude\": -87.6500473022461, \"postal\": \"60602\", \"calling_code\": \"1\", \"flag\": \"https://ipdata.co/flags/us.png\", \"emoji_flag\": \"🇺🇸\", \"emoji_unicode\": \"U+1F1FA U+1F1F8\", \"asn\": { \"asn\": \"AS8075\", \"name\": \"Microsoft Corporation\", \"domain\": \"microsoft.com\", \"route\": \"64.236.0.0/16\", \"type\": \"hosting\" }, \"languages\": [ { \"name\": \"English\", \"native\": \"English\", \"code\": \"en\" } ], \"currency\": { \"name\": \"US Dollar\", \"code\": \"USD\", \"symbol\": \"$\", \"native\": \"$\", \"plural\": \"US dollars\" }, \"time_zone\": { \"name\": \"America/Chicago\", \"abbr\": \"CDT\", \"offset\": \"-0500\", \"is_dst\": true, \"current_time\": \"2026-10-04T08:44:13-05:00\" }, \"threat\": { \"is_tor\": false, \"is_icloud_relay\": false, \"is_proxy\": false, \"is_datacenter\": true, \"is_anonymous\": false, \"is_known_attacker\": false, \"is_known_abuser\": false, \"is_threat\": false, \"is_bogon\": false, \"blocklists\": [] }, \"count\": \"842\" }"
+        },
+        {
+          "method": "GET",
+          "status": 200,
           "url": "https://c.amazon-adsystem.com/aat/allowlist/allowlist.json",
           "content_type": "application/json",
           "resource_type": "fetch",
@@ -292,7 +312,27 @@
         {
           "method": "GET",
           "status": 200,
-          "url": "https://ara.paa-reporting-advertising.amazon/aat?pid=ee49cad3-31b1-422d-ae49-b96ef7139d3f&event=PageView&currencyCode=SAR&ts=1791015283304&eventSource=amzn.js&uuid=40d0376c-6344-440e-b520-24ff792b2e37",
+          "url": "https://mc.yango.com/watch/3/1?wmode=7&page-url=https%3A%2F%2Fmdlbeast.com%2Fevents&page-ref&charset=utf-8&browser-info=pv%3A1%3Avf%3A37xk0fgslry1wqf7aktfs70g0rmlch%3Afu%3A0%3Aen%3Autf-8%3Ala%3Aen-US%3Av%3A2660%3Acn%3A2%3Adp%3A0%3Als%3A1504282654565%3Ahid%3A361739810%3Az%3A0%3Ai%3A20261004084414%3Aet%3A1791103454%3Ac%3A1%3Arn%3A66719695%3Arqn%3A1%3Au%3A1791103454910481117%3Aw%3A1280x720%3As%3A1280x720x24%3Ask%3A1%3Afp%3A316%3Ast%3A1791103454&t=clc%280-0-0%29rqnt%281%29ti%281%29&redirnss=1",
+          "content_type": "application/json",
+          "resource_type": "fetch",
+          "request_post_data": "",
+          "response_shape": "json-object:settings,userData",
+          "preview": "{\"settings\":{\"sbp\": {\"a\":\"S+orXYnDaU1WefAt64W7SgKjacX3CfnUQ6bzrG5hMNin8eduuvzTyonBjBW22ysD\", \"b\":\"RR/wcodVvV0Xjv4ggZh3GmEhJF4nMc1tsXavDLlxn3R+4/TIF5FmnqCPdUwrAHwG\"},\"eu\":2,\"region\":\"US\",\"nss\":1,\"hittoken\":\"1791103454_9d5ed2fd6ae0b406a13b87c074931c9bd1c3ce63e35c4eebe8db2af21b2f9f9b\",\"wstoken\":\"11174.gUHiNGDziuWhsCV7VZwLFlGtqFbSC5MnhQOiUe7D7IwYbOwZWvpqvx3rRKb8LinQfepFBt862TysEDY1Ri6gADABkF9W7_lUfHv0lIaStuU,.VeSr4oQrE_yRqo09Ed2OIkUesKM,\",\"ev\":{\"pvt\":1791103454},\"hidv2\":\"5829100737940684910\",\"ymclid\":\"5829100737940684910\"},\"userData\":{}}"
+        },
+        {
+          "method": "GET",
+          "status": 200,
+          "url": "https://sdk-03.moengage.com/v2/websdksettings?app_id=3WOD3GUG7RZZTC54VS32NHA9",
+          "content_type": "application/json",
+          "resource_type": "xhr",
+          "request_post_data": "",
+          "response_shape": "json-like-invalid",
+          "preview": "{\"webData\": {\"sub_billing\": false, \"domain_level_storage\": false, \"show_overlay\": false, \"load_time\": 0, \"prompt_again\": 0, \"opt_in_type\": \"self-handled\", \"is_enabled\": false, \"opt_in_preview\": {\"mobile\": {\"nudge\": {\"title\": {\"text_color\": \"#FFFFFF\", \"text\": \"This website would like to send you awesome updates and offers!\"}, \"background_color\": \"#000000\", \"icon\": \"https://www.moengage.com/wp-content/uploads/2019/07/moengage-logo.png\", \"alt_text\": \"\"}, \"allow_button\": {\"text_color\": \"#FFFFFF\", \"text\": \"Allow\", \"background_color\": \"#000000\"}, \"dismiss_button\": {\"text_color\": \"#FFFFFF\", \"text\": \"Don't Allow\", \"background_color\": \"#000000\"}, \"logo\": {\"logo_url\": \"https://app-cdn.moengage.com/images/brand/logo_full_white.png\", \"logo_color\": \"#FFFFFF\", \"alt_text\": \"Powered By MoEngage\"}}, \"web\": {\"banner\": {\"title\": {\"text_color\": \"#FFFFFF\", \"text\": \"This website would like to send you awesome updates and offers!\"}, \"body\": {\"text_color\": \"#FFFFFF\", \"text\": \"Notifications can be turned off anytime from browser settings\"}, \"background_color\": \"#000000\", \"icon\": \"https://www.moengage.com/wp-content/uploads/2019/07/moengage-logo.png\", \"alt_text\": \"\"}, \"allow_button\": {\"text_color\": \"#FFFFFF\", \"text\": \"Allow\", \"background_color\": \"#000000\"}, \"dismiss_button\": {\"text_color\": \"#FFFFFF\", \"text\": \"Don't Allow\", \"background_color\": \"#000000\"}, \"logo\": {\"logo_url\": \"https://app-cdn.moengage.com/images/brand/logo_full_white.png\", \"logo_color\": \"#FFFFFF\", \"alt_text\": \"Powered By MoEngage\"}}}, \"overlay\": {\"opera\": {\"mobile\": {\"title\": \"Opera Mobile Preview\", \"text\": \"Tap on Allow button to receive notifications\"}, \"desktop\": {\"title\": \"Opera Desktop Preview\", \"text\": \"Click on Allow button to receive notifications\"}}, \"chrome\": {\"mobile\": {\"title\": \"Chrome Mobile Preview\", \"text\": \"Tap on"
+        },
+        {
+          "method": "GET",
+          "status": 200,
+          "url": "https://ara.paa-reporting-advertising.amazon/aat?pid=03be6e9f-5eab-4882-89fd-5120fc72e9bc&event=PageView&currencyCode=SAR&ts=1791103453596&eventSource=amzn.js&uuid=80ab631b-0beb-488c-912a-c48778032ec0",
           "content_type": "application/json",
           "resource_type": "fetch",
           "request_post_data": "",
@@ -302,7 +342,7 @@
         {
           "method": "GET",
           "status": 200,
-          "url": "https://ara.paa-reporting-advertising.amazon/aat?pid=03be6e9f-5eab-4882-89fd-5120fc72e9bc&event=PageView&currencyCode=SAR&ts=1791015283304&eventSource=amzn.js&uuid=697c77b9-e466-42fb-a972-6db7b1d58690",
+          "url": "https://ara.paa-reporting-advertising.amazon/aat?pid=ee49cad3-31b1-422d-ae49-b96ef7139d3f&event=PageView&currencyCode=SAR&ts=1791103453596&eventSource=amzn.js&uuid=d0775243-076f-438d-b49d-a8b5e3804e87",
           "content_type": "application/json",
           "resource_type": "fetch",
           "request_post_data": "",
@@ -320,39 +360,9 @@
           "preview": "{\"s_log\":\"allowed\",\"s_e_b_e\":\"allowed\",\"a_s\":\"allowed\",\"c_s\":\"blocked\",\"c_w_p_e\":\"allowed\",\"b_d\":\"blocked\",\"m_i_e\":\"blocked\",\"lp_t\":\"blocked\",\"b_e\":[\"aravia_login_success\"],\"w_e\":[\"MOE_PUSH_PERMISSION_STATE_ALLOWED\",\"MOE_PUSH_PERMISSION_STATE_BLOCKED\"],\"a_c_i_s\":\"blocked\",\"u_i_s\":[\"uid\"],\"ac_s\":\"blocked\",\"e_b_c\":15,\"s_b_a\":[],\"p_e_c_c_d\":900,\"p_e_m_a_s_i\":300,\"p_f_t\":30,\"s_i_d\":1800,\"src_ext\":[],\"a_c_d_s_i\":3,\"u_a_c_t\":43200,\"cr_c_t\":5184000}"
         },
         {
-          "method": "GET",
-          "status": 200,
-          "url": "https://mc.yango.com/watch/3/1?wmode=7&page-url=https%3A%2F%2Fmdlbeast.com%2Fevents&page-ref&charset=utf-8&browser-info=pv%3A1%3Avf%3A37xk0fgslry1wqf7aktfs70g0rmlch%3Afu%3A0%3Aen%3Autf-8%3Ala%3Aen-US%3Av%3A2660%3Acn%3A2%3Adp%3A0%3Als%3A1589876246990%3Ahid%3A386827248%3Az%3A0%3Ai%3A20261003081444%3Aet%3A1791015284%3Ac%3A1%3Arn%3A972293323%3Arqn%3A1%3Au%3A1791015284383654530%3Aw%3A1280x720%3As%3A1280x720x24%3Ask%3A1%3Afp%3A252%3Ast%3A1791015284&t=clc%280-0-0%29rqnt%281%29ti%281%29&redirnss=1",
-          "content_type": "application/json",
-          "resource_type": "fetch",
-          "request_post_data": "",
-          "response_shape": "json-object:settings,userData",
-          "preview": "{\"settings\":{\"sbp\": {\"a\":\"K4Ntw342I+7CMCV2NM13TBEP3a46m9TzK+xI2RWHzjbMa6H/pcqXgQ9K8vFhXvJO\", \"b\":\"DqQZnt1nxFCNg+FGYtTQRbcmh7c32sblyYqzC/fo6BxHBTFopNsilwUuYQLO9py6\"},\"eu\":2,\"region\":\"US\",\"nss\":1,\"hittoken\":\"1791015284_840b43db2bba1af55e06cf3c98a4d8879b4ff9b8e5f8623141708db6b6c384b3\",\"wstoken\":\"11173.-YuHwd5D5v_KotiTtVU1SDhfrNdprvEMR9CpSbPiuQSDUC-cuD3EaBDPJYgJb0d0goshZZxFfTZ0Vs_c5k4NE0jte-XdhqJj7nTeo9FB5dg,.HAggUXfLM7fSlXWXI6lIaqew6N0,\",\"ev\":{\"pvt\":1791015284},\"hidv2\":\"5805987485091102900\",\"ymclid\":\"5805987485091102900\"},\"userData\":{}}"
-        },
-        {
           "method": "POST",
           "status": 200,
-          "url": "https://api2.amplitude.com/2/httpapi",
-          "content_type": "application/json",
-          "resource_type": "fetch",
-          "request_post_data": "{\"api_key\":\"4c54f2e557cac3cb97e522bf23719c5f\",\"events\":[{\"device_id\":\"d0ba6b34-cc4e-402a-982e-6acad12b1b38\",\"session_id\":1791015283769,\"time\":1791015283773,\"platform\":\"Web\",\"language\":\"en-US\",\"ip\":\"$remote\",\"insert_id\":\"a72fa408-1316-4c4e-8e3c-53e86297ace9\",\"event_type\":\"$identify\",\"user_properties\":{\"$setOnce\":{\"initial_utm_campaign\":\"EMPTY\",\"initial_utm_content\":\"EMPTY\",\"initial_utm_id\":\"EMPTY\",\"initial_utm_medium\":\"EMPTY\",\"initial_utm_source\":\"EMPTY\",\"initial_utm_term\":\"EMPTY\",\"initial_referrer\":\"EMPTY\",\"initial_referring_domain\":\"EMPTY\",\"initial_dclid\":\"EMPTY\",\"initial_gbraid\":\"EMPTY\",\"initial_gclid\":\"EMPTY\",\"initial_fbclid\":\"EMPTY\",\"initial_ko_click_id\":\"EMPTY\",\"initial_li_fat_id\":\"EMPTY\",\"initial_msclkid\":\"EMPTY\",\"initial_rtd_cid\":\"EMPTY\",\"initial_ttclid\":\"EMPTY\",\"initial_twclid\":\"EMPTY\",\"initial_wbraid\":\"EMPTY\"},\"$unset\":{\"utm_campaign\":\"-\",\"utm_content\":\"-\",\"utm_id\":\"-\",\"utm_medium\":\"-\",\"utm_source\":\"-\",\"utm_term\":\"-\",\"referrer\":\"-\",\"referring_domain\":\"-\",\"dclid\":\"-\",\"gbraid\":\"-\",\"gclid\":\"-\",\"fbclid\":\"-\",\"ko_click_id\":\"-\",\"li_fat_id\":\"-\",\"msclkid\":\"-\",\"rtd_cid\":\"-\",\"ttclid\":\"-\",\"twclid\":\"-\",\"wbraid\":\"-\"}},\"event_id\":0,\"library\":\"amplitude-ts-gtm/3.7.12\",\"user_agent\":\"Mozill",
-          "response_shape": "json-object:code,server_upload_time,payload_size_bytes,events_ingested",
-          "preview": "{\"code\":200,\"server_upload_time\":1791015284865,\"payload_size_bytes\":3069,\"events_ingested\":4}"
-        },
-        {
-          "method": "GET",
-          "status": 200,
-          "url": "https://sdk-03.moengage.com/v2/websdksettings?app_id=3WOD3GUG7RZZTC54VS32NHA9",
-          "content_type": "application/json",
-          "resource_type": "xhr",
-          "request_post_data": "",
-          "response_shape": "json-like-invalid",
-          "preview": "{\"webData\": {\"sub_billing\": false, \"domain_level_storage\": false, \"show_overlay\": false, \"load_time\": 0, \"prompt_again\": 0, \"opt_in_type\": \"self-handled\", \"is_enabled\": false, \"opt_in_preview\": {\"mobile\": {\"nudge\": {\"title\": {\"text_color\": \"#FFFFFF\", \"text\": \"This website would like to send you awesome updates and offers!\"}, \"background_color\": \"#000000\", \"icon\": \"https://www.moengage.com/wp-content/uploads/2019/07/moengage-logo.png\", \"alt_text\": \"\"}, \"allow_button\": {\"text_color\": \"#FFFFFF\", \"text\": \"Allow\", \"background_color\": \"#000000\"}, \"dismiss_button\": {\"text_color\": \"#FFFFFF\", \"text\": \"Don't Allow\", \"background_color\": \"#000000\"}, \"logo\": {\"logo_url\": \"https://app-cdn.moengage.com/images/brand/logo_full_white.png\", \"logo_color\": \"#FFFFFF\", \"alt_text\": \"Powered By MoEngage\"}}, \"web\": {\"banner\": {\"title\": {\"text_color\": \"#FFFFFF\", \"text\": \"This website would like to send you awesome updates and offers!\"}, \"body\": {\"text_color\": \"#FFFFFF\", \"text\": \"Notifications can be turned off anytime from browser settings\"}, \"background_color\": \"#000000\", \"icon\": \"https://www.moengage.com/wp-content/uploads/2019/07/moengage-logo.png\", \"alt_text\": \"\"}, \"allow_button\": {\"text_color\": \"#FFFFFF\", \"text\": \"Allow\", \"background_color\": \"#000000\"}, \"dismiss_button\": {\"text_color\": \"#FFFFFF\", \"text\": \"Don't Allow\", \"background_color\": \"#000000\"}, \"logo\": {\"logo_url\": \"https://app-cdn.moengage.com/images/brand/logo_full_white.png\", \"logo_color\": \"#FFFFFF\", \"alt_text\": \"Powered By MoEngage\"}}}, \"overlay\": {\"opera\": {\"mobile\": {\"title\": \"Opera Mobile Preview\", \"text\": \"Tap on Allow button to receive notifications\"}, \"desktop\": {\"title\": \"Opera Desktop Preview\", \"text\": \"Click on Allow button to receive notifications\"}}, \"chrome\": {\"mobile\": {\"title\": \"Chrome Mobile Preview\", \"text\": \"Tap on"
-        },
-        {
-          "method": "POST",
-          "status": 200,
-          "url": "https://sdk-03.moengage.com/v2/device/add?os=web&os_platform=Mozilla%2F5.0%20(Macintosh%3B%20Intel%20Mac%20OS%20X%2010_15_7)%20AppleWebKit%2F537.36%20(KHTML%2C%20like%20Gecko)%20Chrome%2F126.0.0.0%20Safari%2F537.36&is_incognito=false&app_id=3WOD3GUG7RZZTC54VS32NHA9&os_ver=macOS%2010_15_7&sdk_ver=2.80.00&model=Google%20Chrome&app_ver=1.0&device_ts=1791015285047&device_tz_offset=0&unique_id=8468cc3a-8a40-4841-95a9-1f5377065f99&device_tz=0&device_unique_id=1d82ea83-0ab2-44c3-b20e-51e9e9eff8bc&subscription_type=vapid&vapid_public=BIMX6knQZH09MR1LpNsQphAFim64pGleF3612U1Kw5umn36SvUZS3hQ8zhjFYKzpsTMxTUhR7KLbZBoPjfPe7Z8&environment=sdk-03.moengage.com&url=https%3A%2F%2Fmdlbeast.com%2Fevents",
+          "url": "https://sdk-03.moengage.com/v2/device/add?os=web&os_platform=Mozilla%2F5.0%20(Macintosh%3B%20Intel%20Mac%20OS%20X%2010_15_7)%20AppleWebKit%2F537.36%20(KHTML%2C%20like%20Gecko)%20Chrome%2F126.0.0.0%20Safari%2F537.36&is_incognito=false&app_id=3WOD3GUG7RZZTC54VS32NHA9&os_ver=macOS%2010_15_7&sdk_ver=2.80.00&model=Google%20Chrome&app_ver=1.0&device_ts=1791103454870&device_tz_offset=0&unique_id=68bfaf2e-c255-477f-b6ea-efbabe346378&device_tz=0&device_unique_id=7badfaaa-32a4-418e-adbf-77a2f58ca6af&subscription_type=vapid&vapid_public=BIMX6knQZH09MR1LpNsQphAFim64pGleF3612U1Kw5umn36SvUZS3hQ8zhjFYKzpsTMxTUhR7KLbZBoPjfPe7Z8&environment=sdk-03.moengage.com&url=https%3A%2F%2Fmdlbeast.com%2Fevents",
           "content_type": "application/json",
           "resource_type": "xhr",
           "request_post_data": "null",
@@ -360,22 +370,32 @@
           "preview": "{\"status\":\"success\",\"message\":\"Your request has been accepted and will be processed soon.\"}"
         },
         {
+          "method": "POST",
+          "status": 200,
+          "url": "https://api2.amplitude.com/2/httpapi",
+          "content_type": "application/json",
+          "resource_type": "fetch",
+          "request_post_data": "{\"api_key\":\"4c54f2e557cac3cb97e522bf23719c5f\",\"events\":[{\"device_id\":\"b18ff551-2d53-4ea8-a788-b05216fd5eb0\",\"session_id\":1791103454044,\"time\":1791103454047,\"platform\":\"Web\",\"language\":\"en-US\",\"ip\":\"$remote\",\"insert_id\":\"79c790ff-2e0d-4c63-9cd7-7b5c4f35939d\",\"event_type\":\"$identify\",\"user_properties\":{\"$setOnce\":{\"initial_utm_campaign\":\"EMPTY\",\"initial_utm_content\":\"EMPTY\",\"initial_utm_id\":\"EMPTY\",\"initial_utm_medium\":\"EMPTY\",\"initial_utm_source\":\"EMPTY\",\"initial_utm_term\":\"EMPTY\",\"initial_referrer\":\"EMPTY\",\"initial_referring_domain\":\"EMPTY\",\"initial_dclid\":\"EMPTY\",\"initial_gbraid\":\"EMPTY\",\"initial_gclid\":\"EMPTY\",\"initial_fbclid\":\"EMPTY\",\"initial_ko_click_id\":\"EMPTY\",\"initial_li_fat_id\":\"EMPTY\",\"initial_msclkid\":\"EMPTY\",\"initial_rtd_cid\":\"EMPTY\",\"initial_ttclid\":\"EMPTY\",\"initial_twclid\":\"EMPTY\",\"initial_wbraid\":\"EMPTY\"},\"$unset\":{\"utm_campaign\":\"-\",\"utm_content\":\"-\",\"utm_id\":\"-\",\"utm_medium\":\"-\",\"utm_source\":\"-\",\"utm_term\":\"-\",\"referrer\":\"-\",\"referring_domain\":\"-\",\"dclid\":\"-\",\"gbraid\":\"-\",\"gclid\":\"-\",\"fbclid\":\"-\",\"ko_click_id\":\"-\",\"li_fat_id\":\"-\",\"msclkid\":\"-\",\"rtd_cid\":\"-\",\"ttclid\":\"-\",\"twclid\":\"-\",\"wbraid\":\"-\"}},\"event_id\":0,\"library\":\"amplitude-ts-gtm/3.7.12\",\"user_agent\":\"Mozill",
+          "response_shape": "json-object:code,server_upload_time,payload_size_bytes,events_ingested",
+          "preview": "{\"code\":200,\"server_upload_time\":1791103455273,\"payload_size_bytes\":3069,\"events_ingested\":4}"
+        },
+        {
           "method": "GET",
           "status": 200,
-          "url": "https://mc.yango.com/watch/100422118?wmode=7&page-url=https%3A%2F%2Fmdlbeast.com%2Fevents&charset=utf-8&uah=chu%0A%22HeadlessChrome%22%3Bv%3D%22149%22%2C%22Chromium%22%3Bv%3D%22149%22%2C%22Not)A%3BBrand%22%3Bv%3D%2224%22%0Acha%0Ax86%0Achb%0A64%0Achf%0A149.0.7827.55%0Achl%0A%22HeadlessChrome%22%3Bv%3D%22149.0.7827.55%22%2C%22Chromium%22%3Bv%3D%22149.0.7827.55%22%2C%22Not)A%3BBrand%22%3Bv%3D%2224.0.0.0%22%0Achm%0A%3F0%0Achp%0AmacOS%0Achv%0A10_15_7&browser-info=pv%3A1%3Avf%3A37xk0fgslry1wqf7aktfs70g0rmlch%3Afu%3A0%3Aen%3Autf-8%3Ala%3Aen-US%3Av%3A2660%3Acn%3A1%3Adp%3A0%3Als%3A591796202215%3Ahid%3A386827248%3Az%3A0%3Ai%3A20261003081444%3Aet%3A1791015284%3Ac%3A1%3Arn%3A275224347%3Arqn%3A1%3Au%3A1791015284383654530%3Aw%3A1280x720%3As%3A1280x720x24%3Ask%3A1%3Afp%3A252%3Arqnl%3A1%3Ast%3A1791015286%3At%3AMDLBEAST%20Events%20Calendar%20-%20Discover%20Now%20%7C%20MDLBEAST&t=clt(1026)clc(0-0-0)rqnt(1)ti(1)",
+          "url": "https://mc.yango.com/watch/100422118?wmode=7&page-url=https%3A%2F%2Fmdlbeast.com%2Fevents&charset=utf-8&uah=chu%0A%22HeadlessChrome%22%3Bv%3D%22149%22%2C%22Chromium%22%3Bv%3D%22149%22%2C%22Not)A%3BBrand%22%3Bv%3D%2224%22%0Acha%0Ax86%0Achb%0A64%0Achf%0A149.0.7827.55%0Achl%0A%22HeadlessChrome%22%3Bv%3D%22149.0.7827.55%22%2C%22Chromium%22%3Bv%3D%22149.0.7827.55%22%2C%22Not)A%3BBrand%22%3Bv%3D%2224.0.0.0%22%0Achm%0A%3F0%0Achp%0AmacOS%0Achv%0A10_15_7&browser-info=pv%3A1%3Avf%3A37xk0fgslry1wqf7aktfs70g0rmlch%3Afu%3A0%3Aen%3Autf-8%3Ala%3Aen-US%3Av%3A2660%3Acn%3A1%3Adp%3A0%3Als%3A415587123181%3Ahid%3A361739810%3Az%3A0%3Ai%3A20261004084414%3Aet%3A1791103454%3Ac%3A1%3Arn%3A257055714%3Arqn%3A1%3Au%3A1791103454910481117%3Aw%3A1280x720%3As%3A1280x720x24%3Ask%3A1%3Afp%3A316%3Arqnl%3A1%3Ast%3A1791103456%3At%3AMDLBEAST%20Events%20Calendar%20-%20Discover%20Now%20%7C%20MDLBEAST&t=clt(834)clc(0-0-0)rqnt(1)ti(1)",
           "content_type": "application/json",
           "resource_type": "fetch",
           "request_post_data": "",
           "response_shape": "json-object:settings,userData",
-          "preview": "{\"settings\":{\"auto_goals\":1,\"button_goals\":0,\"c_recp\":\"1.00000\",\"form_goals\":1,\"pcs\":\"1\",\"webvisor\":{\"ad_recp\":\"1.00000\",\"arch_type\":\"none\",\"date\":\"2026-08-03 20:21:22\",\"forms\":1,\"recp\":\"1.00000\"},\"sbp\": {\"a\":\"AheWej6MAh9kd+SrfHqDZ4c5C3ltXQKKzY+1wwaq3KhW9fNaM2Y72b/+0vPrKZgu\", \"b\":\"SbihdwEQQHPvgR8N1V9vorzBvAloutHAP179zQNK4zRrywCdpwQunjqdxsyQGQmj\"},\"eu\":2,\"region\":\"US\",\"hittoken\":\"1791015286_6440d0815a7b31a45abcc6ec14a7be173d39d6e62fef135d614eca7d6bb715d0\",\"cf\":1,\"mcf\":1,\"wstoken\":\"11173.9IeZoPrHjzs49Vp4PiSaAWRKw0HabhcfZLvQ69CCyEbKwI15ZEBrTbXuvIUbgAssvn2yZN0k68xlKFX_Zqg2ZudyZJr5YWGNFz-oBj0GCZM,.GjX7LL1-44rKCaNnOXTCRzx0zE0,\",\"ev\":{\"pvt\":1791015286},\"hidv2\":\"5805987858233688230\",\"ymclid\":\"5805987858233688230\"},\"userData\":{}}"
+          "preview": "{\"settings\":{\"auto_goals\":1,\"button_goals\":0,\"c_recp\":\"1.00000\",\"form_goals\":1,\"pcs\":\"1\",\"webvisor\":{\"ad_recp\":\"1.00000\",\"arch_type\":\"none\",\"date\":\"2026-08-03 20:21:22\",\"forms\":1,\"recp\":\"1.00000\"},\"sbp\": {\"a\":\"SYZBB8IDRNMG73M+Bg3AdfXXhHiYpNeP6QrbAnISjA3NJvt6ha5FDRRAhbOop8s+\", \"b\":\"PKz7KfEEsVQr8+NHnQgVT7wArnqsX9YUyzaJEqjicv1OcoJHTYThLb9SZnT0axQI\"},\"eu\":2,\"region\":\"US\",\"hittoken\":\"1791103455_0cb4c63860dd20a0a117bcfb867b38ad7c14a0d937e5c8e8abf582b0bf6307c6\",\"cf\":1,\"mcf\":1,\"wstoken\":\"11174.Un35H0C6r47f1jNzNabxtrTn4xRA5p-PW0nL_WOYG4v1cbv4mXpjIYqqRfe5J9UzOFRXehoOvID7lMjLircVnLoZCnKWPOzXOpRGDz9p_NA,.nXKGHfSORDKx98hUWaM4-OGXu3A,\",\"ev\":{\"pvt\":1791103455},\"hidv2\":\"5829101052683354443\",\"ymclid\":\"5829101052683354443\"},\"userData\":{}}"
         },
         {
           "method": "POST",
           "status": 200,
-          "url": "https://sdk-03.moengage.com/v3/campaigns/inapp/live?sdk_ver=2.80.00&unique_id=8468cc3a-8a40-4841-95a9-1f5377065f99&os=web",
+          "url": "https://sdk-03.moengage.com/v3/campaigns/inapp/live?sdk_ver=2.80.00&unique_id=68bfaf2e-c255-477f-b6ea-efbabe346378&os=web",
           "content_type": "application/json",
           "resource_type": "xhr",
-          "request_post_data": "{\"identifiers\":{},\"campaign_ids\":[],\"user_session_attributes\":{\"USER_TYPE\":\"New\",\"DAY_OF_THE_WEEK\":\"Saturday\",\"TIME_OF_THE_DAY\":\"08\"}}",
+          "request_post_data": "{\"identifiers\":{},\"campaign_ids\":[],\"user_session_attributes\":{\"USER_TYPE\":\"New\",\"DAY_OF_THE_WEEK\":\"Sunday\",\"TIME_OF_THE_DAY\":\"08\"}}",
           "response_shape": "json-object:campaigns,min_delay_btw_inapps,sync_interval,fc_settings",
           "preview": "{\"campaigns\":[],\"min_delay_btw_inapps\":900,\"sync_interval\":900,\"fc_settings\":{}}"
         }
@@ -383,7 +403,7 @@
     },
     {
       "id": "future-skills-catalog",
-      "probed_at": "2026-10-03T08:15:11.940Z",
+      "probed_at": "2026-10-04T08:44:38.481Z",
       "name": "Future Skills MCIT Catalogue",
       "priority": 17,
       "url": "https://futureskills.mcit.gov.sa/ar/catalogue/all?label=&field_main_tracks_target_id_verf=565&field_sub_tracks_target_id=All&field_training_course_level_target_id=All&field_related_skills_target_id=All&field_course_type_value=All&field_training_delivery_value=All&field_training_city_target_id=All&field_job_market_target_id=All",
@@ -391,14 +411,14 @@
       "status": "ok",
       "http_status": 200,
       "navigation_error": "",
-      "duration_ms": 18895,
+      "duration_ms": 16239,
       "classification": "rendered-html-candidates",
       "next_action": "اكتب extractor مرن من DOM بعد الرندر أو حسن selector الحالي.",
       "title": "التدريب | بوابة مهارات المستقبل",
       "text_bytes": 10774,
       "html_bytes": 86593,
-      "html_snapshot": "data/raw/browser-probes/future-skills-catalog-2026-10-03T08-14-40-511Z.html",
-      "screenshot": "data/raw/browser-probes/future-skills-catalog-2026-10-03T08-14-40-511Z.png",
+      "html_snapshot": "data/raw/browser-probes/future-skills-catalog-2026-10-04T08-44-11-871Z.html",
+      "screenshot": "data/raw/browser-probes/future-skills-catalog-2026-10-04T08-44-11-871Z.png",
       "signals": {
         "has_next_data": false,
         "has_nuxt": false,
@@ -511,7 +531,7 @@
     },
     {
       "id": "riyadh-city-events",
-      "probed_at": "2026-10-03T08:15:24.945Z",
+      "probed_at": "2026-10-04T08:44:49.636Z",
       "name": "Riyadh City Events",
       "priority": 51,
       "url": "https://riyadh.sa/en/events/all",
@@ -519,14 +539,14 @@
       "status": "ok",
       "http_status": 200,
       "navigation_error": "",
-      "duration_ms": 12965,
+      "duration_ms": 11106,
       "classification": "rendered-html-candidates",
       "next_action": "اكتب extractor مرن من DOM بعد الرندر أو حسن selector الحالي.",
       "title": "الموقع الرسمي لمدينة الرياض",
-      "text_bytes": 826,
-      "html_bytes": 155263,
-      "html_snapshot": "data/raw/browser-probes/riyadh-city-events-2026-10-03T08-14-40-511Z.html",
-      "screenshot": "data/raw/browser-probes/riyadh-city-events-2026-10-03T08-14-40-511Z.png",
+      "text_bytes": 824,
+      "html_bytes": 155261,
+      "html_snapshot": "data/raw/browser-probes/riyadh-city-events-2026-10-04T08-44-11-871Z.html",
+      "screenshot": "data/raw/browser-probes/riyadh-city-events-2026-10-04T08-44-11-871Z.png",
       "signals": {
         "has_next_data": false,
         "has_nuxt": false,

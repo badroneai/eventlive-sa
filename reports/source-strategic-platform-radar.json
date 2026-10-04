@@ -1,6 +1,6 @@
 {
   "schema": "eventlive.source-strategic-platform-radar.v1",
-  "generated_at": "2026-10-02T08:39:21.138Z",
+  "generated_at": "2026-10-04T08:32:23.244Z",
   "policy": {
     "allowed_use": "official source evidence refresh, API-surface mapping, partnership prioritization, extractor backlog decisions",
     "disallowed_use": "direct catalog publication without official confirmation and duplicate review"
@@ -255,7 +255,7 @@
         {
           "url": "https://www.visitsaudi.com/bin/api/v3/events?locale=ar",
           "status": 200,
-          "bytes": 74699,
+          "bytes": 74961,
           "classification": "reachable",
           "summary": {
             "parse_ok": true,
@@ -273,7 +273,7 @@
         {
           "url": "https://www.visitsaudi.com/bin/api/v3/events?locale=en",
           "status": 200,
-          "bytes": 78096,
+          "bytes": 78523,
           "classification": "reachable",
           "summary": {
             "parse_ok": true,
@@ -302,7 +302,7 @@
       "final_url": "https://webook.com/ar/explore",
       "via": "fetch",
       "content_type": "text/html",
-      "bytes": 7738,
+      "bytes": 7737,
       "title": "",
       "classification": "protected",
       "error": "",

@@ -1,14 +1,14 @@
 # EventLive Visit Saudi Image Identity Report
 
-- generated_at: 2026-10-03T08:24:36.346Z
-- pdf_crop_assignments: 27
-- verified: 25
+- generated_at: 2026-10-04T08:55:44.526Z
+- pdf_crop_assignments: 26
+- verified: 24
 - struck: 2
-- slots_seen_this_cycle: 27
+- slots_seen_this_cycle: 26
 
 ## Struck (fell back to generated cover)
 
-- بي إف إل مينا 11 - نصف النهائي في الرياض (visit-saudi-summer-2026-p062-top-right.jpg) - slot-vacated - no dated card currently occupies page 62 top-right of https://www.visitsaudi.com/content/dam/documents/saudi-calendar-ar.pdf
+- سيرك فونتانا (visit-saudi-summer-2026-p052-bottom-left.jpg) - slot-vacated - no dated card currently occupies page 52 bottom-left of https://www.visitsaudi.com/content/dam/documents/saudi-calendar-ar.pdf
 - ألف وواحد (visit-saudi-summer-2026-p063-bottom-left.jpg) - identity-mismatch - page 63 bottom-left is now "وقف! عرض نمر الكوميدي المباشر في الرياض"
 
 ## Verified
@@ -22,7 +22,6 @@
 - بسطة القابل (visit-saudi-summer-2026-p026-top-right.jpg)
 - تجربة شاطئ قالو (visit-saudi-summer-2026-p004-bottom-left.jpg)
 - استمرارية 26 (visit-saudi-summer-2026-p052-top-left.jpg)
-- سيرك فونتانا (visit-saudi-summer-2026-p052-bottom-left.jpg)
 - دوري الملوك MENA (visit-saudi-summer-2026-p053-top-right.jpg)
 - كأس الخليج (visit-saudi-summer-2026-p007-bottom-right.jpg)
 - IN ACT - ACT X (visit-saudi-summer-2026-p062-top-left.jpg)

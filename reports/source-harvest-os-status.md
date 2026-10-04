@@ -1,41 +1,41 @@
 # EventLive Harvest OS Status
 
-- Generated at: 2026-10-03T08:43:11.558Z
+- Generated at: 2026-10-04T09:15:22.027Z
 - Status: NEEDS_WORK
 - Operating rule: Probe before new sources; sample before full harvest; Raw collection is not publication; discovery-only never auto-publishes.
 
 ## Totals
 
 - Sources: 88
-- Candidates: 402
-- Matched candidates: 374
+- Candidates: 404
+- Matched candidates: 375
 - Auto-publish sources: 15
 - Candidate-only sources: 12
 - Partnership-required sources: 5
-- Productive sources / attempted: 15/18
-- Collector errors: 7 (chronic 7, transient 0)
+- Productive sources / attempted: 17/29
+- Collector errors: 6 (chronic 6, transient 0)
 
 ## Publication Funnel
 
 | Stage | Count |
 | --- | --- |
-| discovered_this_run | 177 |
-| candidate_queue | 402 |
-| evaluated_for_publish | 402 |
-| linked_existing | 370 |
-| published_new | 0 |
-| blocked | 32 |
+| discovered_this_run | 206 |
+| candidate_queue | 404 |
+| evaluated_for_publish | 404 |
+| linked_existing | 367 |
+| published_new | 4 |
+| blocked | 33 |
 | secondary_promoted | 0 |
-| secondary_still_blocked | 30 |
+| secondary_still_blocked | 37 |
 
 ## Blocked Reasons
 
 | Reason | Count |
 | --- | --- |
 | publication gate source-evidence is not auto-publishable | 22 |
+| possible duplicate requires review: exact-title-city-venue-conflict | 3 |
 | unknown category requires review | 3 |
 | possible duplicate already exists: event-melwah-falcon-racing | 2 |
-| possible duplicate requires review: exact-title-city-venue-conflict | 2 |
 | linked catalog row event-feena-nehke-stand-up-comedy-by-john-achkar was superseded by dedupe | 1 |
 | possible duplicate requires review: exact-title-city-source-conflict | 1 |
 | linked catalog row event-music-festival-mdlbeast-soundstorm was superseded by dedupe | 1 |
@@ -44,13 +44,12 @@
 
 | Source | Kind | Failed runs in a row | Attempted this run | Reason |
 | --- | --- | --- | --- | --- |
-| moc-cultural-calendar | chronic | 44 | no | collector-error: fetch failed [ETIMEDOUT, ENETUNREACH]; fetch failed [ETIMEDOUT, ENETUNREACH] |
-| mos-events | chronic | 44 | no | collector-error: fetch failed [ETIMEDOUT, ENETUNREACH] |
-| moc-cultural-subportals | chronic | 44 | no | collector-error: fetch failed [UND_ERR_CONNECT_TIMEOUT]; fetch failed [UND_ERR_CONNECT_TIMEOUT] |
-| saudi-pro-league-fixtures | chronic | 24 | no | collector-error: fetch failed [EAI_AGAIN] |
-| tuwaiq-academy-bootcamps | chronic | 21 | no | collector-error: HTTP 403 |
-| monshaat-events | chronic | 12 | no | collector-error: fetch failed [UND_ERR_CONNECT_TIMEOUT]; fetch failed [UND_ERR_CONNECT_TIMEOUT] |
-| asharqia-chamber-events | chronic | 4 | no | collector-error: fetch failed [UND_ERR_CONNECT_TIMEOUT] |
+| moc-cultural-calendar | chronic | 45 | yes | collector-error: fetch failed [ETIMEDOUT, ENETUNREACH]; fetch failed [ETIMEDOUT, ENETUNREACH] |
+| mos-events | chronic | 45 | yes | collector-error: fetch failed [ETIMEDOUT, ENETUNREACH] |
+| moc-cultural-subportals | chronic | 45 | yes | collector-error: fetch failed [UND_ERR_CONNECT_TIMEOUT]; fetch failed [UND_ERR_CONNECT_TIMEOUT] |
+| saudi-pro-league-fixtures | chronic | 25 | yes | collector-error: fetch failed [EAI_AGAIN] |
+| tuwaiq-academy-bootcamps | chronic | 22 | yes | collector-error: HTTP 403 |
+| monshaat-events | chronic | 13 | yes | collector-error: fetch failed [UND_ERR_CONNECT_TIMEOUT]; fetch failed [UND_ERR_CONNECT_TIMEOUT] |
 
 | Source | Policy | Trust | Gate |
 | --- | --- | --- | --- |

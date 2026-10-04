@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-03T08:24:36.346Z",
+  "generated_at": "2026-10-04T08:55:44.526Z",
   "catalog": "data/events_catalog.json",
   "candidates": "data/source_candidates.json",
   "manifest": "data/event_image_cache_manifest.json",
@@ -9,18 +9,18 @@
     "min_intersection": 2
   },
   "totals": {
-    "pdf_crop_assignments": 27,
-    "verified": 25,
+    "pdf_crop_assignments": 26,
+    "verified": 24,
     "struck": 2,
-    "slots_seen_this_cycle": 27
+    "slots_seen_this_cycle": 26
   },
   "struck": [
     {
-      "id": "event-بي-إف-إل-مينا-11-نصف-النهائي-في-الرياض",
-      "title": "بي إف إل مينا 11 - نصف النهائي في الرياض",
-      "file": "visit-saudi-summer-2026-p062-top-right.jpg",
+      "id": "event-سيرك-فونتانا",
+      "title": "سيرك فونتانا",
+      "file": "visit-saudi-summer-2026-p052-bottom-left.jpg",
       "reason": "slot-vacated",
-      "detail": "no dated card currently occupies page 62 top-right of https://www.visitsaudi.com/content/dam/documents/saudi-calendar-ar.pdf"
+      "detail": "no dated card currently occupies page 52 bottom-left of https://www.visitsaudi.com/content/dam/documents/saudi-calendar-ar.pdf"
     },
     {
       "id": "event-ألف-وواحد",
@@ -117,15 +117,6 @@
       "file": "visit-saudi-summer-2026-p052-top-left.jpg",
       "matched_tokens": [
         "استمراريه"
-      ]
-    },
-    {
-      "id": "event-سيرك-فونتانا",
-      "title": "سيرك فونتانا",
-      "file": "visit-saudi-summer-2026-p052-bottom-left.jpg",
-      "matched_tokens": [
-        "سيرك",
-        "فونتانا"
       ]
     },
     {
