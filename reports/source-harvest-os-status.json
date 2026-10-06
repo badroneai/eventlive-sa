@@ -1,22 +1,22 @@
 {
   "schema": "eventlive.harvest-os-status.v1",
-  "generated_at": "2026-10-04T09:15:22.027Z",
+  "generated_at": "2026-10-06T01:56:14.986Z",
   "status": "NEEDS_WORK",
   "operating_rule": "Probe before new sources; sample before full harvest; Raw collection is not publication; discovery-only never auto-publishes.",
   "totals": {
     "sources": 88,
-    "candidates": 404,
-    "matched_candidates": 375,
+    "candidates": 407,
+    "matched_candidates": 378,
     "auto_publish_sources": 15,
     "candidate_only_sources": 12,
     "partnership_required_sources": 5,
     "blocked_or_closed_sources": 0,
     "manual_review_sources": 56,
-    "collection_attempted": 29,
+    "collection_attempted": 41,
     "productive_sources": 17,
-    "collector_errors": 6,
+    "collector_errors": 7,
     "chronic_collector_errors": 6,
-    "transient_collector_errors": 0
+    "transient_collector_errors": 1
   },
   "policies": {
     "partnership_required": 5,
@@ -25,19 +25,19 @@
     "manual_review": 56
   },
   "candidates_by_gate": {
-    "catalog-review": 373,
+    "catalog-review": 376,
     "source-evidence": 27,
     "duplicate-review": 4
   },
   "funnel": {
-    "discovered_this_run": 206,
-    "candidate_queue": 404,
-    "evaluated_for_publish": 404,
-    "linked_existing": 367,
-    "published_new": 4,
+    "discovered_this_run": 209,
+    "candidate_queue": 407,
+    "evaluated_for_publish": 407,
+    "linked_existing": 369,
+    "published_new": 5,
     "blocked": 33,
     "secondary_promoted": 0,
-    "secondary_still_blocked": 37
+    "secondary_still_blocked": 36
   },
   "blocked_reasons": {
     "possible duplicate already exists: event-melwah-falcon-racing": 2,
@@ -52,43 +52,50 @@
     {
       "id": "moc-cultural-calendar",
       "note": "collector-error: fetch failed [ETIMEDOUT, ENETUNREACH]; fetch failed [ETIMEDOUT, ENETUNREACH]",
-      "error_streak": 45,
+      "error_streak": 46,
       "kind": "chronic",
       "attempted_this_run": true
     },
     {
       "id": "mos-events",
       "note": "collector-error: fetch failed [ETIMEDOUT, ENETUNREACH]",
-      "error_streak": 45,
+      "error_streak": 46,
       "kind": "chronic",
       "attempted_this_run": true
     },
     {
       "id": "moc-cultural-subportals",
       "note": "collector-error: fetch failed [UND_ERR_CONNECT_TIMEOUT]; fetch failed [UND_ERR_CONNECT_TIMEOUT]",
-      "error_streak": 45,
+      "error_streak": 46,
       "kind": "chronic",
       "attempted_this_run": true
     },
     {
       "id": "saudi-pro-league-fixtures",
       "note": "collector-error: fetch failed [EAI_AGAIN]",
-      "error_streak": 25,
+      "error_streak": 26,
       "kind": "chronic",
       "attempted_this_run": true
     },
     {
       "id": "tuwaiq-academy-bootcamps",
       "note": "collector-error: HTTP 403",
-      "error_streak": 22,
+      "error_streak": 23,
       "kind": "chronic",
       "attempted_this_run": true
     },
     {
       "id": "monshaat-events",
       "note": "collector-error: fetch failed [UND_ERR_CONNECT_TIMEOUT]; fetch failed [UND_ERR_CONNECT_TIMEOUT]",
-      "error_streak": 13,
+      "error_streak": 14,
       "kind": "chronic",
+      "attempted_this_run": true
+    },
+    {
+      "id": "asharqia-chamber-events",
+      "note": "fetch failed [UND_ERR_CONNECT_TIMEOUT]; page.goto: Timeout 30000ms exceeded.",
+      "error_streak": 1,
+      "kind": "transient",
       "attempted_this_run": true
     }
   ],

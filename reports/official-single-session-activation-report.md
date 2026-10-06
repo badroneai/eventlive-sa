@@ -1,7 +1,7 @@
 # EventLive Official Single-Session Activation
-- Generated at: 2026-10-04T09:01:06.985Z
+- Generated at: 2026-10-06T01:41:53.305Z
 - Max duration hours: 8
-- Activated: 38
+- Activated: 39
 - Skipped long events: 12
 
 | Source | Event | Duration | Type |
@@ -42,5 +42,6 @@
 | Saudi Food and Drug Authority Events | دور الهيئة العامة للغذاء و الدواء في ضمان سلامة الاستخدام الامن لجهاز الماموجرام | 1h | official-online-workshop |
 | Saudi Universities and Technical Colleges | PSE Dean’s Distinguished Speaker Seminar | 1h | official-community-session |
 | Qassim Chamber Events | الاستثمار والابتكار | 2h | official-business-workshop |
+| Qassim Chamber Events | مقدمة وأساسيات ريادة الأعمال | 2h | official-business-workshop |
 | Qassim Chamber Events | التقنيات المستقبلية | 2h | official-business-workshop |
 | Qassim Chamber Events | رأس المال البشري | 2h | official-business-workshop |

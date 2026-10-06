@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-04T08:55:44.526Z",
+  "generated_at": "2026-10-06T01:36:20.813Z",
   "catalog": "data/events_catalog.json",
   "candidates": "data/source_candidates.json",
   "manifest": "data/event_image_cache_manifest.json",
@@ -9,19 +9,12 @@
     "min_intersection": 2
   },
   "totals": {
-    "pdf_crop_assignments": 26,
+    "pdf_crop_assignments": 25,
     "verified": 24,
-    "struck": 2,
+    "struck": 1,
     "slots_seen_this_cycle": 26
   },
   "struck": [
-    {
-      "id": "event-سيرك-فونتانا",
-      "title": "سيرك فونتانا",
-      "file": "visit-saudi-summer-2026-p052-bottom-left.jpg",
-      "reason": "slot-vacated",
-      "detail": "no dated card currently occupies page 52 bottom-left of https://www.visitsaudi.com/content/dam/documents/saudi-calendar-ar.pdf"
-    },
     {
       "id": "event-ألف-وواحد",
       "title": "ألف وواحد",

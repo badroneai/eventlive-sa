@@ -1,15 +1,15 @@
 {
-  "generated_at": "2026-10-04T08:31:22.349Z",
+  "generated_at": "2026-10-06T00:58:20.074Z",
   "registry": "data/source_registry.json",
   "source_ingestion_plan": "reports/source-ingestion-plan.json",
   "probe_limit": 28,
   "timeout_ms": 12000,
   "totals": {
-    "probed": 22,
-    "extractor_ready": 12,
-    "blocked": 10,
+    "probed": 21,
+    "extractor_ready": 11,
+    "blocked": 9,
     "partnership": 0,
-    "watch": 0
+    "watch": 1
   },
   "sources": [
     {
@@ -60,7 +60,7 @@
         "status": 200,
         "final_url": "https://baha.gov.sa/ar/Events",
         "content_type": "text/html; charset=utf-8",
-        "bytes": 209479,
+        "bytes": 209515,
         "title": "&#x641;&#x639;&#x627;&#x644;&#x64A;&#x627;&#x62A; &#x627;&#x644;&#x628;&#x627;&#x62D;&#x629; | &#x623;&#x645;&#x627;&#x646;&#x629; &#x645;&#x646;&#x637;&#x642;&#x629; &#x627;&#x644;&#x628;&#x627;&#x62D;&#x629;",
         "blocked_reason": "",
         "structured_scripts": 0,
@@ -73,42 +73,8 @@
           "datetimepicker/4.17.47/css/bootstrap-datetimepicker.min.css\" rel=\"stylesheet\">",
           "calendar-alt\">",
           "date-span\">",
-          "04 Oct 2027",
+          "06 Oct 2027",
           "dated Row -->"
-        ]
-      },
-      "extraction_score": 78,
-      "recommendation": "build-html-detail-extractor"
-    },
-    {
-      "id": "jouf-chamber-events",
-      "name": "Jouf Chamber Events",
-      "priority": 64,
-      "url": "https://ajcci.org.sa/event/",
-      "trust_level": "official",
-      "fetch_method": "html-listing",
-      "candidate_gate": "extraction",
-      "intake_policy": "official-feed-preferred",
-      "signals": {
-        "http_ok": true,
-        "status": 200,
-        "final_url": "https://ajcci.org.sa/event/",
-        "content_type": "text/html; charset=UTF-8",
-        "bytes": 150477,
-        "title": "غرفة الجوف - فعاليات الغرفة - غرفة الجوف",
-        "blocked_reason": "",
-        "structured_scripts": 1,
-        "structured_events": 0,
-        "google_calendar_links": 0,
-        "event_detail_links": 26,
-        "json_or_api_hints": 10,
-        "date_snippets": [
-          "dates-as-phonetext { text-align: left; } */ div#usm-admin-notification-widget {",
-          "date-h\">",
-          "calendar-alt\">",
-          "2024/06/23",
-          "date-h\">",
-          "calendar-alt\">"
         ]
       },
       "extraction_score": 78,
@@ -128,7 +94,7 @@
         "status": 200,
         "final_url": "https://ncci.org.sa/category/events/",
         "content_type": "text/html; charset=UTF-8",
-        "bytes": 118765,
+        "bytes": 118698,
         "title": "الفعاليات – الغرفة التجارية الحدود الشمالية",
         "blocked_reason": "",
         "structured_scripts": 0,
@@ -162,7 +128,7 @@
         "status": 200,
         "final_url": "https://www.neom.com/en-us/newsroom/events",
         "content_type": "text/html;charset=utf-8",
-        "bytes": 178914,
+        "bytes": 178911,
         "title": "Events",
         "blocked_reason": "",
         "structured_scripts": 1,
@@ -196,7 +162,7 @@
         "status": 200,
         "final_url": "https://www.cst.gov.sa/en",
         "content_type": "text/html; charset=utf-8",
-        "bytes": 1328941,
+        "bytes": 1325574,
         "title": "Communications, Space & Technology Commission (CST)",
         "blocked_reason": "",
         "structured_scripts": 2,
@@ -264,7 +230,7 @@
         "status": 200,
         "final_url": "https://www.tabukchamber.sa/",
         "content_type": "text/html; charset=UTF-8",
-        "bytes": 112375,
+        "bytes": 112356,
         "title": "الغرفة التجارية بتبوك | TABUK CHAMBER",
         "blocked_reason": "",
         "structured_scripts": 0,
@@ -298,7 +264,7 @@
         "status": 200,
         "final_url": "https://sela.sa/",
         "content_type": "text/html; charset=utf-8",
-        "bytes": 72899,
+        "bytes": 73026,
         "title": "Sela | Spectacular Everyday",
         "blocked_reason": "",
         "structured_scripts": 0,
@@ -311,8 +277,8 @@
           "Date;function t(e){var t=\"\"+e;return 1===t.length&&(t=\"0\"+t),t}return e.getUTCFullYe",
           "Date())+\"T\"+t(e.getUTCHours())+\":\"+t(e.getUTCMinutes())+\":\"+t(e.getUTCSeconds())+\".\"",
           "2 to 6 February",
-          "2 to 6 February",
-          "DATE"
+          "DATE",
+          "date information about Sela?"
         ]
       },
       "extraction_score": 46,
@@ -400,7 +366,7 @@
         "status": 200,
         "final_url": "https://www.kaust.edu.sa/en/",
         "content_type": "text/html; charset=utf-8",
-        "bytes": 84232,
+        "bytes": 84228,
         "title": "KAUST | A top research university in the Middle East",
         "blocked_reason": "",
         "structured_scripts": 0,
@@ -419,6 +385,33 @@
       },
       "extraction_score": 36,
       "recommendation": "probe-hidden-api-or-html-table"
+    },
+    {
+      "id": "jouf-chamber-events",
+      "name": "Jouf Chamber Events",
+      "priority": 64,
+      "url": "https://ajcci.org.sa/event/",
+      "trust_level": "official",
+      "fetch_method": "html-listing",
+      "candidate_gate": "extraction",
+      "intake_policy": "official-feed-preferred",
+      "signals": {
+        "http_ok": true,
+        "status": 200,
+        "final_url": "https://ajcci.org.sa/event/",
+        "content_type": "text/html; charset=utf-8",
+        "bytes": 11974,
+        "title": "One moment, please...",
+        "blocked_reason": "",
+        "structured_scripts": 0,
+        "structured_events": 0,
+        "google_calendar_links": 0,
+        "event_detail_links": 0,
+        "json_or_api_hints": 0,
+        "date_snippets": []
+      },
+      "extraction_score": 32,
+      "recommendation": "watch-or-evidence-only"
     },
     {
       "id": "riyadh-season",
@@ -529,6 +522,33 @@
       "recommendation": "blocked-or-protected:fetch failed getaddrinfo EAI_AGAIN www.ricec.com TypeError: fetch failed"
     },
     {
+      "id": "saudi-contractors-authority-events",
+      "name": "Saudi Contractors Authority Events",
+      "priority": 49,
+      "url": "https://www.sca.gov.sa/",
+      "trust_level": "official",
+      "fetch_method": "html-listing",
+      "candidate_gate": "extraction",
+      "intake_policy": "monitor-public",
+      "signals": {
+        "http_ok": false,
+        "status": 0,
+        "final_url": "https://www.sca.gov.sa/",
+        "content_type": "",
+        "bytes": 0,
+        "title": "",
+        "blocked_reason": "fetch failed getaddrinfo ENOTFOUND www.sca.gov.sa TypeError: fetch failed",
+        "structured_scripts": 0,
+        "structured_events": 0,
+        "google_calendar_links": 0,
+        "event_detail_links": 0,
+        "json_or_api_hints": 0,
+        "date_snippets": []
+      },
+      "extraction_score": -23,
+      "recommendation": "blocked-or-protected:fetch failed getaddrinfo ENOTFOUND www.sca.gov.sa TypeError: fetch failed"
+    },
+    {
       "id": "riyadh-city-events",
       "name": "Riyadh City Events",
       "priority": 51,
@@ -554,64 +574,6 @@
       },
       "extraction_score": -23,
       "recommendation": "blocked-or-protected:fetch failed unable to verify the first certificate; if the root CA is installed locally, try running Node.js with --use-system-ca TypeError: fetch failed"
-    },
-    {
-      "id": "middle-east-banking-ai-summit",
-      "name": "Middle East Banking AI & Analytics Summit Official",
-      "priority": 74,
-      "url": "https://mebankingai.com/sa/",
-      "trust_level": "official",
-      "fetch_method": "html-listing",
-      "candidate_gate": "human-review",
-      "intake_policy": "official-feed-preferred",
-      "signals": {
-        "http_ok": true,
-        "status": 200,
-        "final_url": "https://mebankingai.com/sa/",
-        "content_type": "text/html",
-        "bytes": 2305,
-        "title": "Middle East Banking",
-        "blocked_reason": "bot-protection",
-        "structured_scripts": 0,
-        "structured_events": 0,
-        "google_calendar_links": 0,
-        "event_detail_links": 0,
-        "json_or_api_hints": 1,
-        "date_snippets": [
-          "Date(); (function(){ var s1=document.createElement(\"script\"),s0=document.getElements"
-        ]
-      },
-      "extraction_score": -23,
-      "recommendation": "blocked-or-protected:bot-protection"
-    },
-    {
-      "id": "middle-east-enterprise-ai-summit",
-      "name": "Middle East Enterprise AI & Analytics Summit Official",
-      "priority": 75,
-      "url": "https://meenterpriseai.com/sa/",
-      "trust_level": "official",
-      "fetch_method": "html-listing",
-      "candidate_gate": "human-review",
-      "intake_policy": "official-feed-preferred",
-      "signals": {
-        "http_ok": true,
-        "status": 200,
-        "final_url": "https://meenterpriseai.com/sa/",
-        "content_type": "text/html",
-        "bytes": 1996,
-        "title": "Middle East Enterprise",
-        "blocked_reason": "bot-protection",
-        "structured_scripts": 0,
-        "structured_events": 0,
-        "google_calendar_links": 0,
-        "event_detail_links": 0,
-        "json_or_api_hints": 1,
-        "date_snippets": [
-          "Date(); (function(){ var s1=document.createElement(\"script\"),s0=document.getElements"
-        ]
-      },
-      "extraction_score": -23,
-      "recommendation": "blocked-or-protected:bot-protection"
     },
     {
       "id": "saudi-digital-academy",
@@ -654,7 +616,7 @@
         "status": 403,
         "final_url": "https://qiddiya.com/",
         "content_type": "text/html; charset=UTF-8",
-        "bytes": 5845,
+        "bytes": 5844,
         "title": "Attention Required! | Cloudflare",
         "blocked_reason": "http-403",
         "structured_scripts": 0,
@@ -707,11 +669,6 @@
       "reason": "score=78, gcal=0, structured=0, links=22"
     },
     {
-      "id": "jouf-chamber-events",
-      "recommendation": "build-html-detail-extractor",
-      "reason": "score=78, gcal=0, structured=0, links=26"
-    },
-    {
       "id": "northern-borders-chamber-events",
       "recommendation": "build-html-detail-extractor",
       "reason": "score=78, gcal=0, structured=0, links=30"
@@ -735,6 +692,11 @@
       "id": "tabuk-chamber-events",
       "recommendation": "probe-hidden-api-or-html-table",
       "reason": "score=48, gcal=0, structured=0, links=0"
+    },
+    {
+      "id": "sela-sea-expo",
+      "recommendation": "probe-hidden-api-or-html-table",
+      "reason": "score=46, gcal=0, structured=0, links=0"
     }
   ]
 }

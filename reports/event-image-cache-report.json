@@ -1,18 +1,31 @@
 {
-  "generated_at": "2026-10-04T09:03:03.402Z",
+  "generated_at": "2026-10-06T01:43:45.818Z",
   "events_file": "dist/events.json",
   "manifest": "data/event_image_cache_manifest.json",
   "image_dir": "dist/assets/event-images",
   "totals": {
     "targets": 500,
-    "cached_total": 888,
-    "fetched": 0,
-    "reused": 494,
+    "cached_total": 890,
+    "fetched": 2,
+    "reused": 492,
     "failed": 6,
     "skipped_recent_failures": 0,
     "remembered_failures": 30
   },
-  "fetched": [],
+  "fetched": [
+    {
+      "source_url": "https://hayyjameel.org/wp-content/uploads/2026/10/202610_ATER_Banner-1100x500.png",
+      "file": "dist/assets/event-images/jameel-library-opening-programme-at-the-edge-of-renewal-with-the-khale-7b741eb2e7.png",
+      "bytes": 733507,
+      "events": 1
+    },
+    {
+      "source_url": "https://hayyjameel.org/wp-content/uploads/2026/09/DSC04569-1100x500.jpg",
+      "file": "dist/assets/event-images/مستكشفو-هاي-57ca03f0f5.jpg",
+      "bytes": 66836,
+      "events": 1
+    }
+  ],
   "reused": [
     {
       "source_url": "https://music.moc.gov.sa/-/media/Project/Ministries/Moc/Events/Artboard1.png",
@@ -262,7 +275,7 @@
     {
       "source_url": "https://uqu.edu.sa/assets/images/uqu-gate.jpeg",
       "file": "dist/assets/event-images/الشهادة-الدولية-للحاسب-والإنترنت-ic3-a46ba6d2eb.jpg",
-      "events": 112
+      "events": 113
     },
     {
       "source_url": "https://scth.scene7.com/is/image/scth/buraydah-dates-carnival-qassim?wid=1400&hei=788&fit=constrain&fmt=webp",
@@ -357,7 +370,7 @@
     {
       "source_url": "https://www.visitsaudi.com/images/ornament-h-m1-24-8290.original.png",
       "file": "dist/assets/event-images/forest-wonder-499a88ca39.png",
-      "events": 15
+      "events": 16
     },
     {
       "source_url": "https://cdn.tuwaiq.edu.sa/initiatives_admin/images/4jaiuua2.tw3.webp",
@@ -427,11 +440,6 @@
     {
       "source_url": "https://cdn.tuwaiq.edu.sa/initiatives_admin/images/nadcywdn.tl5.webp",
       "file": "dist/assets/event-images/معسكر-إدارة-الحوكمة-والمخاطر-والامتثال-grc-88592b3651.webp",
-      "events": 1
-    },
-    {
-      "source_url": "https://hayyjameel.org/wp-content/uploads/2026/09/DSC02202-1100x500.jpg",
-      "file": "dist/assets/event-images/مستكشفو-هاي-2a57673831.jpg",
       "events": 1
     },
     {
@@ -585,11 +593,6 @@
       "events": 1
     },
     {
-      "source_url": "https://www.sfda.gov.sa/sites/default/files/2026-07/wrr12.jpg",
-      "file": "dist/assets/event-images/نقل-مبيدات-آفات-الصحة-العامة-dfaa164635.jpg",
-      "events": 7
-    },
-    {
       "source_url": "https://api.riyadh.sa/sites/default/files/styles/medium/public/2026-02/slider-riyadh.jpg?itok=paMnaS4v",
       "file": "dist/assets/event-images/global-csr-forum-77e94825e0.jpg",
       "events": 1
@@ -640,9 +643,19 @@
       "events": 1
     },
     {
+      "source_url": "https://www.datocms-assets.com/66357/1751801189-mdlbeast.png?auto=format&fit=max&w=1200",
+      "file": "dist/assets/event-images/unstable-ba5c599823.avif",
+      "events": 5
+    },
+    {
       "source_url": "https://hayyjameel.org/wp-content/uploads/2026/09/Artist1-Ustad-Abdul-Aziz-1100x500.jpg",
       "file": "dist/assets/event-images/hayy-cinema-x-hayy-arts-between-destinations-short-films-artist-discus-4a5dd900a3.jpg",
       "events": 1
+    },
+    {
+      "source_url": "https://www.ithra.com/application/files/cache/thumbnails/57ced1047619d76eed02cbbfb34191f7.jpg",
+      "file": "dist/assets/event-images/philosophy-for-everyone-a-journey-of-thought-from-young-to-old-1dc740ef9e.jpg",
+      "events": 4
     },
     {
       "source_url": "https://www.ithra.com/application/files/cache/thumbnails/03aa29a008d9d56c3d155fb84ab52397.jpg",
@@ -728,11 +741,6 @@
       "source_url": "https://hayyjameel.org/wp-content/uploads/2026/09/annie-spratt-HB-Kf9WLy_0-unsplash-scaled-aspect-ratio-2560-1349-1-1100x500.jpg",
       "file": "dist/assets/event-images/هاي-ماكرز-ليلة-مبتكرة-6b61cb62fa.jpg",
       "events": 1
-    },
-    {
-      "source_url": "https://www.datocms-assets.com/66357/1751801189-mdlbeast.png?auto=format&fit=max&w=1200",
-      "file": "dist/assets/event-images/unstable-ba5c599823.avif",
-      "events": 5
     },
     {
       "source_url": "https://s7g10.scene7.com/is/image/rcu/1Q7A3687-desktop-hero-2880x1620?wid=1600&hei=900&fit=constrain&fmt=webp",
@@ -1183,6 +1191,11 @@
       "source_url": "https://ssa.gov.sa/media/3j2f0xpa/sdc2028.webp?width=1400&height=788&rnd=134303158965830000",
       "file": "dist/assets/event-images/مؤتمر-الحطام-الفضائي-2028-ed926e1bba.webp",
       "events": 1
+    },
+    {
+      "source_url": "https://www.sfda.gov.sa/sites/default/files/2026-07/wrr12.jpg",
+      "file": "dist/assets/event-images/نقل-مبيدات-آفات-الصحة-العامة-dfaa164635.jpg",
+      "events": 7
     },
     {
       "source_url": "https://www.ithra.com/application/files/cache/thumbnails/5c595252d2af2e0b0cd47e3052049c40.jpg",
@@ -2430,11 +2443,6 @@
       "events": 1
     },
     {
-      "source_url": "https://www.ithra.com/application/files/cache/thumbnails/57ced1047619d76eed02cbbfb34191f7.jpg",
-      "file": "dist/assets/event-images/philosophy-for-everyone-a-journey-of-thought-from-young-to-old-1dc740ef9e.jpg",
-      "events": 3
-    },
-    {
       "source_url": "https://scth.scene7.com/is/image/scth/mahabah-festival-in-abha?wid=1400&hei=788&fit=constrain&fmt=webp",
       "file": "dist/assets/event-images/mahabah-e1a415b543.webp",
       "events": 1
@@ -2478,11 +2486,6 @@
       "source_url": "https://hayyjameel.org/wp-content/uploads/2026/06/DSC00760-1-1100x500.jpg",
       "file": "dist/assets/event-images/مكتبة-جميل-برامج-يوليو-المجتمعية-f1cbae3928.jpg",
       "events": 1
-    },
-    {
-      "source_url": "https://hayyjameel.org/wp-content/uploads/2026/06/Untitled-1400-x-650-px-1-1100x500.png",
-      "file": "dist/assets/event-images/jameel-library-summer-reading-challenge-2ff280fa30.png",
-      "events": 1
     }
   ],
   "rejected_removed": [],
@@ -2494,46 +2497,47 @@
       "events": 1,
       "reason": "HTTP 403",
       "failure_kind": "access-denied",
-      "retry_after": "2026-10-05T09:03:03.402Z"
-    },
-    {
-      "source_url": "https://s7g10.scene7.com/is/image/rcu/leonid-meteor-shower-at-jabal-ikmah:landscape-16x9?$Responsive$&fit=stretch&fmt=webp&wid=1920",
-      "events": 1,
-      "reason": "HTTP 403",
-      "failure_kind": "access-denied",
-      "retry_after": "2026-10-05T09:03:03.402Z"
-    },
-    {
-      "source_url": "https://s7g10.scene7.com/is/image/rcu/sunset-stillness-meditation-sound-immersion:landscape-16x9?$Responsive$&fit=stretch&fmt=webp&wid=1920",
-      "events": 1,
-      "reason": "HTTP 403",
-      "failure_kind": "access-denied",
-      "retry_after": "2026-10-05T09:03:03.402Z"
+      "retry_after": "2026-10-07T01:43:45.818Z"
     },
     {
       "source_url": "https://s7g10.scene7.com/is/image/rcu/fei2:landscape-16x9?$Responsive$&fit=stretch&fmt=webp&wid=1920",
       "events": 1,
       "reason": "HTTP 403",
       "failure_kind": "access-denied",
-      "retry_after": "2026-10-05T09:03:03.402Z"
+      "retry_after": "2026-10-07T01:43:45.818Z"
+    },
+    {
+      "source_url": "https://s7g10.scene7.com/is/image/rcu/leonid-meteor-shower-at-jabal-ikmah:landscape-16x9?$Responsive$&fit=stretch&fmt=webp&wid=1920",
+      "events": 1,
+      "reason": "HTTP 403",
+      "failure_kind": "access-denied",
+      "retry_after": "2026-10-07T01:43:45.818Z"
+    },
+    {
+      "source_url": "https://s7g10.scene7.com/is/image/rcu/sunset-stillness-meditation-sound-immersion:landscape-16x9?$Responsive$&fit=stretch&fmt=webp&wid=1920",
+      "events": 1,
+      "reason": "HTTP 403",
+      "failure_kind": "access-denied",
+      "retry_after": "2026-10-07T01:43:45.818Z"
     },
     {
       "source_url": "https://cdn.rfecc.sa/wp-content/uploads/mec/qr_898ea2449274454e42895b52b18c6f68.png",
       "events": 1,
       "reason": "HTTP 403",
       "failure_kind": "access-denied",
-      "retry_after": "2026-10-05T09:03:03.402Z"
+      "retry_after": "2026-10-07T01:43:45.818Z"
     },
     {
       "source_url": "https://api.riyadh.sa/sites/default/files/styles/medium/public/2026-07/er%20%2859%29.jpg?itok=a33APdGm",
       "events": 1,
       "reason": "not-image text/html; charset=utf-8",
       "failure_kind": "source-returned-html",
-      "retry_after": "2026-10-05T09:03:03.402Z"
+      "retry_after": "2026-10-07T01:43:45.818Z"
     }
   ],
   "requires_rebuild": true,
   "rebuild_reasons": [
+    "fetched:2",
     "new-failures:6"
   ]
 }

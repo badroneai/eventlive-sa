@@ -1,6 +1,6 @@
 {
   "schema": "eventlive.source-strategic-platform-radar.v1",
-  "generated_at": "2026-10-04T08:32:23.244Z",
+  "generated_at": "2026-10-06T00:59:29.716Z",
   "policy": {
     "allowed_use": "official source evidence refresh, API-surface mapping, partnership prioritization, extractor backlog decisions",
     "disallowed_use": "direct catalog publication without official confirmation and duplicate review"
@@ -133,7 +133,7 @@
       "final_url": "https://nec.gov.sa/ar",
       "via": "fetch",
       "content_type": "text/html; charset=utf-8",
-      "bytes": 156055,
+      "bytes": 147941,
       "title": "المركز الوطني للفعاليات",
       "classification": "protected",
       "error": "",
@@ -185,7 +185,7 @@
       ],
       "asset_results": [],
       "api_results": [],
-      "text_sample": "المركز الوطني للفعاليات موقع حكومي مسجل لدي هيئة الحكومة الرقمية كيف تتحقق تسجيل الدخول EN تواصل معنا عِزّنا الحلم من القيم الملهمة في الثقافة السعودية، فهو يعكس تطلعات أبناء الوطن نحو مستقبلٍ طموح ومزدهر، ويقوم على الإيمان بتحويل الأفكار والطموحات إلى واقع من خلال العمل الجاد والتخطيط المستمر، وهو ما تجسده مسيرة التنمية في المملكة ورؤية السعودية 2030. وقد عبّر صاحب السمو الملكي الأمير محمد بن سلمان بن عبدالعزيز آل سعود، ولي العهد رئيس مجلس الوزراء، عن هذا الحلم الكبير بقوله في منتدى الاستثمار …"
+      "text_sample": "المركز الوطني للفعاليات موقع حكومي مسجل لدي هيئة الحكومة الرقمية كيف تتحقق تسجيل الدخول EN تواصل معنا قطاع واعد لفعاليات المملكة لقطاع فعاليات واعد، ومواسم سعودية استثنائية، وتقويم وطني مزدهر وجاذب! من نحن أُسّس مركز الفعاليات بقرار من مجلس الوزراء بتاريخ 15 رجب 1441 هـ الموافق 10 مارس 2020م، ومقره الرياض، وهو يهدف إلى تعزيز الفعاليات في المملكة، والارتقاء بالخدمات المقدمة في المجال، ودعم مواسم السعودية والتقويم الوطني والفعاليات الكبرى، بناءً على ما يصدر من أوامر وقرارات، وفقًا للتوجهات والرؤى…"
     },
     {
       "id": "visit-saudi-calendar",
@@ -255,11 +255,11 @@
         {
           "url": "https://www.visitsaudi.com/bin/api/v3/events?locale=ar",
           "status": 200,
-          "bytes": 74961,
+          "bytes": 78263,
           "classification": "reachable",
           "summary": {
             "parse_ok": true,
-            "item_count": 22,
+            "item_count": 23,
             "sample_titles": [
               "معرض اللغة العربية للطفل",
               "معرض اللغة العربية 28",
@@ -273,11 +273,11 @@
         {
           "url": "https://www.visitsaudi.com/bin/api/v3/events?locale=en",
           "status": 200,
-          "bytes": 78523,
+          "bytes": 82014,
           "classification": "reachable",
           "summary": {
             "parse_ok": true,
-            "item_count": 22,
+            "item_count": 23,
             "sample_titles": [
               "Arabic Language Exhibition for kids",
               "Arabic Language Exhibition 28",
@@ -302,7 +302,7 @@
       "final_url": "https://webook.com/ar/explore",
       "via": "fetch",
       "content_type": "text/html",
-      "bytes": 7737,
+      "bytes": 7738,
       "title": "",
       "classification": "protected",
       "error": "",
@@ -528,7 +528,7 @@
       ],
       "asset_results": [
         {
-          "url": "https://www.evento.sa/main.cc60419cfc9ea1af.js",
+          "url": "https://www.evento.sa/main.96d264010b2da9f4.js",
           "status": 200,
           "bytes": 1264326,
           "classification": "reachable",

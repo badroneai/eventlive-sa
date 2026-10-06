@@ -1,6 +1,6 @@
 # Strategic Platform Source Radar
 
-Generated at: 2026-10-04T08:32:23.244Z
+Generated at: 2026-10-06T00:59:29.716Z
 
 Policy: evidence refresh, API-surface mapping, and source strategy only. This radar does not auto-publish catalog events.
 
@@ -51,8 +51,8 @@ Policy: evidence refresh, API-surface mapping, and source strategy only. This ra
 - Project use: Keep in the 6-hour source ring; Arabic and English API payloads are reachable and useful for tourism-facing event discovery.
 - Title: تقويم السعودية | تابع العطلات والفعاليات المميزة - الموقع الرسمي للسياحة السعودية
 - Hint URLs: https://www.googletagmanager.com, https://cdn.consentmanager.net, https://delivery.consentmanager.net, https://www.googletagmanager.com/gtm.js?id=, https://www.clarity.ms/tag/, https://www.visitsaudi.com/images/SoundStorm-1.2e16d0ba.fill-1200x630.jpg, https://www.visitsaudi.com/ar/saudi-calendar, https://www.visitsaudi.com/ar
-  - API 200 https://www.visitsaudi.com/bin/api/v3/events?locale=ar: 22 items; معرض اللغة العربية للطفل, معرض اللغة العربية 28, كرنفال بريدة الدولي للتمور, تجربة شاطئ قالو, «استمرارية 26» برنامج الفنانين الناشئين في فنون الوسائط الجديدة بمركز الدرعية لفنون المستقبل
-  - API 200 https://www.visitsaudi.com/bin/api/v3/events?locale=en: 22 items; Arabic Language Exhibition for kids, Arabic Language Exhibition 28, Buraydah International Dates Carnival, GALU Beach Experience, Continuum '26 Diriyah Art Futures Emerging New Media Artists Programme
+  - API 200 https://www.visitsaudi.com/bin/api/v3/events?locale=ar: 23 items; معرض اللغة العربية للطفل, معرض اللغة العربية 28, كرنفال بريدة الدولي للتمور, تجربة شاطئ قالو, «استمرارية 26» برنامج الفنانين الناشئين في فنون الوسائط الجديدة بمركز الدرعية لفنون المستقبل
+  - API 200 https://www.visitsaudi.com/bin/api/v3/events?locale=en: 23 items; Arabic Language Exhibition for kids, Arabic Language Exhibition 28, Buraydah International Dates Carnival, GALU Beach Experience, Continuum '26 Diriyah Art Futures Emerging New Media Artists Programme
 
 ### webook Explore
 
@@ -92,7 +92,7 @@ Policy: evidence refresh, API-surface mapping, and source strategy only. This ra
 - Project use: Use only as commercial marketplace intelligence until documented API permission exists; exposed app API hints are evidence, not a scraping license.
 - Title: Evento | إيفينتو
 - Hint URLs: https://api-dev.evento.sa, https://wsrv.nl/?, https://wsrv.nl, https://fonts.googleapis.com, https://fonts.gstatic.com, https://fonts.gstatic.com/s/tajawal/v12/Iura6YBj_oCad4k1nzSBC45I.woff2, https://fonts.gstatic.com/s/tajawal/v12/Iura6YBj_oCad4k1nzGBCw.woff2, https://fonts.gstatic.com/s/tajawal/v12/Iurf6YBj_oCad4k1l8KiHrRpiYlJ.woff2
-  - Asset 200 main.cc60419cfc9ea1af.js: https://evento.sa, https://evento.sa/assets/images/og-image.webp, https://schema.org, https://schema.org/EventScheduled, https://schema.org/OfflineEventAttendanceMode, https://schema.org/InStock
+  - Asset 200 main.96d264010b2da9f4.js: https://evento.sa, https://evento.sa/assets/images/og-image.webp, https://schema.org, https://schema.org/EventScheduled, https://schema.org/OfflineEventAttendanceMode, https://schema.org/InStock
 
 ### Ministry of Commerce Upcoming Events
 

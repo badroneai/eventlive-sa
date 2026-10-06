@@ -1,14 +1,15 @@
 # Ticket offer enrichment
 
-- Checked at: 2026-10-04T09:01:07.375Z
-- Targets: 10
+- Checked at: 2026-10-06T01:41:53.693Z
+- Targets: 11
 - Evidence found: 5
 - Catalog prices changed: 0
-- No evidence: 4
+- No evidence: 5
 - Failed safely: 1
 
 | Event | Host | Status | Lowest price | Evidence |
 |---|---|---|---:|---|
+| event-beast-house | nofomo.com | no-evidence | — | no-explicit-public-price |
 | event-unstable | nofomo.com | no-evidence | — | no-explicit-public-price |
 | event-a-thousand-and-one | nofomo.com | no-evidence | — | no-explicit-public-price |
 | event-soundstorm-26 | nofomo.com | evidence | 499 SAR | nofomo-visible-ticket-price |

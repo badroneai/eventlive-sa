@@ -1,14 +1,13 @@
 # EventLive Visit Saudi Image Identity Report
 
-- generated_at: 2026-10-04T08:55:44.526Z
-- pdf_crop_assignments: 26
+- generated_at: 2026-10-06T01:36:20.813Z
+- pdf_crop_assignments: 25
 - verified: 24
-- struck: 2
+- struck: 1
 - slots_seen_this_cycle: 26
 
 ## Struck (fell back to generated cover)
 
-- سيرك فونتانا (visit-saudi-summer-2026-p052-bottom-left.jpg) - slot-vacated - no dated card currently occupies page 52 bottom-left of https://www.visitsaudi.com/content/dam/documents/saudi-calendar-ar.pdf
 - ألف وواحد (visit-saudi-summer-2026-p063-bottom-left.jpg) - identity-mismatch - page 63 bottom-left is now "وقف! عرض نمر الكوميدي المباشر في الرياض"
 
 ## Verified
