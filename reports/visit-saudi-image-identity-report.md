@@ -1,13 +1,15 @@
 # EventLive Visit Saudi Image Identity Report
 
-- generated_at: 2026-10-06T01:36:20.813Z
+- generated_at: 2026-10-07T09:13:59.688Z
 - pdf_crop_assignments: 25
-- verified: 24
-- struck: 1
-- slots_seen_this_cycle: 26
+- verified: 22
+- struck: 3
+- slots_seen_this_cycle: 24
 
 ## Struck (fell back to generated cover)
 
+- بسطة القابل (visit-saudi-summer-2026-p026-top-right.jpg) - slot-vacated - no dated card currently occupies page 26 top-right of https://www.visitsaudi.com/content/dam/documents/saudi-calendar-ar.pdf
+- كأس الخليج (visit-saudi-summer-2026-p007-bottom-right.jpg) - slot-vacated - no dated card currently occupies page 7 bottom-right of https://www.visitsaudi.com/content/dam/documents/saudi-calendar-ar.pdf
 - ألف وواحد (visit-saudi-summer-2026-p063-bottom-left.jpg) - identity-mismatch - page 63 bottom-left is now "وقف! عرض نمر الكوميدي المباشر في الرياض"
 
 ## Verified
@@ -18,11 +20,9 @@
 - معرض قلب البحر (visit-saudi-summer-2026-p004-top-right.png)
 - معرض في تتبّع ذكريات غامرة (visit-saudi-summer-2026-p004-top-left.png)
 - الاخطبوطية (visit-saudi-summer-2026-p052-top-right.jpg)
-- بسطة القابل (visit-saudi-summer-2026-p026-top-right.jpg)
 - تجربة شاطئ قالو (visit-saudi-summer-2026-p004-bottom-left.jpg)
 - استمرارية 26 (visit-saudi-summer-2026-p052-top-left.jpg)
 - دوري الملوك MENA (visit-saudi-summer-2026-p053-top-right.jpg)
-- كأس الخليج (visit-saudi-summer-2026-p007-bottom-right.jpg)
 - IN ACT - ACT X (visit-saudi-summer-2026-p062-top-left.jpg)
 - عرض علاء الشيخ في الرياض (visit-saudi-summer-2026-p062-bottom-right.jpg)
 - عرض علاء الشيخ في جدة (visit-saudi-summer-2026-p021-top-right.jpg)

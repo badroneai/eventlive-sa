@@ -1,15 +1,15 @@
 {
-  "generated_at": "2026-10-06T00:58:20.074Z",
+  "generated_at": "2026-10-07T08:47:23.608Z",
   "registry": "data/source_registry.json",
   "source_ingestion_plan": "reports/source-ingestion-plan.json",
   "probe_limit": 28,
   "timeout_ms": 12000,
   "totals": {
-    "probed": 21,
+    "probed": 22,
     "extractor_ready": 11,
-    "blocked": 9,
+    "blocked": 11,
     "partnership": 0,
-    "watch": 1
+    "watch": 0
   },
   "sources": [
     {
@@ -73,8 +73,42 @@
           "datetimepicker/4.17.47/css/bootstrap-datetimepicker.min.css\" rel=\"stylesheet\">",
           "calendar-alt\">",
           "date-span\">",
-          "06 Oct 2027",
+          "07 Oct 2027",
           "dated Row -->"
+        ]
+      },
+      "extraction_score": 78,
+      "recommendation": "build-html-detail-extractor"
+    },
+    {
+      "id": "jouf-chamber-events",
+      "name": "Jouf Chamber Events",
+      "priority": 64,
+      "url": "https://ajcci.org.sa/event/",
+      "trust_level": "official",
+      "fetch_method": "html-listing",
+      "candidate_gate": "extraction",
+      "intake_policy": "official-feed-preferred",
+      "signals": {
+        "http_ok": true,
+        "status": 200,
+        "final_url": "https://ajcci.org.sa/event/",
+        "content_type": "text/html; charset=UTF-8",
+        "bytes": 150465,
+        "title": "غرفة الجوف - فعاليات الغرفة - غرفة الجوف",
+        "blocked_reason": "",
+        "structured_scripts": 1,
+        "structured_events": 0,
+        "google_calendar_links": 0,
+        "event_detail_links": 26,
+        "json_or_api_hints": 10,
+        "date_snippets": [
+          "dates-as-phonetext { text-align: left; } */ div#usm-admin-notification-widget {",
+          "date-h\">",
+          "calendar-alt\">",
+          "2024/06/23",
+          "date-h\">",
+          "calendar-alt\">"
         ]
       },
       "extraction_score": 78,
@@ -128,7 +162,7 @@
         "status": 200,
         "final_url": "https://www.neom.com/en-us/newsroom/events",
         "content_type": "text/html;charset=utf-8",
-        "bytes": 178911,
+        "bytes": 178914,
         "title": "Events",
         "blocked_reason": "",
         "structured_scripts": 1,
@@ -162,8 +196,8 @@
         "status": 200,
         "final_url": "https://www.cst.gov.sa/en",
         "content_type": "text/html; charset=utf-8",
-        "bytes": 1325574,
-        "title": "Communications, Space & Technology Commission (CST)",
+        "bytes": 1325529,
+        "title": "CST | Communications, Space & Technology Commission",
         "blocked_reason": "",
         "structured_scripts": 2,
         "structured_events": 0,
@@ -183,40 +217,6 @@
       "recommendation": "probe-hidden-api-or-html-table"
     },
     {
-      "id": "historic-jeddah-albalad",
-      "name": "Visit AlBalad / Historic Jeddah",
-      "priority": 38,
-      "url": "https://visitalbalad.com/",
-      "trust_level": "official",
-      "fetch_method": "html-listing",
-      "candidate_gate": "extraction",
-      "intake_policy": "monitor-public",
-      "signals": {
-        "http_ok": true,
-        "status": 200,
-        "final_url": "https://visitalbalad.com/",
-        "content_type": "text/html; charset=utf-8",
-        "bytes": 117097,
-        "title": "جدة التاريخية - الصفحة الرئيسية لجدة",
-        "blocked_reason": "",
-        "structured_scripts": 0,
-        "structured_events": 0,
-        "google_calendar_links": 0,
-        "event_detail_links": 2,
-        "json_or_api_hints": 21,
-        "date_snippets": [
-          "Date()); gtag('config', 'G-7P4ZNKE7Y1');",
-          "datepicker-calendar-container-shape: 4px;--mat-datepicker-calendar-container-touch-s",
-          "datepicker-calendar-container-elevation-shadow: 0px 2px 4px -1px rgba(0, 0, 0, .2),",
-          "datepicker-calendar-container-touch-elevation-shadow: 0px 11px 15px -7px rgba(0, 0,",
-          "datepicker-calendar-date-in-range-state-background-color: color-mix(in srgb, #673ab7",
-          "datepicker-calendar-date-in-comparison-range-state-background-color: color-mix(in sr"
-        ]
-      },
-      "extraction_score": 58,
-      "recommendation": "probe-hidden-api-or-html-table"
-    },
-    {
       "id": "tabuk-chamber-events",
       "name": "Tabuk Chamber Events",
       "priority": 66,
@@ -230,7 +230,7 @@
         "status": 200,
         "final_url": "https://www.tabukchamber.sa/",
         "content_type": "text/html; charset=UTF-8",
-        "bytes": 112356,
+        "bytes": 112580,
         "title": "الغرفة التجارية بتبوك | TABUK CHAMBER",
         "blocked_reason": "",
         "structured_scripts": 0,
@@ -264,7 +264,7 @@
         "status": 200,
         "final_url": "https://sela.sa/",
         "content_type": "text/html; charset=utf-8",
-        "bytes": 73026,
+        "bytes": 73020,
         "title": "Sela | Spectacular Everyday",
         "blocked_reason": "",
         "structured_scripts": 0,
@@ -366,7 +366,7 @@
         "status": 200,
         "final_url": "https://www.kaust.edu.sa/en/",
         "content_type": "text/html; charset=utf-8",
-        "bytes": 84228,
+        "bytes": 85149,
         "title": "KAUST | A top research university in the Middle East",
         "blocked_reason": "",
         "structured_scripts": 0,
@@ -385,33 +385,6 @@
       },
       "extraction_score": 36,
       "recommendation": "probe-hidden-api-or-html-table"
-    },
-    {
-      "id": "jouf-chamber-events",
-      "name": "Jouf Chamber Events",
-      "priority": 64,
-      "url": "https://ajcci.org.sa/event/",
-      "trust_level": "official",
-      "fetch_method": "html-listing",
-      "candidate_gate": "extraction",
-      "intake_policy": "official-feed-preferred",
-      "signals": {
-        "http_ok": true,
-        "status": 200,
-        "final_url": "https://ajcci.org.sa/event/",
-        "content_type": "text/html; charset=utf-8",
-        "bytes": 11974,
-        "title": "One moment, please...",
-        "blocked_reason": "",
-        "structured_scripts": 0,
-        "structured_events": 0,
-        "google_calendar_links": 0,
-        "event_detail_links": 0,
-        "json_or_api_hints": 0,
-        "date_snippets": []
-      },
-      "extraction_score": 32,
-      "recommendation": "watch-or-evidence-only"
     },
     {
       "id": "riyadh-season",
@@ -495,6 +468,33 @@
       "recommendation": "blocked-or-protected:timeout"
     },
     {
+      "id": "historic-jeddah-albalad",
+      "name": "Visit AlBalad / Historic Jeddah",
+      "priority": 38,
+      "url": "https://visitalbalad.com/",
+      "trust_level": "official",
+      "fetch_method": "html-listing",
+      "candidate_gate": "extraction",
+      "intake_policy": "monitor-public",
+      "signals": {
+        "http_ok": false,
+        "status": 0,
+        "final_url": "https://visitalbalad.com/",
+        "content_type": "",
+        "bytes": 0,
+        "title": "",
+        "blocked_reason": "timeout",
+        "structured_scripts": 0,
+        "structured_events": 0,
+        "google_calendar_links": 0,
+        "event_detail_links": 0,
+        "json_or_api_hints": 0,
+        "date_snippets": []
+      },
+      "extraction_score": -23,
+      "recommendation": "blocked-or-protected:timeout"
+    },
+    {
       "id": "ricec-events",
       "name": "Riyadh International Convention and Exhibition Center",
       "priority": 41,
@@ -522,33 +522,6 @@
       "recommendation": "blocked-or-protected:fetch failed getaddrinfo EAI_AGAIN www.ricec.com TypeError: fetch failed"
     },
     {
-      "id": "saudi-contractors-authority-events",
-      "name": "Saudi Contractors Authority Events",
-      "priority": 49,
-      "url": "https://www.sca.gov.sa/",
-      "trust_level": "official",
-      "fetch_method": "html-listing",
-      "candidate_gate": "extraction",
-      "intake_policy": "monitor-public",
-      "signals": {
-        "http_ok": false,
-        "status": 0,
-        "final_url": "https://www.sca.gov.sa/",
-        "content_type": "",
-        "bytes": 0,
-        "title": "",
-        "blocked_reason": "fetch failed getaddrinfo ENOTFOUND www.sca.gov.sa TypeError: fetch failed",
-        "structured_scripts": 0,
-        "structured_events": 0,
-        "google_calendar_links": 0,
-        "event_detail_links": 0,
-        "json_or_api_hints": 0,
-        "date_snippets": []
-      },
-      "extraction_score": -23,
-      "recommendation": "blocked-or-protected:fetch failed getaddrinfo ENOTFOUND www.sca.gov.sa TypeError: fetch failed"
-    },
-    {
       "id": "riyadh-city-events",
       "name": "Riyadh City Events",
       "priority": 51,
@@ -574,6 +547,64 @@
       },
       "extraction_score": -23,
       "recommendation": "blocked-or-protected:fetch failed unable to verify the first certificate; if the root CA is installed locally, try running Node.js with --use-system-ca TypeError: fetch failed"
+    },
+    {
+      "id": "middle-east-banking-ai-summit",
+      "name": "Middle East Banking AI & Analytics Summit Official",
+      "priority": 74,
+      "url": "https://mebankingai.com/sa/",
+      "trust_level": "official",
+      "fetch_method": "html-listing",
+      "candidate_gate": "human-review",
+      "intake_policy": "official-feed-preferred",
+      "signals": {
+        "http_ok": true,
+        "status": 200,
+        "final_url": "https://mebankingai.com/sa/",
+        "content_type": "text/html",
+        "bytes": 2305,
+        "title": "Middle East Banking",
+        "blocked_reason": "bot-protection",
+        "structured_scripts": 0,
+        "structured_events": 0,
+        "google_calendar_links": 0,
+        "event_detail_links": 0,
+        "json_or_api_hints": 1,
+        "date_snippets": [
+          "Date(); (function(){ var s1=document.createElement(\"script\"),s0=document.getElements"
+        ]
+      },
+      "extraction_score": -23,
+      "recommendation": "blocked-or-protected:bot-protection"
+    },
+    {
+      "id": "middle-east-enterprise-ai-summit",
+      "name": "Middle East Enterprise AI & Analytics Summit Official",
+      "priority": 75,
+      "url": "https://meenterpriseai.com/sa/",
+      "trust_level": "official",
+      "fetch_method": "html-listing",
+      "candidate_gate": "human-review",
+      "intake_policy": "official-feed-preferred",
+      "signals": {
+        "http_ok": true,
+        "status": 200,
+        "final_url": "https://meenterpriseai.com/sa/",
+        "content_type": "text/html",
+        "bytes": 1996,
+        "title": "Middle East Enterprise",
+        "blocked_reason": "bot-protection",
+        "structured_scripts": 0,
+        "structured_events": 0,
+        "google_calendar_links": 0,
+        "event_detail_links": 0,
+        "json_or_api_hints": 1,
+        "date_snippets": [
+          "Date(); (function(){ var s1=document.createElement(\"script\"),s0=document.getElements"
+        ]
+      },
+      "extraction_score": -23,
+      "recommendation": "blocked-or-protected:bot-protection"
     },
     {
       "id": "saudi-digital-academy",
@@ -616,7 +647,7 @@
         "status": 403,
         "final_url": "https://qiddiya.com/",
         "content_type": "text/html; charset=UTF-8",
-        "bytes": 5844,
+        "bytes": 5845,
         "title": "Attention Required! | Cloudflare",
         "blocked_reason": "http-403",
         "structured_scripts": 0,
@@ -669,6 +700,11 @@
       "reason": "score=78, gcal=0, structured=0, links=22"
     },
     {
+      "id": "jouf-chamber-events",
+      "recommendation": "build-html-detail-extractor",
+      "reason": "score=78, gcal=0, structured=0, links=26"
+    },
+    {
       "id": "northern-borders-chamber-events",
       "recommendation": "build-html-detail-extractor",
       "reason": "score=78, gcal=0, structured=0, links=30"
@@ -682,11 +718,6 @@
       "id": "cst-events-news",
       "recommendation": "probe-hidden-api-or-html-table",
       "reason": "score=58, gcal=0, structured=0, links=0"
-    },
-    {
-      "id": "historic-jeddah-albalad",
-      "recommendation": "probe-hidden-api-or-html-table",
-      "reason": "score=58, gcal=0, structured=0, links=2"
     },
     {
       "id": "tabuk-chamber-events",

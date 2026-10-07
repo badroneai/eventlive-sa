@@ -1,9 +1,9 @@
 # Future Skills Program Enrichment Report
 
-- generated_at: 2026-10-06T01:36:24.248Z
+- generated_at: 2026-10-07T09:14:05.284Z
 - targets: 29
-- enriched: 28
-- failed: 1
+- enriched: 27
+- failed: 2
 
 ## Enriched
 
@@ -27,7 +27,6 @@
 - AWS Solutions Architect – Associate Practical (13054) - outcomes=1, topics=1, requirements=4, metadata=8
 - CompTIA Network+ (13055) - outcomes=1, topics=1, requirements=4, metadata=8
 - Power BI for Beginners (13056) - outcomes=1, topics=1, requirements=4, metadata=8
-- CCNA (13058) - outcomes=1, topics=1, requirements=4, metadata=8
 - Responsible AI, Ethics and AI Governance (13059) - outcomes=1, topics=1, requirements=4, metadata=8
 - Cloud for AI, Big Data & Machine Learning (13060) - outcomes=1, topics=1, requirements=4, metadata=8
 - CCNP (13061) - outcomes=1, topics=1, requirements=4, metadata=8
@@ -39,3 +38,4 @@
 ## Failed
 
 - Linux Administration (13057) - HTTP 404
+- CCNA (13058) - fetch failed

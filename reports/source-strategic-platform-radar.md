@@ -1,6 +1,6 @@
 # Strategic Platform Source Radar
 
-Generated at: 2026-10-06T00:59:29.716Z
+Generated at: 2026-10-07T08:48:38.634Z
 
 Policy: evidence refresh, API-surface mapping, and source strategy only. This radar does not auto-publish catalog events.
 
@@ -41,7 +41,7 @@ Policy: evidence refresh, API-surface mapping, and source strategy only. This ra
 - Classification: protected (200, fetch)
 - Project use: Keep as the top strategic feed target; public site is evidence, while national-calendar export/API access is the real integration ask.
 - Title: المركز الوطني للفعاليات
-- Hint URLs: https://nec.gov.sa/ar, https://nec.gov.sa/en, https://nec.gov.sa/media/2e5a88cf-8d48-43e2-9178-41c9e9ed8d4b/about-introduction.webp, http://www.w3.org/2000/svg, https://enjz.nec.gov.sa/, http://nec.sourcing.mn2.ariba.com/ad/selfRegistration/_c_/C2https://s1.mn2.ariba.com/Sourcing/Main/ad/loginPage/SSOActions?awsso_cc=cmVhbG06Ym1Wajthd3Nzb19ydTphSFIwY0hNNkx5OXpNUzV0YmpJdVlYSnBZbUV1WTI5dEwxTnZkWEpqYVc1bkwwMWhhVzR2WVdRdlpHVm1ZWFZzZEM5RWFYSmxZM1JCWTNScGIyNC9jbVZoYkcwOWJtVmo7YXdzc29fbHU6YUhSMGNITTZMeTl6TVM1dGJqSXVZWEpwWW1FdVkyOXRMMU52ZFhKamFXNW5MMDFoYVc0dllXUXZZMnhwWlc1MFRHOW5iM1YwTDFOVFQwRmpkR2x2Ym5NPTthd3Nzb19hcDpRVU5OO2F3c3NvX2FyaWQ6TVRjek9EQTJOREUyTmpRNU53PT07YXdzc29fa3U6YUhSMGNITTZMeTl6TVM1dGJqSXVZWEpwWW1FdVkyOXRMMU52ZFhKamFXNW5MMDFoYVc0dllXUXZZMnhwWlc1MFMyVmxjRUZzYVhabEwxTlRUMEZqZEdsdmJuTT07YXdzc29fZmw6TVE9PQ%3D%3D%3ARrUCV6K%2BXxtFtIJH7Rwdskb%2BHhc%3D&amp;awsso_ap=ACM&amp;realm=nec&amp;awsr=true, https://laws.boe.gov.sa/BoeLaws/Laws/LawDetails/e73fd7d3-e812-477b-8112-ad3f00d16fd9/1, https://www.hrsd.gov.sa/knowledge-centre/decisions-and-regulations/regulation-and-procedures/0211202310#
+- Hint URLs: https://nec.gov.sa/ar, https://nec.gov.sa/en, https://nec.gov.sa/media/2e5a88cf-8d48-43e2-9178-41c9e9ed8d4b/about-introduction.webp, http://www.w3.org/2000/svg, https://enjz.nec.gov.sa/, https://laws.boe.gov.sa/BoeLaws/Laws/LawDetails/e73fd7d3-e812-477b-8112-ad3f00d16fd9/1, https://www.hrsd.gov.sa/knowledge-centre/decisions-and-regulations/regulation-and-procedures/0211202310#, https://eparticipation.my.gov.sa/
 
 ### Visit Saudi Calendar
 

@@ -1,11 +1,11 @@
 {
-  "generated_at": "2026-10-06T01:43:45.818Z",
+  "generated_at": "2026-10-07T09:21:35.398Z",
   "events_file": "dist/events.json",
   "manifest": "data/event_image_cache_manifest.json",
   "image_dir": "dist/assets/event-images",
   "totals": {
     "targets": 500,
-    "cached_total": 890,
+    "cached_total": 892,
     "fetched": 2,
     "reused": 492,
     "failed": 6,
@@ -14,15 +14,15 @@
   },
   "fetched": [
     {
-      "source_url": "https://hayyjameel.org/wp-content/uploads/2026/10/202610_ATER_Banner-1100x500.png",
-      "file": "dist/assets/event-images/jameel-library-opening-programme-at-the-edge-of-renewal-with-the-khale-7b741eb2e7.png",
-      "bytes": 733507,
+      "source_url": "https://hayyjameel.org/wp-content/uploads/2026/10/DSC01033-1100x500.jpg",
+      "file": "dist/assets/event-images/hayy-markets-luqta-market-pre-loved-pop-up-d289a2a002.jpg",
+      "bytes": 71896,
       "events": 1
     },
     {
-      "source_url": "https://hayyjameel.org/wp-content/uploads/2026/09/DSC04569-1100x500.jpg",
-      "file": "dist/assets/event-images/مستكشفو-هاي-57ca03f0f5.jpg",
-      "bytes": 66836,
+      "source_url": "https://www.ithra.com/application/files/cache/thumbnails/9b5bc052fe8347923f82e94ae6c8ea81.png",
+      "file": "dist/assets/event-images/ithra-winter-season-2026-24e095dcda.png",
+      "bytes": 1312301,
       "events": 1
     }
   ],
@@ -443,6 +443,11 @@
       "events": 1
     },
     {
+      "source_url": "https://hayyjameel.org/wp-content/uploads/2026/09/DSC04569-1100x500.jpg",
+      "file": "dist/assets/event-images/مستكشفو-هاي-57ca03f0f5.jpg",
+      "events": 1
+    },
+    {
       "source_url": "https://hayyjameel.org/wp-content/uploads/2026/09/DSC09319-scaled-aspect-ratio-2477-1266-1100x500.jpg",
       "file": "dist/assets/event-images/نداء-مفتوح-كن-جزءا-من-هاي-ماتسوري-8ce57b87c2.jpg",
       "events": 1
@@ -593,11 +598,6 @@
       "events": 1
     },
     {
-      "source_url": "https://api.riyadh.sa/sites/default/files/styles/medium/public/2026-02/slider-riyadh.jpg?itok=paMnaS4v",
-      "file": "dist/assets/event-images/global-csr-forum-77e94825e0.jpg",
-      "events": 1
-    },
-    {
       "source_url": "https://api.riyadh.sa/sites/default/files/styles/medium/public/2025-12/ezgif.com-webp-to-jpg-converter%20%289%29_0.jpg?itok=8MIYdE3n",
       "file": "dist/assets/event-images/saudi-lifestyle-week-29c3641da8.jpg",
       "events": 1
@@ -646,6 +646,11 @@
       "source_url": "https://www.datocms-assets.com/66357/1751801189-mdlbeast.png?auto=format&fit=max&w=1200",
       "file": "dist/assets/event-images/unstable-ba5c599823.avif",
       "events": 5
+    },
+    {
+      "source_url": "https://hayyjameel.org/wp-content/uploads/2026/10/202610_ATER_Banner-1100x500.png",
+      "file": "dist/assets/event-images/jameel-library-opening-programme-at-the-edge-of-renewal-with-the-khale-7b741eb2e7.png",
+      "events": 1
     },
     {
       "source_url": "https://hayyjameel.org/wp-content/uploads/2026/09/Artist1-Ustad-Abdul-Aziz-1100x500.jpg",
@@ -1190,6 +1195,11 @@
     {
       "source_url": "https://ssa.gov.sa/media/3j2f0xpa/sdc2028.webp?width=1400&height=788&rnd=134303158965830000",
       "file": "dist/assets/event-images/مؤتمر-الحطام-الفضائي-2028-ed926e1bba.webp",
+      "events": 1
+    },
+    {
+      "source_url": "https://api.riyadh.sa/sites/default/files/styles/medium/public/2026-02/slider-riyadh.jpg?itok=paMnaS4v",
+      "file": "dist/assets/event-images/global-csr-forum-77e94825e0.jpg",
       "events": 1
     },
     {
@@ -2476,16 +2486,6 @@
       "source_url": "https://www.ithra.com/application/files/cache/thumbnails/560bafb34a47c331b1dc9ad85fc108c9.jpg",
       "file": "dist/assets/event-images/baab-d957b34587.jpg",
       "events": 1
-    },
-    {
-      "source_url": "https://scth.scene7.com/is/image/scth/gravity-carts-at-gamra?wid=1400&hei=788&fit=constrain&fmt=webp",
-      "file": "dist/assets/event-images/gravity-carts-at-gamra-577197a38b.webp",
-      "events": 1
-    },
-    {
-      "source_url": "https://hayyjameel.org/wp-content/uploads/2026/06/DSC00760-1-1100x500.jpg",
-      "file": "dist/assets/event-images/مكتبة-جميل-برامج-يوليو-المجتمعية-f1cbae3928.jpg",
-      "events": 1
     }
   ],
   "rejected_removed": [],
@@ -2493,46 +2493,46 @@
   "skipped_recent_failures": [],
   "failed": [
     {
+      "source_url": "https://s7g10.scene7.com/is/image/rcu/leonid-meteor-shower-at-jabal-ikmah:landscape-16x9?$Responsive$&fit=stretch&fmt=webp&wid=1920",
+      "events": 1,
+      "reason": "HTTP 403",
+      "failure_kind": "access-denied",
+      "retry_after": "2026-10-08T09:21:35.398Z"
+    },
+    {
       "source_url": "https://s7g10.scene7.com/is/image/rcu/stargazing-at-alula-fort:landscape-16x9?$Responsive$&fit=stretch&fmt=webp&wid=1920",
       "events": 1,
       "reason": "HTTP 403",
       "failure_kind": "access-denied",
-      "retry_after": "2026-10-07T01:43:45.818Z"
+      "retry_after": "2026-10-08T09:21:35.398Z"
     },
     {
       "source_url": "https://s7g10.scene7.com/is/image/rcu/fei2:landscape-16x9?$Responsive$&fit=stretch&fmt=webp&wid=1920",
       "events": 1,
       "reason": "HTTP 403",
       "failure_kind": "access-denied",
-      "retry_after": "2026-10-07T01:43:45.818Z"
-    },
-    {
-      "source_url": "https://s7g10.scene7.com/is/image/rcu/leonid-meteor-shower-at-jabal-ikmah:landscape-16x9?$Responsive$&fit=stretch&fmt=webp&wid=1920",
-      "events": 1,
-      "reason": "HTTP 403",
-      "failure_kind": "access-denied",
-      "retry_after": "2026-10-07T01:43:45.818Z"
+      "retry_after": "2026-10-08T09:21:35.398Z"
     },
     {
       "source_url": "https://s7g10.scene7.com/is/image/rcu/sunset-stillness-meditation-sound-immersion:landscape-16x9?$Responsive$&fit=stretch&fmt=webp&wid=1920",
       "events": 1,
       "reason": "HTTP 403",
       "failure_kind": "access-denied",
-      "retry_after": "2026-10-07T01:43:45.818Z"
+      "retry_after": "2026-10-08T09:21:35.398Z"
     },
     {
       "source_url": "https://cdn.rfecc.sa/wp-content/uploads/mec/qr_898ea2449274454e42895b52b18c6f68.png",
       "events": 1,
       "reason": "HTTP 403",
       "failure_kind": "access-denied",
-      "retry_after": "2026-10-07T01:43:45.818Z"
+      "retry_after": "2026-10-08T09:21:35.398Z"
     },
     {
       "source_url": "https://api.riyadh.sa/sites/default/files/styles/medium/public/2026-07/er%20%2859%29.jpg?itok=a33APdGm",
       "events": 1,
       "reason": "not-image text/html; charset=utf-8",
       "failure_kind": "source-returned-html",
-      "retry_after": "2026-10-07T01:43:45.818Z"
+      "retry_after": "2026-10-08T09:21:35.398Z"
     }
   ],
   "requires_rebuild": true,

@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-06T01:36:20.813Z",
+  "generated_at": "2026-10-07T09:13:59.688Z",
   "catalog": "data/events_catalog.json",
   "candidates": "data/source_candidates.json",
   "manifest": "data/event_image_cache_manifest.json",
@@ -10,11 +10,25 @@
   },
   "totals": {
     "pdf_crop_assignments": 25,
-    "verified": 24,
-    "struck": 1,
-    "slots_seen_this_cycle": 26
+    "verified": 22,
+    "struck": 3,
+    "slots_seen_this_cycle": 24
   },
   "struck": [
+    {
+      "id": "event-بسطة-القابل",
+      "title": "بسطة القابل",
+      "file": "visit-saudi-summer-2026-p026-top-right.jpg",
+      "reason": "slot-vacated",
+      "detail": "no dated card currently occupies page 26 top-right of https://www.visitsaudi.com/content/dam/documents/saudi-calendar-ar.pdf"
+    },
+    {
+      "id": "event-كأس-الخليج",
+      "title": "كأس الخليج",
+      "file": "visit-saudi-summer-2026-p007-bottom-right.jpg",
+      "reason": "slot-vacated",
+      "detail": "no dated card currently occupies page 7 bottom-right of https://www.visitsaudi.com/content/dam/documents/saudi-calendar-ar.pdf"
+    },
     {
       "id": "event-ألف-وواحد",
       "title": "ألف وواحد",
@@ -86,15 +100,6 @@
       ]
     },
     {
-      "id": "event-بسطة-القابل",
-      "title": "بسطة القابل",
-      "file": "visit-saudi-summer-2026-p026-top-right.jpg",
-      "matched_tokens": [
-        "بسطه",
-        "القابل"
-      ]
-    },
-    {
       "id": "event-تجربة-شاطئ-قالو",
       "title": "تجربة شاطئ قالو",
       "file": "visit-saudi-summer-2026-p004-bottom-left.jpg",
@@ -120,15 +125,6 @@
         "دوري",
         "الملوك",
         "mena"
-      ]
-    },
-    {
-      "id": "event-كأس-الخليج",
-      "title": "كأس الخليج",
-      "file": "visit-saudi-summer-2026-p007-bottom-right.jpg",
-      "matched_tokens": [
-        "كاس",
-        "الخليج"
       ]
     },
     {

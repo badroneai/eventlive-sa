@@ -1,10 +1,10 @@
 {
-  "generated_at": "2026-10-06T01:36:24.248Z",
+  "generated_at": "2026-10-07T09:14:05.284Z",
   "catalog": "data/events_catalog.json",
   "totals": {
     "targets": 29,
-    "enriched": 28,
-    "failed": 1
+    "enriched": 27,
+    "failed": 2
   },
   "enriched": [
     {
@@ -188,15 +188,6 @@
       "metadata": 8
     },
     {
-      "id": "event-ccna",
-      "title": "CCNA",
-      "group_id": "13058",
-      "goals": 1,
-      "features": 1,
-      "requirements": 4,
-      "metadata": 8
-    },
-    {
       "id": "event-responsible-ai-ethics-and-ai-governance",
       "title": "Responsible AI, Ethics and AI Governance",
       "group_id": "13059",
@@ -266,6 +257,12 @@
       "title": "Linux Administration",
       "group_id": "13057",
       "reason": "HTTP 404"
+    },
+    {
+      "id": "event-ccna",
+      "title": "CCNA",
+      "group_id": "13058",
+      "reason": "fetch failed"
     }
   ]
 }

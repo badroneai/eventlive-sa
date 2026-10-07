@@ -1,18 +1,18 @@
 {
-  "published_at": "2026-10-06T01:36:17.201Z",
+  "published_at": "2026-10-07T09:13:56.063Z",
   "dry_run": false,
   "include_partner": true,
   "source_candidates": "data/source_candidates.json",
   "events_catalog": "data/events_catalog.json",
-  "candidates_seen": 407,
+  "candidates_seen": 403,
   "totals": {
-    "candidates_seen": 407,
-    "published": 5,
-    "linked_existing": 369,
+    "candidates_seen": 403,
+    "published": 2,
+    "linked_existing": 368,
     "blocked": 33,
     "duplicate_review_alerts": 4,
     "category_fallback_alerts": 0,
-    "reconciled": 374,
+    "reconciled": 370,
     "session_windows_reconciled": 0
   },
   "session_window_changes": [],
@@ -94,29 +94,14 @@
   ],
   "published": [
     {
-      "candidate_id": "candidate-umm-al-qura-events-أساسيات-سلاسل-الإمداد-والخدمات-اللوجستية-20261006-85c40a60",
-      "event_id": "event-أساسيات-سلاسل-الإمداد-والخدمات-اللوجستية",
-      "title": "أساسيات سلاسل الإمداد والخدمات اللوجستية"
+      "candidate_id": "candidate-hayy-jameel-events-hayy-markets-luqta-market-pre-loved-pop-up-20261007-7b184a0c",
+      "event_id": "event-hayy-markets-luqta-market-pre-loved-pop-up",
+      "title": "Hayy Markets | Luqta Market: Pre-Loved Pop-Up"
     },
     {
-      "candidate_id": "candidate-hayy-jameel-events-jameel-library-opening-programme-at-the-edge-of-renewal-with-the-khaleej-20261008-75328003",
-      "event_id": "event-jameel-library-opening-programme-at-the-edge-of-renewal-with-the-khaleej",
-      "title": "Jameel Library | Opening Programme: At the Edge of Renewal with the Khaleeji Women’s Library and Archive"
-    },
-    {
-      "candidate_id": "candidate-ithra-events-the-impact-of-lived-experience-on-shaping-the-writer-20261008-583146fa",
-      "event_id": "event-the-impact-of-lived-experience-on-shaping-the-writer",
-      "title": "The Impact of lived Experience on Shaping the Writer"
-    },
-    {
-      "candidate_id": "candidate-qassim-chamber-events-مقدمة-وأساسيات-ريادة-الأعمال-20261012-c36b8572",
-      "event_id": "event-مقدمة-وأساسيات-ريادة-الأعمال",
-      "title": "مقدمة وأساسيات ريادة الأعمال"
-    },
-    {
-      "candidate_id": "candidate-visit-saudi-seasons-jeddah-formula-e-2026-2027-20261218-5b846bc7",
-      "event_id": "event-jeddah-formula-e-2026-2027",
-      "title": "Jeddah Formula E 2026/2027"
+      "candidate_id": "candidate-ithra-events-ithra-winter-season-2026-20261029-6e807ba5",
+      "event_id": "event-ithra-winter-season-2026",
+      "title": "Ithra Winter Season 2026"
     }
   ],
   "linked_existing": [
@@ -298,12 +283,6 @@
       "candidate_id": "candidate-tuwaiq-academy-bootcamps-معسكر-تطوير-تطبيقات-الويب-باستخدام-لغة-python-20260719-6297fa45",
       "event_id": "event-معسكر-تطوير-تطبيقات-الويب-باستخدام-لغة-python",
       "title": "معسكر تطوير تطبيقات الويب باستخدام لغة Python",
-      "reason": "already linked to catalog event"
-    },
-    {
-      "candidate_id": "candidate-visit-saudi-calendar-pdf-بسطة-القابل-20260722-4a38d19e",
-      "event_id": "event-بسطة-القابل",
-      "title": "بسطة القابل",
       "reason": "already linked to catalog event"
     },
     {
@@ -697,12 +676,6 @@
       "reason": "already linked to catalog event"
     },
     {
-      "candidate_id": "candidate-visit-saudi-calendar-pdf-كأس-الخليج-20260923-4a38d19e",
-      "event_id": "event-كأس-الخليج",
-      "title": "كأس الخليج",
-      "reason": "already linked to catalog event"
-    },
-    {
       "candidate_id": "candidate-experience-alula-events-qissa-bi-qissa-swap-a-story-20260924-a2d33a9a",
       "event_id": "event-qissa-bi-qissa-swap-a-story",
       "title": "Qissa bi Qissa (Swap a Story)",
@@ -724,12 +697,6 @@
       "candidate_id": "candidate-tuwaiq-academy-bootcamps-معسكر-الذكاء-الاصطناعي-للقادة-20260927-91a5daba",
       "event_id": "event-معسكر-الذكاء-الاصطناعي-للقادة",
       "title": "معسكر الذكاء الاصطناعي للقادة",
-      "reason": "already linked to catalog event"
-    },
-    {
-      "candidate_id": "candidate-umm-al-qura-events-قسم-الفيزياء-يشارك-في-حفل-الكلية-الجامعية-بالليث-بمناسبة-اليوم-الوطني-ال-20260930-b86b21b9",
-      "event_id": "event-قسم-الفيزياء-يشارك-في-حفل-الكلية-الجامعية-بالليث-بمناسبة-اليوم-الوطني-ال",
-      "title": "قسم الفيزياء يشارك في حفل الكلية الجامعية بالليث بمناسبة اليوم الوطني السعودي الـ96",
       "reason": "already linked to catalog event"
     },
     {
@@ -787,12 +754,6 @@
       "reason": "already linked to catalog event"
     },
     {
-      "candidate_id": "candidate-umm-al-qura-events-شهادة-محترف-الأعمال-المعتمد-في-تحفيز-الموظفين-cbp-em-20261004-f37b5615",
-      "event_id": "event-شهادة-محترف-الأعمال-المعتمد-في-تحفيز-الموظفين-cbp-em",
-      "title": "شهادة محترف الأعمال المعتمد في تحفيز الموظفين CBP-EM",
-      "reason": "already linked to catalog event"
-    },
-    {
       "candidate_id": "candidate-hayy-jameel-events-hayy-makers-introduction-to-pottery-course-with-pharah-al-ghalib-20261004-3f18bab0",
       "event_id": "event-hayy-makers-2",
       "title": "Hayy Makers | Introduction to Pottery Course with Pharah Al-Ghalib",
@@ -817,12 +778,6 @@
       "reason": "already linked to catalog event"
     },
     {
-      "candidate_id": "candidate-riyadh-city-events-global-csr-forum-20261005-5378a12f",
-      "event_id": "event-global-csr-forum",
-      "title": "Global CSR Forum",
-      "reason": "already linked to catalog event"
-    },
-    {
       "candidate_id": "candidate-riyadh-city-events-saudi-lifestyle-week-20261005-2e2473b0",
       "event_id": "event-saudi-lifestyle-week",
       "title": "Saudi Lifestyle Week",
@@ -832,30 +787,6 @@
       "candidate_id": "candidate-tuwaiq-academy-bootcamps-معسكر-الاستراتيجية-في-عصر-الذكاء-الاصطناعي-والتحول-الرقمي-20261005-c1f05c69",
       "event_id": "event-معسكر-الاستراتيجية-في-عصر-الذكاء-الاصطناعي-والتحول-الرقمي",
       "title": "معسكر الاستراتيجية في عصر الذكاء الاصطناعي والتحول الرقمي",
-      "reason": "already linked to catalog event"
-    },
-    {
-      "candidate_id": "candidate-saudi-university-events-pse-deans-distinguished-speaker-seminar-20261006-8a410e31",
-      "event_id": "event-pse-deans-distinguished-speaker-seminar",
-      "title": "PSE Dean’s Distinguished Speaker Seminar",
-      "reason": "already linked to catalog event"
-    },
-    {
-      "candidate_id": "candidate-ithra-events-emboss-printing-experience-20261006-2671d1ce",
-      "event_id": "event-emboss-printing-experience",
-      "title": "Emboss Printing Experience",
-      "reason": "already linked to catalog event"
-    },
-    {
-      "candidate_id": "candidate-ithra-events-how-to-edit-fictional-texts-20261006-e0e3a230",
-      "event_id": "event-how-to-edit-fictional-texts",
-      "title": "How to Edit Fictional Texts",
-      "reason": "already linked to catalog event"
-    },
-    {
-      "candidate_id": "candidate-ithra-events-advanced-wheel-throwing-20261006-bf5e1f8a",
-      "event_id": "event-advanced-wheel-throwing",
-      "title": "Advanced Wheel Throwing",
       "reason": "already linked to catalog event"
     },
     {
@@ -913,18 +844,6 @@
       "reason": "already linked to catalog event"
     },
     {
-      "candidate_id": "candidate-ithra-events-childrens-museum-story-time-20261007-ada8b9db",
-      "event_id": "event-childrens-museum-story-time",
-      "title": "Children's Museum Story Time",
-      "reason": "already linked to catalog event"
-    },
-    {
-      "candidate_id": "candidate-ithra-events-spot-of-inspiration-20261007-5bac584c",
-      "event_id": "event-spot-of-inspiration",
-      "title": "Spot of Inspiration",
-      "reason": "already linked to catalog event"
-    },
-    {
       "candidate_id": "candidate-ithra-events-story-land-20261007-bb5dc01b",
       "event_id": "event-story-land",
       "title": "Story Land",
@@ -937,9 +856,27 @@
       "reason": "already linked to catalog event"
     },
     {
+      "candidate_id": "candidate-ithra-events-childrens-museum-story-time-20261007-ada8b9db",
+      "event_id": "event-childrens-museum-story-time",
+      "title": "Children's Museum Story Time",
+      "reason": "already linked to catalog event"
+    },
+    {
       "candidate_id": "candidate-ithra-events-from-saudi-home-20261007-e97ae151",
       "event_id": "event-from-saudi-home",
       "title": "From Saudi Home",
+      "reason": "already linked to catalog event"
+    },
+    {
+      "candidate_id": "candidate-ithra-events-emboss-printing-experience-20261007-2671d1ce",
+      "event_id": "event-emboss-printing-experience",
+      "title": "Emboss Printing Experience",
+      "reason": "already linked to catalog event"
+    },
+    {
+      "candidate_id": "candidate-ithra-events-spot-of-inspiration-20261007-5bac584c",
+      "event_id": "event-spot-of-inspiration",
+      "title": "Spot of Inspiration",
       "reason": "already linked to catalog event"
     },
     {
@@ -958,6 +895,18 @@
       "candidate_id": "candidate-ithra-events-trivia-night-energy-memory-20261007-0b124a27",
       "event_id": "event-trivia-night-energy-memory",
       "title": "Trivia Night - Energy Memory",
+      "reason": "already linked to catalog event"
+    },
+    {
+      "candidate_id": "candidate-ithra-events-advanced-wheel-throwing-20261007-bf5e1f8a",
+      "event_id": "event-advanced-wheel-throwing",
+      "title": "Advanced Wheel Throwing",
+      "reason": "already linked to catalog event"
+    },
+    {
+      "candidate_id": "candidate-ithra-events-how-to-edit-fictional-texts-20261007-e0e3a230",
+      "event_id": "event-how-to-edit-fictional-texts",
+      "title": "How to Edit Fictional Texts",
       "reason": "already linked to catalog event"
     },
     {
@@ -1027,6 +976,12 @@
       "reason": "already linked to catalog event"
     },
     {
+      "candidate_id": "candidate-hayy-jameel-events-jameel-library-opening-programme-at-the-edge-of-renewal-with-the-khaleej-20261008-75328003",
+      "event_id": "event-jameel-library-opening-programme-at-the-edge-of-renewal-with-the-khaleej",
+      "title": "Jameel Library | Opening Programme: At the Edge of Renewal with the Khaleeji Women’s Library and Archive",
+      "reason": "already linked to catalog event"
+    },
+    {
       "candidate_id": "candidate-ithra-events-on-this-carpet-20261008-2972e041",
       "event_id": "event-on-this-carpet",
       "title": "On This Carpet",
@@ -1072,6 +1027,12 @@
       "candidate_id": "candidate-hayy-jameel-events-hayy-cinema-x-hayy-arts-between-destinations-short-films-artist-discussi-20261008-34c6b40c",
       "event_id": "event-hayy-cinema-x-hayy-arts-between-destinations-short-films-artist-discussi",
       "title": "Hayy Cinema x Hayy Arts | Between Destinations: Short Films & Artist Discussion",
+      "reason": "already linked to catalog event"
+    },
+    {
+      "candidate_id": "candidate-ithra-events-the-impact-of-lived-experience-on-shaping-the-writer-20261008-583146fa",
+      "event_id": "event-the-impact-of-lived-experience-on-shaping-the-writer",
+      "title": "The Impact of lived Experience on Shaping the Writer",
       "reason": "already linked to catalog event"
     },
     {
@@ -1228,6 +1189,12 @@
       "candidate_id": "candidate-ithra-events-bridges-to-the-spanish-language-20261012-4dfe9de2",
       "event_id": "event-bridges-to-the-spanish-language",
       "title": "Bridges to the Spanish Language",
+      "reason": "already linked to catalog event"
+    },
+    {
+      "candidate_id": "candidate-qassim-chamber-events-مقدمة-وأساسيات-ريادة-الأعمال-20261012-c36b8572",
+      "event_id": "event-مقدمة-وأساسيات-ريادة-الأعمال",
+      "title": "مقدمة وأساسيات ريادة الأعمال",
       "reason": "already linked to catalog event"
     },
     {
@@ -1429,6 +1396,12 @@
       "reason": "already linked to catalog event"
     },
     {
+      "candidate_id": "candidate-hayy-jameel-events-hayy-makers-woodworking-course-level-2-with-ahmad-sofi-20261025-11baa66b",
+      "event_id": "event-hayy-makers",
+      "title": "Hayy Makers | Woodworking Course (Level 2) with Ahmad Sofi",
+      "reason": "trusted duplicate linked to existing catalog event"
+    },
+    {
       "candidate_id": "candidate-rfecc-whats-on-natrual-expo-20261026-a7983dd2",
       "event_id": "event-natrual-expo",
       "title": "Natrual Expo",
@@ -1525,15 +1498,15 @@
       "reason": "already linked to catalog event"
     },
     {
-      "candidate_id": "candidate-umm-al-qura-events-برنامج-إدارة-المشاريع-الاحترافية-pmp-20261101-dfc818b0",
-      "event_id": "event-برنامج-إدارة-المشاريع-الاحترافية-pmp",
-      "title": "برنامج إدارة المشاريع الاحترافية (PMP)",
-      "reason": "already linked to catalog event"
-    },
-    {
       "candidate_id": "candidate-umm-al-qura-events-برنامج-محترف-أعمال-معتمد-في-القيادة-الإدارية-cbp-ls-20261101-490252be",
       "event_id": "event-برنامج-محترف-أعمال-معتمد-في-القيادة-الإدارية-cbp-ls",
       "title": "برنامج محترف أعمال معتمد في القيادة الإدارية (CBP-LS)",
+      "reason": "already linked to catalog event"
+    },
+    {
+      "candidate_id": "candidate-umm-al-qura-events-شهادة-محترف-إدارة-المشاريع-pmp-20261101-dfc818b0",
+      "event_id": "event-برنامج-إدارة-المشاريع-الاحترافية-pmp",
+      "title": "شهادة محترف إدارة المشاريع (PMP)",
       "reason": "already linked to catalog event"
     },
     {
@@ -2128,6 +2101,12 @@
       "candidate_id": "candidate-ithra-events-the-art-of-writing-a-novel-20261217-24b700fc",
       "event_id": "event-the-art-of-writing-a-novel",
       "title": "The Art Of Writing A Novel",
+      "reason": "already linked to catalog event"
+    },
+    {
+      "candidate_id": "candidate-visit-saudi-seasons-jeddah-formula-e-2026-2027-20261218-5b846bc7",
+      "event_id": "event-jeddah-formula-e-2026-2027",
+      "title": "Jeddah Formula E 2026/2027",
       "reason": "already linked to catalog event"
     },
     {

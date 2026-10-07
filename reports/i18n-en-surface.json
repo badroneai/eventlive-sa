@@ -1,19 +1,19 @@
 {
   "schema": "eventlive.i18n-en-surface.v1",
-  "generated_at": "2026-10-06T01:52:47.901Z",
-  "pages_scanned": 1893,
-  "pages_with_arabic": 422,
+  "generated_at": "2026-10-07T09:30:41.130Z",
+  "pages_scanned": 1895,
+  "pages_with_arabic": 416,
   "template_regressions": [],
   "script_template_regressions": [],
   "style_template_regressions": [],
   "recurring_surface_debt": [
     {
       "text": "../assets/event-images/الشهادة-الدولية-للحاسب-والإنترنت-ic3-a46ba6d2eb.jpg",
-      "pages": 52,
-      "example": "events/event-أساسيات-سلاسل-الإمداد-والخدمات-اللوجستية.html",
+      "pages": 49,
+      "example": "events/event-الترشح-للدبلوم-المتوسط-إدارة-اللوجستيات-وسلاسل-الإمداد-حضوري-بالتعاون-مع.html",
       "script": true
     }
   ],
   "recurring_total": 1,
-  "content_prose_lines": 2097
+  "content_prose_lines": 2073
 }
