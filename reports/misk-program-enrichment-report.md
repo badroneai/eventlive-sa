@@ -1,6 +1,6 @@
 # Misk Program Enrichment Report
 
-- generated_at: 2026-10-07T09:15:46.985Z
+- generated_at: 2026-10-08T09:36:30.111Z
 - targets: 18
 - enriched: 18
 - failed: 0
@@ -19,8 +19,8 @@
 - Samsung Innovation Campus AI Program - goals=1, features=1, requirements=0, registration_deadline=2026-09-23T18:00:00+03:00
 - Nonprofit Sector Skills Program - goals=1, features=2, requirements=2, registration_deadline=2026-10-01T18:00:00+03:00
 - Global Exposure Program - goals=1, features=4, requirements=0, registration_deadline=2026-09-30T18:00:00+03:00
-- Discover Your Path Program - goals=1, features=4, requirements=0, registration_deadline=2026-11-30T18:00:00+03:00
-- Discover Your Path (in collaboration with Nahj Association) - goals=1, features=4, requirements=0, registration_deadline=2026-11-30T18:00:00+03:00
+- Discover Your Path Program - goals=1, features=4, requirements=0, registration_deadline=2026-10-29T18:00:00+03:00
+- Discover Your Path (in collaboration with Nahj Association) - goals=1, features=4, requirements=0, registration_deadline=2026-10-29T18:00:00+03:00
 - Misk x HUMAIN Traineeship Program (Future AI Builders) - goals=1, features=1, requirements=0, registration_deadline=2026-09-17T18:00:00+03:00
 - Virtual Work Experience - Data analysis at stc - goals=1, features=4, requirements=0, registration_deadline=2026-12-15T18:00:00+03:00
 - Virtual Work Experiences - goals=1, features=4, requirements=0, registration_deadline=2026-12-15T18:00:00+03:00

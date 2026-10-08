@@ -1,7 +1,7 @@
 {
   "schema": "eventlive.source-browser-probe-checkpoint.v1",
-  "checkpointed_at": "2026-10-07T09:04:15.720Z",
-  "generated_at": "2026-10-07T09:02:15.128Z",
+  "checkpointed_at": "2026-10-08T09:22:31.350Z",
+  "generated_at": "2026-10-08T09:21:39.589Z",
   "source_registry": "data/source_registry.json",
   "output_dir": "data/raw/browser-probes",
   "sources_planned": 6,
@@ -16,16 +16,16 @@
   },
   "completed_ids": [
     "tuwaiq-academy-bootcamps",
+    "saudi-space-agency-events",
     "asharqia-chamber-events",
     "eye-of-riyadh-events",
     "eventbrite-saudi",
-    "future-skills-catalog",
     "riyadh-city-events"
   ],
   "sources": [
     {
       "id": "tuwaiq-academy-bootcamps",
-      "probed_at": "2026-10-07T09:02:21.993Z",
+      "probed_at": "2026-10-08T09:21:46.379Z",
       "name": "Tuwaiq Academy Bootcamps and Programs",
       "priority": 16,
       "url": "https://tuwaiq.edu.sa/api/GetInitiativePublishesShorten/12/1?category=ac41152d-f228-8af4-8406-e0cda6df6c35&type=NORMAL",
@@ -33,14 +33,14 @@
       "status": "ok",
       "http_status": 200,
       "navigation_error": "",
-      "duration_ms": 6405,
+      "duration_ms": 6338,
       "classification": "browser-structured-html",
       "next_action": "اكتب extractor من JSON-LD أو structured scripts مع fallback للبطاقات.",
       "title": "",
       "text_bytes": 10673,
       "html_bytes": 10836,
-      "html_snapshot": "data/raw/browser-probes/tuwaiq-academy-bootcamps-2026-10-07T09-02-15-128Z.html",
-      "screenshot": "data/raw/browser-probes/tuwaiq-academy-bootcamps-2026-10-07T09-02-15-128Z.png",
+      "html_snapshot": "data/raw/browser-probes/tuwaiq-academy-bootcamps-2026-10-08T09-21-39-589Z.html",
+      "screenshot": "data/raw/browser-probes/tuwaiq-academy-bootcamps-2026-10-08T09-21-39-589Z.png",
       "signals": {
         "has_next_data": false,
         "has_nuxt": false,
@@ -80,8 +80,55 @@
       ]
     },
     {
+      "id": "saudi-space-agency-events",
+      "probed_at": "2026-10-08T09:21:52.579Z",
+      "name": "Saudi Space Agency Events",
+      "priority": 32,
+      "url": "https://ssa.gov.sa/APIGW/en/api/EventsSearch/SearchEvents",
+      "final_url": "https://ssa.gov.sa/APIGW/en/api/EventsSearch/SearchEvents",
+      "status": "ok",
+      "http_status": 405,
+      "navigation_error": "",
+      "duration_ms": 6163,
+      "classification": "empty-or-shell",
+      "next_action": "اعتبرها shell وابحث عن API أو مسار بديل قبل أي collector.",
+      "title": "",
+      "text_bytes": 536,
+      "html_bytes": 687,
+      "html_snapshot": "data/raw/browser-probes/saudi-space-agency-events-2026-10-08T09-21-39-589Z.html",
+      "screenshot": "data/raw/browser-probes/saudi-space-agency-events-2026-10-08T09-21-39-589Z.png",
+      "signals": {
+        "has_next_data": false,
+        "has_nuxt": false,
+        "has_json_ld": false,
+        "has_event_schema": false,
+        "date_snippets": [],
+        "event_like_links": []
+      },
+      "script_signals": {
+        "next_data_scripts": 0,
+        "nuxt_scripts": 0,
+        "json_ld_scripts": 0,
+        "large_inline_scripts": 0
+      },
+      "network_total": 1,
+      "network_endpoints": [],
+      "network_sample": [
+        {
+          "method": "GET",
+          "status": 405,
+          "url": "https://ssa.gov.sa/APIGW/en/api/EventsSearch/SearchEvents",
+          "content_type": "text/plain",
+          "resource_type": "document",
+          "request_post_data": "",
+          "response_shape": "text",
+          "preview": "Status Code: 405; Method Not Allowed"
+        }
+      ]
+    },
+    {
       "id": "asharqia-chamber-events",
-      "probed_at": "2026-10-07T09:02:37.717Z",
+      "probed_at": "2026-10-08T09:22:07.110Z",
       "name": "Asharqia Chamber Events",
       "priority": 59,
       "url": "https://www.chamber.org.sa/sites/Arabic/Events/ChamberEvents/Pages/AllChamberEvents.aspx",
@@ -89,14 +136,14 @@
       "status": "ok",
       "http_status": 404,
       "navigation_error": "",
-      "duration_ms": 15685,
+      "duration_ms": 14497,
       "classification": "browser-network-api",
       "next_action": "ثبت endpoint مرشحًا كجامع مباشر، ثم اكتب extractor من JSON مع اختبار انحدار.",
       "title": "Page not found",
       "text_bytes": 714,
       "html_bytes": 29861,
-      "html_snapshot": "data/raw/browser-probes/asharqia-chamber-events-2026-10-07T09-02-15-128Z.html",
-      "screenshot": "data/raw/browser-probes/asharqia-chamber-events-2026-10-07T09-02-15-128Z.png",
+      "html_snapshot": "data/raw/browser-probes/asharqia-chamber-events-2026-10-08T09-21-39-589Z.html",
+      "screenshot": "data/raw/browser-probes/asharqia-chamber-events-2026-10-08T09-21-39-589Z.png",
       "signals": {
         "has_next_data": false,
         "has_nuxt": false,
@@ -167,12 +214,12 @@
         {
           "method": "POST",
           "status": 200,
-          "url": "https://bam.eu01.nr-data.net/1/NRJS-63ad9662344bba3672e?a=538748657&sa=1&v=1.318.0&t=Unnamed%20Transaction&rst=184&ck=0&s=0&ref=https://apps.mypurecloud.ie/messenger/thirdparty-plugins.html&ptid=474f1e352e9fa5ea&af=err,spa,xhr,stn,ins&be=21&fe=89&dc=9&perf=%7B%22timing%22:%7B%22of%22:1791363745571,%22n%22:0,%22f%22:1,%22dn%22:1,%22dne%22:1,%22c%22:1,%22s%22:1,%22ce%22:1,%22rq%22:2,%22rp%22:22,%22rpe%22:23,%22di%22:30,%22ds%22:30,%22de%22:31,%22dc%22:109,%22l%22:109,%22le%22:110%7D,%22navigation%22:%7B%7D%7D",
+          "url": "https://bam.eu01.nr-data.net/1/NRJS-63ad9662344bba3672e?a=538748657&sa=1&v=1.318.0&t=Unnamed%20Transaction&rst=197&ck=0&s=0&ref=https://apps.mypurecloud.ie/messenger/thirdparty-plugins.html&ptid=0cec2dd2f07cd156&af=err,spa,xhr,stn,ins&be=26&fe=150&dc=69&perf=%7B%22timing%22:%7B%22of%22:1791451314876,%22n%22:0,%22f%22:2,%22dn%22:2,%22dne%22:2,%22c%22:2,%22s%22:2,%22ce%22:2,%22rq%22:2,%22rp%22:27,%22rpe%22:28,%22di%22:96,%22ds%22:96,%22de%22:96,%22dc%22:176,%22l%22:176,%22le%22:177%7D,%22navigation%22:%7B%7D%7D",
           "content_type": "application/json",
           "resource_type": "xhr",
           "request_post_data": "{\"ja\":{\"nrAgentProvider\":\"index-cannula-cli\",\"webdriverDetected\":true}}",
           "response_shape": "json-object:stn,err,ins,spa,sr,srs,st,sts",
-          "preview": "{\"stn\":1,\"err\":1,\"ins\":1,\"spa\":1,\"sr\":0,\"srs\":0,\"st\":1,\"sts\":0,\"log\":2,\"logapi\":2,\"app\":{\"agents\":[{\"entityGuid\":\"NDYyMzExNHxCUk9XU0VSfEFQUExJQ0FUSU9OfDUzODc0ODY1Nw\"}],\"nrServerTime\":1791363746221}}"
+          "preview": "{\"stn\":1,\"err\":1,\"ins\":1,\"spa\":1,\"sr\":0,\"srs\":0,\"st\":1,\"sts\":0,\"log\":2,\"logapi\":2,\"app\":{\"agents\":[{\"entityGuid\":\"NDYyMzExNHxCUk9XU0VSfEFQUExJQ0FUSU9OfDUzODc0ODY1Nw\"}],\"nrServerTime\":1791451315508}}"
         },
         {
           "method": "GET",
@@ -198,7 +245,7 @@
     },
     {
       "id": "eye-of-riyadh-events",
-      "probed_at": "2026-10-07T09:02:44.765Z",
+      "probed_at": "2026-10-08T09:22:13.836Z",
       "name": "Eye of Riyadh Events",
       "priority": 12,
       "url": "https://www.eyeofriyadh.com/events/",
@@ -206,28 +253,28 @@
       "status": "ok",
       "http_status": 200,
       "navigation_error": "",
-      "duration_ms": 7003,
+      "duration_ms": 6688,
       "classification": "rendered-html-candidates",
       "next_action": "اكتب extractor مرن من DOM بعد الرندر أو حسن selector الحالي.",
       "title": "Events | Exhibitions |Festivals | Seminars Riyadh Saudi Arabia",
-      "text_bytes": 6395,
-      "html_bytes": 143145,
-      "html_snapshot": "data/raw/browser-probes/eye-of-riyadh-events-2026-10-07T09-02-15-128Z.html",
-      "screenshot": "data/raw/browser-probes/eye-of-riyadh-events-2026-10-07T09-02-15-128Z.png",
+      "text_bytes": 6434,
+      "html_bytes": 143397,
+      "html_snapshot": "data/raw/browser-probes/eye-of-riyadh-events-2026-10-08T09-21-39-589Z.html",
+      "screenshot": "data/raw/browser-probes/eye-of-riyadh-events-2026-10-08T09-21-39-589Z.png",
       "signals": {
         "has_next_data": false,
         "has_nuxt": false,
         "has_json_ld": false,
         "has_event_schema": false,
         "date_snippets": [
-          "24 Rabi' II 1448 - 7 October 2026 Sign In/Sign Up Advertise with us Sign-up for newsletter HOME NEWS EVENTS BUSIN",
+          "25 Rabi' II 1448 - 8 October 2026 Sign In/Sign Up Advertise with us Sign-up for newsletter HOME NEWS EVENTS BUSIN",
           "hatsApp X LinkedIn Facebook Email Share 25 - 27 Jan, 2027 Real Estate Future Forum Four Seasons Hotel , Riyadh | Forum The Real Est",
-          "must evolve, embracing... More Details 25 - 26 Oct, 2026 Global Proptech Summit 2026 Mandarin Oriental Al Faisaliah , Riyadh | Sum",
+          "zes Saudi Arabia’s most... More Details 25 - 26 Oct, 2026 Global Proptech Summit 2026 Mandarin Oriental Al Faisaliah , Riyadh | Sum",
           "platform that convenes... More Details 28 - 29 Oct, 2026 Real Estate Supply Chain Forum Mandarin Oriental Al Faisaliah , Riyadh |",
           "tform driving strategic... More Details 28 - 29 Oct, 2026 CIPS MENA Procurement and Supply Chain Futures conference and awards Mand",
-          "is the region’s leading... More Details 1 - 10 Oct, 2026 Saudi International Falcon Hunting & Exhibition Saudi Falcons Club Ground",
-          "and the world, bringing... More Details 7 - 8 Oct, 2026 Saudi Procurement Conference 2026 DoubleTree by Hilton Riyadh Financial D",
-          "strategic event for HR... More Details 11 - 14 Oct, 2026 FABEX Saudi Arabia 2026 Riyadh International Convention & Exhibition Cent"
+          "must evolve, embracing... More Details 1 - 10 Oct, 2026 Saudi International Falcon Hunting & Exhibition Saudi Falcons Club Ground",
+          "strategic event for HR... More Details 11 - 14 Oct, 2026 FABEX Saudi Arabia 2026 Riyadh International Convention & Exhibition Cent",
+          "since its inception in... More Details 11 - 15 Oct, 2026 25TH WPC ENERGY CONGRESS Riyadh Front Exhibition & Conference Center , Ri"
         ],
         "event_like_links": [
           {
@@ -318,9 +365,19 @@
         "json_ld_scripts": 0,
         "large_inline_scripts": 0
       },
-      "network_total": 4,
+      "network_total": 3,
       "network_endpoints": [],
       "network_sample": [
+        {
+          "method": "GET",
+          "status": 200,
+          "url": "https://ep1.adtrafficquality.google/getconfig/sodar?sv=200&tid=gpt&tv=m202610060101&st=env&sjk=7395270566978248",
+          "content_type": "application/json",
+          "resource_type": "xhr",
+          "request_post_data": "",
+          "response_shape": "json-like-invalid",
+          "preview": "{\"sodar_query_id\":\"v2DHavatOLrtvMcPufrFIQ\",\"injector_basename\":\"sodar2\",\"bg_hash_basename\":\"zdyhgWJ_WaZPxXJWS5xmJ-IvUd-lpuLZpsxdhxgPU9c\",\"bg_binary\":\"noJs5mUZful02Q3tThCmOVmVcO0X1WkCiQlSEmPNGpllfVBINQX3MW0RGZr4/w+EJC7jUATe3IlVatnLAQ2K7UKDWSMiWKNZ9ioHwXDsf2Oq8v9OfS3w5rt9Rt6Jl2cHFVaGFYUj4klixsOnZJ4m2wtFW7soqhli9iMytiBiqPHWsnV1URygjEMSrZnscwlYDbK26jXKQRWQFwVS+wGg3afSNNiAYqmauApcwydU/vBiVqvxuil0UhbbelitCunYyWPlf2ejUEKO1S+ZyeVXq21nHmvW57B+Vk4BNaP+n7BtMoLGjAT5UFgjnc74taezcWP72qjbU6BFIYObxATGzoC6jxpIr6lgWqwtf9+h6dZ5o7XcYiI1trLGBFeyn0KHV7B1cuCJaIWr+gTjHnJeAzvC7+Y+TxhcDDcTZ29rLphClmlFk4N/NIvlTeAO6FhLY5eEnE1ON1xCfImHZUXAw5KUcckwZ6QOwpr3TyY3497eaXFPcn99BSIZaIQapywxjrZSTIomtn9h4aTtlvKuEeSNDvjkd1V/NbdhbwQXbcBVbPORKXYBjSwzXuNQ56OQuBO4U/ejVZBAIDzS2OtAdmoSDFU+Oon54QJEcM34pvZ5txS2YKAbBZp0rzZv+sbzh3lGQK13QlTlhrLuDWjp3hbvLGtd0pVIFZQxYEDUVOFnqP/9mWqojjdMocqh8KBbs8ei1PMCMXkq+43kinws/Hpzkr3sThjqCFQFzlPCUS2UsYrhrqBqfIcCBbSwaW7dGwxS2k+pWkB8eY/GNJ5Emzh2uMwbpwIko1P7PY/9Z8yPtft4tzG0aZxYew3+BDw6p9QzyYKdAgrAo3cO9Wa+gTZsQGW/4wN9XA2WqT9ssd2qeoNt9jlea+dYqVLXp/GqiMh2eHlJNfWy86t709wjOnrBbnnbEAyoLseYPRPPe2G7FWkYEj77E2mZBRu76jX8sdMOz4Lc4ErgmANM+obKKrMnP1GcL5/L+MYpI5w4Ybx6vQFLqPrnlxnzKoiboNUdBIh2Bl0jXUSC1bfxtbg+PMtRtefRYdU7+GSi/Mu0V3wz5PJ5aZxZDZ3gZhj2eRe4avKEdKbK+Hu8w3UbC87fcu6ql0cV3y/eJ+endJvMK4zetNuAXB2cNI08CiE/X+9bSLvXrZC6kdXU5qjhL5a43WSyYnmNZuRUKTq+25TJGlbOU1OC1RmC8Bvybb2M1xJYhFOda+V10Dp4sk/5+FmQAnIutE27Yd+V1oTxQayh2qNCTZR9NOiD9ChrJH6zWA8cvjpCc7L5SsmNWvi706oWX3cOHHIClBxFap9EeXcsnt+cncWSNQGrEK3uolxTWR4kvwUwZ2jIOFxJr771OPCrGxAxftYAjQAfsMn+0D5DhwKmjPmEBYu1mdFm3hNdWkbTHux7ZNoHDOfSttqY3Z0SCxJq0fw9vlW8KuNi1lABUbEPdyBllhc8QeBv04sRCqOMUhlgyTgAWuznZI0KGylH1WRlQsp1krkuRpq04Rga36a2xAbBSe0G25QoG3MBa53oDbicYPLRUUPf8tEog+dGmFf17kkVk//z79laVn0K95yiNLYSU+BpzEEEgrERUanSIlZ0tzhh4FrOBOA61t1ZAvDKdKXZoQhYpNS6RYz5nSaA/hDX3p"
+        },
         {
           "method": "GET",
           "status": 200,
@@ -334,38 +391,18 @@
         {
           "method": "GET",
           "status": 200,
-          "url": "https://ep1.adtrafficquality.google/getconfig/sodar?sv=200&tid=gpt&tv=m202610010101&st=env&sjk=3553955275315974",
-          "content_type": "application/json",
-          "resource_type": "xhr",
-          "request_post_data": "",
-          "response_shape": "json-like-invalid",
-          "preview": "{\"sodar_query_id\":\"rgrGavTWL4i78L0P_5DrsAk\",\"injector_basename\":\"sodar2\",\"bg_hash_basename\":\"SFuD5s9arEKsycpsymEeCRcO_SM8mP-P4r6gKwaBtqE\",\"bg_binary\":\"MoJt5BZrLPsKxzLbMFWY2oRlwXoUMmWw70W6oiH7eAbfGiRjDpS8yVfCiR9xi2Boepp1wBxUvgMEnv4T+ZCyHKnolG/eT6KZ3NRBvTphI9bdAYt6YPcjYS5B2dztgr11hIWcYtNi2CCiJNjUYT0qwl3NMArMhUTeu2ggXifSXOCRurs+MuVm0N3BccbkCx4Q4XfGPACtogdcxtZEIYgzcmcnR6vJ8HKNputFW661Kb9JyuQEfirUo7Cib+O/0hTpl481tvw2be/N+aS/mxjTkoBF4/1+ETUuqF4Bh4fiNiZYZEWZ1aZU5EZJMdNNDsCH35Ge4eSBaXl7uR+0FndTZi+wxM+pJBJ9hoboFrpZ8TypjdUeNIy/3Im5JhzLPYx6Hip1rDpKWqDCBxg/7VkN/hfRcvguZ/PLzjwjDc7IMn1Lgo/mRyrheuhseRfZNmTD0Y0/Ycid+O67ClMF/rn3sUS08BgzbFLFrbIEEwQ0mcStTvPXUrYbBPTyYxm4QDABUoaVmvvC6Z7hGSs8GzcHkHqYz3f7ThnohLMDrR6KoDmFX32l7oZXT8t4qe1G7sdcpGTaXVc5TR+jesYx5QPuCbMBT+wNisbxzE0bQ9Rj8JTccLSC6nMYBWhGXaaI+1Vtu8TbyLFkZ3739dbVib6Y8CVZ8mO3F8CGX1s69MLpCH1+qCDBujCUpwogBRb5KynxiDwUaEv7cWTxUgNpfYBU1JJB1IFAJiWHCJ1whYh8VuU3Fr5XMQUEbhI1EC3S5pMIqxq5Hd4AGPYUk0GBC3cujFvd6Rz491JysUE0i8uUfWKI5cU4R6cs9Ek+YPrLjiza5T8Xx3Qr9pUG2rZHlsOA9KtT5pclAjfcw1K2SyU4NHy32LK2/q4L32Tf7H1nIvZL9hZw7K8S7nQmhFmHYGlGDyrvM1ZWgelFEHP1wM5rh4pzFnLaIKYxcCiP/Be7Shm7GrQHkTQj2KiU9UTOoXClGX1gN80KAppgJh+GCwFv0ovNHwfGN0TBw2GpGrKHpuq379nqh5SsTbcuo6anBSRYn2H1GEkRj1rA03trgz+IVuqaMp4HLqf1Kkm1V6d0i9r40+L0Iikl0onTts6u03A9MSnT9tTvt4aBbgF/+gnf4zwAFbZgmHrSxp3l72HX/zqhNNfEog2+HugqiKQ/UOYUz6KlIEDyjzHl0ftxNtkPGnmrjDFVrzR8caj1L2WehY/ylQGVifOQt0ae5yEOzvJ91ih5PfJNXIFfzAL8ZvxGcf+tGizc+oL+d66gdNnL1XrpnbJznSk8910IcwYM5X0UymjLzfd42cVa6pswXeNEVETjwCYtvGFQWu8E+fVWEOlh8tVEvmKomlX/ATylQc5fuziLINpNoTe1wQazrzJyG4PgHqE8vE0jEZA2k6lZCpHRPQTkZKL6EkrOE/PNl6g6EJyBMdpOXXdTozwxXWrNxi3QDdTYgItoGPEEhNmC/4MDxEhuf+cxFTmlVLBR8LV4FI3Gxpo6SOCn7NWPZc8Kj26beihyr8HjJEvrriBvbMFg+Su9cbKgxMqNuDyE4lv6hSHgEFz/q39BGcvxWHrmLA80SY32Df6XusZUoxVyrt2Z4mpOYdupkA1m0METnZHQEg4S2UG6he+crFtWW34vsCnU6D1Fk"
-        },
-        {
-          "method": "GET",
-          "status": 200,
           "url": "https://widget-v3.smartsuppcdn.com/manifest.json",
           "content_type": "application/json",
           "resource_type": "xhr",
           "request_post_data": "",
           "response_shape": "json-like-invalid",
-          "preview": "{ \"_WidgetMessengerInput-B6HgtRrM.js\": { \"file\": \"assets/WidgetMessengerInput-B6HgtRrM.js\", \"name\": \"WidgetMessengerInput\", \"imports\": [ \"_shared-C4Ptsyox.js\" ], \"dynamicImports\": [ \"node_modules/.pnpm/emoji-mart@5.6.0/node_modules/emoji-mart/dist/module.js\" ] }, \"_shared-C4Ptsyox.js\": { \"file\": \"assets/shared-C4Ptsyox.js\", \"name\": \"IconButton\", \"dynamicImports\": [ \"node_modules/.pnpm/@thumbmarkjs+thumbmarkjs@1.9.0/node_modules/@thumbmarkjs/thumbmarkjs/dist/thumbmark.esm.js\" ] }, \"node_modules/.pnpm/@thumbmarkjs+thumbmarkjs@1.9.0/node_modules/@thumbmarkjs/thumbmarkjs/dist/thumbmark.esm.js\": { \"file\": \"assets/thumbmark.esm-CP4CU0yL.js\", \"name\": \"thumbmark.esm\", \"src\": \"node_modules/.pnpm/@thumbmarkjs+thumbmarkjs@1.9.0/node_modules/@thumbmarkjs/thumbmarkjs/dist/thumbmark.esm.js\", \"isDynamicEntry\": true }, \"node_modules/.pnpm/emoji-mart@5.6.0/node_modules/emoji-mart/dist/module.js\": { \"file\": \"assets/module-DD5nvVD3.js\", \"name\": \"module\", \"src\": \"node_modules/.pnpm/emoji-mart@5.6.0/node_modules/emoji-mart/dist/module.js\", \"isDynamicEntry\": true }, \"src/frames/messenger/WidgetMessenger.svelte\": { \"file\": \"assets/WidgetMessenger-Dh01C8DW.js\", \"name\": \"WidgetMessenger\", \"src\": \"src/frames/messenger/WidgetMessenger.svelte\", \"isDynamicEntry\": true, \"imports\": [ \"_shared-C4Ptsyox.js\", \"_WidgetMessengerInput-B6HgtRrM.js\", \"src/main.ts\" ] }, \"src/frames/popup/WidgetPopup.svelte\": { \"file\": \"assets/WidgetPopup-D8ThpTcT.js\", \"name\": \"WidgetPopup\", \"src\": \"src/frames/popup/WidgetPopup.svelte\", \"isDynamicEntry\": true, \"imports\": [ \"_shared-C4Ptsyox.js\", \"_WidgetMessengerInput-B6HgtRrM.js\" ] },"
-        },
-        {
-          "method": "GET",
-          "status": 200,
-          "url": "https://translations.smartsuppcdn.com/api/v1/widget/translations/lang/en/defaults",
-          "content_type": "application/json",
-          "resource_type": "fetch",
-          "request_post_data": "",
-          "response_shape": "json-like-invalid",
-          "preview": "{\"agentRating.all.placeholder\":\"Leave us feedback\",\"agentRating.bad.formText\":\"So sorry 😓 What went wrong?\",\"agentRating.good.formText\":\"Thanks 🤩 What was so great?\",\"agentRating.normal.formText\":\"Thanks 👍 How can we improve?\",\"agentTransfer.defaultText\":\"Agent\",\"agentTransfer.joined\":\"joined the chat\",\"agentTransfer.left\":\"left\",\"agentTransfer.redirected\":\"is your new agent\",\"ariaLabel.agentAvatar\":\"Agent avatar\",\"ariaLabel.card\":\"Product card\",\"ariaLabel.chatContent\":\"Chat content\",\"ariaLabel.chatbotAvatar\":\"Chatbot avatar\",\"ariaLabel.drawer.content\":\"Drawer content\",\"ariaLabel.drawer.overlay\":\"Drawer overlay\",\"ariaLabel.inlineEmojiPicker.description\":\"Showing {count} emojis\",\"ariaLabel.inlineEmojiPicker.label\":\"Emoji suggestions\",\"ariaLabel.left\":\"Left\",\"ariaLabel.openChat\":\"Open Smartsupp chat\",\"ariaLabel.popup\":\"Smartsupp chat popup\",\"ariaLabel.rateChat.bad\":\"Rate chat negativelly\",\"ariaLabel.rateChat.good\":\"Rate chat positively\",\"ariaLabel.rateChat.neutral\":\"Rate chat neutrally\",\"ariaLabel.removeAttachment\":\"Remove attachment\",\"ariaLabel.right\":\"Right\",\"ariaLabel.scrollDown\":\"Scroll down\",\"ariaLabel.success\":\"Success\",\"ariaLabel.uploading\":\"Uploading...\",\"ariaLabel.widgetBranding\":\"Smartsupp branding\",\"authForm.acceptTerms\":\"I agree with privacy policy\",\"authForm.button.send\":\"Send message\",\"authForm.description\":\"We’ll use your contact info only if all the operators are busy at the moment and cannot immediately reply.\",\"authForm.greeting\":\"👋 Please introduce yourself\",\"authForm.group\":\"Choose a group\",\"authForm.label.email\":\"E-mail\",\"authForm.label.group\":\"Group\",\"authForm.label.name\":\"Name\",\"authForm.label.phone\":\"Phone\",\"authForm.submit.error\":\"Authentication failed\",\"authForm.submit.success\":\"Authentication was successful\",\"authForm.yourEmail\":\"Your email\""
+          "preview": "{ \"_WidgetMessengerInput-BhZgprFY.js\": { \"file\": \"assets/WidgetMessengerInput-BhZgprFY.js\", \"name\": \"WidgetMessengerInput\", \"imports\": [ \"_shared-_WWe_iud.js\" ], \"dynamicImports\": [ \"node_modules/.pnpm/emoji-mart@5.6.0/node_modules/emoji-mart/dist/module.js\" ] }, \"_shared-_WWe_iud.js\": { \"file\": \"assets/shared-_WWe_iud.js\", \"name\": \"IconButton\", \"dynamicImports\": [ \"node_modules/.pnpm/@thumbmarkjs+thumbmarkjs@1.9.0/node_modules/@thumbmarkjs/thumbmarkjs/dist/thumbmark.esm.js\", \"src/translates/ar.json\", \"src/translates/az.json\", \"src/translates/bg.json\", \"src/translates/br.json\", \"src/translates/bs.json\", \"src/translates/ca.json\", \"src/translates/cn.json\", \"src/translates/cs.json\", \"src/translates/da.json\", \"src/translates/de.json\", \"src/translates/el.json\", \"src/translates/en.json\", \"src/translates/es.json\", \"src/translates/et.json\", \"src/translates/fa.json\", \"src/translates/fi.json\", \"src/translates/fil.json\", \"src/translates/fr.json\", \"src/translates/he.json\", \"src/translates/hi.json\", \"src/translates/hr.json\", \"src/translates/hu.json\", \"src/translates/is.json\", \"src/translates/it.json\", \"src/translates/ja.json\", \"src/translates/ka.json\", \"src/translates/lt.json\", \"src/translates/lv.json\", \"src/translates/mk.json\", \"src/translates/nl.json\", \"src/translates/no.json\", \"src/translates/pl.json\", \"src/translates/pt.json\", \"src/translates/ro.json\", \"src/translates/ru.json\", \"src/translates/sk.json\", \"src/translates/sl.json\", \"src/translates/sr.json\", \"src/translates/sv.json\", \"src"
         }
       ]
     },
     {
       "id": "eventbrite-saudi",
-      "probed_at": "2026-10-07T09:02:51.152Z",
+      "probed_at": "2026-10-08T09:22:19.832Z",
       "name": "Eventbrite Saudi Arabia",
       "priority": 14,
       "url": "https://www.eventbrite.com/d/saudi-arabia/events/",
@@ -373,14 +410,14 @@
       "status": "ok",
       "http_status": 405,
       "navigation_error": "",
-      "duration_ms": 6326,
+      "duration_ms": 5939,
       "classification": "rendered-text-review",
       "next_action": "راجع الصفحة يدويًا وحدد هل هي مصدر أدلة أم صفحة تعريفية فقط.",
       "title": "Human Verification",
       "text_bytes": 354,
       "html_bytes": 9981,
-      "html_snapshot": "data/raw/browser-probes/eventbrite-saudi-2026-10-07T09-02-15-128Z.html",
-      "screenshot": "data/raw/browser-probes/eventbrite-saudi-2026-10-07T09-02-15-128Z.png",
+      "html_snapshot": "data/raw/browser-probes/eventbrite-saudi-2026-10-08T09-21-39-589Z.html",
+      "screenshot": "data/raw/browser-probes/eventbrite-saudi-2026-10-08T09-21-39-589Z.png",
       "signals": {
         "has_next_data": false,
         "has_nuxt": false,
@@ -401,74 +438,38 @@
         {
           "method": "POST",
           "status": 200,
-          "url": "https://0af0bdf40465.bb81f591.us-east-1.token.awswaf.com/0af0bdf40465/e3e3fa888aeb/63e329aa85c9/mp_verify?region=us-east-1",
+          "url": "https://0af0bdf40465.fb743aad.us-west-1.token.awswaf.com/0af0bdf40465/e3e3fa888aeb/63e329aa85c9/mp_verify?region=us-west-1",
           "content_type": "application/json",
           "resource_type": "fetch",
-          "request_post_data": "------WebKitFormBoundaryjmhZtm92SboP1hHQ Content-Disposition: form-data; name=\"solution_metadata\" {\"challenge\":{\"input\":\"7849df05-040b-413c-88f3-b903bf311fe1:EQoAndVpuiJoIAAA:FkOXU6h13Buo789piQlGRfyCB9Brm5pI9Gun1sjT15VsuSKwJ2aBkuYh4hqZxaJ8wQvSeuGgJMLQDf/b2TfJuHYDG17DdFfwdh9AqQSc1Ysurs4FbZM3yCd9YryDL2IFP7sheBfyc2nZFGUtP2sy0HUjxt3G2CkCsVBG9LNojUJjEr0QCyWnSWiTZZSPpt0iQHkeBUTDQdUq2iJKZ4YMlvwLhRs6Q3pG1B+8u4tlR5xPe8EfVqqC79elNoyVsQrhf6gjMPGl1UaDwIku43A2BomLEXQ1/yGHpJEr0NP9Q86AM9E2fQwjsZJcRQrC3z6QuNaQkeahZztmOQIqCgUap0T4lj9sJn6WL0ZpKd7jkeohP22Adtcs5NibgzoWIGd+u2ky37vcRIfcUbiozxp1R63ziJI+Vqfo0MIB7x2EFwpx3o9w4zXfC5izoRWPa2oZpcL3D6zsJKpSRc1mmd9UPw5XZzCvq//9o2KvikO+hlyySbB74wf1caPqnDjb0QhXqvJF58fF6QgpRtmWIU0GMyeQWt5nU3t4HZ/iRp5oo8J4aXO+u0Lz//s=\",\"hmac\":\"\",\"region\":\"us-east-1\"},\"solution\":null,\"signals\":[{\"name\":\"Zoey\",\"value\":{\"Present\":\"q+YJ1LFok3eaaFbf::81658fb9b7ce7a815102824b31dd437f0461a25553d1ce362e03d6ce06a77befbcc56c8b77dfd23d8ced5695179d7983f68f13d69784451e13181a9523a16eb5c3a41a3bcd10d22b45017f9ab02dacf721be71bae9356e26f05b8086f0f858d5188f0baf40fa4c2eaefc90c042d554c0ada79ab670a551494c6bd547c97d6ba0c86ac8f96f7c97ffd548120bbf1fb40235dc9a18b834eac865a2d0b62c3e820f095dda97b211b070c414f8c",
+          "request_post_data": "------WebKitFormBoundarydKFMIySOCK1LjKwY Content-Disposition: form-data; name=\"solution_metadata\" {\"challenge\":{\"input\":\"9164adf3-1220-44d6-8b54-7fc217feb0a0:EwoAhY5pxxm7HwAA:h3ZeDpAkQYRU3nAZdHSiWjsFkNiwOPGPup7xwgdRlU1hiSAyoiWwD4OepqGoP2Iz0h/irjqZaCrhGZk2NmxPoaABaablnX+0AS9pZE3HujUShqpxXYFasTV2m2aiNo8jlwUao/keHBPBYbqLMzUbjtJL1aERT4C/4t0f+rcROFiGTAoQKNIl4quDOn4aYFC7CbeqDVkrq1JGikgEJFWvp3KwrtKLrDFr+1vP5aAbbsw/aoyd5LGYxLps0uV67XRgWX9NXl9PlcuJkwKdcSbtqXzBpFsNZS8sCUgvxNdpGGyf2/qPM1xN/D1OD7Wxhx9toW+uZV8jhJTeMd9h2PGv6d6muOflR9s3z/W17rL0N5IQLxkrFw+TC7hmhBcEPTlwG5RWi4SEOPwyzne6kLHM7WZJ18/sdZpD+rnv+5vH4kOfljabrAV1ecCeSR1ZPmbH9FGubM0pF51wG9OH7LrDB2m1txh7cmUYLLDu9Lz+LoaYCpBq/jpI91t82J7wp204LBiXlAH56OBPXJ2aSOboLglYHbWKNTTYthsB8tClpjqmFG366aVMKLL5\",\"hmac\":\"\",\"region\":\"us-west-1\"},\"solution\":null,\"signals\":[{\"name\":\"Zoey\",\"value\":{\"Present\":\"mNB+Wy+pupbHNAvt::74f65c46094dd568d6f116ba54ee6bce46e2a1b27865758d29748fbe491ea258bd0249d5b0be5efc2b4e05803c5c1a696e6ce96bfd0be474c766196549c400fbd7fbcfa96b330215da66656a6bef81b1879738047cd46d74caa74f5076a15434c00e0a7d86bf3d3005773fd29480213939f42ba6e87f35fb1f1235db5263558879263c8ef4a4593a78951604ce890fbcae02b329748c55a6234b24958141d767a91dd6ac62736f642a15132",
           "response_shape": "json-object:token,inputs",
-          "preview": "{\"token\":\"e7310525-d81c-4681-bc12-5d93917753eb:EQoAa+BpyNbfWQAA:hO3BbIpocOD0lpadNYn+5CoFwE9SoKuFhHaJ84+BUWDsXevCOEwfNBiLD1QDQev2PmlVHm+sBCTJz6fuEmoySq6xRmXcyg6f7U2AiN5XVqKzGb76SmMx2gl2WXp9hgqDJpsZWTBGpCe0zkh8lbFduvlEhM8Y5YVnNqVoZJj6bW3wjnSX4bqPQkfDP8awzF+w15TJSYySzeN/nNHtRZIwe1i33GZBV0G9rJAsgVQS759PaIYwRBqLmDlZsNcpCfDMeWi8OoAaxMGE00SeIojE5jQJLU2qqM6aFR/UpmNmadZxmfVNzwyAHnpZ9Q==\",\"inputs\":null}"
+          "preview": "{\"token\":\"94dd4d78-d1c0-43a6-8035-aa2f083050e4:EwoA9/9p2XaUSQAA:05rX3+9mEd5tocERqIWfTHmB3bl9NpN2XE0pyqnDA/sCf3QANzhQ0rL+duf85DpnIl+M/b3iYvW0NRt8z5J2xfANMzZP+TJdvAk0uTbL0mcfrkvlymkjSj4Ozubpziukxbs7JD6Z4nt5j5XvoEGsFPA/D2ii1n/5QGHfn+x+s+ON0WFBP6K9mG4UMDJkZ8yoNt+3wmxubkkFuzbYfwn5kqrKsmmotyf070rc3Kp4YM1PmbuokrckvjIWgHMYH32yBy1rg2cjqqrcnrbSZHRUY0Dh8xqwljPR8Zbf5FbN8gaMZQs6VnP8L1huGA==\",\"inputs\":null}"
         },
         {
           "method": "POST",
           "status": 200,
-          "url": "https://0af0bdf40465.bb81f591.us-east-1.token.awswaf.com/0af0bdf40465/e3e3fa888aeb/63e329aa85c9/telemetry",
+          "url": "https://0af0bdf40465.fb743aad.us-west-1.token.awswaf.com/0af0bdf40465/e3e3fa888aeb/63e329aa85c9/telemetry",
           "content_type": "application/json",
           "resource_type": "fetch",
-          "request_post_data": "{\"existing_token\":\"e7310525-d81c-4681-bc12-5d93917753eb:EQoAa+BpyNbfWQAA:hO3BbIpocOD0lpadNYn+5CoFwE9SoKuFhHaJ84+BUWDsXevCOEwfNBiLD1QDQev2PmlVHm+sBCTJz6fuEmoySq6xRmXcyg6f7U2AiN5XVqKzGb76SmMx2gl2WXp9hgqDJpsZWTBGpCe0zkh8lbFduvlEhM8Y5YVnNqVoZJj6bW3wjnSX4bqPQkfDP8awzF+w15TJSYySzeN/nNHtRZIwe1i33GZBV0G9rJAsgVQS759PaIYwRBqLmDlZsNcpCfDMeWi8OoAaxMGE00SeIojE5jQJLU2qqM6aFR/UpmNmadZxmfVNzwyAHnpZ9Q==\",\"awswaf_session_storage\":\"null\",\"client\":\"Browser\",\"signals\":[{\"name\":\"Zoey\",\"value\":{\"Present\":\"h7gQ9Z33nZ3RB1YK::9b8c5ddfee308d367a6882834ac2d79d98f9f158ec49d6d3e4452b906fa120af09e832aa2d29f1cb62e1b4e6d7f7c4b91241619ad65c23d345949a84ae0f109c789abfaf5f3668e4bddc286ae11267185019d166e6ceaf0f1bab2d66467f8d9e5a33657641771f1b09379b8d260d26e376e0f6c260ed01f87decfcb2281340eceb61e31c3f68db6b65c5f58687201996ba1d080b7fd426affdb472d58d2a6d2770eccdb81a2ca92e3f1ec8b74e9aa4465263712580e83275d053bf2418454afeebae7bb8703793c17aa0f8fa1a3b3a087b0ab9d52c2da9e871e4c46e293f9a89ea9bca93b298e41ba4d5dcb422613a024cbd504138be1fdd00c0aaa03a84645bf0ee61aa82\"}}],\"checksum\":\"2A82AC94\",\"metrics\":[{\"name\":\"12\",\"value\":0.10000000009313226,\"unit\":\"2\"},{\"name\":\"200\",\"value\":0,\"unit\":\"2\"},{\"name\":\"201\",\"value\":0,\"unit\":\"2\"},{\"name\":\"",
+          "request_post_data": "{\"existing_token\":\"94dd4d78-d1c0-43a6-8035-aa2f083050e4:EwoA9/9p2XaUSQAA:05rX3+9mEd5tocERqIWfTHmB3bl9NpN2XE0pyqnDA/sCf3QANzhQ0rL+duf85DpnIl+M/b3iYvW0NRt8z5J2xfANMzZP+TJdvAk0uTbL0mcfrkvlymkjSj4Ozubpziukxbs7JD6Z4nt5j5XvoEGsFPA/D2ii1n/5QGHfn+x+s+ON0WFBP6K9mG4UMDJkZ8yoNt+3wmxubkkFuzbYfwn5kqrKsmmotyf070rc3Kp4YM1PmbuokrckvjIWgHMYH32yBy1rg2cjqqrcnrbSZHRUY0Dh8xqwljPR8Zbf5FbN8gaMZQs6VnP8L1huGA==\",\"awswaf_session_storage\":\"null\",\"client\":\"Browser\",\"signals\":[{\"name\":\"Zoey\",\"value\":{\"Present\":\"ddR3Fnj0bbcVa+Y3::4b1ca58501e5c5538f35982b5e16bb938ff28df720b0f4c74b401e11aed45f254d61f42342c04b17c393c6a738a69c011413e84355216abf556e9e483c5fe6556faa1f1282688536e549f3708b5c839c54a0a0df8ea0c5d7fa63f94a1af6a4abc0f867e0f78eda7b6cf55723d61237c092598f25e64f6229bfcc266528a589b32c6ee6319a9acdad35074f372e4a844e4be7f043a6637178c57357691fb02edc4271e511f5ca3bad375513352cc3c99806a83c31b711d7590c2625c2462e9879af45a5e72411d3f8b580e98722ac23c91de9cff885e93ded1a033393556a337eb4d0d1c7b2fd0bc1315000116830561057cca9eb49c9266455b4e802550318ad4f0f433dce\"}}],\"checksum\":\"74BDD19C\",\"metrics\":[{\"name\":\"12\",\"value\":0.10000000009313226,\"unit\":\"2\"},{\"name\":\"200\",\"value\":1,\"unit\":\"2\"},{\"name\":\"201\",\"value\":0,\"unit\":\"2\"},{\"name\":\"",
           "response_shape": "json-object:token,next_interval,awswaf_session_storage",
-          "preview": "{\"token\":\"e7310525-d81c-4681-bc12-5d93917753eb:EQoAoNJqB5XXWgAA:Bx3rlDkJxYJ5at9DEhDSlgJLrsL4HuaHZd1vzh9/FbLztAhi1cAus76KwaHgEVV8AzWuUW0gRUtg08EGxXxCWEZuNMBAk8VvTz5ymBFZLoSL2CZ/eFhOXERO76mDRtHHK7LwkeMXedwvHnFOtmxw5HMTjTzvAXqoVgRY/mWsNj+U5c2vE2gP/dz1GYevYwJ57qLtxL48ybfMs4Nu3v9I+Y6LCvEfaQZowx3FRLIHmJ6kLs/xEXqLRu/WUYSp+rkSut/5aliQkrEIngpEZv1Pf47vrAEbF5/kMq7aY9+Zndk/09Mtp3OqsUuQm455O/2fz8SfUzZCrwdqBC3A89y9ZfD39Av6XMNyflxJA14AZk+QKQ==\",\"next_interval\":100,\"awswaf_session_storage\":\"e7310525-d81c-4681-bc12-5d93917753eb:EQoAoNJqB5bXWgAA:flt53TQ7RizDqidBB/DUCVQhJhBKKzoXhdhCWpc6O7YkzyAxKV//JT9ZBeeUy9+PeIErjsk3+iuQX7u3RoDsX6ofKORV7iBcO59Sn10ztrifMmyHZayKb4DQ2LQsivTDTccH7QVPd3DOSWg7UKbCEbO9bNmoeK8gHeYOBanoZLGJ4Y/TfCik1roUkLzFkDgwYac9djOBZxtnXyDmbferA7ocDui3cBQNa8XGFTUkyo+T0VMffyOCvyUGmJLT5hUINbp9Gk9B9FE1Di9Zz/0LDilj7MQljtNGh4vZ0tAPIwZaDPcJx6+UaliLqmdOgCBBBRrMX44cXNlrsHF0EXLXq+ZpaXv8hcmKkoCfl/lLtxLKaIHly3FWC8pYUN+E6eOKOhupbE38wekfC6jRzebK02qe+nYzFb+9HLweZvDK6w==\"}"
+          "preview": "{\"token\":\"94dd4d78-d1c0-43a6-8035-aa2f083050e4:EwoAlL5qOOdcSwAA:d2yAwcf2Etc6DQtIry74P2ow7thKWH6A28jGmOdu+89VXDkYNSj7NI7Yv36A3jJBiF6m5du6+0ZFi3r0/3hnvxv+H6Js9+b95THLkqQjY0pTcEKHF+sTSgxE2N7OT7Le/6SqOWdPTd7m0HxqbkgugTls5rXBL/kgwUvNMkCSyvru1g1OoyhlziRM1E1V+iih0D2Aq6LRLciyYwI3Kd+8HoNIsqtf7+nl92QQi4s6NPqTPQRYwrxEbhV3WLjqIGyfCais0qQoXSBMpYFXUdBF5vS3Z0Yd0UsLWJO4FrQ/f2NUzetxI0X3NWkm83KRIdJV9zInAOqEYmgFXW2UaiIdtJhyh+UGcITLn08mVZi48NgYNw==\",\"next_interval\":100,\"awswaf_session_storage\":\"94dd4d78-d1c0-43a6-8035-aa2f083050e4:EwoAlL5qOOhcSwAA:68yPq5GbD06Yvwlq8pw5hOwVWC7pHGp9AyLTUv6vX4DBPwYdlBhaNHccH0FzfMkzi2vlr89ADarwraqdFhxbp+CACrBGGNqm0UpSgrlPY7/i6euXEAAR8LSoT04hsINqqODScRzpJa6oOZsclK3LRTiCgAYcQudek4Xk+a0FZTz79sSqGzinJI6nu8ttWRAAU8VttIAjK/K12FRTMVZ6msD1DlrtCjt2gRfqQKS1Nj7XUiYk5PaFdC/kPcfuNjx6b5RkClFiUNKgrf0Yw/NSwL8qA2xvq2/zcZ1cAaHBd3neMv7tnPelzjIy2dnzuJmeK1g3RYGR/4PVfyM6ZaXTyZBEfxh4w4FrX+9jiYJ0eQi8f5ZlFoaz8/U6UiUwNehz0fWpBiMMXuLUyJbHmdjXuH0d6nlrHemxakJbiyZMsg==\"}"
         },
         {
           "method": "POST",
           "status": 200,
-          "url": "https://0af0bdf40465.bb81f591.us-east-1.token.awswaf.com/0af0bdf40465/e3e3fa888aeb/63e329aa85c9/telemetry",
+          "url": "https://0af0bdf40465.fb743aad.us-west-1.token.awswaf.com/0af0bdf40465/e3e3fa888aeb/63e329aa85c9/telemetry",
           "content_type": "application/json",
           "resource_type": "fetch",
-          "request_post_data": "{\"existing_token\":\"e7310525-d81c-4681-bc12-5d93917753eb:EQoAoNJqB5XXWgAA:Bx3rlDkJxYJ5at9DEhDSlgJLrsL4HuaHZd1vzh9/FbLztAhi1cAus76KwaHgEVV8AzWuUW0gRUtg08EGxXxCWEZuNMBAk8VvTz5ymBFZLoSL2CZ/eFhOXERO76mDRtHHK7LwkeMXedwvHnFOtmxw5HMTjTzvAXqoVgRY/mWsNj+U5c2vE2gP/dz1GYevYwJ57qLtxL48ybfMs4Nu3v9I+Y6LCvEfaQZowx3FRLIHmJ6kLs/xEXqLRu/WUYSp+rkSut/5aliQkrEIngpEZv1Pf47vrAEbF5/kMq7aY9+Zndk/09Mtp3OqsUuQm455O/2fz8SfUzZCrwdqBC3A89y9ZfD39Av6XMNyflxJA14AZk+QKQ==\",\"awswaf_session_storage\":\"e7310525-d81c-4681-bc12-5d93917753eb:EQoAoNJqB5bXWgAA:flt53TQ7RizDqidBB/DUCVQhJhBKKzoXhdhCWpc6O7YkzyAxKV//JT9ZBeeUy9+PeIErjsk3+iuQX7u3RoDsX6ofKORV7iBcO59Sn10ztrifMmyHZayKb4DQ2LQsivTDTccH7QVPd3DOSWg7UKbCEbO9bNmoeK8gHeYOBanoZLGJ4Y/TfCik1roUkLzFkDgwYac9djOBZxtnXyDmbferA7ocDui3cBQNa8XGFTUkyo+T0VMffyOCvyUGmJLT5hUINbp9Gk9B9FE1Di9Zz/0LDilj7MQljtNGh4vZ0tAPIwZaDPcJx6+UaliLqmdOgCBBBRrMX44cXNlrsHF0EXLXq+ZpaXv8hcmKkoCfl/lLtxLKaIHly3FWC8pYUN+E6eOKOhupbE38wekfC6jRzebK02qe+nYzFb+9HLweZvDK6w==\",\"client\":\"Browser\",\"signals\":[{\"name\":\"Zoey\",\"value\":{\"Present\":\"H4qg2+eunCnlQdZX::49af5176896e2fce36b6c69a88cb98fc7f41d7832c34a6b59a4ad76a307d346ed9d42443a25a684c253ad2de3132c709fbb9b4d4ab763d1e94a99c83e1bda6e1386f92517467cfe69b364854acca377fd325",
+          "request_post_data": "{\"existing_token\":\"94dd4d78-d1c0-43a6-8035-aa2f083050e4:EwoAlL5qOOdcSwAA:d2yAwcf2Etc6DQtIry74P2ow7thKWH6A28jGmOdu+89VXDkYNSj7NI7Yv36A3jJBiF6m5du6+0ZFi3r0/3hnvxv+H6Js9+b95THLkqQjY0pTcEKHF+sTSgxE2N7OT7Le/6SqOWdPTd7m0HxqbkgugTls5rXBL/kgwUvNMkCSyvru1g1OoyhlziRM1E1V+iih0D2Aq6LRLciyYwI3Kd+8HoNIsqtf7+nl92QQi4s6NPqTPQRYwrxEbhV3WLjqIGyfCais0qQoXSBMpYFXUdBF5vS3Z0Yd0UsLWJO4FrQ/f2NUzetxI0X3NWkm83KRIdJV9zInAOqEYmgFXW2UaiIdtJhyh+UGcITLn08mVZi48NgYNw==\",\"awswaf_session_storage\":\"94dd4d78-d1c0-43a6-8035-aa2f083050e4:EwoAlL5qOOhcSwAA:68yPq5GbD06Yvwlq8pw5hOwVWC7pHGp9AyLTUv6vX4DBPwYdlBhaNHccH0FzfMkzi2vlr89ADarwraqdFhxbp+CACrBGGNqm0UpSgrlPY7/i6euXEAAR8LSoT04hsINqqODScRzpJa6oOZsclK3LRTiCgAYcQudek4Xk+a0FZTz79sSqGzinJI6nu8ttWRAAU8VttIAjK/K12FRTMVZ6msD1DlrtCjt2gRfqQKS1Nj7XUiYk5PaFdC/kPcfuNjx6b5RkClFiUNKgrf0Yw/NSwL8qA2xvq2/zcZ1cAaHBd3neMv7tnPelzjIy2dnzuJmeK1g3RYGR/4PVfyM6ZaXTyZBEfxh4w4FrX+9jiYJ0eQi8f5ZlFoaz8/U6UiUwNehz0fWpBiMMXuLUyJbHmdjXuH0d6nlrHemxakJbiyZMsg==\",\"client\":\"Browser\",\"signals\":[{\"name\":\"Zoey\",\"value\":{\"Present\":\"/DYj+A584icDler8::b7e937a9d27d06ffed1a3758fe438e9cff9f1aeda8d7154e1cab1677bdd4221bfda45873aa00aa04c7986056bd6630a4c43de69d9582d1853c61e91ba1d5e1c69d0d889b2c909a73435fb9ab173a68a9509d",
           "response_shape": "json-object:token,next_interval,awswaf_session_storage",
-          "preview": "{\"token\":\"e7310525-d81c-4681-bc12-5d93917753eb:EQoAkBhqEefyWQAA:nb9R56Gj5RMrXSsF1pJ+xJI4soxUv1QXibvV6g4Tf6goJ42AmoC2nJOg72TV3O789kO4+gS3FPzQqZv9yQgse8T6k56cRlEqP2M4ySpPYXAAs7eXyNDpo4K7Xm1/OxBMRsZzhhdfVDihPrCNioWPXttLzzFFSaebowJrfv6rpvjZSecjlKvYYBjAdie/cbUaJwfPN+3utw65QIH1j6n+xbALimDyUqsPpACItfb6px2bOVnk+PxzBrDJ85XKEBbHssGShmUQ6YqdTG76JIwfPkl/i1l3PLxtnMIiu003IBMEsPmjd7XDYYw6667y/fEtBVT4YanejoOL6FkP0ouoyxwooVBXEiUWSbU5ShF9hTOWmg==\",\"next_interval\":200,\"awswaf_session_storage\":\"e7310525-d81c-4681-bc12-5d93917753eb:EQoAkBhqEejyWQAA:5PyTYqzIUOqcYFeV7/4+wgKxVPibjWBklBFfEPUJGnEMLIUz20ByaXBQmL2Eoq4A3EpRF98Gn/1QsKU+rYN2oR2bAo7+VUNGk6hieKPZsoJNVqsuZdC2lZPZbTuVo8Bah/WQT5PdCxnWyLxtz9n1ZS+Qwrfnyv78Esqb87AZN+sQa1qmqXlrngseJYa9SMl7ljTlAujQF0+tQXZoBvXp0cdJUQWqOV+Usrlontek5l3qamCo/wXe2IoDp3j5h9VUfdreUBpqfGDIF45f8t2aJPQutMlRYyS9aybWvRO/lhDNLijN5aW/72Dw5Ym6iietNj7TlewRmQtu84l8+3Z9xbILd3R5t1XQfxbltoKFPiNMScRs05KOcMAi3AaeR//oTNewS+KS7DS09NZhyNp2kEvvcq6zet+dSZfn9Ku/R5zD4kwL3pq0GYAE1JUGxSAlVyeuV00CWhtbM1vhLeWt0V3GeFSK1TVtTGll1WCbKGfGXDy2B2aZCJyALWkJgei/LQ==\"}"
+          "preview": "{\"token\":\"94dd4d78-d1c0-43a6-8035-aa2f083050e4:EwoAlL5qOBNdSwAA:uyPRXlC7xiksWv0ftEQXmV4d6STeXQ//I6LaC0ctuBqY0UZcwv0lkPhpoDW75rxebuC+NYDA6wS1W/bpPJTm69KRCldpBArI4DjAON95NoUKmDIY/lDnIOfpw1BMksi8WjjEJhX5lihGGjfgyC2H+qC1oBiZG1azJNb74zb8oa+oXndLbnRg1xc44Xil1CFv6Aam20D9gsBxrgcg5LqVSOp8/SkJUC96tVSMydkNmZLYqLrQNTrnbEpChj4Dr9lUUhEZKWroddR6EKTX5o6cg8HDMb/qJ574dP/GgbnPfo3ht7WbkSVw9k9ENvuF7AvKiS2np9FuFVbBjkLLzGjRzLWmSAWEOxU3e1RDTyF0yjEWyQ==\",\"next_interval\":200,\"awswaf_session_storage\":\"94dd4d78-d1c0-43a6-8035-aa2f083050e4:EwoAlL5qOBRdSwAA:59P2F+KvoHyDhrt3IrJw5c6gVIscRdjTCBAyOl2P7IQEQRZQ558QAnsiHmw4iRCM1Y4ywf6727vOLtcDvmL/mCsSnmwOXGNATP9fljhJ99MsCG4oNYwqMvBFa83fND1Jczatni0joksw0ERCZJuoIJKeikBbrW7oqd/0ZG+hXvoP/7192MrxSoga8MLdYdH58Gb5h8Qvr2XSO/aUe1oNTlLGaXtjeej+Lqy/bO2iMGx0EGKpk+1v8wK7riXqzBH5F79ts1xDqQxwt4lpFNs4fBNI25xHCepzV33MVmD0/NpUK+UCm5zixGz5T8/QIYOUA04YvukaJCwGQ/W1Aqz3vk0JIyjRvSPwgvPVkSgl9uQ6Wjq+tcpHeAkmgkFVj5lh6Ta5QzDgjjNA/aRn11wGj6c+gWfzhMUWjpYgH/6e6aN6WHy5mfQR2CG7ukeWYmn7MkleyByS5v6xL4jANO5ZC0AEkfj6bnGr3bYs5mVGeg7musHis6VMQ2lKi6xcuseONA==\"}"
         }
       ]
     },
     {
-      "id": "future-skills-catalog",
-      "probed_at": "2026-10-07T09:04:02.745Z",
-      "name": "Future Skills MCIT Catalogue",
-      "priority": 17,
-      "url": "https://futureskills.mcit.gov.sa/ar/catalogue/all?label=&field_main_tracks_target_id_verf=565&field_sub_tracks_target_id=All&field_training_course_level_target_id=All&field_related_skills_target_id=All&field_course_type_value=All&field_training_delivery_value=All&field_training_city_target_id=All&field_job_market_target_id=All",
-      "final_url": "https://futureskills.mcit.gov.sa/ar/catalogue/all?label=&field_main_tracks_target_id_verf=565&field_sub_tracks_target_id=All&field_training_course_level_target_id=All&field_related_skills_target_id=All&field_course_type_value=All&field_training_delivery_value=All&field_training_city_target_id=All&field_job_market_target_id=All",
-      "status": "error",
-      "http_status": 0,
-      "navigation_error": "page.goto: Timeout 30000ms exceeded.\nCall log:\n  - navigating to \"https://futureskills.mcit.gov.sa/ar/catalogue/all?label=&field_main_tracks_target_id_verf=565&field_sub_tracks_target_id=All&field_training_course_level_target_id=All&field_related_skills_target_id=All&field_course_type_value=All&field_training_delivery_value=All&field_training_city_target_id=All&field_job_market_target_id=All\", waiting until \"domcontentloaded\"\n",
-      "duration_ms": 71557,
-      "classification": "empty-or-shell",
-      "next_action": "اعتبرها shell وابحث عن API أو مسار بديل قبل أي collector.",
-      "title": "التدريب | بوابة مهارات المستقبل",
-      "text_bytes": 0,
-      "html_bytes": 0,
-      "html_snapshot": "data/raw/browser-probes/future-skills-catalog-2026-10-07T09-02-15-128Z.html",
-      "screenshot": "",
-      "signals": {
-        "has_next_data": false,
-        "has_nuxt": false,
-        "has_json_ld": false,
-        "has_event_schema": false,
-        "date_snippets": [],
-        "event_like_links": []
-      },
-      "script_signals": {
-        "next_data_scripts": 0,
-        "nuxt_scripts": 0,
-        "json_ld_scripts": 0,
-        "large_inline_scripts": 0
-      },
-      "network_total": 0,
-      "network_endpoints": [],
-      "network_sample": []
-    },
-    {
       "id": "riyadh-city-events",
-      "probed_at": "2026-10-07T09:04:15.720Z",
+      "probed_at": "2026-10-08T09:22:31.349Z",
       "name": "Riyadh City Events",
       "priority": 51,
       "url": "https://riyadh.sa/en/events/all",
@@ -476,14 +477,14 @@
       "status": "ok",
       "http_status": 200,
       "navigation_error": "",
-      "duration_ms": 12943,
+      "duration_ms": 11481,
       "classification": "rendered-html-candidates",
       "next_action": "اكتب extractor مرن من DOM بعد الرندر أو حسن selector الحالي.",
       "title": "الموقع الرسمي لمدينة الرياض",
-      "text_bytes": 827,
-      "html_bytes": 155264,
-      "html_snapshot": "data/raw/browser-probes/riyadh-city-events-2026-10-07T09-02-15-128Z.html",
-      "screenshot": "data/raw/browser-probes/riyadh-city-events-2026-10-07T09-02-15-128Z.png",
+      "text_bytes": 826,
+      "html_bytes": 155263,
+      "html_snapshot": "data/raw/browser-probes/riyadh-city-events-2026-10-08T09-21-39-589Z.html",
+      "screenshot": "data/raw/browser-probes/riyadh-city-events-2026-10-08T09-21-39-589Z.png",
       "signals": {
         "has_next_data": false,
         "has_nuxt": false,

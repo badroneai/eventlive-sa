@@ -1,19 +1,19 @@
 {
   "schema": "eventlive.i18n-en-surface.v1",
-  "generated_at": "2026-10-07T09:30:41.130Z",
-  "pages_scanned": 1895,
-  "pages_with_arabic": 416,
+  "generated_at": "2026-10-08T09:52:45.649Z",
+  "pages_scanned": 1900,
+  "pages_with_arabic": 420,
   "template_regressions": [],
   "script_template_regressions": [],
   "style_template_regressions": [],
   "recurring_surface_debt": [
     {
       "text": "../assets/event-images/الشهادة-الدولية-للحاسب-والإنترنت-ic3-a46ba6d2eb.jpg",
-      "pages": 49,
-      "example": "events/event-الترشح-للدبلوم-المتوسط-إدارة-اللوجستيات-وسلاسل-الإمداد-حضوري-بالتعاون-مع.html",
+      "pages": 51,
+      "example": "events/event-أهمية-الرياضيات-دورها-في-الحياة-والعلوم-والتكنولوجيا.html",
       "script": true
     }
   ],
   "recurring_total": 1,
-  "content_prose_lines": 2073
+  "content_prose_lines": 2096
 }

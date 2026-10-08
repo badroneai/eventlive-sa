@@ -1,11 +1,11 @@
 {
-  "generated_at": "2026-10-07T09:21:35.398Z",
+  "generated_at": "2026-10-08T09:44:00.813Z",
   "events_file": "dist/events.json",
   "manifest": "data/event_image_cache_manifest.json",
   "image_dir": "dist/assets/event-images",
   "totals": {
     "targets": 500,
-    "cached_total": 892,
+    "cached_total": 894,
     "fetched": 2,
     "reused": 492,
     "failed": 6,
@@ -14,15 +14,15 @@
   },
   "fetched": [
     {
-      "source_url": "https://hayyjameel.org/wp-content/uploads/2026/10/DSC01033-1100x500.jpg",
-      "file": "dist/assets/event-images/hayy-markets-luqta-market-pre-loved-pop-up-d289a2a002.jpg",
-      "bytes": 71896,
+      "source_url": "https://tc.qcc.org.sa/storage/271/6ac61b9b53646_%D8%A7%D8%AF%D9%88%D8%A7%D8%AA-%D9%82%D9%88%D9%82%D9%84_%D8%A7%D9%84%D8%A7%D8%B9%D9%84%D8%A7%D9%86-%D9%85%D9%86%D8%B5%D8%A9-x.jpg",
+      "file": "dist/assets/event-images/مهارات-التسويق-باستخدام-أدوات-قوقل-67021ecc84.jpg",
+      "bytes": 897074,
       "events": 1
     },
     {
-      "source_url": "https://www.ithra.com/application/files/cache/thumbnails/9b5bc052fe8347923f82e94ae6c8ea81.png",
-      "file": "dist/assets/event-images/ithra-winter-season-2026-24e095dcda.png",
-      "bytes": 1312301,
+      "source_url": "https://tc.qcc.org.sa/storage/270/6ac4e70fa9d60_%D8%A7%D9%84%D9%85%D8%A8%D9%8A%D8%B9%D8%A7%D8%AA-%D8%A7%D9%84%D8%AA%D8%AF%D8%B1%D9%8A%D8%A8.jpg",
+      "file": "dist/assets/event-images/المهارات-الأساسية-للمبيعات-89ef5dd030.jpg",
+      "bytes": 817740,
       "events": 1
     }
   ],
@@ -125,6 +125,11 @@
     {
       "source_url": "https://discoveraseer.com/en/img/asset/YXNzZXRzL2V4cGVyaWVuY2UvYWFhbmFiMi5wbmc/aaanab2.png?w=1024&fm=webp&s=b6db6587e3887e3b27e4b467711abff4",
       "file": "dist/assets/event-images/مزرعة-أعناب-8fb35d796f.webp",
+      "events": 1
+    },
+    {
+      "source_url": "https://www.ithra.com/application/files/cache/thumbnails/36d13ecef91b05d955bc60b3c951d824.jpg",
+      "file": "dist/assets/event-images/echoes-of-the-familiar-de9fb567e4.jpg",
       "events": 1
     },
     {
@@ -275,7 +280,7 @@
     {
       "source_url": "https://uqu.edu.sa/assets/images/uqu-gate.jpeg",
       "file": "dist/assets/event-images/الشهادة-الدولية-للحاسب-والإنترنت-ic3-a46ba6d2eb.jpg",
-      "events": 113
+      "events": 116
     },
     {
       "source_url": "https://scth.scene7.com/is/image/scth/buraydah-dates-carnival-qassim?wid=1400&hei=788&fit=constrain&fmt=webp",
@@ -473,6 +478,11 @@
       "events": 1
     },
     {
+      "source_url": "https://www.ithra.com/application/files/cache/thumbnails/260e65f936a1f5c45da49eb41456cb4c.jpg",
+      "file": "dist/assets/event-images/textured-painting-bb6433ce72.jpg",
+      "events": 2
+    },
+    {
       "source_url": "https://www.ithra.com/application/files/cache/thumbnails/33a3554c1e9f5b1bfbcb7e0039de614a.jpg",
       "file": "dist/assets/event-images/ليلة-تريفيا-ذكرى-الطاقة-07cb84593c.jpg",
       "events": 1
@@ -598,11 +608,6 @@
       "events": 1
     },
     {
-      "source_url": "https://api.riyadh.sa/sites/default/files/styles/medium/public/2025-12/ezgif.com-webp-to-jpg-converter%20%289%29_0.jpg?itok=8MIYdE3n",
-      "file": "dist/assets/event-images/saudi-lifestyle-week-29c3641da8.jpg",
-      "events": 1
-    },
-    {
       "source_url": "https://www.ithra.com/application/files/cache/thumbnails/afc589ad447422ccf7b5f40960fd1425.jpg",
       "file": "dist/assets/event-images/advanced-wheel-throwing-23a0c7641e.jpg",
       "events": 1
@@ -628,11 +633,6 @@
       "events": 1
     },
     {
-      "source_url": "https://api.riyadh.sa/sites/default/files/styles/medium/public/2026-04/68ec852090a69.webp_.bv_resized_ipad.webp_.bv%5B1%5D.jpg?itok=wNC3GVvf",
-      "file": "dist/assets/event-images/cfo-leadership-summit-ea1d20fa64.jpg",
-      "events": 1
-    },
-    {
       "source_url": "https://api.riyadh.sa/sites/default/files/styles/medium/public/2025-12/erter%20%2817%29.jpg?itok=GJOsde_n",
       "file": "dist/assets/event-images/saudi-procurement-conference-004e3ad949.jpg",
       "events": 1
@@ -640,6 +640,11 @@
     {
       "source_url": "https://hayyjameel.org/wp-content/uploads/2026/09/la-traversee-1-1-2560x-q85-1100x500.jpg",
       "file": "dist/assets/event-images/hayy-cinema-october-2026-a771c51824.jpg",
+      "events": 1
+    },
+    {
+      "source_url": "https://hayyjameel.org/wp-content/uploads/2026/10/DSC01033-1100x500.jpg",
+      "file": "dist/assets/event-images/hayy-markets-luqta-market-pre-loved-pop-up-d289a2a002.jpg",
       "events": 1
     },
     {
@@ -805,6 +810,11 @@
     {
       "source_url": "https://hayyjameel.org/wp-content/uploads/2026/09/IMG-6538-scaled-aspect-ratio-1688-783-1100x500.jpg",
       "file": "dist/assets/event-images/hayy-makers-open-day-plastic-cap-mural-90f0ee58f1.jpg",
+      "events": 1
+    },
+    {
+      "source_url": "https://www.ithra.com/application/files/cache/thumbnails/9b5bc052fe8347923f82e94ae6c8ea81.png",
+      "file": "dist/assets/event-images/ithra-winter-season-2026-24e095dcda.png",
       "events": 1
     },
     {
@@ -1198,6 +1208,16 @@
       "events": 1
     },
     {
+      "source_url": "https://api.riyadh.sa/sites/default/files/styles/medium/public/2026-04/68ec852090a69.webp_.bv_resized_ipad.webp_.bv%5B1%5D.jpg?itok=wNC3GVvf",
+      "file": "dist/assets/event-images/cfo-leadership-summit-ea1d20fa64.jpg",
+      "events": 1
+    },
+    {
+      "source_url": "https://api.riyadh.sa/sites/default/files/styles/medium/public/2025-12/ezgif.com-webp-to-jpg-converter%20%289%29_0.jpg?itok=8MIYdE3n",
+      "file": "dist/assets/event-images/saudi-lifestyle-week-29c3641da8.jpg",
+      "events": 1
+    },
+    {
       "source_url": "https://api.riyadh.sa/sites/default/files/styles/medium/public/2026-02/slider-riyadh.jpg?itok=paMnaS4v",
       "file": "dist/assets/event-images/global-csr-forum-77e94825e0.jpg",
       "events": 1
@@ -1466,11 +1486,6 @@
       "source_url": "https://www.ithra.com/application/files/cache/thumbnails/bc26222ac54f92c203ba9900210a1cd8.jpg",
       "file": "dist/assets/event-images/hobby-with-expert-translation-b861847de3.jpg",
       "events": 1
-    },
-    {
-      "source_url": "https://www.ithra.com/application/files/cache/thumbnails/260e65f936a1f5c45da49eb41456cb4c.jpg",
-      "file": "dist/assets/event-images/textured-painting-bb6433ce72.jpg",
-      "events": 2
     },
     {
       "source_url": "https://api.riyadh.sa/sites/default/files/styles/medium/public/2026-02/HAEdfmHXwAA_2WL.jpeg?itok=-azjYn5n",
@@ -2383,11 +2398,6 @@
       "events": 1
     },
     {
-      "source_url": "https://www.ithra.com/application/files/cache/thumbnails/36d13ecef91b05d955bc60b3c951d824.jpg",
-      "file": "dist/assets/event-images/echoes-of-the-familiar-de9fb567e4.jpg",
-      "events": 1
-    },
-    {
       "source_url": "https://discoveraseer.com/en/img/asset/YXNzZXRzL2V4cGVyaWVuY2Uva3NodGgucG5n/kshth.png?w=1024&fm=webp&s=a903e9e7554e7cf219359b245d62d50e",
       "file": "dist/assets/event-images/كشتة-ab3a550ce8.webp",
       "events": 1
@@ -2476,16 +2486,6 @@
       "source_url": "https://api.riyadh.sa/sites/default/files/styles/medium/public/2026-04/GyN7i2hWYAEFU3X.jpeg?itok=of7aIuP0",
       "file": "dist/assets/event-images/prince-faisal-bin-fahd-art-exhibition-summer-2026-8216b3ee07.jpg",
       "events": 1
-    },
-    {
-      "source_url": "https://scth.scene7.com/is/image/scth/al-balad-cinema?wid=1400&hei=788&fit=constrain&fmt=webp",
-      "file": "dist/assets/event-images/al-balad-cinema-2f95f8f37c.webp",
-      "events": 1
-    },
-    {
-      "source_url": "https://www.ithra.com/application/files/cache/thumbnails/560bafb34a47c331b1dc9ad85fc108c9.jpg",
-      "file": "dist/assets/event-images/baab-d957b34587.jpg",
-      "events": 1
     }
   ],
   "rejected_removed": [],
@@ -2497,42 +2497,42 @@
       "events": 1,
       "reason": "HTTP 403",
       "failure_kind": "access-denied",
-      "retry_after": "2026-10-08T09:21:35.398Z"
-    },
-    {
-      "source_url": "https://s7g10.scene7.com/is/image/rcu/stargazing-at-alula-fort:landscape-16x9?$Responsive$&fit=stretch&fmt=webp&wid=1920",
-      "events": 1,
-      "reason": "HTTP 403",
-      "failure_kind": "access-denied",
-      "retry_after": "2026-10-08T09:21:35.398Z"
+      "retry_after": "2026-10-09T09:44:00.813Z"
     },
     {
       "source_url": "https://s7g10.scene7.com/is/image/rcu/fei2:landscape-16x9?$Responsive$&fit=stretch&fmt=webp&wid=1920",
       "events": 1,
       "reason": "HTTP 403",
       "failure_kind": "access-denied",
-      "retry_after": "2026-10-08T09:21:35.398Z"
+      "retry_after": "2026-10-09T09:44:00.813Z"
+    },
+    {
+      "source_url": "https://s7g10.scene7.com/is/image/rcu/stargazing-at-alula-fort:landscape-16x9?$Responsive$&fit=stretch&fmt=webp&wid=1920",
+      "events": 1,
+      "reason": "HTTP 403",
+      "failure_kind": "access-denied",
+      "retry_after": "2026-10-09T09:44:00.813Z"
     },
     {
       "source_url": "https://s7g10.scene7.com/is/image/rcu/sunset-stillness-meditation-sound-immersion:landscape-16x9?$Responsive$&fit=stretch&fmt=webp&wid=1920",
       "events": 1,
       "reason": "HTTP 403",
       "failure_kind": "access-denied",
-      "retry_after": "2026-10-08T09:21:35.398Z"
+      "retry_after": "2026-10-09T09:44:00.813Z"
     },
     {
       "source_url": "https://cdn.rfecc.sa/wp-content/uploads/mec/qr_898ea2449274454e42895b52b18c6f68.png",
       "events": 1,
       "reason": "HTTP 403",
       "failure_kind": "access-denied",
-      "retry_after": "2026-10-08T09:21:35.398Z"
+      "retry_after": "2026-10-09T09:44:00.813Z"
     },
     {
       "source_url": "https://api.riyadh.sa/sites/default/files/styles/medium/public/2026-07/er%20%2859%29.jpg?itok=a33APdGm",
       "events": 1,
       "reason": "not-image text/html; charset=utf-8",
       "failure_kind": "source-returned-html",
-      "retry_after": "2026-10-08T09:21:35.398Z"
+      "retry_after": "2026-10-09T09:44:00.813Z"
     }
   ],
   "requires_rebuild": true,

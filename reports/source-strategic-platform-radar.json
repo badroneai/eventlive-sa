@@ -1,6 +1,6 @@
 {
   "schema": "eventlive.source-strategic-platform-radar.v1",
-  "generated_at": "2026-10-07T08:48:38.634Z",
+  "generated_at": "2026-10-08T09:06:59.971Z",
   "policy": {
     "allowed_use": "official source evidence refresh, API-surface mapping, partnership prioritization, extractor backlog decisions",
     "disallowed_use": "direct catalog publication without official confirmation and duplicate review"
@@ -133,7 +133,7 @@
       "final_url": "https://nec.gov.sa/ar",
       "via": "fetch",
       "content_type": "text/html; charset=utf-8",
-      "bytes": 141591,
+      "bytes": 142247,
       "title": "المركز الوطني للفعاليات",
       "classification": "protected",
       "error": "",
@@ -171,7 +171,7 @@
         "https://nec.gov.sa/ar\\",
         "https://nec.gov.sa/en\\",
         "https://nec.gov.sa/media/2e5a88cf-8d48-43e2-9178-41c9e9ed8d4b/about-introduction.webp\\",
-        "https://static.cloudflareinsights.com/beacon.min.js/v31edd6df95cf4e85bb4c19e7a9bdbcba1788362987495",
+        "https://static.cloudflareinsights.com/beacon.min.js/v4bc70e2c01a94c73b74392e4234840661791215815920",
         "https://nec.gov.sa/ar/event-tech",
         "https://nec.gov.sa/ar/join-us/event-pioneer",
         "https://nec.gov.sa/ar/event-tech/",
@@ -180,6 +180,7 @@
         "https://nec.gov.sa/media/31a5822a-4e1b-4d64-a9ec-5f042964e8ff/event%D8%AA%D9%82%D9%88%D9%8A%D9%85-%D8%AC%D8%AF%D8%A9-%D9%81%D8%B9%D8%A7%D9%84%D9%8A%D8%A7%D8%AA-%D9%81%D8%B9%D8%A7%D9%84%D9%8A%D8%A9-%D8%B3%D9%8A%D8%AA%D9%8A-%D9%88%D9%88%D9%83-%D9%88%D9%83-%D8%A7%D8%B3%D9%8A%D8%A7-%D8%A7%D9%84%D8%B5%D8%BA%D8%B1%D9%89.jpg/"
       ],
       "page_hint_words": [
+        "api",
         "event",
         "events"
       ],
@@ -302,7 +303,7 @@
       "final_url": "https://webook.com/ar/explore",
       "via": "fetch",
       "content_type": "text/html",
-      "bytes": 7736,
+      "bytes": 7738,
       "title": "",
       "classification": "protected",
       "error": "",
@@ -453,7 +454,7 @@
         "https://cdn.gea.gov.sa/8JbVQI1IkdzFCZigAg5ApDSJBkXqZa084hcQN75c6BrshfyWJT1M6D9qXLhOZi5i/style.css",
         "https://cdn.gea.gov.sa/8JbVQI1IkdzFCZigAg5ApDSJBkXqZa084hcQN75c6BrshfyWJT1M6D9qXLhOZi5i/data-rate-005-429.png",
         "https://cdn.gea.gov.sa/8JbVQI1IkdzFCZigAg5ApDSJBkXqZa084hcQN75c6BrshfyWJT1M6D9qXLhOZi5i/shield-exclamation.svg",
-        "https://static.cloudflareinsights.com/beacon.min.js/v31edd6df95cf4e85bb4c19e7a9bdbcba1788362987495"
+        "https://static.cloudflareinsights.com/beacon.min.js/v4bc70e2c01a94c73b74392e4234840661791215815920"
       ],
       "page_hint_words": [],
       "asset_results": [],
@@ -520,7 +521,7 @@
         "https://web-dev.evento.sa/assets/images/logo-evento-for_meta.webp",
         "https://apps.apple.com/us/app/evento-%D8%A7%D9%8A%D9%81%D9%8A%D9%86%D8%AA%D9%88/id1461510319",
         "https://play.google.com/store/apps/details?id=com.evento.eventoApp",
-        "https://static.cloudflareinsights.com/beacon.min.js/v31edd6df95cf4e85bb4c19e7a9bdbcba1788362987495"
+        "https://static.cloudflareinsights.com/beacon.min.js/v4bc70e2c01a94c73b74392e4234840661791215815920"
       ],
       "page_hint_words": [
         "api",

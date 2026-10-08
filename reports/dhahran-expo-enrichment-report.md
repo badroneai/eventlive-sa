@@ -1,6 +1,6 @@
 # Dhahran Expo Calendar Enrichment Report
 
-- generated_at: 2026-10-07T09:15:55.740Z
+- generated_at: 2026-10-08T09:36:37.044Z
 - targets: 18
 - candidates: 8
 - enriched: 18

@@ -1,15 +1,13 @@
 # EventLive Visit Saudi Image Identity Report
 
-- generated_at: 2026-10-07T09:13:59.688Z
-- pdf_crop_assignments: 25
+- generated_at: 2026-10-08T09:34:40.893Z
+- pdf_crop_assignments: 23
 - verified: 22
-- struck: 3
+- struck: 1
 - slots_seen_this_cycle: 24
 
 ## Struck (fell back to generated cover)
 
-- بسطة القابل (visit-saudi-summer-2026-p026-top-right.jpg) - slot-vacated - no dated card currently occupies page 26 top-right of https://www.visitsaudi.com/content/dam/documents/saudi-calendar-ar.pdf
-- كأس الخليج (visit-saudi-summer-2026-p007-bottom-right.jpg) - slot-vacated - no dated card currently occupies page 7 bottom-right of https://www.visitsaudi.com/content/dam/documents/saudi-calendar-ar.pdf
 - ألف وواحد (visit-saudi-summer-2026-p063-bottom-left.jpg) - identity-mismatch - page 63 bottom-left is now "وقف! عرض نمر الكوميدي المباشر في الرياض"
 
 ## Verified
