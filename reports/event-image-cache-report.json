@@ -1,28 +1,22 @@
 {
-  "generated_at": "2026-10-08T09:44:00.813Z",
+  "generated_at": "2026-10-09T10:03:05.989Z",
   "events_file": "dist/events.json",
   "manifest": "data/event_image_cache_manifest.json",
   "image_dir": "dist/assets/event-images",
   "totals": {
     "targets": 500,
-    "cached_total": 894,
-    "fetched": 2,
-    "reused": 492,
+    "cached_total": 895,
+    "fetched": 1,
+    "reused": 493,
     "failed": 6,
     "skipped_recent_failures": 0,
     "remembered_failures": 30
   },
   "fetched": [
     {
-      "source_url": "https://tc.qcc.org.sa/storage/271/6ac61b9b53646_%D8%A7%D8%AF%D9%88%D8%A7%D8%AA-%D9%82%D9%88%D9%82%D9%84_%D8%A7%D9%84%D8%A7%D8%B9%D9%84%D8%A7%D9%86-%D9%85%D9%86%D8%B5%D8%A9-x.jpg",
-      "file": "dist/assets/event-images/مهارات-التسويق-باستخدام-أدوات-قوقل-67021ecc84.jpg",
-      "bytes": 897074,
-      "events": 1
-    },
-    {
-      "source_url": "https://tc.qcc.org.sa/storage/270/6ac4e70fa9d60_%D8%A7%D9%84%D9%85%D8%A8%D9%8A%D8%B9%D8%A7%D8%AA-%D8%A7%D9%84%D8%AA%D8%AF%D8%B1%D9%8A%D8%A8.jpg",
-      "file": "dist/assets/event-images/المهارات-الأساسية-للمبيعات-89ef5dd030.jpg",
-      "bytes": 817740,
+      "source_url": "https://hub.misk.org.sa/media/lcsk2oyh/nonprofit-governancehub-en.png",
+      "file": "dist/assets/event-images/nonprofit-governance-from-compliance-to-institutional-excellence-4beb063e2b.png",
+      "bytes": 428983,
       "events": 1
     }
   ],
@@ -290,11 +284,6 @@
     {
       "source_url": "https://www.ithra.com/application/files/cache/thumbnails/6519ce3982b405e399c3a7313853a2bf.jpg",
       "file": "dist/assets/event-images/workshop-at-the-library-264921ca4b.jpg",
-      "events": 1
-    },
-    {
-      "source_url": "https://cdn.tuwaiq.edu.sa/initiatives_admin/images/4ilqvrk1.uuc.webp",
-      "file": "dist/assets/event-images/معسكر-طويق-للقطاع-الأمني-تطوير-البرمجيات-4ae6ec31c9.webp",
       "events": 1
     },
     {
@@ -598,11 +587,6 @@
       "events": 1
     },
     {
-      "source_url": "https://hayyjameel.org/wp-content/uploads/2026/09/2018-03-16-14-55-23-2_orig-1100x500.jpg",
-      "file": "dist/assets/event-images/hayy-makers-introduction-to-silkscreen-printing-with-ziad-yousef-3eaf1375e4.jpg",
-      "events": 1
-    },
-    {
       "source_url": "https://scth.scene7.com/is/image/scth/almelwah-racing?wid=1400&hei=788&fit=constrain&fmt=webp",
       "file": "dist/assets/event-images/al-milwah-falcon-race-7e43d044fe.webp",
       "events": 1
@@ -633,11 +617,6 @@
       "events": 1
     },
     {
-      "source_url": "https://api.riyadh.sa/sites/default/files/styles/medium/public/2025-12/erter%20%2817%29.jpg?itok=GJOsde_n",
-      "file": "dist/assets/event-images/saudi-procurement-conference-004e3ad949.jpg",
-      "events": 1
-    },
-    {
       "source_url": "https://hayyjameel.org/wp-content/uploads/2026/09/la-traversee-1-1-2560x-q85-1100x500.jpg",
       "file": "dist/assets/event-images/hayy-cinema-october-2026-a771c51824.jpg",
       "events": 1
@@ -656,16 +635,6 @@
       "source_url": "https://hayyjameel.org/wp-content/uploads/2026/10/202610_ATER_Banner-1100x500.png",
       "file": "dist/assets/event-images/jameel-library-opening-programme-at-the-edge-of-renewal-with-the-khale-7b741eb2e7.png",
       "events": 1
-    },
-    {
-      "source_url": "https://hayyjameel.org/wp-content/uploads/2026/09/Artist1-Ustad-Abdul-Aziz-1100x500.jpg",
-      "file": "dist/assets/event-images/hayy-cinema-x-hayy-arts-between-destinations-short-films-artist-discus-4a5dd900a3.jpg",
-      "events": 1
-    },
-    {
-      "source_url": "https://www.ithra.com/application/files/cache/thumbnails/57ced1047619d76eed02cbbfb34191f7.jpg",
-      "file": "dist/assets/event-images/philosophy-for-everyone-a-journey-of-thought-from-young-to-old-1dc740ef9e.jpg",
-      "events": 4
     },
     {
       "source_url": "https://www.ithra.com/application/files/cache/thumbnails/03aa29a008d9d56c3d155fb84ab52397.jpg",
@@ -700,6 +669,16 @@
     {
       "source_url": "https://www.ithra.com/application/files/cache/thumbnails/99264b28f44e86dab86ebb61a017ffed.jpg",
       "file": "dist/assets/event-images/the-soul-of-place-leveraging-folklore-and-local-heritage-in-narrative--45d3e43633.jpg",
+      "events": 1
+    },
+    {
+      "source_url": "https://tc.qcc.org.sa/storage/270/6ac4e70fa9d60_%D8%A7%D9%84%D9%85%D8%A8%D9%8A%D8%B9%D8%A7%D8%AA-%D8%A7%D9%84%D8%AA%D8%AF%D8%B1%D9%8A%D8%A8.jpg",
+      "file": "dist/assets/event-images/المهارات-الأساسية-للمبيعات-89ef5dd030.jpg",
+      "events": 1
+    },
+    {
+      "source_url": "https://tc.qcc.org.sa/storage/271/6ac61b9b53646_%D8%A7%D8%AF%D9%88%D8%A7%D8%AA-%D9%82%D9%88%D9%82%D9%84_%D8%A7%D9%84%D8%A7%D8%B9%D9%84%D8%A7%D9%86-%D9%85%D9%86%D8%B5%D8%A9-x.jpg",
+      "file": "dist/assets/event-images/مهارات-التسويق-باستخدام-أدوات-قوقل-67021ecc84.jpg",
       "events": 1
     },
     {
@@ -1208,8 +1187,23 @@
       "events": 1
     },
     {
+      "source_url": "https://hayyjameel.org/wp-content/uploads/2026/09/Artist1-Ustad-Abdul-Aziz-1100x500.jpg",
+      "file": "dist/assets/event-images/hayy-cinema-x-hayy-arts-between-destinations-short-films-artist-discus-4a5dd900a3.jpg",
+      "events": 1
+    },
+    {
+      "source_url": "https://www.ithra.com/application/files/cache/thumbnails/57ced1047619d76eed02cbbfb34191f7.jpg",
+      "file": "dist/assets/event-images/philosophy-for-everyone-a-journey-of-thought-from-young-to-old-1dc740ef9e.jpg",
+      "events": 4
+    },
+    {
       "source_url": "https://api.riyadh.sa/sites/default/files/styles/medium/public/2026-04/68ec852090a69.webp_.bv_resized_ipad.webp_.bv%5B1%5D.jpg?itok=wNC3GVvf",
       "file": "dist/assets/event-images/cfo-leadership-summit-ea1d20fa64.jpg",
+      "events": 1
+    },
+    {
+      "source_url": "https://api.riyadh.sa/sites/default/files/styles/medium/public/2025-12/erter%20%2817%29.jpg?itok=GJOsde_n",
+      "file": "dist/assets/event-images/saudi-procurement-conference-004e3ad949.jpg",
       "events": 1
     },
     {
@@ -1226,6 +1220,11 @@
       "source_url": "https://www.sfda.gov.sa/sites/default/files/2026-07/wrr12.jpg",
       "file": "dist/assets/event-images/نقل-مبيدات-آفات-الصحة-العامة-dfaa164635.jpg",
       "events": 7
+    },
+    {
+      "source_url": "https://hayyjameel.org/wp-content/uploads/2026/09/2018-03-16-14-55-23-2_orig-1100x500.jpg",
+      "file": "dist/assets/event-images/hayy-makers-introduction-to-silkscreen-printing-with-ziad-yousef-3eaf1375e4.jpg",
+      "events": 1
     },
     {
       "source_url": "https://www.ithra.com/application/files/cache/thumbnails/5c595252d2af2e0b0cd47e3052049c40.jpg",
@@ -1840,6 +1839,11 @@
     {
       "source_url": "https://discoveraseer.com/en/img/asset/YXNzZXRzL2V4cGVyaWVuY2UvYWdobC1ibGRfcGFnZS0wMDAxLmpwZw/aghl-bld_page-0001.jpg?w=1024&fm=webp&s=efb01a4f9be9734e9f14ca3e4f27adc0",
       "file": "dist/assets/event-images/أغلى-وطن-a1dffa4a36.webp",
+      "events": 1
+    },
+    {
+      "source_url": "https://cdn.tuwaiq.edu.sa/initiatives_admin/images/4ilqvrk1.uuc.webp",
+      "file": "dist/assets/event-images/معسكر-طويق-للقطاع-الأمني-تطوير-البرمجيات-4ae6ec31c9.webp",
       "events": 1
     },
     {
@@ -2481,11 +2485,6 @@
       "source_url": "https://scth.scene7.com/is/image/scth/dakah-in-abha?wid=1400&hei=788&fit=constrain&fmt=webp",
       "file": "dist/assets/event-images/dakah-in-abha-7016efcf1f.webp",
       "events": 1
-    },
-    {
-      "source_url": "https://api.riyadh.sa/sites/default/files/styles/medium/public/2026-04/GyN7i2hWYAEFU3X.jpeg?itok=of7aIuP0",
-      "file": "dist/assets/event-images/prince-faisal-bin-fahd-art-exhibition-summer-2026-8216b3ee07.jpg",
-      "events": 1
     }
   ],
   "rejected_removed": [],
@@ -2493,51 +2492,51 @@
   "skipped_recent_failures": [],
   "failed": [
     {
-      "source_url": "https://s7g10.scene7.com/is/image/rcu/leonid-meteor-shower-at-jabal-ikmah:landscape-16x9?$Responsive$&fit=stretch&fmt=webp&wid=1920",
-      "events": 1,
-      "reason": "HTTP 403",
-      "failure_kind": "access-denied",
-      "retry_after": "2026-10-09T09:44:00.813Z"
-    },
-    {
-      "source_url": "https://s7g10.scene7.com/is/image/rcu/fei2:landscape-16x9?$Responsive$&fit=stretch&fmt=webp&wid=1920",
-      "events": 1,
-      "reason": "HTTP 403",
-      "failure_kind": "access-denied",
-      "retry_after": "2026-10-09T09:44:00.813Z"
-    },
-    {
       "source_url": "https://s7g10.scene7.com/is/image/rcu/stargazing-at-alula-fort:landscape-16x9?$Responsive$&fit=stretch&fmt=webp&wid=1920",
       "events": 1,
       "reason": "HTTP 403",
       "failure_kind": "access-denied",
-      "retry_after": "2026-10-09T09:44:00.813Z"
+      "retry_after": "2026-10-10T10:03:05.989Z"
     },
     {
       "source_url": "https://s7g10.scene7.com/is/image/rcu/sunset-stillness-meditation-sound-immersion:landscape-16x9?$Responsive$&fit=stretch&fmt=webp&wid=1920",
       "events": 1,
       "reason": "HTTP 403",
       "failure_kind": "access-denied",
-      "retry_after": "2026-10-09T09:44:00.813Z"
+      "retry_after": "2026-10-10T10:03:05.989Z"
+    },
+    {
+      "source_url": "https://s7g10.scene7.com/is/image/rcu/fei2:landscape-16x9?$Responsive$&fit=stretch&fmt=webp&wid=1920",
+      "events": 1,
+      "reason": "HTTP 403",
+      "failure_kind": "access-denied",
+      "retry_after": "2026-10-10T10:03:05.989Z"
+    },
+    {
+      "source_url": "https://s7g10.scene7.com/is/image/rcu/leonid-meteor-shower-at-jabal-ikmah:landscape-16x9?$Responsive$&fit=stretch&fmt=webp&wid=1920",
+      "events": 1,
+      "reason": "HTTP 403",
+      "failure_kind": "access-denied",
+      "retry_after": "2026-10-10T10:03:05.989Z"
     },
     {
       "source_url": "https://cdn.rfecc.sa/wp-content/uploads/mec/qr_898ea2449274454e42895b52b18c6f68.png",
       "events": 1,
       "reason": "HTTP 403",
       "failure_kind": "access-denied",
-      "retry_after": "2026-10-09T09:44:00.813Z"
+      "retry_after": "2026-10-10T10:03:05.989Z"
     },
     {
       "source_url": "https://api.riyadh.sa/sites/default/files/styles/medium/public/2026-07/er%20%2859%29.jpg?itok=a33APdGm",
       "events": 1,
       "reason": "not-image text/html; charset=utf-8",
       "failure_kind": "source-returned-html",
-      "retry_after": "2026-10-09T09:44:00.813Z"
+      "retry_after": "2026-10-10T10:03:05.989Z"
     }
   ],
   "requires_rebuild": true,
   "rebuild_reasons": [
-    "fetched:2",
+    "fetched:1",
     "new-failures:6"
   ]
 }

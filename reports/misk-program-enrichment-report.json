@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-08T09:36:30.111Z",
+  "generated_at": "2026-10-09T09:55:57.594Z",
   "catalog": "data/events_catalog.json",
   "totals": {
     "targets": 18,
@@ -96,14 +96,6 @@
       "registration_deadline": "2026-10-01T18:00:00+03:00"
     },
     {
-      "id": "event-global-exposure-program",
-      "title": "Global Exposure Program",
-      "goals": 1,
-      "features": 4,
-      "requirements": 0,
-      "registration_deadline": "2026-09-30T18:00:00+03:00"
-    },
-    {
       "id": "event-application-deadline-discover-your-path",
       "title": "Discover Your Path Program",
       "goals": 1,
@@ -118,6 +110,14 @@
       "features": 4,
       "requirements": 0,
       "registration_deadline": "2026-10-29T18:00:00+03:00"
+    },
+    {
+      "id": "event-global-exposure-program",
+      "title": "Global Exposure Program",
+      "goals": 1,
+      "features": 4,
+      "requirements": 0,
+      "registration_deadline": "2026-09-30T18:00:00+03:00"
     },
     {
       "id": "event-misk-x-humain-traineeship-program-future-ai-builders",

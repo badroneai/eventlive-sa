@@ -1,12 +1,39 @@
 {
-  "generated_at": "2026-10-08T09:34:45.677Z",
+  "generated_at": "2026-10-09T09:54:17.839Z",
   "catalog": "data/events_catalog.json",
   "totals": {
     "targets": 29,
-    "enriched": 24,
-    "failed": 5
+    "enriched": 28,
+    "failed": 1
   },
   "enriched": [
+    {
+      "id": "event-introduction-to-generative-ai-مقدمة-في-الذكاء-الاصطناعي-التوليدي",
+      "title": "Introduction to Generative AI-مقدمة في الذكاء الاصطناعي التوليدي",
+      "group_id": "13037",
+      "goals": 1,
+      "features": 3,
+      "requirements": 4,
+      "metadata": 8
+    },
+    {
+      "id": "event-دورة-comptia-a",
+      "title": "دورة +CompTIA A",
+      "group_id": "13039",
+      "goals": 5,
+      "features": 15,
+      "requirements": 5,
+      "metadata": 8
+    },
+    {
+      "id": "event-security-operations-threat-detection-incident-response-عمليات-الأمن-السي",
+      "title": "Security Operations, Threat Detection & Incident Response - عمليات الأمن السيبراني، واكتشاف التهديدات، والاستجابة للحوادث",
+      "group_id": "13040",
+      "goals": 1,
+      "features": 3,
+      "requirements": 4,
+      "metadata": 8
+    },
     {
       "id": "event-أساسيات-الحوسبة-السحابية-cloud-computing-essentials",
       "title": "أساسيات الحوسبة السحابية - Cloud Computing Essentials",
@@ -161,6 +188,15 @@
       "metadata": 8
     },
     {
+      "id": "event-ccna",
+      "title": "CCNA",
+      "group_id": "13058",
+      "goals": 1,
+      "features": 1,
+      "requirements": 4,
+      "metadata": 8
+    },
+    {
       "id": "event-responsible-ai-ethics-and-ai-governance",
       "title": "Responsible AI, Ethics and AI Governance",
       "group_id": "13059",
@@ -226,34 +262,10 @@
   ],
   "failed": [
     {
-      "id": "event-introduction-to-generative-ai-مقدمة-في-الذكاء-الاصطناعي-التوليدي",
-      "title": "Introduction to Generative AI-مقدمة في الذكاء الاصطناعي التوليدي",
-      "group_id": "13037",
-      "reason": "fetch failed"
-    },
-    {
-      "id": "event-دورة-comptia-a",
-      "title": "دورة +CompTIA A",
-      "group_id": "13039",
-      "reason": "fetch failed"
-    },
-    {
-      "id": "event-security-operations-threat-detection-incident-response-عمليات-الأمن-السي",
-      "title": "Security Operations, Threat Detection & Incident Response - عمليات الأمن السيبراني، واكتشاف التهديدات، والاستجابة للحوادث",
-      "group_id": "13040",
-      "reason": "fetch failed"
-    },
-    {
       "id": "event-linux-administration",
       "title": "Linux Administration",
       "group_id": "13057",
       "reason": "HTTP 404"
-    },
-    {
-      "id": "event-ccna",
-      "title": "CCNA",
-      "group_id": "13058",
-      "reason": "fetch failed"
     }
   ]
 }

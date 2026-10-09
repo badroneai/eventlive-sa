@@ -1,6 +1,6 @@
 # EventLive Official Agenda Radar
 
-Generated at: 2026-10-08T09:06:37.271Z
+Generated at: 2026-10-09T09:13:34.260Z
 
 Time scope: current-and-upcoming-only
 
@@ -30,4 +30,4 @@ This radar detects when first-party event pages expose a complete timed programm
 | Saudi FM & Clean 2026 | announced-no-timed-agenda | 200 | 1 | 0 | watch-shared-event-agenda |
 | Global Proptech Summit 2026 | watch | 200 | 0 | 70 | watch-homepage-until-2026-agenda-replaces-historical-pdf |
 | Real Estate Supply Chain Forum 2026 | announced-no-timed-agenda | 200 | 0 | 6 | watch-until-timed-program |
-| CIPS MENA Conference and Awards 2026 | announced-no-timed-agenda | 200 | 0 | 104 | reject-placeholder-until-official-program |
+| CIPS MENA Conference and Awards 2026 | announced-no-timed-agenda | 200 | 0 | 34 | reject-placeholder-until-official-program |

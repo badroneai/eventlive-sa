@@ -1,6 +1,6 @@
 # Strategic Platform Source Radar
 
-Generated at: 2026-10-08T09:06:59.971Z
+Generated at: 2026-10-09T09:13:59.507Z
 
 Policy: evidence refresh, API-surface mapping, and source strategy only. This radar does not auto-publish catalog events.
 
@@ -61,10 +61,10 @@ Policy: evidence refresh, API-surface mapping, and source strategy only. This ra
 - Classification: protected (200, fetch)
 - Project use: Use for lead discovery, ticket-link corroboration, and duplicate checks; require official organizer or authority confirmation before promotion.
 - Title: -
-- Hint URLs: https://wbk-assets.webook.com, https://api.webook.com, https://cdn.webook.com, https://geolocation.webook.com, https://images.cmscloud.ai, https://apps.apple.com/sa/app/webook-com-fun-things-to-do/id6468667896, https://play.google.com/store/apps/details?id=com.webook.android, https://wbk-assets.webook.com/0.7.8.2/assets/index-DZ2Htu0z.js
-  - Asset 200 api-DFKMxA3e.js: https://github.com/nadude/webook-frontend/blob/main/packages/api/README.md, https://webook.com/shop, https://wbk-assets.webook.com/eatapp/availability?event_id=${e}&date=${r}&lang=${a}, https://wbk-assets.webook.com/event-tickets-prerequisite?event_id=${e}, https://wbk-assets.webook.com/organizations/$%7Br%7D/event-group/details, https://wbk-assets.webook.com/event-marketing-fee?event_id=${e}&utm_wid=${r}&lang=${a}
-  - Asset 200 ticketing-Og7zkUfp.js: https://github.com/nadude/webook-frontend/blob/main/packages/ticketing/README.md, https://cdn-{region}.seatsio.net/chart.js, https://chart.seatcloud.com/v1.0/chart.js, https://wbk.zendesk.com/hc/${i}, https://wbk.zendesk.com/hc/${n}, https://wa.me/${c.replace(/\D/g,
-  - Asset 200 config-DuwrGB8a.js: https://github.com/nadude/webook-frontend/blob/main/packages/api/README.md, https://www.recaptcha.net/recaptcha/api.js?render=${t}, https://static.geetest.com/v4/gt4.js, https://apps.apple.com/us/app/webook-com-fun-things-to-do/id6468667896, https://play.google.com/store/apps/details?id=com.webook.android, https://appgallery.huawei.com/app/C109536445
+- Hint URLs: https://wbk-assets.webook.com, https://api.webook.com, https://cdn.webook.com, https://geolocation.webook.com, https://images.cmscloud.ai, https://apps.apple.com/sa/app/webook-com-fun-things-to-do/id6468667896, https://play.google.com/store/apps/details?id=com.webook.android, https://wbk-assets.webook.com/0.7.9/assets/index-CIk1HmNz.js
+  - Asset 200 api-BUMujgfr.js: https://github.com/nadude/webook-frontend/blob/main/packages/api/README.md, https://webook.com/shop, https://wbk-assets.webook.com/eatapp/availability?event_id=${e}&date=${r}&lang=${a}, https://wbk-assets.webook.com/event-tickets-prerequisite?event_id=${e}, https://wbk-assets.webook.com/organizations/$%7Br%7D/event-group/details, https://wbk-assets.webook.com/event-marketing-fee?event_id=${e}&utm_wid=${r}&lang=${a}
+  - Asset 200 ticketing-CPgCZ7uW.js: https://github.com/nadude/webook-frontend/blob/main/packages/ticketing/README.md, https://cdn-{region}.seatsio.net/chart.js, https://chart.seatcloud.com/v1.0/chart.js, https://wbk.zendesk.com/hc/${i}, https://wbk.zendesk.com/hc/${n}, https://wa.me/${c.replace(/\D/g,
+  - Asset 200 config-DC7g3--l.js: https://github.com/nadude/webook-frontend/blob/main/packages/api/README.md, https://www.recaptcha.net/recaptcha/api.js?render=${t}, https://static.geetest.com/v4/gt4.js, https://apps.apple.com/us/app/webook-com-fun-things-to-do/id6468667896, https://play.google.com/store/apps/details?id=com.webook.android, https://appgallery.huawei.com/app/C109536445
 
 ### Enjoy Saudi
 
