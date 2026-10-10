@@ -1,13 +1,14 @@
 # EventLive Visit Saudi Image Identity Report
 
-- generated_at: 2026-10-09T09:54:13.545Z
+- generated_at: 2026-10-10T08:45:43.811Z
 - pdf_crop_assignments: 23
-- verified: 22
-- struck: 1
-- slots_seen_this_cycle: 24
+- verified: 21
+- struck: 2
+- slots_seen_this_cycle: 23
 
 ## Struck (fell back to generated cover)
 
+- IN ACT - ACT X (visit-saudi-summer-2026-p062-top-left.jpg) - slot-vacated - no dated card currently occupies page 62 top-left of https://www.visitsaudi.com/content/dam/documents/saudi-calendar-ar.pdf
 - ألف وواحد (visit-saudi-summer-2026-p063-bottom-left.jpg) - identity-mismatch - page 63 bottom-left is now "وقف! عرض نمر الكوميدي المباشر في الرياض"
 
 ## Verified
@@ -21,7 +22,6 @@
 - تجربة شاطئ قالو (visit-saudi-summer-2026-p004-bottom-left.jpg)
 - استمرارية 26 (visit-saudi-summer-2026-p052-top-left.jpg)
 - دوري الملوك MENA (visit-saudi-summer-2026-p053-top-right.jpg)
-- IN ACT - ACT X (visit-saudi-summer-2026-p062-top-left.jpg)
 - عرض علاء الشيخ في الرياض (visit-saudi-summer-2026-p062-bottom-right.jpg)
 - عرض علاء الشيخ في جدة (visit-saudi-summer-2026-p021-top-right.jpg)
 - Six Kings Slam (visit-saudi-summer-2026-p062-bottom-left.jpg)

@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-09T09:54:13.545Z",
+  "generated_at": "2026-10-10T08:45:43.811Z",
   "catalog": "data/events_catalog.json",
   "candidates": "data/source_candidates.json",
   "manifest": "data/event_image_cache_manifest.json",
@@ -10,11 +10,18 @@
   },
   "totals": {
     "pdf_crop_assignments": 23,
-    "verified": 22,
-    "struck": 1,
-    "slots_seen_this_cycle": 24
+    "verified": 21,
+    "struck": 2,
+    "slots_seen_this_cycle": 23
   },
   "struck": [
+    {
+      "id": "event-in-act-act-x",
+      "title": "IN ACT - ACT X",
+      "file": "visit-saudi-summer-2026-p062-top-left.jpg",
+      "reason": "slot-vacated",
+      "detail": "no dated card currently occupies page 62 top-left of https://www.visitsaudi.com/content/dam/documents/saudi-calendar-ar.pdf"
+    },
     {
       "id": "event-ألف-وواحد",
       "title": "ألف وواحد",
@@ -111,14 +118,6 @@
         "دوري",
         "الملوك",
         "mena"
-      ]
-    },
-    {
-      "id": "event-in-act-act-x",
-      "title": "IN ACT - ACT X",
-      "file": "visit-saudi-summer-2026-p062-top-left.jpg",
-      "matched_tokens": [
-        "act"
       ]
     },
     {

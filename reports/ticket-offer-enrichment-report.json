@@ -1,8 +1,8 @@
 {
-  "checked_at": "2026-10-09T10:01:27.107Z",
+  "checked_at": "2026-10-10T08:52:27.521Z",
   "targets": 9,
   "evidence_found": 5,
-  "changed": 0,
+  "changed": 1,
   "no_evidence": 3,
   "failed": 1,
   "results": [
@@ -72,8 +72,8 @@
       "host": "informaconnect.com",
       "url": "https://informaconnect.com/superreturn-saudi-arabia/purchase/select-package/",
       "status": "evidence",
-      "price_label": "1199 USD",
-      "price": 1199,
+      "price_label": "1299 USD",
+      "price": 1299,
       "price_currency": "USD",
       "method": "informa-visible-package-price"
     },

@@ -1,19 +1,19 @@
 {
   "schema": "eventlive.harvest-os-status.v1",
-  "generated_at": "2026-10-09T10:14:12.323Z",
+  "generated_at": "2026-10-10T09:01:18.121Z",
   "status": "NEEDS_WORK",
   "operating_rule": "Probe before new sources; sample before full harvest; Raw collection is not publication; discovery-only never auto-publishes.",
   "totals": {
     "sources": 88,
-    "candidates": 395,
-    "matched_candidates": 366,
+    "candidates": 386,
+    "matched_candidates": 359,
     "auto_publish_sources": 15,
     "candidate_only_sources": 12,
     "partnership_required_sources": 5,
     "blocked_or_closed_sources": 0,
     "manual_review_sources": 56,
-    "collection_attempted": 41,
-    "productive_sources": 16,
+    "collection_attempted": 19,
+    "productive_sources": 15,
     "collector_errors": 6,
     "chronic_collector_errors": 6,
     "transient_collector_errors": 0
@@ -25,25 +25,24 @@
     "manual_review": 56
   },
   "candidates_by_gate": {
-    "catalog-review": 364,
-    "source-evidence": 27,
-    "duplicate-review": 4
+    "catalog-review": 359,
+    "source-evidence": 24,
+    "duplicate-review": 3
   },
   "funnel": {
-    "discovered_this_run": 203,
-    "candidate_queue": 395,
-    "evaluated_for_publish": 395,
-    "linked_existing": 361,
-    "published_new": 1,
-    "blocked": 33,
+    "discovered_this_run": 176,
+    "candidate_queue": 386,
+    "evaluated_for_publish": 386,
+    "linked_existing": 357,
+    "published_new": 0,
+    "blocked": 29,
     "secondary_promoted": 0,
-    "secondary_still_blocked": 32
+    "secondary_still_blocked": 27
   },
   "blocked_reasons": {
-    "possible duplicate already exists: event-melwah-falcon-racing": 2,
-    "publication gate source-evidence is not auto-publishable": 22,
-    "possible duplicate requires review: exact-title-city-venue-conflict": 3,
     "unknown category requires review": 3,
+    "publication gate source-evidence is not auto-publishable": 21,
+    "possible duplicate requires review: exact-title-city-venue-conflict": 2,
     "linked catalog row event-feena-nehke-stand-up-comedy-by-john-achkar was superseded by dedupe": 1,
     "possible duplicate requires review: exact-title-city-source-conflict": 1,
     "linked catalog row event-music-festival-mdlbeast-soundstorm was superseded by dedupe": 1
@@ -54,42 +53,42 @@
       "note": "collector-error: fetch failed [ETIMEDOUT, ENETUNREACH]; fetch failed [ETIMEDOUT, ENETUNREACH]",
       "error_streak": 49,
       "kind": "chronic",
-      "attempted_this_run": true
+      "attempted_this_run": false
     },
     {
       "id": "mos-events",
       "note": "collector-error: fetch failed [ETIMEDOUT, ENETUNREACH]",
       "error_streak": 49,
       "kind": "chronic",
-      "attempted_this_run": true
+      "attempted_this_run": false
     },
     {
       "id": "moc-cultural-subportals",
       "note": "collector-error: fetch failed [UND_ERR_CONNECT_TIMEOUT]; fetch failed [UND_ERR_CONNECT_TIMEOUT]",
       "error_streak": 49,
       "kind": "chronic",
-      "attempted_this_run": true
+      "attempted_this_run": false
     },
     {
       "id": "saudi-pro-league-fixtures",
       "note": "collector-error: fetch failed [EAI_AGAIN]",
       "error_streak": 29,
       "kind": "chronic",
-      "attempted_this_run": true
+      "attempted_this_run": false
     },
     {
       "id": "tuwaiq-academy-bootcamps",
       "note": "collector-error: HTTP 403",
       "error_streak": 26,
       "kind": "chronic",
-      "attempted_this_run": true
+      "attempted_this_run": false
     },
     {
       "id": "monshaat-events",
       "note": "collector-error: fetch failed [UND_ERR_CONNECT_TIMEOUT]; fetch failed [UND_ERR_CONNECT_TIMEOUT]",
       "error_streak": 17,
       "kind": "chronic",
-      "attempted_this_run": true
+      "attempted_this_run": false
     }
   ],
   "sources": [
