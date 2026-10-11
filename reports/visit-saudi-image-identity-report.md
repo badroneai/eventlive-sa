@@ -1,14 +1,13 @@
 # EventLive Visit Saudi Image Identity Report
 
-- generated_at: 2026-10-10T08:45:43.811Z
-- pdf_crop_assignments: 23
+- generated_at: 2026-10-11T09:26:55.514Z
+- pdf_crop_assignments: 22
 - verified: 21
-- struck: 2
+- struck: 1
 - slots_seen_this_cycle: 23
 
 ## Struck (fell back to generated cover)
 
-- IN ACT - ACT X (visit-saudi-summer-2026-p062-top-left.jpg) - slot-vacated - no dated card currently occupies page 62 top-left of https://www.visitsaudi.com/content/dam/documents/saudi-calendar-ar.pdf
 - ألف وواحد (visit-saudi-summer-2026-p063-bottom-left.jpg) - identity-mismatch - page 63 bottom-left is now "وقف! عرض نمر الكوميدي المباشر في الرياض"
 
 ## Verified
