@@ -1,13 +1,13 @@
 {
-  "generated_at": "2026-10-11T09:28:56.994Z",
+  "generated_at": "2026-10-12T09:56:23.524Z",
   "catalog": "data/events_catalog.json",
   "source": "Visit Saudi Calendar",
   "totals": {
-    "targets": 49,
-    "candidates": 13,
-    "enriched": 49,
-    "fetched": 49,
-    "images": 47,
+    "targets": 50,
+    "candidates": 14,
+    "enriched": 50,
+    "fetched": 50,
+    "images": 48,
     "fetch_failures": 0
   },
   "enriched": [
@@ -328,6 +328,14 @@
       "title": "Alaa El Sheikh Live in Riyadh",
       "source_method": "official-page-html",
       "image_url": "https://www.visitsaudi.com/content/dam/wvs/calendar/alaa-el-sheikh-live-in-jeddah.jpg",
+      "fetched": true,
+      "features": 7
+    },
+    {
+      "id": "event-stand-up-comedy-shows-this-weekend-from-exit-thmanyah",
+      "title": "Stand Up Comedy Shows This Weekend from Exit Thmanyah",
+      "source_method": "official-page-html",
+      "image_url": "https://www.visitsaudi.com/content/dam/wvs/calendar/stand-up-comedy-from-thmanyah.jpg",
       "fetched": true,
       "features": 7
     },

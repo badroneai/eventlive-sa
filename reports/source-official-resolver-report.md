@@ -1,30 +1,18 @@
 # EventLive Official Resolver Report
 
-- generated_at: 2026-10-11T09:32:30.051Z
+- generated_at: 2026-10-12T10:01:22.524Z
 - source_ops_report: reports/source-ops-report.json
 - leads_seen: 10
-- resolver_tasks: 2
+- resolver_tasks: 1
 - high_priority: 0
 
 ## Resolver Tasks
 
 | Priority | Lead | Source | City | Quality | Target sources | Next action |
 |---:|---|---|---|---|---|---|
-| 97 | 25TH WPC Energy Congress | Eventbrite Saudi Arabia | Riyadh | strong-lead/70 | rfecc-whats-on, ricec-events, dhahran-expo-calendar, informa-connect-saudi-events, saudi-water-authority-events | ابحث في المصادر الرسمية المستهدفة واربط lead بمصدر رسمي قبل أي نشر. |
 | 94 | Family Offices & VCs Investment Summit Riyadh: Invite Only | Eventbrite Saudi Arabia | Riyadh | watch-lead/60 | informa-connect-saudi-events, madinah-chamber-events, ricec-events, sdaia-calendar-events, asharqia-chamber-events | ابحث في المصادر الرسمية المستهدفة واربط lead بمصدر رسمي قبل أي نشر. |
 
 ## Search Pack
-
-### 25TH WPC Energy Congress
-
-- [site:rfecc.sa "25TH WPC Energy Congress" "Riyadh"](https://www.google.com/search?q=site%3Arfecc.sa%20%2225TH%20WPC%20Energy%20Congress%22%20%22Riyadh%22)
-- [site:ricec.com "25TH WPC Energy Congress" "Riyadh"](https://www.google.com/search?q=site%3Aricec.com%20%2225TH%20WPC%20Energy%20Congress%22%20%22Riyadh%22)
-- [site:dhahranexpo.com.sa "25TH WPC Energy Congress" "Riyadh"](https://www.google.com/search?q=site%3Adhahranexpo.com.sa%20%2225TH%20WPC%20Energy%20Congress%22%20%22Riyadh%22)
-- [site:informaconnect.com "25TH WPC Energy Congress" "Riyadh"](https://www.google.com/search?q=site%3Ainformaconnect.com%20%2225TH%20WPC%20Energy%20Congress%22%20%22Riyadh%22)
-- [site:swa.gov.sa "25TH WPC Energy Congress" "Riyadh"](https://www.google.com/search?q=site%3Aswa.gov.sa%20%2225TH%20WPC%20Energy%20Congress%22%20%22Riyadh%22)
-- ["25TH WPC Energy Congress" "Riyadh" official](https://www.google.com/search?q=%2225TH%20WPC%20Energy%20Congress%22%20%22Riyadh%22%20official)
-- ["25TH WPC Energy Congress" "Riyadh" organizer](https://www.google.com/search?q=%2225TH%20WPC%20Energy%20Congress%22%20%22Riyadh%22%20organizer)
-- ["25TH WPC Energy Congress" "Riyadh" tickets](https://www.google.com/search?q=%2225TH%20WPC%20Energy%20Congress%22%20%22Riyadh%22%20tickets)
 
 ### Family Offices & VCs Investment Summit Riyadh: Invite Only
 

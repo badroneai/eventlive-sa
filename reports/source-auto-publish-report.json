@@ -1,18 +1,18 @@
 {
-  "published_at": "2026-10-11T09:26:53.181Z",
+  "published_at": "2026-10-12T09:54:26.645Z",
   "dry_run": false,
   "include_partner": true,
   "source_candidates": "data/source_candidates.json",
   "events_catalog": "data/events_catalog.json",
-  "candidates_seen": 383,
+  "candidates_seen": 417,
   "totals": {
-    "candidates_seen": 383,
-    "published": 1,
-    "linked_existing": 353,
-    "blocked": 29,
-    "duplicate_review_alerts": 3,
+    "candidates_seen": 417,
+    "published": 32,
+    "linked_existing": 355,
+    "blocked": 30,
+    "duplicate_review_alerts": 5,
     "category_fallback_alerts": 0,
-    "reconciled": 354,
+    "reconciled": 387,
     "session_windows_reconciled": 0
   },
   "session_window_changes": [],
@@ -22,6 +22,38 @@
   "canonical_event_ids_remapped": 0,
   "canonical_event_id_remaps": [],
   "duplicate_review_alerts": [
+    {
+      "kind": "exact-title-city-venue-conflict",
+      "candidate_id": "candidate-visit-saudi-calendar-pdf-معرض-قلب-البحر-20260604-4a38d19e",
+      "possible_event_id": "event-معرض-قلب-البحر",
+      "conflict_fields": [
+        "venue"
+      ],
+      "title_key": "بحر قلب معرض",
+      "venue_key": "جده",
+      "candidate_source": "visitsaudi.com",
+      "existing_source": "visitsaudi.com",
+      "candidate_starts_at": "2026-06-04T00:00:00+03:00",
+      "existing_starts_at": "2026-06-04T00:00:00+03:00",
+      "date_gap_days": 0,
+      "start_date_drift_days": 0
+    },
+    {
+      "kind": "exact-title-city-venue-conflict",
+      "candidate_id": "candidate-visit-saudi-calendar-pdf-معرض-في-تتبّع-ذكريات-غامرة-20260618-4a38d19e",
+      "possible_event_id": "event-معرض-في-تتبّع-ذكريات-غامرة",
+      "conflict_fields": [
+        "venue"
+      ],
+      "title_key": "تتبع ذكريات غامره في معرض",
+      "venue_key": "جده",
+      "candidate_source": "visitsaudi.com",
+      "existing_source": "visitsaudi.com",
+      "candidate_starts_at": "2026-06-18T00:00:00+03:00",
+      "existing_starts_at": "2026-06-18T00:00:00+03:00",
+      "date_gap_days": 0,
+      "start_date_drift_days": 0
+    },
     {
       "kind": "exact-title-city-venue-conflict",
       "candidate_id": "candidate-visit-saudi-seasons-six-kings-slam-20261021-9f5e0969",
@@ -77,9 +109,164 @@
   ],
   "published": [
     {
-      "candidate_id": "candidate-umm-al-qura-events-الفعالية-التوعوية-بمناسبة-اليوم-العالمي-للصحة-النفسية-20261011-9ecf274f",
-      "event_id": "event-الفعالية-التوعوية-بمناسبة-اليوم-العالمي-للصحة-النفسية",
-      "title": "الفعالية التوعوية بمناسبة اليوم العالمي للصحة النفسية"
+      "candidate_id": "candidate-visit-saudi-calendar-pdf-الاخطبوطية-كيدز-20260925-4a38d19e",
+      "event_id": "event-الاخطبوطية-كيدز",
+      "title": "الاخطبوطية كيدز"
+    },
+    {
+      "candidate_id": "candidate-visit-saudi-calendar-pdf-ربع-تون-20261007-4a38d19e",
+      "event_id": "event-ربع-تون",
+      "title": "ربع تون"
+    },
+    {
+      "candidate_id": "candidate-umm-al-qura-events-مهارات-التعامل-مع-الضغوط-الدراسية-وتعزيز-الصحة-النفسية-20261011-85a1f9c8",
+      "event_id": "event-مهارات-التعامل-مع-الضغوط-الدراسية-وتعزيز-الصحة-النفسية",
+      "title": "مهارات التعامل مع الضغوط الدراسية وتعزيز الصحة النفسية"
+    },
+    {
+      "candidate_id": "candidate-umm-al-qura-events-التطوع-وخدمة-المجتمع-20261012-7e59639d",
+      "event_id": "event-التطوع-وخدمة-المجتمع",
+      "title": "التطوع وخدمة المجتمع"
+    },
+    {
+      "candidate_id": "candidate-umm-al-qura-events-توصيف-المقرر-وأساسيات-صياغة-نواتج-التعلم-20261013-54d3b96d",
+      "event_id": "event-توصيف-المقرر-وأساسيات-صياغة-نواتج-التعلم",
+      "title": "توصيف المقرر وأساسيات صياغة نواتج التعلم"
+    },
+    {
+      "candidate_id": "candidate-visit-saudi-calendar-pdf-عرض-بوش-بشاشة-ستاند-أب-كوميدي-20261015-4a38d19e",
+      "event_id": "event-عرض-بوش-بشاشة-ستاند-أب-كوميدي",
+      "title": "عرض بوش بشاشة ستاند أب كوميدي"
+    },
+    {
+      "candidate_id": "candidate-visit-saudi-calendar-pdf-سفرجل-في-جدة-20261015-4a38d19e",
+      "event_id": "event-سفرجل-في-جدة",
+      "title": "سفرجل في جدة"
+    },
+    {
+      "candidate_id": "candidate-visit-saudi-calendar-stand-up-comedy-shows-this-weekend-from-exit-thmanyah-20261015-e79bb314",
+      "event_id": "event-stand-up-comedy-shows-this-weekend-from-exit-thmanyah",
+      "title": "Stand Up Comedy Shows This Weekend from Exit Thmanyah"
+    },
+    {
+      "candidate_id": "candidate-visit-saudi-calendar-pdf-ليلة-ستاند-اب-بالانقليزية-من-مخرج-ثمانية-20261016-4a38d19e",
+      "event_id": "event-ليلة-ستاند-اب-بالانقليزية-من-مخرج-ثمانية",
+      "title": "ليلة ستاند اب بالانقليزية من مخرج ثمانية"
+    },
+    {
+      "candidate_id": "candidate-visit-saudi-calendar-pdf-أمسية-كوبليه-في-الخبر-20261016-4a38d19e",
+      "event_id": "event-أمسية-كوبليه-في-الخبر",
+      "title": "أمسية كوبليه في الخبر"
+    },
+    {
+      "candidate_id": "candidate-visit-saudi-calendar-pdf-نهائيات-fifae-26-20261016-4a38d19e",
+      "event_id": "event-نهائيات-fifae-26",
+      "title": "نهائيات FIFAe 26"
+    },
+    {
+      "candidate_id": "candidate-visit-saudi-calendar-pdf-عرض-ستاند-أب-كوميدي-مع-صلاح-الدالي-20261016-4a38d19e",
+      "event_id": "event-عرض-ستاند-أب-كوميدي-مع-صلاح-الدالي",
+      "title": "عرض ستاند أب كوميدي مع صلاح الدالي"
+    },
+    {
+      "candidate_id": "candidate-visit-saudi-calendar-pdf-فينا-نحكي؟-عرض-ستاند-أب-كوميدي-لجون-أشقر-20261020-4a38d19e",
+      "event_id": "event-فينا-نحكي؟-عرض-ستاند-أب-كوميدي-لجون-أشقر",
+      "title": "”فينا نحكي؟“ عرض ستاند أب كوميدي لجون أشقر"
+    },
+    {
+      "candidate_id": "candidate-ithra-events-theatrical-readings-20261021-de8aa7da",
+      "event_id": "event-theatrical-readings",
+      "title": "Theatrical Readings"
+    },
+    {
+      "candidate_id": "candidate-visit-saudi-calendar-pdf-حفل-فضل-شاكر-20261022-4a38d19e",
+      "event_id": "event-حفل-فضل-شاكر",
+      "title": "حفل فضل شاكر"
+    },
+    {
+      "candidate_id": "candidate-visit-saudi-calendar-pdf-عبد-في-صبيح-عرض-ستاند-أب-كوميدي-20261022-4a38d19e",
+      "event_id": "event-عبد-في-صبيح-عرض-ستاند-أب-كوميدي",
+      "title": "عبد في صبيح - عرض ستاند أب كوميدي"
+    },
+    {
+      "candidate_id": "candidate-visit-saudi-calendar-pdf-عبد-في-صبيح-عرض-ستاند-أب-كوميدي-20261023-4a38d19e",
+      "event_id": "event-عبد-في-صبيح-عرض-ستاند-أب-كوميدي-2",
+      "title": "عبد في صبيح - عرض ستاند أب كوميدي"
+    },
+    {
+      "candidate_id": "candidate-visit-saudi-calendar-pdf-أكمل-الفراغ-التالي-20261024-4a38d19e",
+      "event_id": "event-أكمل-الفراغ-التالي",
+      "title": "أكمل الفراغ التالي"
+    },
+    {
+      "candidate_id": "candidate-visit-saudi-calendar-pdf-شتاء-اثراء-20261029-4a38d19e",
+      "event_id": "event-شتاء-اثراء",
+      "title": "شتاء اثراء"
+    },
+    {
+      "candidate_id": "candidate-visit-saudi-calendar-pdf-ليلة-البنات-الكوميدية-من-مخرج-ثمانية-20261030-4a38d19e",
+      "event_id": "event-ليلة-البنات-الكوميدية-من-مخرج-ثمانية",
+      "title": "ليلة البنات الكوميدية من مخرج ثمانية"
+    },
+    {
+      "candidate_id": "candidate-visit-saudi-calendar-pdf-المكسيك-ضد-العالم-20261031-4a38d19e",
+      "event_id": "event-المكسيك-ضد-العالم",
+      "title": "المكسيك ضد العالم"
+    },
+    {
+      "candidate_id": "candidate-visit-saudi-calendar-pdf-نسيم-الخبر-20261101-4a38d19e",
+      "event_id": "event-نسيم-الخبر",
+      "title": "نسيم الخبر"
+    },
+    {
+      "candidate_id": "candidate-visit-saudi-calendar-pdf-سوالف-الحي-20261101-4a38d19e",
+      "event_id": "event-سوالف-الحي",
+      "title": "سوالف الحي"
+    },
+    {
+      "candidate_id": "candidate-visit-saudi-calendar-pdf-كراون-جول-20261107-4a38d19e",
+      "event_id": "event-كراون-جول",
+      "title": "كراون جول"
+    },
+    {
+      "candidate_id": "candidate-ithra-events-spend-an-hour-with-one-of-the-theater-experts-20261111-66ab8291",
+      "event_id": "event-spend-an-hour-with-one-of-the-theater-experts",
+      "title": "Spend an hour with one of the theater experts"
+    },
+    {
+      "candidate_id": "candidate-visit-saudi-calendar-pdf-مهرجان-القادسية-20261113-4a38d19e",
+      "event_id": "event-مهرجان-القادسية",
+      "title": "مهرجان القادسية"
+    },
+    {
+      "candidate_id": "candidate-visit-saudi-calendar-pdf-عرض-كوميدي-مع-ماريو-يزبك-20261118-4a38d19e",
+      "event_id": "event-عرض-كوميدي-مع-ماريو-يزبك",
+      "title": "عرض كوميدي مع ماريو يزبك"
+    },
+    {
+      "candidate_id": "candidate-visit-saudi-calendar-pdf-الضحك-في-الترجمة-عرض-كوميدي-مع-شون-شدياق-20261120-4a38d19e",
+      "event_id": "event-الضحك-في-الترجمة-عرض-كوميدي-مع-شون-شدياق",
+      "title": "الضحك في الترجمة - عرض كوميدي مع شون شدياق"
+    },
+    {
+      "candidate_id": "candidate-visit-saudi-calendar-pdf-واقف-momos-20261127-4a38d19e",
+      "event_id": "event-واقف-momos",
+      "title": "واقف! Momos"
+    },
+    {
+      "candidate_id": "candidate-visit-saudi-calendar-pdf-على-موج-الخبر-20261201-4a38d19e",
+      "event_id": "event-على-موج-الخبر",
+      "title": "على موج الخبر"
+    },
+    {
+      "candidate_id": "candidate-ithra-events-learn-more-about-ithra-short-plays-contest-2027-20261209-151efb36",
+      "event_id": "event-learn-more-about-ithra-short-plays-contest-2027",
+      "title": "Learn more about Ithra Short Plays Contest 2027"
+    },
+    {
+      "candidate_id": "candidate-visit-saudi-calendar-pdf-بطولة-الفنون-القتالية-20261211-4a38d19e",
+      "event_id": "event-بطولة-الفنون-القتالية",
+      "title": "بطولة الفنون القتالية"
     }
   ],
   "linked_existing": [
@@ -201,18 +388,6 @@
       "candidate_id": "candidate-discover-aseer-events-muftaha-district-20260524-79f730f2",
       "event_id": "event-muftaha-district",
       "title": "Muftaha District",
-      "reason": "already linked to catalog event"
-    },
-    {
-      "candidate_id": "candidate-visit-saudi-calendar-pdf-معرض-قلب-البحر-20260604-4a38d19e",
-      "event_id": "event-معرض-قلب-البحر",
-      "title": "معرض قلب البحر",
-      "reason": "already linked to catalog event"
-    },
-    {
-      "candidate_id": "candidate-visit-saudi-calendar-pdf-معرض-في-تتبّع-ذكريات-غامرة-20260618-4a38d19e",
-      "event_id": "event-معرض-في-تتبّع-ذكريات-غامرة",
-      "title": "معرض في تتبّع ذكريات غامرة",
       "reason": "already linked to catalog event"
     },
     {
@@ -582,6 +757,12 @@
       "reason": "already linked to catalog event"
     },
     {
+      "candidate_id": "candidate-visit-saudi-calendar-pdf-سيرك-فونتانا-20260916-4a38d19e",
+      "event_id": "event-سيرك-فونتانا",
+      "title": "سيرك فونتانا",
+      "reason": "trusted duplicate linked to existing catalog event"
+    },
+    {
       "candidate_id": "candidate-visit-saudi-calendar-pdf-دوري-الملوك-mena-20260918-4a38d19e",
       "event_id": "event-دوري-الملوك-mena",
       "title": "دوري الملوك MENA",
@@ -678,12 +859,6 @@
       "reason": "already linked to catalog event"
     },
     {
-      "candidate_id": "candidate-hayy-jameel-events-hayy-markets-luqta-market-pre-loved-pop-up-20261007-7b184a0c",
-      "event_id": "event-hayy-markets-luqta-market-pre-loved-pop-up",
-      "title": "Hayy Markets | Luqta Market: Pre-Loved Pop-Up",
-      "reason": "already linked to catalog event"
-    },
-    {
       "candidate_id": "candidate-hayy-jameel-events-hayy-cinema-october-2026-20261007-84cc2d26",
       "event_id": "event-hayy-cinema-october-2026",
       "title": "Hayy Cinema | October 2026",
@@ -711,6 +886,12 @@
       "candidate_id": "candidate-riyadh-city-events-wpc-energy-congress-20261011-1602e535",
       "event_id": "event-wpc-energy-congress",
       "title": "WPC Energy Congress",
+      "reason": "already linked to catalog event"
+    },
+    {
+      "candidate_id": "candidate-umm-al-qura-events-الفعالية-التوعوية-بمناسبة-اليوم-العالمي-للصحة-النفسية-20261011-9ecf274f",
+      "event_id": "event-الفعالية-التوعوية-بمناسبة-اليوم-العالمي-للصحة-النفسية",
+      "title": "الفعالية التوعوية بمناسبة اليوم العالمي للصحة النفسية",
       "reason": "already linked to catalog event"
     },
     {
@@ -768,16 +949,10 @@
       "reason": "already linked to catalog event"
     },
     {
-      "candidate_id": "candidate-ithra-events-childrens-museum-story-time-20261012-ada8b9db",
-      "event_id": "event-childrens-museum-story-time",
-      "title": "Children's Museum Story Time",
-      "reason": "already linked to catalog event"
-    },
-    {
-      "candidate_id": "candidate-ithra-events-spot-of-inspiration-20261012-5bac584c",
-      "event_id": "event-spot-of-inspiration",
-      "title": "Spot of Inspiration",
-      "reason": "already linked to catalog event"
+      "candidate_id": "candidate-ithra-events-bedayat-beginnings-of-saudi-art-movement-20261012-e0a239ef",
+      "event_id": "event-bedayat-beginnings-of-saudi-art-movement",
+      "title": "Bedayat: Beginnings of Saudi Art Movement",
+      "reason": "trusted duplicate linked to existing catalog event"
     },
     {
       "candidate_id": "candidate-riyadh-city-events-global-space-connectivity-and-sustainability-events-20261012-a62c0cbd",
@@ -789,6 +964,18 @@
       "candidate_id": "candidate-ithra-events-childrens-art-studio-20261012-2bf92d17",
       "event_id": "event-childrens-art-studio",
       "title": "Children's Art Studio",
+      "reason": "already linked to catalog event"
+    },
+    {
+      "candidate_id": "candidate-ithra-events-childrens-museum-story-time-20261012-ada8b9db",
+      "event_id": "event-childrens-museum-story-time",
+      "title": "Children's Museum Story Time",
+      "reason": "already linked to catalog event"
+    },
+    {
+      "candidate_id": "candidate-ithra-events-spot-of-inspiration-20261012-5bac584c",
+      "event_id": "event-spot-of-inspiration",
+      "title": "Spot of Inspiration",
       "reason": "already linked to catalog event"
     },
     {
@@ -1071,6 +1258,12 @@
       "candidate_id": "candidate-mdlbeast-events-unstable-20261016-5647df2e",
       "event_id": "event-unstable",
       "title": "Unstable",
+      "reason": "already linked to catalog event"
+    },
+    {
+      "candidate_id": "candidate-visit-saudi-calendar-pdf-ليلة-ستاند-أب-كوميدي-في-جدة-20261016-4a38d19e",
+      "event_id": "event-عرض-ستاند-أب-كوميدي-مع-صلاح-الدالي",
+      "title": "ليلة ستاند أب كوميدي في جدة",
       "reason": "trusted duplicate linked to existing catalog event"
     },
     {
@@ -1365,7 +1558,7 @@
       "candidate_id": "candidate-mdlbeast-events-beast-house-20261030-83049a2a",
       "event_id": "event-beast-house",
       "title": "Beast House",
-      "reason": "trusted duplicate linked to existing catalog event"
+      "reason": "already linked to catalog event"
     },
     {
       "candidate_id": "candidate-saudi-water-authority-events-world-conference-on-desalination-and-water-reuse-20261101-a25a65b2",
@@ -2022,6 +2215,12 @@
       "reason": "already linked to catalog event"
     },
     {
+      "candidate_id": "candidate-visit-saudi-calendar-pdf-in-act-act-xii-new-years-eve-20261231-4a38d19e",
+      "event_id": "event-in-act-act-xii-new-years-eve",
+      "title": "IN ACT - ACT XII - NEW YEAR'S EVE",
+      "reason": "trusted duplicate linked to existing catalog event"
+    },
+    {
       "candidate_id": "candidate-umm-al-qura-events-الترشح-للدبلوم-المتوسط-في-أمن-المعلومات-في-الجبيل-بالتعاون-مع-كليات-الفي-20261231-c4b0ec06",
       "event_id": "event-الترشح-للدبلوم-المتوسط-في-أمن-المعلومات-في-الجبيل-بالتعاون-مع-كليات-الفي",
       "title": "الترشح للدبلوم المتوسط في أمن المعلومات في الجبيل بالتعاون مع كليات الفيحاء الأهلية",
@@ -2204,9 +2403,18 @@
   ],
   "blocked": [
     {
-      "candidate_id": "candidate-eventbrite-saudi-25th-wpc-energy-congress-20261011-5909609b",
-      "title": "25TH WPC Energy Congress",
-      "reason": "unknown category requires review"
+      "candidate_id": "candidate-visit-saudi-calendar-pdf-معرض-قلب-البحر-20260604-4a38d19e",
+      "title": "معرض قلب البحر",
+      "reason": "possible duplicate requires review: exact-title-city-venue-conflict",
+      "kind": "exact-title-city-venue-conflict",
+      "possible_event_id": "event-معرض-قلب-البحر"
+    },
+    {
+      "candidate_id": "candidate-visit-saudi-calendar-pdf-معرض-في-تتبّع-ذكريات-غامرة-20260618-4a38d19e",
+      "title": "معرض في تتبّع ذكريات غامرة",
+      "reason": "possible duplicate requires review: exact-title-city-venue-conflict",
+      "kind": "exact-title-city-venue-conflict",
+      "possible_event_id": "event-معرض-في-تتبّع-ذكريات-غامرة"
     },
     {
       "candidate_id": "candidate-saudicon-events-annual-international-geotechnical-innovation-conference-igic-2026-20261014-8ea8aaa9",

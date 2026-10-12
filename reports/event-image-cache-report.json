@@ -1,18 +1,31 @@
 {
-  "generated_at": "2026-10-11T09:33:56.023Z",
+  "generated_at": "2026-10-12T10:03:16.417Z",
   "events_file": "dist/events.json",
   "manifest": "data/event_image_cache_manifest.json",
   "image_dir": "dist/assets/event-images",
   "totals": {
     "targets": 500,
-    "cached_total": 895,
-    "fetched": 0,
-    "reused": 494,
+    "cached_total": 897,
+    "fetched": 2,
+    "reused": 492,
     "failed": 6,
     "skipped_recent_failures": 0,
-    "remembered_failures": 30
+    "remembered_failures": 31
   },
-  "fetched": [],
+  "fetched": [
+    {
+      "source_url": "https://www.ithra.com/application/files/cache/thumbnails/9520c7ac094aada70a66eda3fdf5f7a6.jpg",
+      "file": "dist/assets/event-images/theatrical-readings-6a73f7612c.jpg",
+      "bytes": 332702,
+      "events": 1
+    },
+    {
+      "source_url": "https://www.ithra.com/application/files/cache/thumbnails/1424795a34dc316e58cf040bc520f0d6.jpg",
+      "file": "dist/assets/event-images/learn-more-about-ithra-short-plays-contest-2027-afe28cebff.jpg",
+      "bytes": 148333,
+      "events": 1
+    }
+  ],
   "reused": [
     {
       "source_url": "https://music.moc.gov.sa/-/media/Project/Ministries/Moc/Events/Artboard1.png",
@@ -257,7 +270,7 @@
     {
       "source_url": "https://uqu.edu.sa/assets/images/uqu-gate.jpeg",
       "file": "dist/assets/event-images/الشهادة-الدولية-للحاسب-والإنترنت-ic3-a46ba6d2eb.jpg",
-      "events": 117
+      "events": 120
     },
     {
       "source_url": "https://scth.scene7.com/is/image/scth/buraydah-dates-carnival-qassim?wid=1400&hei=788&fit=constrain&fmt=webp",
@@ -575,11 +588,6 @@
       "events": 1
     },
     {
-      "source_url": "https://hayyjameel.org/wp-content/uploads/2026/10/DSC01033-1100x500.jpg",
-      "file": "dist/assets/event-images/hayy-markets-luqta-market-pre-loved-pop-up-d289a2a002.jpg",
-      "events": 1
-    },
-    {
       "source_url": "https://hayyjameel.org/wp-content/uploads/2026/10/202610_ATER_Banner-1100x500.png",
       "file": "dist/assets/event-images/jameel-library-opening-programme-at-the-edge-of-renewal-with-the-khale-7b741eb2e7.png",
       "events": 1
@@ -638,6 +646,11 @@
       "source_url": "https://api.riyadh.sa/sites/default/files/styles/medium/public/2025-12/king-salman-stadium-ezgif.com-webp-to-jpg-converter.jpg?itok=TGhUV_7t",
       "file": "dist/assets/event-images/world-stadiums-and-arenas-summit-b615e34744.jpg",
       "events": 1
+    },
+    {
+      "source_url": "https://www.datocms-assets.com/66357/1751801189-mdlbeast.png?auto=format&fit=max&w=1200",
+      "file": "dist/assets/event-images/unstable-ba5c599823.avif",
+      "events": 5
     },
     {
       "source_url": "https://meenterpriseai.com/whatsapp.png",
@@ -738,11 +751,6 @@
       "source_url": "https://hayyjameel.org/wp-content/uploads/2026/09/IMG-6538-scaled-aspect-ratio-1688-783-1100x500.jpg",
       "file": "dist/assets/event-images/hayy-makers-open-day-plastic-cap-mural-90f0ee58f1.jpg",
       "events": 1
-    },
-    {
-      "source_url": "https://www.datocms-assets.com/66357/1751801189-mdlbeast.png?auto=format&fit=max&w=1200",
-      "file": "dist/assets/event-images/unstable-ba5c599823.avif",
-      "events": 5
     },
     {
       "source_url": "https://www.ithra.com/application/files/cache/thumbnails/9b5bc052fe8347923f82e94ae6c8ea81.png",
@@ -852,6 +860,11 @@
     {
       "source_url": "https://api.riyadh.sa/sites/default/files/styles/medium/public/2026-02/AEKwR6.jpg?itok=KoKbWOoK",
       "file": "dist/assets/event-images/misk-global-forum-de642bca53.jpg",
+      "events": 1
+    },
+    {
+      "source_url": "https://www.ithra.com/application/files/cache/thumbnails/032e0e893493535bb537e8d32b29432a.jpg",
+      "file": "dist/assets/event-images/spend-an-hour-with-one-of-the-theater-experts-0272b93b0a.jpg",
       "events": 1
     },
     {
@@ -1162,6 +1175,11 @@
     {
       "source_url": "https://api.riyadh.sa/sites/default/files/styles/medium/public/2025-12/erter%20%2817%29.jpg?itok=GJOsde_n",
       "file": "dist/assets/event-images/saudi-procurement-conference-004e3ad949.jpg",
+      "events": 1
+    },
+    {
+      "source_url": "https://hayyjameel.org/wp-content/uploads/2026/10/DSC01033-1100x500.jpg",
+      "file": "dist/assets/event-images/hayy-markets-luqta-market-pre-loved-pop-up-d289a2a002.jpg",
       "events": 1
     },
     {
@@ -2468,21 +2486,6 @@
       "source_url": "https://www.ithra.com/application/files/cache/thumbnails/9c5873773d4292a9e3ae3723253da66b.jpg",
       "file": "dist/assets/event-images/documentary-competition-group-4-c5f1d56372.jpg",
       "events": 1
-    },
-    {
-      "source_url": "https://scth.scene7.com/is/image/scth/dakah-in-abha?wid=1400&hei=788&fit=constrain&fmt=webp",
-      "file": "dist/assets/event-images/dakah-in-abha-7016efcf1f.webp",
-      "events": 1
-    },
-    {
-      "source_url": "https://api.riyadh.sa/sites/default/files/styles/medium/public/2026-04/GyN7i2hWYAEFU3X.jpeg?itok=of7aIuP0",
-      "file": "dist/assets/event-images/prince-faisal-bin-fahd-art-exhibition-summer-2026-8216b3ee07.jpg",
-      "events": 1
-    },
-    {
-      "source_url": "https://scth.scene7.com/is/image/scth/al-balad-cinema?wid=1400&hei=788&fit=constrain&fmt=webp",
-      "file": "dist/assets/event-images/al-balad-cinema-2f95f8f37c.webp",
-      "events": 1
     }
   ],
   "rejected_removed": [],
@@ -2490,50 +2493,51 @@
   "skipped_recent_failures": [],
   "failed": [
     {
+      "source_url": "https://s7g10.scene7.com/is/image/rcu/sunset-stillness-meditation-sound-immersion:landscape-16x9?$Responsive$&fit=stretch&fmt=webp&wid=1920",
+      "events": 1,
+      "reason": "HTTP 403",
+      "failure_kind": "access-denied",
+      "retry_after": "2026-10-13T10:03:16.417Z"
+    },
+    {
       "source_url": "https://s7g10.scene7.com/is/image/rcu/stargazing-at-alula-fort:landscape-16x9?$Responsive$&fit=stretch&fmt=webp&wid=1920",
       "events": 1,
       "reason": "HTTP 403",
       "failure_kind": "access-denied",
-      "retry_after": "2026-10-12T09:33:56.023Z"
-    },
-    {
-      "source_url": "https://s7g10.scene7.com/is/image/rcu/fei2:landscape-16x9?$Responsive$&fit=stretch&fmt=webp&wid=1920",
-      "events": 1,
-      "reason": "HTTP 403",
-      "failure_kind": "access-denied",
-      "retry_after": "2026-10-12T09:33:56.023Z"
+      "retry_after": "2026-10-13T10:03:16.417Z"
     },
     {
       "source_url": "https://s7g10.scene7.com/is/image/rcu/leonid-meteor-shower-at-jabal-ikmah:landscape-16x9?$Responsive$&fit=stretch&fmt=webp&wid=1920",
       "events": 1,
       "reason": "HTTP 403",
       "failure_kind": "access-denied",
-      "retry_after": "2026-10-12T09:33:56.023Z"
+      "retry_after": "2026-10-13T10:03:16.417Z"
     },
     {
-      "source_url": "https://s7g10.scene7.com/is/image/rcu/sunset-stillness-meditation-sound-immersion:landscape-16x9?$Responsive$&fit=stretch&fmt=webp&wid=1920",
+      "source_url": "https://s7g10.scene7.com/is/image/rcu/fei2:landscape-16x9?$Responsive$&fit=stretch&fmt=webp&wid=1920",
       "events": 1,
       "reason": "HTTP 403",
       "failure_kind": "access-denied",
-      "retry_after": "2026-10-12T09:33:56.023Z"
+      "retry_after": "2026-10-13T10:03:16.417Z"
     },
     {
       "source_url": "https://cdn.rfecc.sa/wp-content/uploads/mec/qr_898ea2449274454e42895b52b18c6f68.png",
       "events": 1,
       "reason": "HTTP 403",
       "failure_kind": "access-denied",
-      "retry_after": "2026-10-12T09:33:56.023Z"
+      "retry_after": "2026-10-13T10:03:16.417Z"
     },
     {
       "source_url": "https://api.riyadh.sa/sites/default/files/styles/medium/public/2026-07/er%20%2859%29.jpg?itok=a33APdGm",
       "events": 1,
       "reason": "not-image text/html; charset=utf-8",
       "failure_kind": "source-returned-html",
-      "retry_after": "2026-10-12T09:33:56.023Z"
+      "retry_after": "2026-10-13T10:03:16.417Z"
     }
   ],
   "requires_rebuild": true,
   "rebuild_reasons": [
+    "fetched:2",
     "new-failures:6"
   ]
 }

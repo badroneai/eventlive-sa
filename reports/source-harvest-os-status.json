@@ -1,22 +1,22 @@
 {
   "schema": "eventlive.harvest-os-status.v1",
-  "generated_at": "2026-10-11T09:44:01.342Z",
+  "generated_at": "2026-10-12T10:16:56.688Z",
   "status": "NEEDS_WORK",
   "operating_rule": "Probe before new sources; sample before full harvest; Raw collection is not publication; discovery-only never auto-publishes.",
   "totals": {
     "sources": 88,
-    "candidates": 383,
-    "matched_candidates": 356,
+    "candidates": 417,
+    "matched_candidates": 389,
     "auto_publish_sources": 15,
     "candidate_only_sources": 12,
     "partnership_required_sources": 5,
     "blocked_or_closed_sources": 0,
     "manual_review_sources": 56,
-    "collection_attempted": 29,
-    "productive_sources": 17,
-    "collector_errors": 6,
+    "collection_attempted": 41,
+    "productive_sources": 16,
+    "collector_errors": 7,
     "chronic_collector_errors": 6,
-    "transient_collector_errors": 0
+    "transient_collector_errors": 1
   },
   "policies": {
     "partnership_required": 5,
@@ -25,69 +25,76 @@
     "manual_review": 56
   },
   "candidates_by_gate": {
-    "catalog-review": 356,
-    "source-evidence": 24,
-    "duplicate-review": 3
+    "catalog-review": 389,
+    "duplicate-review": 5,
+    "source-evidence": 23
   },
   "funnel": {
-    "discovered_this_run": 196,
-    "candidate_queue": 383,
-    "evaluated_for_publish": 383,
-    "linked_existing": 353,
-    "published_new": 1,
-    "blocked": 29,
+    "discovered_this_run": 218,
+    "candidate_queue": 417,
+    "evaluated_for_publish": 417,
+    "linked_existing": 355,
+    "published_new": 32,
+    "blocked": 30,
     "secondary_promoted": 0,
-    "secondary_still_blocked": 30
+    "secondary_still_blocked": 62
   },
   "blocked_reasons": {
-    "unknown category requires review": 3,
+    "possible duplicate requires review: exact-title-city-venue-conflict": 4,
     "publication gate source-evidence is not auto-publishable": 21,
-    "possible duplicate requires review: exact-title-city-venue-conflict": 2,
     "linked catalog row event-feena-nehke-stand-up-comedy-by-john-achkar was superseded by dedupe": 1,
     "possible duplicate requires review: exact-title-city-source-conflict": 1,
+    "unknown category requires review": 2,
     "linked catalog row event-music-festival-mdlbeast-soundstorm was superseded by dedupe": 1
   },
   "collector_error_sources": [
     {
       "id": "moc-cultural-calendar",
       "note": "collector-error: fetch failed [ETIMEDOUT, ENETUNREACH]; fetch failed [ETIMEDOUT, ENETUNREACH]",
-      "error_streak": 50,
+      "error_streak": 51,
       "kind": "chronic",
       "attempted_this_run": true
     },
     {
       "id": "mos-events",
       "note": "collector-error: fetch failed [ETIMEDOUT, ENETUNREACH]; live browser recovery deferred by recent failed probe cooldown",
-      "error_streak": 50,
+      "error_streak": 51,
       "kind": "chronic",
       "attempted_this_run": true
     },
     {
       "id": "moc-cultural-subportals",
       "note": "collector-error: fetch failed [UND_ERR_CONNECT_TIMEOUT]; fetch failed [UND_ERR_CONNECT_TIMEOUT]",
-      "error_streak": 50,
+      "error_streak": 51,
       "kind": "chronic",
       "attempted_this_run": true
     },
     {
       "id": "saudi-pro-league-fixtures",
       "note": "collector-error: fetch failed [EAI_AGAIN]",
-      "error_streak": 30,
+      "error_streak": 31,
       "kind": "chronic",
       "attempted_this_run": true
     },
     {
       "id": "tuwaiq-academy-bootcamps",
       "note": "collector-error: HTTP 403",
-      "error_streak": 27,
+      "error_streak": 28,
       "kind": "chronic",
       "attempted_this_run": true
     },
     {
       "id": "monshaat-events",
       "note": "collector-error: fetch failed [UND_ERR_CONNECT_TIMEOUT]; fetch failed [UND_ERR_CONNECT_TIMEOUT]",
-      "error_streak": 18,
+      "error_streak": 19,
       "kind": "chronic",
+      "attempted_this_run": true
+    },
+    {
+      "id": "asharqia-chamber-events",
+      "note": "fetch failed [UND_ERR_CONNECT_TIMEOUT]; page.goto: Timeout 30000ms exceeded.",
+      "error_streak": 1,
+      "kind": "transient",
       "attempted_this_run": true
     }
   ],

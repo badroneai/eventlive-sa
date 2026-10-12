@@ -1,11 +1,11 @@
 # Visit Saudi Calendar Enrichment Report
 
-- generated_at: 2026-10-11T09:28:56.994Z
-- targets: 49
-- candidates: 13
-- enriched: 49
-- fetched: 49
-- images: 47
+- generated_at: 2026-10-12T09:56:23.524Z
+- targets: 50
+- candidates: 14
+- enriched: 50
+- fetched: 50
+- images: 48
 - fetch_failures: 0
 
 ## Enriched
@@ -50,6 +50,7 @@
 - Tony Abou Jaoude Live in Jeddah - official-page-html - image=yes - features=7
 - Al Milwah Falcon Race - official-page-html - image=yes - features=7
 - Alaa El Sheikh Live in Riyadh - official-page-html - image=yes - features=7
+- Stand Up Comedy Shows This Weekend from Exit Thmanyah - official-page-html - image=yes - features=7
 - Alaa El Sheikh Live in Jeddah - official-page-html - image=yes - features=7
 - UCI URBAN CYCLING WORLD CHAMPIONSHIPS - official-page-html - image=yes - features=7
 - Wagef! Nemr Live Comedy Show in Jeddah - official-page-html - image=yes - features=7

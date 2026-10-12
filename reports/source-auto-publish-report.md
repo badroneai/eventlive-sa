@@ -1,26 +1,57 @@
 # EventLive Source Auto Publish Report
 
-- published_at: 2026-10-11T09:26:53.181Z
+- published_at: 2026-10-12T09:54:26.645Z
 - dry_run: false
 - include_partner: true
-- candidates_seen: 383
-- published_new: 1
-- linked_existing: 353
-- blocked_remaining: 29
-- duplicate_review_alerts: 3
+- candidates_seen: 417
+- published_new: 32
+- linked_existing: 355
+- blocked_remaining: 30
+- duplicate_review_alerts: 5
 
 ## Blocked summary
 
-- unknown category requires review: 3
+- possible duplicate requires review: exact-title-city-venue-conflict: 4
 - publication gate source-evidence is not auto-publishable: 21
-- possible duplicate requires review: exact-title-city-venue-conflict: 2
 - linked catalog row event-feena-nehke-stand-up-comedy-by-john-achkar was superseded by dedupe: 1
 - possible duplicate requires review: exact-title-city-source-conflict: 1
+- unknown category requires review: 2
 - linked catalog row event-music-festival-mdlbeast-soundstorm was superseded by dedupe: 1
 
 | Candidate | Status | Catalog event | Reason |
 |---|---|---|---|
-| candidate-umm-al-qura-events-الفعالية-التوعوية-بمناسبة-اليوم-العالمي-للصحة-النفسية-20261011-9ecf274f | published | event-الفعالية-التوعوية-بمناسبة-اليوم-العالمي-للصحة-النفسية | الفعالية التوعوية بمناسبة اليوم العالمي للصحة النفسية |
+| candidate-visit-saudi-calendar-pdf-الاخطبوطية-كيدز-20260925-4a38d19e | published | event-الاخطبوطية-كيدز | الاخطبوطية كيدز |
+| candidate-visit-saudi-calendar-pdf-ربع-تون-20261007-4a38d19e | published | event-ربع-تون | ربع تون |
+| candidate-umm-al-qura-events-مهارات-التعامل-مع-الضغوط-الدراسية-وتعزيز-الصحة-النفسية-20261011-85a1f9c8 | published | event-مهارات-التعامل-مع-الضغوط-الدراسية-وتعزيز-الصحة-النفسية | مهارات التعامل مع الضغوط الدراسية وتعزيز الصحة النفسية |
+| candidate-umm-al-qura-events-التطوع-وخدمة-المجتمع-20261012-7e59639d | published | event-التطوع-وخدمة-المجتمع | التطوع وخدمة المجتمع |
+| candidate-umm-al-qura-events-توصيف-المقرر-وأساسيات-صياغة-نواتج-التعلم-20261013-54d3b96d | published | event-توصيف-المقرر-وأساسيات-صياغة-نواتج-التعلم | توصيف المقرر وأساسيات صياغة نواتج التعلم |
+| candidate-visit-saudi-calendar-pdf-عرض-بوش-بشاشة-ستاند-أب-كوميدي-20261015-4a38d19e | published | event-عرض-بوش-بشاشة-ستاند-أب-كوميدي | عرض بوش بشاشة ستاند أب كوميدي |
+| candidate-visit-saudi-calendar-pdf-سفرجل-في-جدة-20261015-4a38d19e | published | event-سفرجل-في-جدة | سفرجل في جدة |
+| candidate-visit-saudi-calendar-stand-up-comedy-shows-this-weekend-from-exit-thmanyah-20261015-e79bb314 | published | event-stand-up-comedy-shows-this-weekend-from-exit-thmanyah | Stand Up Comedy Shows This Weekend from Exit Thmanyah |
+| candidate-visit-saudi-calendar-pdf-ليلة-ستاند-اب-بالانقليزية-من-مخرج-ثمانية-20261016-4a38d19e | published | event-ليلة-ستاند-اب-بالانقليزية-من-مخرج-ثمانية | ليلة ستاند اب بالانقليزية من مخرج ثمانية |
+| candidate-visit-saudi-calendar-pdf-أمسية-كوبليه-في-الخبر-20261016-4a38d19e | published | event-أمسية-كوبليه-في-الخبر | أمسية كوبليه في الخبر |
+| candidate-visit-saudi-calendar-pdf-نهائيات-fifae-26-20261016-4a38d19e | published | event-نهائيات-fifae-26 | نهائيات FIFAe 26 |
+| candidate-visit-saudi-calendar-pdf-عرض-ستاند-أب-كوميدي-مع-صلاح-الدالي-20261016-4a38d19e | published | event-عرض-ستاند-أب-كوميدي-مع-صلاح-الدالي | عرض ستاند أب كوميدي مع صلاح الدالي |
+| candidate-visit-saudi-calendar-pdf-فينا-نحكي؟-عرض-ستاند-أب-كوميدي-لجون-أشقر-20261020-4a38d19e | published | event-فينا-نحكي؟-عرض-ستاند-أب-كوميدي-لجون-أشقر | ”فينا نحكي؟“ عرض ستاند أب كوميدي لجون أشقر |
+| candidate-ithra-events-theatrical-readings-20261021-de8aa7da | published | event-theatrical-readings | Theatrical Readings |
+| candidate-visit-saudi-calendar-pdf-حفل-فضل-شاكر-20261022-4a38d19e | published | event-حفل-فضل-شاكر | حفل فضل شاكر |
+| candidate-visit-saudi-calendar-pdf-عبد-في-صبيح-عرض-ستاند-أب-كوميدي-20261022-4a38d19e | published | event-عبد-في-صبيح-عرض-ستاند-أب-كوميدي | عبد في صبيح - عرض ستاند أب كوميدي |
+| candidate-visit-saudi-calendar-pdf-عبد-في-صبيح-عرض-ستاند-أب-كوميدي-20261023-4a38d19e | published | event-عبد-في-صبيح-عرض-ستاند-أب-كوميدي-2 | عبد في صبيح - عرض ستاند أب كوميدي |
+| candidate-visit-saudi-calendar-pdf-أكمل-الفراغ-التالي-20261024-4a38d19e | published | event-أكمل-الفراغ-التالي | أكمل الفراغ التالي |
+| candidate-visit-saudi-calendar-pdf-شتاء-اثراء-20261029-4a38d19e | published | event-شتاء-اثراء | شتاء اثراء |
+| candidate-visit-saudi-calendar-pdf-ليلة-البنات-الكوميدية-من-مخرج-ثمانية-20261030-4a38d19e | published | event-ليلة-البنات-الكوميدية-من-مخرج-ثمانية | ليلة البنات الكوميدية من مخرج ثمانية |
+| candidate-visit-saudi-calendar-pdf-المكسيك-ضد-العالم-20261031-4a38d19e | published | event-المكسيك-ضد-العالم | المكسيك ضد العالم |
+| candidate-visit-saudi-calendar-pdf-نسيم-الخبر-20261101-4a38d19e | published | event-نسيم-الخبر | نسيم الخبر |
+| candidate-visit-saudi-calendar-pdf-سوالف-الحي-20261101-4a38d19e | published | event-سوالف-الحي | سوالف الحي |
+| candidate-visit-saudi-calendar-pdf-كراون-جول-20261107-4a38d19e | published | event-كراون-جول | كراون جول |
+| candidate-ithra-events-spend-an-hour-with-one-of-the-theater-experts-20261111-66ab8291 | published | event-spend-an-hour-with-one-of-the-theater-experts | Spend an hour with one of the theater experts |
+| candidate-visit-saudi-calendar-pdf-مهرجان-القادسية-20261113-4a38d19e | published | event-مهرجان-القادسية | مهرجان القادسية |
+| candidate-visit-saudi-calendar-pdf-عرض-كوميدي-مع-ماريو-يزبك-20261118-4a38d19e | published | event-عرض-كوميدي-مع-ماريو-يزبك | عرض كوميدي مع ماريو يزبك |
+| candidate-visit-saudi-calendar-pdf-الضحك-في-الترجمة-عرض-كوميدي-مع-شون-شدياق-20261120-4a38d19e | published | event-الضحك-في-الترجمة-عرض-كوميدي-مع-شون-شدياق | الضحك في الترجمة - عرض كوميدي مع شون شدياق |
+| candidate-visit-saudi-calendar-pdf-واقف-momos-20261127-4a38d19e | published | event-واقف-momos | واقف! Momos |
+| candidate-visit-saudi-calendar-pdf-على-موج-الخبر-20261201-4a38d19e | published | event-على-موج-الخبر | على موج الخبر |
+| candidate-ithra-events-learn-more-about-ithra-short-plays-contest-2027-20261209-151efb36 | published | event-learn-more-about-ithra-short-plays-contest-2027 | Learn more about Ithra Short Plays Contest 2027 |
+| candidate-visit-saudi-calendar-pdf-بطولة-الفنون-القتالية-20261211-4a38d19e | published | event-بطولة-الفنون-القتالية | بطولة الفنون القتالية |
 | candidate-moc-cultural-subportals-skill-development-initiative-20210714-10f7dc2c | linked-existing | event-skill-development-initiative | already linked to catalog event |
 | candidate-moc-cultural-subportals-sitar-20220921-cda2e068 | linked-existing | event-sitar | already linked to catalog event |
 | candidate-moc-cultural-subportals-urban-transformation-initiative-20241031-7a933cab | linked-existing | event-urban-transformation-initiative | already linked to catalog event |
@@ -41,8 +72,6 @@
 | candidate-hayy-jameel-events-hayy-arts-global-positioning-system-20260520-2414ba46 | linked-existing | event-hayy-arts | already linked to catalog event |
 | candidate-visit-saudi-calendar-pdf-كايف-المزرعة-20260524-4a38d19e | linked-existing | event-كايف-المزرعة | already linked to catalog event |
 | candidate-discover-aseer-events-muftaha-district-20260524-79f730f2 | linked-existing | event-muftaha-district | already linked to catalog event |
-| candidate-visit-saudi-calendar-pdf-معرض-قلب-البحر-20260604-4a38d19e | linked-existing | event-معرض-قلب-البحر | already linked to catalog event |
-| candidate-visit-saudi-calendar-pdf-معرض-في-تتبّع-ذكريات-غامرة-20260618-4a38d19e | linked-existing | event-معرض-في-تتبّع-ذكريات-غامرة | already linked to catalog event |
 | candidate-discover-aseer-events-aanab-farm-20260701-12941803 | linked-existing | event-aanab-farm | already linked to catalog event |
 | candidate-visit-saudi-calendar-pdf-الاخطبوطية-20260704-4a38d19e | linked-existing | event-الأخطبوطية | already linked to catalog event |
 | candidate-discover-aseer-events-shaaf-event-20260717-aaeb0284 | linked-existing | event-shaaf-event | already linked to catalog event |
@@ -104,6 +133,7 @@
 | candidate-tuwaiq-academy-bootcamps-معسكر-طويق-السيبراني-20260913-0881f1b9 | linked-existing | event-معسكر-طويق-السيبراني-2 | already linked to catalog event |
 | candidate-tuwaiq-academy-bootcamps-معسكر-حلول-الحوسبة-السحابية-aws-google-cloud-20260913-090a04a7 | linked-existing | event-معسكر-حلول-الحوسبة-السحابية-aws-google-cloud | already linked to catalog event |
 | candidate-tuwaiq-academy-bootcamps-معسكر-الذكاء-الاصطناعي-20260913-223671f0 | linked-existing | event-معسكر-الذكاء-الاصطناعي | already linked to catalog event |
+| candidate-visit-saudi-calendar-pdf-سيرك-فونتانا-20260916-4a38d19e | linked-existing | event-سيرك-فونتانا | trusted duplicate linked to existing catalog event |
 | candidate-visit-saudi-calendar-pdf-دوري-الملوك-mena-20260918-4a38d19e | linked-existing | event-دوري-الملوك-mena | already linked to catalog event |
 | candidate-tuwaiq-academy-bootcamps-معسكر-علم-البيانات-والذكاء-الاصطناعي-20260920-3a71a485 | linked-existing | event-معسكر-علم-البيانات-والذكاء-الاصطناعي | already linked to catalog event |
 | candidate-tuwaiq-academy-bootcamps-معسكر-الجرائم-السيبرانية-والتحقيق-الجنائي-الرقمي-المتقدم-20260920-6e2c36f8 | linked-existing | event-معسكر-الجرائم-السيبرانية-والتحقيق-الجنائي-الرقمي-المتقدم | already linked to catalog event |
@@ -120,12 +150,12 @@
 | candidate-tuwaiq-academy-bootcamps-معسكر-هندسة-الحوسبة-السحابية-باستخدام-google-cloud-20261004-8790e021 | linked-existing | event-معسكر-هندسة-الحوسبة-السحابية-باستخدام-google-cloud | already linked to catalog event |
 | candidate-tuwaiq-academy-bootcamps-معسكر-الدرونز-عالية-الأداء-20261004-c428ead9 | linked-existing | event-معسكر-الدرونز-عالية-الأداء | already linked to catalog event |
 | candidate-tuwaiq-academy-bootcamps-معسكر-الاستراتيجية-في-عصر-الذكاء-الاصطناعي-والتحول-الرقمي-20261005-c1f05c69 | linked-existing | event-معسكر-الاستراتيجية-في-عصر-الذكاء-الاصطناعي-والتحول-الرقمي | already linked to catalog event |
-| candidate-hayy-jameel-events-hayy-markets-luqta-market-pre-loved-pop-up-20261007-7b184a0c | linked-existing | event-hayy-markets-luqta-market-pre-loved-pop-up | already linked to catalog event |
 | candidate-hayy-jameel-events-hayy-cinema-october-2026-20261007-84cc2d26 | linked-existing | event-hayy-cinema-october-2026 | already linked to catalog event |
 | candidate-umm-al-qura-events-حراك-يعود-من-جديد-بداية-جديدة-وأثر-مستدام-20261007-1529f492 | linked-existing | event-حراك-يعود-من-جديد-بداية-جديدة-وأثر-مستدام | already linked to catalog event |
 | candidate-hayy-jameel-events-jameel-library-opening-programme-at-the-edge-of-renewal-with-the-khaleej-20261008-75328003 | linked-existing | event-jameel-library-opening-programme-at-the-edge-of-renewal-with-the-khaleej | already linked to catalog event |
 | candidate-hayy-jameel-events-hayy-makers-woodworking-course-level-1-with-ahmad-sofi-20261010-fe162909 | linked-existing | event-hayy-makers-woodworking-course-level-1-with-ahmad-sofi | already linked to catalog event |
 | candidate-riyadh-city-events-wpc-energy-congress-20261011-1602e535 | linked-existing | event-wpc-energy-congress | already linked to catalog event |
+| candidate-umm-al-qura-events-الفعالية-التوعوية-بمناسبة-اليوم-العالمي-للصحة-النفسية-20261011-9ecf274f | linked-existing | event-الفعالية-التوعوية-بمناسبة-اليوم-العالمي-للصحة-النفسية | already linked to catalog event |
 | candidate-riyadh-city-events-metal-steel-exhibition-fabex-20261011-5c36f064 | linked-existing | event-metal-steel-exhibition-fabex | already linked to catalog event |
 | candidate-riyadh-city-events-jewels-of-the-world-autumn-edition-20261011-0116d411 | linked-existing | event-jewels-of-the-world-autumn-edition | already linked to catalog event |
 | candidate-umm-al-qura-events-شهادة-محترف-الأعمال-المعتمد-في-السكرتارية-التنفيذيةcbp-es-20261011-13714727 | linked-existing | event-شهادة-محترف-الأعمال-المعتمد-في-السكرتارية-التنفيذيةcbp-es | already linked to catalog event |
@@ -135,10 +165,11 @@
 | candidate-ithra-events-printing-house-20261012-e56f4f89 | linked-existing | event-printing-house | already linked to catalog event |
 | candidate-ithra-events-tafasahu-make-room-20261012-562bc61d | linked-existing | event-tafasahu-make-room | already linked to catalog event |
 | candidate-ithra-events-tinkering-stations-20261012-5a2c4c0e | linked-existing | event-tinkering-stations | already linked to catalog event |
-| candidate-ithra-events-childrens-museum-story-time-20261012-ada8b9db | linked-existing | event-childrens-museum-story-time | already linked to catalog event |
-| candidate-ithra-events-spot-of-inspiration-20261012-5bac584c | linked-existing | event-spot-of-inspiration | already linked to catalog event |
+| candidate-ithra-events-bedayat-beginnings-of-saudi-art-movement-20261012-e0a239ef | linked-existing | event-bedayat-beginnings-of-saudi-art-movement | trusted duplicate linked to existing catalog event |
 | candidate-riyadh-city-events-global-space-connectivity-and-sustainability-events-20261012-a62c0cbd | linked-existing | event-global-space-connectivity-and-sustainability-events | already linked to catalog event |
 | candidate-ithra-events-childrens-art-studio-20261012-2bf92d17 | linked-existing | event-childrens-art-studio | already linked to catalog event |
+| candidate-ithra-events-childrens-museum-story-time-20261012-ada8b9db | linked-existing | event-childrens-museum-story-time | already linked to catalog event |
+| candidate-ithra-events-spot-of-inspiration-20261012-5bac584c | linked-existing | event-spot-of-inspiration | already linked to catalog event |
 | candidate-ithra-events-paint-like-an-artist-20261012-a67d8ec3 | linked-existing | event-paint-like-an-artist | already linked to catalog event |
 | candidate-ithra-events-emboss-printing-experience-20261012-2671d1ce | linked-existing | event-emboss-printing-experience | already linked to catalog event |
 | candidate-ithra-events-adventure-around-the-kingdom-20261012-0217cd1b | linked-existing | event-adventure-around-the-kingdom | already linked to catalog event |
@@ -185,7 +216,8 @@
 | candidate-ithra-events-museum-story-time-20261015-1104734c | linked-existing | event-museum-story-time | already linked to catalog event |
 | candidate-visit-saudi-calendar-alaa-el-sheikh-live-in-riyadh-20261015-9e1b33d3 | linked-existing | event-alaa-el-sheikh-live-in-riyadh | already linked to catalog event |
 | candidate-visit-saudi-calendar-pdf-عرض-علاء-الشيخ-في-جدة-20261016-4a38d19e | linked-existing | event-عرض-علاء-الشيخ-في-جدة | already linked to catalog event |
-| candidate-mdlbeast-events-unstable-20261016-5647df2e | linked-existing | event-unstable | trusted duplicate linked to existing catalog event |
+| candidate-mdlbeast-events-unstable-20261016-5647df2e | linked-existing | event-unstable | already linked to catalog event |
+| candidate-visit-saudi-calendar-pdf-ليلة-ستاند-أب-كوميدي-في-جدة-20261016-4a38d19e | linked-existing | event-عرض-ستاند-أب-كوميدي-مع-صلاح-الدالي | trusted duplicate linked to existing catalog event |
 | candidate-ithra-events-stories-from-ithras-library-20261016-4116de16 | linked-existing | event-stories-from-ithras-library | already linked to catalog event |
 | candidate-ithra-events-family-game-within-five-seconds-20261016-fe7ee898 | linked-existing | event-family-game-within-five-seconds | already linked to catalog event |
 | candidate-ithra-events-family-game-20261016-a30cabbd | linked-existing | event-family-game | already linked to catalog event |
@@ -234,7 +266,7 @@
 | candidate-misk-hub-programs-application-deadline-discover-your-path-20261029-1bbce22f | linked-existing | event-application-deadline-discover-your-path | already linked to catalog event |
 | candidate-ithra-events-ithra-winter-season-2026-20261029-6e807ba5 | linked-existing | event-ithra-winter-season-2026 | already linked to catalog event |
 | candidate-riyadh-city-events-new-global-sport-conference-20261030-4c21d3ac | linked-existing | event-new-global-sport-conference | already linked to catalog event |
-| candidate-mdlbeast-events-beast-house-20261030-83049a2a | linked-existing | event-beast-house | trusted duplicate linked to existing catalog event |
+| candidate-mdlbeast-events-beast-house-20261030-83049a2a | linked-existing | event-beast-house | already linked to catalog event |
 | candidate-saudi-water-authority-events-world-conference-on-desalination-and-water-reuse-20261101-a25a65b2 | linked-existing | event-world-conference-on-desalination-and-water-reuse | already linked to catalog event |
 | candidate-umm-al-qura-events-برنامج-محترف-أعمال-معتمد-في-القيادة-الإدارية-cbp-ls-20261101-490252be | linked-existing | event-برنامج-محترف-أعمال-معتمد-في-القيادة-الإدارية-cbp-ls | already linked to catalog event |
 | candidate-umm-al-qura-events-شهادة-محترف-إدارة-المشاريع-pmp-20261101-dfc818b0 | linked-existing | event-برنامج-إدارة-المشاريع-الاحترافية-pmp | already linked to catalog event |
@@ -344,6 +376,7 @@
 | candidate-misk-hub-programs-ipo-readiness-program-20261220-a03d586a | linked-existing | event-ipo-readiness-program | already linked to catalog event |
 | candidate-visit-saudi-calendar-saudi-falcon-cup-20261221-dd540f33 | linked-existing | event-saudi-falcon-cup | already linked to catalog event |
 | candidate-riyadh-city-events-next-gen-iot-expo-20261221-dfb4907e | linked-existing | event-next-gen-iot-expo | already linked to catalog event |
+| candidate-visit-saudi-calendar-pdf-in-act-act-xii-new-years-eve-20261231-4a38d19e | linked-existing | event-in-act-act-xii-new-years-eve | trusted duplicate linked to existing catalog event |
 | candidate-umm-al-qura-events-الترشح-للدبلوم-المتوسط-في-أمن-المعلومات-في-الجبيل-بالتعاون-مع-كليات-الفي-20261231-c4b0ec06 | linked-existing | event-الترشح-للدبلوم-المتوسط-في-أمن-المعلومات-في-الجبيل-بالتعاون-مع-كليات-الفي | already linked to catalog event |
 | candidate-umm-al-qura-events-الترشح-للدبلوم-المتوسط-في-المحاسبة-المالية-في-الجبيل-بالتعاون-مع-كليات-ا-20261231-93e5e6a0 | linked-existing | event-الترشح-للدبلوم-المتوسط-في-المحاسبة-المالية-في-الجبيل-بالتعاون-مع-كليات-ا | already linked to catalog event |
 | candidate-visit-saudi-calendar-in-act-act-xii-new-years-eve-20261231-2421333f | linked-existing | event-in-act-act-xii-new-years-eve | already linked to catalog event |
@@ -374,7 +407,8 @@
 | candidate-qassim-university-events-استضافة-مؤتمر-ieee-mecom-2027-20271101-510cb4b1 | linked-existing | event-استضافة-مؤتمر-ieee-mecom-2027 | already linked to catalog event |
 | candidate-umm-al-qura-events-الترشح-للدبلوم-المتوسط-في-التحول-الرقمي-في-جازان-بالتعاون-مع-أكاديمية-غر-20271201-5cace3ad | linked-existing | event-دبلوم-التحول-الرقمي | already linked to catalog event |
 | candidate-saudi-space-agency-events-space-debris-conference-2028-20280215-03719f44 | linked-existing | event-space-debris-conference-2028 | already linked to catalog event |
-| candidate-eventbrite-saudi-25th-wpc-energy-congress-20261011-5909609b | blocked | - | unknown category requires review |
+| candidate-visit-saudi-calendar-pdf-معرض-قلب-البحر-20260604-4a38d19e | blocked | event-معرض-قلب-البحر | possible duplicate requires review: exact-title-city-venue-conflict |
+| candidate-visit-saudi-calendar-pdf-معرض-في-تتبّع-ذكريات-غامرة-20260618-4a38d19e | blocked | event-معرض-في-تتبّع-ذكريات-غامرة | possible duplicate requires review: exact-title-city-venue-conflict |
 | candidate-saudicon-events-annual-international-geotechnical-innovation-conference-igic-2026-20261014-8ea8aaa9 | blocked | - | publication gate source-evidence is not auto-publishable |
 | candidate-saudicon-events-قمة-أثليت-360-للأداء-الرياضي-والصحة-2026-20261014-6ecdbd26 | blocked | - | publication gate source-evidence is not auto-publishable |
 | candidate-saudicon-events-athlete-360-summit-2026-20261014-485c7ce6 | blocked | - | publication gate source-evidence is not auto-publishable |

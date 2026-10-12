@@ -1,6 +1,6 @@
 # Strategic Platform Source Radar
 
-Generated at: 2026-10-11T09:01:52.008Z
+Generated at: 2026-10-12T09:22:02.934Z
 
 Policy: evidence refresh, API-surface mapping, and source strategy only. This radar does not auto-publish catalog events.
 
@@ -51,8 +51,8 @@ Policy: evidence refresh, API-surface mapping, and source strategy only. This ra
 - Project use: Keep in the 6-hour source ring; Arabic and English API payloads are reachable and useful for tourism-facing event discovery.
 - Title: تقويم السعودية | تابع العطلات والفعاليات المميزة - الموقع الرسمي للسياحة السعودية
 - Hint URLs: https://www.googletagmanager.com, https://cdn.consentmanager.net, https://delivery.consentmanager.net, https://www.googletagmanager.com/gtm.js?id=, https://www.clarity.ms/tag/, https://www.visitsaudi.com/images/SoundStorm-1.2e16d0ba.fill-1200x630.jpg, https://www.visitsaudi.com/ar/saudi-calendar, https://www.visitsaudi.com/ar
-  - API 200 https://www.visitsaudi.com/bin/api/v3/events?locale=ar: 20 items; معرض اللغة العربية للطفل, معرض اللغة العربية 28, كرنفال بريدة الدولي للتمور, تجربة شاطئ قالو, «استمرارية 26» برنامج الفنانين الناشئين في فنون الوسائط الجديدة بمركز الدرعية لفنون المستقبل
-  - API 200 https://www.visitsaudi.com/bin/api/v3/events?locale=en: 20 items; Arabic Language Exhibition for kids, Arabic Language Exhibition 28, Buraydah International Dates Carnival, GALU Beach Experience, Continuum '26 Diriyah Art Futures Emerging New Media Artists Programme
+  - API 200 https://www.visitsaudi.com/bin/api/v3/events?locale=ar: 21 items; معرض اللغة العربية للطفل, معرض اللغة العربية 28, كرنفال بريدة الدولي للتمور, تجربة شاطئ قالو, «استمرارية 26» برنامج الفنانين الناشئين في فنون الوسائط الجديدة بمركز الدرعية لفنون المستقبل
+  - API 200 https://www.visitsaudi.com/bin/api/v3/events?locale=en: 21 items; Arabic Language Exhibition for kids, Arabic Language Exhibition 28, Buraydah International Dates Carnival, GALU Beach Experience, Continuum '26 Diriyah Art Futures Emerging New Media Artists Programme
 
 ### webook Explore
 

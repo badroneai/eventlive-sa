@@ -1,106 +1,13 @@
 {
-  "generated_at": "2026-10-11T09:32:30.051Z",
+  "generated_at": "2026-10-12T10:01:22.524Z",
   "source_ops_report": "reports/source-ops-report.json",
   "source_registry": "data/source_registry.json",
   "totals": {
     "leads_seen": 10,
-    "tasks": 2,
+    "tasks": 1,
     "high_priority": 0
   },
   "tasks": [
-    {
-      "lead_id": "candidate-eventbrite-saudi-25th-wpc-energy-congress-20261011-5909609b",
-      "title": "25TH WPC Energy Congress",
-      "city": "Riyadh",
-      "starts_at": "2026-10-11T09:00:00+03:00",
-      "source_label": "Eventbrite Saudi Arabia",
-      "discovery_quality": "strong-lead",
-      "discovery_score": 70,
-      "discovery_notes": "saudi-location-signal, specific-venue, event-topic-fit",
-      "resolver_priority": 97,
-      "target_sources": [
-        {
-          "id": "rfecc-whats-on",
-          "name": "RFECC What's On",
-          "url": "https://rfecc.sa/whats-on/",
-          "domain": "rfecc.sa",
-          "trust_level": "venue-official",
-          "source_type": "venue-calendar",
-          "score": 58
-        },
-        {
-          "id": "ricec-events",
-          "name": "Riyadh International Convention and Exhibition Center",
-          "url": "https://www.ricec.com/",
-          "domain": "ricec.com",
-          "trust_level": "venue-official",
-          "source_type": "venue-calendar",
-          "score": 58
-        },
-        {
-          "id": "dhahran-expo-calendar",
-          "name": "Dhahran Expo Calendar",
-          "url": "https://dhahranexpo.com.sa",
-          "domain": "dhahranexpo.com.sa",
-          "trust_level": "venue-official",
-          "source_type": "venue-calendar",
-          "score": 50
-        },
-        {
-          "id": "informa-connect-saudi-events",
-          "name": "Informa Connect Saudi Event Portfolio",
-          "url": "https://informaconnect.com/",
-          "domain": "informaconnect.com",
-          "trust_level": "official",
-          "source_type": "conference-organizer",
-          "score": 48
-        },
-        {
-          "id": "saudi-water-authority-events",
-          "name": "Saudi Water Authority Events",
-          "url": "https://www.swa.gov.sa/en/events",
-          "domain": "swa.gov.sa",
-          "trust_level": "official",
-          "source_type": "government-calendar",
-          "score": 48
-        }
-      ],
-      "searches": [
-        {
-          "query": "site:rfecc.sa \"25TH WPC Energy Congress\" \"Riyadh\"",
-          "url": "https://www.google.com/search?q=site%3Arfecc.sa%20%2225TH%20WPC%20Energy%20Congress%22%20%22Riyadh%22"
-        },
-        {
-          "query": "site:ricec.com \"25TH WPC Energy Congress\" \"Riyadh\"",
-          "url": "https://www.google.com/search?q=site%3Aricec.com%20%2225TH%20WPC%20Energy%20Congress%22%20%22Riyadh%22"
-        },
-        {
-          "query": "site:dhahranexpo.com.sa \"25TH WPC Energy Congress\" \"Riyadh\"",
-          "url": "https://www.google.com/search?q=site%3Adhahranexpo.com.sa%20%2225TH%20WPC%20Energy%20Congress%22%20%22Riyadh%22"
-        },
-        {
-          "query": "site:informaconnect.com \"25TH WPC Energy Congress\" \"Riyadh\"",
-          "url": "https://www.google.com/search?q=site%3Ainformaconnect.com%20%2225TH%20WPC%20Energy%20Congress%22%20%22Riyadh%22"
-        },
-        {
-          "query": "site:swa.gov.sa \"25TH WPC Energy Congress\" \"Riyadh\"",
-          "url": "https://www.google.com/search?q=site%3Aswa.gov.sa%20%2225TH%20WPC%20Energy%20Congress%22%20%22Riyadh%22"
-        },
-        {
-          "query": "\"25TH WPC Energy Congress\" \"Riyadh\" official",
-          "url": "https://www.google.com/search?q=%2225TH%20WPC%20Energy%20Congress%22%20%22Riyadh%22%20official"
-        },
-        {
-          "query": "\"25TH WPC Energy Congress\" \"Riyadh\" organizer",
-          "url": "https://www.google.com/search?q=%2225TH%20WPC%20Energy%20Congress%22%20%22Riyadh%22%20organizer"
-        },
-        {
-          "query": "\"25TH WPC Energy Congress\" \"Riyadh\" tickets",
-          "url": "https://www.google.com/search?q=%2225TH%20WPC%20Energy%20Congress%22%20%22Riyadh%22%20tickets"
-        }
-      ],
-      "next_action": "ابحث في المصادر الرسمية المستهدفة واربط lead بمصدر رسمي قبل أي نشر."
-    },
     {
       "lead_id": "candidate-eventbrite-saudi-family-offices-vcs-investment-summit-riyadh-invite-only-20261124-e6c951a4",
       "title": "Family Offices & VCs Investment Summit Riyadh: Invite Only",
