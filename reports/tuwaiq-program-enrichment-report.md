@@ -1,6 +1,6 @@
 # Tuwaiq Program Enrichment Report
 
-- generated_at: 2026-10-12T09:54:33.072Z
+- generated_at: 2026-10-13T10:01:23.359Z
 - targets: 36
 - enriched: 0
 - failed: 36

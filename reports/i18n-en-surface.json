@@ -1,19 +1,19 @@
 {
   "schema": "eventlive.i18n-en-surface.v1",
-  "generated_at": "2026-10-12T10:13:20.368Z",
-  "pages_scanned": 1933,
-  "pages_with_arabic": 449,
+  "generated_at": "2026-10-13T10:16:42.764Z",
+  "pages_scanned": 1943,
+  "pages_with_arabic": 454,
   "template_regressions": [],
   "script_template_regressions": [],
   "style_template_regressions": [],
   "recurring_surface_debt": [
     {
       "text": "../assets/event-images/الشهادة-الدولية-للحاسب-والإنترنت-ic3-a46ba6d2eb.jpg",
-      "pages": 54,
-      "example": "events/event-أهمية-الرياضيات-دورها-في-الحياة-والعلوم-والتكنولوجيا.html",
+      "pages": 60,
+      "example": "events/event-الاختبارات-المتكافئة.html",
       "script": true
     }
   ],
   "recurring_total": 1,
-  "content_prose_lines": 2256
+  "content_prose_lines": 2283
 }

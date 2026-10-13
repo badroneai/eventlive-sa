@@ -1,31 +1,18 @@
 {
-  "generated_at": "2026-10-12T10:03:16.417Z",
+  "generated_at": "2026-10-13T10:09:03.374Z",
   "events_file": "dist/events.json",
   "manifest": "data/event_image_cache_manifest.json",
   "image_dir": "dist/assets/event-images",
   "totals": {
     "targets": 500,
     "cached_total": 897,
-    "fetched": 2,
-    "reused": 492,
+    "fetched": 0,
+    "reused": 494,
     "failed": 6,
     "skipped_recent_failures": 0,
     "remembered_failures": 31
   },
-  "fetched": [
-    {
-      "source_url": "https://www.ithra.com/application/files/cache/thumbnails/9520c7ac094aada70a66eda3fdf5f7a6.jpg",
-      "file": "dist/assets/event-images/theatrical-readings-6a73f7612c.jpg",
-      "bytes": 332702,
-      "events": 1
-    },
-    {
-      "source_url": "https://www.ithra.com/application/files/cache/thumbnails/1424795a34dc316e58cf040bc520f0d6.jpg",
-      "file": "dist/assets/event-images/learn-more-about-ithra-short-plays-contest-2027-afe28cebff.jpg",
-      "bytes": 148333,
-      "events": 1
-    }
-  ],
+  "fetched": [],
   "reused": [
     {
       "source_url": "https://music.moc.gov.sa/-/media/Project/Ministries/Moc/Events/Artboard1.png",
@@ -270,7 +257,7 @@
     {
       "source_url": "https://uqu.edu.sa/assets/images/uqu-gate.jpeg",
       "file": "dist/assets/event-images/الشهادة-الدولية-للحاسب-والإنترنت-ic3-a46ba6d2eb.jpg",
-      "events": 120
+      "events": 128
     },
     {
       "source_url": "https://scth.scene7.com/is/image/scth/buraydah-dates-carnival-qassim?wid=1400&hei=788&fit=constrain&fmt=webp",
@@ -325,11 +312,6 @@
     {
       "source_url": "https://hayyjameel.org/wp-content/uploads/2026/08/DSC00522-1100x500.jpg",
       "file": "dist/assets/event-images/hayy-arts-from-another-angel-explore-contemporary-art-with-alternative-b06bceee40.jpg",
-      "events": 1
-    },
-    {
-      "source_url": "https://hayyjameel.org/wp-content/uploads/2026/07/DSC02026-scaled-aspect-ratio-2296-1300-1-1100x500.jpg",
-      "file": "dist/assets/event-images/hayy-makers-woodworking-course-level-1-with-ahmad-sofi-cd2f60e754.jpg",
       "events": 1
     },
     {
@@ -623,16 +605,6 @@
       "events": 1
     },
     {
-      "source_url": "https://tc.qcc.org.sa/storage/270/6ac4e70fa9d60_%D8%A7%D9%84%D9%85%D8%A8%D9%8A%D8%B9%D8%A7%D8%AA-%D8%A7%D9%84%D8%AA%D8%AF%D8%B1%D9%8A%D8%A8.jpg",
-      "file": "dist/assets/event-images/المهارات-الأساسية-للمبيعات-89ef5dd030.jpg",
-      "events": 1
-    },
-    {
-      "source_url": "https://tc.qcc.org.sa/storage/271/6ac61b9b53646_%D8%A7%D8%AF%D9%88%D8%A7%D8%AA-%D9%82%D9%88%D9%82%D9%84_%D8%A7%D9%84%D8%A7%D8%B9%D9%84%D8%A7%D9%86-%D9%85%D9%86%D8%B5%D8%A9-x.jpg",
-      "file": "dist/assets/event-images/مهارات-التسويق-باستخدام-أدوات-قوقل-67021ecc84.jpg",
-      "events": 1
-    },
-    {
       "source_url": "https://www.ithra.com/application/files/cache/thumbnails/e62a5dbedd618e4c73eba84cf1f7d03b.png",
       "file": "dist/assets/event-images/الجسور-إلى-اللغة-الإسبانية-daf5c5cc26.png",
       "events": 1
@@ -648,14 +620,14 @@
       "events": 1
     },
     {
-      "source_url": "https://www.datocms-assets.com/66357/1751801189-mdlbeast.png?auto=format&fit=max&w=1200",
-      "file": "dist/assets/event-images/unstable-ba5c599823.avif",
-      "events": 5
-    },
-    {
       "source_url": "https://meenterpriseai.com/whatsapp.png",
       "file": "dist/assets/event-images/15th-middle-east-enterprise-ai-analytics-summit-6a711e9760.png",
       "events": 1
+    },
+    {
+      "source_url": "https://www.datocms-assets.com/66357/1751801189-mdlbeast.png?auto=format&fit=max&w=1200",
+      "file": "dist/assets/event-images/unstable-ba5c599823.avif",
+      "events": 5
     },
     {
       "source_url": "https://www.ithra.com/application/files/cache/thumbnails/883ef249dfbc9ec53aed24a31039d3fb.png",
@@ -680,6 +652,11 @@
     {
       "source_url": "https://www.ithra.com/application/files/cache/thumbnails/fd743dc190d99ded6708dfc96b3a1d68.jpg",
       "file": "dist/assets/event-images/immersive-introduction-to-arabic-writing-and-type-design-1c7ab6de8f.jpg",
+      "events": 1
+    },
+    {
+      "source_url": "https://www.ithra.com/application/files/cache/thumbnails/9520c7ac094aada70a66eda3fdf5f7a6.jpg",
+      "file": "dist/assets/event-images/theatrical-readings-6a73f7612c.jpg",
       "events": 1
     },
     {
@@ -1003,6 +980,11 @@
       "events": 1
     },
     {
+      "source_url": "https://www.ithra.com/application/files/cache/thumbnails/1424795a34dc316e58cf040bc520f0d6.jpg",
+      "file": "dist/assets/event-images/learn-more-about-ithra-short-plays-contest-2027-afe28cebff.jpg",
+      "events": 1
+    },
+    {
       "source_url": "https://mdc.almunawarah.sa/_app/immutable/assets/competition-1.DsOvnh1b.jpg",
       "file": "dist/assets/event-images/مهرجان-المدينة-المنورة-الدولي-للعمارة-2026-969e053170.jpg",
       "events": 1
@@ -1150,6 +1132,16 @@
     {
       "source_url": "https://ssa.gov.sa/media/3j2f0xpa/sdc2028.webp?width=1400&height=788&rnd=134303158965830000",
       "file": "dist/assets/event-images/مؤتمر-الحطام-الفضائي-2028-ed926e1bba.webp",
+      "events": 1
+    },
+    {
+      "source_url": "https://tc.qcc.org.sa/storage/270/6ac4e70fa9d60_%D8%A7%D9%84%D9%85%D8%A8%D9%8A%D8%B9%D8%A7%D8%AA-%D8%A7%D9%84%D8%AA%D8%AF%D8%B1%D9%8A%D8%A8.jpg",
+      "file": "dist/assets/event-images/المهارات-الأساسية-للمبيعات-89ef5dd030.jpg",
+      "events": 1
+    },
+    {
+      "source_url": "https://tc.qcc.org.sa/storage/271/6ac61b9b53646_%D8%A7%D8%AF%D9%88%D8%A7%D8%AA-%D9%82%D9%88%D9%82%D9%84_%D8%A7%D9%84%D8%A7%D8%B9%D9%84%D8%A7%D9%86-%D9%85%D9%86%D8%B5%D8%A9-x.jpg",
+      "file": "dist/assets/event-images/مهارات-التسويق-باستخدام-أدوات-قوقل-67021ecc84.jpg",
       "events": 1
     },
     {
@@ -1750,6 +1742,11 @@
     {
       "source_url": "https://hayyjameel.org/wp-content/uploads/2026/08/Craftsweekend_Open-Call_Whatsonbanner3-1100x500.jpg",
       "file": "dist/assets/event-images/hayy-makers-open-call-makers-matters-2cbe24e44d.jpg",
+      "events": 1
+    },
+    {
+      "source_url": "https://hayyjameel.org/wp-content/uploads/2026/07/DSC02026-scaled-aspect-ratio-2296-1300-1-1100x500.jpg",
+      "file": "dist/assets/event-images/hayy-makers-woodworking-course-level-1-with-ahmad-sofi-cd2f60e754.jpg",
       "events": 1
     },
     {
@@ -2497,47 +2494,46 @@
       "events": 1,
       "reason": "HTTP 403",
       "failure_kind": "access-denied",
-      "retry_after": "2026-10-13T10:03:16.417Z"
-    },
-    {
-      "source_url": "https://s7g10.scene7.com/is/image/rcu/stargazing-at-alula-fort:landscape-16x9?$Responsive$&fit=stretch&fmt=webp&wid=1920",
-      "events": 1,
-      "reason": "HTTP 403",
-      "failure_kind": "access-denied",
-      "retry_after": "2026-10-13T10:03:16.417Z"
+      "retry_after": "2026-10-14T10:09:03.374Z"
     },
     {
       "source_url": "https://s7g10.scene7.com/is/image/rcu/leonid-meteor-shower-at-jabal-ikmah:landscape-16x9?$Responsive$&fit=stretch&fmt=webp&wid=1920",
       "events": 1,
       "reason": "HTTP 403",
       "failure_kind": "access-denied",
-      "retry_after": "2026-10-13T10:03:16.417Z"
+      "retry_after": "2026-10-14T10:09:03.374Z"
+    },
+    {
+      "source_url": "https://s7g10.scene7.com/is/image/rcu/stargazing-at-alula-fort:landscape-16x9?$Responsive$&fit=stretch&fmt=webp&wid=1920",
+      "events": 1,
+      "reason": "HTTP 403",
+      "failure_kind": "access-denied",
+      "retry_after": "2026-10-14T10:09:03.374Z"
     },
     {
       "source_url": "https://s7g10.scene7.com/is/image/rcu/fei2:landscape-16x9?$Responsive$&fit=stretch&fmt=webp&wid=1920",
       "events": 1,
       "reason": "HTTP 403",
       "failure_kind": "access-denied",
-      "retry_after": "2026-10-13T10:03:16.417Z"
+      "retry_after": "2026-10-14T10:09:03.374Z"
     },
     {
       "source_url": "https://cdn.rfecc.sa/wp-content/uploads/mec/qr_898ea2449274454e42895b52b18c6f68.png",
       "events": 1,
       "reason": "HTTP 403",
       "failure_kind": "access-denied",
-      "retry_after": "2026-10-13T10:03:16.417Z"
+      "retry_after": "2026-10-14T10:09:03.374Z"
     },
     {
       "source_url": "https://api.riyadh.sa/sites/default/files/styles/medium/public/2026-07/er%20%2859%29.jpg?itok=a33APdGm",
       "events": 1,
       "reason": "not-image text/html; charset=utf-8",
       "failure_kind": "source-returned-html",
-      "retry_after": "2026-10-13T10:03:16.417Z"
+      "retry_after": "2026-10-14T10:09:03.374Z"
     }
   ],
   "requires_rebuild": true,
   "rebuild_reasons": [
-    "fetched:2",
     "new-failures:6"
   ]
 }

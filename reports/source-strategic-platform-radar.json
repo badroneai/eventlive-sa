@@ -1,6 +1,6 @@
 {
   "schema": "eventlive.source-strategic-platform-radar.v1",
-  "generated_at": "2026-10-12T09:22:02.934Z",
+  "generated_at": "2026-10-13T09:32:09.120Z",
   "policy": {
     "allowed_use": "official source evidence refresh, API-surface mapping, partnership prioritization, extractor backlog decisions",
     "disallowed_use": "direct catalog publication without official confirmation and duplicate review"
@@ -199,7 +199,7 @@
       "final_url": "https://www.visitsaudi.com/ar/saudi-calendar",
       "via": "fetch",
       "content_type": "text/html; charset=utf-8",
-      "bytes": 91496,
+      "bytes": 91537,
       "title": "تقويم السعودية | تابع العطلات والفعاليات المميزة - الموقع الرسمي للسياحة السعودية",
       "classification": "reachable",
       "error": "",
@@ -330,7 +330,7 @@
         "https://wbk-assets.webook.com/7.92/locales/en/currency_common.json",
         "https://wbk-assets.webook.com/7.92/locales/en/payment_common.json",
         "https://wbk-assets.webook.com/7.92/locales/en/subscription_common.json",
-        "https://webook.com/cdn-cgi/content?id=VemPzJrktbb0XAxwuyDPrEHJe.iZXvJJfJ_OOGXPDtU-1791796930.9712367-1.2.1.1-4kDaYP6h.qbj702_HSWuLOre8WHEph0mbx9SxKBXEioXWp2SCgo2wTQYbPfoO067",
+        "https://webook.com/cdn-cgi/content?id=Y74pcQF84rpvykc..9M3zcPKEmEJK19xBSuJvpAq.ZY-1791883939.3046308-1.2.1.1-1UtNz9uviYZJZF1xEQWKOT_AOr5NcORh1jVYtqJ85jium.dz0mLrH4coOLFVIMTc",
         "https://static.cloudflareinsights.com/beacon.min.js/v4bc70e2c01a94c73b74392e4234840661791215815920"
       ],
       "page_hint_words": [
@@ -402,7 +402,7 @@
       "final_url": "https://www.evento.sa/home",
       "via": "fetch",
       "content_type": "text/html",
-      "bytes": 74721,
+      "bytes": 74729,
       "title": "Evento | إيفينتو",
       "classification": "reachable",
       "error": "",
@@ -434,9 +434,9 @@
       ],
       "asset_results": [
         {
-          "url": "https://www.evento.sa/main.96d264010b2da9f4.js",
+          "url": "https://www.evento.sa/main.b3bd54d7c5600ae4.js",
           "status": 200,
-          "bytes": 1264326,
+          "bytes": 1275677,
           "classification": "reachable",
           "hint_urls": [
             "https://evento.sa",

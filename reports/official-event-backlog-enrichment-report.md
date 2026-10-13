@@ -1,77 +1,110 @@
 # EventLive Official Event Backlog Enrichment
-- Generated at: 2026-10-12T09:58:49.633Z
-- Targets: 67
-- Enriched: 67
-- Fetched: 32
-- Images: 61
-- Fetch failures: 35
+- Generated at: 2026-10-13T10:06:10.372Z
+- Targets: 100
+- Enriched: 100
+- Fetched: 38
+- Images: 95
+- Fetch failures: 62
 
 | Source | Event | Method | Image | Fetch |
 |---|---|---:|---:|---:|
-| Ithra Events | Learn more about Ithra Short Plays Contest 2027 | official-public-algolia-index | yes | yes |
-| Ithra Events | Spend an hour with one of the theater experts | official-public-algolia-index | yes | yes |
-| Ithra Events | Theatrical Readings | official-public-algolia-index | yes | yes |
-| Visit Saudi Summer Calendar PDF | أكمل الفراغ التالي | approved-source-row | yes | The operation was aborted due to timeout |
-| Visit Saudi Summer Calendar PDF | أمسية كوبليه في الخبر | approved-source-row | yes | The operation was aborted due to timeout |
-| Visit Saudi Summer Calendar PDF | الاخطبوطية كيدز | approved-source-row | yes | The operation was aborted due to timeout |
-| Umm Al-Qura University Events Center | التطوع وخدمة المجتمع | official-page-meta | yes | yes |
-| Visit Saudi Summer Calendar PDF | الضحك في الترجمة - عرض كوميدي مع شون شدياق | approved-source-row | yes | The operation was aborted due to timeout |
-| Visit Saudi Summer Calendar PDF | المكسيك ضد العالم | approved-source-row | yes | The operation was aborted due to timeout |
-| Visit Saudi Summer Calendar PDF | بطولة الفنون القتالية | approved-source-row | yes | The operation was aborted due to timeout |
-| Umm Al-Qura University Events Center | توصيف المقرر وأساسيات صياغة نواتج التعلم | official-page-meta | yes | yes |
-| Visit Saudi Summer Calendar PDF | حفل فضل شاكر | approved-source-row | yes | The operation was aborted due to timeout |
-| Visit Saudi Summer Calendar PDF | ربع تون | approved-source-row | yes | The operation was aborted due to timeout |
-| Visit Saudi Summer Calendar PDF | سفرجل في جدة | approved-source-row | yes | The operation was aborted due to timeout |
-| Visit Saudi Summer Calendar PDF | سوالف الحي | approved-source-row | yes | The operation was aborted due to timeout |
-| Visit Saudi Summer Calendar PDF | شتاء اثراء | official-page-meta | yes | yes |
-| Visit Saudi Summer Calendar PDF | عبد في صبيح - عرض ستاند أب كوميدي | official-page-meta | yes | yes |
-| Visit Saudi Summer Calendar PDF | عبد في صبيح - عرض ستاند أب كوميدي | official-page-meta | yes | yes |
-| Visit Saudi Summer Calendar PDF | عرض بوش بشاشة ستاند أب كوميدي | official-page-meta | yes | yes |
-| Visit Saudi Summer Calendar PDF | ليلة ستاند أب كوميدي في جدة | official-page-meta | yes | yes |
-| Visit Saudi Summer Calendar PDF | عرض كوميدي مع ماريو يزبك | approved-source-row | yes | The operation was aborted due to timeout |
-| Visit Saudi Summer Calendar PDF | على موج الخبر | official-page-meta | yes | yes |
-| Visit Saudi Summer Calendar PDF | ”فينا نحكي؟“ عرض ستاند أب كوميدي لجون أشقر | official-page-meta | yes | yes |
-| Visit Saudi Summer Calendar PDF | كراون جول | official-page-meta | yes | yes |
-| Visit Saudi Summer Calendar PDF | ليلة البنات الكوميدية من مخرج ثمانية | official-page-meta | yes | yes |
-| Visit Saudi Summer Calendar PDF | ليلة ستاند اب بالانقليزية من مخرج ثمانية | official-page-meta | yes | yes |
-| Umm Al-Qura University Events Center | مهارات التعامل مع الضغوط الدراسية وتعزيز الصحة النفسية | official-page-meta | yes | yes |
-| Visit Saudi Summer Calendar PDF | مهرجان القادسية | approved-source-row | yes | The operation was aborted due to timeout |
-| Visit Saudi Summer Calendar PDF | نسيم الخبر | approved-source-row | yes | The operation was aborted due to timeout |
-| Visit Saudi Summer Calendar PDF | نهائيات FIFAe 26 | official-page-meta | yes | yes |
-| Visit Saudi Summer Calendar PDF | واقف! Momos | approved-source-row | yes | The operation was aborted due to timeout |
-| Visit Saudi Summer Calendar PDF | بطولة المملكة للبلوت | approved-source-row | yes | The operation was aborted due to timeout |
-| Visit Saudi Summer Calendar PDF | بوابة المونديال – كأس العالم في جدة | approved-source-row | yes | The operation was aborted due to timeout |
-| Visit Saudi Summer Calendar PDF | بيوني الشرف | approved-source-row | yes | The operation was aborted due to timeout |
-| Visit Saudi Summer Calendar PDF | جدة بروميناد Fan Zone | approved-source-row | no | The operation was aborted due to timeout |
-| Umm Al-Qura University Events Center | دعوة لحضور فعاليات الاحتفال باليوم الوطني السعودي ال96 بكلية الإدارة والاقتصاد | official-page-meta | yes | yes |
-| Umm Al-Qura University Events Center | دورة اساسيات المجهر الالكتروني الماسح SEM | official-page-meta | yes | yes |
-| Umm Al-Qura University Events Center | دورة الفحوصات المكروبيولوجية لمياه الشرب: الأسس العلمية والتطبيقات البحثية | official-page-meta | yes | yes |
-| Umm Al-Qura University Events Center | دورة تحضير البيئات وتعريف السلالات البكتيرية | official-page-meta | yes | yes |
-| Umm Al-Qura University Events Center | دورة تقنية PCR بالمعامل الحيوية الجزيئية | official-page-meta | yes | yes |
-| Visit Saudi Summer Calendar PDF | سكاي فيلج | official-page-meta | yes | yes |
-| Visit Saudi Summer Calendar PDF | سوق الثلاثاء الشعبي | official-page-meta | yes | yes |
-| Umm Al-Qura University Events Center | شهادة محترف الأعمال المعتمد في السكرتارية التنفيذيةCBP-ES | official-page-meta | yes | yes |
-| Umm Al-Qura University Events Center | شهادة محترف الأعمال المعتمد في تحفيز الموظفين CBP-EM | official-page-meta | yes | yes |
-| Umm Al-Qura University Events Center | شهادة مساعد معتمد في إدارة المشاريع CAPM | official-page-meta | yes | yes |
-| Visit Saudi Summer Calendar PDF | صندوق أسامة من مخرج ثمانية | approved-source-row | yes | The operation was aborted due to timeout |
-| Visit Saudi Summer Calendar PDF | صيف غابة رغدان في الباحة 2026 | approved-source-row | yes | The operation was aborted due to timeout |
-| Visit Saudi Summer Calendar PDF | ضحكات الرياض | official-page-meta | yes | yes |
-| Visit Saudi Summer Calendar PDF | عمر الجمل - حفلة ستاند أب كوميدي | approved-source-row | yes | The operation was aborted due to timeout |
-| Qassim Chamber Events | عمليات إدارة الموارد البشرية | approved-source-row | yes | HTTP 403 |
-| Visit Saudi Summer Calendar PDF | عيشوا المونديال مع بنش مارك - عبادي الجوهر أرينا | approved-source-row | yes | The operation was aborted due to timeout |
-| Visit Saudi Summer Calendar PDF | فعالية رمي السهام | approved-source-row | yes | The operation was aborted due to timeout |
-| Visit Saudi Summer Calendar PDF | فعالية سيّر | approved-source-row | yes | The operation was aborted due to timeout |
-| Umm Al-Qura University Events Center | قراءة تاريخية في الأنظمة السعودية | official-page-meta | yes | yes |
-| Visit Saudi Summer Calendar PDF | قرية آل ينفع | approved-source-row | yes | The operation was aborted due to timeout |
-| Visit Saudi Summer Calendar PDF | قرية الأطاولة التراثية | official-page-meta | yes | yes |
-| Visit Saudi Summer Calendar PDF | قرية الموسى التراثية | official-page-meta | yes | yes |
-| Visit Saudi Summer Calendar PDF | قصور العسابلة | official-page-meta | yes | yes |
-| Monsha'at All Events | لقاءات مراكز دعم المنشآت | approved-source-row | no | fetch failed |
-| Monsha'at All Events | لقاءات مراكز دعم المنشآت - شهر يوليو 2026م (مغلقة) | approved-source-row | no | fetch failed |
-| Jazan Chamber Events | متطلبات نظام إدارة المرافق ISO 41001 للمنشآت الصغيرة والمتوسطة | approved-source-row | yes | fetch failed |
-| Visit Saudi Summer Calendar PDF | مزرعة أعناب | approved-source-row | yes | The operation was aborted due to timeout |
-| Visit Saudi Summer Calendar PDF | مزرعة الليوان | approved-source-row | yes | The operation was aborted due to timeout |
-| Visit Saudi Summer Calendar PDF | مزرعة ركايب | approved-source-row | yes | The operation was aborted due to timeout |
-| Asharqia Chamber Events | معرض الحرف والأعمال اليدوية 2026 | approved-source-row | no | fetch failed |
-| Asharqia Chamber Events | ملتقى الممارسات الوقفية في نسخته الخامسة تحت عنوان (التشريعات المحفزة لنمو الأوقاف وصرفها) | approved-source-row | no | fetch failed |
-| Asharqia Chamber Events | منتدى المرأة الاقتصادي 2026م بعنوان: من التمكين إلى التأثير الاقتصادي | approved-source-row | no | fetch failed |
+| Umm Al-Qura University Events Center | الاختبارات المتكافئة | official-page-meta | yes | yes |
+| Umm Al-Qura University Events Center | الفعالية التوعوية بمناسبة اليوم العالمي لسرطان الثدي | official-page-meta | yes | yes |
+| Umm Al-Qura University Events Center | اليوم العالمي للصحة النفسية تحت شعار «لكل صوت أثر» | official-page-meta | yes | yes |
+| Umm Al-Qura University Events Center | زيارة ميدانية إلى المديرية العامة لمكافحة المخدرات | official-page-meta | yes | yes |
+| Visit Saudi Summer Calendar PDF | ليلة ستاند أب كوميدي في جدة | approved-source-row | yes | The operation was aborted due to timeout |
+| Umm Al-Qura University Events Center | لقاء بعنوان إدارة الضغوط والسلامة النفسية | official-page-meta | yes | yes |
+| Monsha'at All Events | لقاءات شهر أكتوبر 2026م | official-page-meta | no | yes |
+| Monsha'at All Events | لقاءات شهر أكتوبر (المغلقة) 2026م | approved-source-row | no | The operation was aborted due to timeout |
+| Umm Al-Qura University Events Center | ورشة القيادات الجامعة | official-page-meta | yes | yes |
+| Umm Al-Qura University Events Center | ورشة عمل بعنوان عجينة الورق | official-page-meta | yes | yes |
+| Umm Al-Qura University Events Center | ورشة عمل بعنوان فن الاوريغامي | official-page-meta | yes | yes |
+| Discover Aseer Events | "Blackberry Farm " | approved-source-row | yes | HTTP 404 |
+| Riyadh City Events | Cityscape Global | approved-source-row | yes | fetch failed |
+| Visit Saudi Seasons | Combat Arena | official-page-meta | yes | yes |
+| Discover Aseer Events | Cowboy Town | approved-source-row | yes | HTTP 404 |
+| Informa Connect Saudi Event Portfolio | Education Investment Saudi | official-page-meta | yes | yes |
+| Riyadh City Events | Esports Nations Cup | approved-source-row | yes | fetch failed |
+| Riyadh City Events | Foodex Saudi | approved-source-row | yes | fetch failed |
+| Riyadh City Events | Future Investment Initiative | approved-source-row | yes | fetch failed |
+| Riyadh City Events | Future Projects Forum | approved-source-row | yes | fetch failed |
+| Riyadh City Events | General Aviation Airshow — AERO Middle East x Sand & Fun | approved-source-row | yes | fetch failed |
+| SDAIA Calendar and Events | Global AI Summit | official-page-meta | no | yes |
+| Riyadh City Events | Global CSR Forum | approved-source-row | yes | fetch failed |
+| Riyadh City Events | Global Forum on the Ethics of AI (GFEAI) | approved-source-row | yes | fetch failed |
+| Riyadh City Events | Global Health Exhibition | approved-source-row | yes | fetch failed |
+| Riyadh City Events | Global Logistics Forum | approved-source-row | yes | fetch failed |
+| Riyadh City Events | Global Space Connectivity and Sustainability Events | approved-source-row | yes | fetch failed |
+| Hayy Jameel What's On | Hayy Explorers | As Told by the Land: Constructed Worlds | official-page-meta | yes | yes |
+| Hayy Jameel What's On | Hayy Sounds | Listening Session: Rotations of Bismillah with Atiyyah Khan and Huda Tayob | official-page-meta | yes | yes |
+| Hayy Jameel What's On | Hayy Sounds | Listening Stations, Part of the Exhibition ‘Red Wind, Coral Worlds’ | official-page-meta | yes | yes |
+| Riyadh City Events | Human Capability Initiative Conference | approved-source-row | yes | fetch failed |
+| Riyadh City Events | ICEGOV – International Conference on Electronic Governance | approved-source-row | yes | fetch failed |
+| Riyadh City Events | Industrial Transformation Saudi Arabia | approved-source-row | yes | fetch failed |
+| Riyadh City Events | Information Security Event: Black Hat | approved-source-row | yes | fetch failed |
+| Riyadh City Events | Intersec Saudi Arabia | approved-source-row | yes | fetch failed |
+| Hayy Jameel What's On | Jameel Library | Opening Programme: At the Edge of Renewal with the Khaleeji Women’s Library and Archive | official-page-meta | yes | yes |
+| Visit Saudi Seasons | Jeddah Formula E 2026/2027 | official-page-meta | yes | yes |
+| Riyadh City Events | Jewels of the World – Autumn Edition | approved-source-row | yes | fetch failed |
+| Riyadh City Events | King Abdulaziz Falconry Festival | approved-source-row | yes | fetch failed |
+| Riyadh City Events | King Khaled Eye Specialist Hospital and Research Center 2026 International Conference | approved-source-row | yes | fetch failed |
+| Experience AlUla Events | Leonid Meteor Shower at Jabal Ikmah | official-page-meta | yes | yes |
+| Discover Aseer Events | Mabdaa Festival | approved-source-row | yes | HTTP 404 |
+| Discover Aseer Events | MARNIS | approved-source-row | yes | HTTP 404 |
+| Discover Aseer Events | Mdmak | approved-source-row | yes | HTTP 404 |
+| Riyadh City Events | Melwah Falcon Racing | approved-source-row | yes | fetch failed |
+| Riyadh City Events | Metal & Steel Exhibition / FABEX | approved-source-row | yes | fetch failed |
+| Riyadh City Events | MIPIM Middle East | approved-source-row | yes | fetch failed |
+| Riyadh City Events | Misk Global Forum | approved-source-row | yes | fetch failed |
+| Discover Aseer Events | Muftaha District | approved-source-row | yes | HTTP 404 |
+| Discover Aseer Events | Musical concerts | approved-source-row | yes | HTTP 404 |
+| Discover Aseer Events | Nafas | approved-source-row | yes | HTTP 404 |
+| Riyadh City Events | New Global Sport Conference | approved-source-row | yes | fetch failed |
+| Riyadh City Events | Next-Gen IoT Expo | approved-source-row | yes | fetch failed |
+| Discover Aseer Events | Perfumes week | approved-source-row | yes | HTTP 404 |
+| Riyadh City Events | Pet & Vet Expo | approved-source-row | yes | fetch failed |
+| Discover Aseer Events | PLATO | approved-source-row | yes | HTTP 404 |
+| Discover Aseer Events | Qusoor Abu Sarah | approved-source-row | yes | HTTP 404 |
+| Discover Aseer Events | Qusoor Al Asabila | approved-source-row | yes | HTTP 404 |
+| Hayy Jameel What's On | Hayy Explorers | Recess Showcase: Time Reflected on Water | official-page-meta | yes | yes |
+| Discover Aseer Events | Rekaib Farm | approved-source-row | yes | HTTP 404 |
+| Discover Aseer Events | Rural Village- Art Street | approved-source-row | yes | HTTP 404 |
+| Discover Aseer Events | sair2 | approved-source-row | yes | HTTP 404 |
+| Visit Saudi Seasons | Sammrah | official-page-meta | yes | yes |
+| Riyadh City Events | Saudi Agriculture | approved-source-row | yes | fetch failed |
+| Informa Connect Saudi Event Portfolio | Saudi AI Week | approved-source-row | yes | HTTP 404 |
+| Riyadh City Events | Saudi Build | approved-source-row | yes | fetch failed |
+| Riyadh City Events | Saudi Drone Exhibition SADEX | approved-source-row | yes | fetch failed |
+| Riyadh City Events | Saudi Elenex | approved-source-row | yes | fetch failed |
+| Informa Connect Saudi Event Portfolio | Saudi Event Show | official-page-meta | yes | yes |
+| Riyadh City Events | Saudi Falcons & Hunting Exhibition | approved-source-row | yes | fetch failed |
+| Informa Connect Saudi Event Portfolio | Saudi Intermobility Expo | official-page-meta | yes | yes |
+| Riyadh City Events | Saudi Lifestyle Week | approved-source-row | yes | fetch failed |
+| Riyadh City Events | Saudi Makes Future AI Expo | approved-source-row | yes | fetch failed |
+| Riyadh City Events | Saudi Procurement Conference | approved-source-row | yes | fetch failed |
+| Riyadh City Events | Saudi Statistics Forum | approved-source-row | yes | fetch failed |
+| Riyadh City Events | Seamless Saudi Arabia | approved-source-row | yes | fetch failed |
+| Discover Aseer Events | Sky Village | approved-source-row | yes | HTTP 404 |
+| Riyadh City Events | Solar & Storage Live | approved-source-row | yes | fetch failed |
+| Visit Saudi Seasons | Sound of Abha Fest (SAF) | official-page-meta | yes | yes |
+| Experience AlUla Events | Stargazing at AlUla Fort | official-page-meta | yes | yes |
+| Discover Aseer Events | Summer Legacy | approved-source-row | yes | HTTP 404 |
+| Experience AlUla Events | Sunset Stillness: Meditation & Sound Immersion | official-page-meta | yes | yes |
+| Informa Connect Saudi Event Portfolio | SuperReturn Saudi Arabia | official-page-meta | yes | yes |
+| Riyadh City Events | World Stadiums and Arenas Summit | approved-source-row | yes | fetch failed |
+| Riyadh City Events | WPC Energy Congress | approved-source-row | yes | fetch failed |
+| Umm Al-Qura University Events Center | أساسيات سلاسل الإمداد والخدمات اللوجستية | official-page-meta | yes | yes |
+| Visit Saudi Summer Calendar PDF | أمازونيا فان زون | official-page-meta | no | yes |
+| Visit Saudi Summer Calendar PDF | ارياش | approved-source-row | yes | terminated |
+| Umm Al-Qura University Events Center | الارشاد الأكاديمي ومهارات دعم الطلبة | official-page-meta | yes | yes |
+| Umm Al-Qura University Events Center | الذكاء الاصطناعي التوليدي في التعليم-تطبيقات واخلاقيات | official-page-meta | yes | yes |
+| Visit Saudi Summer Calendar PDF | باتو | official-page-meta | yes | yes |
+| Visit Saudi Summer Calendar PDF | تيفو فان زون | official-page-meta | yes | yes |
+| Visit Saudi Summer Calendar PDF | حديقة مطار ابها الدولي | official-page-meta | yes | yes |
+| Asharqia Chamber Events | حفل الاستقبال السنوي لقطاع الاعمال 2026م | approved-source-row | no | fetch failed |
+| Umm Al-Qura University Events Center | دبلوم إدارة المشاريع | official-page-meta | yes | yes |
+| Umm Al-Qura University Events Center | دورة تدريبية بعنوان إدارة الجودة 9001 | official-page-meta | yes | yes |
+| Umm Al-Qura University Events Center | دورة تدريبية بعنوان (الابتكار باستخدام الذكاء الاصطناعي) | official-page-meta | yes | yes |
+| Visit Saudi Summer Calendar PDF | ساوث ويست (الكاوبوي) | approved-source-row | yes | The operation was aborted due to timeout |
+| Visit Saudi Summer Calendar PDF | سمره | official-page-meta | yes | yes |
+| Visit Saudi Summer Calendar PDF | صيف وِرث 2026 | official-page-meta | yes | yes |

@@ -1,11 +1,31 @@
 {
-  "checked_at": "2026-10-12T10:01:17.634Z",
+  "checked_at": "2026-10-13T10:07:27.533Z",
   "targets": 10,
   "evidence_found": 5,
-  "changed": 0,
+  "changed": 1,
   "no_evidence": 4,
   "failed": 1,
   "results": [
+    {
+      "id": "event-12th-middle-east-banking-ai-analytics-summit-2026",
+      "host": "eventbrite.com",
+      "url": "https://www.eventbrite.com/e/12th-middle-east-banking-ai-analytics-summit-2026-tickets-1992107636567",
+      "status": "evidence",
+      "price_label": "free · 0 USD",
+      "price": 0,
+      "price_currency": "USD",
+      "method": "eventbrite-json-ld"
+    },
+    {
+      "id": "event-15th-middle-east-enterprise-ai-analytics-summit",
+      "host": "eventbrite.com",
+      "url": "https://www.eventbrite.com/e/15th-middle-east-enterprise-ai-analytics-summit-tickets-1991914835895",
+      "status": "evidence",
+      "price_label": "free · 0 USD",
+      "price": 0,
+      "price_currency": "USD",
+      "method": "eventbrite-json-ld"
+    },
     {
       "id": "event-unstable",
       "host": "nofomo.com",
@@ -29,26 +49,6 @@
       "price": 499,
       "price_currency": "SAR",
       "method": "nofomo-visible-ticket-price"
-    },
-    {
-      "id": "event-12th-middle-east-banking-ai-analytics-summit-2026",
-      "host": "eventbrite.com",
-      "url": "https://www.eventbrite.com/e/12th-middle-east-banking-ai-analytics-summit-2026-tickets-1992107636567",
-      "status": "evidence",
-      "price_label": "free · 0 USD",
-      "price": 0,
-      "price_currency": "USD",
-      "method": "eventbrite-json-ld"
-    },
-    {
-      "id": "event-15th-middle-east-enterprise-ai-analytics-summit",
-      "host": "eventbrite.com",
-      "url": "https://www.eventbrite.com/e/15th-middle-east-enterprise-ai-analytics-summit-tickets-1991914835895",
-      "status": "evidence",
-      "price_label": "free · 0 USD",
-      "price": 0,
-      "price_currency": "USD",
-      "method": "eventbrite-json-ld"
     },
     {
       "id": "event-saudi-ai-week",
@@ -79,8 +79,8 @@
       "host": "informaconnect.com",
       "url": "https://informaconnect.com/superreturn-saudi-arabia/purchase/select-package/",
       "status": "evidence",
-      "price_label": "1299 USD",
-      "price": 1299,
+      "price_label": "1199 USD",
+      "price": 1199,
       "price_currency": "USD",
       "method": "informa-visible-package-price"
     },
