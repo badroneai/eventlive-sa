@@ -1,84 +1,12 @@
 {
-  "generated_at": "2026-10-13T10:01:25.235Z",
+  "generated_at": "2026-10-14T07:54:15.586Z",
   "catalog": "data/events_catalog.json",
   "totals": {
     "targets": 29,
-    "enriched": 26,
-    "failed": 3
+    "enriched": 17,
+    "failed": 12
   },
   "enriched": [
-    {
-      "id": "event-security-operations-threat-detection-incident-response-عمليات-الأمن-السي",
-      "title": "Security Operations, Threat Detection & Incident Response - عمليات الأمن السيبراني، واكتشاف التهديدات، والاستجابة للحوادث",
-      "group_id": "13040",
-      "goals": 1,
-      "features": 3,
-      "requirements": 4,
-      "metadata": 8
-    },
-    {
-      "id": "event-أساسيات-الحوسبة-السحابية-cloud-computing-essentials",
-      "title": "أساسيات الحوسبة السحابية - Cloud Computing Essentials",
-      "group_id": "13035",
-      "goals": 6,
-      "features": 13,
-      "requirements": 3,
-      "metadata": 8
-    },
-    {
-      "id": "event-advanced-excel-for-data-analysis-دورة-اكسيل-لتحليل-البيانات",
-      "title": "Advanced Excel for Data Analysis - دورة اكسيل لتحليل البيانات",
-      "group_id": "13041",
-      "goals": 1,
-      "features": 4,
-      "requirements": 4,
-      "metadata": 8
-    },
-    {
-      "id": "event-comptia-a",
-      "title": "CompTIA A+",
-      "group_id": "13042",
-      "goals": 1,
-      "features": 7,
-      "requirements": 4,
-      "metadata": 8
-    },
-    {
-      "id": "event-cloud-computing-essentials-أساسيات-الحوسبة-السحابية",
-      "title": "Cloud Computing Essentials - أساسيات الحوسبة السحابية",
-      "group_id": "13043",
-      "goals": 1,
-      "features": 4,
-      "requirements": 4,
-      "metadata": 8
-    },
-    {
-      "id": "event-duplicate-of-cloud-computing-essentials-أساسيات-الحوسبة-السحابية",
-      "title": "Duplicate of Cloud Computing Essentials - أساسيات الحوسبة السحابية",
-      "group_id": "13044",
-      "goals": 1,
-      "features": 4,
-      "requirements": 4,
-      "metadata": 8
-    },
-    {
-      "id": "event-cloud-storage-and-databases-fundamentals-أساسيات-التخزين-السحابي-وقواعد-",
-      "title": "Cloud Storage and Databases Fundamentals - أساسيات التخزين السحابي وقواعد البيانات",
-      "group_id": "13045",
-      "goals": 1,
-      "features": 7,
-      "requirements": 4,
-      "metadata": 8
-    },
-    {
-      "id": "event-devops-fundamentals-for-cloud-environments-أساسيات-ديفوبس-لبيئات-السحابة",
-      "title": "DevOps Fundamentals for Cloud Environments-أساسيات ديفوبس لبيئات السحابة",
-      "group_id": "13046",
-      "goals": 1,
-      "features": 3,
-      "requirements": 4,
-      "metadata": 8
-    },
     {
       "id": "event-cloud-security-operations-and-identity-management-عمليات-أمان-السحابة-وإ",
       "title": "Cloud Security Operations and Identity Management - عمليات أمان السحابة وإدارة الهوية",
@@ -170,15 +98,6 @@
       "metadata": 8
     },
     {
-      "id": "event-ccna",
-      "title": "CCNA",
-      "group_id": "13058",
-      "goals": 1,
-      "features": 1,
-      "requirements": 4,
-      "metadata": 8
-    },
-    {
       "id": "event-responsible-ai-ethics-and-ai-governance",
       "title": "Responsible AI, Ethics and AI Governance",
       "group_id": "13059",
@@ -247,19 +166,73 @@
       "id": "event-introduction-to-generative-ai-مقدمة-في-الذكاء-الاصطناعي-التوليدي",
       "title": "Introduction to Generative AI-مقدمة في الذكاء الاصطناعي التوليدي",
       "group_id": "13037",
-      "reason": "The operation was aborted due to timeout"
+      "reason": "fetch failed"
     },
     {
       "id": "event-دورة-comptia-a",
       "title": "دورة +CompTIA A",
       "group_id": "13039",
-      "reason": "The operation was aborted due to timeout"
+      "reason": "fetch failed"
+    },
+    {
+      "id": "event-security-operations-threat-detection-incident-response-عمليات-الأمن-السي",
+      "title": "Security Operations, Threat Detection & Incident Response - عمليات الأمن السيبراني، واكتشاف التهديدات، والاستجابة للحوادث",
+      "group_id": "13040",
+      "reason": "fetch failed"
+    },
+    {
+      "id": "event-أساسيات-الحوسبة-السحابية-cloud-computing-essentials",
+      "title": "أساسيات الحوسبة السحابية - Cloud Computing Essentials",
+      "group_id": "13035",
+      "reason": "fetch failed"
+    },
+    {
+      "id": "event-advanced-excel-for-data-analysis-دورة-اكسيل-لتحليل-البيانات",
+      "title": "Advanced Excel for Data Analysis - دورة اكسيل لتحليل البيانات",
+      "group_id": "13041",
+      "reason": "fetch failed"
+    },
+    {
+      "id": "event-comptia-a",
+      "title": "CompTIA A+",
+      "group_id": "13042",
+      "reason": "fetch failed"
+    },
+    {
+      "id": "event-cloud-computing-essentials-أساسيات-الحوسبة-السحابية",
+      "title": "Cloud Computing Essentials - أساسيات الحوسبة السحابية",
+      "group_id": "13043",
+      "reason": "fetch failed"
+    },
+    {
+      "id": "event-duplicate-of-cloud-computing-essentials-أساسيات-الحوسبة-السحابية",
+      "title": "Duplicate of Cloud Computing Essentials - أساسيات الحوسبة السحابية",
+      "group_id": "13044",
+      "reason": "fetch failed"
+    },
+    {
+      "id": "event-cloud-storage-and-databases-fundamentals-أساسيات-التخزين-السحابي-وقواعد-",
+      "title": "Cloud Storage and Databases Fundamentals - أساسيات التخزين السحابي وقواعد البيانات",
+      "group_id": "13045",
+      "reason": "fetch failed"
+    },
+    {
+      "id": "event-devops-fundamentals-for-cloud-environments-أساسيات-ديفوبس-لبيئات-السحابة",
+      "title": "DevOps Fundamentals for Cloud Environments-أساسيات ديفوبس لبيئات السحابة",
+      "group_id": "13046",
+      "reason": "fetch failed"
     },
     {
       "id": "event-linux-administration",
       "title": "Linux Administration",
       "group_id": "13057",
       "reason": "HTTP 404"
+    },
+    {
+      "id": "event-ccna",
+      "title": "CCNA",
+      "group_id": "13058",
+      "reason": "fetch failed"
     }
   ]
 }

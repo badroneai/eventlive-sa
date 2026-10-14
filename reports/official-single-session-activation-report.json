@@ -1,8 +1,8 @@
 {
-  "generated_at": "2026-10-13T10:07:27.210Z",
+  "generated_at": "2026-10-14T07:59:13.988Z",
   "max_duration_hours": 8,
   "totals": {
-    "activated": 41,
+    "activated": 42,
     "skipped_long": 12
   },
   "activated": [
@@ -372,6 +372,15 @@
       "source_label": "Qassim Chamber Events",
       "starts_at": "2026-10-14T17:00:00+03:00",
       "ends_at": "2026-10-14T19:00:00+03:00",
+      "duration_hours": 2,
+      "session_type": "official-business-workshop"
+    },
+    {
+      "id": "event-الذكاء-الاصطناعي-في-التسويق-وصناعة-المحتوى",
+      "title": "الذكاء الاصطناعي في التسويق وصناعة المحتوى",
+      "source_label": "Qassim Chamber Events",
+      "starts_at": "2026-10-19T16:30:00+03:00",
+      "ends_at": "2026-10-19T18:30:00+03:00",
       "duration_hours": 2,
       "session_type": "official-business-workshop"
     }

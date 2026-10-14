@@ -1,33 +1,7 @@
 {
   "schema": "eventlive.source-growth-state.v1",
-  "generated_at": "2026-10-13T10:09:03.026Z",
+  "generated_at": "2026-10-14T08:01:19.432Z",
   "runs": [
-    {
-      "run_id": "2026-08-01T11:17:55.874Z",
-      "generated_at": "2026-08-01T11:27:47.647Z",
-      "collected_at": "2026-08-01T11:17:55.874Z",
-      "catalog_active_rows": 676,
-      "catalog_ended_rows": 762,
-      "public_events": 1418,
-      "candidates_discovered": 318,
-      "new_active_candidates": 18,
-      "new_ended_events": 0,
-      "published_new": 6,
-      "linked_existing": 522,
-      "blocked_remaining": 38,
-      "sources_attempted": 20,
-      "productive_sources": 19,
-      "collector_errors": 1,
-      "lost_published_output": false,
-      "missing_published_ids": [],
-      "published_ids_checked": 6,
-      "publish_report_correlated": true,
-      "measurement_integrity": "ok",
-      "public_delta": null,
-      "catalog_delta": null,
-      "no_growth_streak": 0,
-      "status": "degraded"
-    },
     {
       "run_id": "2026-08-01T12:56:16.512Z",
       "generated_at": "2026-08-01T13:06:23.778Z",
@@ -49,10 +23,10 @@
       "published_ids_checked": 6,
       "publish_report_correlated": true,
       "measurement_integrity": "ok",
-      "public_delta": 0,
-      "catalog_delta": 0,
-      "no_growth_streak": 1,
-      "status": "healthy"
+      "public_delta": null,
+      "catalog_delta": null,
+      "no_growth_streak": 0,
+      "status": "baseline"
     },
     {
       "run_id": "2026-08-01T14:27:10.011Z",
@@ -77,7 +51,7 @@
       "measurement_integrity": "ok",
       "public_delta": 0,
       "catalog_delta": 0,
-      "no_growth_streak": 2,
+      "no_growth_streak": 1,
       "status": "healthy"
     },
     {
@@ -103,7 +77,7 @@
       "measurement_integrity": "ok",
       "public_delta": 0,
       "catalog_delta": 0,
-      "no_growth_streak": 3,
+      "no_growth_streak": 2,
       "status": "healthy"
     },
     {
@@ -129,7 +103,7 @@
       "measurement_integrity": "ok",
       "public_delta": 0,
       "catalog_delta": 0,
-      "no_growth_streak": 4,
+      "no_growth_streak": 3,
       "status": "degraded"
     },
     {
@@ -3175,6 +3149,34 @@
       "measurement_integrity": "ok",
       "public_delta": 10,
       "catalog_delta": 10,
+      "no_growth_streak": 0,
+      "status": "degraded"
+    },
+    {
+      "run_id": "2026-10-14T07:45:04.855Z",
+      "generated_at": "2026-10-14T08:01:19.432Z",
+      "collected_at": "2026-10-14T07:45:04.855Z",
+      "catalog_active_rows": 1091,
+      "catalog_ended_rows": 762,
+      "public_events": 1820,
+      "candidates_discovered": 198,
+      "new_active_candidates": 47,
+      "new_ended_events": 0,
+      "published_new": 6,
+      "linked_existing": 385,
+      "blocked_remaining": 30,
+      "sources_attempted": 18,
+      "productive_sources": 14,
+      "collector_errors": 1,
+      "lost_published_output": false,
+      "collapsed_published_ids": [],
+      "persistence_severity": "none",
+      "missing_published_ids": [],
+      "published_ids_checked": 6,
+      "publish_report_correlated": true,
+      "measurement_integrity": "ok",
+      "public_delta": 5,
+      "catalog_delta": 5,
       "no_growth_streak": 0,
       "status": "degraded"
     }

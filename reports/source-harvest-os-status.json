@@ -1,19 +1,19 @@
 {
   "schema": "eventlive.harvest-os-status.v1",
-  "generated_at": "2026-10-13T10:19:51.488Z",
+  "generated_at": "2026-10-14T08:13:56.317Z",
   "status": "NEEDS_WORK",
   "operating_rule": "Probe before new sources; sample before full harvest; Raw collection is not publication; discovery-only never auto-publishes.",
   "totals": {
     "sources": 88,
-    "candidates": 420,
-    "matched_candidates": 392,
+    "candidates": 421,
+    "matched_candidates": 393,
     "auto_publish_sources": 15,
     "candidate_only_sources": 12,
     "partnership_required_sources": 5,
     "blocked_or_closed_sources": 0,
     "manual_review_sources": 56,
-    "collection_attempted": 29,
-    "productive_sources": 16,
+    "collection_attempted": 18,
+    "productive_sources": 15,
     "collector_errors": 6,
     "chronic_collector_errors": 5,
     "transient_collector_errors": 1
@@ -25,19 +25,19 @@
     "manual_review": 56
   },
   "candidates_by_gate": {
-    "catalog-review": 392,
+    "catalog-review": 393,
     "duplicate-review": 5,
     "source-evidence": 23
   },
   "funnel": {
-    "discovered_this_run": 220,
-    "candidate_queue": 420,
-    "evaluated_for_publish": 420,
-    "linked_existing": 379,
-    "published_new": 11,
+    "discovered_this_run": 198,
+    "candidate_queue": 421,
+    "evaluated_for_publish": 421,
+    "linked_existing": 385,
+    "published_new": 6,
     "blocked": 30,
     "secondary_promoted": 0,
-    "secondary_still_blocked": 38
+    "secondary_still_blocked": 33
   },
   "blocked_reasons": {
     "possible duplicate requires review: exact-title-city-venue-conflict": 4,
@@ -53,40 +53,40 @@
       "note": "collector-error: fetch failed [ETIMEDOUT, ENETUNREACH]; fetch failed [ETIMEDOUT, ENETUNREACH]",
       "error_streak": 52,
       "kind": "chronic",
-      "attempted_this_run": true
+      "attempted_this_run": false
     },
     {
       "id": "mos-events",
       "note": "collector-error: fetch failed [ETIMEDOUT, ENETUNREACH]; live browser recovery deferred by recent failed probe cooldown",
       "error_streak": 52,
       "kind": "chronic",
-      "attempted_this_run": true
+      "attempted_this_run": false
     },
     {
       "id": "moc-cultural-subportals",
       "note": "collector-error: fetch failed [UND_ERR_CONNECT_TIMEOUT]; fetch failed [UND_ERR_CONNECT_TIMEOUT]",
       "error_streak": 52,
       "kind": "chronic",
-      "attempted_this_run": true
+      "attempted_this_run": false
     },
     {
       "id": "saudi-pro-league-fixtures",
       "note": "collector-error: fetch failed [EAI_AGAIN]",
       "error_streak": 32,
       "kind": "chronic",
-      "attempted_this_run": true
+      "attempted_this_run": false
     },
     {
       "id": "tuwaiq-academy-bootcamps",
       "note": "collector-error: HTTP 403",
       "error_streak": 29,
       "kind": "chronic",
-      "attempted_this_run": true
+      "attempted_this_run": false
     },
     {
-      "id": "asharqia-chamber-events",
-      "note": "fetch failed [UND_ERR_CONNECT_TIMEOUT]; live browser recovery deferred by recent failed probe cooldown",
-      "error_streak": 2,
+      "id": "saudi-space-agency-events",
+      "note": "fetch failed [ETIMEDOUT, ENETUNREACH]",
+      "error_streak": 1,
       "kind": "transient",
       "attempted_this_run": true
     }

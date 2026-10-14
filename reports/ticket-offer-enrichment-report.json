@@ -1,8 +1,8 @@
 {
-  "checked_at": "2026-10-13T10:07:27.533Z",
-  "targets": 10,
-  "evidence_found": 5,
-  "changed": 1,
+  "checked_at": "2026-10-14T07:59:14.401Z",
+  "targets": 9,
+  "evidence_found": 4,
+  "changed": 0,
   "no_evidence": 4,
   "failed": 1,
   "results": [
@@ -10,11 +10,8 @@
       "id": "event-12th-middle-east-banking-ai-analytics-summit-2026",
       "host": "eventbrite.com",
       "url": "https://www.eventbrite.com/e/12th-middle-east-banking-ai-analytics-summit-2026-tickets-1992107636567",
-      "status": "evidence",
-      "price_label": "free · 0 USD",
-      "price": 0,
-      "price_currency": "USD",
-      "method": "eventbrite-json-ld"
+      "status": "no-evidence",
+      "reason": "no-explicit-public-price"
     },
     {
       "id": "event-15th-middle-east-enterprise-ai-analytics-summit",
@@ -25,13 +22,6 @@
       "price": 0,
       "price_currency": "USD",
       "method": "eventbrite-json-ld"
-    },
-    {
-      "id": "event-unstable",
-      "host": "nofomo.com",
-      "url": "https://nofomo.com/collections/unstable",
-      "status": "no-evidence",
-      "reason": "no-explicit-public-price"
     },
     {
       "id": "event-a-thousand-and-one",

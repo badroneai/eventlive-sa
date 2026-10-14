@@ -1,7 +1,7 @@
 # EventLive Official Single-Session Activation
-- Generated at: 2026-10-13T10:07:27.210Z
+- Generated at: 2026-10-14T07:59:13.988Z
 - Max duration hours: 8
-- Activated: 41
+- Activated: 42
 - Skipped long events: 12
 
 | Source | Event | Duration | Type |
@@ -47,3 +47,4 @@
 | Qassim Chamber Events | مقدمة وأساسيات ريادة الأعمال | 2h | official-business-workshop |
 | Qassim Chamber Events | التقنيات المستقبلية | 2h | official-business-workshop |
 | Qassim Chamber Events | رأس المال البشري | 2h | official-business-workshop |
+| Qassim Chamber Events | الذكاء الاصطناعي في التسويق وصناعة المحتوى | 2h | official-business-workshop |
