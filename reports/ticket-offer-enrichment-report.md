@@ -1,15 +1,14 @@
 # Ticket offer enrichment
 
-- Checked at: 2026-10-14T07:59:14.401Z
-- Targets: 9
+- Checked at: 2026-10-15T08:03:32.681Z
+- Targets: 8
 - Evidence found: 4
 - Catalog prices changed: 0
-- No evidence: 4
+- No evidence: 3
 - Failed safely: 1
 
 | Event | Host | Status | Lowest price | Evidence |
 |---|---|---|---:|---|
-| event-12th-middle-east-banking-ai-analytics-summit-2026 | eventbrite.com | no-evidence | — | no-explicit-public-price |
 | event-15th-middle-east-enterprise-ai-analytics-summit | eventbrite.com | evidence | free · 0 USD | eventbrite-json-ld |
 | event-a-thousand-and-one | nofomo.com | no-evidence | — | no-explicit-public-price |
 | event-soundstorm-26 | nofomo.com | evidence | 499 SAR | nofomo-visible-ticket-price |

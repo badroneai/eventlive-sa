@@ -1,22 +1,22 @@
 {
-  "generated_at": "2026-10-14T08:01:19.867Z",
+  "generated_at": "2026-10-15T08:05:12.473Z",
   "events_file": "dist/events.json",
   "manifest": "data/event_image_cache_manifest.json",
   "image_dir": "dist/assets/event-images",
   "totals": {
     "targets": 500,
-    "cached_total": 898,
+    "cached_total": 899,
     "fetched": 1,
     "reused": 493,
     "failed": 6,
-    "skipped_recent_failures": 6,
+    "skipped_recent_failures": 0,
     "remembered_failures": 31
   },
   "fetched": [
     {
-      "source_url": "https://tc.qcc.org.sa/storage/272/6acf31ba866ef_%D8%A7%D9%84%D8%B0%D9%83%D8%A7%D8%A1-%D8%A7%D9%84%D8%A7%D8%B5%D8%B7%D9%86%D8%A7%D8%B9%D9%8A-%D9%85%D9%88%D9%82%D8%B9%D8%A7%D9%84%D8%AA%D8%AF%D8%B1%D9%8A%D8%A8.jpg",
-      "file": "dist/assets/event-images/الذكاء-الاصطناعي-في-التسويق-وصناعة-المحتوى-e740e8ed77.jpg",
-      "bytes": 795214,
+      "source_url": "https://hayyjameel.org/wp-content/uploads/2026/10/YOS01313-scaled-aspect-ratio-2560-1419-1100x500-1.jpg",
+      "file": "dist/assets/event-images/jameel-library-october-community-programmes-14632098d3.jpg",
+      "bytes": 71116,
       "events": 1
     }
   ],
@@ -162,11 +162,6 @@
       "events": 1
     },
     {
-      "source_url": "https://discoveraseer.com/en/img/asset/YXNzZXRzL2V4cGVyaWVuY2UvaW1nXzA3MjEucG5n/img_0721.png?w=1024&fm=webp&s=b83e480fbe715d02e0d440959e92c30c",
-      "file": "dist/assets/event-images/فعالية-شعف-048a62c90f.webp",
-      "events": 1
-    },
-    {
       "source_url": "https://www.ithra.com/application/files/cache/thumbnails/021dbae93d2b03cf4faffc8cb85e03d7.jpg",
       "file": "dist/assets/event-images/youth-book-club-acf92e6dc3.jpg",
       "events": 1
@@ -264,7 +259,7 @@
     {
       "source_url": "https://uqu.edu.sa/assets/images/uqu-gate.jpeg",
       "file": "dist/assets/event-images/الشهادة-الدولية-للحاسب-والإنترنت-ic3-a46ba6d2eb.jpg",
-      "events": 132
+      "events": 136
     },
     {
       "source_url": "https://scth.scene7.com/is/image/scth/buraydah-dates-carnival-qassim?wid=1400&hei=788&fit=constrain&fmt=webp",
@@ -274,11 +269,6 @@
     {
       "source_url": "https://www.ithra.com/application/files/cache/thumbnails/6519ce3982b405e399c3a7313853a2bf.jpg",
       "file": "dist/assets/event-images/workshop-at-the-library-264921ca4b.jpg",
-      "events": 1
-    },
-    {
-      "source_url": "https://cdn.tuwaiq.edu.sa/initiatives_admin/images/psvxh1jc.vwh.png",
-      "file": "dist/assets/event-images/معسكر-تصميم-وتصنيع-الحلول-الهندسية-a59ff44dd2.png",
       "events": 1
     },
     {
@@ -322,23 +312,8 @@
       "events": 1
     },
     {
-      "source_url": "https://cdn.tuwaiq.edu.sa/initiatives_admin/images/1tllcxdg.n5m.jpg",
-      "file": "dist/assets/event-images/معسكر-أساسيات-هندسة-الميكاترونكس-83d2c7f296.jpg",
-      "events": 1
-    },
-    {
       "source_url": "https://cdn.tuwaiq.edu.sa/initiatives_admin/images/1ihbc14l.iun.webp",
       "file": "dist/assets/event-images/معسكر-تطوير-الألعاب-والعوالم-الافتراضية-باستخدام-unreal-engine-73a0badd44.webp",
-      "events": 1
-    },
-    {
-      "source_url": "https://cdn.tuwaiq.edu.sa/initiatives_admin/images/4imooj3a.lm4.webp",
-      "file": "dist/assets/event-images/معسكر-الأنظمة-الذاتية-للدرونز-7b0d0348ca.webp",
-      "events": 1
-    },
-    {
-      "source_url": "https://cdn.tuwaiq.edu.sa/initiatives_admin/images/2ejwj522.h15.webp",
-      "file": "dist/assets/event-images/معسكر-تصميم-تجربة-المستخدم-ux-ui-6d00714e43.webp",
       "events": 1
     },
     {
@@ -350,11 +325,6 @@
       "source_url": "https://www.visitsaudi.com/images/ornament-h-m1-24-8290.original.png",
       "file": "dist/assets/event-images/forest-wonder-499a88ca39.png",
       "events": 16
-    },
-    {
-      "source_url": "https://cdn.tuwaiq.edu.sa/initiatives_admin/images/4jaiuua2.tw3.webp",
-      "file": "dist/assets/event-images/معسكر-أساسيات-الأمن-السيبراني-bff0c3d784.webp",
-      "events": 1
     },
     {
       "source_url": "https://www.ithra.com/application/files/cache/thumbnails/6157f51c92a2893ce920bbd5ca35f797.jpg",
@@ -447,9 +417,14 @@
       "events": 1
     },
     {
-      "source_url": "https://www.ithra.com/application/files/cache/thumbnails/260e65f936a1f5c45da49eb41456cb4c.jpg",
-      "file": "dist/assets/event-images/textured-painting-bb6433ce72.jpg",
-      "events": 2
+      "source_url": "https://www.ithra.com/application/files/cache/thumbnails/ede25c9dc810397fce8527375c8f75bf.jpg",
+      "file": "dist/assets/event-images/aramcorama-exhibit-bc852ac4b4.jpg",
+      "events": 1
+    },
+    {
+      "source_url": "https://www.ithra.com/application/files/cache/thumbnails/b9dab29976790617352fa739f30a9172.jpg",
+      "file": "dist/assets/event-images/in-praise-of-the-artisan-f673088221.jpg",
+      "events": 1
     },
     {
       "source_url": "https://www.ithra.com/application/files/cache/thumbnails/33a3554c1e9f5b1bfbcb7e0039de614a.jpg",
@@ -469,11 +444,6 @@
     {
       "source_url": "https://www.ithra.com/application/files/cache/thumbnails/3ab50f4dd0110da0a3c6e5a14f08fb8e.jpg",
       "file": "dist/assets/event-images/wind-energy-bc3565d812.jpg",
-      "events": 1
-    },
-    {
-      "source_url": "https://cdn.tuwaiq.edu.sa/initiatives_admin/images/qkxpz0gj.dwd.webp",
-      "file": "dist/assets/event-images/معسكر-علم-البيانات-والذكاء-الاصطناعي-24753b3f30.webp",
       "events": 1
     },
     {
@@ -587,11 +557,6 @@
       "events": 1
     },
     {
-      "source_url": "https://api.riyadh.sa/sites/default/files/styles/medium/public/2025-12/Metal%20%26%20Steel%20Exhibition.jpg%20%281%29.png?itok=9QJkvuAo",
-      "file": "dist/assets/event-images/metal-steel-exhibition-fabex-d880fae4ee.png",
-      "events": 1
-    },
-    {
       "source_url": "https://api.riyadh.sa/sites/default/files/styles/medium/public/2026-04/-copy.jpg?itok=JixpT16q",
       "file": "dist/assets/event-images/jewels-of-the-world-autumn-edition-02460e4d78.jpg",
       "events": 1
@@ -602,11 +567,6 @@
       "events": 1
     },
     {
-      "source_url": "https://api.riyadh.sa/sites/default/files/styles/medium/public/2026-07/gscs--converter.jpg?itok=xvJBfP1-",
-      "file": "dist/assets/event-images/global-space-connectivity-and-sustainability-events-04f027f66b.jpg",
-      "events": 1
-    },
-    {
       "source_url": "https://www.ithra.com/application/files/cache/thumbnails/99264b28f44e86dab86ebb61a017ffed.jpg",
       "file": "dist/assets/event-images/the-soul-of-place-leveraging-folklore-and-local-heritage-in-narrative--45d3e43633.jpg",
       "events": 1
@@ -614,11 +574,6 @@
     {
       "source_url": "https://www.ithra.com/application/files/cache/thumbnails/e62a5dbedd618e4c73eba84cf1f7d03b.png",
       "file": "dist/assets/event-images/الجسور-إلى-اللغة-الإسبانية-daf5c5cc26.png",
-      "events": 1
-    },
-    {
-      "source_url": "https://mebankingai.com/whatsapp.png",
-      "file": "dist/assets/event-images/12th-middle-east-banking-ai-analytics-summit-2026-bc988c16fd.png",
       "events": 1
     },
     {
@@ -644,6 +599,11 @@
     {
       "source_url": "https://hub.misk.org.sa/media/lcsk2oyh/nonprofit-governancehub-en.png",
       "file": "dist/assets/event-images/nonprofit-governance-from-compliance-to-institutional-excellence-4beb063e2b.png",
+      "events": 1
+    },
+    {
+      "source_url": "https://tc.qcc.org.sa/storage/272/6acf31ba866ef_%D8%A7%D9%84%D8%B0%D9%83%D8%A7%D8%A1-%D8%A7%D9%84%D8%A7%D8%B5%D8%B7%D9%86%D8%A7%D8%B9%D9%8A-%D9%85%D9%88%D9%82%D8%B9%D8%A7%D9%84%D8%AA%D8%AF%D8%B1%D9%8A%D8%A8.jpg",
+      "file": "dist/assets/event-images/الذكاء-الاصطناعي-في-التسويق-وصناعة-المحتوى-e740e8ed77.jpg",
       "events": 1
     },
     {
@@ -1142,6 +1102,11 @@
       "events": 1
     },
     {
+      "source_url": "https://mebankingai.com/whatsapp.png",
+      "file": "dist/assets/event-images/12th-middle-east-banking-ai-analytics-summit-2026-bc988c16fd.png",
+      "events": 1
+    },
+    {
       "source_url": "https://tc.qcc.org.sa/storage/270/6ac4e70fa9d60_%D8%A7%D9%84%D9%85%D8%A8%D9%8A%D8%B9%D8%A7%D8%AA-%D8%A7%D9%84%D8%AA%D8%AF%D8%B1%D9%8A%D8%A8.jpg",
       "file": "dist/assets/event-images/المهارات-الأساسية-للمبيعات-89ef5dd030.jpg",
       "events": 1
@@ -1149,6 +1114,16 @@
     {
       "source_url": "https://tc.qcc.org.sa/storage/271/6ac61b9b53646_%D8%A7%D8%AF%D9%88%D8%A7%D8%AA-%D9%82%D9%88%D9%82%D9%84_%D8%A7%D9%84%D8%A7%D8%B9%D9%84%D8%A7%D9%86-%D9%85%D9%86%D8%B5%D8%A9-x.jpg",
       "file": "dist/assets/event-images/مهارات-التسويق-باستخدام-أدوات-قوقل-67021ecc84.jpg",
+      "events": 1
+    },
+    {
+      "source_url": "https://api.riyadh.sa/sites/default/files/styles/medium/public/2026-07/gscs--converter.jpg?itok=xvJBfP1-",
+      "file": "dist/assets/event-images/global-space-connectivity-and-sustainability-events-04f027f66b.jpg",
+      "events": 1
+    },
+    {
+      "source_url": "https://api.riyadh.sa/sites/default/files/styles/medium/public/2025-12/Metal%20%26%20Steel%20Exhibition.jpg%20%281%29.png?itok=9QJkvuAo",
+      "file": "dist/assets/event-images/metal-steel-exhibition-fabex-d880fae4ee.png",
       "events": 1
     },
     {
@@ -1397,6 +1372,11 @@
       "events": 1
     },
     {
+      "source_url": "https://cdn.tuwaiq.edu.sa/initiatives_admin/images/qkxpz0gj.dwd.webp",
+      "file": "dist/assets/event-images/معسكر-علم-البيانات-والذكاء-الاصطناعي-24753b3f30.webp",
+      "events": 1
+    },
+    {
       "source_url": "https://api.riyadh.sa/sites/default/files/styles/medium/public/2025-12/Cover-Banner.png?itok=KT7YvNG-",
       "file": "dist/assets/event-images/facility-management-conference-exhibition-4d4d574dbb.png",
       "events": 1
@@ -1467,16 +1447,6 @@
       "events": 1
     },
     {
-      "source_url": "https://www.ithra.com/application/files/cache/thumbnails/ede25c9dc810397fce8527375c8f75bf.jpg",
-      "file": "dist/assets/event-images/aramcorama-exhibit-bc852ac4b4.jpg",
-      "events": 1
-    },
-    {
-      "source_url": "https://www.ithra.com/application/files/cache/thumbnails/b9dab29976790617352fa739f30a9172.jpg",
-      "file": "dist/assets/event-images/in-praise-of-the-artisan-f673088221.jpg",
-      "events": 1
-    },
-    {
       "source_url": "https://swa-cdn.swa.gov.sa/Events/b4fed1f10c414a39a5c49cd9fda6a63d_2026_05_20_07_35_20_655.png",
       "file": "dist/assets/event-images/global-infrastructure-expo-1935b0ae77.png",
       "events": 1
@@ -1485,6 +1455,11 @@
       "source_url": "https://www.ithra.com/application/files/cache/thumbnails/bc26222ac54f92c203ba9900210a1cd8.jpg",
       "file": "dist/assets/event-images/hobby-with-expert-translation-b861847de3.jpg",
       "events": 1
+    },
+    {
+      "source_url": "https://www.ithra.com/application/files/cache/thumbnails/260e65f936a1f5c45da49eb41456cb4c.jpg",
+      "file": "dist/assets/event-images/textured-painting-bb6433ce72.jpg",
+      "events": 2
     },
     {
       "source_url": "https://api.riyadh.sa/sites/default/files/styles/medium/public/2026-02/HAEdfmHXwAA_2WL.jpeg?itok=-azjYn5n",
@@ -1627,6 +1602,11 @@
       "events": 1
     },
     {
+      "source_url": "https://cdn.tuwaiq.edu.sa/initiatives_admin/images/4jaiuua2.tw3.webp",
+      "file": "dist/assets/event-images/معسكر-أساسيات-الأمن-السيبراني-bff0c3d784.webp",
+      "events": 1
+    },
+    {
       "source_url": "https://www.eyeofriyadh.com/events/events_images/2025/05/698ca2e9c30d.jpg",
       "file": "dist/assets/event-images/saudi-wood-expo-2026-ed2844c75e.jpg",
       "events": 1
@@ -1717,6 +1697,11 @@
       "events": 1
     },
     {
+      "source_url": "https://cdn.tuwaiq.edu.sa/initiatives_admin/images/2ejwj522.h15.webp",
+      "file": "dist/assets/event-images/معسكر-تصميم-تجربة-المستخدم-ux-ui-6d00714e43.webp",
+      "events": 1
+    },
+    {
       "source_url": "https://scth.scene7.com/is/image/scth/unaizah-dates?wid=1400&hei=788&fit=constrain&fmt=webp",
       "file": "dist/assets/event-images/unaizah-international-dates-carnival-ddbcfc5917.webp",
       "events": 1
@@ -1744,6 +1729,16 @@
     {
       "source_url": "https://hayyjameel.org/wp-content/uploads/2026/07/DSC02728-1100x500.jpg",
       "file": "dist/assets/event-images/hayy-makers-introduction-to-photography-understanding-your-camera-4b6d52464c.jpg",
+      "events": 1
+    },
+    {
+      "source_url": "https://cdn.tuwaiq.edu.sa/initiatives_admin/images/4imooj3a.lm4.webp",
+      "file": "dist/assets/event-images/معسكر-الأنظمة-الذاتية-للدرونز-7b0d0348ca.webp",
+      "events": 1
+    },
+    {
+      "source_url": "https://cdn.tuwaiq.edu.sa/initiatives_admin/images/1tllcxdg.n5m.jpg",
+      "file": "dist/assets/event-images/معسكر-أساسيات-هندسة-الميكاترونكس-83d2c7f296.jpg",
       "events": 1
     },
     {
@@ -1849,6 +1844,11 @@
     {
       "source_url": "https://discoveraseer.com/en/img/asset/YXNzZXRzL2V4cGVyaWVuY2UvYWdobC1ibGRfcGFnZS0wMDAxLmpwZw/aghl-bld_page-0001.jpg?w=1024&fm=webp&s=efb01a4f9be9734e9f14ca3e4f27adc0",
       "file": "dist/assets/event-images/أغلى-وطن-a1dffa4a36.webp",
+      "events": 1
+    },
+    {
+      "source_url": "https://cdn.tuwaiq.edu.sa/initiatives_admin/images/psvxh1jc.vwh.png",
+      "file": "dist/assets/event-images/معسكر-تصميم-وتصنيع-الحلول-الهندسية-a59ff44dd2.png",
       "events": 1
     },
     {
@@ -2114,6 +2114,11 @@
     {
       "source_url": "https://scth.scene7.com/is/image/scth/made-in-egypt-comedy-show-ahmed-khairy?wid=1400&hei=788&fit=constrain&fmt=webp",
       "file": "dist/assets/event-images/made-in-egypt-stand-up-comedy-show-by-ahmed-khairy-072a99ee54.webp",
+      "events": 1
+    },
+    {
+      "source_url": "https://discoveraseer.com/en/img/asset/YXNzZXRzL2V4cGVyaWVuY2UvaW1nXzA3MjEucG5n/img_0721.png?w=1024&fm=webp&s=b83e480fbe715d02e0d440959e92c30c",
+      "file": "dist/assets/event-images/فعالية-شعف-048a62c90f.webp",
       "events": 1
     },
     {
@@ -2480,117 +2485,58 @@
       "source_url": "https://scth.scene7.com/is/image/scth/mahabah-festival-in-abha?wid=1400&hei=788&fit=constrain&fmt=webp",
       "file": "dist/assets/event-images/mahabah-e1a415b543.webp",
       "events": 1
-    },
-    {
-      "source_url": "https://hayyjameel.org/wp-content/uploads/2026/07/202607_HE_Monthly_Programme_Banners-04-1100x500.png",
-      "file": "dist/assets/event-images/hayy-explorers-as-told-by-the-land-traces-memory-5eec82d686.png",
-      "events": 1
     }
   ],
   "rejected_removed": [],
   "missing_removed": [],
-  "skipped_recent_failures": [
-    {
-      "source_url": "https://s7g10.scene7.com/is/image/rcu/stargazing-at-alula-fort:landscape-16x9?$Responsive$&fit=stretch&fmt=webp&wid=1920",
-      "events": 1,
-      "reason": "HTTP 403",
-      "failure_kind": "access-denied",
-      "retry_after": "2026-10-14T10:09:03.374Z",
-      "skipped": true
-    },
-    {
-      "source_url": "https://s7g10.scene7.com/is/image/rcu/sunset-stillness-meditation-sound-immersion:landscape-16x9?$Responsive$&fit=stretch&fmt=webp&wid=1920",
-      "events": 1,
-      "reason": "HTTP 403",
-      "failure_kind": "access-denied",
-      "retry_after": "2026-10-14T10:09:03.374Z",
-      "skipped": true
-    },
-    {
-      "source_url": "https://s7g10.scene7.com/is/image/rcu/leonid-meteor-shower-at-jabal-ikmah:landscape-16x9?$Responsive$&fit=stretch&fmt=webp&wid=1920",
-      "events": 1,
-      "reason": "HTTP 403",
-      "failure_kind": "access-denied",
-      "retry_after": "2026-10-14T10:09:03.374Z",
-      "skipped": true
-    },
-    {
-      "source_url": "https://s7g10.scene7.com/is/image/rcu/fei2:landscape-16x9?$Responsive$&fit=stretch&fmt=webp&wid=1920",
-      "events": 1,
-      "reason": "HTTP 403",
-      "failure_kind": "access-denied",
-      "retry_after": "2026-10-14T10:09:03.374Z",
-      "skipped": true
-    },
-    {
-      "source_url": "https://api.riyadh.sa/sites/default/files/styles/medium/public/2026-07/er%20%2859%29.jpg?itok=a33APdGm",
-      "events": 1,
-      "reason": "not-image text/html; charset=utf-8",
-      "failure_kind": "source-returned-html",
-      "retry_after": "2026-10-14T10:09:03.374Z",
-      "skipped": true
-    },
-    {
-      "source_url": "https://cdn.rfecc.sa/wp-content/uploads/mec/qr_898ea2449274454e42895b52b18c6f68.png",
-      "events": 1,
-      "reason": "HTTP 403",
-      "failure_kind": "access-denied",
-      "retry_after": "2026-10-14T10:09:03.374Z",
-      "skipped": true
-    }
-  ],
+  "skipped_recent_failures": [],
   "failed": [
     {
-      "source_url": "https://s7g10.scene7.com/is/image/rcu/stargazing-at-alula-fort:landscape-16x9?$Responsive$&fit=stretch&fmt=webp&wid=1920",
+      "source_url": "https://s7g10.scene7.com/is/image/rcu/fei2:landscape-16x9?$Responsive$&fit=stretch&fmt=webp&wid=1920",
       "events": 1,
       "reason": "HTTP 403",
       "failure_kind": "access-denied",
-      "retry_after": "2026-10-14T10:09:03.374Z",
-      "skipped": true
-    },
-    {
-      "source_url": "https://s7g10.scene7.com/is/image/rcu/sunset-stillness-meditation-sound-immersion:landscape-16x9?$Responsive$&fit=stretch&fmt=webp&wid=1920",
-      "events": 1,
-      "reason": "HTTP 403",
-      "failure_kind": "access-denied",
-      "retry_after": "2026-10-14T10:09:03.374Z",
-      "skipped": true
+      "retry_after": "2026-10-16T08:05:12.473Z"
     },
     {
       "source_url": "https://s7g10.scene7.com/is/image/rcu/leonid-meteor-shower-at-jabal-ikmah:landscape-16x9?$Responsive$&fit=stretch&fmt=webp&wid=1920",
       "events": 1,
       "reason": "HTTP 403",
       "failure_kind": "access-denied",
-      "retry_after": "2026-10-14T10:09:03.374Z",
-      "skipped": true
+      "retry_after": "2026-10-16T08:05:12.473Z"
     },
     {
-      "source_url": "https://s7g10.scene7.com/is/image/rcu/fei2:landscape-16x9?$Responsive$&fit=stretch&fmt=webp&wid=1920",
+      "source_url": "https://s7g10.scene7.com/is/image/rcu/sunset-stillness-meditation-sound-immersion:landscape-16x9?$Responsive$&fit=stretch&fmt=webp&wid=1920",
       "events": 1,
       "reason": "HTTP 403",
       "failure_kind": "access-denied",
-      "retry_after": "2026-10-14T10:09:03.374Z",
-      "skipped": true
+      "retry_after": "2026-10-16T08:05:12.473Z"
     },
     {
-      "source_url": "https://api.riyadh.sa/sites/default/files/styles/medium/public/2026-07/er%20%2859%29.jpg?itok=a33APdGm",
+      "source_url": "https://s7g10.scene7.com/is/image/rcu/stargazing-at-alula-fort:landscape-16x9?$Responsive$&fit=stretch&fmt=webp&wid=1920",
       "events": 1,
-      "reason": "not-image text/html; charset=utf-8",
-      "failure_kind": "source-returned-html",
-      "retry_after": "2026-10-14T10:09:03.374Z",
-      "skipped": true
+      "reason": "HTTP 403",
+      "failure_kind": "access-denied",
+      "retry_after": "2026-10-16T08:05:12.473Z"
     },
     {
       "source_url": "https://cdn.rfecc.sa/wp-content/uploads/mec/qr_898ea2449274454e42895b52b18c6f68.png",
       "events": 1,
       "reason": "HTTP 403",
       "failure_kind": "access-denied",
-      "retry_after": "2026-10-14T10:09:03.374Z",
-      "skipped": true
+      "retry_after": "2026-10-16T08:05:12.473Z"
+    },
+    {
+      "source_url": "https://api.riyadh.sa/sites/default/files/styles/medium/public/2026-07/er%20%2859%29.jpg?itok=a33APdGm",
+      "events": 1,
+      "reason": "not-image text/html; charset=utf-8",
+      "failure_kind": "source-returned-html",
+      "retry_after": "2026-10-16T08:05:12.473Z"
     }
   ],
   "requires_rebuild": true,
   "rebuild_reasons": [
-    "fetched:1"
+    "fetched:1",
+    "new-failures:6"
   ]
 }

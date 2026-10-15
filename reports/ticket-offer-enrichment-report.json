@@ -1,18 +1,11 @@
 {
-  "checked_at": "2026-10-14T07:59:14.401Z",
-  "targets": 9,
+  "checked_at": "2026-10-15T08:03:32.681Z",
+  "targets": 8,
   "evidence_found": 4,
   "changed": 0,
-  "no_evidence": 4,
+  "no_evidence": 3,
   "failed": 1,
   "results": [
-    {
-      "id": "event-12th-middle-east-banking-ai-analytics-summit-2026",
-      "host": "eventbrite.com",
-      "url": "https://www.eventbrite.com/e/12th-middle-east-banking-ai-analytics-summit-2026-tickets-1992107636567",
-      "status": "no-evidence",
-      "reason": "no-explicit-public-price"
-    },
     {
       "id": "event-15th-middle-east-enterprise-ai-analytics-summit",
       "host": "eventbrite.com",
