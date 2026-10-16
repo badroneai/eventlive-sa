@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-15T07:57:37.678Z",
+  "generated_at": "2026-10-16T07:33:14.327Z",
   "catalog": "data/events_catalog.json",
   "candidates": "data/source_candidates.json",
   "manifest": "data/event_image_cache_manifest.json",
@@ -10,11 +10,33 @@
   },
   "totals": {
     "pdf_crop_assignments": 46,
-    "verified": 46,
-    "struck": 0,
-    "slots_seen_this_cycle": 52
+    "verified": 43,
+    "struck": 3,
+    "slots_seen_this_cycle": 49
   },
-  "struck": [],
+  "struck": [
+    {
+      "id": "event-عرض-علاء-الشيخ-في-الرياض",
+      "title": "عرض علاء الشيخ في الرياض",
+      "file": "visit-saudi-summer-2026-p006-top-left.jpg",
+      "reason": "slot-vacated",
+      "detail": "no dated card currently occupies page 6 top-left of https://www.visitsaudi.com/content/dam/documents/saudi-calendar-ar.pdf"
+    },
+    {
+      "id": "event-عرض-بوش-بشاشة-ستاند-أب-كوميدي",
+      "title": "عرض بوش بشاشة ستاند أب كوميدي",
+      "file": "visit-saudi-summer-2026-p006-bottom-right.jpg",
+      "reason": "slot-vacated",
+      "detail": "no dated card currently occupies page 6 bottom-right of https://www.visitsaudi.com/content/dam/documents/saudi-calendar-ar.pdf"
+    },
+    {
+      "id": "event-سفرجل-في-جدة",
+      "title": "سفرجل في جدة",
+      "file": "visit-saudi-summer-2026-p045-top-right.jpg",
+      "reason": "slot-vacated",
+      "detail": "no dated card currently occupies page 45 top-right of https://www.visitsaudi.com/content/dam/documents/saudi-calendar-ar.pdf"
+    }
+  ],
   "verified": [
     {
       "id": "event-سوق-الثلاثاء-الشعبي",
@@ -107,38 +129,6 @@
       "matched_tokens": [
         "ربع",
         "تون"
-      ]
-    },
-    {
-      "id": "event-عرض-علاء-الشيخ-في-الرياض",
-      "title": "عرض علاء الشيخ في الرياض",
-      "file": "visit-saudi-summer-2026-p006-top-left.jpg",
-      "matched_tokens": [
-        "عرض",
-        "علاء",
-        "الشيخ",
-        "الرياض"
-      ]
-    },
-    {
-      "id": "event-عرض-بوش-بشاشة-ستاند-أب-كوميدي",
-      "title": "عرض بوش بشاشة ستاند أب كوميدي",
-      "file": "visit-saudi-summer-2026-p006-bottom-right.jpg",
-      "matched_tokens": [
-        "عرض",
-        "بوش",
-        "بشاشه",
-        "ستاند",
-        "كوميدي"
-      ]
-    },
-    {
-      "id": "event-سفرجل-في-جدة",
-      "title": "سفرجل في جدة",
-      "file": "visit-saudi-summer-2026-p045-top-right.jpg",
-      "matched_tokens": [
-        "سفرجل",
-        "جده"
       ]
     },
     {

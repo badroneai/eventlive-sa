@@ -1,8 +1,8 @@
 # EventLive Official Single-Session Activation
-- Generated at: 2026-10-15T08:03:32.366Z
+- Generated at: 2026-10-16T07:40:55.323Z
 - Max duration hours: 8
-- Activated: 42
-- Skipped long events: 12
+- Activated: 50
+- Skipped long events: 20
 
 | Source | Event | Duration | Type |
 |---|---|---:|---|
@@ -47,4 +47,12 @@
 | Qassim Chamber Events | مقدمة وأساسيات ريادة الأعمال | 2h | official-business-workshop |
 | Qassim Chamber Events | التقنيات المستقبلية | 2h | official-business-workshop |
 | Qassim Chamber Events | رأس المال البشري | 2h | official-business-workshop |
+| Saudi Universities and Technical Colleges | Hope starts with awareness: A webinar by Bupa and Human Resources | 2h | official-community-session |
+| Saudi Universities and Technical Colleges | Best Practices in Air Quality Monitoring | 1h | official-community-session |
 | Qassim Chamber Events | الذكاء الاصطناعي في التسويق وصناعة المحتوى | 2h | official-business-workshop |
+| Saudi Universities and Technical Colleges | Rethinking Our Cities: Building Resilient, Sustainable and Livable Communities | 1h | official-community-session |
+| Saudi Universities and Technical Colleges | Pink Cruise | 2h | official-community-session |
+| Saudi Universities and Technical Colleges | Awareness in the Square: An Evening of Hope, Art and Togetherness | 3h | official-community-session |
+| Saudi Universities and Technical Colleges | Spooky Open Mic Night | 4h | official-community-session |
+| Saudi Universities and Technical Colleges | Run for a Cure | 3.5h | official-community-session |
+| Saudi Universities and Technical Colleges | KAUST-Bruker X-ray Microscopy Workshop 2026 | 7h | official-community-session |

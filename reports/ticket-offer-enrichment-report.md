@@ -1,15 +1,14 @@
 # Ticket offer enrichment
 
-- Checked at: 2026-10-15T08:03:32.681Z
-- Targets: 8
-- Evidence found: 4
+- Checked at: 2026-10-16T07:40:55.718Z
+- Targets: 7
+- Evidence found: 3
 - Catalog prices changed: 0
 - No evidence: 3
 - Failed safely: 1
 
 | Event | Host | Status | Lowest price | Evidence |
 |---|---|---|---:|---|
-| event-15th-middle-east-enterprise-ai-analytics-summit | eventbrite.com | evidence | free · 0 USD | eventbrite-json-ld |
 | event-a-thousand-and-one | nofomo.com | no-evidence | — | no-explicit-public-price |
 | event-soundstorm-26 | nofomo.com | evidence | 499 SAR | nofomo-visible-ticket-price |
 | event-saudi-ai-week | informaconnect.com | failed | — | HTTP 404 |

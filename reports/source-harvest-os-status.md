@@ -1,39 +1,39 @@
 # EventLive Harvest OS Status
 
-- Generated at: 2026-10-15T08:16:05.613Z
+- Generated at: 2026-10-16T07:56:02.951Z
 - Status: NEEDS_WORK
 - Operating rule: Probe before new sources; sample before full harvest; Raw collection is not publication; discovery-only never auto-publishes.
 
 ## Totals
 
 - Sources: 88
-- Candidates: 409
-- Matched candidates: 381
+- Candidates: 413
+- Matched candidates: 386
 - Auto-publish sources: 15
 - Candidate-only sources: 12
 - Partnership-required sources: 5
-- Productive sources / attempted: 17/29
-- Collector errors: 6 (chronic 6, transient 0)
+- Productive sources / attempted: 17/36
+- Collector errors: 8 (chronic 6, transient 2)
 
 ## Publication Funnel
 
 | Stage | Count |
 | --- | --- |
-| discovered_this_run | 222 |
-| candidate_queue | 409 |
-| evaluated_for_publish | 409 |
-| linked_existing | 373 |
-| published_new | 6 |
-| blocked | 30 |
+| discovered_this_run | 215 |
+| candidate_queue | 413 |
+| evaluated_for_publish | 413 |
+| linked_existing | 363 |
+| published_new | 21 |
+| blocked | 29 |
 | secondary_promoted | 0 |
-| secondary_still_blocked | 35 |
+| secondary_still_blocked | 47 |
 
 ## Blocked Reasons
 
 | Reason | Count |
 | --- | --- |
 | publication gate source-evidence is not auto-publishable | 21 |
-| possible duplicate requires review: exact-title-city-venue-conflict | 4 |
+| possible duplicate requires review: exact-title-city-venue-conflict | 3 |
 | unknown category requires review | 2 |
 | linked catalog row event-feena-nehke-stand-up-comedy-by-john-achkar was superseded by dedupe | 1 |
 | possible duplicate requires review: exact-title-city-source-conflict | 1 |
@@ -43,12 +43,14 @@
 
 | Source | Kind | Failed runs in a row | Attempted this run | Reason |
 | --- | --- | --- | --- | --- |
-| moc-cultural-calendar | chronic | 53 | yes | collector-error: fetch failed [ETIMEDOUT, ENETUNREACH]; fetch failed [ETIMEDOUT, ENETUNREACH] |
-| mos-events | chronic | 53 | yes | collector-error: fetch failed [ETIMEDOUT, ENETUNREACH]; live browser recovery deferred by recent failed probe cooldown |
-| moc-cultural-subportals | chronic | 53 | yes | collector-error: fetch failed [UND_ERR_CONNECT_TIMEOUT]; fetch failed [UND_ERR_CONNECT_TIMEOUT] |
-| saudi-pro-league-fixtures | chronic | 33 | yes | collector-error: fetch failed [EAI_AGAIN] |
-| tuwaiq-academy-bootcamps | chronic | 30 | yes | collector-error: HTTP 403 |
-| asharqia-chamber-events | chronic | 3 | yes | collector-error: HTTP 404; live browser recovery deferred by recent failed probe cooldown |
+| moc-cultural-calendar | chronic | 53 | no | collector-error: fetch failed [ETIMEDOUT, ENETUNREACH]; fetch failed [ETIMEDOUT, ENETUNREACH] |
+| mos-events | chronic | 53 | no | collector-error: fetch failed [ETIMEDOUT, ENETUNREACH]; live browser recovery deferred by recent failed probe cooldown |
+| moc-cultural-subportals | chronic | 53 | no | collector-error: fetch failed [UND_ERR_CONNECT_TIMEOUT]; fetch failed [UND_ERR_CONNECT_TIMEOUT] |
+| saudi-pro-league-fixtures | chronic | 33 | no | collector-error: fetch failed [EAI_AGAIN] |
+| tuwaiq-academy-bootcamps | chronic | 30 | no | collector-error: HTTP 403 |
+| asharqia-chamber-events | chronic | 3 | no | collector-error: HTTP 404; live browser recovery deferred by recent failed probe cooldown |
+| monshaat-events | transient | 1 | yes | fetch failed [UND_ERR_CONNECT_TIMEOUT]; fetch failed [UND_ERR_CONNECT_TIMEOUT] |
+| dhahran-expo-calendar | transient | 1 | yes | fetch failed [EAI_AGAIN]; page.goto: net::ERR_NAME_NOT_RESOLVED at [URL redacted] |
 
 | Source | Policy | Trust | Gate |
 | --- | --- | --- | --- |

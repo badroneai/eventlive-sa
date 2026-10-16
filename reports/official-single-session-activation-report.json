@@ -1,9 +1,9 @@
 {
-  "generated_at": "2026-10-15T08:03:32.366Z",
+  "generated_at": "2026-10-16T07:40:55.323Z",
   "max_duration_hours": 8,
   "totals": {
-    "activated": 42,
-    "skipped_long": 12
+    "activated": 50,
+    "skipped_long": 20
   },
   "activated": [
     {
@@ -376,6 +376,24 @@
       "session_type": "official-business-workshop"
     },
     {
+      "id": "event-hope-starts-with-awareness-a-webinar-by-bupa-and-human-resources",
+      "title": "Hope starts with awareness: A webinar by Bupa and Human Resources",
+      "source_label": "Saudi Universities and Technical Colleges",
+      "starts_at": "2026-10-18T13:00:00+03:00",
+      "ends_at": "2026-10-18T15:00:00+03:00",
+      "duration_hours": 2,
+      "session_type": "official-community-session"
+    },
+    {
+      "id": "event-best-practices-in-air-quality-monitoring",
+      "title": "Best Practices in Air Quality Monitoring",
+      "source_label": "Saudi Universities and Technical Colleges",
+      "starts_at": "2026-10-19T14:00:00+03:00",
+      "ends_at": "2026-10-19T15:00:00+03:00",
+      "duration_hours": 1,
+      "session_type": "official-community-session"
+    },
+    {
       "id": "event-الذكاء-الاصطناعي-في-التسويق-وصناعة-المحتوى",
       "title": "الذكاء الاصطناعي في التسويق وصناعة المحتوى",
       "source_label": "Qassim Chamber Events",
@@ -383,6 +401,60 @@
       "ends_at": "2026-10-19T18:30:00+03:00",
       "duration_hours": 2,
       "session_type": "official-business-workshop"
+    },
+    {
+      "id": "event-rethinking-our-cities-building-resilient-sustainable-and-livable-communi",
+      "title": "Rethinking Our Cities: Building Resilient, Sustainable and Livable Communities",
+      "source_label": "Saudi Universities and Technical Colleges",
+      "starts_at": "2026-10-22T12:00:00+03:00",
+      "ends_at": "2026-10-22T13:00:00+03:00",
+      "duration_hours": 1,
+      "session_type": "official-community-session"
+    },
+    {
+      "id": "event-pink-cruise",
+      "title": "Pink Cruise",
+      "source_label": "Saudi Universities and Technical Colleges",
+      "starts_at": "2026-10-22T17:30:00+03:00",
+      "ends_at": "2026-10-22T19:30:00+03:00",
+      "duration_hours": 2,
+      "session_type": "official-community-session"
+    },
+    {
+      "id": "event-awareness-in-the-square-an-evening-of-hope-art-and-togetherness",
+      "title": "Awareness in the Square: An Evening of Hope, Art and Togetherness",
+      "source_label": "Saudi Universities and Technical Colleges",
+      "starts_at": "2026-10-28T18:00:00+03:00",
+      "ends_at": "2026-10-28T21:00:00+03:00",
+      "duration_hours": 3,
+      "session_type": "official-community-session"
+    },
+    {
+      "id": "event-spooky-open-mic-night",
+      "title": "Spooky Open Mic Night",
+      "source_label": "Saudi Universities and Technical Colleges",
+      "starts_at": "2026-10-29T18:00:00+03:00",
+      "ends_at": "2026-10-29T22:00:00+03:00",
+      "duration_hours": 4,
+      "session_type": "official-community-session"
+    },
+    {
+      "id": "event-run-for-a-cure",
+      "title": "Run for a Cure",
+      "source_label": "Saudi Universities and Technical Colleges",
+      "starts_at": "2026-10-30T06:30:00+03:00",
+      "ends_at": "2026-10-30T10:00:00+03:00",
+      "duration_hours": 3.5,
+      "session_type": "official-community-session"
+    },
+    {
+      "id": "event-kaust-bruker-x-ray-microscopy-workshop-2026",
+      "title": "KAUST-Bruker X-ray Microscopy Workshop 2026",
+      "source_label": "Saudi Universities and Technical Colleges",
+      "starts_at": "2026-12-02T11:00:00+03:00",
+      "ends_at": "2026-12-02T18:00:00+03:00",
+      "duration_hours": 7,
+      "session_type": "official-community-session"
     }
   ],
   "skipped_long": [
@@ -429,10 +501,40 @@
       "duration_hours": 100
     },
     {
+      "id": "event-steps-of-hope",
+      "title": "Steps of Hope",
+      "source_label": "Saudi Universities and Technical Colleges",
+      "duration_hours": 743.98
+    },
+    {
+      "id": "event-tree-of-hope",
+      "title": "Tree of Hope",
+      "source_label": "Saudi Universities and Technical Colleges",
+      "duration_hours": 743.98
+    },
+    {
+      "id": "event-kaust-lights-up-pink",
+      "title": "KAUST Lights Up Pink",
+      "source_label": "Saudi Universities and Technical Colleges",
+      "duration_hours": 743.98
+    },
+    {
+      "id": "event-womens-support-group-a-safe-space-for-connection-and-support",
+      "title": "Women’s Support group: A Safe Space for Connection and Support",
+      "source_label": "Saudi Universities and Technical Colleges",
+      "duration_hours": 505.5
+    },
+    {
       "id": "event-unstable",
       "title": "Unstable",
       "source_label": "MDLBEAST Events",
       "duration_hours": 24
+    },
+    {
+      "id": "event-breast-cancer-awareness-hub",
+      "title": "Breast Cancer Awareness Hub",
+      "source_label": "Saudi Universities and Technical Colleges",
+      "duration_hours": 469
     },
     {
       "id": "event-kaust-workshop-on-ai-enabled-microwave-sensing-and-communication",
@@ -441,10 +543,28 @@
       "duration_hours": 23.98
     },
     {
+      "id": "event-annual-kaust-basketball-league-2026",
+      "title": "Annual KAUST Basketball League 2026",
+      "source_label": "Saudi Universities and Technical Colleges",
+      "duration_hours": 767.98
+    },
+    {
+      "id": "event-saudi-hpc-ai-conference-2026",
+      "title": "Saudi HPC/AI Conference 2026",
+      "source_label": "Saudi Universities and Technical Colleges",
+      "duration_hours": 71.98
+    },
+    {
       "id": "event-a-thousand-and-one",
       "title": "MDLBEAST | Home of Soundstorm, XP & Music in the Middle East",
       "source_label": "MDLBEAST Events",
       "duration_hours": 24
+    },
+    {
+      "id": "event-5th-annual-workshop-on-quantitative-optical-imaging-technologies",
+      "title": "5th Annual Workshop on Quantitative Optical Imaging Technologies",
+      "source_label": "Saudi Universities and Technical Colleges",
+      "duration_hours": 79
     },
     {
       "id": "event-xp-music-futures-2026",

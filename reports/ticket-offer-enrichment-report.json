@@ -1,21 +1,11 @@
 {
-  "checked_at": "2026-10-15T08:03:32.681Z",
-  "targets": 8,
-  "evidence_found": 4,
+  "checked_at": "2026-10-16T07:40:55.718Z",
+  "targets": 7,
+  "evidence_found": 3,
   "changed": 0,
   "no_evidence": 3,
   "failed": 1,
   "results": [
-    {
-      "id": "event-15th-middle-east-enterprise-ai-analytics-summit",
-      "host": "eventbrite.com",
-      "url": "https://www.eventbrite.com/e/15th-middle-east-enterprise-ai-analytics-summit-tickets-1991914835895",
-      "status": "evidence",
-      "price_label": "free · 0 USD",
-      "price": 0,
-      "price_currency": "USD",
-      "method": "eventbrite-json-ld"
-    },
     {
       "id": "event-a-thousand-and-one",
       "host": "nofomo.com",
