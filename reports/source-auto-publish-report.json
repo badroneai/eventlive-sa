@@ -1,18 +1,18 @@
 {
-  "published_at": "2026-10-16T07:33:10.137Z",
+  "published_at": "2026-10-17T07:32:06.148Z",
   "dry_run": false,
   "include_partner": true,
   "source_candidates": "data/source_candidates.json",
   "events_catalog": "data/events_catalog.json",
-  "candidates_seen": 413,
+  "candidates_seen": 405,
   "totals": {
-    "candidates_seen": 413,
-    "published": 21,
-    "linked_existing": 363,
+    "candidates_seen": 405,
+    "published": 2,
+    "linked_existing": 374,
     "blocked": 29,
     "duplicate_review_alerts": 4,
     "category_fallback_alerts": 0,
-    "reconciled": 384,
+    "reconciled": 376,
     "session_windows_reconciled": 0
   },
   "session_window_changes": [],
@@ -92,109 +92,14 @@
   ],
   "published": [
     {
-      "candidate_id": "candidate-visit-saudi-seasons-okhtabotiya-kids-20260925-97585e97",
-      "event_id": "event-okhtabotiya-kids",
-      "title": "Okhtabotiya Kids"
+      "candidate_id": "candidate-visit-saudi-seasons-mexico-vs-the-world-20261031-eb212cd3",
+      "event_id": "event-mexico-vs-the-world",
+      "title": "Mexico vs The World"
     },
     {
-      "candidate_id": "candidate-saudi-university-events-steps-of-hope-20261001-1b576e49",
-      "event_id": "event-steps-of-hope",
-      "title": "Steps of Hope"
-    },
-    {
-      "candidate_id": "candidate-saudi-university-events-tree-of-hope-20261001-ed8c51e0",
-      "event_id": "event-tree-of-hope",
-      "title": "Tree of Hope"
-    },
-    {
-      "candidate_id": "candidate-saudi-university-events-kaust-lights-up-pink-20261001-73820bca",
-      "event_id": "event-kaust-lights-up-pink",
-      "title": "KAUST Lights Up Pink"
-    },
-    {
-      "candidate_id": "candidate-saudi-university-events-womens-support-group-a-safe-space-for-connection-and-support-20261006-689954ba",
-      "event_id": "event-womens-support-group-a-safe-space-for-connection-and-support",
-      "title": "Women’s Support group: A Safe Space for Connection and Support"
-    },
-    {
-      "candidate_id": "candidate-saudi-university-events-breast-cancer-awareness-hub-20261012-da378f50",
-      "event_id": "event-breast-cancer-awareness-hub",
-      "title": "Breast Cancer Awareness Hub"
-    },
-    {
-      "candidate_id": "candidate-visit-saudi-calendar-pdf-عرض-ستاند-أب-كوميدي-مع-صلاح-الدالي-20261016-4a38d19e",
-      "event_id": "event-عرض-ستاند-أب-كوميدي-مع-صلاح-الدالي",
-      "title": "عرض ستاند أب كوميدي مع صلاح الدالي"
-    },
-    {
-      "candidate_id": "candidate-saudi-university-events-hope-starts-with-awareness-a-webinar-by-bupa-and-human-resources-20261018-e43c881b",
-      "event_id": "event-hope-starts-with-awareness-a-webinar-by-bupa-and-human-resources",
-      "title": "Hope starts with awareness: A webinar by Bupa and Human Resources"
-    },
-    {
-      "candidate_id": "candidate-saudi-university-events-best-practices-in-air-quality-monitoring-20261019-352f67f1",
-      "event_id": "event-best-practices-in-air-quality-monitoring",
-      "title": "Best Practices in Air Quality Monitoring"
-    },
-    {
-      "candidate_id": "candidate-misk-hub-events-stc-x-misk-workshops-series-20261020-089e06b6",
-      "event_id": "event-stc-x-misk-workshops-series",
-      "title": "stc x Misk Workshops Series"
-    },
-    {
-      "candidate_id": "candidate-saudi-university-events-rethinking-our-cities-building-resilient-sustainable-and-livable-communi-20261022-e84a8040",
-      "event_id": "event-rethinking-our-cities-building-resilient-sustainable-and-livable-communi",
-      "title": "Rethinking Our Cities: Building Resilient, Sustainable and Livable Communities"
-    },
-    {
-      "candidate_id": "candidate-saudi-university-events-pink-cruise-20261022-09636ea5",
-      "event_id": "event-pink-cruise",
-      "title": "Pink Cruise"
-    },
-    {
-      "candidate_id": "candidate-saudi-university-events-annual-kaust-basketball-league-2026-20261025-9ec9be73",
-      "event_id": "event-annual-kaust-basketball-league-2026",
-      "title": "Annual KAUST Basketball League 2026"
-    },
-    {
-      "candidate_id": "candidate-saudi-university-events-saudi-hpc-ai-conference-2026-20261026-b9dc4213",
-      "event_id": "event-saudi-hpc-ai-conference-2026",
-      "title": "Saudi HPC/AI Conference 2026"
-    },
-    {
-      "candidate_id": "candidate-saudi-university-events-awareness-in-the-square-an-evening-of-hope-art-and-togetherness-20261028-ba1ee522",
-      "event_id": "event-awareness-in-the-square-an-evening-of-hope-art-and-togetherness",
-      "title": "Awareness in the Square: An Evening of Hope, Art and Togetherness"
-    },
-    {
-      "candidate_id": "candidate-saudi-university-events-spooky-open-mic-night-20261029-71373e3d",
-      "event_id": "event-spooky-open-mic-night",
-      "title": "Spooky Open Mic Night"
-    },
-    {
-      "candidate_id": "candidate-saudi-university-events-run-for-a-cure-20261030-f76bbf91",
-      "event_id": "event-run-for-a-cure",
-      "title": "Run for a Cure"
-    },
-    {
-      "candidate_id": "candidate-visit-saudi-seasons-girls-comedy-night-from-thmanyah-exit-20261030-6af2f802",
-      "event_id": "event-girls-comedy-night-from-thmanyah-exit",
-      "title": "Girls Comedy Night from Thmanyah Exit"
-    },
-    {
-      "candidate_id": "candidate-saudi-university-events-5th-annual-workshop-on-quantitative-optical-imaging-technologies-20261108-2724ab99",
-      "event_id": "event-5th-annual-workshop-on-quantitative-optical-imaging-technologies",
-      "title": "5th Annual Workshop on Quantitative Optical Imaging Technologies"
-    },
-    {
-      "candidate_id": "candidate-saudi-university-events-kaust-bruker-x-ray-microscopy-workshop-2026-20261202-f6770df9",
-      "event_id": "event-kaust-bruker-x-ray-microscopy-workshop-2026",
-      "title": "KAUST-Bruker X-ray Microscopy Workshop 2026"
-    },
-    {
-      "candidate_id": "candidate-visit-saudi-seasons-six-kings-slam-20261227-9f5e0969",
-      "event_id": "event-six-kings-slam-2",
-      "title": "Six Kings Slam"
+      "candidate_id": "candidate-visit-saudi-seasons-wwe-crown-jewel-20261107-42b4e1c6",
+      "event_id": "event-wwe-crown-jewel",
+      "title": "WWE Crown Jewel"
     }
   ],
   "linked_existing": [
@@ -649,6 +554,12 @@
       "reason": "already linked to catalog event"
     },
     {
+      "candidate_id": "candidate-visit-saudi-seasons-okhtabotiya-kids-20260925-97585e97",
+      "event_id": "event-okhtabotiya-kids",
+      "title": "Okhtabotiya Kids",
+      "reason": "already linked to catalog event"
+    },
+    {
       "candidate_id": "candidate-tuwaiq-academy-bootcamps-معسكر-التقنيات-الناشئة-والعوالم-الافتراضية-20260927-0647b188",
       "event_id": "event-معسكر-التقنيات-الناشئة-والعوالم-الافتراضية",
       "title": "معسكر التقنيات الناشئة والعوالم الافتراضية",
@@ -664,6 +575,24 @@
       "candidate_id": "candidate-tuwaiq-academy-bootcamps-معسكر-الذكاء-الاصطناعي-للقادة-20260927-91a5daba",
       "event_id": "event-معسكر-الذكاء-الاصطناعي-للقادة",
       "title": "معسكر الذكاء الاصطناعي للقادة",
+      "reason": "already linked to catalog event"
+    },
+    {
+      "candidate_id": "candidate-saudi-university-events-steps-of-hope-20261001-1b576e49",
+      "event_id": "event-steps-of-hope",
+      "title": "Steps of Hope",
+      "reason": "already linked to catalog event"
+    },
+    {
+      "candidate_id": "candidate-saudi-university-events-tree-of-hope-20261001-ed8c51e0",
+      "event_id": "event-tree-of-hope",
+      "title": "Tree of Hope",
+      "reason": "already linked to catalog event"
+    },
+    {
+      "candidate_id": "candidate-saudi-university-events-kaust-lights-up-pink-20261001-73820bca",
+      "event_id": "event-kaust-lights-up-pink",
+      "title": "KAUST Lights Up Pink",
       "reason": "already linked to catalog event"
     },
     {
@@ -715,6 +644,12 @@
       "reason": "already linked to catalog event"
     },
     {
+      "candidate_id": "candidate-saudi-university-events-womens-support-group-a-safe-space-for-connection-and-support-20261006-689954ba",
+      "event_id": "event-womens-support-group-a-safe-space-for-connection-and-support",
+      "title": "Women’s Support group: A Safe Space for Connection and Support",
+      "reason": "already linked to catalog event"
+    },
+    {
       "candidate_id": "candidate-visit-saudi-calendar-pdf-ربع-تون-20261007-4a38d19e",
       "event_id": "event-ربع-تون",
       "title": "ربع تون",
@@ -745,21 +680,15 @@
       "reason": "already linked to catalog event"
     },
     {
-      "candidate_id": "candidate-umm-al-qura-events-الفعالية-التوعوية-بمناسبة-اليوم-العالمي-للصحة-النفسية-20261011-9ecf274f",
-      "event_id": "event-الفعالية-التوعوية-بمناسبة-اليوم-العالمي-للصحة-النفسية",
-      "title": "الفعالية التوعوية بمناسبة اليوم العالمي للصحة النفسية",
-      "reason": "already linked to catalog event"
-    },
-    {
       "candidate_id": "candidate-umm-al-qura-events-مهارات-التعامل-مع-الضغوط-الدراسية-وتعزيز-الصحة-النفسية-20261011-85a1f9c8",
       "event_id": "event-مهارات-التعامل-مع-الضغوط-الدراسية-وتعزيز-الصحة-النفسية",
       "title": "مهارات التعامل مع الضغوط الدراسية وتعزيز الصحة النفسية",
       "reason": "already linked to catalog event"
     },
     {
-      "candidate_id": "candidate-umm-al-qura-events-شهادة-محترف-الأعمال-المعتمد-في-السكرتارية-التنفيذيةcbp-es-20261011-13714727",
-      "event_id": "event-شهادة-محترف-الأعمال-المعتمد-في-السكرتارية-التنفيذيةcbp-es",
-      "title": "شهادة محترف الأعمال المعتمد في السكرتارية التنفيذيةCBP-ES",
+      "candidate_id": "candidate-saudi-university-events-breast-cancer-awareness-hub-20261012-da378f50",
+      "event_id": "event-breast-cancer-awareness-hub",
+      "title": "Breast Cancer Awareness Hub",
       "reason": "already linked to catalog event"
     },
     {
@@ -787,57 +716,9 @@
       "reason": "already linked to catalog event"
     },
     {
-      "candidate_id": "candidate-visit-saudi-calendar-pdf-عرض-علاء-الشيخ-في-جدة-20261016-4a38d19e",
-      "event_id": "event-عرض-علاء-الشيخ-في-جدة",
-      "title": "عرض علاء الشيخ في جدة",
-      "reason": "already linked to catalog event"
-    },
-    {
-      "candidate_id": "candidate-mdlbeast-events-unstable-20261016-5647df2e",
-      "event_id": "event-unstable",
-      "title": "Unstable",
-      "reason": "already linked to catalog event"
-    },
-    {
-      "candidate_id": "candidate-visit-saudi-calendar-pdf-ليلة-ستاند-اب-بالانقليزية-من-مخرج-ثمانية-20261016-4a38d19e",
-      "event_id": "event-ليلة-ستاند-اب-بالانقليزية-من-مخرج-ثمانية",
-      "title": "ليلة ستاند اب بالانقليزية من مخرج ثمانية",
-      "reason": "already linked to catalog event"
-    },
-    {
-      "candidate_id": "candidate-visit-saudi-calendar-pdf-أمسية-كوبليه-في-الخبر-20261016-4a38d19e",
-      "event_id": "event-أمسية-كوبليه-في-الخبر",
-      "title": "أمسية كوبليه في الخبر",
-      "reason": "already linked to catalog event"
-    },
-    {
       "candidate_id": "candidate-visit-saudi-calendar-pdf-نهائيات-fifae-26-20261016-4a38d19e",
       "event_id": "event-نهائيات-fifae-26",
       "title": "نهائيات FIFAe 26",
-      "reason": "already linked to catalog event"
-    },
-    {
-      "candidate_id": "candidate-visit-saudi-calendar-pdf-ليلة-ستاند-أب-كوميدي-في-جدة-20261016-4a38d19e",
-      "event_id": "event-عرض-ستاند-أب-كوميدي-مع-صلاح-الدالي",
-      "title": "ليلة ستاند أب كوميدي في جدة",
-      "reason": "trusted duplicate linked to existing catalog event"
-    },
-    {
-      "candidate_id": "candidate-ithra-events-the-soul-of-place-leveraging-folklore-and-local-heritage-in-narrative-wr-20261016-ac10e34d",
-      "event_id": "event-the-soul-of-place-leveraging-folklore-and-local-heritage-in-narrative-wr",
-      "title": "The Soul of Place: Leveraging Folklore and Local Heritage in Narrative Writing",
-      "reason": "already linked to catalog event"
-    },
-    {
-      "candidate_id": "candidate-visit-saudi-calendar-alaa-el-sheikh-live-in-jeddah-20261016-6b4c2b50",
-      "event_id": "event-alaa-el-sheikh-live-in-jeddah",
-      "title": "Alaa El Sheikh Live in Jeddah",
-      "reason": "already linked to catalog event"
-    },
-    {
-      "candidate_id": "candidate-ithra-events-aramcorama-exhibit-20261017-854df5c1",
-      "event_id": "event-aramcorama-exhibit",
-      "title": "Aramcorama Exhibit",
       "reason": "already linked to catalog event"
     },
     {
@@ -847,141 +728,9 @@
       "reason": "already linked to catalog event"
     },
     {
-      "candidate_id": "candidate-ithra-events-echoes-of-the-familiar-20261017-cc43c2bd",
-      "event_id": "event-echoes-of-the-familiar",
-      "title": "Echoes of the Familiar",
-      "reason": "already linked to catalog event"
-    },
-    {
-      "candidate_id": "candidate-ithra-events-in-praise-of-the-artisan-20261017-14781307",
-      "event_id": "event-in-praise-of-the-artisan",
-      "title": "In Praise of the Artisan",
-      "reason": "already linked to catalog event"
-    },
-    {
-      "candidate_id": "candidate-ithra-events-ithra-art-prize-exhibition-20261017-83c2ab55",
-      "event_id": "event-ithra-art-prize-exhibition",
-      "title": "Ithra Art Prize Exhibition",
-      "reason": "already linked to catalog event"
-    },
-    {
-      "candidate_id": "candidate-ithra-events-printing-house-20261017-e56f4f89",
-      "event_id": "event-printing-house",
-      "title": "Printing House",
-      "reason": "already linked to catalog event"
-    },
-    {
-      "candidate_id": "candidate-ithra-events-tafasahu-make-room-20261017-562bc61d",
-      "event_id": "event-tafasahu-make-room",
-      "title": "Tafasahu: Make Room",
-      "reason": "already linked to catalog event"
-    },
-    {
-      "candidate_id": "candidate-ithra-events-tinkering-stations-20261017-5a2c4c0e",
-      "event_id": "event-tinkering-stations",
-      "title": "Tinkering Stations",
-      "reason": "already linked to catalog event"
-    },
-    {
-      "candidate_id": "candidate-ithra-events-toddler-saturday-20261017-739e1f00",
-      "event_id": "event-toddler-saturday",
-      "title": "Toddler Saturday",
-      "reason": "already linked to catalog event"
-    },
-    {
       "candidate_id": "candidate-ithra-events-mom-through-my-eyes-english-20261017-bf73d1ec",
       "event_id": "event-mom-through-my-eyes-english",
       "title": "Mom Through My Eyes (English)",
-      "reason": "already linked to catalog event"
-    },
-    {
-      "candidate_id": "candidate-ithra-events-spot-of-inspiration-20261017-5bac584c",
-      "event_id": "event-spot-of-inspiration",
-      "title": "Spot of Inspiration",
-      "reason": "already linked to catalog event"
-    },
-    {
-      "candidate_id": "candidate-ithra-events-childrens-museum-story-time-20261017-ada8b9db",
-      "event_id": "event-childrens-museum-story-time",
-      "title": "Children's Museum Story Time",
-      "reason": "already linked to catalog event"
-    },
-    {
-      "candidate_id": "candidate-ithra-events-trolley-show-20261017-56b483e3",
-      "event_id": "event-trolley-show",
-      "title": "Trolley Show",
-      "reason": "already linked to catalog event"
-    },
-    {
-      "candidate_id": "candidate-ithra-events-childrens-art-studio-20261017-2bf92d17",
-      "event_id": "event-childrens-art-studio",
-      "title": "Children's Art Studio",
-      "reason": "already linked to catalog event"
-    },
-    {
-      "candidate_id": "candidate-ithra-events-emboss-printing-experience-20261017-2671d1ce",
-      "event_id": "event-emboss-printing-experience",
-      "title": "Emboss Printing Experience",
-      "reason": "already linked to catalog event"
-    },
-    {
-      "candidate_id": "candidate-ithra-events-games-hub-20261017-fb83124c",
-      "event_id": "event-games-hub",
-      "title": "Games Hub",
-      "reason": "already linked to catalog event"
-    },
-    {
-      "candidate_id": "candidate-ithra-events-story-land-20261017-bb5dc01b",
-      "event_id": "event-story-land",
-      "title": "Story Land",
-      "reason": "already linked to catalog event"
-    },
-    {
-      "candidate_id": "candidate-ithra-events-adventure-around-the-kingdom-20261017-0217cd1b",
-      "event_id": "event-adventure-around-the-kingdom",
-      "title": "Adventure Around the Kingdom",
-      "reason": "already linked to catalog event"
-    },
-    {
-      "candidate_id": "candidate-ithra-events-treasure-hunt-20261017-3984a48b",
-      "event_id": "event-treasure-hunt",
-      "title": "Treasure Hunt",
-      "reason": "already linked to catalog event"
-    },
-    {
-      "candidate_id": "candidate-ithra-events-trivia-night-energy-memory-20261017-0b124a27",
-      "event_id": "event-trivia-night-energy-memory",
-      "title": "Trivia Night - Energy Memory",
-      "reason": "already linked to catalog event"
-    },
-    {
-      "candidate_id": "candidate-ithra-events-wind-energy-20261017-03067c4b",
-      "event_id": "event-wind-energy",
-      "title": "Wind Energy",
-      "reason": "already linked to catalog event"
-    },
-    {
-      "candidate_id": "candidate-ithra-events-workshop-at-the-library-20261017-7db9eb13",
-      "event_id": "event-workshop-at-the-library",
-      "title": "Workshop at the Library",
-      "reason": "already linked to catalog event"
-    },
-    {
-      "candidate_id": "candidate-ithra-events-imagination-oasis-20261017-104f8079",
-      "event_id": "event-imagination-oasis",
-      "title": "Imagination Oasis",
-      "reason": "already linked to catalog event"
-    },
-    {
-      "candidate_id": "candidate-ithra-events-from-saudi-home-20261017-e97ae151",
-      "event_id": "event-from-saudi-home",
-      "title": "From Saudi Home",
-      "reason": "already linked to catalog event"
-    },
-    {
-      "candidate_id": "candidate-ithra-events-museum-story-time-20261017-1104734c",
-      "event_id": "event-museum-story-time",
-      "title": "Museum Story Time",
       "reason": "already linked to catalog event"
     },
     {
@@ -997,6 +746,54 @@
       "reason": "already linked to catalog event"
     },
     {
+      "candidate_id": "candidate-saudi-university-events-hope-starts-with-awareness-a-webinar-by-bupa-and-human-resources-20261018-e43c881b",
+      "event_id": "event-hope-starts-with-awareness-a-webinar-by-bupa-and-human-resources",
+      "title": "Hope starts with awareness: A webinar by Bupa and Human Resources",
+      "reason": "already linked to catalog event"
+    },
+    {
+      "candidate_id": "candidate-ithra-events-aramcorama-exhibit-20261019-854df5c1",
+      "event_id": "event-aramcorama-exhibit",
+      "title": "Aramcorama Exhibit",
+      "reason": "already linked to catalog event"
+    },
+    {
+      "candidate_id": "candidate-ithra-events-echoes-of-the-familiar-20261019-cc43c2bd",
+      "event_id": "event-echoes-of-the-familiar",
+      "title": "Echoes of the Familiar",
+      "reason": "already linked to catalog event"
+    },
+    {
+      "candidate_id": "candidate-ithra-events-in-praise-of-the-artisan-20261019-14781307",
+      "event_id": "event-in-praise-of-the-artisan",
+      "title": "In Praise of the Artisan",
+      "reason": "already linked to catalog event"
+    },
+    {
+      "candidate_id": "candidate-ithra-events-ithra-art-prize-exhibition-20261019-83c2ab55",
+      "event_id": "event-ithra-art-prize-exhibition",
+      "title": "Ithra Art Prize Exhibition",
+      "reason": "already linked to catalog event"
+    },
+    {
+      "candidate_id": "candidate-ithra-events-printing-house-20261019-e56f4f89",
+      "event_id": "event-printing-house",
+      "title": "Printing House",
+      "reason": "already linked to catalog event"
+    },
+    {
+      "candidate_id": "candidate-ithra-events-tafasahu-make-room-20261019-562bc61d",
+      "event_id": "event-tafasahu-make-room",
+      "title": "Tafasahu: Make Room",
+      "reason": "already linked to catalog event"
+    },
+    {
+      "candidate_id": "candidate-ithra-events-tinkering-stations-20261019-5a2c4c0e",
+      "event_id": "event-tinkering-stations",
+      "title": "Tinkering Stations",
+      "reason": "already linked to catalog event"
+    },
+    {
       "candidate_id": "candidate-umm-al-qura-events-ورشة-القيادات-الجامعة-20261019-0c540be7",
       "event_id": "event-ورشة-القيادات-الجامعة",
       "title": "ورشة القيادات الجامعة",
@@ -1009,9 +806,27 @@
       "reason": "already linked to catalog event"
     },
     {
+      "candidate_id": "candidate-ithra-events-spot-of-inspiration-20261019-5bac584c",
+      "event_id": "event-spot-of-inspiration",
+      "title": "Spot of Inspiration",
+      "reason": "already linked to catalog event"
+    },
+    {
+      "candidate_id": "candidate-ithra-events-childrens-museum-story-time-20261019-ada8b9db",
+      "event_id": "event-childrens-museum-story-time",
+      "title": "Children's Museum Story Time",
+      "reason": "already linked to catalog event"
+    },
+    {
       "candidate_id": "candidate-umm-al-qura-events-دورة-مهارات-الاكسل-20261019-f7a3cc66",
       "event_id": "event-دورة-مهارات-الاكسل",
       "title": "دورة مهارات الاكسل",
+      "reason": "already linked to catalog event"
+    },
+    {
+      "candidate_id": "candidate-ithra-events-childrens-art-studio-20261019-2bf92d17",
+      "event_id": "event-childrens-art-studio",
+      "title": "Children's Art Studio",
       "reason": "already linked to catalog event"
     },
     {
@@ -1027,9 +842,39 @@
       "reason": "already linked to catalog event"
     },
     {
+      "candidate_id": "candidate-saudi-university-events-best-practices-in-air-quality-monitoring-20261019-352f67f1",
+      "event_id": "event-best-practices-in-air-quality-monitoring",
+      "title": "Best Practices in Air Quality Monitoring",
+      "reason": "already linked to catalog event"
+    },
+    {
+      "candidate_id": "candidate-ithra-events-emboss-printing-experience-20261019-2671d1ce",
+      "event_id": "event-emboss-printing-experience",
+      "title": "Emboss Printing Experience",
+      "reason": "already linked to catalog event"
+    },
+    {
       "candidate_id": "candidate-misk-hub-events-nonprofit-governance-from-compliance-to-institutional-excellence-20261019-9f36f3aa",
       "event_id": "event-nonprofit-governance-from-compliance-to-institutional-excellence",
       "title": "Nonprofit Governance: From Compliance to Institutional Excellence",
+      "reason": "already linked to catalog event"
+    },
+    {
+      "candidate_id": "candidate-ithra-events-adventure-around-the-kingdom-20261019-0217cd1b",
+      "event_id": "event-adventure-around-the-kingdom",
+      "title": "Adventure Around the Kingdom",
+      "reason": "already linked to catalog event"
+    },
+    {
+      "candidate_id": "candidate-ithra-events-treasure-hunt-20261019-3984a48b",
+      "event_id": "event-treasure-hunt",
+      "title": "Treasure Hunt",
+      "reason": "already linked to catalog event"
+    },
+    {
+      "candidate_id": "candidate-ithra-events-trivia-night-energy-memory-20261019-0b124a27",
+      "event_id": "event-trivia-night-energy-memory",
+      "title": "Trivia Night - Energy Memory",
       "reason": "already linked to catalog event"
     },
     {
@@ -1063,9 +908,21 @@
       "reason": "already linked to catalog event"
     },
     {
+      "candidate_id": "candidate-ithra-events-imagination-oasis-20261019-104f8079",
+      "event_id": "event-imagination-oasis",
+      "title": "Imagination Oasis",
+      "reason": "already linked to catalog event"
+    },
+    {
       "candidate_id": "candidate-ithra-events-bridges-to-the-spanish-language-20261019-4dfe9de2",
       "event_id": "event-bridges-to-the-spanish-language",
       "title": "Bridges to the Spanish Language",
+      "reason": "already linked to catalog event"
+    },
+    {
+      "candidate_id": "candidate-ithra-events-trolley-show-20261019-56b483e3",
+      "event_id": "event-trolley-show",
+      "title": "Trolley Show",
       "reason": "already linked to catalog event"
     },
     {
@@ -1105,6 +962,12 @@
       "reason": "already linked to catalog event"
     },
     {
+      "candidate_id": "candidate-misk-hub-events-stc-x-misk-workshops-series-20261020-089e06b6",
+      "event_id": "event-stc-x-misk-workshops-series",
+      "title": "stc x Misk Workshops Series",
+      "reason": "already linked to catalog event"
+    },
+    {
       "candidate_id": "candidate-ithra-events-stem-xpert-club-20261020-28ee60b9",
       "event_id": "event-stem-xpert-club",
       "title": "STEM Xpert Club",
@@ -1135,6 +998,18 @@
       "reason": "already linked to catalog event"
     },
     {
+      "candidate_id": "candidate-ithra-events-story-land-20261021-bb5dc01b",
+      "event_id": "event-story-land",
+      "title": "Story Land",
+      "reason": "already linked to catalog event"
+    },
+    {
+      "candidate_id": "candidate-ithra-events-from-saudi-home-20261021-e97ae151",
+      "event_id": "event-from-saudi-home",
+      "title": "From Saudi Home",
+      "reason": "already linked to catalog event"
+    },
+    {
       "candidate_id": "candidate-ithra-events-immersive-introduction-to-arabic-writing-and-type-design-20261021-3708788d",
       "event_id": "event-immersive-introduction-to-arabic-writing-and-type-design",
       "title": "Immersive Introduction to Arabic Writing and Type Design",
@@ -1144,6 +1019,12 @@
       "candidate_id": "candidate-ithra-events-storyteller-of-the-day-20261021-94528a46",
       "event_id": "event-storyteller-of-the-day",
       "title": "Storyteller of the Day",
+      "reason": "already linked to catalog event"
+    },
+    {
+      "candidate_id": "candidate-ithra-events-wind-energy-20261021-03067c4b",
+      "event_id": "event-wind-energy",
+      "title": "Wind Energy",
       "reason": "already linked to catalog event"
     },
     {
@@ -1189,6 +1070,12 @@
       "reason": "already linked to catalog event"
     },
     {
+      "candidate_id": "candidate-saudi-university-events-rethinking-our-cities-building-resilient-sustainable-and-livable-communi-20261022-e84a8040",
+      "event_id": "event-rethinking-our-cities-building-resilient-sustainable-and-livable-communi",
+      "title": "Rethinking Our Cities: Building Resilient, Sustainable and Livable Communities",
+      "reason": "already linked to catalog event"
+    },
+    {
       "candidate_id": "candidate-ithra-events-little-explorers-20261022-1cc1993f",
       "event_id": "event-little-explorers",
       "title": "Little Explorers",
@@ -1219,6 +1106,18 @@
       "reason": "already linked to catalog event"
     },
     {
+      "candidate_id": "candidate-saudi-university-events-pink-cruise-20261022-09636ea5",
+      "event_id": "event-pink-cruise",
+      "title": "Pink Cruise",
+      "reason": "already linked to catalog event"
+    },
+    {
+      "candidate_id": "candidate-ithra-events-museum-story-time-20261022-1104734c",
+      "event_id": "event-museum-story-time",
+      "title": "Museum Story Time",
+      "reason": "already linked to catalog event"
+    },
+    {
       "candidate_id": "candidate-visit-saudi-calendar-pdf-فينا-نحكي؟-كوميديا-ستاند-أب-مع-جون-أشقر-20261023-4a38d19e",
       "event_id": "event-فينا-نحكي؟-كوميديا-ستاند-أب-مع-جون-أشقر",
       "title": "”فينا نحكي؟“ كوميديا ستاند أب مع جون أشقر",
@@ -1240,6 +1139,12 @@
       "candidate_id": "candidate-experience-alula-events-alula-wellness-festival-20261023-5b74606a",
       "event_id": "event-alula-wellness-festival",
       "title": "AlUla Wellness Festival",
+      "reason": "already linked to catalog event"
+    },
+    {
+      "candidate_id": "candidate-ithra-events-games-hub-20261023-fb83124c",
+      "event_id": "event-games-hub",
+      "title": "Games Hub",
       "reason": "already linked to catalog event"
     },
     {
@@ -1273,6 +1178,12 @@
       "reason": "already linked to catalog event"
     },
     {
+      "candidate_id": "candidate-ithra-events-toddler-saturday-20261024-739e1f00",
+      "event_id": "event-toddler-saturday",
+      "title": "Toddler Saturday",
+      "reason": "already linked to catalog event"
+    },
+    {
       "candidate_id": "candidate-ithra-events-1-2-3-lets-rhyme-20261024-4d37515a",
       "event_id": "event-1-2-3-lets-rhyme",
       "title": "1, 2, 3, Let's Rhyme!",
@@ -1297,6 +1208,18 @@
       "reason": "already linked to catalog event"
     },
     {
+      "candidate_id": "candidate-ithra-events-workshop-at-the-library-20261024-7db9eb13",
+      "event_id": "event-workshop-at-the-library",
+      "title": "Workshop at the Library",
+      "reason": "already linked to catalog event"
+    },
+    {
+      "candidate_id": "candidate-saudi-university-events-annual-kaust-basketball-league-2026-20261025-9ec9be73",
+      "event_id": "event-annual-kaust-basketball-league-2026",
+      "title": "Annual KAUST Basketball League 2026",
+      "reason": "already linked to catalog event"
+    },
+    {
       "candidate_id": "candidate-eye-of-riyadh-events-global-proptech-summit-2026-20261025-7c1d3001",
       "event_id": "event-global-proptech-summit-2026",
       "title": "Global Proptech Summit 2026",
@@ -1312,6 +1235,12 @@
       "candidate_id": "candidate-hayy-jameel-events-hayy-makers-woodworking-course-level-2-with-ahmad-sofi-20261025-11baa66b",
       "event_id": "event-hayy-makers",
       "title": "Hayy Makers | Woodworking Course (Level 2) with Ahmad Sofi",
+      "reason": "already linked to catalog event"
+    },
+    {
+      "candidate_id": "candidate-saudi-university-events-saudi-hpc-ai-conference-2026-20261026-b9dc4213",
+      "event_id": "event-saudi-hpc-ai-conference-2026",
+      "title": "Saudi HPC/AI Conference 2026",
       "reason": "already linked to catalog event"
     },
     {
@@ -1387,6 +1316,12 @@
       "reason": "already linked to catalog event"
     },
     {
+      "candidate_id": "candidate-saudi-university-events-awareness-in-the-square-an-evening-of-hope-art-and-togetherness-20261028-ba1ee522",
+      "event_id": "event-awareness-in-the-square-an-evening-of-hope-art-and-togetherness",
+      "title": "Awareness in the Square: An Evening of Hope, Art and Togetherness",
+      "reason": "already linked to catalog event"
+    },
+    {
       "candidate_id": "candidate-mdlbeast-events-a-thousand-and-one-20261029-05573173",
       "event_id": "event-a-thousand-and-one",
       "title": "A Thousand and One",
@@ -1429,15 +1364,33 @@
       "reason": "already linked to catalog event"
     },
     {
+      "candidate_id": "candidate-saudi-university-events-spooky-open-mic-night-20261029-71373e3d",
+      "event_id": "event-spooky-open-mic-night",
+      "title": "Spooky Open Mic Night",
+      "reason": "already linked to catalog event"
+    },
+    {
       "candidate_id": "candidate-visit-saudi-calendar-pdf-ليلة-البنات-الكوميدية-من-مخرج-ثمانية-20261030-4a38d19e",
       "event_id": "event-ليلة-البنات-الكوميدية-من-مخرج-ثمانية",
       "title": "ليلة البنات الكوميدية من مخرج ثمانية",
       "reason": "already linked to catalog event"
     },
     {
+      "candidate_id": "candidate-saudi-university-events-run-for-a-cure-20261030-f76bbf91",
+      "event_id": "event-run-for-a-cure",
+      "title": "Run for a Cure",
+      "reason": "already linked to catalog event"
+    },
+    {
       "candidate_id": "candidate-riyadh-city-events-new-global-sport-conference-20261030-4c21d3ac",
       "event_id": "event-new-global-sport-conference",
       "title": "New Global Sport Conference",
+      "reason": "already linked to catalog event"
+    },
+    {
+      "candidate_id": "candidate-visit-saudi-seasons-girls-comedy-night-from-thmanyah-exit-20261030-6af2f802",
+      "event_id": "event-girls-comedy-night-from-thmanyah-exit",
+      "title": "Girls Comedy Night from Thmanyah Exit",
       "reason": "already linked to catalog event"
     },
     {
@@ -1636,6 +1589,12 @@
       "candidate_id": "candidate-informa-connect-saudi-events-saudi-ai-week-20261108-ddaedbfa",
       "event_id": "event-saudi-ai-week",
       "title": "Saudi AI Week",
+      "reason": "already linked to catalog event"
+    },
+    {
+      "candidate_id": "candidate-saudi-university-events-5th-annual-workshop-on-quantitative-optical-imaging-technologies-20261108-2724ab99",
+      "event_id": "event-5th-annual-workshop-on-quantitative-optical-imaging-technologies",
+      "title": "5th Annual Workshop on Quantitative Optical Imaging Technologies",
       "reason": "already linked to catalog event"
     },
     {
@@ -1987,6 +1946,12 @@
       "reason": "already linked to catalog event"
     },
     {
+      "candidate_id": "candidate-saudi-university-events-kaust-bruker-x-ray-microscopy-workshop-2026-20261202-f6770df9",
+      "event_id": "event-kaust-bruker-x-ray-microscopy-workshop-2026",
+      "title": "KAUST-Bruker X-ray Microscopy Workshop 2026",
+      "reason": "already linked to catalog event"
+    },
+    {
       "candidate_id": "candidate-ithra-events-open-art-space-20261202-ac79cac6",
       "event_id": "event-open-art-space-2",
       "title": "Open Art Space",
@@ -2188,6 +2153,12 @@
       "candidate_id": "candidate-riyadh-city-events-next-gen-iot-expo-20261221-dfb4907e",
       "event_id": "event-next-gen-iot-expo",
       "title": "Next-Gen IoT Expo",
+      "reason": "already linked to catalog event"
+    },
+    {
+      "candidate_id": "candidate-visit-saudi-seasons-six-kings-slam-20261227-9f5e0969",
+      "event_id": "event-six-kings-slam-2",
+      "title": "Six Kings Slam",
       "reason": "already linked to catalog event"
     },
     {

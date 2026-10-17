@@ -1,6 +1,6 @@
 # EventLive Official Resolver Report
 
-- generated_at: 2026-10-16T07:41:02.358Z
+- generated_at: 2026-10-17T07:40:48.495Z
 - source_ops_report: reports/source-ops-report.json
 - leads_seen: 10
 - resolver_tasks: 1

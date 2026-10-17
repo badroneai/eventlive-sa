@@ -1,12 +1,13 @@
 # Future Skills Program Enrichment Report
 
-- generated_at: 2026-10-16T07:33:18.576Z
+- generated_at: 2026-10-17T07:32:14.774Z
 - targets: 29
-- enriched: 23
-- failed: 6
+- enriched: 24
+- failed: 5
 
 ## Enriched
 
+- Advanced Excel for Data Analysis - دورة اكسيل لتحليل البيانات (13041) - outcomes=1, topics=4, requirements=4, metadata=8
 - CompTIA A+ (13042) - outcomes=1, topics=7, requirements=4, metadata=8
 - Cloud Computing Essentials - أساسيات الحوسبة السحابية (13043) - outcomes=1, topics=4, requirements=4, metadata=8
 - Duplicate of Cloud Computing Essentials - أساسيات الحوسبة السحابية (13044) - outcomes=1, topics=4, requirements=4, metadata=8
@@ -37,5 +38,4 @@
 - دورة +CompTIA A (13039) - The operation was aborted due to timeout
 - Security Operations, Threat Detection & Incident Response - عمليات الأمن السيبراني، واكتشاف التهديدات، والاستجابة للحوادث (13040) - The operation was aborted due to timeout
 - أساسيات الحوسبة السحابية - Cloud Computing Essentials (13035) - The operation was aborted due to timeout
-- Advanced Excel for Data Analysis - دورة اكسيل لتحليل البيانات (13041) - The operation was aborted due to timeout
 - Linux Administration (13057) - HTTP 404

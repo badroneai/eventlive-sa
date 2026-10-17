@@ -1,8 +1,8 @@
 {
-  "checked_at": "2026-10-16T07:40:55.718Z",
+  "checked_at": "2026-10-17T07:40:41.893Z",
   "targets": 7,
   "evidence_found": 3,
-  "changed": 0,
+  "changed": 1,
   "no_evidence": 3,
   "failed": 1,
   "results": [
@@ -42,8 +42,8 @@
       "host": "informaconnect.com",
       "url": "https://informaconnect.com/education-investment-saudi.com/purchase/select-package/",
       "status": "evidence",
-      "price_label": "659 USD",
-      "price": 659,
+      "price_label": "699 USD",
+      "price": 699,
       "price_currency": "USD",
       "method": "informa-visible-package-price"
     },

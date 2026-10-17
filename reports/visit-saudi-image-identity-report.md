@@ -1,16 +1,17 @@
 # EventLive Visit Saudi Image Identity Report
 
-- generated_at: 2026-10-16T07:33:14.327Z
-- pdf_crop_assignments: 46
-- verified: 43
-- struck: 3
-- slots_seen_this_cycle: 49
+- generated_at: 2026-10-17T07:32:10.499Z
+- pdf_crop_assignments: 43
+- verified: 39
+- struck: 4
+- slots_seen_this_cycle: 44
 
 ## Struck (fell back to generated cover)
 
-- عرض علاء الشيخ في الرياض (visit-saudi-summer-2026-p006-top-left.jpg) - slot-vacated - no dated card currently occupies page 6 top-left of https://www.visitsaudi.com/content/dam/documents/saudi-calendar-ar.pdf
-- عرض بوش بشاشة ستاند أب كوميدي (visit-saudi-summer-2026-p006-bottom-right.jpg) - slot-vacated - no dated card currently occupies page 6 bottom-right of https://www.visitsaudi.com/content/dam/documents/saudi-calendar-ar.pdf
-- سفرجل في جدة (visit-saudi-summer-2026-p045-top-right.jpg) - slot-vacated - no dated card currently occupies page 45 top-right of https://www.visitsaudi.com/content/dam/documents/saudi-calendar-ar.pdf
+- عرض علاء الشيخ في جدة (visit-saudi-summer-2026-p021-top-right.jpg) - slot-vacated - no dated card currently occupies page 21 top-right of https://www.visitsaudi.com/content/dam/documents/saudi-calendar-ar.pdf
+- ليلة ستاند اب بالانقليزية من مخرج ثمانية (visit-saudi-summer-2026-p006-bottom-left.jpg) - slot-vacated - no dated card currently occupies page 6 bottom-left of https://www.visitsaudi.com/content/dam/documents/saudi-calendar-ar.pdf
+- أمسية كوبليه في الخبر (visit-saudi-summer-2026-p026-top-right.jpg) - slot-vacated - no dated card currently occupies page 26 top-right of https://www.visitsaudi.com/content/dam/documents/saudi-calendar-ar.pdf
+- ليلة ستاند أب كوميدي في جدة (visit-saudi-summer-2026-p045-top-left.jpg) - slot-vacated - no dated card currently occupies page 45 top-left of https://www.visitsaudi.com/content/dam/documents/saudi-calendar-ar.pdf
 
 ## Verified
 
@@ -24,11 +25,7 @@
 - دوري الملوك MENA (visit-saudi-summer-2026-p005-bottom-right.jpg)
 - الاخطبوطية كيدز (visit-saudi-summer-2026-p005-bottom-left.jpg)
 - ربع تون (visit-saudi-summer-2026-p006-top-right.jpg)
-- عرض علاء الشيخ في جدة (visit-saudi-summer-2026-p021-top-right.jpg)
-- ليلة ستاند اب بالانقليزية من مخرج ثمانية (visit-saudi-summer-2026-p006-bottom-left.jpg)
-- أمسية كوبليه في الخبر (visit-saudi-summer-2026-p026-top-right.jpg)
 - نهائيات FIFAe 26 (visit-saudi-summer-2026-p045-bottom-left.jpg)
-- ليلة ستاند أب كوميدي في جدة (visit-saudi-summer-2026-p045-top-left.jpg)
 - ”فينا نحكي؟“ عرض ستاند أب كوميدي لجون أشقر (visit-saudi-summer-2026-p026-top-left.jpg)
 - Six Kings Slam (visit-saudi-summer-2026-p007-top-right.jpg)
 - فينا نحكي؟ عرض ستاند أب كوميدي يقدمه جون أشقر (visit-saudi-summer-2026-p007-top-left.jpg)

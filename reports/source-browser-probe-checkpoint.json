@@ -1,27 +1,159 @@
 {
   "schema": "eventlive.source-browser-probe-checkpoint.v1",
-  "checkpointed_at": "2026-10-16T07:17:50.946Z",
-  "generated_at": "2026-10-16T07:17:31.392Z",
+  "checkpointed_at": "2026-10-17T07:19:06.830Z",
+  "generated_at": "2026-10-17T07:16:19.307Z",
   "source_registry": "data/source_registry.json",
   "output_dir": "data/raw/browser-probes",
-  "sources_planned": 2,
-  "sources_completed": 2,
+  "sources_planned": 4,
+  "sources_completed": 4,
   "totals": {
-    "probed": 2,
+    "probed": 4,
     "browser_network_api": 0,
     "browser_hydration_payload": 0,
-    "rendered_html_candidates": 2,
+    "rendered_html_candidates": 3,
     "blocked_or_protected": 0,
     "policy_skipped": 0
   },
   "completed_ids": [
+    "monshaat-events",
+    "dhahran-expo-calendar",
     "qassim-chamber-events",
     "riyadh-city-events"
   ],
   "sources": [
     {
+      "id": "monshaat-events",
+      "probed_at": "2026-10-17T07:18:34.799Z",
+      "name": "Monsha'at All Events",
+      "priority": 9,
+      "url": "https://www.monshaat.gov.sa/en/events-list",
+      "final_url": "chrome-error://chromewebdata/",
+      "status": "error",
+      "http_status": 0,
+      "navigation_error": "page.goto: Timeout 30000ms exceeded.\nCall log:\n  - navigating to \"https://www.monshaat.gov.sa/en/events-list\", waiting until \"domcontentloaded\"\n",
+      "duration_ms": 135028,
+      "classification": "empty-or-shell",
+      "next_action": "اعتبرها shell وابحث عن API أو مسار بديل قبل أي collector.",
+      "title": "",
+      "text_bytes": 0,
+      "html_bytes": 0,
+      "html_snapshot": "data/raw/browser-probes/monshaat-events-2026-10-17T07-16-19-307Z.html",
+      "screenshot": "",
+      "signals": {
+        "has_next_data": false,
+        "has_nuxt": false,
+        "has_json_ld": false,
+        "has_event_schema": false,
+        "date_snippets": [],
+        "event_like_links": []
+      },
+      "script_signals": {
+        "next_data_scripts": 0,
+        "nuxt_scripts": 0,
+        "json_ld_scripts": 0,
+        "large_inline_scripts": 0
+      },
+      "network_total": 0,
+      "network_endpoints": [],
+      "network_sample": []
+    },
+    {
+      "id": "dhahran-expo-calendar",
+      "probed_at": "2026-10-17T07:18:48.112Z",
+      "name": "Dhahran Expo Calendar",
+      "priority": 22,
+      "url": "https://dhahranexpo.com.sa",
+      "final_url": "https://dhahranexpo.com.sa/",
+      "status": "ok",
+      "http_status": 200,
+      "navigation_error": "",
+      "duration_ms": 13274,
+      "classification": "rendered-html-candidates",
+      "next_action": "اكتب extractor مرن من DOM بعد الرندر أو حسن selector الحالي.",
+      "title": "Dhahran Expo",
+      "text_bytes": 5075,
+      "html_bytes": 496661,
+      "html_snapshot": "data/raw/browser-probes/dhahran-expo-calendar-2026-10-17T07-16-19-307Z.html",
+      "screenshot": "data/raw/browser-probes/dhahran-expo-calendar-2026-10-17T07-16-19-307Z.png",
+      "signals": {
+        "has_next_data": false,
+        "has_nuxt": false,
+        "has_json_ld": false,
+        "has_event_schema": false,
+        "date_snippets": [
+          "Event Date Organizer 1 Offer Home Expo 8 -11 Jan Saudi Aramco 2 Music Concert 29 Jan CreativeXP 3 Heavy Equipment Connect 2 – 4",
+          "any 5 Hala February Shopping Exhibition 6 – 15 February Al-Baraa Muhammed Bin Abdullah Al-Duaij Establishment for Organizing Exhibition",
+          "2 Jun CreativeXP 11 Jewels of the World 23- 26 Jun MPP-ME LLC 12 Music Concert 3 July Creative XP 13 Music Concert 17 July Creativ",
+          "tute 17 Crafts & Handicrafts Exhibition 1 – 4 Sep Sharqia Chamber 18 Arabian and International Industries Exhibition 2 – 11 Sep I",
+          "nical Conference & Expo - STATEC Arabia 8 – 10 Sep Aldrich Int’l LLC 20 Music Concert 18 Sep Creative XP 21 The Egyptian Products",
+          "Exhibition 21 - 30 Sep Al-Baraa Muhammed Bin Abdullah Al-Duaij Establishment for Organizing Exhibition",
+          "s & Conferences 22 Wadaef Exhibition 27 – 29 Sep Sharqia Chamber 23 Rotating Equipment Event 28 -30 Sept. Aldrich Int’l LLC 24 P",
+          "rivate Event 7-8 Oct. Ashraq Development Company 25 Consumer Trade Fair 2-9 Dec Al-Baraa Muhammed Bi"
+        ],
+        "event_like_links": [
+          {
+            "text": "List of 2026 Events",
+            "href": "https://dhahranexpo.com.sa/#9"
+          },
+          {
+            "text": "List of 2025 Events",
+            "href": "https://dhahranexpo.com.sa/#8"
+          },
+          {
+            "text": "List of 2024 Events",
+            "href": "https://dhahranexpo.com.sa/#6"
+          },
+          {
+            "text": "List of 2023 Events",
+            "href": "https://dhahranexpo.com.sa/#5"
+          },
+          {
+            "text": "List of 2022 Events",
+            "href": "https://dhahranexpo.com.sa/#4"
+          },
+          {
+            "text": "List of 2021 Events",
+            "href": "https://dhahranexpo.com.sa/#3"
+          },
+          {
+            "text": "List of 2020 Events",
+            "href": "https://dhahranexpo.com.sa/#1"
+          },
+          {
+            "text": "List of 2019 Events",
+            "href": "https://dhahranexpo.com.sa/#2"
+          },
+          {
+            "text": "Workshops",
+            "href": "https://dhahranexpo.com.sa/venue-facilities-wokshops.aspx"
+          },
+          {
+            "text": "",
+            "href": "https://dhahranexpo.com.sa/venue-facilities-concourse.aspx"
+          },
+          {
+            "text": "Concourse",
+            "href": "https://dhahranexpo.com.sa/venue-facilities-concourse.aspx"
+          },
+          {
+            "text": "Organize Event",
+            "href": "https://dhahranexpo.com.sa/inquiry.aspx"
+          }
+        ]
+      },
+      "script_signals": {
+        "next_data_scripts": 0,
+        "nuxt_scripts": 0,
+        "json_ld_scripts": 0,
+        "large_inline_scripts": 0
+      },
+      "network_total": 0,
+      "network_endpoints": [],
+      "network_sample": []
+    },
+    {
       "id": "qassim-chamber-events",
-      "probed_at": "2026-10-16T07:17:37.918Z",
+      "probed_at": "2026-10-17T07:18:53.829Z",
       "name": "Qassim Chamber Events",
       "priority": 60,
       "url": "https://tc.qcc.org.sa/",
@@ -29,21 +161,21 @@
       "status": "ok",
       "http_status": 200,
       "navigation_error": "",
-      "duration_ms": 5928,
+      "duration_ms": 5648,
       "classification": "rendered-html-candidates",
       "next_action": "اكتب extractor مرن من DOM بعد الرندر أو حسن selector الحالي.",
       "title": "إدارة التدريب - غرفة القصيم",
       "text_bytes": 927,
       "html_bytes": 12532,
-      "html_snapshot": "data/raw/browser-probes/qassim-chamber-events-2026-10-16T07-17-31-392Z.html",
-      "screenshot": "data/raw/browser-probes/qassim-chamber-events-2026-10-16T07-17-31-392Z.png",
+      "html_snapshot": "data/raw/browser-probes/qassim-chamber-events-2026-10-17T07-16-19-307Z.html",
+      "screenshot": "data/raw/browser-probes/qassim-chamber-events-2026-10-17T07-16-19-307Z.png",
       "signals": {
         "has_next_data": false,
         "has_nuxt": false,
         "has_json_ld": false,
         "has_event_schema": false,
         "date_snippets": [
-          "قي على الفعالية 3 أيام من الآن الاثنين, أكتوبر 19 2026, 16:30 1448-05-08 الذكاء الاصطناعي في التسويق وصناعة المحتوى عرض التفاص",
+          "بقي على الفعالية يومين من الآن الاثنين, أكتوبر 19 2026, 16:30 1448-05-08 الذكاء الاصطناعي في التسويق وصناعة المحتوى عرض التفاص",
           "ت ريادة الأعمال الفعالية انتهت الاثنين, أكتوبر 12 2026, 22:04 1448-05-01 دورة مقدمة وأساسيات ريادة الأعمال عرض التفاصيل المهار",
           "أساسية للمبيعات الفعالية انتهت الاثنين, أكتوبر 12 2026, 16:30 1448-05-01 دورة المهارات الأساسية للمبيعات عرض التفاصيل ‹ 1 2 3"
         ],
@@ -138,7 +270,7 @@
     },
     {
       "id": "riyadh-city-events",
-      "probed_at": "2026-10-16T07:17:50.946Z",
+      "probed_at": "2026-10-17T07:19:06.830Z",
       "name": "Riyadh City Events",
       "priority": 51,
       "url": "https://riyadh.sa/en/events/all",
@@ -146,14 +278,14 @@
       "status": "ok",
       "http_status": 200,
       "navigation_error": "",
-      "duration_ms": 12984,
+      "duration_ms": 12947,
       "classification": "rendered-html-candidates",
       "next_action": "اكتب extractor مرن من DOM بعد الرندر أو حسن selector الحالي.",
       "title": "الموقع الرسمي لمدينة الرياض",
-      "text_bytes": 825,
-      "html_bytes": 155262,
-      "html_snapshot": "data/raw/browser-probes/riyadh-city-events-2026-10-16T07-17-31-392Z.html",
-      "screenshot": "data/raw/browser-probes/riyadh-city-events-2026-10-16T07-17-31-392Z.png",
+      "text_bytes": 827,
+      "html_bytes": 155264,
+      "html_snapshot": "data/raw/browser-probes/riyadh-city-events-2026-10-17T07-16-19-307Z.html",
+      "screenshot": "data/raw/browser-probes/riyadh-city-events-2026-10-17T07-16-19-307Z.png",
       "signals": {
         "has_next_data": false,
         "has_nuxt": false,

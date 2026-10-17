@@ -1,12 +1,21 @@
 {
-  "generated_at": "2026-10-16T07:33:18.576Z",
+  "generated_at": "2026-10-17T07:32:14.774Z",
   "catalog": "data/events_catalog.json",
   "totals": {
     "targets": 29,
-    "enriched": 23,
-    "failed": 6
+    "enriched": 24,
+    "failed": 5
   },
   "enriched": [
+    {
+      "id": "event-advanced-excel-for-data-analysis-دورة-اكسيل-لتحليل-البيانات",
+      "title": "Advanced Excel for Data Analysis - دورة اكسيل لتحليل البيانات",
+      "group_id": "13041",
+      "goals": 1,
+      "features": 4,
+      "requirements": 4,
+      "metadata": 8
+    },
     {
       "id": "event-comptia-a",
       "title": "CompTIA A+",
@@ -238,12 +247,6 @@
       "id": "event-أساسيات-الحوسبة-السحابية-cloud-computing-essentials",
       "title": "أساسيات الحوسبة السحابية - Cloud Computing Essentials",
       "group_id": "13035",
-      "reason": "The operation was aborted due to timeout"
-    },
-    {
-      "id": "event-advanced-excel-for-data-analysis-دورة-اكسيل-لتحليل-البيانات",
-      "title": "Advanced Excel for Data Analysis - دورة اكسيل لتحليل البيانات",
-      "group_id": "13041",
       "reason": "The operation was aborted due to timeout"
     },
     {

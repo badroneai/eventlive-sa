@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-16T07:33:14.327Z",
+  "generated_at": "2026-10-17T07:32:10.499Z",
   "catalog": "data/events_catalog.json",
   "candidates": "data/source_candidates.json",
   "manifest": "data/event_image_cache_manifest.json",
@@ -9,32 +9,39 @@
     "min_intersection": 2
   },
   "totals": {
-    "pdf_crop_assignments": 46,
-    "verified": 43,
-    "struck": 3,
-    "slots_seen_this_cycle": 49
+    "pdf_crop_assignments": 43,
+    "verified": 39,
+    "struck": 4,
+    "slots_seen_this_cycle": 44
   },
   "struck": [
     {
-      "id": "event-عرض-علاء-الشيخ-في-الرياض",
-      "title": "عرض علاء الشيخ في الرياض",
-      "file": "visit-saudi-summer-2026-p006-top-left.jpg",
+      "id": "event-عرض-علاء-الشيخ-في-جدة",
+      "title": "عرض علاء الشيخ في جدة",
+      "file": "visit-saudi-summer-2026-p021-top-right.jpg",
       "reason": "slot-vacated",
-      "detail": "no dated card currently occupies page 6 top-left of https://www.visitsaudi.com/content/dam/documents/saudi-calendar-ar.pdf"
+      "detail": "no dated card currently occupies page 21 top-right of https://www.visitsaudi.com/content/dam/documents/saudi-calendar-ar.pdf"
     },
     {
-      "id": "event-عرض-بوش-بشاشة-ستاند-أب-كوميدي",
-      "title": "عرض بوش بشاشة ستاند أب كوميدي",
-      "file": "visit-saudi-summer-2026-p006-bottom-right.jpg",
+      "id": "event-ليلة-ستاند-اب-بالانقليزية-من-مخرج-ثمانية",
+      "title": "ليلة ستاند اب بالانقليزية من مخرج ثمانية",
+      "file": "visit-saudi-summer-2026-p006-bottom-left.jpg",
       "reason": "slot-vacated",
-      "detail": "no dated card currently occupies page 6 bottom-right of https://www.visitsaudi.com/content/dam/documents/saudi-calendar-ar.pdf"
+      "detail": "no dated card currently occupies page 6 bottom-left of https://www.visitsaudi.com/content/dam/documents/saudi-calendar-ar.pdf"
     },
     {
-      "id": "event-سفرجل-في-جدة",
-      "title": "سفرجل في جدة",
-      "file": "visit-saudi-summer-2026-p045-top-right.jpg",
+      "id": "event-أمسية-كوبليه-في-الخبر",
+      "title": "أمسية كوبليه في الخبر",
+      "file": "visit-saudi-summer-2026-p026-top-right.jpg",
       "reason": "slot-vacated",
-      "detail": "no dated card currently occupies page 45 top-right of https://www.visitsaudi.com/content/dam/documents/saudi-calendar-ar.pdf"
+      "detail": "no dated card currently occupies page 26 top-right of https://www.visitsaudi.com/content/dam/documents/saudi-calendar-ar.pdf"
+    },
+    {
+      "id": "event-عرض-ستاند-أب-كوميدي-مع-صلاح-الدالي",
+      "title": "ليلة ستاند أب كوميدي في جدة",
+      "file": "visit-saudi-summer-2026-p045-top-left.jpg",
+      "reason": "slot-vacated",
+      "detail": "no dated card currently occupies page 45 top-left of https://www.visitsaudi.com/content/dam/documents/saudi-calendar-ar.pdf"
     }
   ],
   "verified": [
@@ -132,56 +139,12 @@
       ]
     },
     {
-      "id": "event-عرض-علاء-الشيخ-في-جدة",
-      "title": "عرض علاء الشيخ في جدة",
-      "file": "visit-saudi-summer-2026-p021-top-right.jpg",
-      "matched_tokens": [
-        "عرض",
-        "علاء",
-        "الشيخ",
-        "جده"
-      ]
-    },
-    {
-      "id": "event-ليلة-ستاند-اب-بالانقليزية-من-مخرج-ثمانية",
-      "title": "ليلة ستاند اب بالانقليزية من مخرج ثمانية",
-      "file": "visit-saudi-summer-2026-p006-bottom-left.jpg",
-      "matched_tokens": [
-        "ليله",
-        "ستاند",
-        "بالانقليزيه",
-        "مخرج",
-        "ثمانيه"
-      ]
-    },
-    {
-      "id": "event-أمسية-كوبليه-في-الخبر",
-      "title": "أمسية كوبليه في الخبر",
-      "file": "visit-saudi-summer-2026-p026-top-right.jpg",
-      "matched_tokens": [
-        "امسيه",
-        "كوبليه",
-        "الخبر"
-      ]
-    },
-    {
       "id": "event-نهائيات-fifae-26",
       "title": "نهائيات FIFAe 26",
       "file": "visit-saudi-summer-2026-p045-bottom-left.jpg",
       "matched_tokens": [
         "نهاييات",
         "fifae"
-      ]
-    },
-    {
-      "id": "event-عرض-ستاند-أب-كوميدي-مع-صلاح-الدالي",
-      "title": "ليلة ستاند أب كوميدي في جدة",
-      "file": "visit-saudi-summer-2026-p045-top-left.jpg",
-      "matched_tokens": [
-        "ليله",
-        "ستاند",
-        "كوميدي",
-        "جده"
       ]
     },
     {

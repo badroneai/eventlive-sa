@@ -1,6 +1,6 @@
 # Strategic Platform Source Radar
 
-Generated at: 2026-10-15T07:33:50.882Z
+Generated at: 2026-10-17T07:03:30.932Z
 
 Policy: evidence refresh, API-surface mapping, and source strategy only. This radar does not auto-publish catalog events.
 
@@ -51,8 +51,8 @@ Policy: evidence refresh, API-surface mapping, and source strategy only. This ra
 - Project use: Keep in the 6-hour source ring; Arabic and English API payloads are reachable and useful for tourism-facing event discovery.
 - Title: تقويم السعودية | تابع العطلات والفعاليات المميزة - الموقع الرسمي للسياحة السعودية
 - Hint URLs: https://www.googletagmanager.com, https://cdn.consentmanager.net, https://delivery.consentmanager.net, https://www.googletagmanager.com/gtm.js?id=, https://www.clarity.ms/tag/, https://www.visitsaudi.com/images/SoundStorm-1.2e16d0ba.fill-1200x630.jpg, https://www.visitsaudi.com/ar/saudi-calendar, https://www.visitsaudi.com/ar
-  - API 200 https://www.visitsaudi.com/bin/api/v3/events?locale=ar: 21 items; معرض اللغة العربية للطفل, معرض اللغة العربية 28, كرنفال بريدة الدولي للتمور, تجربة شاطئ قالو, «استمرارية 26» برنامج الفنانين الناشئين في فنون الوسائط الجديدة بمركز الدرعية لفنون المستقبل
-  - API 200 https://www.visitsaudi.com/bin/api/v3/events?locale=en: 21 items; Arabic Language Exhibition for kids, Arabic Language Exhibition 28, Buraydah International Dates Carnival, GALU Beach Experience, Continuum '26 Diriyah Art Futures Emerging New Media Artists Programme
+  - API 200 https://www.visitsaudi.com/bin/api/v3/events?locale=ar: 22 items; معرض اللغة العربية للطفل, معرض اللغة العربية 28, تجربة شاطئ قالو, «استمرارية 26» برنامج الفنانين الناشئين في فنون الوسائط الجديدة بمركز الدرعية لفنون المستقبل, الأخطبوطية كيدز
+  - API 200 https://www.visitsaudi.com/bin/api/v3/events?locale=en: 22 items; Arabic Language Exhibition for kids, Arabic Language Exhibition 28, GALU Beach Experience, Continuum '26 Diriyah Art Futures Emerging New Media Artists Programme, Okhtabotiya Kids
 
 ### webook Explore
 
@@ -61,7 +61,7 @@ Policy: evidence refresh, API-surface mapping, and source strategy only. This ra
 - Classification: protected (200, fetch)
 - Project use: Use for lead discovery, ticket-link corroboration, and duplicate checks; require official organizer or authority confirmation before promotion.
 - Title: -
-- Hint URLs: https://wbk-assets.webook.com, https://api.webook.com, https://webook.cmscloud.ai, https://geolocation.webook.com, https://images.cmscloud.ai, https://apps.apple.com/sa/app/webook-com-fun-things-to-do/id6468667896, https://play.google.com/store/apps/details?id=com.webook.android, https://wbk-assets.webook.com/8.0/assets/index-Crt6USRC.js
+- Hint URLs: https://wbk-assets.webook.com, https://api.webook.com, https://webook.cmscloud.ai, https://geolocation.webook.com, https://images.cmscloud.ai, https://apps.apple.com/sa/app/webook-com-fun-things-to-do/id6468667896, https://play.google.com/store/apps/details?id=com.webook.android, https://wbk-assets.webook.com/8.01/assets/index-BX9A4cRO.js
 
 ### Enjoy Saudi
 
@@ -70,7 +70,7 @@ Policy: evidence refresh, API-surface mapping, and source strategy only. This ra
 - Classification: protected (403, fetch)
 - Project use: Treat as official GEA-facing evidence and partnership target; terminal fetch may be protected, so scheduled failures are not catalog failures.
 - Title: تعذر الوصول إلى الصفحة | Access Unavailable
-- Hint URLs: https://cdn.gea.gov.sa/8JbVQI1IkdzFCZigAg5ApDSJBkXqZa084hcQN75c6BrshfyWJT1M6D9qXLhOZi5i/style.css, https://cdn.gea.gov.sa/8JbVQI1IkdzFCZigAg5ApDSJBkXqZa084hcQN75c6BrshfyWJT1M6D9qXLhOZi5i/data-rate-005-429.png, https://cdn.gea.gov.sa/8JbVQI1IkdzFCZigAg5ApDSJBkXqZa084hcQN75c6BrshfyWJT1M6D9qXLhOZi5i/shield-exclamation.svg, https://static.cloudflareinsights.com/beacon.min.js/v4bc70e2c01a94c73b74392e4234840661791215815920
+- Hint URLs: https://cdn.gea.gov.sa/8JbVQI1IkdzFCZigAg5ApDSJBkXqZa084hcQN75c6BrshfyWJT1M6D9qXLhOZi5i/style.css, https://cdn.gea.gov.sa/8JbVQI1IkdzFCZigAg5ApDSJBkXqZa084hcQN75c6BrshfyWJT1M6D9qXLhOZi5i/data-rate-005-429.png, https://cdn.gea.gov.sa/8JbVQI1IkdzFCZigAg5ApDSJBkXqZa084hcQN75c6BrshfyWJT1M6D9qXLhOZi5i/shield-exclamation.svg, https://static.cloudflareinsights.com/beacon.min.js/vce701823e78c4301a35b7e07294d87301792088814092
 
 ### General Entertainment Authority Events
 

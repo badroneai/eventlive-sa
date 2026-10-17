@@ -1,19 +1,19 @@
 {
   "schema": "eventlive.i18n-en-surface.v1",
-  "generated_at": "2026-10-16T07:52:36.821Z",
-  "pages_scanned": 1973,
-  "pages_with_arabic": 440,
+  "generated_at": "2026-10-17T07:52:14.173Z",
+  "pages_scanned": 1975,
+  "pages_with_arabic": 434,
   "template_regressions": [],
   "script_template_regressions": [],
   "style_template_regressions": [],
   "recurring_surface_debt": [
     {
       "text": "../assets/event-images/الشهادة-الدولية-للحاسب-والإنترنت-ic3-a46ba6d2eb.jpg",
-      "pages": 59,
+      "pages": 57,
       "example": "events/event-الإنصات-الأكاديمي-الذكي-من-رصد-المعاناة-إلى-التمكين.html",
       "script": true
     }
   ],
   "recurring_total": 1,
-  "content_prose_lines": 2221
+  "content_prose_lines": 2193
 }
