@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-17T07:32:10.499Z",
+  "generated_at": "2026-10-18T07:50:25.460Z",
   "catalog": "data/events_catalog.json",
   "candidates": "data/source_candidates.json",
   "manifest": "data/event_image_cache_manifest.json",
@@ -9,41 +9,12 @@
     "min_intersection": 2
   },
   "totals": {
-    "pdf_crop_assignments": 43,
+    "pdf_crop_assignments": 39,
     "verified": 39,
-    "struck": 4,
+    "struck": 0,
     "slots_seen_this_cycle": 44
   },
-  "struck": [
-    {
-      "id": "event-عرض-علاء-الشيخ-في-جدة",
-      "title": "عرض علاء الشيخ في جدة",
-      "file": "visit-saudi-summer-2026-p021-top-right.jpg",
-      "reason": "slot-vacated",
-      "detail": "no dated card currently occupies page 21 top-right of https://www.visitsaudi.com/content/dam/documents/saudi-calendar-ar.pdf"
-    },
-    {
-      "id": "event-ليلة-ستاند-اب-بالانقليزية-من-مخرج-ثمانية",
-      "title": "ليلة ستاند اب بالانقليزية من مخرج ثمانية",
-      "file": "visit-saudi-summer-2026-p006-bottom-left.jpg",
-      "reason": "slot-vacated",
-      "detail": "no dated card currently occupies page 6 bottom-left of https://www.visitsaudi.com/content/dam/documents/saudi-calendar-ar.pdf"
-    },
-    {
-      "id": "event-أمسية-كوبليه-في-الخبر",
-      "title": "أمسية كوبليه في الخبر",
-      "file": "visit-saudi-summer-2026-p026-top-right.jpg",
-      "reason": "slot-vacated",
-      "detail": "no dated card currently occupies page 26 top-right of https://www.visitsaudi.com/content/dam/documents/saudi-calendar-ar.pdf"
-    },
-    {
-      "id": "event-عرض-ستاند-أب-كوميدي-مع-صلاح-الدالي",
-      "title": "ليلة ستاند أب كوميدي في جدة",
-      "file": "visit-saudi-summer-2026-p045-top-left.jpg",
-      "reason": "slot-vacated",
-      "detail": "no dated card currently occupies page 45 top-left of https://www.visitsaudi.com/content/dam/documents/saudi-calendar-ar.pdf"
-    }
-  ],
+  "struck": [],
   "verified": [
     {
       "id": "event-سوق-الثلاثاء-الشعبي",

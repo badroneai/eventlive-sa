@@ -1,13 +1,13 @@
 {
-  "generated_at": "2026-10-17T07:35:03.549Z",
+  "generated_at": "2026-10-18T07:52:26.668Z",
   "catalog": "data/events_catalog.json",
   "source": "Visit Saudi Calendar",
   "totals": {
     "targets": 50,
-    "candidates": 12,
+    "candidates": 13,
     "enriched": 50,
     "fetched": 50,
-    "images": 48,
+    "images": 49,
     "fetch_failures": 0
   },
   "enriched": [
@@ -364,6 +364,14 @@
       "features": 7
     },
     {
+      "id": "event-wagef-momos-live-in-jeddah",
+      "title": "Wagef! Momos Live in Jeddah",
+      "source_method": "official-page-html",
+      "image_url": "https://www.visitsaudi.com/content/dam/wvs/calendar/wagef-momos-live-in-jeddah.jpg",
+      "fetched": true,
+      "features": 7
+    },
+    {
       "id": "event-the-innovation-driven-water-sustainability-conference",
       "title": "The Innovation Driven Water Sustainability Conference",
       "source_method": "official-page-html",
@@ -398,14 +406,6 @@
     {
       "id": "event-eid-al-fitr",
       "title": "Eid Al-Fitr",
-      "source_method": "official-page-html",
-      "image_url": "",
-      "fetched": true,
-      "features": 6
-    },
-    {
-      "id": "event-eid-al-adha",
-      "title": "Eid Al-Adha",
       "source_method": "official-page-html",
       "image_url": "",
       "fetched": true,

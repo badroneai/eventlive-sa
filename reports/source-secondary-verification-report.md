@@ -1,13 +1,13 @@
 # EventLive Source Secondary Verification Report
 
-- generated_at: 2026-10-17T07:32:05.957Z
-- candidates_seen: 405
-- candidates_considered: 29
+- generated_at: 2026-10-18T07:50:21.961Z
+- candidates_seen: 409
+- candidates_considered: 35
 - promoted: 0
 - official_evidence_promoted: 0
 - official_programs_promoted: 0
 - official_catalog_matches_promoted: 0
-- still_blocked: 29
+- still_blocked: 35
 
 ## Promoted
 
@@ -16,6 +16,6 @@
 
 ## Still Blocked Summary
 
-- not-secondary-verifiable: 6
+- not-secondary-verifiable: 12
 - needs-secondary-official-proof: 23
 

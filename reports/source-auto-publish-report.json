@@ -1,18 +1,18 @@
 {
-  "published_at": "2026-10-17T07:32:06.148Z",
+  "published_at": "2026-10-18T07:50:22.105Z",
   "dry_run": false,
   "include_partner": true,
   "source_candidates": "data/source_candidates.json",
   "events_catalog": "data/events_catalog.json",
-  "candidates_seen": 405,
+  "candidates_seen": 409,
   "totals": {
-    "candidates_seen": 405,
-    "published": 2,
-    "linked_existing": 374,
+    "candidates_seen": 409,
+    "published": 8,
+    "linked_existing": 372,
     "blocked": 29,
     "duplicate_review_alerts": 4,
     "category_fallback_alerts": 0,
-    "reconciled": 376,
+    "reconciled": 380,
     "session_windows_reconciled": 0
   },
   "session_window_changes": [],
@@ -92,14 +92,44 @@
   ],
   "published": [
     {
-      "candidate_id": "candidate-visit-saudi-seasons-mexico-vs-the-world-20261031-eb212cd3",
-      "event_id": "event-mexico-vs-the-world",
-      "title": "Mexico vs The World"
+      "candidate_id": "candidate-visit-saudi-seasons-aramco-f4-saudi-arabian-championship-20261001-c1591ef2",
+      "event_id": "event-aramco-f4-saudi-arabian-championship",
+      "title": "Aramco F4 Saudi Arabian Championship"
     },
     {
-      "candidate_id": "candidate-visit-saudi-seasons-wwe-crown-jewel-20261107-42b4e1c6",
-      "event_id": "event-wwe-crown-jewel",
-      "title": "WWE Crown Jewel"
+      "candidate_id": "candidate-umm-al-qura-events-ورشة-عمل-بعنوان-بريق-الأناقة-20261018-25c33d02",
+      "event_id": "event-ورشة-عمل-بعنوان-بريق-الأناقة",
+      "title": "ورشة عمل بعنوان بريق الأناقة"
+    },
+    {
+      "candidate_id": "candidate-umm-al-qura-events-ورشة-عمل-بعنوان-باقة-حلوى-20261018-25ce9bf6",
+      "event_id": "event-ورشة-عمل-بعنوان-باقة-حلوى",
+      "title": "ورشة عمل بعنوان باقة حلوى"
+    },
+    {
+      "candidate_id": "candidate-umm-al-qura-events-التصيد-والاحتيال-والاستجابة-للحوادث-السيبرانية-20261018-bd38a914",
+      "event_id": "event-التصيد-والاحتيال-والاستجابة-للحوادث-السيبرانية",
+      "title": "التصيد والاحتيال والاستجابة للحوادث السيبرانية"
+    },
+    {
+      "candidate_id": "candidate-umm-al-qura-events-دورة-تدريبية-إدارة-الضغوط-والقلق-أثناء-الاختبارات-نحو-أداء-نفسي-وأكاديمي-20261021-80b897fd",
+      "event_id": "event-دورة-تدريبية-إدارة-الضغوط-والقلق-أثناء-الاختبارات-نحو-أداء-نفسي-وأكاديمي",
+      "title": "دورة تدريبية ( إدارة الضغوط والقلق أثناء الاختبارات نحو أداء نفسي وأكاديمي متوازن )"
+    },
+    {
+      "candidate_id": "candidate-visit-saudi-seasons-fadel-chaker-concert-20261022-fd144903",
+      "event_id": "event-fadel-chaker-concert",
+      "title": "Fadel Chaker Concert"
+    },
+    {
+      "candidate_id": "candidate-visit-saudi-seasons-fadel-chaker-concert-second-nights-20261023-2167bd91",
+      "event_id": "event-fadel-chaker-concert-second-nights",
+      "title": "Fadel Chaker Concert Second Nights"
+    },
+    {
+      "candidate_id": "candidate-visit-saudi-calendar-wagef-momos-live-in-jeddah-20261127-59470a9a",
+      "event_id": "event-wagef-momos-live-in-jeddah",
+      "title": "Wagef! Momos Live in Jeddah"
     }
   ],
   "linked_existing": [
@@ -476,12 +506,6 @@
       "reason": "already linked to catalog event"
     },
     {
-      "candidate_id": "candidate-hayy-jameel-events-hayy-explorers-recess-showcase-time-reflected-on-water-20260912-7a95a5fa",
-      "event_id": "event-recess-showcase-time-reflected-on-water",
-      "title": "Hayy Explorers | Recess Showcase: Time Reflected on Water",
-      "reason": "already linked to catalog event"
-    },
-    {
       "candidate_id": "candidate-tuwaiq-academy-bootcamps-معسكر-الذكاء-الاصطناعي-في-تطوير-تطبيقات-الويب-باستخدام-python-و-django-20260913-fde7cd36",
       "event_id": "event-معسكر-الذكاء-الاصطناعي-في-تطوير-تطبيقات-الويب-باستخدام-python-و-django",
       "title": "معسكر الذكاء الاصطناعي في تطوير تطبيقات الويب باستخدام Python و Django",
@@ -680,12 +704,6 @@
       "reason": "already linked to catalog event"
     },
     {
-      "candidate_id": "candidate-umm-al-qura-events-مهارات-التعامل-مع-الضغوط-الدراسية-وتعزيز-الصحة-النفسية-20261011-85a1f9c8",
-      "event_id": "event-مهارات-التعامل-مع-الضغوط-الدراسية-وتعزيز-الصحة-النفسية",
-      "title": "مهارات التعامل مع الضغوط الدراسية وتعزيز الصحة النفسية",
-      "reason": "already linked to catalog event"
-    },
-    {
       "candidate_id": "candidate-saudi-university-events-breast-cancer-awareness-hub-20261012-da378f50",
       "event_id": "event-breast-cancer-awareness-hub",
       "title": "Breast Cancer Awareness Hub",
@@ -719,18 +737,6 @@
       "candidate_id": "candidate-visit-saudi-calendar-pdf-نهائيات-fifae-26-20261016-4a38d19e",
       "event_id": "event-نهائيات-fifae-26",
       "title": "نهائيات FIFAe 26",
-      "reason": "already linked to catalog event"
-    },
-    {
-      "candidate_id": "candidate-ithra-events-bedayat-beginnings-of-saudi-art-movement-20261017-e0a239ef",
-      "event_id": "event-bedayat-beginnings-of-saudi-art-movement",
-      "title": "Bedayat: Beginnings of Saudi Art Movement",
-      "reason": "already linked to catalog event"
-    },
-    {
-      "candidate_id": "candidate-ithra-events-mom-through-my-eyes-english-20261017-bf73d1ec",
-      "event_id": "event-mom-through-my-eyes-english",
-      "title": "Mom Through My Eyes (English)",
       "reason": "already linked to catalog event"
     },
     {
@@ -1406,6 +1412,12 @@
       "reason": "already linked to catalog event"
     },
     {
+      "candidate_id": "candidate-visit-saudi-seasons-mexico-vs-the-world-20261031-eb212cd3",
+      "event_id": "event-mexico-vs-the-world",
+      "title": "Mexico vs The World",
+      "reason": "already linked to catalog event"
+    },
+    {
       "candidate_id": "candidate-visit-saudi-calendar-pdf-نسيم-الخبر-20261101-4a38d19e",
       "event_id": "event-نسيم-الخبر",
       "title": "نسيم الخبر",
@@ -1577,6 +1589,12 @@
       "candidate_id": "candidate-hayy-jameel-events-hayy-cinema-the-golden-palm-film-programme-the-best-of-the-saudi-film-fe-20261107-a46a5479",
       "event_id": "event-hayy-cinema-the-golden-palm-film-programme-the-best-of-the-saudi-film-fe",
       "title": "Hayy Cinema | The Golden Palm Film Programme: The Best of the Saudi Film Festival",
+      "reason": "already linked to catalog event"
+    },
+    {
+      "candidate_id": "candidate-visit-saudi-seasons-wwe-crown-jewel-20261107-42b4e1c6",
+      "event_id": "event-wwe-crown-jewel",
+      "title": "WWE Crown Jewel",
       "reason": "already linked to catalog event"
     },
     {

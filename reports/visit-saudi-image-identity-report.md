@@ -1,17 +1,14 @@
 # EventLive Visit Saudi Image Identity Report
 
-- generated_at: 2026-10-17T07:32:10.499Z
-- pdf_crop_assignments: 43
+- generated_at: 2026-10-18T07:50:25.460Z
+- pdf_crop_assignments: 39
 - verified: 39
-- struck: 4
+- struck: 0
 - slots_seen_this_cycle: 44
 
 ## Struck (fell back to generated cover)
 
-- عرض علاء الشيخ في جدة (visit-saudi-summer-2026-p021-top-right.jpg) - slot-vacated - no dated card currently occupies page 21 top-right of https://www.visitsaudi.com/content/dam/documents/saudi-calendar-ar.pdf
-- ليلة ستاند اب بالانقليزية من مخرج ثمانية (visit-saudi-summer-2026-p006-bottom-left.jpg) - slot-vacated - no dated card currently occupies page 6 bottom-left of https://www.visitsaudi.com/content/dam/documents/saudi-calendar-ar.pdf
-- أمسية كوبليه في الخبر (visit-saudi-summer-2026-p026-top-right.jpg) - slot-vacated - no dated card currently occupies page 26 top-right of https://www.visitsaudi.com/content/dam/documents/saudi-calendar-ar.pdf
-- ليلة ستاند أب كوميدي في جدة (visit-saudi-summer-2026-p045-top-left.jpg) - slot-vacated - no dated card currently occupies page 45 top-left of https://www.visitsaudi.com/content/dam/documents/saudi-calendar-ar.pdf
+- none
 
 ## Verified
 

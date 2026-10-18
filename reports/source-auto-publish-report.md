@@ -1,11 +1,11 @@
 # EventLive Source Auto Publish Report
 
-- published_at: 2026-10-17T07:32:06.148Z
+- published_at: 2026-10-18T07:50:22.105Z
 - dry_run: false
 - include_partner: true
-- candidates_seen: 405
-- published_new: 2
-- linked_existing: 374
+- candidates_seen: 409
+- published_new: 8
+- linked_existing: 372
 - blocked_remaining: 29
 - duplicate_review_alerts: 4
 
@@ -20,8 +20,14 @@
 
 | Candidate | Status | Catalog event | Reason |
 |---|---|---|---|
-| candidate-visit-saudi-seasons-mexico-vs-the-world-20261031-eb212cd3 | published | event-mexico-vs-the-world | Mexico vs The World |
-| candidate-visit-saudi-seasons-wwe-crown-jewel-20261107-42b4e1c6 | published | event-wwe-crown-jewel | WWE Crown Jewel |
+| candidate-visit-saudi-seasons-aramco-f4-saudi-arabian-championship-20261001-c1591ef2 | published | event-aramco-f4-saudi-arabian-championship | Aramco F4 Saudi Arabian Championship |
+| candidate-umm-al-qura-events-ورشة-عمل-بعنوان-بريق-الأناقة-20261018-25c33d02 | published | event-ورشة-عمل-بعنوان-بريق-الأناقة | ورشة عمل بعنوان بريق الأناقة |
+| candidate-umm-al-qura-events-ورشة-عمل-بعنوان-باقة-حلوى-20261018-25ce9bf6 | published | event-ورشة-عمل-بعنوان-باقة-حلوى | ورشة عمل بعنوان باقة حلوى |
+| candidate-umm-al-qura-events-التصيد-والاحتيال-والاستجابة-للحوادث-السيبرانية-20261018-bd38a914 | published | event-التصيد-والاحتيال-والاستجابة-للحوادث-السيبرانية | التصيد والاحتيال والاستجابة للحوادث السيبرانية |
+| candidate-umm-al-qura-events-دورة-تدريبية-إدارة-الضغوط-والقلق-أثناء-الاختبارات-نحو-أداء-نفسي-وأكاديمي-20261021-80b897fd | published | event-دورة-تدريبية-إدارة-الضغوط-والقلق-أثناء-الاختبارات-نحو-أداء-نفسي-وأكاديمي | دورة تدريبية ( إدارة الضغوط والقلق أثناء الاختبارات نحو أداء نفسي وأكاديمي متوازن ) |
+| candidate-visit-saudi-seasons-fadel-chaker-concert-20261022-fd144903 | published | event-fadel-chaker-concert | Fadel Chaker Concert |
+| candidate-visit-saudi-seasons-fadel-chaker-concert-second-nights-20261023-2167bd91 | published | event-fadel-chaker-concert-second-nights | Fadel Chaker Concert Second Nights |
+| candidate-visit-saudi-calendar-wagef-momos-live-in-jeddah-20261127-59470a9a | published | event-wagef-momos-live-in-jeddah | Wagef! Momos Live in Jeddah |
 | candidate-moc-cultural-subportals-skill-development-initiative-20210714-10f7dc2c | linked-existing | event-skill-development-initiative | already linked to catalog event |
 | candidate-moc-cultural-subportals-sitar-20220921-cda2e068 | linked-existing | event-sitar | already linked to catalog event |
 | candidate-moc-cultural-subportals-urban-transformation-initiative-20241031-7a933cab | linked-existing | event-urban-transformation-initiative | already linked to catalog event |
@@ -84,7 +90,6 @@
 | candidate-tuwaiq-academy-bootcamps-معسكر-بناء-وتطوير-نماذج-الذكاء-الاصطناعي-20260906-c8b1323c | linked-existing | event-معسكر-بناء-وتطوير-نماذج-الذكاء-الاصطناعي | already linked to catalog event |
 | candidate-tuwaiq-academy-bootcamps-معسكر-إدارة-الحوكمة-والمخاطر-والامتثال-grc-20260906-cb343b82 | linked-existing | event-معسكر-إدارة-الحوكمة-والمخاطر-والامتثال-grc | already linked to catalog event |
 | candidate-tuwaiq-academy-bootcamps-دبلوم-الأمن-السيبراني-المتقدم-20260906-23af5636 | linked-existing | event-دبلوم-الأمن-السيبراني-المتقدم | already linked to catalog event |
-| candidate-hayy-jameel-events-hayy-explorers-recess-showcase-time-reflected-on-water-20260912-7a95a5fa | linked-existing | event-recess-showcase-time-reflected-on-water | already linked to catalog event |
 | candidate-tuwaiq-academy-bootcamps-معسكر-الذكاء-الاصطناعي-في-تطوير-تطبيقات-الويب-باستخدام-python-و-django-20260913-fde7cd36 | linked-existing | event-معسكر-الذكاء-الاصطناعي-في-تطوير-تطبيقات-الويب-باستخدام-python-و-django | already linked to catalog event |
 | candidate-tuwaiq-academy-bootcamps-معسكر-طويق-السيبراني-20260913-d741a736 | linked-existing | event-معسكر-طويق-السيبراني-2 | already linked to catalog event |
 | candidate-tuwaiq-academy-bootcamps-معسكر-طويق-السيبراني-20260913-0881f1b9 | linked-existing | event-معسكر-طويق-السيبراني-2 | already linked to catalog event |
@@ -118,15 +123,12 @@
 | candidate-umm-al-qura-events-حراك-يعود-من-جديد-بداية-جديدة-وأثر-مستدام-20261007-1529f492 | linked-existing | event-حراك-يعود-من-جديد-بداية-جديدة-وأثر-مستدام | already linked to catalog event |
 | candidate-hayy-jameel-events-jameel-library-opening-programme-at-the-edge-of-renewal-with-the-khaleej-20261008-75328003 | linked-existing | event-jameel-library-opening-programme-at-the-edge-of-renewal-with-the-khaleej | already linked to catalog event |
 | candidate-hayy-jameel-events-jameel-library-october-community-programmes-20261008-90c0eb92 | linked-existing | event-jameel-library-october-community-programmes | already linked to catalog event |
-| candidate-umm-al-qura-events-مهارات-التعامل-مع-الضغوط-الدراسية-وتعزيز-الصحة-النفسية-20261011-85a1f9c8 | linked-existing | event-مهارات-التعامل-مع-الضغوط-الدراسية-وتعزيز-الصحة-النفسية | already linked to catalog event |
 | candidate-saudi-university-events-breast-cancer-awareness-hub-20261012-da378f50 | linked-existing | event-breast-cancer-awareness-hub | already linked to catalog event |
 | candidate-misk-hub-programs-nonprofit-sector-skills-program-20261012-075740c9 | linked-existing | event-nonprofit-sector-skills-program | already linked to catalog event |
 | candidate-umm-al-qura-events-الفعالية-التوعوية-بمناسبة-اليوم-العالمي-لسرطان-الثدي-20261013-105008b7 | linked-existing | event-الفعالية-التوعوية-بمناسبة-اليوم-العالمي-لسرطان-الثدي | already linked to catalog event |
 | candidate-umm-al-qura-events-برنامج-اتزان-20261014-29e04aac | linked-existing | event-برنامج-اتزان | already linked to catalog event |
 | candidate-visit-saudi-calendar-stand-up-comedy-shows-this-weekend-from-exit-thmanyah-20261015-e79bb314 | linked-existing | event-stand-up-comedy-shows-this-weekend-from-exit-thmanyah | already linked to catalog event |
 | candidate-visit-saudi-calendar-pdf-نهائيات-fifae-26-20261016-4a38d19e | linked-existing | event-نهائيات-fifae-26 | already linked to catalog event |
-| candidate-ithra-events-bedayat-beginnings-of-saudi-art-movement-20261017-e0a239ef | linked-existing | event-bedayat-beginnings-of-saudi-art-movement | already linked to catalog event |
-| candidate-ithra-events-mom-through-my-eyes-english-20261017-bf73d1ec | linked-existing | event-mom-through-my-eyes-english | already linked to catalog event |
 | candidate-saudi-university-events-kaust-workshop-on-ai-enabled-microwave-sensing-and-communication-20261018-6714c6ec | linked-existing | event-kaust-workshop-on-ai-enabled-microwave-sensing-and-communication | already linked to catalog event |
 | candidate-umm-al-qura-events-الاختبارات-المتكافئة-20261018-a3fcc5ed | linked-existing | event-الاختبارات-المتكافئة | already linked to catalog event |
 | candidate-saudi-university-events-hope-starts-with-awareness-a-webinar-by-bupa-and-human-resources-20261018-e43c881b | linked-existing | event-hope-starts-with-awareness-a-webinar-by-bupa-and-human-resources | already linked to catalog event |
@@ -239,6 +241,7 @@
 | candidate-visit-saudi-seasons-girls-comedy-night-from-thmanyah-exit-20261030-6af2f802 | linked-existing | event-girls-comedy-night-from-thmanyah-exit | already linked to catalog event |
 | candidate-mdlbeast-events-beast-house-20261030-83049a2a | linked-existing | event-beast-house | already linked to catalog event |
 | candidate-visit-saudi-calendar-pdf-المكسيك-ضد-العالم-20261031-4a38d19e | linked-existing | event-المكسيك-ضد-العالم | already linked to catalog event |
+| candidate-visit-saudi-seasons-mexico-vs-the-world-20261031-eb212cd3 | linked-existing | event-mexico-vs-the-world | already linked to catalog event |
 | candidate-visit-saudi-calendar-pdf-نسيم-الخبر-20261101-4a38d19e | linked-existing | event-نسيم-الخبر | already linked to catalog event |
 | candidate-visit-saudi-calendar-pdf-سوالف-الحي-20261101-4a38d19e | linked-existing | event-سوالف-الحي | already linked to catalog event |
 | candidate-saudi-water-authority-events-world-conference-on-desalination-and-water-reuse-20261101-a25a65b2 | linked-existing | event-world-conference-on-desalination-and-water-reuse | already linked to catalog event |
@@ -268,6 +271,7 @@
 | candidate-visit-saudi-calendar-pdf-وقف-عرض-نمر-الكوميدي-مباشر-في-جدة-20261107-4a38d19e | linked-existing | event-وقف-عرض-نمر-الكوميدي-مباشر-في-جدة | already linked to catalog event |
 | candidate-visit-saudi-calendar-pdf-كراون-جول-20261107-4a38d19e | linked-existing | event-كراون-جول | already linked to catalog event |
 | candidate-hayy-jameel-events-hayy-cinema-the-golden-palm-film-programme-the-best-of-the-saudi-film-fe-20261107-a46a5479 | linked-existing | event-hayy-cinema-the-golden-palm-film-programme-the-best-of-the-saudi-film-fe | already linked to catalog event |
+| candidate-visit-saudi-seasons-wwe-crown-jewel-20261107-42b4e1c6 | linked-existing | event-wwe-crown-jewel | already linked to catalog event |
 | candidate-visit-saudi-calendar-wagef-nemr-live-comedy-show-in-jeddah-20261107-f48c5ac4 | linked-existing | event-wagef-nemr-live-comedy-show-in-jeddah | already linked to catalog event |
 | candidate-informa-connect-saudi-events-saudi-ai-week-20261108-ddaedbfa | linked-existing | event-saudi-ai-week | already linked to catalog event |
 | candidate-saudi-university-events-5th-annual-workshop-on-quantitative-optical-imaging-technologies-20261108-2724ab99 | linked-existing | event-5th-annual-workshop-on-quantitative-optical-imaging-technologies | already linked to catalog event |

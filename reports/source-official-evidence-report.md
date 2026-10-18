@@ -1,6 +1,6 @@
 # EventLive Official Evidence Verification
 
-- generated_at: 2026-10-17T07:32:01.249Z
+- generated_at: 2026-10-18T07:50:17.280Z
 - entries: 3
 - verified_entries: 0
 - candidates_verified: 0

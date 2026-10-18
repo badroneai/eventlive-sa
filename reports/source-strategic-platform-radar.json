@@ -1,6 +1,6 @@
 {
   "schema": "eventlive.source-strategic-platform-radar.v1",
-  "generated_at": "2026-10-17T07:03:30.932Z",
+  "generated_at": "2026-10-18T07:19:15.837Z",
   "policy": {
     "allowed_use": "official source evidence refresh, API-surface mapping, partnership prioritization, extractor backlog decisions",
     "disallowed_use": "direct catalog publication without official confirmation and duplicate review"
@@ -256,11 +256,11 @@
         {
           "url": "https://www.visitsaudi.com/bin/api/v3/events?locale=ar",
           "status": 200,
-          "bytes": 73923,
+          "bytes": 86818,
           "classification": "reachable",
           "summary": {
             "parse_ok": true,
-            "item_count": 22,
+            "item_count": 26,
             "sample_titles": [
               "معرض اللغة العربية للطفل",
               "معرض اللغة العربية 28",
@@ -274,11 +274,11 @@
         {
           "url": "https://www.visitsaudi.com/bin/api/v3/events?locale=en",
           "status": 200,
-          "bytes": 77261,
+          "bytes": 90642,
           "classification": "reachable",
           "summary": {
             "parse_ok": true,
-            "item_count": 22,
+            "item_count": 26,
             "sample_titles": [
               "Arabic Language Exhibition for kids",
               "Arabic Language Exhibition 28",
@@ -330,7 +330,7 @@
         "https://wbk-assets.webook.com/8.01/locales/en/currency_common.json",
         "https://wbk-assets.webook.com/8.01/locales/en/payment_common.json",
         "https://wbk-assets.webook.com/8.01/locales/en/subscription_common.json",
-        "https://webook.com/cdn-cgi/content?id=UoIMjCJO3L2TrDN4rEnIeepuQ2zxOzKpr.age.p2vwY-1792220631.4860694-1.2.1.1-4kI36oRHRDDnQBY5XnuqXfdh6XyzN5bniasxPaP.aR5O1VwQoCX7uAuMd_oGBstb",
+        "https://webook.com/cdn-cgi/content?id=Cacg3r7q6Z3EVoDXyrEtpOcBtMLg5SeTr8BxkRPsUU8-1792307966.0500817-1.2.1.1-S9e.Rihd1UBPnHUDqNU1mvKaUt4Y7nhkZ.b2dC.oRxhW_7ptA0b5QpZiohCKvu7_",
         "https://static.cloudflareinsights.com/beacon.min.js/vce701823e78c4301a35b7e07294d87301792088814092"
       ],
       "page_hint_words": [
