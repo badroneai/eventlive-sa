@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-18T07:58:12.532Z",
+  "generated_at": "2026-10-19T08:32:35.024Z",
   "events_file": "dist/events.json",
   "manifest": "data/event_image_cache_manifest.json",
   "image_dir": "dist/assets/event-images",
@@ -10,7 +10,7 @@
     "reused": 494,
     "failed": 6,
     "skipped_recent_failures": 0,
-    "remembered_failures": 32
+    "remembered_failures": 34
   },
   "fetched": [],
   "reused": [
@@ -247,7 +247,7 @@
     {
       "source_url": "https://uqu.edu.sa/assets/images/uqu-gate.jpeg",
       "file": "dist/assets/event-images/الشهادة-الدولية-للحاسب-والإنترنت-ic3-a46ba6d2eb.jpg",
-      "events": 140
+      "events": 145
     },
     {
       "source_url": "https://www.ithra.com/application/files/cache/thumbnails/6519ce3982b405e399c3a7313853a2bf.jpg",
@@ -470,6 +470,11 @@
       "events": 1
     },
     {
+      "source_url": "https://hayyjameel.org/wp-content/uploads/2026/09/la-traversee-1-1-2560x-q85-1100x500.jpg",
+      "file": "dist/assets/event-images/hayy-cinema-october-2026-a771c51824.jpg",
+      "events": 1
+    },
+    {
       "source_url": "https://scth.scene7.com/is/image/scth/saudi-falcons-auction?wid=1600&hei=900&fit=constrain&fmt=webp",
       "file": "dist/assets/event-images/saudi-falcons-club-auction-00c8106902.webp",
       "events": 1
@@ -507,11 +512,6 @@
     {
       "source_url": "https://www.ithra.com/application/files/cache/thumbnails/cdcaaf63b17d3d6a36006060e6172049.jpg",
       "file": "dist/assets/event-images/نادي-الفنون-للأطفال-d2de54ec24.jpg",
-      "events": 1
-    },
-    {
-      "source_url": "https://hayyjameel.org/wp-content/uploads/2026/09/la-traversee-1-1-2560x-q85-1100x500.jpg",
-      "file": "dist/assets/event-images/hayy-cinema-october-2026-a771c51824.jpg",
       "events": 1
     },
     {
@@ -2494,42 +2494,42 @@
       "events": 1,
       "reason": "HTTP 403",
       "failure_kind": "access-denied",
-      "retry_after": "2026-10-19T07:58:12.532Z"
-    },
-    {
-      "source_url": "https://s7g10.scene7.com/is/image/rcu/sunset-stillness-meditation-sound-immersion:landscape-16x9?$Responsive$&fit=stretch&fmt=webp&wid=1920",
-      "events": 1,
-      "reason": "HTTP 403",
-      "failure_kind": "access-denied",
-      "retry_after": "2026-10-19T07:58:12.532Z"
-    },
-    {
-      "source_url": "https://s7g10.scene7.com/is/image/rcu/fei2:landscape-16x9?$Responsive$&fit=stretch&fmt=webp&wid=1920",
-      "events": 1,
-      "reason": "HTTP 403",
-      "failure_kind": "access-denied",
-      "retry_after": "2026-10-19T07:58:12.532Z"
+      "retry_after": "2026-10-20T08:32:35.024Z"
     },
     {
       "source_url": "https://s7g10.scene7.com/is/image/rcu/stargazing-at-alula-fort:landscape-16x9?$Responsive$&fit=stretch&fmt=webp&wid=1920",
       "events": 1,
       "reason": "HTTP 403",
       "failure_kind": "access-denied",
-      "retry_after": "2026-10-19T07:58:12.532Z"
+      "retry_after": "2026-10-20T08:32:35.024Z"
+    },
+    {
+      "source_url": "https://s7g10.scene7.com/is/image/rcu/fei2:landscape-16x9?$Responsive$&fit=stretch&fmt=webp&wid=1920",
+      "events": 1,
+      "reason": "HTTP 403",
+      "failure_kind": "access-denied",
+      "retry_after": "2026-10-20T08:32:35.024Z"
+    },
+    {
+      "source_url": "https://s7g10.scene7.com/is/image/rcu/sunset-stillness-meditation-sound-immersion:landscape-16x9?$Responsive$&fit=stretch&fmt=webp&wid=1920",
+      "events": 1,
+      "reason": "HTTP 403",
+      "failure_kind": "access-denied",
+      "retry_after": "2026-10-20T08:32:35.024Z"
     },
     {
       "source_url": "https://cdn.rfecc.sa/wp-content/uploads/mec/qr_898ea2449274454e42895b52b18c6f68.png",
       "events": 1,
       "reason": "HTTP 403",
       "failure_kind": "access-denied",
-      "retry_after": "2026-10-19T07:58:12.532Z"
+      "retry_after": "2026-10-20T08:32:35.024Z"
     },
     {
       "source_url": "https://api.riyadh.sa/sites/default/files/styles/medium/public/2026-07/er%20%2859%29.jpg?itok=a33APdGm",
       "events": 1,
       "reason": "not-image text/html; charset=utf-8",
       "failure_kind": "source-returned-html",
-      "retry_after": "2026-10-19T07:58:12.532Z"
+      "retry_after": "2026-10-20T08:32:35.024Z"
     }
   ],
   "requires_rebuild": true,

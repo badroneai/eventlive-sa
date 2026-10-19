@@ -1,11 +1,11 @@
 # Visit Saudi Calendar Enrichment Report
 
-- generated_at: 2026-10-18T07:52:26.668Z
+- generated_at: 2026-10-19T08:25:46.086Z
 - targets: 50
-- candidates: 13
+- candidates: 15
 - enriched: 50
 - fetched: 50
-- images: 49
+- images: 50
 - fetch_failures: 0
 
 ## Enriched
@@ -52,14 +52,14 @@
 - Alaa El Sheikh Live in Riyadh - official-page-html - image=yes - features=7
 - Stand Up Comedy Shows This Weekend from Exit Thmanyah - official-page-html - image=yes - features=7
 - Alaa El Sheikh Live in Jeddah - official-page-html - image=yes - features=7
+- Kaif Farm - official-page-html - image=yes - features=7
 - UCI URBAN CYCLING WORLD CHAMPIONSHIPS - official-page-html - image=yes - features=7
 - Wagef! Nemr Live Comedy Show in Jeddah - official-page-html - image=yes - features=7
+- Comedy Show by Mario Yazbeck in Riyadh - official-page-html - image=yes - features=7
 - Wagef! Momos Live in Jeddah - official-page-html - image=yes - features=7
 - The Innovation Driven Water Sustainability Conference - official-page-html - image=yes - features=7
 - Saudi Falcon Cup - official-page-html - image=yes - features=7
 - IN ACT - ACT XII - NEW YEAR'S EVE - official-page-html - image=yes - features=7
-- Founding Day - official-page-html - image=yes - features=7
-- Eid Al-Fitr - official-page-html - image=no - features=6
 
 ## Fetch Failures
 

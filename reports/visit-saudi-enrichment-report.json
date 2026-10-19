@@ -1,13 +1,13 @@
 {
-  "generated_at": "2026-10-18T07:52:26.668Z",
+  "generated_at": "2026-10-19T08:25:46.086Z",
   "catalog": "data/events_catalog.json",
   "source": "Visit Saudi Calendar",
   "totals": {
     "targets": 50,
-    "candidates": 13,
+    "candidates": 15,
     "enriched": 50,
     "fetched": 50,
-    "images": 49,
+    "images": 50,
     "fetch_failures": 0
   },
   "enriched": [
@@ -348,6 +348,14 @@
       "features": 7
     },
     {
+      "id": "event-kaif-farm",
+      "title": "Kaif Farm",
+      "source_method": "official-page-html",
+      "image_url": "https://www.visitsaudi.com/content/dam/wvs/calendar/kaif-farm.jpg",
+      "fetched": true,
+      "features": 7
+    },
+    {
       "id": "event-uci-urban-cycling-world-championships",
       "title": "UCI URBAN CYCLING WORLD CHAMPIONSHIPS",
       "source_method": "official-page-html",
@@ -360,6 +368,14 @@
       "title": "Wagef! Nemr Live Comedy Show in Jeddah",
       "source_method": "official-page-html",
       "image_url": "https://www.visitsaudi.com/content/dam/wvs/calendar/wagef-nemr-live-comedy-show-in-jeddah.jpg",
+      "fetched": true,
+      "features": 7
+    },
+    {
+      "id": "event-comedy-show-by-mario-yazbeck-in-riyadh",
+      "title": "Comedy Show by Mario Yazbeck in Riyadh",
+      "source_method": "official-page-html",
+      "image_url": "https://www.visitsaudi.com/content/dam/wvs/calendar/comedy-show-by-mario-yazbeck-in-riyadh.jpg",
       "fetched": true,
       "features": 7
     },
@@ -394,22 +410,6 @@
       "image_url": "https://www.visitsaudi.com/content/dam/wvs/calendar/in-act-act-xii-new-year.jpg",
       "fetched": true,
       "features": 7
-    },
-    {
-      "id": "event-founding-day",
-      "title": "Founding Day",
-      "source_method": "official-page-html",
-      "image_url": "https://scth.scene7.com/is/image/scth/founding-day-hero-banner?wid=1920&hei=1080&fit=constrain&fmt=webp",
-      "fetched": true,
-      "features": 7
-    },
-    {
-      "id": "event-eid-al-fitr",
-      "title": "Eid Al-Fitr",
-      "source_method": "official-page-html",
-      "image_url": "",
-      "fetched": true,
-      "features": 6
     }
   ],
   "failed": []
