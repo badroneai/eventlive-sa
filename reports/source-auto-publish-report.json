@@ -1,18 +1,18 @@
 {
-  "published_at": "2026-10-19T08:23:51.922Z",
+  "published_at": "2026-10-20T07:51:00.927Z",
   "dry_run": false,
   "include_partner": true,
   "source_candidates": "data/source_candidates.json",
   "events_catalog": "data/events_catalog.json",
-  "candidates_seen": 410,
+  "candidates_seen": 413,
   "totals": {
-    "candidates_seen": 410,
-    "published": 7,
+    "candidates_seen": 413,
+    "published": 10,
     "linked_existing": 373,
     "blocked": 30,
     "duplicate_review_alerts": 4,
     "category_fallback_alerts": 0,
-    "reconciled": 380,
+    "reconciled": 383,
     "session_windows_reconciled": 0
   },
   "session_window_changes": [],
@@ -92,39 +92,54 @@
   ],
   "published": [
     {
-      "candidate_id": "candidate-umm-al-qura-events-ورشة-عمل-بعنوان-تنسيق-الزهور-الصناعية-20261019-49db524a",
-      "event_id": "event-ورشة-عمل-بعنوان-تنسيق-الزهور-الصناعية",
-      "title": "ورشة عمل بعنوان تنسيق الزهور الصناعية"
+      "candidate_id": "candidate-umm-al-qura-events-بحثك-يستحق-العالمية-من-البحث-إلى-النشر-الدولي-فرص،-حوافز،-وأثر-يتجاوز-ال-20261020-9d1650cd",
+      "event_id": "event-بحثك-يستحق-العالمية-من-البحث-إلى-النشر-الدولي-فرص،-حوافز،-وأثر-يتجاوز-ال",
+      "title": "بحثك يستحق العالمية من البحث إلى النشر الدولي: فرص، حوافز، وأثر يتجاوز الورقة العلمية"
     },
     {
-      "candidate_id": "candidate-umm-al-qura-events-مشاركة-أعضاء-هيئة-التدريس-ورشة-عمل-بعنوان-تنقيح-المشاريع-البحثية-والابتك-20261019-5913dd70",
-      "event_id": "event-مشاركة-أعضاء-هيئة-التدريس-ورشة-عمل-بعنوان-تنقيح-المشاريع-البحثية-والابتك",
-      "title": "مشاركة أعضاء هيئة التدريس ورشة عمل بعنوان: تنقيح المشاريع البحثية والابتكارية المشاركة في الأولمبياد الوطني للإبداع العلمي"
+      "candidate_id": "candidate-umm-al-qura-events-لقاء-بعنوان-آفاق-الضيافة-والثقافة-20261020-7b63412b",
+      "event_id": "event-لقاء-بعنوان-آفاق-الضيافة-والثقافة",
+      "title": "لقاء بعنوان آفاق الضيافة والثقافة"
     },
     {
-      "candidate_id": "candidate-umm-al-qura-events-ورشة-عمل-بعنوان-صنع-الشموع-العطرية-20261019-410f651c",
-      "event_id": "event-ورشة-عمل-بعنوان-صنع-الشموع-العطرية",
-      "title": "ورشة عمل بعنوان صنع الشموع العطرية"
+      "candidate_id": "candidate-umm-al-qura-events-لقاء-بعنوان-الشخصية-القيادية-عبر-الشعوب-20261021-512e184b",
+      "event_id": "event-لقاء-بعنوان-الشخصية-القيادية-عبر-الشعوب",
+      "title": "لقاء بعنوان الشخصية القيادية عبر الشعوب"
     },
     {
-      "candidate_id": "candidate-umm-al-qura-events-خطوتك-الأولى-نحو-النشر-العلمي-20261019-0fc660a8",
-      "event_id": "event-خطوتك-الأولى-نحو-النشر-العلمي",
-      "title": "خطوتك الأولى نحو النشر العلمي"
+      "candidate_id": "candidate-umm-al-qura-events-آلية-تسجيل-متطلبات-الجامعة-الاختيارية-والاجبارية-20261021-c3aba0c1",
+      "event_id": "event-آلية-تسجيل-متطلبات-الجامعة-الاختيارية-والاجبارية",
+      "title": "آلية تسجيل متطلبات الجامعة (الاختيارية والاجبارية)"
     },
     {
-      "candidate_id": "candidate-visit-saudi-calendar-kaif-farm-20261026-f9e1eced",
-      "event_id": "event-kaif-farm",
-      "title": "Kaif Farm"
+      "candidate_id": "candidate-umm-al-qura-events-لقاء-بعنوان-قولها-بلغتي-20261021-e0c80385",
+      "event_id": "event-لقاء-بعنوان-قولها-بلغتي",
+      "title": "لقاء بعنوان قولها بلغتي"
     },
     {
-      "candidate_id": "candidate-umm-al-qura-events-استراتيجيات-التعامل-مع-قلق-الاختبارات-20261028-5b05f306",
-      "event_id": "event-استراتيجيات-التعامل-مع-قلق-الاختبارات",
-      "title": "استراتيجيات التعامل مع قلق الاختبارات"
+      "candidate_id": "candidate-umm-al-qura-events-فعالية-أكتوبر-الوردي-20261021-b732ed26",
+      "event_id": "event-فعالية-أكتوبر-الوردي",
+      "title": "فعالية أكتوبر الوردي"
     },
     {
-      "candidate_id": "candidate-visit-saudi-calendar-comedy-show-by-mario-yazbeck-in-riyadh-20261118-bede1257",
-      "event_id": "event-comedy-show-by-mario-yazbeck-in-riyadh",
-      "title": "Comedy Show by Mario Yazbeck in Riyadh"
+      "candidate_id": "candidate-umm-al-qura-events-ورشة-عمل-بعنوان-تغليف-الهدايا-20261021-fa768b08",
+      "event_id": "event-ورشة-عمل-بعنوان-تغليف-الهدايا",
+      "title": "ورشة عمل بعنوان تغليف الهدايا"
+    },
+    {
+      "candidate_id": "candidate-umm-al-qura-events-ورشة-عمل-بعنوان-تزيين-الحفلات-20261021-43f74a68",
+      "event_id": "event-ورشة-عمل-بعنوان-تزيين-الحفلات",
+      "title": "ورشة عمل بعنوان تزيين الحفلات"
+    },
+    {
+      "candidate_id": "candidate-umm-al-qura-events-ورشة-عمل-بعنوان-أساسيات-الكروشيه-20261022-27eac827",
+      "event_id": "event-ورشة-عمل-بعنوان-أساسيات-الكروشيه",
+      "title": "ورشة عمل بعنوان أساسيات الكروشيه"
+    },
+    {
+      "candidate_id": "candidate-umm-al-qura-events-ورشة-عمل-بعنوان-صنع-الشوكولاتة-20261022-ff2ce3ac",
+      "event_id": "event-ورشة-عمل-بعنوان-صنع-الشوكولاتة",
+      "title": "ورشة عمل بعنوان صنع الشوكولاتة"
     }
   ],
   "linked_existing": [
@@ -627,12 +642,6 @@
       "reason": "already linked to catalog event"
     },
     {
-      "candidate_id": "candidate-hayy-jameel-events-hayy-cinema-october-2026-20261001-84cc2d26",
-      "event_id": "event-hayy-cinema-october-2026",
-      "title": "Hayy Cinema | October 2026",
-      "reason": "already linked to catalog event"
-    },
-    {
       "candidate_id": "candidate-visit-saudi-seasons-aramco-f4-saudi-arabian-championship-20261001-c1591ef2",
       "event_id": "event-aramco-f4-saudi-arabian-championship",
       "title": "Aramco F4 Saudi Arabian Championship",
@@ -687,6 +696,12 @@
       "reason": "already linked to catalog event"
     },
     {
+      "candidate_id": "candidate-hayy-jameel-events-hayy-cinema-october-2026-20261007-84cc2d26",
+      "event_id": "event-hayy-cinema-october-2026",
+      "title": "Hayy Cinema | October 2026",
+      "reason": "already linked to catalog event"
+    },
+    {
       "candidate_id": "candidate-umm-al-qura-events-حراك-يعود-من-جديد-بداية-جديدة-وأثر-مستدام-20261007-1529f492",
       "event_id": "event-حراك-يعود-من-جديد-بداية-جديدة-وأثر-مستدام",
       "title": "حراك يعود من جديد .. بداية جديدة وأثر مستدام",
@@ -735,21 +750,15 @@
       "reason": "already linked to catalog event"
     },
     {
-      "candidate_id": "candidate-umm-al-qura-events-ورشة-القيادات-الجامعة-20261019-0c540be7",
-      "event_id": "event-ورشة-القيادات-الجامعة",
-      "title": "ورشة القيادات الجامعة",
+      "candidate_id": "candidate-umm-al-qura-events-ورشة-عمل-بعنوان-تنسيق-الزهور-الصناعية-20261019-49db524a",
+      "event_id": "event-ورشة-عمل-بعنوان-تنسيق-الزهور-الصناعية",
+      "title": "ورشة عمل بعنوان تنسيق الزهور الصناعية",
       "reason": "already linked to catalog event"
     },
     {
-      "candidate_id": "candidate-umm-al-qura-events-صياغة-البيئات-الآمنة-تحويل-التجارب-الحية-إلى-قرارات-20261019-97cdf8b4",
-      "event_id": "event-صياغة-البيئات-الآمنة-تحويل-التجارب-الحية-إلى-قرارات",
-      "title": "صياغة البيئات الآمنة: تحويل التجارب الحية إلى قرارات",
-      "reason": "already linked to catalog event"
-    },
-    {
-      "candidate_id": "candidate-umm-al-qura-events-دورة-مهارات-الاكسل-20261019-f7a3cc66",
-      "event_id": "event-دورة-مهارات-الاكسل",
-      "title": "دورة مهارات الاكسل",
+      "candidate_id": "candidate-umm-al-qura-events-مشاركة-أعضاء-هيئة-التدريس-ورشة-عمل-بعنوان-تنقيح-المشاريع-البحثية-والابتك-20261019-5913dd70",
+      "event_id": "event-مشاركة-أعضاء-هيئة-التدريس-ورشة-عمل-بعنوان-تنقيح-المشاريع-البحثية-والابتك",
+      "title": "مشاركة أعضاء هيئة التدريس ورشة عمل بعنوان: تنقيح المشاريع البحثية والابتكارية المشاركة في الأولمبياد الوطني للإبداع العلمي",
       "reason": "already linked to catalog event"
     },
     {
@@ -759,21 +768,9 @@
       "reason": "already linked to catalog event"
     },
     {
-      "candidate_id": "candidate-saudi-university-events-best-practices-in-air-quality-monitoring-20261019-352f67f1",
-      "event_id": "event-best-practices-in-air-quality-monitoring",
-      "title": "Best Practices in Air Quality Monitoring",
-      "reason": "already linked to catalog event"
-    },
-    {
       "candidate_id": "candidate-misk-hub-events-nonprofit-governance-from-compliance-to-institutional-excellence-20261019-9f36f3aa",
       "event_id": "event-nonprofit-governance-from-compliance-to-institutional-excellence",
       "title": "Nonprofit Governance: From Compliance to Institutional Excellence",
-      "reason": "already linked to catalog event"
-    },
-    {
-      "candidate_id": "candidate-qassim-chamber-events-الذكاء-الاصطناعي-في-التسويق-وصناعة-المحتوى-20261019-1ba09477",
-      "event_id": "event-الذكاء-الاصطناعي-في-التسويق-وصناعة-المحتوى",
-      "title": "الذكاء الاصطناعي في التسويق وصناعة المحتوى",
       "reason": "already linked to catalog event"
     },
     {
@@ -1221,6 +1218,12 @@
       "reason": "already linked to catalog event"
     },
     {
+      "candidate_id": "candidate-ithra-events-paint-like-an-artist-20261026-a67d8ec3",
+      "event_id": "event-paint-like-an-artist",
+      "title": "Paint Like an Artist",
+      "reason": "already linked to catalog event"
+    },
+    {
       "candidate_id": "candidate-ithra-events-the-art-of-public-speaking-20261026-5849d4f8",
       "event_id": "event-the-art-of-public-speaking",
       "title": "The Art of Public Speaking",
@@ -1236,6 +1239,12 @@
       "candidate_id": "candidate-ithra-events-creative-writing-club-20261026-a7f18ce9",
       "event_id": "event-creative-writing-club",
       "title": "Creative Writing Club",
+      "reason": "already linked to catalog event"
+    },
+    {
+      "candidate_id": "candidate-visit-saudi-calendar-kaif-farm-20261026-f9e1eced",
+      "event_id": "event-kaif-farm",
+      "title": "Kaif Farm",
       "reason": "already linked to catalog event"
     },
     {
@@ -1278,6 +1287,12 @@
       "candidate_id": "candidate-eye-of-riyadh-events-cips-mena-procurement-and-supply-chain-futures-conference-and-awards-20261028-18fb7207",
       "event_id": "event-cips-mena-procurement-and-supply-chain-futures-conference-and-awards",
       "title": "CIPS MENA Procurement and Supply Chain Futures conference and awards",
+      "reason": "already linked to catalog event"
+    },
+    {
+      "candidate_id": "candidate-umm-al-qura-events-استراتيجيات-التعامل-مع-قلق-الاختبارات-20261028-5b05f306",
+      "event_id": "event-استراتيجيات-التعامل-مع-قلق-الاختبارات",
+      "title": "استراتيجيات التعامل مع قلق الاختبارات",
       "reason": "already linked to catalog event"
     },
     {
@@ -1374,12 +1389,6 @@
       "candidate_id": "candidate-riyadh-city-events-new-global-sport-conference-20261030-4c21d3ac",
       "event_id": "event-new-global-sport-conference",
       "title": "New Global Sport Conference",
-      "reason": "already linked to catalog event"
-    },
-    {
-      "candidate_id": "candidate-ithra-events-paint-like-an-artist-20261030-a67d8ec3",
-      "event_id": "event-paint-like-an-artist",
-      "title": "Paint Like an Artist",
       "reason": "already linked to catalog event"
     },
     {
@@ -1782,6 +1791,12 @@
       "candidate_id": "candidate-visit-saudi-calendar-pdf-عرض-كوميدي-مع-ماريو-يزبك-20261118-4a38d19e",
       "event_id": "event-عرض-كوميدي-مع-ماريو-يزبك",
       "title": "عرض كوميدي مع ماريو يزبك",
+      "reason": "already linked to catalog event"
+    },
+    {
+      "candidate_id": "candidate-visit-saudi-calendar-comedy-show-by-mario-yazbeck-in-riyadh-20261118-bede1257",
+      "event_id": "event-comedy-show-by-mario-yazbeck-in-riyadh",
+      "title": "Comedy Show by Mario Yazbeck in Riyadh",
       "reason": "already linked to catalog event"
     },
     {

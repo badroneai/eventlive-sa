@@ -1,6 +1,6 @@
 # EventLive Source Run State
 
-Generated at: 2026-10-19T08:34:15.207Z
+Generated at: 2026-10-20T08:00:24.832Z
 
 ## Operating Rule
 
@@ -9,12 +9,12 @@ Raw collection is not publication. Every source run preserves evidence, separate
 ## Totals
 
 - Sources: 88
-- Attempted this run: 40
-- Deferred by adaptive cadence: 8
-- Productive: 14
-- Zero-yield: 14
-- Collector errors: 8
-- Persistent collector errors: 8
+- Attempted this run: 18
+- Deferred by adaptive cadence: 30
+- Productive: 13
+- Zero-yield: 2
+- Collector errors: 1
+- Persistent collector errors: 7
 - Probe blocked: 2
 - Auto-publish eligible source lanes: 12
 
@@ -28,7 +28,6 @@ Raw collection is not publication. Every source run preserves evidence, separate
 | tuwaiq-academy-bootcamps | collector-error | 0 | raw_harvest_to_candidate_queue | Fix collector error: HTTP 403 |
 | saudi-pro-league-fixtures | collector-error | 0 | raw_harvest_to_candidate_queue | Fix collector error: fetch failed [EAI_AGAIN] |
 | moc-cultural-subportals | collector-error | 0 | raw_harvest_to_candidate_queue | Fix collector error: fetch failed [UND_ERR_CONNECT_TIMEOUT]; fetch failed [UND_ERR_CONNECT_TIMEOUT] |
-| asharqia-chamber-events | collector-error | 0 | raw_harvest_to_candidate_queue | Fix collector error: fetch failed [UND_ERR_CONNECT_TIMEOUT]; page.goto: Timeout 30000ms exceeded. |
 | qassim-chamber-events | collector-error | 0 | raw_harvest_to_candidate_queue | Fix collector error: HTTP 403; live browser recovery deferred by recent failed probe cooldown |
 | riyadh-season | probe-blocked | 0 | probe_before_collector | Do not bypass protection; keep as blocked/partnership candidate: bot-protection |
 | saudi-digital-academy | probe-blocked | 0 | probe_before_collector | Do not bypass protection; keep as blocked/partnership candidate: fetch failed getaddrinfo ENOTFOUND sda.edu.sa TypeError: fetch failed |
@@ -42,6 +41,7 @@ Raw collection is not publication. Every source run preserves evidence, separate
 | middle-east-enterprise-ai-summit | probe-blocked | 0 | probe_before_collector | Do not bypass protection; keep as blocked/partnership candidate: bot-protection |
 | leap-official-agendas | probe-blocked | 0 | probe_before_collector | Do not bypass protection; keep as blocked/partnership candidate: http-403 |
 | code-mcit-programs | zero-yield | 82 | raw_harvest_to_candidate_queue | Zero-yield for 82 runs; inspect dropped samples or reclassify cadence if the source is seasonal/archive-only. |
+| jcci-events-center | zero-yield | 82 | raw_harvest_to_candidate_queue | Zero-yield for 82 runs; inspect dropped samples or reclassify cadence if the source is seasonal/archive-only. |
 
 ## Full Source State
 
@@ -63,7 +63,7 @@ Raw collection is not publication. Every source run preserves evidence, separate
 | 14 | eventbrite-saudi | discovery-only | discovery-only | 0 | no | Use only as discovery evidence; never publish directly. |
 | 15 | platinumlist-jeddah | discovery-only | discovery-only | 0 | no | Use only as discovery evidence; never publish directly. |
 | 16 | tuwaiq-academy-bootcamps | active-collector | collector-error | 0 | yes | Fix collector error: HTTP 403 |
-| 17 | future-skills-catalog | active-collector | zero-yield | 0 | yes | past-date:12 |
+| 17 | future-skills-catalog | active-collector | zero-yield | 0 | yes | Zero-yield for 3 runs; inspect dropped samples or reclassify cadence if the source is seasonal/archive-only. |
 | 18 | riyadh-season | extractor-backlog | probe-blocked | 0 | no | Do not bypass protection; keep as blocked/partnership candidate: bot-protection |
 | 19 | visit-saudi-seasons | active-collector | productive | 16 | no | Continue periodic collection; dedupe and auto-publish only through the candidate gate. |
 | 20 | code-mcit-programs | active-collector | zero-yield | 0 | yes | Zero-yield for 82 runs; inspect dropped samples or reclassify cadence if the source is seasonal/archive-only. |
@@ -105,7 +105,7 @@ Raw collection is not publication. Every source run preserves evidence, separate
 | 56 | scega-exhibitions-conferences | active-collector | zero-yield | 0 | no | Zero-yield for 9 runs; inspect dropped samples or reclassify cadence if the source is seasonal/archive-only. |
 | 57 | ministry-commerce-events | evidence-monitor | evidence-monitor | 0 | no | Monitor for official event detail evidence before candidate promotion. |
 | 58 | evento-sa-events | discovery-only | discovery-only | 0 | no | Use only as discovery evidence; never publish directly. |
-| 59 | asharqia-chamber-events | active-collector | collector-error | 0 | no | Fix collector error: fetch failed [UND_ERR_CONNECT_TIMEOUT]; page.goto: Timeout 30000ms exceeded. |
+| 59 | asharqia-chamber-events | active-collector | zero-yield | 0 | no | collector-error: fetch failed [UND_ERR_CONNECT_TIMEOUT] |
 | 60 | qassim-chamber-events | active-collector | collector-error | 0 | no | Fix collector error: HTTP 403; live browser recovery deferred by recent failed probe cooldown |
 | 61 | abha-chamber-events | active-collector | zero-yield | 0 | no | Zero-yield for 76 runs; inspect dropped samples or reclassify cadence if the source is seasonal/archive-only. |
 | 62 | baha-amanah-events | extractor-backlog | not-attempted | 0 | no | Probe HTML/API shape, then decide whether an extractor is worth adding. |
@@ -122,7 +122,7 @@ Raw collection is not publication. Every source run preserves evidence, separate
 | 73 | my-gov-sa-events | partnership | partnership | 0 | no | Partnership/API lane; do not scrape protected or app-only data. |
 | 74 | middle-east-banking-ai-summit | extractor-backlog | not-attempted | 0 | no | Probe HTML/API shape, then decide whether an extractor is worth adding. |
 | 75 | middle-east-enterprise-ai-summit | extractor-backlog | probe-blocked | 0 | no | Do not bypass protection; keep as blocked/partnership candidate: bot-protection |
-| 76 | umm-al-qura-events | active-collector | productive | 7 | no | Continue periodic collection; dedupe and auto-publish only through the candidate gate. |
+| 76 | umm-al-qura-events | active-collector | productive | 10 | no | Continue periodic collection; dedupe and auto-publish only through the candidate gate. |
 | 77 | leap-official-agendas | extractor-backlog | probe-blocked | 0 | no | Do not bypass protection; keep as blocked/partnership candidate: http-403 |
 | 78 | fii10-official-program | extractor-backlog | not-attempted | 0 | no | Probe HTML/API shape, then decide whether an extractor is worth adding. |
 | 79 | cityscape-global-official-program | partnership | partnership | 0 | no | Partnership/API lane; do not scrape protected or app-only data. |
