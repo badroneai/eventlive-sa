@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-20T08:00:24.181Z",
+  "generated_at": "2026-10-21T08:19:11.316Z",
   "events_file": "dist/events.json",
   "manifest": "data/event_image_cache_manifest.json",
   "image_dir": "dist/assets/event-images",
@@ -9,7 +9,7 @@
     "fetched": 0,
     "reused": 494,
     "failed": 6,
-    "skipped_recent_failures": 6,
+    "skipped_recent_failures": 0,
     "remembered_failures": 34
   },
   "fetched": [],
@@ -540,18 +540,8 @@
       "events": 1
     },
     {
-      "source_url": "https://hub.misk.org.sa/media/lcsk2oyh/nonprofit-governancehub-en.png",
-      "file": "dist/assets/event-images/nonprofit-governance-from-compliance-to-institutional-excellence-4beb063e2b.png",
-      "events": 1
-    },
-    {
       "source_url": "https://api.riyadh.sa/sites/default/files/styles/medium/public/2025-12/Screenshot%202025-03-16%20101331.png?itok=AK7s0A06",
       "file": "dist/assets/event-images/mipim-middle-east-43ba9ff717.png",
-      "events": 1
-    },
-    {
-      "source_url": "https://hub.misk.org.sa/media/plrhq3qj/stc-cybersecurity-workshop_hub-en.png",
-      "file": "dist/assets/event-images/stc-x-misk-workshops-series-3e74c8f5ae.png",
       "events": 1
     },
     {
@@ -1045,8 +1035,18 @@
       "events": 1
     },
     {
+      "source_url": "https://hub.misk.org.sa/media/plrhq3qj/stc-cybersecurity-workshop_hub-en.png",
+      "file": "dist/assets/event-images/stc-x-misk-workshops-series-3e74c8f5ae.png",
+      "events": 1
+    },
+    {
       "source_url": "https://tc.qcc.org.sa/storage/272/6acf31ba866ef_%D8%A7%D9%84%D8%B0%D9%83%D8%A7%D8%A1-%D8%A7%D9%84%D8%A7%D8%B5%D8%B7%D9%86%D8%A7%D8%B9%D9%8A-%D9%85%D9%88%D9%82%D8%B9%D8%A7%D9%84%D8%AA%D8%AF%D8%B1%D9%8A%D8%A8.jpg",
       "file": "dist/assets/event-images/الذكاء-الاصطناعي-في-التسويق-وصناعة-المحتوى-e740e8ed77.jpg",
+      "events": 1
+    },
+    {
+      "source_url": "https://hub.misk.org.sa/media/lcsk2oyh/nonprofit-governancehub-en.png",
+      "file": "dist/assets/event-images/nonprofit-governance-from-compliance-to-institutional-excellence-4beb063e2b.png",
       "events": 1
     },
     {
@@ -2487,106 +2487,53 @@
   ],
   "rejected_removed": [],
   "missing_removed": [],
-  "skipped_recent_failures": [
-    {
-      "source_url": "https://s7g10.scene7.com/is/image/rcu/stargazing-at-alula-fort:landscape-16x9?$Responsive$&fit=stretch&fmt=webp&wid=1920",
-      "events": 1,
-      "reason": "HTTP 403",
-      "failure_kind": "access-denied",
-      "retry_after": "2026-10-20T08:32:35.024Z",
-      "skipped": true
-    },
-    {
-      "source_url": "https://s7g10.scene7.com/is/image/rcu/sunset-stillness-meditation-sound-immersion:landscape-16x9?$Responsive$&fit=stretch&fmt=webp&wid=1920",
-      "events": 1,
-      "reason": "HTTP 403",
-      "failure_kind": "access-denied",
-      "retry_after": "2026-10-20T08:32:35.024Z",
-      "skipped": true
-    },
-    {
-      "source_url": "https://s7g10.scene7.com/is/image/rcu/leonid-meteor-shower-at-jabal-ikmah:landscape-16x9?$Responsive$&fit=stretch&fmt=webp&wid=1920",
-      "events": 1,
-      "reason": "HTTP 403",
-      "failure_kind": "access-denied",
-      "retry_after": "2026-10-20T08:32:35.024Z",
-      "skipped": true
-    },
-    {
-      "source_url": "https://s7g10.scene7.com/is/image/rcu/fei2:landscape-16x9?$Responsive$&fit=stretch&fmt=webp&wid=1920",
-      "events": 1,
-      "reason": "HTTP 403",
-      "failure_kind": "access-denied",
-      "retry_after": "2026-10-20T08:32:35.024Z",
-      "skipped": true
-    },
-    {
-      "source_url": "https://api.riyadh.sa/sites/default/files/styles/medium/public/2026-07/er%20%2859%29.jpg?itok=a33APdGm",
-      "events": 1,
-      "reason": "not-image text/html; charset=utf-8",
-      "failure_kind": "source-returned-html",
-      "retry_after": "2026-10-20T08:32:35.024Z",
-      "skipped": true
-    },
-    {
-      "source_url": "https://cdn.rfecc.sa/wp-content/uploads/mec/qr_898ea2449274454e42895b52b18c6f68.png",
-      "events": 1,
-      "reason": "HTTP 403",
-      "failure_kind": "access-denied",
-      "retry_after": "2026-10-20T08:32:35.024Z",
-      "skipped": true
-    }
-  ],
+  "skipped_recent_failures": [],
   "failed": [
     {
-      "source_url": "https://s7g10.scene7.com/is/image/rcu/stargazing-at-alula-fort:landscape-16x9?$Responsive$&fit=stretch&fmt=webp&wid=1920",
-      "events": 1,
-      "reason": "HTTP 403",
-      "failure_kind": "access-denied",
-      "retry_after": "2026-10-20T08:32:35.024Z",
-      "skipped": true
-    },
-    {
       "source_url": "https://s7g10.scene7.com/is/image/rcu/sunset-stillness-meditation-sound-immersion:landscape-16x9?$Responsive$&fit=stretch&fmt=webp&wid=1920",
       "events": 1,
       "reason": "HTTP 403",
       "failure_kind": "access-denied",
-      "retry_after": "2026-10-20T08:32:35.024Z",
-      "skipped": true
+      "retry_after": "2026-10-22T08:19:11.316Z"
+    },
+    {
+      "source_url": "https://s7g10.scene7.com/is/image/rcu/stargazing-at-alula-fort:landscape-16x9?$Responsive$&fit=stretch&fmt=webp&wid=1920",
+      "events": 1,
+      "reason": "HTTP 403",
+      "failure_kind": "access-denied",
+      "retry_after": "2026-10-22T08:19:11.316Z"
     },
     {
       "source_url": "https://s7g10.scene7.com/is/image/rcu/leonid-meteor-shower-at-jabal-ikmah:landscape-16x9?$Responsive$&fit=stretch&fmt=webp&wid=1920",
       "events": 1,
       "reason": "HTTP 403",
       "failure_kind": "access-denied",
-      "retry_after": "2026-10-20T08:32:35.024Z",
-      "skipped": true
+      "retry_after": "2026-10-22T08:19:11.316Z"
     },
     {
       "source_url": "https://s7g10.scene7.com/is/image/rcu/fei2:landscape-16x9?$Responsive$&fit=stretch&fmt=webp&wid=1920",
       "events": 1,
       "reason": "HTTP 403",
       "failure_kind": "access-denied",
-      "retry_after": "2026-10-20T08:32:35.024Z",
-      "skipped": true
-    },
-    {
-      "source_url": "https://api.riyadh.sa/sites/default/files/styles/medium/public/2026-07/er%20%2859%29.jpg?itok=a33APdGm",
-      "events": 1,
-      "reason": "not-image text/html; charset=utf-8",
-      "failure_kind": "source-returned-html",
-      "retry_after": "2026-10-20T08:32:35.024Z",
-      "skipped": true
+      "retry_after": "2026-10-22T08:19:11.316Z"
     },
     {
       "source_url": "https://cdn.rfecc.sa/wp-content/uploads/mec/qr_898ea2449274454e42895b52b18c6f68.png",
       "events": 1,
       "reason": "HTTP 403",
       "failure_kind": "access-denied",
-      "retry_after": "2026-10-20T08:32:35.024Z",
-      "skipped": true
+      "retry_after": "2026-10-22T08:19:11.316Z"
+    },
+    {
+      "source_url": "https://api.riyadh.sa/sites/default/files/styles/medium/public/2026-07/er%20%2859%29.jpg?itok=a33APdGm",
+      "events": 1,
+      "reason": "not-image text/html; charset=utf-8",
+      "failure_kind": "source-returned-html",
+      "retry_after": "2026-10-22T08:19:11.316Z"
     }
   ],
-  "requires_rebuild": false,
-  "rebuild_reasons": []
+  "requires_rebuild": true,
+  "rebuild_reasons": [
+    "new-failures:6"
+  ]
 }

@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-20T07:51:03.641Z",
+  "generated_at": "2026-10-21T08:11:52.012Z",
   "catalog": "data/events_catalog.json",
   "candidates": "data/source_candidates.json",
   "manifest": "data/event_image_cache_manifest.json",
@@ -10,11 +10,19 @@
   },
   "totals": {
     "pdf_crop_assignments": 39,
-    "verified": 39,
-    "struck": 0,
-    "slots_seen_this_cycle": 44
+    "verified": 38,
+    "struck": 1,
+    "slots_seen_this_cycle": 43
   },
-  "struck": [],
+  "struck": [
+    {
+      "id": "event-فينا-نحكي؟-عرض-ستاند-أب-كوميدي-لجون-أشقر",
+      "title": "”فينا نحكي؟“ عرض ستاند أب كوميدي لجون أشقر",
+      "file": "visit-saudi-summer-2026-p026-top-left.jpg",
+      "reason": "slot-vacated",
+      "detail": "no dated card currently occupies page 26 top-left of https://www.visitsaudi.com/content/dam/documents/saudi-calendar-ar.pdf"
+    }
+  ],
   "verified": [
     {
       "id": "event-سوق-الثلاثاء-الشعبي",
@@ -116,20 +124,6 @@
       "matched_tokens": [
         "نهاييات",
         "fifae"
-      ]
-    },
-    {
-      "id": "event-فينا-نحكي؟-عرض-ستاند-أب-كوميدي-لجون-أشقر",
-      "title": "”فينا نحكي؟“ عرض ستاند أب كوميدي لجون أشقر",
-      "file": "visit-saudi-summer-2026-p026-top-left.jpg",
-      "matched_tokens": [
-        "فينا",
-        "نحكي",
-        "عرض",
-        "ستاند",
-        "كوميدي",
-        "لجون",
-        "اشقر"
       ]
     },
     {

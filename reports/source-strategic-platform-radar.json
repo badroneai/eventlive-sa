@@ -1,6 +1,6 @@
 {
   "schema": "eventlive.source-strategic-platform-radar.v1",
-  "generated_at": "2026-10-19T07:54:30.840Z",
+  "generated_at": "2026-10-21T07:46:31.982Z",
   "policy": {
     "allowed_use": "official source evidence refresh, API-surface mapping, partnership prioritization, extractor backlog decisions",
     "disallowed_use": "direct catalog publication without official confirmation and duplicate review"
@@ -133,7 +133,7 @@
       "final_url": "https://nec.gov.sa/ar",
       "via": "fetch",
       "content_type": "text/html; charset=utf-8",
-      "bytes": 142247,
+      "bytes": 134669,
       "title": "المركز الوطني للفعاليات",
       "classification": "protected",
       "error": "",
@@ -142,7 +142,6 @@
         "https://nec.gov.sa/en",
         "https://nec.gov.sa/media/2e5a88cf-8d48-43e2-9178-41c9e9ed8d4b/about-introduction.webp",
         "http://www.w3.org/2000/svg",
-        "https://enjz.nec.gov.sa/",
         "https://laws.boe.gov.sa/BoeLaws/Laws/LawDetails/e73fd7d3-e812-477b-8112-ad3f00d16fd9/1",
         "https://www.hrsd.gov.sa/knowledge-centre/decisions-and-regulations/regulation-and-procedures/0211202310#",
         "https://eparticipation.my.gov.sa/",
@@ -152,7 +151,16 @@
         "https://www.instagram.com/nec.saudi/",
         "https://www.linkedin.com/company/events-center-sa/",
         "https://sdaia.gov.sa/ar/MediaCenter/Pages/ai-year.aspx",
+        "https://enjz.nec.gov.sa/",
+        "https://static.cloudflareinsights.com/beacon.min.js/vce701823e78c4301a35b7e07294d87301792088814092",
+        "https://raqmi.dga.gov.sa/platforms/platforms/4b50c837-5b74-4f7e-c4a7-08dcfc01c363/platform-license\\\\\\",
+        "https://laws.boe.gov.sa/BoeLaws/Laws/LawDetails/e73fd7d3-e812-477b-8112-ad3f00d16fd9/1\\",
+        "https://www.hrsd.gov.sa/knowledge-centre/decisions-and-regulations/regulation-and-procedures/0211202310#\\",
+        "https://eparticipation.my.gov.sa/\\",
+        "https://ncar.gov.sa/\\",
+        "https://www.vision2030.gov.sa/ar/\\",
         "http://www.w3.org/2000/svg\\",
+        "https://ehsan.sa/\\",
         "https://enjz.nec.gov.sa/\\",
         "https://www.scega.gov.sa/home\\",
         "https://mt.gov.sa/ar\\",
@@ -161,32 +169,24 @@
         "https://www.gea.gov.sa/ar/\\",
         "https://www.asda.gov.sa/ar\\",
         "https://www.dgda.gov.sa/ar\\",
-        "https://raqmi.dga.gov.sa/platforms/platforms/4b50c837-5b74-4f7e-c4a7-08dcfc01c363/platform-license\\\\\\",
-        "https://laws.boe.gov.sa/BoeLaws/Laws/LawDetails/e73fd7d3-e812-477b-8112-ad3f00d16fd9/1\\",
-        "https://www.hrsd.gov.sa/knowledge-centre/decisions-and-regulations/regulation-and-procedures/0211202310#\\",
-        "https://eparticipation.my.gov.sa/\\",
-        "https://ncar.gov.sa/\\",
-        "https://www.vision2030.gov.sa/ar/\\",
-        "https://ehsan.sa/\\",
         "https://nec.gov.sa/ar\\",
         "https://nec.gov.sa/en\\",
         "https://nec.gov.sa/media/2e5a88cf-8d48-43e2-9178-41c9e9ed8d4b/about-introduction.webp\\",
-        "https://static.cloudflareinsights.com/beacon.min.js/vce701823e78c4301a35b7e07294d87301792088814092",
         "https://nec.gov.sa/ar/event-tech",
         "https://nec.gov.sa/ar/join-us/event-pioneer",
+        "https://nec.gov.sa/ar/join-us/event-pioneer/",
         "https://nec.gov.sa/ar/event-tech/",
         "https://nec.gov.sa/join-us/event-pioneer/",
-        "https://nec.gov.sa/media/bceb6f0d-07c1-461d-8cf5-374b508b6e54/jeddah-calender-events-%D8%AA%D9%82%D9%88%D9%8A%D9%85-%D8%AC%D8%AF%D8%A9-%D9%81%D8%B9%D8%A7%D9%84%D9%8A%D8%A7%D8%AA-%D9%81%D8%B9%D8%A7%D9%84%D9%8A%D8%A9-%D8%B3%D9%8A%D8%AA%D9%8A-%D9%88%D9%88%D9%83-%D9%88%D9%83-%D8%A7%D8%B3%D9%8A%D8%A7-%D8%A7%D9%84%D8%B5%D8%BA%D8%B1%D9%89zoo.jpg/",
-        "https://nec.gov.sa/media/31a5822a-4e1b-4d64-a9ec-5f042964e8ff/event%D8%AA%D9%82%D9%88%D9%8A%D9%85-%D8%AC%D8%AF%D8%A9-%D9%81%D8%B9%D8%A7%D9%84%D9%8A%D8%A7%D8%AA-%D9%81%D8%B9%D8%A7%D9%84%D9%8A%D8%A9-%D8%B3%D9%8A%D8%AA%D9%8A-%D9%88%D9%88%D9%83-%D9%88%D9%83-%D8%A7%D8%B3%D9%8A%D8%A7-%D8%A7%D9%84%D8%B5%D8%BA%D8%B1%D9%89.jpg/"
+        "https://nec.gov.sa/media/bceb6f0d-07c1-461d-8cf5-374b508b6e54/jeddah-calender-events-%D8%AA%D9%82%D9%88%D9%8A%D9%85-%D8%AC%D8%AF%D8%A9-%D9%81%D8%B9%D8%A7%D9%84%D9%8A%D8%A7%D8%AA-%D9%81%D8%B9%D8%A7%D9%84%D9%8A%D8%A9-%D8%B3%D9%8A%D8%AA%D9%8A-%D9%88%D9%88%D9%83-%D9%88%D9%83-%D8%A7%D8%B3%D9%8A%D8%A7-%D8%A7%D9%84%D8%B5%D8%BA%D8%B1%D9%89zoo.jpg/"
       ],
       "page_hint_words": [
         "api",
-        "event",
-        "events"
+        "events",
+        "event"
       ],
       "asset_results": [],
       "api_results": [],
-      "text_sample": "المركز الوطني للفعاليات موقع حكومي مسجل لدي هيئة الحكومة الرقمية كيف تتحقق تسجيل الدخول EN تواصل معنا قطاع واعد لفعاليات المملكة لقطاع فعاليات واعد، ومواسم سعودية استثنائية، وتقويم وطني مزدهر وجاذب! من نحن أُسّس مركز الفعاليات بقرار من مجلس الوزراء بتاريخ 15 رجب 1441 هـ الموافق 10 مارس 2020م، ومقره الرياض، وهو يهدف إلى تعزيز الفعاليات في المملكة، والارتقاء بالخدمات المقدمة في المجال، ودعم مواسم السعودية والتقويم الوطني والفعاليات الكبرى، بناءً على ما يصدر من أوامر وقرارات، وفقًا للتوجهات والرؤى…"
+      "text_sample": "المركز الوطني للفعاليات موقع حكومي مسجل لدي هيئة الحكومة الرقمية كيف تتحقق تسجيل الدخول EN تواصل معنا النشرة الإخبارية اطلع على أخبار قطاع الفعاليات اشترك أعرف المزيد عنا عن المركز الترتيبات التنظيمية المركز الإعلامي الأسئلة الشائعة اتفاقية مستوى الخدمة تواصل معنا الاستفسارات التوظيف وسائل التواصل الاجتماعي المشاركة الإلكترونية الروابط المهمة نظام حقوق الأشخاص ذوي الإعاقة منصة المشاركة المجتمعية (تفاعل) المركز الوطني للوثائق والمحفوظات رؤية السعودية 2030 روابط الخدمات البيانات المفتوحة صفحة قائ…"
     },
     {
       "id": "visit-saudi-calendar",
@@ -199,7 +199,7 @@
       "final_url": "https://www.visitsaudi.com/ar/saudi-calendar",
       "via": "fetch",
       "content_type": "text/html; charset=utf-8",
-      "bytes": 91537,
+      "bytes": 91541,
       "title": "تقويم السعودية | تابع العطلات والفعاليات المميزة - الموقع الرسمي للسياحة السعودية",
       "classification": "reachable",
       "error": "",
@@ -256,11 +256,11 @@
         {
           "url": "https://www.visitsaudi.com/bin/api/v3/events?locale=ar",
           "status": 200,
-          "bytes": 93354,
+          "bytes": 90254,
           "classification": "reachable",
           "summary": {
             "parse_ok": true,
-            "item_count": 28,
+            "item_count": 27,
             "sample_titles": [
               "معرض اللغة العربية للطفل",
               "معرض اللغة العربية 28",
@@ -274,11 +274,11 @@
         {
           "url": "https://www.visitsaudi.com/bin/api/v3/events?locale=en",
           "status": 200,
-          "bytes": 97391,
+          "bytes": 94263,
           "classification": "reachable",
           "summary": {
             "parse_ok": true,
-            "item_count": 28,
+            "item_count": 27,
             "sample_titles": [
               "Arabic Language Exhibition for kids",
               "Arabic Language Exhibition 28",
@@ -315,7 +315,7 @@
         "https://images.cmscloud.ai",
         "https://apps.apple.com/sa/app/webook-com-fun-things-to-do/id6468667896",
         "https://play.google.com/store/apps/details?id=com.webook.android",
-        "https://wbk-assets.webook.com/8.01/assets/index-BX9A4cRO.js",
+        "https://wbk-assets.webook.com/8.01/assets/index-AwsHTrwL.js",
         "https://wbk-assets.webook.com/8.01/assets/vendor-CMb0R77e.js",
         "https://wbk-assets.webook.com/8.01/locales/en/common.json",
         "https://wbk-assets.webook.com/8.01/locales/en/home.json",
@@ -330,7 +330,7 @@
         "https://wbk-assets.webook.com/8.01/locales/en/currency_common.json",
         "https://wbk-assets.webook.com/8.01/locales/en/payment_common.json",
         "https://wbk-assets.webook.com/8.01/locales/en/subscription_common.json",
-        "https://webook.com/cdn-cgi/content?id=jiiTVst_aba7WB3QFus_L_v3ZC6JEw6bXFz4qmGO9Fk-1792396479.8490217-1.2.1.1-45HeEx.5MLq9Ptz3vhwM6gxalbZmUbuYisQPo4uyqfgIA6h4QzBFxTYEgZ4TArfJ",
+        "https://webook.com/cdn-cgi/content?id=tO7Qrz_9a3d4fnMxiFEw.6OLhmJnyEw2xO24BksfuQc-1792568800.6198027-1.2.1.1-SlO5LiwDODIe4FJAlRBc_Vv7Sa66O2BkhkY_znZ1bv7.YwonG0Jmyf8BSxab5kMO",
         "https://static.cloudflareinsights.com/beacon.min.js/vce701823e78c4301a35b7e07294d87301792088814092"
       ],
       "page_hint_words": [

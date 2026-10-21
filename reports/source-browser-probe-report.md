@@ -1,11 +1,11 @@
 # EventLive Browser Source Probe
 
-Generated at: 2026-10-20T07:41:27.889Z
+Generated at: 2026-10-21T07:58:24.889Z
 
 ## Summary
 
 - Sources probed this run: 4
-- Fresh results available: 8
+- Fresh results available: 4
 - Browser network API: 1
 - Hydration payload: 0
 - Rendered HTML candidates: 2
@@ -16,11 +16,7 @@ Generated at: 2026-10-20T07:41:27.889Z
 
 | Priority | Source | Status | HTTP | Classification | Endpoints | Event links | Date snippets | Next action |
 |---:|---|---|---:|---|---:|---:|---:|---|
-| 3 | moc-cultural-calendar | error | 0 | empty-or-shell | 0 | 0 | 0 | اعتبرها shell وابحث عن API أو مسار بديل قبل أي collector. |
-| 4 | mos-events | error | 0 | empty-or-shell | 0 | 0 | 0 | اعتبرها shell وابحث عن API أو مسار بديل قبل أي collector. |
 | 17 | future-skills-catalog | ok | 200 | rendered-html-candidates | 0 | 20 | 0 | اكتب extractor مرن من DOM بعد الرندر أو حسن selector الحالي. |
-| 30 | saudi-pro-league-fixtures | error | 0 | empty-or-shell | 0 | 0 | 0 | اعتبرها shell وابحث عن API أو مسار بديل قبل أي collector. |
-| 37 | moc-cultural-subportals | error | 0 | empty-or-shell | 0 | 0 | 0 | اعتبرها shell وابحث عن API أو مسار بديل قبل أي collector. |
 | 51 | riyadh-city-events | ok | 200 | rendered-html-candidates | 0 | 3 | 0 | اكتب extractor مرن من DOM بعد الرندر أو حسن selector الحالي. |
 | 59 | asharqia-chamber-events | ok | 404 | browser-network-api | 1 | 7 | 0 | ثبت endpoint مرشحًا كجامع مباشر، ثم اكتب extractor من JSON مع اختبار انحدار. |
 | 60 | qassim-chamber-events | ok | 403 | blocked-or-protected | 0 | 0 | 0 | لا تلتف على الحماية؛ صنف المصدر partnership/API أو ابحث عن مسار رسمي. |

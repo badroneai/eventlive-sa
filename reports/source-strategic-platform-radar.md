@@ -1,6 +1,6 @@
 # Strategic Platform Source Radar
 
-Generated at: 2026-10-19T07:54:30.840Z
+Generated at: 2026-10-21T07:46:31.982Z
 
 Policy: evidence refresh, API-surface mapping, and source strategy only. This radar does not auto-publish catalog events.
 
@@ -41,7 +41,7 @@ Policy: evidence refresh, API-surface mapping, and source strategy only. This ra
 - Classification: protected (200, fetch)
 - Project use: Keep as the top strategic feed target; public site is evidence, while national-calendar export/API access is the real integration ask.
 - Title: المركز الوطني للفعاليات
-- Hint URLs: https://nec.gov.sa/ar, https://nec.gov.sa/en, https://nec.gov.sa/media/2e5a88cf-8d48-43e2-9178-41c9e9ed8d4b/about-introduction.webp, http://www.w3.org/2000/svg, https://enjz.nec.gov.sa/, https://laws.boe.gov.sa/BoeLaws/Laws/LawDetails/e73fd7d3-e812-477b-8112-ad3f00d16fd9/1, https://www.hrsd.gov.sa/knowledge-centre/decisions-and-regulations/regulation-and-procedures/0211202310#, https://eparticipation.my.gov.sa/
+- Hint URLs: https://nec.gov.sa/ar, https://nec.gov.sa/en, https://nec.gov.sa/media/2e5a88cf-8d48-43e2-9178-41c9e9ed8d4b/about-introduction.webp, http://www.w3.org/2000/svg, https://laws.boe.gov.sa/BoeLaws/Laws/LawDetails/e73fd7d3-e812-477b-8112-ad3f00d16fd9/1, https://www.hrsd.gov.sa/knowledge-centre/decisions-and-regulations/regulation-and-procedures/0211202310#, https://eparticipation.my.gov.sa/, https://ncar.gov.sa/
 
 ### Visit Saudi Calendar
 
@@ -51,8 +51,8 @@ Policy: evidence refresh, API-surface mapping, and source strategy only. This ra
 - Project use: Keep in the 6-hour source ring; Arabic and English API payloads are reachable and useful for tourism-facing event discovery.
 - Title: تقويم السعودية | تابع العطلات والفعاليات المميزة - الموقع الرسمي للسياحة السعودية
 - Hint URLs: https://www.googletagmanager.com, https://cdn.consentmanager.net, https://delivery.consentmanager.net, https://www.googletagmanager.com/gtm.js?id=, https://www.clarity.ms/tag/, https://www.visitsaudi.com/images/SoundStorm-1.2e16d0ba.fill-1200x630.jpg, https://www.visitsaudi.com/ar/saudi-calendar, https://www.visitsaudi.com/ar
-  - API 200 https://www.visitsaudi.com/bin/api/v3/events?locale=ar: 28 items; معرض اللغة العربية للطفل, معرض اللغة العربية 28, تجربة شاطئ قالو, «استمرارية 26» برنامج الفنانين الناشئين في فنون الوسائط الجديدة بمركز الدرعية لفنون المستقبل, الأخطبوطية كيدز
-  - API 200 https://www.visitsaudi.com/bin/api/v3/events?locale=en: 28 items; Arabic Language Exhibition for kids, Arabic Language Exhibition 28, GALU Beach Experience, Continuum '26 Diriyah Art Futures Emerging New Media Artists Programme, Okhtabotiya Kids
+  - API 200 https://www.visitsaudi.com/bin/api/v3/events?locale=ar: 27 items; معرض اللغة العربية للطفل, معرض اللغة العربية 28, تجربة شاطئ قالو, «استمرارية 26» برنامج الفنانين الناشئين في فنون الوسائط الجديدة بمركز الدرعية لفنون المستقبل, الأخطبوطية كيدز
+  - API 200 https://www.visitsaudi.com/bin/api/v3/events?locale=en: 27 items; Arabic Language Exhibition for kids, Arabic Language Exhibition 28, GALU Beach Experience, Continuum '26 Diriyah Art Futures Emerging New Media Artists Programme, Okhtabotiya Kids
 
 ### webook Explore
 
@@ -61,7 +61,7 @@ Policy: evidence refresh, API-surface mapping, and source strategy only. This ra
 - Classification: protected (200, fetch)
 - Project use: Use for lead discovery, ticket-link corroboration, and duplicate checks; require official organizer or authority confirmation before promotion.
 - Title: -
-- Hint URLs: https://wbk-assets.webook.com, https://api.webook.com, https://webook.cmscloud.ai, https://geolocation.webook.com, https://images.cmscloud.ai, https://apps.apple.com/sa/app/webook-com-fun-things-to-do/id6468667896, https://play.google.com/store/apps/details?id=com.webook.android, https://wbk-assets.webook.com/8.01/assets/index-BX9A4cRO.js
+- Hint URLs: https://wbk-assets.webook.com, https://api.webook.com, https://webook.cmscloud.ai, https://geolocation.webook.com, https://images.cmscloud.ai, https://apps.apple.com/sa/app/webook-com-fun-things-to-do/id6468667896, https://play.google.com/store/apps/details?id=com.webook.android, https://wbk-assets.webook.com/8.01/assets/index-AwsHTrwL.js
 
 ### Enjoy Saudi
 

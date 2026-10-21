@@ -1,22 +1,22 @@
 {
-  "generated_at": "2026-10-20T07:54:06.942Z",
+  "generated_at": "2026-10-21T08:14:07.849Z",
   "catalog": "data/events_catalog.json",
   "source": "Saudi Water Authority Events",
   "totals": {
     "targets": 7,
     "candidates": 6,
     "enriched": 7,
-    "fetched": 6,
+    "fetched": 7,
     "images": 7,
-    "fetch_failures": 1
+    "fetch_failures": 0
   },
   "enriched": [
     {
       "id": "event-global-infrastructure-expo",
       "title": "Global Infrastructure Expo | Saudi Water Authority",
-      "source_method": "approved-calendar-row",
+      "source_method": "official-page-html",
       "image_url": "https://swa-cdn.swa.gov.sa/Events/b4fed1f10c414a39a5c49cd9fda6a63d_2026_05_20_07_35_20_655.png",
-      "fetched": false,
+      "fetched": true,
       "features": 7
     },
     {
@@ -68,12 +68,5 @@
       "features": 7
     }
   ],
-  "failed": [
-    {
-      "id": "event-global-infrastructure-expo",
-      "title": "Global Infrastructure Expo | Saudi Water Authority",
-      "source_url": "https://www.swa.gov.sa/en/events/Event-639148593206554999",
-      "reason": "The operation was aborted due to timeout"
-    }
-  ]
+  "failed": []
 }

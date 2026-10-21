@@ -1,32 +1,32 @@
 # EventLive Harvest OS Status
 
-- Generated at: 2026-10-20T08:09:14.758Z
+- Generated at: 2026-10-21T08:31:44.167Z
 - Status: NEEDS_WORK
 - Operating rule: Probe before new sources; sample before full harvest; Raw collection is not publication; discovery-only never auto-publishes.
 
 ## Totals
 
 - Sources: 88
-- Candidates: 413
-- Matched candidates: 385
+- Candidates: 406
+- Matched candidates: 378
 - Auto-publish sources: 15
 - Candidate-only sources: 12
 - Partnership-required sources: 5
-- Productive sources / attempted: 14/18
-- Collector errors: 7 (chronic 6, transient 1)
+- Productive sources / attempted: 15/29
+- Collector errors: 7 (chronic 7, transient 0)
 
 ## Publication Funnel
 
 | Stage | Count |
 | --- | --- |
-| discovered_this_run | 205 |
-| candidate_queue | 413 |
-| evaluated_for_publish | 413 |
-| linked_existing | 373 |
-| published_new | 10 |
-| blocked | 30 |
+| discovered_this_run | 220 |
+| candidate_queue | 406 |
+| evaluated_for_publish | 406 |
+| linked_existing | 375 |
+| published_new | 0 |
+| blocked | 31 |
 | secondary_promoted | 0 |
-| secondary_still_blocked | 38 |
+| secondary_still_blocked | 28 |
 
 ## Blocked Reasons
 
@@ -35,6 +35,7 @@
 | publication gate source-evidence is not auto-publishable | 22 |
 | possible duplicate requires review: exact-title-city-venue-conflict | 3 |
 | unknown category requires review | 2 |
+| possible duplicate already exists: event-لقاء-بعنوان-الشخصية-القيادية-عبر-الشعوب | 1 |
 | linked catalog row event-feena-nehke-stand-up-comedy-by-john-achkar was superseded by dedupe | 1 |
 | possible duplicate requires review: exact-title-city-source-conflict | 1 |
 | linked catalog row event-music-festival-mdlbeast-soundstorm was superseded by dedupe | 1 |
@@ -43,13 +44,13 @@
 
 | Source | Kind | Failed runs in a row | Attempted this run | Reason |
 | --- | --- | --- | --- | --- |
-| moc-cultural-calendar | chronic | 56 | no | collector-error: fetch failed [ETIMEDOUT, ENETUNREACH]; fetch failed [ETIMEDOUT, ENETUNREACH] |
-| mos-events | chronic | 56 | no | collector-error: fetch failed [ETIMEDOUT, ENETUNREACH]; live browser recovery deferred by recent failed probe cooldown |
-| moc-cultural-subportals | chronic | 56 | no | collector-error: fetch failed [UND_ERR_CONNECT_TIMEOUT]; fetch failed [UND_ERR_CONNECT_TIMEOUT] |
-| saudi-pro-league-fixtures | chronic | 36 | no | collector-error: fetch failed [EAI_AGAIN] |
-| tuwaiq-academy-bootcamps | chronic | 33 | no | collector-error: HTTP 403 |
-| monshaat-events | chronic | 4 | no | collector-error: fetch failed [UND_ERR_CONNECT_TIMEOUT]; fetch failed [UND_ERR_CONNECT_TIMEOUT] |
-| qassim-chamber-events | transient | 2 | yes | HTTP 403; live browser recovery deferred by recent failed probe cooldown |
+| moc-cultural-calendar | chronic | 57 | yes | collector-error: fetch failed [ETIMEDOUT, ENETUNREACH]; fetch failed [ETIMEDOUT, ENETUNREACH] |
+| mos-events | chronic | 57 | yes | collector-error: fetch failed [ETIMEDOUT, ENETUNREACH] |
+| moc-cultural-subportals | chronic | 57 | yes | collector-error: fetch failed [UND_ERR_CONNECT_TIMEOUT]; fetch failed [UND_ERR_CONNECT_TIMEOUT] |
+| saudi-pro-league-fixtures | chronic | 37 | yes | collector-error: fetch failed [EAI_AGAIN] |
+| tuwaiq-academy-bootcamps | chronic | 34 | yes | collector-error: HTTP 403 |
+| monshaat-events | chronic | 5 | yes | collector-error: fetch failed [UND_ERR_CONNECT_TIMEOUT]; fetch failed [UND_ERR_CONNECT_TIMEOUT] |
+| qassim-chamber-events | chronic | 3 | yes | collector-error: HTTP 403; live browser recovery deferred by recent failed probe cooldown |
 
 | Source | Policy | Trust | Gate |
 | --- | --- | --- | --- |

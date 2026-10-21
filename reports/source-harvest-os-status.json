@@ -1,22 +1,22 @@
 {
   "schema": "eventlive.harvest-os-status.v1",
-  "generated_at": "2026-10-20T08:09:14.758Z",
+  "generated_at": "2026-10-21T08:31:44.167Z",
   "status": "NEEDS_WORK",
   "operating_rule": "Probe before new sources; sample before full harvest; Raw collection is not publication; discovery-only never auto-publishes.",
   "totals": {
     "sources": 88,
-    "candidates": 413,
-    "matched_candidates": 385,
+    "candidates": 406,
+    "matched_candidates": 378,
     "auto_publish_sources": 15,
     "candidate_only_sources": 12,
     "partnership_required_sources": 5,
     "blocked_or_closed_sources": 0,
     "manual_review_sources": 56,
-    "collection_attempted": 18,
-    "productive_sources": 14,
+    "collection_attempted": 29,
+    "productive_sources": 15,
     "collector_errors": 7,
-    "chronic_collector_errors": 6,
-    "transient_collector_errors": 1
+    "chronic_collector_errors": 7,
+    "transient_collector_errors": 0
   },
   "policies": {
     "partnership_required": 5,
@@ -25,22 +25,23 @@
     "manual_review": 56
   },
   "candidates_by_gate": {
-    "catalog-review": 385,
+    "catalog-review": 378,
     "duplicate-review": 4,
     "source-evidence": 24
   },
   "funnel": {
-    "discovered_this_run": 205,
-    "candidate_queue": 413,
-    "evaluated_for_publish": 413,
-    "linked_existing": 373,
-    "published_new": 10,
-    "blocked": 30,
+    "discovered_this_run": 220,
+    "candidate_queue": 406,
+    "evaluated_for_publish": 406,
+    "linked_existing": 375,
+    "published_new": 0,
+    "blocked": 31,
     "secondary_promoted": 0,
-    "secondary_still_blocked": 38
+    "secondary_still_blocked": 28
   },
   "blocked_reasons": {
     "possible duplicate requires review: exact-title-city-venue-conflict": 3,
+    "possible duplicate already exists: event-لقاء-بعنوان-الشخصية-القيادية-عبر-الشعوب": 1,
     "linked catalog row event-feena-nehke-stand-up-comedy-by-john-achkar was superseded by dedupe": 1,
     "publication gate source-evidence is not auto-publishable": 22,
     "possible duplicate requires review: exact-title-city-source-conflict": 1,
@@ -51,50 +52,50 @@
     {
       "id": "moc-cultural-calendar",
       "note": "collector-error: fetch failed [ETIMEDOUT, ENETUNREACH]; fetch failed [ETIMEDOUT, ENETUNREACH]",
-      "error_streak": 56,
+      "error_streak": 57,
       "kind": "chronic",
-      "attempted_this_run": false
+      "attempted_this_run": true
     },
     {
       "id": "mos-events",
-      "note": "collector-error: fetch failed [ETIMEDOUT, ENETUNREACH]; live browser recovery deferred by recent failed probe cooldown",
-      "error_streak": 56,
+      "note": "collector-error: fetch failed [ETIMEDOUT, ENETUNREACH]",
+      "error_streak": 57,
       "kind": "chronic",
-      "attempted_this_run": false
+      "attempted_this_run": true
     },
     {
       "id": "moc-cultural-subportals",
       "note": "collector-error: fetch failed [UND_ERR_CONNECT_TIMEOUT]; fetch failed [UND_ERR_CONNECT_TIMEOUT]",
-      "error_streak": 56,
+      "error_streak": 57,
       "kind": "chronic",
-      "attempted_this_run": false
+      "attempted_this_run": true
     },
     {
       "id": "saudi-pro-league-fixtures",
       "note": "collector-error: fetch failed [EAI_AGAIN]",
-      "error_streak": 36,
+      "error_streak": 37,
       "kind": "chronic",
-      "attempted_this_run": false
+      "attempted_this_run": true
     },
     {
       "id": "tuwaiq-academy-bootcamps",
       "note": "collector-error: HTTP 403",
-      "error_streak": 33,
+      "error_streak": 34,
       "kind": "chronic",
-      "attempted_this_run": false
+      "attempted_this_run": true
     },
     {
       "id": "monshaat-events",
       "note": "collector-error: fetch failed [UND_ERR_CONNECT_TIMEOUT]; fetch failed [UND_ERR_CONNECT_TIMEOUT]",
-      "error_streak": 4,
+      "error_streak": 5,
       "kind": "chronic",
-      "attempted_this_run": false
+      "attempted_this_run": true
     },
     {
       "id": "qassim-chamber-events",
-      "note": "HTTP 403; live browser recovery deferred by recent failed probe cooldown",
-      "error_streak": 2,
-      "kind": "transient",
+      "note": "collector-error: HTTP 403; live browser recovery deferred by recent failed probe cooldown",
+      "error_streak": 3,
+      "kind": "chronic",
       "attempted_this_run": true
     }
   ],

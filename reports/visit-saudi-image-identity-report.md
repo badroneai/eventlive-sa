@@ -1,14 +1,14 @@
 # EventLive Visit Saudi Image Identity Report
 
-- generated_at: 2026-10-20T07:51:03.641Z
+- generated_at: 2026-10-21T08:11:52.012Z
 - pdf_crop_assignments: 39
-- verified: 39
-- struck: 0
-- slots_seen_this_cycle: 44
+- verified: 38
+- struck: 1
+- slots_seen_this_cycle: 43
 
 ## Struck (fell back to generated cover)
 
-- none
+- ”فينا نحكي؟“ عرض ستاند أب كوميدي لجون أشقر (visit-saudi-summer-2026-p026-top-left.jpg) - slot-vacated - no dated card currently occupies page 26 top-left of https://www.visitsaudi.com/content/dam/documents/saudi-calendar-ar.pdf
 
 ## Verified
 
@@ -23,7 +23,6 @@
 - الاخطبوطية كيدز (visit-saudi-summer-2026-p005-bottom-left.jpg)
 - ربع تون (visit-saudi-summer-2026-p006-top-right.jpg)
 - نهائيات FIFAe 26 (visit-saudi-summer-2026-p045-bottom-left.jpg)
-- ”فينا نحكي؟“ عرض ستاند أب كوميدي لجون أشقر (visit-saudi-summer-2026-p026-top-left.jpg)
 - Six Kings Slam (visit-saudi-summer-2026-p007-top-right.jpg)
 - فينا نحكي؟ عرض ستاند أب كوميدي يقدمه جون أشقر (visit-saudi-summer-2026-p007-top-left.jpg)
 - لحد يدري: عرض ستاند اب كوميدي من أسامة بازيد (visit-saudi-summer-2026-p021-top-left.jpg)
