@@ -1,270 +1,185 @@
 {
-  "generated_at": "2026-10-21T08:11:56.820Z",
+  "generated_at": "2026-10-22T08:24:15.031Z",
   "catalog": "data/events_catalog.json",
   "totals": {
     "targets": 29,
-    "enriched": 28,
-    "failed": 1
+    "enriched": 0,
+    "failed": 29
   },
-  "enriched": [
+  "enriched": [],
+  "failed": [
     {
       "id": "event-introduction-to-generative-ai-مقدمة-في-الذكاء-الاصطناعي-التوليدي",
       "title": "Introduction to Generative AI-مقدمة في الذكاء الاصطناعي التوليدي",
       "group_id": "13037",
-      "goals": 1,
-      "features": 3,
-      "requirements": 4,
-      "metadata": 8
+      "reason": "HTTP 404"
     },
     {
       "id": "event-دورة-comptia-a",
       "title": "دورة +CompTIA A",
       "group_id": "13039",
-      "goals": 5,
-      "features": 15,
-      "requirements": 5,
-      "metadata": 8
+      "reason": "HTTP 404"
     },
     {
       "id": "event-security-operations-threat-detection-incident-response-عمليات-الأمن-السي",
       "title": "Security Operations, Threat Detection & Incident Response - عمليات الأمن السيبراني، واكتشاف التهديدات، والاستجابة للحوادث",
       "group_id": "13040",
-      "goals": 1,
-      "features": 3,
-      "requirements": 4,
-      "metadata": 8
+      "reason": "HTTP 404"
     },
     {
       "id": "event-أساسيات-الحوسبة-السحابية-cloud-computing-essentials",
       "title": "أساسيات الحوسبة السحابية - Cloud Computing Essentials",
       "group_id": "13035",
-      "goals": 6,
-      "features": 13,
-      "requirements": 3,
-      "metadata": 8
+      "reason": "HTTP 404"
     },
     {
       "id": "event-advanced-excel-for-data-analysis-دورة-اكسيل-لتحليل-البيانات",
       "title": "Advanced Excel for Data Analysis - دورة اكسيل لتحليل البيانات",
       "group_id": "13041",
-      "goals": 1,
-      "features": 4,
-      "requirements": 4,
-      "metadata": 8
+      "reason": "HTTP 404"
     },
     {
       "id": "event-comptia-a",
       "title": "CompTIA A+",
       "group_id": "13042",
-      "goals": 1,
-      "features": 7,
-      "requirements": 4,
-      "metadata": 8
+      "reason": "HTTP 404"
     },
     {
       "id": "event-cloud-computing-essentials-أساسيات-الحوسبة-السحابية",
       "title": "Cloud Computing Essentials - أساسيات الحوسبة السحابية",
       "group_id": "13043",
-      "goals": 1,
-      "features": 4,
-      "requirements": 4,
-      "metadata": 8
+      "reason": "HTTP 404"
     },
     {
       "id": "event-duplicate-of-cloud-computing-essentials-أساسيات-الحوسبة-السحابية",
       "title": "Duplicate of Cloud Computing Essentials - أساسيات الحوسبة السحابية",
       "group_id": "13044",
-      "goals": 1,
-      "features": 4,
-      "requirements": 4,
-      "metadata": 8
+      "reason": "HTTP 404"
     },
     {
       "id": "event-cloud-storage-and-databases-fundamentals-أساسيات-التخزين-السحابي-وقواعد-",
       "title": "Cloud Storage and Databases Fundamentals - أساسيات التخزين السحابي وقواعد البيانات",
       "group_id": "13045",
-      "goals": 1,
-      "features": 7,
-      "requirements": 4,
-      "metadata": 8
+      "reason": "HTTP 404"
     },
     {
       "id": "event-devops-fundamentals-for-cloud-environments-أساسيات-ديفوبس-لبيئات-السحابة",
       "title": "DevOps Fundamentals for Cloud Environments-أساسيات ديفوبس لبيئات السحابة",
       "group_id": "13046",
-      "goals": 1,
-      "features": 3,
-      "requirements": 4,
-      "metadata": 8
+      "reason": "HTTP 404"
     },
     {
       "id": "event-cloud-security-operations-and-identity-management-عمليات-أمان-السحابة-وإ",
       "title": "Cloud Security Operations and Identity Management - عمليات أمان السحابة وإدارة الهوية",
       "group_id": "13047",
-      "goals": 1,
-      "features": 3,
-      "requirements": 4,
-      "metadata": 8
+      "reason": "HTTP 404"
     },
     {
       "id": "event-machine-learning-التعلم-الالي",
       "title": "Machine Learning - التعلم الالي",
       "group_id": "13048",
-      "goals": 1,
-      "features": 5,
-      "requirements": 4,
-      "metadata": 8
+      "reason": "HTTP 404"
     },
     {
       "id": "event-genai-for-data-analysis-and-decision-support-الذكاء-الاصطناعي-التوليدي-ل",
       "title": "GenAI for Data Analysis and Decision Support - الذكاء الاصطناعي التوليدي لتحليل البيانات ودعم اتخاذ القرار",
       "group_id": "13049",
-      "goals": 1,
-      "features": 2,
-      "requirements": 4,
-      "metadata": 8
+      "reason": "HTTP 404"
     },
     {
       "id": "event-comptia-cloud",
       "title": "CompTIA Cloud+",
       "group_id": "13050",
-      "goals": 1,
-      "features": 19,
-      "requirements": 4,
-      "metadata": 8
+      "reason": "HTTP 404"
     },
     {
       "id": "event-virtualization-cloud-infrastructure-basics-الافتراضية-والبنية-التحتية-ال",
       "title": "Virtualization & Cloud Infrastructure Basics - الافتراضية والبنية التحتية السحابية",
       "group_id": "13051",
-      "goals": 1,
-      "features": 3,
-      "requirements": 4,
-      "metadata": 8
+      "reason": "HTTP 404"
     },
     {
       "id": "event-sql-fundamentals",
       "title": "SQL Fundamentals",
       "group_id": "13052",
-      "goals": 1,
-      "features": 15,
-      "requirements": 4,
-      "metadata": 8
+      "reason": "HTTP 404"
     },
     {
       "id": "event-comptia-it-fundamentals",
       "title": "CompTIA IT Fundamentals",
       "group_id": "13053",
-      "goals": 1,
-      "features": 1,
-      "requirements": 4,
-      "metadata": 8
+      "reason": "HTTP 404"
     },
     {
       "id": "event-aws-solutions-architect-associate-practical",
       "title": "AWS Solutions Architect – Associate Practical",
       "group_id": "13054",
-      "goals": 1,
-      "features": 1,
-      "requirements": 4,
-      "metadata": 8
+      "reason": "HTTP 404"
     },
     {
       "id": "event-comptia-network",
       "title": "CompTIA Network+",
       "group_id": "13055",
-      "goals": 1,
-      "features": 1,
-      "requirements": 4,
-      "metadata": 8
+      "reason": "HTTP 404"
     },
     {
       "id": "event-power-bi-for-beginners",
       "title": "Power BI for Beginners",
       "group_id": "13056",
-      "goals": 1,
-      "features": 1,
-      "requirements": 4,
-      "metadata": 8
+      "reason": "HTTP 404"
+    },
+    {
+      "id": "event-linux-administration",
+      "title": "Linux Administration",
+      "group_id": "13057",
+      "reason": "HTTP 404"
     },
     {
       "id": "event-ccna",
       "title": "CCNA",
       "group_id": "13058",
-      "goals": 1,
-      "features": 1,
-      "requirements": 4,
-      "metadata": 8
+      "reason": "HTTP 404"
     },
     {
       "id": "event-responsible-ai-ethics-and-ai-governance",
       "title": "Responsible AI, Ethics and AI Governance",
       "group_id": "13059",
-      "goals": 1,
-      "features": 1,
-      "requirements": 4,
-      "metadata": 8
+      "reason": "HTTP 404"
     },
     {
       "id": "event-cloud-for-ai-big-data-machine-learning",
       "title": "Cloud for AI, Big Data & Machine Learning",
       "group_id": "13060",
-      "goals": 1,
-      "features": 1,
-      "requirements": 4,
-      "metadata": 8
+      "reason": "HTTP 404"
     },
     {
       "id": "event-ccnp",
       "title": "CCNP",
       "group_id": "13061",
-      "goals": 1,
-      "features": 1,
-      "requirements": 4,
-      "metadata": 8
+      "reason": "HTTP 404"
     },
     {
       "id": "event-data-analysis-with-python",
       "title": "Data Analysis with Python",
       "group_id": "13062",
-      "goals": 1,
-      "features": 1,
-      "requirements": 4,
-      "metadata": 8
+      "reason": "HTTP 404"
     },
     {
       "id": "event-red-hat-certified-system-administrator-rhcsa",
       "title": "Red Hat Certified System Administrator (RHCSA)",
       "group_id": "13063",
-      "goals": 1,
-      "features": 1,
-      "requirements": 4,
-      "metadata": 8
+      "reason": "HTTP 404"
     },
     {
       "id": "event-data-science-foundations",
       "title": "Data Science Foundations",
       "group_id": "13066",
-      "goals": 1,
-      "features": 1,
-      "requirements": 4,
-      "metadata": 8
+      "reason": "HTTP 404"
     },
     {
       "id": "event-introduction-to-apis-and-web-services",
       "title": "Introduction to APIs and Web Services",
       "group_id": "13067",
-      "goals": 1,
-      "features": 1,
-      "requirements": 4,
-      "metadata": 8
-    }
-  ],
-  "failed": [
-    {
-      "id": "event-linux-administration",
-      "title": "Linux Administration",
-      "group_id": "13057",
       "reason": "HTTP 404"
     }
   ]

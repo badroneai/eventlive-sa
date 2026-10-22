@@ -1,18 +1,18 @@
 {
-  "published_at": "2026-10-21T08:11:47.379Z",
+  "published_at": "2026-10-22T08:24:06.484Z",
   "dry_run": false,
   "include_partner": true,
   "source_candidates": "data/source_candidates.json",
   "events_catalog": "data/events_catalog.json",
-  "candidates_seen": 406,
+  "candidates_seen": 398,
   "totals": {
-    "candidates_seen": 406,
-    "published": 0,
-    "linked_existing": 375,
-    "blocked": 31,
+    "candidates_seen": 398,
+    "published": 3,
+    "linked_existing": 365,
+    "blocked": 30,
     "duplicate_review_alerts": 4,
     "category_fallback_alerts": 0,
-    "reconciled": 375,
+    "reconciled": 368,
     "session_windows_reconciled": 0
   },
   "session_window_changes": [],
@@ -90,7 +90,23 @@
       "start_date_drift_days": 0.042
     }
   ],
-  "published": [],
+  "published": [
+    {
+      "candidate_id": "candidate-visit-saudi-seasons-riyadh-racing-season-20261016-7ddb5364",
+      "event_id": "event-riyadh-racing-season",
+      "title": "Riyadh Racing Season"
+    },
+    {
+      "candidate_id": "candidate-hayy-jameel-events-hayy-markets-the-bakers-market-fall-edition-20261030-faf49ce1",
+      "event_id": "event-hayy-markets-the-bakers-market-fall-edition",
+      "title": "Hayy Markets | The Bakers Market: Fall Edition"
+    },
+    {
+      "candidate_id": "candidate-ithra-events-champions-challenge-20261102-92484ae4",
+      "event_id": "event-champions-challenge",
+      "title": "Champions' Challenge"
+    }
+  ],
   "linked_existing": [
     {
       "candidate_id": "candidate-moc-cultural-subportals-skill-development-initiative-20210714-10f7dc2c",
@@ -711,75 +727,15 @@
       "reason": "already linked to catalog event"
     },
     {
-      "candidate_id": "candidate-umm-al-qura-events-بناء-ثقافة-الدعم-المتبادل-وإدارة-الضغوط-اليومية-20261020-a6656110",
-      "event_id": "event-بناء-ثقافة-الدعم-المتبادل-وإدارة-الضغوط-اليومية",
-      "title": "بناء ثقافة الدعم المتبادل وإدارة الضغوط اليومية",
-      "reason": "already linked to catalog event"
-    },
-    {
-      "candidate_id": "candidate-riyadh-city-events-mipim-middle-east-20261020-02b71699",
-      "event_id": "event-mipim-middle-east",
-      "title": "MIPIM Middle East",
-      "reason": "already linked to catalog event"
-    },
-    {
-      "candidate_id": "candidate-umm-al-qura-events-ورشة-عمل-بعنوان-مهارات-سحب-الدم-20261020-b46a22da",
-      "event_id": "event-ورشة-عمل-بعنوان-مهارات-سحب-الدم",
-      "title": "ورشة عمل بعنوان مهارات سحب الدم",
-      "reason": "already linked to catalog event"
-    },
-    {
       "candidate_id": "candidate-visit-saudi-calendar-pdf-six-kings-slam-20261021-4a38d19e",
       "event_id": "event-six-kings-slam",
       "title": "Six Kings Slam",
       "reason": "already linked to catalog event"
     },
     {
-      "candidate_id": "candidate-umm-al-qura-events-آلية-تسجيل-متطلبات-الجامعة-الاختيارية-والاجبارية-20261021-c3aba0c1",
-      "event_id": "event-آلية-تسجيل-متطلبات-الجامعة-الاختيارية-والاجبارية",
-      "title": "آلية تسجيل متطلبات الجامعة (الاختيارية والاجبارية)",
-      "reason": "already linked to catalog event"
-    },
-    {
-      "candidate_id": "candidate-umm-al-qura-events-لقاء-بعنوان-قولها-بلغتي-20261021-e0c80385",
-      "event_id": "event-لقاء-بعنوان-قولها-بلغتي",
-      "title": "لقاء بعنوان قولها بلغتي",
-      "reason": "already linked to catalog event"
-    },
-    {
-      "candidate_id": "candidate-umm-al-qura-events-فعالية-أكتوبر-الوردي-20261021-b732ed26",
-      "event_id": "event-فعالية-أكتوبر-الوردي",
-      "title": "فعالية أكتوبر الوردي",
-      "reason": "already linked to catalog event"
-    },
-    {
-      "candidate_id": "candidate-umm-al-qura-events-ورشة-عمل-بعنوان-تغليف-الهدايا-20261021-fa768b08",
-      "event_id": "event-ورشة-عمل-بعنوان-تغليف-الهدايا",
-      "title": "ورشة عمل بعنوان تغليف الهدايا",
-      "reason": "already linked to catalog event"
-    },
-    {
-      "candidate_id": "candidate-umm-al-qura-events-ورشة-عمل-بعنوان-تزيين-الحفلات-20261021-43f74a68",
-      "event_id": "event-ورشة-عمل-بعنوان-تزيين-الحفلات",
-      "title": "ورشة عمل بعنوان تزيين الحفلات",
-      "reason": "already linked to catalog event"
-    },
-    {
-      "candidate_id": "candidate-umm-al-qura-events-دورة-تدريبية-إدارة-الضغوط-والقلق-أثناء-الاختبارات-نحو-أداء-نفسي-وأكاديمي-20261021-80b897fd",
-      "event_id": "event-دورة-تدريبية-إدارة-الضغوط-والقلق-أثناء-الاختبارات-نحو-أداء-نفسي-وأكاديمي",
-      "title": "دورة تدريبية ( إدارة الضغوط والقلق أثناء الاختبارات نحو أداء نفسي وأكاديمي متوازن )",
-      "reason": "already linked to catalog event"
-    },
-    {
       "candidate_id": "candidate-ithra-events-immersive-introduction-to-arabic-writing-and-type-design-20261021-3708788d",
       "event_id": "event-immersive-introduction-to-arabic-writing-and-type-design",
       "title": "Immersive Introduction to Arabic Writing and Type Design",
-      "reason": "already linked to catalog event"
-    },
-    {
-      "candidate_id": "candidate-ithra-events-theatrical-readings-20261021-de8aa7da",
-      "event_id": "event-theatrical-readings",
-      "title": "Theatrical Readings",
       "reason": "already linked to catalog event"
     },
     {
@@ -2357,11 +2313,6 @@
       "reason": "possible duplicate requires review: exact-title-city-venue-conflict",
       "kind": "exact-title-city-venue-conflict",
       "possible_event_id": "event-معرض-في-تتبّع-ذكريات-غامرة"
-    },
-    {
-      "candidate_id": "candidate-umm-al-qura-events-لقاء-بعنوان-الشخصية-القيادية-عبر-الشعوب-20261021-512e184b",
-      "title": "لقاء بعنوان الشخصية القيادية عبر الشعوب",
-      "reason": "possible duplicate already exists: event-لقاء-بعنوان-الشخصية-القيادية-عبر-الشعوب"
     },
     {
       "candidate_id": "candidate-visit-saudi-calendar-feena-nehke-stand-up-comedy-by-john-achkar-20261023-221bd8f2",

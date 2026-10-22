@@ -1,6 +1,6 @@
 # EventLive Official Agenda Radar
 
-Generated at: 2026-10-21T07:46:16.279Z
+Generated at: 2026-10-22T07:46:32.131Z
 
 Time scope: current-and-upcoming-only
 
@@ -8,7 +8,7 @@ This radar detects when first-party event pages expose a complete timed programm
 
 - Targets: 16
 - Published timed agendas: 3
-- Announced without timed agenda: 6
+- Announced without timed agenda: 3
 - Placeholder agendas rejected: 0
 - Not published: 0
 - Protected or partnership: 1
@@ -25,9 +25,9 @@ This radar detects when first-party event pages expose a complete timed programm
 | The Global Water Sustainability Conference 2026 | watch | 200 | 1 | 0 | watch-official-event-page |
 | HRSE KSA 2026 | published-browser-extractor-active | 200 | 51 | 49 | public-browser-production-extractor |
 | Smart Data & AI Summit 2026 | published-extractor-active | 200 | 31 | 31 | public-static-production-extractor |
-| Big 5 Construct Saudi 2026 | announced-no-timed-agenda | 200 | 1 | 0 | watch-until-timed-program |
-| HVAC R Saudi Arabia 2026 | announced-no-timed-agenda | 200 | 1 | 0 | watch-shared-event-agenda |
-| Saudi FM & Clean 2026 | announced-no-timed-agenda | 200 | 1 | 0 | watch-shared-event-agenda |
+| Big 5 Construct Saudi 2026 | unavailable | 503 | 0 | 0 | watch-until-timed-program |
+| HVAC R Saudi Arabia 2026 | unavailable | 503 | 0 | 0 | watch-shared-event-agenda |
+| Saudi FM & Clean 2026 | unavailable | 503 | 0 | 0 | watch-shared-event-agenda |
 | Global Proptech Summit 2026 | watch | 200 | 0 | 46 | watch-homepage-until-2026-agenda-replaces-historical-pdf |
 | Real Estate Supply Chain Forum 2026 | announced-no-timed-agenda | 200 | 0 | 6 | watch-until-timed-program |
 | CIPS MENA Conference and Awards 2026 | announced-no-timed-agenda | 200 | 0 | 34 | reject-placeholder-until-official-program |

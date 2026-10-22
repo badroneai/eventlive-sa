@@ -1,14 +1,14 @@
 # EventLive Visit Saudi Image Identity Report
 
-- generated_at: 2026-10-21T08:11:52.012Z
-- pdf_crop_assignments: 39
+- generated_at: 2026-10-22T08:24:11.043Z
+- pdf_crop_assignments: 38
 - verified: 38
-- struck: 1
+- struck: 0
 - slots_seen_this_cycle: 43
 
 ## Struck (fell back to generated cover)
 
-- ”فينا نحكي؟“ عرض ستاند أب كوميدي لجون أشقر (visit-saudi-summer-2026-p026-top-left.jpg) - slot-vacated - no dated card currently occupies page 26 top-left of https://www.visitsaudi.com/content/dam/documents/saudi-calendar-ar.pdf
+- none
 
 ## Verified
 

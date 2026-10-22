@@ -1,6 +1,6 @@
 {
   "schema": "eventlive.source-strategic-platform-radar.v1",
-  "generated_at": "2026-10-21T07:46:31.982Z",
+  "generated_at": "2026-10-22T07:46:58.406Z",
   "policy": {
     "allowed_use": "official source evidence refresh, API-surface mapping, partnership prioritization, extractor backlog decisions",
     "disallowed_use": "direct catalog publication without official confirmation and duplicate review"
@@ -256,11 +256,11 @@
         {
           "url": "https://www.visitsaudi.com/bin/api/v3/events?locale=ar",
           "status": 200,
-          "bytes": 90254,
+          "bytes": 93904,
           "classification": "reachable",
           "summary": {
             "parse_ok": true,
-            "item_count": 27,
+            "item_count": 28,
             "sample_titles": [
               "معرض اللغة العربية للطفل",
               "معرض اللغة العربية 28",
@@ -274,11 +274,11 @@
         {
           "url": "https://www.visitsaudi.com/bin/api/v3/events?locale=en",
           "status": 200,
-          "bytes": 94263,
+          "bytes": 98112,
           "classification": "reachable",
           "summary": {
             "parse_ok": true,
-            "item_count": 27,
+            "item_count": 28,
             "sample_titles": [
               "Arabic Language Exhibition for kids",
               "Arabic Language Exhibition 28",
@@ -303,7 +303,7 @@
       "final_url": "https://webook.com/ar/explore",
       "via": "fetch",
       "content_type": "text/html",
-      "bytes": 4829,
+      "bytes": 4814,
       "title": "",
       "classification": "protected",
       "error": "",
@@ -315,22 +315,22 @@
         "https://images.cmscloud.ai",
         "https://apps.apple.com/sa/app/webook-com-fun-things-to-do/id6468667896",
         "https://play.google.com/store/apps/details?id=com.webook.android",
-        "https://wbk-assets.webook.com/8.01/assets/index-AwsHTrwL.js",
-        "https://wbk-assets.webook.com/8.01/assets/vendor-CMb0R77e.js",
-        "https://wbk-assets.webook.com/8.01/locales/en/common.json",
-        "https://wbk-assets.webook.com/8.01/locales/en/home.json",
-        "https://wbk-assets.webook.com/8.01/locales/en/ui_common.json",
-        "https://wbk-assets.webook.com/8.01/locales/en/auth_common.json",
-        "https://wbk-assets.webook.com/8.01/locales/en/ticketing_common.json",
-        "https://wbk-assets.webook.com/8.01/locales/en/ticketing_event.json",
-        "https://wbk-assets.webook.com/8.01/locales/en/contentful_common.json",
-        "https://wbk-assets.webook.com/8.01/locales/en/contentful_event.json",
-        "https://wbk-assets.webook.com/8.01/locales/en/contentful_zone.json",
-        "https://wbk-assets.webook.com/8.01/locales/en/contentful_business.json",
-        "https://wbk-assets.webook.com/8.01/locales/en/currency_common.json",
-        "https://wbk-assets.webook.com/8.01/locales/en/payment_common.json",
-        "https://wbk-assets.webook.com/8.01/locales/en/subscription_common.json",
-        "https://webook.com/cdn-cgi/content?id=tO7Qrz_9a3d4fnMxiFEw.6OLhmJnyEw2xO24BksfuQc-1792568800.6198027-1.2.1.1-SlO5LiwDODIe4FJAlRBc_Vv7Sa66O2BkhkY_znZ1bv7.YwonG0Jmyf8BSxab5kMO",
+        "https://wbk-assets.webook.com/8.1/assets/index-DNIMef4X.js",
+        "https://wbk-assets.webook.com/8.1/assets/vendor-CMb0R77e.js",
+        "https://wbk-assets.webook.com/8.1/locales/en/common.json",
+        "https://wbk-assets.webook.com/8.1/locales/en/home.json",
+        "https://wbk-assets.webook.com/8.1/locales/en/ui_common.json",
+        "https://wbk-assets.webook.com/8.1/locales/en/auth_common.json",
+        "https://wbk-assets.webook.com/8.1/locales/en/ticketing_common.json",
+        "https://wbk-assets.webook.com/8.1/locales/en/ticketing_event.json",
+        "https://wbk-assets.webook.com/8.1/locales/en/contentful_common.json",
+        "https://wbk-assets.webook.com/8.1/locales/en/contentful_event.json",
+        "https://wbk-assets.webook.com/8.1/locales/en/contentful_zone.json",
+        "https://wbk-assets.webook.com/8.1/locales/en/contentful_business.json",
+        "https://wbk-assets.webook.com/8.1/locales/en/currency_common.json",
+        "https://wbk-assets.webook.com/8.1/locales/en/payment_common.json",
+        "https://wbk-assets.webook.com/8.1/locales/en/subscription_common.json",
+        "https://webook.com/cdn-cgi/content?id=uDttTNxRPkMPi75PcjkXuFNBfPt0uqoNZH.vP2UnwEM-1792655229.1353612-1.2.1.1-NU5sSQUk.vdL1XZVYUMnqzHIsKEvMlNfRsdfZAkaUz1By07HJtiHhkR.oODiEPB5",
         "https://static.cloudflareinsights.com/beacon.min.js/vce701823e78c4301a35b7e07294d87301792088814092"
       ],
       "page_hint_words": [

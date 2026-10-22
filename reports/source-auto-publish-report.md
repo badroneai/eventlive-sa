@@ -1,18 +1,17 @@
 # EventLive Source Auto Publish Report
 
-- published_at: 2026-10-21T08:11:47.379Z
+- published_at: 2026-10-22T08:24:06.484Z
 - dry_run: false
 - include_partner: true
-- candidates_seen: 406
-- published_new: 0
-- linked_existing: 375
-- blocked_remaining: 31
+- candidates_seen: 398
+- published_new: 3
+- linked_existing: 365
+- blocked_remaining: 30
 - duplicate_review_alerts: 4
 
 ## Blocked summary
 
 - possible duplicate requires review: exact-title-city-venue-conflict: 3
-- possible duplicate already exists: event-لقاء-بعنوان-الشخصية-القيادية-عبر-الشعوب: 1
 - linked catalog row event-feena-nehke-stand-up-comedy-by-john-achkar was superseded by dedupe: 1
 - publication gate source-evidence is not auto-publishable: 22
 - possible duplicate requires review: exact-title-city-source-conflict: 1
@@ -21,6 +20,9 @@
 
 | Candidate | Status | Catalog event | Reason |
 |---|---|---|---|
+| candidate-visit-saudi-seasons-riyadh-racing-season-20261016-7ddb5364 | published | event-riyadh-racing-season | Riyadh Racing Season |
+| candidate-hayy-jameel-events-hayy-markets-the-bakers-market-fall-edition-20261030-faf49ce1 | published | event-hayy-markets-the-bakers-market-fall-edition | Hayy Markets | The Bakers Market: Fall Edition |
+| candidate-ithra-events-champions-challenge-20261102-92484ae4 | published | event-champions-challenge | Champions' Challenge |
 | candidate-moc-cultural-subportals-skill-development-initiative-20210714-10f7dc2c | linked-existing | event-skill-development-initiative | already linked to catalog event |
 | candidate-moc-cultural-subportals-sitar-20220921-cda2e068 | linked-existing | event-sitar | already linked to catalog event |
 | candidate-moc-cultural-subportals-urban-transformation-initiative-20241031-7a933cab | linked-existing | event-urban-transformation-initiative | already linked to catalog event |
@@ -124,18 +126,8 @@
 | candidate-umm-al-qura-events-ورشة-عمل-بعنوان-تنسيق-الزهور-الصناعية-20261019-49db524a | linked-existing | event-ورشة-عمل-بعنوان-تنسيق-الزهور-الصناعية | already linked to catalog event |
 | candidate-umm-al-qura-events-مشاركة-أعضاء-هيئة-التدريس-ورشة-عمل-بعنوان-تنقيح-المشاريع-البحثية-والابتك-20261019-5913dd70 | linked-existing | event-مشاركة-أعضاء-هيئة-التدريس-ورشة-عمل-بعنوان-تنقيح-المشاريع-البحثية-والابتك | already linked to catalog event |
 | candidate-riyadh-city-events-saudi-agriculture-20261019-03c322f4 | linked-existing | event-saudi-agriculture | already linked to catalog event |
-| candidate-umm-al-qura-events-بناء-ثقافة-الدعم-المتبادل-وإدارة-الضغوط-اليومية-20261020-a6656110 | linked-existing | event-بناء-ثقافة-الدعم-المتبادل-وإدارة-الضغوط-اليومية | already linked to catalog event |
-| candidate-riyadh-city-events-mipim-middle-east-20261020-02b71699 | linked-existing | event-mipim-middle-east | already linked to catalog event |
-| candidate-umm-al-qura-events-ورشة-عمل-بعنوان-مهارات-سحب-الدم-20261020-b46a22da | linked-existing | event-ورشة-عمل-بعنوان-مهارات-سحب-الدم | already linked to catalog event |
 | candidate-visit-saudi-calendar-pdf-six-kings-slam-20261021-4a38d19e | linked-existing | event-six-kings-slam | already linked to catalog event |
-| candidate-umm-al-qura-events-آلية-تسجيل-متطلبات-الجامعة-الاختيارية-والاجبارية-20261021-c3aba0c1 | linked-existing | event-آلية-تسجيل-متطلبات-الجامعة-الاختيارية-والاجبارية | already linked to catalog event |
-| candidate-umm-al-qura-events-لقاء-بعنوان-قولها-بلغتي-20261021-e0c80385 | linked-existing | event-لقاء-بعنوان-قولها-بلغتي | already linked to catalog event |
-| candidate-umm-al-qura-events-فعالية-أكتوبر-الوردي-20261021-b732ed26 | linked-existing | event-فعالية-أكتوبر-الوردي | already linked to catalog event |
-| candidate-umm-al-qura-events-ورشة-عمل-بعنوان-تغليف-الهدايا-20261021-fa768b08 | linked-existing | event-ورشة-عمل-بعنوان-تغليف-الهدايا | already linked to catalog event |
-| candidate-umm-al-qura-events-ورشة-عمل-بعنوان-تزيين-الحفلات-20261021-43f74a68 | linked-existing | event-ورشة-عمل-بعنوان-تزيين-الحفلات | already linked to catalog event |
-| candidate-umm-al-qura-events-دورة-تدريبية-إدارة-الضغوط-والقلق-أثناء-الاختبارات-نحو-أداء-نفسي-وأكاديمي-20261021-80b897fd | linked-existing | event-دورة-تدريبية-إدارة-الضغوط-والقلق-أثناء-الاختبارات-نحو-أداء-نفسي-وأكاديمي | already linked to catalog event |
 | candidate-ithra-events-immersive-introduction-to-arabic-writing-and-type-design-20261021-3708788d | linked-existing | event-immersive-introduction-to-arabic-writing-and-type-design | already linked to catalog event |
-| candidate-ithra-events-theatrical-readings-20261021-de8aa7da | linked-existing | event-theatrical-readings | already linked to catalog event |
 | candidate-visit-saudi-calendar-pdf-فينا-نحكي؟-عرض-ستاند-أب-كوميدي-يقدمه-جون-أشقر-20261022-4a38d19e | linked-existing | event-فينا-نحكي؟-عرض-ستاند-أب-كوميدي-يقدمه-جون-أشقر | already linked to catalog event |
 | candidate-visit-saudi-calendar-pdf-لحد-يدري-عرض-ستاند-اب-كوميدي-من-أسامة-بازيد-20261022-4a38d19e | linked-existing | event-لحد-يدري-عرض-ستاند-اب-كوميدي-من-أسامة-بازيد | already linked to catalog event |
 | candidate-visit-saudi-calendar-pdf-حفل-فضل-شاكر-20261022-4a38d19e | linked-existing | event-حفل-فضل-شاكر | already linked to catalog event |
@@ -398,7 +390,6 @@
 | candidate-saudi-space-agency-events-space-debris-conference-2028-20280215-03719f44 | linked-existing | event-space-debris-conference-2028 | already linked to catalog event |
 | candidate-visit-saudi-calendar-pdf-معرض-قلب-البحر-20260604-4a38d19e | blocked | event-معرض-قلب-البحر | possible duplicate requires review: exact-title-city-venue-conflict |
 | candidate-visit-saudi-calendar-pdf-معرض-في-تتبّع-ذكريات-غامرة-20260618-4a38d19e | blocked | event-معرض-في-تتبّع-ذكريات-غامرة | possible duplicate requires review: exact-title-city-venue-conflict |
-| candidate-umm-al-qura-events-لقاء-بعنوان-الشخصية-القيادية-عبر-الشعوب-20261021-512e184b | blocked | - | possible duplicate already exists: event-لقاء-بعنوان-الشخصية-القيادية-عبر-الشعوب |
 | candidate-visit-saudi-calendar-feena-nehke-stand-up-comedy-by-john-achkar-20261023-221bd8f2 | blocked | - | linked catalog row event-feena-nehke-stand-up-comedy-by-john-achkar was superseded by dedupe |
 | candidate-saudicon-events-annual-international-geotechnical-innovation-conference-igic-2026-20261109-8ea8aaa9 | blocked | - | publication gate source-evidence is not auto-publishable |
 | candidate-saudicon-events-المؤتمر-الدولي-للابتكار-في-الهندسة-الجيوتقنية-2026-20261109-3ded1822 | blocked | - | publication gate source-evidence is not auto-publishable |

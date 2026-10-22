@@ -1,29 +1,269 @@
 {
   "schema": "eventlive.source-browser-probe-checkpoint.v1",
-  "checkpointed_at": "2026-10-21T07:59:10.992Z",
-  "generated_at": "2026-10-21T07:58:24.889Z",
+  "checkpointed_at": "2026-10-22T08:09:45.592Z",
+  "generated_at": "2026-10-22T07:59:38.727Z",
   "source_registry": "data/source_registry.json",
   "output_dir": "data/raw/browser-probes",
-  "sources_planned": 4,
-  "sources_completed": 4,
+  "sources_planned": 8,
+  "sources_completed": 8,
   "totals": {
-    "probed": 4,
+    "probed": 8,
     "browser_network_api": 1,
     "browser_hydration_payload": 0,
-    "rendered_html_candidates": 2,
+    "rendered_html_candidates": 0,
     "blocked_or_protected": 1,
     "policy_skipped": 0
   },
   "completed_ids": [
+    "moc-cultural-calendar",
+    "mos-events",
+    "monshaat-events",
+    "tuwaiq-academy-bootcamps",
+    "saudi-pro-league-fixtures",
+    "moc-cultural-subportals",
     "asharqia-chamber-events",
-    "qassim-chamber-events",
-    "future-skills-catalog",
-    "riyadh-city-events"
+    "qassim-chamber-events"
   ],
   "sources": [
     {
+      "id": "moc-cultural-calendar",
+      "probed_at": "2026-10-22T08:01:53.671Z",
+      "name": "Ministry of Culture Cultural Calendar",
+      "priority": 3,
+      "url": "https://www.moc.gov.sa/en/Modules/Pages/Cultural-Calendar",
+      "final_url": "chrome-error://chromewebdata/",
+      "status": "error",
+      "http_status": 0,
+      "navigation_error": "page.goto: Timeout 30000ms exceeded.\nCall log:\n  - navigating to \"https://www.moc.gov.sa/en/Modules/Pages/Cultural-Calendar\", waiting until \"domcontentloaded\"\n",
+      "duration_ms": 134474,
+      "classification": "empty-or-shell",
+      "next_action": "اعتبرها shell وابحث عن API أو مسار بديل قبل أي collector.",
+      "title": "",
+      "text_bytes": 0,
+      "html_bytes": 0,
+      "html_snapshot": "data/raw/browser-probes/moc-cultural-calendar-2026-10-22T07-59-38-727Z.html",
+      "screenshot": "",
+      "signals": {
+        "has_next_data": false,
+        "has_nuxt": false,
+        "has_json_ld": false,
+        "has_event_schema": false,
+        "date_snippets": [],
+        "event_like_links": []
+      },
+      "script_signals": {
+        "next_data_scripts": 0,
+        "nuxt_scripts": 0,
+        "json_ld_scripts": 0,
+        "large_inline_scripts": 0
+      },
+      "network_total": 0,
+      "network_endpoints": [],
+      "network_sample": []
+    },
+    {
+      "id": "mos-events",
+      "probed_at": "2026-10-22T08:04:08.831Z",
+      "name": "Ministry of Sport Events",
+      "priority": 4,
+      "url": "https://www.mos.gov.sa/en/media/events",
+      "final_url": "chrome-error://chromewebdata/",
+      "status": "error",
+      "http_status": 0,
+      "navigation_error": "page.goto: Timeout 30000ms exceeded.\nCall log:\n  - navigating to \"https://www.mos.gov.sa/en/media/events\", waiting until \"domcontentloaded\"\n",
+      "duration_ms": 135121,
+      "classification": "empty-or-shell",
+      "next_action": "اعتبرها shell وابحث عن API أو مسار بديل قبل أي collector.",
+      "title": "",
+      "text_bytes": 0,
+      "html_bytes": 0,
+      "html_snapshot": "data/raw/browser-probes/mos-events-2026-10-22T07-59-38-727Z.html",
+      "screenshot": "",
+      "signals": {
+        "has_next_data": false,
+        "has_nuxt": false,
+        "has_json_ld": false,
+        "has_event_schema": false,
+        "date_snippets": [],
+        "event_like_links": []
+      },
+      "script_signals": {
+        "next_data_scripts": 0,
+        "nuxt_scripts": 0,
+        "json_ld_scripts": 0,
+        "large_inline_scripts": 0
+      },
+      "network_total": 0,
+      "network_endpoints": [],
+      "network_sample": []
+    },
+    {
+      "id": "monshaat-events",
+      "probed_at": "2026-10-22T08:06:24.005Z",
+      "name": "Monsha'at All Events",
+      "priority": 9,
+      "url": "https://www.monshaat.gov.sa/en/events-list",
+      "final_url": "chrome-error://chromewebdata/",
+      "status": "error",
+      "http_status": 0,
+      "navigation_error": "page.goto: Timeout 30000ms exceeded.\nCall log:\n  - navigating to \"https://www.monshaat.gov.sa/en/events-list\", waiting until \"domcontentloaded\"\n",
+      "duration_ms": 135138,
+      "classification": "empty-or-shell",
+      "next_action": "اعتبرها shell وابحث عن API أو مسار بديل قبل أي collector.",
+      "title": "",
+      "text_bytes": 0,
+      "html_bytes": 0,
+      "html_snapshot": "data/raw/browser-probes/monshaat-events-2026-10-22T07-59-38-727Z.html",
+      "screenshot": "",
+      "signals": {
+        "has_next_data": false,
+        "has_nuxt": false,
+        "has_json_ld": false,
+        "has_event_schema": false,
+        "date_snippets": [],
+        "event_like_links": []
+      },
+      "script_signals": {
+        "next_data_scripts": 0,
+        "nuxt_scripts": 0,
+        "json_ld_scripts": 0,
+        "large_inline_scripts": 0
+      },
+      "network_total": 0,
+      "network_endpoints": [],
+      "network_sample": []
+    },
+    {
+      "id": "tuwaiq-academy-bootcamps",
+      "probed_at": "2026-10-22T08:06:30.415Z",
+      "name": "Tuwaiq Academy Bootcamps and Programs",
+      "priority": 16,
+      "url": "https://tuwaiq.edu.sa/api/GetInitiativePublishesShorten/12/1?category=ac41152d-f228-8af4-8406-e0cda6df6c35&type=NORMAL",
+      "final_url": "https://tuwaiq.edu.sa/api/GetInitiativePublishesShorten/12/1?category=ac41152d-f228-8af4-8406-e0cda6df6c35&type=NORMAL",
+      "status": "ok",
+      "http_status": 200,
+      "navigation_error": "",
+      "duration_ms": 6370,
+      "classification": "browser-structured-html",
+      "next_action": "اكتب extractor من JSON-LD أو structured scripts مع fallback للبطاقات.",
+      "title": "",
+      "text_bytes": 10790,
+      "html_bytes": 10953,
+      "html_snapshot": "data/raw/browser-probes/tuwaiq-academy-bootcamps-2026-10-22T07-59-38-727Z.html",
+      "screenshot": "data/raw/browser-probes/tuwaiq-academy-bootcamps-2026-10-22T07-59-38-727Z.png",
+      "signals": {
+        "has_next_data": false,
+        "has_nuxt": false,
+        "has_json_ld": false,
+        "has_event_schema": true,
+        "date_snippets": [
+          "ر الأنظمة الذاتية للدرونز\",\"startDate\":\"2026-11-01T18:00:00+03:00\",\"endDate\":\"2026-12-03T21:00:00+03:00\",\"autoCloseRegistration\":f",
+          "nStartDate\":null,\"registrationEndDate\":\"2026-10-18T12:00:00+03:00\",\"requireProfileCompletion\":true,\"isMergePublish\":true,\"isPaid\":",
+          "سحابة وتعلم الآلة على AWS\",\"startDate\":\"2026-11-08T18:00:00+03:00\",\"endDate\":\"2026-12-17T22:00:00+03:00\",\"autoCloseRegistration\":f",
+          "nStartDate\":null,\"registrationEndDate\":\"2026-10-18T12:00:00+03:00\",\"requireProfileCompletion\":true,\"isMergePublish\":true,\"isPaid\":",
+          "تقنيات الذكاء الاصطناعي \",\"startDate\":\"2026-11-22T10:00:00+03:00\",\"endDate\":\"2027-02-11T15:00:00+03:00\",\"autoCloseRegistration\":f",
+          "nStartDate\":null,\"registrationEndDate\":\"2026-11-08T12:00:00+03:00\",\"requireProfileCompletion\":true,\"isMergePublish\":true,\"isPaid\":",
+          "والأمن السيبراني على AWS\",\"startDate\":\"2026-11-22T18:00:00+03:00\",\"endDate\":\"2026-12-17T22:00:00+03:00\",\"autoCloseRegistration\":f",
+          "nStartDate\":null,\"registrationEndDate\":\"2026-11-29T12:00:00+03:00\",\"requireProfileCompletion\":true,\"isMergePublish\":true,\"isPaid\":"
+        ],
+        "event_like_links": []
+      },
+      "script_signals": {
+        "next_data_scripts": 0,
+        "nuxt_scripts": 0,
+        "json_ld_scripts": 0,
+        "large_inline_scripts": 0
+      },
+      "network_total": 1,
+      "network_endpoints": [],
+      "network_sample": [
+        {
+          "method": "GET",
+          "status": 200,
+          "url": "https://tuwaiq.edu.sa/api/GetInitiativePublishesShorten/12/1?category=ac41152d-f228-8af4-8406-e0cda6df6c35&type=NORMAL",
+          "content_type": "application/json",
+          "resource_type": "document",
+          "request_post_data": "",
+          "response_shape": "json-like-invalid",
+          "preview": "{\"pagination\":{\"offset\":0,\"limit\":12,\"total\":166,\"totalPages\":14},\"data\":[{\"id\":\"4a500b0a-e34c-4145-9846-7e2c21e15c02\",\"academyTypeId\":null,\"academyType\":null,\"title\":\"معسكر الأنظمة الذاتية للدرونز\",\"startDate\":\"2026-11-01T18:00:00+03:00\",\"endDate\":\"2026-12-03T21:00:00+03:00\",\"autoCloseRegistration\":false,\"isOpen\":true,\"isRegistrationOpen\":true,\"isRegistrationClosed\":false,\"logo\":null,\"outerImage\":\"images/ikhp3gid.3cq.webp\",\"initiativeAgeName\":\"كبار\",\"initiativeCategoryName\":\"معسكر\",\"initiativeScopeImage\":\"images/psvxh1jc.vwh.png\",\"initiativeScopeName\":\"هندسة الميكاترونكس\",\"locationName\":\"الرياض - المقر الرئيسي\",\"slug\":\"8y1bN1m0\",\"registrationStartDate\":null,\"registrationEndDate\":\"2026-10-18T12:00:00+03:00\",\"requireProfileCompletion\":true,\"isMergePublish\":true,\"isPaid\":false,\"price\":null,\"includesEmployees\":false,\"vat\":null,\"priceWithoutVat\":null},{\"id\":\"325bb823-1aba-407e-abf3-1e5e46302423\",\"academyTypeId\":null,\"academyType\":null,\"title\":\"معسكر هندسة السحابة وتعلم الآلة على AWS\",\"startDate\":\"2026-11-08T18:00:00+03:00\",\"endDate\":\"2026-12-17T22:00:00+03:00\",\"autoCloseRegistration\":false,\"isOpen\":true,\"isRegistrationOpen\":true,\"isRegistrationClosed\":false,\"logo\":null,\"outerImage\":\"images/pxvlhluv.va3.jpg\",\"initiativeAgeName\":\"كبار\",\"initiativeCategoryName\":\"معسكر\",\"initiativeScopeImage\":\"images/pxhazeai.5tg.png\",\"initiativeScopeName\":\"علم البيانات والذكاء الاصطناعي\",\"locationName\":\"الرياض - المقر الرئيسي\",\"slug\":\"pLwEzjY5\",\"registrationStartDate\":null,\"registrationEndDate\":\"2026-10-18T12:00:00+03:00\",\"requireProfileCompletion\":true,\"isMergePublish\":true,\"isPaid\":false,\"price\":0.00,\"includesEmployees\":false,\"vat\":0.00,\"priceWithoutVat\":0.00},{\"id\":\"ae6173b4-027b-4a52-9b5e-afeb791a4338\",\"academyTypeId\":null,\"academyType\":null,\"title\":\"معسكر تطوير مواقع الويب باستخدام Java و"
+        }
+      ]
+    },
+    {
+      "id": "saudi-pro-league-fixtures",
+      "probed_at": "2026-10-22T08:07:05.206Z",
+      "name": "Saudi Pro League Fixtures",
+      "priority": 30,
+      "url": "https://api.saudi-pro-league.pulselive.com/football/fixtures?comps=215&compSeasons=859&pageSize=100&statuses=C,U,L&sort=asc",
+      "final_url": "chrome-error://chromewebdata/",
+      "status": "error",
+      "http_status": 0,
+      "navigation_error": "page.goto: Timeout 30000ms exceeded.\nCall log:\n  - navigating to \"https://api.saudi-pro-league.pulselive.com/football/fixtures?comps=215&compSeasons=859&pageSize=100&statuses=C,U,L&sort=asc\", waiting until \"domcontentloaded\"\n",
+      "duration_ms": 34754,
+      "classification": "empty-or-shell",
+      "next_action": "اعتبرها shell وابحث عن API أو مسار بديل قبل أي collector.",
+      "title": "",
+      "text_bytes": 0,
+      "html_bytes": 0,
+      "html_snapshot": "data/raw/browser-probes/saudi-pro-league-fixtures-2026-10-22T07-59-38-727Z.html",
+      "screenshot": "",
+      "signals": {
+        "has_next_data": false,
+        "has_nuxt": false,
+        "has_json_ld": false,
+        "has_event_schema": false,
+        "date_snippets": [],
+        "event_like_links": []
+      },
+      "script_signals": {
+        "next_data_scripts": 0,
+        "nuxt_scripts": 0,
+        "json_ld_scripts": 0,
+        "large_inline_scripts": 0
+      },
+      "network_total": 0,
+      "network_endpoints": [],
+      "network_sample": []
+    },
+    {
+      "id": "moc-cultural-subportals",
+      "probed_at": "2026-10-22T08:09:20.129Z",
+      "name": "Ministry of Culture Commission Calendars",
+      "priority": 37,
+      "url": "https://music.moc.gov.sa/Cultural-Calendar",
+      "final_url": "chrome-error://chromewebdata/",
+      "status": "error",
+      "http_status": 0,
+      "navigation_error": "page.goto: Timeout 30000ms exceeded.\nCall log:\n  - navigating to \"https://music.moc.gov.sa/Cultural-Calendar\", waiting until \"domcontentloaded\"\n",
+      "duration_ms": 134883,
+      "classification": "empty-or-shell",
+      "next_action": "اعتبرها shell وابحث عن API أو مسار بديل قبل أي collector.",
+      "title": "",
+      "text_bytes": 0,
+      "html_bytes": 0,
+      "html_snapshot": "data/raw/browser-probes/moc-cultural-subportals-2026-10-22T07-59-38-727Z.html",
+      "screenshot": "",
+      "signals": {
+        "has_next_data": false,
+        "has_nuxt": false,
+        "has_json_ld": false,
+        "has_event_schema": false,
+        "date_snippets": [],
+        "event_like_links": []
+      },
+      "script_signals": {
+        "next_data_scripts": 0,
+        "nuxt_scripts": 0,
+        "json_ld_scripts": 0,
+        "large_inline_scripts": 0
+      },
+      "network_total": 0,
+      "network_endpoints": [],
+      "network_sample": []
+    },
+    {
       "id": "asharqia-chamber-events",
-      "probed_at": "2026-10-21T07:58:38.741Z",
+      "probed_at": "2026-10-22T08:09:33.834Z",
       "name": "Asharqia Chamber Events",
       "priority": 59,
       "url": "https://www.chamber.org.sa/sites/Arabic/Events/ChamberEvents/Pages/AllChamberEvents.aspx",
@@ -31,14 +271,14 @@
       "status": "ok",
       "http_status": 404,
       "navigation_error": "",
-      "duration_ms": 13370,
+      "duration_ms": 13669,
       "classification": "browser-network-api",
       "next_action": "ثبت endpoint مرشحًا كجامع مباشر، ثم اكتب extractor من JSON مع اختبار انحدار.",
       "title": "Page not found | غرفة الشرقية",
       "text_bytes": 805,
       "html_bytes": 32158,
-      "html_snapshot": "data/raw/browser-probes/asharqia-chamber-events-2026-10-21T07-58-24-889Z.html",
-      "screenshot": "data/raw/browser-probes/asharqia-chamber-events-2026-10-21T07-58-24-889Z.png",
+      "html_snapshot": "data/raw/browser-probes/asharqia-chamber-events-2026-10-22T07-59-38-727Z.html",
+      "screenshot": "data/raw/browser-probes/asharqia-chamber-events-2026-10-22T07-59-38-727Z.png",
       "signals": {
         "has_next_data": false,
         "has_nuxt": false,
@@ -82,7 +322,7 @@
         "json_ld_scripts": 0,
         "large_inline_scripts": 0
       },
-      "network_total": 4,
+      "network_total": 5,
       "network_endpoints": [
         {
           "method": "GET",
@@ -107,16 +347,6 @@
           "preview": "{\"allowAllDomains\":true,\"allowedDomains\":[]}"
         },
         {
-          "method": "POST",
-          "status": 200,
-          "url": "https://bam.eu01.nr-data.net/1/NRJS-63ad9662344bba3672e?a=538748657&sa=1&v=1.318.0&t=Unnamed%20Transaction&rst=284&ck=0&s=0&ref=https://apps.mypurecloud.ie/messenger/thirdparty-plugins.html&ptid=b99dd1b31e32f340&af=err,spa,xhr,stn,ins&be=24&fe=180&dc=7&perf=%7B%22timing%22:%7B%22of%22:1792569507492,%22n%22:0,%22f%22:1,%22dn%22:1,%22dne%22:1,%22c%22:1,%22s%22:1,%22ce%22:1,%22rq%22:2,%22rp%22:24,%22rpe%22:25,%22di%22:31,%22ds%22:31,%22de%22:31,%22dc%22:202,%22l%22:202,%22le%22:204%7D,%22navigation%22:%7B%7D%7D",
-          "content_type": "application/json",
-          "resource_type": "xhr",
-          "request_post_data": "{\"ja\":{\"nrAgentProvider\":\"index-cannula-cli\",\"webdriverDetected\":true}}",
-          "response_shape": "json-object:stn,err,ins,spa,sr,srs,st,sts",
-          "preview": "{\"stn\":1,\"err\":1,\"ins\":1,\"spa\":1,\"sr\":0,\"srs\":0,\"st\":1,\"sts\":0,\"log\":2,\"logapi\":2,\"app\":{\"agents\":[{\"entityGuid\":\"NDYyMzExNHxCUk9XU0VSfEFQUExJQ0FUSU9OfDUzODc0ODY1Nw\"}],\"nrServerTime\":1792569508127}}"
-        },
-        {
           "method": "GET",
           "status": 200,
           "url": "https://api-cdn.mypurecloud.ie/webdeployments/v1/deployments/bf04c4ac-89eb-4d7b-9061-14343d788e27/config.json",
@@ -125,6 +355,26 @@
           "request_post_data": "",
           "response_shape": "json-object:id,version,headlessMode,languages,defaultLanguage,apiEndpoint,messenger,position",
           "preview": "{\"id\":\"35941ef8-d3b4-4cac-b011-f0e5bf3d7569\",\"version\":\"4\",\"headlessMode\":{\"enabled\":false},\"languages\":[\"ar\"],\"defaultLanguage\":\"ar\",\"apiEndpoint\":\"https://api.mypurecloud.ie\",\"messenger\":{\"enabled\":true,\"apps\":{\"conversations\":{\"enabled\":true,\"messagingEndpoint\":\"wss://webmessaging.mypurecloud.ie\",\"showAgentTypingIndicator\":true,\"showUserTypingIndicator\":true,\"autoStart\":{\"enabled\":true},\"markdown\":{\"enabled\":true},\"conversationDisconnect\":{\"enabled\":false,\"type\":\"Send\"},\"conversationClear\":{\"enabled\":true},\"humanize\":{\"enabled\":false,\"bot\":{\"name\":\"\",\"avatarUrl\":\"\"}}}},\"styles\":{\"primaryColor\":\"#015599\"},\"launcherButton\":{\"visibility\":\"On\"},\"fileUpload\":{\"enableAttachments\":true,\"modes\":[{\"fileTypes\":[\"image/jpeg\",\"image/gif\",\"image/png\"],\"maxFileSizeKB\":10240}]},\"homeScreen\":{\"enabled\":false,\"logoUrl\":\"\"}},\"position\":{\"alignment\":\"Auto\",\"sideSpace\":20,\"bottomSpace\":12},\"customI18NLabels\":[],\"journeyEvents\":{\"enabled\":false},\"status\":\"Active\",\"cobrowse\":{\"enabled\":false,\"allowAgentControl\":true,\"allowAgentNavigation\":true,\"maskSelectors\":[],\"readonlySelectors\":[],\"channels\":[]},\"auth\":{\"enabled\":false,\"allowSessionUpgrade\":false}}"
+        },
+        {
+          "method": "POST",
+          "status": 200,
+          "url": "https://bam.eu01.nr-data.net/1/NRJS-63ad9662344bba3672e?a=538748657&sa=1&v=1.318.0&t=Unnamed%20Transaction&rst=423&ck=0&s=0&ref=https://apps.mypurecloud.ie/messenger/thirdparty-plugins.html&ptid=139b1567b7273913&af=err,spa,xhr,stn,ins&be=20&fe=212&dc=6&perf=%7B%22timing%22:%7B%22of%22:1792656562188,%22n%22:0,%22f%22:1,%22dn%22:1,%22dne%22:1,%22c%22:1,%22s%22:1,%22ce%22:1,%22rq%22:1,%22rp%22:20,%22rpe%22:21,%22di%22:27,%22ds%22:27,%22de%22:27,%22dc%22:231,%22l%22:231,%22le%22:233%7D,%22navigation%22:%7B%7D%7D",
+          "content_type": "application/json",
+          "resource_type": "xhr",
+          "request_post_data": "{\"ja\":{\"nrAgentProvider\":\"index-cannula-cli\",\"webdriverDetected\":true}}",
+          "response_shape": "json-object:stn,err,ins,spa,sr,srs,st,sts",
+          "preview": "{\"stn\":1,\"err\":1,\"ins\":1,\"spa\":1,\"sr\":0,\"srs\":0,\"st\":1,\"sts\":0,\"log\":2,\"logapi\":2,\"app\":{\"agents\":[{\"entityGuid\":\"NDYyMzExNHxCUk9XU0VSfEFQUExJQ0FUSU9OfDUzODc0ODY1Nw\"}],\"nrServerTime\":1792656563005}}"
+        },
+        {
+          "method": "GET",
+          "status": 200,
+          "url": "https://apps.mypurecloud.ie/messenger/i18n/ar.json",
+          "content_type": "application/json",
+          "resource_type": "xhr",
+          "request_post_data": "",
+          "response_shape": "json-like-invalid",
+          "preview": "{ \"language\": \"ar\", \"home\": { \"headerTitle\": \"مرحبًا\", \"headerSubTitle\": \"نحن هنا للمساعدة\", \"ariaHomeScreenOpenStatus\": \"تم فتح الشاشة الرئيسية\", \"ariaExpandMenu\": \"توسيع القائمة\" }, \"conversations\": { \"headerTitle\": \"راسلنا\", \"headerConversationTitle\": \"محادثة\", \"inputMessagePlaceholder\": \"أرسل رسالة...\", \"typeMessagePlaceholder\": \"اكتب رسالتك هنا\", \"inputMessageTitle\": \"حقل إدخال الرسالة\", \"startConversationMessage\": \"هذه بداية حديثك معنا. يرجى إرسال رسالة للبدء.\", \"autoStartConversationMessage\": \"هذه هي بداية محادثتك معنا.\", \"sessionExpirationWarningMessage\": \"يرجى العلم أن الجلسة ستنتهي بعد <%sessionMinutes%> دقيقة من عدم النشاط.\", \"notSignedInMessage\": \"أنت تعمل غير محدد الهوية.\", \"signedInMessage\": \"تم تسجيل دخولك.\", \"signedInMessageWithName\": \"تم تسجيل دخولك باسم <%username%>\", \"signedOutMessage\": \"لقد تم تسجيل خروجك من هذه الجلسة.\", \"agentDefaultName\": \"وكيل\", \"botDefaultName\": \"الروبوت\", \"customerDefaultName\": \"أنت\", \"cancelButton\": \"إلغاء الأمر\", \"closeButton\": \"إغلاق\", \"startConversationButtonTitle\": \"راسلنا\", \"continueConversationButtonTitle\": \"متابعة\", \"openConversationButtonTitle\": \"فتح\", \"startNewConversation\": \"بدء من جديد\", \"startConversationCardTitle\": \"بدء محادثة\", \"continueConversationCardTitle\": \"تابع المحادثة\", \"yourConversationCardTitle\": \"محادثتك\", \"yesButton\": \"نعم\", \"noButton\": \"لا\", \"okButton\": \"حسنًا\", \"sureButton\": \"نعم، أنا متأكد\", \"downloadButton\": \"تنزيل\", \"openInNewTabButton\": \"فتح في علامة تبويب جديدة\", \"signInButton\": \"تسجيل الدخول\", \"clearButton\": \"مسح\", \"previewFile\": \"انقر لمعاينة الملف\", \"pdfPreviewTitle\": \"معاينة PDF الخاص بـ Messenger\", \"textFilePreviewTitle\": \"معاينة"
         },
         {
           "method": "GET",
@@ -140,7 +390,7 @@
     },
     {
       "id": "qassim-chamber-events",
-      "probed_at": "2026-10-21T07:58:50.478Z",
+      "probed_at": "2026-10-22T08:09:45.592Z",
       "name": "Qassim Chamber Events",
       "priority": 60,
       "url": "https://tc.qcc.org.sa/",
@@ -148,14 +398,14 @@
       "status": "ok",
       "http_status": 403,
       "navigation_error": "",
-      "duration_ms": 11703,
+      "duration_ms": 11718,
       "classification": "blocked-or-protected",
       "next_action": "لا تلتف على الحماية؛ صنف المصدر partnership/API أو ابحث عن مسار رسمي.",
       "title": "لحظة…",
       "text_bytes": 371,
-      "html_bytes": 28769,
-      "html_snapshot": "data/raw/browser-probes/qassim-chamber-events-2026-10-21T07-58-24-889Z.html",
-      "screenshot": "data/raw/browser-probes/qassim-chamber-events-2026-10-21T07-58-24-889Z.png",
+      "html_bytes": 28790,
+      "html_snapshot": "data/raw/browser-probes/qassim-chamber-events-2026-10-22T07-59-38-727Z.html",
+      "screenshot": "data/raw/browser-probes/qassim-chamber-events-2026-10-22T07-59-38-727Z.png",
       "signals": {
         "has_next_data": false,
         "has_nuxt": false,
@@ -173,204 +423,6 @@
       "network_total": 0,
       "network_endpoints": [],
       "network_sample": []
-    },
-    {
-      "id": "future-skills-catalog",
-      "probed_at": "2026-10-21T07:59:00.452Z",
-      "name": "Future Skills MCIT Catalogue",
-      "priority": 17,
-      "url": "https://futureskills.mcit.gov.sa/ar/catalogue/all?label=&field_main_tracks_target_id_verf=565&field_sub_tracks_target_id=All&field_training_course_level_target_id=All&field_related_skills_target_id=All&field_course_type_value=All&field_training_delivery_value=All&field_training_city_target_id=All&field_job_market_target_id=All",
-      "final_url": "https://futureskills.mcit.gov.sa/ar/catalogue/all?label=&field_main_tracks_target_id_verf=565&field_sub_tracks_target_id=All&field_training_course_level_target_id=All&field_related_skills_target_id=All&field_course_type_value=All&field_training_delivery_value=All&field_training_city_target_id=All&field_job_market_target_id=All",
-      "status": "ok",
-      "http_status": 200,
-      "navigation_error": "",
-      "duration_ms": 9932,
-      "classification": "rendered-html-candidates",
-      "next_action": "اكتب extractor مرن من DOM بعد الرندر أو حسن selector الحالي.",
-      "title": "التدريب | بوابة مهارات المستقبل",
-      "text_bytes": 10774,
-      "html_bytes": 86492,
-      "html_snapshot": "data/raw/browser-probes/future-skills-catalog-2026-10-21T07-58-24-889Z.html",
-      "screenshot": "data/raw/browser-probes/future-skills-catalog-2026-10-21T07-58-24-889Z.png",
-      "signals": {
-        "has_next_data": false,
-        "has_nuxt": false,
-        "has_json_ld": false,
-        "has_event_schema": false,
-        "date_snippets": [],
-        "event_like_links": [
-          {
-            "text": "تجاوز إلى المحتوى الرئيسي",
-            "href": "https://futureskills.mcit.gov.sa/ar/catalogue/all?label=&field_main_tracks_target_id_verf=565&field_sub_tracks_target_id=All&field_training_course_level_target_id=All&field_related_skills_target_id=All&field_course_type_value=All&field_training_delivery_value=All&field_training_city_target_id=All&field_job_market_target_id=All#main-content"
-          },
-          {
-            "text": "English",
-            "href": "https://futureskills.mcit.gov.sa/en/catalogue/all?label=&field_main_tracks_target_id_verf=565&field_sub_tracks_target_id=All&field_training_course_level_target_id=All&field_related_skills_target_id=All&field_course_type_value=All&field_training_delivery_value=All&field_training_city_target_id=All&field_job_market_target_id=All"
-          },
-          {
-            "text": "",
-            "href": "https://futureskills.mcit.gov.sa/ar/catalogue/all?label=&field_main_tracks_target_id_verf=565&field_sub_tracks_target_id=All&field_training_course_level_target_id=All&field_related_skills_target_id=All&field_course_type_value=All&field_training_delivery_value=All&field_training_city_target_id=All&field_job_market_target_id=All#"
-          },
-          {
-            "text": "عن الوزارة",
-            "href": "https://futureskills.mcit.gov.sa/ar/catalogue/all?label=&field_main_tracks_target_id_verf=565&field_sub_tracks_target_id=All&field_training_course_level_target_id=All&field_related_skills_target_id=All&field_course_type_value=All&field_training_delivery_value=All&field_training_city_target_id=All&field_job_market_target_id=All#"
-          },
-          {
-            "text": "مجتمع رقمي",
-            "href": "https://futureskills.mcit.gov.sa/ar/catalogue/all?label=&field_main_tracks_target_id_verf=565&field_sub_tracks_target_id=All&field_training_course_level_target_id=All&field_related_skills_target_id=All&field_course_type_value=All&field_training_delivery_value=All&field_training_city_target_id=All&field_job_market_target_id=All#"
-          },
-          {
-            "text": "مهارات المستقبل",
-            "href": "https://futureskills.mcit.gov.sa/ar/catalogue/all?label=&field_main_tracks_target_id_verf=565&field_sub_tracks_target_id=All&field_training_course_level_target_id=All&field_related_skills_target_id=All&field_course_type_value=All&field_training_delivery_value=All&field_training_city_target_id=All&field_job_market_target_id=All#"
-          },
-          {
-            "text": "الأعمال والاستثمار",
-            "href": "https://futureskills.mcit.gov.sa/ar/catalogue/all?label=&field_main_tracks_target_id_verf=565&field_sub_tracks_target_id=All&field_training_course_level_target_id=All&field_related_skills_target_id=All&field_course_type_value=All&field_training_delivery_value=All&field_training_city_target_id=All&field_job_market_target_id=All#"
-          },
-          {
-            "text": "المركز الإعلامي",
-            "href": "https://futureskills.mcit.gov.sa/ar/catalogue/all?label=&field_main_tracks_target_id_verf=565&field_sub_tracks_target_id=All&field_training_course_level_target_id=All&field_related_skills_target_id=All&field_course_type_value=All&field_training_delivery_value=All&field_training_city_target_id=All&field_job_market_target_id=All#"
-          },
-          {
-            "text": "الفعاليات",
-            "href": "https://www.mcit.gov.sa/ar/events"
-          },
-          {
-            "text": "",
-            "href": "https://futureskills.mcit.gov.sa/ar/catalogue/all?label=&field_main_tracks_target_id_verf=565&field_sub_tracks_target_id=All&field_training_course_level_target_id=All&field_related_skills_target_id=All&field_course_type_value=All&field_training_delivery_value=All&field_training_city_target_id=All&field_job_market_target_id=All#"
-          },
-          {
-            "text": "",
-            "href": "https://futureskills.mcit.gov.sa/ar/catalogue/all?label=&field_main_tracks_target_id_verf=565&field_sub_tracks_target_id=All&field_training_course_level_target_id=All&field_related_skills_target_id=All&field_course_type_value=All&field_training_delivery_value=All&field_training_city_target_id=All&field_job_market_target_id=All#"
-          },
-          {
-            "text": "البرنامج المتخصص في العمل الحر",
-            "href": "http://futureskills.mcit.gov.sa/ar/node/20481"
-          },
-          {
-            "text": "معسكرات مهارات المستقبل",
-            "href": "http://futureskills.mcit.gov.sa/ar/node/17349"
-          },
-          {
-            "text": "مستوى متوسط\nIntroduction to APIs and Web Services\n دورة معرفية\n تفاعلية مباشرة\n تبدأ 27-09-2026 إلى 01-10-2026 لمدة 20 س",
-            "href": "https://futureskills.mcit.gov.sa/ar/group/13067"
-          },
-          {
-            "text": "مستوى متوسط\n⁠Data Preparation & Cleaning Essentials\n دورة معرفية\n تفاعلية مباشرة\n تبدأ 13-09-2026 إلى 15-09-2026 لمدة 12",
-            "href": "https://futureskills.mcit.gov.sa/ar/group/13064"
-          },
-          {
-            "text": "مستوى متوسط\n⁠Cloud Security and Compliance Fundamentals\n دورة معرفية\n تفاعلية مباشرة\n تبدأ 13-09-2026 إلى 15-09-2026 لمد",
-            "href": "https://futureskills.mcit.gov.sa/ar/group/13065"
-          },
-          {
-            "text": "مستوى متوسط\n⁠Data Science Foundations\n دورة معرفية\n تفاعلية مباشرة\n تبدأ 13-09-2026 إلى 16-09-2026 لمدة 16 ساعات",
-            "href": "https://futureskills.mcit.gov.sa/ar/group/13066"
-          },
-          {
-            "text": "مستوى متوسط\n⁠CCNP\n دورة معرفية\n تفاعلية مباشرة\n تبدأ 06-09-2026 إلى 10-09-2026 لمدة 20 ساعات",
-            "href": "https://futureskills.mcit.gov.sa/ar/group/13061"
-          },
-          {
-            "text": "مستوى متوسط\n⁠Data Analysis with Python\n دورة معرفية\n تفاعلية مباشرة\n تبدأ 06-09-2026 إلى 09-09-2026 لمدة 16 ساعات",
-            "href": "https://futureskills.mcit.gov.sa/ar/group/13062"
-          },
-          {
-            "text": "مستوى متوسط\n⁠Red Hat Certified System Administrator (RHCSA)\n دورة معرفية\n تفاعلية مباشرة\n تبدأ 06-09-2026 إلى 10-09-2026",
-            "href": "https://futureskills.mcit.gov.sa/ar/group/13063"
-          }
-        ]
-      },
-      "script_signals": {
-        "next_data_scripts": 0,
-        "nuxt_scripts": 0,
-        "json_ld_scripts": 0,
-        "large_inline_scripts": 0
-      },
-      "network_total": 1,
-      "network_endpoints": [],
-      "network_sample": [
-        {
-          "method": "GET",
-          "status": 200,
-          "url": "https://futureskills.mcit.gov.sa/ar/api2/cities?field_aldwlt_target_id=672",
-          "content_type": "application/json",
-          "resource_type": "xhr",
-          "request_post_data": "",
-          "response_shape": "json-like-invalid",
-          "preview": "[{\"tid_1\":\"68\",\"name\":\"\\u0627\\u0644\\u0631\\u064a\\u0627\\u0636\"},{\"tid_1\":\"69\",\"name\":\"\\u0627\\u0644\\u062f\\u0645\\u0627\\u0645\"},{\"tid_1\":\"70\",\"name\":\"\\u062c\\u062f\\u0629\"},{\"tid_1\":\"71\",\"name\":\"\\u0623\\u0628\\u0647\\u0627\"},{\"tid_1\":\"171\",\"name\":\"\\u0627\\u0644\\u062c\\u0628\\u064a\\u0644\"},{\"tid_1\":\"172\",\"name\":\"\\u0627\\u0644\\u0628\\u0627\\u062d\\u0629\"},{\"tid_1\":\"176\",\"name\":\"\\u0627\\u0644\\u0637\\u0627\\u0626\\u0641\"},{\"tid_1\":\"177\",\"name\":\"\\u0627\\u0644\\u0638\\u0647\\u0631\\u0627\\u0646\"},{\"tid_1\":\"182\",\"name\":\"\\u0627\\u0644\\u0645\\u0628\\u0631\\u0632\"},{\"tid_1\":\"183\",\"name\":\"\\u0627\\u0644\\u0645\\u062f\\u064a\\u0646\\u0629 \\u0627\\u0644\\u0645\\u0646\\u0648\\u0631\\u0629\"},{\"tid_1\":\"187\",\"name\":\"\\u062a\\u0628\\u0648\\u0643\"},{\"tid_1\":\"191\",\"name\":\"\\u0631\\u0641\\u062d\\u0627\\u0621\"},{\"tid_1\":\"192\",\"name\":\"\\u0633\\u0643\\u0627\\u0643\\u0627\"},{\"tid_1\":\"194\",\"name\":\"\\u0642\\u0644\\u0639\\u0629 \\u0628\\u064a\\u0634\\u0629\"},{\"tid_1\":\"196\",\"name\":\"\\u0646\\u062c\\u0631\\u0627\\u0646\"},{\"tid_1\":\"197\",\"name\":\"\\u062d\\u0627\\u0626\\u0644\"},{\"tid_1\":\"198\",\"name\":\"\\u064a\\u0646\\u0628\\u0639\"},{\"tid_1\":\"5042\",\"name\":\"\\u0627\\u0644\\u0623\\u062d\\u0633\\u0627\\u0621\"},{\"tid_1\":\"7319\",\"name\":\"\\u0639\\u0633\\u064a\\u0631\"},{\"tid_1\":\"10545\",\"name\":\"\\u0645\\u0643\\u0629 \\u0627\\u0644\\u0645\\u0643\\u0631\\u0645\\u0629\"},{\"tid_1\":\"10635\",\"name\":\"\\u0627\\u0644\\u062d\\u0644\\u0629\"},{\"tid_1\":\"10638\",\"name\":\"\\u0627\\u0644\\u062e\\u0631\\u062c\"},{\"tid_1\":\"10641\",\"name\":\"\\u0627\\u0644\\u0633\\u0644\\u064a\\u0644\"},{\"tid_1\":\"10647\",\"name\":\"\\u0627\\u0644\\u0642\\u0631\\u064a\\u0627\\u062a\"},{\"tid_1\":\"10650\",\"name\":\"\\u0627\\u0644\\u0642\\u0637\\u064a\\u0641\"},{\"tid_1\":\"10653\",\"name\":\"\\u0627\\u0644\\u0642\\u0646\\u0641\\u0630\\u0629\"},{\"tid_1\":\"10656\",\"name\":\"\\u0627\\u0644\\u0642\\u0648\\u064a\\u0639\\u064a\\u0629\"},{\"tid_1\":\"10659\",\"name\":\"\\u0627\\u0644\\u0647\\u0641\\u0648\\u0641\"},{\"tid_1\":\"10662\",\"name\":\"\\u062"
-        }
-      ]
-    },
-    {
-      "id": "riyadh-city-events",
-      "probed_at": "2026-10-21T07:59:10.992Z",
-      "name": "Riyadh City Events",
-      "priority": 51,
-      "url": "https://riyadh.sa/en/events/all",
-      "final_url": "https://riyadh.sa/en/events/all",
-      "status": "ok",
-      "http_status": 200,
-      "navigation_error": "",
-      "duration_ms": 10501,
-      "classification": "rendered-html-candidates",
-      "next_action": "اكتب extractor مرن من DOM بعد الرندر أو حسن selector الحالي.",
-      "title": "الموقع الرسمي لمدينة الرياض",
-      "text_bytes": 828,
-      "html_bytes": 155265,
-      "html_snapshot": "data/raw/browser-probes/riyadh-city-events-2026-10-21T07-58-24-889Z.html",
-      "screenshot": "data/raw/browser-probes/riyadh-city-events-2026-10-21T07-58-24-889Z.png",
-      "signals": {
-        "has_next_data": false,
-        "has_nuxt": false,
-        "has_json_ld": false,
-        "has_event_schema": false,
-        "date_snippets": [],
-        "event_like_links": [
-          {
-            "text": "",
-            "href": "https://riyadh.sa/en/events/all"
-          },
-          {
-            "text": "All Events",
-            "href": "https://riyadh.sa/en/events/all"
-          },
-          {
-            "text": "events.title",
-            "href": "https://riyadh.sa/en/events"
-          }
-        ]
-      },
-      "script_signals": {
-        "next_data_scripts": 0,
-        "nuxt_scripts": 0,
-        "json_ld_scripts": 0,
-        "large_inline_scripts": 0
-      },
-      "network_total": 2,
-      "network_endpoints": [],
-      "network_sample": [
-        {
-          "method": "GET",
-          "status": 200,
-          "url": "https://riyadh.sa/assets/i18n/ar.json",
-          "content_type": "application/json",
-          "resource_type": "xhr",
-          "request_post_data": "",
-          "response_shape": "json-like-invalid",
-          "preview": "{ \"lang\": \"ar\", \"main\": { \"title\": \"مدينة الرياض\" }, \"lastUpdated\": { \"label\": \"تاريخ آخر تعديل\", \"timezone\": \"بتوقيت السعودية\" }, \"cookies\": { \"title\": \"ملفات تعريف الارتباط\", \"consentIntro\": \"هذا الموقع يستخدم ملفات تعريف الارتباط الخاصة للتأكد من سهولة الاستخدام وضمان تحسين تجربتك أثناء التصفح. من خلال الاستمرار في تصفح هذا الموقع، فإنك تقر بقبول استخدام ملفات تعريف الارتباط.\", \"privacyPolicy\": \"سياسة الخصوصية\", \"accept\": \"قبول\", \"reject\": \"رفض\", \"manageLink\": \"إدارة ملفات تعريف الارتباط\", \"manageTitle\": \"إدارة ملفات تعريف الارتباط\", \"thanksTitle\": \"ملفات تعريف الارتباط\", \"intro\": \"عند زيارة أي موقع على الويب، قد يخزّن هذا الأخير المعلومات على المستعرض أو يستردها على شكل ملفات تعريف ارتباط على الأغلب. وقد تكون هذه المعلومات عنك أو عن تفضيلاتك أو عن جهازك أو قد يتم استخدامها ليعمل الموقع كما تتوقع. لا تعرّف المعلومات عنك عادةً مباشرةً، ولكنها قد تمنحك تجربة ويب أكثر تخصيصًا. يمكنك اختيار عدم السماح ببعض أنواع ملفات تعريف الارتباط. انقر فوق عناوين الفئات المختلفة لمعرفة المزيد وتغيير إعداداتنا الافتراضية. ومع ذلك، يجب أن تعرف أن حظر بعض أنواع ملفات تعريف الارتباط قد يؤثر في تجربتك على الموقع وفي الخدمات التي يمكننا تقديمها.\", \"necessary\": \"ملفات تعريف الارتباط هذه ضرورية للغاية (نشطة دائماً)\", \"performance\": \"ملفات تعريف الارتباط الخاصة بالأداء\", \"functional\": \"ملفات تعريف الارتباط الوظيفية\", \"targeting\": \"ملفات تعريف الارتباط المُستهدفة\", \"confirm\": \"تأكيد خياراتي\", \"rejectAll\": \"رفض الكل\", \"thanksMessage\": \"شكرًا! تم تسجيل استجابتك بنجاح. إذا كنت ترغب في تعديل الإجابة أو تغييرها، يمكنك الرجوع عبر الضغط على زر تراجع.\", \"undo\": \"تراجع\", \"close\": \"إغلاق\" }, \"fileUploader\": { \"hint\": \"الحد الأقصى لحجم الملف المسموح به هو {{size}} ميجابايت، وصيغ الملفات المدعومة تشمل {{"
-        },
-        {
-          "method": "GET",
-          "status": 200,
-          "url": "https://riyadh.sa/assets/i18n/en.json",
-          "content_type": "application/json",
-          "resource_type": "xhr",
-          "request_post_data": "",
-          "response_shape": "json-like-invalid",
-          "preview": "{ \"lang\": \"en\", \"main\": { \"title\": \"Riyadh City\" }, \"lastUpdated\": { \"label\": \"Last Modified Date\", \"timezone\": \"Saudi Arabia Time\" }, \"cookies\": { \"title\": \"Cookies\", \"consentIntro\": \"This site uses its own cookies to ensure ease of use and to improve your experience while browsing. By continuing to browse this site, you acknowledge and accept the use of cookies.\", \"privacyPolicy\": \"Privacy Policy\", \"accept\": \"Accept\", \"reject\": \"Reject\", \"manageLink\": \"Manage Cookies\", \"manageTitle\": \"Manage Cookies\", \"thanksTitle\": \"Cookies\", \"intro\": \"Whenever you visit a website, it may store or retrieve information on your browser, mostly in the form of cookies. This information might be about you, your preferences, or your device, and is mostly used to make the site work as you expect it to. The information does not usually identify you directly, but it can give you a more personalized web experience. You can choose not to allow some types of cookies. Click on the different category headings to find out more and change our default settings. However, you should know that blocking some types of cookies may impact your experience of the site and the services we are able to offer.\", \"necessary\": \"These cookies are strictly necessary (always active)\", \"performance\": \"Performance cookies\", \"functional\": \"Functional cookies\", \"targeting\": \"Targeting cookies\", \"confirm\": \"Confirm my choices\", \"rejectAll\": \"Reject all\", \"thanksMessage\": \"Thank you! Your response has been recorded successfully. If you would like to edit or change your answer, you can go back by clicking the undo button.\", \"undo\": \"Undo\", \"close\": \"Close\" }, \"fileUploader\": { \"hint\": \"Maximum file size allowed is {{size}}"
-        }
-      ]
     }
   ]
 }

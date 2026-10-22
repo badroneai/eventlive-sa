@@ -1,6 +1,6 @@
 # Misk Program Enrichment Report
 
-- generated_at: 2026-10-21T08:12:49.743Z
+- generated_at: 2026-10-22T08:24:55.189Z
 - targets: 18
 - enriched: 18
 - failed: 0
@@ -24,7 +24,7 @@
 - Misk x HUMAIN Traineeship Program (Future AI Builders) - goals=1, features=1, requirements=0, registration_deadline=2026-09-17T18:00:00+03:00
 - Virtual Work Experience - Data analysis at stc - goals=1, features=4, requirements=0, registration_deadline=2026-12-15T18:00:00+03:00
 - Virtual Work Experiences - goals=1, features=4, requirements=0, registration_deadline=2026-12-15T18:00:00+03:00
-- IPO Readiness Program - goals=1, features=4, requirements=0, registration_deadline=2026-10-31T18:00:00+03:00
+- IPO Readiness Program - goals=1, features=4, requirements=0, registration_deadline=2026-11-30T18:00:00+03:00
 
 ## Failed
 
