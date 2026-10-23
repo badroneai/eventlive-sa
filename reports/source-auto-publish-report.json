@@ -1,18 +1,18 @@
 {
-  "published_at": "2026-10-22T08:24:06.484Z",
+  "published_at": "2026-10-23T07:47:37.513Z",
   "dry_run": false,
   "include_partner": true,
   "source_candidates": "data/source_candidates.json",
   "events_catalog": "data/events_catalog.json",
-  "candidates_seen": 398,
+  "candidates_seen": 388,
   "totals": {
-    "candidates_seen": 398,
-    "published": 3,
-    "linked_existing": 365,
+    "candidates_seen": 388,
+    "published": 2,
+    "linked_existing": 356,
     "blocked": 30,
     "duplicate_review_alerts": 4,
     "category_fallback_alerts": 0,
-    "reconciled": 368,
+    "reconciled": 358,
     "session_windows_reconciled": 0
   },
   "session_window_changes": [],
@@ -92,19 +92,14 @@
   ],
   "published": [
     {
-      "candidate_id": "candidate-visit-saudi-seasons-riyadh-racing-season-20261016-7ddb5364",
-      "event_id": "event-riyadh-racing-season",
-      "title": "Riyadh Racing Season"
+      "candidate_id": "candidate-qassim-university-events-توظيف-الذكاء-الاصطناعي-في-الكشف-المبكر-عن-سرطان-الثدي-20261026-81c7a435",
+      "event_id": "event-توظيف-الذكاء-الاصطناعي-في-الكشف-المبكر-عن-سرطان-الثدي",
+      "title": "توظيف الذكاء الاصطناعي في الكشف المبكر عن سرطان الثدي"
     },
     {
-      "candidate_id": "candidate-hayy-jameel-events-hayy-markets-the-bakers-market-fall-edition-20261030-faf49ce1",
-      "event_id": "event-hayy-markets-the-bakers-market-fall-edition",
-      "title": "Hayy Markets | The Bakers Market: Fall Edition"
-    },
-    {
-      "candidate_id": "candidate-ithra-events-champions-challenge-20261102-92484ae4",
-      "event_id": "event-champions-challenge",
-      "title": "Champions' Challenge"
+      "candidate_id": "candidate-ithra-events-there-is-magic-in-eloquence-20261029-7faebff7",
+      "event_id": "event-there-is-magic-in-eloquence",
+      "title": "There Is Magic in Eloquence"
     }
   ],
   "linked_existing": [
@@ -535,12 +530,6 @@
       "reason": "already linked to catalog event"
     },
     {
-      "candidate_id": "candidate-tuwaiq-academy-bootcamps-معسكر-قيادة-التحول-بالذكاء-الاصطناعي-20260921-d4b1787c",
-      "event_id": "event-معسكر-قيادة-التحول-بالذكاء-الاصطناعي",
-      "title": "معسكر قيادة التحول بالذكاء الاصطناعي",
-      "reason": "already linked to catalog event"
-    },
-    {
       "candidate_id": "candidate-experience-alula-events-qissa-bi-qissa-swap-a-story-20260924-a2d33a9a",
       "event_id": "event-qissa-bi-qissa-swap-a-story",
       "title": "Qissa bi Qissa (Swap a Story)",
@@ -562,12 +551,6 @@
       "candidate_id": "candidate-tuwaiq-academy-bootcamps-معسكر-التقنيات-الناشئة-والعوالم-الافتراضية-20260927-0647b188",
       "event_id": "event-معسكر-التقنيات-الناشئة-والعوالم-الافتراضية",
       "title": "معسكر التقنيات الناشئة والعوالم الافتراضية",
-      "reason": "already linked to catalog event"
-    },
-    {
-      "candidate_id": "candidate-tuwaiq-academy-bootcamps-معسكر-تصميم-وتصنيع-الدوائر-الإلكترونية-20260927-2db6d0c7",
-      "event_id": "event-معسكر-تصميم-وتصنيع-الدوائر-الإلكترونية",
-      "title": "معسكر تصميم وتصنيع الدوائر الإلكترونية",
       "reason": "already linked to catalog event"
     },
     {
@@ -709,6 +692,12 @@
       "reason": "already linked to catalog event"
     },
     {
+      "candidate_id": "candidate-visit-saudi-seasons-riyadh-racing-season-20261016-7ddb5364",
+      "event_id": "event-riyadh-racing-season",
+      "title": "Riyadh Racing Season",
+      "reason": "already linked to catalog event"
+    },
+    {
       "candidate_id": "candidate-umm-al-qura-events-ورشة-عمل-بعنوان-تنسيق-الزهور-الصناعية-20261019-49db524a",
       "event_id": "event-ورشة-عمل-بعنوان-تنسيق-الزهور-الصناعية",
       "title": "ورشة عمل بعنوان تنسيق الزهور الصناعية",
@@ -718,12 +707,6 @@
       "candidate_id": "candidate-umm-al-qura-events-مشاركة-أعضاء-هيئة-التدريس-ورشة-عمل-بعنوان-تنقيح-المشاريع-البحثية-والابتك-20261019-5913dd70",
       "event_id": "event-مشاركة-أعضاء-هيئة-التدريس-ورشة-عمل-بعنوان-تنقيح-المشاريع-البحثية-والابتك",
       "title": "مشاركة أعضاء هيئة التدريس ورشة عمل بعنوان: تنقيح المشاريع البحثية والابتكارية المشاركة في الأولمبياد الوطني للإبداع العلمي",
-      "reason": "already linked to catalog event"
-    },
-    {
-      "candidate_id": "candidate-riyadh-city-events-saudi-agriculture-20261019-03c322f4",
-      "event_id": "event-saudi-agriculture",
-      "title": "Saudi Agriculture",
       "reason": "already linked to catalog event"
     },
     {
@@ -739,69 +722,9 @@
       "reason": "already linked to catalog event"
     },
     {
-      "candidate_id": "candidate-visit-saudi-calendar-pdf-فينا-نحكي؟-عرض-ستاند-أب-كوميدي-يقدمه-جون-أشقر-20261022-4a38d19e",
-      "event_id": "event-فينا-نحكي؟-عرض-ستاند-أب-كوميدي-يقدمه-جون-أشقر",
-      "title": "فينا نحكي؟ عرض ستاند أب كوميدي يقدمه جون أشقر",
-      "reason": "already linked to catalog event"
-    },
-    {
-      "candidate_id": "candidate-visit-saudi-calendar-pdf-لحد-يدري-عرض-ستاند-اب-كوميدي-من-أسامة-بازيد-20261022-4a38d19e",
-      "event_id": "event-لحد-يدري-عرض-ستاند-اب-كوميدي-من-أسامة-بازيد",
-      "title": "لحد يدري: عرض ستاند اب كوميدي من أسامة بازيد",
-      "reason": "already linked to catalog event"
-    },
-    {
       "candidate_id": "candidate-visit-saudi-calendar-pdf-حفل-فضل-شاكر-20261022-4a38d19e",
       "event_id": "event-حفل-فضل-شاكر",
       "title": "حفل فضل شاكر",
-      "reason": "already linked to catalog event"
-    },
-    {
-      "candidate_id": "candidate-visit-saudi-calendar-pdf-عبد-في-صبيح-عرض-ستاند-أب-كوميدي-20261022-4a38d19e",
-      "event_id": "event-عبد-في-صبيح-عرض-ستاند-أب-كوميدي",
-      "title": "عبد في صبيح - عرض ستاند أب كوميدي",
-      "reason": "already linked to catalog event"
-    },
-    {
-      "candidate_id": "candidate-umm-al-qura-events-ورشة-عمل-بعنوان-أساسيات-الكروشيه-20261022-27eac827",
-      "event_id": "event-ورشة-عمل-بعنوان-أساسيات-الكروشيه",
-      "title": "ورشة عمل بعنوان أساسيات الكروشيه",
-      "reason": "already linked to catalog event"
-    },
-    {
-      "candidate_id": "candidate-saudi-university-events-rethinking-our-cities-building-resilient-sustainable-and-livable-communi-20261022-e84a8040",
-      "event_id": "event-rethinking-our-cities-building-resilient-sustainable-and-livable-communi",
-      "title": "Rethinking Our Cities: Building Resilient, Sustainable and Livable Communities",
-      "reason": "already linked to catalog event"
-    },
-    {
-      "candidate_id": "candidate-umm-al-qura-events-ورشة-عمل-بعنوان-صنع-الشوكولاتة-20261022-ff2ce3ac",
-      "event_id": "event-ورشة-عمل-بعنوان-صنع-الشوكولاتة",
-      "title": "ورشة عمل بعنوان صنع الشوكولاتة",
-      "reason": "already linked to catalog event"
-    },
-    {
-      "candidate_id": "candidate-hayy-jameel-events-hayy-sounds-red-wind-sonic-residues-music-symposium-20261022-47469fb3",
-      "event_id": "event-hayy-sounds-red-wind-sonic-residues-music-symposium",
-      "title": "Hayy Sounds | Red Wind, Sonic Residues Music Symposium",
-      "reason": "already linked to catalog event"
-    },
-    {
-      "candidate_id": "candidate-hayy-jameel-events-hayy-makers-creative-night-create-in-pink-20261022-f304c163",
-      "event_id": "event-hayy-makers-creative-night-create-in-pink",
-      "title": "Hayy Makers | Creative Night: Create in Pink",
-      "reason": "already linked to catalog event"
-    },
-    {
-      "candidate_id": "candidate-saudi-university-events-pink-cruise-20261022-09636ea5",
-      "event_id": "event-pink-cruise",
-      "title": "Pink Cruise",
-      "reason": "already linked to catalog event"
-    },
-    {
-      "candidate_id": "candidate-visit-saudi-seasons-fadel-chaker-concert-20261022-fd144903",
-      "event_id": "event-fadel-chaker-concert",
-      "title": "Fadel Chaker Concert",
       "reason": "already linked to catalog event"
     },
     {
@@ -1249,6 +1172,12 @@
       "reason": "already linked to catalog event"
     },
     {
+      "candidate_id": "candidate-hayy-jameel-events-hayy-markets-the-bakers-market-autumn-edition-20261030-faf49ce1",
+      "event_id": "event-hayy-markets-the-bakers-market-fall-edition",
+      "title": "Hayy Markets | The Bakers Market: Autumn Edition",
+      "reason": "already linked to catalog event"
+    },
+    {
       "candidate_id": "candidate-ithra-events-stories-from-ithras-library-20261030-4116de16",
       "event_id": "event-stories-from-ithras-library",
       "title": "Stories from Ithra's Library",
@@ -1360,6 +1289,12 @@
       "candidate_id": "candidate-riyadh-city-events-saudi-build-20261102-5065a5f6",
       "event_id": "event-saudi-build",
       "title": "Saudi Build",
+      "reason": "already linked to catalog event"
+    },
+    {
+      "candidate_id": "candidate-ithra-events-champions-challenge-20261102-92484ae4",
+      "event_id": "event-champions-challenge",
+      "title": "Champions' Challenge",
       "reason": "already linked to catalog event"
     },
     {
@@ -2275,10 +2210,16 @@
       "reason": "already linked to catalog event"
     },
     {
-      "candidate_id": "candidate-informa-connect-saudi-events-hrse-ksa-hr-summit-expo-20270622-b925c298",
+      "candidate_id": "candidate-informa-connect-saudi-events-hrse-ksa-hr-summit-expo-20270615-b925c298",
       "event_id": "event-hrse-ksa-hr-summit-expo",
       "title": "HRSE KSA (HR Summit & Expo)",
       "reason": "already linked to catalog event"
+    },
+    {
+      "candidate_id": "candidate-informa-connect-saudi-events-saudi-event-show-20270623-9bbda4e2",
+      "event_id": "event-saudi-event-show",
+      "title": "Saudi Event Show",
+      "reason": "trusted duplicate linked to existing catalog event"
     },
     {
       "candidate_id": "candidate-qassim-university-events-استضافة-مؤتمر-ieee-mecom-2027-20271101-510cb4b1",

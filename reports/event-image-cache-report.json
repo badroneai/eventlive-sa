@@ -1,22 +1,22 @@
 {
-  "generated_at": "2026-10-22T08:31:15.267Z",
+  "generated_at": "2026-10-23T07:55:13.427Z",
   "events_file": "dist/events.json",
   "manifest": "data/event_image_cache_manifest.json",
   "image_dir": "dist/assets/event-images",
   "totals": {
     "targets": 500,
-    "cached_total": 901,
+    "cached_total": 902,
     "fetched": 1,
     "reused": 493,
     "failed": 6,
-    "skipped_recent_failures": 0,
+    "skipped_recent_failures": 6,
     "remembered_failures": 34
   },
   "fetched": [
     {
-      "source_url": "https://www.ithra.com/application/files/cache/thumbnails/5a2aeab8264bd06324360c2db24a5e3d.png",
-      "file": "dist/assets/event-images/champions-challenge-959c3be322.png",
-      "bytes": 1619536,
+      "source_url": "https://www.ithra.com/application/files/cache/thumbnails/88aa46fd2373012f8545425414c30e70.png",
+      "file": "dist/assets/event-images/there-is-magic-in-eloquence-6d3b3b6d57.png",
+      "bytes": 939445,
       "events": 1
     }
   ],
@@ -432,11 +432,6 @@
       "events": 1
     },
     {
-      "source_url": "https://cdn.tuwaiq.edu.sa/initiatives_admin/images/k4uoshpk.wue.jpg",
-      "file": "dist/assets/event-images/معسكر-قيادة-التحول-بالذكاء-الاصطناعي-4c18a97a44.jpg",
-      "events": 1
-    },
-    {
       "source_url": "https://s7g10.scene7.com/is/image/rcu/qissa-bi-qissa?$Responsive$&fit=stretch&fmt=webp&wid=1920",
       "file": "dist/assets/event-images/qissa-bi-qissa-swap-a-story-564948c71f.webp",
       "events": 1
@@ -444,11 +439,6 @@
     {
       "source_url": "https://cdn.tuwaiq.edu.sa/initiatives_admin/images/b2hfxfcc.ekk.webp",
       "file": "dist/assets/event-images/معسكر-التقنيات-الناشئة-والعوالم-الافتراضية-8a64400615.webp",
-      "events": 1
-    },
-    {
-      "source_url": "https://cdn.tuwaiq.edu.sa/initiatives_admin/images/0isp5o54.m0i.webp",
-      "file": "dist/assets/event-images/معسكر-تصميم-وتصنيع-الدوائر-الإلكترونية-a5be9ae7fd.webp",
       "events": 1
     },
     {
@@ -542,23 +532,8 @@
       "events": 1
     },
     {
-      "source_url": "https://api.riyadh.sa/sites/default/files/styles/medium/public/2025-12/agriculture%20%282%29.jpg?itok=-A4P3sDu",
-      "file": "dist/assets/event-images/saudi-agriculture-d9a5ea421d.jpg",
-      "events": 1
-    },
-    {
       "source_url": "https://www.ithra.com/application/files/cache/thumbnails/fd743dc190d99ded6708dfc96b3a1d68.jpg",
       "file": "dist/assets/event-images/immersive-introduction-to-arabic-writing-and-type-design-1c7ab6de8f.jpg",
-      "events": 1
-    },
-    {
-      "source_url": "https://hayyjameel.org/wp-content/uploads/2026/09/3-scaled-aspect-ratio-2538-1280-1100x500.png",
-      "file": "dist/assets/event-images/هاي-يبدو-ريد-ويند-،-ندوة-سونيك-ريسيدوس-الموسيقية-dd89e5c3e6.png",
-      "events": 1
-    },
-    {
-      "source_url": "https://hayyjameel.org/wp-content/uploads/2026/09/annie-spratt-HB-Kf9WLy_0-unsplash-scaled-aspect-ratio-2560-1349-1-1100x500.jpg",
-      "file": "dist/assets/event-images/هاي-ماكرز-ليلة-مبتكرة-6b61cb62fa.jpg",
       "events": 1
     },
     {
@@ -605,6 +580,11 @@
       "source_url": "https://www.ithra.com/application/files/cache/thumbnails/3446449530b9e6bb40e54a10959b0acf.jpg",
       "file": "dist/assets/event-images/the-art-of-public-speaking-571bd8329a.jpg",
       "events": 1
+    },
+    {
+      "source_url": "https://www.qu.edu.sa/wp-content/uploads/2025/07/qu_img_v3-768x432-1.webp",
+      "file": "dist/assets/event-images/انطلاق-النادي-الصيفي-التاسع-لجامعة-القصيم-69e05e13ee.webp",
+      "events": 6
     },
     {
       "source_url": "https://static.wixstatic.com/media/269912_ae1b1f61c9d443469ca3a36bcf09dcf4%7Emv2.png/v1/fit/w_2500,h_1330,al_c/269912_ae1b1f61c9d443469ca3a36bcf09dcf4%7Emv2.png",
@@ -654,6 +634,11 @@
     {
       "source_url": "https://api.riyadh.sa/sites/default/files/styles/medium/public/2025-12/testimonials-bg.jpg?itok=msBqG1NP",
       "file": "dist/assets/event-images/saudi-build-118147add6.jpg",
+      "events": 1
+    },
+    {
+      "source_url": "https://www.ithra.com/application/files/cache/thumbnails/5a2aeab8264bd06324360c2db24a5e3d.png",
+      "file": "dist/assets/event-images/champions-challenge-959c3be322.png",
       "events": 1
     },
     {
@@ -997,11 +982,6 @@
       "events": 1
     },
     {
-      "source_url": "https://www.qu.edu.sa/wp-content/uploads/2025/07/qu_img_v3-768x432-1.webp",
-      "file": "dist/assets/event-images/انطلاق-النادي-الصيفي-التاسع-لجامعة-القصيم-69e05e13ee.webp",
-      "events": 5
-    },
-    {
       "source_url": "https://api.riyadh.sa/sites/default/files/styles/medium/public/2026-04/HG_hI6SbUAA3cxc.jpeg?itok=M3x1tWYv",
       "file": "dist/assets/event-images/24th-erra-annual-conference-c93a8157be.jpg",
       "events": 1
@@ -1037,6 +1017,16 @@
       "events": 1
     },
     {
+      "source_url": "https://hayyjameel.org/wp-content/uploads/2026/09/annie-spratt-HB-Kf9WLy_0-unsplash-scaled-aspect-ratio-2560-1349-1-1100x500.jpg",
+      "file": "dist/assets/event-images/هاي-ماكرز-ليلة-مبتكرة-6b61cb62fa.jpg",
+      "events": 1
+    },
+    {
+      "source_url": "https://hayyjameel.org/wp-content/uploads/2026/09/3-scaled-aspect-ratio-2538-1280-1100x500.png",
+      "file": "dist/assets/event-images/هاي-يبدو-ريد-ويند-،-ندوة-سونيك-ريسيدوس-الموسيقية-dd89e5c3e6.png",
+      "events": 1
+    },
+    {
       "source_url": "https://www.ithra.com/application/files/cache/thumbnails/9520c7ac094aada70a66eda3fdf5f7a6.jpg",
       "file": "dist/assets/event-images/theatrical-readings-6a73f7612c.jpg",
       "events": 1
@@ -1059,6 +1049,11 @@
     {
       "source_url": "https://hub.misk.org.sa/media/lcsk2oyh/nonprofit-governancehub-en.png",
       "file": "dist/assets/event-images/nonprofit-governance-from-compliance-to-institutional-excellence-4beb063e2b.png",
+      "events": 1
+    },
+    {
+      "source_url": "https://api.riyadh.sa/sites/default/files/styles/medium/public/2025-12/agriculture%20%282%29.jpg?itok=-A4P3sDu",
+      "file": "dist/assets/event-images/saudi-agriculture-d9a5ea421d.jpg",
       "events": 1
     },
     {
@@ -1232,6 +1227,11 @@
       "events": 1
     },
     {
+      "source_url": "https://cdn.tuwaiq.edu.sa/initiatives_admin/images/0isp5o54.m0i.webp",
+      "file": "dist/assets/event-images/معسكر-تصميم-وتصنيع-الدوائر-الإلكترونية-a5be9ae7fd.webp",
+      "events": 1
+    },
+    {
       "source_url": "https://api.riyadh.sa/sites/default/files/styles/medium/public/2026-01/F%20Gu_yE-xWIAAqBvu.jpeg?itok=tEBuPjK9",
       "file": "dist/assets/event-images/the-saudi-food-show-05498df4f1.jpg",
       "events": 1
@@ -1349,6 +1349,11 @@
     {
       "source_url": "https://www.ithra.com/application/files/cache/thumbnails/9f638759ab723bf1b1d20ca18f235791.png",
       "file": "dist/assets/event-images/حائط-جيلنا-20ec70725d.png",
+      "events": 1
+    },
+    {
+      "source_url": "https://cdn.tuwaiq.edu.sa/initiatives_admin/images/k4uoshpk.wue.jpg",
+      "file": "dist/assets/event-images/معسكر-قيادة-التحول-بالذكاء-الاصطناعي-4c18a97a44.jpg",
       "events": 1
     },
     {
@@ -2480,63 +2485,112 @@
       "source_url": "https://discoveraseer.com/en/img/asset/YXNzZXRzL2V4cGVyaWVuY2UvZHc4dzEyNTAuanBlZw/dw8w1250.jpeg?w=1024&fm=webp&s=e845b36cd3e878a1a1d7cec306a2e3f8",
       "file": "dist/assets/event-images/حفلات-موسيقية-53b2281d16.webp",
       "events": 1
-    },
-    {
-      "source_url": "https://api.riyadh.sa/sites/default/files/styles/medium/public/2026-07/NTN%202.png?itok=NcFLmn-3",
-      "file": "dist/assets/event-images/registration-for-international-research-competition-on-non-terrestrial-edd16ffe75.png",
-      "events": 1
     }
   ],
   "rejected_removed": [],
   "missing_removed": [],
-  "skipped_recent_failures": [],
-  "failed": [
+  "skipped_recent_failures": [
     {
-      "source_url": "https://s7g10.scene7.com/is/image/rcu/fei2:landscape-16x9?$Responsive$&fit=stretch&fmt=webp&wid=1920",
+      "source_url": "https://s7g10.scene7.com/is/image/rcu/stargazing-at-alula-fort:landscape-16x9?$Responsive$&fit=stretch&fmt=webp&wid=1920",
       "events": 1,
       "reason": "HTTP 403",
       "failure_kind": "access-denied",
-      "retry_after": "2026-10-23T08:31:15.267Z"
+      "retry_after": "2026-10-23T08:31:15.267Z",
+      "skipped": true
     },
     {
       "source_url": "https://s7g10.scene7.com/is/image/rcu/sunset-stillness-meditation-sound-immersion:landscape-16x9?$Responsive$&fit=stretch&fmt=webp&wid=1920",
       "events": 1,
       "reason": "HTTP 403",
       "failure_kind": "access-denied",
-      "retry_after": "2026-10-23T08:31:15.267Z"
-    },
-    {
-      "source_url": "https://s7g10.scene7.com/is/image/rcu/stargazing-at-alula-fort:landscape-16x9?$Responsive$&fit=stretch&fmt=webp&wid=1920",
-      "events": 1,
-      "reason": "HTTP 403",
-      "failure_kind": "access-denied",
-      "retry_after": "2026-10-23T08:31:15.267Z"
-    },
-    {
-      "source_url": "https://cdn.rfecc.sa/wp-content/uploads/mec/qr_898ea2449274454e42895b52b18c6f68.png",
-      "events": 1,
-      "reason": "HTTP 403",
-      "failure_kind": "access-denied",
-      "retry_after": "2026-10-23T08:31:15.267Z"
+      "retry_after": "2026-10-23T08:31:15.267Z",
+      "skipped": true
     },
     {
       "source_url": "https://s7g10.scene7.com/is/image/rcu/leonid-meteor-shower-at-jabal-ikmah:landscape-16x9?$Responsive$&fit=stretch&fmt=webp&wid=1920",
       "events": 1,
       "reason": "HTTP 403",
       "failure_kind": "access-denied",
-      "retry_after": "2026-10-23T08:31:15.267Z"
+      "retry_after": "2026-10-23T08:31:15.267Z",
+      "skipped": true
+    },
+    {
+      "source_url": "https://s7g10.scene7.com/is/image/rcu/fei2:landscape-16x9?$Responsive$&fit=stretch&fmt=webp&wid=1920",
+      "events": 1,
+      "reason": "HTTP 403",
+      "failure_kind": "access-denied",
+      "retry_after": "2026-10-23T08:31:15.267Z",
+      "skipped": true
     },
     {
       "source_url": "https://api.riyadh.sa/sites/default/files/styles/medium/public/2026-07/er%20%2859%29.jpg?itok=a33APdGm",
       "events": 1,
       "reason": "not-image text/html; charset=utf-8",
       "failure_kind": "source-returned-html",
-      "retry_after": "2026-10-23T08:31:15.267Z"
+      "retry_after": "2026-10-23T08:31:15.267Z",
+      "skipped": true
+    },
+    {
+      "source_url": "https://cdn.rfecc.sa/wp-content/uploads/mec/qr_898ea2449274454e42895b52b18c6f68.png",
+      "events": 1,
+      "reason": "HTTP 403",
+      "failure_kind": "access-denied",
+      "retry_after": "2026-10-23T08:31:15.267Z",
+      "skipped": true
+    }
+  ],
+  "failed": [
+    {
+      "source_url": "https://s7g10.scene7.com/is/image/rcu/stargazing-at-alula-fort:landscape-16x9?$Responsive$&fit=stretch&fmt=webp&wid=1920",
+      "events": 1,
+      "reason": "HTTP 403",
+      "failure_kind": "access-denied",
+      "retry_after": "2026-10-23T08:31:15.267Z",
+      "skipped": true
+    },
+    {
+      "source_url": "https://s7g10.scene7.com/is/image/rcu/sunset-stillness-meditation-sound-immersion:landscape-16x9?$Responsive$&fit=stretch&fmt=webp&wid=1920",
+      "events": 1,
+      "reason": "HTTP 403",
+      "failure_kind": "access-denied",
+      "retry_after": "2026-10-23T08:31:15.267Z",
+      "skipped": true
+    },
+    {
+      "source_url": "https://s7g10.scene7.com/is/image/rcu/leonid-meteor-shower-at-jabal-ikmah:landscape-16x9?$Responsive$&fit=stretch&fmt=webp&wid=1920",
+      "events": 1,
+      "reason": "HTTP 403",
+      "failure_kind": "access-denied",
+      "retry_after": "2026-10-23T08:31:15.267Z",
+      "skipped": true
+    },
+    {
+      "source_url": "https://s7g10.scene7.com/is/image/rcu/fei2:landscape-16x9?$Responsive$&fit=stretch&fmt=webp&wid=1920",
+      "events": 1,
+      "reason": "HTTP 403",
+      "failure_kind": "access-denied",
+      "retry_after": "2026-10-23T08:31:15.267Z",
+      "skipped": true
+    },
+    {
+      "source_url": "https://api.riyadh.sa/sites/default/files/styles/medium/public/2026-07/er%20%2859%29.jpg?itok=a33APdGm",
+      "events": 1,
+      "reason": "not-image text/html; charset=utf-8",
+      "failure_kind": "source-returned-html",
+      "retry_after": "2026-10-23T08:31:15.267Z",
+      "skipped": true
+    },
+    {
+      "source_url": "https://cdn.rfecc.sa/wp-content/uploads/mec/qr_898ea2449274454e42895b52b18c6f68.png",
+      "events": 1,
+      "reason": "HTTP 403",
+      "failure_kind": "access-denied",
+      "retry_after": "2026-10-23T08:31:15.267Z",
+      "skipped": true
     }
   ],
   "requires_rebuild": true,
   "rebuild_reasons": [
-    "fetched:1",
-    "new-failures:6"
+    "fetched:1"
   ]
 }

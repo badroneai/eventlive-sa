@@ -1,6 +1,6 @@
 # Future Skills Program Enrichment Report
 
-- generated_at: 2026-10-22T08:24:15.031Z
+- generated_at: 2026-10-23T07:47:45.365Z
 - targets: 29
 - enriched: 0
 - failed: 29
@@ -26,7 +26,7 @@
 - GenAI for Data Analysis and Decision Support - الذكاء الاصطناعي التوليدي لتحليل البيانات ودعم اتخاذ القرار (13049) - HTTP 404
 - CompTIA Cloud+ (13050) - HTTP 404
 - Virtualization & Cloud Infrastructure Basics - الافتراضية والبنية التحتية السحابية (13051) - HTTP 404
-- SQL Fundamentals (13052) - HTTP 404
+- SQL Fundamentals (13052) - fetch failed
 - CompTIA IT Fundamentals (13053) - HTTP 404
 - AWS Solutions Architect – Associate Practical (13054) - HTTP 404
 - CompTIA Network+ (13055) - HTTP 404

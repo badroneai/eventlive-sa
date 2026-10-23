@@ -1,14 +1,16 @@
 # EventLive Visit Saudi Image Identity Report
 
-- generated_at: 2026-10-22T08:24:11.043Z
+- generated_at: 2026-10-23T07:47:41.886Z
 - pdf_crop_assignments: 38
-- verified: 38
-- struck: 0
-- slots_seen_this_cycle: 43
+- verified: 35
+- struck: 3
+- slots_seen_this_cycle: 40
 
 ## Struck (fell back to generated cover)
 
-- none
+- فينا نحكي؟ عرض ستاند أب كوميدي يقدمه جون أشقر (visit-saudi-summer-2026-p007-top-left.jpg) - slot-vacated - no dated card currently occupies page 7 top-left of https://www.visitsaudi.com/content/dam/documents/saudi-calendar-ar.pdf
+- لحد يدري: عرض ستاند اب كوميدي من أسامة بازيد (visit-saudi-summer-2026-p021-top-left.jpg) - slot-vacated - no dated card currently occupies page 21 top-left of https://www.visitsaudi.com/content/dam/documents/saudi-calendar-ar.pdf
+- عبد في صبيح - عرض ستاند أب كوميدي (visit-saudi-summer-2026-p007-bottom-left.jpg) - slot-vacated - no dated card currently occupies page 7 bottom-left of https://www.visitsaudi.com/content/dam/documents/saudi-calendar-ar.pdf
 
 ## Verified
 
@@ -24,10 +26,7 @@
 - ربع تون (visit-saudi-summer-2026-p006-top-right.jpg)
 - نهائيات FIFAe 26 (visit-saudi-summer-2026-p045-bottom-left.jpg)
 - Six Kings Slam (visit-saudi-summer-2026-p007-top-right.jpg)
-- فينا نحكي؟ عرض ستاند أب كوميدي يقدمه جون أشقر (visit-saudi-summer-2026-p007-top-left.jpg)
-- لحد يدري: عرض ستاند اب كوميدي من أسامة بازيد (visit-saudi-summer-2026-p021-top-left.jpg)
 - حفل فضل شاكر (visit-saudi-summer-2026-p007-bottom-right.jpg)
-- عبد في صبيح - عرض ستاند أب كوميدي (visit-saudi-summer-2026-p007-bottom-left.jpg)
 - ”فينا نحكي؟“ كوميديا ستاند أب مع جون أشقر (visit-saudi-summer-2026-p047-top-right.jpg)
 - لحد يدري: عرض ستاند اب كوميدي من أسامة بازيد (visit-saudi-summer-2026-p037-bottom-left.jpg)
 - عبد في صبيح - عرض ستاند أب كوميدي (visit-saudi-summer-2026-p047-top-left.jpg)

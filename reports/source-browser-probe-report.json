@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-22T07:59:38.727Z",
+  "generated_at": "2026-10-23T07:38:39.058Z",
   "source_registry": "data/source_registry.json",
   "collection_report": "reports/source-collection-report.json",
   "output_dir": "data/raw/browser-probes",
@@ -7,7 +7,7 @@
     "selected_ids": [],
     "scope": "priority",
     "limit": 8,
-    "probed_this_run": 8,
+    "probed_this_run": 3,
     "fresh_results_available": 8,
     "wait_ms": 4500,
     "timeout_ms": 30000,
@@ -19,7 +19,7 @@
     "browser_network_api": 1,
     "browser_hydration_payload": 0,
     "rendered_html_candidates": 0,
-    "blocked_or_protected": 1,
+    "blocked_or_protected": 0,
     "policy_skipped": 0
   },
   "sources": [
@@ -132,58 +132,200 @@
       "network_sample": []
     },
     {
-      "id": "tuwaiq-academy-bootcamps",
-      "probed_at": "2026-10-22T08:06:30.415Z",
-      "name": "Tuwaiq Academy Bootcamps and Programs",
-      "priority": 16,
-      "url": "https://tuwaiq.edu.sa/api/GetInitiativePublishesShorten/12/1?category=ac41152d-f228-8af4-8406-e0cda6df6c35&type=NORMAL",
-      "final_url": "https://tuwaiq.edu.sa/api/GetInitiativePublishesShorten/12/1?category=ac41152d-f228-8af4-8406-e0cda6df6c35&type=NORMAL",
+      "id": "misk-hub-events",
+      "probed_at": "2026-10-23T07:38:56.644Z",
+      "name": "Misk Hub Events",
+      "priority": 28,
+      "url": "https://hub.misk.org.sa/en/events/",
+      "final_url": "https://hub.misk.org.sa/en/events/",
       "status": "ok",
       "http_status": 200,
       "navigation_error": "",
-      "duration_ms": 6370,
-      "classification": "browser-structured-html",
-      "next_action": "اكتب extractor من JSON-LD أو structured scripts مع fallback للبطاقات.",
-      "title": "",
-      "text_bytes": 10790,
-      "html_bytes": 10953,
-      "html_snapshot": "data/raw/browser-probes/tuwaiq-academy-bootcamps-2026-10-22T07-59-38-727Z.html",
-      "screenshot": "data/raw/browser-probes/tuwaiq-academy-bootcamps-2026-10-22T07-59-38-727Z.png",
+      "duration_ms": 10573,
+      "classification": "browser-network-api",
+      "next_action": "ثبت endpoint مرشحًا كجامع مباشر، ثم اكتب extractor من JSON مع اختبار انحدار.",
+      "title": "Misk Hub Events",
+      "text_bytes": 2715,
+      "html_bytes": 253846,
+      "html_snapshot": "data/raw/browser-probes/misk-hub-events-2026-10-23T07-38-39-058Z.html",
+      "screenshot": "data/raw/browser-probes/misk-hub-events-2026-10-23T07-38-39-058Z.png",
       "signals": {
         "has_next_data": false,
         "has_nuxt": false,
         "has_json_ld": false,
-        "has_event_schema": true,
+        "has_event_schema": false,
         "date_snippets": [
-          "ر الأنظمة الذاتية للدرونز\",\"startDate\":\"2026-11-01T18:00:00+03:00\",\"endDate\":\"2026-12-03T21:00:00+03:00\",\"autoCloseRegistration\":f",
-          "nStartDate\":null,\"registrationEndDate\":\"2026-10-18T12:00:00+03:00\",\"requireProfileCompletion\":true,\"isMergePublish\":true,\"isPaid\":",
-          "سحابة وتعلم الآلة على AWS\",\"startDate\":\"2026-11-08T18:00:00+03:00\",\"endDate\":\"2026-12-17T22:00:00+03:00\",\"autoCloseRegistration\":f",
-          "nStartDate\":null,\"registrationEndDate\":\"2026-10-18T12:00:00+03:00\",\"requireProfileCompletion\":true,\"isMergePublish\":true,\"isPaid\":",
-          "تقنيات الذكاء الاصطناعي \",\"startDate\":\"2026-11-22T10:00:00+03:00\",\"endDate\":\"2027-02-11T15:00:00+03:00\",\"autoCloseRegistration\":f",
-          "nStartDate\":null,\"registrationEndDate\":\"2026-11-08T12:00:00+03:00\",\"requireProfileCompletion\":true,\"isMergePublish\":true,\"isPaid\":",
-          "والأمن السيبراني على AWS\",\"startDate\":\"2026-11-22T18:00:00+03:00\",\"endDate\":\"2026-12-17T22:00:00+03:00\",\"autoCloseRegistration\":f",
-          "nStartDate\":null,\"registrationEndDate\":\"2026-11-29T12:00:00+03:00\",\"requireProfileCompletion\":true,\"isMergePublish\":true,\"isPaid\":"
+          "Insights العربية Sign in Skills Offline 19 - 20 Oct 2026 Nonprofit Governance: From Compliance to Institutional Excellence This wor",
+          "sing on 14th October 2026 Skills Online 21 Oct 2026 From the Classroom to the Workplace: The Skills That Make the Difference Delive",
+          "That Make the Difference English,Arabic 21 Oct 2026 7:00 pm : 8:00 pm More Details In-Person This event has Passed Nonprofit Govern",
+          "ance to Institutional Excellence Arabic 19 - 20 Oct 2026 4:00 pm : 8:00 pm More Details Hybrid This event has Passed Finance Fundam",
+          "entals English,Arabic 14 Sep 2026 4:00 pm : 7:00 pm More Details Online This event has Passed How to Choose Your",
+          "eep Up with Labor Market Changes Arabic 26 Aug 2026 7:00 pm : 8:00 pm More Details Hybrid This event has Passed Navigating the Cybe",
+          "Build a Corporate Career English,Arabic 25 Aug 2026 1:00 pm : 2:00 pm More Details Online This event has Passed Development Media:",
+          "From Message to Impact Al Baha Arabic 22 - 23 Aug 2026 6:00 pm : 10:00 pm More Details Online This event has Passed Cybersecurity"
         ],
-        "event_like_links": []
+        "event_like_links": [
+          {
+            "text": "Programs",
+            "href": "https://hub.misk.org.sa/en/programs/"
+          },
+          {
+            "text": "Events",
+            "href": "https://hub.misk.org.sa/en/events/"
+          },
+          {
+            "text": "العربية",
+            "href": "https://hub.misk.org.sa/ar/events/"
+          },
+          {
+            "text": "Sign in",
+            "href": "https://hub.misk.org.sa/en/events/#"
+          },
+          {
+            "text": "Programs",
+            "href": "https://hub.misk.org.sa/en/programs/"
+          },
+          {
+            "text": "Events",
+            "href": "https://hub.misk.org.sa/en/events/"
+          },
+          {
+            "text": "العربية",
+            "href": "https://hub.misk.org.sa/ar/events/"
+          },
+          {
+            "text": "Skills",
+            "href": "https://hub.misk.org.sa/events/?category=Skills#event"
+          },
+          {
+            "text": "Share",
+            "href": "https://hub.misk.org.sa/en/events/#"
+          },
+          {
+            "text": "",
+            "href": "https://hub.misk.org.sa/en/events/#"
+          },
+          {
+            "text": "Skills",
+            "href": "https://hub.misk.org.sa/events/?category=Skills#event"
+          },
+          {
+            "text": "Share",
+            "href": "https://hub.misk.org.sa/en/events/#"
+          },
+          {
+            "text": "",
+            "href": "https://hub.misk.org.sa/en/events/#"
+          },
+          {
+            "text": "Skills",
+            "href": "https://hub.misk.org.sa/events/?category=Skills#event"
+          },
+          {
+            "text": "Share",
+            "href": "https://hub.misk.org.sa/en/events/#"
+          },
+          {
+            "text": "",
+            "href": "https://hub.misk.org.sa/en/events/#"
+          },
+          {
+            "text": "Skills",
+            "href": "https://hub.misk.org.sa/events/?category=Skills#event"
+          },
+          {
+            "text": "Share",
+            "href": "https://hub.misk.org.sa/en/events/#"
+          },
+          {
+            "text": "",
+            "href": "https://hub.misk.org.sa/en/events/#"
+          },
+          {
+            "text": "Skills",
+            "href": "https://hub.misk.org.sa/events/?category=Skills#event"
+          }
+        ]
       },
       "script_signals": {
         "next_data_scripts": 0,
         "nuxt_scripts": 0,
         "json_ld_scripts": 0,
-        "large_inline_scripts": 0
+        "large_inline_scripts": 5
       },
-      "network_total": 1,
-      "network_endpoints": [],
+      "network_total": 4,
+      "network_endpoints": [
+        {
+          "method": "POST",
+          "status": 200,
+          "url": "https://hub.misk.org.sa/api/events/RenderLazyLoadAllEventsOfSeries",
+          "content_type": "application/json",
+          "resource_type": "xhr",
+          "request_post_data": "{\"SkipCount\":0,\"CurrentCulture\":\"en-US\",\"CategoryId\":0,\"OrderBy\":\"\",\"EventTypeFilters\":[],\"LanguageFilters\":[],\"StatusFilters\":[],\"FromDate\":null,\"ToDate\":null,\"LocationId\":null,\"CurrentPageId\":\"4411\"}",
+          "response_shape": "json-like-invalid",
+          "preview": "{\"nextSkippedValue\":8,\"stringObjectValues\":\"<div class=\\\"article-outer v3\\\"><div class=\\\" time-label\\\"><span>Hybrid</span></div><div class=\\\"article-img\\\"><a href=\\\"/events/skills/from-the-classroom-to-the-workplace-the-skills-that-make-the-difference/\\\"><img src=\\\"/media/jttn4hhr/from-classroom-to-workplace_hub-en.png\\\" alt=\\\"logo\\\"></a></div><div class=\\\"article-content\\\"><div class=\\\"article-text-wrapper\\\"><div class=\\\"body-text-3 mgbx1 color-peach font-weight-200\\\" style=\\\"white-space:nowrap;\\\"><span class=\\\"color-peach mgafx1\\\"><i class=\\\"fas fa-circle\\\"></i></span>This event has Passed</div><div class=\\\"article-title\\\"><div class=\\\"article-title-inner 6 red\\\"><a href=/events/skills/from-the-classroom-to-the-workplace-the-skills-that-make-the-difference/><b>From the Classroom to the Workplace: The Skills That Make the Difference</b></a></div></div><div class=\\\"item-list\\\"><ul><li><i class=\\\"far fa-dxh-format font-weight-200\\\"></i><span>English,Arabic</span></li><li><i class=\\\"far fa-calendar font-weight-200\\\"></i><span>21 Oct 2026</span></li><li><i class=\\\"far fa-clock font-weight-200\\\"></i><span>7:00 pm : 8:00 pm</span></li></ul></div></div><div class=\\\"bottom-links-wrapper pdtx2 align-items-center event-item-card-wrapper\\\"><div class=\\\"card-btn-state-login d-none btn-bar-wrapper alone pdafx2\\\"><a href=\\\"/events/skills/from-the-classroom-to-the-workplace-the-skills-that-make-the-difference/\\\" class=\\\"card-btn-state-login d-none btn small light-turquoise\\\">More Details\\n</a></div><div class=\\\"card-btn-state-logout d-none w-100 btn-bar-wrapper pdafx2 alone\\\"><a href=\\\"/events/skills/from-the-classroom-to-the-workplace-the-skills-that-make-the-difference/\\\" class=\\\"card-btn-state-logout d-none btn small w-100 light-turquoise\\\">More Details\\n</a></div><div class=\\\""
+        },
+        {
+          "method": "POST",
+          "status": 200,
+          "url": "https://client-rapi-us-west.recombee.com/misk-hub-prod/recomms/users/410af56ad58547bd9847d27a039cbd54/items/?frontend_timestamp=1792741129&frontend_sign=63eadc39a2804b8af964c550e83477c741bfa0e6",
+          "content_type": "application/json",
+          "resource_type": "xhr",
+          "request_post_data": "{\"count\":5,\"scenario\":\"Hero-Events-Listing-Anonymous\",\"returnProperties\":true,\"cascadeCreate\":true}",
+          "response_shape": "json-object:recommId,recomms,numberNextRecommsCalls",
+          "preview": "{\"recommId\": \"57da0ddbe726b85661b22484765b3095\", \"recomms\": [], \"numberNextRecommsCalls\": 0}"
+        },
+        {
+          "method": "POST",
+          "status": 200,
+          "url": "https://mpc-prod-24-s6uit34pua-uw.a.run.app/events?cee=no",
+          "content_type": "application/json",
+          "resource_type": "fetch",
+          "request_post_data": "{\"event_name\":\"PageView\",\"smart_setup\":{\"auto_web_details_data\":\"{\\\"entity_brand\\\":[{\\\"rid\\\":\\\"28393245976984225\\\",\\\"v\\\":[\\\"Misk\\\"]}],\\\"page_description\\\":[{\\\"rid\\\":\\\"2181235502473122\\\",\\\"v\\\":[\\\"Stay up to date with Misk's latest events! Register to attend and participate in upcoming conferences, webinars, forums, and more\\\"]}],\\\"page_title\\\":[{\\\"rid\\\":\\\"28808390965482997\\\",\\\"v\\\":[\\\"Misk Hub Events\\\"]}],\\\"event_name\\\":[{\\\"rid\\\":\\\"1456534239728302\\\",\\\"v\\\":[\\\"Share\\\",\\\"Skills\\\",\\\"Filter By\\\",\\\"العربية\\\",\\\"Misk Track\\\"]}],\\\"author\\\":[{\\\"rid\\\":\\\"1155363903829790\\\",\\\"v\\\":[\\\"Misk Tracks\\\"]},{\\\"rid\\\":\\\"2597421757442652\\\",\\\"v\\\":[\\\"Misk Skills\\\"]}],\\\"currencies_accepted\\\":[{\\\"rid\\\":\\\"1112384755238865\\\",\\\"v\\\":[\\\"Misk Tracks\\\"]},{\\\"rid\\\":\\\"1424583222492129\\\",\\\"v\\\":[\\\"Nonprofit Governance: From Compliance to Institutional Excellence\\\",\\\"From the Classroom to the Workplace: The Skills That Make the Difference\\\",\\\"Finance Fundamentals\\\",\\\"Navigating the Cyber Map: How to Choose Your Specialization & Build a Corporate Career\\\",\\\"How to Choose Your Career Path and Keep Up with Labor Market Changes\\\"]}],\\\"publisher\\\":[{\\\"rid\\\":\\\"1132402079526860\\\",\\\"v\\\":[\\\"Misk Skills\\\"]},{\\\"rid\\\":\\\"217773167617845",
+          "response_shape": "empty",
+          "preview": ""
+        }
+      ],
       "network_sample": [
         {
-          "method": "GET",
+          "method": "POST",
           "status": 200,
-          "url": "https://tuwaiq.edu.sa/api/GetInitiativePublishesShorten/12/1?category=ac41152d-f228-8af4-8406-e0cda6df6c35&type=NORMAL",
+          "url": "https://hub.misk.org.sa/api/events/RenderLazyLoadAllEventsOfSeries",
           "content_type": "application/json",
-          "resource_type": "document",
-          "request_post_data": "",
+          "resource_type": "xhr",
+          "request_post_data": "{\"SkipCount\":0,\"CurrentCulture\":\"en-US\",\"CategoryId\":0,\"OrderBy\":\"\",\"EventTypeFilters\":[],\"LanguageFilters\":[],\"StatusFilters\":[],\"FromDate\":null,\"ToDate\":null,\"LocationId\":null,\"CurrentPageId\":\"4411\"}",
           "response_shape": "json-like-invalid",
-          "preview": "{\"pagination\":{\"offset\":0,\"limit\":12,\"total\":166,\"totalPages\":14},\"data\":[{\"id\":\"4a500b0a-e34c-4145-9846-7e2c21e15c02\",\"academyTypeId\":null,\"academyType\":null,\"title\":\"معسكر الأنظمة الذاتية للدرونز\",\"startDate\":\"2026-11-01T18:00:00+03:00\",\"endDate\":\"2026-12-03T21:00:00+03:00\",\"autoCloseRegistration\":false,\"isOpen\":true,\"isRegistrationOpen\":true,\"isRegistrationClosed\":false,\"logo\":null,\"outerImage\":\"images/ikhp3gid.3cq.webp\",\"initiativeAgeName\":\"كبار\",\"initiativeCategoryName\":\"معسكر\",\"initiativeScopeImage\":\"images/psvxh1jc.vwh.png\",\"initiativeScopeName\":\"هندسة الميكاترونكس\",\"locationName\":\"الرياض - المقر الرئيسي\",\"slug\":\"8y1bN1m0\",\"registrationStartDate\":null,\"registrationEndDate\":\"2026-10-18T12:00:00+03:00\",\"requireProfileCompletion\":true,\"isMergePublish\":true,\"isPaid\":false,\"price\":null,\"includesEmployees\":false,\"vat\":null,\"priceWithoutVat\":null},{\"id\":\"325bb823-1aba-407e-abf3-1e5e46302423\",\"academyTypeId\":null,\"academyType\":null,\"title\":\"معسكر هندسة السحابة وتعلم الآلة على AWS\",\"startDate\":\"2026-11-08T18:00:00+03:00\",\"endDate\":\"2026-12-17T22:00:00+03:00\",\"autoCloseRegistration\":false,\"isOpen\":true,\"isRegistrationOpen\":true,\"isRegistrationClosed\":false,\"logo\":null,\"outerImage\":\"images/pxvlhluv.va3.jpg\",\"initiativeAgeName\":\"كبار\",\"initiativeCategoryName\":\"معسكر\",\"initiativeScopeImage\":\"images/pxhazeai.5tg.png\",\"initiativeScopeName\":\"علم البيانات والذكاء الاصطناعي\",\"locationName\":\"الرياض - المقر الرئيسي\",\"slug\":\"pLwEzjY5\",\"registrationStartDate\":null,\"registrationEndDate\":\"2026-10-18T12:00:00+03:00\",\"requireProfileCompletion\":true,\"isMergePublish\":true,\"isPaid\":false,\"price\":0.00,\"includesEmployees\":false,\"vat\":0.00,\"priceWithoutVat\":0.00},{\"id\":\"ae6173b4-027b-4a52-9b5e-afeb791a4338\",\"academyTypeId\":null,\"academyType\":null,\"title\":\"معسكر تطوير مواقع الويب باستخدام Java و"
+          "preview": "{\"nextSkippedValue\":8,\"stringObjectValues\":\"<div class=\\\"article-outer v3\\\"><div class=\\\" time-label\\\"><span>Hybrid</span></div><div class=\\\"article-img\\\"><a href=\\\"/events/skills/from-the-classroom-to-the-workplace-the-skills-that-make-the-difference/\\\"><img src=\\\"/media/jttn4hhr/from-classroom-to-workplace_hub-en.png\\\" alt=\\\"logo\\\"></a></div><div class=\\\"article-content\\\"><div class=\\\"article-text-wrapper\\\"><div class=\\\"body-text-3 mgbx1 color-peach font-weight-200\\\" style=\\\"white-space:nowrap;\\\"><span class=\\\"color-peach mgafx1\\\"><i class=\\\"fas fa-circle\\\"></i></span>This event has Passed</div><div class=\\\"article-title\\\"><div class=\\\"article-title-inner 6 red\\\"><a href=/events/skills/from-the-classroom-to-the-workplace-the-skills-that-make-the-difference/><b>From the Classroom to the Workplace: The Skills That Make the Difference</b></a></div></div><div class=\\\"item-list\\\"><ul><li><i class=\\\"far fa-dxh-format font-weight-200\\\"></i><span>English,Arabic</span></li><li><i class=\\\"far fa-calendar font-weight-200\\\"></i><span>21 Oct 2026</span></li><li><i class=\\\"far fa-clock font-weight-200\\\"></i><span>7:00 pm : 8:00 pm</span></li></ul></div></div><div class=\\\"bottom-links-wrapper pdtx2 align-items-center event-item-card-wrapper\\\"><div class=\\\"card-btn-state-login d-none btn-bar-wrapper alone pdafx2\\\"><a href=\\\"/events/skills/from-the-classroom-to-the-workplace-the-skills-that-make-the-difference/\\\" class=\\\"card-btn-state-login d-none btn small light-turquoise\\\">More Details\\n</a></div><div class=\\\"card-btn-state-logout d-none w-100 btn-bar-wrapper pdafx2 alone\\\"><a href=\\\"/events/skills/from-the-classroom-to-the-workplace-the-skills-that-make-the-difference/\\\" class=\\\"card-btn-state-logout d-none btn small w-100 light-turquoise\\\">More Details\\n</a></div><div class=\\\""
+        },
+        {
+          "method": "POST",
+          "status": 200,
+          "url": "https://client-rapi-us-west.recombee.com/misk-hub-prod/recomms/users/410af56ad58547bd9847d27a039cbd54/items/?frontend_timestamp=1792741129&frontend_sign=63eadc39a2804b8af964c550e83477c741bfa0e6",
+          "content_type": "application/json",
+          "resource_type": "xhr",
+          "request_post_data": "{\"count\":5,\"scenario\":\"Hero-Events-Listing-Anonymous\",\"returnProperties\":true,\"cascadeCreate\":true}",
+          "response_shape": "json-object:recommId,recomms,numberNextRecommsCalls",
+          "preview": "{\"recommId\": \"57da0ddbe726b85661b22484765b3095\", \"recomms\": [], \"numberNextRecommsCalls\": 0}"
+        },
+        {
+          "method": "POST",
+          "status": 200,
+          "url": "https://mpc-prod-24-s6uit34pua-uw.a.run.app/events?cee=no",
+          "content_type": "application/json",
+          "resource_type": "fetch",
+          "request_post_data": "{\"event_name\":\"PageView\",\"smart_setup\":{\"auto_web_details_data\":\"{\\\"entity_brand\\\":[{\\\"rid\\\":\\\"28393245976984225\\\",\\\"v\\\":[\\\"Misk\\\"]}],\\\"page_description\\\":[{\\\"rid\\\":\\\"2181235502473122\\\",\\\"v\\\":[\\\"Stay up to date with Misk's latest events! Register to attend and participate in upcoming conferences, webinars, forums, and more\\\"]}],\\\"page_title\\\":[{\\\"rid\\\":\\\"28808390965482997\\\",\\\"v\\\":[\\\"Misk Hub Events\\\"]}],\\\"event_name\\\":[{\\\"rid\\\":\\\"1456534239728302\\\",\\\"v\\\":[\\\"Share\\\",\\\"Skills\\\",\\\"Filter By\\\",\\\"العربية\\\",\\\"Misk Track\\\"]}],\\\"author\\\":[{\\\"rid\\\":\\\"1155363903829790\\\",\\\"v\\\":[\\\"Misk Tracks\\\"]},{\\\"rid\\\":\\\"2597421757442652\\\",\\\"v\\\":[\\\"Misk Skills\\\"]}],\\\"currencies_accepted\\\":[{\\\"rid\\\":\\\"1112384755238865\\\",\\\"v\\\":[\\\"Misk Tracks\\\"]},{\\\"rid\\\":\\\"1424583222492129\\\",\\\"v\\\":[\\\"Nonprofit Governance: From Compliance to Institutional Excellence\\\",\\\"From the Classroom to the Workplace: The Skills That Make the Difference\\\",\\\"Finance Fundamentals\\\",\\\"Navigating the Cyber Map: How to Choose Your Specialization & Build a Corporate Career\\\",\\\"How to Choose Your Career Path and Keep Up with Labor Market Changes\\\"]}],\\\"publisher\\\":[{\\\"rid\\\":\\\"1132402079526860\\\",\\\"v\\\":[\\\"Misk Skills\\\"]},{\\\"rid\\\":\\\"217773167617845",
+          "response_shape": "empty",
+          "preview": ""
+        },
+        {
+          "method": "POST",
+          "status": 200,
+          "url": "https://mpc-prod-24-s6uit34pua-uw.a.run.app/events?cee=no",
+          "content_type": "application/json",
+          "resource_type": "fetch",
+          "request_post_data": "{\"event_name\":\"PageView\",\"smart_setup\":{\"auto_web_details_data\":\"{\\\"entity_brand\\\":[{\\\"rid\\\":\\\"28393245976984225\\\",\\\"v\\\":[\\\"Misk\\\"]}],\\\"page_description\\\":[{\\\"rid\\\":\\\"2181235502473122\\\",\\\"v\\\":[\\\"Stay up to date with Misk's latest events! Register to attend and participate in upcoming conferences, webinars, forums, and more\\\"]}],\\\"page_title\\\":[{\\\"rid\\\":\\\"28808390965482997\\\",\\\"v\\\":[\\\"Misk Hub Events\\\"]}],\\\"event_name\\\":[{\\\"rid\\\":\\\"1456534239728302\\\",\\\"v\\\":[\\\"Share\\\",\\\"Skills\\\",\\\"Filter By\\\",\\\"العربية\\\",\\\"Misk Track\\\"]}],\\\"author\\\":[{\\\"rid\\\":\\\"1155363903829790\\\",\\\"v\\\":[\\\"Misk Tracks\\\"]},{\\\"rid\\\":\\\"2597421757442652\\\",\\\"v\\\":[\\\"Misk Skills\\\"]}],\\\"currencies_accepted\\\":[{\\\"rid\\\":\\\"1112384755238865\\\",\\\"v\\\":[\\\"Misk Tracks\\\"]},{\\\"rid\\\":\\\"1424583222492129\\\",\\\"v\\\":[\\\"Nonprofit Governance: From Compliance to Institutional Excellence\\\",\\\"From the Classroom to the Workplace: The Skills That Make the Difference\\\",\\\"Finance Fundamentals\\\",\\\"Navigating the Cyber Map: How to Choose Your Specialization & Build a Corporate Career\\\",\\\"How to Choose Your Career Path and Keep Up with Labor Market Changes\\\"]}],\\\"publisher\\\":[{\\\"rid\\\":\\\"1132402079526860\\\",\\\"v\\\":[\\\"Misk Skills\\\"]},{\\\"rid\\\":\\\"217773167617845",
+          "response_shape": "empty",
+          "preview": ""
         }
       ]
     },
@@ -224,6 +366,53 @@
       "network_sample": []
     },
     {
+      "id": "saudi-space-agency-events",
+      "probed_at": "2026-10-23T07:38:46.036Z",
+      "name": "Saudi Space Agency Events",
+      "priority": 32,
+      "url": "https://ssa.gov.sa/APIGW/en/api/EventsSearch/SearchEvents",
+      "final_url": "https://ssa.gov.sa/APIGW/en/api/EventsSearch/SearchEvents",
+      "status": "ok",
+      "http_status": 405,
+      "navigation_error": "",
+      "duration_ms": 6387,
+      "classification": "empty-or-shell",
+      "next_action": "اعتبرها shell وابحث عن API أو مسار بديل قبل أي collector.",
+      "title": "",
+      "text_bytes": 536,
+      "html_bytes": 687,
+      "html_snapshot": "data/raw/browser-probes/saudi-space-agency-events-2026-10-23T07-38-39-058Z.html",
+      "screenshot": "data/raw/browser-probes/saudi-space-agency-events-2026-10-23T07-38-39-058Z.png",
+      "signals": {
+        "has_next_data": false,
+        "has_nuxt": false,
+        "has_json_ld": false,
+        "has_event_schema": false,
+        "date_snippets": [],
+        "event_like_links": []
+      },
+      "script_signals": {
+        "next_data_scripts": 0,
+        "nuxt_scripts": 0,
+        "json_ld_scripts": 0,
+        "large_inline_scripts": 0
+      },
+      "network_total": 1,
+      "network_endpoints": [],
+      "network_sample": [
+        {
+          "method": "GET",
+          "status": 405,
+          "url": "https://ssa.gov.sa/APIGW/en/api/EventsSearch/SearchEvents",
+          "content_type": "text/plain",
+          "resource_type": "document",
+          "request_post_data": "",
+          "response_shape": "text",
+          "preview": "Status Code: 405; Method Not Allowed"
+        }
+      ]
+    },
+    {
       "id": "moc-cultural-subportals",
       "probed_at": "2026-10-22T08:09:20.129Z",
       "name": "Ministry of Culture Commission Calendars",
@@ -260,150 +449,23 @@
       "network_sample": []
     },
     {
-      "id": "asharqia-chamber-events",
-      "probed_at": "2026-10-22T08:09:33.834Z",
-      "name": "Asharqia Chamber Events",
-      "priority": 59,
-      "url": "https://www.chamber.org.sa/sites/Arabic/Events/ChamberEvents/Pages/AllChamberEvents.aspx",
-      "final_url": "https://www.chamber.org.sa/sites/Arabic/Events/ChamberEvents/Pages/AllChamberEvents.aspx",
+      "id": "riyadh-city-events",
+      "probed_at": "2026-10-23T07:39:02.832Z",
+      "name": "Riyadh City Events",
+      "priority": 51,
+      "url": "https://riyadh.sa/en/events/all",
+      "final_url": "https://riyadh.sa/en/events/all",
       "status": "ok",
-      "http_status": 404,
+      "http_status": 502,
       "navigation_error": "",
-      "duration_ms": 13669,
-      "classification": "browser-network-api",
-      "next_action": "ثبت endpoint مرشحًا كجامع مباشر، ثم اكتب extractor من JSON مع اختبار انحدار.",
-      "title": "Page not found | غرفة الشرقية",
-      "text_bytes": 805,
-      "html_bytes": 32158,
-      "html_snapshot": "data/raw/browser-probes/asharqia-chamber-events-2026-10-22T07-59-38-727Z.html",
-      "screenshot": "data/raw/browser-probes/asharqia-chamber-events-2026-10-22T07-59-38-727Z.png",
-      "signals": {
-        "has_next_data": false,
-        "has_nuxt": false,
-        "has_json_ld": false,
-        "has_event_schema": false,
-        "date_snippets": [],
-        "event_like_links": [
-          {
-            "text": "من نحن",
-            "href": "https://www.chamber.org.sa/sites/Arabic/Events/ChamberEvents/Pages/AllChamberEvents.aspx#"
-          },
-          {
-            "text": "خدمات الغرفة",
-            "href": "https://www.chamber.org.sa/sites/Arabic/Events/ChamberEvents/Pages/AllChamberEvents.aspx#"
-          },
-          {
-            "text": "المناسبات",
-            "href": "https://www.chamber.org.sa/events/"
-          },
-          {
-            "text": "المركز الاعلامى",
-            "href": "https://www.chamber.org.sa/sites/Arabic/Events/ChamberEvents/Pages/AllChamberEvents.aspx#"
-          },
-          {
-            "text": "تواصل معنا",
-            "href": "https://www.chamber.org.sa/sites/Arabic/Events/ChamberEvents/Pages/AllChamberEvents.aspx#"
-          },
-          {
-            "text": "الوفود",
-            "href": "https://www.chamber.org.sa/events/delegations/"
-          },
-          {
-            "text": "الفعاليات",
-            "href": "https://www.chamber.org.sa/events/chamber-events/"
-          }
-        ]
-      },
-      "script_signals": {
-        "next_data_scripts": 0,
-        "nuxt_scripts": 0,
-        "json_ld_scripts": 0,
-        "large_inline_scripts": 0
-      },
-      "network_total": 5,
-      "network_endpoints": [
-        {
-          "method": "GET",
-          "status": 200,
-          "url": "https://api-cdn.mypurecloud.ie/webdeployments/v1/deployments/bf04c4ac-89eb-4d7b-9061-14343d788e27/config.json",
-          "content_type": "application/json",
-          "resource_type": "xhr",
-          "request_post_data": "",
-          "response_shape": "json-object:id,version,headlessMode,languages,defaultLanguage,apiEndpoint,messenger,position",
-          "preview": "{\"id\":\"35941ef8-d3b4-4cac-b011-f0e5bf3d7569\",\"version\":\"4\",\"headlessMode\":{\"enabled\":false},\"languages\":[\"ar\"],\"defaultLanguage\":\"ar\",\"apiEndpoint\":\"https://api.mypurecloud.ie\",\"messenger\":{\"enabled\":true,\"apps\":{\"conversations\":{\"enabled\":true,\"messagingEndpoint\":\"wss://webmessaging.mypurecloud.ie\",\"showAgentTypingIndicator\":true,\"showUserTypingIndicator\":true,\"autoStart\":{\"enabled\":true},\"markdown\":{\"enabled\":true},\"conversationDisconnect\":{\"enabled\":false,\"type\":\"Send\"},\"conversationClear\":{\"enabled\":true},\"humanize\":{\"enabled\":false,\"bot\":{\"name\":\"\",\"avatarUrl\":\"\"}}}},\"styles\":{\"primaryColor\":\"#015599\"},\"launcherButton\":{\"visibility\":\"On\"},\"fileUpload\":{\"enableAttachments\":true,\"modes\":[{\"fileTypes\":[\"image/jpeg\",\"image/gif\",\"image/png\"],\"maxFileSizeKB\":10240}]},\"homeScreen\":{\"enabled\":false,\"logoUrl\":\"\"}},\"position\":{\"alignment\":\"Auto\",\"sideSpace\":20,\"bottomSpace\":12},\"customI18NLabels\":[],\"journeyEvents\":{\"enabled\":false},\"status\":\"Active\",\"cobrowse\":{\"enabled\":false,\"allowAgentControl\":true,\"allowAgentNavigation\":true,\"maskSelectors\":[],\"readonlySelectors\":[],\"channels\":[]},\"auth\":{\"enabled\":false,\"allowSessionUpgrade\":false}}"
-        }
-      ],
-      "network_sample": [
-        {
-          "method": "GET",
-          "status": 200,
-          "url": "https://api-cdn.mypurecloud.ie/webdeployments/v1/deployments/bf04c4ac-89eb-4d7b-9061-14343d788e27/domains.json",
-          "content_type": "application/json",
-          "resource_type": "xhr",
-          "request_post_data": "",
-          "response_shape": "json-object:allowAllDomains,allowedDomains",
-          "preview": "{\"allowAllDomains\":true,\"allowedDomains\":[]}"
-        },
-        {
-          "method": "GET",
-          "status": 200,
-          "url": "https://api-cdn.mypurecloud.ie/webdeployments/v1/deployments/bf04c4ac-89eb-4d7b-9061-14343d788e27/config.json",
-          "content_type": "application/json",
-          "resource_type": "xhr",
-          "request_post_data": "",
-          "response_shape": "json-object:id,version,headlessMode,languages,defaultLanguage,apiEndpoint,messenger,position",
-          "preview": "{\"id\":\"35941ef8-d3b4-4cac-b011-f0e5bf3d7569\",\"version\":\"4\",\"headlessMode\":{\"enabled\":false},\"languages\":[\"ar\"],\"defaultLanguage\":\"ar\",\"apiEndpoint\":\"https://api.mypurecloud.ie\",\"messenger\":{\"enabled\":true,\"apps\":{\"conversations\":{\"enabled\":true,\"messagingEndpoint\":\"wss://webmessaging.mypurecloud.ie\",\"showAgentTypingIndicator\":true,\"showUserTypingIndicator\":true,\"autoStart\":{\"enabled\":true},\"markdown\":{\"enabled\":true},\"conversationDisconnect\":{\"enabled\":false,\"type\":\"Send\"},\"conversationClear\":{\"enabled\":true},\"humanize\":{\"enabled\":false,\"bot\":{\"name\":\"\",\"avatarUrl\":\"\"}}}},\"styles\":{\"primaryColor\":\"#015599\"},\"launcherButton\":{\"visibility\":\"On\"},\"fileUpload\":{\"enableAttachments\":true,\"modes\":[{\"fileTypes\":[\"image/jpeg\",\"image/gif\",\"image/png\"],\"maxFileSizeKB\":10240}]},\"homeScreen\":{\"enabled\":false,\"logoUrl\":\"\"}},\"position\":{\"alignment\":\"Auto\",\"sideSpace\":20,\"bottomSpace\":12},\"customI18NLabels\":[],\"journeyEvents\":{\"enabled\":false},\"status\":\"Active\",\"cobrowse\":{\"enabled\":false,\"allowAgentControl\":true,\"allowAgentNavigation\":true,\"maskSelectors\":[],\"readonlySelectors\":[],\"channels\":[]},\"auth\":{\"enabled\":false,\"allowSessionUpgrade\":false}}"
-        },
-        {
-          "method": "POST",
-          "status": 200,
-          "url": "https://bam.eu01.nr-data.net/1/NRJS-63ad9662344bba3672e?a=538748657&sa=1&v=1.318.0&t=Unnamed%20Transaction&rst=423&ck=0&s=0&ref=https://apps.mypurecloud.ie/messenger/thirdparty-plugins.html&ptid=139b1567b7273913&af=err,spa,xhr,stn,ins&be=20&fe=212&dc=6&perf=%7B%22timing%22:%7B%22of%22:1792656562188,%22n%22:0,%22f%22:1,%22dn%22:1,%22dne%22:1,%22c%22:1,%22s%22:1,%22ce%22:1,%22rq%22:1,%22rp%22:20,%22rpe%22:21,%22di%22:27,%22ds%22:27,%22de%22:27,%22dc%22:231,%22l%22:231,%22le%22:233%7D,%22navigation%22:%7B%7D%7D",
-          "content_type": "application/json",
-          "resource_type": "xhr",
-          "request_post_data": "{\"ja\":{\"nrAgentProvider\":\"index-cannula-cli\",\"webdriverDetected\":true}}",
-          "response_shape": "json-object:stn,err,ins,spa,sr,srs,st,sts",
-          "preview": "{\"stn\":1,\"err\":1,\"ins\":1,\"spa\":1,\"sr\":0,\"srs\":0,\"st\":1,\"sts\":0,\"log\":2,\"logapi\":2,\"app\":{\"agents\":[{\"entityGuid\":\"NDYyMzExNHxCUk9XU0VSfEFQUExJQ0FUSU9OfDUzODc0ODY1Nw\"}],\"nrServerTime\":1792656563005}}"
-        },
-        {
-          "method": "GET",
-          "status": 200,
-          "url": "https://apps.mypurecloud.ie/messenger/i18n/ar.json",
-          "content_type": "application/json",
-          "resource_type": "xhr",
-          "request_post_data": "",
-          "response_shape": "json-like-invalid",
-          "preview": "{ \"language\": \"ar\", \"home\": { \"headerTitle\": \"مرحبًا\", \"headerSubTitle\": \"نحن هنا للمساعدة\", \"ariaHomeScreenOpenStatus\": \"تم فتح الشاشة الرئيسية\", \"ariaExpandMenu\": \"توسيع القائمة\" }, \"conversations\": { \"headerTitle\": \"راسلنا\", \"headerConversationTitle\": \"محادثة\", \"inputMessagePlaceholder\": \"أرسل رسالة...\", \"typeMessagePlaceholder\": \"اكتب رسالتك هنا\", \"inputMessageTitle\": \"حقل إدخال الرسالة\", \"startConversationMessage\": \"هذه بداية حديثك معنا. يرجى إرسال رسالة للبدء.\", \"autoStartConversationMessage\": \"هذه هي بداية محادثتك معنا.\", \"sessionExpirationWarningMessage\": \"يرجى العلم أن الجلسة ستنتهي بعد <%sessionMinutes%> دقيقة من عدم النشاط.\", \"notSignedInMessage\": \"أنت تعمل غير محدد الهوية.\", \"signedInMessage\": \"تم تسجيل دخولك.\", \"signedInMessageWithName\": \"تم تسجيل دخولك باسم <%username%>\", \"signedOutMessage\": \"لقد تم تسجيل خروجك من هذه الجلسة.\", \"agentDefaultName\": \"وكيل\", \"botDefaultName\": \"الروبوت\", \"customerDefaultName\": \"أنت\", \"cancelButton\": \"إلغاء الأمر\", \"closeButton\": \"إغلاق\", \"startConversationButtonTitle\": \"راسلنا\", \"continueConversationButtonTitle\": \"متابعة\", \"openConversationButtonTitle\": \"فتح\", \"startNewConversation\": \"بدء من جديد\", \"startConversationCardTitle\": \"بدء محادثة\", \"continueConversationCardTitle\": \"تابع المحادثة\", \"yourConversationCardTitle\": \"محادثتك\", \"yesButton\": \"نعم\", \"noButton\": \"لا\", \"okButton\": \"حسنًا\", \"sureButton\": \"نعم، أنا متأكد\", \"downloadButton\": \"تنزيل\", \"openInNewTabButton\": \"فتح في علامة تبويب جديدة\", \"signInButton\": \"تسجيل الدخول\", \"clearButton\": \"مسح\", \"previewFile\": \"انقر لمعاينة الملف\", \"pdfPreviewTitle\": \"معاينة PDF الخاص بـ Messenger\", \"textFilePreviewTitle\": \"معاينة"
-        },
-        {
-          "method": "GET",
-          "status": 200,
-          "url": "https://apps.mypurecloud.ie/messenger/i18n/ar.json",
-          "content_type": "application/json",
-          "resource_type": "xhr",
-          "request_post_data": "",
-          "response_shape": "json-like-invalid",
-          "preview": "{ \"language\": \"ar\", \"home\": { \"headerTitle\": \"مرحبًا\", \"headerSubTitle\": \"نحن هنا للمساعدة\", \"ariaHomeScreenOpenStatus\": \"تم فتح الشاشة الرئيسية\", \"ariaExpandMenu\": \"توسيع القائمة\" }, \"conversations\": { \"headerTitle\": \"راسلنا\", \"headerConversationTitle\": \"محادثة\", \"inputMessagePlaceholder\": \"أرسل رسالة...\", \"typeMessagePlaceholder\": \"اكتب رسالتك هنا\", \"inputMessageTitle\": \"حقل إدخال الرسالة\", \"startConversationMessage\": \"هذه بداية حديثك معنا. يرجى إرسال رسالة للبدء.\", \"autoStartConversationMessage\": \"هذه هي بداية محادثتك معنا.\", \"sessionExpirationWarningMessage\": \"يرجى العلم أن الجلسة ستنتهي بعد <%sessionMinutes%> دقيقة من عدم النشاط.\", \"notSignedInMessage\": \"أنت تعمل غير محدد الهوية.\", \"signedInMessage\": \"تم تسجيل دخولك.\", \"signedInMessageWithName\": \"تم تسجيل دخولك باسم <%username%>\", \"signedOutMessage\": \"لقد تم تسجيل خروجك من هذه الجلسة.\", \"agentDefaultName\": \"وكيل\", \"botDefaultName\": \"الروبوت\", \"customerDefaultName\": \"أنت\", \"cancelButton\": \"إلغاء الأمر\", \"closeButton\": \"إغلاق\", \"startConversationButtonTitle\": \"راسلنا\", \"continueConversationButtonTitle\": \"متابعة\", \"openConversationButtonTitle\": \"فتح\", \"startNewConversation\": \"بدء من جديد\", \"startConversationCardTitle\": \"بدء محادثة\", \"continueConversationCardTitle\": \"تابع المحادثة\", \"yourConversationCardTitle\": \"محادثتك\", \"yesButton\": \"نعم\", \"noButton\": \"لا\", \"okButton\": \"حسنًا\", \"sureButton\": \"نعم، أنا متأكد\", \"downloadButton\": \"تنزيل\", \"openInNewTabButton\": \"فتح في علامة تبويب جديدة\", \"signInButton\": \"تسجيل الدخول\", \"clearButton\": \"مسح\", \"previewFile\": \"انقر لمعاينة الملف\", \"pdfPreviewTitle\": \"معاينة PDF الخاص بـ Messenger\", \"textFilePreviewTitle\": \"معاينة"
-        }
-      ]
-    },
-    {
-      "id": "qassim-chamber-events",
-      "probed_at": "2026-10-22T08:09:45.592Z",
-      "name": "Qassim Chamber Events",
-      "priority": 60,
-      "url": "https://tc.qcc.org.sa/",
-      "final_url": "https://tc.qcc.org.sa/",
-      "status": "ok",
-      "http_status": 403,
-      "navigation_error": "",
-      "duration_ms": 11718,
-      "classification": "blocked-or-protected",
-      "next_action": "لا تلتف على الحماية؛ صنف المصدر partnership/API أو ابحث عن مسار رسمي.",
-      "title": "لحظة…",
-      "text_bytes": 371,
-      "html_bytes": 28790,
-      "html_snapshot": "data/raw/browser-probes/qassim-chamber-events-2026-10-22T07-59-38-727Z.html",
-      "screenshot": "data/raw/browser-probes/qassim-chamber-events-2026-10-22T07-59-38-727Z.png",
+      "duration_ms": 6143,
+      "classification": "empty-or-shell",
+      "next_action": "اعتبرها shell وابحث عن API أو مسار بديل قبل أي collector.",
+      "title": "502 Bad Gateway",
+      "text_bytes": 15,
+      "html_bytes": 143,
+      "html_snapshot": "data/raw/browser-probes/riyadh-city-events-2026-10-23T07-38-39-058Z.html",
+      "screenshot": "data/raw/browser-probes/riyadh-city-events-2026-10-23T07-38-39-058Z.png",
       "signals": {
         "has_next_data": false,
         "has_nuxt": false,
