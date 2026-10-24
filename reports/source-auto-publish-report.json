@@ -1,18 +1,18 @@
 {
-  "published_at": "2026-10-23T07:47:37.513Z",
+  "published_at": "2026-10-24T07:44:50.773Z",
   "dry_run": false,
   "include_partner": true,
   "source_candidates": "data/source_candidates.json",
   "events_catalog": "data/events_catalog.json",
-  "candidates_seen": 388,
+  "candidates_seen": 383,
   "totals": {
-    "candidates_seen": 388,
-    "published": 2,
-    "linked_existing": 356,
-    "blocked": 30,
+    "candidates_seen": 383,
+    "published": 1,
+    "linked_existing": 353,
+    "blocked": 29,
     "duplicate_review_alerts": 4,
     "category_fallback_alerts": 0,
-    "reconciled": 358,
+    "reconciled": 354,
     "session_windows_reconciled": 0
   },
   "session_window_changes": [],
@@ -92,14 +92,9 @@
   ],
   "published": [
     {
-      "candidate_id": "candidate-qassim-university-events-توظيف-الذكاء-الاصطناعي-في-الكشف-المبكر-عن-سرطان-الثدي-20261026-81c7a435",
-      "event_id": "event-توظيف-الذكاء-الاصطناعي-في-الكشف-المبكر-عن-سرطان-الثدي",
-      "title": "توظيف الذكاء الاصطناعي في الكشف المبكر عن سرطان الثدي"
-    },
-    {
-      "candidate_id": "candidate-ithra-events-there-is-magic-in-eloquence-20261029-7faebff7",
-      "event_id": "event-there-is-magic-in-eloquence",
-      "title": "There Is Magic in Eloquence"
+      "candidate_id": "candidate-umm-al-qura-events-معسكر-المهارات-النفسية-فك-الشفرة-فهم-الصوت-الداخلي-وإدارة-الحوار-الذاتي-20261025-7c2266a4",
+      "event_id": "event-معسكر-المهارات-النفسية-فك-الشفرة-فهم-الصوت-الداخلي-وإدارة-الحوار-الذاتي",
+      "title": "معسكر المهارات النفسية (فك الشفرة: فهم الصوت الداخلي وإدارة الحوار الذاتي)"
     }
   ],
   "linked_existing": [
@@ -722,39 +717,9 @@
       "reason": "already linked to catalog event"
     },
     {
-      "candidate_id": "candidate-visit-saudi-calendar-pdf-حفل-فضل-شاكر-20261022-4a38d19e",
-      "event_id": "event-حفل-فضل-شاكر",
-      "title": "حفل فضل شاكر",
-      "reason": "already linked to catalog event"
-    },
-    {
-      "candidate_id": "candidate-visit-saudi-calendar-pdf-فينا-نحكي؟-كوميديا-ستاند-أب-مع-جون-أشقر-20261023-4a38d19e",
-      "event_id": "event-فينا-نحكي؟-كوميديا-ستاند-أب-مع-جون-أشقر",
-      "title": "”فينا نحكي؟“ كوميديا ستاند أب مع جون أشقر",
-      "reason": "already linked to catalog event"
-    },
-    {
-      "candidate_id": "candidate-visit-saudi-calendar-pdf-لحد-يدري-عرض-ستاند-اب-كوميدي-من-أسامة-بازيد-20261023-4a38d19e",
-      "event_id": "event-لحد-يدري-عرض-ستاند-اب-كوميدي-من-أسامة-بازيد-2",
-      "title": "لحد يدري: عرض ستاند اب كوميدي من أسامة بازيد",
-      "reason": "already linked to catalog event"
-    },
-    {
-      "candidate_id": "candidate-visit-saudi-calendar-pdf-عبد-في-صبيح-عرض-ستاند-أب-كوميدي-20261023-4a38d19e",
-      "event_id": "event-عبد-في-صبيح-عرض-ستاند-أب-كوميدي-2",
-      "title": "عبد في صبيح - عرض ستاند أب كوميدي",
-      "reason": "already linked to catalog event"
-    },
-    {
       "candidate_id": "candidate-experience-alula-events-alula-wellness-festival-20261023-5b74606a",
       "event_id": "event-alula-wellness-festival",
       "title": "AlUla Wellness Festival",
-      "reason": "already linked to catalog event"
-    },
-    {
-      "candidate_id": "candidate-visit-saudi-seasons-fadel-chaker-concert-second-nights-20261023-2167bd91",
-      "event_id": "event-fadel-chaker-concert-second-nights",
-      "title": "Fadel Chaker Concert Second Nights",
       "reason": "already linked to catalog event"
     },
     {
@@ -947,6 +912,12 @@
       "candidate_id": "candidate-ithra-events-trolley-show-20261026-56b483e3",
       "event_id": "event-trolley-show",
       "title": "Trolley Show",
+      "reason": "already linked to catalog event"
+    },
+    {
+      "candidate_id": "candidate-qassim-university-events-توظيف-الذكاء-الاصطناعي-في-الكشف-المبكر-عن-سرطان-الثدي-20261026-81c7a435",
+      "event_id": "event-توظيف-الذكاء-الاصطناعي-في-الكشف-المبكر-عن-سرطان-الثدي",
+      "title": "توظيف الذكاء الاصطناعي في الكشف المبكر عن سرطان الثدي",
       "reason": "already linked to catalog event"
     },
     {
@@ -1151,6 +1122,12 @@
       "candidate_id": "candidate-ithra-events-museum-story-time-20261029-1104734c",
       "event_id": "event-museum-story-time",
       "title": "Museum Story Time",
+      "reason": "already linked to catalog event"
+    },
+    {
+      "candidate_id": "candidate-ithra-events-there-is-magic-in-eloquence-20261029-7faebff7",
+      "event_id": "event-there-is-magic-in-eloquence",
+      "title": "There Is Magic in Eloquence",
       "reason": "already linked to catalog event"
     },
     {
@@ -2219,7 +2196,7 @@
       "candidate_id": "candidate-informa-connect-saudi-events-saudi-event-show-20270623-9bbda4e2",
       "event_id": "event-saudi-event-show",
       "title": "Saudi Event Show",
-      "reason": "trusted duplicate linked to existing catalog event"
+      "reason": "already linked to catalog event"
     },
     {
       "candidate_id": "candidate-qassim-university-events-استضافة-مؤتمر-ieee-mecom-2027-20271101-510cb4b1",
@@ -2254,11 +2231,6 @@
       "reason": "possible duplicate requires review: exact-title-city-venue-conflict",
       "kind": "exact-title-city-venue-conflict",
       "possible_event_id": "event-معرض-في-تتبّع-ذكريات-غامرة"
-    },
-    {
-      "candidate_id": "candidate-visit-saudi-calendar-feena-nehke-stand-up-comedy-by-john-achkar-20261023-221bd8f2",
-      "title": "FEENA NEHKE? Stand Up Comedy by John Achkar",
-      "reason": "linked catalog row event-feena-nehke-stand-up-comedy-by-john-achkar was superseded by dedupe"
     },
     {
       "candidate_id": "candidate-saudicon-events-annual-international-geotechnical-innovation-conference-igic-2026-20261109-8ea8aaa9",

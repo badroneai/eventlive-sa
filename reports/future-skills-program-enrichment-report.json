@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-23T07:47:45.365Z",
+  "generated_at": "2026-10-24T07:44:58.465Z",
   "catalog": "data/events_catalog.json",
   "totals": {
     "targets": 29,
@@ -102,7 +102,7 @@
       "id": "event-sql-fundamentals",
       "title": "SQL Fundamentals",
       "group_id": "13052",
-      "reason": "fetch failed"
+      "reason": "HTTP 404"
     },
     {
       "id": "event-comptia-it-fundamentals",
