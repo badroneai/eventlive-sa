@@ -1,17 +1,15 @@
 # EventLive Visit Saudi Image Identity Report
 
-- generated_at: 2026-10-24T07:44:55.230Z
-- pdf_crop_assignments: 35
-- verified: 31
-- struck: 4
-- slots_seen_this_cycle: 36
+- generated_at: 2026-10-25T08:06:02.982Z
+- pdf_crop_assignments: 31
+- verified: 29
+- struck: 2
+- slots_seen_this_cycle: 34
 
 ## Struck (fell back to generated cover)
 
-- حفل فضل شاكر (visit-saudi-summer-2026-p007-bottom-right.jpg) - slot-vacated - no dated card currently occupies page 7 bottom-right of https://www.visitsaudi.com/content/dam/documents/saudi-calendar-ar.pdf
-- ”فينا نحكي؟“ كوميديا ستاند أب مع جون أشقر (visit-saudi-summer-2026-p047-top-right.jpg) - slot-vacated - no dated card currently occupies page 47 top-right of https://www.visitsaudi.com/content/dam/documents/saudi-calendar-ar.pdf
-- لحد يدري: عرض ستاند اب كوميدي من أسامة بازيد (visit-saudi-summer-2026-p037-bottom-left.jpg) - slot-vacated - no dated card currently occupies page 37 bottom-left of https://www.visitsaudi.com/content/dam/documents/saudi-calendar-ar.pdf
-- عبد في صبيح - عرض ستاند أب كوميدي (visit-saudi-summer-2026-p047-top-left.jpg) - slot-vacated - no dated card currently occupies page 47 top-left of https://www.visitsaudi.com/content/dam/documents/saudi-calendar-ar.pdf
+- Six Kings Slam (visit-saudi-summer-2026-p007-top-right.jpg) - slot-vacated - no dated card currently occupies page 7 top-right of https://www.visitsaudi.com/content/dam/documents/saudi-calendar-ar.pdf
+- أكمل الفراغ التالي (visit-saudi-summer-2026-p047-bottom-right.jpg) - slot-vacated - no dated card currently occupies page 47 bottom-right of https://www.visitsaudi.com/content/dam/documents/saudi-calendar-ar.pdf
 
 ## Verified
 
@@ -26,8 +24,6 @@
 - الاخطبوطية كيدز (visit-saudi-summer-2026-p005-bottom-left.jpg)
 - ربع تون (visit-saudi-summer-2026-p006-top-right.jpg)
 - نهائيات FIFAe 26 (visit-saudi-summer-2026-p045-bottom-left.jpg)
-- Six Kings Slam (visit-saudi-summer-2026-p007-top-right.jpg)
-- أكمل الفراغ التالي (visit-saudi-summer-2026-p047-bottom-right.jpg)
 - ألف وواحد (visit-saudi-summer-2026-p063-bottom-left.jpg)
 - حفل ماريلين نعمان الموسيقي (visit-saudi-summer-2026-p008-top-right.jpg)
 - شتاء اثراء (visit-saudi-summer-2026-p026-bottom-right.jpg)

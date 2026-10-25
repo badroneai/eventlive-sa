@@ -1,11 +1,11 @@
 # EventLive Source Auto Publish Report
 
-- published_at: 2026-10-24T07:44:50.773Z
+- published_at: 2026-10-25T08:06:00.242Z
 - dry_run: false
 - include_partner: true
-- candidates_seen: 383
-- published_new: 1
-- linked_existing: 353
+- candidates_seen: 385
+- published_new: 6
+- linked_existing: 350
 - blocked_remaining: 29
 - duplicate_review_alerts: 4
 
@@ -19,7 +19,12 @@
 
 | Candidate | Status | Catalog event | Reason |
 |---|---|---|---|
-| candidate-umm-al-qura-events-معسكر-المهارات-النفسية-فك-الشفرة-فهم-الصوت-الداخلي-وإدارة-الحوار-الذاتي-20261025-7c2266a4 | published | event-معسكر-المهارات-النفسية-فك-الشفرة-فهم-الصوت-الداخلي-وإدارة-الحوار-الذاتي | معسكر المهارات النفسية (فك الشفرة: فهم الصوت الداخلي وإدارة الحوار الذاتي) |
+| candidate-umm-al-qura-events-ورشة-عمل-بعنوان-مهارة-زراعة-البيئة-البكتيرية-20261025-754e913b | published | event-ورشة-عمل-بعنوان-مهارة-زراعة-البيئة-البكتيرية | ورشة عمل بعنوان مهارة زراعة البيئة البكتيرية |
+| candidate-umm-al-qura-events-ورشة-عمل-بعنوان-ريشة-فنان-20261025-e991b372 | published | event-ورشة-عمل-بعنوان-ريشة-فنان | ورشة عمل بعنوان ريشة فنان |
+| candidate-umm-al-qura-events-ورشة-عمل-بعنوان-أثر-قلم-20261025-981a0275 | published | event-ورشة-عمل-بعنوان-أثر-قلم | ورشة عمل بعنوان أثر قلم |
+| candidate-umm-al-qura-events-لقاء-للإجابة-عن-الاستفسارات-20261025-356a27db | published | event-لقاء-للإجابة-عن-الاستفسارات | لقاء للإجابة عن الاستفسارات |
+| candidate-umm-al-qura-events-التعريف-بتقييم-الأداء-ومنظومة-تقييم-الأداء-للمقيمين-20261026-6ffe09a6 | published | event-التعريف-بتقييم-الأداء-ومنظومة-تقييم-الأداء-للمقيمين | التعريف بتقييم الأداء ومنظومة تقييم الأداء للمقيمين |
+| candidate-umm-al-qura-events-التعريف-بمنظومة-تقييم-الأداء-للمقيمين-20261028-919c2649 | published | event-التعريف-بمنظومة-تقييم-الأداء-للمقيمين | التعريف بمنظومة تقييم الأداء للمقيمين |
 | candidate-moc-cultural-subportals-skill-development-initiative-20210714-10f7dc2c | linked-existing | event-skill-development-initiative | already linked to catalog event |
 | candidate-moc-cultural-subportals-sitar-20220921-cda2e068 | linked-existing | event-sitar | already linked to catalog event |
 | candidate-moc-cultural-subportals-urban-transformation-initiative-20241031-7a933cab | linked-existing | event-urban-transformation-initiative | already linked to catalog event |
@@ -119,17 +124,14 @@
 | candidate-visit-saudi-calendar-stand-up-comedy-shows-this-weekend-from-exit-thmanyah-20261015-e79bb314 | linked-existing | event-stand-up-comedy-shows-this-weekend-from-exit-thmanyah | already linked to catalog event |
 | candidate-visit-saudi-calendar-pdf-نهائيات-fifae-26-20261016-4a38d19e | linked-existing | event-نهائيات-fifae-26 | already linked to catalog event |
 | candidate-visit-saudi-seasons-riyadh-racing-season-20261016-7ddb5364 | linked-existing | event-riyadh-racing-season | already linked to catalog event |
-| candidate-umm-al-qura-events-ورشة-عمل-بعنوان-تنسيق-الزهور-الصناعية-20261019-49db524a | linked-existing | event-ورشة-عمل-بعنوان-تنسيق-الزهور-الصناعية | already linked to catalog event |
 | candidate-umm-al-qura-events-مشاركة-أعضاء-هيئة-التدريس-ورشة-عمل-بعنوان-تنقيح-المشاريع-البحثية-والابتك-20261019-5913dd70 | linked-existing | event-مشاركة-أعضاء-هيئة-التدريس-ورشة-عمل-بعنوان-تنقيح-المشاريع-البحثية-والابتك | already linked to catalog event |
-| candidate-visit-saudi-calendar-pdf-six-kings-slam-20261021-4a38d19e | linked-existing | event-six-kings-slam | already linked to catalog event |
-| candidate-ithra-events-immersive-introduction-to-arabic-writing-and-type-design-20261021-3708788d | linked-existing | event-immersive-introduction-to-arabic-writing-and-type-design | already linked to catalog event |
 | candidate-experience-alula-events-alula-wellness-festival-20261023-5b74606a | linked-existing | event-alula-wellness-festival | already linked to catalog event |
-| candidate-visit-saudi-calendar-pdf-أكمل-الفراغ-التالي-20261024-4a38d19e | linked-existing | event-أكمل-الفراغ-التالي | already linked to catalog event |
 | candidate-hayy-jameel-events-hayy-makers-introduction-to-pottery-course-with-pharah-al-ghalib-20261024-3f18bab0 | linked-existing | event-hayy-makers-2 | already linked to catalog event |
 | candidate-saudi-university-events-annual-kaust-basketball-league-2026-20261025-9ec9be73 | linked-existing | event-annual-kaust-basketball-league-2026 | already linked to catalog event |
 | candidate-eye-of-riyadh-events-global-proptech-summit-2026-20261025-7c1d3001 | linked-existing | event-global-proptech-summit-2026 | already linked to catalog event |
 | candidate-riyadh-city-events-global-proptech-summit-20261025-5ffbf6fe | linked-existing | event-global-proptech-summit | already linked to catalog event |
 | candidate-hayy-jameel-events-hayy-makers-woodworking-course-level-2-with-ahmad-sofi-20261025-11baa66b | linked-existing | event-hayy-makers | already linked to catalog event |
+| candidate-umm-al-qura-events-معسكر-المهارات-النفسية-فك-الشفرة-فهم-الصوت-الداخلي-وإدارة-الحوار-الذاتي-20261025-7c2266a4 | linked-existing | event-معسكر-المهارات-النفسية-فك-الشفرة-فهم-الصوت-الداخلي-وإدارة-الحوار-الذاتي | already linked to catalog event |
 | candidate-saudi-university-events-saudi-hpc-ai-conference-2026-20261026-b9dc4213 | linked-existing | event-saudi-hpc-ai-conference-2026 | already linked to catalog event |
 | candidate-rfecc-whats-on-natrual-expo-20261026-a7983dd2 | linked-existing | event-natrual-expo | already linked to catalog event |
 | candidate-riyadh-city-events-future-investment-initiative-20261026-888e8328 | linked-existing | event-future-investment-initiative | already linked to catalog event |
@@ -400,5 +402,5 @@
 | candidate-saudicon-events-الجولة-الافتتاحية-المزدوجة-لموسم-فورمولا-إي-2026-2027-20261218-cbc61137 | blocked | - | publication gate source-evidence is not auto-publishable |
 | candidate-saudicon-events-2026-2027-formula-e-season-opening-double-header-20261218-0c173164 | blocked | - | publication gate source-evidence is not auto-publishable |
 | candidate-saudicon-events-2026-2026-2027-2026-2027-formula-e-season-opening-double-header-20261218-725e97a3 | blocked | - | publication gate source-evidence is not auto-publishable |
-| candidate-saudicon-events-athlete-360-summit-2027-20270110-986bbcd3 | blocked | - | publication gate source-evidence is not auto-publishable |
+| candidate-saudicon-events-قمة-أثليت-360-للأداء-الرياضي-والصحة-2027-20270110-6e57ae85 | blocked | - | publication gate source-evidence is not auto-publishable |
 | candidate-eye-of-riyadh-events-real-estate-excellence-award-2026-rea-2026-20270126-5e55ea49 | blocked | - | unknown category requires review |

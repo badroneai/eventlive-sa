@@ -1,19 +1,19 @@
 {
   "schema": "eventlive.i18n-en-surface.v1",
-  "generated_at": "2026-10-24T08:01:40.126Z",
-  "pages_scanned": 2006,
-  "pages_with_arabic": 419,
+  "generated_at": "2026-10-25T08:19:06.400Z",
+  "pages_scanned": 2012,
+  "pages_with_arabic": 423,
   "template_regressions": [],
   "script_template_regressions": [],
   "style_template_regressions": [],
   "recurring_surface_debt": [
     {
       "text": "../assets/event-images/الشهادة-الدولية-للحاسب-والإنترنت-ic3-a46ba6d2eb.jpg",
-      "pages": 50,
+      "pages": 55,
       "example": "events/event-استراتيجيات-التعامل-مع-قلق-الاختبارات.html",
       "script": true
     }
   ],
   "recurring_total": 1,
-  "content_prose_lines": 2145
+  "content_prose_lines": 2168
 }

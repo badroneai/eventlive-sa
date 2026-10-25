@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-24T07:52:44.676Z",
+  "generated_at": "2026-10-25T08:12:34.628Z",
   "events_file": "dist/events.json",
   "manifest": "data/event_image_cache_manifest.json",
   "image_dir": "dist/assets/event-images",
@@ -247,7 +247,7 @@
     {
       "source_url": "https://uqu.edu.sa/assets/images/uqu-gate.jpeg",
       "file": "dist/assets/event-images/الشهادة-الدولية-للحاسب-والإنترنت-ic3-a46ba6d2eb.jpg",
-      "events": 156
+      "events": 162
     },
     {
       "source_url": "https://www.ithra.com/application/files/cache/thumbnails/6519ce3982b405e399c3a7313853a2bf.jpg",
@@ -522,11 +522,6 @@
     {
       "source_url": "https://www.ithra.com/application/files/cache/thumbnails/e62a5dbedd618e4c73eba84cf1f7d03b.png",
       "file": "dist/assets/event-images/الجسور-إلى-اللغة-الإسبانية-daf5c5cc26.png",
-      "events": 1
-    },
-    {
-      "source_url": "https://www.ithra.com/application/files/cache/thumbnails/fd743dc190d99ded6708dfc96b3a1d68.jpg",
-      "file": "dist/assets/event-images/immersive-introduction-to-arabic-writing-and-type-design-1c7ab6de8f.jpg",
       "events": 1
     },
     {
@@ -1027,6 +1022,11 @@
     {
       "source_url": "https://www.ithra.com/application/files/cache/thumbnails/9520c7ac094aada70a66eda3fdf5f7a6.jpg",
       "file": "dist/assets/event-images/theatrical-readings-6a73f7612c.jpg",
+      "events": 1
+    },
+    {
+      "source_url": "https://www.ithra.com/application/files/cache/thumbnails/fd743dc190d99ded6708dfc96b3a1d68.jpg",
+      "file": "dist/assets/event-images/immersive-introduction-to-arabic-writing-and-type-design-1c7ab6de8f.jpg",
       "events": 1
     },
     {
@@ -2490,46 +2490,46 @@
   "skipped_recent_failures": [],
   "failed": [
     {
-      "source_url": "https://s7g10.scene7.com/is/image/rcu/sunset-stillness-meditation-sound-immersion:landscape-16x9?$Responsive$&fit=stretch&fmt=webp&wid=1920",
+      "source_url": "https://s7g10.scene7.com/is/image/rcu/leonid-meteor-shower-at-jabal-ikmah:landscape-16x9?$Responsive$&fit=stretch&fmt=webp&wid=1920",
       "events": 1,
       "reason": "HTTP 403",
       "failure_kind": "access-denied",
-      "retry_after": "2026-10-25T07:52:44.676Z"
+      "retry_after": "2026-10-26T08:12:34.628Z"
     },
     {
       "source_url": "https://s7g10.scene7.com/is/image/rcu/stargazing-at-alula-fort:landscape-16x9?$Responsive$&fit=stretch&fmt=webp&wid=1920",
       "events": 1,
       "reason": "HTTP 403",
       "failure_kind": "access-denied",
-      "retry_after": "2026-10-25T07:52:44.676Z"
+      "retry_after": "2026-10-26T08:12:34.628Z"
     },
     {
-      "source_url": "https://s7g10.scene7.com/is/image/rcu/leonid-meteor-shower-at-jabal-ikmah:landscape-16x9?$Responsive$&fit=stretch&fmt=webp&wid=1920",
+      "source_url": "https://s7g10.scene7.com/is/image/rcu/sunset-stillness-meditation-sound-immersion:landscape-16x9?$Responsive$&fit=stretch&fmt=webp&wid=1920",
       "events": 1,
       "reason": "HTTP 403",
       "failure_kind": "access-denied",
-      "retry_after": "2026-10-25T07:52:44.676Z"
+      "retry_after": "2026-10-26T08:12:34.628Z"
     },
     {
       "source_url": "https://s7g10.scene7.com/is/image/rcu/fei2:landscape-16x9?$Responsive$&fit=stretch&fmt=webp&wid=1920",
       "events": 1,
       "reason": "HTTP 403",
       "failure_kind": "access-denied",
-      "retry_after": "2026-10-25T07:52:44.676Z"
+      "retry_after": "2026-10-26T08:12:34.628Z"
     },
     {
       "source_url": "https://cdn.rfecc.sa/wp-content/uploads/mec/qr_898ea2449274454e42895b52b18c6f68.png",
       "events": 1,
       "reason": "HTTP 403",
       "failure_kind": "access-denied",
-      "retry_after": "2026-10-25T07:52:44.676Z"
+      "retry_after": "2026-10-26T08:12:34.628Z"
     },
     {
       "source_url": "https://api.riyadh.sa/sites/default/files/styles/medium/public/2026-07/er%20%2859%29.jpg?itok=a33APdGm",
       "events": 1,
       "reason": "not-image text/html; charset=utf-8",
       "failure_kind": "source-returned-html",
-      "retry_after": "2026-10-25T07:52:44.676Z"
+      "retry_after": "2026-10-26T08:12:34.628Z"
     }
   ],
   "requires_rebuild": true,

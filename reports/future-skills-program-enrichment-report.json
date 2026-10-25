@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-24T07:44:58.465Z",
+  "generated_at": "2026-10-25T08:06:06.280Z",
   "catalog": "data/events_catalog.json",
   "totals": {
     "targets": 29,
@@ -12,175 +12,175 @@
       "id": "event-introduction-to-generative-ai-مقدمة-في-الذكاء-الاصطناعي-التوليدي",
       "title": "Introduction to Generative AI-مقدمة في الذكاء الاصطناعي التوليدي",
       "group_id": "13037",
-      "reason": "HTTP 404"
+      "reason": "fetch failed"
     },
     {
       "id": "event-دورة-comptia-a",
       "title": "دورة +CompTIA A",
       "group_id": "13039",
-      "reason": "HTTP 404"
+      "reason": "fetch failed"
     },
     {
       "id": "event-security-operations-threat-detection-incident-response-عمليات-الأمن-السي",
       "title": "Security Operations, Threat Detection & Incident Response - عمليات الأمن السيبراني، واكتشاف التهديدات، والاستجابة للحوادث",
       "group_id": "13040",
-      "reason": "HTTP 404"
+      "reason": "fetch failed"
     },
     {
       "id": "event-أساسيات-الحوسبة-السحابية-cloud-computing-essentials",
       "title": "أساسيات الحوسبة السحابية - Cloud Computing Essentials",
       "group_id": "13035",
-      "reason": "HTTP 404"
+      "reason": "fetch failed"
     },
     {
       "id": "event-advanced-excel-for-data-analysis-دورة-اكسيل-لتحليل-البيانات",
       "title": "Advanced Excel for Data Analysis - دورة اكسيل لتحليل البيانات",
       "group_id": "13041",
-      "reason": "HTTP 404"
+      "reason": "fetch failed"
     },
     {
       "id": "event-comptia-a",
       "title": "CompTIA A+",
       "group_id": "13042",
-      "reason": "HTTP 404"
+      "reason": "fetch failed"
     },
     {
       "id": "event-cloud-computing-essentials-أساسيات-الحوسبة-السحابية",
       "title": "Cloud Computing Essentials - أساسيات الحوسبة السحابية",
       "group_id": "13043",
-      "reason": "HTTP 404"
+      "reason": "fetch failed"
     },
     {
       "id": "event-duplicate-of-cloud-computing-essentials-أساسيات-الحوسبة-السحابية",
       "title": "Duplicate of Cloud Computing Essentials - أساسيات الحوسبة السحابية",
       "group_id": "13044",
-      "reason": "HTTP 404"
+      "reason": "fetch failed"
     },
     {
       "id": "event-cloud-storage-and-databases-fundamentals-أساسيات-التخزين-السحابي-وقواعد-",
       "title": "Cloud Storage and Databases Fundamentals - أساسيات التخزين السحابي وقواعد البيانات",
       "group_id": "13045",
-      "reason": "HTTP 404"
+      "reason": "fetch failed"
     },
     {
       "id": "event-devops-fundamentals-for-cloud-environments-أساسيات-ديفوبس-لبيئات-السحابة",
       "title": "DevOps Fundamentals for Cloud Environments-أساسيات ديفوبس لبيئات السحابة",
       "group_id": "13046",
-      "reason": "HTTP 404"
+      "reason": "fetch failed"
     },
     {
       "id": "event-cloud-security-operations-and-identity-management-عمليات-أمان-السحابة-وإ",
       "title": "Cloud Security Operations and Identity Management - عمليات أمان السحابة وإدارة الهوية",
       "group_id": "13047",
-      "reason": "HTTP 404"
+      "reason": "fetch failed"
     },
     {
       "id": "event-machine-learning-التعلم-الالي",
       "title": "Machine Learning - التعلم الالي",
       "group_id": "13048",
-      "reason": "HTTP 404"
+      "reason": "fetch failed"
     },
     {
       "id": "event-genai-for-data-analysis-and-decision-support-الذكاء-الاصطناعي-التوليدي-ل",
       "title": "GenAI for Data Analysis and Decision Support - الذكاء الاصطناعي التوليدي لتحليل البيانات ودعم اتخاذ القرار",
       "group_id": "13049",
-      "reason": "HTTP 404"
+      "reason": "fetch failed"
     },
     {
       "id": "event-comptia-cloud",
       "title": "CompTIA Cloud+",
       "group_id": "13050",
-      "reason": "HTTP 404"
+      "reason": "fetch failed"
     },
     {
       "id": "event-virtualization-cloud-infrastructure-basics-الافتراضية-والبنية-التحتية-ال",
       "title": "Virtualization & Cloud Infrastructure Basics - الافتراضية والبنية التحتية السحابية",
       "group_id": "13051",
-      "reason": "HTTP 404"
+      "reason": "fetch failed"
     },
     {
       "id": "event-sql-fundamentals",
       "title": "SQL Fundamentals",
       "group_id": "13052",
-      "reason": "HTTP 404"
+      "reason": "fetch failed"
     },
     {
       "id": "event-comptia-it-fundamentals",
       "title": "CompTIA IT Fundamentals",
       "group_id": "13053",
-      "reason": "HTTP 404"
+      "reason": "fetch failed"
     },
     {
       "id": "event-aws-solutions-architect-associate-practical",
       "title": "AWS Solutions Architect – Associate Practical",
       "group_id": "13054",
-      "reason": "HTTP 404"
+      "reason": "fetch failed"
     },
     {
       "id": "event-comptia-network",
       "title": "CompTIA Network+",
       "group_id": "13055",
-      "reason": "HTTP 404"
+      "reason": "fetch failed"
     },
     {
       "id": "event-power-bi-for-beginners",
       "title": "Power BI for Beginners",
       "group_id": "13056",
-      "reason": "HTTP 404"
+      "reason": "fetch failed"
     },
     {
       "id": "event-linux-administration",
       "title": "Linux Administration",
       "group_id": "13057",
-      "reason": "HTTP 404"
+      "reason": "fetch failed"
     },
     {
       "id": "event-ccna",
       "title": "CCNA",
       "group_id": "13058",
-      "reason": "HTTP 404"
+      "reason": "fetch failed"
     },
     {
       "id": "event-responsible-ai-ethics-and-ai-governance",
       "title": "Responsible AI, Ethics and AI Governance",
       "group_id": "13059",
-      "reason": "HTTP 404"
+      "reason": "fetch failed"
     },
     {
       "id": "event-cloud-for-ai-big-data-machine-learning",
       "title": "Cloud for AI, Big Data & Machine Learning",
       "group_id": "13060",
-      "reason": "HTTP 404"
+      "reason": "fetch failed"
     },
     {
       "id": "event-ccnp",
       "title": "CCNP",
       "group_id": "13061",
-      "reason": "HTTP 404"
+      "reason": "fetch failed"
     },
     {
       "id": "event-data-analysis-with-python",
       "title": "Data Analysis with Python",
       "group_id": "13062",
-      "reason": "HTTP 404"
+      "reason": "fetch failed"
     },
     {
       "id": "event-red-hat-certified-system-administrator-rhcsa",
       "title": "Red Hat Certified System Administrator (RHCSA)",
       "group_id": "13063",
-      "reason": "HTTP 404"
+      "reason": "fetch failed"
     },
     {
       "id": "event-data-science-foundations",
       "title": "Data Science Foundations",
       "group_id": "13066",
-      "reason": "HTTP 404"
+      "reason": "fetch failed"
     },
     {
       "id": "event-introduction-to-apis-and-web-services",
       "title": "Introduction to APIs and Web Services",
       "group_id": "13067",
-      "reason": "HTTP 404"
+      "reason": "fetch failed"
     }
   ]
 }

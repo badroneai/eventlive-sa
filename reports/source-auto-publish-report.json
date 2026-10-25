@@ -1,18 +1,18 @@
 {
-  "published_at": "2026-10-24T07:44:50.773Z",
+  "published_at": "2026-10-25T08:06:00.242Z",
   "dry_run": false,
   "include_partner": true,
   "source_candidates": "data/source_candidates.json",
   "events_catalog": "data/events_catalog.json",
-  "candidates_seen": 383,
+  "candidates_seen": 385,
   "totals": {
-    "candidates_seen": 383,
-    "published": 1,
-    "linked_existing": 353,
+    "candidates_seen": 385,
+    "published": 6,
+    "linked_existing": 350,
     "blocked": 29,
     "duplicate_review_alerts": 4,
     "category_fallback_alerts": 0,
-    "reconciled": 354,
+    "reconciled": 356,
     "session_windows_reconciled": 0
   },
   "session_window_changes": [],
@@ -92,9 +92,34 @@
   ],
   "published": [
     {
-      "candidate_id": "candidate-umm-al-qura-events-معسكر-المهارات-النفسية-فك-الشفرة-فهم-الصوت-الداخلي-وإدارة-الحوار-الذاتي-20261025-7c2266a4",
-      "event_id": "event-معسكر-المهارات-النفسية-فك-الشفرة-فهم-الصوت-الداخلي-وإدارة-الحوار-الذاتي",
-      "title": "معسكر المهارات النفسية (فك الشفرة: فهم الصوت الداخلي وإدارة الحوار الذاتي)"
+      "candidate_id": "candidate-umm-al-qura-events-ورشة-عمل-بعنوان-مهارة-زراعة-البيئة-البكتيرية-20261025-754e913b",
+      "event_id": "event-ورشة-عمل-بعنوان-مهارة-زراعة-البيئة-البكتيرية",
+      "title": "ورشة عمل بعنوان مهارة زراعة البيئة البكتيرية"
+    },
+    {
+      "candidate_id": "candidate-umm-al-qura-events-ورشة-عمل-بعنوان-ريشة-فنان-20261025-e991b372",
+      "event_id": "event-ورشة-عمل-بعنوان-ريشة-فنان",
+      "title": "ورشة عمل بعنوان ريشة فنان"
+    },
+    {
+      "candidate_id": "candidate-umm-al-qura-events-ورشة-عمل-بعنوان-أثر-قلم-20261025-981a0275",
+      "event_id": "event-ورشة-عمل-بعنوان-أثر-قلم",
+      "title": "ورشة عمل بعنوان أثر قلم"
+    },
+    {
+      "candidate_id": "candidate-umm-al-qura-events-لقاء-للإجابة-عن-الاستفسارات-20261025-356a27db",
+      "event_id": "event-لقاء-للإجابة-عن-الاستفسارات",
+      "title": "لقاء للإجابة عن الاستفسارات"
+    },
+    {
+      "candidate_id": "candidate-umm-al-qura-events-التعريف-بتقييم-الأداء-ومنظومة-تقييم-الأداء-للمقيمين-20261026-6ffe09a6",
+      "event_id": "event-التعريف-بتقييم-الأداء-ومنظومة-تقييم-الأداء-للمقيمين",
+      "title": "التعريف بتقييم الأداء ومنظومة تقييم الأداء للمقيمين"
+    },
+    {
+      "candidate_id": "candidate-umm-al-qura-events-التعريف-بمنظومة-تقييم-الأداء-للمقيمين-20261028-919c2649",
+      "event_id": "event-التعريف-بمنظومة-تقييم-الأداء-للمقيمين",
+      "title": "التعريف بمنظومة تقييم الأداء للمقيمين"
     }
   ],
   "linked_existing": [
@@ -693,39 +718,15 @@
       "reason": "already linked to catalog event"
     },
     {
-      "candidate_id": "candidate-umm-al-qura-events-ورشة-عمل-بعنوان-تنسيق-الزهور-الصناعية-20261019-49db524a",
-      "event_id": "event-ورشة-عمل-بعنوان-تنسيق-الزهور-الصناعية",
-      "title": "ورشة عمل بعنوان تنسيق الزهور الصناعية",
-      "reason": "already linked to catalog event"
-    },
-    {
       "candidate_id": "candidate-umm-al-qura-events-مشاركة-أعضاء-هيئة-التدريس-ورشة-عمل-بعنوان-تنقيح-المشاريع-البحثية-والابتك-20261019-5913dd70",
       "event_id": "event-مشاركة-أعضاء-هيئة-التدريس-ورشة-عمل-بعنوان-تنقيح-المشاريع-البحثية-والابتك",
       "title": "مشاركة أعضاء هيئة التدريس ورشة عمل بعنوان: تنقيح المشاريع البحثية والابتكارية المشاركة في الأولمبياد الوطني للإبداع العلمي",
       "reason": "already linked to catalog event"
     },
     {
-      "candidate_id": "candidate-visit-saudi-calendar-pdf-six-kings-slam-20261021-4a38d19e",
-      "event_id": "event-six-kings-slam",
-      "title": "Six Kings Slam",
-      "reason": "already linked to catalog event"
-    },
-    {
-      "candidate_id": "candidate-ithra-events-immersive-introduction-to-arabic-writing-and-type-design-20261021-3708788d",
-      "event_id": "event-immersive-introduction-to-arabic-writing-and-type-design",
-      "title": "Immersive Introduction to Arabic Writing and Type Design",
-      "reason": "already linked to catalog event"
-    },
-    {
       "candidate_id": "candidate-experience-alula-events-alula-wellness-festival-20261023-5b74606a",
       "event_id": "event-alula-wellness-festival",
       "title": "AlUla Wellness Festival",
-      "reason": "already linked to catalog event"
-    },
-    {
-      "candidate_id": "candidate-visit-saudi-calendar-pdf-أكمل-الفراغ-التالي-20261024-4a38d19e",
-      "event_id": "event-أكمل-الفراغ-التالي",
-      "title": "أكمل الفراغ التالي",
       "reason": "already linked to catalog event"
     },
     {
@@ -756,6 +757,12 @@
       "candidate_id": "candidate-hayy-jameel-events-hayy-makers-woodworking-course-level-2-with-ahmad-sofi-20261025-11baa66b",
       "event_id": "event-hayy-makers",
       "title": "Hayy Makers | Woodworking Course (Level 2) with Ahmad Sofi",
+      "reason": "already linked to catalog event"
+    },
+    {
+      "candidate_id": "candidate-umm-al-qura-events-معسكر-المهارات-النفسية-فك-الشفرة-فهم-الصوت-الداخلي-وإدارة-الحوار-الذاتي-20261025-7c2266a4",
+      "event_id": "event-معسكر-المهارات-النفسية-فك-الشفرة-فهم-الصوت-الداخلي-وإدارة-الحوار-الذاتي",
+      "title": "معسكر المهارات النفسية (فك الشفرة: فهم الصوت الداخلي وإدارة الحوار الذاتي)",
       "reason": "already linked to catalog event"
     },
     {
@@ -2362,8 +2369,8 @@
       "reason": "publication gate source-evidence is not auto-publishable"
     },
     {
-      "candidate_id": "candidate-saudicon-events-athlete-360-summit-2027-20270110-986bbcd3",
-      "title": "Athlete 360 Summit 2027",
+      "candidate_id": "candidate-saudicon-events-قمة-أثليت-360-للأداء-الرياضي-والصحة-2027-20270110-6e57ae85",
+      "title": "قمة أثليت 360 للأداء الرياضي والصحة 2027",
       "reason": "publication gate source-evidence is not auto-publishable"
     },
     {
