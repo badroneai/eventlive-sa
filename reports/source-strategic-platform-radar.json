@@ -1,6 +1,6 @@
 {
   "schema": "eventlive.source-strategic-platform-radar.v1",
-  "generated_at": "2026-10-25T07:40:33.124Z",
+  "generated_at": "2026-10-26T07:54:15.882Z",
   "policy": {
     "allowed_use": "official source evidence refresh, API-surface mapping, partnership prioritization, extractor backlog decisions",
     "disallowed_use": "direct catalog publication without official confirmation and duplicate review"
@@ -303,7 +303,7 @@
       "final_url": "https://webook.com/ar/explore",
       "via": "fetch",
       "content_type": "text/html",
-      "bytes": 4814,
+      "bytes": 4813,
       "title": "",
       "classification": "protected",
       "error": "",
@@ -330,7 +330,7 @@
         "https://wbk-assets.webook.com/8.1/locales/en/currency_common.json",
         "https://wbk-assets.webook.com/8.1/locales/en/payment_common.json",
         "https://wbk-assets.webook.com/8.1/locales/en/subscription_common.json",
-        "https://webook.com/cdn-cgi/content?id=6UdYcR5Vtaqn5Us8sdhjCh5PMNeJznZ7EBBZWawEOwE-1792914044.1998405-1.2.1.1-SvvZL5QwzlK0jy0EAC_tPaKP7vASWYVxQFzBeQzGkFJ6MipwH0xSS36oNHa6Hwzc",
+        "https://webook.com/cdn-cgi/content?id=K0GSF0a60wh2gFepr5VAT4Ae3H5GrHmTv3BFARCMGJA-1793001264.057626-1.2.1.1-XDno1nJU3x1BvGCj2knyquhnNEiRufbIgr6ol_D89smXN0ItuYTxZNz0COjM2WVd",
         "https://static.cloudflareinsights.com/beacon.min.js/vce701823e78c4301a35b7e07294d87301792088814092"
       ],
       "page_hint_words": [

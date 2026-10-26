@@ -1,15 +1,14 @@
 # EventLive Visit Saudi Image Identity Report
 
-- generated_at: 2026-10-25T08:06:02.982Z
-- pdf_crop_assignments: 31
-- verified: 29
-- struck: 2
-- slots_seen_this_cycle: 34
+- generated_at: 2026-10-26T08:31:45.512Z
+- pdf_crop_assignments: 29
+- verified: 28
+- struck: 1
+- slots_seen_this_cycle: 33
 
 ## Struck (fell back to generated cover)
 
-- Six Kings Slam (visit-saudi-summer-2026-p007-top-right.jpg) - slot-vacated - no dated card currently occupies page 7 top-right of https://www.visitsaudi.com/content/dam/documents/saudi-calendar-ar.pdf
-- أكمل الفراغ التالي (visit-saudi-summer-2026-p047-bottom-right.jpg) - slot-vacated - no dated card currently occupies page 47 bottom-right of https://www.visitsaudi.com/content/dam/documents/saudi-calendar-ar.pdf
+- نهائيات FIFAe 26 (visit-saudi-summer-2026-p045-bottom-left.jpg) - slot-vacated - no dated card currently occupies page 45 bottom-left of https://www.visitsaudi.com/content/dam/documents/saudi-calendar-ar.pdf
 
 ## Verified
 
@@ -23,7 +22,6 @@
 - دوري الملوك MENA (visit-saudi-summer-2026-p005-bottom-right.jpg)
 - الاخطبوطية كيدز (visit-saudi-summer-2026-p005-bottom-left.jpg)
 - ربع تون (visit-saudi-summer-2026-p006-top-right.jpg)
-- نهائيات FIFAe 26 (visit-saudi-summer-2026-p045-bottom-left.jpg)
 - ألف وواحد (visit-saudi-summer-2026-p063-bottom-left.jpg)
 - حفل ماريلين نعمان الموسيقي (visit-saudi-summer-2026-p008-top-right.jpg)
 - شتاء اثراء (visit-saudi-summer-2026-p026-bottom-right.jpg)

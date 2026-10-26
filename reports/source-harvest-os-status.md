@@ -1,32 +1,32 @@
 # EventLive Harvest OS Status
 
-- Generated at: 2026-10-25T08:22:20.380Z
+- Generated at: 2026-10-26T08:53:44.727Z
 - Status: NEEDS_WORK
 - Operating rule: Probe before new sources; sample before full harvest; Raw collection is not publication; discovery-only never auto-publishes.
 
 ## Totals
 
 - Sources: 88
-- Candidates: 385
-- Matched candidates: 357
+- Candidates: 389
+- Matched candidates: 361
 - Auto-publish sources: 15
 - Candidate-only sources: 12
 - Partnership-required sources: 5
-- Productive sources / attempted: 13/28
-- Collector errors: 9 (chronic 8, transient 1)
+- Productive sources / attempted: 14/39
+- Collector errors: 9 (chronic 7, transient 2)
 
 ## Publication Funnel
 
 | Stage | Count |
 | --- | --- |
-| discovered_this_run | 180 |
-| candidate_queue | 385 |
-| evaluated_for_publish | 385 |
-| linked_existing | 350 |
-| published_new | 6 |
+| discovered_this_run | 167 |
+| candidate_queue | 389 |
+| evaluated_for_publish | 389 |
+| linked_existing | 352 |
+| published_new | 8 |
 | blocked | 29 |
 | secondary_promoted | 0 |
-| secondary_still_blocked | 34 |
+| secondary_still_blocked | 37 |
 
 ## Blocked Reasons
 
@@ -42,15 +42,15 @@
 
 | Source | Kind | Failed runs in a row | Attempted this run | Reason |
 | --- | --- | --- | --- | --- |
-| moc-cultural-calendar | chronic | 60 | yes | collector-error: fetch failed [ETIMEDOUT, ENETUNREACH]; fetch failed [ETIMEDOUT, ENETUNREACH] |
-| mos-events | chronic | 60 | yes | collector-error: fetch failed [ETIMEDOUT, ENETUNREACH]; live browser recovery deferred by recent failed probe cooldown |
-| moc-cultural-subportals | chronic | 60 | yes | collector-error: fetch failed [UND_ERR_CONNECT_TIMEOUT]; fetch failed [UND_ERR_CONNECT_TIMEOUT] |
-| saudi-pro-league-fixtures | chronic | 40 | yes | collector-error: fetch failed [EAI_AGAIN] |
-| tuwaiq-academy-bootcamps | chronic | 37 | yes | collector-error: HTTP 403 |
-| monshaat-events | chronic | 8 | yes | collector-error: fetch failed [UND_ERR_CONNECT_TIMEOUT]; fetch failed [UND_ERR_CONNECT_TIMEOUT] |
-| qassim-chamber-events | chronic | 6 | yes | collector-error: HTTP 403 |
-| riyadh-city-events | chronic | 3 | yes | collector-error: HTTP 502; live browser recovery deferred by recent failed probe cooldown |
-| visit-saudi-calendar-pdf | transient | 1 | yes | The operation was aborted due to timeout; page.goto: Download is starting |
+| moc-cultural-calendar | chronic | 61 | yes | collector-error: fetch failed [ETIMEDOUT, ENETUNREACH]; fetch failed [ETIMEDOUT, ENETUNREACH] |
+| mos-events | chronic | 61 | yes | collector-error: fetch failed [ETIMEDOUT, ENETUNREACH] |
+| moc-cultural-subportals | chronic | 61 | yes | collector-error: fetch failed [UND_ERR_CONNECT_TIMEOUT]; fetch failed [UND_ERR_CONNECT_TIMEOUT] |
+| saudi-pro-league-fixtures | chronic | 41 | yes | collector-error: fetch failed [EAI_AGAIN] |
+| tuwaiq-academy-bootcamps | chronic | 38 | yes | collector-error: HTTP 403 |
+| monshaat-events | chronic | 9 | yes | collector-error: fetch failed [UND_ERR_CONNECT_TIMEOUT]; fetch failed [UND_ERR_CONNECT_TIMEOUT] |
+| qassim-chamber-events | chronic | 7 | yes | collector-error: HTTP 403; live browser recovery deferred by recent failed probe cooldown |
+| visit-saudi-calendar-pdf | transient | 2 | yes | The operation was aborted due to timeout; live browser recovery deferred by recent failed probe cooldown |
+| sdaia-calendar-events | transient | 1 | yes | request-rejected; browser recovery encountered an access-protection page |
 
 | Source | Policy | Trust | Gate |
 | --- | --- | --- | --- |
