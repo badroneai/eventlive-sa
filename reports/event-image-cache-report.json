@@ -1,13 +1,13 @@
 {
-  "generated_at": "2026-10-26T08:40:34.415Z",
+  "generated_at": "2026-10-27T09:14:30.127Z",
   "events_file": "dist/events.json",
   "manifest": "data/event_image_cache_manifest.json",
   "image_dir": "dist/assets/event-images",
   "totals": {
     "targets": 500,
-    "cached_total": 903,
-    "fetched": 1,
-    "reused": 493,
+    "cached_total": 904,
+    "fetched": 2,
+    "reused": 492,
     "failed": 6,
     "skipped_recent_failures": 0,
     "remembered_failures": 34
@@ -17,6 +17,12 @@
       "source_url": "https://s7g10.scene7.com/is/image/rcu/half-marathon-2026?$Responsive$&fit=stretch&fmt=webp&wid=1920",
       "file": "dist/assets/event-images/alula-half-marathon-71cb763487.webp",
       "bytes": 116280,
+      "events": 1
+    },
+    {
+      "source_url": "https://hayyjameel.org/wp-content/uploads/2026/10/DSC00760-scaled-aspect-ratio-2560-1346-1-1100x500.jpg",
+      "file": "dist/assets/event-images/jameel-library-november-community-programmes-4e5f4c41d9.jpg",
+      "bytes": 96047,
       "events": 1
     }
   ],
@@ -89,16 +95,6 @@
     {
       "source_url": "https://hub.misk.org.sa/media/pqpeputs/local_550x340-1.png",
       "file": "dist/assets/event-images/misk-local-traineeship-program-493c69ca91.png",
-      "events": 1
-    },
-    {
-      "source_url": "https://hayyjameel.org/wp-content/uploads/2026/05/GPS_Banner_Hayy-1-1100x500.jpg",
-      "file": "dist/assets/event-images/hayy-arts-global-positioning-system-2e33bdc430.jpg",
-      "events": 1
-    },
-    {
-      "source_url": "https://hayyjameel.org/wp-content/uploads/2026/04/Web-banner-1100x500.png",
-      "file": "dist/assets/event-images/hayy-arts-red-wind-coral-worlds-c1b964994f.png",
       "events": 1
     },
     {
@@ -254,7 +250,7 @@
     {
       "source_url": "https://uqu.edu.sa/assets/images/uqu-gate.jpeg",
       "file": "dist/assets/event-images/الشهادة-الدولية-للحاسب-والإنترنت-ic3-a46ba6d2eb.jpg",
-      "events": 169
+      "events": 174
     },
     {
       "source_url": "https://www.ithra.com/application/files/cache/thumbnails/6519ce3982b405e399c3a7313853a2bf.jpg",
@@ -294,11 +290,6 @@
     {
       "source_url": "https://cdn.tuwaiq.edu.sa/initiatives_admin/images/hym412o4.xrm.webp",
       "file": "dist/assets/event-images/معسكر-تطوير-مواقع-الويب-باستخدام-java-ودمج-تقنيات-الذكاء-الاصطناعي-1a7ddcd5eb.webp",
-      "events": 1
-    },
-    {
-      "source_url": "https://hayyjameel.org/wp-content/uploads/2026/08/DSC00522-1100x500.jpg",
-      "file": "dist/assets/event-images/hayy-arts-from-another-angel-explore-contemporary-art-with-alternative-b06bceee40.jpg",
       "events": 1
     },
     {
@@ -537,18 +528,8 @@
       "events": 1
     },
     {
-      "source_url": "https://static.wixstatic.com/media/708478_1854711612ca467293ee73543b1c06ff%7Emv2.png/v1/fit/w_2500,h_1330,al_c/708478_1854711612ca467293ee73543b1c06ff%7Emv2.png",
-      "file": "dist/assets/event-images/global-proptech-summit-2026-34eaf8d944.png",
-      "events": 1
-    },
-    {
       "source_url": "https://cdn.tuwaiq.edu.sa/initiatives_admin/images/srikgoed.ha2.webp",
       "file": "dist/assets/event-images/معسكر-تطوير-حلول-الذكاء-الاصطناعي-c5e3253b6d.webp",
-      "events": 1
-    },
-    {
-      "source_url": "https://api.riyadh.sa/sites/default/files/styles/medium/public/2025-12/bg-new.png?itok=bQIB0PjC",
-      "file": "dist/assets/event-images/global-proptech-summit-d9f33cd4c5.png",
       "events": 1
     },
     {
@@ -575,11 +556,6 @@
       "source_url": "https://www.ithra.com/application/files/cache/thumbnails/3446449530b9e6bb40e54a10959b0acf.jpg",
       "file": "dist/assets/event-images/the-art-of-public-speaking-571bd8329a.jpg",
       "events": 1
-    },
-    {
-      "source_url": "https://www.qu.edu.sa/wp-content/uploads/2025/07/qu_img_v3-768x432-1.webp",
-      "file": "dist/assets/event-images/انطلاق-النادي-الصيفي-التاسع-لجامعة-القصيم-69e05e13ee.webp",
-      "events": 6
     },
     {
       "source_url": "https://static.wixstatic.com/media/269912_ae1b1f61c9d443469ca3a36bcf09dcf4%7Emv2.png/v1/fit/w_2500,h_1330,al_c/269912_ae1b1f61c9d443469ca3a36bcf09dcf4%7Emv2.png",
@@ -982,6 +958,11 @@
       "events": 1
     },
     {
+      "source_url": "https://www.qu.edu.sa/wp-content/uploads/2025/07/qu_img_v3-768x432-1.webp",
+      "file": "dist/assets/event-images/انطلاق-النادي-الصيفي-التاسع-لجامعة-القصيم-69e05e13ee.webp",
+      "events": 6
+    },
+    {
       "source_url": "https://api.riyadh.sa/sites/default/files/styles/medium/public/2026-04/HG_hI6SbUAA3cxc.jpeg?itok=M3x1tWYv",
       "file": "dist/assets/event-images/24th-erra-annual-conference-c93a8157be.jpg",
       "events": 1
@@ -1014,6 +995,16 @@
     {
       "source_url": "https://ssa.gov.sa/media/3j2f0xpa/sdc2028.webp?width=1400&height=788&rnd=134303158965830000",
       "file": "dist/assets/event-images/مؤتمر-الحطام-الفضائي-2028-ed926e1bba.webp",
+      "events": 1
+    },
+    {
+      "source_url": "https://api.riyadh.sa/sites/default/files/styles/medium/public/2025-12/bg-new.png?itok=bQIB0PjC",
+      "file": "dist/assets/event-images/global-proptech-summit-d9f33cd4c5.png",
+      "events": 1
+    },
+    {
+      "source_url": "https://static.wixstatic.com/media/708478_1854711612ca467293ee73543b1c06ff%7Emv2.png/v1/fit/w_2500,h_1330,al_c/708478_1854711612ca467293ee73543b1c06ff%7Emv2.png",
+      "file": "dist/assets/event-images/global-proptech-summit-2026-34eaf8d944.png",
       "events": 1
     },
     {
@@ -1787,6 +1778,11 @@
       "events": 1
     },
     {
+      "source_url": "https://hayyjameel.org/wp-content/uploads/2026/08/DSC00522-1100x500.jpg",
+      "file": "dist/assets/event-images/hayy-arts-from-another-angel-explore-contemporary-art-with-alternative-b06bceee40.jpg",
+      "events": 1
+    },
+    {
       "source_url": "https://www.ithra.com/application/files/cache/thumbnails/5c8313b3714c56cee2cdb36d8c6247ab.jpg",
       "file": "dist/assets/event-images/موكشا-6a8b1cb067.jpg",
       "events": 1
@@ -2485,10 +2481,21 @@
       "source_url": "https://scth.scene7.com/is/image/scth/okhtabotiya?wid=1400&hei=788&fit=constrain&fmt=webp",
       "file": "dist/assets/event-images/okhtabotiya-0013765084.webp",
       "events": 1
+    },
+    {
+      "source_url": "https://discoveraseer.com/en/img/asset/YXNzZXRzL2V4cGVyaWVuY2UvZHc4dzEyNTAuanBlZw/dw8w1250.jpeg?w=1024&fm=webp&s=e845b36cd3e878a1a1d7cec306a2e3f8",
+      "file": "dist/assets/event-images/حفلات-موسيقية-53b2281d16.webp",
+      "events": 1
     }
   ],
   "rejected_removed": [],
-  "missing_removed": [],
+  "missing_removed": [
+    {
+      "source_url": "https://s7g10.scene7.com/is/image/rcu/half-marathon-2026?$Responsive$&fit=stretch&fmt=webp&wid=1920",
+      "file": "dist/assets/event-images/alula-half-marathon-71cb763487.webp",
+      "reason": "cached-file-missing"
+    }
+  ],
   "skipped_recent_failures": [],
   "failed": [
     {
@@ -2496,47 +2503,48 @@
       "events": 1,
       "reason": "HTTP 403",
       "failure_kind": "access-denied",
-      "retry_after": "2026-10-27T08:40:34.415Z"
+      "retry_after": "2026-10-28T09:14:30.127Z"
     },
     {
       "source_url": "https://s7g10.scene7.com/is/image/rcu/stargazing-at-alula-fort:landscape-16x9?$Responsive$&fit=stretch&fmt=webp&wid=1920",
       "events": 1,
       "reason": "HTTP 403",
       "failure_kind": "access-denied",
-      "retry_after": "2026-10-27T08:40:34.415Z"
+      "retry_after": "2026-10-28T09:14:30.127Z"
     },
     {
       "source_url": "https://s7g10.scene7.com/is/image/rcu/leonid-meteor-shower-at-jabal-ikmah:landscape-16x9?$Responsive$&fit=stretch&fmt=webp&wid=1920",
       "events": 1,
       "reason": "HTTP 403",
       "failure_kind": "access-denied",
-      "retry_after": "2026-10-27T08:40:34.415Z"
+      "retry_after": "2026-10-28T09:14:30.127Z"
     },
     {
       "source_url": "https://s7g10.scene7.com/is/image/rcu/fei2:landscape-16x9?$Responsive$&fit=stretch&fmt=webp&wid=1920",
       "events": 1,
       "reason": "HTTP 403",
       "failure_kind": "access-denied",
-      "retry_after": "2026-10-27T08:40:34.415Z"
+      "retry_after": "2026-10-28T09:14:30.127Z"
     },
     {
       "source_url": "https://cdn.rfecc.sa/wp-content/uploads/mec/qr_898ea2449274454e42895b52b18c6f68.png",
       "events": 1,
       "reason": "HTTP 403",
       "failure_kind": "access-denied",
-      "retry_after": "2026-10-27T08:40:34.415Z"
+      "retry_after": "2026-10-28T09:14:30.127Z"
     },
     {
       "source_url": "https://api.riyadh.sa/sites/default/files/styles/medium/public/2026-07/er%20%2859%29.jpg?itok=a33APdGm",
       "events": 1,
       "reason": "not-image text/html; charset=utf-8",
       "failure_kind": "source-returned-html",
-      "retry_after": "2026-10-27T08:40:34.415Z"
+      "retry_after": "2026-10-28T09:14:30.127Z"
     }
   ],
   "requires_rebuild": true,
   "rebuild_reasons": [
-    "fetched:1",
+    "fetched:2",
+    "missing-removed:1",
     "new-failures:6"
   ]
 }

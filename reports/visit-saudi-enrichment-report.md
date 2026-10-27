@@ -1,17 +1,17 @@
 # Visit Saudi Calendar Enrichment Report
 
-- generated_at: 2026-10-26T08:34:28.870Z
+- generated_at: 2026-10-27T09:08:11.716Z
 - targets: 50
-- candidates: 14
+- candidates: 13
 - enriched: 50
-- fetched: 50
+- fetched: 49
 - images: 50
-- fetch_failures: 0
+- fetch_failures: 1
 
 ## Enriched
 
 - Arabic Language Exhibition 28 - official-page-html - image=yes - features=7
-- Arabic Language Exhibition for kids - official-page-html - image=yes - features=7
+- Arabic Language Exhibition for kids - approved-catalog-row - image=yes - features=6
 - Sunken Treasures - official-page-html - image=yes - features=7
 - Kashtah - official-page-html - image=yes - features=7
 - Okhtabotiya - official-page-html - image=yes - features=7
@@ -63,4 +63,4 @@
 
 ## Fetch Failures
 
-- none
+- Arabic Language Exhibition for kids - HTTP 404

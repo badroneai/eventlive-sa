@@ -1,20 +1,14 @@
 {
   "schema": "eventlive.eye-official-link-verification.v1",
-  "generated_at": "2026-10-26T08:31:36.757Z",
+  "generated_at": "2026-10-27T09:06:11.047Z",
   "dry_run": false,
   "totals": {
-    "targets": 5,
+    "targets": 4,
     "confirmed": 0,
-    "skipped": 2,
+    "skipped": 1,
     "failed": 3
   },
   "rows": [
-    {
-      "candidate_id": "candidate-eye-of-riyadh-events-global-proptech-summit-2026-20261025-7c1d3001",
-      "title": "Global Proptech Summit 2026",
-      "status": "failed",
-      "reason": "HTTP 403"
-    },
     {
       "candidate_id": "candidate-eye-of-riyadh-events-real-estate-supply-chain-forum-20261028-206f7fb8",
       "title": "Real Estate Supply Chain Forum",
@@ -30,22 +24,8 @@
     {
       "candidate_id": "candidate-eye-of-riyadh-events-real-estate-future-forum-20270125-d058344d",
       "title": "Real Estate Future Forum",
-      "status": "skipped",
-      "official_url": "https://www.therff.com/",
-      "confirmed": false,
-      "reason": "year-not-confirmed",
-      "title_tokens": [
-        "real",
-        "estate",
-        "future"
-      ],
-      "matched_title_tokens": [
-        "real",
-        "estate",
-        "future"
-      ],
-      "year_confirmed": false,
-      "month_confirmed": true
+      "status": "failed",
+      "reason": "HTTP 403"
     },
     {
       "candidate_id": "candidate-eye-of-riyadh-events-real-estate-excellence-award-2026-rea-2026-20270126-5e55ea49",

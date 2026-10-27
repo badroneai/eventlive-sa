@@ -1,20 +1,19 @@
 # EventLive Visit Saudi Image Identity Report
 
-- generated_at: 2026-10-26T08:31:45.512Z
-- pdf_crop_assignments: 29
-- verified: 28
+- generated_at: 2026-10-27T09:06:20.673Z
+- pdf_crop_assignments: 28
+- verified: 27
 - struck: 1
-- slots_seen_this_cycle: 33
+- slots_seen_this_cycle: 30
 
 ## Struck (fell back to generated cover)
 
-- نهائيات FIFAe 26 (visit-saudi-summer-2026-p045-bottom-left.jpg) - slot-vacated - no dated card currently occupies page 45 bottom-left of https://www.visitsaudi.com/content/dam/documents/saudi-calendar-ar.pdf
+- كايف المزرعة (visit-saudi-summer-2026-p004-bottom-left.jpg) - slot-vacated - no dated card currently occupies page 4 bottom-left of https://www.visitsaudi.com/content/dam/documents/saudi-calendar-ar.pdf
 
 ## Verified
 
 - سوق الثلاثاء الشعبي (visit-saudi-summer-2026-p024-top-left.jpg)
 - صندوق أسامة من مخرج ثمانية (visit-saudi-summer-2026-p004-top-left.jpg)
-- كايف المزرعة (visit-saudi-summer-2026-p004-bottom-left.jpg)
 - الاخطبوطية (visit-saudi-summer-2026-p004-bottom-right.jpg)
 - تجربة شاطئ قالو (visit-saudi-summer-2026-p044-bottom-left.jpg)
 - استمرارية 26 (visit-saudi-summer-2026-p005-top-right.jpg)

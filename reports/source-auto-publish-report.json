@@ -1,18 +1,18 @@
 {
-  "published_at": "2026-10-26T08:31:40.889Z",
+  "published_at": "2026-10-27T09:06:17.979Z",
   "dry_run": false,
   "include_partner": true,
   "source_candidates": "data/source_candidates.json",
   "events_catalog": "data/events_catalog.json",
-  "candidates_seen": 389,
+  "candidates_seen": 380,
   "totals": {
-    "candidates_seen": 389,
-    "published": 8,
-    "linked_existing": 352,
-    "blocked": 29,
-    "duplicate_review_alerts": 4,
+    "candidates_seen": 380,
+    "published": 6,
+    "linked_existing": 346,
+    "blocked": 28,
+    "duplicate_review_alerts": 2,
     "category_fallback_alerts": 0,
-    "reconciled": 360,
+    "reconciled": 352,
     "session_windows_reconciled": 0
   },
   "session_window_changes": [],
@@ -22,38 +22,6 @@
   "canonical_event_ids_remapped": 0,
   "canonical_event_id_remaps": [],
   "duplicate_review_alerts": [
-    {
-      "kind": "exact-title-city-venue-conflict",
-      "candidate_id": "candidate-visit-saudi-calendar-pdf-معرض-قلب-البحر-20260604-4a38d19e",
-      "possible_event_id": "event-معرض-قلب-البحر",
-      "conflict_fields": [
-        "venue"
-      ],
-      "title_key": "بحر قلب معرض",
-      "venue_key": "جده",
-      "candidate_source": "visitsaudi.com",
-      "existing_source": "visitsaudi.com",
-      "candidate_starts_at": "2026-06-04T00:00:00+03:00",
-      "existing_starts_at": "2026-06-04T00:00:00+03:00",
-      "date_gap_days": 0,
-      "start_date_drift_days": 0
-    },
-    {
-      "kind": "exact-title-city-venue-conflict",
-      "candidate_id": "candidate-visit-saudi-calendar-pdf-معرض-في-تتبّع-ذكريات-غامرة-20260618-4a38d19e",
-      "possible_event_id": "event-معرض-في-تتبّع-ذكريات-غامرة",
-      "conflict_fields": [
-        "venue"
-      ],
-      "title_key": "تتبع ذكريات غامره في معرض",
-      "venue_key": "جده",
-      "candidate_source": "visitsaudi.com",
-      "existing_source": "visitsaudi.com",
-      "candidate_starts_at": "2026-06-18T00:00:00+03:00",
-      "existing_starts_at": "2026-06-18T00:00:00+03:00",
-      "date_gap_days": 0,
-      "start_date_drift_days": 0
-    },
     {
       "kind": "exact-title-city-venue-conflict",
       "candidate_id": "candidate-invest-saudi-events-cityscape-global-2026-20261116-13fbb297",
@@ -92,44 +60,34 @@
   ],
   "published": [
     {
-      "candidate_id": "candidate-umm-al-qura-events-آلية-تقييم-وثائق-الجودة-السنوية-20261026-1e6d67ed",
-      "event_id": "event-آلية-تقييم-وثائق-الجودة-السنوية",
-      "title": "آلية تقييم وثائق الجودة السنوية"
+      "candidate_id": "candidate-umm-al-qura-events-رحلة-ابن-بطوطة-عبر-الثقافات-والشعوب-20261027-e5be517d",
+      "event_id": "event-رحلة-ابن-بطوطة-عبر-الثقافات-والشعوب",
+      "title": "رحلة ابن بطوطة عبر الثقافات والشعوب"
     },
     {
-      "candidate_id": "candidate-umm-al-qura-events-مهارات-إعداد-وتصميم-الملصق-العلمي-20261026-f4c4d87b",
-      "event_id": "event-مهارات-إعداد-وتصميم-الملصق-العلمي",
-      "title": "مهارات إعداد وتصميم الملصق العلمي"
+      "candidate_id": "candidate-umm-al-qura-events-إدارة-المشاريع-الأكاديمية-20261027-f098deb5",
+      "event_id": "event-إدارة-المشاريع-الأكاديمية",
+      "title": "إدارة المشاريع الأكاديمية"
     },
     {
-      "candidate_id": "candidate-umm-al-qura-events-معسكر-المهارات-النفسية-من-الكتمان-إلى-الشجاعة-التعبير-عن-المشاعر-وطلب-ال-20261026-f2d221fd",
-      "event_id": "event-معسكر-المهارات-النفسية-من-الكتمان-إلى-الشجاعة-التعبير-عن-المشاعر-وطلب-ال",
-      "title": "معسكر المهارات النفسية (من الكتمان إلى الشجاعة: التعبير عن المشاعر وطلب المساعدة)"
+      "candidate_id": "candidate-umm-al-qura-events-معسكر-المهارات-النفسية-قوة-الإنصات-كيف-تستمع-بذكاء-لتجربة-صديقك-الحية-؟-20261027-6c39934b",
+      "event_id": "event-معسكر-المهارات-النفسية-قوة-الإنصات-كيف-تستمع-بذكاء-لتجربة-صديقك-الحية-؟",
+      "title": "معسكر المهارات النفسية (قوة الإنصات: كيف تستمع بذكاء لتجربة صديقك الحية ؟)"
     },
     {
-      "candidate_id": "candidate-umm-al-qura-events-المبادئ-القضائية-في-المملكة-العربية-السعودية-20261026-2e35a457",
-      "event_id": "event-المبادئ-القضائية-في-المملكة-العربية-السعودية",
-      "title": "المبادئ القضائية في المملكة العربية السعودية"
+      "candidate_id": "candidate-umm-al-qura-events-اللقاء-التعريفي-لبرنامج-الاختبارات-المعيارية-20261028-2728e919",
+      "event_id": "event-اللقاء-التعريفي-لبرنامج-الاختبارات-المعيارية",
+      "title": "اللقاء التعريفي لبرنامج الاختبارات المعيارية"
     },
     {
-      "candidate_id": "candidate-umm-al-qura-events-آلية-تقييم-المرافق-والتجهيزات-أثناء-زيارة-المراجعة-الداخلية-20261028-06c58f5e",
-      "event_id": "event-آلية-تقييم-المرافق-والتجهيزات-أثناء-زيارة-المراجعة-الداخلية",
-      "title": "آلية تقييم المرافق والتجهيزات أثناء زيارة المراجعة الداخلية"
+      "candidate_id": "candidate-umm-al-qura-events-فن-إدارة-الوقت-وترتيب-الأولويات-20261102-da646ae2",
+      "event_id": "event-فن-إدارة-الوقت-وترتيب-الأولويات",
+      "title": "فن إدارة الوقت وترتيب الأولويات"
     },
     {
-      "candidate_id": "candidate-umm-al-qura-events-من-المشروع-إلى-العرض-العلمي-مهارات-تقديم-المشروع-العلمي-20261102-6ca20b81",
-      "event_id": "event-من-المشروع-إلى-العرض-العلمي-مهارات-تقديم-المشروع-العلمي",
-      "title": "من المشروع إلى العرض العلمي \" مهارات تقديم المشروع العلمي \""
-    },
-    {
-      "candidate_id": "candidate-umm-al-qura-events-حل-المشكلات-بعقلية-الناقد-والمبتكر-20261109-3e65edfe",
-      "event_id": "event-حل-المشكلات-بعقلية-الناقد-والمبتكر",
-      "title": "حل المشكلات بعقلية الناقد والمبتكر"
-    },
-    {
-      "candidate_id": "candidate-experience-alula-events-alula-half-marathon-20261219-138df385",
-      "event_id": "event-alula-half-marathon",
-      "title": "AlUla Half Marathon"
+      "candidate_id": "candidate-hayy-jameel-events-jameel-library-november-community-programmes-20261104-18d33419",
+      "event_id": "event-jameel-library-november-community-programmes",
+      "title": "Jameel Library | November Community Programmes"
     }
   ],
   "linked_existing": [
@@ -227,24 +185,6 @@
       "candidate_id": "candidate-visit-saudi-calendar-pdf-صندوق-أسامة-من-مخرج-ثمانية-20260505-4a38d19e",
       "event_id": "event-صندوق-أسامة-من-مخرج-ثمانية",
       "title": "صندوق أسامة من مخرج ثمانية",
-      "reason": "already linked to catalog event"
-    },
-    {
-      "candidate_id": "candidate-hayy-jameel-events-hayy-arts-red-wind-coral-worlds-20260520-aa24009e",
-      "event_id": "event-hayy-arts-red-wind-coral-worlds",
-      "title": "Hayy Arts | Red Wind, Coral Worlds",
-      "reason": "already linked to catalog event"
-    },
-    {
-      "candidate_id": "candidate-hayy-jameel-events-hayy-arts-global-positioning-system-20260520-2414ba46",
-      "event_id": "event-hayy-arts",
-      "title": "Hayy Arts | Global Positioning System",
-      "reason": "already linked to catalog event"
-    },
-    {
-      "candidate_id": "candidate-visit-saudi-calendar-pdf-كايف-المزرعة-20260524-4a38d19e",
-      "event_id": "event-كايف-المزرعة",
-      "title": "كايف المزرعة",
       "reason": "already linked to catalog event"
     },
     {
@@ -389,12 +329,6 @@
       "candidate_id": "candidate-umm-al-qura-events-الترشح-للدبلوم-المتوسط-في-البرمجة-وعلوم-الحاسب-في-الجبيل-بالتعاون-مع-كلي-20260805-5ba68667",
       "event_id": "event-الترشح-للدبلوم-المتوسط-في-البرمجة-وعلوم-الحاسب-في-الجبيل-بالتعاون-مع-كلي",
       "title": "الترشح للدبلوم المتوسط في البرمجة وعلوم الحاسب في الجبيل بالتعاون مع كليات الفيحاء الأهلية",
-      "reason": "already linked to catalog event"
-    },
-    {
-      "candidate_id": "candidate-hayy-jameel-events-hayy-arts-from-another-angle-explore-contemporary-art-with-alternative-e-20260812-3abe9558",
-      "event_id": "event-hayy-arts-from-another-angel-explore-contemporary-art-with-alternative-e",
-      "title": "Hayy Arts | From Another Angle, explore contemporary art with alternative exhibition tours",
       "reason": "already linked to catalog event"
     },
     {
@@ -740,24 +674,6 @@
       "reason": "already linked to catalog event"
     },
     {
-      "candidate_id": "candidate-eye-of-riyadh-events-global-proptech-summit-2026-20261025-7c1d3001",
-      "event_id": "event-global-proptech-summit-2026",
-      "title": "Global Proptech Summit 2026",
-      "reason": "already linked to catalog event"
-    },
-    {
-      "candidate_id": "candidate-umm-al-qura-events-ورشة-عمل-بعنوان-مهارة-زراعة-البيئة-البكتيرية-20261025-754e913b",
-      "event_id": "event-ورشة-عمل-بعنوان-مهارة-زراعة-البيئة-البكتيرية",
-      "title": "ورشة عمل بعنوان مهارة زراعة البيئة البكتيرية",
-      "reason": "already linked to catalog event"
-    },
-    {
-      "candidate_id": "candidate-riyadh-city-events-global-proptech-summit-20261025-5ffbf6fe",
-      "event_id": "event-global-proptech-summit",
-      "title": "Global PropTech Summit",
-      "reason": "already linked to catalog event"
-    },
-    {
       "candidate_id": "candidate-umm-al-qura-events-لقاء-للإجابة-عن-الاستفسارات-20261025-356a27db",
       "event_id": "event-لقاء-للإجابة-عن-الاستفسارات",
       "title": "لقاء للإجابة عن الاستفسارات",
@@ -818,12 +734,6 @@
       "reason": "already linked to catalog event"
     },
     {
-      "candidate_id": "candidate-umm-al-qura-events-التعريف-بتقييم-الأداء-ومنظومة-تقييم-الأداء-للمقيمين-20261026-6ffe09a6",
-      "event_id": "event-التعريف-بتقييم-الأداء-ومنظومة-تقييم-الأداء-للمقيمين",
-      "title": "التعريف بتقييم الأداء ومنظومة تقييم الأداء للمقيمين",
-      "reason": "already linked to catalog event"
-    },
-    {
       "candidate_id": "candidate-ithra-events-emboss-printing-experience-20261026-2671d1ce",
       "event_id": "event-emboss-printing-experience",
       "title": "Emboss Printing Experience",
@@ -836,21 +746,9 @@
       "reason": "already linked to catalog event"
     },
     {
-      "candidate_id": "candidate-visit-saudi-calendar-kaif-farm-20261026-f9e1eced",
-      "event_id": "event-kaif-farm",
-      "title": "Kaif Farm",
-      "reason": "already linked to catalog event"
-    },
-    {
       "candidate_id": "candidate-ithra-events-bridges-to-the-spanish-language-20261026-4dfe9de2",
       "event_id": "event-bridges-to-the-spanish-language",
       "title": "Bridges to the Spanish Language",
-      "reason": "already linked to catalog event"
-    },
-    {
-      "candidate_id": "candidate-qassim-university-events-توظيف-الذكاء-الاصطناعي-في-الكشف-المبكر-عن-سرطان-الثدي-20261026-81c7a435",
-      "event_id": "event-توظيف-الذكاء-الاصطناعي-في-الكشف-المبكر-عن-سرطان-الثدي",
-      "title": "توظيف الذكاء الاصطناعي في الكشف المبكر عن سرطان الثدي",
       "reason": "already linked to catalog event"
     },
     {
@@ -911,7 +809,7 @@
       "candidate_id": "candidate-misk-hub-events-stc-x-misk-workshops-series-20261028-089e06b6",
       "event_id": "event-stc-x-misk-workshops-series",
       "title": "stc x Misk Workshops Series",
-      "reason": "trusted duplicate linked to existing catalog event"
+      "reason": "already linked to catalog event"
     },
     {
       "candidate_id": "candidate-visit-saudi-seasons-hail-international-arabian-horse-beauty-championship-20261028-b9025d49",
@@ -935,6 +833,12 @@
       "candidate_id": "candidate-saudi-university-events-awareness-in-the-square-an-evening-of-hope-art-and-togetherness-20261028-ba1ee522",
       "event_id": "event-awareness-in-the-square-an-evening-of-hope-art-and-togetherness",
       "title": "Awareness in the Square: An Evening of Hope, Art and Togetherness",
+      "reason": "already linked to catalog event"
+    },
+    {
+      "candidate_id": "candidate-umm-al-qura-events-آلية-تقييم-المرافق-والتجهيزات-أثناء-زيارة-المراجعة-الداخلية-20261028-06c58f5e",
+      "event_id": "event-آلية-تقييم-المرافق-والتجهيزات-أثناء-زيارة-المراجعة-الداخلية",
+      "title": "آلية تقييم المرافق والتجهيزات أثناء زيارة المراجعة الداخلية",
       "reason": "already linked to catalog event"
     },
     {
@@ -1193,6 +1097,12 @@
       "candidate_id": "candidate-ithra-events-ithras-kids-community-20261102-5aadcf19",
       "event_id": "event-ithras-kids-community",
       "title": "Ithra’s Kids Community",
+      "reason": "already linked to catalog event"
+    },
+    {
+      "candidate_id": "candidate-umm-al-qura-events-من-المشروع-إلى-العرض-العلمي-مهارات-تقديم-المشروع-العلمي-20261102-6ca20b81",
+      "event_id": "event-من-المشروع-إلى-العرض-العلمي-مهارات-تقديم-المشروع-العلمي",
+      "title": "من المشروع إلى العرض العلمي \" مهارات تقديم المشروع العلمي \"",
       "reason": "already linked to catalog event"
     },
     {
@@ -1463,6 +1373,12 @@
       "candidate_id": "candidate-riyadh-city-events-saudi-drone-exhibition-sadex-20261109-9d8fe85a",
       "event_id": "event-saudi-drone-exhibition-sadex",
       "title": "Saudi Drone Exhibition SADEX",
+      "reason": "already linked to catalog event"
+    },
+    {
+      "candidate_id": "candidate-umm-al-qura-events-حل-المشكلات-بعقلية-الناقد-والمبتكر-20261109-3e65edfe",
+      "event_id": "event-حل-المشكلات-بعقلية-الناقد-والمبتكر",
+      "title": "حل المشكلات بعقلية الناقد والمبتكر",
       "reason": "already linked to catalog event"
     },
     {
@@ -2024,6 +1940,12 @@
       "reason": "already linked to catalog event"
     },
     {
+      "candidate_id": "candidate-experience-alula-events-alula-half-marathon-20261219-138df385",
+      "event_id": "event-alula-half-marathon",
+      "title": "AlUla Half Marathon",
+      "reason": "already linked to catalog event"
+    },
+    {
       "candidate_id": "candidate-rfecc-whats-on-china-homelife-saudi-arabia-2026-20261220-f2ff78ec",
       "event_id": "event-china-homelife-saudi-arabia-2026",
       "title": "China Homelife Saudi Arabia 2026",
@@ -2248,18 +2170,9 @@
   ],
   "blocked": [
     {
-      "candidate_id": "candidate-visit-saudi-calendar-pdf-معرض-قلب-البحر-20260604-4a38d19e",
-      "title": "معرض قلب البحر",
-      "reason": "possible duplicate requires review: exact-title-city-venue-conflict",
-      "kind": "exact-title-city-venue-conflict",
-      "possible_event_id": "event-معرض-قلب-البحر"
-    },
-    {
-      "candidate_id": "candidate-visit-saudi-calendar-pdf-معرض-في-تتبّع-ذكريات-غامرة-20260618-4a38d19e",
-      "title": "معرض في تتبّع ذكريات غامرة",
-      "reason": "possible duplicate requires review: exact-title-city-venue-conflict",
-      "kind": "exact-title-city-venue-conflict",
-      "possible_event_id": "event-معرض-في-تتبّع-ذكريات-غامرة"
+      "candidate_id": "candidate-umm-al-qura-events-خدمات-مركز-غالي-بعمادة-شؤون-الطلاب-20261027-535870aa",
+      "title": "خدمات مركز غالي بعمادة شؤون الطلاب",
+      "reason": "candidate already ended"
     },
     {
       "candidate_id": "candidate-saudicon-events-annual-international-geotechnical-innovation-conference-igic-2026-20261109-8ea8aaa9",

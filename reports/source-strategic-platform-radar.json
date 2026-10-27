@@ -1,6 +1,6 @@
 {
   "schema": "eventlive.source-strategic-platform-radar.v1",
-  "generated_at": "2026-10-26T07:54:15.882Z",
+  "generated_at": "2026-10-27T08:39:44.140Z",
   "policy": {
     "allowed_use": "official source evidence refresh, API-surface mapping, partnership prioritization, extractor backlog decisions",
     "disallowed_use": "direct catalog publication without official confirmation and duplicate review"
@@ -23,7 +23,7 @@
       "final_url": "https://eportal.scega.gov.sa/home",
       "via": "fetch",
       "content_type": "text/html",
-      "bytes": 30700,
+      "bytes": 30714,
       "title": "الهيئه العامه للمعارض و المؤتمرات",
       "classification": "reachable",
       "error": "",
@@ -60,9 +60,9 @@
       "page_hint_words": [],
       "asset_results": [
         {
-          "url": "https://eportal.scega.gov.sa/main-5UTPO6SR.js",
+          "url": "https://eportal.scega.gov.sa/main-ZP4O5XKW.js",
           "status": 200,
-          "bytes": 226074,
+          "bytes": 226365,
           "classification": "reachable",
           "hint_urls": [
             "http://www.w3.org/2000/svg",
@@ -256,38 +256,38 @@
         {
           "url": "https://www.visitsaudi.com/bin/api/v3/events?locale=ar",
           "status": 200,
-          "bytes": 84718,
+          "bytes": 78652,
           "classification": "reachable",
           "summary": {
             "parse_ok": true,
-            "item_count": 25,
+            "item_count": 23,
             "sample_titles": [
-              "معرض اللغة العربية للطفل",
               "معرض اللغة العربية 28",
               "تجربة شاطئ قالو",
               "«استمرارية 26» برنامج الفنانين الناشئين في فنون الوسائط الجديدة بمركز الدرعية لفنون المستقبل",
-              "الأخطبوطية كيدز"
+              "الأخطبوطية كيدز",
+              "مزاد نادي الصقور السعودي"
             ]
           },
-          "sample": "{\"code\":200,\"message\":\"success\",\"response\":{\"data\":[{\"type\":\"فعالية\",\"title\":\"معرض اللغة العربية للطفل\",\"freePaid\":\"free\",\"bannerImages\":[{\"fileReference\":\"/content/dam/wvs/calendar/arabic-language-exhibition-for-kids.jpg\",\"mobileImageReference\":\"/c…"
+          "sample": "{\"code\":200,\"message\":\"success\",\"response\":{\"data\":[{\"type\":\"فعالية\",\"title\":\"معرض اللغة العربية 28\",\"freePaid\":\"paid\",\"bannerImages\":[{\"fileReference\":\"/content/dam/wvs/calendar/arabic-language-exhibition-in-riyadh.jpg\",\"mobileImageReference\":\"/con…"
         },
         {
           "url": "https://www.visitsaudi.com/bin/api/v3/events?locale=en",
           "status": 200,
-          "bytes": 88681,
+          "bytes": 82145,
           "classification": "reachable",
           "summary": {
             "parse_ok": true,
-            "item_count": 25,
+            "item_count": 23,
             "sample_titles": [
-              "Arabic Language Exhibition for kids",
               "Arabic Language Exhibition 28",
               "GALU Beach Experience",
               "Continuum '26 Diriyah Art Futures Emerging New Media Artists Programme",
-              "Okhtabotiya Kids"
+              "Okhtabotiya Kids",
+              "Saudi Falcons Club Auction"
             ]
           },
-          "sample": "{\"code\":200,\"message\":\"success\",\"response\":{\"data\":[{\"type\":\"EVENT\",\"title\":\"Arabic Language Exhibition for kids\",\"freePaid\":\"free\",\"bannerImages\":[{\"fileReference\":\"/content/dam/wvs/calendar/arabic-language-exhibition-for-kids.jpg\",\"mobileImageRefe…"
+          "sample": "{\"code\":200,\"message\":\"success\",\"response\":{\"data\":[{\"type\":\"EVENT\",\"title\":\"Arabic Language Exhibition 28\",\"freePaid\":\"paid\",\"bannerImages\":[{\"fileReference\":\"/content/dam/wvs/calendar/arabic-language-exhibition-in-riyadh.jpg\",\"mobileImageReference…"
         }
       ],
       "text_sample": "تقويم السعودية | تابع العطلات والفعاليات المميزة - الموقع الرسمي للسياحة السعودية Skip to main content فعاليات الوجهات عرض الكل الرياض جدة العلا عسير"
@@ -303,7 +303,7 @@
       "final_url": "https://webook.com/ar/explore",
       "via": "fetch",
       "content_type": "text/html",
-      "bytes": 4813,
+      "bytes": 4814,
       "title": "",
       "classification": "protected",
       "error": "",
@@ -315,7 +315,7 @@
         "https://images.cmscloud.ai",
         "https://apps.apple.com/sa/app/webook-com-fun-things-to-do/id6468667896",
         "https://play.google.com/store/apps/details?id=com.webook.android",
-        "https://wbk-assets.webook.com/8.1/assets/index-DNIMef4X.js",
+        "https://wbk-assets.webook.com/8.1/assets/index-f2yR6I87.js",
         "https://wbk-assets.webook.com/8.1/assets/vendor-CMb0R77e.js",
         "https://wbk-assets.webook.com/8.1/locales/en/common.json",
         "https://wbk-assets.webook.com/8.1/locales/en/home.json",
@@ -330,7 +330,7 @@
         "https://wbk-assets.webook.com/8.1/locales/en/currency_common.json",
         "https://wbk-assets.webook.com/8.1/locales/en/payment_common.json",
         "https://wbk-assets.webook.com/8.1/locales/en/subscription_common.json",
-        "https://webook.com/cdn-cgi/content?id=K0GSF0a60wh2gFepr5VAT4Ae3H5GrHmTv3BFARCMGJA-1793001264.057626-1.2.1.1-XDno1nJU3x1BvGCj2knyquhnNEiRufbIgr6ol_D89smXN0ItuYTxZNz0COjM2WVd",
+        "https://webook.com/cdn-cgi/content?id=SogsqqXj_dFOy7lDf2DmheKSDVjKCdjWtiufDwvTzV8-1793090394.5849173-1.2.1.1-zsJ9LPtrCUM_l_32HApa0UTMCl9LfP9HrMvoCgcC_1TzMECQViaogf8qLU5vYeLH",
         "https://static.cloudflareinsights.com/beacon.min.js/vce701823e78c4301a35b7e07294d87301792088814092"
       ],
       "page_hint_words": [

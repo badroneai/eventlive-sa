@@ -1,22 +1,22 @@
 {
   "schema": "eventlive.harvest-os-status.v1",
-  "generated_at": "2026-10-26T08:53:44.727Z",
+  "generated_at": "2026-10-27T09:23:32.970Z",
   "status": "NEEDS_WORK",
   "operating_rule": "Probe before new sources; sample before full harvest; Raw collection is not publication; discovery-only never auto-publishes.",
   "totals": {
     "sources": 88,
-    "candidates": 389,
-    "matched_candidates": 361,
+    "candidates": 380,
+    "matched_candidates": 353,
     "auto_publish_sources": 15,
     "candidate_only_sources": 12,
     "partnership_required_sources": 5,
     "blocked_or_closed_sources": 0,
     "manual_review_sources": 56,
-    "collection_attempted": 39,
+    "collection_attempted": 29,
     "productive_sources": 14,
-    "collector_errors": 9,
+    "collector_errors": 8,
     "chronic_collector_errors": 7,
-    "transient_collector_errors": 2
+    "transient_collector_errors": 1
   },
   "policies": {
     "partnership_required": 5,
@@ -25,23 +25,24 @@
     "manual_review": 56
   },
   "candidates_by_gate": {
-    "catalog-review": 361,
-    "duplicate-review": 4,
-    "source-evidence": 24
+    "catalog-review": 353,
+    "source-evidence": 25,
+    "duplicate-review": 2
   },
   "funnel": {
-    "discovered_this_run": 167,
-    "candidate_queue": 389,
-    "evaluated_for_publish": 389,
-    "linked_existing": 352,
-    "published_new": 8,
-    "blocked": 29,
+    "discovered_this_run": 160,
+    "candidate_queue": 380,
+    "evaluated_for_publish": 380,
+    "linked_existing": 346,
+    "published_new": 6,
+    "blocked": 28,
     "secondary_promoted": 0,
-    "secondary_still_blocked": 37
+    "secondary_still_blocked": 33
   },
   "blocked_reasons": {
-    "possible duplicate requires review: exact-title-city-venue-conflict": 3,
+    "candidate already ended": 1,
     "publication gate source-evidence is not auto-publishable": 22,
+    "possible duplicate requires review: exact-title-city-venue-conflict": 1,
     "possible duplicate requires review: exact-title-city-source-conflict": 1,
     "unknown category requires review": 2,
     "linked catalog row event-music-festival-mdlbeast-soundstorm was superseded by dedupe": 1
@@ -50,62 +51,55 @@
     {
       "id": "moc-cultural-calendar",
       "note": "collector-error: fetch failed [ETIMEDOUT, ENETUNREACH]; fetch failed [ETIMEDOUT, ENETUNREACH]",
-      "error_streak": 61,
+      "error_streak": 62,
       "kind": "chronic",
       "attempted_this_run": true
     },
     {
       "id": "mos-events",
-      "note": "collector-error: fetch failed [ETIMEDOUT, ENETUNREACH]",
-      "error_streak": 61,
+      "note": "collector-error: fetch failed [ETIMEDOUT, ENETUNREACH]; live browser recovery deferred by recent failed probe cooldown",
+      "error_streak": 62,
       "kind": "chronic",
       "attempted_this_run": true
     },
     {
       "id": "moc-cultural-subportals",
       "note": "collector-error: fetch failed [UND_ERR_CONNECT_TIMEOUT]; fetch failed [UND_ERR_CONNECT_TIMEOUT]",
-      "error_streak": 61,
+      "error_streak": 62,
       "kind": "chronic",
       "attempted_this_run": true
     },
     {
       "id": "saudi-pro-league-fixtures",
       "note": "collector-error: fetch failed [EAI_AGAIN]",
-      "error_streak": 41,
+      "error_streak": 42,
       "kind": "chronic",
       "attempted_this_run": true
     },
     {
       "id": "tuwaiq-academy-bootcamps",
       "note": "collector-error: HTTP 403",
-      "error_streak": 38,
+      "error_streak": 39,
       "kind": "chronic",
       "attempted_this_run": true
     },
     {
       "id": "monshaat-events",
       "note": "collector-error: fetch failed [UND_ERR_CONNECT_TIMEOUT]; fetch failed [UND_ERR_CONNECT_TIMEOUT]",
-      "error_streak": 9,
+      "error_streak": 10,
       "kind": "chronic",
       "attempted_this_run": true
     },
     {
       "id": "qassim-chamber-events",
-      "note": "collector-error: HTTP 403; live browser recovery deferred by recent failed probe cooldown",
-      "error_streak": 7,
+      "note": "collector-error: HTTP 403",
+      "error_streak": 8,
       "kind": "chronic",
       "attempted_this_run": true
     },
     {
-      "id": "visit-saudi-calendar-pdf",
-      "note": "The operation was aborted due to timeout; live browser recovery deferred by recent failed probe cooldown",
-      "error_streak": 2,
-      "kind": "transient",
-      "attempted_this_run": true
-    },
-    {
-      "id": "sdaia-calendar-events",
-      "note": "request-rejected; browser recovery encountered an access-protection page",
+      "id": "asharqia-chamber-events",
+      "note": "fetch failed [UND_ERR_CONNECT_TIMEOUT]; live browser recovery deferred by recent failed probe cooldown",
       "error_streak": 1,
       "kind": "transient",
       "attempted_this_run": true
