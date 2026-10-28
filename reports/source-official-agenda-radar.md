@@ -1,6 +1,6 @@
 # EventLive Official Agenda Radar
 
-Generated at: 2026-10-27T08:39:19.910Z
+Generated at: 2026-10-28T08:42:07.258Z
 
 Time scope: current-and-upcoming-only
 

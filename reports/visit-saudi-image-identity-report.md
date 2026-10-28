@@ -1,14 +1,14 @@
 # EventLive Visit Saudi Image Identity Report
 
-- generated_at: 2026-10-27T09:06:20.673Z
-- pdf_crop_assignments: 28
+- generated_at: 2026-10-28T09:04:10.573Z
+- pdf_crop_assignments: 27
 - verified: 27
-- struck: 1
+- struck: 0
 - slots_seen_this_cycle: 30
 
 ## Struck (fell back to generated cover)
 
-- كايف المزرعة (visit-saudi-summer-2026-p004-bottom-left.jpg) - slot-vacated - no dated card currently occupies page 4 bottom-left of https://www.visitsaudi.com/content/dam/documents/saudi-calendar-ar.pdf
+- none
 
 ## Verified
 

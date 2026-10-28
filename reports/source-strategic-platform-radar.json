@@ -1,6 +1,6 @@
 {
   "schema": "eventlive.source-strategic-platform-radar.v1",
-  "generated_at": "2026-10-27T08:39:44.140Z",
+  "generated_at": "2026-10-28T08:42:31.739Z",
   "policy": {
     "allowed_use": "official source evidence refresh, API-surface mapping, partnership prioritization, extractor backlog decisions",
     "disallowed_use": "direct catalog publication without official confirmation and duplicate review"
@@ -330,7 +330,7 @@
         "https://wbk-assets.webook.com/8.1/locales/en/currency_common.json",
         "https://wbk-assets.webook.com/8.1/locales/en/payment_common.json",
         "https://wbk-assets.webook.com/8.1/locales/en/subscription_common.json",
-        "https://webook.com/cdn-cgi/content?id=SogsqqXj_dFOy7lDf2DmheKSDVjKCdjWtiufDwvTzV8-1793090394.5849173-1.2.1.1-zsJ9LPtrCUM_l_32HApa0UTMCl9LfP9HrMvoCgcC_1TzMECQViaogf8qLU5vYeLH",
+        "https://webook.com/cdn-cgi/content?id=p25BUojRvEiH2XxPdr_lBYglJJlVwnXRr3wTUUx3rRo-1793176962.0055468-1.2.1.1-OhrviFlQxTI4IWmEdqpbtcrYJ6.DxyjKSCe55Z8mukC0J3dMChoW2CLHXRb8shNa",
         "https://static.cloudflareinsights.com/beacon.min.js/vce701823e78c4301a35b7e07294d87301792088814092"
       ],
       "page_hint_words": [

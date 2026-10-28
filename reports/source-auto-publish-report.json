@@ -1,18 +1,18 @@
 {
-  "published_at": "2026-10-27T09:06:17.979Z",
+  "published_at": "2026-10-28T09:04:06.771Z",
   "dry_run": false,
   "include_partner": true,
   "source_candidates": "data/source_candidates.json",
   "events_catalog": "data/events_catalog.json",
-  "candidates_seen": 380,
+  "candidates_seen": 377,
   "totals": {
-    "candidates_seen": 380,
-    "published": 6,
+    "candidates_seen": 377,
+    "published": 2,
     "linked_existing": 346,
-    "blocked": 28,
+    "blocked": 29,
     "duplicate_review_alerts": 2,
     "category_fallback_alerts": 0,
-    "reconciled": 352,
+    "reconciled": 348,
     "session_windows_reconciled": 0
   },
   "session_window_changes": [],
@@ -60,34 +60,14 @@
   ],
   "published": [
     {
-      "candidate_id": "candidate-umm-al-qura-events-رحلة-ابن-بطوطة-عبر-الثقافات-والشعوب-20261027-e5be517d",
-      "event_id": "event-رحلة-ابن-بطوطة-عبر-الثقافات-والشعوب",
-      "title": "رحلة ابن بطوطة عبر الثقافات والشعوب"
+      "candidate_id": "candidate-umm-al-qura-events-استراتيجيات-التدريس-والدعم-الأكاديمي-للطلبة-ذوي-الاعاقة-20261028-620d2326",
+      "event_id": "event-استراتيجيات-التدريس-والدعم-الأكاديمي-للطلبة-ذوي-الاعاقة",
+      "title": "استراتيجيات التدريس والدعم الأكاديمي للطلبة ذوي الاعاقة"
     },
     {
-      "candidate_id": "candidate-umm-al-qura-events-إدارة-المشاريع-الأكاديمية-20261027-f098deb5",
-      "event_id": "event-إدارة-المشاريع-الأكاديمية",
-      "title": "إدارة المشاريع الأكاديمية"
-    },
-    {
-      "candidate_id": "candidate-umm-al-qura-events-معسكر-المهارات-النفسية-قوة-الإنصات-كيف-تستمع-بذكاء-لتجربة-صديقك-الحية-؟-20261027-6c39934b",
-      "event_id": "event-معسكر-المهارات-النفسية-قوة-الإنصات-كيف-تستمع-بذكاء-لتجربة-صديقك-الحية-؟",
-      "title": "معسكر المهارات النفسية (قوة الإنصات: كيف تستمع بذكاء لتجربة صديقك الحية ؟)"
-    },
-    {
-      "candidate_id": "candidate-umm-al-qura-events-اللقاء-التعريفي-لبرنامج-الاختبارات-المعيارية-20261028-2728e919",
-      "event_id": "event-اللقاء-التعريفي-لبرنامج-الاختبارات-المعيارية",
-      "title": "اللقاء التعريفي لبرنامج الاختبارات المعيارية"
-    },
-    {
-      "candidate_id": "candidate-umm-al-qura-events-فن-إدارة-الوقت-وترتيب-الأولويات-20261102-da646ae2",
-      "event_id": "event-فن-إدارة-الوقت-وترتيب-الأولويات",
-      "title": "فن إدارة الوقت وترتيب الأولويات"
-    },
-    {
-      "candidate_id": "candidate-hayy-jameel-events-jameel-library-november-community-programmes-20261104-18d33419",
-      "event_id": "event-jameel-library-november-community-programmes",
-      "title": "Jameel Library | November Community Programmes"
+      "candidate_id": "candidate-umm-al-qura-events-معسكر-المهارات-النفسية-صناعة-المرونة-تحويل-التعثر-الأكاديمي-والشخصي-إلى--20261028-f48e0c33",
+      "event_id": "event-معسكر-المهارات-النفسية-صناعة-المرونة-تحويل-التعثر-الأكاديمي-والشخصي-إلى-",
+      "title": "معسكر المهارات النفسية (صناعة المرونة: تحويل التعثر الأكاديمي والشخصي إلى خبرة حية)"
     }
   ],
   "linked_existing": [
@@ -596,12 +576,6 @@
       "reason": "already linked to catalog event"
     },
     {
-      "candidate_id": "candidate-saudi-university-events-womens-support-group-a-safe-space-for-connection-and-support-20261006-689954ba",
-      "event_id": "event-womens-support-group-a-safe-space-for-connection-and-support",
-      "title": "Women’s Support group: A Safe Space for Connection and Support",
-      "reason": "already linked to catalog event"
-    },
-    {
       "candidate_id": "candidate-visit-saudi-calendar-pdf-ربع-تون-20261007-4a38d19e",
       "event_id": "event-ربع-تون",
       "title": "ربع تون",
@@ -746,21 +720,15 @@
       "reason": "already linked to catalog event"
     },
     {
-      "candidate_id": "candidate-ithra-events-bridges-to-the-spanish-language-20261026-4dfe9de2",
-      "event_id": "event-bridges-to-the-spanish-language",
-      "title": "Bridges to the Spanish Language",
-      "reason": "already linked to catalog event"
-    },
-    {
       "candidate_id": "candidate-invest-saudi-events-future-investment-initiative-fii-10-20261027-a7444334",
       "event_id": "event-future-investment-initiative-fii-10",
       "title": "Future Investment Initiative (FII 10)",
       "reason": "already linked to catalog event"
     },
     {
-      "candidate_id": "candidate-ithra-events-toddler-tuesday-20261027-1afead7d",
-      "event_id": "event-toddler-tuesday",
-      "title": "Toddler Tuesday",
+      "candidate_id": "candidate-umm-al-qura-events-رحلة-ابن-بطوطة-عبر-الثقافات-والشعوب-20261027-e5be517d",
+      "event_id": "event-رحلة-ابن-بطوطة-عبر-الثقافات-والشعوب",
+      "title": "رحلة ابن بطوطة عبر الثقافات والشعوب",
       "reason": "already linked to catalog event"
     },
     {
@@ -788,9 +756,9 @@
       "reason": "already linked to catalog event"
     },
     {
-      "candidate_id": "candidate-umm-al-qura-events-استراتيجيات-التعامل-مع-قلق-الاختبارات-20261028-5b05f306",
-      "event_id": "event-استراتيجيات-التعامل-مع-قلق-الاختبارات",
-      "title": "استراتيجيات التعامل مع قلق الاختبارات",
+      "candidate_id": "candidate-umm-al-qura-events-اللقاء-التعريفي-لبرنامج-الاختبارات-المعيارية-20261028-2728e919",
+      "event_id": "event-اللقاء-التعريفي-لبرنامج-الاختبارات-المعيارية",
+      "title": "اللقاء التعريفي لبرنامج الاختبارات المعيارية",
       "reason": "already linked to catalog event"
     },
     {
@@ -1100,6 +1068,12 @@
       "reason": "already linked to catalog event"
     },
     {
+      "candidate_id": "candidate-umm-al-qura-events-فن-إدارة-الوقت-وترتيب-الأولويات-20261102-da646ae2",
+      "event_id": "event-فن-إدارة-الوقت-وترتيب-الأولويات",
+      "title": "فن إدارة الوقت وترتيب الأولويات",
+      "reason": "already linked to catalog event"
+    },
+    {
       "candidate_id": "candidate-umm-al-qura-events-من-المشروع-إلى-العرض-العلمي-مهارات-تقديم-المشروع-العلمي-20261102-6ca20b81",
       "event_id": "event-من-المشروع-إلى-العرض-العلمي-مهارات-تقديم-المشروع-العلمي",
       "title": "من المشروع إلى العرض العلمي \" مهارات تقديم المشروع العلمي \"",
@@ -1124,12 +1098,6 @@
       "reason": "already linked to catalog event"
     },
     {
-      "candidate_id": "candidate-ithra-events-ithra-readers-club-20261103-59a0cf0c",
-      "event_id": "event-ithra-readers-club",
-      "title": "Ithra Readers Club",
-      "reason": "already linked to catalog event"
-    },
-    {
       "candidate_id": "candidate-ithra-events-grand-art-space-20261103-e3acefbb",
       "event_id": "event-grand-art-space",
       "title": "Grand Art Space",
@@ -1139,6 +1107,12 @@
       "candidate_id": "candidate-ithra-events-ithra-museum-free-wednesday-20261104-3145f812",
       "event_id": "event-ithra-museum-free-wednesday",
       "title": "Ithra Museum – Free Wednesday",
+      "reason": "already linked to catalog event"
+    },
+    {
+      "candidate_id": "candidate-hayy-jameel-events-jameel-library-november-community-programmes-20261104-18d33419",
+      "event_id": "event-jameel-library-november-community-programmes",
+      "title": "Jameel Library | November Community Programmes",
       "reason": "already linked to catalog event"
     },
     {
@@ -1607,6 +1581,12 @@
       "candidate_id": "candidate-ithra-events-the-art-of-islamic-illumination-20261124-4d93707e",
       "event_id": "event-the-art-of-islamic-illumination",
       "title": "The Art of Islamic Illumination",
+      "reason": "already linked to catalog event"
+    },
+    {
+      "candidate_id": "candidate-ithra-events-ithra-readers-club-20261124-59a0cf0c",
+      "event_id": "event-ithra-readers-club",
+      "title": "Ithra Readers Club",
       "reason": "already linked to catalog event"
     },
     {
@@ -2170,8 +2150,13 @@
   ],
   "blocked": [
     {
-      "candidate_id": "candidate-umm-al-qura-events-خدمات-مركز-غالي-بعمادة-شؤون-الطلاب-20261027-535870aa",
-      "title": "خدمات مركز غالي بعمادة شؤون الطلاب",
+      "candidate_id": "candidate-umm-al-qura-events-استراتيجيات-التعامل-مع-قلق-الاختبارات-20261028-5b05f306",
+      "title": "استراتيجيات التعامل مع قلق الاختبارات",
+      "reason": "possible duplicate already exists: event-استراتيجيات-التعامل-مع-قلق-الاختبارات"
+    },
+    {
+      "candidate_id": "candidate-umm-al-qura-events-فعالية-بعنوان-لبدنك-عليك-حق-20261028-8921d6d7",
+      "title": "فعالية بعنوان لبدنك عليك حق",
       "reason": "candidate already ended"
     },
     {

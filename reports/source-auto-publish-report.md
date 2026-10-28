@@ -1,16 +1,17 @@
 # EventLive Source Auto Publish Report
 
-- published_at: 2026-10-27T09:06:17.979Z
+- published_at: 2026-10-28T09:04:06.771Z
 - dry_run: false
 - include_partner: true
-- candidates_seen: 380
-- published_new: 6
+- candidates_seen: 377
+- published_new: 2
 - linked_existing: 346
-- blocked_remaining: 28
+- blocked_remaining: 29
 - duplicate_review_alerts: 2
 
 ## Blocked summary
 
+- possible duplicate already exists: event-استراتيجيات-التعامل-مع-قلق-الاختبارات: 1
 - candidate already ended: 1
 - publication gate source-evidence is not auto-publishable: 22
 - possible duplicate requires review: exact-title-city-venue-conflict: 1
@@ -20,12 +21,8 @@
 
 | Candidate | Status | Catalog event | Reason |
 |---|---|---|---|
-| candidate-umm-al-qura-events-رحلة-ابن-بطوطة-عبر-الثقافات-والشعوب-20261027-e5be517d | published | event-رحلة-ابن-بطوطة-عبر-الثقافات-والشعوب | رحلة ابن بطوطة عبر الثقافات والشعوب |
-| candidate-umm-al-qura-events-إدارة-المشاريع-الأكاديمية-20261027-f098deb5 | published | event-إدارة-المشاريع-الأكاديمية | إدارة المشاريع الأكاديمية |
-| candidate-umm-al-qura-events-معسكر-المهارات-النفسية-قوة-الإنصات-كيف-تستمع-بذكاء-لتجربة-صديقك-الحية-؟-20261027-6c39934b | published | event-معسكر-المهارات-النفسية-قوة-الإنصات-كيف-تستمع-بذكاء-لتجربة-صديقك-الحية-؟ | معسكر المهارات النفسية (قوة الإنصات: كيف تستمع بذكاء لتجربة صديقك الحية ؟) |
-| candidate-umm-al-qura-events-اللقاء-التعريفي-لبرنامج-الاختبارات-المعيارية-20261028-2728e919 | published | event-اللقاء-التعريفي-لبرنامج-الاختبارات-المعيارية | اللقاء التعريفي لبرنامج الاختبارات المعيارية |
-| candidate-umm-al-qura-events-فن-إدارة-الوقت-وترتيب-الأولويات-20261102-da646ae2 | published | event-فن-إدارة-الوقت-وترتيب-الأولويات | فن إدارة الوقت وترتيب الأولويات |
-| candidate-hayy-jameel-events-jameel-library-november-community-programmes-20261104-18d33419 | published | event-jameel-library-november-community-programmes | Jameel Library | November Community Programmes |
+| candidate-umm-al-qura-events-استراتيجيات-التدريس-والدعم-الأكاديمي-للطلبة-ذوي-الاعاقة-20261028-620d2326 | published | event-استراتيجيات-التدريس-والدعم-الأكاديمي-للطلبة-ذوي-الاعاقة | استراتيجيات التدريس والدعم الأكاديمي للطلبة ذوي الاعاقة |
+| candidate-umm-al-qura-events-معسكر-المهارات-النفسية-صناعة-المرونة-تحويل-التعثر-الأكاديمي-والشخصي-إلى--20261028-f48e0c33 | published | event-معسكر-المهارات-النفسية-صناعة-المرونة-تحويل-التعثر-الأكاديمي-والشخصي-إلى- | معسكر المهارات النفسية (صناعة المرونة: تحويل التعثر الأكاديمي والشخصي إلى خبرة حية) |
 | candidate-moc-cultural-subportals-skill-development-initiative-20210714-10f7dc2c | linked-existing | event-skill-development-initiative | already linked to catalog event |
 | candidate-moc-cultural-subportals-sitar-20220921-cda2e068 | linked-existing | event-sitar | already linked to catalog event |
 | candidate-moc-cultural-subportals-urban-transformation-initiative-20241031-7a933cab | linked-existing | event-urban-transformation-initiative | already linked to catalog event |
@@ -110,7 +107,6 @@
 | candidate-tuwaiq-academy-bootcamps-معسكر-هندسة-الحوسبة-السحابية-باستخدام-google-cloud-20261004-8790e021 | linked-existing | event-معسكر-هندسة-الحوسبة-السحابية-باستخدام-google-cloud | already linked to catalog event |
 | candidate-tuwaiq-academy-bootcamps-معسكر-الدرونز-عالية-الأداء-20261004-c428ead9 | linked-existing | event-معسكر-الدرونز-عالية-الأداء | already linked to catalog event |
 | candidate-tuwaiq-academy-bootcamps-معسكر-الاستراتيجية-في-عصر-الذكاء-الاصطناعي-والتحول-الرقمي-20261005-c1f05c69 | linked-existing | event-معسكر-الاستراتيجية-في-عصر-الذكاء-الاصطناعي-والتحول-الرقمي | already linked to catalog event |
-| candidate-saudi-university-events-womens-support-group-a-safe-space-for-connection-and-support-20261006-689954ba | linked-existing | event-womens-support-group-a-safe-space-for-connection-and-support | already linked to catalog event |
 | candidate-visit-saudi-calendar-pdf-ربع-تون-20261007-4a38d19e | linked-existing | event-ربع-تون | already linked to catalog event |
 | candidate-hayy-jameel-events-hayy-cinema-october-2026-20261007-84cc2d26 | linked-existing | event-hayy-cinema-october-2026 | already linked to catalog event |
 | candidate-umm-al-qura-events-حراك-يعود-من-جديد-بداية-جديدة-وأثر-مستدام-20261007-1529f492 | linked-existing | event-حراك-يعود-من-جديد-بداية-جديدة-وأثر-مستدام | already linked to catalog event |
@@ -135,14 +131,13 @@
 | candidate-riyadh-city-events-global-health-exhibition-20261026-9ce4303f | linked-existing | event-global-health-exhibition | already linked to catalog event |
 | candidate-ithra-events-emboss-printing-experience-20261026-2671d1ce | linked-existing | event-emboss-printing-experience | already linked to catalog event |
 | candidate-ithra-events-creative-writing-club-20261026-a7f18ce9 | linked-existing | event-creative-writing-club | already linked to catalog event |
-| candidate-ithra-events-bridges-to-the-spanish-language-20261026-4dfe9de2 | linked-existing | event-bridges-to-the-spanish-language | already linked to catalog event |
 | candidate-invest-saudi-events-future-investment-initiative-fii-10-20261027-a7444334 | linked-existing | event-future-investment-initiative-fii-10 | already linked to catalog event |
-| candidate-ithra-events-toddler-tuesday-20261027-1afead7d | linked-existing | event-toddler-tuesday | already linked to catalog event |
+| candidate-umm-al-qura-events-رحلة-ابن-بطوطة-عبر-الثقافات-والشعوب-20261027-e5be517d | linked-existing | event-رحلة-ابن-بطوطة-عبر-الثقافات-والشعوب | already linked to catalog event |
 | candidate-ithra-events-on-this-carpet-20261027-2972e041 | linked-existing | event-on-this-carpet | already linked to catalog event |
 | candidate-ithra-events-stem-xpert-club-20261027-28ee60b9 | linked-existing | event-stem-xpert-club | already linked to catalog event |
 | candidate-eye-of-riyadh-events-real-estate-supply-chain-forum-20261028-206f7fb8 | linked-existing | event-real-estate-supply-chain-forum | already linked to catalog event |
 | candidate-eye-of-riyadh-events-cips-mena-procurement-and-supply-chain-futures-conference-and-awards-20261028-18fb7207 | linked-existing | event-cips-mena-procurement-and-supply-chain-futures-conference-and-awards | already linked to catalog event |
-| candidate-umm-al-qura-events-استراتيجيات-التعامل-مع-قلق-الاختبارات-20261028-5b05f306 | linked-existing | event-استراتيجيات-التعامل-مع-قلق-الاختبارات | already linked to catalog event |
+| candidate-umm-al-qura-events-اللقاء-التعريفي-لبرنامج-الاختبارات-المعيارية-20261028-2728e919 | linked-existing | event-اللقاء-التعريفي-لبرنامج-الاختبارات-المعيارية | already linked to catalog event |
 | candidate-ithra-events-story-land-20261028-bb5dc01b | linked-existing | event-story-land | already linked to catalog event |
 | candidate-umm-al-qura-events-التعريف-بمنظومة-تقييم-الأداء-للمقيمين-20261028-919c2649 | linked-existing | event-التعريف-بمنظومة-تقييم-الأداء-للمقيمين | already linked to catalog event |
 | candidate-misk-hub-events-stc-x-misk-workshops-series-20261028-089e06b6 | linked-existing | event-stc-x-misk-workshops-series | already linked to catalog event |
@@ -194,13 +189,14 @@
 | candidate-ithra-events-children-story-time-20261102-f545fa69 | linked-existing | event-children-story-time | already linked to catalog event |
 | candidate-ithra-events-imagination-oasis-20261102-104f8079 | linked-existing | event-imagination-oasis | already linked to catalog event |
 | candidate-ithra-events-ithras-kids-community-20261102-5aadcf19 | linked-existing | event-ithras-kids-community | already linked to catalog event |
+| candidate-umm-al-qura-events-فن-إدارة-الوقت-وترتيب-الأولويات-20261102-da646ae2 | linked-existing | event-فن-إدارة-الوقت-وترتيب-الأولويات | already linked to catalog event |
 | candidate-umm-al-qura-events-من-المشروع-إلى-العرض-العلمي-مهارات-تقديم-المشروع-العلمي-20261102-6ca20b81 | linked-existing | event-من-المشروع-إلى-العرض-العلمي-مهارات-تقديم-المشروع-العلمي | already linked to catalog event |
 | candidate-asharqia-chamber-events-منتدى-المرأة-الاقتصادي-2026م-بعنوان-من-التمكين-إلى-التأثير-الاقتصادي-20261103-96f2a7c4 | linked-existing | event-منتدى-المرأة-الاقتصادي-2026م-بعنوان-من-التمكين-إلى-التأثير-الاقتصادي | already linked to catalog event |
 | candidate-ithra-events-chess-hub-20261103-4919439a | linked-existing | event-chess-hub | already linked to catalog event |
 | candidate-ithra-events-childrens-art-club-20261103-ce77ebe2 | linked-existing | event-childrens-art-club | already linked to catalog event |
-| candidate-ithra-events-ithra-readers-club-20261103-59a0cf0c | linked-existing | event-ithra-readers-club | already linked to catalog event |
 | candidate-ithra-events-grand-art-space-20261103-e3acefbb | linked-existing | event-grand-art-space | already linked to catalog event |
 | candidate-ithra-events-ithra-museum-free-wednesday-20261104-3145f812 | linked-existing | event-ithra-museum-free-wednesday | already linked to catalog event |
+| candidate-hayy-jameel-events-jameel-library-november-community-programmes-20261104-18d33419 | linked-existing | event-jameel-library-november-community-programmes | already linked to catalog event |
 | candidate-visit-saudi-calendar-uci-urban-cycling-world-championships-20261104-4fa77aa9 | linked-existing | event-uci-urban-cycling-world-championships | already linked to catalog event |
 | candidate-ithra-events-from-saudi-home-20261104-e97ae151 | linked-existing | event-from-saudi-home | already linked to catalog event |
 | candidate-ithra-events-storyteller-of-the-day-20261104-94528a46 | linked-existing | event-storyteller-of-the-day | already linked to catalog event |
@@ -279,6 +275,7 @@
 | candidate-umm-al-qura-events-الترشح-للدبلوم-المتوسط-امن-المعلومات-حضوري-بالتعاون-مع-جمعية-الرياض-للتن-20261123-1b46965d | linked-existing | event-الترشح-للدبلوم-المتوسط-امن-المعلومات-حضوري-بالتعاون-مع-جمعية-الرياض-للتن | already linked to catalog event |
 | candidate-riyadh-city-events-general-aviation-airshow-aero-middle-east-x-sand-fun-20261124-517c200d | linked-existing | event-general-aviation-airshow-aero-middle-east-x-sand-fun | already linked to catalog event |
 | candidate-ithra-events-the-art-of-islamic-illumination-20261124-4d93707e | linked-existing | event-the-art-of-islamic-illumination | already linked to catalog event |
+| candidate-ithra-events-ithra-readers-club-20261124-59a0cf0c | linked-existing | event-ithra-readers-club | already linked to catalog event |
 | candidate-hayy-jameel-events-hayy-arts-made-with-your-magic-jeddah-20261125-fb5181fc | linked-existing | event-hayy-arts-made-with-your-magic-jeddah | already linked to catalog event |
 | candidate-mdlbeast-events-xp-music-futures-2026-20261126-19e9b824 | linked-existing | event-xp-music-futures-2026 | already linked to catalog event |
 | candidate-experience-alula-events-ancient-kingdoms-festival-20261126-a8081cef | linked-existing | event-ancient-kingdoms-festival | already linked to catalog event |
@@ -372,7 +369,8 @@
 | candidate-qassim-university-events-استضافة-مؤتمر-ieee-mecom-2027-20271101-510cb4b1 | linked-existing | event-استضافة-مؤتمر-ieee-mecom-2027 | already linked to catalog event |
 | candidate-umm-al-qura-events-الترشح-للدبلوم-المتوسط-في-التحول-الرقمي-في-جازان-بالتعاون-مع-أكاديمية-غر-20271201-5cace3ad | linked-existing | event-دبلوم-التحول-الرقمي | already linked to catalog event |
 | candidate-saudi-space-agency-events-space-debris-conference-2028-20280215-03719f44 | linked-existing | event-space-debris-conference-2028 | already linked to catalog event |
-| candidate-umm-al-qura-events-خدمات-مركز-غالي-بعمادة-شؤون-الطلاب-20261027-535870aa | blocked | - | candidate already ended |
+| candidate-umm-al-qura-events-استراتيجيات-التعامل-مع-قلق-الاختبارات-20261028-5b05f306 | blocked | - | possible duplicate already exists: event-استراتيجيات-التعامل-مع-قلق-الاختبارات |
+| candidate-umm-al-qura-events-فعالية-بعنوان-لبدنك-عليك-حق-20261028-8921d6d7 | blocked | - | candidate already ended |
 | candidate-saudicon-events-annual-international-geotechnical-innovation-conference-igic-2026-20261109-8ea8aaa9 | blocked | - | publication gate source-evidence is not auto-publishable |
 | candidate-saudicon-events-المؤتمر-الدولي-للابتكار-في-الهندسة-الجيوتقنية-2026-20261109-3ded1822 | blocked | - | publication gate source-evidence is not auto-publishable |
 | candidate-saudicon-events-2026-annual-international-geotechnical-innovation-conference-igic-2026-20261109-8c221fe0 | blocked | - | publication gate source-evidence is not auto-publishable |
