@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-28T08:54:51.849Z",
+  "generated_at": "2026-10-29T08:37:21.086Z",
   "source_registry": "data/source_registry.json",
   "collection_report": "reports/source-collection-report.json",
   "output_dir": "data/raw/browser-probes",
@@ -7,169 +7,25 @@
     "selected_ids": [],
     "scope": "priority",
     "limit": 8,
-    "probed_this_run": 2,
-    "fresh_results_available": 9,
+    "probed_this_run": 3,
+    "fresh_results_available": 4,
     "wait_ms": 4500,
     "timeout_ms": 30000,
     "failure_cooldown_hours": 72
   },
   "methodology": "Browser-level probe inspired by cafe platform work: classify fetchability, hydration payloads, network APIs, structured HTML, rendered DOM, and policy-protected lanes before writing extractors.",
   "totals": {
-    "probed": 9,
+    "probed": 4,
     "browser_network_api": 1,
     "browser_hydration_payload": 0,
-    "rendered_html_candidates": 1,
+    "rendered_html_candidates": 0,
     "blocked_or_protected": 0,
     "policy_skipped": 0
   },
   "sources": [
     {
-      "id": "moc-cultural-calendar",
-      "probed_at": "2026-10-26T08:10:11.735Z",
-      "name": "Ministry of Culture Cultural Calendar",
-      "priority": 3,
-      "url": "https://www.moc.gov.sa/en/Modules/Pages/Cultural-Calendar",
-      "final_url": "chrome-error://chromewebdata/",
-      "status": "error",
-      "http_status": 0,
-      "navigation_error": "page.goto: Timeout 30000ms exceeded.\nCall log:\n  - navigating to \"https://www.moc.gov.sa/en/Modules/Pages/Cultural-Calendar\", waiting until \"domcontentloaded\"\n",
-      "duration_ms": 135816,
-      "classification": "empty-or-shell",
-      "next_action": "اعتبرها shell وابحث عن API أو مسار بديل قبل أي collector.",
-      "title": "",
-      "text_bytes": 0,
-      "html_bytes": 0,
-      "html_snapshot": "data/raw/browser-probes/moc-cultural-calendar-2026-10-26T08-07-55-458Z.html",
-      "screenshot": "",
-      "signals": {
-        "has_next_data": false,
-        "has_nuxt": false,
-        "has_json_ld": false,
-        "has_event_schema": false,
-        "date_snippets": [],
-        "event_like_links": []
-      },
-      "script_signals": {
-        "next_data_scripts": 0,
-        "nuxt_scripts": 0,
-        "json_ld_scripts": 0,
-        "large_inline_scripts": 0
-      },
-      "network_total": 0,
-      "network_endpoints": [],
-      "network_sample": []
-    },
-    {
-      "id": "mos-events",
-      "probed_at": "2026-10-26T08:12:26.899Z",
-      "name": "Ministry of Sport Events",
-      "priority": 4,
-      "url": "https://www.mos.gov.sa/en/media/events",
-      "final_url": "chrome-error://chromewebdata/",
-      "status": "error",
-      "http_status": 0,
-      "navigation_error": "page.goto: Timeout 30000ms exceeded.\nCall log:\n  - navigating to \"https://www.mos.gov.sa/en/media/events\", waiting until \"domcontentloaded\"\n",
-      "duration_ms": 135128,
-      "classification": "empty-or-shell",
-      "next_action": "اعتبرها shell وابحث عن API أو مسار بديل قبل أي collector.",
-      "title": "",
-      "text_bytes": 0,
-      "html_bytes": 0,
-      "html_snapshot": "data/raw/browser-probes/mos-events-2026-10-26T08-07-55-458Z.html",
-      "screenshot": "",
-      "signals": {
-        "has_next_data": false,
-        "has_nuxt": false,
-        "has_json_ld": false,
-        "has_event_schema": false,
-        "date_snippets": [],
-        "event_like_links": []
-      },
-      "script_signals": {
-        "next_data_scripts": 0,
-        "nuxt_scripts": 0,
-        "json_ld_scripts": 0,
-        "large_inline_scripts": 0
-      },
-      "network_total": 0,
-      "network_endpoints": [],
-      "network_sample": []
-    },
-    {
-      "id": "monshaat-events",
-      "probed_at": "2026-10-26T08:14:42.070Z",
-      "name": "Monsha'at All Events",
-      "priority": 9,
-      "url": "https://www.monshaat.gov.sa/en/events-list",
-      "final_url": "chrome-error://chromewebdata/",
-      "status": "error",
-      "http_status": 0,
-      "navigation_error": "page.goto: Timeout 30000ms exceeded.\nCall log:\n  - navigating to \"https://www.monshaat.gov.sa/en/events-list\", waiting until \"domcontentloaded\"\n",
-      "duration_ms": 135133,
-      "classification": "empty-or-shell",
-      "next_action": "اعتبرها shell وابحث عن API أو مسار بديل قبل أي collector.",
-      "title": "",
-      "text_bytes": 0,
-      "html_bytes": 0,
-      "html_snapshot": "data/raw/browser-probes/monshaat-events-2026-10-26T08-07-55-458Z.html",
-      "screenshot": "",
-      "signals": {
-        "has_next_data": false,
-        "has_nuxt": false,
-        "has_json_ld": false,
-        "has_event_schema": false,
-        "date_snippets": [],
-        "event_like_links": []
-      },
-      "script_signals": {
-        "next_data_scripts": 0,
-        "nuxt_scripts": 0,
-        "json_ld_scripts": 0,
-        "large_inline_scripts": 0
-      },
-      "network_total": 0,
-      "network_endpoints": [],
-      "network_sample": []
-    },
-    {
-      "id": "saudi-pro-league-fixtures",
-      "probed_at": "2026-10-26T08:14:59.902Z",
-      "name": "Saudi Pro League Fixtures",
-      "priority": 30,
-      "url": "https://api.saudi-pro-league.pulselive.com/football/fixtures?comps=215&compSeasons=859&pageSize=100&statuses=C,U,L&sort=asc",
-      "final_url": "chrome-error://chromewebdata/",
-      "status": "error",
-      "http_status": 0,
-      "navigation_error": "page.goto: net::ERR_NAME_NOT_RESOLVED at https://api.saudi-pro-league.pulselive.com/football/fixtures?comps=215&compSeasons=859&pageSize=100&statuses=C,U,L&sort=asc\nCall log:\n  - navigating to \"https://api.saudi-pro-league.pulselive.com/football/fixtures?comps=215&compSeasons=859&pageSize=100&statuses=C,U,L&sort=asc\", waiting until \"domcontentloaded\"\n",
-      "duration_ms": 10879,
-      "classification": "empty-or-shell",
-      "next_action": "اعتبرها shell وابحث عن API أو مسار بديل قبل أي collector.",
-      "title": "",
-      "text_bytes": 0,
-      "html_bytes": 0,
-      "html_snapshot": "data/raw/browser-probes/saudi-pro-league-fixtures-2026-10-26T08-07-55-458Z.html",
-      "screenshot": "",
-      "signals": {
-        "has_next_data": false,
-        "has_nuxt": false,
-        "has_json_ld": false,
-        "has_event_schema": false,
-        "date_snippets": [],
-        "event_like_links": []
-      },
-      "script_signals": {
-        "next_data_scripts": 0,
-        "nuxt_scripts": 0,
-        "json_ld_scripts": 0,
-        "large_inline_scripts": 0
-      },
-      "network_total": 0,
-      "network_endpoints": [],
-      "network_sample": []
-    },
-    {
       "id": "visit-saudi-calendar-pdf",
-      "probed_at": "2026-10-26T08:15:00.890Z",
+      "probed_at": "2026-10-29T08:37:23.467Z",
       "name": "Visit Saudi Summer Calendar PDF",
       "priority": 34,
       "url": "https://www.visitsaudi.com/content/dam/documents/saudi-calendar-ar.pdf",
@@ -177,49 +33,13 @@
       "status": "error",
       "http_status": 0,
       "navigation_error": "page.goto: Download is starting\nCall log:\n  - navigating to \"https://www.visitsaudi.com/content/dam/documents/saudi-calendar-ar.pdf\", waiting until \"domcontentloaded\"\n",
-      "duration_ms": 952,
+      "duration_ms": 1743,
       "classification": "empty-or-shell",
       "next_action": "اعتبرها shell وابحث عن API أو مسار بديل قبل أي collector.",
       "title": "",
       "text_bytes": 0,
       "html_bytes": 39,
-      "html_snapshot": "data/raw/browser-probes/visit-saudi-calendar-pdf-2026-10-26T08-07-55-458Z.html",
-      "screenshot": "",
-      "signals": {
-        "has_next_data": false,
-        "has_nuxt": false,
-        "has_json_ld": false,
-        "has_event_schema": false,
-        "date_snippets": [],
-        "event_like_links": []
-      },
-      "script_signals": {
-        "next_data_scripts": 0,
-        "nuxt_scripts": 0,
-        "json_ld_scripts": 0,
-        "large_inline_scripts": 0
-      },
-      "network_total": 0,
-      "network_endpoints": [],
-      "network_sample": []
-    },
-    {
-      "id": "moc-cultural-subportals",
-      "probed_at": "2026-10-26T08:17:17.720Z",
-      "name": "Ministry of Culture Commission Calendars",
-      "priority": 37,
-      "url": "https://music.moc.gov.sa/Cultural-Calendar",
-      "final_url": "chrome-error://chromewebdata/",
-      "status": "error",
-      "http_status": 0,
-      "navigation_error": "page.goto: Timeout 30000ms exceeded.\nCall log:\n  - navigating to \"https://music.moc.gov.sa/Cultural-Calendar\", waiting until \"domcontentloaded\"\n",
-      "duration_ms": 136794,
-      "classification": "empty-or-shell",
-      "next_action": "اعتبرها shell وابحث عن API أو مسار بديل قبل أي collector.",
-      "title": "",
-      "text_bytes": 0,
-      "html_bytes": 0,
-      "html_snapshot": "data/raw/browser-probes/moc-cultural-subportals-2026-10-26T08-07-55-458Z.html",
+      "html_snapshot": "data/raw/browser-probes/visit-saudi-calendar-pdf-2026-10-29T08-37-21-086Z.html",
       "screenshot": "",
       "signals": {
         "has_next_data": false,
@@ -241,7 +61,7 @@
     },
     {
       "id": "riyadh-city-events",
-      "probed_at": "2026-10-28T08:55:05.468Z",
+      "probed_at": "2026-10-29T08:37:30.489Z",
       "name": "Riyadh City Events",
       "priority": 51,
       "url": "https://riyadh.sa/en/events/all",
@@ -249,34 +69,21 @@
       "status": "ok",
       "http_status": 200,
       "navigation_error": "",
-      "duration_ms": 13239,
-      "classification": "rendered-html-candidates",
-      "next_action": "اكتب extractor مرن من DOM بعد الرندر أو حسن selector الحالي.",
-      "title": "الموقع الرسمي لمدينة الرياض",
-      "text_bytes": 828,
-      "html_bytes": 155265,
-      "html_snapshot": "data/raw/browser-probes/riyadh-city-events-2026-10-28T08-54-51-849Z.html",
-      "screenshot": "data/raw/browser-probes/riyadh-city-events-2026-10-28T08-54-51-849Z.png",
+      "duration_ms": 6984,
+      "classification": "rendered-text-review",
+      "next_action": "راجع الصفحة يدويًا وحدد هل هي مصدر أدلة أم صفحة تعريفية فقط.",
+      "title": "maintenance",
+      "text_bytes": 305,
+      "html_bytes": 425365,
+      "html_snapshot": "data/raw/browser-probes/riyadh-city-events-2026-10-29T08-37-21-086Z.html",
+      "screenshot": "data/raw/browser-probes/riyadh-city-events-2026-10-29T08-37-21-086Z.png",
       "signals": {
         "has_next_data": false,
         "has_nuxt": false,
         "has_json_ld": false,
         "has_event_schema": false,
         "date_snippets": [],
-        "event_like_links": [
-          {
-            "text": "",
-            "href": "https://riyadh.sa/en/events/all"
-          },
-          {
-            "text": "All Events",
-            "href": "https://riyadh.sa/en/events/all"
-          },
-          {
-            "text": "events.title",
-            "href": "https://riyadh.sa/en/events"
-          }
-        ]
+        "event_like_links": []
       },
       "script_signals": {
         "next_data_scripts": 0,
@@ -284,34 +91,13 @@
         "json_ld_scripts": 0,
         "large_inline_scripts": 0
       },
-      "network_total": 2,
+      "network_total": 0,
       "network_endpoints": [],
-      "network_sample": [
-        {
-          "method": "GET",
-          "status": 200,
-          "url": "https://riyadh.sa/assets/i18n/ar.json",
-          "content_type": "application/json",
-          "resource_type": "xhr",
-          "request_post_data": "",
-          "response_shape": "json-like-invalid",
-          "preview": "{ \"lang\": \"ar\", \"main\": { \"title\": \"مدينة الرياض\" }, \"lastUpdated\": { \"label\": \"تاريخ آخر تعديل\", \"timezone\": \"بتوقيت السعودية\" }, \"cookies\": { \"title\": \"ملفات تعريف الارتباط\", \"consentIntro\": \"هذا الموقع يستخدم ملفات تعريف الارتباط الخاصة للتأكد من سهولة الاستخدام وضمان تحسين تجربتك أثناء التصفح. من خلال الاستمرار في تصفح هذا الموقع، فإنك تقر بقبول استخدام ملفات تعريف الارتباط.\", \"privacyPolicy\": \"سياسة الخصوصية\", \"accept\": \"قبول\", \"reject\": \"رفض\", \"manageLink\": \"إدارة ملفات تعريف الارتباط\", \"manageTitle\": \"إدارة ملفات تعريف الارتباط\", \"thanksTitle\": \"ملفات تعريف الارتباط\", \"intro\": \"عند زيارة أي موقع على الويب، قد يخزّن هذا الأخير المعلومات على المستعرض أو يستردها على شكل ملفات تعريف ارتباط على الأغلب. وقد تكون هذه المعلومات عنك أو عن تفضيلاتك أو عن جهازك أو قد يتم استخدامها ليعمل الموقع كما تتوقع. لا تعرّف المعلومات عنك عادةً مباشرةً، ولكنها قد تمنحك تجربة ويب أكثر تخصيصًا. يمكنك اختيار عدم السماح ببعض أنواع ملفات تعريف الارتباط. انقر فوق عناوين الفئات المختلفة لمعرفة المزيد وتغيير إعداداتنا الافتراضية. ومع ذلك، يجب أن تعرف أن حظر بعض أنواع ملفات تعريف الارتباط قد يؤثر في تجربتك على الموقع وفي الخدمات التي يمكننا تقديمها.\", \"necessary\": \"ملفات تعريف الارتباط هذه ضرورية للغاية (نشطة دائماً)\", \"performance\": \"ملفات تعريف الارتباط الخاصة بالأداء\", \"functional\": \"ملفات تعريف الارتباط الوظيفية\", \"targeting\": \"ملفات تعريف الارتباط المُستهدفة\", \"confirm\": \"تأكيد خياراتي\", \"rejectAll\": \"رفض الكل\", \"thanksMessage\": \"شكرًا! تم تسجيل استجابتك بنجاح. إذا كنت ترغب في تعديل الإجابة أو تغييرها، يمكنك الرجوع عبر الضغط على زر تراجع.\", \"undo\": \"تراجع\", \"close\": \"إغلاق\" }, \"fileUploader\": { \"hint\": \"الحد الأقصى لحجم الملف المسموح به هو {{size}} ميجابايت، وصيغ الملفات المدعومة تشمل {{"
-        },
-        {
-          "method": "GET",
-          "status": 200,
-          "url": "https://riyadh.sa/assets/i18n/en.json",
-          "content_type": "application/json",
-          "resource_type": "xhr",
-          "request_post_data": "",
-          "response_shape": "json-like-invalid",
-          "preview": "{ \"lang\": \"en\", \"main\": { \"title\": \"Riyadh City\" }, \"lastUpdated\": { \"label\": \"Last Modified Date\", \"timezone\": \"Saudi Arabia Time\" }, \"cookies\": { \"title\": \"Cookies\", \"consentIntro\": \"This site uses its own cookies to ensure ease of use and to improve your experience while browsing. By continuing to browse this site, you acknowledge and accept the use of cookies.\", \"privacyPolicy\": \"Privacy Policy\", \"accept\": \"Accept\", \"reject\": \"Reject\", \"manageLink\": \"Manage Cookies\", \"manageTitle\": \"Manage Cookies\", \"thanksTitle\": \"Cookies\", \"intro\": \"Whenever you visit a website, it may store or retrieve information on your browser, mostly in the form of cookies. This information might be about you, your preferences, or your device, and is mostly used to make the site work as you expect it to. The information does not usually identify you directly, but it can give you a more personalized web experience. You can choose not to allow some types of cookies. Click on the different category headings to find out more and change our default settings. However, you should know that blocking some types of cookies may impact your experience of the site and the services we are able to offer.\", \"necessary\": \"These cookies are strictly necessary (always active)\", \"performance\": \"Performance cookies\", \"functional\": \"Functional cookies\", \"targeting\": \"Targeting cookies\", \"confirm\": \"Confirm my choices\", \"rejectAll\": \"Reject all\", \"thanksMessage\": \"Thank you! Your response has been recorded successfully. If you would like to edit or change your answer, you can go back by clicking the undo button.\", \"undo\": \"Undo\", \"close\": \"Close\" }, \"fileUploader\": { \"hint\": \"Maximum file size allowed is {{size}}"
-        }
-      ]
+      "network_sample": []
     },
     {
       "id": "sdaia-calendar-events",
-      "probed_at": "2026-10-28T08:55:15.599Z",
+      "probed_at": "2026-10-29T08:37:40.969Z",
       "name": "SDAIA Calendar and Events",
       "priority": 54,
       "url": "https://sdaia.gov.sa/en/MediaCenter/Events/Pages/default.aspx",
@@ -319,14 +105,14 @@
       "status": "ok",
       "http_status": 200,
       "navigation_error": "",
-      "duration_ms": 10100,
+      "duration_ms": 10443,
       "classification": "browser-network-api",
       "next_action": "ثبت endpoint مرشحًا كجامع مباشر، ثم اكتب extractor من JSON مع اختبار انحدار.",
       "title": "SDAIA | SDAIA Calendar & Events",
       "text_bytes": 3092,
       "html_bytes": 148333,
-      "html_snapshot": "data/raw/browser-probes/sdaia-calendar-events-2026-10-28T08-54-51-849Z.html",
-      "screenshot": "data/raw/browser-probes/sdaia-calendar-events-2026-10-28T08-54-51-849Z.png",
+      "html_snapshot": "data/raw/browser-probes/sdaia-calendar-events-2026-10-29T08-37-21-086Z.html",
+      "screenshot": "data/raw/browser-probes/sdaia-calendar-events-2026-10-29T08-37-21-086Z.png",
       "signals": {
         "has_next_data": false,
         "has_nuxt": false,
@@ -427,7 +213,7 @@
         {
           "method": "GET",
           "status": 200,
-          "url": "https://sdaia.gov.sa/sdaiaapi/api/feedback/getbypageurl?pageURL=/en/mediacenter/events/pages/default.aspx&_=1793177708138",
+          "url": "https://sdaia.gov.sa/sdaiaapi/api/feedback/getbypageurl?pageURL=/en/mediacenter/events/pages/default.aspx&_=1793263053475",
           "content_type": "application/json",
           "resource_type": "xhr",
           "request_post_data": "",
@@ -439,17 +225,17 @@
         {
           "method": "GET",
           "status": 200,
-          "url": "https://sdaia.gov.sa/sdaiaformapi/api/user/GetNafathInfo?_=1793177708137",
+          "url": "https://sdaia.gov.sa/sdaiaformapi/api/user/GetNafathInfo?_=1793263053474",
           "content_type": "text/html",
           "resource_type": "xhr",
           "request_post_data": "",
           "response_shape": "html",
-          "preview": "<html><head><title>Request Rejected</title></head><body>The requested URL was rejected. Please consult with your administrator.<br><br>Your support ID is: 9822037336341194515<br><br><a href='javascript:history.back();'>[Go Back]</a></body></html>"
+          "preview": "<html><head><title>Request Rejected</title></head><body>The requested URL was rejected. Please consult with your administrator.<br><br>Your support ID is: 8504265215825475763<br><br><a href='javascript:history.back();'>[Go Back]</a></body></html>"
         },
         {
           "method": "GET",
           "status": 200,
-          "url": "https://sdaia.gov.sa/sdaiaapi/api/home/geteninternalpagenavdata?_=1793177708136",
+          "url": "https://sdaia.gov.sa/sdaiaapi/api/home/geteninternalpagenavdata?_=1793263053473",
           "content_type": "application/json",
           "resource_type": "xhr",
           "request_post_data": "",
@@ -459,7 +245,7 @@
         {
           "method": "GET",
           "status": 200,
-          "url": "https://sdaia.gov.sa/sdaiaapi/api/feedback/getbypageurl?pageURL=/en/mediacenter/events/pages/default.aspx&_=1793177708138",
+          "url": "https://sdaia.gov.sa/sdaiaapi/api/feedback/getbypageurl?pageURL=/en/mediacenter/events/pages/default.aspx&_=1793263053475",
           "content_type": "application/json",
           "resource_type": "xhr",
           "request_post_data": "",
