@@ -1,28 +1,46 @@
 {
-  "generated_at": "2026-10-29T09:06:49.580Z",
+  "generated_at": "2026-10-30T09:29:49.741Z",
   "events_file": "dist/events.json",
   "manifest": "data/event_image_cache_manifest.json",
   "image_dir": "dist/assets/event-images",
   "totals": {
     "targets": 500,
-    "cached_total": 904,
-    "fetched": 2,
-    "reused": 492,
+    "cached_total": 907,
+    "fetched": 5,
+    "reused": 489,
     "failed": 6,
     "skipped_recent_failures": 0,
     "remembered_failures": 34
   },
   "fetched": [
     {
-      "source_url": "https://s7g10.scene7.com/is/image/rcu/half-marathon-2026?$Responsive$&fit=stretch&fmt=webp&wid=1920",
-      "file": "dist/assets/event-images/alula-half-marathon-71cb763487.webp",
-      "bytes": 116280,
+      "source_url": "https://hayyjameel.org/wp-content/uploads/2026/10/Jeddah-Roundabouts_-Circling-the-City-2026.-Image-courtesy-of-Art-Jameel1-1100x500.jpg",
+      "file": "dist/assets/event-images/art-jameel-publishing-jeddah-roundabouts-circling-the-city-3a8a4e7b35.jpg",
+      "bytes": 33733,
+      "events": 1
+    },
+    {
+      "source_url": "https://hayyjameel.org/wp-content/uploads/2026/10/DSC04733-scaled-aspect-ratio-2560-1217-1100x500.jpg",
+      "file": "dist/assets/event-images/hayy-markets-azka-farmers-market-pomegranates-edition-53e9cec393.jpg",
+      "bytes": 86472,
+      "events": 1
+    },
+    {
+      "source_url": "https://hayyjameel.org/wp-content/uploads/2026/10/DSC01377-scaled-aspect-ratio-2560-1501-1100x500.jpg",
+      "file": "dist/assets/event-images/hayy-explorers-november-programmes-f2b6ad87be.jpg",
+      "bytes": 81033,
       "events": 1
     },
     {
       "source_url": "https://hayyjameel.org/wp-content/uploads/2026/10/DSC00760-scaled-aspect-ratio-2560-1346-1-1100x500.jpg",
       "file": "dist/assets/event-images/مكتبة-جاميل-november-تشرين-الثاني-نوفمبر-4e5f4c41d9.jpg",
       "bytes": 96047,
+      "events": 1
+    },
+    {
+      "source_url": "https://s7g10.scene7.com/is/image/rcu/half-marathon-2026?$Responsive$&fit=stretch&fmt=webp&wid=1920",
+      "file": "dist/assets/event-images/alula-half-marathon-71cb763487.webp",
+      "bytes": 116280,
       "events": 1
     }
   ],
@@ -120,11 +138,6 @@
     {
       "source_url": "https://www.ithra.com/application/files/cache/thumbnails/71ccb8981524b13e856e38276f2c0cde.jpg",
       "file": "dist/assets/event-images/1-2-3-let-s-rhyme-6df127aea1.jpg",
-      "events": 1
-    },
-    {
-      "source_url": "https://www.ithra.com/application/files/cache/thumbnails/b3d6e2a8839c4f5f1fd761ce0128b3f0.jpg",
-      "file": "dist/assets/event-images/on-this-carpet-fd659c9065.jpg",
       "events": 1
     },
     {
@@ -288,11 +301,6 @@
       "events": 1
     },
     {
-      "source_url": "https://cdn.tuwaiq.edu.sa/initiatives_admin/images/hym412o4.xrm.webp",
-      "file": "dist/assets/event-images/معسكر-تطوير-مواقع-الويب-باستخدام-java-ودمج-تقنيات-الذكاء-الاصطناعي-1a7ddcd5eb.webp",
-      "events": 1
-    },
-    {
       "source_url": "https://cdn.tuwaiq.edu.sa/initiatives_admin/images/1ihbc14l.iun.webp",
       "file": "dist/assets/event-images/معسكر-تطوير-الألعاب-والعوالم-الافتراضية-باستخدام-unreal-engine-73a0badd44.webp",
       "events": 1
@@ -355,11 +363,6 @@
     {
       "source_url": "https://cdn.tuwaiq.edu.sa/initiatives_admin/images/34zdbqh5.wk4.webp",
       "file": "dist/assets/event-images/دبلوم-الأمن-السيبراني-المتقدم-90c2ad28d4.webp",
-      "events": 1
-    },
-    {
-      "source_url": "https://cdn.tuwaiq.edu.sa/initiatives_admin/images/nadcywdn.tl5.webp",
-      "file": "dist/assets/event-images/معسكر-إدارة-الحوكمة-والمخاطر-والامتثال-grc-88592b3651.webp",
       "events": 1
     },
     {
@@ -473,11 +476,6 @@
       "events": 1
     },
     {
-      "source_url": "https://cdn.tuwaiq.edu.sa/initiatives_admin/images/p33x3n31.rj4.webp",
-      "file": "dist/assets/event-images/معسكر-هندسة-الحوسبة-السحابية-باستخدام-google-cloud-ac3f34923b.webp",
-      "events": 1
-    },
-    {
       "source_url": "https://cdn.tuwaiq.edu.sa/initiatives_admin/images/o514uvux.jwp.webp",
       "file": "dist/assets/event-images/معسكر-الدرونز-عالية-الأداء-0d901f248d.webp",
       "events": 1
@@ -528,38 +526,8 @@
       "events": 1
     },
     {
-      "source_url": "https://cdn.rfecc.sa/wp-content/uploads/2026/01/06123740/GqbqdoDWMAAm16R.jpg",
-      "file": "dist/assets/event-images/natrual-expo-af262c6fe0.jpg",
-      "events": 1
-    },
-    {
-      "source_url": "https://fii-institute.org/wp-content/uploads/2026/01/IMG_5042-1024x576.webp",
-      "file": "dist/assets/event-images/future-investment-initiative-fii-10-071b9100b3.webp",
-      "events": 1
-    },
-    {
-      "source_url": "https://api.riyadh.sa/sites/default/files/styles/medium/public/2026-01/Screen%20Shot%202026-01-25%20at%207.17.31%20AM.png?itok=az27tslp",
-      "file": "dist/assets/event-images/future-investment-initiative-71254bda64.png",
-      "events": 1
-    },
-    {
-      "source_url": "https://api.riyadh.sa/sites/default/files/styles/medium/public/2025-12/G4bbhaeXsAA6A8_.jpeg?itok=8ZVB_icJ",
-      "file": "dist/assets/event-images/global-health-exhibition-ca8622ae85.jpg",
-      "events": 1
-    },
-    {
       "source_url": "https://www.ithra.com/application/files/cache/thumbnails/3446449530b9e6bb40e54a10959b0acf.jpg",
       "file": "dist/assets/event-images/the-art-of-public-speaking-571bd8329a.jpg",
-      "events": 1
-    },
-    {
-      "source_url": "https://static.wixstatic.com/media/269912_ae1b1f61c9d443469ca3a36bcf09dcf4%7Emv2.png/v1/fit/w_2500,h_1330,al_c/269912_ae1b1f61c9d443469ca3a36bcf09dcf4%7Emv2.png",
-      "file": "dist/assets/event-images/real-estate-supply-chain-forum-ee10fdce19.png",
-      "events": 1
-    },
-    {
-      "source_url": "https://static.wixstatic.com/media/708478_a08e284e0e2b4361addf88f967bb6b9f%7Emv2.png/v1/fit/w_2500,h_1330,al_c/708478_a08e284e0e2b4361addf88f967bb6b9f%7Emv2.png",
-      "file": "dist/assets/event-images/cips-mena-procurement-and-supply-chain-futures-conference-and-awards-42e0ccbf3d.png",
       "events": 1
     },
     {
@@ -570,11 +538,6 @@
     {
       "source_url": "https://www.ithra.com/application/files/cache/thumbnails/9b5bc052fe8347923f82e94ae6c8ea81.png",
       "file": "dist/assets/event-images/ithra-winter-season-2026-24e095dcda.png",
-      "events": 1
-    },
-    {
-      "source_url": "https://www.ithra.com/application/files/cache/thumbnails/88aa46fd2373012f8545425414c30e70.png",
-      "file": "dist/assets/event-images/there-is-magic-in-eloquence-6d3b3b6d57.png",
       "events": 1
     },
     {
@@ -988,8 +951,43 @@
       "events": 1
     },
     {
+      "source_url": "https://www.ithra.com/application/files/cache/thumbnails/88aa46fd2373012f8545425414c30e70.png",
+      "file": "dist/assets/event-images/there-is-magic-in-eloquence-6d3b3b6d57.png",
+      "events": 1
+    },
+    {
       "source_url": "https://hayyjameel.org/wp-content/uploads/2026/09/IMG-6538-scaled-aspect-ratio-1688-783-1100x500.jpg",
       "file": "dist/assets/event-images/hayy-makers-open-day-plastic-cap-mural-90f0ee58f1.jpg",
+      "events": 1
+    },
+    {
+      "source_url": "https://static.wixstatic.com/media/269912_ae1b1f61c9d443469ca3a36bcf09dcf4%7Emv2.png/v1/fit/w_2500,h_1330,al_c/269912_ae1b1f61c9d443469ca3a36bcf09dcf4%7Emv2.png",
+      "file": "dist/assets/event-images/real-estate-supply-chain-forum-ee10fdce19.png",
+      "events": 1
+    },
+    {
+      "source_url": "https://static.wixstatic.com/media/708478_a08e284e0e2b4361addf88f967bb6b9f%7Emv2.png/v1/fit/w_2500,h_1330,al_c/708478_a08e284e0e2b4361addf88f967bb6b9f%7Emv2.png",
+      "file": "dist/assets/event-images/cips-mena-procurement-and-supply-chain-futures-conference-and-awards-42e0ccbf3d.png",
+      "events": 1
+    },
+    {
+      "source_url": "https://api.riyadh.sa/sites/default/files/styles/medium/public/2025-12/G4bbhaeXsAA6A8_.jpeg?itok=8ZVB_icJ",
+      "file": "dist/assets/event-images/global-health-exhibition-ca8622ae85.jpg",
+      "events": 1
+    },
+    {
+      "source_url": "https://cdn.rfecc.sa/wp-content/uploads/2026/01/06123740/GqbqdoDWMAAm16R.jpg",
+      "file": "dist/assets/event-images/natrual-expo-af262c6fe0.jpg",
+      "events": 1
+    },
+    {
+      "source_url": "https://fii-institute.org/wp-content/uploads/2026/01/IMG_5042-1024x576.webp",
+      "file": "dist/assets/event-images/future-investment-initiative-fii-10-071b9100b3.webp",
+      "events": 1
+    },
+    {
+      "source_url": "https://api.riyadh.sa/sites/default/files/styles/medium/public/2026-01/Screen%20Shot%202026-01-25%20at%207.17.31%20AM.png?itok=az27tslp",
+      "file": "dist/assets/event-images/future-investment-initiative-71254bda64.png",
       "events": 1
     },
     {
@@ -1175,6 +1173,11 @@
     {
       "source_url": "https://api.riyadh.sa/sites/default/files/styles/medium/public/2026-04/Melwah%20Falcon%20Racing%201.jpeg?itok=AUotuvgp",
       "file": "dist/assets/event-images/melwah-falcon-racing-42ac1994c8.jpg",
+      "events": 1
+    },
+    {
+      "source_url": "https://cdn.tuwaiq.edu.sa/initiatives_admin/images/p33x3n31.rj4.webp",
+      "file": "dist/assets/event-images/معسكر-هندسة-الحوسبة-السحابية-باستخدام-google-cloud-ac3f34923b.webp",
       "events": 1
     },
     {
@@ -1533,6 +1536,11 @@
       "events": 1
     },
     {
+      "source_url": "https://cdn.tuwaiq.edu.sa/initiatives_admin/images/nadcywdn.tl5.webp",
+      "file": "dist/assets/event-images/معسكر-إدارة-الحوكمة-والمخاطر-والامتثال-grc-88592b3651.webp",
+      "events": 1
+    },
+    {
       "source_url": "https://cdn.tuwaiq.edu.sa/initiatives_admin/images/rpowwrnx.tnw.jpg",
       "file": "dist/assets/event-images/معسكر-هندسة-تطبيقات-الذكاء-الاصطناعي-التوليدي-باستخدام-النماذج-اللغوية-8d170d1b9c.jpg",
       "events": 1
@@ -1816,6 +1824,11 @@
       "source_url": "https://www.sfda.gov.sa/sites/default/files/2026-07/wr345.jpg",
       "file": "dist/assets/event-images/الاستخدام-الآمن-لأجهزة-الأشعة-والتصوير-الطبي-داخل-مرافق-الرعاية-الصحية-af021c2ccb.jpg",
       "events": 3
+    },
+    {
+      "source_url": "https://cdn.tuwaiq.edu.sa/initiatives_admin/images/hym412o4.xrm.webp",
+      "file": "dist/assets/event-images/معسكر-تطوير-مواقع-الويب-باستخدام-java-ودمج-تقنيات-الذكاء-الاصطناعي-1a7ddcd5eb.webp",
+      "events": 1
     },
     {
       "source_url": "https://scth.scene7.com/is/image/scth/hussain-moheb?wid=1400&hei=788&fit=constrain&fmt=webp",
@@ -2288,6 +2301,11 @@
       "events": 1
     },
     {
+      "source_url": "https://www.ithra.com/application/files/cache/thumbnails/b3d6e2a8839c4f5f1fd761ce0128b3f0.jpg",
+      "file": "dist/assets/event-images/on-this-carpet-fd659c9065.jpg",
+      "events": 1
+    },
+    {
       "source_url": "https://www.ithra.com/application/files/cache/thumbnails/4fc48ae30b1d0dbb317bb0591965d908.jpg",
       "file": "dist/assets/event-images/sense-the-home-05f5b809d7.jpg",
       "events": 1
@@ -2471,21 +2489,6 @@
       "source_url": "https://scth.scene7.com/is/image/scth/curious-summer?wid=1400&hei=788&fit=constrain&fmt=webp",
       "file": "dist/assets/event-images/curious-summers-a466fcddad.webp",
       "events": 1
-    },
-    {
-      "source_url": "https://cdn.tuwaiq.edu.sa/initiatives_admin/images/awj5ovgr.utk.webp",
-      "file": "dist/assets/event-images/معسكر-التأهيل-لرخصة-الدرونز-وتحليل-البيانات-الفوتوغرامترية-b03efbb17c.webp",
-      "events": 1
-    },
-    {
-      "source_url": "https://scth.scene7.com/is/image/scth/okhtabotiya?wid=1400&hei=788&fit=constrain&fmt=webp",
-      "file": "dist/assets/event-images/okhtabotiya-0013765084.webp",
-      "events": 1
-    },
-    {
-      "source_url": "https://discoveraseer.com/en/img/asset/YXNzZXRzL2V4cGVyaWVuY2UvZHc4dzEyNTAuanBlZw/dw8w1250.jpeg?w=1024&fm=webp&s=e845b36cd3e878a1a1d7cec306a2e3f8",
-      "file": "dist/assets/event-images/حفلات-موسيقية-53b2281d16.webp",
-      "events": 1
     }
   ],
   "rejected_removed": [],
@@ -2508,47 +2511,47 @@
       "events": 1,
       "reason": "HTTP 403",
       "failure_kind": "access-denied",
-      "retry_after": "2026-10-30T09:06:49.580Z"
-    },
-    {
-      "source_url": "https://s7g10.scene7.com/is/image/rcu/leonid-meteor-shower-at-jabal-ikmah:landscape-16x9?$Responsive$&fit=stretch&fmt=webp&wid=1920",
-      "events": 1,
-      "reason": "HTTP 403",
-      "failure_kind": "access-denied",
-      "retry_after": "2026-10-30T09:06:49.580Z"
+      "retry_after": "2026-10-31T09:29:49.741Z"
     },
     {
       "source_url": "https://s7g10.scene7.com/is/image/rcu/sunset-stillness-meditation-sound-immersion:landscape-16x9?$Responsive$&fit=stretch&fmt=webp&wid=1920",
       "events": 1,
       "reason": "HTTP 403",
       "failure_kind": "access-denied",
-      "retry_after": "2026-10-30T09:06:49.580Z"
+      "retry_after": "2026-10-31T09:29:49.741Z"
+    },
+    {
+      "source_url": "https://s7g10.scene7.com/is/image/rcu/leonid-meteor-shower-at-jabal-ikmah:landscape-16x9?$Responsive$&fit=stretch&fmt=webp&wid=1920",
+      "events": 1,
+      "reason": "HTTP 403",
+      "failure_kind": "access-denied",
+      "retry_after": "2026-10-31T09:29:49.741Z"
     },
     {
       "source_url": "https://s7g10.scene7.com/is/image/rcu/fei2:landscape-16x9?$Responsive$&fit=stretch&fmt=webp&wid=1920",
       "events": 1,
       "reason": "HTTP 403",
       "failure_kind": "access-denied",
-      "retry_after": "2026-10-30T09:06:49.580Z"
+      "retry_after": "2026-10-31T09:29:49.741Z"
     },
     {
       "source_url": "https://cdn.rfecc.sa/wp-content/uploads/mec/qr_898ea2449274454e42895b52b18c6f68.png",
       "events": 1,
       "reason": "HTTP 403",
       "failure_kind": "access-denied",
-      "retry_after": "2026-10-30T09:06:49.580Z"
+      "retry_after": "2026-10-31T09:29:49.741Z"
     },
     {
       "source_url": "https://api.riyadh.sa/sites/default/files/styles/medium/public/2026-07/er%20%2859%29.jpg?itok=a33APdGm",
       "events": 1,
       "reason": "not-image text/html; charset=utf-8",
       "failure_kind": "source-returned-html",
-      "retry_after": "2026-10-30T09:06:49.580Z"
+      "retry_after": "2026-10-31T09:29:49.741Z"
     }
   ],
   "requires_rebuild": true,
   "rebuild_reasons": [
-    "fetched:2",
+    "fetched:5",
     "missing-removed:2",
     "new-failures:6"
   ]

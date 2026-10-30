@@ -1,6 +1,6 @@
 # Strategic Platform Source Radar
 
-Generated at: 2026-10-28T08:42:31.739Z
+Generated at: 2026-10-30T08:47:41.747Z
 
 Policy: evidence refresh, API-surface mapping, and source strategy only. This radar does not auto-publish catalog events.
 
@@ -61,7 +61,7 @@ Policy: evidence refresh, API-surface mapping, and source strategy only. This ra
 - Classification: protected (200, fetch)
 - Project use: Use for lead discovery, ticket-link corroboration, and duplicate checks; require official organizer or authority confirmation before promotion.
 - Title: -
-- Hint URLs: https://wbk-assets.webook.com, https://api.webook.com, https://webook.cmscloud.ai, https://geolocation.webook.com, https://images.cmscloud.ai, https://apps.apple.com/sa/app/webook-com-fun-things-to-do/id6468667896, https://play.google.com/store/apps/details?id=com.webook.android, https://wbk-assets.webook.com/8.1/assets/index-f2yR6I87.js
+- Hint URLs: https://wbk-assets.webook.com, https://api.webook.com, https://webook.cmscloud.ai, https://geolocation.webook.com, https://images.cmscloud.ai, https://apps.apple.com/sa/app/webook-com-fun-things-to-do/id6468667896, https://play.google.com/store/apps/details?id=com.webook.android, https://wbk-assets.webook.com/8.2/assets/index-0WPLhzZJ.js
 
 ### Enjoy Saudi
 

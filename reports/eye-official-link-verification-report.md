@@ -1,14 +1,12 @@
 # EventLive Eye of Riyadh Official Link Verification
 
-- Generated at: 2026-10-29T08:57:24.705Z
-- Targets: 4
+- Generated at: 2026-10-30T09:21:06.829Z
+- Targets: 2
 - Confirmed: 0
-- Skipped: 1
-- Failed: 3
+- Skipped: 0
+- Failed: 2
 
 | Candidate | Status | Official URL | Reason |
 |---|---|---|---|
-| Real Estate Supply Chain Forum | failed | - | HTTP 403 |
-| CIPS MENA Procurement and Supply Chain Futures conference and awards | failed | - | HTTP 403 |
 | Real Estate Future Forum | failed | - | HTTP 403 |
-| Real Estate Excellence Award 2026 (REA 2026) | skipped | https://www.realestateexcellenceaward.com/apply | year-not-confirmed |
+| Real Estate Excellence Award 2026 (REA 2026) | failed | - | HTTP 403 |

@@ -1,26 +1,14 @@
 {
   "schema": "eventlive.eye-official-link-verification.v1",
-  "generated_at": "2026-10-29T08:57:24.705Z",
+  "generated_at": "2026-10-30T09:21:06.829Z",
   "dry_run": false,
   "totals": {
-    "targets": 4,
+    "targets": 2,
     "confirmed": 0,
-    "skipped": 1,
-    "failed": 3
+    "skipped": 0,
+    "failed": 2
   },
   "rows": [
-    {
-      "candidate_id": "candidate-eye-of-riyadh-events-real-estate-supply-chain-forum-20261028-206f7fb8",
-      "title": "Real Estate Supply Chain Forum",
-      "status": "failed",
-      "reason": "HTTP 403"
-    },
-    {
-      "candidate_id": "candidate-eye-of-riyadh-events-cips-mena-procurement-and-supply-chain-futures-conference-and-awards-20261028-18fb7207",
-      "title": "CIPS MENA Procurement and Supply Chain Futures conference and awards",
-      "status": "failed",
-      "reason": "HTTP 403"
-    },
     {
       "candidate_id": "candidate-eye-of-riyadh-events-real-estate-future-forum-20270125-d058344d",
       "title": "Real Estate Future Forum",
@@ -30,24 +18,8 @@
     {
       "candidate_id": "candidate-eye-of-riyadh-events-real-estate-excellence-award-2026-rea-2026-20270126-5e55ea49",
       "title": "Real Estate Excellence Award 2026 (REA 2026)",
-      "status": "skipped",
-      "official_url": "https://www.realestateexcellenceaward.com/apply",
-      "confirmed": false,
-      "reason": "year-not-confirmed",
-      "title_tokens": [
-        "real",
-        "estate",
-        "excellence",
-        "rea"
-      ],
-      "matched_title_tokens": [
-        "real",
-        "estate",
-        "excellence",
-        "rea"
-      ],
-      "year_confirmed": false,
-      "month_confirmed": false
+      "status": "failed",
+      "reason": "HTTP 403"
     }
   ]
 }

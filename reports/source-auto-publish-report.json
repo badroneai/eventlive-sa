@@ -1,18 +1,18 @@
 {
-  "published_at": "2026-10-29T08:57:32.155Z",
+  "published_at": "2026-10-30T09:21:12.088Z",
   "dry_run": false,
   "include_partner": true,
   "source_candidates": "data/source_candidates.json",
   "events_catalog": "data/events_catalog.json",
-  "candidates_seen": 380,
+  "candidates_seen": 369,
   "totals": {
-    "candidates_seen": 380,
-    "published": 9,
-    "linked_existing": 344,
-    "blocked": 27,
+    "candidates_seen": 369,
+    "published": 3,
+    "linked_existing": 337,
+    "blocked": 29,
     "duplicate_review_alerts": 2,
     "category_fallback_alerts": 0,
-    "reconciled": 353,
+    "reconciled": 340,
     "session_windows_reconciled": 0
   },
   "session_window_changes": [],
@@ -60,49 +60,19 @@
   ],
   "published": [
     {
-      "candidate_id": "candidate-visit-saudi-calendar-pdf-مسار-المشي-بين-معالم-الحِ-جر-الجيولوجية-20261024-4a38d19e",
-      "event_id": "event-مسار-المشي-بين-معالم-الحِ-جر-الجيولوجية",
-      "title": "مسار المشي بين معالم الحِ جر الجيولوجية"
+      "candidate_id": "candidate-hayy-jameel-events-hayy-markets-azka-farmers-market-pomegranates-edition-20261105-ee290c41",
+      "event_id": "event-hayy-markets-azka-farmers-market-pomegranates-edition",
+      "title": "Hayy Markets | Azka Farmers Market: Pomegranates Edition"
     },
     {
-      "candidate_id": "candidate-monshaat-events-لقاءات-شهر-نوفمبر-2026م-20261101-cfc0a691",
-      "event_id": "event-لقاءات-شهر-نوفمبر-2026م",
-      "title": "لقاءات شهر نوفمبر 2026م"
+      "candidate_id": "candidate-hayy-jameel-events-hayy-explorers-november-programmes-20261105-7a475a93",
+      "event_id": "event-hayy-explorers-november-programmes",
+      "title": "Hayy Explorers | November Programmes"
     },
     {
-      "candidate_id": "candidate-monshaat-events-لقاءات-شهر-نوفمبر-المغلقة-2026م-20261101-78719200",
-      "event_id": "event-لقاءات-شهر-نوفمبر-المغلقة-2026م",
-      "title": "لقاءات شهر نوفمبر (المغلقة) 2026م"
-    },
-    {
-      "candidate_id": "candidate-umm-al-qura-events-ورشة-عمل-بعنوان-مهارات-استخدام-الماصات-الدقيقة-والفصل-20261101-b3de6d7a",
-      "event_id": "event-ورشة-عمل-بعنوان-مهارات-استخدام-الماصات-الدقيقة-والفصل",
-      "title": "ورشة عمل بعنوان مهارات استخدام الماصات الدقيقة والفصل"
-    },
-    {
-      "candidate_id": "candidate-umm-al-qura-events-ورشة-عمل-بعنوان-مهارة-زراعة-البيئة-البكتيرية-20261101-e6de85ea",
-      "event_id": "event-ورشة-عمل-بعنوان-مهارة-زراعة-البيئة-البكتيرية-2",
-      "title": "ورشة عمل بعنوان مهارة زراعة البيئة البكتيرية"
-    },
-    {
-      "candidate_id": "candidate-visit-saudi-calendar-pdf-حفلة-نانسي-عجرم-20261113-4a38d19e",
-      "event_id": "event-حفلة-نانسي-عجرم",
-      "title": "حفلة نانسي عجرم"
-    },
-    {
-      "candidate_id": "candidate-visit-saudi-calendar-pdf-عروض-المناطيد-المضيئة-20261115-4a38d19e",
-      "event_id": "event-عروض-المناطيد-المضيئة",
-      "title": "عروض المناطيد المضيئة"
-    },
-    {
-      "candidate_id": "candidate-visit-saudi-calendar-pdf-سينما-فوكس-مونلايت-قريبـاً-20261115-4a38d19e",
-      "event_id": "event-سينما-فوكس-مونلايت-قريبـاً",
-      "title": "سينما فوكس مونلايت قريبـاً"
-    },
-    {
-      "candidate_id": "candidate-visit-saudi-calendar-pdf-نصف-ماراثون-العا-20261219-4a38d19e",
-      "event_id": "event-نصف-ماراثون-العا",
-      "title": "نصف ماراثون العا"
+      "candidate_id": "candidate-hayy-jameel-events-art-jameel-publishing-jeddah-roundabouts-circling-the-city-20261107-439b72b6",
+      "event_id": "event-art-jameel-publishing-jeddah-roundabouts-circling-the-city",
+      "title": "Art Jameel Publishing | Jeddah Roundabouts: Circling the City"
     }
   ],
   "linked_existing": [
@@ -212,13 +182,13 @@
       "candidate_id": "candidate-visit-saudi-calendar-pdf-معرض-قلب-البحر-20260604-4a38d19e",
       "event_id": "event-معرض-قلب-البحر",
       "title": "معرض قلب البحر",
-      "reason": "trusted duplicate linked to existing catalog event"
+      "reason": "already linked to catalog event"
     },
     {
       "candidate_id": "candidate-visit-saudi-calendar-pdf-معرض-في-تتبّع-ذكريات-غامرة-20260618-4a38d19e",
       "event_id": "event-معرض-في-تتبّع-ذكريات-غامرة",
       "title": "معرض في تتبّع ذكريات غامرة",
-      "reason": "trusted duplicate linked to existing catalog event"
+      "reason": "already linked to catalog event"
     },
     {
       "candidate_id": "candidate-discover-aseer-events-aanab-farm-20260701-12941803",
@@ -455,12 +425,6 @@
       "reason": "already linked to catalog event"
     },
     {
-      "candidate_id": "candidate-tuwaiq-academy-bootcamps-معسكر-إدارة-الحوكمة-والمخاطر-والامتثال-grc-20260906-cb343b82",
-      "event_id": "event-معسكر-إدارة-الحوكمة-والمخاطر-والامتثال-grc",
-      "title": "معسكر إدارة الحوكمة والمخاطر والامتثال GRC",
-      "reason": "already linked to catalog event"
-    },
-    {
       "candidate_id": "candidate-tuwaiq-academy-bootcamps-دبلوم-الأمن-السيبراني-المتقدم-20260906-23af5636",
       "event_id": "event-دبلوم-الأمن-السيبراني-المتقدم",
       "title": "دبلوم الأمن السيبراني المتقدم",
@@ -575,12 +539,6 @@
       "reason": "already linked to catalog event"
     },
     {
-      "candidate_id": "candidate-monshaat-events-لقاءات-شهر-أكتوبر-2026م-20261001-61370df3",
-      "event_id": "event-لقاءات-شهر-أكتوبر-2026م",
-      "title": "لقاءات شهر أكتوبر 2026م",
-      "reason": "already linked to catalog event"
-    },
-    {
       "candidate_id": "candidate-visit-saudi-seasons-aramco-f4-saudi-arabian-championship-20261001-c1591ef2",
       "event_id": "event-aramco-f4-saudi-arabian-championship",
       "title": "Aramco F4 Saudi Arabian Championship",
@@ -602,12 +560,6 @@
       "candidate_id": "candidate-tuwaiq-academy-bootcamps-معسكر-تطوير-حلول-الذكاء-الاصطناعي-20261004-dbd53610",
       "event_id": "event-معسكر-تطوير-حلول-الذكاء-الاصطناعي",
       "title": "معسكر تطوير حلول الذكاء الاصطناعي",
-      "reason": "already linked to catalog event"
-    },
-    {
-      "candidate_id": "candidate-tuwaiq-academy-bootcamps-معسكر-هندسة-الحوسبة-السحابية-باستخدام-google-cloud-20261004-8790e021",
-      "event_id": "event-معسكر-هندسة-الحوسبة-السحابية-باستخدام-google-cloud",
-      "title": "معسكر هندسة الحوسبة السحابية باستخدام Google Cloud",
       "reason": "already linked to catalog event"
     },
     {
@@ -683,6 +635,12 @@
       "reason": "already linked to catalog event"
     },
     {
+      "candidate_id": "candidate-visit-saudi-calendar-pdf-مسار-المشي-بين-معالم-الحِ-جر-الجيولوجية-20261024-4a38d19e",
+      "event_id": "event-مسار-المشي-بين-معالم-الحِ-جر-الجيولوجية",
+      "title": "مسار المشي بين معالم الحِ جر الجيولوجية",
+      "reason": "already linked to catalog event"
+    },
+    {
       "candidate_id": "candidate-hayy-jameel-events-hayy-makers-introduction-to-pottery-course-with-pharah-al-ghalib-20261024-3f18bab0",
       "event_id": "event-hayy-makers-2",
       "title": "Hayy Makers | Introduction to Pottery Course with Pharah Al-Ghalib",
@@ -698,18 +656,6 @@
       "candidate_id": "candidate-umm-al-qura-events-لقاء-للإجابة-عن-الاستفسارات-20261025-356a27db",
       "event_id": "event-لقاء-للإجابة-عن-الاستفسارات",
       "title": "لقاء للإجابة عن الاستفسارات",
-      "reason": "already linked to catalog event"
-    },
-    {
-      "candidate_id": "candidate-rfecc-whats-on-natrual-expo-20261026-a7983dd2",
-      "event_id": "event-natrual-expo",
-      "title": "Natrual Expo",
-      "reason": "already linked to catalog event"
-    },
-    {
-      "candidate_id": "candidate-riyadh-city-events-future-investment-initiative-20261026-888e8328",
-      "event_id": "event-future-investment-initiative",
-      "title": "Future Investment Initiative",
       "reason": "already linked to catalog event"
     },
     {
@@ -737,12 +683,6 @@
       "reason": "already linked to catalog event"
     },
     {
-      "candidate_id": "candidate-riyadh-city-events-global-health-exhibition-20261026-9ce4303f",
-      "event_id": "event-global-health-exhibition",
-      "title": "Global Health Exhibition",
-      "reason": "already linked to catalog event"
-    },
-    {
       "candidate_id": "candidate-ithra-events-emboss-printing-experience-20261026-2671d1ce",
       "event_id": "event-emboss-printing-experience",
       "title": "Emboss Printing Experience",
@@ -767,27 +707,9 @@
       "reason": "already linked to catalog event"
     },
     {
-      "candidate_id": "candidate-ithra-events-on-this-carpet-20261027-2972e041",
-      "event_id": "event-on-this-carpet",
-      "title": "On This Carpet",
-      "reason": "already linked to catalog event"
-    },
-    {
       "candidate_id": "candidate-ithra-events-stem-xpert-club-20261027-28ee60b9",
       "event_id": "event-stem-xpert-club",
       "title": "STEM Xpert Club",
-      "reason": "already linked to catalog event"
-    },
-    {
-      "candidate_id": "candidate-eye-of-riyadh-events-real-estate-supply-chain-forum-20261028-206f7fb8",
-      "event_id": "event-real-estate-supply-chain-forum",
-      "title": "Real Estate Supply Chain Forum",
-      "reason": "already linked to catalog event"
-    },
-    {
-      "candidate_id": "candidate-eye-of-riyadh-events-cips-mena-procurement-and-supply-chain-futures-conference-and-awards-20261028-18fb7207",
-      "event_id": "event-cips-mena-procurement-and-supply-chain-futures-conference-and-awards",
-      "title": "CIPS MENA Procurement and Supply Chain Futures conference and awards",
       "reason": "already linked to catalog event"
     },
     {
@@ -821,39 +743,15 @@
       "reason": "already linked to catalog event"
     },
     {
-      "candidate_id": "candidate-mdlbeast-events-a-thousand-and-one-20261029-05573173",
-      "event_id": "event-a-thousand-and-one",
-      "title": "A Thousand and One",
-      "reason": "already linked to catalog event"
-    },
-    {
       "candidate_id": "candidate-visit-saudi-calendar-pdf-ألف-وواحد-20261029-4a38d19e",
       "event_id": "event-ألف-وواحد",
       "title": "ألف وواحد",
       "reason": "already linked to catalog event"
     },
     {
-      "candidate_id": "candidate-visit-saudi-calendar-pdf-حفل-ماريلين-نعمان-الموسيقي-20261029-4a38d19e",
-      "event_id": "event-حفل-ماريلين-نعمان-الموسيقي",
-      "title": "حفل ماريلين نعمان الموسيقي",
-      "reason": "already linked to catalog event"
-    },
-    {
       "candidate_id": "candidate-visit-saudi-calendar-pdf-شتاء-اثراء-20261029-4a38d19e",
       "event_id": "event-شتاء-اثراء",
       "title": "شتاء اثراء",
-      "reason": "already linked to catalog event"
-    },
-    {
-      "candidate_id": "candidate-misk-hub-programs-application-deadline-discover-your-path-in-collaboration-with-nahj-assoc-20261029-46d41c09",
-      "event_id": "event-application-deadline-discover-your-path-in-collaboration-with-nahj-assoc",
-      "title": "Application deadline: Discover Your Path (in collaboration with Nahj Association)",
-      "reason": "already linked to catalog event"
-    },
-    {
-      "candidate_id": "candidate-misk-hub-programs-application-deadline-discover-your-path-20261029-1bbce22f",
-      "event_id": "event-application-deadline-discover-your-path",
-      "title": "Application deadline: Discover Your Path",
       "reason": "already linked to catalog event"
     },
     {
@@ -869,33 +767,15 @@
       "reason": "already linked to catalog event"
     },
     {
-      "candidate_id": "candidate-saudi-university-events-spooky-open-mic-night-20261029-71373e3d",
-      "event_id": "event-spooky-open-mic-night",
-      "title": "Spooky Open Mic Night",
-      "reason": "already linked to catalog event"
-    },
-    {
       "candidate_id": "candidate-ithra-events-museum-story-time-20261029-1104734c",
       "event_id": "event-museum-story-time",
       "title": "Museum Story Time",
       "reason": "already linked to catalog event"
     },
     {
-      "candidate_id": "candidate-ithra-events-there-is-magic-in-eloquence-20261029-7faebff7",
-      "event_id": "event-there-is-magic-in-eloquence",
-      "title": "There Is Magic in Eloquence",
-      "reason": "already linked to catalog event"
-    },
-    {
       "candidate_id": "candidate-visit-saudi-calendar-pdf-ليلة-البنات-الكوميدية-من-مخرج-ثمانية-20261030-4a38d19e",
       "event_id": "event-ليلة-البنات-الكوميدية-من-مخرج-ثمانية",
       "title": "ليلة البنات الكوميدية من مخرج ثمانية",
-      "reason": "already linked to catalog event"
-    },
-    {
-      "candidate_id": "candidate-saudi-university-events-run-for-a-cure-20261030-f76bbf91",
-      "event_id": "event-run-for-a-cure",
-      "title": "Run for a Cure",
       "reason": "already linked to catalog event"
     },
     {
@@ -950,6 +830,30 @@
       "candidate_id": "candidate-saudi-water-authority-events-world-conference-on-desalination-and-water-reuse-20261101-a25a65b2",
       "event_id": "event-world-conference-on-desalination-and-water-reuse",
       "title": "World Conference on Desalination and Water Reuse",
+      "reason": "already linked to catalog event"
+    },
+    {
+      "candidate_id": "candidate-monshaat-events-لقاءات-شهر-نوفمبر-2026م-20261101-cfc0a691",
+      "event_id": "event-لقاءات-شهر-نوفمبر-2026م",
+      "title": "لقاءات شهر نوفمبر 2026م",
+      "reason": "already linked to catalog event"
+    },
+    {
+      "candidate_id": "candidate-monshaat-events-لقاءات-شهر-نوفمبر-المغلقة-2026م-20261101-78719200",
+      "event_id": "event-لقاءات-شهر-نوفمبر-المغلقة-2026م",
+      "title": "لقاءات شهر نوفمبر (المغلقة) 2026م",
+      "reason": "already linked to catalog event"
+    },
+    {
+      "candidate_id": "candidate-umm-al-qura-events-ورشة-عمل-بعنوان-مهارات-استخدام-الماصات-الدقيقة-والفصل-20261101-b3de6d7a",
+      "event_id": "event-ورشة-عمل-بعنوان-مهارات-استخدام-الماصات-الدقيقة-والفصل",
+      "title": "ورشة عمل بعنوان مهارات استخدام الماصات الدقيقة والفصل",
+      "reason": "already linked to catalog event"
+    },
+    {
+      "candidate_id": "candidate-umm-al-qura-events-ورشة-عمل-بعنوان-مهارة-زراعة-البيئة-البكتيرية-20261101-e6de85ea",
+      "event_id": "event-ورشة-عمل-بعنوان-مهارة-زراعة-البيئة-البكتيرية-2",
+      "title": "ورشة عمل بعنوان مهارة زراعة البيئة البكتيرية",
       "reason": "already linked to catalog event"
     },
     {
@@ -1415,10 +1319,16 @@
       "reason": "already linked to catalog event"
     },
     {
+      "candidate_id": "candidate-visit-saudi-calendar-pdf-حفلة-نانسي-عجرم-20261113-4a38d19e",
+      "event_id": "event-حفلة-نانسي-عجرم",
+      "title": "حفلة نانسي عجرم",
+      "reason": "already linked to catalog event"
+    },
+    {
       "candidate_id": "candidate-visit-saudi-calendar-pdf-مهرجان-القادسية-فينا-نحكي؟-عرض-ستاند-أب-كوميدي-لجون-أشقر-20261113-4a38d19e",
       "event_id": "event-فينا-نحكي؟-عرض-ستاند-أب-كوميدي-لجون-أشقر",
       "title": "مهرجان القادسية ”فينا نحكي؟“ عرض ستاند أب كوميدي لجون أشقر",
-      "reason": "trusted duplicate linked to existing catalog event"
+      "reason": "already linked to catalog event"
     },
     {
       "candidate_id": "candidate-experience-alula-events-sunset-stillness-meditation-sound-immersion-20261114-7f9f2765",
@@ -1442,6 +1352,18 @@
       "candidate_id": "candidate-ithra-events-wind-energy-20261114-03067c4b",
       "event_id": "event-wind-energy",
       "title": "Wind Energy",
+      "reason": "already linked to catalog event"
+    },
+    {
+      "candidate_id": "candidate-visit-saudi-calendar-pdf-عروض-المناطيد-المضيئة-20261115-4a38d19e",
+      "event_id": "event-عروض-المناطيد-المضيئة",
+      "title": "عروض المناطيد المضيئة",
+      "reason": "already linked to catalog event"
+    },
+    {
+      "candidate_id": "candidate-visit-saudi-calendar-pdf-سينما-فوكس-مونلايت-قريبـاً-20261115-4a38d19e",
+      "event_id": "event-سينما-فوكس-مونلايت-قريبـاً",
+      "title": "سينما فوكس مونلايت قريبـاً",
       "reason": "already linked to catalog event"
     },
     {
@@ -1937,6 +1859,12 @@
       "reason": "already linked to catalog event"
     },
     {
+      "candidate_id": "candidate-visit-saudi-calendar-pdf-نصف-ماراثون-العا-20261219-4a38d19e",
+      "event_id": "event-نصف-ماراثون-العا",
+      "title": "نصف ماراثون العا",
+      "reason": "already linked to catalog event"
+    },
+    {
       "candidate_id": "candidate-experience-alula-events-alula-half-marathon-20261219-138df385",
       "event_id": "event-alula-half-marathon",
       "title": "AlUla Half Marathon",
@@ -1970,7 +1898,7 @@
       "candidate_id": "candidate-visit-saudi-calendar-pdf-six-kings-slam-20261227-4a38d19e",
       "event_id": "event-six-kings-slam-2",
       "title": "Six Kings Slam",
-      "reason": "trusted duplicate linked to existing catalog event"
+      "reason": "already linked to catalog event"
     },
     {
       "candidate_id": "candidate-visit-saudi-seasons-six-kings-slam-20261227-9f5e0969",
@@ -2173,21 +2101,6 @@
   ],
   "blocked": [
     {
-      "candidate_id": "candidate-saudicon-events-annual-international-geotechnical-innovation-conference-igic-2026-20261109-8ea8aaa9",
-      "title": "Annual International Geotechnical Innovation Conference (IGIC 2026)",
-      "reason": "publication gate source-evidence is not auto-publishable"
-    },
-    {
-      "candidate_id": "candidate-saudicon-events-المؤتمر-الدولي-للابتكار-في-الهندسة-الجيوتقنية-2026-20261109-3ded1822",
-      "title": "المؤتمر الدولي للابتكار في الهندسة الجيوتقنية 2026",
-      "reason": "publication gate source-evidence is not auto-publishable"
-    },
-    {
-      "candidate_id": "candidate-saudicon-events-2026-annual-international-geotechnical-innovation-conference-igic-2026-20261109-8c221fe0",
-      "title": "2026年国际岩土工程创新年会（Annual International Geotechnical Innovation Conference (IGIC 2026)）",
-      "reason": "publication gate source-evidence is not auto-publishable"
-    },
-    {
       "candidate_id": "candidate-saudicon-events-accounting-business-expo-saudi-arabia-2026-20261109-7b13265f",
       "title": "Accounting & Business Expo Saudi Arabia 2026",
       "reason": "publication gate source-evidence is not auto-publishable"
@@ -2302,8 +2215,33 @@
       "reason": "publication gate source-evidence is not auto-publishable"
     },
     {
+      "candidate_id": "candidate-misk-hub-programs-application-deadline-misk-startup-school-masterclasses-20261231-0ec1b514",
+      "title": "Application deadline: Misk Startup School MasterClasses",
+      "reason": "not an attendable event: enrolment-announcement"
+    },
+    {
+      "candidate_id": "candidate-misk-hub-programs-application-deadline-misk-npo-essentials-masterclasses-20261231-7122fea6",
+      "title": "Application deadline: Misk NPO Essentials Masterclasses",
+      "reason": "not an attendable event: enrolment-announcement"
+    },
+    {
       "candidate_id": "candidate-saudicon-events-athlete-360-summit-2027-20270110-986bbcd3",
       "title": "Athlete 360 Summit 2027",
+      "reason": "publication gate source-evidence is not auto-publishable"
+    },
+    {
+      "candidate_id": "candidate-saudicon-events-قمة-أثليت-360-للأداء-الرياضي-والصحة-2027-20270110-6e57ae85",
+      "title": "قمة أثليت 360 للأداء الرياضي والصحة 2027",
+      "reason": "publication gate source-evidence is not auto-publishable"
+    },
+    {
+      "candidate_id": "candidate-saudicon-events-2027-athlete-360-athlete-360-summit-2027-20270110-9910194c",
+      "title": "2027年Athlete 360运动表现与健康峰会（Athlete 360 Summit 2027）",
+      "reason": "publication gate source-evidence is not auto-publishable"
+    },
+    {
+      "candidate_id": "candidate-saudicon-events-automechanika-riyadh-2027-20270111-765e78cc",
+      "title": "Automechanika Riyadh 2027",
       "reason": "publication gate source-evidence is not auto-publishable"
     },
     {

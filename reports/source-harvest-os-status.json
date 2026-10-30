@@ -1,22 +1,22 @@
 {
   "schema": "eventlive.harvest-os-status.v1",
-  "generated_at": "2026-10-29T09:19:37.705Z",
+  "generated_at": "2026-10-30T09:42:20.069Z",
   "status": "NEEDS_WORK",
   "operating_rule": "Probe before new sources; sample before full harvest; Raw collection is not publication; discovery-only never auto-publishes.",
   "totals": {
     "sources": 88,
-    "candidates": 380,
-    "matched_candidates": 354,
+    "candidates": 369,
+    "matched_candidates": 341,
     "auto_publish_sources": 15,
     "candidate_only_sources": 12,
     "partnership_required_sources": 5,
     "blocked_or_closed_sources": 0,
     "manual_review_sources": 56,
-    "collection_attempted": 38,
+    "collection_attempted": 36,
     "productive_sources": 15,
-    "collector_errors": 6,
-    "chronic_collector_errors": 6,
-    "transient_collector_errors": 0
+    "collector_errors": 8,
+    "chronic_collector_errors": 7,
+    "transient_collector_errors": 1
   },
   "policies": {
     "partnership_required": 5,
@@ -25,68 +25,84 @@
     "manual_review": 56
   },
   "candidates_by_gate": {
-    "catalog-review": 354,
+    "catalog-review": 341,
     "source-evidence": 24,
-    "duplicate-review": 2
+    "duplicate-review": 2,
+    "secondary-verified": 2
   },
   "funnel": {
-    "discovered_this_run": 187,
-    "candidate_queue": 380,
-    "evaluated_for_publish": 380,
-    "linked_existing": 344,
-    "published_new": 9,
-    "blocked": 27,
-    "secondary_promoted": 0,
-    "secondary_still_blocked": 39
+    "discovered_this_run": 160,
+    "candidate_queue": 369,
+    "evaluated_for_publish": 369,
+    "linked_existing": 337,
+    "published_new": 3,
+    "blocked": 29,
+    "secondary_promoted": 2,
+    "secondary_still_blocked": 29
   },
   "blocked_reasons": {
     "publication gate source-evidence is not auto-publishable": 22,
     "possible duplicate requires review: exact-title-city-venue-conflict": 1,
     "possible duplicate requires review: exact-title-city-source-conflict": 1,
     "unknown category requires review": 2,
-    "linked catalog row event-music-festival-mdlbeast-soundstorm was superseded by dedupe": 1
+    "linked catalog row event-music-festival-mdlbeast-soundstorm was superseded by dedupe": 1,
+    "not an attendable event: enrolment-announcement": 2
   },
   "collector_error_sources": [
     {
       "id": "moc-cultural-calendar",
       "note": "collector-error: fetch failed [ETIMEDOUT, ENETUNREACH]; fetch failed [ETIMEDOUT, ENETUNREACH]",
-      "error_streak": 63,
+      "error_streak": 64,
       "kind": "chronic",
       "attempted_this_run": true
     },
     {
       "id": "mos-events",
-      "note": "collector-error: fetch failed [ETIMEDOUT, ENETUNREACH]; live browser recovery deferred by recent failed probe cooldown",
-      "error_streak": 63,
+      "note": "collector-error: fetch failed [ETIMEDOUT, ENETUNREACH]",
+      "error_streak": 64,
       "kind": "chronic",
       "attempted_this_run": true
     },
     {
       "id": "moc-cultural-subportals",
       "note": "collector-error: fetch failed [UND_ERR_CONNECT_TIMEOUT]; fetch failed [UND_ERR_CONNECT_TIMEOUT]",
-      "error_streak": 63,
+      "error_streak": 64,
       "kind": "chronic",
       "attempted_this_run": true
     },
     {
       "id": "saudi-pro-league-fixtures",
       "note": "collector-error: fetch failed [EAI_AGAIN]",
-      "error_streak": 43,
+      "error_streak": 44,
       "kind": "chronic",
       "attempted_this_run": true
     },
     {
       "id": "tuwaiq-academy-bootcamps",
       "note": "collector-error: HTTP 403",
-      "error_streak": 40,
+      "error_streak": 41,
       "kind": "chronic",
       "attempted_this_run": true
     },
     {
       "id": "qassim-chamber-events",
-      "note": "collector-error: HTTP 403; live browser recovery deferred by recent failed probe cooldown",
-      "error_streak": 9,
+      "note": "collector-error: HTTP 403",
+      "error_streak": 10,
       "kind": "chronic",
+      "attempted_this_run": true
+    },
+    {
+      "id": "asharqia-chamber-events",
+      "note": "collector-error: fetch failed [UND_ERR_CONNECT_TIMEOUT]; live browser recovery deferred by recent failed probe cooldown",
+      "error_streak": 3,
+      "kind": "chronic",
+      "attempted_this_run": true
+    },
+    {
+      "id": "monshaat-events",
+      "note": "fetch failed [UND_ERR_CONNECT_TIMEOUT]; fetch failed [UND_ERR_CONNECT_TIMEOUT]",
+      "error_streak": 1,
+      "kind": "transient",
       "attempted_this_run": true
     }
   ],

@@ -1,16 +1,516 @@
 {
-  "generated_at": "2026-10-29T09:02:55.453Z",
+  "generated_at": "2026-10-30T09:26:26.609Z",
   "totals": {
     "targets": 100,
     "enriched": 100,
-    "fetched": 61,
-    "images": 91,
-    "fetch_failures": 39
+    "fetched": 89,
+    "images": 82,
+    "fetch_failures": 11
   },
   "enriched": [
     {
-      "id": "event-حفلة-نانسي-عجرم",
-      "title": "حفلة نانسي عجرم",
+      "id": "event-art-jameel-publishing-jeddah-roundabouts-circling-the-city",
+      "title": "Art Jameel Publishing | Jeddah Roundabouts: Circling the City",
+      "source_label": "Hayy Jameel What's On",
+      "source_method": "official-page-meta",
+      "source_url": "https://hayyjameel.org/whats-on/jeddah-roundabouts-circling-the-city-en/",
+      "fetched": true,
+      "image": true,
+      "fetch_reason": ""
+    },
+    {
+      "id": "event-hayy-explorers-november-programmes",
+      "title": "Hayy Explorers | November Programmes",
+      "source_label": "Hayy Jameel What's On",
+      "source_method": "official-page-meta",
+      "source_url": "https://hayyjameel.org/whats-on/hayy-explorers-november-programmes/",
+      "fetched": true,
+      "image": true,
+      "fetch_reason": ""
+    },
+    {
+      "id": "event-hayy-markets-azka-farmers-market-pomegranates-edition",
+      "title": "Hayy Markets | Azka Farmers Market: Pomegranates Edition",
+      "source_label": "Hayy Jameel What's On",
+      "source_method": "official-page-meta",
+      "source_url": "https://hayyjameel.org/whats-on/azka-farmers-market-pomegranates-edition-en/",
+      "fetched": true,
+      "image": true,
+      "fetch_reason": ""
+    },
+    {
+      "id": "event-hayy-cinema-our-little-sister-2015",
+      "title": "Hayy Cinema | Our Little Sister (2015)",
+      "source_label": "Hayy Jameel What's On",
+      "source_method": "official-page-meta",
+      "source_url": "https://hayyjameel.org/whats-on/our-little-sister/",
+      "fetched": true,
+      "image": true,
+      "fetch_reason": ""
+    },
+    {
+      "id": "event-hayy-cinema-panel-discussion-the-golden-palm-film-programme",
+      "title": "Hayy Cinema | Panel Discussion: The Golden Palm Film Programme",
+      "source_label": "Hayy Jameel What's On",
+      "source_method": "official-page-meta",
+      "source_url": "https://hayyjameel.org/whats-on/the-golden-palm-film-programme-i-panel-discussions/",
+      "fetched": true,
+      "image": true,
+      "fetch_reason": ""
+    },
+    {
+      "id": "event-hayy-cinema-panel-discussion-the-way-we-see-us",
+      "title": "Hayy Cinema | Panel Discussion | The Way We See Us",
+      "source_label": "Hayy Jameel What's On",
+      "source_method": "official-page-meta",
+      "source_url": "https://hayyjameel.org/whats-on/the-way-we-see-us-panel-discussion/",
+      "fetched": true,
+      "image": true,
+      "fetch_reason": ""
+    },
+    {
+      "id": "event-hayy-cinema-ramadan-film-nights",
+      "title": "Hayy Cinema | Ramadan Film Nights",
+      "source_label": "Hayy Jameel What's On",
+      "source_method": "official-page-meta",
+      "source_url": "https://hayyjameel.org/whats-on/ramadan-film-nights/",
+      "fetched": true,
+      "image": true,
+      "fetch_reason": ""
+    },
+    {
+      "id": "event-hayy-cinema-raven-song-2022",
+      "title": "Hayy Cinema | Raven Song (2022)",
+      "source_label": "Hayy Jameel What's On",
+      "source_method": "official-page-meta",
+      "source_url": "https://hayyjameel.org/whats-on/ravens-song/",
+      "fetched": true,
+      "image": true,
+      "fetch_reason": ""
+    },
+    {
+      "id": "event-hayy-cinema-saleeg-2023",
+      "title": "Hayy Cinema | Saleeg (2023)",
+      "source_label": "Hayy Jameel What's On",
+      "source_method": "official-page-meta",
+      "source_url": "https://hayyjameel.org/whats-on/saleeg/",
+      "fetched": true,
+      "image": true,
+      "fetch_reason": ""
+    },
+    {
+      "id": "event-hayy-cinema-saleem-2024",
+      "title": "Hayy Cinema | Saleem (2024)",
+      "source_label": "Hayy Jameel What's On",
+      "source_method": "official-page-meta",
+      "source_url": "https://hayyjameel.org/whats-on/saleem/",
+      "fetched": true,
+      "image": true,
+      "fetch_reason": ""
+    },
+    {
+      "id": "event-hayy-cinema-souad-2020",
+      "title": "Hayy Cinema | Souad (2020)",
+      "source_label": "Hayy Jameel What's On",
+      "source_method": "official-page-meta",
+      "source_url": "https://hayyjameel.org/whats-on/souad/",
+      "fetched": true,
+      "image": true,
+      "fetch_reason": ""
+    },
+    {
+      "id": "event-hayy-cinema-spirited-away-2001",
+      "title": "Hayy Cinema | Spirited Away (2001)",
+      "source_label": "Hayy Jameel What's On",
+      "source_method": "official-page-meta",
+      "source_url": "https://hayyjameel.org/whats-on/spirited-away/",
+      "fetched": true,
+      "image": true,
+      "fetch_reason": ""
+    },
+    {
+      "id": "event-hayy-cinema-the-boy-and-the-heron-2023",
+      "title": "Hayy Cinema | The Boy and the Heron (2023)",
+      "source_label": "Hayy Jameel What's On",
+      "source_method": "official-page-meta",
+      "source_url": "https://hayyjameel.org/whats-on/the-boy-and-the-heron/",
+      "fetched": true,
+      "image": true,
+      "fetch_reason": ""
+    },
+    {
+      "id": "event-hayy-cinema-the-golden-palm-film-programme-the-best-of-the-saudi-film-fe",
+      "title": "Hayy Cinema | The Golden Palm Film Programme: The Best of the Saudi Film Festival",
+      "source_label": "Hayy Jameel What's On",
+      "source_method": "official-page-meta",
+      "source_url": "https://hayyjameel.org/whats-on/the-golden-palm-saudi-film-festival-at-hayy-cinema/",
+      "fetched": true,
+      "image": true,
+      "fetch_reason": ""
+    },
+    {
+      "id": "event-hayy-cinema-the-journey-2021",
+      "title": "Hayy Cinema | The Journey (2021)",
+      "source_label": "Hayy Jameel What's On",
+      "source_method": "official-page-meta",
+      "source_url": "https://hayyjameel.org/whats-on/the-journey/",
+      "fetched": true,
+      "image": true,
+      "fetch_reason": ""
+    },
+    {
+      "id": "event-hayy-cinema-the-kings-poem-2023",
+      "title": "Hayy Cinema | The King's Poem (2023)",
+      "source_label": "Hayy Jameel What's On",
+      "source_method": "official-page-meta",
+      "source_url": "https://hayyjameel.org/whats-on/the-kings-poem/",
+      "fetched": true,
+      "image": true,
+      "fetch_reason": ""
+    },
+    {
+      "id": "event-hayy-cinema-the-menace-from-above-2023",
+      "title": "Hayy Cinema | The Menace From Above (2023)",
+      "source_label": "Hayy Jameel What's On",
+      "source_method": "official-page-meta",
+      "source_url": "https://hayyjameel.org/whats-on/the-menace-from-above/",
+      "fetched": true,
+      "image": true,
+      "fetch_reason": ""
+    },
+    {
+      "id": "event-hayy-cinema-the-third-murder-2017",
+      "title": "Hayy Cinema | The Third Murder (2017)",
+      "source_label": "Hayy Jameel What's On",
+      "source_method": "official-page-meta",
+      "source_url": "https://hayyjameel.org/whats-on/the-third-murder/",
+      "fetched": true,
+      "image": true,
+      "fetch_reason": ""
+    },
+    {
+      "id": "event-hayy-cinema-vhs-tape-replaced-2023",
+      "title": "Hayy Cinema | VHS Tape Replaced (2023)",
+      "source_label": "Hayy Jameel What's On",
+      "source_method": "official-page-meta",
+      "source_url": "https://hayyjameel.org/whats-on/vhs-tape-replaced/",
+      "fetched": true,
+      "image": true,
+      "fetch_reason": ""
+    },
+    {
+      "id": "event-hayy-cinema-victory-of-youth-intisar-al-shabab-1941",
+      "title": "Hayy Cinema | Victory of Youth \"Intisar Al Shabab\" (1941)",
+      "source_label": "Hayy Jameel What's On",
+      "source_method": "official-page-meta",
+      "source_url": "https://hayyjameel.org/whats-on/intisar-al-shabab-victory-of-youth/",
+      "fetched": true,
+      "image": true,
+      "fetch_reason": ""
+    },
+    {
+      "id": "event-hayy-cinema-yallah-yallah-beenah",
+      "title": "Hayy Cinema | Yallah, Yallah, Beenah",
+      "source_label": "Hayy Jameel What's On",
+      "source_method": "official-page-meta",
+      "source_url": "https://hayyjameel.org/whats-on/yallah-yallah-beenah/",
+      "fetched": true,
+      "image": true,
+      "fetch_reason": ""
+    },
+    {
+      "id": "event-hayy-cinema-youssef-chahine-retrospective-adieu-bonaparte-1985",
+      "title": "Hayy Cinema | Youssef Chahine Retrospective: Adieu Bonaparte (1985)",
+      "source_label": "Hayy Jameel What's On",
+      "source_method": "official-page-meta",
+      "source_url": "https://hayyjameel.org/whats-on/adieu-bonaparte/",
+      "fetched": true,
+      "image": true,
+      "fetch_reason": ""
+    },
+    {
+      "id": "event-hayy-cinema-youssef-chahine-retrospective-alexandria-again-and-forever-1",
+      "title": "Hayy Cinema | Youssef Chahine Retrospective: Alexandria Again and Forever (1989)",
+      "source_label": "Hayy Jameel What's On",
+      "source_method": "official-page-meta",
+      "source_url": "https://hayyjameel.org/whats-on/alexandria-again-and-forever/",
+      "fetched": true,
+      "image": true,
+      "fetch_reason": ""
+    },
+    {
+      "id": "event-hayy-cinema-youssef-chahine-retrospective-alexandria-why-1979",
+      "title": "Hayy Cinema | Youssef Chahine Retrospective: Alexandria, Why? (1979)",
+      "source_label": "Hayy Jameel What's On",
+      "source_method": "official-page-meta",
+      "source_url": "https://hayyjameel.org/whats-on/alexandria-why/",
+      "fetched": true,
+      "image": true,
+      "fetch_reason": ""
+    },
+    {
+      "id": "event-hayy-cinema-youssef-chahine-retrospective-return-of-the-prodigal-son-197",
+      "title": "Hayy Cinema | Youssef Chahine Retrospective: Return of the Prodigal Son (1976)",
+      "source_label": "Hayy Jameel What's On",
+      "source_method": "official-page-meta",
+      "source_url": "https://hayyjameel.org/whats-on/return-of-the-prodigal-son/",
+      "fetched": true,
+      "image": true,
+      "fetch_reason": ""
+    },
+    {
+      "id": "event-hayy-markets-luqta-market-pre-loved-pop-up",
+      "title": "Hayy Markets | Luqta Market: Pre-Loved Pop-Up",
+      "source_label": "Hayy Jameel What's On",
+      "source_method": "official-page-meta",
+      "source_url": "https://hayyjameel.org/whats-on/hayy-markets-luqta-market-pre-loved-pop-up/",
+      "fetched": true,
+      "image": true,
+      "fetch_reason": ""
+    },
+    {
+      "id": "event-hayy-markets-the-bakers-market-fall-edition",
+      "title": "Hayy Markets | The Bakers Market: Autumn Edition",
+      "source_label": "Hayy Jameel What's On",
+      "source_method": "approved-source-row",
+      "source_url": "https://hayyjameel.org/whats-on/hayy-markets-the-bakers-market-fall-edition/",
+      "fetched": false,
+      "image": true,
+      "fetch_reason": "HTTP 404"
+    },
+    {
+      "id": "event-hayy-matsuri-saudi-celebrates-japan",
+      "title": "Hayy Matsuri: Saudi Celebrates Japan",
+      "source_label": "Hayy Jameel What's On",
+      "source_method": "official-page-meta",
+      "source_url": "https://hayyjameel.org/whats-on/hayy-matsuri/",
+      "fetched": true,
+      "image": true,
+      "fetch_reason": ""
+    },
+    {
+      "id": "event-hayy-sounds-drumming-circle-with-saif-halal",
+      "title": "Hayy Sounds | Drumming Circle with Saif Halal",
+      "source_label": "Hayy Jameel What's On",
+      "source_method": "official-page-meta",
+      "source_url": "https://hayyjameel.org/whats-on/hayy-sounds-drumming-circle-with-saif-halal-2/",
+      "fetched": true,
+      "image": true,
+      "fetch_reason": ""
+    },
+    {
+      "id": "event-honey-festival-2026",
+      "title": "Honey Festival 2026",
+      "source_label": "Visit Saudi Seasons",
+      "source_method": "official-page-meta",
+      "source_url": "https://www.visitsaudi.com/en/al-baha/events/honey-festival-2026",
+      "fetched": true,
+      "image": true,
+      "fetch_reason": ""
+    },
+    {
+      "id": "event-jameel-library-october-community-programmes",
+      "title": "Jameel Library | October Community Programmes",
+      "source_label": "Hayy Jameel What's On",
+      "source_method": "official-page-meta",
+      "source_url": "https://hayyjameel.org/whats-on/jameel-library-october-community-programmes/",
+      "fetched": true,
+      "image": true,
+      "fetch_reason": ""
+    },
+    {
+      "id": "event-jameel-library-open-call-the-task-of-the-translator-with-sarasija-subram",
+      "title": "Jameel Library | Open Call: The Task of the Translator with Sarasija Subramanian",
+      "source_label": "Hayy Jameel What's On",
+      "source_method": "official-page-meta",
+      "source_url": "https://hayyjameel.org/whats-on/jameel-library-open-call-the-task-of-the-translator-with-sarasija-subramanian/",
+      "fetched": true,
+      "image": true,
+      "fetch_reason": ""
+    },
+    {
+      "id": "event-nala-narrative-forum",
+      "title": "NALA Narrative Forum",
+      "source_label": "Riyadh City Events",
+      "source_method": "approved-source-row",
+      "source_url": "https://riyadh.sa/en/moment/events/item/event/31194",
+      "fetched": false,
+      "image": true,
+      "fetch_reason": "fetch failed"
+    },
+    {
+      "id": "event-navigating-the-cyber-map-how-to-choose-your-specialization-build-a-corpo",
+      "title": "Navigating the Cyber Map: How to Choose Your Specialization & Build a Corporate Career",
+      "source_label": "Misk Hub Events",
+      "source_method": "official-page-meta",
+      "source_url": "https://hub.misk.org.sa/events/skills/stc-x-misk-workshops-event/",
+      "fetched": true,
+      "image": true,
+      "fetch_reason": ""
+    },
+    {
+      "id": "event-riyadh-racing-season",
+      "title": "Riyadh Racing Season",
+      "source_label": "Visit Saudi Seasons",
+      "source_method": "official-page-meta",
+      "source_url": "https://www.visitsaudi.com/en/riyadh/events/riyadh-racing-season",
+      "fetched": true,
+      "image": true,
+      "fetch_reason": ""
+    },
+    {
+      "id": "event-saif-2026",
+      "title": "SAIF 2026",
+      "source_label": "Visit Saudi Seasons",
+      "source_method": "official-page-meta",
+      "source_url": "https://www.visitsaudi.com/en/riyadh/events/saif-2026",
+      "fetched": true,
+      "image": true,
+      "fetch_reason": ""
+    },
+    {
+      "id": "event-saudi-international-falcons-hunting-exhibition",
+      "title": "Saudi International Falcons & Hunting Exhibition",
+      "source_label": "Visit Saudi Seasons",
+      "source_method": "official-page-meta",
+      "source_url": "https://www.visitsaudi.com/en/riyadh/events/international-saudi-falcons-hunting-exhibition",
+      "fetched": true,
+      "image": true,
+      "fetch_reason": ""
+    },
+    {
+      "id": "event-saudi-wood-expo",
+      "title": "Saudi Wood Expo",
+      "source_label": "Riyadh City Events",
+      "source_method": "approved-source-row",
+      "source_url": "https://riyadh.sa/en/moment/events/item/event/30050",
+      "fetched": false,
+      "image": true,
+      "fetch_reason": "fetch failed"
+    },
+    {
+      "id": "event-الذكاء-الاصطناعي-في-التسويق-وصناعة-المحتوى",
+      "title": "الذكاء الاصطناعي في التسويق وصناعة المحتوى",
+      "source_label": "Qassim Chamber Events",
+      "source_method": "approved-source-row",
+      "source_url": "https://tc.qcc.org.sa/events/216",
+      "fetched": false,
+      "image": true,
+      "fetch_reason": "HTTP 403"
+    },
+    {
+      "id": "event-النشر-العلمي-في-المجلات-المصنفة-من-الفكرة-إلي-القبول",
+      "title": "النشر العلمي في المجلات المصنفة: من الفكرة إلي القبول",
+      "source_label": "Umm Al-Qura University Events Center",
+      "source_method": "official-page-meta",
+      "source_url": "https://uqu.edu.sa/App/Events/41213",
+      "fetched": true,
+      "image": true,
+      "fetch_reason": ""
+    },
+    {
+      "id": "event-برنامج-اتزان",
+      "title": "برنامج \"اتزان\"",
+      "source_label": "Umm Al-Qura University Events Center",
+      "source_method": "official-page-meta",
+      "source_url": "https://uqu.edu.sa/App/Events/41212",
+      "fetched": true,
+      "image": true,
+      "fetch_reason": ""
+    },
+    {
+      "id": "event-دورة-تدريبية-بعنوان-إدارة-الجودة-9001",
+      "title": "دورة تدريبية بعنوان إدارة الجودة 9001",
+      "source_label": "Umm Al-Qura University Events Center",
+      "source_method": "official-page-meta",
+      "source_url": "https://uqu.edu.sa/App/Events/41152",
+      "fetched": true,
+      "image": true,
+      "fetch_reason": ""
+    },
+    {
+      "id": "event-دورة-تدريبية-بعنوان-الابتكار-باستخدام-الذكاء-الاصطناعي",
+      "title": "دورة تدريبية بعنوان (الابتكار باستخدام الذكاء الاصطناعي)",
+      "source_label": "Umm Al-Qura University Events Center",
+      "source_method": "official-page-meta",
+      "source_url": "https://uqu.edu.sa/App/Events/41158",
+      "fetched": true,
+      "image": true,
+      "fetch_reason": ""
+    },
+    {
+      "id": "event-زيارة-ميدانية-إلى-المديرية-العامة-لمكافحة-المخدرات",
+      "title": "زيارة ميدانية إلى المديرية العامة لمكافحة المخدرات",
+      "source_label": "Umm Al-Qura University Events Center",
+      "source_method": "official-page-meta",
+      "source_url": "https://uqu.edu.sa/App/Events/41205",
+      "fetched": true,
+      "image": true,
+      "fetch_reason": ""
+    },
+    {
+      "id": "event-ساوث-ويست-الكاوبوي",
+      "title": "ساوث ويست (الكاوبوي)",
+      "source_label": "Visit Saudi Summer Calendar PDF",
+      "source_method": "official-page-meta",
+      "source_url": "https://www.visitsaudi.com/content/dam/documents/saudi-calendar-ar.pdf",
+      "fetched": true,
+      "image": true,
+      "fetch_reason": ""
+    },
+    {
+      "id": "event-سرطان-الثدي-من-الوقاية-والتشخيص-المبكر-إلى-رحلة-التعافي",
+      "title": "سرطان الثدي من الوقاية والتشخيص المبكر إلى رحلة التعافي",
+      "source_label": "Umm Al-Qura University Events Center",
+      "source_method": "official-page-meta",
+      "source_url": "https://uqu.edu.sa/App/Events/41211",
+      "fetched": true,
+      "image": true,
+      "fetch_reason": ""
+    },
+    {
+      "id": "event-سمره",
+      "title": "سمره",
+      "source_label": "Visit Saudi Summer Calendar PDF",
+      "source_method": "official-page-meta",
+      "source_url": "https://www.visitsaudi.com/content/dam/documents/saudi-calendar-ar.pdf",
+      "fetched": true,
+      "image": true,
+      "fetch_reason": ""
+    },
+    {
+      "id": "event-صيف-وِرث-2026",
+      "title": "صيف وِرث 2026",
+      "source_label": "Visit Saudi Summer Calendar PDF",
+      "source_method": "official-page-meta",
+      "source_url": "https://www.visitsaudi.com/content/dam/documents/saudi-calendar-ar.pdf",
+      "fetched": true,
+      "image": true,
+      "fetch_reason": ""
+    },
+    {
+      "id": "event-صيف-وسمرة",
+      "title": "صيف وسمرة",
+      "source_label": "Visit Saudi Summer Calendar PDF",
+      "source_method": "official-page-meta",
+      "source_url": "https://www.visitsaudi.com/content/dam/documents/saudi-calendar-ar.pdf",
+      "fetched": true,
+      "image": true,
+      "fetch_reason": ""
+    },
+    {
+      "id": "event-عرض-ستاند-أب-كوميدي-مع-شاكر-الشريف",
+      "title": "عرض ستاند أب كوميدي مع شاكر الشريف",
+      "source_label": "Visit Saudi Summer Calendar PDF",
+      "source_method": "official-page-meta",
+      "source_url": "https://www.visitsaudi.com/content/dam/documents/saudi-calendar-ar.pdf",
+      "fetched": true,
+      "image": true,
+      "fetch_reason": ""
+    },
+    {
+      "id": "event-فينا-نحكي؟-كوميديا-ستاند-أب-مع-جون-أشقر",
+      "title": "”فينا نحكي؟“ كوميديا ستاند أب مع جون أشقر",
       "source_label": "Visit Saudi Summer Calendar PDF",
       "source_method": "approved-source-row",
       "source_url": "https://www.visitsaudi.com/content/dam/documents/saudi-calendar-ar.pdf",
@@ -19,991 +519,491 @@
       "fetch_reason": "The operation was aborted due to timeout"
     },
     {
-      "id": "event-سينما-فوكس-مونلايت-قريبـاً",
-      "title": "سينما فوكس مونلايت قريبـاً",
-      "source_label": "Visit Saudi Summer Calendar PDF",
-      "source_method": "approved-source-row",
-      "source_url": "https://www.visitsaudi.com/content/dam/documents/saudi-calendar-ar.pdf",
-      "fetched": false,
-      "image": false,
-      "fetch_reason": "The operation was aborted due to timeout"
-    },
-    {
-      "id": "event-عروض-المناطيد-المضيئة",
-      "title": "عروض المناطيد المضيئة",
-      "source_label": "Visit Saudi Summer Calendar PDF",
-      "source_method": "approved-source-row",
-      "source_url": "https://www.visitsaudi.com/content/dam/documents/saudi-calendar-ar.pdf",
-      "fetched": false,
+      "id": "event-لقاء-بعنوان-إدارة-الضغوط-والسلامة-النفسية",
+      "title": "لقاء بعنوان إدارة الضغوط والسلامة النفسية",
+      "source_label": "Umm Al-Qura University Events Center",
+      "source_method": "official-page-meta",
+      "source_url": "https://uqu.edu.sa/App/Events/41206",
+      "fetched": true,
       "image": true,
-      "fetch_reason": "The operation was aborted due to timeout"
+      "fetch_reason": ""
     },
     {
-      "id": "event-لقاءات-شهر-نوفمبر-2026م",
-      "title": "لقاءات شهر نوفمبر 2026م",
+      "id": "event-لقاءات-شهر-أكتوبر-2026م",
+      "title": "لقاءات شهر أكتوبر 2026م",
       "source_label": "Monsha'at All Events",
-      "source_method": "official-page-meta",
-      "source_url": "https://www.monshaat.gov.sa/ar/node/526412",
-      "fetched": true,
+      "source_method": "approved-source-row",
+      "source_url": "https://www.monshaat.gov.sa/ar/node/516878",
+      "fetched": false,
       "image": false,
-      "fetch_reason": ""
+      "fetch_reason": "fetch failed"
     },
     {
-      "id": "event-لقاءات-شهر-نوفمبر-المغلقة-2026م",
-      "title": "لقاءات شهر نوفمبر (المغلقة) 2026م",
+      "id": "event-لقاءات-شهر-أكتوبر-المغلقة-2026م",
+      "title": "لقاءات شهر أكتوبر (المغلقة) 2026م",
       "source_label": "Monsha'at All Events",
       "source_method": "approved-source-row",
-      "source_url": "https://www.monshaat.gov.sa/ar/node/526034",
+      "source_url": "https://www.monshaat.gov.sa/ar/node/517471",
       "fetched": false,
       "image": false,
       "fetch_reason": "fetch failed"
     },
     {
-      "id": "event-مسار-المشي-بين-معالم-الحِ-جر-الجيولوجية",
-      "title": "مسار المشي بين معالم الحِ جر الجيولوجية",
+      "id": "event-معرض-الصيف-للفنون",
+      "title": "معرض الصيف للفنون",
       "source_label": "Visit Saudi Summer Calendar PDF",
-      "source_method": "approved-source-row",
+      "source_method": "official-page-meta",
       "source_url": "https://www.visitsaudi.com/content/dam/documents/saudi-calendar-ar.pdf",
-      "fetched": false,
+      "fetched": true,
       "image": true,
-      "fetch_reason": "The operation was aborted due to timeout"
+      "fetch_reason": ""
     },
     {
-      "id": "event-نصف-ماراثون-العا",
-      "title": "نصف ماراثون العا",
+      "id": "event-معرض-في-تتبّع-ذكريات-غامرة",
+      "title": "معرض في تتبّع ذكريات غامرة",
       "source_label": "Visit Saudi Summer Calendar PDF",
-      "source_method": "approved-source-row",
+      "source_method": "official-page-meta",
       "source_url": "https://www.visitsaudi.com/content/dam/documents/saudi-calendar-ar.pdf",
-      "fetched": false,
+      "fetched": true,
       "image": true,
-      "fetch_reason": "The operation was aborted due to timeout"
+      "fetch_reason": ""
     },
     {
-      "id": "event-ورشة-عمل-بعنوان-مهارات-استخدام-الماصات-الدقيقة-والفصل",
-      "title": "ورشة عمل بعنوان مهارات استخدام الماصات الدقيقة والفصل",
+      "id": "event-معرض-قلب-البحر",
+      "title": "معرض قلب البحر",
+      "source_label": "Visit Saudi Summer Calendar PDF",
+      "source_method": "official-page-meta",
+      "source_url": "https://www.visitsaudi.com/content/dam/documents/saudi-calendar-ar.pdf",
+      "fetched": true,
+      "image": true,
+      "fetch_reason": ""
+    },
+    {
+      "id": "event-معرض-وظائف-2026",
+      "title": "معرض وظائف 2026",
+      "source_label": "Asharqia Chamber Events",
+      "source_method": "approved-source-row",
+      "source_url": "https://www.chamber.org.sa/sites/Arabic/Events/ChamberEvents/Pages/ChamberEventDetails.aspx?ItemID=344",
+      "fetched": false,
+      "image": false,
+      "fetch_reason": "fetch failed"
+    },
+    {
+      "id": "event-مقدمة-وأساسيات-ريادة-الأعمال",
+      "title": "مقدمة وأساسيات ريادة الأعمال",
+      "source_label": "Qassim Chamber Events",
+      "source_method": "approved-source-row",
+      "source_url": "https://tc.qcc.org.sa/events/214",
+      "fetched": false,
+      "image": false,
+      "fetch_reason": "HTTP 403"
+    },
+    {
+      "id": "event-ملتقى-المستجدين-1448هـ-بقسم-الفيزياء",
+      "title": "ملتقى المستجدين 1448هـ بقسم الفيزياء",
       "source_label": "Umm Al-Qura University Events Center",
       "source_method": "official-page-meta",
-      "source_url": "https://uqu.edu.sa/App/Events/41267",
+      "source_url": "https://uqu.edu.sa/App/Events/41125",
       "fetched": true,
       "image": true,
       "fetch_reason": ""
     },
     {
-      "id": "event-ورشة-عمل-بعنوان-مهارة-زراعة-البيئة-البكتيرية-2",
-      "title": "ورشة عمل بعنوان مهارة زراعة البيئة البكتيرية",
+      "id": "event-منطقة-مشجعي-كأس-العالم-2026",
+      "title": "منطقة مشجعي كأس العالم 2026",
+      "source_label": "Visit Saudi Summer Calendar PDF",
+      "source_method": "official-page-meta",
+      "source_url": "https://www.visitsaudi.com/content/dam/documents/saudi-calendar-ar.pdf",
+      "fetched": true,
+      "image": true,
+      "fetch_reason": ""
+    },
+    {
+      "id": "event-ورشة-القيادات-الجامعة",
+      "title": "ورشة القيادات الجامعة",
       "source_label": "Umm Al-Qura University Events Center",
       "source_method": "official-page-meta",
-      "source_url": "https://uqu.edu.sa/App/Events/41266",
+      "source_url": "https://uqu.edu.sa/App/Events/41200",
       "fetched": true,
       "image": true,
       "fetch_reason": ""
     },
     {
-      "id": "event-qusoor-al-asabila",
-      "title": "Qusoor Al Asabila",
-      "source_label": "Discover Aseer Events",
-      "source_method": "approved-source-row",
-      "source_url": "https://discoveraseer.com/en/experiences/qosor",
-      "fetched": false,
-      "image": true,
-      "fetch_reason": "HTTP 404"
-    },
-    {
-      "id": "event-recess-showcase-time-reflected-on-water",
-      "title": "Hayy Explorers | Recess Showcase: Time Reflected on Water",
-      "source_label": "Hayy Jameel What's On",
+      "id": "event-ورشة-عمل-بعنوان-عجينة-الورق",
+      "title": "ورشة عمل بعنوان عجينة الورق",
+      "source_label": "Umm Al-Qura University Events Center",
       "source_method": "official-page-meta",
-      "source_url": "https://hayyjameel.org/whats-on/recess-showcase-time-reflected-on-water/",
+      "source_url": "https://uqu.edu.sa/App/Events/41202",
       "fetched": true,
       "image": true,
       "fetch_reason": ""
     },
     {
-      "id": "event-rekaib-farm",
-      "title": "Rekaib Farm",
-      "source_label": "Discover Aseer Events",
-      "source_method": "approved-source-row",
-      "source_url": "https://discoveraseer.com/en/experiences/mzraa-rkayb",
-      "fetched": false,
+      "id": "event-ورشة-عمل-بعنوان-فن-الاوريغامي",
+      "title": "ورشة عمل بعنوان فن الاوريغامي",
+      "source_label": "Umm Al-Qura University Events Center",
+      "source_method": "official-page-meta",
+      "source_url": "https://uqu.edu.sa/App/Events/41203",
+      "fetched": true,
       "image": true,
-      "fetch_reason": "HTTP 404"
+      "fetch_reason": ""
     },
     {
-      "id": "event-rural-village-art-street",
-      "title": "Rural Village- Art Street",
-      "source_label": "Discover Aseer Events",
-      "source_method": "approved-source-row",
-      "source_url": "https://discoveraseer.com/en/experiences/sharaa-alfn-alkry-alaoroby",
-      "fetched": false,
+      "id": "event-ورشة-عمل-بعنوان-مهارات-سحب-الدم",
+      "title": "ورشة عمل بعنوان مهارات سحب الدم",
+      "source_label": "Umm Al-Qura University Events Center",
+      "source_method": "official-page-meta",
+      "source_url": "https://uqu.edu.sa/App/Events/41210",
+      "fetched": true,
       "image": true,
-      "fetch_reason": "HTTP 404"
+      "fetch_reason": ""
     },
     {
-      "id": "event-sair2",
-      "title": "sair2",
-      "source_label": "Discover Aseer Events",
-      "source_method": "approved-source-row",
-      "source_url": "https://discoveraseer.com/en/experiences/syr2",
-      "fetched": false,
-      "image": true,
-      "fetch_reason": "HTTP 404"
+      "id": "event-3v3-basketball-tournament",
+      "title": "3v3 Basketball Tournament",
+      "source_label": "Saudi Universities and Technical Colleges",
+      "source_method": "official-page-meta",
+      "source_url": "https://kaustcentral-eventscalendar-userwebsite.cfapps.eu20.hana.ondemand.com/dashboard/event-details/555",
+      "fetched": true,
+      "image": false,
+      "fetch_reason": ""
     },
     {
-      "id": "event-sammrah",
-      "title": "Sammrah",
+      "id": "event-5th-annual-workshop-on-quantitative-optical-imaging-technologies",
+      "title": "5th Annual Workshop on Quantitative Optical Imaging Technologies",
+      "source_label": "Saudi Universities and Technical Colleges",
+      "source_method": "official-page-meta",
+      "source_url": "https://kaustcentral-eventscalendar-userwebsite.cfapps.eu20.hana.ondemand.com/dashboard/event-details/569",
+      "fetched": true,
+      "image": false,
+      "fetch_reason": ""
+    },
+    {
+      "id": "event-annual-kaust-basketball-league-2026",
+      "title": "Annual KAUST Basketball League 2026",
+      "source_label": "Saudi Universities and Technical Colleges",
+      "source_method": "official-page-meta",
+      "source_url": "https://kaustcentral-eventscalendar-userwebsite.cfapps.eu20.hana.ondemand.com/dashboard/event-details/573",
+      "fetched": true,
+      "image": false,
+      "fetch_reason": ""
+    },
+    {
+      "id": "event-awareness-in-the-square-an-evening-of-hope-art-and-togetherness",
+      "title": "Awareness in the Square: An Evening of Hope, Art and Togetherness",
+      "source_label": "Saudi Universities and Technical Colleges",
+      "source_method": "official-page-meta",
+      "source_url": "https://kaustcentral-eventscalendar-userwebsite.cfapps.eu20.hana.ondemand.com/dashboard/event-details/580",
+      "fetched": true,
+      "image": false,
+      "fetch_reason": ""
+    },
+    {
+      "id": "event-best-practices-in-air-quality-monitoring",
+      "title": "Best Practices in Air Quality Monitoring",
+      "source_label": "Saudi Universities and Technical Colleges",
+      "source_method": "official-page-meta",
+      "source_url": "https://kaustcentral-eventscalendar-userwebsite.cfapps.eu20.hana.ondemand.com/dashboard/event-details/590",
+      "fetched": true,
+      "image": false,
+      "fetch_reason": ""
+    },
+    {
+      "id": "event-biobooths-2026-discover-kaust-biodiversity",
+      "title": "BioBooths 2026 – Discover KAUST Biodiversity",
+      "source_label": "Saudi Universities and Technical Colleges",
+      "source_method": "official-page-meta",
+      "source_url": "https://kaustcentral-eventscalendar-userwebsite.cfapps.eu20.hana.ondemand.com/dashboard/event-details/558",
+      "fetched": true,
+      "image": false,
+      "fetch_reason": ""
+    },
+    {
+      "id": "event-breast-cancer-awareness-hub",
+      "title": "Breast Cancer Awareness Hub",
+      "source_label": "Saudi Universities and Technical Colleges",
+      "source_method": "official-page-meta",
+      "source_url": "https://kaustcentral-eventscalendar-userwebsite.cfapps.eu20.hana.ondemand.com/dashboard/event-details/591",
+      "fetched": true,
+      "image": false,
+      "fetch_reason": ""
+    },
+    {
+      "id": "event-buraydah-dates-carnival",
+      "title": "Buraydah Dates Carnival",
       "source_label": "Visit Saudi Seasons",
       "source_method": "official-page-meta",
-      "source_url": "https://www.visitsaudi.com/en/aseer/events/sammrah-event",
+      "source_url": "https://www.visitsaudi.com/en/qassim/events/buraydah-dates-carnival",
       "fetched": true,
       "image": true,
       "fetch_reason": ""
     },
     {
-      "id": "event-saudi-agriculture",
-      "title": "Saudi Agriculture",
-      "source_label": "Riyadh City Events",
-      "source_method": "approved-source-row",
-      "source_url": "https://riyadh.sa/en/moment/events/item/event/29980",
-      "fetched": false,
-      "image": true,
-      "fetch_reason": "fetch failed"
-    },
-    {
-      "id": "event-saudi-ai-week",
-      "title": "Saudi AI Week",
-      "source_label": "Informa Connect Saudi Event Portfolio",
-      "source_method": "approved-source-row",
-      "source_url": "https://informaconnect.com/saudi-ai-week/",
-      "fetched": false,
-      "image": true,
-      "fetch_reason": "HTTP 404"
-    },
-    {
-      "id": "event-saudi-build",
-      "title": "Saudi Build",
-      "source_label": "Riyadh City Events",
-      "source_method": "approved-source-row",
-      "source_url": "https://riyadh.sa/en/moment/events/item/event/29976",
-      "fetched": false,
-      "image": true,
-      "fetch_reason": "fetch failed"
-    },
-    {
-      "id": "event-saudi-drone-exhibition-sadex",
-      "title": "Saudi Drone Exhibition SADEX",
-      "source_label": "Riyadh City Events",
-      "source_method": "approved-source-row",
-      "source_url": "https://riyadh.sa/en/moment/events/item/event/29963",
-      "fetched": false,
-      "image": true,
-      "fetch_reason": "fetch failed"
-    },
-    {
-      "id": "event-saudi-elenex",
-      "title": "Saudi Elenex",
-      "source_label": "Riyadh City Events",
-      "source_method": "approved-source-row",
-      "source_url": "https://riyadh.sa/en/moment/events/item/event/29960",
-      "fetched": false,
-      "image": true,
-      "fetch_reason": "fetch failed"
-    },
-    {
-      "id": "event-saudi-event-show",
-      "title": "Saudi Event Show",
-      "source_label": "Informa Connect Saudi Event Portfolio",
+      "id": "event-community-garden-from-soil-to-seed-basics-to-growing-your-own-plants-wit",
+      "title": "Community Garden | From Soil to Seed: Foundations of Composting with Sara Alsayed",
+      "source_label": "Hayy Jameel What's On",
       "source_method": "official-page-meta",
-      "source_url": "https://informaconnect.com/saudi-event-show/ar/",
+      "source_url": "https://hayyjameel.org/whats-on/community-garden-from-soil-to-seed-basics-to-growing-your-own-plants-with-sara-alsayed/",
       "fetched": true,
       "image": true,
       "fetch_reason": ""
     },
     {
-      "id": "event-saudi-falcons-hunting-exhibition",
-      "title": "Saudi Falcons & Hunting Exhibition",
-      "source_label": "Riyadh City Events",
-      "source_method": "approved-source-row",
-      "source_url": "https://riyadh.sa/en/moment/events/item/event/30835",
-      "fetched": false,
-      "image": true,
-      "fetch_reason": "fetch failed"
-    },
-    {
-      "id": "event-saudi-intermobility-expo",
-      "title": "Saudi Intermobility Expo",
-      "source_label": "Informa Connect Saudi Event Portfolio",
-      "source_method": "official-page-meta",
-      "source_url": "https://informaconnect.com/saudi-intermobility-expo/",
-      "fetched": true,
-      "image": true,
-      "fetch_reason": ""
-    },
-    {
-      "id": "event-saudi-lifestyle-week",
-      "title": "Saudi Lifestyle Week",
-      "source_label": "Riyadh City Events",
-      "source_method": "approved-source-row",
-      "source_url": "https://riyadh.sa/en/moment/events/item/event/29984",
-      "fetched": false,
-      "image": true,
-      "fetch_reason": "fetch failed"
-    },
-    {
-      "id": "event-saudi-makes-future-ai-expo",
-      "title": "Saudi Makes Future AI Expo",
-      "source_label": "Riyadh City Events",
-      "source_method": "approved-source-row",
-      "source_url": "https://riyadh.sa/en/moment/events/item/event/29176",
-      "fetched": false,
-      "image": true,
-      "fetch_reason": "fetch failed"
-    },
-    {
-      "id": "event-saudi-procurement-conference",
-      "title": "Saudi Procurement Conference",
-      "source_label": "Riyadh City Events",
-      "source_method": "approved-source-row",
-      "source_url": "https://riyadh.sa/en/moment/events/item/event/29982",
-      "fetched": false,
-      "image": true,
-      "fetch_reason": "fetch failed"
-    },
-    {
-      "id": "event-saudi-statistics-forum",
-      "title": "Saudi Statistics Forum",
-      "source_label": "Riyadh City Events",
-      "source_method": "approved-source-row",
-      "source_url": "https://riyadh.sa/en/moment/events/item/event/31153",
-      "fetched": false,
-      "image": true,
-      "fetch_reason": "fetch failed"
-    },
-    {
-      "id": "event-seamless-saudi-arabia",
-      "title": "Seamless Saudi Arabia",
-      "source_label": "Riyadh City Events",
-      "source_method": "approved-source-row",
-      "source_url": "https://riyadh.sa/en/moment/events/item/event/29959",
-      "fetched": false,
-      "image": true,
-      "fetch_reason": "fetch failed"
-    },
-    {
-      "id": "event-sky-village",
-      "title": "Sky Village",
+      "id": "event-concert-mohamed-hamaki",
+      "title": "Concert – Mohamed Hamaki",
       "source_label": "Discover Aseer Events",
       "source_method": "approved-source-row",
-      "source_url": "https://discoveraseer.com/en/experiences/sky-village",
+      "source_url": "https://discoveraseer.com/en/experiences/hfl-ghnayy-mhmd-hmaky",
       "fetched": false,
       "image": true,
       "fetch_reason": "HTTP 404"
     },
     {
-      "id": "event-solar-storage-live",
-      "title": "Solar & Storage Live",
-      "source_label": "Riyadh City Events",
-      "source_method": "approved-source-row",
-      "source_url": "https://riyadh.sa/en/moment/events/item/event/29954",
-      "fetched": false,
-      "image": true,
-      "fetch_reason": "fetch failed"
+      "id": "event-discover-saudi-arabia-culture-heritage-jeddah",
+      "title": "Discover Saudi Arabia: Culture, Heritage & Jeddah",
+      "source_label": "Saudi Universities and Technical Colleges",
+      "source_method": "official-page-meta",
+      "source_url": "https://kaustcentral-eventscalendar-userwebsite.cfapps.eu20.hana.ondemand.com/dashboard/event-details/546",
+      "fetched": true,
+      "image": false,
+      "fetch_reason": ""
     },
     {
-      "id": "event-sound-of-abha-fest-saf",
-      "title": "Sound of Abha Fest (SAF)",
+      "id": "event-eishha-nights",
+      "title": "Eishha Nights",
       "source_label": "Visit Saudi Seasons",
       "source_method": "official-page-meta",
-      "source_url": "https://www.visitsaudi.com/en/aseer/events/sound-of-abha-fest",
+      "source_url": "https://www.visitsaudi.com/en/riyadh/events/eishha-nights",
       "fetched": true,
       "image": true,
       "fetch_reason": ""
     },
     {
-      "id": "event-stargazing-at-alula-fort",
-      "title": "Stargazing at AlUla Fort",
-      "source_label": "Experience AlUla Events",
+      "id": "event-forest-wonder",
+      "title": "Forest Wonder",
+      "source_label": "Visit Saudi Seasons",
       "source_method": "official-page-meta",
-      "source_url": "https://www.experiencealula.com/en/whats-on/events/stargazing-at-alula-fort",
+      "source_url": "https://www.visitsaudi.com/en/jeddah/events/forest-wonder",
       "fetched": true,
       "image": true,
       "fetch_reason": ""
     },
     {
-      "id": "event-summer-legacy",
-      "title": "Summer Legacy",
-      "source_label": "Discover Aseer Events",
+      "id": "event-frequency-room-pre-launch-series-varoo-all-night-long",
+      "title": "Frequency Room: Pre-Launch Series — Varoo - All night long",
+      "source_label": "Visit Saudi Summer Calendar PDF",
       "source_method": "approved-source-row",
-      "source_url": "https://discoveraseer.com/en/experiences/sayf",
+      "source_url": "https://www.visitsaudi.com/content/dam/documents/saudi-calendar-ar.pdf",
       "fetched": false,
       "image": true,
-      "fetch_reason": "HTTP 404"
+      "fetch_reason": "The operation was aborted due to timeout"
     },
     {
-      "id": "event-sunset-stillness-meditation-sound-immersion",
-      "title": "Sunset Stillness: Meditation & Sound Immersion",
-      "source_label": "Experience AlUla Events",
+      "id": "event-galu-beach-experience",
+      "title": "GALU Beach Experience",
+      "source_label": "Visit Saudi Seasons",
       "source_method": "official-page-meta",
-      "source_url": "https://www.experiencealula.com/en/whats-on/events/sunset-stillness-meditation-sound-immersion",
+      "source_url": "https://www.visitsaudi.com/en/jeddah/events/galu-beach-experience",
       "fetched": true,
       "image": true,
       "fetch_reason": ""
     },
     {
-      "id": "event-superreturn-saudi-arabia",
-      "title": "SuperReturn Saudi Arabia",
+      "id": "event-girls-comedy-night-from-thmanyah-exit",
+      "title": "Girls Comedy Night from Thmanyah Exit",
+      "source_label": "Visit Saudi Seasons",
+      "source_method": "official-page-meta",
+      "source_url": "https://www.visitsaudi.com/en/riyadh/events/girls-comedy-night-from-thmanyah-exit",
+      "fetched": true,
+      "image": true,
+      "fetch_reason": ""
+    },
+    {
+      "id": "event-hayy-cinema-august-2026",
+      "title": "Hayy Cinema | August 2026",
+      "source_label": "Hayy Jameel What's On",
+      "source_method": "official-page-meta",
+      "source_url": "https://hayyjameel.org/whats-on/hayy-cinema-august-2026/",
+      "fetched": true,
+      "image": true,
+      "fetch_reason": ""
+    },
+    {
+      "id": "event-hayy-cinema-international-cat-day-open-call",
+      "title": "Hayy Cinema | International Cat Day: Open Call",
+      "source_label": "Hayy Jameel What's On",
+      "source_method": "official-page-meta",
+      "source_url": "https://hayyjameel.org/whats-on/hayy-cinema-international-cat-day-open-call/",
+      "fetched": true,
+      "image": true,
+      "fetch_reason": ""
+    },
+    {
+      "id": "event-hayy-explorers-in-august-as-told-by-the-land-routes-of-exchange",
+      "title": "Hayy Explorers in August | As Told by the Land: Routes of Exchange",
+      "source_label": "Hayy Jameel What's On",
+      "source_method": "official-page-meta",
+      "source_url": "https://hayyjameel.org/whats-on/hayy-explorers-thematic-as-told-by-the-land-routes-of-exchange/",
+      "fetched": true,
+      "image": true,
+      "fetch_reason": ""
+    },
+    {
+      "id": "event-hayy-makers-creative-night-create-in-pink",
+      "title": "Hayy Makers | Creative Night: Create in Pink",
+      "source_label": "Hayy Jameel What's On",
+      "source_method": "official-page-meta",
+      "source_url": "https://hayyjameel.org/whats-on/hayy-makers-creative-night-create-in-pink/",
+      "fetched": true,
+      "image": true,
+      "fetch_reason": ""
+    },
+    {
+      "id": "event-hayy-makers-creative-nights",
+      "title": "Hayy Makers | Creative Nights",
+      "source_label": "Hayy Jameel What's On",
+      "source_method": "official-page-meta",
+      "source_url": "https://hayyjameel.org/whats-on/hayy-makers-creative-nights/",
+      "fetched": true,
+      "image": true,
+      "fetch_reason": ""
+    },
+    {
+      "id": "event-hayy-makers-introduction-to-photography-understanding-your-camera",
+      "title": "Hayy Makers | Introduction to Photography: Understanding your Camera",
+      "source_label": "Hayy Jameel What's On",
+      "source_method": "official-page-meta",
+      "source_url": "https://hayyjameel.org/whats-on/hayy-makers-introduction-to-photography-understanding-your-camera/",
+      "fetched": true,
+      "image": true,
+      "fetch_reason": ""
+    },
+    {
+      "id": "event-hayy-makers-open-call-makers-matters",
+      "title": "Hayy Makers | Open Call: Makers Matters",
+      "source_label": "Hayy Jameel What's On",
+      "source_method": "official-page-meta",
+      "source_url": "https://hayyjameel.org/whats-on/hayy-makers-open-call-makers-matters/",
+      "fetched": true,
+      "image": true,
+      "fetch_reason": ""
+    },
+    {
+      "id": "event-hayy-makers-the-art-of-jeddahs-mangoor-with-mohammed-saad-al-emara",
+      "title": "Hayy Makers | The Art of Jeddah’s Mangoor With Mohammed Saad Al Emara",
+      "source_label": "Hayy Jameel What's On",
+      "source_method": "official-page-meta",
+      "source_url": "https://hayyjameel.org/whats-on/hayy-makers-the-art-of-jeddahs-mangoor-with-mohammed-saad-al-emara/",
+      "fetched": true,
+      "image": true,
+      "fetch_reason": ""
+    },
+    {
+      "id": "event-hayy-makers-woodworking-course-level-1-with-ahmad-sofi",
+      "title": "Hayy Makers | Woodworking Course (Level 1) with Ahmad Sofi",
+      "source_label": "Hayy Jameel What's On",
+      "source_method": "official-page-meta",
+      "source_url": "https://hayyjameel.org/whats-on/hayy-makers-woodworking-course-level-1-with-ahmad-sofi-2/",
+      "fetched": true,
+      "image": true,
+      "fetch_reason": ""
+    },
+    {
+      "id": "event-hayy-markets-the-bakers-market-saudi-national-day-edition",
+      "title": "Hayy Markets | The Bakers Market: Saudi National Day Edition",
+      "source_label": "Hayy Jameel What's On",
+      "source_method": "official-page-meta",
+      "source_url": "https://hayyjameel.org/whats-on/hayy-markets-the-bakers-market-a-collaboration-between-aysh-academy-and-art-jameel-4/",
+      "fetched": true,
+      "image": true,
+      "fetch_reason": ""
+    },
+    {
+      "id": "event-hope-starts-with-awareness-a-webinar-by-bupa-and-human-resources",
+      "title": "Hope starts with awareness: A webinar by Bupa and Human Resources",
+      "source_label": "Saudi Universities and Technical Colleges",
+      "source_method": "official-page-meta",
+      "source_url": "https://kaustcentral-eventscalendar-userwebsite.cfapps.eu20.hana.ondemand.com/dashboard/event-details/578",
+      "fetched": true,
+      "image": false,
+      "fetch_reason": ""
+    },
+    {
+      "id": "event-hrse-ksa-hr-summit-expo",
+      "title": "HRSE KSA (HR Summit & Expo)",
       "source_label": "Informa Connect Saudi Event Portfolio",
       "source_method": "official-page-meta",
-      "source_url": "https://informaconnect.com/superreturn-saudi-arabia/",
+      "source_url": "https://informaconnect.com/hrse-saudi/",
       "fetched": true,
       "image": true,
       "fetch_reason": ""
     },
     {
-      "id": "event-world-stadiums-and-arenas-summit",
-      "title": "World Stadiums and Arenas Summit",
-      "source_label": "Riyadh City Events",
-      "source_method": "approved-source-row",
-      "source_url": "https://riyadh.sa/en/moment/events/item/event/29953",
-      "fetched": false,
-      "image": true,
-      "fetch_reason": "fetch failed"
-    },
-    {
-      "id": "event-wpc-energy-congress",
-      "title": "WPC Energy Congress",
-      "source_label": "Riyadh City Events",
-      "source_method": "approved-source-row",
-      "source_url": "https://riyadh.sa/en/moment/events/item/event/30713",
-      "fetched": false,
-      "image": true,
-      "fetch_reason": "fetch failed"
-    },
-    {
-      "id": "event-أساسيات-سلاسل-الإمداد-والخدمات-اللوجستية",
-      "title": "أساسيات سلاسل الإمداد والخدمات اللوجستية",
-      "source_label": "Umm Al-Qura University Events Center",
-      "source_method": "official-page-meta",
-      "source_url": "https://uqu.edu.sa/App/Events/41174",
-      "fetched": true,
-      "image": true,
-      "fetch_reason": ""
-    },
-    {
-      "id": "event-أمازونيا-فان-زون",
-      "title": "أمازونيا فان زون",
-      "source_label": "Visit Saudi Summer Calendar PDF",
-      "source_method": "approved-source-row",
-      "source_url": "https://www.visitsaudi.com/content/dam/documents/saudi-calendar-ar.pdf",
-      "fetched": false,
-      "image": false,
-      "fetch_reason": "The operation was aborted due to timeout"
-    },
-    {
-      "id": "event-ارياش",
-      "title": "ارياش",
-      "source_label": "Visit Saudi Summer Calendar PDF",
-      "source_method": "official-page-meta",
-      "source_url": "https://www.visitsaudi.com/content/dam/documents/saudi-calendar-ar.pdf",
-      "fetched": true,
-      "image": true,
-      "fetch_reason": ""
-    },
-    {
-      "id": "event-الاختبارات-المتكافئة",
-      "title": "الاختبارات المتكافئة",
-      "source_label": "Umm Al-Qura University Events Center",
-      "source_method": "official-page-meta",
-      "source_url": "https://uqu.edu.sa/App/Events/41209",
-      "fetched": true,
-      "image": true,
-      "fetch_reason": ""
-    },
-    {
-      "id": "event-الارشاد-الأكاديمي-ومهارات-دعم-الطلبة",
-      "title": "الارشاد الأكاديمي ومهارات دعم الطلبة",
-      "source_label": "Umm Al-Qura University Events Center",
-      "source_method": "official-page-meta",
-      "source_url": "https://uqu.edu.sa/App/Events/41151",
-      "fetched": true,
-      "image": true,
-      "fetch_reason": ""
-    },
-    {
-      "id": "event-الذكاء-الاصطناعي-التوليدي-في-التعليم-تطبيقات-واخلاقيات",
-      "title": "الذكاء الاصطناعي التوليدي في التعليم-تطبيقات واخلاقيات",
-      "source_label": "Umm Al-Qura University Events Center",
-      "source_method": "official-page-meta",
-      "source_url": "https://uqu.edu.sa/App/Events/41161",
-      "fetched": true,
-      "image": true,
-      "fetch_reason": ""
-    },
-    {
-      "id": "event-الفعالية-التوعوية-بمناسبة-اليوم-العالمي-لسرطان-الثدي",
-      "title": "الفعالية التوعوية بمناسبة اليوم العالمي لسرطان الثدي",
-      "source_label": "Umm Al-Qura University Events Center",
-      "source_method": "official-page-meta",
-      "source_url": "https://uqu.edu.sa/App/Events/41201",
-      "fetched": true,
-      "image": true,
-      "fetch_reason": ""
-    },
-    {
-      "id": "event-اليوم-العالمي-للصحة-النفسية-تحت-شعار-لكل-صوت-أثر",
-      "title": "اليوم العالمي للصحة النفسية تحت شعار «لكل صوت أثر»",
-      "source_label": "Umm Al-Qura University Events Center",
-      "source_method": "official-page-meta",
-      "source_url": "https://uqu.edu.sa/App/Events/41204",
-      "fetched": true,
-      "image": true,
-      "fetch_reason": ""
-    },
-    {
-      "id": "event-باتو",
-      "title": "باتو",
-      "source_label": "Visit Saudi Summer Calendar PDF",
-      "source_method": "approved-source-row",
-      "source_url": "https://www.visitsaudi.com/content/dam/documents/saudi-calendar-ar.pdf",
-      "fetched": false,
-      "image": true,
-      "fetch_reason": "The operation was aborted due to timeout"
-    },
-    {
-      "id": "event-تيفو-فان-زون",
-      "title": "تيفو فان زون",
-      "source_label": "Visit Saudi Summer Calendar PDF",
-      "source_method": "approved-source-row",
-      "source_url": "https://www.visitsaudi.com/content/dam/documents/saudi-calendar-ar.pdf",
-      "fetched": false,
-      "image": true,
-      "fetch_reason": "The operation was aborted due to timeout"
-    },
-    {
-      "id": "event-حديقة-مطار-ابها-الدولي",
-      "title": "حديقة مطار ابها الدولي",
-      "source_label": "Visit Saudi Summer Calendar PDF",
-      "source_method": "approved-source-row",
-      "source_url": "https://www.visitsaudi.com/content/dam/documents/saudi-calendar-ar.pdf",
-      "fetched": false,
-      "image": true,
-      "fetch_reason": "The operation was aborted due to timeout"
-    },
-    {
-      "id": "event-حفل-الاستقبال-السنوي-لقطاع-الاعمال-2026م",
-      "title": "حفل الاستقبال السنوي لقطاع الاعمال 2026م",
-      "source_label": "Asharqia Chamber Events",
-      "source_method": "approved-source-row",
-      "source_url": "https://www.chamber.org.sa/sites/Arabic/Events/ChamberEvents/Pages/ChamberEventDetails.aspx?ItemID=345",
-      "fetched": false,
-      "image": false,
-      "fetch_reason": "HTTP 404"
-    },
-    {
-      "id": "event-دبلوم-إدارة-المشاريع",
-      "title": "دبلوم إدارة المشاريع",
-      "source_label": "Umm Al-Qura University Events Center",
-      "source_method": "official-page-meta",
-      "source_url": "https://uqu.edu.sa/App/Events/41083",
-      "fetched": true,
-      "image": true,
-      "fetch_reason": ""
-    },
-    {
-      "id": "event-ليلة-ستاند-اب-بالانقليزية-من-مخرج-ثمانية",
-      "title": "ليلة ستاند اب بالانقليزية من مخرج ثمانية",
-      "source_label": "Visit Saudi Summer Calendar PDF",
-      "source_method": "approved-source-row",
-      "source_url": "https://www.visitsaudi.com/content/dam/documents/saudi-calendar-ar.pdf",
-      "fetched": false,
-      "image": true,
-      "fetch_reason": "The operation was aborted due to timeout"
-    },
-    {
-      "id": "event-متطلبات-نظام-إدارة-المرافق-iso-41001-للمنشآت-الصغيرة-والمتوسطة",
-      "title": "متطلبات نظام إدارة المرافق ISO 41001 للمنشآت الصغيرة والمتوسطة",
-      "source_label": "Jazan Chamber Events",
-      "source_method": "official-page-meta",
-      "source_url": "https://events.jazancci.org.sa/ar/events/mttlbat-nzam-idarh-almrafq-iso-41001-llmnshat-alsghyrh-walmtwsth-",
-      "fetched": true,
-      "image": true,
-      "fetch_reason": ""
-    },
-    {
-      "id": "event-مزرعة-أعناب",
-      "title": "مزرعة أعناب",
-      "source_label": "Visit Saudi Summer Calendar PDF",
-      "source_method": "official-page-meta",
-      "source_url": "https://www.visitsaudi.com/content/dam/documents/saudi-calendar-ar.pdf",
-      "fetched": true,
-      "image": true,
-      "fetch_reason": ""
-    },
-    {
-      "id": "event-مزرعة-الليوان",
-      "title": "مزرعة الليوان",
-      "source_label": "Visit Saudi Summer Calendar PDF",
-      "source_method": "approved-source-row",
-      "source_url": "https://www.visitsaudi.com/content/dam/documents/saudi-calendar-ar.pdf",
-      "fetched": false,
-      "image": true,
-      "fetch_reason": "The operation was aborted due to timeout"
-    },
-    {
-      "id": "event-مزرعة-ركايب",
-      "title": "مزرعة ركايب",
-      "source_label": "Visit Saudi Summer Calendar PDF",
-      "source_method": "official-page-meta",
-      "source_url": "https://www.visitsaudi.com/content/dam/documents/saudi-calendar-ar.pdf",
-      "fetched": true,
-      "image": true,
-      "fetch_reason": ""
-    },
-    {
-      "id": "event-معرض-الحرف-والأعمال-اليدوية-2026",
-      "title": "معرض الحرف والأعمال اليدوية 2026",
-      "source_label": "Asharqia Chamber Events",
-      "source_method": "approved-source-row",
-      "source_url": "https://www.chamber.org.sa/sites/Arabic/Events/ChamberEvents/Pages/ChamberEventDetails.aspx?ItemID=343",
-      "fetched": false,
-      "image": false,
-      "fetch_reason": "HTTP 404"
-    },
-    {
-      "id": "event-ملتقى-الممارسات-الوقفية-في-نسخته-الخامسة-تحت-عنوان-التشريعات-المحفزة-لنم",
-      "title": "ملتقى الممارسات الوقفية في نسخته الخامسة تحت عنوان (التشريعات المحفزة لنمو الأوقاف وصرفها)",
-      "source_label": "Asharqia Chamber Events",
-      "source_method": "approved-source-row",
-      "source_url": "https://www.chamber.org.sa/sites/Arabic/Events/ChamberEvents/Pages/ChamberEventDetails.aspx?ItemID=348",
-      "fetched": false,
-      "image": false,
-      "fetch_reason": "HTTP 404"
-    },
-    {
-      "id": "event-منتدى-المرأة-الاقتصادي-2026م-بعنوان-من-التمكين-إلى-التأثير-الاقتصادي",
-      "title": "منتدى المرأة الاقتصادي 2026م بعنوان: من التمكين إلى التأثير الاقتصادي",
-      "source_label": "Asharqia Chamber Events",
-      "source_method": "approved-source-row",
-      "source_url": "https://www.chamber.org.sa/sites/Arabic/Events/ChamberEvents/Pages/ChamberEventDetails.aspx?ItemID=347",
-      "fetched": false,
-      "image": false,
-      "fetch_reason": "HTTP 404"
-    },
-    {
-      "id": "event-مهارات-التعامل-مع-الضغوط-الدراسية-وتعزيز-الصحة-النفسية",
-      "title": "مهارات التعامل مع الضغوط الدراسية وتعزيز الصحة النفسية",
-      "source_label": "Umm Al-Qura University Events Center",
-      "source_method": "official-page-meta",
-      "source_url": "https://uqu.edu.sa/App/Events/41191",
-      "fetched": true,
-      "image": true,
-      "fetch_reason": ""
-    },
-    {
-      "id": "event-مهرجان-القادسية",
-      "title": "مهرجان القادسية",
-      "source_label": "Visit Saudi Summer Calendar PDF",
-      "source_method": "approved-source-row",
-      "source_url": "https://www.visitsaudi.com/content/dam/documents/saudi-calendar-ar.pdf",
-      "fetched": false,
-      "image": true,
-      "fetch_reason": "The operation was aborted due to timeout"
-    },
-    {
-      "id": "event-نسيم-الخبر",
-      "title": "نسيم الخبر",
-      "source_label": "Visit Saudi Summer Calendar PDF",
-      "source_method": "official-page-meta",
-      "source_url": "https://www.visitsaudi.com/content/dam/documents/saudi-calendar-ar.pdf",
-      "fetched": true,
-      "image": true,
-      "fetch_reason": ""
-    },
-    {
-      "id": "event-نهائيات-fifae-26",
-      "title": "نهائيات FIFAe 26",
-      "source_label": "Visit Saudi Summer Calendar PDF",
-      "source_method": "approved-source-row",
-      "source_url": "https://www.visitsaudi.com/content/dam/documents/saudi-calendar-ar.pdf",
-      "fetched": false,
-      "image": true,
-      "fetch_reason": "The operation was aborted due to timeout"
-    },
-    {
-      "id": "event-واقف-momos",
-      "title": "واقف! Momos",
-      "source_label": "Visit Saudi Summer Calendar PDF",
-      "source_method": "official-page-meta",
-      "source_url": "https://www.visitsaudi.com/content/dam/documents/saudi-calendar-ar.pdf",
-      "fetched": true,
-      "image": true,
-      "fetch_reason": ""
-    },
-    {
-      "id": "event-azka-farmers-market-coffee-edition",
-      "title": "Azka Farmers Market: Coffee Edition",
+      "id": "event-jameel-library-the-task-of-the-translator-research-lab",
+      "title": "Jameel Library | The Task of the Translator Research Lab",
       "source_label": "Hayy Jameel What's On",
       "source_method": "official-page-meta",
-      "source_url": "https://hayyjameel.org/whats-on/azka-farmers-market-coffee-edition-2/",
+      "source_url": "https://hayyjameel.org/whats-on/jameel-library-the-task-of-the-translator-research-lab/",
       "fetched": true,
       "image": true,
       "fetch_reason": ""
     },
     {
-      "id": "event-global-forum-on-the-ethics-of-ai",
-      "title": "Global Forum on the Ethics of AI",
-      "source_label": "SDAIA Calendar and Events",
+      "id": "event-join-the-kaust-blood-donation-campaign",
+      "title": "Join the KAUST Blood Donation Campaign",
+      "source_label": "Saudi Universities and Technical Colleges",
       "source_method": "official-page-meta",
-      "source_url": "https://sdaia.gov.sa/en/MediaCenter/Events/Pages/EventsDetails.aspx?EventID=122",
+      "source_url": "https://kaustcentral-eventscalendar-userwebsite.cfapps.eu20.hana.ondemand.com/dashboard/event-details/563",
       "fetched": true,
       "image": false,
       "fetch_reason": ""
     },
     {
-      "id": "event-global-proptech-summit",
-      "title": "Global PropTech Summit",
-      "source_label": "Riyadh City Events",
-      "source_method": "approved-source-row",
-      "source_url": "https://riyadh.sa/en/moment/events/item/event/29978",
-      "fetched": false,
-      "image": true,
-      "fetch_reason": "fetch failed"
+      "id": "event-kaust-bruker-x-ray-microscopy-workshop-2026",
+      "title": "KAUST-Bruker X-ray Microscopy Workshop 2026",
+      "source_label": "Saudi Universities and Technical Colleges",
+      "source_method": "official-page-meta",
+      "source_url": "https://kaustcentral-eventscalendar-userwebsite.cfapps.eu20.hana.ondemand.com/dashboard/event-details/588",
+      "fetched": true,
+      "image": false,
+      "fetch_reason": ""
     },
     {
-      "id": "event-gravity-carts-at-gamra",
-      "title": "Gravity Carts at Gamra",
+      "id": "event-kaust-lights-up-pink",
+      "title": "KAUST Lights Up Pink",
+      "source_label": "Saudi Universities and Technical Colleges",
+      "source_method": "official-page-meta",
+      "source_url": "https://kaustcentral-eventscalendar-userwebsite.cfapps.eu20.hana.ondemand.com/dashboard/event-details/575",
+      "fetched": true,
+      "image": false,
+      "fetch_reason": ""
+    },
+    {
+      "id": "event-kaust-padel-season-opener-tournament",
+      "title": "KAUST Padel Season Opener Tournament",
+      "source_label": "Saudi Universities and Technical Colleges",
+      "source_method": "official-page-meta",
+      "source_url": "https://kaustcentral-eventscalendar-userwebsite.cfapps.eu20.hana.ondemand.com/dashboard/event-details/549",
+      "fetched": true,
+      "image": false,
+      "fetch_reason": ""
+    },
+    {
+      "id": "event-kaust-workshop-on-ai-enabled-microwave-sensing-and-communication",
+      "title": "KAUST Workshop on AI-Enabled Microwave Sensing and Communication",
+      "source_label": "Saudi Universities and Technical Colleges",
+      "source_method": "official-page-meta",
+      "source_url": "https://kaustcentral-eventscalendar-userwebsite.cfapps.eu20.hana.ondemand.com/dashboard/event-details/547",
+      "fetched": true,
+      "image": false,
+      "fetch_reason": ""
+    },
+    {
+      "id": "event-merbaa",
+      "title": "Merba'a",
       "source_label": "Visit Saudi Seasons",
       "source_method": "official-page-meta",
-      "source_url": "https://www.visitsaudi.com/en/al-baha/events/gravity-carts-at-gamra",
-      "fetched": true,
-      "image": true,
-      "fetch_reason": ""
-    },
-    {
-      "id": "event-hayy-cinema-19b-2022",
-      "title": "Hayy Cinema | 19B (2022)",
-      "source_label": "Hayy Jameel What's On",
-      "source_method": "official-page-meta",
-      "source_url": "https://hayyjameel.org/whats-on/19b/",
-      "fetched": true,
-      "image": true,
-      "fetch_reason": ""
-    },
-    {
-      "id": "event-hayy-cinema-a-first-step-in",
-      "title": "Hayy Cinema | A first step in...",
-      "source_label": "Hayy Jameel What's On",
-      "source_method": "official-page-meta",
-      "source_url": "https://hayyjameel.org/whats-on/a-first-step-in/",
-      "fetched": true,
-      "image": true,
-      "fetch_reason": ""
-    },
-    {
-      "id": "event-hayy-cinema-a-road-to-mecca-2008",
-      "title": "Hayy Cinema | A Road to Mecca (2008)",
-      "source_label": "Hayy Jameel What's On",
-      "source_method": "official-page-meta",
-      "source_url": "https://hayyjameel.org/whats-on/a-road-to-mecca/",
-      "fetched": true,
-      "image": true,
-      "fetch_reason": ""
-    },
-    {
-      "id": "event-hayy-cinema-aflam-sudan-x-hayy-cinema",
-      "title": "Hayy Cinema | Aflam Sudan x Hayy Cinema",
-      "source_label": "Hayy Jameel What's On",
-      "source_method": "official-page-meta",
-      "source_url": "https://hayyjameel.org/whats-on/aflam-sudan-at-hayy-cinema/",
-      "fetched": true,
-      "image": true,
-      "fetch_reason": ""
-    },
-    {
-      "id": "event-hayy-cinema-aflamna",
-      "title": "Hayy Cinema | AFLAMNA",
-      "source_label": "Hayy Jameel What's On",
-      "source_method": "official-page-meta",
-      "source_url": "https://hayyjameel.org/whats-on/aflamna/",
-      "fetched": true,
-      "image": true,
-      "fetch_reason": ""
-    },
-    {
-      "id": "event-hayy-cinema-aflamna-2",
-      "title": "Hayy Cinema | AFLAMNA",
-      "source_label": "Hayy Jameel What's On",
-      "source_method": "official-page-meta",
-      "source_url": "https://hayyjameel.org/whats-on/aflamna-3/",
-      "fetched": true,
-      "image": true,
-      "fetch_reason": ""
-    },
-    {
-      "id": "event-hayy-cinema-after-the-storm-2016",
-      "title": "Hayy Cinema | After the Storm (2016)",
-      "source_label": "Hayy Jameel What's On",
-      "source_method": "official-page-meta",
-      "source_url": "https://hayyjameel.org/whats-on/after-the-storm/",
-      "fetched": true,
-      "image": true,
-      "fetch_reason": ""
-    },
-    {
-      "id": "event-hayy-cinema-april-2026",
-      "title": "Hayy Cinema | April 2026",
-      "source_label": "Hayy Jameel What's On",
-      "source_method": "official-page-meta",
-      "source_url": "https://hayyjameel.org/whats-on/hayy-cinema-april-2026/",
-      "fetched": true,
-      "image": true,
-      "fetch_reason": ""
-    },
-    {
-      "id": "event-hayy-cinema-at-the-edge-of-land-screening-and-q-a-with-artist-hira-nabi",
-      "title": "Hayy Cinema | 'At the Edge of Land' Screening and Q&A with Artist Hira Nabi",
-      "source_label": "Hayy Jameel What's On",
-      "source_method": "official-page-meta",
-      "source_url": "https://hayyjameel.org/whats-on/at-the-edge-of-land-at-hayy-cinema-screening-and-qa-with-artist-hira-nabi/",
-      "fetched": true,
-      "image": true,
-      "fetch_reason": ""
-    },
-    {
-      "id": "event-hayy-cinema-batiment-5-2023",
-      "title": "Hayy Cinema | Batiment 5 (2023)",
-      "source_label": "Hayy Jameel What's On",
-      "source_method": "official-page-meta",
-      "source_url": "https://hayyjameel.org/whats-on/batiment-5/",
-      "fetched": true,
-      "image": true,
-      "fetch_reason": ""
-    },
-    {
-      "id": "event-hayy-cinema-becoming-iphigenia",
-      "title": "Hayy Cinema | Becoming Iphigenia",
-      "source_label": "Hayy Jameel What's On",
-      "source_method": "official-page-meta",
-      "source_url": "https://hayyjameel.org/whats-on/becoming-iphigenia/",
-      "fetched": true,
-      "image": true,
-      "fetch_reason": ""
-    },
-    {
-      "id": "event-hayy-cinema-city-of-god-2002",
-      "title": "Hayy Cinema | City of God (2002)",
-      "source_label": "Hayy Jameel What's On",
-      "source_method": "official-page-meta",
-      "source_url": "https://hayyjameel.org/whats-on/city-of-god/",
-      "fetched": true,
-      "image": true,
-      "fetch_reason": ""
-    },
-    {
-      "id": "event-hayy-cinema-coffee-2023",
-      "title": "Hayy Cinema | COFFEE! (2023)",
-      "source_label": "Hayy Jameel What's On",
-      "source_method": "official-page-meta",
-      "source_url": "https://hayyjameel.org/whats-on/coffee/",
-      "fetched": true,
-      "image": true,
-      "fetch_reason": ""
-    },
-    {
-      "id": "event-hayy-cinema-dirty-difficult-dangerous-2022",
-      "title": "Hayy Cinema | Dirty, Difficult, Dangerous (2022)",
-      "source_label": "Hayy Jameel What's On",
-      "source_method": "official-page-meta",
-      "source_url": "https://hayyjameel.org/whats-on/dirty-difficult-dangerous/",
-      "fetched": true,
-      "image": true,
-      "fetch_reason": ""
-    },
-    {
-      "id": "event-hayy-cinema-dounia-and-the-princess-of-aleppo-2022",
-      "title": "Hayy Cinema | Dounia and the Princess of Aleppo (2022)",
-      "source_label": "Hayy Jameel What's On",
-      "source_method": "official-page-meta",
-      "source_url": "https://hayyjameel.org/whats-on/dounia-and-the-princess-of-aleppo/",
-      "fetched": true,
-      "image": true,
-      "fetch_reason": ""
-    },
-    {
-      "id": "event-hayy-cinema-fishy-2023",
-      "title": "Hayy Cinema | FISHy (2023)",
-      "source_label": "Hayy Jameel What's On",
-      "source_method": "official-page-meta",
-      "source_url": "https://hayyjameel.org/whats-on/fishy/",
-      "fetched": true,
-      "image": true,
-      "fetch_reason": ""
-    },
-    {
-      "id": "event-hayy-cinema-harka-2022",
-      "title": "Hayy Cinema | Harka (2022)",
-      "source_label": "Hayy Jameel What's On",
-      "source_method": "official-page-meta",
-      "source_url": "https://hayyjameel.org/whats-on/harka/",
-      "fetched": true,
-      "image": true,
-      "fetch_reason": ""
-    },
-    {
-      "id": "event-hayy-cinema-hayy-classics-an-experience-from-jeddahs-past",
-      "title": "Hayy Cinema | Hayy Classics: An Experience from Jeddah's Past",
-      "source_label": "Hayy Jameel What's On",
-      "source_method": "official-page-meta",
-      "source_url": "https://hayyjameel.org/whats-on/hayy-classics-outdoor-screening/",
-      "fetched": true,
-      "image": true,
-      "fetch_reason": ""
-    },
-    {
-      "id": "event-hayy-cinema-hayy-explorers-at-the-cinema",
-      "title": "Hayy Cinema | Hayy Explorers At The Cinema",
-      "source_label": "Hayy Jameel What's On",
-      "source_method": "official-page-meta",
-      "source_url": "https://hayyjameel.org/whats-on/hayy-explorers-at-the-cinema/",
-      "fetched": true,
-      "image": true,
-      "fetch_reason": ""
-    },
-    {
-      "id": "event-hayy-cinema-honeyland-2019",
-      "title": "Hayy Cinema | Honeyland (2019)",
-      "source_label": "Hayy Jameel What's On",
-      "source_method": "official-page-meta",
-      "source_url": "https://hayyjameel.org/whats-on/honeyland-2/",
-      "fetched": true,
-      "image": true,
-      "fetch_reason": ""
-    },
-    {
-      "id": "event-hayy-cinema-howls-moving-castle-2004",
-      "title": "Hayy Cinema | Howl's Moving Castle (2004)",
-      "source_label": "Hayy Jameel What's On",
-      "source_method": "official-page-meta",
-      "source_url": "https://hayyjameel.org/whats-on/howls-moving-castle/",
-      "fetched": true,
-      "image": true,
-      "fetch_reason": ""
-    },
-    {
-      "id": "event-hayy-cinema-if-only-i-could-hibernate-2023",
-      "title": "Hayy Cinema | If Only I Could Hibernate (2023)",
-      "source_label": "Hayy Jameel What's On",
-      "source_method": "official-page-meta",
-      "source_url": "https://hayyjameel.org/whats-on/if-only-i-could-hibernate/",
-      "fetched": true,
-      "image": true,
-      "fetch_reason": ""
-    },
-    {
-      "id": "event-hayy-cinema-june-2026-a-matter-of-life-and-death-the-stories-you-will-di",
-      "title": "Hayy Cinema | June 2026: A Matter of Life and Death, The Stories, You Will Die at Twenty and more!",
-      "source_label": "Hayy Jameel What's On",
-      "source_method": "official-page-meta",
-      "source_url": "https://hayyjameel.org/whats-on/hayy-cinema-june-2026/",
-      "fetched": true,
-      "image": true,
-      "fetch_reason": ""
-    },
-    {
-      "id": "event-hayy-cinema-laila-and-matchstick-2022",
-      "title": "Hayy Cinema | Laila and Matchstick (2022)",
-      "source_label": "Hayy Jameel What's On",
-      "source_method": "official-page-meta",
-      "source_url": "https://hayyjameel.org/whats-on/laila-and-matchstick/",
-      "fetched": true,
-      "image": true,
-      "fetch_reason": ""
-    },
-    {
-      "id": "event-hayy-cinema-like-father-like-son-2013",
-      "title": "Hayy Cinema | Like Father, Like Son (2013)",
-      "source_label": "Hayy Jameel What's On",
-      "source_method": "official-page-meta",
-      "source_url": "https://hayyjameel.org/whats-on/like-father-like-son/",
-      "fetched": true,
-      "image": true,
-      "fetch_reason": ""
-    },
-    {
-      "id": "event-hayy-cinema-march-april-2026",
-      "title": "Hayy Cinema | March & April 2026",
-      "source_label": "Hayy Jameel What's On",
-      "source_method": "official-page-meta",
-      "source_url": "https://hayyjameel.org/whats-on/march-april-2026-at-hayy-cinema/",
-      "fetched": true,
-      "image": true,
-      "fetch_reason": ""
-    },
-    {
-      "id": "event-hayy-cinema-may-2026-goodfellas-sink-spring-came-on-laughing-and-more",
-      "title": "Hayy Cinema | May 2026: Goodfellas, Sink, Spring Came On Laughing and more!",
-      "source_label": "Hayy Jameel What's On",
-      "source_method": "official-page-meta",
-      "source_url": "https://hayyjameel.org/whats-on/hayy-cinema-may-2026/",
-      "fetched": true,
-      "image": true,
-      "fetch_reason": ""
-    },
-    {
-      "id": "event-hayy-cinema-memories-from-the-north",
-      "title": "Hayy Cinema | Memories from the North",
-      "source_label": "Hayy Jameel What's On",
-      "source_method": "official-page-meta",
-      "source_url": "https://hayyjameel.org/whats-on/memories-from-the-north/",
-      "fetched": true,
-      "image": true,
-      "fetch_reason": ""
-    },
-    {
-      "id": "event-hayy-cinema-my-lost-country-2022",
-      "title": "Hayy Cinema | My Lost Country (2022)",
-      "source_label": "Hayy Jameel What's On",
-      "source_method": "official-page-meta",
-      "source_url": "https://hayyjameel.org/whats-on/my-lost-country/",
-      "fetched": true,
-      "image": true,
-      "fetch_reason": ""
-    },
-    {
-      "id": "event-hayy-cinema-my-vibe-2023",
-      "title": "Hayy Cinema | My Vibe (2023)",
-      "source_label": "Hayy Jameel What's On",
-      "source_method": "official-page-meta",
-      "source_url": "https://hayyjameel.org/whats-on/my-vibe/",
-      "fetched": true,
-      "image": true,
-      "fetch_reason": ""
-    },
-    {
-      "id": "event-hayy-cinema-nour-shams-2021",
-      "title": "Hayy Cinema | Nour Shams (2021)",
-      "source_label": "Hayy Jameel What's On",
-      "source_method": "official-page-meta",
-      "source_url": "https://hayyjameel.org/whats-on/nour-shams/",
-      "fetched": true,
-      "image": true,
-      "fetch_reason": ""
-    },
-    {
-      "id": "event-hayy-cinema-open-call-in-short-film-programme",
-      "title": "Hayy Cinema | Open Call: In Short: Film Programme",
-      "source_label": "Hayy Jameel What's On",
-      "source_method": "official-page-meta",
-      "source_url": "https://hayyjameel.org/whats-on/hayycinema-opencall-inshort/",
-      "fetched": true,
-      "image": true,
-      "fetch_reason": ""
-    },
-    {
-      "id": "event-hayy-cinema-othman-2022",
-      "title": "Hayy Cinema | Othman (2022)",
-      "source_label": "Hayy Jameel What's On",
-      "source_method": "official-page-meta",
-      "source_url": "https://hayyjameel.org/whats-on/othman/",
+      "source_url": "https://www.visitsaudi.com/en/al-baha/events/merbaa",
       "fetched": true,
       "image": true,
       "fetch_reason": ""
@@ -1011,238 +1011,70 @@
   ],
   "failed": [
     {
-      "id": "event-حفلة-نانسي-عجرم",
-      "title": "حفلة نانسي عجرم",
-      "source_url": "https://www.visitsaudi.com/content/dam/documents/saudi-calendar-ar.pdf",
-      "reason": "The operation was aborted due to timeout"
-    },
-    {
-      "id": "event-سينما-فوكس-مونلايت-قريبـاً",
-      "title": "سينما فوكس مونلايت قريبـاً",
-      "source_url": "https://www.visitsaudi.com/content/dam/documents/saudi-calendar-ar.pdf",
-      "reason": "The operation was aborted due to timeout"
-    },
-    {
-      "id": "event-عروض-المناطيد-المضيئة",
-      "title": "عروض المناطيد المضيئة",
-      "source_url": "https://www.visitsaudi.com/content/dam/documents/saudi-calendar-ar.pdf",
-      "reason": "The operation was aborted due to timeout"
-    },
-    {
-      "id": "event-لقاءات-شهر-نوفمبر-المغلقة-2026م",
-      "title": "لقاءات شهر نوفمبر (المغلقة) 2026م",
-      "source_url": "https://www.monshaat.gov.sa/ar/node/526034",
-      "reason": "fetch failed"
-    },
-    {
-      "id": "event-مسار-المشي-بين-معالم-الحِ-جر-الجيولوجية",
-      "title": "مسار المشي بين معالم الحِ جر الجيولوجية",
-      "source_url": "https://www.visitsaudi.com/content/dam/documents/saudi-calendar-ar.pdf",
-      "reason": "The operation was aborted due to timeout"
-    },
-    {
-      "id": "event-نصف-ماراثون-العا",
-      "title": "نصف ماراثون العا",
-      "source_url": "https://www.visitsaudi.com/content/dam/documents/saudi-calendar-ar.pdf",
-      "reason": "The operation was aborted due to timeout"
-    },
-    {
-      "id": "event-qusoor-al-asabila",
-      "title": "Qusoor Al Asabila",
-      "source_url": "https://discoveraseer.com/en/experiences/qosor",
+      "id": "event-hayy-markets-the-bakers-market-fall-edition",
+      "title": "Hayy Markets | The Bakers Market: Autumn Edition",
+      "source_url": "https://hayyjameel.org/whats-on/hayy-markets-the-bakers-market-fall-edition/",
       "reason": "HTTP 404"
     },
     {
-      "id": "event-rekaib-farm",
-      "title": "Rekaib Farm",
-      "source_url": "https://discoveraseer.com/en/experiences/mzraa-rkayb",
-      "reason": "HTTP 404"
-    },
-    {
-      "id": "event-rural-village-art-street",
-      "title": "Rural Village- Art Street",
-      "source_url": "https://discoveraseer.com/en/experiences/sharaa-alfn-alkry-alaoroby",
-      "reason": "HTTP 404"
-    },
-    {
-      "id": "event-sair2",
-      "title": "sair2",
-      "source_url": "https://discoveraseer.com/en/experiences/syr2",
-      "reason": "HTTP 404"
-    },
-    {
-      "id": "event-saudi-agriculture",
-      "title": "Saudi Agriculture",
-      "source_url": "https://riyadh.sa/en/moment/events/item/event/29980",
+      "id": "event-nala-narrative-forum",
+      "title": "NALA Narrative Forum",
+      "source_url": "https://riyadh.sa/en/moment/events/item/event/31194",
       "reason": "fetch failed"
     },
     {
-      "id": "event-saudi-ai-week",
-      "title": "Saudi AI Week",
-      "source_url": "https://informaconnect.com/saudi-ai-week/",
-      "reason": "HTTP 404"
-    },
-    {
-      "id": "event-saudi-build",
-      "title": "Saudi Build",
-      "source_url": "https://riyadh.sa/en/moment/events/item/event/29976",
+      "id": "event-saudi-wood-expo",
+      "title": "Saudi Wood Expo",
+      "source_url": "https://riyadh.sa/en/moment/events/item/event/30050",
       "reason": "fetch failed"
     },
     {
-      "id": "event-saudi-drone-exhibition-sadex",
-      "title": "Saudi Drone Exhibition SADEX",
-      "source_url": "https://riyadh.sa/en/moment/events/item/event/29963",
-      "reason": "fetch failed"
+      "id": "event-الذكاء-الاصطناعي-في-التسويق-وصناعة-المحتوى",
+      "title": "الذكاء الاصطناعي في التسويق وصناعة المحتوى",
+      "source_url": "https://tc.qcc.org.sa/events/216",
+      "reason": "HTTP 403"
     },
     {
-      "id": "event-saudi-elenex",
-      "title": "Saudi Elenex",
-      "source_url": "https://riyadh.sa/en/moment/events/item/event/29960",
-      "reason": "fetch failed"
-    },
-    {
-      "id": "event-saudi-falcons-hunting-exhibition",
-      "title": "Saudi Falcons & Hunting Exhibition",
-      "source_url": "https://riyadh.sa/en/moment/events/item/event/30835",
-      "reason": "fetch failed"
-    },
-    {
-      "id": "event-saudi-lifestyle-week",
-      "title": "Saudi Lifestyle Week",
-      "source_url": "https://riyadh.sa/en/moment/events/item/event/29984",
-      "reason": "fetch failed"
-    },
-    {
-      "id": "event-saudi-makes-future-ai-expo",
-      "title": "Saudi Makes Future AI Expo",
-      "source_url": "https://riyadh.sa/en/moment/events/item/event/29176",
-      "reason": "fetch failed"
-    },
-    {
-      "id": "event-saudi-procurement-conference",
-      "title": "Saudi Procurement Conference",
-      "source_url": "https://riyadh.sa/en/moment/events/item/event/29982",
-      "reason": "fetch failed"
-    },
-    {
-      "id": "event-saudi-statistics-forum",
-      "title": "Saudi Statistics Forum",
-      "source_url": "https://riyadh.sa/en/moment/events/item/event/31153",
-      "reason": "fetch failed"
-    },
-    {
-      "id": "event-seamless-saudi-arabia",
-      "title": "Seamless Saudi Arabia",
-      "source_url": "https://riyadh.sa/en/moment/events/item/event/29959",
-      "reason": "fetch failed"
-    },
-    {
-      "id": "event-sky-village",
-      "title": "Sky Village",
-      "source_url": "https://discoveraseer.com/en/experiences/sky-village",
-      "reason": "HTTP 404"
-    },
-    {
-      "id": "event-solar-storage-live",
-      "title": "Solar & Storage Live",
-      "source_url": "https://riyadh.sa/en/moment/events/item/event/29954",
-      "reason": "fetch failed"
-    },
-    {
-      "id": "event-summer-legacy",
-      "title": "Summer Legacy",
-      "source_url": "https://discoveraseer.com/en/experiences/sayf",
-      "reason": "HTTP 404"
-    },
-    {
-      "id": "event-world-stadiums-and-arenas-summit",
-      "title": "World Stadiums and Arenas Summit",
-      "source_url": "https://riyadh.sa/en/moment/events/item/event/29953",
-      "reason": "fetch failed"
-    },
-    {
-      "id": "event-wpc-energy-congress",
-      "title": "WPC Energy Congress",
-      "source_url": "https://riyadh.sa/en/moment/events/item/event/30713",
-      "reason": "fetch failed"
-    },
-    {
-      "id": "event-أمازونيا-فان-زون",
-      "title": "أمازونيا فان زون",
+      "id": "event-فينا-نحكي؟-كوميديا-ستاند-أب-مع-جون-أشقر",
+      "title": "”فينا نحكي؟“ كوميديا ستاند أب مع جون أشقر",
       "source_url": "https://www.visitsaudi.com/content/dam/documents/saudi-calendar-ar.pdf",
       "reason": "The operation was aborted due to timeout"
     },
     {
-      "id": "event-باتو",
-      "title": "باتو",
-      "source_url": "https://www.visitsaudi.com/content/dam/documents/saudi-calendar-ar.pdf",
-      "reason": "The operation was aborted due to timeout"
-    },
-    {
-      "id": "event-تيفو-فان-زون",
-      "title": "تيفو فان زون",
-      "source_url": "https://www.visitsaudi.com/content/dam/documents/saudi-calendar-ar.pdf",
-      "reason": "The operation was aborted due to timeout"
-    },
-    {
-      "id": "event-حديقة-مطار-ابها-الدولي",
-      "title": "حديقة مطار ابها الدولي",
-      "source_url": "https://www.visitsaudi.com/content/dam/documents/saudi-calendar-ar.pdf",
-      "reason": "The operation was aborted due to timeout"
-    },
-    {
-      "id": "event-حفل-الاستقبال-السنوي-لقطاع-الاعمال-2026م",
-      "title": "حفل الاستقبال السنوي لقطاع الاعمال 2026م",
-      "source_url": "https://www.chamber.org.sa/sites/Arabic/Events/ChamberEvents/Pages/ChamberEventDetails.aspx?ItemID=345",
-      "reason": "HTTP 404"
-    },
-    {
-      "id": "event-ليلة-ستاند-اب-بالانقليزية-من-مخرج-ثمانية",
-      "title": "ليلة ستاند اب بالانقليزية من مخرج ثمانية",
-      "source_url": "https://www.visitsaudi.com/content/dam/documents/saudi-calendar-ar.pdf",
-      "reason": "The operation was aborted due to timeout"
-    },
-    {
-      "id": "event-مزرعة-الليوان",
-      "title": "مزرعة الليوان",
-      "source_url": "https://www.visitsaudi.com/content/dam/documents/saudi-calendar-ar.pdf",
-      "reason": "The operation was aborted due to timeout"
-    },
-    {
-      "id": "event-معرض-الحرف-والأعمال-اليدوية-2026",
-      "title": "معرض الحرف والأعمال اليدوية 2026",
-      "source_url": "https://www.chamber.org.sa/sites/Arabic/Events/ChamberEvents/Pages/ChamberEventDetails.aspx?ItemID=343",
-      "reason": "HTTP 404"
-    },
-    {
-      "id": "event-ملتقى-الممارسات-الوقفية-في-نسخته-الخامسة-تحت-عنوان-التشريعات-المحفزة-لنم",
-      "title": "ملتقى الممارسات الوقفية في نسخته الخامسة تحت عنوان (التشريعات المحفزة لنمو الأوقاف وصرفها)",
-      "source_url": "https://www.chamber.org.sa/sites/Arabic/Events/ChamberEvents/Pages/ChamberEventDetails.aspx?ItemID=348",
-      "reason": "HTTP 404"
-    },
-    {
-      "id": "event-منتدى-المرأة-الاقتصادي-2026م-بعنوان-من-التمكين-إلى-التأثير-الاقتصادي",
-      "title": "منتدى المرأة الاقتصادي 2026م بعنوان: من التمكين إلى التأثير الاقتصادي",
-      "source_url": "https://www.chamber.org.sa/sites/Arabic/Events/ChamberEvents/Pages/ChamberEventDetails.aspx?ItemID=347",
-      "reason": "HTTP 404"
-    },
-    {
-      "id": "event-مهرجان-القادسية",
-      "title": "مهرجان القادسية",
-      "source_url": "https://www.visitsaudi.com/content/dam/documents/saudi-calendar-ar.pdf",
-      "reason": "The operation was aborted due to timeout"
-    },
-    {
-      "id": "event-نهائيات-fifae-26",
-      "title": "نهائيات FIFAe 26",
-      "source_url": "https://www.visitsaudi.com/content/dam/documents/saudi-calendar-ar.pdf",
-      "reason": "The operation was aborted due to timeout"
-    },
-    {
-      "id": "event-global-proptech-summit",
-      "title": "Global PropTech Summit",
-      "source_url": "https://riyadh.sa/en/moment/events/item/event/29978",
+      "id": "event-لقاءات-شهر-أكتوبر-2026م",
+      "title": "لقاءات شهر أكتوبر 2026م",
+      "source_url": "https://www.monshaat.gov.sa/ar/node/516878",
       "reason": "fetch failed"
+    },
+    {
+      "id": "event-لقاءات-شهر-أكتوبر-المغلقة-2026م",
+      "title": "لقاءات شهر أكتوبر (المغلقة) 2026م",
+      "source_url": "https://www.monshaat.gov.sa/ar/node/517471",
+      "reason": "fetch failed"
+    },
+    {
+      "id": "event-معرض-وظائف-2026",
+      "title": "معرض وظائف 2026",
+      "source_url": "https://www.chamber.org.sa/sites/Arabic/Events/ChamberEvents/Pages/ChamberEventDetails.aspx?ItemID=344",
+      "reason": "fetch failed"
+    },
+    {
+      "id": "event-مقدمة-وأساسيات-ريادة-الأعمال",
+      "title": "مقدمة وأساسيات ريادة الأعمال",
+      "source_url": "https://tc.qcc.org.sa/events/214",
+      "reason": "HTTP 403"
+    },
+    {
+      "id": "event-concert-mohamed-hamaki",
+      "title": "Concert – Mohamed Hamaki",
+      "source_url": "https://discoveraseer.com/en/experiences/hfl-ghnayy-mhmd-hmaky",
+      "reason": "HTTP 404"
+    },
+    {
+      "id": "event-frequency-room-pre-launch-series-varoo-all-night-long",
+      "title": "Frequency Room: Pre-Launch Series — Varoo - All night long",
+      "source_url": "https://www.visitsaudi.com/content/dam/documents/saudi-calendar-ar.pdf",
+      "reason": "The operation was aborted due to timeout"
     }
   ]
 }

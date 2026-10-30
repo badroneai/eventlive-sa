@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-29T08:59:37.582Z",
+  "generated_at": "2026-10-30T09:23:36.086Z",
   "catalog": "data/events_catalog.json",
   "totals": {
     "targets": 18,
@@ -99,7 +99,7 @@
       "id": "event-application-deadline-discover-your-path",
       "title": "Discover Your Path Program",
       "goals": 1,
-      "features": 4,
+      "features": 3,
       "requirements": 0,
       "registration_deadline": "2026-10-29T18:00:00+03:00"
     },
@@ -107,7 +107,7 @@
       "id": "event-application-deadline-discover-your-path-in-collaboration-with-nahj-assoc",
       "title": "Discover Your Path (in collaboration with Nahj Association)",
       "goals": 1,
-      "features": 4,
+      "features": 3,
       "requirements": 0,
       "registration_deadline": "2026-10-29T18:00:00+03:00"
     },
