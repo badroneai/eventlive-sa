@@ -1,35 +1,20 @@
 {
   "schema": "eventlive.source-secondary-verification.v1",
-  "generated_at": "2026-10-30T09:21:11.893Z",
+  "generated_at": "2026-10-31T08:41:18.744Z",
   "source_candidates": "data/source_candidates.json",
   "source_ops_report": "reports/source-ops-report.json",
   "totals": {
-    "candidates_seen": 369,
-    "candidates_considered": 31,
-    "promoted": 2,
-    "official_evidence_promoted": 2,
+    "candidates_seen": 367,
+    "candidates_considered": 36,
+    "promoted": 0,
+    "official_evidence_promoted": 0,
     "official_programs_promoted": 0,
     "official_catalog_matches_promoted": 0,
-    "still_blocked": 29
+    "still_blocked": 36
   },
-  "promoted": [
-    {
-      "candidate_id": "candidate-misk-hub-programs-application-deadline-misk-startup-school-masterclasses-20261231-0ec1b514",
-      "title": "Application deadline: Misk Startup School MasterClasses",
-      "kind": "official-source-evidence",
-      "evidence": "https://hub.misk.org.sa/programs/entrepreneurship/misk-startup-schoolmasterclasses/",
-      "matched_catalog_event_id": "candidate-misk-hub-programs-application-deadline-misk-npo-essentials-masterclasses-20261231-7122fea6"
-    },
-    {
-      "candidate_id": "candidate-misk-hub-programs-application-deadline-misk-npo-essentials-masterclasses-20261231-7122fea6",
-      "title": "Application deadline: Misk NPO Essentials Masterclasses",
-      "kind": "official-source-evidence",
-      "evidence": "https://hub.misk.org.sa/programs/skills/misk-npo-essentials-masterclasses/",
-      "matched_catalog_event_id": "candidate-misk-hub-programs-application-deadline-misk-startup-school-masterclasses-20261231-0ec1b514"
-    }
-  ],
+  "promoted": [],
   "still_blocked_by_reason": {
-    "not-secondary-verifiable": 5,
+    "not-secondary-verifiable": 12,
     "needs-secondary-official-proof": 24
   }
 }

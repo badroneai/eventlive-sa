@@ -1,14 +1,17 @@
 # EventLive Visit Saudi Image Identity Report
 
-- generated_at: 2026-10-30T09:21:16.906Z
-- pdf_crop_assignments: 34
-- verified: 33
-- struck: 1
-- slots_seen_this_cycle: 37
+- generated_at: 2026-10-31T08:41:22.884Z
+- pdf_crop_assignments: 33
+- verified: 29
+- struck: 4
+- slots_seen_this_cycle: 33
 
 ## Struck (fell back to generated cover)
 
-- حفل ماريلين نعمان الموسيقي (visit-saudi-summer-2026-p008-top-right.jpg) - slot-vacated - no dated card currently occupies page 8 top-right of https://www.visitsaudi.com/content/dam/documents/saudi-calendar-ar.pdf
+- دوري الملوك MENA (visit-saudi-summer-2026-p005-bottom-right.jpg) - slot-vacated - no dated card currently occupies page 5 bottom-right of https://www.visitsaudi.com/content/dam/documents/saudi-calendar-ar.pdf
+- الاخطبوطية كيدز (visit-saudi-summer-2026-p005-bottom-left.jpg) - slot-vacated - no dated card currently occupies page 5 bottom-left of https://www.visitsaudi.com/content/dam/documents/saudi-calendar-ar.pdf
+- ألف وواحد (visit-saudi-summer-2026-p063-bottom-left.jpg) - slot-vacated - no dated card currently occupies page 63 bottom-left of https://www.visitsaudi.com/content/dam/documents/saudi-calendar-ar.pdf
+- ليلة البنات الكوميدية من مخرج ثمانية (visit-saudi-summer-2026-p008-top-left.jpg) - slot-vacated - no dated card currently occupies page 8 top-left of https://www.visitsaudi.com/content/dam/documents/saudi-calendar-ar.pdf
 
 ## Verified
 
@@ -20,14 +23,10 @@
 - تجربة شاطئ قالو (visit-saudi-summer-2026-p063-top-left.png)
 - استمرارية 26 (visit-saudi-summer-2026-p005-top-right.jpg)
 - سيرك فونتانا (visit-saudi-summer-2026-p005-top-left.jpg)
-- دوري الملوك MENA (visit-saudi-summer-2026-p005-bottom-right.jpg)
-- الاخطبوطية كيدز (visit-saudi-summer-2026-p005-bottom-left.jpg)
 - ربع تون (visit-saudi-summer-2026-p006-top-right.jpg)
 - ”فينا نحكي؟“ عرض ستاند أب كوميدي لجون أشقر (visit-saudi-summer-2026-p028-top-left.png)
 - مسار المشي بين معالم الحِ جر الجيولوجية (visit-saudi-summer-2026-p022-bottom-right.png)
-- ألف وواحد (visit-saudi-summer-2026-p063-bottom-left.jpg)
 - شتاء اثراء (visit-saudi-summer-2026-p028-bottom-right.png)
-- ليلة البنات الكوميدية من مخرج ثمانية (visit-saudi-summer-2026-p008-top-left.jpg)
 - المكسيك ضد العالم (visit-saudi-summer-2026-p008-bottom-right.jpg)
 - نسيم الخبر (visit-saudi-summer-2026-p030-top-left.png)
 - سوالف الحي (visit-saudi-summer-2026-p028-top-right.png)

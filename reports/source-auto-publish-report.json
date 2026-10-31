@@ -1,18 +1,18 @@
 {
-  "published_at": "2026-10-30T09:21:12.088Z",
+  "published_at": "2026-10-31T08:41:18.901Z",
   "dry_run": false,
   "include_partner": true,
   "source_candidates": "data/source_candidates.json",
   "events_catalog": "data/events_catalog.json",
-  "candidates_seen": 369,
+  "candidates_seen": 367,
   "totals": {
-    "candidates_seen": 369,
-    "published": 3,
-    "linked_existing": 337,
+    "candidates_seen": 367,
+    "published": 8,
+    "linked_existing": 330,
     "blocked": 29,
     "duplicate_review_alerts": 2,
     "category_fallback_alerts": 0,
-    "reconciled": 340,
+    "reconciled": 338,
     "session_windows_reconciled": 0
   },
   "session_window_changes": [],
@@ -60,19 +60,44 @@
   ],
   "published": [
     {
-      "candidate_id": "candidate-hayy-jameel-events-hayy-markets-azka-farmers-market-pomegranates-edition-20261105-ee290c41",
-      "event_id": "event-hayy-markets-azka-farmers-market-pomegranates-edition",
-      "title": "Hayy Markets | Azka Farmers Market: Pomegranates Edition"
+      "candidate_id": "candidate-visit-saudi-seasons-blvd-world-at-riyadh-season-20261030-23c3c3a5",
+      "event_id": "event-blvd-world-at-riyadh-season",
+      "title": "BLVD World at Riyadh Season"
     },
     {
-      "candidate_id": "candidate-hayy-jameel-events-hayy-explorers-november-programmes-20261105-7a475a93",
-      "event_id": "event-hayy-explorers-november-programmes",
-      "title": "Hayy Explorers | November Programmes"
+      "candidate_id": "candidate-umm-al-qura-events-زيارة-ميدانية-لإدارة-الأدلة-الجنائية-20261101-7e0c3763",
+      "event_id": "event-زيارة-ميدانية-لإدارة-الأدلة-الجنائية",
+      "title": "زيارة ميدانية لإدارة الأدلة الجنائية"
     },
     {
-      "candidate_id": "candidate-hayy-jameel-events-art-jameel-publishing-jeddah-roundabouts-circling-the-city-20261107-439b72b6",
-      "event_id": "event-art-jameel-publishing-jeddah-roundabouts-circling-the-city",
-      "title": "Art Jameel Publishing | Jeddah Roundabouts: Circling the City"
+      "candidate_id": "candidate-umm-al-qura-events-ورشة-عمل-بعنوان-جماليات-لف-الورق-20261101-2d039b5a",
+      "event_id": "event-ورشة-عمل-بعنوان-جماليات-لف-الورق",
+      "title": "ورشة عمل بعنوان جماليات لف الورق"
+    },
+    {
+      "candidate_id": "candidate-umm-al-qura-events-ورشة-عمل-بعنوان-مهارات-رياضة-البادل-20261101-37e56c79",
+      "event_id": "event-ورشة-عمل-بعنوان-مهارات-رياضة-البادل",
+      "title": "ورشة عمل بعنوان «مهارات رياضة البادل»"
+    },
+    {
+      "candidate_id": "candidate-umm-al-qura-events-رشة-عمل-بعنوان-النزاهة-الرياضية-20261101-c572d7ef",
+      "event_id": "event-رشة-عمل-بعنوان-النزاهة-الرياضية",
+      "title": "رشة عمل بعنوان «النزاهة الرياضية»"
+    },
+    {
+      "candidate_id": "candidate-umm-al-qura-events-ورشة-عمل-بعنوان-فن-التفصيص-والترصيع-بـ-الكريستال-20261102-6e07a050",
+      "event_id": "event-ورشة-عمل-بعنوان-فن-التفصيص-والترصيع-بـ-الكريستال",
+      "title": "ورشة عمل بعنوان فن التفصيص والترصيع بـ (الكريستال)"
+    },
+    {
+      "candidate_id": "candidate-umm-al-qura-events-ورشة-عمل-بعنوان-الرسم-بالألوان-الأكريليك-20261103-c6802b76",
+      "event_id": "event-ورشة-عمل-بعنوان-الرسم-بالألوان-الأكريليك",
+      "title": "ورشة عمل بعنوان الرسم بالألوان الأكريليك"
+    },
+    {
+      "candidate_id": "candidate-umm-al-qura-events-فعالية-بعنوان-العالم-على-شاشة-20261104-45550784",
+      "event_id": "event-فعالية-بعنوان-العالم-على-شاشة",
+      "title": "فعالية بعنوان العالم على شاشة"
     }
   ],
   "linked_existing": [
@@ -188,12 +213,6 @@
       "candidate_id": "candidate-visit-saudi-calendar-pdf-معرض-في-تتبّع-ذكريات-غامرة-20260618-4a38d19e",
       "event_id": "event-معرض-في-تتبّع-ذكريات-غامرة",
       "title": "معرض في تتبّع ذكريات غامرة",
-      "reason": "already linked to catalog event"
-    },
-    {
-      "candidate_id": "candidate-discover-aseer-events-aanab-farm-20260701-12941803",
-      "event_id": "event-aanab-farm",
-      "title": "Aanab Farm",
       "reason": "already linked to catalog event"
     },
     {
@@ -467,12 +486,6 @@
       "reason": "already linked to catalog event"
     },
     {
-      "candidate_id": "candidate-visit-saudi-calendar-pdf-دوري-الملوك-mena-20260918-4a38d19e",
-      "event_id": "event-دوري-الملوك-mena",
-      "title": "دوري الملوك MENA",
-      "reason": "already linked to catalog event"
-    },
-    {
       "candidate_id": "candidate-tuwaiq-academy-bootcamps-معسكر-الجرائم-السيبرانية-والتحقيق-الجنائي-الرقمي-المتقدم-20260920-6e2c36f8",
       "event_id": "event-معسكر-الجرائم-السيبرانية-والتحقيق-الجنائي-الرقمي-المتقدم",
       "title": "معسكر الجرائم السيبرانية والتحقيق الجنائي الرقمي المتقدم",
@@ -488,18 +501,6 @@
       "candidate_id": "candidate-experience-alula-events-qissa-bi-qissa-swap-a-story-20260924-a2d33a9a",
       "event_id": "event-qissa-bi-qissa-swap-a-story",
       "title": "Qissa bi Qissa (Swap a Story)",
-      "reason": "already linked to catalog event"
-    },
-    {
-      "candidate_id": "candidate-visit-saudi-calendar-pdf-الاخطبوطية-كيدز-20260925-4a38d19e",
-      "event_id": "event-الاخطبوطية-كيدز",
-      "title": "الاخطبوطية كيدز",
-      "reason": "already linked to catalog event"
-    },
-    {
-      "candidate_id": "candidate-visit-saudi-seasons-okhtabotiya-kids-20260925-97585e97",
-      "event_id": "event-okhtabotiya-kids",
-      "title": "Okhtabotiya Kids",
       "reason": "already linked to catalog event"
     },
     {
@@ -536,6 +537,12 @@
       "candidate_id": "candidate-monshaat-events-لقاءات-شهر-أكتوبر-المغلقة-2026م-20261001-e79fc403",
       "event_id": "event-لقاءات-شهر-أكتوبر-المغلقة-2026م",
       "title": "لقاءات شهر أكتوبر (المغلقة) 2026م",
+      "reason": "already linked to catalog event"
+    },
+    {
+      "candidate_id": "candidate-hayy-jameel-events-hayy-cinema-october-2026-20261001-84cc2d26",
+      "event_id": "event-hayy-cinema-october-2026",
+      "title": "Hayy Cinema | October 2026",
       "reason": "already linked to catalog event"
     },
     {
@@ -581,12 +588,6 @@
       "reason": "already linked to catalog event"
     },
     {
-      "candidate_id": "candidate-hayy-jameel-events-hayy-cinema-october-2026-20261007-84cc2d26",
-      "event_id": "event-hayy-cinema-october-2026",
-      "title": "Hayy Cinema | October 2026",
-      "reason": "already linked to catalog event"
-    },
-    {
       "candidate_id": "candidate-umm-al-qura-events-حراك-يعود-من-جديد-بداية-جديدة-وأثر-مستدام-20261007-1529f492",
       "event_id": "event-حراك-يعود-من-جديد-بداية-جديدة-وأثر-مستدام",
       "title": "حراك يعود من جديد .. بداية جديدة وأثر مستدام",
@@ -614,12 +615,6 @@
       "candidate_id": "candidate-misk-hub-programs-nonprofit-sector-skills-program-20261012-075740c9",
       "event_id": "event-nonprofit-sector-skills-program",
       "title": "Nonprofit Sector Skills Program",
-      "reason": "already linked to catalog event"
-    },
-    {
-      "candidate_id": "candidate-visit-saudi-calendar-stand-up-comedy-shows-this-weekend-from-exit-thmanyah-20261015-e79bb314",
-      "event_id": "event-stand-up-comedy-shows-this-weekend-from-exit-thmanyah",
-      "title": "Stand Up Comedy Shows This Weekend from Exit Thmanyah",
       "reason": "already linked to catalog event"
     },
     {
@@ -695,12 +690,6 @@
       "reason": "already linked to catalog event"
     },
     {
-      "candidate_id": "candidate-invest-saudi-events-future-investment-initiative-fii-10-20261027-a7444334",
-      "event_id": "event-future-investment-initiative-fii-10",
-      "title": "Future Investment Initiative (FII 10)",
-      "reason": "already linked to catalog event"
-    },
-    {
       "candidate_id": "candidate-umm-al-qura-events-رحلة-ابن-بطوطة-عبر-الثقافات-والشعوب-20261027-e5be517d",
       "event_id": "event-رحلة-ابن-بطوطة-عبر-الثقافات-والشعوب",
       "title": "رحلة ابن بطوطة عبر الثقافات والشعوب",
@@ -743,12 +732,6 @@
       "reason": "already linked to catalog event"
     },
     {
-      "candidate_id": "candidate-visit-saudi-calendar-pdf-ألف-وواحد-20261029-4a38d19e",
-      "event_id": "event-ألف-وواحد",
-      "title": "ألف وواحد",
-      "reason": "already linked to catalog event"
-    },
-    {
       "candidate_id": "candidate-visit-saudi-calendar-pdf-شتاء-اثراء-20261029-4a38d19e",
       "event_id": "event-شتاء-اثراء",
       "title": "شتاء اثراء",
@@ -773,12 +756,6 @@
       "reason": "already linked to catalog event"
     },
     {
-      "candidate_id": "candidate-visit-saudi-calendar-pdf-ليلة-البنات-الكوميدية-من-مخرج-ثمانية-20261030-4a38d19e",
-      "event_id": "event-ليلة-البنات-الكوميدية-من-مخرج-ثمانية",
-      "title": "ليلة البنات الكوميدية من مخرج ثمانية",
-      "reason": "already linked to catalog event"
-    },
-    {
       "candidate_id": "candidate-riyadh-city-events-new-global-sport-conference-20261030-4c21d3ac",
       "event_id": "event-new-global-sport-conference",
       "title": "New Global Sport Conference",
@@ -788,18 +765,6 @@
       "candidate_id": "candidate-hayy-jameel-events-hayy-markets-the-bakers-market-autumn-edition-20261030-faf49ce1",
       "event_id": "event-hayy-markets-the-bakers-market-fall-edition",
       "title": "Hayy Markets | The Bakers Market: Autumn Edition",
-      "reason": "already linked to catalog event"
-    },
-    {
-      "candidate_id": "candidate-visit-saudi-seasons-girls-comedy-night-from-thmanyah-exit-20261030-6af2f802",
-      "event_id": "event-girls-comedy-night-from-thmanyah-exit",
-      "title": "Girls Comedy Night from Thmanyah Exit",
-      "reason": "already linked to catalog event"
-    },
-    {
-      "candidate_id": "candidate-mdlbeast-events-beast-house-20261030-83049a2a",
-      "event_id": "event-beast-house",
-      "title": "Beast House",
       "reason": "already linked to catalog event"
     },
     {
@@ -1079,6 +1044,18 @@
       "reason": "already linked to catalog event"
     },
     {
+      "candidate_id": "candidate-hayy-jameel-events-hayy-markets-azka-farmers-market-pomegranates-edition-20261105-ee290c41",
+      "event_id": "event-hayy-markets-azka-farmers-market-pomegranates-edition",
+      "title": "Hayy Markets | Azka Farmers Market: Pomegranates Edition",
+      "reason": "already linked to catalog event"
+    },
+    {
+      "candidate_id": "candidate-hayy-jameel-events-hayy-explorers-november-programmes-20261105-7a475a93",
+      "event_id": "event-hayy-explorers-november-programmes",
+      "title": "Hayy Explorers | November Programmes",
+      "reason": "already linked to catalog event"
+    },
+    {
       "candidate_id": "candidate-ithra-events-little-explorers-20261105-1cc1993f",
       "event_id": "event-little-explorers",
       "title": "Little Explorers",
@@ -1178,6 +1155,12 @@
       "candidate_id": "candidate-hayy-jameel-events-hayy-cinema-the-golden-palm-film-programme-the-best-of-the-saudi-film-fe-20261107-a46a5479",
       "event_id": "event-hayy-cinema-the-golden-palm-film-programme-the-best-of-the-saudi-film-fe",
       "title": "Hayy Cinema | The Golden Palm Film Programme: The Best of the Saudi Film Festival",
+      "reason": "already linked to catalog event"
+    },
+    {
+      "candidate_id": "candidate-hayy-jameel-events-art-jameel-publishing-jeddah-roundabouts-circling-the-city-20261107-439b72b6",
+      "event_id": "event-art-jameel-publishing-jeddah-roundabouts-circling-the-city",
+      "title": "Art Jameel Publishing | Jeddah Roundabouts: Circling the City",
       "reason": "already linked to catalog event"
     },
     {
