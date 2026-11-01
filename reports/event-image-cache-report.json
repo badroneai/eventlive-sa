@@ -1,18 +1,24 @@
 {
-  "generated_at": "2026-10-31T08:49:14.635Z",
+  "generated_at": "2026-11-01T09:59:09.296Z",
   "events_file": "dist/events.json",
   "manifest": "data/event_image_cache_manifest.json",
   "image_dir": "dist/assets/event-images",
   "totals": {
     "targets": 500,
-    "cached_total": 907,
-    "fetched": 5,
-    "reused": 489,
+    "cached_total": 909,
+    "fetched": 7,
+    "reused": 487,
     "failed": 6,
-    "skipped_recent_failures": 6,
+    "skipped_recent_failures": 0,
     "remembered_failures": 34
   },
   "fetched": [
+    {
+      "source_url": "https://hayyjameel.org/wp-content/uploads/2026/10/DSC04733-scaled-aspect-ratio-2560-1217-1100x500.jpg",
+      "file": "dist/assets/event-images/hayy-markets-azka-farmers-market-pomegranates-edition-53e9cec393.jpg",
+      "bytes": 86472,
+      "events": 1
+    },
     {
       "source_url": "https://hayyjameel.org/wp-content/uploads/2026/10/Jeddah-Roundabouts_-Circling-the-City-2026.-Image-courtesy-of-Art-Jameel1-1100x500.jpg",
       "file": "dist/assets/event-images/الفن-جيميل-بوبل-ينشر-جودا-يدور-حول-المدينة-3a8a4e7b35.jpg",
@@ -26,12 +32,6 @@
       "events": 1
     },
     {
-      "source_url": "https://hayyjameel.org/wp-content/uploads/2026/10/DSC04733-scaled-aspect-ratio-2560-1217-1100x500.jpg",
-      "file": "dist/assets/event-images/hayy-markets-azka-farmers-market-pomegranates-edition-53e9cec393.jpg",
-      "bytes": 86472,
-      "events": 1
-    },
-    {
       "source_url": "https://hayyjameel.org/wp-content/uploads/2026/10/DSC00760-scaled-aspect-ratio-2560-1346-1-1100x500.jpg",
       "file": "dist/assets/event-images/مكتبة-جاميل-november-تشرين-الثاني-نوفمبر-4e5f4c41d9.jpg",
       "bytes": 96047,
@@ -41,6 +41,18 @@
       "source_url": "https://s7g10.scene7.com/is/image/rcu/half-marathon-2026?$Responsive$&fit=stretch&fmt=webp&wid=1920",
       "file": "dist/assets/event-images/alula-half-marathon-71cb763487.webp",
       "bytes": 116280,
+      "events": 1
+    },
+    {
+      "source_url": "https://jazancci.org.sa/uploads/external-events/998ec002d20b14d1baa0ea3c825c05a8.jpg",
+      "file": "dist/assets/event-images/التعريف-بخدمات-مراكز-ناجز-العدلية-03021e5b35.jpg",
+      "bytes": 797424,
+      "events": 1
+    },
+    {
+      "source_url": "https://jazancci.org.sa/uploads/external-events/59dc1fcb7a527c49c2630b74b5d5320c.jpg",
+      "file": "dist/assets/event-images/التعريف-بلائحة-نشاط-النقل-التعليمي-2b561c0dc5.jpg",
+      "bytes": 766415,
       "events": 1
     }
   ],
@@ -121,11 +133,6 @@
       "events": 1
     },
     {
-      "source_url": "https://www.ithra.com/application/files/cache/thumbnails/36d13ecef91b05d955bc60b3c951d824.jpg",
-      "file": "dist/assets/event-images/echoes-of-the-familiar-de9fb567e4.jpg",
-      "events": 1
-    },
-    {
       "source_url": "https://www.ithra.com/application/files/cache/thumbnails/a6bc331fa4832c1c4dc775cb733f77fa.jpg",
       "file": "dist/assets/event-images/tafasahu-make-room-f70932f422.jpg",
       "events": 1
@@ -146,11 +153,6 @@
       "events": 1
     },
     {
-      "source_url": "https://www.ithra.com/application/files/cache/thumbnails/180f76cd89a868b3d6b42608dffecd7a.png",
-      "file": "dist/assets/event-images/museum-story-time-1f3a195fe9.png",
-      "events": 1
-    },
-    {
       "source_url": "https://www.ithra.com/application/files/cache/thumbnails/68a12e07a6da5cc989dd7fbd73d03107.jpg",
       "file": "dist/assets/event-images/bedayat-beginnings-of-saudi-art-movement-5815006859.jpg",
       "events": 1
@@ -168,11 +170,6 @@
     {
       "source_url": "https://www.ithra.com/application/files/cache/thumbnails/021dbae93d2b03cf4faffc8cb85e03d7.jpg",
       "file": "dist/assets/event-images/youth-book-club-acf92e6dc3.jpg",
-      "events": 1
-    },
-    {
-      "source_url": "https://www.ithra.com/application/files/cache/thumbnails/34a91e4e84d3e4a79a05114daaabbfcb.jpg",
-      "file": "dist/assets/event-images/tinkering-stations-1fefe4f4f1.jpg",
       "events": 1
     },
     {
@@ -201,11 +198,6 @@
       "events": 1
     },
     {
-      "source_url": "https://www.ithra.com/application/files/cache/thumbnails/0ea6501d38dd241243aaa62d5b93a922.jpg",
-      "file": "dist/assets/event-images/تجربة-الطباعة-البارزة-d3c8504289.jpg",
-      "events": 1
-    },
-    {
       "source_url": "https://www.ithra.com/application/files/cache/thumbnails/5d9089ccc5309c4c20ca0c1099df3ab1.jpg",
       "file": "dist/assets/event-images/chess-hub-3cbbdfff18.jpg",
       "events": 1
@@ -218,11 +210,6 @@
     {
       "source_url": "https://www.ithra.com/application/files/cache/thumbnails/5031b376aa4c8c1488517597db5bca86.jpg",
       "file": "dist/assets/event-images/family-challenges-e3db77fbac.jpg",
-      "events": 1
-    },
-    {
-      "source_url": "https://www.ithra.com/application/files/cache/thumbnails/d8565b5e78b2d0761347e3169962c3c5.jpg",
-      "file": "dist/assets/event-images/games-hub-9ae2a7e0d7.jpg",
       "events": 1
     },
     {
@@ -249,11 +236,6 @@
       "source_url": "https://www.ithra.com/application/files/cache/thumbnails/01b5d57ab150c4fcccb439292ba92ac3.jpg",
       "file": "dist/assets/event-images/toddler-saturday-f5e0116f13.jpg",
       "events": 2
-    },
-    {
-      "source_url": "https://www.ithra.com/application/files/cache/thumbnails/fc8166cf5cfe3b9fc68c32ee5f97245a.jpg",
-      "file": "dist/assets/event-images/story-land-836edf7fa9.jpg",
-      "events": 1
     },
     {
       "source_url": "https://uqu.edu.sa/assets/images/uqu-gate.jpeg",
@@ -301,11 +283,6 @@
       "events": 1
     },
     {
-      "source_url": "https://www.visitsaudi.com/images/ornament-h-m1-24-8290.original.png",
-      "file": "dist/assets/event-images/forest-wonder-499a88ca39.png",
-      "events": 26
-    },
-    {
       "source_url": "https://www.ithra.com/application/files/cache/thumbnails/6157f51c92a2893ce920bbd5ca35f797.jpg",
       "file": "dist/assets/event-images/open-art-space-4910232c8c.jpg",
       "events": 2
@@ -329,6 +306,11 @@
       "source_url": "https://www.ithra.com/application/files/cache/thumbnails/fc67b5bf8e136084db8f05aa03bae956.jpg",
       "file": "dist/assets/event-images/trolley-show-183c47f2c6.jpg",
       "events": 1
+    },
+    {
+      "source_url": "https://www.visitsaudi.com/images/ornament-h-m1-24-8290.original.png",
+      "file": "dist/assets/event-images/forest-wonder-499a88ca39.png",
+      "events": 26
     },
     {
       "source_url": "https://www.ithra.com/application/files/cache/thumbnails/c8141ed00a545a6bce736a07578b62aa.png",
@@ -378,16 +360,6 @@
     {
       "source_url": "https://cdn.tuwaiq.edu.sa/initiatives_admin/images/lvpclckb.li1.webp",
       "file": "dist/assets/event-images/معسكر-الذكاء-الاصطناعي-ba607a38a6.webp",
-      "events": 1
-    },
-    {
-      "source_url": "https://www.ithra.com/application/files/cache/thumbnails/ede25c9dc810397fce8527375c8f75bf.jpg",
-      "file": "dist/assets/event-images/aramcorama-exhibit-bc852ac4b4.jpg",
-      "events": 1
-    },
-    {
-      "source_url": "https://www.ithra.com/application/files/cache/thumbnails/b9dab29976790617352fa739f30a9172.jpg",
-      "file": "dist/assets/event-images/in-praise-of-the-artisan-f673088221.jpg",
       "events": 1
     },
     {
@@ -456,11 +428,6 @@
       "events": 1
     },
     {
-      "source_url": "https://hayyjameel.org/wp-content/uploads/2026/09/la-traversee-1-1-2560x-q85-1100x500.jpg",
-      "file": "dist/assets/event-images/hayy-cinema-october-2026-a771c51824.jpg",
-      "events": 1
-    },
-    {
       "source_url": "https://scth.scene7.com/is/image/scth/saudi-falcons-auction?wid=1600&hei=900&fit=constrain&fmt=webp",
       "file": "dist/assets/event-images/saudi-falcons-club-auction-00c8106902.webp",
       "events": 1
@@ -501,18 +468,8 @@
       "events": 1
     },
     {
-      "source_url": "https://hayyjameel.org/wp-content/uploads/2026/10/YOS01313-scaled-aspect-ratio-2560-1419-1100x500-1.jpg",
-      "file": "dist/assets/event-images/jameel-library-october-community-programmes-14632098d3.jpg",
-      "events": 1
-    },
-    {
       "source_url": "https://hub.misk.org.sa/media/e3pjton2/web.png",
       "file": "dist/assets/event-images/nonprofit-sector-skills-program-09aadbec00.png",
-      "events": 1
-    },
-    {
-      "source_url": "https://s7g10.scene7.com/is/image/rcu/1Q7A3687-desktop-hero-2880x1620?wid=1600&hei=900&fit=constrain&fmt=webp",
-      "file": "dist/assets/event-images/alula-wellness-festival-acf0c2fa83.webp",
       "events": 1
     },
     {
@@ -534,11 +491,6 @@
       "source_url": "https://api.riyadh.sa/sites/default/files/styles/medium/public/2026-01/esports.jpg?itok=m-JCBfZQ",
       "file": "dist/assets/event-images/new-global-sport-conference-118e7a7283.jpg",
       "events": 1
-    },
-    {
-      "source_url": "https://hayyjameel.org/wp-content/uploads/2026/06/DSC07665-scaled-e1781701744946-1100x500.jpg",
-      "file": "dist/assets/event-images/hayy-markets-the-bakers-market-saudi-national-day-edition-7f94bf67f2.jpg",
-      "events": 2
     },
     {
       "source_url": "https://swa-cdn.swa.gov.sa/Events/a8b384622a1d4281b64b6fd75c82bd5e_2026_05_25_07_44_38_769.jpg",
@@ -946,6 +898,11 @@
       "events": 1
     },
     {
+      "source_url": "https://hayyjameel.org/wp-content/uploads/2026/06/DSC07665-scaled-e1781701744946-1100x500.jpg",
+      "file": "dist/assets/event-images/hayy-markets-the-bakers-market-saudi-national-day-edition-7f94bf67f2.jpg",
+      "events": 2
+    },
+    {
       "source_url": "https://www.ithra.com/application/files/cache/thumbnails/88aa46fd2373012f8545425414c30e70.png",
       "file": "dist/assets/event-images/there-is-magic-in-eloquence-6d3b3b6d57.png",
       "events": 1
@@ -993,6 +950,11 @@
     {
       "source_url": "https://static.wixstatic.com/media/708478_1854711612ca467293ee73543b1c06ff%7Emv2.png/v1/fit/w_2500,h_1330,al_c/708478_1854711612ca467293ee73543b1c06ff%7Emv2.png",
       "file": "dist/assets/event-images/global-proptech-summit-2026-34eaf8d944.png",
+      "events": 1
+    },
+    {
+      "source_url": "https://s7g10.scene7.com/is/image/rcu/1Q7A3687-desktop-hero-2880x1620?wid=1600&hei=900&fit=constrain&fmt=webp",
+      "file": "dist/assets/event-images/alula-wellness-festival-acf0c2fa83.webp",
       "events": 1
     },
     {
@@ -1116,6 +1078,11 @@
       "events": 4
     },
     {
+      "source_url": "https://hayyjameel.org/wp-content/uploads/2026/10/YOS01313-scaled-aspect-ratio-2560-1419-1100x500-1.jpg",
+      "file": "dist/assets/event-images/jameel-library-october-community-programmes-14632098d3.jpg",
+      "events": 1
+    },
+    {
       "source_url": "https://api.riyadh.sa/sites/default/files/styles/medium/public/2026-04/68ec852090a69.webp_.bv_resized_ipad.webp_.bv%5B1%5D.jpg?itok=wNC3GVvf",
       "file": "dist/assets/event-images/cfo-leadership-summit-ea1d20fa64.jpg",
       "events": 1
@@ -1198,6 +1165,11 @@
     {
       "source_url": "https://hayyjameel.org/wp-content/uploads/2026/09/coffee-edition-1100x500.jpg",
       "file": "dist/assets/event-images/azka-farmers-market-coffee-edition-399e805bc0.jpg",
+      "events": 1
+    },
+    {
+      "source_url": "https://hayyjameel.org/wp-content/uploads/2026/09/la-traversee-1-1-2560x-q85-1100x500.jpg",
+      "file": "dist/assets/event-images/hayy-cinema-october-2026-a771c51824.jpg",
       "events": 1
     },
     {
@@ -1428,6 +1400,16 @@
     {
       "source_url": "https://api.riyadh.sa/sites/default/files/styles/medium/public/2025-12/ezgif.com-webp-to-jpg-converter%20%2810%29.jpg?itok=kDt3HQUx",
       "file": "dist/assets/event-images/kingdom-business-luxury-travel-congress-ef0650a8b2.jpg",
+      "events": 1
+    },
+    {
+      "source_url": "https://www.ithra.com/application/files/cache/thumbnails/ede25c9dc810397fce8527375c8f75bf.jpg",
+      "file": "dist/assets/event-images/aramcorama-exhibit-bc852ac4b4.jpg",
+      "events": 1
+    },
+    {
+      "source_url": "https://www.ithra.com/application/files/cache/thumbnails/b9dab29976790617352fa739f30a9172.jpg",
+      "file": "dist/assets/event-images/in-praise-of-the-artisan-f673088221.jpg",
       "events": 1
     },
     {
@@ -1901,6 +1883,11 @@
       "events": 1
     },
     {
+      "source_url": "https://www.ithra.com/application/files/cache/thumbnails/fc8166cf5cfe3b9fc68c32ee5f97245a.jpg",
+      "file": "dist/assets/event-images/story-land-836edf7fa9.jpg",
+      "events": 1
+    },
+    {
       "source_url": "https://www.ithra.com/application/files/cache/thumbnails/27476bc77687c51a534d83a6f4c2fed2.jpg",
       "file": "dist/assets/event-images/بتلات-ورفاق-بالعربية-5878a28e89.jpg",
       "events": 1
@@ -1928,6 +1915,11 @@
     {
       "source_url": "https://scth.scene7.com/is/image/scth/ahlam-concert-jeddah?wid=1400&hei=788&fit=constrain&fmt=webp",
       "file": "dist/assets/event-images/ahlam-concert-ccdfe9ff8a.webp",
+      "events": 1
+    },
+    {
+      "source_url": "https://www.ithra.com/application/files/cache/thumbnails/d8565b5e78b2d0761347e3169962c3c5.jpg",
+      "file": "dist/assets/event-images/games-hub-9ae2a7e0d7.jpg",
       "events": 1
     },
     {
@@ -1966,6 +1958,11 @@
       "events": 1
     },
     {
+      "source_url": "https://www.ithra.com/application/files/cache/thumbnails/0ea6501d38dd241243aaa62d5b93a922.jpg",
+      "file": "dist/assets/event-images/تجربة-الطباعة-البارزة-d3c8504289.jpg",
+      "events": 1
+    },
+    {
       "source_url": "https://www.ithra.com/application/files/cache/thumbnails/f63629974556fd3642fc133c437a45df.jpg",
       "file": "dist/assets/event-images/energy-lab-bae21e6134.jpg",
       "events": 1
@@ -1973,6 +1970,11 @@
     {
       "source_url": "https://hub.misk.org.sa/media/eoxb5tmh/ec-founder-leadership-excellence_en.png",
       "file": "dist/assets/event-images/entrepreneur-leadership-excellence-program-01356b9cea.png",
+      "events": 1
+    },
+    {
+      "source_url": "https://www.ithra.com/application/files/cache/thumbnails/34a91e4e84d3e4a79a05114daaabbfcb.jpg",
+      "file": "dist/assets/event-images/tinkering-stations-1fefe4f4f1.jpg",
       "events": 1
     },
     {
@@ -2266,6 +2268,11 @@
       "events": 1
     },
     {
+      "source_url": "https://www.ithra.com/application/files/cache/thumbnails/180f76cd89a868b3d6b42608dffecd7a.png",
+      "file": "dist/assets/event-images/museum-story-time-1f3a195fe9.png",
+      "events": 1
+    },
+    {
       "source_url": "https://www.ithra.com/application/files/cache/thumbnails/9cb3e48739ad64294e279bd3a23dadf7.jpg",
       "file": "dist/assets/event-images/kindergarten-under-the-palm-tree-english-fd59c1ee33.jpg",
       "events": 1
@@ -2446,6 +2453,11 @@
       "events": 1
     },
     {
+      "source_url": "https://www.ithra.com/application/files/cache/thumbnails/36d13ecef91b05d955bc60b3c951d824.jpg",
+      "file": "dist/assets/event-images/echoes-of-the-familiar-de9fb567e4.jpg",
+      "events": 1
+    },
+    {
       "source_url": "https://discoveraseer.com/en/img/asset/YXNzZXRzL2V4cGVyaWVuY2Uva3NodGgucG5n/kshth.png?w=1024&fm=webp&s=a903e9e7554e7cf219359b245d62d50e",
       "file": "dist/assets/event-images/كشتة-ab3a550ce8.webp",
       "events": 1
@@ -2479,33 +2491,23 @@
       "source_url": "https://www.ithra.com/application/files/cache/thumbnails/ffd391d6ab1a31514641bf1e5723a1c6.jpg",
       "file": "dist/assets/event-images/free-monday-children-s-festival-at-the-children-museum-833a2c24ca.jpg",
       "events": 1
-    },
-    {
-      "source_url": "https://scth.scene7.com/is/image/scth/curious-summer?wid=1400&hei=788&fit=constrain&fmt=webp",
-      "file": "dist/assets/event-images/curious-summers-a466fcddad.webp",
-      "events": 1
-    },
-    {
-      "source_url": "https://cdn.tuwaiq.edu.sa/initiatives_admin/images/awj5ovgr.utk.webp",
-      "file": "dist/assets/event-images/معسكر-التأهيل-لرخصة-الدرونز-وتحليل-البيانات-الفوتوغرامترية-b03efbb17c.webp",
-      "events": 1
     }
   ],
   "rejected_removed": [],
   "missing_removed": [
     {
       "source_url": "https://hayyjameel.org/wp-content/uploads/2026/10/Jeddah-Roundabouts_-Circling-the-City-2026.-Image-courtesy-of-Art-Jameel1-1100x500.jpg",
-      "file": "dist/assets/event-images/art-jameel-publishing-jeddah-roundabouts-circling-the-city-3a8a4e7b35.jpg",
+      "file": "dist/assets/event-images/الفن-جيميل-بوبل-ينشر-جودا-يدور-حول-المدينة-3a8a4e7b35.jpg",
+      "reason": "cached-file-missing"
+    },
+    {
+      "source_url": "https://hayyjameel.org/wp-content/uploads/2026/10/DSC01377-scaled-aspect-ratio-2560-1501-1100x500.jpg",
+      "file": "dist/assets/event-images/برامج-هاي-اكسبلوررز-f2b6ad87be.jpg",
       "reason": "cached-file-missing"
     },
     {
       "source_url": "https://hayyjameel.org/wp-content/uploads/2026/10/DSC04733-scaled-aspect-ratio-2560-1217-1100x500.jpg",
       "file": "dist/assets/event-images/hayy-markets-azka-farmers-market-pomegranates-edition-53e9cec393.jpg",
-      "reason": "cached-file-missing"
-    },
-    {
-      "source_url": "https://hayyjameel.org/wp-content/uploads/2026/10/DSC01377-scaled-aspect-ratio-2560-1501-1100x500.jpg",
-      "file": "dist/assets/event-images/hayy-explorers-november-programmes-f2b6ad87be.jpg",
       "reason": "cached-file-missing"
     },
     {
@@ -2519,109 +2521,55 @@
       "reason": "cached-file-missing"
     }
   ],
-  "skipped_recent_failures": [
-    {
-      "source_url": "https://s7g10.scene7.com/is/image/rcu/stargazing-at-alula-fort:landscape-16x9?$Responsive$&fit=stretch&fmt=webp&wid=1920",
-      "events": 1,
-      "reason": "HTTP 403",
-      "failure_kind": "access-denied",
-      "retry_after": "2026-10-31T09:29:49.741Z",
-      "skipped": true
-    },
-    {
-      "source_url": "https://s7g10.scene7.com/is/image/rcu/sunset-stillness-meditation-sound-immersion:landscape-16x9?$Responsive$&fit=stretch&fmt=webp&wid=1920",
-      "events": 1,
-      "reason": "HTTP 403",
-      "failure_kind": "access-denied",
-      "retry_after": "2026-10-31T09:29:49.741Z",
-      "skipped": true
-    },
-    {
-      "source_url": "https://s7g10.scene7.com/is/image/rcu/leonid-meteor-shower-at-jabal-ikmah:landscape-16x9?$Responsive$&fit=stretch&fmt=webp&wid=1920",
-      "events": 1,
-      "reason": "HTTP 403",
-      "failure_kind": "access-denied",
-      "retry_after": "2026-10-31T09:29:49.741Z",
-      "skipped": true
-    },
-    {
-      "source_url": "https://s7g10.scene7.com/is/image/rcu/fei2:landscape-16x9?$Responsive$&fit=stretch&fmt=webp&wid=1920",
-      "events": 1,
-      "reason": "HTTP 403",
-      "failure_kind": "access-denied",
-      "retry_after": "2026-10-31T09:29:49.741Z",
-      "skipped": true
-    },
-    {
-      "source_url": "https://api.riyadh.sa/sites/default/files/styles/medium/public/2026-07/er%20%2859%29.jpg?itok=a33APdGm",
-      "events": 1,
-      "reason": "not-image text/html; charset=utf-8",
-      "failure_kind": "source-returned-html",
-      "retry_after": "2026-10-31T09:29:49.741Z",
-      "skipped": true
-    },
-    {
-      "source_url": "https://cdn.rfecc.sa/wp-content/uploads/mec/qr_898ea2449274454e42895b52b18c6f68.png",
-      "events": 1,
-      "reason": "HTTP 403",
-      "failure_kind": "access-denied",
-      "retry_after": "2026-10-31T09:29:49.741Z",
-      "skipped": true
-    }
-  ],
+  "skipped_recent_failures": [],
   "failed": [
     {
-      "source_url": "https://s7g10.scene7.com/is/image/rcu/stargazing-at-alula-fort:landscape-16x9?$Responsive$&fit=stretch&fmt=webp&wid=1920",
-      "events": 1,
-      "reason": "HTTP 403",
-      "failure_kind": "access-denied",
-      "retry_after": "2026-10-31T09:29:49.741Z",
-      "skipped": true
-    },
-    {
       "source_url": "https://s7g10.scene7.com/is/image/rcu/sunset-stillness-meditation-sound-immersion:landscape-16x9?$Responsive$&fit=stretch&fmt=webp&wid=1920",
       "events": 1,
       "reason": "HTTP 403",
       "failure_kind": "access-denied",
-      "retry_after": "2026-10-31T09:29:49.741Z",
-      "skipped": true
+      "retry_after": "2026-11-02T09:59:09.296Z"
     },
     {
       "source_url": "https://s7g10.scene7.com/is/image/rcu/leonid-meteor-shower-at-jabal-ikmah:landscape-16x9?$Responsive$&fit=stretch&fmt=webp&wid=1920",
       "events": 1,
       "reason": "HTTP 403",
       "failure_kind": "access-denied",
-      "retry_after": "2026-10-31T09:29:49.741Z",
-      "skipped": true
+      "retry_after": "2026-11-02T09:59:09.296Z"
+    },
+    {
+      "source_url": "https://s7g10.scene7.com/is/image/rcu/stargazing-at-alula-fort:landscape-16x9?$Responsive$&fit=stretch&fmt=webp&wid=1920",
+      "events": 1,
+      "reason": "HTTP 403",
+      "failure_kind": "access-denied",
+      "retry_after": "2026-11-02T09:59:09.296Z"
     },
     {
       "source_url": "https://s7g10.scene7.com/is/image/rcu/fei2:landscape-16x9?$Responsive$&fit=stretch&fmt=webp&wid=1920",
       "events": 1,
       "reason": "HTTP 403",
       "failure_kind": "access-denied",
-      "retry_after": "2026-10-31T09:29:49.741Z",
-      "skipped": true
-    },
-    {
-      "source_url": "https://api.riyadh.sa/sites/default/files/styles/medium/public/2026-07/er%20%2859%29.jpg?itok=a33APdGm",
-      "events": 1,
-      "reason": "not-image text/html; charset=utf-8",
-      "failure_kind": "source-returned-html",
-      "retry_after": "2026-10-31T09:29:49.741Z",
-      "skipped": true
+      "retry_after": "2026-11-02T09:59:09.296Z"
     },
     {
       "source_url": "https://cdn.rfecc.sa/wp-content/uploads/mec/qr_898ea2449274454e42895b52b18c6f68.png",
       "events": 1,
       "reason": "HTTP 403",
       "failure_kind": "access-denied",
-      "retry_after": "2026-10-31T09:29:49.741Z",
-      "skipped": true
+      "retry_after": "2026-11-02T09:59:09.296Z"
+    },
+    {
+      "source_url": "https://api.riyadh.sa/sites/default/files/styles/medium/public/2026-07/er%20%2859%29.jpg?itok=a33APdGm",
+      "events": 1,
+      "reason": "not-image text/html; charset=utf-8",
+      "failure_kind": "source-returned-html",
+      "retry_after": "2026-11-02T09:59:09.296Z"
     }
   ],
   "requires_rebuild": true,
   "rebuild_reasons": [
-    "fetched:5",
-    "missing-removed:5"
+    "fetched:7",
+    "missing-removed:5",
+    "new-failures:6"
   ]
 }

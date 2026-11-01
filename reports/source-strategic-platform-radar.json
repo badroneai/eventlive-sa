@@ -1,6 +1,6 @@
 {
   "schema": "eventlive.source-strategic-platform-radar.v1",
-  "generated_at": "2026-10-30T08:47:41.747Z",
+  "generated_at": "2026-11-01T09:22:54.365Z",
   "policy": {
     "allowed_use": "official source evidence refresh, API-surface mapping, partnership prioritization, extractor backlog decisions",
     "disallowed_use": "direct catalog publication without official confirmation and duplicate review"
@@ -199,7 +199,7 @@
       "final_url": "https://www.visitsaudi.com/ar/saudi-calendar",
       "via": "fetch",
       "content_type": "text/html; charset=utf-8",
-      "bytes": 91541,
+      "bytes": 91597,
       "title": "تقويم السعودية | تابع العطلات والفعاليات المميزة - الموقع الرسمي للسياحة السعودية",
       "classification": "reachable",
       "error": "",
@@ -256,17 +256,17 @@
         {
           "url": "https://www.visitsaudi.com/bin/api/v3/events?locale=ar",
           "status": 200,
-          "bytes": 78652,
+          "bytes": 62496,
           "classification": "reachable",
           "summary": {
             "parse_ok": true,
-            "item_count": 23,
+            "item_count": 18,
             "sample_titles": [
               "معرض اللغة العربية 28",
-              "تجربة شاطئ قالو",
               "«استمرارية 26» برنامج الفنانين الناشئين في فنون الوسائط الجديدة بمركز الدرعية لفنون المستقبل",
-              "الأخطبوطية كيدز",
-              "مزاد نادي الصقور السعودي"
+              "مزاد نادي الصقور السعودي",
+              "بطولة أرامكو السعودية للفورمولا 4",
+              "موسم سباقات الرياض"
             ]
           },
           "sample": "{\"code\":200,\"message\":\"success\",\"response\":{\"data\":[{\"type\":\"فعالية\",\"title\":\"معرض اللغة العربية 28\",\"freePaid\":\"paid\",\"bannerImages\":[{\"fileReference\":\"/content/dam/wvs/calendar/arabic-language-exhibition-in-riyadh.jpg\",\"mobileImageReference\":\"/con…"
@@ -274,17 +274,17 @@
         {
           "url": "https://www.visitsaudi.com/bin/api/v3/events?locale=en",
           "status": 200,
-          "bytes": 82145,
+          "bytes": 65477,
           "classification": "reachable",
           "summary": {
             "parse_ok": true,
-            "item_count": 23,
+            "item_count": 18,
             "sample_titles": [
               "Arabic Language Exhibition 28",
-              "GALU Beach Experience",
               "Continuum '26 Diriyah Art Futures Emerging New Media Artists Programme",
-              "Okhtabotiya Kids",
-              "Saudi Falcons Club Auction"
+              "Saudi Falcons Club Auction",
+              "Aramco F4 Saudi Arabian Championship",
+              "Riyadh Racing Season"
             ]
           },
           "sample": "{\"code\":200,\"message\":\"success\",\"response\":{\"data\":[{\"type\":\"EVENT\",\"title\":\"Arabic Language Exhibition 28\",\"freePaid\":\"paid\",\"bannerImages\":[{\"fileReference\":\"/content/dam/wvs/calendar/arabic-language-exhibition-in-riyadh.jpg\",\"mobileImageReference…"
@@ -330,7 +330,7 @@
         "https://wbk-assets.webook.com/8.2/locales/en/currency_common.json",
         "https://wbk-assets.webook.com/8.2/locales/en/payment_common.json",
         "https://wbk-assets.webook.com/8.2/locales/en/subscription_common.json",
-        "https://webook.com/cdn-cgi/content?id=gd6wv37FXUk4hpg0dBBFeVUIrdzLH1G4k.wA32QAlEA-1793350073.0975692-1.2.1.1-ZG5cMCj891bTdE4hReCXiT04g_FpgtNSVBlhgBhk6Cv._VbSHipS0AGiZw_5rUwn",
+        "https://webook.com/cdn-cgi/content?id=zTwVyiFj2YJ42yfZf0yGOq4xkjuHEVndREP2zPbYxfo-1793524984.3082416-1.2.1.1-DMtzAGbWHGeXZLmr_mIvTgQyLHJvYfoJqx51jtHD.nNh8WZZZ_j0wc6beXT2LIVE",
         "https://static.cloudflareinsights.com/beacon.min.js/vce701823e78c4301a35b7e07294d87301792088814092"
       ],
       "page_hint_words": [

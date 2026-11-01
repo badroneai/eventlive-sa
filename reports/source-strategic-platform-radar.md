@@ -1,6 +1,6 @@
 # Strategic Platform Source Radar
 
-Generated at: 2026-10-30T08:47:41.747Z
+Generated at: 2026-11-01T09:22:54.365Z
 
 Policy: evidence refresh, API-surface mapping, and source strategy only. This radar does not auto-publish catalog events.
 
@@ -51,8 +51,8 @@ Policy: evidence refresh, API-surface mapping, and source strategy only. This ra
 - Project use: Keep in the 6-hour source ring; Arabic and English API payloads are reachable and useful for tourism-facing event discovery.
 - Title: تقويم السعودية | تابع العطلات والفعاليات المميزة - الموقع الرسمي للسياحة السعودية
 - Hint URLs: https://www.googletagmanager.com, https://cdn.consentmanager.net, https://delivery.consentmanager.net, https://www.googletagmanager.com/gtm.js?id=, https://www.clarity.ms/tag/, https://www.visitsaudi.com/images/SoundStorm-1.2e16d0ba.fill-1200x630.jpg, https://www.visitsaudi.com/ar/saudi-calendar, https://www.visitsaudi.com/ar
-  - API 200 https://www.visitsaudi.com/bin/api/v3/events?locale=ar: 23 items; معرض اللغة العربية 28, تجربة شاطئ قالو, «استمرارية 26» برنامج الفنانين الناشئين في فنون الوسائط الجديدة بمركز الدرعية لفنون المستقبل, الأخطبوطية كيدز, مزاد نادي الصقور السعودي
-  - API 200 https://www.visitsaudi.com/bin/api/v3/events?locale=en: 23 items; Arabic Language Exhibition 28, GALU Beach Experience, Continuum '26 Diriyah Art Futures Emerging New Media Artists Programme, Okhtabotiya Kids, Saudi Falcons Club Auction
+  - API 200 https://www.visitsaudi.com/bin/api/v3/events?locale=ar: 18 items; معرض اللغة العربية 28, «استمرارية 26» برنامج الفنانين الناشئين في فنون الوسائط الجديدة بمركز الدرعية لفنون المستقبل, مزاد نادي الصقور السعودي, بطولة أرامكو السعودية للفورمولا 4, موسم سباقات الرياض
+  - API 200 https://www.visitsaudi.com/bin/api/v3/events?locale=en: 18 items; Arabic Language Exhibition 28, Continuum '26 Diriyah Art Futures Emerging New Media Artists Programme, Saudi Falcons Club Auction, Aramco F4 Saudi Arabian Championship, Riyadh Racing Season
 
 ### webook Explore
 

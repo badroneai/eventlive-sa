@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-31T08:41:22.884Z",
+  "generated_at": "2026-11-01T09:50:23.821Z",
   "catalog": "data/events_catalog.json",
   "candidates": "data/source_candidates.json",
   "manifest": "data/event_image_cache_manifest.json",
@@ -9,39 +9,32 @@
     "min_intersection": 2
   },
   "totals": {
-    "pdf_crop_assignments": 33,
-    "verified": 29,
-    "struck": 4,
-    "slots_seen_this_cycle": 33
+    "pdf_crop_assignments": 29,
+    "verified": 26,
+    "struck": 3,
+    "slots_seen_this_cycle": 30
   },
   "struck": [
     {
-      "id": "event-دوري-الملوك-mena",
-      "title": "دوري الملوك MENA",
-      "file": "visit-saudi-summer-2026-p005-bottom-right.jpg",
+      "id": "event-الأخطبوطية",
+      "title": "الاخطبوطية",
+      "file": "visit-saudi-summer-2026-p013-bottom-right.png",
       "reason": "slot-vacated",
-      "detail": "no dated card currently occupies page 5 bottom-right of https://www.visitsaudi.com/content/dam/documents/saudi-calendar-ar.pdf"
+      "detail": "no dated card currently occupies page 13 bottom-right of https://www.visitsaudi.com/content/dam/documents/saudi-calendar-ar.pdf"
     },
     {
-      "id": "event-الاخطبوطية-كيدز",
-      "title": "الاخطبوطية كيدز",
-      "file": "visit-saudi-summer-2026-p005-bottom-left.jpg",
+      "id": "event-تجربة-شاطئ-قالو",
+      "title": "تجربة شاطئ قالو",
+      "file": "visit-saudi-summer-2026-p063-top-left.png",
       "reason": "slot-vacated",
-      "detail": "no dated card currently occupies page 5 bottom-left of https://www.visitsaudi.com/content/dam/documents/saudi-calendar-ar.pdf"
+      "detail": "no dated card currently occupies page 63 top-left of https://www.visitsaudi.com/content/dam/documents/saudi-calendar-ar.pdf"
     },
     {
-      "id": "event-ألف-وواحد",
-      "title": "ألف وواحد",
-      "file": "visit-saudi-summer-2026-p063-bottom-left.jpg",
+      "id": "event-المكسيك-ضد-العالم",
+      "title": "المكسيك ضد العالم",
+      "file": "visit-saudi-summer-2026-p008-bottom-right.jpg",
       "reason": "slot-vacated",
-      "detail": "no dated card currently occupies page 63 bottom-left of https://www.visitsaudi.com/content/dam/documents/saudi-calendar-ar.pdf"
-    },
-    {
-      "id": "event-ليلة-البنات-الكوميدية-من-مخرج-ثمانية",
-      "title": "ليلة البنات الكوميدية من مخرج ثمانية",
-      "file": "visit-saudi-summer-2026-p008-top-left.jpg",
-      "reason": "slot-vacated",
-      "detail": "no dated card currently occupies page 8 top-left of https://www.visitsaudi.com/content/dam/documents/saudi-calendar-ar.pdf"
+      "detail": "no dated card currently occupies page 8 bottom-right of https://www.visitsaudi.com/content/dam/documents/saudi-calendar-ar.pdf"
     }
   ],
   "verified": [
@@ -85,24 +78,6 @@
         "تتبع",
         "ذكريات",
         "غامره"
-      ]
-    },
-    {
-      "id": "event-الأخطبوطية",
-      "title": "الاخطبوطية",
-      "file": "visit-saudi-summer-2026-p013-bottom-right.png",
-      "matched_tokens": [
-        "الاخطبوطيه"
-      ]
-    },
-    {
-      "id": "event-تجربة-شاطئ-قالو",
-      "title": "تجربة شاطئ قالو",
-      "file": "visit-saudi-summer-2026-p063-top-left.png",
-      "matched_tokens": [
-        "تجربه",
-        "شاطي",
-        "قالو"
       ]
     },
     {
@@ -165,15 +140,6 @@
       "matched_tokens": [
         "شتاء",
         "اثراء"
-      ]
-    },
-    {
-      "id": "event-المكسيك-ضد-العالم",
-      "title": "المكسيك ضد العالم",
-      "file": "visit-saudi-summer-2026-p008-bottom-right.jpg",
-      "matched_tokens": [
-        "المكسيك",
-        "العالم"
       ]
     },
     {

@@ -1,7 +1,7 @@
 {
   "schema": "eventlive.source-browser-probe-checkpoint.v1",
-  "checkpointed_at": "2026-10-31T08:32:55.048Z",
-  "generated_at": "2026-10-31T08:30:22.903Z",
+  "checkpointed_at": "2026-11-01T09:36:48.270Z",
+  "generated_at": "2026-11-01T09:36:30.051Z",
   "source_registry": "data/source_registry.json",
   "output_dir": "data/raw/browser-probes",
   "sources_planned": 3,
@@ -15,50 +15,14 @@
     "policy_skipped": 0
   },
   "completed_ids": [
-    "monshaat-events",
     "misk-hub-events",
+    "visit-saudi-calendar-pdf",
     "riyadh-city-events"
   ],
   "sources": [
     {
-      "id": "monshaat-events",
-      "probed_at": "2026-10-31T08:32:38.033Z",
-      "name": "Monsha'at All Events",
-      "priority": 9,
-      "url": "https://www.monshaat.gov.sa/en/events-list",
-      "final_url": "chrome-error://chromewebdata/",
-      "status": "error",
-      "http_status": 0,
-      "navigation_error": "page.goto: Timeout 30000ms exceeded.\nCall log:\n  - navigating to \"https://www.monshaat.gov.sa/en/events-list\", waiting until \"domcontentloaded\"\n",
-      "duration_ms": 134640,
-      "classification": "empty-or-shell",
-      "next_action": "اعتبرها shell وابحث عن API أو مسار بديل قبل أي collector.",
-      "title": "",
-      "text_bytes": 0,
-      "html_bytes": 0,
-      "html_snapshot": "data/raw/browser-probes/monshaat-events-2026-10-31T08-30-22-903Z.html",
-      "screenshot": "",
-      "signals": {
-        "has_next_data": false,
-        "has_nuxt": false,
-        "has_json_ld": false,
-        "has_event_schema": false,
-        "date_snippets": [],
-        "event_like_links": []
-      },
-      "script_signals": {
-        "next_data_scripts": 0,
-        "nuxt_scripts": 0,
-        "json_ld_scripts": 0,
-        "large_inline_scripts": 0
-      },
-      "network_total": 0,
-      "network_endpoints": [],
-      "network_sample": []
-    },
-    {
       "id": "misk-hub-events",
-      "probed_at": "2026-10-31T08:32:47.911Z",
+      "probed_at": "2026-11-01T09:36:40.660Z",
       "name": "Misk Hub Events",
       "priority": 28,
       "url": "https://hub.misk.org.sa/en/events/",
@@ -66,28 +30,28 @@
       "status": "ok",
       "http_status": 200,
       "navigation_error": "",
-      "duration_ms": 9844,
+      "duration_ms": 10140,
       "classification": "browser-network-api",
       "next_action": "ثبت endpoint مرشحًا كجامع مباشر، ثم اكتب extractor من JSON مع اختبار انحدار.",
       "title": "Misk Hub Events",
-      "text_bytes": 2661,
-      "html_bytes": 253355,
-      "html_snapshot": "data/raw/browser-probes/misk-hub-events-2026-10-31T08-30-22-903Z.html",
-      "screenshot": "data/raw/browser-probes/misk-hub-events-2026-10-31T08-30-22-903Z.png",
+      "text_bytes": 2247,
+      "html_bytes": 253264,
+      "html_snapshot": "data/raw/browser-probes/misk-hub-events-2026-11-01T09-36-30-051Z.html",
+      "screenshot": "data/raw/browser-probes/misk-hub-events-2026-11-01T09-36-30-051Z.png",
       "signals": {
         "has_next_data": false,
         "has_nuxt": false,
         "has_json_ld": false,
         "has_event_schema": false,
         "date_snippets": [
-          "Insights العربية Sign in Skills Offline 28 Oct 2026 stc x Misk Workshops Series A workshop represented by a cybersecurity specialis",
-          "ing on 28th October 2026 Skills Offline 19 - 20 Oct 2026 Nonprofit Governance: From Compliance to Institutional Excellence This wor",
+          "Insights العربية Sign in Skills Offline 19 - 20 Oct 2026 Nonprofit Governance: From Compliance to Institutional Excellence This wor",
           "ssed stc x Misk Workshops Series Arabic 28 Oct 2026 2:00 pm : 3:00 pm More Details Hybrid This event has Passed From the Classroom",
           "That Make the Difference English,Arabic 21 Oct 2026 7:00 pm : 8:00 pm More Details In-Person This event has Passed Nonprofit Govern",
           "ance to Institutional Excellence Arabic 19 - 20 Oct 2026 4:00 pm : 8:00 pm More Details Hybrid This event has Passed Finance Fundam",
           "entals English,Arabic 14 Sep 2026 4:00 pm : 7:00 pm More Details Online This event has Passed How to Choose Your",
           "eep Up with Labor Market Changes Arabic 26 Aug 2026 7:00 pm : 8:00 pm More Details Hybrid This event has Passed Navigating the Cybe",
-          "Build a Corporate Career English,Arabic 25 Aug 2026 1:00 pm : 2:00 pm More Details Online This event has Passed Development Media:"
+          "Build a Corporate Career English,Arabic 25 Aug 2026 1:00 pm : 2:00 pm More Details Online This event has Passed Development Media:",
+          "From Message to Impact Al Baha Arabic 22 - 23 Aug 2026 6:00 pm : 10:00 pm More Details Online This event has Passed Cybersecurity"
         ],
         "event_like_links": [
           {
@@ -183,6 +147,16 @@
         {
           "method": "POST",
           "status": 200,
+          "url": "https://mpc-prod-24-s6uit34pua-uw.a.run.app/events?cee=no",
+          "content_type": "application/json",
+          "resource_type": "fetch",
+          "request_post_data": "{\"event_name\":\"PageView\",\"smart_setup\":{\"auto_web_details_data\":\"{\\\"entity_brand\\\":[{\\\"rid\\\":\\\"28393245976984225\\\",\\\"v\\\":[\\\"Misk\\\"]}],\\\"page_description\\\":[{\\\"rid\\\":\\\"2070308783645287\\\",\\\"v\\\":[\\\"Stay up to date with Misk's latest events! Register to attend and participate in upcoming conferences, webinars, forums, and more\\\"]}],\\\"entity_name\\\":[{\\\"rid\\\":\\\"1104202328901836\\\",\\\"v\\\":[\\\"Misk Tracks\\\"]}],\\\"page_type\\\":[{\\\"rid\\\":\\\"1653477663230168\\\",\\\"v\\\":[\\\"Misk Tracks \\\\nPrograms\\\\nEvents\\\\nInsights\\\\nالعربية\\\"]}],\\\"page_title\\\":[{\\\"rid\\\":\\\"1111336038552727\\\",\\\"v\\\":[\\\"Misk Hub Events\\\"]}],\\\"page_url\\\":[{\\\"rid\\\":\\\"2184443892483908\\\",\\\"v\\\":[\\\"Misk Tracks\\\"]}],\\\"author\\\":[{\\\"rid\\\":\\\"3286864951663741\\\",\\\"v\\\":[\\\"Misk Skills\\\"]},{\\\"rid\\\":\\\"3046254845726820\\\",\\\"v\\\":[\\\"Misk Tracks\\\"]}],\\\"page_keywords\\\":[{\\\"rid\\\":\\\"1665013441915614\\\",\\\"v\\\":[\\\"Misk Foundation, Misk Hub, Misk Events\\\"]}],\\\"publisher\\\":[{\\\"rid\\\":\\\"1592494065430183\\\",\\\"v\\\":[\\\"Misk Skills\\\"]}],\\\"currencies_accepted\\\":[{\\\"rid\\\":\\\"1096890819886389\\\",\\\"v\\\":[\\\"Misk Tracks\\\"]}]}\",\"is_auto_web_details\":true},\"event_id\":\"ob3_plugin-set_bcc0178492702c88f880239822c811c3a5648af47ff13ed5bb65ec48fd6f6f4e\",\"fb.pixel_id\":\"1038245586939616\",\"fb.w",
+          "response_shape": "empty",
+          "preview": ""
+        },
+        {
+          "method": "POST",
+          "status": 200,
           "url": "https://hub.misk.org.sa/api/events/RenderLazyLoadAllEventsOfSeries",
           "content_type": "application/json",
           "resource_type": "xhr",
@@ -193,28 +167,38 @@
         {
           "method": "POST",
           "status": 200,
-          "url": "https://mpc-prod-24-s6uit34pua-uw.a.run.app/events?cee=no",
-          "content_type": "application/json",
-          "resource_type": "fetch",
-          "request_post_data": "{\"event_name\":\"PageView\",\"smart_setup\":{\"auto_web_details_data\":\"{\\\"entity_brand\\\":[{\\\"rid\\\":\\\"28393245976984225\\\",\\\"v\\\":[\\\"Misk\\\"]}],\\\"page_keywords\\\":[{\\\"rid\\\":\\\"1604962908049037\\\",\\\"v\\\":[\\\"Misk Tracks\\\"]},{\\\"rid\\\":\\\"1832708194743637\\\",\\\"v\\\":[\\\"Misk Foundation, Misk Hub, Misk Events\\\"]}],\\\"author\\\":[{\\\"rid\\\":\\\"1502159985082192\\\",\\\"v\\\":[\\\"Misk Tracks\\\"]},{\\\"rid\\\":\\\"1429887959351242\\\",\\\"v\\\":[\\\"Misk Skills\\\"]}],\\\"page_title\\\":[{\\\"rid\\\":\\\"2618217878613929\\\",\\\"v\\\":[\\\"Misk Hub Events\\\"]}],\\\"publisher\\\":[{\\\"rid\\\":\\\"2334176334049272\\\",\\\"v\\\":[\\\"Misk Tracks\\\"]}],\\\"currencies_accepted\\\":[{\\\"rid\\\":\\\"2544825302667522\\\",\\\"v\\\":[\\\"Misk Tracks\\\"]},{\\\"rid\\\":\\\"1854152125706877\\\",\\\"v\\\":[\\\"stc x Misk Workshops Series\\\",\\\"Nonprofit Governance: From Compliance to Institutional Excellence\\\",\\\"From the Classroom to the Workplace: The Skills That Make the Difference\\\",\\\"Finance Fundamentals\\\",\\\"Navigating the Cyber Map: How to Choose Your Specialization & Build a Corporate Career\\\"]}]}\",\"is_auto_web_details\":true},\"event_id\":\"ob3_plugin-set_e3eaeea680525616ac9a3c86a2673c87774a7cc47e29c49184043d788f0e596b\",\"fb.pixel_id\":\"1038245586939616\",\"website_context\":{\"location\":\"https://hub.misk.org.sa/en/events/\",\"",
-          "response_shape": "empty",
-          "preview": ""
-        },
-        {
-          "method": "POST",
-          "status": 200,
-          "url": "https://client-rapi-us-west.recombee.com/misk-hub-prod/recomms/users/8eab257569804f0885598c40c46c2c92/items/?frontend_timestamp=1793435561&frontend_sign=24aad3d15aa289c9de1aea106b7314f3e42dd60f",
+          "url": "https://client-rapi-us-west.recombee.com/misk-hub-prod/recomms/users/172885d6e2f34e32b5ad9413a8e12236/items/?frontend_timestamp=1793525794&frontend_sign=a34e9395e62fe51dca682df54c058d970017f2c8",
           "content_type": "application/json",
           "resource_type": "xhr",
           "request_post_data": "{\"count\":5,\"scenario\":\"Hero-Events-Listing-Anonymous\",\"returnProperties\":true,\"cascadeCreate\":true}",
           "response_shape": "json-object:recommId,recomms,numberNextRecommsCalls",
-          "preview": "{\"recommId\": \"f46a62a4454855223b1cef97abb60247\", \"recomms\": [], \"numberNextRecommsCalls\": 0}"
+          "preview": "{\"recommId\": \"03a570862183c0ee57e77859048a5434\", \"recomms\": [], \"numberNextRecommsCalls\": 0}"
         }
       ],
       "network_sample": [
         {
           "method": "POST",
           "status": 200,
+          "url": "https://mpc-prod-24-s6uit34pua-uw.a.run.app/events?cee=no",
+          "content_type": "application/json",
+          "resource_type": "fetch",
+          "request_post_data": "{\"event_name\":\"PageView\",\"smart_setup\":{\"auto_web_details_data\":\"{\\\"entity_brand\\\":[{\\\"rid\\\":\\\"28393245976984225\\\",\\\"v\\\":[\\\"Misk\\\"]}],\\\"page_description\\\":[{\\\"rid\\\":\\\"2070308783645287\\\",\\\"v\\\":[\\\"Stay up to date with Misk's latest events! Register to attend and participate in upcoming conferences, webinars, forums, and more\\\"]}],\\\"entity_name\\\":[{\\\"rid\\\":\\\"1104202328901836\\\",\\\"v\\\":[\\\"Misk Tracks\\\"]}],\\\"page_type\\\":[{\\\"rid\\\":\\\"1653477663230168\\\",\\\"v\\\":[\\\"Misk Tracks \\\\nPrograms\\\\nEvents\\\\nInsights\\\\nالعربية\\\"]}],\\\"page_title\\\":[{\\\"rid\\\":\\\"1111336038552727\\\",\\\"v\\\":[\\\"Misk Hub Events\\\"]}],\\\"page_url\\\":[{\\\"rid\\\":\\\"2184443892483908\\\",\\\"v\\\":[\\\"Misk Tracks\\\"]}],\\\"author\\\":[{\\\"rid\\\":\\\"3286864951663741\\\",\\\"v\\\":[\\\"Misk Skills\\\"]},{\\\"rid\\\":\\\"3046254845726820\\\",\\\"v\\\":[\\\"Misk Tracks\\\"]}],\\\"page_keywords\\\":[{\\\"rid\\\":\\\"1665013441915614\\\",\\\"v\\\":[\\\"Misk Foundation, Misk Hub, Misk Events\\\"]}],\\\"publisher\\\":[{\\\"rid\\\":\\\"1592494065430183\\\",\\\"v\\\":[\\\"Misk Skills\\\"]}],\\\"currencies_accepted\\\":[{\\\"rid\\\":\\\"1096890819886389\\\",\\\"v\\\":[\\\"Misk Tracks\\\"]}]}\",\"is_auto_web_details\":true},\"event_id\":\"ob3_plugin-set_bcc0178492702c88f880239822c811c3a5648af47ff13ed5bb65ec48fd6f6f4e\",\"fb.pixel_id\":\"1038245586939616\",\"fb.w",
+          "response_shape": "empty",
+          "preview": ""
+        },
+        {
+          "method": "POST",
+          "status": 200,
+          "url": "https://mpc-prod-24-s6uit34pua-uw.a.run.app/events?cee=no",
+          "content_type": "application/json",
+          "resource_type": "fetch",
+          "request_post_data": "{\"event_name\":\"PageView\",\"smart_setup\":{\"auto_web_details_data\":\"{\\\"entity_brand\\\":[{\\\"rid\\\":\\\"28393245976984225\\\",\\\"v\\\":[\\\"Misk\\\"]}],\\\"page_description\\\":[{\\\"rid\\\":\\\"2070308783645287\\\",\\\"v\\\":[\\\"Stay up to date with Misk's latest events! Register to attend and participate in upcoming conferences, webinars, forums, and more\\\"]}],\\\"entity_name\\\":[{\\\"rid\\\":\\\"1104202328901836\\\",\\\"v\\\":[\\\"Misk Tracks\\\"]}],\\\"page_type\\\":[{\\\"rid\\\":\\\"1653477663230168\\\",\\\"v\\\":[\\\"Misk Tracks \\\\nPrograms\\\\nEvents\\\\nInsights\\\\nالعربية\\\"]}],\\\"page_title\\\":[{\\\"rid\\\":\\\"1111336038552727\\\",\\\"v\\\":[\\\"Misk Hub Events\\\"]}],\\\"page_url\\\":[{\\\"rid\\\":\\\"2184443892483908\\\",\\\"v\\\":[\\\"Misk Tracks\\\"]}],\\\"author\\\":[{\\\"rid\\\":\\\"3286864951663741\\\",\\\"v\\\":[\\\"Misk Skills\\\"]},{\\\"rid\\\":\\\"3046254845726820\\\",\\\"v\\\":[\\\"Misk Tracks\\\"]}],\\\"page_keywords\\\":[{\\\"rid\\\":\\\"1665013441915614\\\",\\\"v\\\":[\\\"Misk Foundation, Misk Hub, Misk Events\\\"]}],\\\"publisher\\\":[{\\\"rid\\\":\\\"1592494065430183\\\",\\\"v\\\":[\\\"Misk Skills\\\"]}],\\\"currencies_accepted\\\":[{\\\"rid\\\":\\\"1096890819886389\\\",\\\"v\\\":[\\\"Misk Tracks\\\"]}]}\",\"is_auto_web_details\":true},\"event_id\":\"ob3_plugin-set_ba1c202b3c5e68f2b5b5d6fdc0bfae4c1ce733160fa43a4cb812b6a841077383\",\"fb.pixel_id\":\"1038245586939616\",\"fb.w",
+          "response_shape": "empty",
+          "preview": ""
+        },
+        {
+          "method": "POST",
+          "status": 200,
           "url": "https://hub.misk.org.sa/api/events/RenderLazyLoadAllEventsOfSeries",
           "content_type": "application/json",
           "resource_type": "xhr",
@@ -225,38 +209,54 @@
         {
           "method": "POST",
           "status": 200,
-          "url": "https://mpc-prod-24-s6uit34pua-uw.a.run.app/events?cee=no",
-          "content_type": "application/json",
-          "resource_type": "fetch",
-          "request_post_data": "{\"event_name\":\"PageView\",\"smart_setup\":{\"auto_web_details_data\":\"{\\\"entity_brand\\\":[{\\\"rid\\\":\\\"28393245976984225\\\",\\\"v\\\":[\\\"Misk\\\"]}],\\\"page_keywords\\\":[{\\\"rid\\\":\\\"1604962908049037\\\",\\\"v\\\":[\\\"Misk Tracks\\\"]},{\\\"rid\\\":\\\"1832708194743637\\\",\\\"v\\\":[\\\"Misk Foundation, Misk Hub, Misk Events\\\"]}],\\\"author\\\":[{\\\"rid\\\":\\\"1502159985082192\\\",\\\"v\\\":[\\\"Misk Tracks\\\"]},{\\\"rid\\\":\\\"1429887959351242\\\",\\\"v\\\":[\\\"Misk Skills\\\"]}],\\\"page_title\\\":[{\\\"rid\\\":\\\"2618217878613929\\\",\\\"v\\\":[\\\"Misk Hub Events\\\"]}],\\\"publisher\\\":[{\\\"rid\\\":\\\"2334176334049272\\\",\\\"v\\\":[\\\"Misk Tracks\\\"]}],\\\"currencies_accepted\\\":[{\\\"rid\\\":\\\"2544825302667522\\\",\\\"v\\\":[\\\"Misk Tracks\\\"]},{\\\"rid\\\":\\\"1854152125706877\\\",\\\"v\\\":[\\\"stc x Misk Workshops Series\\\",\\\"Nonprofit Governance: From Compliance to Institutional Excellence\\\",\\\"From the Classroom to the Workplace: The Skills That Make the Difference\\\",\\\"Finance Fundamentals\\\",\\\"Navigating the Cyber Map: How to Choose Your Specialization & Build a Corporate Career\\\"]}]}\",\"is_auto_web_details\":true},\"event_id\":\"ob3_plugin-set_e3eaeea680525616ac9a3c86a2673c87774a7cc47e29c49184043d788f0e596b\",\"fb.pixel_id\":\"1038245586939616\",\"website_context\":{\"location\":\"https://hub.misk.org.sa/en/events/\",\"",
-          "response_shape": "empty",
-          "preview": ""
-        },
-        {
-          "method": "POST",
-          "status": 200,
-          "url": "https://mpc-prod-24-s6uit34pua-uw.a.run.app/events?cee=no",
-          "content_type": "application/json",
-          "resource_type": "fetch",
-          "request_post_data": "{\"event_name\":\"PageView\",\"smart_setup\":{\"auto_web_details_data\":\"{\\\"entity_brand\\\":[{\\\"rid\\\":\\\"28393245976984225\\\",\\\"v\\\":[\\\"Misk\\\"]}],\\\"page_keywords\\\":[{\\\"rid\\\":\\\"1604962908049037\\\",\\\"v\\\":[\\\"Misk Tracks\\\"]},{\\\"rid\\\":\\\"1832708194743637\\\",\\\"v\\\":[\\\"Misk Foundation, Misk Hub, Misk Events\\\"]}],\\\"author\\\":[{\\\"rid\\\":\\\"1502159985082192\\\",\\\"v\\\":[\\\"Misk Tracks\\\"]},{\\\"rid\\\":\\\"1429887959351242\\\",\\\"v\\\":[\\\"Misk Skills\\\"]}],\\\"page_title\\\":[{\\\"rid\\\":\\\"2618217878613929\\\",\\\"v\\\":[\\\"Misk Hub Events\\\"]}],\\\"publisher\\\":[{\\\"rid\\\":\\\"2334176334049272\\\",\\\"v\\\":[\\\"Misk Tracks\\\"]}],\\\"currencies_accepted\\\":[{\\\"rid\\\":\\\"2544825302667522\\\",\\\"v\\\":[\\\"Misk Tracks\\\"]},{\\\"rid\\\":\\\"1854152125706877\\\",\\\"v\\\":[\\\"stc x Misk Workshops Series\\\",\\\"Nonprofit Governance: From Compliance to Institutional Excellence\\\",\\\"From the Classroom to the Workplace: The Skills That Make the Difference\\\",\\\"Finance Fundamentals\\\",\\\"Navigating the Cyber Map: How to Choose Your Specialization & Build a Corporate Career\\\"]}]}\",\"is_auto_web_details\":true},\"event_id\":\"ob3_plugin-set_e16d66a670f503767948d89ff1b9a7e53bf10cd2c1c38bb6fbfbfcf8c13d1a7a\",\"fb.pixel_id\":\"1038245586939616\",\"website_context\":{\"location\":\"https://hub.misk.org.sa/en/events/\",\"",
-          "response_shape": "empty",
-          "preview": ""
-        },
-        {
-          "method": "POST",
-          "status": 200,
-          "url": "https://client-rapi-us-west.recombee.com/misk-hub-prod/recomms/users/8eab257569804f0885598c40c46c2c92/items/?frontend_timestamp=1793435561&frontend_sign=24aad3d15aa289c9de1aea106b7314f3e42dd60f",
+          "url": "https://client-rapi-us-west.recombee.com/misk-hub-prod/recomms/users/172885d6e2f34e32b5ad9413a8e12236/items/?frontend_timestamp=1793525794&frontend_sign=a34e9395e62fe51dca682df54c058d970017f2c8",
           "content_type": "application/json",
           "resource_type": "xhr",
           "request_post_data": "{\"count\":5,\"scenario\":\"Hero-Events-Listing-Anonymous\",\"returnProperties\":true,\"cascadeCreate\":true}",
           "response_shape": "json-object:recommId,recomms,numberNextRecommsCalls",
-          "preview": "{\"recommId\": \"f46a62a4454855223b1cef97abb60247\", \"recomms\": [], \"numberNextRecommsCalls\": 0}"
+          "preview": "{\"recommId\": \"03a570862183c0ee57e77859048a5434\", \"recomms\": [], \"numberNextRecommsCalls\": 0}"
         }
       ]
     },
     {
+      "id": "visit-saudi-calendar-pdf",
+      "probed_at": "2026-11-01T09:36:41.499Z",
+      "name": "Visit Saudi Summer Calendar PDF",
+      "priority": 34,
+      "url": "https://www.visitsaudi.com/content/dam/documents/saudi-calendar-ar.pdf",
+      "final_url": "about:blank",
+      "status": "error",
+      "http_status": 0,
+      "navigation_error": "page.goto: Download is starting\nCall log:\n  - navigating to \"https://www.visitsaudi.com/content/dam/documents/saudi-calendar-ar.pdf\", waiting until \"domcontentloaded\"\n",
+      "duration_ms": 791,
+      "classification": "empty-or-shell",
+      "next_action": "اعتبرها shell وابحث عن API أو مسار بديل قبل أي collector.",
+      "title": "",
+      "text_bytes": 0,
+      "html_bytes": 39,
+      "html_snapshot": "data/raw/browser-probes/visit-saudi-calendar-pdf-2026-11-01T09-36-30-051Z.html",
+      "screenshot": "",
+      "signals": {
+        "has_next_data": false,
+        "has_nuxt": false,
+        "has_json_ld": false,
+        "has_event_schema": false,
+        "date_snippets": [],
+        "event_like_links": []
+      },
+      "script_signals": {
+        "next_data_scripts": 0,
+        "nuxt_scripts": 0,
+        "json_ld_scripts": 0,
+        "large_inline_scripts": 0
+      },
+      "network_total": 0,
+      "network_endpoints": [],
+      "network_sample": []
+    },
+    {
       "id": "riyadh-city-events",
-      "probed_at": "2026-10-31T08:32:55.047Z",
+      "probed_at": "2026-11-01T09:36:48.269Z",
       "name": "Riyadh City Events",
       "priority": 51,
       "url": "https://riyadh.sa/en/events/all",
@@ -264,14 +264,14 @@
       "status": "ok",
       "http_status": 200,
       "navigation_error": "",
-      "duration_ms": 7096,
+      "duration_ms": 6734,
       "classification": "rendered-text-review",
       "next_action": "راجع الصفحة يدويًا وحدد هل هي مصدر أدلة أم صفحة تعريفية فقط.",
       "title": "maintenance",
       "text_bytes": 305,
       "html_bytes": 425365,
-      "html_snapshot": "data/raw/browser-probes/riyadh-city-events-2026-10-31T08-30-22-903Z.html",
-      "screenshot": "data/raw/browser-probes/riyadh-city-events-2026-10-31T08-30-22-903Z.png",
+      "html_snapshot": "data/raw/browser-probes/riyadh-city-events-2026-11-01T09-36-30-051Z.html",
+      "screenshot": "data/raw/browser-probes/riyadh-city-events-2026-11-01T09-36-30-051Z.png",
       "signals": {
         "has_next_data": false,
         "has_nuxt": false,

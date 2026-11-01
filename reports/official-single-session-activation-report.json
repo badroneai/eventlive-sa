@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-31T08:47:33.831Z",
+  "generated_at": "2026-11-01T09:57:01.117Z",
   "max_duration_hours": 8,
   "totals": {
     "activated": 50,
@@ -313,15 +313,6 @@
       "session_type": "official-community-session"
     },
     {
-      "id": "event-beast-house",
-      "title": "Beast House",
-      "source_label": "MDLBEAST Events",
-      "starts_at": "2026-11-05T21:00:00+03:00",
-      "ends_at": "2026-11-06T03:00:00+03:00",
-      "duration_hours": 6,
-      "session_type": "official-entertainment-session"
-    },
-    {
       "id": "event-المهارات-الأساسية-للمبيعات",
       "title": "المهارات الأساسية للمبيعات",
       "source_label": "Qassim Chamber Events",
@@ -448,6 +439,15 @@
       "session_type": "official-community-session"
     },
     {
+      "id": "event-beast-house",
+      "title": "Beast House",
+      "source_label": "MDLBEAST Events",
+      "starts_at": "2026-11-05T21:00:00+03:00",
+      "ends_at": "2026-11-06T03:00:00+03:00",
+      "duration_hours": 6,
+      "session_type": "official-entertainment-session"
+    },
+    {
       "id": "event-kaust-bruker-x-ray-microscopy-workshop-2026",
       "title": "KAUST-Bruker X-ray Microscopy Workshop 2026",
       "source_label": "Saudi Universities and Technical Colleges",
@@ -525,12 +525,6 @@
       "duration_hours": 505.5
     },
     {
-      "id": "event-unstable",
-      "title": "Unstable",
-      "source_label": "MDLBEAST Events",
-      "duration_hours": 24
-    },
-    {
       "id": "event-breast-cancer-awareness-hub",
       "title": "Breast Cancer Awareness Hub",
       "source_label": "Saudi Universities and Technical Colleges",
@@ -557,6 +551,12 @@
     {
       "id": "event-a-thousand-and-one",
       "title": "MDLBEAST | Home of Soundstorm, XP & Music in the Middle East",
+      "source_label": "MDLBEAST Events",
+      "duration_hours": 24
+    },
+    {
+      "id": "event-unstable",
+      "title": "Unstable",
       "source_label": "MDLBEAST Events",
       "duration_hours": 24
     },

@@ -1,5 +1,5 @@
 # EventLive Official Single-Session Activation
-- Generated at: 2026-10-31T08:47:33.831Z
+- Generated at: 2026-11-01T09:57:01.117Z
 - Max duration hours: 8
 - Activated: 50
 - Skipped long events: 20
@@ -40,7 +40,6 @@
 | Saudi Universities and Technical Colleges | Saudi National Day Celebration at the University | 1.5h | official-community-session |
 | Saudi Food and Drug Authority Events | دور الهيئة العامة للغذاء و الدواء في ضمان سلامة الاستخدام الامن لجهاز الماموجرام | 1h | official-online-workshop |
 | Saudi Universities and Technical Colleges | PSE Dean’s Distinguished Speaker Seminar | 1h | official-community-session |
-| MDLBEAST Events | Beast House | 6h | official-entertainment-session |
 | Qassim Chamber Events | المهارات الأساسية للمبيعات | 2h | official-business-workshop |
 | Qassim Chamber Events | مهارات التسويق باستخدام أدوات قوقل | 2h | official-business-workshop |
 | Qassim Chamber Events | الاستثمار والابتكار | 2h | official-business-workshop |
@@ -55,4 +54,5 @@
 | Saudi Universities and Technical Colleges | Awareness in the Square: An Evening of Hope, Art and Togetherness | 3h | official-community-session |
 | Saudi Universities and Technical Colleges | Spooky Open Mic Night | 4h | official-community-session |
 | Saudi Universities and Technical Colleges | Run for a Cure | 3.5h | official-community-session |
+| MDLBEAST Events | Beast House | 6h | official-entertainment-session |
 | Saudi Universities and Technical Colleges | KAUST-Bruker X-ray Microscopy Workshop 2026 | 7h | official-community-session |
