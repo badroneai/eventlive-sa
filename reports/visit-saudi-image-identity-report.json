@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-01T09:50:23.821Z",
+  "generated_at": "2026-11-02T10:05:02.556Z",
   "catalog": "data/events_catalog.json",
   "candidates": "data/source_candidates.json",
   "manifest": "data/event_image_cache_manifest.json",
@@ -9,34 +9,12 @@
     "min_intersection": 2
   },
   "totals": {
-    "pdf_crop_assignments": 29,
+    "pdf_crop_assignments": 26,
     "verified": 26,
-    "struck": 3,
+    "struck": 0,
     "slots_seen_this_cycle": 30
   },
-  "struck": [
-    {
-      "id": "event-الأخطبوطية",
-      "title": "الاخطبوطية",
-      "file": "visit-saudi-summer-2026-p013-bottom-right.png",
-      "reason": "slot-vacated",
-      "detail": "no dated card currently occupies page 13 bottom-right of https://www.visitsaudi.com/content/dam/documents/saudi-calendar-ar.pdf"
-    },
-    {
-      "id": "event-تجربة-شاطئ-قالو",
-      "title": "تجربة شاطئ قالو",
-      "file": "visit-saudi-summer-2026-p063-top-left.png",
-      "reason": "slot-vacated",
-      "detail": "no dated card currently occupies page 63 top-left of https://www.visitsaudi.com/content/dam/documents/saudi-calendar-ar.pdf"
-    },
-    {
-      "id": "event-المكسيك-ضد-العالم",
-      "title": "المكسيك ضد العالم",
-      "file": "visit-saudi-summer-2026-p008-bottom-right.jpg",
-      "reason": "slot-vacated",
-      "detail": "no dated card currently occupies page 8 bottom-right of https://www.visitsaudi.com/content/dam/documents/saudi-calendar-ar.pdf"
-    }
-  ],
+  "struck": [],
   "verified": [
     {
       "id": "event-سوق-الثلاثاء-الشعبي",

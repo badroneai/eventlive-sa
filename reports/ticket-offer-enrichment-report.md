@@ -1,6 +1,6 @@
 # Ticket offer enrichment
 
-- Checked at: 2026-11-01T09:57:01.601Z
+- Checked at: 2026-11-02T10:10:30.038Z
 - Targets: 8
 - Evidence found: 3
 - Catalog prices changed: 0

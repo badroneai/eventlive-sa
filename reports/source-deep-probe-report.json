@@ -1,13 +1,13 @@
 {
-  "generated_at": "2026-11-01T09:21:50.897Z",
+  "generated_at": "2026-11-02T09:36:30.894Z",
   "registry": "data/source_registry.json",
   "source_ingestion_plan": "reports/source-ingestion-plan.json",
   "probe_limit": 28,
   "timeout_ms": 12000,
   "totals": {
-    "probed": 21,
-    "extractor_ready": 11,
-    "blocked": 10,
+    "probed": 22,
+    "extractor_ready": 13,
+    "blocked": 9,
     "partnership": 0,
     "watch": 0
   },
@@ -73,8 +73,42 @@
           "datetimepicker/4.17.47/css/bootstrap-datetimepicker.min.css\" rel=\"stylesheet\">",
           "calendar-alt\">",
           "date-span\">",
-          "01 Nov 2027",
+          "02 Nov 2027",
           "dated Row -->"
+        ]
+      },
+      "extraction_score": 78,
+      "recommendation": "build-html-detail-extractor"
+    },
+    {
+      "id": "jouf-chamber-events",
+      "name": "Jouf Chamber Events",
+      "priority": 64,
+      "url": "https://ajcci.org.sa/event/",
+      "trust_level": "official",
+      "fetch_method": "html-listing",
+      "candidate_gate": "extraction",
+      "intake_policy": "official-feed-preferred",
+      "signals": {
+        "http_ok": true,
+        "status": 200,
+        "final_url": "https://ajcci.org.sa/event/",
+        "content_type": "text/html; charset=UTF-8",
+        "bytes": 150465,
+        "title": "غرفة الجوف - فعاليات الغرفة - غرفة الجوف",
+        "blocked_reason": "",
+        "structured_scripts": 1,
+        "structured_events": 0,
+        "google_calendar_links": 0,
+        "event_detail_links": 26,
+        "json_or_api_hints": 10,
+        "date_snippets": [
+          "dates-as-phonetext { text-align: left; } */ div#usm-admin-notification-widget {",
+          "date-h\">",
+          "calendar-alt\">",
+          "2024/06/23",
+          "date-h\">",
+          "calendar-alt\">"
         ]
       },
       "extraction_score": 78,
@@ -128,7 +162,7 @@
         "status": 200,
         "final_url": "https://www.neom.com/en-us/newsroom/events",
         "content_type": "text/html;charset=utf-8",
-        "bytes": 173318,
+        "bytes": 173315,
         "title": "Events",
         "blocked_reason": "",
         "structured_scripts": 1,
@@ -162,7 +196,7 @@
         "status": 200,
         "final_url": "https://www.cst.gov.sa/en",
         "content_type": "text/html; charset=utf-8",
-        "bytes": 1332296,
+        "bytes": 1332341,
         "title": "CST | Communications, Space & Technology Commission",
         "blocked_reason": "",
         "structured_scripts": 2,
@@ -172,11 +206,11 @@
         "json_or_api_hints": 11,
         "date_snippets": [
           "date On:",
-          "Date\":{\"value\":\"2025-08-31T00:00:00Z\"},\"EndDate\":{\"value\":\"2025-09-03T00:00:00Z\"},\"L",
+          "Date\":{\"value\":\"2025-08-31T00:00:00Z\"},\"EndDate\":{\"value\":\"2025-09-03T00:00:00Z\"},\"D",
           "2027-01-01",
           "Datetime\":{\"value\":\"2025-08-31T10:00:00Z\"},\"HijriDate\":{\"value\":\"8/3/1447 AH\"},\"Loca",
           "2027-01-01",
-          "Date\":{\"value\":\"2025-05-12T00:00:00Z\"},\"EndDate\":{\"value\":\"2025-05-12T00:00:00Z\"},\"L"
+          "Date\":{\"value\":\"2025-05-12T00:00:00Z\"},\"EndDate\":{\"value\":\"2025-05-12T00:00:00Z\"},\"D"
         ]
       },
       "extraction_score": 58,
@@ -217,6 +251,40 @@
       "recommendation": "probe-hidden-api-or-html-table"
     },
     {
+      "id": "visit-saudi-calendar-pdf",
+      "name": "Visit Saudi Summer Calendar PDF",
+      "priority": 34,
+      "url": "https://www.visitsaudi.com/content/dam/documents/saudi-calendar-ar.pdf",
+      "trust_level": "official",
+      "fetch_method": "pdf-calendar",
+      "candidate_gate": "duplicate-review",
+      "intake_policy": "official-feed-preferred",
+      "signals": {
+        "http_ok": true,
+        "status": 200,
+        "final_url": "https://www.visitsaudi.com/content/dam/documents/saudi-calendar-ar.pdf",
+        "content_type": "application/pdf",
+        "bytes": 22835484,
+        "title": "",
+        "blocked_reason": "",
+        "structured_scripts": 0,
+        "structured_events": 0,
+        "google_calendar_links": 0,
+        "event_detail_links": 0,
+        "json_or_api_hints": 0,
+        "date_snippets": [
+          "Date>2026-10-29T12:10:31+03:00",
+          "Date>",
+          "Date>2026-10-29T12:10:31+03:00",
+          "Date>",
+          "Date>2026-10-29T12:10:31+03:00",
+          "Date>"
+        ]
+      },
+      "extraction_score": 48,
+      "recommendation": "probe-hidden-api-or-html-table"
+    },
+    {
       "id": "tabuk-chamber-events",
       "name": "Tabuk Chamber Events",
       "priority": 66,
@@ -230,7 +298,7 @@
         "status": 200,
         "final_url": "https://www.tabukchamber.sa/",
         "content_type": "text/html; charset=UTF-8",
-        "bytes": 112763,
+        "bytes": 112758,
         "title": "الغرفة التجارية بتبوك | TABUK CHAMBER",
         "blocked_reason": "",
         "structured_scripts": 0,
@@ -441,33 +509,6 @@
       "recommendation": "blocked-or-protected:http-403"
     },
     {
-      "id": "visit-saudi-calendar-pdf",
-      "name": "Visit Saudi Summer Calendar PDF",
-      "priority": 34,
-      "url": "https://www.visitsaudi.com/content/dam/documents/saudi-calendar-ar.pdf",
-      "trust_level": "official",
-      "fetch_method": "pdf-calendar",
-      "candidate_gate": "duplicate-review",
-      "intake_policy": "official-feed-preferred",
-      "signals": {
-        "http_ok": false,
-        "status": 0,
-        "final_url": "https://www.visitsaudi.com/content/dam/documents/saudi-calendar-ar.pdf",
-        "content_type": "",
-        "bytes": 0,
-        "title": "",
-        "blocked_reason": "timeout",
-        "structured_scripts": 0,
-        "structured_events": 0,
-        "google_calendar_links": 0,
-        "event_detail_links": 0,
-        "json_or_api_hints": 0,
-        "date_snippets": []
-      },
-      "extraction_score": -23,
-      "recommendation": "blocked-or-protected:timeout"
-    },
-    {
       "id": "ricec-events",
       "name": "Riyadh International Convention and Exhibition Center",
       "priority": 41,
@@ -493,6 +534,33 @@
       },
       "extraction_score": -23,
       "recommendation": "blocked-or-protected:fetch failed getaddrinfo EAI_AGAIN www.ricec.com TypeError: fetch failed"
+    },
+    {
+      "id": "saudi-contractors-authority-events",
+      "name": "Saudi Contractors Authority Events",
+      "priority": 49,
+      "url": "https://www.sca.gov.sa/",
+      "trust_level": "official",
+      "fetch_method": "html-listing",
+      "candidate_gate": "extraction",
+      "intake_policy": "monitor-public",
+      "signals": {
+        "http_ok": false,
+        "status": 0,
+        "final_url": "https://www.sca.gov.sa/",
+        "content_type": "",
+        "bytes": 0,
+        "title": "",
+        "blocked_reason": "fetch failed getaddrinfo ENOTFOUND www.sca.gov.sa TypeError: fetch failed",
+        "structured_scripts": 0,
+        "structured_events": 0,
+        "google_calendar_links": 0,
+        "event_detail_links": 0,
+        "json_or_api_hints": 0,
+        "date_snippets": []
+      },
+      "extraction_score": -23,
+      "recommendation": "blocked-or-protected:fetch failed getaddrinfo ENOTFOUND www.sca.gov.sa TypeError: fetch failed"
     },
     {
       "id": "riyadh-city-events",
@@ -522,10 +590,10 @@
       "recommendation": "blocked-or-protected:fetch failed unable to verify the first certificate; if the root CA is installed locally, try running Node.js with --use-system-ca TypeError: fetch failed"
     },
     {
-      "id": "middle-east-banking-ai-summit",
-      "name": "Middle East Banking AI & Analytics Summit Official",
-      "priority": 74,
-      "url": "https://mebankingai.com/sa/",
+      "id": "middle-east-enterprise-ai-summit",
+      "name": "Middle East Enterprise AI & Analytics Summit Official",
+      "priority": 75,
+      "url": "https://meenterpriseai.com/sa/",
       "trust_level": "official",
       "fetch_method": "html-listing",
       "candidate_gate": "human-review",
@@ -533,10 +601,10 @@
       "signals": {
         "http_ok": true,
         "status": 200,
-        "final_url": "https://mebankingai.com/sa/",
+        "final_url": "https://meenterpriseai.com/sa/",
         "content_type": "text/html",
-        "bytes": 2305,
-        "title": "Middle East Banking",
+        "bytes": 1996,
+        "title": "Middle East Enterprise",
         "blocked_reason": "bot-protection",
         "structured_scripts": 0,
         "structured_events": 0,
@@ -549,33 +617,6 @@
       },
       "extraction_score": -23,
       "recommendation": "blocked-or-protected:bot-protection"
-    },
-    {
-      "id": "leap-official-agendas",
-      "name": "LEAP Official Event and Agendas",
-      "priority": 77,
-      "url": "https://onegiantleap.com/",
-      "trust_level": "official",
-      "fetch_method": "html-calendar",
-      "candidate_gate": "extraction",
-      "intake_policy": "official-feed-preferred",
-      "signals": {
-        "http_ok": false,
-        "status": 403,
-        "final_url": "https://onegiantleap.com/",
-        "content_type": "text/html; charset=UTF-8",
-        "bytes": 4551,
-        "title": "Attention Required! | Cloudflare",
-        "blocked_reason": "http-403",
-        "structured_scripts": 0,
-        "structured_events": 0,
-        "google_calendar_links": 0,
-        "event_detail_links": 0,
-        "json_or_api_hints": 0,
-        "date_snippets": []
-      },
-      "extraction_score": -23,
-      "recommendation": "blocked-or-protected:http-403"
     },
     {
       "id": "saudi-digital-academy",
@@ -671,6 +712,11 @@
       "reason": "score=78, gcal=0, structured=0, links=22"
     },
     {
+      "id": "jouf-chamber-events",
+      "recommendation": "build-html-detail-extractor",
+      "reason": "score=78, gcal=0, structured=0, links=26"
+    },
+    {
       "id": "northern-borders-chamber-events",
       "recommendation": "build-html-detail-extractor",
       "reason": "score=78, gcal=0, structured=0, links=22"
@@ -691,14 +737,9 @@
       "reason": "score=58, gcal=0, structured=0, links=2"
     },
     {
-      "id": "tabuk-chamber-events",
+      "id": "visit-saudi-calendar-pdf",
       "recommendation": "probe-hidden-api-or-html-table",
       "reason": "score=48, gcal=0, structured=0, links=0"
-    },
-    {
-      "id": "sela-sea-expo",
-      "recommendation": "probe-hidden-api-or-html-table",
-      "reason": "score=46, gcal=0, structured=0, links=0"
     }
   ]
 }

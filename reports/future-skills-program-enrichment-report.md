@@ -1,6 +1,6 @@
 # Future Skills Program Enrichment Report
 
-- generated_at: 2026-11-01T09:50:29.016Z
+- generated_at: 2026-11-02T10:05:07.068Z
 - targets: 29
 - enriched: 25
 - failed: 4

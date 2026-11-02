@@ -1,16 +1,14 @@
 # EventLive Visit Saudi Image Identity Report
 
-- generated_at: 2026-11-01T09:50:23.821Z
-- pdf_crop_assignments: 29
+- generated_at: 2026-11-02T10:05:02.556Z
+- pdf_crop_assignments: 26
 - verified: 26
-- struck: 3
+- struck: 0
 - slots_seen_this_cycle: 30
 
 ## Struck (fell back to generated cover)
 
-- الاخطبوطية (visit-saudi-summer-2026-p013-bottom-right.png) - slot-vacated - no dated card currently occupies page 13 bottom-right of https://www.visitsaudi.com/content/dam/documents/saudi-calendar-ar.pdf
-- تجربة شاطئ قالو (visit-saudi-summer-2026-p063-top-left.png) - slot-vacated - no dated card currently occupies page 63 top-left of https://www.visitsaudi.com/content/dam/documents/saudi-calendar-ar.pdf
-- المكسيك ضد العالم (visit-saudi-summer-2026-p008-bottom-right.jpg) - slot-vacated - no dated card currently occupies page 8 bottom-right of https://www.visitsaudi.com/content/dam/documents/saudi-calendar-ar.pdf
+- none
 
 ## Verified
 
