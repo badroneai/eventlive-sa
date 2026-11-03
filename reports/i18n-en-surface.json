@@ -1,19 +1,19 @@
 {
   "schema": "eventlive.i18n-en-surface.v1",
-  "generated_at": "2026-11-02T10:18:39.319Z",
-  "pages_scanned": 2061,
-  "pages_with_arabic": 435,
+  "generated_at": "2026-11-03T10:19:35.730Z",
+  "pages_scanned": 2068,
+  "pages_with_arabic": 431,
   "template_regressions": [],
   "script_template_regressions": [],
   "style_template_regressions": [],
   "recurring_surface_debt": [
     {
       "text": "../assets/event-images/الشهادة-الدولية-للحاسب-والإنترنت-ic3-a46ba6d2eb.jpg",
-      "pages": 65,
-      "example": "events/event-إنشاء-الاختبارات-في-المصححات-الآلية-معين-و-zip-grade-وربطها-بنواتج-التعل.html",
+      "pages": 64,
+      "example": "events/event-الترشح-للدبلوم-المتوسط-إدارة-اللوجستيات-وسلاسل-الإمداد-حضوري-بالتعاون-مع.html",
       "script": true
     }
   ],
   "recurring_total": 1,
-  "content_prose_lines": 2239
+  "content_prose_lines": 2241
 }

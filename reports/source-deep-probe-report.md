@@ -1,12 +1,12 @@
 # EventLive Source Deep Probe
 
-Generated at: 2026-11-02T09:36:30.894Z
+Generated at: 2026-11-03T09:41:32.688Z
 
 ## Summary
 
-- Probed sources: 22
+- Probed sources: 21
 - Extractor-ready: 13
-- Blocked/protected: 9
+- Blocked/protected: 8
 - Partnership lanes: 0
 - Watch/evidence-only: 0
 
@@ -30,9 +30,8 @@ Generated at: 2026-11-02T09:36:30.894Z
 | 18 | riyadh-season | 200 | -23 | blocked-or-protected:bot-protection | 0 | 0 | 0 | - |
 | 27 | enjoy-saudi-events | 403 | -23 | blocked-or-protected:http-403 | 0 | 0 | 0 | تعذر الوصول إلى الصفحة | Access Unavailable |
 | 41 | ricec-events | - | -23 | blocked-or-protected:fetch failed getaddrinfo EAI_AGAIN www.ricec.com TypeError: fetch failed | 0 | 0 | 0 | - |
-| 49 | saudi-contractors-authority-events | - | -23 | blocked-or-protected:fetch failed getaddrinfo ENOTFOUND www.sca.gov.sa TypeError: fetch failed | 0 | 0 | 0 | - |
 | 51 | riyadh-city-events | - | -23 | blocked-or-protected:fetch failed unable to verify the first certificate; if the root CA is installed locally, try running Node.js with --use-system-ca TypeError: fetch failed | 0 | 0 | 0 | - |
-| 75 | middle-east-enterprise-ai-summit | 200 | -23 | blocked-or-protected:bot-protection | 0 | 0 | 0 | Middle East Enterprise |
+| 74 | middle-east-banking-ai-summit | 200 | -23 | blocked-or-protected:bot-protection | 0 | 0 | 0 | Middle East Banking |
 | 24 | saudi-digital-academy | - | -35 | blocked-or-protected:fetch failed getaddrinfo ENOTFOUND sda.edu.sa TypeError: fetch failed | 0 | 0 | 0 | - |
 | 35 | qiddiya-events | 403 | -35 | blocked-or-protected:http-403 | 0 | 0 | 0 | Attention Required! | Cloudflare |
 | 43 | jeddah-season | - | -35 | blocked-or-protected:fetch failed getaddrinfo ENOTFOUND jeddahseason.sa TypeError: fetch failed | 0 | 0 | 0 | - |

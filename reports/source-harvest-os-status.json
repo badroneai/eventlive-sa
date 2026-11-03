@@ -1,22 +1,22 @@
 {
   "schema": "eventlive.harvest-os-status.v1",
-  "generated_at": "2026-11-02T10:21:40.023Z",
+  "generated_at": "2026-11-03T10:23:19.414Z",
   "status": "NEEDS_WORK",
   "operating_rule": "Probe before new sources; sample before full harvest; Raw collection is not publication; discovery-only never auto-publishes.",
   "totals": {
     "sources": 88,
-    "candidates": 351,
-    "matched_candidates": 323,
+    "candidates": 349,
+    "matched_candidates": 321,
     "auto_publish_sources": 15,
     "candidate_only_sources": 12,
     "partnership_required_sources": 5,
     "blocked_or_closed_sources": 0,
     "manual_review_sources": 56,
-    "collection_attempted": 30,
-    "productive_sources": 16,
-    "collector_errors": 8,
+    "collection_attempted": 19,
+    "productive_sources": 15,
+    "collector_errors": 7,
     "chronic_collector_errors": 7,
-    "transient_collector_errors": 1
+    "transient_collector_errors": 0
   },
   "policies": {
     "partnership_required": 5,
@@ -25,22 +25,23 @@
     "manual_review": 56
   },
   "candidates_by_gate": {
-    "catalog-review": 323,
+    "catalog-review": 321,
     "source-evidence": 24,
     "duplicate-review": 2,
     "secondary-verified": 2
   },
   "funnel": {
-    "discovered_this_run": 147,
-    "candidate_queue": 351,
-    "evaluated_for_publish": 351,
-    "linked_existing": 311,
-    "published_new": 11,
-    "blocked": 29,
+    "discovered_this_run": 122,
+    "candidate_queue": 349,
+    "evaluated_for_publish": 349,
+    "linked_existing": 312,
+    "published_new": 7,
+    "blocked": 30,
     "secondary_promoted": 0,
-    "secondary_still_blocked": 39
+    "secondary_still_blocked": 35
   },
   "blocked_reasons": {
+    "possible duplicate already exists: event-التعريف-بلائحة-نشاط-النقل-التعليمي": 1,
     "publication gate source-evidence is not auto-publishable": 22,
     "possible duplicate requires review: exact-title-city-venue-conflict": 1,
     "possible duplicate requires review: exact-title-city-source-conflict": 1,
@@ -54,56 +55,49 @@
       "note": "collector-error: fetch failed [ETIMEDOUT, ENETUNREACH]; fetch failed [ETIMEDOUT, ENETUNREACH]",
       "error_streak": 66,
       "kind": "chronic",
-      "attempted_this_run": true
+      "attempted_this_run": false
     },
     {
       "id": "mos-events",
-      "note": "collector-error: fetch failed [ETIMEDOUT, ENETUNREACH]",
+      "note": "collector-error: fetch failed [ETIMEDOUT, ENETUNREACH]; live browser recovery deferred by recent failed probe cooldown",
       "error_streak": 66,
       "kind": "chronic",
-      "attempted_this_run": true
+      "attempted_this_run": false
     },
     {
       "id": "moc-cultural-subportals",
       "note": "collector-error: fetch failed [UND_ERR_CONNECT_TIMEOUT]; fetch failed [UND_ERR_CONNECT_TIMEOUT]",
       "error_streak": 66,
       "kind": "chronic",
-      "attempted_this_run": true
+      "attempted_this_run": false
     },
     {
       "id": "saudi-pro-league-fixtures",
       "note": "collector-error: fetch failed [EAI_AGAIN]",
       "error_streak": 46,
       "kind": "chronic",
-      "attempted_this_run": true
+      "attempted_this_run": false
     },
     {
       "id": "tuwaiq-academy-bootcamps",
       "note": "collector-error: HTTP 403",
       "error_streak": 43,
       "kind": "chronic",
-      "attempted_this_run": true
+      "attempted_this_run": false
     },
     {
       "id": "qassim-chamber-events",
-      "note": "collector-error: HTTP 403",
+      "note": "collector-error: HTTP 403; live browser recovery deferred by recent failed probe cooldown",
       "error_streak": 12,
       "kind": "chronic",
-      "attempted_this_run": true
+      "attempted_this_run": false
     },
     {
       "id": "monshaat-events",
       "note": "collector-error: fetch failed [UND_ERR_CONNECT_TIMEOUT]; fetch failed [UND_ERR_CONNECT_TIMEOUT]",
       "error_streak": 4,
       "kind": "chronic",
-      "attempted_this_run": true
-    },
-    {
-      "id": "scega-exhibitions-conferences",
-      "note": "fetch failed [ECONNRESET]",
-      "error_streak": 1,
-      "kind": "transient",
-      "attempted_this_run": true
+      "attempted_this_run": false
     }
   ],
   "sources": [

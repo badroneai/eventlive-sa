@@ -1,18 +1,18 @@
 {
-  "published_at": "2026-11-02T10:04:59.664Z",
+  "published_at": "2026-11-03T10:02:29.858Z",
   "dry_run": false,
   "include_partner": true,
   "source_candidates": "data/source_candidates.json",
   "events_catalog": "data/events_catalog.json",
-  "candidates_seen": 351,
+  "candidates_seen": 349,
   "totals": {
-    "candidates_seen": 351,
-    "published": 11,
-    "linked_existing": 311,
-    "blocked": 29,
+    "candidates_seen": 349,
+    "published": 7,
+    "linked_existing": 312,
+    "blocked": 30,
     "duplicate_review_alerts": 2,
     "category_fallback_alerts": 0,
-    "reconciled": 322,
+    "reconciled": 319,
     "session_windows_reconciled": 0
   },
   "session_window_changes": [],
@@ -60,59 +60,39 @@
   ],
   "published": [
     {
-      "candidate_id": "candidate-sdaia-calendar-events-priorities-for-supporting-ai-adoption-in-the-nonprofit-sector-20261004-ff6a07ef",
-      "event_id": "event-priorities-for-supporting-ai-adoption-in-the-nonprofit-sector",
-      "title": "Priorities for Supporting AI Adoption in the Nonprofit Sector"
+      "candidate_id": "candidate-umm-al-qura-events-قسم-الرياضيات-يفعل-اليوم-العالمي-للإحصاء-2026-20261102-77508e08",
+      "event_id": "event-قسم-الرياضيات-يفعل-اليوم-العالمي-للإحصاء-2026",
+      "title": "قسم الرياضيات يفعل اليوم العالمي للإحصاء 2026"
     },
     {
-      "candidate_id": "candidate-umm-al-qura-events-إنشاء-الاختبارات-في-المصححات-الآلية-معين-و-zip-grade-وربطها-بنواتج-التعل-20261102-f792c1ac",
-      "event_id": "event-إنشاء-الاختبارات-في-المصححات-الآلية-معين-و-zip-grade-وربطها-بنواتج-التعل",
-      "title": "إنشاء الاختبارات في المصححات الآلية ( معين ) و ( zip grade ) وربطها بنواتج التعلم"
+      "candidate_id": "candidate-umm-al-qura-events-لقاء-بعنوان-الرياضة-والعلاقات-الاجتماعية-20261103-7b9d8132",
+      "event_id": "event-لقاء-بعنوان-الرياضة-والعلاقات-الاجتماعية",
+      "title": "لقاء بعنوان الرياضة والعلاقات الاجتماعية"
     },
     {
-      "candidate_id": "candidate-umm-al-qura-events-حملة-توعوية-تفاعلية-بعنوان-من-سيربح-المعلومة-الكشفية؟-20261102-efbf0275",
-      "event_id": "event-حملة-توعوية-تفاعلية-بعنوان-من-سيربح-المعلومة-الكشفية؟",
-      "title": "حملة توعوية تفاعلية بعنوان من سيربح المعلومة الكشفية؟"
+      "candidate_id": "candidate-umm-al-qura-events-خريف-الموهبة-جلسة-خريفية-للموهوبين-20261104-bb8b3846",
+      "event_id": "event-خريف-الموهبة-جلسة-خريفية-للموهوبين",
+      "title": "خريف الموهبة: جلسة خريفية للموهوبين"
     },
     {
-      "candidate_id": "candidate-umm-al-qura-events-مهارات-تقديم-المشروع-العلمي-20261102-62d9fc3b",
-      "event_id": "event-مهارات-تقديم-المشروع-العلمي",
-      "title": "مهارات تقديم المشروع العلمي"
+      "candidate_id": "candidate-umm-al-qura-events-مسابقة-من-سيربح-المعلومة-الرياضية؟-20261104-ffb96fab",
+      "event_id": "event-مسابقة-من-سيربح-المعلومة-الرياضية؟",
+      "title": "مسابقة من سيربح المعلومة الرياضية؟"
     },
     {
-      "candidate_id": "candidate-umm-al-qura-events-ورشة-عمل-بعنوان-ضغطك-تحت-السيطرة-20261102-81255aac",
-      "event_id": "event-ورشة-عمل-بعنوان-ضغطك-تحت-السيطرة",
-      "title": "ورشة عمل بعنوان «ضغطك تحت السيطرة»"
+      "candidate_id": "candidate-umm-al-qura-events-لقاء-بعنوان-استخدام-الدواء-بمسؤولية-20261104-40b6da7b",
+      "event_id": "event-لقاء-بعنوان-استخدام-الدواء-بمسؤولية",
+      "title": "لقاء بعنوان استخدام الدواء بمسؤولية"
     },
     {
-      "candidate_id": "candidate-umm-al-qura-events-برنامج-بعنوان-أثر-البحثي-20261103-c9503617",
-      "event_id": "event-برنامج-بعنوان-أثر-البحثي",
-      "title": "برنامج بعنوان «أثر» البحثي!"
+      "candidate_id": "candidate-umm-al-qura-events-فعالية-تقاليد-كشفية-6-أنواع-العقد-والربطات-20261105-aa845989",
+      "event_id": "event-فعالية-تقاليد-كشفية-6-أنواع-العقد-والربطات",
+      "title": "فعالية تقاليد كشفية 6: أنواع العقد والربطات"
     },
     {
-      "candidate_id": "candidate-hayy-jameel-events-hayy-cinema-november-2026-20261104-73243d6e",
-      "event_id": "event-hayy-cinema-november-2026",
-      "title": "Hayy Cinema | November 2026"
-    },
-    {
-      "candidate_id": "candidate-umm-al-qura-events-عمل-البحث-والتطوير-والابتكار-في-سياق-الحج-والعمرة-والحرمين-الشريفين-20261104-afc1a0d9",
-      "event_id": "event-عمل-البحث-والتطوير-والابتكار-في-سياق-الحج-والعمرة-والحرمين-الشريفين",
-      "title": "عمل البحث والتطوير والابتكار في سياق الحج والعمرة والحرمين الشريفين"
-    },
-    {
-      "candidate_id": "candidate-umm-al-qura-events-الذكاء-العاطفي-في-الحياة-الجامعية-20261104-0c2db350",
-      "event_id": "event-الذكاء-العاطفي-في-الحياة-الجامعية",
-      "title": "الذكاء العاطفي في الحياة الجامعية"
-    },
-    {
-      "candidate_id": "candidate-hayy-jameel-events-hayy-makers-makers-matters-2026-20261112-cc67bdd6",
-      "event_id": "event-hayy-makers-makers-matters-2026",
-      "title": "Hayy Makers | Makers Matters 2026"
-    },
-    {
-      "candidate_id": "candidate-experience-alula-events-hegra-childrens-tour-20261127-1258c39a",
-      "event_id": "event-hegra-childrens-tour",
-      "title": "Hegra Children's Tour"
+      "candidate_id": "candidate-umm-al-qura-events-زيارة-ميدانية-بعنوان-خطى-نحو-العافية-20261105-82d0a0e3",
+      "event_id": "event-زيارة-ميدانية-بعنوان-خطى-نحو-العافية",
+      "title": "زيارة ميدانية بعنوان خطى نحو العافية"
     }
   ],
   "linked_existing": [
@@ -525,6 +505,12 @@
       "reason": "already linked to catalog event"
     },
     {
+      "candidate_id": "candidate-sdaia-calendar-events-priorities-for-supporting-ai-adoption-in-the-nonprofit-sector-20261004-ff6a07ef",
+      "event_id": "event-priorities-for-supporting-ai-adoption-in-the-nonprofit-sector",
+      "title": "Priorities for Supporting AI Adoption in the Nonprofit Sector",
+      "reason": "already linked to catalog event"
+    },
+    {
       "candidate_id": "candidate-tuwaiq-academy-bootcamps-معسكر-تطوير-حلول-الذكاء-الاصطناعي-20261004-dbd53610",
       "event_id": "event-معسكر-تطوير-حلول-الذكاء-الاصطناعي",
       "title": "معسكر تطوير حلول الذكاء الاصطناعي",
@@ -597,21 +583,9 @@
       "reason": "already linked to catalog event"
     },
     {
-      "candidate_id": "candidate-umm-al-qura-events-رحلة-ابن-بطوطة-عبر-الثقافات-والشعوب-20261027-e5be517d",
-      "event_id": "event-رحلة-ابن-بطوطة-عبر-الثقافات-والشعوب",
-      "title": "رحلة ابن بطوطة عبر الثقافات والشعوب",
-      "reason": "already linked to catalog event"
-    },
-    {
       "candidate_id": "candidate-ithra-events-stem-xpert-club-20261027-28ee60b9",
       "event_id": "event-stem-xpert-club",
       "title": "STEM Xpert Club",
-      "reason": "already linked to catalog event"
-    },
-    {
-      "candidate_id": "candidate-umm-al-qura-events-اللقاء-التعريفي-لبرنامج-الاختبارات-المعيارية-20261028-2728e919",
-      "event_id": "event-اللقاء-التعريفي-لبرنامج-الاختبارات-المعيارية",
-      "title": "اللقاء التعريفي لبرنامج الاختبارات المعيارية",
       "reason": "already linked to catalog event"
     },
     {
@@ -705,12 +679,6 @@
       "reason": "already linked to catalog event"
     },
     {
-      "candidate_id": "candidate-jazan-chamber-events-التعريف-بخدمات-مراكز-ناجز-العدلية-20261102-cf828bfb",
-      "event_id": "event-التعريف-بخدمات-مراكز-ناجز-العدلية",
-      "title": "التعريف بخدمات مراكز ناجز العدلية",
-      "reason": "already linked to catalog event"
-    },
-    {
       "candidate_id": "candidate-riyadh-city-events-saudi-build-20261102-5065a5f6",
       "event_id": "event-saudi-build",
       "title": "Saudi Build",
@@ -723,15 +691,9 @@
       "reason": "already linked to catalog event"
     },
     {
-      "candidate_id": "candidate-umm-al-qura-events-فن-إدارة-الوقت-وترتيب-الأولويات-20261102-da646ae2",
-      "event_id": "event-فن-إدارة-الوقت-وترتيب-الأولويات",
-      "title": "فن إدارة الوقت وترتيب الأولويات",
-      "reason": "already linked to catalog event"
-    },
-    {
-      "candidate_id": "candidate-umm-al-qura-events-من-المشروع-إلى-العرض-العلمي-مهارات-تقديم-المشروع-العلمي-20261102-6ca20b81",
-      "event_id": "event-من-المشروع-إلى-العرض-العلمي-مهارات-تقديم-المشروع-العلمي",
-      "title": "من المشروع إلى العرض العلمي \" مهارات تقديم المشروع العلمي \"",
+      "candidate_id": "candidate-umm-al-qura-events-مهارات-تقديم-المشروع-العلمي-20261102-62d9fc3b",
+      "event_id": "event-مهارات-تقديم-المشروع-العلمي",
+      "title": "مهارات تقديم المشروع العلمي",
       "reason": "already linked to catalog event"
     },
     {
@@ -741,15 +703,9 @@
       "reason": "already linked to catalog event"
     },
     {
-      "candidate_id": "candidate-umm-al-qura-events-ورشة-عمل-بعنوان-الرسم-بالألوان-الأكريليك-20261103-c6802b76",
-      "event_id": "event-ورشة-عمل-بعنوان-الرسم-بالألوان-الأكريليك",
-      "title": "ورشة عمل بعنوان الرسم بالألوان الأكريليك",
-      "reason": "already linked to catalog event"
-    },
-    {
-      "candidate_id": "candidate-jazan-chamber-events-التعريف-بلائحة-نشاط-النقل-التعليمي-20261103-1caeb56e",
-      "event_id": "event-التعريف-بلائحة-نشاط-النقل-التعليمي",
-      "title": "التعريف بلائحة نشاط النقل التعليمي",
+      "candidate_id": "candidate-umm-al-qura-events-برنامج-بعنوان-أثر-البحثي-20261103-c9503617",
+      "event_id": "event-برنامج-بعنوان-أثر-البحثي",
+      "title": "برنامج بعنوان «أثر» البحثي!",
       "reason": "already linked to catalog event"
     },
     {
@@ -765,9 +721,21 @@
       "reason": "already linked to catalog event"
     },
     {
+      "candidate_id": "candidate-hayy-jameel-events-hayy-cinema-november-2026-20261104-73243d6e",
+      "event_id": "event-hayy-cinema-november-2026",
+      "title": "Hayy Cinema | November 2026",
+      "reason": "already linked to catalog event"
+    },
+    {
       "candidate_id": "candidate-umm-al-qura-events-فعالية-بعنوان-العالم-على-شاشة-20261104-45550784",
       "event_id": "event-فعالية-بعنوان-العالم-على-شاشة",
       "title": "فعالية بعنوان العالم على شاشة",
+      "reason": "already linked to catalog event"
+    },
+    {
+      "candidate_id": "candidate-umm-al-qura-events-عمل-البحث-والتطوير-والابتكار-في-سياق-الحج-والعمرة-والحرمين-الشريفين-20261104-afc1a0d9",
+      "event_id": "event-عمل-البحث-والتطوير-والابتكار-في-سياق-الحج-والعمرة-والحرمين-الشريفين",
+      "title": "عمل البحث والتطوير والابتكار في سياق الحج والعمرة والحرمين الشريفين",
       "reason": "already linked to catalog event"
     },
     {
@@ -786,6 +754,12 @@
       "candidate_id": "candidate-ithra-events-childrens-book-club-20261104-944c464f",
       "event_id": "event-childrens-book-club",
       "title": "Children's Book Club",
+      "reason": "already linked to catalog event"
+    },
+    {
+      "candidate_id": "candidate-umm-al-qura-events-الذكاء-العاطفي-في-الحياة-الجامعية-20261104-0c2db350",
+      "event_id": "event-الذكاء-العاطفي-في-الحياة-الجامعية",
+      "title": "الذكاء العاطفي في الحياة الجامعية",
       "reason": "already linked to catalog event"
     },
     {
@@ -1143,6 +1117,12 @@
       "reason": "already linked to catalog event"
     },
     {
+      "candidate_id": "candidate-hayy-jameel-events-hayy-makers-makers-matters-2026-20261112-cc67bdd6",
+      "event_id": "event-hayy-makers-makers-matters-2026",
+      "title": "Hayy Makers | Makers Matters 2026",
+      "reason": "already linked to catalog event"
+    },
+    {
       "candidate_id": "candidate-visit-saudi-calendar-pdf-in-act-anniversary-act-xi-20261113-4a38d19e",
       "event_id": "event-in-act-anniversary-act-xi",
       "title": "IN ACT ANNIVERSARY - ACT XI",
@@ -1422,6 +1402,12 @@
       "candidate_id": "candidate-visit-saudi-calendar-pdf-واقف-momos-20261127-4a38d19e",
       "event_id": "event-واقف-momos",
       "title": "واقف! Momos",
+      "reason": "already linked to catalog event"
+    },
+    {
+      "candidate_id": "candidate-experience-alula-events-hegra-childrens-tour-20261127-1258c39a",
+      "event_id": "event-hegra-childrens-tour",
+      "title": "Hegra Children's Tour",
       "reason": "already linked to catalog event"
     },
     {
@@ -1984,6 +1970,11 @@
     }
   ],
   "blocked": [
+    {
+      "candidate_id": "candidate-jazan-chamber-events-التعريف-بلائحة-نشاط-النقل-التعليمي-20261103-1caeb56e",
+      "title": "التعريف بلائحة نشاط النقل التعليمي",
+      "reason": "possible duplicate already exists: event-التعريف-بلائحة-نشاط-النقل-التعليمي"
+    },
     {
       "candidate_id": "candidate-saudicon-events-accounting-business-expo-saudi-arabia-2026-20261109-7b13265f",
       "title": "Accounting & Business Expo Saudi Arabia 2026",

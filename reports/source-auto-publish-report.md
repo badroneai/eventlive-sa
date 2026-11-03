@@ -1,16 +1,17 @@
 # EventLive Source Auto Publish Report
 
-- published_at: 2026-11-02T10:04:59.664Z
+- published_at: 2026-11-03T10:02:29.858Z
 - dry_run: false
 - include_partner: true
-- candidates_seen: 351
-- published_new: 11
-- linked_existing: 311
-- blocked_remaining: 29
+- candidates_seen: 349
+- published_new: 7
+- linked_existing: 312
+- blocked_remaining: 30
 - duplicate_review_alerts: 2
 
 ## Blocked summary
 
+- possible duplicate already exists: event-التعريف-بلائحة-نشاط-النقل-التعليمي: 1
 - publication gate source-evidence is not auto-publishable: 22
 - possible duplicate requires review: exact-title-city-venue-conflict: 1
 - possible duplicate requires review: exact-title-city-source-conflict: 1
@@ -20,17 +21,13 @@
 
 | Candidate | Status | Catalog event | Reason |
 |---|---|---|---|
-| candidate-sdaia-calendar-events-priorities-for-supporting-ai-adoption-in-the-nonprofit-sector-20261004-ff6a07ef | published | event-priorities-for-supporting-ai-adoption-in-the-nonprofit-sector | Priorities for Supporting AI Adoption in the Nonprofit Sector |
-| candidate-umm-al-qura-events-إنشاء-الاختبارات-في-المصححات-الآلية-معين-و-zip-grade-وربطها-بنواتج-التعل-20261102-f792c1ac | published | event-إنشاء-الاختبارات-في-المصححات-الآلية-معين-و-zip-grade-وربطها-بنواتج-التعل | إنشاء الاختبارات في المصححات الآلية ( معين ) و ( zip grade ) وربطها بنواتج التعلم |
-| candidate-umm-al-qura-events-حملة-توعوية-تفاعلية-بعنوان-من-سيربح-المعلومة-الكشفية؟-20261102-efbf0275 | published | event-حملة-توعوية-تفاعلية-بعنوان-من-سيربح-المعلومة-الكشفية؟ | حملة توعوية تفاعلية بعنوان من سيربح المعلومة الكشفية؟ |
-| candidate-umm-al-qura-events-مهارات-تقديم-المشروع-العلمي-20261102-62d9fc3b | published | event-مهارات-تقديم-المشروع-العلمي | مهارات تقديم المشروع العلمي |
-| candidate-umm-al-qura-events-ورشة-عمل-بعنوان-ضغطك-تحت-السيطرة-20261102-81255aac | published | event-ورشة-عمل-بعنوان-ضغطك-تحت-السيطرة | ورشة عمل بعنوان «ضغطك تحت السيطرة» |
-| candidate-umm-al-qura-events-برنامج-بعنوان-أثر-البحثي-20261103-c9503617 | published | event-برنامج-بعنوان-أثر-البحثي | برنامج بعنوان «أثر» البحثي! |
-| candidate-hayy-jameel-events-hayy-cinema-november-2026-20261104-73243d6e | published | event-hayy-cinema-november-2026 | Hayy Cinema | November 2026 |
-| candidate-umm-al-qura-events-عمل-البحث-والتطوير-والابتكار-في-سياق-الحج-والعمرة-والحرمين-الشريفين-20261104-afc1a0d9 | published | event-عمل-البحث-والتطوير-والابتكار-في-سياق-الحج-والعمرة-والحرمين-الشريفين | عمل البحث والتطوير والابتكار في سياق الحج والعمرة والحرمين الشريفين |
-| candidate-umm-al-qura-events-الذكاء-العاطفي-في-الحياة-الجامعية-20261104-0c2db350 | published | event-الذكاء-العاطفي-في-الحياة-الجامعية | الذكاء العاطفي في الحياة الجامعية |
-| candidate-hayy-jameel-events-hayy-makers-makers-matters-2026-20261112-cc67bdd6 | published | event-hayy-makers-makers-matters-2026 | Hayy Makers | Makers Matters 2026 |
-| candidate-experience-alula-events-hegra-childrens-tour-20261127-1258c39a | published | event-hegra-childrens-tour | Hegra Children's Tour |
+| candidate-umm-al-qura-events-قسم-الرياضيات-يفعل-اليوم-العالمي-للإحصاء-2026-20261102-77508e08 | published | event-قسم-الرياضيات-يفعل-اليوم-العالمي-للإحصاء-2026 | قسم الرياضيات يفعل اليوم العالمي للإحصاء 2026 |
+| candidate-umm-al-qura-events-لقاء-بعنوان-الرياضة-والعلاقات-الاجتماعية-20261103-7b9d8132 | published | event-لقاء-بعنوان-الرياضة-والعلاقات-الاجتماعية | لقاء بعنوان الرياضة والعلاقات الاجتماعية |
+| candidate-umm-al-qura-events-خريف-الموهبة-جلسة-خريفية-للموهوبين-20261104-bb8b3846 | published | event-خريف-الموهبة-جلسة-خريفية-للموهوبين | خريف الموهبة: جلسة خريفية للموهوبين |
+| candidate-umm-al-qura-events-مسابقة-من-سيربح-المعلومة-الرياضية؟-20261104-ffb96fab | published | event-مسابقة-من-سيربح-المعلومة-الرياضية؟ | مسابقة من سيربح المعلومة الرياضية؟ |
+| candidate-umm-al-qura-events-لقاء-بعنوان-استخدام-الدواء-بمسؤولية-20261104-40b6da7b | published | event-لقاء-بعنوان-استخدام-الدواء-بمسؤولية | لقاء بعنوان استخدام الدواء بمسؤولية |
+| candidate-umm-al-qura-events-فعالية-تقاليد-كشفية-6-أنواع-العقد-والربطات-20261105-aa845989 | published | event-فعالية-تقاليد-كشفية-6-أنواع-العقد-والربطات | فعالية تقاليد كشفية 6: أنواع العقد والربطات |
+| candidate-umm-al-qura-events-زيارة-ميدانية-بعنوان-خطى-نحو-العافية-20261105-82d0a0e3 | published | event-زيارة-ميدانية-بعنوان-خطى-نحو-العافية | زيارة ميدانية بعنوان خطى نحو العافية |
 | candidate-moc-cultural-subportals-skill-development-initiative-20210714-10f7dc2c | linked-existing | event-skill-development-initiative | already linked to catalog event |
 | candidate-moc-cultural-subportals-sitar-20220921-cda2e068 | linked-existing | event-sitar | already linked to catalog event |
 | candidate-moc-cultural-subportals-design-for-good-initiative-20241205-3788803e | linked-existing | event-design-for-good-initiative | already linked to catalog event |
@@ -99,6 +96,7 @@
 | candidate-visit-saudi-seasons-aramco-f4-saudi-arabian-championship-20261001-c1591ef2 | linked-existing | event-aramco-f4-saudi-arabian-championship | already linked to catalog event |
 | candidate-visit-saudi-seasons-saudi-falcons-club-auction-20261001-4e016ab8 | linked-existing | event-saudi-falcons-club-auction | already linked to catalog event |
 | candidate-misk-hub-programs-samsung-innovation-campus-ai-program-20261004-81bc0e25 | linked-existing | event-samsung-innovation-campus-ai-program | already linked to catalog event |
+| candidate-sdaia-calendar-events-priorities-for-supporting-ai-adoption-in-the-nonprofit-sector-20261004-ff6a07ef | linked-existing | event-priorities-for-supporting-ai-adoption-in-the-nonprofit-sector | already linked to catalog event |
 | candidate-tuwaiq-academy-bootcamps-معسكر-تطوير-حلول-الذكاء-الاصطناعي-20261004-dbd53610 | linked-existing | event-معسكر-تطوير-حلول-الذكاء-الاصطناعي | already linked to catalog event |
 | candidate-tuwaiq-academy-bootcamps-معسكر-الدرونز-عالية-الأداء-20261004-c428ead9 | linked-existing | event-معسكر-الدرونز-عالية-الأداء | already linked to catalog event |
 | candidate-tuwaiq-academy-bootcamps-معسكر-الاستراتيجية-في-عصر-الذكاء-الاصطناعي-والتحول-الرقمي-20261005-c1f05c69 | linked-existing | event-معسكر-الاستراتيجية-في-عصر-الذكاء-الاصطناعي-والتحول-الرقمي | already linked to catalog event |
@@ -111,9 +109,7 @@
 | candidate-saudi-university-events-annual-kaust-basketball-league-2026-20261025-9ec9be73 | linked-existing | event-annual-kaust-basketball-league-2026 | already linked to catalog event |
 | candidate-umm-al-qura-events-لقاء-للإجابة-عن-الاستفسارات-20261025-356a27db | linked-existing | event-لقاء-للإجابة-عن-الاستفسارات | already linked to catalog event |
 | candidate-ithra-events-creative-writing-club-20261026-a7f18ce9 | linked-existing | event-creative-writing-club | already linked to catalog event |
-| candidate-umm-al-qura-events-رحلة-ابن-بطوطة-عبر-الثقافات-والشعوب-20261027-e5be517d | linked-existing | event-رحلة-ابن-بطوطة-عبر-الثقافات-والشعوب | already linked to catalog event |
 | candidate-ithra-events-stem-xpert-club-20261027-28ee60b9 | linked-existing | event-stem-xpert-club | already linked to catalog event |
-| candidate-umm-al-qura-events-اللقاء-التعريفي-لبرنامج-الاختبارات-المعيارية-20261028-2728e919 | linked-existing | event-اللقاء-التعريفي-لبرنامج-الاختبارات-المعيارية | already linked to catalog event |
 | candidate-ithra-events-arabic-children-book-club-10-12-20261028-39c903cc | linked-existing | event-arabic-children-book-club-10-12 | already linked to catalog event |
 | candidate-umm-al-qura-events-معسكر-المهارات-النفسية-صناعة-المرونة-تحويل-التعثر-الأكاديمي-والشخصي-إلى--20261028-f48e0c33 | linked-existing | event-معسكر-المهارات-النفسية-صناعة-المرونة-تحويل-التعثر-الأكاديمي-والشخصي-إلى- | already linked to catalog event |
 | candidate-visit-saudi-calendar-pdf-شتاء-اثراء-20261029-4a38d19e | linked-existing | event-شتاء-اثراء | already linked to catalog event |
@@ -129,20 +125,20 @@
 | candidate-umm-al-qura-events-برنامج-محترف-أعمال-معتمد-في-القيادة-الإدارية-cbp-ls-20261101-490252be | linked-existing | event-برنامج-محترف-أعمال-معتمد-في-القيادة-الإدارية-cbp-ls | already linked to catalog event |
 | candidate-umm-al-qura-events-شهادة-محترف-إدارة-المشاريع-pmp-20261101-dfc818b0 | linked-existing | event-برنامج-إدارة-المشاريع-الاحترافية-pmp | already linked to catalog event |
 | candidate-visit-saudi-calendar-pdf-enc-2026-20261102-4a38d19e | linked-existing | event-esports-nations-cup | already linked to catalog event |
-| candidate-jazan-chamber-events-التعريف-بخدمات-مراكز-ناجز-العدلية-20261102-cf828bfb | linked-existing | event-التعريف-بخدمات-مراكز-ناجز-العدلية | already linked to catalog event |
 | candidate-riyadh-city-events-saudi-build-20261102-5065a5f6 | linked-existing | event-saudi-build | already linked to catalog event |
 | candidate-riyadh-city-events-esports-nations-cup-20261102-62c39964 | linked-existing | event-esports-nations-cup | already linked to catalog event |
-| candidate-umm-al-qura-events-فن-إدارة-الوقت-وترتيب-الأولويات-20261102-da646ae2 | linked-existing | event-فن-إدارة-الوقت-وترتيب-الأولويات | already linked to catalog event |
-| candidate-umm-al-qura-events-من-المشروع-إلى-العرض-العلمي-مهارات-تقديم-المشروع-العلمي-20261102-6ca20b81 | linked-existing | event-من-المشروع-إلى-العرض-العلمي-مهارات-تقديم-المشروع-العلمي | already linked to catalog event |
+| candidate-umm-al-qura-events-مهارات-تقديم-المشروع-العلمي-20261102-62d9fc3b | linked-existing | event-مهارات-تقديم-المشروع-العلمي | already linked to catalog event |
 | candidate-asharqia-chamber-events-منتدى-المرأة-الاقتصادي-2026م-بعنوان-من-التمكين-إلى-التأثير-الاقتصادي-20261103-96f2a7c4 | linked-existing | event-منتدى-المرأة-الاقتصادي-2026م-بعنوان-من-التمكين-إلى-التأثير-الاقتصادي | already linked to catalog event |
-| candidate-umm-al-qura-events-ورشة-عمل-بعنوان-الرسم-بالألوان-الأكريليك-20261103-c6802b76 | linked-existing | event-ورشة-عمل-بعنوان-الرسم-بالألوان-الأكريليك | already linked to catalog event |
-| candidate-jazan-chamber-events-التعريف-بلائحة-نشاط-النقل-التعليمي-20261103-1caeb56e | linked-existing | event-التعريف-بلائحة-نشاط-النقل-التعليمي | already linked to catalog event |
+| candidate-umm-al-qura-events-برنامج-بعنوان-أثر-البحثي-20261103-c9503617 | linked-existing | event-برنامج-بعنوان-أثر-البحثي | already linked to catalog event |
 | candidate-ithra-events-childrens-art-club-20261103-ce77ebe2 | linked-existing | event-childrens-art-club | already linked to catalog event |
 | candidate-hayy-jameel-events-jameel-library-november-community-programmes-20261104-18d33419 | linked-existing | event-jameel-library-november-community-programmes | already linked to catalog event |
+| candidate-hayy-jameel-events-hayy-cinema-november-2026-20261104-73243d6e | linked-existing | event-hayy-cinema-november-2026 | already linked to catalog event |
 | candidate-umm-al-qura-events-فعالية-بعنوان-العالم-على-شاشة-20261104-45550784 | linked-existing | event-فعالية-بعنوان-العالم-على-شاشة | already linked to catalog event |
+| candidate-umm-al-qura-events-عمل-البحث-والتطوير-والابتكار-في-سياق-الحج-والعمرة-والحرمين-الشريفين-20261104-afc1a0d9 | linked-existing | event-عمل-البحث-والتطوير-والابتكار-في-سياق-الحج-والعمرة-والحرمين-الشريفين | already linked to catalog event |
 | candidate-visit-saudi-calendar-uci-urban-cycling-world-championships-20261104-4fa77aa9 | linked-existing | event-uci-urban-cycling-world-championships | already linked to catalog event |
 | candidate-ithra-events-arabic-children-book-club-7-9-20261104-810c285f | linked-existing | event-arabic-children-book-club-7-9 | already linked to catalog event |
 | candidate-ithra-events-childrens-book-club-20261104-944c464f | linked-existing | event-childrens-book-club | already linked to catalog event |
+| candidate-umm-al-qura-events-الذكاء-العاطفي-في-الحياة-الجامعية-20261104-0c2db350 | linked-existing | event-الذكاء-العاطفي-في-الحياة-الجامعية | already linked to catalog event |
 | candidate-mdlbeast-events-unstable-20261105-5647df2e | linked-existing | event-unstable | already linked to catalog event |
 | candidate-dhahran-expo-calendar-world-firefighters-challenge-20261105-18d15b29 | linked-existing | event-world-firefighters-challenge | already linked to catalog event |
 | candidate-hayy-jameel-events-hayy-markets-azka-farmers-market-pomegranates-edition-20261105-ee290c41 | linked-existing | event-hayy-markets-azka-farmers-market-pomegranates-edition | already linked to catalog event |
@@ -202,6 +198,7 @@
 | candidate-ithra-events-little-explorers-20261112-1cc1993f | linked-existing | event-little-explorers | already linked to catalog event |
 | candidate-ithra-events-marine-missions-20261112-5739b78e | linked-existing | event-marine-missions | already linked to catalog event |
 | candidate-ithra-events-the-moral-of-the-story-20261112-bfa3f2a8 | linked-existing | event-the-moral-of-the-story | already linked to catalog event |
+| candidate-hayy-jameel-events-hayy-makers-makers-matters-2026-20261112-cc67bdd6 | linked-existing | event-hayy-makers-makers-matters-2026 | already linked to catalog event |
 | candidate-visit-saudi-calendar-pdf-in-act-anniversary-act-xi-20261113-4a38d19e | linked-existing | event-in-act-anniversary-act-xi | already linked to catalog event |
 | candidate-visit-saudi-calendar-pdf-مهرجان-القادسية-20261113-4a38d19e | linked-existing | event-مهرجان-القادسية | already linked to catalog event |
 | candidate-visit-saudi-calendar-pdf-حفلة-نانسي-عجرم-20261113-4a38d19e | linked-existing | event-حفلة-نانسي-عجرم | already linked to catalog event |
@@ -249,6 +246,7 @@
 | candidate-experience-alula-events-ancient-kingdoms-festival-20261126-a8081cef | linked-existing | event-ancient-kingdoms-festival | already linked to catalog event |
 | candidate-visit-saudi-calendar-pdf-in-act-anniversary-act-xi-20261127-4a38d19e | linked-existing | event-in-act-anniversary-act-xi-2 | already linked to catalog event |
 | candidate-visit-saudi-calendar-pdf-واقف-momos-20261127-4a38d19e | linked-existing | event-واقف-momos | already linked to catalog event |
+| candidate-experience-alula-events-hegra-childrens-tour-20261127-1258c39a | linked-existing | event-hegra-childrens-tour | already linked to catalog event |
 | candidate-visit-saudi-calendar-wagef-momos-live-in-jeddah-20261127-59470a9a | linked-existing | event-wagef-momos-live-in-jeddah | already linked to catalog event |
 | candidate-experience-alula-events-fei-endurance-world-championship-2026-20261128-febe29ec | linked-existing | event-fei-endurance-world-championship-2026 | already linked to catalog event |
 | candidate-hayy-jameel-events-hayy-cinema-aflam-sudan-x-hayy-cinema-20261128-e942a21a | linked-existing | event-hayy-cinema-aflam-sudan-x-hayy-cinema | already linked to catalog event |
@@ -342,6 +340,7 @@
 | candidate-qassim-university-events-استضافة-مؤتمر-ieee-mecom-2027-20271101-510cb4b1 | linked-existing | event-استضافة-مؤتمر-ieee-mecom-2027 | already linked to catalog event |
 | candidate-umm-al-qura-events-الترشح-للدبلوم-المتوسط-في-التحول-الرقمي-في-جازان-بالتعاون-مع-أكاديمية-غر-20271201-5cace3ad | linked-existing | event-دبلوم-التحول-الرقمي | already linked to catalog event |
 | candidate-saudi-space-agency-events-space-debris-conference-2028-20280215-03719f44 | linked-existing | event-space-debris-conference-2028 | already linked to catalog event |
+| candidate-jazan-chamber-events-التعريف-بلائحة-نشاط-النقل-التعليمي-20261103-1caeb56e | blocked | - | possible duplicate already exists: event-التعريف-بلائحة-نشاط-النقل-التعليمي |
 | candidate-saudicon-events-accounting-business-expo-saudi-arabia-2026-20261109-7b13265f | blocked | - | publication gate source-evidence is not auto-publishable |
 | candidate-saudicon-events-معرض-المحاسبة-والأعمال-السعودية-2026-20261109-eb1d753b | blocked | - | publication gate source-evidence is not auto-publishable |
 | candidate-saudicon-events-2026-accounting-business-expo-saudi-arabia-2026-20261109-257debc0 | blocked | - | publication gate source-evidence is not auto-publishable |

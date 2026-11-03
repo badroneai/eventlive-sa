@@ -1,6 +1,6 @@
 {
   "schema": "eventlive.source-strategic-platform-radar.v1",
-  "generated_at": "2026-11-02T09:37:30.735Z",
+  "generated_at": "2026-11-03T09:42:31.351Z",
   "policy": {
     "allowed_use": "official source evidence refresh, API-surface mapping, partnership prioritization, extractor backlog decisions",
     "disallowed_use": "direct catalog publication without official confirmation and duplicate review"
@@ -256,7 +256,7 @@
         {
           "url": "https://www.visitsaudi.com/bin/api/v3/events?locale=ar",
           "status": 200,
-          "bytes": 62496,
+          "bytes": 62400,
           "classification": "reachable",
           "summary": {
             "parse_ok": true,
@@ -274,7 +274,7 @@
         {
           "url": "https://www.visitsaudi.com/bin/api/v3/events?locale=en",
           "status": 200,
-          "bytes": 65477,
+          "bytes": 65351,
           "classification": "reachable",
           "summary": {
             "parse_ok": true,
@@ -303,7 +303,7 @@
       "final_url": "https://webook.com/ar/explore",
       "via": "fetch",
       "content_type": "text/html",
-      "bytes": 5032,
+      "bytes": 5031,
       "title": "",
       "classification": "protected",
       "error": "",
@@ -331,7 +331,7 @@
         "https://wbk-assets.webook.com/8.21/locales/en/currency_common.json",
         "https://wbk-assets.webook.com/8.21/locales/en/payment_common.json",
         "https://wbk-assets.webook.com/8.21/locales/en/subscription_common.json",
-        "https://webook.com/cdn-cgi/content?id=8.UsB5na0bA6.Z7E0f.ujWPdyMfPST2Gh.7Tc2mS7ng-1793612260.9844909-1.2.1.1-cxhdoLEqDrFWdgNaykGhGETSjINHY_IjkAu9ALGgiTvDkB6Pn0XbgEbWwx3jMe3t",
+        "https://webook.com/cdn-cgi/content?id=6efbPhqO3EKy3VSFli42mXggVxq5qSiarUVfSfIqyXE-1793698962.807631-1.2.1.1-UkdbJV_IjVPHLBFfiTMb7xu5CnV1hqhmnxc5ry9Ga4AI9TWM.vjSL7HHfuQLa1No",
         "https://static.cloudflareinsights.com/beacon.min.js/vce701823e78c4301a35b7e07294d87301792088814092"
       ],
       "page_hint_words": [
