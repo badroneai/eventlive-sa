@@ -1,18 +1,18 @@
 {
-  "published_at": "2026-11-03T10:02:29.858Z",
+  "published_at": "2026-11-04T09:34:13.655Z",
   "dry_run": false,
   "include_partner": true,
   "source_candidates": "data/source_candidates.json",
   "events_catalog": "data/events_catalog.json",
-  "candidates_seen": 349,
+  "candidates_seen": 332,
   "totals": {
-    "candidates_seen": 349,
-    "published": 7,
+    "candidates_seen": 332,
+    "published": 4,
     "linked_existing": 312,
-    "blocked": 30,
+    "blocked": 16,
     "duplicate_review_alerts": 2,
     "category_fallback_alerts": 0,
-    "reconciled": 319,
+    "reconciled": 316,
     "session_windows_reconciled": 0
   },
   "session_window_changes": [],
@@ -60,39 +60,24 @@
   ],
   "published": [
     {
-      "candidate_id": "candidate-umm-al-qura-events-قسم-الرياضيات-يفعل-اليوم-العالمي-للإحصاء-2026-20261102-77508e08",
-      "event_id": "event-قسم-الرياضيات-يفعل-اليوم-العالمي-للإحصاء-2026",
-      "title": "قسم الرياضيات يفعل اليوم العالمي للإحصاء 2026"
+      "candidate_id": "candidate-umm-al-qura-events-قسم-الكيمياء-يقدم-دورة-تدريبية-للخريجين-20261103-d0932fc3",
+      "event_id": "event-قسم-الكيمياء-يقدم-دورة-تدريبية-للخريجين",
+      "title": "قسم الكيمياء يقدم دورة تدريبية للخريجين"
     },
     {
-      "candidate_id": "candidate-umm-al-qura-events-لقاء-بعنوان-الرياضة-والعلاقات-الاجتماعية-20261103-7b9d8132",
-      "event_id": "event-لقاء-بعنوان-الرياضة-والعلاقات-الاجتماعية",
-      "title": "لقاء بعنوان الرياضة والعلاقات الاجتماعية"
+      "candidate_id": "candidate-umm-al-qura-events-قسم-الفيزياء-يقدم-دورة-تدريبية-للخريجين-20261103-ab245599",
+      "event_id": "event-قسم-الفيزياء-يقدم-دورة-تدريبية-للخريجين",
+      "title": "قسم الفيزياء يقدم دورة تدريبية للخريجين"
     },
     {
-      "candidate_id": "candidate-umm-al-qura-events-خريف-الموهبة-جلسة-خريفية-للموهوبين-20261104-bb8b3846",
-      "event_id": "event-خريف-الموهبة-جلسة-خريفية-للموهوبين",
-      "title": "خريف الموهبة: جلسة خريفية للموهوبين"
+      "candidate_id": "candidate-umm-al-qura-events-دورة-تدريبية-بعنوان-الاستدامة-في-حياتنا-ودورنا-في-تحقيق-الرؤية-20261104-458f4b19",
+      "event_id": "event-دورة-تدريبية-بعنوان-الاستدامة-في-حياتنا-ودورنا-في-تحقيق-الرؤية",
+      "title": "دورة تدريبية بعنوان الاستدامة في حياتنا ودورنا في تحقيق الرؤية"
     },
     {
-      "candidate_id": "candidate-umm-al-qura-events-مسابقة-من-سيربح-المعلومة-الرياضية؟-20261104-ffb96fab",
-      "event_id": "event-مسابقة-من-سيربح-المعلومة-الرياضية؟",
-      "title": "مسابقة من سيربح المعلومة الرياضية؟"
-    },
-    {
-      "candidate_id": "candidate-umm-al-qura-events-لقاء-بعنوان-استخدام-الدواء-بمسؤولية-20261104-40b6da7b",
-      "event_id": "event-لقاء-بعنوان-استخدام-الدواء-بمسؤولية",
-      "title": "لقاء بعنوان استخدام الدواء بمسؤولية"
-    },
-    {
-      "candidate_id": "candidate-umm-al-qura-events-فعالية-تقاليد-كشفية-6-أنواع-العقد-والربطات-20261105-aa845989",
-      "event_id": "event-فعالية-تقاليد-كشفية-6-أنواع-العقد-والربطات",
-      "title": "فعالية تقاليد كشفية 6: أنواع العقد والربطات"
-    },
-    {
-      "candidate_id": "candidate-umm-al-qura-events-زيارة-ميدانية-بعنوان-خطى-نحو-العافية-20261105-82d0a0e3",
-      "event_id": "event-زيارة-ميدانية-بعنوان-خطى-نحو-العافية",
-      "title": "زيارة ميدانية بعنوان خطى نحو العافية"
+      "candidate_id": "candidate-umm-al-qura-events-لقاء-بعنوان-الثقافة-الغامضة-20261104-b715729f",
+      "event_id": "event-لقاء-بعنوان-الثقافة-الغامضة",
+      "title": "لقاء بعنوان الثقافة الغامضة"
     }
   ],
   "linked_existing": [
@@ -595,12 +580,6 @@
       "reason": "already linked to catalog event"
     },
     {
-      "candidate_id": "candidate-umm-al-qura-events-معسكر-المهارات-النفسية-صناعة-المرونة-تحويل-التعثر-الأكاديمي-والشخصي-إلى--20261028-f48e0c33",
-      "event_id": "event-معسكر-المهارات-النفسية-صناعة-المرونة-تحويل-التعثر-الأكاديمي-والشخصي-إلى-",
-      "title": "معسكر المهارات النفسية (صناعة المرونة: تحويل التعثر الأكاديمي والشخصي إلى خبرة حياة)",
-      "reason": "already linked to catalog event"
-    },
-    {
       "candidate_id": "candidate-visit-saudi-calendar-pdf-شتاء-اثراء-20261029-4a38d19e",
       "event_id": "event-شتاء-اثراء",
       "title": "شتاء اثراء",
@@ -649,21 +628,9 @@
       "reason": "already linked to catalog event"
     },
     {
-      "candidate_id": "candidate-umm-al-qura-events-ورشة-عمل-بعنوان-مهارات-استخدام-الماصات-الدقيقة-والفصل-20261101-b3de6d7a",
-      "event_id": "event-ورشة-عمل-بعنوان-مهارات-استخدام-الماصات-الدقيقة-والفصل",
-      "title": "ورشة عمل بعنوان مهارات استخدام الماصات الدقيقة والفصل",
-      "reason": "already linked to catalog event"
-    },
-    {
-      "candidate_id": "candidate-umm-al-qura-events-ورشة-عمل-بعنوان-مهارة-زراعة-البيئة-البكتيرية-20261101-e6de85ea",
-      "event_id": "event-ورشة-عمل-بعنوان-مهارة-زراعة-البيئة-البكتيرية-2",
-      "title": "ورشة عمل بعنوان مهارة زراعة البيئة البكتيرية",
-      "reason": "already linked to catalog event"
-    },
-    {
-      "candidate_id": "candidate-umm-al-qura-events-برنامج-محترف-أعمال-معتمد-في-القيادة-الإدارية-cbp-ls-20261101-490252be",
-      "event_id": "event-برنامج-محترف-أعمال-معتمد-في-القيادة-الإدارية-cbp-ls",
-      "title": "برنامج محترف أعمال معتمد في القيادة الإدارية (CBP-LS)",
+      "candidate_id": "candidate-hayy-jameel-events-hayy-cinema-november-2026-20261101-73243d6e",
+      "event_id": "event-hayy-cinema-november-2026",
+      "title": "Hayy Cinema | November 2026",
       "reason": "already linked to catalog event"
     },
     {
@@ -685,6 +652,12 @@
       "reason": "already linked to catalog event"
     },
     {
+      "candidate_id": "candidate-umm-al-qura-events-قسم-الرياضيات-يفعل-اليوم-العالمي-للإحصاء-2026-20261102-77508e08",
+      "event_id": "event-قسم-الرياضيات-يفعل-اليوم-العالمي-للإحصاء-2026",
+      "title": "قسم الرياضيات يفعل اليوم العالمي للإحصاء 2026",
+      "reason": "already linked to catalog event"
+    },
+    {
       "candidate_id": "candidate-riyadh-city-events-esports-nations-cup-20261102-62c39964",
       "event_id": "event-esports-nations-cup",
       "title": "Esports Nations Cup",
@@ -694,12 +667,6 @@
       "candidate_id": "candidate-umm-al-qura-events-مهارات-تقديم-المشروع-العلمي-20261102-62d9fc3b",
       "event_id": "event-مهارات-تقديم-المشروع-العلمي",
       "title": "مهارات تقديم المشروع العلمي",
-      "reason": "already linked to catalog event"
-    },
-    {
-      "candidate_id": "candidate-asharqia-chamber-events-منتدى-المرأة-الاقتصادي-2026م-بعنوان-من-التمكين-إلى-التأثير-الاقتصادي-20261103-96f2a7c4",
-      "event_id": "event-منتدى-المرأة-الاقتصادي-2026م-بعنوان-من-التمكين-إلى-التأثير-الاقتصادي",
-      "title": "منتدى المرأة الاقتصادي 2026م بعنوان: من التمكين إلى التأثير الاقتصادي",
       "reason": "already linked to catalog event"
     },
     {
@@ -721,18 +688,6 @@
       "reason": "already linked to catalog event"
     },
     {
-      "candidate_id": "candidate-hayy-jameel-events-hayy-cinema-november-2026-20261104-73243d6e",
-      "event_id": "event-hayy-cinema-november-2026",
-      "title": "Hayy Cinema | November 2026",
-      "reason": "already linked to catalog event"
-    },
-    {
-      "candidate_id": "candidate-umm-al-qura-events-فعالية-بعنوان-العالم-على-شاشة-20261104-45550784",
-      "event_id": "event-فعالية-بعنوان-العالم-على-شاشة",
-      "title": "فعالية بعنوان العالم على شاشة",
-      "reason": "already linked to catalog event"
-    },
-    {
       "candidate_id": "candidate-umm-al-qura-events-عمل-البحث-والتطوير-والابتكار-في-سياق-الحج-والعمرة-والحرمين-الشريفين-20261104-afc1a0d9",
       "event_id": "event-عمل-البحث-والتطوير-والابتكار-في-سياق-الحج-والعمرة-والحرمين-الشريفين",
       "title": "عمل البحث والتطوير والابتكار في سياق الحج والعمرة والحرمين الشريفين",
@@ -742,6 +697,12 @@
       "candidate_id": "candidate-visit-saudi-calendar-uci-urban-cycling-world-championships-20261104-4fa77aa9",
       "event_id": "event-uci-urban-cycling-world-championships",
       "title": "UCI URBAN CYCLING WORLD CHAMPIONSHIPS",
+      "reason": "already linked to catalog event"
+    },
+    {
+      "candidate_id": "candidate-umm-al-qura-events-خريف-الموهبة-جلسة-خريفية-للموهوبين-20261104-bb8b3846",
+      "event_id": "event-خريف-الموهبة-جلسة-خريفية-للموهوبين",
+      "title": "خريف الموهبة: جلسة خريفية للموهوبين",
       "reason": "already linked to catalog event"
     },
     {
@@ -760,6 +721,18 @@
       "candidate_id": "candidate-umm-al-qura-events-الذكاء-العاطفي-في-الحياة-الجامعية-20261104-0c2db350",
       "event_id": "event-الذكاء-العاطفي-في-الحياة-الجامعية",
       "title": "الذكاء العاطفي في الحياة الجامعية",
+      "reason": "already linked to catalog event"
+    },
+    {
+      "candidate_id": "candidate-umm-al-qura-events-مسابقة-من-سيربح-المعلومة-الرياضية؟-20261104-ffb96fab",
+      "event_id": "event-مسابقة-من-سيربح-المعلومة-الرياضية؟",
+      "title": "مسابقة من سيربح المعلومة الرياضية؟",
+      "reason": "already linked to catalog event"
+    },
+    {
+      "candidate_id": "candidate-umm-al-qura-events-لقاء-بعنوان-استخدام-الدواء-بمسؤولية-20261104-40b6da7b",
+      "event_id": "event-لقاء-بعنوان-استخدام-الدواء-بمسؤولية",
+      "title": "لقاء بعنوان استخدام الدواء بمسؤولية",
       "reason": "already linked to catalog event"
     },
     {
@@ -784,6 +757,18 @@
       "candidate_id": "candidate-hayy-jameel-events-hayy-explorers-november-programmes-20261105-7a475a93",
       "event_id": "event-hayy-explorers-november-programmes",
       "title": "Hayy Explorers | November Programmes",
+      "reason": "already linked to catalog event"
+    },
+    {
+      "candidate_id": "candidate-umm-al-qura-events-فعالية-تقاليد-كشفية-6-أنواع-العقد-والربطات-20261105-aa845989",
+      "event_id": "event-فعالية-تقاليد-كشفية-6-أنواع-العقد-والربطات",
+      "title": "فعالية تقاليد كشفية 6: أنواع العقد والربطات",
+      "reason": "already linked to catalog event"
+    },
+    {
+      "candidate_id": "candidate-umm-al-qura-events-زيارة-ميدانية-بعنوان-خطى-نحو-العافية-20261105-82d0a0e3",
+      "event_id": "event-زيارة-ميدانية-بعنوان-خطى-نحو-العافية",
+      "title": "زيارة ميدانية بعنوان خطى نحو العافية",
       "reason": "already linked to catalog event"
     },
     {
@@ -1971,11 +1956,6 @@
   ],
   "blocked": [
     {
-      "candidate_id": "candidate-jazan-chamber-events-التعريف-بلائحة-نشاط-النقل-التعليمي-20261103-1caeb56e",
-      "title": "التعريف بلائحة نشاط النقل التعليمي",
-      "reason": "possible duplicate already exists: event-التعريف-بلائحة-نشاط-النقل-التعليمي"
-    },
-    {
       "candidate_id": "candidate-saudicon-events-accounting-business-expo-saudi-arabia-2026-20261109-7b13265f",
       "title": "Accounting & Business Expo Saudi Arabia 2026",
       "reason": "publication gate source-evidence is not auto-publishable"
@@ -2010,39 +1990,9 @@
       "reason": "unknown category requires review"
     },
     {
-      "candidate_id": "candidate-saudicon-events-arab-cochlear-implant-conference-2026-20261126-0fd1a36c",
-      "title": "Arab Cochlear Implant Conference 2026",
-      "reason": "publication gate source-evidence is not auto-publishable"
-    },
-    {
-      "candidate_id": "candidate-saudicon-events-2026-20261126-e142b271",
-      "title": "2026年阿拉伯人工耳蜗植入医学大会",
-      "reason": "publication gate source-evidence is not auto-publishable"
-    },
-    {
-      "candidate_id": "candidate-saudicon-events-المؤتمر-العربي-الطبي-لزراعة-القوقعة-2026-20261126-8c2792ac",
-      "title": "المؤتمر العربي الطبي لزراعة القوقعة 2026",
-      "reason": "publication gate source-evidence is not auto-publishable"
-    },
-    {
       "candidate_id": "candidate-riyadh-city-events-music-festival-mdlbeast-soundstorm-20261203-04247702",
       "title": "Music Festival: MDLBEAST SoundStorm",
       "reason": "linked catalog row event-music-festival-mdlbeast-soundstorm was superseded by dedupe"
-    },
-    {
-      "candidate_id": "candidate-saudicon-events-asia-oceania-congress-of-nuclear-medicine-and-biology-aocnmb-2026-20261204-ca7dc5f2",
-      "title": "Asia Oceania Congress of Nuclear Medicine and Biology (AOCNMB) 2026",
-      "reason": "publication gate source-evidence is not auto-publishable"
-    },
-    {
-      "candidate_id": "candidate-saudicon-events-مؤتمر-آسيا-وأوقيانوسيا-للطب-النووي-والبيولوجيا-2026-20261204-770fb90a",
-      "title": "مؤتمر آسيا وأوقيانوسيا للطب النووي والبيولوجيا 2026",
-      "reason": "publication gate source-evidence is not auto-publishable"
-    },
-    {
-      "candidate_id": "candidate-saudicon-events-aocnmb-2026-20261204-9e046be6",
-      "title": "亚洲大洋洲核医学与生物学大会（AOCNMB）2026",
-      "reason": "publication gate source-evidence is not auto-publishable"
     },
     {
       "candidate_id": "candidate-saudicon-events-agrofood-jeddah-2026-20261208-3c1282c0",
@@ -2060,36 +2010,6 @@
       "reason": "publication gate source-evidence is not auto-publishable"
     },
     {
-      "candidate_id": "candidate-saudicon-events-arablab-live-2026-laboratory-analytical-expo-20261214-ce7a68fc",
-      "title": "ARABLAB LIVE 2026 — Laboratory & Analytical Expo",
-      "reason": "publication gate source-evidence is not auto-publishable"
-    },
-    {
-      "candidate_id": "candidate-saudicon-events-معرض-أرابلاب-لايف-للمختبرات-والتحاليل-2026-20261214-d894eea3",
-      "title": "معرض أرابلاب لايف للمختبرات والتحاليل 2026",
-      "reason": "publication gate source-evidence is not auto-publishable"
-    },
-    {
-      "candidate_id": "candidate-saudicon-events-2026-arablab-live-20261214-94324754",
-      "title": "2026年ARABLAB LIVE实验室与分析科学展",
-      "reason": "publication gate source-evidence is not auto-publishable"
-    },
-    {
-      "candidate_id": "candidate-saudicon-events-الجولة-الافتتاحية-المزدوجة-لموسم-فورمولا-إي-2026-2027-20261218-cbc61137",
-      "title": "الجولة الافتتاحية المزدوجة لموسم فورمولا إي 2026-2027",
-      "reason": "publication gate source-evidence is not auto-publishable"
-    },
-    {
-      "candidate_id": "candidate-saudicon-events-2026-2027-formula-e-season-opening-double-header-20261218-0c173164",
-      "title": "2026-2027 Formula E Season Opening Double-Header",
-      "reason": "publication gate source-evidence is not auto-publishable"
-    },
-    {
-      "candidate_id": "candidate-saudicon-events-2026-2026-2027-2026-2027-formula-e-season-opening-double-header-20261218-725e97a3",
-      "title": "2026年电动方程式锦标赛2026-2027赛季揭幕双回合赛（2026-2027 Formula E Season Opening Double-Header）",
-      "reason": "publication gate source-evidence is not auto-publishable"
-    },
-    {
       "candidate_id": "candidate-misk-hub-programs-application-deadline-misk-startup-school-masterclasses-20261231-0ec1b514",
       "title": "Application deadline: Misk Startup School MasterClasses",
       "reason": "not an attendable event: enrolment-announcement"
@@ -2100,29 +2020,24 @@
       "reason": "not an attendable event: enrolment-announcement"
     },
     {
-      "candidate_id": "candidate-saudicon-events-athlete-360-summit-2027-20270110-986bbcd3",
-      "title": "Athlete 360 Summit 2027",
-      "reason": "publication gate source-evidence is not auto-publishable"
-    },
-    {
-      "candidate_id": "candidate-saudicon-events-قمة-أثليت-360-للأداء-الرياضي-والصحة-2027-20270110-6e57ae85",
-      "title": "قمة أثليت 360 للأداء الرياضي والصحة 2027",
-      "reason": "publication gate source-evidence is not auto-publishable"
-    },
-    {
-      "candidate_id": "candidate-saudicon-events-2027-athlete-360-athlete-360-summit-2027-20270110-9910194c",
-      "title": "2027年Athlete 360运动表现与健康峰会（Athlete 360 Summit 2027）",
-      "reason": "publication gate source-evidence is not auto-publishable"
-    },
-    {
-      "candidate_id": "candidate-saudicon-events-automechanika-riyadh-2027-20270111-765e78cc",
-      "title": "Automechanika Riyadh 2027",
-      "reason": "publication gate source-evidence is not auto-publishable"
-    },
-    {
       "candidate_id": "candidate-eye-of-riyadh-events-real-estate-excellence-award-2026-rea-2026-20270126-5e55ea49",
       "title": "Real Estate Excellence Award 2026 (REA 2026)",
       "reason": "unknown category requires review"
+    },
+    {
+      "candidate_id": "candidate-saudicon-events-aero-middle-east-x-sand-fun-2027-20271207-b4e68a90",
+      "title": "AERO Middle East x Sand & Fun 2027",
+      "reason": "publication gate source-evidence is not auto-publishable"
+    },
+    {
+      "candidate_id": "candidate-saudicon-events-معرض-الطيران-العام-2027-20271207-b3bf79e1",
+      "title": "معرض الطيران العام 2027",
+      "reason": "publication gate source-evidence is not auto-publishable"
+    },
+    {
+      "candidate_id": "candidate-saudicon-events-2027-aero-middle-east-x-sand-fun-2027-20271207-c7ae3246",
+      "title": "2027年中东通用航空展暨沙漠欢乐节（AERO Middle East x Sand & Fun 2027）",
+      "reason": "publication gate source-evidence is not auto-publishable"
     }
   ]
 }

@@ -1,18 +1,18 @@
 {
   "schema": "eventlive.harvest-os-status.v1",
-  "generated_at": "2026-11-03T10:23:19.414Z",
+  "generated_at": "2026-11-04T09:55:43.565Z",
   "status": "NEEDS_WORK",
   "operating_rule": "Probe before new sources; sample before full harvest; Raw collection is not publication; discovery-only never auto-publishes.",
   "totals": {
     "sources": 88,
-    "candidates": 349,
-    "matched_candidates": 321,
+    "candidates": 332,
+    "matched_candidates": 317,
     "auto_publish_sources": 15,
     "candidate_only_sources": 12,
     "partnership_required_sources": 5,
     "blocked_or_closed_sources": 0,
     "manual_review_sources": 56,
-    "collection_attempted": 19,
+    "collection_attempted": 29,
     "productive_sources": 15,
     "collector_errors": 7,
     "chronic_collector_errors": 7,
@@ -25,24 +25,23 @@
     "manual_review": 56
   },
   "candidates_by_gate": {
-    "catalog-review": 321,
-    "source-evidence": 24,
+    "catalog-review": 317,
+    "source-evidence": 11,
     "duplicate-review": 2,
     "secondary-verified": 2
   },
   "funnel": {
-    "discovered_this_run": 122,
-    "candidate_queue": 349,
-    "evaluated_for_publish": 349,
+    "discovered_this_run": 129,
+    "candidate_queue": 332,
+    "evaluated_for_publish": 332,
     "linked_existing": 312,
-    "published_new": 7,
-    "blocked": 30,
+    "published_new": 4,
+    "blocked": 16,
     "secondary_promoted": 0,
-    "secondary_still_blocked": 35
+    "secondary_still_blocked": 19
   },
   "blocked_reasons": {
-    "possible duplicate already exists: event-التعريف-بلائحة-نشاط-النقل-التعليمي": 1,
-    "publication gate source-evidence is not auto-publishable": 22,
+    "publication gate source-evidence is not auto-publishable": 9,
     "possible duplicate requires review: exact-title-city-venue-conflict": 1,
     "possible duplicate requires review: exact-title-city-source-conflict": 1,
     "unknown category requires review": 2,
@@ -53,51 +52,51 @@
     {
       "id": "moc-cultural-calendar",
       "note": "collector-error: fetch failed [ETIMEDOUT, ENETUNREACH]; fetch failed [ETIMEDOUT, ENETUNREACH]",
-      "error_streak": 66,
+      "error_streak": 67,
       "kind": "chronic",
-      "attempted_this_run": false
+      "attempted_this_run": true
     },
     {
       "id": "mos-events",
       "note": "collector-error: fetch failed [ETIMEDOUT, ENETUNREACH]; live browser recovery deferred by recent failed probe cooldown",
-      "error_streak": 66,
+      "error_streak": 67,
       "kind": "chronic",
-      "attempted_this_run": false
+      "attempted_this_run": true
     },
     {
       "id": "moc-cultural-subportals",
       "note": "collector-error: fetch failed [UND_ERR_CONNECT_TIMEOUT]; fetch failed [UND_ERR_CONNECT_TIMEOUT]",
-      "error_streak": 66,
+      "error_streak": 67,
       "kind": "chronic",
-      "attempted_this_run": false
+      "attempted_this_run": true
     },
     {
       "id": "saudi-pro-league-fixtures",
       "note": "collector-error: fetch failed [EAI_AGAIN]",
-      "error_streak": 46,
+      "error_streak": 47,
       "kind": "chronic",
-      "attempted_this_run": false
+      "attempted_this_run": true
     },
     {
       "id": "tuwaiq-academy-bootcamps",
       "note": "collector-error: HTTP 403",
-      "error_streak": 43,
+      "error_streak": 44,
       "kind": "chronic",
-      "attempted_this_run": false
+      "attempted_this_run": true
     },
     {
       "id": "qassim-chamber-events",
       "note": "collector-error: HTTP 403; live browser recovery deferred by recent failed probe cooldown",
-      "error_streak": 12,
+      "error_streak": 13,
       "kind": "chronic",
-      "attempted_this_run": false
+      "attempted_this_run": true
     },
     {
       "id": "monshaat-events",
       "note": "collector-error: fetch failed [UND_ERR_CONNECT_TIMEOUT]; fetch failed [UND_ERR_CONNECT_TIMEOUT]",
-      "error_streak": 4,
+      "error_streak": 5,
       "kind": "chronic",
-      "attempted_this_run": false
+      "attempted_this_run": true
     }
   ],
   "sources": [
