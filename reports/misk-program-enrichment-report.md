@@ -1,8 +1,8 @@
 # Misk Program Enrichment Report
 
-- generated_at: 2026-11-04T09:36:17.277Z
-- targets: 18
-- enriched: 18
+- generated_at: 2026-11-05T10:04:49.366Z
+- targets: 19
+- enriched: 19
 - failed: 0
 
 ## Enriched
@@ -25,6 +25,7 @@
 - Virtual Work Experience - Data analysis at stc - goals=1, features=4, requirements=0, registration_deadline=2026-12-15T18:00:00+03:00
 - Virtual Work Experiences - goals=1, features=4, requirements=0, registration_deadline=2026-12-15T18:00:00+03:00
 - IPO Readiness Program - goals=1, features=4, requirements=0, registration_deadline=2026-11-30T18:00:00+03:00
+- Challenge for Change - goals=1, features=4, requirements=3, registration_deadline=2027-04-04T18:00:00+03:00
 
 ## Failed
 

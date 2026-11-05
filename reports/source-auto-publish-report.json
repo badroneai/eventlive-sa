@@ -1,18 +1,18 @@
 {
-  "published_at": "2026-11-04T09:34:13.655Z",
+  "published_at": "2026-11-05T10:02:41.675Z",
   "dry_run": false,
   "include_partner": true,
   "source_candidates": "data/source_candidates.json",
   "events_catalog": "data/events_catalog.json",
-  "candidates_seen": 332,
+  "candidates_seen": 328,
   "totals": {
-    "candidates_seen": 332,
-    "published": 4,
-    "linked_existing": 312,
-    "blocked": 16,
+    "candidates_seen": 328,
+    "published": 5,
+    "linked_existing": 306,
+    "blocked": 17,
     "duplicate_review_alerts": 2,
     "category_fallback_alerts": 0,
-    "reconciled": 316,
+    "reconciled": 311,
     "session_windows_reconciled": 0
   },
   "session_window_changes": [],
@@ -60,24 +60,29 @@
   ],
   "published": [
     {
-      "candidate_id": "candidate-umm-al-qura-events-قسم-الكيمياء-يقدم-دورة-تدريبية-للخريجين-20261103-d0932fc3",
-      "event_id": "event-قسم-الكيمياء-يقدم-دورة-تدريبية-للخريجين",
-      "title": "قسم الكيمياء يقدم دورة تدريبية للخريجين"
+      "candidate_id": "candidate-umm-al-qura-events-بطولة-البادل-smash-up-20261106-9d9cf1ce",
+      "event_id": "event-بطولة-البادل-smash-up",
+      "title": "بطولة البادل SMASH UP"
     },
     {
-      "candidate_id": "candidate-umm-al-qura-events-قسم-الفيزياء-يقدم-دورة-تدريبية-للخريجين-20261103-ab245599",
-      "event_id": "event-قسم-الفيزياء-يقدم-دورة-تدريبية-للخريجين",
-      "title": "قسم الفيزياء يقدم دورة تدريبية للخريجين"
+      "candidate_id": "candidate-jazan-chamber-events-ورشة-عمل-التعريف-بنظام-إمدادات-الطاقة،-ونظام-المواد-البترولية-والبتروكيم-20261112-613d0744",
+      "event_id": "event-ورشة-عمل-التعريف-بنظام-إمدادات-الطاقة،-ونظام-المواد-البترولية-والبتروكيم",
+      "title": "ورشة عمل التعريف بنظام إمدادات الطاقة، ونظام المواد البترولية والبتروكيماوية، ولائحته التنفيذية"
     },
     {
-      "candidate_id": "candidate-umm-al-qura-events-دورة-تدريبية-بعنوان-الاستدامة-في-حياتنا-ودورنا-في-تحقيق-الرؤية-20261104-458f4b19",
-      "event_id": "event-دورة-تدريبية-بعنوان-الاستدامة-في-حياتنا-ودورنا-في-تحقيق-الرؤية",
-      "title": "دورة تدريبية بعنوان الاستدامة في حياتنا ودورنا في تحقيق الرؤية"
+      "candidate_id": "candidate-ithra-events-the-birds-postcard-studio-20261122-e33624c1",
+      "event_id": "event-the-birds-postcard-studio",
+      "title": "The Birds Postcard Studio"
     },
     {
-      "candidate_id": "candidate-umm-al-qura-events-لقاء-بعنوان-الثقافة-الغامضة-20261104-b715729f",
-      "event_id": "event-لقاء-بعنوان-الثقافة-الغامضة",
-      "title": "لقاء بعنوان الثقافة الغامضة"
+      "candidate_id": "candidate-visit-saudi-seasons-pfl-martial-arts-championship-in-al-khobar-20261211-f398f764",
+      "event_id": "event-pfl-martial-arts-championship-in-al-khobar",
+      "title": "PFL Martial Arts Championship in Al Khobar"
+    },
+    {
+      "candidate_id": "candidate-misk-hub-programs-challenge-for-change-20270424-79d87618",
+      "event_id": "event-challenge-for-change",
+      "title": "Challenge for Change"
     }
   ],
   "linked_existing": [
@@ -610,12 +615,6 @@
       "reason": "already linked to catalog event"
     },
     {
-      "candidate_id": "candidate-saudi-water-authority-events-world-conference-on-desalination-and-water-reuse-20261101-a25a65b2",
-      "event_id": "event-world-conference-on-desalination-and-water-reuse",
-      "title": "World Conference on Desalination and Water Reuse",
-      "reason": "already linked to catalog event"
-    },
-    {
       "candidate_id": "candidate-monshaat-events-لقاءات-شهر-نوفمبر-2026م-20261101-cfc0a691",
       "event_id": "event-لقاءات-شهر-نوفمبر-2026م",
       "title": "لقاءات شهر نوفمبر 2026م",
@@ -625,12 +624,6 @@
       "candidate_id": "candidate-monshaat-events-لقاءات-شهر-نوفمبر-المغلقة-2026م-20261101-78719200",
       "event_id": "event-لقاءات-شهر-نوفمبر-المغلقة-2026م",
       "title": "لقاءات شهر نوفمبر (المغلقة) 2026م",
-      "reason": "already linked to catalog event"
-    },
-    {
-      "candidate_id": "candidate-hayy-jameel-events-hayy-cinema-november-2026-20261101-73243d6e",
-      "event_id": "event-hayy-cinema-november-2026",
-      "title": "Hayy Cinema | November 2026",
       "reason": "already linked to catalog event"
     },
     {
@@ -670,15 +663,21 @@
       "reason": "already linked to catalog event"
     },
     {
-      "candidate_id": "candidate-umm-al-qura-events-برنامج-بعنوان-أثر-البحثي-20261103-c9503617",
-      "event_id": "event-برنامج-بعنوان-أثر-البحثي",
-      "title": "برنامج بعنوان «أثر» البحثي!",
-      "reason": "already linked to catalog event"
-    },
-    {
       "candidate_id": "candidate-ithra-events-childrens-art-club-20261103-ce77ebe2",
       "event_id": "event-childrens-art-club",
       "title": "Children's Art Club",
+      "reason": "already linked to catalog event"
+    },
+    {
+      "candidate_id": "candidate-umm-al-qura-events-قسم-الكيمياء-يقدم-دورة-تدريبية-للخريجين-20261103-d0932fc3",
+      "event_id": "event-قسم-الكيمياء-يقدم-دورة-تدريبية-للخريجين",
+      "title": "قسم الكيمياء يقدم دورة تدريبية للخريجين",
+      "reason": "already linked to catalog event"
+    },
+    {
+      "candidate_id": "candidate-umm-al-qura-events-قسم-الفيزياء-يقدم-دورة-تدريبية-للخريجين-20261103-ab245599",
+      "event_id": "event-قسم-الفيزياء-يقدم-دورة-تدريبية-للخريجين",
+      "title": "قسم الفيزياء يقدم دورة تدريبية للخريجين",
       "reason": "already linked to catalog event"
     },
     {
@@ -688,21 +687,15 @@
       "reason": "already linked to catalog event"
     },
     {
-      "candidate_id": "candidate-umm-al-qura-events-عمل-البحث-والتطوير-والابتكار-في-سياق-الحج-والعمرة-والحرمين-الشريفين-20261104-afc1a0d9",
-      "event_id": "event-عمل-البحث-والتطوير-والابتكار-في-سياق-الحج-والعمرة-والحرمين-الشريفين",
-      "title": "عمل البحث والتطوير والابتكار في سياق الحج والعمرة والحرمين الشريفين",
+      "candidate_id": "candidate-hayy-jameel-events-hayy-cinema-november-2026-20261104-73243d6e",
+      "event_id": "event-hayy-cinema-november-2026",
+      "title": "Hayy Cinema | November 2026",
       "reason": "already linked to catalog event"
     },
     {
       "candidate_id": "candidate-visit-saudi-calendar-uci-urban-cycling-world-championships-20261104-4fa77aa9",
       "event_id": "event-uci-urban-cycling-world-championships",
       "title": "UCI URBAN CYCLING WORLD CHAMPIONSHIPS",
-      "reason": "already linked to catalog event"
-    },
-    {
-      "candidate_id": "candidate-umm-al-qura-events-خريف-الموهبة-جلسة-خريفية-للموهوبين-20261104-bb8b3846",
-      "event_id": "event-خريف-الموهبة-جلسة-خريفية-للموهوبين",
-      "title": "خريف الموهبة: جلسة خريفية للموهوبين",
       "reason": "already linked to catalog event"
     },
     {
@@ -715,24 +708,6 @@
       "candidate_id": "candidate-ithra-events-childrens-book-club-20261104-944c464f",
       "event_id": "event-childrens-book-club",
       "title": "Children's Book Club",
-      "reason": "already linked to catalog event"
-    },
-    {
-      "candidate_id": "candidate-umm-al-qura-events-الذكاء-العاطفي-في-الحياة-الجامعية-20261104-0c2db350",
-      "event_id": "event-الذكاء-العاطفي-في-الحياة-الجامعية",
-      "title": "الذكاء العاطفي في الحياة الجامعية",
-      "reason": "already linked to catalog event"
-    },
-    {
-      "candidate_id": "candidate-umm-al-qura-events-مسابقة-من-سيربح-المعلومة-الرياضية؟-20261104-ffb96fab",
-      "event_id": "event-مسابقة-من-سيربح-المعلومة-الرياضية؟",
-      "title": "مسابقة من سيربح المعلومة الرياضية؟",
-      "reason": "already linked to catalog event"
-    },
-    {
-      "candidate_id": "candidate-umm-al-qura-events-لقاء-بعنوان-استخدام-الدواء-بمسؤولية-20261104-40b6da7b",
-      "event_id": "event-لقاء-بعنوان-استخدام-الدواء-بمسؤولية",
-      "title": "لقاء بعنوان استخدام الدواء بمسؤولية",
       "reason": "already linked to catalog event"
     },
     {
@@ -757,12 +732,6 @@
       "candidate_id": "candidate-hayy-jameel-events-hayy-explorers-november-programmes-20261105-7a475a93",
       "event_id": "event-hayy-explorers-november-programmes",
       "title": "Hayy Explorers | November Programmes",
-      "reason": "already linked to catalog event"
-    },
-    {
-      "candidate_id": "candidate-umm-al-qura-events-فعالية-تقاليد-كشفية-6-أنواع-العقد-والربطات-20261105-aa845989",
-      "event_id": "event-فعالية-تقاليد-كشفية-6-أنواع-العقد-والربطات",
-      "title": "فعالية تقاليد كشفية 6: أنواع العقد والربطات",
       "reason": "already linked to catalog event"
     },
     {
@@ -1955,6 +1924,11 @@
     }
   ],
   "blocked": [
+    {
+      "candidate_id": "candidate-umm-al-qura-events-حماية-الحسابات-وكلمات-المرور-وإدارة-الصلاحيات-20261105-7d765f27",
+      "title": "حماية الحسابات وكلمات المرور وإدارة الصلاحيات",
+      "reason": "candidate already ended"
+    },
     {
       "candidate_id": "candidate-saudicon-events-accounting-business-expo-saudi-arabia-2026-20261109-7b13265f",
       "title": "Accounting & Business Expo Saudi Arabia 2026",

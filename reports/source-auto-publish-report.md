@@ -1,16 +1,17 @@
 # EventLive Source Auto Publish Report
 
-- published_at: 2026-11-04T09:34:13.655Z
+- published_at: 2026-11-05T10:02:41.675Z
 - dry_run: false
 - include_partner: true
-- candidates_seen: 332
-- published_new: 4
-- linked_existing: 312
-- blocked_remaining: 16
+- candidates_seen: 328
+- published_new: 5
+- linked_existing: 306
+- blocked_remaining: 17
 - duplicate_review_alerts: 2
 
 ## Blocked summary
 
+- candidate already ended: 1
 - publication gate source-evidence is not auto-publishable: 9
 - possible duplicate requires review: exact-title-city-venue-conflict: 1
 - possible duplicate requires review: exact-title-city-source-conflict: 1
@@ -20,10 +21,11 @@
 
 | Candidate | Status | Catalog event | Reason |
 |---|---|---|---|
-| candidate-umm-al-qura-events-قسم-الكيمياء-يقدم-دورة-تدريبية-للخريجين-20261103-d0932fc3 | published | event-قسم-الكيمياء-يقدم-دورة-تدريبية-للخريجين | قسم الكيمياء يقدم دورة تدريبية للخريجين |
-| candidate-umm-al-qura-events-قسم-الفيزياء-يقدم-دورة-تدريبية-للخريجين-20261103-ab245599 | published | event-قسم-الفيزياء-يقدم-دورة-تدريبية-للخريجين | قسم الفيزياء يقدم دورة تدريبية للخريجين |
-| candidate-umm-al-qura-events-دورة-تدريبية-بعنوان-الاستدامة-في-حياتنا-ودورنا-في-تحقيق-الرؤية-20261104-458f4b19 | published | event-دورة-تدريبية-بعنوان-الاستدامة-في-حياتنا-ودورنا-في-تحقيق-الرؤية | دورة تدريبية بعنوان الاستدامة في حياتنا ودورنا في تحقيق الرؤية |
-| candidate-umm-al-qura-events-لقاء-بعنوان-الثقافة-الغامضة-20261104-b715729f | published | event-لقاء-بعنوان-الثقافة-الغامضة | لقاء بعنوان الثقافة الغامضة |
+| candidate-umm-al-qura-events-بطولة-البادل-smash-up-20261106-9d9cf1ce | published | event-بطولة-البادل-smash-up | بطولة البادل SMASH UP |
+| candidate-jazan-chamber-events-ورشة-عمل-التعريف-بنظام-إمدادات-الطاقة،-ونظام-المواد-البترولية-والبتروكيم-20261112-613d0744 | published | event-ورشة-عمل-التعريف-بنظام-إمدادات-الطاقة،-ونظام-المواد-البترولية-والبتروكيم | ورشة عمل التعريف بنظام إمدادات الطاقة، ونظام المواد البترولية والبتروكيماوية، ولائحته التنفيذية |
+| candidate-ithra-events-the-birds-postcard-studio-20261122-e33624c1 | published | event-the-birds-postcard-studio | The Birds Postcard Studio |
+| candidate-visit-saudi-seasons-pfl-martial-arts-championship-in-al-khobar-20261211-f398f764 | published | event-pfl-martial-arts-championship-in-al-khobar | PFL Martial Arts Championship in Al Khobar |
+| candidate-misk-hub-programs-challenge-for-change-20270424-79d87618 | published | event-challenge-for-change | Challenge for Change |
 | candidate-moc-cultural-subportals-skill-development-initiative-20210714-10f7dc2c | linked-existing | event-skill-development-initiative | already linked to catalog event |
 | candidate-moc-cultural-subportals-sitar-20220921-cda2e068 | linked-existing | event-sitar | already linked to catalog event |
 | candidate-moc-cultural-subportals-design-for-good-initiative-20241205-3788803e | linked-existing | event-design-for-good-initiative | already linked to catalog event |
@@ -112,32 +114,26 @@
 | candidate-visit-saudi-seasons-blvd-world-at-riyadh-season-20261030-23c3c3a5 | linked-existing | event-blvd-world-at-riyadh-season | already linked to catalog event |
 | candidate-visit-saudi-calendar-pdf-نسيم-الخبر-20261101-4a38d19e | linked-existing | event-نسيم-الخبر | already linked to catalog event |
 | candidate-visit-saudi-calendar-pdf-سوالف-الحي-20261101-4a38d19e | linked-existing | event-سوالف-الحي | already linked to catalog event |
-| candidate-saudi-water-authority-events-world-conference-on-desalination-and-water-reuse-20261101-a25a65b2 | linked-existing | event-world-conference-on-desalination-and-water-reuse | already linked to catalog event |
 | candidate-monshaat-events-لقاءات-شهر-نوفمبر-2026م-20261101-cfc0a691 | linked-existing | event-لقاءات-شهر-نوفمبر-2026م | already linked to catalog event |
 | candidate-monshaat-events-لقاءات-شهر-نوفمبر-المغلقة-2026م-20261101-78719200 | linked-existing | event-لقاءات-شهر-نوفمبر-المغلقة-2026م | already linked to catalog event |
-| candidate-hayy-jameel-events-hayy-cinema-november-2026-20261101-73243d6e | linked-existing | event-hayy-cinema-november-2026 | already linked to catalog event |
 | candidate-umm-al-qura-events-شهادة-محترف-إدارة-المشاريع-pmp-20261101-dfc818b0 | linked-existing | event-برنامج-إدارة-المشاريع-الاحترافية-pmp | already linked to catalog event |
 | candidate-visit-saudi-calendar-pdf-enc-2026-20261102-4a38d19e | linked-existing | event-esports-nations-cup | already linked to catalog event |
 | candidate-riyadh-city-events-saudi-build-20261102-5065a5f6 | linked-existing | event-saudi-build | already linked to catalog event |
 | candidate-umm-al-qura-events-قسم-الرياضيات-يفعل-اليوم-العالمي-للإحصاء-2026-20261102-77508e08 | linked-existing | event-قسم-الرياضيات-يفعل-اليوم-العالمي-للإحصاء-2026 | already linked to catalog event |
 | candidate-riyadh-city-events-esports-nations-cup-20261102-62c39964 | linked-existing | event-esports-nations-cup | already linked to catalog event |
 | candidate-umm-al-qura-events-مهارات-تقديم-المشروع-العلمي-20261102-62d9fc3b | linked-existing | event-مهارات-تقديم-المشروع-العلمي | already linked to catalog event |
-| candidate-umm-al-qura-events-برنامج-بعنوان-أثر-البحثي-20261103-c9503617 | linked-existing | event-برنامج-بعنوان-أثر-البحثي | already linked to catalog event |
 | candidate-ithra-events-childrens-art-club-20261103-ce77ebe2 | linked-existing | event-childrens-art-club | already linked to catalog event |
+| candidate-umm-al-qura-events-قسم-الكيمياء-يقدم-دورة-تدريبية-للخريجين-20261103-d0932fc3 | linked-existing | event-قسم-الكيمياء-يقدم-دورة-تدريبية-للخريجين | already linked to catalog event |
+| candidate-umm-al-qura-events-قسم-الفيزياء-يقدم-دورة-تدريبية-للخريجين-20261103-ab245599 | linked-existing | event-قسم-الفيزياء-يقدم-دورة-تدريبية-للخريجين | already linked to catalog event |
 | candidate-hayy-jameel-events-jameel-library-november-community-programmes-20261104-18d33419 | linked-existing | event-jameel-library-november-community-programmes | already linked to catalog event |
-| candidate-umm-al-qura-events-عمل-البحث-والتطوير-والابتكار-في-سياق-الحج-والعمرة-والحرمين-الشريفين-20261104-afc1a0d9 | linked-existing | event-عمل-البحث-والتطوير-والابتكار-في-سياق-الحج-والعمرة-والحرمين-الشريفين | already linked to catalog event |
+| candidate-hayy-jameel-events-hayy-cinema-november-2026-20261104-73243d6e | linked-existing | event-hayy-cinema-november-2026 | already linked to catalog event |
 | candidate-visit-saudi-calendar-uci-urban-cycling-world-championships-20261104-4fa77aa9 | linked-existing | event-uci-urban-cycling-world-championships | already linked to catalog event |
-| candidate-umm-al-qura-events-خريف-الموهبة-جلسة-خريفية-للموهوبين-20261104-bb8b3846 | linked-existing | event-خريف-الموهبة-جلسة-خريفية-للموهوبين | already linked to catalog event |
 | candidate-ithra-events-arabic-children-book-club-7-9-20261104-810c285f | linked-existing | event-arabic-children-book-club-7-9 | already linked to catalog event |
 | candidate-ithra-events-childrens-book-club-20261104-944c464f | linked-existing | event-childrens-book-club | already linked to catalog event |
-| candidate-umm-al-qura-events-الذكاء-العاطفي-في-الحياة-الجامعية-20261104-0c2db350 | linked-existing | event-الذكاء-العاطفي-في-الحياة-الجامعية | already linked to catalog event |
-| candidate-umm-al-qura-events-مسابقة-من-سيربح-المعلومة-الرياضية؟-20261104-ffb96fab | linked-existing | event-مسابقة-من-سيربح-المعلومة-الرياضية؟ | already linked to catalog event |
-| candidate-umm-al-qura-events-لقاء-بعنوان-استخدام-الدواء-بمسؤولية-20261104-40b6da7b | linked-existing | event-لقاء-بعنوان-استخدام-الدواء-بمسؤولية | already linked to catalog event |
 | candidate-mdlbeast-events-unstable-20261105-5647df2e | linked-existing | event-unstable | already linked to catalog event |
 | candidate-dhahran-expo-calendar-world-firefighters-challenge-20261105-18d15b29 | linked-existing | event-world-firefighters-challenge | already linked to catalog event |
 | candidate-hayy-jameel-events-hayy-markets-azka-farmers-market-pomegranates-edition-20261105-ee290c41 | linked-existing | event-hayy-markets-azka-farmers-market-pomegranates-edition | already linked to catalog event |
 | candidate-hayy-jameel-events-hayy-explorers-november-programmes-20261105-7a475a93 | linked-existing | event-hayy-explorers-november-programmes | already linked to catalog event |
-| candidate-umm-al-qura-events-فعالية-تقاليد-كشفية-6-أنواع-العقد-والربطات-20261105-aa845989 | linked-existing | event-فعالية-تقاليد-كشفية-6-أنواع-العقد-والربطات | already linked to catalog event |
 | candidate-umm-al-qura-events-زيارة-ميدانية-بعنوان-خطى-نحو-العافية-20261105-82d0a0e3 | linked-existing | event-زيارة-ميدانية-بعنوان-خطى-نحو-العافية | already linked to catalog event |
 | candidate-mdlbeast-events-beast-house-20261105-83049a2a | linked-existing | event-beast-house | already linked to catalog event |
 | candidate-visit-saudi-calendar-pdf-وقف-عرض-نمر-الكوميدي-المباشر-في-الرياض-20261106-4a38d19e | linked-existing | event-wagef-nemr-live-comedy-show-in-riyadh | already linked to catalog event |
@@ -336,6 +332,7 @@
 | candidate-qassim-university-events-استضافة-مؤتمر-ieee-mecom-2027-20271101-510cb4b1 | linked-existing | event-استضافة-مؤتمر-ieee-mecom-2027 | already linked to catalog event |
 | candidate-umm-al-qura-events-الترشح-للدبلوم-المتوسط-في-التحول-الرقمي-في-جازان-بالتعاون-مع-أكاديمية-غر-20271201-5cace3ad | linked-existing | event-دبلوم-التحول-الرقمي | already linked to catalog event |
 | candidate-saudi-space-agency-events-space-debris-conference-2028-20280215-03719f44 | linked-existing | event-space-debris-conference-2028 | already linked to catalog event |
+| candidate-umm-al-qura-events-حماية-الحسابات-وكلمات-المرور-وإدارة-الصلاحيات-20261105-7d765f27 | blocked | - | candidate already ended |
 | candidate-saudicon-events-accounting-business-expo-saudi-arabia-2026-20261109-7b13265f | blocked | - | publication gate source-evidence is not auto-publishable |
 | candidate-saudicon-events-معرض-المحاسبة-والأعمال-السعودية-2026-20261109-eb1d753b | blocked | - | publication gate source-evidence is not auto-publishable |
 | candidate-saudicon-events-2026-accounting-business-expo-saudi-arabia-2026-20261109-257debc0 | blocked | - | publication gate source-evidence is not auto-publishable |

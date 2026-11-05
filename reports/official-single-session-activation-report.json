@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-04T09:40:16.484Z",
+  "generated_at": "2026-11-05T10:07:57.925Z",
   "max_duration_hours": 8,
   "totals": {
     "activated": 50,
@@ -525,12 +525,6 @@
       "duration_hours": 505.5
     },
     {
-      "id": "event-unstable",
-      "title": "Unstable",
-      "source_label": "MDLBEAST Events",
-      "duration_hours": 24
-    },
-    {
       "id": "event-breast-cancer-awareness-hub",
       "title": "Breast Cancer Awareness Hub",
       "source_label": "Saudi Universities and Technical Colleges",
@@ -557,6 +551,12 @@
     {
       "id": "event-a-thousand-and-one",
       "title": "MDLBEAST | Home of Soundstorm, XP & Music in the Middle East",
+      "source_label": "MDLBEAST Events",
+      "duration_hours": 24
+    },
+    {
+      "id": "event-unstable",
+      "title": "Unstable",
       "source_label": "MDLBEAST Events",
       "duration_hours": 24
     },

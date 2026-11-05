@@ -1,6 +1,6 @@
 # Strategic Platform Source Radar
 
-Generated at: 2026-11-03T09:42:31.351Z
+Generated at: 2026-11-05T09:36:22.354Z
 
 Policy: evidence refresh, API-surface mapping, and source strategy only. This radar does not auto-publish catalog events.
 
@@ -51,8 +51,8 @@ Policy: evidence refresh, API-surface mapping, and source strategy only. This ra
 - Project use: Keep in the 6-hour source ring; Arabic and English API payloads are reachable and useful for tourism-facing event discovery.
 - Title: تقويم السعودية | تابع العطلات والفعاليات المميزة - الموقع الرسمي للسياحة السعودية
 - Hint URLs: https://www.googletagmanager.com, https://cdn.consentmanager.net, https://delivery.consentmanager.net, https://www.googletagmanager.com/gtm.js?id=, https://www.clarity.ms/tag/, https://www.visitsaudi.com/images/SoundStorm-1.2e16d0ba.fill-1200x630.jpg, https://www.visitsaudi.com/ar/saudi-calendar, https://www.visitsaudi.com/ar
-  - API 200 https://www.visitsaudi.com/bin/api/v3/events?locale=ar: 18 items; معرض اللغة العربية 28, «استمرارية 26» برنامج الفنانين الناشئين في فنون الوسائط الجديدة بمركز الدرعية لفنون المستقبل, مزاد نادي الصقور السعودي, بطولة أرامكو السعودية للفورمولا 4, موسم سباقات الرياض
-  - API 200 https://www.visitsaudi.com/bin/api/v3/events?locale=en: 18 items; Arabic Language Exhibition 28, Continuum '26 Diriyah Art Futures Emerging New Media Artists Programme, Saudi Falcons Club Auction, Aramco F4 Saudi Arabian Championship, Riyadh Racing Season
+  - API 200 https://www.visitsaudi.com/bin/api/v3/events?locale=ar: 19 items; معرض اللغة العربية 28, «استمرارية 26» برنامج الفنانين الناشئين في فنون الوسائط الجديدة بمركز الدرعية لفنون المستقبل, مزاد نادي الصقور السعودي, بطولة أرامكو السعودية للفورمولا 4, موسم سباقات الرياض
+  - API 200 https://www.visitsaudi.com/bin/api/v3/events?locale=en: 19 items; Arabic Language Exhibition 28, Continuum '26 Diriyah Art Futures Emerging New Media Artists Programme, Saudi Falcons Club Auction, Aramco F4 Saudi Arabian Championship, Riyadh Racing Season
 
 ### webook Explore
 
@@ -61,7 +61,7 @@ Policy: evidence refresh, API-surface mapping, and source strategy only. This ra
 - Classification: protected (200, fetch)
 - Project use: Use for lead discovery, ticket-link corroboration, and duplicate checks; require official organizer or authority confirmation before promotion.
 - Title: -
-- Hint URLs: https://wbk-assets.webook.com, https://api.webook.com, https://webook.cmscloud.ai, https://geolocation.webook.com, https://images.cmscloud.ai, https://apps.apple.com/sa/app/webook-com-fun-things-to-do/id6468667896, https://play.google.com/store/apps/details?id=com.webook.android, https://wbk-assets.webook.com/8.21/assets/index-DJSY4CjI.js
+- Hint URLs: https://wbk-assets.webook.com, https://api.webook.com, https://webook.cmscloud.ai, https://geolocation.webook.com, https://images.cmscloud.ai, https://apps.apple.com/sa/app/webook-com-fun-things-to-do/id6468667896, https://play.google.com/store/apps/details?id=com.webook.android, https://wbk-assets.webook.com/8.3/assets/index-BxZQh-Ds.js
 
 ### Enjoy Saudi
 

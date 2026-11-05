@@ -1,9 +1,9 @@
 {
-  "generated_at": "2026-11-04T09:36:17.277Z",
+  "generated_at": "2026-11-05T10:04:49.366Z",
   "catalog": "data/events_catalog.json",
   "totals": {
-    "targets": 18,
-    "enriched": 18,
+    "targets": 19,
+    "enriched": 19,
     "failed": 0
   },
   "enriched": [
@@ -150,6 +150,14 @@
       "features": 4,
       "requirements": 0,
       "registration_deadline": "2026-11-30T18:00:00+03:00"
+    },
+    {
+      "id": "event-challenge-for-change",
+      "title": "Challenge for Change",
+      "goals": 1,
+      "features": 4,
+      "requirements": 3,
+      "registration_deadline": "2027-04-04T18:00:00+03:00"
     }
   ],
   "failed": []
