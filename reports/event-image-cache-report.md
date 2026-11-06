@@ -1,20 +1,20 @@
 # EventLive Event Image Cache Report
 
-- generated_at: 2026-11-05T10:09:12.573Z
+- generated_at: 2026-11-06T09:47:11.041Z
 - events_file: dist/events.json
 - manifest: data/event_image_cache_manifest.json
 - image_dir: dist/assets/event-images
 - targets: 500
-- cached_total: 914
-- fetched: 12
-- reused: 482
+- cached_total: 916
+- fetched: 14
+- reused: 480
 - rejected_removed: 0
-- missing_removed: 10
+- missing_removed: 12
 - failed: 6
-- skipped_recent_failures: 0
+- skipped_recent_failures: 6
 - remembered_failures: 34
 - requires_rebuild: true
-- rebuild_reasons: fetched:12, missing-removed:10, new-failures:6
+- rebuild_reasons: fetched:14, missing-removed:12
 - concurrency: 8
 
 ## Failed
@@ -23,5 +23,5 @@
 - https://s7g10.scene7.com/is/image/rcu/sunset-stillness-meditation-sound-immersion:landscape-16x9?$Responsive$&fit=stretch&fmt=webp&wid=1920 — access-denied — HTTP 403 — retry after 2026-11-06T10:09:12.573Z
 - https://s7g10.scene7.com/is/image/rcu/leonid-meteor-shower-at-jabal-ikmah:landscape-16x9?$Responsive$&fit=stretch&fmt=webp&wid=1920 — access-denied — HTTP 403 — retry after 2026-11-06T10:09:12.573Z
 - https://s7g10.scene7.com/is/image/rcu/fei2:landscape-16x9?$Responsive$&fit=stretch&fmt=webp&wid=1920 — access-denied — HTTP 403 — retry after 2026-11-06T10:09:12.573Z
-- https://cdn.rfecc.sa/wp-content/uploads/mec/qr_898ea2449274454e42895b52b18c6f68.png — access-denied — HTTP 403 — retry after 2026-11-06T10:09:12.573Z
 - https://api.riyadh.sa/sites/default/files/styles/medium/public/2026-07/er%20%2859%29.jpg?itok=a33APdGm — source-returned-html — not-image text/html; charset=utf-8 — retry after 2026-11-06T10:09:12.573Z
+- https://cdn.rfecc.sa/wp-content/uploads/mec/qr_898ea2449274454e42895b52b18c6f68.png — access-denied — HTTP 403 — retry after 2026-11-06T10:09:12.573Z

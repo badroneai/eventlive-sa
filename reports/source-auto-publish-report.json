@@ -1,18 +1,18 @@
 {
-  "published_at": "2026-11-05T10:02:41.675Z",
+  "published_at": "2026-11-06T09:38:58.209Z",
   "dry_run": false,
   "include_partner": true,
   "source_candidates": "data/source_candidates.json",
   "events_catalog": "data/events_catalog.json",
-  "candidates_seen": 328,
+  "candidates_seen": 330,
   "totals": {
-    "candidates_seen": 328,
-    "published": 5,
-    "linked_existing": 306,
-    "blocked": 17,
+    "candidates_seen": 330,
+    "published": 9,
+    "linked_existing": 305,
+    "blocked": 16,
     "duplicate_review_alerts": 2,
     "category_fallback_alerts": 0,
-    "reconciled": 311,
+    "reconciled": 314,
     "session_windows_reconciled": 0
   },
   "session_window_changes": [],
@@ -60,29 +60,49 @@
   ],
   "published": [
     {
-      "candidate_id": "candidate-umm-al-qura-events-بطولة-البادل-smash-up-20261106-9d9cf1ce",
-      "event_id": "event-بطولة-البادل-smash-up",
-      "title": "بطولة البادل SMASH UP"
+      "candidate_id": "candidate-umm-al-qura-events-ورشة-عمل-بعنوان-فن-الخط-العربي-20261108-b30fe12b",
+      "event_id": "event-ورشة-عمل-بعنوان-فن-الخط-العربي",
+      "title": "ورشة عمل بعنوان فن الخط العربي"
     },
     {
-      "candidate_id": "candidate-jazan-chamber-events-ورشة-عمل-التعريف-بنظام-إمدادات-الطاقة،-ونظام-المواد-البترولية-والبتروكيم-20261112-613d0744",
-      "event_id": "event-ورشة-عمل-التعريف-بنظام-إمدادات-الطاقة،-ونظام-المواد-البترولية-والبتروكيم",
-      "title": "ورشة عمل التعريف بنظام إمدادات الطاقة، ونظام المواد البترولية والبتروكيماوية، ولائحته التنفيذية"
+      "candidate_id": "candidate-umm-al-qura-events-ورشة-عمل-بعنوان-أساسيات-كرة-السلة-20261108-ea5c0703",
+      "event_id": "event-ورشة-عمل-بعنوان-أساسيات-كرة-السلة",
+      "title": "ورشة عمل بعنوان أساسيات كرة السلة"
     },
     {
-      "candidate_id": "candidate-ithra-events-the-birds-postcard-studio-20261122-e33624c1",
-      "event_id": "event-the-birds-postcard-studio",
-      "title": "The Birds Postcard Studio"
+      "candidate_id": "candidate-umm-al-qura-events-فعالية-بعنوان-لون-حياتك-20261111-94133b2a",
+      "event_id": "event-فعالية-بعنوان-لون-حياتك",
+      "title": "فعالية بعنوان لون حياتك"
     },
     {
-      "candidate_id": "candidate-visit-saudi-seasons-pfl-martial-arts-championship-in-al-khobar-20261211-f398f764",
-      "event_id": "event-pfl-martial-arts-championship-in-al-khobar",
-      "title": "PFL Martial Arts Championship in Al Khobar"
+      "candidate_id": "candidate-umm-al-qura-events-ورشة-عمل-بعنوان-الطباعة-باستخدام-القوالب-20261112-0fcc42fd",
+      "event_id": "event-ورشة-عمل-بعنوان-الطباعة-باستخدام-القوالب",
+      "title": "ورشة عمل بعنوان الطباعة باستخدام القوالب"
     },
     {
-      "candidate_id": "candidate-misk-hub-programs-challenge-for-change-20270424-79d87618",
-      "event_id": "event-challenge-for-change",
-      "title": "Challenge for Change"
+      "candidate_id": "candidate-ithra-events-your-design-your-cup-holder-20261112-c5ab2820",
+      "event_id": "event-your-design-your-cup-holder",
+      "title": "Your Design, Your Cup Holder"
+    },
+    {
+      "candidate_id": "candidate-visit-saudi-seasons-ithra-winter-at-dhahran-expo-20261112-e6908ee1",
+      "event_id": "event-ithra-winter-at-dhahran-expo",
+      "title": "Ithra Winter at Dhahran Expo!"
+    },
+    {
+      "candidate_id": "candidate-visit-saudi-seasons-khobar-season-opening-presented-by-ithra-20261113-833b5645",
+      "event_id": "event-khobar-season-opening",
+      "title": "Khobar Season Opening"
+    },
+    {
+      "candidate_id": "candidate-ithra-events-ithra-library-society-does-the-novel-mirror-reality-or-craft-a-new-one-20261118-7f0aaba0",
+      "event_id": "event-ithra-library-society-does-the-novel-mirror-reality-or-craft-a-new-one",
+      "title": "Ithra Library Society - Does the Novel Mirror Reality or Craft A New One?"
+    },
+    {
+      "candidate_id": "candidate-ithra-events-sabtiyah-tabaqat-podcast-20261121-c6732dae",
+      "event_id": "event-sabtiyah-tabaqat-podcast",
+      "title": "Sabtiyah - Tabaqat podcast"
     }
   ],
   "linked_existing": [
@@ -453,12 +473,6 @@
       "reason": "already linked to catalog event"
     },
     {
-      "candidate_id": "candidate-tuwaiq-academy-bootcamps-معسكر-هندسة-الحوسبة-السحابية-المتقدمة-باستخدام-google-cloud-20260920-c1ed5d59",
-      "event_id": "event-معسكر-هندسة-الحوسبة-السحابية-المتقدمة-باستخدام-google-cloud",
-      "title": "معسكر هندسة الحوسبة السحابية المتقدمة باستخدام Google Cloud",
-      "reason": "already linked to catalog event"
-    },
-    {
       "candidate_id": "candidate-experience-alula-events-qissa-bi-qissa-swap-a-story-20260924-a2d33a9a",
       "event_id": "event-qissa-bi-qissa-swap-a-story",
       "title": "Qissa bi Qissa (Swap a Story)",
@@ -504,12 +518,6 @@
       "candidate_id": "candidate-tuwaiq-academy-bootcamps-معسكر-تطوير-حلول-الذكاء-الاصطناعي-20261004-dbd53610",
       "event_id": "event-معسكر-تطوير-حلول-الذكاء-الاصطناعي",
       "title": "معسكر تطوير حلول الذكاء الاصطناعي",
-      "reason": "already linked to catalog event"
-    },
-    {
-      "candidate_id": "candidate-tuwaiq-academy-bootcamps-معسكر-الدرونز-عالية-الأداء-20261004-c428ead9",
-      "event_id": "event-معسكر-الدرونز-عالية-الأداء",
-      "title": "معسكر الدرونز عالية الأداء",
       "reason": "already linked to catalog event"
     },
     {
@@ -639,12 +647,6 @@
       "reason": "already linked to catalog event"
     },
     {
-      "candidate_id": "candidate-riyadh-city-events-saudi-build-20261102-5065a5f6",
-      "event_id": "event-saudi-build",
-      "title": "Saudi Build",
-      "reason": "already linked to catalog event"
-    },
-    {
       "candidate_id": "candidate-umm-al-qura-events-قسم-الرياضيات-يفعل-اليوم-العالمي-للإحصاء-2026-20261102-77508e08",
       "event_id": "event-قسم-الرياضيات-يفعل-اليوم-العالمي-للإحصاء-2026",
       "title": "قسم الرياضيات يفعل اليوم العالمي للإحصاء 2026",
@@ -660,12 +662,6 @@
       "candidate_id": "candidate-umm-al-qura-events-مهارات-تقديم-المشروع-العلمي-20261102-62d9fc3b",
       "event_id": "event-مهارات-تقديم-المشروع-العلمي",
       "title": "مهارات تقديم المشروع العلمي",
-      "reason": "already linked to catalog event"
-    },
-    {
-      "candidate_id": "candidate-ithra-events-childrens-art-club-20261103-ce77ebe2",
-      "event_id": "event-childrens-art-club",
-      "title": "Children's Art Club",
       "reason": "already linked to catalog event"
     },
     {
@@ -711,12 +707,6 @@
       "reason": "already linked to catalog event"
     },
     {
-      "candidate_id": "candidate-mdlbeast-events-unstable-20261105-5647df2e",
-      "event_id": "event-unstable",
-      "title": "Unstable",
-      "reason": "already linked to catalog event"
-    },
-    {
       "candidate_id": "candidate-dhahran-expo-calendar-world-firefighters-challenge-20261105-18d15b29",
       "event_id": "event-world-firefighters-challenge",
       "title": "World Firefighters Challenge",
@@ -732,18 +722,6 @@
       "candidate_id": "candidate-hayy-jameel-events-hayy-explorers-november-programmes-20261105-7a475a93",
       "event_id": "event-hayy-explorers-november-programmes",
       "title": "Hayy Explorers | November Programmes",
-      "reason": "already linked to catalog event"
-    },
-    {
-      "candidate_id": "candidate-umm-al-qura-events-زيارة-ميدانية-بعنوان-خطى-نحو-العافية-20261105-82d0a0e3",
-      "event_id": "event-زيارة-ميدانية-بعنوان-خطى-نحو-العافية",
-      "title": "زيارة ميدانية بعنوان خطى نحو العافية",
-      "reason": "already linked to catalog event"
-    },
-    {
-      "candidate_id": "candidate-mdlbeast-events-beast-house-20261105-83049a2a",
-      "event_id": "event-beast-house",
-      "title": "Beast House",
       "reason": "already linked to catalog event"
     },
     {
@@ -786,6 +764,12 @@
       "candidate_id": "candidate-experience-alula-events-stargazing-at-alula-fort-20261106-f035d3c8",
       "event_id": "event-stargazing-at-alula-fort",
       "title": "Stargazing at AlUla Fort",
+      "reason": "already linked to catalog event"
+    },
+    {
+      "candidate_id": "candidate-umm-al-qura-events-بطولة-البادل-smash-up-20261106-9d9cf1ce",
+      "event_id": "event-بطولة-البادل-smash-up",
+      "title": "بطولة البادل SMASH UP",
       "reason": "already linked to catalog event"
     },
     {
@@ -1053,6 +1037,12 @@
       "reason": "already linked to catalog event"
     },
     {
+      "candidate_id": "candidate-jazan-chamber-events-ورشة-عمل-التعريف-بنظام-إمدادات-الطاقة،-ونظام-المواد-البترولية-والبتروكيم-20261112-613d0744",
+      "event_id": "event-ورشة-عمل-التعريف-بنظام-إمدادات-الطاقة،-ونظام-المواد-البترولية-والبتروكيم",
+      "title": "ورشة عمل التعريف بنظام إمدادات الطاقة، ونظام المواد البترولية والبتروكيماوية، ولائحته التنفيذية",
+      "reason": "already linked to catalog event"
+    },
+    {
       "candidate_id": "candidate-ithra-events-little-explorers-20261112-1cc1993f",
       "event_id": "event-little-explorers",
       "title": "Little Explorers",
@@ -1069,6 +1059,12 @@
       "event_id": "event-the-moral-of-the-story",
       "title": "The Moral of the Story",
       "reason": "already linked to catalog event"
+    },
+    {
+      "candidate_id": "candidate-ithra-events-emboss-printing-20261112-2671d1ce",
+      "event_id": "event-emboss-printing-experience",
+      "title": "Emboss Printing",
+      "reason": "trusted duplicate linked to existing catalog event"
     },
     {
       "candidate_id": "candidate-hayy-jameel-events-hayy-makers-makers-matters-2026-20261112-cc67bdd6",
@@ -1293,6 +1289,12 @@
       "reason": "already linked to catalog event"
     },
     {
+      "candidate_id": "candidate-ithra-events-the-birds-postcard-studio-20261122-e33624c1",
+      "event_id": "event-the-birds-postcard-studio",
+      "title": "The Birds Postcard Studio",
+      "reason": "already linked to catalog event"
+    },
+    {
       "candidate_id": "candidate-ithra-events-the-orbits-of-arabic-calligraphy-20261123-93166d59",
       "event_id": "event-the-orbits-of-arabic-calligraphy",
       "title": "The Orbits of Arabic Calligraphy",
@@ -1398,12 +1400,6 @@
       "candidate_id": "candidate-riyadh-city-events-global-logistics-forum-20261129-56ad24e8",
       "event_id": "event-global-logistics-forum",
       "title": "Global Logistics Forum",
-      "reason": "already linked to catalog event"
-    },
-    {
-      "candidate_id": "candidate-informa-connect-saudi-events-saudi-intermobility-expo-20261130-00e0f2d5",
-      "event_id": "event-saudi-intermobility-expo",
-      "title": "Saudi Intermobility Expo",
       "reason": "already linked to catalog event"
     },
     {
@@ -1578,6 +1574,12 @@
       "candidate_id": "candidate-dhahran-expo-calendar-pfl-mena-final-20261211-18d15b29",
       "event_id": "event-pfl-mena-final",
       "title": "PFL Mena Final",
+      "reason": "already linked to catalog event"
+    },
+    {
+      "candidate_id": "candidate-visit-saudi-seasons-pfl-martial-arts-championship-in-al-khobar-20261211-f398f764",
+      "event_id": "event-pfl-martial-arts-championship-in-al-khobar",
+      "title": "PFL Martial Arts Championship in Al Khobar",
       "reason": "already linked to catalog event"
     },
     {
@@ -1887,6 +1889,12 @@
       "reason": "already linked to catalog event"
     },
     {
+      "candidate_id": "candidate-misk-hub-programs-challenge-for-change-20270424-79d87618",
+      "event_id": "event-challenge-for-change",
+      "title": "Challenge for Change",
+      "reason": "already linked to catalog event"
+    },
+    {
       "candidate_id": "candidate-visit-saudi-calendar-eid-al-adha-20270606-f67747fe",
       "event_id": "event-eid-al-adha",
       "title": "Eid Al-Adha",
@@ -1905,9 +1913,15 @@
       "reason": "already linked to catalog event"
     },
     {
-      "candidate_id": "candidate-qassim-university-events-استضافة-مؤتمر-ieee-mecom-2027-20271101-510cb4b1",
+      "candidate_id": "candidate-qassim-university-events-استضافة-مؤتمر-ieee-mecom-2027-20271101-e84d1e99",
       "event_id": "event-استضافة-مؤتمر-ieee-mecom-2027",
       "title": "استضافة مؤتمر IEEE MECOM 2027",
+      "reason": "already linked to catalog event"
+    },
+    {
+      "candidate_id": "candidate-informa-connect-saudi-events-saudi-intermobility-expo-20271101-00e0f2d5",
+      "event_id": "event-saudi-intermobility-expo",
+      "title": "Saudi Intermobility Expo",
       "reason": "already linked to catalog event"
     },
     {
@@ -1924,11 +1938,6 @@
     }
   ],
   "blocked": [
-    {
-      "candidate_id": "candidate-umm-al-qura-events-حماية-الحسابات-وكلمات-المرور-وإدارة-الصلاحيات-20261105-7d765f27",
-      "title": "حماية الحسابات وكلمات المرور وإدارة الصلاحيات",
-      "reason": "candidate already ended"
-    },
     {
       "candidate_id": "candidate-saudicon-events-accounting-business-expo-saudi-arabia-2026-20261109-7b13265f",
       "title": "Accounting & Business Expo Saudi Arabia 2026",

@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-05T09:46:54.009Z",
+  "generated_at": "2026-11-06T09:29:33.672Z",
   "source_registry": "data/source_registry.json",
   "collection_report": "reports/source-collection-report.json",
   "output_dir": "data/raw/browser-probes",
@@ -7,94 +7,22 @@
     "selected_ids": [],
     "scope": "priority",
     "limit": 8,
-    "probed_this_run": 8,
-    "fresh_results_available": 12,
+    "probed_this_run": 2,
+    "fresh_results_available": 4,
     "wait_ms": 4500,
     "timeout_ms": 30000,
     "failure_cooldown_hours": 72
   },
   "methodology": "Browser-level probe inspired by cafe platform work: classify fetchability, hydration payloads, network APIs, structured HTML, rendered DOM, and policy-protected lanes before writing extractors.",
   "totals": {
-    "probed": 12,
-    "browser_network_api": 1,
+    "probed": 4,
+    "browser_network_api": 0,
     "browser_hydration_payload": 0,
-    "rendered_html_candidates": 1,
-    "blocked_or_protected": 1,
+    "rendered_html_candidates": 0,
+    "blocked_or_protected": 0,
     "policy_skipped": 0
   },
   "sources": [
-    {
-      "id": "moc-cultural-calendar",
-      "probed_at": "2026-11-02T09:50:50.360Z",
-      "name": "Ministry of Culture Cultural Calendar",
-      "priority": 3,
-      "url": "https://www.moc.gov.sa/en/Modules/Pages/Cultural-Calendar",
-      "final_url": "chrome-error://chromewebdata/",
-      "status": "error",
-      "http_status": 0,
-      "navigation_error": "page.goto: Timeout 30000ms exceeded.\nCall log:\n  - navigating to \"https://www.moc.gov.sa/en/Modules/Pages/Cultural-Calendar\", waiting until \"domcontentloaded\"\n",
-      "duration_ms": 135449,
-      "classification": "empty-or-shell",
-      "next_action": "اعتبرها shell وابحث عن API أو مسار بديل قبل أي collector.",
-      "title": "",
-      "text_bytes": 0,
-      "html_bytes": 0,
-      "html_snapshot": "data/raw/browser-probes/moc-cultural-calendar-2026-11-02T09-48-34-628Z.html",
-      "screenshot": "",
-      "signals": {
-        "has_next_data": false,
-        "has_nuxt": false,
-        "has_json_ld": false,
-        "has_event_schema": false,
-        "date_snippets": [],
-        "event_like_links": []
-      },
-      "script_signals": {
-        "next_data_scripts": 0,
-        "nuxt_scripts": 0,
-        "json_ld_scripts": 0,
-        "large_inline_scripts": 0
-      },
-      "network_total": 0,
-      "network_endpoints": [],
-      "network_sample": []
-    },
-    {
-      "id": "mos-events",
-      "probed_at": "2026-11-02T09:53:05.527Z",
-      "name": "Ministry of Sport Events",
-      "priority": 4,
-      "url": "https://www.mos.gov.sa/en/media/events",
-      "final_url": "chrome-error://chromewebdata/",
-      "status": "error",
-      "http_status": 0,
-      "navigation_error": "page.goto: Timeout 30000ms exceeded.\nCall log:\n  - navigating to \"https://www.mos.gov.sa/en/media/events\", waiting until \"domcontentloaded\"\n",
-      "duration_ms": 135138,
-      "classification": "empty-or-shell",
-      "next_action": "اعتبرها shell وابحث عن API أو مسار بديل قبل أي collector.",
-      "title": "",
-      "text_bytes": 0,
-      "html_bytes": 0,
-      "html_snapshot": "data/raw/browser-probes/mos-events-2026-11-02T09-48-34-628Z.html",
-      "screenshot": "",
-      "signals": {
-        "has_next_data": false,
-        "has_nuxt": false,
-        "has_json_ld": false,
-        "has_event_schema": false,
-        "date_snippets": [],
-        "event_like_links": []
-      },
-      "script_signals": {
-        "next_data_scripts": 0,
-        "nuxt_scripts": 0,
-        "json_ld_scripts": 0,
-        "large_inline_scripts": 0
-      },
-      "network_total": 0,
-      "network_endpoints": [],
-      "network_sample": []
-    },
     {
       "id": "monshaat-events",
       "probed_at": "2026-11-05T09:49:08.239Z",
@@ -112,520 +40,6 @@
       "text_bytes": 0,
       "html_bytes": 0,
       "html_snapshot": "data/raw/browser-probes/monshaat-events-2026-11-05T09-46-54-009Z.html",
-      "screenshot": "",
-      "signals": {
-        "has_next_data": false,
-        "has_nuxt": false,
-        "has_json_ld": false,
-        "has_event_schema": false,
-        "date_snippets": [],
-        "event_like_links": []
-      },
-      "script_signals": {
-        "next_data_scripts": 0,
-        "nuxt_scripts": 0,
-        "json_ld_scripts": 0,
-        "large_inline_scripts": 0
-      },
-      "network_total": 0,
-      "network_endpoints": [],
-      "network_sample": []
-    },
-    {
-      "id": "eye-of-riyadh-events",
-      "probed_at": "2026-11-05T09:49:32.655Z",
-      "name": "Eye of Riyadh Events",
-      "priority": 12,
-      "url": "https://www.eyeofriyadh.com/events/",
-      "final_url": "https://www.eyeofriyadh.com/events/",
-      "status": "ok",
-      "http_status": 200,
-      "navigation_error": "",
-      "duration_ms": 6657,
-      "classification": "rendered-html-candidates",
-      "next_action": "اكتب extractor مرن من DOM بعد الرندر أو حسن selector الحالي.",
-      "title": "Events | Exhibitions |Festivals | Seminars Riyadh Saudi Arabia",
-      "text_bytes": 6416,
-      "html_bytes": 142072,
-      "html_snapshot": "data/raw/browser-probes/eye-of-riyadh-events-2026-11-05T09-46-54-009Z.html",
-      "screenshot": "data/raw/browser-probes/eye-of-riyadh-events-2026-11-05T09-46-54-009Z.png",
-      "signals": {
-        "has_next_data": false,
-        "has_nuxt": false,
-        "has_json_ld": false,
-        "has_event_schema": false,
-        "date_snippets": [
-          "24 Jumada I 1448 - 5 November 2026 Sign In/Sign Up Advertise with us Sign-up for newsletter HOME NEWS EVENTS BUSIN",
-          "hatsApp X LinkedIn Facebook Email Share 25 - 27 Jan, 2027 Real Estate Future Forum Four Seasons Hotel , Riyadh | Forum The Real Est",
-          "must evolve, embracing... More Details 4 - 5 Apr, 2027 Global Proptech Summit 2027 Mandarin Oriental Al Faisaliah , Riyadh | Sum",
-          "platform that convenes... More Details 7 - 8 Apr, 2027 Real Estate Supply Chain Forum Mandarin Oriental Al Faisaliah , Riyadh |",
-          "tform driving strategic... More Details 7 - 8 Apr, 2027 CIPS MENA Procurement and Supply Chain Futures conference and awards Mand",
-          "is the region’s leading... More Details 9 - 11 Nov, 2026 Saudi Pet & Vet Expo 2026 Riyadh International Convention & Exhibition Ce",
-          "n recent years, driven ... More Details 10 - 12 Nov, 2026 Inspire Exhibition for Décor, Gifts & Lifestyle Riyadh International Conv",
-          "ent co-located with the... More Details 10 - 12 Nov, 2026 Build Your House Exhibition Riyadh International Convention & Exhibition"
-        ],
-        "event_like_links": [
-          {
-            "text": "EVENTS",
-            "href": "https://www.eyeofriyadh.com/events/"
-          },
-          {
-            "text": "عربي",
-            "href": "https://www.eyeofriyadh.com/ar/events/"
-          },
-          {
-            "text": "Award",
-            "href": "https://www.eyeofriyadh.com/events/?fcat=15"
-          },
-          {
-            "text": "Ceremony",
-            "href": "https://www.eyeofriyadh.com/events/?fcat=21"
-          },
-          {
-            "text": "Championship",
-            "href": "https://www.eyeofriyadh.com/events/?fcat=13"
-          },
-          {
-            "text": "Conference",
-            "href": "https://www.eyeofriyadh.com/events/?fcat=1"
-          },
-          {
-            "text": "Congress",
-            "href": "https://www.eyeofriyadh.com/events/?fcat=28"
-          },
-          {
-            "text": "Convention",
-            "href": "https://www.eyeofriyadh.com/events/?fcat=17"
-          },
-          {
-            "text": "Exhibition",
-            "href": "https://www.eyeofriyadh.com/events/?fcat=2"
-          },
-          {
-            "text": "Festival",
-            "href": "https://www.eyeofriyadh.com/events/?fcat=5"
-          },
-          {
-            "text": "Forum",
-            "href": "https://www.eyeofriyadh.com/events/?fcat=3"
-          },
-          {
-            "text": "Professional Development Programme",
-            "href": "https://www.eyeofriyadh.com/events/?fcat=32"
-          },
-          {
-            "text": "Show",
-            "href": "https://www.eyeofriyadh.com/events/?fcat=24"
-          },
-          {
-            "text": "Summit",
-            "href": "https://www.eyeofriyadh.com/events/?fcat=4"
-          },
-          {
-            "text": "AWARD",
-            "href": "https://www.eyeofriyadh.com/events/?fcat=15"
-          },
-          {
-            "text": "CEREMONY",
-            "href": "https://www.eyeofriyadh.com/events/?fcat=21"
-          },
-          {
-            "text": "CHAMPIONSHIP",
-            "href": "https://www.eyeofriyadh.com/events/?fcat=13"
-          },
-          {
-            "text": "CONFERENCE",
-            "href": "https://www.eyeofriyadh.com/events/?fcat=1"
-          },
-          {
-            "text": "CONGRESS",
-            "href": "https://www.eyeofriyadh.com/events/?fcat=28"
-          },
-          {
-            "text": "CONVENTION",
-            "href": "https://www.eyeofriyadh.com/events/?fcat=17"
-          }
-        ]
-      },
-      "script_signals": {
-        "next_data_scripts": 0,
-        "nuxt_scripts": 0,
-        "json_ld_scripts": 0,
-        "large_inline_scripts": 0
-      },
-      "network_total": 3,
-      "network_endpoints": [],
-      "network_sample": [
-        {
-          "method": "GET",
-          "status": 200,
-          "url": "https://ep1.adtrafficquality.google/getconfig/sodar?sv=200&tid=gpt&tv=m202611030101&st=env&sjk=6642687532477825",
-          "content_type": "application/json",
-          "resource_type": "xhr",
-          "request_post_data": "",
-          "response_shape": "json-like-invalid",
-          "preview": "{\"sodar_query_id\":\"JlHsasX3O9DelsYPpLWc-AQ\",\"injector_basename\":\"sodar2\",\"bg_hash_basename\":\"A_5bs-g2DmQ0fpYCTSCjNZpW6oHQ79HS8qa6Hn0eCp0\",\"bg_binary\":\"FtUleYMI0dDyW0+b2irVCpWxtAtEjNArupC1rJ6KVkbMUMLMLooQy8HNRn95BjeWZVfX9pnetDO5FdcJ9KJPenosQ2Uo0xDg2WJBTGCN4SA7CDAXqA+hLX8df2BiUV1VKcKgRWW52QIfFXru1wcHSTWFAVuOTrYHDUoEtWqS4mdOfHnf+/ffwQS3Ph3RuWdgUIDXgJ+goy7UseSLeQt4AZ4Rmh09sOskqPKVS3wgUU/aPjvr9/MQ0aS9JdgYshpnQmtMPo9OzDIJXHE8rwfFVOsix4gRZkE9lMp08B+b59EJmDg2ZxzJ3hOPj0zyZZWQfzQA+aPk4lo3UADdvfpe+HP2qwmnpIrv5h/fzbknzAnfV5AmIxAJuFY2XZCyT8b2Qlv4yMTZej/Z25ogxqE4eLXrxripuQpT9i/6RV5aTvogmnkoJt3dNf6GZpX66oGDHXDz8DDUDeX3yy6VcCz7BGgj/lntH86nkpcY1zJdUjNz/EPxk2eptC/o5OWeMGJQPgLGhnfFanKJlu8PXeNIG6CA66qDde7C6vNX6/RZFrwZ6PK9AsC160uNewvqhaK5/UlsDGyWasRtY+DHa+Ilbk2OQU7dawfNaqhEmn5kMtb3wk53oupS56pnhURtDHHkc+u78d3YAAHLX6v3lvrVXmb/jvyVJhhkEjhPqnsmJ3UiTXnqs9/iYEzyRFMDn8CJxjjkNJOxsBFPlCvLeExRCEsBgb0/ed9htahPxLxwIqk+1HzUMWmAXkHP2FQMU5AiULvLGlqs/SPnTg585EKfgdS89M1i3Y7Bk+DMSCa55We8OKxUe+RDObtxkvAAIF/E1WWCvZspbUYRHXP554hXKcdjTSgiEuY6rnEzL9fz09YZW1sFLUHP06JWY+im8m8OAKDeTJMNKz8PfKfgDr96BsrsZjiFPW2TwBZPc/w7tMtwxloH0Bw5wfobtcgQLRTZB80iuNGg04C62IQT1CHk3hacr2nytq+j46FHaZ+xbTP523AKfcous+3uhhBnXda+tvokWm20a/Y9cL88fNyUOox2HgDb82FkWNBXKX1Kf39pkNcJkPKm/nlCrBjjCTPubiNDyHU9Tw3O7h1MkwuZgj1A80X2dGEl0aJ82BxuelOt5X0xi8l9EkV2RhmqSdOlZLMCNYWTC0nnnzUg1XsYqzuKdHE0GPfSlpuPomOX422hlRnmtvCauShQ4nc4RuaZNrnHkgf06q90jIA5TOKR7pgsHtdsBnl2wbbEl18keJ4K9iiAzh8nBUPWkvv98xJt0lU957kGVEIBHcc9q5Q93JJrrJXPJXwt2X/wMMfQAx1gbHm9Kd8mFPZQnnowFygqDm766DvTHgAdGiWyjag7jsJNZybbSRljqofnHYY2vwBCYdmZue4BaUTLWKZJwjOw+BElqekHB84gmX6UIs8KQVsrclmWZ0/LxdfemhJshdaiJ2IqiQ+pbH6a7urOuoHwPb2AZDywl2QFa+MidQQEf2zn7hZoJ+8tWPPlWzth4OqUcI2kpdRrAv3CDB3THHlWx7iTHyhc+v0l6jcWrMaDSwMYi+cr1jXy0qm0QWk3dhgbSSExhGRAUwj+SX0ZiNARLaQKZ7csl1V70rur/c3k8DtZ3sBnxRfLZHAa/TrAPO3CX08Im"
-        },
-        {
-          "method": "GET",
-          "status": 200,
-          "url": "https://bootstrap.smartsuppchat.com/widget/2509ea3487b655fdefb67761d4610393011e3a91.json",
-          "content_type": "application/json",
-          "resource_type": "xhr",
-          "request_post_data": "",
-          "response_shape": "json-object:aiRatingEnabled,allowedDomains,buttonStyle,color,color2,colorGradient,consentModeEnabled,crossDomainEnabled",
-          "preview": "{\"aiRatingEnabled\":false,\"allowedDomains\":[],\"buttonStyle\":\"greeting\",\"color\":\"#f5a623\",\"color2\":null,\"colorGradient\":true,\"consentModeEnabled\":false,\"crossDomainEnabled\":false,\"customBrandingEnabled\":false,\"customBrandingLink\":\"\",\"customBrandingText\":\"\",\"emailControl\":true,\"features\":{\"api\":false,\"customize\":false,\"ga\":false,\"groups\":false,\"rating\":false,\"whiteLabel\":false},\"googleAnalyticsEnabled\":false,\"googleAnalyticsManual\":false,\"googleAnalyticsMeasurementIds\":[],\"groupSelectEnabled\":false,\"headerStyle\":\"standard\",\"hideOfflineChat\":false,\"hideWidget\":false,\"host\":\"websocket-visitors.smartsupp.com\",\"internalAnalyticsEnabled\":false,\"isBlocked\":false,\"lang\":\"en\",\"mobilePopupsEnabled\":false,\"nameControl\":true,\"numberControl\":false,\"openOnTrigger\":false,\"orientation\":\"right\",\"packageName\":\"free\",\"popupTextareaEnabled\":false,\"privacyNoticeCheckRequired\":false,\"privacyNoticeEnabled\":true,\"privacyNoticeUrl\":\"\",\"ratingEnabled\":false,\"requireLogin\":false,\"translates\":{\"en\":{\"topBar.online.hello\":\"Eyeofriyadh\"}},\"urlCardsEnabled\":true,\"widgetVersion\":3,\"hasInternalApi\":false,\"config\":{},\"browserLang\":\"ar\",\"widgetTrackerUrl\":\"https://widget-tracker.smartsupp.com\",\"translationsBaseUrl\":\"https://translations.smartsuppcdn.com\",\"widgetTrackerEnabled\":false}"
-        },
-        {
-          "method": "GET",
-          "status": 200,
-          "url": "https://widget-v3.smartsuppcdn.com/manifest.json",
-          "content_type": "application/json",
-          "resource_type": "xhr",
-          "request_post_data": "",
-          "response_shape": "json-like-invalid",
-          "preview": "{ \"_WidgetMessengerInput-C60cOt3h.js\": { \"file\": \"assets/WidgetMessengerInput-C60cOt3h.js\", \"name\": \"WidgetMessengerInput\", \"imports\": [ \"_shared-CmdjPZlS.js\" ], \"dynamicImports\": [ \"node_modules/.pnpm/emoji-mart@5.6.0/node_modules/emoji-mart/dist/module.js\" ] }, \"_shared-CmdjPZlS.js\": { \"file\": \"assets/shared-CmdjPZlS.js\", \"name\": \"IconButton\", \"dynamicImports\": [ \"node_modules/.pnpm/@thumbmarkjs+thumbmarkjs@1.12.0/node_modules/@thumbmarkjs/thumbmarkjs/dist/thumbmark.esm.js\", \"src/translates/ar.json\", \"src/translates/az.json\", \"src/translates/bg.json\", \"src/translates/br.json\", \"src/translates/bs.json\", \"src/translates/ca.json\", \"src/translates/cn.json\", \"src/translates/cs.json\", \"src/translates/da.json\", \"src/translates/de.json\", \"src/translates/el.json\", \"src/translates/en.json\", \"src/translates/es.json\", \"src/translates/et.json\", \"src/translates/fa.json\", \"src/translates/fi.json\", \"src/translates/fil.json\", \"src/translates/fr.json\", \"src/translates/he.json\", \"src/translates/hi.json\", \"src/translates/hr.json\", \"src/translates/hu.json\", \"src/translates/is.json\", \"src/translates/it.json\", \"src/translates/ja.json\", \"src/translates/ka.json\", \"src/translates/lt.json\", \"src/translates/lv.json\", \"src/translates/mk.json\", \"src/translates/nl.json\", \"src/translates/no.json\", \"src/translates/pl.json\", \"src/translates/pt.json\", \"src/translates/ro.json\", \"src/translates/ru.json\", \"src/translates/sk.json\", \"src/translates/sl.json\", \"src/translates/sr.json\", \"src/translates/sv.json\", \"sr"
-        }
-      ]
-    },
-    {
-      "id": "eventbrite-saudi",
-      "probed_at": "2026-11-05T09:49:38.596Z",
-      "name": "Eventbrite Saudi Arabia",
-      "priority": 14,
-      "url": "https://www.eventbrite.com/d/saudi-arabia/events/",
-      "final_url": "https://www.eventbrite.com/d/saudi-arabia/events/",
-      "status": "ok",
-      "http_status": 405,
-      "navigation_error": "",
-      "duration_ms": 5914,
-      "classification": "rendered-text-review",
-      "next_action": "راجع الصفحة يدويًا وحدد هل هي مصدر أدلة أم صفحة تعريفية فقط.",
-      "title": "Let's confirm you are human",
-      "text_bytes": 376,
-      "html_bytes": 12251,
-      "html_snapshot": "data/raw/browser-probes/eventbrite-saudi-2026-11-05T09-46-54-009Z.html",
-      "screenshot": "data/raw/browser-probes/eventbrite-saudi-2026-11-05T09-46-54-009Z.png",
-      "signals": {
-        "has_next_data": false,
-        "has_nuxt": false,
-        "has_json_ld": false,
-        "has_event_schema": false,
-        "date_snippets": [],
-        "event_like_links": []
-      },
-      "script_signals": {
-        "next_data_scripts": 0,
-        "nuxt_scripts": 0,
-        "json_ld_scripts": 0,
-        "large_inline_scripts": 0
-      },
-      "network_total": 3,
-      "network_endpoints": [],
-      "network_sample": [
-        {
-          "method": "POST",
-          "status": 200,
-          "url": "https://0af0bdf40465.bb81f591.us-east-1.token.awswaf.com/0af0bdf40465/e3e3fa888aeb/63e329aa85c9/mp_verify?region=us-east-1",
-          "content_type": "application/json",
-          "resource_type": "fetch",
-          "request_post_data": "------WebKitFormBoundaryuHKEm64W1dIZNBLS Content-Disposition: form-data; name=\"solution_metadata\" {\"challenge\":{\"input\":\"4bebc5d1-60af-416d-b859-4ee4e0f25e6c:EQoAu9Zp67xKLgAA:3FLrBNVCJPGo4F4TBsGzvlRw057GzPfeFGQaRkPxC4hppnBfM4yjze+PkxkW8c/foOVB6TjU2DriXQIXa6WK6ZbbfmKJenFaSA6SuI65PT+5eNaiz/z+4H4PTFuzpRgGHJ9Ol06jbN99inhoH310w02QYgAVpIBfesx/cMXEyBrJD/TJNi2Ry4QIziq9sIAqmMepLYCJjZO6PuWhmcmsRgahCnI5VE/D1t6XkTzYsjVj4/O6dL1dXrpCygqfqQ3XxBDCzq6o+GD49SXRt6VDMj+wI6f3G5SgLfHWIkyPzziQxvASrBjH8v/Ja0cIydWV0XYRlxsRJ6ELUPcaERnZxaBlF/gyfJeQOr2JEUvCHHxBry4BKdWRRD3EBBoXs7/AOrNef2/+oUEReMkbMIAz5U0wrhDdxMf6OvLLpKbwziS3nfcwSbnXOgSTrE7D/5EQKyXMA5kVA7MSH2K4yqxMucKnNxYvomXHalyGwrHqlnKmAnW1hnC4QOVYBMaKxV1OCx/6QN/9c4DemPRkcUPeUThGONy96/glcIvtMvxJl2UI/3hN/dAQ\",\"hmac\":\"\",\"region\":\"us-east-1\"},\"signals\":[{\"name\":\"Zoey\",\"value\":{\"Present\":\"4LMjXJswkefK6+ZJ::4dec1d2c9bc0d12f81400f2d41aa61c05328808d2248f91360262f9af6753ebae89eae9c4a47dfb2651b384f58f14ce73221749a77c9b15545bc3e48df92751ad6f571637128fc30678c1cd1f5d0f445635ae07e96dac7c61331bf4456038a83303c7fe25d467e0240c6f658d68c7808cc882f5a7fc3351eb7568fcdcaaf4e11edd94d52516d9d8cb49272333d0ef56d30424175ec7954bd994d0c843578890c3699bc07df22c0d9f8cee4f93ddbedcef527736cece",
-          "response_shape": "json-object:token,inputs",
-          "preview": "{\"token\":\"43b8aa68-bdfd-4944-9849-0fb295ffea99:EQoAimRpm2wctgAA:3OeqmqKxwb8R0F1Ox4nOZA3z1m4NonrvLWVDD7EyLbI+0zDNNZ9UVwNEA4VCjG9gUDnvY3SHV3tPo5df5jakhxX8EV4IPE4NehaVW4F+SnZQLpPFas4JC1Fzh4EJaQdtP/Yh6NMrD40OyqST89e198U6R8xinRYmaxLZ/ia7n6PmI6+aF6/+lOk1MGiZW7rvviI2BNUuQGr+CTd5HJtclVIANu47lscku41zbWk+G8grE6gtZ/Nsg7Nbu6mZmsTUBFj9AIt4Ff13px0oULG1uhb4WrlPVqJNKeKgVmyStXzleM57R0sJozKdvg==\",\"inputs\":null}"
-        },
-        {
-          "method": "POST",
-          "status": 200,
-          "url": "https://0af0bdf40465.bb81f591.us-east-1.token.awswaf.com/0af0bdf40465/e3e3fa888aeb/63e329aa85c9/telemetry",
-          "content_type": "application/json",
-          "resource_type": "fetch",
-          "request_post_data": "{\"existing_token\":\"43b8aa68-bdfd-4944-9849-0fb295ffea99:EQoAimRpm2wctgAA:3OeqmqKxwb8R0F1Ox4nOZA3z1m4NonrvLWVDD7EyLbI+0zDNNZ9UVwNEA4VCjG9gUDnvY3SHV3tPo5df5jakhxX8EV4IPE4NehaVW4F+SnZQLpPFas4JC1Fzh4EJaQdtP/Yh6NMrD40OyqST89e198U6R8xinRYmaxLZ/ia7n6PmI6+aF6/+lOk1MGiZW7rvviI2BNUuQGr+CTd5HJtclVIANu47lscku41zbWk+G8grE6gtZ/Nsg7Nbu6mZmsTUBFj9AIt4Ff13px0oULG1uhb4WrlPVqJNKeKgVmyStXzleM57R0sJozKdvg==\",\"awswaf_session_storage\":\"null\",\"client\":\"Browser\",\"signals\":[{\"name\":\"Zoey\",\"value\":{\"Present\":\"ZXpHawciw0fQd7SZ::7af8f364ddba96c95154a6584f58168e9975db048e87015ca9dca375602500a3f92208dde9ffa4010b8e908588773014d07c9002e3413a3147bdb361983fb36d330e8d5ae2397f6007c34333d7bcd27d613ce92b872d58782df9f1109ac8f5811bff424f9d4587f4ef9826b6be760132dc4da78f01a598a0f3e93b0d7dc335148e6e0b4db122501aef6c46d335d95f6c0101b4a9e2779f2cb2f16551b551fa9589314c1e383779c63340cce6db009e1c49620dc826c888b8056b87364ddc10287293fe0c1d4f08f9b94849cb16253dbcbe023647124ea56c5e55368843a204e1322c87efd7ee9503de4d3e1504f28fb24a8263bae3343a6747e2b28490a10b6ba65a2b638d\"}}],\"checksum\":\"117363C8\",\"metrics\":[{\"name\":\"12\",\"value\":0.10000000009313226,\"unit\":\"2\"},{\"name\":\"200\",\"value\":0,\"unit\":\"2\"},{\"name\":\"201\",\"value\":0,\"unit\":\"2\"},{\"name\":\"",
-          "response_shape": "json-object:token,next_interval,awswaf_session_storage",
-          "preview": "{\"token\":\"43b8aa68-bdfd-4944-9849-0fb295ffea99:EQoAtVBpyzzYtAAA:qj0vUjxpoDFW9GIs5FCKZ1J4SunMh43LTuEzkT/ZBvfrhA1yt29q0pVw8Xt39QnjQ3sj5ROU7GgL/Ls7upXNFl9uzQRsxwA1KyALeQbP9iXlXoG68to1It+DAmTKZv6o9J1KnA4VGa2XTvZRHPp4oeL9JEfwczC1rLye+UDjyUHhMkZdWeHvYALXM6Qxja7eQ/p3PFcPMqiVVl1c3wBEVKRaOeusJGdUhobZEI1aOFszjfgvJccR7mu1Uz8WyI0RMaT4D2Xnyw3UAisOJL/NNNJe6/yTNpcfSQD71XRu3uf5I8NJ7az8R455mOFDJ8JDvc4bwoEVBXh64OSkDhJEa4slvo0X4UkFHk2oE9GOQ6+5lw==\",\"next_interval\":100,\"awswaf_session_storage\":\"43b8aa68-bdfd-4944-9849-0fb295ffea99:EQoAtVBpyz3YtAAA:5CgX07KvSOgY+NYvS8FfkF/hPFRnHQxthfU7krh93DEogbNPc/FIvnEIf6Jt7uiALXPYrJGBTA9ydLJSRV1HeqZJE7smdCGMNMxeq89b69M35ST2ZVAtDkwZVGHYeOflfm8lemhmN79c63ZQPYYPzhmNdY+BsbmJxPjSQZ7meAJuRCIBIrYEzGMhw/QMdatC+zK1bbEiXb8W58ZG2oqNz85wpJNbtSpfu5MZci0SNnTi1K391z3HNQ/GdIN+wJbcM3MB/nUOgmsyEbTwElWhixIX4fryGG/sqRlCPylzi69qscO/dP/+kG25418aoEgca61IJeoTmUbqjL42H7wfkFKsR9ZYgD6rjUlbwrdBWFDzQx1cTN3wOA6T6MWksRo7ll1LHFytLzMDpeIEbb27vYrdqw/PajUa8sw95ZkcGXvCA9UKAqrMfg++now9lFWm6HftAKReDLNP5cFYPCD86JNN\"}"
-        },
-        {
-          "method": "POST",
-          "status": 200,
-          "url": "https://0af0bdf40465.bb81f591.us-east-1.token.awswaf.com/0af0bdf40465/e3e3fa888aeb/63e329aa85c9/telemetry",
-          "content_type": "application/json",
-          "resource_type": "fetch",
-          "request_post_data": "{\"existing_token\":\"43b8aa68-bdfd-4944-9849-0fb295ffea99:EQoAtVBpyzzYtAAA:qj0vUjxpoDFW9GIs5FCKZ1J4SunMh43LTuEzkT/ZBvfrhA1yt29q0pVw8Xt39QnjQ3sj5ROU7GgL/Ls7upXNFl9uzQRsxwA1KyALeQbP9iXlXoG68to1It+DAmTKZv6o9J1KnA4VGa2XTvZRHPp4oeL9JEfwczC1rLye+UDjyUHhMkZdWeHvYALXM6Qxja7eQ/p3PFcPMqiVVl1c3wBEVKRaOeusJGdUhobZEI1aOFszjfgvJccR7mu1Uz8WyI0RMaT4D2Xnyw3UAisOJL/NNNJe6/yTNpcfSQD71XRu3uf5I8NJ7az8R455mOFDJ8JDvc4bwoEVBXh64OSkDhJEa4slvo0X4UkFHk2oE9GOQ6+5lw==\",\"awswaf_session_storage\":\"43b8aa68-bdfd-4944-9849-0fb295ffea99:EQoAtVBpyz3YtAAA:5CgX07KvSOgY+NYvS8FfkF/hPFRnHQxthfU7krh93DEogbNPc/FIvnEIf6Jt7uiALXPYrJGBTA9ydLJSRV1HeqZJE7smdCGMNMxeq89b69M35ST2ZVAtDkwZVGHYeOflfm8lemhmN79c63ZQPYYPzhmNdY+BsbmJxPjSQZ7meAJuRCIBIrYEzGMhw/QMdatC+zK1bbEiXb8W58ZG2oqNz85wpJNbtSpfu5MZci0SNnTi1K391z3HNQ/GdIN+wJbcM3MB/nUOgmsyEbTwElWhixIX4fryGG/sqRlCPylzi69qscO/dP/+kG25418aoEgca61IJeoTmUbqjL42H7wfkFKsR9ZYgD6rjUlbwrdBWFDzQx1cTN3wOA6T6MWksRo7ll1LHFytLzMDpeIEbb27vYrdqw/PajUa8sw95ZkcGXvCA9UKAqrMfg++now9lFWm6HftAKReDLNP5cFYPCD86JNN\",\"client\":\"Browser\",\"signals\":[{\"name\":\"Zoey\",\"value\":{\"Present\":\"VfQGXCHQDh7ciQou::8846278329e11d15ffaf4fd99df69c533bd0f92a05018eae0d3291fc8c5c7b54e59ca10aff03aabc2938d0e514a05ab2eff9bda092e0a6a5b3446baa",
-          "response_shape": "json-object:token,next_interval,awswaf_session_storage",
-          "preview": "{\"token\":\"43b8aa68-bdfd-4944-9849-0fb295ffea99:EQoAksVpnwaItAAA:FvAa+15bobIeKgUxX1s+yjc4C1dLX3htIXgwtmd7slnyS+mcP/gFSclkVadNG2W/Z02+bRe5K3soVw/qDJFieoO/qwVVBxHIwBxe+uyqmDaCF6/kC+sC1G2DiiM+cagd/jcuZeINop1IaIPPVv7alst7tcXK543mkKBQTCNxFO616RhVC/rcveIkbsNhLTDtQMOebX7Xh2OgLh6V7jKe0YlvzOzFCRwNBMPXRXlFFik3noNpfy1czGogogN+r9SMWaMaVdx4dumvE0U7tebaKIzaODBYMUT8gs9vik9d5Untu5GCoAPMm5Lxdv4TDLfytsYzA3DyT+s9S/4CcwqnasuaXvu+JpHJKGB0QkpX9bBO9Q==\",\"next_interval\":200,\"awswaf_session_storage\":\"43b8aa68-bdfd-4944-9849-0fb295ffea99:EQoAksVpnweItAAA:yXm5Kb6jc66W97xmJ7H7gEsdvElW5SJbx83L0sXO9MmJMsPRo1od589RGkYxGJsB81CfX/lOMceW1LubSxj2xhu12vTvySVKxRbtgoGx9NXozSAPi/gkr4RTuNB/+qVWNeoQqzoJb0dtWYMiOEWzJZXOdc9ZKbNvncwHuujvQVZOc+9FZCcQ/7WfV23N1g9ScftURIERURyfIDST818FyuIyZEers2m5ylTmS6OSKCI2aU+dO7au2AxiLMb6qp8ulyufb2eqynXgTJ4a2KzmDwLSe94gzWniVzIDRcIfpuQTyPt6znA2l8Xi4Dp2J6xOxoQbmnldKs9umYMmOR/M2Upy6aSL6ImkcyS5Zgn4wgFCs3h3b4CoDzF6pMxBK5LO+AlEw/CPiHskI7yTlIOoHU3Y+gxot8bThSm20JQ5EdYwhtnlQo4UJsLOVefz05IQyYVGt0iawo1TUuVyEKeKxzjCB0KcSrUgBXERIruMtlGobBAACa87Gnc8pz5u6Dc+ARSzpWJ8Dqc19+6wtj3cPrt5MYGw72Pv+Y/ilxRMVloF66QV\"}"
-        }
-      ]
-    },
-    {
-      "id": "tuwaiq-academy-bootcamps",
-      "probed_at": "2026-11-05T09:49:14.248Z",
-      "name": "Tuwaiq Academy Bootcamps and Programs",
-      "priority": 16,
-      "url": "https://tuwaiq.edu.sa/api/GetInitiativePublishesShorten/12/1?category=ac41152d-f228-8af4-8406-e0cda6df6c35&type=NORMAL",
-      "final_url": "https://tuwaiq.edu.sa/api/GetInitiativePublishesShorten/12/1?category=ac41152d-f228-8af4-8406-e0cda6df6c35&type=NORMAL",
-      "status": "ok",
-      "http_status": 200,
-      "navigation_error": "",
-      "duration_ms": 5982,
-      "classification": "browser-structured-html",
-      "next_action": "اكتب extractor من JSON-LD أو structured scripts مع fallback للبطاقات.",
-      "title": "",
-      "text_bytes": 10672,
-      "html_bytes": 10835,
-      "html_snapshot": "data/raw/browser-probes/tuwaiq-academy-bootcamps-2026-11-05T09-46-54-009Z.html",
-      "screenshot": "data/raw/browser-probes/tuwaiq-academy-bootcamps-2026-11-05T09-46-54-009Z.png",
-      "signals": {
-        "has_next_data": false,
-        "has_nuxt": false,
-        "has_json_ld": false,
-        "has_event_schema": true,
-        "date_snippets": [
-          "بيرتون - المسار التأسيسي \",\"startDate\":\"2026-12-06T09:00:00+03:00\",\"endDate\":\"2027-09-09T21:00:00+03:00\",\"autoCloseRegistration\":f",
-          "nStartDate\":null,\"registrationEndDate\":\"2026-11-15T12:00:00+03:00\",\"requireProfileCompletion\":true,\"isMergePublish\":null,\"isPaid\":",
-          "ية الاحترافية لسحابة قوقل\",\"startDate\":\"2026-12-06T17:00:00+03:00\",\"endDate\":\"2026-12-31T21:00:00+03:00\",\"autoCloseRegistration\":f",
-          "nStartDate\":null,\"registrationEndDate\":\"2026-11-08T12:00:00+03:00\",\"requireProfileCompletion\":true,\"isMergePublish\":true,\"isPaid\":",
-          "ر الذكاء الاصطناعي للقادة\",\"startDate\":\"2026-12-06T18:00:00+03:00\",\"endDate\":\"2026-12-31T21:00:00+03:00\",\"autoCloseRegistration\":f",
-          "nStartDate\":null,\"registrationEndDate\":\"2026-11-08T12:00:00+03:00\",\"requireProfileCompletion\":false,\"isMergePublish\":true,\"isPaid\"",
-          "عسكر حلول الأمن السيبراني\",\"startDate\":\"2026-12-13T17:00:00+03:00\",\"endDate\":\"2027-01-07T20:00:00+03:00\",\"autoCloseRegistration\":f",
-          "nStartDate\":null,\"registrationEndDate\":\"2026-11-29T12:00:00+03:00\",\"requireProfileCompletion\":true,\"isMergePublish\":true,\"isPaid\":"
-        ],
-        "event_like_links": []
-      },
-      "script_signals": {
-        "next_data_scripts": 0,
-        "nuxt_scripts": 0,
-        "json_ld_scripts": 0,
-        "large_inline_scripts": 0
-      },
-      "network_total": 1,
-      "network_endpoints": [],
-      "network_sample": [
-        {
-          "method": "GET",
-          "status": 200,
-          "url": "https://tuwaiq.edu.sa/api/GetInitiativePublishesShorten/12/1?category=ac41152d-f228-8af4-8406-e0cda6df6c35&type=NORMAL",
-          "content_type": "application/json",
-          "resource_type": "document",
-          "request_post_data": "",
-          "response_shape": "json-like-invalid",
-          "preview": "{\"pagination\":{\"offset\":0,\"limit\":12,\"total\":205,\"totalPages\":18},\"data\":[{\"id\":\"0d9a4a36-b497-4db2-b071-574d387e5c38\",\"academyTypeId\":null,\"academyType\":null,\"title\":\"معسكر هولبيرتون - المسار التأسيسي \",\"startDate\":\"2026-12-06T09:00:00+03:00\",\"endDate\":\"2027-09-09T21:00:00+03:00\",\"autoCloseRegistration\":false,\"isOpen\":true,\"isRegistrationOpen\":true,\"isRegistrationClosed\":false,\"logo\":null,\"outerImage\":\"images/qata2tsg.z5f.webp\",\"initiativeAgeName\":\"كبار\",\"initiativeCategoryName\":\"معسكر\",\"initiativeScopeImage\":\"images/t0ib4qly.bms.png\",\"initiativeScopeName\":\"هندسة البرمجيات\",\"locationName\":\"الرياض - المقر الرئيسي\",\"slug\":\"AYmNxWoL\",\"registrationStartDate\":null,\"registrationEndDate\":\"2026-11-15T12:00:00+03:00\",\"requireProfileCompletion\":true,\"isMergePublish\":null,\"isPaid\":false,\"price\":0.00,\"includesEmployees\":false,\"vat\":0.00,\"priceWithoutVat\":0.00},{\"id\":\"46c277ae-5d9e-4a6b-805a-7e4720a83dfe\",\"academyTypeId\":null,\"academyType\":null,\"title\":\"معسكر تطوير البرمجيات السحابية الاحترافية لسحابة قوقل\",\"startDate\":\"2026-12-06T17:00:00+03:00\",\"endDate\":\"2026-12-31T21:00:00+03:00\",\"autoCloseRegistration\":false,\"isOpen\":true,\"isRegistrationOpen\":true,\"isRegistrationClosed\":false,\"logo\":\"images/zt203siy.0sn.png\",\"outerImage\":\"images/twhdfqfk.mjg.webp\",\"initiativeAgeName\":\"كبار\",\"initiativeCategoryName\":\"معسكر\",\"initiativeScopeImage\":\"images/lcbl2k2p.x5x.png\",\"initiativeScopeName\":\"الحوسبة السحابية\",\"locationName\":\"الرياض - المقر الرئيسي\",\"slug\":\"E9zNBzBP\",\"registrationStartDate\":null,\"registrationEndDate\":\"2026-11-08T12:00:00+03:00\",\"requireProfileCompletion\":true,\"isMergePublish\":true,\"isPaid\":false,\"price\":null,\"includesEmployees\":false,\"vat\":null,\"priceWithoutVat\":null},{\"id\":\"3d0eb27a-1c0e-49bd-ae2a-26c9b23f39f8\",\"academyTypeId\":null,\"academyType\":null,\"title\":\"معسكر الذكاء ال"
-        }
-      ]
-    },
-    {
-      "id": "misk-hub-events",
-      "probed_at": "2026-11-05T09:49:49.136Z",
-      "name": "Misk Hub Events",
-      "priority": 28,
-      "url": "https://hub.misk.org.sa/en/events/",
-      "final_url": "https://hub.misk.org.sa/en/events/",
-      "status": "ok",
-      "http_status": 200,
-      "navigation_error": "",
-      "duration_ms": 10509,
-      "classification": "browser-network-api",
-      "next_action": "ثبت endpoint مرشحًا كجامع مباشر، ثم اكتب extractor من JSON مع اختبار انحدار.",
-      "title": "Misk Hub Events",
-      "text_bytes": 2661,
-      "html_bytes": 253342,
-      "html_snapshot": "data/raw/browser-probes/misk-hub-events-2026-11-05T09-46-54-009Z.html",
-      "screenshot": "data/raw/browser-probes/misk-hub-events-2026-11-05T09-46-54-009Z.png",
-      "signals": {
-        "has_next_data": false,
-        "has_nuxt": false,
-        "has_json_ld": false,
-        "has_event_schema": false,
-        "date_snippets": [
-          "Insights العربية Sign in Skills Offline 28 Oct 2026 stc x Misk Workshops Series A workshop represented by a cybersecurity specialis",
-          "ing on 28th October 2026 Skills Offline 19 - 20 Oct 2026 Nonprofit Governance: From Compliance to Institutional Excellence This wor",
-          "ssed stc x Misk Workshops Series Arabic 28 Oct 2026 2:00 pm : 3:00 pm More Details Hybrid This event has Passed From the Classroom",
-          "That Make the Difference English,Arabic 21 Oct 2026 7:00 pm : 8:00 pm More Details In-Person This event has Passed Nonprofit Govern",
-          "ance to Institutional Excellence Arabic 19 - 20 Oct 2026 4:00 pm : 8:00 pm More Details Hybrid This event has Passed Finance Fundam",
-          "entals English,Arabic 14 Sep 2026 4:00 pm : 7:00 pm More Details Online This event has Passed How to Choose Your",
-          "eep Up with Labor Market Changes Arabic 26 Aug 2026 7:00 pm : 8:00 pm More Details Hybrid This event has Passed Navigating the Cybe",
-          "Build a Corporate Career English,Arabic 25 Aug 2026 1:00 pm : 2:00 pm More Details Online This event has Passed Development Media:"
-        ],
-        "event_like_links": [
-          {
-            "text": "Programs",
-            "href": "https://hub.misk.org.sa/en/programs/"
-          },
-          {
-            "text": "Events",
-            "href": "https://hub.misk.org.sa/en/events/"
-          },
-          {
-            "text": "العربية",
-            "href": "https://hub.misk.org.sa/ar/events/"
-          },
-          {
-            "text": "Sign in",
-            "href": "https://hub.misk.org.sa/en/events/#"
-          },
-          {
-            "text": "Programs",
-            "href": "https://hub.misk.org.sa/en/programs/"
-          },
-          {
-            "text": "Events",
-            "href": "https://hub.misk.org.sa/en/events/"
-          },
-          {
-            "text": "العربية",
-            "href": "https://hub.misk.org.sa/ar/events/"
-          },
-          {
-            "text": "Skills",
-            "href": "https://hub.misk.org.sa/events/?category=Skills#event"
-          },
-          {
-            "text": "Share",
-            "href": "https://hub.misk.org.sa/en/events/#"
-          },
-          {
-            "text": "",
-            "href": "https://hub.misk.org.sa/en/events/#"
-          },
-          {
-            "text": "Skills",
-            "href": "https://hub.misk.org.sa/events/?category=Skills#event"
-          },
-          {
-            "text": "Share",
-            "href": "https://hub.misk.org.sa/en/events/#"
-          },
-          {
-            "text": "",
-            "href": "https://hub.misk.org.sa/en/events/#"
-          },
-          {
-            "text": "Skills",
-            "href": "https://hub.misk.org.sa/events/?category=Skills#event"
-          },
-          {
-            "text": "Share",
-            "href": "https://hub.misk.org.sa/en/events/#"
-          },
-          {
-            "text": "",
-            "href": "https://hub.misk.org.sa/en/events/#"
-          },
-          {
-            "text": "Skills",
-            "href": "https://hub.misk.org.sa/events/?category=Skills#event"
-          },
-          {
-            "text": "Share",
-            "href": "https://hub.misk.org.sa/en/events/#"
-          },
-          {
-            "text": "",
-            "href": "https://hub.misk.org.sa/en/events/#"
-          },
-          {
-            "text": "Skills",
-            "href": "https://hub.misk.org.sa/events/?category=Skills#event"
-          }
-        ]
-      },
-      "script_signals": {
-        "next_data_scripts": 0,
-        "nuxt_scripts": 0,
-        "json_ld_scripts": 0,
-        "large_inline_scripts": 5
-      },
-      "network_total": 4,
-      "network_endpoints": [
-        {
-          "method": "POST",
-          "status": 200,
-          "url": "https://mpc-prod-24-s6uit34pua-uw.a.run.app/events?cee=no",
-          "content_type": "application/json",
-          "resource_type": "fetch",
-          "request_post_data": "{\"event_name\":\"PageView\",\"smart_setup\":{\"auto_web_details_data\":\"{\\\"entity_brand\\\":[{\\\"rid\\\":\\\"28393245976984225\\\",\\\"v\\\":[\\\"Misk\\\"]}],\\\"page_title\\\":[{\\\"rid\\\":\\\"1105900455688213\\\",\\\"v\\\":[\\\"Misk Hub Events\\\"]}],\\\"page_type\\\":[{\\\"rid\\\":\\\"1106539052271313\\\",\\\"v\\\":[\\\"Misk Tracks\\\"]},{\\\"rid\\\":\\\"1130746109759727\\\",\\\"v\\\":[\\\"Misk Tracks \\\\nPrograms\\\\nEvents\\\\nInsights\\\\nالعربية\\\"]}],\\\"currencies_accepted\\\":[{\\\"rid\\\":\\\"1398884992013249\\\",\\\"v\\\":[\\\"Misk Tracks\\\"]}],\\\"author\\\":[{\\\"rid\\\":\\\"1535431418607857\\\",\\\"v\\\":[\\\"Misk Skills\\\"]},{\\\"rid\\\":\\\"1779463156667948\\\",\\\"v\\\":[\\\"Misk Tracks\\\"]}],\\\"publisher\\\":[{\\\"rid\\\":\\\"1820539572589382\\\",\\\"v\\\":[\\\"Misk Tracks\\\"]}]}\",\"is_auto_web_details\":true},\"event_id\":\"ob3_plugin-set_2bb0ddf5e69f82db76bcc65b1d3180b00930b3c672c8b64bd4186010cd7b9394\",\"fb.pixel_id\":\"1038245586939616\",\"fb.website_variable_advanced_matching\":{\"em\":[{\"v\":\"5af5c9d225aff67cab7943db43d980b0442389c23e4e5d289734918e8206325b\",\"s\":3}]},\"website_context\":{\"location\":\"https://hub.misk.org.sa/en/events/\",\"referrer\":\"\",\"isInIFrame\":false},\"fb.fbp\":\"fb.2.1793872182296.972491999884946929\"}",
-          "response_shape": "empty",
-          "preview": ""
-        },
-        {
-          "method": "POST",
-          "status": 200,
-          "url": "https://hub.misk.org.sa/api/events/RenderLazyLoadAllEventsOfSeries",
-          "content_type": "application/json",
-          "resource_type": "xhr",
-          "request_post_data": "{\"SkipCount\":0,\"CurrentCulture\":\"en-US\",\"CategoryId\":0,\"OrderBy\":\"\",\"EventTypeFilters\":[],\"LanguageFilters\":[],\"StatusFilters\":[],\"FromDate\":null,\"ToDate\":null,\"LocationId\":null,\"CurrentPageId\":\"4411\"}",
-          "response_shape": "json-like-invalid",
-          "preview": "{\"nextSkippedValue\":8,\"stringObjectValues\":\"<div class=\\\"article-outer v3\\\"><div class=\\\" time-label\\\"><span>Hybrid</span></div><div class=\\\"article-img\\\"><a href=\\\"/events/skills/stc-x-misk-workshops-series/\\\"><img src=\\\"/media/plrhq3qj/stc-cybersecurity-workshop_hub-en.png\\\" alt=\\\"logo\\\"></a></div><div class=\\\"article-content\\\"><div class=\\\"article-text-wrapper\\\"><div class=\\\"body-text-3 mgbx1 color-peach font-weight-200\\\" style=\\\"white-space:nowrap;\\\"><span class=\\\"color-peach mgafx1\\\"><i class=\\\"fas fa-circle\\\"></i></span>This event has Passed</div><div class=\\\"article-title\\\"><div class=\\\"article-title-inner 6 red\\\"><a href=/events/skills/stc-x-misk-workshops-series/><b>stc x Misk Workshops Series</b></a></div></div><div class=\\\"item-list\\\"><ul><li><i class=\\\"far fa-dxh-format font-weight-200\\\"></i><span>Arabic</span></li><li><i class=\\\"far fa-calendar font-weight-200\\\"></i><span>28 Oct 2026</span></li><li><i class=\\\"far fa-clock font-weight-200\\\"></i><span>2:00 pm : 3:00 pm</span></li></ul></div></div><div class=\\\"bottom-links-wrapper pdtx2 align-items-center event-item-card-wrapper\\\"><div class=\\\"card-btn-state-login d-none btn-bar-wrapper alone pdafx2\\\"><a href=\\\"/events/skills/stc-x-misk-workshops-series/\\\" class=\\\"card-btn-state-login d-none btn small light-turquoise\\\">More Details\\n</a></div><div class=\\\"card-btn-state-logout d-none w-100 btn-bar-wrapper pdafx2 alone\\\"><a href=\\\"/events/skills/stc-x-misk-workshops-series/\\\" class=\\\"card-btn-state-logout d-none btn small w-100 light-turquoise\\\">More Details\\n</a></div><div class=\\\"icon-link\\\"><a href=\\\"javascript:;\\\" data-recombee-id=\\\"9817\\\" data-id=\\\"9817\\\" class=\\\"btn-icon js-apply-now-show-sign-in btnBookmarkEventLogout\\\"><i class=\\\"far fa-bookmark\\\"></i></a><a id=\\\"\\\" href=\\\"javascript:;\\\" data-recomb"
-        },
-        {
-          "method": "POST",
-          "status": 200,
-          "url": "https://client-rapi-us-west.recombee.com/misk-hub-prod/recomms/users/c02ade362536438e8eaca78b83a82d21/items/?frontend_timestamp=1793872182&frontend_sign=7ef857841f208a7e9d3e79cd6377a57b4a929764",
-          "content_type": "application/json",
-          "resource_type": "xhr",
-          "request_post_data": "{\"count\":5,\"scenario\":\"Hero-Events-Listing-Anonymous\",\"returnProperties\":true,\"cascadeCreate\":true}",
-          "response_shape": "json-object:recommId,recomms,numberNextRecommsCalls",
-          "preview": "{\"recommId\": \"dab40aa981971700056347147f76ce0d\", \"recomms\": [], \"numberNextRecommsCalls\": 0}"
-        }
-      ],
-      "network_sample": [
-        {
-          "method": "POST",
-          "status": 200,
-          "url": "https://mpc-prod-24-s6uit34pua-uw.a.run.app/events?cee=no",
-          "content_type": "application/json",
-          "resource_type": "fetch",
-          "request_post_data": "{\"event_name\":\"PageView\",\"smart_setup\":{\"auto_web_details_data\":\"{\\\"entity_brand\\\":[{\\\"rid\\\":\\\"28393245976984225\\\",\\\"v\\\":[\\\"Misk\\\"]}],\\\"page_title\\\":[{\\\"rid\\\":\\\"1105900455688213\\\",\\\"v\\\":[\\\"Misk Hub Events\\\"]}],\\\"page_type\\\":[{\\\"rid\\\":\\\"1106539052271313\\\",\\\"v\\\":[\\\"Misk Tracks\\\"]},{\\\"rid\\\":\\\"1130746109759727\\\",\\\"v\\\":[\\\"Misk Tracks \\\\nPrograms\\\\nEvents\\\\nInsights\\\\nالعربية\\\"]}],\\\"currencies_accepted\\\":[{\\\"rid\\\":\\\"1398884992013249\\\",\\\"v\\\":[\\\"Misk Tracks\\\"]}],\\\"author\\\":[{\\\"rid\\\":\\\"1535431418607857\\\",\\\"v\\\":[\\\"Misk Skills\\\"]},{\\\"rid\\\":\\\"1779463156667948\\\",\\\"v\\\":[\\\"Misk Tracks\\\"]}],\\\"publisher\\\":[{\\\"rid\\\":\\\"1820539572589382\\\",\\\"v\\\":[\\\"Misk Tracks\\\"]}]}\",\"is_auto_web_details\":true},\"event_id\":\"ob3_plugin-set_2bb0ddf5e69f82db76bcc65b1d3180b00930b3c672c8b64bd4186010cd7b9394\",\"fb.pixel_id\":\"1038245586939616\",\"fb.website_variable_advanced_matching\":{\"em\":[{\"v\":\"5af5c9d225aff67cab7943db43d980b0442389c23e4e5d289734918e8206325b\",\"s\":3}]},\"website_context\":{\"location\":\"https://hub.misk.org.sa/en/events/\",\"referrer\":\"\",\"isInIFrame\":false},\"fb.fbp\":\"fb.2.1793872182296.972491999884946929\"}",
-          "response_shape": "empty",
-          "preview": ""
-        },
-        {
-          "method": "POST",
-          "status": 200,
-          "url": "https://hub.misk.org.sa/api/events/RenderLazyLoadAllEventsOfSeries",
-          "content_type": "application/json",
-          "resource_type": "xhr",
-          "request_post_data": "{\"SkipCount\":0,\"CurrentCulture\":\"en-US\",\"CategoryId\":0,\"OrderBy\":\"\",\"EventTypeFilters\":[],\"LanguageFilters\":[],\"StatusFilters\":[],\"FromDate\":null,\"ToDate\":null,\"LocationId\":null,\"CurrentPageId\":\"4411\"}",
-          "response_shape": "json-like-invalid",
-          "preview": "{\"nextSkippedValue\":8,\"stringObjectValues\":\"<div class=\\\"article-outer v3\\\"><div class=\\\" time-label\\\"><span>Hybrid</span></div><div class=\\\"article-img\\\"><a href=\\\"/events/skills/stc-x-misk-workshops-series/\\\"><img src=\\\"/media/plrhq3qj/stc-cybersecurity-workshop_hub-en.png\\\" alt=\\\"logo\\\"></a></div><div class=\\\"article-content\\\"><div class=\\\"article-text-wrapper\\\"><div class=\\\"body-text-3 mgbx1 color-peach font-weight-200\\\" style=\\\"white-space:nowrap;\\\"><span class=\\\"color-peach mgafx1\\\"><i class=\\\"fas fa-circle\\\"></i></span>This event has Passed</div><div class=\\\"article-title\\\"><div class=\\\"article-title-inner 6 red\\\"><a href=/events/skills/stc-x-misk-workshops-series/><b>stc x Misk Workshops Series</b></a></div></div><div class=\\\"item-list\\\"><ul><li><i class=\\\"far fa-dxh-format font-weight-200\\\"></i><span>Arabic</span></li><li><i class=\\\"far fa-calendar font-weight-200\\\"></i><span>28 Oct 2026</span></li><li><i class=\\\"far fa-clock font-weight-200\\\"></i><span>2:00 pm : 3:00 pm</span></li></ul></div></div><div class=\\\"bottom-links-wrapper pdtx2 align-items-center event-item-card-wrapper\\\"><div class=\\\"card-btn-state-login d-none btn-bar-wrapper alone pdafx2\\\"><a href=\\\"/events/skills/stc-x-misk-workshops-series/\\\" class=\\\"card-btn-state-login d-none btn small light-turquoise\\\">More Details\\n</a></div><div class=\\\"card-btn-state-logout d-none w-100 btn-bar-wrapper pdafx2 alone\\\"><a href=\\\"/events/skills/stc-x-misk-workshops-series/\\\" class=\\\"card-btn-state-logout d-none btn small w-100 light-turquoise\\\">More Details\\n</a></div><div class=\\\"icon-link\\\"><a href=\\\"javascript:;\\\" data-recombee-id=\\\"9817\\\" data-id=\\\"9817\\\" class=\\\"btn-icon js-apply-now-show-sign-in btnBookmarkEventLogout\\\"><i class=\\\"far fa-bookmark\\\"></i></a><a id=\\\"\\\" href=\\\"javascript:;\\\" data-recomb"
-        },
-        {
-          "method": "POST",
-          "status": 200,
-          "url": "https://client-rapi-us-west.recombee.com/misk-hub-prod/recomms/users/c02ade362536438e8eaca78b83a82d21/items/?frontend_timestamp=1793872182&frontend_sign=7ef857841f208a7e9d3e79cd6377a57b4a929764",
-          "content_type": "application/json",
-          "resource_type": "xhr",
-          "request_post_data": "{\"count\":5,\"scenario\":\"Hero-Events-Listing-Anonymous\",\"returnProperties\":true,\"cascadeCreate\":true}",
-          "response_shape": "json-object:recommId,recomms,numberNextRecommsCalls",
-          "preview": "{\"recommId\": \"dab40aa981971700056347147f76ce0d\", \"recomms\": [], \"numberNextRecommsCalls\": 0}"
-        },
-        {
-          "method": "POST",
-          "status": 200,
-          "url": "https://mpc-prod-24-s6uit34pua-uw.a.run.app/events?cee=no",
-          "content_type": "application/json",
-          "resource_type": "fetch",
-          "request_post_data": "{\"event_name\":\"PageView\",\"smart_setup\":{\"auto_web_details_data\":\"{\\\"entity_brand\\\":[{\\\"rid\\\":\\\"28393245976984225\\\",\\\"v\\\":[\\\"Misk\\\"]}],\\\"page_title\\\":[{\\\"rid\\\":\\\"1105900455688213\\\",\\\"v\\\":[\\\"Misk Hub Events\\\"]}],\\\"page_type\\\":[{\\\"rid\\\":\\\"1106539052271313\\\",\\\"v\\\":[\\\"Misk Tracks\\\"]},{\\\"rid\\\":\\\"1130746109759727\\\",\\\"v\\\":[\\\"Misk Tracks \\\\nPrograms\\\\nEvents\\\\nInsights\\\\nالعربية\\\"]}],\\\"currencies_accepted\\\":[{\\\"rid\\\":\\\"1398884992013249\\\",\\\"v\\\":[\\\"Misk Tracks\\\"]}],\\\"author\\\":[{\\\"rid\\\":\\\"1535431418607857\\\",\\\"v\\\":[\\\"Misk Skills\\\"]},{\\\"rid\\\":\\\"1779463156667948\\\",\\\"v\\\":[\\\"Misk Tracks\\\"]}],\\\"publisher\\\":[{\\\"rid\\\":\\\"1820539572589382\\\",\\\"v\\\":[\\\"Misk Tracks\\\"]}]}\",\"is_auto_web_details\":true},\"event_id\":\"ob3_plugin-set_496438f10a437ef194c8bafa3f21a006b251e09acce0656e469c23264d1667b6\",\"fb.pixel_id\":\"1038245586939616\",\"fb.website_variable_advanced_matching\":{\"em\":[{\"v\":\"5af5c9d225aff67cab7943db43d980b0442389c23e4e5d289734918e8206325b\",\"s\":3}]},\"website_context\":{\"location\":\"https://hub.misk.org.sa/en/events/\",\"referrer\":\"\",\"isInIFrame\":false},\"fb.fbp\":\"fb.2.1793872182296.972491999884946929\"}",
-          "response_shape": "empty",
-          "preview": ""
-        }
-      ]
-    },
-    {
-      "id": "saudi-pro-league-fixtures",
-      "probed_at": "2026-11-02T09:53:26.895Z",
-      "name": "Saudi Pro League Fixtures",
-      "priority": 30,
-      "url": "https://api.saudi-pro-league.pulselive.com/football/fixtures?comps=215&compSeasons=859&pageSize=100&statuses=C,U,L&sort=asc",
-      "final_url": "chrome-error://chromewebdata/",
-      "status": "error",
-      "http_status": 0,
-      "navigation_error": "page.goto: net::ERR_NAME_NOT_RESOLVED at https://api.saudi-pro-league.pulselive.com/football/fixtures?comps=215&compSeasons=859&pageSize=100&statuses=C,U,L&sort=asc\nCall log:\n  - navigating to \"https://api.saudi-pro-league.pulselive.com/football/fixtures?comps=215&compSeasons=859&pageSize=100&statuses=C,U,L&sort=asc\", waiting until \"domcontentloaded\"\n",
-      "duration_ms": 15660,
-      "classification": "empty-or-shell",
-      "next_action": "اعتبرها shell وابحث عن API أو مسار بديل قبل أي collector.",
-      "title": "",
-      "text_bytes": 0,
-      "html_bytes": 0,
-      "html_snapshot": "data/raw/browser-probes/saudi-pro-league-fixtures-2026-11-02T09-48-34-628Z.html",
       "screenshot": "",
       "signals": {
         "has_next_data": false,
@@ -682,44 +96,8 @@
       "network_sample": []
     },
     {
-      "id": "moc-cultural-subportals",
-      "probed_at": "2026-11-02T09:55:41.177Z",
-      "name": "Ministry of Culture Commission Calendars",
-      "priority": 37,
-      "url": "https://music.moc.gov.sa/Cultural-Calendar",
-      "final_url": "chrome-error://chromewebdata/",
-      "status": "error",
-      "http_status": 0,
-      "navigation_error": "page.goto: Timeout 30000ms exceeded.\nCall log:\n  - navigating to \"https://music.moc.gov.sa/Cultural-Calendar\", waiting until \"domcontentloaded\"\n",
-      "duration_ms": 134252,
-      "classification": "empty-or-shell",
-      "next_action": "اعتبرها shell وابحث عن API أو مسار بديل قبل أي collector.",
-      "title": "",
-      "text_bytes": 0,
-      "html_bytes": 0,
-      "html_snapshot": "data/raw/browser-probes/moc-cultural-subportals-2026-11-02T09-48-34-628Z.html",
-      "screenshot": "",
-      "signals": {
-        "has_next_data": false,
-        "has_nuxt": false,
-        "has_json_ld": false,
-        "has_event_schema": false,
-        "date_snippets": [],
-        "event_like_links": []
-      },
-      "script_signals": {
-        "next_data_scripts": 0,
-        "nuxt_scripts": 0,
-        "json_ld_scripts": 0,
-        "large_inline_scripts": 0
-      },
-      "network_total": 0,
-      "network_endpoints": [],
-      "network_sample": []
-    },
-    {
       "id": "riyadh-city-events",
-      "probed_at": "2026-11-05T09:49:55.685Z",
+      "probed_at": "2026-11-06T09:31:59.209Z",
       "name": "Riyadh City Events",
       "priority": 51,
       "url": "https://riyadh.sa/en/events/all",
@@ -727,14 +105,14 @@
       "status": "ok",
       "http_status": 200,
       "navigation_error": "",
-      "duration_ms": 6397,
+      "duration_ms": 7049,
       "classification": "rendered-text-review",
       "next_action": "راجع الصفحة يدويًا وحدد هل هي مصدر أدلة أم صفحة تعريفية فقط.",
       "title": "maintenance",
       "text_bytes": 305,
       "html_bytes": 425365,
-      "html_snapshot": "data/raw/browser-probes/riyadh-city-events-2026-11-05T09-46-54-009Z.html",
-      "screenshot": "data/raw/browser-probes/riyadh-city-events-2026-11-05T09-46-54-009Z.png",
+      "html_snapshot": "data/raw/browser-probes/riyadh-city-events-2026-11-06T09-29-33-672Z.html",
+      "screenshot": "data/raw/browser-probes/riyadh-city-events-2026-11-06T09-29-33-672Z.png",
       "signals": {
         "has_next_data": false,
         "has_nuxt": false,
@@ -754,23 +132,23 @@
       "network_sample": []
     },
     {
-      "id": "qassim-chamber-events",
-      "probed_at": "2026-11-05T09:49:25.967Z",
-      "name": "Qassim Chamber Events",
-      "priority": 60,
-      "url": "https://tc.qcc.org.sa/",
-      "final_url": "https://tc.qcc.org.sa/",
-      "status": "ok",
-      "http_status": 403,
-      "navigation_error": "",
-      "duration_ms": 11692,
-      "classification": "blocked-or-protected",
-      "next_action": "لا تلتف على الحماية؛ صنف المصدر partnership/API أو ابحث عن مسار رسمي.",
-      "title": "لحظة…",
-      "text_bytes": 371,
-      "html_bytes": 44894,
-      "html_snapshot": "data/raw/browser-probes/qassim-chamber-events-2026-11-05T09-46-54-009Z.html",
-      "screenshot": "data/raw/browser-probes/qassim-chamber-events-2026-11-05T09-46-54-009Z.png",
+      "id": "asharqia-chamber-events",
+      "probed_at": "2026-11-06T09:31:52.125Z",
+      "name": "Asharqia Chamber Events",
+      "priority": 59,
+      "url": "https://www.chamber.org.sa/sites/Arabic/Events/ChamberEvents/Pages/AllChamberEvents.aspx",
+      "final_url": "chrome-error://chromewebdata/",
+      "status": "error",
+      "http_status": 0,
+      "navigation_error": "page.goto: Timeout 30000ms exceeded.\nCall log:\n  - navigating to \"https://www.chamber.org.sa/sites/Arabic/Events/ChamberEvents/Pages/AllChamberEvents.aspx\", waiting until \"domcontentloaded\"\n",
+      "duration_ms": 136724,
+      "classification": "empty-or-shell",
+      "next_action": "اعتبرها shell وابحث عن API أو مسار بديل قبل أي collector.",
+      "title": "",
+      "text_bytes": 0,
+      "html_bytes": 0,
+      "html_snapshot": "data/raw/browser-probes/asharqia-chamber-events-2026-11-06T09-29-33-672Z.html",
+      "screenshot": "",
       "signals": {
         "has_next_data": false,
         "has_nuxt": false,
