@@ -1,9 +1,9 @@
 # Future Skills Program Enrichment Report
 
-- generated_at: 2026-11-06T09:39:06.861Z
+- generated_at: 2026-11-07T09:26:53.435Z
 - targets: 29
-- enriched: 25
-- failed: 4
+- enriched: 26
+- failed: 3
 
 ## Enriched
 
@@ -27,6 +27,7 @@
 - AWS Solutions Architect – Associate Practical (13054) - outcomes=1, topics=1, requirements=4, metadata=8
 - CompTIA Network+ (13055) - outcomes=1, topics=1, requirements=4, metadata=8
 - Power BI for Beginners (13056) - outcomes=1, topics=1, requirements=4, metadata=8
+- Cloud for AI, Big Data & Machine Learning (13060) - outcomes=1, topics=1, requirements=4, metadata=8
 - CCNP (13061) - outcomes=1, topics=1, requirements=4, metadata=8
 - Data Analysis with Python (13062) - outcomes=1, topics=1, requirements=4, metadata=8
 - Red Hat Certified System Administrator (RHCSA) (13063) - outcomes=1, topics=1, requirements=4, metadata=8
@@ -38,4 +39,3 @@
 - Linux Administration (13057) - HTTP 404
 - CCNA (13058) - fetch failed
 - Responsible AI, Ethics and AI Governance (13059) - The operation was aborted due to timeout
-- Cloud for AI, Big Data & Machine Learning (13060) - fetch failed

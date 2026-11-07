@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-06T09:39:03.456Z",
+  "generated_at": "2026-11-07T09:26:49.720Z",
   "catalog": "data/events_catalog.json",
   "candidates": "data/source_candidates.json",
   "manifest": "data/event_image_cache_manifest.json",
@@ -9,12 +9,104 @@
     "min_intersection": 2
   },
   "totals": {
-    "pdf_crop_assignments": 26,
-    "verified": 26,
-    "struck": 0,
-    "slots_seen_this_cycle": 30
+    "pdf_crop_assignments": 30,
+    "verified": 17,
+    "struck": 13,
+    "slots_seen_this_cycle": 35
   },
-  "struck": [],
+  "struck": [
+    {
+      "id": "event-صندوق-أسامة-من-مخرج-ثمانية",
+      "title": "صندوق أسامة من مخرج ثمانية",
+      "file": "visit-saudi-summer-2026-p009-top-right.png",
+      "reason": "slot-vacated",
+      "detail": "no dated card currently occupies page 9 top-right of https://www.visitsaudi.com/content/dam/documents/saudi-calendar-ar.pdf"
+    },
+    {
+      "id": "event-معرض-قلب-البحر",
+      "title": "معرض قلب البحر",
+      "file": "visit-saudi-summer-2026-p051-bottom-left.png",
+      "reason": "slot-vacated",
+      "detail": "no dated card currently occupies page 51 bottom-left of https://www.visitsaudi.com/content/dam/documents/saudi-calendar-ar.pdf"
+    },
+    {
+      "id": "event-معرض-في-تتبّع-ذكريات-غامرة",
+      "title": "معرض في تتبّع ذكريات غامرة",
+      "file": "visit-saudi-summer-2026-p051-bottom-right.png",
+      "reason": "slot-vacated",
+      "detail": "no dated card currently occupies page 51 bottom-right of https://www.visitsaudi.com/content/dam/documents/saudi-calendar-ar.pdf"
+    },
+    {
+      "id": "event-استمرارية-26",
+      "title": "استمرارية 26",
+      "file": "visit-saudi-summer-2026-p005-top-right.jpg",
+      "reason": "slot-vacated",
+      "detail": "no dated card currently occupies page 5 top-right of https://www.visitsaudi.com/content/dam/documents/saudi-calendar-ar.pdf"
+    },
+    {
+      "id": "event-ربع-تون",
+      "title": "ربع تون",
+      "file": "visit-saudi-summer-2026-p006-top-right.jpg",
+      "reason": "slot-vacated",
+      "detail": "no dated card currently occupies page 6 top-right of https://www.visitsaudi.com/content/dam/documents/saudi-calendar-ar.pdf"
+    },
+    {
+      "id": "event-مسار-المشي-بين-معالم-الحِ-جر-الجيولوجية",
+      "title": "مسار المشي بين معالم الحِ جر الجيولوجية",
+      "file": "visit-saudi-summer-2026-p022-bottom-right.png",
+      "reason": "slot-vacated",
+      "detail": "no dated card currently occupies page 22 bottom-right of https://www.visitsaudi.com/content/dam/documents/saudi-calendar-ar.pdf"
+    },
+    {
+      "id": "event-وقف-عرض-نمر-الكوميدي-مباشر-في-جدة",
+      "title": "وقف! عرض نمر الكوميدي مباشر في جدة",
+      "file": "visit-saudi-summer-2026-p059-top-right.png",
+      "reason": "slot-vacated",
+      "detail": "no dated card currently occupies page 59 top-right of https://www.visitsaudi.com/content/dam/documents/saudi-calendar-ar.pdf"
+    },
+    {
+      "id": "event-حفلة-نانسي-عجرم",
+      "title": "حفلة نانسي عجرم",
+      "file": "visit-saudi-summer-2026-p021-top-left.png",
+      "reason": "slot-vacated",
+      "detail": "no dated card currently occupies page 21 top-left of https://www.visitsaudi.com/content/dam/documents/saudi-calendar-ar.pdf"
+    },
+    {
+      "id": "event-عروض-المناطيد-المضيئة",
+      "title": "عروض المناطيد المضيئة",
+      "file": "visit-saudi-summer-2026-p026-top-right.png",
+      "reason": "slot-vacated",
+      "detail": "no dated card currently occupies page 26 top-right of https://www.visitsaudi.com/content/dam/documents/saudi-calendar-ar.pdf"
+    },
+    {
+      "id": "event-عرض-كوميدي-مع-ماريو-يزبك",
+      "title": "عرض كوميدي مع ماريو يزبك",
+      "file": "visit-saudi-summer-2026-p009-top-left.jpg",
+      "reason": "slot-vacated",
+      "detail": "no dated card currently occupies page 9 top-left of https://www.visitsaudi.com/content/dam/documents/saudi-calendar-ar.pdf"
+    },
+    {
+      "id": "event-الضحك-في-الترجمة-عرض-كوميدي-مع-شون-شدياق",
+      "title": "الضحك في الترجمة - عرض كوميدي مع شون شدياق",
+      "file": "visit-saudi-summer-2026-p009-bottom-right.jpg",
+      "reason": "slot-vacated",
+      "detail": "no dated card currently occupies page 9 bottom-right of https://www.visitsaudi.com/content/dam/documents/saudi-calendar-ar.pdf"
+    },
+    {
+      "id": "event-على-موج-الخبر",
+      "title": "على موج الخبر",
+      "file": "visit-saudi-summer-2026-p027-bottom-right.jpg",
+      "reason": "slot-vacated",
+      "detail": "no dated card currently occupies page 27 bottom-right of https://www.visitsaudi.com/content/dam/documents/saudi-calendar-ar.pdf"
+    },
+    {
+      "id": "event-بطولة-الفنون-القتالية",
+      "title": "بطولة الفنون القتالية",
+      "file": "visit-saudi-summer-2026-p027-bottom-left.jpg",
+      "reason": "slot-vacated",
+      "detail": "no dated card currently occupies page 27 bottom-left of https://www.visitsaudi.com/content/dam/documents/saudi-calendar-ar.pdf"
+    }
+  ],
   "verified": [
     {
       "id": "event-سوق-الثلاثاء-الشعبي",
@@ -27,43 +119,11 @@
       ]
     },
     {
-      "id": "event-صندوق-أسامة-من-مخرج-ثمانية",
-      "title": "صندوق أسامة من مخرج ثمانية",
-      "file": "visit-saudi-summer-2026-p009-top-right.png",
+      "id": "event-الأخطبوطية",
+      "title": "الاخطبوطية",
+      "file": "visit-saudi-summer-2026-p012-bottom-right.png",
       "matched_tokens": [
-        "صندوق",
-        "اسامه",
-        "مخرج",
-        "ثمانيه"
-      ]
-    },
-    {
-      "id": "event-معرض-قلب-البحر",
-      "title": "معرض قلب البحر",
-      "file": "visit-saudi-summer-2026-p051-bottom-left.png",
-      "matched_tokens": [
-        "معرض",
-        "قلب",
-        "البحر"
-      ]
-    },
-    {
-      "id": "event-معرض-في-تتبّع-ذكريات-غامرة",
-      "title": "معرض في تتبّع ذكريات غامرة",
-      "file": "visit-saudi-summer-2026-p051-bottom-right.png",
-      "matched_tokens": [
-        "معرض",
-        "تتبع",
-        "ذكريات",
-        "غامره"
-      ]
-    },
-    {
-      "id": "event-استمرارية-26",
-      "title": "استمرارية 26",
-      "file": "visit-saudi-summer-2026-p005-top-right.jpg",
-      "matched_tokens": [
-        "استمراريه"
+        "الاخطبوطيه"
       ]
     },
     {
@@ -76,12 +136,12 @@
       ]
     },
     {
-      "id": "event-ربع-تون",
-      "title": "ربع تون",
-      "file": "visit-saudi-summer-2026-p006-top-right.jpg",
+      "id": "event-الاخطبوطية-كيدز",
+      "title": "الاخطبوطية كيدز",
+      "file": "visit-saudi-summer-2026-p012-top-right.png",
       "matched_tokens": [
-        "ربع",
-        "تون"
+        "الاخطبوطيه",
+        "كيدز"
       ]
     },
     {
@@ -96,19 +156,6 @@
         "كوميدي",
         "لجون",
         "اشقر"
-      ]
-    },
-    {
-      "id": "event-مسار-المشي-بين-معالم-الحِ-جر-الجيولوجية",
-      "title": "مسار المشي بين معالم الحِ جر الجيولوجية",
-      "file": "visit-saudi-summer-2026-p022-bottom-right.png",
-      "matched_tokens": [
-        "مسار",
-        "المشي",
-        "بين",
-        "معالم",
-        "الح",
-        "الجيولوجيه"
       ]
     },
     {
@@ -149,19 +196,6 @@
       ]
     },
     {
-      "id": "event-وقف-عرض-نمر-الكوميدي-مباشر-في-جدة",
-      "title": "وقف! عرض نمر الكوميدي مباشر في جدة",
-      "file": "visit-saudi-summer-2026-p059-top-right.png",
-      "matched_tokens": [
-        "وقف",
-        "عرض",
-        "نمر",
-        "الكوميدي",
-        "مباشر",
-        "جده"
-      ]
-    },
-    {
       "id": "event-كراون-جول",
       "title": "كراون جول",
       "file": "visit-saudi-summer-2026-p004-top-right.png",
@@ -189,47 +223,14 @@
       ]
     },
     {
-      "id": "event-حفلة-نانسي-عجرم",
-      "title": "حفلة نانسي عجرم",
-      "file": "visit-saudi-summer-2026-p021-top-left.png",
+      "id": "event-موسم-ملح-القصب-الرابع",
+      "title": "موسم ملح القصب الرابع",
+      "file": "visit-saudi-summer-2026-p041-top-left.png",
       "matched_tokens": [
-        "حفله",
-        "نانسي",
-        "عجرم"
-      ]
-    },
-    {
-      "id": "event-عروض-المناطيد-المضيئة",
-      "title": "عروض المناطيد المضيئة",
-      "file": "visit-saudi-summer-2026-p026-top-right.png",
-      "matched_tokens": [
-        "عروض",
-        "المناطيد",
-        "المضييه"
-      ]
-    },
-    {
-      "id": "event-عرض-كوميدي-مع-ماريو-يزبك",
-      "title": "عرض كوميدي مع ماريو يزبك",
-      "file": "visit-saudi-summer-2026-p009-top-left.jpg",
-      "matched_tokens": [
-        "عرض",
-        "كوميدي",
-        "ماريو",
-        "يزبك"
-      ]
-    },
-    {
-      "id": "event-الضحك-في-الترجمة-عرض-كوميدي-مع-شون-شدياق",
-      "title": "الضحك في الترجمة - عرض كوميدي مع شون شدياق",
-      "file": "visit-saudi-summer-2026-p009-bottom-right.jpg",
-      "matched_tokens": [
-        "الضحك",
-        "الترجمه",
-        "عرض",
-        "كوميدي",
-        "شون",
-        "شدياق"
+        "موسم",
+        "ملح",
+        "القصب",
+        "الرابع"
       ]
     },
     {
@@ -251,26 +252,6 @@
       ]
     },
     {
-      "id": "event-على-موج-الخبر",
-      "title": "على موج الخبر",
-      "file": "visit-saudi-summer-2026-p027-bottom-right.jpg",
-      "matched_tokens": [
-        "علي",
-        "موج",
-        "الخبر"
-      ]
-    },
-    {
-      "id": "event-بطولة-الفنون-القتالية",
-      "title": "بطولة الفنون القتالية",
-      "file": "visit-saudi-summer-2026-p027-bottom-left.jpg",
-      "matched_tokens": [
-        "بطوله",
-        "الفنون",
-        "القتاليه"
-      ]
-    },
-    {
       "id": "event-نصف-ماراثون-العا",
       "title": "نصف ماراثون العا",
       "file": "visit-saudi-summer-2026-p024-bottom-left.png",
@@ -278,6 +259,17 @@
         "نصف",
         "ماراثون",
         "العا"
+      ]
+    },
+    {
+      "id": "event-مهرجان-تمور-الاحساء-المصنعة",
+      "title": "مهرجان تمور الاحساء المصنعة",
+      "file": "visit-saudi-summer-2026-p033-bottom-left.png",
+      "matched_tokens": [
+        "مهرجان",
+        "تمور",
+        "الاحساء",
+        "المصنعه"
       ]
     }
   ],
