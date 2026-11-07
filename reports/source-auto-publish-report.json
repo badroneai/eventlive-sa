@@ -1,18 +1,18 @@
 {
-  "published_at": "2026-11-07T09:26:45.290Z",
+  "published_at": "2026-11-07T17:08:27.379Z",
   "dry_run": false,
   "include_partner": true,
   "source_candidates": "data/source_candidates.json",
   "events_catalog": "data/events_catalog.json",
-  "candidates_seen": 336,
+  "candidates_seen": 330,
   "totals": {
-    "candidates_seen": 336,
-    "published": 5,
-    "linked_existing": 314,
+    "candidates_seen": 330,
+    "published": 2,
+    "linked_existing": 311,
     "blocked": 17,
     "duplicate_review_alerts": 3,
     "category_fallback_alerts": 0,
-    "reconciled": 319,
+    "reconciled": 313,
     "session_windows_reconciled": 0
   },
   "session_window_changes": [],
@@ -77,29 +77,14 @@
   ],
   "published": [
     {
-      "candidate_id": "candidate-umm-al-qura-events-فعالية-بعنوان-حراك-20261108-78889f9b",
-      "event_id": "event-فعالية-بعنوان-حراك",
-      "title": "فعالية بعنوان حراك"
+      "candidate_id": "candidate-visit-saudi-calendar-pdf-سيرك-فونتانا-20260916-4a38d19e",
+      "event_id": "event-سيرك-فونتانا",
+      "title": "سيرك فونتانا"
     },
     {
-      "candidate_id": "candidate-umm-al-qura-events-فعالية-بعنوان-مسابقة-ctf-20261108-9beb48a7",
-      "event_id": "event-فعالية-بعنوان-مسابقة-ctf",
-      "title": "فعالية بعنوان مسابقة CTF"
-    },
-    {
-      "candidate_id": "candidate-visit-saudi-calendar-pdf-موسم-ملح-القصب-الرابع-20261119-4a38d19e",
-      "event_id": "event-موسم-ملح-القصب-الرابع",
-      "title": "موسم ملح القصب الرابع"
-    },
-    {
-      "candidate_id": "candidate-visit-saudi-calendar-pdf-مهرجان-تمور-الاحساء-المصنعة-20261220-4a38d19e",
-      "event_id": "event-مهرجان-تمور-الاحساء-المصنعة",
-      "title": "مهرجان تمور الاحساء المصنعة"
-    },
-    {
-      "candidate_id": "candidate-visit-saudi-seasons-saudi-cup-2027-20270205-1876cb5f",
-      "event_id": "event-saudi-cup-2027",
-      "title": "Saudi Cup 2027"
+      "candidate_id": "candidate-visit-saudi-calendar-pdf-سينما-فوكس-مونلايت-قريبـاً-20261115-4a38d19e",
+      "event_id": "event-سينما-فوكس-مونلايت-قريبـاً",
+      "title": "سينما فوكس مونلايت قريبـاً"
     }
   ],
   "linked_existing": [
@@ -215,7 +200,7 @@
       "candidate_id": "candidate-visit-saudi-calendar-pdf-الاخطبوطية-20260704-4a38d19e",
       "event_id": "event-الأخطبوطية",
       "title": "الاخطبوطية",
-      "reason": "trusted duplicate linked to existing catalog event"
+      "reason": "already linked to catalog event"
     },
     {
       "candidate_id": "candidate-umm-al-qura-events-نموذج-التسجيل-والسداد-للدبلوم-المتوسط-في-البصريات-لخارج-مكة-20260801-70d68f2f",
@@ -458,12 +443,6 @@
       "reason": "already linked to catalog event"
     },
     {
-      "candidate_id": "candidate-visit-saudi-calendar-pdf-سيرك-فونتانا-20260916-4a38d19e",
-      "event_id": "event-سيرك-فونتانا",
-      "title": "سيرك فونتانا",
-      "reason": "already linked to catalog event"
-    },
-    {
       "candidate_id": "candidate-tuwaiq-academy-bootcamps-معسكر-الجرائم-السيبرانية-والتحقيق-الجنائي-الرقمي-المتقدم-20260920-6e2c36f8",
       "event_id": "event-معسكر-الجرائم-السيبرانية-والتحقيق-الجنائي-الرقمي-المتقدم",
       "title": "معسكر الجرائم السيبرانية والتحقيق الجنائي الرقمي المتقدم",
@@ -479,7 +458,7 @@
       "candidate_id": "candidate-visit-saudi-calendar-pdf-الاخطبوطية-كيدز-20260925-4a38d19e",
       "event_id": "event-الاخطبوطية-كيدز",
       "title": "الاخطبوطية كيدز",
-      "reason": "trusted duplicate linked to existing catalog event"
+      "reason": "already linked to catalog event"
     },
     {
       "candidate_id": "candidate-tuwaiq-academy-bootcamps-معسكر-التقنيات-الناشئة-والعوالم-الافتراضية-20260927-0647b188",
@@ -572,12 +551,6 @@
       "reason": "already linked to catalog event"
     },
     {
-      "candidate_id": "candidate-umm-al-qura-events-لقاء-للإجابة-عن-الاستفسارات-20261025-356a27db",
-      "event_id": "event-لقاء-للإجابة-عن-الاستفسارات",
-      "title": "لقاء للإجابة عن الاستفسارات",
-      "reason": "already linked to catalog event"
-    },
-    {
       "candidate_id": "candidate-ithra-events-creative-writing-club-20261026-a7f18ce9",
       "event_id": "event-creative-writing-club",
       "title": "Creative Writing Club",
@@ -638,12 +611,6 @@
       "reason": "already linked to catalog event"
     },
     {
-      "candidate_id": "candidate-umm-al-qura-events-شهادة-محترف-إدارة-المشاريع-pmp-20261101-dfc818b0",
-      "event_id": "event-برنامج-إدارة-المشاريع-الاحترافية-pmp",
-      "title": "شهادة محترف إدارة المشاريع (PMP)",
-      "reason": "already linked to catalog event"
-    },
-    {
       "candidate_id": "candidate-visit-saudi-calendar-pdf-enc-2026-20261102-4a38d19e",
       "event_id": "event-esports-nations-cup",
       "title": "ENC 2026",
@@ -692,12 +659,6 @@
       "reason": "already linked to catalog event"
     },
     {
-      "candidate_id": "candidate-visit-saudi-calendar-uci-urban-cycling-world-championships-20261104-4fa77aa9",
-      "event_id": "event-uci-urban-cycling-world-championships",
-      "title": "UCI URBAN CYCLING WORLD CHAMPIONSHIPS",
-      "reason": "already linked to catalog event"
-    },
-    {
       "candidate_id": "candidate-ithra-events-arabic-children-book-club-7-9-20261104-810c285f",
       "event_id": "event-arabic-children-book-club-7-9",
       "title": "Arabic Children Book Club (7 - 9)",
@@ -719,12 +680,6 @@
       "candidate_id": "candidate-dhahran-expo-calendar-world-firefighters-challenge-20261105-18d15b29",
       "event_id": "event-world-firefighters-challenge",
       "title": "World Firefighters Challenge",
-      "reason": "already linked to catalog event"
-    },
-    {
-      "candidate_id": "candidate-hayy-jameel-events-hayy-markets-azka-farmers-market-pomegranates-edition-20261105-ee290c41",
-      "event_id": "event-hayy-markets-azka-farmers-market-pomegranates-edition",
-      "title": "Hayy Markets | Azka Farmers Market: Pomegranates Edition",
       "reason": "already linked to catalog event"
     },
     {
@@ -764,12 +719,6 @@
       "reason": "already linked to catalog event"
     },
     {
-      "candidate_id": "candidate-experience-alula-events-stargazing-at-alula-fort-20261106-f035d3c8",
-      "event_id": "event-stargazing-at-alula-fort",
-      "title": "Stargazing at AlUla Fort",
-      "reason": "already linked to catalog event"
-    },
-    {
       "candidate_id": "candidate-visit-saudi-calendar-pdf-وقف-عرض-نمر-الكوميدي-مباشر-في-جدة-20261107-4a38d19e",
       "event_id": "event-وقف-عرض-نمر-الكوميدي-مباشر-في-جدة",
       "title": "وقف! عرض نمر الكوميدي مباشر في جدة",
@@ -785,12 +734,6 @@
       "candidate_id": "candidate-hayy-jameel-events-hayy-cinema-the-golden-palm-film-programme-the-best-of-the-saudi-film-fe-20261107-a46a5479",
       "event_id": "event-hayy-cinema-the-golden-palm-film-programme-the-best-of-the-saudi-film-fe",
       "title": "Hayy Cinema | The Golden Palm Film Programme: The Best of the Saudi Film Festival",
-      "reason": "already linked to catalog event"
-    },
-    {
-      "candidate_id": "candidate-hayy-jameel-events-art-jameel-publishing-jeddah-roundabouts-circling-the-city-20261107-439b72b6",
-      "event_id": "event-art-jameel-publishing-jeddah-roundabouts-circling-the-city",
-      "title": "Art Jameel Publishing | Jeddah Roundabouts: Circling the City",
       "reason": "already linked to catalog event"
     },
     {
@@ -818,9 +761,21 @@
       "reason": "already linked to catalog event"
     },
     {
+      "candidate_id": "candidate-umm-al-qura-events-فعالية-بعنوان-حراك-20261108-78889f9b",
+      "event_id": "event-فعالية-بعنوان-حراك",
+      "title": "فعالية بعنوان حراك",
+      "reason": "already linked to catalog event"
+    },
+    {
       "candidate_id": "candidate-umm-al-qura-events-ورشة-عمل-بعنوان-فن-الخط-العربي-20261108-b30fe12b",
       "event_id": "event-ورشة-عمل-بعنوان-فن-الخط-العربي",
       "title": "ورشة عمل بعنوان فن الخط العربي",
+      "reason": "already linked to catalog event"
+    },
+    {
+      "candidate_id": "candidate-umm-al-qura-events-فعالية-بعنوان-مسابقة-ctf-20261108-9beb48a7",
+      "event_id": "event-فعالية-بعنوان-مسابقة-ctf",
+      "title": "فعالية بعنوان مسابقة CTF",
       "reason": "already linked to catalog event"
     },
     {
@@ -1190,12 +1145,6 @@
       "reason": "already linked to catalog event"
     },
     {
-      "candidate_id": "candidate-visit-saudi-calendar-pdf-سينما-فوكس-مونلايت-قريبـاً-20261115-4a38d19e",
-      "event_id": "event-سينما-فوكس-مونلايت-قريبـاً",
-      "title": "سينما فوكس مونلايت قريبـاً",
-      "reason": "already linked to catalog event"
-    },
-    {
       "candidate_id": "candidate-visit-saudi-calendar-pdf-سينما-ڤوكس-مونلايت-في-أور-هابيتاس-قريبـاً-20261115-4a38d19e",
       "event_id": "event-سينما-فوكس-مونلايت-قريبـاً",
       "title": "سينما ڤوكس مونلايت في أور هابيتاس قريبـاً",
@@ -1307,6 +1256,12 @@
       "candidate_id": "candidate-visit-saudi-calendar-comedy-show-by-mario-yazbeck-in-riyadh-20261118-bede1257",
       "event_id": "event-comedy-show-by-mario-yazbeck-in-riyadh",
       "title": "Comedy Show by Mario Yazbeck in Riyadh",
+      "reason": "already linked to catalog event"
+    },
+    {
+      "candidate_id": "candidate-visit-saudi-calendar-pdf-موسم-ملح-القصب-الرابع-20261119-4a38d19e",
+      "event_id": "event-موسم-ملح-القصب-الرابع",
+      "title": "موسم ملح القصب الرابع",
       "reason": "already linked to catalog event"
     },
     {
@@ -1748,6 +1703,12 @@
       "reason": "already linked to catalog event"
     },
     {
+      "candidate_id": "candidate-visit-saudi-calendar-pdf-مهرجان-تمور-الاحساء-المصنعة-20261220-4a38d19e",
+      "event_id": "event-مهرجان-تمور-الاحساء-المصنعة",
+      "title": "مهرجان تمور الاحساء المصنعة",
+      "reason": "already linked to catalog event"
+    },
+    {
       "candidate_id": "candidate-rfecc-whats-on-china-homelife-saudi-arabia-2026-20261220-f2ff78ec",
       "event_id": "event-china-homelife-saudi-arabia-2026",
       "title": "China Homelife Saudi Arabia 2026",
@@ -1907,6 +1868,12 @@
       "candidate_id": "candidate-riyadh-city-events-24th-erra-annual-conference-20270201-f9b3d5e8",
       "event_id": "event-24th-erra-annual-conference",
       "title": "24th ERRA Annual Conference",
+      "reason": "already linked to catalog event"
+    },
+    {
+      "candidate_id": "candidate-visit-saudi-seasons-saudi-cup-2027-20270205-1876cb5f",
+      "event_id": "event-saudi-cup-2027",
+      "title": "Saudi Cup 2027",
       "reason": "already linked to catalog event"
     },
     {

@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "generated_at": "2026-11-07T09:40:18.628Z",
+  "generated_at": "2026-11-07T17:21:47.341Z",
   "events": {
     "event-skill-development-initiative": {
       "identity": "skill development initiative|riyadh|2021-07-14",
@@ -702,6 +702,11 @@
       "first_seen": "2026-09-17",
       "last_seen": "2026-11-07"
     },
+    "event-سيرك-فونتانا": {
+      "identity": "سيرك فونتانا|aseer|2026-11-05",
+      "first_seen": "2026-08-17",
+      "last_seen": "2026-11-07"
+    },
     "event-world-firefighters-challenge": {
       "identity": "world firefighters challenge|dhahran|2026-11-05",
       "first_seen": "2026-07-11",
@@ -923,7 +928,7 @@
       "last_seen": "2026-11-07"
     },
     "event-سينما-فوكس-مونلايت-قريبـاً": {
-      "identity": "سينما فوكس مونلايت قريبـاً|saudi arabia|2026-11-15",
+      "identity": "سينما ڤوكس مونلايت في أور هابيتاس قريبـاً|saudi arabia|2026-11-15",
       "first_seen": "2026-10-29",
       "last_seen": "2026-11-07"
     },
@@ -3190,11 +3195,6 @@
     "event-الدليل-التنظيمي-ووثيقة-حقوق-وواجبات-عضو-هيئة-التدريس": {
       "identity": "الدليل التنظيمي ووثيقة حقوق وواجبات عضو هيئة التدريس|online|2026-09-16",
       "first_seen": "2026-09-16",
-      "last_seen": "2026-11-07"
-    },
-    "event-سيرك-فونتانا": {
-      "identity": "سيرك فونتانا|riyadh|2026-09-16",
-      "first_seen": "2026-08-17",
       "last_seen": "2026-11-07"
     },
     "event-ithra-public-tour-english": {

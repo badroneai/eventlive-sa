@@ -1,11 +1,11 @@
 # EventLive Browser Source Probe
 
-Generated at: 2026-11-07T09:09:43.178Z
+Generated at: 2026-11-07T17:01:16.306Z
 
 ## Summary
 
 - Sources probed this run: 2
-- Fresh results available: 5
+- Fresh results available: 7
 - Browser network API: 1
 - Hydration payload: 0
 - Rendered HTML candidates: 0
@@ -16,9 +16,11 @@ Generated at: 2026-11-07T09:09:43.178Z
 
 | Priority | Source | Status | HTTP | Classification | Endpoints | Event links | Date snippets | Next action |
 |---:|---|---|---:|---|---:|---:|---:|---|
+| 3 | moc-cultural-calendar | error | 0 | empty-or-shell | 0 | 0 | 0 | اعتبرها shell وابحث عن API أو مسار بديل قبل أي collector. |
 | 8 | mdlbeast-events | ok | 200 | browser-network-api | 6 | 20 | 8 | ثبت endpoint مرشحًا كجامع مباشر، ثم اكتب extractor من JSON مع اختبار انحدار. |
 | 9 | monshaat-events | error | 0 | empty-or-shell | 0 | 0 | 0 | اعتبرها shell وابحث عن API أو مسار بديل قبل أي collector. |
 | 34 | visit-saudi-calendar-pdf | error | 0 | empty-or-shell | 0 | 0 | 0 | اعتبرها shell وابحث عن API أو مسار بديل قبل أي collector. |
+| 37 | moc-cultural-subportals | error | 0 | empty-or-shell | 0 | 0 | 0 | اعتبرها shell وابحث عن API أو مسار بديل قبل أي collector. |
 | 51 | riyadh-city-events | ok | 200 | rendered-text-review | 0 | 0 | 0 | راجع الصفحة يدويًا وحدد هل هي مصدر أدلة أم صفحة تعريفية فقط. |
 | 59 | asharqia-chamber-events | error | 0 | empty-or-shell | 0 | 0 | 0 | اعتبرها shell وابحث عن API أو مسار بديل قبل أي collector. |
 

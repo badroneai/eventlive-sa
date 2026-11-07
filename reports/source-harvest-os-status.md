@@ -1,32 +1,32 @@
 # EventLive Harvest OS Status
 
-- Generated at: 2026-11-07T09:46:44.825Z
+- Generated at: 2026-11-07T17:28:55.647Z
 - Status: NEEDS_WORK
 - Operating rule: Probe before new sources; sample before full harvest; Raw collection is not publication; discovery-only never auto-publishes.
 
 ## Totals
 
 - Sources: 88
-- Candidates: 336
-- Matched candidates: 320
+- Candidates: 330
+- Matched candidates: 314
 - Auto-publish sources: 15
 - Candidate-only sources: 12
 - Partnership-required sources: 5
-- Productive sources / attempted: 17/29
-- Collector errors: 4 (chronic 4, transient 0)
+- Productive sources / attempted: 14/20
+- Collector errors: 8 (chronic 5, transient 3)
 
 ## Publication Funnel
 
 | Stage | Count |
 | --- | --- |
-| discovered_this_run | 165 |
-| candidate_queue | 336 |
-| evaluated_for_publish | 336 |
-| linked_existing | 314 |
-| published_new | 5 |
+| discovered_this_run | 125 |
+| candidate_queue | 330 |
+| evaluated_for_publish | 330 |
+| linked_existing | 311 |
+| published_new | 2 |
 | blocked | 17 |
 | secondary_promoted | 0 |
-| secondary_still_blocked | 25 |
+| secondary_still_blocked | 16 |
 
 ## Blocked Reasons
 
@@ -44,10 +44,14 @@
 
 | Source | Kind | Failed runs in a row | Attempted this run | Reason |
 | --- | --- | --- | --- | --- |
-| mos-events | chronic | 69 | yes | collector-error: fetch failed [ETIMEDOUT, ENETUNREACH] |
-| saudi-pro-league-fixtures | chronic | 49 | yes | collector-error: fetch failed [EAI_AGAIN] |
-| tuwaiq-academy-bootcamps | chronic | 46 | yes | collector-error: HTTP 403 |
-| qassim-chamber-events | chronic | 15 | yes | collector-error: HTTP 403 |
+| mos-events | chronic | 69 | no | collector-error: fetch failed [ETIMEDOUT, ENETUNREACH] |
+| saudi-pro-league-fixtures | chronic | 49 | no | collector-error: fetch failed [EAI_AGAIN] |
+| tuwaiq-academy-bootcamps | chronic | 46 | no | collector-error: HTTP 403 |
+| qassim-chamber-events | chronic | 15 | no | collector-error: HTTP 403 |
+| asharqia-chamber-events | chronic | 3 | yes | collector-error: HTTP 404; live browser recovery deferred by recent failed probe cooldown |
+| moc-cultural-calendar | transient | 1 | yes | fetch failed [UNABLE_TO_VERIFY_LEAF_SIGNATURE]; fetch failed [UNABLE_TO_VERIFY_LEAF_SIGNATURE] |
+| saudi-space-agency-events | transient | 1 | yes | fetch failed [ETIMEDOUT, ENETUNREACH] |
+| moc-cultural-subportals | transient | 1 | yes | fetch failed [UNABLE_TO_VERIFY_LEAF_SIGNATURE]; fetch failed [UNABLE_TO_VERIFY_LEAF_SIGNATURE] |
 
 | Source | Policy | Trust | Gate |
 | --- | --- | --- | --- |
