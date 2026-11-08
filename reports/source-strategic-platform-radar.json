@@ -1,6 +1,6 @@
 {
   "schema": "eventlive.source-strategic-platform-radar.v1",
-  "generated_at": "2026-11-07T08:54:27.905Z",
+  "generated_at": "2026-11-08T09:07:30.263Z",
   "policy": {
     "allowed_use": "official source evidence refresh, API-surface mapping, partnership prioritization, extractor backlog decisions",
     "disallowed_use": "direct catalog publication without official confirmation and duplicate review"
@@ -256,17 +256,17 @@
         {
           "url": "https://www.visitsaudi.com/bin/api/v3/events?locale=ar",
           "status": 200,
-          "bytes": 71681,
+          "bytes": 61377,
           "classification": "reachable",
           "summary": {
             "parse_ok": true,
-            "item_count": 21,
+            "item_count": 18,
             "sample_titles": [
               "معرض اللغة العربية 28",
-              "«استمرارية 26» برنامج الفنانين الناشئين في فنون الوسائط الجديدة بمركز الدرعية لفنون المستقبل",
               "مزاد نادي الصقور السعودي",
-              "بطولة أرامكو السعودية للفورمولا 4",
-              "موسم سباقات الرياض"
+              "موسم سباقات الرياض",
+              "بوليڤارد وورلد في موسم الرياض",
+              "مهرجان سماء العلا"
             ]
           },
           "sample": "{\"code\":200,\"message\":\"success\",\"response\":{\"data\":[{\"type\":\"فعالية\",\"title\":\"معرض اللغة العربية 28\",\"freePaid\":\"paid\",\"bannerImages\":[{\"fileReference\":\"/content/dam/wvs/calendar/arabic-language-exhibition-in-riyadh.jpg\",\"mobileImageReference\":\"/con…"
@@ -274,17 +274,17 @@
         {
           "url": "https://www.visitsaudi.com/bin/api/v3/events?locale=en",
           "status": 200,
-          "bytes": 74697,
+          "bytes": 63958,
           "classification": "reachable",
           "summary": {
             "parse_ok": true,
-            "item_count": 21,
+            "item_count": 18,
             "sample_titles": [
               "Arabic Language Exhibition 28",
-              "Continuum '26 Diriyah Art Futures Emerging New Media Artists Programme",
               "Saudi Falcons Club Auction",
-              "Aramco F4 Saudi Arabian Championship",
-              "Riyadh Racing Season"
+              "Riyadh Racing Season",
+              "BLVD World at Riyadh Season",
+              "AlUla Skies Festival"
             ]
           },
           "sample": "{\"code\":200,\"message\":\"success\",\"response\":{\"data\":[{\"type\":\"EVENT\",\"title\":\"Arabic Language Exhibition 28\",\"freePaid\":\"paid\",\"bannerImages\":[{\"fileReference\":\"/content/dam/wvs/calendar/arabic-language-exhibition-in-riyadh.jpg\",\"mobileImageReference…"
@@ -331,7 +331,7 @@
         "https://wbk-assets.webook.com/8.3.2/locales/en/currency_common.json",
         "https://wbk-assets.webook.com/8.3.2/locales/en/payment_common.json",
         "https://wbk-assets.webook.com/8.3.2/locales/en/subscription_common.json",
-        "https://webook.com/cdn-cgi/content?id=.xSGbsQmeLfNGEODt5fIPBfWq_WhCTTaQYveDd6Oh64-1794041677.9388604-1.2.1.1-BuNesb4LyBrSEpQAx8Ct2B7MTcU1wNHvnK6lDcmDSrldktC_ryegWqjeLFG2tvNK",
+        "https://webook.com/cdn-cgi/content?id=iFS5AJuw63Pgdek03c3nzFZgHnnfZTkUxpkOZOD9q38-1794128859.5407953-1.2.1.1-XtBXqxkNghPRSYIYFAZpBUCJ_ucSunla8nVpMvPGWKEBc7ulIE5gY9l4daVgbrrD",
         "https://static.cloudflareinsights.com/beacon.min.js/vce701823e78c4301a35b7e07294d87301792088814092"
       ],
       "page_hint_words": [

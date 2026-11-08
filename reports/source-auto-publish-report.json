@@ -1,18 +1,18 @@
 {
-  "published_at": "2026-11-07T17:08:27.379Z",
+  "published_at": "2026-11-08T09:26:37.171Z",
   "dry_run": false,
   "include_partner": true,
   "source_candidates": "data/source_candidates.json",
   "events_catalog": "data/events_catalog.json",
-  "candidates_seen": 330,
+  "candidates_seen": 335,
   "totals": {
-    "candidates_seen": 330,
-    "published": 2,
-    "linked_existing": 311,
+    "candidates_seen": 335,
+    "published": 13,
+    "linked_existing": 305,
     "blocked": 17,
     "duplicate_review_alerts": 3,
     "category_fallback_alerts": 0,
-    "reconciled": 313,
+    "reconciled": 318,
     "session_windows_reconciled": 0
   },
   "session_window_changes": [],
@@ -82,9 +82,64 @@
       "title": "سيرك فونتانا"
     },
     {
+      "candidate_id": "candidate-umm-al-qura-events-زيارة-ميدانية-بعنوان-مؤتمر-ومعرض-الحج-20261108-50873c70",
+      "event_id": "event-زيارة-ميدانية-بعنوان-مؤتمر-ومعرض-الحج",
+      "title": "زيارة ميدانية بعنوان مؤتمر ومعرض الحج"
+    },
+    {
+      "candidate_id": "candidate-umm-al-qura-events-الاستخدام-المسؤول-للذكاء-الاصطناعي-في-البحث-العلمي-والنشر-الأكاديمي-نهج--20261109-0a41865b",
+      "event_id": "event-الاستخدام-المسؤول-للذكاء-الاصطناعي-في-البحث-العلمي-والنشر-الأكاديمي-نهج-",
+      "title": "الاستخدام المسؤول للذكاء الاصطناعي في البحث العلمي والنشر الأكاديمي - نهج تايلور آند فرانسيس"
+    },
+    {
+      "candidate_id": "candidate-umm-al-qura-events-زيارة-ميدانية-بعنوان-مؤتمر-الحج-والعمرة-20261111-7713d969",
+      "event_id": "event-زيارة-ميدانية-بعنوان-مؤتمر-الحج-والعمرة",
+      "title": "زيارة ميدانية بعنوان مؤتمر الحج والعمرة"
+    },
+    {
+      "candidate_id": "candidate-umm-al-qura-events-إدارة-المخاطر-في-المشاريع-الناشئة-20261111-5bc90d99",
+      "event_id": "event-إدارة-المخاطر-في-المشاريع-الناشئة",
+      "title": "إدارة المخاطر في المشاريع الناشئة"
+    },
+    {
+      "candidate_id": "candidate-umm-al-qura-events-انشاء-مودبورد-احترافي-20261111-253393fc",
+      "event_id": "event-انشاء-مودبورد-احترافي",
+      "title": "انشاء مودبورد احترافي"
+    },
+    {
+      "candidate_id": "candidate-umm-al-qura-events-تعزيز-الأثر-البحثي-لأبحاثك-استراتيجيات-فعّالة-وفهم-مؤشرات-قياس-الأثر-الب-20261112-4da117dd",
+      "event_id": "event-تعزيز-الأثر-البحثي-لأبحاثك-استراتيجيات-فعّالة-وفهم-مؤشرات-قياس-الأثر-الب",
+      "title": "تعزيز الأثر البحثي لأبحاثك - استراتيجيات فعّالة وفهم مؤشرات قياس الأثر البحثي"
+    },
+    {
+      "candidate_id": "candidate-ithra-events-rolling-podcast-20261112-5db7fa03",
+      "event_id": "event-rolling-podcast",
+      "title": "Rolling Podcast"
+    },
+    {
+      "candidate_id": "candidate-ithra-events-the-big-printing-experience-20261112-2ce74c65",
+      "event_id": "event-the-big-printing-experience",
+      "title": "The Big Printing Experience"
+    },
+    {
       "candidate_id": "candidate-visit-saudi-calendar-pdf-سينما-فوكس-مونلايت-قريبـاً-20261115-4a38d19e",
       "event_id": "event-سينما-فوكس-مونلايت-قريبـاً",
       "title": "سينما فوكس مونلايت قريبـاً"
+    },
+    {
+      "candidate_id": "candidate-umm-al-qura-events-اختيار-المجلة-العلمية-المناسبة-لبحثك-واستكشاف-فرص-النشر-بنظام-الوصول-الم-20261116-a560a2f1",
+      "event_id": "event-اختيار-المجلة-العلمية-المناسبة-لبحثك-واستكشاف-فرص-النشر-بنظام-الوصول-الم",
+      "title": "اختيار المجلة العلمية المناسبة لبحثك واستكشاف فرص النشر بنظام الوصول المفتوح."
+    },
+    {
+      "candidate_id": "candidate-ithra-events-your-stickers-your-way-20261122-05934ca6",
+      "event_id": "event-your-stickers-your-way",
+      "title": "Your Stickers, Your Way"
+    },
+    {
+      "candidate_id": "candidate-visit-saudi-seasons-al-ahsa-factory-dates-festival-20261220-686c27d3",
+      "event_id": "event-al-ahsa-factory-dates-festival",
+      "title": "Al Ahsa Factory Dates Festival"
     }
   ],
   "linked_existing": [
@@ -383,12 +438,6 @@
       "reason": "already linked to catalog event"
     },
     {
-      "candidate_id": "candidate-visit-saudi-calendar-pdf-استمرارية-26-20260903-4a38d19e",
-      "event_id": "event-استمرارية-26",
-      "title": "استمرارية 26",
-      "reason": "already linked to catalog event"
-    },
-    {
       "candidate_id": "candidate-misk-hub-programs-the-innovation-diwan-20260905-6f9de2e0",
       "event_id": "event-the-innovation-diwan",
       "title": "The Innovation Diwan",
@@ -473,12 +522,6 @@
       "reason": "already linked to catalog event"
     },
     {
-      "candidate_id": "candidate-visit-saudi-seasons-aramco-f4-saudi-arabian-championship-20261001-c1591ef2",
-      "event_id": "event-aramco-f4-saudi-arabian-championship",
-      "title": "Aramco F4 Saudi Arabian Championship",
-      "reason": "already linked to catalog event"
-    },
-    {
       "candidate_id": "candidate-visit-saudi-seasons-saudi-falcons-club-auction-20261001-4e016ab8",
       "event_id": "event-saudi-falcons-club-auction",
       "title": "Saudi Falcons Club Auction",
@@ -506,12 +549,6 @@
       "candidate_id": "candidate-tuwaiq-academy-bootcamps-معسكر-الاستراتيجية-في-عصر-الذكاء-الاصطناعي-والتحول-الرقمي-20261005-c1f05c69",
       "event_id": "event-معسكر-الاستراتيجية-في-عصر-الذكاء-الاصطناعي-والتحول-الرقمي",
       "title": "معسكر الاستراتيجية في عصر الذكاء الاصطناعي والتحول الرقمي",
-      "reason": "already linked to catalog event"
-    },
-    {
-      "candidate_id": "candidate-visit-saudi-calendar-pdf-ربع-تون-20261007-4a38d19e",
-      "event_id": "event-ربع-تون",
-      "title": "ربع تون",
       "reason": "already linked to catalog event"
     },
     {
@@ -719,18 +756,6 @@
       "reason": "already linked to catalog event"
     },
     {
-      "candidate_id": "candidate-visit-saudi-calendar-pdf-وقف-عرض-نمر-الكوميدي-مباشر-في-جدة-20261107-4a38d19e",
-      "event_id": "event-وقف-عرض-نمر-الكوميدي-مباشر-في-جدة",
-      "title": "وقف! عرض نمر الكوميدي مباشر في جدة",
-      "reason": "already linked to catalog event"
-    },
-    {
-      "candidate_id": "candidate-visit-saudi-calendar-pdf-كراون-جول-20261107-4a38d19e",
-      "event_id": "event-كراون-جول",
-      "title": "كراون جول",
-      "reason": "already linked to catalog event"
-    },
-    {
       "candidate_id": "candidate-hayy-jameel-events-hayy-cinema-the-golden-palm-film-programme-the-best-of-the-saudi-film-fe-20261107-a46a5479",
       "event_id": "event-hayy-cinema-the-golden-palm-film-programme-the-best-of-the-saudi-film-fe",
       "title": "Hayy Cinema | The Golden Palm Film Programme: The Best of the Saudi Film Festival",
@@ -743,12 +768,6 @@
       "reason": "already linked to catalog event"
     },
     {
-      "candidate_id": "candidate-visit-saudi-calendar-wagef-nemr-live-comedy-show-in-jeddah-20261107-f48c5ac4",
-      "event_id": "event-wagef-nemr-live-comedy-show-in-jeddah",
-      "title": "Wagef! Nemr Live Comedy Show in Jeddah",
-      "reason": "already linked to catalog event"
-    },
-    {
       "candidate_id": "candidate-informa-connect-saudi-events-saudi-ai-week-20261108-ddaedbfa",
       "event_id": "event-saudi-ai-week",
       "title": "Saudi AI Week",
@@ -758,12 +777,6 @@
       "candidate_id": "candidate-saudi-university-events-5th-annual-workshop-on-quantitative-optical-imaging-technologies-20261108-2724ab99",
       "event_id": "event-5th-annual-workshop-on-quantitative-optical-imaging-technologies",
       "title": "5th Annual Workshop on Quantitative Optical Imaging Technologies",
-      "reason": "already linked to catalog event"
-    },
-    {
-      "candidate_id": "candidate-umm-al-qura-events-فعالية-بعنوان-حراك-20261108-78889f9b",
-      "event_id": "event-فعالية-بعنوان-حراك",
-      "title": "فعالية بعنوان حراك",
       "reason": "already linked to catalog event"
     },
     {
@@ -911,6 +924,12 @@
       "reason": "already linked to catalog event"
     },
     {
+      "candidate_id": "candidate-umm-al-qura-events-حل-المشكلات-بعقلية-الناقد-والمبتكر-20261109-c22d7d15",
+      "event_id": "event-حل-المشكلات-بعقلية-الناقد-والمبتكر",
+      "title": "حل المشكلات بعقلية الناقد والمبتكر",
+      "reason": "trusted duplicate linked to existing catalog event"
+    },
+    {
       "candidate_id": "candidate-riyadh-city-events-build-your-house-exhibition-20261110-4cdc13f8",
       "event_id": "event-build-your-house-exhibition",
       "title": "Build Your House exhibition",
@@ -1022,6 +1041,12 @@
       "candidate_id": "candidate-ithra-events-your-design-your-cup-holder-20261112-c5ab2820",
       "event_id": "event-your-design-your-cup-holder",
       "title": "Your Design, Your Cup Holder",
+      "reason": "already linked to catalog event"
+    },
+    {
+      "candidate_id": "candidate-ithra-events-printing-house-20261112-e56f4f89",
+      "event_id": "event-printing-house",
+      "title": "Printing House",
       "reason": "already linked to catalog event"
     },
     {
@@ -1388,12 +1413,6 @@
       "candidate_id": "candidate-hayy-jameel-events-hayy-cinema-aflam-sudan-x-hayy-cinema-20261128-e942a21a",
       "event_id": "event-hayy-cinema-aflam-sudan-x-hayy-cinema",
       "title": "Hayy Cinema | Aflam Sudan x Hayy Cinema",
-      "reason": "already linked to catalog event"
-    },
-    {
-      "candidate_id": "candidate-ithra-events-printing-house-20261128-e56f4f89",
-      "event_id": "event-printing-house",
-      "title": "Printing House",
       "reason": "already linked to catalog event"
     },
     {

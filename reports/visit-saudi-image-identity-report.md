@@ -1,14 +1,17 @@
 # EventLive Visit Saudi Image Identity Report
 
-- generated_at: 2026-11-07T17:08:32.787Z
+- generated_at: 2026-11-08T09:26:41.356Z
 - pdf_crop_assignments: 30
-- verified: 30
-- struck: 0
-- slots_seen_this_cycle: 35
+- verified: 26
+- struck: 4
+- slots_seen_this_cycle: 31
 
 ## Struck (fell back to generated cover)
 
-- none
+- استمرارية 26 (visit-saudi-summer-2026-p007-top-left.png) - slot-vacated - no dated card currently occupies page 7 top-left of https://www.visitsaudi.com/content/dam/documents/saudi-calendar-ar.pdf
+- ربع تون (visit-saudi-summer-2026-p007-top-right.png) - slot-vacated - no dated card currently occupies page 7 top-right of https://www.visitsaudi.com/content/dam/documents/saudi-calendar-ar.pdf
+- وقف! عرض نمر الكوميدي مباشر في جدة (visit-saudi-summer-2026-p069-top-right.png) - slot-vacated - no dated card currently occupies page 69 top-right of https://www.visitsaudi.com/content/dam/documents/saudi-calendar-ar.pdf
+- كراون جول (visit-saudi-summer-2026-p004-top-right.png) - slot-vacated - no dated card currently occupies page 4 top-right of https://www.visitsaudi.com/content/dam/documents/saudi-calendar-ar.pdf
 
 ## Verified
 
@@ -17,9 +20,7 @@
 - معرض قلب البحر (visit-saudi-summer-2026-p060-bottom-left.png)
 - معرض في تتبّع ذكريات غامرة (visit-saudi-summer-2026-p060-bottom-right.png)
 - الاخطبوطية (visit-saudi-summer-2026-p012-bottom-right.png)
-- استمرارية 26 (visit-saudi-summer-2026-p007-top-left.png)
 - الاخطبوطية كيدز (visit-saudi-summer-2026-p012-top-right.png)
-- ربع تون (visit-saudi-summer-2026-p007-top-right.png)
 - ”فينا نحكي؟“ عرض ستاند أب كوميدي لجون أشقر (visit-saudi-summer-2026-p028-top-left.png)
 - مسار المشي بين معالم الحِ جر الجيولوجية (visit-saudi-summer-2026-p023-bottom-right.png)
 - شتاء اثراء (visit-saudi-summer-2026-p028-bottom-right.png)
@@ -27,8 +28,6 @@
 - سوالف الحي (visit-saudi-summer-2026-p028-top-right.png)
 - سيرك فونتانا (visit-saudi-summer-2026-p017-top-right.png)
 - مهرجان سماء العا (visit-saudi-summer-2026-p066-top-right.jpg)
-- وقف! عرض نمر الكوميدي مباشر في جدة (visit-saudi-summer-2026-p069-top-right.png)
-- كراون جول (visit-saudi-summer-2026-p004-top-right.png)
 - IN ACT ANNIVERSARY - ACT XI (visit-saudi-summer-2026-p039-bottom-left.jpg)
 - مهرجان القادسية (visit-saudi-summer-2026-p027-top-left.jpg)
 - حفلة نانسي عجرم (visit-saudi-summer-2026-p022-top-left.png)

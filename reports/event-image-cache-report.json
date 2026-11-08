@@ -1,13 +1,13 @@
 {
-  "generated_at": "2026-11-07T17:15:49.640Z",
+  "generated_at": "2026-11-08T09:33:04.046Z",
   "events_file": "dist/events.json",
   "manifest": "data/event_image_cache_manifest.json",
   "image_dir": "dist/assets/event-images",
   "totals": {
     "targets": 500,
-    "cached_total": 916,
-    "fetched": 14,
-    "reused": 480,
+    "cached_total": 919,
+    "fetched": 17,
+    "reused": 477,
     "failed": 6,
     "skipped_recent_failures": 6,
     "remembered_failures": 34
@@ -20,21 +20,9 @@
       "events": 1
     },
     {
-      "source_url": "https://hayyjameel.org/wp-content/uploads/2026/10/Jeddah-Roundabouts_-Circling-the-City-2026.-Image-courtesy-of-Art-Jameel1-1100x500.jpg",
-      "file": "dist/assets/event-images/الفن-جيميل-بوبل-ينشر-جودا-يدور-حول-المدينة-3a8a4e7b35.jpg",
-      "bytes": 33733,
-      "events": 1
-    },
-    {
       "source_url": "https://hayyjameel.org/wp-content/uploads/2026/10/DSC01377-scaled-aspect-ratio-2560-1501-1100x500.jpg",
       "file": "dist/assets/event-images/برامج-هاي-اكسبلوررز-f2b6ad87be.jpg",
       "bytes": 81033,
-      "events": 1
-    },
-    {
-      "source_url": "https://hayyjameel.org/wp-content/uploads/2026/10/DSC04733-scaled-aspect-ratio-2560-1217-1100x500.jpg",
-      "file": "dist/assets/event-images/hayy-markets-azka-farmers-market-pomegranates-edition-53e9cec393.jpg",
-      "bytes": 86472,
       "events": 1
     },
     {
@@ -50,12 +38,6 @@
       "events": 1
     },
     {
-      "source_url": "https://s7g10.scene7.com/is/image/rcu/half-marathon-2026?$Responsive$&fit=stretch&fmt=webp&wid=1920",
-      "file": "dist/assets/event-images/alula-half-marathon-71cb763487.webp",
-      "bytes": 116280,
-      "events": 1
-    },
-    {
       "source_url": "https://hayyjameel.org/wp-content/uploads/2026/10/CottonQueenStills-1100x500.png",
       "file": "dist/assets/event-images/هاي-سينما-ba5c2378d5.png",
       "bytes": 929879,
@@ -68,9 +50,21 @@
       "events": 1
     },
     {
-      "source_url": "https://jazancci.org.sa/uploads/external-events/998ec002d20b14d1baa0ea3c825c05a8.jpg",
-      "file": "dist/assets/event-images/التعريف-بخدمات-مراكز-ناجز-العدلية-03021e5b35.jpg",
-      "bytes": 797424,
+      "source_url": "https://s7g10.scene7.com/is/image/rcu/half-marathon-2026?$Responsive$&fit=stretch&fmt=webp&wid=1920",
+      "file": "dist/assets/event-images/alula-half-marathon-71cb763487.webp",
+      "bytes": 116280,
+      "events": 1
+    },
+    {
+      "source_url": "https://hayyjameel.org/wp-content/uploads/2026/10/Jeddah-Roundabouts_-Circling-the-City-2026.-Image-courtesy-of-Art-Jameel1-1100x500.jpg",
+      "file": "dist/assets/event-images/الفن-جيميل-بوبل-ينشر-جودا-يدور-حول-المدينة-3a8a4e7b35.jpg",
+      "bytes": 33733,
+      "events": 1
+    },
+    {
+      "source_url": "https://hayyjameel.org/wp-content/uploads/2026/10/DSC04733-scaled-aspect-ratio-2560-1217-1100x500.jpg",
+      "file": "dist/assets/event-images/hayy-markets-azka-farmers-market-pomegranates-edition-53e9cec393.jpg",
+      "bytes": 86472,
       "events": 1
     },
     {
@@ -80,15 +74,39 @@
       "events": 1
     },
     {
+      "source_url": "https://jazancci.org.sa/uploads/external-events/998ec002d20b14d1baa0ea3c825c05a8.jpg",
+      "file": "dist/assets/event-images/التعريف-بخدمات-مراكز-ناجز-العدلية-03021e5b35.jpg",
+      "bytes": 797424,
+      "events": 1
+    },
+    {
       "source_url": "https://www.ithra.com/application/files/cache/thumbnails/b34cd303ae0851c8f3b14cdadcd37b9e.jpg",
       "file": "dist/assets/event-images/جمعية-مكتبة-إيهرا-هل-عالم-نوفيل-مير-أو-كرافت-جديد؟-18f54bb4b1.jpg",
       "bytes": 224376,
       "events": 2
     },
     {
+      "source_url": "https://www.ithra.com/application/files/cache/thumbnails/5bb4f809ec79864457fe6ed78da25041.png",
+      "file": "dist/assets/event-images/your-stickers-your-way-cfcaa23fb1.png",
+      "bytes": 1419932,
+      "events": 1
+    },
+    {
       "source_url": "https://www.ithra.com/application/files/cache/thumbnails/ca9778fe7ea3ed4782a85f2b11a92717.png",
       "file": "dist/assets/event-images/تصميمك،-كأسك-هولدر-9b24f6b50a.png",
       "bytes": 1724595,
+      "events": 1
+    },
+    {
+      "source_url": "https://www.ithra.com/application/files/cache/thumbnails/500b7ab40b17408b06db01d64ef96f2e.png",
+      "file": "dist/assets/event-images/rolling-podcast-b33078bc2e.png",
+      "bytes": 1563625,
+      "events": 1
+    },
+    {
+      "source_url": "https://www.ithra.com/application/files/cache/thumbnails/d9cc6a876b429f8f6eb82af2a9fb8a16.png",
+      "file": "dist/assets/event-images/the-big-printing-experience-d8904dc80f.png",
+      "bytes": 2351216,
       "events": 1
     },
     {
@@ -190,11 +208,6 @@
       "events": 1
     },
     {
-      "source_url": "https://www.ithra.com/application/files/cache/thumbnails/68a12e07a6da5cc989dd7fbd73d03107.jpg",
-      "file": "dist/assets/event-images/bedayat-beginnings-of-saudi-art-movement-5815006859.jpg",
-      "events": 1
-    },
-    {
       "source_url": "https://www.ithra.com/application/files/cache/thumbnails/85d5578f24bf5b2a9e720c84eec26adc.jpg",
       "file": "dist/assets/event-images/english-children-book-club-7-9-5174b0b666.jpg",
       "events": 4
@@ -282,7 +295,7 @@
     {
       "source_url": "https://uqu.edu.sa/assets/images/uqu-gate.jpeg",
       "file": "dist/assets/event-images/الشهادة-الدولية-للحاسب-والإنترنت-ic3-a46ba6d2eb.jpg",
-      "events": 210
+      "events": 217
     },
     {
       "source_url": "https://www.ithra.com/application/files/cache/thumbnails/6519ce3982b405e399c3a7313853a2bf.jpg",
@@ -343,11 +356,6 @@
       "source_url": "https://www.ithra.com/application/files/cache/thumbnails/fc67b5bf8e136084db8f05aa03bae956.jpg",
       "file": "dist/assets/event-images/trolley-show-183c47f2c6.jpg",
       "events": 1
-    },
-    {
-      "source_url": "https://www.visitsaudi.com/images/ornament-h-m1-24-8290.original.png",
-      "file": "dist/assets/event-images/forest-wonder-499a88ca39.png",
-      "events": 30
     },
     {
       "source_url": "https://www.ithra.com/application/files/cache/thumbnails/c8141ed00a545a6bce736a07578b62aa.png",
@@ -493,6 +501,11 @@
       "source_url": "https://hub.misk.org.sa/media/e3pjton2/web.png",
       "file": "dist/assets/event-images/nonprofit-sector-skills-program-09aadbec00.png",
       "events": 1
+    },
+    {
+      "source_url": "https://www.visitsaudi.com/images/ornament-h-m1-24-8290.original.png",
+      "file": "dist/assets/event-images/forest-wonder-499a88ca39.png",
+      "events": 31
     },
     {
       "source_url": "https://cdn.tuwaiq.edu.sa/initiatives_admin/images/srikgoed.ha2.webp",
@@ -2265,6 +2278,11 @@
       "events": 1
     },
     {
+      "source_url": "https://www.ithra.com/application/files/cache/thumbnails/68a12e07a6da5cc989dd7fbd73d03107.jpg",
+      "file": "dist/assets/event-images/bedayat-beginnings-of-saudi-art-movement-5815006859.jpg",
+      "events": 1
+    },
+    {
       "source_url": "https://cdn.tuwaiq.edu.sa/initiatives_admin/images/b1zmfxcj.3ft.webp",
       "file": "dist/assets/event-images/معسكر-هندسة-الدرونز-التطبيقي-f9a6074a8e.webp",
       "events": 1
@@ -2483,21 +2501,6 @@
       "source_url": "https://www.ithra.com/application/files/cache/thumbnails/4d3708b09af44a312ade4fd065b26f22.png",
       "file": "dist/assets/event-images/leap-then-look-bf84521a1f.png",
       "events": 1
-    },
-    {
-      "source_url": "https://www.ithra.com/application/files/cache/thumbnails/bd79089afb4fcca102702b4924e6c7bc.jpg",
-      "file": "dist/assets/event-images/build-play-together-a47cb14c8a.jpg",
-      "events": 1
-    },
-    {
-      "source_url": "https://www.ithra.com/application/files/cache/thumbnails/36d13ecef91b05d955bc60b3c951d824.jpg",
-      "file": "dist/assets/event-images/echoes-of-the-familiar-de9fb567e4.jpg",
-      "events": 1
-    },
-    {
-      "source_url": "https://discoveraseer.com/en/img/asset/YXNzZXRzL2V4cGVyaWVuY2Uva3NodGgucG5n/kshth.png?w=1024&fm=webp&s=a903e9e7554e7cf219359b245d62d50e",
-      "file": "dist/assets/event-images/كشتة-ab3a550ce8.webp",
-      "events": 1
     }
   ],
   "rejected_removed": [],
@@ -2505,11 +2508,6 @@
     {
       "source_url": "https://play.google.com/intl/en_us/badges/static/images/badges/en_badge_web_generic.png",
       "file": "dist/assets/event-images/ورشة-عمل-التعريف-بنظام-إمدادات-الطاقة،-ونظام-المواد-البترولية-والبتروك-f7ecd476d5.png",
-      "reason": "cached-file-missing"
-    },
-    {
-      "source_url": "https://hayyjameel.org/wp-content/uploads/2026/10/LibraryPhoto-Reem-scaled-aspect-ratio-2560-1422-1100x500.jpg",
-      "file": "dist/assets/event-images/مكتبة-جاميل-november-تشرين-الثاني-نوفمبر-74040a769a.jpg",
       "reason": "cached-file-missing"
     },
     {
@@ -2528,23 +2526,28 @@
       "reason": "cached-file-missing"
     },
     {
-      "source_url": "https://hayyjameel.org/wp-content/uploads/2026/10/CottonQueenStills-1100x500.png",
-      "file": "dist/assets/event-images/هاي-سينما-ba5c2378d5.png",
-      "reason": "cached-file-missing"
-    },
-    {
       "source_url": "https://hayyjameel.org/wp-content/uploads/2026/11/MM-Banner-2026-1100x500.jpg",
       "file": "dist/assets/event-images/شركة-هاي-ماكرز-للمصانع-2026-c3d92e837c.jpg",
       "reason": "cached-file-missing"
     },
     {
-      "source_url": "https://s7g10.scene7.com/is/image/rcu/Hegra-Childrens-Tour-01-Hero-Desktop-2880x1620?$Responsive$&fit=stretch&fmt=webp&wid=1920",
-      "file": "dist/assets/event-images/جولة-أطفال-هيجرا-c90af5d7f2.webp",
+      "source_url": "https://hayyjameel.org/wp-content/uploads/2026/10/LibraryPhoto-Reem-scaled-aspect-ratio-2560-1422-1100x500.jpg",
+      "file": "dist/assets/event-images/مكتبة-جاميل-november-تشرين-الثاني-نوفمبر-74040a769a.jpg",
       "reason": "cached-file-missing"
     },
     {
       "source_url": "https://s7g10.scene7.com/is/image/rcu/half-marathon-2026?$Responsive$&fit=stretch&fmt=webp&wid=1920",
       "file": "dist/assets/event-images/alula-half-marathon-71cb763487.webp",
+      "reason": "cached-file-missing"
+    },
+    {
+      "source_url": "https://hayyjameel.org/wp-content/uploads/2026/10/CottonQueenStills-1100x500.png",
+      "file": "dist/assets/event-images/هاي-سينما-ba5c2378d5.png",
+      "reason": "cached-file-missing"
+    },
+    {
+      "source_url": "https://s7g10.scene7.com/is/image/rcu/Hegra-Childrens-Tour-01-Hero-Desktop-2880x1620?$Responsive$&fit=stretch&fmt=webp&wid=1920",
+      "file": "dist/assets/event-images/جولة-أطفال-هيجرا-c90af5d7f2.webp",
       "reason": "cached-file-missing"
     },
     {
@@ -2575,14 +2578,6 @@
   ],
   "skipped_recent_failures": [
     {
-      "source_url": "https://s7g10.scene7.com/is/image/rcu/stargazing-at-alula-fort:landscape-16x9?$Responsive$&fit=stretch&fmt=webp&wid=1920",
-      "events": 1,
-      "reason": "HTTP 403",
-      "failure_kind": "access-denied",
-      "retry_after": "2026-11-08T09:34:21.355Z",
-      "skipped": true
-    },
-    {
       "source_url": "https://s7g10.scene7.com/is/image/rcu/sunset-stillness-meditation-sound-immersion:landscape-16x9?$Responsive$&fit=stretch&fmt=webp&wid=1920",
       "events": 1,
       "reason": "HTTP 403",
@@ -2600,6 +2595,14 @@
     },
     {
       "source_url": "https://s7g10.scene7.com/is/image/rcu/fei2:landscape-16x9?$Responsive$&fit=stretch&fmt=webp&wid=1920",
+      "events": 1,
+      "reason": "HTTP 403",
+      "failure_kind": "access-denied",
+      "retry_after": "2026-11-08T09:34:21.355Z",
+      "skipped": true
+    },
+    {
+      "source_url": "https://s7g10.scene7.com/is/image/rcu/stargazing-at-alula-fort:landscape-16x9?$Responsive$&fit=stretch&fmt=webp&wid=1920",
       "events": 1,
       "reason": "HTTP 403",
       "failure_kind": "access-denied",
@@ -2625,14 +2628,6 @@
   ],
   "failed": [
     {
-      "source_url": "https://s7g10.scene7.com/is/image/rcu/stargazing-at-alula-fort:landscape-16x9?$Responsive$&fit=stretch&fmt=webp&wid=1920",
-      "events": 1,
-      "reason": "HTTP 403",
-      "failure_kind": "access-denied",
-      "retry_after": "2026-11-08T09:34:21.355Z",
-      "skipped": true
-    },
-    {
       "source_url": "https://s7g10.scene7.com/is/image/rcu/sunset-stillness-meditation-sound-immersion:landscape-16x9?$Responsive$&fit=stretch&fmt=webp&wid=1920",
       "events": 1,
       "reason": "HTTP 403",
@@ -2650,6 +2645,14 @@
     },
     {
       "source_url": "https://s7g10.scene7.com/is/image/rcu/fei2:landscape-16x9?$Responsive$&fit=stretch&fmt=webp&wid=1920",
+      "events": 1,
+      "reason": "HTTP 403",
+      "failure_kind": "access-denied",
+      "retry_after": "2026-11-08T09:34:21.355Z",
+      "skipped": true
+    },
+    {
+      "source_url": "https://s7g10.scene7.com/is/image/rcu/stargazing-at-alula-fort:landscape-16x9?$Responsive$&fit=stretch&fmt=webp&wid=1920",
       "events": 1,
       "reason": "HTTP 403",
       "failure_kind": "access-denied",
@@ -2675,7 +2678,7 @@
   ],
   "requires_rebuild": true,
   "rebuild_reasons": [
-    "fetched:14",
+    "fetched:17",
     "missing-removed:14"
   ]
 }

@@ -1,6 +1,6 @@
 # Strategic Platform Source Radar
 
-Generated at: 2026-11-07T08:54:27.905Z
+Generated at: 2026-11-08T09:07:30.263Z
 
 Policy: evidence refresh, API-surface mapping, and source strategy only. This radar does not auto-publish catalog events.
 
@@ -51,8 +51,8 @@ Policy: evidence refresh, API-surface mapping, and source strategy only. This ra
 - Project use: Keep in the 6-hour source ring; Arabic and English API payloads are reachable and useful for tourism-facing event discovery.
 - Title: تقويم السعودية | تابع العطلات والفعاليات المميزة - الموقع الرسمي للسياحة السعودية
 - Hint URLs: https://www.googletagmanager.com, https://cdn.consentmanager.net, https://delivery.consentmanager.net, https://www.googletagmanager.com/gtm.js?id=, https://www.clarity.ms/tag/, https://www.visitsaudi.com/images/SoundStorm-1.2e16d0ba.fill-1200x630.jpg, https://www.visitsaudi.com/ar/saudi-calendar, https://www.visitsaudi.com/ar
-  - API 200 https://www.visitsaudi.com/bin/api/v3/events?locale=ar: 21 items; معرض اللغة العربية 28, «استمرارية 26» برنامج الفنانين الناشئين في فنون الوسائط الجديدة بمركز الدرعية لفنون المستقبل, مزاد نادي الصقور السعودي, بطولة أرامكو السعودية للفورمولا 4, موسم سباقات الرياض
-  - API 200 https://www.visitsaudi.com/bin/api/v3/events?locale=en: 21 items; Arabic Language Exhibition 28, Continuum '26 Diriyah Art Futures Emerging New Media Artists Programme, Saudi Falcons Club Auction, Aramco F4 Saudi Arabian Championship, Riyadh Racing Season
+  - API 200 https://www.visitsaudi.com/bin/api/v3/events?locale=ar: 18 items; معرض اللغة العربية 28, مزاد نادي الصقور السعودي, موسم سباقات الرياض, بوليڤارد وورلد في موسم الرياض, مهرجان سماء العلا
+  - API 200 https://www.visitsaudi.com/bin/api/v3/events?locale=en: 18 items; Arabic Language Exhibition 28, Saudi Falcons Club Auction, Riyadh Racing Season, BLVD World at Riyadh Season, AlUla Skies Festival
 
 ### webook Explore
 

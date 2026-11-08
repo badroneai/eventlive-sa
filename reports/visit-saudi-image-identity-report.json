@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-07T17:08:32.787Z",
+  "generated_at": "2026-11-08T09:26:41.356Z",
   "catalog": "data/events_catalog.json",
   "candidates": "data/source_candidates.json",
   "manifest": "data/event_image_cache_manifest.json",
@@ -10,11 +10,40 @@
   },
   "totals": {
     "pdf_crop_assignments": 30,
-    "verified": 30,
-    "struck": 0,
-    "slots_seen_this_cycle": 35
+    "verified": 26,
+    "struck": 4,
+    "slots_seen_this_cycle": 31
   },
-  "struck": [],
+  "struck": [
+    {
+      "id": "event-استمرارية-26",
+      "title": "استمرارية 26",
+      "file": "visit-saudi-summer-2026-p007-top-left.png",
+      "reason": "slot-vacated",
+      "detail": "no dated card currently occupies page 7 top-left of https://www.visitsaudi.com/content/dam/documents/saudi-calendar-ar.pdf"
+    },
+    {
+      "id": "event-ربع-تون",
+      "title": "ربع تون",
+      "file": "visit-saudi-summer-2026-p007-top-right.png",
+      "reason": "slot-vacated",
+      "detail": "no dated card currently occupies page 7 top-right of https://www.visitsaudi.com/content/dam/documents/saudi-calendar-ar.pdf"
+    },
+    {
+      "id": "event-وقف-عرض-نمر-الكوميدي-مباشر-في-جدة",
+      "title": "وقف! عرض نمر الكوميدي مباشر في جدة",
+      "file": "visit-saudi-summer-2026-p069-top-right.png",
+      "reason": "slot-vacated",
+      "detail": "no dated card currently occupies page 69 top-right of https://www.visitsaudi.com/content/dam/documents/saudi-calendar-ar.pdf"
+    },
+    {
+      "id": "event-كراون-جول",
+      "title": "كراون جول",
+      "file": "visit-saudi-summer-2026-p004-top-right.png",
+      "reason": "slot-vacated",
+      "detail": "no dated card currently occupies page 4 top-right of https://www.visitsaudi.com/content/dam/documents/saudi-calendar-ar.pdf"
+    }
+  ],
   "verified": [
     {
       "id": "event-سوق-الثلاثاء-الشعبي",
@@ -67,29 +96,12 @@
       ]
     },
     {
-      "id": "event-استمرارية-26",
-      "title": "استمرارية 26",
-      "file": "visit-saudi-summer-2026-p007-top-left.png",
-      "matched_tokens": [
-        "استمراريه"
-      ]
-    },
-    {
       "id": "event-الاخطبوطية-كيدز",
       "title": "الاخطبوطية كيدز",
       "file": "visit-saudi-summer-2026-p012-top-right.png",
       "matched_tokens": [
         "الاخطبوطيه",
         "كيدز"
-      ]
-    },
-    {
-      "id": "event-ربع-تون",
-      "title": "ربع تون",
-      "file": "visit-saudi-summer-2026-p007-top-right.png",
-      "matched_tokens": [
-        "ربع",
-        "تون"
       ]
     },
     {
@@ -163,28 +175,6 @@
         "مهرجان",
         "سماء",
         "العا"
-      ]
-    },
-    {
-      "id": "event-وقف-عرض-نمر-الكوميدي-مباشر-في-جدة",
-      "title": "وقف! عرض نمر الكوميدي مباشر في جدة",
-      "file": "visit-saudi-summer-2026-p069-top-right.png",
-      "matched_tokens": [
-        "وقف",
-        "عرض",
-        "نمر",
-        "الكوميدي",
-        "مباشر",
-        "جده"
-      ]
-    },
-    {
-      "id": "event-كراون-جول",
-      "title": "كراون جول",
-      "file": "visit-saudi-summer-2026-p004-top-right.png",
-      "matched_tokens": [
-        "كراون",
-        "جول"
       ]
     },
     {
