@@ -1,10 +1,10 @@
 {
-  "generated_at": "2026-11-08T09:28:52.298Z",
+  "generated_at": "2026-11-09T10:27:28.135Z",
   "catalog": "data/events_catalog.json",
   "source": "Visit Saudi Calendar",
   "totals": {
     "targets": 50,
-    "candidates": 10,
+    "candidates": 11,
     "enriched": 50,
     "fetched": 49,
     "images": 50,
@@ -316,6 +316,14 @@
       "features": 7
     },
     {
+      "id": "event-katheeb-trip-to-al-asfar-lake",
+      "title": "Katheeb Trip to Al-Asfar Lake",
+      "source_method": "official-page-html",
+      "image_url": "https://www.visitsaudi.com/content/dam/wvs/calendar/katheeb-trip-to-al-asfar-lake.jpg",
+      "fetched": true,
+      "features": 7
+    },
+    {
       "id": "event-al-milwah-falcon-race",
       "title": "Al Milwah Falcon Race",
       "source_method": "official-page-html",
@@ -400,14 +408,6 @@
       "title": "Saudi Falcon Cup",
       "source_method": "official-page-html",
       "image_url": "https://www.visitsaudi.com/content/dam/wvs/calendar/saudi-falcon-cup-new.jpg",
-      "fetched": true,
-      "features": 7
-    },
-    {
-      "id": "event-in-act-act-xii-new-years-eve",
-      "title": "IN ACT - ACT XII - NEW YEAR'S EVE",
-      "source_method": "official-page-html",
-      "image_url": "https://www.visitsaudi.com/content/dam/wvs/calendar/in-act-act-xii-new-year.jpg",
       "fetched": true,
       "features": 7
     }

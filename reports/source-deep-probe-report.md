@@ -1,12 +1,12 @@
 # EventLive Source Deep Probe
 
-Generated at: 2026-11-08T09:06:21.108Z
+Generated at: 2026-11-09T09:54:56.045Z
 
 ## Summary
 
 - Probed sources: 21
-- Extractor-ready: 12
-- Blocked/protected: 9
+- Extractor-ready: 13
+- Blocked/protected: 8
 - Partnership lanes: 0
 - Watch/evidence-only: 0
 
@@ -17,9 +17,10 @@ Generated at: 2026-11-08T09:06:21.108Z
 | 82 | money2020-middle-east-agendas | 200 | 98 | build-jsonld-event-extractor | 0 | 2 | 1 | The Global Fintech Conference | Money 20/20 Middle East 14-16 September 2027 |
 | 62 | baha-amanah-events | 200 | 78 | build-html-detail-extractor | 0 | 0 | 22 | &#x641;&#x639;&#x627;&#x644;&#x64A;&#x627;&#x62A; &#x627;&#x644;&#x628;&#x627;&#x62D;&#x629; | &#x623;&#x645;&#x627;&#x646;&#x629; &#x645;&#x646;&#x637;&#x642;&#x629; &#x627;&#x644;&#x628;&#x627;&#x62D;&#x629; |
 | 64 | jouf-chamber-events | 200 | 78 | build-html-detail-extractor | 0 | 0 | 26 | غرفة الجوف - فعاليات الغرفة - غرفة الجوف |
-| 65 | northern-borders-chamber-events | 200 | 78 | build-html-detail-extractor | 0 | 0 | 22 | غرفة الحدود الشمالية |
+| 65 | northern-borders-chamber-events | 200 | 78 | build-html-detail-extractor | 0 | 0 | 22 | غرفة الحدود الشمالية | خدمات الأعمال والاستثمار |
 | 31 | neom-newsroom-events | 200 | 68 | build-html-detail-extractor | 0 | 0 | 6 | Events |
 | 33 | cst-events-news | 200 | 58 | probe-hidden-api-or-html-table | 0 | 0 | 0 | CST | Communications, Space & Technology Commission |
+| 38 | historic-jeddah-albalad | 200 | 58 | probe-hidden-api-or-html-table | 0 | 0 | 2 | جدة التاريخية - الصفحة الرئيسية لجدة |
 | 34 | visit-saudi-calendar-pdf | 200 | 48 | probe-hidden-api-or-html-table | 0 | 0 | 0 | - |
 | 66 | tabuk-chamber-events | 200 | 48 | probe-hidden-api-or-html-table | 0 | 0 | 0 | الغرفة التجارية بتبوك | TABUK CHAMBER |
 | 36 | sela-sea-expo | 200 | 46 | probe-hidden-api-or-html-table | 0 | 0 | 0 | Sela | Spectacular Everyday |
@@ -29,9 +30,8 @@ Generated at: 2026-11-08T09:06:21.108Z
 | 18 | riyadh-season | 200 | -23 | blocked-or-protected:bot-protection | 0 | 0 | 0 | - |
 | 27 | enjoy-saudi-events | 403 | -23 | blocked-or-protected:http-403 | 0 | 0 | 0 | تعذر الوصول إلى الصفحة | Access Unavailable |
 | 41 | ricec-events | - | -23 | blocked-or-protected:fetch failed getaddrinfo EAI_AGAIN www.ricec.com TypeError: fetch failed | 0 | 0 | 0 | - |
-| 49 | saudi-contractors-authority-events | - | -23 | blocked-or-protected:fetch failed getaddrinfo ENOTFOUND www.sca.gov.sa TypeError: fetch failed | 0 | 0 | 0 | - |
-| 51 | riyadh-city-events | - | -23 | blocked-or-protected:fetch failed unable to verify the first certificate; if the root CA is installed locally, try running Node.js with --use-system-ca TypeError: fetch failed | 0 | 0 | 0 | - |
-| 75 | middle-east-enterprise-ai-summit | 200 | -23 | blocked-or-protected:bot-protection | 0 | 0 | 0 | Middle East Enterprise |
+| 51 | riyadh-city-events | - | -23 | blocked-or-protected:fetch failed TypeError: fetch failed | 0 | 0 | 0 | - |
+| 74 | middle-east-banking-ai-summit | 200 | -23 | blocked-or-protected:bot-protection | 0 | 0 | 0 | Middle East Banking |
 | 24 | saudi-digital-academy | - | -35 | blocked-or-protected:fetch failed getaddrinfo ENOTFOUND sda.edu.sa TypeError: fetch failed | 0 | 0 | 0 | - |
 | 35 | qiddiya-events | 403 | -35 | blocked-or-protected:http-403 | 0 | 0 | 0 | Attention Required! | Cloudflare |
 | 43 | jeddah-season | - | -35 | blocked-or-protected:fetch failed getaddrinfo ENOTFOUND jeddahseason.sa TypeError: fetch failed | 0 | 0 | 0 | - |
@@ -44,5 +44,5 @@ Generated at: 2026-11-08T09:06:21.108Z
 - northern-borders-chamber-events: build-html-detail-extractor (score=78, gcal=0, structured=0, links=22)
 - neom-newsroom-events: build-html-detail-extractor (score=68, gcal=0, structured=0, links=6)
 - cst-events-news: probe-hidden-api-or-html-table (score=58, gcal=0, structured=0, links=0)
+- historic-jeddah-albalad: probe-hidden-api-or-html-table (score=58, gcal=0, structured=0, links=2)
 - visit-saudi-calendar-pdf: probe-hidden-api-or-html-table (score=48, gcal=0, structured=0, links=0)
-- tabuk-chamber-events: probe-hidden-api-or-html-table (score=48, gcal=0, structured=0, links=0)

@@ -1,119 +1,299 @@
 {
-  "generated_at": "2026-11-08T09:31:02.826Z",
+  "generated_at": "2026-11-09T10:30:37.219Z",
   "totals": {
-    "targets": 29,
-    "enriched": 29,
-    "fetched": 27,
-    "images": 26,
-    "fetch_failures": 2
+    "targets": 100,
+    "enriched": 100,
+    "fetched": 88,
+    "images": 95,
+    "fetch_failures": 12
   },
   "enriched": [
     {
-      "id": "event-al-ahsa-factory-dates-festival",
-      "title": "Al Ahsa Factory Dates Festival",
+      "id": "event-1-2-3-lets-rhyme-2",
+      "title": "1, 2, 3, Let's Rhyme!",
+      "source_label": "Ithra Events",
+      "source_method": "official-public-algolia-index",
+      "source_url": "https://www.ithra.com/en/programme/2026/ithra-winter-at-dhahran-expo/1-2-3-lets-ryhme",
+      "fetched": true,
+      "image": true,
+      "fetch_reason": ""
+    },
+    {
+      "id": "event-artistic-maze",
+      "title": "Artistic Maze",
+      "source_label": "Ithra Events",
+      "source_method": "official-public-algolia-index",
+      "source_url": "https://www.ithra.com/en/programme/2026/ithra-winter-at-dhahran-expo/artistic-maze",
+      "fetched": true,
+      "image": true,
+      "fetch_reason": ""
+    },
+    {
+      "id": "event-book-nook-zone",
+      "title": "Book Nook Zone",
+      "source_label": "Ithra Events",
+      "source_method": "official-public-algolia-index",
+      "source_url": "https://www.ithra.com/en/programme/2026/ithra-winter-at-dhahran-expo/book-nook-zone",
+      "fetched": true,
+      "image": true,
+      "fetch_reason": ""
+    },
+    {
+      "id": "event-childrens-caf-2",
+      "title": "Children's Café",
+      "source_label": "Ithra Events",
+      "source_method": "official-public-algolia-index",
+      "source_url": "https://www.ithra.com/en/programme/2026/ithra-winter-at-dhahran-expo/childrens-cafe",
+      "fetched": true,
+      "image": true,
+      "fetch_reason": ""
+    },
+    {
+      "id": "event-creativity-space",
+      "title": "Creativity Space",
+      "source_label": "Ithra Events",
+      "source_method": "official-public-algolia-index",
+      "source_url": "https://www.ithra.com/en/programme/2026/ithra-winter-at-dhahran-expo/studio/creativity-space",
+      "fetched": true,
+      "image": true,
+      "fetch_reason": ""
+    },
+    {
+      "id": "event-family-game-as-the-saying-goes",
+      "title": "Family Game: As the Saying Goes",
+      "source_label": "Ithra Events",
+      "source_method": "official-public-algolia-index",
+      "source_url": "https://www.ithra.com/en/programme/2026/ithra-winter-at-dhahran-expo/little-spotlight-zone/family-game-saying-goes",
+      "fetched": true,
+      "image": true,
+      "fetch_reason": ""
+    },
+    {
+      "id": "event-family-game-audience-challenges",
+      "title": "Family Game: Audience Challenges",
+      "source_label": "Ithra Events",
+      "source_method": "official-public-algolia-index",
+      "source_url": "https://www.ithra.com/en/programme/2026/ithra-winter-at-dhahran-expo/little-spotlight-zone/family-game-audience-challenges",
+      "fetched": true,
+      "image": true,
+      "fetch_reason": ""
+    },
+    {
+      "id": "event-family-game-dots-on-letters",
+      "title": "Family Game: Dots on Letters",
+      "source_label": "Ithra Events",
+      "source_method": "official-public-algolia-index",
+      "source_url": "https://www.ithra.com/en/programme/2026/ithra-winter-at-dhahran-expo/little-spotlight-zone/family-game-dots-letters",
+      "fetched": true,
+      "image": true,
+      "fetch_reason": ""
+    },
+    {
+      "id": "event-family-game-think-like-the-crowd",
+      "title": "Family Game: Think Like the Crowd",
+      "source_label": "Ithra Events",
+      "source_method": "official-public-algolia-index",
+      "source_url": "https://www.ithra.com/en/programme/2026/ithra-winter-at-dhahran-expo/little-spotlight-zone/family-game-think-crowd",
+      "fetched": true,
+      "image": true,
+      "fetch_reason": ""
+    },
+    {
+      "id": "event-highlights-exhibition",
+      "title": "Highlights Exhibition",
+      "source_label": "Ithra Events",
+      "source_method": "official-public-algolia-index",
+      "source_url": "https://www.ithra.com/en/programme/2026/ithra-winter-at-dhahran-expo/highlights-exhibition",
+      "fetched": true,
+      "image": true,
+      "fetch_reason": ""
+    },
+    {
+      "id": "event-khobar-season-opening-presented-by-ithra",
+      "title": "Khobar Season Opening |Presented by Ithra",
+      "source_label": "Ithra Events",
+      "source_method": "official-public-algolia-index",
+      "source_url": "https://www.ithra.com/en/programme/2026/ithra-winter-at-dhahran-expo/khobar-season-opening-presented-ithra",
+      "fetched": true,
+      "image": true,
+      "fetch_reason": ""
+    },
+    {
+      "id": "event-once-upon-a-postcard",
+      "title": "Once Upon a Postcard",
+      "source_label": "Ithra Events",
+      "source_method": "official-public-algolia-index",
+      "source_url": "https://www.ithra.com/en/programme/2026/workshop-library/once-upon-postcard",
+      "fetched": true,
+      "image": true,
+      "fetch_reason": ""
+    },
+    {
+      "id": "event-out-of-the-books",
+      "title": "Out of the Books",
+      "source_label": "Ithra Events",
+      "source_method": "official-public-algolia-index",
+      "source_url": "https://www.ithra.com/en/programme/2026/ithra-winter-at-dhahran-expo/out-books",
+      "fetched": true,
+      "image": true,
+      "fetch_reason": ""
+    },
+    {
+      "id": "event-outdoor-stage",
+      "title": "Outdoor Stage",
+      "source_label": "Ithra Events",
+      "source_method": "official-public-algolia-index",
+      "source_url": "https://www.ithra.com/en/programme/2026/ithra-winter-at-dhahran-expo/outdoor-stage",
+      "fetched": true,
+      "image": true,
+      "fetch_reason": ""
+    },
+    {
+      "id": "event-palms-village-in-al-ahsa",
+      "title": "Palms Village in Al Ahsa",
       "source_label": "Visit Saudi Seasons",
       "source_method": "official-page-meta",
-      "source_url": "https://www.visitsaudi.com/en/al-ahsa/events/alahsa-factory-dates-festival",
+      "source_url": "https://www.visitsaudi.com/en/al-ahsa/events/palms-village-in-al-ahsa",
       "fetched": true,
       "image": true,
       "fetch_reason": ""
     },
     {
-      "id": "event-rolling-podcast",
-      "title": "Rolling Podcast",
+      "id": "event-puppet-show",
+      "title": "Puppet Show",
       "source_label": "Ithra Events",
       "source_method": "official-public-algolia-index",
-      "source_url": "https://www.ithra.com/en/programme/2026/ithra-winter-at-dhahran-expo/words-waves/rolling-podcast",
+      "source_url": "https://www.ithra.com/en/programme/2026/ithra-winter-at-dhahran-expo/little-spotlight-zone/puppet-show",
       "fetched": true,
       "image": true,
       "fetch_reason": ""
     },
     {
-      "id": "event-the-big-printing-experience",
-      "title": "The Big Printing Experience",
+      "id": "event-rammed-earth",
+      "title": "Rammed Earth",
       "source_label": "Ithra Events",
       "source_method": "official-public-algolia-index",
-      "source_url": "https://www.ithra.com/en/programme/2026/printing-house/big-printing-experience",
+      "source_url": "https://www.ithra.com/en/programme/2026/ithra-winter-at-dhahran-expo/studio/rammed-earth-workshop",
       "fetched": true,
       "image": true,
       "fetch_reason": ""
     },
     {
-      "id": "event-your-stickers-your-way",
-      "title": "Your Stickers, Your Way",
+      "id": "event-roaming-performances",
+      "title": "Roaming Performances",
       "source_label": "Ithra Events",
       "source_method": "official-public-algolia-index",
-      "source_url": "https://www.ithra.com/en/programme/2026/printing-house/your-stickers-your-way",
+      "source_url": "https://www.ithra.com/en/programme/2026/ithra-winter-at-dhahran-expo/roaming-performances",
       "fetched": true,
       "image": true,
       "fetch_reason": ""
     },
     {
-      "id": "event-إدارة-المخاطر-في-المشاريع-الناشئة",
-      "title": "إدارة المخاطر في المشاريع الناشئة",
-      "source_label": "Umm Al-Qura University Events Center",
-      "source_method": "official-page-meta",
-      "source_url": "https://uqu.edu.sa/App/Events/41315",
+      "id": "event-sand-sculpturing",
+      "title": "Sand Sculpturing",
+      "source_label": "Ithra Events",
+      "source_method": "official-public-algolia-index",
+      "source_url": "https://www.ithra.com/en/programme/2026/ithra-winter-at-dhahran-expo/studio/sand-sculpturing",
       "fetched": true,
       "image": true,
       "fetch_reason": ""
     },
     {
-      "id": "event-اختيار-المجلة-العلمية-المناسبة-لبحثك-واستكشاف-فرص-النشر-بنظام-الوصول-الم",
-      "title": "اختيار المجلة العلمية المناسبة لبحثك واستكشاف فرص النشر بنظام الوصول المفتوح.",
-      "source_label": "Umm Al-Qura University Events Center",
-      "source_method": "official-page-meta",
-      "source_url": "https://uqu.edu.sa/App/Events/41317",
+      "id": "event-shadow-storytelling",
+      "title": "Shadow Storytelling",
+      "source_label": "Ithra Events",
+      "source_method": "official-public-algolia-index",
+      "source_url": "https://www.ithra.com/en/programme/2026/ithra-winter-at-dhahran-expo/little-spotlight-zone/shadow-storytelling",
       "fetched": true,
       "image": true,
       "fetch_reason": ""
     },
     {
-      "id": "event-الاستخدام-المسؤول-للذكاء-الاصطناعي-في-البحث-العلمي-والنشر-الأكاديمي-نهج-",
-      "title": "الاستخدام المسؤول للذكاء الاصطناعي في البحث العلمي والنشر الأكاديمي - نهج تايلور آند فرانسيس",
-      "source_label": "Umm Al-Qura University Events Center",
-      "source_method": "official-page-meta",
-      "source_url": "https://uqu.edu.sa/App/Events/41320",
+      "id": "event-storyteller-of-the-day-2",
+      "title": "Storyteller of the Day",
+      "source_label": "Ithra Events",
+      "source_method": "official-public-algolia-index",
+      "source_url": "https://www.ithra.com/en/programme/2026/ithra-winter-at-dhahran-expo/little-spotlight-zone/storyteller-day",
       "fetched": true,
       "image": true,
       "fetch_reason": ""
     },
     {
-      "id": "event-انشاء-مودبورد-احترافي",
-      "title": "انشاء مودبورد احترافي",
-      "source_label": "Umm Al-Qura University Events Center",
-      "source_method": "official-page-meta",
-      "source_url": "https://uqu.edu.sa/App/Events/41313",
+      "id": "event-storytime",
+      "title": "Storytime",
+      "source_label": "Ithra Events",
+      "source_method": "official-public-algolia-index",
+      "source_url": "https://www.ithra.com/en/programme/2026/ithra-winter-at-dhahran-expo/little-spotlight-zone/storytime",
       "fetched": true,
       "image": true,
       "fetch_reason": ""
     },
     {
-      "id": "event-تعزيز-الأثر-البحثي-لأبحاثك-استراتيجيات-فعّالة-وفهم-مؤشرات-قياس-الأثر-الب",
-      "title": "تعزيز الأثر البحثي لأبحاثك - استراتيجيات فعّالة وفهم مؤشرات قياس الأثر البحثي",
-      "source_label": "Umm Al-Qura University Events Center",
-      "source_method": "official-page-meta",
-      "source_url": "https://uqu.edu.sa/App/Events/41319",
+      "id": "event-tales-on-stage",
+      "title": "Tales on Stage",
+      "source_label": "Ithra Events",
+      "source_method": "official-public-algolia-index",
+      "source_url": "https://www.ithra.com/en/programme/2026/ithra-winter-at-dhahran-expo/little-spotlight-zone/tales-stage",
       "fetched": true,
       "image": true,
       "fetch_reason": ""
     },
     {
-      "id": "event-زيارة-ميدانية-بعنوان-مؤتمر-الحج-والعمرة",
-      "title": "زيارة ميدانية بعنوان مؤتمر الحج والعمرة",
-      "source_label": "Umm Al-Qura University Events Center",
+      "id": "event-the-little-farmer",
+      "title": "The Little Farmer",
+      "source_label": "Visit Saudi Seasons",
       "source_method": "official-page-meta",
-      "source_url": "https://uqu.edu.sa/App/Events/41322",
+      "source_url": "https://www.visitsaudi.com/en/al-ahsa/events/the-little-farmer",
       "fetched": true,
       "image": true,
       "fetch_reason": ""
     },
     {
-      "id": "event-زيارة-ميدانية-بعنوان-مؤتمر-ومعرض-الحج",
-      "title": "زيارة ميدانية بعنوان مؤتمر ومعرض الحج",
+      "id": "event-words-waves",
+      "title": "Words & Waves",
+      "source_label": "Ithra Events",
+      "source_method": "official-public-algolia-index",
+      "source_url": "https://www.ithra.com/en/programme/2026/ithra-winter-at-dhahran-expo/words-waves",
+      "fetched": true,
+      "image": true,
+      "fetch_reason": ""
+    },
+    {
+      "id": "event-اصدار-شهادة-اتمام-برنامج-التميز-المهني-10-ساعات-تدريبية",
+      "title": "اصدار شهادة اتمام برنامج التميز المهني 10 ساعات تدريبية",
       "source_label": "Umm Al-Qura University Events Center",
       "source_method": "official-page-meta",
-      "source_url": "https://uqu.edu.sa/App/Events/41321",
+      "source_url": "https://uqu.edu.sa/App/Events/41335",
+      "fetched": true,
+      "image": true,
+      "fetch_reason": ""
+    },
+    {
+      "id": "event-الإشراف-الأكاديمي-والتواصل-الفعال",
+      "title": "الإشراف الأكاديمي والتواصل الفعال",
+      "source_label": "Umm Al-Qura University Events Center",
+      "source_method": "official-page-meta",
+      "source_url": "https://uqu.edu.sa/App/Events/41333",
+      "fetched": true,
+      "image": true,
+      "fetch_reason": ""
+    },
+    {
+      "id": "event-اللقاء-الدوري-لطلبة-التدريب-التعاوني",
+      "title": "اللقاء الدوري لطلبة التدريب التعاوني",
+      "source_label": "Umm Al-Qura University Events Center",
+      "source_method": "official-page-meta",
+      "source_url": "https://uqu.edu.sa/App/Events/41334",
+      "fetched": true,
+      "image": true,
+      "fetch_reason": ""
+    },
+    {
+      "id": "event-تفعيل-بيئة-تعلم-إلكترونية-تفاعلية-بنمط-غير-متزامن-في-نسخته-العشرون",
+      "title": "تفعيل بيئة تعلم إلكترونية تفاعلية– بنمط غير متزامن في نسخته العشرون",
+      "source_label": "Umm Al-Qura University Events Center",
+      "source_method": "official-page-meta",
+      "source_url": "https://uqu.edu.sa/App/Events/41328",
       "fetched": true,
       "image": true,
       "fetch_reason": ""
@@ -139,88 +319,338 @@
       "fetch_reason": ""
     },
     {
-      "id": "event-برنامج-خوارزميـة-التأثيـر",
-      "title": "برنامج خوارزميـة التأثيـر",
+      "id": "event-فعالية-بعنوان-معسكر-صنّاع-المشهد",
+      "title": "فعالية بعنوان معسكر صنّاع المشهد",
       "source_label": "Umm Al-Qura University Events Center",
       "source_method": "official-page-meta",
-      "source_url": "https://uqu.edu.sa/App/Events/41165",
+      "source_url": "https://uqu.edu.sa/App/Events/41325",
       "fetched": true,
       "image": true,
       "fetch_reason": ""
     },
     {
-      "id": "event-بناء-ثقافة-الدعم-المتبادل-وإدارة-الضغوط-اليومية",
-      "title": "بناء ثقافة الدعم المتبادل وإدارة الضغوط اليومية",
+      "id": "event-لقاء-الجودة-بعين-الطالب-وعي،-مشاركة-وأثر",
+      "title": "لقاء (الجودة بعين الطالب: وعي، مشاركة وأثر)",
       "source_label": "Umm Al-Qura University Events Center",
       "source_method": "official-page-meta",
-      "source_url": "https://uqu.edu.sa/App/Events/41217",
+      "source_url": "https://uqu.edu.sa/App/Events/41329",
       "fetched": true,
       "image": true,
       "fetch_reason": ""
     },
     {
-      "id": "event-تخطيط-المقرر-وبناء-ملف-المقرر",
-      "title": "تخطيط المقرر وبناء ملف المقرر",
+      "id": "event-لقاء-بعنوان-رواد-العلم-والأدب-في-الحضارة-الإسلامية",
+      "title": "لقاء بعنوان رواد العلم والأدب في الحضارة الإسلامية",
       "source_label": "Umm Al-Qura University Events Center",
       "source_method": "official-page-meta",
-      "source_url": "https://uqu.edu.sa/App/Events/41164",
+      "source_url": "https://uqu.edu.sa/App/Events/41332",
       "fetched": true,
       "image": true,
       "fetch_reason": ""
     },
     {
-      "id": "event-توظيف-الذكاء-الاصطناعي-في-الكشف-المبكر-عن-سرطان-الثدي",
-      "title": "توظيف الذكاء الاصطناعي في الكشف المبكر عن سرطان الثدي",
-      "source_label": "Qassim University Events",
-      "source_method": "official-page-meta",
-      "source_url": "https://www.qu.edu.sa/events/%D8%AA%D9%88%D8%B8%D9%8A%D9%81-%D8%A7%D9%84%D8%B0%D9%83%D8%A7%D8%A1-%D8%A7%D9%84%D8%A7%D8%B5%D8%B7%D9%86%D8%A7%D8%B9%D9%8A-%D9%81%D9%8A-%D8%A7%D9%84%D9%83%D8%B4%D9%81-%D8%A7%D9%84%D9%85%D8%A8%D9%83/",
-      "fetched": true,
-      "image": true,
-      "fetch_reason": ""
-    },
-    {
-      "id": "event-رشة-عمل-بعنوان-النزاهة-الرياضية",
-      "title": "رشة عمل بعنوان «النزاهة الرياضية»",
+      "id": "event-ورشة-عمل-بعنوان-مسابقة-الباج-الذهبي",
+      "title": "ورشة عمل بعنوان مسابقة الباج الذهبي",
       "source_label": "Umm Al-Qura University Events Center",
       "source_method": "official-page-meta",
-      "source_url": "https://uqu.edu.sa/App/Events/41274",
+      "source_url": "https://uqu.edu.sa/App/Events/41330",
       "fetched": true,
       "image": true,
       "fetch_reason": ""
     },
     {
-      "id": "event-زيارة-ميدانية-لإدارة-الأدلة-الجنائية",
-      "title": "زيارة ميدانية لإدارة الأدلة الجنائية",
-      "source_label": "Umm Al-Qura University Events Center",
+      "id": "event-ahlam-concert",
+      "title": "Ahlam Concert",
+      "source_label": "Visit Saudi Seasons",
       "source_method": "official-page-meta",
-      "source_url": "https://uqu.edu.sa/App/Events/41269",
+      "source_url": "https://www.visitsaudi.com/en/jeddah/events/ahlam-concert",
       "fetched": true,
       "image": true,
       "fetch_reason": ""
     },
     {
-      "id": "event-صياغة-البيئات-الآمنة-تحويل-التجارب-الحية-إلى-قرارات",
-      "title": "صياغة البيئات الآمنة: تحويل التجارب الحية إلى قرارات",
-      "source_label": "Umm Al-Qura University Events Center",
+      "id": "event-alula-arts-festival",
+      "title": "AlUla Arts Festival",
+      "source_label": "Experience AlUla Events",
       "source_method": "official-page-meta",
-      "source_url": "https://uqu.edu.sa/App/Events/41216",
+      "source_url": "https://www.experiencealula.com/en/whats-on/festivals/alula-arts-festival",
       "fetched": true,
       "image": true,
       "fetch_reason": ""
     },
     {
-      "id": "event-فعالية-بعنوان-العالم-على-شاشة",
-      "title": "فعالية بعنوان العالم على شاشة",
-      "source_label": "Umm Al-Qura University Events Center",
+      "id": "event-alula-skies-festival",
+      "title": "AlUla Skies Festival",
+      "source_label": "Experience AlUla Events",
       "source_method": "official-page-meta",
-      "source_url": "https://uqu.edu.sa/App/Events/41273",
+      "source_url": "https://www.experiencealula.com/en/whats-on/festivals/alula-skies-festival",
       "fetched": true,
       "image": true,
       "fetch_reason": ""
     },
     {
-      "id": "event-كايف-المزرعة",
-      "title": "كايف المزرعة",
+      "id": "event-alula-tour",
+      "title": "AlUla Tour",
+      "source_label": "Experience AlUla Events",
+      "source_method": "official-page-meta",
+      "source_url": "https://www.experiencealula.com/en/whats-on/events/alula-tour",
+      "fetched": true,
+      "image": true,
+      "fetch_reason": ""
+    },
+    {
+      "id": "event-aramco-f4-saudi-arabian-championship",
+      "title": "Aramco F4 Saudi Arabian Championship",
+      "source_label": "Visit Saudi Seasons",
+      "source_method": "official-page-meta",
+      "source_url": "https://www.visitsaudi.com/en/jeddah/events/aramco-f4-saudi-arabian-championship",
+      "fetched": true,
+      "image": true,
+      "fetch_reason": ""
+    },
+    {
+      "id": "event-art-futures-camp-2026-diriyah-art-futures",
+      "title": "Art Futures Camp 2026 – Diriyah Art Futures",
+      "source_label": "Riyadh City Events",
+      "source_method": "approved-source-row",
+      "source_url": "https://riyadh.sa/en/moment/events/item/event/31032",
+      "fetched": false,
+      "image": true,
+      "fetch_reason": "fetch failed"
+    },
+    {
+      "id": "event-ashjar-farm",
+      "title": "Ashjar Farm",
+      "source_label": "Discover Aseer Events",
+      "source_method": "approved-source-row",
+      "source_url": "https://discoveraseer.com/en/experiences/ashgar",
+      "fetched": false,
+      "image": true,
+      "fetch_reason": "HTTP 404"
+    },
+    {
+      "id": "event-bahaa-sultan-rami-gamal-concert",
+      "title": "Bahaa Sultan & Rami Gamal Concert",
+      "source_label": "Visit Saudi Seasons",
+      "source_method": "official-page-meta",
+      "source_url": "https://www.visitsaudi.com/en/jeddah/events/bahaa-sultan-rami-gamal-concert",
+      "fetched": true,
+      "image": true,
+      "fetch_reason": ""
+    },
+    {
+      "id": "event-coca-cola-fan-zone-at-jax-district",
+      "title": "Coca-Cola Fan Zone at JAX District",
+      "source_label": "Visit Saudi Seasons",
+      "source_method": "official-page-meta",
+      "source_url": "https://www.visitsaudi.com/en/diriyah/events/coca-cola-fan-zone",
+      "fetched": true,
+      "image": true,
+      "fetch_reason": ""
+    },
+    {
+      "id": "event-coca-cola-fan-zone-for-fifa-world-cup-2026",
+      "title": "Coca-Cola Fan Zone For FIFA World Cup 2026",
+      "source_label": "Riyadh City Events",
+      "source_method": "approved-source-row",
+      "source_url": "https://riyadh.sa/en/moment/events/item/event/31040",
+      "fetched": false,
+      "image": false,
+      "fetch_reason": "fetch failed"
+    },
+    {
+      "id": "event-continuum-26-diriyah-art-futures-emerging-new-media-artists-programme",
+      "title": "Continuum '26 Diriyah Art Futures Emerging New Media Artists Programme",
+      "source_label": "Visit Saudi Seasons",
+      "source_method": "official-page-meta",
+      "source_url": "https://www.visitsaudi.com/en/diriyah/events/continuum-26-diriyah-art-futures",
+      "fetched": true,
+      "image": true,
+      "fetch_reason": ""
+    },
+    {
+      "id": "event-culinary-manufacturing-hubs",
+      "title": "Culinary Manufacturing Hubs",
+      "source_label": "Ministry of Culture Commission Calendars",
+      "source_method": "approved-source-row",
+      "source_url": "https://www.moc.gov.sa/en/Modules/Pages/Initiative/Culinary%20Manufacturing%20Hubs/EventDetail",
+      "fetched": false,
+      "image": true,
+      "fetch_reason": "fetch failed"
+    },
+    {
+      "id": "event-curious-summers",
+      "title": "Curious Summers",
+      "source_label": "Visit Saudi Seasons",
+      "source_method": "official-page-meta",
+      "source_url": "https://www.visitsaudi.com/en/riyadh/events/curious-summer",
+      "fetched": true,
+      "image": true,
+      "fetch_reason": ""
+    },
+    {
+      "id": "event-dakah-in-abha",
+      "title": "Dakah in Abha",
+      "source_label": "Visit Saudi Seasons",
+      "source_method": "official-page-meta",
+      "source_url": "https://www.visitsaudi.com/en/aseer/events/dakah-in-abha",
+      "fetched": true,
+      "image": true,
+      "fetch_reason": ""
+    },
+    {
+      "id": "event-design-for-good-initiative",
+      "title": "Design for Good Initiative",
+      "source_label": "Ministry of Culture Commission Calendars",
+      "source_method": "approved-source-row",
+      "source_url": "https://www.moc.gov.sa/en/Modules/Pages/Initiative/design%20for%20good/EventDetail",
+      "fetched": false,
+      "image": true,
+      "fetch_reason": "fetch failed"
+    },
+    {
+      "id": "event-development-media-from-message-to-impact",
+      "title": "Development Media: From Message to Impact",
+      "source_label": "Misk Hub Events",
+      "source_method": "official-page-meta",
+      "source_url": "https://hub.misk.org.sa/events/skills/from-message-to-impact/",
+      "fetched": true,
+      "image": true,
+      "fetch_reason": ""
+    },
+    {
+      "id": "event-egypt-vs-argentina",
+      "title": "Egypt Vs Argentina",
+      "source_label": "Saudi Universities and Technical Colleges",
+      "source_method": "official-page-meta",
+      "source_url": "https://kaustcentral-eventscalendar-userwebsite.cfapps.eu20.hana.ondemand.com/dashboard/event-details/517",
+      "fetched": true,
+      "image": false,
+      "fetch_reason": ""
+    },
+    {
+      "id": "event-eishha-live-it-fan-zone-for-fifa-world-cup-2026",
+      "title": "Eishha (Live It) Fan Zone For FIFA World Cup 2026",
+      "source_label": "Riyadh City Events",
+      "source_method": "approved-source-row",
+      "source_url": "https://riyadh.sa/en/moment/events/item/event/31073",
+      "fetched": false,
+      "image": true,
+      "fetch_reason": "fetch failed"
+    },
+    {
+      "id": "event-esports-world-cup",
+      "title": "Esports World Cup",
+      "source_label": "Riyadh City Events",
+      "source_method": "approved-source-row",
+      "source_url": "https://riyadh.sa/en/moment/events/item/event/30169",
+      "fetched": false,
+      "image": true,
+      "fetch_reason": "fetch failed"
+    },
+    {
+      "id": "event-europe-village-art-street",
+      "title": "Europe Village- Art Street",
+      "source_label": "Visit Saudi Seasons",
+      "source_method": "official-page-meta",
+      "source_url": "https://www.visitsaudi.com/en/aseer/events/europe-village",
+      "fetched": true,
+      "image": true,
+      "fetch_reason": ""
+    },
+    {
+      "id": "event-facility-management-conference-exhibition",
+      "title": "Facility Management Conference & Exhibition",
+      "source_label": "Riyadh City Events",
+      "source_method": "approved-source-row",
+      "source_url": "https://riyadh.sa/en/moment/events/item/event/30021",
+      "fetched": false,
+      "image": true,
+      "fetch_reason": "fetch failed"
+    },
+    {
+      "id": "event-fadel-chaker-concert",
+      "title": "Fadel Chaker Concert",
+      "source_label": "Visit Saudi Seasons",
+      "source_method": "official-page-meta",
+      "source_url": "https://www.visitsaudi.com/en/riyadh/events/fadel-chaker-concert",
+      "fetched": true,
+      "image": true,
+      "fetch_reason": ""
+    },
+    {
+      "id": "event-fadel-chaker-concert-second-nights",
+      "title": "Fadel Chaker Concert Second Nights",
+      "source_label": "Visit Saudi Seasons",
+      "source_method": "official-page-meta",
+      "source_url": "https://www.visitsaudi.com/en/riyadh/events/fadel-chaker-concert-second-nights",
+      "fetched": true,
+      "image": true,
+      "fetch_reason": ""
+    },
+    {
+      "id": "event-fei-endurance-world-championship-2026",
+      "title": "FEI Endurance World Championship 2026",
+      "source_label": "Experience AlUla Events",
+      "source_method": "official-page-meta",
+      "source_url": "https://www.experiencealula.com/en/whats-on/events/fei-endurance-world-championship",
+      "fetched": true,
+      "image": true,
+      "fetch_reason": ""
+    },
+    {
+      "id": "event-fifa-world-cup-2026-final-celebrate-footballs-biggest-night-at-the-kaust",
+      "title": "FIFA World Cup 2026 Final: Celebrate Football's Biggest Night at the KAUST Fan Zone",
+      "source_label": "Saudi Universities and Technical Colleges",
+      "source_method": "official-page-meta",
+      "source_url": "https://kaustcentral-eventscalendar-userwebsite.cfapps.eu20.hana.ondemand.com/dashboard/event-details/514",
+      "fetched": true,
+      "image": false,
+      "fetch_reason": ""
+    },
+    {
+      "id": "event-film-business-accelerator",
+      "title": "Film Business Accelerator",
+      "source_label": "Ministry of Culture Commission Calendars",
+      "source_method": "approved-source-row",
+      "source_url": "https://www.moc.gov.sa/en/Modules/Pages/Initiative/Film_Accelerator/EventDetail",
+      "fetched": false,
+      "image": true,
+      "fetch_reason": "fetch failed"
+    },
+    {
+      "id": "event-tethered-hot-air-balloon-experience",
+      "title": "Tethered Hot Air Balloon Experience",
+      "source_label": "Experience AlUla Events",
+      "source_method": "official-page-meta",
+      "source_url": "https://www.experiencealula.com/en/whats-on/events/tethered-hot-air-balloon-experience",
+      "fetched": true,
+      "image": true,
+      "fetch_reason": ""
+    },
+    {
+      "id": "event-unaizah-international-dates-carnival",
+      "title": "Unaizah International Dates Carnival",
+      "source_label": "Visit Saudi Seasons",
+      "source_method": "official-page-meta",
+      "source_url": "https://www.visitsaudi.com/en/qassim/events/unaizah-international-dates-carnival",
+      "fetched": true,
+      "image": true,
+      "fetch_reason": ""
+    },
+    {
+      "id": "event-wwe-crown-jewel",
+      "title": "WWE Crown Jewel",
+      "source_label": "Visit Saudi Seasons",
+      "source_method": "official-page-meta",
+      "source_url": "https://www.visitsaudi.com/en/riyadh/events/wwe-crown-jewel",
+      "fetched": true,
+      "image": true,
+      "fetch_reason": ""
+    },
+    {
+      "id": "event-أشجار",
+      "title": "أشجار",
       "source_label": "Visit Saudi Summer Calendar PDF",
       "source_method": "official-page-meta",
       "source_url": "https://www.visitsaudi.com/content/dam/documents/saudi-calendar-ar.pdf",
@@ -229,28 +659,238 @@
       "fetch_reason": ""
     },
     {
-      "id": "event-لقاءات-شهر-سبتمبر-2026م",
-      "title": "لقاءات شهر سبتمبر 2026م",
-      "source_label": "Monsha'at All Events",
-      "source_method": "approved-source-row",
-      "source_url": "http://www.monshaat.gov.sa/ar/node/505995",
-      "fetched": false,
-      "image": false,
-      "fetch_reason": "fetch failed"
+      "id": "event-إنشاء-وإدارة-المقرر-في-blackboard-ultra-الفترة-المسائية",
+      "title": "إنشاء وإدارة المقرر في Blackboard Ultra – الفترة المسائية",
+      "source_label": "Umm Al-Qura University Events Center",
+      "source_method": "official-page-meta",
+      "source_url": "https://uqu.edu.sa/App/Events/41086",
+      "fetched": true,
+      "image": true,
+      "fetch_reason": ""
     },
     {
-      "id": "event-لقاءات-شهر-سبتمبر-المغلقة-2026م",
-      "title": "لقاءات شهر سبتمبر (المغلقة) 2026م",
-      "source_label": "Monsha'at All Events",
-      "source_method": "approved-source-row",
-      "source_url": "http://www.monshaat.gov.sa/ar/node/506688",
-      "fetched": false,
-      "image": false,
-      "fetch_reason": "fetch failed"
+      "id": "event-الألوان-نافذة-نحو-الصحة-النفسية-وجودة-الحياة",
+      "title": "الألوان نافذة نحو الصحة النفسية وجودة الحياة",
+      "source_label": "Umm Al-Qura University Events Center",
+      "source_method": "official-page-meta",
+      "source_url": "https://uqu.edu.sa/App/Events/41145",
+      "fetched": true,
+      "image": true,
+      "fetch_reason": ""
     },
     {
-      "id": "event-ليالي-المباريات-في-أكت-1",
-      "title": "ليالي المباريات في أكت 1",
+      "id": "event-الترشح-للدبلوم-المتوسط-التحول-الرقمي-حضوري-بالتعاون-مع-جمعية-الرياض-للتن",
+      "title": "الترشح للدبلوم المتوسط التحول الرقمي(حضوري) بالتعاون مع جمعية الرياض للتنمية والدراسات والخدمات الاستشارية",
+      "source_label": "Umm Al-Qura University Events Center",
+      "source_method": "official-page-meta",
+      "source_url": "https://uqu.edu.sa/App/Events/41091",
+      "fetched": true,
+      "image": true,
+      "fetch_reason": ""
+    },
+    {
+      "id": "event-الترشح-للدبلوم-المتوسط-امن-المعلومات-حضوري-بالتعاون-مع-جمعية-الرياض-للتن",
+      "title": "الترشح للدبلوم المتوسط امن المعلومات (حضوري) بالتعاون مع جمعية الرياض للتنمية والدراسات والخدمات الاستشارية",
+      "source_label": "Umm Al-Qura University Events Center",
+      "source_method": "official-page-meta",
+      "source_url": "https://uqu.edu.sa/App/Events/41094",
+      "fetched": true,
+      "image": true,
+      "fetch_reason": ""
+    },
+    {
+      "id": "event-الترشح-للدبلوم-المتوسط-تجربة-العميل-حضوري-بالتعاون-مع-جمعية-الرياض-للتنم",
+      "title": "الترشح للدبلوم المتوسط تجربة العميل(حضوري) بالتعاون مع جمعية الرياض للتنمية والدراسات والخدمات الاستشارية",
+      "source_label": "Umm Al-Qura University Events Center",
+      "source_method": "official-page-meta",
+      "source_url": "https://uqu.edu.sa/App/Events/41092",
+      "fetched": true,
+      "image": true,
+      "fetch_reason": ""
+    },
+    {
+      "id": "event-الترشح-للدبلوم-المشارك-إدارة-الحشود-حضوري-بالتعاون-مع-جمعية-الرياض-للتنم",
+      "title": "الترشح للدبلوم المشارك إدارة الحشود (حضوري) بالتعاون مع جمعية الرياض للتنمية والدراسات والخدمات الاستشارية",
+      "source_label": "Umm Al-Qura University Events Center",
+      "source_method": "official-page-meta",
+      "source_url": "https://uqu.edu.sa/App/Events/41096",
+      "fetched": true,
+      "image": true,
+      "fetch_reason": ""
+    },
+    {
+      "id": "event-الترشح-للدبلوم-المشارك-إدارة-المشاريع-حضوري-بالتعاون-مع-جمعية-الرياض-للت",
+      "title": "الترشح للدبلوم المشارك إدارة المشاريع (حضوري) بالتعاون مع جمعية الرياض للتنمية والدراسات والخدمات الاستشارية",
+      "source_label": "Umm Al-Qura University Events Center",
+      "source_method": "official-page-meta",
+      "source_url": "https://uqu.edu.sa/App/Events/41097",
+      "fetched": true,
+      "image": true,
+      "fetch_reason": ""
+    },
+    {
+      "id": "event-التسجيل-والسداد-لدبلوم-المتوسط-عن-بعد-في-أمن-المعلومات-مع-الشركاء",
+      "title": "التسجيل والسداد لدبلوم المتوسط (عن بعد) في أمن المعلومات مع الشركاء",
+      "source_label": "Umm Al-Qura University Events Center",
+      "source_method": "official-page-meta",
+      "source_url": "https://uqu.edu.sa/App/Events/41065",
+      "fetched": true,
+      "image": true,
+      "fetch_reason": ""
+    },
+    {
+      "id": "event-التسجيل-والسداد-لدبلوم-المتوسط-عن-بعد-في-التسويق-التطبيقي-مع-الشركاء",
+      "title": "التسجيل والسداد لدبلوم المتوسط (عن بعد) في التسويق التطبيقي مع الشركاء",
+      "source_label": "Umm Al-Qura University Events Center",
+      "source_method": "official-page-meta",
+      "source_url": "https://uqu.edu.sa/App/Events/41064",
+      "fetched": true,
+      "image": true,
+      "fetch_reason": ""
+    },
+    {
+      "id": "event-التسجيل-والسداد-لدبلوم-المتوسط-عن-بعد-في-اللغة-الإنجليزية-المهنية-مع-الش",
+      "title": "التسجيل والسداد لدبلوم المتوسط (عن بعد) في اللغة الإنجليزية المهنية مع الشركاء",
+      "source_label": "Umm Al-Qura University Events Center",
+      "source_method": "official-page-meta",
+      "source_url": "https://uqu.edu.sa/App/Events/41066",
+      "fetched": true,
+      "image": true,
+      "fetch_reason": ""
+    },
+    {
+      "id": "event-التسجيل-والسداد-لدبلوم-المشارك-حضوري-في-الإدارة-الفندقية-لخارج-مكة",
+      "title": "التسجيل والسداد لدبلوم المشارك (حضوري) في الإدارة الفندقية لخارج مكة",
+      "source_label": "Umm Al-Qura University Events Center",
+      "source_method": "official-page-meta",
+      "source_url": "https://uqu.edu.sa/App/Events/41057",
+      "fetched": true,
+      "image": true,
+      "fetch_reason": ""
+    },
+    {
+      "id": "event-التسجيل-والسداد-لدبلوم-المشارك-حضوري-في-الخدمة-الاجتماعية-في-رعاية-الأيت",
+      "title": "التسجيل والسداد لدبلوم المشارك (حضوري) في الخدمة الاجتماعية في رعاية الأيتام لخارج مكة",
+      "source_label": "Umm Al-Qura University Events Center",
+      "source_method": "official-page-meta",
+      "source_url": "https://uqu.edu.sa/App/Events/41056",
+      "fetched": true,
+      "image": true,
+      "fetch_reason": ""
+    },
+    {
+      "id": "event-التسجيل-والسداد-لدبلوم-المشارك-حضوري-في-مساعد-في-التربية-الخاصة-وإدارة-ا",
+      "title": "التسجيل والسداد لدبلوم المشارك (حضوري) في مساعد في التربية الخاصة وإدارة السلوك لخارج مكة",
+      "source_label": "Umm Al-Qura University Events Center",
+      "source_method": "official-page-meta",
+      "source_url": "https://uqu.edu.sa/App/Events/41058",
+      "fetched": true,
+      "image": true,
+      "fetch_reason": ""
+    },
+    {
+      "id": "event-التسجيل-والسداد-لدبلوم-المشارك-عن-بعد-في-إدارة-الحشود-لخارج-مكة",
+      "title": "التسجيل والسداد لدبلوم المشارك (عن بعد) في إدارة الحشود لخارج مكة",
+      "source_label": "Umm Al-Qura University Events Center",
+      "source_method": "official-page-meta",
+      "source_url": "https://uqu.edu.sa/App/Events/41060",
+      "fetched": true,
+      "image": true,
+      "fetch_reason": ""
+    },
+    {
+      "id": "event-التسجيل-والسداد-لدبلوم-المشارك-عن-بعد-في-إدارة-اللوجستيات-وسلاسل-الإمداد",
+      "title": "التسجيل والسداد لدبلوم المشارك (عن بعد) في إدارة اللوجستيات وسلاسل الإمداد لخارج مكة",
+      "source_label": "Umm Al-Qura University Events Center",
+      "source_method": "official-page-meta",
+      "source_url": "https://uqu.edu.sa/App/Events/41061",
+      "fetched": true,
+      "image": true,
+      "fetch_reason": ""
+    },
+    {
+      "id": "event-التسجيل-والسداد-لدبلوم-المشارك-عن-بعد-في-إدارة-المشاريع-مع-الشركاء",
+      "title": "التسجيل والسداد لدبلوم المشارك (عن بعد) في إدارة المشاريع مع الشركاء",
+      "source_label": "Umm Al-Qura University Events Center",
+      "source_method": "official-page-meta",
+      "source_url": "https://uqu.edu.sa/App/Events/41063",
+      "fetched": true,
+      "image": true,
+      "fetch_reason": ""
+    },
+    {
+      "id": "event-التسجيل-والسداد-لدبلوم-المشارك-عن-بعد-في-الإرشاد-السياحي-لخارج-مكة",
+      "title": "التسجيل والسداد لدبلوم المشارك (عن بعد) في الإرشاد السياحي لخارج مكة",
+      "source_label": "Umm Al-Qura University Events Center",
+      "source_method": "official-page-meta",
+      "source_url": "https://uqu.edu.sa/App/Events/41059",
+      "fetched": true,
+      "image": true,
+      "fetch_reason": ""
+    },
+    {
+      "id": "event-التسجيل-والسداد-لدبلوم-المشارك-عن-بعد-في-الابتكار-في-ريادة-الأعمال-مع-ال",
+      "title": "التسجيل والسداد لدبلوم المشارك (عن بعد) في الابتكار في ريادة الأعمال مع الشركاء",
+      "source_label": "Umm Al-Qura University Events Center",
+      "source_method": "official-page-meta",
+      "source_url": "https://uqu.edu.sa/App/Events/41062",
+      "fetched": true,
+      "image": true,
+      "fetch_reason": ""
+    },
+    {
+      "id": "event-التشكيل-الحر",
+      "title": "التشكيل الحر",
+      "source_label": "Umm Al-Qura University Events Center",
+      "source_method": "official-page-meta",
+      "source_url": "https://uqu.edu.sa/App/Events/41073",
+      "fetched": true,
+      "image": true,
+      "fetch_reason": ""
+    },
+    {
+      "id": "event-التعريف-بخدمات-مراكز-ناجز-العدلية",
+      "title": "التعريف بخدمات مراكز ناجز العدلية",
+      "source_label": "Jazan Chamber Events",
+      "source_method": "official-page-meta",
+      "source_url": "https://events.jazancci.org.sa/ar/events/altaryf-bkhdmat-mrakz-najz-aladlyh",
+      "fetched": true,
+      "image": true,
+      "fetch_reason": ""
+    },
+    {
+      "id": "event-التعريف-بلائحة-نشاط-النقل-التعليمي",
+      "title": "التعريف بلائحة نشاط النقل التعليمي",
+      "source_label": "Jazan Chamber Events",
+      "source_method": "official-page-meta",
+      "source_url": "https://events.jazancci.org.sa/ar/events/altaryf-blaehh-nshat-alnql-altalymy",
+      "fetched": true,
+      "image": true,
+      "fetch_reason": ""
+    },
+    {
+      "id": "event-التقنيات-المستقبلية",
+      "title": "التقنيات المستقبلية",
+      "source_label": "Qassim Chamber Events",
+      "source_method": "approved-source-row",
+      "source_url": "https://tc.qcc.org.sa/events/210",
+      "fetched": false,
+      "image": false,
+      "fetch_reason": "HTTP 403"
+    },
+    {
+      "id": "event-الحوكمة-والمخاطر-والامتثال",
+      "title": "الحوكمة والمخاطر والامتثال",
+      "source_label": "Qassim Chamber Events",
+      "source_method": "approved-source-row",
+      "source_url": "https://tc.qcc.org.sa/events/207",
+      "fetched": false,
+      "image": true,
+      "fetch_reason": "HTTP 403"
+    },
+    {
+      "id": "event-الخطة-c-مع-رضوان-الريمي-ليلة-كوميدية-طربية",
+      "title": "الخطة C مع رضوان الريمي ليلة كوميدية طربية",
       "source_label": "Visit Saudi Summer Calendar PDF",
       "source_method": "official-page-meta",
       "source_url": "https://www.visitsaudi.com/content/dam/documents/saudi-calendar-ar.pdf",
@@ -259,58 +899,188 @@
       "fetch_reason": ""
     },
     {
-      "id": "event-ورشة-عمل-بعنوان-الرسم-بالألوان-الأكريليك",
-      "title": "ورشة عمل بعنوان الرسم بالألوان الأكريليك",
+      "id": "event-الدليل-التنظيمي-ووثيقة-حقوق-وواجبات-عضو-هيئة-التدريس",
+      "title": "الدليل التنظيمي ووثيقة حقوق وواجبات عضو هيئة التدريس",
       "source_label": "Umm Al-Qura University Events Center",
       "source_method": "official-page-meta",
-      "source_url": "https://uqu.edu.sa/App/Events/41272",
+      "source_url": "https://uqu.edu.sa/App/Events/41144",
       "fetched": true,
       "image": true,
       "fetch_reason": ""
     },
     {
-      "id": "event-ورشة-عمل-بعنوان-جماليات-لف-الورق",
-      "title": "ورشة عمل بعنوان جماليات لف الورق",
-      "source_label": "Umm Al-Qura University Events Center",
+      "id": "event-الدوري-السعودي-للرياضات-الالكترونية-القتالية",
+      "title": "الدوري السعودي للرياضات الالكترونية القتالية",
+      "source_label": "Visit Saudi Summer Calendar PDF",
       "source_method": "official-page-meta",
-      "source_url": "https://uqu.edu.sa/App/Events/41270",
+      "source_url": "https://www.visitsaudi.com/content/dam/documents/saudi-calendar-ar.pdf",
       "fetched": true,
       "image": true,
       "fetch_reason": ""
     },
     {
-      "id": "event-ورشة-عمل-بعنوان-فن-التفصيص-والترصيع-بـ-الكريستال",
-      "title": "ورشة عمل بعنوان فن التفصيص والترصيع بـ (الكريستال)",
+      "id": "event-الطالب-الفعّال-في-بيئة-البلاك-بورد-الترا-الفترة-الصباحيه",
+      "title": "الطالب الفعّال في بيئة البلاك بورد الترا – الفترة الصباحيه",
       "source_label": "Umm Al-Qura University Events Center",
       "source_method": "official-page-meta",
-      "source_url": "https://uqu.edu.sa/App/Events/41271",
+      "source_url": "https://uqu.edu.sa/App/Events/41100",
       "fetched": true,
       "image": true,
       "fetch_reason": ""
     },
     {
-      "id": "event-ورشة-عمل-بعنوان-مهارات-رياضة-البادل",
-      "title": "ورشة عمل بعنوان «مهارات رياضة البادل»",
+      "id": "event-الطالب-الفعّال-في-بيئة-البلاك-بورد-الترا-الفترة-المسائية",
+      "title": "الطالب الفعّال في بيئة البلاك بورد الترا – الفترة المسائية",
       "source_label": "Umm Al-Qura University Events Center",
       "source_method": "official-page-meta",
-      "source_url": "https://uqu.edu.sa/App/Events/41275",
+      "source_url": "https://uqu.edu.sa/App/Events/41101",
       "fetched": true,
       "image": true,
       "fetch_reason": ""
+    },
+    {
+      "id": "event-الفصول-الافتراضية-عبر-blackboard-ultra-الفترة-الصباحية",
+      "title": "الفصول الافتراضية عبر Blackboard Ultra – الفترة الصباحية",
+      "source_label": "Umm Al-Qura University Events Center",
+      "source_method": "official-page-meta",
+      "source_url": "https://uqu.edu.sa/App/Events/41089",
+      "fetched": true,
+      "image": true,
+      "fetch_reason": ""
+    },
+    {
+      "id": "event-الفصول-الافتراضية-عبر-blackboard-ultra-الفترة-المسائية",
+      "title": "الفصول الافتراضية عبر Blackboard Ultra – الفترة المسائية",
+      "source_label": "Umm Al-Qura University Events Center",
+      "source_method": "official-page-meta",
+      "source_url": "https://uqu.edu.sa/App/Events/41090",
+      "fetched": true,
+      "image": true,
+      "fetch_reason": ""
+    },
+    {
+      "id": "event-الكروشيه",
+      "title": "الكروشيه",
+      "source_label": "Umm Al-Qura University Events Center",
+      "source_method": "official-page-meta",
+      "source_url": "https://uqu.edu.sa/App/Events/41072",
+      "fetched": true,
+      "image": true,
+      "fetch_reason": ""
+    },
+    {
+      "id": "event-اللقاء-التعريفي-بخدمات-عمادة-شؤون-الطلاب",
+      "title": "اللقاء التعريفي بخدمات عمادة شؤون الطلاب",
+      "source_label": "Umm Al-Qura University Events Center",
+      "source_method": "official-page-meta",
+      "source_url": "https://uqu.edu.sa/App/Events/41146",
+      "fetched": true,
+      "image": true,
+      "fetch_reason": ""
+    },
+    {
+      "id": "event-المحتوى-التفاعلي-والتقييم-الإلكتروني-في-blackboard-ultra-الفترة-الصباحية",
+      "title": "المحتوى التفاعلي والتقييم الإلكتروني في Blackboard Ultra – الفترة الصباحية",
+      "source_label": "Umm Al-Qura University Events Center",
+      "source_method": "official-page-meta",
+      "source_url": "https://uqu.edu.sa/App/Events/41087",
+      "fetched": true,
+      "image": true,
+      "fetch_reason": ""
+    },
+    {
+      "id": "event-المحتوى-التفاعلي-والتقييم-الإلكتروني-في-blackboard-ultra-الفترة-المسائية",
+      "title": "المحتوى التفاعلي والتقييم الإلكتروني في Blackboard Ultra – الفترة المسائية",
+      "source_label": "Umm Al-Qura University Events Center",
+      "source_method": "official-page-meta",
+      "source_url": "https://uqu.edu.sa/App/Events/41088",
+      "fetched": true,
+      "image": true,
+      "fetch_reason": ""
+    },
+    {
+      "id": "event-المهارات-الأساسية-للمبيعات",
+      "title": "المهارات الأساسية للمبيعات",
+      "source_label": "Qassim Chamber Events",
+      "source_method": "approved-source-row",
+      "source_url": "https://tc.qcc.org.sa/events/213",
+      "fetched": false,
+      "image": true,
+      "fetch_reason": "HTTP 403"
     }
   ],
   "failed": [
     {
-      "id": "event-لقاءات-شهر-سبتمبر-2026م",
-      "title": "لقاءات شهر سبتمبر 2026م",
-      "source_url": "http://www.monshaat.gov.sa/ar/node/505995",
+      "id": "event-art-futures-camp-2026-diriyah-art-futures",
+      "title": "Art Futures Camp 2026 – Diriyah Art Futures",
+      "source_url": "https://riyadh.sa/en/moment/events/item/event/31032",
       "reason": "fetch failed"
     },
     {
-      "id": "event-لقاءات-شهر-سبتمبر-المغلقة-2026م",
-      "title": "لقاءات شهر سبتمبر (المغلقة) 2026م",
-      "source_url": "http://www.monshaat.gov.sa/ar/node/506688",
+      "id": "event-ashjar-farm",
+      "title": "Ashjar Farm",
+      "source_url": "https://discoveraseer.com/en/experiences/ashgar",
+      "reason": "HTTP 404"
+    },
+    {
+      "id": "event-coca-cola-fan-zone-for-fifa-world-cup-2026",
+      "title": "Coca-Cola Fan Zone For FIFA World Cup 2026",
+      "source_url": "https://riyadh.sa/en/moment/events/item/event/31040",
       "reason": "fetch failed"
+    },
+    {
+      "id": "event-culinary-manufacturing-hubs",
+      "title": "Culinary Manufacturing Hubs",
+      "source_url": "https://www.moc.gov.sa/en/Modules/Pages/Initiative/Culinary%20Manufacturing%20Hubs/EventDetail",
+      "reason": "fetch failed"
+    },
+    {
+      "id": "event-design-for-good-initiative",
+      "title": "Design for Good Initiative",
+      "source_url": "https://www.moc.gov.sa/en/Modules/Pages/Initiative/design%20for%20good/EventDetail",
+      "reason": "fetch failed"
+    },
+    {
+      "id": "event-eishha-live-it-fan-zone-for-fifa-world-cup-2026",
+      "title": "Eishha (Live It) Fan Zone For FIFA World Cup 2026",
+      "source_url": "https://riyadh.sa/en/moment/events/item/event/31073",
+      "reason": "fetch failed"
+    },
+    {
+      "id": "event-esports-world-cup",
+      "title": "Esports World Cup",
+      "source_url": "https://riyadh.sa/en/moment/events/item/event/30169",
+      "reason": "fetch failed"
+    },
+    {
+      "id": "event-facility-management-conference-exhibition",
+      "title": "Facility Management Conference & Exhibition",
+      "source_url": "https://riyadh.sa/en/moment/events/item/event/30021",
+      "reason": "fetch failed"
+    },
+    {
+      "id": "event-film-business-accelerator",
+      "title": "Film Business Accelerator",
+      "source_url": "https://www.moc.gov.sa/en/Modules/Pages/Initiative/Film_Accelerator/EventDetail",
+      "reason": "fetch failed"
+    },
+    {
+      "id": "event-التقنيات-المستقبلية",
+      "title": "التقنيات المستقبلية",
+      "source_url": "https://tc.qcc.org.sa/events/210",
+      "reason": "HTTP 403"
+    },
+    {
+      "id": "event-الحوكمة-والمخاطر-والامتثال",
+      "title": "الحوكمة والمخاطر والامتثال",
+      "source_url": "https://tc.qcc.org.sa/events/207",
+      "reason": "HTTP 403"
+    },
+    {
+      "id": "event-المهارات-الأساسية-للمبيعات",
+      "title": "المهارات الأساسية للمبيعات",
+      "source_url": "https://tc.qcc.org.sa/events/213",
+      "reason": "HTTP 403"
     }
   ]
 }

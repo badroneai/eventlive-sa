@@ -1,22 +1,22 @@
 {
   "schema": "eventlive.harvest-os-status.v1",
-  "generated_at": "2026-11-08T09:44:43.910Z",
+  "generated_at": "2026-11-09T10:46:33.682Z",
   "status": "NEEDS_WORK",
   "operating_rule": "Probe before new sources; sample before full harvest; Raw collection is not publication; discovery-only never auto-publishes.",
   "totals": {
     "sources": 88,
-    "candidates": 335,
-    "matched_candidates": 319,
+    "candidates": 369,
+    "matched_candidates": 352,
     "auto_publish_sources": 15,
     "candidate_only_sources": 12,
     "partnership_required_sources": 5,
     "blocked_or_closed_sources": 0,
     "manual_review_sources": 56,
-    "collection_attempted": 27,
-    "productive_sources": 14,
+    "collection_attempted": 39,
+    "productive_sources": 15,
     "collector_errors": 9,
-    "chronic_collector_errors": 5,
-    "transient_collector_errors": 4
+    "chronic_collector_errors": 8,
+    "transient_collector_errors": 1
   },
   "policies": {
     "partnership_required": 5,
@@ -25,24 +25,24 @@
     "manual_review": 56
   },
   "candidates_by_gate": {
-    "catalog-review": 319,
+    "catalog-review": 352,
     "source-evidence": 11,
-    "duplicate-review": 3,
+    "duplicate-review": 4,
     "secondary-verified": 2
   },
   "funnel": {
-    "discovered_this_run": 133,
-    "candidate_queue": 335,
-    "evaluated_for_publish": 335,
-    "linked_existing": 305,
-    "published_new": 13,
-    "blocked": 17,
+    "discovered_this_run": 168,
+    "candidate_queue": 369,
+    "evaluated_for_publish": 369,
+    "linked_existing": 315,
+    "published_new": 36,
+    "blocked": 18,
     "secondary_promoted": 0,
-    "secondary_still_blocked": 28
+    "secondary_still_blocked": 58
   },
   "blocked_reasons": {
     "publication gate source-evidence is not auto-publishable": 9,
-    "possible duplicate requires review: exact-title-city-venue-conflict": 1,
+    "possible duplicate requires review: exact-title-city-venue-conflict": 2,
     "possible duplicate requires review: exact-title-city-source-conflict": 1,
     "unknown category requires review": 2,
     "possible duplicate requires review: fuzzy-title-venue-date-window": 1,
@@ -53,63 +53,63 @@
     {
       "id": "mos-events",
       "note": "collector-error: fetch failed [ETIMEDOUT, ENETUNREACH]",
-      "error_streak": 70,
+      "error_streak": 71,
       "kind": "chronic",
       "attempted_this_run": true
     },
     {
       "id": "saudi-pro-league-fixtures",
       "note": "collector-error: fetch failed [EAI_AGAIN]",
-      "error_streak": 50,
+      "error_streak": 51,
       "kind": "chronic",
       "attempted_this_run": true
     },
     {
       "id": "tuwaiq-academy-bootcamps",
       "note": "collector-error: HTTP 403",
-      "error_streak": 47,
+      "error_streak": 48,
       "kind": "chronic",
       "attempted_this_run": true
     },
     {
       "id": "qassim-chamber-events",
       "note": "collector-error: HTTP 403",
-      "error_streak": 16,
+      "error_streak": 17,
       "kind": "chronic",
       "attempted_this_run": true
     },
     {
       "id": "asharqia-chamber-events",
-      "note": "collector-error: HTTP 404; live browser recovery deferred by recent failed probe cooldown",
-      "error_streak": 3,
+      "note": "collector-error: fetch failed [UND_ERR_CONNECT_TIMEOUT]",
+      "error_streak": 4,
       "kind": "chronic",
-      "attempted_this_run": false
+      "attempted_this_run": true
     },
     {
       "id": "moc-cultural-calendar",
-      "note": "fetch failed [UNABLE_TO_VERIFY_LEAF_SIGNATURE]; fetch failed [UNABLE_TO_VERIFY_LEAF_SIGNATURE]",
-      "error_streak": 2,
-      "kind": "transient",
+      "note": "collector-error: fetch failed [UNABLE_TO_VERIFY_LEAF_SIGNATURE]; fetch failed [UNABLE_TO_VERIFY_LEAF_SIGNATURE]",
+      "error_streak": 3,
+      "kind": "chronic",
       "attempted_this_run": true
     },
     {
       "id": "saudi-space-agency-events",
-      "note": "fetch failed [ETIMEDOUT, ENETUNREACH]",
-      "error_streak": 2,
-      "kind": "transient",
+      "note": "collector-error: fetch failed [ETIMEDOUT, ENETUNREACH]",
+      "error_streak": 3,
+      "kind": "chronic",
       "attempted_this_run": true
     },
     {
       "id": "moc-cultural-subportals",
-      "note": "fetch failed [UNABLE_TO_VERIFY_LEAF_SIGNATURE]; fetch failed [UNABLE_TO_VERIFY_LEAF_SIGNATURE]",
-      "error_streak": 2,
-      "kind": "transient",
+      "note": "collector-error: fetch failed [UNABLE_TO_VERIFY_LEAF_SIGNATURE]; fetch failed [UNABLE_TO_VERIFY_LEAF_SIGNATURE]",
+      "error_streak": 3,
+      "kind": "chronic",
       "attempted_this_run": true
     },
     {
       "id": "monshaat-events",
       "note": "fetch failed [UND_ERR_CONNECT_TIMEOUT]; fetch failed [UND_ERR_CONNECT_TIMEOUT]",
-      "error_streak": 1,
+      "error_streak": 2,
       "kind": "transient",
       "attempted_this_run": true
     }

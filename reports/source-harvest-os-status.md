@@ -1,41 +1,41 @@
 # EventLive Harvest OS Status
 
-- Generated at: 2026-11-08T09:44:43.910Z
+- Generated at: 2026-11-09T10:46:33.682Z
 - Status: NEEDS_WORK
 - Operating rule: Probe before new sources; sample before full harvest; Raw collection is not publication; discovery-only never auto-publishes.
 
 ## Totals
 
 - Sources: 88
-- Candidates: 335
-- Matched candidates: 319
+- Candidates: 369
+- Matched candidates: 352
 - Auto-publish sources: 15
 - Candidate-only sources: 12
 - Partnership-required sources: 5
-- Productive sources / attempted: 14/27
-- Collector errors: 9 (chronic 5, transient 4)
+- Productive sources / attempted: 15/39
+- Collector errors: 9 (chronic 8, transient 1)
 
 ## Publication Funnel
 
 | Stage | Count |
 | --- | --- |
-| discovered_this_run | 133 |
-| candidate_queue | 335 |
-| evaluated_for_publish | 335 |
-| linked_existing | 305 |
-| published_new | 13 |
-| blocked | 17 |
+| discovered_this_run | 168 |
+| candidate_queue | 369 |
+| evaluated_for_publish | 369 |
+| linked_existing | 315 |
+| published_new | 36 |
+| blocked | 18 |
 | secondary_promoted | 0 |
-| secondary_still_blocked | 28 |
+| secondary_still_blocked | 58 |
 
 ## Blocked Reasons
 
 | Reason | Count |
 | --- | --- |
 | publication gate source-evidence is not auto-publishable | 9 |
+| possible duplicate requires review: exact-title-city-venue-conflict | 2 |
 | unknown category requires review | 2 |
 | not an attendable event: enrolment-announcement | 2 |
-| possible duplicate requires review: exact-title-city-venue-conflict | 1 |
 | possible duplicate requires review: exact-title-city-source-conflict | 1 |
 | possible duplicate requires review: fuzzy-title-venue-date-window | 1 |
 | linked catalog row event-music-festival-mdlbeast-soundstorm was superseded by dedupe | 1 |
@@ -44,15 +44,15 @@
 
 | Source | Kind | Failed runs in a row | Attempted this run | Reason |
 | --- | --- | --- | --- | --- |
-| mos-events | chronic | 70 | yes | collector-error: fetch failed [ETIMEDOUT, ENETUNREACH] |
-| saudi-pro-league-fixtures | chronic | 50 | yes | collector-error: fetch failed [EAI_AGAIN] |
-| tuwaiq-academy-bootcamps | chronic | 47 | yes | collector-error: HTTP 403 |
-| qassim-chamber-events | chronic | 16 | yes | collector-error: HTTP 403 |
-| asharqia-chamber-events | chronic | 3 | no | collector-error: HTTP 404; live browser recovery deferred by recent failed probe cooldown |
-| moc-cultural-calendar | transient | 2 | yes | fetch failed [UNABLE_TO_VERIFY_LEAF_SIGNATURE]; fetch failed [UNABLE_TO_VERIFY_LEAF_SIGNATURE] |
-| saudi-space-agency-events | transient | 2 | yes | fetch failed [ETIMEDOUT, ENETUNREACH] |
-| moc-cultural-subportals | transient | 2 | yes | fetch failed [UNABLE_TO_VERIFY_LEAF_SIGNATURE]; fetch failed [UNABLE_TO_VERIFY_LEAF_SIGNATURE] |
-| monshaat-events | transient | 1 | yes | fetch failed [UND_ERR_CONNECT_TIMEOUT]; fetch failed [UND_ERR_CONNECT_TIMEOUT] |
+| mos-events | chronic | 71 | yes | collector-error: fetch failed [ETIMEDOUT, ENETUNREACH] |
+| saudi-pro-league-fixtures | chronic | 51 | yes | collector-error: fetch failed [EAI_AGAIN] |
+| tuwaiq-academy-bootcamps | chronic | 48 | yes | collector-error: HTTP 403 |
+| qassim-chamber-events | chronic | 17 | yes | collector-error: HTTP 403 |
+| asharqia-chamber-events | chronic | 4 | yes | collector-error: fetch failed [UND_ERR_CONNECT_TIMEOUT] |
+| moc-cultural-calendar | chronic | 3 | yes | collector-error: fetch failed [UNABLE_TO_VERIFY_LEAF_SIGNATURE]; fetch failed [UNABLE_TO_VERIFY_LEAF_SIGNATURE] |
+| saudi-space-agency-events | chronic | 3 | yes | collector-error: fetch failed [ETIMEDOUT, ENETUNREACH] |
+| moc-cultural-subportals | chronic | 3 | yes | collector-error: fetch failed [UNABLE_TO_VERIFY_LEAF_SIGNATURE]; fetch failed [UNABLE_TO_VERIFY_LEAF_SIGNATURE] |
+| monshaat-events | transient | 2 | yes | fetch failed [UND_ERR_CONNECT_TIMEOUT]; fetch failed [UND_ERR_CONNECT_TIMEOUT] |
 
 | Source | Policy | Trust | Gate |
 | --- | --- | --- | --- |

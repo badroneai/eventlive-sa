@@ -1,8 +1,8 @@
 # Visit Saudi Calendar Enrichment Report
 
-- generated_at: 2026-11-08T09:28:52.298Z
+- generated_at: 2026-11-09T10:27:28.135Z
 - targets: 50
-- candidates: 10
+- candidates: 11
 - enriched: 50
 - fetched: 49
 - images: 50
@@ -48,6 +48,7 @@
 - Khaled Jwad Live in Jeddah - official-page-html - image=yes - features=7
 - Tony Abou Jaoude Live in Riyadh - official-page-html - image=yes - features=7
 - Tony Abou Jaoude Live in Jeddah - official-page-html - image=yes - features=7
+- Katheeb Trip to Al-Asfar Lake - official-page-html - image=yes - features=7
 - Al Milwah Falcon Race - official-page-html - image=yes - features=7
 - Alaa El Sheikh Live in Riyadh - official-page-html - image=yes - features=7
 - Stand Up Comedy Shows This Weekend from Exit Thmanyah - official-page-html - image=yes - features=7
@@ -59,7 +60,6 @@
 - Wagef! Momos Live in Jeddah - official-page-html - image=yes - features=7
 - The Innovation Driven Water Sustainability Conference - official-page-html - image=yes - features=7
 - Saudi Falcon Cup - official-page-html - image=yes - features=7
-- IN ACT - ACT XII - NEW YEAR'S EVE - official-page-html - image=yes - features=7
 
 ## Fetch Failures
 

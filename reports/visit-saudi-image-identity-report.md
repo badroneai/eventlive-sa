@@ -1,17 +1,14 @@
 # EventLive Visit Saudi Image Identity Report
 
-- generated_at: 2026-11-08T09:26:41.356Z
-- pdf_crop_assignments: 30
+- generated_at: 2026-11-09T10:25:06.408Z
+- pdf_crop_assignments: 26
 - verified: 26
-- struck: 4
+- struck: 0
 - slots_seen_this_cycle: 31
 
 ## Struck (fell back to generated cover)
 
-- استمرارية 26 (visit-saudi-summer-2026-p007-top-left.png) - slot-vacated - no dated card currently occupies page 7 top-left of https://www.visitsaudi.com/content/dam/documents/saudi-calendar-ar.pdf
-- ربع تون (visit-saudi-summer-2026-p007-top-right.png) - slot-vacated - no dated card currently occupies page 7 top-right of https://www.visitsaudi.com/content/dam/documents/saudi-calendar-ar.pdf
-- وقف! عرض نمر الكوميدي مباشر في جدة (visit-saudi-summer-2026-p069-top-right.png) - slot-vacated - no dated card currently occupies page 69 top-right of https://www.visitsaudi.com/content/dam/documents/saudi-calendar-ar.pdf
-- كراون جول (visit-saudi-summer-2026-p004-top-right.png) - slot-vacated - no dated card currently occupies page 4 top-right of https://www.visitsaudi.com/content/dam/documents/saudi-calendar-ar.pdf
+- none
 
 ## Verified
 

@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-08T09:26:41.356Z",
+  "generated_at": "2026-11-09T10:25:06.408Z",
   "catalog": "data/events_catalog.json",
   "candidates": "data/source_candidates.json",
   "manifest": "data/event_image_cache_manifest.json",
@@ -9,41 +9,12 @@
     "min_intersection": 2
   },
   "totals": {
-    "pdf_crop_assignments": 30,
+    "pdf_crop_assignments": 26,
     "verified": 26,
-    "struck": 4,
+    "struck": 0,
     "slots_seen_this_cycle": 31
   },
-  "struck": [
-    {
-      "id": "event-استمرارية-26",
-      "title": "استمرارية 26",
-      "file": "visit-saudi-summer-2026-p007-top-left.png",
-      "reason": "slot-vacated",
-      "detail": "no dated card currently occupies page 7 top-left of https://www.visitsaudi.com/content/dam/documents/saudi-calendar-ar.pdf"
-    },
-    {
-      "id": "event-ربع-تون",
-      "title": "ربع تون",
-      "file": "visit-saudi-summer-2026-p007-top-right.png",
-      "reason": "slot-vacated",
-      "detail": "no dated card currently occupies page 7 top-right of https://www.visitsaudi.com/content/dam/documents/saudi-calendar-ar.pdf"
-    },
-    {
-      "id": "event-وقف-عرض-نمر-الكوميدي-مباشر-في-جدة",
-      "title": "وقف! عرض نمر الكوميدي مباشر في جدة",
-      "file": "visit-saudi-summer-2026-p069-top-right.png",
-      "reason": "slot-vacated",
-      "detail": "no dated card currently occupies page 69 top-right of https://www.visitsaudi.com/content/dam/documents/saudi-calendar-ar.pdf"
-    },
-    {
-      "id": "event-كراون-جول",
-      "title": "كراون جول",
-      "file": "visit-saudi-summer-2026-p004-top-right.png",
-      "reason": "slot-vacated",
-      "detail": "no dated card currently occupies page 4 top-right of https://www.visitsaudi.com/content/dam/documents/saudi-calendar-ar.pdf"
-    }
-  ],
+  "struck": [],
   "verified": [
     {
       "id": "event-سوق-الثلاثاء-الشعبي",
