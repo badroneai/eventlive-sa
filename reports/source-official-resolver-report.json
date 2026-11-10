@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-09T10:31:14.741Z",
+  "generated_at": "2026-11-10T10:23:36.152Z",
   "source_ops_report": "reports/source-ops-report.json",
   "source_registry": "data/source_registry.json",
   "totals": {
@@ -17,7 +17,7 @@
       "discovery_quality": "watch-lead",
       "discovery_score": 60,
       "discovery_notes": "saudi-location-signal, specific-venue, event-topic-fit, non-saudi-eventbrite-domain",
-      "resolver_priority": 94,
+      "resolver_priority": 107,
       "target_sources": [
         {
           "id": "informa-connect-saudi-events",

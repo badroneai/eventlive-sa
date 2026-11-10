@@ -1,452 +1,41 @@
 {
   "schema": "eventlive.source-browser-probe-checkpoint.v1",
-  "checkpointed_at": "2026-11-09T10:12:00.133Z",
-  "generated_at": "2026-11-09T10:06:36.586Z",
+  "checkpointed_at": "2026-11-10T10:10:30.055Z",
+  "generated_at": "2026-11-10T10:10:22.722Z",
   "source_registry": "data/source_registry.json",
   "output_dir": "data/raw/browser-probes",
-  "sources_planned": 8,
-  "sources_completed": 8,
+  "sources_planned": 1,
+  "sources_completed": 1,
   "totals": {
-    "probed": 8,
+    "probed": 1,
     "browser_network_api": 0,
     "browser_hydration_payload": 0,
-    "rendered_html_candidates": 1,
-    "blocked_or_protected": 1,
+    "rendered_html_candidates": 0,
+    "blocked_or_protected": 0,
     "policy_skipped": 0
   },
   "completed_ids": [
-    "mos-events",
-    "monshaat-events",
-    "tuwaiq-academy-bootcamps",
-    "saudi-pro-league-fixtures",
-    "saudi-space-agency-events",
-    "qassim-chamber-events",
-    "eye-of-riyadh-events",
-    "eventbrite-saudi"
+    "riyadh-city-events"
   ],
   "sources": [
     {
-      "id": "mos-events",
-      "probed_at": "2026-11-09T10:08:50.903Z",
-      "name": "Ministry of Sport Events",
-      "priority": 4,
-      "url": "https://www.mos.gov.sa/en/media/events",
-      "final_url": "chrome-error://chromewebdata/",
-      "status": "error",
-      "http_status": 0,
-      "navigation_error": "page.goto: Timeout 30000ms exceeded.\nCall log:\n  - navigating to \"https://www.mos.gov.sa/en/media/events\", waiting until \"domcontentloaded\"\n",
-      "duration_ms": 133966,
-      "classification": "empty-or-shell",
-      "next_action": "اعتبرها shell وابحث عن API أو مسار بديل قبل أي collector.",
-      "title": "",
-      "text_bytes": 0,
-      "html_bytes": 0,
-      "html_snapshot": "data/raw/browser-probes/mos-events-2026-11-09T10-06-36-586Z.html",
-      "screenshot": "",
-      "signals": {
-        "has_next_data": false,
-        "has_nuxt": false,
-        "has_json_ld": false,
-        "has_event_schema": false,
-        "date_snippets": [],
-        "event_like_links": []
-      },
-      "script_signals": {
-        "next_data_scripts": 0,
-        "nuxt_scripts": 0,
-        "json_ld_scripts": 0,
-        "large_inline_scripts": 0
-      },
-      "network_total": 0,
-      "network_endpoints": [],
-      "network_sample": []
-    },
-    {
-      "id": "monshaat-events",
-      "probed_at": "2026-11-09T10:11:06.066Z",
-      "name": "Monsha'at All Events",
-      "priority": 9,
-      "url": "https://www.monshaat.gov.sa/en/events-list",
-      "final_url": "chrome-error://chromewebdata/",
-      "status": "error",
-      "http_status": 0,
-      "navigation_error": "page.goto: Timeout 30000ms exceeded.\nCall log:\n  - navigating to \"https://www.monshaat.gov.sa/en/events-list\", waiting until \"domcontentloaded\"\n",
-      "duration_ms": 135130,
-      "classification": "empty-or-shell",
-      "next_action": "اعتبرها shell وابحث عن API أو مسار بديل قبل أي collector.",
-      "title": "",
-      "text_bytes": 0,
-      "html_bytes": 0,
-      "html_snapshot": "data/raw/browser-probes/monshaat-events-2026-11-09T10-06-36-586Z.html",
-      "screenshot": "",
-      "signals": {
-        "has_next_data": false,
-        "has_nuxt": false,
-        "has_json_ld": false,
-        "has_event_schema": false,
-        "date_snippets": [],
-        "event_like_links": []
-      },
-      "script_signals": {
-        "next_data_scripts": 0,
-        "nuxt_scripts": 0,
-        "json_ld_scripts": 0,
-        "large_inline_scripts": 0
-      },
-      "network_total": 0,
-      "network_endpoints": [],
-      "network_sample": []
-    },
-    {
-      "id": "tuwaiq-academy-bootcamps",
-      "probed_at": "2026-11-09T10:11:12.389Z",
-      "name": "Tuwaiq Academy Bootcamps and Programs",
-      "priority": 16,
-      "url": "https://tuwaiq.edu.sa/api/GetInitiativePublishesShorten/12/1?category=ac41152d-f228-8af4-8406-e0cda6df6c35&type=NORMAL",
-      "final_url": "https://tuwaiq.edu.sa/api/GetInitiativePublishesShorten/12/1?category=ac41152d-f228-8af4-8406-e0cda6df6c35&type=NORMAL",
+      "id": "riyadh-city-events",
+      "probed_at": "2026-11-10T10:10:30.053Z",
+      "name": "Riyadh City Events",
+      "priority": 51,
+      "url": "https://riyadh.sa/en/events/all",
+      "final_url": "https://riyadh.sa/en/events/all",
       "status": "ok",
       "http_status": 200,
       "navigation_error": "",
-      "duration_ms": 6290,
-      "classification": "browser-structured-html",
-      "next_action": "اكتب extractor من JSON-LD أو structured scripts مع fallback للبطاقات.",
-      "title": "",
-      "text_bytes": 10672,
-      "html_bytes": 10835,
-      "html_snapshot": "data/raw/browser-probes/tuwaiq-academy-bootcamps-2026-11-09T10-06-36-586Z.html",
-      "screenshot": "data/raw/browser-probes/tuwaiq-academy-bootcamps-2026-11-09T10-06-36-586Z.png",
-      "signals": {
-        "has_next_data": false,
-        "has_nuxt": false,
-        "has_json_ld": false,
-        "has_event_schema": true,
-        "date_snippets": [
-          "بيرتون - المسار التأسيسي \",\"startDate\":\"2026-12-06T09:00:00+03:00\",\"endDate\":\"2027-09-09T21:00:00+03:00\",\"autoCloseRegistration\":f",
-          "nStartDate\":null,\"registrationEndDate\":\"2026-11-15T12:00:00+03:00\",\"requireProfileCompletion\":true,\"isMergePublish\":null,\"isPaid\":",
-          "ية الاحترافية لسحابة قوقل\",\"startDate\":\"2026-12-06T17:00:00+03:00\",\"endDate\":\"2026-12-31T21:00:00+03:00\",\"autoCloseRegistration\":f",
-          "nStartDate\":null,\"registrationEndDate\":\"2026-11-08T12:00:00+03:00\",\"requireProfileCompletion\":true,\"isMergePublish\":true,\"isPaid\":",
-          "ر الذكاء الاصطناعي للقادة\",\"startDate\":\"2026-12-06T18:00:00+03:00\",\"endDate\":\"2026-12-31T21:00:00+03:00\",\"autoCloseRegistration\":f",
-          "nStartDate\":null,\"registrationEndDate\":\"2026-11-08T12:00:00+03:00\",\"requireProfileCompletion\":false,\"isMergePublish\":true,\"isPaid\"",
-          "عسكر حلول الأمن السيبراني\",\"startDate\":\"2026-12-13T17:00:00+03:00\",\"endDate\":\"2027-01-07T20:00:00+03:00\",\"autoCloseRegistration\":f",
-          "nStartDate\":null,\"registrationEndDate\":\"2026-11-29T12:00:00+03:00\",\"requireProfileCompletion\":true,\"isMergePublish\":true,\"isPaid\":"
-        ],
-        "event_like_links": []
-      },
-      "script_signals": {
-        "next_data_scripts": 0,
-        "nuxt_scripts": 0,
-        "json_ld_scripts": 0,
-        "large_inline_scripts": 0
-      },
-      "network_total": 1,
-      "network_endpoints": [],
-      "network_sample": [
-        {
-          "method": "GET",
-          "status": 200,
-          "url": "https://tuwaiq.edu.sa/api/GetInitiativePublishesShorten/12/1?category=ac41152d-f228-8af4-8406-e0cda6df6c35&type=NORMAL",
-          "content_type": "application/json",
-          "resource_type": "document",
-          "request_post_data": "",
-          "response_shape": "json-like-invalid",
-          "preview": "{\"pagination\":{\"offset\":0,\"limit\":12,\"total\":205,\"totalPages\":18},\"data\":[{\"id\":\"0d9a4a36-b497-4db2-b071-574d387e5c38\",\"academyTypeId\":null,\"academyType\":null,\"title\":\"معسكر هولبيرتون - المسار التأسيسي \",\"startDate\":\"2026-12-06T09:00:00+03:00\",\"endDate\":\"2027-09-09T21:00:00+03:00\",\"autoCloseRegistration\":false,\"isOpen\":true,\"isRegistrationOpen\":true,\"isRegistrationClosed\":false,\"logo\":null,\"outerImage\":\"images/qata2tsg.z5f.webp\",\"initiativeAgeName\":\"كبار\",\"initiativeCategoryName\":\"معسكر\",\"initiativeScopeImage\":\"images/t0ib4qly.bms.png\",\"initiativeScopeName\":\"هندسة البرمجيات\",\"locationName\":\"الرياض - المقر الرئيسي\",\"slug\":\"AYmNxWoL\",\"registrationStartDate\":null,\"registrationEndDate\":\"2026-11-15T12:00:00+03:00\",\"requireProfileCompletion\":true,\"isMergePublish\":null,\"isPaid\":false,\"price\":0.00,\"includesEmployees\":false,\"vat\":0.00,\"priceWithoutVat\":0.00},{\"id\":\"46c277ae-5d9e-4a6b-805a-7e4720a83dfe\",\"academyTypeId\":null,\"academyType\":null,\"title\":\"معسكر تطوير البرمجيات السحابية الاحترافية لسحابة قوقل\",\"startDate\":\"2026-12-06T17:00:00+03:00\",\"endDate\":\"2026-12-31T21:00:00+03:00\",\"autoCloseRegistration\":false,\"isOpen\":true,\"isRegistrationOpen\":true,\"isRegistrationClosed\":false,\"logo\":\"images/zt203siy.0sn.png\",\"outerImage\":\"images/twhdfqfk.mjg.webp\",\"initiativeAgeName\":\"كبار\",\"initiativeCategoryName\":\"معسكر\",\"initiativeScopeImage\":\"images/lcbl2k2p.x5x.png\",\"initiativeScopeName\":\"الحوسبة السحابية\",\"locationName\":\"الرياض - المقر الرئيسي\",\"slug\":\"E9zNBzBP\",\"registrationStartDate\":null,\"registrationEndDate\":\"2026-11-08T12:00:00+03:00\",\"requireProfileCompletion\":true,\"isMergePublish\":true,\"isPaid\":false,\"price\":null,\"includesEmployees\":false,\"vat\":null,\"priceWithoutVat\":null},{\"id\":\"3d0eb27a-1c0e-49bd-ae2a-26c9b23f39f8\",\"academyTypeId\":null,\"academyType\":null,\"title\":\"معسكر الذكاء ال"
-        }
-      ]
-    },
-    {
-      "id": "saudi-pro-league-fixtures",
-      "probed_at": "2026-11-09T10:11:23.214Z",
-      "name": "Saudi Pro League Fixtures",
-      "priority": 30,
-      "url": "https://api.saudi-pro-league.pulselive.com/football/fixtures?comps=215&compSeasons=859&pageSize=100&statuses=C,U,L&sort=asc",
-      "final_url": "chrome-error://chromewebdata/",
-      "status": "error",
-      "http_status": 0,
-      "navigation_error": "page.goto: net::ERR_NAME_NOT_RESOLVED at https://api.saudi-pro-league.pulselive.com/football/fixtures?comps=215&compSeasons=859&pageSize=100&statuses=C,U,L&sort=asc\nCall log:\n  - navigating to \"https://api.saudi-pro-league.pulselive.com/football/fixtures?comps=215&compSeasons=859&pageSize=100&statuses=C,U,L&sort=asc\", waiting until \"domcontentloaded\"\n",
-      "duration_ms": 10790,
-      "classification": "empty-or-shell",
-      "next_action": "اعتبرها shell وابحث عن API أو مسار بديل قبل أي collector.",
-      "title": "",
-      "text_bytes": 0,
-      "html_bytes": 0,
-      "html_snapshot": "data/raw/browser-probes/saudi-pro-league-fixtures-2026-11-09T10-06-36-586Z.html",
-      "screenshot": "",
-      "signals": {
-        "has_next_data": false,
-        "has_nuxt": false,
-        "has_json_ld": false,
-        "has_event_schema": false,
-        "date_snippets": [],
-        "event_like_links": []
-      },
-      "script_signals": {
-        "next_data_scripts": 0,
-        "nuxt_scripts": 0,
-        "json_ld_scripts": 0,
-        "large_inline_scripts": 0
-      },
-      "network_total": 0,
-      "network_endpoints": [],
-      "network_sample": []
-    },
-    {
-      "id": "saudi-space-agency-events",
-      "probed_at": "2026-11-09T10:11:29.382Z",
-      "name": "Saudi Space Agency Events",
-      "priority": 32,
-      "url": "https://ssa.gov.sa/APIGW/en/api/EventsSearch/SearchEvents",
-      "final_url": "https://ssa.gov.sa/APIGW/en/api/EventsSearch/SearchEvents",
-      "status": "ok",
-      "http_status": 405,
-      "navigation_error": "",
-      "duration_ms": 6137,
-      "classification": "empty-or-shell",
-      "next_action": "اعتبرها shell وابحث عن API أو مسار بديل قبل أي collector.",
-      "title": "",
-      "text_bytes": 536,
-      "html_bytes": 687,
-      "html_snapshot": "data/raw/browser-probes/saudi-space-agency-events-2026-11-09T10-06-36-586Z.html",
-      "screenshot": "data/raw/browser-probes/saudi-space-agency-events-2026-11-09T10-06-36-586Z.png",
-      "signals": {
-        "has_next_data": false,
-        "has_nuxt": false,
-        "has_json_ld": false,
-        "has_event_schema": false,
-        "date_snippets": [],
-        "event_like_links": []
-      },
-      "script_signals": {
-        "next_data_scripts": 0,
-        "nuxt_scripts": 0,
-        "json_ld_scripts": 0,
-        "large_inline_scripts": 0
-      },
-      "network_total": 1,
-      "network_endpoints": [],
-      "network_sample": [
-        {
-          "method": "GET",
-          "status": 405,
-          "url": "https://ssa.gov.sa/APIGW/en/api/EventsSearch/SearchEvents",
-          "content_type": "text/plain",
-          "resource_type": "document",
-          "request_post_data": "",
-          "response_shape": "text",
-          "preview": "Status Code: 405; Method Not Allowed"
-        }
-      ]
-    },
-    {
-      "id": "qassim-chamber-events",
-      "probed_at": "2026-11-09T10:11:41.804Z",
-      "name": "Qassim Chamber Events",
-      "priority": 60,
-      "url": "https://tc.qcc.org.sa/",
-      "final_url": "https://tc.qcc.org.sa/",
-      "status": "ok",
-      "http_status": 403,
-      "navigation_error": "",
-      "duration_ms": 12396,
-      "classification": "blocked-or-protected",
-      "next_action": "لا تلتف على الحماية؛ صنف المصدر partnership/API أو ابحث عن مسار رسمي.",
-      "title": "لحظة…",
-      "text_bytes": 371,
-      "html_bytes": 44894,
-      "html_snapshot": "data/raw/browser-probes/qassim-chamber-events-2026-11-09T10-06-36-586Z.html",
-      "screenshot": "data/raw/browser-probes/qassim-chamber-events-2026-11-09T10-06-36-586Z.png",
-      "signals": {
-        "has_next_data": false,
-        "has_nuxt": false,
-        "has_json_ld": false,
-        "has_event_schema": false,
-        "date_snippets": [],
-        "event_like_links": []
-      },
-      "script_signals": {
-        "next_data_scripts": 0,
-        "nuxt_scripts": 0,
-        "json_ld_scripts": 0,
-        "large_inline_scripts": 0
-      },
-      "network_total": 0,
-      "network_endpoints": [],
-      "network_sample": []
-    },
-    {
-      "id": "eye-of-riyadh-events",
-      "probed_at": "2026-11-09T10:11:54.094Z",
-      "name": "Eye of Riyadh Events",
-      "priority": 12,
-      "url": "https://www.eyeofriyadh.com/events/",
-      "final_url": "https://www.eyeofriyadh.com/events/",
-      "status": "ok",
-      "http_status": 200,
-      "navigation_error": "",
-      "duration_ms": 12254,
-      "classification": "rendered-html-candidates",
-      "next_action": "اكتب extractor مرن من DOM بعد الرندر أو حسن selector الحالي.",
-      "title": "Events | Exhibitions |Festivals | Seminars Riyadh Saudi Arabia",
-      "text_bytes": 6326,
-      "html_bytes": 141607,
-      "html_snapshot": "data/raw/browser-probes/eye-of-riyadh-events-2026-11-09T10-06-36-586Z.html",
-      "screenshot": "data/raw/browser-probes/eye-of-riyadh-events-2026-11-09T10-06-36-586Z.png",
-      "signals": {
-        "has_next_data": false,
-        "has_nuxt": false,
-        "has_json_ld": false,
-        "has_event_schema": false,
-        "date_snippets": [
-          "28 Jumada I 1448 - 9 November 2026 Sign In/Sign Up Advertise with us Sign-up for newsletter HOME NEWS EVENTS BUSIN",
-          "hatsApp X LinkedIn Facebook Email Share 25 - 27 Jan, 2027 Real Estate Future Forum Four Seasons Hotel , Riyadh | Forum The Real Est",
-          "must evolve, embracing... More Details 4 - 5 Apr, 2027 Global Proptech Summit 2027 Mandarin Oriental Al Faisaliah , Riyadh | Sum",
-          "platform that convenes... More Details 7 - 8 Apr, 2027 Real Estate Supply Chain Forum Mandarin Oriental Al Faisaliah , Riyadh |",
-          "tform driving strategic... More Details 7 - 8 Apr, 2027 CIPS MENA Procurement and Supply Chain Futures conference and awards Mand",
-          "is the region’s leading... More Details 9 - 11 Nov, 2026 Saudi Pet & Vet Expo 2026 Riyadh International Convention & Exhibition Ce",
-          "n recent years, driven ... More Details 16 - 18 Nov, 2026 Hotel & Restaurant Supplies Expo 2026 Makkah Chamber for Exhibitions and",
-          "e hospitality sector is... More Details 16 - 18 Nov, 2026 PAPER-ME Saudi Arabia 2026 Jeddah International Exhibition & Convention C"
-        ],
-        "event_like_links": [
-          {
-            "text": "EVENTS",
-            "href": "https://www.eyeofriyadh.com/events/"
-          },
-          {
-            "text": "عربي",
-            "href": "https://www.eyeofriyadh.com/ar/events/"
-          },
-          {
-            "text": "Award",
-            "href": "https://www.eyeofriyadh.com/events/?fcat=15"
-          },
-          {
-            "text": "Ceremony",
-            "href": "https://www.eyeofriyadh.com/events/?fcat=21"
-          },
-          {
-            "text": "Championship",
-            "href": "https://www.eyeofriyadh.com/events/?fcat=13"
-          },
-          {
-            "text": "Conference",
-            "href": "https://www.eyeofriyadh.com/events/?fcat=1"
-          },
-          {
-            "text": "Congress",
-            "href": "https://www.eyeofriyadh.com/events/?fcat=28"
-          },
-          {
-            "text": "Convention",
-            "href": "https://www.eyeofriyadh.com/events/?fcat=17"
-          },
-          {
-            "text": "Exhibition",
-            "href": "https://www.eyeofriyadh.com/events/?fcat=2"
-          },
-          {
-            "text": "Festival",
-            "href": "https://www.eyeofriyadh.com/events/?fcat=5"
-          },
-          {
-            "text": "Forum",
-            "href": "https://www.eyeofriyadh.com/events/?fcat=3"
-          },
-          {
-            "text": "Professional Development Programme",
-            "href": "https://www.eyeofriyadh.com/events/?fcat=32"
-          },
-          {
-            "text": "Show",
-            "href": "https://www.eyeofriyadh.com/events/?fcat=24"
-          },
-          {
-            "text": "Summit",
-            "href": "https://www.eyeofriyadh.com/events/?fcat=4"
-          },
-          {
-            "text": "AWARD",
-            "href": "https://www.eyeofriyadh.com/events/?fcat=15"
-          },
-          {
-            "text": "CEREMONY",
-            "href": "https://www.eyeofriyadh.com/events/?fcat=21"
-          },
-          {
-            "text": "CHAMPIONSHIP",
-            "href": "https://www.eyeofriyadh.com/events/?fcat=13"
-          },
-          {
-            "text": "CONFERENCE",
-            "href": "https://www.eyeofriyadh.com/events/?fcat=1"
-          },
-          {
-            "text": "CONGRESS",
-            "href": "https://www.eyeofriyadh.com/events/?fcat=28"
-          },
-          {
-            "text": "CONVENTION",
-            "href": "https://www.eyeofriyadh.com/events/?fcat=17"
-          }
-        ]
-      },
-      "script_signals": {
-        "next_data_scripts": 0,
-        "nuxt_scripts": 0,
-        "json_ld_scripts": 0,
-        "large_inline_scripts": 0
-      },
-      "network_total": 3,
-      "network_endpoints": [],
-      "network_sample": [
-        {
-          "method": "GET",
-          "status": 200,
-          "url": "https://ep1.adtrafficquality.google/getconfig/sodar?sv=200&tid=gpt&tv=m202611030101&st=env&sjk=1299731441342880",
-          "content_type": "application/json",
-          "resource_type": "xhr",
-          "request_post_data": "",
-          "response_shape": "json-like-invalid",
-          "preview": "{\"sodar_query_id\":\"XpzxapqVI_KuodAPrP2iuQU\",\"injector_basename\":\"sodar2\",\"bg_hash_basename\":\"6D8_hzYSj68hz-lwW__9Oq0piess83K8dvBy2IeJuVs\",\"bg_binary\":\"gtUSCBx3QjrTwJc1fQ3ciLnOUbpxdaku6ZXYDfpcAS3LfnDAR6PA/R6bTKj0dacbkD5yzRuOXTCMh8WwJBDi1L1ipRT22BVBjlmgDqozwDlPDPa/9gTTL2WLuSMAMBQlqipwfqMsiztTq/dITHJbQAe1xtdInPHWP5la0MoCU5c+pr892IdL9Nkh+q9hV/xkeLTbyQKf5XRx8Fz7S1iQckXVa+YwJj2b4cCmFzw6d/rdK02Mz5eXkUb8TKCdI1nXl04Bju/Y4iQVJnfn/uFeRqksJRWXTTdj5kjgOCwh0x7z9046f3LXR54xJNVrcKvjnTNGptT2cP8INyVZE6WGIn0BDKcAO0tn2prUOtzKw7nwHRcDWnxe9rtAQePApxzJs0lqKYcgarihUe5DmOw3hrzZnOwBBFd5hV5bJEIPyVmMv3yKRou+foTtmsqMNrnPGx/E8ZGOXm6n3L1jmBi8cIBSinZj/1X314fs/IHAs/oRUve+zDTpFWH3uZ46KIT8owzikhNLbu69vwOLfc8pMVb3z4uSHKq00MIOPlckHyODMEx9vscNhT7VsNgqel0ne/SQsmo6H9v7Ohxhxt9vWZyU3pSVhtBLKTUu1074Yo2EwamtT+OeZlqhYA56rtdBIBVrl7wCBcBdgDqf8/RDr4fM+KkaiRv577B+iFx/QrCxxq6rAf0sEwJRrl2pRAeJOUFg/J8lyumPaYK/d7WFFSRertkKF94b7RmkfOtSWr/WnFC3XGaEOyEnDvj0C5VsiDHKOQPdE8RA8wYRkBvwipP4gIxFCFh3A11zG/e6EsOxMa9r+EcYAPCXEZiAVplO7ikvPgKmxwOog3GwHVMz9OXUW3tY4HWgyt3BXdnUur7uuabFr6KEqjX1NqFTypXocgprpevuUEjGzbsaVd56fLSIUmiQwePGRa3jFKejlkgLED54dHJ8PtbPOAY4EWDk02MdkrZqOL4E+1maMXvOAcyIZxfhCLHAGkMxV3q8QrbES2IcEB2yr2fX8B1TBeoe5QzkIveEyg8QSY7HcqQZRPIXQSju8uFPHVfCNvzeNx7Z/wuqCwAPinILW6ob4TnRO0xIfWf1i63mh89iV3c53xZlwI7MHfcFLys7P5bM31blhZa5eL1U9rLKQ0VGNL1Eea1TfjkvnldSsBxSOse9v/G8GNOIQf8cEIwI6JONc/+8n/L/MBCxnp0oMd+4SauSuv3yOyjYDdfzsIzuuWVunrHQVraaHRYUacem7fEDbQC2ngLcJYUi4/v4MKl+fR7JpzmBCAlTiVpBAafrmnysu/j48kcgj1oqBNtzci5oZ6vrD6jikZWi3KyQPNrEPwKebWYzFQxeUCTgr5IoX62nEBbQiVcgrgzXARD8KOdy8Gsbg+k5FVvBUVqc6xQuA3QQQQH1qVIihTIpY1UBD0RktfNVJsrYIC1xiuLdBlh+o+MpmRxeH5KmJfVx6tHNIDpiJo/+cELbkJDsTuDpzjDlH5q5TlJUvKaVVOIfzPQ+AQJghiwSU2pUeKhqXMwjnwRN25+CsnWX+VPVEpSYXHulE7sqZUb3K6mrmQk7DUkqE+MdD12QJ8j2ZTIYyUvbPLjZLMqEX+ef5irtRCGtfN/SbqkaBoXKKncPy+Nzp85O9x0dsxAEI"
-        },
-        {
-          "method": "GET",
-          "status": 200,
-          "url": "https://bootstrap.smartsuppchat.com/widget/2509ea3487b655fdefb67761d4610393011e3a91.json",
-          "content_type": "application/json",
-          "resource_type": "xhr",
-          "request_post_data": "",
-          "response_shape": "json-object:aiRatingEnabled,allowedDomains,buttonStyle,color,color2,colorGradient,consentModeEnabled,crossDomainEnabled",
-          "preview": "{\"aiRatingEnabled\":false,\"allowedDomains\":[],\"buttonStyle\":\"greeting\",\"color\":\"#f5a623\",\"color2\":null,\"colorGradient\":true,\"consentModeEnabled\":false,\"crossDomainEnabled\":false,\"customBrandingEnabled\":false,\"customBrandingLink\":\"\",\"customBrandingText\":\"\",\"emailControl\":true,\"features\":{\"api\":false,\"customize\":false,\"ga\":false,\"groups\":false,\"rating\":false,\"whiteLabel\":false},\"googleAnalyticsEnabled\":false,\"googleAnalyticsManual\":false,\"googleAnalyticsMeasurementIds\":[],\"groupSelectEnabled\":false,\"headerStyle\":\"standard\",\"hideOfflineChat\":false,\"hideWidget\":false,\"host\":\"websocket-visitors.smartsupp.com\",\"internalAnalyticsEnabled\":false,\"isBlocked\":false,\"lang\":\"en\",\"mobilePopupsEnabled\":false,\"nameControl\":true,\"numberControl\":false,\"openOnTrigger\":false,\"orientation\":\"right\",\"packageName\":\"free\",\"popupTextareaEnabled\":false,\"privacyNoticeCheckRequired\":false,\"privacyNoticeEnabled\":true,\"privacyNoticeUrl\":\"\",\"ratingEnabled\":false,\"requireLogin\":false,\"translates\":{\"en\":{\"topBar.online.hello\":\"Eyeofriyadh\"}},\"urlCardsEnabled\":true,\"widgetVersion\":3,\"hasInternalApi\":false,\"config\":{},\"browserLang\":\"ar\",\"widgetTrackerUrl\":\"https://widget-tracker.smartsupp.com\",\"translationsBaseUrl\":\"https://translations.smartsuppcdn.com\",\"widgetTrackerEnabled\":false}"
-        },
-        {
-          "method": "GET",
-          "status": 200,
-          "url": "https://widget-v3.smartsuppcdn.com/manifest.json",
-          "content_type": "application/json",
-          "resource_type": "xhr",
-          "request_post_data": "",
-          "response_shape": "json-like-invalid",
-          "preview": "{ \"_WidgetMessengerInput-KUdrtJoW.js\": { \"file\": \"assets/WidgetMessengerInput-KUdrtJoW.js\", \"name\": \"WidgetMessengerInput\", \"imports\": [ \"_shared-x0eJOr1Z.js\" ], \"dynamicImports\": [ \"node_modules/.pnpm/emoji-mart@5.6.0/node_modules/emoji-mart/dist/module.js\" ] }, \"_shared-x0eJOr1Z.js\": { \"file\": \"assets/shared-x0eJOr1Z.js\", \"name\": \"IconButton\", \"dynamicImports\": [ \"node_modules/.pnpm/@thumbmarkjs+thumbmarkjs@1.12.0/node_modules/@thumbmarkjs/thumbmarkjs/dist/thumbmark.esm.js\", \"src/translates/ar.json\", \"src/translates/az.json\", \"src/translates/bg.json\", \"src/translates/br.json\", \"src/translates/bs.json\", \"src/translates/ca.json\", \"src/translates/cn.json\", \"src/translates/cs.json\", \"src/translates/da.json\", \"src/translates/de.json\", \"src/translates/el.json\", \"src/translates/en.json\", \"src/translates/es.json\", \"src/translates/et.json\", \"src/translates/fa.json\", \"src/translates/fi.json\", \"src/translates/fil.json\", \"src/translates/fr.json\", \"src/translates/he.json\", \"src/translates/hi.json\", \"src/translates/hr.json\", \"src/translates/hu.json\", \"src/translates/is.json\", \"src/translates/it.json\", \"src/translates/ja.json\", \"src/translates/ka.json\", \"src/translates/lt.json\", \"src/translates/lv.json\", \"src/translates/mk.json\", \"src/translates/nl.json\", \"src/translates/no.json\", \"src/translates/pl.json\", \"src/translates/pt.json\", \"src/translates/ro.json\", \"src/translates/ru.json\", \"src/translates/sk.json\", \"src/translates/sl.json\", \"src/translates/sr.json\", \"src/translates/sv.json\", \"sr"
-        }
-      ]
-    },
-    {
-      "id": "eventbrite-saudi",
-      "probed_at": "2026-11-09T10:12:00.133Z",
-      "name": "Eventbrite Saudi Arabia",
-      "priority": 14,
-      "url": "https://www.eventbrite.com/d/saudi-arabia/events/",
-      "final_url": "https://www.eventbrite.com/d/saudi-arabia/events/",
-      "status": "ok",
-      "http_status": 405,
-      "navigation_error": "",
-      "duration_ms": 6004,
+      "duration_ms": 6886,
       "classification": "rendered-text-review",
       "next_action": "راجع الصفحة يدويًا وحدد هل هي مصدر أدلة أم صفحة تعريفية فقط.",
-      "title": "Human Verification",
-      "text_bytes": 354,
-      "html_bytes": 9981,
-      "html_snapshot": "data/raw/browser-probes/eventbrite-saudi-2026-11-09T10-06-36-586Z.html",
-      "screenshot": "data/raw/browser-probes/eventbrite-saudi-2026-11-09T10-06-36-586Z.png",
+      "title": "maintenance",
+      "text_bytes": 305,
+      "html_bytes": 425365,
+      "html_snapshot": "data/raw/browser-probes/riyadh-city-events-2026-11-10T10-10-22-722Z.html",
+      "screenshot": "data/raw/browser-probes/riyadh-city-events-2026-11-10T10-10-22-722Z.png",
       "signals": {
         "has_next_data": false,
         "has_nuxt": false,
@@ -461,40 +50,9 @@
         "json_ld_scripts": 0,
         "large_inline_scripts": 0
       },
-      "network_total": 3,
+      "network_total": 0,
       "network_endpoints": [],
-      "network_sample": [
-        {
-          "method": "POST",
-          "status": 200,
-          "url": "https://0af0bdf40465.fb743aad.us-west-1.token.awswaf.com/0af0bdf40465/e3e3fa888aeb/63e329aa85c9/mp_verify?region=us-west-1",
-          "content_type": "application/json",
-          "resource_type": "fetch",
-          "request_post_data": "------WebKitFormBoundaryJDXiYXA7aTV9y9rU Content-Disposition: form-data; name=\"solution_metadata\" {\"challenge\":{\"input\":\"2a711d04-aa37-48d2-bc5b-30d69a489afa:EwoA/l6Sa9X7EwAA:WF+pXXJP5OsBhcnB91t3Uq74I8DDzahTFcYnkDghRq6H3SImcFxqCxtCJUbQ6k8u67gfZwMr8+EABxzF/tkFmJp/X597wV61JmYgVJUXNwIJtrGA3kUs9+86TDQeauJ4hrPSPKw8ilq1vM5Alv4dY2sniBm8y1opb5wbsDcID186xmRiHmhaQv7T3jU6cw296dGV6OdgRiKN0GGO8PSUljYkGleRw6lFU7dx1rcoD9dStraTyIL6fEQFVvtUwoYTixYxvzHdIh/+hZUsXNfOHtVjCcevidEoEsD80q5aAlP6kIxMUc0ZjZVMqFk7ZU5S8ayXdKuM2X4i7AHOZaLr96JaiaSzDKVJsZRl7F0KEWJPoxn3pbgA9fKQjAFLNXyy4eRWqvj8S8kAzsVeQuNVlM5bk93CpYwjOamUWj8SFTYboSfn4DvlbajsAQlTEJTuUsDj9TFx/FTWKIT3y4YoKbjv1MpRK7gi+eVw64GqWDlQOqrs3lYXeVF8QqfqLCtxJGbFkSV6veVcF7CX6pLxFMsQ63LztY4iXmkqKK6Rixr8RT81bJtktg==\",\"hmac\":\"\",\"region\":\"us-west-1\"},\"signals\":[{\"name\":\"Zoey\",\"value\":{\"Present\":\"VxN63wXjQ0/ciEMC::094b25b2ccff2997165b8150110067fae536b3e3dbb31eb19f433bf99bfa8c0e6213083e511f81031572e5b58b6c151e3299685905649171203f421d0aee3b7a458cfc2e891ac984d4e5901ba1296df34aee20e9abbc73d4a39700de8344f89f4a07d0562d58e90302234aff0d9bea2e70d436aa58663c2b0c3a5357e13a0ae492022e2eb57eb9ba5831410f31a888c9af5a67284a0df2230cc6b9e76949d9222ee64e8cac969ad6d0190f853932688a14b5d5c",
-          "response_shape": "json-object:token,inputs",
-          "preview": "{\"token\":\"d3b04216-8fdf-41c0-9bf6-2c469d95fc1c:EwoAjZxp0hORMgAA:2wUGXH2vyMF9r9PJghmgUUwfq2px07D75hEPk7MEz7KQMWT7tBxR40dkYEzZHOBWpnXKN0qDnVbXaneoYW2MO7wOpjlfSWRtk+E05MfF4MfYRGxr5elSjHVua6hlV7XifwOTCBMMYXWv6SnqXesoMOq52ZSH4CmpiWxGFVYh2Ltg/nnkg4ApWvwRRJngpAwEMuaz4goot3FVQ4oqgpYNZXC2MKRoRu8ZbT3iBHTwhpRswvYZVeGpyPdpv25zeM93uXN3V1tazqYiunE4Ej3ztDWtq7r+WHevmFTd4fg/Kp0LvpqxXFnWNCBrXQ==\",\"inputs\":null}"
-        },
-        {
-          "method": "POST",
-          "status": 200,
-          "url": "https://0af0bdf40465.fb743aad.us-west-1.token.awswaf.com/0af0bdf40465/e3e3fa888aeb/63e329aa85c9/telemetry",
-          "content_type": "application/json",
-          "resource_type": "fetch",
-          "request_post_data": "{\"existing_token\":\"d3b04216-8fdf-41c0-9bf6-2c469d95fc1c:EwoAjZxp0hORMgAA:2wUGXH2vyMF9r9PJghmgUUwfq2px07D75hEPk7MEz7KQMWT7tBxR40dkYEzZHOBWpnXKN0qDnVbXaneoYW2MO7wOpjlfSWRtk+E05MfF4MfYRGxr5elSjHVua6hlV7XifwOTCBMMYXWv6SnqXesoMOq52ZSH4CmpiWxGFVYh2Ltg/nnkg4ApWvwRRJngpAwEMuaz4goot3FVQ4oqgpYNZXC2MKRoRu8ZbT3iBHTwhpRswvYZVeGpyPdpv25zeM93uXN3V1tazqYiunE4Ej3ztDWtq7r+WHevmFTd4fg/Kp0LvpqxXFnWNCBrXQ==\",\"awswaf_session_storage\":\"null\",\"client\":\"Browser\",\"signals\":[{\"name\":\"Zoey\",\"value\":{\"Present\":\"pZ3NA9IuxuJN0fLR::7c88b31f77f9b0f5c31d9fae5b76f1088736e72462c3a059ca6d1854bbb880fc20ff26ca11bb040835495d1e091fed808149b568349a1a771409e6d45d34ce9db1dd5cbe6ad994e7c6b06c7b0faf4fb2da85ea446c8b2bf8da35d1abd4fe1d48266f965f56c5543b457b612335c91148f7a847b7a8af35bf29cd8d2011541a0212af2362b69df52b8b6d853907cd4b1bca4dca5d5a077950a243eb2454a6fe5f3d165be7e580f87a02ac071206915d9986c146ecf23bb64be59b9e40bcdbdff15fca8ac2af23687d4d5423aad819da2631fd3804a5d85626ab89e8dc250a0ee6841e4558767da5aac9c54e87e0455befafe8cbc430cbe071eb10d1c467970870519bbd833c\"}}],\"checksum\":\"FCA4FD7D\",\"metrics\":[{\"name\":\"12\",\"value\":0.19999999995343387,\"unit\":\"2\"},{\"name\":\"200\",\"value\":0,\"unit\":\"2\"},{\"name\":\"201\",\"value\":1,\"unit\":\"2\"},{\"name\":\"",
-          "response_shape": "json-object:token,next_interval,awswaf_session_storage",
-          "preview": "{\"token\":\"d3b04216-8fdf-41c0-9bf6-2c469d95fc1c:EwoA4Elp+4UxMwAA:JQXdwSBEG4YBgGIz/A00gyTtnNhY1K4zhhymPXH1NVv+N41x06kx9PfGON+dhFx7FwHTXttrBz6C/Tz4pig39D+Dt5dqVd0Oat0dn1b728ZjPUzWnrlGGcq4tyh20H1kmNNEs3hAnik5ba2Uj3b3kQ35FYa7bA9x2sWzPp85cgQjUckkcbX2ke7Izc9PUoK1jTDylEyNZcwvAbIw7A8LL2HbKFNuXNCxSPr5dvxHhy15aoukQGN+DlxJT4cvI5oYoXrzLN2uapV7seBCdIlsUip2k9scKUTx6lx2XOAbEzIowkaEGcp7bSg2zf7IZDdJjWjIcC7qzX6uKkzsbs7rR8NSzDkpt+bFm/H4FPC2CnrXhA==\",\"next_interval\":100,\"awswaf_session_storage\":\"d3b04216-8fdf-41c0-9bf6-2c469d95fc1c:EwoA4Elp+4YxMwAA:oMILceHIxOgfLKuKw0NxrGpEFJPcB1NXDRnoSGXwXxKgyTofMLURG1ZVhfMQIAbQiJZCRd4qGglFZoeYr/3XzJz/zeDGyJTJ10vjjKUdqdX+53uyUZwTirs615iLujGJ6clsNmu+SSVBe3iYUPxIN+Wx4vg0pzL/VFuzG4LBvGIK5Imaqonm3UVQEpCG+AE3MYcUBe0X02zWtjrIA7W1VPsvMeXSOg3yLkKkxhh9D7uv5DPF3yEyD3a3BTM1dvG38bKZEnLdO2owk9vA3XA7QYyqWuOKmAGoDrIA0lJzkdEUnJ285wwN1Grr66uj7jkabiejopOh+hLaixNbkXwWrRxfXiCC457miKWuZNcXz/wsyzYAQRG7srSgm7LZshSLqT4Kog7T5kFdds3O6jYw5gfg2C1assWAoFH+pH7otzF5n17dnY6e7BucN1fTYsYDbSzOZL0n758UvchB+Try3bHr\"}"
-        },
-        {
-          "method": "POST",
-          "status": 200,
-          "url": "https://0af0bdf40465.fb743aad.us-west-1.token.awswaf.com/0af0bdf40465/e3e3fa888aeb/63e329aa85c9/telemetry",
-          "content_type": "application/json",
-          "resource_type": "fetch",
-          "request_post_data": "{\"existing_token\":\"d3b04216-8fdf-41c0-9bf6-2c469d95fc1c:EwoA4Elp+4UxMwAA:JQXdwSBEG4YBgGIz/A00gyTtnNhY1K4zhhymPXH1NVv+N41x06kx9PfGON+dhFx7FwHTXttrBz6C/Tz4pig39D+Dt5dqVd0Oat0dn1b728ZjPUzWnrlGGcq4tyh20H1kmNNEs3hAnik5ba2Uj3b3kQ35FYa7bA9x2sWzPp85cgQjUckkcbX2ke7Izc9PUoK1jTDylEyNZcwvAbIw7A8LL2HbKFNuXNCxSPr5dvxHhy15aoukQGN+DlxJT4cvI5oYoXrzLN2uapV7seBCdIlsUip2k9scKUTx6lx2XOAbEzIowkaEGcp7bSg2zf7IZDdJjWjIcC7qzX6uKkzsbs7rR8NSzDkpt+bFm/H4FPC2CnrXhA==\",\"awswaf_session_storage\":\"d3b04216-8fdf-41c0-9bf6-2c469d95fc1c:EwoA4Elp+4YxMwAA:oMILceHIxOgfLKuKw0NxrGpEFJPcB1NXDRnoSGXwXxKgyTofMLURG1ZVhfMQIAbQiJZCRd4qGglFZoeYr/3XzJz/zeDGyJTJ10vjjKUdqdX+53uyUZwTirs615iLujGJ6clsNmu+SSVBe3iYUPxIN+Wx4vg0pzL/VFuzG4LBvGIK5Imaqonm3UVQEpCG+AE3MYcUBe0X02zWtjrIA7W1VPsvMeXSOg3yLkKkxhh9D7uv5DPF3yEyD3a3BTM1dvG38bKZEnLdO2owk9vA3XA7QYyqWuOKmAGoDrIA0lJzkdEUnJ285wwN1Grr66uj7jkabiejopOh+hLaixNbkXwWrRxfXiCC457miKWuZNcXz/wsyzYAQRG7srSgm7LZshSLqT4Kog7T5kFdds3O6jYw5gfg2C1assWAoFH+pH7otzF5n17dnY6e7BucN1fTYsYDbSzOZL0n758UvchB+Try3bHr\",\"client\":\"Browser\",\"signals\":[{\"name\":\"Zoey\",\"value\":{\"Present\":\"goDDCyq8bwyZMeP6::bb082da6e9a69abb237a69ec4c4f1f0d833da58c7ac064dbd6bef139d1d2eef406059af0cf4516d55ccfc3bda54d34a141ca696b039298916faffcde",
-          "response_shape": "json-object:token,next_interval,awswaf_session_storage",
-          "preview": "{\"token\":\"d3b04216-8fdf-41c0-9bf6-2c469d95fc1c:EwoArMhpv6DUMgAA:kcrccILjU3jVh85UT2D6pitLjGybK47wPFKpPoAUx0lzfgfTkkj0aAoU6DQgVnKiNaCV/H7ahPhvj9frISQVJemYPX+pKrjOwUemHSgpDvH1IJSwJHxg9XPMibxEVZF2zPgH/QgIQA8A3aQrcjFn36VW56qOAWC87fWQJ7jY7F+PCtSAfqZltQg314qqRBExuelQncgVR1VexRVVRugIYFIQu4/eCCpQQppOqEwWfCIreejE9e5ucqHWSc7hIRFaYNjVLDTgXlBwuPK9hQsqEdq75PXV9tVVgfqecRZGlS3uEfPzU4mNAEU2dh35CFG9uG0f6MYVkyKfMl5K4iROLH85H82sNXHTV4J5Wqo2le4RHA==\",\"next_interval\":200,\"awswaf_session_storage\":\"d3b04216-8fdf-41c0-9bf6-2c469d95fc1c:EwoArMhpv6HUMgAA:QL4uz7M74A+U3GCCH6Xq8F68G41fApPBB9W3W0EDW6r5TviY07S+/GOA+YhBkue3IO9EkPoUzSfR/KERvtnUg3rSXpJEU9cFAftmXRxT0sxFAAmKhIn9I5hTMaoRyUPUFL8EKHlZ0zsE+Bp6DCdShnSB1KwKbkLd/B4oh9sVRa6BEasLmBEdt4ZcclB7Ot92HfKKRCSaxFUhx0vkcHxJtx7d1njV+lzUoMnX4gVwT6bOtoFPLwbRt53yxDxeNT/LpMcgIwdTsU0dVls/wIOh5wDQfpOcYRmxFVAQaVWF7jdCsxUl/may7AemdSNgsB97GwVfCt6EuDkc4z3uJSi6EtAh12eEL9sGLijHttvgk2HvT0r5M8sYwuR6kMPtrMLqod3llfe2G/hOnxd4H20eh7GuAZ3oFWCEWHVg4ikwTdksnrXCB1XxNcU58zRwjXWkvFAuKcx2WV/Wx040wc3VRexK8Ch1SKaWeJgpT0xlPR5AkjkH9U57jTSX+8uE4PzoAhyLh/0WQwQMl9xD9qqqNdw5I8bTsaAt6WOEGp7milBMkrRY\"}"
-        }
-      ]
+      "network_sample": []
     }
   ]
 }

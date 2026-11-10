@@ -1,8 +1,8 @@
 # MDLBEAST Enrichment Report
 
-- generated_at: 2026-11-09T10:29:15.768Z
+- generated_at: 2026-11-10T10:21:50.684Z
 - targets: 6
-- candidates: 3
+- candidates: 4
 - enriched: 3
 - fetched: 3
 - images: 3
@@ -12,8 +12,8 @@
 ## Enriched
 
 - MDLBEAST Radio MixTape - official-next-data - image=yes - features=6
-- Unstable - official-next-data - image=yes - features=7
 - Beast House - official-next-data - image=yes - features=7
+- Unstable - official-next-data - image=yes - features=7
 
 ## Failures (previous outline preserved; new rows use calendar fallback)
 

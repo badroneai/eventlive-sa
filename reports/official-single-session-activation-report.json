@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-09T10:31:08.053Z",
+  "generated_at": "2026-11-10T10:23:29.680Z",
   "max_duration_hours": 8,
   "totals": {
     "activated": 50,
@@ -442,8 +442,8 @@
       "id": "event-beast-house",
       "title": "Beast House",
       "source_label": "MDLBEAST Events",
-      "starts_at": "2026-11-06T21:00:00+03:00",
-      "ends_at": "2026-11-07T03:00:00+03:00",
+      "starts_at": "2026-11-12T21:00:00+03:00",
+      "ends_at": "2026-11-13T03:00:00+03:00",
       "duration_hours": 6,
       "session_type": "official-entertainment-session"
     },
@@ -555,16 +555,16 @@
       "duration_hours": 24
     },
     {
-      "id": "event-unstable",
-      "title": "Unstable",
-      "source_label": "MDLBEAST Events",
-      "duration_hours": 24
-    },
-    {
       "id": "event-5th-annual-workshop-on-quantitative-optical-imaging-technologies",
       "title": "5th Annual Workshop on Quantitative Optical Imaging Technologies",
       "source_label": "Saudi Universities and Technical Colleges",
       "duration_hours": 79
+    },
+    {
+      "id": "event-unstable",
+      "title": "Unstable",
+      "source_label": "MDLBEAST Events",
+      "duration_hours": 24
     },
     {
       "id": "event-xp-music-futures-2026",

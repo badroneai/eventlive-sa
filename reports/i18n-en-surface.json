@@ -1,8 +1,8 @@
 {
   "schema": "eventlive.i18n-en-surface.v1",
-  "generated_at": "2026-11-09T10:43:10.652Z",
-  "pages_scanned": 2137,
-  "pages_with_arabic": 439,
+  "generated_at": "2026-11-10T10:37:17.526Z",
+  "pages_scanned": 2141,
+  "pages_with_arabic": 454,
   "template_regressions": [],
   "script_template_regressions": [],
   "style_template_regressions": [],
@@ -15,5 +15,5 @@
     }
   ],
   "recurring_total": 1,
-  "content_prose_lines": 2254
+  "content_prose_lines": 2283
 }
