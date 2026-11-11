@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-10T10:10:22.722Z",
+  "generated_at": "2026-11-11T09:31:27.110Z",
   "source_registry": "data/source_registry.json",
   "collection_report": "reports/source-collection-report.json",
   "output_dir": "data/raw/browser-probes",
@@ -8,14 +8,14 @@
     "scope": "priority",
     "limit": 8,
     "probed_this_run": 1,
-    "fresh_results_available": 6,
+    "fresh_results_available": 4,
     "wait_ms": 4500,
     "timeout_ms": 30000,
     "failure_cooldown_hours": 72
   },
   "methodology": "Browser-level probe inspired by cafe platform work: classify fetchability, hydration payloads, network APIs, structured HTML, rendered DOM, and policy-protected lanes before writing extractors.",
   "totals": {
-    "probed": 6,
+    "probed": 4,
     "browser_network_api": 0,
     "browser_hydration_payload": 0,
     "rendered_html_candidates": 0,
@@ -23,42 +23,6 @@
     "policy_skipped": 0
   },
   "sources": [
-    {
-      "id": "moc-cultural-calendar",
-      "probed_at": "2026-11-07T17:01:22.515Z",
-      "name": "Ministry of Culture Cultural Calendar",
-      "priority": 3,
-      "url": "https://www.moc.gov.sa/en/Modules/Pages/Cultural-Calendar",
-      "final_url": "chrome-error://chromewebdata/",
-      "status": "error",
-      "http_status": 0,
-      "navigation_error": "page.goto: net::ERR_CONNECTION_RESET at https://www.moc.gov.sa/en/Modules/Pages/Cultural-Calendar\nCall log:\n  - navigating to \"https://www.moc.gov.sa/en/Modules/Pages/Cultural-Calendar\", waiting until \"domcontentloaded\"\n",
-      "duration_ms": 5572,
-      "classification": "empty-or-shell",
-      "next_action": "اعتبرها shell وابحث عن API أو مسار بديل قبل أي collector.",
-      "title": "",
-      "text_bytes": 0,
-      "html_bytes": 0,
-      "html_snapshot": "data/raw/browser-probes/moc-cultural-calendar-2026-11-07T17-01-16-306Z.html",
-      "screenshot": "",
-      "signals": {
-        "has_next_data": false,
-        "has_nuxt": false,
-        "has_json_ld": false,
-        "has_event_schema": false,
-        "date_snippets": [],
-        "event_like_links": []
-      },
-      "script_signals": {
-        "next_data_scripts": 0,
-        "nuxt_scripts": 0,
-        "json_ld_scripts": 0,
-        "large_inline_scripts": 0
-      },
-      "network_total": 0,
-      "network_endpoints": [],
-      "network_sample": []
-    },
     {
       "id": "mos-events",
       "probed_at": "2026-11-09T10:08:50.903Z",
@@ -168,44 +132,8 @@
       "network_sample": []
     },
     {
-      "id": "moc-cultural-subportals",
-      "probed_at": "2026-11-07T17:01:28.111Z",
-      "name": "Ministry of Culture Commission Calendars",
-      "priority": 37,
-      "url": "https://music.moc.gov.sa/Cultural-Calendar",
-      "final_url": "chrome-error://chromewebdata/",
-      "status": "error",
-      "http_status": 0,
-      "navigation_error": "page.goto: net::ERR_CONNECTION_RESET at https://music.moc.gov.sa/Cultural-Calendar\nCall log:\n  - navigating to \"https://music.moc.gov.sa/Cultural-Calendar\", waiting until \"domcontentloaded\"\n",
-      "duration_ms": 5562,
-      "classification": "empty-or-shell",
-      "next_action": "اعتبرها shell وابحث عن API أو مسار بديل قبل أي collector.",
-      "title": "",
-      "text_bytes": 0,
-      "html_bytes": 0,
-      "html_snapshot": "data/raw/browser-probes/moc-cultural-subportals-2026-11-07T17-01-16-306Z.html",
-      "screenshot": "",
-      "signals": {
-        "has_next_data": false,
-        "has_nuxt": false,
-        "has_json_ld": false,
-        "has_event_schema": false,
-        "date_snippets": [],
-        "event_like_links": []
-      },
-      "script_signals": {
-        "next_data_scripts": 0,
-        "nuxt_scripts": 0,
-        "json_ld_scripts": 0,
-        "large_inline_scripts": 0
-      },
-      "network_total": 0,
-      "network_endpoints": [],
-      "network_sample": []
-    },
-    {
       "id": "riyadh-city-events",
-      "probed_at": "2026-11-10T10:10:30.053Z",
+      "probed_at": "2026-11-11T09:31:34.870Z",
       "name": "Riyadh City Events",
       "priority": 51,
       "url": "https://riyadh.sa/en/events/all",
@@ -213,14 +141,14 @@
       "status": "ok",
       "http_status": 200,
       "navigation_error": "",
-      "duration_ms": 6886,
+      "duration_ms": 7127,
       "classification": "rendered-text-review",
       "next_action": "راجع الصفحة يدويًا وحدد هل هي مصدر أدلة أم صفحة تعريفية فقط.",
       "title": "maintenance",
       "text_bytes": 305,
       "html_bytes": 425365,
-      "html_snapshot": "data/raw/browser-probes/riyadh-city-events-2026-11-10T10-10-22-722Z.html",
-      "screenshot": "data/raw/browser-probes/riyadh-city-events-2026-11-10T10-10-22-722Z.png",
+      "html_snapshot": "data/raw/browser-probes/riyadh-city-events-2026-11-11T09-31-27-110Z.html",
+      "screenshot": "data/raw/browser-probes/riyadh-city-events-2026-11-11T09-31-27-110Z.png",
       "signals": {
         "has_next_data": false,
         "has_nuxt": false,
