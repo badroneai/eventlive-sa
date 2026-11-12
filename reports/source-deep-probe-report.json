@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-10T09:58:34.012Z",
+  "generated_at": "2026-11-12T09:55:25.524Z",
   "registry": "data/source_registry.json",
   "source_ingestion_plan": "reports/source-ingestion-plan.json",
   "probe_limit": 28,
@@ -73,7 +73,7 @@
           "datetimepicker/4.17.47/css/bootstrap-datetimepicker.min.css\" rel=\"stylesheet\">",
           "calendar-alt\">",
           "date-span\">",
-          "10 Nov 2027",
+          "12 Nov 2027",
           "dated Row -->"
         ]
       },
@@ -128,8 +128,8 @@
         "status": 200,
         "final_url": "https://ncci.org.sa/events",
         "content_type": "text/html; charset=utf-8",
-        "bytes": 299209,
-        "title": "غرفة الحدود الشمالية",
+        "bytes": 299143,
+        "title": "غرفة الشمالية",
         "blocked_reason": "",
         "structured_scripts": 0,
         "structured_events": 0,
@@ -196,7 +196,7 @@
         "status": 200,
         "final_url": "https://www.cst.gov.sa/en",
         "content_type": "text/html; charset=utf-8",
-        "bytes": 1333989,
+        "bytes": 1336416,
         "title": "CST | Communications, Space & Technology Commission",
         "blocked_reason": "",
         "structured_scripts": 2,
@@ -298,7 +298,7 @@
         "status": 200,
         "final_url": "https://www.tabukchamber.sa/",
         "content_type": "text/html; charset=UTF-8",
-        "bytes": 112741,
+        "bytes": 112746,
         "title": "الغرفة التجارية بتبوك | TABUK CHAMBER",
         "blocked_reason": "",
         "structured_scripts": 0,
@@ -434,7 +434,7 @@
         "status": 200,
         "final_url": "https://www.kaust.edu.sa/en/",
         "content_type": "text/html; charset=utf-8",
-        "bytes": 91440,
+        "bytes": 92392,
         "title": "KAUST | A top research university in the Middle East",
         "blocked_reason": "",
         "structured_scripts": 0,
@@ -536,33 +536,6 @@
       "recommendation": "blocked-or-protected:fetch failed getaddrinfo EAI_AGAIN www.ricec.com TypeError: fetch failed"
     },
     {
-      "id": "saudi-contractors-authority-events",
-      "name": "Saudi Contractors Authority Events",
-      "priority": 49,
-      "url": "https://www.sca.gov.sa/",
-      "trust_level": "official",
-      "fetch_method": "html-listing",
-      "candidate_gate": "extraction",
-      "intake_policy": "monitor-public",
-      "signals": {
-        "http_ok": false,
-        "status": 0,
-        "final_url": "https://www.sca.gov.sa/",
-        "content_type": "",
-        "bytes": 0,
-        "title": "",
-        "blocked_reason": "fetch failed getaddrinfo ENOTFOUND www.sca.gov.sa TypeError: fetch failed",
-        "structured_scripts": 0,
-        "structured_events": 0,
-        "google_calendar_links": 0,
-        "event_detail_links": 0,
-        "json_or_api_hints": 0,
-        "date_snippets": []
-      },
-      "extraction_score": -23,
-      "recommendation": "blocked-or-protected:fetch failed getaddrinfo ENOTFOUND www.sca.gov.sa TypeError: fetch failed"
-    },
-    {
       "id": "riyadh-city-events",
       "name": "Riyadh City Events",
       "priority": 51,
@@ -588,6 +561,35 @@
       },
       "extraction_score": -23,
       "recommendation": "blocked-or-protected:fetch failed unable to verify the first certificate; if the root CA is installed locally, try running Node.js with --use-system-ca TypeError: fetch failed"
+    },
+    {
+      "id": "middle-east-banking-ai-summit",
+      "name": "Middle East Banking AI & Analytics Summit Official",
+      "priority": 74,
+      "url": "https://mebankingai.com/sa/",
+      "trust_level": "official",
+      "fetch_method": "html-listing",
+      "candidate_gate": "human-review",
+      "intake_policy": "official-feed-preferred",
+      "signals": {
+        "http_ok": true,
+        "status": 200,
+        "final_url": "https://mebankingai.com/sa/",
+        "content_type": "text/html",
+        "bytes": 2305,
+        "title": "Middle East Banking",
+        "blocked_reason": "bot-protection",
+        "structured_scripts": 0,
+        "structured_events": 0,
+        "google_calendar_links": 0,
+        "event_detail_links": 0,
+        "json_or_api_hints": 1,
+        "date_snippets": [
+          "Date(); (function(){ var s1=document.createElement(\"script\"),s0=document.getElements"
+        ]
+      },
+      "extraction_score": -23,
+      "recommendation": "blocked-or-protected:bot-protection"
     },
     {
       "id": "saudi-digital-academy",
@@ -630,7 +632,7 @@
         "status": 403,
         "final_url": "https://qiddiya.com/",
         "content_type": "text/html; charset=UTF-8",
-        "bytes": 6021,
+        "bytes": 6019,
         "title": "Attention Required! | Cloudflare",
         "blocked_reason": "http-403",
         "structured_scripts": 0,

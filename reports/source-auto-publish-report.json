@@ -1,18 +1,18 @@
 {
-  "published_at": "2026-11-11T09:40:10.074Z",
+  "published_at": "2026-11-12T10:19:29.829Z",
   "dry_run": false,
   "include_partner": true,
   "source_candidates": "data/source_candidates.json",
   "events_catalog": "data/events_catalog.json",
-  "candidates_seen": 366,
+  "candidates_seen": 353,
   "totals": {
-    "candidates_seen": 366,
-    "published": 7,
-    "linked_existing": 340,
+    "candidates_seen": 353,
+    "published": 3,
+    "linked_existing": 331,
     "blocked": 19,
     "duplicate_review_alerts": 3,
     "category_fallback_alerts": 0,
-    "reconciled": 347,
+    "reconciled": 334,
     "session_windows_reconciled": 0
   },
   "session_window_changes": [],
@@ -82,34 +82,14 @@
       "title": "سيرك فونتانا"
     },
     {
-      "candidate_id": "candidate-umm-al-qura-events-تحليل-الاداء-وتحديد-نقاط-القوة-واولويات-التحسين-20261111-f9ec065e",
-      "event_id": "event-تحليل-الاداء-وتحديد-نقاط-القوة-واولويات-التحسين",
-      "title": "تحليل الاداء وتحديد نقاط القوة واولويات التحسين"
-    },
-    {
-      "candidate_id": "candidate-umm-al-qura-events-بطولة-elite-champions-20261112-ff86bef3",
-      "event_id": "event-بطولة-elite-champions",
-      "title": "بطولة ELITE CHAMPIONS"
-    },
-    {
-      "candidate_id": "candidate-umm-al-qura-events-مهرجان-الأعمال-الريادية-بالحبال-والعقد-20261112-b9e6f23c",
-      "event_id": "event-مهرجان-الأعمال-الريادية-بالحبال-والعقد",
-      "title": "مهرجان الأعمال الريادية بالحبال والعقد"
-    },
-    {
-      "candidate_id": "candidate-umm-al-qura-events-فعالية-أساسيات-الملاحة-وقراءة-الخرائط-20261112-f003b4c3",
-      "event_id": "event-فعالية-أساسيات-الملاحة-وقراءة-الخرائط",
-      "title": "فعالية أساسيات الملاحة وقراءة الخرائط"
-    },
-    {
-      "candidate_id": "candidate-ithra-events-knot-to-scale-20261113-837ef9ba",
-      "event_id": "event-knot-to-scale",
-      "title": "knot to Scale"
-    },
-    {
       "candidate_id": "candidate-visit-saudi-calendar-pdf-سينما-فوكس-مونلايت-قريبـاً-20261115-4a38d19e",
       "event_id": "event-سينما-فوكس-مونلايت-قريبـاً",
       "title": "سينما فوكس مونلايت قريبـاً"
+    },
+    {
+      "candidate_id": "candidate-umm-al-qura-events-ملتقى-أثر-ممارسات-جودة-تصنع-التميز-20261115-15301f29",
+      "event_id": "event-ملتقى-أثر-ممارسات-جودة-تصنع-التميز",
+      "title": "ملتقى أثر : ممارسات جودة تصنع التميز"
     }
   ],
   "linked_existing": [
@@ -714,12 +694,6 @@
       "reason": "already linked to catalog event"
     },
     {
-      "candidate_id": "candidate-saudi-university-events-5th-annual-workshop-on-quantitative-optical-imaging-technologies-20261108-2724ab99",
-      "event_id": "event-5th-annual-workshop-on-quantitative-optical-imaging-technologies",
-      "title": "5th Annual Workshop on Quantitative Optical Imaging Technologies",
-      "reason": "already linked to catalog event"
-    },
-    {
       "candidate_id": "candidate-umm-al-qura-events-ورشة-عمل-بعنوان-مسابقة-الباج-الذهبي-20261109-d7e6e6de",
       "event_id": "event-ورشة-عمل-بعنوان-مسابقة-الباج-الذهبي",
       "title": "ورشة عمل بعنوان مسابقة الباج الذهبي",
@@ -750,24 +724,6 @@
       "reason": "already linked to catalog event"
     },
     {
-      "candidate_id": "candidate-riyadh-city-events-pet-vet-expo-20261109-a798493c",
-      "event_id": "event-pet-vet-expo",
-      "title": "Pet & Vet Expo",
-      "reason": "already linked to catalog event"
-    },
-    {
-      "candidate_id": "candidate-riyadh-city-events-cat-show-20261109-71e02bc0",
-      "event_id": "event-cat-show",
-      "title": "Cat Show",
-      "reason": "already linked to catalog event"
-    },
-    {
-      "candidate_id": "candidate-riyadh-city-events-saudi-drone-exhibition-sadex-20261109-9d8fe85a",
-      "event_id": "event-saudi-drone-exhibition-sadex",
-      "title": "Saudi Drone Exhibition SADEX",
-      "reason": "already linked to catalog event"
-    },
-    {
       "candidate_id": "candidate-umm-al-qura-events-خريج-الكيمياء-في-سوق-العمل-20261109-a8bab1e2",
       "event_id": "event-خريج-الكيمياء-في-سوق-العمل",
       "title": "خريج الكيمياء في سوق العمل",
@@ -777,48 +733,6 @@
       "candidate_id": "candidate-riyadh-city-events-build-your-house-exhibition-20261110-4cdc13f8",
       "event_id": "event-build-your-house-exhibition",
       "title": "Build Your House exhibition",
-      "reason": "already linked to catalog event"
-    },
-    {
-      "candidate_id": "candidate-umm-al-qura-events-زيارة-ميدانية-بعنوان-مؤتمر-الحج-والعمرة-20261111-7713d969",
-      "event_id": "event-زيارة-ميدانية-بعنوان-مؤتمر-الحج-والعمرة",
-      "title": "زيارة ميدانية بعنوان مؤتمر الحج والعمرة",
-      "reason": "already linked to catalog event"
-    },
-    {
-      "candidate_id": "candidate-ithra-events-aramcorama-exhibit-20261111-854df5c1",
-      "event_id": "event-aramcorama-exhibit",
-      "title": "Aramcorama Exhibit",
-      "reason": "already linked to catalog event"
-    },
-    {
-      "candidate_id": "candidate-ithra-events-childrens-museum-20261111-7da7af7c",
-      "event_id": "event-childrens-museum",
-      "title": "Children's Museum",
-      "reason": "already linked to catalog event"
-    },
-    {
-      "candidate_id": "candidate-ithra-events-echoes-of-the-familiar-20261111-cc43c2bd",
-      "event_id": "event-echoes-of-the-familiar",
-      "title": "Echoes of the Familiar",
-      "reason": "already linked to catalog event"
-    },
-    {
-      "candidate_id": "candidate-ithra-events-in-praise-of-the-artisan-20261111-14781307",
-      "event_id": "event-in-praise-of-the-artisan",
-      "title": "In Praise of the Artisan",
-      "reason": "already linked to catalog event"
-    },
-    {
-      "candidate_id": "candidate-ithra-events-ithra-art-prize-exhibition-20261111-83c2ab55",
-      "event_id": "event-ithra-art-prize-exhibition",
-      "title": "Ithra Art Prize Exhibition",
-      "reason": "already linked to catalog event"
-    },
-    {
-      "candidate_id": "candidate-ithra-events-tafasahu-make-room-20261111-562bc61d",
-      "event_id": "event-tafasahu-make-room",
-      "title": "Tafasahu: Make Room",
       "reason": "already linked to catalog event"
     },
     {
@@ -834,33 +748,9 @@
       "reason": "already linked to catalog event"
     },
     {
-      "candidate_id": "candidate-umm-al-qura-events-إدارة-المخاطر-في-المشاريع-الناشئة-20261111-5bc90d99",
-      "event_id": "event-إدارة-المخاطر-في-المشاريع-الناشئة",
-      "title": "إدارة المخاطر في المشاريع الناشئة",
-      "reason": "already linked to catalog event"
-    },
-    {
       "candidate_id": "candidate-umm-al-qura-events-ورشة-عمل-بعنوان-أساسيات-الجري-20261111-313180c0",
       "event_id": "event-ورشة-عمل-بعنوان-أساسيات-الجري",
       "title": "ورشة عمل بعنوان أساسيات الجري",
-      "reason": "already linked to catalog event"
-    },
-    {
-      "candidate_id": "candidate-umm-al-qura-events-انشاء-مودبورد-احترافي-20261111-253393fc",
-      "event_id": "event-انشاء-مودبورد-احترافي",
-      "title": "انشاء مودبورد احترافي",
-      "reason": "already linked to catalog event"
-    },
-    {
-      "candidate_id": "candidate-umm-al-qura-events-الإشراف-الأكاديمي-والتواصل-الفعال-20261111-f108c270",
-      "event_id": "event-الإشراف-الأكاديمي-والتواصل-الفعال",
-      "title": "الإشراف الأكاديمي والتواصل الفعال",
-      "reason": "already linked to catalog event"
-    },
-    {
-      "candidate_id": "candidate-ithra-events-spend-an-hour-with-one-of-the-theater-experts-20261111-66ab8291",
-      "event_id": "event-spend-an-hour-with-one-of-the-theater-experts",
-      "title": "Spend an hour with one of the theater experts",
       "reason": "already linked to catalog event"
     },
     {
@@ -870,33 +760,57 @@
       "reason": "already linked to catalog event"
     },
     {
-      "candidate_id": "candidate-umm-al-qura-events-لقاء-توعوي-بعنوان-التعقيم-وسلامة-الأدوات-الصحية-20261111-8e160138",
-      "event_id": "event-لقاء-توعوي-بعنوان-التعقيم-وسلامة-الأدوات-الصحية",
-      "title": "لقاء توعوي بعنوان التعقيم وسلامة الأدوات الصحية",
-      "reason": "already linked to catalog event"
-    },
-    {
       "candidate_id": "candidate-mdlbeast-events-unstable-20261112-5647df2e",
       "event_id": "event-unstable",
       "title": "Unstable",
       "reason": "already linked to catalog event"
     },
     {
-      "candidate_id": "candidate-umm-al-qura-events-ورشة-عمل-بعنوان-الطباعة-باستخدام-القوالب-20261112-0fcc42fd",
-      "event_id": "event-ورشة-عمل-بعنوان-الطباعة-باستخدام-القوالب",
-      "title": "ورشة عمل بعنوان الطباعة باستخدام القوالب",
-      "reason": "already linked to catalog event"
-    },
-    {
-      "candidate_id": "candidate-umm-al-qura-events-تعزيز-الأثر-البحثي-لأبحاثك-استراتيجيات-فعّالة-وفهم-مؤشرات-قياس-الأثر-الب-20261112-4da117dd",
-      "event_id": "event-تعزيز-الأثر-البحثي-لأبحاثك-استراتيجيات-فعّالة-وفهم-مؤشرات-قياس-الأثر-الب",
-      "title": "تعزيز الأثر البحثي لأبحاثك - استراتيجيات فعّالة وفهم مؤشرات قياس الأثر البحثي",
-      "reason": "already linked to catalog event"
-    },
-    {
       "candidate_id": "candidate-umm-al-qura-events-تفعيل-بيئة-تعلم-إلكترونية-تفاعلية-بنمط-غير-متزامن-في-نسخته-العشرون-20261112-ca934a6f",
       "event_id": "event-تفعيل-بيئة-تعلم-إلكترونية-تفاعلية-بنمط-غير-متزامن-في-نسخته-العشرون",
       "title": "تفعيل بيئة تعلم إلكترونية تفاعلية– بنمط غير متزامن في نسخته العشرون",
+      "reason": "already linked to catalog event"
+    },
+    {
+      "candidate_id": "candidate-umm-al-qura-events-فعالية-أساسيات-الملاحة-وقراءة-الخرائط-20261112-f003b4c3",
+      "event_id": "event-فعالية-أساسيات-الملاحة-وقراءة-الخرائط",
+      "title": "فعالية أساسيات الملاحة وقراءة الخرائط",
+      "reason": "already linked to catalog event"
+    },
+    {
+      "candidate_id": "candidate-ithra-events-aramcorama-exhibit-20261112-854df5c1",
+      "event_id": "event-aramcorama-exhibit",
+      "title": "Aramcorama Exhibit",
+      "reason": "already linked to catalog event"
+    },
+    {
+      "candidate_id": "candidate-ithra-events-childrens-museum-20261112-7da7af7c",
+      "event_id": "event-childrens-museum",
+      "title": "Children's Museum",
+      "reason": "already linked to catalog event"
+    },
+    {
+      "candidate_id": "candidate-ithra-events-echoes-of-the-familiar-20261112-cc43c2bd",
+      "event_id": "event-echoes-of-the-familiar",
+      "title": "Echoes of the Familiar",
+      "reason": "already linked to catalog event"
+    },
+    {
+      "candidate_id": "candidate-ithra-events-in-praise-of-the-artisan-20261112-14781307",
+      "event_id": "event-in-praise-of-the-artisan",
+      "title": "In Praise of the Artisan",
+      "reason": "already linked to catalog event"
+    },
+    {
+      "candidate_id": "candidate-ithra-events-ithra-art-prize-exhibition-20261112-83c2ab55",
+      "event_id": "event-ithra-art-prize-exhibition",
+      "title": "Ithra Art Prize Exhibition",
+      "reason": "already linked to catalog event"
+    },
+    {
+      "candidate_id": "candidate-ithra-events-tafasahu-make-room-20261112-562bc61d",
+      "event_id": "event-tafasahu-make-room",
+      "title": "Tafasahu: Make Room",
       "reason": "already linked to catalog event"
     },
     {
@@ -945,7 +859,7 @@
       "candidate_id": "candidate-ithra-events-artistic-maze-lens-into-landscapes-20261112-1211fd8c",
       "event_id": "event-artistic-maze",
       "title": "Artistic Maze - Lens into Landscapes",
-      "reason": "trusted duplicate linked to existing catalog event"
+      "reason": "already linked to catalog event"
     },
     {
       "candidate_id": "candidate-ithra-events-roaming-performances-20261112-db1e71eb",
@@ -1065,6 +979,12 @@
       "candidate_id": "candidate-visit-saudi-calendar-pdf-مهرجان-القادسية-فينا-نحكي؟-عرض-ستاند-أب-كوميدي-لجون-أشقر-20261113-4a38d19e",
       "event_id": "event-فينا-نحكي؟-عرض-ستاند-أب-كوميدي-لجون-أشقر",
       "title": "مهرجان القادسية ”فينا نحكي؟“ عرض ستاند أب كوميدي لجون أشقر",
+      "reason": "already linked to catalog event"
+    },
+    {
+      "candidate_id": "candidate-ithra-events-knot-to-scale-20261113-837ef9ba",
+      "event_id": "event-knot-to-scale",
+      "title": "knot to Scale",
       "reason": "already linked to catalog event"
     },
     {
@@ -2152,6 +2072,12 @@
       "event_id": "event-space-debris-conference-2028",
       "title": "Space Debris Conference 2028",
       "reason": "already linked to catalog event"
+    },
+    {
+      "candidate_id": "candidate-saudi-space-agency-events-space-debris-conference-2028-20280215-c8db3c5b",
+      "event_id": "event-space-debris-conference-2028",
+      "title": "Space Debris Conference 2028",
+      "reason": "trusted duplicate linked to existing catalog event"
     }
   ],
   "blocked": [

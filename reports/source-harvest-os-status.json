@@ -1,12 +1,12 @@
 {
   "schema": "eventlive.harvest-os-status.v1",
-  "generated_at": "2026-11-11T10:01:47.918Z",
+  "generated_at": "2026-11-12T10:41:43.074Z",
   "status": "NEEDS_WORK",
   "operating_rule": "Probe before new sources; sample before full harvest; Raw collection is not publication; discovery-only never auto-publishes.",
   "totals": {
     "sources": 88,
-    "candidates": 366,
-    "matched_candidates": 353,
+    "candidates": 353,
+    "matched_candidates": 340,
     "auto_publish_sources": 15,
     "candidate_only_sources": 12,
     "partnership_required_sources": 5,
@@ -25,20 +25,20 @@
     "manual_review": 56
   },
   "candidates_by_gate": {
-    "catalog-review": 353,
+    "catalog-review": 340,
     "duplicate-review": 3,
     "source-evidence": 8,
     "secondary-verified": 2
   },
   "funnel": {
-    "discovered_this_run": 161,
-    "candidate_queue": 366,
-    "evaluated_for_publish": 366,
-    "linked_existing": 340,
-    "published_new": 7,
+    "discovered_this_run": 156,
+    "candidate_queue": 353,
+    "evaluated_for_publish": 353,
+    "linked_existing": 331,
+    "published_new": 3,
     "blocked": 19,
     "secondary_promoted": 0,
-    "secondary_still_blocked": 19
+    "secondary_still_blocked": 15
   },
   "blocked_reasons": {
     "linked catalog row event-rolling-podcast was superseded by dedupe": 3,
@@ -55,49 +55,49 @@
     {
       "id": "mos-events",
       "note": "collector-error: fetch failed [ETIMEDOUT, ENETUNREACH]; live browser recovery deferred by recent failed probe cooldown",
-      "error_streak": 72,
+      "error_streak": 73,
       "kind": "chronic",
       "attempted_this_run": true
     },
     {
       "id": "saudi-pro-league-fixtures",
       "note": "collector-error: fetch failed [EAI_AGAIN]",
-      "error_streak": 52,
+      "error_streak": 53,
       "kind": "chronic",
       "attempted_this_run": true
     },
     {
       "id": "tuwaiq-academy-bootcamps",
       "note": "collector-error: HTTP 403",
-      "error_streak": 49,
+      "error_streak": 50,
       "kind": "chronic",
       "attempted_this_run": true
     },
     {
       "id": "qassim-chamber-events",
-      "note": "collector-error: HTTP 403; live browser recovery deferred by recent failed probe cooldown",
-      "error_streak": 18,
+      "note": "collector-error: HTTP 403",
+      "error_streak": 19,
       "kind": "chronic",
       "attempted_this_run": true
     },
     {
       "id": "moc-cultural-calendar",
       "note": "collector-error: fetch failed [ETIMEDOUT, ENETUNREACH]; fetch failed [ETIMEDOUT, ENETUNREACH]",
-      "error_streak": 4,
+      "error_streak": 5,
       "kind": "chronic",
       "attempted_this_run": true
     },
     {
       "id": "moc-cultural-subportals",
       "note": "collector-error: fetch failed [ETIMEDOUT, ENETUNREACH]; fetch failed [ETIMEDOUT, ENETUNREACH]",
-      "error_streak": 4,
+      "error_streak": 5,
       "kind": "chronic",
       "attempted_this_run": true
     },
     {
       "id": "monshaat-events",
       "note": "collector-error: fetch failed [UND_ERR_CONNECT_TIMEOUT]; fetch failed [UND_ERR_CONNECT_TIMEOUT]",
-      "error_streak": 3,
+      "error_streak": 4,
       "kind": "chronic",
       "attempted_this_run": true
     }

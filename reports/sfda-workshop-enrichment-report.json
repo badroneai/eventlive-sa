@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-11T09:41:10.741Z",
+  "generated_at": "2026-11-12T10:20:43.432Z",
   "catalog": "data/events_catalog.json",
   "totals": {
     "targets": 17,
@@ -102,7 +102,7 @@
       "id": "event-شرح-وتوضيح-إجراءات-الاستيراد-والتصدير-وحرية-البيع",
       "title": "شرح وتوضيح إجراءات الاستيراد والتصدير وحرية البيع",
       "workshop_id": "5522094",
-      "reason": "HTTP 404"
+      "reason": "The operation was aborted due to timeout"
     },
     {
       "id": "event-دور-الهيئة-العامة-للغذاء-و-الدواء-في-ضمان-سلامة-الاستخدام-الامن-لجهاز-ال",

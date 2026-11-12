@@ -1,9 +1,9 @@
 # Ticket offer enrichment
 
-- Checked at: 2026-11-11T09:44:52.999Z
+- Checked at: 2026-11-12T10:24:59.437Z
 - Targets: 8
 - Evidence found: 3
-- Catalog prices changed: 0
+- Catalog prices changed: 1
 - No evidence: 4
 - Failed safely: 1
 
@@ -11,7 +11,7 @@
 |---|---|---|---:|---|
 | event-saudi-ai-week | informaconnect.com | failed | — | HTTP 404 |
 | event-saudi-intermobility-expo | informaconnect.com | no-evidence | — | no-explicit-public-price |
-| event-education-investment-saudi | informaconnect.com | evidence | 699 USD | informa-visible-package-price |
+| event-education-investment-saudi | informaconnect.com | evidence | 759 USD | informa-visible-package-price |
 | event-superreturn-saudi-arabia | informaconnect.com | evidence | 1199 USD | informa-visible-package-price |
 | event-hrse-ksa-hr-summit-expo | informaconnect.com | no-evidence | — | no-explicit-public-price |
 | event-unstable | nofomo.com | no-evidence | — | no-explicit-public-price |
