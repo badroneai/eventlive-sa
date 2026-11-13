@@ -1,19 +1,19 @@
 {
   "schema": "eventlive.i18n-en-surface.v1",
-  "generated_at": "2026-11-12T10:38:00.757Z",
-  "pages_scanned": 2147,
-  "pages_with_arabic": 452,
+  "generated_at": "2026-11-13T10:06:54.782Z",
+  "pages_scanned": 2153,
+  "pages_with_arabic": 451,
   "template_regressions": [],
   "script_template_regressions": [],
   "style_template_regressions": [],
   "recurring_surface_debt": [
     {
       "text": "../assets/event-images/الشهادة-الدولية-للحاسب-والإنترنت-ic3-a46ba6d2eb.jpg",
-      "pages": 58,
+      "pages": 55,
       "example": "events/event-اختيار-المجلة-العلمية-المناسبة-لبحثك-واستكشاف-فرص-النشر-بنظام-الوصول-الم.html",
       "script": true
     }
   ],
   "recurring_total": 1,
-  "content_prose_lines": 2272
+  "content_prose_lines": 2255
 }

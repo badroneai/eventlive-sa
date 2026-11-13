@@ -1,17 +1,27 @@
 {
-  "checked_at": "2026-11-12T10:24:59.437Z",
-  "targets": 8,
+  "checked_at": "2026-11-13T09:55:25.360Z",
+  "targets": 6,
   "evidence_found": 3,
-  "changed": 1,
-  "no_evidence": 4,
-  "failed": 1,
+  "changed": 0,
+  "no_evidence": 3,
+  "failed": 0,
   "results": [
     {
-      "id": "event-saudi-ai-week",
-      "host": "informaconnect.com",
-      "url": "https://informaconnect.com/saudi-ai-week/purchase/select-package/",
-      "status": "failed",
-      "reason": "HTTP 404"
+      "id": "event-unstable",
+      "host": "nofomo.com",
+      "url": "https://nofomo.com/collections/unstable",
+      "status": "no-evidence",
+      "reason": "no-explicit-public-price"
+    },
+    {
+      "id": "event-soundstorm-26",
+      "host": "nofomo.com",
+      "url": "https://nofomo.com/events/soundstorm-26/cart",
+      "status": "evidence",
+      "price_label": "499 SAR",
+      "price": 499,
+      "price_currency": "SAR",
+      "method": "nofomo-visible-ticket-price"
     },
     {
       "id": "event-saudi-intermobility-expo",
@@ -46,30 +56,6 @@
       "url": "https://informaconnect.com/hrse-saudi/hotel-map/",
       "status": "no-evidence",
       "reason": "no-explicit-public-price"
-    },
-    {
-      "id": "event-unstable",
-      "host": "nofomo.com",
-      "url": "https://nofomo.com/collections/unstable",
-      "status": "no-evidence",
-      "reason": "no-explicit-public-price"
-    },
-    {
-      "id": "event-beast-house",
-      "host": "nofomo.com",
-      "url": "https://nofomo.com/collections/beast-house",
-      "status": "no-evidence",
-      "reason": "no-explicit-public-price"
-    },
-    {
-      "id": "event-soundstorm-26",
-      "host": "nofomo.com",
-      "url": "https://nofomo.com/events/soundstorm-26/cart",
-      "status": "evidence",
-      "price_label": "499 SAR",
-      "price": 499,
-      "price_currency": "SAR",
-      "method": "nofomo-visible-ticket-price"
     }
   ]
 }
