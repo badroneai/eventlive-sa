@@ -1,12 +1,17 @@
 {
   "schema": "eventlive.i18n-en-surface.v1",
-  "generated_at": "2026-11-13T10:06:54.782Z",
-  "pages_scanned": 2153,
-  "pages_with_arabic": 451,
+  "generated_at": "2026-11-14T09:40:45.428Z",
+  "pages_scanned": 2155,
+  "pages_with_arabic": 496,
   "template_regressions": [],
   "script_template_regressions": [],
   "style_template_regressions": [],
   "recurring_surface_debt": [
+    {
+      "text": "واقف! Momos",
+      "pages": 81,
+      "example": "events/ended-mdlbeast-events-a-thousand-and-one-20250424-f46c64f3.html"
+    },
     {
       "text": "../assets/event-images/الشهادة-الدولية-للحاسب-والإنترنت-ic3-a46ba6d2eb.jpg",
       "pages": 55,
@@ -14,6 +19,6 @@
       "script": true
     }
   ],
-  "recurring_total": 1,
-  "content_prose_lines": 2255
+  "recurring_total": 2,
+  "content_prose_lines": 2247
 }

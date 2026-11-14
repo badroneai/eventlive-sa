@@ -1,6 +1,6 @@
 # Strategic Platform Source Radar
 
-Generated at: 2026-11-12T09:56:18.566Z
+Generated at: 2026-11-14T09:04:10.787Z
 
 Policy: evidence refresh, API-surface mapping, and source strategy only. This radar does not auto-publish catalog events.
 
@@ -27,12 +27,12 @@ Policy: evidence refresh, API-surface mapping, and source strategy only. This ra
 - Project use: Track as a high-value official source for exhibitions and conferences; do not auto-publish until event-detail extraction is verified.
 - Title: الهيئه العامه للمعارض و المؤتمرات
 - Hint URLs: https://fonts.gstatic.com/s/ibmplexsansarabic/v15/Qw3MZRtWPQCuHme67tEYUIx3Kh0PHR9N6YNe7PKzeflA.woff2, https://fonts.gstatic.com/s/ibmplexsansarabic/v15/Qw3MZRtWPQCuHme67tEYUIx3Kh0PHR9N6YNe7PqzeflA.woff2, https://fonts.gstatic.com/s/ibmplexsansarabic/v15/Qw3MZRtWPQCuHme67tEYUIx3Kh0PHR9N6YNe7PmzeflA.woff2, https://fonts.gstatic.com/s/ibmplexsansarabic/v15/Qw3MZRtWPQCuHme67tEYUIx3Kh0PHR9N6YNe7PezeQ.woff2, https://fonts.gstatic.com/s/ibmplexsansarabic/v15/Qw3NZRtWPQCuHme67tEYUIx3Kh0PHR9N6YPy_eCRXMR5Kw.woff2, https://fonts.gstatic.com/s/ibmplexsansarabic/v15/Qw3NZRtWPQCuHme67tEYUIx3Kh0PHR9N6YPy_eCZXMR5Kw.woff2, https://fonts.gstatic.com/s/ibmplexsansarabic/v15/Qw3NZRtWPQCuHme67tEYUIx3Kh0PHR9N6YPy_eCaXMR5Kw.woff2, https://fonts.gstatic.com/s/ibmplexsansarabic/v15/Qw3NZRtWPQCuHme67tEYUIx3Kh0PHR9N6YPy_eCUXMQ.woff2
-  - Asset 200 main-ZP4O5XKW.js: http://www.w3.org/2000/svg, https://eservices.scega.gov.sa/login, https://raqmi.dga.gov.sa/platforms/DigitalStamp/ShowCertificate/672, http://https://sdaia.gov.sa/ar/default.aspx, https://eportal.scega.gov.sa/h-events-list
-  - Asset 200 chunk-4G4A4TT5.js: no URL hints
-  - Asset 200 chunk-FOF4BJ54.js: no URL hints
-  - Asset 200 chunk-L5L4U5HC.js: no URL hints
-  - Asset 200 chunk-I3NA5QEP.js: http://www.w3.org/2000/svg
-  - Asset 200 chunk-RUT2MLWP.js: no URL hints
+  - Asset 200 main-OFRWCT5J.js: http://www.w3.org/2000/svg, https://eservices.scega.gov.sa/login, https://raqmi.dga.gov.sa/platforms/DigitalStamp/ShowCertificate/672, http://https://sdaia.gov.sa/ar/default.aspx, https://eportal.scega.gov.sa/h-events-list
+  - Asset 200 chunk-JV2GF6U3.js: no URL hints
+  - Asset 200 chunk-HLGIC7IW.js: no URL hints
+  - Asset 200 chunk-67IGOBLI.js: no URL hints
+  - Asset 200 chunk-OZZADTNJ.js: http://www.w3.org/2000/svg
+  - Asset 200 chunk-VNBECMMI.js: no URL hints
 
 ### National Events Center
 

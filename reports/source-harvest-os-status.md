@@ -1,32 +1,32 @@
 # EventLive Harvest OS Status
 
-- Generated at: 2026-11-13T10:10:19.354Z
+- Generated at: 2026-11-14T09:44:27.628Z
 - Status: NEEDS_WORK
 - Operating rule: Probe before new sources; sample before full harvest; Raw collection is not publication; discovery-only never auto-publishes.
 
 ## Totals
 
 - Sources: 88
-- Candidates: 346
-- Matched candidates: 333
+- Candidates: 338
+- Matched candidates: 325
 - Auto-publish sources: 15
 - Candidate-only sources: 12
 - Partnership-required sources: 5
-- Productive sources / attempted: 15/34
-- Collector errors: 8 (chronic 7, transient 1)
+- Productive sources / attempted: 15/28
+- Collector errors: 7 (chronic 7, transient 0)
 
 ## Publication Funnel
 
 | Stage | Count |
 | --- | --- |
-| discovered_this_run | 156 |
-| candidate_queue | 346 |
-| evaluated_for_publish | 346 |
-| linked_existing | 319 |
-| published_new | 8 |
+| discovered_this_run | 155 |
+| candidate_queue | 338 |
+| evaluated_for_publish | 338 |
+| linked_existing | 315 |
+| published_new | 4 |
 | blocked | 19 |
 | secondary_promoted | 0 |
-| secondary_still_blocked | 15 |
+| secondary_still_blocked | 14 |
 
 ## Blocked Reasons
 
@@ -34,26 +34,24 @@
 | --- | --- |
 | publication gate source-evidence is not auto-publishable | 6 |
 | linked catalog row event-rolling-podcast was superseded by dedupe | 3 |
+| possible duplicate requires review: exact-title-city-venue-conflict | 2 |
 | linked catalog row event-book-nook-zone was superseded by dedupe | 2 |
 | unknown category requires review | 2 |
 | not an attendable event: enrolment-announcement | 2 |
-| possible duplicate requires review: exact-title-city-venue-conflict | 1 |
 | possible duplicate requires review: exact-title-city-source-conflict | 1 |
-| possible duplicate requires review: fuzzy-title-venue-date-window | 1 |
 | linked catalog row event-music-festival-mdlbeast-soundstorm was superseded by dedupe | 1 |
 
 ## Collector Errors
 
 | Source | Kind | Failed runs in a row | Attempted this run | Reason |
 | --- | --- | --- | --- | --- |
-| mos-events | chronic | 73 | no | collector-error: fetch failed [ETIMEDOUT, ENETUNREACH]; live browser recovery deferred by recent failed probe cooldown |
-| saudi-pro-league-fixtures | chronic | 53 | no | collector-error: fetch failed [EAI_AGAIN] |
-| tuwaiq-academy-bootcamps | chronic | 50 | no | collector-error: HTTP 403 |
-| qassim-chamber-events | chronic | 19 | no | collector-error: HTTP 403 |
-| moc-cultural-calendar | chronic | 5 | no | collector-error: fetch failed [ETIMEDOUT, ENETUNREACH]; fetch failed [ETIMEDOUT, ENETUNREACH] |
-| moc-cultural-subportals | chronic | 5 | no | collector-error: fetch failed [ETIMEDOUT, ENETUNREACH]; fetch failed [ETIMEDOUT, ENETUNREACH] |
-| monshaat-events | chronic | 4 | no | collector-error: fetch failed [UND_ERR_CONNECT_TIMEOUT]; fetch failed [UND_ERR_CONNECT_TIMEOUT] |
-| sdaia-calendar-events | transient | 1 | yes | request-rejected; browser recovery encountered an access-protection page |
+| mos-events | chronic | 74 | yes | collector-error: fetch failed [ETIMEDOUT, ENETUNREACH] |
+| saudi-pro-league-fixtures | chronic | 54 | yes | collector-error: fetch failed [EAI_AGAIN] |
+| tuwaiq-academy-bootcamps | chronic | 51 | yes | collector-error: HTTP 403 |
+| qassim-chamber-events | chronic | 20 | yes | collector-error: HTTP 403 |
+| moc-cultural-calendar | chronic | 6 | yes | collector-error: fetch failed [ETIMEDOUT, ENETUNREACH]; fetch failed [ETIMEDOUT, ENETUNREACH] |
+| moc-cultural-subportals | chronic | 6 | yes | collector-error: fetch failed [ETIMEDOUT, ENETUNREACH]; fetch failed [ETIMEDOUT, ENETUNREACH] |
+| monshaat-events | chronic | 5 | yes | collector-error: fetch failed [UND_ERR_CONNECT_TIMEOUT]; fetch failed [UND_ERR_CONNECT_TIMEOUT] |
 
 | Source | Policy | Trust | Gate |
 | --- | --- | --- | --- |

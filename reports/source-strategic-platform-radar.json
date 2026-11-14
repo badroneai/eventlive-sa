@@ -1,6 +1,6 @@
 {
   "schema": "eventlive.source-strategic-platform-radar.v1",
-  "generated_at": "2026-11-12T09:56:18.566Z",
+  "generated_at": "2026-11-14T09:04:10.787Z",
   "policy": {
     "allowed_use": "official source evidence refresh, API-surface mapping, partnership prioritization, extractor backlog decisions",
     "disallowed_use": "direct catalog publication without official confirmation and duplicate review"
@@ -60,9 +60,9 @@
       "page_hint_words": [],
       "asset_results": [
         {
-          "url": "https://eportal.scega.gov.sa/main-ZP4O5XKW.js",
+          "url": "https://eportal.scega.gov.sa/main-OFRWCT5J.js",
           "status": 200,
-          "bytes": 226365,
+          "bytes": 226967,
           "classification": "reachable",
           "hint_urls": [
             "http://www.w3.org/2000/svg",
@@ -77,7 +77,7 @@
           ]
         },
         {
-          "url": "https://eportal.scega.gov.sa/chunk-4G4A4TT5.js",
+          "url": "https://eportal.scega.gov.sa/chunk-JV2GF6U3.js",
           "status": 200,
           "bytes": 402,
           "classification": "reachable",
@@ -85,7 +85,7 @@
           "hint_words": []
         },
         {
-          "url": "https://eportal.scega.gov.sa/chunk-FOF4BJ54.js",
+          "url": "https://eportal.scega.gov.sa/chunk-HLGIC7IW.js",
           "status": 200,
           "bytes": 609,
           "classification": "reachable",
@@ -93,7 +93,7 @@
           "hint_words": []
         },
         {
-          "url": "https://eportal.scega.gov.sa/chunk-L5L4U5HC.js",
+          "url": "https://eportal.scega.gov.sa/chunk-67IGOBLI.js",
           "status": 200,
           "bytes": 330,
           "classification": "reachable",
@@ -101,7 +101,7 @@
           "hint_words": []
         },
         {
-          "url": "https://eportal.scega.gov.sa/chunk-I3NA5QEP.js",
+          "url": "https://eportal.scega.gov.sa/chunk-OZZADTNJ.js",
           "status": 200,
           "bytes": 28496,
           "classification": "reachable",
@@ -111,7 +111,7 @@
           "hint_words": []
         },
         {
-          "url": "https://eportal.scega.gov.sa/chunk-RUT2MLWP.js",
+          "url": "https://eportal.scega.gov.sa/chunk-VNBECMMI.js",
           "status": 200,
           "bytes": 24937,
           "classification": "reachable",
@@ -303,7 +303,7 @@
       "final_url": "https://webook.com/ar/explore",
       "via": "fetch",
       "content_type": "text/html",
-      "bytes": 5013,
+      "bytes": 5016,
       "title": "",
       "classification": "protected",
       "error": "",
@@ -331,7 +331,7 @@
         "https://wbk-assets.webook.com/8.4/locales/en/currency_common.json",
         "https://wbk-assets.webook.com/8.4/locales/en/payment_common.json",
         "https://wbk-assets.webook.com/8.4/locales/en/subscription_common.json",
-        "https://webook.com/cdn-cgi/content?id=PAbwEDfOsvYa.UWB5iSd7arh8CMF3DXrHFCzV07FiXs-1794477387.6676-1.2.1.1-Qj3BgIzCkIVZpQDna965kqLm2qs22KQEP4eEN7pilVmLJAMC97Nn1nYFAv1T6H.U",
+        "https://webook.com/cdn-cgi/content?id=6tdWurvU0k2nqjZsXmFLFK2mr8xO3Cjdqr8G5KHl6aE-1794647058.8208876-1.2.1.1-TEba2bN_E5GNBYYPWleVNNO17tOo91V9BGns2pChCmog393iGj5JCAXMpUNwRIIX",
         "https://static.cloudflareinsights.com/beacon.min.js/vce701823e78c4301a35b7e07294d87301792088814092"
       ],
       "page_hint_words": [

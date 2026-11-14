@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-13T09:40:07.627Z",
+  "generated_at": "2026-11-14T09:13:20.712Z",
   "source_registry": "data/source_registry.json",
   "collection_report": "reports/source-collection-report.json",
   "output_dir": "data/raw/browser-probes",
@@ -7,16 +7,16 @@
     "selected_ids": [],
     "scope": "priority",
     "limit": 8,
-    "probed_this_run": 2,
-    "fresh_results_available": 4,
+    "probed_this_run": 3,
+    "fresh_results_available": 5,
     "wait_ms": 4500,
     "timeout_ms": 30000,
     "failure_cooldown_hours": 72
   },
   "methodology": "Browser-level probe inspired by cafe platform work: classify fetchability, hydration payloads, network APIs, structured HTML, rendered DOM, and policy-protected lanes before writing extractors.",
   "totals": {
-    "probed": 4,
-    "browser_network_api": 1,
+    "probed": 5,
+    "browser_network_api": 2,
     "browser_hydration_payload": 0,
     "rendered_html_candidates": 0,
     "blocked_or_protected": 0,
@@ -97,7 +97,7 @@
     },
     {
       "id": "riyadh-city-events",
-      "probed_at": "2026-11-13T09:40:16.274Z",
+      "probed_at": "2026-11-14T09:13:37.334Z",
       "name": "Riyadh City Events",
       "priority": 51,
       "url": "https://riyadh.sa/en/events/all",
@@ -105,14 +105,14 @@
       "status": "ok",
       "http_status": 200,
       "navigation_error": "",
-      "duration_ms": 7040,
+      "duration_ms": 6725,
       "classification": "rendered-text-review",
       "next_action": "راجع الصفحة يدويًا وحدد هل هي مصدر أدلة أم صفحة تعريفية فقط.",
       "title": "maintenance",
       "text_bytes": 305,
       "html_bytes": 425365,
-      "html_snapshot": "data/raw/browser-probes/riyadh-city-events-2026-11-13T09-40-07-627Z.html",
-      "screenshot": "data/raw/browser-probes/riyadh-city-events-2026-11-13T09-40-07-627Z.png",
+      "html_snapshot": "data/raw/browser-probes/riyadh-city-events-2026-11-14T09-13-20-712Z.html",
+      "screenshot": "data/raw/browser-probes/riyadh-city-events-2026-11-14T09-13-20-712Z.png",
       "signals": {
         "has_next_data": false,
         "has_nuxt": false,
@@ -132,23 +132,23 @@
       "network_sample": []
     },
     {
-      "id": "asharqia-chamber-events",
-      "probed_at": "2026-11-13T09:40:29.792Z",
-      "name": "Asharqia Chamber Events",
-      "priority": 59,
-      "url": "https://www.chamber.org.sa/sites/Arabic/Events/ChamberEvents/Pages/AllChamberEvents.aspx",
-      "final_url": "https://www.chamber.org.sa/sites/Arabic/Events/ChamberEvents/Pages/AllChamberEvents.aspx",
+      "id": "sdaia-calendar-events",
+      "probed_at": "2026-11-14T09:13:30.571Z",
+      "name": "SDAIA Calendar and Events",
+      "priority": 54,
+      "url": "https://sdaia.gov.sa/en/MediaCenter/Events/Pages/default.aspx",
+      "final_url": "https://sdaia.gov.sa/en/MediaCenter/Events/Pages/default.aspx",
       "status": "ok",
-      "http_status": 404,
+      "http_status": 200,
       "navigation_error": "",
-      "duration_ms": 13481,
+      "duration_ms": 9449,
       "classification": "browser-network-api",
       "next_action": "ثبت endpoint مرشحًا كجامع مباشر، ثم اكتب extractor من JSON مع اختبار انحدار.",
-      "title": "Page not found | غرفة الشرقية",
-      "text_bytes": 925,
-      "html_bytes": 60072,
-      "html_snapshot": "data/raw/browser-probes/asharqia-chamber-events-2026-11-13T09-40-07-627Z.html",
-      "screenshot": "data/raw/browser-probes/asharqia-chamber-events-2026-11-13T09-40-07-627Z.png",
+      "title": "SDAIA | SDAIA Calendar & Events",
+      "text_bytes": 3748,
+      "html_bytes": 151971,
+      "html_snapshot": "data/raw/browser-probes/sdaia-calendar-events-2026-11-14T09-13-20-712Z.html",
+      "screenshot": "data/raw/browser-probes/sdaia-calendar-events-2026-11-14T09-13-20-712Z.png",
       "signals": {
         "has_next_data": false,
         "has_nuxt": false,
@@ -157,24 +157,84 @@
         "date_snippets": [],
         "event_like_links": [
           {
-            "text": "من نحن",
-            "href": "https://www.chamber.org.sa/sites/Arabic/Events/ChamberEvents/Pages/AllChamberEvents.aspx#"
+            "text": "Search",
+            "href": "https://sdaia.gov.sa/en/MediaCenter/Events/Pages/default.aspx#"
           },
           {
-            "text": "المناسبات",
-            "href": "https://www.chamber.org.sa/events/"
+            "text": "AI Scholarship Program",
+            "href": "https://sdaia.gov.sa/en/Sectors/academy/Pages/ScholarshipProgram.aspx"
           },
           {
-            "text": "المركز الاعلامى",
-            "href": "https://www.chamber.org.sa/sites/Arabic/Events/ChamberEvents/Pages/AllChamberEvents.aspx#"
+            "text": "Cooperative Training Program",
+            "href": "https://sdaia.gov.sa/en/Sectors/BuildingCapacity/Pages/CooperativeTraining.aspx"
           },
           {
-            "text": "الوفود",
-            "href": "https://www.chamber.org.sa/events/delegations/"
+            "text": "Free Software and Services",
+            "href": "https://sdaia.gov.sa/en/Services/Pages/FreeServicesAndPrograms.aspx"
           },
           {
-            "text": "المناسبات",
-            "href": "https://www.chamber.org.sa/events/"
+            "text": "Calendar and Events",
+            "href": "https://sdaia.gov.sa/en/MediaCenter/Events/Pages/default.aspx"
+          },
+          {
+            "text": "Search",
+            "href": "https://sdaia.gov.sa/en/MediaCenter/Events/Pages/default.aspx#"
+          },
+          {
+            "text": "",
+            "href": "https://sdaia.gov.sa/en/MediaCenter/Events/Pages/default.aspx#ctl00_PlaceHolderBanner_ContentMap_SkipLink"
+          },
+          {
+            "text": "Share on LinkedIn",
+            "href": "https://www.linkedin.com/sharing/share-offsite/?url=https%3A%2F%2Fsdaia.gov.sa%2Fen%2FMediaCenter%2FEvents%2FPages%2Fdefault.aspx"
+          },
+          {
+            "text": "Share on WhatsApp",
+            "href": "https://wa.me/?text=SDAIA%20Calendar%20%26%20Events%20https%3A%2F%2Fsdaia.gov.sa%2Fen%2FMediaCenter%2FEvents%2FPages%2Fdefault.aspx"
+          },
+          {
+            "text": "Share on X",
+            "href": "https://twitter.com/intent/tweet?url=https%3A%2F%2Fsdaia.gov.sa%2Fen%2FMediaCenter%2FEvents%2FPages%2Fdefault.aspx&text=SDAIA%20Calendar%20%26%20Events"
+          },
+          {
+            "text": "Share on Facebook",
+            "href": "https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fsdaia.gov.sa%2Fen%2FMediaCenter%2FEvents%2FPages%2Fdefault.aspx"
+          },
+          {
+            "text": "Show Events",
+            "href": "https://sdaia.gov.sa/en/MediaCenter/Events/Pages/default.aspx#"
+          },
+          {
+            "text": "Show Calendar",
+            "href": "https://sdaia.gov.sa/en/MediaCenter/Events/Pages/default.aspx#"
+          },
+          {
+            "text": "Organizer\n\n1/28/2026 - 1/29/2026\n\nInternational Conference on Data and AI Capacity Building (ICAN)\n\nOrganizer: SDAIA",
+            "href": "https://sdaia.gov.sa/en/MediaCenter/Events/Pages/EventsDetails.aspx?EventID=121"
+          },
+          {
+            "text": "Hosting\n\n9/14/2026 - 9/17/2026\n\nGlobal Forum on the Ethics of AI\n\nOrganizer: UNESCO",
+            "href": "https://sdaia.gov.sa/en/MediaCenter/Events/Pages/EventsDetails.aspx?EventID=122"
+          },
+          {
+            "text": "Public Consultation\n\n6/1/2026 - 6/30/2026\n\nIdentifying Priority Fields for Training Programs and Bootcamps",
+            "href": "https://sdaia.gov.sa/en/MediaCenter/Events/Pages/EventsDetails.aspx?EventID=146"
+          },
+          {
+            "text": "Public Consultation\n\n7/1/2026 - 7/31/2026\n\nEnhancing the Report Filing Experience in the Tawakkalna App",
+            "href": "https://sdaia.gov.sa/en/MediaCenter/Events/Pages/EventsDetails.aspx?EventID=147"
+          },
+          {
+            "text": "Public Consultation\n\n7/5/2026 - 7/13/2026\n\nAssessing the Priorities of Government Entities in Selecting Cloud Service Pr",
+            "href": "https://sdaia.gov.sa/en/MediaCenter/Events/Pages/EventsDetails.aspx?EventID=148"
+          },
+          {
+            "text": "Public Consultation\n\n10/4/2026 - 12/31/2026\n\nPriorities for Supporting AI Adoption in the Nonprofit Sector",
+            "href": "https://sdaia.gov.sa/en/MediaCenter/Events/Pages/EventsDetails.aspx?EventID=149"
+          },
+          {
+            "text": "Hackathons and Challenges\n\n5/3/2026 - 5/7/2026\n\nComputer Vision for Developers Program",
+            "href": "https://sdaia.gov.sa/en/MediaCenter/Events/Pages/EventsDetails.aspx?EventID=161"
           }
         ]
       },
@@ -182,71 +242,138 @@
         "next_data_scripts": 0,
         "nuxt_scripts": 0,
         "json_ld_scripts": 0,
-        "large_inline_scripts": 0
+        "large_inline_scripts": 1
       },
-      "network_total": 5,
+      "network_total": 4,
       "network_endpoints": [
         {
           "method": "GET",
           "status": 200,
-          "url": "https://api-cdn.mypurecloud.ie/webdeployments/v1/deployments/bf04c4ac-89eb-4d7b-9061-14343d788e27/config.json",
+          "url": "https://sdaia.gov.sa/sdaiaapi/api/feedback/getbypageurl?pageURL=/en/mediacenter/events/pages/default.aspx&_=1794647603334",
           "content_type": "application/json",
           "resource_type": "xhr",
           "request_post_data": "",
-          "response_shape": "json-object:id,version,headlessMode,languages,defaultLanguage,apiEndpoint,messenger,position",
-          "preview": "{\"id\":\"35941ef8-d3b4-4cac-b011-f0e5bf3d7569\",\"version\":\"4\",\"headlessMode\":{\"enabled\":false},\"languages\":[\"ar\"],\"defaultLanguage\":\"ar\",\"apiEndpoint\":\"https://api.mypurecloud.ie\",\"messenger\":{\"enabled\":true,\"apps\":{\"conversations\":{\"enabled\":true,\"messagingEndpoint\":\"wss://webmessaging.mypurecloud.ie\",\"showAgentTypingIndicator\":true,\"showUserTypingIndicator\":true,\"autoStart\":{\"enabled\":true},\"markdown\":{\"enabled\":true},\"conversationDisconnect\":{\"enabled\":false,\"type\":\"Send\"},\"conversationClear\":{\"enabled\":true},\"humanize\":{\"enabled\":false,\"bot\":{\"name\":\"\",\"avatarUrl\":\"\"}}}},\"styles\":{\"primaryColor\":\"#015599\"},\"launcherButton\":{\"visibility\":\"On\"},\"fileUpload\":{\"enableAttachments\":true,\"modes\":[{\"fileTypes\":[\"image/jpeg\",\"image/gif\",\"image/png\"],\"maxFileSizeKB\":10240}]},\"homeScreen\":{\"enabled\":false,\"logoUrl\":\"\"}},\"position\":{\"alignment\":\"Auto\",\"sideSpace\":20,\"bottomSpace\":12},\"customI18NLabels\":[],\"journeyEvents\":{\"enabled\":false},\"status\":\"Active\",\"cobrowse\":{\"enabled\":false,\"allowAgentControl\":true,\"allowAgentNavigation\":true,\"maskSelectors\":[],\"readonlySelectors\":[],\"channels\":[]},\"auth\":{\"enabled\":false,\"allowSessionUpgrade\":false}}"
+          "response_shape": "json-object:Message,Status,ErrorCode,ErrorMessage,Notifications",
+          "preview": "{\"Message\":{\"Title\":\"/en/mediacenter/events/pages/default.aspx\",\"PageId\":\"/en/mediacenter/events/pages/default.aspx\",\"YesCount\":\"0\",\"NoCount\":\"0\",\"TotalCount\":\"0\"},\"Status\":true,\"ErrorCode\":0,\"ErrorMessage\":null,\"Notifications\":null}"
+        },
+        {
+          "method": "GET",
+          "status": 200,
+          "url": "https://sdaia.gov.sa/sdaiaapi/api/feedback/getbypageurl?pageURL=%2Fen%2Fmediacenter%2Fevents%2Fpages%2Fdefault.aspx&_=1794647603333",
+          "content_type": "application/json",
+          "resource_type": "xhr",
+          "request_post_data": "",
+          "response_shape": "json-object:Message,Status,ErrorCode,ErrorMessage,Notifications",
+          "preview": "{\"Message\":{\"Title\":\"/en/mediacenter/events/pages/default.aspx\",\"PageId\":\"/en/mediacenter/events/pages/default.aspx\",\"YesCount\":\"0\",\"NoCount\":\"0\",\"TotalCount\":\"0\"},\"Status\":true,\"ErrorCode\":0,\"ErrorMessage\":null,\"Notifications\":null}"
         }
       ],
       "network_sample": [
         {
           "method": "GET",
           "status": 200,
-          "url": "https://api-cdn.mypurecloud.ie/webdeployments/v1/deployments/bf04c4ac-89eb-4d7b-9061-14343d788e27/domains.json",
-          "content_type": "application/json",
+          "url": "https://sdaia.gov.sa/sdaiaformapi/api/user/GetNafathInfo?_=1794647603332",
+          "content_type": "text/html",
           "resource_type": "xhr",
           "request_post_data": "",
-          "response_shape": "json-object:allowAllDomains,allowedDomains",
-          "preview": "{\"allowAllDomains\":true,\"allowedDomains\":[]}"
+          "response_shape": "html",
+          "preview": "<html><head><title>Request Rejected</title></head><body>The requested URL was rejected. Please consult with your administrator.<br><br>Your support ID is: 8504265216195176274<br><br><a href='javascript:history.back();'>[Go Back]</a></body></html>"
         },
         {
           "method": "GET",
           "status": 200,
-          "url": "https://api-cdn.mypurecloud.ie/webdeployments/v1/deployments/bf04c4ac-89eb-4d7b-9061-14343d788e27/config.json",
-          "content_type": "application/json",
-          "resource_type": "xhr",
-          "request_post_data": "",
-          "response_shape": "json-object:id,version,headlessMode,languages,defaultLanguage,apiEndpoint,messenger,position",
-          "preview": "{\"id\":\"35941ef8-d3b4-4cac-b011-f0e5bf3d7569\",\"version\":\"4\",\"headlessMode\":{\"enabled\":false},\"languages\":[\"ar\"],\"defaultLanguage\":\"ar\",\"apiEndpoint\":\"https://api.mypurecloud.ie\",\"messenger\":{\"enabled\":true,\"apps\":{\"conversations\":{\"enabled\":true,\"messagingEndpoint\":\"wss://webmessaging.mypurecloud.ie\",\"showAgentTypingIndicator\":true,\"showUserTypingIndicator\":true,\"autoStart\":{\"enabled\":true},\"markdown\":{\"enabled\":true},\"conversationDisconnect\":{\"enabled\":false,\"type\":\"Send\"},\"conversationClear\":{\"enabled\":true},\"humanize\":{\"enabled\":false,\"bot\":{\"name\":\"\",\"avatarUrl\":\"\"}}}},\"styles\":{\"primaryColor\":\"#015599\"},\"launcherButton\":{\"visibility\":\"On\"},\"fileUpload\":{\"enableAttachments\":true,\"modes\":[{\"fileTypes\":[\"image/jpeg\",\"image/gif\",\"image/png\"],\"maxFileSizeKB\":10240}]},\"homeScreen\":{\"enabled\":false,\"logoUrl\":\"\"}},\"position\":{\"alignment\":\"Auto\",\"sideSpace\":20,\"bottomSpace\":12},\"customI18NLabels\":[],\"journeyEvents\":{\"enabled\":false},\"status\":\"Active\",\"cobrowse\":{\"enabled\":false,\"allowAgentControl\":true,\"allowAgentNavigation\":true,\"maskSelectors\":[],\"readonlySelectors\":[],\"channels\":[]},\"auth\":{\"enabled\":false,\"allowSessionUpgrade\":false}}"
-        },
-        {
-          "method": "POST",
-          "status": 200,
-          "url": "https://bam.eu01.nr-data.net/1/NRJS-63ad9662344bba3672e?a=538748657&sa=1&v=1.318.0&t=Unnamed%20Transaction&rst=338&ck=0&s=0&ref=https://apps.mypurecloud.ie/messenger/thirdparty-plugins.html&ptid=83bfc16b1c9e2fb1&af=err,spa,xhr,stn,ins&be=13&fe=104&dc=45&perf=%7B%22timing%22:%7B%22of%22:1794562817984,%22n%22:0,%22f%22:1,%22dn%22:1,%22dne%22:1,%22c%22:1,%22s%22:1,%22ce%22:1,%22rq%22:2,%22rp%22:13,%22rpe%22:14,%22di%22:58,%22ds%22:58,%22de%22:58,%22dc%22:116,%22l%22:116,%22le%22:117%7D,%22navigation%22:%7B%7D%7D",
-          "content_type": "application/json",
-          "resource_type": "xhr",
-          "request_post_data": "{\"ja\":{\"nrAgentProvider\":\"index-cannula-cli\",\"webdriverDetected\":true}}",
-          "response_shape": "json-object:stn,err,ins,spa,sr,srs,st,sts",
-          "preview": "{\"stn\":1,\"err\":1,\"ins\":1,\"spa\":1,\"sr\":0,\"srs\":0,\"st\":1,\"sts\":0,\"log\":2,\"logapi\":2,\"app\":{\"agents\":[{\"entityGuid\":\"NDYyMzExNHxCUk9XU0VSfEFQUExJQ0FUSU9OfDUzODc0ODY1Nw\"}],\"nrServerTime\":1794562818601}}"
-        },
-        {
-          "method": "GET",
-          "status": 200,
-          "url": "https://apps.mypurecloud.ie/messenger/i18n/ar.json",
+          "url": "https://sdaia.gov.sa/sdaiaapi/api/home/geteninternalpagenavdata?_=1794647603331",
           "content_type": "application/json",
           "resource_type": "xhr",
           "request_post_data": "",
           "response_shape": "json-like-invalid",
-          "preview": "{ \"language\": \"ar\", \"home\": { \"headerTitle\": \"مرحبًا\", \"headerSubTitle\": \"نحن هنا للمساعدة\", \"ariaHomeScreenOpenStatus\": \"تم فتح الشاشة الرئيسية\", \"ariaExpandMenu\": \"توسيع القائمة\" }, \"conversations\": { \"headerTitle\": \"راسلنا\", \"headerConversationTitle\": \"محادثة\", \"inputMessagePlaceholder\": \"أرسل رسالة...\", \"typeMessagePlaceholder\": \"اكتب رسالتك هنا\", \"inputMessageTitle\": \"حقل إدخال الرسالة\", \"startConversationMessage\": \"هذه بداية حديثك معنا. يرجى إرسال رسالة للبدء.\", \"autoStartConversationMessage\": \"هذه هي بداية محادثتك معنا.\", \"sessionExpirationWarningMessage\": \"يرجى العلم أن الجلسة ستنتهي بعد <%sessionMinutes%> دقيقة من عدم النشاط.\", \"notSignedInMessage\": \"أنت تعمل غير محدد الهوية.\", \"signedInMessage\": \"تم تسجيل دخولك.\", \"signedInMessageWithName\": \"تم تسجيل دخولك باسم <%username%>\", \"signedOutMessage\": \"لقد تم تسجيل خروجك من هذه الجلسة.\", \"agentDefaultName\": \"وكيل\", \"botDefaultName\": \"الروبوت\", \"customerDefaultName\": \"أنت\", \"cancelButton\": \"إلغاء الأمر\", \"closeButton\": \"إغلاق\", \"startConversationButtonTitle\": \"راسلنا\", \"continueConversationButtonTitle\": \"متابعة\", \"openConversationButtonTitle\": \"فتح\", \"startNewConversation\": \"بدء من جديد\", \"startConversationCardTitle\": \"بدء محادثة\", \"continueConversationCardTitle\": \"تابع المحادثة\", \"yourConversationCardTitle\": \"محادثتك\", \"yesButton\": \"نعم\", \"noButton\": \"لا\", \"okButton\": \"حسنًا\", \"sureButton\": \"نعم، أنا متأكد\", \"downloadButton\": \"تنزيل\", \"openInNewTabButton\": \"فتح في علامة تبويب جديدة\", \"signInButton\": \"تسجيل الدخول\", \"clearButton\": \"مسح\", \"previewFile\": \"انقر لمعاينة الملف\", \"pdfPreviewTitle\": \"معاينة PDF الخاص بـ Messenger\", \"textFilePreviewTitle\": \"معاينة"
+          "preview": "{\"Data\":{\"menu\":[{\"id\":1,\"title\":\"Home\",\"url\":\"/en/default.aspx\",\"hasChild\":\"false\",\"itemSort\":\"1\",\"layout\":null,\"show\":\"true\",\"level2\":[],\"error\":false},{\"id\":2,\"title\":\"SDAIA\",\"url\":\"/en/SDAIA/Pages/default.aspx\",\"hasChild\":\"true\",\"itemSort\":\"2\",\"layout\":\"Grid\",\"show\":\"true\",\"level2\":[{\"id\":1,\"title\":\"About SDAIA\",\"url\":\"/en/SDAIA/about/Pages/default.aspx\",\"menuLevel1\":\"SDAIA\",\"itemSort\":\"1\",\"icon\":\"fal fa-buildings\",\"level3\":[{\"title\":\"About SDAIA\",\"url\":\"/en/SDAIA/about/Pages/About.aspx\",\"itemSort\":\"1\",\"icon\":\"fal fa-buildings\",\"topmenuLevel1\":\"SDAIA\",\"show\":\"true\",\"iconType\":\"Icon\"},{\"title\":\"Board of Directors\",\"url\":\"/en/SDAIA/about/Pages/directorsBoard.aspx\",\"itemSort\":\"2\",\"icon\":\"fal fa-id-card\",\"topmenuLevel1\":\"SDAIA\",\"show\":\"true\",\"iconType\":\"Icon\"},{\"title\":\"Organizational Structure\",\"url\":\"/en/SDAIA/about/Pages/organizationalStructure.aspx\",\"itemSort\":\"3\",\"icon\":\"fal fa-diagram-project\",\"topmenuLevel1\":\"SDAIA\",\"show\":\"true\",\"iconType\":\"Icon\"},{\"title\":\"Budget and Spending\",\"url\":\"/en/SDAIA/about/Pages/Budget.aspx\",\"itemSort\":\"4\",\"icon\":\"fal fa-coins\",\"topmenuLevel1\":\"SDAIA\",\"show\":\"true\",\"iconType\":\"Icon\"},{\"title\":\"Competitions and Purchases\",\"url\":\"/en/SDAIA/about/Pages/CompetitionsAndPurchases.aspx\",\"itemSort\":\"5\",\"icon\":\"fal fa-flag-checkered\",\"topmenuLevel1\":\"SDAIA\",\"show\":\"true\",\"iconType\":\"Icon\"},{\"title\":\"Achievements\",\"url\":\"/en/SDAIA/about/Pages/Achievements.aspx\",\"itemSort\":\"6\",\"icon\":\"fal fa-ballot-check\",\"topmenuLevel1\":\"SDAIA\",\"show\":\"true\",\"iconType\":\"Icon\"},{\"title\":\"Laws and Regulations\",\"url\":\"/en/SDAIA/about/Pages/RegulationsAndPolicies.aspx\",\"itemSort\":\"7\",\"icon\":\"fal fa-clipboard-check\",\"topmenuLevel1\":\"SDAIA\",\"show\":\"true\",\"iconType\":\"Icon\"},{\"title\":\"Artificial Intelligence\",\"url\":\"/en/SDAIA/about/Pages/AboutAI.aspx\",\"itemSort\":\"8\",\"i"
         },
         {
           "method": "GET",
           "status": 200,
-          "url": "https://apps.mypurecloud.ie/messenger/i18n/ar.json",
+          "url": "https://sdaia.gov.sa/sdaiaapi/api/feedback/getbypageurl?pageURL=/en/mediacenter/events/pages/default.aspx&_=1794647603334",
           "content_type": "application/json",
           "resource_type": "xhr",
           "request_post_data": "",
+          "response_shape": "json-object:Message,Status,ErrorCode,ErrorMessage,Notifications",
+          "preview": "{\"Message\":{\"Title\":\"/en/mediacenter/events/pages/default.aspx\",\"PageId\":\"/en/mediacenter/events/pages/default.aspx\",\"YesCount\":\"0\",\"NoCount\":\"0\",\"TotalCount\":\"0\"},\"Status\":true,\"ErrorCode\":0,\"ErrorMessage\":null,\"Notifications\":null}"
+        },
+        {
+          "method": "GET",
+          "status": 200,
+          "url": "https://sdaia.gov.sa/sdaiaapi/api/feedback/getbypageurl?pageURL=%2Fen%2Fmediacenter%2Fevents%2Fpages%2Fdefault.aspx&_=1794647603333",
+          "content_type": "application/json",
+          "resource_type": "xhr",
+          "request_post_data": "",
+          "response_shape": "json-object:Message,Status,ErrorCode,ErrorMessage,Notifications",
+          "preview": "{\"Message\":{\"Title\":\"/en/mediacenter/events/pages/default.aspx\",\"PageId\":\"/en/mediacenter/events/pages/default.aspx\",\"YesCount\":\"0\",\"NoCount\":\"0\",\"TotalCount\":\"0\"},\"Status\":true,\"ErrorCode\":0,\"ErrorMessage\":null,\"Notifications\":null}"
+        }
+      ]
+    },
+    {
+      "id": "jazan-chamber-events",
+      "probed_at": "2026-11-14T09:13:42.981Z",
+      "name": "Jazan Chamber Events",
+      "priority": 67,
+      "url": "https://jazancci.org.sa/api/events/calendar/7/2026",
+      "final_url": "https://jazancci.org.sa/api/events/calendar/7/2026",
+      "status": "ok",
+      "http_status": 200,
+      "navigation_error": "",
+      "duration_ms": 5609,
+      "classification": "browser-network-api",
+      "next_action": "ثبت endpoint مرشحًا كجامع مباشر، ثم اكتب extractor من JSON مع اختبار انحدار.",
+      "title": "",
+      "text_bytes": 6875,
+      "html_bytes": 8910,
+      "html_snapshot": "data/raw/browser-probes/jazan-chamber-events-2026-11-14T09-13-20-712Z.html",
+      "screenshot": "data/raw/browser-probes/jazan-chamber-events-2026-11-14T09-13-20-712Z.png",
+      "signals": {
+        "has_next_data": false,
+        "has_nuxt": false,
+        "has_json_ld": false,
+        "has_event_schema": false,
+        "date_snippets": [
+          "nshat-alsghyrh-walmtwsth-\",\"createdAt\":\"2026-07-09T09:13:48.740Z\",\"updatedAt\":\"2026-07-09T09:13:48.740Z\",\"title\":{\"ar\":\"متطلبات نظ",
+          "مال.</p><h2>موعد الورشة:</h2><p><strong>21 يونيو 2025م</strong><br/><strong>10:30 صباحاً</strong><br/><strong>عن بُعد</strong></p><h2",
+          "amber</p></li></ul><p></p>\"},\"startAt\":\"2026-07-21T07:30:00.000Z\",\"endAt\":\"2026-07-21T08:45:00.000Z\",\"location\":null,\"url\":\"https:",
+          "\"altaryf-bkhdmat-mnsh-qwa\",\"createdAt\":\"2026-07-14T09:28:22.851Z\",\"updatedAt\":\"2026-07-14T09:28:22.851Z\",\"title\":{\"ar\":\"التعريف بخ",
+          "مال.</p><h2>موعد الورشة:</h2><p><strong>28 يونيو 2025م</strong><br/><strong>11 صباحاً</strong><br/><strong>عن بُعد</strong></p><p></p",
+          "mber)</p></li></ul><p></p>\"},\"startAt\":\"2026-07-28T08:00:00.000Z\",\"endAt\":\"2026-07-28T10:00:00.000Z\",\"location\":null,\"url\":\"https:",
+          "-alrswm-alhkwmyh-almdfwah\",\"createdAt\":\"2026-07-14T10:07:08.940Z\",\"updatedAt\":\"2026-07-22T09:00:50.930Z\",\"title\":{\"ar\":\"التعريف بم",
+          "ائدات الأعمال.</p><p>موعد الورشة:</p><p>22 يونيو 2025م</p><p>1:00 مساءً</p><p>عن بُعد</p><p></p><p>الجهات المشاركة</p><p>منشآت (Monsh"
+        ],
+        "event_like_links": []
+      },
+      "script_signals": {
+        "next_data_scripts": 0,
+        "nuxt_scripts": 0,
+        "json_ld_scripts": 0,
+        "large_inline_scripts": 0
+      },
+      "network_total": 1,
+      "network_endpoints": [
+        {
+          "method": "GET",
+          "status": 200,
+          "url": "https://jazancci.org.sa/api/events/calendar/7/2026",
+          "content_type": "application/json",
+          "resource_type": "document",
+          "request_post_data": "",
           "response_shape": "json-like-invalid",
-          "preview": "{ \"language\": \"ar\", \"home\": { \"headerTitle\": \"مرحبًا\", \"headerSubTitle\": \"نحن هنا للمساعدة\", \"ariaHomeScreenOpenStatus\": \"تم فتح الشاشة الرئيسية\", \"ariaExpandMenu\": \"توسيع القائمة\" }, \"conversations\": { \"headerTitle\": \"راسلنا\", \"headerConversationTitle\": \"محادثة\", \"inputMessagePlaceholder\": \"أرسل رسالة...\", \"typeMessagePlaceholder\": \"اكتب رسالتك هنا\", \"inputMessageTitle\": \"حقل إدخال الرسالة\", \"startConversationMessage\": \"هذه بداية حديثك معنا. يرجى إرسال رسالة للبدء.\", \"autoStartConversationMessage\": \"هذه هي بداية محادثتك معنا.\", \"sessionExpirationWarningMessage\": \"يرجى العلم أن الجلسة ستنتهي بعد <%sessionMinutes%> دقيقة من عدم النشاط.\", \"notSignedInMessage\": \"أنت تعمل غير محدد الهوية.\", \"signedInMessage\": \"تم تسجيل دخولك.\", \"signedInMessageWithName\": \"تم تسجيل دخولك باسم <%username%>\", \"signedOutMessage\": \"لقد تم تسجيل خروجك من هذه الجلسة.\", \"agentDefaultName\": \"وكيل\", \"botDefaultName\": \"الروبوت\", \"customerDefaultName\": \"أنت\", \"cancelButton\": \"إلغاء الأمر\", \"closeButton\": \"إغلاق\", \"startConversationButtonTitle\": \"راسلنا\", \"continueConversationButtonTitle\": \"متابعة\", \"openConversationButtonTitle\": \"فتح\", \"startNewConversation\": \"بدء من جديد\", \"startConversationCardTitle\": \"بدء محادثة\", \"continueConversationCardTitle\": \"تابع المحادثة\", \"yourConversationCardTitle\": \"محادثتك\", \"yesButton\": \"نعم\", \"noButton\": \"لا\", \"okButton\": \"حسنًا\", \"sureButton\": \"نعم، أنا متأكد\", \"downloadButton\": \"تنزيل\", \"openInNewTabButton\": \"فتح في علامة تبويب جديدة\", \"signInButton\": \"تسجيل الدخول\", \"clearButton\": \"مسح\", \"previewFile\": \"انقر لمعاينة الملف\", \"pdfPreviewTitle\": \"معاينة PDF الخاص بـ Messenger\", \"textFilePreviewTitle\": \"معاينة"
+          "preview": "[{\"id\":17,\"slug\":\"mttlbat-nzam-idarh-almrafq-iso-41001-llmnshat-alsghyrh-walmtwsth-\",\"createdAt\":\"2026-07-09T09:13:48.740Z\",\"updatedAt\":\"2026-07-09T09:13:48.740Z\",\"title\":{\"ar\":\"متطلبات نظام إدارة المرافق ISO 41001 للمنشآت الصغيرة والمتوسطة \",\"en\":\"Requirements for ISO 41001 Facilities Management System for Small and Medium Enterprises\"},\"cover\":{\"name\":\"cover\",\"url\":\"https://jazancci.org.sa/uploads/external-events/f69bc684499f3de3fe11ca2370421475.jpg\",\"type\":\"image/jpeg\",\"path\":\"external-events/f69bc684499f3de3fe11ca2370421475.jpg\",\"size\":856799},\"media\":[],\"description\":{\"ar\":\"<h1>متطلبات نظام إدارة المرافق <strong>ISO 41001</strong> للمنشآت الصغيرة والمتوسطة</h1><h2>محاور الورشة:</h2><ul><li><p>- مقدمة عن إدارة المرافق.</p></li><li><p>- التعريف بمعيار <strong>ISO 41001</strong>.</p></li><li><p>- نطاق وأهداف المعيار.</p></li><li><p>- متطلبات المعيار الأساسية.</p></li><li><p>- خطة التطبيق العملي.</p></li><li><p>- الفوائد والتحديات والاستراتيجيات لتطبيق المعيار للمنشآت الصغيرة والمتوسطة.</p></li></ul><h2>الفئة المستهدفة:</h2><p>رواد ورائدات الأعمال.</p><h2>موعد الورشة:</h2><p><strong>21 يونيو 2025م</strong><br/><strong>10:30 صباحاً</strong><br/><strong>عن بُعد</strong></p><h2></h2><hr/><h3>الجهات المنظمة</h3><ul><li><p>المواصفات السعودية</p></li><li><p>غرفة جازان</p></li><li><p></p></li></ul><p></p>\",\"en\":\"<h1>Requirements for Facilities Management System <strong>ISO 41001</strong> for Small and Medium Enterprises</h1><h2>Workshop Topics:</h2><ul><li><p>- Introduction to Facilities Management.</p></li><li><p>- Introduction to <strong>ISO 41001</strong> Standard.</p></li><li><p>- Scope and Objectives of the Standard.</p></li><li><p>- Key Requirements of the Standard.</p></li><li><p>- Practical Implementation Plan.</p></li><li><p>- Benefits, Challenges, and Strategies for"
+        }
+      ],
+      "network_sample": [
+        {
+          "method": "GET",
+          "status": 200,
+          "url": "https://jazancci.org.sa/api/events/calendar/7/2026",
+          "content_type": "application/json",
+          "resource_type": "document",
+          "request_post_data": "",
+          "response_shape": "json-like-invalid",
+          "preview": "[{\"id\":17,\"slug\":\"mttlbat-nzam-idarh-almrafq-iso-41001-llmnshat-alsghyrh-walmtwsth-\",\"createdAt\":\"2026-07-09T09:13:48.740Z\",\"updatedAt\":\"2026-07-09T09:13:48.740Z\",\"title\":{\"ar\":\"متطلبات نظام إدارة المرافق ISO 41001 للمنشآت الصغيرة والمتوسطة \",\"en\":\"Requirements for ISO 41001 Facilities Management System for Small and Medium Enterprises\"},\"cover\":{\"name\":\"cover\",\"url\":\"https://jazancci.org.sa/uploads/external-events/f69bc684499f3de3fe11ca2370421475.jpg\",\"type\":\"image/jpeg\",\"path\":\"external-events/f69bc684499f3de3fe11ca2370421475.jpg\",\"size\":856799},\"media\":[],\"description\":{\"ar\":\"<h1>متطلبات نظام إدارة المرافق <strong>ISO 41001</strong> للمنشآت الصغيرة والمتوسطة</h1><h2>محاور الورشة:</h2><ul><li><p>- مقدمة عن إدارة المرافق.</p></li><li><p>- التعريف بمعيار <strong>ISO 41001</strong>.</p></li><li><p>- نطاق وأهداف المعيار.</p></li><li><p>- متطلبات المعيار الأساسية.</p></li><li><p>- خطة التطبيق العملي.</p></li><li><p>- الفوائد والتحديات والاستراتيجيات لتطبيق المعيار للمنشآت الصغيرة والمتوسطة.</p></li></ul><h2>الفئة المستهدفة:</h2><p>رواد ورائدات الأعمال.</p><h2>موعد الورشة:</h2><p><strong>21 يونيو 2025م</strong><br/><strong>10:30 صباحاً</strong><br/><strong>عن بُعد</strong></p><h2></h2><hr/><h3>الجهات المنظمة</h3><ul><li><p>المواصفات السعودية</p></li><li><p>غرفة جازان</p></li><li><p></p></li></ul><p></p>\",\"en\":\"<h1>Requirements for Facilities Management System <strong>ISO 41001</strong> for Small and Medium Enterprises</h1><h2>Workshop Topics:</h2><ul><li><p>- Introduction to Facilities Management.</p></li><li><p>- Introduction to <strong>ISO 41001</strong> Standard.</p></li><li><p>- Scope and Objectives of the Standard.</p></li><li><p>- Key Requirements of the Standard.</p></li><li><p>- Practical Implementation Plan.</p></li><li><p>- Benefits, Challenges, and Strategies for"
         }
       ]
     }

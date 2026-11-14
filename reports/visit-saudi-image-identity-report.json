@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-13T09:50:05.528Z",
+  "generated_at": "2026-11-14T09:22:19.335Z",
   "catalog": "data/events_catalog.json",
   "candidates": "data/source_candidates.json",
   "manifest": "data/event_image_cache_manifest.json",
@@ -10,11 +10,40 @@
   },
   "totals": {
     "pdf_crop_assignments": 26,
-    "verified": 26,
-    "struck": 0,
-    "slots_seen_this_cycle": 31
+    "verified": 22,
+    "struck": 4,
+    "slots_seen_this_cycle": 26
   },
-  "struck": [],
+  "struck": [
+    {
+      "id": "event-فينا-نحكي؟-عرض-ستاند-أب-كوميدي-لجون-أشقر",
+      "title": "”فينا نحكي؟“ عرض ستاند أب كوميدي لجون أشقر",
+      "file": "visit-saudi-summer-2026-p028-top-left.png",
+      "reason": "slot-vacated",
+      "detail": "no dated card currently occupies page 28 top-left of https://www.visitsaudi.com/content/dam/documents/saudi-calendar-ar.pdf"
+    },
+    {
+      "id": "event-in-act-anniversary-act-xi",
+      "title": "IN ACT ANNIVERSARY - ACT XI",
+      "file": "visit-saudi-summer-2026-p039-bottom-left.jpg",
+      "reason": "slot-vacated",
+      "detail": "no dated card currently occupies page 39 bottom-left of https://www.visitsaudi.com/content/dam/documents/saudi-calendar-ar.pdf"
+    },
+    {
+      "id": "event-مهرجان-القادسية",
+      "title": "مهرجان القادسية",
+      "file": "visit-saudi-summer-2026-p027-top-left.jpg",
+      "reason": "slot-vacated",
+      "detail": "no dated card currently occupies page 27 top-left of https://www.visitsaudi.com/content/dam/documents/saudi-calendar-ar.pdf"
+    },
+    {
+      "id": "event-حفلة-نانسي-عجرم",
+      "title": "حفلة نانسي عجرم",
+      "file": "visit-saudi-summer-2026-p022-top-left.png",
+      "reason": "slot-vacated",
+      "detail": "no dated card currently occupies page 22 top-left of https://www.visitsaudi.com/content/dam/documents/saudi-calendar-ar.pdf"
+    }
+  ],
   "verified": [
     {
       "id": "event-سوق-الثلاثاء-الشعبي",
@@ -76,20 +105,6 @@
       ]
     },
     {
-      "id": "event-فينا-نحكي؟-عرض-ستاند-أب-كوميدي-لجون-أشقر",
-      "title": "”فينا نحكي؟“ عرض ستاند أب كوميدي لجون أشقر",
-      "file": "visit-saudi-summer-2026-p028-top-left.png",
-      "matched_tokens": [
-        "فينا",
-        "نحكي",
-        "عرض",
-        "ستاند",
-        "كوميدي",
-        "لجون",
-        "اشقر"
-      ]
-    },
-    {
       "id": "event-مسار-المشي-بين-معالم-الحِ-جر-الجيولوجية",
       "title": "مسار المشي بين معالم الحِ جر الجيولوجية",
       "file": "visit-saudi-summer-2026-p023-bottom-right.png",
@@ -146,34 +161,6 @@
         "مهرجان",
         "سماء",
         "العا"
-      ]
-    },
-    {
-      "id": "event-in-act-anniversary-act-xi",
-      "title": "IN ACT ANNIVERSARY - ACT XI",
-      "file": "visit-saudi-summer-2026-p039-bottom-left.jpg",
-      "matched_tokens": [
-        "act",
-        "anniversary"
-      ]
-    },
-    {
-      "id": "event-مهرجان-القادسية",
-      "title": "مهرجان القادسية",
-      "file": "visit-saudi-summer-2026-p027-top-left.jpg",
-      "matched_tokens": [
-        "مهرجان",
-        "القادسيه"
-      ]
-    },
-    {
-      "id": "event-حفلة-نانسي-عجرم",
-      "title": "حفلة نانسي عجرم",
-      "file": "visit-saudi-summer-2026-p022-top-left.png",
-      "matched_tokens": [
-        "حفله",
-        "نانسي",
-        "عجرم"
       ]
     },
     {
