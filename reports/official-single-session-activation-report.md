@@ -1,8 +1,8 @@
 # EventLive Official Single-Session Activation
-- Generated at: 2026-11-14T09:26:51.904Z
+- Generated at: 2026-11-15T10:00:39.296Z
 - Max duration hours: 8
-- Activated: 50
-- Skipped long events: 20
+- Activated: 54
+- Skipped long events: 23
 
 | Source | Event | Duration | Type |
 |---|---|---:|---|
@@ -55,4 +55,8 @@
 | Saudi Universities and Technical Colleges | Spooky Open Mic Night | 4h | official-community-session |
 | Saudi Universities and Technical Colleges | Run for a Cure | 3.5h | official-community-session |
 | MDLBEAST Events | Beast House | 6h | official-entertainment-session |
+| Saudi Universities and Technical Colleges | Your health insurance is one click away | 7h | official-community-session |
+| Saudi Universities and Technical Colleges | Climate, Risk and Sustainability: Connecting Science and Finance | 1h | official-community-session |
+| Saudi Universities and Technical Colleges | Save the Date: KAUST Community Open Day Returns on November 18 | 3h | official-community-session |
+| Saudi Universities and Technical Colleges | Barbecue Dinner Cruise | 1.5h | official-community-session |
 | Saudi Universities and Technical Colleges | KAUST-Bruker X-ray Microscopy Workshop 2026 | 7h | official-community-session |

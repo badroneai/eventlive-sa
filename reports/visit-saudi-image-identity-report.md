@@ -1,17 +1,14 @@
 # EventLive Visit Saudi Image Identity Report
 
-- generated_at: 2026-11-14T09:22:19.335Z
-- pdf_crop_assignments: 26
+- generated_at: 2026-11-15T09:55:19.694Z
+- pdf_crop_assignments: 22
 - verified: 22
-- struck: 4
+- struck: 0
 - slots_seen_this_cycle: 26
 
 ## Struck (fell back to generated cover)
 
-- ”فينا نحكي؟“ عرض ستاند أب كوميدي لجون أشقر (visit-saudi-summer-2026-p028-top-left.png) - slot-vacated - no dated card currently occupies page 28 top-left of https://www.visitsaudi.com/content/dam/documents/saudi-calendar-ar.pdf
-- IN ACT ANNIVERSARY - ACT XI (visit-saudi-summer-2026-p039-bottom-left.jpg) - slot-vacated - no dated card currently occupies page 39 bottom-left of https://www.visitsaudi.com/content/dam/documents/saudi-calendar-ar.pdf
-- مهرجان القادسية (visit-saudi-summer-2026-p027-top-left.jpg) - slot-vacated - no dated card currently occupies page 27 top-left of https://www.visitsaudi.com/content/dam/documents/saudi-calendar-ar.pdf
-- حفلة نانسي عجرم (visit-saudi-summer-2026-p022-top-left.png) - slot-vacated - no dated card currently occupies page 22 top-left of https://www.visitsaudi.com/content/dam/documents/saudi-calendar-ar.pdf
+- none
 
 ## Verified
 

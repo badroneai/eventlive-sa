@@ -1,6 +1,6 @@
 {
   "schema": "eventlive.harvest-os-status.v1",
-  "generated_at": "2026-11-14T09:44:27.628Z",
+  "generated_at": "2026-11-15T10:15:19.433Z",
   "status": "NEEDS_WORK",
   "operating_rule": "Probe before new sources; sample before full harvest; Raw collection is not publication; discovery-only never auto-publishes.",
   "totals": {
@@ -12,8 +12,8 @@
     "partnership_required_sources": 5,
     "blocked_or_closed_sources": 0,
     "manual_review_sources": 56,
-    "collection_attempted": 28,
-    "productive_sources": 15,
+    "collection_attempted": 30,
+    "productive_sources": 16,
     "collector_errors": 7,
     "chronic_collector_errors": 7,
     "transient_collector_errors": 0
@@ -26,77 +26,78 @@
   },
   "candidates_by_gate": {
     "catalog-review": 325,
-    "duplicate-review": 3,
+    "duplicate-review": 2,
     "source-evidence": 8,
+    "human-review": 1,
     "secondary-verified": 2
   },
   "funnel": {
-    "discovered_this_run": 155,
+    "discovered_this_run": 158,
     "candidate_queue": 338,
     "evaluated_for_publish": 338,
-    "linked_existing": 315,
-    "published_new": 4,
+    "linked_existing": 308,
+    "published_new": 11,
     "blocked": 19,
     "secondary_promoted": 0,
-    "secondary_still_blocked": 14
+    "secondary_still_blocked": 23
   },
   "blocked_reasons": {
-    "possible duplicate requires review: exact-title-city-venue-conflict": 2,
     "linked catalog row event-book-nook-zone was superseded by dedupe": 2,
     "linked catalog row event-rolling-podcast was superseded by dedupe": 3,
+    "possible duplicate requires review: exact-title-city-venue-conflict": 1,
     "possible duplicate requires review: exact-title-city-source-conflict": 1,
     "unknown category requires review": 2,
     "linked catalog row event-music-festival-mdlbeast-soundstorm was superseded by dedupe": 1,
-    "publication gate source-evidence is not auto-publishable": 6,
-    "not an attendable event: enrolment-announcement": 2
+    "not an attendable event: enrolment-announcement": 3,
+    "publication gate source-evidence is not auto-publishable": 6
   },
   "collector_error_sources": [
     {
       "id": "mos-events",
       "note": "collector-error: fetch failed [ETIMEDOUT, ENETUNREACH]",
-      "error_streak": 74,
+      "error_streak": 75,
       "kind": "chronic",
       "attempted_this_run": true
     },
     {
       "id": "saudi-pro-league-fixtures",
       "note": "collector-error: fetch failed [EAI_AGAIN]",
-      "error_streak": 54,
+      "error_streak": 55,
       "kind": "chronic",
       "attempted_this_run": true
     },
     {
       "id": "tuwaiq-academy-bootcamps",
       "note": "collector-error: HTTP 403",
-      "error_streak": 51,
+      "error_streak": 52,
       "kind": "chronic",
       "attempted_this_run": true
     },
     {
       "id": "qassim-chamber-events",
       "note": "collector-error: HTTP 403",
-      "error_streak": 20,
+      "error_streak": 21,
       "kind": "chronic",
       "attempted_this_run": true
     },
     {
       "id": "moc-cultural-calendar",
       "note": "collector-error: fetch failed [ETIMEDOUT, ENETUNREACH]; fetch failed [ETIMEDOUT, ENETUNREACH]",
-      "error_streak": 6,
+      "error_streak": 7,
       "kind": "chronic",
       "attempted_this_run": true
     },
     {
       "id": "moc-cultural-subportals",
       "note": "collector-error: fetch failed [ETIMEDOUT, ENETUNREACH]; fetch failed [ETIMEDOUT, ENETUNREACH]",
-      "error_streak": 6,
+      "error_streak": 7,
       "kind": "chronic",
       "attempted_this_run": true
     },
     {
       "id": "monshaat-events",
       "note": "collector-error: fetch failed [UND_ERR_CONNECT_TIMEOUT]; fetch failed [UND_ERR_CONNECT_TIMEOUT]",
-      "error_streak": 5,
+      "error_streak": 6,
       "kind": "chronic",
       "attempted_this_run": true
     }

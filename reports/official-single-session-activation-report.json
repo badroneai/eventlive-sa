@@ -1,9 +1,9 @@
 {
-  "generated_at": "2026-11-14T09:26:51.904Z",
+  "generated_at": "2026-11-15T10:00:39.296Z",
   "max_duration_hours": 8,
   "totals": {
-    "activated": 50,
-    "skipped_long": 20
+    "activated": 54,
+    "skipped_long": 23
   },
   "activated": [
     {
@@ -442,10 +442,46 @@
       "id": "event-beast-house",
       "title": "Beast House",
       "source_label": "MDLBEAST Events",
-      "starts_at": "2026-11-13T21:00:00+03:00",
-      "ends_at": "2026-11-14T03:00:00+03:00",
+      "starts_at": "2026-11-20T21:00:00+03:00",
+      "ends_at": "2026-11-21T03:00:00+03:00",
       "duration_hours": 6,
       "session_type": "official-entertainment-session"
+    },
+    {
+      "id": "event-your-health-insurance-is-one-click-away",
+      "title": "Your health insurance is one click away",
+      "source_label": "Saudi Universities and Technical Colleges",
+      "starts_at": "2026-11-15T10:00:00+03:00",
+      "ends_at": "2026-11-15T17:00:00+03:00",
+      "duration_hours": 7,
+      "session_type": "official-community-session"
+    },
+    {
+      "id": "event-climate-risk-and-sustainability-connecting-science-and-finance",
+      "title": "Climate, Risk and Sustainability: Connecting Science and Finance",
+      "source_label": "Saudi Universities and Technical Colleges",
+      "starts_at": "2026-11-16T12:00:00+03:00",
+      "ends_at": "2026-11-16T13:00:00+03:00",
+      "duration_hours": 1,
+      "session_type": "official-community-session"
+    },
+    {
+      "id": "event-save-the-date-kaust-community-open-day-returns-on-november-18",
+      "title": "Save the Date: KAUST Community Open Day Returns on November 18",
+      "source_label": "Saudi Universities and Technical Colleges",
+      "starts_at": "2026-11-18T17:30:00+03:00",
+      "ends_at": "2026-11-18T20:30:00+03:00",
+      "duration_hours": 3,
+      "session_type": "official-community-session"
+    },
+    {
+      "id": "event-barbecue-dinner-cruise",
+      "title": "Barbecue Dinner Cruise",
+      "source_label": "Saudi Universities and Technical Colleges",
+      "starts_at": "2026-11-19T17:30:00+03:00",
+      "ends_at": "2026-11-19T19:00:00+03:00",
+      "duration_hours": 1.5,
+      "session_type": "official-community-session"
     },
     {
       "id": "event-kaust-bruker-x-ray-microscopy-workshop-2026",
@@ -561,10 +597,22 @@
       "duration_hours": 79
     },
     {
+      "id": "event-volleyball-open-day",
+      "title": "Volleyball Open Day",
+      "source_label": "Saudi Universities and Technical Colleges",
+      "duration_hours": 169
+    },
+    {
       "id": "event-unstable",
       "title": "Unstable",
       "source_label": "MDLBEAST Events",
       "duration_hours": 24
+    },
+    {
+      "id": "event-the-kaust-school-presents-mary-poppins-the-musical",
+      "title": "The KAUST School Presents Mary Poppins The Musical",
+      "source_label": "Saudi Universities and Technical Colleges",
+      "duration_hours": 71.98
     },
     {
       "id": "event-xp-music-futures-2026",
@@ -577,6 +625,12 @@
       "title": "SOUNDSTORM 26",
       "source_label": "MDLBEAST Events",
       "duration_hours": 24
+    },
+    {
+      "id": "event-save-the-date",
+      "title": "Save the date",
+      "source_label": "Saudi Universities and Technical Colleges",
+      "duration_hours": 17.98
     }
   ]
 }
