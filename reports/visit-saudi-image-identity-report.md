@@ -1,14 +1,15 @@
 # EventLive Visit Saudi Image Identity Report
 
-- generated_at: 2026-11-15T09:55:19.694Z
+- generated_at: 2026-11-16T10:20:34.150Z
 - pdf_crop_assignments: 22
-- verified: 22
-- struck: 0
-- slots_seen_this_cycle: 26
+- verified: 20
+- struck: 2
+- slots_seen_this_cycle: 24
 
 ## Struck (fell back to generated cover)
 
-- none
+- مهرجان سماء العا (visit-saudi-summer-2026-p066-top-right.jpg) - slot-vacated - no dated card currently occupies page 66 top-right of https://www.visitsaudi.com/content/dam/documents/saudi-calendar-ar.pdf
+- عروض المناطيد المضيئة (visit-saudi-summer-2026-p027-top-right.png) - slot-vacated - no dated card currently occupies page 27 top-right of https://www.visitsaudi.com/content/dam/documents/saudi-calendar-ar.pdf
 
 ## Verified
 
@@ -23,8 +24,6 @@
 - نسيم الخبر (visit-saudi-summer-2026-p030-top-left.png)
 - سوالف الحي (visit-saudi-summer-2026-p028-top-right.png)
 - سيرك فونتانا (visit-saudi-summer-2026-p017-top-right.png)
-- مهرجان سماء العا (visit-saudi-summer-2026-p066-top-right.jpg)
-- عروض المناطيد المضيئة (visit-saudi-summer-2026-p027-top-right.png)
 - عرض كوميدي مع ماريو يزبك (visit-saudi-summer-2026-p010-top-left.png)
 - موسم ملح القصب الرابع (visit-saudi-summer-2026-p041-top-left.png)
 - الضحك في الترجمة - عرض كوميدي مع شون شدياق (visit-saudi-summer-2026-p010-bottom-right.png)

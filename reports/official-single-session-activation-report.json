@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-15T10:00:39.296Z",
+  "generated_at": "2026-11-16T10:25:12.607Z",
   "max_duration_hours": 8,
   "totals": {
     "activated": 54,
@@ -439,15 +439,6 @@
       "session_type": "official-community-session"
     },
     {
-      "id": "event-beast-house",
-      "title": "Beast House",
-      "source_label": "MDLBEAST Events",
-      "starts_at": "2026-11-20T21:00:00+03:00",
-      "ends_at": "2026-11-21T03:00:00+03:00",
-      "duration_hours": 6,
-      "session_type": "official-entertainment-session"
-    },
-    {
       "id": "event-your-health-insurance-is-one-click-away",
       "title": "Your health insurance is one click away",
       "source_label": "Saudi Universities and Technical Colleges",
@@ -482,6 +473,15 @@
       "ends_at": "2026-11-19T19:00:00+03:00",
       "duration_hours": 1.5,
       "session_type": "official-community-session"
+    },
+    {
+      "id": "event-beast-house",
+      "title": "Beast House",
+      "source_label": "MDLBEAST Events",
+      "starts_at": "2026-11-19T21:00:00+03:00",
+      "ends_at": "2026-11-20T03:00:00+03:00",
+      "duration_hours": 6,
+      "session_type": "official-entertainment-session"
     },
     {
       "id": "event-kaust-bruker-x-ray-microscopy-workshop-2026",

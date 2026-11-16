@@ -1,6 +1,6 @@
 {
   "schema": "eventlive.source-strategic-platform-radar.v1",
-  "generated_at": "2026-11-15T09:33:44.047Z",
+  "generated_at": "2026-11-16T09:53:37.369Z",
   "policy": {
     "allowed_use": "official source evidence refresh, API-surface mapping, partnership prioritization, extractor backlog decisions",
     "disallowed_use": "direct catalog publication without official confirmation and duplicate review"
@@ -152,6 +152,13 @@
         "https://www.linkedin.com/company/events-center-sa/",
         "https://sdaia.gov.sa/ar/MediaCenter/Pages/ai-year.aspx",
         "https://enjz.nec.gov.sa/",
+        "https://raqmi.dga.gov.sa/platforms/platforms/4b50c837-5b74-4f7e-c4a7-08dcfc01c363/platform-license\\\\\\",
+        "https://laws.boe.gov.sa/BoeLaws/Laws/LawDetails/e73fd7d3-e812-477b-8112-ad3f00d16fd9/1\\",
+        "https://www.hrsd.gov.sa/knowledge-centre/decisions-and-regulations/regulation-and-procedures/0211202310#\\",
+        "https://eparticipation.my.gov.sa/\\",
+        "https://ncar.gov.sa/\\",
+        "https://www.vision2030.gov.sa/ar/\\",
+        "https://ehsan.sa/\\",
         "http://www.w3.org/2000/svg\\",
         "https://nec.gov.sa/ar\\",
         "https://nec.gov.sa/en\\",
@@ -164,20 +171,13 @@
         "https://www.gea.gov.sa/ar/\\",
         "https://www.asda.gov.sa/ar\\",
         "https://www.dgda.gov.sa/ar\\",
-        "https://raqmi.dga.gov.sa/platforms/platforms/4b50c837-5b74-4f7e-c4a7-08dcfc01c363/platform-license\\\\\\",
-        "https://laws.boe.gov.sa/BoeLaws/Laws/LawDetails/e73fd7d3-e812-477b-8112-ad3f00d16fd9/1\\",
-        "https://www.hrsd.gov.sa/knowledge-centre/decisions-and-regulations/regulation-and-procedures/0211202310#\\",
-        "https://eparticipation.my.gov.sa/\\",
-        "https://ncar.gov.sa/\\",
-        "https://www.vision2030.gov.sa/ar/\\",
-        "https://ehsan.sa/\\",
         "https://static.cloudflareinsights.com/beacon.min.js/vce701823e78c4301a35b7e07294d87301792088814092",
         "https://nec.gov.sa/ar/event-tech",
         "https://nec.gov.sa/ar/join-us/event-pioneer",
+        "https://nec.gov.sa/ar/join-us/event-pioneer/",
         "https://nec.gov.sa/ar/event-tech/",
         "https://nec.gov.sa/join-us/event-pioneer/",
-        "https://nec.gov.sa/media/bceb6f0d-07c1-461d-8cf5-374b508b6e54/jeddah-calender-events-%D8%AA%D9%82%D9%88%D9%8A%D9%85-%D8%AC%D8%AF%D8%A9-%D9%81%D8%B9%D8%A7%D9%84%D9%8A%D8%A7%D8%AA-%D9%81%D8%B9%D8%A7%D9%84%D9%8A%D8%A9-%D8%B3%D9%8A%D8%AA%D9%8A-%D9%88%D9%88%D9%83-%D9%88%D9%83-%D8%A7%D8%B3%D9%8A%D8%A7-%D8%A7%D9%84%D8%B5%D8%BA%D8%B1%D9%89zoo.jpg/",
-        "https://nec.gov.sa/media/31a5822a-4e1b-4d64-a9ec-5f042964e8ff/event%D8%AA%D9%82%D9%88%D9%8A%D9%85-%D8%AC%D8%AF%D8%A9-%D9%81%D8%B9%D8%A7%D9%84%D9%8A%D8%A7%D8%AA-%D9%81%D8%B9%D8%A7%D9%84%D9%8A%D8%A9-%D8%B3%D9%8A%D8%AA%D9%8A-%D9%88%D9%88%D9%83-%D9%88%D9%83-%D8%A7%D8%B3%D9%8A%D8%A7-%D8%A7%D9%84%D8%B5%D8%BA%D8%B1%D9%89.jpg/"
+        "https://nec.gov.sa/media/bceb6f0d-07c1-461d-8cf5-374b508b6e54/jeddah-calender-events-%D8%AA%D9%82%D9%88%D9%8A%D9%85-%D8%AC%D8%AF%D8%A9-%D9%81%D8%B9%D8%A7%D9%84%D9%8A%D8%A7%D8%AA-%D9%81%D8%B9%D8%A7%D9%84%D9%8A%D8%A9-%D8%B3%D9%8A%D8%AA%D9%8A-%D9%88%D9%88%D9%83-%D9%88%D9%83-%D8%A7%D8%B3%D9%8A%D8%A7-%D8%A7%D9%84%D8%B5%D8%BA%D8%B1%D9%89zoo.jpg/"
       ],
       "page_hint_words": [
         "api",
@@ -199,7 +199,7 @@
       "final_url": "https://www.visitsaudi.com/ar/saudi-calendar",
       "via": "fetch",
       "content_type": "text/html; charset=utf-8",
-      "bytes": 92171,
+      "bytes": 92039,
       "title": "تقويم السعودية | تابع العطلات والفعاليات المميزة - الموقع الرسمي للسياحة السعودية",
       "classification": "reachable",
       "error": "",
@@ -256,11 +256,11 @@
         {
           "url": "https://www.visitsaudi.com/bin/api/v3/events?locale=ar",
           "status": 200,
-          "bytes": 68085,
+          "bytes": 64350,
           "classification": "reachable",
           "summary": {
             "parse_ok": true,
-            "item_count": 20,
+            "item_count": 19,
             "sample_titles": [
               "معرض اللغة العربية 28",
               "مزاد نادي الصقور السعودي",
@@ -274,11 +274,11 @@
         {
           "url": "https://www.visitsaudi.com/bin/api/v3/events?locale=en",
           "status": 200,
-          "bytes": 70917,
+          "bytes": 67095,
           "classification": "reachable",
           "summary": {
             "parse_ok": true,
-            "item_count": 20,
+            "item_count": 19,
             "sample_titles": [
               "Arabic Language Exhibition 28",
               "Saudi Falcons Club Auction",
@@ -303,7 +303,7 @@
       "final_url": "https://webook.com/ar/explore",
       "via": "fetch",
       "content_type": "text/html",
-      "bytes": 5048,
+      "bytes": 5047,
       "title": "",
       "classification": "protected",
       "error": "",
@@ -331,7 +331,7 @@
         "https://wbk-assets.webook.com/8.4.1/locales/en/currency_common.json",
         "https://wbk-assets.webook.com/8.4.1/locales/en/payment_common.json",
         "https://wbk-assets.webook.com/8.4.1/locales/en/subscription_common.json",
-        "https://webook.com/cdn-cgi/content?id=qHgGtusVrk8X9uDPlwB6VD6y9FIo.ZdZCOWaznifTiE-1794735233.2214627-1.2.1.1-4v.gqrWfrNqm7UjUMhMqNnneYfH2aYFBhmfVdxeifmn4Pgc4o1BB3YX8onfhHMnp",
+        "https://webook.com/cdn-cgi/content?id=OXd2fA2ZGOMGx57PryUUiFtqjfDz_564buepEd8DCI0-1794822826.269704-1.2.1.1-5srW2jEt8pPm8N9_RmeHVvSGkC53JEkVgfQ_QGnw6xQEfIN6TFOiiZRBTDQJMldQ",
         "https://static.cloudflareinsights.com/beacon.min.js/vce701823e78c4301a35b7e07294d87301792088814092"
       ],
       "page_hint_words": [

@@ -1,6 +1,6 @@
 # Strategic Platform Source Radar
 
-Generated at: 2026-11-15T09:33:44.047Z
+Generated at: 2026-11-16T09:53:37.369Z
 
 Policy: evidence refresh, API-surface mapping, and source strategy only. This radar does not auto-publish catalog events.
 
@@ -51,8 +51,8 @@ Policy: evidence refresh, API-surface mapping, and source strategy only. This ra
 - Project use: Keep in the 6-hour source ring; Arabic and English API payloads are reachable and useful for tourism-facing event discovery.
 - Title: تقويم السعودية | تابع العطلات والفعاليات المميزة - الموقع الرسمي للسياحة السعودية
 - Hint URLs: https://www.googletagmanager.com, https://cdn.consentmanager.net, https://delivery.consentmanager.net, https://www.googletagmanager.com/gtm.js?id=, https://www.clarity.ms/tag/, https://www.visitsaudi.com/images/SoundStorm-1.2e16d0ba.fill-1200x630.jpg, https://www.visitsaudi.com/ar/saudi-calendar, https://www.visitsaudi.com/ar
-  - API 200 https://www.visitsaudi.com/bin/api/v3/events?locale=ar: 20 items; معرض اللغة العربية 28, مزاد نادي الصقور السعودي, رحلة كثيب إلى بحيرة الأصفر, موسم سباقات الرياض, بوليڤارد وورلد في موسم الرياض
-  - API 200 https://www.visitsaudi.com/bin/api/v3/events?locale=en: 20 items; Arabic Language Exhibition 28, Saudi Falcons Club Auction, Katheeb Trip to Al-Asfar Lake, Riyadh Racing Season, BLVD World at Riyadh Season
+  - API 200 https://www.visitsaudi.com/bin/api/v3/events?locale=ar: 19 items; معرض اللغة العربية 28, مزاد نادي الصقور السعودي, رحلة كثيب إلى بحيرة الأصفر, موسم سباقات الرياض, بوليڤارد وورلد في موسم الرياض
+  - API 200 https://www.visitsaudi.com/bin/api/v3/events?locale=en: 19 items; Arabic Language Exhibition 28, Saudi Falcons Club Auction, Katheeb Trip to Al-Asfar Lake, Riyadh Racing Season, BLVD World at Riyadh Season
 
 ### webook Explore
 
