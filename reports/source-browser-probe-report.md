@@ -1,11 +1,11 @@
 # EventLive Browser Source Probe
 
-Generated at: 2026-11-16T10:03:53.511Z
+Generated at: 2026-11-17T10:59:57.536Z
 
 ## Summary
 
-- Sources probed this run: 8
-- Fresh results available: 12
+- Sources probed this run: 7
+- Fresh results available: 13
 - Browser network API: 0
 - Hydration payload: 0
 - Rendered HTML candidates: 1
@@ -26,7 +26,8 @@ Generated at: 2026-11-16T10:03:53.511Z
 | 34 | visit-saudi-calendar-pdf | error | 0 | empty-or-shell | 0 | 0 | 0 | اعتبرها shell وابحث عن API أو مسار بديل قبل أي collector. |
 | 37 | moc-cultural-subportals | error | 0 | empty-or-shell | 0 | 0 | 0 | اعتبرها shell وابحث عن API أو مسار بديل قبل أي collector. |
 | 51 | riyadh-city-events | ok | 200 | rendered-text-review | 0 | 0 | 0 | راجع الصفحة يدويًا وحدد هل هي مصدر أدلة أم صفحة تعريفية فقط. |
-| 56 | scega-exhibitions-conferences | ok | 400 | empty-or-shell | 0 | 0 | 0 | اعتبرها shell وابحث عن API أو مسار بديل قبل أي collector. |
+| 56 | scega-exhibitions-conferences | error | 0 | empty-or-shell | 0 | 0 | 0 | اعتبرها shell وابحث عن API أو مسار بديل قبل أي collector. |
+| 59 | asharqia-chamber-events | error | 0 | empty-or-shell | 0 | 0 | 0 | اعتبرها shell وابحث عن API أو مسار بديل قبل أي collector. |
 | 60 | qassim-chamber-events | ok | 403 | blocked-or-protected | 0 | 0 | 0 | لا تلتف على الحماية؛ صنف المصدر partnership/API أو ابحث عن مسار رسمي. |
 
 ## Endpoint Candidates
@@ -37,5 +38,5 @@ Generated at: 2026-11-16T10:03:53.511Z
 
 | Source | Date snippets | Event-like links | Endpoint previews |
 |---|---|---|---|
-| eye-of-riyadh-events | 5 Jumada II 1448 - 16 November 2026 Sign In/Sign Up Advertise with us Sign-up for newsletter HOME NEWS EVENTS BUSIN<br>hatsApp X LinkedIn Facebook Email Share 25 - 27 Jan, 2027 Real Estate Future Forum Four Seasons Hotel , Riyadh / Forum The Real Est<br>must evolve, embracing... More Details 4 - 5 Apr, 2027 Global Proptech Summit 2027 Mandarin Oriental Al Faisaliah , Riyadh / Sum | EVENTS -> https://www.eyeofriyadh.com/events/<br>عربي -> https://www.eyeofriyadh.com/ar/events/<br>Award -> https://www.eyeofriyadh.com/events/?fcat=15<br>Ceremony -> https://www.eyeofriyadh.com/events/?fcat=21 | - |
+| eye-of-riyadh-events | 6 Jumada II 1448 - 17 November 2026 Sign In/Sign Up Advertise with us Sign-up for newsletter HOME NEWS EVENTS BUSIN<br>hatsApp X LinkedIn Facebook Email Share 25 - 27 Jan, 2027 Real Estate Future Forum Four Seasons Hotel , Riyadh / Forum The Real Est<br>must evolve, embracing... More Details 4 - 5 Apr, 2027 Global Proptech Summit 2027 Mandarin Oriental Al Faisaliah , Riyadh / Sum | EVENTS -> https://www.eyeofriyadh.com/events/<br>عربي -> https://www.eyeofriyadh.com/ar/events/<br>Award -> https://www.eyeofriyadh.com/events/?fcat=15<br>Ceremony -> https://www.eyeofriyadh.com/events/?fcat=21 | - |
 | tuwaiq-academy-bootcamps | بيرتون - المسار التأسيسي ","startDate":"2026-12-06T09:00:00+03:00","endDate":"2027-09-09T21:00:00+03:00","autoCloseRegistration":f<br>nStartDate":null,"registrationEndDate":"2026-11-15T12:00:00+03:00","requireProfileCompletion":true,"isMergePublish":null,"isPaid":<br>ية الاحترافية لسحابة قوقل","startDate":"2026-12-06T17:00:00+03:00","endDate":"2026-12-31T21:00:00+03:00","autoCloseRegistration":f | - | - |

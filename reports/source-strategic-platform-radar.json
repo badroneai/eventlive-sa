@@ -1,6 +1,6 @@
 {
   "schema": "eventlive.source-strategic-platform-radar.v1",
-  "generated_at": "2026-11-16T09:53:37.369Z",
+  "generated_at": "2026-11-17T10:50:34.660Z",
   "policy": {
     "allowed_use": "official source evidence refresh, API-surface mapping, partnership prioritization, extractor backlog decisions",
     "disallowed_use": "direct catalog publication without official confirmation and duplicate review"
@@ -133,7 +133,7 @@
       "final_url": "https://nec.gov.sa/ar",
       "via": "fetch",
       "content_type": "text/html; charset=utf-8",
-      "bytes": 129359,
+      "bytes": 129273,
       "title": "المركز الوطني للفعاليات",
       "classification": "protected",
       "error": "",
@@ -303,7 +303,7 @@
       "final_url": "https://webook.com/ar/explore",
       "via": "fetch",
       "content_type": "text/html",
-      "bytes": 5047,
+      "bytes": 5048,
       "title": "",
       "classification": "protected",
       "error": "",
@@ -331,7 +331,7 @@
         "https://wbk-assets.webook.com/8.4.1/locales/en/currency_common.json",
         "https://wbk-assets.webook.com/8.4.1/locales/en/payment_common.json",
         "https://wbk-assets.webook.com/8.4.1/locales/en/subscription_common.json",
-        "https://webook.com/cdn-cgi/content?id=OXd2fA2ZGOMGx57PryUUiFtqjfDz_564buepEd8DCI0-1794822826.269704-1.2.1.1-5srW2jEt8pPm8N9_RmeHVvSGkC53JEkVgfQ_QGnw6xQEfIN6TFOiiZRBTDQJMldQ",
+        "https://webook.com/cdn-cgi/content?id=_S1bugGaZJzQgA_kR035O99VV4qh8fjidCgkWAB5FLE-1794912643.5286539-1.2.1.1-6aybS6yyeexJwoj0LjCHxIZ0BBcXJvsdbQ895Yk9yei_v0uwIIKFglTOqTp6jJ6h",
         "https://static.cloudflareinsights.com/beacon.min.js/vce701823e78c4301a35b7e07294d87301792088814092"
       ],
       "page_hint_words": [

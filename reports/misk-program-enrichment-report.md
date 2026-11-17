@@ -1,6 +1,6 @@
 # Misk Program Enrichment Report
 
-- generated_at: 2026-11-16T10:21:52.708Z
+- generated_at: 2026-11-17T11:14:54.764Z
 - targets: 19
 - enriched: 19
 - failed: 0

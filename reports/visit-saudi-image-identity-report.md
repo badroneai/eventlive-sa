@@ -1,15 +1,14 @@
 # EventLive Visit Saudi Image Identity Report
 
-- generated_at: 2026-11-16T10:20:34.150Z
-- pdf_crop_assignments: 22
+- generated_at: 2026-11-17T11:12:59.077Z
+- pdf_crop_assignments: 20
 - verified: 20
-- struck: 2
+- struck: 0
 - slots_seen_this_cycle: 24
 
 ## Struck (fell back to generated cover)
 
-- مهرجان سماء العا (visit-saudi-summer-2026-p066-top-right.jpg) - slot-vacated - no dated card currently occupies page 66 top-right of https://www.visitsaudi.com/content/dam/documents/saudi-calendar-ar.pdf
-- عروض المناطيد المضيئة (visit-saudi-summer-2026-p027-top-right.png) - slot-vacated - no dated card currently occupies page 27 top-right of https://www.visitsaudi.com/content/dam/documents/saudi-calendar-ar.pdf
+- none
 
 ## Verified
 

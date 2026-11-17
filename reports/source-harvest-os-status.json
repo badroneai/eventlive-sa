@@ -1,6 +1,6 @@
 {
   "schema": "eventlive.harvest-os-status.v1",
-  "generated_at": "2026-11-16T10:42:34.985Z",
+  "generated_at": "2026-11-17T11:35:51.030Z",
   "status": "NEEDS_WORK",
   "operating_rule": "Probe before new sources; sample before full harvest; Raw collection is not publication; discovery-only never auto-publishes.",
   "totals": {
@@ -12,11 +12,11 @@
     "partnership_required_sources": 5,
     "blocked_or_closed_sources": 0,
     "manual_review_sources": 56,
-    "collection_attempted": 40,
+    "collection_attempted": 29,
     "productive_sources": 16,
-    "collector_errors": 7,
+    "collector_errors": 9,
     "chronic_collector_errors": 7,
-    "transient_collector_errors": 0
+    "transient_collector_errors": 2
   },
   "policies": {
     "partnership_required": 5,
@@ -32,20 +32,20 @@
     "secondary-verified": 2
   },
   "funnel": {
-    "discovered_this_run": 144,
+    "discovered_this_run": 142,
     "candidate_queue": 323,
     "evaluated_for_publish": 323,
-    "linked_existing": 301,
-    "published_new": 3,
+    "linked_existing": 300,
+    "published_new": 4,
     "blocked": 19,
     "secondary_promoted": 0,
     "secondary_still_blocked": 16
   },
   "blocked_reasons": {
     "possible duplicate requires review: exact-title-city-venue-conflict": 1,
-    "linked catalog row event-book-nook-zone was superseded by dedupe": 2,
     "linked catalog row event-rolling-podcast was superseded by dedupe": 3,
     "possible duplicate requires review: exact-title-city-source-conflict": 1,
+    "linked catalog row event-book-nook-zone was superseded by dedupe": 2,
     "unknown category requires review": 2,
     "linked catalog row event-music-festival-mdlbeast-soundstorm was superseded by dedupe": 1,
     "not an attendable event: enrolment-announcement": 3,
@@ -55,50 +55,64 @@
     {
       "id": "mos-events",
       "note": "collector-error: fetch failed [ETIMEDOUT, ENETUNREACH]; live browser recovery deferred by recent failed probe cooldown",
-      "error_streak": 76,
+      "error_streak": 77,
       "kind": "chronic",
       "attempted_this_run": true
     },
     {
       "id": "saudi-pro-league-fixtures",
       "note": "collector-error: fetch failed [EAI_AGAIN]",
-      "error_streak": 56,
+      "error_streak": 57,
       "kind": "chronic",
       "attempted_this_run": true
     },
     {
       "id": "tuwaiq-academy-bootcamps",
       "note": "collector-error: HTTP 403",
-      "error_streak": 53,
+      "error_streak": 54,
       "kind": "chronic",
       "attempted_this_run": true
     },
     {
       "id": "qassim-chamber-events",
       "note": "collector-error: HTTP 403; live browser recovery deferred by recent failed probe cooldown",
-      "error_streak": 22,
+      "error_streak": 23,
       "kind": "chronic",
       "attempted_this_run": true
     },
     {
       "id": "moc-cultural-calendar",
       "note": "collector-error: fetch failed [ETIMEDOUT, ENETUNREACH]; fetch failed [ETIMEDOUT, ENETUNREACH]",
-      "error_streak": 8,
+      "error_streak": 9,
       "kind": "chronic",
       "attempted_this_run": true
     },
     {
       "id": "moc-cultural-subportals",
       "note": "collector-error: fetch failed [ETIMEDOUT, ENETUNREACH]; fetch failed [ETIMEDOUT, ENETUNREACH]",
-      "error_streak": 8,
+      "error_streak": 9,
       "kind": "chronic",
       "attempted_this_run": true
     },
     {
       "id": "monshaat-events",
       "note": "collector-error: fetch failed [UND_ERR_CONNECT_TIMEOUT]; fetch failed [UND_ERR_CONNECT_TIMEOUT]",
-      "error_streak": 7,
+      "error_streak": 8,
       "kind": "chronic",
+      "attempted_this_run": true
+    },
+    {
+      "id": "scega-exhibitions-conferences",
+      "note": "fetch failed [UND_ERR_CONNECT_TIMEOUT]",
+      "error_streak": 1,
+      "kind": "transient",
+      "attempted_this_run": true
+    },
+    {
+      "id": "asharqia-chamber-events",
+      "note": "fetch failed [UND_ERR_CONNECT_TIMEOUT]; live browser recovery deferred by recent failed probe cooldown",
+      "error_streak": 1,
+      "kind": "transient",
       "attempted_this_run": true
     }
   ],

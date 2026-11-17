@@ -1,14 +1,15 @@
 # Ticket offer enrichment
 
-- Checked at: 2026-11-16T10:25:13.079Z
-- Targets: 6
+- Checked at: 2026-11-17T11:18:32.162Z
+- Targets: 7
 - Evidence found: 3
 - Catalog prices changed: 0
-- No evidence: 3
+- No evidence: 4
 - Failed safely: 0
 
 | Event | Host | Status | Lowest price | Evidence |
 |---|---|---|---:|---|
+| event-unstable | nofomo.com | no-evidence | — | no-explicit-public-price |
 | event-beast-house | nofomo.com | no-evidence | — | no-explicit-public-price |
 | event-soundstorm-26 | nofomo.com | evidence | 499 SAR | nofomo-visible-ticket-price |
 | event-saudi-intermobility-expo | informaconnect.com | no-evidence | — | no-explicit-public-price |
