@@ -1,22 +1,22 @@
 {
   "schema": "eventlive.harvest-os-status.v1",
-  "generated_at": "2026-11-17T11:35:51.030Z",
+  "generated_at": "2026-11-18T10:45:21.344Z",
   "status": "NEEDS_WORK",
   "operating_rule": "Probe before new sources; sample before full harvest; Raw collection is not publication; discovery-only never auto-publishes.",
   "totals": {
     "sources": 88,
-    "candidates": 323,
-    "matched_candidates": 310,
+    "candidates": 319,
+    "matched_candidates": 306,
     "auto_publish_sources": 15,
     "candidate_only_sources": 12,
     "partnership_required_sources": 5,
     "blocked_or_closed_sources": 0,
     "manual_review_sources": 56,
-    "collection_attempted": 29,
-    "productive_sources": 16,
-    "collector_errors": 9,
+    "collection_attempted": 18,
+    "productive_sources": 15,
+    "collector_errors": 8,
     "chronic_collector_errors": 7,
-    "transient_collector_errors": 2
+    "transient_collector_errors": 1
   },
   "policies": {
     "partnership_required": 5,
@@ -25,17 +25,17 @@
     "manual_review": 56
   },
   "candidates_by_gate": {
-    "catalog-review": 310,
+    "catalog-review": 306,
     "duplicate-review": 2,
     "source-evidence": 8,
     "human-review": 1,
     "secondary-verified": 2
   },
   "funnel": {
-    "discovered_this_run": 142,
-    "candidate_queue": 323,
-    "evaluated_for_publish": 323,
-    "linked_existing": 300,
+    "discovered_this_run": 135,
+    "candidate_queue": 319,
+    "evaluated_for_publish": 319,
+    "linked_existing": 296,
     "published_new": 4,
     "blocked": 19,
     "secondary_promoted": 0,
@@ -57,61 +57,54 @@
       "note": "collector-error: fetch failed [ETIMEDOUT, ENETUNREACH]; live browser recovery deferred by recent failed probe cooldown",
       "error_streak": 77,
       "kind": "chronic",
-      "attempted_this_run": true
+      "attempted_this_run": false
     },
     {
       "id": "saudi-pro-league-fixtures",
       "note": "collector-error: fetch failed [EAI_AGAIN]",
       "error_streak": 57,
       "kind": "chronic",
-      "attempted_this_run": true
+      "attempted_this_run": false
     },
     {
       "id": "tuwaiq-academy-bootcamps",
       "note": "collector-error: HTTP 403",
       "error_streak": 54,
       "kind": "chronic",
-      "attempted_this_run": true
+      "attempted_this_run": false
     },
     {
       "id": "qassim-chamber-events",
       "note": "collector-error: HTTP 403; live browser recovery deferred by recent failed probe cooldown",
       "error_streak": 23,
       "kind": "chronic",
-      "attempted_this_run": true
+      "attempted_this_run": false
     },
     {
       "id": "moc-cultural-calendar",
       "note": "collector-error: fetch failed [ETIMEDOUT, ENETUNREACH]; fetch failed [ETIMEDOUT, ENETUNREACH]",
       "error_streak": 9,
       "kind": "chronic",
-      "attempted_this_run": true
+      "attempted_this_run": false
     },
     {
       "id": "moc-cultural-subportals",
       "note": "collector-error: fetch failed [ETIMEDOUT, ENETUNREACH]; fetch failed [ETIMEDOUT, ENETUNREACH]",
       "error_streak": 9,
       "kind": "chronic",
-      "attempted_this_run": true
+      "attempted_this_run": false
     },
     {
       "id": "monshaat-events",
       "note": "collector-error: fetch failed [UND_ERR_CONNECT_TIMEOUT]; fetch failed [UND_ERR_CONNECT_TIMEOUT]",
       "error_streak": 8,
       "kind": "chronic",
-      "attempted_this_run": true
-    },
-    {
-      "id": "scega-exhibitions-conferences",
-      "note": "fetch failed [UND_ERR_CONNECT_TIMEOUT]",
-      "error_streak": 1,
-      "kind": "transient",
-      "attempted_this_run": true
+      "attempted_this_run": false
     },
     {
       "id": "asharqia-chamber-events",
-      "note": "fetch failed [UND_ERR_CONNECT_TIMEOUT]; live browser recovery deferred by recent failed probe cooldown",
-      "error_streak": 1,
+      "note": "HTTP 404; live browser recovery deferred by recent failed probe cooldown",
+      "error_streak": 2,
       "kind": "transient",
       "attempted_this_run": true
     }

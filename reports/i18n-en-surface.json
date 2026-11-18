@@ -1,19 +1,19 @@
 {
   "schema": "eventlive.i18n-en-surface.v1",
-  "generated_at": "2026-11-17T11:32:05.531Z",
-  "pages_scanned": 2169,
-  "pages_with_arabic": 443,
+  "generated_at": "2026-11-18T10:41:45.213Z",
+  "pages_scanned": 2172,
+  "pages_with_arabic": 440,
   "template_regressions": [],
   "script_template_regressions": [],
   "style_template_regressions": [],
   "recurring_surface_debt": [
     {
       "text": "../assets/event-images/الشهادة-الدولية-للحاسب-والإنترنت-ic3-a46ba6d2eb.jpg",
-      "pages": 52,
-      "example": "events/event-إدارة-البرنامج-الأكاديمي-من-الجودة-إلى-التميز.html",
+      "pages": 54,
+      "example": "events/event-اعتماد-تشكيل-النادي-الطلابي-بالكلية-الجامعية-بالليث-للعام-الجامعي-١٤٤٨هـ.html",
       "script": true
     }
   ],
   "recurring_total": 1,
-  "content_prose_lines": 2235
+  "content_prose_lines": 2241
 }

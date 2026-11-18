@@ -1,6 +1,6 @@
 # EventLive Source Run State
 
-Generated at: 2026-11-17T11:24:22.685Z
+Generated at: 2026-11-18T10:34:11.729Z
 
 ## Operating Rule
 
@@ -9,12 +9,12 @@ Raw collection is not publication. Every source run preserves evidence, separate
 ## Totals
 
 - Sources: 88
-- Attempted this run: 29
-- Deferred by adaptive cadence: 19
-- Productive: 16
+- Attempted this run: 18
+- Deferred by adaptive cadence: 30
+- Productive: 15
 - Zero-yield: 1
-- Collector errors: 9
-- Persistent collector errors: 9
+- Collector errors: 1
+- Persistent collector errors: 8
 - Probe blocked: 1
 - Auto-publish eligible source lanes: 12
 
@@ -28,8 +28,7 @@ Raw collection is not publication. Every source run preserves evidence, separate
 | tuwaiq-academy-bootcamps | collector-error | 0 | raw_harvest_to_candidate_queue | Fix collector error: HTTP 403 |
 | saudi-pro-league-fixtures | collector-error | 0 | raw_harvest_to_candidate_queue | Fix collector error: fetch failed [EAI_AGAIN] |
 | moc-cultural-subportals | collector-error | 0 | raw_harvest_to_candidate_queue | Fix collector error: fetch failed [ETIMEDOUT, ENETUNREACH]; fetch failed [ETIMEDOUT, ENETUNREACH] |
-| scega-exhibitions-conferences | collector-error | 0 | raw_harvest_to_candidate_queue | Fix collector error: fetch failed [UND_ERR_CONNECT_TIMEOUT] |
-| asharqia-chamber-events | collector-error | 0 | raw_harvest_to_candidate_queue | Fix collector error: fetch failed [UND_ERR_CONNECT_TIMEOUT]; live browser recovery deferred by recent failed probe cooldown |
+| asharqia-chamber-events | collector-error | 0 | raw_harvest_to_candidate_queue | Fix collector error: HTTP 404; live browser recovery deferred by recent failed probe cooldown |
 | qassim-chamber-events | collector-error | 0 | raw_harvest_to_candidate_queue | Fix collector error: HTTP 403; live browser recovery deferred by recent failed probe cooldown |
 | riyadh-season | probe-blocked | 0 | probe_before_collector | Do not bypass protection; keep as blocked/partnership candidate: bot-protection |
 | saudi-digital-academy | probe-blocked | 0 | probe_before_collector | Do not bypass protection; keep as blocked/partnership candidate: fetch failed getaddrinfo ENOTFOUND sda.edu.sa TypeError: fetch failed |
@@ -42,6 +41,7 @@ Raw collection is not publication. Every source run preserves evidence, separate
 | middle-east-enterprise-ai-summit | probe-blocked | 0 | probe_before_collector | Do not bypass protection; keep as blocked/partnership candidate: bot-protection |
 | leap-official-agendas | probe-blocked | 0 | probe_before_collector | Do not bypass protection; keep as blocked/partnership candidate: http-403 |
 | code-mcit-programs | zero-yield | 86 | raw_harvest_to_candidate_queue | Zero-yield for 86 runs; inspect dropped samples or reclassify cadence if the source is seasonal/archive-only. |
+| jcci-events-center | zero-yield | 86 | raw_harvest_to_candidate_queue | Zero-yield for 86 runs; inspect dropped samples or reclassify cadence if the source is seasonal/archive-only. |
 
 ## Full Source State
 
@@ -53,7 +53,7 @@ Raw collection is not publication. Every source run preserves evidence, separate
 | 4 | mos-events | active-collector | collector-error | 0 | yes | Fix collector error: fetch failed [ETIMEDOUT, ENETUNREACH]; live browser recovery deferred by recent failed probe cooldown |
 | 5 | webook-explore | discovery-only | discovery-only | 0 | no | Use only as discovery evidence; never publish directly. |
 | 6 | hala-yalla | discovery-only | discovery-only | 0 | no | Use only as discovery evidence; never publish directly. |
-| 7 | experience-alula-events | active-collector | productive | 6 | yes | Continue periodic collection; dedupe and auto-publish only through the candidate gate. |
+| 7 | experience-alula-events | active-collector | productive | 5 | yes | Continue periodic collection; dedupe and auto-publish only through the candidate gate. |
 | 8 | mdlbeast-events | active-collector | productive | 2 | yes | Continue periodic collection; dedupe and auto-publish only through the candidate gate. |
 | 9 | monshaat-events | active-collector | collector-error | 0 | yes | Fix collector error: fetch failed [UND_ERR_CONNECT_TIMEOUT]; fetch failed [UND_ERR_CONNECT_TIMEOUT] |
 | 10 | invest-saudi-events | active-collector | productive | 1 | yes | Continue periodic collection; dedupe and auto-publish only through the candidate gate. |
@@ -102,10 +102,10 @@ Raw collection is not publication. Every source run preserves evidence, separate
 | 53 | gea-entertainment-events | evidence-monitor | evidence-monitor | 0 | no | Monitor for official event detail evidence before candidate promotion. |
 | 54 | sdaia-calendar-events | active-collector | productive | 1 | no | Continue periodic collection; dedupe and auto-publish only through the candidate gate. |
 | 55 | makkah-chamber-events | active-collector | zero-yield | 0 | no | Zero-yield for 80 runs; inspect dropped samples or reclassify cadence if the source is seasonal/archive-only. |
-| 56 | scega-exhibitions-conferences | active-collector | collector-error | 0 | no | Fix collector error: fetch failed [UND_ERR_CONNECT_TIMEOUT] |
+| 56 | scega-exhibitions-conferences | active-collector | zero-yield | 0 | no | no rows detected by extractor |
 | 57 | ministry-commerce-events | evidence-monitor | evidence-monitor | 0 | no | Monitor for official event detail evidence before candidate promotion. |
 | 58 | evento-sa-events | discovery-only | discovery-only | 0 | no | Use only as discovery evidence; never publish directly. |
-| 59 | asharqia-chamber-events | active-collector | collector-error | 0 | no | Fix collector error: fetch failed [UND_ERR_CONNECT_TIMEOUT]; live browser recovery deferred by recent failed probe cooldown |
+| 59 | asharqia-chamber-events | active-collector | collector-error | 0 | no | Fix collector error: HTTP 404; live browser recovery deferred by recent failed probe cooldown |
 | 60 | qassim-chamber-events | active-collector | collector-error | 0 | no | Fix collector error: HTTP 403; live browser recovery deferred by recent failed probe cooldown |
 | 61 | abha-chamber-events | active-collector | zero-yield | 0 | no | Zero-yield for 80 runs; inspect dropped samples or reclassify cadence if the source is seasonal/archive-only. |
 | 62 | baha-amanah-events | extractor-backlog | not-attempted | 0 | no | Probe HTML/API shape, then decide whether an extractor is worth adding. |

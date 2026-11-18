@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-17T11:18:31.652Z",
+  "generated_at": "2026-11-18T10:28:37.447Z",
   "max_duration_hours": 8,
   "totals": {
     "activated": 54,
@@ -603,16 +603,16 @@
       "duration_hours": 169
     },
     {
-      "id": "event-unstable",
-      "title": "Unstable",
-      "source_label": "MDLBEAST Events",
-      "duration_hours": 24
-    },
-    {
       "id": "event-the-kaust-school-presents-mary-poppins-the-musical",
       "title": "The KAUST School Presents Mary Poppins The Musical",
       "source_label": "Saudi Universities and Technical Colleges",
       "duration_hours": 71.98
+    },
+    {
+      "id": "event-unstable",
+      "title": "Unstable",
+      "source_label": "MDLBEAST Events",
+      "duration_hours": 24
     },
     {
       "id": "event-xp-music-futures-2026",
