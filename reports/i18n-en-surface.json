@@ -1,19 +1,24 @@
 {
   "schema": "eventlive.i18n-en-surface.v1",
-  "generated_at": "2026-11-18T10:41:45.213Z",
-  "pages_scanned": 2172,
-  "pages_with_arabic": 440,
+  "generated_at": "2026-11-19T11:15:45.975Z",
+  "pages_scanned": 2176,
+  "pages_with_arabic": 482,
   "template_regressions": [],
   "script_template_regressions": [],
   "style_template_regressions": [],
   "recurring_surface_debt": [
     {
+      "text": "واقف! Momos",
+      "pages": 83,
+      "example": "events/ended-mdlbeast-events-a-thousand-and-one-20250424-f46c64f3.html"
+    },
+    {
       "text": "../assets/event-images/الشهادة-الدولية-للحاسب-والإنترنت-ic3-a46ba6d2eb.jpg",
-      "pages": 54,
-      "example": "events/event-اعتماد-تشكيل-النادي-الطلابي-بالكلية-الجامعية-بالليث-للعام-الجامعي-١٤٤٨هـ.html",
+      "pages": 49,
+      "example": "events/event-البرنامج-التدريبي-للاستعداد-للاختبارات-استعدي-للتميز.html",
       "script": true
     }
   ],
-  "recurring_total": 1,
-  "content_prose_lines": 2241
+  "recurring_total": 2,
+  "content_prose_lines": 2208
 }

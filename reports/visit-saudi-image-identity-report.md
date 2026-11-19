@@ -1,14 +1,14 @@
 # EventLive Visit Saudi Image Identity Report
 
-- generated_at: 2026-11-18T10:23:29.479Z
+- generated_at: 2026-11-19T10:57:20.288Z
 - pdf_crop_assignments: 20
-- verified: 20
-- struck: 0
-- slots_seen_this_cycle: 24
+- verified: 19
+- struck: 1
+- slots_seen_this_cycle: 23
 
 ## Struck (fell back to generated cover)
 
-- none
+- عرض كوميدي مع ماريو يزبك (visit-saudi-summer-2026-p010-top-left.png) - slot-vacated - no dated card currently occupies page 10 top-left of https://www.visitsaudi.com/content/dam/documents/saudi-calendar-ar.pdf
 
 ## Verified
 
@@ -23,7 +23,6 @@
 - نسيم الخبر (visit-saudi-summer-2026-p030-top-left.png)
 - سوالف الحي (visit-saudi-summer-2026-p028-top-right.png)
 - سيرك فونتانا (visit-saudi-summer-2026-p017-top-right.png)
-- عرض كوميدي مع ماريو يزبك (visit-saudi-summer-2026-p010-top-left.png)
 - موسم ملح القصب الرابع (visit-saudi-summer-2026-p041-top-left.png)
 - الضحك في الترجمة - عرض كوميدي مع شون شدياق (visit-saudi-summer-2026-p010-bottom-right.png)
 - IN ACT ANNIVERSARY - ACT XI (visit-saudi-summer-2026-p022-top-right.jpg)

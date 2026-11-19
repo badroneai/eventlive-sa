@@ -1,7 +1,7 @@
 {
   "schema": "eventlive.source-browser-probe-checkpoint.v1",
-  "checkpointed_at": "2026-11-18T10:17:24.741Z",
-  "generated_at": "2026-11-18T10:17:17.828Z",
+  "checkpointed_at": "2026-11-19T10:44:07.321Z",
+  "generated_at": "2026-11-19T10:44:00.802Z",
   "source_registry": "data/source_registry.json",
   "output_dir": "data/raw/browser-probes",
   "sources_planned": 1,
@@ -20,7 +20,7 @@
   "sources": [
     {
       "id": "riyadh-city-events",
-      "probed_at": "2026-11-18T10:17:24.741Z",
+      "probed_at": "2026-11-19T10:44:07.321Z",
       "name": "Riyadh City Events",
       "priority": 51,
       "url": "https://riyadh.sa/en/events/all",
@@ -28,14 +28,14 @@
       "status": "ok",
       "http_status": 200,
       "navigation_error": "",
-      "duration_ms": 6373,
+      "duration_ms": 6054,
       "classification": "rendered-text-review",
       "next_action": "راجع الصفحة يدويًا وحدد هل هي مصدر أدلة أم صفحة تعريفية فقط.",
       "title": "وجهتكم إلى الرياض تتجدّد",
-      "text_bytes": 368,
-      "html_bytes": 63731,
-      "html_snapshot": "data/raw/browser-probes/riyadh-city-events-2026-11-18T10-17-17-828Z.html",
-      "screenshot": "data/raw/browser-probes/riyadh-city-events-2026-11-18T10-17-17-828Z.png",
+      "text_bytes": 402,
+      "html_bytes": 84099,
+      "html_snapshot": "data/raw/browser-probes/riyadh-city-events-2026-11-19T10-44-00-802Z.html",
+      "screenshot": "data/raw/browser-probes/riyadh-city-events-2026-11-19T10-44-00-802Z.png",
       "signals": {
         "has_next_data": false,
         "has_nuxt": false,

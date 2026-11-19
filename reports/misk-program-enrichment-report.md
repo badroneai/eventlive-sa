@@ -1,32 +1,32 @@
 # Misk Program Enrichment Report
 
-- generated_at: 2026-11-18T10:25:14.103Z
+- generated_at: 2026-11-19T10:58:36.358Z
 - targets: 19
-- enriched: 19
-- failed: 0
+- enriched: 0
+- failed: 19
 
 ## Enriched
 
-- Misk Local Traineeship Program - goals=1, features=1, requirements=3, registration_deadline=2026-11-30T18:00:00+03:00
-- 2030 Leaders - goals=1, features=3, requirements=0, registration_deadline=2026-07-15T18:00:00+03:00
-- Entrepreneur Leadership Excellence Program - goals=1, features=3, requirements=0, registration_deadline=2026-07-09T18:00:00+03:00
-- Misk × Tuwaiq Immersive Program - goals=1, features=1, requirements=0, registration_deadline=2026-07-28T18:00:00+03:00
-- Misk X UNYO Youth Engagement Fellowship - goals=1, features=4, requirements=0, registration_deadline=2026-07-23T18:00:00+03:00
-- Associate Fraud investigator - goals=1, features=2, requirements=0, registration_deadline=2026-07-28T18:00:00+03:00
-- Misk x Moyasar Traineeship Program - goals=1, features=4, requirements=0, registration_deadline=2026-07-28T18:00:00+03:00
-- The Innovation Diwan - goals=1, features=4, requirements=1, registration_deadline=2026-09-16T18:00:00+03:00
-- Misk Launchpad - goals=1, features=4, requirements=6, registration_deadline=2026-08-08T18:00:00+03:00
-- Samsung Innovation Campus AI Program - goals=1, features=1, requirements=0, registration_deadline=2026-09-23T18:00:00+03:00
-- Nonprofit Sector Skills Program - goals=1, features=2, requirements=2, registration_deadline=2026-10-01T18:00:00+03:00
-- Discover Your Path Program - goals=1, features=3, requirements=0, registration_deadline=2026-10-29T18:00:00+03:00
-- Discover Your Path (in collaboration with Nahj Association) - goals=1, features=3, requirements=0, registration_deadline=2026-10-29T18:00:00+03:00
-- Global Exposure Program - goals=1, features=4, requirements=0, registration_deadline=2026-09-30T18:00:00+03:00
-- Misk x HUMAIN Traineeship Program (Future AI Builders) - goals=1, features=1, requirements=0, registration_deadline=2026-09-17T18:00:00+03:00
-- Virtual Work Experience - Data analysis at stc - goals=1, features=4, requirements=0, registration_deadline=2026-12-15T18:00:00+03:00
-- Virtual Work Experiences - goals=1, features=4, requirements=0, registration_deadline=2026-12-15T18:00:00+03:00
-- IPO Readiness Program - goals=1, features=4, requirements=0, registration_deadline=2026-11-30T18:00:00+03:00
-- Challenge for Change - goals=1, features=4, requirements=3, registration_deadline=2027-04-04T18:00:00+03:00
+- none
 
 ## Failed
 
-- none
+- Misk Local Traineeship Program - HTTP 403
+- 2030 Leaders - HTTP 403
+- Entrepreneur Leadership Excellence Program - HTTP 403
+- Misk × Tuwaiq Immersive Program - HTTP 403
+- Misk X UNYO Youth Engagement Fellowship - HTTP 403
+- Associate Fraud investigator - HTTP 403
+- Misk x Moyasar Traineeship Program - HTTP 403
+- The Innovation Diwan - HTTP 403
+- Misk Launchpad - HTTP 403
+- Samsung Innovation Campus AI Program - HTTP 403
+- Nonprofit Sector Skills Program - HTTP 403
+- Discover Your Path Program - HTTP 403
+- Discover Your Path (in collaboration with Nahj Association) - HTTP 403
+- Global Exposure Program - HTTP 403
+- Misk x HUMAIN Traineeship Program (Future AI Builders) - HTTP 403
+- Virtual Work Experience - Data analysis at stc - HTTP 403
+- Virtual Work Experiences - HTTP 403
+- IPO Readiness Program - HTTP 403
+- Challenge for Change - HTTP 403

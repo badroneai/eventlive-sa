@@ -1,32 +1,32 @@
 # EventLive Harvest OS Status
 
-- Generated at: 2026-11-18T10:45:21.344Z
+- Generated at: 2026-11-19T11:19:35.373Z
 - Status: NEEDS_WORK
 - Operating rule: Probe before new sources; sample before full harvest; Raw collection is not publication; discovery-only never auto-publishes.
 
 ## Totals
 
 - Sources: 88
-- Candidates: 319
-- Matched candidates: 306
+- Candidates: 312
+- Matched candidates: 301
 - Auto-publish sources: 15
 - Candidate-only sources: 12
 - Partnership-required sources: 5
-- Productive sources / attempted: 15/18
-- Collector errors: 8 (chronic 7, transient 1)
+- Productive sources / attempted: 14/40
+- Collector errors: 9 (chronic 8, transient 1)
 
 ## Publication Funnel
 
 | Stage | Count |
 | --- | --- |
-| discovered_this_run | 135 |
-| candidate_queue | 319 |
-| evaluated_for_publish | 319 |
-| linked_existing | 296 |
-| published_new | 4 |
-| blocked | 19 |
+| discovered_this_run | 138 |
+| candidate_queue | 312 |
+| evaluated_for_publish | 312 |
+| linked_existing | 290 |
+| published_new | 5 |
+| blocked | 17 |
 | secondary_promoted | 0 |
-| secondary_still_blocked | 16 |
+| secondary_still_blocked | 22 |
 
 ## Blocked Reasons
 
@@ -34,25 +34,26 @@
 | --- | --- |
 | publication gate source-evidence is not auto-publishable | 6 |
 | linked catalog row event-rolling-podcast was superseded by dedupe | 3 |
-| not an attendable event: enrolment-announcement | 3 |
 | linked catalog row event-book-nook-zone was superseded by dedupe | 2 |
 | unknown category requires review | 2 |
 | possible duplicate requires review: exact-title-city-venue-conflict | 1 |
 | possible duplicate requires review: exact-title-city-source-conflict | 1 |
 | linked catalog row event-music-festival-mdlbeast-soundstorm was superseded by dedupe | 1 |
+| not an attendable event: enrolment-announcement | 1 |
 
 ## Collector Errors
 
 | Source | Kind | Failed runs in a row | Attempted this run | Reason |
 | --- | --- | --- | --- | --- |
-| mos-events | chronic | 77 | no | collector-error: fetch failed [ETIMEDOUT, ENETUNREACH]; live browser recovery deferred by recent failed probe cooldown |
-| saudi-pro-league-fixtures | chronic | 57 | no | collector-error: fetch failed [EAI_AGAIN] |
-| tuwaiq-academy-bootcamps | chronic | 54 | no | collector-error: HTTP 403 |
-| qassim-chamber-events | chronic | 23 | no | collector-error: HTTP 403; live browser recovery deferred by recent failed probe cooldown |
-| moc-cultural-calendar | chronic | 9 | no | collector-error: fetch failed [ETIMEDOUT, ENETUNREACH]; fetch failed [ETIMEDOUT, ENETUNREACH] |
-| moc-cultural-subportals | chronic | 9 | no | collector-error: fetch failed [ETIMEDOUT, ENETUNREACH]; fetch failed [ETIMEDOUT, ENETUNREACH] |
-| monshaat-events | chronic | 8 | no | collector-error: fetch failed [UND_ERR_CONNECT_TIMEOUT]; fetch failed [UND_ERR_CONNECT_TIMEOUT] |
-| asharqia-chamber-events | transient | 2 | yes | HTTP 404; live browser recovery deferred by recent failed probe cooldown |
+| mos-events | chronic | 78 | yes | collector-error: fetch failed [ETIMEDOUT, ENETUNREACH] |
+| saudi-pro-league-fixtures | chronic | 58 | yes | collector-error: fetch failed [EAI_AGAIN] |
+| tuwaiq-academy-bootcamps | chronic | 55 | yes | collector-error: HTTP 403 |
+| qassim-chamber-events | chronic | 24 | yes | collector-error: HTTP 403 |
+| moc-cultural-calendar | chronic | 10 | yes | collector-error: fetch failed [ETIMEDOUT, ENETUNREACH]; fetch failed [ETIMEDOUT, ENETUNREACH] |
+| moc-cultural-subportals | chronic | 10 | yes | collector-error: fetch failed [ETIMEDOUT, ENETUNREACH]; fetch failed [ETIMEDOUT, ENETUNREACH] |
+| monshaat-events | chronic | 9 | yes | collector-error: fetch failed [UND_ERR_CONNECT_TIMEOUT]; fetch failed [UND_ERR_CONNECT_TIMEOUT] |
+| asharqia-chamber-events | chronic | 3 | yes | collector-error: HTTP 404; live browser recovery deferred by recent failed probe cooldown |
+| future-skills-catalog | transient | 1 | yes | The operation was aborted due to timeout; page.goto: Timeout 30000ms exceeded. |
 
 | Source | Policy | Trust | Gate |
 | --- | --- | --- | --- |
