@@ -1,22 +1,22 @@
 {
   "schema": "eventlive.harvest-os-status.v1",
-  "generated_at": "2026-11-19T11:19:35.373Z",
+  "generated_at": "2026-11-20T10:39:11.821Z",
   "status": "NEEDS_WORK",
   "operating_rule": "Probe before new sources; sample before full harvest; Raw collection is not publication; discovery-only never auto-publishes.",
   "totals": {
     "sources": 88,
-    "candidates": 312,
-    "matched_candidates": 301,
+    "candidates": 304,
+    "matched_candidates": 294,
     "auto_publish_sources": 15,
     "candidate_only_sources": 12,
     "partnership_required_sources": 5,
     "blocked_or_closed_sources": 0,
     "manual_review_sources": 56,
-    "collection_attempted": 40,
-    "productive_sources": 14,
-    "collector_errors": 9,
+    "collection_attempted": 25,
+    "productive_sources": 11,
+    "collector_errors": 10,
     "chronic_collector_errors": 8,
-    "transient_collector_errors": 1
+    "transient_collector_errors": 2
   },
   "policies": {
     "partnership_required": 5,
@@ -25,23 +25,22 @@
     "manual_review": 56
   },
   "candidates_by_gate": {
-    "catalog-review": 301,
-    "duplicate-review": 2,
+    "catalog-review": 294,
+    "duplicate-review": 1,
     "source-evidence": 8,
     "human-review": 1
   },
   "funnel": {
-    "discovered_this_run": 138,
-    "candidate_queue": 312,
-    "evaluated_for_publish": 312,
-    "linked_existing": 290,
-    "published_new": 5,
-    "blocked": 17,
+    "discovered_this_run": 134,
+    "candidate_queue": 304,
+    "evaluated_for_publish": 304,
+    "linked_existing": 282,
+    "published_new": 6,
+    "blocked": 16,
     "secondary_promoted": 0,
-    "secondary_still_blocked": 22
+    "secondary_still_blocked": 14
   },
   "blocked_reasons": {
-    "possible duplicate requires review: exact-title-city-venue-conflict": 1,
     "linked catalog row event-rolling-podcast was superseded by dedupe": 3,
     "possible duplicate requires review: exact-title-city-source-conflict": 1,
     "linked catalog row event-book-nook-zone was superseded by dedupe": 2,
@@ -56,60 +55,67 @@
       "note": "collector-error: fetch failed [ETIMEDOUT, ENETUNREACH]",
       "error_streak": 78,
       "kind": "chronic",
-      "attempted_this_run": true
+      "attempted_this_run": false
     },
     {
       "id": "saudi-pro-league-fixtures",
       "note": "collector-error: fetch failed [EAI_AGAIN]",
       "error_streak": 58,
       "kind": "chronic",
-      "attempted_this_run": true
+      "attempted_this_run": false
     },
     {
       "id": "tuwaiq-academy-bootcamps",
       "note": "collector-error: HTTP 403",
       "error_streak": 55,
       "kind": "chronic",
-      "attempted_this_run": true
+      "attempted_this_run": false
     },
     {
       "id": "qassim-chamber-events",
       "note": "collector-error: HTTP 403",
       "error_streak": 24,
       "kind": "chronic",
-      "attempted_this_run": true
+      "attempted_this_run": false
     },
     {
       "id": "moc-cultural-calendar",
       "note": "collector-error: fetch failed [ETIMEDOUT, ENETUNREACH]; fetch failed [ETIMEDOUT, ENETUNREACH]",
       "error_streak": 10,
       "kind": "chronic",
-      "attempted_this_run": true
+      "attempted_this_run": false
     },
     {
       "id": "moc-cultural-subportals",
       "note": "collector-error: fetch failed [ETIMEDOUT, ENETUNREACH]; fetch failed [ETIMEDOUT, ENETUNREACH]",
       "error_streak": 10,
       "kind": "chronic",
-      "attempted_this_run": true
+      "attempted_this_run": false
     },
     {
       "id": "monshaat-events",
       "note": "collector-error: fetch failed [UND_ERR_CONNECT_TIMEOUT]; fetch failed [UND_ERR_CONNECT_TIMEOUT]",
       "error_streak": 9,
       "kind": "chronic",
-      "attempted_this_run": true
+      "attempted_this_run": false
     },
     {
       "id": "asharqia-chamber-events",
       "note": "collector-error: HTTP 404; live browser recovery deferred by recent failed probe cooldown",
       "error_streak": 3,
       "kind": "chronic",
+      "attempted_this_run": false
+    },
+    {
+      "id": "misk-hub-programs",
+      "note": "HTTP 403; live browser recovery deferred by recent failed probe cooldown",
+      "error_streak": 1,
+      "kind": "transient",
       "attempted_this_run": true
     },
     {
-      "id": "future-skills-catalog",
-      "note": "The operation was aborted due to timeout; page.goto: Timeout 30000ms exceeded.",
+      "id": "saudi-space-agency-events",
+      "note": "fetch failed [UNABLE_TO_VERIFY_LEAF_SIGNATURE]",
       "error_streak": 1,
       "kind": "transient",
       "attempted_this_run": true

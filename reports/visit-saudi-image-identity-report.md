@@ -1,14 +1,14 @@
 # EventLive Visit Saudi Image Identity Report
 
-- generated_at: 2026-11-19T10:57:20.288Z
-- pdf_crop_assignments: 20
+- generated_at: 2026-11-20T10:15:51.584Z
+- pdf_crop_assignments: 19
 - verified: 19
-- struck: 1
+- struck: 0
 - slots_seen_this_cycle: 23
 
 ## Struck (fell back to generated cover)
 
-- عرض كوميدي مع ماريو يزبك (visit-saudi-summer-2026-p010-top-left.png) - slot-vacated - no dated card currently occupies page 10 top-left of https://www.visitsaudi.com/content/dam/documents/saudi-calendar-ar.pdf
+- none
 
 ## Verified
 

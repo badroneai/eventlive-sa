@@ -1,16 +1,16 @@
 # Saudi Water Authority Enrichment Report
 
-- generated_at: 2026-11-19T10:59:51.997Z
+- generated_at: 2026-11-20T10:19:55.398Z
 - targets: 7
 - candidates: 5
 - enriched: 7
-- fetched: 7
+- fetched: 6
 - images: 7
-- fetch_failures: 0
+- fetch_failures: 1
 
 ## Enriched
 
-- Global Infrastructure Expo | Saudi Water Authority - official-page-html - image=yes - features=7
+- Global Infrastructure Expo | Saudi Water Authority - approved-calendar-row - image=yes - features=7
 - World Conference on Desalination and W… | Saudi Water Authority - official-page-html - image=yes - features=7
 - Saudi Water Partnerships Company Forum… | Saudi Water Authority - official-page-html - image=yes - features=7
 - Global Prize for Innovation in Water | Saudi Water Authority - official-page-html - image=yes - features=7
@@ -20,4 +20,4 @@
 
 ## Fetch Failures
 
-- none
+- Global Infrastructure Expo | Saudi Water Authority - The operation was aborted due to timeout

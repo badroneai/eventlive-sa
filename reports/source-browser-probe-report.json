@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-19T10:44:00.802Z",
+  "generated_at": "2026-11-20T10:08:06.106Z",
   "source_registry": "data/source_registry.json",
   "collection_report": "reports/source-collection-report.json",
   "output_dir": "data/raw/browser-probes",
@@ -7,25 +7,189 @@
     "selected_ids": [],
     "scope": "priority",
     "limit": 8,
-    "probed_this_run": 1,
-    "fresh_results_available": 3,
+    "probed_this_run": 4,
+    "fresh_results_available": 6,
     "wait_ms": 4500,
     "timeout_ms": 30000,
     "failure_cooldown_hours": 72
   },
   "methodology": "Browser-level probe inspired by cafe platform work: classify fetchability, hydration payloads, network APIs, structured HTML, rendered DOM, and policy-protected lanes before writing extractors.",
   "totals": {
-    "probed": 3,
-    "browser_network_api": 0,
+    "probed": 6,
+    "browser_network_api": 1,
     "browser_hydration_payload": 0,
-    "rendered_html_candidates": 0,
-    "blocked_or_protected": 0,
+    "rendered_html_candidates": 1,
+    "blocked_or_protected": 1,
     "policy_skipped": 0
   },
   "sources": [
     {
+      "id": "future-skills-catalog",
+      "probed_at": "2026-11-20T10:08:20.218Z",
+      "name": "Future Skills MCIT Catalogue",
+      "priority": 17,
+      "url": "https://futureskills.mcit.gov.sa/ar/catalogue/all?label=&field_main_tracks_target_id_verf=565&field_sub_tracks_target_id=All&field_training_course_level_target_id=All&field_related_skills_target_id=All&field_course_type_value=All&field_training_delivery_value=All&field_training_city_target_id=All&field_job_market_target_id=All",
+      "final_url": "https://futureskills.mcit.gov.sa/ar/catalogue/all?label=&field_main_tracks_target_id_verf=565&field_sub_tracks_target_id=All&field_training_course_level_target_id=All&field_related_skills_target_id=All&field_course_type_value=All&field_training_delivery_value=All&field_training_city_target_id=All&field_job_market_target_id=All",
+      "status": "ok",
+      "http_status": 200,
+      "navigation_error": "",
+      "duration_ms": 13480,
+      "classification": "rendered-html-candidates",
+      "next_action": "اكتب extractor مرن من DOM بعد الرندر أو حسن selector الحالي.",
+      "title": "التدريب | بوابة مهارات المستقبل",
+      "text_bytes": 10774,
+      "html_bytes": 87429,
+      "html_snapshot": "data/raw/browser-probes/future-skills-catalog-2026-11-20T10-08-06-106Z.html",
+      "screenshot": "data/raw/browser-probes/future-skills-catalog-2026-11-20T10-08-06-106Z.png",
+      "signals": {
+        "has_next_data": false,
+        "has_nuxt": false,
+        "has_json_ld": false,
+        "has_event_schema": false,
+        "date_snippets": [],
+        "event_like_links": [
+          {
+            "text": "تجاوز إلى المحتوى الرئيسي",
+            "href": "https://futureskills.mcit.gov.sa/ar/catalogue/all?label=&field_main_tracks_target_id_verf=565&field_sub_tracks_target_id=All&field_training_course_level_target_id=All&field_related_skills_target_id=All&field_course_type_value=All&field_training_delivery_value=All&field_training_city_target_id=All&field_job_market_target_id=All#main-content"
+          },
+          {
+            "text": "English",
+            "href": "https://futureskills.mcit.gov.sa/en/catalogue/all?label=&field_main_tracks_target_id_verf=565&field_sub_tracks_target_id=All&field_training_course_level_target_id=All&field_related_skills_target_id=All&field_course_type_value=All&field_training_delivery_value=All&field_training_city_target_id=All&field_job_market_target_id=All"
+          },
+          {
+            "text": "",
+            "href": "https://futureskills.mcit.gov.sa/ar/catalogue/all?label=&field_main_tracks_target_id_verf=565&field_sub_tracks_target_id=All&field_training_course_level_target_id=All&field_related_skills_target_id=All&field_course_type_value=All&field_training_delivery_value=All&field_training_city_target_id=All&field_job_market_target_id=All#"
+          },
+          {
+            "text": "عن الوزارة",
+            "href": "https://futureskills.mcit.gov.sa/ar/catalogue/all?label=&field_main_tracks_target_id_verf=565&field_sub_tracks_target_id=All&field_training_course_level_target_id=All&field_related_skills_target_id=All&field_course_type_value=All&field_training_delivery_value=All&field_training_city_target_id=All&field_job_market_target_id=All#"
+          },
+          {
+            "text": "مجتمع رقمي",
+            "href": "https://futureskills.mcit.gov.sa/ar/catalogue/all?label=&field_main_tracks_target_id_verf=565&field_sub_tracks_target_id=All&field_training_course_level_target_id=All&field_related_skills_target_id=All&field_course_type_value=All&field_training_delivery_value=All&field_training_city_target_id=All&field_job_market_target_id=All#"
+          },
+          {
+            "text": "مهارات المستقبل",
+            "href": "https://futureskills.mcit.gov.sa/ar/catalogue/all?label=&field_main_tracks_target_id_verf=565&field_sub_tracks_target_id=All&field_training_course_level_target_id=All&field_related_skills_target_id=All&field_course_type_value=All&field_training_delivery_value=All&field_training_city_target_id=All&field_job_market_target_id=All#"
+          },
+          {
+            "text": "الأعمال والاستثمار",
+            "href": "https://futureskills.mcit.gov.sa/ar/catalogue/all?label=&field_main_tracks_target_id_verf=565&field_sub_tracks_target_id=All&field_training_course_level_target_id=All&field_related_skills_target_id=All&field_course_type_value=All&field_training_delivery_value=All&field_training_city_target_id=All&field_job_market_target_id=All#"
+          },
+          {
+            "text": "المركز الإعلامي",
+            "href": "https://futureskills.mcit.gov.sa/ar/catalogue/all?label=&field_main_tracks_target_id_verf=565&field_sub_tracks_target_id=All&field_training_course_level_target_id=All&field_related_skills_target_id=All&field_course_type_value=All&field_training_delivery_value=All&field_training_city_target_id=All&field_job_market_target_id=All#"
+          },
+          {
+            "text": "الفعاليات",
+            "href": "https://www.mcit.gov.sa/ar/events"
+          },
+          {
+            "text": "",
+            "href": "https://futureskills.mcit.gov.sa/ar/catalogue/all?label=&field_main_tracks_target_id_verf=565&field_sub_tracks_target_id=All&field_training_course_level_target_id=All&field_related_skills_target_id=All&field_course_type_value=All&field_training_delivery_value=All&field_training_city_target_id=All&field_job_market_target_id=All#"
+          },
+          {
+            "text": "",
+            "href": "https://futureskills.mcit.gov.sa/ar/catalogue/all?label=&field_main_tracks_target_id_verf=565&field_sub_tracks_target_id=All&field_training_course_level_target_id=All&field_related_skills_target_id=All&field_course_type_value=All&field_training_delivery_value=All&field_training_city_target_id=All&field_job_market_target_id=All#"
+          },
+          {
+            "text": "البرنامج المتخصص في العمل الحر",
+            "href": "http://futureskills.mcit.gov.sa/ar/node/20481"
+          },
+          {
+            "text": "معسكرات مهارات المستقبل",
+            "href": "http://futureskills.mcit.gov.sa/ar/node/17349"
+          },
+          {
+            "text": "مستوى متوسط\nIntroduction to APIs and Web Services\n دورة معرفية\n تفاعلية مباشرة\n تبدأ 27-09-2026 إلى 01-10-2026 لمدة 20 س",
+            "href": "https://futureskills.mcit.gov.sa/ar/group/13067"
+          },
+          {
+            "text": "مستوى متوسط\n⁠Data Preparation & Cleaning Essentials\n دورة معرفية\n تفاعلية مباشرة\n تبدأ 13-09-2026 إلى 15-09-2026 لمدة 12",
+            "href": "https://futureskills.mcit.gov.sa/ar/group/13064"
+          },
+          {
+            "text": "مستوى متوسط\n⁠Cloud Security and Compliance Fundamentals\n دورة معرفية\n تفاعلية مباشرة\n تبدأ 13-09-2026 إلى 15-09-2026 لمد",
+            "href": "https://futureskills.mcit.gov.sa/ar/group/13065"
+          },
+          {
+            "text": "مستوى متوسط\n⁠Data Science Foundations\n دورة معرفية\n تفاعلية مباشرة\n تبدأ 13-09-2026 إلى 16-09-2026 لمدة 16 ساعات",
+            "href": "https://futureskills.mcit.gov.sa/ar/group/13066"
+          },
+          {
+            "text": "مستوى متوسط\n⁠CCNP\n دورة معرفية\n تفاعلية مباشرة\n تبدأ 06-09-2026 إلى 10-09-2026 لمدة 20 ساعات",
+            "href": "https://futureskills.mcit.gov.sa/ar/group/13061"
+          },
+          {
+            "text": "مستوى متوسط\n⁠Data Analysis with Python\n دورة معرفية\n تفاعلية مباشرة\n تبدأ 06-09-2026 إلى 09-09-2026 لمدة 16 ساعات",
+            "href": "https://futureskills.mcit.gov.sa/ar/group/13062"
+          },
+          {
+            "text": "مستوى متوسط\n⁠Red Hat Certified System Administrator (RHCSA)\n دورة معرفية\n تفاعلية مباشرة\n تبدأ 06-09-2026 إلى 10-09-2026",
+            "href": "https://futureskills.mcit.gov.sa/ar/group/13063"
+          }
+        ]
+      },
+      "script_signals": {
+        "next_data_scripts": 0,
+        "nuxt_scripts": 0,
+        "json_ld_scripts": 0,
+        "large_inline_scripts": 0
+      },
+      "network_total": 1,
+      "network_endpoints": [],
+      "network_sample": [
+        {
+          "method": "GET",
+          "status": 200,
+          "url": "https://futureskills.mcit.gov.sa/ar/api2/cities?field_aldwlt_target_id=672",
+          "content_type": "application/json",
+          "resource_type": "xhr",
+          "request_post_data": "",
+          "response_shape": "json-like-invalid",
+          "preview": "[{\"tid_1\":\"68\",\"name\":\"\\u0627\\u0644\\u0631\\u064a\\u0627\\u0636\"},{\"tid_1\":\"69\",\"name\":\"\\u0627\\u0644\\u062f\\u0645\\u0627\\u0645\"},{\"tid_1\":\"70\",\"name\":\"\\u062c\\u062f\\u0629\"},{\"tid_1\":\"71\",\"name\":\"\\u0623\\u0628\\u0647\\u0627\"},{\"tid_1\":\"171\",\"name\":\"\\u0627\\u0644\\u062c\\u0628\\u064a\\u0644\"},{\"tid_1\":\"172\",\"name\":\"\\u0627\\u0644\\u0628\\u0627\\u062d\\u0629\"},{\"tid_1\":\"176\",\"name\":\"\\u0627\\u0644\\u0637\\u0627\\u0626\\u0641\"},{\"tid_1\":\"177\",\"name\":\"\\u0627\\u0644\\u0638\\u0647\\u0631\\u0627\\u0646\"},{\"tid_1\":\"182\",\"name\":\"\\u0627\\u0644\\u0645\\u0628\\u0631\\u0632\"},{\"tid_1\":\"183\",\"name\":\"\\u0627\\u0644\\u0645\\u062f\\u064a\\u0646\\u0629 \\u0627\\u0644\\u0645\\u0646\\u0648\\u0631\\u0629\"},{\"tid_1\":\"187\",\"name\":\"\\u062a\\u0628\\u0648\\u0643\"},{\"tid_1\":\"191\",\"name\":\"\\u0631\\u0641\\u062d\\u0627\\u0621\"},{\"tid_1\":\"192\",\"name\":\"\\u0633\\u0643\\u0627\\u0643\\u0627\"},{\"tid_1\":\"194\",\"name\":\"\\u0642\\u0644\\u0639\\u0629 \\u0628\\u064a\\u0634\\u0629\"},{\"tid_1\":\"196\",\"name\":\"\\u0646\\u062c\\u0631\\u0627\\u0646\"},{\"tid_1\":\"197\",\"name\":\"\\u062d\\u0627\\u0626\\u0644\"},{\"tid_1\":\"198\",\"name\":\"\\u064a\\u0646\\u0628\\u0639\"},{\"tid_1\":\"5042\",\"name\":\"\\u0627\\u0644\\u0623\\u062d\\u0633\\u0627\\u0621\"},{\"tid_1\":\"7319\",\"name\":\"\\u0639\\u0633\\u064a\\u0631\"},{\"tid_1\":\"10545\",\"name\":\"\\u0645\\u0643\\u0629 \\u0627\\u0644\\u0645\\u0643\\u0631\\u0645\\u0629\"},{\"tid_1\":\"10635\",\"name\":\"\\u0627\\u0644\\u062d\\u0644\\u0629\"},{\"tid_1\":\"10638\",\"name\":\"\\u0627\\u0644\\u062e\\u0631\\u062c\"},{\"tid_1\":\"10641\",\"name\":\"\\u0627\\u0644\\u0633\\u0644\\u064a\\u0644\"},{\"tid_1\":\"10647\",\"name\":\"\\u0627\\u0644\\u0642\\u0631\\u064a\\u0627\\u062a\"},{\"tid_1\":\"10650\",\"name\":\"\\u0627\\u0644\\u0642\\u0637\\u064a\\u0641\"},{\"tid_1\":\"10653\",\"name\":\"\\u0627\\u0644\\u0642\\u0646\\u0641\\u0630\\u0629\"},{\"tid_1\":\"10656\",\"name\":\"\\u0627\\u0644\\u0642\\u0648\\u064a\\u0639\\u064a\\u0629\"},{\"tid_1\":\"10659\",\"name\":\"\\u0627\\u0644\\u0647\\u0641\\u0648\\u0641\"},{\"tid_1\":\"10662\",\"name\":\"\\u062"
+        }
+      ]
+    },
+    {
+      "id": "misk-hub-programs",
+      "probed_at": "2026-11-20T10:08:25.727Z",
+      "name": "Misk Hub Programs",
+      "priority": 21,
+      "url": "https://hub.misk.org.sa/programs/",
+      "final_url": "https://hub.misk.org.sa/programs/",
+      "status": "ok",
+      "http_status": 403,
+      "navigation_error": "",
+      "duration_ms": 5464,
+      "classification": "blocked-or-protected",
+      "next_action": "لا تلتف على الحماية؛ صنف المصدر partnership/API أو ابحث عن مسار رسمي.",
+      "title": "Unavailable",
+      "text_bytes": 481,
+      "html_bytes": 1087916,
+      "html_snapshot": "data/raw/browser-probes/misk-hub-programs-2026-11-20T10-08-06-106Z.html",
+      "screenshot": "data/raw/browser-probes/misk-hub-programs-2026-11-20T10-08-06-106Z.png",
+      "signals": {
+        "has_next_data": false,
+        "has_nuxt": false,
+        "has_json_ld": false,
+        "has_event_schema": false,
+        "date_snippets": [],
+        "event_like_links": []
+      },
+      "script_signals": {
+        "next_data_scripts": 0,
+        "nuxt_scripts": 0,
+        "json_ld_scripts": 0,
+        "large_inline_scripts": 2
+      },
+      "network_total": 0,
+      "network_endpoints": [],
+      "network_sample": []
+    },
+    {
       "id": "riyadh-city-events",
-      "probed_at": "2026-11-19T10:44:07.321Z",
+      "probed_at": "2026-11-20T10:08:32.060Z",
       "name": "Riyadh City Events",
       "priority": 51,
       "url": "https://riyadh.sa/en/events/all",
@@ -33,14 +197,14 @@
       "status": "ok",
       "http_status": 200,
       "navigation_error": "",
-      "duration_ms": 6054,
+      "duration_ms": 6294,
       "classification": "rendered-text-review",
       "next_action": "راجع الصفحة يدويًا وحدد هل هي مصدر أدلة أم صفحة تعريفية فقط.",
       "title": "وجهتكم إلى الرياض تتجدّد",
       "text_bytes": 402,
       "html_bytes": 84099,
-      "html_snapshot": "data/raw/browser-probes/riyadh-city-events-2026-11-19T10-44-00-802Z.html",
-      "screenshot": "data/raw/browser-probes/riyadh-city-events-2026-11-19T10-44-00-802Z.png",
+      "html_snapshot": "data/raw/browser-probes/riyadh-city-events-2026-11-20T10-08-06-106Z.html",
+      "screenshot": "data/raw/browser-probes/riyadh-city-events-2026-11-20T10-08-06-106Z.png",
       "signals": {
         "has_next_data": false,
         "has_nuxt": false,
@@ -130,6 +294,73 @@
       "network_total": 0,
       "network_endpoints": [],
       "network_sample": []
+    },
+    {
+      "id": "jazan-chamber-events",
+      "probed_at": "2026-11-20T10:08:37.732Z",
+      "name": "Jazan Chamber Events",
+      "priority": 67,
+      "url": "https://jazancci.org.sa/api/events/calendar/7/2026",
+      "final_url": "https://jazancci.org.sa/api/events/calendar/7/2026",
+      "status": "ok",
+      "http_status": 200,
+      "navigation_error": "",
+      "duration_ms": 5631,
+      "classification": "browser-network-api",
+      "next_action": "ثبت endpoint مرشحًا كجامع مباشر، ثم اكتب extractor من JSON مع اختبار انحدار.",
+      "title": "",
+      "text_bytes": 6875,
+      "html_bytes": 8910,
+      "html_snapshot": "data/raw/browser-probes/jazan-chamber-events-2026-11-20T10-08-06-106Z.html",
+      "screenshot": "data/raw/browser-probes/jazan-chamber-events-2026-11-20T10-08-06-106Z.png",
+      "signals": {
+        "has_next_data": false,
+        "has_nuxt": false,
+        "has_json_ld": false,
+        "has_event_schema": false,
+        "date_snippets": [
+          "nshat-alsghyrh-walmtwsth-\",\"createdAt\":\"2026-07-09T09:13:48.740Z\",\"updatedAt\":\"2026-07-09T09:13:48.740Z\",\"title\":{\"ar\":\"متطلبات نظ",
+          "مال.</p><h2>موعد الورشة:</h2><p><strong>21 يونيو 2025م</strong><br/><strong>10:30 صباحاً</strong><br/><strong>عن بُعد</strong></p><h2",
+          "amber</p></li></ul><p></p>\"},\"startAt\":\"2026-07-21T07:30:00.000Z\",\"endAt\":\"2026-07-21T08:45:00.000Z\",\"location\":null,\"url\":\"https:",
+          "\"altaryf-bkhdmat-mnsh-qwa\",\"createdAt\":\"2026-07-14T09:28:22.851Z\",\"updatedAt\":\"2026-07-14T09:28:22.851Z\",\"title\":{\"ar\":\"التعريف بخ",
+          "مال.</p><h2>موعد الورشة:</h2><p><strong>28 يونيو 2025م</strong><br/><strong>11 صباحاً</strong><br/><strong>عن بُعد</strong></p><p></p",
+          "mber)</p></li></ul><p></p>\"},\"startAt\":\"2026-07-28T08:00:00.000Z\",\"endAt\":\"2026-07-28T10:00:00.000Z\",\"location\":null,\"url\":\"https:",
+          "-alrswm-alhkwmyh-almdfwah\",\"createdAt\":\"2026-07-14T10:07:08.940Z\",\"updatedAt\":\"2026-07-22T09:00:50.930Z\",\"title\":{\"ar\":\"التعريف بم",
+          "ائدات الأعمال.</p><p>موعد الورشة:</p><p>22 يونيو 2025م</p><p>1:00 مساءً</p><p>عن بُعد</p><p></p><p>الجهات المشاركة</p><p>منشآت (Monsh"
+        ],
+        "event_like_links": []
+      },
+      "script_signals": {
+        "next_data_scripts": 0,
+        "nuxt_scripts": 0,
+        "json_ld_scripts": 0,
+        "large_inline_scripts": 0
+      },
+      "network_total": 1,
+      "network_endpoints": [
+        {
+          "method": "GET",
+          "status": 200,
+          "url": "https://jazancci.org.sa/api/events/calendar/7/2026",
+          "content_type": "application/json",
+          "resource_type": "document",
+          "request_post_data": "",
+          "response_shape": "json-like-invalid",
+          "preview": "[{\"id\":17,\"slug\":\"mttlbat-nzam-idarh-almrafq-iso-41001-llmnshat-alsghyrh-walmtwsth-\",\"createdAt\":\"2026-07-09T09:13:48.740Z\",\"updatedAt\":\"2026-07-09T09:13:48.740Z\",\"title\":{\"ar\":\"متطلبات نظام إدارة المرافق ISO 41001 للمنشآت الصغيرة والمتوسطة \",\"en\":\"Requirements for ISO 41001 Facilities Management System for Small and Medium Enterprises\"},\"cover\":{\"name\":\"cover\",\"url\":\"https://jazancci.org.sa/uploads/external-events/f69bc684499f3de3fe11ca2370421475.jpg\",\"type\":\"image/jpeg\",\"path\":\"external-events/f69bc684499f3de3fe11ca2370421475.jpg\",\"size\":856799},\"media\":[],\"description\":{\"ar\":\"<h1>متطلبات نظام إدارة المرافق <strong>ISO 41001</strong> للمنشآت الصغيرة والمتوسطة</h1><h2>محاور الورشة:</h2><ul><li><p>- مقدمة عن إدارة المرافق.</p></li><li><p>- التعريف بمعيار <strong>ISO 41001</strong>.</p></li><li><p>- نطاق وأهداف المعيار.</p></li><li><p>- متطلبات المعيار الأساسية.</p></li><li><p>- خطة التطبيق العملي.</p></li><li><p>- الفوائد والتحديات والاستراتيجيات لتطبيق المعيار للمنشآت الصغيرة والمتوسطة.</p></li></ul><h2>الفئة المستهدفة:</h2><p>رواد ورائدات الأعمال.</p><h2>موعد الورشة:</h2><p><strong>21 يونيو 2025م</strong><br/><strong>10:30 صباحاً</strong><br/><strong>عن بُعد</strong></p><h2></h2><hr/><h3>الجهات المنظمة</h3><ul><li><p>المواصفات السعودية</p></li><li><p>غرفة جازان</p></li><li><p></p></li></ul><p></p>\",\"en\":\"<h1>Requirements for Facilities Management System <strong>ISO 41001</strong> for Small and Medium Enterprises</h1><h2>Workshop Topics:</h2><ul><li><p>- Introduction to Facilities Management.</p></li><li><p>- Introduction to <strong>ISO 41001</strong> Standard.</p></li><li><p>- Scope and Objectives of the Standard.</p></li><li><p>- Key Requirements of the Standard.</p></li><li><p>- Practical Implementation Plan.</p></li><li><p>- Benefits, Challenges, and Strategies for"
+        }
+      ],
+      "network_sample": [
+        {
+          "method": "GET",
+          "status": 200,
+          "url": "https://jazancci.org.sa/api/events/calendar/7/2026",
+          "content_type": "application/json",
+          "resource_type": "document",
+          "request_post_data": "",
+          "response_shape": "json-like-invalid",
+          "preview": "[{\"id\":17,\"slug\":\"mttlbat-nzam-idarh-almrafq-iso-41001-llmnshat-alsghyrh-walmtwsth-\",\"createdAt\":\"2026-07-09T09:13:48.740Z\",\"updatedAt\":\"2026-07-09T09:13:48.740Z\",\"title\":{\"ar\":\"متطلبات نظام إدارة المرافق ISO 41001 للمنشآت الصغيرة والمتوسطة \",\"en\":\"Requirements for ISO 41001 Facilities Management System for Small and Medium Enterprises\"},\"cover\":{\"name\":\"cover\",\"url\":\"https://jazancci.org.sa/uploads/external-events/f69bc684499f3de3fe11ca2370421475.jpg\",\"type\":\"image/jpeg\",\"path\":\"external-events/f69bc684499f3de3fe11ca2370421475.jpg\",\"size\":856799},\"media\":[],\"description\":{\"ar\":\"<h1>متطلبات نظام إدارة المرافق <strong>ISO 41001</strong> للمنشآت الصغيرة والمتوسطة</h1><h2>محاور الورشة:</h2><ul><li><p>- مقدمة عن إدارة المرافق.</p></li><li><p>- التعريف بمعيار <strong>ISO 41001</strong>.</p></li><li><p>- نطاق وأهداف المعيار.</p></li><li><p>- متطلبات المعيار الأساسية.</p></li><li><p>- خطة التطبيق العملي.</p></li><li><p>- الفوائد والتحديات والاستراتيجيات لتطبيق المعيار للمنشآت الصغيرة والمتوسطة.</p></li></ul><h2>الفئة المستهدفة:</h2><p>رواد ورائدات الأعمال.</p><h2>موعد الورشة:</h2><p><strong>21 يونيو 2025م</strong><br/><strong>10:30 صباحاً</strong><br/><strong>عن بُعد</strong></p><h2></h2><hr/><h3>الجهات المنظمة</h3><ul><li><p>المواصفات السعودية</p></li><li><p>غرفة جازان</p></li><li><p></p></li></ul><p></p>\",\"en\":\"<h1>Requirements for Facilities Management System <strong>ISO 41001</strong> for Small and Medium Enterprises</h1><h2>Workshop Topics:</h2><ul><li><p>- Introduction to Facilities Management.</p></li><li><p>- Introduction to <strong>ISO 41001</strong> Standard.</p></li><li><p>- Scope and Objectives of the Standard.</p></li><li><p>- Key Requirements of the Standard.</p></li><li><p>- Practical Implementation Plan.</p></li><li><p>- Benefits, Challenges, and Strategies for"
+        }
+      ]
     }
   ]
 }

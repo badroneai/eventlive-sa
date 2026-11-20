@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-19T10:57:20.288Z",
+  "generated_at": "2026-11-20T10:15:51.584Z",
   "catalog": "data/events_catalog.json",
   "candidates": "data/source_candidates.json",
   "manifest": "data/event_image_cache_manifest.json",
@@ -9,20 +9,12 @@
     "min_intersection": 2
   },
   "totals": {
-    "pdf_crop_assignments": 20,
+    "pdf_crop_assignments": 19,
     "verified": 19,
-    "struck": 1,
+    "struck": 0,
     "slots_seen_this_cycle": 23
   },
-  "struck": [
-    {
-      "id": "event-عرض-كوميدي-مع-ماريو-يزبك",
-      "title": "عرض كوميدي مع ماريو يزبك",
-      "file": "visit-saudi-summer-2026-p010-top-left.png",
-      "reason": "slot-vacated",
-      "detail": "no dated card currently occupies page 10 top-left of https://www.visitsaudi.com/content/dam/documents/saudi-calendar-ar.pdf"
-    }
-  ],
+  "struck": [],
   "verified": [
     {
       "id": "event-سوق-الثلاثاء-الشعبي",
