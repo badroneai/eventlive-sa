@@ -1,39 +1,39 @@
 # EventLive Harvest OS Status
 
-- Generated at: 2026-11-20T10:39:11.821Z
+- Generated at: 2026-11-21T10:37:56.270Z
 - Status: NEEDS_WORK
 - Operating rule: Probe before new sources; sample before full harvest; Raw collection is not publication; discovery-only never auto-publishes.
 
 ## Totals
 
 - Sources: 88
-- Candidates: 304
-- Matched candidates: 294
+- Candidates: 302
+- Matched candidates: 292
 - Auto-publish sources: 15
 - Candidate-only sources: 12
 - Partnership-required sources: 5
-- Productive sources / attempted: 11/25
-- Collector errors: 10 (chronic 8, transient 2)
+- Productive sources / attempted: 11/29
+- Collector errors: 9 (chronic 7, transient 2)
 
 ## Publication Funnel
 
 | Stage | Count |
 | --- | --- |
 | discovered_this_run | 134 |
-| candidate_queue | 304 |
-| evaluated_for_publish | 304 |
-| linked_existing | 282 |
-| published_new | 6 |
-| blocked | 16 |
+| candidate_queue | 302 |
+| evaluated_for_publish | 302 |
+| linked_existing | 286 |
+| published_new | 1 |
+| blocked | 15 |
 | secondary_promoted | 0 |
-| secondary_still_blocked | 14 |
+| secondary_still_blocked | 12 |
 
 ## Blocked Reasons
 
 | Reason | Count |
 | --- | --- |
 | publication gate source-evidence is not auto-publishable | 6 |
-| linked catalog row event-rolling-podcast was superseded by dedupe | 3 |
+| linked catalog row event-rolling-podcast was superseded by dedupe | 2 |
 | linked catalog row event-book-nook-zone was superseded by dedupe | 2 |
 | unknown category requires review | 2 |
 | possible duplicate requires review: exact-title-city-source-conflict | 1 |
@@ -44,16 +44,15 @@
 
 | Source | Kind | Failed runs in a row | Attempted this run | Reason |
 | --- | --- | --- | --- | --- |
-| mos-events | chronic | 78 | no | collector-error: fetch failed [ETIMEDOUT, ENETUNREACH] |
-| saudi-pro-league-fixtures | chronic | 58 | no | collector-error: fetch failed [EAI_AGAIN] |
-| tuwaiq-academy-bootcamps | chronic | 55 | no | collector-error: HTTP 403 |
-| qassim-chamber-events | chronic | 24 | no | collector-error: HTTP 403 |
-| moc-cultural-calendar | chronic | 10 | no | collector-error: fetch failed [ETIMEDOUT, ENETUNREACH]; fetch failed [ETIMEDOUT, ENETUNREACH] |
-| moc-cultural-subportals | chronic | 10 | no | collector-error: fetch failed [ETIMEDOUT, ENETUNREACH]; fetch failed [ETIMEDOUT, ENETUNREACH] |
-| monshaat-events | chronic | 9 | no | collector-error: fetch failed [UND_ERR_CONNECT_TIMEOUT]; fetch failed [UND_ERR_CONNECT_TIMEOUT] |
-| asharqia-chamber-events | chronic | 3 | no | collector-error: HTTP 404; live browser recovery deferred by recent failed probe cooldown |
-| misk-hub-programs | transient | 1 | yes | HTTP 403; live browser recovery deferred by recent failed probe cooldown |
-| saudi-space-agency-events | transient | 1 | yes | fetch failed [UNABLE_TO_VERIFY_LEAF_SIGNATURE] |
+| mos-events | chronic | 79 | yes | collector-error: fetch failed [ETIMEDOUT, ENETUNREACH] |
+| saudi-pro-league-fixtures | chronic | 59 | yes | collector-error: fetch failed [EAI_AGAIN] |
+| tuwaiq-academy-bootcamps | chronic | 56 | yes | collector-error: HTTP 403 |
+| qassim-chamber-events | chronic | 25 | yes | collector-error: HTTP 403 |
+| moc-cultural-calendar | chronic | 11 | yes | collector-error: fetch failed [ETIMEDOUT, ENETUNREACH]; fetch failed [ETIMEDOUT, ENETUNREACH] |
+| moc-cultural-subportals | chronic | 11 | yes | collector-error: fetch failed [ETIMEDOUT, ENETUNREACH]; fetch failed [ETIMEDOUT, ENETUNREACH] |
+| monshaat-events | chronic | 10 | yes | collector-error: fetch failed [UND_ERR_CONNECT_TIMEOUT]; fetch failed [UND_ERR_CONNECT_TIMEOUT] |
+| misk-hub-programs | transient | 2 | yes | HTTP 403; live browser recovery deferred by recent failed probe cooldown |
+| saudi-space-agency-events | transient | 2 | yes | fetch failed [ETIMEDOUT, ENETUNREACH] |
 
 | Source | Policy | Trust | Gate |
 | --- | --- | --- | --- |

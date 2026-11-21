@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-20T10:15:51.584Z",
+  "generated_at": "2026-11-21T10:17:24.417Z",
   "catalog": "data/events_catalog.json",
   "candidates": "data/source_candidates.json",
   "manifest": "data/event_image_cache_manifest.json",
@@ -10,11 +10,19 @@
   },
   "totals": {
     "pdf_crop_assignments": 19,
-    "verified": 19,
-    "struck": 0,
-    "slots_seen_this_cycle": 23
+    "verified": 18,
+    "struck": 1,
+    "slots_seen_this_cycle": 22
   },
-  "struck": [],
+  "struck": [
+    {
+      "id": "event-الضحك-في-الترجمة-عرض-كوميدي-مع-شون-شدياق",
+      "title": "الضحك في الترجمة - عرض كوميدي مع شون شدياق",
+      "file": "visit-saudi-summer-2026-p010-bottom-right.png",
+      "reason": "slot-vacated",
+      "detail": "no dated card currently occupies page 10 bottom-right of https://www.visitsaudi.com/content/dam/documents/saudi-calendar-ar.pdf"
+    }
+  ],
   "verified": [
     {
       "id": "event-سوق-الثلاثاء-الشعبي",
@@ -133,19 +141,6 @@
         "ملح",
         "القصب",
         "الرابع"
-      ]
-    },
-    {
-      "id": "event-الضحك-في-الترجمة-عرض-كوميدي-مع-شون-شدياق",
-      "title": "الضحك في الترجمة - عرض كوميدي مع شون شدياق",
-      "file": "visit-saudi-summer-2026-p010-bottom-right.png",
-      "matched_tokens": [
-        "الضحك",
-        "الترجمه",
-        "عرض",
-        "كوميدي",
-        "شون",
-        "شدياق"
       ]
     },
     {

@@ -1,6 +1,6 @@
 {
   "schema": "eventlive.source-strategic-platform-radar.v1",
-  "generated_at": "2026-11-19T10:34:56.727Z",
+  "generated_at": "2026-11-21T09:56:25.081Z",
   "policy": {
     "allowed_use": "official source evidence refresh, API-surface mapping, partnership prioritization, extractor backlog decisions",
     "disallowed_use": "direct catalog publication without official confirmation and duplicate review"
@@ -199,7 +199,7 @@
       "final_url": "https://www.visitsaudi.com/ar/saudi-calendar",
       "via": "fetch",
       "content_type": "text/html; charset=utf-8",
-      "bytes": 92067,
+      "bytes": 95754,
       "title": "تقويم السعودية | تابع العطلات والفعاليات المميزة - الموقع الرسمي للسياحة السعودية",
       "classification": "reachable",
       "error": "",
@@ -315,7 +315,7 @@
         "https://images.me.cmscloud.ai",
         "https://apps.apple.com/sa/app/webook-com-fun-things-to-do/id6468667896",
         "https://play.google.com/store/apps/details?id=com.webook.android",
-        "https://wbk-assets.webook.com/8.51/assets/index-B0c6_2mp.js",
+        "https://wbk-assets.webook.com/8.51/assets/index-BVHLbXn9.js",
         "https://wbk-assets.webook.com/8.51/assets/vendor-CMb0R77e.js",
         "https://wbk-assets.webook.com/8.51/assets/index-B_YVHDwh.css",
         "https://wbk-assets.webook.com/8.51/locales/en/common.json",
@@ -331,7 +331,7 @@
         "https://wbk-assets.webook.com/8.51/locales/en/currency_common.json",
         "https://wbk-assets.webook.com/8.51/locales/en/payment_common.json",
         "https://wbk-assets.webook.com/8.51/locales/en/subscription_common.json",
-        "https://webook.com/cdn-cgi/content?id=nuGnnTZnFDw2Uqt4vneayvCgMY6cmTTTfPhGfxApGiM-1795084505.490383-1.2.1.1-aD_EDlFlF06HYKQ37ZFBT5V5OU6YIySLWSksvGTUjSwz4XiA_F6r3dieC6CVG5UZ",
+        "https://webook.com/cdn-cgi/content?id=aK9504E6XRxwrd_MntgrW6yzS6WBB7wAKv0yziUwbsA-1795254996.152739-1.2.1.1-wuszQQWv6xnd8RD5N7Tld0WH4bKFnpICDzpthST89Lahu1l8LjilFZQPWy1l9XmJ",
         "https://static.cloudflareinsights.com/beacon.min.js/vce701823e78c4301a35b7e07294d87301792088814092"
       ],
       "page_hint_words": [

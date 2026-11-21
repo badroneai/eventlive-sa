@@ -1,11 +1,28 @@
 {
-  "checked_at": "2026-11-20T10:22:18.177Z",
-  "targets": 6,
+  "checked_at": "2026-11-21T10:23:17.514Z",
+  "targets": 7,
   "evidence_found": 3,
   "changed": 0,
-  "no_evidence": 3,
+  "no_evidence": 4,
   "failed": 0,
   "results": [
+    {
+      "id": "event-beast-house",
+      "host": "nofomo.com",
+      "url": "https://nofomo.com/collections/beast-house",
+      "status": "no-evidence",
+      "reason": "no-explicit-public-price"
+    },
+    {
+      "id": "event-soundstorm-26",
+      "host": "nofomo.com",
+      "url": "https://nofomo.com/events/soundstorm-26/cart",
+      "status": "evidence",
+      "price_label": "499 SAR",
+      "price": 499,
+      "price_currency": "SAR",
+      "method": "nofomo-visible-ticket-price"
+    },
     {
       "id": "event-saudi-intermobility-expo",
       "host": "informaconnect.com",
@@ -46,16 +63,6 @@
       "url": "https://informaconnect.com/education-investment-saudi.com/en#contact-us",
       "status": "no-evidence",
       "reason": "no-explicit-public-price"
-    },
-    {
-      "id": "event-soundstorm-26",
-      "host": "nofomo.com",
-      "url": "https://nofomo.com/events/soundstorm-26/cart",
-      "status": "evidence",
-      "price_label": "499 SAR",
-      "price": 499,
-      "price_currency": "SAR",
-      "method": "nofomo-visible-ticket-price"
     }
   ]
 }

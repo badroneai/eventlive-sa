@@ -1,12 +1,16 @@
 # Future Skills Program Enrichment Report
 
-- generated_at: 2026-11-20T10:15:54.917Z
+- generated_at: 2026-11-21T10:17:28.885Z
 - targets: 29
-- enriched: 21
-- failed: 8
+- enriched: 25
+- failed: 4
 
 ## Enriched
 
+- أساسيات الحوسبة السحابية - Cloud Computing Essentials (13035) - outcomes=6, topics=13, requirements=3, metadata=8
+- Advanced Excel for Data Analysis - دورة اكسيل لتحليل البيانات (13041) - outcomes=1, topics=4, requirements=4, metadata=8
+- CompTIA A+ (13042) - outcomes=1, topics=7, requirements=4, metadata=8
+- Cloud Computing Essentials - أساسيات الحوسبة السحابية (13043) - outcomes=1, topics=4, requirements=4, metadata=8
 - Duplicate of Cloud Computing Essentials - أساسيات الحوسبة السحابية (13044) - outcomes=1, topics=4, requirements=4, metadata=8
 - Cloud Storage and Databases Fundamentals - أساسيات التخزين السحابي وقواعد البيانات (13045) - outcomes=1, topics=7, requirements=4, metadata=8
 - DevOps Fundamentals for Cloud Environments-أساسيات ديفوبس لبيئات السحابة (13046) - outcomes=1, topics=3, requirements=4, metadata=8
@@ -34,8 +38,4 @@
 - Introduction to Generative AI-مقدمة في الذكاء الاصطناعي التوليدي (13037) - The operation was aborted due to timeout
 - دورة +CompTIA A (13039) - The operation was aborted due to timeout
 - Security Operations, Threat Detection & Incident Response - عمليات الأمن السيبراني، واكتشاف التهديدات، والاستجابة للحوادث (13040) - The operation was aborted due to timeout
-- أساسيات الحوسبة السحابية - Cloud Computing Essentials (13035) - The operation was aborted due to timeout
-- Advanced Excel for Data Analysis - دورة اكسيل لتحليل البيانات (13041) - The operation was aborted due to timeout
-- CompTIA A+ (13042) - The operation was aborted due to timeout
-- Cloud Computing Essentials - أساسيات الحوسبة السحابية (13043) - The operation was aborted due to timeout
 - Linux Administration (13057) - HTTP 404

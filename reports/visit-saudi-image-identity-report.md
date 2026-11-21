@@ -1,14 +1,14 @@
 # EventLive Visit Saudi Image Identity Report
 
-- generated_at: 2026-11-20T10:15:51.584Z
+- generated_at: 2026-11-21T10:17:24.417Z
 - pdf_crop_assignments: 19
-- verified: 19
-- struck: 0
-- slots_seen_this_cycle: 23
+- verified: 18
+- struck: 1
+- slots_seen_this_cycle: 22
 
 ## Struck (fell back to generated cover)
 
-- none
+- الضحك في الترجمة - عرض كوميدي مع شون شدياق (visit-saudi-summer-2026-p010-bottom-right.png) - slot-vacated - no dated card currently occupies page 10 bottom-right of https://www.visitsaudi.com/content/dam/documents/saudi-calendar-ar.pdf
 
 ## Verified
 
@@ -24,7 +24,6 @@
 - سوالف الحي (visit-saudi-summer-2026-p028-top-right.png)
 - سيرك فونتانا (visit-saudi-summer-2026-p017-top-right.png)
 - موسم ملح القصب الرابع (visit-saudi-summer-2026-p041-top-left.png)
-- الضحك في الترجمة - عرض كوميدي مع شون شدياق (visit-saudi-summer-2026-p010-bottom-right.png)
 - IN ACT ANNIVERSARY - ACT XI (visit-saudi-summer-2026-p022-top-right.jpg)
 - واقف! Momos (visit-saudi-summer-2026-p051-top-left.png)
 - على موج الخبر (visit-saudi-summer-2026-p030-bottom-right.png)
