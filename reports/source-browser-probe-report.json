@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-21T10:05:45.442Z",
+  "generated_at": "2026-11-23T11:02:44.815Z",
   "source_registry": "data/source_registry.json",
   "collection_report": "reports/source-collection-report.json",
   "output_dir": "data/raw/browser-probes",
@@ -16,249 +16,31 @@
   "methodology": "Browser-level probe inspired by cafe platform work: classify fetchability, hydration payloads, network APIs, structured HTML, rendered DOM, and policy-protected lanes before writing extractors.",
   "totals": {
     "probed": 8,
-    "browser_network_api": 3,
+    "browser_network_api": 0,
     "browser_hydration_payload": 0,
-    "rendered_html_candidates": 1,
+    "rendered_html_candidates": 0,
     "blocked_or_protected": 1,
     "policy_skipped": 0
   },
   "sources": [
     {
-      "id": "mdlbeast-events",
-      "probed_at": "2026-11-21T10:06:05.901Z",
-      "name": "MDLBEAST Events",
-      "priority": 8,
-      "url": "https://mdlbeast.com/events",
-      "final_url": "https://mdlbeast.com/events",
-      "status": "ok",
-      "http_status": 200,
-      "navigation_error": "",
-      "duration_ms": 7992,
-      "classification": "browser-network-api",
-      "next_action": "ثبت endpoint مرشحًا كجامع مباشر، ثم اكتب extractor من JSON مع اختبار انحدار.",
-      "title": "MDLBEAST Events Calendar - Discover Now | MDLBEAST",
-      "text_bytes": 2898,
-      "html_bytes": 365705,
-      "html_snapshot": "data/raw/browser-probes/mdlbeast-events-2026-11-21T10-05-45-442Z.html",
-      "screenshot": "data/raw/browser-probes/mdlbeast-events-2026-11-21T10-05-45-442Z.png",
-      "signals": {
-        "has_next_data": true,
-        "has_nuxt": false,
-        "has_json_ld": true,
-        "has_event_schema": false,
-        "date_snippets": [
-          "NOV UNSTABLE In Riyadh PAST EVENTS FRI 04 SEP 2026 - SAT 05 SEP 2026 MDLBEAST RADIO MIXTAPE In Riyadh THU 05 FEB 2026 - FRI 06 FEB",
-          "2026 BALAD BEAST 2026 In Jeddah THU 11 DEC 2025 - SAT 13 DEC 2025 SOUNDSTORM 25 In Riyadh THU 04 DEC 2025 - SAT 06 DEC 2025 XP",
-          "MUSIC FUTURES 2025 In Riyadh THU 25 SEP 2025 - FRI 26 SEP 2025 AZIMUTH 2025 In Alula THU 25 SEP 2025 - FRI 26 SEP 2025 BALAD",
-          "SOCIAL In Jeddah MON 04 AUG 2025 BEAST HOUSE PRESENTS GHOSTLY KISSES In Riyadh FRI 18 JUL 2025 - THU 07 AUG 2025",
-          "AFT_R In Riyadh THU 17 JUL 2025 - FRI 08 AUG 2025 ONYX ARENA In Jeddah FRI 23 MAY 2025 MDLBEAST PRESENTS: GUNS N' ROSES In Riyadh",
-          "SAT 17 MAY 2025 - SUN 18 MAY 2025 HOUSE BLEND In Riyadh THU 24 APR 2025 - FRI 25 APR 2025 A THOUSAND AND ONE 2025",
-          "In Riyadh FRI 18 APR 2025 - SUN 20 APR 2025 FORMULA 1 STC SAUDI ARABIAN GRAND PRIX 2025 In Jeddah FRI 04 APR 2025 MOJA In J",
-          "eddah FRI 04 APR 2025 MDLBEAST PRESENTS: KEINEMUSIK In AlUla FRI 21 FEB 2025 - SUN 23 FEB 2025 KOKUB"
-        ],
-        "event_like_links": [
-          {
-            "text": "EXPLORE FULL CALENDAR",
-            "href": "https://mdlbeast.com/events/calendar"
-          },
-          {
-            "text": "THU 26 NOV\n\nBEAST HOUSE\n\nIn Riyadh",
-            "href": "https://mdlbeast.com/events/beast-house"
-          },
-          {
-            "text": "FRI 27 NOV - SAT 28 NOV\n\nUNSTABLE\n\nIn Riyadh",
-            "href": "https://mdlbeast.com/events/unstable"
-          },
-          {
-            "text": "FRI 04 SEP 2026 - SAT 05 SEP 2026\n\nMDLBEAST RADIO MIXTAPE\n\nIn Riyadh",
-            "href": "https://mdlbeast.com/events/mdlbeast-radio-mixtape"
-          },
-          {
-            "text": "THU 05 FEB 2026 - FRI 06 FEB 2026\n\nBALAD BEAST 2026\n\nIn Jeddah",
-            "href": "https://mdlbeast.com/events/balad-beast-2026"
-          },
-          {
-            "text": "THU 11 DEC 2025 - SAT 13 DEC 2025\n\nSOUNDSTORM 25 \n\nIn Riyadh",
-            "href": "https://mdlbeast.com/events/soundstorm-25"
-          },
-          {
-            "text": "THU 04 DEC 2025 - SAT 06 DEC 2025\n\nXP MUSIC FUTURES 2025\n\nIn Riyadh",
-            "href": "https://mdlbeast.com/events/xp-music-futures-25"
-          },
-          {
-            "text": "THU 25 SEP 2025 - FRI 26 SEP 2025\n\nAZIMUTH 2025\n\nIn Alula",
-            "href": "https://mdlbeast.com/events/azimuth-2025"
-          },
-          {
-            "text": "THU 25 SEP 2025 - FRI 26 SEP 2025\n\nBALAD SOCIAL\n\nIn Jeddah",
-            "href": "https://mdlbeast.com/events/balad-social"
-          },
-          {
-            "text": "MON 04 AUG 2025\n\nBEAST HOUSE PRESENTS GHOSTLY KISSES \n\nIn Riyadh",
-            "href": "https://mdlbeast.com/events/beast-house-presents-ghostly-kisses"
-          },
-          {
-            "text": "FRI 18 JUL 2025 - THU 07 AUG 2025\n\nAFT_R\n\nIn Riyadh",
-            "href": "https://mdlbeast.com/events/aft-r"
-          },
-          {
-            "text": "THU 17 JUL 2025 - FRI 08 AUG 2025\n\nONYX ARENA \n\nIn Jeddah",
-            "href": "https://mdlbeast.com/events/onyx-arena"
-          },
-          {
-            "text": "FRI 23 MAY 2025\n\nMDLBEAST PRESENTS: GUNS N' ROSES\n\nIn Riyadh",
-            "href": "https://mdlbeast.com/events/mdlbeast-presents-guns-n-roses"
-          },
-          {
-            "text": "SAT 17 MAY 2025 - SUN 18 MAY 2025\n\nHOUSE BLEND\n\nIn Riyadh",
-            "href": "https://mdlbeast.com/events/house-blend"
-          },
-          {
-            "text": "THU 24 APR 2025 - FRI 25 APR 2025\n\nA THOUSAND AND ONE 2025\n\nIn Riyadh",
-            "href": "https://mdlbeast.com/events/a-thousand-and-one-2025"
-          },
-          {
-            "text": "FRI 18 APR 2025 - SUN 20 APR 2025\n\nFORMULA 1 STC SAUDI ARABIAN GRAND PRIX 2025\n\nIn Jeddah",
-            "href": "https://mdlbeast.com/events/formula-1-stc-saudi-arabian-grand-prix-2025"
-          },
-          {
-            "text": "FRI 04 APR 2025\n\nMOJA\n\nIn Jeddah",
-            "href": "https://mdlbeast.com/events/moja"
-          },
-          {
-            "text": "FRI 04 APR 2025\n\nMDLBEAST PRESENTS: KEINEMUSIK\n\nIn AlUla",
-            "href": "https://mdlbeast.com/events/mdlbeast-presents-keinemusik"
-          },
-          {
-            "text": "FRI 21 FEB 2025 - SUN 23 FEB 2025\n\nKOKUB\n\nIn Al Ula",
-            "href": "https://mdlbeast.com/events/kokub"
-          },
-          {
-            "text": "THU 30 JAN 2025 - FRI 31 JAN 2025\n\nBALAD BEAST 2025\n\nIn Jeddah",
-            "href": "https://mdlbeast.com/events/balad-beast-2025"
-          }
-        ]
-      },
-      "script_signals": {
-        "next_data_scripts": 1,
-        "nuxt_scripts": 0,
-        "json_ld_scripts": 1,
-        "large_inline_scripts": 1
-      },
-      "network_total": 8,
-      "network_endpoints": [
-        {
-          "method": "GET",
-          "status": 200,
-          "url": "https://mdlbeast.com/_next/data/ycKB_Sc9NSk1FbXfdDlDW/en/events/calendar.json",
-          "content_type": "application/json",
-          "resource_type": "fetch",
-          "request_post_data": "",
-          "response_shape": "json-like-invalid",
-          "preview": "{\"pageProps\":{\"events\":[{\"title\":\"Beast House\",\"slug\":\"beast-house\",\"id\":\"LrwF27BJQwSahu3U7WDIkQ\",\"startDatetime\":\"2026-11-19T18:00:00+00:00\",\"endDatetime\":\"2026-11-20T00:00:00+00:00\",\"timezone\":\"Asia/Riyadh\",\"colorAccent\":{\"hex\":\"#FF00FF\"},\"city\":\"Riyadh\",\"logo\":{\"id\":\"VUU7VMF5SVi1EkkGOcz_qw\",\"mimeType\":\"image/webp\",\"url\":\"https://www.datocms-assets.com/66357/1703668968-beast-house-logo-06.webp\",\"alt\":null,\"title\":null,\"blurUpThumb\":\"data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAMAAADXqc3KAAABIFBMVEX//vz//vz//vz//vz//vz//vz//vz//vz//vz//vz//vz//vz//vz//vz//vz//vz//vz//vz//vz//vz//vz//vz//vz//vz//vz//vz//vz//vz//vz//vz//vz//vz//vz//vz//vz//vz//vz//vz//vz//vz//vz//vz//vz//vz//vz//vz//vz//vz//vz//vz//vz//vz//vz//vz//vz//vz//vz//vz//vz//vz//vz//vz//vz//vz//vz//vz//vz//vz//vz//vz//vz//vz//vz//vz//vz//vz//vz//vz//vz//vz//vz//vz//vz//vz//vz//vz//vz//vz//vz//vz//vz//vz//vz//vz//vz//vz0lQLDAAAAYHRSTlMAAQIDBAUGBwgJCgsMDQ4PEBESExQVFhcYGRobHB0eHyAhIyQlJykqKywtLi8wMTM0Njc4Oj0+P0BBQkRHSElKTlBRUlRWV1tdX2BhYmRmaGprb3BxdHV3eHp7fH2Bg4Th5xvkAAAA70lEQVR42pWS627CMAyFHedWCt1g7/+GE4JWvaV2nLVQaBGdtJ1fjr8ktk9iDhRgFqLII9Ym0CMGgWceolnysMoDGPhFfwIOmTeAKjLkrnkD9lR4pOCv8gryr+POY+ydu/YrgMXpeMgNsrPWVu00gtEJ0O4+P4o8typaTEnZIAlMNu63+yzzmR+BWD+QqDgCnDwape4au5uL0xQGR0QGFBEPIfS3q6YeAiuNShxwaOtqLn4zr2ERYaNiW5eXbj1H+GbeW0VteeHXAeXMvYehrtKbVyU5oGbL3Y6BNm1PEdL/HkppkOWI0XH5PYDPhf4B7qtwzckK/QEAAAAASUVORK5CYII=\"},\"cover\":{\"id\":\"QjpOfbhoTkKfAnCuPCh_zA\",\"mimeType\":\"image/webp\",\"url\":\"https://www.datocms-assets.com/66357/1753608398-1-aug-event-banners-01.webp\",\"alt\":null,\"title\":null,\"blurUpThumb\":\"data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAoHBwgHBhYICAgLFgoODA0VDQ0NDigSDg0NFxUZGBYTFhUdHy0jGh0oHSEWJDUlKC0vMjIyGSI4PTcwPCsxMi8BCgsLDg0OHA0QHDsoIh4vLy8vLzsvOy8vNS8vLy8vLy8vLzs7Ly8vLy8vLy8vLy8vLy8"
-        }
-      ],
-      "network_sample": [
-        {
-          "method": "POST",
-          "status": 200,
-          "url": "https://o1202670.ingest.sentry.io/api/6328050/envelope/?sentry_version=7&sentry_key=9ddf6cb0d9fd4ef3a6553edafdab3482&sentry_client=sentry.javascript.nextjs%2F8.51.0",
-          "content_type": "application/json",
-          "resource_type": "fetch",
-          "request_post_data": "{\"sent_at\":\"2026-11-21T10:05:58.138Z\",\"sdk\":{\"name\":\"sentry.javascript.nextjs\",\"version\":\"8.51.0\"}} {\"type\":\"session\"} {\"sid\":\"13f998194a1b4deb90cc82d0e93726e3\",\"init\":true,\"started\":\"2026-11-21T10:05:58.137Z\",\"timestamp\":\"2026-11-21T10:05:58.137Z\",\"status\":\"ok\",\"errors\":0,\"attrs\":{\"release\":\"mdlbeast-frontend-nextjs@2.44.0\",\"environment\":\"production\",\"user_agent\":\"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36\"}}",
-          "response_shape": "json-object:",
-          "preview": "{}"
-        },
-        {
-          "method": "GET",
-          "status": 200,
-          "url": "https://mdlbeast.com/_next/data/ycKB_Sc9NSk1FbXfdDlDW/en.json",
-          "content_type": "application/json",
-          "resource_type": "fetch",
-          "request_post_data": "",
-          "response_shape": "json-like-invalid",
-          "preview": "{\"pageProps\":{\"seoTags\":[{\"attributes\":null,\"content\":\"MDLBEAST | Home of Soundstorm, XP & Music in the Middle East\",\"tag\":\"title\"},{\"attributes\":{\"property\":\"og:title\",\"content\":\"MDLBEAST | Home of Soundstorm, XP & Music in the Middle East\"},\"content\":null,\"tag\":\"meta\"},{\"attributes\":{\"name\":\"twitter:title\",\"content\":\"MDLBEAST | Home of Soundstorm, XP & Music in the Middle East\"},\"content\":null,\"tag\":\"meta\"},{\"attributes\":{\"name\":\"description\",\"content\":\"Explore music in the Middle East from the region's music platform. Uncover Soundstorm festival - the loudest music festival in Riyadh, XP Music Futures & more. \"},\"content\":null,\"tag\":\"meta\"},{\"attributes\":{\"property\":\"og:description\",\"content\":\"Explore music in the Middle East from the region's music platform. Uncover Soundstorm festival - the loudest music festival in Riyadh, XP Music Futures & more. \"},\"content\":null,\"tag\":\"meta\"},{\"attributes\":{\"name\":\"twitter:description\",\"content\":\"Explore music in the Middle East from the region's music platform. Uncover Soundstorm festival - the loudest music festival in Riyadh, XP Music Futures & more. \"},\"content\":null,\"tag\":\"meta\"},{\"attributes\":{\"property\":\"og:image\",\"content\":\"https://www.datocms-assets.com/66357/1751801189-mdlbeast.png?auto=format&fit=max&w=1200\"},\"content\":null,\"tag\":\"meta\"},{\"attributes\":{\"property\":\"og:image:width\",\"content\":\"1200\"},\"content\":null,\"tag\":\"meta\"},{\"attributes\":{\"property\":\"og:image:height\",\"content\":\"630\"},\"content\":null,\"tag\":\"meta\"},{\"attributes\":{\"name\":\"twitter:image\",\"content\":\"https://www.datocms-assets.com/66357/1751801189-mdlbeast.png?auto=format&fit=max&w=1200\"},\"content\":null,\"tag\":\"meta\"},{\"attributes\":{\"property\":\"og:locale\",\"content\":\"en\"},\"content\":null,\"tag\":\"meta\"},{\"attributes\":{\"property\":\"og:type\",\"content\":\"website\"},"
-        },
-        {
-          "method": "GET",
-          "status": 200,
-          "url": "https://mdlbeast.com/_next/data/ycKB_Sc9NSk1FbXfdDlDW/en/newsroom.json",
-          "content_type": "application/json",
-          "resource_type": "fetch",
-          "request_post_data": "",
-          "response_shape": "json-like-invalid",
-          "preview": "{\"pageProps\":{\"homeData\":{\"title\":\"Newsroom\",\"slug\":\"newsroom\",\"header\":{\"__typename\":\"NewsRoomHomePageHeaderRecord\",\"id\":\"XWROG8Q8TrOJRNiLPbCxKQ\",\"amountOfHeadlines\":10,\"intervalTimerSeconds\":3,\"includeTags\":[],\"readMoreLinkText\":\"Read more\"},\"mdlbeastPillars\":[{\"__typename\":\"NewsRoomArticleCategoryRecord\",\"id\":\"RIbi0SZvSSikJkeSiDGhSw\",\"title\":\"Soundstorm\",\"image\":{\"id\":\"AEsxkQdxQW-6ubkZ84PHlg\",\"mimeType\":\"image/jpeg\",\"video\":null,\"url\":\"https://www.datocms-assets.com/66357/1775652017-pillar-1.jpg\",\"alt\":null,\"title\":null,\"blurUpThumb\":\"data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAoHBwgHBgoICAgLCgoLGhgUDhYNDikVIR0dHR0lHSIdGBomJS8jHB0oHRUWJTUlKC0vMjIyGSI4PTcwPCsxMi8BCgsLDg0OHBAQHDspIh0vOy8vPDs7OzsvLy8vLzUvLy8vLzs1Mi8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vL//AABEIABEAGAMBIgACEQEDEQH/xAAaAAACAgMAAAAAAAAAAAAAAAAABgMFAQIH/8QAJBAAAQMCBQUBAAAAAAAAAAAAAAECAwQRBQYiYZESEzEyMwf/xAAXAQEAAwAAAAAAAAAAAAAAAAACAAME/8QAGREAAwEBAQAAAAAAAAAAAAAAAAECAzER/9oADAMBAAIRAxEAPwDlTcIxSZl0geqE8WW8ZlZpp32LmgzmsUCo+JLpsWNN+g9DFTspwRpGjPOGhRny9i1OmumfbYBhr88z1PrCnBgalAqJ9FCL5vNo/CgBUyZk8QAA0Cun/9k=\"},\"newsRoomTag\":{\"id\":\"Kfk0B2qfQU-WHIZXydR_Xw\",\"name\":\"Soundstorm\",\"slug\":\"soundstorm\"}},{\"__typename\":\"NewsRoomArticleCategoryRecord\",\"id\":\"B5QTRiCFTBeTO_0yZdNTew\",\"title\":\"Balad Beast\",\"image\":{\"id\":\"e3LJ2TLBQ0O9n1bskl3b0Q\",\"mimeType\":\"image/jpeg\",\"video\":null,\"url\":\"https://www.datocms-assets.com/66357/1775652018-pillar-2.jpg\",\"alt\":null,\"title\":null,\"blurUpThumb\":\"data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAoHBwgHBgoICAgXCgoLFRgZDg0VGR0VDQ4NFxUdHRYTIhYaHysjHR0oHRYWJDUlKC0vMjIyGSI4PTcwPCsxMi8BCgsLDg0OHBAQHDsoIig7Ozs7Ozs7Ozs7Ly8vLy8vLy8vLzsvOzsvLy8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vL//AABEIAA4AGAMBIgACEQEDEQH/xAAZAAABBQAAAAAAAAAAAAAAAAAEAAIDBQf/xAAcEAABBAMBAAAAAAAAAAAAAAACAAMEEQESIQX/xAAWAQ"
-        },
-        {
-          "method": "GET",
-          "status": 200,
-          "url": "https://mdlbeast.com/_next/data/ycKB_Sc9NSk1FbXfdDlDW/en/search.json",
-          "content_type": "application/json",
-          "resource_type": "fetch",
-          "request_post_data": "",
-          "response_shape": "json-object:pageProps,__N_SSG",
-          "preview": "{\"pageProps\":{\"dehydratedState\":{\"mutations\":[],\"queries\":[{\"state\":{\"data\":{\"globalConfig\":{\"privacyPolicy\":{\"id\":\"18205418\",\"title\":\"Privacy policy\",\"isExternal\":false,\"url\":\"\",\"page\":[{\"entity\":\"PageCustomTextRecord\",\"slug\":\"privacy\",\"collection\":null}],\"icon\":null},\"cookiesPolicy\":{\"id\":\"CMoIHPjDR5y8fCatFJgdWA\",\"title\":\"Cookies Policy\",\"isExternal\":false,\"url\":\"\",\"page\":[{\"entity\":\"PageCustomTextRecord\",\"slug\":\"cookies-policy\",\"collection\":null}],\"icon\":null},\"legal\":{\"id\":\"18205454\",\"title\":\"Terms & Conditions\",\"isExternal\":false,\"url\":\"\",\"page\":[{\"entity\":\"PageCustomTextRecord\",\"slug\":\"terms-and-conditions\",\"collection\":null}],\"icon\":null}},\"_site\":{\"globalSeo\":{\"titleSuffix\":\" | MDLBEAST\"}}},\"dataUpdateCount\":1,\"dataUpdatedAt\":1795250198299,\"error\":null,\"errorUpdateCount\":0,\"errorUpdatedAt\":0,\"fetchFailureCount\":0,\"fetchFailureReason\":null,\"fetchMeta\":null,\"isInvalidated\":false,\"status\":\"success\",\"fetchStatus\":\"idle\"},\"queryKey\":[\"global\",\"config\",{\"locale\":\"en\"}],\"queryHash\":\"[\\\"global\\\",\\\"config\\\",{\\\"locale\\\":\\\"en\\\"}]\",\"meta\":{\"dehydrate\":true,\"preview\":false}},{\"state\":{\"data\":{\"id\":\"BKwepKzOTiiZtVUfaL9sSQ\",\"name\":\"MDLBEAST Radio\",\"streamUrl\":\"https://s4.radio.co/s4d58c285a/listen\"},\"dataUpdateCount\":1,\"dataUpdatedAt\":1795250198299,\"error\":null,\"errorUpdateCount\":0,\"errorUpdatedAt\":0,\"fetchFailureCount\":0,\"fetchFailureReason\":null,\"fetchMeta\":null,\"isInvalidated\":false,\"status\":\"success\",\"fetchStatus\":\"idle\"},\"queryKey\":[\"radio\",\"station\",{\"locale\":\"en\"}],\"queryHash\":\"[\\\"radio\\\",\\\"station\\\",{\\\"locale\\\":\\\"en\\\"}]\",\"meta\":{\"dehydrate\":true,\"preview\":false}}]}},\"__N_SSG\":true}"
-        },
-        {
-          "method": "GET",
-          "status": 200,
-          "url": "https://mdlbeast.com/_next/data/ycKB_Sc9NSk1FbXfdDlDW/en/account/login.json",
-          "content_type": "application/json",
-          "resource_type": "fetch",
-          "request_post_data": "",
-          "response_shape": "json-object:pageProps,__N_SSG",
-          "preview": "{\"pageProps\":{\"dehydratedState\":{\"mutations\":[],\"queries\":[{\"state\":{\"data\":{\"globalConfig\":{\"privacyPolicy\":{\"id\":\"18205418\",\"title\":\"Privacy policy\",\"isExternal\":false,\"url\":\"\",\"page\":[{\"entity\":\"PageCustomTextRecord\",\"slug\":\"privacy\",\"collection\":null}],\"icon\":null},\"cookiesPolicy\":{\"id\":\"CMoIHPjDR5y8fCatFJgdWA\",\"title\":\"Cookies Policy\",\"isExternal\":false,\"url\":\"\",\"page\":[{\"entity\":\"PageCustomTextRecord\",\"slug\":\"cookies-policy\",\"collection\":null}],\"icon\":null},\"legal\":{\"id\":\"18205454\",\"title\":\"Terms & Conditions\",\"isExternal\":false,\"url\":\"\",\"page\":[{\"entity\":\"PageCustomTextRecord\",\"slug\":\"terms-and-conditions\",\"collection\":null}],\"icon\":null}},\"_site\":{\"globalSeo\":{\"titleSuffix\":\" | MDLBEAST\"}}},\"dataUpdateCount\":1,\"dataUpdatedAt\":1795250197756,\"error\":null,\"errorUpdateCount\":0,\"errorUpdatedAt\":0,\"fetchFailureCount\":0,\"fetchFailureReason\":null,\"fetchMeta\":null,\"isInvalidated\":false,\"status\":\"success\",\"fetchStatus\":\"idle\"},\"queryKey\":[\"global\",\"config\",{\"locale\":\"en\"}],\"queryHash\":\"[\\\"global\\\",\\\"config\\\",{\\\"locale\\\":\\\"en\\\"}]\",\"meta\":{\"dehydrate\":true,\"preview\":false}},{\"state\":{\"data\":{\"id\":\"BKwepKzOTiiZtVUfaL9sSQ\",\"name\":\"MDLBEAST Radio\",\"streamUrl\":\"https://s4.radio.co/s4d58c285a/listen\"},\"dataUpdateCount\":1,\"dataUpdatedAt\":1795250197752,\"error\":null,\"errorUpdateCount\":0,\"errorUpdatedAt\":0,\"fetchFailureCount\":0,\"fetchFailureReason\":null,\"fetchMeta\":null,\"isInvalidated\":false,\"status\":\"success\",\"fetchStatus\":\"idle\"},\"queryKey\":[\"radio\",\"station\",{\"locale\":\"en\"}],\"queryHash\":\"[\\\"radio\\\",\\\"station\\\",{\\\"locale\\\":\\\"en\\\"}]\",\"meta\":{\"dehydrate\":true,\"preview\":false}}]},\"theme\":\"account\",\"layoutType\":\"Account\",\"tealium\":{\"moduleName\":\"miscellaneous\",\"pageType\":\"regular\"}},\"__N_SSG\":true}"
-        },
-        {
-          "method": "GET",
-          "status": 200,
-          "url": "https://mdlbeast.com/_next/data/ycKB_Sc9NSk1FbXfdDlDW/en/events/calendar.json",
-          "content_type": "application/json",
-          "resource_type": "fetch",
-          "request_post_data": "",
-          "response_shape": "json-like-invalid",
-          "preview": "{\"pageProps\":{\"events\":[{\"title\":\"Beast House\",\"slug\":\"beast-house\",\"id\":\"LrwF27BJQwSahu3U7WDIkQ\",\"startDatetime\":\"2026-11-19T18:00:00+00:00\",\"endDatetime\":\"2026-11-20T00:00:00+00:00\",\"timezone\":\"Asia/Riyadh\",\"colorAccent\":{\"hex\":\"#FF00FF\"},\"city\":\"Riyadh\",\"logo\":{\"id\":\"VUU7VMF5SVi1EkkGOcz_qw\",\"mimeType\":\"image/webp\",\"url\":\"https://www.datocms-assets.com/66357/1703668968-beast-house-logo-06.webp\",\"alt\":null,\"title\":null,\"blurUpThumb\":\"data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAMAAADXqc3KAAABIFBMVEX//vz//vz//vz//vz//vz//vz//vz//vz//vz//vz//vz//vz//vz//vz//vz//vz//vz//vz//vz//vz//vz//vz//vz//vz//vz//vz//vz//vz//vz//vz//vz//vz//vz//vz//vz//vz//vz//vz//vz//vz//vz//vz//vz//vz//vz//vz//vz//vz//vz//vz//vz//vz//vz//vz//vz//vz//vz//vz//vz//vz//vz//vz//vz//vz//vz//vz//vz//vz//vz//vz//vz//vz//vz//vz//vz//vz//vz//vz//vz//vz//vz//vz//vz//vz//vz//vz//vz//vz//vz//vz//vz//vz//vz//vz//vz//vz0lQLDAAAAYHRSTlMAAQIDBAUGBwgJCgsMDQ4PEBESExQVFhcYGRobHB0eHyAhIyQlJykqKywtLi8wMTM0Njc4Oj0+P0BBQkRHSElKTlBRUlRWV1tdX2BhYmRmaGprb3BxdHV3eHp7fH2Bg4Th5xvkAAAA70lEQVR42pWS627CMAyFHedWCt1g7/+GE4JWvaV2nLVQaBGdtJ1fjr8ktk9iDhRgFqLII9Ym0CMGgWceolnysMoDGPhFfwIOmTeAKjLkrnkD9lR4pOCv8gryr+POY+ydu/YrgMXpeMgNsrPWVu00gtEJ0O4+P4o8typaTEnZIAlMNu63+yzzmR+BWD+QqDgCnDwape4au5uL0xQGR0QGFBEPIfS3q6YeAiuNShxwaOtqLn4zr2ERYaNiW5eXbj1H+GbeW0VteeHXAeXMvYehrtKbVyU5oGbL3Y6BNm1PEdL/HkppkOWI0XH5PYDPhf4B7qtwzckK/QEAAAAASUVORK5CYII=\"},\"cover\":{\"id\":\"QjpOfbhoTkKfAnCuPCh_zA\",\"mimeType\":\"image/webp\",\"url\":\"https://www.datocms-assets.com/66357/1753608398-1-aug-event-banners-01.webp\",\"alt\":null,\"title\":null,\"blurUpThumb\":\"data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAoHBwgHBhYICAgLFgoODA0VDQ0NDigSDg0NFxUZGBYTFhUdHy0jGh0oHSEWJDUlKC0vMjIyGSI4PTcwPCsxMi8BCgsLDg0OHA0QHDsoIh4vLy8vLzsvOy8vNS8vLy8vLy8vLzs7Ly8vLy8vLy8vLy8vLy8"
-        },
-        {
-          "method": "GET",
-          "status": 200,
-          "url": "https://mdlbeast.com/_next/data/ycKB_Sc9NSk1FbXfdDlDW/en/privacy.json?pages=privacy",
-          "content_type": "application/json",
-          "resource_type": "fetch",
-          "request_post_data": "",
-          "response_shape": "json-like-invalid",
-          "preview": "{\"pageProps\":{\"customPageType\":\"text\",\"pageCustomText\":{\"pageCustomText\":{\"seoTags\":[{\"attributes\":null,\"content\":\"Privacy Policy | MDLBEAST\",\"tag\":\"title\"},{\"attributes\":{\"property\":\"og:title\",\"content\":\"Privacy Policy\"},\"content\":null,\"tag\":\"meta\"},{\"attributes\":{\"name\":\"twitter:title\",\"content\":\"Privacy Policy\"},\"content\":null,\"tag\":\"meta\"},{\"attributes\":{\"name\":\"description\",\"content\":\"This Privacy Notice explains how MDLBEAST LLC and its affiliated entities (referred to as “ MDLBEAST ”, “ we ”, “ us ”, or “ our ”) collect, use, store, and protect your personal data when you visit...\"},\"content\":null,\"tag\":\"meta\"},{\"attributes\":{\"property\":\"og:description\",\"content\":\"This Privacy Notice explains how MDLBEAST LLC and its affiliated entities (referred to as “ MDLBEAST ”, “ we ”, “ us ”, or “ our ”) collect, use, store, and protect your personal data when you visit...\"},\"content\":null,\"tag\":\"meta\"},{\"attributes\":{\"name\":\"twitter:description\",\"content\":\"This Privacy Notice explains how MDLBEAST LLC and its affiliated entities (referred to as “ MDLBEAST ”, “ we ”, “ us ”, or “ our ”) collect, use, store, and protect your personal data when you visit...\"},\"content\":null,\"tag\":\"meta\"},{\"attributes\":{\"property\":\"og:image\",\"content\":\"https://www.datocms-assets.com/66357/1751801189-mdlbeast.png?auto=format&fit=max&w=1200\"},\"content\":null,\"tag\":\"meta\"},{\"attributes\":{\"property\":\"og:image:width\",\"content\":\"1200\"},\"content\":null,\"tag\":\"meta\"},{\"attributes\":{\"property\":\"og:image:height\",\"content\":\"630\"},\"content\":null,\"tag\":\"meta\"},{\"attributes\":{\"name\":\"twitter:image\",\"content\":\"https://www.datocms-assets.com/66357/1751801189-mdlbeast.png?auto=format&fit=max&w=1200\"},\"content\":null,\"tag\":\"meta\"},{\"attributes\":{\"property\":\"og:locale\",\"content\":\"en\"},\"content\":null,\"tag\":\"meta\""
-        },
-        {
-          "method": "GET",
-          "status": 200,
-          "url": "https://api.ipdata.co/?api-key=c7e0aa1f6999025389c01b86d7d2f281eb10fe9aa7f183632d000cc0",
-          "content_type": "application/json",
-          "resource_type": "fetch",
-          "request_post_data": "",
-          "response_shape": "json-object:ip,is_eu,city,region,region_code,region_type,country_name,country_code",
-          "preview": "{ \"ip\": \"40.124.217.240\", \"is_eu\": false, \"city\": \"San Antonio\", \"region\": \"Texas\", \"region_code\": \"TX\", \"region_type\": \"state\", \"country_name\": \"United States\", \"country_code\": \"US\", \"continent_name\": \"North America\", \"continent_code\": \"NA\", \"latitude\": 29.42411994934082, \"longitude\": -98.4936294555664, \"postal\": \"78288\", \"calling_code\": \"1\", \"flag\": \"https://ipdata.co/flags/us.png\", \"emoji_flag\": \"🇺🇸\", \"emoji_unicode\": \"U+1F1FA U+1F1F8\", \"asn\": { \"asn\": \"AS8075\", \"name\": \"Microsoft Corporation\", \"domain\": \"microsoft.com\", \"route\": \"40.124.0.0/16\", \"type\": \"hosting\" }, \"languages\": [ { \"name\": \"English\", \"native\": \"English\", \"code\": \"en\" } ], \"currency\": { \"name\": \"US Dollar\", \"code\": \"USD\", \"symbol\": \"$\", \"native\": \"$\", \"plural\": \"US dollars\" }, \"time_zone\": { \"name\": \"America/Chicago\", \"abbr\": \"CST\", \"offset\": \"-0600\", \"is_dst\": false, \"current_time\": \"2026-11-21T10:05:58-06:00\" }, \"threat\": { \"is_tor\": false, \"is_icloud_relay\": false, \"is_proxy\": false, \"is_datacenter\": true, \"is_anonymous\": false, \"is_known_attacker\": false, \"is_known_abuser\": false, \"is_threat\": false, \"is_bogon\": false, \"blocklists\": [] }, \"count\": \"698\" }"
-        }
-      ]
-    },
-    {
-      "id": "invest-saudi-events",
-      "probed_at": "2026-11-21T10:06:11.963Z",
-      "name": "Invest Saudi Events",
-      "priority": 10,
-      "url": "https://investsaudi.sa/backend/wp-json/v3/events?time_frame=all",
-      "final_url": "https://investsaudi.sa/backend/wp-json/v3/events?time_frame=all",
-      "status": "ok",
-      "http_status": 200,
-      "navigation_error": "",
-      "duration_ms": 6005,
-      "classification": "rendered-text-review",
-      "next_action": "راجع الصفحة يدويًا وحدد هل هي مصدر أدلة أم صفحة تعريفية فقط.",
+      "id": "moc-cultural-calendar",
+      "probed_at": "2026-11-23T11:05:00.443Z",
+      "name": "Ministry of Culture Cultural Calendar",
+      "priority": 3,
+      "url": "https://www.moc.gov.sa/en/Modules/Pages/Cultural-Calendar",
+      "final_url": "chrome-error://chromewebdata/",
+      "status": "error",
+      "http_status": 0,
+      "navigation_error": "page.goto: Timeout 30000ms exceeded.\nCall log:\n  - navigating to \"https://www.moc.gov.sa/en/Modules/Pages/Cultural-Calendar\", waiting until \"domcontentloaded\"\n",
+      "duration_ms": 135156,
+      "classification": "empty-or-shell",
+      "next_action": "اعتبرها shell وابحث عن API أو مسار بديل قبل أي collector.",
       "title": "",
-      "text_bytes": 6078,
-      "html_bytes": 6257,
-      "html_snapshot": "data/raw/browser-probes/invest-saudi-events-2026-11-21T10-05-45-442Z.html",
-      "screenshot": "data/raw/browser-probes/invest-saudi-events-2026-11-21T10-05-45-442Z.png",
+      "text_bytes": 0,
+      "html_bytes": 0,
+      "html_snapshot": "data/raw/browser-probes/moc-cultural-calendar-2026-11-23T11-02-44-815Z.html",
+      "screenshot": "",
       "signals": {
         "has_next_data": false,
         "has_nuxt": false,
@@ -278,111 +60,111 @@
       "network_sample": []
     },
     {
-      "id": "future-skills-catalog",
-      "probed_at": "2026-11-21T10:06:23.415Z",
-      "name": "Future Skills MCIT Catalogue",
-      "priority": 17,
-      "url": "https://futureskills.mcit.gov.sa/ar/catalogue/all?label=&field_main_tracks_target_id_verf=565&field_sub_tracks_target_id=All&field_training_course_level_target_id=All&field_related_skills_target_id=All&field_course_type_value=All&field_training_delivery_value=All&field_training_city_target_id=All&field_job_market_target_id=All",
-      "final_url": "https://futureskills.mcit.gov.sa/ar/catalogue/all?label=&field_main_tracks_target_id_verf=565&field_sub_tracks_target_id=All&field_training_course_level_target_id=All&field_related_skills_target_id=All&field_course_type_value=All&field_training_delivery_value=All&field_training_city_target_id=All&field_job_market_target_id=All",
-      "status": "ok",
-      "http_status": 200,
-      "navigation_error": "",
-      "duration_ms": 11420,
-      "classification": "rendered-html-candidates",
-      "next_action": "اكتب extractor مرن من DOM بعد الرندر أو حسن selector الحالي.",
-      "title": "التدريب | بوابة مهارات المستقبل",
-      "text_bytes": 10774,
-      "html_bytes": 86494,
-      "html_snapshot": "data/raw/browser-probes/future-skills-catalog-2026-11-21T10-05-45-442Z.html",
-      "screenshot": "data/raw/browser-probes/future-skills-catalog-2026-11-21T10-05-45-442Z.png",
+      "id": "mos-events",
+      "probed_at": "2026-11-23T11:07:15.602Z",
+      "name": "Ministry of Sport Events",
+      "priority": 4,
+      "url": "https://www.mos.gov.sa/en/media/events",
+      "final_url": "chrome-error://chromewebdata/",
+      "status": "error",
+      "http_status": 0,
+      "navigation_error": "page.goto: Timeout 30000ms exceeded.\nCall log:\n  - navigating to \"https://www.mos.gov.sa/en/media/events\", waiting until \"domcontentloaded\"\n",
+      "duration_ms": 135120,
+      "classification": "empty-or-shell",
+      "next_action": "اعتبرها shell وابحث عن API أو مسار بديل قبل أي collector.",
+      "title": "",
+      "text_bytes": 0,
+      "html_bytes": 0,
+      "html_snapshot": "data/raw/browser-probes/mos-events-2026-11-23T11-02-44-815Z.html",
+      "screenshot": "",
       "signals": {
         "has_next_data": false,
         "has_nuxt": false,
         "has_json_ld": false,
         "has_event_schema": false,
         "date_snippets": [],
-        "event_like_links": [
-          {
-            "text": "تجاوز إلى المحتوى الرئيسي",
-            "href": "https://futureskills.mcit.gov.sa/ar/catalogue/all?label=&field_main_tracks_target_id_verf=565&field_sub_tracks_target_id=All&field_training_course_level_target_id=All&field_related_skills_target_id=All&field_course_type_value=All&field_training_delivery_value=All&field_training_city_target_id=All&field_job_market_target_id=All#main-content"
-          },
-          {
-            "text": "English",
-            "href": "https://futureskills.mcit.gov.sa/en/catalogue/all?label=&field_main_tracks_target_id_verf=565&field_sub_tracks_target_id=All&field_training_course_level_target_id=All&field_related_skills_target_id=All&field_course_type_value=All&field_training_delivery_value=All&field_training_city_target_id=All&field_job_market_target_id=All"
-          },
-          {
-            "text": "",
-            "href": "https://futureskills.mcit.gov.sa/ar/catalogue/all?label=&field_main_tracks_target_id_verf=565&field_sub_tracks_target_id=All&field_training_course_level_target_id=All&field_related_skills_target_id=All&field_course_type_value=All&field_training_delivery_value=All&field_training_city_target_id=All&field_job_market_target_id=All#"
-          },
-          {
-            "text": "عن الوزارة",
-            "href": "https://futureskills.mcit.gov.sa/ar/catalogue/all?label=&field_main_tracks_target_id_verf=565&field_sub_tracks_target_id=All&field_training_course_level_target_id=All&field_related_skills_target_id=All&field_course_type_value=All&field_training_delivery_value=All&field_training_city_target_id=All&field_job_market_target_id=All#"
-          },
-          {
-            "text": "مجتمع رقمي",
-            "href": "https://futureskills.mcit.gov.sa/ar/catalogue/all?label=&field_main_tracks_target_id_verf=565&field_sub_tracks_target_id=All&field_training_course_level_target_id=All&field_related_skills_target_id=All&field_course_type_value=All&field_training_delivery_value=All&field_training_city_target_id=All&field_job_market_target_id=All#"
-          },
-          {
-            "text": "مهارات المستقبل",
-            "href": "https://futureskills.mcit.gov.sa/ar/catalogue/all?label=&field_main_tracks_target_id_verf=565&field_sub_tracks_target_id=All&field_training_course_level_target_id=All&field_related_skills_target_id=All&field_course_type_value=All&field_training_delivery_value=All&field_training_city_target_id=All&field_job_market_target_id=All#"
-          },
-          {
-            "text": "الأعمال والاستثمار",
-            "href": "https://futureskills.mcit.gov.sa/ar/catalogue/all?label=&field_main_tracks_target_id_verf=565&field_sub_tracks_target_id=All&field_training_course_level_target_id=All&field_related_skills_target_id=All&field_course_type_value=All&field_training_delivery_value=All&field_training_city_target_id=All&field_job_market_target_id=All#"
-          },
-          {
-            "text": "المركز الإعلامي",
-            "href": "https://futureskills.mcit.gov.sa/ar/catalogue/all?label=&field_main_tracks_target_id_verf=565&field_sub_tracks_target_id=All&field_training_course_level_target_id=All&field_related_skills_target_id=All&field_course_type_value=All&field_training_delivery_value=All&field_training_city_target_id=All&field_job_market_target_id=All#"
-          },
-          {
-            "text": "الفعاليات",
-            "href": "https://www.mcit.gov.sa/ar/events"
-          },
-          {
-            "text": "",
-            "href": "https://futureskills.mcit.gov.sa/ar/catalogue/all?label=&field_main_tracks_target_id_verf=565&field_sub_tracks_target_id=All&field_training_course_level_target_id=All&field_related_skills_target_id=All&field_course_type_value=All&field_training_delivery_value=All&field_training_city_target_id=All&field_job_market_target_id=All#"
-          },
-          {
-            "text": "",
-            "href": "https://futureskills.mcit.gov.sa/ar/catalogue/all?label=&field_main_tracks_target_id_verf=565&field_sub_tracks_target_id=All&field_training_course_level_target_id=All&field_related_skills_target_id=All&field_course_type_value=All&field_training_delivery_value=All&field_training_city_target_id=All&field_job_market_target_id=All#"
-          },
-          {
-            "text": "البرنامج المتخصص في العمل الحر",
-            "href": "http://futureskills.mcit.gov.sa/ar/node/20481"
-          },
-          {
-            "text": "معسكرات مهارات المستقبل",
-            "href": "http://futureskills.mcit.gov.sa/ar/node/17349"
-          },
-          {
-            "text": "مستوى متوسط\nIntroduction to APIs and Web Services\n دورة معرفية\n تفاعلية مباشرة\n تبدأ 27-09-2026 إلى 01-10-2026 لمدة 20 س",
-            "href": "https://futureskills.mcit.gov.sa/ar/group/13067"
-          },
-          {
-            "text": "مستوى متوسط\n⁠Data Preparation & Cleaning Essentials\n دورة معرفية\n تفاعلية مباشرة\n تبدأ 13-09-2026 إلى 15-09-2026 لمدة 12",
-            "href": "https://futureskills.mcit.gov.sa/ar/group/13064"
-          },
-          {
-            "text": "مستوى متوسط\n⁠Cloud Security and Compliance Fundamentals\n دورة معرفية\n تفاعلية مباشرة\n تبدأ 13-09-2026 إلى 15-09-2026 لمد",
-            "href": "https://futureskills.mcit.gov.sa/ar/group/13065"
-          },
-          {
-            "text": "مستوى متوسط\n⁠Data Science Foundations\n دورة معرفية\n تفاعلية مباشرة\n تبدأ 13-09-2026 إلى 16-09-2026 لمدة 16 ساعات",
-            "href": "https://futureskills.mcit.gov.sa/ar/group/13066"
-          },
-          {
-            "text": "مستوى متوسط\n⁠CCNP\n دورة معرفية\n تفاعلية مباشرة\n تبدأ 06-09-2026 إلى 10-09-2026 لمدة 20 ساعات",
-            "href": "https://futureskills.mcit.gov.sa/ar/group/13061"
-          },
-          {
-            "text": "مستوى متوسط\n⁠Data Analysis with Python\n دورة معرفية\n تفاعلية مباشرة\n تبدأ 06-09-2026 إلى 09-09-2026 لمدة 16 ساعات",
-            "href": "https://futureskills.mcit.gov.sa/ar/group/13062"
-          },
-          {
-            "text": "مستوى متوسط\n⁠Red Hat Certified System Administrator (RHCSA)\n دورة معرفية\n تفاعلية مباشرة\n تبدأ 06-09-2026 إلى 10-09-2026",
-            "href": "https://futureskills.mcit.gov.sa/ar/group/13063"
-          }
-        ]
+        "event_like_links": []
+      },
+      "script_signals": {
+        "next_data_scripts": 0,
+        "nuxt_scripts": 0,
+        "json_ld_scripts": 0,
+        "large_inline_scripts": 0
+      },
+      "network_total": 0,
+      "network_endpoints": [],
+      "network_sample": []
+    },
+    {
+      "id": "monshaat-events",
+      "probed_at": "2026-11-23T11:09:30.767Z",
+      "name": "Monsha'at All Events",
+      "priority": 9,
+      "url": "https://www.monshaat.gov.sa/en/events-list",
+      "final_url": "chrome-error://chromewebdata/",
+      "status": "error",
+      "http_status": 0,
+      "navigation_error": "page.goto: Timeout 30000ms exceeded.\nCall log:\n  - navigating to \"https://www.monshaat.gov.sa/en/events-list\", waiting until \"domcontentloaded\"\n",
+      "duration_ms": 135124,
+      "classification": "empty-or-shell",
+      "next_action": "اعتبرها shell وابحث عن API أو مسار بديل قبل أي collector.",
+      "title": "",
+      "text_bytes": 0,
+      "html_bytes": 0,
+      "html_snapshot": "data/raw/browser-probes/monshaat-events-2026-11-23T11-02-44-815Z.html",
+      "screenshot": "",
+      "signals": {
+        "has_next_data": false,
+        "has_nuxt": false,
+        "has_json_ld": false,
+        "has_event_schema": false,
+        "date_snippets": [],
+        "event_like_links": []
+      },
+      "script_signals": {
+        "next_data_scripts": 0,
+        "nuxt_scripts": 0,
+        "json_ld_scripts": 0,
+        "large_inline_scripts": 0
+      },
+      "network_total": 0,
+      "network_endpoints": [],
+      "network_sample": []
+    },
+    {
+      "id": "tuwaiq-academy-bootcamps",
+      "probed_at": "2026-11-23T11:09:37.142Z",
+      "name": "Tuwaiq Academy Bootcamps and Programs",
+      "priority": 16,
+      "url": "https://tuwaiq.edu.sa/api/GetInitiativePublishesShorten/12/1?category=ac41152d-f228-8af4-8406-e0cda6df6c35&type=NORMAL",
+      "final_url": "https://tuwaiq.edu.sa/api/GetInitiativePublishesShorten/12/1?category=ac41152d-f228-8af4-8406-e0cda6df6c35&type=NORMAL",
+      "status": "ok",
+      "http_status": 200,
+      "navigation_error": "",
+      "duration_ms": 6337,
+      "classification": "browser-structured-html",
+      "next_action": "اكتب extractor من JSON-LD أو structured scripts مع fallback للبطاقات.",
+      "title": "",
+      "text_bytes": 10738,
+      "html_bytes": 10901,
+      "html_snapshot": "data/raw/browser-probes/tuwaiq-academy-bootcamps-2026-11-23T11-02-44-815Z.html",
+      "screenshot": "data/raw/browser-probes/tuwaiq-academy-bootcamps-2026-11-23T11-02-44-815Z.png",
+      "signals": {
+        "has_next_data": false,
+        "has_nuxt": false,
+        "has_json_ld": false,
+        "has_event_schema": true,
+        "date_snippets": [
+          "ية الاحترافية لسحابة قوقل\",\"startDate\":\"2026-12-06T17:00:00+03:00\",\"endDate\":\"2026-12-31T21:00:00+03:00\",\"autoCloseRegistration\":f",
+          "nStartDate\":null,\"registrationEndDate\":\"2026-11-08T12:00:00+03:00\",\"requireProfileCompletion\":true,\"isMergePublish\":true,\"isPaid\":",
+          "عسكر حلول الأمن السيبراني\",\"startDate\":\"2026-12-13T17:00:00+03:00\",\"endDate\":\"2027-01-07T20:00:00+03:00\",\"autoCloseRegistration\":f",
+          "nStartDate\":null,\"registrationEndDate\":\"2026-11-29T12:00:00+03:00\",\"requireProfileCompletion\":true,\"isMergePublish\":true,\"isPaid\":",
+          "eployed Engineer Bootcamp\",\"startDate\":\"2026-12-20T10:00:00+03:00\",\"endDate\":\"2027-02-11T14:00:00+03:00\",\"autoCloseRegistration\":f",
+          "nStartDate\":null,\"registrationEndDate\":\"2026-12-06T12:00:00+03:00\",\"requireProfileCompletion\":true,\"isMergePublish\":false,\"isPaid\"",
+          "تصنيع الدوائر الإلكترونية\",\"startDate\":\"2026-12-27T17:00:00+03:00\",\"endDate\":\"2027-01-21T21:00:00+03:00\",\"autoCloseRegistration\":f",
+          "nStartDate\":null,\"registrationEndDate\":\"2026-11-29T12:00:00+03:00\",\"requireProfileCompletion\":true,\"isMergePublish\":true,\"isPaid\":"
+        ],
+        "event_like_links": []
       },
       "script_signals": {
         "next_data_scripts": 0,
@@ -396,18 +178,18 @@
         {
           "method": "GET",
           "status": 200,
-          "url": "https://futureskills.mcit.gov.sa/ar/api2/cities?field_aldwlt_target_id=672",
+          "url": "https://tuwaiq.edu.sa/api/GetInitiativePublishesShorten/12/1?category=ac41152d-f228-8af4-8406-e0cda6df6c35&type=NORMAL",
           "content_type": "application/json",
-          "resource_type": "xhr",
+          "resource_type": "document",
           "request_post_data": "",
           "response_shape": "json-like-invalid",
-          "preview": "[{\"tid_1\":\"68\",\"name\":\"\\u0627\\u0644\\u0631\\u064a\\u0627\\u0636\"},{\"tid_1\":\"69\",\"name\":\"\\u0627\\u0644\\u062f\\u0645\\u0627\\u0645\"},{\"tid_1\":\"70\",\"name\":\"\\u062c\\u062f\\u0629\"},{\"tid_1\":\"71\",\"name\":\"\\u0623\\u0628\\u0647\\u0627\"},{\"tid_1\":\"171\",\"name\":\"\\u0627\\u0644\\u062c\\u0628\\u064a\\u0644\"},{\"tid_1\":\"172\",\"name\":\"\\u0627\\u0644\\u0628\\u0627\\u062d\\u0629\"},{\"tid_1\":\"176\",\"name\":\"\\u0627\\u0644\\u0637\\u0627\\u0626\\u0641\"},{\"tid_1\":\"177\",\"name\":\"\\u0627\\u0644\\u0638\\u0647\\u0631\\u0627\\u0646\"},{\"tid_1\":\"182\",\"name\":\"\\u0627\\u0644\\u0645\\u0628\\u0631\\u0632\"},{\"tid_1\":\"183\",\"name\":\"\\u0627\\u0644\\u0645\\u062f\\u064a\\u0646\\u0629 \\u0627\\u0644\\u0645\\u0646\\u0648\\u0631\\u0629\"},{\"tid_1\":\"187\",\"name\":\"\\u062a\\u0628\\u0648\\u0643\"},{\"tid_1\":\"191\",\"name\":\"\\u0631\\u0641\\u062d\\u0627\\u0621\"},{\"tid_1\":\"192\",\"name\":\"\\u0633\\u0643\\u0627\\u0643\\u0627\"},{\"tid_1\":\"194\",\"name\":\"\\u0642\\u0644\\u0639\\u0629 \\u0628\\u064a\\u0634\\u0629\"},{\"tid_1\":\"196\",\"name\":\"\\u0646\\u062c\\u0631\\u0627\\u0646\"},{\"tid_1\":\"197\",\"name\":\"\\u062d\\u0627\\u0626\\u0644\"},{\"tid_1\":\"198\",\"name\":\"\\u064a\\u0646\\u0628\\u0639\"},{\"tid_1\":\"5042\",\"name\":\"\\u0627\\u0644\\u0623\\u062d\\u0633\\u0627\\u0621\"},{\"tid_1\":\"7319\",\"name\":\"\\u0639\\u0633\\u064a\\u0631\"},{\"tid_1\":\"10545\",\"name\":\"\\u0645\\u0643\\u0629 \\u0627\\u0644\\u0645\\u0643\\u0631\\u0645\\u0629\"},{\"tid_1\":\"10635\",\"name\":\"\\u0627\\u0644\\u062d\\u0644\\u0629\"},{\"tid_1\":\"10638\",\"name\":\"\\u0627\\u0644\\u062e\\u0631\\u062c\"},{\"tid_1\":\"10641\",\"name\":\"\\u0627\\u0644\\u0633\\u0644\\u064a\\u0644\"},{\"tid_1\":\"10647\",\"name\":\"\\u0627\\u0644\\u0642\\u0631\\u064a\\u0627\\u062a\"},{\"tid_1\":\"10650\",\"name\":\"\\u0627\\u0644\\u0642\\u0637\\u064a\\u0641\"},{\"tid_1\":\"10653\",\"name\":\"\\u0627\\u0644\\u0642\\u0646\\u0641\\u0630\\u0629\"},{\"tid_1\":\"10656\",\"name\":\"\\u0627\\u0644\\u0642\\u0648\\u064a\\u0639\\u064a\\u0629\"},{\"tid_1\":\"10659\",\"name\":\"\\u0627\\u0644\\u0647\\u0641\\u0648\\u0641\"},{\"tid_1\":\"10662\",\"name\":\"\\u062"
+          "preview": "{\"pagination\":{\"offset\":0,\"limit\":12,\"total\":204,\"totalPages\":17},\"data\":[{\"id\":\"46c277ae-5d9e-4a6b-805a-7e4720a83dfe\",\"academyTypeId\":null,\"academyType\":null,\"title\":\"معسكر تطوير البرمجيات السحابية الاحترافية لسحابة قوقل\",\"startDate\":\"2026-12-06T17:00:00+03:00\",\"endDate\":\"2026-12-31T21:00:00+03:00\",\"autoCloseRegistration\":false,\"isOpen\":true,\"isRegistrationOpen\":true,\"isRegistrationClosed\":false,\"logo\":\"images/zt203siy.0sn.png\",\"outerImage\":\"images/twhdfqfk.mjg.webp\",\"initiativeAgeName\":\"كبار\",\"initiativeCategoryName\":\"معسكر\",\"initiativeScopeImage\":\"images/lcbl2k2p.x5x.png\",\"initiativeScopeName\":\"الحوسبة السحابية\",\"locationName\":\"الرياض - المقر الرئيسي\",\"slug\":\"E9zNBzBP\",\"registrationStartDate\":null,\"registrationEndDate\":\"2026-11-08T12:00:00+03:00\",\"requireProfileCompletion\":true,\"isMergePublish\":true,\"isPaid\":false,\"price\":null,\"includesEmployees\":false,\"vat\":null,\"priceWithoutVat\":null},{\"id\":\"cde160b5-dd26-4719-a709-f219c0c51bb4\",\"academyTypeId\":null,\"academyType\":null,\"title\":\"معسكر حلول الأمن السيبراني\",\"startDate\":\"2026-12-13T17:00:00+03:00\",\"endDate\":\"2027-01-07T20:00:00+03:00\",\"autoCloseRegistration\":false,\"isOpen\":true,\"isRegistrationOpen\":true,\"isRegistrationClosed\":false,\"logo\":\"images/fpflawwh.u50.png\",\"outerImage\":\"images/oojjhr41.rng.webp\",\"initiativeAgeName\":\"كبار\",\"initiativeCategoryName\":\"معسكر\",\"initiativeScopeImage\":\"images/mgpdsgmm.alx.png\",\"initiativeScopeName\":\"تطوير البرمجيات والتطبيقات\",\"locationName\":\"الرياض - المقر الرئيسي\",\"slug\":\"XvqDJRQP\",\"registrationStartDate\":null,\"registrationEndDate\":\"2026-11-29T12:00:00+03:00\",\"requireProfileCompletion\":true,\"isMergePublish\":true,\"isPaid\":false,\"price\":0.00,\"includesEmployees\":false,\"vat\":0.00,\"priceWithoutVat\":0.00},{\"id\":\"77274f97-b158-4062-ad85-55f1b6d995c8\",\"academyTypeId\":null,\"academyType\":null,"
         }
       ]
     },
     {
       "id": "misk-hub-programs",
-      "probed_at": "2026-11-21T10:05:51.466Z",
+      "probed_at": "2026-11-23T11:09:42.635Z",
       "name": "Misk Hub Programs",
       "priority": 21,
       "url": "https://hub.misk.org.sa/programs/",
@@ -415,14 +197,14 @@
       "status": "ok",
       "http_status": 403,
       "navigation_error": "",
-      "duration_ms": 5678,
+      "duration_ms": 5447,
       "classification": "blocked-or-protected",
       "next_action": "لا تلتف على الحماية؛ صنف المصدر partnership/API أو ابحث عن مسار رسمي.",
       "title": "Unavailable",
       "text_bytes": 481,
       "html_bytes": 1087916,
-      "html_snapshot": "data/raw/browser-probes/misk-hub-programs-2026-11-21T10-05-45-442Z.html",
-      "screenshot": "data/raw/browser-probes/misk-hub-programs-2026-11-21T10-05-45-442Z.png",
+      "html_snapshot": "data/raw/browser-probes/misk-hub-programs-2026-11-23T11-02-44-815Z.html",
+      "screenshot": "data/raw/browser-probes/misk-hub-programs-2026-11-23T11-02-44-815Z.png",
       "signals": {
         "has_next_data": false,
         "has_nuxt": false,
@@ -442,8 +224,44 @@
       "network_sample": []
     },
     {
+      "id": "saudi-pro-league-fixtures",
+      "probed_at": "2026-11-23T11:09:54.072Z",
+      "name": "Saudi Pro League Fixtures",
+      "priority": 30,
+      "url": "https://api.saudi-pro-league.pulselive.com/football/fixtures?comps=215&compSeasons=859&pageSize=100&statuses=C,U,L&sort=asc",
+      "final_url": "chrome-error://chromewebdata/",
+      "status": "error",
+      "http_status": 0,
+      "navigation_error": "page.goto: net::ERR_NAME_NOT_RESOLVED at https://api.saudi-pro-league.pulselive.com/football/fixtures?comps=215&compSeasons=859&pageSize=100&statuses=C,U,L&sort=asc\nCall log:\n  - navigating to \"https://api.saudi-pro-league.pulselive.com/football/fixtures?comps=215&compSeasons=859&pageSize=100&statuses=C,U,L&sort=asc\", waiting until \"domcontentloaded\"\n",
+      "duration_ms": 11367,
+      "classification": "empty-or-shell",
+      "next_action": "اعتبرها shell وابحث عن API أو مسار بديل قبل أي collector.",
+      "title": "",
+      "text_bytes": 0,
+      "html_bytes": 0,
+      "html_snapshot": "data/raw/browser-probes/saudi-pro-league-fixtures-2026-11-23T11-02-44-815Z.html",
+      "screenshot": "",
+      "signals": {
+        "has_next_data": false,
+        "has_nuxt": false,
+        "has_json_ld": false,
+        "has_event_schema": false,
+        "date_snippets": [],
+        "event_like_links": []
+      },
+      "script_signals": {
+        "next_data_scripts": 0,
+        "nuxt_scripts": 0,
+        "json_ld_scripts": 0,
+        "large_inline_scripts": 0
+      },
+      "network_total": 0,
+      "network_endpoints": [],
+      "network_sample": []
+    },
+    {
       "id": "saudi-space-agency-events",
-      "probed_at": "2026-11-21T10:05:57.879Z",
+      "probed_at": "2026-11-23T11:09:59.949Z",
       "name": "Saudi Space Agency Events",
       "priority": 32,
       "url": "https://ssa.gov.sa/APIGW/en/api/EventsSearch/SearchEvents",
@@ -451,14 +269,14 @@
       "status": "ok",
       "http_status": 405,
       "navigation_error": "",
-      "duration_ms": 6380,
+      "duration_ms": 5829,
       "classification": "empty-or-shell",
       "next_action": "اعتبرها shell وابحث عن API أو مسار بديل قبل أي collector.",
       "title": "",
       "text_bytes": 536,
       "html_bytes": 687,
-      "html_snapshot": "data/raw/browser-probes/saudi-space-agency-events-2026-11-21T10-05-45-442Z.html",
-      "screenshot": "data/raw/browser-probes/saudi-space-agency-events-2026-11-21T10-05-45-442Z.png",
+      "html_snapshot": "data/raw/browser-probes/saudi-space-agency-events-2026-11-23T11-02-44-815Z.html",
+      "screenshot": "data/raw/browser-probes/saudi-space-agency-events-2026-11-23T11-02-44-815Z.png",
       "signals": {
         "has_next_data": false,
         "has_nuxt": false,
@@ -489,23 +307,23 @@
       ]
     },
     {
-      "id": "riyadh-city-events",
-      "probed_at": "2026-11-21T10:06:29.726Z",
-      "name": "Riyadh City Events",
-      "priority": 51,
-      "url": "https://riyadh.sa/en/events/all",
-      "final_url": "https://riyadh.sa/en/events/all",
-      "status": "ok",
-      "http_status": 200,
-      "navigation_error": "",
-      "duration_ms": 6277,
-      "classification": "rendered-text-review",
-      "next_action": "راجع الصفحة يدويًا وحدد هل هي مصدر أدلة أم صفحة تعريفية فقط.",
-      "title": "وجهتكم إلى الرياض تتجدّد",
-      "text_bytes": 402,
-      "html_bytes": 84099,
-      "html_snapshot": "data/raw/browser-probes/riyadh-city-events-2026-11-21T10-05-45-442Z.html",
-      "screenshot": "data/raw/browser-probes/riyadh-city-events-2026-11-21T10-05-45-442Z.png",
+      "id": "moc-cultural-subportals",
+      "probed_at": "2026-11-23T11:12:14.606Z",
+      "name": "Ministry of Culture Commission Calendars",
+      "priority": 37,
+      "url": "https://music.moc.gov.sa/Cultural-Calendar",
+      "final_url": "chrome-error://chromewebdata/",
+      "status": "error",
+      "http_status": 0,
+      "navigation_error": "page.goto: Timeout 30000ms exceeded.\nCall log:\n  - navigating to \"https://music.moc.gov.sa/Cultural-Calendar\", waiting until \"domcontentloaded\"\n",
+      "duration_ms": 134621,
+      "classification": "empty-or-shell",
+      "next_action": "اعتبرها shell وابحث عن API أو مسار بديل قبل أي collector.",
+      "title": "",
+      "text_bytes": 0,
+      "html_bytes": 0,
+      "html_snapshot": "data/raw/browser-probes/moc-cultural-subportals-2026-11-23T11-02-44-815Z.html",
+      "screenshot": "",
       "signals": {
         "has_next_data": false,
         "has_nuxt": false,
@@ -523,244 +341,6 @@
       "network_total": 0,
       "network_endpoints": [],
       "network_sample": []
-    },
-    {
-      "id": "sdaia-calendar-events",
-      "probed_at": "2026-11-21T10:06:39.218Z",
-      "name": "SDAIA Calendar and Events",
-      "priority": 54,
-      "url": "https://sdaia.gov.sa/en/MediaCenter/Events/Pages/default.aspx",
-      "final_url": "https://sdaia.gov.sa/en/MediaCenter/Events/Pages/default.aspx",
-      "status": "ok",
-      "http_status": 200,
-      "navigation_error": "",
-      "duration_ms": 9462,
-      "classification": "browser-network-api",
-      "next_action": "ثبت endpoint مرشحًا كجامع مباشر، ثم اكتب extractor من JSON مع اختبار انحدار.",
-      "title": "SDAIA | SDAIA Calendar & Events",
-      "text_bytes": 3749,
-      "html_bytes": 151139,
-      "html_snapshot": "data/raw/browser-probes/sdaia-calendar-events-2026-11-21T10-05-45-442Z.html",
-      "screenshot": "data/raw/browser-probes/sdaia-calendar-events-2026-11-21T10-05-45-442Z.png",
-      "signals": {
-        "has_next_data": false,
-        "has_nuxt": false,
-        "has_json_ld": false,
-        "has_event_schema": false,
-        "date_snippets": [],
-        "event_like_links": [
-          {
-            "text": "Search",
-            "href": "https://sdaia.gov.sa/en/MediaCenter/Events/Pages/default.aspx#"
-          },
-          {
-            "text": "AI Scholarship Program",
-            "href": "https://sdaia.gov.sa/en/Sectors/academy/Pages/ScholarshipProgram.aspx"
-          },
-          {
-            "text": "Cooperative Training Program",
-            "href": "https://sdaia.gov.sa/en/Sectors/BuildingCapacity/Pages/CooperativeTraining.aspx"
-          },
-          {
-            "text": "Free Software and Services",
-            "href": "https://sdaia.gov.sa/en/Services/Pages/FreeServicesAndPrograms.aspx"
-          },
-          {
-            "text": "Calendar and Events",
-            "href": "https://sdaia.gov.sa/en/MediaCenter/Events/Pages/default.aspx"
-          },
-          {
-            "text": "Search",
-            "href": "https://sdaia.gov.sa/en/MediaCenter/Events/Pages/default.aspx#"
-          },
-          {
-            "text": "",
-            "href": "https://sdaia.gov.sa/en/MediaCenter/Events/Pages/default.aspx#ctl00_PlaceHolderBanner_ContentMap_SkipLink"
-          },
-          {
-            "text": "Share on LinkedIn",
-            "href": "https://www.linkedin.com/sharing/share-offsite/?url=https%3A%2F%2Fsdaia.gov.sa%2Fen%2FMediaCenter%2FEvents%2FPages%2Fdefault.aspx"
-          },
-          {
-            "text": "Share on WhatsApp",
-            "href": "https://wa.me/?text=SDAIA%20Calendar%20%26%20Events%20https%3A%2F%2Fsdaia.gov.sa%2Fen%2FMediaCenter%2FEvents%2FPages%2Fdefault.aspx"
-          },
-          {
-            "text": "Share on X",
-            "href": "https://twitter.com/intent/tweet?url=https%3A%2F%2Fsdaia.gov.sa%2Fen%2FMediaCenter%2FEvents%2FPages%2Fdefault.aspx&text=SDAIA%20Calendar%20%26%20Events"
-          },
-          {
-            "text": "Share on Facebook",
-            "href": "https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fsdaia.gov.sa%2Fen%2FMediaCenter%2FEvents%2FPages%2Fdefault.aspx"
-          },
-          {
-            "text": "Show Events",
-            "href": "https://sdaia.gov.sa/en/MediaCenter/Events/Pages/default.aspx#"
-          },
-          {
-            "text": "Show Calendar",
-            "href": "https://sdaia.gov.sa/en/MediaCenter/Events/Pages/default.aspx#"
-          },
-          {
-            "text": "Yes",
-            "href": "https://sdaia.gov.sa/en/MediaCenter/Events/Pages/default.aspx#pills-first"
-          },
-          {
-            "text": "No",
-            "href": "https://sdaia.gov.sa/en/MediaCenter/Events/Pages/default.aspx#pills-second"
-          },
-          {
-            "text": "Privacy Policy",
-            "href": "https://sdaia.gov.sa/en/MediaCenter/Events/Pages/default.aspx#"
-          },
-          {
-            "text": "Manage Preferences",
-            "href": "https://sdaia.gov.sa/en/MediaCenter/Events/Pages/default.aspx#"
-          },
-          {
-            "text": "",
-            "href": "https://sdaia.gov.sa/en/MediaCenter/Events/Pages/default.aspx#?"
-          }
-        ]
-      },
-      "script_signals": {
-        "next_data_scripts": 0,
-        "nuxt_scripts": 0,
-        "json_ld_scripts": 0,
-        "large_inline_scripts": 1
-      },
-      "network_total": 4,
-      "network_endpoints": [
-        {
-          "method": "GET",
-          "status": 200,
-          "url": "https://sdaia.gov.sa/sdaiaapi/api/feedback/getbypageurl?pageURL=/en/mediacenter/events/pages/default.aspx&_=1795255591814",
-          "content_type": "application/json",
-          "resource_type": "xhr",
-          "request_post_data": "",
-          "response_shape": "json-object:Message,Status,ErrorCode,ErrorMessage,Notifications",
-          "preview": "{\"Message\":{\"Title\":\"/en/mediacenter/events/pages/default.aspx\",\"PageId\":\"/en/mediacenter/events/pages/default.aspx\",\"YesCount\":\"0\",\"NoCount\":\"0\",\"TotalCount\":\"0\"},\"Status\":true,\"ErrorCode\":0,\"ErrorMessage\":null,\"Notifications\":null}"
-        },
-        {
-          "method": "GET",
-          "status": 200,
-          "url": "https://sdaia.gov.sa/sdaiaapi/api/feedback/getbypageurl?pageURL=%2Fen%2Fmediacenter%2Fevents%2Fpages%2Fdefault.aspx&_=1795255591813",
-          "content_type": "application/json",
-          "resource_type": "xhr",
-          "request_post_data": "",
-          "response_shape": "json-object:Message,Status,ErrorCode,ErrorMessage,Notifications",
-          "preview": "{\"Message\":{\"Title\":\"/en/mediacenter/events/pages/default.aspx\",\"PageId\":\"/en/mediacenter/events/pages/default.aspx\",\"YesCount\":\"0\",\"NoCount\":\"0\",\"TotalCount\":\"0\"},\"Status\":true,\"ErrorCode\":0,\"ErrorMessage\":null,\"Notifications\":null}"
-        }
-      ],
-      "network_sample": [
-        {
-          "method": "GET",
-          "status": 200,
-          "url": "https://sdaia.gov.sa/sdaiaformapi/api/user/GetNafathInfo?_=1795255591812",
-          "content_type": "text/html",
-          "resource_type": "xhr",
-          "request_post_data": "",
-          "response_shape": "html",
-          "preview": "<html><head><title>Request Rejected</title></head><body>The requested URL was rejected. Please consult with your administrator.<br><br>Your support ID is: 8504265216475320403<br><br><a href='javascript:history.back();'>[Go Back]</a></body></html>"
-        },
-        {
-          "method": "GET",
-          "status": 200,
-          "url": "https://sdaia.gov.sa/sdaiaapi/api/home/geteninternalpagenavdata?_=1795255591811",
-          "content_type": "application/json",
-          "resource_type": "xhr",
-          "request_post_data": "",
-          "response_shape": "json-like-invalid",
-          "preview": "{\"Data\":{\"menu\":[{\"id\":1,\"title\":\"Home\",\"url\":\"/en/default.aspx\",\"hasChild\":\"false\",\"itemSort\":\"1\",\"layout\":null,\"show\":\"true\",\"level2\":[],\"error\":false},{\"id\":2,\"title\":\"SDAIA\",\"url\":\"/en/SDAIA/Pages/default.aspx\",\"hasChild\":\"true\",\"itemSort\":\"2\",\"layout\":\"Grid\",\"show\":\"true\",\"level2\":[{\"id\":1,\"title\":\"About SDAIA\",\"url\":\"/en/SDAIA/about/Pages/default.aspx\",\"menuLevel1\":\"SDAIA\",\"itemSort\":\"1\",\"icon\":\"fal fa-buildings\",\"level3\":[{\"title\":\"About SDAIA\",\"url\":\"/en/SDAIA/about/Pages/About.aspx\",\"itemSort\":\"1\",\"icon\":\"fal fa-buildings\",\"topmenuLevel1\":\"SDAIA\",\"show\":\"true\",\"iconType\":\"Icon\"},{\"title\":\"Board of Directors\",\"url\":\"/en/SDAIA/about/Pages/directorsBoard.aspx\",\"itemSort\":\"2\",\"icon\":\"fal fa-id-card\",\"topmenuLevel1\":\"SDAIA\",\"show\":\"true\",\"iconType\":\"Icon\"},{\"title\":\"Organizational Structure\",\"url\":\"/en/SDAIA/about/Pages/organizationalStructure.aspx\",\"itemSort\":\"3\",\"icon\":\"fal fa-diagram-project\",\"topmenuLevel1\":\"SDAIA\",\"show\":\"true\",\"iconType\":\"Icon\"},{\"title\":\"Budget and Spending\",\"url\":\"/en/SDAIA/about/Pages/Budget.aspx\",\"itemSort\":\"4\",\"icon\":\"fal fa-coins\",\"topmenuLevel1\":\"SDAIA\",\"show\":\"true\",\"iconType\":\"Icon\"},{\"title\":\"Competitions and Purchases\",\"url\":\"/en/SDAIA/about/Pages/CompetitionsAndPurchases.aspx\",\"itemSort\":\"5\",\"icon\":\"fal fa-flag-checkered\",\"topmenuLevel1\":\"SDAIA\",\"show\":\"true\",\"iconType\":\"Icon\"},{\"title\":\"Achievements\",\"url\":\"/en/SDAIA/about/Pages/Achievements.aspx\",\"itemSort\":\"6\",\"icon\":\"fal fa-ballot-check\",\"topmenuLevel1\":\"SDAIA\",\"show\":\"true\",\"iconType\":\"Icon\"},{\"title\":\"Laws and Regulations\",\"url\":\"/en/SDAIA/about/Pages/RegulationsAndPolicies.aspx\",\"itemSort\":\"7\",\"icon\":\"fal fa-clipboard-check\",\"topmenuLevel1\":\"SDAIA\",\"show\":\"true\",\"iconType\":\"Icon\"},{\"title\":\"Artificial Intelligence\",\"url\":\"/en/SDAIA/about/Pages/AboutAI.aspx\",\"itemSort\":\"8\",\"i"
-        },
-        {
-          "method": "GET",
-          "status": 200,
-          "url": "https://sdaia.gov.sa/sdaiaapi/api/feedback/getbypageurl?pageURL=/en/mediacenter/events/pages/default.aspx&_=1795255591814",
-          "content_type": "application/json",
-          "resource_type": "xhr",
-          "request_post_data": "",
-          "response_shape": "json-object:Message,Status,ErrorCode,ErrorMessage,Notifications",
-          "preview": "{\"Message\":{\"Title\":\"/en/mediacenter/events/pages/default.aspx\",\"PageId\":\"/en/mediacenter/events/pages/default.aspx\",\"YesCount\":\"0\",\"NoCount\":\"0\",\"TotalCount\":\"0\"},\"Status\":true,\"ErrorCode\":0,\"ErrorMessage\":null,\"Notifications\":null}"
-        },
-        {
-          "method": "GET",
-          "status": 200,
-          "url": "https://sdaia.gov.sa/sdaiaapi/api/feedback/getbypageurl?pageURL=%2Fen%2Fmediacenter%2Fevents%2Fpages%2Fdefault.aspx&_=1795255591813",
-          "content_type": "application/json",
-          "resource_type": "xhr",
-          "request_post_data": "",
-          "response_shape": "json-object:Message,Status,ErrorCode,ErrorMessage,Notifications",
-          "preview": "{\"Message\":{\"Title\":\"/en/mediacenter/events/pages/default.aspx\",\"PageId\":\"/en/mediacenter/events/pages/default.aspx\",\"YesCount\":\"0\",\"NoCount\":\"0\",\"TotalCount\":\"0\"},\"Status\":true,\"ErrorCode\":0,\"ErrorMessage\":null,\"Notifications\":null}"
-        }
-      ]
-    },
-    {
-      "id": "jazan-chamber-events",
-      "probed_at": "2026-11-21T10:06:44.945Z",
-      "name": "Jazan Chamber Events",
-      "priority": 67,
-      "url": "https://jazancci.org.sa/api/events/calendar/7/2026",
-      "final_url": "https://jazancci.org.sa/api/events/calendar/7/2026",
-      "status": "ok",
-      "http_status": 200,
-      "navigation_error": "",
-      "duration_ms": 5693,
-      "classification": "browser-network-api",
-      "next_action": "ثبت endpoint مرشحًا كجامع مباشر، ثم اكتب extractor من JSON مع اختبار انحدار.",
-      "title": "",
-      "text_bytes": 6875,
-      "html_bytes": 8910,
-      "html_snapshot": "data/raw/browser-probes/jazan-chamber-events-2026-11-21T10-05-45-442Z.html",
-      "screenshot": "data/raw/browser-probes/jazan-chamber-events-2026-11-21T10-05-45-442Z.png",
-      "signals": {
-        "has_next_data": false,
-        "has_nuxt": false,
-        "has_json_ld": false,
-        "has_event_schema": false,
-        "date_snippets": [
-          "nshat-alsghyrh-walmtwsth-\",\"createdAt\":\"2026-07-09T09:13:48.740Z\",\"updatedAt\":\"2026-07-09T09:13:48.740Z\",\"title\":{\"ar\":\"متطلبات نظ",
-          "مال.</p><h2>موعد الورشة:</h2><p><strong>21 يونيو 2025م</strong><br/><strong>10:30 صباحاً</strong><br/><strong>عن بُعد</strong></p><h2",
-          "amber</p></li></ul><p></p>\"},\"startAt\":\"2026-07-21T07:30:00.000Z\",\"endAt\":\"2026-07-21T08:45:00.000Z\",\"location\":null,\"url\":\"https:",
-          "\"altaryf-bkhdmat-mnsh-qwa\",\"createdAt\":\"2026-07-14T09:28:22.851Z\",\"updatedAt\":\"2026-07-14T09:28:22.851Z\",\"title\":{\"ar\":\"التعريف بخ",
-          "مال.</p><h2>موعد الورشة:</h2><p><strong>28 يونيو 2025م</strong><br/><strong>11 صباحاً</strong><br/><strong>عن بُعد</strong></p><p></p",
-          "mber)</p></li></ul><p></p>\"},\"startAt\":\"2026-07-28T08:00:00.000Z\",\"endAt\":\"2026-07-28T10:00:00.000Z\",\"location\":null,\"url\":\"https:",
-          "-alrswm-alhkwmyh-almdfwah\",\"createdAt\":\"2026-07-14T10:07:08.940Z\",\"updatedAt\":\"2026-07-22T09:00:50.930Z\",\"title\":{\"ar\":\"التعريف بم",
-          "ائدات الأعمال.</p><p>موعد الورشة:</p><p>22 يونيو 2025م</p><p>1:00 مساءً</p><p>عن بُعد</p><p></p><p>الجهات المشاركة</p><p>منشآت (Monsh"
-        ],
-        "event_like_links": []
-      },
-      "script_signals": {
-        "next_data_scripts": 0,
-        "nuxt_scripts": 0,
-        "json_ld_scripts": 0,
-        "large_inline_scripts": 0
-      },
-      "network_total": 1,
-      "network_endpoints": [
-        {
-          "method": "GET",
-          "status": 200,
-          "url": "https://jazancci.org.sa/api/events/calendar/7/2026",
-          "content_type": "application/json",
-          "resource_type": "document",
-          "request_post_data": "",
-          "response_shape": "json-like-invalid",
-          "preview": "[{\"id\":17,\"slug\":\"mttlbat-nzam-idarh-almrafq-iso-41001-llmnshat-alsghyrh-walmtwsth-\",\"createdAt\":\"2026-07-09T09:13:48.740Z\",\"updatedAt\":\"2026-07-09T09:13:48.740Z\",\"title\":{\"ar\":\"متطلبات نظام إدارة المرافق ISO 41001 للمنشآت الصغيرة والمتوسطة \",\"en\":\"Requirements for ISO 41001 Facilities Management System for Small and Medium Enterprises\"},\"cover\":{\"name\":\"cover\",\"url\":\"https://jazancci.org.sa/uploads/external-events/f69bc684499f3de3fe11ca2370421475.jpg\",\"type\":\"image/jpeg\",\"path\":\"external-events/f69bc684499f3de3fe11ca2370421475.jpg\",\"size\":856799},\"media\":[],\"description\":{\"ar\":\"<h1>متطلبات نظام إدارة المرافق <strong>ISO 41001</strong> للمنشآت الصغيرة والمتوسطة</h1><h2>محاور الورشة:</h2><ul><li><p>- مقدمة عن إدارة المرافق.</p></li><li><p>- التعريف بمعيار <strong>ISO 41001</strong>.</p></li><li><p>- نطاق وأهداف المعيار.</p></li><li><p>- متطلبات المعيار الأساسية.</p></li><li><p>- خطة التطبيق العملي.</p></li><li><p>- الفوائد والتحديات والاستراتيجيات لتطبيق المعيار للمنشآت الصغيرة والمتوسطة.</p></li></ul><h2>الفئة المستهدفة:</h2><p>رواد ورائدات الأعمال.</p><h2>موعد الورشة:</h2><p><strong>21 يونيو 2025م</strong><br/><strong>10:30 صباحاً</strong><br/><strong>عن بُعد</strong></p><h2></h2><hr/><h3>الجهات المنظمة</h3><ul><li><p>المواصفات السعودية</p></li><li><p>غرفة جازان</p></li><li><p></p></li></ul><p></p>\",\"en\":\"<h1>Requirements for Facilities Management System <strong>ISO 41001</strong> for Small and Medium Enterprises</h1><h2>Workshop Topics:</h2><ul><li><p>- Introduction to Facilities Management.</p></li><li><p>- Introduction to <strong>ISO 41001</strong> Standard.</p></li><li><p>- Scope and Objectives of the Standard.</p></li><li><p>- Key Requirements of the Standard.</p></li><li><p>- Practical Implementation Plan.</p></li><li><p>- Benefits, Challenges, and Strategies for"
-        }
-      ],
-      "network_sample": [
-        {
-          "method": "GET",
-          "status": 200,
-          "url": "https://jazancci.org.sa/api/events/calendar/7/2026",
-          "content_type": "application/json",
-          "resource_type": "document",
-          "request_post_data": "",
-          "response_shape": "json-like-invalid",
-          "preview": "[{\"id\":17,\"slug\":\"mttlbat-nzam-idarh-almrafq-iso-41001-llmnshat-alsghyrh-walmtwsth-\",\"createdAt\":\"2026-07-09T09:13:48.740Z\",\"updatedAt\":\"2026-07-09T09:13:48.740Z\",\"title\":{\"ar\":\"متطلبات نظام إدارة المرافق ISO 41001 للمنشآت الصغيرة والمتوسطة \",\"en\":\"Requirements for ISO 41001 Facilities Management System for Small and Medium Enterprises\"},\"cover\":{\"name\":\"cover\",\"url\":\"https://jazancci.org.sa/uploads/external-events/f69bc684499f3de3fe11ca2370421475.jpg\",\"type\":\"image/jpeg\",\"path\":\"external-events/f69bc684499f3de3fe11ca2370421475.jpg\",\"size\":856799},\"media\":[],\"description\":{\"ar\":\"<h1>متطلبات نظام إدارة المرافق <strong>ISO 41001</strong> للمنشآت الصغيرة والمتوسطة</h1><h2>محاور الورشة:</h2><ul><li><p>- مقدمة عن إدارة المرافق.</p></li><li><p>- التعريف بمعيار <strong>ISO 41001</strong>.</p></li><li><p>- نطاق وأهداف المعيار.</p></li><li><p>- متطلبات المعيار الأساسية.</p></li><li><p>- خطة التطبيق العملي.</p></li><li><p>- الفوائد والتحديات والاستراتيجيات لتطبيق المعيار للمنشآت الصغيرة والمتوسطة.</p></li></ul><h2>الفئة المستهدفة:</h2><p>رواد ورائدات الأعمال.</p><h2>موعد الورشة:</h2><p><strong>21 يونيو 2025م</strong><br/><strong>10:30 صباحاً</strong><br/><strong>عن بُعد</strong></p><h2></h2><hr/><h3>الجهات المنظمة</h3><ul><li><p>المواصفات السعودية</p></li><li><p>غرفة جازان</p></li><li><p></p></li></ul><p></p>\",\"en\":\"<h1>Requirements for Facilities Management System <strong>ISO 41001</strong> for Small and Medium Enterprises</h1><h2>Workshop Topics:</h2><ul><li><p>- Introduction to Facilities Management.</p></li><li><p>- Introduction to <strong>ISO 41001</strong> Standard.</p></li><li><p>- Scope and Objectives of the Standard.</p></li><li><p>- Key Requirements of the Standard.</p></li><li><p>- Practical Implementation Plan.</p></li><li><p>- Benefits, Challenges, and Strategies for"
-        }
-      ]
     }
   ]
 }

@@ -1,14 +1,14 @@
 # EventLive Visit Saudi Image Identity Report
 
-- generated_at: 2026-11-21T10:17:24.417Z
-- pdf_crop_assignments: 19
+- generated_at: 2026-11-23T11:23:42.971Z
+- pdf_crop_assignments: 18
 - verified: 18
-- struck: 1
+- struck: 0
 - slots_seen_this_cycle: 22
 
 ## Struck (fell back to generated cover)
 
-- الضحك في الترجمة - عرض كوميدي مع شون شدياق (visit-saudi-summer-2026-p010-bottom-right.png) - slot-vacated - no dated card currently occupies page 10 bottom-right of https://www.visitsaudi.com/content/dam/documents/saudi-calendar-ar.pdf
+- none
 
 ## Verified
 

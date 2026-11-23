@@ -1,22 +1,22 @@
 {
   "schema": "eventlive.harvest-os-status.v1",
-  "generated_at": "2026-11-21T10:37:56.270Z",
+  "generated_at": "2026-11-23T11:45:44.905Z",
   "status": "NEEDS_WORK",
   "operating_rule": "Probe before new sources; sample before full harvest; Raw collection is not publication; discovery-only never auto-publishes.",
   "totals": {
     "sources": 88,
-    "candidates": 302,
-    "matched_candidates": 292,
+    "candidates": 296,
+    "matched_candidates": 286,
     "auto_publish_sources": 15,
     "candidate_only_sources": 12,
     "partnership_required_sources": 5,
     "blocked_or_closed_sources": 0,
     "manual_review_sources": 56,
-    "collection_attempted": 29,
-    "productive_sources": 11,
+    "collection_attempted": 40,
+    "productive_sources": 12,
     "collector_errors": 9,
-    "chronic_collector_errors": 7,
-    "transient_collector_errors": 2
+    "chronic_collector_errors": 9,
+    "transient_collector_errors": 0
   },
   "policies": {
     "partnership_required": 5,
@@ -25,20 +25,20 @@
     "manual_review": 56
   },
   "candidates_by_gate": {
-    "catalog-review": 292,
+    "catalog-review": 286,
     "duplicate-review": 1,
     "source-evidence": 8,
     "human-review": 1
   },
   "funnel": {
-    "discovered_this_run": 134,
-    "candidate_queue": 302,
-    "evaluated_for_publish": 302,
-    "linked_existing": 286,
-    "published_new": 1,
+    "discovered_this_run": 130,
+    "candidate_queue": 296,
+    "evaluated_for_publish": 296,
+    "linked_existing": 278,
+    "published_new": 3,
     "blocked": 15,
     "secondary_promoted": 0,
-    "secondary_still_blocked": 12
+    "secondary_still_blocked": 11
   },
   "blocked_reasons": {
     "linked catalog row event-rolling-podcast was superseded by dedupe": 2,
@@ -53,64 +53,64 @@
     {
       "id": "mos-events",
       "note": "collector-error: fetch failed [ETIMEDOUT, ENETUNREACH]",
-      "error_streak": 79,
+      "error_streak": 80,
       "kind": "chronic",
       "attempted_this_run": true
     },
     {
       "id": "saudi-pro-league-fixtures",
       "note": "collector-error: fetch failed [EAI_AGAIN]",
-      "error_streak": 59,
+      "error_streak": 60,
       "kind": "chronic",
       "attempted_this_run": true
     },
     {
       "id": "tuwaiq-academy-bootcamps",
       "note": "collector-error: HTTP 403",
-      "error_streak": 56,
+      "error_streak": 57,
       "kind": "chronic",
       "attempted_this_run": true
     },
     {
       "id": "qassim-chamber-events",
       "note": "collector-error: HTTP 403",
-      "error_streak": 25,
+      "error_streak": 26,
       "kind": "chronic",
       "attempted_this_run": true
     },
     {
       "id": "moc-cultural-calendar",
       "note": "collector-error: fetch failed [ETIMEDOUT, ENETUNREACH]; fetch failed [ETIMEDOUT, ENETUNREACH]",
-      "error_streak": 11,
+      "error_streak": 12,
       "kind": "chronic",
       "attempted_this_run": true
     },
     {
       "id": "moc-cultural-subportals",
       "note": "collector-error: fetch failed [ETIMEDOUT, ENETUNREACH]; fetch failed [ETIMEDOUT, ENETUNREACH]",
-      "error_streak": 11,
+      "error_streak": 12,
       "kind": "chronic",
       "attempted_this_run": true
     },
     {
       "id": "monshaat-events",
       "note": "collector-error: fetch failed [UND_ERR_CONNECT_TIMEOUT]; fetch failed [UND_ERR_CONNECT_TIMEOUT]",
-      "error_streak": 10,
+      "error_streak": 11,
       "kind": "chronic",
       "attempted_this_run": true
     },
     {
       "id": "misk-hub-programs",
-      "note": "HTTP 403; live browser recovery deferred by recent failed probe cooldown",
-      "error_streak": 2,
-      "kind": "transient",
+      "note": "collector-error: HTTP 403; live browser recovery deferred by recent failed probe cooldown",
+      "error_streak": 3,
+      "kind": "chronic",
       "attempted_this_run": true
     },
     {
       "id": "saudi-space-agency-events",
-      "note": "fetch failed [ETIMEDOUT, ENETUNREACH]",
-      "error_streak": 2,
-      "kind": "transient",
+      "note": "collector-error: fetch failed [UNABLE_TO_VERIFY_LEAF_SIGNATURE]",
+      "error_streak": 3,
+      "kind": "chronic",
       "attempted_this_run": true
     }
   ],
