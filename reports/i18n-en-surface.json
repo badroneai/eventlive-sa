@@ -1,19 +1,24 @@
 {
   "schema": "eventlive.i18n-en-surface.v1",
-  "generated_at": "2026-11-23T11:42:02.419Z",
-  "pages_scanned": 2183,
-  "pages_with_arabic": 429,
+  "generated_at": "2026-11-24T13:16:50.462Z",
+  "pages_scanned": 2230,
+  "pages_with_arabic": 493,
   "template_regressions": [],
   "script_template_regressions": [],
   "style_template_regressions": [],
   "recurring_surface_debt": [
     {
       "text": "../assets/event-images/الشهادة-الدولية-للحاسب-والإنترنت-ic3-a46ba6d2eb.jpg",
-      "pages": 47,
+      "pages": 46,
       "example": "events/event-إعداد-التقارير-الاحصائية.html",
       "script": true
+    },
+    {
+      "text": "واقف! Momos",
+      "pages": 37,
+      "example": "cities/alula.html"
     }
   ],
-  "recurring_total": 1,
-  "content_prose_lines": 2198
+  "recurring_total": 2,
+  "content_prose_lines": 2428
 }

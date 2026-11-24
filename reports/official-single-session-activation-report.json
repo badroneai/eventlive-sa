@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-23T11:28:34.986Z",
+  "generated_at": "2026-11-24T13:05:00.899Z",
   "max_duration_hours": 8,
   "totals": {
     "activated": 54,
@@ -609,16 +609,16 @@
       "duration_hours": 71.98
     },
     {
-      "id": "event-unstable",
-      "title": "Unstable",
-      "source_label": "MDLBEAST Events",
-      "duration_hours": 24
-    },
-    {
       "id": "event-xp-music-futures-2026",
       "title": "MDLBEAST | Home of Soundstorm, XP & Music in the Middle East",
       "source_label": "MDLBEAST Events",
       "duration_hours": 48
+    },
+    {
+      "id": "event-unstable",
+      "title": "Unstable",
+      "source_label": "MDLBEAST Events",
+      "duration_hours": 24
     },
     {
       "id": "event-soundstorm-26",

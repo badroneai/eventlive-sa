@@ -1,22 +1,390 @@
 {
-  "generated_at": "2026-11-23T11:28:40.291Z",
+  "generated_at": "2026-11-24T13:05:08.172Z",
   "source_ops_report": "reports/source-ops-report.json",
   "source_registry": "data/source_registry.json",
   "totals": {
-    "leads_seen": 8,
-    "tasks": 1,
-    "high_priority": 0
+    "leads_seen": 10,
+    "tasks": 6,
+    "high_priority": 3
   },
   "tasks": [
     {
-      "lead_id": "candidate-eventbrite-saudi-family-offices-vcs-investment-summit-riyadh-invite-only-20261124-e6c951a4",
-      "title": "Family Offices & VCs Investment Summit Riyadh: Invite Only",
+      "lead_id": "candidate-eventbrite-saudi-edugate-riyadh-2nd-edition-international-universities-career-path-fair-20261207-efa05e72",
+      "title": "EDUGATE Riyadh 2nd Edition – International Universities & Career Path Fair",
       "city": "Riyadh",
-      "starts_at": "2026-11-24T09:30:00+03:00",
+      "starts_at": "2026-12-07T10:00:00+03:00",
       "source_label": "Eventbrite Saudi Arabia",
-      "discovery_quality": "watch-lead",
-      "discovery_score": 60,
-      "discovery_notes": "saudi-location-signal, specific-venue, event-topic-fit, non-saudi-eventbrite-domain",
+      "discovery_quality": "strong-lead",
+      "discovery_score": 70,
+      "discovery_notes": "saudi-location-signal, specific-venue, event-topic-fit",
+      "resolver_priority": 122,
+      "target_sources": [
+        {
+          "id": "future-skills-catalog",
+          "name": "Future Skills MCIT Catalogue",
+          "url": "https://futureskills.mcit.gov.sa/ar/catalogue/all?label=&field_main_tracks_target_id_verf=565&field_sub_tracks_target_id=All&field_training_course_level_target_id=All&field_related_skills_target_id=All&field_course_type_value=All&field_training_delivery_value=All&field_training_city_target_id=All&field_job_market_target_id=All",
+          "domain": "futureskills.mcit.gov.sa",
+          "trust_level": "official",
+          "source_type": "government-calendar",
+          "score": 48
+        },
+        {
+          "id": "informa-connect-saudi-events",
+          "name": "Informa Connect Saudi Event Portfolio",
+          "url": "https://informaconnect.com/",
+          "domain": "informaconnect.com",
+          "trust_level": "official",
+          "source_type": "conference-organizer",
+          "score": 48
+        },
+        {
+          "id": "saudi-digital-academy",
+          "name": "Saudi Digital Academy",
+          "url": "https://sda.edu.sa/ar",
+          "domain": "sda.edu.sa",
+          "trust_level": "official",
+          "source_type": "organizer-calendar",
+          "score": 48
+        },
+        {
+          "id": "sdaia-academy-programs",
+          "name": "SDAIA Academy Programs",
+          "url": "https://sdaia.gov.sa/en/Sectors/academy/bootcamps/Pages/default.aspx",
+          "domain": "sdaia.gov.sa",
+          "trust_level": "official",
+          "source_type": "government-calendar",
+          "score": 48
+        },
+        {
+          "id": "sdaia-calendar-events",
+          "name": "SDAIA Calendar and Events",
+          "url": "https://sdaia.gov.sa/en/MediaCenter/Events/Pages/default.aspx",
+          "domain": "sdaia.gov.sa",
+          "trust_level": "official",
+          "source_type": "government-calendar",
+          "score": 48
+        }
+      ],
+      "searches": [
+        {
+          "query": "site:futureskills.mcit.gov.sa \"EDUGATE Riyadh 2nd Edition – International Universities & Career Path Fair\" \"Riyadh\"",
+          "url": "https://www.google.com/search?q=site%3Afutureskills.mcit.gov.sa%20%22EDUGATE%20Riyadh%202nd%20Edition%20%E2%80%93%20International%20Universities%20%26%20Career%20Path%20Fair%22%20%22Riyadh%22"
+        },
+        {
+          "query": "site:informaconnect.com \"EDUGATE Riyadh 2nd Edition – International Universities & Career Path Fair\" \"Riyadh\"",
+          "url": "https://www.google.com/search?q=site%3Ainformaconnect.com%20%22EDUGATE%20Riyadh%202nd%20Edition%20%E2%80%93%20International%20Universities%20%26%20Career%20Path%20Fair%22%20%22Riyadh%22"
+        },
+        {
+          "query": "site:sda.edu.sa \"EDUGATE Riyadh 2nd Edition – International Universities & Career Path Fair\" \"Riyadh\"",
+          "url": "https://www.google.com/search?q=site%3Asda.edu.sa%20%22EDUGATE%20Riyadh%202nd%20Edition%20%E2%80%93%20International%20Universities%20%26%20Career%20Path%20Fair%22%20%22Riyadh%22"
+        },
+        {
+          "query": "site:sdaia.gov.sa \"EDUGATE Riyadh 2nd Edition – International Universities & Career Path Fair\" \"Riyadh\"",
+          "url": "https://www.google.com/search?q=site%3Asdaia.gov.sa%20%22EDUGATE%20Riyadh%202nd%20Edition%20%E2%80%93%20International%20Universities%20%26%20Career%20Path%20Fair%22%20%22Riyadh%22"
+        },
+        {
+          "query": "\"EDUGATE Riyadh 2nd Edition – International Universities & Career Path Fair\" \"Riyadh\" official",
+          "url": "https://www.google.com/search?q=%22EDUGATE%20Riyadh%202nd%20Edition%20%E2%80%93%20International%20Universities%20%26%20Career%20Path%20Fair%22%20%22Riyadh%22%20official"
+        },
+        {
+          "query": "\"EDUGATE Riyadh 2nd Edition – International Universities & Career Path Fair\" \"Riyadh\" organizer",
+          "url": "https://www.google.com/search?q=%22EDUGATE%20Riyadh%202nd%20Edition%20%E2%80%93%20International%20Universities%20%26%20Career%20Path%20Fair%22%20%22Riyadh%22%20organizer"
+        },
+        {
+          "query": "\"EDUGATE Riyadh 2nd Edition – International Universities & Career Path Fair\" \"Riyadh\" tickets",
+          "url": "https://www.google.com/search?q=%22EDUGATE%20Riyadh%202nd%20Edition%20%E2%80%93%20International%20Universities%20%26%20Career%20Path%20Fair%22%20%22Riyadh%22%20tickets"
+        }
+      ],
+      "next_action": "ابحث في المصادر الرسمية المستهدفة واربط lead بمصدر رسمي قبل أي نشر."
+    },
+    {
+      "lead_id": "candidate-eventbrite-saudi-majarahs-10th-meetup-لقاء-مجرة-العاشر-20261125-e9e0120e",
+      "title": "Majarah's 10th Meetup – لقاء مجرة العاشر",
+      "city": "Riyadh",
+      "starts_at": "2026-11-25T18:00:00+03:00",
+      "source_label": "Eventbrite Saudi Arabia",
+      "discovery_quality": "strong-lead",
+      "discovery_score": 70,
+      "discovery_notes": "saudi-location-signal, specific-venue, event-topic-fit",
+      "resolver_priority": 122,
+      "target_sources": [
+        {
+          "id": "code-mcit-programs",
+          "name": "CODE MCIT Programs",
+          "url": "https://code.mcit.gov.sa/en/our-programs",
+          "domain": "code.mcit.gov.sa",
+          "trust_level": "official",
+          "source_type": "government-calendar",
+          "score": 28
+        },
+        {
+          "id": "cst-events-news",
+          "name": "CST Events and News",
+          "url": "https://www.cst.gov.sa/en",
+          "domain": "cst.gov.sa",
+          "trust_level": "official",
+          "source_type": "government-calendar",
+          "score": 28
+        },
+        {
+          "id": "diriyah-season",
+          "name": "Diriyah Season",
+          "url": "https://diriyahseason.sa/en",
+          "domain": "diriyahseason.sa",
+          "trust_level": "official",
+          "source_type": "organizer-calendar",
+          "score": 28
+        },
+        {
+          "id": "enjoy-saudi-events",
+          "name": "Enjoy Saudi Events",
+          "url": "https://enjoy.sa/ar/",
+          "domain": "enjoy.sa",
+          "trust_level": "official",
+          "source_type": "government-calendar",
+          "score": 28
+        },
+        {
+          "id": "fii10-official-program",
+          "name": "FII 10th Edition Official Program",
+          "url": "https://fii-institute.org/conference/fii-10th-edition/",
+          "domain": "fii-institute.org",
+          "trust_level": "official",
+          "source_type": "conference-organizer",
+          "score": 28
+        }
+      ],
+      "searches": [
+        {
+          "query": "site:code.mcit.gov.sa \"Majarah's 10th Meetup – لقاء مجرة العاشر\" \"Riyadh\"",
+          "url": "https://www.google.com/search?q=site%3Acode.mcit.gov.sa%20%22Majarah's%2010th%20Meetup%20%E2%80%93%20%D9%84%D9%82%D8%A7%D8%A1%20%D9%85%D8%AC%D8%B1%D8%A9%20%D8%A7%D9%84%D8%B9%D8%A7%D8%B4%D8%B1%22%20%22Riyadh%22"
+        },
+        {
+          "query": "site:cst.gov.sa \"Majarah's 10th Meetup – لقاء مجرة العاشر\" \"Riyadh\"",
+          "url": "https://www.google.com/search?q=site%3Acst.gov.sa%20%22Majarah's%2010th%20Meetup%20%E2%80%93%20%D9%84%D9%82%D8%A7%D8%A1%20%D9%85%D8%AC%D8%B1%D8%A9%20%D8%A7%D9%84%D8%B9%D8%A7%D8%B4%D8%B1%22%20%22Riyadh%22"
+        },
+        {
+          "query": "site:diriyahseason.sa \"Majarah's 10th Meetup – لقاء مجرة العاشر\" \"Riyadh\"",
+          "url": "https://www.google.com/search?q=site%3Adiriyahseason.sa%20%22Majarah's%2010th%20Meetup%20%E2%80%93%20%D9%84%D9%82%D8%A7%D8%A1%20%D9%85%D8%AC%D8%B1%D8%A9%20%D8%A7%D9%84%D8%B9%D8%A7%D8%B4%D8%B1%22%20%22Riyadh%22"
+        },
+        {
+          "query": "site:enjoy.sa \"Majarah's 10th Meetup – لقاء مجرة العاشر\" \"Riyadh\"",
+          "url": "https://www.google.com/search?q=site%3Aenjoy.sa%20%22Majarah's%2010th%20Meetup%20%E2%80%93%20%D9%84%D9%82%D8%A7%D8%A1%20%D9%85%D8%AC%D8%B1%D8%A9%20%D8%A7%D9%84%D8%B9%D8%A7%D8%B4%D8%B1%22%20%22Riyadh%22"
+        },
+        {
+          "query": "site:fii-institute.org \"Majarah's 10th Meetup – لقاء مجرة العاشر\" \"Riyadh\"",
+          "url": "https://www.google.com/search?q=site%3Afii-institute.org%20%22Majarah's%2010th%20Meetup%20%E2%80%93%20%D9%84%D9%82%D8%A7%D8%A1%20%D9%85%D8%AC%D8%B1%D8%A9%20%D8%A7%D9%84%D8%B9%D8%A7%D8%B4%D8%B1%22%20%22Riyadh%22"
+        },
+        {
+          "query": "\"Majarah's 10th Meetup – لقاء مجرة العاشر\" \"Riyadh\" official",
+          "url": "https://www.google.com/search?q=%22Majarah's%2010th%20Meetup%20%E2%80%93%20%D9%84%D9%82%D8%A7%D8%A1%20%D9%85%D8%AC%D8%B1%D8%A9%20%D8%A7%D9%84%D8%B9%D8%A7%D8%B4%D8%B1%22%20%22Riyadh%22%20official"
+        },
+        {
+          "query": "\"Majarah's 10th Meetup – لقاء مجرة العاشر\" \"Riyadh\" organizer",
+          "url": "https://www.google.com/search?q=%22Majarah's%2010th%20Meetup%20%E2%80%93%20%D9%84%D9%82%D8%A7%D8%A1%20%D9%85%D8%AC%D8%B1%D8%A9%20%D8%A7%D9%84%D8%B9%D8%A7%D8%B4%D8%B1%22%20%22Riyadh%22%20organizer"
+        },
+        {
+          "query": "\"Majarah's 10th Meetup – لقاء مجرة العاشر\" \"Riyadh\" tickets",
+          "url": "https://www.google.com/search?q=%22Majarah's%2010th%20Meetup%20%E2%80%93%20%D9%84%D9%82%D8%A7%D8%A1%20%D9%85%D8%AC%D8%B1%D8%A9%20%D8%A7%D9%84%D8%B9%D8%A7%D8%B4%D8%B1%22%20%22Riyadh%22%20tickets"
+        }
+      ],
+      "next_action": "ابحث في المصادر الرسمية المستهدفة واربط lead بمصدر رسمي قبل أي نشر."
+    },
+    {
+      "lead_id": "candidate-eventbrite-saudi-riyadh-november-meetup-igda-saudi-arabia-20261125-426d4bf8",
+      "title": "Riyadh November Meetup - IGDA Saudi Arabia",
+      "city": "Riyadh",
+      "starts_at": "2026-11-25T19:00:00+03:00",
+      "source_label": "Eventbrite Saudi Arabia",
+      "discovery_quality": "strong-lead",
+      "discovery_score": 70,
+      "discovery_notes": "saudi-location-signal, specific-venue, event-topic-fit",
+      "resolver_priority": 122,
+      "target_sources": [
+        {
+          "id": "code-mcit-programs",
+          "name": "CODE MCIT Programs",
+          "url": "https://code.mcit.gov.sa/en/our-programs",
+          "domain": "code.mcit.gov.sa",
+          "trust_level": "official",
+          "source_type": "government-calendar",
+          "score": 28
+        },
+        {
+          "id": "cst-events-news",
+          "name": "CST Events and News",
+          "url": "https://www.cst.gov.sa/en",
+          "domain": "cst.gov.sa",
+          "trust_level": "official",
+          "source_type": "government-calendar",
+          "score": 28
+        },
+        {
+          "id": "diriyah-season",
+          "name": "Diriyah Season",
+          "url": "https://diriyahseason.sa/en",
+          "domain": "diriyahseason.sa",
+          "trust_level": "official",
+          "source_type": "organizer-calendar",
+          "score": 28
+        },
+        {
+          "id": "enjoy-saudi-events",
+          "name": "Enjoy Saudi Events",
+          "url": "https://enjoy.sa/ar/",
+          "domain": "enjoy.sa",
+          "trust_level": "official",
+          "source_type": "government-calendar",
+          "score": 28
+        },
+        {
+          "id": "fii10-official-program",
+          "name": "FII 10th Edition Official Program",
+          "url": "https://fii-institute.org/conference/fii-10th-edition/",
+          "domain": "fii-institute.org",
+          "trust_level": "official",
+          "source_type": "conference-organizer",
+          "score": 28
+        }
+      ],
+      "searches": [
+        {
+          "query": "site:code.mcit.gov.sa \"Riyadh November Meetup - IGDA Saudi Arabia\" \"Riyadh\"",
+          "url": "https://www.google.com/search?q=site%3Acode.mcit.gov.sa%20%22Riyadh%20November%20Meetup%20-%20IGDA%20Saudi%20Arabia%22%20%22Riyadh%22"
+        },
+        {
+          "query": "site:cst.gov.sa \"Riyadh November Meetup - IGDA Saudi Arabia\" \"Riyadh\"",
+          "url": "https://www.google.com/search?q=site%3Acst.gov.sa%20%22Riyadh%20November%20Meetup%20-%20IGDA%20Saudi%20Arabia%22%20%22Riyadh%22"
+        },
+        {
+          "query": "site:diriyahseason.sa \"Riyadh November Meetup - IGDA Saudi Arabia\" \"Riyadh\"",
+          "url": "https://www.google.com/search?q=site%3Adiriyahseason.sa%20%22Riyadh%20November%20Meetup%20-%20IGDA%20Saudi%20Arabia%22%20%22Riyadh%22"
+        },
+        {
+          "query": "site:enjoy.sa \"Riyadh November Meetup - IGDA Saudi Arabia\" \"Riyadh\"",
+          "url": "https://www.google.com/search?q=site%3Aenjoy.sa%20%22Riyadh%20November%20Meetup%20-%20IGDA%20Saudi%20Arabia%22%20%22Riyadh%22"
+        },
+        {
+          "query": "site:fii-institute.org \"Riyadh November Meetup - IGDA Saudi Arabia\" \"Riyadh\"",
+          "url": "https://www.google.com/search?q=site%3Afii-institute.org%20%22Riyadh%20November%20Meetup%20-%20IGDA%20Saudi%20Arabia%22%20%22Riyadh%22"
+        },
+        {
+          "query": "\"Riyadh November Meetup - IGDA Saudi Arabia\" \"Riyadh\" official",
+          "url": "https://www.google.com/search?q=%22Riyadh%20November%20Meetup%20-%20IGDA%20Saudi%20Arabia%22%20%22Riyadh%22%20official"
+        },
+        {
+          "query": "\"Riyadh November Meetup - IGDA Saudi Arabia\" \"Riyadh\" organizer",
+          "url": "https://www.google.com/search?q=%22Riyadh%20November%20Meetup%20-%20IGDA%20Saudi%20Arabia%22%20%22Riyadh%22%20organizer"
+        },
+        {
+          "query": "\"Riyadh November Meetup - IGDA Saudi Arabia\" \"Riyadh\" tickets",
+          "url": "https://www.google.com/search?q=%22Riyadh%20November%20Meetup%20-%20IGDA%20Saudi%20Arabia%22%20%22Riyadh%22%20tickets"
+        }
+      ],
+      "next_action": "ابحث في المصادر الرسمية المستهدفة واربط lead بمصدر رسمي قبل أي نشر."
+    },
+    {
+      "lead_id": "candidate-eventbrite-saudi-founders-pitch-night-b2b-networking-founders-professionals-20261208-eade835c",
+      "title": "Founders Pitch Night",
+      "city": "Riyadh",
+      "starts_at": "2026-12-08T19:00:00+03:00",
+      "source_label": "Eventbrite Saudi Arabia",
+      "discovery_quality": "strong-lead",
+      "discovery_score": 70,
+      "discovery_notes": "saudi-location-signal, specific-venue, event-topic-fit",
+      "resolver_priority": 109,
+      "target_sources": [
+        {
+          "id": "informa-connect-saudi-events",
+          "name": "Informa Connect Saudi Event Portfolio",
+          "url": "https://informaconnect.com/",
+          "domain": "informaconnect.com",
+          "trust_level": "official",
+          "source_type": "conference-organizer",
+          "score": 48
+        },
+        {
+          "id": "saudi-contractors-authority-events",
+          "name": "Saudi Contractors Authority Events",
+          "url": "https://www.sca.gov.sa/",
+          "domain": "sca.gov.sa",
+          "trust_level": "official",
+          "source_type": "government-calendar",
+          "score": 48
+        },
+        {
+          "id": "asharqia-chamber-events",
+          "name": "Asharqia Chamber Events",
+          "url": "https://www.chamber.org.sa/sites/Arabic/Events/ChamberEvents/Pages/AllChamberEvents.aspx",
+          "domain": "chamber.org.sa",
+          "trust_level": "official",
+          "source_type": "venue-calendar",
+          "score": 40
+        },
+        {
+          "id": "invest-saudi-events",
+          "name": "Invest Saudi Events",
+          "url": "https://www.investsaudi.sa/events",
+          "domain": "investsaudi.sa",
+          "trust_level": "official",
+          "source_type": "government-calendar",
+          "score": 40
+        },
+        {
+          "id": "jcci-events-center",
+          "name": "Jeddah Chamber Exhibitions and Events Center",
+          "url": "https://www.jcci.org.sa/en/المعارض-والفعاليات",
+          "domain": "jcci.org.sa",
+          "trust_level": "venue-official",
+          "source_type": "venue-calendar",
+          "score": 40
+        }
+      ],
+      "searches": [
+        {
+          "query": "site:informaconnect.com \"Founders Pitch Night\" \"Riyadh\"",
+          "url": "https://www.google.com/search?q=site%3Ainformaconnect.com%20%22Founders%20Pitch%20Night%22%20%22Riyadh%22"
+        },
+        {
+          "query": "site:sca.gov.sa \"Founders Pitch Night\" \"Riyadh\"",
+          "url": "https://www.google.com/search?q=site%3Asca.gov.sa%20%22Founders%20Pitch%20Night%22%20%22Riyadh%22"
+        },
+        {
+          "query": "site:chamber.org.sa \"Founders Pitch Night\" \"Riyadh\"",
+          "url": "https://www.google.com/search?q=site%3Achamber.org.sa%20%22Founders%20Pitch%20Night%22%20%22Riyadh%22"
+        },
+        {
+          "query": "site:investsaudi.sa \"Founders Pitch Night\" \"Riyadh\"",
+          "url": "https://www.google.com/search?q=site%3Ainvestsaudi.sa%20%22Founders%20Pitch%20Night%22%20%22Riyadh%22"
+        },
+        {
+          "query": "site:jcci.org.sa \"Founders Pitch Night\" \"Riyadh\"",
+          "url": "https://www.google.com/search?q=site%3Ajcci.org.sa%20%22Founders%20Pitch%20Night%22%20%22Riyadh%22"
+        },
+        {
+          "query": "\"Founders Pitch Night\" \"Riyadh\" official",
+          "url": "https://www.google.com/search?q=%22Founders%20Pitch%20Night%22%20%22Riyadh%22%20official"
+        },
+        {
+          "query": "\"Founders Pitch Night\" \"Riyadh\" organizer",
+          "url": "https://www.google.com/search?q=%22Founders%20Pitch%20Night%22%20%22Riyadh%22%20organizer"
+        },
+        {
+          "query": "\"Founders Pitch Night\" \"Riyadh\" tickets",
+          "url": "https://www.google.com/search?q=%22Founders%20Pitch%20Night%22%20%22Riyadh%22%20tickets"
+        }
+      ],
+      "next_action": "ابحث في المصادر الرسمية المستهدفة واربط lead بمصدر رسمي قبل أي نشر."
+    },
+    {
+      "lead_id": "candidate-eventbrite-saudi-12th-middle-east-banking-ai-analytics-summit-2027-20270120-518da338",
+      "title": "12th Middle East Banking AI & Analytics Summit 2027",
+      "city": "Riyadh",
+      "starts_at": "2027-01-20T08:30:00+03:00",
+      "source_label": "Eventbrite Saudi Arabia",
+      "discovery_quality": "strong-lead",
+      "discovery_score": 70,
+      "discovery_notes": "saudi-location-signal, specific-venue, event-topic-fit",
       "resolver_priority": 107,
       "target_sources": [
         {
@@ -26,16 +394,7 @@
           "domain": "informaconnect.com",
           "trust_level": "official",
           "source_type": "conference-organizer",
-          "score": 112
-        },
-        {
-          "id": "madinah-chamber-events",
-          "name": "Madinah Chamber Events",
-          "url": "https://www.mcci.org.sa/Event/events",
-          "domain": "mcci.org.sa",
-          "trust_level": "official",
-          "source_type": "venue-calendar",
-          "score": 104
+          "score": 86
         },
         {
           "id": "ricec-events",
@@ -44,7 +403,7 @@
           "domain": "ricec.com",
           "trust_level": "venue-official",
           "source_type": "venue-calendar",
-          "score": 102
+          "score": 86
         },
         {
           "id": "sdaia-calendar-events",
@@ -53,50 +412,152 @@
           "domain": "sdaia.gov.sa",
           "trust_level": "official",
           "source_type": "government-calendar",
-          "score": 102
+          "score": 86
         },
         {
-          "id": "asharqia-chamber-events",
-          "name": "Asharqia Chamber Events",
-          "url": "https://www.chamber.org.sa/sites/Arabic/Events/ChamberEvents/Pages/AllChamberEvents.aspx",
-          "domain": "chamber.org.sa",
+          "id": "dhahran-expo-calendar",
+          "name": "Dhahran Expo Calendar",
+          "url": "https://dhahranexpo.com.sa",
+          "domain": "dhahranexpo.com.sa",
+          "trust_level": "venue-official",
+          "source_type": "venue-calendar",
+          "score": 78
+        },
+        {
+          "id": "madinah-chamber-events",
+          "name": "Madinah Chamber Events",
+          "url": "https://www.mcci.org.sa/Event/events",
+          "domain": "mcci.org.sa",
           "trust_level": "official",
           "source_type": "venue-calendar",
-          "score": 94
+          "score": 78
         }
       ],
       "searches": [
         {
-          "query": "site:informaconnect.com \"Family Offices & VCs Investment Summit Riyadh: Invite Only\" \"Riyadh\"",
-          "url": "https://www.google.com/search?q=site%3Ainformaconnect.com%20%22Family%20Offices%20%26%20VCs%20Investment%20Summit%20Riyadh%3A%20Invite%20Only%22%20%22Riyadh%22"
+          "query": "site:informaconnect.com \"12th Middle East Banking AI & Analytics Summit 2027\" \"Riyadh\"",
+          "url": "https://www.google.com/search?q=site%3Ainformaconnect.com%20%2212th%20Middle%20East%20Banking%20AI%20%26%20Analytics%20Summit%202027%22%20%22Riyadh%22"
         },
         {
-          "query": "site:mcci.org.sa \"Family Offices & VCs Investment Summit Riyadh: Invite Only\" \"Riyadh\"",
-          "url": "https://www.google.com/search?q=site%3Amcci.org.sa%20%22Family%20Offices%20%26%20VCs%20Investment%20Summit%20Riyadh%3A%20Invite%20Only%22%20%22Riyadh%22"
+          "query": "site:ricec.com \"12th Middle East Banking AI & Analytics Summit 2027\" \"Riyadh\"",
+          "url": "https://www.google.com/search?q=site%3Aricec.com%20%2212th%20Middle%20East%20Banking%20AI%20%26%20Analytics%20Summit%202027%22%20%22Riyadh%22"
         },
         {
-          "query": "site:ricec.com \"Family Offices & VCs Investment Summit Riyadh: Invite Only\" \"Riyadh\"",
-          "url": "https://www.google.com/search?q=site%3Aricec.com%20%22Family%20Offices%20%26%20VCs%20Investment%20Summit%20Riyadh%3A%20Invite%20Only%22%20%22Riyadh%22"
+          "query": "site:sdaia.gov.sa \"12th Middle East Banking AI & Analytics Summit 2027\" \"Riyadh\"",
+          "url": "https://www.google.com/search?q=site%3Asdaia.gov.sa%20%2212th%20Middle%20East%20Banking%20AI%20%26%20Analytics%20Summit%202027%22%20%22Riyadh%22"
         },
         {
-          "query": "site:sdaia.gov.sa \"Family Offices & VCs Investment Summit Riyadh: Invite Only\" \"Riyadh\"",
-          "url": "https://www.google.com/search?q=site%3Asdaia.gov.sa%20%22Family%20Offices%20%26%20VCs%20Investment%20Summit%20Riyadh%3A%20Invite%20Only%22%20%22Riyadh%22"
+          "query": "site:dhahranexpo.com.sa \"12th Middle East Banking AI & Analytics Summit 2027\" \"Riyadh\"",
+          "url": "https://www.google.com/search?q=site%3Adhahranexpo.com.sa%20%2212th%20Middle%20East%20Banking%20AI%20%26%20Analytics%20Summit%202027%22%20%22Riyadh%22"
         },
         {
-          "query": "site:chamber.org.sa \"Family Offices & VCs Investment Summit Riyadh: Invite Only\" \"Riyadh\"",
-          "url": "https://www.google.com/search?q=site%3Achamber.org.sa%20%22Family%20Offices%20%26%20VCs%20Investment%20Summit%20Riyadh%3A%20Invite%20Only%22%20%22Riyadh%22"
+          "query": "site:mcci.org.sa \"12th Middle East Banking AI & Analytics Summit 2027\" \"Riyadh\"",
+          "url": "https://www.google.com/search?q=site%3Amcci.org.sa%20%2212th%20Middle%20East%20Banking%20AI%20%26%20Analytics%20Summit%202027%22%20%22Riyadh%22"
         },
         {
-          "query": "\"Family Offices & VCs Investment Summit Riyadh: Invite Only\" \"Riyadh\" official",
-          "url": "https://www.google.com/search?q=%22Family%20Offices%20%26%20VCs%20Investment%20Summit%20Riyadh%3A%20Invite%20Only%22%20%22Riyadh%22%20official"
+          "query": "\"12th Middle East Banking AI & Analytics Summit 2027\" \"Riyadh\" official",
+          "url": "https://www.google.com/search?q=%2212th%20Middle%20East%20Banking%20AI%20%26%20Analytics%20Summit%202027%22%20%22Riyadh%22%20official"
         },
         {
-          "query": "\"Family Offices & VCs Investment Summit Riyadh: Invite Only\" \"Riyadh\" organizer",
-          "url": "https://www.google.com/search?q=%22Family%20Offices%20%26%20VCs%20Investment%20Summit%20Riyadh%3A%20Invite%20Only%22%20%22Riyadh%22%20organizer"
+          "query": "\"12th Middle East Banking AI & Analytics Summit 2027\" \"Riyadh\" organizer",
+          "url": "https://www.google.com/search?q=%2212th%20Middle%20East%20Banking%20AI%20%26%20Analytics%20Summit%202027%22%20%22Riyadh%22%20organizer"
         },
         {
-          "query": "\"Family Offices & VCs Investment Summit Riyadh: Invite Only\" \"Riyadh\" tickets",
-          "url": "https://www.google.com/search?q=%22Family%20Offices%20%26%20VCs%20Investment%20Summit%20Riyadh%3A%20Invite%20Only%22%20%22Riyadh%22%20tickets"
+          "query": "\"12th Middle East Banking AI & Analytics Summit 2027\" \"Riyadh\" tickets",
+          "url": "https://www.google.com/search?q=%2212th%20Middle%20East%20Banking%20AI%20%26%20Analytics%20Summit%202027%22%20%22Riyadh%22%20tickets"
+        }
+      ],
+      "next_action": "ابحث في المصادر الرسمية المستهدفة واربط lead بمصدر رسمي قبل أي نشر."
+    },
+    {
+      "lead_id": "candidate-eventbrite-saudi-livestock-future-expo-confrence-2027-20270328-556654be",
+      "title": "Livestock Future Expo & Confrence 2027",
+      "city": "Riyadh",
+      "starts_at": "2027-03-28T15:00:00+03:00",
+      "source_label": "Eventbrite Saudi Arabia",
+      "discovery_quality": "strong-lead",
+      "discovery_score": 70,
+      "discovery_notes": "saudi-location-signal, specific-venue, event-topic-fit",
+      "resolver_priority": 107,
+      "target_sources": [
+        {
+          "id": "rfecc-whats-on",
+          "name": "RFECC What's On",
+          "url": "https://rfecc.sa/whats-on/",
+          "domain": "rfecc.sa",
+          "trust_level": "venue-official",
+          "source_type": "venue-calendar",
+          "score": 76
+        },
+        {
+          "id": "ricec-events",
+          "name": "Riyadh International Convention and Exhibition Center",
+          "url": "https://www.ricec.com/",
+          "domain": "ricec.com",
+          "trust_level": "venue-official",
+          "source_type": "venue-calendar",
+          "score": 76
+        },
+        {
+          "id": "dhahran-expo-calendar",
+          "name": "Dhahran Expo Calendar",
+          "url": "https://dhahranexpo.com.sa",
+          "domain": "dhahranexpo.com.sa",
+          "trust_level": "venue-official",
+          "source_type": "venue-calendar",
+          "score": 68
+        },
+        {
+          "id": "informa-connect-saudi-events",
+          "name": "Informa Connect Saudi Event Portfolio",
+          "url": "https://informaconnect.com/",
+          "domain": "informaconnect.com",
+          "trust_level": "official",
+          "source_type": "conference-organizer",
+          "score": 66
+        },
+        {
+          "id": "saudi-water-authority-events",
+          "name": "Saudi Water Authority Events",
+          "url": "https://www.swa.gov.sa/en/events",
+          "domain": "swa.gov.sa",
+          "trust_level": "official",
+          "source_type": "government-calendar",
+          "score": 66
+        }
+      ],
+      "searches": [
+        {
+          "query": "site:rfecc.sa \"Livestock Future Expo & Confrence 2027\" \"Riyadh\"",
+          "url": "https://www.google.com/search?q=site%3Arfecc.sa%20%22Livestock%20Future%20Expo%20%26%20Confrence%202027%22%20%22Riyadh%22"
+        },
+        {
+          "query": "site:ricec.com \"Livestock Future Expo & Confrence 2027\" \"Riyadh\"",
+          "url": "https://www.google.com/search?q=site%3Aricec.com%20%22Livestock%20Future%20Expo%20%26%20Confrence%202027%22%20%22Riyadh%22"
+        },
+        {
+          "query": "site:dhahranexpo.com.sa \"Livestock Future Expo & Confrence 2027\" \"Riyadh\"",
+          "url": "https://www.google.com/search?q=site%3Adhahranexpo.com.sa%20%22Livestock%20Future%20Expo%20%26%20Confrence%202027%22%20%22Riyadh%22"
+        },
+        {
+          "query": "site:informaconnect.com \"Livestock Future Expo & Confrence 2027\" \"Riyadh\"",
+          "url": "https://www.google.com/search?q=site%3Ainformaconnect.com%20%22Livestock%20Future%20Expo%20%26%20Confrence%202027%22%20%22Riyadh%22"
+        },
+        {
+          "query": "site:swa.gov.sa \"Livestock Future Expo & Confrence 2027\" \"Riyadh\"",
+          "url": "https://www.google.com/search?q=site%3Aswa.gov.sa%20%22Livestock%20Future%20Expo%20%26%20Confrence%202027%22%20%22Riyadh%22"
+        },
+        {
+          "query": "\"Livestock Future Expo & Confrence 2027\" \"Riyadh\" official",
+          "url": "https://www.google.com/search?q=%22Livestock%20Future%20Expo%20%26%20Confrence%202027%22%20%22Riyadh%22%20official"
+        },
+        {
+          "query": "\"Livestock Future Expo & Confrence 2027\" \"Riyadh\" organizer",
+          "url": "https://www.google.com/search?q=%22Livestock%20Future%20Expo%20%26%20Confrence%202027%22%20%22Riyadh%22%20organizer"
+        },
+        {
+          "query": "\"Livestock Future Expo & Confrence 2027\" \"Riyadh\" tickets",
+          "url": "https://www.google.com/search?q=%22Livestock%20Future%20Expo%20%26%20Confrence%202027%22%20%22Riyadh%22%20tickets"
         }
       ],
       "next_action": "ابحث في المصادر الرسمية المستهدفة واربط lead بمصدر رسمي قبل أي نشر."

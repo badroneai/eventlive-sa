@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-23T11:23:42.971Z",
+  "generated_at": "2026-11-24T12:57:54.655Z",
   "catalog": "data/events_catalog.json",
   "candidates": "data/source_candidates.json",
   "manifest": "data/event_image_cache_manifest.json",
@@ -9,12 +9,66 @@
     "min_intersection": 2
   },
   "totals": {
-    "pdf_crop_assignments": 18,
-    "verified": 18,
-    "struck": 0,
-    "slots_seen_this_cycle": 22
+    "pdf_crop_assignments": 65,
+    "verified": 58,
+    "struck": 7,
+    "slots_seen_this_cycle": 71
   },
-  "struck": [],
+  "struck": [
+    {
+      "id": "event-معرض-قلب-البحر",
+      "title": "معرض قلب البحر",
+      "file": "visit-saudi-summer-2026-p060-bottom-left.png",
+      "reason": "slot-vacated",
+      "detail": "no dated card currently occupies page 60 bottom-left of https://www.visitsaudi.com/content/dam/documents/saudi-calendar-ar.pdf"
+    },
+    {
+      "id": "event-نسيم-الخبر",
+      "title": "نسيم الخبر",
+      "file": "visit-saudi-summer-2026-p030-top-left.png",
+      "reason": "slot-vacated",
+      "detail": "no dated card currently occupies page 30 top-left of https://www.visitsaudi.com/content/dam/documents/saudi-calendar-ar.pdf"
+    },
+    {
+      "id": "event-سوالف-الحي",
+      "title": "سوالف الحي",
+      "file": "visit-saudi-summer-2026-p028-top-right.png",
+      "reason": "slot-vacated",
+      "detail": "no dated card currently occupies page 28 top-right of https://www.visitsaudi.com/content/dam/documents/saudi-calendar-ar.pdf"
+    },
+    {
+      "id": "event-موسم-ملح-القصب-الرابع",
+      "title": "موسم ملح القصب الرابع",
+      "file": "visit-saudi-summer-2026-p041-top-left.png",
+      "reason": "identity-mismatch",
+      "detail": "page 41 top-left is now \"عىل خطى ابن بطوطة\"",
+      "matched_tokens": [],
+      "ratio": 0
+    },
+    {
+      "id": "event-in-act-anniversary-act-xi-2",
+      "title": "IN ACT ANNIVERSARY - ACT XI",
+      "file": "visit-saudi-summer-2026-p022-top-right.jpg",
+      "reason": "slot-vacated",
+      "detail": "no dated card currently occupies page 22 top-right of https://www.visitsaudi.com/content/dam/documents/saudi-calendar-ar.pdf"
+    },
+    {
+      "id": "event-يو-إف-سي",
+      "title": "يو إف سي",
+      "file": "visit-saudi-summer-2026-p006-bottom-left.jpg",
+      "reason": "identity-mismatch",
+      "detail": "page 6 bottom-left is now \"يو إف سي\"",
+      "matched_tokens": [],
+      "ratio": 0
+    },
+    {
+      "id": "event-بطولة-الفنون-القتالية",
+      "title": "بطولة الفنون القتالية",
+      "file": "visit-saudi-summer-2026-p030-bottom-left.png",
+      "reason": "slot-vacated",
+      "detail": "no dated card currently occupies page 30 bottom-left of https://www.visitsaudi.com/content/dam/documents/saudi-calendar-ar.pdf"
+    }
+  ],
   "verified": [
     {
       "id": "event-سوق-الثلاثاء-الشعبي",
@@ -38,16 +92,6 @@
       ]
     },
     {
-      "id": "event-معرض-قلب-البحر",
-      "title": "معرض قلب البحر",
-      "file": "visit-saudi-summer-2026-p060-bottom-left.png",
-      "matched_tokens": [
-        "معرض",
-        "قلب",
-        "البحر"
-      ]
-    },
-    {
       "id": "event-معرض-في-تتبّع-ذكريات-غامرة",
       "title": "معرض في تتبّع ذكريات غامرة",
       "file": "visit-saudi-summer-2026-p060-bottom-right.png",
@@ -64,6 +108,15 @@
       "file": "visit-saudi-summer-2026-p012-bottom-right.png",
       "matched_tokens": [
         "الاخطبوطيه"
+      ]
+    },
+    {
+      "id": "event-قصة-بقصة",
+      "title": "قصة بقصة",
+      "file": "visit-saudi-summer-2026-p038-top-right.jpg",
+      "matched_tokens": [
+        "قصه",
+        "بقصه"
       ]
     },
     {
@@ -89,6 +142,19 @@
       ]
     },
     {
+      "id": "event-مسار-المشي-بين-معالم-الحِ-جر-الجيولوُجية",
+      "title": "مسار المشي بين معالم الحِ جر الجيولوُجية",
+      "file": "visit-saudi-summer-2026-p038-top-left.jpg",
+      "matched_tokens": [
+        "مسار",
+        "المشي",
+        "بين",
+        "معالم",
+        "الح",
+        "الجيولوجيه"
+      ]
+    },
+    {
       "id": "event-شتاء-اثراء",
       "title": "شتاء اثراء",
       "file": "visit-saudi-summer-2026-p028-bottom-right.png",
@@ -98,50 +164,151 @@
       ]
     },
     {
-      "id": "event-نسيم-الخبر",
-      "title": "نسيم الخبر",
-      "file": "visit-saudi-summer-2026-p030-top-left.png",
+      "id": "event-من-البلدة-القديمة-إىل-الواحة-تجربة-الكتشاف-التراث",
+      "title": "من البلدة القديمة إىل الواحة – تجربة الكتشاف التراث",
+      "file": "visit-saudi-summer-2026-p038-bottom-right.jpg",
       "matched_tokens": [
-        "نسيم",
-        "الخبر"
+        "البلده",
+        "القديمه",
+        "ايل",
+        "الواحه",
+        "تجربه",
+        "الكتشاف",
+        "التراث"
       ]
     },
     {
-      "id": "event-سوالف-الحي",
-      "title": "سوالف الحي",
-      "file": "visit-saudi-summer-2026-p028-top-right.png",
+      "id": "event-موسم-سباقات-ميدان-فروسية-األحساًء",
+      "title": "موسم سباقات ميدان فروسية األحساًء",
+      "file": "visit-saudi-summer-2026-p058-top-right.jpg",
       "matched_tokens": [
-        "سوالف",
-        "الحي"
+        "موسم",
+        "سباقات",
+        "ميدان",
+        "فروسيه",
+        "االحساء"
+      ]
+    },
+    {
+      "id": "event-سمار-يف-الرياض",
+      "title": "سمار يف الرياض",
+      "file": "visit-saudi-summer-2026-p004-top-left.jpg",
+      "matched_tokens": [
+        "سمار",
+        "الرياض"
+      ]
+    },
+    {
+      "id": "event-دكة-نخل",
+      "title": "دكة نخل",
+      "file": "visit-saudi-summer-2026-p004-bottom-right.jpg",
+      "matched_tokens": [
+        "دكه",
+        "نخل"
+      ]
+    },
+    {
+      "id": "event-ُجُالا-س-يف-الرياض",
+      "title": "ُجُالا س يف الرياض",
+      "file": "visit-saudi-summer-2026-p005-top-left.jpg",
+      "matched_tokens": [
+        "جالا",
+        "الرياض"
       ]
     },
     {
       "id": "event-سيرك-فونتانا",
       "title": "سيرك فونتانا",
-      "file": "visit-saudi-summer-2026-p017-top-right.png",
+      "file": "visit-saudi-summer-2026-p005-bottom-right.jpg",
       "matched_tokens": [
         "سيرك",
         "فونتانا"
       ]
     },
     {
-      "id": "event-موسم-ملح-القصب-الرابع",
-      "title": "موسم ملح القصب الرابع",
-      "file": "visit-saudi-summer-2026-p041-top-left.png",
+      "id": "event-شتاًء-إثراًء-يف-الظهران-اكسبو",
+      "title": "شتاًء إثراًء يف الظهران اكسبو",
+      "file": "visit-saudi-summer-2026-p053-bottom-right.jpg",
       "matched_tokens": [
-        "موسم",
-        "ملح",
-        "القصب",
-        "الرابع"
+        "شتاء",
+        "اثراء",
+        "الظهران",
+        "اكسبو"
       ]
     },
     {
-      "id": "event-in-act-anniversary-act-xi-2",
-      "title": "IN ACT ANNIVERSARY - ACT XI",
-      "file": "visit-saudi-summer-2026-p022-top-right.jpg",
+      "id": "event-متاهة-الحصن",
+      "title": "متاهة الحصن",
+      "file": "visit-saudi-summer-2026-p005-bottom-left.jpg",
       "matched_tokens": [
-        "act",
-        "anniversary"
+        "متاهه",
+        "الحصن"
+      ]
+    },
+    {
+      "id": "event-السينما-عن-قرب",
+      "title": "السينما عن قرب",
+      "file": "visit-saudi-summer-2026-p038-bottom-left.jpg",
+      "matched_tokens": [
+        "السينما",
+        "قرب"
+      ]
+    },
+    {
+      "id": "event-بطولة-تي-100-للترايثلون",
+      "title": "بطولة تي 100 للترايثلون",
+      "file": "visit-saudi-summer-2026-p083-top-right.jpg",
+      "matched_tokens": [
+        "بطوله",
+        "100",
+        "للترايثلون"
+      ]
+    },
+    {
+      "id": "event-أبو-سارة-و-سري-الخالد-يف-ليالي-الديرة-الكوميدية",
+      "title": "أبو سارة و سري الخالد يف ليالي الديرة الكوميدية",
+      "file": "visit-saudi-summer-2026-p006-top-right.jpg",
+      "matched_tokens": [
+        "ابو",
+        "ساره",
+        "سري",
+        "الخالد",
+        "ليالي",
+        "الديره",
+        "الكوميديه"
+      ]
+    },
+    {
+      "id": "event-مكونات-البخور",
+      "title": "تاريخ الفن عىل طريق البخور",
+      "file": "visit-saudi-summer-2026-p039-top-left.jpg",
+      "matched_tokens": [
+        "تاريخ",
+        "الفن",
+        "عيل",
+        "طريق",
+        "البخور"
+      ]
+    },
+    {
+      "id": "event-دخول-مسائي-حصري-إىل-دادان",
+      "title": "دخول مسائي حصري إىل دادان",
+      "file": "visit-saudi-summer-2026-p039-bottom-right.jpg",
+      "matched_tokens": [
+        "دخول",
+        "مسايي",
+        "حصري",
+        "ايل",
+        "دادان"
+      ]
+    },
+    {
+      "id": "event-واقف-momos-2",
+      "title": "واقف! Momos",
+      "file": "visit-saudi-summer-2026-p083-bottom-right.jpg",
+      "matched_tokens": [
+        "واقف",
+        "momos"
       ]
     },
     {
@@ -151,6 +318,28 @@
       "matched_tokens": [
         "واقف",
         "momos"
+      ]
+    },
+    {
+      "id": "event-حفل-أصيل-هميم-يف-فوكالي-الرياض",
+      "title": "حفل صابر الرباعي يف فوكالي الرياض",
+      "file": "visit-saudi-summer-2026-p006-bottom-right.jpg",
+      "matched_tokens": [
+        "حفل",
+        "صابر",
+        "الرباعي",
+        "فوكالي",
+        "الرياض"
+      ]
+    },
+    {
+      "id": "event-ُجولة-األطفال-يف-الحِ-جر",
+      "title": "ُجولة األطفال يف الحِ جر",
+      "file": "visit-saudi-summer-2026-p039-bottom-left.jpg",
+      "matched_tokens": [
+        "جوله",
+        "االطفال",
+        "الح"
       ]
     },
     {
@@ -164,13 +353,200 @@
       ]
     },
     {
-      "id": "event-بطولة-الفنون-القتالية",
-      "title": "بطولة الفنون القتالية",
-      "file": "visit-saudi-summer-2026-p030-bottom-left.png",
+      "id": "event-احتفالية-طنطورة-بالتعاون-مع-صُ-نع-يف-السعودية",
+      "title": "احتفالية طنطورة – بالتعاون مع صُ نع يف السعودية",
+      "file": "visit-saudi-summer-2026-p040-top-right.jpg",
+      "matched_tokens": [
+        "احتفاليه",
+        "طنطوره",
+        "بالتعاون",
+        "السعوديه"
+      ]
+    },
+    {
+      "id": "event-عمل-فني-عام-ضخم-يف-الجديدة",
+      "title": "عمل فني عام ضخم يف الجديدة",
+      "file": "visit-saudi-summer-2026-p040-top-left.jpg",
+      "matched_tokens": [
+        "عمل",
+        "فني",
+        "عام",
+        "ضخم",
+        "الجديده"
+      ]
+    },
+    {
+      "id": "event-عىل-موج-الخبر",
+      "title": "عىل موج الخبر",
+      "file": "visit-saudi-summer-2026-p053-bottom-left.jpg",
+      "matched_tokens": [
+        "عيل",
+        "موج",
+        "الخبر"
+      ]
+    },
+    {
+      "id": "event-مهرُجان-الجاز-يف-ُجدة",
+      "title": "مهرُجان الجاز يف ُجدة",
+      "file": "visit-saudi-summer-2026-p083-bottom-left.jpg",
+      "matched_tokens": [
+        "مهرجان",
+        "الجاز",
+        "جده"
+      ]
+    },
+    {
+      "id": "event-بـــاور-سالب",
+      "title": "بـــاور سالب",
+      "file": "visit-saudi-summer-2026-p004-bottom-left.jpg",
+      "matched_tokens": [
+        "بـــاور",
+        "سالب"
+      ]
+    },
+    {
+      "id": "event-زوفا-بوكسينج-13-14",
+      "title": "زوفا بوكسينج 13 & 14",
+      "file": "visit-saudi-summer-2026-p005-top-right.jpg",
+      "matched_tokens": [
+        "زوفا",
+        "بوكسينج"
+      ]
+    },
+    {
+      "id": "event-كشف-أسرار-الحِ-جر-اآلثار-وحياة-القدماًء",
+      "title": "كشف أسرار الحِ جر: اآلثار وحياة القدماًء",
+      "file": "visit-saudi-summer-2026-p040-bottom-right.jpg",
+      "matched_tokens": [
+        "كشف",
+        "اسرار",
+        "الح",
+        "االثار",
+        "وحياه",
+        "القدماء"
+      ]
+    },
+    {
+      "id": "event-برنس-العالم",
+      "title": "برنس العالم",
+      "file": "visit-saudi-summer-2026-p007-top-right.jpg",
+      "matched_tokens": [
+        "برنس",
+        "العالم"
+      ]
+    },
+    {
+      "id": "event-معرض-الرياض-الدولي-للكتاب",
+      "title": "معرض الرياض الدولي للكتاب",
+      "file": "visit-saudi-summer-2026-p007-top-left.jpg",
+      "matched_tokens": [
+        "معرض",
+        "الرياض",
+        "الدولي",
+        "للكتاب"
+      ]
+    },
+    {
+      "id": "event-معرض-وِرث-الختامي",
+      "title": "معرض وِرث الختامي",
+      "file": "visit-saudi-summer-2026-p007-bottom-right.jpg",
+      "matched_tokens": [
+        "معرض",
+        "ورث",
+        "الختامي"
+      ]
+    },
+    {
+      "id": "event-كور-يونيتي-العال",
+      "title": "كور يونيتي العال",
+      "file": "visit-saudi-summer-2026-p040-bottom-left.jpg",
+      "matched_tokens": [
+        "كور",
+        "يونيتي",
+        "العال"
+      ]
+    },
+    {
+      "id": "event-برنامج-اليوغا",
+      "title": "برنامج اليوغا",
+      "file": "visit-saudi-summer-2026-p041-top-right.jpg",
+      "matched_tokens": [
+        "برنامج",
+        "اليوغا"
+      ]
+    },
+    {
+      "id": "event-سباق-ماراثون-الشرقية-الدولي",
+      "title": "سباق ماراثون الشرقية الدولي",
+      "file": "visit-saudi-summer-2026-p054-top-right.jpg",
+      "matched_tokens": [
+        "سباق",
+        "ماراثون",
+        "الشرقيه",
+        "الدولي"
+      ]
+    },
+    {
+      "id": "event-سك-عىل-والدك",
+      "title": "سك عىل والدك",
+      "file": "visit-saudi-summer-2026-p007-bottom-left.jpg",
+      "matched_tokens": [
+        "عيل",
+        "والدك"
+      ]
+    },
+    {
+      "id": "event-معرض-ثقل-الذكريات",
+      "title": "معرض ثقل الذكريات",
+      "file": "visit-saudi-summer-2026-p008-top-right.jpg",
+      "matched_tokens": [
+        "معرض",
+        "ثقل",
+        "الذكريات"
+      ]
+    },
+    {
+      "id": "event-فعالية-اليوم-العالمي-للغة-العربية",
+      "title": "فعالية اليوم العالمي للغة العربية",
+      "file": "visit-saudi-summer-2026-p008-top-left.jpg",
+      "matched_tokens": [
+        "فعاليه",
+        "اليوم",
+        "العالمي",
+        "للغه",
+        "العربيه"
+      ]
+    },
+    {
+      "id": "event-عىل-خطى-ابن-بطوطة",
+      "title": "عىل خطى ابن بطوطة",
+      "file": "visit-saudi-summer-2026-p041-top-left.jpg",
+      "matched_tokens": [
+        "عيل",
+        "خطي",
+        "ابن",
+        "بطوطه"
+      ]
+    },
+    {
+      "id": "event-ترايثلون-وادي-عشار",
+      "title": "ترايثلون وادي عشار",
+      "file": "visit-saudi-summer-2026-p041-bottom-right.jpg",
+      "matched_tokens": [
+        "ترايثلون",
+        "وادي",
+        "عشار"
+      ]
+    },
+    {
+      "id": "event-بطولة-إي-بري-فورموال-إي-2027",
+      "title": "بطولة إي بري فورموال إي 2027",
+      "file": "visit-saudi-summer-2026-p084-top-right.jpg",
       "matched_tokens": [
         "بطوله",
-        "الفنون",
-        "القتاليه"
+        "بري",
+        "فورموال",
+        "2027"
       ]
     },
     {
@@ -184,6 +560,27 @@
       ]
     },
     {
+      "id": "event-نصف-ماراثون-العال",
+      "title": "نصف ماراثون العال",
+      "file": "visit-saudi-summer-2026-p041-bottom-left.jpg",
+      "matched_tokens": [
+        "نصف",
+        "ماراثون",
+        "العال"
+      ]
+    },
+    {
+      "id": "event-ُجولة-األطفال-يف-البلدة-القديمة",
+      "title": "ُجولة األطفال يف البلدة القديمة",
+      "file": "visit-saudi-summer-2026-p042-top-right.jpg",
+      "matched_tokens": [
+        "جوله",
+        "االطفال",
+        "البلده",
+        "القديمه"
+      ]
+    },
+    {
       "id": "event-مهرجان-تمور-الاحساء-المصنعة",
       "title": "مهرجان تمور الاحساء المصنعة",
       "file": "visit-saudi-summer-2026-p033-bottom-left.png",
@@ -192,6 +589,79 @@
         "تمور",
         "الاحساء",
         "المصنعه"
+      ]
+    },
+    {
+      "id": "event-منتصف-النهار-يف-طنطورة",
+      "title": "منتصف النهار يف طنطورة",
+      "file": "visit-saudi-summer-2026-p042-top-left.jpg",
+      "matched_tokens": [
+        "منتصف",
+        "النهار",
+        "طنطوره"
+      ]
+    },
+    {
+      "id": "event-مهرُجان-تمور-األحساًء-المصنعة",
+      "title": "مهرُجان تمور األحساًء المصنعة",
+      "file": "visit-saudi-summer-2026-p058-bottom-right.jpg",
+      "matched_tokens": [
+        "مهرجان",
+        "تمور",
+        "االحساء",
+        "المصنعه"
+      ]
+    },
+    {
+      "id": "event-الدويتو",
+      "title": "الدويتو",
+      "file": "visit-saudi-summer-2026-p008-bottom-right.jpg",
+      "matched_tokens": [
+        "الدويتو"
+      ]
+    },
+    {
+      "id": "event-فروستي-الند",
+      "title": "فروستي الند",
+      "file": "visit-saudi-summer-2026-p084-top-left.jpg",
+      "matched_tokens": [
+        "فروستي",
+        "الند"
+      ]
+    },
+    {
+      "id": "event-العمدة",
+      "title": "العمدة",
+      "file": "visit-saudi-summer-2026-p008-bottom-left.jpg",
+      "matched_tokens": [
+        "العمده"
+      ]
+    },
+    {
+      "id": "event-قاعة-عطور-اإلرث",
+      "title": "قاعة عطور اإلرث",
+      "file": "visit-saudi-summer-2026-p042-bottom-right.jpg",
+      "matched_tokens": [
+        "قاعه",
+        "عطور",
+        "االرث"
+      ]
+    },
+    {
+      "id": "event-فروزن-كاردز",
+      "title": "فروزن كاردز",
+      "file": "visit-saudi-summer-2026-p084-bottom-right.jpg",
+      "matched_tokens": [
+        "فروزن",
+        "كاردز"
+      ]
+    },
+    {
+      "id": "event-الديفا",
+      "title": "الديفا",
+      "file": "visit-saudi-summer-2026-p009-bottom-right.jpg",
+      "matched_tokens": [
+        "الديفا"
       ]
     }
   ],

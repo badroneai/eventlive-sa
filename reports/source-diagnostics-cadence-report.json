@@ -1,12 +1,12 @@
 {
   "schema": "eventlive.source-diagnostics-cadence.v1",
-  "generated_at": "2026-11-23T10:53:01.334Z",
+  "generated_at": "2026-11-24T12:37:19.299Z",
   "interval_hours": 24,
   "forced": false,
   "due": true,
   "status": "ok",
-  "last_executed_at": "2026-11-23T10:53:01.334Z",
-  "next_due_at": "2026-11-24T10:53:01.334Z",
+  "last_executed_at": "2026-11-24T12:37:19.299Z",
+  "next_due_at": "2026-11-25T12:37:19.299Z",
   "totals": {
     "commands": 3,
     "ok": 3,
@@ -16,9 +16,9 @@
     {
       "id": "source-probe",
       "script": "sources:probe",
-      "started_at": "2026-11-23T10:53:01.335Z",
-      "ended_at": "2026-11-23T10:53:28.631Z",
-      "duration_ms": 27296,
+      "started_at": "2026-11-24T12:37:19.299Z",
+      "ended_at": "2026-11-24T12:38:06.360Z",
+      "duration_ms": 47061,
       "status": "ok",
       "exit_code": 0,
       "error": "",
@@ -27,8 +27,8 @@
         "> node scripts/source-deep-probe.mjs",
         "# EventLive Source Deep Probe",
         "- Probed: 21",
-        "- Extractor-ready: 13",
-        "- Blocked/protected: 8",
+        "- Extractor-ready: 11",
+        "- Blocked/protected: 10",
         "- Report: reports/source-deep-probe-report.md"
       ],
       "stderr_tail": []
@@ -36,9 +36,9 @@
     {
       "id": "source-radars",
       "script": "sources:radars",
-      "started_at": "2026-11-23T10:53:28.632Z",
-      "ended_at": "2026-11-23T10:53:56.902Z",
-      "duration_ms": 28270,
+      "started_at": "2026-11-24T12:38:06.361Z",
+      "ended_at": "2026-11-24T12:38:40.301Z",
+      "duration_ms": 33940,
       "status": "ok",
       "exit_code": 0,
       "error": "",
@@ -58,9 +58,9 @@
     {
       "id": "source-yield",
       "script": "sources:yield",
-      "started_at": "2026-11-23T10:53:56.902Z",
-      "ended_at": "2026-11-23T11:02:44.496Z",
-      "duration_ms": 527594,
+      "started_at": "2026-11-24T12:38:40.301Z",
+      "ended_at": "2026-11-24T12:48:17.140Z",
+      "duration_ms": 576839,
       "status": "ok",
       "exit_code": 0,
       "error": "",
@@ -69,8 +69,8 @@
         "> node scripts/source-yield-report.mjs",
         "# EventLive Source Yield",
         "- Sources attempted: 48",
-        "- Productive sources: 15",
-        "- Zero-yield sources: 33",
+        "- Productive sources: 17",
+        "- Zero-yield sources: 31",
         "- Report: reports/source-yield-report.md"
       ],
       "stderr_tail": []

@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "generated_at": "2026-11-23T11:38:23.865Z",
+  "generated_at": "2026-11-24T13:14:10.778Z",
   "entries": {
     "1f91543d6769d9abda47f221ba86f9f9ebf27443": {
       "source": "Skill Development Initiative",
@@ -99114,598 +99114,6 @@
       "method": "argos-mt",
       "translated_at": "2026-11-21T10:31:52.572Z"
     },
-    "d209192811f2b0a28312eca262ab521462000581": {
-      "source": "الصورة الرسمية: https://www.visitsaudi.com/content/dam/wvs/calendar/arabic-language-exhibition-in-riyadh.jpg",
-      "source_lang": "en",
-      "target_lang": "ar",
-      "text": "الصورة الرسمية: https://www.visitsaudi.com/content/dam/wvs/calendar/arabic-language-exhibition-in-riyadh.jpg",
-      "method": "identity-pass",
-      "translated_at": "2026-11-23T11:35:48.362Z"
-    },
-    "b353732d9851862efda16437acfe18d8578203d6": {
-      "source": "الصورة الرسمية: https://www.visitsaudi.com/content/dam/wvs/calendar/arabic-language-exhibition-for-kids.jpg",
-      "source_lang": "en",
-      "target_lang": "ar",
-      "text": "الصورة الرسمية: https://www.visitsaudi.com/content/dam/wvs/calendar/arabic-language-exhibition-for-kids.jpg",
-      "method": "identity-pass",
-      "translated_at": "2026-11-23T11:35:48.409Z"
-    },
-    "c65be0c41191d1c74223ceaa3a856974426b6cae": {
-      "source": "رابط المصدر: https://hayyjameel.org/whats-on/hayy-cinema-at-saha-2nd-edition/",
-      "source_lang": "en",
-      "target_lang": "ar",
-      "text": "رابط المصدر: https://hayyjameel.org/whats-on/hayy-cinema-at-saha-2nd-edition/",
-      "method": "identity-pass",
-      "translated_at": "2026-11-23T11:35:48.455Z"
-    },
-    "f9fd9a82ff57ac839e84b925ed378dd1cffef72a": {
-      "source": "رابط المصدر: https://www.ithra.com/en/programme/2026/ithra-art-prize-exhibition",
-      "source_lang": "en",
-      "target_lang": "ar",
-      "text": "رابط المصدر: https://www.ithra.com/en/programme/2026/ithra-art-prize-exhibition",
-      "method": "identity-pass",
-      "translated_at": "2026-11-23T11:35:49.115Z"
-    },
-    "0dbcc433747c334a39ac4c54409d301ba6dd7e0d": {
-      "source": "رابط المصدر: https://www.ithra.com/en/programme/2026/art-studio1/open-artistic-space",
-      "source_lang": "en",
-      "target_lang": "ar",
-      "text": "رابط المصدر: https://www.ithra.com/en/programme/2026/art-studio1/open-artistic-space",
-      "method": "identity-pass",
-      "translated_at": "2026-11-23T11:35:49.354Z"
-    },
-    "22c0053d2227e4e69332e817491027652c7d601e": {
-      "source": "رابط المصدر: https://www.ithra.com/en/programme/2026/ithra-museum/ithra-museum-free-wednesday",
-      "source_lang": "en",
-      "target_lang": "ar",
-      "text": "رابط المصدر: https://www.ithra.com/en/programme/2026/ithra-museum/ithra-museum-free-wednesday",
-      "method": "identity-pass",
-      "translated_at": "2026-11-23T11:35:49.419Z"
-    },
-    "90e4c440e40d5d0330ebbd2a9a2725c332d25c0b": {
-      "source": "رابط المصدر: https://www.ithra.com/en/programme/2026/childrens-museum/trolley-show",
-      "source_lang": "en",
-      "target_lang": "ar",
-      "text": "رابط المصدر: https://www.ithra.com/en/programme/2026/childrens-museum/trolley-show",
-      "method": "identity-pass",
-      "translated_at": "2026-11-23T11:35:49.472Z"
-    },
-    "c2bae2762f7358e1b943831b4ce6d616ba09177d": {
-      "source": "رابط المصدر: https://www.ithra.com/en/programme/2026/ithra-museum/aramcorama-exhibit",
-      "source_lang": "en",
-      "target_lang": "ar",
-      "text": "رابط المصدر: https://www.ithra.com/en/programme/2026/ithra-museum/aramcorama-exhibit",
-      "method": "identity-pass",
-      "translated_at": "2026-11-23T11:35:49.619Z"
-    },
-    "b4f9d2a2600a825426bf39128ea8cebf0f86c525": {
-      "source": "رابط المصدر: https://www.ithra.com/en/programme/2026/ithra-museum/praise-artisan",
-      "source_lang": "en",
-      "target_lang": "ar",
-      "text": "رابط المصدر: https://www.ithra.com/en/programme/2026/ithra-museum/praise-artisan",
-      "method": "identity-pass",
-      "translated_at": "2026-11-23T11:35:49.667Z"
-    },
-    "05ec6274c4575366b178a8c1ef99a524968e7b13": {
-      "source": "رابط المصدر: https://www.ithra.com/en/programme/2026/trivia-night-energy-memory",
-      "source_lang": "en",
-      "target_lang": "ar",
-      "text": "رابط المصدر: https://www.ithra.com/en/programme/2026/trivia-night-energy-memory",
-      "method": "identity-pass",
-      "translated_at": "2026-11-23T11:35:49.714Z"
-    },
-    "a0767b7163a2e175ad2a8a4cfc8a8cadf29cbf43": {
-      "source": "رابط المصدر: https://www.ithra.com/en/programme/2026/childrens-museum/imagination-oasis",
-      "source_lang": "en",
-      "target_lang": "ar",
-      "text": "رابط المصدر: https://www.ithra.com/en/programme/2026/childrens-museum/imagination-oasis",
-      "method": "identity-pass",
-      "translated_at": "2026-11-23T11:35:49.761Z"
-    },
-    "f45cdff5594d92d99802a4be2fe1280d328254f0": {
-      "source": "رابط المصدر: https://www.ithra.com/en/programme/2026/ithras-kids-community",
-      "source_lang": "en",
-      "target_lang": "ar",
-      "text": "رابط المصدر: https://www.ithra.com/en/programme/2026/ithras-kids-community",
-      "method": "identity-pass",
-      "translated_at": "2026-11-23T11:35:49.834Z"
-    },
-    "9521a0c6c468d18971821ab7e0daf599a758257a": {
-      "source": "رابط المصدر: https://www.ithra.com/en/programme/2026/treasure-hunt/adventure-around-kingdom",
-      "source_lang": "en",
-      "target_lang": "ar",
-      "text": "رابط المصدر: https://www.ithra.com/en/programme/2026/treasure-hunt/adventure-around-kingdom",
-      "method": "identity-pass",
-      "translated_at": "2026-11-23T11:35:50.003Z"
-    },
-    "c8a439fbadb50d6a8570ef403a0ec1cfb98d19de": {
-      "source": "رابط المصدر: https://www.ithra.com/en/programme/2026/childrens-book-club",
-      "source_lang": "en",
-      "target_lang": "ar",
-      "text": "رابط المصدر: https://www.ithra.com/en/programme/2026/childrens-book-club",
-      "method": "identity-pass",
-      "translated_at": "2026-11-23T11:35:50.060Z"
-    },
-    "198778ee3a026d774665e772ad02d620441e9693": {
-      "source": "رابط المصدر: https://www.ithra.com/en/programme/2026/family-game/family-game-within-five-seconds",
-      "source_lang": "en",
-      "target_lang": "ar",
-      "text": "رابط المصدر: https://www.ithra.com/en/programme/2026/family-game/family-game-within-five-seconds",
-      "method": "identity-pass",
-      "translated_at": "2026-11-23T11:35:50.129Z"
-    },
-    "74174c95b44ef3377d3f66fda0860e0dde3042b1": {
-      "source": "رابط المصدر: https://sdaia.gov.sa/en/MediaCenter/Events/Pages/EventsDetails.aspx?EventID=149",
-      "source_lang": "en",
-      "target_lang": "ar",
-      "text": "رابط المصدر: https://sdaia.gov.sa/en/MediaCenter/Events/Pages/EventsDetails.aspx?EventID=149",
-      "method": "identity-pass",
-      "translated_at": "2026-11-23T11:35:50.185Z"
-    },
-    "1b6d9690d2be78a1c903fec548b6ed7644461978": {
-      "source": "الصورة الرسمية: https://www.visitsaudi.com/content/dam/wvs/calendar/katheeb-trip-to-al-asfar-lake.jpg",
-      "source_lang": "en",
-      "target_lang": "ar",
-      "text": "الصورة الرسمية: https://www.visitsaudi.com/content/dam/wvs/calendar/katheeb-trip-to-al-asfar-lake.jpg",
-      "method": "identity-pass",
-      "translated_at": "2026-11-23T11:35:50.232Z"
-    },
-    "e5924fc9d08364ba54e7acddb3dbc370aa3ca483": {
-      "source": "رابط المصدر: https://hayyjameel.org/whats-on/jameel-library-opening-programme-at-the-edge-of-renewal-with-the-khaleeji-womens-library-and-archive/",
-      "source_lang": "en",
-      "target_lang": "ar",
-      "text": "رابط المصدر: https://hayyjameel.org/whats-on/jameel-library-opening-programme-at-the-edge-of-renewal-with-the-khaleeji-womens-library-and-archive/",
-      "method": "identity-pass",
-      "translated_at": "2026-11-23T11:35:50.308Z"
-    },
-    "7cf46ce4928fa69ab6fe9d05a5594bd3a665d33c": {
-      "source": "رابط المصدر: https://www.visitsaudi.com/en/riyadh/events/riyadh-racing-season",
-      "source_lang": "en",
-      "target_lang": "ar",
-      "text": "رابط المصدر: https://www.visitsaudi.com/en/riyadh/events/riyadh-racing-season",
-      "method": "identity-pass",
-      "translated_at": "2026-11-23T11:35:50.422Z"
-    },
-    "2fc77f5effa74957868944dbeb2c1f211e927bd0": {
-      "source": "رابط المصدر: https://kaustcentral-eventscalendar-userwebsite.cfapps.eu20.hana.ondemand.com/dashboard/event-details/573",
-      "source_lang": "en",
-      "target_lang": "ar",
-      "text": "رابط المصدر: https://kaustcentral-eventscalendar-userwebsite.cfapps.eu20.hana.ondemand.com/dashboard/event-details/573",
-      "method": "identity-pass",
-      "translated_at": "2026-11-23T11:35:50.538Z"
-    },
-    "ce79dfabce3e8aa5cfa07f380bec430b9d5ff3c7": {
-      "source": "رابط المصدر: https://www.ithra.com/en/programme/2026/ithra-winter-season",
-      "source_lang": "en",
-      "target_lang": "ar",
-      "text": "رابط المصدر: https://www.ithra.com/en/programme/2026/ithra-winter-season",
-      "method": "identity-pass",
-      "translated_at": "2026-11-23T11:35:50.636Z"
-    },
-    "d32f41344de13f6990252db4df9c83bbe557d724": {
-      "source": "رابط المصدر: https://www.ithra.com/en/programme/2026/childrens-museum/champions-challenge",
-      "source_lang": "en",
-      "target_lang": "ar",
-      "text": "رابط المصدر: https://www.ithra.com/en/programme/2026/childrens-museum/champions-challenge",
-      "method": "identity-pass",
-      "translated_at": "2026-11-23T11:35:50.725Z"
-    },
-    "60aae30605683d88cf677d432a746a0ee6604544": {
-      "source": "رابط المصدر: https://hayyjameel.org/whats-on/jameel-library-november-community-programmes-1/",
-      "source_lang": "en",
-      "target_lang": "ar",
-      "text": "رابط المصدر: https://hayyjameel.org/whats-on/jameel-library-november-community-programmes-1/",
-      "method": "identity-pass",
-      "translated_at": "2026-11-23T11:35:50.790Z"
-    },
-    "632e423a560396bd3acf64042ca09760827e9378": {
-      "source": "رابط المصدر: https://hayyjameel.org/whats-on/hayy-explorers-november-programmes/",
-      "source_lang": "en",
-      "target_lang": "ar",
-      "text": "رابط المصدر: https://hayyjameel.org/whats-on/hayy-explorers-november-programmes/",
-      "method": "identity-pass",
-      "translated_at": "2026-11-23T11:35:50.849Z"
-    },
-    "5ef7c8be5b9b95919e269fab76d5cc3725183544": {
-      "source": "رابط المصدر: https://www.visitsaudi.com/en/al-ahsa/events/palms-village-in-al-ahsa",
-      "source_lang": "en",
-      "target_lang": "ar",
-      "text": "رابط المصدر: https://www.visitsaudi.com/en/al-ahsa/events/palms-village-in-al-ahsa",
-      "method": "identity-pass",
-      "translated_at": "2026-11-23T11:35:50.961Z"
-    },
-    "5e199baf23a50ce05a3eb360873f3214add0d951": {
-      "source": "رابط المصدر: https://www.ithra.com/en/programme/2026/ithra-winter-at-dhahran-expo/artistic-maze",
-      "source_lang": "en",
-      "target_lang": "ar",
-      "text": "رابط المصدر: https://www.ithra.com/en/programme/2026/ithra-winter-at-dhahran-expo/artistic-maze",
-      "method": "identity-pass",
-      "translated_at": "2026-11-23T11:35:51.022Z"
-    },
-    "519cb4d8712e02fbdb7aab51222ae9eeef19f6cc": {
-      "source": "رابط المصدر: https://www.ithra.com/en/programme/2026/ithra-winter-at-dhahran-expo/childrens-cafe",
-      "source_lang": "en",
-      "target_lang": "ar",
-      "text": "رابط المصدر: https://www.ithra.com/en/programme/2026/ithra-winter-at-dhahran-expo/childrens-cafe",
-      "method": "identity-pass",
-      "translated_at": "2026-11-23T11:35:51.067Z"
-    },
-    "34f5a8c57545e677229d6ed1a91ddea0d3d119da": {
-      "source": "رابط المصدر: https://www.ithra.com/en/programme/2026/ithra-winter-at-dhahran-expo/studio/creativity-space",
-      "source_lang": "en",
-      "target_lang": "ar",
-      "text": "رابط المصدر: https://www.ithra.com/en/programme/2026/ithra-winter-at-dhahran-expo/studio/creativity-space",
-      "method": "identity-pass",
-      "translated_at": "2026-11-23T11:35:51.116Z"
-    },
-    "8023b4cb3e0fc0c1a6f4a8b3796ec5d075d4d7fa": {
-      "source": "رابط المصدر: https://www.ithra.com/en/programme/2026/ithra-winter-at-dhahran-expo/highlights-exhibition",
-      "source_lang": "en",
-      "target_lang": "ar",
-      "text": "رابط المصدر: https://www.ithra.com/en/programme/2026/ithra-winter-at-dhahran-expo/highlights-exhibition",
-      "method": "identity-pass",
-      "translated_at": "2026-11-23T11:35:51.160Z"
-    },
-    "a1a8d07faa40f87bb09967d9a6942d370453a3c5": {
-      "source": "رابط المصدر: https://www.ithra.com/en/programme/2026/ithra-winter-at-dhahran-expo/outdoor-stage",
-      "source_lang": "en",
-      "target_lang": "ar",
-      "text": "رابط المصدر: https://www.ithra.com/en/programme/2026/ithra-winter-at-dhahran-expo/outdoor-stage",
-      "method": "identity-pass",
-      "translated_at": "2026-11-23T11:35:51.208Z"
-    },
-    "29698848724af250d2784ad70d03532689e5ea97": {
-      "source": "رابط المصدر: https://www.ithra.com/en/programme/2026/ithra-winter-at-dhahran-expo/words-waves",
-      "source_lang": "en",
-      "target_lang": "ar",
-      "text": "رابط المصدر: https://www.ithra.com/en/programme/2026/ithra-winter-at-dhahran-expo/words-waves",
-      "method": "identity-pass",
-      "translated_at": "2026-11-23T11:35:51.252Z"
-    },
-    "f1cc23c220845c7c0140ba9466864c3eb246a0d9": {
-      "source": "رابط المصدر: https://www.ithra.com/en/programme/2026/ithra-winter-at-dhahran-expo/roaming-performances",
-      "source_lang": "en",
-      "target_lang": "ar",
-      "text": "رابط المصدر: https://www.ithra.com/en/programme/2026/ithra-winter-at-dhahran-expo/roaming-performances",
-      "method": "identity-pass",
-      "translated_at": "2026-11-23T11:35:51.296Z"
-    },
-    "b029925364af647f8476ac21fc92d8258a4a22f2": {
-      "source": "رابط المصدر: https://www.ithra.com/en/programme/2026/printing-house/big-printing-experience",
-      "source_lang": "en",
-      "target_lang": "ar",
-      "text": "رابط المصدر: https://www.ithra.com/en/programme/2026/printing-house/big-printing-experience",
-      "method": "identity-pass",
-      "translated_at": "2026-11-23T11:35:51.345Z"
-    },
-    "1464c408df1d79c407fdc0cd431118378441ea07": {
-      "source": "رابط المصدر: https://www.ithra.com/en/programme/2026/ithra-winter-at-dhahran-expo/1-2-3-lets-ryhme",
-      "source_lang": "en",
-      "target_lang": "ar",
-      "text": "رابط المصدر: https://www.ithra.com/en/programme/2026/ithra-winter-at-dhahran-expo/1-2-3-lets-ryhme",
-      "method": "identity-pass",
-      "translated_at": "2026-11-23T11:35:51.390Z"
-    },
-    "3980901ec8d8ba3d1377f81ee699d5c45f0a36b5": {
-      "source": "رابط المصدر: https://www.ithra.com/en/programme/2026/ithra-winter-at-dhahran-expo/little-spotlight-zone/storytime",
-      "source_lang": "en",
-      "target_lang": "ar",
-      "text": "رابط المصدر: https://www.ithra.com/en/programme/2026/ithra-winter-at-dhahran-expo/little-spotlight-zone/storytime",
-      "method": "identity-pass",
-      "translated_at": "2026-11-23T11:35:51.439Z"
-    },
-    "52bfea8d0bb1523ac8afff17c5ba0394ddef11f0": {
-      "source": "رابط المصدر: https://www.ithra.com/en/programme/2026/ithra-winter-at-dhahran-expo/little-spotlight-zone/puppet-show",
-      "source_lang": "en",
-      "target_lang": "ar",
-      "text": "رابط المصدر: https://www.ithra.com/en/programme/2026/ithra-winter-at-dhahran-expo/little-spotlight-zone/puppet-show",
-      "method": "identity-pass",
-      "translated_at": "2026-11-23T11:35:51.483Z"
-    },
-    "a3e317eb0a07e44d4ed2656b5452e9dcbf87a1b7": {
-      "source": "رابط المصدر: https://www.visitsaudi.com/en/eastern-province/events/ithra-winter-season",
-      "source_lang": "en",
-      "target_lang": "ar",
-      "text": "رابط المصدر: https://www.visitsaudi.com/en/eastern-province/events/ithra-winter-season",
-      "method": "identity-pass",
-      "translated_at": "2026-11-23T11:35:51.533Z"
-    },
-    "edc7f7f1ff8ac6848d01154adb6a6d81338641bc": {
-      "source": "رابط المصدر: https://www.ithra.com/en/programme/2026/ithra-winter-at-dhahran-expo/knot-scale",
-      "source_lang": "en",
-      "target_lang": "ar",
-      "text": "رابط المصدر: https://www.ithra.com/en/programme/2026/ithra-winter-at-dhahran-expo/knot-scale",
-      "method": "identity-pass",
-      "translated_at": "2026-11-23T11:35:51.590Z"
-    },
-    "55805883c7c0c241de5bf448e8f7dcb41f776303": {
-      "source": "رابط المصدر: https://www.ithra.com/en/programme/2026/ithra-winter-at-dhahran-expo/artistic-maze-lens-landscapes",
-      "source_lang": "en",
-      "target_lang": "ar",
-      "text": "رابط المصدر: https://www.ithra.com/en/programme/2026/ithra-winter-at-dhahran-expo/artistic-maze-lens-landscapes",
-      "method": "identity-pass",
-      "translated_at": "2026-11-23T11:35:51.634Z"
-    },
-    "d81ccfef7d13613ad36aaacdf5a2503fdc3d9233": {
-      "source": "رابط المصدر: https://www.ithra.com/en/programme/2026/ithra-winter-at-dhahran-expo/studio/rammed-earth-workshop",
-      "source_lang": "en",
-      "target_lang": "ar",
-      "text": "رابط المصدر: https://www.ithra.com/en/programme/2026/ithra-winter-at-dhahran-expo/studio/rammed-earth-workshop",
-      "method": "identity-pass",
-      "translated_at": "2026-11-23T11:35:51.683Z"
-    },
-    "905fdcd1584d8de56a4176bd13655ed00a7d1408": {
-      "source": "رابط المصدر: https://www.ithra.com/en/programme/2026/ithra-winter-at-dhahran-expo/little-spotlight-zone/storyteller-day",
-      "source_lang": "en",
-      "target_lang": "ar",
-      "text": "رابط المصدر: https://www.ithra.com/en/programme/2026/ithra-winter-at-dhahran-expo/little-spotlight-zone/storyteller-day",
-      "method": "identity-pass",
-      "translated_at": "2026-11-23T11:35:51.726Z"
-    },
-    "a0dddae1294a1f41a1f254638680cdbe71d0ab4d": {
-      "source": "رابط المصدر: https://www.ithra.com/en/programme/2026/ithra-winter-at-dhahran-expo/1-2-3-little-space-me",
-      "source_lang": "en",
-      "target_lang": "ar",
-      "text": "رابط المصدر: https://www.ithra.com/en/programme/2026/ithra-winter-at-dhahran-expo/1-2-3-little-space-me",
-      "method": "identity-pass",
-      "translated_at": "2026-11-23T11:35:51.771Z"
-    },
-    "3b87594bc26860b626582301b029ba60c4d944c1": {
-      "source": "رابط المصدر: https://www.ithra.com/en/programme/2026/ithra-winter-at-dhahran-expo/your-book-minute",
-      "source_lang": "en",
-      "target_lang": "ar",
-      "text": "رابط المصدر: https://www.ithra.com/en/programme/2026/ithra-winter-at-dhahran-expo/your-book-minute",
-      "method": "identity-pass",
-      "translated_at": "2026-11-23T11:35:51.819Z"
-    },
-    "9880221ec3686f7080ad047ce012ccbaac1ba0c3": {
-      "source": "رابط المصدر: https://www.ithra.com/en/programme/2026/ithra-winter-at-dhahran-expo/indoor-stage",
-      "source_lang": "en",
-      "target_lang": "ar",
-      "text": "رابط المصدر: https://www.ithra.com/en/programme/2026/ithra-winter-at-dhahran-expo/indoor-stage",
-      "method": "identity-pass",
-      "translated_at": "2026-11-23T11:35:51.863Z"
-    },
-    "987cedaf668c07a28e5edebfdf3068dfac9e1f92": {
-      "source": "رابط المصدر: https://www.ithra.com/en/programme/2026/ithra-winter-at-dhahran-expo/studio/sand-sculpturing",
-      "source_lang": "en",
-      "target_lang": "ar",
-      "text": "رابط المصدر: https://www.ithra.com/en/programme/2026/ithra-winter-at-dhahran-expo/studio/sand-sculpturing",
-      "method": "identity-pass",
-      "translated_at": "2026-11-23T11:35:51.912Z"
-    },
-    "06abf15039a0688a75c5cbbaa5eedf70792acdc5": {
-      "source": "رابط المصدر: https://www.ithra.com/en/programme/2026/ithra-winter-at-dhahran-expo/food-experience",
-      "source_lang": "en",
-      "target_lang": "ar",
-      "text": "رابط المصدر: https://www.ithra.com/en/programme/2026/ithra-winter-at-dhahran-expo/food-experience",
-      "method": "identity-pass",
-      "translated_at": "2026-11-23T11:35:51.960Z"
-    },
-    "6b79647ed36a4e86fab23d6328169c9fcd9a7c12": {
-      "source": "رابط المصدر: https://www.ithra.com/en/programme/2026/ithra-winter-at-dhahran-expo/little-spotlight-zone/shadow-storytelling",
-      "source_lang": "en",
-      "target_lang": "ar",
-      "text": "رابط المصدر: https://www.ithra.com/en/programme/2026/ithra-winter-at-dhahran-expo/little-spotlight-zone/shadow-storytelling",
-      "method": "identity-pass",
-      "translated_at": "2026-11-23T11:35:52.055Z"
-    },
-    "6af4075f142ed6a7914e63daa3f13dd212048e78": {
-      "source": "رابط المصدر: https://www.ithra.com/en/programme/2026/workshop-library/once-upon-postcard",
-      "source_lang": "en",
-      "target_lang": "ar",
-      "text": "رابط المصدر: https://www.ithra.com/en/programme/2026/workshop-library/once-upon-postcard",
-      "method": "identity-pass",
-      "translated_at": "2026-11-23T11:35:52.111Z"
-    },
-    "a9bff45cc7db689605c3a1a56f702049214019aa": {
-      "source": "رابط المصدر: https://www.ithra.com/en/programme/2026/ithra-winter-at-dhahran-expo/khoos-workshop-palm-weaving",
-      "source_lang": "en",
-      "target_lang": "ar",
-      "text": "رابط المصدر: https://www.ithra.com/en/programme/2026/ithra-winter-at-dhahran-expo/khoos-workshop-palm-weaving",
-      "method": "identity-pass",
-      "translated_at": "2026-11-23T11:35:52.156Z"
-    },
-    "f1906459f85344b0ffcd1d2f5112b29134a284c5": {
-      "source": "رابط المصدر: https://www.ithra.com/en/programme/2026/printing-house/your-stickers-your-way",
-      "source_lang": "en",
-      "target_lang": "ar",
-      "text": "رابط المصدر: https://www.ithra.com/en/programme/2026/printing-house/your-stickers-your-way",
-      "method": "identity-pass",
-      "translated_at": "2026-11-23T11:35:52.204Z"
-    },
-    "697028736dfe6a089da49755ee77b9e774385518": {
-      "source": "رابط المصدر: https://www.ithra.com/en/programme/2026/printing-house/birds-postcard-studio",
-      "source_lang": "en",
-      "target_lang": "ar",
-      "text": "رابط المصدر: https://www.ithra.com/en/programme/2026/printing-house/birds-postcard-studio",
-      "method": "identity-pass",
-      "translated_at": "2026-11-23T11:35:52.248Z"
-    },
-    "5556df6516e30b149fdcd33a50117e661c020902": {
-      "source": "رابط المصدر: https://www.ithra.com/en/programme/2026/ithra-winter-at-dhahran-expo/little-spotlight-zone/family-game-dots-letters",
-      "source_lang": "en",
-      "target_lang": "ar",
-      "text": "رابط المصدر: https://www.ithra.com/en/programme/2026/ithra-winter-at-dhahran-expo/little-spotlight-zone/family-game-dots-letters",
-      "method": "identity-pass",
-      "translated_at": "2026-11-23T11:35:52.295Z"
-    },
-    "afff711cf4797a0d3082a1910e0782ce7a12eef2": {
-      "source": "رابط المصدر: https://www.ithra.com/en/programme/2026/ithra-winter-at-dhahran-expo/studio/mosaic-mural",
-      "source_lang": "en",
-      "target_lang": "ar",
-      "text": "رابط المصدر: https://www.ithra.com/en/programme/2026/ithra-winter-at-dhahran-expo/studio/mosaic-mural",
-      "method": "identity-pass",
-      "translated_at": "2026-11-23T11:35:52.346Z"
-    },
-    "1b68567aa9ab84c54f413552b3f8361abee93f1c": {
-      "source": "رابط المصدر: https://events.jazancci.org.sa/ar/events/astratyjyat-alnmw-abr-snap-chat-tiktok-walthkaa-alastnaay",
-      "source_lang": "en",
-      "target_lang": "ar",
-      "text": "رابط المصدر: https://events.jazancci.org.sa/ar/events/astratyjyat-alnmw-abr-snap-chat-tiktok-walthkaa-alastnaay",
-      "method": "identity-pass",
-      "translated_at": "2026-11-23T11:35:52.398Z"
-    },
-    "16776d313d520d34f597267453cd9a73371be1b5": {
-      "source": "رابط المصدر: https://www.ithra.com/en/programme/2026/ithra-winter-at-dhahran-expo/little-spotlight-zone/family-game-audience-challenges",
-      "source_lang": "en",
-      "target_lang": "ar",
-      "text": "رابط المصدر: https://www.ithra.com/en/programme/2026/ithra-winter-at-dhahran-expo/little-spotlight-zone/family-game-audience-challenges",
-      "method": "identity-pass",
-      "translated_at": "2026-11-23T11:35:52.447Z"
-    },
-    "85dc285187be3c94c7f2ae9c52d00615434400e0": {
-      "source": "رابط المصدر: https://www.ithra.com/en/programme/2026/ithra-winter-at-dhahran-expo/little-spotlight-zone/tales-stage",
-      "source_lang": "en",
-      "target_lang": "ar",
-      "text": "رابط المصدر: https://www.ithra.com/en/programme/2026/ithra-winter-at-dhahran-expo/little-spotlight-zone/tales-stage",
-      "method": "identity-pass",
-      "translated_at": "2026-11-23T11:35:52.492Z"
-    },
-    "f0c269000de0ff6541764d570c892a4c9b09ba22": {
-      "source": "رابط المصدر: https://www.experiencealula.com/en/whats-on/events/hegra-childrens-tour",
-      "source_lang": "en",
-      "target_lang": "ar",
-      "text": "رابط المصدر: https://www.experiencealula.com/en/whats-on/events/hegra-childrens-tour",
-      "method": "identity-pass",
-      "translated_at": "2026-11-23T11:35:52.543Z"
-    },
-    "182fc8a284a023a460bfc2da4413aa6667ab75db": {
-      "source": "الصورة الرسمية: https://www.visitsaudi.com/content/dam/wvs/calendar/wagef-momos-live-in-jeddah.jpg",
-      "source_lang": "en",
-      "target_lang": "ar",
-      "text": "الصورة الرسمية: https://www.visitsaudi.com/content/dam/wvs/calendar/wagef-momos-live-in-jeddah.jpg",
-      "method": "identity-pass",
-      "translated_at": "2026-11-23T11:35:52.592Z"
-    },
-    "5fc2ac05fe4dedcd2c696037fecc2f9322db47d6": {
-      "source": "رابط المصدر: https://www.ithra.com/en/programme/2026/bridges-world/bridge-chinese-language",
-      "source_lang": "en",
-      "target_lang": "ar",
-      "text": "رابط المصدر: https://www.ithra.com/en/programme/2026/bridges-world/bridge-chinese-language",
-      "method": "identity-pass",
-      "translated_at": "2026-11-23T11:35:52.647Z"
-    },
-    "2671faf63e19db49a46bf81cb731cc8d8dc5e751": {
-      "source": "رابط المصدر: https://kaustcentral-eventscalendar-userwebsite.cfapps.eu20.hana.ondemand.com/dashboard/event-details/588",
-      "source_lang": "en",
-      "target_lang": "ar",
-      "text": "رابط المصدر: https://kaustcentral-eventscalendar-userwebsite.cfapps.eu20.hana.ondemand.com/dashboard/event-details/588",
-      "method": "identity-pass",
-      "translated_at": "2026-11-23T11:35:52.704Z"
-    },
-    "4eccf1eec783f7cfc8bd1744cf0494337e6bea80": {
-      "source": "رابط المصدر: https://www.chamber.org.sa/sites/Arabic/Events/ChamberEvents/Pages/ChamberEventDetails.aspx?ItemID=345",
-      "source_lang": "en",
-      "target_lang": "ar",
-      "text": "رابط المصدر: https://www.chamber.org.sa/sites/Arabic/Events/ChamberEvents/Pages/ChamberEventDetails.aspx?ItemID=345",
-      "method": "identity-pass",
-      "translated_at": "2026-11-23T11:35:52.749Z"
-    },
-    "2241b8caebe9089b0ce01a265006b82cbb4a4839": {
-      "source": "رابط المصدر: https://kaustcentral-eventscalendar-userwebsite.cfapps.eu20.hana.ondemand.com/dashboard/event-details/596",
-      "source_lang": "en",
-      "target_lang": "ar",
-      "text": "رابط المصدر: https://kaustcentral-eventscalendar-userwebsite.cfapps.eu20.hana.ondemand.com/dashboard/event-details/596",
-      "method": "identity-pass",
-      "translated_at": "2026-11-23T11:35:52.797Z"
-    },
-    "e86cab2a267ad3241d677ef9d515949bd4f02f39": {
-      "source": "رابط المصدر: https://hayyjameel.org/whats-on/hayy-arts-made-with-your-magic-jeddah/",
-      "source_lang": "en",
-      "target_lang": "ar",
-      "text": "رابط المصدر: https://hayyjameel.org/whats-on/hayy-arts-made-with-your-magic-jeddah/",
-      "method": "identity-pass",
-      "translated_at": "2026-11-23T11:35:52.847Z"
-    },
-    "51c5ffc08ad0a90855f6cf7139e2a2ce6a7cc3e8": {
-      "source": "رابط المصدر: https://www.ithra.com/en/programme/2026/ithra-theater-society/learn-more-about-submission-process-ithra-short-plays-contest-2026",
-      "source_lang": "en",
-      "target_lang": "ar",
-      "text": "رابط المصدر: https://www.ithra.com/en/programme/2026/ithra-theater-society/learn-more-about-submission-process-ithra-short-plays-contest-2026",
-      "method": "identity-pass",
-      "translated_at": "2026-11-23T11:35:52.902Z"
-    },
-    "eef8bf5167e0b1132bbf464c63baeb443eba49ae": {
-      "source": "رابط المصدر: https://www.visitsaudi.com/en/eastern-province/events/pfl-martial-arts-championship-in-al-khobar",
-      "source_lang": "en",
-      "target_lang": "ar",
-      "text": "رابط المصدر: https://www.visitsaudi.com/en/eastern-province/events/pfl-martial-arts-championship-in-al-khobar",
-      "method": "identity-pass",
-      "translated_at": "2026-11-23T11:35:52.955Z"
-    },
-    "c06bf3011f0277318041f64609ed7892cbcaf85a": {
-      "source": "الصورة الرسمية: https://cdn.rfecc.sa/wp-content/uploads/2026/08/19122905/images.jpg",
-      "source_lang": "en",
-      "target_lang": "ar",
-      "text": "الصورة الرسمية: https://cdn.rfecc.sa/wp-content/uploads/2026/08/19122905/images.jpg",
-      "method": "identity-pass",
-      "translated_at": "2026-11-23T11:35:53.000Z"
-    },
-    "5f85c3fb22292562dd97f478997626b889a0061b": {
-      "source": "الصورة الرسمية: https://www.visitsaudi.com/content/dam/wvs/calendar/the-global-water-sustainability-conference.jpg",
-      "source_lang": "en",
-      "target_lang": "ar",
-      "text": "الصورة الرسمية: https://www.visitsaudi.com/content/dam/wvs/calendar/the-global-water-sustainability-conference.jpg",
-      "method": "identity-pass",
-      "translated_at": "2026-11-23T11:35:53.053Z"
-    },
-    "acee9bcd85911011fe2d8fad6249047b8786c8c0": {
-      "source": "رابط المصدر: https://www.experiencealula.com/en/whats-on/events/alula-half-marathon",
-      "source_lang": "en",
-      "target_lang": "ar",
-      "text": "رابط المصدر: https://www.experiencealula.com/en/whats-on/events/alula-half-marathon",
-      "method": "identity-pass",
-      "translated_at": "2026-11-23T11:35:53.116Z"
-    },
-    "9057057e18c3adec9b0e4b79f9c5e89ff67a9a32": {
-      "source": "رابط المصدر: https://www.visitsaudi.com/en/al-ahsa/events/alahsa-factory-dates-festival",
-      "source_lang": "en",
-      "target_lang": "ar",
-      "text": "رابط المصدر: https://www.visitsaudi.com/en/al-ahsa/events/alahsa-factory-dates-festival",
-      "method": "identity-pass",
-      "translated_at": "2026-11-23T11:35:53.165Z"
-    },
-    "1b13eb4f1b2c6566bee357d3e6976a3a2fc0a037": {
-      "source": "الصورة الرسمية: https://www.visitsaudi.com/content/dam/wvs/calendar/saudi-falcon-cup-new.jpg",
-      "source_lang": "en",
-      "target_lang": "ar",
-      "text": "الصورة الرسمية: https://www.visitsaudi.com/content/dam/wvs/calendar/saudi-falcon-cup-new.jpg",
-      "method": "identity-pass",
-      "translated_at": "2026-11-23T11:35:53.214Z"
-    },
-    "6a58155555fcafde47630045bcc1053d2ac641a6": {
-      "source": "الصورة الرسمية: https://www.visitsaudi.com/content/dam/wvs/calendar/in-act-act-xii-new-year.jpg",
-      "source_lang": "en",
-      "target_lang": "ar",
-      "text": "الصورة الرسمية: https://www.visitsaudi.com/content/dam/wvs/calendar/in-act-act-xii-new-year.jpg",
-      "method": "identity-pass",
-      "translated_at": "2026-11-23T11:35:53.272Z"
-    },
-    "49038e8f6e152b86dcbac1ecff9a97b1bd3cef39": {
-      "source": "دورة أو فعالية رسمية من جامعة أم القرى في مكة المكرمة. التسجيل والسداد لدبلوم المشارك (عن بعد) في إدارة الحشود لخارج مكة ضمن التعليم والتدريب في عن بعد. تبدأ الفعالية ٠٢‏/٠٨‏/٢٠٢٦ وتنتهي ٣٠‏/١٢‏/٢٠٢٦ حسب البيانات المتاحة. تعرض الصفحة وقت الفعالية وموقعها ومصدرها وروابط التقويم والاتجاهات عند توفرها. المصدر: Umm Al-Qura University Events Center.",
-      "source_lang": "ar",
-      "target_lang": "en",
-      "text": "Official session or effectiveness of Umm Al-Qura University in Makkkah. Recording and reimbursement of the participant ' s (remotely) diploma in crowd management outside of a distance education and training facility. Effectiveness begins 20/80/2026 and ends 30/12/2026 according to available data. The page shall be presented at the time, location and source of effectiveness, calendar linkages and trends as they are available. Source: Umm Al-Qura University Events Center.",
-      "method": "argos-mt",
-      "translated_at": "2026-11-23T11:38:23.864Z"
-    },
-    "d001ffbe3e9d97091a77a20af586f61fb6ccacee": {
-      "source": "دورة أو فعالية رسمية من جامعة أم القرى في مكة المكرمة.",
-      "source_lang": "ar",
-      "target_lang": "en",
-      "text": "Official session or effectiveness of Umm Al-Qura University in Makkkah.",
-      "method": "argos-mt",
-      "translated_at": "2026-11-23T11:38:23.864Z"
-    },
-    "64213516cbf3cd4628d1a097750b5a96813df49e": {
-      "source": "دورة أو فعالية رسمية من جامعة أم القرى في مكة المكرمة. التسجيل والسداد لدبلوم المتوسط (عن بعد) في التسويق التطبيقي مع الشركاء ضمن التعليم والتدريب في عن بعد. تبدأ الفعالية ٠٢‏/٠٨‏/٢٠٢٦ وتنتهي ٣٠‏/١٢‏/٢٠٢٦ حسب البيانات المتاحة. تعرض الصفحة وقت الفعالية وموقعها ومصدرها وروابط التقويم والاتجاهات عند توفرها. المصدر: Umm Al-Qura University Events Center.",
-      "source_lang": "ar",
-      "target_lang": "en",
-      "text": "Official session or effectiveness of Umm Al-Qura University in Makkkah. Recording and reimbursing of an average ( remote) diploma in applied marketing with partners in distance education and training. Effectiveness begins 20/80/2026 and ends 30/12/2026 according to available data. The page shall be presented at the time, location and source of effectiveness, calendar linkages and trends as they are available. Source: Umm Al-Qura University Events Center.",
-      "method": "argos-mt",
-      "translated_at": "2026-11-23T11:38:23.864Z"
-    },
     "9696d6226cb854e8dff7e35ae3ec1a12a497c620": {
       "source": "Diplomatic Quarter, Riyadh This is where moments turn iconic. المصدر الرسمي: MDLBEAST. Unstable ضمن الترفيه والعائلات في الرياض. تبدأ الفعالية ٢٧‏/١١‏/٢٠٢٦ وتنتهي ٢٨‏/١١‏/٢٠٢٦ حسب البيانات المتاحة. تعرض الصفحة وقت الفعالية وموقعها ومصدرها وروابط التقويم والاتجاهات عند توفرها. المصدر: MDLBEAST Events.",
       "source_lang": "ar",
@@ -99810,13 +99218,2053 @@
       "method": "argos-mt",
       "translated_at": "2026-11-23T11:38:23.865Z"
     },
+    "d209192811f2b0a28312eca262ab521462000581": {
+      "source": "الصورة الرسمية: https://www.visitsaudi.com/content/dam/wvs/calendar/arabic-language-exhibition-in-riyadh.jpg",
+      "source_lang": "en",
+      "target_lang": "ar",
+      "text": "الصورة الرسمية: https://www.visitsaudi.com/content/dam/wvs/calendar/arabic-language-exhibition-in-riyadh.jpg",
+      "method": "identity-pass",
+      "translated_at": "2026-11-24T13:11:11.736Z"
+    },
+    "b353732d9851862efda16437acfe18d8578203d6": {
+      "source": "الصورة الرسمية: https://www.visitsaudi.com/content/dam/wvs/calendar/arabic-language-exhibition-for-kids.jpg",
+      "source_lang": "en",
+      "target_lang": "ar",
+      "text": "الصورة الرسمية: https://www.visitsaudi.com/content/dam/wvs/calendar/arabic-language-exhibition-for-kids.jpg",
+      "method": "identity-pass",
+      "translated_at": "2026-11-24T13:11:11.770Z"
+    },
+    "c65be0c41191d1c74223ceaa3a856974426b6cae": {
+      "source": "رابط المصدر: https://hayyjameel.org/whats-on/hayy-cinema-at-saha-2nd-edition/",
+      "source_lang": "en",
+      "target_lang": "ar",
+      "text": "رابط المصدر: https://hayyjameel.org/whats-on/hayy-cinema-at-saha-2nd-edition/",
+      "method": "identity-pass",
+      "translated_at": "2026-11-24T13:11:11.804Z"
+    },
+    "f9fd9a82ff57ac839e84b925ed378dd1cffef72a": {
+      "source": "رابط المصدر: https://www.ithra.com/en/programme/2026/ithra-art-prize-exhibition",
+      "source_lang": "en",
+      "target_lang": "ar",
+      "text": "رابط المصدر: https://www.ithra.com/en/programme/2026/ithra-art-prize-exhibition",
+      "method": "identity-pass",
+      "translated_at": "2026-11-24T13:11:12.313Z"
+    },
+    "0dbcc433747c334a39ac4c54409d301ba6dd7e0d": {
+      "source": "رابط المصدر: https://www.ithra.com/en/programme/2026/art-studio1/open-artistic-space",
+      "source_lang": "en",
+      "target_lang": "ar",
+      "text": "رابط المصدر: https://www.ithra.com/en/programme/2026/art-studio1/open-artistic-space",
+      "method": "identity-pass",
+      "translated_at": "2026-11-24T13:11:12.496Z"
+    },
+    "22c0053d2227e4e69332e817491027652c7d601e": {
+      "source": "رابط المصدر: https://www.ithra.com/en/programme/2026/ithra-museum/ithra-museum-free-wednesday",
+      "source_lang": "en",
+      "target_lang": "ar",
+      "text": "رابط المصدر: https://www.ithra.com/en/programme/2026/ithra-museum/ithra-museum-free-wednesday",
+      "method": "identity-pass",
+      "translated_at": "2026-11-24T13:11:12.543Z"
+    },
+    "90e4c440e40d5d0330ebbd2a9a2725c332d25c0b": {
+      "source": "رابط المصدر: https://www.ithra.com/en/programme/2026/childrens-museum/trolley-show",
+      "source_lang": "en",
+      "target_lang": "ar",
+      "text": "رابط المصدر: https://www.ithra.com/en/programme/2026/childrens-museum/trolley-show",
+      "method": "identity-pass",
+      "translated_at": "2026-11-24T13:11:12.581Z"
+    },
+    "c2bae2762f7358e1b943831b4ce6d616ba09177d": {
+      "source": "رابط المصدر: https://www.ithra.com/en/programme/2026/ithra-museum/aramcorama-exhibit",
+      "source_lang": "en",
+      "target_lang": "ar",
+      "text": "رابط المصدر: https://www.ithra.com/en/programme/2026/ithra-museum/aramcorama-exhibit",
+      "method": "identity-pass",
+      "translated_at": "2026-11-24T13:11:12.693Z"
+    },
+    "b4f9d2a2600a825426bf39128ea8cebf0f86c525": {
+      "source": "رابط المصدر: https://www.ithra.com/en/programme/2026/ithra-museum/praise-artisan",
+      "source_lang": "en",
+      "target_lang": "ar",
+      "text": "رابط المصدر: https://www.ithra.com/en/programme/2026/ithra-museum/praise-artisan",
+      "method": "identity-pass",
+      "translated_at": "2026-11-24T13:11:12.724Z"
+    },
+    "05ec6274c4575366b178a8c1ef99a524968e7b13": {
+      "source": "رابط المصدر: https://www.ithra.com/en/programme/2026/trivia-night-energy-memory",
+      "source_lang": "en",
+      "target_lang": "ar",
+      "text": "رابط المصدر: https://www.ithra.com/en/programme/2026/trivia-night-energy-memory",
+      "method": "identity-pass",
+      "translated_at": "2026-11-24T13:11:12.757Z"
+    },
+    "a0767b7163a2e175ad2a8a4cfc8a8cadf29cbf43": {
+      "source": "رابط المصدر: https://www.ithra.com/en/programme/2026/childrens-museum/imagination-oasis",
+      "source_lang": "en",
+      "target_lang": "ar",
+      "text": "رابط المصدر: https://www.ithra.com/en/programme/2026/childrens-museum/imagination-oasis",
+      "method": "identity-pass",
+      "translated_at": "2026-11-24T13:11:12.791Z"
+    },
+    "f45cdff5594d92d99802a4be2fe1280d328254f0": {
+      "source": "رابط المصدر: https://www.ithra.com/en/programme/2026/ithras-kids-community",
+      "source_lang": "en",
+      "target_lang": "ar",
+      "text": "رابط المصدر: https://www.ithra.com/en/programme/2026/ithras-kids-community",
+      "method": "identity-pass",
+      "translated_at": "2026-11-24T13:11:12.835Z"
+    },
+    "9521a0c6c468d18971821ab7e0daf599a758257a": {
+      "source": "رابط المصدر: https://www.ithra.com/en/programme/2026/treasure-hunt/adventure-around-kingdom",
+      "source_lang": "en",
+      "target_lang": "ar",
+      "text": "رابط المصدر: https://www.ithra.com/en/programme/2026/treasure-hunt/adventure-around-kingdom",
+      "method": "identity-pass",
+      "translated_at": "2026-11-24T13:11:12.964Z"
+    },
+    "c8a439fbadb50d6a8570ef403a0ec1cfb98d19de": {
+      "source": "رابط المصدر: https://www.ithra.com/en/programme/2026/childrens-book-club",
+      "source_lang": "en",
+      "target_lang": "ar",
+      "text": "رابط المصدر: https://www.ithra.com/en/programme/2026/childrens-book-club",
+      "method": "identity-pass",
+      "translated_at": "2026-11-24T13:11:13.003Z"
+    },
+    "198778ee3a026d774665e772ad02d620441e9693": {
+      "source": "رابط المصدر: https://www.ithra.com/en/programme/2026/family-game/family-game-within-five-seconds",
+      "source_lang": "en",
+      "target_lang": "ar",
+      "text": "رابط المصدر: https://www.ithra.com/en/programme/2026/family-game/family-game-within-five-seconds",
+      "method": "identity-pass",
+      "translated_at": "2026-11-24T13:11:13.056Z"
+    },
+    "74174c95b44ef3377d3f66fda0860e0dde3042b1": {
+      "source": "رابط المصدر: https://sdaia.gov.sa/en/MediaCenter/Events/Pages/EventsDetails.aspx?EventID=149",
+      "source_lang": "en",
+      "target_lang": "ar",
+      "text": "رابط المصدر: https://sdaia.gov.sa/en/MediaCenter/Events/Pages/EventsDetails.aspx?EventID=149",
+      "method": "identity-pass",
+      "translated_at": "2026-11-24T13:11:13.094Z"
+    },
+    "1b6d9690d2be78a1c903fec548b6ed7644461978": {
+      "source": "الصورة الرسمية: https://www.visitsaudi.com/content/dam/wvs/calendar/katheeb-trip-to-al-asfar-lake.jpg",
+      "source_lang": "en",
+      "target_lang": "ar",
+      "text": "الصورة الرسمية: https://www.visitsaudi.com/content/dam/wvs/calendar/katheeb-trip-to-al-asfar-lake.jpg",
+      "method": "identity-pass",
+      "translated_at": "2026-11-24T13:11:13.127Z"
+    },
+    "e5924fc9d08364ba54e7acddb3dbc370aa3ca483": {
+      "source": "رابط المصدر: https://hayyjameel.org/whats-on/jameel-library-opening-programme-at-the-edge-of-renewal-with-the-khaleeji-womens-library-and-archive/",
+      "source_lang": "en",
+      "target_lang": "ar",
+      "text": "رابط المصدر: https://hayyjameel.org/whats-on/jameel-library-opening-programme-at-the-edge-of-renewal-with-the-khaleeji-womens-library-and-archive/",
+      "method": "identity-pass",
+      "translated_at": "2026-11-24T13:11:13.183Z"
+    },
+    "7cf46ce4928fa69ab6fe9d05a5594bd3a665d33c": {
+      "source": "رابط المصدر: https://www.visitsaudi.com/en/riyadh/events/riyadh-racing-season",
+      "source_lang": "en",
+      "target_lang": "ar",
+      "text": "رابط المصدر: https://www.visitsaudi.com/en/riyadh/events/riyadh-racing-season",
+      "method": "identity-pass",
+      "translated_at": "2026-11-24T13:11:13.267Z"
+    },
+    "2fc77f5effa74957868944dbeb2c1f211e927bd0": {
+      "source": "رابط المصدر: https://kaustcentral-eventscalendar-userwebsite.cfapps.eu20.hana.ondemand.com/dashboard/event-details/573",
+      "source_lang": "en",
+      "target_lang": "ar",
+      "text": "رابط المصدر: https://kaustcentral-eventscalendar-userwebsite.cfapps.eu20.hana.ondemand.com/dashboard/event-details/573",
+      "method": "identity-pass",
+      "translated_at": "2026-11-24T13:11:13.358Z"
+    },
+    "ce79dfabce3e8aa5cfa07f380bec430b9d5ff3c7": {
+      "source": "رابط المصدر: https://www.ithra.com/en/programme/2026/ithra-winter-season",
+      "source_lang": "en",
+      "target_lang": "ar",
+      "text": "رابط المصدر: https://www.ithra.com/en/programme/2026/ithra-winter-season",
+      "method": "identity-pass",
+      "translated_at": "2026-11-24T13:11:13.432Z"
+    },
+    "d32f41344de13f6990252db4df9c83bbe557d724": {
+      "source": "رابط المصدر: https://www.ithra.com/en/programme/2026/childrens-museum/champions-challenge",
+      "source_lang": "en",
+      "target_lang": "ar",
+      "text": "رابط المصدر: https://www.ithra.com/en/programme/2026/childrens-museum/champions-challenge",
+      "method": "identity-pass",
+      "translated_at": "2026-11-24T13:11:13.501Z"
+    },
+    "60aae30605683d88cf677d432a746a0ee6604544": {
+      "source": "رابط المصدر: https://hayyjameel.org/whats-on/jameel-library-november-community-programmes-1/",
+      "source_lang": "en",
+      "target_lang": "ar",
+      "text": "رابط المصدر: https://hayyjameel.org/whats-on/jameel-library-november-community-programmes-1/",
+      "method": "identity-pass",
+      "translated_at": "2026-11-24T13:11:13.547Z"
+    },
+    "632e423a560396bd3acf64042ca09760827e9378": {
+      "source": "رابط المصدر: https://hayyjameel.org/whats-on/hayy-explorers-november-programmes/",
+      "source_lang": "en",
+      "target_lang": "ar",
+      "text": "رابط المصدر: https://hayyjameel.org/whats-on/hayy-explorers-november-programmes/",
+      "method": "identity-pass",
+      "translated_at": "2026-11-24T13:11:13.590Z"
+    },
+    "5ef7c8be5b9b95919e269fab76d5cc3725183544": {
+      "source": "رابط المصدر: https://www.visitsaudi.com/en/al-ahsa/events/palms-village-in-al-ahsa",
+      "source_lang": "en",
+      "target_lang": "ar",
+      "text": "رابط المصدر: https://www.visitsaudi.com/en/al-ahsa/events/palms-village-in-al-ahsa",
+      "method": "identity-pass",
+      "translated_at": "2026-11-24T13:11:13.673Z"
+    },
+    "5e199baf23a50ce05a3eb360873f3214add0d951": {
+      "source": "رابط المصدر: https://www.ithra.com/en/programme/2026/ithra-winter-at-dhahran-expo/artistic-maze",
+      "source_lang": "en",
+      "target_lang": "ar",
+      "text": "رابط المصدر: https://www.ithra.com/en/programme/2026/ithra-winter-at-dhahran-expo/artistic-maze",
+      "method": "identity-pass",
+      "translated_at": "2026-11-24T13:11:13.717Z"
+    },
+    "519cb4d8712e02fbdb7aab51222ae9eeef19f6cc": {
+      "source": "رابط المصدر: https://www.ithra.com/en/programme/2026/ithra-winter-at-dhahran-expo/childrens-cafe",
+      "source_lang": "en",
+      "target_lang": "ar",
+      "text": "رابط المصدر: https://www.ithra.com/en/programme/2026/ithra-winter-at-dhahran-expo/childrens-cafe",
+      "method": "identity-pass",
+      "translated_at": "2026-11-24T13:11:13.749Z"
+    },
+    "34f5a8c57545e677229d6ed1a91ddea0d3d119da": {
+      "source": "رابط المصدر: https://www.ithra.com/en/programme/2026/ithra-winter-at-dhahran-expo/studio/creativity-space",
+      "source_lang": "en",
+      "target_lang": "ar",
+      "text": "رابط المصدر: https://www.ithra.com/en/programme/2026/ithra-winter-at-dhahran-expo/studio/creativity-space",
+      "method": "identity-pass",
+      "translated_at": "2026-11-24T13:11:13.782Z"
+    },
+    "8023b4cb3e0fc0c1a6f4a8b3796ec5d075d4d7fa": {
+      "source": "رابط المصدر: https://www.ithra.com/en/programme/2026/ithra-winter-at-dhahran-expo/highlights-exhibition",
+      "source_lang": "en",
+      "target_lang": "ar",
+      "text": "رابط المصدر: https://www.ithra.com/en/programme/2026/ithra-winter-at-dhahran-expo/highlights-exhibition",
+      "method": "identity-pass",
+      "translated_at": "2026-11-24T13:11:13.812Z"
+    },
+    "a1a8d07faa40f87bb09967d9a6942d370453a3c5": {
+      "source": "رابط المصدر: https://www.ithra.com/en/programme/2026/ithra-winter-at-dhahran-expo/outdoor-stage",
+      "source_lang": "en",
+      "target_lang": "ar",
+      "text": "رابط المصدر: https://www.ithra.com/en/programme/2026/ithra-winter-at-dhahran-expo/outdoor-stage",
+      "method": "identity-pass",
+      "translated_at": "2026-11-24T13:11:13.844Z"
+    },
+    "29698848724af250d2784ad70d03532689e5ea97": {
+      "source": "رابط المصدر: https://www.ithra.com/en/programme/2026/ithra-winter-at-dhahran-expo/words-waves",
+      "source_lang": "en",
+      "target_lang": "ar",
+      "text": "رابط المصدر: https://www.ithra.com/en/programme/2026/ithra-winter-at-dhahran-expo/words-waves",
+      "method": "identity-pass",
+      "translated_at": "2026-11-24T13:11:13.874Z"
+    },
+    "f1cc23c220845c7c0140ba9466864c3eb246a0d9": {
+      "source": "رابط المصدر: https://www.ithra.com/en/programme/2026/ithra-winter-at-dhahran-expo/roaming-performances",
+      "source_lang": "en",
+      "target_lang": "ar",
+      "text": "رابط المصدر: https://www.ithra.com/en/programme/2026/ithra-winter-at-dhahran-expo/roaming-performances",
+      "method": "identity-pass",
+      "translated_at": "2026-11-24T13:11:13.905Z"
+    },
+    "b029925364af647f8476ac21fc92d8258a4a22f2": {
+      "source": "رابط المصدر: https://www.ithra.com/en/programme/2026/printing-house/big-printing-experience",
+      "source_lang": "en",
+      "target_lang": "ar",
+      "text": "رابط المصدر: https://www.ithra.com/en/programme/2026/printing-house/big-printing-experience",
+      "method": "identity-pass",
+      "translated_at": "2026-11-24T13:11:13.938Z"
+    },
+    "1464c408df1d79c407fdc0cd431118378441ea07": {
+      "source": "رابط المصدر: https://www.ithra.com/en/programme/2026/ithra-winter-at-dhahran-expo/1-2-3-lets-ryhme",
+      "source_lang": "en",
+      "target_lang": "ar",
+      "text": "رابط المصدر: https://www.ithra.com/en/programme/2026/ithra-winter-at-dhahran-expo/1-2-3-lets-ryhme",
+      "method": "identity-pass",
+      "translated_at": "2026-11-24T13:11:13.968Z"
+    },
+    "3980901ec8d8ba3d1377f81ee699d5c45f0a36b5": {
+      "source": "رابط المصدر: https://www.ithra.com/en/programme/2026/ithra-winter-at-dhahran-expo/little-spotlight-zone/storytime",
+      "source_lang": "en",
+      "target_lang": "ar",
+      "text": "رابط المصدر: https://www.ithra.com/en/programme/2026/ithra-winter-at-dhahran-expo/little-spotlight-zone/storytime",
+      "method": "identity-pass",
+      "translated_at": "2026-11-24T13:11:14.000Z"
+    },
+    "52bfea8d0bb1523ac8afff17c5ba0394ddef11f0": {
+      "source": "رابط المصدر: https://www.ithra.com/en/programme/2026/ithra-winter-at-dhahran-expo/little-spotlight-zone/puppet-show",
+      "source_lang": "en",
+      "target_lang": "ar",
+      "text": "رابط المصدر: https://www.ithra.com/en/programme/2026/ithra-winter-at-dhahran-expo/little-spotlight-zone/puppet-show",
+      "method": "identity-pass",
+      "translated_at": "2026-11-24T13:11:14.030Z"
+    },
+    "a3e317eb0a07e44d4ed2656b5452e9dcbf87a1b7": {
+      "source": "رابط المصدر: https://www.visitsaudi.com/en/eastern-province/events/ithra-winter-season",
+      "source_lang": "en",
+      "target_lang": "ar",
+      "text": "رابط المصدر: https://www.visitsaudi.com/en/eastern-province/events/ithra-winter-season",
+      "method": "identity-pass",
+      "translated_at": "2026-11-24T13:11:14.064Z"
+    },
+    "edc7f7f1ff8ac6848d01154adb6a6d81338641bc": {
+      "source": "رابط المصدر: https://www.ithra.com/en/programme/2026/ithra-winter-at-dhahran-expo/knot-scale",
+      "source_lang": "en",
+      "target_lang": "ar",
+      "text": "رابط المصدر: https://www.ithra.com/en/programme/2026/ithra-winter-at-dhahran-expo/knot-scale",
+      "method": "identity-pass",
+      "translated_at": "2026-11-24T13:11:14.104Z"
+    },
+    "55805883c7c0c241de5bf448e8f7dcb41f776303": {
+      "source": "رابط المصدر: https://www.ithra.com/en/programme/2026/ithra-winter-at-dhahran-expo/artistic-maze-lens-landscapes",
+      "source_lang": "en",
+      "target_lang": "ar",
+      "text": "رابط المصدر: https://www.ithra.com/en/programme/2026/ithra-winter-at-dhahran-expo/artistic-maze-lens-landscapes",
+      "method": "identity-pass",
+      "translated_at": "2026-11-24T13:11:14.135Z"
+    },
+    "d81ccfef7d13613ad36aaacdf5a2503fdc3d9233": {
+      "source": "رابط المصدر: https://www.ithra.com/en/programme/2026/ithra-winter-at-dhahran-expo/studio/rammed-earth-workshop",
+      "source_lang": "en",
+      "target_lang": "ar",
+      "text": "رابط المصدر: https://www.ithra.com/en/programme/2026/ithra-winter-at-dhahran-expo/studio/rammed-earth-workshop",
+      "method": "identity-pass",
+      "translated_at": "2026-11-24T13:11:14.168Z"
+    },
+    "905fdcd1584d8de56a4176bd13655ed00a7d1408": {
+      "source": "رابط المصدر: https://www.ithra.com/en/programme/2026/ithra-winter-at-dhahran-expo/little-spotlight-zone/storyteller-day",
+      "source_lang": "en",
+      "target_lang": "ar",
+      "text": "رابط المصدر: https://www.ithra.com/en/programme/2026/ithra-winter-at-dhahran-expo/little-spotlight-zone/storyteller-day",
+      "method": "identity-pass",
+      "translated_at": "2026-11-24T13:11:14.198Z"
+    },
+    "a0dddae1294a1f41a1f254638680cdbe71d0ab4d": {
+      "source": "رابط المصدر: https://www.ithra.com/en/programme/2026/ithra-winter-at-dhahran-expo/1-2-3-little-space-me",
+      "source_lang": "en",
+      "target_lang": "ar",
+      "text": "رابط المصدر: https://www.ithra.com/en/programme/2026/ithra-winter-at-dhahran-expo/1-2-3-little-space-me",
+      "method": "identity-pass",
+      "translated_at": "2026-11-24T13:11:14.228Z"
+    },
+    "3b87594bc26860b626582301b029ba60c4d944c1": {
+      "source": "رابط المصدر: https://www.ithra.com/en/programme/2026/ithra-winter-at-dhahran-expo/your-book-minute",
+      "source_lang": "en",
+      "target_lang": "ar",
+      "text": "رابط المصدر: https://www.ithra.com/en/programme/2026/ithra-winter-at-dhahran-expo/your-book-minute",
+      "method": "identity-pass",
+      "translated_at": "2026-11-24T13:11:14.260Z"
+    },
+    "9880221ec3686f7080ad047ce012ccbaac1ba0c3": {
+      "source": "رابط المصدر: https://www.ithra.com/en/programme/2026/ithra-winter-at-dhahran-expo/indoor-stage",
+      "source_lang": "en",
+      "target_lang": "ar",
+      "text": "رابط المصدر: https://www.ithra.com/en/programme/2026/ithra-winter-at-dhahran-expo/indoor-stage",
+      "method": "identity-pass",
+      "translated_at": "2026-11-24T13:11:14.290Z"
+    },
+    "987cedaf668c07a28e5edebfdf3068dfac9e1f92": {
+      "source": "رابط المصدر: https://www.ithra.com/en/programme/2026/ithra-winter-at-dhahran-expo/studio/sand-sculpturing",
+      "source_lang": "en",
+      "target_lang": "ar",
+      "text": "رابط المصدر: https://www.ithra.com/en/programme/2026/ithra-winter-at-dhahran-expo/studio/sand-sculpturing",
+      "method": "identity-pass",
+      "translated_at": "2026-11-24T13:11:14.322Z"
+    },
+    "06abf15039a0688a75c5cbbaa5eedf70792acdc5": {
+      "source": "رابط المصدر: https://www.ithra.com/en/programme/2026/ithra-winter-at-dhahran-expo/food-experience",
+      "source_lang": "en",
+      "target_lang": "ar",
+      "text": "رابط المصدر: https://www.ithra.com/en/programme/2026/ithra-winter-at-dhahran-expo/food-experience",
+      "method": "identity-pass",
+      "translated_at": "2026-11-24T13:11:14.353Z"
+    },
+    "6b79647ed36a4e86fab23d6328169c9fcd9a7c12": {
+      "source": "رابط المصدر: https://www.ithra.com/en/programme/2026/ithra-winter-at-dhahran-expo/little-spotlight-zone/shadow-storytelling",
+      "source_lang": "en",
+      "target_lang": "ar",
+      "text": "رابط المصدر: https://www.ithra.com/en/programme/2026/ithra-winter-at-dhahran-expo/little-spotlight-zone/shadow-storytelling",
+      "method": "identity-pass",
+      "translated_at": "2026-11-24T13:11:14.426Z"
+    },
+    "6af4075f142ed6a7914e63daa3f13dd212048e78": {
+      "source": "رابط المصدر: https://www.ithra.com/en/programme/2026/workshop-library/once-upon-postcard",
+      "source_lang": "en",
+      "target_lang": "ar",
+      "text": "رابط المصدر: https://www.ithra.com/en/programme/2026/workshop-library/once-upon-postcard",
+      "method": "identity-pass",
+      "translated_at": "2026-11-24T13:11:14.464Z"
+    },
+    "a9bff45cc7db689605c3a1a56f702049214019aa": {
+      "source": "رابط المصدر: https://www.ithra.com/en/programme/2026/ithra-winter-at-dhahran-expo/khoos-workshop-palm-weaving",
+      "source_lang": "en",
+      "target_lang": "ar",
+      "text": "رابط المصدر: https://www.ithra.com/en/programme/2026/ithra-winter-at-dhahran-expo/khoos-workshop-palm-weaving",
+      "method": "identity-pass",
+      "translated_at": "2026-11-24T13:11:14.495Z"
+    },
+    "f1906459f85344b0ffcd1d2f5112b29134a284c5": {
+      "source": "رابط المصدر: https://www.ithra.com/en/programme/2026/printing-house/your-stickers-your-way",
+      "source_lang": "en",
+      "target_lang": "ar",
+      "text": "رابط المصدر: https://www.ithra.com/en/programme/2026/printing-house/your-stickers-your-way",
+      "method": "identity-pass",
+      "translated_at": "2026-11-24T13:11:14.527Z"
+    },
+    "697028736dfe6a089da49755ee77b9e774385518": {
+      "source": "رابط المصدر: https://www.ithra.com/en/programme/2026/printing-house/birds-postcard-studio",
+      "source_lang": "en",
+      "target_lang": "ar",
+      "text": "رابط المصدر: https://www.ithra.com/en/programme/2026/printing-house/birds-postcard-studio",
+      "method": "identity-pass",
+      "translated_at": "2026-11-24T13:11:14.557Z"
+    },
+    "5556df6516e30b149fdcd33a50117e661c020902": {
+      "source": "رابط المصدر: https://www.ithra.com/en/programme/2026/ithra-winter-at-dhahran-expo/little-spotlight-zone/family-game-dots-letters",
+      "source_lang": "en",
+      "target_lang": "ar",
+      "text": "رابط المصدر: https://www.ithra.com/en/programme/2026/ithra-winter-at-dhahran-expo/little-spotlight-zone/family-game-dots-letters",
+      "method": "identity-pass",
+      "translated_at": "2026-11-24T13:11:14.587Z"
+    },
+    "afff711cf4797a0d3082a1910e0782ce7a12eef2": {
+      "source": "رابط المصدر: https://www.ithra.com/en/programme/2026/ithra-winter-at-dhahran-expo/studio/mosaic-mural",
+      "source_lang": "en",
+      "target_lang": "ar",
+      "text": "رابط المصدر: https://www.ithra.com/en/programme/2026/ithra-winter-at-dhahran-expo/studio/mosaic-mural",
+      "method": "identity-pass",
+      "translated_at": "2026-11-24T13:11:14.620Z"
+    },
+    "1b68567aa9ab84c54f413552b3f8361abee93f1c": {
+      "source": "رابط المصدر: https://events.jazancci.org.sa/ar/events/astratyjyat-alnmw-abr-snap-chat-tiktok-walthkaa-alastnaay",
+      "source_lang": "en",
+      "target_lang": "ar",
+      "text": "رابط المصدر: https://events.jazancci.org.sa/ar/events/astratyjyat-alnmw-abr-snap-chat-tiktok-walthkaa-alastnaay",
+      "method": "identity-pass",
+      "translated_at": "2026-11-24T13:11:14.655Z"
+    },
+    "16776d313d520d34f597267453cd9a73371be1b5": {
+      "source": "رابط المصدر: https://www.ithra.com/en/programme/2026/ithra-winter-at-dhahran-expo/little-spotlight-zone/family-game-audience-challenges",
+      "source_lang": "en",
+      "target_lang": "ar",
+      "text": "رابط المصدر: https://www.ithra.com/en/programme/2026/ithra-winter-at-dhahran-expo/little-spotlight-zone/family-game-audience-challenges",
+      "method": "identity-pass",
+      "translated_at": "2026-11-24T13:11:14.686Z"
+    },
+    "85dc285187be3c94c7f2ae9c52d00615434400e0": {
+      "source": "رابط المصدر: https://www.ithra.com/en/programme/2026/ithra-winter-at-dhahran-expo/little-spotlight-zone/tales-stage",
+      "source_lang": "en",
+      "target_lang": "ar",
+      "text": "رابط المصدر: https://www.ithra.com/en/programme/2026/ithra-winter-at-dhahran-expo/little-spotlight-zone/tales-stage",
+      "method": "identity-pass",
+      "translated_at": "2026-11-24T13:11:14.715Z"
+    },
+    "f0c269000de0ff6541764d570c892a4c9b09ba22": {
+      "source": "رابط المصدر: https://www.experiencealula.com/en/whats-on/events/hegra-childrens-tour",
+      "source_lang": "en",
+      "target_lang": "ar",
+      "text": "رابط المصدر: https://www.experiencealula.com/en/whats-on/events/hegra-childrens-tour",
+      "method": "identity-pass",
+      "translated_at": "2026-11-24T13:11:14.758Z"
+    },
+    "182fc8a284a023a460bfc2da4413aa6667ab75db": {
+      "source": "الصورة الرسمية: https://www.visitsaudi.com/content/dam/wvs/calendar/wagef-momos-live-in-jeddah.jpg",
+      "source_lang": "en",
+      "target_lang": "ar",
+      "text": "الصورة الرسمية: https://www.visitsaudi.com/content/dam/wvs/calendar/wagef-momos-live-in-jeddah.jpg",
+      "method": "identity-pass",
+      "translated_at": "2026-11-24T13:11:14.791Z"
+    },
+    "5fc2ac05fe4dedcd2c696037fecc2f9322db47d6": {
+      "source": "رابط المصدر: https://www.ithra.com/en/programme/2026/bridges-world/bridge-chinese-language",
+      "source_lang": "en",
+      "target_lang": "ar",
+      "text": "رابط المصدر: https://www.ithra.com/en/programme/2026/bridges-world/bridge-chinese-language",
+      "method": "identity-pass",
+      "translated_at": "2026-11-24T13:11:14.830Z"
+    },
+    "2671faf63e19db49a46bf81cb731cc8d8dc5e751": {
+      "source": "رابط المصدر: https://kaustcentral-eventscalendar-userwebsite.cfapps.eu20.hana.ondemand.com/dashboard/event-details/588",
+      "source_lang": "en",
+      "target_lang": "ar",
+      "text": "رابط المصدر: https://kaustcentral-eventscalendar-userwebsite.cfapps.eu20.hana.ondemand.com/dashboard/event-details/588",
+      "method": "identity-pass",
+      "translated_at": "2026-11-24T13:11:14.872Z"
+    },
+    "4eccf1eec783f7cfc8bd1744cf0494337e6bea80": {
+      "source": "رابط المصدر: https://www.chamber.org.sa/sites/Arabic/Events/ChamberEvents/Pages/ChamberEventDetails.aspx?ItemID=345",
+      "source_lang": "en",
+      "target_lang": "ar",
+      "text": "رابط المصدر: https://www.chamber.org.sa/sites/Arabic/Events/ChamberEvents/Pages/ChamberEventDetails.aspx?ItemID=345",
+      "method": "identity-pass",
+      "translated_at": "2026-11-24T13:11:14.903Z"
+    },
+    "2241b8caebe9089b0ce01a265006b82cbb4a4839": {
+      "source": "رابط المصدر: https://kaustcentral-eventscalendar-userwebsite.cfapps.eu20.hana.ondemand.com/dashboard/event-details/596",
+      "source_lang": "en",
+      "target_lang": "ar",
+      "text": "رابط المصدر: https://kaustcentral-eventscalendar-userwebsite.cfapps.eu20.hana.ondemand.com/dashboard/event-details/596",
+      "method": "identity-pass",
+      "translated_at": "2026-11-24T13:11:14.938Z"
+    },
+    "e86cab2a267ad3241d677ef9d515949bd4f02f39": {
+      "source": "رابط المصدر: https://hayyjameel.org/whats-on/hayy-arts-made-with-your-magic-jeddah/",
+      "source_lang": "en",
+      "target_lang": "ar",
+      "text": "رابط المصدر: https://hayyjameel.org/whats-on/hayy-arts-made-with-your-magic-jeddah/",
+      "method": "identity-pass",
+      "translated_at": "2026-11-24T13:11:14.972Z"
+    },
+    "51c5ffc08ad0a90855f6cf7139e2a2ce6a7cc3e8": {
+      "source": "رابط المصدر: https://www.ithra.com/en/programme/2026/ithra-theater-society/learn-more-about-submission-process-ithra-short-plays-contest-2026",
+      "source_lang": "en",
+      "target_lang": "ar",
+      "text": "رابط المصدر: https://www.ithra.com/en/programme/2026/ithra-theater-society/learn-more-about-submission-process-ithra-short-plays-contest-2026",
+      "method": "identity-pass",
+      "translated_at": "2026-11-24T13:11:15.012Z"
+    },
+    "eef8bf5167e0b1132bbf464c63baeb443eba49ae": {
+      "source": "رابط المصدر: https://www.visitsaudi.com/en/eastern-province/events/pfl-martial-arts-championship-in-al-khobar",
+      "source_lang": "en",
+      "target_lang": "ar",
+      "text": "رابط المصدر: https://www.visitsaudi.com/en/eastern-province/events/pfl-martial-arts-championship-in-al-khobar",
+      "method": "identity-pass",
+      "translated_at": "2026-11-24T13:11:15.052Z"
+    },
+    "c06bf3011f0277318041f64609ed7892cbcaf85a": {
+      "source": "الصورة الرسمية: https://cdn.rfecc.sa/wp-content/uploads/2026/08/19122905/images.jpg",
+      "source_lang": "en",
+      "target_lang": "ar",
+      "text": "الصورة الرسمية: https://cdn.rfecc.sa/wp-content/uploads/2026/08/19122905/images.jpg",
+      "method": "identity-pass",
+      "translated_at": "2026-11-24T13:11:15.083Z"
+    },
+    "5f85c3fb22292562dd97f478997626b889a0061b": {
+      "source": "الصورة الرسمية: https://www.visitsaudi.com/content/dam/wvs/calendar/the-global-water-sustainability-conference.jpg",
+      "source_lang": "en",
+      "target_lang": "ar",
+      "text": "الصورة الرسمية: https://www.visitsaudi.com/content/dam/wvs/calendar/the-global-water-sustainability-conference.jpg",
+      "method": "identity-pass",
+      "translated_at": "2026-11-24T13:11:15.119Z"
+    },
+    "acee9bcd85911011fe2d8fad6249047b8786c8c0": {
+      "source": "رابط المصدر: https://www.experiencealula.com/en/whats-on/events/alula-half-marathon",
+      "source_lang": "en",
+      "target_lang": "ar",
+      "text": "رابط المصدر: https://www.experiencealula.com/en/whats-on/events/alula-half-marathon",
+      "method": "identity-pass",
+      "translated_at": "2026-11-24T13:11:15.168Z"
+    },
+    "9057057e18c3adec9b0e4b79f9c5e89ff67a9a32": {
+      "source": "رابط المصدر: https://www.visitsaudi.com/en/al-ahsa/events/alahsa-factory-dates-festival",
+      "source_lang": "en",
+      "target_lang": "ar",
+      "text": "رابط المصدر: https://www.visitsaudi.com/en/al-ahsa/events/alahsa-factory-dates-festival",
+      "method": "identity-pass",
+      "translated_at": "2026-11-24T13:11:15.203Z"
+    },
+    "1b13eb4f1b2c6566bee357d3e6976a3a2fc0a037": {
+      "source": "الصورة الرسمية: https://www.visitsaudi.com/content/dam/wvs/calendar/saudi-falcon-cup-new.jpg",
+      "source_lang": "en",
+      "target_lang": "ar",
+      "text": "الصورة الرسمية: https://www.visitsaudi.com/content/dam/wvs/calendar/saudi-falcon-cup-new.jpg",
+      "method": "identity-pass",
+      "translated_at": "2026-11-24T13:11:15.236Z"
+    },
+    "6a58155555fcafde47630045bcc1053d2ac641a6": {
+      "source": "الصورة الرسمية: https://www.visitsaudi.com/content/dam/wvs/calendar/in-act-act-xii-new-year.jpg",
+      "source_lang": "en",
+      "target_lang": "ar",
+      "text": "الصورة الرسمية: https://www.visitsaudi.com/content/dam/wvs/calendar/in-act-act-xii-new-year.jpg",
+      "method": "identity-pass",
+      "translated_at": "2026-11-24T13:11:15.280Z"
+    },
+    "7f4f9d5d795c6cc3201437b4a897a0117d66a9ed": {
+      "source": "العلا",
+      "source_lang": "ar",
+      "target_lang": "en",
+      "text": "AlUla",
+      "method": "argos-mt",
+      "translated_at": "2026-11-24T13:14:10.776Z"
+    },
+    "49038e8f6e152b86dcbac1ecff9a97b1bd3cef39": {
+      "source": "دورة أو فعالية رسمية من جامعة أم القرى في مكة المكرمة. التسجيل والسداد لدبلوم المشارك (عن بعد) في إدارة الحشود لخارج مكة ضمن التعليم والتدريب في عن بعد. تبدأ الفعالية ٠٢‏/٠٨‏/٢٠٢٦ وتنتهي ٣٠‏/١٢‏/٢٠٢٦ حسب البيانات المتاحة. تعرض الصفحة وقت الفعالية وموقعها ومصدرها وروابط التقويم والاتجاهات عند توفرها. المصدر: Umm Al-Qura University Events Center.",
+      "source_lang": "ar",
+      "target_lang": "en",
+      "text": "Official session or effectiveness of Umm Al-Qura University in Makkkah. Recording and reimbursement of the participant ' s (remotely) diploma in crowd management outside a distance education and training facility. Effectiveness begins 20/80/2026 and ends 30/12/2026 according to available data. The page presents the time, location and source of effectiveness, calendar linkages and trends when available. Source: Umm Al-Qura University Events Center.",
+      "method": "argos-mt",
+      "translated_at": "2026-11-24T13:14:10.776Z"
+    },
+    "d001ffbe3e9d97091a77a20af586f61fb6ccacee": {
+      "source": "دورة أو فعالية رسمية من جامعة أم القرى في مكة المكرمة.",
+      "source_lang": "ar",
+      "target_lang": "en",
+      "text": "Official session or effectiveness of Umm Al-Qura University in Makkkah.",
+      "method": "argos-mt",
+      "translated_at": "2026-11-24T13:14:10.776Z"
+    },
+    "64213516cbf3cd4628d1a097750b5a96813df49e": {
+      "source": "دورة أو فعالية رسمية من جامعة أم القرى في مكة المكرمة. التسجيل والسداد لدبلوم المتوسط (عن بعد) في التسويق التطبيقي مع الشركاء ضمن التعليم والتدريب في عن بعد. تبدأ الفعالية ٠٢‏/٠٨‏/٢٠٢٦ وتنتهي ٣٠‏/١٢‏/٢٠٢٦ حسب البيانات المتاحة. تعرض الصفحة وقت الفعالية وموقعها ومصدرها وروابط التقويم والاتجاهات عند توفرها. المصدر: Umm Al-Qura University Events Center.",
+      "source_lang": "ar",
+      "target_lang": "en",
+      "text": "Official session or effectiveness of Umm Al-Qura University in Makkkah. Recording and repayment of an average (remote) diploma in applied marketing with partners in distance education and training. Effectiveness begins 20/80/2026 and ends 30/12/2026 according to available data. The page presents the time, location and source of effectiveness, calendar linkages and trends when available. Source: Umm Al-Qura University Events Center.",
+      "method": "argos-mt",
+      "translated_at": "2026-11-24T13:14:10.776Z"
+    },
+    "37acc49bb0c22d29a295802552c2452a6ad1ef45": {
+      "source": "قصة بقصة",
+      "source_lang": "ar",
+      "target_lang": "en",
+      "text": "A story with a story.",
+      "method": "argos-mt",
+      "translated_at": "2026-11-24T13:14:10.777Z"
+    },
+    "f105458884cc94cbb693c6b1eae163724fc6f2fd": {
+      "source": "برنامج تشاركي لرواية القصص مستوحى من منهجية دوائر الحكايات لليونسكو، يجمع جماهير متنوعة لتبادل ذكرياتهم الشخصية يف البلدة القديمة بالعال.",
+      "source_lang": "ar",
+      "target_lang": "en",
+      "text": "Participatory stories programme inspired by UNESCO ' s tale circle methodology, bringing together diverse audiences to share their personal memories, bringing the old town to justice.",
+      "method": "argos-mt",
+      "translated_at": "2026-11-24T13:14:10.777Z"
+    },
+    "6b4e91c289ff21f920b92ada5a3c14c2a0d3f826": {
+      "source": "٢٤ سبتمبر ٢٠٢٦ في ١٢:٠٠ ص إلى ٣١ ديسمبر ٢٠٢٦ في ١١:٥٩ م",
+      "source_lang": "ar",
+      "target_lang": "en",
+      "text": "24 September 2026 at 12:00 to 31 December 2026 at 11:59 M",
+      "method": "argos-mt",
+      "translated_at": "2026-11-24T13:14:10.777Z"
+    },
+    "81e53033c412c44fa75525aa0ec7961c6186952e": {
+      "source": "الفعالية: قصة بقصة",
+      "source_lang": "ar",
+      "target_lang": "en",
+      "text": "Effectiveness: story by story",
+      "method": "argos-mt",
+      "translated_at": "2026-11-24T13:14:10.777Z"
+    },
+    "5810552197eeb89a9f04671084b594691d5778a1": {
+      "source": "النافذة الزمنية: ٢٤ سبتمبر ٢٠٢٦ في ١٢:٠٠ ص إلى ٣١ ديسمبر ٢٠٢٦ في ١١:٥٩ م",
+      "source_lang": "ar",
+      "target_lang": "en",
+      "text": "Time window: 24 September 2026 at 12:00 to 31 December 2026 at 11:59 m",
+      "method": "argos-mt",
+      "translated_at": "2026-11-24T13:14:10.777Z"
+    },
+    "26805f53864470ecb87772c46e598de683b58565": {
+      "source": "الموعد: ٢٤ سبتمبر ٢٠٢٦ في ١٢:٠٠ ص إلى ٣١ ديسمبر ٢٠٢٦ في ١١:٥٩ م",
+      "source_lang": "ar",
+      "target_lang": "en",
+      "text": "Date: 24 September 2026 at 12:00 to 31 December 2026 at 11:59 m",
+      "method": "argos-mt",
+      "translated_at": "2026-11-24T13:14:10.777Z"
+    },
+    "98d19e0eba71e4c956d6869c59b7408dcb5e9850": {
+      "source": "مسار المشي بين معالم الحِ جر الجيولوُجية",
+      "source_lang": "ar",
+      "target_lang": "en",
+      "text": "The path of walking between the Gyological parameters.",
+      "method": "argos-mt",
+      "translated_at": "2026-11-24T13:14:10.777Z"
+    },
+    "165587774a2ced47903510f731f133339df76474": {
+      "source": "استكشف أحد مواقع التراث العالمي لليونسكو يف تجربة مشي جماعية بين التكوينات الصخرية المهيبة والعجائب الجيولوجية يف الحِ جر، يف مسار محدود المقاعد مليء باالكتشاف.",
+      "source_lang": "ar",
+      "target_lang": "en",
+      "text": "One of the UNESCO World Heritage sites explored a mass walk-in experience between gifted rock formations and geological wonders that emptied the trajectory of limited seats filled with discovery.",
+      "method": "argos-mt",
+      "translated_at": "2026-11-24T13:14:10.777Z"
+    },
+    "628ded8d97a520ce13f20d27a6b9bd096075ce0d": {
+      "source": "الفعالية: مسار المشي بين معالم الحِ جر الجيولوُجية",
+      "source_lang": "ar",
+      "target_lang": "en",
+      "text": "Effectiveness: Walking path between geologic trajectory",
+      "method": "argos-mt",
+      "translated_at": "2026-11-24T13:14:10.777Z"
+    },
+    "be07a6e7ff815e01508974f992c53642ad5856b1": {
+      "source": "من البلدة القديمة إىل الواحة – تجربة الكتشاف التراث",
+      "source_lang": "ar",
+      "target_lang": "en",
+      "text": "From the old town to the oasis.",
+      "method": "argos-mt",
+      "translated_at": "2026-11-24T13:14:10.777Z"
+    },
+    "8f1073dd60f050dcb47231650b389c7b0992bd34": {
+      "source": "ضمن فعاليات حدائق الحياة والذاكرة، رحلة ثقافية بصحبة مرشد تستكشف العالقة بين الألستيطان، والزراعة، والحياة اليومية يف واحة العال العريقة.",
+      "source_lang": "ar",
+      "target_lang": "en",
+      "text": "As part of life and memory garden events, a cultural journey with a guide explores the intersection between the walls, agriculture, and daily life saves the old yard.",
+      "method": "argos-mt",
+      "translated_at": "2026-11-24T13:14:10.777Z"
+    },
+    "de39579de83f2b24eb669373524596344f3c573c": {
+      "source": "٣٠ أكتوبر ٢٠٢٦ في ١٢:٠٠ ص إلى ١٢ ديسمبر ٢٠٢٦ في ١١:٥٩ م",
+      "source_lang": "ar",
+      "target_lang": "en",
+      "text": "30 October 2026 at 12:00 to 12 December 2026 at 11:59 M",
+      "method": "argos-mt",
+      "translated_at": "2026-11-24T13:14:10.777Z"
+    },
+    "6e2c7f089fd57bd4773c3e6dc7b432581cb511cd": {
+      "source": "الفعالية: من البلدة القديمة إىل الواحة – تجربة الكتشاف التراث",
+      "source_lang": "ar",
+      "target_lang": "en",
+      "text": "Efficiency: from the old town to the oasis... the experience of discovering the heritage.",
+      "method": "argos-mt",
+      "translated_at": "2026-11-24T13:14:10.777Z"
+    },
+    "040c122309af1ecf0b2bb667f064e91c836babaa": {
+      "source": "النافذة الزمنية: ٣٠ أكتوبر ٢٠٢٦ في ١٢:٠٠ ص إلى ١٢ ديسمبر ٢٠٢٦ في ١١:٥٩ م",
+      "source_lang": "ar",
+      "target_lang": "en",
+      "text": "Time window: 30 October 2026 at 12:00 to 12 December 2026 at 11:59 m",
+      "method": "argos-mt",
+      "translated_at": "2026-11-24T13:14:10.777Z"
+    },
+    "865b049f9aac8b3f1de36f229d58534fad6f226b": {
+      "source": "الموعد: ٣٠ أكتوبر ٢٠٢٦ في ١٢:٠٠ ص إلى ١٢ ديسمبر ٢٠٢٦ في ١١:٥٩ م",
+      "source_lang": "ar",
+      "target_lang": "en",
+      "text": "Date: 30 October 2026 at 12:00 to 12 December 2026 at 11:59 m",
+      "method": "argos-mt",
+      "translated_at": "2026-11-24T13:14:10.777Z"
+    },
+    "eaa2502d6a157fe726396d2bbc14cd0c3f90182b": {
+      "source": "موسم سباقات ميدان فروسية األحساًء",
+      "source_lang": "ar",
+      "target_lang": "en",
+      "text": "Frost field racing season.",
+      "method": "argos-mt",
+      "translated_at": "2026-11-24T13:14:10.777Z"
+    },
+    "afa42cf1f2e0249258d3060ca708a7c98c130dd1": {
+      "source": "سباقات للخيل بمشاركة واسعة من مُ الّ ك الخيل العربية عىل مستوى المنطقة، بدعم من الهيئات المحلية وشراكات استراتيجية تعزز مكانتها وتطورها.",
+      "source_lang": "ar",
+      "target_lang": "en",
+      "text": "Virtual races with wide participation of Arab horses at the region level, with the support of local bodies and strategic partnerships that enhance their status and development.",
+      "method": "argos-mt",
+      "translated_at": "2026-11-24T13:14:10.777Z"
+    },
+    "c6845e60fcc1fee3505583066feb06232e2b18ad": {
+      "source": "٣١ أكتوبر ٢٠٢٦ في ١٢:٠٠ ص إلى ٢ يونيو ٢٠٢٧ في ١١:٥٩ م",
+      "source_lang": "ar",
+      "target_lang": "en",
+      "text": "31 October 2026 at 12:00 P-2 June 2027 at 11:59 M",
+      "method": "argos-mt",
+      "translated_at": "2026-11-24T13:14:10.777Z"
+    },
+    "295ba55dcaf35868fc5aa0844294030b480a910a": {
+      "source": "الفعالية: موسم سباقات ميدان فروسية األحساًء",
+      "source_lang": "ar",
+      "target_lang": "en",
+      "text": "Effectiveness: a sensible Russian field race season.",
+      "method": "argos-mt",
+      "translated_at": "2026-11-24T13:14:10.777Z"
+    },
+    "9b4718b7e445d3fc1c01108fd0675e6e6b218fb9": {
+      "source": "النافذة الزمنية: ٣١ أكتوبر ٢٠٢٦ في ١٢:٠٠ ص إلى ٢ يونيو ٢٠٢٧ في ١١:٥٩ م",
+      "source_lang": "ar",
+      "target_lang": "en",
+      "text": "Time window: 31 October 2026 at 12:00 to 2 June 2027 at 11:59 m",
+      "method": "argos-mt",
+      "translated_at": "2026-11-24T13:14:10.777Z"
+    },
+    "7aad76d85aa47c1f984029760c8e0735917a232d": {
+      "source": "الموعد: ٣١ أكتوبر ٢٠٢٦ في ١٢:٠٠ ص إلى ٢ يونيو ٢٠٢٧ في ١١:٥٩ م",
+      "source_lang": "ar",
+      "target_lang": "en",
+      "text": "Date: 31 October 2026 at 12:00 to 2 June 2027 at 11:59 m",
+      "method": "argos-mt",
+      "translated_at": "2026-11-24T13:14:10.777Z"
+    },
+    "c73de18e5a940615196ad5727af888c6d704578f": {
+      "source": "سمار يف الرياض",
+      "source_lang": "ar",
+      "target_lang": "en",
+      "text": "Samar Yev Riyadh",
+      "method": "argos-mt",
+      "translated_at": "2026-11-24T13:14:10.777Z"
+    },
+    "bdb5494ab26598c64a94d5d46608e870d7eedc70": {
+      "source": "جهة ترفيهية فريدة يف العمارية تقدّم تجربة مميزة يف بيئة مفتوحة وجميلة، بمناطق لالسترخاء والمرح تناسب الزوار من مختلف األعمار.",
+      "source_lang": "ar",
+      "target_lang": "en",
+      "text": "A unique entertainment provider of a special experiment that creates an open and beautiful environment, in areas of prosperity and fun suited to visitors from different ages.",
+      "method": "argos-mt",
+      "translated_at": "2026-11-24T13:14:10.777Z"
+    },
+    "11fab96fc00e35312efcecb6c5161a418a418768": {
+      "source": "١ نوفمبر ٢٠٢٦ في ١٢:٠٠ ص إلى ٢ فبراير ٢٠٢٧ في ١١:٥٩ م",
+      "source_lang": "ar",
+      "target_lang": "en",
+      "text": "1 November 2026 at 12:00 to 2 February 2027 at 11:59 M",
+      "method": "argos-mt",
+      "translated_at": "2026-11-24T13:14:10.777Z"
+    },
+    "bd7d3369adf67c1f2da6b695407e467c70db2d13": {
+      "source": "الفعالية: سمار يف الرياض",
+      "source_lang": "ar",
+      "target_lang": "en",
+      "text": "Effectiveness: Samar Yev Riyadh",
+      "method": "argos-mt",
+      "translated_at": "2026-11-24T13:14:10.777Z"
+    },
+    "305fbb36944e927ed9953fc6301243129799debf": {
+      "source": "النافذة الزمنية: ١ نوفمبر ٢٠٢٦ في ١٢:٠٠ ص إلى ٢ فبراير ٢٠٢٧ في ١١:٥٩ م",
+      "source_lang": "ar",
+      "target_lang": "en",
+      "text": "Time window: 1 November 2026 at 12:00 to 2 February 2027 at 11:59 m",
+      "method": "argos-mt",
+      "translated_at": "2026-11-24T13:14:10.777Z"
+    },
+    "12976da070b2ac68fbe0114bbb904fbce70c4e84": {
+      "source": "الموعد: ١ نوفمبر ٢٠٢٦ في ١٢:٠٠ ص إلى ٢ فبراير ٢٠٢٧ في ١١:٥٩ م",
+      "source_lang": "ar",
+      "target_lang": "en",
+      "text": "Date: 1 November 2026 at 12:00 to 2 February 2027 at 11:59 m",
+      "method": "argos-mt",
+      "translated_at": "2026-11-24T13:14:10.777Z"
+    },
+    "718e170c0e5d4f0a26cff9a49d6576ee3499f964": {
+      "source": "دكة نخل",
+      "source_lang": "ar",
+      "target_lang": "en",
+      "text": "Intruder.",
+      "method": "argos-mt",
+      "translated_at": "2026-11-24T13:14:10.777Z"
+    },
+    "2696fad0493d1aa245cab0b5a5de5ae737a326d9": {
+      "source": "موقع يضم العديد من المطاعم والمقاهي، وألعاب األطفال، وبعض الفعاليات، وسط واحة من النخيل تتوسطها جلسات شتوية دافئة بإضاءة ساحرة وخيام، لتجربة شتوية ممتعة.",
+      "source_lang": "ar",
+      "target_lang": "en",
+      "text": "A site of many restaurants and cafes, child games, and some events, in the middle of a palm yard, mediated by warm winter sessions with magical and tent lighting, for a fun winter experience.",
+      "method": "argos-mt",
+      "translated_at": "2026-11-24T13:14:10.777Z"
+    },
+    "a478e218b73197a4541e247c0c64af7364657e27": {
+      "source": "١ نوفمبر ٢٠٢٦ في ١٢:٠٠ ص إلى ٣٠ يناير ٢٠٢٧ في ١١:٥٩ م",
+      "source_lang": "ar",
+      "target_lang": "en",
+      "text": "1 November 2026 at 12:00 to 30 January 2027 at 11:59 M",
+      "method": "argos-mt",
+      "translated_at": "2026-11-24T13:14:10.777Z"
+    },
+    "40f20217674cfc26e41fc3ba76ab98f8fbeef2d8": {
+      "source": "الفعالية: دكة نخل",
+      "source_lang": "ar",
+      "target_lang": "en",
+      "text": "Effectiveness: a palm.",
+      "method": "argos-mt",
+      "translated_at": "2026-11-24T13:14:10.777Z"
+    },
+    "a9ce5b41018f75e09e4e31b8438139b6b7e747f2": {
+      "source": "النافذة الزمنية: ١ نوفمبر ٢٠٢٦ في ١٢:٠٠ ص إلى ٣٠ يناير ٢٠٢٧ في ١١:٥٩ م",
+      "source_lang": "ar",
+      "target_lang": "en",
+      "text": "Time window: 1 November 2026 at 12:00 to 30 January 2027 at 11:59 m",
+      "method": "argos-mt",
+      "translated_at": "2026-11-24T13:14:10.777Z"
+    },
+    "5dda71a2f54d46e375cbf845f3bbcb1018ad3c0a": {
+      "source": "الموعد: ١ نوفمبر ٢٠٢٦ في ١٢:٠٠ ص إلى ٣٠ يناير ٢٠٢٧ في ١١:٥٩ م",
+      "source_lang": "ar",
+      "target_lang": "en",
+      "text": "Date: 1 November 2026 at 12:00 to 30 January 2027 at 11:59 m",
+      "method": "argos-mt",
+      "translated_at": "2026-11-24T13:14:10.777Z"
+    },
+    "310054f8228f2dd8f54aec472adc36afe33caff1": {
+      "source": "ُجُالا س يف الرياض",
+      "source_lang": "ar",
+      "target_lang": "en",
+      "text": "Jalala Siv Riyadh",
+      "method": "argos-mt",
+      "translated_at": "2026-11-24T13:14:10.777Z"
+    },
+    "94c41414df81d05deb1e9d5de51c4e8d9a857d68": {
+      "source": "جُالّ س يف الرياض مالذ شتوي يجمع بين جمال الطبيعة والترفيه واالسترخاء، بعروض فنية متنوعة، ومنطقة مخصصة لألطفال، ومجموعة من المطاعم والمقاهي يف أجواء ساحرة.",
+      "source_lang": "ar",
+      "target_lang": "en",
+      "text": "The SV Riyadh is a winter between nature ' s beauty, entertainment and prosperity, with various artistic offers, a child-specific area, and a group of restaurants and cafes that create a fascinating atmosphere.",
+      "method": "argos-mt",
+      "translated_at": "2026-11-24T13:14:10.777Z"
+    },
+    "04eacfd45634e664756114ce11a8cc8d35a2088d": {
+      "source": "٢ نوفمبر ٢٠٢٦ في ١٢:٠٠ ص إلى ٣٠ نوفمبر ٢٠٢٦ في ١١:٥٩ م",
+      "source_lang": "ar",
+      "target_lang": "en",
+      "text": "2 November 2026 at 12:00 to 30 November 2026 at 11:59 M",
+      "method": "argos-mt",
+      "translated_at": "2026-11-24T13:14:10.777Z"
+    },
+    "f78c4d533a95a5565060e2d84b1f02616fac41c2": {
+      "source": "الفعالية: ُجُالا س يف الرياض",
+      "source_lang": "ar",
+      "target_lang": "en",
+      "text": "Effectiveness: Jalala Siv Riyadh",
+      "method": "argos-mt",
+      "translated_at": "2026-11-24T13:14:10.777Z"
+    },
+    "010b6da77ba805441af6e672b4cc1d568ec8633b": {
+      "source": "النافذة الزمنية: ٢ نوفمبر ٢٠٢٦ في ١٢:٠٠ ص إلى ٣٠ نوفمبر ٢٠٢٦ في ١١:٥٩ م",
+      "source_lang": "ar",
+      "target_lang": "en",
+      "text": "Time window: 2 November 2026 at 12:00 to 30 November 2026 at 11:59 m",
+      "method": "argos-mt",
+      "translated_at": "2026-11-24T13:14:10.777Z"
+    },
+    "bb0791c5ca05b40019017d71de7d7bf02c7793d3": {
+      "source": "الموعد: ٢ نوفمبر ٢٠٢٦ في ١٢:٠٠ ص إلى ٣٠ نوفمبر ٢٠٢٦ في ١١:٥٩ م",
+      "source_lang": "ar",
+      "target_lang": "en",
+      "text": "Date: 2 November 2026 at 12:00 to 30 November 2026 at 11:59 m",
+      "method": "argos-mt",
+      "translated_at": "2026-11-24T13:14:10.777Z"
+    },
+    "966017f4821fda889350e00195238906cf58e1bc": {
+      "source": "عرض سيرك مائي مبهر يجمع األكروبات المذهلة، والعروض العالمية، والموسيقى، والمؤثرات البصرية يف تجربة عائلية ال تُنسى. سيرك فونتانا ضمن الترفيه والعائلات في عسير. تبدأ الفعالية ٠٥‏/١١‏/٢٠٢٦ وتنتهي ٠٤‏/١٢‏/٢٠٢٦ حسب البيانات المتاحة. تعرض الصفحة وقت الفعالية وموقعها ومصدرها وروابط التقويم والاتجاهات عند توفرها. المصدر: Visit Saudi Summer Calendar PDF.",
+      "source_lang": "ar",
+      "target_lang": "en",
+      "text": "An impressive water circus that collects spectacular robots, world shows, music and optics is a family experience that forgets. Serk Fontana is in entertainment and family in Aseer. Effectiveness starts at 11.50 a.m. and ends at 12.2026 according to available data. The page presents the time, location and source of effectiveness, calendar linkages and trends when available. Source: Visit Saudi Summer Calendar PDF.",
+      "method": "argos-mt",
+      "translated_at": "2026-11-24T13:14:10.777Z"
+    },
+    "73921555dd2023354b97e61054efae33494725cb": {
+      "source": "عرض سيرك مائي مبهر يجمع األكروبات المذهلة، والعروض العالمية، والموسيقى، والمؤثرات البصرية يف تجربة عائلية ال تُنسى.",
+      "source_lang": "ar",
+      "target_lang": "en",
+      "text": "An impressive water circus that collects spectacular robots, world shows, music and optics is a family experience that forgets.",
+      "method": "argos-mt",
+      "translated_at": "2026-11-24T13:14:10.777Z"
+    },
+    "553e4771400f8bc7d6537cb29225d99534bed5da": {
+      "source": "شتاًء إثراًء يف الظهران اكسبو",
+      "source_lang": "ar",
+      "target_lang": "en",
+      "text": "F. Dhahran Express.",
+      "method": "argos-mt",
+      "translated_at": "2026-11-24T13:14:10.777Z"
+    },
+    "e0837aed3f68edb95d9abd10f5c00727e407baff": {
+      "source": "تجربة شتوية تجمع بين الفنون والثقافة والترفيه، وتقدم ورشً في إبداعية وعروضً في حية وأنشطة عائلية تناسب جميع األعمار، يف أجواء مليئة بالمتعة واإللهام، تعكس أصالة الهوية السعودية وروح اإلبداع.",
+      "source_lang": "ar",
+      "target_lang": "en",
+      "text": "A winter experience combining arts, culture and entertainment, offering creative workshops, live shows and family activities suited to all ages, a full environment of joy and inspiration, reflecting Saudi identity and a spirit of deception.",
+      "method": "argos-mt",
+      "translated_at": "2026-11-24T13:14:10.777Z"
+    },
+    "76c1fbe9ce9a35bf00116c222d037b5acfc794de": {
+      "source": "١٢ نوفمبر ٢٠٢٦ في ١٢:٠٠ ص إلى ٢٨ نوفمبر ٢٠٢٦ في ١١:٥٩ م",
+      "source_lang": "ar",
+      "target_lang": "en",
+      "text": "12 November 2026 at 12:00 to 28 November 2026 at 11:59 M",
+      "method": "argos-mt",
+      "translated_at": "2026-11-24T13:14:10.777Z"
+    },
+    "4705d166c3b3334a57262f596f6496c4269fd2f8": {
+      "source": "الفعالية: شتاًء إثراًء يف الظهران اكسبو",
+      "source_lang": "ar",
+      "target_lang": "en",
+      "text": "Efficiency: F. Dhahran Expresso",
+      "method": "argos-mt",
+      "translated_at": "2026-11-24T13:14:10.777Z"
+    },
+    "542e45009ce7268418f644a2664bf95ecb56ff24": {
+      "source": "النافذة الزمنية: ١٢ نوفمبر ٢٠٢٦ في ١٢:٠٠ ص إلى ٢٨ نوفمبر ٢٠٢٦ في ١١:٥٩ م",
+      "source_lang": "ar",
+      "target_lang": "en",
+      "text": "Time window: 12 November 2026 at 12:00 p. 28 November 2026 at 11:59 m",
+      "method": "argos-mt",
+      "translated_at": "2026-11-24T13:14:10.777Z"
+    },
+    "ad87c19c24ef20890392be442c12bd78094d1db3": {
+      "source": "الموعد: ١٢ نوفمبر ٢٠٢٦ في ١٢:٠٠ ص إلى ٢٨ نوفمبر ٢٠٢٦ في ١١:٥٩ م",
+      "source_lang": "ar",
+      "target_lang": "en",
+      "text": "Date: 12 November 2026 at 12:00 p. 28 November 2026 at 11:59 m",
+      "method": "argos-mt",
+      "translated_at": "2026-11-24T13:14:10.777Z"
+    },
+    "6e46f38f13ff4df45d8f9615c4569a0e4548c1e6": {
+      "source": "غلاف EventLive لفعالية موسم ملح القصب الرابع",
+      "source_lang": "ar",
+      "target_lang": "en",
+      "text": "EventLive cover for the effectiveness of the fourth canal salt season",
+      "method": "argos-mt",
+      "translated_at": "2026-11-24T13:14:10.777Z"
+    },
+    "0258e1953138de3b29e11de9b3e2b5a97e133bb7": {
+      "source": "متاهة الحصن",
+      "source_lang": "ar",
+      "target_lang": "en",
+      "text": "Fort maze.",
+      "method": "argos-mt",
+      "translated_at": "2026-11-24T13:14:10.777Z"
+    },
+    "d098d1d6f6a522ed6ccc6f4e5cc6176cdef53558": {
+      "source": "متاهة الحصن مليئة بالعقبات، والتحديات المثيرة، والمرح المتواصل، بأنشطة حيوية تضيف الحركة والحماس إىل كل لحظة. متاهة الحصن ضمن السياحة والتجارب في عسير. تبدأ الفعالية ١٩‏/١١‏/٢٠٢٦ وتنتهي ٢٨‏/١١‏/٢٠٢٦ حسب البيانات المتاحة. تعرض الصفحة وقت الفعالية وموقعها ومصدرها وروابط التقويم والاتجاهات عند توفرها. المصدر: Visit Saudi Summer Calendar PDF.",
+      "source_lang": "ar",
+      "target_lang": "en",
+      "text": "The maze of the fort is filled with obstacles, interesting challenges and continued joy, with vital activities that add movement and enthusiasm every moment. Fort maze in tourism and experiments in Aseer. Effectiveness begins 19/11/2026 and ends 28/11/2026 according to available data. The page presents the time, location and source of effectiveness, calendar linkages and trends when available. Source: Visit Saudi Summer Calendar PDF.",
+      "method": "argos-mt",
+      "translated_at": "2026-11-24T13:14:10.777Z"
+    },
+    "557ad13d19df217654dc161743607d6a153601fc": {
+      "source": "متاهة الحصن مليئة بالعقبات، والتحديات المثيرة، والمرح المتواصل، بأنشطة حيوية تضيف الحركة والحماس إىل كل لحظة.",
+      "source_lang": "ar",
+      "target_lang": "en",
+      "text": "The maze of the fort is filled with obstacles, interesting challenges and continued joy, with vital activities that add movement and enthusiasm every moment.",
+      "method": "argos-mt",
+      "translated_at": "2026-11-24T13:14:10.777Z"
+    },
+    "e7b4aabd08da4aade926f7b64911684473d35ed4": {
+      "source": "الفعالية: متاهة الحصن",
+      "source_lang": "ar",
+      "target_lang": "en",
+      "text": "Effectiveness: maze of the fort",
+      "method": "argos-mt",
+      "translated_at": "2026-11-24T13:14:10.777Z"
+    },
+    "1147705804ae68296d6a6db8b8de3ef7a5343a21": {
+      "source": "السينما عن قرب",
+      "source_lang": "ar",
+      "target_lang": "en",
+      "text": "The movies are close.",
+      "method": "argos-mt",
+      "translated_at": "2026-11-24T13:14:10.777Z"
+    },
+    "2f5da6b39b87fbc60cd46b4b25e170d808345940": {
+      "source": "اكتشف عالم السينما من خالل عروض مختارة بعناية وحوارات مع صنّاع األفالم. السينما عن قرب ضمن السياحة والتجارب في جدة. تبدأ الفعالية ٢٥‏/١١‏/٢٠٢٦ وتنتهي ٢٥‏/١١‏/٢٠٢٦ حسب البيانات المتاحة. تعرض الصفحة وقت الفعالية وموقعها ومصدرها وروابط التقويم والاتجاهات عند توفرها. المصدر: Visit Saudi Summer Calendar PDF.",
+      "source_lang": "ar",
+      "target_lang": "en",
+      "text": "The cinema world was discovered by a carefully selected bidder and dialogues with an amalgam industry. Films are close within tourism and experiments in Jeddah. Effectiveness starts 25/11/2026 and ends 25/11/2026 according to available data. The page presents the time, location and source of effectiveness, calendar linkages and trends when available. Source: Visit Saudi Summer Calendar PDF.",
+      "method": "argos-mt",
+      "translated_at": "2026-11-24T13:14:10.777Z"
+    },
+    "754e51d9e0c6977449b631ca4b97714d17712453": {
+      "source": "اكتشف عالم السينما من خالل عروض مختارة بعناية وحوارات مع صنّاع األفالم.",
+      "source_lang": "ar",
+      "target_lang": "en",
+      "text": "The cinema world was discovered by a carefully selected bidder and dialogues with an amalgam industry.",
+      "method": "argos-mt",
+      "translated_at": "2026-11-24T13:14:10.777Z"
+    },
+    "123364932d82b77ee40b2607bacf987947f1d07a": {
+      "source": "٢٥ نوفمبر ٢٠٢٦ في ١٢:٠٠ ص إلى ٢٥ نوفمبر ٢٠٢٦ في ١١:٥٩ م",
+      "source_lang": "ar",
+      "target_lang": "en",
+      "text": "25 November 2026 at 12:00 to 25 November 2026 at 11:59 M",
+      "method": "argos-mt",
+      "translated_at": "2026-11-24T13:14:10.777Z"
+    },
+    "fb472eb9a07f9edea564b3fdb41dfc49efd1e7eb": {
+      "source": "الفعالية: السينما عن قرب",
+      "source_lang": "ar",
+      "target_lang": "en",
+      "text": "Effectiveness: proximity films",
+      "method": "argos-mt",
+      "translated_at": "2026-11-24T13:14:10.777Z"
+    },
+    "66f89a006e749e177e470cbe41bd9edd165ca7f8": {
+      "source": "النافذة الزمنية: ٢٥ نوفمبر ٢٠٢٦ في ١٢:٠٠ ص إلى ٢٥ نوفمبر ٢٠٢٦ في ١١:٥٩ م",
+      "source_lang": "ar",
+      "target_lang": "en",
+      "text": "Time window: 25 November 2026 at 12:00 p. 25 November 2026 at 11:59 m",
+      "method": "argos-mt",
+      "translated_at": "2026-11-24T13:14:10.777Z"
+    },
+    "82a2e84701445eb7b777b9e9e5012203ff84e5d2": {
+      "source": "الموعد: ٢٥ نوفمبر ٢٠٢٦ في ١٢:٠٠ ص إلى ٢٥ نوفمبر ٢٠٢٦ في ١١:٥٩ م",
+      "source_lang": "ar",
+      "target_lang": "en",
+      "text": "Date: 25 November 2026 at 12:00 p. 25 November 2026 at 11:59 m",
+      "method": "argos-mt",
+      "translated_at": "2026-11-24T13:14:10.777Z"
+    },
+    "8ef88f343a735f68a331f9fe146682cfd43f2428": {
+      "source": "بطولة تي 100 للترايثلون",
+      "source_lang": "ar",
+      "target_lang": "en",
+      "text": "T-100 to Trinity.",
+      "method": "argos-mt",
+      "translated_at": "2026-11-24T13:14:10.777Z"
+    },
+    "9e28b1bd2b9d17940cf766900d9f9c8f9c458cef": {
+      "source": "بطولة ترايثلون دولية كبرى عبر واجهة جدة البحرية، ونادي اليخوت، وحلبة فورموال 1، تجمع السباحة والدراجات والجري للرياضيين المحترفين والهواة.",
+      "source_lang": "ar",
+      "target_lang": "en",
+      "text": "A major international tritlon tournament through the Jeddah Naval Face, the yacht Club and the Formula 1, the pool, bicycles and run for professional and hobby sports.",
+      "method": "argos-mt",
+      "translated_at": "2026-11-24T13:14:10.777Z"
+    },
+    "a5ddcdbae961484ed9baf8c2671dfc229fb3b9f8": {
+      "source": "٢٥ نوفمبر ٢٠٢٦ في ١٢:٠٠ ص إلى ٢٨ نوفمبر ٢٠٢٦ في ١١:٥٩ م",
+      "source_lang": "ar",
+      "target_lang": "en",
+      "text": "25 November 2026 at 12:00 to 28 November 2026 at 11:59 M",
+      "method": "argos-mt",
+      "translated_at": "2026-11-24T13:14:10.777Z"
+    },
+    "372bb5b00b1710e413c03b6bed72b8818dd4f4a5": {
+      "source": "الفعالية: بطولة تي 100 للترايثلون",
+      "source_lang": "ar",
+      "target_lang": "en",
+      "text": "Effectiveness: T-100 Trinity Championship",
+      "method": "argos-mt",
+      "translated_at": "2026-11-24T13:14:10.777Z"
+    },
+    "f8fc52f0756c31b0c81a575e48285bcb1627343f": {
+      "source": "النافذة الزمنية: ٢٥ نوفمبر ٢٠٢٦ في ١٢:٠٠ ص إلى ٢٨ نوفمبر ٢٠٢٦ في ١١:٥٩ م",
+      "source_lang": "ar",
+      "target_lang": "en",
+      "text": "Time window: 25 November 2026 at 12:00 p. 28 November 2026 at 11:59 m",
+      "method": "argos-mt",
+      "translated_at": "2026-11-24T13:14:10.777Z"
+    },
+    "7d0b71a2a84d9b0c1ae6b7fcff960130a437a23f": {
+      "source": "الموقع: العلا",
+      "source_lang": "ar",
+      "target_lang": "en",
+      "text": "Location: AlUla",
+      "method": "argos-mt",
+      "translated_at": "2026-11-24T13:14:10.777Z"
+    },
+    "34c660ae75d26d539633674c2bfbe8df69ca1e3d": {
+      "source": "الوجهة: العلا",
+      "source_lang": "ar",
+      "target_lang": "en",
+      "text": "Face: AlUla",
+      "method": "argos-mt",
+      "translated_at": "2026-11-24T13:14:10.777Z"
+    },
+    "c8f72187b7249155ce663268c1f8335a6b301a02": {
+      "source": "الموعد: ٢٥ نوفمبر ٢٠٢٦ في ١٢:٠٠ ص إلى ٢٨ نوفمبر ٢٠٢٦ في ١١:٥٩ م",
+      "source_lang": "ar",
+      "target_lang": "en",
+      "text": "Date: 25 November 2026 at 12:00 p. 28 November 2026 at 11:59 m",
+      "method": "argos-mt",
+      "translated_at": "2026-11-24T13:14:10.777Z"
+    },
+    "c0a5123a30d4435fa5e5528c3f65feef3a077d39": {
+      "source": "أبو سارة و سري الخالد يف ليالي الديرة الكوميدية",
+      "source_lang": "ar",
+      "target_lang": "en",
+      "text": "Abu Sara and Sri Khaled Yvell nights of the comedian home",
+      "method": "argos-mt",
+      "translated_at": "2026-11-24T13:14:10.777Z"
+    },
+    "6359cf3a12650c5a5e9b261cc9e7747390f95013": {
+      "source": "ساعة ستاند أب كوميدي خاصة، نصفها من الكوميديان أبو سارة والنصف اآلخر من سري الخالد، يف ليالي الديرة الكوميدية وسط أجواء الرياض الشتوية بالمعيقلية األوىل.",
+      "source_lang": "ar",
+      "target_lang": "en",
+      "text": "Steand Ap Comidi's private hour, half of which are Kumidian Abu Sara and the last half of my secret Khalid, Yvell, the Comician Diary in the middle of the Ulil winter Riyadh.",
+      "method": "argos-mt",
+      "translated_at": "2026-11-24T13:14:10.777Z"
+    },
+    "ef15ce51a11f969b19bc12375c86f970e8136cc9": {
+      "source": "٢٦ نوفمبر ٢٠٢٦ في ١٢:٠٠ ص إلى ٢٦ نوفمبر ٢٠٢٦ في ١١:٥٩ م",
+      "source_lang": "ar",
+      "target_lang": "en",
+      "text": "26 November 2026 at 12:00 to 26 November 2026 at 11:59 M",
+      "method": "argos-mt",
+      "translated_at": "2026-11-24T13:14:10.777Z"
+    },
+    "5bafa336a0c5c7725f09a17d11957fe843df9446": {
+      "source": "الفعالية: أبو سارة و سري الخالد يف ليالي الديرة الكوميدية",
+      "source_lang": "ar",
+      "target_lang": "en",
+      "text": "Effectiveness: Abu Sarah and Sri Khaled Yves, Kumidiyah Diary",
+      "method": "argos-mt",
+      "translated_at": "2026-11-24T13:14:10.777Z"
+    },
+    "e71448ee88407369fe42f9e7f49dea03cd76ac1f": {
+      "source": "النافذة الزمنية: ٢٦ نوفمبر ٢٠٢٦ في ١٢:٠٠ ص إلى ٢٦ نوفمبر ٢٠٢٦ في ١١:٥٩ م",
+      "source_lang": "ar",
+      "target_lang": "en",
+      "text": "Time window: 26 November 2026 at 12:00 to 26 November 2026 at 11:59 m",
+      "method": "argos-mt",
+      "translated_at": "2026-11-24T13:14:10.777Z"
+    },
+    "7c3bbcb337631b44c2d436151700d1f26328c626": {
+      "source": "الموعد: ٢٦ نوفمبر ٢٠٢٦ في ١٢:٠٠ ص إلى ٢٦ نوفمبر ٢٠٢٦ في ١١:٥٩ م",
+      "source_lang": "ar",
+      "target_lang": "en",
+      "text": "Date: 26 November 2026 at 12:00 to 26 November 2026 at 11:59 m",
+      "method": "argos-mt",
+      "translated_at": "2026-11-24T13:14:10.777Z"
+    },
+    "743f1e78a12fb809dab87800a91e1fff3b53532e": {
+      "source": "تاريخ الفن عىل طريق البخور",
+      "source_lang": "ar",
+      "target_lang": "en",
+      "text": "The history of art is on the rocks.",
+      "method": "argos-mt",
+      "translated_at": "2026-11-24T13:14:10.777Z"
+    },
+    "2b294a124ad855898e03e0604bc6cfb571ee1236": {
+      "source": "جولة مختارة بعناية خاصة يقودها الراوي يف دادان والحِ جر، الستكشاف أعظم مدينتين قديمتين يف العال من منظور تاريخ الفن وجمالياته.",
+      "source_lang": "ar",
+      "target_lang": "en",
+      "text": "A specially selected round led by the Rawie Yf Dadan and Al-Hajar, the Scouts are the greatest two old cities in the world from the perspective of art history and beauty.",
+      "method": "argos-mt",
+      "translated_at": "2026-11-24T13:14:10.777Z"
+    },
+    "ead9c033df49e3da1ae5b3206b43f122099fc16c": {
+      "source": "٢٦ نوفمبر ٢٠٢٦ في ١٢:٠٠ ص إلى ٦ فبراير ٢٠٢٧ في ١١:٥٩ م",
+      "source_lang": "ar",
+      "target_lang": "en",
+      "text": "26 November 2026 at 12:00 to 6 February 2027 at 11:59 M",
+      "method": "argos-mt",
+      "translated_at": "2026-11-24T13:14:10.777Z"
+    },
+    "c353ca95b5ddabaa6fb367963a2d223f3a10ab7b": {
+      "source": "الفعالية: تاريخ الفن عىل طريق البخور",
+      "source_lang": "ar",
+      "target_lang": "en",
+      "text": "Effectiveness: the history of art is on the rock road.",
+      "method": "argos-mt",
+      "translated_at": "2026-11-24T13:14:10.777Z"
+    },
+    "9a5eb7a211c6e3d87eecb647e73c29dda71eacbe": {
+      "source": "النافذة الزمنية: ٢٦ نوفمبر ٢٠٢٦ في ١٢:٠٠ ص إلى ٦ فبراير ٢٠٢٧ في ١١:٥٩ م",
+      "source_lang": "ar",
+      "target_lang": "en",
+      "text": "Time window: 26 November 2026 at 12:00 to 6 February 2027 at 11:59 m",
+      "method": "argos-mt",
+      "translated_at": "2026-11-24T13:14:10.777Z"
+    },
+    "7d147c868ec4cd3df0129f7a33e06929ab49b9f5": {
+      "source": "الموعد: ٢٦ نوفمبر ٢٠٢٦ في ١٢:٠٠ ص إلى ٦ فبراير ٢٠٢٧ في ١١:٥٩ م",
+      "source_lang": "ar",
+      "target_lang": "en",
+      "text": "Date: 26 November 2026 at 12:00 to 6 February 2027 at 11:59 m",
+      "method": "argos-mt",
+      "translated_at": "2026-11-24T13:14:10.777Z"
+    },
+    "af34083aaaa9b6fadc15b10e9a6dc8bf8c2eee3c": {
+      "source": "دخول مسائي حصري إىل دادان",
+      "source_lang": "ar",
+      "target_lang": "en",
+      "text": "Into an exclusive evening, Il Dadan.",
+      "method": "argos-mt",
+      "translated_at": "2026-11-24T13:14:10.777Z"
+    },
+    "1349428880ce568c97231295ff1056a68a2e77f9": {
+      "source": "استمتع بدخول مسائي حصري إىل دادان ضمن مجموعة صغيرة، بقيادة راوٍ متخصص تلقى تدريبه عىل يد فرق اآلثار يف العال. دخول مسائي حصري إىل دادان ضمن السياحة والتجارب في جدة. تبدأ الفعالية ٢٦‏/١١‏/٢٠٢٦ وتنتهي ١٠‏/١٢‏/٢٠٢٦ حسب البيانات المتاحة. تعرض الصفحة وقت الفعالية وموقعها ومصدرها وروابط التقويم والاتجاهات عند توفرها. المصدر: Visit Saudi Summer Calendar PDF.",
+      "source_lang": "ar",
+      "target_lang": "en",
+      "text": "Enjoy the exclusive evening of Il Dadan in a small group, led by a specialized Rao who has been trained by the Fal-Al-Al-Al-Al-Al-Al-Al-Al-Al-Al-Al-Al-Al-Al-Al-Alah teams. An exclusive evening of Il Dadan is entering tourism and experiments in Jeddah. Effectiveness begins 26/11/2026 and ends 10/12/2026 according to available data. The page presents the time, location and source of effectiveness, calendar linkages and trends when available. Source: Visit Saudi Summer Calendar PDF.",
+      "method": "argos-mt",
+      "translated_at": "2026-11-24T13:14:10.777Z"
+    },
+    "cb3ec02f77a1612353f39776da3997565790e65a": {
+      "source": "استمتع بدخول مسائي حصري إىل دادان ضمن مجموعة صغيرة، بقيادة راوٍ متخصص تلقى تدريبه عىل يد فرق اآلثار يف العال.",
+      "source_lang": "ar",
+      "target_lang": "en",
+      "text": "Enjoy the exclusive evening of Il Dadan in a small group, led by a specialized Rao who has been trained by the Fal-Al-Al-Al-Al-Al-Al-Al-Al-Al-Al-Al-Al-Al-Al-Al-Alah teams.",
+      "method": "argos-mt",
+      "translated_at": "2026-11-24T13:14:10.777Z"
+    },
+    "d7f290f6a712c6d624d7d6c4a1f879921a61dfa3": {
+      "source": "٢٦ نوفمبر ٢٠٢٦ في ١٢:٠٠ ص إلى ١٠ ديسمبر ٢٠٢٦ في ١١:٥٩ م",
+      "source_lang": "ar",
+      "target_lang": "en",
+      "text": "26 November 2026 at 12:00 to 10 December 2026 at 11:59 M",
+      "method": "argos-mt",
+      "translated_at": "2026-11-24T13:14:10.777Z"
+    },
+    "79741ffec165d98ed8423be68ebaad563cbb5d23": {
+      "source": "الفعالية: دخول مسائي حصري إىل دادان",
+      "source_lang": "ar",
+      "target_lang": "en",
+      "text": "Effectiveness: exclusive evening access to Il Dadan",
+      "method": "argos-mt",
+      "translated_at": "2026-11-24T13:14:10.777Z"
+    },
+    "3f68269ee4a76e56b4563f40e949f28a8b4ebf32": {
+      "source": "النافذة الزمنية: ٢٦ نوفمبر ٢٠٢٦ في ١٢:٠٠ ص إلى ١٠ ديسمبر ٢٠٢٦ في ١١:٥٩ م",
+      "source_lang": "ar",
+      "target_lang": "en",
+      "text": "Time window: 26 November 2026 at 12:00 to 10 December 2026 at 11:59 m",
+      "method": "argos-mt",
+      "translated_at": "2026-11-24T13:14:10.777Z"
+    },
+    "1bfbe625b0bad246b83e268be0afcc4050f813ea": {
+      "source": "الموعد: ٢٦ نوفمبر ٢٠٢٦ في ١٢:٠٠ ص إلى ١٠ ديسمبر ٢٠٢٦ في ١١:٥٩ م",
+      "source_lang": "ar",
+      "target_lang": "en",
+      "text": "Date: 26 November 2026 at 12:00 to 10 December 2026 at 11:59 m",
+      "method": "argos-mt",
+      "translated_at": "2026-11-24T13:14:10.777Z"
+    },
+    "ef5f31fecf8bc4302f3f6560fe68f1ec54c72ca9": {
+      "source": "ليلة مليئة بالمواقف الكوميدية والضحك بأسلوب MOMOS المميز، لتجربة ترفيهية ممتعة من البداية للنهاية. واقف! Momos ضمن الترفيه والعائلات في العلا. تبدأ الفعالية ٢٦‏/١١‏/٢٠٢٦ وتنتهي ٢٦‏/١١‏/٢٠٢٦ حسب البيانات المتاحة. تعرض الصفحة وقت الفعالية وموقعها ومصدرها وروابط التقويم والاتجاهات عند توفرها. المصدر: Visit Saudi Summer Calendar PDF.",
+      "source_lang": "ar",
+      "target_lang": "en",
+      "text": "A night full of comedy positions and a fun MOMOS, for a fun recreational experience from the beginning to the end. Standing! Momos is in entertainment and families in AlUla. Effectiveness begins 26/11/2026 and ends 26/11/2026 according to available data. The page presents the time, location and source of effectiveness, calendar linkages and trends when available. Source: Visit Saudi Summer Calendar PDF.",
+      "method": "argos-mt",
+      "translated_at": "2026-11-24T13:14:10.777Z"
+    },
+    "d1602526a6e7323ebedf8f35c67d369bb0b0c18f": {
+      "source": "حفل صابر الرباعي يف فوكالي الرياض",
+      "source_lang": "ar",
+      "target_lang": "en",
+      "text": "The quadripartite ball, Yves Focalie Riyadh",
+      "method": "argos-mt",
+      "translated_at": "2026-11-24T13:14:10.777Z"
+    },
+    "45994a5cb09ce2cd79d42d83b6f6b725a02ee6cb": {
+      "source": "يؤدي الفنان صابر الرباعي أشهر أغنياته المحبوبة مثل \"أتحدى العالم\" و\"سيدي منصور\" و\"عز الحبايب\" ضمن ليالي فوكالي يف الرياض، يف تجربة فنية مميزة يوم 27 نوفمبر.",
+      "source_lang": "ar",
+      "target_lang": "en",
+      "text": "The four-month-old artist performs his lovely songs like \"defeating the world\" and \"Sir Mansour\" and \"Love Goat\" within the nights of Fukali Riyadh, a special art experiment on 27 November.",
+      "method": "argos-mt",
+      "translated_at": "2026-11-24T13:14:10.777Z"
+    },
+    "ee4571412657df8045f5ca178190d1c2ffbf9dab": {
+      "source": "الفعالية: حفل صابر الرباعي يف فوكالي الرياض",
+      "source_lang": "ar",
+      "target_lang": "en",
+      "text": "Effectiveness: the four-way ball, Yves Focalie Riyadh",
+      "method": "argos-mt",
+      "translated_at": "2026-11-24T13:14:10.777Z"
+    },
+    "6351b79e964b462b8a5f48f615092915c5a4b808": {
+      "source": "ُجولة األطفال يف الحِ جر",
+      "source_lang": "ar",
+      "target_lang": "en",
+      "text": "A child's tour.",
+      "method": "argos-mt",
+      "translated_at": "2026-11-24T13:14:10.777Z"
+    },
+    "06444df3041cddf3d16b4f433db6f96a5813d222": {
+      "source": "جولة ممتعة وتفاعلية تعرّف األطفال واليافعين بتاريخ الحِ جر وآثارها بأسلوب مبسط وجذاب يناسب أعمارهم ويثري فضولهم المعريف خالل رحلة مميزة.",
+      "source_lang": "ar",
+      "target_lang": "en",
+      "text": "A fun and interactive tour that defines children and young people in the history of the harvest and its effects in a simplified and attractive manner appropriate to their age and enriches their common curiosity with a distinct journey.",
+      "method": "argos-mt",
+      "translated_at": "2026-11-24T13:14:10.777Z"
+    },
+    "17a333e6ca460dce64899dce939b74d2bab22b7d": {
+      "source": "٢٧ نوفمبر ٢٠٢٦ في ١٢:٠٠ ص إلى ١٦ يناير ٢٠٢٧ في ١١:٥٩ م",
+      "source_lang": "ar",
+      "target_lang": "en",
+      "text": "27 November 2026 on 12:00 to 16 January 2027 at 11:59 M",
+      "method": "argos-mt",
+      "translated_at": "2026-11-24T13:14:10.777Z"
+    },
+    "27c774b15d89b8f769c950b601447c9b6666e213": {
+      "source": "الفعالية: ُجولة األطفال يف الحِ جر",
+      "source_lang": "ar",
+      "target_lang": "en",
+      "text": "Efficiency: child tour.",
+      "method": "argos-mt",
+      "translated_at": "2026-11-24T13:14:10.777Z"
+    },
+    "ed45c4c130c80afaa4719a3c125f01845a5c8161": {
+      "source": "النافذة الزمنية: ٢٧ نوفمبر ٢٠٢٦ في ١٢:٠٠ ص إلى ١٦ يناير ٢٠٢٧ في ١١:٥٩ م",
+      "source_lang": "ar",
+      "target_lang": "en",
+      "text": "Time window: 27 November 2026 at 12:00 to 16 January 2027 at 11:59 m",
+      "method": "argos-mt",
+      "translated_at": "2026-11-24T13:14:10.777Z"
+    },
+    "7f9670f84385e8a2b6f61bbadfa0af11c81b5185": {
+      "source": "الموعد: ٢٧ نوفمبر ٢٠٢٦ في ١٢:٠٠ ص إلى ١٦ يناير ٢٠٢٧ في ١١:٥٩ م",
+      "source_lang": "ar",
+      "target_lang": "en",
+      "text": "Date: 27 November 2026 at 12:00 to 16 January 2027 at 11:59 m",
+      "method": "argos-mt",
+      "translated_at": "2026-11-24T13:14:10.777Z"
+    },
+    "a95a04778003d781a0428e86096424c66eab9c1d": {
+      "source": "احتفالية طنطورة – بالتعاون مع صُ نع يف السعودية",
+      "source_lang": "ar",
+      "target_lang": "en",
+      "text": "- In cooperation with the Sun of Saudi Arabia.",
+      "method": "argos-mt",
+      "translated_at": "2026-11-24T13:14:10.777Z"
+    },
+    "25b08700fdf2043e542944421a8b3e41af49f28f": {
+      "source": "احتفِ بتقاليد طنطورة عبر برنامج نابض بالحياة يضم أنشطة ثقافية متنوعة، وعروضً في فنية، وتجارب مجتمعية مميزة يف البلدة القديمة بالعال.",
+      "source_lang": "ar",
+      "target_lang": "en",
+      "text": "Consuming the traditions of a ton of development through a vibrant programme that includes diverse cultural activities, artistic performances and distinct community experiences that bring the old town to justice.",
+      "method": "argos-mt",
+      "translated_at": "2026-11-24T13:14:10.777Z"
+    },
+    "4c000625dc56c99bd16b9696a641443b6e328459": {
+      "source": "١ ديسمبر ٢٠٢٦ في ١٢:٠٠ ص إلى ٣١ ديسمبر ٢٠٢٦ في ١١:٥٩ م",
+      "source_lang": "ar",
+      "target_lang": "en",
+      "text": "1 December 2026 at 12:00 to 31 December 2026 at 11:59 m",
+      "method": "argos-mt",
+      "translated_at": "2026-11-24T13:14:10.777Z"
+    },
+    "452b966496ef331e2fdb9bb08cdc7e2d1e50c11f": {
+      "source": "الفعالية: احتفالية طنطورة – بالتعاون مع صُ نع يف السعودية",
+      "source_lang": "ar",
+      "target_lang": "en",
+      "text": "Effectiveness: the Tontar Party, in cooperation with the Sun of Saudi Arabia",
+      "method": "argos-mt",
+      "translated_at": "2026-11-24T13:14:10.777Z"
+    },
+    "16432ab6964d4a4084104b42394f0be27504b7e2": {
+      "source": "النافذة الزمنية: ١ ديسمبر ٢٠٢٦ في ١٢:٠٠ ص إلى ٣١ ديسمبر ٢٠٢٦ في ١١:٥٩ م",
+      "source_lang": "ar",
+      "target_lang": "en",
+      "text": "Time window: 1 December 2026 at 12:00 to 31 December 2026 at 11:59 m",
+      "method": "argos-mt",
+      "translated_at": "2026-11-24T13:14:10.777Z"
+    },
+    "26fdbb05672acca48d1a459e4c9d0969766305ca": {
+      "source": "الموعد: ١ ديسمبر ٢٠٢٦ في ١٢:٠٠ ص إلى ٣١ ديسمبر ٢٠٢٦ في ١١:٥٩ م",
+      "source_lang": "ar",
+      "target_lang": "en",
+      "text": "Date: 1 December 2026 at 12:00 to 31 December 2026 at 11:59 m",
+      "method": "argos-mt",
+      "translated_at": "2026-11-24T13:14:10.777Z"
+    },
+    "7c7eaf291ec98fd773be60196fd50170d4fb1e5d": {
+      "source": "عمل فني عام ضخم يف الجديدة",
+      "source_lang": "ar",
+      "target_lang": "en",
+      "text": "Big public artwork, new F.",
+      "method": "argos-mt",
+      "translated_at": "2026-11-24T13:14:10.777Z"
+    },
+    "09186be0df5a178b4a0f7a316ef950a3d0d9a4d2": {
+      "source": "عمل فني دائم وضخم تقدمه مدرسة الديرة ضمن مهرجان فنون العال 7202، يحوّل فكرة جريئة إىل واقع يف حي الجديدة. عمل فني عام ضخم يف الجديدة ضمن الثقافة والفنون في جدة. تبدأ الفعالية ٠١‏/١٢‏/٢٠٢٦ وتنتهي ٠٦‏/٠٢‏/٢٠٢٧ حسب البيانات المتاحة. تعرض الصفحة وقت الفعالية وموقعها ومصدرها وروابط التقويم والاتجاهات عند توفرها. المصدر: Visit Saudi Summer Calendar PDF.",
+      "source_lang": "ar",
+      "target_lang": "en",
+      "text": "A permanent and large artwork offered by the School of Deiracy at the 7202 Arts Festival transforms the bold idea of a new life reality. A big, new art art art in Jeddah. Effectiveness begins 10/12/2026 and ends 60/2027 according to available data. The page presents the time, location and source of effectiveness, calendar linkages and trends when available. Source: Visit Saudi Summer Calendar PDF.",
+      "method": "argos-mt",
+      "translated_at": "2026-11-24T13:14:10.777Z"
+    },
+    "e18aa3903a9f20a110ec3b1b0be63803c72f5fb3": {
+      "source": "عمل فني دائم وضخم تقدمه مدرسة الديرة ضمن مهرجان فنون العال 7202، يحوّل فكرة جريئة إىل واقع يف حي الجديدة.",
+      "source_lang": "ar",
+      "target_lang": "en",
+      "text": "A permanent and large artwork offered by the School of Deiracy at the 7202 Arts Festival transforms the bold idea of a new life reality.",
+      "method": "argos-mt",
+      "translated_at": "2026-11-24T13:14:10.777Z"
+    },
+    "8466a8eae234001dd260683db7494b29aa2c4124": {
+      "source": "١ ديسمبر ٢٠٢٦ في ١٢:٠٠ ص إلى ٦ فبراير ٢٠٢٧ في ١١:٥٩ م",
+      "source_lang": "ar",
+      "target_lang": "en",
+      "text": "1 December 2026 at 12:00 to 6 February 2027 at 11:59 M",
+      "method": "argos-mt",
+      "translated_at": "2026-11-24T13:14:10.777Z"
+    },
+    "8dd22587185eedef3778f97bdcf463cf7af8e14a": {
+      "source": "الفعالية: عمل فني عام ضخم يف الجديدة",
+      "source_lang": "ar",
+      "target_lang": "en",
+      "text": "Effectiveness: a huge, new public artwork",
+      "method": "argos-mt",
+      "translated_at": "2026-11-24T13:14:10.777Z"
+    },
+    "eba714f8b0f09901e5de12de0270ac9b96c3b8c3": {
+      "source": "النافذة الزمنية: ١ ديسمبر ٢٠٢٦ في ١٢:٠٠ ص إلى ٦ فبراير ٢٠٢٧ في ١١:٥٩ م",
+      "source_lang": "ar",
+      "target_lang": "en",
+      "text": "Time window: 1 December 2026 at 12:00 to 6 February 2027 at 11:59 m",
+      "method": "argos-mt",
+      "translated_at": "2026-11-24T13:14:10.777Z"
+    },
+    "6f65a3e26db223d40bca5ff0d4632a5bdb09abc8": {
+      "source": "الموعد: ١ ديسمبر ٢٠٢٦ في ١٢:٠٠ ص إلى ٦ فبراير ٢٠٢٧ في ١١:٥٩ م",
+      "source_lang": "ar",
+      "target_lang": "en",
+      "text": "Date: 1 December 2026 at 12:00 to 6 February 2027 at 11:59 m",
+      "method": "argos-mt",
+      "translated_at": "2026-11-24T13:14:10.777Z"
+    },
+    "182b09886d561ac3a344f22c3877806f6ce4a1de": {
+      "source": "عىل موج الخبر",
+      "source_lang": "ar",
+      "target_lang": "en",
+      "text": "Spread the news.",
+      "method": "argos-mt",
+      "translated_at": "2026-11-24T13:14:10.777Z"
+    },
+    "2c420d0d1de60ee59f49a9ccd3d42b057cc36d32": {
+      "source": "تجربة شتوية عىل الواجهة البحرية بكورنيش الخبر، حيث يحكي البحر حكايته عبر جلسات بحرية، وأنشطة، وأجواء ساحلية غامرة ومميزة.",
+      "source_lang": "ar",
+      "target_lang": "en",
+      "text": "A winter experience on the seafront of Cornish, where the sea tells its story through sea hearings, activities and vast and distinct coastal atmospheres.",
+      "method": "argos-mt",
+      "translated_at": "2026-11-24T13:14:10.777Z"
+    },
+    "67f135437b6baae86ea50fd0859f04e3d1c3fb00": {
+      "source": "الفعالية: عىل موج الخبر",
+      "source_lang": "ar",
+      "target_lang": "en",
+      "text": "Effectiveness: Relevance",
+      "method": "argos-mt",
+      "translated_at": "2026-11-24T13:14:10.777Z"
+    },
+    "8a155fefe8c3d89018465a82422be84817367aa2": {
+      "source": "مهرُجان الجاز يف ُجدة",
+      "source_lang": "ar",
+      "target_lang": "en",
+      "text": "Jazz FJeddah",
+      "method": "argos-mt",
+      "translated_at": "2026-11-24T13:14:10.777Z"
+    },
+    "356f2135b212f6aa564f2bb76e2d768d47d11f00": {
+      "source": "فعالية موسيقية صاعدة تجمع اإلرث الموسيقي السعودي وموسيقى الجاز العالمية، بعروض لفنانين سعوديين ودوليين ومسابقة للتأليف الموسيقي وتدشين ألبوم جاز.",
+      "source_lang": "ar",
+      "target_lang": "en",
+      "text": "A rising musical event that brings together Saudi musical heritage and world jazz music, with offers of Saudi and international artists, musical competition and jazz album.",
+      "method": "argos-mt",
+      "translated_at": "2026-11-24T13:14:10.777Z"
+    },
+    "d2ea09e4bffa8fb4257a52669d9d3fa97f6d7485": {
+      "source": "١ ديسمبر ٢٠٢٦ في ١٢:٠٠ ص إلى ٥ ديسمبر ٢٠٢٦ في ١١:٥٩ م",
+      "source_lang": "ar",
+      "target_lang": "en",
+      "text": "1 December 2026 at 12:00 to 5 December 2026 at 11:59 m",
+      "method": "argos-mt",
+      "translated_at": "2026-11-24T13:14:10.777Z"
+    },
+    "46e01f2ffb18d17e0f2a0104655a8c8cfcd6d326": {
+      "source": "الفعالية: مهرُجان الجاز يف ُجدة",
+      "source_lang": "ar",
+      "target_lang": "en",
+      "text": "Effectiveness: Jazz FJeddah Festival",
+      "method": "argos-mt",
+      "translated_at": "2026-11-24T13:14:10.777Z"
+    },
+    "e148b3df562994079fe8fc27a27c4b2d30bb33dc": {
+      "source": "النافذة الزمنية: ١ ديسمبر ٢٠٢٦ في ١٢:٠٠ ص إلى ٥ ديسمبر ٢٠٢٦ في ١١:٥٩ م",
+      "source_lang": "ar",
+      "target_lang": "en",
+      "text": "Time window: 1 December 2026 at 12:00 to 5 December 2026 at 11:59 m",
+      "method": "argos-mt",
+      "translated_at": "2026-11-24T13:14:10.777Z"
+    },
+    "04b0774dac6980cb0b6e38db568b6ae7f7513896": {
+      "source": "الموعد: ١ ديسمبر ٢٠٢٦ في ١٢:٠٠ ص إلى ٥ ديسمبر ٢٠٢٦ في ١١:٥٩ م",
+      "source_lang": "ar",
+      "target_lang": "en",
+      "text": "Date: 1 December 2026 at 12:00 to 5 December 2026 at 11:59 m",
+      "method": "argos-mt",
+      "translated_at": "2026-11-24T13:14:10.777Z"
+    },
+    "99f2b528f1c9397f0772f352c2ce287938ada899": {
+      "source": "بـــاور سالب",
+      "source_lang": "ar",
+      "target_lang": "en",
+      "text": "Bauer negative.",
+      "method": "argos-mt",
+      "translated_at": "2026-11-24T13:14:10.777Z"
+    },
+    "7093a830c5401a7aac3c4e63f2fd0d871cbd641f": {
+      "source": "تعود بطولة باور سالب إىل الرياض ضمن موسم الرياض، بمواجهات قوية تجمع نخبة من أبرز النجوم يف ليلة مليئة بالقوة والتحدي. بـــاور سالب ضمن الرياضة والمغامرات في عسير. تبدأ الفعالية ٠٣‏/١٢‏/٢٠٢٦ وتنتهي ٠٣‏/١٢‏/٢٠٢٦ حسب البيانات المتاحة. تعرض الصفحة وقت الفعالية وموقعها ومصدرها وروابط التقويم والاتجاهات عند توفرها. المصدر: Visit Saudi Summer Calendar PDF.",
+      "source_lang": "ar",
+      "target_lang": "en",
+      "text": "The Bauer Salp El Riyadh Championship, within the Riyadh season, is backed by strong confrontations bringing together elites of stars, a night full of force and challenge. Bauer is negative in sports and adventures in Aseer. Effectiveness begins at 12.30 p.m. and ends at 12.30 p.m. according to available data. The page presents the time, location and source of effectiveness, calendar linkages and trends when available. Source: Visit Saudi Summer Calendar PDF.",
+      "method": "argos-mt",
+      "translated_at": "2026-11-24T13:14:10.777Z"
+    },
+    "8be13631ff838e1e4bf3cd008f3246d73a815377": {
+      "source": "تعود بطولة باور سالب إىل الرياض ضمن موسم الرياض، بمواجهات قوية تجمع نخبة من أبرز النجوم يف ليلة مليئة بالقوة والتحدي.",
+      "source_lang": "ar",
+      "target_lang": "en",
+      "text": "The Bauer Salp El Riyadh Championship, within the Riyadh season, is backed by strong confrontations bringing together elites of stars, a night full of force and challenge.",
+      "method": "argos-mt",
+      "translated_at": "2026-11-24T13:14:10.777Z"
+    },
+    "d213ef153d8b49b3a4f71e2747df47786d2d5da3": {
+      "source": "٣ ديسمبر ٢٠٢٦ في ١٢:٠٠ ص إلى ٣ ديسمبر ٢٠٢٦ في ١١:٥٩ م",
+      "source_lang": "ar",
+      "target_lang": "en",
+      "text": "3 December 2026 at 12:00 to 3 December 2026 at 11:59 m",
+      "method": "argos-mt",
+      "translated_at": "2026-11-24T13:14:10.777Z"
+    },
+    "a8b338dc2f62c0dc131658b7b2b2572e2d5d13fe": {
+      "source": "الفعالية: بـــاور سالب",
+      "source_lang": "ar",
+      "target_lang": "en",
+      "text": "Effectiveness: Bauer Salub",
+      "method": "argos-mt",
+      "translated_at": "2026-11-24T13:14:10.777Z"
+    },
+    "7010ac6059b23706790aaebedabba36094255e06": {
+      "source": "النافذة الزمنية: ٣ ديسمبر ٢٠٢٦ في ١٢:٠٠ ص إلى ٣ ديسمبر ٢٠٢٦ في ١١:٥٩ م",
+      "source_lang": "ar",
+      "target_lang": "en",
+      "text": "Time window: 3 December 2026 at 12:00 to 3 December 2026 at 11:59 m",
+      "method": "argos-mt",
+      "translated_at": "2026-11-24T13:14:10.777Z"
+    },
+    "dff11ff096e49507ac3acd2601709bb832d6811a": {
+      "source": "الموعد: ٣ ديسمبر ٢٠٢٦ في ١٢:٠٠ ص إلى ٣ ديسمبر ٢٠٢٦ في ١١:٥٩ م",
+      "source_lang": "ar",
+      "target_lang": "en",
+      "text": "Date: 3 December 2026 at 12:00 to 3 December 2026 at 11:59 m",
+      "method": "argos-mt",
+      "translated_at": "2026-11-24T13:14:10.777Z"
+    },
+    "925a2d14c8299c125a38be4c585be5186812fa25": {
+      "source": "زوفا بوكسينج 13 & 14",
+      "source_lang": "ar",
+      "target_lang": "en",
+      "text": "Zofa Boxing 13 14",
+      "method": "argos-mt",
+      "translated_at": "2026-11-24T13:14:10.777Z"
+    },
+    "830b2fd5b08b533266d3ff17519f057378c9a935": {
+      "source": "حقبة جديدة للمالكمة تبدأ مع زوفا بوكسينغ، حيث يلتقي نخبة المالكمين يف أقوى المواجهات عبر باراماونت+ وسكاي سبورتس. زوفا بوكسينج 13 & 14 ضمن السياحة والتجارب في عسير. تبدأ الفعالية ٠٤‏/١٢‏/٢٠٢٦ وتنتهي ٠٤‏/١٢‏/٢٠٢٦ حسب البيانات المتاحة. تعرض الصفحة وقت الفعالية وموقعها ومصدرها وروابط التقويم والاتجاهات عند توفرها. المصدر: Visit Saudi Summer Calendar PDF.",
+      "source_lang": "ar",
+      "target_lang": "en",
+      "text": "A new era of boxing begins with Zova Boxing, where the elite of the owners meets the strongest confrontations across Paramount+ and Sky Sports. Zofa Boxing 13 14 of Aseer tourism and experiments. Effectiveness begins at 1240 and ends at 12.2026 according to available data. The page presents the time, location and source of effectiveness, calendar linkages and trends when available. Source: Visit Saudi Summer Calendar PDF.",
+      "method": "argos-mt",
+      "translated_at": "2026-11-24T13:14:10.777Z"
+    },
+    "decfeb30a2c2a63bcf35cd5d33060e37cc1ccd24": {
+      "source": "حقبة جديدة للمالكمة تبدأ مع زوفا بوكسينغ، حيث يلتقي نخبة المالكمين يف أقوى المواجهات عبر باراماونت+ وسكاي سبورتس.",
+      "source_lang": "ar",
+      "target_lang": "en",
+      "text": "A new era of boxing begins with Zova Boxing, where the elite of the owners meets the strongest confrontations across Paramount+ and Sky Sports.",
+      "method": "argos-mt",
+      "translated_at": "2026-11-24T13:14:10.777Z"
+    },
+    "6a42df900db01c11e703b9e25d449c420f94f8c2": {
+      "source": "٤ ديسمبر ٢٠٢٦ في ١٢:٠٠ ص إلى ٤ ديسمبر ٢٠٢٦ في ١١:٥٩ م",
+      "source_lang": "ar",
+      "target_lang": "en",
+      "text": "4 December 2026 at 12:00 to 4 December 2026 at 11:59 m",
+      "method": "argos-mt",
+      "translated_at": "2026-11-24T13:14:10.777Z"
+    },
+    "690f9dc427138a1b8f84808806ec866191f21c8b": {
+      "source": "الفعالية: زوفا بوكسينج 13 & 14",
+      "source_lang": "ar",
+      "target_lang": "en",
+      "text": "Effectiveness: Zofa Boxing 13 14",
+      "method": "argos-mt",
+      "translated_at": "2026-11-24T13:14:10.777Z"
+    },
+    "120ca892f674f016947f18b385d90804cf544602": {
+      "source": "النافذة الزمنية: ٤ ديسمبر ٢٠٢٦ في ١٢:٠٠ ص إلى ٤ ديسمبر ٢٠٢٦ في ١١:٥٩ م",
+      "source_lang": "ar",
+      "target_lang": "en",
+      "text": "Time window: 4 December 2026 at 12:00 to 4 December 2026 at 11:59 m",
+      "method": "argos-mt",
+      "translated_at": "2026-11-24T13:14:10.777Z"
+    },
+    "c96f8eecb2271d4e85a1f57ae52e0ec99f426deb": {
+      "source": "الموعد: ٤ ديسمبر ٢٠٢٦ في ١٢:٠٠ ص إلى ٤ ديسمبر ٢٠٢٦ في ١١:٥٩ م",
+      "source_lang": "ar",
+      "target_lang": "en",
+      "text": "Date: 4 December 2026 at 12:00 to 4 December 2026 at 11:59 m",
+      "method": "argos-mt",
+      "translated_at": "2026-11-24T13:14:10.777Z"
+    },
+    "e67a61d28ca8315bc98eb22baed2960356d60069": {
+      "source": "يو إف سي",
+      "source_lang": "ar",
+      "target_lang": "en",
+      "text": "UFC",
+      "method": "argos-mt",
+      "translated_at": "2026-11-24T13:14:10.777Z"
+    },
+    "351375253eabce23ea87e85d8549b058e1716900": {
+      "source": "تعود يو إف سي إىل الرياض ضمن فعاليات موسم الرياض، لتقدّم منافسات عالمية وأجواء جماهيرية ال تُنسى يف قلب العاصمة. يو إف سي ضمن الرياضة والمغامرات في عسير. تبدأ الفعالية ٠٥‏/١٢‏/٢٠٢٦ وتنتهي ٠٥‏/١٢‏/٢٠٢٦ حسب البيانات المتاحة. تعرض الصفحة وقت الفعالية وموقعها ومصدرها وروابط التقويم والاتجاهات عند توفرها. المصدر: Visit Saudi Summer Calendar PDF.",
+      "source_lang": "ar",
+      "target_lang": "en",
+      "text": "UFC-El Riyadh returns within Riyadh season events to present global competitions and public atmospheres that forget the heart of the capital. UFC is a sport and adventurer in Aseer. Effectiveness begins at 12.50.2026 and ends at 12.50.2026 according to available data. The page presents the time, location and source of effectiveness, calendar linkages and trends when available. Source: Visit Saudi Summer Calendar PDF.",
+      "method": "argos-mt",
+      "translated_at": "2026-11-24T13:14:10.777Z"
+    },
+    "8f6400fc9ba072677a7530b23b51cb38f0878140": {
+      "source": "تعود يو إف سي إىل الرياض ضمن فعاليات موسم الرياض، لتقدّم منافسات عالمية وأجواء جماهيرية ال تُنسى يف قلب العاصمة.",
+      "source_lang": "ar",
+      "target_lang": "en",
+      "text": "UFC-El Riyadh returns within Riyadh season events to present global competitions and public atmospheres that forget the heart of the capital.",
+      "method": "argos-mt",
+      "translated_at": "2026-11-24T13:14:10.777Z"
+    },
+    "fb39f487b25357d86b45b684b3ee1d92019eb81e": {
+      "source": "غلاف EventLive لفعالية يو إف سي",
+      "source_lang": "ar",
+      "target_lang": "en",
+      "text": "EventLive for UFC effectiveness",
+      "method": "argos-mt",
+      "translated_at": "2026-11-24T13:14:10.777Z"
+    },
+    "2806e124f6647aa7c112a351cb845cf79234d21a": {
+      "source": "٥ ديسمبر ٢٠٢٦ في ١٢:٠٠ ص إلى ٥ ديسمبر ٢٠٢٦ في ١١:٥٩ م",
+      "source_lang": "ar",
+      "target_lang": "en",
+      "text": "5 December 2026 at 12:00 to 5 December 2026 at 11:59 m",
+      "method": "argos-mt",
+      "translated_at": "2026-11-24T13:14:10.777Z"
+    },
+    "364b4ff864082e47521e7f208e6d770ea50d34cc": {
+      "source": "الفعالية: يو إف سي",
+      "source_lang": "ar",
+      "target_lang": "en",
+      "text": "Effectiveness: UFC",
+      "method": "argos-mt",
+      "translated_at": "2026-11-24T13:14:10.777Z"
+    },
+    "729b1d3ca9e05b2f66639d18387dc0fd64bd77e4": {
+      "source": "النافذة الزمنية: ٥ ديسمبر ٢٠٢٦ في ١٢:٠٠ ص إلى ٥ ديسمبر ٢٠٢٦ في ١١:٥٩ م",
+      "source_lang": "ar",
+      "target_lang": "en",
+      "text": "Time window: 5 December 2026 at 12:00 to 5 December 2026 at 11:59 m",
+      "method": "argos-mt",
+      "translated_at": "2026-11-24T13:14:10.777Z"
+    },
+    "904866ee21c203e184a14728d85b71e6f75c8ccc": {
+      "source": "الموعد: ٥ ديسمبر ٢٠٢٦ في ١٢:٠٠ ص إلى ٥ ديسمبر ٢٠٢٦ في ١١:٥٩ م",
+      "source_lang": "ar",
+      "target_lang": "en",
+      "text": "Date: 5 December 2026 at 12:00 to 5 December 2026 at 11:59 m",
+      "method": "argos-mt",
+      "translated_at": "2026-11-24T13:14:10.777Z"
+    },
+    "99a76e26643383b70c3c5a6c05942abb7cd2dcc7": {
+      "source": "كشف أسرار الحِ جر: اآلثار وحياة القدماًء",
+      "source_lang": "ar",
+      "target_lang": "en",
+      "text": "Disclosure of the secrets of the jar: the archaeology and the life of the feet.",
+      "method": "argos-mt",
+      "translated_at": "2026-11-24T13:14:10.777Z"
+    },
+    "ccdcb9e0d3221364f5619a5ee9208037373f7d10": {
+      "source": "يف مركز زوار الحِ جر، تُعرض للمرة األوىل المكتشفات األثرية للحِ جر يف الموقع نفسه الذي اكتُشفت فيه، لتروي قصص حياة القدماء.",
+      "source_lang": "ar",
+      "target_lang": "en",
+      "text": "Yves, the center of the jar visitors, displayed for the time the archaeological discoveries of the same site that was discovered, to tell the stories of the lives of the Ancients.",
+      "method": "argos-mt",
+      "translated_at": "2026-11-24T13:14:10.777Z"
+    },
+    "41f5adcd6a1850ac8110b8bad5948dee379d2d3c": {
+      "source": "٦ ديسمبر ٢٠٢٦ في ١٢:٠٠ ص إلى ٦ ديسمبر ٢٠٢٦ في ١١:٥٩ م",
+      "source_lang": "ar",
+      "target_lang": "en",
+      "text": "6 December 2026 at 12:00 to 6 December 2026 at 11:59 M",
+      "method": "argos-mt",
+      "translated_at": "2026-11-24T13:14:10.777Z"
+    },
+    "fcceee524d4984cd3898238d5edc4570d3d06ac7": {
+      "source": "الفعالية: كشف أسرار الحِ جر: اآلثار وحياة القدماًء",
+      "source_lang": "ar",
+      "target_lang": "en",
+      "text": "Effectiveness: Disclosure of the secrets of the jar: archaeological and ancient life",
+      "method": "argos-mt",
+      "translated_at": "2026-11-24T13:14:10.777Z"
+    },
+    "82acbcee31e61cbbfd84555eb2a557ba51d6f075": {
+      "source": "النافذة الزمنية: ٦ ديسمبر ٢٠٢٦ في ١٢:٠٠ ص إلى ٦ ديسمبر ٢٠٢٦ في ١١:٥٩ م",
+      "source_lang": "ar",
+      "target_lang": "en",
+      "text": "Time window: 6 December 2026 at 12:00 to 6 December 2026 at 11:59 m",
+      "method": "argos-mt",
+      "translated_at": "2026-11-24T13:14:10.777Z"
+    },
+    "3be47ee0ab5daf91ef5012cd9e1d1e2a26de2fb4": {
+      "source": "الموعد: ٦ ديسمبر ٢٠٢٦ في ١٢:٠٠ ص إلى ٦ ديسمبر ٢٠٢٦ في ١١:٥٩ م",
+      "source_lang": "ar",
+      "target_lang": "en",
+      "text": "Date: 6 December 2026 at 12:00 to 6 December 2026 at 11:59 m",
+      "method": "argos-mt",
+      "translated_at": "2026-11-24T13:14:10.777Z"
+    },
+    "0d7d36775bbbdebcf376eb4f5d8e44f03366f803": {
+      "source": "برنس العالم",
+      "source_lang": "ar",
+      "target_lang": "en",
+      "text": "Prince of the World",
+      "method": "argos-mt",
+      "translated_at": "2026-11-24T13:14:10.777Z"
+    },
+    "b52299025691db4d0749c01c4df2301bd03003f4": {
+      "source": "شاب الهٍ يواجه مؤامرة عىل عرش والده، ليكتشف أن القيادة الحقيقية تبدأ بخدمة شعبه، يف عرض مليء بالمواقف والعِ بر. برنس العالم ضمن السياحة والتجارب في عسير. تبدأ الفعالية ٠٧‏/١٢‏/٢٠٢٦ وتنتهي ٠٧‏/١٢‏/٢٠٢٦ حسب البيانات المتاحة. تعرض الصفحة وقت الفعالية وموقعها ومصدرها وروابط التقويم والاتجاهات عند توفرها. المصدر: Visit Saudi Summer Calendar PDF.",
+      "source_lang": "ar",
+      "target_lang": "en",
+      "text": "A young man of God is facing a conspiracy to the throne of his father, to discover that the true leadership begins to serve his people, a show full of attitudes and ground. The world is among tourism and experiments in Aseer. Effectiveness begins at 1270/2026 and ends at 12.2026 according to available data. The page presents the time, location and source of effectiveness, calendar linkages and trends when available. Source: Visit Saudi Summer Calendar PDF.",
+      "method": "argos-mt",
+      "translated_at": "2026-11-24T13:14:10.777Z"
+    },
+    "53ae85ac500f7a5172964685f524e94ef8f3c420": {
+      "source": "شاب الهٍ يواجه مؤامرة عىل عرش والده، ليكتشف أن القيادة الحقيقية تبدأ بخدمة شعبه، يف عرض مليء بالمواقف والعِ بر.",
+      "source_lang": "ar",
+      "target_lang": "en",
+      "text": "A young man of God is facing a conspiracy to the throne of his father, to discover that the true leadership begins to serve his people, a show full of attitudes and ground.",
+      "method": "argos-mt",
+      "translated_at": "2026-11-24T13:14:10.777Z"
+    },
+    "4dabd0b705ec5e8de9729701bf55145e68ca9c79": {
+      "source": "٧ ديسمبر ٢٠٢٦ في ١٢:٠٠ ص إلى ٧ ديسمبر ٢٠٢٦ في ١١:٥٩ م",
+      "source_lang": "ar",
+      "target_lang": "en",
+      "text": "7 December 2026 at 12:00 to 7 December 2026 at 11:59 M",
+      "method": "argos-mt",
+      "translated_at": "2026-11-24T13:14:10.777Z"
+    },
+    "3a31b5ba9354da324e7833240364c6361f3080d1": {
+      "source": "الفعالية: برنس العالم",
+      "source_lang": "ar",
+      "target_lang": "en",
+      "text": "Effectiveness: World Prince",
+      "method": "argos-mt",
+      "translated_at": "2026-11-24T13:14:10.777Z"
+    },
+    "aa7ae75dcec7287892a3fd4c4a0ea45775cd8644": {
+      "source": "النافذة الزمنية: ٧ ديسمبر ٢٠٢٦ في ١٢:٠٠ ص إلى ٧ ديسمبر ٢٠٢٦ في ١١:٥٩ م",
+      "source_lang": "ar",
+      "target_lang": "en",
+      "text": "Time window: 7 December 2026 at 12:00 to 7 December 2026 at 11:59 m",
+      "method": "argos-mt",
+      "translated_at": "2026-11-24T13:14:10.777Z"
+    },
+    "3722be43e2ac4709eb41901e088c7d7030b19edb": {
+      "source": "الموعد: ٧ ديسمبر ٢٠٢٦ في ١٢:٠٠ ص إلى ٧ ديسمبر ٢٠٢٦ في ١١:٥٩ م",
+      "source_lang": "ar",
+      "target_lang": "en",
+      "text": "Date: 7 December 2026 at 12:00 to 7 December 2026 at 11:59 m",
+      "method": "argos-mt",
+      "translated_at": "2026-11-24T13:14:10.777Z"
+    },
+    "0c7e1b9bbaea7357c9b9f032e87b04b38a9c6b0d": {
+      "source": "معرض الرياض الدولي للكتاب",
+      "source_lang": "ar",
+      "target_lang": "en",
+      "text": "Riyadh International Book Fair",
+      "method": "argos-mt",
+      "translated_at": "2026-11-24T13:14:10.777Z"
+    },
+    "0e57b31aba9e72dfe05c4683e3eca2dc9584a02d": {
+      "source": "من أكبر المهرجانات الثقافية يف المملكة، يضم دور نشر دولية ودولة ضيف شرف، مع ندوات وورش وأمسيات شعرية وعروض فنية. معرض الرياض الدولي للكتاب ضمن الرياضة والمغامرات في عسير. تبدأ الفعالية ١٠‏/١٢‏/٢٠٢٦ وتنتهي ١٩‏/١٢‏/٢٠٢٦ حسب البيانات المتاحة. تعرض الصفحة وقت الفعالية وموقعها ومصدرها وروابط التقويم والاتجاهات عند توفرها. المصدر: Visit Saudi Summer Calendar PDF.",
+      "source_lang": "ar",
+      "target_lang": "en",
+      "text": "One of the largest cultural festivals of the Kingdom, including an international publishing house and a guest of honour, with symposia, workshops, poetry and artistic displays. Riyadh International Book Fair in Sports and Adventures in Aseer. Effectiveness begins 10/12/2026 and ends 19/12/2026 according to available data. The page presents the time, location and source of effectiveness, calendar linkages and trends when available. Source: Visit Saudi Summer Calendar PDF.",
+      "method": "argos-mt",
+      "translated_at": "2026-11-24T13:14:10.777Z"
+    },
+    "ad0ef17d6714813a573d04857694c73333bd599b": {
+      "source": "من أكبر المهرجانات الثقافية يف المملكة، يضم دور نشر دولية ودولة ضيف شرف، مع ندوات وورش وأمسيات شعرية وعروض فنية.",
+      "source_lang": "ar",
+      "target_lang": "en",
+      "text": "One of the largest cultural festivals of the Kingdom, including an international publishing house and a guest of honour, with symposia, workshops, poetry and artistic displays.",
+      "method": "argos-mt",
+      "translated_at": "2026-11-24T13:14:10.777Z"
+    },
+    "f1e9d6e101ee7a2be0028149a4e56c80f3d8a051": {
+      "source": "١٠ ديسمبر ٢٠٢٦ في ١٢:٠٠ ص إلى ١٩ ديسمبر ٢٠٢٦ في ١١:٥٩ م",
+      "source_lang": "ar",
+      "target_lang": "en",
+      "text": "10 December 2026 at 12:00 to 19 December 2026 at 11:59 M",
+      "method": "argos-mt",
+      "translated_at": "2026-11-24T13:14:10.777Z"
+    },
+    "1f8f44acf99531c42f3d55200287f60f54b5effa": {
+      "source": "الفعالية: معرض الرياض الدولي للكتاب",
+      "source_lang": "ar",
+      "target_lang": "en",
+      "text": "Effectiveness: Riyadh International Book Expo",
+      "method": "argos-mt",
+      "translated_at": "2026-11-24T13:14:10.777Z"
+    },
+    "183c645e9c97cd3523cb450d566cb5131e2cb7bb": {
+      "source": "النافذة الزمنية: ١٠ ديسمبر ٢٠٢٦ في ١٢:٠٠ ص إلى ١٩ ديسمبر ٢٠٢٦ في ١١:٥٩ م",
+      "source_lang": "ar",
+      "target_lang": "en",
+      "text": "Time window: 10 December 2026 at 12:00 to 19 December 2026 at 11:59 m",
+      "method": "argos-mt",
+      "translated_at": "2026-11-24T13:14:10.777Z"
+    },
+    "10a0f1855152b91dd342cea7f37e4666ce6f7504": {
+      "source": "الموعد: ١٠ ديسمبر ٢٠٢٦ في ١٢:٠٠ ص إلى ١٩ ديسمبر ٢٠٢٦ في ١١:٥٩ م",
+      "source_lang": "ar",
+      "target_lang": "en",
+      "text": "Date: 10 December 2026 at 12:00 to 19 December 2026 at 11:59 m",
+      "method": "argos-mt",
+      "translated_at": "2026-11-24T13:14:10.777Z"
+    },
+    "7834e36d93e0e3d7f4911b8f248aaedc2ac0fd4c": {
+      "source": "معرض وِرث الختامي",
+      "source_lang": "ar",
+      "target_lang": "en",
+      "text": "Worth Final Expo",
+      "method": "argos-mt",
+      "translated_at": "2026-11-24T13:14:10.777Z"
+    },
+    "b9f40f8dd0c5601eb3cf62904098e4f525b49254": {
+      "source": "المعرض السنوي الختامي للمعهد الملكي للفنون التقليدية، يعرض إبداعات الطالب والحرفيين، ويبرز الحرف السعودية كهوية حية قادرة عىل اإللهام واالبتكار.",
+      "source_lang": "ar",
+      "target_lang": "en",
+      "text": "The final annual exhibition of the Royal Institute of Traditional Arts presents the creativity of students and craftsmen, and highlights Saudi crafts as a living identity capable of inspiration and innovation.",
+      "method": "argos-mt",
+      "translated_at": "2026-11-24T13:14:10.777Z"
+    },
+    "17833ec4ed6cb234f062955e630119dd1a8c2312": {
+      "source": "معرض وِرث الختامي | النسخة الثانية",
+      "source_lang": "ar",
+      "target_lang": "en",
+      "text": "Closing Worth Exhibit",
+      "method": "argos-mt",
+      "translated_at": "2026-11-24T13:14:10.777Z"
+    },
+    "33967b3674c72c6927f755313e0c47398a398bb0": {
+      "source": "١٠ ديسمبر ٢٠٢٦ في ١٢:٠٠ ص إلى ٢٠ ديسمبر ٢٠٢٦ في ١١:٥٩ م",
+      "source_lang": "ar",
+      "target_lang": "en",
+      "text": "10 December 2026 at 12:00 to 20 December 2026 at 11:59 M",
+      "method": "argos-mt",
+      "translated_at": "2026-11-24T13:14:10.777Z"
+    },
+    "ba5fe6aed2687a88d88f8dbd49c0844f47c3aa33": {
+      "source": "الفعالية: معرض وِرث الختامي",
+      "source_lang": "ar",
+      "target_lang": "en",
+      "text": "Effectiveness: Wirth Final Expo",
+      "method": "argos-mt",
+      "translated_at": "2026-11-24T13:14:10.777Z"
+    },
+    "659e7cf6d2310c731eae120cfb0fc30654beeda5": {
+      "source": "النافذة الزمنية: ١٠ ديسمبر ٢٠٢٦ في ١٢:٠٠ ص إلى ٢٠ ديسمبر ٢٠٢٦ في ١١:٥٩ م",
+      "source_lang": "ar",
+      "target_lang": "en",
+      "text": "Time window: 10 December 2026 at 12:00 to 20 December 2026 at 11:59 m",
+      "method": "argos-mt",
+      "translated_at": "2026-11-24T13:14:10.777Z"
+    },
+    "b72370b10faec791eecadb196985639e7afbc540": {
+      "source": "الموعد: ١٠ ديسمبر ٢٠٢٦ في ١٢:٠٠ ص إلى ٢٠ ديسمبر ٢٠٢٦ في ١١:٥٩ م",
+      "source_lang": "ar",
+      "target_lang": "en",
+      "text": "Date: 10 December 2026 at 12:00 to 20 December 2026 at 11:59 m",
+      "method": "argos-mt",
+      "translated_at": "2026-11-24T13:14:10.777Z"
+    },
+    "430e7ecade2f7e370e81926cdf0662d0cd4a8920": {
+      "source": "كور يونيتي العال",
+      "source_lang": "ar",
+      "target_lang": "en",
+      "text": "Kor Yunity Al-Amal",
+      "method": "argos-mt",
+      "translated_at": "2026-11-24T13:14:10.777Z"
+    },
+    "52a819f46110b4062d09326d4d3f944caa60ce86": {
+      "source": "مالذٌ للعافية لعشر ليالٍ، يجمع بين اليوغا والعالج بالصوت والسكينة، يف قلب العال. كور يونيتي العال ضمن السياحة والتجارب في جدة. تبدأ الفعالية ١٠‏/١٢‏/٢٠٢٦ وتنتهي ٢٠‏/١٢‏/٢٠٢٦ حسب البيانات المتاحة. تعرض الصفحة وقت الفعالية وموقعها ومصدرها وروابط التقويم والاتجاهات عند توفرها. المصدر: Visit Saudi Summer Calendar PDF.",
+      "source_lang": "ar",
+      "target_lang": "en",
+      "text": "What's fair for ten nights, combining yoga with sound and knife therapy, the heart of the world. Cor Yunity Al-Aal within tourism and experiments in Jeddah. Effectiveness begins 10/12/2026 and ends 20/12/2026 according to available data. The page presents the time, location and source of effectiveness, calendar linkages and trends when available. Source: Visit Saudi Summer Calendar PDF.",
+      "method": "argos-mt",
+      "translated_at": "2026-11-24T13:14:10.777Z"
+    },
+    "b814364f86f7cb2dfadf35feb97609a6018fba53": {
+      "source": "مالذٌ للعافية لعشر ليالٍ، يجمع بين اليوغا والعالج بالصوت والسكينة، يف قلب العال.",
+      "source_lang": "ar",
+      "target_lang": "en",
+      "text": "What's fair for ten nights, combining yoga with sound and knife therapy, the heart of the world.",
+      "method": "argos-mt",
+      "translated_at": "2026-11-24T13:14:10.777Z"
+    },
+    "44100744ea5d32556be9834a9abb9d5ad62a187a": {
+      "source": "الفعالية: كور يونيتي العال",
+      "source_lang": "ar",
+      "target_lang": "en",
+      "text": "Effectiveness: Kor Yunity Al-Aal",
+      "method": "argos-mt",
+      "translated_at": "2026-11-24T13:14:10.777Z"
+    },
+    "0036722c346fc66b37e92919c86eadef97672044": {
+      "source": "برنامج اليوغا",
+      "source_lang": "ar",
+      "target_lang": "en",
+      "text": "Yoga programme",
+      "method": "argos-mt",
+      "translated_at": "2026-11-24T13:14:10.777Z"
+    },
+    "9fb8e530af744b52851260e0e69729c2953a1207": {
+      "source": "مجموعة من حصص اليوغا تُقام يف أبرز وجهات العال األيقونية، منها أور هابيتاس، وبانيان تري، ودار طنطورة، والحِ جر، وجبل الفيل.",
+      "source_lang": "ar",
+      "target_lang": "en",
+      "text": "A series of yoga quotas, including Or Habitas, Banyan Tree, Tantura House, Jar and El elephant.",
+      "method": "argos-mt",
+      "translated_at": "2026-11-24T13:14:10.777Z"
+    },
+    "43d58a712ed6ebe1442b1f1d8aa04bbcb2aa8d0f": {
+      "source": "الفعالية: برنامج اليوغا",
+      "source_lang": "ar",
+      "target_lang": "en",
+      "text": "Effectiveness: yoga programme",
+      "method": "argos-mt",
+      "translated_at": "2026-11-24T13:14:10.777Z"
+    },
+    "1c4b824c81bc5d0982d31b1bdfaa63b5b839836c": {
+      "source": "سباق ماراثون الشرقية الدولي",
+      "source_lang": "ar",
+      "target_lang": "en",
+      "text": "East Marathon International",
+      "method": "argos-mt",
+      "translated_at": "2026-11-24T13:14:10.777Z"
+    },
+    "b144bca8dccd11df4336c933d6555d875469f8a8": {
+      "source": "احتفال بالصحة والتحمل وروح المجتمع، يضم الماراثون الكامل ونصف الماراثون وسباقات 10 و5 كيلومترات وسباقاً لألطفال، ليرحب بالرياضيين المحترفين والمبتدئين.",
+      "source_lang": "ar",
+      "target_lang": "en",
+      "text": "A celebration of health, tolerance and the spirit of society, including full and half marathon, 10 and 5 km races and a race for children, to welcome professional and junior athletes.",
+      "method": "argos-mt",
+      "translated_at": "2026-11-24T13:14:10.777Z"
+    },
+    "d310b207e7500d2401c17c2ec70bd88a92d2e73c": {
+      "source": "١٠ ديسمبر ٢٠٢٦ في ١٢:٠٠ ص إلى ١٢ ديسمبر ٢٠٢٦ في ١١:٥٩ م",
+      "source_lang": "ar",
+      "target_lang": "en",
+      "text": "10 December 2026 at 12:00 to 12 December 2026 at 11:59 m",
+      "method": "argos-mt",
+      "translated_at": "2026-11-24T13:14:10.777Z"
+    },
+    "8df29e5574e8b7eca3274ca8c833326f868ac7b0": {
+      "source": "الفعالية: سباق ماراثون الشرقية الدولي",
+      "source_lang": "ar",
+      "target_lang": "en",
+      "text": "Effectiveness: East International Race",
+      "method": "argos-mt",
+      "translated_at": "2026-11-24T13:14:10.777Z"
+    },
+    "91fe4d96f66b8854a0d4c94633527764a65d2c8b": {
+      "source": "النافذة الزمنية: ١٠ ديسمبر ٢٠٢٦ في ١٢:٠٠ ص إلى ١٢ ديسمبر ٢٠٢٦ في ١١:٥٩ م",
+      "source_lang": "ar",
+      "target_lang": "en",
+      "text": "Time window: 10 December 2026 at 12:00 to 12 December 2026 at 11:59 m",
+      "method": "argos-mt",
+      "translated_at": "2026-11-24T13:14:10.777Z"
+    },
+    "7cb713ec957dc8c6f230fe66fe729b267f17ed00": {
+      "source": "الموعد: ١٠ ديسمبر ٢٠٢٦ في ١٢:٠٠ ص إلى ١٢ ديسمبر ٢٠٢٦ في ١١:٥٩ م",
+      "source_lang": "ar",
+      "target_lang": "en",
+      "text": "Date: 10 December 2026 at 12:00 to 12 December 2026 at 11:59 m",
+      "method": "argos-mt",
+      "translated_at": "2026-11-24T13:14:10.777Z"
+    },
     "60e97e7222060e8857534b2c5e365bfd778a550e": {
       "source": "فعالية معرض أو مؤتمر منشورة في تقويم واجهة الرياض للمعارض والمؤتمرات. المصدر الرسمي: واجهة الرياض للمعارض والمؤتمرات. Natural World Expo ضمن المعارض والمؤتمرات في الرياض. تبدأ الفعالية ١٢‏/١٢‏/٢٠٢٦ وتنتهي ١٧‏/١٢‏/٢٠٢٦ حسب البيانات المتاحة. تعرض الصفحة وقت الفعالية وموقعها ومصدرها وروابط التقويم والاتجاهات عند توفرها. المصدر: RFECC What's On.",
       "source_lang": "ar",
       "target_lang": "en",
-      "text": "Effectiveness of exhibit or conference in calendar of the Riyadh Front Exhibition Convention Center. Official source: the Riyadh Front Exhibition Convention Center. Natural World Expo among exhibitions and conferences in Riyadh. Effectiveness begins 12/12/2026 and ends 17/12/2026 according to available data. The page shall be presented at the time, location and source of effectiveness, calendar linkages and trends as they are available. Source: RFECC What's On.",
+      "text": "Effectiveness of exhibit or conference in calendar of the Riyadh Front Exhibition Convention Center. Official source: the Riyadh Front Exhibition Convention Center. Natural World Expo among exhibitions and conferences in Riyadh. Effectiveness begins 12/12/2026 and ends 17/12/2026 according to available data. The page presents the time, location and source of effectiveness, calendar linkages and trends when available. Source: RFECC What's On.",
       "method": "argos-mt",
-      "translated_at": "2026-11-23T11:38:23.865Z"
+      "translated_at": "2026-11-24T13:14:10.777Z"
     },
     "8ebcc767e9740b7e9733fdf3ede5355a46a51c11": {
       "source": "فعالية معرض أو مؤتمر منشورة في تقويم واجهة الرياض للمعارض والمؤتمرات.",
@@ -99824,15 +101272,735 @@
       "target_lang": "en",
       "text": "Effectiveness of exhibit or conference in calendar of the Riyadh Front Exhibition Convention Center.",
       "method": "argos-mt",
-      "translated_at": "2026-11-23T11:38:23.865Z"
+      "translated_at": "2026-11-24T13:14:10.777Z"
+    },
+    "69aa6ee1543c2066966c8917ffe440bac68e7442": {
+      "source": "سك عىل والدك",
+      "source_lang": "ar",
+      "target_lang": "en",
+      "text": "Suck your father.",
+      "method": "argos-mt",
+      "translated_at": "2026-11-24T13:14:10.777Z"
+    },
+    "c7451a24b1b2371add0d27970167da78184173f5": {
+      "source": "أم تبحث عن بداية جديدة، لكن أبناءها الكبار يحوّلونها إىل مواجهة عائلية مليئة بالمفاجآت والضحك يف كوميديا ال تُنسى. سك عىل والدك ضمن الترفيه والعائلات في عسير. تبدأ الفعالية ١٦‏/١٢‏/٢٠٢٦ وتنتهي ١٦‏/١٢‏/٢٠٢٦ حسب البيانات المتاحة. تعرض الصفحة وقت الفعالية وموقعها ومصدرها وروابط التقويم والاتجاهات عند توفرها. المصدر: Visit Saudi Summer Calendar PDF.",
+      "source_lang": "ar",
+      "target_lang": "en",
+      "text": "Or are you looking for a new start, but her big boys are turning it into a family face full of surprises and laughs, the comedy forgets. Sk has your father in entertainment and family in Aseer. Effectiveness begins 16/12/2026 and ends 16/12/2026 according to available data. The page presents the time, location and source of effectiveness, calendar linkages and trends when available. Source: Visit Saudi Summer Calendar PDF.",
+      "method": "argos-mt",
+      "translated_at": "2026-11-24T13:14:10.777Z"
+    },
+    "0ae3d44ddf809b8adb4c038c444a2faf839d509f": {
+      "source": "أم تبحث عن بداية جديدة، لكن أبناءها الكبار يحوّلونها إىل مواجهة عائلية مليئة بالمفاجآت والضحك يف كوميديا ال تُنسى.",
+      "source_lang": "ar",
+      "target_lang": "en",
+      "text": "Or are you looking for a new start, but her big boys are turning it into a family face full of surprises and laughs, the comedy forgets.",
+      "method": "argos-mt",
+      "translated_at": "2026-11-24T13:14:10.777Z"
+    },
+    "ee3bab1189bad1e52800099ecc8d92083317a1db": {
+      "source": "١٦ ديسمبر ٢٠٢٦ في ١٢:٠٠ ص إلى ١٦ ديسمبر ٢٠٢٦ في ١١:٥٩ م",
+      "source_lang": "ar",
+      "target_lang": "en",
+      "text": "16 December 2026 at 12:00 to 16 December 2026 at 11:59 M",
+      "method": "argos-mt",
+      "translated_at": "2026-11-24T13:14:10.777Z"
+    },
+    "4fe599618942b9ba3c96753a1c2d378ac99f2205": {
+      "source": "الفعالية: سك عىل والدك",
+      "source_lang": "ar",
+      "target_lang": "en",
+      "text": "Effectiveness: your father's knife.",
+      "method": "argos-mt",
+      "translated_at": "2026-11-24T13:14:10.777Z"
+    },
+    "7d5deb70fb0123d4eea46d542bf15fc7ff91e096": {
+      "source": "النافذة الزمنية: ١٦ ديسمبر ٢٠٢٦ في ١٢:٠٠ ص إلى ١٦ ديسمبر ٢٠٢٦ في ١١:٥٩ م",
+      "source_lang": "ar",
+      "target_lang": "en",
+      "text": "Time window: 16 December 2026 at 12:00 to 16 December 2026 at 11:59 m",
+      "method": "argos-mt",
+      "translated_at": "2026-11-24T13:14:10.777Z"
+    },
+    "ac17a851c60867efd00c8c5f1a7e36256a9ebecc": {
+      "source": "الموعد: ١٦ ديسمبر ٢٠٢٦ في ١٢:٠٠ ص إلى ١٦ ديسمبر ٢٠٢٦ في ١١:٥٩ م",
+      "source_lang": "ar",
+      "target_lang": "en",
+      "text": "Date: 16 December 2026 at 12:00 to 16 December 2026 at 11:59 m",
+      "method": "argos-mt",
+      "translated_at": "2026-11-24T13:14:10.777Z"
+    },
+    "8a454737efd999ae7403790704bc270f6170474d": {
+      "source": "معرض ثقل الذكريات",
+      "source_lang": "ar",
+      "target_lang": "en",
+      "text": "The memory weight fair.",
+      "method": "argos-mt",
+      "translated_at": "2026-11-24T13:14:10.777Z"
+    },
+    "015b57167fba70547b4371233e226566d7592a76": {
+      "source": "عمل تركيبي للفنانة تشيهارو شيوتا بخيوطها الحمراء، ينسج أشياء يومية من أسواق الرياض الشعبية يف تجربة تأملية عن الذاكرة والتذكر.",
+      "source_lang": "ar",
+      "target_lang": "en",
+      "text": "Installation work for the Cheharo Chiuta with its red strings, weighs daily things from the Riyadh People ' s Markets that have a meditation experience of memory and remembering.",
+      "method": "argos-mt",
+      "translated_at": "2026-11-24T13:14:10.777Z"
+    },
+    "52194c223d17d4345261656b1cb585174870e8fc": {
+      "source": "١٨ ديسمبر ٢٠٢٦ في ١٢:٠٠ ص إلى ١٨ ديسمبر ٢٠٢٦ في ١١:٥٩ م",
+      "source_lang": "ar",
+      "target_lang": "en",
+      "text": "18 December 2026 at 12:00 to 18 December 2026 at 11:59 M",
+      "method": "argos-mt",
+      "translated_at": "2026-11-24T13:14:10.777Z"
+    },
+    "1e8e460e1e58b22a6fda9af5e6682f16daa6b989": {
+      "source": "الفعالية: معرض ثقل الذكريات",
+      "source_lang": "ar",
+      "target_lang": "en",
+      "text": "Effectiveness: memory weight exhibit",
+      "method": "argos-mt",
+      "translated_at": "2026-11-24T13:14:10.777Z"
+    },
+    "4e4629449246079b4aa9be7f5049a640fb80a3b2": {
+      "source": "النافذة الزمنية: ١٨ ديسمبر ٢٠٢٦ في ١٢:٠٠ ص إلى ١٨ ديسمبر ٢٠٢٦ في ١١:٥٩ م",
+      "source_lang": "ar",
+      "target_lang": "en",
+      "text": "Time window: 18 December 2026 at 12:00 to 18 December 2026 at 11:59 m",
+      "method": "argos-mt",
+      "translated_at": "2026-11-24T13:14:10.777Z"
+    },
+    "32af8127a6c185b6794db4ef354d0fa54d95a43f": {
+      "source": "الموعد: ١٨ ديسمبر ٢٠٢٦ في ١٢:٠٠ ص إلى ١٨ ديسمبر ٢٠٢٦ في ١١:٥٩ م",
+      "source_lang": "ar",
+      "target_lang": "en",
+      "text": "Date: 18 December 2026 at 12:00 to 18 December 2026 at 11:59 m",
+      "method": "argos-mt",
+      "translated_at": "2026-11-24T13:14:10.777Z"
+    },
+    "e192682e1c9e4967316af38733a083e99f854fc2": {
+      "source": "فعالية اليوم العالمي للغة العربية",
+      "source_lang": "ar",
+      "target_lang": "en",
+      "text": "Effectiveness of the World Day of the Arab Language",
+      "method": "argos-mt",
+      "translated_at": "2026-11-24T13:14:10.777Z"
+    },
+    "debc76e3521051b9ba7811d495e3f73872421d8f": {
+      "source": "يحتفي المتحف الوطني باليوم العالمي للغة العربية بمؤتمر مصغر وبرامج تفاعلية وورش عمل تسلط الضوء عىل جمال اللغة العربية وثرائها.",
+      "source_lang": "ar",
+      "target_lang": "en",
+      "text": "The National Museum celebrates World Arab Language Day with a small conference, interactive programmes and workshops highlighting the beauty and wealth of Arabic.",
+      "method": "argos-mt",
+      "translated_at": "2026-11-24T13:14:10.777Z"
+    },
+    "1e2849f2b930c0da5e39f6431644d9b40300ed05": {
+      "source": "١٨ ديسمبر ٢٠٢٦ في ١٢:٠٠ ص إلى ١٩ ديسمبر ٢٠٢٦ في ١١:٥٩ م",
+      "source_lang": "ar",
+      "target_lang": "en",
+      "text": "18 December 2026 at 12:00 to 19 December 2026 at 11:59 M",
+      "method": "argos-mt",
+      "translated_at": "2026-11-24T13:14:10.777Z"
+    },
+    "8bb35acdb038fad0af3e5d53b8d3d9b590918920": {
+      "source": "الفعالية: فعالية اليوم العالمي للغة العربية",
+      "source_lang": "ar",
+      "target_lang": "en",
+      "text": "Effectiveness: Effective World Day of the Arab Language",
+      "method": "argos-mt",
+      "translated_at": "2026-11-24T13:14:10.777Z"
+    },
+    "108c3330330260d677cd42a41a787926dbe8d803": {
+      "source": "النافذة الزمنية: ١٨ ديسمبر ٢٠٢٦ في ١٢:٠٠ ص إلى ١٩ ديسمبر ٢٠٢٦ في ١١:٥٩ م",
+      "source_lang": "ar",
+      "target_lang": "en",
+      "text": "Time window: 18 December 2026 at 12:00 to 19 December 2026 at 11:59 m",
+      "method": "argos-mt",
+      "translated_at": "2026-11-24T13:14:10.777Z"
+    },
+    "3d4d95145516a3e16aa0ee0a999722dbf21736e2": {
+      "source": "الموعد: ١٨ ديسمبر ٢٠٢٦ في ١٢:٠٠ ص إلى ١٩ ديسمبر ٢٠٢٦ في ١١:٥٩ م",
+      "source_lang": "ar",
+      "target_lang": "en",
+      "text": "Date: 18 December 2026 at 12:00 to 19 December 2026 at 11:59 m",
+      "method": "argos-mt",
+      "translated_at": "2026-11-24T13:14:10.777Z"
+    },
+    "ceb3c6744375584593ac0eb54a8de32431ecb3b6": {
+      "source": "عىل خطى ابن بطوطة",
+      "source_lang": "ar",
+      "target_lang": "en",
+      "text": "Wrong!",
+      "method": "argos-mt",
+      "translated_at": "2026-11-24T13:14:10.777Z"
+    },
+    "b9493591cd239133b975ace2d5fb7b5ec9271352": {
+      "source": "جولة تراثية بصحبة مرشد تتبع رحلة ابن بطوطة، أحد أعظم الرحالة يف العالم، خالل مروره بالعال عبر البلدة القديمة والواحة. عىل خطى ابن بطوطة ضمن السياحة والتجارب في جدة. تبدأ الفعالية ١٨‏/١٢‏/٢٠٢٦ وتنتهي ١٦‏/٠١‏/٢٠٢٧ حسب البيانات المتاحة. تعرض الصفحة وقت الفعالية وموقعها ومصدرها وروابط التقويم والاتجاهات عند توفرها. المصدر: Visit Saudi Summer Calendar PDF.",
+      "source_lang": "ar",
+      "target_lang": "en",
+      "text": "A genetic tour with a guide following the trip of the son of a Batutan, one of the greatest mortals of the world, blocked his passage through the old town and the board. The footsteps of the son of a Batwattt are in tourism and experiments in Jeddah. Effectiveness begins 18/12/2026 and ends 16/10/2027 according to available data. The page presents the time, location and source of effectiveness, calendar linkages and trends when available. Source: Visit Saudi Summer Calendar PDF.",
+      "method": "argos-mt",
+      "translated_at": "2026-11-24T13:14:10.777Z"
+    },
+    "1dfcfa796a6262e2cc7956f36d41fe30ee9e5e6d": {
+      "source": "جولة تراثية بصحبة مرشد تتبع رحلة ابن بطوطة، أحد أعظم الرحالة يف العالم، خالل مروره بالعال عبر البلدة القديمة والواحة.",
+      "source_lang": "ar",
+      "target_lang": "en",
+      "text": "A genetic tour with a guide following the trip of the son of a Batutan, one of the greatest mortals of the world, blocked his passage through the old town and the board.",
+      "method": "argos-mt",
+      "translated_at": "2026-11-24T13:14:10.777Z"
+    },
+    "68c46916ea25573d13a710be00c0c456f9b77965": {
+      "source": "١٨ ديسمبر ٢٠٢٦ في ١٢:٠٠ ص إلى ١٦ يناير ٢٠٢٧ في ١١:٥٩ م",
+      "source_lang": "ar",
+      "target_lang": "en",
+      "text": "18 December 2026 at 12:00 to 16 January 2027 at 11:59 M",
+      "method": "argos-mt",
+      "translated_at": "2026-11-24T13:14:10.777Z"
+    },
+    "367d2fab891da45676f01e2a92102a225ff6cd28": {
+      "source": "الفعالية: عىل خطى ابن بطوطة",
+      "source_lang": "ar",
+      "target_lang": "en",
+      "text": "Effectiveness: default son",
+      "method": "argos-mt",
+      "translated_at": "2026-11-24T13:14:10.777Z"
+    },
+    "5e1fe3ccd924e2571f39478677af12fe28cf6f5e": {
+      "source": "النافذة الزمنية: ١٨ ديسمبر ٢٠٢٦ في ١٢:٠٠ ص إلى ١٦ يناير ٢٠٢٧ في ١١:٥٩ م",
+      "source_lang": "ar",
+      "target_lang": "en",
+      "text": "Time window: 18 December 2026 at 12:00 to 16 January 2027 at 11:59 m",
+      "method": "argos-mt",
+      "translated_at": "2026-11-24T13:14:10.777Z"
+    },
+    "e1a5c0a9b3d14342fa376a0ad66d010477ed462c": {
+      "source": "الموعد: ١٨ ديسمبر ٢٠٢٦ في ١٢:٠٠ ص إلى ١٦ يناير ٢٠٢٧ في ١١:٥٩ م",
+      "source_lang": "ar",
+      "target_lang": "en",
+      "text": "Date: 18 December 2026 at 12:00 to 16 January 2027 at 11:59 m",
+      "method": "argos-mt",
+      "translated_at": "2026-11-24T13:14:10.777Z"
+    },
+    "a1cf9270fd643ca23d57c474488630c884554717": {
+      "source": "ترايثلون وادي عشار",
+      "source_lang": "ar",
+      "target_lang": "en",
+      "text": "Trithlon Wade.",
+      "method": "argos-mt",
+      "translated_at": "2026-11-24T13:14:10.777Z"
+    },
+    "49e7721ac8d6ae6fc2a6f9e47f1d0c3d48de1dc9": {
+      "source": "سباق ترايثلون مثير يجمع السباحة، وركوب الدراجات، والجري عبر المناظر الطبيعية الخالبة لصخور وادي عشار الرملية الشاهقة يف قلب العال.",
+      "source_lang": "ar",
+      "target_lang": "en",
+      "text": "An interesting triathlon race collects swimming, bicycle rides, running across the landscapes of the rocks of the stunning sandstorm valley flicks the heart of the dough.",
+      "method": "argos-mt",
+      "translated_at": "2026-11-24T13:14:10.777Z"
+    },
+    "4ab8ccd28bcf80b2cb79e1ab937691e4ef32e879": {
+      "source": "الفعالية: ترايثلون وادي عشار",
+      "source_lang": "ar",
+      "target_lang": "en",
+      "text": "Effectiveness: Trithlon Wadi Achar",
+      "method": "argos-mt",
+      "translated_at": "2026-11-24T13:14:10.777Z"
+    },
+    "23efa405b5b15a76dd6aa4a10614f7786d721129": {
+      "source": "بطولة إي بري فورموال إي 2027",
+      "source_lang": "ar",
+      "target_lang": "en",
+      "text": "E-Bri Formwell E 2027",
+      "method": "argos-mt",
+      "translated_at": "2026-11-24T13:14:10.777Z"
+    },
+    "56774323e021c7eb32fc6ebe06c18e1f822bac66": {
+      "source": "يقام جدة إي بري 2026 يف حلبة كورنيش جدة يومي 18 و91 ديسمبر 2026، ضمن الجولة األوىل من موسم فورموال إي .27/2026 بطولة إي بري فورموال إي 2027 ضمن السياحة والتجارب في العلا. تبدأ الفعالية ١٨‏/١٢‏/٢٠٢٦ وتنتهي ١٨‏/١٢‏/٢٠٢٦ حسب البيانات المتاحة. تعرض الصفحة وقت الفعالية وموقعها ومصدرها وروابط التقويم والاتجاهات عند توفرها. المصدر: Visit Saudi Summer Calendar PDF.",
+      "source_lang": "ar",
+      "target_lang": "en",
+      "text": "Jeddah E Bre 2026 Yves Korneish Jeddah on 18 and 91 December 2026, is part of the Awail tour of the Formwellal E.27/2026 E. Pri Formala tour of 2027 in tourism and experiments in AlUla. Effectiveness begins 18/12/2026 and ends 18/12/2026 according to available data. The page presents the time, location and source of effectiveness, calendar linkages and trends when available. Source: Visit Saudi Summer Calendar PDF.",
+      "method": "argos-mt",
+      "translated_at": "2026-11-24T13:14:10.777Z"
+    },
+    "719aea75f38e9e0f3d2f08f29e4fe43180d97b4f": {
+      "source": "يقام جدة إي بري 2026 يف حلبة كورنيش جدة يومي 18 و91 ديسمبر 2026، ضمن الجولة األوىل من موسم فورموال إي .27/2026",
+      "source_lang": "ar",
+      "target_lang": "en",
+      "text": "Jeddah E Bre 2026 Yves Korneish Jeddah on 18 and 91 December 2026, in the Awail round of the Formalwall E.27/2026",
+      "method": "argos-mt",
+      "translated_at": "2026-11-24T13:14:10.777Z"
+    },
+    "9a2b3fecdd558a86d79aed644833d0c820823f5d": {
+      "source": "الفعالية: بطولة إي بري فورموال إي 2027",
+      "source_lang": "ar",
+      "target_lang": "en",
+      "text": "Efficiency: E Bre Formwell E 2027",
+      "method": "argos-mt",
+      "translated_at": "2026-11-24T13:14:10.777Z"
+    },
+    "49a6c650af36b8fa7fbad6fc9df7cc435a257aea": {
+      "source": "نصف ماراثون العال",
+      "source_lang": "ar",
+      "target_lang": "en",
+      "text": "Half the marathon.",
+      "method": "argos-mt",
+      "translated_at": "2026-11-24T13:14:10.777Z"
+    },
+    "deea49b6512905e740d08684a6038423de718378": {
+      "source": "انطلق بين تضاريس العال الفريدة يف سباق يناسب جميع المستويات والمسافات. نصف ماراثون العال ضمن السياحة والتجارب في جدة. تبدأ الفعالية ١٩‏/١٢‏/٢٠٢٦ وتنتهي ١٩‏/١٢‏/٢٠٢٦ حسب البيانات المتاحة. تعرض الصفحة وقت الفعالية وموقعها ومصدرها وروابط التقويم والاتجاهات عند توفرها. المصدر: Visit Saudi Summer Calendar PDF.",
+      "source_lang": "ar",
+      "target_lang": "en",
+      "text": "Started between the unique terrain of the world, a race fits all levels and distances. Half the marathon in tourism and experiments in Jeddah. Effectiveness begins 19/12/2026 and ends 19/12/2026 according to available data. The page presents the time, location and source of effectiveness, calendar linkages and trends when available. Source: Visit Saudi Summer Calendar PDF.",
+      "method": "argos-mt",
+      "translated_at": "2026-11-24T13:14:10.777Z"
+    },
+    "9616239a09512d69464193c76b2961a7eec2da69": {
+      "source": "انطلق بين تضاريس العال الفريدة يف سباق يناسب جميع المستويات والمسافات.",
+      "source_lang": "ar",
+      "target_lang": "en",
+      "text": "Started between the unique terrain of the world, a race fits all levels and distances.",
+      "method": "argos-mt",
+      "translated_at": "2026-11-24T13:14:10.777Z"
+    },
+    "dd230aabb80bd0bbae0327b7d656ff02cfc97911": {
+      "source": "الفعالية: نصف ماراثون العال",
+      "source_lang": "ar",
+      "target_lang": "en",
+      "text": "Effectiveness: half of the marathon",
+      "method": "argos-mt",
+      "translated_at": "2026-11-24T13:14:10.777Z"
+    },
+    "fb8e6cf20e8ac91f918b84a72ea51d499bf285a8": {
+      "source": "ُجولة األطفال يف البلدة القديمة",
+      "source_lang": "ar",
+      "target_lang": "en",
+      "text": "Old town's children's tour.",
+      "method": "argos-mt",
+      "translated_at": "2026-11-24T13:14:10.777Z"
+    },
+    "de40b414a0af50b3ab20649e18182d740b0ff8db": {
+      "source": "جولة لألطفال تستكشف الجداريات الفنية يف منازل البلدة القديمة بالعال، مع ركن مخصص للصغار داخل إحدى الغرف التاريخية يف الموقع.",
+      "source_lang": "ar",
+      "target_lang": "en",
+      "text": "A tour of children exploring artistic walls defusing old town homes with a youth park inside a historic room flicking the site.",
+      "method": "argos-mt",
+      "translated_at": "2026-11-24T13:14:10.777Z"
+    },
+    "3b158c2986f0945567676e228468a71efb6d32e4": {
+      "source": "١٩ ديسمبر ٢٠٢٦ في ١٢:٠٠ ص إلى ٢٧ مارس ٢٠٢٧ في ١١:٥٩ م",
+      "source_lang": "ar",
+      "target_lang": "en",
+      "text": "19 December 2026 at 12:00 to 27 March 2027 at 11:59 M",
+      "method": "argos-mt",
+      "translated_at": "2026-11-24T13:14:10.777Z"
+    },
+    "08b0aa6d3638cc47d1d583ee0a77d43a964e1a5e": {
+      "source": "الفعالية: ُجولة األطفال يف البلدة القديمة",
+      "source_lang": "ar",
+      "target_lang": "en",
+      "text": "Efficiency: A children's tour of the old town.",
+      "method": "argos-mt",
+      "translated_at": "2026-11-24T13:14:10.777Z"
+    },
+    "8c0ef8c5bfb354e709f5b95f35b7a2289a65156e": {
+      "source": "النافذة الزمنية: ١٩ ديسمبر ٢٠٢٦ في ١٢:٠٠ ص إلى ٢٧ مارس ٢٠٢٧ في ١١:٥٩ م",
+      "source_lang": "ar",
+      "target_lang": "en",
+      "text": "Time window: 19 December 2026 at 12:00 to 27 March 2027 at 11:59 m",
+      "method": "argos-mt",
+      "translated_at": "2026-11-24T13:14:10.777Z"
+    },
+    "a3398f75034569c03807bddf4603f79fdd0e79ec": {
+      "source": "الموعد: ١٩ ديسمبر ٢٠٢٦ في ١٢:٠٠ ص إلى ٢٧ مارس ٢٠٢٧ في ١١:٥٩ م",
+      "source_lang": "ar",
+      "target_lang": "en",
+      "text": "Date: 19 December 2026 at 12:00 to 27 March 2027 at 11:59 m",
+      "method": "argos-mt",
+      "translated_at": "2026-11-24T13:14:10.777Z"
+    },
+    "6584fe2663b4a32aeeff3dec421666dc00a9975a": {
+      "source": "منتصف النهار يف طنطورة",
+      "source_lang": "ar",
+      "target_lang": "en",
+      "text": "Midday breakfast.",
+      "method": "argos-mt",
+      "translated_at": "2026-11-24T13:14:10.778Z"
+    },
+    "65baab4b52d75321717151aea9fb56bfe6a23039": {
+      "source": "تجربة إرشادية مدتها 15 دقيقة تستكشف ساعة طنطورة الشمسية يف العال، ودورها يف الزراعة، وتوزيع المياه، وتحديد موسم الزراعة الشتوي.",
+      "source_lang": "ar",
+      "target_lang": "en",
+      "text": "A 15-minute demonstration experiment exploring the hour of solar ton of rainfall, its role in agriculture, water distribution and winter farming season.",
+      "method": "argos-mt",
+      "translated_at": "2026-11-24T13:14:10.778Z"
+    },
+    "dd56b5bf72abaafb1f1bd7e93fe7061582dc69e3": {
+      "source": "٢٠ ديسمبر ٢٠٢٦ في ١٢:٠٠ ص إلى ٢٧ ديسمبر ٢٠٢٦ في ١١:٥٩ م",
+      "source_lang": "ar",
+      "target_lang": "en",
+      "text": "20 December 2026 at 12:00 to 27 December 2026 at 11:59 M",
+      "method": "argos-mt",
+      "translated_at": "2026-11-24T13:14:10.778Z"
+    },
+    "cb3b464b97a602bef30a2621eb16ed28df41a4ec": {
+      "source": "الفعالية: منتصف النهار يف طنطورة",
+      "source_lang": "ar",
+      "target_lang": "en",
+      "text": "Efficiency: midday breakfast.",
+      "method": "argos-mt",
+      "translated_at": "2026-11-24T13:14:10.778Z"
+    },
+    "d3cf0f3a19db5376abeb031cac83fcf48840baea": {
+      "source": "النافذة الزمنية: ٢٠ ديسمبر ٢٠٢٦ في ١٢:٠٠ ص إلى ٢٧ ديسمبر ٢٠٢٦ في ١١:٥٩ م",
+      "source_lang": "ar",
+      "target_lang": "en",
+      "text": "Time window: 20 December 2026 at 12:00 to 27 December 2026 at 11:59 m",
+      "method": "argos-mt",
+      "translated_at": "2026-11-24T13:14:10.778Z"
+    },
+    "4c1bcba923becfbc998883d9818a40d4fa83fd03": {
+      "source": "الموعد: ٢٠ ديسمبر ٢٠٢٦ في ١٢:٠٠ ص إلى ٢٧ ديسمبر ٢٠٢٦ في ١١:٥٩ م",
+      "source_lang": "ar",
+      "target_lang": "en",
+      "text": "Date: 20 December 2026 at 12:00 to 27 December 2026 at 11:59 m",
+      "method": "argos-mt",
+      "translated_at": "2026-11-24T13:14:10.778Z"
+    },
+    "cb4eef3e6cd1f566f04ad4a6511b5c766f272cb9": {
+      "source": "مهرُجان تمور األحساًء المصنعة",
+      "source_lang": "ar",
+      "target_lang": "en",
+      "text": "Manufacture Festival.",
+      "method": "argos-mt",
+      "translated_at": "2026-11-24T13:14:10.778Z"
+    },
+    "57b69cb77673ec8a14fd508cfd3180439037aabe": {
+      "source": "مهرجان لالحتفاء بالتمور المصنعة محلياً، مع فعاليات زراعية وفنون تقليدية، ويضم أكثر من 18 صنفاً من التمر كالخالص، والبرحي، والرزيز، والزاملي.",
+      "source_lang": "ar",
+      "target_lang": "en",
+      "text": "Festival to celebrate locally manufactured skirmishes with agricultural and traditional arts, with more than 18 items of passage such as sticks, berries, rice and Zambia.",
+      "method": "argos-mt",
+      "translated_at": "2026-11-24T13:14:10.778Z"
+    },
+    "465d3169f7e6bf02ed28148e77ba474953aabc8c": {
+      "source": "الفعالية: مهرُجان تمور األحساًء المصنعة",
+      "source_lang": "ar",
+      "target_lang": "en",
+      "text": "Effectiveness: Manufacture Festival",
+      "method": "argos-mt",
+      "translated_at": "2026-11-24T13:14:10.778Z"
     },
     "90cec59ccb7804057f167d75eb3cdf02a1a8a419": {
       "source": "فعالية معرض أو مؤتمر منشورة في تقويم واجهة الرياض للمعارض والمؤتمرات. المصدر الرسمي: واجهة الرياض للمعارض والمؤتمرات. China Homelife Saudi Arabia 2026 ضمن المعارض والمؤتمرات في الرياض. تبدأ الفعالية ٢٠‏/١٢‏/٢٠٢٦ وتنتهي ٢٢‏/١٢‏/٢٠٢٦ حسب البيانات المتاحة. تعرض الصفحة وقت الفعالية وموقعها ومصدرها وروابط التقويم والاتجاهات عند توفرها. المصدر: RFECC What's On.",
       "source_lang": "ar",
       "target_lang": "en",
-      "text": "Effectiveness of exhibit or conference in calendar of the Riyadh Front Exhibition Convention Center. Official source: the Riyadh Front Exhibition Convention Center. China Homelife Saudi Arabia 2026 in exhibitions and conferences at Riyadh. Effectiveness begins 20/12/2026 and ends 22/12/2026 according to available data. The page shall be presented at the time, location and source of effectiveness, calendar linkages and trends as they are available. Source: RFECC What's On.",
+      "text": "Effectiveness of exhibit or conference in calendar of the Riyadh Front Exhibition Convention Center. Official source: the Riyadh Front Exhibition Convention Center. China Homelife Saudi Arabia 2026 in exhibitions and conferences at Riyadh. Effectiveness begins 20/12/2026 and ends 22/12/2026 according to available data. The page presents the time, location and source of effectiveness, calendar linkages and trends when available. Source: RFECC What's On.",
       "method": "argos-mt",
-      "translated_at": "2026-11-23T11:38:23.865Z"
+      "translated_at": "2026-11-24T13:14:10.778Z"
+    },
+    "fae015addca9fcd23d69a718b12eca37597247e8": {
+      "source": "الدويتو",
+      "source_lang": "ar",
+      "target_lang": "en",
+      "text": "Duito.",
+      "method": "argos-mt",
+      "translated_at": "2026-11-24T13:14:10.778Z"
+    },
+    "f2dee05044e0b809a98b729188fc17810ff5f590": {
+      "source": "مجد وياسمين يجمعهما الحب وحلم مشترك، لكن التنافس العائلي يضعهما يف سلسلة من المواقف الكوميدية والمنعطفات المليئة بالضحك.",
+      "source_lang": "ar",
+      "target_lang": "en",
+      "text": "The glory and two names that love brings together and a common dream, but family rivalry puts them into a series of comedy positions and funny turns.",
+      "method": "argos-mt",
+      "translated_at": "2026-11-24T13:14:10.778Z"
+    },
+    "d2aed39d0536edd538d744a1fffe469da9aa181c": {
+      "source": "٢٢ ديسمبر ٢٠٢٦ في ١٢:٠٠ ص إلى ٢٢ ديسمبر ٢٠٢٦ في ١١:٥٩ م",
+      "source_lang": "ar",
+      "target_lang": "en",
+      "text": "22 December 2026 at 12:00 p. 22 December 2026 at 11:59 m",
+      "method": "argos-mt",
+      "translated_at": "2026-11-24T13:14:10.778Z"
+    },
+    "dad17779be6d77aacd39de0485a1448e5ac2bb9a": {
+      "source": "الفعالية: الدويتو",
+      "source_lang": "ar",
+      "target_lang": "en",
+      "text": "Effectiveness: Duito",
+      "method": "argos-mt",
+      "translated_at": "2026-11-24T13:14:10.778Z"
+    },
+    "0faf1ba9a63cc108aeecd4326e1184b93bdfb60e": {
+      "source": "النافذة الزمنية: ٢٢ ديسمبر ٢٠٢٦ في ١٢:٠٠ ص إلى ٢٢ ديسمبر ٢٠٢٦ في ١١:٥٩ م",
+      "source_lang": "ar",
+      "target_lang": "en",
+      "text": "Time window: 22 December 2026 at 12:00 p. 22 December 2026 at 11:59 m",
+      "method": "argos-mt",
+      "translated_at": "2026-11-24T13:14:10.778Z"
+    },
+    "4bab724b145576793e9865ceb97ff030684c641d": {
+      "source": "الموعد: ٢٢ ديسمبر ٢٠٢٦ في ١٢:٠٠ ص إلى ٢٢ ديسمبر ٢٠٢٦ في ١١:٥٩ م",
+      "source_lang": "ar",
+      "target_lang": "en",
+      "text": "Date: 22 December 2026 at 12:00 p. 22 December 2026 at 11:59 m",
+      "method": "argos-mt",
+      "translated_at": "2026-11-24T13:14:10.778Z"
+    },
+    "66fccc59fd908c185a0a163bf840a721401c0382": {
+      "source": "فروستي الند",
+      "source_lang": "ar",
+      "target_lang": "en",
+      "text": "Frosty Club.",
+      "method": "argos-mt",
+      "translated_at": "2026-11-24T13:14:10.778Z"
+    },
+    "70493708d89e41bf22c905878efe4d2646c61aae": {
+      "source": "وجهة ترفيهية نابضة بالحياة تجمع بين عوالم غامرة، وعروض حية، ومنطقة رعب، ومسرح عربي، وألعاب تفاعلية، ومطاعم ومقاهي، ومناطق تسوق متنوعة.",
+      "source_lang": "ar",
+      "target_lang": "en",
+      "text": "A vibrant recreational destination combining worlds, life shows, a horror zone, an Arab theatre, interactive games, restaurants and cafes, and diverse shopping areas.",
+      "method": "argos-mt",
+      "translated_at": "2026-11-24T13:14:10.778Z"
+    },
+    "bf18bc5e193f3fe2585012b1be78d8611bbca3b8": {
+      "source": "٢٣ ديسمبر ٢٠٢٦ في ١٢:٠٠ ص إلى ٥ فبراير ٢٠٢٧ في ١١:٥٩ م",
+      "source_lang": "ar",
+      "target_lang": "en",
+      "text": "23 December 2026 at 12:00 to 5 February 2027 at 11:59 M",
+      "method": "argos-mt",
+      "translated_at": "2026-11-24T13:14:10.778Z"
+    },
+    "d859dc07c6f39c8229653c3e061f773b632749f0": {
+      "source": "الفعالية: فروستي الند",
+      "source_lang": "ar",
+      "target_lang": "en",
+      "text": "Effectiveness: Frosty Nand",
+      "method": "argos-mt",
+      "translated_at": "2026-11-24T13:14:10.778Z"
+    },
+    "8238af9a7df4aa656ee8eabb7be6333268f08ff7": {
+      "source": "النافذة الزمنية: ٢٣ ديسمبر ٢٠٢٦ في ١٢:٠٠ ص إلى ٥ فبراير ٢٠٢٧ في ١١:٥٩ م",
+      "source_lang": "ar",
+      "target_lang": "en",
+      "text": "Time window: 23 December 2026 at 12:00 to 5 February 2027 at 11:59 m",
+      "method": "argos-mt",
+      "translated_at": "2026-11-24T13:14:10.778Z"
+    },
+    "282898b744a3c5a896520c9a706e020779456a3f": {
+      "source": "الموعد: ٢٣ ديسمبر ٢٠٢٦ في ١٢:٠٠ ص إلى ٥ فبراير ٢٠٢٧ في ١١:٥٩ م",
+      "source_lang": "ar",
+      "target_lang": "en",
+      "text": "Date: 23 December 2026 at 12:00 to 5 February 2027 at 11:59 m",
+      "method": "argos-mt",
+      "translated_at": "2026-11-24T13:14:10.778Z"
+    },
+    "6c2ab27b3d4cee2bb84a3aa1acb896e577e8dcc1": {
+      "source": "العمدة",
+      "source_lang": "ar",
+      "target_lang": "en",
+      "text": "Mayor",
+      "method": "argos-mt",
+      "translated_at": "2026-11-24T13:14:10.778Z"
+    },
+    "115ae84b15e4c8004a16621f9d1689005fed8ab5": {
+      "source": "مدرّس كيمياء ينتحل شخصية تاجر أسلحة خطير، لتبدأ كوميديا مليئة باألحداث، والمفاجآت، والمواقف الطريفة من البداية إىل النهاية.",
+      "source_lang": "ar",
+      "target_lang": "en",
+      "text": "A chemical teacher who impersonates a dangerous arms dealer, to start a comedy full of events, surprises and funny attitudes from the beginning to the end.",
+      "method": "argos-mt",
+      "translated_at": "2026-11-24T13:14:10.778Z"
+    },
+    "c54ecaa64eb7f9f663fecc230ec4294410290da1": {
+      "source": "٢٤ ديسمبر ٢٠٢٦ في ١٢:٠٠ ص إلى ٢٤ ديسمبر ٢٠٢٦ في ١١:٥٩ م",
+      "source_lang": "ar",
+      "target_lang": "en",
+      "text": "24 December 2026 at 12:00 to 24 December 2026 at 11:59 M",
+      "method": "argos-mt",
+      "translated_at": "2026-11-24T13:14:10.778Z"
+    },
+    "ad033e85794c99703d3e69bc55bffad3e1374b8a": {
+      "source": "الفعالية: العمدة",
+      "source_lang": "ar",
+      "target_lang": "en",
+      "text": "Effectiveness: Mayor",
+      "method": "argos-mt",
+      "translated_at": "2026-11-24T13:14:10.778Z"
+    },
+    "21d825fd80442b11da4e9e35365ebc352d2ee5d5": {
+      "source": "النافذة الزمنية: ٢٤ ديسمبر ٢٠٢٦ في ١٢:٠٠ ص إلى ٢٤ ديسمبر ٢٠٢٦ في ١١:٥٩ م",
+      "source_lang": "ar",
+      "target_lang": "en",
+      "text": "Time window: 24 December 2026 at 12:00 p. 24 December 2026 at 11:59 m",
+      "method": "argos-mt",
+      "translated_at": "2026-11-24T13:14:10.778Z"
+    },
+    "63afca51bf778554e173eb7376cb7822b8c51b4d": {
+      "source": "الموعد: ٢٤ ديسمبر ٢٠٢٦ في ١٢:٠٠ ص إلى ٢٤ ديسمبر ٢٠٢٦ في ١١:٥٩ م",
+      "source_lang": "ar",
+      "target_lang": "en",
+      "text": "Date: 24 December 2026 at 12:00 p. 24 December 2026 at 11:59 m",
+      "method": "argos-mt",
+      "translated_at": "2026-11-24T13:14:10.778Z"
+    },
+    "7fdbdbb40eee6d0399f2b875af4e75c11a3fdea2": {
+      "source": "قاعة عطور اإلرث",
+      "source_lang": "ar",
+      "target_lang": "en",
+      "text": "The Emperor Hall.",
+      "method": "argos-mt",
+      "translated_at": "2026-11-24T13:14:10.778Z"
+    },
+    "e86ba02360d408dba44c582be74ba9e6ae9f75a7": {
+      "source": "ادخل مبنى تاريخيًا يف البلدة القديمة بالعال لتستكشف تاريخ البخور وطريق البخور العريق عبر وسائط متعددة تفاعلية، وتجهيزات عطرية فريدة.",
+      "source_lang": "ar",
+      "target_lang": "en",
+      "text": "Enter a historic building that flies the old town with money to explore the history of rocks and the road of ancient rocks through multiple interactive media and unique perfume equipment.",
+      "method": "argos-mt",
+      "translated_at": "2026-11-24T13:14:10.778Z"
+    },
+    "ff9519b8d15c3056d7be3c41802ad8ffe695651a": {
+      "source": "٢٦ ديسمبر ٢٠٢٦ في ١٢:٠٠ ص إلى ٣٠ يونيو ٢٠٢٧ في ١١:٥٩ م",
+      "source_lang": "ar",
+      "target_lang": "en",
+      "text": "26 December 2026 at 12:00 to 30 June 2027 at 11:59 M",
+      "method": "argos-mt",
+      "translated_at": "2026-11-24T13:14:10.778Z"
+    },
+    "b7446d650451e475c5984d69cb6c6be0290d1497": {
+      "source": "الفعالية: قاعة عطور اإلرث",
+      "source_lang": "ar",
+      "target_lang": "en",
+      "text": "Effectiveness: Anthrop Hall",
+      "method": "argos-mt",
+      "translated_at": "2026-11-24T13:14:10.778Z"
+    },
+    "a29266dae4193d4bd3dfc713c0afba396c4117a8": {
+      "source": "النافذة الزمنية: ٢٦ ديسمبر ٢٠٢٦ في ١٢:٠٠ ص إلى ٣٠ يونيو ٢٠٢٧ في ١١:٥٩ م",
+      "source_lang": "ar",
+      "target_lang": "en",
+      "text": "Time window: 26 December 2026 at 12:00 to 30 June 2027 at 11:59 m",
+      "method": "argos-mt",
+      "translated_at": "2026-11-24T13:14:10.778Z"
+    },
+    "d1a4bae239e5500947a7b21a3b598edf151d4394": {
+      "source": "الموعد: ٢٦ ديسمبر ٢٠٢٦ في ١٢:٠٠ ص إلى ٣٠ يونيو ٢٠٢٧ في ١١:٥٩ م",
+      "source_lang": "ar",
+      "target_lang": "en",
+      "text": "Date: 26 December 2026 at 12:00 to 30 June 2027 at 11:59 m",
+      "method": "argos-mt",
+      "translated_at": "2026-11-24T13:14:10.778Z"
+    },
+    "b6ba2c747ac154bbecedfc9405e7ab8306f2ac8d": {
+      "source": "فروزن كاردز",
+      "source_lang": "ar",
+      "target_lang": "en",
+      "text": "Frozen Cards.",
+      "method": "argos-mt",
+      "translated_at": "2026-11-24T13:14:10.778Z"
+    },
+    "c3e2e15d4c7e90dc06855884b5cd3ae2cd7693ac": {
+      "source": "تجربة رعب غامرة يف موسم جدة تأخذ الزوار عبر مشاهد تفاعلية مليئة بالتشويق والمفاجآت غير المتوقعة. فروزن كاردز ضمن السياحة والتجارب في العلا. تبدأ الفعالية ٢٨‏/١٢‏/٢٠٢٦ وتنتهي ٠٥‏/٠٢‏/٢٠٢٧ حسب البيانات المتاحة. تعرض الصفحة وقت الفعالية وموقعها ومصدرها وروابط التقويم والاتجاهات عند توفرها. المصدر: Visit Saudi Summer Calendar PDF.",
+      "source_lang": "ar",
+      "target_lang": "en",
+      "text": "The gambling horror experience of Jeddah's season takes visitors through interactive scenes full of confusion and unexpected surprises. Fruzin Cards is a tourist and experiment in AlUla. Effectiveness begins 28/12/2026 and ends 50/2027 according to available data. The page presents the time, location and source of effectiveness, calendar linkages and trends when available. Source: Visit Saudi Summer Calendar PDF.",
+      "method": "argos-mt",
+      "translated_at": "2026-11-24T13:14:10.778Z"
+    },
+    "591f701f26a3303ddf898c1debf7bd3564d6b2b5": {
+      "source": "تجربة رعب غامرة يف موسم جدة تأخذ الزوار عبر مشاهد تفاعلية مليئة بالتشويق والمفاجآت غير المتوقعة.",
+      "source_lang": "ar",
+      "target_lang": "en",
+      "text": "The gambling horror experience of Jeddah's season takes visitors through interactive scenes full of confusion and unexpected surprises.",
+      "method": "argos-mt",
+      "translated_at": "2026-11-24T13:14:10.778Z"
+    },
+    "f06c32f6b0a7961fac98d28ff3b611130fa2a562": {
+      "source": "٢٨ ديسمبر ٢٠٢٦ في ١٢:٠٠ ص إلى ٥ فبراير ٢٠٢٧ في ١١:٥٩ م",
+      "source_lang": "ar",
+      "target_lang": "en",
+      "text": "28 December 2026 at 12:00 to 5 February 2027 at 11:59 M",
+      "method": "argos-mt",
+      "translated_at": "2026-11-24T13:14:10.778Z"
+    },
+    "6ba26ad6835751b37970cdd189a23b6a7b735360": {
+      "source": "الفعالية: فروزن كاردز",
+      "source_lang": "ar",
+      "target_lang": "en",
+      "text": "Effectiveness: Frozen Cards",
+      "method": "argos-mt",
+      "translated_at": "2026-11-24T13:14:10.778Z"
+    },
+    "2d7a4dfbec8752fa73357048edc216f8c9dd0676": {
+      "source": "النافذة الزمنية: ٢٨ ديسمبر ٢٠٢٦ في ١٢:٠٠ ص إلى ٥ فبراير ٢٠٢٧ في ١١:٥٩ م",
+      "source_lang": "ar",
+      "target_lang": "en",
+      "text": "Time window: 28 December 2026 at 12:00 to 5 February 2027 at 11:59 m",
+      "method": "argos-mt",
+      "translated_at": "2026-11-24T13:14:10.778Z"
+    },
+    "9b6ebbd0122810ed54c43c477f3fd81051de2afc": {
+      "source": "الموعد: ٢٨ ديسمبر ٢٠٢٦ في ١٢:٠٠ ص إلى ٥ فبراير ٢٠٢٧ في ١١:٥٩ م",
+      "source_lang": "ar",
+      "target_lang": "en",
+      "text": "Date: 28 December 2026 at 12:00 to 5 February 2027 at 11:59 m",
+      "method": "argos-mt",
+      "translated_at": "2026-11-24T13:14:10.778Z"
+    },
+    "9125b8b49b1c5867b09d108af3230f575489c712": {
+      "source": "الديفا",
+      "source_lang": "ar",
+      "target_lang": "en",
+      "text": "Diva.",
+      "method": "argos-mt",
+      "translated_at": "2026-11-24T13:14:10.778Z"
+    },
+    "06768a290e91d9b4b63508f7355feece260bcd60": {
+      "source": "كوميديا عائلية عن أم تحارب هوس وسائل التواصل الألجتماعي لتساعد أبناءها عىل إعادة اكتشاف ما يهم حقاً يف الحياة. الديفا ضمن الترفيه والعائلات في عسير. تبدأ الفعالية ٣١‏/١٢‏/٢٠٢٦ وتنتهي ٣١‏/١٢‏/٢٠٢٦ حسب البيانات المتاحة. تعرض الصفحة وقت الفعالية وموقعها ومصدرها وروابط التقويم والاتجاهات عند توفرها. المصدر: Visit Saudi Summer Calendar PDF.",
+      "source_lang": "ar",
+      "target_lang": "en",
+      "text": "Family comedy about a mother fighting the obsession of social media to help her sons rediscover what really matters. Defa is in entertainment and families in Aseer. Effectiveness begins 31/12/2026 and ends 31/12/2026 according to available data. The page presents the time, location and source of effectiveness, calendar linkages and trends when available. Source: Visit Saudi Summer Calendar PDF.",
+      "method": "argos-mt",
+      "translated_at": "2026-11-24T13:14:10.778Z"
+    },
+    "579e312c17dc7a6f29a3fb303af799da1ba6377c": {
+      "source": "كوميديا عائلية عن أم تحارب هوس وسائل التواصل الألجتماعي لتساعد أبناءها عىل إعادة اكتشاف ما يهم حقاً يف الحياة.",
+      "source_lang": "ar",
+      "target_lang": "en",
+      "text": "Family comedy about a mother fighting the obsession of social media to help her sons rediscover what really matters.",
+      "method": "argos-mt",
+      "translated_at": "2026-11-24T13:14:10.778Z"
+    },
+    "ea10db0e2abb66a0cd1d0d3773e962440a7314b3": {
+      "source": "٣١ ديسمبر ٢٠٢٦ في ١٢:٠٠ ص إلى ٣١ ديسمبر ٢٠٢٦ في ١١:٥٩ م",
+      "source_lang": "ar",
+      "target_lang": "en",
+      "text": "31 December 2026 at 12:00 to 31 December 2026 at 11:59 m",
+      "method": "argos-mt",
+      "translated_at": "2026-11-24T13:14:10.778Z"
+    },
+    "33d981c2a756d4219c6934b3de5b268833278dfb": {
+      "source": "الفعالية: الديفا",
+      "source_lang": "ar",
+      "target_lang": "en",
+      "text": "Effectiveness: Diva",
+      "method": "argos-mt",
+      "translated_at": "2026-11-24T13:14:10.778Z"
+    },
+    "96abce2634f85005f94d3862bd91e10b233f2258": {
+      "source": "النافذة الزمنية: ٣١ ديسمبر ٢٠٢٦ في ١٢:٠٠ ص إلى ٣١ ديسمبر ٢٠٢٦ في ١١:٥٩ م",
+      "source_lang": "ar",
+      "target_lang": "en",
+      "text": "Time window: 31 December 2026 at 12:00 to 31 December 2026 at 11:59 m",
+      "method": "argos-mt",
+      "translated_at": "2026-11-24T13:14:10.778Z"
+    },
+    "69298c22eb85431658426fba20672904df8bcb06": {
+      "source": "الموعد: ٣١ ديسمبر ٢٠٢٦ في ١٢:٠٠ ص إلى ٣١ ديسمبر ٢٠٢٦ في ١١:٥٩ م",
+      "source_lang": "ar",
+      "target_lang": "en",
+      "text": "Date: 31 December 2026 at 12:00 to 31 December 2026 at 11:59 m",
+      "method": "argos-mt",
+      "translated_at": "2026-11-24T13:14:10.778Z"
     }
   }
 }

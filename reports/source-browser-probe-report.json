@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-23T11:02:44.815Z",
+  "generated_at": "2026-11-24T12:48:17.350Z",
   "source_registry": "data/source_registry.json",
   "collection_report": "reports/source-collection-report.json",
   "output_dir": "data/raw/browser-probes",
@@ -8,18 +8,18 @@
     "scope": "priority",
     "limit": 8,
     "probed_this_run": 8,
-    "fresh_results_available": 8,
+    "fresh_results_available": 13,
     "wait_ms": 4500,
     "timeout_ms": 30000,
     "failure_cooldown_hours": 72
   },
   "methodology": "Browser-level probe inspired by cafe platform work: classify fetchability, hydration payloads, network APIs, structured HTML, rendered DOM, and policy-protected lanes before writing extractors.",
   "totals": {
-    "probed": 8,
-    "browser_network_api": 0,
+    "probed": 13,
+    "browser_network_api": 1,
     "browser_hydration_payload": 0,
-    "rendered_html_candidates": 0,
-    "blocked_or_protected": 1,
+    "rendered_html_candidates": 2,
+    "blocked_or_protected": 2,
     "policy_skipped": 0
   },
   "sources": [
@@ -132,8 +132,580 @@
       "network_sample": []
     },
     {
+      "id": "invest-saudi-events",
+      "probed_at": "2026-11-24T12:48:54.734Z",
+      "name": "Invest Saudi Events",
+      "priority": 10,
+      "url": "https://investsaudi.sa/backend/wp-json/v3/events?time_frame=all",
+      "final_url": "https://investsaudi.sa/backend/wp-json/v3/events?time_frame=all",
+      "status": "ok",
+      "http_status": 200,
+      "navigation_error": "",
+      "duration_ms": 6414,
+      "classification": "rendered-text-review",
+      "next_action": "راجع الصفحة يدويًا وحدد هل هي مصدر أدلة أم صفحة تعريفية فقط.",
+      "title": "",
+      "text_bytes": 6078,
+      "html_bytes": 6257,
+      "html_snapshot": "data/raw/browser-probes/invest-saudi-events-2026-11-24T12-48-17-350Z.html",
+      "screenshot": "data/raw/browser-probes/invest-saudi-events-2026-11-24T12-48-17-350Z.png",
+      "signals": {
+        "has_next_data": false,
+        "has_nuxt": false,
+        "has_json_ld": false,
+        "has_event_schema": false,
+        "date_snippets": [],
+        "event_like_links": []
+      },
+      "script_signals": {
+        "next_data_scripts": 0,
+        "nuxt_scripts": 0,
+        "json_ld_scripts": 0,
+        "large_inline_scripts": 0
+      },
+      "network_total": 0,
+      "network_endpoints": [],
+      "network_sample": []
+    },
+    {
+      "id": "eye-of-riyadh-events",
+      "probed_at": "2026-11-24T12:49:06.965Z",
+      "name": "Eye of Riyadh Events",
+      "priority": 12,
+      "url": "https://www.eyeofriyadh.com/events/",
+      "final_url": "https://www.eyeofriyadh.com/events/",
+      "status": "ok",
+      "http_status": 200,
+      "navigation_error": "",
+      "duration_ms": 12207,
+      "classification": "rendered-html-candidates",
+      "next_action": "اكتب extractor مرن من DOM بعد الرندر أو حسن selector الحالي.",
+      "title": "Events | Exhibitions |Festivals | Seminars Riyadh Saudi Arabia",
+      "text_bytes": 6230,
+      "html_bytes": 141775,
+      "html_snapshot": "data/raw/browser-probes/eye-of-riyadh-events-2026-11-24T12-48-17-350Z.html",
+      "screenshot": "data/raw/browser-probes/eye-of-riyadh-events-2026-11-24T12-48-17-350Z.png",
+      "signals": {
+        "has_next_data": false,
+        "has_nuxt": false,
+        "has_json_ld": false,
+        "has_event_schema": false,
+        "date_snippets": [
+          "13 Jumada II 1448 - 24 November 2026 Sign In/Sign Up Advertise with us Sign-up for newsletter HOME NEWS EVENTS BUSIN",
+          "hatsApp X LinkedIn Facebook Email Share 25 - 27 Jan, 2027 Real Estate Future Forum Four Seasons Hotel , Riyadh | Forum The Real Est",
+          "must evolve, embracing... More Details 4 - 5 Apr, 2027 Global Proptech Summit 2027 Mandarin Oriental Al Faisaliah , Riyadh | Sum",
+          "platform that convenes... More Details 7 - 8 Apr, 2027 Real Estate Supply Chain Forum Mandarin Oriental Al Faisaliah , Riyadh |",
+          "tform driving strategic... More Details 7 - 8 Apr, 2027 CIPS MENA Procurement and Supply Chain Futures conference and awards Mand",
+          "is the region’s leading... More Details 23 - 25 Nov, 2026 Foodex Saudi 2026 Jeddah Jeddah International Exhibition & Convention Cen",
+          "Trade Exhibition Foodex... More Details 24 - 26 Nov, 2026 Security and Innovation Fair (SAIF) 2026 Riyadh International Convention",
+          "largest exhibition and... More Details 7 - 9 Dec, 2026 HORECA 2026 Riyadh Front Exhibition & Conference Center , Riyadh | Exhibi"
+        ],
+        "event_like_links": [
+          {
+            "text": "EVENTS",
+            "href": "https://www.eyeofriyadh.com/events/"
+          },
+          {
+            "text": "عربي",
+            "href": "https://www.eyeofriyadh.com/ar/events/"
+          },
+          {
+            "text": "Award",
+            "href": "https://www.eyeofriyadh.com/events/?fcat=15"
+          },
+          {
+            "text": "Ceremony",
+            "href": "https://www.eyeofriyadh.com/events/?fcat=21"
+          },
+          {
+            "text": "Championship",
+            "href": "https://www.eyeofriyadh.com/events/?fcat=13"
+          },
+          {
+            "text": "Conference",
+            "href": "https://www.eyeofriyadh.com/events/?fcat=1"
+          },
+          {
+            "text": "Congress",
+            "href": "https://www.eyeofriyadh.com/events/?fcat=28"
+          },
+          {
+            "text": "Convention",
+            "href": "https://www.eyeofriyadh.com/events/?fcat=17"
+          },
+          {
+            "text": "Exhibition",
+            "href": "https://www.eyeofriyadh.com/events/?fcat=2"
+          },
+          {
+            "text": "Festival",
+            "href": "https://www.eyeofriyadh.com/events/?fcat=5"
+          },
+          {
+            "text": "Forum",
+            "href": "https://www.eyeofriyadh.com/events/?fcat=3"
+          },
+          {
+            "text": "Initiative",
+            "href": "https://www.eyeofriyadh.com/events/?fcat=20"
+          },
+          {
+            "text": "Professional Development Programme",
+            "href": "https://www.eyeofriyadh.com/events/?fcat=32"
+          },
+          {
+            "text": "Show",
+            "href": "https://www.eyeofriyadh.com/events/?fcat=24"
+          },
+          {
+            "text": "Summit",
+            "href": "https://www.eyeofriyadh.com/events/?fcat=4"
+          },
+          {
+            "text": "AWARD",
+            "href": "https://www.eyeofriyadh.com/events/?fcat=15"
+          },
+          {
+            "text": "CEREMONY",
+            "href": "https://www.eyeofriyadh.com/events/?fcat=21"
+          },
+          {
+            "text": "CHAMPIONSHIP",
+            "href": "https://www.eyeofriyadh.com/events/?fcat=13"
+          },
+          {
+            "text": "CONFERENCE",
+            "href": "https://www.eyeofriyadh.com/events/?fcat=1"
+          },
+          {
+            "text": "CONGRESS",
+            "href": "https://www.eyeofriyadh.com/events/?fcat=28"
+          }
+        ]
+      },
+      "script_signals": {
+        "next_data_scripts": 0,
+        "nuxt_scripts": 0,
+        "json_ld_scripts": 0,
+        "large_inline_scripts": 0
+      },
+      "network_total": 3,
+      "network_endpoints": [],
+      "network_sample": [
+        {
+          "method": "GET",
+          "status": 200,
+          "url": "https://ep1.adtrafficquality.google/getconfig/sodar?sv=200&tid=gpt&tv=m202611120201&st=env&sjk=213187325035073",
+          "content_type": "application/json",
+          "resource_type": "xhr",
+          "request_post_data": "",
+          "response_shape": "json-like-invalid",
+          "preview": "{\"sodar_query_id\":\"t4cFa4eXG8mm5LcPkMWVwQw\",\"injector_basename\":\"sodar2\",\"bg_hash_basename\":\"mLS674hHVtur73iCXkyUCVM8preAJceFlf7bFz1J360\",\"bg_binary\":\"uthG5aVtkFdzvhV8JAFXApmFdArviGgMYq0JtPmH0N5N62305HYVZB+AzxJWONaaGiaZ5gR7Ml2gTrCe/Jud6E/8VkDUNzLlqbRNq9xoMfqEy3uUUIa+7iaWBvJZRpJOdYZEDIKoNgs8TqKuWtC6MaAKEkTcPxvMuj/fHQUT3Nhr6Z5Sy3rx9hAbYiOxjsIKED1jkM2ElNrwUmC/TpdN0+iWf19aM65cGBvPkraFS3IeHiRm/e0Ll3Het86S9bdqlIuXuIW96rM+I7Z8J+0YghVGZOOsKSc5HmQFWswaNvqVQ0EPaqYfYaYpZa9isgUVpZLy2zLT4VvW0wrEQcRSvR2J8eHenGDWS1+XN9U9uLJq72jEbAKWEHTFKG7mmYlkJb4OMm3fUcYwV76grYyxy/Uct/ucixfiSyFD/wSywX9bKw+7shv95pgJJL2qETe7MDlVsJAT+LhCUuKaLKd1/HVX0OTwddVF9glW13irgZh/Gp6b6L27EXqOA/Ns3SCvuhBWcXOW5AuFF3P4MGaOhPc3qhxseGsOMfp/Asli3c/5h83ROGtOrfBSepU1MUvvSe2LhemAwv1FLLOzixbZFAL8DPc3GyxEoz8QGv7sg+2iEYAuLWWVSUj80BNX7vYenDcj+P1hzUnv4HhEQSl94pcRbV8taqyG/4LC4+9k+UgU6errlGMW7YYuQQR2Ogw2ukTLR+uX1ImEreb6d6Di3dAuH6L+o3m1KnWzD6nTvSxWnHqneCVby+XNjnYbMb9YouDygFujajkEkWiSnDi0f8lgYtgV61B+46lo8ys6fDcnWjiOS9QmFP4YKg86e4y+z/ZbwflVjBLRwXSm8D51KVdEisrHHHKZNpeXAuqXuEYqPVWaBfADW1Be196Vs1yrIawOMrTUpahwk9K8na4stqenSSzS5lExudJIlTDav5xuF4bdEmI9FRQoYefGQvhhUaTfRwn1x0VjrYMv+HrJ08wc3alsGRX9mneAWX+YjLaLL5NQ3/kCaj/JQELXxR6DF/8DPG+a/pIfeejZvsaLV7W7qMcUaiou5V5aVxEBjn6MZzOT2ZntQVsmsmqaFxH2b885c5W2cMSCyXZSdAcVlFWAnBBLae1V8yo21skrxu47LtM5H0PEn/S9hvSryNnTIg/osS3ZD1koJCBP63mgwoh3iEtv7jOHzkQHJzGyum+uCUwybhKY0Zl8ZwqIBrIG2T02L93SJBZgzF8kKsl5m0KoOpKtFrDjsOzKMRo+v4Ig2vZ2xTfKVOue8sBtil9TuEq0AQLQcHzHOzH/OAmPwBhHrsBbbgW8RtRXT+d8ASsxnzn7gCT1i2bWpHD60MvxdmJZ/BrCGvM4GzYODY+sVuH4jwGQBUBpIRfnS0voxtqS/ShRwvOX4i8engxaNqSTm+e7puc5Z0dPOikH3mJL670yUlsLwhjCkjYBR9L2lnZ5uv+tOqGhdafoePNYE2UBi0pB7GmCjsnK31Ho5j5vCEDfV/DA3OAagWQHLyR6H1EUen/fb8ekyX7Z/juYGdV5Xrtg8FooESCG6MK73CZvNSfugY8tpUfXCrv+gsumrkIi9SD1uuNM69O0y1pz6SafUR6Sr6F59Kr1TTJTsF18BuYax61JOYktMv+cxGBm7GdgAuXng"
+        },
+        {
+          "method": "GET",
+          "status": 200,
+          "url": "https://bootstrap.smartsuppchat.com/widget/2509ea3487b655fdefb67761d4610393011e3a91.json",
+          "content_type": "application/json",
+          "resource_type": "xhr",
+          "request_post_data": "",
+          "response_shape": "json-object:aiRatingEnabled,allowedDomains,buttonStyle,color,color2,colorGradient,consentModeEnabled,crossDomainEnabled",
+          "preview": "{\"aiRatingEnabled\":false,\"allowedDomains\":[],\"buttonStyle\":\"greeting\",\"color\":\"#f5a623\",\"color2\":null,\"colorGradient\":true,\"consentModeEnabled\":false,\"crossDomainEnabled\":false,\"customBrandingEnabled\":false,\"customBrandingLink\":\"\",\"customBrandingText\":\"\",\"emailControl\":true,\"features\":{\"api\":false,\"customize\":false,\"ga\":false,\"groups\":false,\"rating\":false,\"whiteLabel\":false},\"googleAnalyticsEnabled\":false,\"googleAnalyticsManual\":false,\"googleAnalyticsMeasurementIds\":[],\"groupSelectEnabled\":false,\"headerStyle\":\"standard\",\"hideOfflineChat\":false,\"hideWidget\":false,\"host\":\"websocket-visitors.smartsupp.com\",\"internalAnalyticsEnabled\":false,\"isBlocked\":false,\"lang\":\"en\",\"mobilePopupsEnabled\":false,\"nameControl\":true,\"numberControl\":false,\"openOnTrigger\":false,\"orientation\":\"right\",\"packageName\":\"free\",\"popupTextareaEnabled\":false,\"privacyNoticeCheckRequired\":false,\"privacyNoticeEnabled\":true,\"privacyNoticeUrl\":\"\",\"ratingEnabled\":false,\"requireLogin\":false,\"translates\":{\"en\":{\"topBar.online.hello\":\"Eyeofriyadh\"}},\"urlCardsEnabled\":true,\"widgetVersion\":3,\"hasInternalApi\":false,\"config\":{},\"browserLang\":\"ar\",\"widgetTrackerUrl\":\"https://widget-tracker.smartsupp.com\",\"translationsBaseUrl\":\"https://translations.smartsuppcdn.com\",\"widgetTrackerEnabled\":false}"
+        },
+        {
+          "method": "GET",
+          "status": 200,
+          "url": "https://widget-v3.smartsuppcdn.com/manifest.json",
+          "content_type": "application/json",
+          "resource_type": "xhr",
+          "request_post_data": "",
+          "response_shape": "json-like-invalid",
+          "preview": "{ \"_WidgetMessengerInput-BBbXsG9_.js\": { \"file\": \"assets/WidgetMessengerInput-BBbXsG9_.js\", \"name\": \"WidgetMessengerInput\", \"imports\": [ \"_shared-DY-mS8kx.js\" ], \"dynamicImports\": [ \"node_modules/.pnpm/emoji-mart@5.6.0/node_modules/emoji-mart/dist/module.js\" ] }, \"_shared-DY-mS8kx.js\": { \"file\": \"assets/shared-DY-mS8kx.js\", \"name\": \"IconButton\", \"dynamicImports\": [ \"node_modules/.pnpm/@thumbmarkjs+thumbmarkjs@1.12.0/node_modules/@thumbmarkjs/thumbmarkjs/dist/thumbmark.esm.js\", \"src/translates/ar.json\", \"src/translates/az.json\", \"src/translates/bg.json\", \"src/translates/br.json\", \"src/translates/bs.json\", \"src/translates/ca.json\", \"src/translates/cn.json\", \"src/translates/cs.json\", \"src/translates/da.json\", \"src/translates/de.json\", \"src/translates/el.json\", \"src/translates/en.json\", \"src/translates/es.json\", \"src/translates/et.json\", \"src/translates/fa.json\", \"src/translates/fi.json\", \"src/translates/fil.json\", \"src/translates/fr.json\", \"src/translates/he.json\", \"src/translates/hi.json\", \"src/translates/hr.json\", \"src/translates/hu.json\", \"src/translates/is.json\", \"src/translates/it.json\", \"src/translates/ja.json\", \"src/translates/ka.json\", \"src/translates/lt.json\", \"src/translates/lv.json\", \"src/translates/mk.json\", \"src/translates/nl.json\", \"src/translates/no.json\", \"src/translates/pl.json\", \"src/translates/pt.json\", \"src/translates/ro.json\", \"src/translates/ru.json\", \"src/translates/sk.json\", \"src/translates/sl.json\", \"src/translates/sr.json\", \"src/translates/sv.json\", \"sr"
+        }
+      ]
+    },
+    {
+      "id": "eventbrite-saudi",
+      "probed_at": "2026-11-24T12:49:16.835Z",
+      "name": "Eventbrite Saudi Arabia",
+      "priority": 14,
+      "url": "https://www.eventbrite.com/d/saudi-arabia/events/",
+      "final_url": "https://www.eventbrite.com/d/saudi-arabia/events/",
+      "status": "ok",
+      "http_status": 200,
+      "navigation_error": "",
+      "duration_ms": 9842,
+      "classification": "browser-network-api",
+      "next_action": "ثبت endpoint مرشحًا كجامع مباشر، ثم اكتب extractor من JSON مع اختبار انحدار.",
+      "title": "Saudi Arabia Events, Calendar & Tickets | Eventbrite",
+      "text_bytes": 10544,
+      "html_bytes": 789901,
+      "html_snapshot": "data/raw/browser-probes/eventbrite-saudi-2026-11-24T12-48-17-350Z.html",
+      "screenshot": "data/raw/browser-probes/eventbrite-saudi-2026-11-24T12-48-17-350Z.png",
+      "signals": {
+        "has_next_data": false,
+        "has_nuxt": false,
+        "has_json_ld": true,
+        "has_event_schema": true,
+        "date_snippets": [],
+        "event_like_links": [
+          {
+            "text": "upgrade your browser",
+            "href": "https://www.eventbrite.com/support/articles/en_US/Troubleshooting/how-to-troubleshoot-internet-browser-issues"
+          },
+          {
+            "text": "Eventbrite",
+            "href": "https://www.eventbrite.com/"
+          },
+          {
+            "text": "Eventbrite",
+            "href": "https://www.eventbrite.com/"
+          },
+          {
+            "text": "Updates",
+            "href": "https://www.eventbrite.com/product-updates"
+          },
+          {
+            "text": "Find Events",
+            "href": "https://www.eventbrite.com/d/local/events/"
+          },
+          {
+            "text": "Create Events",
+            "href": "https://www.eventbrite.com/organizer/overview/"
+          },
+          {
+            "text": "Help Center",
+            "href": "https://www.eventbrite.com/help/en-us/"
+          },
+          {
+            "text": "Find your tickets",
+            "href": "https://www.eventbrite.com/help/en-us/articles/319355/where-are-my-tickets/"
+          },
+          {
+            "text": "Contact your event organizer",
+            "href": "https://www.eventbrite.com/help/en-us/articles/647151/how-to-contact-the-event-organizer/"
+          },
+          {
+            "text": "Find my tickets",
+            "href": "https://www.eventbrite.com/signin/signup/?referrer=%2Fmytickets"
+          },
+          {
+            "text": "Sign In",
+            "href": "https://www.eventbrite.com/signin/?referrer=%2Fd%2Fsaudi-arabia%2Fevents%2F"
+          },
+          {
+            "text": "Updates",
+            "href": "https://www.eventbrite.com/product-updates"
+          },
+          {
+            "text": "Find Events",
+            "href": "https://www.eventbrite.com/d/local/events/"
+          },
+          {
+            "text": "Create Events",
+            "href": "https://www.eventbrite.com/organizer/overview/"
+          },
+          {
+            "text": "Find my tickets",
+            "href": "https://www.eventbrite.com/signin/signup/?referrer=%2Fmytickets"
+          },
+          {
+            "text": "Sign In",
+            "href": "https://www.eventbrite.com/signin/?referrer=%2Fd%2Fsaudi-arabia%2Fevents%2F"
+          },
+          {
+            "text": "Updates",
+            "href": "https://www.eventbrite.com/product-updates"
+          },
+          {
+            "text": "Find Events",
+            "href": "https://www.eventbrite.com/d/local/events/"
+          },
+          {
+            "text": "Create Events",
+            "href": "https://www.eventbrite.com/organizer/overview/"
+          },
+          {
+            "text": "Help Center",
+            "href": "https://www.eventbrite.com/help/en-us/"
+          }
+        ]
+      },
+      "script_signals": {
+        "next_data_scripts": 0,
+        "nuxt_scripts": 0,
+        "json_ld_scripts": 1,
+        "large_inline_scripts": 3
+      },
+      "network_total": 14,
+      "network_endpoints": [
+        {
+          "method": "GET",
+          "status": 200,
+          "url": "https://cdntranscend.eventbrite.com/cm/f2747157-cf59-4ef1-8703-018defe51764/translations/en.json",
+          "content_type": "application/json",
+          "resource_type": "fetch",
+          "request_post_data": "",
+          "response_shape": "json-like-invalid",
+          "preview": "{\"purpose.trackingType.Advertising.description\":\"Helps us and others serve ads relevant to you.\",\"purpose.trackingType.Analytics.description\":\"Help us learn how our site is used and how it performs.\",\"purpose.trackingType.Essential.description\":\"No Consent Needed\",\"purpose.trackingType.Functional.description\":\"Personalization, autofilled forms, etc.\",\"purpose.trackingType.SaleOfInfo.description\":\"Targeted Advertising\",\"ui.src.bottomMenu.backButtonText\":\"Go back\",\"ui.src.bottomMenu.backButtonTooltip\":\"Go back\",\"ui.src.bottomMenu.moreChoicesButtonLabel\":\"Click to show more choices\",\"ui.src.bottomMenu.moreChoicesButtonPrimary\":\"More choices\",\"ui.src.bottomMenu.showPolicyButtonAcceptAll\":\"See our privacy policy\",\"ui.src.bottomMenu.showPolicyButtonAcceptAllOrMoreChoices\":\"See our privacy policy\",\"ui.src.bottomMenu.showPolicyButtonAcceptAllRejectAllToggle\":\"See our privacy policy\",\"ui.src.bottomMenu.showPolicyButtonAcceptOrRejectAdvertising\":\"See our privacy policy\",\"ui.src.bottomMenu.showPolicyButtonAcceptOrRejectAll\":\"See our privacy policy\",\"ui.src.bottomMenu.showPolicyButtonAcceptOrRejectAllOrMoreChoices\":\"See our privacy policy\",\"ui.src.bottomMenu.showPolicyButtonAcceptOrRejectAnalytics\":\"See our privacy policy\",\"ui.src.bottomMenu.showPolicyButtonCompleteOptions\":\"See our privacy policy\",\"ui.src.bottomMenu.showPolicyButtonCompleteOptionsInverted\":\"See our privacy policy\",\"ui.src.bottomMenu.showPolicyButtonCompleteOptionsToggles\":\"See our privacy policy\",\"ui.src.bottomMenu.showPolicyButtonDoNotSellDisclosure\":\"See our privacy policy\",\"ui.src.bottomMenu.showPolicyButtonDoNotSellExplainer\":\"See our privacy policy\",\"ui.src.bottomMenu.showPolicyButtonLabel\":\"Visit our privacy policy\",\"ui.src.bottomMenu.showPolicyButtonLanguageOptions\":\"See our privacy policy\",\"ui.src.bottomMe"
+        },
+        {
+          "method": "GET",
+          "status": 200,
+          "url": "https://www.eventbrite.com/api/v3/system/rokt/",
+          "content_type": "application/json",
+          "resource_type": "fetch",
+          "request_post_data": "",
+          "response_shape": "json-object:api_key,jurisdiction",
+          "preview": "{\"api_key\":\"us2-56fd0de921078242b73ab7734aa778d2\",\"jurisdiction\":\"ROW\"}"
+        },
+        {
+          "method": "GET",
+          "status": 200,
+          "url": "https://www.eventbrite.com/api/v3/geo/place_from_request/",
+          "content_type": "application/json",
+          "resource_type": "fetch",
+          "request_post_data": "",
+          "response_shape": "json-object:place",
+          "preview": "{\"place\":{\"latitude\":45.8401,\"longitude\":-119.705,\"slug\":\"or--boardman\",\"place_type\":\"locality\",\"place_id\":\"101716093\",\"current_place\":\"Boardman\",\"current_place_parent\":\"OR\",\"country\":\"United States\"}}"
+        },
+        {
+          "method": "POST",
+          "status": 200,
+          "url": "https://www.eventbrite.com/api/v3/destination/city-browse/",
+          "content_type": "application/json",
+          "resource_type": "fetch",
+          "request_post_data": "{\"place_id\":\"85632253\",\"online_events_only\":false,\"buckets_to_exclude\":[\"user_saved_events\",\"based_on_user_saved_events\",\"personalized_events\",\"from_attended_event\",\"discounted_events\",\"city_collections\",\"neighbourhood_events\",\"followed_profiles\",\"nightlife_events\",\"best_of_city_events\",\"popular_events\",\"online_events\",\"this_weekend\",\"trending_topic_events\",\"category_search\",\"free_events\",\"nearby_city_events\",\"popular_profiles\",\"other_categories\"],\"expand.destination_event\":[\"event_sales_status\",\"image\",\"primary_venue\",\"saves\",\"series\",\"ticket_availability\",\"primary_organizer\"]}",
+          "response_shape": "json-object:buckets,description,search_id,place,city,excluded_buckets,more_buckets,branding",
+          "preview": "{\"buckets\":[],\"description\":null,\"search_id\":\"40795b6d-7b47-45fa-9895-db237de18236\",\"place\":{\"_type\":\"place\",\"id\":\"85632253\",\"name\":\"Saudi Arabia\",\"subtitle\":\"Asia\",\"place_type\":\"country\",\"parent_id\":\"102191569\"},\"city\":null,\"excluded_buckets\":[\"user_saved_events\",\"based_on_user_saved_events\",\"personalized_events\",\"from_attended_event\",\"discounted_events\",\"city_collections\",\"neighbourhood_events\",\"followed_profiles\",\"nightlife_events\",\"best_of_city_events\",\"popular_events\",\"online_events\",\"this_weekend\",\"trending_topic_events\",\"category_search\",\"free_events\",\"nearby_city_events\",\"popular_profiles\",\"other_categories\",\"neighbourhood_events\"],\"more_buckets\":false,\"branding\":{}}"
+        },
+        {
+          "method": "POST",
+          "status": 200,
+          "url": "https://www.eventbrite.com/orion/v3/identity/settings",
+          "content_type": "application/json",
+          "resource_type": "fetch",
+          "request_post_data": "{\"local_storage_id\":\"805e02a6-aced-4cdd-a40c-3acce26ebdbd\",\"stable_id\":\"31f84adc-3107-4504-bcd5-d85bf8da6ae0\",\"is_logged_in\":false,\"hostname\":\"www.eventbrite.com\",\"eb_domain_tld\":\".com\",\"bsp_id\":\"eventbrite_web\"}",
+          "response_shape": "json-like-invalid",
+          "preview": "{\"settings\":{\"orion_setup_enabled\":false,\"enable_promote_step_in_event_creation_flow\":true,\"checkout_improvements_segment\":\"control\",\"enable_increase_impressions_on_related_events\":true,\"enable_default_campaign_goal_experiment\":false,\"checkout_performance_improvements_enabled\":false,\"enable_order_confirmation_mobile_improvements\":true,\"enable_promote_event_share_modal_cta\":true,\"enable_promote_entrypoint_out_of_dropdown\":false,\"checkout_trustpilot_popup_enabled\":false,\"enable_sentiment_survey\":true,\"test_organization_segmentation\":\"Control\",\"enable_in_product_announcements\":true,\"available_plans_organizer_subscription\":[{\"plan_price_ids\":[\"price_1PqTQq2jnhhJ9Oi8pLW63RHB\",\"price_1PqTQq2jnhhJ9Oi8xW8YvZ6v\",\"price_1PqTQq2jnhhJ9Oi8HCgCiqIr\",\"price_1PqTQq2jnhhJ9Oi8Ea5uG4UL\",\"price_1PqTQp2jnhhJ9Oi8PR3ErF1E\",\"price_1PqTQq2jnhhJ9Oi864hsNdvu\",\"price_1PqTQp2jnhhJ9Oi8wnjLkH62\",\"price_1PqTQp2jnhhJ9Oi85i2Qb4lP\",\"price_1PqTQp2jnhhJ9Oi8bKP3CXJv\",\"price_1PqTQp2jnhhJ9Oi82pQv7ieQ\",\"price_1PqTQp2jnhhJ9Oi89OjjPwtD\",\"price_1PqTQp2jnhhJ9Oi8BlcGuVQQ\",\"price_1PpdPu2jnhhJ9Oi8rLizKQGS\",\"price_1PpdSN2jnhhJ9Oi80ewTbbf3\",\"price_1PpdRP2jnhhJ9Oi8s0pOyrIv\",\"price_1PpdQl2jnhhJ9Oi8LM8J7ImJ\",\"price_1PpdSi2jnhhJ9Oi8OV5hWukp\",\"price_1PpdRx2jnhhJ9Oi8mUiVv5Wn\",\"price_1PpdTI2jnhhJ9Oi8NR6pDP0H\",\"price_1PpdVy2jnhhJ9Oi8vXbXzbo7\",\"price_1PpdUn2jnhhJ9Oi8TgbCn8xj\",\"price_1PpdUQ2jnhhJ9Oi8Z5WQeHAB\",\"price_1PpdTd2jnhhJ9Oi8TIBDN04b\",\"price_1PpdVA2jnhhJ9Oi8OlLto3Mg\"]},{\"plan_price_ids\":[\"price_1PqTRB2jnhhJ9Oi8LOikkJb6\",\"price_1PqTRB2jnhhJ9Oi8YDOGnA4U\",\"price_1PqTRB2jnhhJ9Oi8aSk0YULk\",\"price_1PqTRB2jnhhJ9Oi8IDu4fmK9\",\"price_1PqTRB2jnhhJ9Oi8bNIIm3lS\",\"price_1PqTRB2jnhhJ9Oi8G2dZZIYT\",\"price_1PqTRB2jnhhJ9Oi8xkiPM8bW\",\"price_1PqTRB2jnhhJ9Oi8eTKm56Gv\",\"price_1PqTRB2jnhhJ9Oi84kqiIqdd\",\"price_1PqTRB2jnhhJ9Oi8XHwhCc8M\",\"price_1Pq"
+        },
+        {
+          "method": "POST",
+          "status": 200,
+          "url": "https://eventbrite.pxf.io/xur/21676",
+          "content_type": "application/json",
+          "resource_type": "xhr",
+          "request_post_data": "missingIdentifyInfo=true&_ir=U48%7C%7C1795524549851%7C80d9e068",
+          "response_shape": "json-object:tps,fpc",
+          "preview": "{\"tps\":[{\"u\":\"https://www.ojrq.net/p/?return=&cid=21676&tpsync=no&auth=\"}],\"fpc\":\"71525ed4-e805-11f1-83eb-69806af4b4e2\"}"
+        },
+        {
+          "method": "GET",
+          "status": 200,
+          "url": "https://ct.pinterest.com/user/?event=pagevisit&ed=%7B%22np%22%3A%22gtm%22%2C%22gtm_version%22%3A%22legacy%22%7D&tid=2613548787240&cb=1795524549976&dep=5%2CEVENT_TAGS_ABSENT",
+          "content_type": "application/json",
+          "resource_type": "xhr",
+          "request_post_data": "",
+          "response_shape": "json-object:aemEnabled,aemFnLnEnabled,aemPhEnabled,aemGeEnabled,aemDbEnabled,aemLocEnabled,aemExternalIdEnabled,aemProductMetadataEnabled",
+          "preview": "{\"aemEnabled\":true,\"aemFnLnEnabled\":true,\"aemPhEnabled\":true,\"aemGeEnabled\":true,\"aemDbEnabled\":true,\"aemLocEnabled\":true,\"aemExternalIdEnabled\":false,\"aemProductMetadataEnabled\":true,\"aemCookieScrapingEnabled\":false,\"ctEpikIframeEnabled\":true,\"chromeNewUserAgentEnabled\":true,\"isEu\":false,\"isUtilizingAdvertiser1pEnabled\":true,\"aemStorageEnabled\":true,\"isRestrictedRegion\":false,\"gaClientIdEnabled\":false,\"mdFrequency\":0.0,\"piaaEndPoint\":\"\",\"noCodeCapiDomains\":[]}"
+        },
+        {
+          "method": "GET",
+          "status": 200,
+          "url": "https://cta-service-cms2.hubspot.com/web-interactives/public/v1/embed/combinedConfigs?portalId=8020908&currentUrl=https%3A%2F%2Fwww.eventbrite.com%2Fd%2Fsaudi-arabia%2Fevents%2F",
+          "content_type": "application/json",
+          "resource_type": "fetch",
+          "request_post_data": "",
+          "response_shape": "json-object:sortedAudienceConfigs,requestedConfigs,gates",
+          "preview": "{\"sortedAudienceConfigs\":[],\"requestedConfigs\":[],\"gates\":[]}"
+        },
+        {
+          "method": "POST",
+          "status": 200,
+          "url": "https://www.eventbrite.com/api/v3/promoted/events",
+          "content_type": "application/json",
+          "resource_type": "fetch",
+          "request_post_data": "{\"slots\":2,\"interface\":\"city_browse\",\"sub_interface\":\"online_events\",\"page\":1,\"search\":{\"dates\":[\"current_future\"],\"place\":{\"is_online\":true,\"place_id\":null},\"organizers_i_follow\":false,\"client_timezone\":\"UTC\"},\"app\":\"web\",\"personalized_options\":{\"recent_searches\":[],\"recent_views\":[]}}",
+          "response_shape": "json-array:0",
+          "preview": "[]"
+        },
+        {
+          "method": "POST",
+          "status": 200,
+          "url": "https://sl-11a463aaedf44600a99367660fd6fa70.ecs.us-east-1.on.aws/events?cee=no",
+          "content_type": "application/json",
+          "resource_type": "fetch",
+          "request_post_data": "{\"event_name\":\"PageView\",\"event_id\":\"ob3_plugin-set_9274b84e965ea68d200659833030a28ef9a3648b186f6f6c04b8d93915ce76e5\",\"fb.pixel_id\":\"860573327346891\",\"fb.website_variable_advanced_matching\":{\"em\":[{\"v\":\"42ab12525f1dd4133e36301f0f825f11424ddf46276adc620a280f4151ccbf43\",\"s\":1},{\"v\":\"8130d077b11e28abfeecdb214de7d4672e8a43fa5521976401d379d79d5409e1\",\"s\":1},{\"v\":\"6aba5dc68349c0c73f9bb3e2d98d292b8b9477e7f22ecf4b0d8d2d447536be9e\",\"s\":1}],\"ph\":[{\"v\":\"14274110e916910482faf724a633bcffd1ea386a1bbfd49b10ffbc63689203e4\",\"s\":1}]},\"website_context\":{\"location\":\"https://www.eventbrite.com/d/saudi-arabia/events/\",\"referrer\":\"\",\"isInIFrame\":false},\"fb.fbp\":\"fb.1.1795524550024.92565469219806579\",\"event_meta_info\":{\"cs_est\":true}}",
+          "response_shape": "empty",
+          "preview": ""
+        },
+        {
+          "method": "GET",
+          "status": 200,
+          "url": "https://js.zi-scripts.com/unified/v1/master/getSubscriptions",
+          "content_type": "application/json",
+          "resource_type": "fetch",
+          "request_post_data": "",
+          "response_shape": "json-object:err,subscriptions,_zitok,_vtok,evi,productUrls,fcForms,domainId",
+          "preview": "{\"err\":false,\"subscriptions\":{\"ws\":{\"websiteId\":\"68b22ad41e0310fd11290cab\"}},\"_zitok\":\"520ac2f7a0e3d900eba41795524550\",\"_vtok\":\"My40Mi4xNTcuMTQz\",\"evi\":false,\"productUrls\":{\"sch\":\"https://schedule.zoominfo.com/zischedule.js\",\"fc\":\"https://ws-assets.zoominfo.com/formcomplete.js\",\"ws\":\"https://ws.zoominfo.com/pixel/\"},\"fcForms\":[],\"domainId\":\"2bdf7b65-722e-4f15-bb9d-64db441e95d9\",\"sessionId\":\"17ff28223a4b546f0760495ad5e879d40e43e12473a3deab261245469959d820\",\"eventId\":\"f052ef92-0402-4c90-95be-f7fc9a5da67e\"}"
+        },
+        {
+          "method": "POST",
+          "status": 200,
+          "url": "https://www.eventbrite.com/switchyard/cc055925-3f98-4caf-b0cf-8bfe1efe9eed",
+          "content_type": "application/json",
+          "resource_type": "fetch",
+          "request_post_data": "{\"events\":[{\"event_id\":\"2dbf0bb4-f14c-4566-90a0-d212c52cfa7d\",\"event_name\":\"ping_web\",\"payload\":{\"ping_type\":\"tab_created\"},\"identifiers\":{\"local_storage_id\":\"5e46c741-8fc1-4b4a-b663-a6c2e8f9da1b\",\"session_storage_id\":\"38633b1d-5f63-4d9b-b8e8-91f3211a778a\",\"cookie_storage_id\":\"3ab964b6-0330-47b7-9819-2d7c355e0681\",\"public_eb_user_id\":null,\"public_eb_organization_id\":null,\"eb_organization_created_at\":null,\"stable_id\":\"31f84adc-3107-4504-bcd5-d85bf8da6ae0\"},\"context\":{\"device_browser\":\"Chrome\",\"device_os\":\"Mac OS\",\"device_os_version\":\"10.15.7\",\"device_type\":\"desktop\",\"language\":\"en-US\",\"locale\":\"en-US\",\"session_id\":\"e348e186-df11-478c-a12a-a2878019ebfd\",\"sdk_version\":\"web@0.8.0\",\"timezone_daylight_saving\":false,\"timezone_name\":\"UTC\",\"timezone_seconds\":0,\"user_agent\":\"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36\",\"app_name\":\"eb-ui\",\"environment\":\"production\",\"is_bot\":false,\"eb_bsp_sdk_version\":\"0.14.0\",\"landing_url\":\"https://www.eventbrite.com/d/saudi-arabia/events/\",\"landing_path\":\"/d/saudi-arabia/events/\",\"landing_page_info\":{},\"persistent\":{}},\"event_timestamp\":\"2026-11-24T12:49:09.717Z\"},{\"event_id\":\"482c0a04",
+          "response_shape": "json-object:delta,last_event_timestamp",
+          "preview": "{\"delta\":0,\"last_event_timestamp\":\"2026-11-24T12:49:09.899000Z\"}"
+        }
+      ],
+      "network_sample": [
+        {
+          "method": "GET",
+          "status": 200,
+          "url": "https://cdntranscend.eventbrite.com/cm/f2747157-cf59-4ef1-8703-018defe51764/translations/en.json",
+          "content_type": "application/json",
+          "resource_type": "fetch",
+          "request_post_data": "",
+          "response_shape": "json-like-invalid",
+          "preview": "{\"purpose.trackingType.Advertising.description\":\"Helps us and others serve ads relevant to you.\",\"purpose.trackingType.Analytics.description\":\"Help us learn how our site is used and how it performs.\",\"purpose.trackingType.Essential.description\":\"No Consent Needed\",\"purpose.trackingType.Functional.description\":\"Personalization, autofilled forms, etc.\",\"purpose.trackingType.SaleOfInfo.description\":\"Targeted Advertising\",\"ui.src.bottomMenu.backButtonText\":\"Go back\",\"ui.src.bottomMenu.backButtonTooltip\":\"Go back\",\"ui.src.bottomMenu.moreChoicesButtonLabel\":\"Click to show more choices\",\"ui.src.bottomMenu.moreChoicesButtonPrimary\":\"More choices\",\"ui.src.bottomMenu.showPolicyButtonAcceptAll\":\"See our privacy policy\",\"ui.src.bottomMenu.showPolicyButtonAcceptAllOrMoreChoices\":\"See our privacy policy\",\"ui.src.bottomMenu.showPolicyButtonAcceptAllRejectAllToggle\":\"See our privacy policy\",\"ui.src.bottomMenu.showPolicyButtonAcceptOrRejectAdvertising\":\"See our privacy policy\",\"ui.src.bottomMenu.showPolicyButtonAcceptOrRejectAll\":\"See our privacy policy\",\"ui.src.bottomMenu.showPolicyButtonAcceptOrRejectAllOrMoreChoices\":\"See our privacy policy\",\"ui.src.bottomMenu.showPolicyButtonAcceptOrRejectAnalytics\":\"See our privacy policy\",\"ui.src.bottomMenu.showPolicyButtonCompleteOptions\":\"See our privacy policy\",\"ui.src.bottomMenu.showPolicyButtonCompleteOptionsInverted\":\"See our privacy policy\",\"ui.src.bottomMenu.showPolicyButtonCompleteOptionsToggles\":\"See our privacy policy\",\"ui.src.bottomMenu.showPolicyButtonDoNotSellDisclosure\":\"See our privacy policy\",\"ui.src.bottomMenu.showPolicyButtonDoNotSellExplainer\":\"See our privacy policy\",\"ui.src.bottomMenu.showPolicyButtonLabel\":\"Visit our privacy policy\",\"ui.src.bottomMenu.showPolicyButtonLanguageOptions\":\"See our privacy policy\",\"ui.src.bottomMe"
+        },
+        {
+          "method": "GET",
+          "status": 200,
+          "url": "https://www.eventbrite.com/api/v3/system/rokt/",
+          "content_type": "application/json",
+          "resource_type": "fetch",
+          "request_post_data": "",
+          "response_shape": "json-object:api_key,jurisdiction",
+          "preview": "{\"api_key\":\"us2-56fd0de921078242b73ab7734aa778d2\",\"jurisdiction\":\"ROW\"}"
+        },
+        {
+          "method": "GET",
+          "status": 200,
+          "url": "https://www.eventbrite.com/api/v3/geo/place_from_request/",
+          "content_type": "application/json",
+          "resource_type": "fetch",
+          "request_post_data": "",
+          "response_shape": "json-object:place",
+          "preview": "{\"place\":{\"latitude\":45.8401,\"longitude\":-119.705,\"slug\":\"or--boardman\",\"place_type\":\"locality\",\"place_id\":\"101716093\",\"current_place\":\"Boardman\",\"current_place_parent\":\"OR\",\"country\":\"United States\"}}"
+        },
+        {
+          "method": "POST",
+          "status": 200,
+          "url": "https://www.eventbrite.com/api/v3/destination/city-browse/",
+          "content_type": "application/json",
+          "resource_type": "fetch",
+          "request_post_data": "{\"place_id\":\"85632253\",\"online_events_only\":false,\"buckets_to_exclude\":[\"user_saved_events\",\"based_on_user_saved_events\",\"personalized_events\",\"from_attended_event\",\"discounted_events\",\"city_collections\",\"neighbourhood_events\",\"followed_profiles\",\"nightlife_events\",\"best_of_city_events\",\"popular_events\",\"online_events\",\"this_weekend\",\"trending_topic_events\",\"category_search\",\"free_events\",\"nearby_city_events\",\"popular_profiles\",\"other_categories\"],\"expand.destination_event\":[\"event_sales_status\",\"image\",\"primary_venue\",\"saves\",\"series\",\"ticket_availability\",\"primary_organizer\"]}",
+          "response_shape": "json-object:buckets,description,search_id,place,city,excluded_buckets,more_buckets,branding",
+          "preview": "{\"buckets\":[],\"description\":null,\"search_id\":\"40795b6d-7b47-45fa-9895-db237de18236\",\"place\":{\"_type\":\"place\",\"id\":\"85632253\",\"name\":\"Saudi Arabia\",\"subtitle\":\"Asia\",\"place_type\":\"country\",\"parent_id\":\"102191569\"},\"city\":null,\"excluded_buckets\":[\"user_saved_events\",\"based_on_user_saved_events\",\"personalized_events\",\"from_attended_event\",\"discounted_events\",\"city_collections\",\"neighbourhood_events\",\"followed_profiles\",\"nightlife_events\",\"best_of_city_events\",\"popular_events\",\"online_events\",\"this_weekend\",\"trending_topic_events\",\"category_search\",\"free_events\",\"nearby_city_events\",\"popular_profiles\",\"other_categories\",\"neighbourhood_events\"],\"more_buckets\":false,\"branding\":{}}"
+        },
+        {
+          "method": "POST",
+          "status": 200,
+          "url": "https://www.eventbrite.com/orion/v3/identity/settings",
+          "content_type": "application/json",
+          "resource_type": "fetch",
+          "request_post_data": "{\"local_storage_id\":\"805e02a6-aced-4cdd-a40c-3acce26ebdbd\",\"stable_id\":\"31f84adc-3107-4504-bcd5-d85bf8da6ae0\",\"is_logged_in\":false,\"hostname\":\"www.eventbrite.com\",\"eb_domain_tld\":\".com\",\"bsp_id\":\"eventbrite_web\"}",
+          "response_shape": "json-like-invalid",
+          "preview": "{\"settings\":{\"orion_setup_enabled\":false,\"enable_promote_step_in_event_creation_flow\":true,\"checkout_improvements_segment\":\"control\",\"enable_increase_impressions_on_related_events\":true,\"enable_default_campaign_goal_experiment\":false,\"checkout_performance_improvements_enabled\":false,\"enable_order_confirmation_mobile_improvements\":true,\"enable_promote_event_share_modal_cta\":true,\"enable_promote_entrypoint_out_of_dropdown\":false,\"checkout_trustpilot_popup_enabled\":false,\"enable_sentiment_survey\":true,\"test_organization_segmentation\":\"Control\",\"enable_in_product_announcements\":true,\"available_plans_organizer_subscription\":[{\"plan_price_ids\":[\"price_1PqTQq2jnhhJ9Oi8pLW63RHB\",\"price_1PqTQq2jnhhJ9Oi8xW8YvZ6v\",\"price_1PqTQq2jnhhJ9Oi8HCgCiqIr\",\"price_1PqTQq2jnhhJ9Oi8Ea5uG4UL\",\"price_1PqTQp2jnhhJ9Oi8PR3ErF1E\",\"price_1PqTQq2jnhhJ9Oi864hsNdvu\",\"price_1PqTQp2jnhhJ9Oi8wnjLkH62\",\"price_1PqTQp2jnhhJ9Oi85i2Qb4lP\",\"price_1PqTQp2jnhhJ9Oi8bKP3CXJv\",\"price_1PqTQp2jnhhJ9Oi82pQv7ieQ\",\"price_1PqTQp2jnhhJ9Oi89OjjPwtD\",\"price_1PqTQp2jnhhJ9Oi8BlcGuVQQ\",\"price_1PpdPu2jnhhJ9Oi8rLizKQGS\",\"price_1PpdSN2jnhhJ9Oi80ewTbbf3\",\"price_1PpdRP2jnhhJ9Oi8s0pOyrIv\",\"price_1PpdQl2jnhhJ9Oi8LM8J7ImJ\",\"price_1PpdSi2jnhhJ9Oi8OV5hWukp\",\"price_1PpdRx2jnhhJ9Oi8mUiVv5Wn\",\"price_1PpdTI2jnhhJ9Oi8NR6pDP0H\",\"price_1PpdVy2jnhhJ9Oi8vXbXzbo7\",\"price_1PpdUn2jnhhJ9Oi8TgbCn8xj\",\"price_1PpdUQ2jnhhJ9Oi8Z5WQeHAB\",\"price_1PpdTd2jnhhJ9Oi8TIBDN04b\",\"price_1PpdVA2jnhhJ9Oi8OlLto3Mg\"]},{\"plan_price_ids\":[\"price_1PqTRB2jnhhJ9Oi8LOikkJb6\",\"price_1PqTRB2jnhhJ9Oi8YDOGnA4U\",\"price_1PqTRB2jnhhJ9Oi8aSk0YULk\",\"price_1PqTRB2jnhhJ9Oi8IDu4fmK9\",\"price_1PqTRB2jnhhJ9Oi8bNIIm3lS\",\"price_1PqTRB2jnhhJ9Oi8G2dZZIYT\",\"price_1PqTRB2jnhhJ9Oi8xkiPM8bW\",\"price_1PqTRB2jnhhJ9Oi8eTKm56Gv\",\"price_1PqTRB2jnhhJ9Oi84kqiIqdd\",\"price_1PqTRB2jnhhJ9Oi8XHwhCc8M\",\"price_1Pq"
+        },
+        {
+          "method": "POST",
+          "status": 200,
+          "url": "https://eventbrite.pxf.io/xur/21676",
+          "content_type": "application/json",
+          "resource_type": "xhr",
+          "request_post_data": "missingIdentifyInfo=true&_ir=U48%7C%7C1795524549851%7C80d9e068",
+          "response_shape": "json-object:tps,fpc",
+          "preview": "{\"tps\":[{\"u\":\"https://www.ojrq.net/p/?return=&cid=21676&tpsync=no&auth=\"}],\"fpc\":\"71525ed4-e805-11f1-83eb-69806af4b4e2\"}"
+        },
+        {
+          "method": "GET",
+          "status": 200,
+          "url": "https://ct.pinterest.com/user/?event=pagevisit&ed=%7B%22np%22%3A%22gtm%22%2C%22gtm_version%22%3A%22legacy%22%7D&tid=2613548787240&cb=1795524549976&dep=5%2CEVENT_TAGS_ABSENT",
+          "content_type": "application/json",
+          "resource_type": "xhr",
+          "request_post_data": "",
+          "response_shape": "json-object:aemEnabled,aemFnLnEnabled,aemPhEnabled,aemGeEnabled,aemDbEnabled,aemLocEnabled,aemExternalIdEnabled,aemProductMetadataEnabled",
+          "preview": "{\"aemEnabled\":true,\"aemFnLnEnabled\":true,\"aemPhEnabled\":true,\"aemGeEnabled\":true,\"aemDbEnabled\":true,\"aemLocEnabled\":true,\"aemExternalIdEnabled\":false,\"aemProductMetadataEnabled\":true,\"aemCookieScrapingEnabled\":false,\"ctEpikIframeEnabled\":true,\"chromeNewUserAgentEnabled\":true,\"isEu\":false,\"isUtilizingAdvertiser1pEnabled\":true,\"aemStorageEnabled\":true,\"isRestrictedRegion\":false,\"gaClientIdEnabled\":false,\"mdFrequency\":0.0,\"piaaEndPoint\":\"\",\"noCodeCapiDomains\":[]}"
+        },
+        {
+          "method": "GET",
+          "status": 200,
+          "url": "https://cta-service-cms2.hubspot.com/web-interactives/public/v1/embed/combinedConfigs?portalId=8020908&currentUrl=https%3A%2F%2Fwww.eventbrite.com%2Fd%2Fsaudi-arabia%2Fevents%2F",
+          "content_type": "application/json",
+          "resource_type": "fetch",
+          "request_post_data": "",
+          "response_shape": "json-object:sortedAudienceConfigs,requestedConfigs,gates",
+          "preview": "{\"sortedAudienceConfigs\":[],\"requestedConfigs\":[],\"gates\":[]}"
+        },
+        {
+          "method": "POST",
+          "status": 200,
+          "url": "https://www.eventbrite.com/api/v3/promoted/events",
+          "content_type": "application/json",
+          "resource_type": "fetch",
+          "request_post_data": "{\"slots\":2,\"interface\":\"city_browse\",\"sub_interface\":\"online_events\",\"page\":1,\"search\":{\"dates\":[\"current_future\"],\"place\":{\"is_online\":true,\"place_id\":null},\"organizers_i_follow\":false,\"client_timezone\":\"UTC\"},\"app\":\"web\",\"personalized_options\":{\"recent_searches\":[],\"recent_views\":[]}}",
+          "response_shape": "json-array:0",
+          "preview": "[]"
+        },
+        {
+          "method": "GET",
+          "status": 200,
+          "url": "https://ct.pinterest.com/user/?tid=2613548787240&pd=%7B%22np%22%3A%22gtm%22%2C%22gtm_version%22%3A%22legacy%22%7D&cb=1795524549975&dep=2%2CPAGE_LOAD",
+          "content_type": "application/json",
+          "resource_type": "xhr",
+          "request_post_data": "",
+          "response_shape": "json-object:aemEnabled,aemFnLnEnabled,aemPhEnabled,aemGeEnabled,aemDbEnabled,aemLocEnabled,aemExternalIdEnabled,aemProductMetadataEnabled",
+          "preview": "{\"aemEnabled\":true,\"aemFnLnEnabled\":true,\"aemPhEnabled\":true,\"aemGeEnabled\":true,\"aemDbEnabled\":true,\"aemLocEnabled\":true,\"aemExternalIdEnabled\":false,\"aemProductMetadataEnabled\":true,\"aemCookieScrapingEnabled\":false,\"ctEpikIframeEnabled\":true,\"chromeNewUserAgentEnabled\":true,\"isEu\":false,\"isUtilizingAdvertiser1pEnabled\":true,\"aemStorageEnabled\":true,\"isRestrictedRegion\":false,\"gaClientIdEnabled\":false,\"mdFrequency\":0.0,\"piaaEndPoint\":\"\",\"noCodeCapiDomains\":[]}"
+        },
+        {
+          "method": "POST",
+          "status": 200,
+          "url": "https://apps.rokt-api.com/identity/v1/identify",
+          "content_type": "application/json",
+          "resource_type": "fetch",
+          "request_post_data": "{\"client_sdk\":{\"platform\":\"web\",\"sdk_vendor\":\"mparticle\",\"sdk_version\":\"3.39.0\"},\"context\":null,\"environment\":\"production\",\"request_id\":\"fb015471-f868-4bec-b632-5c7d830a9f6f\",\"request_timestamp_ms\":1795524549935,\"previous_mpid\":null,\"known_identities\":{\"device_application_stamp\":\"dc8b6122-24a0-4263-1a92-bfc4fe22cba9\"}}",
+          "response_shape": "json-object:context,matched_identities,is_ephemeral,mpid,is_logged_in",
+          "preview": "{\"context\":null,\"matched_identities\":{\"device_application_stamp\":\"dc8b6122-24a0-4263-1a92-bfc4fe22cba9\"},\"is_ephemeral\":true,\"mpid\":\"4087583816343880177\",\"is_logged_in\":false}"
+        },
+        {
+          "method": "POST",
+          "status": 200,
+          "url": "https://sl-11a463aaedf44600a99367660fd6fa70.ecs.us-east-1.on.aws/events?cee=no",
+          "content_type": "application/json",
+          "resource_type": "fetch",
+          "request_post_data": "{\"event_name\":\"PageView\",\"event_id\":\"ob3_plugin-set_9274b84e965ea68d200659833030a28ef9a3648b186f6f6c04b8d93915ce76e5\",\"fb.pixel_id\":\"860573327346891\",\"fb.website_variable_advanced_matching\":{\"em\":[{\"v\":\"42ab12525f1dd4133e36301f0f825f11424ddf46276adc620a280f4151ccbf43\",\"s\":1},{\"v\":\"8130d077b11e28abfeecdb214de7d4672e8a43fa5521976401d379d79d5409e1\",\"s\":1},{\"v\":\"6aba5dc68349c0c73f9bb3e2d98d292b8b9477e7f22ecf4b0d8d2d447536be9e\",\"s\":1}],\"ph\":[{\"v\":\"14274110e916910482faf724a633bcffd1ea386a1bbfd49b10ffbc63689203e4\",\"s\":1}]},\"website_context\":{\"location\":\"https://www.eventbrite.com/d/saudi-arabia/events/\",\"referrer\":\"\",\"isInIFrame\":false},\"fb.fbp\":\"fb.1.1795524550024.92565469219806579\",\"event_meta_info\":{\"cs_est\":true}}",
+          "response_shape": "empty",
+          "preview": ""
+        },
+        {
+          "method": "GET",
+          "status": 200,
+          "url": "https://js.zi-scripts.com/unified/v1/master/getSubscriptions",
+          "content_type": "application/json",
+          "resource_type": "fetch",
+          "request_post_data": "",
+          "response_shape": "json-object:err,subscriptions,_zitok,_vtok,evi,productUrls,fcForms,domainId",
+          "preview": "{\"err\":false,\"subscriptions\":{\"ws\":{\"websiteId\":\"68b22ad41e0310fd11290cab\"}},\"_zitok\":\"520ac2f7a0e3d900eba41795524550\",\"_vtok\":\"My40Mi4xNTcuMTQz\",\"evi\":false,\"productUrls\":{\"sch\":\"https://schedule.zoominfo.com/zischedule.js\",\"fc\":\"https://ws-assets.zoominfo.com/formcomplete.js\",\"ws\":\"https://ws.zoominfo.com/pixel/\"},\"fcForms\":[],\"domainId\":\"2bdf7b65-722e-4f15-bb9d-64db441e95d9\",\"sessionId\":\"17ff28223a4b546f0760495ad5e879d40e43e12473a3deab261245469959d820\",\"eventId\":\"f052ef92-0402-4c90-95be-f7fc9a5da67e\"}"
+        },
+        {
+          "method": "POST",
+          "status": 200,
+          "url": "https://www.eventbrite.com/switchyard/cc055925-3f98-4caf-b0cf-8bfe1efe9eed",
+          "content_type": "application/json",
+          "resource_type": "fetch",
+          "request_post_data": "{\"events\":[{\"event_id\":\"2dbf0bb4-f14c-4566-90a0-d212c52cfa7d\",\"event_name\":\"ping_web\",\"payload\":{\"ping_type\":\"tab_created\"},\"identifiers\":{\"local_storage_id\":\"5e46c741-8fc1-4b4a-b663-a6c2e8f9da1b\",\"session_storage_id\":\"38633b1d-5f63-4d9b-b8e8-91f3211a778a\",\"cookie_storage_id\":\"3ab964b6-0330-47b7-9819-2d7c355e0681\",\"public_eb_user_id\":null,\"public_eb_organization_id\":null,\"eb_organization_created_at\":null,\"stable_id\":\"31f84adc-3107-4504-bcd5-d85bf8da6ae0\"},\"context\":{\"device_browser\":\"Chrome\",\"device_os\":\"Mac OS\",\"device_os_version\":\"10.15.7\",\"device_type\":\"desktop\",\"language\":\"en-US\",\"locale\":\"en-US\",\"session_id\":\"e348e186-df11-478c-a12a-a2878019ebfd\",\"sdk_version\":\"web@0.8.0\",\"timezone_daylight_saving\":false,\"timezone_name\":\"UTC\",\"timezone_seconds\":0,\"user_agent\":\"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36\",\"app_name\":\"eb-ui\",\"environment\":\"production\",\"is_bot\":false,\"eb_bsp_sdk_version\":\"0.14.0\",\"landing_url\":\"https://www.eventbrite.com/d/saudi-arabia/events/\",\"landing_path\":\"/d/saudi-arabia/events/\",\"landing_page_info\":{},\"persistent\":{}},\"event_timestamp\":\"2026-11-24T12:49:09.717Z\"},{\"event_id\":\"482c0a04",
+          "response_shape": "json-object:delta,last_event_timestamp",
+          "preview": "{\"delta\":0,\"last_event_timestamp\":\"2026-11-24T12:49:09.899000Z\"}"
+        }
+      ]
+    },
+    {
       "id": "tuwaiq-academy-bootcamps",
-      "probed_at": "2026-11-23T11:09:37.142Z",
+      "probed_at": "2026-11-24T12:48:24.134Z",
       "name": "Tuwaiq Academy Bootcamps and Programs",
       "priority": 16,
       "url": "https://tuwaiq.edu.sa/api/GetInitiativePublishesShorten/12/1?category=ac41152d-f228-8af4-8406-e0cda6df6c35&type=NORMAL",
@@ -141,14 +713,14 @@
       "status": "ok",
       "http_status": 200,
       "navigation_error": "",
-      "duration_ms": 6337,
+      "duration_ms": 6474,
       "classification": "browser-structured-html",
       "next_action": "اكتب extractor من JSON-LD أو structured scripts مع fallback للبطاقات.",
       "title": "",
-      "text_bytes": 10738,
-      "html_bytes": 10901,
-      "html_snapshot": "data/raw/browser-probes/tuwaiq-academy-bootcamps-2026-11-23T11-02-44-815Z.html",
-      "screenshot": "data/raw/browser-probes/tuwaiq-academy-bootcamps-2026-11-23T11-02-44-815Z.png",
+      "text_bytes": 10665,
+      "html_bytes": 10828,
+      "html_snapshot": "data/raw/browser-probes/tuwaiq-academy-bootcamps-2026-11-24T12-48-17-350Z.html",
+      "screenshot": "data/raw/browser-probes/tuwaiq-academy-bootcamps-2026-11-24T12-48-17-350Z.png",
       "signals": {
         "has_next_data": false,
         "has_nuxt": false,
@@ -183,13 +755,141 @@
           "resource_type": "document",
           "request_post_data": "",
           "response_shape": "json-like-invalid",
-          "preview": "{\"pagination\":{\"offset\":0,\"limit\":12,\"total\":204,\"totalPages\":17},\"data\":[{\"id\":\"46c277ae-5d9e-4a6b-805a-7e4720a83dfe\",\"academyTypeId\":null,\"academyType\":null,\"title\":\"معسكر تطوير البرمجيات السحابية الاحترافية لسحابة قوقل\",\"startDate\":\"2026-12-06T17:00:00+03:00\",\"endDate\":\"2026-12-31T21:00:00+03:00\",\"autoCloseRegistration\":false,\"isOpen\":true,\"isRegistrationOpen\":true,\"isRegistrationClosed\":false,\"logo\":\"images/zt203siy.0sn.png\",\"outerImage\":\"images/twhdfqfk.mjg.webp\",\"initiativeAgeName\":\"كبار\",\"initiativeCategoryName\":\"معسكر\",\"initiativeScopeImage\":\"images/lcbl2k2p.x5x.png\",\"initiativeScopeName\":\"الحوسبة السحابية\",\"locationName\":\"الرياض - المقر الرئيسي\",\"slug\":\"E9zNBzBP\",\"registrationStartDate\":null,\"registrationEndDate\":\"2026-11-08T12:00:00+03:00\",\"requireProfileCompletion\":true,\"isMergePublish\":true,\"isPaid\":false,\"price\":null,\"includesEmployees\":false,\"vat\":null,\"priceWithoutVat\":null},{\"id\":\"cde160b5-dd26-4719-a709-f219c0c51bb4\",\"academyTypeId\":null,\"academyType\":null,\"title\":\"معسكر حلول الأمن السيبراني\",\"startDate\":\"2026-12-13T17:00:00+03:00\",\"endDate\":\"2027-01-07T20:00:00+03:00\",\"autoCloseRegistration\":false,\"isOpen\":true,\"isRegistrationOpen\":true,\"isRegistrationClosed\":false,\"logo\":\"images/fpflawwh.u50.png\",\"outerImage\":\"images/oojjhr41.rng.webp\",\"initiativeAgeName\":\"كبار\",\"initiativeCategoryName\":\"معسكر\",\"initiativeScopeImage\":\"images/mgpdsgmm.alx.png\",\"initiativeScopeName\":\"تطوير البرمجيات والتطبيقات\",\"locationName\":\"الرياض - المقر الرئيسي\",\"slug\":\"XvqDJRQP\",\"registrationStartDate\":null,\"registrationEndDate\":\"2026-11-29T12:00:00+03:00\",\"requireProfileCompletion\":true,\"isMergePublish\":true,\"isPaid\":false,\"price\":0.00,\"includesEmployees\":false,\"vat\":0.00,\"priceWithoutVat\":0.00},{\"id\":\"77274f97-b158-4062-ad85-55f1b6d995c8\",\"academyTypeId\":null,\"academyType\":null,"
+          "preview": "{\"pagination\":{\"offset\":0,\"limit\":12,\"total\":205,\"totalPages\":18},\"data\":[{\"id\":\"46c277ae-5d9e-4a6b-805a-7e4720a83dfe\",\"academyTypeId\":null,\"academyType\":null,\"title\":\"معسكر تطوير البرمجيات السحابية الاحترافية لسحابة قوقل\",\"startDate\":\"2026-12-06T17:00:00+03:00\",\"endDate\":\"2026-12-31T21:00:00+03:00\",\"autoCloseRegistration\":false,\"isOpen\":true,\"isRegistrationOpen\":true,\"isRegistrationClosed\":false,\"logo\":\"images/zt203siy.0sn.png\",\"outerImage\":\"images/twhdfqfk.mjg.webp\",\"initiativeAgeName\":\"كبار\",\"initiativeCategoryName\":\"معسكر\",\"initiativeScopeImage\":\"images/lcbl2k2p.x5x.png\",\"initiativeScopeName\":\"الحوسبة السحابية\",\"locationName\":\"الرياض - المقر الرئيسي\",\"slug\":\"E9zNBzBP\",\"registrationStartDate\":null,\"registrationEndDate\":\"2026-11-08T12:00:00+03:00\",\"requireProfileCompletion\":true,\"isMergePublish\":true,\"isPaid\":false,\"price\":null,\"includesEmployees\":false,\"vat\":null,\"priceWithoutVat\":null},{\"id\":\"cde160b5-dd26-4719-a709-f219c0c51bb4\",\"academyTypeId\":null,\"academyType\":null,\"title\":\"معسكر حلول الأمن السيبراني\",\"startDate\":\"2026-12-13T17:00:00+03:00\",\"endDate\":\"2027-01-07T20:00:00+03:00\",\"autoCloseRegistration\":false,\"isOpen\":true,\"isRegistrationOpen\":true,\"isRegistrationClosed\":false,\"logo\":\"images/fpflawwh.u50.png\",\"outerImage\":\"images/oojjhr41.rng.webp\",\"initiativeAgeName\":\"كبار\",\"initiativeCategoryName\":\"معسكر\",\"initiativeScopeImage\":\"images/mgpdsgmm.alx.png\",\"initiativeScopeName\":\"تطوير البرمجيات والتطبيقات\",\"locationName\":\"الرياض - المقر الرئيسي\",\"slug\":\"XvqDJRQP\",\"registrationStartDate\":null,\"registrationEndDate\":\"2026-11-29T12:00:00+03:00\",\"requireProfileCompletion\":true,\"isMergePublish\":true,\"isPaid\":false,\"price\":0.00,\"includesEmployees\":false,\"vat\":0.00,\"priceWithoutVat\":0.00},{\"id\":\"77274f97-b158-4062-ad85-55f1b6d995c8\",\"academyTypeId\":null,\"academyType\":null,"
+        }
+      ]
+    },
+    {
+      "id": "future-skills-catalog",
+      "probed_at": "2026-11-24T12:49:30.825Z",
+      "name": "Future Skills MCIT Catalogue",
+      "priority": 17,
+      "url": "https://futureskills.mcit.gov.sa/ar/catalogue/all?label=&field_main_tracks_target_id_verf=565&field_sub_tracks_target_id=All&field_training_course_level_target_id=All&field_related_skills_target_id=All&field_course_type_value=All&field_training_delivery_value=All&field_training_city_target_id=All&field_job_market_target_id=All",
+      "final_url": "https://futureskills.mcit.gov.sa/ar/catalogue/all?label=&field_main_tracks_target_id_verf=565&field_sub_tracks_target_id=All&field_training_course_level_target_id=All&field_related_skills_target_id=All&field_course_type_value=All&field_training_delivery_value=All&field_training_city_target_id=All&field_job_market_target_id=All",
+      "status": "ok",
+      "http_status": 200,
+      "navigation_error": "",
+      "duration_ms": 13964,
+      "classification": "rendered-html-candidates",
+      "next_action": "اكتب extractor مرن من DOM بعد الرندر أو حسن selector الحالي.",
+      "title": "التدريب | بوابة مهارات المستقبل",
+      "text_bytes": 10774,
+      "html_bytes": 86492,
+      "html_snapshot": "data/raw/browser-probes/future-skills-catalog-2026-11-24T12-48-17-350Z.html",
+      "screenshot": "data/raw/browser-probes/future-skills-catalog-2026-11-24T12-48-17-350Z.png",
+      "signals": {
+        "has_next_data": false,
+        "has_nuxt": false,
+        "has_json_ld": false,
+        "has_event_schema": false,
+        "date_snippets": [],
+        "event_like_links": [
+          {
+            "text": "تجاوز إلى المحتوى الرئيسي",
+            "href": "https://futureskills.mcit.gov.sa/ar/catalogue/all?label=&field_main_tracks_target_id_verf=565&field_sub_tracks_target_id=All&field_training_course_level_target_id=All&field_related_skills_target_id=All&field_course_type_value=All&field_training_delivery_value=All&field_training_city_target_id=All&field_job_market_target_id=All#main-content"
+          },
+          {
+            "text": "English",
+            "href": "https://futureskills.mcit.gov.sa/en/catalogue/all?label=&field_main_tracks_target_id_verf=565&field_sub_tracks_target_id=All&field_training_course_level_target_id=All&field_related_skills_target_id=All&field_course_type_value=All&field_training_delivery_value=All&field_training_city_target_id=All&field_job_market_target_id=All"
+          },
+          {
+            "text": "",
+            "href": "https://futureskills.mcit.gov.sa/ar/catalogue/all?label=&field_main_tracks_target_id_verf=565&field_sub_tracks_target_id=All&field_training_course_level_target_id=All&field_related_skills_target_id=All&field_course_type_value=All&field_training_delivery_value=All&field_training_city_target_id=All&field_job_market_target_id=All#"
+          },
+          {
+            "text": "عن الوزارة",
+            "href": "https://futureskills.mcit.gov.sa/ar/catalogue/all?label=&field_main_tracks_target_id_verf=565&field_sub_tracks_target_id=All&field_training_course_level_target_id=All&field_related_skills_target_id=All&field_course_type_value=All&field_training_delivery_value=All&field_training_city_target_id=All&field_job_market_target_id=All#"
+          },
+          {
+            "text": "مجتمع رقمي",
+            "href": "https://futureskills.mcit.gov.sa/ar/catalogue/all?label=&field_main_tracks_target_id_verf=565&field_sub_tracks_target_id=All&field_training_course_level_target_id=All&field_related_skills_target_id=All&field_course_type_value=All&field_training_delivery_value=All&field_training_city_target_id=All&field_job_market_target_id=All#"
+          },
+          {
+            "text": "مهارات المستقبل",
+            "href": "https://futureskills.mcit.gov.sa/ar/catalogue/all?label=&field_main_tracks_target_id_verf=565&field_sub_tracks_target_id=All&field_training_course_level_target_id=All&field_related_skills_target_id=All&field_course_type_value=All&field_training_delivery_value=All&field_training_city_target_id=All&field_job_market_target_id=All#"
+          },
+          {
+            "text": "الأعمال والاستثمار",
+            "href": "https://futureskills.mcit.gov.sa/ar/catalogue/all?label=&field_main_tracks_target_id_verf=565&field_sub_tracks_target_id=All&field_training_course_level_target_id=All&field_related_skills_target_id=All&field_course_type_value=All&field_training_delivery_value=All&field_training_city_target_id=All&field_job_market_target_id=All#"
+          },
+          {
+            "text": "المركز الإعلامي",
+            "href": "https://futureskills.mcit.gov.sa/ar/catalogue/all?label=&field_main_tracks_target_id_verf=565&field_sub_tracks_target_id=All&field_training_course_level_target_id=All&field_related_skills_target_id=All&field_course_type_value=All&field_training_delivery_value=All&field_training_city_target_id=All&field_job_market_target_id=All#"
+          },
+          {
+            "text": "الفعاليات",
+            "href": "https://www.mcit.gov.sa/ar/events"
+          },
+          {
+            "text": "",
+            "href": "https://futureskills.mcit.gov.sa/ar/catalogue/all?label=&field_main_tracks_target_id_verf=565&field_sub_tracks_target_id=All&field_training_course_level_target_id=All&field_related_skills_target_id=All&field_course_type_value=All&field_training_delivery_value=All&field_training_city_target_id=All&field_job_market_target_id=All#"
+          },
+          {
+            "text": "",
+            "href": "https://futureskills.mcit.gov.sa/ar/catalogue/all?label=&field_main_tracks_target_id_verf=565&field_sub_tracks_target_id=All&field_training_course_level_target_id=All&field_related_skills_target_id=All&field_course_type_value=All&field_training_delivery_value=All&field_training_city_target_id=All&field_job_market_target_id=All#"
+          },
+          {
+            "text": "البرنامج المتخصص في العمل الحر",
+            "href": "http://futureskills.mcit.gov.sa/ar/node/20481"
+          },
+          {
+            "text": "معسكرات مهارات المستقبل",
+            "href": "http://futureskills.mcit.gov.sa/ar/node/17349"
+          },
+          {
+            "text": "مستوى متوسط\nIntroduction to APIs and Web Services\n دورة معرفية\n تفاعلية مباشرة\n تبدأ 27-09-2026 إلى 01-10-2026 لمدة 20 س",
+            "href": "https://futureskills.mcit.gov.sa/ar/group/13067"
+          },
+          {
+            "text": "مستوى متوسط\n⁠Data Preparation & Cleaning Essentials\n دورة معرفية\n تفاعلية مباشرة\n تبدأ 13-09-2026 إلى 15-09-2026 لمدة 12",
+            "href": "https://futureskills.mcit.gov.sa/ar/group/13064"
+          },
+          {
+            "text": "مستوى متوسط\n⁠Cloud Security and Compliance Fundamentals\n دورة معرفية\n تفاعلية مباشرة\n تبدأ 13-09-2026 إلى 15-09-2026 لمد",
+            "href": "https://futureskills.mcit.gov.sa/ar/group/13065"
+          },
+          {
+            "text": "مستوى متوسط\n⁠Data Science Foundations\n دورة معرفية\n تفاعلية مباشرة\n تبدأ 13-09-2026 إلى 16-09-2026 لمدة 16 ساعات",
+            "href": "https://futureskills.mcit.gov.sa/ar/group/13066"
+          },
+          {
+            "text": "مستوى متوسط\n⁠CCNP\n دورة معرفية\n تفاعلية مباشرة\n تبدأ 06-09-2026 إلى 10-09-2026 لمدة 20 ساعات",
+            "href": "https://futureskills.mcit.gov.sa/ar/group/13061"
+          },
+          {
+            "text": "مستوى متوسط\n⁠Data Analysis with Python\n دورة معرفية\n تفاعلية مباشرة\n تبدأ 06-09-2026 إلى 09-09-2026 لمدة 16 ساعات",
+            "href": "https://futureskills.mcit.gov.sa/ar/group/13062"
+          },
+          {
+            "text": "مستوى متوسط\n⁠Red Hat Certified System Administrator (RHCSA)\n دورة معرفية\n تفاعلية مباشرة\n تبدأ 06-09-2026 إلى 10-09-2026",
+            "href": "https://futureskills.mcit.gov.sa/ar/group/13063"
+          }
+        ]
+      },
+      "script_signals": {
+        "next_data_scripts": 0,
+        "nuxt_scripts": 0,
+        "json_ld_scripts": 0,
+        "large_inline_scripts": 0
+      },
+      "network_total": 1,
+      "network_endpoints": [],
+      "network_sample": [
+        {
+          "method": "GET",
+          "status": 200,
+          "url": "https://futureskills.mcit.gov.sa/ar/api2/cities?field_aldwlt_target_id=672",
+          "content_type": "application/json",
+          "resource_type": "xhr",
+          "request_post_data": "",
+          "response_shape": "json-like-invalid",
+          "preview": "[{\"tid_1\":\"68\",\"name\":\"\\u0627\\u0644\\u0631\\u064a\\u0627\\u0636\"},{\"tid_1\":\"69\",\"name\":\"\\u0627\\u0644\\u062f\\u0645\\u0627\\u0645\"},{\"tid_1\":\"70\",\"name\":\"\\u062c\\u062f\\u0629\"},{\"tid_1\":\"71\",\"name\":\"\\u0623\\u0628\\u0647\\u0627\"},{\"tid_1\":\"171\",\"name\":\"\\u0627\\u0644\\u062c\\u0628\\u064a\\u0644\"},{\"tid_1\":\"172\",\"name\":\"\\u0627\\u0644\\u0628\\u0627\\u062d\\u0629\"},{\"tid_1\":\"176\",\"name\":\"\\u0627\\u0644\\u0637\\u0627\\u0626\\u0641\"},{\"tid_1\":\"177\",\"name\":\"\\u0627\\u0644\\u0638\\u0647\\u0631\\u0627\\u0646\"},{\"tid_1\":\"182\",\"name\":\"\\u0627\\u0644\\u0645\\u0628\\u0631\\u0632\"},{\"tid_1\":\"183\",\"name\":\"\\u0627\\u0644\\u0645\\u062f\\u064a\\u0646\\u0629 \\u0627\\u0644\\u0645\\u0646\\u0648\\u0631\\u0629\"},{\"tid_1\":\"187\",\"name\":\"\\u062a\\u0628\\u0648\\u0643\"},{\"tid_1\":\"191\",\"name\":\"\\u0631\\u0641\\u062d\\u0627\\u0621\"},{\"tid_1\":\"192\",\"name\":\"\\u0633\\u0643\\u0627\\u0643\\u0627\"},{\"tid_1\":\"194\",\"name\":\"\\u0642\\u0644\\u0639\\u0629 \\u0628\\u064a\\u0634\\u0629\"},{\"tid_1\":\"196\",\"name\":\"\\u0646\\u062c\\u0631\\u0627\\u0646\"},{\"tid_1\":\"197\",\"name\":\"\\u062d\\u0627\\u0626\\u0644\"},{\"tid_1\":\"198\",\"name\":\"\\u064a\\u0646\\u0628\\u0639\"},{\"tid_1\":\"5042\",\"name\":\"\\u0627\\u0644\\u0623\\u062d\\u0633\\u0627\\u0621\"},{\"tid_1\":\"7319\",\"name\":\"\\u0639\\u0633\\u064a\\u0631\"},{\"tid_1\":\"10545\",\"name\":\"\\u0645\\u0643\\u0629 \\u0627\\u0644\\u0645\\u0643\\u0631\\u0645\\u0629\"},{\"tid_1\":\"10635\",\"name\":\"\\u0627\\u0644\\u062d\\u0644\\u0629\"},{\"tid_1\":\"10638\",\"name\":\"\\u0627\\u0644\\u062e\\u0631\\u062c\"},{\"tid_1\":\"10641\",\"name\":\"\\u0627\\u0644\\u0633\\u0644\\u064a\\u0644\"},{\"tid_1\":\"10647\",\"name\":\"\\u0627\\u0644\\u0642\\u0631\\u064a\\u0627\\u062a\"},{\"tid_1\":\"10650\",\"name\":\"\\u0627\\u0644\\u0642\\u0637\\u064a\\u0641\"},{\"tid_1\":\"10653\",\"name\":\"\\u0627\\u0644\\u0642\\u0646\\u0641\\u0630\\u0629\"},{\"tid_1\":\"10656\",\"name\":\"\\u0627\\u0644\\u0642\\u0648\\u064a\\u0639\\u064a\\u0629\"},{\"tid_1\":\"10659\",\"name\":\"\\u0627\\u0644\\u0647\\u0641\\u0648\\u0641\"},{\"tid_1\":\"10662\",\"name\":\"\\u062"
         }
       ]
     },
     {
       "id": "misk-hub-programs",
-      "probed_at": "2026-11-23T11:09:42.635Z",
+      "probed_at": "2026-11-24T12:48:29.865Z",
       "name": "Misk Hub Programs",
       "priority": 21,
       "url": "https://hub.misk.org.sa/programs/",
@@ -197,14 +897,14 @@
       "status": "ok",
       "http_status": 403,
       "navigation_error": "",
-      "duration_ms": 5447,
+      "duration_ms": 5708,
       "classification": "blocked-or-protected",
       "next_action": "لا تلتف على الحماية؛ صنف المصدر partnership/API أو ابحث عن مسار رسمي.",
       "title": "Unavailable",
       "text_bytes": 481,
       "html_bytes": 1087916,
-      "html_snapshot": "data/raw/browser-probes/misk-hub-programs-2026-11-23T11-02-44-815Z.html",
-      "screenshot": "data/raw/browser-probes/misk-hub-programs-2026-11-23T11-02-44-815Z.png",
+      "html_snapshot": "data/raw/browser-probes/misk-hub-programs-2026-11-24T12-48-17-350Z.html",
+      "screenshot": "data/raw/browser-probes/misk-hub-programs-2026-11-24T12-48-17-350Z.png",
       "signals": {
         "has_next_data": false,
         "has_nuxt": false,
@@ -261,7 +961,7 @@
     },
     {
       "id": "saudi-space-agency-events",
-      "probed_at": "2026-11-23T11:09:59.949Z",
+      "probed_at": "2026-11-24T12:48:36.302Z",
       "name": "Saudi Space Agency Events",
       "priority": 32,
       "url": "https://ssa.gov.sa/APIGW/en/api/EventsSearch/SearchEvents",
@@ -269,14 +969,14 @@
       "status": "ok",
       "http_status": 405,
       "navigation_error": "",
-      "duration_ms": 5829,
+      "duration_ms": 6413,
       "classification": "empty-or-shell",
       "next_action": "اعتبرها shell وابحث عن API أو مسار بديل قبل أي collector.",
       "title": "",
       "text_bytes": 536,
       "html_bytes": 687,
-      "html_snapshot": "data/raw/browser-probes/saudi-space-agency-events-2026-11-23T11-02-44-815Z.html",
-      "screenshot": "data/raw/browser-probes/saudi-space-agency-events-2026-11-23T11-02-44-815Z.png",
+      "html_snapshot": "data/raw/browser-probes/saudi-space-agency-events-2026-11-24T12-48-17-350Z.html",
+      "screenshot": "data/raw/browser-probes/saudi-space-agency-events-2026-11-24T12-48-17-350Z.png",
       "signals": {
         "has_next_data": false,
         "has_nuxt": false,
@@ -324,6 +1024,42 @@
       "html_bytes": 0,
       "html_snapshot": "data/raw/browser-probes/moc-cultural-subportals-2026-11-23T11-02-44-815Z.html",
       "screenshot": "",
+      "signals": {
+        "has_next_data": false,
+        "has_nuxt": false,
+        "has_json_ld": false,
+        "has_event_schema": false,
+        "date_snippets": [],
+        "event_like_links": []
+      },
+      "script_signals": {
+        "next_data_scripts": 0,
+        "nuxt_scripts": 0,
+        "json_ld_scripts": 0,
+        "large_inline_scripts": 0
+      },
+      "network_total": 0,
+      "network_endpoints": [],
+      "network_sample": []
+    },
+    {
+      "id": "qassim-chamber-events",
+      "probed_at": "2026-11-24T12:48:48.289Z",
+      "name": "Qassim Chamber Events",
+      "priority": 60,
+      "url": "https://tc.qcc.org.sa/",
+      "final_url": "https://tc.qcc.org.sa/",
+      "status": "ok",
+      "http_status": 403,
+      "navigation_error": "",
+      "duration_ms": 11962,
+      "classification": "blocked-or-protected",
+      "next_action": "لا تلتف على الحماية؛ صنف المصدر partnership/API أو ابحث عن مسار رسمي.",
+      "title": "لحظة…",
+      "text_bytes": 371,
+      "html_bytes": 44894,
+      "html_snapshot": "data/raw/browser-probes/qassim-chamber-events-2026-11-24T12-48-17-350Z.html",
+      "screenshot": "data/raw/browser-probes/qassim-chamber-events-2026-11-24T12-48-17-350Z.png",
       "signals": {
         "has_next_data": false,
         "has_nuxt": false,
