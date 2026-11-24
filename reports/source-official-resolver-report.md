@@ -1,19 +1,19 @@
 # EventLive Official Resolver Report
 
-- generated_at: 2026-11-24T13:05:08.172Z
+- generated_at: 2026-11-24T21:44:28.327Z
 - source_ops_report: reports/source-ops-report.json
 - leads_seen: 10
 - resolver_tasks: 6
-- high_priority: 3
+- high_priority: 4
 
 ## Resolver Tasks
 
 | Priority | Lead | Source | City | Quality | Target sources | Next action |
 |---:|---|---|---|---|---|---|
 | 122 | EDUGATE Riyadh 2nd Edition – International Universities & Career Path Fair | Eventbrite Saudi Arabia | Riyadh | strong-lead/70 | future-skills-catalog, informa-connect-saudi-events, saudi-digital-academy, sdaia-academy-programs, sdaia-calendar-events | ابحث في المصادر الرسمية المستهدفة واربط lead بمصدر رسمي قبل أي نشر. |
+| 122 | Founders Pitch Night | Eventbrite Saudi Arabia | Riyadh | strong-lead/70 | informa-connect-saudi-events, saudi-contractors-authority-events, asharqia-chamber-events, invest-saudi-events, jcci-events-center | ابحث في المصادر الرسمية المستهدفة واربط lead بمصدر رسمي قبل أي نشر. |
 | 122 | Majarah's 10th Meetup – لقاء مجرة العاشر | Eventbrite Saudi Arabia | Riyadh | strong-lead/70 | code-mcit-programs, cst-events-news, diriyah-season, enjoy-saudi-events, fii10-official-program | ابحث في المصادر الرسمية المستهدفة واربط lead بمصدر رسمي قبل أي نشر. |
 | 122 | Riyadh November Meetup - IGDA Saudi Arabia | Eventbrite Saudi Arabia | Riyadh | strong-lead/70 | code-mcit-programs, cst-events-news, diriyah-season, enjoy-saudi-events, fii10-official-program | ابحث في المصادر الرسمية المستهدفة واربط lead بمصدر رسمي قبل أي نشر. |
-| 109 | Founders Pitch Night | Eventbrite Saudi Arabia | Riyadh | strong-lead/70 | informa-connect-saudi-events, saudi-contractors-authority-events, asharqia-chamber-events, invest-saudi-events, jcci-events-center | ابحث في المصادر الرسمية المستهدفة واربط lead بمصدر رسمي قبل أي نشر. |
 | 107 | 12th Middle East Banking AI & Analytics Summit 2027 | Eventbrite Saudi Arabia | Riyadh | strong-lead/70 | informa-connect-saudi-events, ricec-events, sdaia-calendar-events, dhahran-expo-calendar, madinah-chamber-events | ابحث في المصادر الرسمية المستهدفة واربط lead بمصدر رسمي قبل أي نشر. |
 | 107 | Livestock Future Expo & Confrence 2027 | Eventbrite Saudi Arabia | Riyadh | strong-lead/70 | rfecc-whats-on, ricec-events, dhahran-expo-calendar, informa-connect-saudi-events, saudi-water-authority-events | ابحث في المصادر الرسمية المستهدفة واربط lead بمصدر رسمي قبل أي نشر. |
 
@@ -28,6 +28,17 @@
 - ["EDUGATE Riyadh 2nd Edition – International Universities & Career Path Fair" "Riyadh" official](https://www.google.com/search?q=%22EDUGATE%20Riyadh%202nd%20Edition%20%E2%80%93%20International%20Universities%20%26%20Career%20Path%20Fair%22%20%22Riyadh%22%20official)
 - ["EDUGATE Riyadh 2nd Edition – International Universities & Career Path Fair" "Riyadh" organizer](https://www.google.com/search?q=%22EDUGATE%20Riyadh%202nd%20Edition%20%E2%80%93%20International%20Universities%20%26%20Career%20Path%20Fair%22%20%22Riyadh%22%20organizer)
 - ["EDUGATE Riyadh 2nd Edition – International Universities & Career Path Fair" "Riyadh" tickets](https://www.google.com/search?q=%22EDUGATE%20Riyadh%202nd%20Edition%20%E2%80%93%20International%20Universities%20%26%20Career%20Path%20Fair%22%20%22Riyadh%22%20tickets)
+
+### Founders Pitch Night
+
+- [site:informaconnect.com "Founders Pitch Night" "Riyadh"](https://www.google.com/search?q=site%3Ainformaconnect.com%20%22Founders%20Pitch%20Night%22%20%22Riyadh%22)
+- [site:sca.gov.sa "Founders Pitch Night" "Riyadh"](https://www.google.com/search?q=site%3Asca.gov.sa%20%22Founders%20Pitch%20Night%22%20%22Riyadh%22)
+- [site:chamber.org.sa "Founders Pitch Night" "Riyadh"](https://www.google.com/search?q=site%3Achamber.org.sa%20%22Founders%20Pitch%20Night%22%20%22Riyadh%22)
+- [site:investsaudi.sa "Founders Pitch Night" "Riyadh"](https://www.google.com/search?q=site%3Ainvestsaudi.sa%20%22Founders%20Pitch%20Night%22%20%22Riyadh%22)
+- [site:jcci.org.sa "Founders Pitch Night" "Riyadh"](https://www.google.com/search?q=site%3Ajcci.org.sa%20%22Founders%20Pitch%20Night%22%20%22Riyadh%22)
+- ["Founders Pitch Night" "Riyadh" official](https://www.google.com/search?q=%22Founders%20Pitch%20Night%22%20%22Riyadh%22%20official)
+- ["Founders Pitch Night" "Riyadh" organizer](https://www.google.com/search?q=%22Founders%20Pitch%20Night%22%20%22Riyadh%22%20organizer)
+- ["Founders Pitch Night" "Riyadh" tickets](https://www.google.com/search?q=%22Founders%20Pitch%20Night%22%20%22Riyadh%22%20tickets)
 
 ### Majarah's 10th Meetup – لقاء مجرة العاشر
 
@@ -50,17 +61,6 @@
 - ["Riyadh November Meetup - IGDA Saudi Arabia" "Riyadh" official](https://www.google.com/search?q=%22Riyadh%20November%20Meetup%20-%20IGDA%20Saudi%20Arabia%22%20%22Riyadh%22%20official)
 - ["Riyadh November Meetup - IGDA Saudi Arabia" "Riyadh" organizer](https://www.google.com/search?q=%22Riyadh%20November%20Meetup%20-%20IGDA%20Saudi%20Arabia%22%20%22Riyadh%22%20organizer)
 - ["Riyadh November Meetup - IGDA Saudi Arabia" "Riyadh" tickets](https://www.google.com/search?q=%22Riyadh%20November%20Meetup%20-%20IGDA%20Saudi%20Arabia%22%20%22Riyadh%22%20tickets)
-
-### Founders Pitch Night
-
-- [site:informaconnect.com "Founders Pitch Night" "Riyadh"](https://www.google.com/search?q=site%3Ainformaconnect.com%20%22Founders%20Pitch%20Night%22%20%22Riyadh%22)
-- [site:sca.gov.sa "Founders Pitch Night" "Riyadh"](https://www.google.com/search?q=site%3Asca.gov.sa%20%22Founders%20Pitch%20Night%22%20%22Riyadh%22)
-- [site:chamber.org.sa "Founders Pitch Night" "Riyadh"](https://www.google.com/search?q=site%3Achamber.org.sa%20%22Founders%20Pitch%20Night%22%20%22Riyadh%22)
-- [site:investsaudi.sa "Founders Pitch Night" "Riyadh"](https://www.google.com/search?q=site%3Ainvestsaudi.sa%20%22Founders%20Pitch%20Night%22%20%22Riyadh%22)
-- [site:jcci.org.sa "Founders Pitch Night" "Riyadh"](https://www.google.com/search?q=site%3Ajcci.org.sa%20%22Founders%20Pitch%20Night%22%20%22Riyadh%22)
-- ["Founders Pitch Night" "Riyadh" official](https://www.google.com/search?q=%22Founders%20Pitch%20Night%22%20%22Riyadh%22%20official)
-- ["Founders Pitch Night" "Riyadh" organizer](https://www.google.com/search?q=%22Founders%20Pitch%20Night%22%20%22Riyadh%22%20organizer)
-- ["Founders Pitch Night" "Riyadh" tickets](https://www.google.com/search?q=%22Founders%20Pitch%20Night%22%20%22Riyadh%22%20tickets)
 
 ### 12th Middle East Banking AI & Analytics Summit 2027
 

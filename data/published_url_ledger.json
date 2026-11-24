@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "generated_at": "2026-11-24T13:14:11.092Z",
+  "generated_at": "2026-11-24T21:54:41.269Z",
   "events": {
     "event-skill-development-initiative": {
       "identity": "skill development initiative|riyadh|2021-07-14",
@@ -477,6 +477,11 @@
       "first_seen": "2026-09-23",
       "last_seen": "2026-11-24"
     },
+    "event-الاخطبوطية-كيدز": {
+      "identity": "األخطبوطية كيدز|aseer|2026-09-25",
+      "first_seen": "2026-10-12",
+      "last_seen": "2026-11-24"
+    },
     "event-adventure-around-the-kingdom": {
       "identity": "adventure around the kingdom|dhahran|2026-09-29",
       "first_seen": "2026-09-02",
@@ -792,11 +797,6 @@
       "first_seen": "2026-11-24",
       "last_seen": "2026-11-24"
     },
-    "event-shadow-storytelling": {
-      "identity": "shadow storytelling|dhahran|2026-11-19",
-      "first_seen": "2026-11-09",
-      "last_seen": "2026-11-24"
-    },
     "event-الترشح-للدبلوم-المشارك-إدارة-المشاريع-حضوري-بالتعاون-مع-جمعية-الرياض-للت": {
       "identity": "الترشح للدبلوم المشارك إدارة المشاريع (حضوري) بالتعاون مع جمعية الرياض للتنمية والدراسات والخدمات الاستشارية|makkah|2026-11-20",
       "first_seen": "2026-08-23",
@@ -827,19 +827,9 @@
       "first_seen": "2026-11-05",
       "last_seen": "2026-11-24"
     },
-    "event-family-game-dots-on-letters": {
-      "identity": "family game: dots on letters|dhahran|2026-11-22",
-      "first_seen": "2026-11-09",
-      "last_seen": "2026-11-24"
-    },
     "event-solar-storage-live": {
       "identity": "solar & storage live|riyadh|2026-11-23",
       "first_seen": "2026-07-11",
-      "last_seen": "2026-11-24"
-    },
-    "event-mosaic-mural": {
-      "identity": "mosaic mural|dhahran|2026-11-23",
-      "first_seen": "2026-11-23",
       "last_seen": "2026-11-24"
     },
     "event-الترشح-للدبلوم-المتوسط-امن-المعلومات-حضوري-بالتعاون-مع-جمعية-الرياض-للتن": {
@@ -850,6 +840,11 @@
     "event-general-aviation-airshow-aero-middle-east-x-sand-fun": {
       "identity": "general aviation airshow — aero middle east x sand & fun|riyadh|2026-11-24",
       "first_seen": "2026-07-11",
+      "last_seen": "2026-11-24"
+    },
+    "event-al-ahsa-esports-tournament": {
+      "identity": "al ahsa esports tournament|al ahsa|2026-11-24",
+      "first_seen": "2026-11-24",
       "last_seen": "2026-11-24"
     },
     "event-the-art-of-islamic-illumination": {
@@ -897,11 +892,6 @@
       "first_seen": "2026-11-24",
       "last_seen": "2026-11-24"
     },
-    "event-مكونات-البخور": {
-      "identity": "تاريخ الفن عىل طريق البخور|jeddah|2026-11-26",
-      "first_seen": "2026-11-24",
-      "last_seen": "2026-11-24"
-    },
     "event-دخول-مسائي-حصري-إىل-دادان": {
       "identity": "دخول مسائي حصري إىل دادان|jeddah|2026-11-26",
       "first_seen": "2026-11-24",
@@ -909,6 +899,11 @@
     },
     "event-واقف-momos-2": {
       "identity": "واقف! momos|alula|2026-11-26",
+      "first_seen": "2026-11-24",
+      "last_seen": "2026-11-24"
+    },
+    "event-مكونات-البخور": {
+      "identity": "تاريخ الفن عىل طريق البخور|jeddah|2026-11-26",
       "first_seen": "2026-11-24",
       "last_seen": "2026-11-24"
     },
@@ -937,19 +932,24 @@
       "first_seen": "2026-10-12",
       "last_seen": "2026-11-24"
     },
-    "event-حفل-أصيل-هميم-يف-فوكالي-الرياض": {
-      "identity": "حفل صابر الرباعي يف فوكالي الرياض|aseer|2026-11-27",
+    "event-ُجولة-األطفال-يف-الحِ-جر": {
+      "identity": "ُجولة األطفال يف الحِ جر|jeddah|2026-11-27",
       "first_seen": "2026-11-24",
       "last_seen": "2026-11-24"
     },
-    "event-ُجولة-األطفال-يف-الحِ-جر": {
-      "identity": "ُجولة األطفال يف الحِ جر|jeddah|2026-11-27",
+    "event-حفل-أصيل-هميم-يف-فوكالي-الرياض": {
+      "identity": "حفل صابر الرباعي يف فوكالي الرياض|aseer|2026-11-27",
       "first_seen": "2026-11-24",
       "last_seen": "2026-11-24"
     },
     "event-hegra-childrens-tour": {
       "identity": "hegra children's tour|alula|2026-11-27",
       "first_seen": "2026-11-02",
+      "last_seen": "2026-11-24"
+    },
+    "event-abdulmajeed-abdullah-equestrian-concert": {
+      "identity": "abdulmajeed abdullah - equestrian concert|riyadh|2026-11-27",
+      "first_seen": "2026-11-24",
       "last_seen": "2026-11-24"
     },
     "event-wagef-momos-live-in-jeddah": {
@@ -1617,6 +1617,16 @@
       "first_seen": "2026-08-06",
       "last_seen": "2026-11-24"
     },
+    "event-mosaic-mural": {
+      "identity": "mosaic mural|dhahran|2026-11-23",
+      "first_seen": "2026-11-23",
+      "last_seen": "2026-11-24"
+    },
+    "event-family-game-dots-on-letters": {
+      "identity": "family game: dots on letters|dhahran|2026-11-22",
+      "first_seen": "2026-11-09",
+      "last_seen": "2026-11-24"
+    },
     "event-sabtiyah-tabaqat-podcast": {
       "identity": "sabtiyah - tabaqat podcast|dhahran|2026-11-21",
       "first_seen": "2026-11-06",
@@ -1625,6 +1635,11 @@
     "event-الضحك-في-الترجمة-عرض-كوميدي-مع-شون-شدياق": {
       "identity": "الضحك في الترجمة - عرض كوميدي مع شون شدياق|aseer|2026-11-20",
       "first_seen": "2026-10-12",
+      "last_seen": "2026-11-24"
+    },
+    "event-shadow-storytelling": {
+      "identity": "shadow storytelling|dhahran|2026-11-19",
+      "first_seen": "2026-11-09",
       "last_seen": "2026-11-24"
     },
     "event-barbecue-dinner-cruise": {
@@ -3500,11 +3515,6 @@
     "event-حفل-عايض-في-فوكالي-الرياض": {
       "identity": "حفل عايض في فوكالي الرياض|riyadh|2026-09-25",
       "first_seen": "2026-09-22",
-      "last_seen": "2026-11-24"
-    },
-    "event-الاخطبوطية-كيدز": {
-      "identity": "الاخطبوطية كيدز|aseer|2026-09-25",
-      "first_seen": "2026-10-12",
       "last_seen": "2026-11-24"
     },
     "event-takwat-shaker": {

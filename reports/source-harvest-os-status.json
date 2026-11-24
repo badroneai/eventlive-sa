@@ -1,19 +1,19 @@
 {
   "schema": "eventlive.harvest-os-status.v1",
-  "generated_at": "2026-11-24T13:20:02.238Z",
+  "generated_at": "2026-11-24T22:02:05.448Z",
   "status": "NEEDS_WORK",
   "operating_rule": "Probe before new sources; sample before full harvest; Raw collection is not publication; discovery-only never auto-publishes.",
   "totals": {
     "sources": 88,
-    "candidates": 358,
-    "matched_candidates": 335,
+    "candidates": 356,
+    "matched_candidates": 333,
     "auto_publish_sources": 15,
     "candidate_only_sources": 12,
     "partnership_required_sources": 5,
     "blocked_or_closed_sources": 0,
     "manual_review_sources": 56,
-    "collection_attempted": 30,
-    "productive_sources": 14,
+    "collection_attempted": 13,
+    "productive_sources": 12,
     "collector_errors": 9,
     "chronic_collector_errors": 9,
     "transient_collector_errors": 0
@@ -25,25 +25,25 @@
     "manual_review": 56
   },
   "candidates_by_gate": {
-    "catalog-review": 335,
+    "catalog-review": 333,
     "duplicate-review": 1,
     "source-evidence": 21,
     "human-review": 1
   },
   "funnel": {
-    "discovered_this_run": 202,
-    "candidate_queue": 358,
-    "evaluated_for_publish": 358,
-    "linked_existing": 282,
-    "published_new": 48,
-    "blocked": 28,
+    "discovered_this_run": 182,
+    "candidate_queue": 356,
+    "evaluated_for_publish": 356,
+    "linked_existing": 323,
+    "published_new": 6,
+    "blocked": 27,
     "secondary_promoted": 0,
-    "secondary_still_blocked": 73
+    "secondary_still_blocked": 25
   },
   "blocked_reasons": {
     "linked catalog row event-rolling-podcast was superseded by dedupe": 2,
     "possible duplicate requires review: exact-title-city-source-conflict": 1,
-    "linked catalog row event-book-nook-zone was superseded by dedupe": 2,
+    "linked catalog row event-book-nook-zone was superseded by dedupe": 1,
     "unknown category requires review": 15,
     "linked catalog row event-music-festival-mdlbeast-soundstorm was superseded by dedupe": 1,
     "not an attendable event: enrolment-announcement": 1,
@@ -55,63 +55,63 @@
       "note": "collector-error: fetch failed [ETIMEDOUT, ENETUNREACH]; live browser recovery deferred by recent failed probe cooldown",
       "error_streak": 81,
       "kind": "chronic",
-      "attempted_this_run": true
+      "attempted_this_run": false
     },
     {
       "id": "saudi-pro-league-fixtures",
       "note": "collector-error: fetch failed [EAI_AGAIN]",
       "error_streak": 61,
       "kind": "chronic",
-      "attempted_this_run": true
+      "attempted_this_run": false
     },
     {
       "id": "tuwaiq-academy-bootcamps",
       "note": "collector-error: HTTP 403",
       "error_streak": 58,
       "kind": "chronic",
-      "attempted_this_run": true
+      "attempted_this_run": false
     },
     {
       "id": "qassim-chamber-events",
       "note": "collector-error: HTTP 403",
       "error_streak": 27,
       "kind": "chronic",
-      "attempted_this_run": true
+      "attempted_this_run": false
     },
     {
       "id": "moc-cultural-calendar",
       "note": "collector-error: fetch failed [ETIMEDOUT, ENETUNREACH]; fetch failed [ETIMEDOUT, ENETUNREACH]",
       "error_streak": 13,
       "kind": "chronic",
-      "attempted_this_run": true
+      "attempted_this_run": false
     },
     {
       "id": "moc-cultural-subportals",
       "note": "collector-error: fetch failed [ETIMEDOUT, ENETUNREACH]; fetch failed [ETIMEDOUT, ENETUNREACH]",
       "error_streak": 13,
       "kind": "chronic",
-      "attempted_this_run": true
+      "attempted_this_run": false
     },
     {
       "id": "monshaat-events",
       "note": "collector-error: fetch failed [UND_ERR_CONNECT_TIMEOUT]; fetch failed [UND_ERR_CONNECT_TIMEOUT]",
       "error_streak": 12,
       "kind": "chronic",
-      "attempted_this_run": true
+      "attempted_this_run": false
     },
     {
       "id": "misk-hub-programs",
       "note": "collector-error: HTTP 403; live browser recovery deferred by recent failed probe cooldown",
       "error_streak": 4,
       "kind": "chronic",
-      "attempted_this_run": true
+      "attempted_this_run": false
     },
     {
       "id": "saudi-space-agency-events",
       "note": "collector-error: fetch failed [UNABLE_TO_VERIFY_LEAF_SIGNATURE]",
       "error_streak": 4,
       "kind": "chronic",
-      "attempted_this_run": true
+      "attempted_this_run": false
     }
   ],
   "sources": [

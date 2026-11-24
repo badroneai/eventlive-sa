@@ -1,8 +1,8 @@
 {
   "schema": "eventlive.i18n-en-surface.v1",
-  "generated_at": "2026-11-24T13:16:50.462Z",
-  "pages_scanned": 2230,
-  "pages_with_arabic": 493,
+  "generated_at": "2026-11-24T21:58:27.493Z",
+  "pages_scanned": 2232,
+  "pages_with_arabic": 494,
   "template_regressions": [],
   "script_template_regressions": [],
   "style_template_regressions": [],
@@ -15,10 +15,10 @@
     },
     {
       "text": "واقف! Momos",
-      "pages": 37,
+      "pages": 39,
       "example": "cities/alula.html"
     }
   ],
   "recurring_total": 2,
-  "content_prose_lines": 2428
+  "content_prose_lines": 2435
 }

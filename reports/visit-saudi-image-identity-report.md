@@ -1,49 +1,48 @@
 # EventLive Visit Saudi Image Identity Report
 
-- generated_at: 2026-11-24T12:57:54.655Z
+- generated_at: 2026-11-24T21:39:24.058Z
 - pdf_crop_assignments: 65
-- verified: 58
-- struck: 7
+- verified: 64
+- struck: 1
 - slots_seen_this_cycle: 71
 
 ## Struck (fell back to generated cover)
 
-- معرض قلب البحر (visit-saudi-summer-2026-p060-bottom-left.png) - slot-vacated - no dated card currently occupies page 60 bottom-left of https://www.visitsaudi.com/content/dam/documents/saudi-calendar-ar.pdf
-- نسيم الخبر (visit-saudi-summer-2026-p030-top-left.png) - slot-vacated - no dated card currently occupies page 30 top-left of https://www.visitsaudi.com/content/dam/documents/saudi-calendar-ar.pdf
-- سوالف الحي (visit-saudi-summer-2026-p028-top-right.png) - slot-vacated - no dated card currently occupies page 28 top-right of https://www.visitsaudi.com/content/dam/documents/saudi-calendar-ar.pdf
-- موسم ملح القصب الرابع (visit-saudi-summer-2026-p041-top-left.png) - identity-mismatch - page 41 top-left is now "عىل خطى ابن بطوطة"
-- IN ACT ANNIVERSARY - ACT XI (visit-saudi-summer-2026-p022-top-right.jpg) - slot-vacated - no dated card currently occupies page 22 top-right of https://www.visitsaudi.com/content/dam/documents/saudi-calendar-ar.pdf
 - يو إف سي (visit-saudi-summer-2026-p006-bottom-left.jpg) - identity-mismatch - page 6 bottom-left is now "يو إف سي"
-- بطولة الفنون القتالية (visit-saudi-summer-2026-p030-bottom-left.png) - slot-vacated - no dated card currently occupies page 30 bottom-left of https://www.visitsaudi.com/content/dam/documents/saudi-calendar-ar.pdf
 
 ## Verified
 
 - سوق الثلاثاء الشعبي (visit-saudi-summer-2026-p024-top-left.jpg)
 - صندوق أسامة من مخرج ثمانية (visit-saudi-summer-2026-p010-top-right.png)
+- معرض قلب البحر (visit-saudi-summer-2026-p084-bottom-left.jpg)
 - معرض في تتبّع ذكريات غامرة (visit-saudi-summer-2026-p060-bottom-right.png)
 - الاخطبوطية (visit-saudi-summer-2026-p012-bottom-right.png)
 - قصة بقصة (visit-saudi-summer-2026-p038-top-right.jpg)
-- الاخطبوطية كيدز (visit-saudi-summer-2026-p012-top-right.png)
+- األخطبوطية كيدز (visit-saudi-summer-2026-p004-top-right.jpg)
 - مسار المشي بين معالم الحِ جر الجيولوجية (visit-saudi-summer-2026-p023-bottom-right.png)
 - مسار المشي بين معالم الحِ جر الجيولوُجية (visit-saudi-summer-2026-p038-top-left.jpg)
 - شتاء اثراء (visit-saudi-summer-2026-p028-bottom-right.png)
 - من البلدة القديمة إىل الواحة – تجربة الكتشاف التراث (visit-saudi-summer-2026-p038-bottom-right.jpg)
 - موسم سباقات ميدان فروسية األحساًء (visit-saudi-summer-2026-p058-top-right.jpg)
+- نسيم الخبر (visit-saudi-summer-2026-p053-top-left.jpg)
+- سوالف الحي (visit-saudi-summer-2026-p053-top-right.jpg)
 - سمار يف الرياض (visit-saudi-summer-2026-p004-top-left.jpg)
 - دكة نخل (visit-saudi-summer-2026-p004-bottom-right.jpg)
 - ُجُالا س يف الرياض (visit-saudi-summer-2026-p005-top-left.jpg)
 - سيرك فونتانا (visit-saudi-summer-2026-p005-bottom-right.jpg)
 - شتاًء إثراًء يف الظهران اكسبو (visit-saudi-summer-2026-p053-bottom-right.jpg)
+- موسم ملح القصب الرابع (visit-saudi-summer-2026-p063-top-right.jpg)
 - متاهة الحصن (visit-saudi-summer-2026-p005-bottom-left.jpg)
 - السينما عن قرب (visit-saudi-summer-2026-p038-bottom-left.jpg)
 - بطولة تي 100 للترايثلون (visit-saudi-summer-2026-p083-top-right.jpg)
 - أبو سارة و سري الخالد يف ليالي الديرة الكوميدية (visit-saudi-summer-2026-p006-top-right.jpg)
-- تاريخ الفن عىل طريق البخور (visit-saudi-summer-2026-p039-top-left.jpg)
 - دخول مسائي حصري إىل دادان (visit-saudi-summer-2026-p039-bottom-right.jpg)
 - واقف! Momos (visit-saudi-summer-2026-p083-bottom-right.jpg)
+- تاريخ الفن عىل طريق البخور (visit-saudi-summer-2026-p039-top-left.jpg)
+- IN ACT ANNIVERSARY - ACT XI (visit-saudi-summer-2026-p083-top-left.jpg)
 - واقف! Momos (visit-saudi-summer-2026-p051-top-left.png)
-- حفل صابر الرباعي يف فوكالي الرياض (visit-saudi-summer-2026-p006-bottom-right.jpg)
 - ُجولة األطفال يف الحِ جر (visit-saudi-summer-2026-p039-bottom-left.jpg)
+- حفل صابر الرباعي يف فوكالي الرياض (visit-saudi-summer-2026-p006-bottom-right.jpg)
 - على موج الخبر (visit-saudi-summer-2026-p030-bottom-right.png)
 - احتفالية طنطورة – بالتعاون مع صُ نع يف السعودية (visit-saudi-summer-2026-p040-top-right.jpg)
 - عمل فني عام ضخم يف الجديدة (visit-saudi-summer-2026-p040-top-left.jpg)
@@ -58,6 +57,7 @@
 - كور يونيتي العال (visit-saudi-summer-2026-p040-bottom-left.jpg)
 - برنامج اليوغا (visit-saudi-summer-2026-p041-top-right.jpg)
 - سباق ماراثون الشرقية الدولي (visit-saudi-summer-2026-p054-top-right.jpg)
+- بطولة الفنون القتالية (visit-saudi-summer-2026-p054-top-left.jpg)
 - سك عىل والدك (visit-saudi-summer-2026-p007-bottom-left.jpg)
 - معرض ثقل الذكريات (visit-saudi-summer-2026-p008-top-right.jpg)
 - فعالية اليوم العالمي للغة العربية (visit-saudi-summer-2026-p008-top-left.jpg)

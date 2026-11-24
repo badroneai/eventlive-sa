@@ -1,11 +1,11 @@
 # EventLive Browser Source Probe
 
-Generated at: 2026-11-24T12:48:17.350Z
+Generated at: 2026-11-24T21:33:25.115Z
 
 ## Summary
 
-- Sources probed this run: 8
-- Fresh results available: 13
+- Sources probed this run: 1
+- Fresh results available: 14
 - Browser network API: 1
 - Hydration payload: 0
 - Rendered HTML candidates: 2
@@ -28,6 +28,7 @@ Generated at: 2026-11-24T12:48:17.350Z
 | 30 | saudi-pro-league-fixtures | error | 0 | empty-or-shell | 0 | 0 | 0 | اعتبرها shell وابحث عن API أو مسار بديل قبل أي collector. |
 | 32 | saudi-space-agency-events | ok | 405 | empty-or-shell | 0 | 0 | 0 | اعتبرها shell وابحث عن API أو مسار بديل قبل أي collector. |
 | 37 | moc-cultural-subportals | error | 0 | empty-or-shell | 0 | 0 | 0 | اعتبرها shell وابحث عن API أو مسار بديل قبل أي collector. |
+| 51 | riyadh-city-events | ok | 200 | rendered-text-review | 0 | 0 | 0 | راجع الصفحة يدويًا وحدد هل هي مصدر أدلة أم صفحة تعريفية فقط. |
 | 60 | qassim-chamber-events | ok | 403 | blocked-or-protected | 0 | 0 | 0 | لا تلتف على الحماية؛ صنف المصدر partnership/API أو ابحث عن مسار رسمي. |
 
 ## Endpoint Candidates

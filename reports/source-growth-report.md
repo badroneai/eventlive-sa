@@ -1,17 +1,18 @@
 # EventLive Source Growth
 
-- generated_at: 2026-11-24T13:06:39.936Z
-- status: degraded
-- public_events: 2101
-- public_delta: 47
-- new_active_candidates: 106
+- generated_at: 2026-11-24T21:46:43.546Z
+- status: healthy
+- public_events: 2103
+- public_delta: 2
+- new_active_candidates: 42
 - new_ended_events: 0
-- published_new: 48
-- collector_errors: 9
+- published_new: 6
+- collector_errors: 0
 - no_growth_streak: 0
 
 | Run | Public | Delta | New candidates | New ended | Published | Errors | Status |
 |---|---:|---:|---:|---:|---:|---:|---|
+| 2026-11-24T21:33:33.032Z | 2103 | 2 | 42 | 0 | 6 | 0 | healthy |
 | 2026-11-24T12:49:30.984Z | 2101 | 47 | 106 | 0 | 48 | 9 | degraded |
 | 2026-11-23T11:12:14.818Z | 2054 | 2 | 41 | 0 | 3 | 9 | degraded |
 | 2026-11-21T10:06:45.122Z | 2052 | 0 | 44 | 0 | 1 | 9 | degraded |
@@ -23,4 +24,3 @@
 | 2026-11-15T09:47:53.470Z | 2035 | 9 | 49 | 0 | 11 | 7 | degraded |
 | 2026-11-14T09:13:43.183Z | 2026 | 2 | 40 | 0 | 4 | 7 | degraded |
 | 2026-11-13T09:40:29.987Z | 2024 | 6 | 45 | 0 | 8 | 1 | degraded |
-| 2026-11-12T10:11:13.613Z | 2018 | 1 | 22 | 0 | 3 | 7 | degraded |

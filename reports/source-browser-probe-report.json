@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-24T12:48:17.350Z",
+  "generated_at": "2026-11-24T21:33:25.115Z",
   "source_registry": "data/source_registry.json",
   "collection_report": "reports/source-collection-report.json",
   "output_dir": "data/raw/browser-probes",
@@ -7,15 +7,15 @@
     "selected_ids": [],
     "scope": "priority",
     "limit": 8,
-    "probed_this_run": 8,
-    "fresh_results_available": 13,
+    "probed_this_run": 1,
+    "fresh_results_available": 14,
     "wait_ms": 4500,
     "timeout_ms": 30000,
     "failure_cooldown_hours": 72
   },
   "methodology": "Browser-level probe inspired by cafe platform work: classify fetchability, hydration payloads, network APIs, structured HTML, rendered DOM, and policy-protected lanes before writing extractors.",
   "totals": {
-    "probed": 13,
+    "probed": 14,
     "browser_network_api": 1,
     "browser_hydration_payload": 0,
     "rendered_html_candidates": 2,
@@ -1024,6 +1024,42 @@
       "html_bytes": 0,
       "html_snapshot": "data/raw/browser-probes/moc-cultural-subportals-2026-11-23T11-02-44-815Z.html",
       "screenshot": "",
+      "signals": {
+        "has_next_data": false,
+        "has_nuxt": false,
+        "has_json_ld": false,
+        "has_event_schema": false,
+        "date_snippets": [],
+        "event_like_links": []
+      },
+      "script_signals": {
+        "next_data_scripts": 0,
+        "nuxt_scripts": 0,
+        "json_ld_scripts": 0,
+        "large_inline_scripts": 0
+      },
+      "network_total": 0,
+      "network_endpoints": [],
+      "network_sample": []
+    },
+    {
+      "id": "riyadh-city-events",
+      "probed_at": "2026-11-24T21:33:32.804Z",
+      "name": "Riyadh City Events",
+      "priority": 51,
+      "url": "https://riyadh.sa/en/events/all",
+      "final_url": "https://riyadh.sa/en/events/all",
+      "status": "ok",
+      "http_status": 200,
+      "navigation_error": "",
+      "duration_ms": 7062,
+      "classification": "rendered-text-review",
+      "next_action": "راجع الصفحة يدويًا وحدد هل هي مصدر أدلة أم صفحة تعريفية فقط.",
+      "title": "وجهتكم إلى الرياض تتجدّد",
+      "text_bytes": 402,
+      "html_bytes": 84099,
+      "html_snapshot": "data/raw/browser-probes/riyadh-city-events-2026-11-24T21-33-25-115Z.html",
+      "screenshot": "data/raw/browser-probes/riyadh-city-events-2026-11-24T21-33-25-115Z.png",
       "signals": {
         "has_next_data": false,
         "has_nuxt": false,

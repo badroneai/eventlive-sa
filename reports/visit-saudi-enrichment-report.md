@@ -1,8 +1,8 @@
 # Visit Saudi Calendar Enrichment Report
 
-- generated_at: 2026-11-24T13:01:50.039Z
+- generated_at: 2026-11-24T21:40:52.270Z
 - targets: 50
-- candidates: 10
+- candidates: 11
 - enriched: 50
 - fetched: 49
 - images: 50
@@ -57,9 +57,9 @@
 - UCI URBAN CYCLING WORLD CHAMPIONSHIPS - official-page-html - image=yes - features=7
 - Wagef! Nemr Live Comedy Show in Jeddah - official-page-html - image=yes - features=7
 - Comedy Show by Mario Yazbeck in Riyadh - official-page-html - image=yes - features=7
+- Al Ahsa Esports Tournament - official-page-html - image=yes - features=7
 - Wagef! Momos Live in Jeddah - official-page-html - image=yes - features=7
 - The Innovation Driven Water Sustainability Conference - official-page-html - image=yes - features=7
-- Saudi Falcon Cup - official-page-html - image=yes - features=7
 
 ## Fetch Failures
 

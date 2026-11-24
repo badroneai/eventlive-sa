@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-24T12:57:54.655Z",
+  "generated_at": "2026-11-24T21:39:24.058Z",
   "catalog": "data/events_catalog.json",
   "candidates": "data/source_candidates.json",
   "manifest": "data/event_image_cache_manifest.json",
@@ -10,48 +10,11 @@
   },
   "totals": {
     "pdf_crop_assignments": 65,
-    "verified": 58,
-    "struck": 7,
+    "verified": 64,
+    "struck": 1,
     "slots_seen_this_cycle": 71
   },
   "struck": [
-    {
-      "id": "event-معرض-قلب-البحر",
-      "title": "معرض قلب البحر",
-      "file": "visit-saudi-summer-2026-p060-bottom-left.png",
-      "reason": "slot-vacated",
-      "detail": "no dated card currently occupies page 60 bottom-left of https://www.visitsaudi.com/content/dam/documents/saudi-calendar-ar.pdf"
-    },
-    {
-      "id": "event-نسيم-الخبر",
-      "title": "نسيم الخبر",
-      "file": "visit-saudi-summer-2026-p030-top-left.png",
-      "reason": "slot-vacated",
-      "detail": "no dated card currently occupies page 30 top-left of https://www.visitsaudi.com/content/dam/documents/saudi-calendar-ar.pdf"
-    },
-    {
-      "id": "event-سوالف-الحي",
-      "title": "سوالف الحي",
-      "file": "visit-saudi-summer-2026-p028-top-right.png",
-      "reason": "slot-vacated",
-      "detail": "no dated card currently occupies page 28 top-right of https://www.visitsaudi.com/content/dam/documents/saudi-calendar-ar.pdf"
-    },
-    {
-      "id": "event-موسم-ملح-القصب-الرابع",
-      "title": "موسم ملح القصب الرابع",
-      "file": "visit-saudi-summer-2026-p041-top-left.png",
-      "reason": "identity-mismatch",
-      "detail": "page 41 top-left is now \"عىل خطى ابن بطوطة\"",
-      "matched_tokens": [],
-      "ratio": 0
-    },
-    {
-      "id": "event-in-act-anniversary-act-xi-2",
-      "title": "IN ACT ANNIVERSARY - ACT XI",
-      "file": "visit-saudi-summer-2026-p022-top-right.jpg",
-      "reason": "slot-vacated",
-      "detail": "no dated card currently occupies page 22 top-right of https://www.visitsaudi.com/content/dam/documents/saudi-calendar-ar.pdf"
-    },
     {
       "id": "event-يو-إف-سي",
       "title": "يو إف سي",
@@ -60,13 +23,6 @@
       "detail": "page 6 bottom-left is now \"يو إف سي\"",
       "matched_tokens": [],
       "ratio": 0
-    },
-    {
-      "id": "event-بطولة-الفنون-القتالية",
-      "title": "بطولة الفنون القتالية",
-      "file": "visit-saudi-summer-2026-p030-bottom-left.png",
-      "reason": "slot-vacated",
-      "detail": "no dated card currently occupies page 30 bottom-left of https://www.visitsaudi.com/content/dam/documents/saudi-calendar-ar.pdf"
     }
   ],
   "verified": [
@@ -89,6 +45,16 @@
         "اسامه",
         "مخرج",
         "ثمانيه"
+      ]
+    },
+    {
+      "id": "event-معرض-قلب-البحر",
+      "title": "معرض قلب البحر",
+      "file": "visit-saudi-summer-2026-p084-bottom-left.jpg",
+      "matched_tokens": [
+        "معرض",
+        "قلب",
+        "البحر"
       ]
     },
     {
@@ -121,10 +87,10 @@
     },
     {
       "id": "event-الاخطبوطية-كيدز",
-      "title": "الاخطبوطية كيدز",
-      "file": "visit-saudi-summer-2026-p012-top-right.png",
+      "title": "األخطبوطية كيدز",
+      "file": "visit-saudi-summer-2026-p004-top-right.jpg",
       "matched_tokens": [
-        "الاخطبوطيه",
+        "االخطبوطيه",
         "كيدز"
       ]
     },
@@ -190,6 +156,24 @@
       ]
     },
     {
+      "id": "event-نسيم-الخبر",
+      "title": "نسيم الخبر",
+      "file": "visit-saudi-summer-2026-p053-top-left.jpg",
+      "matched_tokens": [
+        "نسيم",
+        "الخبر"
+      ]
+    },
+    {
+      "id": "event-سوالف-الحي",
+      "title": "سوالف الحي",
+      "file": "visit-saudi-summer-2026-p053-top-right.jpg",
+      "matched_tokens": [
+        "سوالف",
+        "الحي"
+      ]
+    },
+    {
       "id": "event-سمار-يف-الرياض",
       "title": "سمار يف الرياض",
       "file": "visit-saudi-summer-2026-p004-top-left.jpg",
@@ -237,6 +221,17 @@
       ]
     },
     {
+      "id": "event-موسم-ملح-القصب-الرابع",
+      "title": "موسم ملح القصب الرابع",
+      "file": "visit-saudi-summer-2026-p063-top-right.jpg",
+      "matched_tokens": [
+        "موسم",
+        "ملح",
+        "القصب",
+        "الرابع"
+      ]
+    },
+    {
       "id": "event-متاهة-الحصن",
       "title": "متاهة الحصن",
       "file": "visit-saudi-summer-2026-p005-bottom-left.jpg",
@@ -279,18 +274,6 @@
       ]
     },
     {
-      "id": "event-مكونات-البخور",
-      "title": "تاريخ الفن عىل طريق البخور",
-      "file": "visit-saudi-summer-2026-p039-top-left.jpg",
-      "matched_tokens": [
-        "تاريخ",
-        "الفن",
-        "عيل",
-        "طريق",
-        "البخور"
-      ]
-    },
-    {
       "id": "event-دخول-مسائي-حصري-إىل-دادان",
       "title": "دخول مسائي حصري إىل دادان",
       "file": "visit-saudi-summer-2026-p039-bottom-right.jpg",
@@ -312,12 +295,43 @@
       ]
     },
     {
+      "id": "event-مكونات-البخور",
+      "title": "تاريخ الفن عىل طريق البخور",
+      "file": "visit-saudi-summer-2026-p039-top-left.jpg",
+      "matched_tokens": [
+        "تاريخ",
+        "الفن",
+        "عيل",
+        "طريق",
+        "البخور"
+      ]
+    },
+    {
+      "id": "event-in-act-anniversary-act-xi-2",
+      "title": "IN ACT ANNIVERSARY - ACT XI",
+      "file": "visit-saudi-summer-2026-p083-top-left.jpg",
+      "matched_tokens": [
+        "act",
+        "anniversary"
+      ]
+    },
+    {
       "id": "event-واقف-momos",
       "title": "واقف! Momos",
       "file": "visit-saudi-summer-2026-p051-top-left.png",
       "matched_tokens": [
         "واقف",
         "momos"
+      ]
+    },
+    {
+      "id": "event-ُجولة-األطفال-يف-الحِ-جر",
+      "title": "ُجولة األطفال يف الحِ جر",
+      "file": "visit-saudi-summer-2026-p039-bottom-left.jpg",
+      "matched_tokens": [
+        "جوله",
+        "االطفال",
+        "الح"
       ]
     },
     {
@@ -330,16 +344,6 @@
         "الرباعي",
         "فوكالي",
         "الرياض"
-      ]
-    },
-    {
-      "id": "event-ُجولة-األطفال-يف-الحِ-جر",
-      "title": "ُجولة األطفال يف الحِ جر",
-      "file": "visit-saudi-summer-2026-p039-bottom-left.jpg",
-      "matched_tokens": [
-        "جوله",
-        "االطفال",
-        "الح"
       ]
     },
     {
@@ -484,6 +488,16 @@
         "ماراثون",
         "الشرقيه",
         "الدولي"
+      ]
+    },
+    {
+      "id": "event-بطولة-الفنون-القتالية",
+      "title": "بطولة الفنون القتالية",
+      "file": "visit-saudi-summer-2026-p054-top-left.jpg",
+      "matched_tokens": [
+        "بطوله",
+        "الفنون",
+        "القتاليه"
       ]
     },
     {

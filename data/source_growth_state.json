@@ -1,33 +1,7 @@
 {
   "schema": "eventlive.source-growth-state.v1",
-  "generated_at": "2026-11-24T13:06:39.936Z",
+  "generated_at": "2026-11-24T21:46:43.546Z",
   "runs": [
-    {
-      "run_id": "2026-08-10T02:38:54.502Z",
-      "generated_at": "2026-08-10T02:50:43.300Z",
-      "collected_at": "2026-08-10T02:38:54.502Z",
-      "catalog_active_rows": 735,
-      "catalog_ended_rows": 762,
-      "public_events": 1477,
-      "candidates_discovered": 318,
-      "new_active_candidates": 15,
-      "new_ended_events": 0,
-      "published_new": 6,
-      "linked_existing": 552,
-      "blocked_remaining": 38,
-      "sources_attempted": 24,
-      "productive_sources": 21,
-      "collector_errors": 0,
-      "lost_published_output": false,
-      "missing_published_ids": [],
-      "published_ids_checked": 6,
-      "publish_report_correlated": true,
-      "measurement_integrity": "ok",
-      "public_delta": null,
-      "catalog_delta": null,
-      "no_growth_streak": 0,
-      "status": "baseline"
-    },
     {
       "run_id": "2026-08-10T08:09:46.267Z",
       "generated_at": "2026-08-10T08:20:26.405Z",
@@ -49,10 +23,10 @@
       "published_ids_checked": 6,
       "publish_report_correlated": true,
       "measurement_integrity": "ok",
-      "public_delta": 0,
-      "catalog_delta": 0,
-      "no_growth_streak": 1,
-      "status": "healthy"
+      "public_delta": null,
+      "catalog_delta": null,
+      "no_growth_streak": 0,
+      "status": "baseline"
     },
     {
       "run_id": "2026-08-10T13:49:51.211Z",
@@ -3261,6 +3235,34 @@
       "catalog_delta": 47,
       "no_growth_streak": 0,
       "status": "degraded"
+    },
+    {
+      "run_id": "2026-11-24T21:33:33.032Z",
+      "generated_at": "2026-11-24T21:46:43.546Z",
+      "collected_at": "2026-11-24T21:33:33.032Z",
+      "catalog_active_rows": 1374,
+      "catalog_ended_rows": 762,
+      "public_events": 2103,
+      "candidates_discovered": 182,
+      "new_active_candidates": 42,
+      "new_ended_events": 0,
+      "published_new": 6,
+      "linked_existing": 323,
+      "blocked_remaining": 27,
+      "sources_attempted": 13,
+      "productive_sources": 11,
+      "collector_errors": 0,
+      "lost_published_output": false,
+      "collapsed_published_ids": [],
+      "persistence_severity": "none",
+      "missing_published_ids": [],
+      "published_ids_checked": 6,
+      "publish_report_correlated": true,
+      "measurement_integrity": "ok",
+      "public_delta": 2,
+      "catalog_delta": 2,
+      "no_growth_streak": 0,
+      "status": "healthy"
     }
   ]
 }

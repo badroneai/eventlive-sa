@@ -1,11 +1,11 @@
 {
-  "generated_at": "2026-11-24T13:05:08.172Z",
+  "generated_at": "2026-11-24T21:44:28.327Z",
   "source_ops_report": "reports/source-ops-report.json",
   "source_registry": "data/source_registry.json",
   "totals": {
     "leads_seen": 10,
     "tasks": 6,
-    "high_priority": 3
+    "high_priority": 4
   },
   "tasks": [
     {
@@ -93,6 +93,99 @@
         {
           "query": "\"EDUGATE Riyadh 2nd Edition – International Universities & Career Path Fair\" \"Riyadh\" tickets",
           "url": "https://www.google.com/search?q=%22EDUGATE%20Riyadh%202nd%20Edition%20%E2%80%93%20International%20Universities%20%26%20Career%20Path%20Fair%22%20%22Riyadh%22%20tickets"
+        }
+      ],
+      "next_action": "ابحث في المصادر الرسمية المستهدفة واربط lead بمصدر رسمي قبل أي نشر."
+    },
+    {
+      "lead_id": "candidate-eventbrite-saudi-founders-pitch-night-b2b-networking-founders-professionals-20261208-eade835c",
+      "title": "Founders Pitch Night",
+      "city": "Riyadh",
+      "starts_at": "2026-12-08T19:00:00+03:00",
+      "source_label": "Eventbrite Saudi Arabia",
+      "discovery_quality": "strong-lead",
+      "discovery_score": 70,
+      "discovery_notes": "saudi-location-signal, specific-venue, event-topic-fit",
+      "resolver_priority": 122,
+      "target_sources": [
+        {
+          "id": "informa-connect-saudi-events",
+          "name": "Informa Connect Saudi Event Portfolio",
+          "url": "https://informaconnect.com/",
+          "domain": "informaconnect.com",
+          "trust_level": "official",
+          "source_type": "conference-organizer",
+          "score": 48
+        },
+        {
+          "id": "saudi-contractors-authority-events",
+          "name": "Saudi Contractors Authority Events",
+          "url": "https://www.sca.gov.sa/",
+          "domain": "sca.gov.sa",
+          "trust_level": "official",
+          "source_type": "government-calendar",
+          "score": 48
+        },
+        {
+          "id": "asharqia-chamber-events",
+          "name": "Asharqia Chamber Events",
+          "url": "https://www.chamber.org.sa/sites/Arabic/Events/ChamberEvents/Pages/AllChamberEvents.aspx",
+          "domain": "chamber.org.sa",
+          "trust_level": "official",
+          "source_type": "venue-calendar",
+          "score": 40
+        },
+        {
+          "id": "invest-saudi-events",
+          "name": "Invest Saudi Events",
+          "url": "https://www.investsaudi.sa/events",
+          "domain": "investsaudi.sa",
+          "trust_level": "official",
+          "source_type": "government-calendar",
+          "score": 40
+        },
+        {
+          "id": "jcci-events-center",
+          "name": "Jeddah Chamber Exhibitions and Events Center",
+          "url": "https://www.jcci.org.sa/en/المعارض-والفعاليات",
+          "domain": "jcci.org.sa",
+          "trust_level": "venue-official",
+          "source_type": "venue-calendar",
+          "score": 40
+        }
+      ],
+      "searches": [
+        {
+          "query": "site:informaconnect.com \"Founders Pitch Night\" \"Riyadh\"",
+          "url": "https://www.google.com/search?q=site%3Ainformaconnect.com%20%22Founders%20Pitch%20Night%22%20%22Riyadh%22"
+        },
+        {
+          "query": "site:sca.gov.sa \"Founders Pitch Night\" \"Riyadh\"",
+          "url": "https://www.google.com/search?q=site%3Asca.gov.sa%20%22Founders%20Pitch%20Night%22%20%22Riyadh%22"
+        },
+        {
+          "query": "site:chamber.org.sa \"Founders Pitch Night\" \"Riyadh\"",
+          "url": "https://www.google.com/search?q=site%3Achamber.org.sa%20%22Founders%20Pitch%20Night%22%20%22Riyadh%22"
+        },
+        {
+          "query": "site:investsaudi.sa \"Founders Pitch Night\" \"Riyadh\"",
+          "url": "https://www.google.com/search?q=site%3Ainvestsaudi.sa%20%22Founders%20Pitch%20Night%22%20%22Riyadh%22"
+        },
+        {
+          "query": "site:jcci.org.sa \"Founders Pitch Night\" \"Riyadh\"",
+          "url": "https://www.google.com/search?q=site%3Ajcci.org.sa%20%22Founders%20Pitch%20Night%22%20%22Riyadh%22"
+        },
+        {
+          "query": "\"Founders Pitch Night\" \"Riyadh\" official",
+          "url": "https://www.google.com/search?q=%22Founders%20Pitch%20Night%22%20%22Riyadh%22%20official"
+        },
+        {
+          "query": "\"Founders Pitch Night\" \"Riyadh\" organizer",
+          "url": "https://www.google.com/search?q=%22Founders%20Pitch%20Night%22%20%22Riyadh%22%20organizer"
+        },
+        {
+          "query": "\"Founders Pitch Night\" \"Riyadh\" tickets",
+          "url": "https://www.google.com/search?q=%22Founders%20Pitch%20Night%22%20%22Riyadh%22%20tickets"
         }
       ],
       "next_action": "ابحث في المصادر الرسمية المستهدفة واربط lead بمصدر رسمي قبل أي نشر."
@@ -279,99 +372,6 @@
         {
           "query": "\"Riyadh November Meetup - IGDA Saudi Arabia\" \"Riyadh\" tickets",
           "url": "https://www.google.com/search?q=%22Riyadh%20November%20Meetup%20-%20IGDA%20Saudi%20Arabia%22%20%22Riyadh%22%20tickets"
-        }
-      ],
-      "next_action": "ابحث في المصادر الرسمية المستهدفة واربط lead بمصدر رسمي قبل أي نشر."
-    },
-    {
-      "lead_id": "candidate-eventbrite-saudi-founders-pitch-night-b2b-networking-founders-professionals-20261208-eade835c",
-      "title": "Founders Pitch Night",
-      "city": "Riyadh",
-      "starts_at": "2026-12-08T19:00:00+03:00",
-      "source_label": "Eventbrite Saudi Arabia",
-      "discovery_quality": "strong-lead",
-      "discovery_score": 70,
-      "discovery_notes": "saudi-location-signal, specific-venue, event-topic-fit",
-      "resolver_priority": 109,
-      "target_sources": [
-        {
-          "id": "informa-connect-saudi-events",
-          "name": "Informa Connect Saudi Event Portfolio",
-          "url": "https://informaconnect.com/",
-          "domain": "informaconnect.com",
-          "trust_level": "official",
-          "source_type": "conference-organizer",
-          "score": 48
-        },
-        {
-          "id": "saudi-contractors-authority-events",
-          "name": "Saudi Contractors Authority Events",
-          "url": "https://www.sca.gov.sa/",
-          "domain": "sca.gov.sa",
-          "trust_level": "official",
-          "source_type": "government-calendar",
-          "score": 48
-        },
-        {
-          "id": "asharqia-chamber-events",
-          "name": "Asharqia Chamber Events",
-          "url": "https://www.chamber.org.sa/sites/Arabic/Events/ChamberEvents/Pages/AllChamberEvents.aspx",
-          "domain": "chamber.org.sa",
-          "trust_level": "official",
-          "source_type": "venue-calendar",
-          "score": 40
-        },
-        {
-          "id": "invest-saudi-events",
-          "name": "Invest Saudi Events",
-          "url": "https://www.investsaudi.sa/events",
-          "domain": "investsaudi.sa",
-          "trust_level": "official",
-          "source_type": "government-calendar",
-          "score": 40
-        },
-        {
-          "id": "jcci-events-center",
-          "name": "Jeddah Chamber Exhibitions and Events Center",
-          "url": "https://www.jcci.org.sa/en/المعارض-والفعاليات",
-          "domain": "jcci.org.sa",
-          "trust_level": "venue-official",
-          "source_type": "venue-calendar",
-          "score": 40
-        }
-      ],
-      "searches": [
-        {
-          "query": "site:informaconnect.com \"Founders Pitch Night\" \"Riyadh\"",
-          "url": "https://www.google.com/search?q=site%3Ainformaconnect.com%20%22Founders%20Pitch%20Night%22%20%22Riyadh%22"
-        },
-        {
-          "query": "site:sca.gov.sa \"Founders Pitch Night\" \"Riyadh\"",
-          "url": "https://www.google.com/search?q=site%3Asca.gov.sa%20%22Founders%20Pitch%20Night%22%20%22Riyadh%22"
-        },
-        {
-          "query": "site:chamber.org.sa \"Founders Pitch Night\" \"Riyadh\"",
-          "url": "https://www.google.com/search?q=site%3Achamber.org.sa%20%22Founders%20Pitch%20Night%22%20%22Riyadh%22"
-        },
-        {
-          "query": "site:investsaudi.sa \"Founders Pitch Night\" \"Riyadh\"",
-          "url": "https://www.google.com/search?q=site%3Ainvestsaudi.sa%20%22Founders%20Pitch%20Night%22%20%22Riyadh%22"
-        },
-        {
-          "query": "site:jcci.org.sa \"Founders Pitch Night\" \"Riyadh\"",
-          "url": "https://www.google.com/search?q=site%3Ajcci.org.sa%20%22Founders%20Pitch%20Night%22%20%22Riyadh%22"
-        },
-        {
-          "query": "\"Founders Pitch Night\" \"Riyadh\" official",
-          "url": "https://www.google.com/search?q=%22Founders%20Pitch%20Night%22%20%22Riyadh%22%20official"
-        },
-        {
-          "query": "\"Founders Pitch Night\" \"Riyadh\" organizer",
-          "url": "https://www.google.com/search?q=%22Founders%20Pitch%20Night%22%20%22Riyadh%22%20organizer"
-        },
-        {
-          "query": "\"Founders Pitch Night\" \"Riyadh\" tickets",
-          "url": "https://www.google.com/search?q=%22Founders%20Pitch%20Night%22%20%22Riyadh%22%20tickets"
         }
       ],
       "next_action": "ابحث في المصادر الرسمية المستهدفة واربط lead بمصدر رسمي قبل أي نشر."
