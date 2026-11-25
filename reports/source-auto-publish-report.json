@@ -1,18 +1,18 @@
 {
-  "published_at": "2026-11-24T21:39:17.433Z",
+  "published_at": "2026-11-25T11:32:40.958Z",
   "dry_run": false,
   "include_partner": true,
   "source_candidates": "data/source_candidates.json",
   "events_catalog": "data/events_catalog.json",
-  "candidates_seen": 356,
+  "candidates_seen": 355,
   "totals": {
-    "candidates_seen": 356,
-    "published": 6,
-    "linked_existing": 323,
+    "candidates_seen": 355,
+    "published": 4,
+    "linked_existing": 324,
     "blocked": 27,
     "duplicate_review_alerts": 1,
     "category_fallback_alerts": 0,
-    "reconciled": 329,
+    "reconciled": 328,
     "session_windows_reconciled": 0
   },
   "session_window_changes": [],
@@ -53,11 +53,6 @@
       "title": "الاخطبوطية كيدز"
     },
     {
-      "candidate_id": "candidate-visit-saudi-calendar-al-ahsa-esports-tournament-20261124-6128d29c",
-      "event_id": "event-al-ahsa-esports-tournament",
-      "title": "Al Ahsa Esports Tournament"
-    },
-    {
       "candidate_id": "candidate-visit-saudi-calendar-pdf-مكونات-البخور-20261126-4a38d19e",
       "event_id": "event-مكونات-البخور",
       "title": "مكونات البخور"
@@ -66,11 +61,6 @@
       "candidate_id": "candidate-visit-saudi-calendar-pdf-حفل-أصيل-هميم-يف-فوكالي-الرياض-20261127-4a38d19e",
       "event_id": "event-حفل-أصيل-هميم-يف-فوكالي-الرياض",
       "title": "حفل أصيل هميم يف فوكالي الرياض"
-    },
-    {
-      "candidate_id": "candidate-visit-saudi-seasons-abdulmajeed-abdullah-equestrian-concert-20261127-331ecc7e",
-      "event_id": "event-abdulmajeed-abdullah-equestrian-concert",
-      "title": "Abdulmajeed Abdullah - Equestrian Concert"
     }
   ],
   "linked_existing": [
@@ -741,6 +731,12 @@
       "reason": "already linked to catalog event"
     },
     {
+      "candidate_id": "candidate-visit-saudi-calendar-al-ahsa-esports-tournament-20261124-6128d29c",
+      "event_id": "event-al-ahsa-esports-tournament",
+      "title": "Al Ahsa Esports Tournament",
+      "reason": "already linked to catalog event"
+    },
+    {
       "candidate_id": "candidate-ithra-events-the-art-of-islamic-illumination-20261124-4d93707e",
       "event_id": "event-the-art-of-islamic-illumination",
       "title": "The Art of Islamic Illumination",
@@ -762,12 +758,6 @@
       "candidate_id": "candidate-visit-saudi-calendar-pdf-بطولة-تي-100-للترايثلون-20261125-4a38d19e",
       "event_id": "event-بطولة-تي-100-للترايثلون",
       "title": "بطولة تي 100 للترايثلون",
-      "reason": "already linked to catalog event"
-    },
-    {
-      "candidate_id": "candidate-qassim-university-events-الذكاء-الاصطناعي-الرشيد-في-البحث-العلمي-باستخدام-leapspace-جزء-2-20261125-47091611",
-      "event_id": "event-الذكاء-الاصطناعي-الرشيد-في-البحث-العلمي-باستخدام-leapspace-جزء-2",
-      "title": "الذكاء الاصطناعي الرشيد في البحث العلمي باستخدام LeapSpace – جزء 2",
       "reason": "already linked to catalog event"
     },
     {
@@ -1038,6 +1028,12 @@
       "candidate_id": "candidate-ithra-events-sand-sculpturing-20261127-fee46d95",
       "event_id": "event-sand-sculpturing",
       "title": "Sand Sculpturing",
+      "reason": "already linked to catalog event"
+    },
+    {
+      "candidate_id": "candidate-visit-saudi-seasons-abdulmajeed-abdullah-equestrian-concert-20261127-331ecc7e",
+      "event_id": "event-abdulmajeed-abdullah-equestrian-concert",
+      "title": "Abdulmajeed Abdullah - Equestrian Concert",
       "reason": "already linked to catalog event"
     },
     {

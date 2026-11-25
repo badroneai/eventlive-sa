@@ -1,6 +1,6 @@
 # EventLive Source Collection Report
 
-- collected_at: 2026-11-24T21:33:33.032Z
+- collected_at: 2026-11-25T11:26:13.997Z
 - dry_run: false
 - time_scope: current-and-upcoming-only
 - ended_collection_enabled: false
@@ -11,7 +11,7 @@
 - sources_deferred: 35
 - ended_min_year: 2022
 - candidates_discovered: 182
-- candidates_written: 356
+- candidates_written: 355
 - ended_events_discovered: 0
 - ended_events_written: 0
 - ended_events_preserved: 762
@@ -19,19 +19,19 @@
 
 | Source | Status | Duration | Active | Ended | Past skipped | New | Refreshed | Missing latest | Snapshot | Note |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---|---|
-| visit-saudi-calendar | ok | 2s | 20 | 0 | 0 | 14 | 6 | 0 | data/raw/source-snapshots/visit-saudi-calendar-2026-11-24T21-33-33-032Z.json |  |
-| experience-alula-events | ok | 5s | 5 | 0 | 4 | 0 | 5 | 0 | data/raw/source-snapshots/experience-alula-events-2026-11-24T21-33-33-032Z.html |  |
-| mdlbeast-events | ok | 0s | 2 | 0 | 37 | 0 | 2 | 0 | data/raw/source-snapshots/mdlbeast-events-2026-11-24T21-33-33-032Z.html |  |
-| rfecc-whats-on | ok | 21s | 2 | 0 | 18 | 0 | 2 | 0 | data/raw/source-snapshots/rfecc-whats-on-2026-11-24T21-33-33-032Z.html |  |
-| visit-saudi-seasons | ok | 0s | 13 | 0 | 0 | 1 | 12 | 0 | data/raw/source-snapshots/visit-saudi-seasons-2026-11-24T21-33-33-032Z.json |  |
-| dhahran-expo-calendar | ok | 1s | 5 | 0 | 14 | 0 | 5 | 0 | data/raw/source-snapshots/dhahran-expo-calendar-2026-11-24T21-33-33-032Z.html |  |
-| ithra-events | ok | 1s | 66 | 0 | 183 | 27 | 39 | 0 | data/raw/source-snapshots/ithra-events-2026-11-24T21-33-33-032Z.json |  |
-| visit-saudi-calendar-pdf | ok | 1s | 58 | 0 | 18 | 0 | 58 | 0 | data/raw/source-snapshots/visit-saudi-calendar-pdf-2026-11-24T21-33-33-032Z.xml | Recovered via direct-pdf official evidence. |
-| riyadh-city-events | ok | 12s | 0 | 0 | 0 | 0 | 0 | 0 | data/raw/source-snapshots/riyadh-city-events-2026-11-24T21-33-33-032Z.html | No future date-complete candidates found by the conservative extractor. |
-| jazan-chamber-events | ok | 3s | 1 | 0 | 4 | 0 | 1 | 0 | data/raw/source-snapshots/jazan-chamber-events-2026-11-24T21-33-33-032Z.json |  |
-| umm-al-qura-events | ok | 13s | 3 | 0 | 6 | 0 | 3 | 0 | data/raw/source-snapshots/umm-al-qura-events-2026-11-24T21-33-33-032Z.html |  |
-| madinah-architecture-festival | ok | 1s | 1 | 0 | 0 | 0 | 1 | 0 | data/raw/source-snapshots/madinah-architecture-festival-2026-11-24T21-33-33-032Z.html |  |
-| hayy-jameel-events | ok | 279s | 6 | 0 | 0 | 0 | 6 | 0 | data/raw/source-snapshots/hayy-jameel-events-2026-11-24T21-33-33-032Z.html |  |
+| visit-saudi-calendar | ok | 2s | 20 | 0 | 0 | 13 | 7 | 0 | data/raw/source-snapshots/visit-saudi-calendar-2026-11-25T11-26-13-997Z.json |  |
+| experience-alula-events | ok | 5s | 5 | 0 | 4 | 0 | 5 | 0 | data/raw/source-snapshots/experience-alula-events-2026-11-25T11-26-13-997Z.html |  |
+| mdlbeast-events | ok | 0s | 2 | 0 | 37 | 0 | 2 | 0 | data/raw/source-snapshots/mdlbeast-events-2026-11-25T11-26-13-997Z.html |  |
+| rfecc-whats-on | ok | 21s | 2 | 0 | 18 | 0 | 2 | 0 | data/raw/source-snapshots/rfecc-whats-on-2026-11-25T11-26-13-997Z.html |  |
+| visit-saudi-seasons | ok | 0s | 13 | 0 | 0 | 0 | 13 | 0 | data/raw/source-snapshots/visit-saudi-seasons-2026-11-25T11-26-13-997Z.json |  |
+| dhahran-expo-calendar | ok | 1s | 5 | 0 | 14 | 0 | 5 | 0 | data/raw/source-snapshots/dhahran-expo-calendar-2026-11-25T11-26-13-997Z.html |  |
+| ithra-events | ok | 1s | 66 | 0 | 183 | 0 | 66 | 0 | data/raw/source-snapshots/ithra-events-2026-11-25T11-26-13-997Z.json |  |
+| visit-saudi-calendar-pdf | ok | 1s | 58 | 0 | 18 | 0 | 58 | 0 | data/raw/source-snapshots/visit-saudi-calendar-pdf-2026-11-25T11-26-13-997Z.xml | Recovered via direct-pdf official evidence. |
+| riyadh-city-events | ok | 14s | 0 | 0 | 0 | 0 | 0 | 0 | data/raw/source-snapshots/riyadh-city-events-2026-11-25T11-26-13-997Z.html | No future date-complete candidates found by the conservative extractor. |
+| jazan-chamber-events | ok | 5s | 1 | 0 | 4 | 0 | 1 | 0 | data/raw/source-snapshots/jazan-chamber-events-2026-11-25T11-26-13-997Z.json |  |
+| umm-al-qura-events | ok | 13s | 3 | 0 | 6 | 0 | 3 | 0 | data/raw/source-snapshots/umm-al-qura-events-2026-11-25T11-26-13-997Z.html |  |
+| madinah-architecture-festival | ok | 1s | 1 | 0 | 0 | 0 | 1 | 0 | data/raw/source-snapshots/madinah-architecture-festival-2026-11-25T11-26-13-997Z.html |  |
+| hayy-jameel-events | ok | 316s | 6 | 0 | 0 | 0 | 6 | 0 | data/raw/source-snapshots/hayy-jameel-events-2026-11-25T11-26-13-997Z.html |  |
 
 ## Deferred By Adaptive Cadence
 

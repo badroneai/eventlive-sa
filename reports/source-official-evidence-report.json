@@ -1,6 +1,6 @@
 {
   "schema": "eventlive.source-official-evidence-report.v1",
-  "generated_at": "2026-11-24T21:39:13.689Z",
+  "generated_at": "2026-11-25T11:32:35.880Z",
   "source_candidates": "data/source_candidates.json",
   "source_evidence": "data/source_official_evidence.json",
   "totals": {
@@ -20,7 +20,7 @@
       "id": "middle-east-enterprise-ai-summit-2026",
       "status": "failed",
       "matched": 0,
-      "note": "Required official title/date/venue tokens did not all match. Fetch: HTTP 404"
+      "note": "Required official title/date/venue tokens did not all match."
     },
     {
       "id": "jeddah-fintech-week-2026",

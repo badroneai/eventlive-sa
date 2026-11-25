@@ -1,6 +1,6 @@
 # EventLive Source Ops Report
 
-- generated_at: 2026-11-24T21:50:33.199Z
+- generated_at: 2026-11-25T11:45:04.696Z
 - registry: data/source_registry.json
 - candidates: data/source_candidates.json
 - catalog: data/events_catalog.json
@@ -21,22 +21,22 @@
 - Healthy sources: 12
 - Zero-yield sources: 1
 - High-priority unattempted sources: 3
-- Candidates: 356
+- Candidates: 355
 - Actionable candidates: 2
 - Ready for review: 2
 - Ready for catalog promotion: 0
-- Linked to catalog from candidates: 333
+- Linked to catalog from candidates: 332
 - Stale unpublished candidates: 0
 - Duplicate risk: 1
 - Recommendation: ابدأ بمراجعة التكرارات المحتملة قبل اعتماد أي مرشح جديد.
 
 ## Candidate Funnel
 
-- review_status.approved-for-catalog: 333
+- review_status.approved-for-catalog: 332
 - review_status.ready-for-review: 2
 - review_status.new: 14
 - review_status.evidence-captured: 7
-- publication_gate.catalog-review: 333
+- publication_gate.catalog-review: 332
 - publication_gate.duplicate-review: 1
 - publication_gate.source-evidence: 21
 - publication_gate.human-review: 1
@@ -148,7 +148,7 @@
 | 77 | LEAP Official Event and Agendas | not-collected | 0 | 0 | أضف جامعاً محافظاً أو تحقق من قابلية القراءة العامة. |
 | 78 | FII 10th Edition Official Program | not-collected | 0 | 0 | أضف جامعاً محافظاً أو تحقق من قابلية القراءة العامة. |
 | 79 | Cityscape Global Official Program | not-collected | 0 | 0 | افتح مسار شراكة أو تغذية رسمية قبل الأتمتة. |
-| 80 | Qassim University Events | deferred | 0 | 2 | مؤجل حتى 2026-11-27T10:08:37.957Z وفق الجدولة التكيفية. |
+| 80 | Qassim University Events | deferred | 0 | 1 | مؤجل حتى 2026-11-27T10:08:37.957Z وفق الجدولة التكيفية. |
 | 81 | Jouf University Summer Programs | deferred | 0 | 0 | مؤجل حتى 2026-11-26T11:12:14.818Z وفق الجدولة التكيفية. |
 | 82 | Money20/20 Middle East Official Agendas | not-collected | 0 | 0 | أضف جامعاً محافظاً أو تحقق من قابلية القراءة العامة. |
 | 83 | Madinah Chamber Events | deferred | 0 | 0 | مؤجل حتى 2026-11-26T11:12:14.818Z وفق الجدولة التكيفية. |

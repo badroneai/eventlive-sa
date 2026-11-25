@@ -1,5 +1,5 @@
 {
-  "collected_at": "2026-11-24T21:33:33.032Z",
+  "collected_at": "2026-11-25T11:26:13.997Z",
   "dry_run": false,
   "source_registry": "data/source_registry.json",
   "source_candidates": "data/source_candidates.json",
@@ -20,7 +20,7 @@
   "candidates_discovered": 182,
   "ended_events_discovered": 0,
   "past_rows_skipped": 284,
-  "candidates_written": 356,
+  "candidates_written": 355,
   "ended_events_written": 0,
   "ended_events_preserved": 762,
   "sources": [
@@ -28,24 +28,24 @@
       "id": "visit-saudi-calendar",
       "status": "ok",
       "extracted": 20,
-      "snapshot_path": "data/raw/source-snapshots/visit-saudi-calendar-2026-11-24T21-33-33-032Z.json",
+      "snapshot_path": "data/raw/source-snapshots/visit-saudi-calendar-2026-11-25T11-26-13-997Z.json",
       "note": "",
       "fetch_mode": "direct",
-      "source_existing_active": 10,
-      "new_candidates": 14,
-      "refreshed_candidates": 6,
+      "source_existing_active": 11,
+      "new_candidates": 13,
+      "refreshed_candidates": 7,
       "missing_from_latest_run": 0,
-      "approved_linked_preserved": 10,
+      "approved_linked_preserved": 11,
       "ended_extracted": 0,
       "ended_new": 0,
       "past_rows_skipped": 0,
-      "duration_ms": 1848
+      "duration_ms": 1753
     },
     {
       "id": "experience-alula-events",
       "status": "ok",
       "extracted": 5,
-      "snapshot_path": "data/raw/source-snapshots/experience-alula-events-2026-11-24T21-33-33-032Z.html",
+      "snapshot_path": "data/raw/source-snapshots/experience-alula-events-2026-11-25T11-26-13-997Z.html",
       "note": "",
       "fetch_mode": "direct",
       "source_existing_active": 10,
@@ -56,13 +56,13 @@
       "ended_extracted": 0,
       "ended_new": 0,
       "past_rows_skipped": 4,
-      "duration_ms": 4601
+      "duration_ms": 5132
     },
     {
       "id": "mdlbeast-events",
       "status": "ok",
       "extracted": 2,
-      "snapshot_path": "data/raw/source-snapshots/mdlbeast-events-2026-11-24T21-33-33-032Z.html",
+      "snapshot_path": "data/raw/source-snapshots/mdlbeast-events-2026-11-25T11-26-13-997Z.html",
       "note": "",
       "fetch_mode": "direct",
       "source_existing_active": 4,
@@ -73,13 +73,13 @@
       "ended_extracted": 0,
       "ended_new": 0,
       "past_rows_skipped": 37,
-      "duration_ms": 116
+      "duration_ms": 125
     },
     {
       "id": "rfecc-whats-on",
       "status": "ok",
       "extracted": 2,
-      "snapshot_path": "data/raw/source-snapshots/rfecc-whats-on-2026-11-24T21-33-33-032Z.html",
+      "snapshot_path": "data/raw/source-snapshots/rfecc-whats-on-2026-11-25T11-26-13-997Z.html",
       "note": "",
       "fetch_mode": "direct",
       "source_existing_active": 2,
@@ -90,30 +90,30 @@
       "ended_extracted": 0,
       "ended_new": 0,
       "past_rows_skipped": 18,
-      "duration_ms": 20907
+      "duration_ms": 21129
     },
     {
       "id": "visit-saudi-seasons",
       "status": "ok",
       "extracted": 13,
-      "snapshot_path": "data/raw/source-snapshots/visit-saudi-seasons-2026-11-24T21-33-33-032Z.json",
+      "snapshot_path": "data/raw/source-snapshots/visit-saudi-seasons-2026-11-25T11-26-13-997Z.json",
       "note": "",
       "fetch_mode": "direct",
-      "source_existing_active": 12,
-      "new_candidates": 1,
-      "refreshed_candidates": 12,
+      "source_existing_active": 13,
+      "new_candidates": 0,
+      "refreshed_candidates": 13,
       "missing_from_latest_run": 0,
-      "approved_linked_preserved": 11,
+      "approved_linked_preserved": 12,
       "ended_extracted": 0,
       "ended_new": 0,
       "past_rows_skipped": 0,
-      "duration_ms": 105
+      "duration_ms": 80
     },
     {
       "id": "dhahran-expo-calendar",
       "status": "ok",
       "extracted": 5,
-      "snapshot_path": "data/raw/source-snapshots/dhahran-expo-calendar-2026-11-24T21-33-33-032Z.html",
+      "snapshot_path": "data/raw/source-snapshots/dhahran-expo-calendar-2026-11-25T11-26-13-997Z.html",
       "note": "",
       "fetch_mode": "direct",
       "source_existing_active": 7,
@@ -124,30 +124,30 @@
       "ended_extracted": 0,
       "ended_new": 0,
       "past_rows_skipped": 14,
-      "duration_ms": 975
+      "duration_ms": 594
     },
     {
       "id": "ithra-events",
       "status": "ok",
       "extracted": 66,
-      "snapshot_path": "data/raw/source-snapshots/ithra-events-2026-11-24T21-33-33-032Z.json",
+      "snapshot_path": "data/raw/source-snapshots/ithra-events-2026-11-25T11-26-13-997Z.json",
       "note": "",
       "fetch_mode": "direct",
       "source_existing_active": 85,
-      "new_candidates": 27,
-      "refreshed_candidates": 39,
+      "new_candidates": 0,
+      "refreshed_candidates": 66,
       "missing_from_latest_run": 0,
       "approved_linked_preserved": 85,
       "ended_extracted": 0,
       "ended_new": 0,
       "past_rows_skipped": 183,
-      "duration_ms": 1205
+      "duration_ms": 1153
     },
     {
       "id": "visit-saudi-calendar-pdf",
       "status": "ok",
       "extracted": 58,
-      "snapshot_path": "data/raw/source-snapshots/visit-saudi-calendar-pdf-2026-11-24T21-33-33-032Z.xml",
+      "snapshot_path": "data/raw/source-snapshots/visit-saudi-calendar-pdf-2026-11-25T11-26-13-997Z.xml",
       "note": "Recovered via direct-pdf official evidence.",
       "fetch_mode": "direct-pdf",
       "source_existing_active": 72,
@@ -158,13 +158,13 @@
       "ended_extracted": 0,
       "ended_new": 0,
       "past_rows_skipped": 18,
-      "duration_ms": 1093
+      "duration_ms": 1356
     },
     {
       "id": "riyadh-city-events",
       "status": "ok",
       "extracted": 0,
-      "snapshot_path": "data/raw/source-snapshots/riyadh-city-events-2026-11-24T21-33-33-032Z.html",
+      "snapshot_path": "data/raw/source-snapshots/riyadh-city-events-2026-11-25T11-26-13-997Z.html",
       "note": "No future date-complete candidates found by the conservative extractor.",
       "fetch_mode": "direct",
       "source_existing_active": 19,
@@ -175,13 +175,13 @@
       "ended_extracted": 0,
       "ended_new": 0,
       "past_rows_skipped": 0,
-      "duration_ms": 12365
+      "duration_ms": 14313
     },
     {
       "id": "jazan-chamber-events",
       "status": "ok",
       "extracted": 1,
-      "snapshot_path": "data/raw/source-snapshots/jazan-chamber-events-2026-11-24T21-33-33-032Z.json",
+      "snapshot_path": "data/raw/source-snapshots/jazan-chamber-events-2026-11-25T11-26-13-997Z.json",
       "note": "",
       "fetch_mode": "direct",
       "source_existing_active": 1,
@@ -192,13 +192,13 @@
       "ended_extracted": 0,
       "ended_new": 0,
       "past_rows_skipped": 4,
-      "duration_ms": 2795
+      "duration_ms": 5241
     },
     {
       "id": "umm-al-qura-events",
       "status": "ok",
       "extracted": 3,
-      "snapshot_path": "data/raw/source-snapshots/umm-al-qura-events-2026-11-24T21-33-33-032Z.html",
+      "snapshot_path": "data/raw/source-snapshots/umm-al-qura-events-2026-11-25T11-26-13-997Z.html",
       "note": "",
       "fetch_mode": "direct",
       "source_existing_active": 47,
@@ -209,13 +209,13 @@
       "ended_extracted": 0,
       "ended_new": 0,
       "past_rows_skipped": 6,
-      "duration_ms": 13127
+      "duration_ms": 12766
     },
     {
       "id": "madinah-architecture-festival",
       "status": "ok",
       "extracted": 1,
-      "snapshot_path": "data/raw/source-snapshots/madinah-architecture-festival-2026-11-24T21-33-33-032Z.html",
+      "snapshot_path": "data/raw/source-snapshots/madinah-architecture-festival-2026-11-25T11-26-13-997Z.html",
       "note": "",
       "fetch_mode": "direct",
       "source_existing_active": 1,
@@ -226,13 +226,13 @@
       "ended_extracted": 0,
       "ended_new": 0,
       "past_rows_skipped": 0,
-      "duration_ms": 1453
+      "duration_ms": 1447
     },
     {
       "id": "hayy-jameel-events",
       "status": "ok",
       "extracted": 6,
-      "snapshot_path": "data/raw/source-snapshots/hayy-jameel-events-2026-11-24T21-33-33-032Z.html",
+      "snapshot_path": "data/raw/source-snapshots/hayy-jameel-events-2026-11-25T11-26-13-997Z.html",
       "note": "",
       "fetch_mode": "direct",
       "source_existing_active": 10,
@@ -243,7 +243,7 @@
       "ended_extracted": 0,
       "ended_new": 0,
       "past_rows_skipped": 0,
-      "duration_ms": 279495
+      "duration_ms": 316267
     }
   ],
   "deferred_sources": [

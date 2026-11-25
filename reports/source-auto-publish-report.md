@@ -1,11 +1,11 @@
 # EventLive Source Auto Publish Report
 
-- published_at: 2026-11-24T21:39:17.433Z
+- published_at: 2026-11-25T11:32:40.958Z
 - dry_run: false
 - include_partner: true
-- candidates_seen: 356
-- published_new: 6
-- linked_existing: 323
+- candidates_seen: 355
+- published_new: 4
+- linked_existing: 324
 - blocked_remaining: 27
 - duplicate_review_alerts: 1
 
@@ -23,10 +23,8 @@
 |---|---|---|---|
 | candidate-visit-saudi-calendar-pdf-سيرك-فونتانا-20260916-4a38d19e | published | event-سيرك-فونتانا | سيرك فونتانا |
 | candidate-visit-saudi-calendar-pdf-الاخطبوطية-كيدز-20260925-4a38d19e | published | event-الاخطبوطية-كيدز | الاخطبوطية كيدز |
-| candidate-visit-saudi-calendar-al-ahsa-esports-tournament-20261124-6128d29c | published | event-al-ahsa-esports-tournament | Al Ahsa Esports Tournament |
 | candidate-visit-saudi-calendar-pdf-مكونات-البخور-20261126-4a38d19e | published | event-مكونات-البخور | مكونات البخور |
 | candidate-visit-saudi-calendar-pdf-حفل-أصيل-هميم-يف-فوكالي-الرياض-20261127-4a38d19e | published | event-حفل-أصيل-هميم-يف-فوكالي-الرياض | حفل أصيل هميم يف فوكالي الرياض |
-| candidate-visit-saudi-seasons-abdulmajeed-abdullah-equestrian-concert-20261127-331ecc7e | published | event-abdulmajeed-abdullah-equestrian-concert | Abdulmajeed Abdullah - Equestrian Concert |
 | candidate-moc-cultural-subportals-skill-development-initiative-20210714-10f7dc2c | linked-existing | event-skill-development-initiative | already linked to catalog event |
 | candidate-moc-cultural-subportals-sitar-20220921-cda2e068 | linked-existing | event-sitar | already linked to catalog event |
 | candidate-moc-cultural-subportals-the-saudi-music-hub-20250101-10d8a675 | linked-existing | event-the-saudi-music-hub | already linked to catalog event |
@@ -138,11 +136,11 @@
 | candidate-riyadh-city-events-solar-storage-live-20261123-9b428053 | linked-existing | event-solar-storage-live | already linked to catalog event |
 | candidate-umm-al-qura-events-الترشح-للدبلوم-المتوسط-امن-المعلومات-حضوري-بالتعاون-مع-جمعية-الرياض-للتن-20261123-1b46965d | linked-existing | event-الترشح-للدبلوم-المتوسط-امن-المعلومات-حضوري-بالتعاون-مع-جمعية-الرياض-للتن | already linked to catalog event |
 | candidate-riyadh-city-events-general-aviation-airshow-aero-middle-east-x-sand-fun-20261124-517c200d | linked-existing | event-general-aviation-airshow-aero-middle-east-x-sand-fun | already linked to catalog event |
+| candidate-visit-saudi-calendar-al-ahsa-esports-tournament-20261124-6128d29c | linked-existing | event-al-ahsa-esports-tournament | already linked to catalog event |
 | candidate-ithra-events-the-art-of-islamic-illumination-20261124-4d93707e | linked-existing | event-the-art-of-islamic-illumination | already linked to catalog event |
 | candidate-ithra-events-ithra-readers-club-20261124-59a0cf0c | linked-existing | event-ithra-readers-club | already linked to catalog event |
 | candidate-visit-saudi-calendar-pdf-السينما-عن-قرب-20261125-4a38d19e | linked-existing | event-السينما-عن-قرب | already linked to catalog event |
 | candidate-visit-saudi-calendar-pdf-بطولة-تي-100-للترايثلون-20261125-4a38d19e | linked-existing | event-بطولة-تي-100-للترايثلون | already linked to catalog event |
-| candidate-qassim-university-events-الذكاء-الاصطناعي-الرشيد-في-البحث-العلمي-باستخدام-leapspace-جزء-2-20261125-47091611 | linked-existing | event-الذكاء-الاصطناعي-الرشيد-في-البحث-العلمي-باستخدام-leapspace-جزء-2 | already linked to catalog event |
 | candidate-ithra-events-aramcorama-exhibit-20261125-854df5c1 | linked-existing | event-aramcorama-exhibit | already linked to catalog event |
 | candidate-ithra-events-childrens-museum-20261125-7da7af7c | linked-existing | event-childrens-museum | already linked to catalog event |
 | candidate-ithra-events-echoes-of-the-familiar-20261125-cc43c2bd | linked-existing | event-echoes-of-the-familiar | already linked to catalog event |
@@ -188,6 +186,7 @@
 | candidate-experience-alula-events-hegra-childrens-tour-20261127-1258c39a | linked-existing | event-hegra-childrens-tour | already linked to catalog event |
 | candidate-ithra-events-rammed-earth-20261127-20508056 | linked-existing | event-rammed-earth | already linked to catalog event |
 | candidate-ithra-events-sand-sculpturing-20261127-fee46d95 | linked-existing | event-sand-sculpturing | already linked to catalog event |
+| candidate-visit-saudi-seasons-abdulmajeed-abdullah-equestrian-concert-20261127-331ecc7e | linked-existing | event-abdulmajeed-abdullah-equestrian-concert | already linked to catalog event |
 | candidate-visit-saudi-calendar-wagef-momos-live-in-jeddah-20261127-59470a9a | linked-existing | event-wagef-momos-live-in-jeddah | already linked to catalog event |
 | candidate-experience-alula-events-fei-endurance-world-championship-2026-20261128-febe29ec | linked-existing | event-fei-endurance-world-championship-2026 | already linked to catalog event |
 | candidate-hayy-jameel-events-hayy-cinema-aflam-sudan-x-hayy-cinema-20261128-e942a21a | linked-existing | event-hayy-cinema-aflam-sudan-x-hayy-cinema | already linked to catalog event |

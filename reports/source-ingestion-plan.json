@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-24T21:50:32.878Z",
+  "generated_at": "2026-11-25T11:45:04.444Z",
   "source_registry": "data/source_registry.json",
   "source_collection_report": "reports/source-collection-report.json",
   "totals": {
@@ -2146,7 +2146,7 @@
       "last_probe_score": 0,
       "last_probe_recommendation": "",
       "last_probe_blocked_reason": "",
-      "known_candidates": 2,
+      "known_candidates": 1,
       "next_action": "Use as a discovery anchor, then reconcile against organizer, ticketing, and catalog duplicates."
     },
     {
