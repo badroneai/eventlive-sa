@@ -1,41 +1,43 @@
 # EventLive Harvest OS Status
 
-- Generated at: 2026-11-25T11:55:14.129Z
+- Generated at: 2026-11-25T21:24:01.191Z
 - Status: NEEDS_WORK
 - Operating rule: Probe before new sources; sample before full harvest; Raw collection is not publication; discovery-only never auto-publishes.
 
 ## Totals
 
 - Sources: 88
-- Candidates: 355
-- Matched candidates: 332
+- Candidates: 351
+- Matched candidates: 330
 - Auto-publish sources: 15
 - Candidate-only sources: 12
 - Partnership-required sources: 5
-- Productive sources / attempted: 12/13
-- Collector errors: 9 (chronic 9, transient 0)
+- Productive sources / attempted: 12/30
+- Collector errors: 8 (chronic 8, transient 0)
 
 ## Publication Funnel
 
 | Stage | Count |
 | --- | --- |
-| discovered_this_run | 182 |
-| candidate_queue | 355 |
-| evaluated_for_publish | 355 |
-| linked_existing | 324 |
-| published_new | 4 |
+| discovered_this_run | 188 |
+| candidate_queue | 351 |
+| evaluated_for_publish | 351 |
+| linked_existing | 319 |
+| published_new | 5 |
 | blocked | 27 |
 | secondary_promoted | 0 |
-| secondary_still_blocked | 23 |
+| secondary_still_blocked | 22 |
 
 ## Blocked Reasons
 
 | Reason | Count |
 | --- | --- |
-| unknown category requires review | 15 |
+| unknown category requires review | 13 |
 | publication gate source-evidence is not auto-publishable | 6 |
 | linked catalog row event-rolling-podcast was superseded by dedupe | 2 |
+| possible duplicate already exists: event-annual-kaust-basketball-league-2026 | 1 |
 | possible duplicate requires review: exact-title-city-source-conflict | 1 |
+| possible duplicate already exists: event-السينما-عن-قرب | 1 |
 | linked catalog row event-book-nook-zone was superseded by dedupe | 1 |
 | linked catalog row event-music-festival-mdlbeast-soundstorm was superseded by dedupe | 1 |
 | not an attendable event: enrolment-announcement | 1 |
@@ -44,15 +46,14 @@
 
 | Source | Kind | Failed runs in a row | Attempted this run | Reason |
 | --- | --- | --- | --- | --- |
-| mos-events | chronic | 81 | no | collector-error: fetch failed [ETIMEDOUT, ENETUNREACH]; live browser recovery deferred by recent failed probe cooldown |
-| saudi-pro-league-fixtures | chronic | 61 | no | collector-error: fetch failed [EAI_AGAIN] |
-| tuwaiq-academy-bootcamps | chronic | 58 | no | collector-error: HTTP 403 |
-| qassim-chamber-events | chronic | 27 | no | collector-error: HTTP 403 |
-| moc-cultural-calendar | chronic | 13 | no | collector-error: fetch failed [ETIMEDOUT, ENETUNREACH]; fetch failed [ETIMEDOUT, ENETUNREACH] |
-| moc-cultural-subportals | chronic | 13 | no | collector-error: fetch failed [ETIMEDOUT, ENETUNREACH]; fetch failed [ETIMEDOUT, ENETUNREACH] |
-| monshaat-events | chronic | 12 | no | collector-error: fetch failed [UND_ERR_CONNECT_TIMEOUT]; fetch failed [UND_ERR_CONNECT_TIMEOUT] |
-| misk-hub-programs | chronic | 4 | no | collector-error: HTTP 403; live browser recovery deferred by recent failed probe cooldown |
-| saudi-space-agency-events | chronic | 4 | no | collector-error: fetch failed [UNABLE_TO_VERIFY_LEAF_SIGNATURE] |
+| mos-events | chronic | 82 | yes | collector-error: fetch failed [ETIMEDOUT, ENETUNREACH]; live browser recovery deferred by recent failed probe cooldown |
+| saudi-pro-league-fixtures | chronic | 62 | yes | collector-error: fetch failed [EAI_AGAIN] |
+| tuwaiq-academy-bootcamps | chronic | 59 | yes | collector-error: HTTP 403 |
+| qassim-chamber-events | chronic | 28 | yes | collector-error: HTTP 403 |
+| moc-cultural-calendar | chronic | 14 | yes | collector-error: fetch failed [ETIMEDOUT, ENETUNREACH]; fetch failed [ETIMEDOUT, ENETUNREACH] |
+| moc-cultural-subportals | chronic | 14 | yes | collector-error: fetch failed [ETIMEDOUT, ENETUNREACH]; fetch failed [ETIMEDOUT, ENETUNREACH] |
+| monshaat-events | chronic | 13 | yes | collector-error: fetch failed [UND_ERR_CONNECT_TIMEOUT]; fetch failed [UND_ERR_CONNECT_TIMEOUT] |
+| saudi-space-agency-events | chronic | 5 | yes | collector-error: fetch failed [UNABLE_TO_VERIFY_LEAF_SIGNATURE] |
 
 | Source | Policy | Trust | Gate |
 | --- | --- | --- | --- |

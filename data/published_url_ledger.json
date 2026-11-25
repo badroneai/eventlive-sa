@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "generated_at": "2026-11-25T11:48:46.033Z",
+  "generated_at": "2026-11-25T21:16:27.948Z",
   "events": {
     "event-skill-development-initiative": {
       "identity": "skill development initiative|riyadh|2021-07-14",
@@ -552,11 +552,6 @@
       "first_seen": "2026-11-24",
       "last_seen": "2026-11-25"
     },
-    "event-annual-kaust-basketball-league-2026": {
-      "identity": "annual kaust basketball league 2026|thuwal|2026-10-25",
-      "first_seen": "2026-10-16",
-      "last_seen": "2026-11-25"
-    },
     "event-معسكر-تطوير-حلول-الذكاء-الاصطناعي": {
       "identity": "معسكر تطوير حلول الذكاء الاصطناعي|riyadh|2026-10-25",
       "first_seen": "2026-08-02",
@@ -617,6 +612,11 @@
       "first_seen": "2026-10-29",
       "last_seen": "2026-11-25"
     },
+    "event-hayy-cinema-november-2026": {
+      "identity": "hayy cinema | november 2026|jeddah|2026-11-01",
+      "first_seen": "2026-11-02",
+      "last_seen": "2026-11-25"
+    },
     "event-the-little-farmer": {
       "identity": "the little farmer|al ahsa|2026-11-01",
       "first_seen": "2026-11-09",
@@ -640,11 +640,6 @@
     "event-esports-nations-cup": {
       "identity": "esports nations cup|riyadh|2026-11-02",
       "first_seen": "2026-07-11",
-      "last_seen": "2026-11-25"
-    },
-    "event-hayy-cinema-november-2026": {
-      "identity": "hayy cinema | november 2026|jeddah|2026-11-04",
-      "first_seen": "2026-11-02",
       "last_seen": "2026-11-25"
     },
     "event-jameel-library-november-community-programmes": {
@@ -827,11 +822,6 @@
       "first_seen": "2026-11-05",
       "last_seen": "2026-11-25"
     },
-    "event-solar-storage-live": {
-      "identity": "solar & storage live|riyadh|2026-11-23",
-      "first_seen": "2026-07-11",
-      "last_seen": "2026-11-25"
-    },
     "event-الترشح-للدبلوم-المتوسط-امن-المعلومات-حضوري-بالتعاون-مع-جمعية-الرياض-للتن": {
       "identity": "الترشح للدبلوم المتوسط امن المعلومات (حضوري) بالتعاون مع جمعية الرياض للتنمية والدراسات والخدمات الاستشارية|makkah|2026-11-23",
       "first_seen": "2026-08-23",
@@ -852,19 +842,9 @@
       "first_seen": "2026-07-11",
       "last_seen": "2026-11-25"
     },
-    "event-السينما-عن-قرب": {
-      "identity": "السينما عن قرب|jeddah|2026-11-25",
-      "first_seen": "2026-11-24",
-      "last_seen": "2026-11-25"
-    },
     "event-بطولة-تي-100-للترايثلون": {
       "identity": "بطولة تي 100 للترايثلون|alula|2026-11-25",
       "first_seen": "2026-11-24",
-      "last_seen": "2026-11-25"
-    },
-    "event-استراتيجيات-النمو-عبر-snap-chat-tiktok-والذكاء-الاصطناعي": {
-      "identity": "استراتيجيات النمو عبر snap chat & tiktok والذكاء الاصطناعي|jazan|2026-11-25",
-      "first_seen": "2026-11-23",
       "last_seen": "2026-11-25"
     },
     "event-family-game-audience-challenges": {
@@ -1190,6 +1170,11 @@
     "event-إنجاز-العمل-باحترافية-بمساعدة-الذكاء-الاصطناعي": {
       "identity": "إنجاز العمل باحترافية بمساعدة الذكاء الاصطناعي|makkah|2026-12-10",
       "first_seen": "2026-11-20",
+      "last_seen": "2026-11-25"
+    },
+    "event-hayy-makers-creative-night-new-year-new-vision": {
+      "identity": "hayy makers | creative night: new year, new vision|jeddah|2026-12-10",
+      "first_seen": "2026-11-25",
       "last_seen": "2026-11-25"
     },
     "event-بطولة-الفنون-القتالية": {
@@ -1612,14 +1597,29 @@
       "first_seen": "2026-08-06",
       "last_seen": "2026-11-25"
     },
+    "event-استراتيجيات-النمو-عبر-snap-chat-tiktok-والذكاء-الاصطناعي": {
+      "identity": "استراتيجيات النمو عبر snap chat & tiktok والذكاء الاصطناعي|jazan|2026-11-25",
+      "first_seen": "2026-11-23",
+      "last_seen": "2026-11-25"
+    },
     "event-الذكاء-الاصطناعي-الرشيد-في-البحث-العلمي-باستخدام-leapspace-جزء-2": {
       "identity": "الذكاء الاصطناعي الرشيد في البحث العلمي باستخدام leapspace – جزء 2|buraydah|2026-11-25",
       "first_seen": "2026-11-20",
       "last_seen": "2026-11-25"
     },
+    "event-السينما-عن-قرب": {
+      "identity": "السينما عن قرب|jeddah|2026-11-25",
+      "first_seen": "2026-11-24",
+      "last_seen": "2026-11-25"
+    },
     "event-mosaic-mural": {
       "identity": "mosaic mural|dhahran|2026-11-23",
       "first_seen": "2026-11-23",
+      "last_seen": "2026-11-25"
+    },
+    "event-solar-storage-live": {
+      "identity": "solar & storage live|riyadh|2026-11-23",
+      "first_seen": "2026-07-11",
       "last_seen": "2026-11-25"
     },
     "event-family-game-dots-on-letters": {
@@ -2610,6 +2610,11 @@
     "event-global-proptech-summit-2026": {
       "identity": "global proptech summit 2026|riyadh|2026-10-25",
       "first_seen": "2026-07-11",
+      "last_seen": "2026-11-25"
+    },
+    "event-annual-kaust-basketball-league-2026": {
+      "identity": "annual kaust basketball league 2026|thuwal|2026-10-25",
+      "first_seen": "2026-10-16",
       "last_seen": "2026-11-25"
     },
     "event-أكمل-الفراغ-التالي": {

@@ -1,11 +1,11 @@
 {
-  "generated_at": "2026-11-25T11:39:57.741Z",
+  "generated_at": "2026-11-25T21:06:22.221Z",
   "source_ops_report": "reports/source-ops-report.json",
   "source_registry": "data/source_registry.json",
   "totals": {
     "leads_seen": 10,
     "tasks": 6,
-    "high_priority": 4
+    "high_priority": 2
   },
   "tasks": [
     {
@@ -191,192 +191,6 @@
       "next_action": "ابحث في المصادر الرسمية المستهدفة واربط lead بمصدر رسمي قبل أي نشر."
     },
     {
-      "lead_id": "candidate-eventbrite-saudi-majarahs-10th-meetup-لقاء-مجرة-العاشر-20261125-e9e0120e",
-      "title": "Majarah's 10th Meetup – لقاء مجرة العاشر",
-      "city": "Riyadh",
-      "starts_at": "2026-11-25T18:00:00+03:00",
-      "source_label": "Eventbrite Saudi Arabia",
-      "discovery_quality": "strong-lead",
-      "discovery_score": 70,
-      "discovery_notes": "saudi-location-signal, specific-venue, event-topic-fit",
-      "resolver_priority": 122,
-      "target_sources": [
-        {
-          "id": "code-mcit-programs",
-          "name": "CODE MCIT Programs",
-          "url": "https://code.mcit.gov.sa/en/our-programs",
-          "domain": "code.mcit.gov.sa",
-          "trust_level": "official",
-          "source_type": "government-calendar",
-          "score": 28
-        },
-        {
-          "id": "cst-events-news",
-          "name": "CST Events and News",
-          "url": "https://www.cst.gov.sa/en",
-          "domain": "cst.gov.sa",
-          "trust_level": "official",
-          "source_type": "government-calendar",
-          "score": 28
-        },
-        {
-          "id": "diriyah-season",
-          "name": "Diriyah Season",
-          "url": "https://diriyahseason.sa/en",
-          "domain": "diriyahseason.sa",
-          "trust_level": "official",
-          "source_type": "organizer-calendar",
-          "score": 28
-        },
-        {
-          "id": "enjoy-saudi-events",
-          "name": "Enjoy Saudi Events",
-          "url": "https://enjoy.sa/ar/",
-          "domain": "enjoy.sa",
-          "trust_level": "official",
-          "source_type": "government-calendar",
-          "score": 28
-        },
-        {
-          "id": "fii10-official-program",
-          "name": "FII 10th Edition Official Program",
-          "url": "https://fii-institute.org/conference/fii-10th-edition/",
-          "domain": "fii-institute.org",
-          "trust_level": "official",
-          "source_type": "conference-organizer",
-          "score": 28
-        }
-      ],
-      "searches": [
-        {
-          "query": "site:code.mcit.gov.sa \"Majarah's 10th Meetup – لقاء مجرة العاشر\" \"Riyadh\"",
-          "url": "https://www.google.com/search?q=site%3Acode.mcit.gov.sa%20%22Majarah's%2010th%20Meetup%20%E2%80%93%20%D9%84%D9%82%D8%A7%D8%A1%20%D9%85%D8%AC%D8%B1%D8%A9%20%D8%A7%D9%84%D8%B9%D8%A7%D8%B4%D8%B1%22%20%22Riyadh%22"
-        },
-        {
-          "query": "site:cst.gov.sa \"Majarah's 10th Meetup – لقاء مجرة العاشر\" \"Riyadh\"",
-          "url": "https://www.google.com/search?q=site%3Acst.gov.sa%20%22Majarah's%2010th%20Meetup%20%E2%80%93%20%D9%84%D9%82%D8%A7%D8%A1%20%D9%85%D8%AC%D8%B1%D8%A9%20%D8%A7%D9%84%D8%B9%D8%A7%D8%B4%D8%B1%22%20%22Riyadh%22"
-        },
-        {
-          "query": "site:diriyahseason.sa \"Majarah's 10th Meetup – لقاء مجرة العاشر\" \"Riyadh\"",
-          "url": "https://www.google.com/search?q=site%3Adiriyahseason.sa%20%22Majarah's%2010th%20Meetup%20%E2%80%93%20%D9%84%D9%82%D8%A7%D8%A1%20%D9%85%D8%AC%D8%B1%D8%A9%20%D8%A7%D9%84%D8%B9%D8%A7%D8%B4%D8%B1%22%20%22Riyadh%22"
-        },
-        {
-          "query": "site:enjoy.sa \"Majarah's 10th Meetup – لقاء مجرة العاشر\" \"Riyadh\"",
-          "url": "https://www.google.com/search?q=site%3Aenjoy.sa%20%22Majarah's%2010th%20Meetup%20%E2%80%93%20%D9%84%D9%82%D8%A7%D8%A1%20%D9%85%D8%AC%D8%B1%D8%A9%20%D8%A7%D9%84%D8%B9%D8%A7%D8%B4%D8%B1%22%20%22Riyadh%22"
-        },
-        {
-          "query": "site:fii-institute.org \"Majarah's 10th Meetup – لقاء مجرة العاشر\" \"Riyadh\"",
-          "url": "https://www.google.com/search?q=site%3Afii-institute.org%20%22Majarah's%2010th%20Meetup%20%E2%80%93%20%D9%84%D9%82%D8%A7%D8%A1%20%D9%85%D8%AC%D8%B1%D8%A9%20%D8%A7%D9%84%D8%B9%D8%A7%D8%B4%D8%B1%22%20%22Riyadh%22"
-        },
-        {
-          "query": "\"Majarah's 10th Meetup – لقاء مجرة العاشر\" \"Riyadh\" official",
-          "url": "https://www.google.com/search?q=%22Majarah's%2010th%20Meetup%20%E2%80%93%20%D9%84%D9%82%D8%A7%D8%A1%20%D9%85%D8%AC%D8%B1%D8%A9%20%D8%A7%D9%84%D8%B9%D8%A7%D8%B4%D8%B1%22%20%22Riyadh%22%20official"
-        },
-        {
-          "query": "\"Majarah's 10th Meetup – لقاء مجرة العاشر\" \"Riyadh\" organizer",
-          "url": "https://www.google.com/search?q=%22Majarah's%2010th%20Meetup%20%E2%80%93%20%D9%84%D9%82%D8%A7%D8%A1%20%D9%85%D8%AC%D8%B1%D8%A9%20%D8%A7%D9%84%D8%B9%D8%A7%D8%B4%D8%B1%22%20%22Riyadh%22%20organizer"
-        },
-        {
-          "query": "\"Majarah's 10th Meetup – لقاء مجرة العاشر\" \"Riyadh\" tickets",
-          "url": "https://www.google.com/search?q=%22Majarah's%2010th%20Meetup%20%E2%80%93%20%D9%84%D9%82%D8%A7%D8%A1%20%D9%85%D8%AC%D8%B1%D8%A9%20%D8%A7%D9%84%D8%B9%D8%A7%D8%B4%D8%B1%22%20%22Riyadh%22%20tickets"
-        }
-      ],
-      "next_action": "ابحث في المصادر الرسمية المستهدفة واربط lead بمصدر رسمي قبل أي نشر."
-    },
-    {
-      "lead_id": "candidate-eventbrite-saudi-riyadh-november-meetup-igda-saudi-arabia-20261125-426d4bf8",
-      "title": "Riyadh November Meetup - IGDA Saudi Arabia",
-      "city": "Riyadh",
-      "starts_at": "2026-11-25T19:00:00+03:00",
-      "source_label": "Eventbrite Saudi Arabia",
-      "discovery_quality": "strong-lead",
-      "discovery_score": 70,
-      "discovery_notes": "saudi-location-signal, specific-venue, event-topic-fit",
-      "resolver_priority": 122,
-      "target_sources": [
-        {
-          "id": "code-mcit-programs",
-          "name": "CODE MCIT Programs",
-          "url": "https://code.mcit.gov.sa/en/our-programs",
-          "domain": "code.mcit.gov.sa",
-          "trust_level": "official",
-          "source_type": "government-calendar",
-          "score": 28
-        },
-        {
-          "id": "cst-events-news",
-          "name": "CST Events and News",
-          "url": "https://www.cst.gov.sa/en",
-          "domain": "cst.gov.sa",
-          "trust_level": "official",
-          "source_type": "government-calendar",
-          "score": 28
-        },
-        {
-          "id": "diriyah-season",
-          "name": "Diriyah Season",
-          "url": "https://diriyahseason.sa/en",
-          "domain": "diriyahseason.sa",
-          "trust_level": "official",
-          "source_type": "organizer-calendar",
-          "score": 28
-        },
-        {
-          "id": "enjoy-saudi-events",
-          "name": "Enjoy Saudi Events",
-          "url": "https://enjoy.sa/ar/",
-          "domain": "enjoy.sa",
-          "trust_level": "official",
-          "source_type": "government-calendar",
-          "score": 28
-        },
-        {
-          "id": "fii10-official-program",
-          "name": "FII 10th Edition Official Program",
-          "url": "https://fii-institute.org/conference/fii-10th-edition/",
-          "domain": "fii-institute.org",
-          "trust_level": "official",
-          "source_type": "conference-organizer",
-          "score": 28
-        }
-      ],
-      "searches": [
-        {
-          "query": "site:code.mcit.gov.sa \"Riyadh November Meetup - IGDA Saudi Arabia\" \"Riyadh\"",
-          "url": "https://www.google.com/search?q=site%3Acode.mcit.gov.sa%20%22Riyadh%20November%20Meetup%20-%20IGDA%20Saudi%20Arabia%22%20%22Riyadh%22"
-        },
-        {
-          "query": "site:cst.gov.sa \"Riyadh November Meetup - IGDA Saudi Arabia\" \"Riyadh\"",
-          "url": "https://www.google.com/search?q=site%3Acst.gov.sa%20%22Riyadh%20November%20Meetup%20-%20IGDA%20Saudi%20Arabia%22%20%22Riyadh%22"
-        },
-        {
-          "query": "site:diriyahseason.sa \"Riyadh November Meetup - IGDA Saudi Arabia\" \"Riyadh\"",
-          "url": "https://www.google.com/search?q=site%3Adiriyahseason.sa%20%22Riyadh%20November%20Meetup%20-%20IGDA%20Saudi%20Arabia%22%20%22Riyadh%22"
-        },
-        {
-          "query": "site:enjoy.sa \"Riyadh November Meetup - IGDA Saudi Arabia\" \"Riyadh\"",
-          "url": "https://www.google.com/search?q=site%3Aenjoy.sa%20%22Riyadh%20November%20Meetup%20-%20IGDA%20Saudi%20Arabia%22%20%22Riyadh%22"
-        },
-        {
-          "query": "site:fii-institute.org \"Riyadh November Meetup - IGDA Saudi Arabia\" \"Riyadh\"",
-          "url": "https://www.google.com/search?q=site%3Afii-institute.org%20%22Riyadh%20November%20Meetup%20-%20IGDA%20Saudi%20Arabia%22%20%22Riyadh%22"
-        },
-        {
-          "query": "\"Riyadh November Meetup - IGDA Saudi Arabia\" \"Riyadh\" official",
-          "url": "https://www.google.com/search?q=%22Riyadh%20November%20Meetup%20-%20IGDA%20Saudi%20Arabia%22%20%22Riyadh%22%20official"
-        },
-        {
-          "query": "\"Riyadh November Meetup - IGDA Saudi Arabia\" \"Riyadh\" organizer",
-          "url": "https://www.google.com/search?q=%22Riyadh%20November%20Meetup%20-%20IGDA%20Saudi%20Arabia%22%20%22Riyadh%22%20organizer"
-        },
-        {
-          "query": "\"Riyadh November Meetup - IGDA Saudi Arabia\" \"Riyadh\" tickets",
-          "url": "https://www.google.com/search?q=%22Riyadh%20November%20Meetup%20-%20IGDA%20Saudi%20Arabia%22%20%22Riyadh%22%20tickets"
-        }
-      ],
-      "next_action": "ابحث في المصادر الرسمية المستهدفة واربط lead بمصدر رسمي قبل أي نشر."
-    },
-    {
       "lead_id": "candidate-eventbrite-saudi-12th-middle-east-banking-ai-analytics-summit-2027-20270120-518da338",
       "title": "12th Middle East Banking AI & Analytics Summit 2027",
       "city": "Riyadh",
@@ -470,6 +284,99 @@
       "next_action": "ابحث في المصادر الرسمية المستهدفة واربط lead بمصدر رسمي قبل أي نشر."
     },
     {
+      "lead_id": "candidate-eventbrite-saudi-2nd-annual-bicsi-saudi-arabia-conference-and-exhibition-20270118-0b3055eb",
+      "title": "2nd Annual BICSI Saudi Arabia Conference and Exhibition",
+      "city": "Riyadh",
+      "starts_at": "2027-01-18T08:00:00+03:00",
+      "source_label": "Eventbrite Saudi Arabia",
+      "discovery_quality": "strong-lead",
+      "discovery_score": 70,
+      "discovery_notes": "saudi-location-signal, specific-venue, event-topic-fit",
+      "resolver_priority": 107,
+      "target_sources": [
+        {
+          "id": "rfecc-whats-on",
+          "name": "RFECC What's On",
+          "url": "https://rfecc.sa/whats-on/",
+          "domain": "rfecc.sa",
+          "trust_level": "venue-official",
+          "source_type": "venue-calendar",
+          "score": 76
+        },
+        {
+          "id": "ricec-events",
+          "name": "Riyadh International Convention and Exhibition Center",
+          "url": "https://www.ricec.com/",
+          "domain": "ricec.com",
+          "trust_level": "venue-official",
+          "source_type": "venue-calendar",
+          "score": 76
+        },
+        {
+          "id": "dhahran-expo-calendar",
+          "name": "Dhahran Expo Calendar",
+          "url": "https://dhahranexpo.com.sa",
+          "domain": "dhahranexpo.com.sa",
+          "trust_level": "venue-official",
+          "source_type": "venue-calendar",
+          "score": 68
+        },
+        {
+          "id": "informa-connect-saudi-events",
+          "name": "Informa Connect Saudi Event Portfolio",
+          "url": "https://informaconnect.com/",
+          "domain": "informaconnect.com",
+          "trust_level": "official",
+          "source_type": "conference-organizer",
+          "score": 66
+        },
+        {
+          "id": "saudi-water-authority-events",
+          "name": "Saudi Water Authority Events",
+          "url": "https://www.swa.gov.sa/en/events",
+          "domain": "swa.gov.sa",
+          "trust_level": "official",
+          "source_type": "government-calendar",
+          "score": 66
+        }
+      ],
+      "searches": [
+        {
+          "query": "site:rfecc.sa \"2nd Annual BICSI Saudi Arabia Conference and Exhibition\" \"Riyadh\"",
+          "url": "https://www.google.com/search?q=site%3Arfecc.sa%20%222nd%20Annual%20BICSI%20Saudi%20Arabia%20Conference%20and%20Exhibition%22%20%22Riyadh%22"
+        },
+        {
+          "query": "site:ricec.com \"2nd Annual BICSI Saudi Arabia Conference and Exhibition\" \"Riyadh\"",
+          "url": "https://www.google.com/search?q=site%3Aricec.com%20%222nd%20Annual%20BICSI%20Saudi%20Arabia%20Conference%20and%20Exhibition%22%20%22Riyadh%22"
+        },
+        {
+          "query": "site:dhahranexpo.com.sa \"2nd Annual BICSI Saudi Arabia Conference and Exhibition\" \"Riyadh\"",
+          "url": "https://www.google.com/search?q=site%3Adhahranexpo.com.sa%20%222nd%20Annual%20BICSI%20Saudi%20Arabia%20Conference%20and%20Exhibition%22%20%22Riyadh%22"
+        },
+        {
+          "query": "site:informaconnect.com \"2nd Annual BICSI Saudi Arabia Conference and Exhibition\" \"Riyadh\"",
+          "url": "https://www.google.com/search?q=site%3Ainformaconnect.com%20%222nd%20Annual%20BICSI%20Saudi%20Arabia%20Conference%20and%20Exhibition%22%20%22Riyadh%22"
+        },
+        {
+          "query": "site:swa.gov.sa \"2nd Annual BICSI Saudi Arabia Conference and Exhibition\" \"Riyadh\"",
+          "url": "https://www.google.com/search?q=site%3Aswa.gov.sa%20%222nd%20Annual%20BICSI%20Saudi%20Arabia%20Conference%20and%20Exhibition%22%20%22Riyadh%22"
+        },
+        {
+          "query": "\"2nd Annual BICSI Saudi Arabia Conference and Exhibition\" \"Riyadh\" official",
+          "url": "https://www.google.com/search?q=%222nd%20Annual%20BICSI%20Saudi%20Arabia%20Conference%20and%20Exhibition%22%20%22Riyadh%22%20official"
+        },
+        {
+          "query": "\"2nd Annual BICSI Saudi Arabia Conference and Exhibition\" \"Riyadh\" organizer",
+          "url": "https://www.google.com/search?q=%222nd%20Annual%20BICSI%20Saudi%20Arabia%20Conference%20and%20Exhibition%22%20%22Riyadh%22%20organizer"
+        },
+        {
+          "query": "\"2nd Annual BICSI Saudi Arabia Conference and Exhibition\" \"Riyadh\" tickets",
+          "url": "https://www.google.com/search?q=%222nd%20Annual%20BICSI%20Saudi%20Arabia%20Conference%20and%20Exhibition%22%20%22Riyadh%22%20tickets"
+        }
+      ],
+      "next_action": "ابحث في المصادر الرسمية المستهدفة واربط lead بمصدر رسمي قبل أي نشر."
+    },
+    {
       "lead_id": "candidate-eventbrite-saudi-livestock-future-expo-confrence-2027-20270328-556654be",
       "title": "Livestock Future Expo & Confrence 2027",
       "city": "Riyadh",
@@ -558,6 +465,99 @@
         {
           "query": "\"Livestock Future Expo & Confrence 2027\" \"Riyadh\" tickets",
           "url": "https://www.google.com/search?q=%22Livestock%20Future%20Expo%20%26%20Confrence%202027%22%20%22Riyadh%22%20tickets"
+        }
+      ],
+      "next_action": "ابحث في المصادر الرسمية المستهدفة واربط lead بمصدر رسمي قبل أي نشر."
+    },
+    {
+      "lead_id": "candidate-eventbrite-saudi-التعليم-العالي-في-ماليزيا-malaysian-higher-education-info-day-al-khobar-20270125-a581a7e7",
+      "title": "التعليم العالي في ماليزيا",
+      "city": "Khobar",
+      "starts_at": "2027-01-25T18:00:00+03:00",
+      "source_label": "Eventbrite Saudi Arabia",
+      "discovery_quality": "strong-lead",
+      "discovery_score": 70,
+      "discovery_notes": "saudi-location-signal, specific-venue, event-topic-fit",
+      "resolver_priority": 97,
+      "target_sources": [
+        {
+          "id": "asharqia-chamber-events",
+          "name": "Asharqia Chamber Events",
+          "url": "https://www.chamber.org.sa/sites/Arabic/Events/ChamberEvents/Pages/AllChamberEvents.aspx",
+          "domain": "chamber.org.sa",
+          "trust_level": "official",
+          "source_type": "venue-calendar",
+          "score": 28
+        },
+        {
+          "id": "dhahran-expo-calendar",
+          "name": "Dhahran Expo Calendar",
+          "url": "https://dhahranexpo.com.sa",
+          "domain": "dhahranexpo.com.sa",
+          "trust_level": "venue-official",
+          "source_type": "venue-calendar",
+          "score": 28
+        },
+        {
+          "id": "abha-chamber-events",
+          "name": "Abha Chamber Events",
+          "url": "https://abhacci.org.sa/Events",
+          "domain": "abhacci.org.sa",
+          "trust_level": "official",
+          "source_type": "venue-calendar",
+          "score": 20
+        },
+        {
+          "id": "aseer-season-asda",
+          "name": "Aseer Season / Asir Development Authority",
+          "url": "https://www.asda.gov.sa/",
+          "domain": "asda.gov.sa",
+          "trust_level": "official",
+          "source_type": "destination-calendar",
+          "score": 20
+        },
+        {
+          "id": "baha-amanah-events",
+          "name": "Baha Municipality Events",
+          "url": "https://baha.gov.sa/ar/Events",
+          "domain": "baha.gov.sa",
+          "trust_level": "official",
+          "source_type": "government-calendar",
+          "score": 20
+        }
+      ],
+      "searches": [
+        {
+          "query": "site:chamber.org.sa \"التعليم العالي في ماليزيا\" \"Khobar\"",
+          "url": "https://www.google.com/search?q=site%3Achamber.org.sa%20%22%D8%A7%D9%84%D8%AA%D8%B9%D9%84%D9%8A%D9%85%20%D8%A7%D9%84%D8%B9%D8%A7%D9%84%D9%8A%20%D9%81%D9%8A%20%D9%85%D8%A7%D9%84%D9%8A%D8%B2%D9%8A%D8%A7%22%20%22Khobar%22"
+        },
+        {
+          "query": "site:dhahranexpo.com.sa \"التعليم العالي في ماليزيا\" \"Khobar\"",
+          "url": "https://www.google.com/search?q=site%3Adhahranexpo.com.sa%20%22%D8%A7%D9%84%D8%AA%D8%B9%D9%84%D9%8A%D9%85%20%D8%A7%D9%84%D8%B9%D8%A7%D9%84%D9%8A%20%D9%81%D9%8A%20%D9%85%D8%A7%D9%84%D9%8A%D8%B2%D9%8A%D8%A7%22%20%22Khobar%22"
+        },
+        {
+          "query": "site:abhacci.org.sa \"التعليم العالي في ماليزيا\" \"Khobar\"",
+          "url": "https://www.google.com/search?q=site%3Aabhacci.org.sa%20%22%D8%A7%D9%84%D8%AA%D8%B9%D9%84%D9%8A%D9%85%20%D8%A7%D9%84%D8%B9%D8%A7%D9%84%D9%8A%20%D9%81%D9%8A%20%D9%85%D8%A7%D9%84%D9%8A%D8%B2%D9%8A%D8%A7%22%20%22Khobar%22"
+        },
+        {
+          "query": "site:asda.gov.sa \"التعليم العالي في ماليزيا\" \"Khobar\"",
+          "url": "https://www.google.com/search?q=site%3Aasda.gov.sa%20%22%D8%A7%D9%84%D8%AA%D8%B9%D9%84%D9%8A%D9%85%20%D8%A7%D9%84%D8%B9%D8%A7%D9%84%D9%8A%20%D9%81%D9%8A%20%D9%85%D8%A7%D9%84%D9%8A%D8%B2%D9%8A%D8%A7%22%20%22Khobar%22"
+        },
+        {
+          "query": "site:baha.gov.sa \"التعليم العالي في ماليزيا\" \"Khobar\"",
+          "url": "https://www.google.com/search?q=site%3Abaha.gov.sa%20%22%D8%A7%D9%84%D8%AA%D8%B9%D9%84%D9%8A%D9%85%20%D8%A7%D9%84%D8%B9%D8%A7%D9%84%D9%8A%20%D9%81%D9%8A%20%D9%85%D8%A7%D9%84%D9%8A%D8%B2%D9%8A%D8%A7%22%20%22Khobar%22"
+        },
+        {
+          "query": "\"التعليم العالي في ماليزيا\" \"Khobar\" official",
+          "url": "https://www.google.com/search?q=%22%D8%A7%D9%84%D8%AA%D8%B9%D9%84%D9%8A%D9%85%20%D8%A7%D9%84%D8%B9%D8%A7%D9%84%D9%8A%20%D9%81%D9%8A%20%D9%85%D8%A7%D9%84%D9%8A%D8%B2%D9%8A%D8%A7%22%20%22Khobar%22%20official"
+        },
+        {
+          "query": "\"التعليم العالي في ماليزيا\" \"Khobar\" organizer",
+          "url": "https://www.google.com/search?q=%22%D8%A7%D9%84%D8%AA%D8%B9%D9%84%D9%8A%D9%85%20%D8%A7%D9%84%D8%B9%D8%A7%D9%84%D9%8A%20%D9%81%D9%8A%20%D9%85%D8%A7%D9%84%D9%8A%D8%B2%D9%8A%D8%A7%22%20%22Khobar%22%20organizer"
+        },
+        {
+          "query": "\"التعليم العالي في ماليزيا\" \"Khobar\" tickets",
+          "url": "https://www.google.com/search?q=%22%D8%A7%D9%84%D8%AA%D8%B9%D9%84%D9%8A%D9%85%20%D8%A7%D9%84%D8%B9%D8%A7%D9%84%D9%8A%20%D9%81%D9%8A%20%D9%85%D8%A7%D9%84%D9%8A%D8%B2%D9%8A%D8%A7%22%20%22Khobar%22%20tickets"
         }
       ],
       "next_action": "ابحث في المصادر الرسمية المستهدفة واربط lead بمصدر رسمي قبل أي نشر."

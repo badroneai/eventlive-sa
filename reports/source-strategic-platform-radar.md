@@ -1,6 +1,6 @@
 # Strategic Platform Source Radar
 
-Generated at: 2026-11-24T12:38:25.901Z
+Generated at: 2026-11-25T20:42:38.717Z
 
 Policy: evidence refresh, API-surface mapping, and source strategy only. This radar does not auto-publish catalog events.
 
@@ -51,8 +51,8 @@ Policy: evidence refresh, API-surface mapping, and source strategy only. This ra
 - Project use: Keep in the 6-hour source ring; Arabic and English API payloads are reachable and useful for tourism-facing event discovery.
 - Title: تقويم السعودية | تابع العطلات والفعاليات المميزة - الموقع الرسمي للسياحة السعودية
 - Hint URLs: https://www.googletagmanager.com, https://cdn.consentmanager.net, https://delivery.consentmanager.net, https://www.googletagmanager.com/gtm.js?id=, https://www.clarity.ms/tag/, https://www.visitsaudi.com/images/SoundStorm-1.2e16d0ba.fill-1200x630.jpg, https://www.visitsaudi.com/ar/saudi-calendar, https://www.visitsaudi.com/ar
-  - API 200 https://www.visitsaudi.com/bin/api/v3/events?locale=ar: 18 items; معرض اللغة العربية 28, مزاد نادي الصقور السعودي, رحلة كثيب إلى بحيرة الأصفر, موسم سباقات الرياض, بوليڤارد وورلد في موسم الرياض
-  - API 200 https://www.visitsaudi.com/bin/api/v3/events?locale=en: 18 items; Arabic Language Exhibition 28, Saudi Falcons Club Auction, Katheeb Trip to Al-Asfar Lake, Riyadh Racing Season, BLVD World at Riyadh Season
+  - API 200 https://www.visitsaudi.com/bin/api/v3/events?locale=ar: 20 items; معرض اللغة العربية 28, مزاد نادي الصقور السعودي, رحلة كثيب إلى بحيرة الأصفر, موسم سباقات الرياض, بوليڤارد وورلد في موسم الرياض
+  - API 200 https://www.visitsaudi.com/bin/api/v3/events?locale=en: 20 items; Arabic Language Exhibition 28, Saudi Falcons Club Auction, Katheeb Trip to Al-Asfar Lake, Riyadh Racing Season, BLVD World at Riyadh Season
 
 ### webook Explore
 
@@ -61,7 +61,7 @@ Policy: evidence refresh, API-surface mapping, and source strategy only. This ra
 - Classification: protected (200, fetch)
 - Project use: Use for lead discovery, ticket-link corroboration, and duplicate checks; require official organizer or authority confirmation before promotion.
 - Title: -
-- Hint URLs: https://wbk-assets.webook.com, https://api.webook.com, https://webook.cmscloud.ai, https://geolocation.webook.com, https://images.me.cmscloud.ai, https://apps.apple.com/sa/app/webook-com-fun-things-to-do/id6468667896, https://play.google.com/store/apps/details?id=com.webook.android, https://wbk-assets.webook.com/8.52/assets/index-EzHV93xN.js
+- Hint URLs: https://wbk-assets.webook.com, https://api.webook.com, https://webook.cmscloud.ai, https://geolocation.webook.com, https://images.me.cmscloud.ai, https://apps.apple.com/sa/app/webook-com-fun-things-to-do/id6468667896, https://play.google.com/store/apps/details?id=com.webook.android, https://wbk-assets.webook.com/8.6/assets/index-DpVwjS1Q.js
 
 ### Enjoy Saudi
 

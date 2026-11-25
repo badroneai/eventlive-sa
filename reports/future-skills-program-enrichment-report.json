@@ -1,63 +1,36 @@
 {
-  "generated_at": "2026-11-25T11:32:52.005Z",
+  "generated_at": "2026-11-25T20:59:57.875Z",
   "catalog": "data/events_catalog.json",
   "totals": {
     "targets": 29,
-    "enriched": 22,
-    "failed": 7
+    "enriched": 19,
+    "failed": 10
   },
   "enriched": [
     {
-      "id": "event-cloud-computing-essentials-أساسيات-الحوسبة-السحابية",
-      "title": "Cloud Computing Essentials - أساسيات الحوسبة السحابية",
-      "group_id": "13043",
-      "goals": 1,
-      "features": 4,
-      "requirements": 4,
-      "metadata": 8
-    },
-    {
-      "id": "event-duplicate-of-cloud-computing-essentials-أساسيات-الحوسبة-السحابية",
-      "title": "Duplicate of Cloud Computing Essentials - أساسيات الحوسبة السحابية",
-      "group_id": "13044",
-      "goals": 1,
-      "features": 4,
-      "requirements": 4,
-      "metadata": 8
-    },
-    {
-      "id": "event-cloud-storage-and-databases-fundamentals-أساسيات-التخزين-السحابي-وقواعد-",
-      "title": "Cloud Storage and Databases Fundamentals - أساسيات التخزين السحابي وقواعد البيانات",
-      "group_id": "13045",
-      "goals": 1,
-      "features": 7,
-      "requirements": 4,
-      "metadata": 8
-    },
-    {
-      "id": "event-devops-fundamentals-for-cloud-environments-أساسيات-ديفوبس-لبيئات-السحابة",
-      "title": "DevOps Fundamentals for Cloud Environments-أساسيات ديفوبس لبيئات السحابة",
-      "group_id": "13046",
+      "id": "event-introduction-to-generative-ai-مقدمة-في-الذكاء-الاصطناعي-التوليدي",
+      "title": "Introduction to Generative AI-مقدمة في الذكاء الاصطناعي التوليدي",
+      "group_id": "13037",
       "goals": 1,
       "features": 3,
       "requirements": 4,
       "metadata": 8
     },
     {
-      "id": "event-cloud-security-operations-and-identity-management-عمليات-أمان-السحابة-وإ",
-      "title": "Cloud Security Operations and Identity Management - عمليات أمان السحابة وإدارة الهوية",
-      "group_id": "13047",
-      "goals": 1,
-      "features": 3,
-      "requirements": 4,
+      "id": "event-دورة-comptia-a",
+      "title": "دورة +CompTIA A",
+      "group_id": "13039",
+      "goals": 5,
+      "features": 15,
+      "requirements": 5,
       "metadata": 8
     },
     {
-      "id": "event-machine-learning-التعلم-الالي",
-      "title": "Machine Learning - التعلم الالي",
-      "group_id": "13048",
+      "id": "event-security-operations-threat-detection-incident-response-عمليات-الأمن-السي",
+      "title": "Security Operations, Threat Detection & Incident Response - عمليات الأمن السيبراني، واكتشاف التهديدات، والاستجابة للحوادث",
+      "group_id": "13040",
       "goals": 1,
-      "features": 5,
+      "features": 3,
       "requirements": 4,
       "metadata": 8
     },
@@ -208,24 +181,6 @@
   ],
   "failed": [
     {
-      "id": "event-introduction-to-generative-ai-مقدمة-في-الذكاء-الاصطناعي-التوليدي",
-      "title": "Introduction to Generative AI-مقدمة في الذكاء الاصطناعي التوليدي",
-      "group_id": "13037",
-      "reason": "The operation was aborted due to timeout"
-    },
-    {
-      "id": "event-دورة-comptia-a",
-      "title": "دورة +CompTIA A",
-      "group_id": "13039",
-      "reason": "The operation was aborted due to timeout"
-    },
-    {
-      "id": "event-security-operations-threat-detection-incident-response-عمليات-الأمن-السي",
-      "title": "Security Operations, Threat Detection & Incident Response - عمليات الأمن السيبراني، واكتشاف التهديدات، والاستجابة للحوادث",
-      "group_id": "13040",
-      "reason": "The operation was aborted due to timeout"
-    },
-    {
       "id": "event-أساسيات-الحوسبة-السحابية-cloud-computing-essentials",
       "title": "أساسيات الحوسبة السحابية - Cloud Computing Essentials",
       "group_id": "13035",
@@ -241,6 +196,42 @@
       "id": "event-comptia-a",
       "title": "CompTIA A+",
       "group_id": "13042",
+      "reason": "The operation was aborted due to timeout"
+    },
+    {
+      "id": "event-cloud-computing-essentials-أساسيات-الحوسبة-السحابية",
+      "title": "Cloud Computing Essentials - أساسيات الحوسبة السحابية",
+      "group_id": "13043",
+      "reason": "The operation was aborted due to timeout"
+    },
+    {
+      "id": "event-duplicate-of-cloud-computing-essentials-أساسيات-الحوسبة-السحابية",
+      "title": "Duplicate of Cloud Computing Essentials - أساسيات الحوسبة السحابية",
+      "group_id": "13044",
+      "reason": "The operation was aborted due to timeout"
+    },
+    {
+      "id": "event-cloud-storage-and-databases-fundamentals-أساسيات-التخزين-السحابي-وقواعد-",
+      "title": "Cloud Storage and Databases Fundamentals - أساسيات التخزين السحابي وقواعد البيانات",
+      "group_id": "13045",
+      "reason": "The operation was aborted due to timeout"
+    },
+    {
+      "id": "event-devops-fundamentals-for-cloud-environments-أساسيات-ديفوبس-لبيئات-السحابة",
+      "title": "DevOps Fundamentals for Cloud Environments-أساسيات ديفوبس لبيئات السحابة",
+      "group_id": "13046",
+      "reason": "The operation was aborted due to timeout"
+    },
+    {
+      "id": "event-cloud-security-operations-and-identity-management-عمليات-أمان-السحابة-وإ",
+      "title": "Cloud Security Operations and Identity Management - عمليات أمان السحابة وإدارة الهوية",
+      "group_id": "13047",
+      "reason": "The operation was aborted due to timeout"
+    },
+    {
+      "id": "event-machine-learning-التعلم-الالي",
+      "title": "Machine Learning - التعلم الالي",
+      "group_id": "13048",
       "reason": "The operation was aborted due to timeout"
     },
     {

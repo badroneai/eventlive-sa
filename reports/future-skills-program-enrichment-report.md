@@ -1,18 +1,15 @@
 # Future Skills Program Enrichment Report
 
-- generated_at: 2026-11-25T11:32:52.005Z
+- generated_at: 2026-11-25T20:59:57.875Z
 - targets: 29
-- enriched: 22
-- failed: 7
+- enriched: 19
+- failed: 10
 
 ## Enriched
 
-- Cloud Computing Essentials - أساسيات الحوسبة السحابية (13043) - outcomes=1, topics=4, requirements=4, metadata=8
-- Duplicate of Cloud Computing Essentials - أساسيات الحوسبة السحابية (13044) - outcomes=1, topics=4, requirements=4, metadata=8
-- Cloud Storage and Databases Fundamentals - أساسيات التخزين السحابي وقواعد البيانات (13045) - outcomes=1, topics=7, requirements=4, metadata=8
-- DevOps Fundamentals for Cloud Environments-أساسيات ديفوبس لبيئات السحابة (13046) - outcomes=1, topics=3, requirements=4, metadata=8
-- Cloud Security Operations and Identity Management - عمليات أمان السحابة وإدارة الهوية (13047) - outcomes=1, topics=3, requirements=4, metadata=8
-- Machine Learning - التعلم الالي (13048) - outcomes=1, topics=5, requirements=4, metadata=8
+- Introduction to Generative AI-مقدمة في الذكاء الاصطناعي التوليدي (13037) - outcomes=1, topics=3, requirements=4, metadata=8
+- دورة +CompTIA A (13039) - outcomes=5, topics=15, requirements=5, metadata=8
+- Security Operations, Threat Detection & Incident Response - عمليات الأمن السيبراني، واكتشاف التهديدات، والاستجابة للحوادث (13040) - outcomes=1, topics=3, requirements=4, metadata=8
 - GenAI for Data Analysis and Decision Support - الذكاء الاصطناعي التوليدي لتحليل البيانات ودعم اتخاذ القرار (13049) - outcomes=1, topics=2, requirements=4, metadata=8
 - CompTIA Cloud+ (13050) - outcomes=1, topics=19, requirements=4, metadata=8
 - Virtualization & Cloud Infrastructure Basics - الافتراضية والبنية التحتية السحابية (13051) - outcomes=1, topics=3, requirements=4, metadata=8
@@ -32,10 +29,13 @@
 
 ## Failed
 
-- Introduction to Generative AI-مقدمة في الذكاء الاصطناعي التوليدي (13037) - The operation was aborted due to timeout
-- دورة +CompTIA A (13039) - The operation was aborted due to timeout
-- Security Operations, Threat Detection & Incident Response - عمليات الأمن السيبراني، واكتشاف التهديدات، والاستجابة للحوادث (13040) - The operation was aborted due to timeout
 - أساسيات الحوسبة السحابية - Cloud Computing Essentials (13035) - The operation was aborted due to timeout
 - Advanced Excel for Data Analysis - دورة اكسيل لتحليل البيانات (13041) - The operation was aborted due to timeout
 - CompTIA A+ (13042) - The operation was aborted due to timeout
+- Cloud Computing Essentials - أساسيات الحوسبة السحابية (13043) - The operation was aborted due to timeout
+- Duplicate of Cloud Computing Essentials - أساسيات الحوسبة السحابية (13044) - The operation was aborted due to timeout
+- Cloud Storage and Databases Fundamentals - أساسيات التخزين السحابي وقواعد البيانات (13045) - The operation was aborted due to timeout
+- DevOps Fundamentals for Cloud Environments-أساسيات ديفوبس لبيئات السحابة (13046) - The operation was aborted due to timeout
+- Cloud Security Operations and Identity Management - عمليات أمان السحابة وإدارة الهوية (13047) - The operation was aborted due to timeout
+- Machine Learning - التعلم الالي (13048) - The operation was aborted due to timeout
 - Linux Administration (13057) - HTTP 404
