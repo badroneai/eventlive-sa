@@ -1,13 +1,14 @@
 # EventLive Visit Saudi Image Identity Report
 
-- generated_at: 2026-11-25T20:59:53.889Z
+- generated_at: 2026-11-26T11:06:49.531Z
 - pdf_crop_assignments: 65
-- verified: 64
-- struck: 1
-- slots_seen_this_cycle: 71
+- verified: 63
+- struck: 2
+- slots_seen_this_cycle: 70
 
 ## Struck (fell back to generated cover)
 
+- السينما عن قرب (visit-saudi-summer-2026-p038-bottom-left.jpg) - slot-vacated - no dated card currently occupies page 38 bottom-left of https://www.visitsaudi.com/content/dam/documents/saudi-calendar-ar.pdf
 - يو إف سي (visit-saudi-summer-2026-p006-bottom-left.jpg) - identity-mismatch - page 6 bottom-left is now "يو إف سي"
 
 ## Verified
@@ -33,7 +34,6 @@
 - شتاًء إثراًء يف الظهران اكسبو (visit-saudi-summer-2026-p053-bottom-right.jpg)
 - موسم ملح القصب الرابع (visit-saudi-summer-2026-p063-top-right.jpg)
 - متاهة الحصن (visit-saudi-summer-2026-p005-bottom-left.jpg)
-- السينما عن قرب (visit-saudi-summer-2026-p038-bottom-left.jpg)
 - بطولة تي 100 للترايثلون (visit-saudi-summer-2026-p083-top-right.jpg)
 - أبو سارة و سري الخالد يف ليالي الديرة الكوميدية (visit-saudi-summer-2026-p006-top-right.jpg)
 - دخول مسائي حصري إىل دادان (visit-saudi-summer-2026-p039-bottom-right.jpg)

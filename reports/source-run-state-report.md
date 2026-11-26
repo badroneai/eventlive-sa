@@ -1,6 +1,6 @@
 # EventLive Source Run State
 
-Generated at: 2026-11-25T21:12:25.969Z
+Generated at: 2026-11-26T11:18:52.825Z
 
 ## Operating Rule
 
@@ -9,12 +9,12 @@ Raw collection is not publication. Every source run preserves evidence, separate
 ## Totals
 
 - Sources: 88
-- Attempted this run: 30
-- Deferred by adaptive cadence: 18
-- Productive: 12
-- Zero-yield: 7
-- Collector errors: 8
-- Persistent collector errors: 8
+- Attempted this run: 13
+- Deferred by adaptive cadence: 35
+- Productive: 10
+- Zero-yield: 1
+- Collector errors: 1
+- Persistent collector errors: 9
 - Probe blocked: 1
 - Auto-publish eligible source lanes: 12
 
@@ -26,6 +26,7 @@ Raw collection is not publication. Every source run preserves evidence, separate
 | mos-events | collector-error | 0 | raw_harvest_to_candidate_queue | Fix collector error: fetch failed [ETIMEDOUT, ENETUNREACH]; live browser recovery deferred by recent failed probe cooldown |
 | monshaat-events | collector-error | 0 | raw_harvest_to_candidate_queue | Fix collector error: fetch failed [UND_ERR_CONNECT_TIMEOUT]; fetch failed [UND_ERR_CONNECT_TIMEOUT] |
 | tuwaiq-academy-bootcamps | collector-error | 0 | raw_harvest_to_candidate_queue | Fix collector error: HTTP 403 |
+| misk-hub-programs | collector-error | 0 | raw_harvest_to_candidate_queue | Fix collector error: HTTP 403; live browser recovery deferred by recent failed probe cooldown |
 | saudi-pro-league-fixtures | collector-error | 0 | raw_harvest_to_candidate_queue | Fix collector error: fetch failed [EAI_AGAIN] |
 | saudi-space-agency-events | collector-error | 0 | raw_harvest_to_candidate_queue | Fix collector error: fetch failed [UNABLE_TO_VERIFY_LEAF_SIGNATURE] |
 | moc-cultural-subportals | collector-error | 0 | raw_harvest_to_candidate_queue | Fix collector error: fetch failed [ETIMEDOUT, ENETUNREACH]; fetch failed [ETIMEDOUT, ENETUNREACH] |
@@ -41,7 +42,6 @@ Raw collection is not publication. Every source run preserves evidence, separate
 | middle-east-enterprise-ai-summit | probe-blocked | 0 | probe_before_collector | Do not bypass protection; keep as blocked/partnership candidate: bot-protection |
 | leap-official-agendas | probe-blocked | 0 | probe_before_collector | Do not bypass protection; keep as blocked/partnership candidate: http-403 |
 | code-mcit-programs | zero-yield | 87 | raw_harvest_to_candidate_queue | Zero-yield for 87 runs; inspect dropped samples or reclassify cadence if the source is seasonal/archive-only. |
-| jcci-events-center | zero-yield | 87 | raw_harvest_to_candidate_queue | Zero-yield for 87 runs; inspect dropped samples or reclassify cadence if the source is seasonal/archive-only. |
 
 ## Full Source State
 
@@ -67,7 +67,7 @@ Raw collection is not publication. Every source run preserves evidence, separate
 | 18 | riyadh-season | extractor-backlog | probe-blocked | 0 | no | Do not bypass protection; keep as blocked/partnership candidate: bot-protection |
 | 19 | visit-saudi-seasons | active-collector | productive | 13 | no | Continue periodic collection; dedupe and auto-publish only through the candidate gate. |
 | 20 | code-mcit-programs | active-collector | zero-yield | 0 | yes | Zero-yield for 87 runs; inspect dropped samples or reclassify cadence if the source is seasonal/archive-only. |
-| 21 | misk-hub-programs | active-collector | zero-yield | 0 | no | collector-error: HTTP 403 |
+| 21 | misk-hub-programs | active-collector | collector-error | 0 | no | Fix collector error: HTTP 403; live browser recovery deferred by recent failed probe cooldown |
 | 22 | dhahran-expo-calendar | active-collector | productive | 5 | no | Continue periodic collection; dedupe and auto-publish only through the candidate gate. |
 | 23 | ithra-events | active-collector | productive | 65 | yes | Continue periodic collection; dedupe and auto-publish only through the candidate gate. |
 | 24 | saudi-digital-academy | extractor-backlog | probe-blocked | 0 | no | Do not bypass protection; keep as blocked/partnership candidate: fetch failed getaddrinfo ENOTFOUND sda.edu.sa TypeError: fetch failed |

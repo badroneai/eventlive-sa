@@ -1,20 +1,18 @@
 # EventLive Source Auto Publish Report
 
-- published_at: 2026-11-25T20:59:47.415Z
+- published_at: 2026-11-26T11:06:44.424Z
 - dry_run: false
 - include_partner: true
-- candidates_seen: 351
-- published_new: 5
-- linked_existing: 319
-- blocked_remaining: 27
+- candidates_seen: 349
+- published_new: 4
+- linked_existing: 320
+- blocked_remaining: 25
 - duplicate_review_alerts: 1
 
 ## Blocked summary
 
-- possible duplicate already exists: event-annual-kaust-basketball-league-2026: 1
 - linked catalog row event-rolling-podcast was superseded by dedupe: 2
 - possible duplicate requires review: exact-title-city-source-conflict: 1
-- possible duplicate already exists: event-السينما-عن-قرب: 1
 - linked catalog row event-book-nook-zone was superseded by dedupe: 1
 - linked catalog row event-music-festival-mdlbeast-soundstorm was superseded by dedupe: 1
 - not an attendable event: enrolment-announcement: 1
@@ -27,7 +25,6 @@
 | candidate-visit-saudi-calendar-pdf-الاخطبوطية-كيدز-20260925-4a38d19e | published | event-الاخطبوطية-كيدز | الاخطبوطية كيدز |
 | candidate-visit-saudi-calendar-pdf-مكونات-البخور-20261126-4a38d19e | published | event-مكونات-البخور | مكونات البخور |
 | candidate-visit-saudi-calendar-pdf-حفل-أصيل-هميم-يف-فوكالي-الرياض-20261127-4a38d19e | published | event-حفل-أصيل-هميم-يف-فوكالي-الرياض | حفل أصيل هميم يف فوكالي الرياض |
-| candidate-hayy-jameel-events-hayy-makers-creative-night-new-year-new-vision-20261210-2181c0a7 | published | event-hayy-makers-creative-night-new-year-new-vision | Hayy Makers | Creative Night: New Year, New Vision |
 | candidate-moc-cultural-subportals-skill-development-initiative-20210714-10f7dc2c | linked-existing | event-skill-development-initiative | already linked to catalog event |
 | candidate-moc-cultural-subportals-sitar-20220921-cda2e068 | linked-existing | event-sitar | already linked to catalog event |
 | candidate-moc-cultural-subportals-the-saudi-music-hub-20250101-10d8a675 | linked-existing | event-the-saudi-music-hub | already linked to catalog event |
@@ -111,12 +108,12 @@
 | candidate-visit-saudi-calendar-pdf-دكة-نخل-20261101-4a38d19e | linked-existing | event-دكة-نخل | already linked to catalog event |
 | candidate-monshaat-events-لقاءات-شهر-نوفمبر-2026م-20261101-cfc0a691 | linked-existing | event-لقاءات-شهر-نوفمبر-2026م | already linked to catalog event |
 | candidate-monshaat-events-لقاءات-شهر-نوفمبر-المغلقة-2026م-20261101-78719200 | linked-existing | event-لقاءات-شهر-نوفمبر-المغلقة-2026م | already linked to catalog event |
-| candidate-hayy-jameel-events-hayy-cinema-november-2026-20261101-73243d6e | linked-existing | event-hayy-cinema-november-2026 | already linked to catalog event |
 | candidate-visit-saudi-seasons-the-little-farmer-20261101-6645360d | linked-existing | event-the-little-farmer | already linked to catalog event |
 | candidate-visit-saudi-calendar-pdf-enc-2026-20261102-4a38d19e | linked-existing | event-esports-nations-cup | already linked to catalog event |
 | candidate-visit-saudi-calendar-pdf-ُجُالا-س-يف-الرياض-20261102-4a38d19e | linked-existing | event-ُجُالا-س-يف-الرياض | already linked to catalog event |
 | candidate-riyadh-city-events-esports-nations-cup-20261102-62c39964 | linked-existing | event-esports-nations-cup | already linked to catalog event |
 | candidate-hayy-jameel-events-jameel-library-november-community-programmes-20261104-18d33419 | linked-existing | event-jameel-library-november-community-programmes | already linked to catalog event |
+| candidate-hayy-jameel-events-hayy-cinema-november-2026-20261104-73243d6e | linked-existing | event-hayy-cinema-november-2026 | already linked to catalog event |
 | candidate-ithra-events-arabic-children-book-club-7-9-20261104-810c285f | linked-existing | event-arabic-children-book-club-7-9 | already linked to catalog event |
 | candidate-ithra-events-childrens-book-club-20261104-944c464f | linked-existing | event-childrens-book-club | already linked to catalog event |
 | candidate-visit-saudi-calendar-pdf-سيرك-فونتانا-20261105-4a38d19e | linked-existing | event-سيرك-فونتانا | trusted duplicate linked to existing catalog event |
@@ -261,6 +258,7 @@
 | candidate-visit-saudi-calendar-pdf-سباق-ماراثون-الشرقية-الدولي-20261210-4a38d19e | linked-existing | event-سباق-ماراثون-الشرقية-الدولي | already linked to catalog event |
 | candidate-madinah-architecture-festival-مهرجان-المدينة-المنورة-الدولي-للعمارة-2026-20261210-7c99a854 | linked-existing | event-مهرجان-المدينة-المنورة-الدولي-للعمارة-2026 | already linked to catalog event |
 | candidate-ithra-events-little-explorers-20261210-1cc1993f | linked-existing | event-little-explorers | already linked to catalog event |
+| candidate-hayy-jameel-events-hayy-makers-creative-night-new-year-new-vision-20261210-2181c0a7 | linked-existing | event-hayy-makers-creative-night-new-year-new-vision | already linked to catalog event |
 | candidate-visit-saudi-calendar-pdf-بطولة-الفنون-القتالية-20261211-4a38d19e | linked-existing | event-بطولة-الفنون-القتالية | already linked to catalog event |
 | candidate-dhahran-expo-calendar-pfl-mena-final-20261211-18d15b29 | linked-existing | event-pfl-mena-final | already linked to catalog event |
 | candidate-visit-saudi-seasons-pfl-martial-arts-championship-in-al-khobar-20261211-f398f764 | linked-existing | event-pfl-martial-arts-championship-in-al-khobar | already linked to catalog event |
@@ -347,10 +345,8 @@
 | candidate-umm-al-qura-events-الترشح-للدبلوم-المتوسط-في-التحول-الرقمي-في-جازان-بالتعاون-مع-أكاديمية-غر-20271201-5cace3ad | linked-existing | event-دبلوم-التحول-الرقمي | already linked to catalog event |
 | candidate-saudi-space-agency-events-space-debris-conference-2028-20280215-03719f44 | linked-existing | event-space-debris-conference-2028 | already linked to catalog event |
 | candidate-saudi-space-agency-events-space-debris-conference-2028-20280215-c8db3c5b | linked-existing | event-space-debris-conference-2028 | already linked to catalog event |
-| candidate-saudi-university-events-annual-kaust-basketball-league-2026-20261025-9ec9be73 | blocked | - | possible duplicate already exists: event-annual-kaust-basketball-league-2026 |
 | candidate-ithra-events-rolling-podcast-20261116-5db7fa03 | blocked | - | linked catalog row event-rolling-podcast was superseded by dedupe |
 | candidate-visit-saudi-seasons-king-abdulaziz-falconry-festival-20261117-d56e3d7f | blocked | event-king-abdulaziz-falconry-festival | possible duplicate requires review: exact-title-city-source-conflict |
-| candidate-visit-saudi-calendar-pdf-السينما-عن-قرب-20261125-4a38d19e | blocked | - | possible duplicate already exists: event-السينما-عن-قرب |
 | candidate-ithra-events-book-nook-zone-20261126-94c82261 | blocked | - | linked catalog row event-book-nook-zone was superseded by dedupe |
 | candidate-ithra-events-gaming-zone-20261126-f3162870 | blocked | - | linked catalog row event-rolling-podcast was superseded by dedupe |
 | candidate-riyadh-city-events-music-festival-mdlbeast-soundstorm-20261203-04247702 | blocked | - | linked catalog row event-music-festival-mdlbeast-soundstorm was superseded by dedupe |
