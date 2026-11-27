@@ -1,14 +1,14 @@
 {
-  "generated_at": "2026-11-26T11:09:23.325Z",
+  "generated_at": "2026-11-27T11:29:26.792Z",
   "catalog": "data/events_catalog.json",
   "source": "Visit Saudi Calendar",
   "totals": {
     "targets": 50,
     "candidates": 11,
     "enriched": 50,
-    "fetched": 48,
+    "fetched": 49,
     "images": 50,
-    "fetch_failures": 2
+    "fetch_failures": 1
   },
   "enriched": [
     {
@@ -366,10 +366,10 @@
     {
       "id": "event-uci-urban-cycling-world-championships",
       "title": "UCI URBAN CYCLING WORLD CHAMPIONSHIPS",
-      "source_method": "approved-catalog-row",
+      "source_method": "official-page-html",
       "image_url": "https://www.visitsaudi.com/content/dam/wvs/calendar/uci-urban-cycling-world-championships.jpg",
-      "fetched": false,
-      "features": 6
+      "fetched": true,
+      "features": 7
     },
     {
       "id": "event-wagef-nemr-live-comedy-show-in-jeddah",
@@ -418,12 +418,6 @@
       "title": "Arabic Language Exhibition for kids",
       "source_url": "https://www.visitsaudi.com/en/riyadh/events/arabic-language-exhibition-for-kids",
       "reason": "HTTP 404"
-    },
-    {
-      "id": "event-uci-urban-cycling-world-championships",
-      "title": "UCI URBAN CYCLING WORLD CHAMPIONSHIPS",
-      "source_url": "https://www.visitsaudi.com/en/riyadh/events/uci-urban-cycling-world-championships",
-      "reason": "fetch failed"
     }
   ]
 }

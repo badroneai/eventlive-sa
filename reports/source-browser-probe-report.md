@@ -1,11 +1,11 @@
 # EventLive Browser Source Probe
 
-Generated at: 2026-11-26T11:00:21.720Z
+Generated at: 2026-11-27T11:11:10.253Z
 
 ## Summary
 
 - Sources probed this run: 3
-- Fresh results available: 8
+- Fresh results available: 3
 - Browser network API: 1
 - Hydration payload: 0
 - Rendered HTML candidates: 0
@@ -16,12 +16,7 @@ Generated at: 2026-11-26T11:00:21.720Z
 
 | Priority | Source | Status | HTTP | Classification | Endpoints | Event links | Date snippets | Next action |
 |---:|---|---|---:|---|---:|---:|---:|---|
-| 3 | moc-cultural-calendar | error | 0 | empty-or-shell | 0 | 0 | 0 | اعتبرها shell وابحث عن API أو مسار بديل قبل أي collector. |
-| 4 | mos-events | error | 0 | empty-or-shell | 0 | 0 | 0 | اعتبرها shell وابحث عن API أو مسار بديل قبل أي collector. |
-| 9 | monshaat-events | error | 0 | empty-or-shell | 0 | 0 | 0 | اعتبرها shell وابحث عن API أو مسار بديل قبل أي collector. |
 | 21 | misk-hub-programs | ok | 403 | blocked-or-protected | 0 | 0 | 0 | لا تلتف على الحماية؛ صنف المصدر partnership/API أو ابحث عن مسار رسمي. |
-| 30 | saudi-pro-league-fixtures | error | 0 | empty-or-shell | 0 | 0 | 0 | اعتبرها shell وابحث عن API أو مسار بديل قبل أي collector. |
-| 37 | moc-cultural-subportals | error | 0 | empty-or-shell | 0 | 0 | 0 | اعتبرها shell وابحث عن API أو مسار بديل قبل أي collector. |
 | 51 | riyadh-city-events | ok | 200 | rendered-text-review | 0 | 0 | 0 | راجع الصفحة يدويًا وحدد هل هي مصدر أدلة أم صفحة تعريفية فقط. |
 | 67 | jazan-chamber-events | ok | 200 | browser-network-api | 1 | 0 | 8 | ثبت endpoint مرشحًا كجامع مباشر، ثم اكتب extractor من JSON مع اختبار انحدار. |
 

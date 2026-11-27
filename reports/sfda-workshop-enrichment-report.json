@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-26T11:07:57.725Z",
+  "generated_at": "2026-11-27T11:28:14.957Z",
   "catalog": "data/events_catalog.json",
   "totals": {
     "targets": 17,
@@ -12,7 +12,7 @@
       "id": "event-نقل-مبيدات-آفات-الصحة-العامة",
       "title": "نقل مبيدات آفات الصحة العامة",
       "workshop_id": "5521944",
-      "reason": "The operation was aborted due to timeout"
+      "reason": "HTTP 404"
     },
     {
       "id": "event-آلية-تقديم-طلبات-اذونات-استيراد-مواد-التصوير-الطبي-في-النظام-الالكتروني-",

@@ -1,13 +1,13 @@
 {
-  "generated_at": "2026-11-25T20:41:40.959Z",
+  "generated_at": "2026-11-27T10:58:45.252Z",
   "registry": "data/source_registry.json",
   "source_ingestion_plan": "reports/source-ingestion-plan.json",
   "probe_limit": 28,
   "timeout_ms": 12000,
   "totals": {
-    "probed": 22,
+    "probed": 21,
     "extractor_ready": 13,
-    "blocked": 9,
+    "blocked": 8,
     "partnership": 0,
     "watch": 0
   },
@@ -26,7 +26,7 @@
         "status": 200,
         "final_url": "https://money2020middleeast.com/",
         "content_type": "text/html; charset=utf-8",
-        "bytes": 64408,
+        "bytes": 64393,
         "title": "The Global Fintech Conference | Money 20/20 Middle East 14-16 September 2027",
         "blocked_reason": "",
         "structured_scripts": 1,
@@ -73,7 +73,7 @@
           "datetimepicker/4.17.47/css/bootstrap-datetimepicker.min.css\" rel=\"stylesheet\">",
           "calendar-alt\">",
           "date-span\">",
-          "25 Nov 2027",
+          "27 Nov 2027",
           "dated Row -->"
         ]
       },
@@ -128,8 +128,8 @@
         "status": 200,
         "final_url": "https://ncci.org.sa/events",
         "content_type": "text/html; charset=utf-8",
-        "bytes": 194367,
-        "title": "غرفة الحدود الشمالية | خدمات الأعمال والاستثمار",
+        "bytes": 193327,
+        "title": "غرفة الحدود الشمالية",
         "blocked_reason": "",
         "structured_scripts": 0,
         "structured_events": 0,
@@ -196,7 +196,7 @@
         "status": 200,
         "final_url": "https://www.cst.gov.sa/en",
         "content_type": "text/html; charset=utf-8",
-        "bytes": 1336478,
+        "bytes": 1336446,
         "title": "CST | Communications, Space & Technology Commission",
         "blocked_reason": "",
         "structured_scripts": 2,
@@ -206,11 +206,11 @@
         "json_or_api_hints": 11,
         "date_snippets": [
           "date On:",
-          "Date\":{\"value\":\"2025-08-31T00:00:00Z\"},\"EndDate\":{\"value\":\"2025-09-03T00:00:00Z\"},\"L",
+          "Date\":{\"value\":\"2025-08-31T00:00:00Z\"},\"EndDate\":{\"value\":\"2025-09-03T00:00:00Z\"},\"D",
           "2027-01-01",
           "Datetime\":{\"value\":\"2025-08-31T10:00:00Z\"},\"HijriDate\":{\"value\":\"8/3/1447 AH\"},\"Loca",
           "2027-01-01",
-          "Date\":{\"value\":\"2025-05-12T00:00:00Z\"},\"EndDate\":{\"value\":\"2025-05-12T00:00:00Z\"},\"L"
+          "Date\":{\"value\":\"2025-05-12T00:00:00Z\"},\"EndDate\":{\"value\":\"2025-05-12T00:00:00Z\"},\"D"
         ]
       },
       "extraction_score": 58,
@@ -298,7 +298,7 @@
         "status": 200,
         "final_url": "https://www.tabukchamber.sa/",
         "content_type": "text/html; charset=UTF-8",
-        "bytes": 112708,
+        "bytes": 112772,
         "title": "الغرفة التجارية بتبوك | TABUK CHAMBER",
         "blocked_reason": "",
         "structured_scripts": 0,
@@ -366,7 +366,7 @@
         "status": 200,
         "final_url": "https://www.asda.gov.sa/en",
         "content_type": "text/html; charset=utf-8",
-        "bytes": 228251,
+        "bytes": 224541,
         "title": "Aseer Development Authority | Qimam wa Shiyam Strategy",
         "blocked_reason": "",
         "structured_scripts": 0,
@@ -375,12 +375,12 @@
         "event_detail_links": 0,
         "json_or_api_hints": 32,
         "date_snippets": [
-          "date information on events, experiences, trails, and tourism activities across the r",
           "dated: 03/05/2026",
           "dated: 03/05/2026",
           "date\\\":\\\"2025-10-07T12:58:42\\\",\\\"date_gmt\\\":\\\"2025-10-07T09:58:42\\\",\\\"guid\\\":{\\\"rend",
           "2026-04-28",
-          "2026-04-28"
+          "2026-04-28",
+          "dated: 03/05/2026\\\"}]]}]\\n12:[\\\"$\\\",\\\"div\\\",null,{\\\"lang\\\":\\\"en\\\",\\\"dir\\\":\\\"ltr\\\",\\\""
         ]
       },
       "extraction_score": 46,
@@ -434,7 +434,7 @@
         "status": 200,
         "final_url": "https://www.kaust.edu.sa/en/",
         "content_type": "text/html; charset=utf-8",
-        "bytes": 92142,
+        "bytes": 91215,
         "title": "KAUST | A top research university in the Middle East",
         "blocked_reason": "",
         "structured_scripts": 0,
@@ -536,33 +536,6 @@
       "recommendation": "blocked-or-protected:fetch failed getaddrinfo EAI_AGAIN www.ricec.com TypeError: fetch failed"
     },
     {
-      "id": "saudi-contractors-authority-events",
-      "name": "Saudi Contractors Authority Events",
-      "priority": 49,
-      "url": "https://www.sca.gov.sa/",
-      "trust_level": "official",
-      "fetch_method": "html-listing",
-      "candidate_gate": "extraction",
-      "intake_policy": "monitor-public",
-      "signals": {
-        "http_ok": false,
-        "status": 0,
-        "final_url": "https://www.sca.gov.sa/",
-        "content_type": "",
-        "bytes": 0,
-        "title": "",
-        "blocked_reason": "fetch failed getaddrinfo ENOTFOUND www.sca.gov.sa TypeError: fetch failed",
-        "structured_scripts": 0,
-        "structured_events": 0,
-        "google_calendar_links": 0,
-        "event_detail_links": 0,
-        "json_or_api_hints": 0,
-        "date_snippets": []
-      },
-      "extraction_score": -23,
-      "recommendation": "blocked-or-protected:fetch failed getaddrinfo ENOTFOUND www.sca.gov.sa TypeError: fetch failed"
-    },
-    {
       "id": "riyadh-city-events",
       "name": "Riyadh City Events",
       "priority": 51,
@@ -590,10 +563,10 @@
       "recommendation": "blocked-or-protected:fetch failed unable to verify the first certificate; if the root CA is installed locally, try running Node.js with --use-system-ca TypeError: fetch failed"
     },
     {
-      "id": "middle-east-enterprise-ai-summit",
-      "name": "Middle East Enterprise AI & Analytics Summit Official",
-      "priority": 75,
-      "url": "https://meenterpriseai.com/sa/",
+      "id": "middle-east-banking-ai-summit",
+      "name": "Middle East Banking AI & Analytics Summit Official",
+      "priority": 74,
+      "url": "https://mebankingai.com/sa/",
       "trust_level": "official",
       "fetch_method": "html-listing",
       "candidate_gate": "human-review",
@@ -601,10 +574,10 @@
       "signals": {
         "http_ok": true,
         "status": 200,
-        "final_url": "https://meenterpriseai.com/sa/",
+        "final_url": "https://mebankingai.com/sa/",
         "content_type": "text/html",
-        "bytes": 1996,
-        "title": "Middle East Enterprise",
+        "bytes": 2305,
+        "title": "Middle East Banking",
         "blocked_reason": "bot-protection",
         "structured_scripts": 0,
         "structured_events": 0,
@@ -659,7 +632,7 @@
         "status": 403,
         "final_url": "https://qiddiya.com/",
         "content_type": "text/html; charset=UTF-8",
-        "bytes": 6022,
+        "bytes": 6021,
         "title": "Attention Required! | Cloudflare",
         "blocked_reason": "http-403",
         "structured_scripts": 0,

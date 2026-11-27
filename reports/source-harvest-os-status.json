@@ -1,19 +1,19 @@
 {
   "schema": "eventlive.harvest-os-status.v1",
-  "generated_at": "2026-11-26T11:29:41.890Z",
+  "generated_at": "2026-11-27T11:47:19.678Z",
   "status": "NEEDS_WORK",
   "operating_rule": "Probe before new sources; sample before full harvest; Raw collection is not publication; discovery-only never auto-publishes.",
   "totals": {
     "sources": 88,
-    "candidates": 349,
-    "matched_candidates": 328,
+    "candidates": 346,
+    "matched_candidates": 325,
     "auto_publish_sources": 15,
     "candidate_only_sources": 12,
     "partnership_required_sources": 5,
     "blocked_or_closed_sources": 0,
     "manual_review_sources": 56,
-    "collection_attempted": 13,
-    "productive_sources": 10,
+    "collection_attempted": 46,
+    "productive_sources": 13,
     "collector_errors": 9,
     "chronic_collector_errors": 8,
     "transient_collector_errors": 1
@@ -25,16 +25,16 @@
     "manual_review": 56
   },
   "candidates_by_gate": {
-    "catalog-review": 328,
+    "catalog-review": 325,
     "duplicate-review": 1,
     "human-review": 1,
     "source-evidence": 19
   },
   "funnel": {
-    "discovered_this_run": 124,
-    "candidate_queue": 349,
-    "evaluated_for_publish": 349,
-    "linked_existing": 320,
+    "discovered_this_run": 135,
+    "candidate_queue": 346,
+    "evaluated_for_publish": 346,
+    "linked_existing": 317,
     "published_new": 4,
     "blocked": 25,
     "secondary_promoted": 0,
@@ -52,64 +52,64 @@
   "collector_error_sources": [
     {
       "id": "mos-events",
-      "note": "collector-error: fetch failed [ETIMEDOUT, ENETUNREACH]; live browser recovery deferred by recent failed probe cooldown",
-      "error_streak": 82,
+      "note": "collector-error: fetch failed [ETIMEDOUT, ENETUNREACH]",
+      "error_streak": 83,
       "kind": "chronic",
-      "attempted_this_run": false
+      "attempted_this_run": true
     },
     {
       "id": "saudi-pro-league-fixtures",
       "note": "collector-error: fetch failed [EAI_AGAIN]",
-      "error_streak": 62,
+      "error_streak": 63,
       "kind": "chronic",
-      "attempted_this_run": false
+      "attempted_this_run": true
     },
     {
       "id": "tuwaiq-academy-bootcamps",
       "note": "collector-error: HTTP 403",
-      "error_streak": 59,
+      "error_streak": 60,
       "kind": "chronic",
-      "attempted_this_run": false
+      "attempted_this_run": true
     },
     {
       "id": "qassim-chamber-events",
       "note": "collector-error: HTTP 403",
-      "error_streak": 28,
+      "error_streak": 29,
       "kind": "chronic",
-      "attempted_this_run": false
+      "attempted_this_run": true
     },
     {
       "id": "moc-cultural-calendar",
-      "note": "collector-error: fetch failed [ETIMEDOUT, ENETUNREACH]; fetch failed [ETIMEDOUT, ENETUNREACH]",
-      "error_streak": 14,
+      "note": "collector-error: fetch failed [UND_ERR_CONNECT_TIMEOUT]; fetch failed [UND_ERR_CONNECT_TIMEOUT]",
+      "error_streak": 15,
       "kind": "chronic",
-      "attempted_this_run": false
+      "attempted_this_run": true
     },
     {
       "id": "moc-cultural-subportals",
-      "note": "collector-error: fetch failed [ETIMEDOUT, ENETUNREACH]; fetch failed [ETIMEDOUT, ENETUNREACH]",
-      "error_streak": 14,
+      "note": "collector-error: fetch failed [UND_ERR_CONNECT_TIMEOUT]; fetch failed [UND_ERR_CONNECT_TIMEOUT]",
+      "error_streak": 15,
       "kind": "chronic",
-      "attempted_this_run": false
+      "attempted_this_run": true
     },
     {
       "id": "monshaat-events",
       "note": "collector-error: fetch failed [UND_ERR_CONNECT_TIMEOUT]; fetch failed [UND_ERR_CONNECT_TIMEOUT]",
-      "error_streak": 13,
+      "error_streak": 14,
       "kind": "chronic",
-      "attempted_this_run": false
+      "attempted_this_run": true
     },
     {
       "id": "saudi-space-agency-events",
-      "note": "collector-error: fetch failed [UNABLE_TO_VERIFY_LEAF_SIGNATURE]",
-      "error_streak": 5,
+      "note": "collector-error: fetch failed [ETIMEDOUT, ENETUNREACH]",
+      "error_streak": 6,
       "kind": "chronic",
-      "attempted_this_run": false
+      "attempted_this_run": true
     },
     {
       "id": "misk-hub-programs",
       "note": "HTTP 403; live browser recovery deferred by recent failed probe cooldown",
-      "error_streak": 1,
+      "error_streak": 2,
       "kind": "transient",
       "attempted_this_run": true
     }

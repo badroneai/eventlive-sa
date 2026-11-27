@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-26T11:06:49.531Z",
+  "generated_at": "2026-11-27T11:27:18.118Z",
   "catalog": "data/events_catalog.json",
   "candidates": "data/source_candidates.json",
   "manifest": "data/event_image_cache_manifest.json",
@@ -9,18 +9,25 @@
     "min_intersection": 2
   },
   "totals": {
-    "pdf_crop_assignments": 65,
-    "verified": 63,
-    "struck": 2,
-    "slots_seen_this_cycle": 70
+    "pdf_crop_assignments": 64,
+    "verified": 61,
+    "struck": 3,
+    "slots_seen_this_cycle": 68
   },
   "struck": [
     {
-      "id": "event-السينما-عن-قرب",
-      "title": "السينما عن قرب",
-      "file": "visit-saudi-summer-2026-p038-bottom-left.jpg",
+      "id": "event-أبو-سارة-و-سري-الخالد-يف-ليالي-الديرة-الكوميدية",
+      "title": "أبو سارة و سري الخالد يف ليالي الديرة الكوميدية",
+      "file": "visit-saudi-summer-2026-p006-top-right.jpg",
       "reason": "slot-vacated",
-      "detail": "no dated card currently occupies page 38 bottom-left of https://www.visitsaudi.com/content/dam/documents/saudi-calendar-ar.pdf"
+      "detail": "no dated card currently occupies page 6 top-right of https://www.visitsaudi.com/content/dam/documents/saudi-calendar-ar.pdf"
+    },
+    {
+      "id": "event-واقف-momos-2",
+      "title": "واقف! Momos",
+      "file": "visit-saudi-summer-2026-p083-bottom-right.jpg",
+      "reason": "slot-vacated",
+      "detail": "no dated card currently occupies page 83 bottom-right of https://www.visitsaudi.com/content/dam/documents/saudi-calendar-ar.pdf"
     },
     {
       "id": "event-يو-إف-سي",
@@ -258,20 +265,6 @@
       ]
     },
     {
-      "id": "event-أبو-سارة-و-سري-الخالد-يف-ليالي-الديرة-الكوميدية",
-      "title": "أبو سارة و سري الخالد يف ليالي الديرة الكوميدية",
-      "file": "visit-saudi-summer-2026-p006-top-right.jpg",
-      "matched_tokens": [
-        "ابو",
-        "ساره",
-        "سري",
-        "الخالد",
-        "ليالي",
-        "الديره",
-        "الكوميديه"
-      ]
-    },
-    {
       "id": "event-دخول-مسائي-حصري-إىل-دادان",
       "title": "دخول مسائي حصري إىل دادان",
       "file": "visit-saudi-summer-2026-p039-bottom-right.jpg",
@@ -281,15 +274,6 @@
         "حصري",
         "ايل",
         "دادان"
-      ]
-    },
-    {
-      "id": "event-واقف-momos-2",
-      "title": "واقف! Momos",
-      "file": "visit-saudi-summer-2026-p083-bottom-right.jpg",
-      "matched_tokens": [
-        "واقف",
-        "momos"
       ]
     },
     {

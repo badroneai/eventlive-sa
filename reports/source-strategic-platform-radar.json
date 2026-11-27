@@ -1,6 +1,6 @@
 {
   "schema": "eventlive.source-strategic-platform-radar.v1",
-  "generated_at": "2026-11-25T20:42:38.717Z",
+  "generated_at": "2026-11-27T10:59:43.092Z",
   "policy": {
     "allowed_use": "official source evidence refresh, API-surface mapping, partnership prioritization, extractor backlog decisions",
     "disallowed_use": "direct catalog publication without official confirmation and duplicate review"
@@ -303,7 +303,7 @@
       "final_url": "https://webook.com/ar/explore",
       "via": "fetch",
       "content_type": "text/html",
-      "bytes": 5019,
+      "bytes": 5018,
       "title": "",
       "classification": "protected",
       "error": "",
@@ -315,7 +315,7 @@
         "https://images.me.cmscloud.ai",
         "https://apps.apple.com/sa/app/webook-com-fun-things-to-do/id6468667896",
         "https://play.google.com/store/apps/details?id=com.webook.android",
-        "https://wbk-assets.webook.com/8.6/assets/index-DpVwjS1Q.js",
+        "https://wbk-assets.webook.com/8.6/assets/index-ChwOvqDq.js",
         "https://wbk-assets.webook.com/8.6/assets/vendor-CMb0R77e.js",
         "https://wbk-assets.webook.com/8.6/assets/index-s4Jx__Eb.css",
         "https://wbk-assets.webook.com/8.6/locales/en/common.json",
@@ -331,7 +331,7 @@
         "https://wbk-assets.webook.com/8.6/locales/en/currency_common.json",
         "https://wbk-assets.webook.com/8.6/locales/en/payment_common.json",
         "https://wbk-assets.webook.com/8.6/locales/en/subscription_common.json",
-        "https://webook.com/cdn-cgi/content?id=N8LrX6vTO6ucf17YFfv0POscOYk0h64DaatPcXdCE28-1795639366.8917098-1.2.1.1-rTJqdfZ4J32UQ7tO3uIShcWkjp9zE7NcAbfAp70lnP1v8QEICyGX342MyIoGb1Wc",
+        "https://webook.com/cdn-cgi/content?id=n6.Uj6hYWi1vXNQwX0S5aFRU6w3Ur0UNoWvX9hrbcFg-1795777194.541109-1.2.1.1-E773L7C_WMzFQdAL6Iaeck9DWg328B4OaM7t6TydvnLJPLRPoSKO.xw71LdjVDlB",
         "https://static.cloudflareinsights.com/beacon.min.js/vce701823e78c4301a35b7e07294d87301792088814092"
       ],
       "page_hint_words": [
@@ -435,9 +435,9 @@
       ],
       "asset_results": [
         {
-          "url": "https://www.evento.sa/main.1d7d99f82d92550e.js",
+          "url": "https://www.evento.sa/main.b85e161d9e0db002.js",
           "status": 200,
-          "bytes": 1275677,
+          "bytes": 1275750,
           "classification": "reachable",
           "hint_urls": [
             "https://evento.sa",

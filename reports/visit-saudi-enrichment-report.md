@@ -1,12 +1,12 @@
 # Visit Saudi Calendar Enrichment Report
 
-- generated_at: 2026-11-26T11:09:23.325Z
+- generated_at: 2026-11-27T11:29:26.792Z
 - targets: 50
 - candidates: 11
 - enriched: 50
-- fetched: 48
+- fetched: 49
 - images: 50
-- fetch_failures: 2
+- fetch_failures: 1
 
 ## Enriched
 
@@ -54,7 +54,7 @@
 - Stand Up Comedy Shows This Weekend from Exit Thmanyah - official-page-html - image=yes - features=7
 - Alaa El Sheikh Live in Jeddah - official-page-html - image=yes - features=7
 - Kaif Farm - official-page-html - image=yes - features=7
-- UCI URBAN CYCLING WORLD CHAMPIONSHIPS - approved-catalog-row - image=yes - features=6
+- UCI URBAN CYCLING WORLD CHAMPIONSHIPS - official-page-html - image=yes - features=7
 - Wagef! Nemr Live Comedy Show in Jeddah - official-page-html - image=yes - features=7
 - Comedy Show by Mario Yazbeck in Riyadh - official-page-html - image=yes - features=7
 - Al Ahsa Esports Tournament - official-page-html - image=yes - features=7
@@ -64,4 +64,3 @@
 ## Fetch Failures
 
 - Arabic Language Exhibition for kids - HTTP 404
-- UCI URBAN CYCLING WORLD CHAMPIONSHIPS - fetch failed
