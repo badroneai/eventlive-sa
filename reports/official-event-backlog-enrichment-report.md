@@ -1,110 +1,110 @@
 # EventLive Official Event Backlog Enrichment
-- Generated at: 2026-11-27T11:31:42.739Z
+- Generated at: 2026-11-28T10:45:12.666Z
 - Targets: 100
 - Enriched: 100
-- Fetched: 68
-- Images: 95
-- Fetch failures: 32
+- Fetched: 75
+- Images: 96
+- Fetch failures: 25
 
 | Source | Event | Method | Image | Fetch |
 |---|---|---:|---:|---:|
-| Visit Saudi Summer Calendar PDF | األخطبوطية كيدز | official-page-meta | yes | yes |
-| Visit Saudi Summer Calendar PDF | حفل صابر الرباعي يف فوكالي الرياض | official-page-meta | yes | yes |
 | Visit Saudi Summer Calendar PDF | سيرك فونتانا | official-page-meta | yes | yes |
 | Visit Saudi Summer Calendar PDF | تاريخ الفن عىل طريق البخور | official-page-meta | yes | yes |
-| Umm Al-Qura University Events Center | الترشح للدبلوم المشارك إدارة الحشود (حضوري) بالتعاون مع جمعية الرياض للتنمية والدراسات والخدمات الاستشارية | official-page-meta | yes | yes |
-| Umm Al-Qura University Events Center | الترشح للدبلوم المشارك إدارة المشاريع (حضوري) بالتعاون مع جمعية الرياض للتنمية والدراسات والخدمات الاستشارية | official-page-meta | yes | yes |
-| Umm Al-Qura University Events Center | التسجيل والسداد لدبلوم المتوسط (عن بعد) في أمن المعلومات مع الشركاء | official-page-meta | yes | yes |
-| Umm Al-Qura University Events Center | التسجيل والسداد لدبلوم المتوسط (عن بعد) في التسويق التطبيقي مع الشركاء | official-page-meta | yes | yes |
-| Umm Al-Qura University Events Center | التسجيل والسداد لدبلوم المتوسط (عن بعد) في اللغة الإنجليزية المهنية مع الشركاء | official-page-meta | yes | yes |
-| Umm Al-Qura University Events Center | التسجيل والسداد لدبلوم المشارك (حضوري) في الإدارة الفندقية لخارج مكة | official-page-meta | yes | yes |
-| Umm Al-Qura University Events Center | التسجيل والسداد لدبلوم المشارك (حضوري) في الخدمة الاجتماعية في رعاية الأيتام لخارج مكة | official-page-meta | yes | yes |
-| Umm Al-Qura University Events Center | التسجيل والسداد لدبلوم المشارك (حضوري) في مساعد في التربية الخاصة وإدارة السلوك لخارج مكة | official-page-meta | yes | yes |
-| Umm Al-Qura University Events Center | التسجيل والسداد لدبلوم المشارك (عن بعد) في إدارة الحشود لخارج مكة | official-page-meta | yes | yes |
-| Umm Al-Qura University Events Center | التسجيل والسداد لدبلوم المشارك (عن بعد) في إدارة اللوجستيات وسلاسل الإمداد لخارج مكة | official-page-meta | yes | yes |
-| Umm Al-Qura University Events Center | التسجيل والسداد لدبلوم المشارك (عن بعد) في إدارة المشاريع مع الشركاء | official-page-meta | yes | yes |
-| Umm Al-Qura University Events Center | التسجيل والسداد لدبلوم المشارك (عن بعد) في الإرشاد السياحي لخارج مكة | official-page-meta | yes | yes |
-| Umm Al-Qura University Events Center | التسجيل والسداد لدبلوم المشارك (عن بعد) في الابتكار في ريادة الأعمال مع الشركاء | official-page-meta | yes | yes |
-| Umm Al-Qura University Events Center | التشكيل الحر | official-page-meta | yes | yes |
-| Jazan Chamber Events | التعريف بخدمات مراكز ناجز العدلية | official-page-meta | yes | yes |
-| Jazan Chamber Events | التعريف بلائحة نشاط النقل التعليمي | official-page-meta | yes | yes |
-| Qassim Chamber Events | التقنيات المستقبلية | approved-source-row | no | HTTP 403 |
-| Umm Al-Qura University Events Center | الجامعات وصناعة المستقبل | official-page-meta | yes | yes |
-| Qassim Chamber Events | الحوكمة والمخاطر والامتثال | approved-source-row | yes | HTTP 403 |
-| Visit Saudi Summer Calendar PDF | الخطة C مع رضوان الريمي ليلة كوميدية طربية | official-page-meta | yes | yes |
-| Umm Al-Qura University Events Center | الدليل التنظيمي ووثيقة حقوق وواجبات عضو هيئة التدريس | official-page-meta | yes | yes |
-| Visit Saudi Summer Calendar PDF | الدوري السعودي للرياضات الالكترونية القتالية | official-page-meta | yes | yes |
-| Umm Al-Qura University Events Center | الطالب الفعّال في بيئة البلاك بورد الترا – الفترة الصباحيه | official-page-meta | yes | yes |
-| Umm Al-Qura University Events Center | الطالب الفعّال في بيئة البلاك بورد الترا – الفترة المسائية | official-page-meta | yes | yes |
-| Umm Al-Qura University Events Center | الفصول الافتراضية عبر Blackboard Ultra – الفترة الصباحية | official-page-meta | yes | yes |
-| Umm Al-Qura University Events Center | الفصول الافتراضية عبر Blackboard Ultra – الفترة المسائية | official-page-meta | yes | yes |
-| Umm Al-Qura University Events Center | الكروشيه | official-page-meta | yes | yes |
-| Umm Al-Qura University Events Center | اللقاء التعريفي بخدمات عمادة شؤون الطلاب | official-page-meta | yes | yes |
-| Umm Al-Qura University Events Center | اللقاء الدوري لطلبة التدريب التعاوني | official-page-meta | yes | yes |
-| Umm Al-Qura University Events Center | المحتوى التفاعلي والتقييم الإلكتروني في Blackboard Ultra – الفترة الصباحية | official-page-meta | yes | yes |
-| Umm Al-Qura University Events Center | المحتوى التفاعلي والتقييم الإلكتروني في Blackboard Ultra – الفترة المسائية | official-page-meta | yes | yes |
-| Qassim Chamber Events | المهارات الأساسية للمبيعات | approved-source-row | yes | HTTP 403 |
-| Umm Al-Qura University Events Center | تفعيل بيئة تعلم إلكترونية تفاعلية– بنمط غير متزامن في نسخته العشرون | official-page-meta | yes | yes |
-| Umm Al-Qura University Events Center | فعالية بعنوان معسكر صنّاع المشهد | official-page-meta | yes | yes |
-| Umm Al-Qura University Events Center | لقاء (الجودة بعين الطالب: وعي، مشاركة وأثر) | official-page-meta | yes | yes |
-| Umm Al-Qura University Events Center | لقاء بعنوان رواد العلم والأدب في الحضارة الإسلامية | official-page-meta | yes | yes |
-| Umm Al-Qura University Events Center | لقاء بعنوان على خُطى أنبياء الله | official-page-meta | yes | yes |
-| Umm Al-Qura University Events Center | ورشة عمل بعنوان مسابقة الباج الذهبي | official-page-meta | yes | yes |
-| dmg events Official | Big 5 Construct Saudi | official-page-meta | yes | yes |
-| Riyadh City Events | BIO Middle East (BIOME) | approved-source-row | yes | fetch failed |
-| Discover Aseer Events | Bioni Al sharaf | approved-source-row | yes | HTTP 404 |
-| Riyadh City Events | Build Your House exhibition | approved-source-row | yes | fetch failed |
-| Riyadh City Events | Cat Show | approved-source-row | yes | fetch failed |
-| Riyadh City Events | CFO Leadership Summit | approved-source-row | yes | fetch failed |
-| Eye of Riyadh Official | CIPS MENA Procurement and Supply Chain Futures conference and awards | official-page-meta | yes | yes |
-| Riyadh City Events | CPHI Middle East | approved-source-row | yes | fetch failed |
-| Riyadh City Events | E3 Customer Experience Conference | approved-source-row | yes | fetch failed |
-| Eye of Riyadh Official | Global Proptech Summit 2026 | official-page-meta | yes | yes |
-| Visit Saudi Seasons | Hail International Arabian Horse Beauty Championship | official-page-meta | yes | yes |
-| Hayy Jameel What's On | Hayy Arts | Global Positioning System | official-page-meta | yes | yes |
-| Hayy Jameel What's On | Hayy Arts | Red Wind, Coral Worlds | official-page-meta | yes | yes |
-| Hayy Jameel What's On | Hayy Cinema | "Kef Hayyak?" 3rd Edition Screenings and Awards Ceremony | official-page-meta | yes | yes |
-| Hayy Jameel What's On | Hayy Cinema | July 2026 | official-page-meta | yes | yes |
-| Hayy Jameel What's On | Hayy Cinema | In Short: Film Programme — Summer Edition | official-page-meta | yes | yes |
-| Hayy Jameel What's On | Hayy Cinema | A Godus Bros Retrospective: From YouTube to the Box Office | official-page-meta | yes | yes |
-| Hayy Jameel What's On | Hayy Explorers | As Told by The Land | official-page-meta | yes | yes |
-| Hayy Jameel What's On | Hayy Learning | Recess: An After-School Programme for Teens | official-page-meta | yes | yes |
-| Hayy Jameel What's On | Hayy Makers | Woodworking Course (Level 2) with Ahmad Sofi | official-page-meta | yes | yes |
-| Hayy Jameel What's On | Hayy Makers | Silkscreen Printing Masterclass With Ziad Yousef | official-page-meta | yes | yes |
-| Hayy Jameel What's On | Hayy Makers | Makers Matters 2026 | official-page-meta | yes | yes |
-| Hayy Jameel What's On | Hayy Makers | Open Day: Plastic Cap Mural | official-page-meta | yes | yes |
-| Experience AlUla Events | Hegra Children's Tour | approved-source-row | yes | HTTP 404 |
-| Riyadh City Events | Horses and Equestrian Heritage Exhibition | approved-source-row | yes | fetch failed |
-| Riyadh City Events | Hotel & Hospitality Expo | approved-source-row | yes | fetch failed |
-| Riyadh City Events | Immersive Experience: Flying Over Saudi | approved-source-row | yes | fetch failed |
-| Riyadh City Events | INDEX Saudi Arabia (Interior Design Trade Show) | approved-source-row | yes | fetch failed |
-| Hayy Jameel What's On | Jameel Library | August Community Programmes | official-page-meta | yes | yes |
-| Saudi Universities and Technical Colleges | Join us at KAUST Health for Respiratory Health Day | official-page-meta | no | yes |
-| Ministry of Culture Commission Calendars | Jusoor Program | approved-source-row | yes | fetch failed |
-| Riyadh City Events | Kingdom Business Luxury Travel Congress | approved-source-row | yes | fetch failed |
-| Discover Aseer Events | Kishtah | approved-source-row | yes | HTTP 404 |
-| Riyadh City Events | Laysen Fan Zone – FIFA World Cup 2026 | approved-source-row | yes | fetch failed |
-| Discover Aseer Events | Light Nights | approved-source-row | yes | HTTP 404 |
-| Riyadh City Events | Lighting Design & Technology Expo | approved-source-row | yes | fetch failed |
-| Visit Saudi Seasons | Madinah Dates Season 2026 | official-page-meta | yes | yes |
-| Visit Saudi Seasons | Mahabah | official-page-meta | yes | yes |
-| Riyadh City Events | Merath – Middle East Museums & Heritage Expo | approved-source-row | yes | fetch failed |
-| Riyadh City Events | Mishkat Summer Camp | approved-source-row | yes | fetch failed |
-| Money20/20 Middle East Official | Money20/20 Middle East | official-page-meta | yes | yes |
-| Riyadh City Events | PFL MENA Fight Night | approved-source-row | yes | fetch failed |
-| Riyadh City Events | Poppy Playtime | approved-source-row | yes | fetch failed |
-| Riyadh City Events | Prince Faisal Bin Fahd Art Exhibition: Summer 2026 | approved-source-row | yes | fetch failed |
-| SDAIA Calendar and Events | Priorities for Supporting AI Adoption in the Nonprofit Sector | official-page-meta | no | yes |
-| Visit Saudi Seasons | Qaadet Saad Eloud | official-page-meta | yes | yes |
-| Saudi Universities and Technical Colleges | Quarter-Finals: Join the Celebration at the FIFA Fan Zone | official-page-meta | no | yes |
-| Riyadh City Events | Registration for International Research Competition on Non-Terrestrial Networks | approved-source-row | yes | fetch failed |
-| King Abdulaziz University Events | Registration Now Open for Children at the Childhood Studies Center for the Academic Year 1448 AH | official-page-meta | no | yes |
-| Riyadh City Events | Riyadh Global Medical Biotechnology Summit | approved-source-row | yes | fetch failed |
-| Riyadh City Events | Riyadh Season: BLVD City | approved-source-row | yes | fetch failed |
-| Riyadh City Events | Ruh Space | approved-source-row | yes | fetch failed |
-| Riyadh City Events | SAIF Summer Program | approved-source-row | yes | fetch failed |
-| Umm Al-Qura University Events Center | إغلاق دوائر الجودة لتعزيز الاداء | official-page-meta | yes | yes |
-| Umm Al-Qura University Events Center | إنشاء الاختبارات في المصححات الآلية ( معين ) و ( zip grade ) وربطها بنواتج التعلم | official-page-meta | yes | yes |
-| Umm Al-Qura University Events Center | التعريف بتقييم الأداء ومنظومة تقييم الأداء للمقيمين | official-page-meta | yes | yes |
-| Umm Al-Qura University Events Center | الميداليات المطرزة | official-page-meta | yes | yes |
-| Qassim University Events | انطلاق المعسكر التدريبي الثالث من برنامج حاضنة ابتكار 5 في جامعة القصيم | approved-source-row | yes | HTTP 404 |
+| Visit Saudi Summer Calendar PDF | اوبن مايك للمواهب | official-page-meta | yes | yes |
+| Visit Saudi Summer Calendar PDF | باتل كارت في أبها | official-page-meta | yes | yes |
+| Umm Al-Qura University Events Center | برنامج محلل Power BI | approved-source-row | yes | fetch failed |
+| Visit Saudi Summer Calendar PDF | بسطة القابل | official-page-meta | yes | yes |
+| Visit Saudi Summer Calendar PDF | بلاتو | official-page-meta | yes | yes |
+| Visit Saudi Summer Calendar PDF | بي إف إل مينا 11 - نصف النهائي في الرياض | official-page-meta | yes | yes |
+| Visit Saudi Summer Calendar PDF | تجربة شاطئ قالو | official-page-meta | yes | yes |
+| Umm Al-Qura University Events Center | تجرييبية | approved-source-row | yes | HTTP 404 |
+| Umm Al-Qura University Events Center | تفعيل بيئة تعلم إلكترونية تفاعلية– بنمط غير متزامن | official-page-meta | yes | yes |
+| Visit Saudi Summer Calendar PDF | تكوة شاكر | official-page-meta | yes | yes |
+| Visit Saudi Summer Calendar PDF | جلسة طق | official-page-meta | yes | yes |
+| Visit Saudi Summer Calendar PDF | جولة البقي بين جبال الباحة | official-page-meta | yes | yes |
+| Visit Saudi Summer Calendar PDF | جولة بقي السريعة الباحة | official-page-meta | yes | yes |
+| Umm Al-Qura University Events Center | حراك يعود من جديد .. بداية جديدة وأثر مستدام | official-page-meta | yes | yes |
+| Visit Saudi Summer Calendar PDF | حفل عايض في فوكالي الرياض | official-page-meta | yes | yes |
+| Visit Saudi Summer Calendar PDF | حفل ماريلين نعمان الموسيقي | official-page-meta | yes | yes |
+| Visit Saudi Summer Calendar PDF | حفلة أحام | official-page-meta | no | yes |
+| Visit Saudi Summer Calendar PDF | خالد جواد ايف في جدة | official-page-meta | yes | yes |
+| Umm Al-Qura University Events Center | خريج الكيمياء في سوق العمل | official-page-meta | yes | yes |
+| Umm Al-Qura University Events Center | دبلوم إدارة المرافق | official-page-meta | yes | yes |
+| Umm Al-Qura University Events Center | دبلوم الإدارة المكتبية | official-page-meta | yes | yes |
+| Umm Al-Qura University Events Center | دبلوم التحول الرقمي | official-page-meta | yes | yes |
+| Umm Al-Qura University Events Center | دبلوم المتوسط في التكنولوجيا المالية | official-page-meta | yes | yes |
+| Umm Al-Qura University Events Center | دبلوم متوسط في أمن المعلومات | official-page-meta | yes | yes |
+| Umm Al-Qura University Events Center | دبلوم متوسط في إدارة الموارد البشرية | official-page-meta | yes | yes |
+| Umm Al-Qura University Events Center | دورة تدريبية بعنوان (السلامة في المعامل والمختبرات) | official-page-meta | yes | yes |
+| Umm Al-Qura University Events Center | دورة تدريبية بعنوان (السيرة الذاتية والتسويق الشخصي) | official-page-meta | yes | yes |
+| Visit Saudi Summer Calendar PDF | ليلة ستاند أب كوميدي في جدة | official-page-meta | yes | yes |
+| Umm Al-Qura University Events Center | لقاء بعنوان الفكرة وحدها لا تكفي | official-page-meta | yes | yes |
+| Umm Al-Qura University Events Center | لقاء توعوي بعنوان التعقيم وسلامة الأدوات الصحية | official-page-meta | yes | yes |
+| Visit Saudi Summer Calendar PDF | ليالي المباريات في ذا هب | official-page-meta | no | yes |
+| Umm Al-Qura University Events Center | معسكر المهارات النفسية (فك الشفرة: فهم الصوت الداخلي وإدارة الحوار الذاتي) | official-page-meta | yes | yes |
+| Visit Saudi Summer Calendar PDF | مهرجان أبها للتسوق | official-page-meta | yes | yes |
+| Visit Saudi Summer Calendar PDF | مهرجان المأكولات الشعبية | official-page-meta | yes | yes |
+| Umm Al-Qura University Events Center | نشاط بعنوان نعود بشغف وطموح | official-page-meta | yes | yes |
+| Umm Al-Qura University Events Center | نشاط رياضي بعنوان تدريبات كرة السلة | official-page-meta | yes | yes |
+| Umm Al-Qura University Events Center | ورشة عمل بعنوان أساسيات الجري | official-page-meta | yes | yes |
+| Umm Al-Qura University Events Center | ورشة عمل بعنوان من سؤال إلى اكتشاف ابدأ رحلتك البحثية | official-page-meta | yes | yes |
+| Discover Aseer Events | "Blackberry Farm " | approved-source-row | yes | HTTP 404 |
+| Riyadh City Events | Cityscape Global | approved-source-row | yes | fetch failed |
+| Visit Saudi Seasons | Combat Arena | official-page-meta | yes | yes |
+| Discover Aseer Events | Cowboy Town | approved-source-row | yes | HTTP 404 |
+| Informa Connect Saudi Event Portfolio | Education Investment Saudi | official-page-meta | yes | yes |
+| Hayy Jameel What's On | Hayy Makers | Introduction to Pottery Course with Pharah Al-Ghalib | official-page-meta | yes | yes |
+| dmg events Official | HVAC R Saudi Arabia | official-page-meta | yes | yes |
+| Visit Saudi Summer Calendar PDF | IN ACT - ACT IX | official-page-meta | yes | yes |
+| Visit Saudi Summer Calendar PDF | IN ACT - ACT X | official-page-meta | yes | yes |
+| Visit Saudi Summer Calendar PDF | IN ACT ANNIVERSARY - ACT XI | official-page-meta | yes | yes |
+| Hayy Jameel What's On | Jameel Library | July Community Programmes | official-page-meta | yes | yes |
+| Hayy Jameel What's On | Jameel Library | November Community Programmes | official-page-meta | yes | yes |
+| Hayy Jameel What's On | Jameel Library | Summer Reading Challenge | official-page-meta | yes | yes |
+| Eye of Riyadh Official | Real Estate Future Forum | official-page-meta | yes | yes |
+| Eye of Riyadh Official | Real Estate Supply Chain Forum | official-page-meta | yes | yes |
+| Riyadh City Events | Saudi Entertainment and Amusement Expo | approved-source-row | yes | fetch failed |
+| Visit Saudi Seasons | Saudi Falcons Club Auction | official-page-meta | yes | yes |
+| dmg events Official | Saudi FM & Clean | approved-source-row | yes | HTTP 404 |
+| Riyadh City Events | Saudi Food Manufacturing show | approved-source-row | yes | fetch failed |
+| Riyadh City Events | Saudi Light and Sound (SLS) Expo | approved-source-row | yes | fetch failed |
+| Riyadh City Events | Saudi WoodShow | approved-source-row | yes | fetch failed |
+| Saudi Universities and Technical Colleges | Semi-Finals: Join the Celebration at the FIFA Fan Zone | official-page-meta | no | yes |
+| Discover Aseer Events | Sha'af Event | approved-source-row | yes | HTTP 404 |
+| Riyadh City Events | Sikkat Al-Atimah (Street Food) Fan Zone – FIFA World Cup 2026 | approved-source-row | yes | fetch failed |
+| Ministry of Culture Commission Calendars | SITAR | approved-source-row | yes | fetch failed |
+| Ministry of Culture Commission Calendars | Skill Development Initiative | approved-source-row | yes | fetch failed |
+| Riyadh City Events | Smart Cities Saudi Expo | approved-source-row | yes | fetch failed |
+| Riyadh City Events | Solitaire Fan Zone – FIFA World Cup 2026 | approved-source-row | yes | fetch failed |
+| Riyadh City Events | Solo Art Exhibition Series | approved-source-row | yes | fetch failed |
+| Riyadh City Events | Summer Camp at the National Museum: Summer Wonders | approved-source-row | yes | fetch failed |
+| King Abdulaziz University Events | Summer Career Guidance Courses | official-page-meta | yes | yes |
+| Experience AlUla Events | Summer Fruits Season in AlUla | official-page-meta | yes | yes |
+| Riyadh City Events | Summer Splash Running event | approved-source-row | yes | fetch failed |
+| Visit Saudi Summer Calendar PDF | Taste of the World | official-page-meta | yes | yes |
+| King Abdulaziz University Events | The 2nd International Conference of Sustainability and Quality of Life | official-page-meta | yes | yes |
+| Ministry of Culture Commission Calendars | The Architecture and Design Café | approved-source-row | yes | fetch failed |
+| Visit Saudi Summer Calendar PDF | The Comeback | official-page-meta | yes | yes |
+| Ministry of Culture Commission Calendars | The Continuing Professional Development Initiative | approved-source-row | yes | fetch failed |
+| Visit Saudi Seasons | The Groves | official-page-meta | yes | yes |
+| Ministry of Culture Commission Calendars | The Guidelines for Culture and Arts in the Public Realm | approved-source-row | yes | fetch failed |
+| Saudi Universities and Technical Colleges | The KAUST Imaging and Characterization Core Lab presents: AI for Microscopy Workshop | official-page-meta | no | yes |
+| Riyadh City Events | The Saudi Food Show | approved-source-row | yes | fetch failed |
+| Ministry of Culture Commission Calendars | The Saudi Music Hub | approved-source-row | yes | fetch failed |
+| Experience AlUla Events | Ultra Gobi AlUla | official-page-meta | yes | yes |
+| Ministry of Culture Commission Calendars | Urban transformation Initiative | approved-source-row | yes | fetch failed |
+| Visit Saudi Seasons | Wagef! Nemr Live Comedy Show in Riyadh | official-page-meta | yes | yes |
+| Invest Saudi Events | Web Summit Lisbon 2026 | official-page-meta | yes | yes |
+| King Abdulaziz University Events | Wheel of Life Development Program 2026 | official-page-meta | yes | yes |
+| Umm Al-Qura University Events Center | إعداد التقارير الاحصائية | official-page-meta | yes | yes |
+| Umm Al-Qura University Events Center | إنجاز العمل باحترافية بمساعدة الذكاء الاصطناعي | official-page-meta | yes | yes |
+| Umm Al-Qura University Events Center | التعريف بمنظومة تقييم الأداء للمقيمين | official-page-meta | yes | yes |
+| Qassim University Events | الذكاء الاصطناعي الرشيد في البحث العلمي باستخدام LeapSpace – جزء 2 | official-page-meta | yes | yes |
+| Umm Al-Qura University Events Center | الذكاء العاطفي في الحياة الجامعية | official-page-meta | yes | yes |
+| Umm Al-Qura University Events Center | برنامج بعنوان «أثر» البحثي! | official-page-meta | yes | yes |
+| Umm Al-Qura University Events Center | بطولة ELITE CHAMPIONS | official-page-meta | yes | yes |
+| Umm Al-Qura University Events Center | تحليل الاداء وتحديد نقاط القوة واولويات التحسين | official-page-meta | yes | yes |
+| Umm Al-Qura University Events Center | حملة توعوية تفاعلية بعنوان من سيربح المعلومة الكشفية؟ | official-page-meta | yes | yes |
+| Umm Al-Qura University Events Center | دورة تدريبية بعنوان (المرونة النفسية في التعامل مع التحديات) | official-page-meta | yes | yes |
+| Umm Al-Qura University Events Center | دورة تدريبية بعنوان (الوعي الأمني الرقمي للطالب الجامعي) | official-page-meta | yes | yes |
+| Umm Al-Qura University Events Center | دورة تدريبية بعنوان (فن إدارة الوقت) | official-page-meta | yes | yes |

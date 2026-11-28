@@ -1,18 +1,18 @@
 {
-  "published_at": "2026-11-27T11:27:13.016Z",
+  "published_at": "2026-11-28T10:40:16.429Z",
   "dry_run": false,
   "include_partner": true,
   "source_candidates": "data/source_candidates.json",
   "events_catalog": "data/events_catalog.json",
-  "candidates_seen": 346,
+  "candidates_seen": 335,
   "totals": {
-    "candidates_seen": 346,
-    "published": 4,
-    "linked_existing": 317,
+    "candidates_seen": 335,
+    "published": 2,
+    "linked_existing": 308,
     "blocked": 25,
     "duplicate_review_alerts": 1,
     "category_fallback_alerts": 0,
-    "reconciled": 321,
+    "reconciled": 310,
     "session_windows_reconciled": 0
   },
   "session_window_changes": [],
@@ -48,19 +48,9 @@
       "title": "سيرك فونتانا"
     },
     {
-      "candidate_id": "candidate-visit-saudi-calendar-pdf-الاخطبوطية-كيدز-20260925-4a38d19e",
-      "event_id": "event-الاخطبوطية-كيدز",
-      "title": "الاخطبوطية كيدز"
-    },
-    {
       "candidate_id": "candidate-visit-saudi-calendar-pdf-مكونات-البخور-20261126-4a38d19e",
       "event_id": "event-مكونات-البخور",
       "title": "مكونات البخور"
-    },
-    {
-      "candidate_id": "candidate-visit-saudi-calendar-pdf-حفل-أصيل-هميم-يف-فوكالي-الرياض-20261127-4a38d19e",
-      "event_id": "event-حفل-أصيل-هميم-يف-فوكالي-الرياض",
-      "title": "حفل أصيل هميم يف فوكالي الرياض"
     }
   ],
   "linked_existing": [
@@ -419,12 +409,6 @@
       "reason": "already linked to catalog event"
     },
     {
-      "candidate_id": "candidate-visit-saudi-calendar-pdf-األخطبوطية-كيدز-20260925-4a38d19e",
-      "event_id": "event-الاخطبوطية-كيدز",
-      "title": "األخطبوطية كيدز",
-      "reason": "trusted duplicate linked to existing catalog event"
-    },
-    {
       "candidate_id": "candidate-visit-saudi-seasons-saudi-falcons-club-auction-20261001-4e016ab8",
       "event_id": "event-saudi-falcons-club-auction",
       "title": "Saudi Falcons Club Auction",
@@ -563,12 +547,6 @@
       "reason": "already linked to catalog event"
     },
     {
-      "candidate_id": "candidate-hayy-jameel-events-hayy-cinema-november-2026-20261101-73243d6e",
-      "event_id": "event-hayy-cinema-november-2026",
-      "title": "Hayy Cinema | November 2026",
-      "reason": "already linked to catalog event"
-    },
-    {
       "candidate_id": "candidate-visit-saudi-seasons-the-little-farmer-20261101-6645360d",
       "event_id": "event-the-little-farmer",
       "title": "The Little Farmer",
@@ -599,6 +577,12 @@
       "reason": "already linked to catalog event"
     },
     {
+      "candidate_id": "candidate-hayy-jameel-events-hayy-cinema-november-2026-20261104-73243d6e",
+      "event_id": "event-hayy-cinema-november-2026",
+      "title": "Hayy Cinema | November 2026",
+      "reason": "already linked to catalog event"
+    },
+    {
       "candidate_id": "candidate-ithra-events-arabic-children-book-club-7-9-20261104-810c285f",
       "event_id": "event-arabic-children-book-club-7-9",
       "title": "Arabic Children Book Club (7 - 9)",
@@ -615,12 +599,6 @@
       "event_id": "event-سيرك-فونتانا",
       "title": "سيرك فونتانا",
       "reason": "trusted duplicate linked to existing catalog event"
-    },
-    {
-      "candidate_id": "candidate-hayy-jameel-events-hayy-explorers-november-programmes-20261105-7a475a93",
-      "event_id": "event-hayy-explorers-november-programmes",
-      "title": "Hayy Explorers | November Programmes",
-      "reason": "already linked to catalog event"
     },
     {
       "candidate_id": "candidate-visit-saudi-seasons-palms-village-in-al-ahsa-20261111-4f5a1576",
@@ -650,12 +628,6 @@
       "candidate_id": "candidate-visit-saudi-seasons-ithra-winter-at-dhahran-expo-20261112-e6908ee1",
       "event_id": "event-ithra-winter-at-dhahran-expo",
       "title": "Ithra Winter at Dhahran Expo!",
-      "reason": "already linked to catalog event"
-    },
-    {
-      "candidate_id": "candidate-ithra-events-storyteller-of-the-day-20261113-6d4a6425",
-      "event_id": "event-storyteller-of-the-day-2",
-      "title": "Storyteller of the Day",
       "reason": "already linked to catalog event"
     },
     {
@@ -749,12 +721,6 @@
       "reason": "already linked to catalog event"
     },
     {
-      "candidate_id": "candidate-mdlbeast-events-xp-music-futures-2026-20261126-19e9b824",
-      "event_id": "event-xp-music-futures-2026",
-      "title": "XP Music Futures 2026",
-      "reason": "already linked to catalog event"
-    },
-    {
       "candidate_id": "candidate-visit-saudi-calendar-pdf-تاريخ-الفن-عىل-طريق-البخور-20261126-4a38d19e",
       "event_id": "event-مكونات-البخور",
       "title": "تاريخ الفن عىل طريق البخور",
@@ -773,30 +739,6 @@
       "reason": "already linked to catalog event"
     },
     {
-      "candidate_id": "candidate-visit-saudi-calendar-pdf-in-act-anniversary-act-xi-20261127-4a38d19e",
-      "event_id": "event-in-act-anniversary-act-xi-2",
-      "title": "IN ACT ANNIVERSARY - ACT XI",
-      "reason": "already linked to catalog event"
-    },
-    {
-      "candidate_id": "candidate-visit-saudi-calendar-pdf-واقف-momos-20261127-4a38d19e",
-      "event_id": "event-واقف-momos",
-      "title": "واقف! Momos",
-      "reason": "already linked to catalog event"
-    },
-    {
-      "candidate_id": "candidate-mdlbeast-events-unstable-20261127-5647df2e",
-      "event_id": "event-unstable",
-      "title": "Unstable",
-      "reason": "already linked to catalog event"
-    },
-    {
-      "candidate_id": "candidate-visit-saudi-calendar-pdf-حفل-صابر-الرباعي-يف-فوكالي-الرياض-20261127-4a38d19e",
-      "event_id": "event-حفل-أصيل-هميم-يف-فوكالي-الرياض",
-      "title": "حفل صابر الرباعي يف فوكالي الرياض",
-      "reason": "trusted duplicate linked to existing catalog event"
-    },
-    {
       "candidate_id": "candidate-visit-saudi-calendar-pdf-ُجولة-األطفال-يف-الحِ-جر-20261127-4a38d19e",
       "event_id": "event-ُجولة-األطفال-يف-الحِ-جر",
       "title": "ُجولة األطفال يف الحِ جر",
@@ -806,186 +748,6 @@
       "candidate_id": "candidate-experience-alula-events-hegra-childrens-tour-20261127-1258c39a",
       "event_id": "event-hegra-childrens-tour",
       "title": "Hegra Children's Tour",
-      "reason": "already linked to catalog event"
-    },
-    {
-      "candidate_id": "candidate-ithra-events-aramcorama-exhibit-20261127-854df5c1",
-      "event_id": "event-aramcorama-exhibit",
-      "title": "Aramcorama Exhibit",
-      "reason": "already linked to catalog event"
-    },
-    {
-      "candidate_id": "candidate-ithra-events-childrens-museum-20261127-7da7af7c",
-      "event_id": "event-childrens-museum",
-      "title": "Children's Museum",
-      "reason": "already linked to catalog event"
-    },
-    {
-      "candidate_id": "candidate-ithra-events-echoes-of-the-familiar-20261127-cc43c2bd",
-      "event_id": "event-echoes-of-the-familiar",
-      "title": "Echoes of the Familiar",
-      "reason": "already linked to catalog event"
-    },
-    {
-      "candidate_id": "candidate-ithra-events-in-praise-of-the-artisan-20261127-14781307",
-      "event_id": "event-in-praise-of-the-artisan",
-      "title": "In Praise of the Artisan",
-      "reason": "already linked to catalog event"
-    },
-    {
-      "candidate_id": "candidate-ithra-events-ithra-art-prize-exhibition-20261127-83c2ab55",
-      "event_id": "event-ithra-art-prize-exhibition",
-      "title": "Ithra Art Prize Exhibition",
-      "reason": "already linked to catalog event"
-    },
-    {
-      "candidate_id": "candidate-ithra-events-tafasahu-make-room-20261127-562bc61d",
-      "event_id": "event-tafasahu-make-room",
-      "title": "Tafasahu: Make Room",
-      "reason": "already linked to catalog event"
-    },
-    {
-      "candidate_id": "candidate-ithra-events-artistic-maze-lens-into-landscapes-20261127-1211fd8c",
-      "event_id": "event-artistic-maze-lens-into-landscapes",
-      "title": "Artistic Maze - Lens into Landscapes",
-      "reason": "already linked to catalog event"
-    },
-    {
-      "candidate_id": "candidate-ithra-events-childrens-caf-20261127-eaf2fb9c",
-      "event_id": "event-childrens-caf-2",
-      "title": "Children's Café",
-      "reason": "already linked to catalog event"
-    },
-    {
-      "candidate_id": "candidate-ithra-events-food-experience-20261127-d092e028",
-      "event_id": "event-food-experience",
-      "title": "Food Experience",
-      "reason": "already linked to catalog event"
-    },
-    {
-      "candidate_id": "candidate-ithra-events-highlights-exhibition-20261127-cf17fcbf",
-      "event_id": "event-highlights-exhibition",
-      "title": "Highlights Exhibition",
-      "reason": "already linked to catalog event"
-    },
-    {
-      "candidate_id": "candidate-ithra-events-khoos-workshop-palm-weaving-20261127-dbd6393b",
-      "event_id": "event-khoos-workshop-palm-weaving",
-      "title": "Khoos Workshop: Palm Weaving",
-      "reason": "already linked to catalog event"
-    },
-    {
-      "candidate_id": "candidate-ithra-events-knot-to-scale-20261127-837ef9ba",
-      "event_id": "event-knot-to-scale",
-      "title": "knot to Scale",
-      "reason": "already linked to catalog event"
-    },
-    {
-      "candidate_id": "candidate-ithra-events-outdoor-stage-20261127-f808bdf9",
-      "event_id": "event-outdoor-stage",
-      "title": "Outdoor Stage",
-      "reason": "already linked to catalog event"
-    },
-    {
-      "candidate_id": "candidate-ithra-events-words-waves-20261127-860624d6",
-      "event_id": "event-words-waves",
-      "title": "Words & Waves",
-      "reason": "already linked to catalog event"
-    },
-    {
-      "candidate_id": "candidate-ithra-events-rammed-earth-20261127-20508056",
-      "event_id": "event-rammed-earth",
-      "title": "Rammed Earth",
-      "reason": "already linked to catalog event"
-    },
-    {
-      "candidate_id": "candidate-ithra-events-your-stickers-your-way-20261127-05934ca6",
-      "event_id": "event-your-stickers-your-way",
-      "title": "Your Stickers, Your Way",
-      "reason": "already linked to catalog event"
-    },
-    {
-      "candidate_id": "candidate-ithra-events-1-2-3-a-little-space-for-me-20261127-c4551894",
-      "event_id": "event-1-2-3-a-little-space-for-me-2",
-      "title": "1, 2, 3, A Little Space for Me",
-      "reason": "already linked to catalog event"
-    },
-    {
-      "candidate_id": "candidate-ithra-events-1-2-3-lets-rhyme-20261127-cce06ee6",
-      "event_id": "event-1-2-3-lets-rhyme-2",
-      "title": "1, 2, 3, Let's Rhyme!",
-      "reason": "already linked to catalog event"
-    },
-    {
-      "candidate_id": "candidate-ithra-events-roaming-performances-20261127-db1e71eb",
-      "event_id": "event-roaming-performances",
-      "title": "Roaming Performances",
-      "reason": "already linked to catalog event"
-    },
-    {
-      "candidate_id": "candidate-ithra-events-the-big-printing-experience-20261127-2ce74c65",
-      "event_id": "event-the-big-printing-experience",
-      "title": "The Big Printing Experience",
-      "reason": "already linked to catalog event"
-    },
-    {
-      "candidate_id": "candidate-ithra-events-once-upon-a-postcard-20261127-f6dc514c",
-      "event_id": "event-once-upon-a-postcard",
-      "title": "Once Upon a Postcard",
-      "reason": "already linked to catalog event"
-    },
-    {
-      "candidate_id": "candidate-ithra-events-puppet-show-20261127-1fe128b3",
-      "event_id": "event-puppet-show",
-      "title": "Puppet Show",
-      "reason": "already linked to catalog event"
-    },
-    {
-      "candidate_id": "candidate-ithra-events-your-book-in-a-minute-20261127-50f50c00",
-      "event_id": "event-your-book-in-a-minute-2",
-      "title": "Your Book in a Minute",
-      "reason": "already linked to catalog event"
-    },
-    {
-      "candidate_id": "candidate-ithra-events-family-game-audience-challenges-20261127-0e3d4e48",
-      "event_id": "event-family-game-audience-challenges",
-      "title": "Family Game: Audience Challenges",
-      "reason": "already linked to catalog event"
-    },
-    {
-      "candidate_id": "candidate-ithra-events-indoor-stage-20261127-4c8ece9e",
-      "event_id": "event-indoor-stage",
-      "title": "Indoor Stage",
-      "reason": "already linked to catalog event"
-    },
-    {
-      "candidate_id": "candidate-ithra-events-the-birds-postcard-studio-20261127-e33624c1",
-      "event_id": "event-the-birds-postcard-studio",
-      "title": "The Birds Postcard Studio",
-      "reason": "already linked to catalog event"
-    },
-    {
-      "candidate_id": "candidate-ithra-events-sand-sculpturing-20261127-fee46d95",
-      "event_id": "event-sand-sculpturing",
-      "title": "Sand Sculpturing",
-      "reason": "already linked to catalog event"
-    },
-    {
-      "candidate_id": "candidate-visit-saudi-seasons-abdulmajeed-abdullah-equestrian-concert-20261127-331ecc7e",
-      "event_id": "event-abdulmajeed-abdullah-equestrian-concert",
-      "title": "Abdulmajeed Abdullah - Equestrian Concert",
-      "reason": "already linked to catalog event"
-    },
-    {
-      "candidate_id": "candidate-mdlbeast-events-beast-house-20261127-83049a2a",
-      "event_id": "event-beast-house",
-      "title": "Beast House",
-      "reason": "already linked to catalog event"
-    },
-    {
-      "candidate_id": "candidate-visit-saudi-calendar-wagef-momos-live-in-jeddah-20261127-59470a9a",
-      "event_id": "event-wagef-momos-live-in-jeddah",
-      "title": "Wagef! Momos Live in Jeddah",
       "reason": "already linked to catalog event"
     },
     {
@@ -1001,9 +763,129 @@
       "reason": "already linked to catalog event"
     },
     {
+      "candidate_id": "candidate-ithra-events-aramcorama-exhibit-20261128-854df5c1",
+      "event_id": "event-aramcorama-exhibit",
+      "title": "Aramcorama Exhibit",
+      "reason": "already linked to catalog event"
+    },
+    {
+      "candidate_id": "candidate-ithra-events-childrens-museum-20261128-7da7af7c",
+      "event_id": "event-childrens-museum",
+      "title": "Children's Museum",
+      "reason": "already linked to catalog event"
+    },
+    {
+      "candidate_id": "candidate-ithra-events-echoes-of-the-familiar-20261128-cc43c2bd",
+      "event_id": "event-echoes-of-the-familiar",
+      "title": "Echoes of the Familiar",
+      "reason": "already linked to catalog event"
+    },
+    {
+      "candidate_id": "candidate-ithra-events-in-praise-of-the-artisan-20261128-14781307",
+      "event_id": "event-in-praise-of-the-artisan",
+      "title": "In Praise of the Artisan",
+      "reason": "already linked to catalog event"
+    },
+    {
+      "candidate_id": "candidate-ithra-events-ithra-art-prize-exhibition-20261128-83c2ab55",
+      "event_id": "event-ithra-art-prize-exhibition",
+      "title": "Ithra Art Prize Exhibition",
+      "reason": "already linked to catalog event"
+    },
+    {
+      "candidate_id": "candidate-ithra-events-tafasahu-make-room-20261128-562bc61d",
+      "event_id": "event-tafasahu-make-room",
+      "title": "Tafasahu: Make Room",
+      "reason": "already linked to catalog event"
+    },
+    {
+      "candidate_id": "candidate-ithra-events-artistic-maze-lens-into-landscapes-20261128-1211fd8c",
+      "event_id": "event-artistic-maze-lens-into-landscapes",
+      "title": "Artistic Maze - Lens into Landscapes",
+      "reason": "already linked to catalog event"
+    },
+    {
+      "candidate_id": "candidate-ithra-events-childrens-caf-20261128-eaf2fb9c",
+      "event_id": "event-childrens-caf-2",
+      "title": "Children's Café",
+      "reason": "already linked to catalog event"
+    },
+    {
+      "candidate_id": "candidate-ithra-events-food-experience-20261128-d092e028",
+      "event_id": "event-food-experience",
+      "title": "Food Experience",
+      "reason": "already linked to catalog event"
+    },
+    {
+      "candidate_id": "candidate-ithra-events-highlights-exhibition-20261128-cf17fcbf",
+      "event_id": "event-highlights-exhibition",
+      "title": "Highlights Exhibition",
+      "reason": "already linked to catalog event"
+    },
+    {
+      "candidate_id": "candidate-ithra-events-khoos-workshop-palm-weaving-20261128-dbd6393b",
+      "event_id": "event-khoos-workshop-palm-weaving",
+      "title": "Khoos Workshop: Palm Weaving",
+      "reason": "already linked to catalog event"
+    },
+    {
+      "candidate_id": "candidate-ithra-events-knot-to-scale-20261128-837ef9ba",
+      "event_id": "event-knot-to-scale",
+      "title": "knot to Scale",
+      "reason": "already linked to catalog event"
+    },
+    {
+      "candidate_id": "candidate-ithra-events-outdoor-stage-20261128-f808bdf9",
+      "event_id": "event-outdoor-stage",
+      "title": "Outdoor Stage",
+      "reason": "already linked to catalog event"
+    },
+    {
+      "candidate_id": "candidate-ithra-events-words-waves-20261128-860624d6",
+      "event_id": "event-words-waves",
+      "title": "Words & Waves",
+      "reason": "already linked to catalog event"
+    },
+    {
+      "candidate_id": "candidate-ithra-events-rammed-earth-20261128-20508056",
+      "event_id": "event-rammed-earth",
+      "title": "Rammed Earth",
+      "reason": "already linked to catalog event"
+    },
+    {
+      "candidate_id": "candidate-ithra-events-your-stickers-your-way-20261128-05934ca6",
+      "event_id": "event-your-stickers-your-way",
+      "title": "Your Stickers, Your Way",
+      "reason": "already linked to catalog event"
+    },
+    {
       "candidate_id": "candidate-ithra-events-storytime-20261128-03063c19",
       "event_id": "event-storytime",
       "title": "Storytime",
+      "reason": "already linked to catalog event"
+    },
+    {
+      "candidate_id": "candidate-ithra-events-1-2-3-a-little-space-for-me-20261128-c4551894",
+      "event_id": "event-1-2-3-a-little-space-for-me-2",
+      "title": "1, 2, 3, A Little Space for Me",
+      "reason": "already linked to catalog event"
+    },
+    {
+      "candidate_id": "candidate-ithra-events-1-2-3-lets-rhyme-20261128-cce06ee6",
+      "event_id": "event-1-2-3-lets-rhyme-2",
+      "title": "1, 2, 3, Let's Rhyme!",
+      "reason": "already linked to catalog event"
+    },
+    {
+      "candidate_id": "candidate-ithra-events-roaming-performances-20261128-db1e71eb",
+      "event_id": "event-roaming-performances",
+      "title": "Roaming Performances",
+      "reason": "already linked to catalog event"
+    },
+    {
+      "candidate_id": "candidate-ithra-events-the-big-printing-experience-20261128-2ce74c65",
+      "event_id": "event-the-big-printing-experience",
+      "title": "The Big Printing Experience",
       "reason": "already linked to catalog event"
     },
     {
@@ -1013,9 +895,57 @@
       "reason": "already linked to catalog event"
     },
     {
+      "candidate_id": "candidate-ithra-events-once-upon-a-postcard-20261128-f6dc514c",
+      "event_id": "event-once-upon-a-postcard",
+      "title": "Once Upon a Postcard",
+      "reason": "already linked to catalog event"
+    },
+    {
+      "candidate_id": "candidate-ithra-events-puppet-show-20261128-1fe128b3",
+      "event_id": "event-puppet-show",
+      "title": "Puppet Show",
+      "reason": "already linked to catalog event"
+    },
+    {
+      "candidate_id": "candidate-ithra-events-your-book-in-a-minute-20261128-50f50c00",
+      "event_id": "event-your-book-in-a-minute-2",
+      "title": "Your Book in a Minute",
+      "reason": "already linked to catalog event"
+    },
+    {
       "candidate_id": "candidate-umm-al-qura-events-الترشح-للدبلوم-المشارك-إدارة-الحشود-حضوري-بالتعاون-مع-جمعية-الرياض-للتنم-20261128-bdfe3080",
       "event_id": "event-الترشح-للدبلوم-المشارك-إدارة-الحشود-حضوري-بالتعاون-مع-جمعية-الرياض-للتنم",
       "title": "الترشح للدبلوم المشارك إدارة الحشود (حضوري) بالتعاون مع جمعية الرياض للتنمية والدراسات والخدمات الاستشارية",
+      "reason": "already linked to catalog event"
+    },
+    {
+      "candidate_id": "candidate-ithra-events-family-game-audience-challenges-20261128-0e3d4e48",
+      "event_id": "event-family-game-audience-challenges",
+      "title": "Family Game: Audience Challenges",
+      "reason": "already linked to catalog event"
+    },
+    {
+      "candidate_id": "candidate-ithra-events-indoor-stage-20261128-4c8ece9e",
+      "event_id": "event-indoor-stage",
+      "title": "Indoor Stage",
+      "reason": "already linked to catalog event"
+    },
+    {
+      "candidate_id": "candidate-ithra-events-the-birds-postcard-studio-20261128-e33624c1",
+      "event_id": "event-the-birds-postcard-studio",
+      "title": "The Birds Postcard Studio",
+      "reason": "already linked to catalog event"
+    },
+    {
+      "candidate_id": "candidate-ithra-events-sand-sculpturing-20261128-fee46d95",
+      "event_id": "event-sand-sculpturing",
+      "title": "Sand Sculpturing",
+      "reason": "already linked to catalog event"
+    },
+    {
+      "candidate_id": "candidate-mdlbeast-events-beast-house-20261128-83049a2a",
+      "event_id": "event-beast-house",
+      "title": "Beast House",
       "reason": "already linked to catalog event"
     },
     {
@@ -1232,6 +1162,12 @@
       "candidate_id": "candidate-visit-saudi-calendar-pdf-بـــاور-سالب-20261203-4a38d19e",
       "event_id": "event-بـــاور-سالب",
       "title": "بـــاور سالب",
+      "reason": "already linked to catalog event"
+    },
+    {
+      "candidate_id": "candidate-mdlbeast-events-unstable-20261203-5647df2e",
+      "event_id": "event-unstable",
+      "title": "Unstable",
       "reason": "already linked to catalog event"
     },
     {
@@ -1981,12 +1917,12 @@
       "possible_event_id": "event-king-abdulaziz-falconry-festival"
     },
     {
-      "candidate_id": "candidate-ithra-events-book-nook-zone-20261127-94c82261",
+      "candidate_id": "candidate-ithra-events-book-nook-zone-20261128-94c82261",
       "title": "Book Nook Zone",
       "reason": "linked catalog row event-book-nook-zone was superseded by dedupe"
     },
     {
-      "candidate_id": "candidate-ithra-events-gaming-zone-20261127-f3162870",
+      "candidate_id": "candidate-ithra-events-gaming-zone-20261128-f3162870",
       "title": "Gaming Zone",
       "reason": "linked catalog row event-rolling-podcast was superseded by dedupe"
     },

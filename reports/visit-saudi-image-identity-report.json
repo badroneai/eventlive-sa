@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-27T11:27:18.118Z",
+  "generated_at": "2026-11-28T10:40:22.788Z",
   "catalog": "data/events_catalog.json",
   "candidates": "data/source_candidates.json",
   "manifest": "data/event_image_cache_manifest.json",
@@ -9,25 +9,39 @@
     "min_intersection": 2
   },
   "totals": {
-    "pdf_crop_assignments": 64,
-    "verified": 61,
-    "struck": 3,
-    "slots_seen_this_cycle": 68
+    "pdf_crop_assignments": 62,
+    "verified": 57,
+    "struck": 5,
+    "slots_seen_this_cycle": 62
   },
   "struck": [
     {
-      "id": "event-أبو-سارة-و-سري-الخالد-يف-ليالي-الديرة-الكوميدية",
-      "title": "أبو سارة و سري الخالد يف ليالي الديرة الكوميدية",
-      "file": "visit-saudi-summer-2026-p006-top-right.jpg",
+      "id": "event-الاخطبوطية-كيدز",
+      "title": "األخطبوطية كيدز",
+      "file": "visit-saudi-summer-2026-p004-top-right.jpg",
       "reason": "slot-vacated",
-      "detail": "no dated card currently occupies page 6 top-right of https://www.visitsaudi.com/content/dam/documents/saudi-calendar-ar.pdf"
+      "detail": "no dated card currently occupies page 4 top-right of https://www.visitsaudi.com/content/dam/documents/saudi-calendar-ar.pdf"
     },
     {
-      "id": "event-واقف-momos-2",
-      "title": "واقف! Momos",
-      "file": "visit-saudi-summer-2026-p083-bottom-right.jpg",
+      "id": "event-in-act-anniversary-act-xi-2",
+      "title": "IN ACT ANNIVERSARY - ACT XI",
+      "file": "visit-saudi-summer-2026-p083-top-left.jpg",
       "reason": "slot-vacated",
-      "detail": "no dated card currently occupies page 83 bottom-right of https://www.visitsaudi.com/content/dam/documents/saudi-calendar-ar.pdf"
+      "detail": "no dated card currently occupies page 83 top-left of https://www.visitsaudi.com/content/dam/documents/saudi-calendar-ar.pdf"
+    },
+    {
+      "id": "event-واقف-momos",
+      "title": "واقف! Momos",
+      "file": "visit-saudi-summer-2026-p051-top-left.png",
+      "reason": "slot-vacated",
+      "detail": "no dated card currently occupies page 51 top-left of https://www.visitsaudi.com/content/dam/documents/saudi-calendar-ar.pdf"
+    },
+    {
+      "id": "event-حفل-أصيل-هميم-يف-فوكالي-الرياض",
+      "title": "حفل صابر الرباعي يف فوكالي الرياض",
+      "file": "visit-saudi-summer-2026-p006-bottom-right.jpg",
+      "reason": "slot-vacated",
+      "detail": "no dated card currently occupies page 6 bottom-right of https://www.visitsaudi.com/content/dam/documents/saudi-calendar-ar.pdf"
     },
     {
       "id": "event-يو-إف-سي",
@@ -97,15 +111,6 @@
       "matched_tokens": [
         "قصه",
         "بقصه"
-      ]
-    },
-    {
-      "id": "event-الاخطبوطية-كيدز",
-      "title": "األخطبوطية كيدز",
-      "file": "visit-saudi-summer-2026-p004-top-right.jpg",
-      "matched_tokens": [
-        "االخطبوطيه",
-        "كيدز"
       ]
     },
     {
@@ -289,24 +294,6 @@
       ]
     },
     {
-      "id": "event-in-act-anniversary-act-xi-2",
-      "title": "IN ACT ANNIVERSARY - ACT XI",
-      "file": "visit-saudi-summer-2026-p083-top-left.jpg",
-      "matched_tokens": [
-        "act",
-        "anniversary"
-      ]
-    },
-    {
-      "id": "event-واقف-momos",
-      "title": "واقف! Momos",
-      "file": "visit-saudi-summer-2026-p051-top-left.png",
-      "matched_tokens": [
-        "واقف",
-        "momos"
-      ]
-    },
-    {
       "id": "event-ُجولة-األطفال-يف-الحِ-جر",
       "title": "ُجولة األطفال يف الحِ جر",
       "file": "visit-saudi-summer-2026-p039-bottom-left.jpg",
@@ -314,18 +301,6 @@
         "جوله",
         "االطفال",
         "الح"
-      ]
-    },
-    {
-      "id": "event-حفل-أصيل-هميم-يف-فوكالي-الرياض",
-      "title": "حفل صابر الرباعي يف فوكالي الرياض",
-      "file": "visit-saudi-summer-2026-p006-bottom-right.jpg",
-      "matched_tokens": [
-        "حفل",
-        "صابر",
-        "الرباعي",
-        "فوكالي",
-        "الرياض"
       ]
     },
     {

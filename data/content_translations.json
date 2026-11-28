@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "generated_at": "2026-11-27T11:41:08.703Z",
+  "generated_at": "2026-11-28T10:56:27.252Z",
   "entries": {
     "1f91543d6769d9abda47f221ba86f9f9ebf27443": {
       "source": "Skill Development Initiative",
@@ -101586,574 +101586,6 @@
       "method": "argos-mt",
       "translated_at": "2026-11-25T21:16:27.494Z"
     },
-    "d209192811f2b0a28312eca262ab521462000581": {
-      "source": "الصورة الرسمية: https://www.visitsaudi.com/content/dam/wvs/calendar/arabic-language-exhibition-in-riyadh.jpg",
-      "source_lang": "en",
-      "target_lang": "ar",
-      "text": "الصورة الرسمية: https://www.visitsaudi.com/content/dam/wvs/calendar/arabic-language-exhibition-in-riyadh.jpg",
-      "method": "identity-pass",
-      "translated_at": "2026-11-27T11:39:02.662Z"
-    },
-    "b353732d9851862efda16437acfe18d8578203d6": {
-      "source": "الصورة الرسمية: https://www.visitsaudi.com/content/dam/wvs/calendar/arabic-language-exhibition-for-kids.jpg",
-      "source_lang": "en",
-      "target_lang": "ar",
-      "text": "الصورة الرسمية: https://www.visitsaudi.com/content/dam/wvs/calendar/arabic-language-exhibition-for-kids.jpg",
-      "method": "identity-pass",
-      "translated_at": "2026-11-27T11:39:02.912Z"
-    },
-    "c65be0c41191d1c74223ceaa3a856974426b6cae": {
-      "source": "رابط المصدر: https://hayyjameel.org/whats-on/hayy-cinema-at-saha-2nd-edition/",
-      "source_lang": "en",
-      "target_lang": "ar",
-      "text": "رابط المصدر: https://hayyjameel.org/whats-on/hayy-cinema-at-saha-2nd-edition/",
-      "method": "identity-pass",
-      "translated_at": "2026-11-27T11:39:03.033Z"
-    },
-    "f9fd9a82ff57ac839e84b925ed378dd1cffef72a": {
-      "source": "رابط المصدر: https://www.ithra.com/en/programme/2026/ithra-art-prize-exhibition",
-      "source_lang": "en",
-      "target_lang": "ar",
-      "text": "رابط المصدر: https://www.ithra.com/en/programme/2026/ithra-art-prize-exhibition",
-      "method": "identity-pass",
-      "translated_at": "2026-11-27T11:39:04.673Z"
-    },
-    "0dbcc433747c334a39ac4c54409d301ba6dd7e0d": {
-      "source": "رابط المصدر: https://www.ithra.com/en/programme/2026/art-studio1/open-artistic-space",
-      "source_lang": "en",
-      "target_lang": "ar",
-      "text": "رابط المصدر: https://www.ithra.com/en/programme/2026/art-studio1/open-artistic-space",
-      "method": "identity-pass",
-      "translated_at": "2026-11-27T11:39:05.149Z"
-    },
-    "22c0053d2227e4e69332e817491027652c7d601e": {
-      "source": "رابط المصدر: https://www.ithra.com/en/programme/2026/ithra-museum/ithra-museum-free-wednesday",
-      "source_lang": "en",
-      "target_lang": "ar",
-      "text": "رابط المصدر: https://www.ithra.com/en/programme/2026/ithra-museum/ithra-museum-free-wednesday",
-      "method": "identity-pass",
-      "translated_at": "2026-11-27T11:39:05.222Z"
-    },
-    "90e4c440e40d5d0330ebbd2a9a2725c332d25c0b": {
-      "source": "رابط المصدر: https://www.ithra.com/en/programme/2026/childrens-museum/trolley-show",
-      "source_lang": "en",
-      "target_lang": "ar",
-      "text": "رابط المصدر: https://www.ithra.com/en/programme/2026/childrens-museum/trolley-show",
-      "method": "identity-pass",
-      "translated_at": "2026-11-27T11:39:05.314Z"
-    },
-    "c2bae2762f7358e1b943831b4ce6d616ba09177d": {
-      "source": "رابط المصدر: https://www.ithra.com/en/programme/2026/ithra-museum/aramcorama-exhibit",
-      "source_lang": "en",
-      "target_lang": "ar",
-      "text": "رابط المصدر: https://www.ithra.com/en/programme/2026/ithra-museum/aramcorama-exhibit",
-      "method": "identity-pass",
-      "translated_at": "2026-11-27T11:39:05.453Z"
-    },
-    "b4f9d2a2600a825426bf39128ea8cebf0f86c525": {
-      "source": "رابط المصدر: https://www.ithra.com/en/programme/2026/ithra-museum/praise-artisan",
-      "source_lang": "en",
-      "target_lang": "ar",
-      "text": "رابط المصدر: https://www.ithra.com/en/programme/2026/ithra-museum/praise-artisan",
-      "method": "identity-pass",
-      "translated_at": "2026-11-27T11:39:05.502Z"
-    },
-    "05ec6274c4575366b178a8c1ef99a524968e7b13": {
-      "source": "رابط المصدر: https://www.ithra.com/en/programme/2026/trivia-night-energy-memory",
-      "source_lang": "en",
-      "target_lang": "ar",
-      "text": "رابط المصدر: https://www.ithra.com/en/programme/2026/trivia-night-energy-memory",
-      "method": "identity-pass",
-      "translated_at": "2026-11-27T11:39:05.541Z"
-    },
-    "a0767b7163a2e175ad2a8a4cfc8a8cadf29cbf43": {
-      "source": "رابط المصدر: https://www.ithra.com/en/programme/2026/childrens-museum/imagination-oasis",
-      "source_lang": "en",
-      "target_lang": "ar",
-      "text": "رابط المصدر: https://www.ithra.com/en/programme/2026/childrens-museum/imagination-oasis",
-      "method": "identity-pass",
-      "translated_at": "2026-11-27T11:39:05.585Z"
-    },
-    "f45cdff5594d92d99802a4be2fe1280d328254f0": {
-      "source": "رابط المصدر: https://www.ithra.com/en/programme/2026/ithras-kids-community",
-      "source_lang": "en",
-      "target_lang": "ar",
-      "text": "رابط المصدر: https://www.ithra.com/en/programme/2026/ithras-kids-community",
-      "method": "identity-pass",
-      "translated_at": "2026-11-27T11:39:05.642Z"
-    },
-    "9521a0c6c468d18971821ab7e0daf599a758257a": {
-      "source": "رابط المصدر: https://www.ithra.com/en/programme/2026/treasure-hunt/adventure-around-kingdom",
-      "source_lang": "en",
-      "target_lang": "ar",
-      "text": "رابط المصدر: https://www.ithra.com/en/programme/2026/treasure-hunt/adventure-around-kingdom",
-      "method": "identity-pass",
-      "translated_at": "2026-11-27T11:39:05.808Z"
-    },
-    "c8a439fbadb50d6a8570ef403a0ec1cfb98d19de": {
-      "source": "رابط المصدر: https://www.ithra.com/en/programme/2026/childrens-book-club",
-      "source_lang": "en",
-      "target_lang": "ar",
-      "text": "رابط المصدر: https://www.ithra.com/en/programme/2026/childrens-book-club",
-      "method": "identity-pass",
-      "translated_at": "2026-11-27T11:39:05.854Z"
-    },
-    "198778ee3a026d774665e772ad02d620441e9693": {
-      "source": "رابط المصدر: https://www.ithra.com/en/programme/2026/family-game/family-game-within-five-seconds",
-      "source_lang": "en",
-      "target_lang": "ar",
-      "text": "رابط المصدر: https://www.ithra.com/en/programme/2026/family-game/family-game-within-five-seconds",
-      "method": "identity-pass",
-      "translated_at": "2026-11-27T11:39:05.937Z"
-    },
-    "74174c95b44ef3377d3f66fda0860e0dde3042b1": {
-      "source": "رابط المصدر: https://sdaia.gov.sa/en/MediaCenter/Events/Pages/EventsDetails.aspx?EventID=149",
-      "source_lang": "en",
-      "target_lang": "ar",
-      "text": "رابط المصدر: https://sdaia.gov.sa/en/MediaCenter/Events/Pages/EventsDetails.aspx?EventID=149",
-      "method": "identity-pass",
-      "translated_at": "2026-11-27T11:39:06.002Z"
-    },
-    "1b6d9690d2be78a1c903fec548b6ed7644461978": {
-      "source": "الصورة الرسمية: https://www.visitsaudi.com/content/dam/wvs/calendar/katheeb-trip-to-al-asfar-lake.jpg",
-      "source_lang": "en",
-      "target_lang": "ar",
-      "text": "الصورة الرسمية: https://www.visitsaudi.com/content/dam/wvs/calendar/katheeb-trip-to-al-asfar-lake.jpg",
-      "method": "identity-pass",
-      "translated_at": "2026-11-27T11:39:06.064Z"
-    },
-    "e5924fc9d08364ba54e7acddb3dbc370aa3ca483": {
-      "source": "رابط المصدر: https://hayyjameel.org/whats-on/jameel-library-opening-programme-at-the-edge-of-renewal-with-the-khaleeji-womens-library-and-archive/",
-      "source_lang": "en",
-      "target_lang": "ar",
-      "text": "رابط المصدر: https://hayyjameel.org/whats-on/jameel-library-opening-programme-at-the-edge-of-renewal-with-the-khaleeji-womens-library-and-archive/",
-      "method": "identity-pass",
-      "translated_at": "2026-11-27T11:39:06.147Z"
-    },
-    "7cf46ce4928fa69ab6fe9d05a5594bd3a665d33c": {
-      "source": "رابط المصدر: https://www.visitsaudi.com/en/riyadh/events/riyadh-racing-season",
-      "source_lang": "en",
-      "target_lang": "ar",
-      "text": "رابط المصدر: https://www.visitsaudi.com/en/riyadh/events/riyadh-racing-season",
-      "method": "identity-pass",
-      "translated_at": "2026-11-27T11:39:06.258Z"
-    },
-    "ce79dfabce3e8aa5cfa07f380bec430b9d5ff3c7": {
-      "source": "رابط المصدر: https://www.ithra.com/en/programme/2026/ithra-winter-season",
-      "source_lang": "en",
-      "target_lang": "ar",
-      "text": "رابط المصدر: https://www.ithra.com/en/programme/2026/ithra-winter-season",
-      "method": "identity-pass",
-      "translated_at": "2026-11-27T11:39:06.421Z"
-    },
-    "d32f41344de13f6990252db4df9c83bbe557d724": {
-      "source": "رابط المصدر: https://www.ithra.com/en/programme/2026/childrens-museum/champions-challenge",
-      "source_lang": "en",
-      "target_lang": "ar",
-      "text": "رابط المصدر: https://www.ithra.com/en/programme/2026/childrens-museum/champions-challenge",
-      "method": "identity-pass",
-      "translated_at": "2026-11-27T11:39:06.514Z"
-    },
-    "60aae30605683d88cf677d432a746a0ee6604544": {
-      "source": "رابط المصدر: https://hayyjameel.org/whats-on/jameel-library-november-community-programmes-1/",
-      "source_lang": "en",
-      "target_lang": "ar",
-      "text": "رابط المصدر: https://hayyjameel.org/whats-on/jameel-library-november-community-programmes-1/",
-      "method": "identity-pass",
-      "translated_at": "2026-11-27T11:39:06.577Z"
-    },
-    "632e423a560396bd3acf64042ca09760827e9378": {
-      "source": "رابط المصدر: https://hayyjameel.org/whats-on/hayy-explorers-november-programmes/",
-      "source_lang": "en",
-      "target_lang": "ar",
-      "text": "رابط المصدر: https://hayyjameel.org/whats-on/hayy-explorers-november-programmes/",
-      "method": "identity-pass",
-      "translated_at": "2026-11-27T11:39:06.642Z"
-    },
-    "5ef7c8be5b9b95919e269fab76d5cc3725183544": {
-      "source": "رابط المصدر: https://www.visitsaudi.com/en/al-ahsa/events/palms-village-in-al-ahsa",
-      "source_lang": "en",
-      "target_lang": "ar",
-      "text": "رابط المصدر: https://www.visitsaudi.com/en/al-ahsa/events/palms-village-in-al-ahsa",
-      "method": "identity-pass",
-      "translated_at": "2026-11-27T11:39:06.839Z"
-    },
-    "5e199baf23a50ce05a3eb360873f3214add0d951": {
-      "source": "رابط المصدر: https://www.ithra.com/en/programme/2026/ithra-winter-at-dhahran-expo/artistic-maze",
-      "source_lang": "en",
-      "target_lang": "ar",
-      "text": "رابط المصدر: https://www.ithra.com/en/programme/2026/ithra-winter-at-dhahran-expo/artistic-maze",
-      "method": "identity-pass",
-      "translated_at": "2026-11-27T11:39:07.006Z"
-    },
-    "519cb4d8712e02fbdb7aab51222ae9eeef19f6cc": {
-      "source": "رابط المصدر: https://www.ithra.com/en/programme/2026/ithra-winter-at-dhahran-expo/childrens-cafe",
-      "source_lang": "en",
-      "target_lang": "ar",
-      "text": "رابط المصدر: https://www.ithra.com/en/programme/2026/ithra-winter-at-dhahran-expo/childrens-cafe",
-      "method": "identity-pass",
-      "translated_at": "2026-11-27T11:39:07.043Z"
-    },
-    "8023b4cb3e0fc0c1a6f4a8b3796ec5d075d4d7fa": {
-      "source": "رابط المصدر: https://www.ithra.com/en/programme/2026/ithra-winter-at-dhahran-expo/highlights-exhibition",
-      "source_lang": "en",
-      "target_lang": "ar",
-      "text": "رابط المصدر: https://www.ithra.com/en/programme/2026/ithra-winter-at-dhahran-expo/highlights-exhibition",
-      "method": "identity-pass",
-      "translated_at": "2026-11-27T11:39:07.087Z"
-    },
-    "a1a8d07faa40f87bb09967d9a6942d370453a3c5": {
-      "source": "رابط المصدر: https://www.ithra.com/en/programme/2026/ithra-winter-at-dhahran-expo/outdoor-stage",
-      "source_lang": "en",
-      "target_lang": "ar",
-      "text": "رابط المصدر: https://www.ithra.com/en/programme/2026/ithra-winter-at-dhahran-expo/outdoor-stage",
-      "method": "identity-pass",
-      "translated_at": "2026-11-27T11:39:07.124Z"
-    },
-    "29698848724af250d2784ad70d03532689e5ea97": {
-      "source": "رابط المصدر: https://www.ithra.com/en/programme/2026/ithra-winter-at-dhahran-expo/words-waves",
-      "source_lang": "en",
-      "target_lang": "ar",
-      "text": "رابط المصدر: https://www.ithra.com/en/programme/2026/ithra-winter-at-dhahran-expo/words-waves",
-      "method": "identity-pass",
-      "translated_at": "2026-11-27T11:39:07.164Z"
-    },
-    "f1cc23c220845c7c0140ba9466864c3eb246a0d9": {
-      "source": "رابط المصدر: https://www.ithra.com/en/programme/2026/ithra-winter-at-dhahran-expo/roaming-performances",
-      "source_lang": "en",
-      "target_lang": "ar",
-      "text": "رابط المصدر: https://www.ithra.com/en/programme/2026/ithra-winter-at-dhahran-expo/roaming-performances",
-      "method": "identity-pass",
-      "translated_at": "2026-11-27T11:39:07.202Z"
-    },
-    "b029925364af647f8476ac21fc92d8258a4a22f2": {
-      "source": "رابط المصدر: https://www.ithra.com/en/programme/2026/printing-house/big-printing-experience",
-      "source_lang": "en",
-      "target_lang": "ar",
-      "text": "رابط المصدر: https://www.ithra.com/en/programme/2026/printing-house/big-printing-experience",
-      "method": "identity-pass",
-      "translated_at": "2026-11-27T11:39:07.241Z"
-    },
-    "1464c408df1d79c407fdc0cd431118378441ea07": {
-      "source": "رابط المصدر: https://www.ithra.com/en/programme/2026/ithra-winter-at-dhahran-expo/1-2-3-lets-ryhme",
-      "source_lang": "en",
-      "target_lang": "ar",
-      "text": "رابط المصدر: https://www.ithra.com/en/programme/2026/ithra-winter-at-dhahran-expo/1-2-3-lets-ryhme",
-      "method": "identity-pass",
-      "translated_at": "2026-11-27T11:39:07.282Z"
-    },
-    "3980901ec8d8ba3d1377f81ee699d5c45f0a36b5": {
-      "source": "رابط المصدر: https://www.ithra.com/en/programme/2026/ithra-winter-at-dhahran-expo/little-spotlight-zone/storytime",
-      "source_lang": "en",
-      "target_lang": "ar",
-      "text": "رابط المصدر: https://www.ithra.com/en/programme/2026/ithra-winter-at-dhahran-expo/little-spotlight-zone/storytime",
-      "method": "identity-pass",
-      "translated_at": "2026-11-27T11:39:07.320Z"
-    },
-    "52bfea8d0bb1523ac8afff17c5ba0394ddef11f0": {
-      "source": "رابط المصدر: https://www.ithra.com/en/programme/2026/ithra-winter-at-dhahran-expo/little-spotlight-zone/puppet-show",
-      "source_lang": "en",
-      "target_lang": "ar",
-      "text": "رابط المصدر: https://www.ithra.com/en/programme/2026/ithra-winter-at-dhahran-expo/little-spotlight-zone/puppet-show",
-      "method": "identity-pass",
-      "translated_at": "2026-11-27T11:39:07.360Z"
-    },
-    "a3e317eb0a07e44d4ed2656b5452e9dcbf87a1b7": {
-      "source": "رابط المصدر: https://www.visitsaudi.com/en/eastern-province/events/ithra-winter-season",
-      "source_lang": "en",
-      "target_lang": "ar",
-      "text": "رابط المصدر: https://www.visitsaudi.com/en/eastern-province/events/ithra-winter-season",
-      "method": "identity-pass",
-      "translated_at": "2026-11-27T11:39:07.399Z"
-    },
-    "edc7f7f1ff8ac6848d01154adb6a6d81338641bc": {
-      "source": "رابط المصدر: https://www.ithra.com/en/programme/2026/ithra-winter-at-dhahran-expo/knot-scale",
-      "source_lang": "en",
-      "target_lang": "ar",
-      "text": "رابط المصدر: https://www.ithra.com/en/programme/2026/ithra-winter-at-dhahran-expo/knot-scale",
-      "method": "identity-pass",
-      "translated_at": "2026-11-27T11:39:07.460Z"
-    },
-    "55805883c7c0c241de5bf448e8f7dcb41f776303": {
-      "source": "رابط المصدر: https://www.ithra.com/en/programme/2026/ithra-winter-at-dhahran-expo/artistic-maze-lens-landscapes",
-      "source_lang": "en",
-      "target_lang": "ar",
-      "text": "رابط المصدر: https://www.ithra.com/en/programme/2026/ithra-winter-at-dhahran-expo/artistic-maze-lens-landscapes",
-      "method": "identity-pass",
-      "translated_at": "2026-11-27T11:39:07.501Z"
-    },
-    "d81ccfef7d13613ad36aaacdf5a2503fdc3d9233": {
-      "source": "رابط المصدر: https://www.ithra.com/en/programme/2026/ithra-winter-at-dhahran-expo/studio/rammed-earth-workshop",
-      "source_lang": "en",
-      "target_lang": "ar",
-      "text": "رابط المصدر: https://www.ithra.com/en/programme/2026/ithra-winter-at-dhahran-expo/studio/rammed-earth-workshop",
-      "method": "identity-pass",
-      "translated_at": "2026-11-27T11:39:07.538Z"
-    },
-    "905fdcd1584d8de56a4176bd13655ed00a7d1408": {
-      "source": "رابط المصدر: https://www.ithra.com/en/programme/2026/ithra-winter-at-dhahran-expo/little-spotlight-zone/storyteller-day",
-      "source_lang": "en",
-      "target_lang": "ar",
-      "text": "رابط المصدر: https://www.ithra.com/en/programme/2026/ithra-winter-at-dhahran-expo/little-spotlight-zone/storyteller-day",
-      "method": "identity-pass",
-      "translated_at": "2026-11-27T11:39:07.583Z"
-    },
-    "a0dddae1294a1f41a1f254638680cdbe71d0ab4d": {
-      "source": "رابط المصدر: https://www.ithra.com/en/programme/2026/ithra-winter-at-dhahran-expo/1-2-3-little-space-me",
-      "source_lang": "en",
-      "target_lang": "ar",
-      "text": "رابط المصدر: https://www.ithra.com/en/programme/2026/ithra-winter-at-dhahran-expo/1-2-3-little-space-me",
-      "method": "identity-pass",
-      "translated_at": "2026-11-27T11:39:07.621Z"
-    },
-    "3b87594bc26860b626582301b029ba60c4d944c1": {
-      "source": "رابط المصدر: https://www.ithra.com/en/programme/2026/ithra-winter-at-dhahran-expo/your-book-minute",
-      "source_lang": "en",
-      "target_lang": "ar",
-      "text": "رابط المصدر: https://www.ithra.com/en/programme/2026/ithra-winter-at-dhahran-expo/your-book-minute",
-      "method": "identity-pass",
-      "translated_at": "2026-11-27T11:39:07.658Z"
-    },
-    "9880221ec3686f7080ad047ce012ccbaac1ba0c3": {
-      "source": "رابط المصدر: https://www.ithra.com/en/programme/2026/ithra-winter-at-dhahran-expo/indoor-stage",
-      "source_lang": "en",
-      "target_lang": "ar",
-      "text": "رابط المصدر: https://www.ithra.com/en/programme/2026/ithra-winter-at-dhahran-expo/indoor-stage",
-      "method": "identity-pass",
-      "translated_at": "2026-11-27T11:39:07.698Z"
-    },
-    "987cedaf668c07a28e5edebfdf3068dfac9e1f92": {
-      "source": "رابط المصدر: https://www.ithra.com/en/programme/2026/ithra-winter-at-dhahran-expo/studio/sand-sculpturing",
-      "source_lang": "en",
-      "target_lang": "ar",
-      "text": "رابط المصدر: https://www.ithra.com/en/programme/2026/ithra-winter-at-dhahran-expo/studio/sand-sculpturing",
-      "method": "identity-pass",
-      "translated_at": "2026-11-27T11:39:07.737Z"
-    },
-    "06abf15039a0688a75c5cbbaa5eedf70792acdc5": {
-      "source": "رابط المصدر: https://www.ithra.com/en/programme/2026/ithra-winter-at-dhahran-expo/food-experience",
-      "source_lang": "en",
-      "target_lang": "ar",
-      "text": "رابط المصدر: https://www.ithra.com/en/programme/2026/ithra-winter-at-dhahran-expo/food-experience",
-      "method": "identity-pass",
-      "translated_at": "2026-11-27T11:39:07.799Z"
-    },
-    "6af4075f142ed6a7914e63daa3f13dd212048e78": {
-      "source": "رابط المصدر: https://www.ithra.com/en/programme/2026/workshop-library/once-upon-postcard",
-      "source_lang": "en",
-      "target_lang": "ar",
-      "text": "رابط المصدر: https://www.ithra.com/en/programme/2026/workshop-library/once-upon-postcard",
-      "method": "identity-pass",
-      "translated_at": "2026-11-27T11:39:07.906Z"
-    },
-    "a9bff45cc7db689605c3a1a56f702049214019aa": {
-      "source": "رابط المصدر: https://www.ithra.com/en/programme/2026/ithra-winter-at-dhahran-expo/khoos-workshop-palm-weaving",
-      "source_lang": "en",
-      "target_lang": "ar",
-      "text": "رابط المصدر: https://www.ithra.com/en/programme/2026/ithra-winter-at-dhahran-expo/khoos-workshop-palm-weaving",
-      "method": "identity-pass",
-      "translated_at": "2026-11-27T11:39:07.946Z"
-    },
-    "f1906459f85344b0ffcd1d2f5112b29134a284c5": {
-      "source": "رابط المصدر: https://www.ithra.com/en/programme/2026/printing-house/your-stickers-your-way",
-      "source_lang": "en",
-      "target_lang": "ar",
-      "text": "رابط المصدر: https://www.ithra.com/en/programme/2026/printing-house/your-stickers-your-way",
-      "method": "identity-pass",
-      "translated_at": "2026-11-27T11:39:07.987Z"
-    },
-    "697028736dfe6a089da49755ee77b9e774385518": {
-      "source": "رابط المصدر: https://www.ithra.com/en/programme/2026/printing-house/birds-postcard-studio",
-      "source_lang": "en",
-      "target_lang": "ar",
-      "text": "رابط المصدر: https://www.ithra.com/en/programme/2026/printing-house/birds-postcard-studio",
-      "method": "identity-pass",
-      "translated_at": "2026-11-27T11:39:08.025Z"
-    },
-    "f6bb9e3113fbafa8f6217fff1613ff08e95c13c6": {
-      "source": "الصورة الرسمية: https://www.visitsaudi.com/content/dam/wvs/calendar/al-ahsa-esports.png",
-      "source_lang": "en",
-      "target_lang": "ar",
-      "text": "الصورة الرسمية: https://www.visitsaudi.com/content/dam/wvs/calendar/al-ahsa-esports.png",
-      "method": "identity-pass",
-      "translated_at": "2026-11-27T11:39:08.071Z"
-    },
-    "16776d313d520d34f597267453cd9a73371be1b5": {
-      "source": "رابط المصدر: https://www.ithra.com/en/programme/2026/ithra-winter-at-dhahran-expo/little-spotlight-zone/family-game-audience-challenges",
-      "source_lang": "en",
-      "target_lang": "ar",
-      "text": "رابط المصدر: https://www.ithra.com/en/programme/2026/ithra-winter-at-dhahran-expo/little-spotlight-zone/family-game-audience-challenges",
-      "method": "identity-pass",
-      "translated_at": "2026-11-27T11:39:08.132Z"
-    },
-    "85dc285187be3c94c7f2ae9c52d00615434400e0": {
-      "source": "رابط المصدر: https://www.ithra.com/en/programme/2026/ithra-winter-at-dhahran-expo/little-spotlight-zone/tales-stage",
-      "source_lang": "en",
-      "target_lang": "ar",
-      "text": "رابط المصدر: https://www.ithra.com/en/programme/2026/ithra-winter-at-dhahran-expo/little-spotlight-zone/tales-stage",
-      "method": "identity-pass",
-      "translated_at": "2026-11-27T11:39:08.170Z"
-    },
-    "f0c269000de0ff6541764d570c892a4c9b09ba22": {
-      "source": "رابط المصدر: https://www.experiencealula.com/en/whats-on/events/hegra-childrens-tour",
-      "source_lang": "en",
-      "target_lang": "ar",
-      "text": "رابط المصدر: https://www.experiencealula.com/en/whats-on/events/hegra-childrens-tour",
-      "method": "identity-pass",
-      "translated_at": "2026-11-27T11:39:08.246Z"
-    },
-    "12875484ae333c9250cc50a7e4a85f644788f0b7": {
-      "source": "رابط المصدر: https://www.visitsaudi.com/en/riyadh/events/abdulmajeed-abdullah-equestrian-concert",
-      "source_lang": "en",
-      "target_lang": "ar",
-      "text": "رابط المصدر: https://www.visitsaudi.com/en/riyadh/events/abdulmajeed-abdullah-equestrian-concert",
-      "method": "identity-pass",
-      "translated_at": "2026-11-27T11:39:08.284Z"
-    },
-    "182fc8a284a023a460bfc2da4413aa6667ab75db": {
-      "source": "الصورة الرسمية: https://www.visitsaudi.com/content/dam/wvs/calendar/wagef-momos-live-in-jeddah.jpg",
-      "source_lang": "en",
-      "target_lang": "ar",
-      "text": "الصورة الرسمية: https://www.visitsaudi.com/content/dam/wvs/calendar/wagef-momos-live-in-jeddah.jpg",
-      "method": "identity-pass",
-      "translated_at": "2026-11-27T11:39:08.365Z"
-    },
-    "5fc2ac05fe4dedcd2c696037fecc2f9322db47d6": {
-      "source": "رابط المصدر: https://www.ithra.com/en/programme/2026/bridges-world/bridge-chinese-language",
-      "source_lang": "en",
-      "target_lang": "ar",
-      "text": "رابط المصدر: https://www.ithra.com/en/programme/2026/bridges-world/bridge-chinese-language",
-      "method": "identity-pass",
-      "translated_at": "2026-11-27T11:39:08.445Z"
-    },
-    "2671faf63e19db49a46bf81cb731cc8d8dc5e751": {
-      "source": "رابط المصدر: https://kaustcentral-eventscalendar-userwebsite.cfapps.eu20.hana.ondemand.com/dashboard/event-details/588",
-      "source_lang": "en",
-      "target_lang": "ar",
-      "text": "رابط المصدر: https://kaustcentral-eventscalendar-userwebsite.cfapps.eu20.hana.ondemand.com/dashboard/event-details/588",
-      "method": "identity-pass",
-      "translated_at": "2026-11-27T11:39:08.511Z"
-    },
-    "4eccf1eec783f7cfc8bd1744cf0494337e6bea80": {
-      "source": "رابط المصدر: https://www.chamber.org.sa/sites/Arabic/Events/ChamberEvents/Pages/ChamberEventDetails.aspx?ItemID=345",
-      "source_lang": "en",
-      "target_lang": "ar",
-      "text": "رابط المصدر: https://www.chamber.org.sa/sites/Arabic/Events/ChamberEvents/Pages/ChamberEventDetails.aspx?ItemID=345",
-      "method": "identity-pass",
-      "translated_at": "2026-11-27T11:39:08.694Z"
-    },
-    "2241b8caebe9089b0ce01a265006b82cbb4a4839": {
-      "source": "رابط المصدر: https://kaustcentral-eventscalendar-userwebsite.cfapps.eu20.hana.ondemand.com/dashboard/event-details/596",
-      "source_lang": "en",
-      "target_lang": "ar",
-      "text": "رابط المصدر: https://kaustcentral-eventscalendar-userwebsite.cfapps.eu20.hana.ondemand.com/dashboard/event-details/596",
-      "method": "identity-pass",
-      "translated_at": "2026-11-27T11:39:08.760Z"
-    },
-    "e86cab2a267ad3241d677ef9d515949bd4f02f39": {
-      "source": "رابط المصدر: https://hayyjameel.org/whats-on/hayy-arts-made-with-your-magic-jeddah/",
-      "source_lang": "en",
-      "target_lang": "ar",
-      "text": "رابط المصدر: https://hayyjameel.org/whats-on/hayy-arts-made-with-your-magic-jeddah/",
-      "method": "identity-pass",
-      "translated_at": "2026-11-27T11:39:08.821Z"
-    },
-    "51c5ffc08ad0a90855f6cf7139e2a2ce6a7cc3e8": {
-      "source": "رابط المصدر: https://www.ithra.com/en/programme/2026/ithra-theater-society/learn-more-about-submission-process-ithra-short-plays-contest-2026",
-      "source_lang": "en",
-      "target_lang": "ar",
-      "text": "رابط المصدر: https://www.ithra.com/en/programme/2026/ithra-theater-society/learn-more-about-submission-process-ithra-short-plays-contest-2026",
-      "method": "identity-pass",
-      "translated_at": "2026-11-27T11:39:08.884Z"
-    },
-    "590124c5e53bc11ead1287aa7fbfb030ce3cbac1": {
-      "source": "رابط المصدر: https://hayyjameel.org/whats-on/hayy-makers-creative-night-new-year-new-vision/",
-      "source_lang": "en",
-      "target_lang": "ar",
-      "text": "رابط المصدر: https://hayyjameel.org/whats-on/hayy-makers-creative-night-new-year-new-vision/",
-      "method": "identity-pass",
-      "translated_at": "2026-11-27T11:39:08.944Z"
-    },
-    "eef8bf5167e0b1132bbf464c63baeb443eba49ae": {
-      "source": "رابط المصدر: https://www.visitsaudi.com/en/eastern-province/events/pfl-martial-arts-championship-in-al-khobar",
-      "source_lang": "en",
-      "target_lang": "ar",
-      "text": "رابط المصدر: https://www.visitsaudi.com/en/eastern-province/events/pfl-martial-arts-championship-in-al-khobar",
-      "method": "identity-pass",
-      "translated_at": "2026-11-27T11:39:08.987Z"
-    },
-    "c06bf3011f0277318041f64609ed7892cbcaf85a": {
-      "source": "الصورة الرسمية: https://cdn.rfecc.sa/wp-content/uploads/2026/08/19122905/images.jpg",
-      "source_lang": "en",
-      "target_lang": "ar",
-      "text": "الصورة الرسمية: https://cdn.rfecc.sa/wp-content/uploads/2026/08/19122905/images.jpg",
-      "method": "identity-pass",
-      "translated_at": "2026-11-27T11:39:09.024Z"
-    },
-    "5f85c3fb22292562dd97f478997626b889a0061b": {
-      "source": "الصورة الرسمية: https://www.visitsaudi.com/content/dam/wvs/calendar/the-global-water-sustainability-conference.jpg",
-      "source_lang": "en",
-      "target_lang": "ar",
-      "text": "الصورة الرسمية: https://www.visitsaudi.com/content/dam/wvs/calendar/the-global-water-sustainability-conference.jpg",
-      "method": "identity-pass",
-      "translated_at": "2026-11-27T11:39:09.071Z"
-    },
-    "acee9bcd85911011fe2d8fad6249047b8786c8c0": {
-      "source": "رابط المصدر: https://www.experiencealula.com/en/whats-on/events/alula-half-marathon",
-      "source_lang": "en",
-      "target_lang": "ar",
-      "text": "رابط المصدر: https://www.experiencealula.com/en/whats-on/events/alula-half-marathon",
-      "method": "identity-pass",
-      "translated_at": "2026-11-27T11:39:09.147Z"
-    },
-    "9057057e18c3adec9b0e4b79f9c5e89ff67a9a32": {
-      "source": "رابط المصدر: https://www.visitsaudi.com/en/al-ahsa/events/alahsa-factory-dates-festival",
-      "source_lang": "en",
-      "target_lang": "ar",
-      "text": "رابط المصدر: https://www.visitsaudi.com/en/al-ahsa/events/alahsa-factory-dates-festival",
-      "method": "identity-pass",
-      "translated_at": "2026-11-27T11:39:09.209Z"
-    },
-    "1b13eb4f1b2c6566bee357d3e6976a3a2fc0a037": {
-      "source": "الصورة الرسمية: https://www.visitsaudi.com/content/dam/wvs/calendar/saudi-falcon-cup-new.jpg",
-      "source_lang": "en",
-      "target_lang": "ar",
-      "text": "الصورة الرسمية: https://www.visitsaudi.com/content/dam/wvs/calendar/saudi-falcon-cup-new.jpg",
-      "method": "identity-pass",
-      "translated_at": "2026-11-27T11:39:09.251Z"
-    },
-    "6a58155555fcafde47630045bcc1053d2ac641a6": {
-      "source": "الصورة الرسمية: https://www.visitsaudi.com/content/dam/wvs/calendar/in-act-act-xii-new-year.jpg",
-      "source_lang": "en",
-      "target_lang": "ar",
-      "text": "الصورة الرسمية: https://www.visitsaudi.com/content/dam/wvs/calendar/in-act-act-xii-new-year.jpg",
-      "method": "identity-pass",
-      "translated_at": "2026-11-27T11:39:09.323Z"
-    },
-    "49038e8f6e152b86dcbac1ecff9a97b1bd3cef39": {
-      "source": "دورة أو فعالية رسمية من جامعة أم القرى في مكة المكرمة. التسجيل والسداد لدبلوم المشارك (عن بعد) في إدارة الحشود لخارج مكة ضمن التعليم والتدريب في عن بعد. تبدأ الفعالية ٠٢‏/٠٨‏/٢٠٢٦ وتنتهي ٣٠‏/١٢‏/٢٠٢٦ حسب البيانات المتاحة. تعرض الصفحة وقت الفعالية وموقعها ومصدرها وروابط التقويم والاتجاهات عند توفرها. المصدر: Umm Al-Qura University Events Center.",
-      "source_lang": "ar",
-      "target_lang": "en",
-      "text": "Official session or effectiveness of Umm Al-Qura University in Makkkah. Recording and reimbursement of the participant ' s (remotely) diploma in crowd management outside a distance education and training facility. Effectiveness begins 20/80/2026 and ends 30/12/2026 according to available data. The page presents the time, location and source of effectiveness, calendar linkages and trends when available. Source: Umm Al-Qura University Events Center.",
-      "method": "argos-mt",
-      "translated_at": "2026-11-27T11:41:08.702Z"
-    },
-    "d001ffbe3e9d97091a77a20af586f61fb6ccacee": {
-      "source": "دورة أو فعالية رسمية من جامعة أم القرى في مكة المكرمة.",
-      "source_lang": "ar",
-      "target_lang": "en",
-      "text": "Official session or effectiveness of Umm Al-Qura University in Makkkah.",
-      "method": "argos-mt",
-      "translated_at": "2026-11-27T11:41:08.702Z"
-    },
-    "64213516cbf3cd4628d1a097750b5a96813df49e": {
-      "source": "دورة أو فعالية رسمية من جامعة أم القرى في مكة المكرمة. التسجيل والسداد لدبلوم المتوسط (عن بعد) في التسويق التطبيقي مع الشركاء ضمن التعليم والتدريب في عن بعد. تبدأ الفعالية ٠٢‏/٠٨‏/٢٠٢٦ وتنتهي ٣٠‏/١٢‏/٢٠٢٦ حسب البيانات المتاحة. تعرض الصفحة وقت الفعالية وموقعها ومصدرها وروابط التقويم والاتجاهات عند توفرها. المصدر: Umm Al-Qura University Events Center.",
-      "source_lang": "ar",
-      "target_lang": "en",
-      "text": "Official session or effectiveness of Umm Al-Qura University in Makkkah. Recording and reimbursing of an average (remote) diploma in applied marketing with partners in distance education and training. Effectiveness begins 20/80/2026 and ends 30/12/2026 according to available data. The page presents the time, location and source of effectiveness, calendar linkages and trends when available. Source: Umm Al-Qura University Events Center.",
-      "method": "argos-mt",
-      "translated_at": "2026-11-27T11:41:08.702Z"
-    },
     "cd0a540e0d2791c5ab7dd3d8c3219247f8208bfb": {
       "source": "Your weekend is set at Beast House, Riyadh’s first music & creative members club. المصدر الرسمي: MDLBEAST. Beast House ضمن الترفيه والعائلات في الرياض. تبدأ الفعالية ٢٧‏/١١‏/٢٠٢٦ وتنتهي ٢٨‏/١١‏/٢٠٢٦ حسب البيانات المتاحة. تتوفر لها صفحة جدول حي تساعد الزائر على متابعة الحالة والوقت أثناء الحضور. المصدر: MDLBEAST Events.",
       "source_lang": "ar",
@@ -102178,13 +101610,573 @@
       "method": "argos-mt",
       "translated_at": "2026-11-27T11:41:08.703Z"
     },
+    "d209192811f2b0a28312eca262ab521462000581": {
+      "source": "الصورة الرسمية: https://www.visitsaudi.com/content/dam/wvs/calendar/arabic-language-exhibition-in-riyadh.jpg",
+      "source_lang": "en",
+      "target_lang": "ar",
+      "text": "الصورة الرسمية: https://www.visitsaudi.com/content/dam/wvs/calendar/arabic-language-exhibition-in-riyadh.jpg",
+      "method": "identity-pass",
+      "translated_at": "2026-11-28T10:53:55.280Z"
+    },
+    "b353732d9851862efda16437acfe18d8578203d6": {
+      "source": "الصورة الرسمية: https://www.visitsaudi.com/content/dam/wvs/calendar/arabic-language-exhibition-for-kids.jpg",
+      "source_lang": "en",
+      "target_lang": "ar",
+      "text": "الصورة الرسمية: https://www.visitsaudi.com/content/dam/wvs/calendar/arabic-language-exhibition-for-kids.jpg",
+      "method": "identity-pass",
+      "translated_at": "2026-11-28T10:53:55.327Z"
+    },
+    "c65be0c41191d1c74223ceaa3a856974426b6cae": {
+      "source": "رابط المصدر: https://hayyjameel.org/whats-on/hayy-cinema-at-saha-2nd-edition/",
+      "source_lang": "en",
+      "target_lang": "ar",
+      "text": "رابط المصدر: https://hayyjameel.org/whats-on/hayy-cinema-at-saha-2nd-edition/",
+      "method": "identity-pass",
+      "translated_at": "2026-11-28T10:53:55.374Z"
+    },
+    "f9fd9a82ff57ac839e84b925ed378dd1cffef72a": {
+      "source": "رابط المصدر: https://www.ithra.com/en/programme/2026/ithra-art-prize-exhibition",
+      "source_lang": "en",
+      "target_lang": "ar",
+      "text": "رابط المصدر: https://www.ithra.com/en/programme/2026/ithra-art-prize-exhibition",
+      "method": "identity-pass",
+      "translated_at": "2026-11-28T10:53:56.020Z"
+    },
+    "0dbcc433747c334a39ac4c54409d301ba6dd7e0d": {
+      "source": "رابط المصدر: https://www.ithra.com/en/programme/2026/art-studio1/open-artistic-space",
+      "source_lang": "en",
+      "target_lang": "ar",
+      "text": "رابط المصدر: https://www.ithra.com/en/programme/2026/art-studio1/open-artistic-space",
+      "method": "identity-pass",
+      "translated_at": "2026-11-28T10:53:56.257Z"
+    },
+    "22c0053d2227e4e69332e817491027652c7d601e": {
+      "source": "رابط المصدر: https://www.ithra.com/en/programme/2026/ithra-museum/ithra-museum-free-wednesday",
+      "source_lang": "en",
+      "target_lang": "ar",
+      "text": "رابط المصدر: https://www.ithra.com/en/programme/2026/ithra-museum/ithra-museum-free-wednesday",
+      "method": "identity-pass",
+      "translated_at": "2026-11-28T10:53:56.321Z"
+    },
+    "90e4c440e40d5d0330ebbd2a9a2725c332d25c0b": {
+      "source": "رابط المصدر: https://www.ithra.com/en/programme/2026/childrens-museum/trolley-show",
+      "source_lang": "en",
+      "target_lang": "ar",
+      "text": "رابط المصدر: https://www.ithra.com/en/programme/2026/childrens-museum/trolley-show",
+      "method": "identity-pass",
+      "translated_at": "2026-11-28T10:53:56.374Z"
+    },
+    "c2bae2762f7358e1b943831b4ce6d616ba09177d": {
+      "source": "رابط المصدر: https://www.ithra.com/en/programme/2026/ithra-museum/aramcorama-exhibit",
+      "source_lang": "en",
+      "target_lang": "ar",
+      "text": "رابط المصدر: https://www.ithra.com/en/programme/2026/ithra-museum/aramcorama-exhibit",
+      "method": "identity-pass",
+      "translated_at": "2026-11-28T10:53:56.519Z"
+    },
+    "b4f9d2a2600a825426bf39128ea8cebf0f86c525": {
+      "source": "رابط المصدر: https://www.ithra.com/en/programme/2026/ithra-museum/praise-artisan",
+      "source_lang": "en",
+      "target_lang": "ar",
+      "text": "رابط المصدر: https://www.ithra.com/en/programme/2026/ithra-museum/praise-artisan",
+      "method": "identity-pass",
+      "translated_at": "2026-11-28T10:53:56.567Z"
+    },
+    "05ec6274c4575366b178a8c1ef99a524968e7b13": {
+      "source": "رابط المصدر: https://www.ithra.com/en/programme/2026/trivia-night-energy-memory",
+      "source_lang": "en",
+      "target_lang": "ar",
+      "text": "رابط المصدر: https://www.ithra.com/en/programme/2026/trivia-night-energy-memory",
+      "method": "identity-pass",
+      "translated_at": "2026-11-28T10:53:56.613Z"
+    },
+    "a0767b7163a2e175ad2a8a4cfc8a8cadf29cbf43": {
+      "source": "رابط المصدر: https://www.ithra.com/en/programme/2026/childrens-museum/imagination-oasis",
+      "source_lang": "en",
+      "target_lang": "ar",
+      "text": "رابط المصدر: https://www.ithra.com/en/programme/2026/childrens-museum/imagination-oasis",
+      "method": "identity-pass",
+      "translated_at": "2026-11-28T10:53:56.665Z"
+    },
+    "f45cdff5594d92d99802a4be2fe1280d328254f0": {
+      "source": "رابط المصدر: https://www.ithra.com/en/programme/2026/ithras-kids-community",
+      "source_lang": "en",
+      "target_lang": "ar",
+      "text": "رابط المصدر: https://www.ithra.com/en/programme/2026/ithras-kids-community",
+      "method": "identity-pass",
+      "translated_at": "2026-11-28T10:53:56.730Z"
+    },
+    "9521a0c6c468d18971821ab7e0daf599a758257a": {
+      "source": "رابط المصدر: https://www.ithra.com/en/programme/2026/treasure-hunt/adventure-around-kingdom",
+      "source_lang": "en",
+      "target_lang": "ar",
+      "text": "رابط المصدر: https://www.ithra.com/en/programme/2026/treasure-hunt/adventure-around-kingdom",
+      "method": "identity-pass",
+      "translated_at": "2026-11-28T10:53:56.896Z"
+    },
+    "c8a439fbadb50d6a8570ef403a0ec1cfb98d19de": {
+      "source": "رابط المصدر: https://www.ithra.com/en/programme/2026/childrens-book-club",
+      "source_lang": "en",
+      "target_lang": "ar",
+      "text": "رابط المصدر: https://www.ithra.com/en/programme/2026/childrens-book-club",
+      "method": "identity-pass",
+      "translated_at": "2026-11-28T10:53:56.952Z"
+    },
+    "198778ee3a026d774665e772ad02d620441e9693": {
+      "source": "رابط المصدر: https://www.ithra.com/en/programme/2026/family-game/family-game-within-five-seconds",
+      "source_lang": "en",
+      "target_lang": "ar",
+      "text": "رابط المصدر: https://www.ithra.com/en/programme/2026/family-game/family-game-within-five-seconds",
+      "method": "identity-pass",
+      "translated_at": "2026-11-28T10:53:57.022Z"
+    },
+    "74174c95b44ef3377d3f66fda0860e0dde3042b1": {
+      "source": "رابط المصدر: https://sdaia.gov.sa/en/MediaCenter/Events/Pages/EventsDetails.aspx?EventID=149",
+      "source_lang": "en",
+      "target_lang": "ar",
+      "text": "رابط المصدر: https://sdaia.gov.sa/en/MediaCenter/Events/Pages/EventsDetails.aspx?EventID=149",
+      "method": "identity-pass",
+      "translated_at": "2026-11-28T10:53:57.077Z"
+    },
+    "1b6d9690d2be78a1c903fec548b6ed7644461978": {
+      "source": "الصورة الرسمية: https://www.visitsaudi.com/content/dam/wvs/calendar/katheeb-trip-to-al-asfar-lake.jpg",
+      "source_lang": "en",
+      "target_lang": "ar",
+      "text": "الصورة الرسمية: https://www.visitsaudi.com/content/dam/wvs/calendar/katheeb-trip-to-al-asfar-lake.jpg",
+      "method": "identity-pass",
+      "translated_at": "2026-11-28T10:53:57.125Z"
+    },
+    "e5924fc9d08364ba54e7acddb3dbc370aa3ca483": {
+      "source": "رابط المصدر: https://hayyjameel.org/whats-on/jameel-library-opening-programme-at-the-edge-of-renewal-with-the-khaleeji-womens-library-and-archive/",
+      "source_lang": "en",
+      "target_lang": "ar",
+      "text": "رابط المصدر: https://hayyjameel.org/whats-on/jameel-library-opening-programme-at-the-edge-of-renewal-with-the-khaleeji-womens-library-and-archive/",
+      "method": "identity-pass",
+      "translated_at": "2026-11-28T10:53:57.202Z"
+    },
+    "7cf46ce4928fa69ab6fe9d05a5594bd3a665d33c": {
+      "source": "رابط المصدر: https://www.visitsaudi.com/en/riyadh/events/riyadh-racing-season",
+      "source_lang": "en",
+      "target_lang": "ar",
+      "text": "رابط المصدر: https://www.visitsaudi.com/en/riyadh/events/riyadh-racing-season",
+      "method": "identity-pass",
+      "translated_at": "2026-11-28T10:53:57.312Z"
+    },
+    "ce79dfabce3e8aa5cfa07f380bec430b9d5ff3c7": {
+      "source": "رابط المصدر: https://www.ithra.com/en/programme/2026/ithra-winter-season",
+      "source_lang": "en",
+      "target_lang": "ar",
+      "text": "رابط المصدر: https://www.ithra.com/en/programme/2026/ithra-winter-season",
+      "method": "identity-pass",
+      "translated_at": "2026-11-28T10:53:57.482Z"
+    },
+    "d32f41344de13f6990252db4df9c83bbe557d724": {
+      "source": "رابط المصدر: https://www.ithra.com/en/programme/2026/childrens-museum/champions-challenge",
+      "source_lang": "en",
+      "target_lang": "ar",
+      "text": "رابط المصدر: https://www.ithra.com/en/programme/2026/childrens-museum/champions-challenge",
+      "method": "identity-pass",
+      "translated_at": "2026-11-28T10:53:57.574Z"
+    },
+    "60aae30605683d88cf677d432a746a0ee6604544": {
+      "source": "رابط المصدر: https://hayyjameel.org/whats-on/jameel-library-november-community-programmes-1/",
+      "source_lang": "en",
+      "target_lang": "ar",
+      "text": "رابط المصدر: https://hayyjameel.org/whats-on/jameel-library-november-community-programmes-1/",
+      "method": "identity-pass",
+      "translated_at": "2026-11-28T10:53:57.640Z"
+    },
+    "5ef7c8be5b9b95919e269fab76d5cc3725183544": {
+      "source": "رابط المصدر: https://www.visitsaudi.com/en/al-ahsa/events/palms-village-in-al-ahsa",
+      "source_lang": "en",
+      "target_lang": "ar",
+      "text": "رابط المصدر: https://www.visitsaudi.com/en/al-ahsa/events/palms-village-in-al-ahsa",
+      "method": "identity-pass",
+      "translated_at": "2026-11-28T10:53:57.767Z"
+    },
+    "5e199baf23a50ce05a3eb360873f3214add0d951": {
+      "source": "رابط المصدر: https://www.ithra.com/en/programme/2026/ithra-winter-at-dhahran-expo/artistic-maze",
+      "source_lang": "en",
+      "target_lang": "ar",
+      "text": "رابط المصدر: https://www.ithra.com/en/programme/2026/ithra-winter-at-dhahran-expo/artistic-maze",
+      "method": "identity-pass",
+      "translated_at": "2026-11-28T10:53:57.829Z"
+    },
+    "519cb4d8712e02fbdb7aab51222ae9eeef19f6cc": {
+      "source": "رابط المصدر: https://www.ithra.com/en/programme/2026/ithra-winter-at-dhahran-expo/childrens-cafe",
+      "source_lang": "en",
+      "target_lang": "ar",
+      "text": "رابط المصدر: https://www.ithra.com/en/programme/2026/ithra-winter-at-dhahran-expo/childrens-cafe",
+      "method": "identity-pass",
+      "translated_at": "2026-11-28T10:53:57.874Z"
+    },
+    "8023b4cb3e0fc0c1a6f4a8b3796ec5d075d4d7fa": {
+      "source": "رابط المصدر: https://www.ithra.com/en/programme/2026/ithra-winter-at-dhahran-expo/highlights-exhibition",
+      "source_lang": "en",
+      "target_lang": "ar",
+      "text": "رابط المصدر: https://www.ithra.com/en/programme/2026/ithra-winter-at-dhahran-expo/highlights-exhibition",
+      "method": "identity-pass",
+      "translated_at": "2026-11-28T10:53:57.925Z"
+    },
+    "a1a8d07faa40f87bb09967d9a6942d370453a3c5": {
+      "source": "رابط المصدر: https://www.ithra.com/en/programme/2026/ithra-winter-at-dhahran-expo/outdoor-stage",
+      "source_lang": "en",
+      "target_lang": "ar",
+      "text": "رابط المصدر: https://www.ithra.com/en/programme/2026/ithra-winter-at-dhahran-expo/outdoor-stage",
+      "method": "identity-pass",
+      "translated_at": "2026-11-28T10:53:57.971Z"
+    },
+    "29698848724af250d2784ad70d03532689e5ea97": {
+      "source": "رابط المصدر: https://www.ithra.com/en/programme/2026/ithra-winter-at-dhahran-expo/words-waves",
+      "source_lang": "en",
+      "target_lang": "ar",
+      "text": "رابط المصدر: https://www.ithra.com/en/programme/2026/ithra-winter-at-dhahran-expo/words-waves",
+      "method": "identity-pass",
+      "translated_at": "2026-11-28T10:53:58.016Z"
+    },
+    "f1cc23c220845c7c0140ba9466864c3eb246a0d9": {
+      "source": "رابط المصدر: https://www.ithra.com/en/programme/2026/ithra-winter-at-dhahran-expo/roaming-performances",
+      "source_lang": "en",
+      "target_lang": "ar",
+      "text": "رابط المصدر: https://www.ithra.com/en/programme/2026/ithra-winter-at-dhahran-expo/roaming-performances",
+      "method": "identity-pass",
+      "translated_at": "2026-11-28T10:53:58.065Z"
+    },
+    "b029925364af647f8476ac21fc92d8258a4a22f2": {
+      "source": "رابط المصدر: https://www.ithra.com/en/programme/2026/printing-house/big-printing-experience",
+      "source_lang": "en",
+      "target_lang": "ar",
+      "text": "رابط المصدر: https://www.ithra.com/en/programme/2026/printing-house/big-printing-experience",
+      "method": "identity-pass",
+      "translated_at": "2026-11-28T10:53:58.113Z"
+    },
+    "1464c408df1d79c407fdc0cd431118378441ea07": {
+      "source": "رابط المصدر: https://www.ithra.com/en/programme/2026/ithra-winter-at-dhahran-expo/1-2-3-lets-ryhme",
+      "source_lang": "en",
+      "target_lang": "ar",
+      "text": "رابط المصدر: https://www.ithra.com/en/programme/2026/ithra-winter-at-dhahran-expo/1-2-3-lets-ryhme",
+      "method": "identity-pass",
+      "translated_at": "2026-11-28T10:53:58.162Z"
+    },
+    "3980901ec8d8ba3d1377f81ee699d5c45f0a36b5": {
+      "source": "رابط المصدر: https://www.ithra.com/en/programme/2026/ithra-winter-at-dhahran-expo/little-spotlight-zone/storytime",
+      "source_lang": "en",
+      "target_lang": "ar",
+      "text": "رابط المصدر: https://www.ithra.com/en/programme/2026/ithra-winter-at-dhahran-expo/little-spotlight-zone/storytime",
+      "method": "identity-pass",
+      "translated_at": "2026-11-28T10:53:58.208Z"
+    },
+    "52bfea8d0bb1523ac8afff17c5ba0394ddef11f0": {
+      "source": "رابط المصدر: https://www.ithra.com/en/programme/2026/ithra-winter-at-dhahran-expo/little-spotlight-zone/puppet-show",
+      "source_lang": "en",
+      "target_lang": "ar",
+      "text": "رابط المصدر: https://www.ithra.com/en/programme/2026/ithra-winter-at-dhahran-expo/little-spotlight-zone/puppet-show",
+      "method": "identity-pass",
+      "translated_at": "2026-11-28T10:53:58.254Z"
+    },
+    "a3e317eb0a07e44d4ed2656b5452e9dcbf87a1b7": {
+      "source": "رابط المصدر: https://www.visitsaudi.com/en/eastern-province/events/ithra-winter-season",
+      "source_lang": "en",
+      "target_lang": "ar",
+      "text": "رابط المصدر: https://www.visitsaudi.com/en/eastern-province/events/ithra-winter-season",
+      "method": "identity-pass",
+      "translated_at": "2026-11-28T10:53:58.306Z"
+    },
+    "edc7f7f1ff8ac6848d01154adb6a6d81338641bc": {
+      "source": "رابط المصدر: https://www.ithra.com/en/programme/2026/ithra-winter-at-dhahran-expo/knot-scale",
+      "source_lang": "en",
+      "target_lang": "ar",
+      "text": "رابط المصدر: https://www.ithra.com/en/programme/2026/ithra-winter-at-dhahran-expo/knot-scale",
+      "method": "identity-pass",
+      "translated_at": "2026-11-28T10:53:58.358Z"
+    },
+    "55805883c7c0c241de5bf448e8f7dcb41f776303": {
+      "source": "رابط المصدر: https://www.ithra.com/en/programme/2026/ithra-winter-at-dhahran-expo/artistic-maze-lens-landscapes",
+      "source_lang": "en",
+      "target_lang": "ar",
+      "text": "رابط المصدر: https://www.ithra.com/en/programme/2026/ithra-winter-at-dhahran-expo/artistic-maze-lens-landscapes",
+      "method": "identity-pass",
+      "translated_at": "2026-11-28T10:53:58.407Z"
+    },
+    "d81ccfef7d13613ad36aaacdf5a2503fdc3d9233": {
+      "source": "رابط المصدر: https://www.ithra.com/en/programme/2026/ithra-winter-at-dhahran-expo/studio/rammed-earth-workshop",
+      "source_lang": "en",
+      "target_lang": "ar",
+      "text": "رابط المصدر: https://www.ithra.com/en/programme/2026/ithra-winter-at-dhahran-expo/studio/rammed-earth-workshop",
+      "method": "identity-pass",
+      "translated_at": "2026-11-28T10:53:58.454Z"
+    },
+    "a0dddae1294a1f41a1f254638680cdbe71d0ab4d": {
+      "source": "رابط المصدر: https://www.ithra.com/en/programme/2026/ithra-winter-at-dhahran-expo/1-2-3-little-space-me",
+      "source_lang": "en",
+      "target_lang": "ar",
+      "text": "رابط المصدر: https://www.ithra.com/en/programme/2026/ithra-winter-at-dhahran-expo/1-2-3-little-space-me",
+      "method": "identity-pass",
+      "translated_at": "2026-11-28T10:53:58.501Z"
+    },
+    "3b87594bc26860b626582301b029ba60c4d944c1": {
+      "source": "رابط المصدر: https://www.ithra.com/en/programme/2026/ithra-winter-at-dhahran-expo/your-book-minute",
+      "source_lang": "en",
+      "target_lang": "ar",
+      "text": "رابط المصدر: https://www.ithra.com/en/programme/2026/ithra-winter-at-dhahran-expo/your-book-minute",
+      "method": "identity-pass",
+      "translated_at": "2026-11-28T10:53:58.550Z"
+    },
+    "9880221ec3686f7080ad047ce012ccbaac1ba0c3": {
+      "source": "رابط المصدر: https://www.ithra.com/en/programme/2026/ithra-winter-at-dhahran-expo/indoor-stage",
+      "source_lang": "en",
+      "target_lang": "ar",
+      "text": "رابط المصدر: https://www.ithra.com/en/programme/2026/ithra-winter-at-dhahran-expo/indoor-stage",
+      "method": "identity-pass",
+      "translated_at": "2026-11-28T10:53:58.595Z"
+    },
+    "987cedaf668c07a28e5edebfdf3068dfac9e1f92": {
+      "source": "رابط المصدر: https://www.ithra.com/en/programme/2026/ithra-winter-at-dhahran-expo/studio/sand-sculpturing",
+      "source_lang": "en",
+      "target_lang": "ar",
+      "text": "رابط المصدر: https://www.ithra.com/en/programme/2026/ithra-winter-at-dhahran-expo/studio/sand-sculpturing",
+      "method": "identity-pass",
+      "translated_at": "2026-11-28T10:53:58.646Z"
+    },
+    "06abf15039a0688a75c5cbbaa5eedf70792acdc5": {
+      "source": "رابط المصدر: https://www.ithra.com/en/programme/2026/ithra-winter-at-dhahran-expo/food-experience",
+      "source_lang": "en",
+      "target_lang": "ar",
+      "text": "رابط المصدر: https://www.ithra.com/en/programme/2026/ithra-winter-at-dhahran-expo/food-experience",
+      "method": "identity-pass",
+      "translated_at": "2026-11-28T10:53:58.692Z"
+    },
+    "6af4075f142ed6a7914e63daa3f13dd212048e78": {
+      "source": "رابط المصدر: https://www.ithra.com/en/programme/2026/workshop-library/once-upon-postcard",
+      "source_lang": "en",
+      "target_lang": "ar",
+      "text": "رابط المصدر: https://www.ithra.com/en/programme/2026/workshop-library/once-upon-postcard",
+      "method": "identity-pass",
+      "translated_at": "2026-11-28T10:53:58.793Z"
+    },
+    "a9bff45cc7db689605c3a1a56f702049214019aa": {
+      "source": "رابط المصدر: https://www.ithra.com/en/programme/2026/ithra-winter-at-dhahran-expo/khoos-workshop-palm-weaving",
+      "source_lang": "en",
+      "target_lang": "ar",
+      "text": "رابط المصدر: https://www.ithra.com/en/programme/2026/ithra-winter-at-dhahran-expo/khoos-workshop-palm-weaving",
+      "method": "identity-pass",
+      "translated_at": "2026-11-28T10:53:58.845Z"
+    },
+    "f1906459f85344b0ffcd1d2f5112b29134a284c5": {
+      "source": "رابط المصدر: https://www.ithra.com/en/programme/2026/printing-house/your-stickers-your-way",
+      "source_lang": "en",
+      "target_lang": "ar",
+      "text": "رابط المصدر: https://www.ithra.com/en/programme/2026/printing-house/your-stickers-your-way",
+      "method": "identity-pass",
+      "translated_at": "2026-11-28T10:53:58.890Z"
+    },
+    "697028736dfe6a089da49755ee77b9e774385518": {
+      "source": "رابط المصدر: https://www.ithra.com/en/programme/2026/printing-house/birds-postcard-studio",
+      "source_lang": "en",
+      "target_lang": "ar",
+      "text": "رابط المصدر: https://www.ithra.com/en/programme/2026/printing-house/birds-postcard-studio",
+      "method": "identity-pass",
+      "translated_at": "2026-11-28T10:53:58.940Z"
+    },
+    "f6bb9e3113fbafa8f6217fff1613ff08e95c13c6": {
+      "source": "الصورة الرسمية: https://www.visitsaudi.com/content/dam/wvs/calendar/al-ahsa-esports.png",
+      "source_lang": "en",
+      "target_lang": "ar",
+      "text": "الصورة الرسمية: https://www.visitsaudi.com/content/dam/wvs/calendar/al-ahsa-esports.png",
+      "method": "identity-pass",
+      "translated_at": "2026-11-28T10:53:58.993Z"
+    },
+    "16776d313d520d34f597267453cd9a73371be1b5": {
+      "source": "رابط المصدر: https://www.ithra.com/en/programme/2026/ithra-winter-at-dhahran-expo/little-spotlight-zone/family-game-audience-challenges",
+      "source_lang": "en",
+      "target_lang": "ar",
+      "text": "رابط المصدر: https://www.ithra.com/en/programme/2026/ithra-winter-at-dhahran-expo/little-spotlight-zone/family-game-audience-challenges",
+      "method": "identity-pass",
+      "translated_at": "2026-11-28T10:53:59.044Z"
+    },
+    "85dc285187be3c94c7f2ae9c52d00615434400e0": {
+      "source": "رابط المصدر: https://www.ithra.com/en/programme/2026/ithra-winter-at-dhahran-expo/little-spotlight-zone/tales-stage",
+      "source_lang": "en",
+      "target_lang": "ar",
+      "text": "رابط المصدر: https://www.ithra.com/en/programme/2026/ithra-winter-at-dhahran-expo/little-spotlight-zone/tales-stage",
+      "method": "identity-pass",
+      "translated_at": "2026-11-28T10:53:59.093Z"
+    },
+    "f0c269000de0ff6541764d570c892a4c9b09ba22": {
+      "source": "رابط المصدر: https://www.experiencealula.com/en/whats-on/events/hegra-childrens-tour",
+      "source_lang": "en",
+      "target_lang": "ar",
+      "text": "رابط المصدر: https://www.experiencealula.com/en/whats-on/events/hegra-childrens-tour",
+      "method": "identity-pass",
+      "translated_at": "2026-11-28T10:53:59.152Z"
+    },
+    "12875484ae333c9250cc50a7e4a85f644788f0b7": {
+      "source": "رابط المصدر: https://www.visitsaudi.com/en/riyadh/events/abdulmajeed-abdullah-equestrian-concert",
+      "source_lang": "en",
+      "target_lang": "ar",
+      "text": "رابط المصدر: https://www.visitsaudi.com/en/riyadh/events/abdulmajeed-abdullah-equestrian-concert",
+      "method": "identity-pass",
+      "translated_at": "2026-11-28T10:53:59.204Z"
+    },
+    "182fc8a284a023a460bfc2da4413aa6667ab75db": {
+      "source": "الصورة الرسمية: https://www.visitsaudi.com/content/dam/wvs/calendar/wagef-momos-live-in-jeddah.jpg",
+      "source_lang": "en",
+      "target_lang": "ar",
+      "text": "الصورة الرسمية: https://www.visitsaudi.com/content/dam/wvs/calendar/wagef-momos-live-in-jeddah.jpg",
+      "method": "identity-pass",
+      "translated_at": "2026-11-28T10:53:59.250Z"
+    },
+    "5fc2ac05fe4dedcd2c696037fecc2f9322db47d6": {
+      "source": "رابط المصدر: https://www.ithra.com/en/programme/2026/bridges-world/bridge-chinese-language",
+      "source_lang": "en",
+      "target_lang": "ar",
+      "text": "رابط المصدر: https://www.ithra.com/en/programme/2026/bridges-world/bridge-chinese-language",
+      "method": "identity-pass",
+      "translated_at": "2026-11-28T10:53:59.307Z"
+    },
+    "2671faf63e19db49a46bf81cb731cc8d8dc5e751": {
+      "source": "رابط المصدر: https://kaustcentral-eventscalendar-userwebsite.cfapps.eu20.hana.ondemand.com/dashboard/event-details/588",
+      "source_lang": "en",
+      "target_lang": "ar",
+      "text": "رابط المصدر: https://kaustcentral-eventscalendar-userwebsite.cfapps.eu20.hana.ondemand.com/dashboard/event-details/588",
+      "method": "identity-pass",
+      "translated_at": "2026-11-28T10:53:59.371Z"
+    },
+    "4eccf1eec783f7cfc8bd1744cf0494337e6bea80": {
+      "source": "رابط المصدر: https://www.chamber.org.sa/sites/Arabic/Events/ChamberEvents/Pages/ChamberEventDetails.aspx?ItemID=345",
+      "source_lang": "en",
+      "target_lang": "ar",
+      "text": "رابط المصدر: https://www.chamber.org.sa/sites/Arabic/Events/ChamberEvents/Pages/ChamberEventDetails.aspx?ItemID=345",
+      "method": "identity-pass",
+      "translated_at": "2026-11-28T10:53:59.417Z"
+    },
+    "2241b8caebe9089b0ce01a265006b82cbb4a4839": {
+      "source": "رابط المصدر: https://kaustcentral-eventscalendar-userwebsite.cfapps.eu20.hana.ondemand.com/dashboard/event-details/596",
+      "source_lang": "en",
+      "target_lang": "ar",
+      "text": "رابط المصدر: https://kaustcentral-eventscalendar-userwebsite.cfapps.eu20.hana.ondemand.com/dashboard/event-details/596",
+      "method": "identity-pass",
+      "translated_at": "2026-11-28T10:53:59.472Z"
+    },
+    "e86cab2a267ad3241d677ef9d515949bd4f02f39": {
+      "source": "رابط المصدر: https://hayyjameel.org/whats-on/hayy-arts-made-with-your-magic-jeddah/",
+      "source_lang": "en",
+      "target_lang": "ar",
+      "text": "رابط المصدر: https://hayyjameel.org/whats-on/hayy-arts-made-with-your-magic-jeddah/",
+      "method": "identity-pass",
+      "translated_at": "2026-11-28T10:53:59.520Z"
+    },
+    "51c5ffc08ad0a90855f6cf7139e2a2ce6a7cc3e8": {
+      "source": "رابط المصدر: https://www.ithra.com/en/programme/2026/ithra-theater-society/learn-more-about-submission-process-ithra-short-plays-contest-2026",
+      "source_lang": "en",
+      "target_lang": "ar",
+      "text": "رابط المصدر: https://www.ithra.com/en/programme/2026/ithra-theater-society/learn-more-about-submission-process-ithra-short-plays-contest-2026",
+      "method": "identity-pass",
+      "translated_at": "2026-11-28T10:53:59.578Z"
+    },
+    "590124c5e53bc11ead1287aa7fbfb030ce3cbac1": {
+      "source": "رابط المصدر: https://hayyjameel.org/whats-on/hayy-makers-creative-night-new-year-new-vision/",
+      "source_lang": "en",
+      "target_lang": "ar",
+      "text": "رابط المصدر: https://hayyjameel.org/whats-on/hayy-makers-creative-night-new-year-new-vision/",
+      "method": "identity-pass",
+      "translated_at": "2026-11-28T10:53:59.637Z"
+    },
+    "eef8bf5167e0b1132bbf464c63baeb443eba49ae": {
+      "source": "رابط المصدر: https://www.visitsaudi.com/en/eastern-province/events/pfl-martial-arts-championship-in-al-khobar",
+      "source_lang": "en",
+      "target_lang": "ar",
+      "text": "رابط المصدر: https://www.visitsaudi.com/en/eastern-province/events/pfl-martial-arts-championship-in-al-khobar",
+      "method": "identity-pass",
+      "translated_at": "2026-11-28T10:53:59.685Z"
+    },
+    "c06bf3011f0277318041f64609ed7892cbcaf85a": {
+      "source": "الصورة الرسمية: https://cdn.rfecc.sa/wp-content/uploads/2026/08/19122905/images.jpg",
+      "source_lang": "en",
+      "target_lang": "ar",
+      "text": "الصورة الرسمية: https://cdn.rfecc.sa/wp-content/uploads/2026/08/19122905/images.jpg",
+      "method": "identity-pass",
+      "translated_at": "2026-11-28T10:53:59.734Z"
+    },
+    "5f85c3fb22292562dd97f478997626b889a0061b": {
+      "source": "الصورة الرسمية: https://www.visitsaudi.com/content/dam/wvs/calendar/the-global-water-sustainability-conference.jpg",
+      "source_lang": "en",
+      "target_lang": "ar",
+      "text": "الصورة الرسمية: https://www.visitsaudi.com/content/dam/wvs/calendar/the-global-water-sustainability-conference.jpg",
+      "method": "identity-pass",
+      "translated_at": "2026-11-28T10:53:59.787Z"
+    },
+    "acee9bcd85911011fe2d8fad6249047b8786c8c0": {
+      "source": "رابط المصدر: https://www.experiencealula.com/en/whats-on/events/alula-half-marathon",
+      "source_lang": "en",
+      "target_lang": "ar",
+      "text": "رابط المصدر: https://www.experiencealula.com/en/whats-on/events/alula-half-marathon",
+      "method": "identity-pass",
+      "translated_at": "2026-11-28T10:53:59.855Z"
+    },
+    "9057057e18c3adec9b0e4b79f9c5e89ff67a9a32": {
+      "source": "رابط المصدر: https://www.visitsaudi.com/en/al-ahsa/events/alahsa-factory-dates-festival",
+      "source_lang": "en",
+      "target_lang": "ar",
+      "text": "رابط المصدر: https://www.visitsaudi.com/en/al-ahsa/events/alahsa-factory-dates-festival",
+      "method": "identity-pass",
+      "translated_at": "2026-11-28T10:53:59.911Z"
+    },
+    "1b13eb4f1b2c6566bee357d3e6976a3a2fc0a037": {
+      "source": "الصورة الرسمية: https://www.visitsaudi.com/content/dam/wvs/calendar/saudi-falcon-cup-new.jpg",
+      "source_lang": "en",
+      "target_lang": "ar",
+      "text": "الصورة الرسمية: https://www.visitsaudi.com/content/dam/wvs/calendar/saudi-falcon-cup-new.jpg",
+      "method": "identity-pass",
+      "translated_at": "2026-11-28T10:53:59.956Z"
+    },
+    "6a58155555fcafde47630045bcc1053d2ac641a6": {
+      "source": "الصورة الرسمية: https://www.visitsaudi.com/content/dam/wvs/calendar/in-act-act-xii-new-year.jpg",
+      "source_lang": "en",
+      "target_lang": "ar",
+      "text": "الصورة الرسمية: https://www.visitsaudi.com/content/dam/wvs/calendar/in-act-act-xii-new-year.jpg",
+      "method": "identity-pass",
+      "translated_at": "2026-11-28T10:54:00.025Z"
+    },
+    "49038e8f6e152b86dcbac1ecff9a97b1bd3cef39": {
+      "source": "دورة أو فعالية رسمية من جامعة أم القرى في مكة المكرمة. التسجيل والسداد لدبلوم المشارك (عن بعد) في إدارة الحشود لخارج مكة ضمن التعليم والتدريب في عن بعد. تبدأ الفعالية ٠٢‏/٠٨‏/٢٠٢٦ وتنتهي ٣٠‏/١٢‏/٢٠٢٦ حسب البيانات المتاحة. تعرض الصفحة وقت الفعالية وموقعها ومصدرها وروابط التقويم والاتجاهات عند توفرها. المصدر: Umm Al-Qura University Events Center.",
+      "source_lang": "ar",
+      "target_lang": "en",
+      "text": "Official session or effectiveness of Umm Al-Qura University in Makkkah. Recording and reimbursement of the participant ' s (remotely) diploma in crowd management outside of a distance education and training facility. Effectiveness begins 20/80/2026 and ends 30/12/2026 according to available data. The page shall be presented at the time, location and source of effectiveness, calendar linkages and trends as they are available. Source: Umm Al-Qura University Events Center.",
+      "method": "argos-mt",
+      "translated_at": "2026-11-28T10:56:27.251Z"
+    },
+    "d001ffbe3e9d97091a77a20af586f61fb6ccacee": {
+      "source": "دورة أو فعالية رسمية من جامعة أم القرى في مكة المكرمة.",
+      "source_lang": "ar",
+      "target_lang": "en",
+      "text": "Official session or effectiveness of Umm Al-Qura University in Makkkah.",
+      "method": "argos-mt",
+      "translated_at": "2026-11-28T10:56:27.251Z"
+    },
+    "64213516cbf3cd4628d1a097750b5a96813df49e": {
+      "source": "دورة أو فعالية رسمية من جامعة أم القرى في مكة المكرمة. التسجيل والسداد لدبلوم المتوسط (عن بعد) في التسويق التطبيقي مع الشركاء ضمن التعليم والتدريب في عن بعد. تبدأ الفعالية ٠٢‏/٠٨‏/٢٠٢٦ وتنتهي ٣٠‏/١٢‏/٢٠٢٦ حسب البيانات المتاحة. تعرض الصفحة وقت الفعالية وموقعها ومصدرها وروابط التقويم والاتجاهات عند توفرها. المصدر: Umm Al-Qura University Events Center.",
+      "source_lang": "ar",
+      "target_lang": "en",
+      "text": "Official session or effectiveness of Umm Al-Qura University in Makkkah. Recording and reimbursing of an average ( remote) diploma in applied marketing with partners in distance education and training. Effectiveness begins 20/80/2026 and ends 30/12/2026 according to available data. The page shall be presented at the time, location and source of effectiveness, calendar linkages and trends as they are available. Source: Umm Al-Qura University Events Center.",
+      "method": "argos-mt",
+      "translated_at": "2026-11-28T10:56:27.251Z"
+    },
+    "ed9da6176e3f239e17aead4f9aa8be382afeaa05": {
+      "source": "Get ready for a night of laughter with Momos in Jeddah as he presents his special show, Trauma, at The Storytellers Theater, bringing his distinctive comedic style to the stage.",
+      "source_lang": "en",
+      "target_lang": "ar",
+      "text": "استعدوا لليلة من الضحك مع موموس في جدة بينما يقدم عرضه الخاص، تراما، في مسرح ستوريتلرز،",
+      "method": "argos-mt",
+      "translated_at": "2026-11-28T10:56:27.252Z"
+    },
     "60e97e7222060e8857534b2c5e365bfd778a550e": {
       "source": "فعالية معرض أو مؤتمر منشورة في تقويم واجهة الرياض للمعارض والمؤتمرات. المصدر الرسمي: واجهة الرياض للمعارض والمؤتمرات. Natural World Expo ضمن المعارض والمؤتمرات في الرياض. تبدأ الفعالية ١٢‏/١٢‏/٢٠٢٦ وتنتهي ١٧‏/١٢‏/٢٠٢٦ حسب البيانات المتاحة. تعرض الصفحة وقت الفعالية وموقعها ومصدرها وروابط التقويم والاتجاهات عند توفرها. المصدر: RFECC What's On.",
       "source_lang": "ar",
       "target_lang": "en",
-      "text": "Effectiveness of exhibit or conference in calendar of the Riyadh Front Exhibition Convention Center. Official source: the Riyadh Front Exhibition Convention Center. Natural World Expo among exhibitions and conferences in Riyadh. Effectiveness begins 12/12/2026 and ends 17/12/2026 according to available data. The page presents the time, location and source of effectiveness, calendar linkages and trends when available. Source: RFECC What's On.",
+      "text": "Effectiveness of exhibit or conference in calendar of the Riyadh Front Exhibition Convention Center. Official source: the Riyadh Front Exhibition Convention Center. Natural World Expo among exhibitions and conferences in Riyadh. Effectiveness begins 12/12/2026 and ends 17/12/2026 according to available data. The page shall be presented at the time, location and source of effectiveness, calendar linkages and trends as they are available. Source: RFECC What's On.",
       "method": "argos-mt",
-      "translated_at": "2026-11-27T11:41:08.703Z"
+      "translated_at": "2026-11-28T10:56:27.252Z"
     },
     "8ebcc767e9740b7e9733fdf3ede5355a46a51c11": {
       "source": "فعالية معرض أو مؤتمر منشورة في تقويم واجهة الرياض للمعارض والمؤتمرات.",
@@ -102192,15 +102184,15 @@
       "target_lang": "en",
       "text": "Effectiveness of exhibit or conference in calendar of the Riyadh Front Exhibition Convention Center.",
       "method": "argos-mt",
-      "translated_at": "2026-11-27T11:41:08.703Z"
+      "translated_at": "2026-11-28T10:56:27.252Z"
     },
     "90cec59ccb7804057f167d75eb3cdf02a1a8a419": {
       "source": "فعالية معرض أو مؤتمر منشورة في تقويم واجهة الرياض للمعارض والمؤتمرات. المصدر الرسمي: واجهة الرياض للمعارض والمؤتمرات. China Homelife Saudi Arabia 2026 ضمن المعارض والمؤتمرات في الرياض. تبدأ الفعالية ٢٠‏/١٢‏/٢٠٢٦ وتنتهي ٢٢‏/١٢‏/٢٠٢٦ حسب البيانات المتاحة. تعرض الصفحة وقت الفعالية وموقعها ومصدرها وروابط التقويم والاتجاهات عند توفرها. المصدر: RFECC What's On.",
       "source_lang": "ar",
       "target_lang": "en",
-      "text": "Effectiveness of exhibit or conference in calendar of the Riyadh Front Exhibition Convention Center. Official source: the Riyadh Front Exhibition Convention Center. China Homelife Saudi Arabia 2026 in exhibitions and conferences at Riyadh. Effectiveness begins 20/12/2026 and ends 22/12/2026 according to available data. The page presents the time, location and source of effectiveness, calendar linkages and trends when available. Source: RFECC What's On.",
+      "text": "Effectiveness of exhibit or conference in calendar of the Riyadh Front Exhibition Convention Center. Official source: the Riyadh Front Exhibition Convention Center. China Homelife Saudi Arabia 2026 in exhibitions and conferences at Riyadh. Effectiveness begins 20/12/2026 and ends 22/12/2026 according to available data. The page shall be presented at the time, location and source of effectiveness, calendar linkages and trends as they are available. Source: RFECC What's On.",
       "method": "argos-mt",
-      "translated_at": "2026-11-27T11:41:08.703Z"
+      "translated_at": "2026-11-28T10:56:27.252Z"
     }
   }
 }

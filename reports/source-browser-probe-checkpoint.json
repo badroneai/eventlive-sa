@@ -1,64 +1,26 @@
 {
   "schema": "eventlive.source-browser-probe-checkpoint.v1",
-  "checkpointed_at": "2026-11-27T11:11:28.533Z",
-  "generated_at": "2026-11-27T11:11:10.253Z",
+  "checkpointed_at": "2026-11-28T10:34:33.582Z",
+  "generated_at": "2026-11-28T10:34:25.816Z",
   "source_registry": "data/source_registry.json",
   "output_dir": "data/raw/browser-probes",
-  "sources_planned": 3,
-  "sources_completed": 3,
+  "sources_planned": 1,
+  "sources_completed": 1,
   "totals": {
-    "probed": 3,
-    "browser_network_api": 1,
+    "probed": 1,
+    "browser_network_api": 0,
     "browser_hydration_payload": 0,
     "rendered_html_candidates": 0,
-    "blocked_or_protected": 1,
+    "blocked_or_protected": 0,
     "policy_skipped": 0
   },
   "completed_ids": [
-    "misk-hub-programs",
-    "riyadh-city-events",
-    "jazan-chamber-events"
+    "riyadh-city-events"
   ],
   "sources": [
     {
-      "id": "misk-hub-programs",
-      "probed_at": "2026-11-27T11:11:16.317Z",
-      "name": "Misk Hub Programs",
-      "priority": 21,
-      "url": "https://hub.misk.org.sa/programs/",
-      "final_url": "https://hub.misk.org.sa/programs/",
-      "status": "ok",
-      "http_status": 403,
-      "navigation_error": "",
-      "duration_ms": 5711,
-      "classification": "blocked-or-protected",
-      "next_action": "لا تلتف على الحماية؛ صنف المصدر partnership/API أو ابحث عن مسار رسمي.",
-      "title": "Unavailable",
-      "text_bytes": 481,
-      "html_bytes": 1087916,
-      "html_snapshot": "data/raw/browser-probes/misk-hub-programs-2026-11-27T11-11-10-253Z.html",
-      "screenshot": "data/raw/browser-probes/misk-hub-programs-2026-11-27T11-11-10-253Z.png",
-      "signals": {
-        "has_next_data": false,
-        "has_nuxt": false,
-        "has_json_ld": false,
-        "has_event_schema": false,
-        "date_snippets": [],
-        "event_like_links": []
-      },
-      "script_signals": {
-        "next_data_scripts": 0,
-        "nuxt_scripts": 0,
-        "json_ld_scripts": 0,
-        "large_inline_scripts": 2
-      },
-      "network_total": 0,
-      "network_endpoints": [],
-      "network_sample": []
-    },
-    {
       "id": "riyadh-city-events",
-      "probed_at": "2026-11-27T11:11:22.545Z",
+      "probed_at": "2026-11-28T10:34:33.582Z",
       "name": "Riyadh City Events",
       "priority": 51,
       "url": "https://riyadh.sa/en/events/all",
@@ -66,14 +28,14 @@
       "status": "ok",
       "http_status": 200,
       "navigation_error": "",
-      "duration_ms": 6197,
+      "duration_ms": 7139,
       "classification": "rendered-text-review",
       "next_action": "راجع الصفحة يدويًا وحدد هل هي مصدر أدلة أم صفحة تعريفية فقط.",
       "title": "وجهتكم إلى الرياض تتجدّد",
       "text_bytes": 402,
       "html_bytes": 84099,
-      "html_snapshot": "data/raw/browser-probes/riyadh-city-events-2026-11-27T11-11-10-253Z.html",
-      "screenshot": "data/raw/browser-probes/riyadh-city-events-2026-11-27T11-11-10-253Z.png",
+      "html_snapshot": "data/raw/browser-probes/riyadh-city-events-2026-11-28T10-34-25-816Z.html",
+      "screenshot": "data/raw/browser-probes/riyadh-city-events-2026-11-28T10-34-25-816Z.png",
       "signals": {
         "has_next_data": false,
         "has_nuxt": false,
@@ -91,73 +53,6 @@
       "network_total": 0,
       "network_endpoints": [],
       "network_sample": []
-    },
-    {
-      "id": "jazan-chamber-events",
-      "probed_at": "2026-11-27T11:11:28.533Z",
-      "name": "Jazan Chamber Events",
-      "priority": 67,
-      "url": "https://jazancci.org.sa/api/events/calendar/7/2026",
-      "final_url": "https://jazancci.org.sa/api/events/calendar/7/2026",
-      "status": "ok",
-      "http_status": 200,
-      "navigation_error": "",
-      "duration_ms": 5956,
-      "classification": "browser-network-api",
-      "next_action": "ثبت endpoint مرشحًا كجامع مباشر، ثم اكتب extractor من JSON مع اختبار انحدار.",
-      "title": "",
-      "text_bytes": 6875,
-      "html_bytes": 8910,
-      "html_snapshot": "data/raw/browser-probes/jazan-chamber-events-2026-11-27T11-11-10-253Z.html",
-      "screenshot": "data/raw/browser-probes/jazan-chamber-events-2026-11-27T11-11-10-253Z.png",
-      "signals": {
-        "has_next_data": false,
-        "has_nuxt": false,
-        "has_json_ld": false,
-        "has_event_schema": false,
-        "date_snippets": [
-          "nshat-alsghyrh-walmtwsth-\",\"createdAt\":\"2026-07-09T09:13:48.740Z\",\"updatedAt\":\"2026-07-09T09:13:48.740Z\",\"title\":{\"ar\":\"متطلبات نظ",
-          "مال.</p><h2>موعد الورشة:</h2><p><strong>21 يونيو 2025م</strong><br/><strong>10:30 صباحاً</strong><br/><strong>عن بُعد</strong></p><h2",
-          "amber</p></li></ul><p></p>\"},\"startAt\":\"2026-07-21T07:30:00.000Z\",\"endAt\":\"2026-07-21T08:45:00.000Z\",\"location\":null,\"url\":\"https:",
-          "\"altaryf-bkhdmat-mnsh-qwa\",\"createdAt\":\"2026-07-14T09:28:22.851Z\",\"updatedAt\":\"2026-07-14T09:28:22.851Z\",\"title\":{\"ar\":\"التعريف بخ",
-          "مال.</p><h2>موعد الورشة:</h2><p><strong>28 يونيو 2025م</strong><br/><strong>11 صباحاً</strong><br/><strong>عن بُعد</strong></p><p></p",
-          "mber)</p></li></ul><p></p>\"},\"startAt\":\"2026-07-28T08:00:00.000Z\",\"endAt\":\"2026-07-28T10:00:00.000Z\",\"location\":null,\"url\":\"https:",
-          "-alrswm-alhkwmyh-almdfwah\",\"createdAt\":\"2026-07-14T10:07:08.940Z\",\"updatedAt\":\"2026-07-22T09:00:50.930Z\",\"title\":{\"ar\":\"التعريف بم",
-          "ائدات الأعمال.</p><p>موعد الورشة:</p><p>22 يونيو 2025م</p><p>1:00 مساءً</p><p>عن بُعد</p><p></p><p>الجهات المشاركة</p><p>منشآت (Monsh"
-        ],
-        "event_like_links": []
-      },
-      "script_signals": {
-        "next_data_scripts": 0,
-        "nuxt_scripts": 0,
-        "json_ld_scripts": 0,
-        "large_inline_scripts": 0
-      },
-      "network_total": 1,
-      "network_endpoints": [
-        {
-          "method": "GET",
-          "status": 200,
-          "url": "https://jazancci.org.sa/api/events/calendar/7/2026",
-          "content_type": "application/json",
-          "resource_type": "document",
-          "request_post_data": "",
-          "response_shape": "json-like-invalid",
-          "preview": "[{\"id\":17,\"slug\":\"mttlbat-nzam-idarh-almrafq-iso-41001-llmnshat-alsghyrh-walmtwsth-\",\"createdAt\":\"2026-07-09T09:13:48.740Z\",\"updatedAt\":\"2026-07-09T09:13:48.740Z\",\"title\":{\"ar\":\"متطلبات نظام إدارة المرافق ISO 41001 للمنشآت الصغيرة والمتوسطة \",\"en\":\"Requirements for ISO 41001 Facilities Management System for Small and Medium Enterprises\"},\"cover\":{\"name\":\"cover\",\"url\":\"https://jazancci.org.sa/uploads/external-events/f69bc684499f3de3fe11ca2370421475.jpg\",\"type\":\"image/jpeg\",\"path\":\"external-events/f69bc684499f3de3fe11ca2370421475.jpg\",\"size\":856799},\"media\":[],\"description\":{\"ar\":\"<h1>متطلبات نظام إدارة المرافق <strong>ISO 41001</strong> للمنشآت الصغيرة والمتوسطة</h1><h2>محاور الورشة:</h2><ul><li><p>- مقدمة عن إدارة المرافق.</p></li><li><p>- التعريف بمعيار <strong>ISO 41001</strong>.</p></li><li><p>- نطاق وأهداف المعيار.</p></li><li><p>- متطلبات المعيار الأساسية.</p></li><li><p>- خطة التطبيق العملي.</p></li><li><p>- الفوائد والتحديات والاستراتيجيات لتطبيق المعيار للمنشآت الصغيرة والمتوسطة.</p></li></ul><h2>الفئة المستهدفة:</h2><p>رواد ورائدات الأعمال.</p><h2>موعد الورشة:</h2><p><strong>21 يونيو 2025م</strong><br/><strong>10:30 صباحاً</strong><br/><strong>عن بُعد</strong></p><h2></h2><hr/><h3>الجهات المنظمة</h3><ul><li><p>المواصفات السعودية</p></li><li><p>غرفة جازان</p></li><li><p></p></li></ul><p></p>\",\"en\":\"<h1>Requirements for Facilities Management System <strong>ISO 41001</strong> for Small and Medium Enterprises</h1><h2>Workshop Topics:</h2><ul><li><p>- Introduction to Facilities Management.</p></li><li><p>- Introduction to <strong>ISO 41001</strong> Standard.</p></li><li><p>- Scope and Objectives of the Standard.</p></li><li><p>- Key Requirements of the Standard.</p></li><li><p>- Practical Implementation Plan.</p></li><li><p>- Benefits, Challenges, and Strategies for"
-        }
-      ],
-      "network_sample": [
-        {
-          "method": "GET",
-          "status": 200,
-          "url": "https://jazancci.org.sa/api/events/calendar/7/2026",
-          "content_type": "application/json",
-          "resource_type": "document",
-          "request_post_data": "",
-          "response_shape": "json-like-invalid",
-          "preview": "[{\"id\":17,\"slug\":\"mttlbat-nzam-idarh-almrafq-iso-41001-llmnshat-alsghyrh-walmtwsth-\",\"createdAt\":\"2026-07-09T09:13:48.740Z\",\"updatedAt\":\"2026-07-09T09:13:48.740Z\",\"title\":{\"ar\":\"متطلبات نظام إدارة المرافق ISO 41001 للمنشآت الصغيرة والمتوسطة \",\"en\":\"Requirements for ISO 41001 Facilities Management System for Small and Medium Enterprises\"},\"cover\":{\"name\":\"cover\",\"url\":\"https://jazancci.org.sa/uploads/external-events/f69bc684499f3de3fe11ca2370421475.jpg\",\"type\":\"image/jpeg\",\"path\":\"external-events/f69bc684499f3de3fe11ca2370421475.jpg\",\"size\":856799},\"media\":[],\"description\":{\"ar\":\"<h1>متطلبات نظام إدارة المرافق <strong>ISO 41001</strong> للمنشآت الصغيرة والمتوسطة</h1><h2>محاور الورشة:</h2><ul><li><p>- مقدمة عن إدارة المرافق.</p></li><li><p>- التعريف بمعيار <strong>ISO 41001</strong>.</p></li><li><p>- نطاق وأهداف المعيار.</p></li><li><p>- متطلبات المعيار الأساسية.</p></li><li><p>- خطة التطبيق العملي.</p></li><li><p>- الفوائد والتحديات والاستراتيجيات لتطبيق المعيار للمنشآت الصغيرة والمتوسطة.</p></li></ul><h2>الفئة المستهدفة:</h2><p>رواد ورائدات الأعمال.</p><h2>موعد الورشة:</h2><p><strong>21 يونيو 2025م</strong><br/><strong>10:30 صباحاً</strong><br/><strong>عن بُعد</strong></p><h2></h2><hr/><h3>الجهات المنظمة</h3><ul><li><p>المواصفات السعودية</p></li><li><p>غرفة جازان</p></li><li><p></p></li></ul><p></p>\",\"en\":\"<h1>Requirements for Facilities Management System <strong>ISO 41001</strong> for Small and Medium Enterprises</h1><h2>Workshop Topics:</h2><ul><li><p>- Introduction to Facilities Management.</p></li><li><p>- Introduction to <strong>ISO 41001</strong> Standard.</p></li><li><p>- Scope and Objectives of the Standard.</p></li><li><p>- Key Requirements of the Standard.</p></li><li><p>- Practical Implementation Plan.</p></li><li><p>- Benefits, Challenges, and Strategies for"
-        }
-      ]
     }
   ]
 }

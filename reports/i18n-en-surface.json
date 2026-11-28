@@ -1,17 +1,12 @@
 {
   "schema": "eventlive.i18n-en-surface.v1",
-  "generated_at": "2026-11-27T11:44:07.543Z",
+  "generated_at": "2026-11-28T11:00:09.859Z",
   "pages_scanned": 2233,
-  "pages_with_arabic": 519,
+  "pages_with_arabic": 463,
   "template_regressions": [],
   "script_template_regressions": [],
   "style_template_regressions": [],
   "recurring_surface_debt": [
-    {
-      "text": "واقف! Momos",
-      "pages": 85,
-      "example": "cities/alula.html"
-    },
     {
       "text": "../assets/event-images/الشهادة-الدولية-للحاسب-والإنترنت-ic3-a46ba6d2eb.jpg",
       "pages": 46,
@@ -19,6 +14,6 @@
       "script": true
     }
   ],
-  "recurring_total": 2,
-  "content_prose_lines": 2407
+  "recurring_total": 1,
+  "content_prose_lines": 2399
 }
